@@ -1,6 +1,6 @@
 # Newsletter system — plan
 
-Status: **proposed, 2026-11-08.** Nothing below is built yet.
+Status: **Phase 1 built, 2026-11-08** (PR #597, held for one deploy with the Inngest fix). Phase 0 subdomain pending a Resend sign-in. Phases 2–5 not started. See Appendix C.
 
 Goal: a working newsletter for Indus Hydraulics, end to end — a signup that
 actually confirms, a subscriber and list manager in the admin, a composer that
@@ -93,7 +93,7 @@ Rough sizes assume one engineer-session per "day".
 ### Phase 0 — Setup and honest copy *(½ day, no deploy)*
 
 - Fix the home and blog newsletter copy in Pages & Blocks (D7).
-- D1: add the sending subdomain in Resend and the DNS records in Cloudflare; confirm DKIM/SPF/DMARC pass.
+- D1: add the sending subdomain in Resend and the DNS records at **Spaceship** (not Cloudflare — the zone is on `launch1/2.spaceship.net`); confirm DKIM/SPF/DMARC pass.
 - D2: connect Inngest (event key + signing key in Vercel and `.env.local`), register the app, check the existing crons start firing.
 - Create the Resend webhook (delivered, bounced, complained) → `/api/webhooks/resend`; store `RESEND_WEBHOOK_SECRET`.
 - Draft the privacy-policy paragraph on newsletters and Resend (content edit, no deploy).
@@ -208,3 +208,21 @@ Additions to the existing sections of `/privacy` (Pages & Blocks → Privacy). P
 > When you unsubscribe, or an address permanently bounces, we keep a one-way encrypted fingerprint of the address so that we never email it again, even if it appears on a list later. We cannot recover the address from it.
 
 **Also out of date, unrelated to the newsletter:** the policy still describes *account creation* and a *customer portal* (removed in #586) and names Vercel as the host. Worth correcting in the same edit.
+
+## Appendix C — Phase 1 as built (2026-11-08)
+
+| Piece | Where |
+|---|---|
+| Migration part 1 (additive) | `202611081838_newsletter_double_opt_in.sql` — **applied** 2026-11-08 via Supabase MCP. Trigger checked with `packages/db/scripts/test-newsletter-suppression.sql` (all 8 cases pass, rolls back). |
+| Migration part 2 (retire `active`) | `202611081839_newsletter_retire_active_status.sql` — **run right after the deploy.** Until it runs, the one legacy `active` row cannot be read by the new client (its owner re-signing up would error; nothing else reads it). |
+| Sender | `newsletter@news.indushydraulics.com`, Reply-To `sales@indushydraulics.me`; `assertMarketingSender` refuses anything off `news.`. Sends fail until the subdomain is verified in Resend — **verify before deploying.** |
+| Signup | `actions/newsletter.ts` → `lib/newsletter/service.ts`. Silent success for honeypot / under-1.5 s / dotted Gmail / hard-suppressed / 10-min resend cooldown; 5 per IP per hour, 20 per day (counted from the table, durable across instances); consent text + version stored. |
+| Tokens | Confirmation: 48 hex, only its SHA-256 stored, one-time, 14 days. Unsubscribe: 48 hex, permanent, in clear. |
+| Pages | `/newsletter/confirm/[token]`, `/newsletter/unsubscribe/[token]` — read only, act on a button (POST server action). Noindex, `/newsletter/` disallowed, not in the sitemap. |
+| One-click | `POST /api/newsletter/unsubscribe?token=` (RFC 8058; unknown token → 200; GET → 405). The welcome email carries `List-Unsubscribe` + `List-Unsubscribe-Post`. |
+| Webhook | `POST /api/webhooks/resend`, Svix-verified with `RESEND_WEBHOOK_SECRET` (503 until set, so Resend retries). delivered → `sent_emails.deliveredAt`; permanent bounce → suppress + subscriber `bounced`; complaint → suppress as `complained` + unsubscribe. Any email counts, transactional included. |
+| Deviations from the plan | Suppressed for bounce/complaint = not mailed from the web form again (they can email sales). The webhook stamps `sent_emails` rather than a deliveries table (Phase 4 adds that). |
+
+**Before the deploy** (needs a Resend sign-in): (1) verify `news.indushydraulics.com` in Resend; (2) create the Resend webhook (`email.delivered`, `email.bounced`, `email.complained` → `https://indushydraulics.com/api/webhooks/resend`) — disabled if Resend allows, otherwise its first events 404 and are retried — and put its signing secret in Vercel production as `RESEND_WEBHOOK_SECRET`. It has to be there before the build: Vercel env changes only reach new deployments, and a second deploy just for the secret is what the batch rule exists to avoid.
+
+**After the deploy:** (1) run migration part 2; (2) `PUT https://indushydraulics.com/api/inngest` and check every function registers; (3) enable the webhook; (4) end to end on production with a real inbox: signup → confirmation → confirm → welcome → one-click unsubscribe; (5) Resend's test addresses `bounced@resend.dev` / `complained@resend.dev` through the signup form, then check `newsletter_suppressions`.
