@@ -16,9 +16,9 @@ const ARTICLE: BlogArticleSeed = {
     'Almost all anchor and mooring chain is made the same way: steel bar is cut, heated, bent into a link through the one before it, flash-butt welded shut, studded, heat treated, and then every length is proof loaded. The steps in order, what each one decides about the finished chain, and what changes for offshore mooring chain.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'How Anchor Chain Is Made — Flash-Butt Welding to Proof Test',
+  seoTitle: 'How Anchor Chain Is Made, Step by Step',
   seoDescription:
-    'How anchor chain is made, step by step: bar cutting, heating, bending, flash-butt welding, trimming, stud setting, quench-and-temper heat treatment, shot blasting, proof and break testing, NDT and marking.',
+    'How anchor chain is made: bar cutting, heating, bending, flash-butt welding, stud setting, quench-and-temper heat treatment, proof testing and NDT.',
   focusKeyword: 'how anchor chain is made',
   publishedAt: '2026-11-08T09:50:00.000Z',
   bodyBlocks: [

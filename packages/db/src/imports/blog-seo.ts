@@ -1276,7 +1276,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     focusKeyword: 'marine anchors',
     seoTitle: 'Types of marine anchors explained',
     seoDescription:
-      'Stockless, Hall, Pool, HHP, Admiralty, Danforth, plough, claw and grapnel anchors: how each one holds, the mass ranges we list and what to specify.',
+      'Stockless, Hall, Pool, HHP, Admiralty, fluke, plough, claw, grapnel and offshore drag anchors: how each one holds, the mass ranges we list and what to specify.',
   },
   'anchor-chain-grades-u1-u2-u3': {
     focusKeyword: 'anchor chain grades',

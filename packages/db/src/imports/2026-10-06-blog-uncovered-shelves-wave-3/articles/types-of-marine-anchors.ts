@@ -3,6 +3,11 @@ import { AUTHOR_SLUG, VERIFIED_ON } from '../shared'
 import type { BlogArticleSeed } from '../shared'
 
 /**
+ * SUPERSEDED IN THE DATABASE 2026-11-08 by ../../2026-11-08-blog-anchor-chain-mooring/fix-older-marine-posts.ts,
+ * which removed the maker pattern names and the four retired product links. Do not re-import this seed
+ * without re-running that script afterwards.
+ */
+/**
  * Marine anchors, read from the 14 family listings and their variant rows:
  * anchor type, pattern, mass range, material and certification. The Danforth
  * family summary said 20 kg to 30 kg; its variant rows run from 1.5 kg to

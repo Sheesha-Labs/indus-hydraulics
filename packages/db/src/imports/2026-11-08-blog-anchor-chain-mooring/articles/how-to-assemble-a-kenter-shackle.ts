@@ -16,9 +16,9 @@ const ARTICLE: BlogArticleSeed = {
     'The Kenter shackle joins lengths of anchor chain without changing the shape of the cable. Its parts, how to take one apart with a punch and hammer, how to put it back together and seal the taper pin with a new lead plug, which lead plug fits which chain size, and the checks before it goes back over the windlass.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Kenter Shackle — How to Dismantle and Assemble, Lead Plug Sizes',
+  seoTitle: 'Kenter Shackle: Dismantle and Assemble',
   seoDescription:
-    'How a Kenter shackle works and how to dismantle and assemble one: halves, centre stud, taper pin and lead plug, step by step, with lead plug sizes for 12.5 to 137 mm chain.',
+    'How a Kenter shackle works and how to dismantle and assemble one — halves, centre stud, taper pin and lead plug — with lead plug sizes by chain size.',
   focusKeyword: 'kenter shackle',
   publishedAt: '2026-11-08T10:40:00.000Z',
   bodyBlocks: [

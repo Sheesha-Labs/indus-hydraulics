@@ -339,7 +339,7 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: "crosby-pattern-numbers-explained", alt: "Shackles, a swivel hook, a wire rope clip and a master link laid out on a timber bench" },
   { slug: "precast-concrete-lifting-clutch", alt: "A ring clutch locked onto a cast-in anchor at the top of a precast concrete panel being lifted" },
   { slug: "types-of-marine-fenders", alt: "Black rubber cone and cylindrical fenders lining a port quay beside a ship's hull" },
-  { slug: "types-of-marine-anchors", alt: "A black stockless anchor with hinged flukes, a Danforth anchor and a claw anchor on gravel in a marine yard, anchor chain behind" },
+  { slug: "types-of-marine-anchors", alt: "Black stockless anchor, a lightweight fluke anchor and a claw anchor on gravel in a marine yard, chain behind" },
   { slug: "anchor-chain-grades-u1-u2-u3", alt: "Heavy stud link anchor chain on a ship's foredeck, each link with a stud across its middle, the windlass behind" },
   { slug: "types-of-mooring-bollards", alt: "Mooring ropes on a T-head bollard and double bitts on a quay beside a moored ship" },
   { slug: "fibre-rope-materials-compared", alt: "Coils of polypropylene, nylon, polyester and HMPE fibre rope side by side on a dock" },

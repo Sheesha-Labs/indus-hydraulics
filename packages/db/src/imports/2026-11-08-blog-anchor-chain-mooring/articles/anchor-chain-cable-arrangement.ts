@@ -16,10 +16,10 @@ const ARTICLE: BlogArticleSeed = {
     'An anchor cable is not one chain but a string of 27.5 m lengths, joined by Kenter or D-type shackles, with a swivel forerunner at the anchor end and an end fastening in the chain locker. What each part is, how the common, enlarged and end links differ, and how the pieces are combined.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Anchor Chain Cable Arrangement — Shots, Links, Kenter, Swivel',
+  seoTitle: 'Anchor Chain Cable Arrangement Explained',
   seoDescription:
-    'How an anchor chain cable is arranged: 27.5 m (15 fathom) lengths, common, enlarged and end links, Kenter and D joining shackles, the swivel forerunner, anchor shackle and the end fastening in the chain locker.',
-  focusKeyword: 'anchor chain arrangement',
+    'How an anchor chain cable is arranged: 27.5 m shots, common, enlarged and end links, Kenter and D shackles, the swivel forerunner and the end fastening.',
+  focusKeyword: 'anchor chain cable',
   publishedAt: '2026-11-08T09:00:00.000Z',
   bodyBlocks: [
     {

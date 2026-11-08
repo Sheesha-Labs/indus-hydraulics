@@ -15,9 +15,9 @@ const ARTICLE: BlogArticleSeed = {
     'Anchor chain wears where links rub against each other and the windlass. Classification societies allow the mean diameter to fall 12% below nominal before a length must be renewed. The minimum diameter for every size from 12.5 to 162 mm, how to measure, and the other defects that condemn a length.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Anchor Chain Wear Limits — the 12% Rule, 12.5–162 mm',
+  seoTitle: 'Anchor Chain Wear Limits: the 12% Rule',
   seoDescription:
-    'Anchor chain wear limits: the class society 12% diameter reduction rule, minimum mean diameter for every chain size from 12.5 to 162 mm, how to measure worn links, and when to renew a length.',
+    'Anchor chain wear limits: the class 12% diameter rule, minimum mean diameter for every size from 12.5 to 162 mm, how to measure, and when to renew.',
   focusKeyword: 'anchor chain wear limits',
   publishedAt: '2026-11-08T10:20:00.000Z',
   bodyBlocks: [
