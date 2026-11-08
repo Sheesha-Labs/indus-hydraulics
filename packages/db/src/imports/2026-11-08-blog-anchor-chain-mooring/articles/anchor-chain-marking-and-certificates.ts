@@ -17,10 +17,10 @@ const ARTICLE: BlogArticleSeed = {
     'Every length of class-approved anchor or mooring chain, and every shackle and swivel in it, should arrive stamped and with a certificate from a classification society. What the stamps show, what the certificate should contain, which societies issue them, and how to match chain, paperwork and ship.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Anchor Chain Marks and Class Certificates Explained',
+  seoTitle: 'Anchor Chain Marking and Certificates',
   seoDescription:
-    'How anchor and mooring chain is marked and certified: stamped grade, certificate number and society mark, what a class certificate shows, the classification societies that issue them, and checks on delivery.',
-  focusKeyword: 'anchor chain certificate',
+    'How anchor and mooring chain is marked and certified: stamped grade and certificate number, what a class certificate shows, and checks on delivery.',
+  focusKeyword: 'anchor chain marking',
   publishedAt: '2026-11-08T11:10:00.000Z',
   bodyBlocks: [
     {

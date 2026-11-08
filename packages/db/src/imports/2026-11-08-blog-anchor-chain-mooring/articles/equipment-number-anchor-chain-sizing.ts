@@ -15,10 +15,10 @@ const ARTICLE: BlogArticleSeed = {
     'Classification rules size a ship’s anchors and chain from a single figure, the equipment number. What it represents, how to read the equipment table to find anchor mass, total chain length and chain diameter in each grade, and why a high-holding-power anchor and a higher chain grade change the answer.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Equipment Number — Sizing Ship Anchors and Anchor Chain',
+  seoTitle: 'Equipment Number: Sizing Anchors & Chain',
   seoDescription:
-    'How the equipment number sizes a ship’s anchors and chain: the equipment table from 50 to 10,000 with anchor mass, HHP anchor mass, total chain length and chain diameter for grades 1, 2 and 3.',
-  focusKeyword: 'equipment number anchor chain',
+    'How the equipment number sizes a ship’s anchors and chain: the full equipment table with anchor mass, HHP mass, chain length and diameter by grade.',
+  focusKeyword: 'equipment number',
   publishedAt: '2026-11-08T10:10:00.000Z',
   bodyBlocks: [
     {

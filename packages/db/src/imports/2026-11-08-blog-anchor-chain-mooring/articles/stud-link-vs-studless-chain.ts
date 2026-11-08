@@ -12,10 +12,10 @@ const ARTICLE: BlogArticleSeed = {
     'A stud link chain has a bar across every link; a studless chain does not. The stud keeps the link from closing up and the chain from kinking in the locker, at the cost of weight and a joint that can work loose. How the two compare on proof load, breaking load and weight, and where each one belongs.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Stud Link vs Studless Chain — Strength, Weight and Use',
+  seoTitle: 'Stud Link vs Studless Chain Compared',
   seoDescription:
-    'Stud link vs studless anchor and mooring chain: what the stud does, proof and breaking loads compared grade for grade, weight per metre, and why ships use stud link and permanent offshore moorings use studless.',
-  focusKeyword: 'stud link vs studless chain',
+    'Stud link vs studless chain: what the stud does, proof and breaking loads grade for grade, weight per metre, and where ships and offshore moorings use each.',
+  focusKeyword: 'stud link vs studless',
   publishedAt: '2026-11-08T09:20:00.000Z',
   bodyBlocks: [
     {

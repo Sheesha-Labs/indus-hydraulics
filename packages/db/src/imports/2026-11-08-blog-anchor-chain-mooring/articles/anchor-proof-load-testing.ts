@@ -15,10 +15,10 @@ const ARTICLE: BlogArticleSeed = {
     'Every ship’s anchor is proof loaded before it is certified, to a load set by its mass. The proof test load for anchors from 50 kg to 48 tonnes, how high-holding-power anchors are treated, what the test proves, and what to check on the certificate.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Anchor Proof Load Test — Test Loads from 50 kg to 48 t',
+  seoTitle: 'Anchor Proof Load Test Loads by Mass',
   seoDescription:
-    'Anchor proof load testing explained: proof test loads by anchor mass from 50 kg to 48,000 kg, high-holding-power (HHP) anchor masses, what the test proves and what the certificate should show.',
-  focusKeyword: 'anchor proof load test',
+    'Anchor proof load testing: proof test loads by anchor mass from 50 kg to 48,000 kg, how HHP anchors are tested, and what the certificate should show.',
+  focusKeyword: 'anchor proof load',
   publishedAt: '2026-11-08T10:50:00.000Z',
   bodyBlocks: [
     {

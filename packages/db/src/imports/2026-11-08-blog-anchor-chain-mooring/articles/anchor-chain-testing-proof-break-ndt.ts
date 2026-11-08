@@ -16,9 +16,9 @@ const ARTICLE: BlogArticleSeed = {
     'Before a length of anchor chain is certified it is proof loaded end to end, sampled for a break test, tested for strength and toughness, and — for offshore chain — examined link by link. What each test is, how samples are chosen, what counts as a pass, and the separate rules for shackles, swivels and links.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Anchor Chain Testing — Proof Load, Break Test, NDT',
+  seoTitle: 'Anchor Chain Testing: Proof, Break, NDT',
   seoDescription:
-    'How anchor and mooring chain is tested before certification: proof load on every 27.5 m length, 5% elongation limit, break test sampling, accessory batch tests, Charpy impact tests and NDT.',
+    'How anchor chain is tested before certification: proof load on every 27.5 m length, the 5% elongation limit, break test sampling, accessories and NDT.',
   focusKeyword: 'anchor chain testing',
   publishedAt: '2026-11-08T10:00:00.000Z',
   bodyBlocks: [
