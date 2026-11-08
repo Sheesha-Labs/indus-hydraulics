@@ -168,8 +168,8 @@ export const HOME_PAGE: MasterPageDef = {
     {
       key: 'blog',
       label: 'Blog teaser',
-      description: 'Three recent articles, or the empty state when nothing is published.',
-      dataNote: 'The cards are the three most recently published articles.',
+      description: 'A photo mosaic of recent articles (image and title), or the empty state when nothing is published.',
+      dataNote: 'Nine tiles on wide screens (seven on tablets, five on phones): the newest article from each blog category, newest first, the most recent as the large lead tile. Each tile is the article’s hero image and title.',
       fields: [
         eyebrow(),
         heading(),

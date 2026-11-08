@@ -6,6 +6,8 @@ import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import { HERO_TERMS, heroLeadFor, img, interpolate, list, str, visibleList } from '@indus/domain'
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
+import HomeBlogMosaic, { type HomeBlogTile } from '../../components/HomeBlogMosaic'
+import { pickBlogMix } from '../../lib/home-blog-mix'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import HeroTermRotator from '../../components/HeroTermRotator'
 import HomeIndustryTiles from '../../components/HomeIndustryTiles'
@@ -16,7 +18,6 @@ import BrandMarquee from '../../components/BrandMarquee'
 import { selectMarqueeBrands } from '../../lib/brand-marquee'
 import { rollUpCounts } from '../../lib/category-tree'
 import { getIndustryList } from '../../lib/industry-content'
-import { mediaUrl } from '../../lib/media'
 import { getMasterPageContent } from '../../lib/page-content'
 import { BASE_URL } from '../../lib/seo'
 
@@ -193,24 +194,38 @@ const getHomeFeaturedProducts = unstable_cache(
   { revalidate: 3600, tags: ['products'] },
 )
 
+/** Articles in the home page's blog mosaic: a 2×2 lead and eight tiles. */
+const HOME_BLOG_TILES = 9
+
+/*
+  The newest article from each topic, newest first (see lib/home-blog-mix),
+  drawn from the most recent 80 so a topic that published a month ago still
+  gets its tile. Only articles with a hero: the mosaic is images and titles,
+  and every live post has one (432/432 on 2026-11-08), so this is a guard,
+  not a filter.
+*/
 const getHomeBlogPosts = unstable_cache(
-  () =>
-    db.blogPost.findMany({
-      where: { isPublished: true },
+  async (): Promise<HomeBlogTile[]> => {
+    const recent = await db.blogPost.findMany({
+      where: { isPublished: true, heroId: { not: null } },
       orderBy: { publishedAt: 'desc' },
-      take: 3,
-      include: {
+      take: 80,
+      select: {
+        id: true,
+        slug: true,
+        title: true,
+        categoryId: true,
         hero: { select: { storagePath: true, alt: true } },
-        // Category, not `tags`. The teaser used to label each card from
-        // `tags`, which nothing populates — all 30 published articles carry an
-        // empty array — so the eyebrow rendered as a bare separator and a
-        // date. The rest of the blog (index, category hubs, author pages) has
-        // always labelled cards by category; this matches it.
-        category: { select: { name: true, isPublished: true } },
-        author: { select: { name: true } },
       },
-    }),
-  ['home-blog-posts'],
+    })
+    return pickBlogMix(recent, HOME_BLOG_TILES).map(({ id, slug, title, hero }) => ({
+      id,
+      slug,
+      title,
+      hero,
+    }))
+  },
+  ['home-blog-mosaic'],
   { revalidate: 3600, tags: ['blog-posts'] },
 )
 
@@ -748,64 +763,18 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
           </div>
 
           {blogPosts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-4">
-              {blogPosts.map((post, i) => (
+            <>
+              <HomeBlogMosaic posts={blogPosts} />
+              {/* The header's link is hidden below sm. */}
+              {str(blog, 'cta_label') && str(blog, 'cta_href') ? (
                 <Link
-                  key={post.id}
-                  href={`/blog/${post.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
+                  href={str(blog, 'cta_href') ?? '/blog'}
+                  className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
                 >
-                  {/* The hero photograph, same Media row the article page and
-                      the blog index render. The card used to draw a grey
-                      "900×680" spec box here — the query has always fetched
-                      the hero, the markup simply never used it. */}
-                  <div className={`relative overflow-hidden bg-ih-surface-2 border-b border-ih-border ${i === 0 ? 'aspect-[4/3]' : 'aspect-[16/9]'}`}>
-                    {post.hero ? (
-                      <Image
-                        src={mediaUrl(post.hero.storagePath)}
-                        alt={post.hero.alt ?? post.title}
-                        fill
-                        // The lead card is ~45vw of the three-column grid, the
-                        // two followers ~28vw each; both go full-bleed once the
-                        // grid stacks at md.
-                        sizes={i === 0 ? '(max-width: 768px) 100vw, 45vw' : '(max-width: 768px) 100vw, 30vw'}
-                        className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      />
-                    ) : (
-                      <span className="font-mono absolute inset-0 grid place-items-center text-[11px] text-ih-muted-2">
-                        Indus Hydraulics
-                      </span>
-                    )}
-                  </div>
-                  <div className="p-5 flex flex-col gap-2.5 flex-1">
-                    {/* Built by joining the parts that exist, so a missing
-                        category or date never leaves a dangling separator. */}
-                    <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 font-mono text-[11px] text-ih-muted tracking-[0.04em] uppercase">
-                      {[
-                        post.category?.isPublished ? post.category.name : null,
-                        post.publishedAt
-                          ? new Date(post.publishedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-                          : null,
-                        post.readingMinutes ? `${post.readingMinutes} min` : null,
-                      ]
-                        .filter((part): part is string => part !== null)
-                        .map((part, index) => (
-                          <span key={index} className="flex items-center gap-2.5">
-                            {index > 0 && <span className="opacity-40">·</span>}
-                            {part}
-                          </span>
-                        ))}
-                    </div>
-                    <h3 className={`font-semibold tracking-[-0.01em] leading-[1.3] group-hover:text-ih-accent transition-colors ${i === 0 ? 'text-[22px]' : 'text-[17px]'}`}>
-                      {post.title}
-                    </h3>
-                    {post.excerpt && (
-                      <p className="text-[13px] text-ih-muted leading-[1.5] line-clamp-3">{post.excerpt}</p>
-                    )}
-                  </div>
+                  {str(blog, 'cta_label')}
                 </Link>
-              ))}
-            </div>
+              ) : null}
+            </>
           ) : (
             /* Nothing published yet. This branch used to render three
                hardcoded articles — invented titles, an invented date, and
