@@ -297,6 +297,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
   const whyItems = visibleList<{ name?: string; desc?: string }>(why, 'items')
   const heroStats = list<{ value?: string; label?: string }>(hero, 'stats')
   const quoteImage = img(why, 'quote_image')
+  const quoteAvatar = img(why, 'quote_avatar')
 
   /*
     Every section, keyed. The page renders `content.order`, which is the
@@ -662,7 +663,19 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               </div>
               {str(why, 'quote_name') ? (
                 <div className="relative flex items-center gap-3 mt-8 pt-8 border-t border-[oklch(1_0_0_/_0.1)]">
-                  <div className="w-10 h-10 rounded-full bg-[#2a2e35] shrink-0" />
+                  {quoteAvatar?.url ? (
+                    <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-[oklch(1_0_0/0.18)]">
+                      <Image
+                        src={quoteAvatar.url}
+                        alt={quoteAvatar.alt ?? str(why, 'quote_name') ?? ''}
+                        fill
+                        sizes="48px"
+                        className="object-cover"
+                      />
+                    </span>
+                  ) : (
+                    <div className="w-10 h-10 rounded-full bg-[#2a2e35] shrink-0" />
+                  )}
                   <div>
                     <div className="text-[14px] font-medium">{str(why, 'quote_name')}</div>
                     <div className="font-mono text-[12px] text-[#8a8f97]">{str(why, 'quote_title')}</div>

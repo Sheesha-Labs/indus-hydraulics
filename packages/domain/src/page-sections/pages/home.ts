@@ -145,6 +145,7 @@ export const HOME_PAGE: MasterPageDef = {
         text('quote_name', 'Attributed to', { max: 80, optional: true }),
         text('quote_title', 'Their role', { max: 80, optional: true }),
         image('quote_image', 'Quote panel image', 'Sits behind the quote. Blank keeps the plain navy panel.'),
+        image('quote_avatar', 'Headshot', 'The round photo beside the name. Use only a real photo of the person quoted, with their consent. Blank keeps a plain disc.'),
       ],
       defaults: {
         eyebrow: 'WHY INDUS · A FEW REASONS',
@@ -160,6 +161,7 @@ export const HOME_PAGE: MasterPageDef = {
         quote_name: 'Captain V. Subramaniam',
         quote_title: 'CHIEF ENGINEER · MARITIME OPS',
         quote_image: { mediaId: null, alt: null },
+        quote_avatar: { mediaId: null, alt: null },
       },
     },
     {
