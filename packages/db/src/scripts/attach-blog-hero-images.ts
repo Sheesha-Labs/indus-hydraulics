@@ -43,9 +43,9 @@ const BUCKET = 'blog-images'
 const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
 
 /**
- * One row per published article, across all four hero sprints — the 30 from
- * PR #271, the 63 commissioned on 2026-08-25, the 139 generated on 2026-10-08
- * and the 28 lifting posts on 2026-10-20. `alt` describes what is
+ * One row per published article, across the hero sprints — the 30 from
+ * PR #271, the 63 commissioned on 2026-08-25, the 139 generated on 2026-10-08,
+ * the 28 lifting posts on 2026-10-20 and the 14 anchor chain posts on 2026-11-08. `alt` describes what is
  * actually in the frame: it is read aloud by a screen reader and indexed as
  * image text, so it is not the article title repeated.
  *
@@ -520,6 +520,22 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: 'push-to-connect-fittings-and-silencers', alt: 'Nickel-plated brass push-in fittings with coloured release collars and blue tube, beside sintered bronze silencers', caption: 'A push-in fitting grips the outside of the tube, so the tube’s outside diameter has to be right.' },
   { slug: 'pneumatic-grippers-and-vacuum-guide', alt: 'A two-jaw parallel gripper on a robot arm holding a part, beside vacuum cups on a frame lifting a steel sheet', caption: 'Jaws for parts with edges to hold; suction for flat sheet that has none.' },
   { slug: 'air-motors-guide', alt: 'A vane air motor with planetary gearbox driving a mixer shaft over a stainless tank, fed through a regulator', caption: 'Air motors are at home where electric motors are not: wet, washed-down and stalled under load.' },
+  // 2026-11-08: the 14 anchor chain & mooring articles from PR #589 (published
+  // without heroes). Higgsfield GPT Image 2.6, medium, 2k 3:2 -> 1536x1024 JPEG.
+  { slug: 'anchor-chain-cable-arrangement', alt: 'A black stockless anchor on a quay, its D-shackle joined through a swivel and end link to black stud link anchor chain', caption: 'An anchor cable is built up from parts: anchor shackle, swivel, end links, then 27.5 m lengths of common links.' },
+  { slug: 'anchor-chain-size-chart', alt: 'Sample lengths of stud link anchor chain on a factory floor, laid side by side from small to very large diameters', caption: 'Chain size is the bar diameter of a common link — and proof and breaking loads climb steeply with it.' },
+  { slug: 'stud-link-vs-studless-chain', alt: 'Two heavy chains side by side on a wet quay: stud link chain with a bar across every link, and plain studless chain', caption: 'The stud stops a link closing up and the chain kinking; studless chain saves weight and the joint that can work loose.' },
+  { slug: 'offshore-mooring-chain-grades-r3-r4-r5', alt: 'Huge studless offshore mooring chain running out over the stern roller of an anchor-handling vessel in a rough sea', caption: 'Offshore mooring chain is graded R3 to R5: higher strength and toughness for lines that stay in the water for decades.' },
+  { slug: 'anchor-chain-weight-chart', alt: 'A crane lifting a bundle of black stud link anchor chain on a crane scale, more chain stacked in the stockyard', caption: 'Chain weight per metre sets windlass load, deck strength and freight — and two published tables rarely agree exactly.' },
+  { slug: 'how-anchor-chain-is-made', alt: 'A glowing hot steel bar bent into a chain link in a chain-making machine, threaded through the previous link', caption: 'Each link is bent hot through the one before it, then flash-butt welded shut, studded and heat treated.' },
+  { slug: 'anchor-chain-testing-proof-break-ndt', alt: 'A length of stud link anchor chain stretched taut on a long proof-load test bench, an inspector watching', caption: 'Every length is proof loaded end to end before it is certified; samples are broken to prove the margin.' },
+  { slug: 'equipment-number-anchor-chain-sizing', alt: 'Two anchor windlasses on a ship\'s forecastle with stud link chain running through stoppers into the hawse pipes', caption: 'Anchor mass, chain length and chain size all come from one figure in the class rules: the equipment number.' },
+  { slug: 'anchor-chain-wear-limits', alt: 'Gloved hands measuring a worn stud link anchor chain link with outside calipers where links rub together', caption: 'Class rules allow a link to wear 12% below its nominal diameter; measure at the crown, where links rub.' },
+  { slug: 'chain-locker-volume', alt: 'Black stud link anchor chain piled in a ship\'s chain locker beneath the spurling pipe, a ladder on the bulkhead', caption: 'The locker has to hold the whole cable and let it pile and run free, without the chain fouling itself.' },
+  { slug: 'how-to-assemble-a-kenter-shackle', alt: 'A Kenter shackle taken apart on a workbench: two halves, the stud, a taper pin and lead plug, with a punch and hammer', caption: 'Two halves, a stud and a taper pin locked by a lead plug: the Kenter shackle joins chain without changing its shape.' },
+  { slug: 'anchor-proof-load-testing', alt: 'A black stockless anchor held in a proof-load test frame, a hydraulic ram pulling on the shackle at its shank', caption: 'An anchor is proof loaded to a figure set by its mass before it gets a certificate.' },
+  { slug: 'offshore-mooring-components', alt: 'Mooring connectors on a vessel deck: H-link, pear link, triangle plate, joining shackle and swivel, by studless chain', caption: 'Every connector in a mooring leg is rated to the line\'s grade; each one exists to join or turn a different pair of parts.' },
+  { slug: 'anchor-chain-marking-and-certificates', alt: 'A gloved finger pointing to stamped marks on a link of black anchor chain, a clipboard with a certificate behind', caption: 'The stamps on the chain have to match the certificate before the cable goes aboard.' },
 ] as const
 
 /**
