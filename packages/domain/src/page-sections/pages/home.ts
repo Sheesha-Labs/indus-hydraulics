@@ -76,19 +76,17 @@ export const HOME_PAGE: MasterPageDef = {
     {
       key: 'categories',
       label: 'Category grid',
-      description: 'The six top-level catalogue groups, lead card first.',
+      description: 'Every top-level catalogue group, each with its photo and sub-category links.',
       dataNote:
-        'The cards themselves are the published top-level categories, in the order set under Catalogue · Categories. Their names, blurbs and images are edited there.',
+        'The cards are every published top-level category, in the order set under Catalogue · Categories, each listing its published sub-categories that have stock (first six open, the rest behind "Show all"). Names, images and order are edited there.',
       fields: [
         eyebrow({ help: 'Use {categories} for the live group count.' }),
         heading(),
-        text('featured_label', 'Lead card eyebrow', { max: 60, optional: true }),
         ...ctaPair('', 'Link label'),
       ],
       defaults: {
         eyebrow: 'SHOP BY CATEGORY · {categories} GROUPS',
         heading: 'The full catalogue, organised the way engineers think.',
-        featured_label: 'FEATURED CATEGORY',
         cta_label: 'Browse all categories →',
         cta_href: '/c',
       },
