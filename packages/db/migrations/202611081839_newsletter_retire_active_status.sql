@@ -14,8 +14,12 @@
 --
 -- 2. The enum is rebuilt without `active`, so no code can write it again.
 --    Postgres cannot drop an enum value in place; this swaps the type. The
---    status-sync trigger compares text, so it is unaffected, and a column
---    type change does not fire it.
+--    status-sync trigger is `UPDATE OF status`, which makes it depend on the
+--    column, and Postgres refuses to change a column's type under such a
+--    trigger ("cannot alter type of a column used in a trigger definition").
+--    It is dropped for the swap and recreated unchanged; its function
+--    compares text, so it needs no change. Inside one transaction, no write
+--    can slip past it.
 
 BEGIN;
 
@@ -28,6 +32,8 @@ UPDATE "newsletter_subscribers"
 
 ALTER TABLE "newsletter_subscribers" ALTER COLUMN status DROP DEFAULT;
 
+DROP TRIGGER newsletter_subscriber_status_sync ON "newsletter_subscribers";
+
 ALTER TYPE "NewsletterSubscriberStatus" RENAME TO "NewsletterSubscriberStatus_legacy";
 CREATE TYPE "NewsletterSubscriberStatus" AS ENUM ('pending', 'confirmed', 'unsubscribed', 'bounced');
 
@@ -38,5 +44,9 @@ ALTER TABLE "newsletter_subscribers"
 ALTER TABLE "newsletter_subscribers" ALTER COLUMN status SET DEFAULT 'pending';
 
 DROP TYPE "NewsletterSubscriberStatus_legacy";
+
+CREATE TRIGGER newsletter_subscriber_status_sync
+  AFTER INSERT OR UPDATE OF status ON "newsletter_subscribers"
+  FOR EACH ROW EXECUTE FUNCTION newsletter_subscriber_status_sync();
 
 COMMIT;

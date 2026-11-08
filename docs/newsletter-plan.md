@@ -1,6 +1,6 @@
 # Newsletter system — plan
 
-Status: **Phase 1 built, 2026-11-08** (PR #597, held for one deploy with the Inngest fix). Phase 0 subdomain verified 2026-11-08. Phases 2–5 not started. See Appendix C.
+Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`, one deploy with the Inngest fix). Migration part 2 applied, Inngest synced, webhook enabled, end-to-end checked on production. Phases 2–5 not started. See Appendix C.
 
 Goal: a working newsletter for Indus Hydraulics, end to end — a signup that
 actually confirms, a subscriber and list manager in the admin, a composer that
@@ -179,7 +179,7 @@ Open/click tracking (D4), a preference centre (topics/frequency), segments beyon
 | Tile copy | **Not changed** — Ayush: the subscriber figure reflects the internal list that will be uploaded. |
 | Sending subdomain in Resend | **Verified 2026-11-08.** `news.indushydraulics.com`, Tokyo region, open/click tracking off. Records added at Spaceship (zone `indushydraulics.com`): TXT `resend._domainkey.news` (DKIM), CNAME `send.news` → `send.forge.rmta.net` (return path / SPF), CNAME `rsend.news` → `rsend-apne1.forge.rmta.net`. No apex record touched; DMARC inherited from the apex (`p=none`). Receiving not enabled. |
 | Inngest | **Root cause found:** `PUT /api/inngest` returns 400 — *"The function 'procurement.research.item' has higher concurrency limits (8) than your plan limit of 5"*. One function over the plan cap makes Inngest reject the whole app, so nothing has ever been registered. Fixed (limit 5) on the newsletter branch; re-sync right after it deploys. The 3 stale failed emails were marked `dead_letter` on 2026-11-08 so the retry job won't send them; the trash purge is approved to run. Before the fix, keys **were** set in Vercel production but the app had never been synced: no SEO health score has ever been written, `gsc_metric_daily` is empty, and 3 failed emails (May–Aug) have `retryCount = 0`. Syncing (`PUT /api/inngest`) turns every cron on at once — see the side effects below, which need a decision first. |
-| Resend webhook | **Created 2026-11-08, disabled** until the route deploys: `https://indushydraulics.com/api/webhooks/resend`, events delivered / bounced / complained. Resend webhooks are per account and this account also sends for another site, so the route ignores events whose From is not on `indushydraulics.com`. `RESEND_WEBHOOK_SECRET` must be in Vercel production before the deploy. |
+| Resend webhook | **Created 2026-11-08; enabled and returning 200 since the 2026-11-09 deploy.** `https://indushydraulics.com/api/webhooks/resend`, events delivered / bounced / complained. Resend webhooks are per account and this account also sends for another site, so the route ignores events whose From is not on `indushydraulics.com`. `RESEND_WEBHOOK_SECRET` is set in Vercel production (Sensitive). |
 | Privacy-policy paragraph | Drafted below; not published (publish at launch, Phase 5). |
 
 **What syncing Inngest switches on (checked against production data):**
@@ -214,7 +214,7 @@ Additions to the existing sections of `/privacy` (Pages & Blocks → Privacy). P
 | Piece | Where |
 |---|---|
 | Migration part 1 (additive) | `202611081838_newsletter_double_opt_in.sql` — **applied** 2026-11-08 via Supabase MCP. Trigger checked with `packages/db/scripts/test-newsletter-suppression.sql` (all 8 cases pass, rolls back). |
-| Migration part 2 (retire `active`) | `202611081839_newsletter_retire_active_status.sql` — **run right after the deploy.** Until it runs, the one legacy `active` row cannot be read by the new client (its owner re-signing up would error; nothing else reads it). |
+| Migration part 2 (retire `active`) | `202611081839_newsletter_retire_active_status.sql` — **applied 2026-11-09**, minutes after the deploy. The first attempt failed and rolled back: the status-sync trigger is `UPDATE OF status`, and Postgres will not change a column's type under a trigger that names it. The migration now drops the trigger for the swap and recreates it; the trigger test was re-run on the new enum (all pass, plus a check that the default is `pending`). |
 | Sender | `newsletter@news.indushydraulics.com`, Reply-To `sales@indushydraulics.me`; `assertMarketingSender` refuses anything off `news.`. Sends fail until the subdomain is verified in Resend — **verify before deploying.** |
 | Signup | `actions/newsletter.ts` → `lib/newsletter/service.ts`. Silent success for honeypot / under-1.5 s / dotted Gmail / hard-suppressed / 10-min resend cooldown; 5 per IP per hour, 20 per day (counted from the table, durable across instances); consent text + version stored. |
 | Tokens | Confirmation: 48 hex, only its SHA-256 stored, one-time, 14 days. Unsubscribe: 48 hex, permanent, in clear. |
@@ -226,3 +226,20 @@ Additions to the existing sections of `/privacy` (Pages & Blocks → Privacy). P
 **Before the deploy** (needs a Resend sign-in): (1) verify `news.indushydraulics.com` in Resend; (2) create the Resend webhook (`email.delivered`, `email.bounced`, `email.complained` → `https://indushydraulics.com/api/webhooks/resend`) — disabled if Resend allows, otherwise its first events 404 and are retried — and put its signing secret in Vercel production as `RESEND_WEBHOOK_SECRET`. It has to be there before the build: Vercel env changes only reach new deployments, and a second deploy just for the secret is what the batch rule exists to avoid.
 
 **After the deploy:** (1) run migration part 2; (2) `PUT https://indushydraulics.com/api/inngest` and check every function registers; (3) enable the webhook; (4) end to end on production with a real inbox: signup → confirmation → confirm → welcome → one-click unsubscribe; (5) Resend's test addresses `bounced@resend.dev` / `complained@resend.dev` through the signup form, then check `newsletter_suppressions`.
+
+**Done 2026-11-09 (production, after the `416d39a` deploy):**
+
+| Check | Result |
+|---|---|
+| Routes | `POST /api/webhooks/resend` unsigned → 401 (secret loaded); one-click `POST` → 200, `GET` → 405; `/newsletter/unsubscribe/<token>` is `noindex, nofollow`; `robots.txt` has `Disallow: /newsletter/`. |
+| Migration part 2 | Applied. The legacy row is `confirmed` with `legacy-single-opt-in` consent; enum is `pending, confirmed, unsubscribed, bounced`; default `pending`; trigger recreated. |
+| Inngest | `PUT /api/inngest` → `Successfully registered`, `modified: true`. |
+| Signup → confirm → welcome | Through the homepage form with `delivered@resend.dev`: confirmation sent from `newsletter@news.indushydraulics.com`, `deliveredAt` stamped by the webhook; the confirm page acted only on the button; welcome sent and delivered. |
+| One-click unsubscribe | `POST` with the welcome's token → 200 and status `unsubscribed`, suppression `unsubscribed`; a repeat `POST` → 200. |
+| Bounce | `bounced@resend.dev` → subscriber `bounced`, suppression `bounced`, `sent_emails.bouncedAt` set. |
+| Complaint | `complained@resend.dev` → subscriber `unsubscribed`, suppression `complained`, `sent_emails.complainedAt` set. |
+| Webhook log | Every event 200 — including the retries of other-site events that 404'd before the deploy, now ignored by the sender filter. |
+
+The three test subscribers, their suppressions and their four `sent_emails` rows were deleted afterwards. One real subscriber remains (the legacy row).
+
+**Open:** the other site on this Resend account receives Indus events on its own webhook too — a permanent bounce of Indus mail could mark one of its subscribers bounced. Fix belongs in that repository (filter by From domain, as here).
