@@ -8,6 +8,7 @@ import { HERO_TERMS, heroLeadFor, img, interpolate, list, str, visibleList } fro
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import HeroTermRotator from '../../components/HeroTermRotator'
+import HomeCategoryIndex, { type HomeCategory } from '../../components/HomeCategoryIndex'
 import BrandMarquee from '../../components/BrandMarquee'
 import { selectMarqueeBrands } from '../../lib/brand-marquee'
 import { rollUpCounts } from '../../lib/category-tree'
@@ -55,35 +56,52 @@ export async function homeMetadata(): Promise<Metadata> {
   }
 }
 
+// Every published top-level category with its published sub-categories —
+// the whole first two levels of the tree, for the catalogue index. Projected
+// to exactly what the cards render, because this result is cached and also
+// feeds the hero search's category <select>.
 const getHomeCategories = unstable_cache(
-  async () => {
-    const [roots, allCategories, grouped] = await Promise.all([
+  async (): Promise<HomeCategory[]> => {
+    const [allCategories, grouped] = await Promise.all([
       db.category.findMany({
-        where: { isPublished: true, parentId: null },
         orderBy: { position: 'asc' },
-        include: {
-          // Kept on the query so a category visual can be dropped back into the
-          // card panel below without touching the data layer.
-          image: { select: { storagePath: true, alt: true, width: true, height: true } },
+        select: {
+          id: true,
+          parentId: true,
+          slug: true,
+          name: true,
+          isPublished: true,
+          image: { select: { storagePath: true, alt: true } },
         },
-        take: 6,
       }),
-      db.category.findMany({ select: { id: true, parentId: true } }),
       db.product.groupBy({
         by: ['categoryId'],
         where: { status: 'active', categoryId: { not: null } },
         _count: { _all: true },
       }),
     ])
-    // Rolled up the tree, as on /c: products live on leaves, so a top-level
-    // row's own `_count.products` is zero and every card read "0 SKUs".
+    // Rolled up the tree, as on /c: products live on leaves, so a parent's
+    // own count is zero and every card would read "0 SKUs".
     const rollup = rollUpCounts(
       new Map(allCategories.map((c) => [c.id, c.parentId])),
       new Map(grouped.map((g) => [g.categoryId as string, g._count._all])),
     )
-    return roots.map((c) => ({ ...c, skuCount: rollup.get(c.id) ?? 0 }))
+    const published = allCategories.filter((c) => c.isPublished)
+    return published
+      .filter((c) => c.parentId === null)
+      .map((root) => ({
+        slug: root.slug,
+        name: root.name,
+        skuCount: rollup.get(root.id) ?? 0,
+        image: root.image,
+        // An empty range is not linked: a home-page link to a page with no
+        // products spends the strongest page on the site on a dead end.
+        subcategories: published
+          .filter((c) => c.parentId === root.id && (rollup.get(c.id) ?? 0) > 0)
+          .map((c) => ({ slug: c.slug, name: c.name })),
+      }))
   },
-  ['home-categories'],
+  ['home-category-index'],
   { revalidate: 3600, tags: ['categories', 'product-count'] },
 )
 
@@ -262,8 +280,6 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
   }
   const t = (value: string | null): string | null => interpolate(value, tokens)
 
-  const [featuredCat, ...restCats] = categories
-
   const hero = content.values('hero')
   const usp = content.values('usp')
   const categoriesCopy = content.values('categories')
@@ -337,7 +353,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               >
                 <option value="">All categories</option>
                 {categories.map((c) => (
-                  <option key={c.id} value={c.slug}>{c.name}</option>
+                  <option key={c.slug} value={c.slug}>{c.name}</option>
                 ))}
               </select>
               <input
@@ -454,82 +470,18 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             ) : null}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {/* Featured (span 2) */}
-            {featuredCat && (
-              <Link
-                href={`/c/${featuredCat.slug}`}
-                className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent lg:col-span-2 lg:flex-row"
-              >
-                {/* The category feature image — a studio group shot of the real
-                    products in that category. This panel crops much squarer
-                    than the tiles below (near 4:3 on desktop, a 220px band on
-                    mobile), which is what the artwork is composed for. */}
-                <div className="lg:flex-1 min-h-[220px] lg:min-h-[320px] bg-ih-surface-2 border-b lg:border-b-0 lg:border-r border-ih-border relative overflow-hidden">
-                  {featuredCat.image && (
-                    <Image
-                      src={mediaUrl(featuredCat.image.storagePath)}
-                      alt={featuredCat.image.alt ?? featuredCat.name}
-                      fill
-                      // Half of a two-column span on desktop, full-bleed once
-                      // the card stacks at lg.
-                      sizes="(max-width: 1024px) 100vw, 30vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                    />
-                  )}
-                </div>
-                <div className="lg:flex-1 p-8 flex flex-col justify-center gap-2.5">
-                  <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{str(categoriesCopy, 'featured_label')}</span>
-                  <div className="flex items-baseline justify-between gap-3">
-                    <h3 className="text-[22px] font-semibold tracking-[-0.015em]">{featuredCat.name}</h3>
-                    <span className="font-mono text-[12px] text-ih-muted shrink-0">{featuredCat.skuCount.toLocaleString()} SKUs</span>
-                  </div>
-                  {featuredCat.shortDescription && (
-                    <p className="text-[14px] text-ih-muted leading-[1.5]">{featuredCat.shortDescription}</p>
-                  )}
-                  <div className="mt-2 pt-3 border-t border-ih-border flex justify-between items-center">
-                    <span className="text-ih-accent font-medium text-[13px] group-hover:underline">Explore {featuredCat.name} →</span>
-                    <span className="font-mono text-[11px] text-ih-muted-2">CAT.01</span>
-                  </div>
-                </div>
-              </Link>
-            )}
+          <HomeCategoryIndex categories={categories} skuCount={activeSkuCount} />
 
-            {/* Regular tiles */}
-            {restCats.map((cat, i) => (
-              <Link
-                key={cat.id}
-                href={`/c/${cat.slug}`}
-                className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
-              >
-                {/* The category feature image, cropped 16:10. */}
-                <div className="aspect-[16/10] bg-ih-surface-2 border-b border-ih-border relative overflow-hidden">
-                  {cat.image && (
-                    <Image
-                      src={mediaUrl(cat.image.storagePath)}
-                      alt={cat.image.alt ?? cat.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 30vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                    />
-                  )}
-                </div>
-                <div className="p-5 flex flex-col gap-2.5 flex-1">
-                  <div className="flex items-baseline justify-between gap-2">
-                    <h3 className="text-[18px] font-semibold tracking-[-0.015em]">{cat.name}</h3>
-                    <span className="font-mono text-[12px] text-ih-muted shrink-0">{cat.skuCount.toLocaleString()} SKUs</span>
-                  </div>
-                  {cat.shortDescription && (
-                    <p className="text-[14px] text-ih-muted leading-[1.5] line-clamp-2">{cat.shortDescription}</p>
-                  )}
-                  <div className="mt-auto pt-3 border-t border-ih-border flex justify-between items-center">
-                    <span className="text-ih-accent font-medium text-[13px] group-hover:underline">Explore →</span>
-                    <span className="font-mono text-[11px] text-ih-muted-2">CAT.0{i + 2}</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          {/* The header's link is hidden below sm; the section still needs a
+              way through to the full tree there. */}
+          {str(categoriesCopy, 'cta_label') && str(categoriesCopy, 'cta_href') ? (
+            <Link
+              href={str(categoriesCopy, 'cta_href') ?? '/c'}
+              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+            >
+              {str(categoriesCopy, 'cta_label')}
+            </Link>
+          ) : null}
         </div>
       </section>
     ),
