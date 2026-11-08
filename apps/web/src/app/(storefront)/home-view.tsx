@@ -8,6 +8,8 @@ import { HERO_TERMS, heroLeadFor, img, interpolate, list, str, visibleList } fro
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import HeroTermRotator from '../../components/HeroTermRotator'
+import BrandMarquee from '../../components/BrandMarquee'
+import { selectMarqueeBrands } from '../../lib/brand-marquee'
 import { rollUpCounts } from '../../lib/category-tree'
 import { getIndustryList } from '../../lib/industry-content'
 import { mediaUrl } from '../../lib/media'
@@ -85,15 +87,26 @@ const getHomeCategories = unstable_cache(
   { revalidate: 3600, tags: ['categories', 'product-count'] },
 )
 
+// Every published brand with a logo — the same set /brands shows as logo
+// cards — narrowed and ordered by `selectMarqueeBrands` (one tile per picture,
+// no house brand, best-stocked first). Only the projected fields leave the
+// cache, so the payload is a slug, a name and a URL per tile.
 const getHomeBrands = unstable_cache(
-  () =>
-    db.brand.findMany({
-      where: { isPublished: true },
-      orderBy: { name: 'asc' },
-      select: { id: true, name: true, slug: true, country: true, isAuthorizedDistributor: true },
-      take: 12,
-    }),
-  ['home-brands'],
+  async () => {
+    const rows = await db.brand.findMany({
+      where: { isPublished: true, logoId: { not: null } },
+      select: {
+        slug: true,
+        name: true,
+        logo: { select: { id: true, storagePath: true, alt: true, width: true, height: true, bytes: true } },
+        _count: { select: { products: { where: { status: 'active' } } } },
+      },
+    })
+    return selectMarqueeBrands(
+      rows.map((b) => ({ slug: b.slug, name: b.name, logo: b.logo, skuCount: b._count.products })),
+    )
+  },
+  ['home-brands-marquee'],
   { revalidate: 3600, tags: ['brands'] },
 )
 
@@ -544,22 +557,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             ) : null}
           </div>
 
-          <div className="border border-ih-border bg-ih-surface overflow-hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
-            {brands.map((brand, i) => (
-              <Link
-                key={brand.id}
-                href={`/brands/${brand.slug}`}
-                className={`flex aspect-[3/2] flex-col items-center justify-center text-center p-6 hover:bg-ih-surface-2 transition-colors cursor-pointer border-r border-b border-ih-border ${
-                  (i + 1) % 6 === 0 ? 'border-r-0' : ''
-                } ${i >= brands.length - (brands.length % 6 || 6) ? 'border-b-0' : ''}`}
-              >
-                <div className="font-mono text-[13px] tracking-[0.02em] text-ih-ink-2 uppercase font-medium">
-                  <b className="block text-[18px] font-bold tracking-[-0.01em] text-ih-ink normal-case font-sans mb-1">{brand.name}</b>
-                  {brand.country?.toUpperCase()}
-                </div>
-              </Link>
-            ))}
-          </div>
+          <BrandMarquee brands={brands} label="Brands we distribute" />
         </div>
       </section>
     ),

@@ -276,6 +276,19 @@
     6px 6px;
 }
 
+/* Home page brand logo marquee (components/BrandMarquee.tsx). The track holds
+   the set twice, so -50% lands the second copy where the first began and the
+   loop restarts invisibly. Duration, pause and reduced-motion handling are
+   utilities at the call site. */
+@keyframes ih-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 /* Compare tray dock. 03 §1 specifies 220ms on cubic-bezier(.32,.72,0,1),
    entering from translateY(100%). Reduced motion drops the translate via the
    motion-reduce: variant at the call site. */
