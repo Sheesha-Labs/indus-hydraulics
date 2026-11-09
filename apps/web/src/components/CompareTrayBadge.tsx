@@ -41,7 +41,7 @@ export default function CompareTrayBadge() {
   const remaining = MAX_COMPARE - tray.length
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 animate-[ih-dock_220ms_cubic-bezier(.32,.72,0,1)] border-t border-ih-navy-2 bg-ih-navy motion-reduce:animate-none">
+    <div data-bottom-dock className="fixed inset-x-0 bottom-0 z-40 animate-[ih-dock_220ms_cubic-bezier(.32,.72,0,1)] border-t border-ih-navy-2 bg-ih-navy motion-reduce:animate-none">
       {/* Count changes are announced — the tray is otherwise a purely visual
           confirmation that a click did anything. 03 §8. */}
       <p aria-live="polite" className="sr-only">

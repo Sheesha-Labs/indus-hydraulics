@@ -446,6 +446,7 @@ model StaffUser {
   newsletterCampaignsSent    NewsletterCampaign[]    @relation("NewsletterCampaignSentBy")
   newsletterTemplates        NewsletterTemplate[]    @relation("NewsletterTemplateCreatedBy")
   newsletterSettingsEdits    NewsletterSettings[]    @relation("NewsletterSettingsUpdatedBy")
+  callbackLeadsAssigned      CallbackLead[]          @relation("CallbackLeadAssignedTo")
 
   @@map("staff_users")
 }
@@ -3116,4 +3117,63 @@ enum AttachmentExtractionStatus {
   extracted
   unsupported
   failed
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Call-back leads (202611092019)
+//
+// Written by the storefront retention prompt — exit intent, inactivity and tab
+// return (components/callback). One row per accepted request; honeypot and
+// too-fast submissions never reach it. The sales email is the alert; this is
+// the record the desk works from.
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum CallbackLeadStatus {
+  new
+  called
+  quoted
+  closed
+  spam
+}
+
+model CallbackLead {
+  id           String             @id @default(uuid())
+  createdAt    DateTime           @default(now())
+  name         String
+  email        String
+  /// The number sales dials, E.164 ("+971521234567").
+  phoneE164    String
+  /// ISO 3166-1 alpha-2 of the dial code the visitor picked.
+  phoneCountry String
+  /// hoses_fittings | pumps | valves | cylinders | seals | repair_service | other. Surface B only.
+  category     String?
+  description  String?
+  /// B split modal · D corner card · E mobile sheet. DB CHECK.
+  surface      String
+  /// inactivity | exit | tab_return | manual. DB CHECK.
+  trigger      String
+  pageUrl      String?
+  pageTitle    String?
+  referrer     String?
+  /// Country slug when the request came from /markets/{slug}.
+  market       String?
+  utmSource    String?
+  utmMedium    String?
+  utmCampaign  String?
+  utmTerm      String?
+  utmContent   String?
+  /// SHA-256 of the client IP; never the raw address. The rate limit counts it.
+  ipHash       String?
+  userAgent    String?
+  /// Whether the desk was open when the request came in.
+  deskOpen     Boolean            @default(false)
+  status       CallbackLeadStatus @default(new)
+  assignedToId String?
+  assignedTo   StaffUser?         @relation("CallbackLeadAssignedTo", fields: [assignedToId], references: [id])
+  notes        String?
+
+  @@index([createdAt])
+  @@index([status])
+  @@index([ipHash, createdAt])
+  @@map("callback_leads")
 }

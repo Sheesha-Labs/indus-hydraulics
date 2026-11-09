@@ -18,6 +18,8 @@ export type EmailKind =
   | 'newsletter_welcome'
   | 'newsletter_test'
   | 'newsletter_campaign'
+  | 'callback_request'
+  | 'callback_confirmation'
 
 export type EmailAttachment = {
   filename: string

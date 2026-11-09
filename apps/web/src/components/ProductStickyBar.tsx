@@ -27,6 +27,7 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
 
   return (
     <div
+      data-bottom-dock
       className="fixed bottom-0 left-0 right-0 z-30 bg-ih-surface border-t border-ih-border"
       style={{ boxShadow: '0 -4px 20px -8px rgba(17,20,24,0.1)' }}
     >

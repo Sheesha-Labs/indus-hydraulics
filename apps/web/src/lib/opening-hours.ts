@@ -1,5 +1,5 @@
 /**
- * Opening-hours model for /contact.
+ * Opening-hours model for /contact and the call-back desk status.
  *
  * The source of truth is `Office.openingHours` in lib/site-locations.ts, which
  * is already written in the Schema.org shape ("Mo-Fr 09:00-18:00") because the
@@ -184,3 +184,55 @@ export function statusFor(rows: HoursRow[], now: { day: number; minutes: number 
   // Every row is closed — say so without inventing a time.
   return { open: false, state: 'Closed', detail: null }
 }
+
+/** "09:00" — the 24-hour clock the call-back copy uses, with the zone after it. */
+function clock24(total: number): string {
+  const h = Math.floor(total / 60) % 24
+  const m = total % 60
+  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`
+}
+
+export type DeskStatus = {
+  /** True while today's row is open at `now`. */
+  open: boolean
+  /**
+   * When the desk next opens, phrased to follow "Back" or "the desk opens":
+   * "at 09:00 GST", "tomorrow at 09:00 GST", "Monday at 09:00 GST". Null while
+   * open, or when no row carries usable times.
+   */
+  nextOpen: string | null
+}
+
+/**
+ * The call-back desk's state, from the same rows the /contact hours card reads.
+ * The call-back prompt promises a call "within one working hour", so outside
+ * these hours every surface says when the desk opens instead.
+ */
+export function deskStatus(rows: HoursRow[], now: { day: number; minutes: number }): DeskStatus {
+  const byDay = new Map<number, HoursRow>()
+  for (const row of rows) if (!byDay.has(row.index)) byDay.set(row.index, row)
+
+  const today = byDay.get(now.day)
+  if (
+    today?.openMinutes != null &&
+    today.closeMinutes != null &&
+    now.minutes >= today.openMinutes &&
+    now.minutes < today.closeMinutes
+  ) {
+    return { open: true, nextOpen: null }
+  }
+
+  if (today?.openMinutes != null && now.minutes < today.openMinutes) {
+    return { open: false, nextOpen: `at ${clock24(today.openMinutes)} GST` }
+  }
+
+  for (let step = 1; step <= 7; step++) {
+    const next = byDay.get((now.day + step) % 7)
+    if (next?.openMinutes == null) continue
+    const when = step === 1 ? 'tomorrow' : DAY_NAMES[(now.day + step) % 7]
+    return { open: false, nextOpen: `${when} at ${clock24(next.openMinutes)} GST` }
+  }
+
+  return { open: false, nextOpen: null }
+}
+

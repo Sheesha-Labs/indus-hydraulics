@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { ChevronDown, Clock } from 'lucide-react'
-import { dubaiNow, rotateToToday, statusFor, type HoursRow, type HoursStatus } from './hours'
+import { dubaiNow, rotateToToday, statusFor, type HoursRow, type HoursStatus } from '../../../../lib/opening-hours'
 
 /**
  * Opening hours in the contact rail, in the shape of a Google Business Profile
