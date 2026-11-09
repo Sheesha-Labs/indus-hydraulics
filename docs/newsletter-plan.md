@@ -1,6 +1,6 @@
 # Newsletter system — plan
 
-Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`). **Phases 2–4 built 2026-11-09** — admin subscribers/lists (#599), composer and templates (#600), sending/scheduling/reports (stacked PR) — held for one batch deploy; all migrations applied. Phase 5 (launch) follows the deploy. See Appendices C–F.
+Status: **All five phases done, 2026-11-09.** Phase 1 live (#597, `416d39a`); Phases 2–4 merged as one batch deploy (#599 `6e71895`, #600 `f119ed7`, #601 `78e9a4f`); Phase 5 launch steps done the same day (Appendix G). Before the first real campaign: Resend Pro, and the warm-up in `docs/NEWSLETTER.md`.
 
 Goal: a working newsletter for Indus Hydraulics, end to end — a signup that
 actually confirms, a subscriber and list manager in the admin, a composer that
@@ -302,3 +302,22 @@ The three test subscribers, their suppressions and their four `sent_emails` rows
 1. `PUT https://indushydraulics.com/api/inngest` — registers `newsletter.campaign.send`.
 2. In the admin: create a list with staff addresses only, compose from a starter, send yourself a test, then **Rehearse** to the list and check the report.
 3. Phase 5 below.
+
+---
+
+## Appendix G — Phase 5, launch (2026-11-09)
+
+| Step | Result |
+|---|---|
+| Batch deploy | #599 → #600 → #601 squash-merged in order; the two intermediate production builds were cancelled, so one build (`78e9a4f`) deployed all three phases. |
+| Inngest | `PUT /api/inngest` → `Successfully registered`, `modified: true` (adds `newsletter.campaign.send`). |
+| Admin routes | `/admin/newsletter`, `/subscribers`, `/lists`, `/templates`, `/settings` redirect a signed-out visitor to sign-in. |
+| Production rehearsal | A throwaway list of 250 `@example.invalid` addresses and a `dryRun` campaign at 6,000/hour, triggered by the Inngest event API. **First attempt failed at the first claim:** Prisma binds a JS number as int8 and `newsletter_claim_deliveries(text, bigint)` did not exist (42883). `onFailure` closed it as designed — campaign cancelled, all 250 skipped, nothing stuck. Fixed in the database with a bigint overload (migration `202611091554`, applied) — no deploy; the code casts `::int` in the follow-up PR. **Second attempt:** snapshot 250, three batches of 100/100/50 paced 60 s apart, closed as `sent` in 2 min 5 s; no `sent_emails` rows; nothing emailed. Test list and both campaigns deleted afterwards. |
+| Privacy policy | Published through Pages & Blocks (`page_content` `master/privacy`, all 14 clauses listed in order): the Appendix B newsletter wording added to *Information we collect*, *Why we use your information*, *Sharing with third parties* (email service line) and *Data retention*; effective line now "Effective 2026-11-09 · Version 1.1". No deploy. |
+| Manual | `docs/NEWSLETTER.md` — roles, writing, sending, warm-up, report meanings, what to do on a complaint or bounce spike, and where the code lives. |
+
+**Not done here — needs a person:**
+- Move Resend to **Pro** before any campaign to more than ~100 people (free plan: 100 emails a day, shared with quote mail).
+- First real send: a staff-only list, through the admin, then the warm-up in the manual.
+- Click through the admin screens once — they were built and tested, but not walked through with a staff login.
+- The privacy policy still describes *account creation* and a *customer portal* (removed in #586) and names Vercel as the host; out of scope here (Appendix B note).
