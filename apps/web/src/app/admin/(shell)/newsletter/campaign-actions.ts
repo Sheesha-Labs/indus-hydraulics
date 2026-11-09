@@ -16,7 +16,7 @@ import { STARTERS, starterDraft, type Starter } from '../../../../lib/newsletter
 import { NEWSLETTER_SEND_EVENT } from '../../../../inngest/newsletterSend'
 import { inngest } from '../../../../inngest/client'
 import { PACE_OPTIONS } from '../../../../lib/newsletter/send'
-import { ROLES, requireRole } from '../../../../lib/rbac'
+import { ROLES, hasRole, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 
 /**
@@ -106,7 +106,7 @@ export async function createCampaignAction(input: { starter: Starter } | { templ
 
 // ── Save, preview, test ────────────────────────────────────────────────
 
-export type SaveResult = { savedAt: string; problems: Record<string, string>; audienceSize: number }
+export type SaveResult = { savedAt: string; problems: Record<string, string>; audienceSize: number; unscheduled: boolean }
 
 export async function saveCampaignAction(id: string, draft: CampaignDraft): Promise<Result<SaveResult>> {
   try {
@@ -118,16 +118,28 @@ export async function saveCampaignAction(id: string, draft: CampaignDraft): Prom
       return fail('PRECONDITION_FAILED', 'This newsletter has already been sent and can no longer be changed.')
     }
     const now = new Date()
+    // A scheduled newsletter was approved by someone who may send. An edit by
+    // someone who may not (a cms_editor) takes it back to a draft, so they
+    // cannot change what — or who — a manager scheduled.
+    const unschedule = current.status === 'scheduled' && !hasRole(session, ROLES.NEWSLETTER_SEND)
     // Conditional on still being editable: a send starting between the read
     // and this write must win.
     const r = await db.newsletterCampaign.updateMany({
       where: { id, status: { in: ['draft', 'scheduled'] } },
-      data: { ...contentData(d), audience: d.audience, listIds: d.listIds, updatedById: session.user.id, updatedAt: now },
+      data: {
+        ...contentData(d),
+        audience: d.audience,
+        listIds: d.listIds,
+        updatedById: session.user.id,
+        updatedAt: now,
+        ...(unschedule ? { status: 'draft' as const, scheduledAt: null } : {}),
+      },
     })
     if (r.count === 0) return fail('PRECONDITION_FAILED', 'This newsletter started sending and can no longer be changed.')
     const [problems, size] = await Promise.all([campaignProblemsLive(d), audienceSize(d.audience, d.listIds)])
     revalidatePath(CAMPAIGNS)
-    return ok({ savedAt: now.toISOString(), problems, audienceSize: size })
+    if (unschedule) revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
+    return ok({ savedAt: now.toISOString(), problems, audienceSize: size, unscheduled: unschedule })
   } catch (err) {
     return failure(err, 'save the newsletter')
   }

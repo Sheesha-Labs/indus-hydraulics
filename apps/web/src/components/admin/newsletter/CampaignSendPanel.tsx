@@ -100,7 +100,7 @@ export default function CampaignSendPanel(props: Props) {
             </Select>
           </label>
           <Checkbox
-            label="Rehearsal — run the whole send but email nobody"
+            label="Rehearsal — run the whole send but email nobody. It uses this newsletter up; duplicate it afterwards to send for real."
             checked={dryRun}
             onChange={(e) => setDryRun(e.target.checked)}
             disabled={pending}
@@ -143,7 +143,9 @@ export default function CampaignSendPanel(props: Props) {
 
       {!editable && c ? (
         <div className="flex flex-col gap-3">
-          {props.dryRun ? <Callout tone="info">This was a rehearsal: nothing was emailed.</Callout> : null}
+          {props.dryRun ? (
+            <Callout tone="info">This was a rehearsal: nothing was emailed. Use Duplicate (top right) to make a copy you can send for real.</Callout>
+          ) : null}
           <Progress counts={c} />
           <dl className="grid grid-cols-2 gap-x-6 gap-y-2 text-[13.5px] sm:grid-cols-4">
             {(

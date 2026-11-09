@@ -1,7 +1,10 @@
 import { NextResponse, type NextRequest } from 'next/server'
-import { WEBSITE_DOMAIN } from '@indus/domain'
+import { MARKETING_DOMAIN, WEBSITE_DOMAIN } from '@indus/domain'
 import { isOwnSender, parseEmailEvent, verifyResendSignature } from '../../../../lib/newsletter/events'
 import { recordEmailEvent } from '../../../../lib/newsletter/service'
+
+/** How long after the event an unmatched newsletter event is retried. */
+const RETRY_UNMATCHED_MS = 15 * 60 * 1000
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -51,6 +54,13 @@ export async function POST(req: NextRequest) {
 
   try {
     const outcome = await recordEmailEvent(event)
+    // Newsletter mail records Resend's id only after the batch call returns,
+    // so a fast `delivered` can arrive first and match nothing. Ask Resend to
+    // retry a recent one rather than lose the stamp. (Suppression is keyed
+    // on the address and has already happened either way.)
+    if (!outcome.email && event.senderDomain === MARKETING_DOMAIN && Date.now() - event.at.getTime() < RETRY_UNMATCHED_MS) {
+      return NextResponse.json({ ok: false, reason: 'no matching email yet' }, { status: 503 })
+    }
     return NextResponse.json({ ok: true, ...outcome })
   } catch (err) {
     // The message id and type only — never the recipients.

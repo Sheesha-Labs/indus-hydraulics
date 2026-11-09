@@ -295,6 +295,8 @@ The three test subscribers, their suppressions and their four `sent_emails` rows
 | Report | In the composer once sending: progress bar and recipients / sent / delivered / bounced / complaints / failed / skipped / waiting, refreshing every 5 s while it sends. |
 | Tests | `send.test.ts` (pace, keys, per-recipient links and headers, retries only `sending` rows, skips, rehearsal, provider failure then failed, cancel, finish/orphans), `service.test.ts` (contact tokens, delivery stamps). |
 
+| Review fixes (2026-11-09) | An independent review found no double-send, suppression, link-leak or role path, and six defects, all fixed: autosave no longer marks an edit made during a save as saved; a run whose `start` answer was lost resumes instead of stranding the campaign; `finish` waits out young orphans and closes; `onFailure` closes a run that exhausted its retries as cancelled; a cms_editor's edit to a scheduled campaign takes it back to draft; the webhook asks Resend to retry a newsletter event that arrived before its Resend id was recorded. A rehearsal uses the campaign up (the UI says so; Duplicate to send for real). |
+
 ### After the batch deploy (Phases 2–4)
 
 1. `PUT https://indushydraulics.com/api/inngest` — registers `newsletter.campaign.send`.

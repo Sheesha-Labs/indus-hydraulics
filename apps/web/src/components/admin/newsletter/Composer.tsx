@@ -2,6 +2,7 @@
 
 import { Button, Callout, Checkbox, Field, Input, Panel, StatusPill } from '@indus/ui'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from 'react'
 
 import {
@@ -55,6 +56,7 @@ const PREVIEW_MS = 700
  */
 export default function Composer(props: Props) {
   const { id, editable } = props
+  const router = useRouter()
   const [draft, setDraft] = useState<CampaignDraft>(() => ({
     ...props.initial,
     design: props.initial.format === 'blocks' ? normaliseDesign(props.initial.design ?? emptyDesign()) : props.initial.design,
@@ -77,21 +79,33 @@ export default function Composer(props: Props) {
   }, [draft])
 
   const update = useCallback((patch: Partial<CampaignDraft>) => {
-    setDraft((d) => ({ ...d, ...patch }))
+    // Built from the ref, not an updater, so `latest` changes at once (the
+    // save in flight compares against it) and nothing impure runs in render.
+    const next = { ...latest.current, ...patch }
+    latest.current = next
+    setDraft(next)
     setDirty(true)
   }, [])
 
   const save = useCallback(async () => {
-    const r = await saveCampaignAction(id, latest.current)
+    // What this save carries. An edit made while it is in flight must stay
+    // dirty — otherwise it is never saved, the bar says "Saved", and the
+    // send panel sends the older row.
+    const sent = latest.current
+    const r = await saveCampaignAction(id, sent)
     if (r.success) {
       setSavedAt(r.data.savedAt)
-      setProblems(r.data.problems)
-      setSize(r.data.audienceSize)
       setSaveError(null)
-      setDirty(false)
+      const current = latest.current === sent
+      if (current) {
+        setProblems(r.data.problems)
+        setSize(r.data.audienceSize)
+      }
+      setDirty(!current)
+      if (r.data.unscheduled) router.refresh()
     } else setSaveError(r.message)
     return r.success
-  }, [id])
+  }, [id, router])
 
   // Autosave after a pause in typing.
   useEffect(() => {
@@ -168,6 +182,9 @@ export default function Composer(props: Props) {
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div className="flex min-w-0 flex-col gap-6">
           {saveError ? <Callout tone="danger">{saveError}</Callout> : null}
+          {props.status === 'scheduled' && !props.canSend ? (
+            <Callout tone="warning">A manager scheduled this. Any change you make takes it back to a draft, and they will need to schedule it again.</Callout>
+          ) : null}
 
           <Panel>
             <div className="flex flex-col gap-4">

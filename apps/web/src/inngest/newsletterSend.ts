@@ -3,6 +3,7 @@ import { db } from '@indus/db'
 import {
   BATCH_SIZE,
   MAX_BATCHES_PER_RUN,
+  ORPHAN_AFTER_MS,
   claimBatch,
   finishCampaign,
   pauseSeconds,
@@ -37,6 +38,25 @@ export const newsletterCampaignSend = inngest.createFunction(
     // One run per campaign; the plan's cap is 5 across the app.
     concurrency: { key: 'event.data.campaignId', limit: 1 },
     retries: 2,
+    /**
+     * Retries exhausted (a database outage mid-send): close the campaign as
+     * cancelled and skip what was not sent, so it never sits in `sending`
+     * with nothing behind it. Sending the event again would resume it, but a
+     * person should decide that — the report shows what went.
+     */
+    onFailure: async ({ event, error }) => {
+      const { campaignId } = (event.data?.event?.data ?? {}) as Partial<NewsletterSendEvent>
+      if (!campaignId) return
+      console.error('[newsletter] send failed', campaignId, error?.message)
+      await db.newsletterDelivery.updateMany({
+        where: { campaignId, status: 'queued' },
+        data: { status: 'skipped', error: 'The send stopped on an error' },
+      })
+      await db.newsletterCampaign.updateMany({
+        where: { id: campaignId, status: 'sending' },
+        data: { status: 'cancelled', cancelledAt: new Date() },
+      })
+    },
   },
   { event: NEWSLETTER_SEND_EVENT },
   async ({ event, step, attempt }) => {
@@ -44,12 +64,18 @@ export const newsletterCampaignSend = inngest.createFunction(
 
     if (!continuation) {
       const started = await step.run('start', async () => {
-        if (scheduledAt) {
-          // A rescheduled or unscheduled campaign leaves its old event in
-          // flight; it must do nothing.
-          const c = await db.newsletterCampaign.findUnique({ where: { id: campaignId }, select: { status: true, scheduledAt: true } })
-          if (c?.status !== 'scheduled' || c.scheduledAt?.toISOString() !== scheduledAt) return null
+        const c = await db.newsletterCampaign.findUnique({ where: { id: campaignId }, select: { status: true, scheduledAt: true } })
+        // Already started with rows still queued: this step's own first
+        // attempt committed and its answer was lost, or an earlier run died.
+        // Resume — claims take queued rows only, and one run per campaign
+        // runs at a time, so nothing is sent twice.
+        if (c?.status === 'sending') {
+          const queued = await db.newsletterDelivery.count({ where: { campaignId, status: 'queued' } })
+          return queued > 0 ? queued : null
         }
+        // A rescheduled or unscheduled campaign leaves its old event in
+        // flight; it must do nothing.
+        if (scheduledAt && (c?.status !== 'scheduled' || c.scheduledAt?.toISOString() !== scheduledAt)) return null
         return startCampaign(campaignId)
       })
       if (started === null) return { campaignId, skipped: 'not startable' }
@@ -85,7 +111,14 @@ export const newsletterCampaignSend = inngest.createFunction(
       }
     }
 
-    const closed = await step.run('finish', () => finishCampaign(campaignId))
+    let closed = await step.run('finish', () => finishCampaign(campaignId))
+    if (!closed) {
+      // Rows still `sending` are younger than the orphan cut-off (a claim
+      // whose answer was lost). Wait until they count as orphaned, then close
+      // — they are failed, not re-sent.
+      await step.sleep('wait-for-orphans', `${Math.ceil(ORPHAN_AFTER_MS / 1000) + 60}s`)
+      closed = await step.run('finish-again', () => finishCampaign(campaignId))
+    }
     return { campaignId, ...totals, closed }
   },
 )
