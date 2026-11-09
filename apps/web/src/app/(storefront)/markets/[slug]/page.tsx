@@ -157,6 +157,8 @@ export default async function MarketPage({ params }: Props) {
     return (
       <>
         <JsonLd data={structuredData} />
+        {/* The call-back prompt defaults its dial code from this. */}
+        <span hidden data-callback-market={market.countryCode.toUpperCase()} />
         <MarketLandingLegacy market={market} />
       </>
     )
@@ -178,6 +180,8 @@ export default async function MarketPage({ params }: Props) {
   return (
     <>
       <JsonLd data={structuredData} />
+      {/* The call-back prompt defaults its dial code from this. */}
+      <span hidden data-callback-market={market.countryCode.toUpperCase()} />
       <MarketLanding
         market={market}
         page={page}

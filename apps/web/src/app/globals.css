@@ -79,6 +79,12 @@
      "At a glance" panel. */
   --color-ih-on-navy-strong: oklch(0.9 0.015 250);
   --color-ih-on-navy-dim: oklch(0.78 0.025 250);
+  /* Call-back prompt (design_handoff_callback_popup). The split modal's navy
+     rail: its eyebrow and its numbered points, as specified — final colours,
+     not neighbours of the band tokens above. The scrim is the B / E backdrop. */
+  --color-ih-on-navy-eyebrow: oklch(0.72 0.03 250);
+  --color-ih-on-navy-body: oklch(0.86 0.02 250);
+  --color-ih-scrim: oklch(0.2 0.04 252 / 0.58);
 
   /* Blog article tints (design_handoff_blog_article). Callout grounds and
      rules per tone, the warm highlight on a comparison-table row and its tag,
@@ -344,6 +350,40 @@
   to {
     opacity: 0;
     transform: translateY(2px) scale(0.99);
+  }
+}
+
+/* Call-back prompt (components/callback). B rises 12px into place; D slides
+   up 16px; E leaves by dropping back off the bottom (it enters on ih-dock).
+   Reduced motion swaps each for ih-fade-in / ih-fade-out at the call site. */
+@keyframes ih-cb-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ih-cb-corner {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ih-cb-drop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
   }
 }
 

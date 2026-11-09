@@ -12,6 +12,8 @@ import SiteFooter from '../../components/SiteFooter'
 import { SkipToContent } from '@indus/ui'
 import CommandPalette from '../../components/CommandPalette'
 import CompareTrayBadge from '../../components/CompareTrayBadge'
+import CallbackPrompt from '../../components/callback/CallbackPrompt'
+import { callbackCountries } from '../../lib/callback/countries'
 import { BASE_URL, ORG_ID, SITE_NAME } from '../../lib/seo'
 import { areasServed, OFFICES } from '../../lib/site-locations'
 import { getStoreSettings } from '../../lib/store-settings'
@@ -178,6 +180,15 @@ export default async function StorefrontLayout({ children }: { children: React.R
   return (
     <>
         <SkipToContent />
+        {/* Call-back prompt (exit intent, inactivity, tab return). Right after
+            the skip link so its non-modal corner card is early in the tab
+            order; the surfaces themselves load only when a trigger fires. */}
+        <CallbackPrompt
+          countries={callbackCountries()}
+          openingHours={hq?.openingHours ?? []}
+          deskPhone={hq?.telephone ?? settings.contactPhone ?? '+971 52 2477942'}
+          deskEmail={hq?.email ?? settings.contactEmail ?? 'sales@indushydraulics.me'}
+        />
         <SiteHeader />
         {/* A real <main> with an id, so the skip link has somewhere to go and
             assistive tech has a landmark. This was a bare div. */}

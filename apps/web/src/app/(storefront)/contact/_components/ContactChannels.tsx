@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import OpeningHours from './OpeningHours'
-import type { HoursRow } from './hours'
+import type { HoursRow } from '../../../../lib/opening-hours'
 
 export type ChannelKind = 'whatsapp' | 'phone' | 'email' | 'office'
 
