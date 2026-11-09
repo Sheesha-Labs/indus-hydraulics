@@ -55,6 +55,8 @@ const SUB_LABELS: Record<string, string> = {
   subscribers: 'Subscribers',
   lists: 'Lists',
   suppressions: 'Suppressions',
+  campaigns: 'Newsletter',
+  templates: 'Templates',
 }
 
 // Heuristic: skip dynamic-id-looking segments from breadcrumbs.

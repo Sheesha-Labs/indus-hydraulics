@@ -16,6 +16,8 @@ export type EmailKind =
   | 'staff_password_reset'
   | 'newsletter_confirmation'
   | 'newsletter_welcome'
+  | 'newsletter_test'
+  | 'newsletter_campaign'
 
 export type EmailAttachment = {
   filename: string
@@ -280,5 +282,27 @@ export async function sendEmailBatch(
     }
   } catch (err) {
     return fail(err instanceof Error ? err.message : 'Unknown email send error')
+  }
+}
+
+export type SendingDomainStatus = 'verified' | 'pending' | 'failed' | 'not_found' | 'unknown'
+
+/**
+ * Whether Resend has a domain verified for sending — what the newsletter
+ * sender settings page shows next to the From address. `unknown` when there
+ * is no API key (local dev) or Resend cannot be reached; never throws.
+ */
+export async function sendingDomainStatus(domain: string): Promise<SendingDomainStatus> {
+  if (!resendClient) return 'unknown'
+  try {
+    const { data, error } = await resendClient.domains.list()
+    if (error || !data) return 'unknown'
+    const found = data.data.find((d) => d.name.toLowerCase() === domain.toLowerCase())
+    if (!found) return 'not_found'
+    if (found.status === 'verified') return 'verified'
+    if (found.status === 'failed' || found.status === 'temporary_failure') return 'failed'
+    return 'pending'
+  } catch {
+    return 'unknown'
   }
 }

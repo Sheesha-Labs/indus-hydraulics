@@ -1,6 +1,6 @@
 # Newsletter system — plan
 
-Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`). **Phase 2 built 2026-11-09** (subscribers, lists, imports, suppressions in the admin — PR held for the batch; migration applied). Phases 3–5 not started. See Appendices C and D.
+Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`). **Phases 2 and 3 built 2026-11-09** (admin subscribers/lists — PR #599; composer and templates — stacked PR), held for one batch deploy with Phase 4; migrations applied. Phases 4–5 in progress. See Appendices C–E.
 
 Goal: a working newsletter for Indus Hydraulics, end to end — a signup that
 actually confirms, a subscriber and list manager in the admin, a composer that
@@ -260,3 +260,20 @@ The three test subscribers, their suppressions and their four `sent_emails` rows
 | Export | CSV built in memory, formula-leading cells defused (`'=…`), UTF-8 BOM for Excel. |
 | Deviations | The uploaded file is **not** stored (the plan said "upload to storage"): only the two columns ever reach the server, and the import row records who, when, which file name, the consent and the counts. Exports are not logged — Indus has no admin audit table yet. |
 | Tests | `lists.test.ts` (Bazar port + mapping + browser→server pairs), `admin.test.ts` (import, add, re-send, unsubscribe, filters), `service.test.ts` (webhook → list rows). |
+
+---
+
+## Appendix E — Phase 3 as built (2026-11-09)
+
+| Piece | Where |
+|---|---|
+| Migration | `202611091444_newsletter_campaigns.sql` — **applied** 2026-11-09 (additive). Campaigns, templates, single-row sender settings. |
+| Block library | `apps/web/src/lib/newsletter/blocks/` — ported from Bazar without the Arabic layer: `types`, `catalogue` (22 general blocks + `records`), `document` (normalise, refs, link/placeholder checks), `render` (table email, inline styles, **mandatory legal footer** via `renderShell` — fixes Bazar bug 6), `presets` (52), `palette`. 84 tests. |
+| Records | `lib/newsletter/records.ts` — products, categories, blog articles, industries, resolved by id at render time (published only, live title/photo/link via `crawlableImageUrl`); picker search. A record unpublished later is left out of the email and flagged by the send gate. |
+| Starters | New in stock, Product spotlight, From the blog, Industry update, Announcement, Blank — record blocks filled with the latest published records. Subjects are left for staff; the announcement body is a `[Write …]` placeholder the gate refuses. |
+| Rich mode | The catalogue `RichTextEditor`; on render `sanitiseEmailHtml` (sanitize-html allowlist, styles only from our transforms, links http(s)/mailto/tel/site-relative, images https only) inside the same shell and footer. |
+| Composer | `/admin/newsletter/campaigns/[id]`: subject, preview text, audience (subscribers and/or up to 20 lists, live reach count with suppressions out), blocks/rich toggle, block designer generated from the catalogue's field definitions (media library images, record picker, items, colours with brand swatches), autosave, live server-rendered preview in a sandboxed iframe (desktop/phone, subscriber or list-contact footer, inbox header), send gate, **test send** to the signed-in staff member with `[Test]` and a dead unsubscribe link, save as template, duplicate, delete draft. |
+| Send gate | `campaignProblems` — subject, preview text and body placeholders, empty body, unfollowable links, unpublished records, no audience, deleted lists. The legal footer cannot be missing. |
+| Templates | `/admin/newsletter/templates`: use, rename, delete. Saved from the composer. |
+| Sender | `/admin/newsletter/settings` (`NEWSLETTER_SEND`): From name, From local part on `news.indushydraulics.com`, Reply-To; shows the subdomain's Resend verification status (`sendingDomainStatus`). |
+| Deviations | No `{{token}}` system beyond `site_url`/`unsubscribe_url`, which the renderer fills. Social/person/contact blocks use text links (no icon assets). Columns don't stack on phones (no `<style>`). Confirmation and welcome emails still use the fixed `newsletter@` sender; campaigns use the settings. |

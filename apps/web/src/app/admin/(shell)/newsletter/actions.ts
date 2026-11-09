@@ -37,6 +37,8 @@ const LISTS_PATH = '/admin/newsletter/lists'
 
 /** Known errors (auth, role, validation, P2002/P2025) as their typed result; anything else logged and answered generically. */
 function failure(err: unknown, what: string): Result<never> {
+  // Say the first problem in words; the forms here show one message line.
+  if (err instanceof z.ZodError) return fail('VALIDATION', err.issues[0]?.message ?? 'Check the form.')
   try {
     return failFromError(err)
   } catch {

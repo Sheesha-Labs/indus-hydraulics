@@ -421,26 +421,31 @@ model StaffUser {
   failedSignInCount Int       @default(0)
   lockedUntil       DateTime?
 
-  assignedAccounts        Account[]
-  assignedRfqs            Rfq[]                   @relation("AssignedEngineer")
-  repRfqs                 Rfq[]                   @relation("AssignedRep")
-  mediaUploads            Media[]
-  importJobs              ImportJob[]
-  notifications           Notification[]
-  blogPosts               BlogPost[]
-  reviewedBlogPosts       BlogPost[]              @relation("BlogPostReviewer")
-  blogAuthorProfile       BlogAuthor[]            @relation("BlogAuthorStaffUser")
-  sentInvitations         StaffInvitation[]       @relation("StaffInvitationInvitedBy")
-  pageContentEdits        PageContent[]           @relation("PageContentEditor")
-  enquiriesAssigned       Enquiry[]               @relation("EnquiryAssignedTo")
-  enquiriesCreated        Enquiry[]               @relation("EnquiryCreatedBy")
-  researchRuns            ResearchRun[]
-  supplierOffers          SupplierOffer[]         @relation("SupplierOfferCreatedBy")
-  enquiryAttachments      EnquiryAttachment[]
-  offerSelections         SupplierOfferLine[]     @relation("OfferLineSelectedBy")
-  newsletterListsCreated  NewsletterList[]        @relation("NewsletterListCreatedBy")
-  newsletterListImports   NewsletterListImport[]  @relation("NewsletterListImportedBy")
-  newsletterContactsAdded NewsletterListContact[] @relation("NewsletterListContactAddedBy")
+  assignedAccounts           Account[]
+  assignedRfqs               Rfq[]                   @relation("AssignedEngineer")
+  repRfqs                    Rfq[]                   @relation("AssignedRep")
+  mediaUploads               Media[]
+  importJobs                 ImportJob[]
+  notifications              Notification[]
+  blogPosts                  BlogPost[]
+  reviewedBlogPosts          BlogPost[]              @relation("BlogPostReviewer")
+  blogAuthorProfile          BlogAuthor[]            @relation("BlogAuthorStaffUser")
+  sentInvitations            StaffInvitation[]       @relation("StaffInvitationInvitedBy")
+  pageContentEdits           PageContent[]           @relation("PageContentEditor")
+  enquiriesAssigned          Enquiry[]               @relation("EnquiryAssignedTo")
+  enquiriesCreated           Enquiry[]               @relation("EnquiryCreatedBy")
+  researchRuns               ResearchRun[]
+  supplierOffers             SupplierOffer[]         @relation("SupplierOfferCreatedBy")
+  enquiryAttachments         EnquiryAttachment[]
+  offerSelections            SupplierOfferLine[]     @relation("OfferLineSelectedBy")
+  newsletterListsCreated     NewsletterList[]        @relation("NewsletterListCreatedBy")
+  newsletterListImports      NewsletterListImport[]  @relation("NewsletterListImportedBy")
+  newsletterContactsAdded    NewsletterListContact[] @relation("NewsletterListContactAddedBy")
+  newsletterCampaignsCreated NewsletterCampaign[]    @relation("NewsletterCampaignCreatedBy")
+  newsletterCampaignsUpdated NewsletterCampaign[]    @relation("NewsletterCampaignUpdatedBy")
+  newsletterCampaignsSent    NewsletterCampaign[]    @relation("NewsletterCampaignSentBy")
+  newsletterTemplates        NewsletterTemplate[]    @relation("NewsletterTemplateCreatedBy")
+  newsletterSettingsEdits    NewsletterSettings[]    @relation("NewsletterSettingsUpdatedBy")
 
   @@map("staff_users")
 }
@@ -2364,6 +2369,79 @@ model NewsletterListContact {
   @@index([email])
   @@index([listId, status])
   @@map("newsletter_list_contacts")
+}
+
+enum NewsletterCampaignStatus {
+  draft
+  scheduled
+  sending
+  sent
+  cancelled
+}
+
+/// One newsletter (202611091444). `format` blocks = a block document in
+/// `design`; rich = sanitised HTML in `bodyHtml`. `audience` all = every
+/// confirmed subscriber plus `listIds`; none = the lists only.
+model NewsletterCampaign {
+  id             String                   @id @default(uuid())
+  subject        String                   @default("")
+  preheader      String                   @default("")
+  format         String                   @default("blocks") // blocks | rich
+  design         Json?
+  bodyHtml       String                   @default("")
+  audience       String                   @default("all") // all | none
+  listIds        String[]                 @default([])
+  status         NewsletterCampaignStatus @default(draft)
+  scheduledAt    DateTime?
+  startedAt      DateTime?
+  sentAt         DateTime?
+  cancelledAt    DateTime?
+  testSentAt     DateTime?
+  recipientCount Int                      @default(0)
+  createdById    String?
+  createdBy      StaffUser?               @relation("NewsletterCampaignCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  updatedById    String?
+  updatedBy      StaffUser?               @relation("NewsletterCampaignUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  sentById       String?
+  sentBy         StaffUser?               @relation("NewsletterCampaignSentBy", fields: [sentById], references: [id], onDelete: SetNull)
+  createdAt      DateTime                 @default(now())
+  updatedAt      DateTime                 @default(now()) @updatedAt
+
+  @@index([status, scheduledAt])
+  @@index([createdAt])
+  @@map("newsletter_campaigns")
+}
+
+/// A saved design (or rich body) to start campaigns from.
+model NewsletterTemplate {
+  id          String     @id @default(uuid())
+  name        String
+  description String     @default("")
+  subject     String     @default("")
+  preheader   String     @default("")
+  format      String     @default("blocks")
+  design      Json?
+  bodyHtml    String     @default("")
+  createdById String?
+  createdBy   StaffUser? @relation("NewsletterTemplateCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @default(now()) @updatedAt
+
+  @@map("newsletter_templates")
+}
+
+/// The single sender row (id "default"). The From domain is always the
+/// newsletter subdomain; only its local part is stored.
+model NewsletterSettings {
+  id          String     @id @default("default")
+  fromName    String     @default("Indus Hydraulics")
+  fromLocal   String     @default("newsletter")
+  replyTo     String     @default("sales@indushydraulics.me")
+  updatedById String?
+  updatedBy   StaffUser? @relation("NewsletterSettingsUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  updatedAt   DateTime   @default(now()) @updatedAt
+
+  @@map("newsletter_settings")
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
