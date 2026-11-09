@@ -58,10 +58,15 @@ export async function startCampaign(campaignId: string): Promise<number | null> 
   return rows[0]?.n ?? null
 }
 
-/** Claim up to `n` queued deliveries of one campaign. Returns their ids. */
+/**
+ * Claim up to `n` queued deliveries of one campaign. Returns their ids.
+ *
+ * `::int`: Prisma binds a JS number as int8, and the function takes INTEGER
+ * (202611091554 added a bigint overload after the first rehearsal failed).
+ */
 export async function claimBatch(campaignId: string, n = BATCH_SIZE): Promise<string[]> {
   const rows = await db.$queryRaw<{ id: string }[]>(
-    Prisma.sql`SELECT id FROM public.newsletter_claim_deliveries(${campaignId}, ${n})`,
+    Prisma.sql`SELECT id FROM public.newsletter_claim_deliveries(${campaignId}, ${n}::int)`,
   )
   return rows.map((r) => r.id)
 }
