@@ -9,11 +9,14 @@ import { auth } from '../../../../lib/admin-auth'
 import { normaliseDesign } from '../../../../lib/newsletter/blocks/document'
 import { RECORD_KINDS } from '../../../../lib/newsletter/blocks/types'
 import { EDITABLE_STATUSES, campaignDraftSchema, type CampaignDraft, type CampaignStatus } from '../../../../lib/newsletter/campaign'
-import { audienceSize, campaignProblemsLive, renderPreview, sendTest } from '../../../../lib/newsletter/campaigns'
+import { audienceSize, campaignProblemsLive, draftOf, renderPreview, sendTest } from '../../../../lib/newsletter/campaigns'
 import { searchRecords, type RecordOption } from '../../../../lib/newsletter/records'
 import { senderSettingsSchema } from '../../../../lib/newsletter/sender'
 import { STARTERS, starterDraft, type Starter } from '../../../../lib/newsletter/starters'
-import { ROLES, requireRole } from '../../../../lib/rbac'
+import { NEWSLETTER_SEND_EVENT } from '../../../../inngest/newsletterSend'
+import { inngest } from '../../../../inngest/client'
+import { PACE_OPTIONS } from '../../../../lib/newsletter/send'
+import { ROLES, hasRole, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 
 /**
@@ -103,7 +106,7 @@ export async function createCampaignAction(input: { starter: Starter } | { templ
 
 // ── Save, preview, test ────────────────────────────────────────────────
 
-export type SaveResult = { savedAt: string; problems: Record<string, string>; audienceSize: number }
+export type SaveResult = { savedAt: string; problems: Record<string, string>; audienceSize: number; unscheduled: boolean }
 
 export async function saveCampaignAction(id: string, draft: CampaignDraft): Promise<Result<SaveResult>> {
   try {
@@ -115,16 +118,28 @@ export async function saveCampaignAction(id: string, draft: CampaignDraft): Prom
       return fail('PRECONDITION_FAILED', 'This newsletter has already been sent and can no longer be changed.')
     }
     const now = new Date()
+    // A scheduled newsletter was approved by someone who may send. An edit by
+    // someone who may not (a cms_editor) takes it back to a draft, so they
+    // cannot change what — or who — a manager scheduled.
+    const unschedule = current.status === 'scheduled' && !hasRole(session, ROLES.NEWSLETTER_SEND)
     // Conditional on still being editable: a send starting between the read
     // and this write must win.
     const r = await db.newsletterCampaign.updateMany({
       where: { id, status: { in: ['draft', 'scheduled'] } },
-      data: { ...contentData(d), audience: d.audience, listIds: d.listIds, updatedById: session.user.id, updatedAt: now },
+      data: {
+        ...contentData(d),
+        audience: d.audience,
+        listIds: d.listIds,
+        updatedById: session.user.id,
+        updatedAt: now,
+        ...(unschedule ? { status: 'draft' as const, scheduledAt: null } : {}),
+      },
     })
     if (r.count === 0) return fail('PRECONDITION_FAILED', 'This newsletter started sending and can no longer be changed.')
     const [problems, size] = await Promise.all([campaignProblemsLive(d), audienceSize(d.audience, d.listIds)])
     revalidatePath(CAMPAIGNS)
-    return ok({ savedAt: now.toISOString(), problems, audienceSize: size })
+    if (unschedule) revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
+    return ok({ savedAt: now.toISOString(), problems, audienceSize: size, unscheduled: unschedule })
   } catch (err) {
     return failure(err, 'save the newsletter')
   }
@@ -266,5 +281,119 @@ export async function saveSenderSettingsAction(_prev: unknown, formData: FormDat
     return ok({ message: 'Saved. The next newsletter sends from this address.' })
   } catch (err) {
     return failure(err, 'save the sender')
+  }
+}
+
+// ── Send, schedule, cancel (Phase 4) ───────────────────────────────────
+
+const sendOptionsSchema = z.object({
+  maxPerHour: z.number().int().refine((n) => (PACE_OPTIONS as readonly number[]).includes(n), 'Pick a sending pace.'),
+  dryRun: z.boolean(),
+})
+
+/** The checks every send and schedule makes, on the saved row. */
+async function readyToSend(id: string): Promise<Result<{ size: number }>> {
+  const row = await db.newsletterCampaign.findUnique({ where: { id } })
+  if (!row) return fail('NOT_FOUND', 'That newsletter no longer exists.')
+  if (row.status !== 'draft' && row.status !== 'scheduled') return fail('PRECONDITION_FAILED', 'This newsletter has already been sent.')
+  const draft = draftOf(row)
+  const problems = await campaignProblemsLive(draft)
+  const first = Object.values(problems)[0]
+  if (first) return fail('PRECONDITION_FAILED', first)
+  const size = await audienceSize(draft.audience, draft.listIds)
+  if (size === 0) return fail('PRECONDITION_FAILED', 'Nobody to send to: no confirmed subscribers or active list contacts in the audience.')
+  return ok({ size })
+}
+
+/**
+ * Start sending now. Requires NEWSLETTER_SEND — writing a newsletter does not
+ * let someone mail everyone (Bazar bug 3). The send itself starts in the
+ * Inngest function, whose start step is atomic: a double click sends once.
+ */
+export async function sendNowAction(id: string, options: { maxPerHour: number; dryRun: boolean }): Promise<Result<{ message: string }>> {
+  try {
+    const session = requireRole(await auth(), ROLES.NEWSLETTER_SEND)
+    const opts = sendOptionsSchema.parse(options)
+    const ready = await readyToSend(id)
+    if (!ready.success) return ready
+    await db.newsletterCampaign.updateMany({
+      where: { id, status: { in: ['draft', 'scheduled'] } },
+      data: { ...opts, sentById: session.user.id, updatedById: session.user.id },
+    })
+    await inngest.send({ name: NEWSLETTER_SEND_EVENT, data: { campaignId: id } })
+    revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
+    revalidatePath(CAMPAIGNS)
+    return ok({
+      message: opts.dryRun
+        ? `Rehearsal started for ${ready.data.size.toLocaleString('en-US')} people — nothing will be emailed.`
+        : `Sending to ${ready.data.size.toLocaleString('en-US')} people has started.`,
+    })
+  } catch (err) {
+    return failure(err, 'start the send')
+  }
+}
+
+const MIN_LEAD_MS = 5 * 60 * 1000
+const MAX_LEAD_MS = 60 * 24 * 60 * 60 * 1000
+
+export async function scheduleAction(
+  id: string,
+  options: { at: string; maxPerHour: number; dryRun: boolean },
+): Promise<Result<{ message: string }>> {
+  try {
+    const session = requireRole(await auth(), ROLES.NEWSLETTER_SEND)
+    const opts = sendOptionsSchema.parse(options)
+    const at = new Date(z.string().datetime().parse(options.at))
+    const lead = at.getTime() - Date.now()
+    if (lead < MIN_LEAD_MS) return fail('VALIDATION', 'Pick a time at least five minutes from now.')
+    if (lead > MAX_LEAD_MS) return fail('VALIDATION', 'Pick a time within the next 60 days.')
+    const ready = await readyToSend(id)
+    if (!ready.success) return ready
+    const r = await db.newsletterCampaign.updateMany({
+      where: { id, status: { in: ['draft', 'scheduled'] } },
+      data: { ...opts, status: 'scheduled', scheduledAt: at, sentById: session.user.id, updatedById: session.user.id },
+    })
+    if (r.count === 0) return fail('PRECONDITION_FAILED', 'This newsletter has already been sent.')
+    // The event fires at `ts`; the run checks the campaign is still
+    // scheduled for exactly this time, so rescheduling needs no cancel.
+    await inngest.send({ name: NEWSLETTER_SEND_EVENT, data: { campaignId: id, scheduledAt: at.toISOString() }, ts: at.getTime() })
+    revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
+    revalidatePath(CAMPAIGNS)
+    return ok({ message: `Scheduled for ${at.toUTCString()}.` })
+  } catch (err) {
+    return failure(err, 'schedule the newsletter')
+  }
+}
+
+export async function unscheduleAction(id: string): Promise<Result<{ message: string }>> {
+  try {
+    requireRole(await auth(), ROLES.NEWSLETTER_SEND)
+    const r = await db.newsletterCampaign.updateMany({
+      where: { id, status: 'scheduled' },
+      data: { status: 'draft', scheduledAt: null },
+    })
+    if (r.count === 0) return fail('PRECONDITION_FAILED', 'It is not scheduled any more.')
+    revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
+    revalidatePath(CAMPAIGNS)
+    return ok({ message: 'Unscheduled — back to a draft.' })
+  } catch (err) {
+    return failure(err, 'unschedule the newsletter')
+  }
+}
+
+/** Stop a send in progress at the next batch. What has gone, has gone. */
+export async function cancelSendAction(id: string): Promise<Result<{ message: string }>> {
+  try {
+    requireRole(await auth(), ROLES.NEWSLETTER_SEND)
+    const r = await db.newsletterCampaign.updateMany({
+      where: { id, status: 'sending' },
+      data: { status: 'cancelled', cancelledAt: new Date() },
+    })
+    if (r.count === 0) return fail('PRECONDITION_FAILED', 'It is not sending any more.')
+    revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
+    revalidatePath(CAMPAIGNS)
+    return ok({ message: 'Cancelling — it stops before the next batch.' })
+  } catch (err) {
+    return failure(err, 'cancel the send')
   }
 }

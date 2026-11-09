@@ -14,7 +14,8 @@ const dbMock = {
     updateMany: vi.fn(),
   },
   sentEmail: { updateMany: vi.fn() },
-  newsletterListContact: { updateMany: vi.fn() },
+  newsletterListContact: { updateMany: vi.fn(), findUnique: vi.fn() },
+  newsletterDelivery: { updateMany: vi.fn() },
   $transaction: vi.fn(),
 }
 const sendEmail = vi.fn()
@@ -48,6 +49,8 @@ beforeEach(() => {
   dbMock.newsletterSuppression.createMany.mockResolvedValue({ count: 1 })
   dbMock.sentEmail.updateMany.mockResolvedValue({ count: 1 })
   dbMock.newsletterListContact.updateMany.mockResolvedValue({ count: 0 })
+  dbMock.newsletterListContact.findUnique.mockResolvedValue(null)
+  dbMock.newsletterDelivery.updateMany.mockResolvedValue({ count: 0 })
   dbMock.$transaction.mockImplementation(async (fn: (tx: typeof dbMock) => unknown) => fn(dbMock))
   sendEmail.mockResolvedValue({ ok: true, sentEmailId: 's1', providerId: 'p1', status: 'sent' })
 })
@@ -196,11 +199,32 @@ describe('unsubscribeByToken', () => {
   it('reports an unknown token without writing', async () => {
     expect(await unsubscribeByToken(TOKEN, NOW)).toBe('not_found')
     expect(dbMock.newsletterSubscriber.updateMany).not.toHaveBeenCalled()
+    expect(dbMock.newsletterListContact.updateMany).not.toHaveBeenCalled()
+  })
+
+  it('unsubscribes a list contact by its own token', async () => {
+    dbMock.newsletterListContact.findUnique.mockResolvedValue({ id: 'c1' })
+    expect(await unsubscribeByToken(TOKEN, NOW)).toBe('unsubscribed')
+    expect(dbMock.newsletterListContact.updateMany).toHaveBeenCalledWith({
+      where: { id: 'c1', status: 'active' },
+      data: { status: 'unsubscribed', unsubscribedAt: NOW },
+    })
   })
 })
 
 describe('recordEmailEvent', () => {
   const base = { emailId: 're_1', recipients: ['Buyer <Buyer@Plant.ae>'], at: NOW, senderDomain: 'news.indushydraulics.com' }
+
+  it('stamps a campaign delivery when no sent_emails row matches', async () => {
+    dbMock.sentEmail.updateMany.mockResolvedValueOnce({ count: 0 })
+    dbMock.newsletterDelivery.updateMany.mockResolvedValueOnce({ count: 1 })
+    const r = await recordEmailEvent({ ...base, type: 'delivered', permanent: false })
+    expect(dbMock.newsletterDelivery.updateMany).toHaveBeenCalledWith({
+      where: { providerId: 're_1', deliveredAt: null },
+      data: { deliveredAt: NOW },
+    })
+    expect(r.email).toBe(true)
+  })
 
   it('stamps delivery once and suppresses nobody', async () => {
     await recordEmailEvent({ ...base, type: 'delivered', permanent: false })

@@ -2269,15 +2269,16 @@ model NewsletterSubscriber {
 
   // Double opt-in (202611081838). The confirmation token is in the email
   // only; the row holds its SHA-256, cleared once used.
-  confirmationTokenHash String?   @unique
+  confirmationTokenHash String?              @unique
   confirmationSentAt    DateTime?
   confirmedAt           DateTime?
   bouncedAt             DateTime?
   // Permanent, in clear: every email to the subscriber carries it.
-  unsubscribeToken      String    @unique @default(dbgenerated("encode(extensions.gen_random_bytes(24), 'hex'::text)"))
+  unsubscribeToken      String               @unique @default(dbgenerated("encode(extensions.gen_random_bytes(24), 'hex'::text)"))
   // The exact wording agreed to, and which version of the form showed it.
   consentText           String?
   consentVersion        String?
+  deliveries            NewsletterDelivery[]
 
   @@index([status])
   @@index([createdAt])
@@ -2365,6 +2366,8 @@ model NewsletterListContact {
   createdAt        DateTime                @default(now())
   unsubscribedAt   DateTime?
 
+  deliveries NewsletterDelivery[]
+
   @@unique([listId, email])
   @@index([email])
   @@index([listId, status])
@@ -2398,6 +2401,8 @@ model NewsletterCampaign {
   cancelledAt    DateTime?
   testSentAt     DateTime?
   recipientCount Int                      @default(0)
+  maxPerHour     Int                      @default(600)
+  dryRun         Boolean                  @default(false)
   createdById    String?
   createdBy      StaffUser?               @relation("NewsletterCampaignCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
   updatedById    String?
@@ -2407,9 +2412,46 @@ model NewsletterCampaign {
   createdAt      DateTime                 @default(now())
   updatedAt      DateTime                 @default(now()) @updatedAt
 
+  deliveries NewsletterDelivery[]
+
   @@index([status, scheduledAt])
   @@index([createdAt])
   @@map("newsletter_campaigns")
+}
+
+enum NewsletterDeliveryStatus {
+  queued
+  sending
+  sent
+  failed
+  skipped
+}
+
+/// One recipient of one campaign (202611091458): a subscriber or a list
+/// contact, exactly one; never the address. Snapshot by
+/// newsletter_start_campaign, claimed in batches by
+/// newsletter_claim_deliveries.
+model NewsletterDelivery {
+  id           String                   @id @default(uuid())
+  campaignId   String
+  campaign     NewsletterCampaign       @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  subscriberId String?
+  subscriber   NewsletterSubscriber?    @relation(fields: [subscriberId], references: [id], onDelete: Cascade)
+  contactId    String?
+  contact      NewsletterListContact?   @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  status       NewsletterDeliveryStatus @default(queued)
+  attempts     Int                      @default(0)
+  providerId   String?
+  error        String?
+  claimedAt    DateTime?
+  sentAt       DateTime?
+  deliveredAt  DateTime?
+  bouncedAt    DateTime?
+  complainedAt DateTime?
+  createdAt    DateTime                 @default(now())
+
+  @@index([campaignId, status])
+  @@map("newsletter_deliveries")
 }
 
 /// A saved design (or rich body) to start campaigns from.

@@ -1,6 +1,6 @@
 # Newsletter system — plan
 
-Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`). **Phases 2 and 3 built 2026-11-09** (admin subscribers/lists — PR #599; composer and templates — stacked PR), held for one batch deploy with Phase 4; migrations applied. Phases 4–5 in progress. See Appendices C–E.
+Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`). **Phases 2–4 built 2026-11-09** — admin subscribers/lists (#599), composer and templates (#600), sending/scheduling/reports (stacked PR) — held for one batch deploy; all migrations applied. Phase 5 (launch) follows the deploy. See Appendices C–F.
 
 Goal: a working newsletter for Indus Hydraulics, end to end — a signup that
 actually confirms, a subscriber and list manager in the admin, a composer that
@@ -277,3 +277,28 @@ The three test subscribers, their suppressions and their four `sent_emails` rows
 | Templates | `/admin/newsletter/templates`: use, rename, delete. Saved from the composer. |
 | Sender | `/admin/newsletter/settings` (`NEWSLETTER_SEND`): From name, From local part on `news.indushydraulics.com`, Reply-To; shows the subdomain's Resend verification status (`sendingDomainStatus`). |
 | Deviations | No `{{token}}` system beyond `site_url`/`unsubscribe_url`, which the renderer fills. Social/person/contact blocks use text links (no icon assets). Columns don't stack on phones (no `<style>`). Confirmation and welcome emails still use the fixed `newsletter@` sender; campaigns use the settings. |
+
+---
+
+## Appendix F — Phase 4 as built (2026-11-09)
+
+| Piece | Where |
+|---|---|
+| Migration | `202611091458_newsletter_deliveries.sql` — **applied** 2026-11-09 (additive). Deliveries, `maxPerHour`, `dryRun`, `newsletter_start_campaign`, `newsletter_claim_deliveries`. Checked by `packages/db/scripts/test-newsletter-send.sql` (all pass, rolls back). |
+| Sender | `apps/web/src/inngest/newsletterSend.ts` — Inngest function `newsletter.campaign.send` on event `newsletter/campaign.send`: start → { claim 100 → send → sleep } → finish. One run per campaign (concurrency key). Hands over to a fresh run after 250 batches (25,000 recipients) to stay under Inngest's step cap. |
+| Duplicate sends (Bazar bug 4) | Claim and send are separate steps, so a retried send works on the same memoised deliveries; the Resend idempotency key is a hash of the claimed delivery ids. Only rows still `sending` are sent or marked. A row left `sending` by a dead run is never re-sent — `finishCampaign` marks it failed ("outcome unknown"). |
+| Per recipient | Re-checked at send time: a subscriber must still be confirmed, a contact still active, the address not suppressed — otherwise `skipped`. Each email carries the recipient's own unsubscribe link (page + RFC 8058 headers); list contacts' tokens now work on `/newsletter/unsubscribe/[token]` and the one-click endpoint. The footer says why they got it (subscriber vs list). |
+| No per-email copies | Campaign mail goes through `sendCampaignBatch` (no `sent_emails` row — that table would hold the full HTML once per subscriber); `newsletter_deliveries` is the record. The webhook stamps deliveries by Resend id. |
+| Actions (`NEWSLETTER_SEND`, Bazar bug 3) | Send now, schedule (5 min – 60 days ahead; the event fires at the time and does nothing if the campaign was unscheduled or rescheduled), unschedule, cancel (stops before the next batch; the rest are `skipped`). All re-run the send gate on the saved row and refuse an empty audience. |
+| Pace | 300 / 600 / 1,200 / 3,000 / 6,000 an hour (batches of 100 with a computed pause). Start at 300 for warm-up. The panel warns when the audience is over 100 (Resend free plan: 100 emails a day, shared with quote mail — plan D3). |
+| Rehearsal | `dryRun`: the whole pipeline — snapshot, claims, rendering, statuses, report — without calling Resend. This is how Phase 5's production dry run is done, with no environment change or deploy. |
+| Report | In the composer once sending: progress bar and recipients / sent / delivered / bounced / complaints / failed / skipped / waiting, refreshing every 5 s while it sends. |
+| Tests | `send.test.ts` (pace, keys, per-recipient links and headers, retries only `sending` rows, skips, rehearsal, provider failure then failed, cancel, finish/orphans), `service.test.ts` (contact tokens, delivery stamps). |
+
+| Review fixes (2026-11-09) | An independent review found no double-send, suppression, link-leak or role path, and six defects, all fixed: autosave no longer marks an edit made during a save as saved; a run whose `start` answer was lost resumes instead of stranding the campaign; `finish` waits out young orphans and closes; `onFailure` closes a run that exhausted its retries as cancelled; a cms_editor's edit to a scheduled campaign takes it back to draft; the webhook asks Resend to retry a newsletter event that arrived before its Resend id was recorded. A rehearsal uses the campaign up (the UI says so; Duplicate to send for real). |
+
+### After the batch deploy (Phases 2–4)
+
+1. `PUT https://indushydraulics.com/api/inngest` — registers `newsletter.campaign.send`.
+2. In the admin: create a list with staff addresses only, compose from a starter, send yourself a test, then **Rehearse** to the list and check the report.
+3. Phase 5 below.

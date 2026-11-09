@@ -3,6 +3,7 @@ import { scraperJobRun } from './scraperJob'
 import { productBlueprintGenerate } from './productBlueprint'
 import { purgeTrashedMedia } from './mediaPurge'
 import { gscDailySync } from './gscSync'
+import { newsletterCampaignSend } from './newsletterSend'
 import { procurementResearchItem, procurementResearchStart } from './procurementResearch'
 import { db } from '@indus/db'
 import { assertTransition, resolveFromEmail, resolveReplyTo, scoreEntity, signQuoteAccessToken, type SeoEntityType } from '@indus/domain'
@@ -551,4 +552,5 @@ export const allFunctions = [
   productBlueprintGenerate,
   procurementResearchStart,
   procurementResearchItem,
+  newsletterCampaignSend,
 ]

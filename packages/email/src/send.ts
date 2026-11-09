@@ -285,6 +285,40 @@ export async function sendEmailBatch(
   }
 }
 
+export type CampaignBatchResult =
+  | { ok: true; providerIds: (string | null)[]; status: 'sent' | 'sandboxed' }
+  | { ok: false; error: string }
+
+/**
+ * A newsletter batch: up to BATCH_LIMIT messages in one Resend request, with
+ * NO SentEmail rows. Campaign mail is logged per recipient in
+ * newsletter_deliveries instead; a SentEmail row per newsletter would copy
+ * the whole HTML once per subscriber into the database.
+ *
+ * `idempotencyKey` is required: the caller derives it from the delivery ids,
+ * so a retried batch that Resend already accepted is not sent twice.
+ */
+export async function sendCampaignBatch(
+  inputs: SendEmailInput[],
+  options: { idempotencyKey: string },
+): Promise<CampaignBatchResult> {
+  if (inputs.length === 0) return { ok: true, providerIds: [], status: SANDBOX ? 'sandboxed' : 'sent' }
+  if (inputs.length > BATCH_LIMIT) return { ok: false, error: `A batch holds at most ${BATCH_LIMIT} emails, got ${inputs.length}.` }
+  if (SANDBOX || !resendClient) {
+    // eslint-disable-next-line no-console
+    console.info(`[email:sandbox] campaign batch of ${inputs.length}`)
+    return { ok: true, providerIds: inputs.map(() => null), status: 'sandboxed' }
+  }
+  try {
+    const result = await resendClient.batch.send(inputs.map(toResendPayload), { idempotencyKey: options.idempotencyKey })
+    if (result.error) return { ok: false, error: result.error.message }
+    const ids = result.data?.data.map((d) => d.id) ?? []
+    return { ok: true, providerIds: inputs.map((_, i) => ids[i] ?? null), status: 'sent' }
+  } catch (err) {
+    return { ok: false, error: err instanceof Error ? err.message : 'Unknown email send error' }
+  }
+}
+
 export type SendingDomainStatus = 'verified' | 'pending' | 'failed' | 'not_found' | 'unknown'
 
 /**
