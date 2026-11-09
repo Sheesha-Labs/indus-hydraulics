@@ -238,14 +238,7 @@ const labelCls = 'mb-1.5 block text-[12px] font-medium text-ih-ink-2'
 const errorCls = 'mt-[5px] text-[11.5px] text-ih-danger-ink'
 const linkCls = 'underline underline-offset-[3px] text-ih-accent hover:text-ih-accent-hover'
 
-/**
- * The outline button, with its border forced. `buttonVariants`' base carries
- * `border-transparent`, which Tailwind emits after `border-ih-border-strong`
- * and tailwind-merge does not drop (it does not know the ih colours), so the
- * shared outline button renders borderless site-wide. Forced here so the
- * popup matches its design; the shared fix belongs in packages/ui.
- */
-const outlineBtnCls = `${buttonVariants({ kind: 'outline', size: 'md' })} border-ih-border-strong! hover:border-ih-accent!`
+const outlineBtnCls = buttonVariants({ kind: 'outline', size: 'md' })
 
 function CloseIcon({ size }: { size: number }) {
   return (

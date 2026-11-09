@@ -34,11 +34,19 @@ import { cn } from './lib/utils'
  *  - Only the transition properties listed in the contract animate. Notably
  *    there is no transform on :active — the press reads as a colour step, not
  *    a nudge, because this is a catalogue used under time pressure.
+ *  - Every kind names its own border colour; the base names none. cva only
+ *    concatenates, so a `border-transparent` in the base would sit beside
+ *    outline's `border-ih-border-strong` in the raw `buttonVariants()` string,
+ *    and Tailwind emits `border-transparent` later in the sheet — the outline
+ *    would render borderless. `<Button>` happened to survive because it runs
+ *    the string through `cn()`; anyone styling a link with `buttonVariants()`
+ *    directly did not. Keep each kind's colour inside its own variant.
  */
 const buttonVariants = cva(
   cn(
     'inline-flex select-none items-center justify-center gap-2 whitespace-nowrap',
-    'border border-transparent font-medium tracking-[-0.005em]',
+    // Border WIDTH only. Each kind sets its own border COLOUR — see below.
+    'border font-medium tracking-[-0.005em]',
     'transition-[background-color,border-color,color] duration-150 ease-[ease]',
     // v2 focus ring: accent border + a 3px accent-soft halo.
     'outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
@@ -48,14 +56,14 @@ const buttonVariants = cva(
     variants: {
       kind: {
         /** THE signal. One primary action per view. */
-        primary: 'bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover',
+        primary: 'border-transparent bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover',
         /** Dark fill for chrome-adjacent actions. */
-        navy: 'bg-ih-navy text-white hover:bg-ih-ink',
+        navy: 'border-transparent bg-ih-navy text-white hover:bg-ih-ink',
         /** Secondary. Note the accent hover. */
         outline:
           'border-ih-border-strong text-ih-ink hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent',
         /** Tertiary / text-only. */
-        ghost: 'text-ih-ink-2 hover:bg-ih-surface-2',
+        ghost: 'border-transparent text-ih-ink-2 hover:bg-ih-surface-2',
         /** For use on a navy band, where the palette inverts. */
         onnavy: 'border-white/28 text-white hover:bg-white/10',
         /**
@@ -64,7 +72,7 @@ const buttonVariants = cva(
          * action clusters next to a dozen neutral controls. The weight
          * belongs on the confirmation, not on the trigger.
          */
-        danger: 'bg-ih-danger-soft text-ih-danger-ink hover:bg-ih-danger hover:text-white',
+        danger: 'border-transparent bg-ih-danger-soft text-ih-danger-ink hover:bg-ih-danger hover:text-white',
       },
       size: {
         /** Dense admin tables and card footers only — see CLAUDE.md §10.8. */
