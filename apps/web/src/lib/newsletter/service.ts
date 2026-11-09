@@ -31,7 +31,7 @@ import { generateNewsletterToken, hashNewsletterToken, newsletterEmailHash, reci
 /** Suppression reasons that block even a fresh signup from being mailed. */
 const HARD_SUPPRESSIONS = new Set(['bounced', 'complained'])
 
-async function newsletterBranding() {
+export async function newsletterBranding() {
   const branding = await loadEmailBranding()
   return {
     branding: { legalName: branding.legalName, registeredAddressLines: branding.registeredAddressLines },
@@ -39,7 +39,7 @@ async function newsletterBranding() {
   }
 }
 
-function newsletterSender() {
+export function newsletterSender() {
   // Refuses anything but the newsletter subdomain, so a later edit cannot
   // point newsletter volume at the domain quotes depend on.
   assertMarketingSender(NEWSLETTER_FROM_EMAIL)
@@ -247,7 +247,7 @@ export async function unsubscribeByToken(token: string, now = new Date()): Promi
 
 // ── Delivery events (Resend webhook) ───────────────────────────────────
 
-export type EventOutcome = { email: boolean; subscribers: number; suppressed: number }
+export type EventOutcome = { email: boolean; subscribers: number; contacts: number; suppressed: number }
 
 /**
  * Apply one Resend event. Resend retries until it gets a 2xx, so every write
@@ -282,7 +282,7 @@ export async function recordEmailEvent(event: EmailEvent): Promise<EventOutcome>
       : false
 
     const reason = event.type === 'complained' ? 'complained' : event.type === 'bounced' && event.permanent ? 'bounced' : null
-    if (!reason || recipients.length === 0) return { email, subscribers: 0, suppressed: 0 }
+    if (!reason || recipients.length === 0) return { email, subscribers: 0, contacts: 0, suppressed: 0 }
 
     const suppressed = await tx.newsletterSuppression.createMany({
       data: recipients.map((r) => ({ emailHash: newsletterEmailHash(r), reason })),
@@ -295,6 +295,13 @@ export async function recordEmailEvent(event: EmailEvent): Promise<EventOutcome>
           ? { status: 'bounced', bouncedAt: event.at, confirmationTokenHash: null }
           : { status: 'unsubscribed', unsubscribedAt: event.at, confirmationTokenHash: null },
     })
-    return { email, subscribers: subscribers.count, suppressed: suppressed.count }
+    // The same address on a list (Phase 2). The contact trigger would do
+    // this from the subscriber side too, but an address can be on a list
+    // without ever having subscribed.
+    const contacts = await tx.newsletterListContact.updateMany({
+      where: { email: { in: recipients }, status: 'active' },
+      data: { status: reason === 'bounced' ? 'bounced' : 'unsubscribed', unsubscribedAt: event.at },
+    })
+    return { email, subscribers: subscribers.count, contacts: contacts.count, suppressed: suppressed.count }
   })
 }
