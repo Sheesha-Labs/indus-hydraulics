@@ -1,12 +1,14 @@
 import { NavTabs } from '@indus/ui'
 
-type Section = 'overview' | 'subscribers' | 'lists' | 'suppressions'
+type Section = 'campaigns' | 'templates' | 'subscribers' | 'lists' | 'suppressions' | 'settings'
 
 const TABS: { id: Section; label: string; href: string }[] = [
-  { id: 'overview', label: 'Overview', href: '/admin/newsletter' },
+  { id: 'campaigns', label: 'Newsletters', href: '/admin/newsletter' },
+  { id: 'templates', label: 'Templates', href: '/admin/newsletter/templates' },
   { id: 'subscribers', label: 'Subscribers', href: '/admin/newsletter/subscribers' },
   { id: 'lists', label: 'Lists', href: '/admin/newsletter/lists' },
   { id: 'suppressions', label: 'Suppressions', href: '/admin/newsletter/suppressions' },
+  { id: 'settings', label: 'Sender', href: '/admin/newsletter/settings' },
 ]
 
 /** The newsletter section's own tabs, under the page bar. */
