@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import Composer from '../../../../../../components/admin/newsletter/Composer'
 import { CAMPAIGN_STATUS_LABELS, EDITABLE_STATUSES, type CampaignStatus } from '../../../../../../lib/newsletter/campaign'
 import { audienceSize, campaignProblemsLive, draftOf, loadSender } from '../../../../../../lib/newsletter/campaigns'
+import { deliveryCounts } from '../../../../../../lib/newsletter/send'
 import { formatFrom } from '../../../../../../lib/newsletter/sender'
 import { ROLES, hasRole } from '../../../../../../lib/rbac'
 import { requireStaffRole } from '../../../../../../lib/staff-session'
@@ -21,11 +22,12 @@ export default async function CampaignPage({ params }: Props) {
   if (!row) notFound()
 
   const draft = draftOf(row)
-  const [lists, problems, size, sender] = await Promise.all([
+  const [lists, problems, size, sender, counts] = await Promise.all([
     db.newsletterList.findMany({ orderBy: { name: 'asc' }, select: { id: true, name: true } }),
     campaignProblemsLive(draft),
     audienceSize(draft.audience, draft.listIds),
     loadSender(),
+    row.status === 'draft' ? Promise.resolve(null) : deliveryCounts(row.id),
   ])
 
   return (
@@ -44,6 +46,14 @@ export default async function CampaignPage({ params }: Props) {
       from={formatFrom(sender)}
       replyTo={sender.replyTo}
       testSentAt={row.testSentAt?.toISOString() ?? null}
+      send={{
+        maxPerHour: row.maxPerHour,
+        dryRun: row.dryRun,
+        scheduledAt: row.scheduledAt?.toISOString() ?? null,
+        startedAt: row.startedAt?.toISOString() ?? null,
+        sentAt: row.sentAt?.toISOString() ?? null,
+        counts,
+      }}
     />
   )
 }

@@ -219,11 +219,20 @@ export async function lookupUnsubscribe(token: string): Promise<UnsubscribeLooku
     where: { unsubscribeToken: token },
     select: { email: true, status: true },
   })
-  if (!row) return { status: 'not_found' }
-  const maskedEmail = maskEmail(row.email)
-  return row.status === 'pending' || row.status === 'confirmed'
-    ? { status: 'subscribed', maskedEmail }
-    : { status: 'unsubscribed', maskedEmail }
+  if (row) {
+    const maskedEmail = maskEmail(row.email)
+    return row.status === 'pending' || row.status === 'confirmed'
+      ? { status: 'subscribed', maskedEmail }
+      : { status: 'unsubscribed', maskedEmail }
+  }
+  // A list contact's token (Phase 4 mails lists): same page, same wording.
+  const contact = await db.newsletterListContact.findUnique({
+    where: { unsubscribeToken: token },
+    select: { email: true, status: true },
+  })
+  if (!contact) return { status: 'not_found' }
+  const maskedEmail = maskEmail(contact.email)
+  return contact.status === 'active' ? { status: 'subscribed', maskedEmail } : { status: 'unsubscribed', maskedEmail }
 }
 
 /**
@@ -237,10 +246,20 @@ export async function lookupUnsubscribe(token: string): Promise<UnsubscribeLooku
 export async function unsubscribeByToken(token: string, now = new Date()): Promise<'unsubscribed' | 'not_found'> {
   if (!isNewsletterToken(token)) return 'not_found'
   const row = await db.newsletterSubscriber.findUnique({ where: { unsubscribeToken: token }, select: { id: true } })
-  if (!row) return 'not_found'
-  await db.newsletterSubscriber.updateMany({
-    where: { id: row.id, status: { in: ['pending', 'confirmed'] } },
-    data: { status: 'unsubscribed', unsubscribedAt: now, confirmationTokenHash: null },
+  if (row) {
+    await db.newsletterSubscriber.updateMany({
+      where: { id: row.id, status: { in: ['pending', 'confirmed'] } },
+      data: { status: 'unsubscribed', unsubscribedAt: now, confirmationTokenHash: null },
+    })
+    return 'unsubscribed'
+  }
+  // A list contact: unsubscribing here suppresses the address everywhere
+  // and ends any subscription too (the contact status trigger).
+  const contact = await db.newsletterListContact.findUnique({ where: { unsubscribeToken: token }, select: { id: true } })
+  if (!contact) return 'not_found'
+  await db.newsletterListContact.updateMany({
+    where: { id: contact.id, status: 'active' },
+    data: { status: 'unsubscribed', unsubscribedAt: now },
   })
   return 'unsubscribed'
 }
@@ -275,6 +294,13 @@ export async function recordEmailEvent(event: EmailEvent): Promise<EventOutcome>
     const email = stamp
       ? (
           await tx.sentEmail.updateMany({
+            where: { providerId: event.emailId, [stamp]: null },
+            data: { [stamp]: event.at },
+          })
+        ).count > 0 ||
+        // Campaign mail has no sent_emails row; its record is the delivery.
+        (
+          await tx.newsletterDelivery.updateMany({
             where: { providerId: event.emailId, [stamp]: null },
             data: { [stamp]: event.at },
           })

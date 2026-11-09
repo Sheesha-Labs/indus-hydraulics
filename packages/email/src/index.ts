@@ -1,5 +1,5 @@
-export { sendEmail, sendEmailBatch, sendingDomainStatus, BATCH_LIMIT } from './send'
-export type { SendingDomainStatus } from './send'
+export { sendEmail, sendEmailBatch, sendCampaignBatch, sendingDomainStatus, BATCH_LIMIT } from './send'
+export type { SendingDomainStatus, CampaignBatchResult } from './send'
 export type {
   SendEmailInput,
   SendEmailResult,

@@ -14,6 +14,7 @@ import {
 } from '../../../app/admin/(shell)/newsletter/campaign-actions'
 import { emptyDesign, normaliseDesign } from '../../../lib/newsletter/blocks/document'
 import type { Design } from '../../../lib/newsletter/blocks/types'
+import type { DeliveryCounts } from '../../../lib/newsletter/send'
 import { AUDIENCE_LABELS, MAX_CAMPAIGN_LISTS, type CampaignDraft, type CampaignStatus } from '../../../lib/newsletter/campaign'
 import AdminPageShell from '../AdminPageShell'
 import RichTextEditor from '../rich-text/RichTextEditor'
@@ -33,6 +34,14 @@ type Props = {
   from: string
   replyTo: string
   testSentAt: string | null
+  send: {
+    maxPerHour: number
+    dryRun: boolean
+    scheduledAt: string | null
+    startedAt: string | null
+    sentAt: string | null
+    counts: DeliveryCounts | null
+  }
 }
 
 const AUTOSAVE_MS = 1500
@@ -353,7 +362,7 @@ export default function Composer(props: Props) {
             ) : null}
           </Panel>
 
-          <CampaignSendPanel id={id} status={props.status} canSend={props.canSend} ready={ready && !dirty} audienceSize={size} />
+          <CampaignSendPanel id={id} status={props.status} canSend={props.canSend} ready={ready && !dirty} audienceSize={size} {...props.send} />
         </div>
       </div>
     </AdminPageShell>
