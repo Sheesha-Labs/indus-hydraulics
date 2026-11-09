@@ -55,6 +55,17 @@ export const ROLES = {
   AI_GENERATE: ['super_admin', 'manager', 'cms_editor'] as const,
   /** Store-wide settings (email templates, store name, default terms). */
   SETTINGS_WRITE: ['super_admin', 'manager'] as const,
+  /**
+   * Newsletter content: see subscribers and lists, build lists by hand,
+   * write drafts and templates. No sending, no bulk import, no export.
+   */
+  NEWSLETTER_WRITE: ['super_admin', 'manager', 'cms_editor'] as const,
+  /**
+   * Newsletter reach: send and schedule campaigns, import and export lists,
+   * delete lists, sender settings. Every one of these moves personal data or
+   * mails people, so it is narrower than NEWSLETTER_WRITE (plan D5).
+   */
+  NEWSLETTER_SEND: ['super_admin', 'manager'] as const,
   /** Staff user CRUD. */
   USERS_WRITE: ['super_admin'] as const,
 } satisfies Record<string, readonly StaffRole[]>

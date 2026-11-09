@@ -25,6 +25,7 @@ import {
   Menu as MenuIcon,
   Globe,
   Newspaper,
+  Mail,
   type LucideIcon,
   Wrench,
 } from 'lucide-react'
@@ -87,6 +88,7 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
       { id: 'blog', label: 'Blog Editor', path: 'blog', Icon: Newspaper },
       { id: 'services', label: 'Service cases', path: 'services', Icon: Wrench },
       { id: 'pages', label: 'Pages & Blocks', path: 'pages', Icon: FileText },
+      { id: 'newsletter', label: 'Newsletter', path: 'newsletter', Icon: Mail },
       { id: 'navigation', label: 'Navigation', path: 'navigation', Icon: MenuIcon },
       { id: 'seo', label: 'SEO & Search', path: 'seo', Icon: Search },
     ],

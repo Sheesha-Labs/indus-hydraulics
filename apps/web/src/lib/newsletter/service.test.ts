@@ -14,6 +14,7 @@ const dbMock = {
     updateMany: vi.fn(),
   },
   sentEmail: { updateMany: vi.fn() },
+  newsletterListContact: { updateMany: vi.fn() },
   $transaction: vi.fn(),
 }
 const sendEmail = vi.fn()
@@ -46,6 +47,7 @@ beforeEach(() => {
   dbMock.newsletterSubscriber.updateMany.mockResolvedValue({ count: 1 })
   dbMock.newsletterSuppression.createMany.mockResolvedValue({ count: 1 })
   dbMock.sentEmail.updateMany.mockResolvedValue({ count: 1 })
+  dbMock.newsletterListContact.updateMany.mockResolvedValue({ count: 0 })
   dbMock.$transaction.mockImplementation(async (fn: (tx: typeof dbMock) => unknown) => fn(dbMock))
   sendEmail.mockResolvedValue({ ok: true, sentEmailId: 's1', providerId: 'p1', status: 'sent' })
 })
@@ -221,11 +223,25 @@ describe('recordEmailEvent', () => {
     })
   })
 
+  it('marks the address bounced on every list, subscribed or not', async () => {
+    await recordEmailEvent({ ...base, type: 'bounced', permanent: true })
+    expect(dbMock.newsletterListContact.updateMany).toHaveBeenCalledWith({
+      where: { email: { in: ['buyer@plant.ae'] }, status: 'active' },
+      data: { status: 'bounced', unsubscribedAt: NOW },
+    })
+  })
+
+  it('unsubscribes the address from every list on a complaint', async () => {
+    await recordEmailEvent({ ...base, type: 'complained', permanent: false })
+    expect(dbMock.newsletterListContact.updateMany.mock.calls[0]![0].data).toEqual({ status: 'unsubscribed', unsubscribedAt: NOW })
+  })
+
   it('ignores a transient bounce', async () => {
     await recordEmailEvent({ ...base, type: 'bounced', permanent: false })
     expect(dbMock.sentEmail.updateMany).not.toHaveBeenCalled()
     expect(dbMock.newsletterSuppression.createMany).not.toHaveBeenCalled()
     expect(dbMock.newsletterSubscriber.updateMany).not.toHaveBeenCalled()
+    expect(dbMock.newsletterListContact.updateMany).not.toHaveBeenCalled()
   })
 
   it('suppresses as complained BEFORE unsubscribing, so the reason survives the trigger', async () => {

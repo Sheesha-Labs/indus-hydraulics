@@ -86,6 +86,9 @@ const nextConfig: NextConfig = {
   experimental: {
     serverActions: {
       allowedOrigins: ['indushydraulics.com', 'www.indushydraulics.com'],
+      // The newsletter list import sends up to 20,000 [address, name] pairs in
+      // one action (~1.5 MB as JSON); the 1 MB default refused big lists.
+      bodySizeLimit: '4mb',
     },
   },
   images: {

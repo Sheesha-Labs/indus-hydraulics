@@ -1,6 +1,6 @@
 # Newsletter system — plan
 
-Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`, one deploy with the Inngest fix). Migration part 2 applied, Inngest synced, webhook enabled, end-to-end checked on production. Phases 2–5 not started. See Appendix C.
+Status: **Phase 1 live, 2026-11-09** (PR #597, merged as `416d39a`). **Phase 2 built 2026-11-09** (subscribers, lists, imports, suppressions in the admin — PR held for the batch; migration applied). Phases 3–5 not started. See Appendices C and D.
 
 Goal: a working newsletter for Indus Hydraulics, end to end — a signup that
 actually confirms, a subscriber and list manager in the admin, a composer that
@@ -243,3 +243,20 @@ Additions to the existing sections of `/privacy` (Pages & Blocks → Privacy). P
 The three test subscribers, their suppressions and their four `sent_emails` rows were deleted afterwards. One real subscriber remains (the legacy row).
 
 **Open:** the other site on this Resend account receives Indus events on its own webhook too — a permanent bounce of Indus mail could mark one of its subscribers bounced. Fix belongs in that repository (filter by From domain, as here).
+
+---
+
+## Appendix D — Phase 2 as built (2026-11-09)
+
+| Piece | Where |
+|---|---|
+| Migration | `202611091422_newsletter_lists.sql` — **applied** 2026-11-09 (additive, ahead of the code). Lists, contacts, imports; `newsletter_contact_status_sync`; `newsletter_subscriber_status_sync` replaced to also mark list rows. Checked by `packages/db/scripts/test-newsletter-lists.sql` (all pass, rolls back). |
+| Roles (D5) | `ROLES.NEWSLETTER_WRITE` (super_admin, manager, cms_editor): see everything, create/rename lists, add one address, unsubscribe someone, re-send confirmations. `ROLES.NEWSLETTER_SEND` (super_admin, manager): import, export (subscribers or a list), delete a list. |
+| Admin | Sidebar **Content → Newsletter**: `/admin/newsletter` (overview tiles), `/subscribers` (status tabs with counts, email search, signup date range, CSV export, re-send confirmation per row and in bulk, unsubscribe), `/lists`, `/lists/[id]` (rename, add one, upload, search, status tabs, unsubscribe/remove per row, export, delete, upload history), `/suppressions` (counts by reason, hashed rows, check-one-address). |
+| Import | CSV or Excel, read **in the browser** (`lib/newsletter/spreadsheet.ts`); columns guessed and overridable with a **manual column picker** (email, name, or first + last; header row on/off) — Bazar has no picker; preview of counts and first rows; consent checkbox. Only `[address, name]` per row is sent to the server (`toImportPairs`), which re-parses, drops suppressed addresses, inserts with `skipDuplicates`, and writes a `newsletter_list_imports` row with the consent wording, the uploader and the counts. 20,000-row cap; server-action body limit raised to 4 MB for it. |
+| Never revive | An address already on the list is left exactly as it is, so a re-upload cannot reactivate someone who left; a suppressed address cannot be added by hand either. Re-confirming a subscription lifts the suppression but leaves list rows unsubscribed. |
+| Re-send confirmation | Fresh one-time token per person, only for pending people last mailed > 24 h ago, hard-suppressed addresses skipped, **at most 50 per click** (Resend's free plan is 100 emails a day in all), sent through `sendEmailBatch`. |
+| Webhook | A permanent bounce or complaint now also marks the address's list rows (`recordEmailEvent`), whether or not it ever subscribed. |
+| Export | CSV built in memory, formula-leading cells defused (`'=…`), UTF-8 BOM for Excel. |
+| Deviations | The uploaded file is **not** stored (the plan said "upload to storage"): only the two columns ever reach the server, and the import row records who, when, which file name, the consent and the counts. Exports are not logged — Indus has no admin audit table yet. |
+| Tests | `lists.test.ts` (Bazar port + mapping + browser→server pairs), `admin.test.ts` (import, add, re-send, unsubscribe, filters), `service.test.ts` (webhook → list rows). |

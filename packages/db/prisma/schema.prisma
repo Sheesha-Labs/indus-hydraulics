@@ -421,23 +421,26 @@ model StaffUser {
   failedSignInCount Int       @default(0)
   lockedUntil       DateTime?
 
-  assignedAccounts  Account[]
-  assignedRfqs      Rfq[]             @relation("AssignedEngineer")
-  repRfqs           Rfq[]             @relation("AssignedRep")
-  mediaUploads      Media[]
-  importJobs        ImportJob[]
-  notifications     Notification[]
-  blogPosts         BlogPost[]
-  reviewedBlogPosts BlogPost[]        @relation("BlogPostReviewer")
-  blogAuthorProfile BlogAuthor[]      @relation("BlogAuthorStaffUser")
-  sentInvitations   StaffInvitation[] @relation("StaffInvitationInvitedBy")
-  pageContentEdits  PageContent[]     @relation("PageContentEditor")
-  enquiriesAssigned Enquiry[]         @relation("EnquiryAssignedTo")
-  enquiriesCreated  Enquiry[]         @relation("EnquiryCreatedBy")
-  researchRuns      ResearchRun[]
-  supplierOffers      SupplierOffer[]     @relation("SupplierOfferCreatedBy")
-  enquiryAttachments  EnquiryAttachment[]
-  offerSelections   SupplierOfferLine[]  @relation("OfferLineSelectedBy")
+  assignedAccounts        Account[]
+  assignedRfqs            Rfq[]                   @relation("AssignedEngineer")
+  repRfqs                 Rfq[]                   @relation("AssignedRep")
+  mediaUploads            Media[]
+  importJobs              ImportJob[]
+  notifications           Notification[]
+  blogPosts               BlogPost[]
+  reviewedBlogPosts       BlogPost[]              @relation("BlogPostReviewer")
+  blogAuthorProfile       BlogAuthor[]            @relation("BlogAuthorStaffUser")
+  sentInvitations         StaffInvitation[]       @relation("StaffInvitationInvitedBy")
+  pageContentEdits        PageContent[]           @relation("PageContentEditor")
+  enquiriesAssigned       Enquiry[]               @relation("EnquiryAssignedTo")
+  enquiriesCreated        Enquiry[]               @relation("EnquiryCreatedBy")
+  researchRuns            ResearchRun[]
+  supplierOffers          SupplierOffer[]         @relation("SupplierOfferCreatedBy")
+  enquiryAttachments      EnquiryAttachment[]
+  offerSelections         SupplierOfferLine[]     @relation("OfferLineSelectedBy")
+  newsletterListsCreated  NewsletterList[]        @relation("NewsletterListCreatedBy")
+  newsletterListImports   NewsletterListImport[]  @relation("NewsletterListImportedBy")
+  newsletterContactsAdded NewsletterListContact[] @relation("NewsletterListContactAddedBy")
 
   @@map("staff_users")
 }
@@ -820,7 +823,7 @@ model Product {
   /// written by the app, and read as the sitemap's <lastmod>. Unlike
   /// `updatedAt` it does not move for bookkeeping writes — a content-score
   /// recompute, a stock sync, a reorder.
-  contentUpdatedAt   DateTime?   @default(now())
+  contentUpdatedAt   DateTime?                @default(now())
   /// Extra tokens folded into `searchTsv` at weight A, space-separated.
   /// Holds the identifiers a buyer types that are NOT this row's own sku or
   /// mpn — competitor part numbers and per-size variant part numbers. The
@@ -885,8 +888,8 @@ model ProductVariant {
 
   /// Our orderable part number for this size. Unique catalogue-wide — this is
   /// what a customer quotes back to us on a PO.
-  partNumber String  @unique
-  position   Int     @default(0)
+  partNumber String @unique
+  position   Int    @default(0)
 
   /// Hose bore the fitting crimps onto: dash size, inch label, DN.
   hoseDash Int?
@@ -1015,19 +1018,19 @@ model ProductDocument {
 }
 
 model ProductCrossReference {
-  id              String                @id @default(uuid())
-  productId       String
-  product         Product               @relation(fields: [productId], references: [id], onDelete: Cascade)
-  competitorBrand String
-  competitorMpn   String
-  compatibility   CrossRefCompatibility @default(direct)
+  id                String                @id @default(uuid())
+  productId         String
+  product           Product               @relation(fields: [productId], references: [id], onDelete: Cascade)
+  competitorBrand   String
+  competitorMpn     String
+  compatibility     CrossRefCompatibility @default(direct)
   /// The Indus part number (product_variants.partNumber) this competitor
   /// number equals, for per-size references. Text, not a relation: importers
   /// rebuild variants by part number. Null for family-level references.
   variantPartNumber String?
   /// Competitor series with the size stripped ("HTX-SS", "259-2027"), set by
   /// the loader from @indus/domain crossReferenceSeries().
-  series          String?
+  series            String?
 
   @@index([productId])
   @@index([variantPartNumber])
@@ -1068,31 +1071,31 @@ model Media {
 
   /// Trash. NULL is the live library; set is the trash, restorable and still
   /// holding its storage object. See 202608171847_media_library.sql.
-  deletedAt        DateTime?
+  deletedAt DateTime?
 
-  productImages           ProductImage[]
-  productDocuments        ProductDocument[]
-  categoryImages          Category[]
-  brandLogos              Brand[]             @relation("BrandLogo")
-  brandHeroes             Brand[]             @relation("BrandHero")
-  brandCaseStudyImages    BrandCaseStudy[]    @relation("BrandCaseStudyImage")
-  industryHeroes          Industry[]
-  industryCaseStudyImages IndustryCaseStudy[] @relation("IndustryCaseStudyImage")
-  rfqAttachments          RfqAttachment[]
-  enquiryAttachments      EnquiryAttachment[]
-  quotePdfs               Quote[]
-  blogHeroes              BlogPost[]
-  blogCategoryImages      BlogCategory[]      @relation("BlogCategoryImage")
-  blogAuthorAvatars       BlogAuthor[]        @relation("BlogAuthorAvatar")
-  importJobSources        ImportJob[]
-  navMenuItemPromos       NavMenuItem[]       @relation("NavMenuItemPromo")
-  storeSettingsLogos      StoreSettings[]     @relation("StoreSettingsLogo")
-  storeSettingsFooterLogos StoreSettings[]    @relation("StoreSettingsFooterLogo")
-  storeSettingsFavicons   StoreSettings[]     @relation("StoreSettingsFavicon")
-  storeSettingsSearchLogos StoreSettings[]    @relation("StoreSettingsSearchLogo")
-  homepageHeroSlides      HomepageHeroSlide[]
-  serviceCaseHeroes       ServiceCase[]       @relation("ServiceCaseHero")
-  serviceCaseOgImages     ServiceCase[]       @relation("ServiceCaseOg")
+  productImages            ProductImage[]
+  productDocuments         ProductDocument[]
+  categoryImages           Category[]
+  brandLogos               Brand[]             @relation("BrandLogo")
+  brandHeroes              Brand[]             @relation("BrandHero")
+  brandCaseStudyImages     BrandCaseStudy[]    @relation("BrandCaseStudyImage")
+  industryHeroes           Industry[]
+  industryCaseStudyImages  IndustryCaseStudy[] @relation("IndustryCaseStudyImage")
+  rfqAttachments           RfqAttachment[]
+  enquiryAttachments       EnquiryAttachment[]
+  quotePdfs                Quote[]
+  blogHeroes               BlogPost[]
+  blogCategoryImages       BlogCategory[]      @relation("BlogCategoryImage")
+  blogAuthorAvatars        BlogAuthor[]        @relation("BlogAuthorAvatar")
+  importJobSources         ImportJob[]
+  navMenuItemPromos        NavMenuItem[]       @relation("NavMenuItemPromo")
+  storeSettingsLogos       StoreSettings[]     @relation("StoreSettingsLogo")
+  storeSettingsFooterLogos StoreSettings[]     @relation("StoreSettingsFooterLogo")
+  storeSettingsFavicons    StoreSettings[]     @relation("StoreSettingsFavicon")
+  storeSettingsSearchLogos StoreSettings[]     @relation("StoreSettingsSearchLogo")
+  homepageHeroSlides       HomepageHeroSlide[]
+  serviceCaseHeroes        ServiceCase[]       @relation("ServiceCaseHero")
+  serviceCaseOgImages      ServiceCase[]       @relation("ServiceCaseOg")
 
   // storagePath is deliberately NOT @unique — 227 rows currently share one
   // with another row, and several rows addressing one storage object is a
@@ -2167,11 +2170,11 @@ model GscMetricDaily {
   ///
   /// The column stays nullable so the change needs no migration — the table
   /// was empty when this was corrected — but nothing writes NULL.
-  query String?
-  clicks      Int      @default(0)
-  impressions Int      @default(0)
-  ctr         Float    @default(0)
-  position    Float    @default(0)
+  query       String?
+  clicks      Int     @default(0)
+  impressions Int     @default(0)
+  ctr         Float   @default(0)
+  position    Float   @default(0)
 
   @@unique([url, date, query])
   @@index([url, date])
@@ -2287,6 +2290,80 @@ model NewsletterSuppression {
   createdAt DateTime @default(now())
 
   @@map("newsletter_suppressions")
+}
+
+enum NewsletterContactStatus {
+  active
+  unsubscribed
+  bounced
+}
+
+/// A recipient list staff build by hand or upload (202611091422). Lists are
+/// mailed alongside, or instead of, confirmed subscribers (Phase 4).
+model NewsletterList {
+  id          String     @id @default(uuid())
+  name        String
+  description String     @default("")
+  createdById String?
+  createdBy   StaffUser? @relation("NewsletterListCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @default(now()) @updatedAt
+
+  contacts NewsletterListContact[]
+  imports  NewsletterListImport[]
+
+  @@map("newsletter_lists")
+}
+
+/// One upload to a list: the counts, and the consent statement the uploader
+/// ticked (plan D6). Contacts point back at the import that added them.
+model NewsletterListImport {
+  id            String         @id @default(uuid())
+  listId        String
+  list          NewsletterList @relation(fields: [listId], references: [id], onDelete: Cascade)
+  fileName      String         @default("")
+  consentText   String
+  importedById  String?
+  importedBy    StaffUser?     @relation("NewsletterListImportedBy", fields: [importedById], references: [id], onDelete: SetNull)
+  rows          Int            @default(0)
+  added         Int            @default(0)
+  alreadyOnList Int            @default(0)
+  suppressed    Int            @default(0)
+  invalid       Int            @default(0)
+  duplicates    Int            @default(0)
+  truncated     Int            @default(0)
+  createdAt     DateTime       @default(now())
+
+  contacts NewsletterListContact[]
+
+  @@index([listId, createdAt])
+  @@map("newsletter_list_imports")
+}
+
+/// An address on a list. Stored lower-cased (a CHECK holds it). Leaving or
+/// hard-bouncing suppresses the address everywhere — a trigger keeps
+/// newsletter_suppressions, the address's other list rows and its
+/// subscription in step.
+model NewsletterListContact {
+  id               String                  @id @default(uuid())
+  listId           String
+  list             NewsletterList          @relation(fields: [listId], references: [id], onDelete: Cascade)
+  email            String
+  name             String                  @default("")
+  status           NewsletterContactStatus @default(active)
+  unsubscribeToken String                  @unique @default(dbgenerated("encode(extensions.gen_random_bytes(24), 'hex'::text)"))
+  source           String                  @default("manual") // upload | manual
+  importId         String?
+  import           NewsletterListImport?   @relation(fields: [importId], references: [id], onDelete: SetNull)
+  addedById        String?
+  addedBy          StaffUser?              @relation("NewsletterListContactAddedBy", fields: [addedById], references: [id], onDelete: SetNull)
+  createdAt        DateTime                @default(now())
+  unsubscribedAt   DateTime?
+
+  @@unique([listId, email])
+  @@index([email])
+  @@index([listId, status])
+  @@map("newsletter_list_contacts")
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -2415,8 +2492,8 @@ model StaffInvitation {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model Enquiry {
-  id       String @id @default(uuid())
-  code     String @unique // ENQ-2026-0001
+  id       String  @id @default(uuid())
+  code     String  @unique // ENQ-2026-0001
   title    String
   bidNo    String?
   revision String? // R1 / R2 / RF / CLONE
@@ -2464,22 +2541,22 @@ model EnquiryLine {
   enquiryId String
   enquiry   Enquiry @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
 
-  position      Int      @default(0)
+  position      Int       @default(0)
   description   String
   partNumber    String?
-  qty           Decimal? @db.Decimal(14, 3)
+  qty           Decimal?  @db.Decimal(14, 3)
   unit          String?
   requiredBy    DateTime?
   certification String? // "3.1 MTC", "IACS class approval"
 
-  sourceKind EnquiryLineSourceKind @default(body)
+  sourceKind         EnquiryLineSourceKind @default(body)
   /// Which attachment this row was read out of, when it came from one.
   sourceAttachmentId String?
-  sourceAttachment   EnquiryAttachment? @relation(fields: [sourceAttachmentId], references: [id])
+  sourceAttachment   EnquiryAttachment?    @relation(fields: [sourceAttachmentId], references: [id])
   /// Verbatim substring of Enquiry.rawText this row came from. A DB CHECK makes
   /// it mandatory for every non-manual row: a machine-extracted quantity with no
   /// audit trail reaches a supplier RFQ and then a customer quote unseen.
-  sourceText String?
+  sourceText         String?
 
   reviewStatus EnquiryLineReviewStatus @default(needs_review)
   /// Typed reasons, e.g. ["date_ambiguous_dmy"]. Never a confidence float.
@@ -2581,8 +2658,8 @@ model SupplierContact {
   email String?
   phone String?
 
-  source     SupplierContactSource
-  confidence ContactConfidence     @default(low)
+  source      SupplierContactSource
+  confidence  ContactConfidence     @default(low)
   /// Where the address was actually read from. A DB CHECK requires it for
   /// anything machine-found: a contact with no provenance cannot be audited
   /// when it bounces or draws a complaint.
@@ -2640,16 +2717,16 @@ enum ContactConfidence {
 /// Cached by item SIGNATURE, not by line id: the same valve asked for by two
 /// buyers a month apart must hit one entry rather than pay for research twice.
 model ItemResearchCache {
-  id             String   @id @default(uuid())
-  signatureHash  String   @unique
+  id             String    @id @default(uuid())
+  signatureHash  String    @unique
   commodityKey   String
   candidates     Json
-  candidateCount Int      @default(0)
-  reachableCount Int      @default(0)
+  candidateCount Int       @default(0)
+  reachableCount Int       @default(0)
   /// Lowered when a human rejects a whole set, so one bad early run stops
   /// being served for months.
-  qualityScore   Int      @default(100)
-  hitCount       Int      @default(0)
+  qualityScore   Int       @default(100)
+  hitCount       Int       @default(0)
   lastHitAt      DateTime?
   expiresAt      DateTime
 
@@ -2740,17 +2817,17 @@ model SupplierOffer {
   enquiryId String
   enquiry   Enquiry @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
 
-  supplierId String?
-  supplier   Supplier? @relation(fields: [supplierId], references: [id])
+  supplierId   String?
+  supplier     Supplier? @relation(fields: [supplierId], references: [id])
   /// Kept even when supplierId resolves, so the offer still reads correctly if
   /// the supplier row is later merged or renamed.
   supplierName String
 
   status SupplierOfferStatus @default(needs_review)
 
-  currency   String?
-  incoterm   String?
-  validUntil DateTime?
+  currency          String?
+  incoterm          String?
+  validUntil        DateTime?
   /// Decided per DOCUMENT by voting, never per value: 1.234,56 and 1,234.56
   /// differ by 1000x and both are plausible numbers.
   decimalConvention String?
@@ -2842,9 +2919,9 @@ enum OfferAttributionMethod {
 /// LIVE RfqLine rows, so issuing R2 changes what R1 appears to have contained.
 /// The only frozen record today is the rendered PDF.
 model QuoteLine {
-  id       String @id @default(uuid())
-  quoteId  String
-  quote    Quote  @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  id      String @id @default(uuid())
+  quoteId String
+  quote   Quote  @relation(fields: [quoteId], references: [id], onDelete: Cascade)
 
   position    Int     @default(0)
   description String

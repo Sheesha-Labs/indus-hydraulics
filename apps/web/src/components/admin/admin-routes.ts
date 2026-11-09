@@ -15,6 +15,7 @@ export const ROUTE_LABELS: Record<string, { section: string; label: string }> = 
   customers: { section: 'Operations', label: 'Accounts' },
   services: { section: 'Content', label: 'Service cases' },
   pages: { section: 'Content', label: 'Pages & Blocks' },
+  newsletter: { section: 'Content', label: 'Newsletter' },
   navigation: { section: 'Content', label: 'Navigation' },
   seo: { section: 'Content', label: 'SEO & Search' },
   users: { section: 'System', label: 'Users & Roles' },
@@ -51,6 +52,9 @@ const SUB_LABELS: Record<string, string> = {
   'not-found': 'Not found',
   quota: 'Quota',
   runs: 'Runs',
+  subscribers: 'Subscribers',
+  lists: 'Lists',
+  suppressions: 'Suppressions',
 }
 
 // Heuristic: skip dynamic-id-looking segments from breadcrumbs.
