@@ -179,8 +179,8 @@ export default async function AdminDashboardPage({ params }: Props) {
             </Alert>
           )}
           <Alert type="info">
-            <b>Open RFQ queue</b> — {openRfqs} RFQs await engineer review.{' '}
-            <Link href={`/admin/rfqs`} className="underline">Open queue →</Link>
+            <b>Enquiries</b> — {openRfqs} website RFQs await engineer review.{' '}
+            <Link href={`/admin/enquiries`} className="underline">Open enquiries →</Link>
           </Alert>
           <Alert type="ok">
             <b>System healthy</b> — all services running normally.

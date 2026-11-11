@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+import { ChevronRight } from 'lucide-react'
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 import AttachmentsPanel, { type AttachmentRow } from './_components/attachments-panel'
 import ResearchButton from './_components/research-button'
@@ -65,7 +66,9 @@ export default async function EnquiryDetailPage({ params }: Props) {
     <AdminPageShell
       title={enquiry.title}
       breadcrumbs={
-        <span className="tabular-nums text-[12px] text-ih-muted">
+        <span className="inline-flex min-w-0 items-center gap-1 tabular-nums text-[12px] text-ih-muted">
+          <Link href="/admin/enquiries?source=tender">Enquiries</Link>
+          <ChevronRight size={11} aria-hidden="true" className="shrink-0" />
           {enquiry.code}
           {enquiry.bidNo ? ` · ${enquiry.bidNo}` : ''}
           {enquiry.revision ? ` · ${enquiry.revision}` : ''}

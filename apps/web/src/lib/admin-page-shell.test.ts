@@ -37,7 +37,7 @@ const SHELL = path.resolve(
 const PENDING = new Set<string>([])
 
 /** Pure `redirect()` stubs — no JSX at all, so there is nothing to render. */
-const REDIRECT_STUBS = new Set(['seo/page.tsx', 'seo/search/page.tsx', 'footer/page.tsx'])
+const REDIRECT_STUBS = new Set(['seo/page.tsx', 'seo/search/page.tsx', 'footer/page.tsx', 'rfqs/page.tsx'])
 
 function walk(dir: string, acc: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
