@@ -8,7 +8,7 @@ import { afterEach, describe, expect, test, vi } from 'vitest'
 vi.mock('next/navigation', () => ({ usePathname: () => '/admin' }))
 // next/image needs the Next runtime; a plain <img> is enough to assert on.
 vi.mock('next/image', () => ({
-  // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
+  // eslint-disable-next-line @next/next/no-img-element
   default: (props: { src: string; alt: string }) => <img src={props.src} alt={props.alt} />,
 }))
 vi.mock('../../app/admin/sign-in/actions', () => ({ adminSignOutAction: vi.fn() }))
