@@ -1,8 +1,9 @@
 import { requireStaff } from '../../../lib/staff-session'
 import AdminSidebar from '../../../components/admin/AdminSidebar'
+import { getStoreSettings } from '../../../lib/store-settings'
 
 export default async function AdminShellLayout({ children }: { children: React.ReactNode }) {
-  const session = await requireStaff()
+  const [session, settings] = await Promise.all([requireStaff(), getStoreSettings()])
 
   return (
     /*
@@ -21,6 +22,9 @@ export default async function AdminShellLayout({ children }: { children: React.R
       <AdminSidebar
         userName={session.user?.name ?? 'Admin'}
         userRole={session.user?.role ?? 'admin'}
+        logoUrl={settings.logoUrl}
+        logoStyle={settings.logoStyle}
+        brandName={settings.name}
       />
       {/*
         No topbar here. Each page renders AdminPageShell as its root, which
