@@ -12,7 +12,6 @@ import {
   Package,
   FolderTree,
   Image as ImageIcon,
-  ClipboardList,
   Factory,
   Inbox,
   Users,
@@ -61,6 +60,8 @@ type NavItem = {
   label: string
   path: string
   Icon: LucideIcon
+  /** Other sections that belong to this item — /rfqs/<code> lives under Enquiries. */
+  also?: string[]
 }
 
 const OVERVIEW: NavItem[] = [{ id: 'dashboard', label: 'Dashboard', path: '', Icon: LayoutDashboard }]
@@ -86,8 +87,7 @@ const GROUPS: { section: string; items: NavItem[] }[] = [
   {
     section: 'Operations',
     items: [
-      { id: 'enquiries', label: 'Enquiries', path: 'enquiries', Icon: Inbox },
-      { id: 'rfqs', label: 'RFQ Queue', path: 'rfqs', Icon: ClipboardList },
+      { id: 'enquiries', label: 'Enquiries', path: 'enquiries', Icon: Inbox, also: ['rfqs'] },
       { id: 'suppliers', label: 'Suppliers', path: 'suppliers', Icon: Factory },
       { id: 'customers', label: 'Accounts', path: 'customers', Icon: Users },
     ],
@@ -130,7 +130,9 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
     return pathname.startsWith(`/${path}`)
   }
 
-  const activeSection = GROUPS.find(({ items }) => items.some((item) => isActive(item.path)))?.section
+  const itemActive = (item: NavItem) => isActive(item.path) || (item.also ?? []).some(isActive)
+
+  const activeSection = GROUPS.find(({ items }) => items.some((item) => itemActive(item)))?.section
 
   // The reader's open/closed choices live in localStorage. The server
   // snapshot is null, so the first render (server and client alike) opens
@@ -219,12 +221,12 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
       <nav className="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto [scrollbar-width:thin]">
         {/* Dashboard is a single link, not a group: nothing to fold. */}
         {OVERVIEW.map((item) => (
-          <NavLink key={item.id} item={item} active={isActive(item.path)} />
+          <NavLink key={item.id} item={item} active={itemActive(item)} />
         ))}
 
         {GROUPS.map(({ section, items }) => {
           const open = openSections.includes(section)
-          const holdsActive = items.some((item) => isActive(item.path))
+          const holdsActive = items.some((item) => itemActive(item))
           const panelId = `admin-nav-${section.toLowerCase()}`
           return (
             <div key={section} className="pt-1">
@@ -269,7 +271,7 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
               >
                 <div className="flex min-h-0 flex-col gap-0.5 overflow-hidden">
                   {items.map((item) => (
-                    <NavLink key={item.id} item={item} active={isActive(item.path)} />
+                    <NavLink key={item.id} item={item} active={itemActive(item)} />
                   ))}
                 </div>
               </div>

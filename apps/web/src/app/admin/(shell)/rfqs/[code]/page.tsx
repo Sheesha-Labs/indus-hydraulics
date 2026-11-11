@@ -8,6 +8,7 @@ import SendQuoteComposer from '../../../../../components/admin/SendQuoteComposer
 import { formatAed, formatDayMonthYear } from '../../../../../lib/format'
 import { signedUrlFor } from '../../../../../lib/supabase'
 import { Input, Select, Textarea } from '@indus/ui'
+import { ChevronRight } from 'lucide-react'
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 import { ADMIN_PREFIX } from '../../../../../lib/admin-paths'
 
@@ -119,7 +120,13 @@ export default async function AdminRfqDetailPage({ params }: Props) {
     <AdminPageShell
       // RFQ code — machine-readable, so mono per §2.6.
       title={<span className="tabular-nums">{rfq.code}</span>}
-      sub={rfq.subject || undefined}
+      breadcrumbs={
+        <span className="inline-flex min-w-0 items-center gap-1">
+          <Link href="/admin/enquiries?source=website">Enquiries</Link>
+          <ChevronRight size={11} aria-hidden="true" className="shrink-0" />
+          <span className="truncate">Website RFQ{rfq.subject ? ` · ${rfq.subject}` : ''}</span>
+        </span>
+      }
       actions={
         <>
           {/*

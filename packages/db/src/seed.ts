@@ -171,21 +171,8 @@ async function main() {
   console.log(`  ✓ Staff user: ${staffUser.email}`)
 
   // ── Accounts & contacts ────────────────────────────────────────────────────
-  const steelAccount = await db.account.upsert({
-    where: { code: 'EMSTEEL-001' },
-    create: {
-      code: 'EMSTEEL-001',
-      displayName: 'Emirates Steel',
-      legalName: 'Emirates Steel Arkan PJSC',
-      region: 'UAE',
-      tier: 'gold',
-      status: 'active',
-      creditLimit: 5000000,
-      paymentTermsDays: 45,
-    },
-    update: {},
-  })
-
+  // The Emirates Steel demo account was removed 2026-11-11 (owner request):
+  // its test RFQs sat in the live RFQ queue looking like real customer work.
   const oilGasAccount = await db.account.upsert({
     where: { code: 'ADNOC-001' },
     create: {
@@ -216,40 +203,9 @@ async function main() {
     update: {},
   })
 
-  console.log(`  ✓ 3 accounts`)
+  console.log(`  ✓ 2 accounts`)
 
   // Contacts
-  await db.accountContact.upsert({
-    where: { email: 'ravi@emiratessteel.ae' },
-    create: {
-      accountId: steelAccount.id,
-      email: 'ravi@emiratessteel.ae',
-      firstName: 'Ravi',
-      lastName: 'Kumar',
-      phone: '+971 2 507 0000',
-      passwordHash: await hash('emsteel123'),
-      role: 'admin',
-      isActive: true,
-    },
-    update: {},
-  })
-
-  await db.accountContact.upsert({
-    where: { email: 'priya@emiratessteel.ae' },
-    create: {
-      accountId: steelAccount.id,
-      email: 'priya@emiratessteel.ae',
-      firstName: 'Priya',
-      lastName: 'Sharma',
-
-      phone: '+971 2 507 0001',
-      passwordHash: await hash('emsteel123'),
-      role: 'procurement',
-      isActive: true,
-    },
-    update: {},
-  })
-
   await db.accountContact.upsert({
     where: { email: 'arjun@adnoc.ae' },
     create: {

@@ -116,7 +116,7 @@ describe('AdminSidebar folding groups', () => {
     const el = render(sidebar())
     const panel = document.getElementById(sectionButton(el, 'Operations').getAttribute('aria-controls')!)
     expect(panel?.hasAttribute('inert')).toBe(true)
-    expect(panel?.textContent).toContain('RFQ Queue')
+    expect(panel?.textContent).toContain('Enquiries')
   })
 
   test('toggling opens and closes a group and remembers it', () => {
