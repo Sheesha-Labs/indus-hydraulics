@@ -90,7 +90,7 @@ export default async function NewCustomerPage({ params }: Props) {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">
-            <label htmlFor="newcustomer-legalName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newcustomer-legalName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Legal Name <span className="text-ih-accent">*</span>
             </label>
             <Input
@@ -102,7 +102,7 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div className="col-span-2">
-            <label htmlFor="newcustomer-displayName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newcustomer-displayName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Display Name
             </label>
             <Input
@@ -113,7 +113,7 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="newcustomer-region" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Region</label>
+            <label htmlFor="newcustomer-region" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Region</label>
             <Input
               id="newcustomer-region"
               name="region"
@@ -122,7 +122,7 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="newcustomer-industryId" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Industry</label>
+            <label htmlFor="newcustomer-industryId" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Industry</label>
             <Select
               id="newcustomer-industryId" name="industryId">
               <option value="">— Select —</option>
@@ -133,7 +133,7 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="newcustomer-tier" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
+            <label htmlFor="newcustomer-tier" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
             <Select
               id="newcustomer-tier" name="tier" defaultValue="bronze">
               {['bronze', 'silver', 'gold', 'platinum'].map((t) => (
@@ -143,7 +143,7 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="newcustomer-status" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
+            <label htmlFor="newcustomer-status" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
             <Select
               id="newcustomer-status" name="status" defaultValue="prospect">
               {['prospect', 'active', 'at_risk', 'archived'].map((s) => (
@@ -153,7 +153,7 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="newcustomer-assignedRepId" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
+            <label htmlFor="newcustomer-assignedRepId" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
             <Select
               id="newcustomer-assignedRepId" name="assignedRepId">
               <option value="">— Unassigned —</option>
@@ -164,15 +164,15 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="newcustomer-paymentTermsDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
+            <label htmlFor="newcustomer-paymentTermsDays" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
             <Input
-              id="newcustomer-paymentTermsDays" name="paymentTermsDays" type="number" defaultValue={30} min={0} className="font-mono" />
+              id="newcustomer-paymentTermsDays" name="paymentTermsDays" type="number" defaultValue={30} min={0} className="tabular-nums" />
           </div>
 
           <div>
-            <label htmlFor="newcustomer-creditLimit" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
+            <label htmlFor="newcustomer-creditLimit" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
             <Input
-              id="newcustomer-creditLimit" name="creditLimit" type="number" defaultValue={0} min={0} step={1000} className="font-mono" />
+              id="newcustomer-creditLimit" name="creditLimit" type="number" defaultValue={0} min={0} step={1000} className="tabular-nums" />
           </div>
         </div>
 

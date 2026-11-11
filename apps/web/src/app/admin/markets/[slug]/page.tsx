@@ -78,11 +78,11 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
     <>
       <div className="sticky top-0 z-20 border-b border-ih-warning bg-ih-warning-soft px-5 py-3 sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-x-6 gap-y-2">
-          <p className="mono text-[11px] uppercase tracking-[0.1em] text-ih-warning-ink">
+          <p className="tabular-nums text-[11px] uppercase tracking-[0.1em] text-ih-warning-ink">
             {isReleased ? 'Live' : 'Draft · not public'} · {market.name} · regulatory copy{' '}
             {page.regulatoryCopy === 'verified' ? 'verified' : 'NOT verified by the forwarder'}
           </p>
-          <span className="mono text-[11px] uppercase tracking-[0.1em] text-ih-warning-ink">
+          <span className="tabular-nums text-[11px] uppercase tracking-[0.1em] text-ih-warning-ink">
             {/* The count is only news while something is held; at zero it is
                 noise on every preview. The edit link is always useful. */}
             {pending > 0 ? `${pending} markets awaiting review · ` : ''}

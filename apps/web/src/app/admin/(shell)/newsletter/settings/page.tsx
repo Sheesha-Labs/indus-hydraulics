@@ -40,7 +40,7 @@ export default async function NewsletterSettingsPage() {
             <Field label="From address" hint={`Always on ${MARKETING_DOMAIN}, never the domain quotes are sent from.`} className="min-w-[320px]">
               <div className="flex items-center gap-1.5">
                 <Input name="fromLocal" required maxLength={64} defaultValue={settings.fromLocal} className="w-40" aria-label="From address, before the @" />
-                <span className="font-mono text-[13px] text-ih-muted">@{MARKETING_DOMAIN}</span>
+                <span className="tabular-nums text-[13px] text-ih-muted">@{MARKETING_DOMAIN}</span>
               </div>
             </Field>
             <Field label="Reply-To" hint="Replies to a newsletter land here — a real, watched inbox." className="min-w-[280px]">

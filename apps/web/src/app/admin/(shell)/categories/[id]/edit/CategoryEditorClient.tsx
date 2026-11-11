@@ -66,7 +66,7 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
   return (
     <AdminPageShell
       title={category.name}
-      sub={<span className="font-mono">/c/{category.slug}</span>}
+      sub={<span className="tabular-nums">/c/{category.slug}</span>}
       actions={
         <>
         {savedAt && (
@@ -88,7 +88,7 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
             key={t.id}
             type="button"
             onClick={() => setTab(t.id)}
-            className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
+            className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px ${
               tab === t.id
                 ? 'border-ih-accent text-ih-ink'
                 : 'border-transparent text-ih-muted hover:text-ih-ink-2'

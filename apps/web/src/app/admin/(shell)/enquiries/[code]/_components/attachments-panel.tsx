@@ -137,7 +137,7 @@ function Inner({ enquiryId, attachments }: Props) {
                 <a className="truncate text-[14px] text-ih-ink hover:underline" href={a.href}>
                   {a.filename}
                 </a>
-                <span className="font-mono text-[12px] text-ih-muted">
+                <span className="tabular-nums text-[12px] text-ih-muted">
                   {humanBytes(a.bytes)}
                   {a.extractedLines > 0 ? ` · ${a.extractedLines} lines added` : ''}
                 </span>

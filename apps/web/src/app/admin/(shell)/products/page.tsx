@@ -213,7 +213,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           {(statusFilter || brandFilter || categoryFilter || query) && (
             <Link
               href={`/admin/products`}
-              className="font-mono text-[11px] text-ih-muted hover:text-ih-ink underline underline-offset-2 ml-1"
+              className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink underline underline-offset-2 ml-1"
             >
               Clear all
             </Link>
@@ -239,7 +239,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         {/* Content-depth filter — backed by persisted Product.contentScore.
             Thresholds align with bandForScore in @indus/domain. */}
         <div className="flex flex-wrap items-center gap-2">
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
             Content depth
           </span>
           <NavTabs
@@ -277,7 +277,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             {
               key: 'sku',
               header: sortHeader('sku', 'SKU'),
-              cell: (p) => <span className="font-mono text-[12px] text-ih-muted">{p.sku}</span>,
+              cell: (p) => <span className="tabular-nums text-[12px] text-ih-muted">{p.sku}</span>,
             },
             {
               key: 'title',

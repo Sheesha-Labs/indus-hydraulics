@@ -60,7 +60,7 @@ export default function IndustryEditorClient({ contentEditor, industry, recentIm
   return (
     <AdminPageShell
       title={industry.name}
-      sub={<span className="font-mono">/industries/{industry.slug}</span>}
+      sub={<span className="tabular-nums">/industries/{industry.slug}</span>}
       actions={
         <>
         {savedAt && (

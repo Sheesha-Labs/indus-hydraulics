@@ -173,18 +173,18 @@ export default async function NewsletterSubscribersPage({ searchParams }: Props)
           rows={rows}
           rowKey={(r) => r.id}
           columns={[
-            { key: 'email', header: 'Email', width: '35%', cell: (r) => <span className="font-mono text-ih-ink">{r.email}</span> },
+            { key: 'email', header: 'Email', width: '35%', cell: (r) => <span className="tabular-nums text-ih-ink">{r.email}</span> },
             {
               key: 'status',
               header: 'Status',
               cell: (r) => <StatusPill tone={STATUS_TONE[r.status as SubscriberStatus]}>{STATUS_LABEL[r.status as SubscriberStatus]}</StatusPill>,
             },
             { key: 'source', header: 'From', cell: (r) => <span className="text-ih-ink-2">{SOURCE_LABEL[r.source ?? ''] ?? r.source ?? '—'}</span> },
-            { key: 'signed', header: 'Signed up', cell: (r) => <span className="font-mono text-ih-ink-2">{day(r.createdAt)}</span> },
+            { key: 'signed', header: 'Signed up', cell: (r) => <span className="tabular-nums text-ih-ink-2">{day(r.createdAt)}</span> },
             {
               key: 'confirmed',
               header: 'Confirmed',
-              cell: (r) => <span className="font-mono text-ih-ink-2">{day(r.confirmedAt)}</span>,
+              cell: (r) => <span className="tabular-nums text-ih-ink-2">{day(r.confirmedAt)}</span>,
             },
             {
               key: 'actions',

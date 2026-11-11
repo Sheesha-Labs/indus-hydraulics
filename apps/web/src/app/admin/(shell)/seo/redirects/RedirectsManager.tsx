@@ -69,12 +69,12 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
         action={handleAdd}
         className="rounded-lg border border-ih-border bg-ih-surface p-4 mb-6"
       >
-        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+        <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           Add redirect
         </p>
         <div className="flex gap-3 items-end">
           <div className="flex-1">
-            <label htmlFor="redirect-fromPath" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-fromPath" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               From path
             </label>
             <Input
@@ -85,7 +85,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               placeholder="/old-page" />
           </div>
           <div className="flex-1">
-            <label htmlFor="redirect-toPath" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-toPath" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               To path
             </label>
             <Input
@@ -96,7 +96,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               placeholder="/new-page" />
           </div>
           <div className="w-24">
-            <label htmlFor="redirect-statusCode" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-statusCode" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Code
             </label>
             <Select
@@ -111,13 +111,13 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
           <button
             type="submit"
             disabled={isPending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 shrink-0"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 shrink-0"
           >
             Add
           </button>
         </div>
         {error && (
-          <p className="mt-2 font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <p className="mt-2 tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </p>
         )}
@@ -146,15 +146,15 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
                   key={r.id}
                   className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                 >
-                  <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">
+                  <td className="px-4 py-3 tabular-nums text-[12px] text-ih-muted">
                     {r.fromPath}
                   </td>
                   <td className="px-4 py-3 text-ih-ink-2">{r.toPath}</td>
-                  <td className="px-4 py-3 font-mono text-[12px]">{r.statusCode}</td>
-                  <td className="px-4 py-3 font-mono text-[12px] tabular-nums">
+                  <td className="px-4 py-3 tabular-nums text-[12px]">{r.statusCode}</td>
+                  <td className="px-4 py-3 text-[12px] tabular-nums">
                     {r.hits ?? 0}
                   </td>
-                  <td className="px-4 py-3 font-mono text-[11px] text-ih-muted">
+                  <td className="px-4 py-3 tabular-nums text-[11px] text-ih-muted">
                     {r.lastHitAt ? new Date(r.lastHitAt).toLocaleDateString() : '—'}
                   </td>
                   <td className="px-4 py-3 text-right">
@@ -172,7 +172,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-4 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -183,7 +183,7 @@ function AddBlock({ onPick }: { onPick: (b: Block) => void }) {
         if (!blocks.length && !presets.length) return null
         return (
           <div key={cat}>
-            <p className="mb-1 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{cat}</p>
+            <p className="mb-1 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{cat}</p>
             <ul className="flex flex-col gap-0.5">
               {blocks.map((b) => (
                 <li key={b.type}>
@@ -278,7 +278,7 @@ function ColorField({ label, value, allowBlank, disabled, onChange }: { label: s
       <span>{label}</span>
       <div className="flex flex-wrap items-center gap-1.5">
         <input type="color" aria-label={`${label} colour`} value={value || '#ffffff'} disabled={disabled} onChange={(e) => onChange(e.target.value)} className="h-8 w-10 cursor-pointer rounded border border-ih-border bg-transparent p-0.5" />
-        <Input value={value} disabled={disabled} maxLength={7} placeholder={allowBlank ? 'Default' : '#000000'} onChange={(e) => onChange(e.target.value)} className="w-24 font-mono" aria-label={`${label} hex value`} />
+        <Input value={value} disabled={disabled} maxLength={7} placeholder={allowBlank ? 'Default' : '#000000'} onChange={(e) => onChange(e.target.value)} className="w-24 tabular-nums" aria-label={`${label} hex value`} />
         {INDUS_SWATCHES.map((s) => (
           <button
             key={s.value}
@@ -479,7 +479,7 @@ function RecordsEditor({ label, value, onChange }: { label: string; value: Recor
               className="flex w-full items-baseline justify-between gap-2 px-2 py-1 text-left text-[13px] hover:bg-ih-surface-2 disabled:opacity-45"
             >
               <span className="truncate text-ih-ink">{r.label}</span>
-              <span className="shrink-0 font-mono text-[11px] text-ih-muted">{picked.has(r.id) ? 'added' : r.hint}</span>
+              <span className="shrink-0 tabular-nums text-[11px] text-ih-muted">{picked.has(r.id) ? 'added' : r.hint}</span>
             </button>
           </li>
         ))}

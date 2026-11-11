@@ -196,14 +196,14 @@ export default async function NewsletterListPage({ params, searchParams }: Props
           rows={contacts}
           rowKey={(c) => c.id}
           columns={[
-            { key: 'email', header: 'Email', width: '35%', cell: (c) => <span className="font-mono text-ih-ink">{c.email}</span> },
+            { key: 'email', header: 'Email', width: '35%', cell: (c) => <span className="tabular-nums text-ih-ink">{c.email}</span> },
             { key: 'name', header: 'Name', cell: (c) => <span className="text-ih-ink-2">{c.name || '—'}</span> },
             {
               key: 'status',
               header: 'Status',
               cell: (c) => <StatusPill tone={STATUS_TONE[c.status as ContactStatus]}>{STATUS_LABEL[c.status as ContactStatus]}</StatusPill>,
             },
-            { key: 'source', header: 'Added', cell: (c) => <span className="font-mono text-ih-ink-2">{c.createdAt.toISOString().slice(0, 10)} · {c.source}</span> },
+            { key: 'source', header: 'Added', cell: (c) => <span className="tabular-nums text-ih-ink-2">{c.createdAt.toISOString().slice(0, 10)} · {c.source}</span> },
             {
               key: 'actions',
               header: <span className="sr-only">Actions</span>,
@@ -250,7 +250,7 @@ export default async function NewsletterListPage({ params, searchParams }: Props
             <ul className="flex flex-col gap-1 text-[13.5px] text-ih-ink-2">
               {imports.map((i) => (
                 <li key={i.id}>
-                  <span className="font-mono">{i.createdAt.toISOString().slice(0, 16).replace('T', ' ')}</span>
+                  <span className="tabular-nums">{i.createdAt.toISOString().slice(0, 16).replace('T', ' ')}</span>
                   {' · '}
                   {i.fileName || 'file'} by {i.importedBy?.name ?? 'a former user'}: {describeImport(i)}.
                 </li>

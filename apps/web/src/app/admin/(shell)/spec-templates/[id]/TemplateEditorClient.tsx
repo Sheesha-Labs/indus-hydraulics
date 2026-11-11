@@ -116,7 +116,7 @@ function BasicInfoForm({ template }: { template: Template }) {
             required
             name="slug"
             defaultValue={template.slug}
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
           />
         </Field>
       </div>
@@ -136,9 +136,9 @@ function BasicInfoForm({ template }: { template: Template }) {
         >
           {pending ? 'Saving…' : 'Save details'}
         </button>
-        {saved && <span className="font-mono text-[11px] text-ih-success-ink">✓ Saved</span>}
+        {saved && <span className="tabular-nums text-[11px] text-ih-success-ink">✓ Saved</span>}
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -180,7 +180,7 @@ function FieldManager({
         </div>
       ) : (
         <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-          <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div />
             <div>Label / key</div>
             <div>Group</div>
@@ -223,13 +223,13 @@ function FieldManager({
                     </div>
                     <div>
                       <div className="text-ih-ink font-medium">{f.label}</div>
-                      <div className="text-[11px] text-ih-muted font-mono mt-0.5">{f.key}</div>
+                      <div className="text-[11px] text-ih-muted tabular-nums mt-0.5">{f.key}</div>
                     </div>
                     <div className="text-[12px] text-ih-ink-2">
                       {f.group ?? <span className="text-ih-muted-2">General</span>}
                     </div>
-                    <div className="font-mono text-[11px] text-ih-muted">{f.dataType}</div>
-                    <div className="text-center font-mono text-[11px] text-ih-muted">
+                    <div className="tabular-nums text-[11px] text-ih-muted">{f.dataType}</div>
+                    <div className="text-center tabular-nums text-[11px] text-ih-muted">
                       {f.unit ?? '—'}
                     </div>
                     <div className="flex items-center justify-center gap-1">
@@ -241,7 +241,7 @@ function FieldManager({
                       <button
                         type="button"
                         onClick={() => setEditingId(f.id)}
-                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+                        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink"
                       >
                         Edit
                       </button>
@@ -328,7 +328,7 @@ function FieldForm({
             name="key"
             defaultValue={existing?.key ?? ''}
             placeholder="operating_pressure"
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
           />
         </Field>
       </div>
@@ -352,7 +352,7 @@ function FieldForm({
             name="unit"
             defaultValue={existing?.unit ?? ''}
             placeholder="bar"
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
           />
         </Field>
         <Field label="Group" hint="Section header in the tech-specs tab">
@@ -372,7 +372,7 @@ function FieldForm({
             defaultValue={existing?.options?.join('\n') ?? ''}
             rows={4}
             placeholder={'1-wire\n2-wire\nspiral'}
-            className="px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] font-mono resize-y"
+            className="px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] tabular-nums resize-y"
           />
         </Field>
       )}
@@ -433,7 +433,7 @@ function FieldForm({
           Cancel
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -486,7 +486,7 @@ function PdpZonePreview({
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-1 pt-0.5 text-[10.5px] font-mono tracking-[0.04em] text-ih-muted min-w-[120px]">
+      <div className="flex flex-col gap-1 pt-0.5 text-[10.5px] tabular-nums tracking-[0.04em] text-ih-muted min-w-[120px]">
         <div className="font-medium text-ih-muted-2 uppercase mb-0.5">
           Renders here
         </div>
@@ -528,7 +528,7 @@ function ReorderButton({
         })
       }
       title={direction === 'up' ? 'Move up' : 'Move down'}
-      className="font-mono text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-30"
+      className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-30"
     >
       {direction === 'up' ? '↑' : '↓'}
     </button>
@@ -589,7 +589,7 @@ function AttachedProductsList({
 
   return (
     <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-      <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+      <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
         <div>SKU</div>
         <div>Title</div>
         <div>Category</div>
@@ -603,17 +603,17 @@ function AttachedProductsList({
           href={`/admin/products/${p.id}/edit`}
           className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-3 items-center text-[13px] border-t border-ih-border hover:bg-ih-surface-2 transition-colors"
         >
-          <div className="font-mono text-[12px] text-ih-muted truncate">{p.sku}</div>
+          <div className="tabular-nums text-[12px] text-ih-muted truncate">{p.sku}</div>
           <div className="text-ih-ink font-medium truncate">{p.title}</div>
           <div className="text-[12px] text-ih-ink-2 truncate">
             {p.categoryName ?? <span className="text-ih-muted-2">—</span>}
           </div>
           <div className="flex justify-center">
-            <span className={`px-2 py-0.5 font-mono text-[11px] font-medium capitalize ${STATUS_COLORS[p.status] ?? ''}`}>
+            <span className={`px-2 py-0.5 tabular-nums text-[11px] font-medium capitalize ${STATUS_COLORS[p.status] ?? ''}`}>
               {p.status}
             </span>
           </div>
-          <div className="text-right font-mono text-[11px] text-ih-muted">
+          <div className="text-right tabular-nums text-[11px] text-ih-muted">
             {new Date(p.updatedAt).toLocaleDateString()}
           </div>
         </Link>
@@ -665,7 +665,7 @@ function Pill({ children, tone }: { children: React.ReactNode; tone: 'success' |
         ? 'text-[oklch(0.5_0.15_60)] bg-[oklch(0.97_0.04_60)]'
         : 'text-ih-accent bg-[oklch(0.96_0.05_240)]'
   return (
-    <span className={`inline-block px-1.5 py-0.5 font-mono text-[10.5px] font-medium uppercase ${cls}`}>
+    <span className={`inline-block px-1.5 py-0.5 tabular-nums text-[10.5px] font-medium uppercase ${cls}`}>
       {children}
     </span>
   )

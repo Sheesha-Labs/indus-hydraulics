@@ -144,7 +144,7 @@ function BrandImagePicker({
 
       <label
         htmlFor={selectId}
-        className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2"
+        className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2"
       >
         {label}
       </label>
@@ -170,7 +170,7 @@ function BrandImagePicker({
             />
           ) : (
             <span
-              className={`absolute inset-0 grid place-items-center font-mono text-[11px] ${
+              className={`absolute inset-0 grid place-items-center tabular-nums text-[11px] ${
                 previewOnInk ? 'text-white/45' : 'text-ih-muted-2'
               }`}
             >
@@ -294,7 +294,7 @@ export function LogoField({
       {/* Only meaningful once there is a logo — with none, both options render
           the same built-in mark and the choice is noise. */}
       <div className="mt-4">
-        <span className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
+        <span className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
           Placement
         </span>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">

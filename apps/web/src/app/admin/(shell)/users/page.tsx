@@ -72,7 +72,7 @@ export default async function UsersPage() {
       actions={
         <Link
         href="/admin/users/new"
-        className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] flex items-center hover:bg-ih-accent-hover"
+        className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] flex items-center hover:bg-ih-accent-hover"
         >
         + Add Staff
         </Link>
@@ -84,12 +84,12 @@ export default async function UsersPage() {
         <table className="w-full text-[13px]">
           <thead>
             <tr className="border-b border-ih-border bg-ih-surface-2">
-              <th className="text-left px-4 py-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Name</th>
-              <th className="text-left px-4 py-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Email</th>
-              <th className="text-left px-4 py-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Role</th>
-              <th className="text-left px-4 py-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">RFQs</th>
-              <th className="text-left px-4 py-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Accounts</th>
-              <th className="text-left px-4 py-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Status</th>
+              <th className="text-left px-4 py-3 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Name</th>
+              <th className="text-left px-4 py-3 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Email</th>
+              <th className="text-left px-4 py-3 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Role</th>
+              <th className="text-left px-4 py-3 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">RFQs</th>
+              <th className="text-left px-4 py-3 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Accounts</th>
+              <th className="text-left px-4 py-3 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Status</th>
               <th className="px-4 py-3" />
             </tr>
           </thead>
@@ -103,7 +103,7 @@ export default async function UsersPage() {
               >
                 <td className="px-4 py-3">
                   <div className="flex items-center gap-2.5">
-                    <div className="rounded-md w-7 h-7 bg-ih-surface-2 border border-ih-border grid place-items-center font-mono text-[11px] text-ih-muted shrink-0">
+                    <div className="rounded-md w-7 h-7 bg-ih-surface-2 border border-ih-border grid place-items-center tabular-nums text-[11px] text-ih-muted shrink-0">
                       {user.name.charAt(0).toUpperCase()}
                     </div>
                     <span className="font-medium text-ih-ink">{user.name}</span>
@@ -111,18 +111,18 @@ export default async function UsersPage() {
                 </td>
                 <td className="px-4 py-3 text-ih-muted">{user.email}</td>
                 <td className="px-4 py-3">
-                  <span className={`font-mono text-[11px] px-2 py-0.5 ${ROLE_COLORS[user.role] ?? 'bg-ih-surface-2'}`}>
+                  <span className={`tabular-nums text-[11px] px-2 py-0.5 ${ROLE_COLORS[user.role] ?? 'bg-ih-surface-2'}`}>
                     {ROLE_LABELS[user.role] ?? user.role}
                   </span>
                 </td>
-                <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">
+                <td className="px-4 py-3 tabular-nums text-[12px] text-ih-muted">
                   {user._count.assignedRfqs}
                 </td>
-                <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">
+                <td className="px-4 py-3 tabular-nums text-[12px] text-ih-muted">
                   {user._count.assignedAccounts}
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`font-mono text-[11px] px-2 py-0.5 ${
+                  <span className={`tabular-nums text-[11px] px-2 py-0.5 ${
                     user.isActive
                       ? 'bg-[var(--color-ih-success-soft)] text-ih-success'
                       : 'bg-ih-surface-2 text-ih-muted'
@@ -133,7 +133,7 @@ export default async function UsersPage() {
                 <td className="px-4 py-3 text-right">
                   <Link
                     href={`/admin/users/${user.id}`}
-                    className="font-mono text-[11px] text-ih-accent hover:underline"
+                    className="tabular-nums text-[11px] text-ih-accent hover:underline"
                   >
                     Edit
                   </Link>

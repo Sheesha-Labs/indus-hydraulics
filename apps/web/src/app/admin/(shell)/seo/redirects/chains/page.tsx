@@ -113,15 +113,15 @@ export default async function RedirectChainsPage() {
                     c.isCycle ? 'bg-ih-danger-soft/40' : ''
                   }`}
                 >
-                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2">
+                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2">
                     {c.fromPath}
                     {c.isCycle && (
-                      <div className="font-mono text-[10.5px] text-ih-danger-ink uppercase tracking-wider mt-1">
+                      <div className="tabular-nums text-[10.5px] text-ih-danger-ink uppercase tracking-wider mt-1">
                         cycle
                       </div>
                     )}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] text-ih-muted">
+                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted">
                     {c.hops.map((h, i) => (
                       <span key={i}>
                         {i > 0 && <span className="opacity-50 mx-1">→</span>}
@@ -135,7 +135,7 @@ export default async function RedirectChainsPage() {
                       </span>
                     ))}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] tabular-nums">{c.hopCount}</td>
+                  <td className="px-3 py-3 text-[11px] tabular-nums">{c.hopCount}</td>
                 </tr>
               ))}
             </tbody>
@@ -159,7 +159,7 @@ function Tile({
 }) {
   return (
     <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div
@@ -179,7 +179,7 @@ function Tile({
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

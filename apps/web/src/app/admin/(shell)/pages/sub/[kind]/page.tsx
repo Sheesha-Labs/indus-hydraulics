@@ -127,7 +127,7 @@ function SubPageTable({
       <div>
         <h2 className="text-[15px] font-medium tracking-[-0.01em]">
           {heading}{' '}
-          <span className="font-mono text-[12px] text-ih-muted">· {rows.length}</span>
+          <span className="tabular-nums text-[12px] text-ih-muted">· {rows.length}</span>
         </h2>
         {note ? (
           <p className="mt-1 max-w-[80ch] text-[12.5px] leading-[1.55] text-ih-muted">{note}</p>
@@ -140,7 +140,7 @@ function SubPageTable({
         </p>
       ) : (
         <div className="overflow-hidden rounded-lg border border-ih-border">
-          <div className="grid grid-cols-[1fr_70px_120px_70px] border-b border-ih-border bg-ih-bg px-4 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+          <div className="grid grid-cols-[1fr_70px_120px_70px] border-b border-ih-border bg-ih-bg px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
             <div>{kind === 'market' ? 'Market' : 'Brand'}</div>
             <div>Code</div>
             <div className="text-right">Edited</div>
@@ -162,12 +162,12 @@ function SubPageTable({
                 >
                   {row.name}
                 </Link>
-                <div className="truncate font-mono text-[11px] text-ih-muted">
+                <div className="truncate tabular-nums text-[11px] text-ih-muted">
                   {pathPrefix}/{row.slug}
                 </div>
               </div>
-              <div className="font-mono text-[11.5px] text-ih-muted">{row.code}</div>
-              <div className="text-right font-mono text-[11.5px] text-ih-muted">
+              <div className="tabular-nums text-[11.5px] text-ih-muted">{row.code}</div>
+              <div className="text-right tabular-nums text-[11.5px] text-ih-muted">
                 {row.updatedAt
                   ? row.updatedAt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
                   : '—'}
@@ -185,7 +185,7 @@ function SubPageTable({
                     href={`${storefront}${pathPrefix}/${row.slug}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="font-mono text-[11px] text-ih-accent hover:underline"
+                    className="tabular-nums text-[11px] text-ih-accent hover:underline"
                   >
                     View ↗
                   </a>
@@ -196,12 +196,12 @@ function SubPageTable({
                      own. */
                   <Link
                     href={`/admin/markets/${row.slug}`}
-                    className="font-mono text-[11px] text-ih-accent hover:underline"
+                    className="tabular-nums text-[11px] text-ih-accent hover:underline"
                   >
                     Draft
                   </Link>
                 ) : (
-                  <span className="font-mono text-[11px] text-ih-muted-2">—</span>
+                  <span className="tabular-nums text-[11px] text-ih-muted-2">—</span>
                 )}
               </div>
             </div>

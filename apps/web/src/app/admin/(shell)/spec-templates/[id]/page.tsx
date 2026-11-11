@@ -67,7 +67,7 @@ export default async function SpecTemplateEditPage({ params }: Props) {
       actions={
         <Link
         href={`/admin/spec-templates`}
-        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink"
         >
         ← Back to templates
         </Link>

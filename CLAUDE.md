@@ -104,10 +104,19 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
    set the attribute and no `dark:` variant existed anywhere in the tree — and has been removed.
    Do not reintroduce one without a design package that specifies it.
 
-6. **Three type families, no exceptions.** Geist (sans), Instrument Serif (display), JetBrains
-   Mono (data and labels). Mono is for machine-readable content only — part numbers, SKUs,
-   quantities, dates, pressures, statuses, table headers, eyebrows. Prose is never mono. A number
-   inside a sentence is not mono; the same number in a stat tile is.
+6. **Type families — storefront three, admin one.**
+   - **Storefront:** Geist (sans), Instrument Serif (display), JetBrains Mono (data and labels).
+     Mono is for machine-readable content only — part numbers, SKUs, quantities, dates,
+     pressures, statuses, table headers, eyebrows. Prose is never mono. A number inside a
+     sentence is not mono; the same number in a stat tile is.
+   - **Admin: no monospace, anywhere.** Owner decision 2026-11-11, following the Bazar admin.
+     All admin UI text is Geist (Instrument Serif stays for KPI numerals and card headings).
+     Eyebrows, table headers and group labels are Geist uppercase with tracking; slugs, SKUs,
+     codes, counts and dates are Geist with `tabular-nums` so columns still align. Never write
+     `font-mono`, the `.mono` class, `--font-mono` or a monospace stack under `app/admin` or
+     `components/admin` — `lib/admin-no-mono.test.ts` fails the build. Shared `packages/ui`
+     primitives that use mono for the storefront are turned to Geist on admin pages by the
+     `:root:has([data-surface='admin'])` token override in `globals.css`; do not remove it.
 
 7. **One primary action per view.** If a screen appears to need two, one of them is secondary.
 

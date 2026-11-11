@@ -55,7 +55,7 @@ export default function ActivateForm({
             : 'Your password has been changed. Sign in with your new password.'}
         </p>
 
-        <p className="mt-4 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">{state.email}</p>
+        <p className="mt-4 tabular-nums text-[11px] text-[oklch(0.68_0.03_250)]">{state.email}</p>
 
         <Link
           href={`/admin/sign-in?email=${encodeURIComponent(state.email)}`}

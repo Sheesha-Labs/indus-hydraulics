@@ -113,7 +113,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
       actions={
         <Link
           href="/admin/blog/new"
-          className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+          className="flex h-9 items-center rounded-md bg-ih-accent px-4 tabular-nums text-[12px] text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
         >
           + New Post
         </Link>
@@ -126,7 +126,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
           <Link
             href={href({ view: undefined, status: undefined })}
             aria-current={trashed ? undefined : 'page'}
-            className={`flex h-7 items-center rounded px-3 font-mono text-[11.5px] transition-colors ${
+            className={`flex h-7 items-center rounded px-3 tabular-nums text-[11.5px] transition-colors ${
               trashed ? 'text-ih-muted hover:text-ih-ink' : 'bg-ih-navy font-medium text-ih-bg'
             }`}
           >
@@ -135,7 +135,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
           <Link
             href={href({ view: 'trash', status: undefined })}
             aria-current={trashed ? 'page' : undefined}
-            className={`flex h-7 items-center gap-1.5 rounded px-3 font-mono text-[11.5px] transition-colors ${
+            className={`flex h-7 items-center gap-1.5 rounded px-3 tabular-nums text-[11.5px] transition-colors ${
               trashed ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-muted hover:text-ih-ink'
             }`}
           >
@@ -166,7 +166,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
           {query && (
             <Link
               href={href({ q: undefined })}
-              className="font-mono text-[11px] text-ih-muted underline underline-offset-2 hover:text-ih-ink"
+              className="tabular-nums text-[11px] text-ih-muted underline underline-offset-2 hover:text-ih-ink"
             >
               Clear
             </Link>
@@ -210,7 +210,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
       ) : (
         <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
           <div
-            className={`${COLUMNS} border-b border-ih-border bg-ih-bg px-4 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted`}
+            className={`${COLUMNS} border-b border-ih-border bg-ih-bg px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted`}
           >
             <div>Title</div>
             <div className="text-center">Status</div>
@@ -235,11 +235,11 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                   >
                     {post.title}
                   </Link>
-                  <div className="truncate font-mono text-[11px] text-ih-muted">/blog/{post.slug}</div>
+                  <div className="truncate tabular-nums text-[11px] text-ih-muted">/blog/{post.slug}</div>
                 </div>
                 <div className="flex justify-center">
                   <span
-                    className={`rounded-full px-2 py-0.5 font-mono text-[11px] font-medium ${STATUS_STYLE[status]}`}
+                    className={`rounded-full px-2 py-0.5 tabular-nums text-[11px] font-medium ${STATUS_STYLE[status]}`}
                   >
                     {STATUS_LABEL[status]}
                   </span>
@@ -250,7 +250,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                 <div className="truncate text-[12.5px] text-ih-ink-2">
                   {post.blogAuthor?.name ?? post.author?.name ?? '—'}
                 </div>
-                <div className="text-right font-mono text-[11.5px] text-ih-muted">
+                <div className="text-right tabular-nums text-[11.5px] text-ih-muted">
                   {relative(post.updatedAt)}
                 </div>
                 <div className="flex flex-col items-end gap-1">
@@ -259,7 +259,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                       href={`/blog/${post.slug}`}
                       target="_blank"
                       rel="noreferrer"
-                      className="font-mono text-[11px] text-ih-accent hover:underline"
+                      className="tabular-nums text-[11px] text-ih-accent hover:underline"
                     >
                       View ↗
                     </Link>
@@ -296,7 +296,7 @@ function StatusChip({
     <Link
       href={href}
       aria-current={active ? 'page' : undefined}
-      className={`inline-flex h-7 items-center gap-1.5 rounded-md border px-2.5 font-mono text-[11px] transition-colors ${
+      className={`inline-flex h-7 items-center gap-1.5 rounded-md border px-2.5 tabular-nums text-[11px] transition-colors ${
         active
           ? 'border-ih-accent bg-ih-accent-soft text-ih-accent'
           : 'border-ih-border text-ih-muted hover:border-ih-border-strong hover:text-ih-ink'

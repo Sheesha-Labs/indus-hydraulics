@@ -67,7 +67,7 @@ export default function BrandEditorClient({ contentEditor, brand, recentImages }
   return (
     <AdminPageShell
       title={brand.name}
-      sub={<span className="font-mono">/brands/{brand.slug}</span>}
+      sub={<span className="tabular-nums">/brands/{brand.slug}</span>}
       actions={
         <>
         {savedAt && (

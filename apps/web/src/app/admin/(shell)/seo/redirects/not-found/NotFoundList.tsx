@@ -67,7 +67,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
       </div>
 
       {error && (
-        <p className="mb-4 font-mono text-[12px] text-ih-danger-ink" role="alert">
+        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
@@ -96,16 +96,16 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                   key={r.id}
                   className="border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2"
                 >
-                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2 truncate max-w-[300px]">
+                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2 truncate max-w-[300px]">
                     {r.path}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[12px] tabular-nums text-ih-ink-2">
+                  <td className="px-3 py-3 text-[12px] tabular-nums text-ih-ink-2">
                     {r.hits.toLocaleString()}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] text-ih-muted truncate max-w-[280px]">
+                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted truncate max-w-[280px]">
                     {r.referer ?? '—'}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] text-ih-muted whitespace-nowrap">
+                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
                     {new Date(r.lastSeenAt).toLocaleDateString('en-GB', {
                       day: 'numeric',
                       month: 'short',
@@ -134,14 +134,14 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                         <button
                           type="submit"
                           disabled={pending}
-                          className="h-8 px-3 bg-ih-accent text-ih-accent-fg font-mono text-[11px] disabled:opacity-50"
+                          className="h-8 px-3 bg-ih-accent text-ih-accent-fg tabular-nums text-[11px] disabled:opacity-50"
                         >
                           Save
                         </button>
                         <button
                           type="button"
                           onClick={() => setEditingId(null)}
-                          className="rounded-md h-8 px-3 border border-ih-border font-mono text-[11px]"
+                          className="rounded-md h-8 px-3 border border-ih-border tabular-nums text-[11px]"
                         >
                           Cancel
                         </button>
@@ -152,7 +152,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           type="button"
                           onClick={() => setEditingId(r.id)}
                           disabled={pending}
-                          className="font-mono text-[11px] text-ih-accent hover:underline mr-3 disabled:opacity-50"
+                          className="tabular-nums text-[11px] text-ih-accent hover:underline mr-3 disabled:opacity-50"
                         >
                           Resolve
                         </button>
@@ -160,7 +160,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           type="button"
                           onClick={() => handleIgnore(r.id)}
                           disabled={pending}
-                          className="font-mono text-[11px] text-ih-muted hover:underline disabled:opacity-50"
+                          className="tabular-nums text-[11px] text-ih-muted hover:underline disabled:opacity-50"
                         >
                           Ignore
                         </button>
@@ -179,7 +179,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

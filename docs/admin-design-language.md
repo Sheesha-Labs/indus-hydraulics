@@ -184,7 +184,7 @@ hidden md:flex bg-ih-surface border-r border-ih-border flex-col py-5 px-3.5 gap-
 **NAV-3.** Group label:
 
 ```
-px-2.5 pt-3.5 pb-1.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.1em] text-ih-muted-2
+px-2.5 pt-3.5 pb-1.5 tabular-nums text-[10.5px] font-medium uppercase tracking-[0.1em] text-ih-muted-2
 ```
 
 **Never a divider line between groups** — the label's own 14px top padding *is* the group separation. The label is deliberately lighter than the items it heads (`muted-2` vs `ink-2`) so it reads as furniture, not as a link.
@@ -296,7 +296,7 @@ Radius 10px, 1px border, surface fill, **no shadow**. The card edge is the only 
 **LT-7.** Header row `<tr className="text-left border-b border-ih-border">` — **no background fill**. Each `<th>`:
 
 ```
-whitespace-nowrap px-4 py-3 font-mono text-[10.5px] font-medium uppercase
+whitespace-nowrap px-4 py-3 tabular-nums text-[10.5px] font-medium uppercase
 tracking-[0.08em] text-ih-muted-2 align-bottom
 ```
 First column `px-4`, every subsequent column `px-3`.
@@ -325,7 +325,7 @@ The title column is the only one whose content length is unbounded. Pinning it a
 
 ```tsx
 <div className="font-medium truncate max-w-[42ch]">{title}</div>
-<div className="mono text-[11px] text-ih-muted mt-0.5">{sku | reference | slug}</div>
+<div className="tabular-nums text-[11px] text-ih-muted mt-0.5">{sku | reference | slug}</div>
 ```
 
 The mono second line is the row's real identity and is machine text; that pairing is what makes a row recognisable at a glance. **Never a third stacked line** — the RFQ list currently stacks code + subject + engineer and runs ~63px against its neighbours' ~50px.
@@ -340,7 +340,7 @@ Ladder: `just now` · `{n}m ago` · `{n}h ago` · `today` · `yesterday` · `{n}
 
 Relative dates compress to ~5 characters, which is what lets an Updated column sit in an already-tight table. There are currently at least **nine** date renderings in the admin, including four bare `toLocaleDateString()` calls with no locale argument — which produce a *different string on the server and on the client* and are a live hydration hazard, not only a style one.
 
-*Exception:* an audit/evidence table shows both — bold relative over `mono text-[11px] text-ih-muted` absolute UTC via `toLocaleString('en-GB', { …, timeZone: 'UTC' })`.
+*Exception:* an audit/evidence table shows both — bold relative over `tabular-nums text-[11px] text-ih-muted` absolute UTC via `toLocaleString('en-GB', { …, timeZone: 'UTC' })`.
 
 **LT-13.** Row actions live in a **right-aligned final column**, and a table uses one form, never both:
 
@@ -396,7 +396,7 @@ No border on the chip, no mono, no uppercase.
 bar:   flex flex-wrap items-center gap-2
 text:  h-8 px-2.5 bg-ih-surface border border-ih-border rounded-lg text-[12.5px] w-[200px] (or w-[260px])
 pair:  inline-flex items-center h-8 bg-ih-surface border border-ih-border rounded-lg overflow-hidden
-label: px-2 border-r border-ih-border font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted-2
+label: px-2 border-r border-ih-border tabular-nums text-[10.5px] uppercase tracking-[0.08em] text-ih-muted-2
 ```
 A select's label lives **inside the control shell**, not stacked above it in 10px mono. Stacked micro-labels above 36px controls is what makes the SEO inspector's filter bar two rows tall for four filters.
 
@@ -469,7 +469,7 @@ The label is `flex items-center gap-2` so an icon or an AI-suggest adornment can
 
 The 6px-inside / 20px-between ratio (1 : 3.3) is what makes a label unambiguously belong to the control *under* it rather than the one above — the classic label-orphaning failure.
 
-**A field label is sans sentence case, never the mono uppercase eyebrow.** The string `block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5` is copy-pasted **81 times** across the admin as a field label. That is the `.eyebrow` treatment, which FE-9 reserves for *sub-section headings*. Using it for both means a form has no visual distinction between "this section is called Pricing" and "this box is called Price".
+**A field label is sans sentence case, never the mono uppercase eyebrow.** The string `block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5` is copy-pasted **81 times** across the admin as a field label. That is the `.eyebrow` treatment, which FE-9 reserves for *sub-section headings*. Using it for both means a form has no visual distinction between "this section is called Pricing" and "this box is called Price".
 
 There are currently **eleven** local `function Field(...)` definitions in the admin, in five different label treatments, while `packages/ui/src/Field.tsx` exports `Field` / `Label` / `Hint` / `ErrorText` with the wiring already solved (a `useId()`-backed context that guarantees `htmlFor`/`id` association — the failure mode it exists to prevent is invisible in a screenshot, which is how ~150 unassociated labels once accumulated). **Import it. Do not write a twelfth.**
 
@@ -551,7 +551,7 @@ On a long form it becomes sticky to the bottom of the scroller — `… sticky b
 
 ```tsx
 <span className="text-[12px] text-ih-muted mr-auto">
-  Editing <span className="mono text-ih-ink-2">{reference}</span>{isDirty ? ' · unsaved changes' : null}
+  Editing <span className="tabular-nums text-ih-ink-2">{reference}</span>{isDirty ? ' · unsaved changes' : null}
 </span>
 <Button type="submit" disabled={pending || !isDirty}>
   <Save size={14} strokeWidth={1.8} />{pending ? 'Saving…' : 'Save'}
@@ -628,7 +628,7 @@ Written in that order every time. There are currently ~60 bordered containers in
 
 **CP-5.** KPI tile — `p-5 border border-ih-border rounded-lg bg-ih-surface`, in a `grid grid-cols-2 md:grid-cols-4 gap-4`:
 
-- label: `font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-ih-muted`
+- label: `tabular-nums text-[11px] font-medium uppercase tracking-[0.08em] text-ih-muted`
 - value: `serif text-[32px] mt-1 leading-none text-ih-navy tracking-[-0.02em]`
 - delta: `mt-2 mono text-[11px]`, `text-ih-accent` up / `text-ih-danger` down
 
@@ -644,28 +644,25 @@ Written in that order every time. There are currently ~60 bordered containers in
 
 ### 6.1 Families
 
-**TY-1.** Three families, already loaded as CSS variables and set on `body`:
-**Geist** (`--font-sans`) · **Instrument Serif** 400 only (`--font-serif`) · **JetBrains Mono** (`--font-mono`).
+**TY-1.** Two families in the admin: **Geist** (`--font-sans`) for all UI text · **Instrument Serif** 400 only (`--font-serif`) for KPI numerals and card headings. **JetBrains Mono is not used in the admin** (see TY-3). It stays loaded for the storefront.
 
 **TY-2.** Body micro-settings are global and set once in `globals.css` (`font-feature-settings: 'ss01','cv11'`, `-webkit-font-smoothing: antialiased`). The admin base stays `[data-surface='admin'] { font-size: 13px; line-height: 1.45 }`. Do not restate either.
 
-**TY-3 — the mono rule.** CLAUDE.md §2.6 is upheld and extended, **with one deletion**.
+**TY-3 — no monospace in the admin.** *Superseded 2026-11-11.* The earlier TY-3 made mono mandatory for table headers, eyebrows and every machine value, and TY-4 governed the `.mono` class. The owner rejected mono for the admin outright: across ~800 call sites it made a working tool read like a terminal. The admin now follows the Bazar admin — **one UI family, Geist** — and the roles mono used to carry move as follows:
 
-**Mono is mandatory for:**
-1. Table column headers (LT-7).
-2. Eyebrows and sidebar / dropdown group labels (NAV-3, FE-9, CT-11).
-3. Every machine-authored **value**: SKU, part number, RFQ/quote reference, UUID and target id, slug, URL path, database table/column name, API key prefix, ISO timestamp, byte size, position/ordinal, quantity, price, pressure, and count chips in tabs and trays.
-4. Multi-line preformatted blocks, via the `.mono` class.
+| Role (old: mono) | Now |
+|---|---|
+| Eyebrow, sidebar / dropdown group label, table column header | Geist, 10.5–11px, 500, uppercase, `tracking-[0.08em]`–`[0.1em]`, muted ink |
+| SKU, part number, RFQ / quote reference, slug, URL path, UUID, table / column name | Geist, `tabular-nums`, muted or ink-2 — identity comes from position and colour, not from a second family |
+| Count chips, quantities, prices, pressures, byte sizes, ISO dates, ordinals | Geist + `tabular-nums` |
+| Status pill labels, relative timestamps, buttons, tabs, labels, nav items | Geist (these were already meant to be sans) |
+| Preformatted blocks (JSON-LD preview, diffs, `<code>`) | Geist; distinguish with a `bg-ih-surface-2` well and padding, not a font |
 
-**Mono is banned for:**
+**Enforcement — do not undo either layer.**
+1. `apps/web/src/lib/admin-no-mono.test.ts` fails the build on `font-mono`, the `.mono` class, `--font-mono` / `--font-jetbrains-mono`, or a `monospace` / JetBrains stack anywhere under `app/admin` or `components/admin`.
+2. `globals.css` re-points `--font-mono` and `--default-mono-font-family` to Geist under `:root:has([data-surface='admin'])`. Shared `packages/ui` primitives (StatusPill, NavTabs, KpiTile, DataTable, …) and globals classes (`.eyebrow`, `.ih-editor code`) keep naming the mono token for the storefront; on an admin page the token resolves to Geist, including in portalled dialogs, menus and toasts. Never fork a primitive just to drop mono for the admin.
 
-5. **Status pill labels.** *This is the deletion from §2.6.* "Published", "Draft", "Quote sent" are human words describing a state, not machine values — and at 11px inside a fixed 22px pill, mono's wider figures and tighter cap-height break the pill's geometry against its sans neighbours. **`packages/ui/src/StatusPill.tsx` — currently `font-mono font-semibold` — must change.**
-6. **Relative timestamps** ("2d ago") — prose *about* a value, not the value.
-7. Page titles, form labels, hints, errors, nav items, **button labels**, tab labels, breadcrumbs, prose, empty-state copy, toast copy, and row-action links.
-
-There are **746 `font-mono` occurrences across 90 admin files**. A large fraction are labels, buttons and tabs — human words — and the effect is that the admin reads as a terminal rather than as a console.
-
-**TY-4.** `.mono` sets family and `font-feature-settings: 'tnum'` **only** — never `letter-spacing`. `globals.css` documents why at length: pinning `letter-spacing: 0` silently killed the tracking on every eyebrow that also carried `.mono`, because the class is unlayered and beats the utility. **Use the `.mono` class, never a bare `font-mono` utility**, so there is one entry point.
+The recipes in this document have been rewritten to `tabular-nums`. Anywhere a recipe or older note still says mono (LT-7, NAV-3, FE-9, CT-11, KPI labels), read **Geist + `tabular-nums`** with the same size, weight, case and tracking.
 
 **TY-5.** `.serif` is for display numerals and card/section headings only. Never for UI labels, table content or form copy. Confining it is what keeps it a signal.
 
@@ -804,7 +801,7 @@ inline-flex items-center h-[22px] px-2 rounded-full text-[11px] font-medium
 ```
 Sans (TY-3.5), `font-medium` (TY-7), plus a fill/ink token pair. Written as **one primitive with a `tone` prop** — never an inline class string, never a per-page local map.
 
-The admin currently ships roughly **thirty** hand-rolled pill implementations at eleven different geometries, none of them `rounded-full`, almost all `font-mono font-semibold`, most drawing their colours from a page-local raw-`oklch()` map. Two of those maps (`TIER_COLORS`, `STATUS_COLORS`) are byte-identical duplicates between `customers/page.tsx` and `customers/[id]/page.tsx`.
+The admin currently ships roughly **thirty** hand-rolled pill implementations at eleven different geometries, none of them `rounded-full`, almost all `tabular-nums font-semibold`, most drawing their colours from a page-local raw-`oklch()` map. Two of those maps (`TIER_COLORS`, `STATUS_COLORS`) are byte-identical duplicates between `customers/page.tsx` and `customers/[id]/page.tsx`.
 
 **CS-7.** A denser variant — `h-[20px] px-2 rounded-full text-[10.5px] font-medium` — is permitted **only** inside a rail publish card's `<dl>` (FE-13) and on card-list rows (LT-20).
 
@@ -928,7 +925,7 @@ A disabled button with no adjacent explanation is a dead end.
 A **ring rather than a border** keeps the 1px hairline outside the padding box, so items sit flush to the edge. `align="end"` keeps a right-hand row kebab's menu inside the table.
 
 **CT-11.** Item: `relative flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-[14px] outline-hidden select-none`, focus `bg-ih-surface-2 text-ih-ink`, `data-disabled:pointer-events-none data-disabled:opacity-50`, icons 16px.
-Group label: `px-1.5 py-1 font-mono text-[10.5px] font-medium uppercase tracking-[0.08em] text-ih-muted-2`.
+Group label: `px-1.5 py-1 tabular-nums text-[10.5px] font-medium uppercase tracking-[0.08em] text-ih-muted-2`.
 Separator: `-mx-1 my-1 h-px bg-ih-border`.
 Destructive item: a `variant="destructive"` **prop on the item** — `text-ih-danger`, focus `bg-ih-danger-soft text-ih-danger`. Never a `className` override at the call site.
 
@@ -1005,7 +1002,7 @@ with `<Check size={12} strokeWidth={1.8} />`. One component. The "Saved at {time
 The dialog must:
 1. Carry `<AlertTriangle size={16} strokeWidth={1.8} className="text-ih-danger" />` in the title.
 2. Name the **exact database effect** in `.mono` — `status=archived`, `deleted_at=now()`.
-3. Preview the affected records — `<ul className="mt-2 flex flex-col gap-1 text-[13px]">` of `<li className="mono text-ih-ink-2">`, capped at 5, then `<li className="text-[12px] text-ih-muted">+{n} more</li>`.
+3. Preview the affected records — `<ul className="mt-2 flex flex-col gap-1 text-[13px]">` of `<li className="tabular-nums text-ih-ink-2">`, capped at 5, then `<li className="text-[12px] text-ih-muted">+{n} more</li>`.
 4. Count and state cascade fallout **before** the fact.
 5. Require an exact string — a fixed word (`ARCHIVE`, `DELETE`) for bulk, or the record's own name for a single delete — via `<Input className="mt-1 mono" autoComplete="off" spellCheck={false} />` under a `text-[12px] text-ih-muted` label.
 6. Keep the confirm `disabled={pending || !phraseOk}`, `kind="danger"`.
@@ -1123,7 +1120,7 @@ These are CLAUDE.md §10 applied to this surface. They are not optional and they
 | **§10.3** | "v2 focus-visible is `box-shadow: 0 0 0 3px var(--color-accent-soft)` plus `border-color: var(--color-accent)`." | "v2 focus-visible is `focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft`, with `aria-invalid:border-ih-danger aria-invalid:ring-[3px] aria-invalid:ring-ih-danger-soft`." | **`--color-accent-soft` and `--color-accent` do not exist** — the tokens are `--color-ih-accent-soft` and `--color-ih-accent`. As written, the rule instructs contributors to produce a declaration that computes to `unset`. This is a real bug in the house rules, not a wording preference. |
 | **§10.8** | "Minimum hit target is 40px on the storefront. The 32px small button is permitted only inside dense admin tables and card footers where the surrounding row is itself ≥40px." | "Minimum hit target is 40px on the storefront. **32px is the default control height across the whole admin surface** — inputs, selects, buttons and filter controls alike. Mobile admin chrome keeps 48px tab targets." | FE-6. Bazar's admin runs entirely on 32px, and mixing 32 / 36 / 40 breaks every `flex items-center` control row — which is precisely the state of the tree today. |
 | **`Button.tsx` doc** | "`outline`'s hover is NOT a grey hover… it is the one place the language lets a secondary control reach for the signal colour." | "`outline`'s hover is a grey step: `bg-ih-surface-2` + `text-ih-ink`." | CT-6. |
-| **`StatusPill.tsx`** | `inline-flex items-center font-mono font-semibold capitalize tracking-tight` + `px/py` sizing at 9/10/11px, tones as raw `oklch()` | `inline-flex items-center h-[22px] px-2 rounded-full text-[11px] font-medium`, sans, tones from the `-soft`/`-ink` token pairs | CS-6 + TY-3.5 + TY-7. |
+| **`StatusPill.tsx`** | `inline-flex items-center tabular-nums font-semibold capitalize tracking-tight` + `px/py` sizing at 9/10/11px, tones as raw `oklch()` | `inline-flex items-center h-[22px] px-2 rounded-full text-[11px] font-medium`, sans, tones from the `-soft`/`-ink` token pairs | CS-6 + TY-3.5 + TY-7. |
 | **`Field.tsx`** | `Label` = `mb-1.5 block text-xs font-medium text-ih-ink-2`; `Hint`/`ErrorText` carry `mt-[5px]`; `Input`/`Select` are `h-10 rounded-md text-[13.5px]` on `bg-ih-surface` | `Label` = `flex items-center gap-2 text-[14px] font-medium leading-none text-ih-ink` inside a `flex flex-col gap-1.5` stack; `Hint`/`ErrorText` drop their margins (the stack gap owns them); controls become `h-8 rounded-lg` on `bg-transparent`, input `text-[16px] md:text-[14px]` | FE-4, FE-6. |
 | **`Table.tsx`** | `TableHead` `py-[11px] text-ih-muted`; `TableCell` `py-3.5`; `Table` renders no bordered container | `TableHead` `py-3 text-ih-muted-2`; `TableCell` `py-3`; `Table` renders the `rounded-lg border border-ih-border bg-ih-surface overflow-x-auto` shell | LT-5, LT-7, LT-8. |
 

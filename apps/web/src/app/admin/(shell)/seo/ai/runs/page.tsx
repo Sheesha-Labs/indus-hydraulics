@@ -58,7 +58,7 @@ export default async function AiRunsPage() {
                 key={row.id}
                 className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2 align-top"
               >
-                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted whitespace-nowrap">
+                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
                   {row.createdAt.toLocaleString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -69,13 +69,13 @@ export default async function AiRunsPage() {
                 <td className="px-3 py-3 text-[12px] text-ih-ink-2">
                   {actorName ?? <span className="text-ih-muted">system</span>}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px]">
+                <td className="px-3 py-3 tabular-nums text-[11px]">
                   <div>{row.entityType}</div>
                   <div className="text-ih-muted text-[11px] truncate max-w-[160px]">
                     {row.entityId}
                   </div>
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-ih-ink-2">
+                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-ink-2">
                   {row.field}
                 </td>
                 <td className="px-3 py-3 text-[12px] max-w-[360px] whitespace-pre-wrap break-words">
@@ -84,10 +84,10 @@ export default async function AiRunsPage() {
                 <td className="px-3 py-3">
                   <StatusPill status={row.status} />
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted tabular-nums whitespace-nowrap">
+                <td className="px-3 py-3 text-[11px] text-ih-muted tabular-nums whitespace-nowrap">
                   ${(row.costUsdMicros / 1_000_000).toFixed(4)}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted tabular-nums">
+                <td className="px-3 py-3 text-[11px] text-ih-muted tabular-nums">
                   {row.cacheHitRatio !== null
                     ? `${(row.cacheHitRatio * 100).toFixed(0)}%`
                     : '—'}
@@ -111,7 +111,7 @@ function StatusPill({ status }: { status: string }) {
           ? 'text-ih-muted bg-ih-surface-2'
           : 'text-ih-warning-ink bg-ih-warning-soft'
   return (
-    <span className={`inline-block px-2 py-0.5 font-mono text-[10.5px] uppercase tracking-wider ${tone}`}>
+    <span className={`inline-block px-2 py-0.5 tabular-nums text-[10.5px] uppercase tracking-wider ${tone}`}>
       {status}
     </span>
   )
@@ -119,7 +119,7 @@ function StatusPill({ status }: { status: string }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

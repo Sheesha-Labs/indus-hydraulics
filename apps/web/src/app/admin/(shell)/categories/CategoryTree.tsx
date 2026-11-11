@@ -222,17 +222,17 @@ export default function CategoryTree({
       <DragOverlay>
         {activeRow ? (
           <div className="flex items-center gap-2 rounded-[6px] border border-ih-accent bg-ih-surface px-3 py-2 text-[13px] font-medium text-ih-ink shadow-lg">
-            <span aria-hidden="true" className="font-mono text-[11px] text-ih-muted-2">
+            <span aria-hidden="true" className="tabular-nums text-[11px] text-ih-muted-2">
               ⠿
             </span>
             {activeRow.node.name}
             {activeRow.hasChildren && (
-              <span className="font-mono text-[11px] text-ih-muted">
+              <span className="tabular-nums text-[11px] text-ih-muted">
                 +{descendantIds(categories, activeRow.node.id).length}
               </span>
             )}
             {projection && (
-              <span className="font-mono text-[11px] text-ih-accent">
+              <span className="tabular-nums text-[11px] text-ih-accent">
                 → level {projection.depth + 1}
                 {projection.depth >= MAX_CATEGORY_DEPTH ? ' (max)' : ''}
               </span>
@@ -333,7 +333,7 @@ function CategoryRow({
             ? 'Clear the search to rearrange categories'
             : 'Drag to reorder · drag sideways to re-nest'
         }
-        className="shrink-0 cursor-grab px-1 font-mono text-[12px] text-ih-muted-2 hover:text-ih-ink disabled:cursor-not-allowed disabled:opacity-30"
+        className="shrink-0 cursor-grab px-1 tabular-nums text-[12px] text-ih-muted-2 hover:text-ih-ink disabled:cursor-not-allowed disabled:opacity-30"
       >
         ⠿
       </button>
@@ -354,7 +354,7 @@ function CategoryRow({
           type="button"
           onClick={() => onToggleCollapse(cat.id)}
           aria-label={collapsed ? `Expand ${cat.name}` : `Collapse ${cat.name}`}
-          className="h-5 w-5 shrink-0 rounded-[4px] font-mono text-[10px] text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink"
+          className="h-5 w-5 shrink-0 rounded-[4px] tabular-nums text-[10px] text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink"
         >
           {collapsed ? '▸' : '▾'}
         </button>
@@ -365,18 +365,18 @@ function CategoryRow({
       <span className="min-w-0 flex-1 truncate text-[13px] font-medium text-ih-ink">
         {cat.name}
         {row.hasChildren && collapsed && (
-          <span className="ml-2 font-mono text-[11px] font-normal text-ih-muted-2">
+          <span className="ml-2 tabular-nums text-[11px] font-normal text-ih-muted-2">
             {cat.childCount} inside
           </span>
         )}
       </span>
 
-      <span className="hidden w-[190px] shrink-0 truncate font-mono text-[11px] text-ih-muted lg:block">
+      <span className="hidden w-[190px] shrink-0 truncate tabular-nums text-[11px] text-ih-muted lg:block">
         {cat.slug}
       </span>
 
       <span
-        className="w-[86px] shrink-0 text-right font-mono text-[11px] text-ih-ink-2"
+        className="w-[86px] shrink-0 text-right tabular-nums text-[11px] text-ih-ink-2"
         title={`${cat.productCount} directly in this category, ${rolledUp} including sub-categories`}
       >
         {cat.productCount}
@@ -396,12 +396,12 @@ function CategoryRow({
           <Link
             href="/admin/navigation"
             title="Live, but no megamenu item links to it — customers cannot click through to this category"
-            className="font-mono text-[10.5px] text-ih-warning-ink hover:underline"
+            className="tabular-nums text-[10.5px] text-ih-warning-ink hover:underline"
           >
             no menu
           </Link>
         ) : (
-          <span aria-hidden="true" className="font-mono text-[11px] text-ih-muted-2">
+          <span aria-hidden="true" className="tabular-nums text-[11px] text-ih-muted-2">
             —
           </span>
         )}

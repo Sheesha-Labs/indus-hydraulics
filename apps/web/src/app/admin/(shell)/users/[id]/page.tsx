@@ -84,7 +84,7 @@ export default async function EditUserPage({ params }: Props) {
 
         <form action={saveUser} className="flex flex-col gap-5">
           <div>
-            <label htmlFor="user-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="user-name" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name
             </label>
             <Input
@@ -96,7 +96,7 @@ export default async function EditUserPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="user-email" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="user-email" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Email Address
             </label>
             <Input
@@ -108,7 +108,7 @@ export default async function EditUserPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="user-password" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="user-password" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               New Password <span className="normal-case text-ih-muted-2">(leave blank to keep current)</span>
             </label>
             <Input
@@ -119,7 +119,7 @@ export default async function EditUserPage({ params }: Props) {
           </div>
 
           <div>
-            <label htmlFor="user-role" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="user-role" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Role
             </label>
             <Select
@@ -149,13 +149,13 @@ export default async function EditUserPage({ params }: Props) {
           <div className="flex items-center gap-3 pt-2 border-t border-ih-border">
             <button
               type="submit"
-              className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover"
+              className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover"
             >
               Save Changes
             </button>
             <Link
               href="/admin/users"
-              className="rounded-md h-9 px-4 flex items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+              className="rounded-md h-9 px-4 flex items-center border border-ih-border tabular-nums text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
             >
               Cancel
             </Link>
@@ -163,14 +163,14 @@ export default async function EditUserPage({ params }: Props) {
         </form>
 
         <div className="mt-8 pt-6 border-t border-ih-border">
-          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
             Danger Zone
           </p>
           {user.isActive ? (
             <form action={deactivateUser}>
               <button
                 type="submit"
-                className="rounded-md h-9 px-4 border border-ih-danger font-mono text-[12px] text-ih-danger hover:bg-[var(--color-ih-danger)] hover:text-white transition-colors"
+                className="rounded-md h-9 px-4 border border-ih-danger tabular-nums text-[12px] text-ih-danger hover:bg-[var(--color-ih-danger)] hover:text-white transition-colors"
               >
                 Deactivate Account
               </button>
@@ -179,7 +179,7 @@ export default async function EditUserPage({ params }: Props) {
             <form action={activateUser}>
               <button
                 type="submit"
-                className="rounded-md h-9 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+                className="rounded-md h-9 px-4 border border-ih-border tabular-nums text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
               >
                 Reactivate Account
               </button>

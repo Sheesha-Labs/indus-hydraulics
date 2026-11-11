@@ -86,14 +86,14 @@ export default function BlogPublishCard({
 
   return (
     <div className="flex flex-col gap-4 rounded-lg border border-ih-border bg-ih-surface p-5">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
         Publish
       </div>
 
       <dl className="flex flex-col gap-2 text-[12.5px]">
         <Row label="Status">
           <span
-            className={`rounded-full px-2 py-0.5 font-mono text-[11px] font-medium ${STATUS_STYLE[status]}`}
+            className={`rounded-full px-2 py-0.5 tabular-nums text-[11px] font-medium ${STATUS_STYLE[status]}`}
           >
             {STATUS_LABEL[status]}
           </span>
@@ -141,7 +141,7 @@ export default function BlogPublishCard({
               href={publicUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-1 pt-0.5 text-center font-mono text-[11.5px] text-ih-accent hover:underline"
+              className="flex items-center justify-center gap-1 pt-0.5 text-center tabular-nums text-[11.5px] text-ih-accent hover:underline"
             >
               View on the site
               <ExternalLink size={11} />

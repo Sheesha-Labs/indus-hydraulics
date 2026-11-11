@@ -83,7 +83,7 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
         </Field>
 
         <fieldset className="rounded-lg border border-ih-border p-4 flex flex-col gap-3">
-          <legend className="text-[11px] font-mono uppercase tracking-[0.1em] text-ih-muted px-2">
+          <legend className="text-[11px] tabular-nums uppercase tracking-[0.1em] text-ih-muted px-2">
             Specialist card
           </legend>
           <p className="text-[11px] text-ih-muted">
@@ -123,7 +123,7 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
         </fieldset>
 
         <fieldset className="rounded-lg border border-ih-border p-4 flex flex-col gap-3">
-          <legend className="text-[11px] font-mono uppercase tracking-[0.1em] text-ih-muted px-2">
+          <legend className="text-[11px] tabular-nums uppercase tracking-[0.1em] text-ih-muted px-2">
             Stats row
           </legend>
           <p className="text-[11px] text-ih-muted">
@@ -270,15 +270,15 @@ function CaseStudyRow({
     <div className="rounded-lg border border-ih-border bg-ih-surface-2 p-4 flex items-start justify-between gap-4">
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1">
-          <span className="font-mono text-[10.5px] tracking-[0.08em] uppercase text-ih-muted">
+          <span className="tabular-nums text-[10.5px] tracking-[0.08em] uppercase text-ih-muted">
             {caseStudy.tag}
           </span>
           {!caseStudy.isPublished && (
-            <span className="font-mono text-[10.5px] px-1.5 py-0.5 bg-ih-bg text-ih-muted">
+            <span className="tabular-nums text-[10.5px] px-1.5 py-0.5 bg-ih-bg text-ih-muted">
               DRAFT
             </span>
           )}
-          <span className="font-mono text-[11px] text-ih-muted">
+          <span className="tabular-nums text-[11px] text-ih-muted">
             #{caseStudy.position}
           </span>
         </div>
@@ -385,7 +385,7 @@ function CaseStudyForm({
           defaultValue={existing?.stats ?? '[]'}
           rows={3}
           spellCheck={false}
-          className="rounded-md w-full px-3 py-2 border border-ih-border text-[12px] font-mono resize-vertical"
+          className="rounded-md w-full px-3 py-2 border border-ih-border text-[12px] tabular-nums resize-vertical"
         />
       </Field>
       <Field label="Image media ID" hint="Optional UUID from the media library.">
@@ -393,7 +393,7 @@ function CaseStudyForm({
           name="imageId"
           defaultValue={existing?.imageId ?? ''}
           placeholder="leave empty for no image"
-          className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
+          className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px] tabular-nums"
         />
       </Field>
 

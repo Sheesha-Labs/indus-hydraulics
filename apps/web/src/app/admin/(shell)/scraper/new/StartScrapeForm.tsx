@@ -57,7 +57,7 @@ export default function StartScrapeForm() {
           name="urlListText"
           rows={6}
           placeholder={'https://competitor.example/products/a10vso-71\nhttps://competitor.example/products/a4vg-125\n…'}
-          className="rounded-md w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] font-mono focus:outline-none focus:ring-2 focus:ring-ih-accent"
+          className="rounded-md w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] tabular-nums focus:outline-none focus:ring-2 focus:ring-ih-accent"
         />
       </Field>
 
@@ -83,7 +83,7 @@ export default function StartScrapeForm() {
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] tracking-wider uppercase disabled:opacity-50"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] tracking-wider uppercase disabled:opacity-50"
         >
           {pending ? 'Starting…' : 'Start crawl'}
         </button>
@@ -108,7 +108,7 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-mono tracking-wider uppercase text-ih-muted">
+      <span className="text-[12px] tabular-nums tracking-wider uppercase text-ih-muted">
         {label}
       </span>
       {children}

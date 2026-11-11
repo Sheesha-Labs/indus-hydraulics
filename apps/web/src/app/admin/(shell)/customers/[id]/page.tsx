@@ -131,16 +131,16 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
     // other admin page has.
     <AdminPageShell
       title={account.legalName}
-      sub={<span className="font-mono">{account.code}</span>}
+      sub={<span className="tabular-nums">{account.code}</span>}
       actions={
         <>
           {/* Tier and status qualify the account; they are not buttons, but
               dropping them would remove the at-a-glance state this page
               exists to show. */}
-          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-medium capitalize ${TIER_COLORS[account.tier] ?? ''}`}>
+          <span className={`rounded-md px-2.5 py-1 tabular-nums text-[11px] font-medium capitalize ${TIER_COLORS[account.tier] ?? ''}`}>
             {account.tier}
           </span>
-          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-medium capitalize ${STATUS_COLORS[account.status] ?? ''}`}>
+          <span className={`rounded-md px-2.5 py-1 tabular-nums text-[11px] font-medium capitalize ${STATUS_COLORS[account.status] ?? ''}`}>
             {account.status.replace('_', ' ')}
           </span>
           <Link
@@ -159,7 +159,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
           <Link
             key={t.key}
             href={tabUrl(t.key)}
-            className={`px-4 py-2.5 font-mono text-[12px] border-b-2 transition-colors -mb-px ${
+            className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 transition-colors -mb-px ${
               tab === t.key
                 ? 'border-ih-accent text-ih-accent'
                 : 'border-transparent text-ih-muted hover:text-ih-ink'
@@ -183,7 +183,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             <input type="hidden" name="id" value={account.id} />
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
-                <label htmlFor="customer-tier" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
+                <label htmlFor="customer-tier" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
                 <Select
                   id="customer-tier" name="tier" defaultValue={account.tier}>
                   {['bronze', 'silver', 'gold', 'platinum'].map((t) => (
@@ -192,7 +192,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 </Select>
               </div>
               <div>
-                <label htmlFor="customer-status" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
+                <label htmlFor="customer-status" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
                 <Select
                   id="customer-status" name="status" defaultValue={account.status}>
                   {['prospect', 'active', 'at_risk', 'archived'].map((s) => (
@@ -201,7 +201,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 </Select>
               </div>
               <div>
-                <label htmlFor="customer-assignedRepId" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
+                <label htmlFor="customer-assignedRepId" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
                 <Select
                   id="customer-assignedRepId" name="assignedRepId" defaultValue={account.assignedRepId ?? ''}>
                   <option value="">— Unassigned —</option>
@@ -211,17 +211,17 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 </Select>
               </div>
               <div>
-                <label htmlFor="customer-paymentTermsDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
+                <label htmlFor="customer-paymentTermsDays" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
                 <Input
-                  id="customer-paymentTermsDays" type="number" name="paymentTermsDays" defaultValue={account.paymentTermsDays} min={0} className="font-mono" />
+                  id="customer-paymentTermsDays" type="number" name="paymentTermsDays" defaultValue={account.paymentTermsDays} min={0} className="tabular-nums" />
               </div>
               <div>
-                <label htmlFor="customer-creditLimit" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
+                <label htmlFor="customer-creditLimit" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
                 <Input
-                  id="customer-creditLimit" type="number" name="creditLimit" defaultValue={Number(account.creditLimit)} min={0} step={1000} className="font-mono" />
+                  id="customer-creditLimit" type="number" name="creditLimit" defaultValue={Number(account.creditLimit)} min={0} step={1000} className="tabular-nums" />
               </div>
             </div>
-            <button type="submit" className="h-10 px-6 bg-ih-navy text-ih-bg font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
+            <button type="submit" className="h-10 px-6 bg-ih-navy text-ih-bg tabular-nums text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
               Save Changes
             </button>
           </form>
@@ -229,31 +229,31 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
           {/* Stats sidebar */}
           <div className="flex flex-col gap-4">
             <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-              <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account Stats</h3>
+              <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account Stats</h3>
               <dl className="flex flex-col gap-2 text-[13px]">
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Industry</dt>
-                  <dd className="font-mono text-ih-ink">{account.industry?.name ?? '—'}</dd>
+                  <dd className="tabular-nums text-ih-ink">{account.industry?.name ?? '—'}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Region</dt>
-                  <dd className="font-mono text-ih-ink">{account.region ?? '—'}</dd>
+                  <dd className="tabular-nums text-ih-ink">{account.region ?? '—'}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Currency</dt>
-                  <dd className="font-mono text-ih-ink">{account.preferredCurrency}</dd>
+                  <dd className="tabular-nums text-ih-ink">{account.preferredCurrency}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Credit outstanding</dt>
-                  <dd className="font-mono text-ih-ink">USD {Number(account.creditOutstanding).toLocaleString()}</dd>
+                  <dd className="tabular-nums text-ih-ink">USD {Number(account.creditOutstanding).toLocaleString()}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Avg DSO</dt>
-                  <dd className="font-mono text-ih-ink">{account.avgDsoDays} days</dd>
+                  <dd className="tabular-nums text-ih-ink">{account.avgDsoDays} days</dd>
                 </div>
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Member since</dt>
-                  <dd className="font-mono text-ih-ink">{new Date(account.createdAt).toLocaleDateString()}</dd>
+                  <dd className="tabular-nums text-ih-ink">{new Date(account.createdAt).toLocaleDateString()}</dd>
                 </div>
               </dl>
             </div>
@@ -270,7 +270,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             </div>
           ) : (
             <div className="overflow-hidden rounded-lg border border-ih-border">
-              <div className="grid grid-cols-[1fr_80px_130px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+              <div className="grid grid-cols-[1fr_80px_130px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Reference</div>
                 <div className="text-center">Lines</div>
                 <div className="text-center">Status</div>
@@ -283,16 +283,16 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                   className={`grid grid-cols-[1fr_80px_130px_100px] px-4 py-3 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
                 >
                   <div>
-                    <div className="font-mono text-[13px] font-medium">{rfq.code}</div>
+                    <div className="tabular-nums text-[13px] font-medium">{rfq.code}</div>
                     {rfq.subject && <div className="text-[12px] text-ih-muted truncate max-w-[280px]">{rfq.subject}</div>}
                   </div>
-                  <div className="text-center font-mono text-[13px]">{rfq.lines.length}</div>
+                  <div className="text-center tabular-nums text-[13px]">{rfq.lines.length}</div>
                   <div className="flex justify-center">
-                    <span className="px-2 py-0.5 font-mono text-[11px] bg-ih-bg text-ih-muted">
+                    <span className="px-2 py-0.5 tabular-nums text-[11px] bg-ih-bg text-ih-muted">
                       {RFQ_STATUS_LABELS[rfq.status] ?? rfq.status}
                     </span>
                   </div>
-                  <div className="text-right font-mono text-[12px] text-ih-muted">
+                  <div className="text-right tabular-nums text-[12px] text-ih-muted">
                     {new Date(rfq.createdAt).toLocaleDateString()}
                   </div>
                 </Link>
@@ -306,7 +306,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {tab === 'contacts' && (
         <div>
           <div className="overflow-hidden rounded-lg border border-ih-border mb-4">
-            <div className="grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               <div>Contact</div>
               <div>Role</div>
               <div>Last Sign-in</div>
@@ -317,14 +317,14 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               <div key={c.id} className={`grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-3 items-center bg-ih-surface ${i > 0 ? 'border-t border-ih-border' : ''}`}>
                 <div>
                   <div className="text-[13px] font-medium">{c.firstName} {c.lastName}</div>
-                  <div className="font-mono text-[11px] text-ih-muted">{c.email}</div>
+                  <div className="tabular-nums text-[11px] text-ih-muted">{c.email}</div>
                 </div>
-                <div className="font-mono text-[11px] text-ih-muted capitalize">{c.role}</div>
-                <div className="font-mono text-[11px] text-ih-muted">
+                <div className="tabular-nums text-[11px] text-ih-muted capitalize">{c.role}</div>
+                <div className="tabular-nums text-[11px] text-ih-muted">
                   {c.lastSignInAt ? new Date(c.lastSignInAt).toLocaleDateString() : 'Never'}
                 </div>
                 <div className="flex justify-center">
-                  <span className={`px-2 py-0.5 font-mono text-[11px] ${c.isActive ? 'text-ih-success-ink bg-ih-success-soft' : 'text-ih-muted bg-ih-surface-2'}`}>
+                  <span className={`px-2 py-0.5 tabular-nums text-[11px] ${c.isActive ? 'text-ih-success-ink bg-ih-success-soft' : 'text-ih-muted bg-ih-surface-2'}`}>
                     {c.isActive ? 'Active' : 'Inactive'}
                   </span>
                 </div>
@@ -334,7 +334,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       'use server'
                       await deactivateContact(c.id, account.id)
                     }}>
-                      <button type="submit" className="font-mono text-[11px] text-ih-muted hover:text-ih-danger transition-colors">
+                      <button type="submit" className="tabular-nums text-[11px] text-ih-muted hover:text-ih-danger transition-colors">
                         Deactivate
                       </button>
                     </form>
@@ -343,7 +343,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       'use server'
                       await reactivateContact(c.id, account.id)
                     }}>
-                      <button type="submit" className="font-mono text-[11px] text-ih-accent hover:underline">
+                      <button type="submit" className="tabular-nums text-[11px] text-ih-accent hover:underline">
                         Reactivate
                       </button>
                     </form>
@@ -369,16 +369,16 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-[13px] font-medium">{addr.label}</span>
-                      <span className="font-mono text-[11px] px-1.5 py-0.5 bg-ih-bg text-ih-muted capitalize">
+                      <span className="tabular-nums text-[11px] px-1.5 py-0.5 bg-ih-bg text-ih-muted capitalize">
                         {addr.kind.replace('_', '-')}
                       </span>
                       {addr.isDefaultShip && (
-                        <span className="font-mono text-[11px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success-ink">
+                        <span className="tabular-nums text-[11px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success-ink">
                           Default Ship
                         </span>
                       )}
                       {addr.isDefaultBill && (
-                        <span className="font-mono text-[11px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success-ink">
+                        <span className="tabular-nums text-[11px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success-ink">
                           Default Bill
                         </span>
                       )}
@@ -387,25 +387,25 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                     {(addr.lines as string[]).map((l, i) => <div key={i} className="text-[13px]">{l}</div>)}
                     <div className="text-[13px]">{addr.city}{addr.region ? `, ${addr.region}` : ''} {addr.postalCode}</div>
                     <div className="text-[13px]">{addr.countryCode}</div>
-                    {addr.phone && <div className="font-mono text-[11px] text-ih-muted mt-1">{addr.phone}</div>}
+                    {addr.phone && <div className="tabular-nums text-[11px] text-ih-muted mt-1">{addr.phone}</div>}
                   </div>
                   <div className="text-right shrink-0">
                     {account.requiresAddressApproval && !addr.approvedAt ? (
                       <div className="flex flex-col items-end gap-2">
-                        <span className="font-mono text-[11px] px-2 py-0.5 bg-ih-warning-soft text-[oklch(0.5_0.08_60)]">
+                        <span className="tabular-nums text-[11px] px-2 py-0.5 bg-ih-warning-soft text-[oklch(0.5_0.08_60)]">
                           Pending Approval
                         </span>
                         <form action={async () => {
                           'use server'
                           await approveAddress(addr.id, account.id)
                         }}>
-                          <button type="submit" className="font-mono text-[11px] text-ih-accent hover:underline">
+                          <button type="submit" className="tabular-nums text-[11px] text-ih-accent hover:underline">
                             Approve →
                           </button>
                         </form>
                       </div>
                     ) : addr.approvedAt ? (
-                      <div className="font-mono text-[11px] text-ih-muted">
+                      <div className="tabular-nums text-[11px] text-ih-muted">
                         Approved {new Date(addr.approvedAt).toLocaleDateString()}
                       </div>
                     ) : null}
@@ -426,7 +426,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             </p>
           ) : (
             <div className="rounded-lg border border-ih-border bg-ih-surface">
-              <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+              <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <span>Sent</span>
                 <span>Kind</span>
                 <span>Subject &amp; recipient</span>
@@ -451,7 +451,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                     key={e.id}
                     className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-3 border-b border-ih-border last:border-0 items-start text-[12px]"
                   >
-                    <span className="font-mono text-ih-muted">
+                    <span className="tabular-nums text-ih-muted">
                       {new Date(e.attemptedAt).toLocaleString('en-GB', {
                         day: '2-digit',
                         month: 'short',
@@ -460,7 +460,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                         minute: '2-digit',
                       })}
                     </span>
-                    <span className="font-mono text-[11px] text-ih-ink-2">
+                    <span className="tabular-nums text-[11px] text-ih-ink-2">
                       {e.kind.replace(/_/g, ' ')}
                     </span>
                     <div>
@@ -468,17 +468,17 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                         {e.subject}
                       </div>
                       {recipients.length > 0 && (
-                        <div className="font-mono text-[11px] text-ih-muted truncate">
+                        <div className="tabular-nums text-[11px] text-ih-muted truncate">
                           {recipients.join(', ')}
                         </div>
                       )}
                       {e.status === 'failed' && e.error && (
-                        <div className="font-mono text-[11px] text-ih-danger-ink mt-0.5 truncate" title={e.error}>
+                        <div className="tabular-nums text-[11px] text-ih-danger-ink mt-0.5 truncate" title={e.error}>
                           {e.error}
                         </div>
                       )}
                     </div>
-                    <span className="font-mono text-[11px]">
+                    <span className="tabular-nums text-[11px]">
                       {linkedRfqCode ? (
                         <Link
                           href={`/admin/rfqs/${linkedRfqCode}`}
@@ -491,7 +491,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       )}
                     </span>
                     <span
-                      className={`inline-block px-2 py-0.5 font-mono text-[11px] font-medium capitalize w-fit ${statusColor}`}
+                      className={`inline-block px-2 py-0.5 tabular-nums text-[11px] font-medium capitalize w-fit ${statusColor}`}
                     >
                       {e.status}
                     </span>
@@ -499,7 +499,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 )
               })}
               {totalEmailPages > 1 && (
-                <div className="px-4 py-2.5 border-t border-ih-border flex items-center justify-between gap-3 text-[11px] font-mono text-ih-muted">
+                <div className="px-4 py-2.5 border-t border-ih-border flex items-center justify-between gap-3 text-[11px] tabular-nums text-ih-muted">
                   <span>
                     Showing {(safeEmailsPage - 1) * EMAILS_PAGE_SIZE + 1}–
                     {Math.min(safeEmailsPage * EMAILS_PAGE_SIZE, sentEmailsTotal)} of {sentEmailsTotal}
@@ -558,7 +558,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               name="body"
               rows={3}
               placeholder="Add a note visible to all staff…" className="resize-none mb-2" />
-            <button type="submit" className="h-9 px-5 bg-ih-navy text-ih-bg font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
+            <button type="submit" className="h-9 px-5 bg-ih-navy text-ih-bg tabular-nums text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
               Add Note
             </button>
           </form>
@@ -569,15 +569,15 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               const payload = entry.payload as Record<string, unknown>
               return (
                 <div key={entry.id} className="flex gap-3">
-                  <div className="rounded-md w-8 h-8 border border-ih-border bg-ih-bg grid place-items-center font-mono text-[11px] text-ih-muted shrink-0 mt-0.5">
+                  <div className="rounded-md w-8 h-8 border border-ih-border bg-ih-bg grid place-items-center tabular-nums text-[11px] text-ih-muted shrink-0 mt-0.5">
                     {entry.actorType === 'staff' ? 'ST' : 'CT'}
                   </div>
                   <div className="flex-1 pb-3 border-b border-ih-border">
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="font-mono text-[11px] font-medium text-ih-ink capitalize">
+                      <span className="tabular-nums text-[11px] font-medium text-ih-ink capitalize">
                         {entry.verb.replace(/_/g, ' ')}
                       </span>
-                      <span className="font-mono text-[11px] text-ih-muted">
+                      <span className="tabular-nums text-[11px] text-ih-muted">
                         {new Date(entry.createdAt).toLocaleString()}
                       </span>
                     </div>
@@ -585,7 +585,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       <p className="text-[13px] text-ih-ink-2 leading-[1.5]">{payload.body}</p>
                     )}
                     {typeof payload.rfqId === 'string' && typeof payload.code === 'string' && (
-                      <p className="font-mono text-[12px] text-ih-muted">
+                      <p className="tabular-nums text-[12px] text-ih-muted">
                         RFQ: <Link href={`/admin/rfqs/${payload.code}`} className="text-ih-accent hover:underline">{payload.code}</Link>
                       </p>
                     )}

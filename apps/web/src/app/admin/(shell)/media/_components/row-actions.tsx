@@ -186,7 +186,7 @@ export function MediaRowActions({
               <DialogDescription>This cannot be undone.</DialogDescription>
             </DialogHeader>
             <DialogBody className="flex flex-col gap-2 text-[13px] text-ih-ink-2">
-              <p className="font-mono text-[12px] break-all">{detail.originalFilename}</p>
+              <p className="tabular-nums text-[12px] break-all">{detail.originalFilename}</p>
               <p>
                 The file is removed from storage and its record is deleted. Nothing currently
                 references it — {summariseUsage(detail.usages).toLowerCase()}.

@@ -108,6 +108,14 @@ This carries over from the live site, where H1s are long declarative sentences. 
 
 Mono is for machine-readable content: part numbers, SKUs, quantities, dates, durations, pressures, counts, statuses, eyebrows, table headers, breadcrumbs. Prose is never mono. A number inside a sentence is not mono; the same number in a stat tile is.
 
+> **Storefront only. The admin has no monospace** (owner decision, 2026-11-11, superseding this
+> section for the admin surface). Every mono role in this document — eyebrow, data/SKU, table
+> header, count chip, status — renders in **Geist** in the admin: labels as Geist uppercase with
+> tracking, values as Geist with `tabular-nums` (`font-variant-numeric: tabular-nums`) so figures
+> still align. This matches the Bazar admin. Enforced in code by
+> `apps/web/src/lib/admin-no-mono.test.ts` and the `:root:has([data-surface='admin'])` token
+> override in `globals.css`. See `docs/admin-design-language.md` TY-3.
+
 ---
 
 ## 4. Geometry

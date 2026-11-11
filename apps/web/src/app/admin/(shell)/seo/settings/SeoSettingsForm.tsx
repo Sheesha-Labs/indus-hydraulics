@@ -36,7 +36,7 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
   return (
     <form action={handleSave} className="max-w-[640px] flex flex-col gap-5">
       <div>
-        <label htmlFor="seosettings-defaultMetaTitleTemplate" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="seosettings-defaultMetaTitleTemplate" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Default Title Template
         </label>
         <Input
@@ -51,7 +51,7 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
       </div>
 
       <div>
-        <label htmlFor="seosettings-defaultMetaDescription" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="seosettings-defaultMetaDescription" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Default Meta Description
         </label>
         <Textarea
@@ -66,15 +66,15 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+          className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save Settings'}
         </button>
         {saved && (
-          <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
+          <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
         )}
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}

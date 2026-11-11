@@ -88,7 +88,7 @@ export default async function SuppliersPage() {
             key: 'origin',
             header: 'Source',
             cell: (row) => (
-              <span className="font-mono text-[12px] text-ih-ink-2">
+              <span className="tabular-nums text-[12px] text-ih-ink-2">
                 {ORIGIN_LABEL[row.origin] ?? row.origin}
               </span>
             ),
@@ -103,7 +103,7 @@ export default async function SuppliersPage() {
                   None
                 </StatusPill>
               ) : (
-                <span className="font-mono">{row._count.contacts}</span>
+                <span className="tabular-nums">{row._count.contacts}</span>
               ),
           },
           {
@@ -111,7 +111,7 @@ export default async function SuppliersPage() {
             header: 'RFQs / replies',
             numeric: true,
             cell: (row) => (
-              <span className="font-mono text-ih-ink-2">
+              <span className="tabular-nums text-ih-ink-2">
                 {row.rfqsSent} / {row.repliesReceived}
               </span>
             ),

@@ -156,20 +156,20 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
 
           <dl className="grid grid-cols-2 gap-x-6 gap-y-1 text-[13.5px] sm:grid-cols-4">
             <div>
-              <dt className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Addresses</dt>
-              <dd className="font-mono text-ih-ink">{preview.contacts.length.toLocaleString('en-US')}</dd>
+              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Addresses</dt>
+              <dd className="tabular-nums text-ih-ink">{preview.contacts.length.toLocaleString('en-US')}</dd>
             </div>
             <div>
-              <dt className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Not addresses</dt>
-              <dd className="font-mono text-ih-ink">{preview.invalid.length.toLocaleString('en-US')}</dd>
+              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Not addresses</dt>
+              <dd className="tabular-nums text-ih-ink">{preview.invalid.length.toLocaleString('en-US')}</dd>
             </div>
             <div>
-              <dt className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Duplicates</dt>
-              <dd className="font-mono text-ih-ink">{preview.duplicates.toLocaleString('en-US')}</dd>
+              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Duplicates</dt>
+              <dd className="tabular-nums text-ih-ink">{preview.duplicates.toLocaleString('en-US')}</dd>
             </div>
             <div>
-              <dt className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Over the limit</dt>
-              <dd className="font-mono text-ih-ink">{preview.truncated.toLocaleString('en-US')}</dd>
+              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Over the limit</dt>
+              <dd className="tabular-nums text-ih-ink">{preview.truncated.toLocaleString('en-US')}</dd>
             </div>
           </dl>
           <p className="text-[13px] text-ih-muted">
@@ -182,7 +182,7 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
               <table className="w-full text-[13px]">
                 <caption className="sr-only">First rows as they will be imported</caption>
                 <thead>
-                  <tr className="border-b border-ih-border bg-ih-surface-2 text-left font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+                  <tr className="border-b border-ih-border bg-ih-surface-2 text-left tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
                     <th className="px-3 py-2">Email</th>
                     <th className="px-3 py-2">Name</th>
                   </tr>
@@ -190,7 +190,7 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
                 <tbody>
                   {preview.contacts.slice(0, 5).map((c) => (
                     <tr key={c.email} className="border-b border-ih-border last:border-0">
-                      <td className="px-3 py-1.5 font-mono text-ih-ink">{c.email}</td>
+                      <td className="px-3 py-1.5 tabular-nums text-ih-ink">{c.email}</td>
                       <td className="px-3 py-1.5 text-ih-ink-2">{c.name || '—'}</td>
                     </tr>
                   ))}
@@ -204,7 +204,7 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
           {preview.invalid.length > 0 ? (
             <details className="text-[13px] text-ih-ink-2">
               <summary className="cursor-pointer">Rows that will be skipped ({preview.invalid.length})</summary>
-              <ul className="mt-2 max-h-48 overflow-y-auto font-mono text-[12px]">
+              <ul className="mt-2 max-h-48 overflow-y-auto tabular-nums text-[12px]">
                 {preview.invalid.slice(0, 200).map((i) => (
                   <li key={i.line}>
                     Row {i.line}: {i.reason}

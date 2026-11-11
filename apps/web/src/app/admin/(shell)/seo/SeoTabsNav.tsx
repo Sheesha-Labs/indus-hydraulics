@@ -27,7 +27,7 @@ export default function SeoTabsNav() {
           <Link
             key={tab.id}
             href={tab.path}
-            className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px transition-colors whitespace-nowrap ${
+            className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px transition-colors whitespace-nowrap ${
               active
                 ? 'border-ih-accent text-ih-ink'
                 : 'border-transparent text-ih-muted hover:text-ih-ink-2'

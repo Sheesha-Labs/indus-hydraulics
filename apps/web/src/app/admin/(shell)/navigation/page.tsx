@@ -88,12 +88,12 @@ export default async function NavigationHubPage() {
               <div className="flex items-center gap-2.5">
                 <h2 className="text-[15px] font-medium tracking-tight">{entry.title}</h2>
                 {entry.isPublished === false ? (
-                  <span className="rounded-full border border-ih-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+                  <span className="rounded-full border border-ih-border px-2 py-0.5 tabular-nums text-[10px] uppercase tracking-[0.1em] text-ih-muted">
                     Draft
                   </span>
                 ) : null}
                 {entry.count === null ? (
-                  <span className="rounded-full border border-ih-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+                  <span className="rounded-full border border-ih-border px-2 py-0.5 tabular-nums text-[10px] uppercase tracking-[0.1em] text-ih-muted">
                     Not created
                   </span>
                 ) : null}
@@ -108,7 +108,7 @@ export default async function NavigationHubPage() {
                 </p>
               ) : null}
               {entry.count !== null ? (
-                <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+                <p className="mt-2 tabular-nums text-[11px] uppercase tracking-[0.08em] text-ih-muted">
                   {entry.count} {entry.count === 1 ? 'item' : 'items'}
                 </p>
               ) : null}

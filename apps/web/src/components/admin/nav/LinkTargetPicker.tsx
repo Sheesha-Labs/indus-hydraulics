@@ -44,7 +44,7 @@ export default function LinkTargetPicker({ linkType, value, onChange }: Props) {
           <div className="flex-1 min-w-0">
             <div className="font-medium truncate">{value.label}</div>
             {value.sublabel ? (
-              <div className="font-mono text-[11px] text-ih-muted truncate">{value.sublabel}</div>
+              <div className="tabular-nums text-[11px] text-ih-muted truncate">{value.sublabel}</div>
             ) : null}
           </div>
           <button
@@ -87,7 +87,7 @@ export default function LinkTargetPicker({ linkType, value, onChange }: Props) {
                   >
                     <div className="font-medium">{r.label}</div>
                     {r.sublabel ? (
-                      <div className="font-mono text-[11px] text-ih-muted">{r.sublabel}</div>
+                      <div className="tabular-nums text-[11px] text-ih-muted">{r.sublabel}</div>
                     ) : null}
                   </button>
                 ))

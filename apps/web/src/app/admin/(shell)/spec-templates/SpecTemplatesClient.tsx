@@ -91,7 +91,7 @@ export default function SpecTemplatesClient({ templates }: Props) {
                     </div>
                   )}
                 </TableCell>
-                <TableCell className="font-mono text-[12px] text-ih-muted">{t.slug}</TableCell>
+                <TableCell className="tabular-nums text-[12px] text-ih-muted">{t.slug}</TableCell>
                 <TableCell numeric>{t.fieldCount}</TableCell>
                 <TableCell numeric>{t.productCount}</TableCell>
                 <TableCell numeric>{t.categoryCount}</TableCell>
@@ -145,7 +145,7 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
           <Input
             name="slug"
             placeholder="hydraulic-hose"
-          className="font-mono"
+          className="tabular-nums"
           />
         </Field>
       </div>
@@ -172,7 +172,7 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
           Cancel
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}

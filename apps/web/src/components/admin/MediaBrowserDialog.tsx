@@ -196,7 +196,7 @@ function BrowserBody({
                             className="h-full w-full object-cover"
                           />
                         ) : (
-                          <span className="text-ih-muted-2 grid h-full w-full place-items-center font-mono text-[10.5px] uppercase tracking-[0.1em]">
+                          <span className="text-ih-muted-2 grid h-full w-full place-items-center tabular-nums text-[10.5px] uppercase tracking-[0.1em]">
                             {m.kind}
                           </span>
                         )}

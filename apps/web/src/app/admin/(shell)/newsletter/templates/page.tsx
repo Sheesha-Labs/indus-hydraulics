@@ -50,7 +50,7 @@ export default async function NewsletterTemplatesPage() {
               key: 'by',
               header: 'Saved',
               cell: (t) => (
-                <span className="font-mono text-ih-ink-2">
+                <span className="tabular-nums text-ih-ink-2">
                   {t.updatedAt.toISOString().slice(0, 10)}
                   {t.createdBy ? ` · ${t.createdBy.name}` : ''}
                 </span>

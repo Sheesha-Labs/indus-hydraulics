@@ -73,7 +73,7 @@ export default async function NewUserPage() {
 
         <form id="new-staff-form" action={createUser} className="flex flex-col gap-5">
           <div>
-            <label htmlFor="newuser-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-name" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name
             </label>
             <Input
@@ -84,7 +84,7 @@ export default async function NewUserPage() {
           </div>
 
           <div>
-            <label htmlFor="newuser-email" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-email" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Email Address
             </label>
             <Input
@@ -95,7 +95,7 @@ export default async function NewUserPage() {
           </div>
 
           <div>
-            <label htmlFor="newuser-password" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-password" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Password
             </label>
             <Input
@@ -107,7 +107,7 @@ export default async function NewUserPage() {
           </div>
 
           <div>
-            <label htmlFor="newuser-role" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-role" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Role
             </label>
             <Select

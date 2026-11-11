@@ -232,7 +232,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
                     aria-hidden="true"
                   />
                 ) : (
-                  <span className="font-mono text-[11px] tabular-nums text-ih-muted">
+                  <span className="text-[11px] tabular-nums text-ih-muted">
                     {item.status === 'uploading' ? `${Math.round(item.progress * 100)}%` : '—'}
                   </span>
                 )}

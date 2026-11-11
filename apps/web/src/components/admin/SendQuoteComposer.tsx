@@ -108,7 +108,7 @@ export default function SendQuoteComposer(props: Props) {
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover whitespace-nowrap"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover whitespace-nowrap"
           >
             {props.hasExistingQuote ? 'Compose revision →' : 'Compose quote →'}
           </button>
@@ -132,7 +132,7 @@ export default function SendQuoteComposer(props: Props) {
             setResult(null)
             setOpen(false)
           }}
-          className="rounded-md h-8 px-3 border border-[oklch(0.85_0.13_145)] bg-ih-surface text-[oklch(0.35_0.12_145)] font-mono text-[11px] hover:bg-[oklch(0.97_0.04_145)]"
+          className="rounded-md h-8 px-3 border border-[oklch(0.85_0.13_145)] bg-ih-surface text-[oklch(0.35_0.12_145)] tabular-nums text-[11px] hover:bg-[oklch(0.97_0.04_145)]"
         >
           Done
         </button>
@@ -155,7 +155,7 @@ export default function SendQuoteComposer(props: Props) {
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+          className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink"
         >
           Cancel
         </button>
@@ -163,7 +163,7 @@ export default function SendQuoteComposer(props: Props) {
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label htmlFor="sendquote-subjectOverride" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-subjectOverride" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Subject (optional)
           </label>
           <Input
@@ -174,7 +174,7 @@ export default function SendQuoteComposer(props: Props) {
             placeholder="OFFER FOR …" />
         </div>
         <div>
-          <label htmlFor="sendquote-referenceLine" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-referenceLine" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Reference# (optional)
           </label>
           <Input
@@ -187,7 +187,7 @@ export default function SendQuoteComposer(props: Props) {
 
       <div className="grid grid-cols-3 gap-4">
         <div>
-          <label htmlFor="sendquote-discountTotal" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-discountTotal" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Discount (AED)
           </label>
           <Input
@@ -198,11 +198,11 @@ export default function SendQuoteComposer(props: Props) {
             onChange={(e) => setDiscount(e.target.value)}
             min="0"
             step="0.01"
-            className="text-right font-mono"
+            className="text-right tabular-nums"
           />
         </div>
         <div>
-          <label htmlFor="sendquote-shipping" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-shipping" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Shipping (AED)
           </label>
           <Input
@@ -213,11 +213,11 @@ export default function SendQuoteComposer(props: Props) {
             onChange={(e) => setShipping(e.target.value)}
             min="0"
             step="0.01"
-            className="text-right font-mono"
+            className="text-right tabular-nums"
           />
         </div>
         <div>
-          <label htmlFor="sendquote-vatRatePctOverride" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-vatRatePctOverride" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             VAT (%) — auto from ship-to
           </label>
           <Input
@@ -229,14 +229,14 @@ export default function SendQuoteComposer(props: Props) {
             min="0"
             max="100"
             step="0.01"
-            className="text-right font-mono"
+            className="text-right tabular-nums"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label htmlFor="sendquote-validityDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-validityDays" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Validity (days)
           </label>
           <Input
@@ -248,7 +248,7 @@ export default function SendQuoteComposer(props: Props) {
             max="365" />
         </div>
         <div>
-          <label htmlFor="sendquote-paymentTerms" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-paymentTerms" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Payment terms
           </label>
           <Input
@@ -260,7 +260,7 @@ export default function SendQuoteComposer(props: Props) {
       </div>
 
       <div>
-        <label htmlFor="sendquote-notesOverride" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="sendquote-notesOverride" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Notes on the quote PDF (optional)
         </label>
         <Textarea
@@ -272,7 +272,7 @@ export default function SendQuoteComposer(props: Props) {
       </div>
 
       <div>
-        <label htmlFor="sendquote-customerEmailMessage" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="sendquote-customerEmailMessage" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Personal note in the email (optional)
         </label>
         <Textarea
@@ -284,7 +284,7 @@ export default function SendQuoteComposer(props: Props) {
 
       {/* Live total preview */}
       <div className="border-t border-ih-border pt-4">
-        <div className="bg-ih-surface-2 p-3 font-mono text-[12px] grid grid-cols-2 gap-y-1">
+        <div className="bg-ih-surface-2 p-3 tabular-nums text-[12px] grid grid-cols-2 gap-y-1">
           <div className="text-ih-muted">Subtotal (from line prices)</div>
           <div className="text-right text-ih-ink-2">{formatAed(props.currentSubtotal)}</div>
           {discountNum > 0 ? (
@@ -321,7 +321,7 @@ export default function SendQuoteComposer(props: Props) {
         <button
           type="submit"
           disabled={isPending || props.currentSubtotal <= 0}
-          className="h-10 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-40 disabled:cursor-not-allowed"
+          className="h-10 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {isPending ? 'Sending…' : `Send quote → customer`}
         </button>
@@ -330,15 +330,15 @@ export default function SendQuoteComposer(props: Props) {
           onClick={handlePreview}
           disabled={props.currentSubtotal <= 0}
           title="Render the PDF with the current composer values in a new tab — does not send anything."
-          className="rounded-md h-10 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="rounded-md h-10 px-4 border border-ih-border tabular-nums text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Preview PDF →
         </button>
-        <span className="font-mono text-[11px] text-ih-muted">
+        <span className="tabular-nums text-[11px] text-ih-muted">
           {props.currentSubtotal <= 0 ? 'Set engineer unit prices first.' : 'Sends email + PDF, marks RFQ as Quote Sent.'}
         </span>
         {result && !result.ok ? (
-          <span className="font-mono text-[11px] text-ih-danger-ink ml-auto" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink ml-auto" role="alert">
             {result.message}
           </span>
         ) : null}

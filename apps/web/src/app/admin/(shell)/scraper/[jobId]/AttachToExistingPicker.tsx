@@ -39,7 +39,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
       <div className="rounded-lg border border-ih-border bg-ih-surface-2 px-3 py-2.5 text-[13px]">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <div className="font-mono text-[12px] text-ih-ink truncate">{selected.sku}</div>
+            <div className="tabular-nums text-[12px] text-ih-ink truncate">{selected.sku}</div>
             <div className="text-[12px] text-ih-ink-2 truncate">{selected.title}</div>
             <div className="text-[11px] text-ih-muted mt-0.5">
               {selected.brandName ? `${selected.brandName} · ` : ''}
@@ -50,7 +50,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
             type="button"
             disabled={disabled}
             onClick={() => onSelect(null)}
-            className="text-[11px] font-mono uppercase tracking-wider text-ih-muted hover:text-ih-ink disabled:opacity-50"
+            className="text-[11px] tabular-nums uppercase tracking-wider text-ih-muted hover:text-ih-ink disabled:opacity-50"
           >
             Change
           </button>
@@ -88,7 +88,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
               className="w-full text-left px-3 py-2 border-t border-ih-border hover:bg-ih-surface-2 focus:bg-ih-surface-2 focus:outline-none"
             >
               <div className="flex items-baseline gap-3">
-                <span className="font-mono text-[12px] text-ih-ink flex-shrink-0">
+                <span className="tabular-nums text-[12px] text-ih-ink flex-shrink-0">
                   {h.sku}
                 </span>
                 <span className="text-[12px] text-ih-ink-2 truncate">{h.title}</span>

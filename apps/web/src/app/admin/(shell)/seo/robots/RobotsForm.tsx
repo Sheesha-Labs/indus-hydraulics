@@ -47,7 +47,7 @@ export default function RobotsForm({ seoSetting }: Props) {
       </div>
 
       <div>
-        <label htmlFor="robots-robotsTxt" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="robots-robotsTxt" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           robots.txt content
         </label>
         <Textarea
@@ -57,7 +57,7 @@ export default function RobotsForm({ seoSetting }: Props) {
           defaultValue={
             seoSetting?.robotsTxt ??
             'User-agent: *\nAllow: /\n\nSitemap: https://indushydraulics.com/sitemap.xml'
-          } className="font-mono text-[12px] resize-none" />
+          } className="tabular-nums text-[12px] resize-none" />
         <p className="mt-2 text-[11px] text-ih-muted">
           Lines starting with <code>#</code> are comments. The Sitemap directive is appended
           automatically when present in `SeoSetting.robotsTxtAutoAppendSitemap`.
@@ -68,15 +68,15 @@ export default function RobotsForm({ seoSetting }: Props) {
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+          className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save robots.txt'}
         </button>
         {saved && (
-          <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
+          <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
         )}
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}

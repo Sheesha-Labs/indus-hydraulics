@@ -152,7 +152,7 @@ const INPUT = 'border-ih-border w-full rounded border px-3 py-2 text-sm'
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <fieldset className="border-ih-border space-y-3 border-t pt-4">
-      <legend className="mono text-ih-muted text-[11px] uppercase tracking-[0.1em]">{title}</legend>
+      <legend className="tabular-nums text-ih-muted text-[11px] uppercase tracking-[0.1em]">{title}</legend>
       {children}
     </fieldset>
   )

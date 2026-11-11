@@ -49,7 +49,7 @@ export default async function SitemapPage() {
       </div>
 
       <div className="rounded-lg border border-ih-border p-4 mb-4">
-        <h3 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+        <h3 className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           Exclusions
         </h3>
         <div className="grid grid-cols-2 gap-3 text-[13px]">
@@ -79,12 +79,12 @@ export default async function SitemapPage() {
         href="/sitemap.xml"
         target="_blank"
         rel="noopener"
-        className="rounded-md inline-block h-9 px-4 border border-ih-border grid place-items-center font-mono text-[12px] hover:bg-ih-surface-2"
+        className="rounded-md inline-block h-9 px-4 border border-ih-border grid place-items-center tabular-nums text-[12px] hover:bg-ih-surface-2"
       >
         Open /sitemap.xml ↗
       </a>
 
-      <p className="mt-4 font-mono text-[11px] text-ih-muted">
+      <p className="mt-4 tabular-nums text-[11px] text-ih-muted">
         Per-entity sitemap priority &amp; changefreq overrides are configured from the SEO drawer
         on each entity edit page. A sitemap-index split (when total &gt; 50k URLs) lands in
         Phase 2.
@@ -96,7 +96,7 @@ export default async function SitemapPage() {
 function Tile({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
   return (
     <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>

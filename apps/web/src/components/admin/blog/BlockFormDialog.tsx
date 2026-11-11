@@ -284,7 +284,7 @@ function FieldView({
         {rows.map((row, i) => (
           <div key={i} className="rounded-md border border-ih-border bg-ih-bg p-3">
             <div className="mb-2 flex items-center justify-between">
-              <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+              <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
                 {field.itemLabel} {i + 1}
               </span>
               <RemoveButton
@@ -357,7 +357,7 @@ function FieldView({
           return (
             <div key={i} className="rounded-md border border-ih-border bg-ih-bg p-3">
               <div className="mb-2 flex items-center justify-between">
-                <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+                <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
                   {field.itemLabel} {i + 1}
                 </span>
                 <RemoveButton
@@ -387,7 +387,7 @@ function FieldView({
                 {nested.map((row, j) => (
                   <div key={j} className="rounded-md border border-ih-border bg-ih-surface p-2.5">
                     <div className="mb-1.5 flex items-center justify-between">
-                      <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted-2">
+                      <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted-2">
                         {field.nested.itemLabel} {j + 1}
                       </span>
                       <RemoveButton
@@ -495,7 +495,7 @@ function ScalarFieldView({
     <div className="flex flex-col gap-1">
       <label
         htmlFor={id}
-        className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+        className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
       >
         {field.label}
         {'required' in field && field.required ? ' *' : ''}
@@ -529,7 +529,7 @@ function ScalarFieldView({
           placeholder={field.placeholder}
           onChange={(e) => onChange(e.target.value)}
           className={`h-9 w-full rounded-md border border-ih-border bg-ih-bg px-2.5 text-[13px] outline-none focus:border-ih-accent ${
-            'mono' in field && field.mono ? 'font-mono text-[12px]' : ''
+            'tabular-nums' in field && field.mono ? 'tabular-nums text-[12px]' : ''
           }`}
         />
       )}
@@ -663,7 +663,7 @@ function MatrixField({
 function Legend({ label, hint }: { label: string; hint?: string }) {
   return (
     <legend className="flex flex-col gap-0.5">
-      <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+      <span className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
         {label}
       </span>
       {hint ? <span className="text-[11px] text-ih-muted-2">{hint}</span> : null}

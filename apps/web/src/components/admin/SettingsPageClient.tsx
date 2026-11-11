@@ -89,7 +89,7 @@ export default function SettingsPageClient({
           <Link
             key={tab.id}
             href={`?tab=${tab.id}`}
-            className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px transition-colors ${
+            className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px transition-colors ${
               activeTab === tab.id
                 ? 'border-ih-accent text-ih-ink'
                 : 'border-transparent text-ih-muted hover:text-ih-ink-2'
@@ -104,7 +104,7 @@ export default function SettingsPageClient({
       {activeTab === 'store' && (
         <form action={handleStoreSettings} className="max-w-[560px] flex flex-col gap-5">
           <div>
-            <label htmlFor="settings-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-name" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Store Name
             </label>
             <Input
@@ -116,7 +116,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-supportEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-supportEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Support Email
             </label>
             <Input
@@ -128,7 +128,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-defaultIncoterm" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultIncoterm" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Incoterm
             </label>
             <Select
@@ -143,7 +143,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-defaultPaymentTerms" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultPaymentTerms" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Payment Terms (days)
             </label>
             <Select
@@ -159,7 +159,7 @@ export default function SettingsPageClient({
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Brand identity
             </h3>
             <p className="text-[12px] text-ih-muted mb-4">
@@ -168,7 +168,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-tagline" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-tagline" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Tagline
             </label>
             <Textarea
@@ -181,7 +181,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-certificationLine" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-certificationLine" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Certification line
             </label>
             <Input
@@ -194,7 +194,7 @@ export default function SettingsPageClient({
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Public contact info
             </h3>
             <p className="text-[12px] text-ih-muted mb-4">
@@ -203,7 +203,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-contactLocationLabel" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactLocationLabel" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Location label
             </label>
             <Input
@@ -216,7 +216,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-contactPhone" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactPhone" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Phone
             </label>
             <Input
@@ -229,7 +229,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-contactEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Public email
             </label>
             <Input
@@ -241,7 +241,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-contactHours" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactHours" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Hours
             </label>
             <Input
@@ -254,7 +254,7 @@ export default function SettingsPageClient({
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Legal entity
             </h3>
             <p className="text-[12px] text-ih-muted mb-4">
@@ -263,7 +263,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-legalName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-legalName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Legal name
             </label>
             <Input
@@ -276,7 +276,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-vatTrn" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-vatTrn" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               VAT / TRN number
             </label>
             <Input
@@ -289,7 +289,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-registeredAddressLines" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-registeredAddressLines" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Registered address (one line per line)
             </label>
             <Textarea
@@ -297,12 +297,12 @@ export default function SettingsPageClient({
               name="registeredAddressLines"
               rows={4}
               defaultValue={((storeSettings?.registeredAddressLines as string[] | null) ?? []).join('\n')}
-              placeholder={'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'} className="resize-none font-mono" />
+              placeholder={'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'} className="resize-none tabular-nums" />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-registeredCountryCode" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-registeredCountryCode" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Country (ISO-2)
               </label>
               <Input
@@ -314,7 +314,7 @@ export default function SettingsPageClient({
                 placeholder="AE" className="uppercase" />
             </div>
             <div>
-              <label htmlFor="settings-defaultVatRatePct" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-defaultVatRatePct" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Default VAT rate (%)
               </label>
               <Input
@@ -329,7 +329,7 @@ export default function SettingsPageClient({
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Quote signature block
             </h3>
             <p className="text-[12px] text-ih-muted mb-4">
@@ -339,7 +339,7 @@ export default function SettingsPageClient({
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-signatureName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signatureName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Name
               </label>
               <Input
@@ -351,7 +351,7 @@ export default function SettingsPageClient({
                 placeholder="Krishan Bhatia" />
             </div>
             <div>
-              <label htmlFor="settings-signatureTitle" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signatureTitle" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Title
               </label>
               <Input
@@ -366,7 +366,7 @@ export default function SettingsPageClient({
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-signaturePhone" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signaturePhone" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Phone
               </label>
               <Input
@@ -378,7 +378,7 @@ export default function SettingsPageClient({
                 placeholder="+971 52 2477942" />
             </div>
             <div>
-              <label htmlFor="settings-signatureEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signatureEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Email
               </label>
               <Input
@@ -391,7 +391,7 @@ export default function SettingsPageClient({
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Outbound email
             </h3>
             <p className="text-[12px] text-ih-muted mb-4">
@@ -401,7 +401,7 @@ export default function SettingsPageClient({
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-quoteFromEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-quoteFromEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 From / Reply-To address
               </label>
               <Input
@@ -412,7 +412,7 @@ export default function SettingsPageClient({
                 placeholder="sales@indushydraulics.me" />
             </div>
             <div>
-              <label htmlFor="settings-quoteFromName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-quoteFromName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Sender display name
               </label>
               <Input
@@ -426,7 +426,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-internalAlertEmails" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-internalAlertEmails" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Internal new-RFQ alert recipients (one email per line)
             </label>
             <Textarea
@@ -434,11 +434,11 @@ export default function SettingsPageClient({
               name="internalAlertEmails"
               rows={3}
               defaultValue={((storeSettings?.internalAlertEmails as string[] | null) ?? []).join('\n')}
-              placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'} className="resize-none font-mono" />
+              placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'} className="resize-none tabular-nums" />
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Quote defaults
             </h3>
             <p className="text-[12px] text-ih-muted mb-4">
@@ -447,7 +447,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteValidityDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteValidityDays" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Validity (days)
             </label>
             <Input
@@ -460,7 +460,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteNotes" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteNotes" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Notes (optional)
             </label>
             <Textarea
@@ -472,7 +472,7 @@ export default function SettingsPageClient({
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteTerms" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteTerms" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Terms &amp; Conditions
             </label>
             <Textarea
@@ -480,11 +480,11 @@ export default function SettingsPageClient({
               name="defaultQuoteTerms"
               rows={4}
               defaultValue={storeSettings?.defaultQuoteTerms ?? ''}
-              placeholder={'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'} className="resize-none font-mono" />
+              placeholder={'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'} className="resize-none tabular-nums" />
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteDisclaimer" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteDisclaimer" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Disclaimer
             </label>
             <Textarea
@@ -496,7 +496,7 @@ export default function SettingsPageClient({
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Bank details (PDF footer)
             </h3>
             <p className="text-[12px] text-ih-muted mb-4">
@@ -506,7 +506,7 @@ export default function SettingsPageClient({
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-bankAccountName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankAccountName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Account name
               </label>
               <Input
@@ -518,7 +518,7 @@ export default function SettingsPageClient({
                 placeholder="Indus Hydraulic Power Trading LLC" />
             </div>
             <div>
-              <label htmlFor="settings-bankName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Bank name
               </label>
               <Input
@@ -533,7 +533,7 @@ export default function SettingsPageClient({
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-bankBranch" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankBranch" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Branch
               </label>
               <Input
@@ -545,7 +545,7 @@ export default function SettingsPageClient({
                 placeholder="Al Quasis Branch, Dubai" />
             </div>
             <div>
-              <label htmlFor="settings-bankAccountNo" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankAccountNo" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Account number
               </label>
               <Input
@@ -554,13 +554,13 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.bankAccountNo ?? ''}
-                placeholder="012345678901" className="font-mono" />
+                placeholder="012345678901" className="tabular-nums" />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-bankIban" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankIban" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 IBAN
               </label>
               <Input
@@ -569,10 +569,10 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.bankIban ?? ''}
-                placeholder="AE07 0331 2345 6789 0123 456" className="font-mono" />
+                placeholder="AE07 0331 2345 6789 0123 456" className="tabular-nums" />
             </div>
             <div>
-              <label htmlFor="settings-bankSwift" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankSwift" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 SWIFT / BIC
               </label>
               <Input
@@ -581,7 +581,7 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={20}
                 defaultValue={storeSettings?.bankSwift ?? ''}
-                placeholder="BOMLAEAD" className="font-mono" />
+                placeholder="BOMLAEAD" className="tabular-nums" />
             </div>
           </div>
 
@@ -589,15 +589,15 @@ export default function SettingsPageClient({
             <button
               type="submit"
               disabled={isPending}
-              className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+              className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
             >
               {isPending ? 'Saving…' : 'Save Settings'}
             </button>
             {saved === 'store' && (
-              <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
+              <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
             )}
             {error && activeTab === 'store' && (
-              <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">{error}</span>
+              <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">{error}</span>
             )}
           </div>
         </form>
@@ -632,9 +632,9 @@ export default function SettingsPageClient({
                 }`}
               >
                 <div className="text-[13px] font-medium text-ih-ink mb-0.5">{ek.label}</div>
-                <div className="font-mono text-[11px] text-ih-muted">{ek.description}</div>
+                <div className="tabular-nums text-[11px] text-ih-muted">{ek.description}</div>
                 {templateMap[ek.kind] && (
-                  <div className="mt-1 font-mono text-[10.5px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success inline-block">
+                  <div className="mt-1 tabular-nums text-[10.5px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success inline-block">
                     configured
                   </div>
                 )}
@@ -658,7 +658,7 @@ export default function SettingsPageClient({
                   </div>
 
                   <div>
-                    <label htmlFor="settings-subject" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+                    <label htmlFor="settings-subject" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                       Subject Line
                     </label>
                     <Input
@@ -671,11 +671,11 @@ export default function SettingsPageClient({
                   </div>
 
                   <div>
-                    <label htmlFor="settings-bodyHtml" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+                    <label htmlFor="settings-bodyHtml" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                       Body HTML
                     </label>
                     <div className="rounded-lg border border-ih-border bg-ih-surface p-3 mb-1.5">
-                      <p className="font-mono text-[11px] text-ih-muted">
+                      <p className="tabular-nums text-[11px] text-ih-muted">
                         Available variables:{' '}
                         <code className="bg-ih-surface-2 px-1">{'{{name}}'}</code>{' '}
                         <code className="bg-ih-surface-2 px-1">{'{{rfqCode}}'}</code>{' '}
@@ -687,22 +687,22 @@ export default function SettingsPageClient({
                       name="bodyHtml"
                       rows={16}
                       required
-                      defaultValue={currentTemplate?.bodyHtml ?? ''} className="font-mono text-[12px] resize-none" />
+                      defaultValue={currentTemplate?.bodyHtml ?? ''} className="tabular-nums text-[12px] resize-none" />
                   </div>
 
                   <div className="flex items-center gap-3">
                     <button
                       type="submit"
                       disabled={isPending}
-                      className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+                      className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
                     >
                       {isPending ? 'Saving…' : 'Save Template'}
                     </button>
                     {saved === selectedEmail && (
-                      <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
+                      <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
                     )}
                     {error && activeTab === 'emails' && (
-                      <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">{error}</span>
+                      <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">{error}</span>
                     )}
                   </div>
                 </form>

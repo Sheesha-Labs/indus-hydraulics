@@ -86,7 +86,7 @@ export default async function MasterPageEditorRoute({ params }: Props) {
           href={`${storefront}${def.path}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 font-mono text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+          className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 tabular-nums text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
         >
           View page <ExternalLink size={12} aria-hidden="true" />
         </a>

@@ -83,12 +83,12 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
       </div>
 
       <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
-        <summary className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
+        <summary className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
           Add query redirect
         </summary>
         <form action={handleAdd} className="mt-3 grid grid-cols-[200px_1fr_auto] gap-3 items-end">
           <div>
-            <label htmlFor="searchredirect-query" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="searchredirect-query" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Query (normalised)
             </label>
             <Input
@@ -99,7 +99,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
               placeholder="hose fitting" />
           </div>
           <div>
-            <label htmlFor="searchredirect-targetUrl" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="searchredirect-targetUrl" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Target URL
             </label>
             <Input
@@ -112,7 +112,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
           >
             Add
           </button>
@@ -120,7 +120,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
       </details>
 
       {error && (
-        <p className="mb-4 font-mono text-[12px] text-ih-danger-ink" role="alert">
+        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
@@ -146,7 +146,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
                   key={r.id}
                   className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                 >
-                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2">{r.query}</td>
+                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2">{r.query}</td>
                   <td className="px-3 py-3 text-ih-ink-2 truncate max-w-[400px]" title={r.targetUrl}>
                     {r.targetUrl}
                   </td>
@@ -155,7 +155,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
                       type="button"
                       onClick={() => handleToggle(r.id, r.isActive)}
                       disabled={pending}
-                      className={`font-mono text-[11px] px-2 py-0.5 ${
+                      className={`tabular-nums text-[11px] px-2 py-0.5 ${
                         r.isActive
                           ? 'text-ih-success-ink bg-ih-success-soft'
                           : 'text-ih-muted bg-ih-surface-2'
@@ -179,7 +179,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -315,7 +315,7 @@ export default function SeoEntityDrawer({
             key={tab.id}
             type="button"
             onClick={() => setActiveSubTab(tab.id)}
-            className={`px-3 py-2.5 font-mono text-[11px] border-b-2 -mb-px whitespace-nowrap ${
+            className={`px-3 py-2.5 tabular-nums text-[11px] border-b-2 -mb-px whitespace-nowrap ${
               activeSubTab === tab.id
                 ? 'border-ih-accent text-ih-ink'
                 : 'border-transparent text-ih-muted hover:text-ih-ink-2'
@@ -464,7 +464,7 @@ export default function SeoEntityDrawer({
                 rightAdornment={
                   jsonLdOverride.trim().length > 0 ? (
                     <span
-                      className={`font-mono text-[10.5px] uppercase tracking-wider ${
+                      className={`tabular-nums text-[10.5px] uppercase tracking-wider ${
                         overrideValidation.ok
                           ? 'text-ih-success-ink'
                           : 'text-ih-danger-ink'
@@ -479,7 +479,7 @@ export default function SeoEntityDrawer({
                   rows={10}
                   value={jsonLdOverride}
                   onChange={(e) => setJsonLdOverride(e.target.value)}
-                  className={`${textareaCls} font-mono text-[11px] ${
+                  className={`${textareaCls} tabular-nums text-[11px] ${
                     !overrideValidation.ok ? 'border-[oklch(0.5_0.18_25)]' : ''
                   }`}
                   placeholder={'{\n  "aggregateRating": { ... }\n}'}
@@ -487,7 +487,7 @@ export default function SeoEntityDrawer({
                 />
                 {!overrideValidation.ok && (
                   <p
-                    className="font-mono text-[11px] text-ih-danger-ink mt-1"
+                    className="tabular-nums text-[11px] text-ih-danger-ink mt-1"
                     role="alert"
                   >
                     {overrideValidation.message} — preview below shows the unmerged base.
@@ -572,7 +572,7 @@ export default function SeoEntityDrawer({
         {/* RIGHT — previews */}
         <div className="flex flex-col gap-4 sticky top-4 self-start">
           <div>
-            <p className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+            <p className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
               Google SERP preview
             </p>
             <SerpPreview
@@ -582,7 +582,7 @@ export default function SeoEntityDrawer({
             />
           </div>
           <div>
-            <p className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+            <p className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
               Open Graph preview
             </p>
             <OgPreview
@@ -594,7 +594,7 @@ export default function SeoEntityDrawer({
           </div>
           {activeSubTab === 'schema' && ldPreview.length > 0 && (
             <div>
-              <p className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+              <p className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
                 JSON-LD that will be emitted
               </p>
               <JsonLdPreview data={ldPreview} />
@@ -613,12 +613,12 @@ export default function SeoEntityDrawer({
           {pending ? 'Saving…' : 'Save SEO'}
         </button>
         {savedAt && (
-          <span className="font-mono text-[11px] text-ih-success-ink">
+          <span className="tabular-nums text-[11px] text-ih-success-ink">
             Saved at {savedAt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
           </span>
         )}
         <span className="ml-auto flex items-center gap-2">
-          <span className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <span className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             Health
           </span>
           <SeoHealthBadge score={estimateScore({ effectiveTitle, effectiveDescription, focusKeyword, robotsIndex, ogImagePath })} />

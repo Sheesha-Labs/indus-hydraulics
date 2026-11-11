@@ -52,20 +52,20 @@ export default async function ServiceCasesPage() {
           <tbody>
             {cases.map((c) => (
               <tr key={c.id} className="border-ih-border/60 border-b">
-                <td className="py-2 pr-4 font-mono text-xs">{c.caseNumber}</td>
+                <td className="py-2 pr-4 tabular-nums text-xs">{c.caseNumber}</td>
                 <td className="py-2 pr-4">
                   <Link className="underline" href={`/admin/services/${c.id}`}>
                     {c.title}
                   </Link>
                   {c.isFeatured ? (
-                    <span className="ml-2 font-mono text-[10px] uppercase">· case of the week</span>
+                    <span className="ml-2 tabular-nums text-[10px] uppercase">· case of the week</span>
                   ) : null}
                 </td>
                 <td className="py-2 pr-4">
                   {SERVICE_CASE_CATEGORY_LABELS[c.category] ?? c.category}
                 </td>
                 <td className="py-2 pr-4">{c.status}</td>
-                <td className="py-2 pr-4 font-mono text-xs">
+                <td className="py-2 pr-4 tabular-nums text-xs">
                   {c.publishedAt ? c.publishedAt.toISOString().slice(0, 10) : '—'}
                 </td>
               </tr>

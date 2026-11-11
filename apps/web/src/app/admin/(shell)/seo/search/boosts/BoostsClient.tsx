@@ -57,12 +57,12 @@ export default function BoostsClient({ rows: initialRows }: Props) {
       </div>
 
       <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
-        <summary className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
+        <summary className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
           Add product boost
         </summary>
         <form action={handleAdd} className="mt-3 grid grid-cols-[1fr_120px_180px_auto] gap-3 items-end">
           <div>
-            <label htmlFor="boost-sku" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-sku" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Product SKU
             </label>
             <Input
@@ -73,7 +73,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               placeholder="ABC-1234" />
           </div>
           <div>
-            <label htmlFor="boost-boost" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-boost" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Boost (0–10)
             </label>
             <Input
@@ -87,7 +87,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               defaultValue="1.5" />
           </div>
           <div>
-            <label htmlFor="boost-expiresAt" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-expiresAt" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Expires (optional)
             </label>
             <Input
@@ -98,7 +98,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
           >
             Add
           </button>
@@ -106,7 +106,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
       </details>
 
       {error && (
-        <p className="mb-4 font-mono text-[12px] text-ih-danger-ink" role="alert">
+        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
@@ -134,12 +134,12 @@ export default function BoostsClient({ rows: initialRows }: Props) {
                 >
                   <td className="px-3 py-3">
                     <div className="text-ih-ink-2 truncate max-w-[400px]">{r.title}</div>
-                    <div className="font-mono text-[11px] text-ih-muted">{r.sku}</div>
+                    <div className="tabular-nums text-[11px] text-ih-muted">{r.sku}</div>
                   </td>
-                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2 tabular-nums">
+                  <td className="px-3 py-3 text-[12px] text-ih-ink-2 tabular-nums">
                     × {r.boost.toFixed(2)}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] text-ih-muted">
+                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted">
                     {r.expiresAt
                       ? new Date(r.expiresAt).toLocaleDateString('en-GB', {
                           day: 'numeric',
@@ -163,7 +163,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -94,7 +94,7 @@ export default function BrandsClient({ brands }: Props) {
                       </div>
                     )}
                   </TableCell>
-                  <TableCell className="font-mono text-[12px] text-ih-muted">{b.slug}</TableCell>
+                  <TableCell className="tabular-nums text-[12px] text-ih-muted">{b.slug}</TableCell>
                   <TableCell className="text-ih-ink-2">
                     {b.country ?? <span className="text-ih-muted-2">—</span>}
                   </TableCell>
@@ -184,7 +184,7 @@ function BrandForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="bosch-rexroth"
-          className="font-mono"
+          className="tabular-nums"
           />
         </Field>
       </div>
@@ -254,7 +254,7 @@ function BrandForm({
           Cancel
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}

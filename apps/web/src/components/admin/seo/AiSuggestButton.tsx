@@ -113,7 +113,7 @@ export default function AiSuggestButton({
         type="button"
         onClick={handleGenerate}
         disabled={pending}
-        className="rounded-md inline-flex items-center gap-1 h-7 px-2 font-mono text-[11px] text-ih-accent hover:bg-ih-surface-2 border border-transparent hover:border-ih-border disabled:opacity-50"
+        className="rounded-md inline-flex items-center gap-1 h-7 px-2 tabular-nums text-[11px] text-ih-accent hover:bg-ih-surface-2 border border-transparent hover:border-ih-border disabled:opacity-50"
         title={`Generate ${fieldLabel[field]} with Claude`}
       >
         ✨ {pending && !suggestion ? 'Thinking…' : 'Suggest'}
@@ -122,7 +122,7 @@ export default function AiSuggestButton({
       {open && (
         <div className="absolute z-20 right-0 mt-1 w-[480px] rounded-lg border border-ih-border bg-ih-surface shadow-lg p-4">
           <div className="flex items-center justify-between mb-3">
-            <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+            <p className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               AI Suggestion
             </p>
             <button
@@ -161,7 +161,7 @@ export default function AiSuggestButton({
                   field on the page, so a fixed id would repeat and every
                   label would resolve to whichever textarea came first.
                 */}
-                <label htmlFor={editId} className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+                <label htmlFor={editId} className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
                   Edit before accepting (optional)
                 </label>
                 <Textarea
@@ -174,7 +174,7 @@ export default function AiSuggestButton({
               </div>
 
               {meta && (
-                <p className="font-mono text-[11px] text-ih-muted mb-3">
+                <p className="tabular-nums text-[11px] text-ih-muted mb-3">
                   ${(meta.costUsdMicros / 1_000_000).toFixed(4)} this call
                   {meta.cacheHitRatio !== null
                     ? ` · cache ${(meta.cacheHitRatio * 100).toFixed(0)}%`
@@ -187,7 +187,7 @@ export default function AiSuggestButton({
                   type="button"
                   onClick={handleReject}
                   disabled={pending}
-                  className="rounded-md h-8 px-3 font-mono text-[11px] border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-50"
+                  className="rounded-md h-8 px-3 tabular-nums text-[11px] border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-50"
                 >
                   Reject
                 </button>
@@ -195,7 +195,7 @@ export default function AiSuggestButton({
                   type="button"
                   onClick={() => handleAccept(true)}
                   disabled={pending}
-                  className="h-8 px-3 font-mono text-[11px] bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover disabled:opacity-50"
+                  className="h-8 px-3 tabular-nums text-[11px] bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover disabled:opacity-50"
                 >
                   Accept{editValue.trim() !== suggestion.trim() ? ' edit' : ''}
                 </button>
@@ -204,7 +204,7 @@ export default function AiSuggestButton({
           )}
 
           {!suggestion && !error && pending && (
-            <p className="font-mono text-[11px] text-ih-muted py-3">
+            <p className="tabular-nums text-[11px] text-ih-muted py-3">
               Calling Claude…
             </p>
           )}

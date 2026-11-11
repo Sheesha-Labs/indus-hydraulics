@@ -39,7 +39,7 @@ function Form({ enquiryId }: { enquiryId: string }) {
           name="rawText"
           required
           rows={12}
-          className="font-mono"
+          className="tabular-nums"
           placeholder="Paste the whole email, including prices and terms."
         />
       </Field>
