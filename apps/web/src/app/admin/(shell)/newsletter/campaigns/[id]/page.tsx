@@ -22,12 +22,17 @@ export default async function CampaignPage({ params }: Props) {
   if (!row) notFound()
 
   const draft = draftOf(row)
-  const [lists, problems, size, sender, counts] = await Promise.all([
-    db.newsletterList.findMany({ orderBy: { name: 'asc' }, select: { id: true, name: true } }),
+  const [lists, problems, size, sender, counts, subscribers] = await Promise.all([
+    db.newsletterList.findMany({
+      orderBy: { name: 'asc' },
+      select: { id: true, name: true, _count: { select: { contacts: { where: { status: 'active' } } } } },
+    }),
     campaignProblemsLive(draft),
     audienceSize(draft.audience, draft.listIds),
     loadSender(),
     row.status === 'draft' ? Promise.resolve(null) : deliveryCounts(row.id),
+    // What "Every confirmed subscriber" reaches on its own, suppressions out.
+    audienceSize('all', []),
   ])
 
   return (
@@ -40,7 +45,8 @@ export default async function CampaignPage({ params }: Props) {
       statusLabel={CAMPAIGN_STATUS_LABELS[row.status as CampaignStatus]}
       editable={EDITABLE_STATUSES.includes(row.status as CampaignStatus)}
       canSend={hasRole(session, ROLES.NEWSLETTER_SEND)}
-      lists={lists}
+      lists={lists.map((l) => ({ id: l.id, name: l.name, count: l._count.contacts }))}
+      subscriberCount={subscribers}
       initialProblems={problems}
       initialAudienceSize={size}
       from={formatFrom(sender)}

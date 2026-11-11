@@ -18,8 +18,8 @@ import { recordKey, renderDesign, renderShell, type DesignRenderContext, type Re
 export const AUDIENCES = ['all', 'none'] as const
 export type Audience = (typeof AUDIENCES)[number]
 export const AUDIENCE_LABELS: Record<Audience, string> = {
-  all: 'All confirmed subscribers (plus any lists chosen)',
-  none: 'Only the lists chosen',
+  all: 'Every confirmed subscriber',
+  none: 'No subscribers — custom lists only',
 }
 
 export const CAMPAIGN_FORMATS = ['blocks', 'rich'] as const

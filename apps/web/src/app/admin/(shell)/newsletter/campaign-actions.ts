@@ -148,12 +148,12 @@ export async function saveCampaignAction(id: string, draft: CampaignDraft): Prom
 export async function previewCampaignAction(
   draft: CampaignDraft,
   recipient: 'subscriber' | 'list' = 'subscriber',
-): Promise<Result<{ subject: string; html: string; missingRecords: number }>> {
+): Promise<Result<{ subject: string; html: string; text: string; missingRecords: number }>> {
   try {
     requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
     const d = campaignDraftSchema.parse(draft)
     const r = await renderPreview(d, recipient === 'list' ? 'list' : 'subscriber')
-    return ok({ subject: r.subject, html: r.html, missingRecords: r.missingRecords })
+    return ok({ subject: r.subject, html: r.html, text: r.text, missingRecords: r.missingRecords })
   } catch (err) {
     return failure(err, 'render the preview')
   }
