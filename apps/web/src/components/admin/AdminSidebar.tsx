@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useSyncExternalStore } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import BrandLockup from '../BrandLockup'
@@ -29,6 +30,7 @@ import {
   Mail,
   type LucideIcon,
   Wrench,
+  ChevronRight,
 } from 'lucide-react'
 
 interface Props {
@@ -61,11 +63,14 @@ type NavItem = {
   Icon: LucideIcon
 }
 
-const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
-  {
-    section: 'Overview',
-    items: [{ id: 'dashboard', label: 'Dashboard', path: '', Icon: LayoutDashboard }],
-  },
+const OVERVIEW: NavItem[] = [{ id: 'dashboard', label: 'Dashboard', path: '', Icon: LayoutDashboard }]
+
+/**
+ * The folding groups. Twenty links in five flat groups were taller than a
+ * laptop viewport, so the rail scrolled. Folded, the rail shows the group
+ * names plus the one group you are working in, and fits without a scrollbar.
+ */
+const GROUPS: { section: string; items: NavItem[] }[] = [
   {
     section: 'Catalogue',
     items: [
@@ -125,6 +130,38 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
     return pathname.startsWith(`/${path}`)
   }
 
+  const activeSection = GROUPS.find(({ items }) => items.some((item) => isActive(item.path)))?.section
+
+  // The reader's open/closed choices live in localStorage. The server
+  // snapshot is null, so the first render (server and client alike) opens
+  // only the group holding the current page and hydration matches.
+  const saved = parseSections(useSyncExternalStore(subscribeOpenSections, readOpenSections, () => null)) ?? []
+
+  // The current page's group is always open — unless the reader folded it
+  // while on that page. That exception lasts until they move to another group.
+  const [closedActive, setClosedActive] = useState<string | null>(null)
+  const [prevActive, setPrevActive] = useState(activeSection)
+  if (prevActive !== activeSection) {
+    setPrevActive(activeSection)
+    setClosedActive(null)
+  }
+
+  const openSections =
+    activeSection && closedActive !== activeSection && !saved.includes(activeSection)
+      ? [...saved, activeSection]
+      : saved
+
+  function toggle(section: string) {
+    const rest = saved.filter((s) => s !== section)
+    if (openSections.includes(section)) {
+      writeOpenSections(rest)
+      if (section === activeSection) setClosedActive(section)
+    } else {
+      writeOpenSections([...rest, section])
+      if (section === activeSection) setClosedActive(null)
+    }
+  }
+
   return (
     /*
       A LIGHT rail, not the navy panel this used to be.
@@ -150,6 +187,9 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
         no page scroll to reach it with. Sign out became unreachable on a
         laptop. Pinning the rail and scrolling the middle keeps the brand and
         the footer fixed, which is also where a reader expects them.
+        The groups now fold (see GROUPS), so by default the nav fits and this
+        scroll is only a fallback when a reader opens every group on a short
+        screen.
       */
       className="hidden w-[240px] flex-col gap-1 border-r border-ih-border bg-ih-surface px-3.5 py-5 md:sticky md:top-0 md:flex md:h-screen"
       aria-label="Primary admin navigation"
@@ -176,32 +216,66 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
         </Link>
       </div>
 
-      <nav className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto">
-        {NAV_SECTIONS.map(({ section, items }) => (
-          <div key={section}>
-            <p className="px-2.5 pb-1.5 pt-3.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.1em] text-ih-muted-2">
-              {section}
-            </p>
-            {items.map(({ id, label, path, Icon }) => {
-              const active = isActive(path)
-              return (
-                <Link
-                  key={id}
-                  href={path ? `${ADMIN_PREFIX}/${path}` : ADMIN_PREFIX}
-                  aria-current={active ? 'page' : undefined}
-                  className={`flex items-center gap-2.5 rounded px-2.5 py-2 text-[13px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
-                    active
-                      ? 'bg-ih-navy font-medium text-ih-bg'
-                      : 'text-ih-ink-2 hover:bg-ih-surface-2'
+      <nav className="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto [scrollbar-width:thin]">
+        {/* Dashboard is a single link, not a group: nothing to fold. */}
+        {OVERVIEW.map((item) => (
+          <NavLink key={item.id} item={item} active={isActive(item.path)} />
+        ))}
+
+        {GROUPS.map(({ section, items }) => {
+          const open = openSections.includes(section)
+          const holdsActive = items.some((item) => isActive(item.path))
+          const panelId = `admin-nav-${section.toLowerCase()}`
+          return (
+            <div key={section} className="pt-1">
+              <button
+                type="button"
+                onClick={() => toggle(section)}
+                aria-expanded={open}
+                aria-controls={panelId}
+                className="group flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left transition-colors hover:bg-ih-surface-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+              >
+                <span
+                  className={`flex-1 font-mono text-[10.5px] font-medium uppercase tracking-[0.1em] ${
+                    holdsActive && !open ? 'text-ih-ink' : 'text-ih-muted-2'
                   }`}
                 >
-                  <Icon size={15} strokeWidth={1.6} aria-hidden="true" />
-                  <span>{label}</span>
-                </Link>
-              )
-            })}
-          </div>
-        ))}
+                  {section}
+                </span>
+                {/* A folded group that holds the current page says so. */}
+                {holdsActive && !open ? (
+                  <span className="h-1.5 w-1.5 rounded-full bg-ih-navy" aria-hidden="true" />
+                ) : null}
+                <ChevronRight
+                  size={14}
+                  strokeWidth={1.8}
+                  aria-hidden="true"
+                  className={`text-ih-muted-2 transition-transform duration-150 motion-reduce:transition-none group-hover:text-ih-ink-2 ${
+                    open ? 'rotate-90' : ''
+                  }`}
+                />
+              </button>
+              {/*
+                grid-rows 0fr → 1fr animates to the content's natural height
+                without measuring it. `inert` takes a folded group's links out
+                of the tab order and the accessibility tree.
+              */}
+              <div
+                id={panelId}
+                inert={!open}
+                className={`grid transition-[grid-template-rows] duration-200 ease-[ease] motion-reduce:transition-none ${
+                  open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                }`}
+              >
+                <div className="flex min-h-0 flex-col gap-0.5 overflow-hidden">
+                  {items.map((item) => (
+                    <NavLink key={item.id} item={item} active={isActive(item.path)} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          )
+        })}
       </nav>
 
       {/* The only divider left in the rail. */}
@@ -241,4 +315,60 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
       </div>
     </aside>
   )
+}
+
+function NavLink({ item: { label, path, Icon }, active }: { item: NavItem; active: boolean }) {
+  return (
+    <Link
+      href={path ? `${ADMIN_PREFIX}/${path}` : ADMIN_PREFIX}
+      aria-current={active ? 'page' : undefined}
+      className={`flex items-center gap-2.5 rounded-md px-2.5 py-2 text-[13px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
+        active ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2'
+      }`}
+    >
+      <Icon size={15} strokeWidth={1.6} aria-hidden="true" />
+      <span>{label}</span>
+    </Link>
+  )
+}
+
+const OPEN_SECTIONS_KEY = 'ih-admin-nav-open'
+const listeners = new Set<() => void>()
+
+function subscribeOpenSections(onChange: () => void) {
+  listeners.add(onChange)
+  // Another admin tab folding a group updates this one too.
+  window.addEventListener('storage', onChange)
+  return () => {
+    listeners.delete(onChange)
+    window.removeEventListener('storage', onChange)
+  }
+}
+
+/** The raw string, so the snapshot compares stably. Storage can be absent or throw. */
+function readOpenSections(): string | null {
+  try {
+    return window.localStorage.getItem(OPEN_SECTIONS_KEY)
+  } catch {
+    return null
+  }
+}
+
+function parseSections(raw: string | null): string[] | null {
+  if (!raw) return null
+  try {
+    const parsed: unknown = JSON.parse(raw)
+    return Array.isArray(parsed) ? parsed.filter((s): s is string => typeof s === 'string') : null
+  } catch {
+    return null
+  }
+}
+
+function writeOpenSections(sections: string[]) {
+  try {
+    window.localStorage.setItem(OPEN_SECTIONS_KEY, JSON.stringify(sections))
+  } catch {
+    // Not remembered; the rail still works for this render.
+  }
+  listeners.forEach((notify) => notify())
 }
