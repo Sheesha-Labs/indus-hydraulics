@@ -6,7 +6,7 @@ import type { RecordKind } from './blocks/types'
 
 /**
  * The site records a newsletter can feature — products, categories, blog
- * articles, industries — looked up by id at render time, so a campaign
+ * articles, industries, brands — looked up by id at render time, so a campaign
  * always shows the live title, photo and link. Only published records are
  * resolved; anything else is left out of the email (and reported by the
  * send gate as missing).
@@ -19,6 +19,7 @@ const PATH: Record<RecordKind, (slug: string) => string> = {
   category: (s) => `/c/${s}`,
   article: (s) => `/blog/${s}`,
   industry: (s) => `/industries/${s}`,
+  brand: (s) => `/brands/${s}`,
 }
 
 function image(storagePath: string | null | undefined): string | null {
@@ -28,7 +29,7 @@ function image(storagePath: string | null | undefined): string | null {
 
 /** Every record the refs name, keyed `${kind}:${id}`. One query per kind. */
 export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, ResolvedRecord>> {
-  const want: Record<RecordKind, Set<string>> = { product: new Set(), category: new Set(), article: new Set(), industry: new Set() }
+  const want: Record<RecordKind, Set<string>> = { product: new Set(), category: new Set(), article: new Set(), industry: new Set(), brand: new Set() }
   for (const r of refs) for (const id of r.ids) want[r.kind].add(id)
   const out = new Map<string, ResolvedRecord>()
   const put = (rec: ResolvedRecord) => out.set(recordKey(rec.kind, rec.id), rec)
@@ -124,6 +125,37 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
             ),
           )
       : null,
+    want.brand.size
+      ? db.brand
+          .findMany({
+            where: { id: { in: [...want.brand] }, isPublished: true },
+            select: {
+              id: true,
+              slug: true,
+              name: true,
+              country: true,
+              isAuthorizedDistributor: true,
+              hero: { select: { storagePath: true, alt: true } },
+              logo: { select: { storagePath: true, alt: true } },
+            },
+          })
+          .then((rows) =>
+            rows.forEach((b) => {
+              // The brand's own photograph when it has one; its logo otherwise.
+              const pic = b.hero ?? b.logo
+              put({
+                kind: 'brand',
+                id: b.id,
+                title: b.name,
+                subtitle: b.isAuthorizedDistributor ? 'Authorised distributor' : null,
+                meta: b.country ?? null,
+                url: `${BASE_URL}${PATH.brand(b.slug)}`,
+                imageUrl: image(pic?.storagePath),
+                imageAlt: pic?.alt ?? b.name,
+              })
+            }),
+          )
+      : null,
   ])
   return out
 }
@@ -174,6 +206,15 @@ export async function searchRecords(kind: RecordKind, q: string): Promise<Record
           select: { id: true, name: true, slug: true },
         })
       ).map((i) => ({ id: i.id, label: i.name, hint: `/industries/${i.slug}` }))
+    case 'brand':
+      return (
+        await db.brand.findMany({
+          where: { isPublished: true, ...(term ? { name: { contains: term, mode: 'insensitive' } } : {}) },
+          orderBy: [{ position: 'asc' }, { name: 'asc' }],
+          take,
+          select: { id: true, name: true, slug: true },
+        })
+      ).map((b) => ({ id: b.id, label: b.name, hint: `/brands/${b.slug}` }))
   }
 }
 

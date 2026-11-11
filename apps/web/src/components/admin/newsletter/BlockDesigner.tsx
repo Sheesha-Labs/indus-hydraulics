@@ -31,7 +31,7 @@ type Props_ = {
   disabled?: boolean
 }
 
-const KIND_LABEL: Record<RecordKind, string> = { product: 'Products', category: 'Categories', article: 'Blog articles', industry: 'Industries' }
+const KIND_LABEL: Record<RecordKind, string> = { product: 'Products', category: 'Categories', article: 'Blog articles', industry: 'Industries', brand: 'Brands' }
 const LAYOUT_LABEL: Record<string, string> = { list: 'List', grid: 'Grid', cards: 'Cards' }
 
 /**

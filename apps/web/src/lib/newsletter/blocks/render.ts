@@ -304,6 +304,7 @@ const RECORD_LINK: Record<RecordKind, string> = {
   category: 'Browse the range',
   article: 'Read the article',
   industry: 'See the industry',
+  brand: 'See the brand',
 }
 
 function recordCell(r: ResolvedRecord, ctx: Ctx, layout: RecordLayout, imageWidth: number): string {
@@ -689,6 +690,41 @@ const DRAW: Record<string, Drawer> = {
       (first ? spacer(22) + first : '') +
       (second ? spacer(12) + second : '')
     return html ? row(html, { ...p, background: color(p.background, BRAND.navy) }) : ''
+  },
+
+  offer(p, ctx) {
+    const ink = ctx.settings.textColor
+    const badgeText = str(p, 'badge')
+    if (badgeText) ctx.text.push(`[${plain(badgeText, ctx)}]`)
+    const badge = badgeText
+      ? `<table ${TABLE} style="margin:0 0 14px 0"><tr><td bgcolor="${color(p.badgeColor, BRAND.accent)}" style="background-color:${color(p.badgeColor, BRAND.accent)};border-radius:999px;padding:5px 12px;font-family:${BRAND_FONT.sans};font-size:12px;font-weight:600;line-height:1.2;color:${color(p.badgeTextColor, BRAND.white)}">${inline(badgeText, ctx, color(p.badgeTextColor, BRAND.white))}</td></tr></table>`
+      : ''
+    const head = eyebrow(str(p, 'eyebrow'), ctx, 'left', ctx.settings.mutedColor) + headingHtml(str(p, 'heading'), ctx, { size: p.size, align: 'left', ink: ctx.settings.headingColor })
+    const value = str(p, 'text')
+    if (value) ctx.text.push(plain(value, ctx))
+    const body = value ? paragraphs(value, ctx, bodyStyle(ctx, ink, 'left'), ctx.settings.linkColor) : ''
+    const code = str(p, 'code')
+    if (code) ctx.text.push(`Quote: ${plain(code, ctx)}`)
+    const codeHtml = code
+      ? `<p style="margin:14px 0 0 0;${bodyStyle(ctx, ink, 'left', 14)}">Quote <strong style="color:${ctx.settings.headingColor}">${inline(code, ctx, ctx.settings.headingColor)}</strong> when you ask.</p>`
+      : ''
+    const recordsValue = p.records as RecordsValue | null
+    const found = recordsValue ? resolveRecords(recordsValue, ctx) : []
+    const drawn = found.length ? spacer(20) + drawRecords(found, recordsValue!.layout, ctx) : ''
+    const cta = blockButton(p, ctx, 'left')
+    const terms = str(p, 'terms')
+    if (terms) ctx.text.push(plain(terms, ctx))
+    const termsHtml = terms
+      ? `<p style="margin:16px 0 0 0;${bodyStyle(ctx, ctx.settings.mutedColor, 'left', 12)}">${inline(terms, ctx, ctx.settings.mutedColor)}</p>`
+      : ''
+    const inner = badge + head + body + codeHtml + drawn + (cta ? spacer(22) + cta : '') + termsHtml
+    if (!head && !body && !drawn) return ''
+    const border = color(p.borderColor, BRAND.border)
+    const card = color(p.cardBackground, BRAND.white)
+    return row(
+      `<table ${TABLE} width="100%"><tr><td bgcolor="${card}" style="background-color:${card};border:1px solid ${border};border-radius:10px;padding:28px">${inner}</td></tr></table>`,
+      p,
+    )
   },
 
   records(p, ctx) {

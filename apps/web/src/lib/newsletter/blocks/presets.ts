@@ -137,9 +137,23 @@ export const PRESETS: BlockPreset[] = [
     secondaryLabel: '',
     secondaryUrl: '',
   }),
+  P('offer-percent', 'offer', 'Offer with a badge', 'A promotion card: badge, offer, terms and a button.'),
+  P('offer-products', 'offer', 'Offer on picked products', 'The offer, then the products it covers as cards.', {
+    badge: 'Ex-stock',
+    heading: 'Ready to ship this week',
+    text: 'These items are on the shelf in the UAE and can leave the same day the order is confirmed.',
+    terms: 'While stock lasts. Quantities confirmed on the quote.',
+    records: { kind: 'product', ids: [], labels: [], layout: 'grid' },
+  }),
   P('social-links', 'social', 'Social links', 'LinkedIn and the website, centred.'),
 
   // From the site
+  P('records-brands', 'records', 'Brands', 'Brand cards with their photo or logo.', {
+    heading: 'Brands we supply',
+    records: { kind: 'brand', ids: [], labels: [], layout: 'grid' },
+    buttonLabel: 'All brands',
+    buttonUrl: '/brands',
+  }),
   P('records-products', 'records', 'Products', 'Product cards, two to a row.', { heading: 'New in stock', records: { kind: 'product', ids: [], labels: [], layout: 'grid' } }),
   P('records-categories', 'records', 'Categories', 'Ranges to browse, as a list.', {
     heading: 'Ranges to browse',

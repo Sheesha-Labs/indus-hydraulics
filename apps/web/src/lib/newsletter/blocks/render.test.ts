@@ -12,6 +12,7 @@ const records: ResolvedRecord[] = [
   { kind: 'product', id: 'p1', title: '2SN hydraulic hose', subtitle: 'Two-wire braid', meta: 'IH-2SN-08', url: '/p/2sn-hose', imageUrl: 'https://cdn.example.com/hose.jpg', imageAlt: 'Coil of 2SN hose' },
   { kind: 'product', id: 'p2', title: 'JIC female swivel', url: `${SITE}/p/jic-swivel`, imageUrl: null },
   { kind: 'article', id: 'a1', title: 'How to read a hose layline', url: '/blog/hose-layline' },
+  { kind: 'brand', id: 'b1', title: 'Parker', subtitle: 'Authorised distributor', meta: 'USA', url: '/brands/parker', imageUrl: 'https://cdn.example.com/parker.jpg', imageAlt: 'Parker hose fittings' },
 ]
 
 const ctx = (over: Partial<DesignRenderContext> = {}): DesignRenderContext => ({
@@ -242,5 +243,43 @@ describe('text alternative', () => {
     expect(text).toContain('Read the guide: https://indushydraulics.com/blog/x.')
     expect(text).toContain('Request a quote: https://indushydraulics.com/contact')
     expect(text).not.toMatch(/<[a-z]/i)
+  })
+})
+
+describe('offer block', () => {
+  it('draws the badge, offer, quote reference, terms and button', () => {
+    const block = newBlock('offer', { badge: '15% off', heading: 'Fittings offer', text: 'On all JIC fittings.', code: 'NOV-15', terms: 'Valid to 30 Nov.' })
+    const { html, text } = renderDesign(design(block), ctx())
+    expect(html).toContain('15% off')
+    expect(html).toContain('Fittings offer')
+    expect(html).toContain('NOV-15')
+    expect(html).toContain('Valid to 30 Nov.')
+    expect(html).toContain('Request a quote')
+    expect(text).toContain('[15% off]')
+    expect(text).toContain('Quote: NOV-15')
+  })
+
+  it('draws the products it covers from live records and drops missing ones', () => {
+    const block = newBlock('offer', { records: { kind: 'product', ids: ['p1', 'gone'], labels: ['2SN', 'Gone'], layout: 'grid' } })
+    const { html } = renderDesign(design(block), ctx())
+    expect(html).toContain('2SN hydraulic hose')
+    expect(html).not.toContain('Gone')
+  })
+
+  it('draws nothing when it has no words and no products', () => {
+    const block = newBlock('offer', { badge: 'x', heading: '', text: '', records: null })
+    const { html } = renderDesign(design(block), ctx())
+    expect(html).not.toContain('>x<')
+  })
+})
+
+describe('brand records', () => {
+  it('draw a brand card with its photo and link', () => {
+    const block = newBlock('records', { heading: 'Brands', records: { kind: 'brand', ids: ['b1'], labels: ['Parker'], layout: 'cards' } })
+    const { html } = renderDesign(design(block), ctx())
+    expect(html).toContain('Parker')
+    expect(html).toContain('/brands/parker')
+    expect(html).toContain('See the brand')
+    expect(html).toContain('alt="Parker hose fittings"')
   })
 })
