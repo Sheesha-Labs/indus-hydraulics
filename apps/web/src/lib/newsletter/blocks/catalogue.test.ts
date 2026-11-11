@@ -45,10 +45,10 @@ describe('block catalogue', () => {
     }
   })
 
-  it('has exactly one records block, in "From the site", with a records field', () => {
+  it('features live records only from the records block and the offer card', () => {
     const records = BLOCKS.filter((b) => b.fields.some((f) => f.kind === 'records'))
-    expect(records.map((b) => b.type)).toEqual(['records'])
-    expect(records[0]?.category).toBe('From the site')
+    expect(records.map((b) => b.type).sort()).toEqual(['offer', 'records'])
+    expect(blockDef('records')?.category).toBe('From the site')
   })
 
   it('resolves Bazar’s underscore spellings to the same block', () => {

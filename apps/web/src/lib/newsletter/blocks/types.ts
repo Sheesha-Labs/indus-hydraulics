@@ -7,7 +7,7 @@
  * Ported from Bazar (lib/newsletter/blocks) without its Arabic edition — Indus
  * is English-only, so there are no `_ar` twins and nothing is drawn right to
  * left. Its "featured records" block shows Indus records instead: products,
- * categories, blog articles and industries.
+ * categories, blog articles, industries and brands.
  *
  * Pure types — the designer imports them on the client.
  */
@@ -15,7 +15,7 @@
 /** An image chosen from (or uploaded to) the media library, or pasted as an https URL. */
 export type ImageValue = { url: string; alt?: string; mediaId?: string | null }
 
-export const RECORD_KINDS = ['product', 'category', 'article', 'industry'] as const
+export const RECORD_KINDS = ['product', 'category', 'article', 'industry', 'brand'] as const
 export type RecordKind = (typeof RECORD_KINDS)[number]
 
 export const RECORD_LAYOUTS = ['list', 'grid', 'cards'] as const
