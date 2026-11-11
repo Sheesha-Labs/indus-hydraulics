@@ -19,9 +19,10 @@ import {
   uploadBlogPostOgImage,
 } from './actions'
 import { ChevronRight, ExternalLink } from 'lucide-react'
-import { Button, Field, Input, Panel, Select, Textarea } from '@indus/ui'
+import { Button, Field, Input, Select, Textarea } from '@indus/ui'
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 import BlogBodyEditor from '../../../../../components/admin/blog/BlogBodyEditor'
+import EditorSection from '../../../../../components/admin/EditorSection'
 import BlogPublishCard from '../../../../../components/admin/blog/BlogPublishCard'
 import { displayStatus } from '../../../../../lib/blog-status'
 import type { BodyMedia } from '../../../../../components/admin/blog/ImageInsertDialog'
@@ -266,31 +267,6 @@ export default function BlogPostEditorClient({
   )
 }
 
-/**
- * A white card on the grey canvas — Bazar's editor section. The fields used to
- * sit straight on the canvas under uppercase eyebrow labels, so a long form
- * read as one undifferentiated column with no edges to scan by.
- */
-function Section({
-  title,
-  description,
-  children,
-}: {
-  title: string
-  description?: ReactNode
-  children: ReactNode
-}) {
-  return (
-    <Panel padding="form" className="flex flex-col gap-5">
-      <div className="flex flex-col gap-1">
-        <h2 className="text-[15px] font-medium text-ih-ink">{title}</h2>
-        {description ? <p className="text-[12.5px] text-ih-muted">{description}</p> : null}
-      </div>
-      {children}
-    </Panel>
-  )
-}
-
 // ── Content tab ─────────────────────────────────────────────────────────────
 
 function ContentForm({
@@ -356,7 +332,7 @@ function ContentForm({
           column, which a wide block card then widens past the viewport. */}
       <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="flex min-w-0 flex-col gap-5">
-          <Section title="Post">
+          <EditorSection title="Post">
             <Field label={<Required>Title</Required>} htmlFor="blogpost-title">
               <Input
                 id="blogpost-title"
@@ -421,9 +397,9 @@ function ContentForm({
                 placeholder="hydraulics, maintenance, pumps"
               />
             </Field>
-          </Section>
+          </EditorSection>
 
-          <Section
+          <EditorSection
             title="Hero image"
             description="Shown at the top of the post and on the blog index card. Landscape, at least 1200px wide."
           >
@@ -450,9 +426,9 @@ function ContentForm({
                 placeholder="One sentence: what the reader should notice in the picture"
               />
             </Field>
-          </Section>
+          </EditorSection>
 
-          <Section
+          <EditorSection
             title="Body"
             description="Headings become the article’s numbered sections and its table of contents. Images are picked from the media library and print with their caption."
           >
@@ -462,9 +438,9 @@ function ContentForm({
               media={bodyMedia}
               uploadAction={uploadBlogPostBodyImage}
             />
-          </Section>
+          </EditorSection>
 
-          <Section title="Byline and review" description="Who wrote it, who checked it, and the date it carries.">
+          <EditorSection title="Byline and review" description="Who wrote it, who checked it, and the date it carries.">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               <Field
                 label="Byline"
@@ -530,13 +506,13 @@ function ContentForm({
                 />
               </Field>
             </div>
-          </Section>
+          </EditorSection>
 
           {/* Lightweight SEO fallbacks so authors can set baseline meta without
               leaving the editor. The richer controls (canonical, robots, OG
               image, schema, sitemap) live in the SEO tab. Both write to the
               same row; whichever was saved last wins. */}
-          <Section
+          <EditorSection
             title="SEO basics"
             description={
               isNew ? (
@@ -565,7 +541,7 @@ function ContentForm({
                 />
               </Field>
             </div>
-          </Section>
+          </EditorSection>
 
           {/* On the new-post path the publish card has no row to act on yet, so
               the footer keeps the two submit buttons. After the first save the
