@@ -1,7 +1,19 @@
 'use client'
 
-import { Button, Checkbox, Input, Select, Textarea } from '@indus/ui'
-import { ArrowDown, ArrowUp, Copy, Trash2 } from 'lucide-react'
+import {
+  Button,
+  Checkbox,
+  Dialog,
+  DialogBody,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  Input,
+  Select,
+  Textarea,
+} from '@indus/ui'
+import { ArrowDown, ArrowUp, ChevronRight, Copy, Palette, Plus, Search, Trash2 } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 
 import { searchRecordsAction } from '../../../app/admin/(shell)/newsletter/campaign-actions'
@@ -15,6 +27,7 @@ import {
   RECORD_KINDS,
   RECORD_LAYOUTS,
   type Block,
+  type BlockCategory,
   type Design,
   type FieldDef,
   type ImageValue,
@@ -35,15 +48,21 @@ const KIND_LABEL: Record<RecordKind, string> = { product: 'Products', category: 
 const LAYOUT_LABEL: Record<string, string> = { list: 'List', grid: 'Grid', cards: 'Cards' }
 
 /**
- * The block designer: a column of blocks, each opened to edit its fields,
- * built entirely from the catalogue's field definitions — a new block type
+ * The block designer, in Bazar's shape: the page settings as a folding row,
+ * then the email as a numbered stack of blocks. A closed row says what the
+ * block is and its first words; one row is open at a time. Each row moves up
+ * or down, duplicates, adds a block below itself, or goes.
+ *
+ * Built entirely from the catalogue's field definitions — a new block type
  * needs no change here. The server normalises whatever this produces, so
  * nothing here is trusted; it only has to be pleasant.
  */
 export default function BlockDesigner({ design, onChange, disabled }: Props_) {
   const [open, setOpen] = useState<string | null>(design.blocks[0]?.id ?? null)
-  const [adding, setAdding] = useState(false)
+  // Where the library will put what is picked: an index, or null when closed.
+  const [insertAt, setInsertAt] = useState<number | null>(null)
   const [showSettings, setShowSettings] = useState(false)
+  const full = design.blocks.length >= MAX_BLOCKS
 
   const setBlocks = (blocks: Block[]) => onChange({ ...design, blocks })
   const setProps = (id: string, props: Props) => setBlocks(design.blocks.map((b) => (b.id === id ? { ...b, props } : b)))
@@ -54,106 +73,117 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
     ;[next[i], next[j]] = [next[j]!, next[i]!]
     setBlocks(next)
   }
-  const insert = (block: Block) => {
-    const at = open ? design.blocks.findIndex((b) => b.id === open) + 1 : design.blocks.length
+  const insert = (block: Block, at: number) => {
     const next = [...design.blocks]
-    next.splice(at > 0 ? at : design.blocks.length, 0, block)
+    next.splice(Math.max(0, Math.min(at, next.length)), 0, block)
     setBlocks(next)
     setOpen(block.id)
-    setAdding(false)
+    setInsertAt(null)
+  }
+  const remove = (b: Block) => {
+    const label = blockDef(b.type)?.label ?? 'this block'
+    if (!window.confirm(`Remove ${label}? Its words and images go with it.`)) return
+    setBlocks(design.blocks.filter((x) => x.id !== b.id))
   }
 
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex flex-wrap items-center gap-2">
-        <Button type="button" kind="outline" size="dense-sm" disabled={disabled || design.blocks.length >= MAX_BLOCKS} onClick={() => setAdding((a) => !a)} aria-expanded={adding}>
-          {adding ? 'Close' : '+ Add block'}
-        </Button>
-        <Button type="button" kind="ghost" size="dense-sm" onClick={() => setShowSettings((s) => !s)} aria-expanded={showSettings}>
-          Colours &amp; type
-        </Button>
-        <span className="text-[12px] text-ih-muted">
-          {design.blocks.length} / {MAX_BLOCKS} blocks{open ? ' · new blocks go below the open one' : ''}
-        </span>
+    <div className="flex flex-col gap-2.5">
+      <div className="rounded-lg border border-ih-border bg-ih-surface-2">
+        <button
+          type="button"
+          onClick={() => setShowSettings((v) => !v)}
+          aria-expanded={showSettings}
+          className="flex w-full items-center gap-2.5 rounded-lg px-3.5 py-3 text-left text-[13.5px] text-ih-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+        >
+          <Palette size={15} strokeWidth={1.7} aria-hidden="true" className="text-ih-muted" />
+          <span className="flex-1">Page colours and typefaces</span>
+          <ChevronRight size={15} aria-hidden="true" className={`text-ih-muted transition-transform ${showSettings ? 'rotate-90' : ''}`} />
+        </button>
+        {showSettings ? (
+          <div className="grid gap-3 border-t border-ih-border bg-ih-surface px-3.5 py-3.5 sm:grid-cols-2">
+            {SETTINGS_FIELDS.map((f) =>
+              f.kind === 'font' ? (
+                <label key={f.key} className="flex flex-col gap-1.5 text-[13px] font-medium text-ih-ink">
+                  {f.label}
+                  <Select
+                    value={String(design.settings[f.key])}
+                    disabled={disabled}
+                    onChange={(e) => onChange({ ...design, settings: { ...design.settings, [f.key]: e.target.value } })}
+                  >
+                    <option value="serif">Serif (headings like the site)</option>
+                    <option value="sans">Sans-serif</option>
+                  </Select>
+                </label>
+              ) : (
+                <ColorField
+                  key={f.key}
+                  label={f.label}
+                  value={String(design.settings[f.key])}
+                  allowBlank={false}
+                  disabled={disabled}
+                  onChange={(v) => onChange({ ...design, settings: { ...design.settings, [f.key]: v } })}
+                />
+              ),
+            )}
+          </div>
+        ) : null}
       </div>
 
-      {showSettings ? (
-        <div className="grid gap-3 rounded-[10px] border border-ih-border p-3 sm:grid-cols-2">
-          {SETTINGS_FIELDS.map((f) =>
-            f.kind === 'font' ? (
-              <label key={f.key} className="flex flex-col gap-1 text-[12.5px] text-ih-muted">
-                {f.label}
-                <Select
-                  value={String(design.settings[f.key])}
-                  disabled={disabled}
-                  onChange={(e) => onChange({ ...design, settings: { ...design.settings, [f.key]: e.target.value } })}
-                >
-                  <option value="serif">Serif (headings like the site)</option>
-                  <option value="sans">Sans-serif</option>
-                </Select>
-              </label>
-            ) : (
-              <ColorField
-                key={f.key}
-                label={f.label}
-                value={String(design.settings[f.key])}
-                allowBlank={false}
-                disabled={disabled}
-                onChange={(v) => onChange({ ...design, settings: { ...design.settings, [f.key]: v } })}
-              />
-            ),
-          )}
-        </div>
-      ) : null}
-
-      {adding ? <AddBlock onPick={insert} /> : null}
-
       {design.blocks.length === 0 ? (
-        <p className="rounded-[10px] border border-dashed border-ih-border p-6 text-center text-[13.5px] text-ih-muted">No blocks yet. Add a heading, some text, a few products.</p>
+        <p className="rounded-lg border border-dashed border-ih-border p-6 text-center text-[13.5px] text-ih-muted">
+          No blocks yet. Add a header, some text, a few products.
+        </p>
       ) : null}
 
-      <ol className="flex flex-col gap-2">
+      <ol className="flex flex-col gap-2.5">
         {design.blocks.map((b, i) => {
           const def = blockDef(b.type)
           const isOpen = open === b.id
+          const words = summary(b)
           return (
-            <li key={b.id} className={`rounded-[10px] border ${isOpen ? 'border-ih-accent' : 'border-ih-border'} bg-ih-surface`}>
-              <div className="flex items-center gap-2 px-3 py-2">
+            <li key={b.id} className={`rounded-lg border bg-ih-surface ${isOpen ? 'border-ih-accent shadow-[0_0_0_3px_var(--color-ih-accent-soft)]' : 'border-ih-border'}`}>
+              <div className="flex items-center gap-1 py-1.5 pl-1.5 pr-2">
                 <button
                   type="button"
-                  className="min-w-0 flex-1 truncate text-left text-[13.5px] font-medium text-ih-ink"
                   aria-expanded={isOpen}
                   onClick={() => setOpen(isOpen ? null : b.id)}
+                  className="flex min-w-0 flex-1 items-center gap-2.5 rounded-md px-2 py-1.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
                 >
-                  {def?.label ?? b.type}
-                  <span className="ml-2 font-normal text-ih-muted">{summary(b)}</span>
+                  <ChevronRight size={15} aria-hidden="true" className={`shrink-0 text-ih-muted transition-transform ${isOpen ? 'rotate-90' : ''}`} />
+                  <span className="w-5 shrink-0 text-right tabular-nums text-[12.5px] text-ih-muted">{i + 1}</span>
+                  <span className="shrink-0 text-[14px] font-medium text-ih-ink">{def?.label ?? b.type}</span>
+                  {words ? <span className="min-w-0 truncate text-[13px] text-ih-muted">· {words}</span> : null}
                 </button>
                 {!disabled ? (
-                  <span className="flex shrink-0 items-center gap-0.5">
-                    <Button type="button" kind="ghost" size="icon-xs" aria-label="Move up" disabled={i === 0} onClick={() => move(i, -1)}>
-                      <ArrowUp size={14} aria-hidden />
+                  <span className="flex shrink-0 items-center">
+                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Move up" title="Move up" disabled={i === 0} onClick={() => move(i, -1)}>
+                      <ArrowUp size={15} aria-hidden />
                     </Button>
-                    <Button type="button" kind="ghost" size="icon-xs" aria-label="Move down" disabled={i === design.blocks.length - 1} onClick={() => move(i, 1)}>
-                      <ArrowDown size={14} aria-hidden />
+                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Move down" title="Move down" disabled={i === design.blocks.length - 1} onClick={() => move(i, 1)}>
+                      <ArrowDown size={15} aria-hidden />
                     </Button>
                     <Button
                       type="button"
                       kind="ghost"
-                      size="icon-xs"
+                      size="icon-sm"
                       aria-label="Duplicate block"
-                      disabled={design.blocks.length >= MAX_BLOCKS}
-                      onClick={() => insert({ id: blockId(), type: b.type, props: structuredClone(b.props) })}
+                      title="Duplicate"
+                      disabled={full}
+                      onClick={() => insert({ id: blockId(), type: b.type, props: structuredClone(b.props) }, i + 1)}
                     >
-                      <Copy size={14} aria-hidden />
+                      <Copy size={15} aria-hidden />
                     </Button>
-                    <Button type="button" kind="ghost" size="icon-xs" aria-label="Delete block" onClick={() => setBlocks(design.blocks.filter((x) => x.id !== b.id))}>
-                      <Trash2 size={14} aria-hidden />
+                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Add a block below" title="Add a block below" disabled={full} onClick={() => setInsertAt(i + 1)}>
+                      <Plus size={15} aria-hidden />
+                    </Button>
+                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Remove block" title="Remove" onClick={() => remove(b)}>
+                      <Trash2 size={15} aria-hidden />
                     </Button>
                   </span>
                 ) : null}
               </div>
               {isOpen && def ? (
-                <fieldset disabled={disabled} className="grid gap-3 border-t border-ih-border px-3 py-3 sm:grid-cols-2">
+                <fieldset disabled={disabled} className="grid gap-4 border-t border-ih-border px-4 py-4 sm:grid-cols-2">
                   {def.fields.map((f) => (
                     <FieldEditor key={f.key} field={f} value={b.props[f.key]} onChange={(v) => setProps(b.id, { ...b.props, [f.key]: v })} />
                   ))}
@@ -163,49 +193,114 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
           )
         })}
       </ol>
+
+      {!disabled ? (
+        <div className="flex flex-wrap items-center gap-3 pt-1">
+          <Button type="button" kind="outline" size="dense" icon={<Plus size={14} aria-hidden />} disabled={full} onClick={() => setInsertAt(design.blocks.length)}>
+            Add a block
+          </Button>
+          <span className="text-[12.5px] text-ih-muted">
+            <span className="tabular-nums">{design.blocks.length}</span> of {MAX_BLOCKS} blocks
+          </span>
+        </div>
+      ) : null}
+
+      <BlockLibrary
+        open={insertAt !== null}
+        onOpenChange={(o) => {
+          if (!o) setInsertAt(null)
+        }}
+        onPick={(block) => insert(block, insertAt ?? design.blocks.length)}
+      />
     </div>
   )
 }
 
-/** A word or two from the block's main text, so a closed list is scannable. */
+/** A few words from the block's main text, so a closed stack is scannable. */
 function summary(b: Block): string {
   const p = b.props
-  const t = [p.heading, p.text, p.label, p.quote, p.name].find((v) => typeof v === 'string' && v.trim())
-  return typeof t === 'string' ? `— ${t.slice(0, 48)}${t.length > 48 ? '…' : ''}` : ''
+  const t = [p.heading, p.text, p.label, p.quote, p.name, p.badge].find((v) => typeof v === 'string' && v.trim())
+  return typeof t === 'string' ? t : ''
 }
 
-function AddBlock({ onPick }: { onPick: (b: Block) => void }) {
+type LibraryEntry = { key: string; label: string; description: string; category: BlockCategory; make: () => Block }
+
+const LIBRARY: LibraryEntry[] = [
+  ...BLOCKS.map((b) => ({ key: `block:${b.type}`, label: b.label, description: b.description, category: b.category, make: () => newBlock(b.type) })),
+  ...PRESETS.flatMap((p) => {
+    const def = blockDef(p.type)
+    return def ? [{ key: `preset:${p.id}`, label: p.label, description: p.description, category: def.category, make: () => newBlock(p.type, p.props) }] : []
+  }),
+]
+
+/**
+ * Bazar's block library: a dialog with search and a category list, rather
+ * than a panel that pushed the whole stack down the page.
+ */
+function BlockLibrary({ open, onOpenChange, onPick }: { open: boolean; onOpenChange: (o: boolean) => void; onPick: (b: Block) => void }) {
+  const [q, setQ] = useState('')
+  const [cat, setCat] = useState<BlockCategory | 'all'>('all')
+  const term = q.trim().toLowerCase()
+  const shown = LIBRARY.filter(
+    (e) => (cat === 'all' || e.category === cat) && (!term || `${e.label} ${e.description}`.toLowerCase().includes(term)),
+  )
   return (
-    <div className="grid gap-4 rounded-[10px] border border-ih-border bg-ih-surface-2 p-3 sm:grid-cols-2">
-      {BLOCK_CATEGORIES.map((cat) => {
-        const blocks = BLOCKS.filter((b) => b.category === cat)
-        const presets = PRESETS.filter((p) => blockDef(p.type)?.category === cat)
-        if (!blocks.length && !presets.length) return null
-        return (
-          <div key={cat}>
-            <p className="mb-1 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{cat}</p>
-            <ul className="flex flex-col gap-0.5">
-              {blocks.map((b) => (
-                <li key={b.type}>
-                  <button type="button" onClick={() => onPick(newBlock(b.type))} className="w-full rounded-md px-2 py-1 text-left hover:bg-ih-surface">
-                    <span className="text-[13px] text-ih-ink">{b.label}</span>
-                    <span className="block text-[11.5px] text-ih-muted">{b.description}</span>
-                  </button>
-                </li>
+    <Dialog
+      open={open}
+      onOpenChange={(o) => {
+        onOpenChange(o)
+        if (!o) {
+          setQ('')
+          setCat('all')
+        }
+      }}
+    >
+      <DialogContent className="max-w-4xl">
+        <DialogHeader>
+          <DialogTitle>Add a block</DialogTitle>
+          <DialogDescription>Every block is a starting point — its words, colours and images stay editable once it is in the email.</DialogDescription>
+        </DialogHeader>
+        <DialogBody>
+          <div className="relative mb-4">
+            <Search size={14} aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ih-muted" />
+            <Input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search blocks" aria-label="Search blocks" className="pl-9" autoFocus />
+          </div>
+          <div className="grid gap-4 md:grid-cols-[180px_minmax(0,1fr)]">
+            <nav aria-label="Block categories" className="flex flex-row flex-wrap gap-1 md:flex-col">
+              {(['all', ...BLOCK_CATEGORIES] as const).map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  aria-current={cat === c ? 'true' : undefined}
+                  onClick={() => setCat(c)}
+                  className={`rounded-md px-2.5 py-1.5 text-left text-[13px] transition-colors ${
+                    cat === c ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2'
+                  }`}
+                >
+                  {c === 'all' ? 'All blocks' : c}
+                </button>
               ))}
-              {presets.map((p) => (
-                <li key={p.id}>
-                  <button type="button" onClick={() => onPick(newBlock(p.type, p.props))} className="w-full rounded-md px-2 py-1 text-left hover:bg-ih-surface">
-                    <span className="text-[13px] text-ih-ink">{p.label}</span>
-                    <span className="block text-[11.5px] text-ih-muted">{p.description}</span>
+            </nav>
+            <ul className="grid max-h-[60vh] gap-2 overflow-y-auto pr-1 sm:grid-cols-2">
+              {shown.length === 0 ? <li className="text-[13px] text-ih-muted">No block matches “{q}”.</li> : null}
+              {shown.map((e) => (
+                <li key={e.key}>
+                  <button
+                    type="button"
+                    onClick={() => onPick(e.make())}
+                    className="flex h-full w-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-3 text-left transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+                  >
+                    <span className="text-[13.5px] font-medium text-ih-ink">{e.label}</span>
+                    <span className="text-[12px] leading-snug text-ih-muted">{e.description}</span>
+                    <span className="mt-auto pt-1 text-[11.5px] text-ih-muted">{e.category}</span>
                   </button>
                 </li>
               ))}
             </ul>
           </div>
-        )
-      })}
-    </div>
+        </DialogBody>
+      </DialogContent>
+    </Dialog>
   )
 }
 
