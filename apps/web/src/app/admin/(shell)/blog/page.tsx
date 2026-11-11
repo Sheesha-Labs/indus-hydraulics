@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import Link from 'next/link'
 import { db, type Prisma } from '@indus/db'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
@@ -11,6 +12,18 @@ import {
   type PublishStatus,
 } from '../../../../lib/blog-status'
 import BlogRowActions from './BlogRowActions'
+import { ExternalLink, Plus, Search, Trash2 } from 'lucide-react'
+import {
+  Button,
+  Input,
+  Panel,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@indus/ui'
 
 export const metadata: Metadata = { title: 'Blog Editor — Indus Admin' }
 
@@ -35,8 +48,6 @@ function relative(date: Date | null): string {
   if (days < 365) return `${Math.floor(days / 30)}mo ago`
   return `${Math.floor(days / 365)}y ago`
 }
-
-const COLUMNS = 'grid grid-cols-[minmax(0,1fr)_110px_150px_130px_90px_80px] gap-3'
 
 export default async function AdminBlogListPage({ params, searchParams }: Props) {
   await params
@@ -89,6 +100,15 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
     statusCounts.find((c) => c.status === s)?._count._all ?? 0
   const liveTotal = statusCounts.reduce((n, c) => n + c._count._all, 0)
   const canDestroy = hasRole(session, ROLES.CATALOGUE_DELETE)
+  // A search narrows the list past what the status counts know about, so the
+  // count then reports the rows actually found.
+  const shownTotal = query
+    ? posts.length
+    : trashed
+      ? trashCount
+      : statusFilter
+        ? countFor(statusFilter)
+        : liveTotal
 
   function href(next: { status?: string; view?: string; q?: string }) {
     const p = new URLSearchParams()
@@ -104,206 +124,213 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
 
   return (
     <AdminPageShell
-      title="Blog Editor"
-      sub={
-        trashed
-          ? `${trashCount} post${trashCount === 1 ? '' : 's'} in the trash`
-          : `${liveTotal} post${liveTotal === 1 ? '' : 's'}`
-      }
+      title="Blog"
+      breadcrumbs="Content · Blog editor"
       actions={
-        <Link
-          href="/admin/blog/new"
-          className="flex h-9 items-center rounded-md bg-ih-accent px-4 tabular-nums text-[12px] text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
-        >
-          + New Post
-        </Link>
+        <Button asChild kind="primary" size="dense">
+          <Link href="/admin/blog/new">
+            <Plus size={14} strokeWidth={1.8} aria-hidden="true" />
+            New post
+          </Link>
+        </Button>
       }
     >
-      {/* Articles / Trash — a view switch, not a filter, so it sits apart from
-          the status chips below it. */}
-      <div className="mb-4 flex flex-wrap items-center gap-3">
-        <div className="inline-flex rounded-md border border-ih-border bg-ih-bg p-0.5">
-          <Link
-            href={href({ view: undefined, status: undefined })}
-            aria-current={trashed ? undefined : 'page'}
-            className={`flex h-7 items-center rounded px-3 tabular-nums text-[11.5px] transition-colors ${
-              trashed ? 'text-ih-muted hover:text-ih-ink' : 'bg-ih-navy font-medium text-ih-bg'
-            }`}
-          >
-            Articles
-          </Link>
-          <Link
-            href={href({ view: 'trash', status: undefined })}
-            aria-current={trashed ? 'page' : undefined}
-            className={`flex h-7 items-center gap-1.5 rounded px-3 tabular-nums text-[11.5px] transition-colors ${
-              trashed ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-muted hover:text-ih-ink'
-            }`}
-          >
-            Trash
-            <span className={trashed ? 'text-ih-bg/70' : 'text-ih-muted-2'}>{trashCount}</span>
-          </Link>
-        </div>
+      <div className="flex flex-col gap-5">
+        {/*
+          One toolbar row, Bazar's order: the view switch (Articles / Trash),
+          then the status filter as a second segmented control, the count as
+          plain text, and search pushed to the right. The status chips used to
+          be a separate row of bordered boxes that read as buttons of equal
+          weight to the view switch.
+        */}
+        <div className="flex flex-wrap items-center gap-3">
+          <Segmented label="View">
+            <SegmentLink href={href({ view: undefined, status: undefined })} active={!trashed}>
+              Articles
+            </SegmentLink>
+            <SegmentLink href={href({ view: 'trash', status: undefined })} active={trashed} count={trashCount}>
+              <Trash2 size={12} strokeWidth={1.8} aria-hidden="true" />
+              Trash
+            </SegmentLink>
+          </Segmented>
 
-        <form action="/admin/blog" className="flex items-center gap-2">
-          {trashed && <input type="hidden" name="view" value="trash" />}
-          {statusFilter && <input type="hidden" name="status" value={statusFilter} />}
-          <label htmlFor="blog-q" className="sr-only">
-            Search posts
-          </label>
-          <input
-            id="blog-q"
-            name="q"
-            defaultValue={query}
-            placeholder="Search title or slug…"
-            className="h-8 w-[240px] rounded-md border border-ih-border bg-ih-surface px-2.5 text-[12.5px] outline-none focus:border-ih-accent"
-          />
-          <button
-            type="submit"
-            className="h-8 rounded-md bg-ih-navy px-3 text-[12px] font-medium text-ih-bg hover:bg-ih-ink"
-          >
-            Search
-          </button>
-          {query && (
-            <Link
-              href={href({ q: undefined })}
-              className="tabular-nums text-[11px] text-ih-muted underline underline-offset-2 hover:text-ih-ink"
-            >
-              Clear
-            </Link>
-          )}
-        </form>
-      </div>
-
-      {!trashed && (
-        <div className="mb-5 flex flex-wrap items-center gap-1.5">
-          <StatusChip href={href({ status: undefined })} active={!statusFilter} label="All" count={liveTotal} />
-          {(['published', 'draft', 'archived'] as const).map((s) => (
-            <StatusChip
-              key={s}
-              href={href({ status: s })}
-              active={statusFilter === s}
-              label={STATUS_LABEL[s]}
-              count={countFor(s)}
-            />
-          ))}
-        </div>
-      )}
-
-      {posts.length === 0 ? (
-        <div className="rounded-lg border border-ih-border py-16 text-center">
-          <p className="mb-3 text-ih-muted">
-            {trashed
-              ? 'Trash is empty. Posts you delete land here first.'
-              : query || statusFilter
-                ? 'No posts match these filters.'
-                : 'No blog posts yet.'}
-          </p>
           {!trashed && (
-            <Link
-              href="/admin/blog/new"
-              className="inline-flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover"
-            >
-              + Write your first post
-            </Link>
+            <Segmented label="Filter by status">
+              <SegmentLink href={href({ status: undefined })} active={!statusFilter} count={liveTotal}>
+                All
+              </SegmentLink>
+              {(['published', 'draft', 'archived'] as const).map((s) => (
+                <SegmentLink key={s} href={href({ status: s })} active={statusFilter === s} count={countFor(s)}>
+                  {STATUS_LABEL[s]}
+                </SegmentLink>
+              ))}
+            </Segmented>
           )}
+
+          <p className="text-[13px] text-ih-muted">
+            {shownTotal} {shownTotal === 1 ? 'post' : 'posts'}
+            {trashed ? ' in trash' : query ? ' found' : ''}
+            {shownTotal > posts.length ? ` · showing the latest ${posts.length}` : ''}
+          </p>
+
+          <form action="/admin/blog" role="search" className="ml-auto flex items-center gap-2">
+            {trashed && <input type="hidden" name="view" value="trash" />}
+            {statusFilter && <input type="hidden" name="status" value={statusFilter} />}
+            <label htmlFor="blog-q" className="sr-only">
+              Search posts by title or slug
+            </label>
+            <span className="relative">
+              <Search
+                size={14}
+                strokeWidth={1.8}
+                aria-hidden="true"
+                className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ih-muted"
+              />
+              <Input
+                id="blog-q"
+                name="q"
+                type="search"
+                defaultValue={query}
+                placeholder="Search title or slug"
+                className="w-[260px] pl-9"
+              />
+            </span>
+            {query && (
+              <Link href={href({ q: undefined })} className="text-[12.5px] text-ih-muted hover:text-ih-ink">
+                Clear
+              </Link>
+            )}
+          </form>
         </div>
-      ) : (
-        <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-          <div
-            className={`${COLUMNS} border-b border-ih-border bg-ih-bg px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted`}
-          >
-            <div>Title</div>
-            <div className="text-center">Status</div>
-            <div>Category</div>
-            <div>Author</div>
-            <div className="text-right">Updated</div>
-            <div className="text-right">Actions</div>
-          </div>
-          {posts.map((post, i) => {
-            const status: PublishStatus = displayStatus(post.status, post.isPublished)
-            return (
-              <div
-                key={post.id}
-                className={`${COLUMNS} items-center px-4 py-3.5 ${
-                  i > 0 ? 'border-t border-ih-border' : ''
-                }`}
-              >
-                <div className="min-w-0">
-                  <Link
-                    href={`/admin/blog/${post.id}`}
-                    className="block truncate text-[13px] font-medium text-ih-ink hover:text-ih-accent"
-                  >
-                    {post.title}
-                  </Link>
-                  <div className="truncate tabular-nums text-[11px] text-ih-muted">/blog/{post.slug}</div>
-                </div>
-                <div className="flex justify-center">
-                  <span
-                    className={`rounded-full px-2 py-0.5 tabular-nums text-[11px] font-medium ${STATUS_STYLE[status]}`}
-                  >
-                    {STATUS_LABEL[status]}
-                  </span>
-                </div>
-                <div className="truncate text-[12.5px] text-ih-ink-2">
-                  {post.category?.name ?? '—'}
-                </div>
-                <div className="truncate text-[12.5px] text-ih-ink-2">
-                  {post.blogAuthor?.name ?? post.author?.name ?? '—'}
-                </div>
-                <div className="text-right tabular-nums text-[11.5px] text-ih-muted">
-                  {relative(post.updatedAt)}
-                </div>
-                <div className="flex flex-col items-end gap-1">
-                  {status === 'published' && !trashed && (
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="tabular-nums text-[11px] text-ih-accent hover:underline"
-                    >
-                      View ↗
-                    </Link>
-                  )}
-                  <BlogRowActions
-                    id={post.id}
-                    title={post.title}
-                    archived={post.status === 'archived'}
-                    trashed={trashed}
-                    canDestroy={canDestroy}
-                  />
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      )}
+
+        {posts.length === 0 ? (
+          <Panel padding="empty">
+            <p className="text-ih-muted">
+              {trashed
+                ? 'Trash is empty. Posts you delete land here first.'
+                : query || statusFilter
+                  ? 'No posts match these filters.'
+                  : 'No blog posts yet.'}
+            </p>
+            {!trashed && !query && !statusFilter && (
+              <Button asChild kind="primary" size="dense" className="mt-4">
+                <Link href="/admin/blog/new">
+                  <Plus size={14} strokeWidth={1.8} aria-hidden="true" />
+                  Write the first post
+                </Link>
+              </Button>
+            )}
+          </Panel>
+        ) : (
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[46%] text-ih-ink">Title</TableHead>
+                <TableHead className="text-ih-ink">Status</TableHead>
+                <TableHead className="text-ih-ink">Category</TableHead>
+                <TableHead className="text-ih-ink">Author</TableHead>
+                <TableHead className="text-ih-ink">Updated</TableHead>
+                <TableHead className="text-right text-ih-ink">
+                  <span className="sr-only">Actions</span>
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {posts.map((post) => {
+                const status: PublishStatus = displayStatus(post.status, post.isPublished)
+                return (
+                  <TableRow key={post.id}>
+                    <TableCell className="max-w-0 py-3.5">
+                      <Link href={`/admin/blog/${post.id}`} className="group block min-w-0">
+                        <span className="block truncate text-[14px] font-medium text-ih-ink transition-colors group-hover:text-ih-accent">
+                          {post.title}
+                        </span>
+                        <span className="mt-0.5 block truncate text-[12px] text-ih-muted">/blog/{post.slug}</span>
+                      </Link>
+                    </TableCell>
+                    <TableCell>
+                      <span
+                        className={`inline-flex h-[22px] items-center rounded-full px-2 text-[11.5px] font-medium ${STATUS_STYLE[status]}`}
+                      >
+                        {STATUS_LABEL[status]}
+                      </span>
+                    </TableCell>
+                    <TableCell className="max-w-[200px] truncate text-[13px] text-ih-ink-2">
+                      {post.category?.name ?? '—'}
+                    </TableCell>
+                    <TableCell className="max-w-[180px] truncate text-[13px] text-ih-ink-2">
+                      {post.blogAuthor?.name ?? post.author?.name ?? '—'}
+                    </TableCell>
+                    <TableCell className="whitespace-nowrap text-[12.5px] text-ih-muted">
+                      {relative(post.updatedAt)}
+                    </TableCell>
+                    <TableCell className="text-right">
+                      <span className="inline-flex items-center justify-end gap-1">
+                        {status === 'published' && !trashed && (
+                          <Link
+                            href={`/blog/${post.slug}`}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`View “${post.title}” on the site`}
+                            title="View on the site"
+                            className="inline-flex h-7 items-center gap-1 rounded-md px-2 text-[12.5px] text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+                          >
+                            View
+                            <ExternalLink size={12} strokeWidth={1.8} aria-hidden="true" />
+                          </Link>
+                        )}
+                        <BlogRowActions
+                          id={post.id}
+                          title={post.title}
+                          archived={post.status === 'archived'}
+                          trashed={trashed}
+                          canDestroy={canDestroy}
+                        />
+                      </span>
+                    </TableCell>
+                  </TableRow>
+                )
+              })}
+            </TableBody>
+          </Table>
+        )}
+      </div>
     </AdminPageShell>
   )
 }
 
-function StatusChip({
+/** A rounded segmented control: Bazar's Articles / Trash switch. */
+function Segmented({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <nav aria-label={label} className="inline-flex rounded-md border border-ih-border bg-ih-surface p-0.5">
+      {children}
+    </nav>
+  )
+}
+
+function SegmentLink({
   href,
   active,
-  label,
   count,
+  children,
 }: {
   href: string
   active: boolean
-  label: string
-  count: number
+  count?: number
+  children: ReactNode
 }) {
   return (
     <Link
       href={href}
       aria-current={active ? 'page' : undefined}
-      className={`inline-flex h-7 items-center gap-1.5 rounded-md border px-2.5 tabular-nums text-[11px] transition-colors ${
-        active
-          ? 'border-ih-accent bg-ih-accent-soft text-ih-accent'
-          : 'border-ih-border text-ih-muted hover:border-ih-border-strong hover:text-ih-ink'
+      className={`inline-flex h-7 items-center gap-1.5 rounded px-2.5 text-[12.5px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
+        active ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
       }`}
     >
-      {label}
-      <span className={active ? 'text-ih-accent' : 'text-ih-muted-2'}>{count}</span>
+      {children}
+      {count !== undefined ? (
+        <span className={`tabular-nums text-[11.5px] ${active ? 'text-ih-bg/75' : 'text-ih-muted'}`}>{count}</span>
+      ) : null}
     </Link>
   )
 }
