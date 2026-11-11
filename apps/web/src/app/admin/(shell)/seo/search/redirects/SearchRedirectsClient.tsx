@@ -6,7 +6,7 @@ import {
   deleteSearchRedirect,
   toggleSearchRedirect,
 } from './actions'
-import { Input } from '@indus/ui'
+import { Input, DeleteButton } from '@indus/ui'
 
 type Row = { id: string; query: string; targetUrl: string; isActive: boolean }
 
@@ -165,14 +165,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
                     </button>
                   </td>
                   <td className="px-3 py-3 text-right">
-                    <button
-                      type="button"
-                      onClick={() => handleDelete(r.id)}
-                      disabled={pending}
-                      className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
-                    >
-                      Delete
-                    </button>
+                    <DeleteButton label={`Delete redirect for ${r.query}`} size="sm" onClick={() => handleDelete(r.id)} disabled={pending} />
                   </td>
                 </tr>
               ))}

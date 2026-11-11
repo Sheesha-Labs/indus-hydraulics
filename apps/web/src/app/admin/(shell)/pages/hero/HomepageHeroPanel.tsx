@@ -8,6 +8,7 @@
  * Talks to the server actions in cms/actions.ts.
  */
 
+import { DeleteButton } from '@indus/ui'
 import { useState, useTransition } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -230,15 +231,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                   </button>
                 </div>
                 <div className="flex justify-end">
-                  <button
-                    type="button"
-                    onClick={() => handleDelete(slide.id)}
-                    disabled={pending}
-                    aria-label="Delete slide"
-                    className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
-                  >
-                    Delete
-                  </button>
+                  <DeleteButton label="Delete slide" size="sm" onClick={() => handleDelete(slide.id)} disabled={pending} />
                 </div>
               </div>
             ))}

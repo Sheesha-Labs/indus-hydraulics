@@ -1,5 +1,6 @@
 'use client'
 
+import { DeleteButton } from '@indus/ui'
 import { useState, useTransition } from 'react'
 import Link from 'next/link'
 import {
@@ -545,9 +546,10 @@ function DeleteFieldButton({
   const [error, setError] = useState<string | null>(null)
   return (
     <>
-      <button
-        type="button"
-        disabled={pending}
+      <DeleteButton
+        label="Delete field"
+        size="sm"
+        pending={pending}
         onClick={() => {
           if (
             !confirm(
@@ -561,10 +563,7 @@ function DeleteFieldButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30"
-      >
-        {pending ? '…' : 'Delete'}
-      </button>
+      />
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )

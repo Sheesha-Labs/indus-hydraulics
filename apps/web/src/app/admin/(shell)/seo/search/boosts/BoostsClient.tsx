@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { upsertSearchBoost, deleteSearchBoost } from './actions'
-import { Input } from '@indus/ui'
+import { Input, DeleteButton } from '@indus/ui'
 
 type Row = {
   id: string
@@ -149,14 +149,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
                       : '—'}
                   </td>
                   <td className="px-3 py-3 text-right">
-                    <button
-                      type="button"
-                      onClick={() => handleDelete(r.id)}
-                      disabled={pending}
-                      className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
-                    >
-                      Delete
-                    </button>
+                    <DeleteButton label={`Delete boost for ${r.sku}`} size="sm" onClick={() => handleDelete(r.id)} disabled={pending} />
                   </td>
                 </tr>
               ))}

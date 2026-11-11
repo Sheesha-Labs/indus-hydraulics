@@ -12,6 +12,7 @@ import {
   TableHeader,
   TableRow,
   Textarea,
+  DeleteButton,
 } from '@indus/ui'
 import { createSpecTemplate, deleteSpecTemplate } from './actions'
 
@@ -192,10 +193,12 @@ function DeleteTemplateButton({
 
   return (
     <>
-      <button
-        type="button"
-        disabled={pending || hasProducts}
+      <DeleteButton
+        label="Delete template"
+        size="sm"
         title={hasProducts ? 'Cannot delete: products use this template' : 'Delete template'}
+        disabled={hasProducts}
+        pending={pending}
         onClick={() => {
           if (!confirm('Delete this template?')) return
           setError(null)
@@ -204,10 +207,7 @@ function DeleteTemplateButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30 disabled:cursor-not-allowed"
-      >
-        {pending ? '…' : 'Delete'}
-      </button>
+      />
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )

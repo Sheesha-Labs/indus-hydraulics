@@ -3,6 +3,7 @@ export * from './tone'
 // design_handoff_indus_hydraulics_v2/design-source/tokens.css; these are its
 // React expression. Specimen page: /_design.
 export * from './Button'
+export * from './DeleteButton'
 export * from './Field'
 export * from './Badge'
 export * from './Surface'

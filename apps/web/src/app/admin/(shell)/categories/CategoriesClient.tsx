@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useMemo, useState, useTransition } from 'react'
-import { Field, Input } from '@indus/ui'
+import { Field, Input, DeleteButton } from '@indus/ui'
 import {
   ancestorPath,
   buildMoveOrdering,
@@ -453,14 +453,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
             </select>
           </label>
 
-          <button
-            type="button"
-            disabled={pending}
-            onClick={runBulkDelete}
-            className="h-8 rounded-[4px] px-2.5 text-[12px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
-          >
-            Delete
-          </button>
+          <DeleteButton label="Delete" showLabel title="Delete selected categories" disabled={pending} onClick={runBulkDelete} />
           <button
             type="button"
             onClick={() => setSelected(new Set())}

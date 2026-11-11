@@ -14,6 +14,7 @@ import {
   TableHeader,
   TableRow,
   Textarea,
+  DeleteButton,
 } from '@indus/ui'
 
 type Brand = {
@@ -274,10 +275,12 @@ function DeleteBrandButton({
 
   return (
     <>
-      <button
-        type="button"
-        disabled={pending || hasProducts}
+      <DeleteButton
+        label="Delete brand"
+        size="sm"
         title={hasProducts ? 'Cannot delete: products reference this brand' : 'Delete brand'}
+        disabled={hasProducts}
+        pending={pending}
         onClick={() => {
           if (!confirm('Delete this brand?')) return
           setError(null)
@@ -286,10 +289,7 @@ function DeleteBrandButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30 disabled:cursor-not-allowed"
-      >
-        {pending ? '…' : 'Delete'}
-      </button>
+      />
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )

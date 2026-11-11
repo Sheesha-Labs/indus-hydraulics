@@ -62,7 +62,7 @@ export default async function NewsletterTemplatesPage() {
               cell: (t) => (
                 <div className="flex flex-wrap justify-end gap-1">
                   <StartCampaignButton input={{ templateId: t.id }} label="Use" kind="outline" />
-                  <ActionButton action={deleteTemplateAction.bind(null, t.id)} confirm={`Delete the template “${t.name}”? Newsletters made from it are not affected.`} aria-label={`Delete template ${t.name}`}>
+                  <ActionButton action={deleteTemplateAction.bind(null, t.id)} confirm={`Delete the template “${t.name}”? Newsletters made from it are not affected.`} aria-label={`Delete template ${t.name}`} trash>
                     Delete
                   </ActionButton>
                 </div>
