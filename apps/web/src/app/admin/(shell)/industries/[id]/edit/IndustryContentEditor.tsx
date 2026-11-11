@@ -1,5 +1,6 @@
 'use client'
 
+import { DeleteButton } from '@indus/ui'
 import { useState, useTransition } from 'react'
 import {
   updateIndustryContent,
@@ -337,14 +338,7 @@ function CaseStudyRow({
         >
           Edit
         </button>
-        <button
-          type="button"
-          onClick={onDelete}
-          disabled={pending}
-          className="h-7 px-3 text-[11px] rounded-lg border border-ih-border bg-ih-surface text-ih-danger-ink hover:border-[oklch(0.55_0.16_25)] disabled:opacity-50"
-        >
-          {pending ? 'Deleting…' : 'Delete'}
-        </button>
+        <DeleteButton label={`Delete case study ${caseStudy.title}`} size="sm" pending={pending} onClick={onDelete} />
       </div>
     </div>
   )

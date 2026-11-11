@@ -3,7 +3,7 @@
 import { useState, useTransition } from 'react'
 import type { Redirect } from '@indus/db'
 import { addRedirect, deleteRedirect } from '../actions'
-import { Input, Select } from '@indus/ui'
+import { Input, Select, DeleteButton } from '@indus/ui'
 
 interface Props {
   redirects: Redirect[]
@@ -158,13 +158,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
                     {r.lastHitAt ? new Date(r.lastHitAt).toLocaleDateString() : '—'}
                   </td>
                   <td className="px-4 py-3 text-right">
-                    <button
-                      onClick={() => handleDelete(r.id)}
-                      disabled={isPending}
-                      className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
-                    >
-                      Delete
-                    </button>
+                    <DeleteButton label={`Delete redirect from ${r.fromPath}`} size="sm" onClick={() => handleDelete(r.id)} disabled={isPending} />
                   </td>
                 </tr>
               ))}

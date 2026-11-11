@@ -1,3 +1,4 @@
+import { Trash2 } from 'lucide-react'
 import { db, Prisma } from '@indus/db'
 import { DataTable, EmptyState, Field, Input, NavTabs, Pagination, Panel, StatusPill, type StatusTone } from '@indus/ui'
 import type { Metadata } from 'next'
@@ -115,6 +116,7 @@ export default async function NewsletterListPage({ params, searchParams }: Props
               action={deleteListAction.bind(null, id)}
               kind="danger"
               size="dense"
+              icon={<Trash2 className="h-4 w-4" aria-hidden="true" />}
               confirm={`Delete “${list.name}” and all ${all.toLocaleString('en-US')} addresses on it? This cannot be undone. Anyone who unsubscribed stays suppressed.`}
             >
               Delete list
@@ -220,6 +222,7 @@ export default async function NewsletterListPage({ params, searchParams }: Props
                     action={removeContactAction.bind(null, id, c.id)}
                     confirm={`Remove ${c.email} from this list? This does not unsubscribe them.`}
                     aria-label={`Remove ${c.email} from the list`}
+                    trash
                   >
                     Remove
                   </ActionButton>

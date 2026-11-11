@@ -1,5 +1,6 @@
 'use client'
 
+import { Trash2 } from 'lucide-react'
 import { Button, Callout, Checkbox, Field, Input, Panel, StatusPill } from '@indus/ui'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -362,6 +363,7 @@ export default function Composer(props: Props) {
                   type="button"
                   kind="danger"
                   size="dense"
+                  icon={<Trash2 className="h-4 w-4" aria-hidden="true" />}
                   disabled={pending}
                   onClick={() => {
                     if (window.confirm('Delete this newsletter? This cannot be undone.')) run(() => deleteCampaignAction(id))

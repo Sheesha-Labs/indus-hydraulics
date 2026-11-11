@@ -12,6 +12,7 @@ import {
   TableHeader,
   TableRow,
   Textarea,
+  DeleteButton,
 } from '@indus/ui'
 import { useState, useTransition } from 'react'
 import { createIndustry, updateIndustry, deleteIndustry } from './actions'
@@ -238,10 +239,12 @@ function DeleteIndustryButton({
 
   return (
     <>
-      <button
-        type="button"
-        disabled={pending || hasAccounts}
+      <DeleteButton
+        label="Delete industry"
+        size="sm"
         title={hasAccounts ? 'Cannot delete: accounts reference this industry' : 'Delete industry'}
+        disabled={hasAccounts}
+        pending={pending}
         onClick={() => {
           if (!confirm('Delete this industry?')) return
           setError(null)
@@ -250,10 +253,7 @@ function DeleteIndustryButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30 disabled:cursor-not-allowed"
-      >
-        {pending ? '…' : 'Delete'}
-      </button>
+      />
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )

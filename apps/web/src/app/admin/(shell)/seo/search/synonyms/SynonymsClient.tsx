@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { upsertSynonymGroup, deleteSynonymGroup, toggleSynonymGroup } from './actions'
-import { Input } from '@indus/ui'
+import { Input, DeleteButton } from '@indus/ui'
 
 type Group = { group: string; terms: string[]; isActive: boolean }
 
@@ -217,14 +217,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                         Edit
                       </button>
                     )}
-                    <button
-                      type="button"
-                      onClick={() => handleDelete(g.group)}
-                      disabled={pending}
-                      className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
-                    >
-                      Delete
-                    </button>
+                    <DeleteButton label={`Delete synonym group ${g.group}`} size="sm" onClick={() => handleDelete(g.group)} disabled={pending} />
                   </td>
                 </tr>
               ))}

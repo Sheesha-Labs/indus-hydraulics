@@ -1,5 +1,6 @@
 'use client'
 
+import { DeleteButton } from '@indus/ui'
 import { useState, useMemo } from 'react'
 
 /**
@@ -34,13 +35,7 @@ export function ChipsEditor({ name, defaultValue }: { name: string; defaultValue
             placeholder='e.g. "API 6A / 16A RATED"'
             className="rounded-md flex-1 h-9 px-3 border border-ih-border text-[13px]"
           />
-          <button
-            type="button"
-            onClick={() => update(items.filter((_, idx) => idx !== i))}
-            className="rounded-md h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
-          >
-            Remove
-          </button>
+          <DeleteButton label="Remove item" className="h-9 w-9" onClick={() => update(items.filter((_, idx) => idx !== i))} />
         </div>
       ))}
       <button
@@ -91,13 +86,7 @@ export function StatsEditor({ name, defaultValue }: { name: string; defaultValue
             placeholder='label e.g. "OIL & GAS CUSTOMERS"'
             className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
           />
-          <button
-            type="button"
-            onClick={() => update(items.filter((_, idx) => idx !== i))}
-            className="rounded-md h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
-          >
-            Remove
-          </button>
+          <DeleteButton label="Remove item" className="h-9 w-9" onClick={() => update(items.filter((_, idx) => idx !== i))} />
         </div>
       ))}
       <button
@@ -170,13 +159,7 @@ export function DeliveryAreasEditor({
               placeholder='SKU count e.g. "78 SKUs"'
               className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
             />
-            <button
-              type="button"
-              onClick={() => update(items.filter((_, idx) => idx !== i))}
-              className="rounded-md h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
-            >
-              Remove
-            </button>
+            <DeleteButton label="Remove item" className="h-9 w-9" onClick={() => update(items.filter((_, idx) => idx !== i))} />
           </div>
           <textarea
             value={row.description}
@@ -325,15 +308,13 @@ export function SupportBlockEditor({
               placeholder="single bullet"
               className="rounded-md flex-1 h-9 px-3 border border-ih-border text-[13px]"
             />
-            <button
-              type="button"
+            <DeleteButton
+              label="Remove bullet"
+              className="h-9 w-9"
               onClick={() => {
                 setState({ ...state, bullets: state.bullets.filter((_, idx) => idx !== i) })
               }}
-              className="rounded-md h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
-            >
-              Remove
-            </button>
+            />
           </div>
         ))}
         <button

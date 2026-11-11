@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, useTransition } from 'react'
-import { controlClassName, controlHeightClassName } from '@indus/ui'
+import { controlClassName, controlHeightClassName, DeleteButton } from '@indus/ui'
 import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, { type SeoDrawerEntity } from '../../../../../../components/admin/seo/SeoEntityDrawer'
@@ -282,7 +282,7 @@ export default function ProductEditorClient({
               Preview ↗
             </span>
           )}
-          <DeleteButton id={product.id} />
+          <DeleteProductButton id={product.id} />
         </>
       }
     >
@@ -1172,14 +1172,7 @@ function SpecRow({
         >
           Edit
         </button>
-        <button
-          type="button"
-          onClick={onDelete}
-          disabled={pending}
-          className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
-        >
-          Remove
-        </button>
+        <DeleteButton label="Remove spec" size="sm" onClick={onDelete} disabled={pending} />
       </div>
     </div>
   )
@@ -1356,14 +1349,7 @@ function ImagesTab({
                     ↓
                   </button>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => onDelete(img.id)}
-                  disabled={pending}
-                  className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
-                >
-                  Remove
-                </button>
+                <DeleteButton label="Remove image" size="sm" onClick={() => onDelete(img.id)} disabled={pending} />
               </div>
             </div>
           ))}
@@ -1488,14 +1474,7 @@ function DocumentsTab({
               </div>
               <span className="font-mono text-[11px] text-ih-muted uppercase">{d.language}</span>
               <span className="font-mono text-[10.5px] text-ih-muted-2">{d.isGated ? 'gated' : 'public'}</span>
-              <button
-                type="button"
-                onClick={() => onDelete(d.id)}
-                disabled={pending}
-                className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50 text-right"
-              >
-                Remove
-              </button>
+              <DeleteButton label="Remove document" size="sm" className="justify-self-end" onClick={() => onDelete(d.id)} disabled={pending} />
             </div>
           ))}
         </div>
@@ -1701,14 +1680,7 @@ function CrossRefRow({
         >
           Edit
         </button>
-        <button
-          type="button"
-          onClick={onDelete}
-          disabled={pending}
-          className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
-        >
-          Remove
-        </button>
+        <DeleteButton label="Remove cross-reference" size="sm" onClick={onDelete} disabled={pending} />
       </div>
     </div>
   )
@@ -1938,14 +1910,7 @@ function FaqRow({
         >
           Edit
         </button>
-        <button
-          type="button"
-          onClick={onDelete}
-          disabled={pending}
-          className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
-        >
-          Remove
-        </button>
+        <DeleteButton label="Remove FAQ" size="sm" onClick={onDelete} disabled={pending} />
       </div>
     </div>
   )
@@ -2152,14 +2117,16 @@ function SaveButton({ pending, children }: { pending: boolean; children: React.R
   )
 }
 
-function DeleteButton({ id }: { id: string }) {
+function DeleteProductButton({ id }: { id: string }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   return (
     <>
-      <button
-        type="button"
-        disabled={pending}
+      <DeleteButton
+        label="Delete product"
+        showLabel
+        className="h-9 border border-ih-border hover:border-ih-danger-line"
+        pending={pending}
         onClick={() => {
           if (!confirm('Permanently delete this product? This cannot be undone.')) return
           setError(null)
@@ -2168,10 +2135,7 @@ function DeleteButton({ id }: { id: string }) {
             if (res && !res.success) setError(res.message)
           })
         }}
-        className="rounded-md h-9 px-3 border border-ih-border text-[12px] text-ih-muted hover:border-[oklch(0.5_0.18_25)] hover:text-ih-danger-ink disabled:opacity-50"
-      >
-        {pending ? 'Deleting…' : 'Delete'}
-      </button>
+      />
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )
