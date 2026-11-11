@@ -151,7 +151,7 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
                 >
                   <ChevronRight size={15} aria-hidden="true" className={`shrink-0 text-ih-muted transition-transform ${isOpen ? 'rotate-90' : ''}`} />
                   <span className="w-5 shrink-0 text-right tabular-nums text-[12.5px] text-ih-muted">{i + 1}</span>
-                  <span className="shrink-0 text-[14px] font-medium text-ih-ink">{def?.label ?? b.type}</span>
+                  <span className="min-w-0 max-w-[60%] shrink-0 truncate text-[14px] font-medium text-ih-ink">{def?.label ?? b.type}</span>
                   {words ? <span className="min-w-0 truncate text-[13px] text-ih-muted">· {words}</span> : null}
                 </button>
                 {!disabled ? (

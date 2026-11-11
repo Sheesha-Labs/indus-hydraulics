@@ -697,9 +697,9 @@ export const BLOCKS: BlockDef[] = [
   },
   {
     type: 'records',
-    label: 'Products, brands, categories, articles or industries',
+    label: 'Featured from the site',
     category: 'From the site',
-    description: 'Cards for records picked from the site — drawn from the live record when the email is sent.',
+    description: 'Products, brands, categories, articles or industries picked from the site — drawn from the live record when the email is sent.',
     fields: [
       text('heading', 'Heading'),
       HEADING_SIZE,

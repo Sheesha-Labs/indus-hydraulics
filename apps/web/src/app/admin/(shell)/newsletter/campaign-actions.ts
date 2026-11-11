@@ -13,6 +13,8 @@ import { audienceSize, campaignProblemsLive, draftOf, renderPreview, sendTest } 
 import { searchRecords, type RecordOption } from '../../../../lib/newsletter/records'
 import { senderSettingsSchema } from '../../../../lib/newsletter/sender'
 import { STARTERS, starterDraft, type Starter } from '../../../../lib/newsletter/starters'
+import { BUILT_IN_TEMPLATE_IDS, type BuiltInTemplateId } from '../../../../lib/newsletter/template-catalogue'
+import { TemplateRecordMissing, builtInTemplateDraft } from '../../../../lib/newsletter/templates'
 import { NEWSLETTER_SEND_EVENT } from '../../../../inngest/newsletterSend'
 import { inngest } from '../../../../inngest/client'
 import { PACE_OPTIONS } from '../../../../lib/newsletter/send'
@@ -53,18 +55,30 @@ function contentData(d: CampaignDraft) {
 // ── Create ─────────────────────────────────────────────────────────────
 
 const createSchema = z.union([
+  z.object({ template: z.enum(BUILT_IN_TEMPLATE_IDS), recordId: z.string().uuid().optional() }),
   z.object({ starter: z.enum(STARTERS) }),
   z.object({ templateId: z.string().uuid() }),
   z.object({ duplicateOf: z.string().uuid() }),
 ])
 
-export async function createCampaignAction(input: { starter: Starter } | { templateId: string } | { duplicateOf: string }): Promise<Result<never>> {
+export async function createCampaignAction(
+  input: { template: BuiltInTemplateId; recordId?: string } | { starter: Starter } | { templateId: string } | { duplicateOf: string },
+): Promise<Result<never>> {
   let id: string
   try {
     const session = requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
     const parsed = createSchema.parse(input)
     let data: Prisma.NewsletterCampaignUncheckedCreateInput
-    if ('starter' in parsed) {
+    if ('template' in parsed) {
+      let d: CampaignDraft
+      try {
+        d = await builtInTemplateDraft(parsed.template, parsed.recordId)
+      } catch (err) {
+        if (err instanceof TemplateRecordMissing) return fail('NOT_FOUND', err.message)
+        throw err
+      }
+      data = { ...contentData(d), audience: 'all', listIds: [] }
+    } else if ('starter' in parsed) {
       const d = await starterDraft(parsed.starter)
       data = { ...contentData(d), audience: 'all', listIds: [] }
     } else if ('templateId' in parsed) {
