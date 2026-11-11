@@ -90,7 +90,7 @@ export default function AdminPageShell({
       <header className="flex h-[60px] shrink-0 items-center gap-4 border-b border-ih-border bg-ih-surface px-7">
         <div className="min-w-0 flex-1">
           {breadcrumbs ?? sub ? (
-            <div className="mb-0.5 truncate text-[11.5px] text-ih-muted">{breadcrumbs ?? sub}</div>
+            <div className="mb-0.5 truncate text-[11.5px] text-ih-muted [&_a]:text-ih-accent [&_a]:transition-colors [&_a:hover]:text-ih-navy">{breadcrumbs ?? sub}</div>
           ) : null}
           <h1 className="truncate text-[18px] font-medium tracking-tight text-ih-ink">{title}</h1>
         </div>

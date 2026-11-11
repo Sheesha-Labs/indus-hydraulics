@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, {
@@ -18,7 +18,8 @@ import {
   uploadBlogPostHeroImage,
   uploadBlogPostOgImage,
 } from './actions'
-import { Input, Textarea } from '@indus/ui'
+import { ChevronRight, ExternalLink } from 'lucide-react'
+import { Button, Field, Input, Panel, Select, Textarea } from '@indus/ui'
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 import BlogBodyEditor from '../../../../../components/admin/blog/BlogBodyEditor'
 import BlogPublishCard from '../../../../../components/admin/blog/BlogPublishCard'
@@ -170,9 +171,20 @@ export default function BlogPostEditorClient({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
+  const isLive = post ? displayStatus(post.status, post.isPublished) === 'published' : false
+
   return (
     <AdminPageShell
-      title={isNew ? 'New Blog Post' : post?.title ?? 'Edit Post'}
+      title={isNew ? 'New post' : post?.title ?? 'Edit post'}
+      // Where you are, above what it is — Bazar's order. The crumb is also the
+      // way back to the list, which used to be a separate "← All posts" button.
+      breadcrumbs={
+        <span className="inline-flex min-w-0 items-center gap-1">
+          <Link href="/admin/blog">Blog</Link>
+          <ChevronRight size={11} aria-hidden="true" className="shrink-0" />
+          <span className="truncate">{isNew ? 'New post' : `/blog/${post?.slug ?? ''}`}</span>
+        </span>
+      }
       actions={
         <>
           {/* savedAt is client state, bumped by this editor's own tabs. The
@@ -180,30 +192,36 @@ export default function BlogPostEditorClient({
               the server page would sever the indicator from every writer and
               it would never appear after a save. */}
           {savedAt && (
-            <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
+            <span role="status" className="text-[12.5px] text-ih-success-ink">
+              Saved at {savedAt}
+            </span>
           )}
-          <Link
-            href="/admin/blog"
-            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
-          >
-            ← All posts
-          </Link>
+          {isLive && post && (
+            <a
+              href={post.publicUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-9 items-center gap-1.5 rounded-md px-2.5 text-[13px] text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+            >
+              View on site
+              <ExternalLink size={13} strokeWidth={1.8} aria-hidden="true" />
+            </a>
+          )}
         </>
       }
-      bodyClassName="max-w-[860px]"
+      bodyClassName="max-w-[1320px]"
     >
-
       {!isNew && (
-        <div className="flex border-b border-ih-border mb-6">
+        <div role="tablist" aria-label="Editor sections" className="mb-5 inline-flex rounded-md border border-ih-border bg-ih-surface p-0.5">
           {TABS.map((t) => (
             <button
               key={t.id}
               type="button"
+              role="tab"
+              aria-selected={tab === t.id}
               onClick={() => setTab(t.id)}
-              className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px ${
-                tab === t.id
-                  ? 'border-ih-accent text-ih-ink'
-                  : 'border-transparent text-ih-muted hover:text-ih-ink-2'
+              className={`inline-flex h-7 items-center rounded px-3 text-[12.5px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
+                tab === t.id ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
               }`}
             >
               {t.label}
@@ -222,30 +240,58 @@ export default function BlogPostEditorClient({
           categories={categories}
           bodyMedia={bodyMedia}
           savedAt={savedAt}
+          onOpenSeo={() => setTab('seo')}
         />
       )}
 
       {tab === 'seo' && !isNew && post && (
-        <SeoEntityDrawer
-          entityType="blog_post"
-          entity={toSeoEntity(post)}
-          extra={{
-            kind: 'blog_post',
-            heroImageUrl: post.heroImageUrl,
-            authorName: post.authorName,
-            publishedAt: post.publishedAt,
-          }}
-          recentImages={recentImages}
-          saveAction={updateBlogPostSeo}
-          uploadAction={uploadBlogPostOgImage}
-          onSaved={() => setSavedAt(new Date().toLocaleTimeString())}
-        />
+        <div className="max-w-[920px]">
+          <SeoEntityDrawer
+            entityType="blog_post"
+            entity={toSeoEntity(post)}
+            extra={{
+              kind: 'blog_post',
+              heroImageUrl: post.heroImageUrl,
+              authorName: post.authorName,
+              publishedAt: post.publishedAt,
+            }}
+            recentImages={recentImages}
+            saveAction={updateBlogPostSeo}
+            uploadAction={uploadBlogPostOgImage}
+            onSaved={() => setSavedAt(new Date().toLocaleTimeString())}
+          />
+        </div>
       )}
     </AdminPageShell>
   )
 }
 
-// ── Content tab — preserves the original inline form layout. ────────────────
+/**
+ * A white card on the grey canvas — Bazar's editor section. The fields used to
+ * sit straight on the canvas under uppercase eyebrow labels, so a long form
+ * read as one undifferentiated column with no edges to scan by.
+ */
+function Section({
+  title,
+  description,
+  children,
+}: {
+  title: string
+  description?: ReactNode
+  children: ReactNode
+}) {
+  return (
+    <Panel padding="form" className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1">
+        <h2 className="text-[15px] font-medium text-ih-ink">{title}</h2>
+        {description ? <p className="text-[12.5px] text-ih-muted">{description}</p> : null}
+      </div>
+      {children}
+    </Panel>
+  )
+}
+
+// ── Content tab ─────────────────────────────────────────────────────────────
 
 function ContentForm({
   isNew,
@@ -256,6 +302,7 @@ function ContentForm({
   categories,
   bodyMedia,
   savedAt,
+  onOpenSeo,
 }: {
   isNew: boolean
   post: BlogPost | null
@@ -265,10 +312,13 @@ function ContentForm({
   categories: CategoryOption[]
   bodyMedia: BodyMedia[]
   savedAt: string | null
+  onOpenSeo: () => void
 }) {
   // Hero lives in client state because the picker is interactive; the value
   // reaches the server action through a hidden input rather than a fetch.
   const [heroId, setHeroId] = useState<string | null>(post?.heroId ?? null)
+  // Echoes the slug under its field as the public path, as Bazar does.
+  const [slug, setSlug] = useState(post?.slug ?? '')
   // The body editor is uncontrolled; it pushes its serialised blocks up here
   // and they ride to the server in a hidden input, the same way the hero does.
   // A legacy post opens as one prose block holding its old HTML, so the
@@ -304,284 +354,232 @@ function ContentForm({
 
       {/* grid-cols-1 explicitly: a bare `grid` makes one implicit max-content
           column, which a wide block card then widens past the viewport. */}
-      <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
-        <div className="min-w-0 flex flex-col gap-5">
+      <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="flex min-w-0 flex-col gap-5">
+          <Section title="Post">
+            <Field label={<Required>Title</Required>} htmlFor="blogpost-title">
+              <Input
+                id="blogpost-title"
+                name="title"
+                required
+                defaultValue={post?.title ?? ''}
+                type="text"
+                placeholder="Post title"
+                className="h-10 text-[15px] font-medium"
+              />
+            </Field>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="col-span-2">
-          <label htmlFor="blogpost-title" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-            Title *
-          </label>
-          <Input
-            id="blogpost-title"
-            name="title"
-            required
-            defaultValue={post?.title ?? ''}
-            type="text"
-            placeholder="Post title" className="text-[15px] font-medium" />
-        </div>
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+              <Field
+                label={<Required>Slug</Required>}
+                htmlFor="blogpost-slug"
+                hint={<span className="break-all">/blog/{slug || 'your-slug'}</span>}
+              >
+                <Input
+                  id="blogpost-slug"
+                  name="slug"
+                  required
+                  value={slug}
+                  onChange={(e) => setSlug(e.target.value)}
+                  type="text"
+                  placeholder="url-friendly-slug"
+                />
+              </Field>
+              <Field
+                label="Category"
+                htmlFor="blogpost-category"
+                hint="Files the post under a topic hub at /blog/c/…, and puts its chip on the index card."
+              >
+                <Select id="blogpost-category" name="categoryId" defaultValue={post?.categoryId ?? ''}>
+                  <option value="">Uncategorised</option>
+                  {categories.map((c) => (
+                    <option key={c.id} value={c.id}>
+                      {c.name}
+                      {c.isPublished ? '' : ' (hub unpublished)'}
+                    </option>
+                  ))}
+                </Select>
+              </Field>
+            </div>
 
-        <div>
-          <label htmlFor="blogpost-slug" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-            Slug *
-          </label>
-          <Input
-            id="blogpost-slug"
-            name="slug"
-            required
-            defaultValue={post?.slug ?? ''}
-            type="text"
-            placeholder="url-friendly-slug" className="tabular-nums" />
-        </div>
+            <Field label="Excerpt" htmlFor="blogpost-excerpt" hint="One or two sentences for blog listings and social previews.">
+              <Textarea
+                id="blogpost-excerpt"
+                name="excerpt"
+                defaultValue={post?.excerpt ?? ''}
+                rows={3}
+                placeholder="Short summary shown in blog listings"
+              />
+            </Field>
 
-        <div>
-          <label htmlFor="blogpost-tags" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-            Tags (comma-separated)
-          </label>
-          <Input
-            id="blogpost-tags"
-            name="tags"
-            defaultValue={post ? post.tags.join(', ') : ''}
-            type="text"
-            placeholder="hydraulics, maintenance, pumps" />
-        </div>
-      </div>
+            <Field label="Tags" htmlFor="blogpost-tags" hint="Comma-separated.">
+              <Input
+                id="blogpost-tags"
+                name="tags"
+                defaultValue={post ? post.tags.join(', ') : ''}
+                type="text"
+                placeholder="hydraulics, maintenance, pumps"
+              />
+            </Field>
+          </Section>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <label
-            htmlFor="blogpost-category"
-            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+          <Section
+            title="Hero image"
+            description="Shown at the top of the post and on the blog index card. Landscape, at least 1200px wide."
           >
-            Category
-          </label>
-          <select
-            id="blogpost-category"
-            name="categoryId"
-            defaultValue={post?.categoryId ?? ''}
-            className="h-10 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px]"
+            <OgImagePicker
+              value={heroId}
+              recent={heroRecent}
+              uploadAction={uploadBlogPostHeroImage}
+              onChange={(next) => setHeroId(next)}
+              emptyLabel="No hero image"
+              dialogTitle="Choose a hero image"
+              hint="JPEG for photographs, under 400 KB. Alt text is set on the image in the media library."
+            />
+            <Field
+              label="Caption"
+              htmlFor="blogpost-hero-caption"
+              hint="Shown under the hero. Say why the picture is here; the image alt text already says what is in it."
+            >
+              <Input
+                id="blogpost-hero-caption"
+                name="heroCaption"
+                defaultValue={post?.heroCaption ?? ''}
+                type="text"
+                maxLength={300}
+                placeholder="One sentence: what the reader should notice in the picture"
+              />
+            </Field>
+          </Section>
+
+          <Section
+            title="Body"
+            description="Headings become the article’s numbered sections and its table of contents. Images are picked from the media library and print with their caption."
           >
-            <option value="">— Uncategorised —</option>
-            {categories.map((c) => (
-              <option key={c.id} value={c.id}>
-                {c.name}
-                {c.isPublished ? '' : ' (hub unpublished)'}
-              </option>
-            ))}
-          </select>
-          <p className="mt-1 text-[11px] text-ih-muted-2">
-            Files the post under a topic hub at /blog/c/…, and puts its chip on the index card.
-          </p>
-        </div>
+            <BlogBodyEditor
+              initialBlocks={initialBlocks}
+              onChange={setBlocks}
+              media={bodyMedia}
+              uploadAction={uploadBlogPostBodyImage}
+            />
+          </Section>
 
-        <div>
-          <label
-            htmlFor="blogpost-author"
-            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+          <Section title="Byline and review" description="Who wrote it, who checked it, and the date it carries.">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+              <Field
+                label="Byline"
+                htmlFor="blogpost-author"
+                hint="Credits the engineer who wrote it and links to their profile. Without one the post falls back to the staff name."
+              >
+                <Select id="blogpost-author" name="blogAuthorId" defaultValue={post?.blogAuthorId ?? ''}>
+                  <option value="">No public byline</option>
+                  {authors.map((a) => (
+                    <option key={a.id} value={a.id}>
+                      {a.name}
+                      {a.jobTitle ? ` · ${a.jobTitle}` : ''}
+                    </option>
+                  ))}
+                </Select>
+              </Field>
+
+              <Field
+                label="Technical reviewer"
+                htmlFor="blogpost-reviewer"
+                hint={
+                  <>
+                    Shown as &ldquo;Technically reviewed by&rdquo; under the byline and named in the structured
+                    data. Worth setting on anything quoting pressures, ratings or standards.
+                  </>
+                }
+              >
+                <Select id="blogpost-reviewer" name="reviewedById" defaultValue={post?.reviewedById ?? ''}>
+                  <option value="">Not reviewed</option>
+                  {reviewers.map((r) => (
+                    <option key={r.id} value={r.id}>
+                      {r.name}
+                      {r.jobTitle ? ` · ${r.jobTitle}` : ''}
+                      {r.hasProfile ? '' : ' (no public profile)'}
+                    </option>
+                  ))}
+                </Select>
+              </Field>
+
+              <Field
+                label="Reviewed on"
+                htmlFor="blogpost-reviewedAt"
+                hint="Leave blank to stamp today when a reviewer is first set. Clearing the reviewer clears the date."
+              >
+                <Input
+                  id="blogpost-reviewedAt"
+                  name="reviewedAt"
+                  type="date"
+                  defaultValue={post?.reviewedAt ? post.reviewedAt.slice(0, 10) : ''}
+                />
+              </Field>
+
+              <Field
+                label="Publish date"
+                htmlFor="blogpost-publishedAt"
+                hint="Leave blank to stamp now on first publish. Editing a live post never moves it. A future date is only a label: publishing puts the post on the site straight away."
+              >
+                <Input
+                  id="blogpost-publishedAt"
+                  name="publishedAt"
+                  type="datetime-local"
+                  defaultValue={toDateTimeLocal(post?.publishedAt ?? null)}
+                />
+              </Field>
+            </div>
+          </Section>
+
+          {/* Lightweight SEO fallbacks so authors can set baseline meta without
+              leaving the editor. The richer controls (canonical, robots, OG
+              image, schema, sitemap) live in the SEO tab. Both write to the
+              same row; whichever was saved last wins. */}
+          <Section
+            title="SEO basics"
+            description={
+              isNew ? (
+                'Canonical URL, social image, sitemap and structured data open in the SEO tab after the first save.'
+              ) : (
+                <>
+                  Canonical URL, social image, sitemap and structured data are in the{' '}
+                  <button type="button" onClick={onOpenSeo} className="text-ih-accent hover:text-ih-navy">
+                    SEO tab
+                  </button>
+                  .
+                </>
+              )
+            }
           >
-            Byline
-          </label>
-          <select
-            id="blogpost-author"
-            name="blogAuthorId"
-            defaultValue={post?.blogAuthorId ?? ''}
-            className="h-10 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px]"
-          >
-            <option value="">— No public byline —</option>
-            {authors.map((a) => (
-              <option key={a.id} value={a.id}>
-                {a.name}
-                {a.jobTitle ? ` · ${a.jobTitle}` : ''}
-              </option>
-            ))}
-          </select>
-          <p className="mt-1 text-[11px] text-ih-muted-2">
-            Credits the engineer who wrote it, and links to their profile. Without one the post
-            falls back to the staff name.
-          </p>
-        </div>
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+              <Field label="Meta title" htmlFor="blogpost-seoTitle" hint="Optional. Falls back to the post title.">
+                <Input id="blogpost-seoTitle" name="seoTitle" defaultValue={post?.seoTitle ?? ''} type="text" />
+              </Field>
+              <Field label="Meta description" htmlFor="blogpost-seoDescription" hint="Optional. Falls back to the excerpt.">
+                <Input
+                  id="blogpost-seoDescription"
+                  name="seoDescription"
+                  defaultValue={post?.seoDescription ?? ''}
+                  type="text"
+                />
+              </Field>
+            </div>
+          </Section>
 
-        <div>
-          <label
-            htmlFor="blogpost-reviewer"
-            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
-          >
-            Technical reviewer
-          </label>
-          <select
-            id="blogpost-reviewer"
-            name="reviewedById"
-            defaultValue={post?.reviewedById ?? ''}
-            className="h-10 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px]"
-          >
-            <option value="">— Not reviewed —</option>
-            {reviewers.map((r) => (
-              <option key={r.id} value={r.id}>
-                {r.name}
-                {r.jobTitle ? ` · ${r.jobTitle}` : ''}
-                {r.hasProfile ? '' : ' (no public profile)'}
-              </option>
-            ))}
-          </select>
-          <p className="mt-1 text-[11px] text-ih-muted-2">
-            Who checked the figures. Shown as &ldquo;Technically reviewed by&rdquo; under the byline
-            and named in the structured data — worth setting on anything quoting pressures,
-            ratings or standards.
-          </p>
-        </div>
-
-        <div>
-          <label
-            htmlFor="blogpost-reviewedAt"
-            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
-          >
-            Reviewed on
-          </label>
-          <Input
-            id="blogpost-reviewedAt"
-            name="reviewedAt"
-            type="date"
-            defaultValue={post?.reviewedAt ? post.reviewedAt.slice(0, 10) : ''}
-          />
-          <p className="mt-1 text-[11px] text-ih-muted-2">
-            Leave blank to stamp today when a reviewer is first set. Clearing the reviewer clears
-            the date.
-          </p>
-        </div>
-
-        <div>
-          <label
-            htmlFor="blogpost-publishedAt"
-            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
-          >
-            Publish date
-          </label>
-          <Input
-            id="blogpost-publishedAt"
-            name="publishedAt"
-            type="datetime-local"
-            defaultValue={toDateTimeLocal(post?.publishedAt ?? null)}
-          />
-          <p className="mt-1 text-[11px] text-ih-muted-2">
-            Leave blank to stamp now on first publish. Editing a live post never moves it. A
-            future date is only a label — publishing puts the post on the site straight away.
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <span className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-          Hero image
-        </span>
-        <OgImagePicker
-          value={heroId}
-          recent={heroRecent}
-          uploadAction={uploadBlogPostHeroImage}
-          onChange={(next) => setHeroId(next)}
-          emptyLabel="— No hero image —"
-          hint="Shown at the top of the post and on the blog index card. Landscape, at least 1200px wide."
-        />
-      </div>
-
-      <div>
-        <label htmlFor="blogpost-hero-caption" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-          Hero caption
-        </label>
-        <Input
-          id="blogpost-hero-caption"
-          name="heroCaption"
-          defaultValue={post?.heroCaption ?? ''}
-          type="text"
-          maxLength={300}
-          placeholder="One sentence under the hero image — what the reader should notice in it" />
-        <p className="mt-1.5 text-[12px] text-ih-muted">
-          Shown under the hero. Say why the picture is here; the image alt text already says what is in it.
-        </p>
-      </div>
-
-      <div>
-        <label htmlFor="blogpost-excerpt" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-          Excerpt
-        </label>
-        <Textarea
-          id="blogpost-excerpt"
-          name="excerpt"
-          defaultValue={post?.excerpt ?? ''}
-          rows={2}
-          placeholder="Short summary shown in blog listings" className="resize-none" />
-      </div>
-
-      <div>
-        <span className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-          Body *
-        </span>
-        <BlogBodyEditor
-          initialBlocks={initialBlocks}
-          onChange={setBlocks}
-          media={bodyMedia}
-          uploadAction={uploadBlogPostBodyImage}
-        />
-        <p className="mt-1.5 text-[11px] text-ih-muted-2">
-          Headings become the article&apos;s numbered sections and its table of contents. Images
-          are picked from the media library and print with their caption.
-        </p>
-      </div>
-
-      {/* Lightweight SEO fallbacks shown only in the Content tab so authors can
-          set baseline meta without leaving the editor. The richer SEO drawer
-          (canonical, robots, OG image, schema, sitemap, …) lives in the SEO
-          tab. Both write to the same row; whichever was saved last wins. */}
-      <div className="border-t border-ih-border pt-4">
-        <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
-          SEO basics
-        </p>
-        <p className="text-[12px] text-ih-muted-2 mb-3">
-          For canonical URLs, OG images, sitemap controls, and JSON-LD overrides, switch to the
-          SEO tab.
-        </p>
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <label htmlFor="blogpost-seoTitle" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Title</label>
-            <Input
-              id="blogpost-seoTitle"
-              name="seoTitle"
-              defaultValue={post?.seoTitle ?? ''}
-              type="text" />
-          </div>
-          <div>
-            <label htmlFor="blogpost-seoDescription" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Description</label>
-            <Input
-              id="blogpost-seoDescription"
-              name="seoDescription"
-              defaultValue={post?.seoDescription ?? ''}
-              type="text" />
-          </div>
-        </div>
-      </div>
-
-      {/* On the new-post path the publish card has no row to act on yet, so
-          the footer keeps the two submit buttons. After the first save the
-          action redirects to the edit URL, where the card takes over. */}
-      {isNew && (
-        <div className="flex items-center gap-3 pt-2">
-          <button
-            type="submit"
-            name="publish"
-            value="0"
-            className="h-10 rounded-md border border-ih-border px-6 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
-          >
-            Save draft
-          </button>
-          <button
-            type="submit"
-            name="publish"
-            value="1"
-            className="h-10 rounded-md bg-ih-accent px-6 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
-          >
-            Publish
-          </button>
-        </div>
-      )}
+          {/* On the new-post path the publish card has no row to act on yet, so
+              the footer keeps the two submit buttons. After the first save the
+              action redirects to the edit URL, where the card takes over. */}
+          {isNew && (
+            <div className="flex items-center justify-end gap-2">
+              <Button type="submit" name="publish" value="0" kind="outline">
+                Save draft
+              </Button>
+              <Button type="submit" name="publish" value="1" kind="primary">
+                Publish
+              </Button>
+            </div>
+          )}
         </div>
 
         {!isNew && post && (
@@ -603,6 +601,18 @@ function ContentForm({
         )}
       </div>
     </form>
+  )
+}
+
+/** A required field's label. The marker is quiet; the browser enforces it. */
+function Required({ children }: { children: ReactNode }) {
+  return (
+    <>
+      {children}
+      <span aria-hidden="true" className="ml-0.5 text-ih-muted">
+        *
+      </span>
+    </>
   )
 }
 
