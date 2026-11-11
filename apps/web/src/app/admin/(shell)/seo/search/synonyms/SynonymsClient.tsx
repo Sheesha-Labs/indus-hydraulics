@@ -82,7 +82,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
       </div>
 
       {/* Add new group */}
-      <details className="mb-6 border border-ih-border bg-ih-surface p-4">
+      <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
         <summary className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
           Add synonym group
         </summary>
@@ -130,7 +130,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
           <p className="text-ih-muted text-[13px]">No synonym groups yet.</p>
         </div>
       ) : (
-        <div className="border border-ih-border overflow-hidden">
+        <div className="rounded-lg border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
               <tr className="border-b border-ih-border bg-ih-surface-2">
@@ -175,7 +175,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                         <button
                           type="button"
                           onClick={() => setEditing(null)}
-                          className="h-8 px-3 border border-ih-border font-mono text-[11px]"
+                          className="rounded-md h-8 px-3 border border-ih-border font-mono text-[11px]"
                         >
                           Cancel
                         </button>
@@ -185,7 +185,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                         {g.terms.map((t) => (
                           <span
                             key={t}
-                            className="px-1.5 py-0.5 font-mono text-[11px] bg-ih-surface-2 border border-ih-border"
+                            className="rounded-[3px] px-1.5 py-0.5 font-mono text-[11px] bg-ih-surface-2 border border-ih-border"
                           >
                             {t}
                           </span>

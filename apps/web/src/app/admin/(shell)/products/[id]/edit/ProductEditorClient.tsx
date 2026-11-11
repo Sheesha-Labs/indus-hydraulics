@@ -1051,7 +1051,7 @@ function FreeFormSpecsSection({
 
       {specs.length > 0 &&
         Object.entries(groups).map(([group, items]) => (
-          <div key={group} className="rounded-lg border border-ih-border bg-ih-surface">
+          <div key={group} className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
             <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
@@ -1341,7 +1341,7 @@ function ImagesTab({
                     type="button"
                     onClick={() => onReorder(img.id, 'up')}
                     disabled={pending || i === 0}
-                    className="h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
+                    className="rounded-md h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
                     aria-label="Move up"
                   >
                     ↑
@@ -1350,7 +1350,7 @@ function ImagesTab({
                     type="button"
                     onClick={() => onReorder(img.id, 'down')}
                     disabled={pending || i === images.length - 1}
-                    className="h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
+                    className="rounded-md h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
                     aria-label="Move down"
                   >
                     ↓
@@ -1581,7 +1581,7 @@ function CrossRefsTab({
       {crossRefs.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No cross-references yet.</p>
       ) : (
-        <div className="rounded-lg border border-ih-border bg-ih-surface">
+        <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
           <div className={`${XREF_COLS_DISPLAY} border-b border-ih-border bg-ih-bg px-4 py-2.5 text-[13px] font-medium text-ih-muted-2`}>
             <div>Competitor brand</div>
             <div>MPN</div>
@@ -2130,7 +2130,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function ErrorBanner({ message }: { message: string }) {
   return (
     <div
-      className="px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
+      className="rounded-lg px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
       role="alert"
     >
       {message}
@@ -2168,7 +2168,7 @@ function DeleteButton({ id }: { id: string }) {
             if (res && !res.success) setError(res.message)
           })
         }}
-        className="h-9 px-3 border border-ih-border text-[12px] text-ih-muted hover:border-[oklch(0.5_0.18_25)] hover:text-ih-danger-ink disabled:opacity-50"
+        className="rounded-md h-9 px-3 border border-ih-border text-[12px] text-ih-muted hover:border-[oklch(0.5_0.18_25)] hover:text-ih-danger-ink disabled:opacity-50"
       >
         {pending ? 'Deleting…' : 'Delete'}
       </button>

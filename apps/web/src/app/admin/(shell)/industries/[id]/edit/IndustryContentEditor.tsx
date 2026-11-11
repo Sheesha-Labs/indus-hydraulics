@@ -118,7 +118,7 @@ function ContentForm({
           <input
             name="tagline"
             defaultValue={industry.tagline ?? ''}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
 
@@ -127,7 +127,7 @@ function ContentForm({
             name="headline"
             defaultValue={industry.headline ?? ''}
             rows={2}
-            className="w-full px-3 py-2 border border-ih-border text-[13px] resize-vertical"
+            className="rounded-md w-full px-3 py-2 border border-ih-border text-[13px] resize-vertical"
           />
         </Field>
 
@@ -136,7 +136,7 @@ function ContentForm({
             <input
               name="breadcrumb"
               defaultValue={industry.breadcrumb ?? ''}
-              className="w-full h-9 px-3 border border-ih-border text-[13px]"
+              className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
             />
           </Field>
           <Field label="Position" hint="Sort order (lower = first).">
@@ -144,7 +144,7 @@ function ContentForm({
               name="position"
               type="number"
               defaultValue={industry.position}
-              className="w-full h-9 px-3 border border-ih-border text-[13px]"
+              className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
             />
           </Field>
         </div>
@@ -153,7 +153,7 @@ function ContentForm({
           <input
             name="gradient"
             defaultValue={industry.gradient ?? ''}
-            className="w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
           />
         </Field>
 
@@ -186,14 +186,14 @@ function ContentForm({
           <input
             name="featuredProductSkus"
             defaultValue={industry.featuredProductSkus}
-            className="w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
           />
         </Field>
         <Field label="Featured category slugs" hint="Comma-separated category slugs used when SKUs are not curated.">
           <input
             name="featuredCategorySlugs"
             defaultValue={industry.featuredCategorySlugs}
-            className="w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
           />
         </Field>
 
@@ -384,7 +384,7 @@ function CaseStudyForm({
   return (
     <form
       action={onSubmit}
-      className="border border-ih-accent bg-ih-surface-2 p-4 flex flex-col gap-3"
+      className="rounded-lg border border-ih-accent bg-ih-surface-2 p-4 flex flex-col gap-3"
     >
       <input type="hidden" name="industryId" value={industryId} />
       {existing && <input type="hidden" name="id" value={existing.id} />}
@@ -395,14 +395,14 @@ function CaseStudyForm({
             name="tag"
             required
             defaultValue={existing?.tag ?? ''}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
         <Field label="Year" hint="Optional, e.g. 2024">
           <input
             name="year"
             defaultValue={existing?.year ?? ''}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
         <Field label="Position">
@@ -410,7 +410,7 @@ function CaseStudyForm({
             name="position"
             type="number"
             defaultValue={existing?.position ?? 0}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
       </div>
@@ -420,7 +420,7 @@ function CaseStudyForm({
           name="title"
           required
           defaultValue={existing?.title ?? ''}
-          className="w-full h-9 px-3 border border-ih-border text-[13px]"
+          className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
         />
       </Field>
       <Field label="Description">
@@ -429,7 +429,7 @@ function CaseStudyForm({
           required
           defaultValue={existing?.description ?? ''}
           rows={3}
-          className="w-full px-3 py-2 border border-ih-border text-[13px] resize-vertical"
+          className="rounded-md w-full px-3 py-2 border border-ih-border text-[13px] resize-vertical"
         />
       </Field>
       <Field label="Image" hint="Optional — picks from the media library or accepts a UUID.">
@@ -461,7 +461,7 @@ function CaseStudyForm({
         <button
           type="button"
           onClick={onDone}
-          className="h-9 px-4 border border-ih-border text-[12px] font-medium hover:bg-ih-surface"
+          className="rounded-md h-9 px-4 border border-ih-border text-[12px] font-medium hover:bg-ih-surface"
         >
           Cancel
         </button>

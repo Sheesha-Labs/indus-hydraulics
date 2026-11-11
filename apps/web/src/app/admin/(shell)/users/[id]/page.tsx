@@ -155,7 +155,7 @@ export default async function EditUserPage({ params }: Props) {
             </button>
             <Link
               href="/admin/users"
-              className="h-9 px-4 flex items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+              className="rounded-md h-9 px-4 flex items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
             >
               Cancel
             </Link>
@@ -170,7 +170,7 @@ export default async function EditUserPage({ params }: Props) {
             <form action={deactivateUser}>
               <button
                 type="submit"
-                className="h-9 px-4 border border-ih-danger font-mono text-[12px] text-ih-danger hover:bg-[var(--color-ih-danger)] hover:text-white transition-colors"
+                className="rounded-md h-9 px-4 border border-ih-danger font-mono text-[12px] text-ih-danger hover:bg-[var(--color-ih-danger)] hover:text-white transition-colors"
               >
                 Deactivate Account
               </button>
@@ -179,7 +179,7 @@ export default async function EditUserPage({ params }: Props) {
             <form action={activateUser}>
               <button
                 type="submit"
-                className="h-9 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+                className="rounded-md h-9 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
               >
                 Reactivate Account
               </button>

@@ -113,7 +113,7 @@ export default function AiSuggestButton({
         type="button"
         onClick={handleGenerate}
         disabled={pending}
-        className="inline-flex items-center gap-1 h-7 px-2 font-mono text-[11px] text-ih-accent hover:bg-ih-surface-2 border border-transparent hover:border-ih-border disabled:opacity-50"
+        className="rounded-md inline-flex items-center gap-1 h-7 px-2 font-mono text-[11px] text-ih-accent hover:bg-ih-surface-2 border border-transparent hover:border-ih-border disabled:opacity-50"
         title={`Generate ${fieldLabel[field]} with Claude`}
       >
         ✨ {pending && !suggestion ? 'Thinking…' : 'Suggest'}
@@ -138,7 +138,7 @@ export default function AiSuggestButton({
 
           {error && (
             <div
-              className="mb-3 px-3 py-2 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[12px] text-ih-danger-ink"
+              className="rounded-lg mb-3 px-3 py-2 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[12px] text-ih-danger-ink"
               role="alert"
             >
               {error}
@@ -187,7 +187,7 @@ export default function AiSuggestButton({
                   type="button"
                   onClick={handleReject}
                   disabled={pending}
-                  className="h-8 px-3 font-mono text-[11px] border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-50"
+                  className="rounded-md h-8 px-3 font-mono text-[11px] border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-50"
                 >
                   Reject
                 </button>

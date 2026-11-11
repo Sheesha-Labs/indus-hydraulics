@@ -32,7 +32,7 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
           </div>
         </div>
 
-        <div className="bg-[var(--color-ih-navy-2)] border border-[var(--color-ih-navy-2)] p-8">
+        <div className="rounded-lg bg-[var(--color-ih-navy-2)] border border-[var(--color-ih-navy-2)] p-8">
           <h1 className="text-[22px] font-medium text-white mb-1">Staff sign in</h1>
           <p className="text-[13px] text-[oklch(0.68_0.03_250)] mb-7">
             This portal is for Indus Hydraulics staff only.

@@ -328,7 +328,7 @@ export default function SeoEntityDrawer({
 
       {error && (
         <div
-          className="m-4 px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
+          className="rounded-lg m-4 px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
           role="alert"
         >
           {error}
@@ -546,7 +546,7 @@ export default function SeoEntityDrawer({
 
           {activeSubTab === 'advanced' && (
             <>
-              <p className="text-[12px] text-ih-warning-ink bg-ih-warning-soft/50 border border-[oklch(0.75_0.12_70)]/40 px-3 py-2">
+              <p className="rounded-lg text-[12px] text-ih-warning-ink bg-ih-warning-soft/50 border border-[oklch(0.75_0.12_70)]/40 px-3 py-2">
                 Robots directives change indexability. Audited as infrastructure changes.
               </p>
               <label className="flex items-center gap-2 text-[13px]">

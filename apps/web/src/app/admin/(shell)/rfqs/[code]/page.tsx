@@ -169,7 +169,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           href={`/api/rfqs/${rfq.code}/preview-pdf`}
           target="_blank"
           rel="noopener noreferrer"
-          className="h-9 px-4 ml-auto inline-flex items-center gap-1.5 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
+          className="rounded-md h-9 px-4 ml-auto inline-flex items-center gap-1.5 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
           title="Open the quote PDF preview in a new tab. Uses current line prices and store defaults."
         >
           Preview Quote PDF →
@@ -178,7 +178,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
       {/* Issued quotes (revisions history) — show only after the first send */}
       {rfq.quotes.length > 0 ? (
-        <div className="border border-ih-border mb-6">
+        <div className="mb-6 overflow-hidden rounded-lg border border-ih-border">
           <div className="px-4 py-2 bg-ih-surface-2 border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             Issued quotes
           </div>
@@ -255,7 +255,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
               Line Items ({rfq.lines.length})
             </h2>
 
-            <div className="border border-ih-border mb-4">
+            <div className="overflow-hidden rounded-lg border border-ih-border mb-4">
               {/* Header */}
               <div className="grid grid-cols-[1fr_120px_120px] px-4 py-2 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Product</div>
@@ -282,7 +282,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                         step="0.01"
                         min="0"
                         placeholder="—"
-                        className="w-24 h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
+                        className="rounded-md w-24 h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
                       />
                     </div>
                     <div className="flex justify-end">
@@ -292,7 +292,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                         defaultValue={line.engineerLeadTimeDays ?? ''}
                         min="0"
                         placeholder="—"
-                        className="w-24 h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
+                        className="rounded-md w-24 h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
                       />
                     </div>
                   </div>
@@ -303,7 +303,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                       name={`lineNote_${line.id}`}
                       defaultValue={line.engineerNotes ?? ''}
                       placeholder="Engineer note for this line (optional)"
-                      className="w-full h-7 px-2 border border-ih-border bg-transparent font-mono text-[11px] text-ih-ink-2 placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
+                      className="rounded-md w-full h-7 px-2 border border-ih-border bg-transparent font-mono text-[11px] text-ih-ink-2 placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
                     />
                   </div>
                 </div>
@@ -335,7 +335,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
         {/* Sidebar */}
         <div className="flex flex-col gap-4">
           {/* Account */}
-          <div className="border border-ih-border bg-ih-surface p-4">
+          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
             <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account</h3>
             <Link href={`/admin/customers/${rfq.account.id}`} className="text-[13px] font-medium text-ih-accent hover:underline">
               {rfq.account.legalName}
@@ -351,7 +351,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           </div>
 
           {/* Assignment */}
-          <div className="border border-ih-border bg-ih-surface p-4">
+          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
             <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Assignment</h3>
             <form action={async (fd: FormData) => {
               'use server'
@@ -372,7 +372,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                     </option>
                   ))}
                 </Select>
-                <button type="submit" className="h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
+                <button type="submit" className="rounded-md h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
                   Save
                 </button>
               </div>
@@ -380,7 +380,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           </div>
 
           {/* Dates */}
-          <div className="border border-ih-border bg-ih-surface p-4">
+          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
             <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Timeline</h3>
             <dl className="flex flex-col gap-2 text-[13px]">
               {rfq.submittedAt && (
@@ -412,7 +412,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Ship-to */}
           {rfq.shipToAddress && (
-            <div className="border border-ih-border bg-ih-surface p-4">
+            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
               <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Ship-to</h3>
               <div className="text-[12px] text-ih-ink-2">
                 <div className="font-medium">{rfq.shipToAddress.label}</div>
@@ -423,7 +423,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           )}
 
           {/* Tracking */}
-          <div className="border border-ih-border bg-ih-surface p-4">
+          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
             <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Tracking</h3>
             <p className="text-[11px] text-ih-muted mb-3 leading-[1.5]">
               Free-text. Surfaces under the Shipped step on the customer&apos;s
@@ -452,7 +452,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                 defaultValue={rfq.trackingNumber ?? ''}
                 placeholder="AWB / consignment #"
                 maxLength={120} className="h-8 mb-2 font-mono" />
-              <button type="submit" className="h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
+              <button type="submit" className="rounded-md h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
                 Save
               </button>
             </form>
@@ -460,7 +460,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Application context */}
           {rfq.applicationContext && (
-            <div className="border border-ih-border bg-ih-surface p-4">
+            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
               <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Application Context</h3>
               <p className="text-[12px] text-ih-ink-2 leading-[1.5]">{rfq.applicationContext}</p>
             </div>
@@ -468,7 +468,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Customer message */}
           {rfq.customerMessage && (
-            <div className="border border-ih-border bg-ih-surface p-4">
+            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
               <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Customer Message</h3>
               <p className="text-[12px] text-ih-ink-2 leading-[1.5]">{rfq.customerMessage}</p>
             </div>
@@ -476,7 +476,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Attachments */}
           {rfq.attachments.length > 0 && (
-            <div className="border border-ih-border bg-ih-surface p-4">
+            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
               <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Attachments</h3>
               <div className="flex flex-col gap-2">
                 {attachmentLinks.map((att) => (

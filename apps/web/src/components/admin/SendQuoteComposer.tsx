@@ -93,7 +93,7 @@ export default function SendQuoteComposer(props: Props) {
 
   if (!open && !result) {
     return (
-      <div className="border border-ih-border bg-ih-surface p-5 mb-6">
+      <div className="rounded-lg border border-ih-border bg-ih-surface p-5 mb-6">
         <div className="flex items-start justify-between gap-4">
           <div>
             <h2 className="text-[15px] font-medium mb-1">
@@ -119,7 +119,7 @@ export default function SendQuoteComposer(props: Props) {
 
   if (result?.ok) {
     return (
-      <div className="border border-[oklch(0.85_0.13_145)] bg-[oklch(0.97_0.04_145)] p-5 mb-6">
+      <div className="rounded-lg border border-[oklch(0.85_0.13_145)] bg-[oklch(0.97_0.04_145)] p-5 mb-6">
         <div className="text-[14px] font-medium text-[oklch(0.35_0.12_145)] mb-1">
           ✓ Quote {result.code} sent
         </div>
@@ -132,7 +132,7 @@ export default function SendQuoteComposer(props: Props) {
             setResult(null)
             setOpen(false)
           }}
-          className="h-8 px-3 border border-[oklch(0.85_0.13_145)] bg-ih-surface text-[oklch(0.35_0.12_145)] font-mono text-[11px] hover:bg-[oklch(0.97_0.04_145)]"
+          className="rounded-md h-8 px-3 border border-[oklch(0.85_0.13_145)] bg-ih-surface text-[oklch(0.35_0.12_145)] font-mono text-[11px] hover:bg-[oklch(0.97_0.04_145)]"
         >
           Done
         </button>
@@ -144,7 +144,7 @@ export default function SendQuoteComposer(props: Props) {
     <form
       ref={formRef}
       action={handleSubmit}
-      className="border border-ih-accent bg-ih-surface p-5 mb-6 flex flex-col gap-4"
+      className="rounded-lg border border-ih-accent bg-ih-surface p-5 mb-6 flex flex-col gap-4"
     >
       <input type="hidden" name="rfqId" value={props.rfqId} />
 
@@ -330,7 +330,7 @@ export default function SendQuoteComposer(props: Props) {
           onClick={handlePreview}
           disabled={props.currentSubtotal <= 0}
           title="Render the PDF with the current composer values in a new tab — does not send anything."
-          className="h-10 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="rounded-md h-10 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Preview PDF →
         </button>

@@ -139,7 +139,7 @@ function BrandImagePicker({
   }
 
   return (
-    <div className="border border-ih-border bg-ih-surface p-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <input type="hidden" name={name} value={value} />
 
       <label
@@ -157,7 +157,7 @@ function BrandImagePicker({
           previews on navy instead — that is the surface it actually lands on.
         */}
         <div
-          className={`relative shrink-0 overflow-hidden border border-ih-border ${
+          className={`rounded-lg relative shrink-0 overflow-hidden border border-ih-border ${
             previewOnInk ? 'bg-ih-navy' : 'bg-ih-surface-2 ih-checkerboard'
           } ${previewClassName}`}
         >
@@ -182,7 +182,7 @@ function BrandImagePicker({
         <div className="flex-1 min-w-0 flex flex-col gap-2">
           <select
             id={selectId}
-            className="w-full h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:border-ih-accent outline-none"
+            className="rounded-md w-full h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:border-ih-accent outline-none"
             value={value}
             onChange={(e) => onChange(e.target.value)}
           >
@@ -304,7 +304,7 @@ export function LogoField({
               type="button"
               onClick={() => onStyleChange(option)}
               aria-pressed={style === option}
-              className={`text-left border px-3 py-2 transition-colors ${
+              className={`rounded-md text-left border px-3 py-2 transition-colors ${
                 style === option
                   ? 'border-ih-accent bg-ih-accent-soft'
                   : 'border-ih-border hover:border-ih-accent'
@@ -397,7 +397,7 @@ export function FaviconField({
       {/* Tab-strip rehearsal at true size. A favicon that looks fine in the
           80px preview and illegible here is the whole failure mode. */}
       <div className="mt-4 flex items-center gap-2">
-        <span className="inline-flex items-center gap-1.5 border border-b-0 border-ih-border bg-ih-surface-2 px-2.5 py-1.5">
+        <span className="rounded-t-md inline-flex items-center gap-1.5 border border-b-0 border-ih-border bg-ih-surface-2 px-2.5 py-1.5">
           {/* Plain <img>: 16px is below every optimizer breakpoint, so
               next/image would only add a request for the same bytes. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -465,7 +465,7 @@ export function SearchLogoField({
         about the fallback when the field is empty.
       */}
       <div className="mt-4">
-        <div className="border border-ih-border bg-ih-surface-2 px-3 py-2.5">
+        <div className="rounded-lg border border-ih-border bg-ih-surface-2 px-3 py-2.5">
           <div className="flex items-center gap-2">
             <span className="grid h-7 w-7 shrink-0 place-items-center overflow-hidden rounded-full border border-ih-border bg-ih-surface">
               {shown ? (

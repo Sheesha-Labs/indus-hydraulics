@@ -71,7 +71,7 @@ function ActivatePanel({
 }) {
   const copy = activationCopy(invitation.purpose, invitation.name)
   return (
-    <div className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
+    <div className="rounded-lg border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
       <p className="mb-1.5 font-mono text-[11px] uppercase tracking-[0.16em] text-[oklch(0.68_0.03_250)]">
         {copy.eyebrow}
       </p>
@@ -90,7 +90,7 @@ function ActivatePanel({
 
 function DeadLinkPanel({ message }: { message: string }) {
   return (
-    <div className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
+    <div className="rounded-lg border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
       <h1 className="mb-2 text-[22px] font-medium text-white">Link not usable</h1>
       <p className="mb-7 text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">{message}</p>
       <Link

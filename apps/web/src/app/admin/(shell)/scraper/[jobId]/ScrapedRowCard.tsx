@@ -203,7 +203,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
 
   return (
     <article
-      className={`border ${row.selectionStatus === 'ingest_failed' ? 'border-[oklch(0.5_0.18_25)]' : 'border-ih-border'} bg-ih-bg`}
+      className={`rounded-lg border ${row.selectionStatus === 'ingest_failed' ? 'border-[oklch(0.5_0.18_25)]' : 'border-ih-border'} bg-ih-bg`}
       aria-label={`Scraped product ${row.sourceTitle}`}
     >
       {/* Row header */}
@@ -259,7 +259,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                     disabled={locked}
                     aria-pressed={!isDeselected}
                     aria-label={`Toggle image ${img.position + 1}`}
-                    className={`relative aspect-square border bg-ih-surface-2 overflow-hidden focus:outline-none focus:ring-2 focus:ring-ih-accent ${
+                    className={`rounded-md relative aspect-square border bg-ih-surface-2 overflow-hidden focus:outline-none focus:ring-2 focus:ring-ih-accent ${
                       isDeselected
                         ? 'border-ih-border opacity-40'
                         : 'border-ih-accent'
@@ -300,7 +300,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
             </div>
           </div>
 
-          <fieldset className="border border-ih-border p-3 flex flex-col gap-2">
+          <fieldset className="rounded-lg border border-ih-border p-3 flex flex-col gap-2">
             <legend className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted px-1">
               Ingest mode
             </legend>
@@ -347,7 +347,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedTitle(e.target.value)}
                   placeholder={row.sourceTitle}
                   disabled={locked}
-                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
+                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
                 />
               </label>
               <label className="flex flex-col gap-1">
@@ -359,7 +359,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedSku(e.target.value)}
                   placeholder={row.sourceSku ?? row.defaultSku}
                   disabled={locked}
-                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px] font-mono"
+                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px] font-mono"
                 />
               </label>
               <label className="flex flex-col gap-1">
@@ -373,7 +373,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   value={brandId}
                   onChange={(e) => setBrandId(e.target.value)}
                   disabled={locked}
-                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
+                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
                 >
                   <option value="">— None —</option>
                   {brands.map((b) => (
@@ -394,7 +394,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   value={categoryId}
                   onChange={(e) => setCategoryId(e.target.value)}
                   disabled={locked}
-                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
+                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
                 >
                   <option value="">— None —</option>
                   {categories.map((c) => (
@@ -417,7 +417,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           {row.ingestError && (
             <p
               role="alert"
-              className="text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
+              className="rounded-lg text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
             >
               {row.ingestError}
             </p>
@@ -426,7 +426,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           {error && (
             <p
               role="alert"
-              className="text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
+              className="rounded-lg text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
             >
               {error}
             </p>
@@ -438,7 +438,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onSelect}
                 disabled={pending}
-                className="h-8 px-3 border border-ih-accent text-ih-accent font-mono text-[11px] uppercase tracking-wider hover:bg-ih-accent-soft disabled:opacity-50"
+                className="rounded-md h-8 px-3 border border-ih-accent text-ih-accent font-mono text-[11px] uppercase tracking-wider hover:bg-ih-accent-soft disabled:opacity-50"
               >
                 Mark selected
               </button>
@@ -448,7 +448,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onSkip}
                 disabled={pending}
-                className="h-8 px-3 border border-ih-border text-ih-muted font-mono text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
+                className="rounded-md h-8 px-3 border border-ih-border text-ih-muted font-mono text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
               >
                 Skip
               </button>

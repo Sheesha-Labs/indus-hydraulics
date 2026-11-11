@@ -80,7 +80,7 @@ export default async function UsersPage() {
     >
       <InviteStaffPanel pending={pending} />
 
-      <div className="border border-ih-border overflow-hidden">
+      <div className="rounded-lg border border-ih-border overflow-hidden">
         <table className="w-full text-[13px]">
           <thead>
             <tr className="border-b border-ih-border bg-ih-surface-2">
@@ -103,7 +103,7 @@ export default async function UsersPage() {
               >
                 <td className="px-4 py-3">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-7 h-7 bg-ih-surface-2 border border-ih-border grid place-items-center font-mono text-[11px] text-ih-muted shrink-0">
+                    <div className="rounded-md w-7 h-7 bg-ih-surface-2 border border-ih-border grid place-items-center font-mono text-[11px] text-ih-muted shrink-0">
                       {user.name.charAt(0).toUpperCase()}
                     </div>
                     <span className="font-medium text-ih-ink">{user.name}</span>

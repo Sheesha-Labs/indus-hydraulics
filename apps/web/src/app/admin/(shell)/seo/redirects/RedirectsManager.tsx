@@ -67,7 +67,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
     <div className="max-w-[960px]">
       <form
         action={handleAdd}
-        className="border border-ih-border bg-ih-surface p-4 mb-6"
+        className="rounded-lg border border-ih-border bg-ih-surface p-4 mb-6"
       >
         <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           Add redirect
@@ -128,7 +128,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
           <p className="text-ih-muted text-[13px]">No redirects configured.</p>
         </div>
       ) : (
-        <div className="border border-ih-border overflow-hidden">
+        <div className="rounded-lg border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
               <tr className="border-b border-ih-border bg-ih-surface-2">

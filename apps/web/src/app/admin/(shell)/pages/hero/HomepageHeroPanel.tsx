@@ -102,7 +102,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
       {/* Upload form */}
       <form
         action={handleUpload}
-        className="border border-ih-border bg-ih-surface p-5 flex flex-col gap-3"
+        className="rounded-lg border border-ih-border bg-ih-surface p-5 flex flex-col gap-3"
       >
         <div className="flex items-baseline justify-between">
           <h2 className="text-[14px] font-medium">Add a new slide</h2>
@@ -124,7 +124,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
             type="text"
             placeholder="Alt text (for screen readers)"
             maxLength={200}
-            className="border border-ih-border bg-ih-bg px-3 py-2 text-[13px]"
+            className="rounded-md border border-ih-border bg-ih-bg px-3 py-2 text-[13px]"
           />
           <button
             type="submit"
@@ -137,13 +137,13 @@ export default function HomepageHeroPanel({ slides }: Props) {
       </form>
 
       {error && (
-        <div className="border border-ih-danger bg-[var(--color-ih-danger)]/10 px-4 py-3 text-[13px] text-ih-danger">
+        <div className="rounded-lg border border-ih-danger bg-[var(--color-ih-danger)]/10 px-4 py-3 text-[13px] text-ih-danger">
           {error}
         </div>
       )}
 
       {/* Slide list */}
-      <div className="border border-ih-border">
+      <div className="rounded-lg border border-ih-border">
         {slides.length === 0 ? (
           <div className="py-12 text-center text-ih-muted text-[13px]">
             No slides yet. The storefront falls back to the static placeholder until at least one published slide exists.
@@ -191,7 +191,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     if (next === (slide.alt ?? '')) return
                     handleUpdate(slide.id, { alt: next || null })
                   }}
-                  className="border border-ih-border bg-ih-bg px-2 py-1.5 text-[12px]"
+                  className="rounded-md border border-ih-border bg-ih-bg px-2 py-1.5 text-[12px]"
                 />
                 <div className="flex justify-center">
                   <button
@@ -214,7 +214,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === 0}
                     aria-label="Move up"
                     title="Move up"
-                    className="w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
+                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
                   >
                     ↑
                   </button>
@@ -224,7 +224,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === slides.length - 1}
                     aria-label="Move down"
                     title="Move down"
-                    className="w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
+                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
                   >
                     ↓
                   </button>

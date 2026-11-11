@@ -118,7 +118,7 @@ export default async function AdminDashboardPage({ params }: Props) {
                     </tr>
                   ) : (
                     recentProducts.map((product) => (
-                      <tr key={product.id} className="border-b border-ih-border hover:bg-ih-bg">
+                      <tr key={product.id} className="border-b border-ih-border last:border-b-0 hover:bg-ih-bg">
                         <td className="px-4 py-3">
                           <Link
                             href={`/admin/products/${product.id}/edit`}
@@ -198,7 +198,7 @@ export default async function AdminDashboardPage({ params }: Props) {
             <Link
               key={link.href}
               href={link.href}
-              className="flex items-center gap-3 px-4 py-3.5 border border-ih-border bg-ih-surface hover:bg-ih-bg transition-colors text-[13px] font-medium"
+              className="flex items-center gap-3 rounded-lg border border-ih-border bg-ih-surface px-4 py-3.5 text-[13px] font-medium transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
             >
               <span className="font-mono text-ih-muted text-base">{link.icon}</span>
               {link.label}
@@ -211,7 +211,7 @@ export default async function AdminDashboardPage({ params }: Props) {
 
 function KpiCard({ label, value, delta }: { label: string; value: string; delta: string }) {
   return (
-    <div className="bg-ih-surface border border-ih-border p-4 flex flex-col gap-1.5">
+    <div className="flex flex-col gap-1.5 rounded-lg border border-ih-border bg-ih-surface p-5">
       <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
       <p className="font-mono text-[22px] font-medium tracking-tight leading-none">{value}</p>
       <p className="font-mono text-[11px] text-ih-muted-2">{delta}</p>
@@ -220,7 +220,8 @@ function KpiCard({ label, value, delta }: { label: string; value: string; delta:
 }
 
 function Card({ children }: { children: React.ReactNode }) {
-  return <div className="bg-ih-surface border border-ih-border">{children}</div>
+  // overflow-hidden so the table's tinted header row follows the corners.
+  return <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">{children}</div>
 }
 
 function CardHead({ title, subtitle, action }: { title: string; subtitle?: string; action?: React.ReactNode }) {
@@ -237,12 +238,14 @@ function CardHead({ title, subtitle, action }: { title: string; subtitle?: strin
 
 function Alert({ type, children }: { type: 'warn' | 'info' | 'ok'; children: React.ReactNode }) {
   const styles = {
-    warn: 'border-[oklch(0.7_0.15_80)] bg-[oklch(0.98_0.02_80)] text-[oklch(0.5_0.15_60)]',
-    info: 'border-[oklch(0.6_0.1_240)] bg-[oklch(0.97_0.02_240)] text-[oklch(0.4_0.1_240)]',
-    ok: 'border-[oklch(0.55_0.12_150)] bg-[oklch(0.97_0.02_150)] text-[oklch(0.4_0.12_150)]',
+    // Tokens, not oklch literals (CLAUDE.md §2.2): soft fill, a hairline in
+    // the same hue, ink for the text — the Bazar note treatment.
+    warn: 'border-ih-warning-line bg-ih-warning-soft text-ih-warning-ink',
+    info: 'border-ih-accent-line bg-ih-accent-soft text-ih-info-ink',
+    ok: 'border-ih-success/30 bg-ih-success-soft text-ih-success-ink',
   }
   return (
-    <div className={`flex items-start gap-3 px-4 py-3 border text-[13px] leading-relaxed ${styles[type]}`}>
+    <div className={`flex items-start gap-3 rounded-lg border px-4 py-3 text-[13px] leading-relaxed ${styles[type]}`}>
       {children}
     </div>
   )
@@ -255,7 +258,7 @@ function StatusPill({ status }: { status: string }) {
     discontinued: 'bg-[oklch(0.95_0.02_25)] text-ih-danger-ink',
   }
   return (
-    <span className={`font-mono text-[10.5px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
+    <span className={`rounded-[3px] font-mono text-[10.5px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
       {status}
     </span>
   )

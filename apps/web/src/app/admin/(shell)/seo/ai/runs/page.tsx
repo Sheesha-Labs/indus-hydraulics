@@ -36,7 +36,7 @@ export default async function AiRunsPage() {
   }
 
   return (
-    <div className="border border-ih-border overflow-hidden max-w-full">
+    <div className="rounded-lg border border-ih-border overflow-hidden max-w-full">
       <table className="w-full text-[13px]">
         <thead>
           <tr className="border-b border-ih-border bg-ih-surface-2">

@@ -228,7 +228,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
 
           {/* Stats sidebar */}
           <div className="flex flex-col gap-4">
-            <div className="border border-ih-border bg-ih-surface p-4">
+            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
               <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account Stats</h3>
               <dl className="flex flex-col gap-2 text-[13px]">
                 <div className="flex justify-between gap-2">
@@ -269,7 +269,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               <p className="text-ih-muted">No RFQs yet.</p>
             </div>
           ) : (
-            <div className="border border-ih-border">
+            <div className="overflow-hidden rounded-lg border border-ih-border">
               <div className="grid grid-cols-[1fr_80px_130px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Reference</div>
                 <div className="text-center">Lines</div>
@@ -305,7 +305,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {/* ── Contacts tab ── */}
       {tab === 'contacts' && (
         <div>
-          <div className="border border-ih-border mb-4">
+          <div className="overflow-hidden rounded-lg border border-ih-border mb-4">
             <div className="grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               <div>Contact</div>
               <div>Role</div>
@@ -364,7 +364,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             </div>
           ) : (
             account.addresses.map((addr) => (
-              <div key={addr.id} className="border border-ih-border bg-ih-surface p-4">
+              <div key={addr.id} className="rounded-lg border border-ih-border bg-ih-surface p-4">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
@@ -425,7 +425,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               No emails sent for this account yet.
             </p>
           ) : (
-            <div className="border border-ih-border bg-ih-surface">
+            <div className="rounded-lg border border-ih-border bg-ih-surface">
               <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <span>Sent</span>
                 <span>Kind</span>
@@ -508,12 +508,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                     {safeEmailsPage > 1 ? (
                       <Link
                         href={`/admin/customers/${id}?tab=emails&emailsPage=${safeEmailsPage - 1}`}
-                        className="px-2 py-1 border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
+                        className="rounded-lg px-2 py-1 border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                       >
                         ← Prev
                       </Link>
                     ) : (
-                      <span className="px-2 py-1 border border-ih-border text-ih-muted-2">
+                      <span className="rounded-lg px-2 py-1 border border-ih-border text-ih-muted-2">
                         ← Prev
                       </span>
                     )}
@@ -523,12 +523,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                     {safeEmailsPage < totalEmailPages ? (
                       <Link
                         href={`/admin/customers/${id}?tab=emails&emailsPage=${safeEmailsPage + 1}`}
-                        className="px-2 py-1 border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
+                        className="rounded-lg px-2 py-1 border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                       >
                         Next →
                       </Link>
                     ) : (
-                      <span className="px-2 py-1 border border-ih-border text-ih-muted-2">
+                      <span className="rounded-lg px-2 py-1 border border-ih-border text-ih-muted-2">
                         Next →
                       </span>
                     )}
@@ -569,7 +569,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               const payload = entry.payload as Record<string, unknown>
               return (
                 <div key={entry.id} className="flex gap-3">
-                  <div className="w-8 h-8 border border-ih-border bg-ih-bg grid place-items-center font-mono text-[11px] text-ih-muted shrink-0 mt-0.5">
+                  <div className="rounded-md w-8 h-8 border border-ih-border bg-ih-bg grid place-items-center font-mono text-[11px] text-ih-muted shrink-0 mt-0.5">
                     {entry.actorType === 'staff' ? 'ST' : 'CT'}
                   </div>
                   <div className="flex-1 pb-3 border-b border-ih-border">

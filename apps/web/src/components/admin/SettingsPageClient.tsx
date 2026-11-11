@@ -620,7 +620,7 @@ export default function SettingsPageClient({
       {activeTab === 'emails' && (
         <div className="grid grid-cols-[240px_1fr] gap-6">
           {/* Template list */}
-          <div className="border border-ih-border overflow-hidden h-fit">
+          <div className="rounded-lg border border-ih-border overflow-hidden h-fit">
             {EMAIL_KINDS.map((ek) => (
               <button
                 key={ek.kind}
@@ -674,7 +674,7 @@ export default function SettingsPageClient({
                     <label htmlFor="settings-bodyHtml" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                       Body HTML
                     </label>
-                    <div className="border border-ih-border bg-ih-surface p-3 mb-1.5">
+                    <div className="rounded-lg border border-ih-border bg-ih-surface p-3 mb-1.5">
                       <p className="font-mono text-[11px] text-ih-muted">
                         Available variables:{' '}
                         <code className="bg-ih-surface-2 px-1">{'{{name}}'}</code>{' '}

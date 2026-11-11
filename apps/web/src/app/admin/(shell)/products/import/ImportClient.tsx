@@ -93,7 +93,7 @@ export default function ImportClient() {
       </div>
 
       {error && (
-        <div className="border border-[oklch(0.7_0.18_25)] bg-[oklch(0.97_0.05_25)] px-4 py-3 text-[13px] text-ih-danger-ink">
+        <div className="rounded-lg border border-[oklch(0.7_0.18_25)] bg-[oklch(0.97_0.05_25)] px-4 py-3 text-[13px] text-ih-danger-ink">
           {error}
         </div>
       )}
@@ -165,7 +165,7 @@ function UploadStep({
         <summary className="cursor-pointer text-ih-muted font-medium hover:text-ih-ink">
           Show all supported columns ({PRODUCT_IMPORT_COLUMNS.length})
         </summary>
-        <div className="mt-3 border border-ih-border">
+        <div className="mt-3 overflow-hidden rounded-lg border border-ih-border">
           <table className="w-full text-[12px]">
             <thead className="bg-ih-bg">
               <tr>
@@ -340,7 +340,7 @@ function Stat({ label, value, tone = 'neutral' }: { label: string; value: number
           ? 'text-ih-accent'
           : 'text-ih-ink'
   return (
-    <div className="border border-ih-border p-3">
+    <div className="rounded-lg border border-ih-border p-3">
       <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
       <p className={`font-mono text-[22px] font-medium ${toneCls}`}>{value}</p>
     </div>

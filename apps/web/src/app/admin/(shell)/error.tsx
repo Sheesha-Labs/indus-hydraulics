@@ -16,7 +16,7 @@ export default function AdminShellError({
 
   return (
     <div className="px-8 py-12">
-      <div className="border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-5 max-w-[680px]">
+      <div className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-5 max-w-[680px]">
         <h2 className="text-[15px] font-medium mb-1">This page failed to load</h2>
         <p className="text-[13px] text-ih-ink-2 mb-3">
           The rest of the admin app is still working — just this section ran into an error.

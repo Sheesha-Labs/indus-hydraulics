@@ -50,14 +50,14 @@ export default function CreateMenuButton({ missing }: Props) {
   }
 
   return (
-    <div className="bg-ih-surface border border-ih-border p-4 flex flex-col gap-3 w-[420px]">
+    <div className="rounded-lg bg-ih-surface border border-ih-border p-4 flex flex-col gap-3 w-[420px]">
       <div className="text-[14px] font-medium">Create menu</div>
       <label className="flex flex-col gap-1 text-[12px]">
         <span className="text-ih-muted">Location</span>
         <select
           value={location}
           onChange={(e) => setLocation(e.target.value as MenuLocation)}
-          className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+          className="rounded-md h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
         >
           {missing.map((loc) => (
             <option key={loc} value={loc}>
@@ -72,7 +72,7 @@ export default function CreateMenuButton({ missing }: Props) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder={MENU_LOCATION_LABELS[location]}
-          className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+          className="rounded-md h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
         />
       </label>
       {error ? (
@@ -84,7 +84,7 @@ export default function CreateMenuButton({ missing }: Props) {
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="h-9 px-4 border border-ih-border text-[13px]"
+          className="rounded-md h-9 px-4 border border-ih-border text-[13px]"
           disabled={pending}
         >
           Cancel

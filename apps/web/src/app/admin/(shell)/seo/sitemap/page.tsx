@@ -48,7 +48,7 @@ export default async function SitemapPage() {
         <Tile label="Total URLs" value={total} accent />
       </div>
 
-      <div className="border border-ih-border p-4 mb-4">
+      <div className="rounded-lg border border-ih-border p-4 mb-4">
         <h3 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           Exclusions
         </h3>
@@ -79,7 +79,7 @@ export default async function SitemapPage() {
         href="/sitemap.xml"
         target="_blank"
         rel="noopener"
-        className="inline-block h-9 px-4 border border-ih-border grid place-items-center font-mono text-[12px] hover:bg-ih-surface-2"
+        className="rounded-md inline-block h-9 px-4 border border-ih-border grid place-items-center font-mono text-[12px] hover:bg-ih-surface-2"
       >
         Open /sitemap.xml ↗
       </a>
@@ -95,7 +95,7 @@ export default async function SitemapPage() {
 
 function Tile({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
   return (
-    <div className="border border-ih-border bg-ih-surface p-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>

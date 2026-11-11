@@ -26,7 +26,7 @@ export default function AdminForgotPasswordPage() {
           </div>
         </div>
 
-        <div className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
+        <div className="rounded-lg border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
           <ForgotPasswordForm />
         </div>
       </div>

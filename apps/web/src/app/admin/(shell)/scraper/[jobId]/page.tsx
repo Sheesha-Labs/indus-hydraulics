@@ -292,7 +292,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       </section>
 
       {/* Timeline */}
-      <section className="border border-ih-border bg-ih-bg p-4 mb-6 text-[12px]">
+      <section className="rounded-lg border border-ih-border bg-ih-bg p-4 mb-6 text-[12px]">
         <h2 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted mb-3">Timeline</h2>
         <dl className="grid grid-cols-3 gap-x-6 gap-y-1.5">
           <Time label="Created" value={job.createdAt} />
@@ -302,7 +302,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       </section>
 
       {job.errorMessage && (
-        <section role="alert" className="border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-4 mb-6">
+        <section role="alert" className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-4 mb-6">
           <h2 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-danger-ink mb-1">Error</h2>
           <p className="text-[13px] text-[oklch(0.3_0.18_25)]">{job.errorMessage}</p>
         </section>
@@ -320,7 +320,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           >
             <button
               type="submit"
-              className="h-9 px-4 border border-[oklch(0.4_0.18_25)] text-ih-danger-ink font-mono text-[12px] uppercase tracking-wider hover:bg-ih-danger-soft"
+              className="rounded-md h-9 px-4 border border-[oklch(0.4_0.18_25)] text-ih-danger-ink font-mono text-[12px] uppercase tracking-wider hover:bg-ih-danger-soft"
             >
               Cancel crawl
             </button>
@@ -331,7 +331,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
       {/* Rows */}
       {job.totalFound === 0 ? (
-        <section className="border border-ih-border bg-ih-bg p-6">
+        <section className="rounded-lg border border-ih-border bg-ih-bg p-6">
           <p className="text-[13px] text-ih-ink-2">
             {job.status === 'queued'
               ? 'Crawl is queued — waiting for the background worker.'
@@ -345,7 +345,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           <JobFilters counts={counts as Record<string, number>} q={q} status={filterStatus} />
           <div className="flex flex-col gap-4">
             {rows.length === 0 ? (
-              <p className="text-[13px] text-ih-muted px-4 py-6 text-center bg-ih-bg border border-ih-border">
+              <p className="rounded-lg text-[13px] text-ih-muted px-4 py-6 text-center bg-ih-bg border border-ih-border">
                 No products match this filter.
               </p>
             ) : (
@@ -398,7 +398,7 @@ function PageLink({
 
   if (disabled) {
     return (
-      <span className="h-8 px-3 grid place-items-center border border-ih-border text-ih-muted opacity-50 font-mono">
+      <span className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-muted opacity-50 font-mono">
         {label}
       </span>
     )
@@ -406,7 +406,7 @@ function PageLink({
   return (
     <Link
       href={href}
-      className="h-8 px-3 grid place-items-center border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 font-mono"
+      className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 font-mono"
     >
       {label}
     </Link>
@@ -416,7 +416,7 @@ function PageLink({
 function Stat({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div
-      className={`border bg-ih-bg px-3 py-2 ${
+      className={`rounded-lg border bg-ih-bg px-3 py-2 ${
         highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-ih-border'
       }`}
     >

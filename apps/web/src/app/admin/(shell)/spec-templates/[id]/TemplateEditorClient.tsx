@@ -178,7 +178,7 @@ function FieldManager({
           </button>
         </div>
       ) : (
-        <div className="rounded-lg border border-ih-border bg-ih-surface">
+        <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
           <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div />
             <div>Label / key</div>
@@ -462,7 +462,7 @@ function PdpZonePreview({
       <div className="w-[180px] rounded-lg border border-ih-border bg-ih-surface p-2 flex flex-col gap-1.5 select-none">
         <div className="flex gap-2">
           {/* Image placeholder */}
-          <div className="w-[72px] h-[80px] bg-ih-surface-2 border border-ih-border shrink-0" />
+          <div className="rounded-lg w-[72px] h-[80px] bg-ih-surface-2 border border-ih-border shrink-0" />
           {/* Info column */}
           <div className="flex-1 flex flex-col gap-1">
             <div className="h-1.5 w-2/3 bg-ih-border" />
@@ -589,7 +589,7 @@ function AttachedProductsList({
   }
 
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface">
+    <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
       <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
         <div>SKU</div>
         <div>Title</div>

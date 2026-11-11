@@ -157,7 +157,7 @@ function formatRate(num: number, den: number): string {
 
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
-    <div className="border border-ih-border bg-ih-surface p-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
@@ -197,7 +197,7 @@ function Table({
   mono: boolean[]
 }) {
   return (
-    <div className="border border-ih-border overflow-hidden">
+    <div className="rounded-lg border border-ih-border overflow-hidden">
       <table className="w-full text-[13px]">
         <thead>
           <tr className="border-b border-ih-border bg-ih-surface-2">

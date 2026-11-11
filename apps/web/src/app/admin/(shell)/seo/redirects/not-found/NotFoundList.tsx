@@ -79,7 +79,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
           </p>
         </div>
       ) : (
-        <div className="border border-ih-border overflow-hidden">
+        <div className="rounded-lg border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
               <tr className="border-b border-ih-border bg-ih-surface-2">
@@ -119,12 +119,12 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           name="toPath"
                           required
                           placeholder="/replacement-path"
-                          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:outline-none focus:border-ih-accent w-[200px]"
+                          className="rounded-md h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:outline-none focus:border-ih-accent w-[200px]"
                         />
                         <select
                           name="statusCode"
                           defaultValue="301"
-                          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
+                          className="rounded-md h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
                         >
                           <option value="301">301</option>
                           <option value="302">302</option>
@@ -141,7 +141,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                         <button
                           type="button"
                           onClick={() => setEditingId(null)}
-                          className="h-8 px-3 border border-ih-border font-mono text-[11px]"
+                          className="rounded-md h-8 px-3 border border-ih-border font-mono text-[11px]"
                         >
                           Cancel
                         </button>
