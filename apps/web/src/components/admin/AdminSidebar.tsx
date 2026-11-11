@@ -2,7 +2,8 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import LogoMark from '../LogoMark'
+import BrandLockup from '../BrandLockup'
+import type { LogoStyle } from '../../lib/brand-identity'
 import { ADMIN_PREFIX, stripAdminPrefix } from '../../lib/admin-paths'
 import { adminSignOutAction } from '../../app/admin/sign-in/actions'
 import {
@@ -33,6 +34,10 @@ import {
 interface Props {
   userName: string
   userRole: string
+  /** The storefront's own logo (Settings → brand), so admin and site match. */
+  logoUrl: string | null
+  logoStyle: LogoStyle
+  brandName: string
 }
 
 /**
@@ -102,7 +107,7 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
   },
 ]
 
-export default function AdminSidebar({ userName, userRole }: Props) {
+export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, brandName }: Props) {
   // Compare against the path relative to /admin: after the move every
   // pathname starts with '/admin', so a raw startsWith test would mark
   // nothing active.
@@ -149,17 +154,24 @@ export default function AdminSidebar({ userName, userRole }: Props) {
       className="hidden w-[240px] flex-col gap-1 border-r border-ih-border bg-ih-surface px-3.5 py-5 md:sticky md:top-0 md:flex md:h-screen"
       aria-label="Primary admin navigation"
     >
-      {/* Brand. No bottom border — the nav's own group labels do the dividing. */}
+      {/*
+        Brand: the storefront's own logo, from the same Settings field the
+        site header renders — so a logo change in Settings changes both, and
+        the admin can never drift to a placeholder mark again. It used to be
+        the generic LogoMark beside "Indus Hydraulics · Admin · v1.0.0", which
+        matched nothing a customer ever sees. "Admin panel" sits under it so
+        the rail still says which side of the site you are on.
+        No bottom border — the nav's own group labels do the dividing.
+      */}
       <div className="px-2.5 pb-5">
-        <Link href={ADMIN_PREFIX} className="flex items-center gap-2.5">
-          <LogoMark size={30} />
-          <span className="min-w-0">
-            <span className="block truncate font-serif text-[18px] leading-none text-ih-ink">
-              Indus Hydraulics
-            </span>
-            <span className="mt-1 block font-mono text-[10.5px] uppercase tracking-[0.14em] text-ih-muted-2">
-              Admin · v1.0.0
-            </span>
+        <Link
+          href={ADMIN_PREFIX}
+          aria-label={`${brandName} admin panel — dashboard`}
+          className="flex flex-col items-start gap-2 rounded-md focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
+        >
+          <BrandLockup logoUrl={logoUrl} logoStyle={logoStyle} name={brandName} surface="header" />
+          <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.14em] text-ih-muted">
+            Admin panel
           </span>
         </Link>
       </div>
