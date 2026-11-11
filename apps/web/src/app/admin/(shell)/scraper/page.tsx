@@ -45,7 +45,7 @@ export default async function ScraperJobsPage({ params }: Props) {
     >
 
       {jobs.length === 0 ? (
-        <div className="border border-ih-border bg-ih-bg p-10 text-center">
+        <div className="rounded-lg border border-ih-border bg-ih-bg p-10 text-center">
           <p className="text-[14px] text-ih-ink-2">No crawls yet.</p>
           <p className="text-[12px] text-ih-muted mt-2">
             Start your first crawl by pasting a competitor sitemap URL or a list of product URLs.

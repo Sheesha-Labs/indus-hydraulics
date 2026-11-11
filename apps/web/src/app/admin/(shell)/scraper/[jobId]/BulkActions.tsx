@@ -70,7 +70,7 @@ export default function BulkActions({
         type="button"
         onClick={onSkipDupes}
         disabled={skipPending}
-        className="h-9 px-4 border border-ih-border text-ih-ink-2 font-mono text-[12px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
+        className="rounded-md h-9 px-4 border border-ih-border text-ih-ink-2 font-mono text-[12px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
         title="Mark every row whose SKU already exists on indushydraulics.com as 'skipped'"
       >
         {skipPending ? 'Skipping…' : 'Skip duplicates'}
@@ -79,7 +79,7 @@ export default function BulkActions({
       {result.kind === 'done' && (
         <div
           role="status"
-          className="border border-[oklch(0.4_0.14_145)] bg-ih-success-soft text-[oklch(0.3_0.14_145)] px-3 py-1.5 text-[12px]"
+          className="rounded-lg border border-[oklch(0.4_0.14_145)] bg-ih-success-soft text-[oklch(0.3_0.14_145)] px-3 py-1.5 text-[12px]"
         >
           {result.ingested} ingested
           {result.failed > 0 ? `, ${result.failed} failed` : ''}.
@@ -99,7 +99,7 @@ export default function BulkActions({
       {result.kind === 'skipped' && (
         <div
           role="status"
-          className="border border-ih-border bg-ih-surface-2 text-ih-ink-2 px-3 py-1.5 text-[12px]"
+          className="rounded-lg border border-ih-border bg-ih-surface-2 text-ih-ink-2 px-3 py-1.5 text-[12px]"
         >
           {result.count === 0
             ? 'No duplicate SKUs found — nothing to skip.'
@@ -110,7 +110,7 @@ export default function BulkActions({
       {result.kind === 'error' && (
         <div
           role="alert"
-          className="border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-3 py-1.5 text-[12px]"
+          className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-3 py-1.5 text-[12px]"
         >
           {result.message}
         </div>

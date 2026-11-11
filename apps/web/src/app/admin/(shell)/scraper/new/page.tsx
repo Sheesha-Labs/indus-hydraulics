@@ -35,7 +35,7 @@ export default async function NewScrapeJobPage({ params }: Props) {
         Paste a competitor sitemap URL — or a list of product URLs, one per line — and we&rsquo;ll discover their catalogue in the background.
       </p>
 
-      <div className="border border-ih-border bg-ih-bg p-6">
+      <div className="rounded-lg border border-ih-border bg-ih-bg p-6">
         <StartScrapeForm />
       </div>
 

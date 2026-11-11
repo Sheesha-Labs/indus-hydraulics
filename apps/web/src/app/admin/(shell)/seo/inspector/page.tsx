@@ -139,14 +139,14 @@ export default async function SeoInspectorPage({
         </button>
         <Link
           href="/admin/seo/inspector"
-          className="h-9 px-4 grid place-items-center border border-ih-border font-mono text-[12px] text-ih-muted hover:text-ih-ink-2"
+          className="rounded-md h-9 px-4 grid place-items-center border border-ih-border font-mono text-[12px] text-ih-muted hover:text-ih-ink-2"
         >
           Reset
         </Link>
       </form>
 
       {/* Grid */}
-      <div className="border border-ih-border overflow-x-auto">
+      <div className="rounded-lg border border-ih-border overflow-x-auto">
         <table className="w-full text-[13px]">
           <thead>
             <tr className="border-b border-ih-border bg-ih-surface-2 text-left">
@@ -544,7 +544,7 @@ function SummaryTile({
           ? 'text-ih-danger-ink'
           : 'text-ih-ink-2'
   return (
-    <div className="border border-ih-border bg-ih-surface p-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>

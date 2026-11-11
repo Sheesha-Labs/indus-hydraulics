@@ -47,7 +47,7 @@ export default async function SeoAiPage() {
       </div>
 
       {myQuota && (
-        <div className="border border-ih-border p-4 mb-6 max-w-[640px]">
+        <div className="rounded-lg border border-ih-border p-4 mb-6 max-w-[640px]">
           <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
             Your quota
           </p>
@@ -76,7 +76,7 @@ export default async function SeoAiPage() {
       <div className="flex gap-3 max-w-[640px]">
         <Link
           href="/admin/seo/ai/runs"
-          className="flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
+          className="rounded-lg flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
         >
           <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
             Suggestion log
@@ -85,7 +85,7 @@ export default async function SeoAiPage() {
         </Link>
         <Link
           href="/admin/seo/ai/quota"
-          className="flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
+          className="rounded-lg flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
         >
           <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
             Usage quota
@@ -110,7 +110,7 @@ function monthStart(): Date {
 
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
-    <div className="border border-ih-border bg-ih-surface p-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>

@@ -62,7 +62,7 @@ export default function JobFilters({
               aria-selected={active}
               disabled={pending}
               onClick={() => pushParams({ status: opt.value || null })}
-              className={`h-8 px-3 text-[11px] font-mono uppercase tracking-wider border ${
+              className={`rounded-md h-8 px-3 text-[11px] font-mono uppercase tracking-wider border ${
                 active
                   ? 'bg-ih-navy text-ih-bg border-ih-ink'
                   : 'bg-ih-bg text-ih-ink-2 border-ih-border hover:bg-ih-surface-2'
@@ -80,12 +80,12 @@ export default function JobFilters({
           type="search"
           defaultValue={q}
           placeholder="Search by title or SKU…"
-          className="h-8 w-64 px-2 border border-ih-border bg-ih-bg text-[12px]"
+          className="rounded-md h-8 w-64 px-2 border border-ih-border bg-ih-bg text-[12px]"
         />
         <button
           type="submit"
           disabled={pending}
-          className="h-8 px-3 border border-ih-border text-ih-ink-2 font-mono text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
+          className="rounded-md h-8 px-3 border border-ih-border text-ih-ink-2 font-mono text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
         >
           Search
         </button>

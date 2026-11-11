@@ -58,7 +58,7 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
       {open && (
         <form
           action={formAction}
-          className="mt-4 grid grid-cols-1 gap-3 border border-ih-border bg-ih-surface p-4 sm:grid-cols-[1.4fr_1fr_1fr_auto]"
+          className="rounded-lg mt-4 grid grid-cols-1 gap-3 border border-ih-border bg-ih-surface p-4 sm:grid-cols-[1.4fr_1fr_1fr_auto]"
         >
           <div className="flex flex-col gap-1">
             <label className="text-[11px] font-medium text-ih-muted" htmlFor="inv-email">
@@ -113,7 +113,7 @@ function Notice({ tone, children }: { tone: 'danger' | 'warning' | 'success'; ch
     success: 'border-[var(--color-ih-success)] text-ih-success',
   }[tone]
   return (
-    <div role="status" className={`mt-3 border px-3 py-2 text-[12px] ${cls}`}>
+    <div role="status" className={`rounded-lg mt-3 border px-3 py-2 text-[12px] ${cls}`}>
       {children}
     </div>
   )

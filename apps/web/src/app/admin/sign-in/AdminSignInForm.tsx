@@ -22,7 +22,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
       {state?.error && (
         <div
           role="alert"
-          className="px-4 py-3 text-sm text-[oklch(0.65_0.18_25)] border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)]"
+          className="rounded-lg px-4 py-3 text-sm text-[oklch(0.65_0.18_25)] border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)]"
         >
           {state.error}
         </div>

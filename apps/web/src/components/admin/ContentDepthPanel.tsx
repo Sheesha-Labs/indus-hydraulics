@@ -16,7 +16,7 @@ export default function ContentDepthPanel({ result }: ContentDepthPanelProps) {
   const failing = result.breakdown.filter((c) => !c.pass).length
   return (
     <section
-      className="border border-ih-border bg-ih-surface p-5 mb-6"
+      className="rounded-lg border border-ih-border bg-ih-surface p-5 mb-6"
       aria-label="Product content depth"
     >
       <header className="flex items-center justify-between mb-4 gap-4 flex-wrap">

@@ -74,7 +74,7 @@ export default async function SpecTemplateEditPage({ params }: Props) {
       }
     >
         {tpl.categories.length > 0 && (
-          <div className="mb-6 px-4 py-3 bg-[oklch(0.97_0.03_240)] border border-[oklch(0.85_0.07_240)] text-[12px]">
+          <div className="rounded-lg mb-6 px-4 py-3 bg-[oklch(0.97_0.03_240)] border border-[oklch(0.85_0.07_240)] text-[12px]">
             <b>Default for {tpl.categories.length} categor{tpl.categories.length === 1 ? 'y' : 'ies'}:</b>{' '}
             {tpl.categories.map((c, i) => (
               <span key={c.id}>

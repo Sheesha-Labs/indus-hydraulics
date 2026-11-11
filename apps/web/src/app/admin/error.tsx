@@ -40,7 +40,7 @@ export default function AdminPublicError({
           </div>
         </div>
 
-        <div className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
+        <div className="rounded-lg border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
           <h1 className="mb-1 text-[22px] font-medium text-white">That didn&apos;t work</h1>
           <p className="mb-6 text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">
             Something went wrong on our side. Nothing you entered was lost — try again, and if it

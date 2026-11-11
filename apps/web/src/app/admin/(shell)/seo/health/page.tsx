@@ -164,7 +164,7 @@ export default async function SeoHealthPage() {
 
       {/* Per-type breakdown */}
       <Section title="By entity type">
-        <div className="border border-ih-border overflow-hidden">
+        <div className="rounded-lg border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
               <tr className="border-b border-ih-border bg-ih-surface-2">
@@ -210,7 +210,7 @@ export default async function SeoHealthPage() {
         {worstOffenders.length === 0 ? (
           <Empty>Nothing critical right now.</Empty>
         ) : (
-          <div className="border border-ih-border overflow-hidden">
+          <div className="rounded-lg border border-ih-border overflow-hidden">
             <table className="w-full text-[13px]">
               <thead>
                 <tr className="border-b border-ih-border bg-ih-surface-2">
@@ -256,7 +256,7 @@ export default async function SeoHealthPage() {
         <div className="grid grid-cols-2 gap-3 max-w-[640px]">
           <Link
             href="/admin/seo/redirects"
-            className="border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
+            className="rounded-lg border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
             <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
               Active redirects
@@ -265,7 +265,7 @@ export default async function SeoHealthPage() {
           </Link>
           <Link
             href="/admin/seo/redirects/not-found"
-            className="border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
+            className="rounded-lg border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
             <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
               Unresolved 404s
@@ -327,7 +327,7 @@ function SearchPanel({
   warn?: boolean
 }) {
   return (
-    <div className="border border-ih-border bg-ih-surface p-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <div className="flex items-center justify-between mb-3">
         <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
           {heading}
@@ -504,7 +504,7 @@ function Tile({
   danger?: boolean
 }) {
   return (
-    <div className="border border-ih-border bg-ih-surface p-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>

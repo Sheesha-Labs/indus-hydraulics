@@ -148,7 +148,7 @@ export default function BlueprintImagePanel({
 
       <div className="p-5">
         {error && (
-          <div className="bg-[var(--color-ih-danger)]/10 mb-4 border border-ih-danger px-4 py-3 text-[12px] text-ih-danger">
+          <div className="rounded-lg bg-[var(--color-ih-danger)]/10 mb-4 border border-ih-danger px-4 py-3 text-[12px] text-ih-danger">
             {error}
           </div>
         )}
@@ -163,7 +163,7 @@ export default function BlueprintImagePanel({
         {!active && (
           <form action={queue} className="flex flex-col gap-4">
             <input type="hidden" name="productId" value={productId} />
-            <div className="flex items-end justify-between gap-4 border border-ih-border bg-ih-bg p-4">
+            <div className="rounded-lg flex items-end justify-between gap-4 border border-ih-border bg-ih-bg p-4">
               <div>
                 <p className="font-mono text-[11px] tracking-[0.12em] text-ih-muted">
                   TITLE-ONLY SOURCE
@@ -211,7 +211,7 @@ export default function BlueprintImagePanel({
                   type="button"
                   onClick={copyPrompt}
                   disabled={!prompt}
-                  className="h-9 border border-ih-border px-4 text-[12px] text-ih-ink-2 disabled:cursor-not-allowed disabled:opacity-40"
+                  className="rounded-md h-9 border border-ih-border px-4 text-[12px] text-ih-ink-2 disabled:cursor-not-allowed disabled:opacity-40"
                 >
                   {copied ? 'Copied' : 'Copy prompt'}
                 </button>
@@ -248,7 +248,7 @@ export default function BlueprintImagePanel({
         )}
 
         {active && context?.generationStatus === 'failed' && (
-          <div className="bg-[var(--color-ih-danger)]/5 border border-ih-danger p-5">
+          <div className="rounded-lg bg-[var(--color-ih-danger)]/5 border border-ih-danger p-5">
             <p className="font-mono text-[11px] tracking-[0.12em] text-ih-danger">
               GENERATION FAILED
             </p>
@@ -268,7 +268,7 @@ export default function BlueprintImagePanel({
                 type="button"
                 onClick={reject}
                 disabled={pending}
-                className="h-9 border border-ih-border px-4 text-[12px] text-ih-muted disabled:opacity-40"
+                className="rounded-md h-9 border border-ih-border px-4 text-[12px] text-ih-muted disabled:opacity-40"
               >
                 Dismiss
               </button>
@@ -336,13 +336,13 @@ export default function BlueprintImagePanel({
                   type="button"
                   onClick={reject}
                   disabled={pending}
-                  className="h-10 border border-ih-border px-5 text-[12px] text-ih-muted disabled:opacity-40"
+                  className="rounded-md h-10 border border-ih-border px-5 text-[12px] text-ih-muted disabled:opacity-40"
                 >
                   Reject
                 </button>
               </div>
 
-              <details className="border border-ih-border bg-ih-bg">
+              <details className="rounded-lg border border-ih-border bg-ih-bg">
                 <summary className="cursor-pointer px-3 py-2 font-mono text-[11px] tracking-[0.1em] text-ih-muted">
                   VIEW EXACT GENERATION PROMPT
                 </summary>
@@ -355,7 +355,7 @@ export default function BlueprintImagePanel({
         )}
 
         {active && !context && (
-          <div className="border border-ih-danger p-4 text-[12px] text-ih-danger">
+          <div className="rounded-lg border border-ih-danger p-4 text-[12px] text-ih-danger">
             This draft has invalid generation metadata and cannot be reviewed safely.
           </div>
         )}

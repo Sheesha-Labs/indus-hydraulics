@@ -44,7 +44,7 @@ export default function StartScrapeForm() {
           name="sourceUrl"
           type="url"
           placeholder="https://competitor.example/sitemap.xml"
-          className="h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent"
+          className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent"
         />
       </Field>
 
@@ -57,7 +57,7 @@ export default function StartScrapeForm() {
           name="urlListText"
           rows={6}
           placeholder={'https://competitor.example/products/a10vso-71\nhttps://competitor.example/products/a4vg-125\n…'}
-          className="w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] font-mono focus:outline-none focus:ring-2 focus:ring-ih-accent"
+          className="rounded-md w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] font-mono focus:outline-none focus:ring-2 focus:ring-ih-accent"
         />
       </Field>
 
@@ -65,7 +65,7 @@ export default function StartScrapeForm() {
         <input
           name="notes"
           maxLength={500}
-          className="h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px]"
+          className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px]"
           placeholder="e.g. 'New competitor, axial-piston focus'"
         />
       </Field>
@@ -73,7 +73,7 @@ export default function StartScrapeForm() {
       {state.kind === 'error' && (
         <div
           role="alert"
-          className="border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-4 py-3 text-[13px]"
+          className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-4 py-3 text-[13px]"
         >
           {state.message}
         </div>

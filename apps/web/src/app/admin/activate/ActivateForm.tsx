@@ -31,7 +31,7 @@ export default function ActivateForm({
         role="dialog"
         aria-modal="true"
         aria-labelledby="activate-done-title"
-        className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8 text-center"
+        className="rounded-lg border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8 text-center"
       >
         <div className="mx-auto mb-5 grid h-11 w-11 place-items-center rounded-full bg-[oklch(0.55_0.12_150)]">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -74,7 +74,7 @@ export default function ActivateForm({
       {state?.error && (
         <div
           role="alert"
-          className="border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)] px-4 py-3 text-sm text-[oklch(0.65_0.18_25)]"
+          className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)] px-4 py-3 text-sm text-[oklch(0.65_0.18_25)]"
         >
           {state.error}
         </div>

@@ -83,7 +83,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
     >
       {/* Search + filters */}
       <div className="flex flex-wrap items-center gap-3 mb-6">
-        <form method="GET" action={`/admin/customers`} className="flex border border-ih-border bg-ih-surface h-9">
+        <form method="GET" action={`/admin/customers`} className="rounded-md flex border border-ih-border bg-ih-surface h-9">
           <input
             name="q"
             defaultValue={query}
@@ -102,7 +102,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
             <Link
               key={s}
               href={filterUrl({ status: s || undefined })}
-              className={`px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
+              className={`rounded-lg px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
                 statusFilter === s
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -118,7 +118,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
             <Link
               key={t}
               href={filterUrl({ tier: t || undefined })}
-              className={`px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
+              className={`rounded-lg px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
                 tierFilter === t
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -137,7 +137,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
           <p className="text-ih-muted">No accounts match these filters.</p>
         </div>
       ) : (
-        <div className="border border-ih-border">
+        <div className="overflow-hidden rounded-lg border border-ih-border">
           {/* Header */}
           <div className="grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Account</div>

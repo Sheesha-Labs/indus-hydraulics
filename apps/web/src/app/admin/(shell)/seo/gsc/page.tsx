@@ -46,7 +46,7 @@ export default async function GscPage() {
       </div>
 
       <div
-        className={`mb-6 border px-4 py-3 text-[13px] ${
+        className={`rounded-lg mb-6 border px-4 py-3 text-[13px] ${
           access.ok
             ? 'border-ih-border bg-ih-surface-2 text-ih-ink-2'
             : 'border-ih-border bg-ih-surface text-ih-ink-2'
@@ -59,7 +59,7 @@ export default async function GscPage() {
       </div>
 
       {sites && (
-        <div className="border-ih-border bg-ih-surface mb-6 border px-4 py-3 text-[13px]">
+        <div className="rounded-lg border-ih-border bg-ih-surface mb-6 border px-4 py-3 text-[13px]">
           <p className="mono text-ih-muted mb-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
             Properties this service account can see
           </p>
@@ -95,7 +95,7 @@ export default async function GscPage() {
         <SyncNowButton disabled={!access.ok} />
       </div>
 
-      <div className="border-ih-border bg-ih-surface border p-6">
+      <div className="rounded-lg border-ih-border bg-ih-surface border p-6">
         <h2 className="mb-2 text-[15px] font-medium">Setup</h2>
         <p className="text-ih-muted mb-4 text-[13px]">
           The sync runs nightly at 05:00 and backfills roughly the full retention window on its
@@ -146,7 +146,7 @@ GSC_SERVICE_ACCOUNT_JSON={"type":"service_account", ...}`}
 
 function Tile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="border-ih-border bg-ih-surface border p-4">
+    <div className="rounded-lg border-ih-border bg-ih-surface border p-4">
       <div className="mono text-ih-muted text-[10.5px] uppercase tracking-[0.1em]">{label}</div>
       <div className="mt-1 text-[22px] font-medium">{value}</div>
     </div>

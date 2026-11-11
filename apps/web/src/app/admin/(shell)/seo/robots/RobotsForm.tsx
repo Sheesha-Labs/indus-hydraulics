@@ -40,7 +40,7 @@ export default function RobotsForm({ seoSetting }: Props) {
 
   return (
     <form action={handleSave} className="max-w-[800px] flex flex-col gap-5">
-      <div className="border border-[oklch(0.75_0.12_70)]/40 bg-ih-warning-soft/40 px-4 py-3 text-[12px] leading-relaxed">
+      <div className="rounded-lg border border-[oklch(0.75_0.12_70)]/40 bg-ih-warning-soft/40 px-4 py-3 text-[12px] leading-relaxed">
         <strong>Infrastructure change.</strong> Edits here ship to <code>/robots.txt</code> on
         next request. A bad rule can deindex the entire site — the audit log records every
         change so you can revert quickly.

@@ -208,7 +208,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
           )}
         </div>
       ) : (
-        <div className="border border-ih-border bg-ih-surface">
+        <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
           <div
             className={`${COLUMNS} border-b border-ih-border bg-ih-bg px-4 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted`}
           >

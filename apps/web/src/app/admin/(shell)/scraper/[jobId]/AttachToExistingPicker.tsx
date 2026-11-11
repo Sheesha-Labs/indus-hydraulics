@@ -36,7 +36,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
 
   if (selected) {
     return (
-      <div className="border border-ih-border bg-ih-surface-2 px-3 py-2.5 text-[13px]">
+      <div className="rounded-lg border border-ih-border bg-ih-surface-2 px-3 py-2.5 text-[13px]">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
             <div className="font-mono text-[12px] text-ih-ink truncate">{selected.sku}</div>
@@ -67,13 +67,13 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search existing products by SKU, title, MPN…"
         disabled={disabled}
-        className="h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent disabled:opacity-50"
+        className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent disabled:opacity-50"
       />
       {error && (
         <p className="text-[11px] text-ih-danger-ink mt-1">{error}</p>
       )}
       {query.trim().length >= 2 && (
-        <div className="border border-t-0 border-ih-border bg-ih-bg max-h-[260px] overflow-y-auto">
+        <div className="rounded-b-md border border-t-0 border-ih-border bg-ih-bg max-h-[260px] overflow-y-auto">
           {pending && hits.length === 0 && (
             <p className="px-3 py-2 text-[12px] text-ih-muted">Searching…</p>
           )}

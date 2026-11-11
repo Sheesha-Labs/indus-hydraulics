@@ -211,7 +211,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           type="submit"
           name="publish"
           value="0"
-          className="h-10 px-6 border border-ih-border text-[13px] font-medium hover:bg-ih-surface-2"
+          className="rounded-md h-10 px-6 border border-ih-border text-[13px] font-medium hover:bg-ih-surface-2"
         >
           Save Draft
         </button>

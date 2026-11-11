@@ -77,11 +77,11 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
             name="position"
             type="number"
             defaultValue={brand.position}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
 
-        <fieldset className="border border-ih-border p-4 flex flex-col gap-3">
+        <fieldset className="rounded-lg border border-ih-border p-4 flex flex-col gap-3">
           <legend className="text-[11px] font-mono uppercase tracking-[0.1em] text-ih-muted px-2">
             Specialist card
           </legend>
@@ -93,21 +93,21 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
               <input
                 name="accountManagerName"
                 defaultValue={brand.accountManagerName ?? ''}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
             <Field label="Title" hint='e.g. "Senior Applications Engineer"'>
               <input
                 name="accountManagerTitle"
                 defaultValue={brand.accountManagerTitle ?? ''}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
             <Field label="Years exp." hint='e.g. "12 yrs · certified"'>
               <input
                 name="accountManagerYearsExp"
                 defaultValue={brand.accountManagerYearsExp ?? ''}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
             <Field label="Initials" hint="Auto-derived from name when empty.">
@@ -115,13 +115,13 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
                 name="accountManagerInitials"
                 defaultValue={brand.accountManagerInitials ?? ''}
                 maxLength={4}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
           </div>
         </fieldset>
 
-        <fieldset className="border border-ih-border p-4 flex flex-col gap-3">
+        <fieldset className="rounded-lg border border-ih-border p-4 flex flex-col gap-3">
           <legend className="text-[11px] font-mono uppercase tracking-[0.1em] text-ih-muted px-2">
             Stats row
           </legend>
@@ -134,7 +134,7 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
               <input
                 name="fastestLeadTime"
                 defaultValue={brand.fastestLeadTime ?? ''}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
             <Field label="Partner since (year)">
@@ -142,21 +142,21 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
                 name="partnerSince"
                 type="number"
                 defaultValue={brand.partnerSince ?? ''}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
             <Field label="Largest install value" hint='e.g. "740 kW"'>
               <input
                 name="largestInstallValue"
                 defaultValue={brand.largestInstallValue ?? ''}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
             <Field label="Largest install context" hint="Caption shown below the value.">
               <input
                 name="largestInstallContext"
                 defaultValue={brand.largestInstallContext ?? ''}
-                className="w-full h-9 px-3 border border-ih-border text-[13px]"
+                className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
               />
             </Field>
           </div>
@@ -334,7 +334,7 @@ function CaseStudyForm({
   return (
     <form
       action={onSubmit}
-      className="border border-ih-accent bg-ih-surface-2 p-4 flex flex-col gap-3"
+      className="rounded-lg border border-ih-accent bg-ih-surface-2 p-4 flex flex-col gap-3"
     >
       <input type="hidden" name="brandId" value={brandId} />
       {existing && <input type="hidden" name="id" value={existing.id} />}
@@ -345,14 +345,14 @@ function CaseStudyForm({
             name="tag"
             required
             defaultValue={existing?.tag ?? ''}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
         <Field label="Year">
           <input
             name="year"
             defaultValue={existing?.year ?? ''}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
         <Field label="Position">
@@ -360,7 +360,7 @@ function CaseStudyForm({
             name="position"
             type="number"
             defaultValue={existing?.position ?? 0}
-            className="w-full h-9 px-3 border border-ih-border text-[13px]"
+            className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
           />
         </Field>
       </div>
@@ -370,7 +370,7 @@ function CaseStudyForm({
           name="title"
           required
           defaultValue={existing?.title ?? ''}
-          className="w-full h-9 px-3 border border-ih-border text-[13px]"
+          className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px]"
         />
       </Field>
       <Field label="Description">
@@ -379,7 +379,7 @@ function CaseStudyForm({
           required
           defaultValue={existing?.description ?? ''}
           rows={3}
-          className="w-full px-3 py-2 border border-ih-border text-[13px] resize-vertical"
+          className="rounded-md w-full px-3 py-2 border border-ih-border text-[13px] resize-vertical"
         />
       </Field>
       <Field
@@ -391,7 +391,7 @@ function CaseStudyForm({
           defaultValue={existing?.stats ?? '[]'}
           rows={3}
           spellCheck={false}
-          className="w-full px-3 py-2 border border-ih-border text-[12px] font-mono resize-vertical"
+          className="rounded-md w-full px-3 py-2 border border-ih-border text-[12px] font-mono resize-vertical"
         />
       </Field>
       <Field label="Image media ID" hint="Optional UUID from the media library.">
@@ -399,7 +399,7 @@ function CaseStudyForm({
           name="imageId"
           defaultValue={existing?.imageId ?? ''}
           placeholder="leave empty for no image"
-          className="w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
+          className="rounded-md w-full h-9 px-3 border border-ih-border text-[13px] font-mono"
         />
       </Field>
 
@@ -423,7 +423,7 @@ function CaseStudyForm({
         <button
           type="button"
           onClick={onDone}
-          className="h-9 px-4 border border-ih-border text-[12px] font-medium hover:bg-ih-surface"
+          className="rounded-md h-9 px-4 border border-ih-border text-[12px] font-medium hover:bg-ih-surface"
         >
           Cancel
         </button>

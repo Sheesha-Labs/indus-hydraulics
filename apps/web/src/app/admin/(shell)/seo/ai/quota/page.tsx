@@ -30,7 +30,7 @@ export default async function AiQuotaPage() {
   }
 
   return (
-    <div className="border border-ih-border overflow-hidden max-w-[800px]">
+    <div className="rounded-lg border border-ih-border overflow-hidden max-w-[800px]">
       <table className="w-full text-[13px]">
         <thead>
           <tr className="border-b border-ih-border bg-ih-surface-2">

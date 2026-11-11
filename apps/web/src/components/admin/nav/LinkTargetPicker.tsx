@@ -40,7 +40,7 @@ export default function LinkTargetPicker({ linkType, value, onChange }: Props) {
   return (
     <div className="relative">
       {value ? (
-        <div className="flex items-center gap-2 px-3 py-2 border border-ih-border bg-ih-bg text-[13px]">
+        <div className="rounded-lg flex items-center gap-2 px-3 py-2 border border-ih-border bg-ih-bg text-[13px]">
           <div className="flex-1 min-w-0">
             <div className="font-medium truncate">{value.label}</div>
             {value.sublabel ? (
@@ -65,10 +65,10 @@ export default function LinkTargetPicker({ linkType, value, onChange }: Props) {
               setOpen(true)
             }}
             onFocus={() => setOpen(true)}
-            className="h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px]"
+            className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
           {open ? (
-            <div className="absolute z-10 left-0 right-0 mt-1 bg-ih-surface border border-ih-border max-h-64 overflow-y-auto">
+            <div className="rounded-lg absolute z-10 left-0 right-0 mt-1 bg-ih-surface border border-ih-border max-h-64 overflow-y-auto">
               {pending ? (
                 <div className="px-3 py-2 text-[12px] text-ih-muted">Searching…</div>
               ) : results.length === 0 ? (

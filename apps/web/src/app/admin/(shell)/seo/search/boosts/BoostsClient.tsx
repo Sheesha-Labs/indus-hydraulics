@@ -56,7 +56,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
         buries, <strong>0</strong> effectively hides. Optional expiry auto-clears the boost.
       </div>
 
-      <details className="mb-6 border border-ih-border bg-ih-surface p-4">
+      <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
         <summary className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
           Add product boost
         </summary>
@@ -116,7 +116,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
           <p className="text-ih-muted text-[13px]">No boosts configured.</p>
         </div>
       ) : (
-        <div className="border border-ih-border overflow-hidden">
+        <div className="rounded-lg border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
               <tr className="border-b border-ih-border bg-ih-surface-2">

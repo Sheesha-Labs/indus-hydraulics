@@ -125,7 +125,7 @@ export default function OgImagePicker({
               onChange={handleFileChange}
               disabled={pending}
             />
-            <span className="inline-block h-8 px-3 bg-ih-surface-2 border border-ih-border hover:bg-ih-surface grid place-items-center font-mono text-[11px]">
+            <span className="rounded-md inline-block h-8 px-3 bg-ih-surface-2 border border-ih-border hover:bg-ih-surface grid place-items-center font-mono text-[11px]">
               {pending ? 'Uploading…' : 'Upload new image'}
             </span>
           </label>

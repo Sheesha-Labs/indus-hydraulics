@@ -27,7 +27,7 @@ export default function ForgotPasswordForm() {
         </p>
         <Link
           href="/admin/sign-in"
-          className="inline-flex h-11 w-full items-center justify-center border border-[var(--color-ih-navy-2)] text-sm font-medium text-[#ffffff] transition-colors hover:bg-[var(--color-ih-navy)]"
+          className="rounded-lg inline-flex h-11 w-full items-center justify-center border border-[var(--color-ih-navy-2)] text-sm font-medium text-[#ffffff] transition-colors hover:bg-[var(--color-ih-navy)]"
         >
           Back to sign in
         </Link>
@@ -46,7 +46,7 @@ export default function ForgotPasswordForm() {
         {state?.error && (
           <div
             role="alert"
-            className="border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)] px-4 py-3 text-sm text-[oklch(0.65_0.18_25)]"
+            className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)] px-4 py-3 text-sm text-[oklch(0.65_0.18_25)]"
           >
             {state.error}
           </div>

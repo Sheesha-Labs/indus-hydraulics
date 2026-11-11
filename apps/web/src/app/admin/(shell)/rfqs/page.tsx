@@ -91,7 +91,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
             <Link
               key={f.key}
               href={href}
-              className={`px-3 py-1.5 font-mono text-[12px] border transition-colors ${
+              className={`rounded-lg px-3 py-1.5 font-mono text-[12px] border transition-colors ${
                 active
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -107,7 +107,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
             <Link
               key={u}
               href={filterUrl({ urgency: urgencyFilter === u ? undefined : u })}
-              className={`px-3 py-1.5 font-mono text-[12px] border transition-colors ${
+              className={`rounded-lg px-3 py-1.5 font-mono text-[12px] border transition-colors ${
                 urgencyFilter === u
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -124,7 +124,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
           <p className="text-ih-muted">No RFQs match these filters.</p>
         </div>
       ) : (
-        <div className="border border-ih-border">
+        <div className="overflow-hidden rounded-lg border border-ih-border">
           {/* Header */}
           <div className="grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Reference</div>
