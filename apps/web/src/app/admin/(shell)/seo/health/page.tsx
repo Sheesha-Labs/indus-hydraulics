@@ -182,20 +182,20 @@ export default async function SeoHealthPage() {
                   key={type}
                   className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                 >
-                  <td className="px-3 py-2.5 font-mono text-[11px] uppercase tracking-[0.08em] text-ih-ink-2">
+                  <td className="px-3 py-2.5 tabular-nums text-[11px] uppercase tracking-[0.08em] text-ih-ink-2">
                     {TYPE_LABELS[type as SeoEntityType]}
                   </td>
-                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums">{s.total}</td>
+                  <td className="px-3 py-2.5 text-[12px] tabular-nums">{s.total}</td>
                   <td className="px-3 py-2.5">
                     <SeoHealthBadge score={Math.round(s.avg)} size="sm" />
                   </td>
-                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-ih-success-ink">
+                  <td className="px-3 py-2.5 text-[12px] tabular-nums text-ih-success-ink">
                     {s.healthy}
                   </td>
-                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-ih-warning-ink">
+                  <td className="px-3 py-2.5 text-[12px] tabular-nums text-ih-warning-ink">
                     {s.warn}
                   </td>
-                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-ih-danger-ink">
+                  <td className="px-3 py-2.5 text-[12px] tabular-nums text-ih-danger-ink">
                     {s.critical}
                   </td>
                 </tr>
@@ -230,7 +230,7 @@ export default async function SeoHealthPage() {
                       <td className="px-3 py-2.5">
                         <SeoHealthBadge score={r.score} size="sm" />
                       </td>
-                      <td className="px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+                      <td className="px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
                         {TYPE_LABELS[r.entityType]}
                       </td>
                       <td className="px-3 py-2.5">
@@ -258,7 +258,7 @@ export default async function SeoHealthPage() {
             href="/admin/seo/redirects"
             className="rounded-lg border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
-            <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+            <p className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
               Active redirects
             </p>
             <p className="text-[28px] font-medium mt-1">{totalRedirects}</p>
@@ -267,7 +267,7 @@ export default async function SeoHealthPage() {
             href="/admin/seo/redirects/not-found"
             className="rounded-lg border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
-            <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+            <p className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
               Unresolved 404s
             </p>
             <p
@@ -329,12 +329,12 @@ function SearchPanel({
   return (
     <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
       <div className="flex items-center justify-between mb-3">
-        <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+        <p className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
           {heading}
         </p>
         <Link
           href={ctaHref}
-          className="font-mono text-[11px] text-ih-accent hover:underline"
+          className="tabular-nums text-[11px] text-ih-accent hover:underline"
         >
           {ctaLabel}
         </Link>
@@ -346,7 +346,7 @@ function SearchPanel({
           {rows.map((r) => (
             <li
               key={r.label}
-              className="flex items-baseline justify-between gap-3 font-mono text-[12px]"
+              className="flex items-baseline justify-between gap-3 tabular-nums text-[12px]"
             >
               <span
                 className={`truncate ${
@@ -505,7 +505,7 @@ function Tile({
 }) {
   return (
     <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div
@@ -526,7 +526,7 @@ function Tile({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-8">
-      <h2 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+      <h2 className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
         {title}
       </h2>
       {children}
@@ -544,7 +544,7 @@ function Empty({ children }: { children: React.ReactNode }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -53,7 +53,7 @@ export default async function ScraperJobsPage({ params }: Props) {
         </div>
       ) : (
         <table className="w-full border border-ih-border text-[13px]">
-          <thead className="bg-ih-surface-2 text-ih-muted uppercase font-mono text-[10.5px] tracking-wider">
+          <thead className="bg-ih-surface-2 text-ih-muted uppercase tabular-nums text-[10.5px] tracking-wider">
             <tr>
               <th className="text-left px-3 py-2">Code</th>
               <th className="text-left px-3 py-2">Host</th>
@@ -65,13 +65,13 @@ export default async function ScraperJobsPage({ params }: Props) {
           <tbody>
             {jobs.map((j) => (
               <tr key={j.id} className="border-t border-ih-border hover:bg-ih-surface-2">
-                <td className="px-3 py-2 font-mono text-[12px]">
+                <td className="px-3 py-2 tabular-nums text-[12px]">
                   <Link href={`/admin/scraper/${j.id}`} className="text-ih-accent hover:underline">
                     {j.code}
                   </Link>
                 </td>
                 <td className="px-3 py-2">{j.hostname}</td>
-                <td className="px-3 py-2 font-mono text-[11px] uppercase">{j.status}</td>
+                <td className="px-3 py-2 tabular-nums text-[11px] uppercase">{j.status}</td>
                 <td className="px-3 py-2 text-right">{j.totalFound}</td>
                 <td className="px-3 py-2 text-ih-muted">{j.createdAt.toISOString().slice(0, 10)}</td>
               </tr>

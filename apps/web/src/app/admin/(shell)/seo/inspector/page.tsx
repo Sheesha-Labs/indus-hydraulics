@@ -100,7 +100,7 @@ export default async function SeoInspectorPage({
       {/* Filters */}
       <form className="flex gap-3 items-end mb-4 flex-wrap" method="get">
         <div className="flex-1 min-w-[240px]">
-          <label htmlFor="inspector-q" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+          <label htmlFor="inspector-q" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
             Search
           </label>
           {/* h-9 to match the selects and buttons in this items-end row. */}
@@ -133,13 +133,13 @@ export default async function SeoInspectorPage({
         </SelectFilter>
         <button
           type="submit"
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover"
         >
           Apply
         </button>
         <Link
           href="/admin/seo/inspector"
-          className="rounded-md h-9 px-4 grid place-items-center border border-ih-border font-mono text-[12px] text-ih-muted hover:text-ih-ink-2"
+          className="rounded-md h-9 px-4 grid place-items-center border border-ih-border tabular-nums text-[12px] text-ih-muted hover:text-ih-ink-2"
         >
           Reset
         </Link>
@@ -178,7 +178,7 @@ export default async function SeoInspectorPage({
                     <SeoHealthBadge score={row.score} size="sm" />
                   </td>
                   <td className="px-3 py-2">
-                    <span className="font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+                    <span className="tabular-nums text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
                       {TYPE_LABELS[row.entityType]}
                     </span>
                   </td>
@@ -216,20 +216,20 @@ export default async function SeoInspectorPage({
                       max={DESCRIPTION_RANGE.max}
                     />
                   </td>
-                  <td className="px-3 py-2 font-mono text-[11px]">
+                  <td className="px-3 py-2 tabular-nums text-[11px]">
                     {row.robotsIndex ? (
                       <span className="text-ih-success-ink">index</span>
                     ) : (
                       <span className="text-ih-danger-ink">noindex</span>
                     )}
                   </td>
-                  <td className="px-3 py-2 font-mono text-[11px]">
+                  <td className="px-3 py-2 tabular-nums text-[11px]">
                     {row.ogImagePresent ? '✓' : <span className="text-ih-muted">—</span>}
                   </td>
-                  <td className="px-3 py-2 font-mono text-[11px]">
+                  <td className="px-3 py-2 tabular-nums text-[11px]">
                     {row.hasStructuredData ? '✓' : <span className="text-ih-muted">—</span>}
                   </td>
-                  <td className="px-3 py-2 font-mono text-[11px] text-ih-muted max-w-[260px]">
+                  <td className="px-3 py-2 tabular-nums text-[11px] text-ih-muted max-w-[260px]">
                     <a
                       href={row.url}
                       target="_blank"
@@ -240,7 +240,7 @@ export default async function SeoInspectorPage({
                       {row.url.replace(/^https?:\/\//, '')}
                     </a>
                   </td>
-                  <td className="px-3 py-2 font-mono text-[11px] text-ih-muted whitespace-nowrap">
+                  <td className="px-3 py-2 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
                     {row.lastModified
                       ? row.lastModified.toLocaleDateString('en-GB', {
                           day: 'numeric',
@@ -255,7 +255,7 @@ export default async function SeoInspectorPage({
         </table>
       </div>
 
-      <p className="mt-4 font-mono text-[11px] text-ih-muted">
+      <p className="mt-4 tabular-nums text-[11px] text-ih-muted">
         Showing {filtered.length} of {rows.length} URL(s). Health score is recomputed on every page load.
       </p>
     </div>
@@ -520,7 +520,7 @@ function buildRow(p: {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+    <th className="px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
       {children}
     </th>
   )
@@ -545,7 +545,7 @@ function SummaryTile({
           : 'text-ih-ink-2'
   return (
     <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div className={`text-[28px] font-medium mt-1 ${toneClass}`}>{value}</div>
@@ -569,7 +569,7 @@ function SelectFilter({
   const id = `seo-filter-${name}`
   return (
     <div className="min-w-[150px]">
-      <label htmlFor={id} className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+      <label htmlFor={id} className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
         {label}
       </label>
       <Select id={id} name={name} defaultValue={value} className="h-9">
@@ -611,5 +611,5 @@ function LengthHint({ len, min, max }: { len: number; min: number; max: number }
         : len > max
           ? 'text-ih-danger-ink'
           : 'text-ih-success-ink'
-  return <span className={`font-mono text-[11px] tabular-nums ${tone}`}>{len}/{max}</span>
+  return <span className={`text-[11px] tabular-nums ${tone}`}>{len}/{max}</span>
 }

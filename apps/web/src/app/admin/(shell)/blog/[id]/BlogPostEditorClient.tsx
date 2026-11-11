@@ -200,7 +200,7 @@ export default function BlogPostEditorClient({
               key={t.id}
               type="button"
               onClick={() => setTab(t.id)}
-              className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
+              className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px ${
                 tab === t.id
                   ? 'border-ih-accent text-ih-ink'
                   : 'border-transparent text-ih-muted hover:text-ih-ink-2'
@@ -309,7 +309,7 @@ function ContentForm({
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
-          <label htmlFor="blogpost-title" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="blogpost-title" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Title *
           </label>
           <Input
@@ -322,7 +322,7 @@ function ContentForm({
         </div>
 
         <div>
-          <label htmlFor="blogpost-slug" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="blogpost-slug" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Slug *
           </label>
           <Input
@@ -331,11 +331,11 @@ function ContentForm({
             required
             defaultValue={post?.slug ?? ''}
             type="text"
-            placeholder="url-friendly-slug" className="font-mono" />
+            placeholder="url-friendly-slug" className="tabular-nums" />
         </div>
 
         <div>
-          <label htmlFor="blogpost-tags" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="blogpost-tags" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Tags (comma-separated)
           </label>
           <Input
@@ -351,7 +351,7 @@ function ContentForm({
         <div>
           <label
             htmlFor="blogpost-category"
-            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
           >
             Category
           </label>
@@ -377,7 +377,7 @@ function ContentForm({
         <div>
           <label
             htmlFor="blogpost-author"
-            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
           >
             Byline
           </label>
@@ -404,7 +404,7 @@ function ContentForm({
         <div>
           <label
             htmlFor="blogpost-reviewer"
-            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
           >
             Technical reviewer
           </label>
@@ -433,7 +433,7 @@ function ContentForm({
         <div>
           <label
             htmlFor="blogpost-reviewedAt"
-            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
           >
             Reviewed on
           </label>
@@ -452,7 +452,7 @@ function ContentForm({
         <div>
           <label
             htmlFor="blogpost-publishedAt"
-            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+            className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
           >
             Publish date
           </label>
@@ -470,7 +470,7 @@ function ContentForm({
       </div>
 
       <div>
-        <span className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <span className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Hero image
         </span>
         <OgImagePicker
@@ -484,7 +484,7 @@ function ContentForm({
       </div>
 
       <div>
-        <label htmlFor="blogpost-hero-caption" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="blogpost-hero-caption" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Hero caption
         </label>
         <Input
@@ -500,7 +500,7 @@ function ContentForm({
       </div>
 
       <div>
-        <label htmlFor="blogpost-excerpt" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="blogpost-excerpt" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Excerpt
         </label>
         <Textarea
@@ -512,7 +512,7 @@ function ContentForm({
       </div>
 
       <div>
-        <span className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <span className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Body *
         </span>
         <BlogBodyEditor
@@ -532,7 +532,7 @@ function ContentForm({
           (canonical, robots, OG image, schema, sitemap, …) lives in the SEO
           tab. Both write to the same row; whichever was saved last wins. */}
       <div className="border-t border-ih-border pt-4">
-        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+        <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           SEO basics
         </p>
         <p className="text-[12px] text-ih-muted-2 mb-3">
@@ -541,7 +541,7 @@ function ContentForm({
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label htmlFor="blogpost-seoTitle" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
+            <label htmlFor="blogpost-seoTitle" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Title</label>
             <Input
               id="blogpost-seoTitle"
               name="seoTitle"
@@ -549,7 +549,7 @@ function ContentForm({
               type="text" />
           </div>
           <div>
-            <label htmlFor="blogpost-seoDescription" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
+            <label htmlFor="blogpost-seoDescription" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Description</label>
             <Input
               id="blogpost-seoDescription"
               name="seoDescription"

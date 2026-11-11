@@ -65,7 +65,7 @@ export default async function SeoAuditPage() {
                   isInfra ? 'bg-[oklch(0.98_0.02_70)]/40' : ''
                 }`}
               >
-                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted whitespace-nowrap">
+                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
                   {row.createdAt.toLocaleString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -73,10 +73,10 @@ export default async function SeoAuditPage() {
                     minute: '2-digit',
                   })}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-ih-ink-2">
+                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-ink-2">
                   {actorName ?? <span className="text-ih-muted">system</span>}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px]">
+                <td className="px-3 py-3 tabular-nums text-[11px]">
                   <div className={isInfra ? 'text-ih-warning-ink' : ''}>{row.entityType}</div>
                   {row.entityId && (
                     <div className="text-ih-muted text-[11px] truncate max-w-[160px]">
@@ -84,15 +84,15 @@ export default async function SeoAuditPage() {
                     </div>
                   )}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-ih-ink-2">
+                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-ink-2">
                   {row.field}
                 </td>
                 <td className="px-3 py-3 text-[12px] max-w-[480px]">
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="font-mono text-[11px] text-ih-muted whitespace-pre-wrap break-all">
+                    <div className="tabular-nums text-[11px] text-ih-muted whitespace-pre-wrap break-all">
                       {formatValue(row.before)}
                     </div>
-                    <div className="font-mono text-[11px] text-ih-ink-2 whitespace-pre-wrap break-all">
+                    <div className="tabular-nums text-[11px] text-ih-ink-2 whitespace-pre-wrap break-all">
                       {formatValue(row.after)}
                     </div>
                   </div>
@@ -125,7 +125,7 @@ function formatValue(v: unknown): string {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

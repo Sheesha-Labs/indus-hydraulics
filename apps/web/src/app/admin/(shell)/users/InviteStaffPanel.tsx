@@ -142,7 +142,7 @@ function PendingTable({ rows }: { rows: PendingInvite[] }) {
         <tbody>
           {rows.map((r) => (
             <tr key={r.id} className="border-t border-ih-border">
-              <td className="px-3 py-2 font-mono text-[12px]">{r.email}</td>
+              <td className="px-3 py-2 tabular-nums text-[12px]">{r.email}</td>
               <td className="px-3 py-2">{r.name}</td>
               <td className="px-3 py-2">{r.role.replace(/_/g, ' ')}</td>
               <td className="px-3 py-2 text-ih-muted">{r.expiresAt}</td>

@@ -406,7 +406,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
       {/* ─── bulk bar ────────────────────────────────────────────────── */}
       {selected.size > 0 && (
         <div className="flex flex-wrap items-center gap-2 rounded-[6px] border border-ih-border bg-ih-surface-2 px-3 py-2">
-          <span className="font-mono text-[11.5px] text-ih-ink-2">{selected.size} selected</span>
+          <span className="tabular-nums text-[11.5px] text-ih-ink-2">{selected.size} selected</span>
           <button
             type="button"
             disabled={pending}

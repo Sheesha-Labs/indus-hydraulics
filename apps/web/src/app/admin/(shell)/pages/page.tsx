@@ -65,7 +65,7 @@ export default async function AdminPagesIndex({ params }: Props) {
       actions={
         <Link
           href="/admin/pages/static/new"
-          className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+          className="flex h-9 items-center rounded-md bg-ih-accent px-4 tabular-nums text-[12px] text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
         >
           <Plus size={13} strokeWidth={1.9} className="mr-1.5" />
           New standalone page
@@ -92,8 +92,8 @@ export default async function AdminPagesIndex({ params }: Props) {
                   className="flex h-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-4 transition-colors hover:border-ih-accent"
                 >
                   <span className="text-[13.5px] font-medium text-ih-ink">{page.label}</span>
-                  <span className="font-mono text-[11px] text-ih-muted">{page.path}</span>
-                  <span className="mt-1.5 font-mono text-[11px] text-ih-muted-2">
+                  <span className="tabular-nums text-[11px] text-ih-muted">{page.path}</span>
+                  <span className="mt-1.5 tabular-nums text-[11px] text-ih-muted-2">
                     {page.sections.length} sections ·{' '}
                     {updatedAt
                       ? `edited ${updatedAt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}`
@@ -125,8 +125,8 @@ export default async function AdminPagesIndex({ params }: Props) {
                   className="flex h-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-4 transition-colors hover:border-ih-accent"
                 >
                   <span className="text-[13.5px] font-medium text-ih-ink">{kind.label}</span>
-                  <span className="font-mono text-[11px] text-ih-muted">{kind.publicPath}/…</span>
-                  <span className="mt-1.5 font-mono text-[11px] text-ih-muted-2">
+                  <span className="tabular-nums text-[11px] text-ih-muted">{kind.publicPath}/…</span>
+                  <span className="mt-1.5 tabular-nums text-[11px] text-ih-muted-2">
                     {total} {total === 1 ? kind.itemLabel : `${kind.itemLabel}s`} · {touched} edited
                   </span>
                 </Link>
@@ -150,8 +150,8 @@ export default async function AdminPagesIndex({ params }: Props) {
                 <Images size={14} strokeWidth={1.7} aria-hidden="true" />
                 Homepage carousel
               </span>
-              <span className="font-mono text-[11px] text-ih-muted">Hero visual on /</span>
-              <span className="mt-1.5 font-mono text-[11px] text-ih-muted-2">
+              <span className="tabular-nums text-[11px] text-ih-muted">Hero visual on /</span>
+              <span className="mt-1.5 tabular-nums text-[11px] text-ih-muted-2">
                 {heroSlideCount} {heroSlideCount === 1 ? 'slide' : 'slides'}
               </span>
             </Link>
@@ -164,12 +164,12 @@ export default async function AdminPagesIndex({ params }: Props) {
           <h2 className="text-[15px] font-medium tracking-[-0.01em]">Standalone pages</h2>
           <p className="mt-1 max-w-[74ch] text-[13px] leading-[1.55] text-ih-muted">
             Free-form pages with a single rich-text body. Publishing one whose slug matches a policy
-            route — <span className="font-mono text-[12px] text-ih-ink-2">privacy</span>,{' '}
-            <span className="font-mono text-[12px] text-ih-ink-2">terms</span>,{' '}
-            <span className="font-mono text-[12px] text-ih-ink-2">shipping</span>,{' '}
-            <span className="font-mono text-[12px] text-ih-ink-2">returns</span>,{' '}
-            <span className="font-mono text-[12px] text-ih-ink-2">warranty</span>,{' '}
-            <span className="font-mono text-[12px] text-ih-ink-2">about</span> — replaces that
+            route — <span className="tabular-nums text-[12px] text-ih-ink-2">privacy</span>,{' '}
+            <span className="tabular-nums text-[12px] text-ih-ink-2">terms</span>,{' '}
+            <span className="tabular-nums text-[12px] text-ih-ink-2">shipping</span>,{' '}
+            <span className="tabular-nums text-[12px] text-ih-ink-2">returns</span>,{' '}
+            <span className="tabular-nums text-[12px] text-ih-ink-2">warranty</span>,{' '}
+            <span className="tabular-nums text-[12px] text-ih-ink-2">about</span> — replaces that
             page&apos;s whole body.
           </p>
         </div>
@@ -180,7 +180,7 @@ export default async function AdminPagesIndex({ params }: Props) {
           </p>
         ) : (
           <div className="overflow-hidden rounded-lg border border-ih-border">
-            <div className="grid grid-cols-[1fr_100px_110px_70px] border-b border-ih-border bg-ih-bg px-4 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+            <div className="grid grid-cols-[1fr_100px_110px_70px] border-b border-ih-border bg-ih-bg px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
               <div>Title</div>
               <div className="text-center">Status</div>
               <div className="text-right">Updated</div>
@@ -200,16 +200,16 @@ export default async function AdminPagesIndex({ params }: Props) {
                     <FileText size={13} strokeWidth={1.7} aria-hidden="true" />
                     <span className="truncate">{page.title}</span>
                   </Link>
-                  <div className="font-mono text-[11px] text-ih-muted">/{page.slug}</div>
+                  <div className="tabular-nums text-[11px] text-ih-muted">/{page.slug}</div>
                 </div>
                 <div className="flex justify-center">
                   <span
-                    className={`rounded-full px-2 py-0.5 font-mono text-[11px] font-medium ${page.isPublished ? 'bg-ih-success-soft text-ih-success-ink' : 'bg-ih-surface-2 text-ih-muted'}`}
+                    className={`rounded-full px-2 py-0.5 tabular-nums text-[11px] font-medium ${page.isPublished ? 'bg-ih-success-soft text-ih-success-ink' : 'bg-ih-surface-2 text-ih-muted'}`}
                   >
                     {page.isPublished ? 'Published' : 'Draft'}
                   </span>
                 </div>
-                <div className="text-right font-mono text-[12px] text-ih-muted">
+                <div className="text-right tabular-nums text-[12px] text-ih-muted">
                   {page.updatedAt.toLocaleDateString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -226,12 +226,12 @@ export default async function AdminPagesIndex({ params }: Props) {
                       href={`${storefront}/${page.slug}`}
                       target="_blank"
                       rel="noreferrer"
-                      className="font-mono text-[11px] text-ih-accent hover:underline"
+                      className="tabular-nums text-[11px] text-ih-accent hover:underline"
                     >
                       View ↗
                     </a>
                   ) : (
-                    <span className="font-mono text-[11px] text-ih-muted-2">—</span>
+                    <span className="tabular-nums text-[11px] text-ih-muted-2">—</span>
                   )}
                 </div>
               </div>

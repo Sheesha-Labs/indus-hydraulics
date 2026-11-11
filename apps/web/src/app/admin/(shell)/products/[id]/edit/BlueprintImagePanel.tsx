@@ -122,10 +122,10 @@ export default function BlueprintImagePanel({
       <div className="grid grid-cols-[1fr_150px] gap-5 border-b border-ih-border p-5">
         <div>
           <div className="mb-2 flex items-center gap-2">
-            <span className="bg-ih-navy px-2 py-1 font-mono text-[11px] tracking-[0.12em] text-ih-bg">
+            <span className="bg-ih-navy px-2 py-1 tabular-nums text-[11px] tracking-[0.12em] text-ih-bg">
               BLUEPRINT STUDIO
             </span>
-            <span className="font-mono text-[11px] text-ih-muted">
+            <span className="tabular-nums text-[11px] text-ih-muted">
               GPT-5.5 · GPT IMAGE · HUMAN APPROVAL
             </span>
           </div>
@@ -165,7 +165,7 @@ export default function BlueprintImagePanel({
             <input type="hidden" name="productId" value={productId} />
             <div className="rounded-lg flex items-end justify-between gap-4 border border-ih-border bg-ih-bg p-4">
               <div>
-                <p className="font-mono text-[11px] tracking-[0.12em] text-ih-muted">
+                <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-muted">
                   TITLE-ONLY SOURCE
                 </p>
                 <p className="mt-1 text-[14px] font-medium text-ih-ink">
@@ -179,7 +179,7 @@ export default function BlueprintImagePanel({
                 type="button"
                 onClick={generatePrompt}
                 disabled={pending || !generationAvailable}
-                className="h-10 shrink-0 bg-ih-navy px-5 font-mono text-[11px] font-medium text-ih-bg hover:bg-ih-ink disabled:cursor-not-allowed disabled:opacity-40"
+                className="h-10 shrink-0 bg-ih-navy px-5 tabular-nums text-[11px] font-medium text-ih-bg hover:bg-ih-ink disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {pending ? 'AUTHORING…' : prompt ? 'REGENERATE PROMPT' : 'GENERATE PROMPT'}
               </button>
@@ -188,7 +188,7 @@ export default function BlueprintImagePanel({
             <label className="block">
               <span className="mb-1 flex items-center justify-between gap-4 text-[12px] font-medium">
                 <span>Ready image prompt</span>
-                <span className="font-mono text-[11px] font-normal text-ih-muted">
+                <span className="tabular-nums text-[11px] font-normal text-ih-muted">
                   {prompt.length.toLocaleString()} / 12,000
                 </span>
               </span>
@@ -202,7 +202,7 @@ export default function BlueprintImagePanel({
                 rows={16}
                 maxLength={12000}
                 placeholder="Select Generate prompt to author a complete blueprint image brief from this product title."
-                className="w-full rounded-lg border border-ih-border bg-ih-surface px-3 py-3 font-mono text-[11px] leading-5"
+                className="w-full rounded-lg border border-ih-border bg-ih-surface px-3 py-3 tabular-nums text-[11px] leading-5"
               />
             </label>
             <div className="flex items-center justify-between gap-4">
@@ -222,7 +222,7 @@ export default function BlueprintImagePanel({
               <button
                 type="submit"
                 disabled={pending || !generationAvailable || prompt.trim().length < 400}
-                className="h-10 shrink-0 bg-ih-accent px-5 font-mono text-[11px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover disabled:cursor-not-allowed disabled:opacity-40"
+                className="h-10 shrink-0 bg-ih-accent px-5 tabular-nums text-[11px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {pending ? 'WORKING…' : 'GENERATE IMAGE DRAFT'}
               </button>
@@ -233,7 +233,7 @@ export default function BlueprintImagePanel({
         {active && context && isProcessing && (
           <div className="flex min-h-44 items-center justify-between gap-6 rounded-lg border border-ih-border bg-ih-bg p-6">
             <div>
-              <p className="font-mono text-[11px] tracking-[0.12em] text-ih-accent">
+              <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-accent">
                 {context.generationStatus === 'queued' ? 'QUEUED' : 'GENERATING'}
               </p>
               <p className="mt-2 text-[15px] font-medium">
@@ -249,7 +249,7 @@ export default function BlueprintImagePanel({
 
         {active && context?.generationStatus === 'failed' && (
           <div className="rounded-lg bg-[var(--color-ih-danger)]/5 border border-ih-danger p-5">
-            <p className="font-mono text-[11px] tracking-[0.12em] text-ih-danger">
+            <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-danger">
               GENERATION FAILED
             </p>
             <p className="mt-2 text-[12px] text-ih-ink-2">
@@ -285,14 +285,14 @@ export default function BlueprintImagePanel({
                 alt={`${context.productSnapshot.title} generated blueprint draft`}
                 className="aspect-[4/3] w-full rounded-lg border border-ih-border bg-ih-surface object-contain"
               />
-              <p className="mt-2 font-mono text-[11px] text-ih-muted">
+              <p className="mt-2 tabular-nums text-[11px] text-ih-muted">
                 DRAFT · ATTEMPT {context.attempts} · NOT YET ON PRODUCT PAGE
               </p>
             </div>
 
             <div className="flex flex-col gap-5">
               <div>
-                <p className="font-mono text-[11px] tracking-[0.12em] text-ih-muted">
+                <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-muted">
                   REVIEW CHECKLIST
                 </p>
                 <ul className="mt-2 flex flex-col gap-1 text-[12px] leading-5 text-ih-ink-2">
@@ -343,7 +343,7 @@ export default function BlueprintImagePanel({
               </div>
 
               <details className="rounded-lg border border-ih-border bg-ih-bg">
-                <summary className="cursor-pointer px-3 py-2 font-mono text-[11px] tracking-[0.1em] text-ih-muted">
+                <summary className="cursor-pointer px-3 py-2 tabular-nums text-[11px] tracking-[0.1em] text-ih-muted">
                   VIEW EXACT GENERATION PROMPT
                 </summary>
                 <pre className="max-h-72 overflow-auto whitespace-pre-wrap border-t border-ih-border p-3 text-[11px] leading-4 text-ih-ink-2">

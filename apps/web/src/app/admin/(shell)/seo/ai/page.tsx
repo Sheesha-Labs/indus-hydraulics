@@ -48,7 +48,7 @@ export default async function SeoAiPage() {
 
       {myQuota && (
         <div className="rounded-lg border border-ih-border p-4 mb-6 max-w-[640px]">
-          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
+          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
             Your quota
           </p>
           <div className="flex items-center gap-3">
@@ -65,7 +65,7 @@ export default async function SeoAiPage() {
                 />
               </div>
             </div>
-            <span className="font-mono text-[12px] tabular-nums text-ih-muted whitespace-nowrap">
+            <span className="text-[12px] tabular-nums text-ih-muted whitespace-nowrap">
               ${(myQuota.spentThisMonthMicros / 1_000_000).toFixed(2)} / $
               {(myQuota.monthlyUsdCapMicros / 1_000_000).toFixed(0)}
             </span>
@@ -78,7 +78,7 @@ export default async function SeoAiPage() {
           href="/admin/seo/ai/runs"
           className="rounded-lg flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
         >
-          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
+          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
             Suggestion log
           </p>
           <p className="text-[14px] text-ih-ink">Recent generations →</p>
@@ -87,14 +87,14 @@ export default async function SeoAiPage() {
           href="/admin/seo/ai/quota"
           className="rounded-lg flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
         >
-          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
+          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
             Usage quota
           </p>
           <p className="text-[14px] text-ih-ink">Per-user spend →</p>
         </Link>
       </div>
 
-      <p className="font-mono text-[11px] text-ih-muted mt-6 max-w-[640px]">
+      <p className="tabular-nums text-[11px] text-ih-muted mt-6 max-w-[640px]">
         Per-entity &ldquo;Suggest&rdquo; buttons appear next to title / description / focus
         keyword fields in every SEO drawer. Bulk catalogue generation via Anthropic Batches +
         Inngest is a Phase 2 carry-forward.
@@ -111,7 +111,7 @@ function monthStart(): Date {
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
     <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>

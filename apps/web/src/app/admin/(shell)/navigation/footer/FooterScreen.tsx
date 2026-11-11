@@ -105,7 +105,7 @@ function FieldLabel({ htmlFor, children }: { htmlFor?: string; children: React.R
   return (
     <label
       htmlFor={htmlFor}
-      className="mb-1.5 block font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted"
+      className="mb-1.5 block tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted"
     >
       {children}
     </label>
@@ -368,7 +368,7 @@ export default function FooterScreen({
               placeholder={`© ${FOOTER_LEGAL_YEAR_TOKEN} ${legalFallbackEntity}. All rights reserved.`}
             />
             <p className="mt-1.5 text-[11.5px] text-ih-muted">
-              Type <code className="font-mono">{FOOTER_LEGAL_YEAR_TOKEN}</code> where the year goes
+              Type <code className="tabular-nums">{FOOTER_LEGAL_YEAR_TOKEN}</code> where the year goes
               and it stays current. Left blank, the footer shows “© {new Date().getFullYear()}{' '}
               {legalFallbackEntity}. All rights reserved.”
             </p>

@@ -161,8 +161,8 @@ export default function CampaignSendPanel(props: Props) {
               ] as const
             ).map(([label, n]) => (
               <div key={label}>
-                <dt className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{label}</dt>
-                <dd className="font-mono text-ih-ink">{n.toLocaleString('en-US')}</dd>
+                <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{label}</dt>
+                <dd className="tabular-nums text-ih-ink">{n.toLocaleString('en-US')}</dd>
               </div>
             ))}
           </dl>
@@ -216,7 +216,7 @@ function Progress({ counts }: { counts: DeliveryCounts }) {
           <rect width={pct} height="1" className="fill-ih-accent" />
         </svg>
       </div>
-      <p className="mt-1 font-mono text-[12px] text-ih-muted">{pct}% done</p>
+      <p className="mt-1 tabular-nums text-[12px] text-ih-muted">{pct}% done</p>
     </div>
   )
 }

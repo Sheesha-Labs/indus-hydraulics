@@ -105,7 +105,7 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
               key={t.id}
               type="button"
               onClick={() => setTab(t.id)}
-              className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
+              className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px ${
                 tab === t.id
                   ? 'border-ih-accent text-ih-ink'
                   : 'border-transparent text-ih-muted hover:text-ih-ink-2'
@@ -141,7 +141,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
-          <label htmlFor="cmspage-title" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="cmspage-title" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Title *
           </label>
           <Input
@@ -152,7 +152,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
             type="text" className="text-[15px] font-medium" />
         </div>
         <div>
-          <label htmlFor="cmspage-slug" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="cmspage-slug" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Slug *
           </label>
           <Input
@@ -161,12 +161,12 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
             required
             defaultValue={page?.slug ?? ''}
             type="text"
-            placeholder="about, contact, terms" className="font-mono" />
+            placeholder="about, contact, terms" className="tabular-nums" />
         </div>
       </div>
 
       <div>
-        <label htmlFor="cmspage-body" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="cmspage-body" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Body *
         </label>
         <Textarea
@@ -175,11 +175,11 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           required
           defaultValue={page?.body ?? ''}
           rows={20}
-          placeholder="Page content (HTML)" className="font-mono resize-none" />
+          placeholder="Page content (HTML)" className="tabular-nums resize-none" />
       </div>
 
       <div className="border-t border-ih-border pt-4">
-        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+        <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           SEO basics
         </p>
         <p className="text-[12px] text-ih-muted-2 mb-3">
@@ -188,7 +188,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label htmlFor="cmspage-seoTitle" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
+            <label htmlFor="cmspage-seoTitle" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Title</label>
             <Input
               id="cmspage-seoTitle"
               name="seoTitle"
@@ -196,7 +196,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
               type="text" />
           </div>
           <div>
-            <label htmlFor="cmspage-seoDescription" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
+            <label htmlFor="cmspage-seoDescription" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Description</label>
             <Input
               id="cmspage-seoDescription"
               name="seoDescription"

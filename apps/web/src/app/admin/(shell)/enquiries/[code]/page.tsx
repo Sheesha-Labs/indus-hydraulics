@@ -65,7 +65,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
     <AdminPageShell
       title={enquiry.title}
       breadcrumbs={
-        <span className="font-mono text-[12px] text-ih-muted">
+        <span className="tabular-nums text-[12px] text-ih-muted">
           {enquiry.code}
           {enquiry.bidNo ? ` · ${enquiry.bidNo}` : ''}
           {enquiry.revision ? ` · ${enquiry.revision}` : ''}
@@ -125,10 +125,10 @@ export default async function EnquiryDetailPage({ params }: Props) {
                       <div className="flex flex-col gap-1">
                         <span className="text-ih-ink">{r.description}</span>
                         {r.partNumber ? (
-                          <span className="font-mono text-[12px] text-ih-muted">P/N {r.partNumber}</span>
+                          <span className="tabular-nums text-[12px] text-ih-muted">P/N {r.partNumber}</span>
                         ) : null}
                         {r.certification ? (
-                          <span className="font-mono text-[12px] text-ih-ink-2">{r.certification}</span>
+                          <span className="tabular-nums text-[12px] text-ih-ink-2">{r.certification}</span>
                         ) : null}
                       </div>
                     ),
@@ -223,7 +223,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
                             {ranked.slice(0, 5).map((entry, i) => (
                               <li key={`${entry.candidate.name}-${i}`} className="text-[13px] text-ih-ink-2">
                                 <span className="text-ih-ink">{entry.candidate.name}</span>
-                                <span className="font-mono text-[12px] text-ih-muted">
+                                <span className="tabular-nums text-[12px] text-ih-muted">
                                   {entry.candidate.country ? ` · ${entry.candidate.country}` : ''} · {entry.score}
                                 </span>
                               </li>
@@ -251,7 +251,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
               title="Source text"
               description="Verbatim, after line-ending normalisation. Every line above traces back to this."
             />
-            <pre className="mt-4 max-h-[420px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-ih-border bg-ih-surface-2 p-3 font-mono text-[12px] leading-relaxed text-ih-ink-2">
+            <pre className="mt-4 max-h-[420px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-ih-border bg-ih-surface-2 p-3 tabular-nums text-[12px] leading-relaxed text-ih-ink-2">
               {enquiry.rawText}
             </pre>
           </Panel>
@@ -263,11 +263,11 @@ export default async function EnquiryDetailPage({ params }: Props) {
             <dl className="mt-4 flex flex-col gap-3 text-[13px]">
               <div>
                 <dt className="text-ih-muted">Status</dt>
-                <dd className="font-mono text-ih-ink">{enquiry.status}</dd>
+                <dd className="tabular-nums text-ih-ink">{enquiry.status}</dd>
               </div>
               <div>
                 <dt className="text-ih-muted">Closes</dt>
-                <dd className="font-mono text-ih-ink">
+                <dd className="tabular-nums text-ih-ink">
                   {enquiry.closingAt
                     ? enquiry.closingAt.toISOString().slice(0, 16).replace('T', ' ')
                     : '—'}
@@ -279,7 +279,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
               </div>
               <div>
                 <dt className="text-ih-muted">Extractor</dt>
-                <dd className="font-mono text-ih-ink">{enquiry.extractorName ?? '—'}</dd>
+                <dd className="tabular-nums text-ih-ink">{enquiry.extractorName ?? '—'}</dd>
               </div>
             </dl>
           </Panel>

@@ -19,7 +19,7 @@ export default function StructuredDataPage() {
         admin-managed defaults. Custom <code>sameAs</code>, <code>contactPoint</code>, and
         per-type overrides land in <strong>Phase 2</strong>.
       </p>
-      <p className="font-mono text-[11px]">
+      <p className="tabular-nums text-[11px]">
         Per-entity JSON-LD override is exposed today via the Prisma <code>jsonLdOverride</code>{' '}
         column on every SEO-aware entity (Product, Category, Brand, Industry, BlogPost, CmsPage).
       </p>

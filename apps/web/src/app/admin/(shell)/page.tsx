@@ -100,7 +100,7 @@ export default async function AdminDashboardPage({ params }: Props) {
                 <thead>
                   <tr className="bg-ih-bg border-b border-ih-border">
                     {['Product', 'SKU', 'Status', 'Updated'].map((h, i) => (
-                      <th key={h} className={`px-4 py-2.5 font-mono text-[11px] tracking-[0.08em] text-ih-muted uppercase ${i === 3 ? 'text-right' : 'text-left'}`}>
+                      <th key={h} className={`px-4 py-2.5 tabular-nums text-[11px] tracking-[0.08em] text-ih-muted uppercase ${i === 3 ? 'text-right' : 'text-left'}`}>
                         {h}
                       </th>
                     ))}
@@ -130,11 +130,11 @@ export default async function AdminDashboardPage({ params }: Props) {
                             <div className="text-[11px] text-ih-muted">{product.brand.name}</div>
                           )}
                         </td>
-                        <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">{product.sku}</td>
+                        <td className="px-4 py-3 tabular-nums text-[12px] text-ih-muted">{product.sku}</td>
                         <td className="px-4 py-3">
                           <StatusPill status={product.status} />
                         </td>
-                        <td className="px-4 py-3 text-right font-mono text-[11px] text-ih-muted">
+                        <td className="px-4 py-3 text-right tabular-nums text-[11px] text-ih-muted">
                           {timeAgo(product.updatedAt)}
                         </td>
                       </tr>
@@ -157,7 +157,7 @@ export default async function AdminDashboardPage({ params }: Props) {
                     {' — '}
                     <span className="text-ih-muted">{act.verb.replace(/_/g, ' ')}</span>
                     {' · '}
-                    <span className="font-mono text-[11px] text-ih-muted-2">{timeAgo(act.createdAt)}</span>
+                    <span className="tabular-nums text-[11px] text-ih-muted-2">{timeAgo(act.createdAt)}</span>
                   </div>
                 ))
               )}
@@ -200,7 +200,7 @@ export default async function AdminDashboardPage({ params }: Props) {
               href={link.href}
               className="flex items-center gap-3 rounded-lg border border-ih-border bg-ih-surface px-4 py-3.5 text-[13px] font-medium transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
             >
-              <span className="font-mono text-ih-muted text-base">{link.icon}</span>
+              <span className="tabular-nums text-ih-muted text-base">{link.icon}</span>
               {link.label}
             </Link>
           ))}
@@ -212,9 +212,9 @@ export default async function AdminDashboardPage({ params }: Props) {
 function KpiCard({ label, value, delta }: { label: string; value: string; delta: string }) {
   return (
     <div className="flex flex-col gap-1.5 rounded-lg border border-ih-border bg-ih-surface p-5">
-      <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
-      <p className="font-mono text-[22px] font-medium tracking-tight leading-none">{value}</p>
-      <p className="font-mono text-[11px] text-ih-muted-2">{delta}</p>
+      <p className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
+      <p className="tabular-nums text-[22px] font-medium tracking-tight leading-none">{value}</p>
+      <p className="tabular-nums text-[11px] text-ih-muted-2">{delta}</p>
     </div>
   )
 }
@@ -258,7 +258,7 @@ function StatusPill({ status }: { status: string }) {
     discontinued: 'bg-[oklch(0.95_0.02_25)] text-ih-danger-ink',
   }
   return (
-    <span className={`rounded-[3px] font-mono text-[10.5px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
+    <span className={`rounded-[3px] tabular-nums text-[10.5px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
       {status}
     </span>
   )

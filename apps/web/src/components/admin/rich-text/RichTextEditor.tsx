@@ -158,7 +158,7 @@ function Editable({
           onChange={(event) => setSource(event.target.value)}
           spellCheck={false}
           aria-label={`${ariaLabel} — HTML source`}
-          className="w-full resize-y bg-ih-surface px-5 py-4 font-mono text-[12.5px] leading-relaxed text-ih-ink-2 focus:outline-none"
+          className="w-full resize-y bg-ih-surface px-5 py-4 tabular-nums text-[12.5px] leading-relaxed text-ih-ink-2 focus:outline-none"
           style={{ minHeight }}
         />
       ) : (
@@ -171,7 +171,7 @@ function Editable({
             ? 'Editing the HTML directly. Switch back to check it still reads right.'
             : 'Formatting is saved as HTML — what you see here is what the product page shows.'}
         </span>
-        <span className={`font-mono text-[11px] ${over ? 'text-ih-danger' : 'text-ih-muted-2'}`}>
+        <span className={`tabular-nums text-[11px] ${over ? 'text-ih-danger' : 'text-ih-muted-2'}`}>
           {length.toLocaleString()} / {maxLength.toLocaleString()}
         </span>
       </div>
@@ -398,7 +398,7 @@ function Toolbar({
 function TableBar({ editor, caption }: { editor: Editor; caption: string }) {
   return (
     <div className="flex flex-wrap items-center gap-0.5 border-t border-ih-border bg-ih-surface-2 px-2 py-1.5">
-      <span className="mr-1 flex items-center gap-1.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <span className="mr-1 flex items-center gap-1.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         <TableIcon size={12} strokeWidth={1.9} />
         Table
       </span>

@@ -80,7 +80,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
   return (
     <AdminPageShell
       title={'RFQ Queue'}
-      actions={<><div className="font-mono text-[13px] text-ih-muted">{rfqs.length} requests</div></>}
+      actions={<><div className="tabular-nums text-[13px] text-ih-muted">{rfqs.length} requests</div></>}
     >
       {/* Filters */}
       <div className="flex flex-wrap gap-2 mb-6">
@@ -91,7 +91,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
             <Link
               key={f.key}
               href={href}
-              className={`rounded-lg px-3 py-1.5 font-mono text-[12px] border transition-colors ${
+              className={`rounded-lg px-3 py-1.5 tabular-nums text-[12px] border transition-colors ${
                 active
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -107,7 +107,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
             <Link
               key={u}
               href={filterUrl({ urgency: urgencyFilter === u ? undefined : u })}
-              className={`rounded-lg px-3 py-1.5 font-mono text-[12px] border transition-colors ${
+              className={`rounded-lg px-3 py-1.5 tabular-nums text-[12px] border transition-colors ${
                 urgencyFilter === u
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -126,7 +126,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
       ) : (
         <div className="overflow-hidden rounded-lg border border-ih-border">
           {/* Header */}
-          <div className="grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <div className="grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Reference</div>
             <div>Account</div>
             <div className="text-center">Lines</div>
@@ -142,30 +142,30 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
               className={`grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-3.5 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
             >
               <div>
-                <div className="font-mono text-[13px] font-medium text-ih-ink">{rfq.code}</div>
+                <div className="tabular-nums text-[13px] font-medium text-ih-ink">{rfq.code}</div>
                 {rfq.subject && (
                   <div className="text-[12px] text-ih-muted mt-0.5 truncate max-w-[260px]">{rfq.subject}</div>
                 )}
                 {rfq.assignedEngineer && (
-                  <div className="font-mono text-[11px] text-ih-muted-2 mt-0.5">
+                  <div className="tabular-nums text-[11px] text-ih-muted-2 mt-0.5">
                     Eng: {rfq.assignedEngineer.name}
                   </div>
                 )}
               </div>
               <div>
                 <div className="text-[13px] font-medium text-ih-ink truncate">{rfq.account.legalName}</div>
-                <div className="font-mono text-[11px] text-ih-muted">{rfq.account.code}</div>
+                <div className="tabular-nums text-[11px] text-ih-muted">{rfq.account.code}</div>
               </div>
-              <div className="text-center font-mono text-[13px] text-ih-ink">{rfq.lines.length}</div>
-              <div className={`text-center font-mono text-[11px] capitalize ${URGENCY_COLORS[rfq.urgency] ?? ''}`}>
+              <div className="text-center tabular-nums text-[13px] text-ih-ink">{rfq.lines.length}</div>
+              <div className={`text-center tabular-nums text-[11px] capitalize ${URGENCY_COLORS[rfq.urgency] ?? ''}`}>
                 {rfq.urgency === 'plant_down' ? '🔴 P.Down' : rfq.urgency}
               </div>
               <div className="flex justify-center">
-                <span className={`px-2 py-0.5 font-mono text-[11px] font-medium ${STATUS_COLORS[rfq.status] ?? 'text-ih-muted bg-ih-surface-2'}`}>
+                <span className={`px-2 py-0.5 tabular-nums text-[11px] font-medium ${STATUS_COLORS[rfq.status] ?? 'text-ih-muted bg-ih-surface-2'}`}>
                   {STATUS_LABELS[rfq.status] ?? rfq.status}
                 </span>
               </div>
-              <div className="text-right font-mono text-[12px] text-ih-muted">
+              <div className="text-right tabular-nums text-[12px] text-ih-muted">
                 {rfq.submittedAt ? new Date(rfq.submittedAt).toLocaleDateString() : '—'}
               </div>
             </Link>

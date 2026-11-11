@@ -131,7 +131,7 @@ function Thumb({
           className="h-full w-full object-cover"
         />
       ) : (
-        <span className="grid h-full w-full place-items-center font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+        <span className="grid h-full w-full place-items-center tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
           {subtype(item)}
         </span>
       )}
@@ -226,7 +226,7 @@ export function MediaGrid(props: RowProps) {
           </button>
 
           {/* Sibling of the button, not a child — see the warning above. */}
-          <div className="flex items-center gap-2 px-3 pb-2 pt-1.5 font-mono text-[11px] text-ih-muted">
+          <div className="flex items-center gap-2 px-3 pb-2 pt-1.5 tabular-nums text-[11px] text-ih-muted">
             <span
               className="tabular-nums"
               title={row.bytes > 0 ? undefined : 'File size was not recorded at upload'}
@@ -295,12 +295,12 @@ export function MediaList(props: RowProps) {
               <MediaStatePill state={row.state} />
               {/* Fixed widths so the columns line up without a table element. */}
               <span
-                className="w-16 text-right font-mono text-[11px] tabular-nums text-ih-muted"
+                className="w-16 text-right text-[11px] tabular-nums text-ih-muted"
                 title={row.bytes > 0 ? undefined : 'File size was not recorded at upload'}
               >
                 {formatBytesOrUnknown(row.bytes)}
               </span>
-              <span className="hidden w-16 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted sm:block">
+              <span className="hidden w-16 tabular-nums text-[11px] uppercase tracking-[0.06em] text-ih-muted sm:block">
                 {row.kind}
               </span>
             </button>

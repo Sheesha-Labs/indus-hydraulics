@@ -85,7 +85,7 @@ export default function CategoryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="hydraulic-pumps"
-            className="h-9 w-full rounded-lg border border-ih-border bg-ih-surface px-3 font-mono text-[12px]"
+            className="h-9 w-full rounded-lg border border-ih-border bg-ih-surface px-3 tabular-nums text-[12px]"
           />
         </Field>
 

@@ -85,7 +85,7 @@ export default function IndustriesClient({ industries }: Props) {
                       </div>
                     )}
                   </TableCell>
-                  <TableCell className="font-mono text-[12px] text-ih-muted">{ind.slug}</TableCell>
+                  <TableCell className="tabular-nums text-[12px] text-ih-muted">{ind.slug}</TableCell>
                   <TableCell numeric>{ind.accountCount}</TableCell>
                   <TableCell className="text-center">
                     <StatusPill tone={ind.isPublished ? 'success' : 'neutral'}>
@@ -165,7 +165,7 @@ function IndustryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="oil-gas"
-          className="font-mono"
+          className="tabular-nums"
           />
         </Field>
       </div>
@@ -218,7 +218,7 @@ function IndustryForm({
           Cancel
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}

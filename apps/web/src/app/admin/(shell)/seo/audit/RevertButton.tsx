@@ -36,7 +36,7 @@ export default function RevertButton({ auditLogId, beforeSummary }: Props) {
 
   if (done) {
     return (
-      <span className="font-mono text-[11px] text-ih-success-ink">Reverted ✓</span>
+      <span className="tabular-nums text-[11px] text-ih-success-ink">Reverted ✓</span>
     )
   }
 
@@ -46,12 +46,12 @@ export default function RevertButton({ auditLogId, beforeSummary }: Props) {
         type="button"
         onClick={handleClick}
         disabled={pending}
-        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
+        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
       >
         {pending ? 'Reverting…' : 'Revert'}
       </button>
       {error && (
-        <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+        <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
           {error}
         </span>
       )}

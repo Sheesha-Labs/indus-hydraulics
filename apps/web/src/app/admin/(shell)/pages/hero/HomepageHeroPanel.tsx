@@ -107,7 +107,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
       >
         <div className="flex items-baseline justify-between">
           <h2 className="text-[14px] font-medium">Add a new slide</h2>
-          <span className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <span className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             JPEG / PNG / WebP / GIF · ≤ 10 MB · ~1200×1100 recommended
           </span>
         </div>
@@ -130,7 +130,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
           <button
             type="submit"
             disabled={pending}
-            className="h-10 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 disabled:cursor-not-allowed"
+            className="h-10 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {pending ? 'Uploading…' : 'Upload'}
           </button>
@@ -151,7 +151,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               <div>#</div>
               <div>Preview</div>
               <div>Filename</div>
@@ -167,7 +167,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                   i > 0 ? 'border-t border-ih-border' : ''
                 }`}
               >
-                <div className="font-mono text-[12px] text-ih-muted">
+                <div className="tabular-nums text-[12px] text-ih-muted">
                   {String(i + 1).padStart(2, '0')}
                 </div>
                 <div className="relative w-[100px] h-[80px] bg-ih-surface-2 overflow-hidden">
@@ -179,7 +179,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     className="object-cover"
                   />
                 </div>
-                <div className="font-mono text-[11px] text-ih-ink-2 truncate" title={slide.media.originalFilename}>
+                <div className="tabular-nums text-[11px] text-ih-ink-2 truncate" title={slide.media.originalFilename}>
                   {slide.media.originalFilename}
                 </div>
                 <input
@@ -199,7 +199,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     type="button"
                     onClick={() => handleUpdate(slide.id, { isPublished: !slide.isPublished })}
                     disabled={pending}
-                    className={`px-2 py-0.5 font-mono text-[11px] font-medium transition-opacity hover:opacity-80 disabled:opacity-50 ${
+                    className={`px-2 py-0.5 tabular-nums text-[11px] font-medium transition-opacity hover:opacity-80 disabled:opacity-50 ${
                       slide.isPublished
                         ? 'text-ih-success-ink bg-ih-success-soft'
                         : 'text-ih-muted bg-ih-surface-2'
@@ -215,7 +215,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === 0}
                     aria-label="Move up"
                     title="Move up"
-                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
+                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed tabular-nums text-[14px]"
                   >
                     ↑
                   </button>
@@ -225,7 +225,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === slides.length - 1}
                     aria-label="Move down"
                     title="Move down"
-                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
+                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed tabular-nums text-[14px]"
                   >
                     ↓
                   </button>

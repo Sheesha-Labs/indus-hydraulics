@@ -158,7 +158,7 @@ function formatRate(num: number, den: number): string {
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
     <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>
@@ -171,7 +171,7 @@ function Tile({ label, value, accent }: { label: string; value: string; accent?:
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-8">
-      <h2 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+      <h2 className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
         {title}
       </h2>
       {children}
@@ -204,7 +204,7 @@ function Table({
             {cols.map((c) => (
               <th
                 key={c}
-                className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted"
+                className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted"
               >
                 {c}
               </th>
@@ -218,7 +218,7 @@ function Table({
                 <td
                   key={j}
                   className={`px-3 py-2 ${
-                    mono[j] ? 'font-mono text-[12px] text-ih-ink-2' : 'text-ih-muted'
+                    mono[j] ? 'tabular-nums text-[12px] text-ih-ink-2' : 'text-ih-muted'
                   }`}
                 >
                   {cell}

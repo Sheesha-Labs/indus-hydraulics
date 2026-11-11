@@ -90,14 +90,14 @@ export default async function NewsletterSuppressionsPage({ searchParams }: Props
             {
               key: 'hash',
               header: 'Fingerprint',
-              cell: (r) => <span className="font-mono text-ih-ink-2" title={r.emailHash}>{r.emailHash.slice(0, 12)}…</span>,
+              cell: (r) => <span className="tabular-nums text-ih-ink-2" title={r.emailHash}>{r.emailHash.slice(0, 12)}…</span>,
             },
             {
               key: 'reason',
               header: 'Reason',
               cell: (r) => <StatusPill tone={REASON_TONE[r.reason as Reason] ?? 'neutral'}>{REASON_LABEL[r.reason as Reason] ?? r.reason}</StatusPill>,
             },
-            { key: 'since', header: 'Since', cell: (r) => <span className="font-mono text-ih-ink-2">{r.createdAt.toISOString().slice(0, 10)}</span> },
+            { key: 'since', header: 'Since', cell: (r) => <span className="tabular-nums text-ih-ink-2">{r.createdAt.toISOString().slice(0, 10)}</span> },
           ]}
           emptyState={<EmptyState condition="NONE" message="Nobody has unsubscribed, bounced or complained yet." />}
         />

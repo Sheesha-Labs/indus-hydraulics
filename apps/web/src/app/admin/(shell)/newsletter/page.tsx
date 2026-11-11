@@ -130,9 +130,9 @@ export default async function NewsletterPage() {
               key: 'recipients',
               header: 'Recipients',
               numeric: true,
-              cell: (c) => <span className="font-mono">{c.status === 'draft' || c.status === 'scheduled' ? '—' : c.recipientCount.toLocaleString('en-US')}</span>,
+              cell: (c) => <span className="tabular-nums">{c.status === 'draft' || c.status === 'scheduled' ? '—' : c.recipientCount.toLocaleString('en-US')}</span>,
             },
-            { key: 'when', header: 'When', cell: (c) => <span className="font-mono text-ih-ink-2">{when(c)}</span> },
+            { key: 'when', header: 'When', cell: (c) => <span className="tabular-nums text-ih-ink-2">{when(c)}</span> },
           ]}
           emptyState={<EmptyState condition="NO NEWSLETTERS YET" message="Start one from a layout above." />}
         />

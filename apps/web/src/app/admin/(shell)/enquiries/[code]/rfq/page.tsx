@@ -84,7 +84,7 @@ export default async function EnquiryRfqPage({ params }: Props) {
     <AdminPageShell
       title="Supplier RFQs"
       breadcrumbs={
-        <span className="font-mono text-[12px] text-ih-muted">
+        <span className="tabular-nums text-[12px] text-ih-muted">
           {enquiry.code} · {ranked.length} suppliers · {reachable} reachable
         </span>
       }

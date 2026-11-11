@@ -37,7 +37,7 @@ export default function ContentDepthPanel({ result }: ContentDepthPanelProps) {
           >
             <span
               aria-hidden="true"
-              className={`mt-0.5 font-mono text-[12px] ${check.pass ? 'text-[oklch(0.45_0.12_150)]' : 'text-ih-danger-ink'}`}
+              className={`mt-0.5 tabular-nums text-[12px] ${check.pass ? 'text-[oklch(0.45_0.12_150)]' : 'text-ih-danger-ink'}`}
             >
               {check.pass ? '✓' : '✕'}
             </span>
@@ -49,7 +49,7 @@ export default function ContentDepthPanel({ result }: ContentDepthPanelProps) {
       </ul>
 
       {failing > 0 && (
-        <p className="mt-4 pt-3 border-t border-ih-border font-mono text-[11px] text-ih-muted">
+        <p className="mt-4 pt-3 border-t border-ih-border tabular-nums text-[11px] text-ih-muted">
           {failing} check{failing === 1 ? '' : 's'} failing — fill in the missing fields below to raise the score.
         </p>
       )}

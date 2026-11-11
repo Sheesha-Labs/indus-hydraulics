@@ -54,7 +54,7 @@ export function FieldLabel({
   return (
     <div className="flex items-baseline justify-between gap-3">
       <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
-      {count ? <span className="font-mono text-[10.5px] text-ih-muted-2">{count}</span> : null}
+      {count ? <span className="tabular-nums text-[10.5px] text-ih-muted-2">{count}</span> : null}
       {help && !count ? <span className="text-[10.5px] text-ih-muted-2">{help}</span> : null}
     </div>
   )
@@ -89,7 +89,7 @@ export function FieldEditor({
               className="flex flex-col gap-2.5 rounded-md border border-ih-border bg-ih-surface-2 p-3"
             >
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+                <span className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
                   {field.itemLabel} {i + 1}
                 </span>
                 <div className="flex items-center gap-1">
@@ -380,7 +380,7 @@ export function ImageField({
               </Button>
             ) : null}
             {picked ? (
-              <span className="truncate font-mono text-[11px] text-ih-muted">
+              <span className="truncate tabular-nums text-[11px] text-ih-muted">
                 {picked.originalFilename}
               </span>
             ) : null}

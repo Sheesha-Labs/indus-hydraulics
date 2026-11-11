@@ -52,7 +52,7 @@ export default async function GscPage() {
             : 'border-ih-border bg-ih-surface text-ih-ink-2'
         }`}
       >
-        <span className="mono mr-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
+        <span className="tabular-nums mr-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
           {access.ok ? 'Connected' : 'Not connected'}
         </span>
         {access.detail}
@@ -60,7 +60,7 @@ export default async function GscPage() {
 
       {sites && (
         <div className="rounded-lg border-ih-border bg-ih-surface mb-6 border px-4 py-3 text-[13px]">
-          <p className="mono text-ih-muted mb-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
+          <p className="tabular-nums text-ih-muted mb-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
             Properties this service account can see
           </p>
           {!sites.ok && <p className="text-ih-ink-2">{sites.detail}</p>}
@@ -75,13 +75,13 @@ export default async function GscPage() {
           {sites.ok && sites.sites.length > 0 && (
             <>
               <p className="text-ih-ink-2 mb-2">
-                One of these is the correct value for <code className="mono">GSC_SITE_URL</code>.
+                One of these is the correct value for <code className="tabular-nums">GSC_SITE_URL</code>.
                 Copy it exactly — a domain property is not interchangeable with the URL-prefix one
                 and they hold different data.
               </p>
               <ul className="space-y-1">
                 {sites.sites.map((site) => (
-                  <li key={site.siteUrl} className="mono text-[11.5px]">
+                  <li key={site.siteUrl} className="tabular-nums text-[11.5px]">
                     {site.siteUrl} <span className="text-ih-muted">— {site.permissionLevel}</span>
                   </li>
                 ))}
@@ -114,20 +114,20 @@ export default async function GscPage() {
             In Search Console, open <strong>Settings → Users and permissions → Add user</strong> and
             add the service account address with <strong>Full</strong> or{' '}
             <strong>Restricted</strong> access:
-            <pre className="mono bg-ih-surface-2 mt-1 p-2 text-[11px] leading-relaxed">
+            <pre className="tabular-nums bg-ih-surface-2 mt-1 p-2 text-[11px] leading-relaxed">
               {config.ok ? config.config.clientEmail : 'the client_email from the JSON key'}
             </pre>
           </li>
           <li>
             Set two environment variables in Vercel (Production), then redeploy:
-            <pre className="mono bg-ih-surface-2 mt-1 whitespace-pre-wrap p-2 text-[11px] leading-relaxed">
+            <pre className="tabular-nums bg-ih-surface-2 mt-1 whitespace-pre-wrap p-2 text-[11px] leading-relaxed">
               {`GSC_SITE_URL=https://indushydraulics.com/
 GSC_SERVICE_ACCOUNT_JSON={"type":"service_account", ...}`}
             </pre>
             <span className="text-ih-muted mt-1 block">
               The whole JSON key goes in as one line. A URL-prefix property needs the trailing
               slash; a domain property is written{' '}
-              <code className="mono">sc-domain:example.com</code>. They are different properties
+              <code className="tabular-nums">sc-domain:example.com</code>. They are different properties
               with different data.
             </span>
           </li>
@@ -147,7 +147,7 @@ GSC_SERVICE_ACCOUNT_JSON={"type":"service_account", ...}`}
 function Tile({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-lg border-ih-border bg-ih-surface border p-4">
-      <div className="mono text-ih-muted text-[10.5px] uppercase tracking-[0.1em]">{label}</div>
+      <div className="tabular-nums text-ih-muted text-[10.5px] uppercase tracking-[0.1em]">{label}</div>
       <div className="mt-1 text-[22px] font-medium">{value}</div>
     </div>
   )

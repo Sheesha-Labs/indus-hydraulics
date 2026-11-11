@@ -22,14 +22,14 @@ export default function AdminShellError({
           The rest of the admin app is still working — just this section ran into an error.
         </p>
         {error.digest && (
-          <p className="font-mono text-[11px] text-ih-muted-2 mb-3">
+          <p className="tabular-nums text-[11px] text-ih-muted-2 mb-3">
             Reference: {error.digest}
           </p>
         )}
         <button
           type="button"
           onClick={reset}
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover"
         >
           Retry
         </button>

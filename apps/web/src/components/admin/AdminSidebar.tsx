@@ -210,7 +210,7 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
           className="flex flex-col items-start gap-2 rounded-md focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
         >
           <BrandLockup logoUrl={logoUrl} logoStyle={logoStyle} name={brandName} surface="header" />
-          <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.14em] text-ih-muted">
+          <span className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.14em] text-ih-muted">
             Admin panel
           </span>
         </Link>
@@ -236,7 +236,7 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
                 className="group flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left transition-colors hover:bg-ih-surface-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
               >
                 <span
-                  className={`flex-1 font-mono text-[10.5px] font-medium uppercase tracking-[0.1em] ${
+                  className={`flex-1 tabular-nums text-[10.5px] font-medium uppercase tracking-[0.1em] ${
                     holdsActive && !open ? 'text-ih-ink' : 'text-ih-muted-2'
                   }`}
                 >
@@ -292,7 +292,7 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
         </a>
 
         <div className="grid grid-cols-[32px_1fr_auto] items-center gap-2.5 rounded px-2.5 py-2">
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-ih-accent-soft font-mono text-[11.5px] font-medium text-ih-accent">
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-ih-accent-soft tabular-nums text-[11.5px] font-medium text-ih-accent">
             {initials}
           </span>
           <span className="min-w-0">

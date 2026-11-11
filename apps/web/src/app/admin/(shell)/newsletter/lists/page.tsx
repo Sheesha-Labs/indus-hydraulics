@@ -56,9 +56,9 @@ export default async function NewsletterListsPage() {
                 </div>
               ),
             },
-            { key: 'active', header: 'Can be mailed', numeric: true, cell: (l) => <span className="font-mono">{l.active.toLocaleString('en-US')}</span> },
-            { key: 'total', header: 'On list', numeric: true, cell: (l) => <span className="font-mono">{l.total.toLocaleString('en-US')}</span> },
-            { key: 'updated', header: 'Updated', cell: (l) => <span className="font-mono text-ih-ink-2">{l.updatedAt.toISOString().slice(0, 10)}</span> },
+            { key: 'active', header: 'Can be mailed', numeric: true, cell: (l) => <span className="tabular-nums">{l.active.toLocaleString('en-US')}</span> },
+            { key: 'total', header: 'On list', numeric: true, cell: (l) => <span className="tabular-nums">{l.total.toLocaleString('en-US')}</span> },
+            { key: 'updated', header: 'Updated', cell: (l) => <span className="tabular-nums text-ih-ink-2">{l.updatedAt.toISOString().slice(0, 10)}</span> },
           ]}
           emptyState={<EmptyState condition="NO LISTS" message="Create a list above, then add addresses by hand or upload a CSV or Excel file." />}
         />

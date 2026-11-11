@@ -83,12 +83,12 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
 
       {/* Add new group */}
       <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
-        <summary className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
+        <summary className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
           Add synonym group
         </summary>
         <form action={handleSave} className="mt-3 grid grid-cols-[200px_1fr_auto] gap-3 items-end">
           <div>
-            <label htmlFor="synonym-group" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="synonym-group" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Group name
             </label>
             <Input
@@ -99,7 +99,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
               placeholder="o-ring" />
           </div>
           <div>
-            <label htmlFor="synonym-terms" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
+            <label htmlFor="synonym-terms" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
               Terms (comma- or newline-separated)
             </label>
             <Input
@@ -112,7 +112,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
           >
             Add
           </button>
@@ -120,7 +120,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
       </details>
 
       {error && (
-        <p className="mb-4 font-mono text-[12px] text-ih-danger-ink" role="alert">
+        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
@@ -146,7 +146,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                   key={g.group}
                   className="border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2"
                 >
-                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2 whitespace-nowrap">
+                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2 whitespace-nowrap">
                     {g.group}
                   </td>
                   <td className="px-3 py-3">
@@ -168,14 +168,14 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                         <button
                           type="submit"
                           disabled={pending}
-                          className="h-8 px-3 bg-ih-accent text-ih-accent-fg font-mono text-[11px] disabled:opacity-50"
+                          className="h-8 px-3 bg-ih-accent text-ih-accent-fg tabular-nums text-[11px] disabled:opacity-50"
                         >
                           Save
                         </button>
                         <button
                           type="button"
                           onClick={() => setEditing(null)}
-                          className="rounded-md h-8 px-3 border border-ih-border font-mono text-[11px]"
+                          className="rounded-md h-8 px-3 border border-ih-border tabular-nums text-[11px]"
                         >
                           Cancel
                         </button>
@@ -185,7 +185,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                         {g.terms.map((t) => (
                           <span
                             key={t}
-                            className="rounded-[3px] px-1.5 py-0.5 font-mono text-[11px] bg-ih-surface-2 border border-ih-border"
+                            className="rounded-[3px] px-1.5 py-0.5 tabular-nums text-[11px] bg-ih-surface-2 border border-ih-border"
                           >
                             {t}
                           </span>
@@ -198,7 +198,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                       type="button"
                       onClick={() => handleToggle(g.group, g.isActive)}
                       disabled={pending}
-                      className={`font-mono text-[11px] px-2 py-0.5 ${
+                      className={`tabular-nums text-[11px] px-2 py-0.5 ${
                         g.isActive
                           ? 'text-ih-success-ink bg-ih-success-soft'
                           : 'text-ih-muted bg-ih-surface-2'
@@ -212,7 +212,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                       <button
                         type="button"
                         onClick={() => setEditing(g.group)}
-                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink mr-3"
+                        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink mr-3"
                       >
                         Edit
                       </button>
@@ -231,7 +231,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

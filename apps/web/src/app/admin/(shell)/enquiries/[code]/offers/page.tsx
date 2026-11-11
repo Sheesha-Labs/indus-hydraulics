@@ -35,7 +35,7 @@ export default async function EnquiryOffersPage({ params }: Props) {
     <AdminPageShell
       title="Supplier offers"
       breadcrumbs={
-        <span className="font-mono text-[12px] text-ih-muted">
+        <span className="tabular-nums text-[12px] text-ih-muted">
           {enquiry.code} · {offers.length} {offers.length === 1 ? 'offer' : 'offers'}
         </span>
       }
@@ -69,7 +69,7 @@ export default async function EnquiryOffersPage({ params }: Props) {
                 <header className="mb-4 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex flex-col gap-1">
                     <h2 className="text-[15px] font-medium text-ih-ink">{offer.supplierName}</h2>
-                    <p className="font-mono text-[12px] text-ih-muted">
+                    <p className="tabular-nums text-[12px] text-ih-muted">
                       {offer.currency ?? 'currency not stated'} · {offer.incoterm ?? 'incoterm not stated'}
                       {offer.decimalConvention ? ` · ${offer.decimalConvention}-decimal` : ''}
                     </p>

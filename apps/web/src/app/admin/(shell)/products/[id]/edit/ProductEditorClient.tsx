@@ -250,7 +250,7 @@ export default function ProductEditorClient({
   return (
     <AdminPageShell
       title={product.title}
-      sub={<span className="font-mono">{product.sku}</span>}
+      sub={<span className="tabular-nums">{product.sku}</span>}
       actions={
         <>
           {/*
@@ -397,10 +397,10 @@ function CoreTab({
 
       <div className="grid grid-cols-2 gap-4">
         <Field label="SKU *" error={fieldErrors.sku?.[0]}>
-          <input required name="sku" defaultValue={product.sku} className={inputCls + ' font-mono'} />
+          <input required name="sku" defaultValue={product.sku} className={inputCls + ' tabular-nums'} />
         </Field>
         <Field label="MPN">
-          <input name="mpn" defaultValue={product.mpn ?? ''} className={inputCls + ' font-mono'} />
+          <input name="mpn" defaultValue={product.mpn ?? ''} className={inputCls + ' tabular-nums'} />
         </Field>
       </div>
 
@@ -409,7 +409,7 @@ function CoreTab({
       </Field>
 
       <Field label="Slug" hint="Auto-generated from title if left blank">
-        <input name="slug" defaultValue={product.slug} className={inputCls + ' font-mono'} />
+        <input name="slug" defaultValue={product.slug} className={inputCls + ' tabular-nums'} />
       </Field>
 
       <Field label="Short description" hint="Used as the bullet-point list under the hero. Each line becomes a key feature.">
@@ -543,7 +543,7 @@ function CommerceTab({
               min="0"
               defaultValue={product.listPrice ?? ''}
               placeholder="0.00"
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Compare-at price">
@@ -554,7 +554,7 @@ function CommerceTab({
               min="0"
               defaultValue={product.compareAtPrice ?? ''}
               placeholder="MSRP / strike-through"
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Currency">
@@ -590,7 +590,7 @@ function CommerceTab({
               step="0.001"
               min="0"
               defaultValue={product.weightKg ?? ''}
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Length (mm)">
@@ -599,7 +599,7 @@ function CommerceTab({
               type="number"
               min="0"
               defaultValue={product.dimensionLengthMm ?? ''}
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Width (mm)">
@@ -608,7 +608,7 @@ function CommerceTab({
               type="number"
               min="0"
               defaultValue={product.dimensionWidthMm ?? ''}
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Height (mm)">
@@ -617,7 +617,7 @@ function CommerceTab({
               type="number"
               min="0"
               defaultValue={product.dimensionHeightMm ?? ''}
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
         </div>
@@ -631,7 +631,7 @@ function CommerceTab({
               type="number"
               min="0"
               defaultValue={product.stockQty ?? 0}
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Warehouse label" hint="Free-text shown next to the stock pill (e.g. 'Dubai')">
@@ -653,7 +653,7 @@ function CommerceTab({
               type="number"
               min="0"
               defaultValue={product.leadTimeDays ?? ''}
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Warranty (months)" hint="Storefront defaults to 24 when blank">
@@ -662,7 +662,7 @@ function CommerceTab({
               type="number"
               min="0"
               defaultValue={product.warrantyMonths ?? ''}
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
           <Field label="Country of origin">
@@ -678,7 +678,7 @@ function CommerceTab({
               name="hsCode"
               defaultValue={product.hsCode ?? ''}
               placeholder="84132000"
-              className={inputCls + ' font-mono'}
+              className={inputCls + ' tabular-nums'}
             />
           </Field>
         </div>
@@ -791,7 +791,7 @@ function TemplateSelector({
         {currentTemplate && (
           <a
             href={`/admin/spec-templates/${currentTemplate.id}`}
-            className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
+            className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
           >
             Edit template fields →
           </a>
@@ -823,7 +823,7 @@ function TemplateSelector({
           {pending ? 'Switching…' : 'Apply'}
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -885,7 +885,7 @@ function TemplateSpecForm({
         <h3 className="text-[14px] font-medium text-ih-ink">
           {template.name} — fields
         </h3>
-        <span className="font-mono text-[11px] text-ih-muted">
+        <span className="tabular-nums text-[11px] text-ih-muted">
           {template.fields.length} field{template.fields.length === 1 ? '' : 's'}
         </span>
       </div>
@@ -903,7 +903,7 @@ function TemplateSpecForm({
       ) : (
         Object.entries(grouped).map(([group, fields]) => (
           <div key={group} className="border-b border-ih-border last:border-b-0">
-            <div className="px-5 py-2.5 bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="px-5 py-2.5 bg-ih-bg tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
             <div className="px-5 py-4 grid grid-cols-2 gap-x-5 gap-y-4">
@@ -924,9 +924,9 @@ function TemplateSpecForm({
           >
             {pending ? 'Saving…' : 'Save spec values'}
           </button>
-          {saved && <span className="font-mono text-[11px] text-ih-success-ink">✓ Saved</span>}
+          {saved && <span className="tabular-nums text-[11px] text-ih-success-ink">✓ Saved</span>}
           {error && (
-            <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
+            <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
               {error}
             </span>
           )}
@@ -977,7 +977,7 @@ function TemplateFieldInput({
         name={inputName}
         defaultValue={initialValue}
         required={field.isRequired}
-        className={`${baseCls} font-mono`}
+        className={`${baseCls} tabular-nums`}
       />
     )
   } else {
@@ -997,16 +997,16 @@ function TemplateFieldInput({
       <span className="text-[12px] font-medium text-ih-ink-2 flex items-center gap-1.5">
         {field.label}
         {field.unit && (
-          <span className="font-mono text-[11px] text-ih-muted">({field.unit})</span>
+          <span className="tabular-nums text-[11px] text-ih-muted">({field.unit})</span>
         )}
         {field.isRequired && <span className="text-ih-danger-ink">*</span>}
         {field.isKeyFeature && (
-          <span className="px-1 font-mono text-[10.5px] text-ih-success-ink bg-ih-success-soft rounded-sm">
+          <span className="px-1 tabular-nums text-[10.5px] text-ih-success-ink bg-ih-success-soft rounded-sm">
             KEY
           </span>
         )}
         {field.isQuickSpec && (
-          <span className="px-1 font-mono text-[10.5px] text-ih-accent bg-[oklch(0.96_0.05_240)] rounded-sm">
+          <span className="px-1 tabular-nums text-[10.5px] text-ih-accent bg-[oklch(0.96_0.05_240)] rounded-sm">
             QUICK
           </span>
         )}
@@ -1052,7 +1052,7 @@ function FreeFormSpecsSection({
       {specs.length > 0 &&
         Object.entries(groups).map(([group, items]) => (
           <div key={group} className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-            <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
             {items.map((s) => (
@@ -1124,12 +1124,12 @@ function SpecRow({
           name="value"
           required
           defaultValue={spec.value}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
         />
         <input
           name="unit"
           defaultValue={spec.unit ?? ''}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
         />
         <label className="flex items-center gap-1 text-[11px]">
           <input type="checkbox" name="isFilterable" defaultChecked={spec.isFilterable} />
@@ -1161,14 +1161,14 @@ function SpecRow({
   return (
     <div className={`${SPEC_COLS_DISPLAY} items-center border-t border-ih-border px-4 py-2.5 text-[14px]`}>
       <div className="text-ih-ink-2">{spec.label}</div>
-      <div className="font-mono text-ih-ink">{spec.value}</div>
-      <div className="font-mono text-[11px] text-ih-muted">{spec.unit ?? ''}</div>
-      <div className="font-mono text-[11px] text-ih-muted-2">{spec.isFilterable ? 'filter' : ''}</div>
+      <div className="tabular-nums text-ih-ink">{spec.value}</div>
+      <div className="tabular-nums text-[11px] text-ih-muted">{spec.unit ?? ''}</div>
+      <div className="tabular-nums text-[11px] text-ih-muted-2">{spec.isFilterable ? 'filter' : ''}</div>
       <div className="flex gap-3 justify-end">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
+          className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1216,10 +1216,10 @@ function AddSpecForm({
         <input required name="label" placeholder="Max pressure" className={inputCls} />
       </Field>
       <Field label="Value *">
-        <input required name="value" placeholder="350" className={inputCls + ' font-mono'} />
+        <input required name="value" placeholder="350" className={inputCls + ' tabular-nums'} />
       </Field>
       <Field label="Unit">
-        <input name="unit" placeholder="bar" className={inputCls + ' font-mono'} />
+        <input name="unit" placeholder="bar" className={inputCls + ' tabular-nums'} />
       </Field>
       <label className="flex items-center gap-1.5 h-9 text-[12px] text-ih-ink-2">
         <input type="checkbox" name="isFilterable" />
@@ -1324,9 +1324,9 @@ function ImagesTab({
                 className="w-20 h-20 object-cover bg-ih-bg border border-ih-border"
               />
               <div className="flex flex-col gap-1 min-w-0">
-                <span className="font-mono text-[11px] text-ih-muted truncate">{img.url}</span>
+                <span className="tabular-nums text-[11px] text-ih-muted truncate">{img.url}</span>
                 <span className="text-[12px] text-ih-ink-2">{img.alt ?? <em className="text-ih-muted-2">no alt</em>}</span>
-                <span className="font-mono text-[11px] text-ih-muted-2">Position {i + 1}</span>
+                <span className="tabular-nums text-[11px] text-ih-muted-2">Position {i + 1}</span>
               </div>
               <div className="flex flex-col items-end gap-1.5">
                 <div className="flex gap-1">
@@ -1458,7 +1458,7 @@ function DocumentsTab({
                 i > 0 ? 'border-t border-ih-border' : ''
               }`}
             >
-              <span className="font-mono text-[10.5px] tracking-[0.08em] uppercase text-ih-muted bg-ih-bg px-2 py-1 inline-block w-fit">
+              <span className="tabular-nums text-[10.5px] tracking-[0.08em] uppercase text-ih-muted bg-ih-bg px-2 py-1 inline-block w-fit">
                 {DOC_KIND_LABELS[d.kind] ?? d.kind}
               </span>
               <div className="flex flex-col gap-0.5 min-w-0">
@@ -1467,13 +1467,13 @@ function DocumentsTab({
                   href={d.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-[11px] text-ih-accent truncate hover:underline"
+                  className="tabular-nums text-[11px] text-ih-accent truncate hover:underline"
                 >
                   {d.url}
                 </a>
               </div>
-              <span className="font-mono text-[11px] text-ih-muted uppercase">{d.language}</span>
-              <span className="font-mono text-[10.5px] text-ih-muted-2">{d.isGated ? 'gated' : 'public'}</span>
+              <span className="tabular-nums text-[11px] text-ih-muted uppercase">{d.language}</span>
+              <span className="tabular-nums text-[10.5px] text-ih-muted-2">{d.isGated ? 'gated' : 'public'}</span>
               <DeleteButton label="Remove document" size="sm" className="justify-self-end" onClick={() => onDelete(d.id)} disabled={pending} />
             </div>
           ))}
@@ -1523,7 +1523,7 @@ function DocumentsTab({
           />
         </Field>
         <Field label="Language">
-          <input name="language" defaultValue="en" maxLength={8} className={inputCls + ' font-mono'} />
+          <input name="language" defaultValue="en" maxLength={8} className={inputCls + ' tabular-nums'} />
         </Field>
         <label className="col-span-2 flex items-center gap-1.5 text-[12px] text-ih-ink-2">
           <input type="checkbox" name="isGated" />
@@ -1629,7 +1629,7 @@ function CrossRefRow({
           name="competitorMpn"
           required
           defaultValue={cr.competitorMpn}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
         />
         <select
           name="compatibility"
@@ -1668,15 +1668,15 @@ function CrossRefRow({
   return (
     <div className={`${XREF_COLS_DISPLAY} items-center border-t border-ih-border px-4 py-2.5 text-[14px]`}>
       <div className="text-ih-ink-2">{cr.competitorBrand}</div>
-      <div className="font-mono text-ih-ink">{cr.competitorMpn}</div>
-      <div className="font-mono text-[11px] text-ih-muted capitalize">
+      <div className="tabular-nums text-ih-ink">{cr.competitorMpn}</div>
+      <div className="tabular-nums text-[11px] text-ih-muted capitalize">
         {cr.compatibility.replace(/_/g, ' ')}
       </div>
       <div className="flex gap-3 justify-end">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
+          className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1721,7 +1721,7 @@ function AddCrossRefForm({
         <input required name="competitorBrand" placeholder="Parker" className={inputCls} />
       </Field>
       <Field label="Competitor MPN *">
-        <input required name="competitorMpn" placeholder="PV270L1" className={inputCls + ' font-mono'} />
+        <input required name="competitorMpn" placeholder="PV270L1" className={inputCls + ' tabular-nums'} />
       </Field>
       <Field label="Compatibility">
         <select name="compatibility" defaultValue="direct" className={selectCls}>
@@ -1881,7 +1881,7 @@ function FaqRow({
           type="button"
           onClick={() => onReorder('up')}
           disabled={isFirst || pending}
-          className="font-mono text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
+          className="tabular-nums text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
           title="Move up"
         >
           ↑
@@ -1890,7 +1890,7 @@ function FaqRow({
           type="button"
           onClick={() => onReorder('down')}
           disabled={isLast || pending}
-          className="font-mono text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
+          className="tabular-nums text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
           title="Move down"
         >
           ↓
@@ -1906,7 +1906,7 @@ function FaqRow({
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
+          className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -2086,7 +2086,7 @@ function Field({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-3">
-      <span className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted">{title}</span>
+      <span className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted">{title}</span>
       {children}
     </div>
   )

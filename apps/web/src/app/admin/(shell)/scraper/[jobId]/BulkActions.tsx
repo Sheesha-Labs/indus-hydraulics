@@ -57,7 +57,7 @@ export default function BulkActions({
         type="button"
         onClick={onClick}
         disabled={pending || selectedCount === 0}
-        className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] uppercase tracking-wider disabled:opacity-50"
+        className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] uppercase tracking-wider disabled:opacity-50"
       >
         {pending
           ? `Ingesting ${selectedCount}…`
@@ -70,7 +70,7 @@ export default function BulkActions({
         type="button"
         onClick={onSkipDupes}
         disabled={skipPending}
-        className="rounded-md h-9 px-4 border border-ih-border text-ih-ink-2 font-mono text-[12px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
+        className="rounded-md h-9 px-4 border border-ih-border text-ih-ink-2 tabular-nums text-[12px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
         title="Mark every row whose SKU already exists on indushydraulics.com as 'skipped'"
       >
         {skipPending ? 'Skipping…' : 'Skip duplicates'}

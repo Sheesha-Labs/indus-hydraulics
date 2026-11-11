@@ -60,7 +60,7 @@ export default async function NewProductPage({ params }: Props) {
             <input
               required
               name="sku"
-              className="h-9 w-full px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[13px]"
+              className="h-9 w-full px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[13px]"
               placeholder="IH-XXXX-0000"
             />
           </Field>

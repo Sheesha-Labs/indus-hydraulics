@@ -851,6 +851,39 @@
 }
 
 /* ============================================================
+   Admin: no monospace. Geist everywhere.
+   ------------------------------------------------------------
+   The admin used JetBrains Mono for eyebrows, table headers, slugs, SKUs,
+   counts, chips and even buttons — ~800 call sites. The owner rejected it
+   outright (2026-11-11): it made a working tool read like a terminal. The
+   admin now follows the Bazar admin: one family (Geist) for all UI text;
+   small labels are Geist uppercase with tracking; numbers use tabular figures
+   so columns still align.
+
+   Two layers, because either alone leaks:
+   1. Source: `font-mono` is banned under app/admin and components/admin
+      (admin-no-mono.test.ts) and was replaced with `tabular-nums`.
+   2. This rule: shared packages/ui primitives (StatusPill, NavTabs, KpiTile,
+      DataTable…) and globals classes (.eyebrow, .ih-editor code) still name
+      the mono token because the storefront keeps it. Re-pointing the TOKEN
+      while an admin surface is on the page turns them all to Geist without
+      forking a component. `:root:has()` rather than `[data-surface]` so
+      portalled dialogs, menus and toasts — mounted on <body>, outside the
+      admin wrapper — are covered too. --default-mono-font-family is what
+      Tailwind's preflight gives <code>/<kbd>/<pre>/<samp>.
+
+   The storefront is untouched: no admin wrapper, no override.
+   ============================================================ */
+:root:has([data-surface='admin']) {
+  --font-mono: var(--font-sans);
+  --default-mono-font-family: var(--font-sans);
+}
+
+[data-surface='admin'] :is(code, kbd, pre, samp) {
+  font-family: var(--font-sans);
+}
+
+/* ============================================================
    Blog body editor (admin only)
    ------------------------------------------------------------
    The editing surface deliberately echoes the article's own type scale rather

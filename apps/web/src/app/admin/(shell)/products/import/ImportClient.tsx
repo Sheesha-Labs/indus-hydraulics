@@ -128,12 +128,12 @@ function UploadStep({
     >
       <h2 className="text-[15px] font-medium mb-2">Step 1 — Upload your file</h2>
       <p className="text-[13px] text-ih-muted mb-2">
-        CSV or XLSX, up to 10 MB and 5,000 rows. Required columns: <span className="font-mono">sku</span>,{' '}
-        <span className="font-mono">title</span>. Brand and category must reference existing slugs.
+        CSV or XLSX, up to 10 MB and 5,000 rows. Required columns: <span className="tabular-nums">sku</span>,{' '}
+        <span className="tabular-nums">title</span>. Brand and category must reference existing slugs.
       </p>
       <p className="text-[12px] text-ih-muted mb-5">
-        To set typed specs in bulk, add <span className="font-mono">spec_template_slug</span> plus one{' '}
-        <span className="font-mono">attr_&lt;field_key&gt;</span> column per template field. The downloaded
+        To set typed specs in bulk, add <span className="tabular-nums">spec_template_slug</span> plus one{' '}
+        <span className="tabular-nums">attr_&lt;field_key&gt;</span> column per template field. The downloaded
         template includes a real example using the first template you have defined.
       </p>
 
@@ -169,19 +169,19 @@ function UploadStep({
           <table className="w-full text-[12px]">
             <thead className="bg-ih-bg">
               <tr>
-                <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] text-ih-muted uppercase">Column</th>
-                <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] text-ih-muted uppercase">Required</th>
-                <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] text-ih-muted uppercase">Description</th>
-                <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] text-ih-muted uppercase">Example</th>
+                <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] text-ih-muted uppercase">Column</th>
+                <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] text-ih-muted uppercase">Required</th>
+                <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] text-ih-muted uppercase">Description</th>
+                <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] text-ih-muted uppercase">Example</th>
               </tr>
             </thead>
             <tbody>
               {PRODUCT_IMPORT_COLUMNS.map((c) => (
                 <tr key={c.key} className="border-t border-ih-border">
-                  <td className="px-3 py-2 font-mono text-[12px]">{c.key}</td>
+                  <td className="px-3 py-2 tabular-nums text-[12px]">{c.key}</td>
                   <td className="px-3 py-2 text-[12px]">{c.required ? 'yes' : ''}</td>
                   <td className="px-3 py-2 text-[12px] text-ih-ink-2">{c.description}</td>
-                  <td className="px-3 py-2 font-mono text-[11px] text-ih-muted">{c.example ?? ''}</td>
+                  <td className="px-3 py-2 tabular-nums text-[11px] text-ih-muted">{c.example ?? ''}</td>
                 </tr>
               ))}
             </tbody>
@@ -221,18 +221,18 @@ function PreviewStep({
         <table className="w-full text-[12px]">
           <thead className="bg-ih-bg sticky top-0">
             <tr>
-              <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] uppercase text-ih-muted">Row</th>
-              <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] uppercase text-ih-muted">SKU</th>
-              <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] uppercase text-ih-muted">Title</th>
-              <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] uppercase text-ih-muted">Outcome</th>
-              <th className="text-left px-3 py-2 font-mono text-[11px] tracking-[0.04em] uppercase text-ih-muted">Notes</th>
+              <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] uppercase text-ih-muted">Row</th>
+              <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] uppercase text-ih-muted">SKU</th>
+              <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] uppercase text-ih-muted">Title</th>
+              <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] uppercase text-ih-muted">Outcome</th>
+              <th className="text-left px-3 py-2 tabular-nums text-[11px] tracking-[0.04em] uppercase text-ih-muted">Notes</th>
             </tr>
           </thead>
           <tbody>
             {phase.sample.map((r) => (
               <tr key={r.rowNumber} className="border-t border-ih-border">
-                <td className="px-3 py-2 font-mono text-ih-muted">{r.rowNumber}</td>
-                <td className="px-3 py-2 font-mono">{r.sku}</td>
+                <td className="px-3 py-2 tabular-nums text-ih-muted">{r.rowNumber}</td>
+                <td className="px-3 py-2 tabular-nums">{r.sku}</td>
                 <td className="px-3 py-2">{r.title}</td>
                 <td className="px-3 py-2">
                   <OutcomePill outcome={r.outcome} />
@@ -341,8 +341,8 @@ function Stat({ label, value, tone = 'neutral' }: { label: string; value: number
           : 'text-ih-ink'
   return (
     <div className="rounded-lg border border-ih-border p-3">
-      <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
-      <p className={`font-mono text-[22px] font-medium ${toneCls}`}>{value}</p>
+      <p className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
+      <p className={`tabular-nums text-[22px] font-medium ${toneCls}`}>{value}</p>
     </div>
   )
 }
@@ -355,7 +355,7 @@ function OutcomePill({ outcome }: { outcome: string }) {
         ? 'bg-[oklch(0.95_0.05_240)] text-[oklch(0.4_0.15_240)]'
         : 'bg-[oklch(0.95_0.05_25)] text-[oklch(0.45_0.18_25)]'
   return (
-    <span className={`inline-block px-2 py-0.5 font-mono text-[10.5px] tracking-[0.04em] uppercase ${cls}`}>
+    <span className={`inline-block px-2 py-0.5 tabular-nums text-[10.5px] tracking-[0.04em] uppercase ${cls}`}>
       {outcome}
     </span>
   )

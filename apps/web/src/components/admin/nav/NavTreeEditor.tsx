@@ -431,7 +431,7 @@ function NavRow({
         </select>
 
         {children.length > 0 ? (
-          <span className="shrink-0 font-mono text-[10.5px] tabular-nums text-ih-muted">
+          <span className="shrink-0 text-[10.5px] tabular-nums text-ih-muted">
             {children.length}
           </span>
         ) : null}
@@ -578,7 +578,7 @@ function AdvancedFields({
     <div className="border-t border-ih-border px-2 py-3 pl-[52px]">
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         <label className="flex flex-col gap-1">
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
             Badge
           </span>
           <input
@@ -590,7 +590,7 @@ function AdvancedFields({
           />
         </label>
         <label className="flex flex-col gap-1">
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
             Description
           </span>
           <input
@@ -615,7 +615,7 @@ function AdvancedFields({
 
       {surface.supportsPromo && depth === 0 ? (
         <div className="mt-3 flex flex-col gap-3 border-t border-ih-border pt-3">
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
             Promo tile
           </span>
           <input

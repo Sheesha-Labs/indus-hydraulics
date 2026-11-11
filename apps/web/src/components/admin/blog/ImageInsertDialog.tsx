@@ -263,7 +263,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             <div>
               <label
                 htmlFor="figure-caption"
-                className="mb-1 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+                className="mb-1 block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
               >
                 Caption *
               </label>
@@ -281,7 +281,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             <div>
               <label
                 htmlFor="figure-prefix"
-                className="mb-1 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+                className="mb-1 block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
               >
                 Prefix
               </label>
@@ -290,13 +290,13 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
                 value={captionPrefix}
                 onChange={(e) => setCaptionPrefix(e.target.value)}
                 placeholder="FIG. 01"
-                className="h-9 w-full rounded-md border border-ih-border bg-ih-bg px-2.5 font-mono text-[12px] outline-none focus:border-ih-accent"
+                className="h-9 w-full rounded-md border border-ih-border bg-ih-bg px-2.5 tabular-nums text-[12px] outline-none focus:border-ih-accent"
               />
             </div>
           </div>
 
           <div>
-            <span className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            <span className="mb-1.5 block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
               Shape
             </span>
             <div className="flex gap-1.5">
@@ -306,7 +306,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
                   type="button"
                   onClick={() => setAspectRatio(r)}
                   aria-pressed={aspectRatio === r}
-                  className={`h-7 rounded-md border px-2.5 font-mono text-[11px] transition-colors ${
+                  className={`h-7 rounded-md border px-2.5 tabular-nums text-[11px] transition-colors ${
                     aspectRatio === r
                       ? 'border-ih-accent bg-ih-accent-soft text-ih-accent'
                       : 'border-ih-border text-ih-muted hover:text-ih-ink'

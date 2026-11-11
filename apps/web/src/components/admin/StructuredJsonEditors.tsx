@@ -292,7 +292,7 @@ export function SupportBlockEditor({
         />
       </div>
       <div className="flex flex-col gap-2">
-        <span className="text-[11px] font-mono uppercase tracking-[0.1em] text-ih-muted">
+        <span className="text-[11px] tabular-nums uppercase tracking-[0.1em] text-ih-muted">
           Bullets
         </span>
         {state.bullets.map((b, i) => (

@@ -250,9 +250,9 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
   return (
     <AdminPageShell
-      // font-mono kept: this title is a job CODE, and §2.6 puts machine-readable
+      // tabular-nums kept: this title is a job CODE, and §2.6 puts machine-readable
       // content in mono.
-      title={<span className="font-mono">{job.code}</span>}
+      title={<span className="tabular-nums">{job.code}</span>}
       sub={<span className="break-all">{job.sourceUrl}</span>}
       actions={
         <>
@@ -260,11 +260,11 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
               they qualify it, and dropping them (v2's actions slot is nominally
               buttons-only) would remove the only signal that a crawl is still
               running. */}
-          <span className={`rounded-md px-2 py-0.5 text-[10.5px] font-mono uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
+          <span className={`rounded-md px-2 py-0.5 text-[10.5px] tabular-nums uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
             {STATUS_LABELS[job.status]}
           </span>
           {isLive && (
-            <span className="font-mono text-[11px] uppercase tracking-wider text-ih-muted">
+            <span className="tabular-nums text-[11px] uppercase tracking-wider text-ih-muted">
               Auto-refreshing every 3s
             </span>
           )}
@@ -293,7 +293,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
       {/* Timeline */}
       <section className="rounded-lg border border-ih-border bg-ih-bg p-4 mb-6 text-[12px]">
-        <h2 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted mb-3">Timeline</h2>
+        <h2 className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted mb-3">Timeline</h2>
         <dl className="grid grid-cols-3 gap-x-6 gap-y-1.5">
           <Time label="Created" value={job.createdAt} />
           <Time label="Started" value={job.startedAt} />
@@ -303,7 +303,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
       {job.errorMessage && (
         <section role="alert" className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-4 mb-6">
-          <h2 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-danger-ink mb-1">Error</h2>
+          <h2 className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-danger-ink mb-1">Error</h2>
           <p className="text-[13px] text-[oklch(0.3_0.18_25)]">{job.errorMessage}</p>
         </section>
       )}
@@ -320,7 +320,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           >
             <button
               type="submit"
-              className="rounded-md h-9 px-4 border border-[oklch(0.4_0.18_25)] text-ih-danger-ink font-mono text-[12px] uppercase tracking-wider hover:bg-ih-danger-soft"
+              className="rounded-md h-9 px-4 border border-[oklch(0.4_0.18_25)] text-ih-danger-ink tabular-nums text-[12px] uppercase tracking-wider hover:bg-ih-danger-soft"
             >
               Cancel crawl
             </button>
@@ -364,7 +364,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           {totalPages > 1 && (
             <nav className="mt-6 flex items-center justify-center gap-2 text-[12px]" aria-label="Pagination">
               <PageLink page={pageN - 1} disabled={pageN <= 1} label="← Prev" filterStatus={filterStatus} q={q} />
-              <span className="text-ih-muted font-mono">
+              <span className="text-ih-muted tabular-nums">
                 Page {pageN} of {totalPages}
               </span>
               <PageLink page={pageN + 1} disabled={pageN >= totalPages} label="Next →" filterStatus={filterStatus} q={q} />
@@ -398,7 +398,7 @@ function PageLink({
 
   if (disabled) {
     return (
-      <span className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-muted opacity-50 font-mono">
+      <span className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-muted opacity-50 tabular-nums">
         {label}
       </span>
     )
@@ -406,7 +406,7 @@ function PageLink({
   return (
     <Link
       href={href}
-      className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 font-mono"
+      className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 tabular-nums"
     >
       {label}
     </Link>
@@ -420,7 +420,7 @@ function Stat({ label, value, highlight }: { label: string; value: string; highl
         highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-ih-border'
       }`}
     >
-      <div className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</div>
+      <div className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</div>
       <div className={`text-[15px] font-medium ${highlight ? 'text-ih-danger-ink' : 'text-ih-ink'}`}>
         {value}
       </div>
@@ -431,7 +431,7 @@ function Stat({ label, value, highlight }: { label: string; value: string; highl
 function Time({ label, value }: { label: string; value: Date | null }) {
   return (
     <>
-      <dt className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</dt>
+      <dt className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</dt>
       <dd className="col-span-2 text-[12px] text-ih-ink-2">
         {value ? value.toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—'}
       </dd>

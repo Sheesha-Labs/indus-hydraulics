@@ -196,7 +196,7 @@ export default function Composer(props: Props) {
                 <Input id="nl-preheader" value={draft.preheader} maxLength={200} disabled={!editable} onChange={(e) => update({ preheader: e.target.value })} />
               </Field>
               <p className="text-[12.5px] text-ih-muted">
-                From <span className="font-mono">{props.from}</span> · replies to <span className="font-mono">{props.replyTo}</span>
+                From <span className="tabular-nums">{props.from}</span> · replies to <span className="tabular-nums">{props.replyTo}</span>
                 {props.canSend ? (
                   <>
                     {' · '}
@@ -236,7 +236,7 @@ export default function Composer(props: Props) {
                 </p>
               )}
               <p className="text-[13px] text-ih-ink-2">
-                Reaches <span className="font-mono">{size.toLocaleString('en-US')}</span> {size === 1 ? 'person' : 'people'} right now, once each, leaving out anyone who unsubscribed or bounced.
+                Reaches <span className="tabular-nums">{size.toLocaleString('en-US')}</span> {size === 1 ? 'person' : 'people'} right now, once each, leaving out anyone who unsubscribed or bounced.
               </p>
               {problems.audience ? <p role="alert" className="text-[13px] text-ih-danger-ink">{problems.audience}</p> : null}
             </fieldset>

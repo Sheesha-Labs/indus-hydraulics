@@ -62,7 +62,7 @@ export default async function EnquiriesPage() {
               header: 'Code',
               width: '25%',
               cell: (row) => (
-                <Link className="font-mono text-ih-ink hover:underline" href={`/admin/enquiries/${row.code}`}>
+                <Link className="tabular-nums text-ih-ink hover:underline" href={`/admin/enquiries/${row.code}`}>
                   {row.code}
                 </Link>
               ),
@@ -81,12 +81,12 @@ export default async function EnquiriesPage() {
               key: 'lines',
               header: 'Lines',
               numeric: true,
-              cell: (row) => <span className="font-mono">{row._count.lines}</span>,
+              cell: (row) => <span className="tabular-nums">{row._count.lines}</span>,
             },
             {
               key: 'closing',
               header: 'Closes',
-              cell: (row) => <span className="font-mono text-ih-ink-2">{daysLeft(row.closingAt)}</span>,
+              cell: (row) => <span className="tabular-nums text-ih-ink-2">{daysLeft(row.closingAt)}</span>,
             },
             {
               key: 'status',

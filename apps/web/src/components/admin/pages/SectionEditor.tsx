@@ -289,7 +289,7 @@ function SectionRow({
           </button>
         )}
 
-        <span className="w-5 font-mono text-[10.5px] text-ih-muted-2">{index + 1}</span>
+        <span className="w-5 tabular-nums text-[10.5px] text-ih-muted-2">{index + 1}</span>
 
         <button type="button" onClick={onToggleExpand} className="min-w-0 flex-1 text-left">
           <span className="text-[13.5px] font-medium text-ih-ink">{section.def.label}</span>
@@ -352,7 +352,7 @@ function SectionRow({
           {section.def.fields.length === 0 ? (
             <p className="text-[12.5px] text-ih-muted">
               Nothing to edit here — this section renders live data. You can still reorder it or
-              hide it from <span className="font-mono text-ih-ink-2">{path}</span>.
+              hide it from <span className="tabular-nums text-ih-ink-2">{path}</span>.
             </p>
           ) : (
             section.def.fields.map((field) => (

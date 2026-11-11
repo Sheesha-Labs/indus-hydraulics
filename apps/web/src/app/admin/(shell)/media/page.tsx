@@ -257,21 +257,21 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
               <AlertTriangle size={13} strokeWidth={1.9} aria-hidden="true" className="mt-0.5 flex-shrink-0" />
               <span>
                 Usage couldn&apos;t be read from{' '}
-                <span className="font-mono">{usageIndex.failedSources.join(', ')}</span>. Files may
+                <span className="tabular-nums">{usageIndex.failedSources.join(', ')}</span>. Files may
                 look unused when they are not, so deleting stays disabled until this loads cleanly.
               </span>
             </p>
           ) : null}
 
           <p className="text-[12.5px] text-ih-muted">
-            <span className="font-mono tabular-nums">{selected.total.toLocaleString()}</span> of{' '}
-            <span className="font-mono tabular-nums">{decorated.length.toLocaleString()}</span> files
+            <span className="tabular-nums">{selected.total.toLocaleString()}</span> of{' '}
+            <span className="tabular-nums">{decorated.length.toLocaleString()}</span> files
             {trashed ? ' in trash' : ''} ·{' '}
-            <span className="font-mono tabular-nums">{formatBytes(totalBytes)}</span>
+            <span className="tabular-nums">{formatBytes(totalBytes)}</span>
             {!trashed && reclaimableBytes > 0 ? (
               <>
                 {' · '}
-                <span className="font-mono tabular-nums">{formatBytes(reclaimableBytes)}</span>{' '}
+                <span className="tabular-nums">{formatBytes(reclaimableBytes)}</span>{' '}
                 reclaimable
               </>
             ) : null}
@@ -279,7 +279,7 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
               <>
                 {' · '}
                 <span title="These were uploaded without their size being recorded, so the total above is a floor.">
-                  <span className="font-mono tabular-nums">{unknownSizeCount.toLocaleString()}</span>{' '}
+                  <span className="tabular-nums">{unknownSizeCount.toLocaleString()}</span>{' '}
                   of unknown size
                 </span>
               </>

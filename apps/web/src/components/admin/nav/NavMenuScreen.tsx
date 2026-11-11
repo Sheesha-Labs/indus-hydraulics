@@ -123,7 +123,7 @@ export default function NavMenuScreen({
           </p>
         ) : null}
 
-        <div className="font-mono text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+        <div className="tabular-nums text-[11px] uppercase tracking-[0.08em] text-ih-muted">
           {counts}
         </div>
 

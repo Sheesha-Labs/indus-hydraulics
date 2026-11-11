@@ -36,7 +36,7 @@ export default async function BulkImportPage({ params }: Props) {
           <div className="mt-10 max-w-5xl">
             <h2 className="text-[14px] font-medium mb-3">Recent imports</h2>
             <div className="rounded-lg border border-ih-border bg-ih-surface">
-              <div className="grid grid-cols-[1fr_120px_120px_140px_120px] gap-3 px-4 py-2.5 text-[11px] font-mono uppercase tracking-[0.04em] text-ih-muted border-b border-ih-border">
+              <div className="grid grid-cols-[1fr_120px_120px_140px_120px] gap-3 px-4 py-2.5 text-[11px] tabular-nums uppercase tracking-[0.04em] text-ih-muted border-b border-ih-border">
                 <div>Code</div>
                 <div>Status</div>
                 <div>By</div>
@@ -48,13 +48,13 @@ export default async function BulkImportPage({ params }: Props) {
                   key={j.id}
                   className="grid grid-cols-[1fr_120px_120px_140px_120px] gap-3 px-4 py-3 items-center text-[13px] border-t border-ih-border"
                 >
-                  <div className="font-mono text-[12px] text-ih-ink">{j.code}</div>
-                  <div className="font-mono text-[11px] text-ih-muted capitalize">{j.status}</div>
+                  <div className="tabular-nums text-[12px] text-ih-ink">{j.code}</div>
+                  <div className="tabular-nums text-[11px] text-ih-muted capitalize">{j.status}</div>
                   <div className="text-[12px] text-ih-ink-2">{j.startedBy?.name ?? 'System'}</div>
-                  <div className="font-mono text-[11px] text-right text-ih-muted">
+                  <div className="tabular-nums text-[11px] text-right text-ih-muted">
                     {j.rowsToCreate + j.rowsToUpdate} / {j.rowsWithErrors}
                   </div>
-                  <div className="font-mono text-[11px] text-ih-muted text-right">
+                  <div className="tabular-nums text-[11px] text-ih-muted text-right">
                     {new Date(j.createdAt).toLocaleDateString()}
                   </div>
                 </div>

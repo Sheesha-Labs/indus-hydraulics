@@ -20,13 +20,13 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
       <div className="w-full max-w-[380px]">
         {/* Brand */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="relative w-10 h-10 bg-[#ffffff] grid place-items-center font-mono font-medium text-[14px] text-[#111] rounded-sm">
+          <div className="relative w-10 h-10 bg-[#ffffff] grid place-items-center tabular-nums font-medium text-[14px] text-[#111] rounded-sm">
             IH
             <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-ih-accent" />
           </div>
           <div>
             <div className="font-medium text-white leading-tight">Indus Hydraulics</div>
-            <div className="font-mono text-[10.5px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase">
+            <div className="tabular-nums text-[10.5px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase">
               Admin Portal
             </div>
           </div>
@@ -48,7 +48,7 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
           </a>
         </div>
 
-        <p className="text-center font-mono text-[11px] text-[oklch(0.62_0.03_250)] mt-6">
+        <p className="text-center tabular-nums text-[11px] text-[oklch(0.62_0.03_250)] mt-6">
           © {new Date().getFullYear()} Indus Hydraulics
         </p>
       </div>

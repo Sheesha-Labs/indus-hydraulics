@@ -65,7 +65,7 @@ function Form() {
             name="rawText"
             required
             rows={14}
-            className="font-mono"
+            className="tabular-nums"
             placeholder={'1. GASKET SET FOR MAIN PUMP - 4 Nos.2. SHAFT SEAL 60MM - 2 Nos.'}
           />
         </Field>

@@ -159,7 +159,7 @@ function RailItem({
         <span className="min-w-0 flex-1 truncate">{label}</span>
         <span
           className={cn(
-            'font-mono text-[11px] tabular-nums',
+            'text-[11px] tabular-nums',
             active ? 'text-white/75' : 'text-ih-muted'
           )}
         >
@@ -207,7 +207,7 @@ export function StateTabs({
             {state === 'all' ? 'All' : MEDIA_STATE_LABELS[state]}
             <span
               className={cn(
-                'font-mono text-[10.5px] tabular-nums',
+                'text-[10.5px] tabular-nums',
                 isActive ? 'text-ih-bg/75' : 'text-ih-muted'
               )}
             >
@@ -294,7 +294,7 @@ export function KindChips({
             )}
           >
             {label}
-            <span className="font-mono text-[10.5px] tabular-nums opacity-70">{count}</span>
+            <span className="text-[10.5px] tabular-nums opacity-70">{count}</span>
           </Link>
         )
       })}

@@ -49,7 +49,7 @@ export default async function EnquiryPricingPage({ params }: Props) {
     <AdminPageShell
       title="Pricing"
       breadcrumbs={
-        <span className="font-mono text-[12px] text-ih-muted">
+        <span className="tabular-nums text-[12px] text-ih-muted">
           {enquiry.code} · {selectedCount} of {enquiry.lines.length} lines priced
           {latestQuote ? ` · ${latestQuote.code}` : ''}
         </span>
@@ -75,7 +75,7 @@ export default async function EnquiryPricingPage({ params }: Props) {
                 <h2 className="text-[15px] font-medium text-ih-ink">
                   {line.position}. {line.description}
                 </h2>
-                <span className="font-mono text-[12px] text-ih-muted">
+                <span className="tabular-nums text-[12px] text-ih-muted">
                   {line.qty ? `${line.qty.toString()} ${line.unit ?? ''}`.trim() : 'qty to confirm'}
                 </span>
               </header>
@@ -106,7 +106,7 @@ export default async function EnquiryPricingPage({ params }: Props) {
                               <StatusPill tone="danger" size="sm">Declined</StatusPill>
                             ) : null}
                           </div>
-                          <span className="font-mono text-[12px] text-ih-muted">
+                          <span className="tabular-nums text-[12px] text-ih-muted">
                             {cost != null ? `${o.offer.currency ?? ''} ${cost}`.trim() : 'no readable price'}
                             {o.moq ? ` · MOQ ${o.moq.toString()}` : ''}
                             {o.leadTimeDays ? ` · ${o.leadTimeDays}d` : ''}

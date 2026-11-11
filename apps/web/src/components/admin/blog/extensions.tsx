@@ -303,7 +303,7 @@ function StructuredBlockCard({ node, deleteNode, selected, updateAttributes }: N
       data-drag-handle
     >
       <div className="min-w-0 flex-1">
-        <div className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-accent">
+        <div className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-accent">
           {summary.label}
         </div>
         <div className="mt-1 truncate text-[13px] text-ih-ink-2">{summary.detail}</div>
