@@ -24,6 +24,7 @@ vi.mock('@indus/email', async () => {
 vi.mock('../email-branding', () => ({
   loadEmailBranding: async () => ({ legalName: 'Indus Hydraulic Power Trading LLC', registeredAddressLines: ['Dubai'], replyTo: null }),
 }))
+vi.mock('../store-settings', () => ({ getStoreSettings: async () => ({ logoUrl: null, footerLogoUrl: null }) }))
 vi.mock('./records', () => ({ resolveRecords: async () => new Map() }))
 
 const { MAX_SEND_ATTEMPTS, batchKey, finishCampaign, pauseSeconds, sendBatch } = await import('./send')

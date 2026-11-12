@@ -31,6 +31,7 @@ const ctx = (): DesignRenderContext => ({
 function withMedia(type: string, props: Props): Props {
   const out: Props = { ...props, image: img(1), photo: img(2), portrait: img(3) }
   if (type === 'gallery') out.items = [{ image: img(4), alt: 'a', link: '', caption: '' }, { image: img(5), alt: 'b', link: '', caption: '' }]
+  if (type === 'image-grid') out.items = [{ image: img(6), alt: 'c', link: '', caption: 'Hose assembly' }, { image: img(7), alt: 'd', link: '', caption: '' }]
   if (type === 'records') out.records = { kind: 'product', ids: ['p1'], labels: ['2SN hose'], layout: 'grid' }
   return out
 }
@@ -79,7 +80,7 @@ describe('block catalogue', () => {
 
   it('draws only blocks that need a picture or a record as nothing on bare defaults', () => {
     const empty = BLOCKS.filter((def) => renderBlock(newBlock(def.type), ctx()) === '').map((d) => d.type)
-    expect(empty.sort()).toEqual(['gallery', 'image', 'records'])
+    expect(empty.sort()).toEqual(['gallery', 'image', 'image-grid', 'records'])
   })
 })
 
@@ -105,5 +106,37 @@ describe('presets', () => {
       expect(out.html, p.id).toContain('Unsubscribe')
       expect(out.text, p.id).toContain('Unsubscribe: https://indushydraulics.com/newsletter/unsubscribe/tok')
     }
+  })
+
+  it('draws ==marked== words in the block’s highlight colour, and drops the marks from the text part', () => {
+    const block = newBlock('heading', { heading: 'Repaired. ==Certified.==', highlightColor: '#6d9fc2', caps: true })
+    const html = renderBlock(block, ctx())
+    expect(html).toContain('<span style="color:#6d9fc2">Certified.</span>')
+    expect(html).toContain('text-transform:uppercase')
+    expect(html).not.toContain('==')
+    const out = renderDesign({ ...emptyDesign(), blocks: [block] }, ctx())
+    expect(out.text).toContain('Repaired. Certified.')
+  })
+
+  it('draws records as alternating rows with a button each, and as tiles ending in the “view all” tile', () => {
+    const rows = renderBlock(newBlock('records', { records: { kind: 'product', ids: ['p1'], labels: ['x'], layout: 'rows' }, itemLabel: 'Discover', buttonLabel: '' }), ctx())
+    expect(rows).toContain('Discover')
+    expect(rows).toContain('https://indushydraulics.com/p/2sn-hose')
+    const tiles = renderBlock(newBlock('records', { records: { kind: 'product', ids: ['p1'], labels: ['x'], layout: 'tiles' }, buttonLabel: 'And many more', buttonUrl: '/c' }), ctx())
+    expect(tiles).toContain('And many more')
+    expect(tiles).toContain('Discover &rarr;')
+    // The "view all" link is the last tile, not a second button under the tiles.
+    expect(tiles.match(/href="https:\/\/indushydraulics.com\/c"/g)?.length).toBe(2)
+  })
+
+  it('uses the white logo on dark bands and falls back to the name without one', () => {
+    const mast = newBlock('masthead', { logo: 'brand-light', watermark: 'Product news' })
+    expect(renderBlock(mast, { ...ctx(), brand: { legalName: 'Indus Hydraulics', addressLines: [], logoOnDarkUrl: 'https://cdn.example.com/white.png' } })).toContain(
+      'src="https://cdn.example.com/white.png"',
+    )
+    const plain = renderBlock(mast, ctx())
+    expect(plain).toContain('Indus Hydraulics')
+    // The faint word is a solid blend of white into navy, not opacity.
+    expect(plain).toMatch(/aria-hidden="true"[^>]*color:#[0-9a-f]{6}">Product news/)
   })
 })

@@ -6,7 +6,7 @@ import type { RecordKind } from './blocks/types'
 
 /**
  * The site records a newsletter can feature — products, categories, blog
- * articles, industries, brands — looked up by id at render time, so a campaign
+ * articles, industries, brands, service case studies — looked up by id at render time, so a campaign
  * always shows the live title, photo and link. Only published records are
  * resolved; anything else is left out of the email (and reported by the
  * send gate as missing).
@@ -20,6 +20,7 @@ const PATH: Record<RecordKind, (slug: string) => string> = {
   article: (s) => `/blog/${s}`,
   industry: (s) => `/industries/${s}`,
   brand: (s) => `/brands/${s}`,
+  service: (s) => `/services/${s}`,
 }
 
 function image(storagePath: string | null | undefined): string | null {
@@ -29,7 +30,7 @@ function image(storagePath: string | null | undefined): string | null {
 
 /** Every record the refs name, keyed `${kind}:${id}`. One query per kind. */
 export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, ResolvedRecord>> {
-  const want: Record<RecordKind, Set<string>> = { product: new Set(), category: new Set(), article: new Set(), industry: new Set(), brand: new Set() }
+  const want: Record<RecordKind, Set<string>> = { product: new Set(), category: new Set(), article: new Set(), industry: new Set(), brand: new Set(), service: new Set() }
   for (const r of refs) for (const id of r.ids) want[r.kind].add(id)
   const out = new Map<string, ResolvedRecord>()
   const put = (rec: ResolvedRecord) => out.set(recordKey(rec.kind, rec.id), rec)
@@ -44,6 +45,7 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
               slug: true,
               title: true,
               sku: true,
+              descriptionShort: true,
               brand: { select: { name: true } },
               images: { orderBy: { position: 'asc' }, take: 1, select: { alt: true, media: { select: { storagePath: true, alt: true } } } },
             },
@@ -57,6 +59,7 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
                 title: p.title,
                 subtitle: p.brand?.name ?? null,
                 meta: p.sku,
+                summary: p.descriptionShort ?? null,
                 url: `${BASE_URL}${PATH.product(p.slug)}`,
                 imageUrl: image(img?.media.storagePath),
                 imageAlt: img?.alt ?? img?.media.alt ?? p.title,
@@ -156,6 +159,35 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
             }),
           )
       : null,
+    want.service.size
+      ? db.serviceCase
+          .findMany({
+            where: { id: { in: [...want.service] }, status: 'published' },
+            select: {
+              id: true,
+              slug: true,
+              title: true,
+              topicLabel: true,
+              cardOneLiner: true,
+              deck: true,
+              heroImage: { select: { storagePath: true, alt: true } },
+            },
+          })
+          .then((rows) =>
+            rows.forEach((c) =>
+              put({
+                kind: 'service',
+                id: c.id,
+                title: c.title,
+                subtitle: c.topicLabel,
+                summary: c.cardOneLiner || c.deck || null,
+                url: `${BASE_URL}${PATH.service(c.slug)}`,
+                imageUrl: image(c.heroImage?.storagePath),
+                imageAlt: c.heroImage?.alt ?? c.title,
+              }),
+            ),
+          )
+      : null,
   ])
   return out
 }
@@ -215,6 +247,15 @@ export async function searchRecords(kind: RecordKind, q: string): Promise<Record
           select: { id: true, name: true, slug: true },
         })
       ).map((b) => ({ id: b.id, label: b.name, hint: `/brands/${b.slug}` }))
+    case 'service':
+      return (
+        await db.serviceCase.findMany({
+          where: { status: 'published', ...(term ? { title: { contains: term, mode: 'insensitive' } } : {}) },
+          orderBy: { publishedAt: 'desc' },
+          take,
+          select: { id: true, title: true, topicLabel: true },
+        })
+      ).map((c) => ({ id: c.id, label: c.title, hint: c.topicLabel }))
   }
 }
 

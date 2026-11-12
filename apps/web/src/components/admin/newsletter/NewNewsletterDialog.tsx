@@ -1,12 +1,18 @@
 'use client'
 
 import {
+  AlarmClock,
   Award,
   Blocks,
+  BookOpen,
   CalendarDays,
   ChevronLeft,
+  ClipboardList,
+  Clock,
   Factory,
   FileText,
+  Hand,
+  Layers,
   LayoutTemplate,
   Loader2,
   Mail,
@@ -16,14 +22,25 @@ import {
   Plus,
   Rocket,
   Search,
+  Siren,
   Tag,
+  Wrench,
   type LucideIcon,
 } from 'lucide-react'
 import { Button, Dialog, DialogBody, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, Input } from '@indus/ui'
 import { useEffect, useState, useTransition } from 'react'
 
 import { createCampaignAction, searchRecordsAction } from '../../../app/admin/(shell)/newsletter/campaign-actions'
-import { BUILT_IN_TEMPLATES, NEEDS_LABEL, type BuiltInTemplate, type BuiltInTemplateId } from '../../../lib/newsletter/template-catalogue'
+import {
+  BUILT_IN_TEMPLATES,
+  NEEDS_LABEL,
+  TEMPLATE_SECTIONS,
+  type BuiltInTemplate,
+  type BuiltInTemplateId,
+  type TemplateNeeds,
+  type TemplateSection,
+} from '../../../lib/newsletter/template-catalogue'
+import TemplateSketch from './TemplateSketch'
 
 const ICONS: Record<BuiltInTemplate['icon'], LucideIcon> = {
   rocket: Rocket,
@@ -37,21 +54,42 @@ const ICONS: Record<BuiltInTemplate['icon'], LucideIcon> = {
   file: FileText,
   mail: Mail,
   newspaper: Newspaper,
+  wrench: Wrench,
+  clipboard: ClipboardList,
+  layers: Layers,
+  book: BookOpen,
+  alarm: AlarmClock,
+  siren: Siren,
+  hand: Hand,
+  clock: Clock,
 }
+
+const NEEDS_WORD: Record<TemplateNeeds, string> = {
+  product: 'a product',
+  brand: 'a brand',
+  industry: 'an industry',
+  category: 'a range',
+  article: 'an article',
+  service: 'a case study',
+}
+
+type Shelf = TemplateSection | 'Your templates'
 
 type SavedTemplate = { id: string; name: string; description: string }
 type Option = { id: string; label: string; hint: string }
 
 /**
- * "New newsletter" — Bazar's dialog. Built-in templates built from blocks,
- * the team's saved templates, and rich-text starters, each a card. A
- * template built around one record (a product launch, a brand spotlight, an
- * industry focus) asks for that record in a second step; the rest create the
- * draft at once and open it (the action redirects).
+ * "New newsletter" — Bazar's dialog. The built-in templates on shelves
+ * (products, services, offers, know-how, company news), the team's saved
+ * templates, and rich-text starters — each a card with a sketch of its
+ * stack. A row of chips narrows to one shelf. A template built around one
+ * record (a launch, a range, a case study…) asks for that record in a second
+ * step; the rest create the draft at once and open it (the action redirects).
  */
 export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] }) {
   const [open, setOpen] = useState(false)
   const [picking, setPicking] = useState<BuiltInTemplate | null>(null)
+  const [shelf, setShelf] = useState<Shelf | 'all'>('all')
   const [busy, setBusy] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [, start] = useTransition()
@@ -74,8 +112,21 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
     else create(t.id, { template: t.id as BuiltInTemplateId })
   }
 
-  const blocks = BUILT_IN_TEMPLATES.filter((t) => t.group === 'blocks')
-  const rich = BUILT_IN_TEMPLATES.filter((t) => t.group === 'rich')
+  const shelves: Shelf[] = [...TEMPLATE_SECTIONS.filter((s) => s !== 'Rich text'), ...(saved.length ? (['Your templates'] as const) : []), 'Rich text']
+  const shown = shelf === 'all' ? shelves : shelves.filter((s) => s === shelf)
+  const builtIn = (t: BuiltInTemplate) => (
+    <Card
+      key={t.id}
+      icon={ICONS[t.icon]}
+      sketch={t.sketch}
+      title={t.label}
+      text={t.description}
+      hint={t.needs ? `Pick ${NEEDS_WORD[t.needs]} first` : undefined}
+      busy={busy === t.id}
+      disabled={busy !== null}
+      onClick={() => choose(t)}
+    />
+  )
 
   return (
     <Dialog
@@ -85,6 +136,7 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
         setOpen(o)
         if (!o) {
           setPicking(null)
+          setShelf('all')
           setError(null)
         }
       }}
@@ -92,7 +144,7 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
       <Button type="button" kind="primary" size="dense" icon={<Plus size={14} aria-hidden />} onClick={() => setOpen(true)}>
         New newsletter
       </Button>
-      <DialogContent className="max-w-4xl">
+      <DialogContent className="max-w-5xl">
         {picking ? (
           <RecordStep template={picking} busy={busy !== null} onBack={() => setPicking(null)} onCreate={(recordId) => create(picking.id, { template: picking.id as BuiltInTemplateId, recordId })} error={error} />
         ) : (
@@ -100,41 +152,52 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
             <DialogHeader>
               <DialogTitle>New newsletter</DialogTitle>
               <DialogDescription>
-                Build it from blocks — a launch mailer, a brand spotlight, an offer, your own layout — or write it as a page of rich text. Products,
-                brands and articles fill in from the live site; everything can be changed in the editor.
+                Pick a template — a product-news issue, a case study, an ex-stock alert, a bulletin — or start from scratch. Products, brands,
+                articles and case studies fill in from the live site; every word, colour and block can be changed in the editor.
               </DialogDescription>
             </DialogHeader>
-            <DialogBody className="flex max-h-[70vh] flex-col gap-6 overflow-y-auto">
+            <div role="group" aria-label="Show templates for" className="flex flex-wrap gap-1.5 border-b border-ih-border px-6 pb-3 pt-1">
+              {(['all', ...shelves] as const).map((x) => (
+                <button
+                  key={x}
+                  type="button"
+                  aria-pressed={shelf === x}
+                  onClick={() => setShelf(x)}
+                  className={`rounded-full border px-3 py-1 text-[12.5px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
+                    shelf === x ? 'border-ih-navy bg-ih-navy text-white' : 'border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-border-strong'
+                  }`}
+                >
+                  {x === 'all' ? 'All' : x}
+                </button>
+              ))}
+            </div>
+            <DialogBody className="flex h-[64vh] flex-col gap-6 overflow-y-auto">
               {error ? (
                 <p role="alert" className="rounded-md bg-ih-danger-soft px-3 py-2 text-[13px] text-ih-danger-ink">
                   {error}
                 </p>
               ) : null}
-              <Section title="Built from blocks">
-                {blocks.map((t) => (
-                  <Card key={t.id} icon={ICONS[t.icon]} title={t.label} text={t.description} busy={busy === t.id} disabled={busy !== null} onClick={() => choose(t)} />
-                ))}
-              </Section>
-              {saved.length ? (
-                <Section title="Your templates">
-                  {saved.map((t) => (
-                    <Card
-                      key={t.id}
-                      icon={LayoutTemplate}
-                      title={t.name}
-                      text={t.description || 'A saved template.'}
-                      busy={busy === t.id}
-                      disabled={busy !== null}
-                      onClick={() => create(t.id, { templateId: t.id })}
-                    />
-                  ))}
-                </Section>
-              ) : null}
-              <Section title="Rich text">
-                {rich.map((t) => (
-                  <Card key={t.id} icon={ICONS[t.icon]} title={t.label} text={t.description} busy={busy === t.id} disabled={busy !== null} onClick={() => choose(t)} />
-                ))}
-              </Section>
+              {shown.map((s) =>
+                s === 'Your templates' ? (
+                  <Section key={s} title={s}>
+                    {saved.map((t) => (
+                      <Card
+                        key={t.id}
+                        icon={LayoutTemplate}
+                        title={t.name}
+                        text={t.description || 'A saved template.'}
+                        busy={busy === t.id}
+                        disabled={busy !== null}
+                        onClick={() => create(t.id, { templateId: t.id })}
+                      />
+                    ))}
+                  </Section>
+                ) : (
+                  <Section key={s} title={s}>
+                    {BUILT_IN_TEMPLATES.filter((t) => t.section === s).map(builtIn)}
+                  </Section>
+                ),
+              )}
             </DialogBody>
           </>
         )}
@@ -152,21 +215,47 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   )
 }
 
-function Card({ icon: Icon, title, text, busy, disabled, onClick }: { icon: LucideIcon; title: string; text: string; busy: boolean; disabled: boolean; onClick: () => void }) {
+function Card({
+  icon: Icon,
+  sketch,
+  title,
+  text,
+  hint,
+  busy,
+  disabled,
+  onClick,
+}: {
+  icon: LucideIcon
+  sketch?: BuiltInTemplate['sketch']
+  title: string
+  text: string
+  hint?: string
+  busy: boolean
+  disabled: boolean
+  onClick: () => void
+}) {
   return (
     <button
       type="button"
       onClick={onClick}
       disabled={disabled}
       aria-busy={busy || undefined}
-      className="flex items-start gap-3.5 rounded-lg border border-ih-border bg-ih-surface p-4 text-left transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft disabled:cursor-default disabled:opacity-60 disabled:hover:shadow-none"
+      className="group flex items-start gap-4 rounded-lg border border-ih-border bg-ih-surface p-3.5 text-left transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft disabled:cursor-default disabled:opacity-60 disabled:hover:shadow-none"
     >
-      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md border border-ih-border bg-ih-surface-2 text-ih-ink-2">
-        {busy ? <Loader2 size={17} className="animate-spin motion-reduce:animate-none" aria-hidden /> : <Icon size={17} strokeWidth={1.7} aria-hidden />}
-      </span>
-      <span className="flex min-w-0 flex-col gap-0.5">
-        <span className="text-[14px] font-medium text-ih-ink">{title}</span>
+      {sketch && sketch.length > 2 ? (
+        <TemplateSketch bands={sketch} className="transition-transform group-hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:group-hover:translate-y-0" />
+      ) : (
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md border border-ih-border bg-ih-surface-2 text-ih-ink-2">
+          <Icon size={17} strokeWidth={1.7} aria-hidden />
+        </span>
+      )}
+      <span className="flex min-w-0 flex-1 flex-col gap-1 pt-0.5">
+        <span className="flex items-center gap-2 text-[14px] font-medium text-ih-ink">
+          {busy ? <Loader2 size={14} className="animate-spin motion-reduce:animate-none" aria-hidden /> : <Icon size={14} strokeWidth={1.8} aria-hidden className="text-ih-muted" />}
+          {title}
+        </span>
         <span className="text-[12.5px] leading-snug text-ih-muted">{text}</span>
+        {hint ? <span className="mt-1 w-fit rounded-full bg-ih-surface-2 px-2 py-0.5 text-[11.5px] text-ih-ink-2">{hint}</span> : null}
       </span>
     </button>
   )
@@ -215,7 +304,7 @@ function RecordStep({
     <>
       <DialogHeader>
         <DialogTitle>{template.label}</DialogTitle>
-        <DialogDescription>{NEEDS_LABEL[kind].question} The newsletter takes its photo, words and related products from it.</DialogDescription>
+        <DialogDescription>{NEEDS_LABEL[kind].question} The newsletter takes its photo and words from it, and fills the rest from the site.</DialogDescription>
       </DialogHeader>
       <DialogBody className="flex flex-col gap-3">
         <div className="relative">
