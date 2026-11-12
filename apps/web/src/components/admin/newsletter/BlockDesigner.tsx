@@ -44,8 +44,8 @@ type Props_ = {
   disabled?: boolean
 }
 
-const KIND_LABEL: Record<RecordKind, string> = { product: 'Products', category: 'Categories', article: 'Blog articles', industry: 'Industries', brand: 'Brands' }
-const LAYOUT_LABEL: Record<string, string> = { list: 'List', grid: 'Grid', cards: 'Cards' }
+const KIND_LABEL: Record<RecordKind, string> = { product: 'Products', category: 'Categories', article: 'Blog articles', industry: 'Industries', brand: 'Brands', service: 'Case studies' }
+const LAYOUT_LABEL: Record<string, string> = { list: 'List', grid: 'Grid', cards: 'Cards', rows: 'Alternating rows', tiles: 'Tiles' }
 
 /**
  * The block designer, in Bazar's shape: the page settings as a folding row,
@@ -531,7 +531,7 @@ function RecordsEditor({ label, value, onChange }: { label: string; value: Recor
             </option>
           ))}
         </Select>
-        <Select aria-label="Layout" value={current.layout} onChange={(e) => set({ layout: e.target.value as RecordsValue['layout'] })} className="w-32">
+        <Select aria-label="Layout" value={current.layout} onChange={(e) => set({ layout: e.target.value as RecordsValue['layout'] })} className="w-44">
           {RECORD_LAYOUTS.map((l) => (
             <option key={l} value={l}>
               {LAYOUT_LABEL[l] ?? l}

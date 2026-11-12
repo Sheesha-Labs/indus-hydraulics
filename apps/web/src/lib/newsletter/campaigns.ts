@@ -4,6 +4,7 @@ import { sendEmail } from '@indus/email'
 
 import { loadEmailBranding } from '../email-branding'
 import { BASE_URL } from '../seo'
+import { getStoreSettings } from '../store-settings'
 import { emptyDesign, normaliseDesign } from './blocks/document'
 import {
   campaignProblems,
@@ -31,9 +32,16 @@ export async function loadSender(): Promise<NewsletterSender> {
   return resolveSender(await loadSenderSettings())
 }
 
+/**
+ * Who the email is from, and the two logos the blocks can draw: the
+ * everyday mark for white bands, and the footer's white mark for navy ones
+ * (Brand settings → logo and footer logo). Both are full https URLs, which is
+ * what an inbox will load.
+ */
 export async function campaignBrand() {
-  const b = await loadEmailBranding()
-  return { legalName: b.legalName, addressLines: b.registeredAddressLines, logoUrl: null }
+  const [b, s] = await Promise.all([loadEmailBranding(), getStoreSettings()])
+  const https = (u: string | null) => (u && u.startsWith('https://') ? u : null)
+  return { legalName: b.legalName, addressLines: b.registeredAddressLines, logoUrl: https(s.logoUrl), logoOnDarkUrl: https(s.footerLogoUrl) }
 }
 
 /** The send gate with live data: missing records, deleted lists. */
