@@ -117,6 +117,18 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'North Africa',
     ],
   },
+  'seamless-finned-tubes-uae': {
+    heading: 'Where we ship tubes, finned tubes and exchanger parts',
+    body: 'Heat-exchanger, boiler and finned tube is bought against a standard, a grade and a wall, and the mill test certificate travels with the bundle. Straight lengths up to 12 m or so go by sea in bundles or wooden crates; U-bend tubes are packed by bend radius in crates that keep the legs straight, and finned tubes in boxes that protect the fins. Exchangers, tube sheets and pressure parts are built to the data sheet and shipped crated or on flat racks. Send the standard, grade, size and quantity, and we quote with the documents the inspector will ask for.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'South Asia',
+      'East Africa',
+      'North Africa',
+      'West & Central Africa',
+      'CIS & Caucasus',
+    ],
+  },
   'blowout-preventers': {
     heading: 'Where BOP equipment and spares ship',
     body: 'Pressure-control equipment is supplied against the certification the operator is audited to, and the documentation is the deliverable as much as the hardware is. Stacks, spares and elastomer kits ship from Dubai with their records; on these lanes the certification and the customs classification set the timeline more reliably than the freight does, which is the part worth planning around.',
