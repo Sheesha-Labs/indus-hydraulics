@@ -62,8 +62,18 @@ The tables need this code to render, so **load only after the code in this PR is
 
 ## Images
 
-There are 20 photos, each checked by eye against its listing, with alt text written per §13. The
-photos sit outside the repo; pass their folder with `--image-dir=`. Watermarked photos are not used.
+There are 76 photos, one or more on 73 of the 76 listings, each checked by eye against its listing,
+with alt text written per §13. The photos sit outside the repo; pass their folder with `--image-dir=`.
+
+- 20 from the first round.
+- 50 clean supplier originals: no watermark or maker mark at full size.
+- 2 supplier photos cropped to drop a paper label.
+- 4 supplier photos whose overlaid watermark was removed with an AI edit (GPT Image 2.6). Each was
+  compared with its original, and no hardware was added, moved or redrawn. Their `Media.caption`
+  records the edit.
+
+Three listings have no photo yet: inner-grooved copper, notched fin and PVC-coated copper tube.
+Their candidate photos have unclear provenance and wait for a decision.
 
 ## Load (after deploy)
 
