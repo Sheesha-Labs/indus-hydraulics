@@ -805,3 +805,27 @@ describe('valve tables', () => {
     expect(variantTableKind([row('IH-LR-X', { size: '1/2"', wllT: 2 })])).toBe('lifting')
   })
 })
+
+describe('tube columns', () => {
+  const tube = (dimensions: Record<string, string>): VariantLike => ({ partNumber: 'IH-TF-CB-CS-0254-211', dimensions })
+
+  it('reads a tube table off its rows and prints every column as published text', () => {
+    const rows = [
+      tube({ odMm: '25.4', odIn: '1', bwg: '14', minWallMm: '2.11', minWallIn: '0.083' }),
+      tube({ odMm: '25.4', odIn: '1', bwg: '12', minWallMm: '2.77', minWallIn: '0.109' }),
+    ]
+    expect(variantTableKind(rows)).toBe('tube')
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['odMm', 'odIn', 'bwg', 'minWallMm', 'minWallIn'])
+    expect(variantDimensionColumns(rows)).toEqual([])
+  })
+
+  it('keeps bands and limits as printed instead of dropping them', () => {
+    const rows = [tube({ odMm: '15.88', finOdMm: '34.93', fpi: '6–12', wallMm: '≥2.11' })]
+    expect(variantText(rows[0]!.dimensions, 'fpi')).toBe('6–12')
+    expect(variantText(rows[0]!.dimensions, 'wallMm')).toBe('≥2.11')
+  })
+
+  it('does not take a lay-flat hose row for tube', () => {
+    expect(variantTableKind([{ partNumber: 'IH-LF-1', dimensions: { insideDia: '39 +1.5', wall: '4.5' } }])).not.toBe('tube')
+  })
+})

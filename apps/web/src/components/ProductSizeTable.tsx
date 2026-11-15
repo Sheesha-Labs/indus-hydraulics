@@ -389,6 +389,14 @@ export default function ProductSizeTable({
             weight, so we confirm the general arrangement drawing with the quotation.
           </p>
         )}
+        {kind === 'tube' && (
+          <p>
+            These are typical sizes for the range, not a full mill list. Other diameters, walls, fin
+            geometries and lengths are made to order: tell us the standard and grade, the O.D. and
+            wall, and the length you need. Mill test certificates to EN 10204 3.1 are available on
+            request.
+          </p>
+        )}
         {kind === 'hose' && (
           <p>
             Cut lengths and made-up assemblies are prepared in Dubai. Tell us the bore, the length

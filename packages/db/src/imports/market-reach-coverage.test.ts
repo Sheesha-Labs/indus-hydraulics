@@ -179,6 +179,7 @@ describe('catalogue root categories', () => {
     'lay-flat-hoses',
     'industrial-process-valves',
     'marine-equipment-uae',
+    'seamless-finned-tubes-uae',
   ]
 
   it('has a profile for every published root category', () => {

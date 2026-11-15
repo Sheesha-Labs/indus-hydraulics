@@ -71,7 +71,66 @@ export type VariantDimensionKey =
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | 'supply' | HoseTextKey | EquipmentTextKey | LiftingTextKey | ValveTextKey
+export type VariantTextKey = 'oRing' | 'supply' | HoseTextKey | EquipmentTextKey | LiftingTextKey | ValveTextKey | TubeTextKey
+
+/**
+ * Heat-transfer tube and pipe: seamless, finned, U-bend and copper-alloy tube.
+ *
+ * Every column is text, as published. Tube and fin tables print bands and limits
+ * as often as single figures: a fin pitch of `6–12`, a wall of `≥2.11`, a plate
+ * edge of `≈64 (2 × OD)`, a range-only row of `25.4–219.1`. Parsing those to a
+ * number would drop the row or invent a figure. The unit is in each heading, and
+ * the inch and BWG columns sit beside the millimetre ones because that is how the
+ * trade orders tube. A wall is a minimum or an average wall depending on the
+ * standard and the order, so `minWallMm` is a separate column from `wallMm`.
+ */
+export type TubeTextKey =
+  | 'tubeType'
+  | 'nps'
+  | 'odMm'
+  | 'odIn'
+  | 'baseTube'
+  | 'bwg'
+  | 'wallMm'
+  | 'wallIn'
+  | 'minWallMm'
+  | 'minWallIn'
+  | 'schedule'
+  | 'idMm'
+  | 'finType'
+  | 'finOdMm'
+  | 'finSize'
+  | 'finHeightMm'
+  | 'finThicknessMm'
+  | 'fpi'
+  | 'finsPerM'
+  | 'finPitchMm'
+  | 'segmentWidthMm'
+  | 'rootDiaMm'
+  | 'wallUnderFinMm'
+  | 'grooveHeightMm'
+  | 'grooves'
+  | 'helixDeg'
+  | 'outsideAreaM2m'
+  | 'studDiaMm'
+  | 'studDiaIn'
+  | 'studHeightMm'
+  | 'rowSpacingMm'
+  | 'rowsPerM'
+  | 'coatingMm'
+  | 'overallOdMm'
+  | 'ctcSrMm'
+  | 'btfSrMm'
+  | 'ctcLrMm'
+  | 'btfLrMm'
+  | 'weightLbFt'
+  | 'weightUpsetLbFt'
+  | 'weightPlainEndLbFt'
+  | 'grades'
+  | 'coilLength'
+  | 'finish'
+  | 'tubeMaterial'
+  | 'maxLengthM'
 
 /**
  * Lay-flat hose: the catalogue prints the bore with its tolerance (`39 +1.5`)
@@ -872,6 +931,59 @@ export const LIFTING_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'thread', label: 'Thread', help: 'Thread of the swivel nut, as published.' },
 ]
 
+/** Tube and pipe rows, in reading order. See `TubeTextKey`. */
+export const TUBE_TEXT_COLUMNS: readonly VariantTextColumn[] = [
+  { key: 'tubeType', label: 'Type', help: 'Product or standard type of this row, where one listing covers several.', lead: true },
+  { key: 'nps', label: 'NPS', help: 'Nominal pipe size, as the standard publishes it.', lead: true },
+  { key: 'odMm', label: 'O.D. (mm)', help: 'Outside diameter of the tube or pipe in millimetres.', lead: true },
+  { key: 'odIn', label: 'O.D. (in)', help: 'The same outside diameter in inches, as the trade orders it.', lead: true },
+  { key: 'baseTube', label: 'Base tube (mm)', help: 'Oval base tube, major × minor axis in millimetres.', lead: true },
+  { key: 'bwg', label: 'BWG', help: 'Birmingham Wire Gauge of the wall, the usual way heat-exchanger tube wall is ordered.', lead: true },
+  { key: 'schedule', label: 'Schedule', help: 'Pipe schedule or weight class (STD, XS, XXS), as the standard publishes it.', lead: true },
+  { key: 'wallMm', label: 'Wall (mm)', help: 'Wall thickness in millimetres: minimum or average wall per the governing standard and the order.', lead: true },
+  { key: 'wallIn', label: 'Wall (in)', help: 'The same wall thickness in inches.', lead: true },
+  { key: 'minWallMm', label: 'Min. wall (mm)', help: 'Minimum wall thickness in millimetres.', lead: true },
+  { key: 'minWallIn', label: 'Min. wall (in)', help: 'The same minimum wall in inches.', lead: true },
+  { key: 'idMm', label: 'I.D. (mm)', help: 'Inside diameter in millimetres.', lead: true },
+  { key: 'finType', label: 'Fin type', help: 'Fin form on this row, as published.', lead: true },
+  { key: 'finOdMm', label: 'Fin O.D. (mm)', help: 'Outside diameter over the fins in millimetres.', lead: true },
+  { key: 'finSize', label: 'Fin size (mm)', help: 'Fin plate size in millimetres, as published.', lead: true },
+  { key: 'finHeightMm', label: 'Fin height (mm)', help: 'Height of the fin above the tube surface in millimetres.', lead: true },
+  { key: 'finThicknessMm', label: 'Fin thickness (mm)', help: 'Fin strip or plate thickness in millimetres.', lead: true },
+  { key: 'fpi', label: 'Fins per inch', help: 'Fin density in fins per inch; a band means any density in it can be made.', lead: true },
+  { key: 'finsPerM', label: 'Fins per metre', help: 'The same fin density in fins per metre.', lead: true },
+  { key: 'finPitchMm', label: 'Fin pitch (mm)', help: 'Distance between fins in millimetres.', lead: true },
+  { key: 'segmentWidthMm', label: 'Segment width (mm)', help: 'Width of each segment on a serrated (segmented) fin, in millimetres.', lead: true },
+  { key: 'rootDiaMm', label: 'Root dia. (mm)', help: 'Diameter at the root of the fins, in millimetres.', lead: true },
+  { key: 'wallUnderFinMm', label: 'Wall under fin (mm)', help: 'Average wall thickness under the fins, in millimetres.', lead: true },
+  { key: 'grooveHeightMm', label: 'Groove height (mm)', help: 'Height of the internal grooves, in millimetres.', lead: true },
+  { key: 'grooves', label: 'Grooves', help: 'Number of internal grooves.', lead: true },
+  { key: 'helixDeg', label: 'Helix angle (°)', help: 'Helix angle of the internal grooves, in degrees.', lead: true },
+  { key: 'outsideAreaM2m', label: 'Outside area (m²/m)', help: 'Outside surface area per metre of finned length.', lead: true },
+  { key: 'studDiaMm', label: 'Stud dia. (mm)', help: 'Stud diameter in millimetres.', lead: true },
+  { key: 'studDiaIn', label: 'Stud dia. (in)', help: 'The same stud diameter in inches.', lead: true },
+  { key: 'studHeightMm', label: 'Stud height (mm)', help: 'Stud height above the tube surface, in millimetres.', lead: true },
+  { key: 'rowSpacingMm', label: 'Row spacing (mm)', help: 'Distance between stud rows along the tube, in millimetres.', lead: true },
+  { key: 'rowsPerM', label: 'Rows per metre', help: 'Stud rows per metre of studded length.', lead: true },
+  { key: 'coatingMm', label: 'Coating (mm)', help: 'Coating thickness in millimetres.', lead: true },
+  { key: 'overallOdMm', label: 'O.D. over coating (mm)', help: 'Outside diameter over the coating, in millimetres.', lead: true },
+  { key: 'ctcSrMm', label: 'Short radius, C-to-C (mm)', help: 'Centre-to-centre distance of a short-radius 180° return, per ASME B16.9.', lead: true },
+  { key: 'btfSrMm', label: 'Short radius, back to face (mm)', help: 'Back-to-face distance of a short-radius 180° return, per ASME B16.9.', lead: true },
+  { key: 'ctcLrMm', label: 'Long radius, C-to-C (mm)', help: 'Centre-to-centre distance of a long-radius 180° return, per ASME B16.9.', lead: true },
+  { key: 'btfLrMm', label: 'Long radius, back to face (mm)', help: 'Back-to-face distance of a long-radius 180° return, per ASME B16.9.', lead: true },
+  { key: 'weightLbFt', label: 'Nominal weight (lb/ft)', help: 'Nominal weight per foot with threads and couplings (non-upset), as the standard lists it.', lead: true },
+  { key: 'weightUpsetLbFt', label: 'Upset weight (lb/ft)', help: 'Nominal weight per foot with external-upset ends.', lead: true },
+  { key: 'weightPlainEndLbFt', label: 'Plain-end weight (lb/ft)', help: 'Weight per foot of plain-end pipe.', lead: true },
+  { key: 'grades', label: 'Grades', help: 'Steel grades this size is listed in, as the standard publishes them.' },
+  { key: 'coilLength', label: 'Coil length', help: 'Length supplied in one coil, as published.' },
+  { key: 'tubeMaterial', label: 'Material', help: 'Tube materials this size is made in, as published.' },
+  { key: 'finish', label: 'Finish', help: 'Surface finish or coating, as published.' },
+  { key: 'maxLengthM', label: 'Max. length (m)', help: 'Longest single length usually made, in metres; longer on request.' },
+]
+
+/** Keys only a tube or pipe row carries. Checked first: no other table has them. */
+const TUBE_MARKERS: readonly TubeTextKey[] = ['odMm', 'odIn', 'nps', 'bwg', 'baseTube', 'finOdMm', 'studDiaMm']
+
 /** Valve rows lead with size, DN, class and port. See `ValveDimensionKey`. */
 export const VALVE_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'type', label: 'Type', help: 'Valve type of this row, where one listing covers several.', lead: true },
@@ -1025,7 +1137,7 @@ export function hasVariantPressures(variants: readonly VariantLike[]): boolean {
  * somebody forgot a prop — which matters, because one of those footnotes
  * offers every size in 316 stainless and that is nonsense on a rubber hose.
  */
-export type VariantTableKind = 'hose' | 'fitting' | 'lifting' | 'equipment' | 'valve'
+export type VariantTableKind = 'hose' | 'fitting' | 'lifting' | 'equipment' | 'valve' | 'tube'
 
 export function variantTableKind(variants: readonly VariantLike[]): VariantTableKind {
   const rawKeys = (v: VariantLike): string[] => {
@@ -1033,7 +1145,9 @@ export function variantTableKind(variants: readonly VariantLike[]): VariantTable
     if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return []
     return Object.keys(raw)
   }
-  // Valve first: a valve row carries `size` just as a rigging row does, and it is
+  // Tube first: its columns are all text and no other table carries them.
+  if (variants.some((v) => TUBE_MARKERS.some((k) => variantText(v.dimensions, k) !== null))) return 'tube'
+  // Valve next: a valve row carries `size` just as a rigging row does, and it is
   // the class, DN and face-to-face columns that say which one it is.
   if (variants.some((v) => rawKeys(v).some((k) => VALVE_MARKERS.has(k)))) return 'valve'
   // Lifting next: a chain row carries `weightPerMetre` exactly as a hose row
@@ -1078,7 +1192,14 @@ export function variantText(value: unknown, key: VariantTextKey): string | null 
 /** Text columns this set of variants populates, in canonical order. */
 export function variantTextColumns(variants: readonly VariantLike[]): VariantTextColumn[] {
   const kind = variantTableKind(variants)
-  const registry = kind === 'valve' ? VALVE_TEXT_COLUMNS : kind === 'lifting' ? LIFTING_TEXT_COLUMNS : VARIANT_TEXT_COLUMNS
+  const registry =
+    kind === 'tube'
+      ? TUBE_TEXT_COLUMNS
+      : kind === 'valve'
+        ? VALVE_TEXT_COLUMNS
+        : kind === 'lifting'
+          ? LIFTING_TEXT_COLUMNS
+          : VARIANT_TEXT_COLUMNS
   return registry.filter((c) => variants.some((v) => variantText(v.dimensions, c.key)))
 }
 
@@ -1093,6 +1214,8 @@ export function variantDimensionColumns(variants: readonly VariantLike[]): Varia
     for (const k of Object.keys(variantDimensions(v.dimensions))) present.add(k)
   }
   const kind = variantTableKind(variants)
+  // A tube row is all text — see `TubeTextKey`.
+  if (kind === 'tube') return []
   if (kind === 'valve') {
     // Named lengths, then whatever drawing letters the rows carry, then weights.
     const named = new Set<string>([...VALVE_LENGTH_COLUMNS, ...VALVE_WEIGHT_COLUMNS].map((c) => c.key))
