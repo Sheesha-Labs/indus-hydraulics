@@ -6072,7 +6072,13 @@
     "pvc coated copper tube",
     "pvc coated copper tubes"
    ],
-   "images": [],
+   "images": [
+    {
+     "file": "ih-tf-cu-pvc-1.jpg",
+     "alt": "PVC-coated copper tube in a gentle bend, white coating stripped back from the cut end to show bare copper",
+     "caption": "Supplier catalogue image (2026-11-15), watermark or print removed by AI edit"
+    }
+   ],
    "variants": [
     {
      "partNumber": "IH-TF-CU-PVC-0150",
@@ -7263,7 +7269,13 @@
     "knurled integral low finned copper tubing",
     "phosphorus copper brazed fin tube"
    ],
-   "images": [],
+   "images": [
+    {
+     "file": "ih-tf-ec-enh-1.jpg",
+     "alt": "Inner-grooved copper tubes cut on the bias, fine helical grooves running along the inside of each bore",
+     "caption": "Supplier catalogue image (2026-11-15), representative of the range"
+    }
+   ],
    "variants": [
     {
      "partNumber": "IH-TF-EC-ENH-0095-030",
@@ -8489,7 +8501,13 @@
     "notched fin tube",
     "plowed fin tubes"
    ],
-   "images": [],
+   "images": [
+    {
+     "file": "ih-tf-wf-not-1.jpg",
+     "alt": "Notched fin tube close up, a tightly wound fin with notched, crinkled edges along the tube",
+     "caption": "Supplier catalogue image (2026-11-15), representative of the range"
+    }
+   ],
    "variants": [],
    "crossReferences": []
   },
