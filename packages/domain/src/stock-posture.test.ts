@@ -18,8 +18,9 @@ describe('the shipped posture', () => {
     // change to it should be a change to this test as well.
     expect(CATALOGUE_STOCK_POSTURE.exStock).toBe(true)
     expect(CATALOGUE_STOCK_POSTURE.deliveryDays).toBe(3)
-    // Butterfly valves are supplier surplus, not Dubai stock (2026-09-25).
-    expect(CATALOGUE_STOCK_POSTURE.exemptCategories).toEqual(['butterfly-valves'])
+    // Butterfly valves are supplier surplus, not Dubai stock (2026-09-25); below-the-hook
+    // beams and frames are built to order or shipped from the maker's stock (2026-11-16).
+    expect(CATALOGUE_STOCK_POSTURE.exemptCategories).toEqual(['butterfly-valves', 'below-the-hook-lifting'])
   })
 })
 
