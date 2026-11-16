@@ -80,7 +80,7 @@ const ARTICLE: BlogArticleSeed = {
       type: 'comparison_table',
       caption: 'Extruded aluminium fin tube (live listing, mm)',
       columns: ['OD', 'OD in', 'Wall', 'Fin OD', 'Fin height', 'Fin thickness', 'FPI', 'Part number'],
-      rows: EX_ROWS.map((r) => ({ cells: [...r.cells.slice(0, 7), r.cells[8]] })),
+      rows: EX_ROWS.map((r) => ({ cells: [...r.cells.slice(0, 7), r.cells[8] ?? ''] })),
     },
     {
       type: 'paragraph',
