@@ -45,7 +45,7 @@ const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
 /**
  * One row per published article, across the hero sprints — the 30 from
  * PR #271, the 63 commissioned on 2026-08-25, the 139 generated on 2026-10-08,
- * the 28 lifting posts on 2026-10-20 and the 14 anchor chain posts on 2026-11-08. `alt` describes what is
+ * the 28 lifting posts on 2026-10-20, the 14 anchor chain posts on 2026-11-08 and the 6 below-the-hook posts on 2026-11-16. `alt` describes what is
  * actually in the frame: it is read aloud by a screen reader and indexed as
  * image text, so it is not the article title repeated.
  *
@@ -536,6 +536,13 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: 'anchor-proof-load-testing', alt: 'A black stockless anchor held in a proof-load test frame, a hydraulic ram pulling on the shackle at its shank', caption: 'An anchor is proof loaded to a figure set by its mass before it gets a certificate.' },
   { slug: 'offshore-mooring-components', alt: 'Mooring connectors on a vessel deck: H-link, pear link, triangle plate, joining shackle and swivel, by studless chain', caption: 'Every connector in a mooring leg is rated to the line\'s grade; each one exists to join or turn a different pair of parts.' },
   { slug: 'anchor-chain-marking-and-certificates', alt: 'A gloved finger pointing to stamped marks on a link of black anchor chain, a clipboard with a certificate behind', caption: 'The stamps on the chain have to match the certificate before the cable goes aboard.' },
+  // Below-the-hook lifting, 2026-11-16 (Higgsfield gpt_image_2_6 medium 2k 3:2, cropped 1536×1024).
+  { slug: 'spreader-beam-vs-lifting-beam', alt: 'Crawler crane lifting a pipe spool on a yellow spreader beam, angled top slings to the hook and vertical drops to the pipe', caption: 'A spreader beam: the top slings lean in to the hook, the drops hang straight, and the beam is squeezed between them.' },
+  { slug: 'sling-angle-compression-force', alt: 'Two-leg chain sling at a wide angle lifting a long flat precast concrete panel in a casting yard, riggers on tag lines', caption: 'Two legs from one hook: every tonne lifted this way also pushes the panel’s ends toward each other.' },
+  { slug: 'centre-of-gravity-in-lifting', alt: 'Pump skid with a large motor at one end hanging level from a four-leg chain sling with legs of different lengths', caption: 'The heavy motor end pulls the centre of gravity off-centre, so the legs are cut to put the hook over it.' },
+  { slug: 'spreader-beam-misuse', alt: 'Two riggers checking a bolt on a yellow bolted modular spreader beam laid on timber blocks, shackles at both end units', caption: 'Most spreader errors can be caught on the ground: wrong bolts, mixed struts, a span the chart does not list.' },
+  { slug: 'bolted-flange-vs-end-cap-spreader-beams', alt: 'Close-up of a bolted flange joint between two yellow spreader beam struts on timber dunnage, torque wrench beside it', caption: 'A bolted flange joint: maker-supplied struts and bolts, tightened to a set torque, certified as one system.' },
+  { slug: 'lifting-bars-for-air-handling-units', alt: 'Grey air handling unit lifted on two steel bars under its base frame, slings rising to a yellow spreader frame on the hook', caption: 'Two rated bars under the base, slings to a spreader frame: the unit is held at four points and cannot roll.' },
 ] as const
 
 /**
