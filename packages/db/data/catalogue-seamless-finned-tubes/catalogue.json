@@ -4524,7 +4524,7 @@
    "category": "wound-fin-tubes-l-ll-kl",
    "focusKeyword": "crimped fin tube",
    "descriptionShort": "Fin strip crimped (ruffled) at its root as it is wound onto the base tube, for economisers, air heaters and HVAC coils. Supplied from Dubai with an Indus part number for each size and mill test certificates on request.",
-   "descriptionLong": "<p>Fin strip crimped (ruffled) at its root as it is wound onto the base tube, for economisers, air heaters and HVAC coils.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>Sizes</h3><p>Sizes are confirmed with the quotation. Send the outside diameter, the wall, the length and the quantity you need.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the standard and grade, the outside diameter and wall (BWG or millimetres, minimum or average wall), the length and the quantity, with the fin type, material, height, thickness and fins per inch, and the bare length at each end. We quote with the mill certificates and the inspection you need.</p>",
+   "descriptionLong": "<p>Fin strip crimped (ruffled) at its root as it is wound onto the base tube, for economisers, air heaters and HVAC coils.</p><p>The strip is fed edge-on to the tube and wound into a helix; as it bends, the inner edge gathers into small folds, the crimp, which gives the fin a wide, ruffled root that bears on the tube. Steel fins on steel tube are common in boiler economisers and air heaters, often hot-dip galvanised after finning to lock the fin to the tube and protect both from corrosion; copper and aluminium fins suit lower-temperature air and oil coolers.</p><h3>How we make and quote</h3><p>Finned tube is made to order on a finning line set up for each size, so we quote against your tube and fin specification rather than from stock. Send the base tube grade and size, the fin type and material, the fin height, thickness and pitch, and the finned and bare lengths, and we confirm what can be made, the bond and the inspection. Base tubes come with their mill certificates, the fin bond and fin pitch are checked along the length, and the finished tubes are packed in crates with the bare ends protected. To replace existing tubes, send the old drawing or a sample length, and we measure the base tube and the fin before we quote, so the new tubes fit the existing bundle and tube supports.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>What to send for a quotation</h3><ul><li>Base tube standard and grade, outside diameter and wall</li><li>Fin type, fin material, fin height, fin thickness and fins per inch</li><li>Finned length, and the bare length at each end</li><li>Overall tube length and quantity</li><li>Design temperature and the gas or air the fins will see</li><li>Any coating, galvanising or end treatment</li><li>Inspection, test and certificate requirements</li></ul>",
    "seoTitle": "Crimped Fin Tubes",
    "seoDescription": "Crimped Fin Tubes. Mill certificates. Request a quote.",
    "faqs": [
@@ -4537,8 +4537,20 @@
      "answer": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged."
     },
     {
+     "question": "How is a crimped fin attached?",
+     "answer": "The fin strip is wound under tension onto the tube, and the crimped root bears on the tube surface. On steel fin tubes the bond is often improved by hot-dip galvanising after finning; confirm the bond you need with the enquiry."
+    },
+    {
+     "question": "Where are crimped fin tubes used?",
+     "answer": "Boiler economisers, air heaters and process heaters on the gas side, and air and oil coolers at lower temperatures."
+    },
+    {
+     "question": "Do you hold crimped fin tubes in stock?",
+     "answer": "No. They are made to order for each tube size and fin specification; send the details in the checklist and we confirm the size range and lead time with the quotation."
+    },
+    {
      "question": "What do I need to send for a quotation?",
-     "answer": "The standard and grade, the outside diameter and wall, the length and the quantity, the fin type and geometry."
+     "answer": "Base tube standard and grade, outside diameter and wall; Fin type, fin material, fin height, fin thickness and fins per inch; Finned length, and the bare length at each end; Overall tube length and quantity; Design temperature and the gas or air the fins will see; Any coating, galvanising or end treatment."
     }
    ],
    "specs": [
@@ -4552,31 +4564,76 @@
      "templateKey": "product_type"
     },
     {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Edge-wound helical fin, crimped at the root, tension-wound on the base tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Construction",
+     "label": "Base tube material",
+     "value": "Carbon steel, stainless steel, copper or copper alloy, to the standard on the order",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "base_tube_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Fin material",
+     "value": "Carbon steel, stainless steel, copper or aluminium",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fin_material"
+    },
+    {
      "group": "Dimensions",
      "label": "Length",
      "value": "Random or fixed lengths; cut to length on request",
      "unit": null,
-     "position": 1,
+     "position": 4,
      "isFilterable": false,
      "templateKey": "length"
+    },
+    {
+     "group": "Quality",
+     "label": "Testing",
+     "value": "Fin bond and fin pitch checked along the length; base tube tested to its standard",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "testing"
     },
     {
      "group": "Quality",
      "label": "Certification",
      "value": "Mill test certificate to EN 10204 3.1 on request; third-party inspection by arrangement",
      "unit": null,
-     "position": 2,
+     "position": 6,
      "isFilterable": false,
      "templateKey": "certification"
     },
     {
      "group": "Dimensions",
      "label": "Size table",
-     "value": "Sizes confirmed with the quotation",
+     "value": "Made to order: sizes confirmed with the quotation",
      "unit": null,
-     "position": 3,
+     "position": 7,
      "isFilterable": false,
      "templateKey": "size_table_basis"
+    },
+    {
+     "group": "Application",
+     "label": "Typical services",
+     "value": "Boiler economisers; air heaters; air and oil coolers",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "applications"
     }
    ],
    "searchAliases": [
@@ -8242,7 +8299,7 @@
    "category": "laser-welded-fin-tubes",
    "focusKeyword": "laser welded fin tube",
    "descriptionShort": "Fins laser-welded to the base tube, with a narrow, low-heat weld that suits thin stainless and alloy fins on thin-wall tube. Supplied from Dubai with an Indus part number for each size and mill test certificates on request.",
-   "descriptionLong": "<p>Fins laser-welded to the base tube, with a narrow, low-heat weld that suits thin stainless and alloy fins on thin-wall tube.</p><h3>Specification</h3><ul><li><strong>Fin thickness (mm):</strong> 0.3–1.0</li><li><strong>Base tube wall (mm):</strong> 0.8–1.5</li></ul><h3>Materials</h3><ul><li><strong>Tube:</strong> Stainless; Carbon steel</li><li><strong>Fins:</strong> Stainless; Carbon steel</li></ul><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>Sizes</h3><p>Sizes are confirmed with the quotation. Send the outside diameter, the wall, the length and the quantity you need.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the standard and grade, the outside diameter and wall (BWG or millimetres, minimum or average wall), the length and the quantity, with the fin type, material, height, thickness and fins per inch, and the bare length at each end. We quote with the mill certificates and the inspection you need.</p>",
+   "descriptionLong": "<p>Fins laser-welded to the base tube, with a narrow, low-heat weld that suits thin stainless and alloy fins on thin-wall tube.</p><p>The laser fuses the fin root to the tube in a narrow, continuous weld with a small heat-affected zone, so thin fins can be joined to thin-wall tube without burning through or distorting it. Because the fin is welded along its whole root, there is no contact gap to open up with thermal cycling and no crevice for corrosion, which suits stainless fins on stainless tube in heat recovery and in compact coils that see moisture.</p><h3>How we make and quote</h3><p>Finned tube is made to order on a finning line set up for each size, so we quote against your tube and fin specification rather than from stock. Send the base tube grade and size, the fin type and material, the fin height, thickness and pitch, and the finned and bare lengths, and we confirm what can be made, the bond and the inspection. Base tubes come with their mill certificates, the fin bond and fin pitch are checked along the length, and the finished tubes are packed in crates with the bare ends protected. To replace existing tubes, send the old drawing or a sample length, and we measure the base tube and the fin before we quote, so the new tubes fit the existing bundle and tube supports.</p><h3>Specification</h3><ul><li><strong>Fin thickness (mm):</strong> 0.3–1.0</li><li><strong>Base tube wall (mm):</strong> 0.8–1.5</li></ul><h3>Materials</h3><ul><li><strong>Tube:</strong> Stainless; Carbon steel</li><li><strong>Fins:</strong> Stainless; Carbon steel</li></ul><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>What to send for a quotation</h3><ul><li>Base tube standard and grade, outside diameter and wall</li><li>Fin type, fin material, fin height, fin thickness and fins per inch</li><li>Finned length, and the bare length at each end</li><li>Overall tube length and quantity</li><li>Design temperature and the gas or air the fins will see</li><li>Any coating, galvanising or end treatment</li><li>Inspection, test and certificate requirements</li></ul>",
    "seoTitle": "Laser-Welded Fin Tubes",
    "seoDescription": "Laser-Welded Fin Tubes. Mill certificates. Request a quote.",
    "faqs": [
@@ -8259,8 +8316,20 @@
      "answer": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged."
     },
     {
+     "question": "What are the advantages of laser-welded fins?",
+     "answer": "A narrow, continuous weld with a small heat-affected zone: thin fins can be joined to thin-wall tube without distortion, and the welded root gives a lasting bond with no contact gap or crevice."
+    },
+    {
+     "question": "Which materials can be laser-welded?",
+     "answer": "Stainless steel and carbon steel fins on stainless or carbon steel tube. Confirm the grade combination with the enquiry."
+    },
+    {
+     "question": "Do you hold laser-welded fin tubes in stock?",
+     "answer": "No. They are made to order for each tube size and fin specification; send the details in the checklist and we confirm the size range and lead time with the quotation."
+    },
+    {
      "question": "What do I need to send for a quotation?",
-     "answer": "The standard and grade, the outside diameter and wall, the length and the quantity, the fin type and geometry."
+     "answer": "Base tube standard and grade, outside diameter and wall; Fin type, fin material, fin height, fin thickness and fins per inch; Finned length, and the bare length at each end; Overall tube length and quantity; Design temperature and the gas or air the fins will see; Any coating, galvanising or end treatment."
     }
    ],
    "specs": [
@@ -8274,11 +8343,20 @@
      "templateKey": "product_type"
     },
     {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Fin laser-welded to the base tube along the full root",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "construction"
+    },
+    {
      "group": "Construction",
      "label": "Base tube material",
      "value": "Stainless; Carbon steel",
      "unit": null,
-     "position": 1,
+     "position": 2,
      "isFilterable": true,
      "templateKey": "base_tube_material"
     },
@@ -8287,7 +8365,7 @@
      "label": "Fin material",
      "value": "Stainless; Carbon steel",
      "unit": null,
-     "position": 2,
+     "position": 3,
      "isFilterable": true,
      "templateKey": "fin_material"
     },
@@ -8296,7 +8374,7 @@
      "label": "Wall thickness",
      "value": "0.8–1.5",
      "unit": null,
-     "position": 3,
+     "position": 4,
      "isFilterable": false,
      "templateKey": "wall_range"
     },
@@ -8305,7 +8383,7 @@
      "label": "Fin geometry",
      "value": "thickness 0.3–1.0",
      "unit": null,
-     "position": 4,
+     "position": 5,
      "isFilterable": false,
      "templateKey": "fin_geometry"
     },
@@ -8314,7 +8392,7 @@
      "label": "Length",
      "value": "Random or fixed lengths; cut to length on request",
      "unit": null,
-     "position": 5,
+     "position": 6,
      "isFilterable": false,
      "templateKey": "length"
     },
@@ -8323,18 +8401,27 @@
      "label": "Certification",
      "value": "Mill test certificate to EN 10204 3.1 on request; third-party inspection by arrangement",
      "unit": null,
-     "position": 6,
+     "position": 7,
      "isFilterable": false,
      "templateKey": "certification"
     },
     {
      "group": "Dimensions",
      "label": "Size table",
-     "value": "Sizes confirmed with the quotation",
+     "value": "Made to order: sizes confirmed with the quotation",
      "unit": null,
-     "position": 7,
+     "position": 8,
      "isFilterable": false,
      "templateKey": "size_table_basis"
+    },
+    {
+     "group": "Application",
+     "label": "Typical services",
+     "value": "Heat recovery; compact coils; stainless finned tube for moist or corrosive air",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applications"
     }
    ],
    "searchAliases": [
@@ -8358,28 +8445,36 @@
    "category": "baffles-tube-supports",
    "focusKeyword": "finned tube support collar",
    "descriptionShort": "Collars that support finned tubes at the tube supports of an air cooler or heater, so the fins are not crushed where the tube rests. Supplied from Dubai with an Indus part number for each size and mill test certificates on request.",
-   "descriptionLong": "<p>Collars that support finned tubes at the tube supports of an air cooler or heater, so the fins are not crushed where the tube rests.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>Sizes</h3><p>Sizes are confirmed with the quotation. Send the outside diameter, the wall, the length and the quantity you need.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the standard and grade, the outside diameter and wall (BWG or millimetres, minimum or average wall), the length and the quantity. We quote with the mill certificates and the inspection you need.</p>",
+   "descriptionLong": "<p>Collars that support finned tubes at the tube supports of an air cooler or heater, so the fins are not crushed where the tube rests.</p><p>In an air cooler or a heater the finned tubes rest on cross supports along the bundle. Without a collar, the weight of the tube and its vibration in service crush the fins where they touch the support. A collar fits round the fins at each support point, spreads the load and holds the tube on its pitch, while still letting it move as it expands. Each collar is sized to the fin outside diameter, so it is made for the finned tube it carries. Collars are also replaced on their own when the fins have been crushed or worn at the supports, which shows as damaged fins at each support and tubes that sag or rattle between them.</p><h3>How we make and quote</h3><p>Support collars are made to the drawing or to the finned tube they carry. We confirm the collar bore against the fin outside diameter, the pitch and the support arrangement, and quote the material for the service temperature and the plant atmosphere. Collars ship packed by size with the bundle they belong to, or as spares for an existing air cooler or heater. Collars are quoted in aluminium, galvanised carbon steel or stainless steel, chosen for the service temperature and the plant atmosphere, with stainless used where the air is humid or salty. For a retrofit, send a photograph of the existing collar with the tube and fin dimensions, and we match it.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>What to send for a quotation</h3><ul><li>Bundle drawing, or the tube OD, fin OD and fin type</li><li>Tube pitch and layout</li><li>Number of supports per tube and number of tubes</li><li>Material required, and the service temperature</li><li>Quantity and delivery point</li></ul>",
    "seoTitle": "Finned Tube Support Collars",
    "seoDescription": "Finned Tube Support Collars. Mill certificates. Request a quote.",
    "faqs": [
-    {
-     "question": "What sizes do finned tube support collars come in?",
-     "answer": "Sizes are confirmed with the quotation. Send the outside diameter, wall, length and quantity you need and we confirm what can be made."
-    },
     {
      "question": "What tests and certificates come with them?",
      "answer": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged."
     },
     {
+     "question": "How are support collars sized?",
+     "answer": "To the fin outside diameter of the finned tube they carry, and to the tube pitch. Send the tube and fin dimensions, or the bundle drawing."
+    },
+    {
+     "question": "Why do finned tubes need support collars?",
+     "answer": "Where a finned tube rests on a support, its weight and vibration crush the fins. The collar spreads the load, holds the tube on pitch and lets it move as it expands."
+    },
+    {
+     "question": "Do you hold support collars in stock?",
+     "answer": "No. They are made to the fin outside diameter and the drawing; send the details in the checklist and we quote against them."
+    },
+    {
      "question": "What do I need to send for a quotation?",
-     "answer": "The standard and grade, the outside diameter and wall, the length and the quantity."
+     "answer": "Bundle drawing, or the tube OD, fin OD and fin type; Tube pitch and layout; Number of supports per tube and number of tubes; Material required, and the service temperature; Quantity and delivery point."
     }
    ],
    "specs": [
     {
      "group": "Identification",
      "label": "Product type",
-     "value": "Finned Tube Support Collars",
+     "value": "Finned tube support collar",
      "unit": null,
      "position": 0,
      "isFilterable": true,
@@ -8388,7 +8483,7 @@
     {
      "group": "Identification",
      "label": "Construction",
-     "value": "Machined from plate or forging to your drawing",
+     "value": "Collar fitted round the fins at each tube support",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -8396,30 +8491,57 @@
     },
     {
      "group": "Dimensions",
-     "label": "Length",
-     "value": "Random or fixed lengths; cut to length on request",
+     "label": "Outside diameter",
+     "value": "To suit the fin outside diameter of the tube carried",
      "unit": null,
      "position": 2,
      "isFilterable": false,
+     "templateKey": "od_range"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Length",
+     "value": "Made to the drawing",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
      "templateKey": "length"
+    },
+    {
+     "group": "Quality",
+     "label": "Testing",
+     "value": "Bore and fit checked against the fin outside diameter",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "testing"
     },
     {
      "group": "Quality",
      "label": "Certification",
      "value": "Mill test certificate to EN 10204 3.1 on request; third-party inspection by arrangement",
      "unit": null,
-     "position": 3,
+     "position": 5,
      "isFilterable": false,
      "templateKey": "certification"
     },
     {
      "group": "Dimensions",
      "label": "Size table",
-     "value": "Sizes confirmed with the quotation",
+     "value": "Made to the fin OD and your drawing",
      "unit": null,
-     "position": 4,
+     "position": 6,
      "isFilterable": false,
      "templateKey": "size_table_basis"
+    },
+    {
+     "group": "Application",
+     "label": "Typical services",
+     "value": "Air-cooled heat exchangers; fired heaters; heat-recovery bundles",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applications"
     }
    ],
    "searchAliases": [
@@ -8442,7 +8564,7 @@
    "category": "wound-fin-tubes-l-ll-kl",
    "focusKeyword": "notched fin tube",
    "descriptionShort": "Wound fins notched or serrated at the root, so the strip bends round the tube without stretching, for air coolers and heat-recovery coils. Supplied from Dubai with an Indus part number for each size and mill test certificates on request.",
-   "descriptionLong": "<p>Wound fins notched or serrated at the root, so the strip bends round the tube without stretching, for air coolers and heat-recovery coils.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>Sizes</h3><p>Sizes are confirmed with the quotation. Send the outside diameter, the wall, the length and the quantity you need.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the standard and grade, the outside diameter and wall (BWG or millimetres, minimum or average wall), the length and the quantity, with the fin type, material, height, thickness and fins per inch, and the bare length at each end. We quote with the mill certificates and the inspection you need.</p>",
+   "descriptionLong": "<p>Wound fins notched or serrated at the root, so the strip bends round the tube without stretching, for air coolers and heat-recovery coils.</p><p>Notching the root lets the strip bend round the tube without thinning or tearing, and serrating the outer edge breaks the fin into segments. The segments restart the air boundary layer at each cut, which raises the air-side heat-transfer coefficient for a modest rise in pressure drop, so a notched or serrated fin can do the same duty in a smaller coil than a plain wound fin.</p><h3>How we make and quote</h3><p>Finned tube is made to order on a finning line set up for each size, so we quote against your tube and fin specification rather than from stock. Send the base tube grade and size, the fin type and material, the fin height, thickness and pitch, and the finned and bare lengths, and we confirm what can be made, the bond and the inspection. Base tubes come with their mill certificates, the fin bond and fin pitch are checked along the length, and the finished tubes are packed in crates with the bare ends protected. To replace existing tubes, send the old drawing or a sample length, and we measure the base tube and the fin before we quote, so the new tubes fit the existing bundle and tube supports.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>What to send for a quotation</h3><ul><li>Base tube standard and grade, outside diameter and wall</li><li>Fin type, fin material, fin height, fin thickness and fins per inch</li><li>Finned length, and the bare length at each end</li><li>Overall tube length and quantity</li><li>Design temperature and the gas or air the fins will see</li><li>Any coating, galvanising or end treatment</li><li>Inspection, test and certificate requirements</li></ul>",
    "seoTitle": "Notched and Root-Serrated Fin Tubes",
    "seoDescription": "Notched and Root-Serrated Fin Tubes. Mill certificates. Request a quote.",
    "faqs": [
@@ -8455,8 +8577,20 @@
      "answer": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged."
     },
     {
+     "question": "Why are the fins notched or serrated?",
+     "answer": "A notched root lets the fin wrap the tube without stretching. Serrations break the fin into segments that restart the air boundary layer, which raises the air-side heat-transfer coefficient for a modest rise in pressure drop."
+    },
+    {
+     "question": "Where are notched and serrated fin tubes used?",
+     "answer": "Air coolers, heat-recovery coils and air heaters where a higher air-side coefficient lets the coil be smaller."
+    },
+    {
+     "question": "Do you hold notched fin tubes in stock?",
+     "answer": "No. They are made to order for each tube size and fin specification; send the details in the checklist and we confirm the size range and lead time with the quotation."
+    },
+    {
      "question": "What do I need to send for a quotation?",
-     "answer": "The standard and grade, the outside diameter and wall, the length and the quantity, the fin type and geometry."
+     "answer": "Base tube standard and grade, outside diameter and wall; Fin type, fin material, fin height, fin thickness and fins per inch; Finned length, and the bare length at each end; Overall tube length and quantity; Design temperature and the gas or air the fins will see; Any coating, galvanising or end treatment."
     }
    ],
    "specs": [
@@ -8470,31 +8604,76 @@
      "templateKey": "product_type"
     },
     {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Helically wound fin, notched or serrated at the root",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Construction",
+     "label": "Base tube material",
+     "value": "Carbon steel, stainless steel, copper or copper alloy, to the standard on the order",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "base_tube_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Fin material",
+     "value": "Aluminium, copper or carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fin_material"
+    },
+    {
      "group": "Dimensions",
      "label": "Length",
      "value": "Random or fixed lengths; cut to length on request",
      "unit": null,
-     "position": 1,
+     "position": 4,
      "isFilterable": false,
      "templateKey": "length"
+    },
+    {
+     "group": "Quality",
+     "label": "Testing",
+     "value": "Fin bond and fin pitch checked along the length; base tube tested to its standard",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "testing"
     },
     {
      "group": "Quality",
      "label": "Certification",
      "value": "Mill test certificate to EN 10204 3.1 on request; third-party inspection by arrangement",
      "unit": null,
-     "position": 2,
+     "position": 6,
      "isFilterable": false,
      "templateKey": "certification"
     },
     {
      "group": "Dimensions",
      "label": "Size table",
-     "value": "Sizes confirmed with the quotation",
+     "value": "Made to order: sizes confirmed with the quotation",
      "unit": null,
-     "position": 3,
+     "position": 7,
      "isFilterable": false,
      "templateKey": "size_table_basis"
+    },
+    {
+     "group": "Application",
+     "label": "Typical services",
+     "value": "Air coolers; heat-recovery coils; air heaters",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "applications"
     }
    ],
    "searchAliases": [
@@ -8987,7 +9166,7 @@
    "category": "enhanced-surface-tubes",
    "focusKeyword": "enhanced surface tube",
    "descriptionShort": "Tubes with a worked or coated surface that raises boiling or condensing performance: sintered porous-coated boiling tubes, helically twisted oval tubes and other enhanced profiles, for reboilers, evaporators and condensers. Made to ASTM A179, ASTM A192, ASTM A210. Supplied from Dubai with an Indus part number for each size and mill test certificates on request.",
-   "descriptionLong": "<p>Tubes with a worked or coated surface that raises boiling or condensing performance: sintered porous-coated boiling tubes, helically twisted oval tubes and other enhanced profiles, for reboilers, evaporators and condensers.</p><h3>Specification</h3><ul><li><strong>Sintered porous: exchanger types:</strong> Horizontal kettles and thermosiphons, vertical thermosiphon reboilers (TEMA BKM, BKU, AJS, BEM, BHU)</li></ul><h3>Standards</h3><p>ASTM A179, ASTM A192, ASTM A210, ASTM A213, ASTM B111, ASTM B338, ASTM B444, GB/T 20409-2006. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative; we check them against each tender.</p><h3>Materials</h3><ul><li><strong>Tube:</strong> CS; Stainless; Cu alloys; Ti</li></ul><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>Where it is used</h3><ul><li>Gas-plant reboilers and partial condensers, e.g. de-ethanisers in natural-gas processing</li></ul><h3>Sizes</h3><p>Sizes are confirmed with the quotation. Send the outside diameter, the wall, the length and the quantity you need.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the standard and grade, the outside diameter and wall (BWG or millimetres, minimum or average wall), the length and the quantity, with the fin type, material, height, thickness and fins per inch, and the bare length at each end. We quote with the mill certificates and the inspection you need.</p>",
+   "descriptionLong": "<p>Tubes with a worked or coated surface that raises boiling or condensing performance: sintered porous-coated boiling tubes, helically twisted oval tubes and other enhanced profiles, for reboilers, evaporators and condensers.</p><p>Each profile works on a different part of the duty. A sintered porous coating gives the liquid thousands of nucleation sites, so boiling starts at a smaller temperature difference, which suits reboilers and evaporators with a close approach. A helically twisted oval tube makes the shell-side fluid swirl and lets the tubes support each other without baffles. Rifled and corrugated tubes break up the film inside the tube. The right choice depends on the fluid, the fouling and whether the duty is boiling, condensing or single-phase.</p><h3>How we make and quote</h3><p>Enhanced tubes are made to order from a base tube to the standard and grade on the order, then coated, twisted, rifled or corrugated on a line set up for that size. We start from the duty: send the fluids, flows, temperatures and fouling, or the existing exchanger data sheet for a retrofit, and we propose the profile and confirm the tube size, length and the test and certificate package with the quotation.</p><h3>Specification</h3><ul><li><strong>Sintered porous: exchanger types:</strong> Horizontal kettles and thermosiphons, vertical thermosiphon reboilers (TEMA BKM, BKU, AJS, BEM, BHU)</li></ul><h3>Standards</h3><p>ASTM A179, ASTM A192, ASTM A210, ASTM A213, ASTM B111, ASTM B338, ASTM B444, GB/T 20409-2006. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative; we check them against each tender.</p><h3>Materials</h3><ul><li><strong>Tube:</strong> CS; Stainless; Cu alloys; Ti</li></ul><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>Where it is used</h3><ul><li>Gas-plant reboilers and partial condensers, e.g. de-ethanisers in natural-gas processing</li></ul><h3>What to send for a quotation</h3><ul><li>Duty: boiling, condensing or single-phase; fluids on each side</li><li>Flows, temperatures, pressures and allowable pressure drop</li><li>Fouling expected on each side</li><li>Base tube standard, grade, OD, wall and length</li><li>Existing exchanger data sheet, if it is a retrofit</li><li>Inspection, test and certificate requirements</li></ul>",
    "seoTitle": "Enhanced-Surface Tubes",
    "seoDescription": "Enhanced-Surface Tubes: ASTM A179, ASTM A192, ASTM A210. Mill certificates. Request a quote.",
    "faqs": [
@@ -9008,12 +9187,20 @@
      "answer": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged."
     },
     {
+     "question": "Which enhanced surface suits my duty?",
+     "answer": "Sintered porous coatings suit nucleate boiling with a small temperature difference; twisted oval tubes suit shell-side duties where baffles cause vibration or fouling; rifled and corrugated tubes suit in-tube boiling and single-phase duties. Send the duty and we propose the profile."
+    },
+    {
+     "question": "Can enhanced tubes be retrofitted into an existing exchanger?",
+     "answer": "Often, as a replacement bundle in the existing shell. Send the original data sheet with the new duty and we confirm the fit."
+    },
+    {
      "question": "Where are enhanced-surface tubes used?",
      "answer": "Gas-plant reboilers and partial condensers, e.g. de-ethanisers in natural-gas processing."
     },
     {
      "question": "What do I need to send for a quotation?",
-     "answer": "The standard and grade, the outside diameter and wall, the length and the quantity, the fin type and geometry."
+     "answer": "Duty: boiling, condensing or single-phase; fluids on each side; Flows, temperatures, pressures and allowable pressure drop; Fouling expected on each side; Base tube standard, grade, OD, wall and length; Existing exchanger data sheet, if it is a retrofit; Inspection, test and certificate requirements."
     }
    ],
    "specs": [
@@ -9027,11 +9214,20 @@
      "templateKey": "product_type"
     },
     {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Worked or coated tube surface: sintered porous coating, helically twisted oval, rifled or corrugated",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "construction"
+    },
+    {
      "group": "Compliance",
      "label": "Standards",
      "value": "ASTM A179, ASTM A192, ASTM A210, ASTM A213, ASTM B111, ASTM B338, ASTM B444, GB/T 20409-2006",
      "unit": null,
-     "position": 1,
+     "position": 2,
      "isFilterable": false,
      "templateKey": "standards"
     },
@@ -9040,7 +9236,7 @@
      "label": "Base tube material",
      "value": "CS; Stainless; Cu alloys; Ti",
      "unit": null,
-     "position": 2,
+     "position": 3,
      "isFilterable": true,
      "templateKey": "base_tube_material"
     },
@@ -9049,7 +9245,7 @@
      "label": "Length",
      "value": "Random or fixed lengths; cut to length on request",
      "unit": null,
-     "position": 3,
+     "position": 4,
      "isFilterable": false,
      "templateKey": "length"
     },
@@ -9058,7 +9254,7 @@
      "label": "Certification",
      "value": "Mill test certificate to EN 10204 3.1 on request; third-party inspection by arrangement",
      "unit": null,
-     "position": 4,
+     "position": 5,
      "isFilterable": false,
      "templateKey": "certification"
     },
@@ -9067,7 +9263,7 @@
      "label": "Size table",
      "value": "Sizes confirmed with the quotation",
      "unit": null,
-     "position": 5,
+     "position": 6,
      "isFilterable": false,
      "templateKey": "size_table_basis"
     },
@@ -9076,7 +9272,7 @@
      "label": "Typical services",
      "value": "Gas-plant reboilers and partial condensers, e.g. de-ethanisers in natural-gas processing",
      "unit": null,
-     "position": 6,
+     "position": 7,
      "isFilterable": false,
      "templateKey": "applications"
     }
@@ -12653,7 +12849,7 @@
    "category": "finned-u-bend-tubes",
    "focusKeyword": "finned u bend tube",
    "descriptionShort": "Finned tubes bent into U-tubes for compact air-cooled and heat-recovery coils. Finned U-bend tubes are bent after finning, with the fins stripped from the bend so the tube can be formed without tearing them. Supplied from Dubai with an Indus part number for each size and mill test certificates on request.",
-   "descriptionLong": "<p>Finned tubes bent into U-tubes for compact air-cooled and heat-recovery coils.</p><p>Finned U-bend tubes are bent after finning, with the fins stripped from the bend so the tube can be formed without tearing them.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>Sizes</h3><p>Sizes are confirmed with the quotation. Send the outside diameter, the wall, the length and the quantity you need.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the standard and grade, the outside diameter and wall (BWG or millimetres, minimum or average wall), the length and the quantity, with the bend schedule: centreline radius and leg length for each row, and any heat treatment of the bends. We quote with the mill certificates and the inspection you need.</p>",
+   "descriptionLong": "<p>Finned tubes bent into U-tubes for compact air-cooled and heat-recovery coils.</p><p>Finned U-bend tubes are bent after finning, with the fins stripped from the bend so the tube can be formed without tearing them.</p><p>The legs are finned first and the bend is then formed on a section of tube left bare, so the fins are not crushed or torn and the bend can be checked for wall thinning and ovality like any other U-tube. Leg lengths and bend radii follow your bend schedule, and the fin type on the legs, wound, embedded or extruded, follows the duty and the temperature.</p><h3>How we make and quote</h3><p>Finned tube is made to order on a finning line set up for each size, so we quote against your tube and fin specification rather than from stock. Send the base tube grade and size, the fin type and material, the fin height, thickness and pitch, and the finned and bare lengths, and we confirm what can be made, the bond and the inspection. Base tubes come with their mill certificates, the fin bond and fin pitch are checked along the length, and the finished tubes are packed in crates with the bare ends protected. To replace existing tubes, send the old drawing or a sample length, and we measure the base tube and the fin before we quote, so the new tubes fit the existing bundle and tube supports.</p><h3>Testing and documents</h3><ul><li>Mill test certificate to EN 10204 3.1 on request; third-party inspection can be arranged against your inspection and test plan</li></ul><h3>What to send for a quotation</h3><ul><li>Base tube standard and grade, outside diameter and wall</li><li>Fin type, fin material, fin height, fin thickness and fins per inch</li><li>Finned length, and the bare length at each end</li><li>Bend schedule: centreline radius and leg length for each row</li><li>Quantity, and any heat treatment of the bends</li><li>Inspection, test and certificate requirements</li></ul>",
    "seoTitle": "Finned U-Bend Tubes",
    "seoDescription": "Finned U-Bend Tubes. Mill certificates. Request a quote.",
    "faqs": [
@@ -12666,8 +12862,20 @@
      "answer": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged."
     },
     {
+     "question": "Are the fins removed at the bend?",
+     "answer": "Yes. The bend is formed on a bare section of tube, so the fins are not damaged and the bend can be inspected like any other U-tube."
+    },
+    {
+     "question": "Which fin types can be used on finned U-bends?",
+     "answer": "Wound, embedded and extruded fins on the straight legs, chosen for the duty and the temperature. Integral low-fin U-bends are listed separately."
+    },
+    {
+     "question": "Do you hold finned U-bend tubes in stock?",
+     "answer": "No. They are made to your bend schedule; send the tube and fin specification with the leg lengths and bend radii and we quote against it."
+    },
+    {
      "question": "What do I need to send for a quotation?",
-     "answer": "The standard and grade, the outside diameter and wall, the length and the quantity, and the bend schedule."
+     "answer": "Base tube standard and grade, outside diameter and wall; Fin type, fin material, fin height, fin thickness and fins per inch; Finned length, and the bare length at each end; Bend schedule: centreline radius and leg length for each row; Quantity, and any heat treatment of the bends; Inspection, test and certificate requirements."
     }
    ],
    "specs": [
@@ -12683,38 +12891,74 @@
     {
      "group": "Identification",
      "label": "Construction",
-     "value": "Bent from straight seamless or welded tube",
+     "value": "Finned straight legs, bare U-bend formed after finning",
      "unit": null,
      "position": 1,
      "isFilterable": true,
      "templateKey": "construction"
     },
     {
+     "group": "Construction",
+     "label": "Base tube material",
+     "value": "Carbon steel, stainless steel, copper or copper alloy, to the standard on the order",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "base_tube_material"
+    },
+    {
      "group": "Dimensions",
      "label": "Length",
      "value": "Random or fixed lengths; cut to length on request",
      "unit": null,
-     "position": 2,
+     "position": 3,
      "isFilterable": false,
      "templateKey": "length"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bend radius",
+     "value": "To your bend schedule",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "bend_radius"
+    },
+    {
+     "group": "Quality",
+     "label": "Testing",
+     "value": "Fin bond and fin pitch checked along the length; base tube tested to its standard",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "testing"
     },
     {
      "group": "Quality",
      "label": "Certification",
      "value": "Mill test certificate to EN 10204 3.1 on request; third-party inspection by arrangement",
      "unit": null,
-     "position": 3,
+     "position": 6,
      "isFilterable": false,
      "templateKey": "certification"
     },
     {
      "group": "Dimensions",
      "label": "Size table",
-     "value": "Sizes confirmed with the quotation",
+     "value": "Made to order: sizes confirmed with the quotation",
      "unit": null,
-     "position": 4,
+     "position": 7,
      "isFilterable": false,
      "templateKey": "size_table_basis"
+    },
+    {
+     "group": "Application",
+     "label": "Typical services",
+     "value": "Compact air-cooled and heat-recovery coils",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "applications"
     }
    ],
    "searchAliases": [
@@ -17424,15 +17668,9 @@
  ],
  "hold": [
   "IH-TF-PM-SSM",
-  "IH-TF-WF-CRM",
   "IH-TF-BR-637",
-  "IH-TF-LW-LSR",
-  "IH-TF-BS-COL",
-  "IH-TF-WF-NOT",
-  "IH-TF-ES-ENH",
   "IH-TF-TI-TUR",
   "IH-TF-CB-ERW",
-  "IH-TF-UF-FIN",
   "IH-TF-SP-SRP",
   "IH-TF-SM-STR",
   "IH-TF-RC-CHM",
