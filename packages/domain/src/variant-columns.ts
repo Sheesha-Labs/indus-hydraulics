@@ -315,6 +315,7 @@ export type LiftingDimensionKey =
   | 'reactionKn'
   | 'torqueNm'
   | 'lengthM'
+  | 'minSlingM'
   // buoys and chain
   | 'buoyancyKg'
   | 'volumeL'
@@ -419,6 +420,8 @@ export type LiftingTextKey =
   | 'wireMm'
   | 'wireIn'
   | 'depth'
+  | 'configuration'
+  | 'span'
 
 /**
  * Units a column can carry. The empty string is a count (falls of chain) and
@@ -789,6 +792,8 @@ export const LIFTING_PERFORMANCE_COLUMNS: readonly VariantColumn[] = [
   { key: 'minCurveRadius', label: 'Min. curve radius', unit: 'm', help: 'Tightest beam curve the trolley runs round.' },
   { key: 'extraWeightPerMetre', label: 'Extra lift weight', unit: 'kg/m', help: 'Weight added by each extra metre of lift.' },
   { key: 'lengthM', label: 'Length', unit: 'm', help: 'Effective working length, as published.' },
+  // Spreader beams: the shortest top sling leg that keeps the sling angle inside the chart's limit at that span.
+  { key: 'minSlingM', label: 'Min. top sling', unit: 'm', help: 'Shortest top sling leg that keeps the sling angle within the stated limit at this span, as the load chart gives it.' },
   { key: 'energyKnm', label: 'Energy absorption', unit: 'kNm', help: 'Energy the fender absorbs at its rated deflection, as published.' },
   { key: 'reactionKn', label: 'Reaction force', unit: 'kN', help: 'Force the fender returns at its rated deflection, as published.' },
   { key: 'torqueNm', label: 'Tightening torque', unit: 'Nm', help: 'Torque to tighten the bolt to, as the manufacturer states it.' },
@@ -904,6 +909,9 @@ export const LIFTING_DIMENSION_COLUMNS: readonly VariantColumn[] = [
 
 export const LIFTING_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'size', label: 'Size', help: 'Nominal size as the manufacturer states it.', lead: true },
+  // Below-the-hook beams and frames: one row per rigged configuration and span, as the load chart prints it.
+  { key: 'configuration', label: 'Configuration', help: 'How the beam is assembled and rigged for this row, as the load chart names it.', lead: true },
+  { key: 'span', label: 'Span', help: 'Distance between the lifting points the load hangs from, as the load chart prints it.', lead: true },
   { key: 'grade', label: 'Grade', help: 'Material grade of this row — carbon and alloy versions share a frame but not a rating.', lead: true },
   { key: 'type', label: 'Type', help: 'Manufacturer type within the size.', lead: true },
   { key: 'linkType', label: 'Link', help: 'DIN 5685 form: A is short link, C is long link.', lead: true },
@@ -1026,6 +1034,8 @@ const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
 export const QUALIFIER_LABELS: Readonly<Record<string, string>> = {
   a0: 'at 0°', a90: 'at 90°', upto90: 'up to 90°', a90to120: '90–120°',
   vertical: 'vertical', choker: 'choker', basket: 'basket',
+  // A spreader beam's chart is read by the top sling angle, measured from the vertical (STV).
+  stv45: '45° to vertical', stv30: '30° to vertical', stv20: '20° to vertical',
   fc: 'fibre core', iwrc: 'steel core',
   g1570: '1570 grade', g1770: '1770 grade', g1960: '1960 grade',
   g1570_fc: '1570 grade, fibre core', g1570_iwrc: '1570 grade, steel core',

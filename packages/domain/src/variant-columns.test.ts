@@ -586,6 +586,37 @@ describe('lifting tables', () => {
     ])
   })
 
+  it('reads a spreader-beam chart by span and sling angle', () => {
+    const rows: VariantLike[] = [
+      {
+        partNumber: 'IH-LR-BH-MSB-8-0300',
+        dimensions: {
+          span: '3.0 m',
+          'wllT@stv45': 5, 'minSlingM@stv45': 2.1,
+          'wllT@stv30': 8, 'minSlingM@stv30': 2.9,
+          'wllT@stv20': 8, 'minSlingM@stv20': 4.3,
+        },
+      },
+    ]
+    expect(variantTableKind(rows)).toBe('lifting')
+    expect(variantTextColumns(rows).map((c) => [c.key, c.label, c.lead])).toEqual([['span', 'Span', true]])
+    expect(variantDimensionColumns(rows).map((c) => [c.label, c.unit])).toEqual([
+      ['WLL, 45° to vertical', 't'],
+      ['WLL, 30° to vertical', 't'],
+      ['WLL, 20° to vertical', 't'],
+      ['Min. top sling, 45° to vertical', 'm'],
+      ['Min. top sling, 30° to vertical', 'm'],
+      ['Min. top sling, 20° to vertical', 'm'],
+    ])
+  })
+
+  it('leads a multi-configuration beam chart with the configuration', () => {
+    const rows: VariantLike[] = [
+      { partNumber: 'IH-LR-BH-MCB-16-LB-0300', dimensions: { configuration: 'Lifting beam', span: '3 m', wllT: 16 } },
+    ]
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['configuration', 'span'])
+  })
+
   it('labels every qualifier the importer writes', () => {
     for (const label of Object.values(QUALIFIER_LABELS)) expect(label.length).toBeGreaterThan(1)
   })

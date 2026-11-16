@@ -36,6 +36,11 @@
  * a promise it can keep; its pages fall back to the 14-day lead time recorded on
  * each product.
  *
+ * `below-the-hook-lifting` is exempt since 2026-11-16, on the founder's instruction.
+ * Spreader beams, frames and engineered lifting beams are built to order or shipped
+ * from the maker's stock, not held in Dubai; their pages show the product's own
+ * `leadTimeDays`, or "contact for availability" until a lead time is recorded.
+ *
  * Branded third-party ranges are COVERED, by decision (founder, 2026-10-11): the
  * Parker, Tompkins, Stucchi, Enerpac and other maker-branded listings added from
  * 2026-10-11 keep the ex-stock claim, because the stock will be held or air-freighted
@@ -64,7 +69,7 @@ export type CatalogueStockPosture = {
 export const CATALOGUE_STOCK_POSTURE: CatalogueStockPosture = {
   exStock: true,
   deliveryDays: 3,
-  exemptCategories: ['butterfly-valves'],
+  exemptCategories: ['butterfly-valves', 'below-the-hook-lifting'],
 }
 
 /** What a page needs to know about one product to state its availability. */
