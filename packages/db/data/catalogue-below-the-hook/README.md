@@ -65,8 +65,23 @@ instructions. They stay held until the maker confirms the figures.
 
 ## Images
 
-None yet. The source renders carry the maker's name on the steel. They need an AI edit, and the
-maker's permission, before use. Load the images in a second pass with `--image-dir=`.
+There are 66 images and every listing has at least one. Each was checked by eye against its listing,
+with alt text written per §13. The images sit outside the repo; pass their folder with `--image-dir=`.
+
+- **26 clean originals:** supplier renders that carry no mark.
+- **40 AI edits:** supplier renders whose painted maker name, CE/UKCA marks and nameplate text were
+  removed with GPT Image 2.6 (medium quality, 1k).
+  - Each edit was compared with its original at full size.
+  - No hardware was added, moved or redrawn.
+  - Nameplates are kept, but blank.
+  - Their `Media.caption` records the edit.
+- **Held listings:** the three 100–170 t beams use the 70 t render, with alt text marking it as
+  representative.
+- **Processing:** files are trimmed to the object with an 8% margin, at most 2000 px wide and under
+  100 KB.
+- **Storage keys** are built from the alt text, never from the supplier's file names.
+
+Publishing still waits on the maker's written permission to use its photos.
 
 ## Load (after deploy)
 
@@ -77,7 +92,7 @@ pnpm --filter @indus/db exec tsx src/scripts/import-lifting-catalogue.ts \
   --payload=catalogue-below-the-hook --image-dir=<folder>
 ```
 
-Publish with `--publish` once the images are attached. Then:
+Publish with `--publish` once image permission is confirmed. Then:
 
 - add the megamenu link;
 - wait at least 1 h after the deploy, then run IndexNow (`scripts/indexnow-submit.mjs --since`);
