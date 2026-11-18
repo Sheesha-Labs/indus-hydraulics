@@ -375,7 +375,23 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
   const sections: Record<string, ReactNode> = {
     hero: (
       /* ── HERO ─────────────────────────────────────────────────────────── */
-      <section className="overflow-hidden border-b border-ih-border bg-ih-surface">
+      <section className="relative isolate overflow-hidden border-b border-ih-border bg-ih-surface">
+        {/* Phones only: the newsletter's blueprint texture, whitewashed, as
+            the hero ground (owner call, 2026-11-19). Anchored on the hose
+            linework (right of the file), faded in from the top so the
+            headline sits on near-white. invert + hue-rotate(180°) is the
+            "whitewash": the navy ground turns to paper and the pale linework
+            turns into blue ink, like a blueprint printed on white. Desktop keeps the plain
+            surface and the carousel. The element is display:none from sm, so
+            browsers skip the download there. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[url('/textures/newsletter-blueprint-blue.jpg')] bg-[length:auto_115%] bg-[position:92%_70%] bg-no-repeat opacity-[0.55] [filter:invert(1)_hue-rotate(180deg)_saturate(0.9)] [mask-image:linear-gradient(180deg,transparent_0%,rgba(0,0,0,0.45)_30%,#000_65%,#000_100%)] sm:hidden"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_70%_at_0%_0%,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.55)_55%,rgba(255,255,255,0)_100%)] sm:hidden"
+        />
         <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 px-5 pb-10 pt-6 sm:px-8 sm:py-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 xl:px-12">
 
           {/* Left copy */}
