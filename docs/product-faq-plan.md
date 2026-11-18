@@ -213,7 +213,7 @@ payloads in `packages/db/data/product-faqs/pilot/`. Nothing written to the datab
 |---|---|---|---|---|---|
 | hammer-unions-standard-service | 21 | 252 | 83 | pass | ready — write after the link renderer deploys |
 | hydraulic-hoses (Indus brand) | 11 | 132 | 55 | pass | ready — write after the link renderer deploys |
-| pneumatic-tubing | 28 | 336 | 109 | 10 errors | **HOLD** — size-table data must be fixed first |
+| pneumatic-tubing | 28 | 336 | 109 | pass | ready — size tables rebuilt 2026-11-19 (fix-pneumatic-tubing-size-tables.ts), FAQs rewritten |
 
 What the pilot taught us:
 

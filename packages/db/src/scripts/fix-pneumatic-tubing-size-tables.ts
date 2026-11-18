@@ -103,7 +103,8 @@ const fmt = (n: number) => String(r2(n))
 
 /** Metric SMC size code "0425" → [4, 2.5]; "3220" → [3.2, 2]. */
 function smcMetricSize(code: string): [number, number] | null {
-  if (code === '3220') return [3.2, 2]
+  // 3.2 mm tube is coded "32" + ID: TUZ3220 = 3.2 × 2, TAS3222 = 3.2 × 2.2.
+  if (code.startsWith('32')) return [3.2, Number(code.slice(2)) / 10]
   const od = Number(code.slice(0, 2))
   const x = code.slice(2)
   if (!od) return null
@@ -257,7 +258,8 @@ function rebuildParker(pn: string, ratings: Ratings): { rebuilt: Rebuilt; group:
     const od = Number(odS)
     const wall = Number(wallS)
     const material = series === 'EB' ? 'polyethylene' : 'polyurethane'
-    const colour = colourCode ? PARKER_COLOURS[colourCode] ?? colourCode : 'Natural'
+    // Parker E = natural polyethylene, EB = black.
+    const colour = colourCode ? PARKER_COLOURS[colourCode] ?? colourCode : series === 'EB' ? 'Black' : 'Natural'
     return {
       group: `${series}-${odS}X${wallS}`,
       rebuilt: {
@@ -280,7 +282,7 @@ function rebuildParker(pn: string, ratings: Ratings): { rebuilt: Rebuilt; group:
     const od = Number(odS)
     const id = Number(idS)
     const material = series === 'EB' ? 'polyethylene' : 'polypropylene'
-    const colour = series === 'PPB' ? 'Black' : series === 'PP' ? 'Natural' : 'Natural'
+    const colour = series === 'PPB' || series === 'EB' ? 'Black' : 'Natural'
     return {
       group: `${series}-${odS}${idS}`,
       rebuilt: {

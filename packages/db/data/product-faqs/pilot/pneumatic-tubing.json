@@ -1,6 +1,5 @@
 {
   "family": "pneumatic-tubing",
-  "hold": "Size-table data on SMC/Parker/ATP rows is wrong (impossible pressures, swapped roll lengths, wrong IDs). Fix the variants first, then rewrite the pressure/size answers that currently warn about our own table, then lift the hold.",
   "extraFacts": [
     {
       "fact": "SMC T (metric) and TIA (inch) nylon tubing: material Nylon 12; operating temperature -40 to +100°C, water 0 to +70°C (no freezing); fluid air/water. Sizes OD x ID (mm): T0425 4 x 2.5, T0403 4 x 3, T0604 6 x 4, T0645 6 x 4.5, T0806 8 x 6, T1075 10 x 7.5, T1209 12 x 9, T1613 16 x 13; TIA01 3.18 x 2.18 (1/8\"), TIA05 4.76 x 3.48 (3/16\"), TIA07 6.35 x 4.57 (1/4\"), TIA11 9.53 x 6.99 (3/8\"), TIA13 12.7 x 9.56 (1/2\"). Max operating pressure at 20°C: T0425 3.3 MPa, T0604 3.0 MPa, T0403/T0645/T0806/T1075/T1209 2.0 MPa, T1613 1.6 MPa, TIA sizes 2.3 MPa; at 100°C these fall to 1.2, 1.1, 0.75, 0.6 and 0.85 MPa. Applicable fittings: One-touch, insert, self-align and miniature fittings; mount an inner sleeve with metal One-touch fittings at 60°C or more. Length symbol 20 = 20 m roll, 100 = 100 m roll (black and white only). Colour symbols B black, W white, R red, BU blue, Y yellow, G green. SMC marks the series RoHS. Use the lower maximum operating pressure of tube or fitting; surge pressure must stay below the maximum operating pressure.",
@@ -49,6 +48,10 @@
     {
       "fact": "HS subheading 3917.32 covers other tubes, pipes and hoses of plastics, not reinforced or otherwise combined with other materials, without fittings.",
       "source": "WCO Harmonized System Nomenclature 2022, heading 39.17"
+    },
+    {
+      "fact": "Parker fluoropolymer tubing (PTFE 101/201, FEP 103/203, PFA 104): working pressure is stated at 73°F and is one quarter of the minimum burst pressure, a design factor of 4 (for example 203-0400100 and 201-0400100: 20 bar working, 80 bar burst).",
+      "source": "Parker Parflex catalogue 4660, Fluoropolymer Tubing section"
     }
   ],
   "products": [
@@ -63,7 +66,7 @@
         {
           "slot": "B",
           "q": "How do you read an SMC TIUB part number such as TIUB07BU-20?",
-          "a": "TIUB07BU-20 reads as series TIUB (inch polyurethane), size 07 (1/4\" OD), colour BU (blue) and length code 20, which SMC defines as a 20 m roll. Size codes are 01 (1/8\"), 05 (3/16\"), 07 (1/4\"), 11 (3/8\") and 13 (1/2\"). Anything after the length code, such as -X108, marks a special version, so always quote the full part number."
+          "a": "TIUB07BU-20 reads as series TIUB (inch polyurethane), size 07 (1/4\" OD), colour BU (blue) and length code 20, a 20 m roll. Size codes are 01 (1/8\"), 05 (3/16\"), 07 (1/4\"), 11 (3/8\") and 13 (1/2\"); length codes include 33 (33 m, 100 ft), 153 (153 m, 500 ft) and 305 (305 m, 1,000 ft). Anything after the length code, such as -X108, marks a special version."
         },
         {
           "slot": "D",
@@ -78,7 +81,7 @@
         {
           "slot": "E",
           "q": "What is the maximum working pressure of SMC TIU polyurethane tubing?",
-          "a": "SMC rates TIU/TU polyurethane tubing at 0.8 MPa (8 bar) maximum operating pressure at 20°C, and the rows on our size table that carry a figure show 8 bar (one 1/8\" row shows 6 bar). Pressure falls as temperature rises toward the 60°C limit, so check the maker's curve at your temperature and use the lower rating of tube or fitting."
+          "a": "SMC rates TIU/TU polyurethane tubing at 0.8 MPa (8 bar, about 115 psi) maximum working pressure at 20°C, the figure shown on every row of our size table. Pressure falls as temperature rises toward the 60°C limit, so check the maker's curve at your temperature and use the lower rating of tube or fitting."
         },
         {
           "slot": "F",
@@ -133,17 +136,17 @@
         {
           "slot": "D",
           "q": "Which metric sizes of SMC TU tubing are on the SMC Tubings listing?",
-          "a": "This listing carries TU0604 (6 x 4 mm), TU0805 (8 x 5 mm) and TU1065 (10 x 6.5 mm) in blue, black or clear on 20 m and 100 m rolls. SMC also makes TU0425 (4 x 2.5 mm) and TU1208 (12 x 8 mm) in the same series; ask for them if your fittings need those sizes."
+          "a": "This listing carries TU0604 (6 x 4 mm) in blue or clear, TU0805 (8 x 5 mm) in black and TU1065 (10 x 6.5 mm) in clear or clear blue, on 20 m and 100 m rolls. SMC also makes TU0425 (4 x 2.5 mm) and TU1208 (12 x 8 mm) in the same series; ask for them if your fittings need those sizes."
         },
         {
           "slot": "D",
           "q": "Which inch sizes of SMC TIUB tubing are on the SMC Tubings listing?",
-          "a": "The listing has TIUB07 (1/4\" OD, 0.17\" ID), TIUB11 (3/8\" OD, 1/4\" ID) and TIUB13 (1/2\" OD, 0.33\" ID) in black, blue or clear on -33 and -153 roll codes. Use inch tube with inch fittings: 1/4\" tube is not a substitute for 6 mm tube in a metric push-in fitting."
+          "a": "The listing has TIUB07 (1/4\", 6.35 x 4.23 mm), TIUB11 (3/8\", 9.53 x 6.35 mm) and TIUB13 (1/2\", 12.7 x 8.46 mm) in black, blue or clear, on 33 m (100 ft) and 153 m (500 ft) rolls. Use inch tube with inch fittings: 1/4\" tube is not a substitute for 6 mm tube in a metric push-in fitting."
         },
         {
           "slot": "E",
           "q": "What pressure are SMC TU and TIUB polyurethane tubes rated for?",
-          "a": "SMC rates TU and TIUB polyurethane tubing at 0.8 MPa (8 bar) maximum operating pressure at 20°C; our size table for these 10 rolls carries no separate figure. The rating falls as temperature rises toward 60°C, so check the maker's burst-pressure curve and use the lower rating of tube or fitting."
+          "a": "SMC rates TU and TIUB polyurethane tubing at 0.8 MPa (8 bar, about 115 psi) maximum working pressure at 20°C, and every roll on this listing shows that 8 bar figure. It falls as temperature rises toward 60°C, so check the maker's burst-pressure curve and use the lower rating of tube or fitting."
         },
         {
           "slot": "F",
@@ -208,7 +211,7 @@
         {
           "slot": "E",
           "q": "What is the working pressure of SMC TUZ tubing at 20°C and 60°C?",
-          "a": "SMC rates TUZ at 0.8 MPa (8 bar) maximum operating pressure at 20°C, falling to 0.4 MPa at 60°C, its upper temperature limit. Our size table carries some rows at 200 or 1000 bar; those are data errors, not ratings, so work to the maker's 0.8 MPa figure."
+          "a": "SMC rates TUZ at 0.8 MPa (8 bar, about 115 psi) maximum working pressure at 20°C, the figure on every row of our size table, falling to 0.4 MPa at 60°C, its upper temperature limit. Use the lower rating of tube or fitting, and allow for the drop on warm machines."
         },
         {
           "slot": "F",
@@ -268,7 +271,7 @@
         {
           "slot": "E",
           "q": "What is the maximum working pressure of SMC TUH tubing?",
-          "a": "SMC rates the TUH standard type at 0.8 MPa and the high-pressure type at 1.0 MPa maximum operating pressure at 20°C, with lower limits at higher temperature per its burst-pressure curve. Rows on our size table showing 200 or 1000 bar are data errors; work to the maker's figures."
+          "a": "SMC rates the TUH standard type at 0.8 MPa (8 bar) and the high-pressure type at 1.0 MPa (10 bar) maximum working pressure at 20°C, as shown row by row on our size table. Limits are lower at higher temperature per SMC's burst-pressure curve, up to the 60°C maximum."
         },
         {
           "slot": "F",
@@ -338,7 +341,7 @@
         {
           "slot": "E",
           "q": "What is the maximum working pressure of SMC TCU coil tubing?",
-          "a": "SMC rates TCU coil tubing at 0.8 MPa (8 bar) maximum operating pressure at 20°C for air, from -20 to +60°C. Pressure capacity drops as temperature rises, and our size table does not list a figure for these coils, so use SMC's rating with the lower rating of tube or fitting."
+          "a": "SMC rates TCU coil tubing at 0.8 MPa (8 bar, about 115 psi) maximum working pressure at 20°C for air, the figure shown for every coil on this listing. The operating range is -20 to +60°C and capacity drops as temperature rises, so use the lower rating of tube or fitting."
         },
         {
           "slot": "F",
@@ -403,12 +406,12 @@
         {
           "slot": "E",
           "q": "What pressure is SMC T series nylon tubing rated for?",
-          "a": "SMC rates T series nylon at 20°C to 3.3 MPa for T0425, 3.0 MPa for T0604 and 2.0 MPa for T0403, T0645 and T0806. At 100°C these fall to 1.2, 1.1 and 0.75 MPa. Our size table has some rows that conflict with this (8 bar and 33 bar on 4 mm rows), so work to the maker's figures."
+          "a": "SMC rates T series nylon at 20°C to 3.3 MPa (33 bar) for T0425, 3.0 MPa (30 bar) for T0604 and 2.0 MPa (20 bar) for T0403, T0645 and T0806, as listed on our size table. At 100°C these fall to 1.2, 1.1 and 0.75 MPa, so derate hot lines and use the lower rating of tube or fitting."
         },
         {
           "slot": "F",
           "q": "Can SMC T series nylon tubing carry water?",
-          "a": "Yes. SMC lists T series for air from -40 to +100°C and for general industrial water from 0 to +70°C without freezing. Our listing labels the material urethane, but SMC's catalogue gives Nylon 12; see our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) for how nylon compares with polyurethane."
+          "a": "Yes. SMC lists T series Nylon 12 tube for air from -40 to +100°C and for general industrial water from 0 to +70°C without freezing. For how nylon compares with polyurethane on flexibility and pressure, see our [tubing materials guide](/blog/pneumatic-tubing-materials-guide)."
         },
         {
           "slot": "G",
@@ -468,7 +471,7 @@
         {
           "slot": "E",
           "q": "What pressure and temperature is SMC TS soft nylon tubing rated for?",
-          "a": "SMC gives TS a maximum operating pressure that varies by size and falls with temperature on its pressure curve, from -40 to +100°C with air. Our listing shows 140°F with no pressure per row, so confirm the maker's rating for your size and temperature before you specify it."
+          "a": "SMC rates TS soft nylon for air from -40 to +100°C, with a maximum working pressure that varies by size and falls as temperature rises. The maker's working pressure is not stated on this listing, so ask us for the maker's rating for your TS size and temperature before you specify it."
         },
         {
           "slot": "F",
@@ -533,7 +536,7 @@
         {
           "slot": "E",
           "q": "What pressure is SMC TIS soft nylon tubing rated for?",
-          "a": "Our size table lists 13 bar for most TISA rows and 20 bar for one 1/2\" row; SMC's own maximum operating pressure falls with temperature on its curve. Treat these as maker figures at room temperature, and confirm the rating for your size and temperature before ordering."
+          "a": "SMC TISA07 (1/4\") and TISA11 (3/8\") soft nylon carry a maker working pressure of 13 bar (about 190 psi) at room temperature. The 1/2\" TISA13 rating is not stated on this listing; ask us for the maker's rating for that part, and allow for pressure falling as temperature rises."
         },
         {
           "slot": "F",
@@ -583,12 +586,12 @@
         {
           "slot": "B",
           "q": "How do you read an SMC TIA nylon tube part number such as TIA07B-20?",
-          "a": "TIA07B-20 is TIA nylon tube, size 07 (1/4\" OD), black (B), length code 20 (a 20 m roll). Size codes are 01 (1/8\"), 05 (3/16\"), 07 (1/4\"), 11 (3/8\") and 13 (1/2\"); longer length codes such as -153 or -305 and suffixes such as -X108 identify other packs, so quote the full code."
+          "a": "TIA07B-20 is TIA nylon tube, size 07 (1/4\" OD), black (B), on a 20 m roll. Size codes are 01 (1/8\"), 05 (3/16\"), 07 (1/4\"), 11 (3/8\") and 13 (1/2\"); length codes include 33 (33 m, 100 ft), 153 (153 m, 500 ft) and 305 (305 m, 1,000 ft), and suffixes such as -X108 identify special versions."
         },
         {
           "slot": "D",
           "q": "What are the OD and ID of SMC TIA nylon tubing?",
-          "a": "SMC lists TIA01 3.18 x 2.18 mm, TIA05 4.76 x 3.48 mm, TIA07 6.35 x 4.57 mm, TIA11 9.53 x 6.99 mm and TIA13 12.7 x 9.56 mm OD x ID. Our size table also shows inch IDs, such as 0.18\" for TIA07 and 0.275\" for TIA11."
+          "a": "SMC lists TIA01 3.18 x 2.18 mm, TIA05 4.76 x 3.48 mm, TIA07 6.35 x 4.57 mm, TIA11 9.53 x 6.99 mm and TIA13 12.7 x 9.56 mm OD x ID. Walls run from 0.5 mm on TIA01 to 1.57 mm on TIA13, with 0.89 mm on the 1/4\" TIA07."
         },
         {
           "slot": "D",
@@ -598,7 +601,7 @@
         {
           "slot": "E",
           "q": "What is the working pressure of SMC TIA nylon tubing?",
-          "a": "SMC rates every TIA size at 2.3 MPa (about 23 bar) maximum operating pressure at 20°C, falling to 0.85 MPa at 100°C. Our listing carries no pressure per row, so use the maker's curve at your operating temperature together with the fitting's rating."
+          "a": "SMC rates every TIA size at 2.3 MPa (23 bar, about 335 psi) maximum working pressure at 20°C, as shown on each row of our size table, falling to 0.85 MPa at 100°C. Use the maker's curve at your operating temperature together with the fitting's rating."
         },
         {
           "slot": "F",
@@ -653,7 +656,7 @@
         {
           "slot": "D",
           "q": "What sizes does SMC TR flame-resistant tubing come in?",
-          "a": "TRS comes in 6 x 3, 8 x 5, 10 x 6.5 and 12 x 8 mm; TRB in TRB0604, TRB0806, TRB1075 and TRB1209; TRBU and TRTU in 6 x 4, 8 x 5, 10 x 6.5 and 12 x 8 mm inner tube. On double-layer types the size code gives the inner tube, which is what goes into the fitting."
+          "a": "TRS comes in 4 x 2.5, 6 x 3, 8 x 5, 10 x 6.5 and 12 x 8 mm; TRB in 6 x 4, 8 x 6, 10 x 7.5 and 12 x 9 mm; TRBU and TRTU in 6 x 4, 8 x 5, 10 x 6.5 and 12 x 8 mm inner tube. On double-layer types the size code gives the inner tube, which is what goes into the fitting."
         },
         {
           "slot": "D",
@@ -663,7 +666,7 @@
         {
           "slot": "E",
           "q": "What pressure is SMC TR flame-resistant tubing rated for?",
-          "a": "At 20°C SMC rates TRS at 1.2 MPa, TRB at 1.0 MPa and TRBU and TRTU at 0.8 MPa; TRTU falls to 0.65 MPa at 40°C and 0.5 MPa at 60°C. Our table matches the 10 bar and 8 bar figures, but TRS rows showing 200 bar are data errors; use SMC's 1.2 MPa."
+          "a": "At 20°C SMC rates TRS at 1.2 MPa (12 bar), TRB at 1.0 MPa (10 bar) and TRBU and TRTU at 0.8 MPa (8 bar), the figures on our size table. TRTU falls to 0.65 MPa at 40°C and 0.5 MPa at 60°C, so derate all four types on hot welding lines."
         },
         {
           "slot": "F",
@@ -722,13 +725,13 @@
         },
         {
           "slot": "D",
-          "q": "What is the minimum bending radius of SMC TPH tubing?",
-          "a": "Our size table lists a minimum bending radius of 15 mm for TPH0425, 25 mm for TPH0604, 35 mm for TPH0806 and 45 mm for TPH1075. SMC measures these at 20°C; at higher temperatures the tube may deform within that radius."
+          "q": "Which colours and roll lengths does SMC TPH clean-room tubing come in?",
+          "a": "SMC TPH0425 is stocked in black, blue, green, red, white and yellow, while TPH0604 comes in black or blue and TPH0806 and TPH1075 in blue. Rolls are 20 m (-20) or 100 m (-100); ask for other colour and length combinations."
         },
         {
           "slot": "E",
           "q": "What is the maximum working pressure of SMC TPH polyolefin tubing?",
-          "a": "SMC rates TPH at 1.0 MPa for TPH0425 and TPH0604 and 0.7 MPa for TPH0806, TPH1075 and TPH1209, at 20°C. Pressure falls with temperature on SMC's burst-pressure curve, and our listing gives no figure per row, so use the maker's values."
+          "a": "SMC rates TPH at 1.0 MPa (10 bar) for TPH0425 and TPH0604 and 0.7 MPa (7 bar) for TPH0806, TPH1075 and TPH1209, at 20°C, as shown on our size table. Pressure falls with temperature on SMC's burst-pressure curve up to the 80°C limit."
         },
         {
           "slot": "F",
@@ -793,7 +796,7 @@
         {
           "slot": "E",
           "q": "What pressure is SMC TPS clean-room tubing rated for?",
-          "a": "SMC rates TPS at 0.7 MPa (7 bar) maximum operating pressure at 20°C in every size, matching the 7 bar on our size table. The figure falls as temperature rises toward 80°C, so check SMC's curve for hot water service."
+          "a": "SMC rates TPS at 0.7 MPa (7 bar, about 100 psi) maximum working pressure at 20°C in every size, the figure on each row of our size table. It falls as temperature rises toward 80°C, so check SMC's curve for hot water service."
         },
         {
           "slot": "F",
@@ -848,17 +851,17 @@
         {
           "slot": "D",
           "q": "What sizes does SMC TIL fluoropolymer tubing come in?",
-          "a": "SMC makes TIL from 1/8\" to 1\" OD. This listing carries TIL01 (1/8\"), TIL07 (1/4\"), TIL11 (3/8\"), TIL13 (1/2\"), TIL19 and TIL25, plus TILM07 and TILM11. For metric sizes use [SMC TL series](/p/smc-tl-series-fluoropolymer-tubing)."
+          "a": "SMC makes TIL from 1/8\" to 1\" OD. This listing carries TIL01 (1/8\"), TIL07 (1/4\"), TIL11 (3/8\"), TIL13 (1/2\"), TIL19 (3/4\") and TIL25 (1\"), plus TILM07 and TILM11. For metric sizes use [SMC TL series](/p/smc-tl-series-fluoropolymer-tubing)."
         },
         {
           "slot": "D",
           "q": "What is the difference between SMC TIL and TILM tubing?",
-          "a": "TIL is Super PFA, chosen where a smooth internal surface and minimal fluorine-ion elution matter, while TILM is standard PFA with similar heat and chemical resistance. Our table lists TILM07 at 15 bar and TILM11 at 10 bar; TILM comes in colours such as red and translucent."
+          "a": "TIL is Super PFA, chosen where a smooth internal surface and minimal fluorine-ion elution matter, while TILM is standard PFA with similar heat and chemical resistance. TILM07 is rated 15 bar and TILM11 10 bar at room temperature, and TILM comes in red or translucent."
         },
         {
           "slot": "E",
           "q": "What pressure and temperature is SMC TIL tubing rated for?",
-          "a": "Our size table lists 10 bar for TIL07 and TIL11, 5 bar for TIL25 and 15 bar for TILM07, as maker figures at 20°C; SMC gives a maximum of 260°C for TL/TIL. Pressure falls steeply with temperature, so check SMC's curve before running hot fluid."
+          "a": "SMC's working pressure at room temperature is 10 bar for TIL07 and TIL11, 5 bar for TIL25, 15 bar for TILM07 and 10 bar for TILM11; for TIL01, TIL13 and TIL19 it is not stated on this listing, so ask us for the maker's rating. SMC gives a 260°C maximum for TL/TIL, with pressure falling steeply as temperature rises."
         },
         {
           "slot": "F",
@@ -923,7 +926,7 @@
         {
           "slot": "E",
           "q": "What is the working pressure of SMC TL fluoropolymer tubing?",
-          "a": "Our size table lists 10 bar for TL0403 and TL0604, 9 bar for TL0806 and 7 bar for TL1210 at room temperature, with TLM rows from 7 to 17 bar. Pressure drops as temperature rises toward 260°C, so use SMC's curve for hot service."
+          "a": "SMC's working pressure at room temperature is 10 bar for TL0403 and TL0604, 9 bar for TL0806 and 7 bar for TL1210, and 7 to 10 bar on the rated TLM rows. For TL1008, TL1916 and TLM0806 it is not stated on this listing; ask us for the maker's rating. Pressure drops as temperature rises toward 260°C."
         },
         {
           "slot": "F",
@@ -988,7 +991,7 @@
         {
           "slot": "E",
           "q": "What pressure is SMC TH FEP and TD PTFE tubing rated for?",
-          "a": "Our size table lists TH from 7 bar to 17 bar and TD from 9 bar to 14 bar, by size, at room temperature. Pressure falls as temperature rises toward 200°C for TH and 260°C for TD, so confirm SMC's rating for your size and temperature."
+          "a": "SMC's room-temperature working pressure is 17 bar for TH0402, 10 bar for TH1075 and 7 bar for TH1008, and 9 to 14 bar for the TD and TID sizes. For TH0425, TH0604, TH0806 and TH1209 it is not stated on this listing, so ask us for the maker's rating; pressure falls toward 200°C for TH and 260°C for TD."
         },
         {
           "slot": "F",
@@ -1008,7 +1011,7 @@
         {
           "slot": "I",
           "q": "What bending radius should be kept on SMC TH and TD tubing?",
-          "a": "The listing gives a recommended radius of 20 mm for the smaller sizes, rising to 100 mm on some 10 and 12 mm FEP rows. Route fluoropolymer tube with generous bends, since it kinks if forced, and replace any kinked or whitened length."
+          "a": "The listing gives a recommended bending radius of 20 mm for this fluoropolymer range; larger sizes need more, so check SMC's figure for your size. Route TH and TD tube with generous bends, since fluoropolymer kinks if forced, and replace any kinked or whitened length."
         },
         {
           "slot": "J",
@@ -1048,12 +1051,12 @@
         {
           "slot": "D",
           "q": "What colours and roll lengths are available in SMC PEAPP tubing?",
-          "a": "PEAPP comes in natural (N), black (B), blue (BU), green (G) and red (R), with length codes -33, -77, -153 and -305 on this listing. The longer codes suit panel builders and OEMs cutting many lines from one reel."
+          "a": "PEAPP comes in translucent natural (N), black (B), blue (BU), green (G) and red (R). Length codes on this listing are -33 (33 m, 100 ft), -77 (77 m, 250 ft), -153 (153 m, 500 ft) and -305 (305 m, 1,000 ft), so long runs can be cut from one reel."
         },
         {
           "slot": "E",
           "q": "What pressure is SMC PEAPP polyethylene tubing rated for?",
-          "a": "Our listing does not hold a pressure rating for PEAPP, and polyethylene ratings fall quickly with temperature. Send us the size and operating temperature and we will confirm the maker's figure before you order."
+          "a": "The maker's working pressure for PEAPP is not stated on this listing, so ask us for the maker's rating for your part. Send the size and operating temperature with your enquiry, since polyethylene ratings fall as temperature rises."
         },
         {
           "slot": "F",
@@ -1113,12 +1116,12 @@
         {
           "slot": "D",
           "q": "Which inch SMC TIH FEP tubing sizes are listed on SMC Tubing?",
-          "a": "TIH FEP tube on this listing runs from TIHA01 (1/8\") through TIHA07 and TIHB07 (1/4\"), TIHA11 (3/8\") and TIH13 (1/2\") to TIH19, mostly on 16 m (50 ft) rolls. Our table lists 10 bar for most rated rows and 7 bar for TIH13R; SMC makes TIH FEP up to 3/4\" OD."
+          "a": "TIH FEP tube on this listing comes in 1/8\" (TIHA01, TIHB01), 1/4\" (TIHA07, TIHB07), 3/8\" (TIHA11, TIHB11), 1/2\" (TIH13) and 3/4\" (TIH19) OD, on 16 m (50 ft) or 33 m (100 ft) rolls. SMC's working pressure is 10 bar on the TIHA01, TIHA07 and TIH19 rows; for other TIH parts ask us for the maker's rating."
         },
         {
           "slot": "E",
           "q": "What pressure ratings apply to the tubes on the SMC Tubing listing?",
-          "a": "They vary by series and size: T1075 and T1209 nylon are 2.0 MPa at 20°C, TAU antistatic 0.9 MPa, TAS antistatic 1.2 MPa, TQ0806 1.2 MPa and TIH FEP 0.7 to 1.0 MPa. TIV rows state 150 psi at room temperature. One T1209 row on our table showing 8 bar is a data error."
+          "a": "They vary by series and size: T1075 and T1209 nylon are rated 20 bar and T1613 16 bar at 20°C, TAS antistatic 12 bar, TAU antistatic 9 bar, TQ0806 12 bar and the rated TIH FEP rows 10 bar. For TIV and other rows without a figure, the maker rating is not stated on this listing; ask us for it."
         },
         {
           "slot": "F",
@@ -1143,7 +1146,7 @@
         {
           "slot": "K",
           "q": "What is SMC TQ two-layer soft fluoropolymer tubing?",
-          "a": "TQ is a two-layer soft fluoropolymer tube SMC makes for fluids such as solvents, combining a chemical-resistant inner layer with a soft, abrasion-resistant tube. TQ0806 on this listing is 8 mm OD, rated 1.2 MPa at 20°C; for high-purity work use [SMC TL series](/p/smc-tl-series-fluoropolymer-tubing)."
+          "a": "TQ is a two-layer soft fluoropolymer tube SMC makes for fluids such as solvents, combining chemical resistance with a soft, abrasion-resistant tube. TQ0806 on this listing is 8 x 6 mm, rated 12 bar at room temperature; for high-purity work use [SMC TL series](/p/smc-tl-series-fluoropolymer-tubing)."
         },
         {
           "slot": "L",
@@ -1168,12 +1171,12 @@
         {
           "slot": "B",
           "q": "How do you read a Parker 201 PTFE part number such as 201-0400100-NT-100?",
-          "a": "201-0400100-NT-100 reads as 201 series PTFE, 0400 for 4 mm OD, 100 for a 1 mm wall, NT for natural colour and 100 for a 100 ft length; the sizes on our table bear this out. So 201-0800100-NT-50 is 8 mm OD x 6 mm ID in 50 ft."
+          "a": "201-0400100-NT-100 reads as 201 series PTFE, 0400 for 4 mm OD, 100 for a 1 mm wall, NT for natural colour and 100 for a 100 ft length, giving a 2 mm ID. So 201-0800100-NT-50 is 8 mm OD x 6 mm ID in 50 ft."
         },
         {
           "slot": "D",
           "q": "What sizes does Parker 201 series PTFE tubing come in?",
-          "a": "This listing covers 1 mm wall tube from 3 mm OD (1 mm ID) through 4, 5, 6, 7, 8 and 9 mm to 10 mm OD (8 mm ID), in 25, 50 and 100 ft lengths. Larger 12, 14 and 16 mm OD tube is on [Parker PTFE Fluoropolymer Tubings, Metric](/p/parker-ptfe-fluoropolymer-tubings-metric)."
+          "a": "This listing covers 1 mm wall tube from 3 mm OD (1 mm ID) through 4, 5, 6, 7, 8 and 9 mm to 10 mm OD (8 mm ID), in 25, 50 and 100 ft lengths. Larger metric sizes, up to 16 mm OD, are on [Parker PTFE Fluoropolymer Tubings, Metric](/p/parker-ptfe-fluoropolymer-tubings-metric)."
         },
         {
           "slot": "D",
@@ -1183,7 +1186,7 @@
         {
           "slot": "E",
           "q": "What pressure is Parker 201 series PTFE tubing rated for?",
-          "a": "On the 50 ft and 100 ft rows the maker figures run from 108 bar for 4 x 2 mm down to 28 bar for 10 x 8 mm, falling as diameter grows. The 25 ft rows on our table show 0 to 2 bar, which conflicts with this, so confirm the rating for your exact part number and temperature before ordering."
+          "a": "Parker's working pressure at room temperature runs from 27 bar for 3 x 1 mm tube down to 7 bar for 10 x 8 mm: 20 bar at 4 mm OD, 15 at 5 mm, 12 at 6 mm, 10 at 7 mm, 9 at 8 mm and 8 at 9 mm, the same for every length. Parker sets working pressure at one quarter of minimum burst, a design factor of 4, and it falls as temperature rises."
         },
         {
           "slot": "F",
@@ -1248,7 +1251,7 @@
         {
           "slot": "E",
           "q": "What is the working pressure of Parker metric PTFE tubing?",
-          "a": "The maker figures on the 100 ft rows are 22 bar for 12 x 10 mm, 19 bar for 14 x 12 mm and 17 bar for 16 x 14 mm. The 25 ft 12 mm row shows 0 bar on our table, which conflicts, so confirm the rating for that part and your temperature before use."
+          "a": "Parker's working pressure at room temperature is 6 bar for 12 x 10 mm, 5 bar for 14 x 12 mm and 4 bar for 16 x 14 mm, in every length. Parker sets working pressure at one quarter of minimum burst (design factor 4), and it falls further as temperature rises."
         },
         {
           "slot": "F",
@@ -1293,27 +1296,27 @@
         {
           "slot": "A",
           "q": "What is Parker PTFE fluoropolymer tubing, fractional?",
-          "a": "This is Parker's inch-size (fractional) PTFE tubing in the 101 series, natural white, Shore D 50 to 65, for chemical, solvent, gas and hot-fluid lines. The listing holds 53 part numbers from 1/8\" to about 1\" OD in 25, 50 and 100 ft lengths."
+          "a": "This is Parker's inch-size (fractional) PTFE tubing in the 101 series, natural, Shore D 50 to 65, for chemical, solvent, gas and hot-fluid lines. The listing holds 53 part numbers from 1/8\" OD up to 101-1100050 (1\" ID) in 25, 50 and 100 ft lengths."
         },
         {
           "slot": "B",
           "q": "How do you read a Parker 101 PTFE part number such as 101-0250031-NT-100?",
-          "a": "101-0250031-NT-100 reads as 101 series PTFE, 0250 for a 1/4\" OD, 031 for a 0.031\" wall, NT natural and 100 for 100 ft; that gives a 3/16\" ID, as our table shows. 101-0438062 is 7/16\" OD with a 0.062\" wall."
+          "a": "101-0250031-NT-100 reads as 101 series PTFE, 0250 for a 0.250\" (1/4\") OD, 031 for a 0.031\" wall, NT natural and 100 for 100 ft, giving a 4.83 mm ID. 101-0438062 is 0.438\" OD with a 0.062\" wall."
         },
         {
           "slot": "D",
           "q": "What sizes does Parker fractional PTFE tubing cover?",
-          "a": "The listing runs from 101-0125031 (1/8\" OD, 1/16\" ID) to 101-1100050 (1\" ID), with wall codes 031, 047 and 062 in the part number; most sizes come in both 0.031\" and 0.062\" walls. Thicker walls give higher pressure at the same OD."
+          "a": "The listing runs from 101-0125031 (0.125\" OD, 1.57 mm ID) to 101-1100050 (27.94 mm OD, 25.4 mm ID), with wall codes 031, 047 and 062 in the part number; most sizes come in both 0.031\" and 0.062\" walls. Thicker walls give higher pressure at the same OD."
         },
         {
           "slot": "D",
           "q": "How do I choose the wall thickness for Parker fractional PTFE tubing?",
-          "a": "For the same OD, the 0.062\" wall roughly doubles pressure capacity over the 0.031\" wall: 101-0438062 is listed at 41 bar against 19 bar for 101-0438031. Use the thin wall for flexibility and flow, the thick wall for pressure."
+          "a": "For the same OD, the 0.062\" wall roughly doubles working pressure over the 0.031\" wall: 101-0438062 is rated 10 bar against 5 bar for 101-0438031, and 101-0250062 20 bar against 9 bar for 101-0250031. Use the thin wall for flexibility and flow, the thick wall for pressure."
         },
         {
           "slot": "E",
           "q": "What pressure is Parker fractional PTFE tubing rated for?",
-          "a": "Maker figures on our table run from 4 bar to 41 bar depending on OD and wall. Some 50 ft rows show lower figures than the same size in 100 ft (101-0563031: 4 bar vs 15 bar), so confirm the rating for your exact part number and temperature."
+          "a": "Parker's working pressure at room temperature runs from 3 bar on the largest thin-wall sizes to 27 bar for 101-0188062, with 20 bar for 1/8\" OD and 9 bar for 1/4\" x 0.031\" wall. Parker sets working pressure at one quarter of minimum burst (design factor 4); check the row for your part and derate for temperature."
         },
         {
           "slot": "F",
@@ -1358,27 +1361,27 @@
         {
           "slot": "A",
           "q": "What is Parker chemical-resistant PTFE tubing?",
-          "a": "This listing holds 22 Parker PTFE tubes for chemical and heat-resistant service: black thin-wall tubes with part numbers starting 81914/1 and clear 101 series tubes in 50 ft lengths. The maker lists chemical inertness, non-flammability and a 500°F temperature limit."
+          "a": "This listing holds 22 Parker PTFE tubes for chemical and heat-resistant service: black convoluted tubes to SAE AS81914/1 and natural smooth-bore 101 series tubes in 50 ft lengths. The maker lists chemical inertness, non-flammability and a 500°F temperature limit."
         },
         {
           "slot": "B",
           "q": "How do the Parker 81914/1 and 101 PTFE part numbers differ on this listing?",
-          "a": "81914/1-10xx-0TC parts are black PTFE with thin walls of 0.023\" to 1/25\", from 3/16\" to 1-1/2\" ID. 101-xxxxxxx-NT-50 parts are clear PTFE where the digits give OD and wall, so 101-0625062 is 5/8\" OD with a 0.062\" wall."
+          "a": "81914/1-10xx-0TC parts are black convoluted PTFE to SAE AS81914/1, sized by maximum ID from 4.78 mm (81914/1-1001) to 38.1 mm (81914/1-1013). 101-xxxxxxx-NT-50 parts are smooth-bore PTFE where the digits give OD and wall, so 101-0625062 is 0.625\" OD with a 0.062\" wall."
         },
         {
           "slot": "D",
           "q": "What inside diameters does Parker chemical-resistant PTFE tubing cover?",
-          "a": "The black 81914/1 tubes run from 3/16\" to 1-1/2\" ID, and the clear 101 tubes from 3/32\" to 1\" ID. Pick ID for the flow you need and OD to suit your fitting."
+          "a": "The black AS81914/1 convoluted tubes run from 4.78 mm to 38.1 mm maximum ID, and the 101 smooth-bore tubes from 2.39 mm to 25.4 mm ID. Pick ID for the flow you need and OD to suit your fitting."
         },
         {
           "slot": "D",
           "q": "Is Parker chemical-resistant PTFE tubing suitable for vacuum?",
-          "a": "No. The listing records this tube as not vacuum rated, which fits its thin walls. For suction lines choose a vacuum-rated tube such as [Parker 201 series PTFE](/p/parker-201-series-ptfe-tubing)."
+          "a": "No. The listing records this tube as not vacuum rated. For suction lines choose a vacuum-rated tube such as [Parker 201 series PTFE](/p/parker-201-series-ptfe-tubing)."
         },
         {
           "slot": "E",
           "q": "What pressure is Parker chemical-resistant PTFE tubing rated for?",
-          "a": "The maker figures range from 1 bar to 15 bar: the thin-wall black 81914/1 tubes run 1 to 7 bar, and the clear 101 tubes 3 to 15 bar, with 101-0156031 the highest. These are low-pressure tubes, so check the row and temperature before use."
+          "a": "Parker's working pressure for the 101 smooth-bore tubes runs from 3 bar to 15 bar at room temperature, with 101-0156031 the highest. For the AS81914/1 convoluted tubes it is not stated on this listing, so ask us for the maker's rating for that part."
         },
         {
           "slot": "F",
@@ -1393,17 +1396,17 @@
         {
           "slot": "H",
           "q": "Which fittings are used with Parker chemical-resistant PTFE tubing?",
-          "a": "The maker lists compression and push-to-connect fittings; for thin-wall PTFE a compression fitting with a support insert holds best. Push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+          "a": "The maker lists compression and push-to-connect fittings; on the smooth-bore 101 tubes a compression fitting matched to the OD is the usual choice for chemical lines. Push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
         },
         {
           "slot": "I",
-          "q": "How should thin-wall Parker PTFE tubing be handled?",
-          "a": "Thin-wall PTFE kinks easily, so uncoil it carefully, route in wide bends and support it along its length. Cut square with a sharp blade and avoid crushing the tube in clamps."
+          "q": "How should Parker convoluted and smooth-bore PTFE tubing be handled?",
+          "a": "Uncoil Parker PTFE tubing carefully, route it in wide bends and support it along its length, since PTFE kinks if forced. Cut the 101 smooth-bore tubes square with a sharp blade and avoid crushing either type in clamps."
         },
         {
           "slot": "J",
           "q": "Where is Parker chemical-resistant PTFE tubing used?",
-          "a": "The maker lists defence and military industry use, plus chemical, food, beverage and water applications. Thin-wall PTFE suits sleeving, insertion and low-pressure chemical transfer where heat up to 500°F or aggressive media rule out other plastics."
+          "a": "The maker lists defence and military industry use, plus chemical, food, beverage and water applications. It suits low-pressure chemical transfer and flexible lines where heat up to 500°F or aggressive media rule out other plastics."
         },
         {
           "slot": "L",
@@ -1423,17 +1426,17 @@
         {
           "slot": "A",
           "q": "What is Parker chemical-resistant FEP tubing?",
-          "a": "This listing holds 4 large-bore Parker FEP tubes in natural colour, 11/16\" to 7/8\" OD, for chemical, food, beverage and water transfer. The maker lists chemical inertness, a non-wetting surface, weldability and a 400°F temperature limit."
+          "a": "This listing holds 4 large-bore Parker FEP tubes in natural colour, 0.688\" to 0.875\" OD, for chemical, food, beverage and water transfer. The maker lists chemical inertness, a non-wetting surface, weldability and a 400°F temperature limit."
         },
         {
           "slot": "B",
           "q": "How do you read a Parker FEP part number such as 103-0875062-NT-50?",
-          "a": "103-0875062-NT-50 is 103 series FEP, 0875 for 7/8\" OD, 062 for a 0.06\" wall, NT natural, 50 ft long, giving a 3/4\" ID. 103-0688031 is 11/16\" OD with a 0.03\" wall."
+          "a": "103-0875062-NT-50 is 103 series FEP, 0875 for a 0.875\" OD, 062 for a 0.062\" wall, NT natural, 50 ft long, giving a 19.08 mm ID. 103-0688031 is 0.688\" (17.48 mm) OD with a 0.031\" wall."
         },
         {
           "slot": "D",
           "q": "What sizes does Parker chemical-resistant FEP tubing come in?",
-          "a": "The four sizes are 11/16\" OD x 5/8\" ID, 3/4\" OD x 11/16\" ID, 27/32\" OD x 3/4\" ID and 7/8\" OD x 3/4\" ID, all in 50 ft lengths. Smaller FEP sizes are on [Parker FEP fractional tubing](/p/parker-fep-fluoropolymer-tubings-fractional)."
+          "a": "The four sizes, OD x ID, are 17.48 x 15.9 mm (103-0688031), 19.05 x 17.48 mm (103-0750031), 21.08 x 19.05 mm (103-0830040) and 22.23 x 19.08 mm (103-0875062), all in 50 ft. Smaller FEP sizes are on [Parker FEP fractional tubing](/p/parker-fep-fluoropolymer-tubings-fractional)."
         },
         {
           "slot": "D",
@@ -1443,7 +1446,7 @@
         {
           "slot": "E",
           "q": "What pressure is Parker chemical-resistant FEP tubing rated for?",
-          "a": "The maker figures are 4 to 8 bar: 4 bar for 3/4\" OD, 5 bar for 11/16\" and 27/32\" OD, and 8 bar for 7/8\" OD with its 0.06\" wall. These are low-pressure transfer tubes, and capacity falls further at high temperature."
+          "a": "The maker's working pressure for these four large-bore FEP tubes is not stated on this listing, so ask us for the maker's rating for your part. Thin-wall large-bore FEP is a low-pressure transfer tube, and capacity falls further at high temperature."
         },
         {
           "slot": "F",
@@ -1458,7 +1461,7 @@
         {
           "slot": "H",
           "q": "Which fittings are used with large-bore Parker FEP tubing?",
-          "a": "The maker lists compression and push-to-connect fittings; at 11/16\" to 7/8\" OD compression fittings with inserts are the usual choice. Connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+          "a": "The maker lists compression and push-to-connect fittings; at 17 to 22 mm OD compression fittings with inserts are the usual choice. Connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
         },
         {
           "slot": "I",
@@ -1498,7 +1501,7 @@
         {
           "slot": "D",
           "q": "What sizes does Parker fractional FEP tubing cover?",
-          "a": "The listing runs from 103-0125031 (1/8\" OD, 1/16\" ID) to 103-1000062 (1\" OD, 7/8\" ID), including 3/16\", 5/32\", 1/4\", 5/16\", 3/8\", 7/16\", 1/2\", 9/16\", 5/8\" and 3/4\" OD. Most sizes come in 0.031\" and 0.062\" walls."
+          "a": "The listing runs from 103-0125031 (0.125\" OD, 1.57 mm ID) to 103-1000062 (1.000\" OD, 22.22 mm ID), in ODs of 0.156\", 0.188\", 0.250\", 0.312\", 0.375\", 0.438\", 0.500\", 0.563\", 0.625\" and 0.750\" between. Most sizes come in 0.031\" and 0.062\" walls."
         },
         {
           "slot": "D",
@@ -1508,7 +1511,7 @@
         {
           "slot": "E",
           "q": "What pressure is Parker fractional FEP tubing rated for?",
-          "a": "Maker figures on our table run from 3 bar to 94 bar by size and wall. Some rows conflict, such as 103-0250047 at 94 bar in 500 ft and 23 bar in 100 ft, and 50 ft rows often show lower figures, so confirm the rating for your exact part and temperature."
+          "a": "Parker's working pressure at room temperature runs from 6 bar on the larger thin-wall sizes to 43 bar for 103-0188062, with 32 bar for 1/8\" OD and 14 bar for 1/4\" x 0.031\" wall; every length of a size carries the same figure. Parker sets working pressure at one quarter of minimum burst (design factor 4), and it falls as temperature rises."
         },
         {
           "slot": "F",
@@ -1573,7 +1576,7 @@
         {
           "slot": "E",
           "q": "What pressure is Parker FEP metric tubing rated for?",
-          "a": "Maker figures on our table are 80 bar for 4 x 2 mm, 12 bar for 6 x 4 mm, 9 bar for 8 x 6 mm and 7 bar for 10 x 8 mm. Pressure falls as temperature rises toward 400°F, so check the rating at your operating temperature."
+          "a": "Parker's working pressure at room temperature is 20 bar for 4 x 2 mm, 12 bar for 6 x 4 mm, 9 bar for 8 x 6 mm and 7 bar for 10 x 8 mm. These are a quarter of minimum burst (design factor 4), so 4 x 2 mm tube bursts at about 80 bar; derate as temperature rises toward 400°F."
         },
         {
           "slot": "F",
@@ -1618,17 +1621,17 @@
         {
           "slot": "A",
           "q": "What is Parker PP series polypropylene tubing?",
-          "a": "Parker PP series is polypropylene tubing in black or white for pneumatic lines, with FDA/NSF listed as a distinct property. This listing holds 4 part numbers, maker-rated at 21 to 24 bar, with a 93°C temperature limit."
+          "a": "Parker PP series is polypropylene tubing in black or natural for pneumatic lines, with FDA/NSF listed as a distinct property. This listing holds 4 part numbers in 1/8\", 1/4\" and 5/16\" OD, maker-rated at 21 to 24 bar working pressure, with a 93°C temperature limit."
         },
         {
           "slot": "B",
           "q": "What do the PP and PPB prefixes mean on Parker polypropylene tubing?",
-          "a": "On this listing PP parts are white and PPB parts are black, so PP-43-0500 and PPB-43-0500 are the same size in two colours. The middle number identifies the size and the last group the pack."
+          "a": "On this listing PP parts are natural and PPB parts are black, so PP-43-0500 and PPB-43-0500 are the same 1/4\" tube in two colours. The middle number identifies the size and the last group the length in feet, such as 0500 for 500 ft."
         },
         {
           "slot": "D",
           "q": "What sizes does Parker polypropylene tubing come in on this listing?",
-          "a": "The listing covers PP-43 and PPB-43 with a 1/25\" wall, PPB-53 with a 0.062\" wall and PP-21 with a 0.023\" wall. Our size table's diameter descriptions for these parts are inconsistent, so confirm OD and ID for your fitting before ordering."
+          "a": "The listing covers PP-21 (1/8\" OD x 1/16\" ID, 1000 ft), PP-43 and PPB-43 (1/4\" OD x 3/16\" ID, 500 ft) and PPB-53 (5/16\" OD x 3/16\" ID, 500 ft). Match the OD to your push-in or compression fitting."
         },
         {
           "slot": "D",
@@ -1638,7 +1641,7 @@
         {
           "slot": "E",
           "q": "What pressure is Parker polypropylene tubing rated for?",
-          "a": "The maker states 300 to 350 psi (21 to 24 bar) by size: 21 bar for PP-43 and PPB-43, 24 bar for PPB-53 and PP-21. Polypropylene loses pressure capacity as temperature rises toward 93°C, so check the rating at your temperature."
+          "a": "Parker states a working pressure of 21 to 24 bar (about 305 to 350 psi) at room temperature by size: 21 bar for PP-43 and PPB-43, 24 bar for PPB-53 and PP-21. Polypropylene loses pressure capacity as temperature rises toward 93°C, so check the rating at your temperature."
         },
         {
           "slot": "F",
@@ -1663,7 +1666,7 @@
         {
           "slot": "K",
           "q": "What is the difference between polypropylene and polyethylene tubing?",
-          "a": "This Parker PP series is rated 21 to 24 bar up to 93°C with FDA/NSF listed, while the EB black polyethylene in [Parker Tubings](/p/parker-tubings) is rated 4 to 10 bar. Choose polypropylene for higher-pressure or food-related lines; see our [materials guide](/blog/pneumatic-tubing-materials-guide)."
+          "a": "This Parker PP series is rated 21 to 24 bar up to 93°C with FDA/NSF listed, while the EB polyethylene in [Parker Tubings](/p/parker-tubings) is rated 4 to 10 bar. Choose polypropylene for higher-pressure or food-related lines; see our [materials guide](/blog/pneumatic-tubing-materials-guide)."
         },
         {
           "slot": "L",
@@ -1683,7 +1686,7 @@
         {
           "slot": "A",
           "q": "What does the Parker Tubings listing contain?",
-          "a": "Parker Tubings gathers 136 Parker air and fluid tubes: 95U inch and 95UM metric polyurethane, 95FR polyether polyurethane, EB black polyethylene, NBR/NNR nylon and 104 series PFA. Maker ratings run 4 to 26 bar by size, and the listing gives -60°F to +200°F."
+          "a": "Parker Tubings gathers 136 Parker air and fluid tubes: 95U inch and 95UM metric polyurethane, 95FR polyether polyurethane, EB polyethylene, NBR/NNR nylon and 104 series PFA. Maker working pressures run 4 to 26 bar by size, and the listing gives -60°F to +200°F."
         },
         {
           "slot": "B",
@@ -1698,7 +1701,7 @@
         {
           "slot": "D",
           "q": "What metric sizes of Parker 95UM polyurethane tubing are listed?",
-          "a": "95UM comes in 4 x 0.75, 6 x 1, 8 x 1.5, 10 x 1.75 and 12 x 2 mm OD x wall, in 100 ft and 500 ft lengths. Our table shows some IDs incorrectly (for example 6 mm ID on the 6 mm tube), so work from OD and wall."
+          "a": "95UM comes in 4 x 2.5, 6 x 4, 8 x 5, 10 x 6.5 and 12 x 8 mm OD x ID, with walls of 0.75 to 2 mm, in 100 ft and 500 ft lengths. Use metric push-in fittings matched to the OD."
         },
         {
           "slot": "D",
@@ -1708,7 +1711,7 @@
         {
           "slot": "E",
           "q": "What pressure ratings apply to Parker 95U, 95UM and EB tubing?",
-          "a": "Maker figures are 8 to 17 bar for 95U, 10 to 13 bar for 95UM, 15 to 17 bar for 95FR, 4 to 10 bar for EB polyethylene, 26 bar for NBR/NNR nylon and 16 to 20 bar for 104 PFA. All fall as temperature rises; check the row for your part."
+          "a": "Maker working pressures are 8 to 17 bar for 95U, 10 to 13 bar for 95UM, 15 to 17 bar for 95FR, 4 to 10 bar for EB polyethylene, 26 bar for NBR/NNR nylon and 16 to 22 bar for 104 PFA. All fall as temperature rises; check the row for your part."
         },
         {
           "slot": "F",
@@ -1728,7 +1731,7 @@
         {
           "slot": "J",
           "q": "Where is Parker 95U and nylon tubing used?",
-          "a": "The maker lists machine tool systems and marine control systems, plus air, water, oil and lubricant lines. Nylon NBR/NNR suits higher pressure, polyurethane flexible machine lines and EB polyethylene low-pressure runs."
+          "a": "The maker lists machine tool systems and marine control systems, plus air, water, oil and lubricant lines. NBR/NNR nylon suits higher pressure, polyurethane flexible machine lines and EB polyethylene low-pressure runs."
         },
         {
           "slot": "L",
