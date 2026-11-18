@@ -12,88 +12,84 @@ type Props = {
   headingLead?: string | null
   headingEmphasis?: string | null
   headingTail?: string | null
-  body?: string | null
   primaryLabel?: string | null
   primaryHref?: string | null
   secondaryLabel?: string | null
   secondaryHref?: string | null
 }
 
+/**
+ * The /services hero, kept deliberately quiet: eyebrow, headline and the
+ * three job figures under it, with the two actions on the right. The
+ * standfirst paragraph was dropped (owner call, 2026-11-18) — the case cards
+ * directly below say the same thing with evidence. The `body` field stays in
+ * Pages & Blocks; this component simply no longer renders it.
+ */
 export default function ServicesHero({
   stats,
   eyebrow,
   headingLead,
   headingEmphasis,
   headingTail,
-  body,
   primaryLabel,
   primaryHref,
   secondaryLabel,
   secondaryHref,
 }: Props) {
   return (
-    <section className="border-b border-ih-border py-14">
-      <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
+    <section className="border-b border-ih-border py-10">
+      <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
         <div>
           <span className="eyebrow">{eyebrow ?? 'SERVICES · WORKSHOPS · ON-SITE'}</span>
           {/*
             The display pattern: a full declarative sentence ending in a
             period, with the closing clause in ITALIC. 01-design-language.md
             §3 — the italic clause is the emphasis, and you never bold inside
-            a serif headline. This previously coloured the clause accent
-            instead, which reads as a link and spends the signal colour on
-            decoration.
+            a serif headline.
           */}
-          <h1 className="my-4 max-w-[15ch] text-balance font-serif text-[clamp(38px,5.5vw,60px)] font-normal leading-[1.04] tracking-[-0.01em]">
+          <h1 className="mt-3 max-w-[30ch] text-balance font-serif text-[clamp(32px,4vw,46px)] font-normal leading-[1.06] tracking-[-0.01em]">
             {headingLead ?? 'Things people'}{' '}
             {headingEmphasis ? <em className="italic">{headingEmphasis}</em> : null}
             {headingTail ?? ', and what we sent back.'}
           </h1>
-          <p className="max-w-xl text-[17px] leading-[1.55] text-ih-muted">
-            {body ??
-              'Service jobs run out of our Jebel Ali yard — written as case studies, with photos, measurements and what it actually cost. Browse the cases or jump straight to a quote.'}
-          </p>
+
+          {stats.length > 0 ? (
+            <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
+              {stats.map((s) => (
+                <div key={s.label} className="border-l-2 border-ih-accent pl-3.5">
+                  <dt className="sr-only">{s.label}</dt>
+                  <dd className="text-[24px] font-semibold leading-none tracking-[-0.02em] tabular-nums">
+                    {s.value}
+                    {s.smallSuffix ? (
+                      <small className="ml-0.5 text-sm font-medium text-ih-muted">{s.smallSuffix}</small>
+                    ) : null}
+                  </dd>
+                  <p aria-hidden="true" className="mt-1.5 text-[12px] font-medium uppercase tracking-[0.08em] text-ih-muted">
+                    {s.label}
+                  </p>
+                </div>
+              ))}
+            </dl>
+          ) : null}
         </div>
 
-        <div className="flex flex-col gap-4">
-          <div className="grid grid-cols-3 gap-3">
-            {stats.map((s) => (
-              <div
-                key={s.label}
-                className="rounded-sm border border-ih-border bg-ih-surface px-4 pb-4 pt-3.5"
-              >
-                <div className="text-[28px] font-semibold leading-none tracking-[-0.02em]">
-                  {s.value}
-                  {s.smallSuffix ? (
-                    <small className="text-sm font-medium text-ih-muted">
-                      {s.smallSuffix}
-                    </small>
-                  ) : null}
-                </div>
-                <div className="mono mt-2 text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {primaryLabel ? (
-              <Link
-                href={primaryHref ?? '/quote'}
-                className="inline-flex items-center gap-2 rounded-sm bg-ih-navy px-5 py-3 text-sm font-medium text-white hover:bg-ih-ink"
-              >
-                {primaryLabel}
-              </Link>
-            ) : null}
-            {secondaryLabel ? (
-              <Link
-                href={secondaryHref ?? '/contact'}
-                className="inline-flex items-center gap-2 rounded-sm border border-ih-border bg-ih-surface px-5 py-3 text-sm font-medium hover:border-ih-accent"
-              >
-                {secondaryLabel}
-              </Link>
-            ) : null}
-          </div>
+        <div className="flex shrink-0 flex-wrap gap-3">
+          {primaryLabel ? (
+            <Link
+              href={primaryHref ?? '/quote'}
+              className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-md)] bg-ih-navy px-5 text-sm font-medium text-white hover:bg-ih-ink"
+            >
+              {primaryLabel}
+            </Link>
+          ) : null}
+          {secondaryLabel ? (
+            <Link
+              href={secondaryHref ?? '/contact'}
+              className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-md)] border border-ih-border bg-ih-surface px-5 text-sm font-medium hover:border-ih-accent"
+            >
+              {secondaryLabel}
+            </Link>
+          ) : null}
         </div>
       </div>
     </section>

@@ -3,7 +3,6 @@ import ServicesTopicRail from './ServicesTopicRail'
 import FeaturedCase from './FeaturedCase'
 import ServiceCaseCard from './ServiceCaseCard'
 import { filterServiceCases, sortServiceCases } from '../../lib/service-case-browse'
-import type { ServiceCaseSort } from '../../lib/service-case-params'
 import type { ServiceCaseListItem } from '../../lib/service-cases'
 
 export type ServicesCaseListProps = {
@@ -16,9 +15,9 @@ export type ServicesCaseListProps = {
 }
 
 /**
- * The chips, the sort control, the featured case and the grid.
+ * The chips, the featured case and the grid.
  *
- * Takes the active category and sort as plain props rather than reading them
+ * Takes the active category as a plain prop rather than reading them
  * anywhere, so it renders identically on the server and in the browser. That
  * is what makes /services cacheable AND keeps every case in the prerendered
  * HTML: the server renders this with the defaults, and the client re-renders
@@ -32,12 +31,11 @@ export default function ServicesCaseList({
   chipOrder,
   emptyMessage,
   category,
-  sort,
 }: ServicesCaseListProps & {
   category: ServiceCaseCategory | null
-  sort: ServiceCaseSort
 }) {
-  const visible = sortServiceCases(filterServiceCases(cases, category), sort)
+  // Newest first, always: the page has no sort control.
+  const visible = sortServiceCases(filterServiceCases(cases, category), 'recent')
 
   // Featured sits above the grid on the unfiltered view only, and is dropped
   // from the grid there so it cannot appear twice.
@@ -50,7 +48,6 @@ export default function ServicesCaseList({
         totalCount={totalCount}
         perCategory={perCategory}
         activeCategory={category}
-        activeSort={sort}
         chipOrder={chipOrder}
       />
       {showFeatured ? <FeaturedCase case={featured} /> : null}

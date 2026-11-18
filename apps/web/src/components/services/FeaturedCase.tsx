@@ -7,87 +7,102 @@ type Props = {
 }
 
 /**
- * Large "Case of the Week" feature row at the top of /services.
- * 1.5fr image + 1fr body. Renders the 3 most useful outcome pills as a
- * 3-cell metric strip (matches the mock).
+ * "Case of the week" at the top of /services, as a compact blog-style row:
+ * a 16:10 image beside the meta line, headline, one-liner and a quiet strip
+ * of the three headline outcomes. Sized so the first row of the grid shows
+ * on the same screen (owner call, 2026-11-18 — the old 1.5fr hero-sized
+ * feature pushed everything else below the fold).
  */
 export default function FeaturedCase({ case: c }: Props) {
-  // Outcome pills come from the same data the grid card uses; pick first 3
-  // to populate the 3-cell metric strip.
   const pills = (c.cardOutcomePills as Array<{ label: string; style: string }>) ?? []
-  const tagBg = c.cardTagStyle === 'oil' ? 'bg-ih-accent text-white' : 'bg-ih-navy text-white'
 
   return (
-    <section className="grid grid-cols-1 gap-8 py-12 lg:grid-cols-[1.5fr_1fr]">
-      <Link href={`/services/${c.slug}`} className="group relative block">
+    <section className="grid grid-cols-1 items-center gap-6 border-b border-ih-border py-8 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-10">
+      <Link href={`/services/${c.slug}`} className="group relative block overflow-hidden rounded-[var(--radius-lg)]">
         <PlaceholderImage
           storagePath={c.heroImage?.storagePath}
           alt={c.heroImage?.alt ?? c.title}
-          placeholderLabel={`"${c.title}\\nfeatured 1100×760"`}
-          className="aspect-[16/11] border border-ih-border"
-          sizes="(min-width: 1024px) 60vw, 100vw"
+          className="aspect-[16/10] transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+          sizes="(min-width: 768px) 40vw, 100vw"
           priority
         />
-        <span className={`absolute left-4 top-4 ${tagBg} mono px-3 py-1.5 text-[10.5px] uppercase tracking-[0.12em]`}>
+        <span className="absolute left-3 top-3 rounded-full bg-ih-navy px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-white">
           Case of the week
         </span>
       </Link>
 
-      <div className="flex flex-col gap-4 py-3">
-        <div className="mono flex flex-wrap gap-3.5 text-[11px] uppercase tracking-[0.1em] text-ih-muted">
-          <span>
-            <strong className="font-medium text-ih-ink">NO. {c.caseNumber}</strong>
-          </span>
-          <span>· {c.cardTagLabel}</span>
-          {c.caseDateLabel ? <span>· {c.caseDateLabel}</span> : null}
-        </div>
-        <h2 className="text-3xl font-semibold leading-[1.05] tracking-[-0.025em] sm:text-4xl lg:text-[42px]">
+      <div className="flex min-w-0 flex-col">
+        <p className="text-[12.5px] font-medium text-ih-muted">
+          <span className="tabular-nums text-ih-ink">No. {c.caseNumber}</span>
+          <span aria-hidden="true"> · </span>
+          {c.cardTagLabel}
+          {c.caseDateLabel ? (
+            <>
+              <span aria-hidden="true"> · </span>
+              {c.caseDateLabel}
+            </>
+          ) : null}
+        </p>
+        <h2 className="mt-2 text-balance text-[24px] font-semibold leading-[1.15] tracking-[-0.02em] sm:text-[28px]">
           <Link href={`/services/${c.slug}`} className="hover:text-ih-accent">
             {c.titleAccent ? renderTitleWithAccent(c.title, c.titleAccent) : c.title}
           </Link>
         </h2>
-        <p className="text-[16px] leading-[1.55] text-ih-ink-2">
+        <p className="mt-2.5 line-clamp-2 max-w-[640px] text-[15px] leading-[1.55] text-ih-ink-2">
           {c.cardOneLiner ?? c.deck}
         </p>
 
         {pills.length > 0 ? (
-          <div className="mt-2 grid grid-cols-3 gap-px border border-ih-border bg-ih-border">
-            {pills.slice(0, 3).map((p, i) => (
-              <div key={i} className="bg-ih-surface p-4">
-                <div className="mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
-                  {p.label.replace(/^([^:]+):.*/, '$1') /* if "key: value" pattern, show key */}
-                </div>
-                <div
-                  className={`mt-1 text-[22px] font-semibold leading-tight tracking-[-0.01em] ${
-                    p.style === 'good'
-                      ? 'text-ih-success'
-                      : p.style === 'accent'
-                        ? 'text-ih-accent'
-                        : ''
-                  }`}
-                >
-                  {p.label.includes(':') ? (p.label.split(':')[1] ?? '').trim() : p.label}
-                </div>
-              </div>
-            ))}
-          </div>
+          <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-3">
+            {pills.slice(0, 3).map((p, i) => {
+              const [key, value] = splitPill(p.label)
+              return (
+                <li key={i} className="border-l-2 border-ih-border pl-3">
+                  {key ? (
+                    <span className="block text-[11.5px] font-medium uppercase tracking-[0.06em] text-ih-muted">{key}</span>
+                  ) : null}
+                  <span className="block text-[15px] font-semibold tracking-[-0.01em] text-ih-ink">{value}</span>
+                </li>
+              )
+            })}
+          </ul>
         ) : null}
 
-        <div className="mt-2 flex items-center gap-3 border-t border-ih-border pt-3 text-sm">
-          <div className="size-9 rounded-full border border-ih-border bg-ih-surface-2" aria-hidden />
-          <div>
-            <strong className="font-medium">Indus Hydraulics</strong>
-            <small className="mono mt-0.5 block text-[11px] tracking-[0.04em] text-ih-muted">
-              {c.region ? c.region.toUpperCase() : 'JEBEL ALI · UAE'}
-            </small>
+        <div className="mt-5 flex items-center gap-3 text-sm">
+          {/* The site's own favicon, served by /tab-icon.png from the brand
+              settings, so it follows whatever mark the operator uploads. */}
+          {/* eslint-disable-next-line @next/next/no-img-element -- a route-served brand mark, not an optimisable asset */}
+          <img
+            src="/tab-icon.png"
+            alt=""
+            width={32}
+            height={32}
+            className="size-8 rounded-full border border-ih-border bg-ih-surface object-contain p-1"
+          />
+          <div className="leading-tight">
+            <span className="font-medium">Indus Hydraulics</span>
+            <span className="block text-[12px] text-ih-muted">{c.region ?? 'Jebel Ali · UAE'}</span>
           </div>
+          <Link
+            href={`/services/${c.slug}`}
+            className="ml-auto inline-flex items-center gap-1 text-[13.5px] font-medium text-ih-accent hover:underline"
+          >
+            Read the case <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
     </section>
   )
 }
 
-/** Replace one occurrence of the accent phrase inside the title with italic-orange. */
+/** "Key: value" labels → [key, value]; a plain label is the value alone. */
+function splitPill(label: string): [string | null, string] {
+  const at = label.indexOf(':')
+  if (at < 0) return [null, label]
+  return [label.slice(0, at).trim(), label.slice(at + 1).trim()]
+}
+
+/** Replace one occurrence of the accent phrase inside the title with italic accent. */
 function renderTitleWithAccent(title: string, accent: string): React.ReactNode {
   const idx = title.indexOf(accent)
   if (idx < 0) return title

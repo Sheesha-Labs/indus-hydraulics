@@ -29,5 +29,7 @@ export type ApproachStep = {
     body: string
     deliverables: string[]
     placeholderLabel: string
+    /** Picked under Pages & Blocks; null keeps the hatched placeholder. */
+    image: { url: string; alt: string | null } | null
   }
 }

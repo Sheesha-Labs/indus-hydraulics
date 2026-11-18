@@ -10,7 +10,7 @@ export const SERVICES_PAGE: MasterPageDef = {
     {
       key: 'hero',
       label: 'Hero',
-      description: 'Headline, standfirst, the three figures and the two buttons.',
+      description: 'Headline, the three figures under it and the two buttons. (The standfirst is kept but not shown.)',
       locked: true,
       fields: [
         eyebrow(),
@@ -42,7 +42,7 @@ export const SERVICES_PAGE: MasterPageDef = {
     {
       key: 'topics',
       label: 'Topic filter',
-      description: 'The chip rail and the sort control.',
+      description: 'The one-line chip rail of service categories.',
       dataNote:
         'The chips are the service-case categories, with live counts. Nothing here is free text.',
       fields: [],
@@ -73,6 +73,12 @@ export const SERVICES_PAGE: MasterPageDef = {
             { key: 'enabled', label: 'Show this step', kind: 'toggle' },
             { key: 'name', label: 'Title', kind: 'text', max: 80 },
             { key: 'desc', label: 'One-line summary', kind: 'text', max: 160 },
+            {
+              key: 'panel_image',
+              label: 'Panel image',
+              kind: 'image',
+              help: '16:9, shown above the panel copy. Blank keeps the hatched placeholder.',
+            },
             { key: 'panel_tag', label: 'Panel eyebrow', kind: 'text', max: 80, optional: true },
             { key: 'panel_title', label: 'Panel heading', kind: 'textarea', max: 300, optional: true },
             { key: 'panel_body', label: 'Panel body', kind: 'textarea', max: 900, optional: true },

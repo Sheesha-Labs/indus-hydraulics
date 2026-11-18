@@ -1,14 +1,11 @@
 import Link from 'next/link'
 import type { ServiceCaseCategory } from '@indus/db'
 import { SERVICE_CASE_CATEGORY_LABELS } from '@indus/domain'
-import ServicesSortDropdown from './ServicesSortDropdown'
-import type { ServiceCaseSort } from '../../lib/service-case-params'
 
 type Props = {
   totalCount: number
   perCategory: Record<string, number>
   activeCategory: ServiceCaseCategory | null
-  activeSort: ServiceCaseSort
   /**
    * Subset of category enum values to surface as chips. Order is honoured.
    * Categories with 0 published cases are still shown (with count 0) so the
@@ -17,34 +14,38 @@ type Props = {
   chipOrder: ServiceCaseCategory[]
 }
 
+/**
+ * The category chips, on ONE line. Where they outrun the width they scroll
+ * sideways under an edge fade rather than wrapping to a second row. There is
+ * no sort control: the cases read newest first and that is the only order the
+ * page offers (owner call, 2026-11-18).
+ */
 export default function ServicesTopicRail({
   totalCount,
   perCategory,
   activeCategory,
-  activeSort,
   chipOrder,
 }: Props) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-6 border-b border-ih-border py-4">
-      <div className="flex flex-wrap gap-2">
-        <Chip
-          href={paramsHref({})}
-          active={activeCategory === null}
-          label="All services"
-          count={totalCount}
-        />
+    <nav aria-label="Service categories" className="border-b border-ih-border py-3.5">
+      <ul className="-mx-1 flex flex-nowrap gap-1.5 overflow-x-auto px-1 py-0.5 [mask-image:linear-gradient(90deg,#000_0,#000_calc(100%-48px),transparent_100%)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <li className="shrink-0">
+          <Chip href="/services" active={activeCategory === null} label="All services" count={totalCount} />
+        </li>
         {chipOrder.map((cat) => (
-          <Chip
-            key={cat}
-            href={paramsHref({ category: cat })}
-            active={activeCategory === cat}
-            label={SERVICE_CASE_CATEGORY_LABELS[cat] ?? cat}
-            count={perCategory[cat] ?? 0}
-          />
+          <li key={cat} className="shrink-0">
+            <Chip
+              href={`/services?category=${cat}`}
+              active={activeCategory === cat}
+              label={SERVICE_CASE_CATEGORY_LABELS[cat] ?? cat}
+              count={perCategory[cat] ?? 0}
+            />
+          </li>
         ))}
-      </div>
-      <ServicesSortDropdown activeSort={activeSort} activeCategory={activeCategory} />
-    </div>
+        {/* Room under the fade, so the last chip can scroll fully clear of it. */}
+        <li aria-hidden="true" className="w-10 shrink-0" />
+      </ul>
+    </nav>
   )
 }
 
@@ -60,23 +61,16 @@ function Chip({
   count: number
 }) {
   const cls = active
-    ? 'border-ih-ink bg-ih-navy text-white'
-    : 'border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent'
+    ? 'border-ih-navy bg-ih-navy text-white'
+    : 'border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-border-strong'
   return (
     <Link
       href={href}
-      className={`inline-flex items-center gap-1.5 rounded-[40px] border px-3.5 py-2 text-[13px] font-medium ${cls}`}
+      aria-current={active ? 'page' : undefined}
+      className={`inline-flex h-10 items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 text-[13px] font-medium ${cls}`}
     >
       {label}
-      <span className="mono text-[10.5px] opacity-60">{count}</span>
+      <span className="text-[11.5px] tabular-nums opacity-60">{count}</span>
     </Link>
   )
-}
-
-function paramsHref(args: { category?: ServiceCaseCategory; sort?: ServiceCaseSort }): string {
-  const sp = new URLSearchParams()
-  if (args.category) sp.set('category', args.category)
-  if (args.sort && args.sort !== 'recent') sp.set('sort', args.sort)
-  const qs = sp.toString()
-  return qs ? `/services?${qs}` : '/services'
 }
