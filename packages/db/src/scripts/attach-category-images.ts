@@ -62,6 +62,9 @@ const IMAGES: readonly { slug: string; alt: string }[] = [
   { slug: 'marine-equipment-uae', alt: 'Marine hardware: stockless and fluke anchors, stud-link and studless chain, a Kenter shackle, a bow shackle and a swivel' },
   { slug: 'gearboxes-winches', alt: 'Hydraulic winches, a slewing drive with pinion, planetary gearboxes, a wheel drive hub and a hydraulic motor' },
   { slug: 'industrial-process-valves', alt: 'Process valves: flanged gate, trunnion ball, globe, actuated ball, butterfly, safety relief and swing check valves' },
+  // 2026-11-18: Seamless Finned Tubes (root 26, added 2026-11-15). Same
+  // settings as the 2026-11-08 round; resized to 1536×1024 JPEG q82, 340 KB.
+  { slug: 'seamless-finned-tubes-uae', alt: 'Heat-exchanger tubes: seamless steel boiler tubes, aluminium and serrated fin tubes, a U-bend and copper-alloy tubes' },
 ] as const
 
 /** Loads the Supabase storage credentials, which only live in the web app's env file. */
