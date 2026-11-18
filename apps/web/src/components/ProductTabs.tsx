@@ -6,6 +6,7 @@ import {
   competitorBrandSlug,
   documentKindBadge,
   documentKindLabel,
+  parseFaqAnswer,
   replacementUrlPath,
   type ProductAvailability,
   type VariantLike,
@@ -396,7 +397,19 @@ export default function ProductTabs({
                     <span className="font-mono text-[14px] text-ih-muted transition-transform shrink-0">▾</span>
                   </summary>
                   <div className="px-5 pb-5 pt-1 text-[14px] text-ih-ink-2 leading-[1.6] whitespace-pre-wrap border-t border-ih-border">
-                    {f.answer}
+                    {parseFaqAnswer(f.answer).map((seg, i) =>
+                      seg.kind === 'link' ? (
+                        <Link
+                          key={i}
+                          href={seg.href}
+                          className="text-ih-accent underline underline-offset-2 hover:text-ih-accent-hover"
+                        >
+                          {seg.text}
+                        </Link>
+                      ) : (
+                        seg.text
+                      ),
+                    )}
                   </div>
                 </details>
               ))}

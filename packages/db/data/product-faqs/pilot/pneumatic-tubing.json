@@ -1,0 +1,1876 @@
+{
+  "family": "pneumatic-tubing",
+  "hold": "Size-table data on SMC/Parker/ATP rows is wrong (impossible pressures, swapped roll lengths, wrong IDs). Fix the variants first, then rewrite the pressure/size answers that currently warn about our own table, then lift the hold.",
+  "extraFacts": [
+    {
+      "fact": "SMC T (metric) and TIA (inch) nylon tubing: material Nylon 12; operating temperature -40 to +100°C, water 0 to +70°C (no freezing); fluid air/water. Sizes OD x ID (mm): T0425 4 x 2.5, T0403 4 x 3, T0604 6 x 4, T0645 6 x 4.5, T0806 8 x 6, T1075 10 x 7.5, T1209 12 x 9, T1613 16 x 13; TIA01 3.18 x 2.18 (1/8\"), TIA05 4.76 x 3.48 (3/16\"), TIA07 6.35 x 4.57 (1/4\"), TIA11 9.53 x 6.99 (3/8\"), TIA13 12.7 x 9.56 (1/2\"). Max operating pressure at 20°C: T0425 3.3 MPa, T0604 3.0 MPa, T0403/T0645/T0806/T1075/T1209 2.0 MPa, T1613 1.6 MPa, TIA sizes 2.3 MPa; at 100°C these fall to 1.2, 1.1, 0.75, 0.6 and 0.85 MPa. Applicable fittings: One-touch, insert, self-align and miniature fittings; mount an inner sleeve with metal One-touch fittings at 60°C or more. Length symbol 20 = 20 m roll, 100 = 100 m roll (black and white only). Colour symbols B black, W white, R red, BU blue, Y yellow, G green. SMC marks the series RoHS. Use the lower maximum operating pressure of tube or fitting; surge pressure must stay below the maximum operating pressure.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Nylon Tubing Series T/TIA (ca01.smcworld.com/catalog/BEST-5-6-en/pdf/6-p0410-0454tube_en.pdf)"
+    },
+    {
+      "fact": "SMC TS (metric) and TISA (inch) soft nylon tubing: material Nylon 12, pliable soft nylon; operating temperature -40 to +100°C, water 0 to +50°C (no freezing); fluid air/water (current material; compatible fluid is printed on the tube). Sizes OD x ID (mm): TS0425 4 x 2.5, TS0604 6 x 4, TS0806 8 x 6, TS1075 10 x 7.5, TS1209 12 x 9, TS1612 16 x 12; TISA01 3.18 x 2.18, TISA05 4.76 x 3.48, TISA07 6.35 x 4.57, TISA11 9.53 x 6.99, TISA13 12.7 x 9.56. Made to order: suffix -X3 for longer reels (100, 150, 200, 500 m), suffix -X4 for inch-size colour/length options. Fittings: One-touch, insert, self-align and miniature. Marked RoHS.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Soft Nylon Tubing Series TS/TISA"
+    },
+    {
+      "fact": "SMC TU (metric) and TIUB (inch) polyurethane tubing: max operating pressure 0.8 MPa at 20°C (refer to burst-pressure curve at other temperatures); operating temperature -20 to +60°C, water 0 to 40°C (no freezing); fluid air/water. Sizes OD x ID (mm): TU0212 2 x 1.2, TU0425 4 x 2.5, TU0604 6 x 4, TU0805 8 x 5, TU1065 10 x 6.5, TU1208 12 x 8, TU1610 16 x 10; TIUB01 3.18 x 2, TIUB05 4.76 x 3.18, TIUB07 6.35 x 4.23, TIUB11 9.53 x 6.35, TIUB13 12.7 x 8.46. Standard colours B black, W white, R red, BU blue, Y yellow, G green, C clear, YR orange; extended colours BU1 solid blue, BU2 clear blue, BU3 medium blue, BR1 brown, G1 solid green, G2 clear green, G3 neon green, G4 dark green, GR1 gray, GR2 light gray, P1 neon pink, PU1 solid purple, PU2 clear purple, R1 solid red, R2 clear red, S1 silver, Y1 solid yellow, Y2 clear yellow, Y3 neon yellow, YR1 clear orange, YR2 neon orange (21 additional colours). Fittings: One-touch, insert, self-align, miniature. Marked RoHS.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Polyurethane Tubing Series TU/TIUB"
+    },
+    {
+      "fact": "SMC TUH hard polyurethane tubing: standard type TUH0428 4 x 2.8, TUH0644 6 x 4.4, TUH0858 8 x 5.8, TUH1073 10 x 7.3, TUH1288 12 x 8.8 mm, max operating pressure 0.8 MPa at 20°C, One-touch fittings; high-pressure type TUH0425 4 x 2.5, TUH0604 6 x 4, TUH0805 8 x 5, TUH1065 10 x 6.5, TUH1208 12 x 8 mm, max operating pressure 1.0 MPa at 20°C, One-touch, insert, self-align and miniature fittings. Fluid: air only - ester polyurethane is used, so water cannot be used because of hydrolysis. Operating temperature -20 to 60°C. Colours B black, W white, BU blue, N translucent; length 20 = 20 m roll, 100 = 100 m roll.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Hard Polyurethane Tubing Series TUH"
+    },
+    {
+      "fact": "SMC TUZ wear-resistant tubing: special polyurethane; max operating pressure 0.8 MPa at 20°C and 0.4 MPa at 60°C; operating temperature -20 to +60°C (water 0 to 40°C, no freezing); fluid air/water; abrasion approx. 1/3 of SMC TU polyurethane tube (maximum abrasion 0.16 mm vs 0.46 mm after 10 million cycles, SMC test conditions). Sizes OD x ID (mm): TUZ0212 2 x 1.2, TUZ3220 3.2 x 2, TUZ0425 4 x 2.5, TUZ0604 6 x 4, TUZ0805 8 x 5, TUZ1065 10 x 6.5, TUZ1208 12 x 8, TUZ1610 16 x 10. Colours B, W, R, BU, Y, G (translucent due to material). Length 20 = 20 m roll, 100 = 100 m roll. Fittings: One-touch KQ2 series, insert KF series, stainless steel 316 insert KFG2 series, miniature M/MS series. For moving parts, provide extra tube length; check the bending radius recommended by the flexible protection tube maker.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Wear Resistant Tubing Series TUZ"
+    },
+    {
+      "fact": "SMC TCU polyurethane coil tubing: fluid air; max operating pressure 0.8 MPa at 20°C; operating temperature -20 to +60°C; polyurethane. Part number TCU0604B-1-N-X6 = size (0425 4 x 2.5, 0604 6 x 4, 0805 8 x 5, 1065 10 x 6.5, 1208 12 x 8 mm), colour, number of cores (1, 2 or 3), N = number of coil windings, -X6 = made-to-order coil turns/colour. Do not cut the coil and insert it into a fitting - it may leak or the tube may come out after installation. Fittings: One-touch, insert, self-align, miniature.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Polyurethane Coil Tubing Series TCU"
+    },
+    {
+      "fact": "SMC flame-resistant tubing (flame resistance equivalent to UL-94 Standard V-0), for air and water piping where sparks from spot welders or arc welding may be a problem: TRS FR soft nylon - flame resistant nylon, 1.2 MPa at 20°C, -20 to +60°C (water 0 to 60°C), sizes TRS0603 6 x 3, TRS0805 8 x 5, TRS1065 10 x 6.5, TRS1208 12 x 8 mm. TRB FR double layer - inner tube Nylon 12, outer layer PVC, 1.0 MPa at 20°C, -20 to +60°C (water 0 to 60°C), sizes TRB0604, TRB0806, TRB1075, TRB1209; inner tube always black. TRBU FR double layer polyurethane - inner polyurethane, outer polyolefin, 0.8 MPa at 20°C, -20 to +60°C (water 0 to 40°C), sizes TRBU0604, TRBU0805, TRBU1065, TRBU1208. TRTU FR three-layer polyurethane - inner polyurethane, middle aluminium laminated film, outer flame resistant polyolefin, 0.8 MPa at 20°C, 0.65 MPa at 40°C, 0.5 MPa at 60°C, spatter resistance twice that of TRBU, sizes 6 x 4, 8 x 5, 10 x 6.5, 12 x 8 mm. Recommended fittings: FR One-touch fittings series KR-W2 (TRTU also metal One-touch KQB2). On double-layer tube the insertion length is printed on the outer layer: cut to the mark, then strip the outer layer only before inserting into a One-touch fitting. Length 20 = 20 m roll, 100 = 100 m reel.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Series TRS, TRB, TRBU, TRTU"
+    },
+    {
+      "fact": "SMC fluoropolymer tubing variations: TL (metric)/TIL (inch) high purity fluoropolymer tubing in Super PFA - highly smooth internal surface and small elution of fluorine ions, heat and chemical resistance equivalent to PFA, max 260°C, OD 4 to 19 mm and 1/8\" to 1\", fluids air, water, inert gas, chemicals, deionized water; TL sizes TL0403 4 x 3, TL0604 6 x 4, TL0806 8 x 6, TL1008 10 x 8, TL1210 12 x 10, TL1916 19 x 16 mm. TLM/TILM fluoropolymer tubing in PFA. TH (metric)/TIH (inch) FEP tubing, max 200°C, OD 4 to 12 mm and 1/8\" to 3/4\", colours translucent, red, blue, black. TD/TID soft fluoropolymer tubing in modified PTFE, max 260°C, flexibility improved by approx. 20% compared with TL/TIL, OD 4 to 12 mm and 1/8\" to 1/2\". TQ 2-layer soft fluoropolymer tubing carries fluids such as solvents in a soft, abrasion-resistant tube. Applicable fittings: One-touch KQ2/KQG2, insert KF/KFG2, miniature M/MS, fluoropolymer fittings LQ1/LQ2/LQ3. TL/TIL roll lengths offered: 10 m, 20 m, 50 m, 100 m, 50 Ft (16 m), 100 Ft (33 m). TIL inch sizes include TILB01 1/8\" (3.18 mm OD) and TIL05 3/16\" (4.75 mm OD).",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Fluoropolymer Tubing Variations, Series TL/TIL/TLM/TILM/TH/TIH/TD/TID and TQ"
+    },
+    {
+      "fact": "SMC clean series tubing: TPH polyolefin tubing, sizes TPH0425 4 x 2.5, TPH0604 6 x 4, TPH0806 8 x 6, TPH1075 10 x 7.5, TPH1209 12 x 9 mm, max operating pressure 1.0 MPa (TPH0425, TPH0604) and 0.7 MPa (TPH0806, TPH1075, TPH1209) at 20°C. TPS soft polyolefin tubing, sizes TPS0425 4 x 2.5, TPS0604 6 x 4, TPS0805 8 x 5, TPS1065 10 x 6.5, TPS1208 12 x 8 mm, 0.7 MPa at 20°C. Both: fluid air, nitrogen gas, water (pure water); operating temperature -20 to 80°C, water 5 to 80°C; polyolefin resin; fittings clean One-touch, metal One-touch KQB2, stainless steel 316 One-touch KQG2, insert fittings. Polyolefin resin is not resistant to mineral oil, so it is not suitable for regular pneumatic equipment piping. Length 20 = 20 m roll, 100 = 100 m reel.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Clean Series Tubing Series TPH and TPS"
+    },
+    {
+      "fact": "SMC antistatic tubing: TAS antistatic soft nylon - conductive nylon plus flame resistant nylon, 1.2 MPa at 20°C, 0 to 40°C, surface resistance 10^4 to 10^7 ohm; TAU antistatic polyurethane - conductive polyurethane, 0.9 MPa at 20°C, 0 to 40°C. Fluid air; recommended antistatic One-touch fittings series KA.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing section, Antistatic Tubing Series TAS/TAU"
+    },
+    {
+      "fact": "SMC tubing maintenance: inspect periodically for cracks, gouges, wear, corrosion, air leakage, twists or crushing, and hardening, deterioration or softening, and replace the tube if necessary; do not repair or patch replaced tube or fittings for reuse. Abnormal temperature rise from adiabatic compression can burst a tube.",
+      "source": "SMC Best Pneumatics catalogue, Fittings & Tubing Precautions"
+    },
+    {
+      "fact": "HS subheading 3917.32 covers other tubes, pipes and hoses of plastics, not reinforced or otherwise combined with other materials, without fittings.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 39.17"
+    }
+  ],
+  "products": [
+    {
+      "slug": "smc-tiu-series-polyurethane-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TIU series polyurethane tubing used for?",
+          "a": "SMC TIU tubing (part numbers starting TIUB) is flexible inch-size polyurethane tube for general compressed-air and water lines on valves, cylinders and machines. The maker lists it as kink, cut, tear and abrasion resistant at Shore A 95, and this listing carries 256 part numbers from 1/8\" to 1/2\" OD in standard and extended colours."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TIUB part number such as TIUB07BU-20?",
+          "a": "TIUB07BU-20 reads as series TIUB (inch polyurethane), size 07 (1/4\" OD), colour BU (blue) and length code 20, which SMC defines as a 20 m roll. Size codes are 01 (1/8\"), 05 (3/16\"), 07 (1/4\"), 11 (3/8\") and 13 (1/2\"). Anything after the length code, such as -X108, marks a special version, so always quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "What OD and ID sizes does SMC TIU polyurethane tubing come in?",
+          "a": "SMC makes TIUB tube in five inch sizes, OD x ID: 1/8\" (3.18 x 2 mm), 3/16\" (4.76 x 3.18 mm), 1/4\" (6.35 x 4.23 mm), 3/8\" (9.53 x 6.35 mm) and 1/2\" (12.7 x 8.46 mm). Pick the OD to suit the push-in fitting and the ID for flow. Metric TU equivalents are on the [SMC Tubings listing](/p/smc-tubings)."
+        },
+        {
+          "slot": "D",
+          "q": "What do the SMC TIUB colour codes BU2, G3 and YR1 mean?",
+          "a": "The letters give the colour and the digit the shade, so BU2 is clear blue, G3 neon green and YR1 clear orange. SMC adds 21 extended colours to the standard B, W, R, BU, Y, G, C (clear) and YR (orange), including BR1 brown, GR1 gray, P1 neon pink, PU1 solid purple and S1 silver, which helps colour-code separate circuits."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of SMC TIU polyurethane tubing?",
+          "a": "SMC rates TIU/TU polyurethane tubing at 0.8 MPa (8 bar) maximum operating pressure at 20°C, and the rows on our size table that carry a figure show 8 bar (one 1/8\" row shows 6 bar). Pressure falls as temperature rises toward the 60°C limit, so check the maker's curve at your temperature and use the lower rating of tube or fitting."
+        },
+        {
+          "slot": "F",
+          "q": "Can SMC TIU polyurethane tubing carry water as well as compressed air?",
+          "a": "Yes. SMC lists TIU tubing for air from -20 to +60°C and for general industrial water from 0 to 40°C without freezing. For any other fluid SMC asks to be consulted first; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares polyurethane with nylon and fluoropolymer for wetter, hotter or chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TIU polyurethane tubing RoHS compliant?",
+          "a": "SMC marks the TU/TIUB polyurethane series RoHS in its tubing catalogue. This listing holds no other compliance documents, so if your project needs a certificate of conformity or a material declaration, say so in the enquiry and we request it from the maker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which push-in fittings fit SMC TIU 1/4\" and 3/8\" polyurethane tubing?",
+          "a": "SMC TIU tubing fits inch-size One-touch push-in, insert, self-align and miniature fittings of the same nominal OD, so 1/4\" tube needs a 1/4\" fitting, not a 6 mm one. Inch push-in connectors, unions and silencers are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC TIU polyurethane tubing be cut and inspected?",
+          "a": "Cut TIU tube square with a tube cutter, push it fully home into the fitting and keep bends above the maker's minimum bending radius. SMC advises periodic checks for cracks, gouges, wear, leaks, twisting, crushing and hardening, and replacing damaged tube rather than repairing or patching it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC TIU and SMC TUZ polyurethane tubing?",
+          "a": "TIU is SMC's standard flexible polyurethane tube in inch sizes, while [SMC TUZ](/p/smc-tuz-series-wear-resistant-tubing) is a metric special-polyurethane tube that SMC tests at about one third of the abrasion of its standard TU tube. Both carry 0.8 MPa at 20°C; choose TUZ where tube rubs in cable carriers or moving machinery."
+        },
+        {
+          "slot": "L",
+          "q": "Where is SMC TIU tubing shipped from and which HS code applies?",
+          "a": "We ship SMC TIU tubing from our Dubai warehouse to buyers in the GCC, Africa, Asia and beyond. Plastic tube without fittings normally falls under HS subheading 3917.32; the country of origin depends on the SMC plant that made the roll and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC TIU polyurethane tubing in stock in Dubai?",
+          "a": "Yes. We keep SMC TIU series polyurethane tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the TIUB part numbers, colours and roll quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tubings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC Tubings listing cover?",
+          "a": "SMC Tubings is a short list of 10 popular SMC polyurethane air and water rolls: inch TIUB tube in 1/4\", 3/8\" and 1/2\" OD and metric TU tube in 6, 8 and 10 mm OD. The maker lists it as kink, cut, tear, chemical and abrasion resistant for general-purpose air/water; the full inch range is on [SMC TIU series](/p/smc-tiu-series-polyurethane-tubing)."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read SMC TU part numbers such as TU0604BU-20 and TU1065C-100?",
+          "a": "TU0604BU-20 is SMC TU polyurethane tube, 6 mm OD x 4 mm ID, blue, on a 20 m roll, and TU1065C-100 is 10 mm OD x 6.5 mm ID, clear, on a 100 m roll. The first two digits give the OD and the next two the ID in mm (65 means 6.5), followed by the colour code and the roll length."
+        },
+        {
+          "slot": "D",
+          "q": "Which metric sizes of SMC TU tubing are on the SMC Tubings listing?",
+          "a": "This listing carries TU0604 (6 x 4 mm), TU0805 (8 x 5 mm) and TU1065 (10 x 6.5 mm) in blue, black or clear on 20 m and 100 m rolls. SMC also makes TU0425 (4 x 2.5 mm) and TU1208 (12 x 8 mm) in the same series; ask for them if your fittings need those sizes."
+        },
+        {
+          "slot": "D",
+          "q": "Which inch sizes of SMC TIUB tubing are on the SMC Tubings listing?",
+          "a": "The listing has TIUB07 (1/4\" OD, 0.17\" ID), TIUB11 (3/8\" OD, 1/4\" ID) and TIUB13 (1/2\" OD, 0.33\" ID) in black, blue or clear on -33 and -153 roll codes. Use inch tube with inch fittings: 1/4\" tube is not a substitute for 6 mm tube in a metric push-in fitting."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are SMC TU and TIUB polyurethane tubes rated for?",
+          "a": "SMC rates TU and TIUB polyurethane tubing at 0.8 MPa (8 bar) maximum operating pressure at 20°C; our size table for these 10 rolls carries no separate figure. The rating falls as temperature rises toward 60°C, so check the maker's burst-pressure curve and use the lower rating of tube or fitting."
+        },
+        {
+          "slot": "F",
+          "q": "Is SMC TU polyurethane tubing suitable for water lines?",
+          "a": "Yes, for general industrial water from 0 to 40°C without freezing; with air SMC allows -20 to +60°C. SMC asks to be consulted for other fluids, and our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) explains when nylon or fluoropolymer suits a line better than polyurethane."
+        },
+        {
+          "slot": "G",
+          "q": "Do SMC TU and TIUB polyurethane tubes meet RoHS?",
+          "a": "Yes, SMC marks the TU/TIUB polyurethane series RoHS in its catalogue. We hold no further compliance papers on this listing; name any certificate of conformity or declaration you need when you order and we request it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings suit SMC TU 6 mm, 8 mm and 10 mm polyurethane tubing?",
+          "a": "Use metric One-touch push-in, insert, self-align or miniature fittings matched to the tube OD: 6 mm for TU0604, 8 mm for TU0805 and 10 mm for TU1065. Push-in connectors, unions and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit SMC polyurethane tubing into a push-in fitting without leaks?",
+          "a": "Cut the TU or TIUB tube square, check the end is round and free of burrs, push it past the release collet until it bottoms, then pull back to confirm it is held. SMC warns that surge pressure above the maximum operating pressure can damage fittings and tube, so size the line for peak, not average, pressure."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between clear and coloured SMC TU tubing?",
+          "a": "Clear (C) SMC TU and TIUB tube lets you see water or dirt moving in the line, while blue (BU) and black (B) are used to colour-code supply, exhaust or separate circuits. The polyurethane and SMC's 0.8 MPa rating at 20°C are the same across the listed colours."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC TU and TIUB tubes shipped from, and under which HS code?",
+          "a": "We dispatch SMC TU and TIUB rolls from Dubai, UAE to the GCC, Africa, Asia and further afield. Plastic tube without fittings normally falls under HS subheading 3917.32, and the country of origin of each roll is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy SMC TU and TIUB polyurethane tubing ex-stock in Dubai?",
+          "a": "Yes. We hold these SMC TU and TIUB polyurethane rolls in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send part numbers and roll quantities through [our contact page](/contact) for a price."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tuz-series-wear-resistant-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TUZ series wear-resistant tubing?",
+          "a": "SMC TUZ is a metric special-polyurethane tube built for lines that rub, flex or run in cable carriers, with abrasion SMC measures at about one third of its standard TU tube. It carries air or water, and this listing holds 23 part numbers in 4, 6, 8, 10 and 12 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TUZ part number such as TUZ0604BU-20?",
+          "a": "TUZ0604BU-20 is TUZ wear-resistant tube, 6 mm OD x 4 mm ID, blue (BU), on a 20 m roll. The four digits give OD then ID in mm, the letters the colour (B, W, R, BU, Y, G) and the last number the roll length: 20 for a 20 m roll, 100 for a 100 m roll."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TUZ wear-resistant tubing come in?",
+          "a": "SMC lists TUZ in OD x ID 2 x 1.2, 3.2 x 2, 4 x 2.5, 6 x 4, 8 x 5, 10 x 6.5, 12 x 8 and 16 x 10 mm. This listing stocks TUZ0425, TUZ0604, TUZ0805, TUZ1065 and TUZ1208, the 4 to 12 mm sizes, in six colours."
+        },
+        {
+          "slot": "D",
+          "q": "How much more abrasion resistant is SMC TUZ than standard polyurethane tubing?",
+          "a": "In SMC's own test, TUZ lost a maximum of 0.16 mm against 0.46 mm for its TU polyurethane tube after 10 million cycles, roughly one third of the wear. That figure comes from SMC's specific test conditions, so treat it as a comparison rather than a service-life guarantee."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SMC TUZ tubing at 20°C and 60°C?",
+          "a": "SMC rates TUZ at 0.8 MPa (8 bar) maximum operating pressure at 20°C, falling to 0.4 MPa at 60°C, its upper temperature limit. Our size table carries some rows at 200 or 1000 bar; those are data errors, not ratings, so work to the maker's 0.8 MPa figure."
+        },
+        {
+          "slot": "F",
+          "q": "Can SMC TUZ tubing be used with water?",
+          "a": "Yes. SMC lists TUZ for air from -20 to +60°C and for general industrial water from 0 to 40°C, with no freezing. For other fluids, consult the maker; the material is a special polyurethane, so the chemical limits of polyurethane still apply."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TUZ tubing RoHS compliant?",
+          "a": "SMC marks the TUZ series RoHS in its catalogue. We hold no other compliance documents on this listing; if you need a declaration of conformity or material statement with the delivery, state it with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings does SMC recommend for TUZ wear-resistant tubing?",
+          "a": "SMC lists KQ2 One-touch fittings, KF insert fittings, KFG2 stainless steel 316 insert fittings and M/MS miniature hose-nipple fittings for TUZ. Matching metric push-in connectors are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC TUZ tubing be routed in a cable carrier?",
+          "a": "Allow extra tube length on moving parts, and follow the bending radius the cable-carrier or protection-tube maker recommends rather than the static minimum. Inspect TUZ periodically for cuts, wear, crushing or hardening and replace any damaged length; SMC does not allow patched tube to be reused."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose SMC TUZ instead of SMC TUH polyurethane tubing?",
+          "a": "Choose TUZ when the tube moves or rubs and may carry water; choose [SMC TUH hard polyurethane](/p/smc-tuh-series-polyurethane-tubing) for static air-only lines where a stiffer tube and up to 1.0 MPa matter. TUH is ester polyurethane, which SMC does not allow with water."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you ship SMC TUZ wear-resistant tubing from, and what HS code does it carry?",
+          "a": "We ship SMC TUZ from our Dubai, UAE warehouse worldwide. Plastic tube without fittings is normally classed under HS subheading 3917.32; the origin of each roll is printed on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is SMC TUZ wear-resistant tubing available from stock in Dubai?",
+          "a": "Yes. We keep SMC TUZ wear-resistant tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, colours and roll lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tuh-series-polyurethane-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TUH series hard polyurethane tubing?",
+          "a": "SMC TUH is a stiffer hard-polyurethane air tube made in two types: a standard type rated 0.8 MPa and a high-pressure type rated 1.0 MPa at 20°C. It is for compressed air only, and this listing holds 26 part numbers from 4 to 12 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you tell SMC TUH standard and high-pressure types apart by part number?",
+          "a": "The size code shows the type: TUH0428, TUH0644, TUH0858, TUH1073 and TUH1288 are the thinner-wall standard type, while TUH0425, TUH0604, TUH0805, TUH1065 and TUH1208 are the thicker-wall high-pressure type. For example, TUH0644 is 6 x 4.4 mm and TUH0604 is 6 x 4 mm."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TUH hard polyurethane tubing come in?",
+          "a": "Standard type OD x ID: 4 x 2.8, 6 x 4.4, 8 x 5.8, 10 x 7.3 and 12 x 8.8 mm. High-pressure type: 4 x 2.5, 6 x 4, 8 x 5, 10 x 6.5 and 12 x 8 mm. Colours are black (B), white (W), blue (BU) and translucent (N), on 20 m (-20) or 100 m (-100) rolls."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of SMC TUH tubing?",
+          "a": "SMC rates the TUH standard type at 0.8 MPa and the high-pressure type at 1.0 MPa maximum operating pressure at 20°C, with lower limits at higher temperature per its burst-pressure curve. Rows on our size table showing 200 or 1000 bar are data errors; work to the maker's figures."
+        },
+        {
+          "slot": "F",
+          "q": "Can SMC TUH polyurethane tubing be used for water?",
+          "a": "No. SMC states TUH is ester polyurethane, so water cannot be used because it causes hydrolysis; TUH is for air only, from -20 to 60°C. For air-and-water lines use [SMC TUZ](/p/smc-tuz-series-wear-resistant-tubing) or standard TU polyurethane instead."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TUH tubing RoHS compliant?",
+          "a": "SMC marks the TUH series RoHS in its catalogue. If your QA process needs a written declaration or certificate of conformity for the TUH rolls, ask with your enquiry and we will obtain it from the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with SMC TUH hard polyurethane tubing?",
+          "a": "SMC lists One-touch fittings for the TUH standard type, and One-touch, insert, self-align and miniature fittings for the high-pressure type. Match the fitting to the tube OD in mm; metric push-in fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I check when installing SMC TUH tubing?",
+          "a": "Keep TUH bends above the minimum bending radius, cut square, and use a fitting whose pressure rating is at least that of the tube, since SMC says to work to the lower of the two. Avoid sudden adiabatic compression heating and inspect for cracking or hardening, replacing tube rather than patching it."
+        },
+        {
+          "slot": "J",
+          "q": "Where is SMC TUH hard polyurethane tubing typically used?",
+          "a": "SMC TUH suits static compressed-air piping on machines and panels where a stiffer tube holds its route and the high-pressure type gives 1.0 MPa at 20°C. It is not for water, and moving or rubbing lines are better served by a wear-resistant tube."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC TUH and SMC TIU polyurethane tubing?",
+          "a": "TUH is a metric hard polyurethane for air only, rated up to 1.0 MPa, while [SMC TIU](/p/smc-tiu-series-polyurethane-tubing) is a softer inch-size polyurethane rated 0.8 MPa that also takes water. Pick TUH for stiffer, higher-pressure air runs and TIU or TU where flexibility and water service matter."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export SMC TUH tubing from Dubai, and what is its HS classification?",
+          "a": "Yes, we export SMC TUH from Dubai, UAE to buyers worldwide. Plastic tubing without fittings normally falls under HS subheading 3917.32, and the country of origin is declared on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC TUH hard polyurethane tubing in Dubai?",
+          "a": "Yes. We keep SMC TUH series tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the TUH part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tcu-series-coil-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TCU series coil tubing?",
+          "a": "SMC TCU is self-retracting polyurethane coil tubing for compressed air to moving tools, heads and pick-and-place units, giving a compact run that extends and recoils. SMC rates it 0.8 MPa at 20°C for air, and this listing has 21 part numbers from 4 to 12 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TCU coil tube part number such as TCU0604B-1-23-X6?",
+          "a": "TCU0604B-1-23-X6 is TCU coil tube 6 x 4 mm, black (B), 1 core, with 23 coil windings, and -X6 marks the made-to-order coil-turn option. The core count can be 1, 2 or 3 tubes in parallel, so TCU0604B-3-16-X6 is a three-core 6 mm coil with 16 windings."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and core counts does SMC TCU coil tubing come in?",
+          "a": "SMC makes TCU in 4 x 2.5, 6 x 4, 8 x 5, 10 x 6.5 and 12 x 8 mm, with 1, 2 or 3 cores depending on size. This listing holds 4, 6, 8, 10 and 12 mm coils, including 6 mm black, blue and white and 8 mm black, blue, green and red."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the number of coil windings for SMC TCU tubing?",
+          "a": "More windings give a longer maximum stretched length, so pick N from the reach the tool needs, adding margin so the coil is never pulled straight. SMC publishes the maximum operating length per winding count for each size; send us the required stretch and size and we will confirm the TCU code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of SMC TCU coil tubing?",
+          "a": "SMC rates TCU coil tubing at 0.8 MPa (8 bar) maximum operating pressure at 20°C for air, from -20 to +60°C. Pressure capacity drops as temperature rises, and our size table does not list a figure for these coils, so use SMC's rating with the lower rating of tube or fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids can SMC TCU coil tubing carry?",
+          "a": "SMC lists TCU for compressed air and asks to be consulted for any other fluid. For water lines choose a straight polyurethane tube rated for water instead; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares the options."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings connect SMC TCU coil tubing?",
+          "a": "TCU coils accept SMC One-touch push-in, insert, self-align and miniature fittings in the same metric OD, fitted on the straight tails at each end. Matching connectors are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "Can SMC TCU coil tubing be cut to length?",
+          "a": "No. SMC warns not to cut the coil and push it into a fitting, because the coiled section may leak or pull out after installation. Order the winding count you need and connect only through the straight tails."
+        },
+        {
+          "slot": "J",
+          "q": "Where is SMC TCU polyurethane coil tubing used?",
+          "a": "TCU coil tube feeds air to tools and devices that move toward and away from the supply, such as hand tools, spray guns, robot heads and test fixtures, keeping slack off the floor. Multi-core versions run two or three lines, for example supply and exhaust, in one coil."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC TCU coil tubing and straight SMC TU tubing?",
+          "a": "TCU is pre-coiled polyurethane that extends and recoils, ordered by winding count, while straight TU on [SMC Tubings](/p/smc-tubings) is sold by the roll and cut to length. TCU is for air only; straight TU also takes general industrial water."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you ship SMC TCU coil tubing from?",
+          "a": "We ship SMC TCU coil tubing from our Dubai, UAE warehouse to buyers worldwide. Plastic tubing without fittings normally falls under HS subheading 3917.32, and the origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is SMC TCU coil tubing in stock in Dubai?",
+          "a": "Yes. We keep SMC TCU series coil tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the full TCU part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-t-series-nylon-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC T series nylon tubing used for?",
+          "a": "SMC T series is metric Nylon 12 tubing for general compressed-air and water piping where a firmer, higher-pressure tube than polyurethane is wanted. It runs from -40 to +100°C, and this listing holds 43 part numbers in 4, 6 and 8 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC T series nylon tube code such as T0425B-20?",
+          "a": "T0425B-20 is T series nylon tube, 4 mm OD x 2.5 mm ID, black (B), on a 20 m roll. The four digits give OD then ID in mm, then the colour (B, W, R, BU, Y, G) and the length: 20 for a 20 m roll, 100 for a 100 m roll in black or white."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC T series nylon tubing listing cover?",
+          "a": "This listing covers T0403 (4 x 3 mm), T0425 (4 x 2.5 mm), T0604 (6 x 4 mm), T0645 (6 x 4.5 mm) and T0806 (8 x 6 mm). SMC also makes T1075, T1209 and T1613 for larger lines; those sit on our [SMC Tubing listing](/p/smc-tubing)."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between SMC T0425 and T0403, or T0604 and T0645?",
+          "a": "They share the OD but differ in wall: T0425 (4 x 2.5 mm) and T0604 (6 x 4 mm) are thick-wall and rated 3.3 and 3.0 MPa at 20°C, while T0403 (4 x 3 mm) and T0645 (6 x 4.5 mm) are thin-wall at 2.0 MPa with a larger bore. Choose thick wall for pressure, thin wall for flow."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is SMC T series nylon tubing rated for?",
+          "a": "SMC rates T series nylon at 20°C to 3.3 MPa for T0425, 3.0 MPa for T0604 and 2.0 MPa for T0403, T0645 and T0806. At 100°C these fall to 1.2, 1.1 and 0.75 MPa. Our size table has some rows that conflict with this (8 bar and 33 bar on 4 mm rows), so work to the maker's figures."
+        },
+        {
+          "slot": "F",
+          "q": "Can SMC T series nylon tubing carry water?",
+          "a": "Yes. SMC lists T series for air from -40 to +100°C and for general industrial water from 0 to +70°C without freezing. Our listing labels the material urethane, but SMC's catalogue gives Nylon 12; see our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) for how nylon compares with polyurethane."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC T series nylon tubing RoHS compliant?",
+          "a": "SMC marks the T/TIA nylon series RoHS in its catalogue. We hold no further compliance documents on this listing; ask for a declaration of conformity with your order if your quality plan needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings are used with SMC T series nylon tubing?",
+          "a": "SMC lists One-touch push-in, insert, self-align and miniature fittings for T series, matched to the metric OD. With metal One-touch fittings at 60°C or more, SMC requires an inner sleeve; push-in fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What does SMC say about installing T series nylon tubing?",
+          "a": "Keep the tube above its minimum bending radius, because nylon kinks if forced tighter, and use the lower pressure rating of tube or fitting. SMC also notes plasticiser can precipitate on the surface, so take care in clean rooms, and inspect for cracks, wear and hardening."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC T series nylon and SMC TS soft nylon tubing?",
+          "a": "Both are Nylon 12 in the same metric sizes, but [SMC TS](/p/smc-ts-series-soft-nylon-tubing) is a softer, more pliable tube for tight routing, while T series is firmer with higher pressure ratings, up to 3.3 MPa at 20°C for T0425. TS limits water to 0 to +50°C; T allows up to +70°C."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you export SMC T series nylon tubing from?",
+          "a": "We export SMC T series nylon tubing from Dubai, UAE to buyers worldwide. Plastic tube without fittings is normally classified under HS subheading 3917.32, and each roll's origin is given on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC T series nylon tubing in stock in Dubai?",
+          "a": "Yes. We keep SMC T series nylon tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, colours and roll lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ts-series-soft-nylon-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TS series soft nylon tubing?",
+          "a": "SMC TS is a pliable metric soft-nylon (Nylon 12) tube for air and water lines that must route tightly while keeping nylon's strength. The maker lists Shore D 70 and impact, chemical, abrasion and thermal resistance, and this listing holds 53 part numbers from 4 to 16 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TS soft nylon part number such as TS0604BU-100-X3?",
+          "a": "TS0604BU-100-X3 is TS soft nylon, 6 mm OD x 4 mm ID, blue, with length code 100 and the -X3 suffix, which SMC uses for made-to-order reels in colours other than black and white. Plain codes are -20 (20 m roll) and -100 (100 m roll, black and white only)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TS soft nylon tubing come in?",
+          "a": "TS comes in OD x ID 4 x 2.5, 6 x 4, 8 x 6, 10 x 7.5, 12 x 9 and 16 x 12 mm, all on this listing. Colours are black, white, red, blue, yellow and green, on 20 m rolls or 100 m rolls."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick a TS soft nylon size for a push-in fitting?",
+          "a": "Match the TS OD to the fitting's tube size in mm: TS0604 for a 6 mm fitting, TS0806 for 8 mm and so on, then check the ID gives enough flow. TS sizes are metric; inch fittings need the inch TISA tube on [SMC TIS series](/p/smc-tis-series-soft-nylon-tubing)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is SMC TS soft nylon tubing rated for?",
+          "a": "SMC gives TS a maximum operating pressure that varies by size and falls with temperature on its pressure curve, from -40 to +100°C with air. Our listing shows 140°F with no pressure per row, so confirm the maker's rating for your size and temperature before you specify it."
+        },
+        {
+          "slot": "F",
+          "q": "Can SMC TS soft nylon tubing carry water?",
+          "a": "Yes, current TS tube is rated for air and general industrial water, with water limited to 0 to +50°C. SMC prints the compatible fluid on the tube: older TS marked for air only may shrink and leak or pull out of fittings if used with water."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TS soft nylon tubing RoHS compliant?",
+          "a": "SMC marks the TS/TISA soft nylon series RoHS. If you need a declaration of conformity with the delivery, mention it when you send your enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings fit SMC TS soft nylon tubing?",
+          "a": "SMC lists One-touch push-in, insert, self-align and miniature fittings for TS in matching metric sizes; fit an inner sleeve with metal One-touch fittings at 60°C or more. Metric push-in fittings are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I check when installing SMC TS soft nylon tubing?",
+          "a": "Check the fluid printed on the tube before using TS with water, keep bends above the minimum bending radius and keep surge pressure under the maximum operating pressure. In clean rooms, note SMC's warning that plasticiser can come to the surface of nylon tube."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC TS soft nylon and SMC TU polyurethane tubing?",
+          "a": "TS soft nylon holds a higher pressure and temperature range, -40 to +100°C, while TU polyurethane is more flexible and kink tolerant but limited to -20 to +60°C and 0.8 MPa. Our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) sets out the trade-off."
+        },
+        {
+          "slot": "L",
+          "q": "Where is SMC TS soft nylon tubing shipped from?",
+          "a": "We ship SMC TS from our Dubai, UAE warehouse to the GCC, Africa, Asia and other markets. Plastic tube without fittings is normally entered under HS subheading 3917.32, and the origin appears on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I order SMC TS soft nylon tubing from stock in Dubai?",
+          "a": "Yes. We keep SMC TS series soft nylon tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers and roll quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tis-series-soft-nylon-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TIS series soft nylon tubing?",
+          "a": "SMC TIS (part numbers TISA) is the inch-size version of SMC's pliable soft-nylon tube for air and water lines. This listing holds 9 part numbers in 1/4\", 3/8\" and 1/2\" OD, in colours such as blue, green, red, white and yellow."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TISA part number such as TISA13BU-20-X4?",
+          "a": "TISA13BU-20-X4 is TISA soft nylon, size 13 (1/2\" OD), blue, 20 m roll, with the -X4 suffix SMC uses for made-to-order inch-size 20 m rolls. -100-X3 codes, such as TISA07W-100-X3, are made-to-order 100 m reels."
+        },
+        {
+          "slot": "D",
+          "q": "What are the OD and ID of SMC TISA soft nylon tubing?",
+          "a": "SMC lists TISA07 as 6.35 x 4.57 mm (1/4\"), TISA11 as 9.53 x 6.99 mm (3/8\") and TISA13 as 12.7 x 9.56 mm (1/2\"); this listing stocks those three sizes. SMC also makes TISA01 (1/8\") and TISA05 (3/16\")."
+        },
+        {
+          "slot": "D",
+          "q": "Should I use TISA inch tubing or TS metric tubing with my fittings?",
+          "a": "Use TISA with inch push-in fittings and [SMC TS](/p/smc-ts-series-soft-nylon-tubing) with metric ones. A 1/4\" (6.35 mm) tube in a 6 mm fitting, or the other way round, will not seal or grip reliably."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is SMC TIS soft nylon tubing rated for?",
+          "a": "Our size table lists 13 bar for most TISA rows and 20 bar for one 1/2\" row; SMC's own maximum operating pressure falls with temperature on its curve. Treat these as maker figures at room temperature, and confirm the rating for your size and temperature before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature and fluids suit SMC TIS soft nylon tubing?",
+          "a": "SMC rates TS/TISA soft nylon for air from -40 to +100°C and for general industrial water from 0 to +50°C without freezing. Check the fluid printed on the tube: SMC notes older tube marked for air only can shrink and leak if run with water."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TISA soft nylon tubing RoHS compliant?",
+          "a": "SMC marks the TS/TISA series RoHS in its catalogue. We hold no other compliance documents on this listing; ask for a declaration with your order if required."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings match SMC TISA soft nylon tubing?",
+          "a": "TISA fits inch One-touch push-in, insert, self-align and miniature fittings of the same nominal size, with an inner sleeve for metal One-touch fittings at 60°C or more. See inch connectors on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I check when installing SMC TISA soft nylon tubing?",
+          "a": "Cut square, insert fully and keep bends above the minimum bending radius; SMC notes nylon can be bent permanently if routed tighter. Keep surge pressure below the maximum operating pressure and replace any cracked or hardened length."
+        },
+        {
+          "slot": "J",
+          "q": "Where is SMC TIS soft nylon tubing used?",
+          "a": "TISA soft nylon is used on machine and panel piping fitted with inch-size push-in fittings, where a tube must bend tightly but keep nylon's pressure and temperature range. It suits both air and general industrial water lines."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you ship SMC TISA soft nylon tubing from?",
+          "a": "We ship SMC TISA tubing from Dubai, UAE to buyers worldwide. Plastic tube without fittings is normally classed under HS subheading 3917.32, and the country of origin appears on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is SMC TIS soft nylon tubing in stock in Dubai?",
+          "a": "Yes. We keep SMC TIS series soft nylon tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the TISA part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-nylon-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC Nylon Tubing listing?",
+          "a": "SMC Nylon Tubing covers SMC TIA, the inch-size version of its Nylon 12 T series, for general-purpose air and water lines. This listing holds 58 part numbers in 1/8\", 3/16\", 1/4\", 3/8\" and 1/2\" OD across black, white, blue, green, red and yellow."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TIA nylon tube part number such as TIA07B-20?",
+          "a": "TIA07B-20 is TIA nylon tube, size 07 (1/4\" OD), black (B), length code 20 (a 20 m roll). Size codes are 01 (1/8\"), 05 (3/16\"), 07 (1/4\"), 11 (3/8\") and 13 (1/2\"); longer length codes such as -153 or -305 and suffixes such as -X108 identify other packs, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "What are the OD and ID of SMC TIA nylon tubing?",
+          "a": "SMC lists TIA01 3.18 x 2.18 mm, TIA05 4.76 x 3.48 mm, TIA07 6.35 x 4.57 mm, TIA11 9.53 x 6.99 mm and TIA13 12.7 x 9.56 mm OD x ID. Our size table also shows inch IDs, such as 0.18\" for TIA07 and 0.275\" for TIA11."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC TIA nylon tube size suits a 1/4\" push-in fitting?",
+          "a": "Use TIA07, which is 1/4\" (6.35 mm) OD, for a 1/4\" push-in fitting; TIA11 for 3/8\" and TIA13 for 1/2\". For metric 6 mm fittings use the metric [SMC T series](/p/smc-t-series-nylon-tubing) instead, because the ODs differ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SMC TIA nylon tubing?",
+          "a": "SMC rates every TIA size at 2.3 MPa (about 23 bar) maximum operating pressure at 20°C, falling to 0.85 MPa at 100°C. Our listing carries no pressure per row, so use the maker's curve at your operating temperature together with the fitting's rating."
+        },
+        {
+          "slot": "F",
+          "q": "Can SMC TIA nylon tubing carry water and hot air?",
+          "a": "Yes. SMC rates the T/TIA nylon series for air from -40 to +100°C and general industrial water from 0 to +70°C without freezing. For water hotter than that, or aggressive chemicals, look at fluoropolymer tube in our [tubing materials guide](/blog/pneumatic-tubing-materials-guide)."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TIA nylon tubing RoHS compliant?",
+          "a": "SMC marks the T/TIA nylon series RoHS in its catalogue. Ask for a declaration of conformity with the order if your quality plan requires one."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with SMC TIA nylon tubing?",
+          "a": "SMC lists One-touch push-in, insert, self-align and miniature fittings for TIA in matching inch sizes. Use an inner sleeve with metal One-touch fittings at 60°C or more, and self-align fittings only at 60°C or less."
+        },
+        {
+          "slot": "I",
+          "q": "What does SMC advise for installing TIA nylon tubing?",
+          "a": "Keep TIA above its minimum bending radius, because nylon can stay bent or flatten if forced, and use the lower pressure rating of tube or fitting. Inspect for cracks, wear and hardening, and replace rather than patch damaged tube."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC TIA nylon and SMC TIU polyurethane tubing?",
+          "a": "TIA nylon is firmer and rated 2.3 MPa at 20°C over -40 to +100°C, while [SMC TIU polyurethane](/p/smc-tiu-series-polyurethane-tubing) is softer and kink tolerant but rated 0.8 MPa from -20 to +60°C. Choose TIA for pressure and heat, TIU for flexibility."
+        },
+        {
+          "slot": "L",
+          "q": "Where is SMC TIA nylon tubing exported from?",
+          "a": "We export SMC TIA nylon tubing from Dubai, UAE to customers worldwide. Plastic tube without fittings normally falls under HS subheading 3917.32, and the roll's origin is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC TIA nylon tubing in Dubai?",
+          "a": "Yes. We keep SMC TIA nylon tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the TIA part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tr-series-flame-resist-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TR series flame-resistant tubing?",
+          "a": "SMC TR is a family of flame-resistant air and water tubes, rated by SMC as equivalent to UL-94 Standard V-0, for piping near spot welders and arc welding where sparks can burn through ordinary tube. This listing holds 126 part numbers across four types: TRS, TRB, TRBU and TRTU, in 6 to 12 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "What is the difference between SMC TRS, TRB, TRBU and TRTU tubing?",
+          "a": "TRS is single-layer flame-resistant soft nylon, TRB a Nylon 12 tube with a flame-resistant PVC outer layer, TRBU a polyurethane tube with a polyolefin outer layer, and TRTU a three-layer tube. TRTU adds an aluminium laminated film between its polyurethane and polyolefin layers. TRTU has twice the spatter resistance of TRBU."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TR flame-resistant tubing come in?",
+          "a": "TRS comes in 6 x 3, 8 x 5, 10 x 6.5 and 12 x 8 mm; TRB in TRB0604, TRB0806, TRB1075 and TRB1209; TRBU and TRTU in 6 x 4, 8 x 5, 10 x 6.5 and 12 x 8 mm inner tube. On double-layer types the size code gives the inner tube, which is what goes into the fitting."
+        },
+        {
+          "slot": "D",
+          "q": "How do you read an SMC TR part number such as TRBU0805G-20?",
+          "a": "TRBU0805G-20 is TRBU double-layer polyurethane tube, 8 mm OD x 5 mm ID inner tube, green outer layer, 20 m roll; the -100 code is a 100 m reel. The outer colour is chosen by the letter (B, W, R, BU, Y, G), while SMC makes the inner tube of every double-layer type black."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is SMC TR flame-resistant tubing rated for?",
+          "a": "At 20°C SMC rates TRS at 1.2 MPa, TRB at 1.0 MPa and TRBU and TRTU at 0.8 MPa; TRTU falls to 0.65 MPa at 40°C and 0.5 MPa at 60°C. Our table matches the 10 bar and 8 bar figures, but TRS rows showing 200 bar are data errors; use SMC's 1.2 MPa."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids can SMC TR flame-resistant tubing handle?",
+          "a": "All four TR types carry air and general industrial water from -20 to +60°C; TRS and TRB accept water from 0 to 60°C, while TRBU and TRTU limit water to 0 to 40°C, with no freezing. Choose TRS or TRB if the water line runs warm."
+        },
+        {
+          "slot": "G",
+          "q": "Does SMC TR flame-resistant tubing meet UL-94 V-0?",
+          "a": "SMC describes the TR series as flame resistant equivalent to UL-94 Standard V-0, which is the maker's own rating; we hold no third-party test certificate for it. If your site needs a written declaration, request it with your order and we obtain it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings does SMC recommend for TR flame-resistant tubing?",
+          "a": "SMC recommends its flame-resistant KR-W2 One-touch fittings for TRS, TRB, TRBU and TRTU, and also lists metal KQB2 One-touch fittings for TRTU. Other push-in fittings for the same metric sizes are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit SMC TRB or TRBU double-layer tubing into a push-in fitting?",
+          "a": "Cut both layers at the insertion-length mark printed on the outer layer, then strip off the outer layer only and push the bare inner tube into the One-touch fitting. Inserting the tube with its outer layer on will not seal."
+        },
+        {
+          "slot": "J",
+          "q": "Where is SMC TR flame-resistant tubing used?",
+          "a": "TR tubing is used on welding lines and fabrication cells where spot-welder or arc-welding spatter would burn through standard polyurethane or nylon. Use TRTU where spatter is heaviest, since its aluminium film doubles the spatter resistance of TRBU."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you ship SMC TR flame-resistant tubing from?",
+          "a": "We ship SMC TR tubing from our Dubai, UAE warehouse to buyers across the GCC, Africa, Asia and beyond. Plastic tube without fittings is normally classed under HS subheading 3917.32; the origin is on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC TR flame-resistant tubing in stock in Dubai?",
+          "a": "Yes. We keep SMC TR series flame-resistant tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send TRS, TRB, TRBU or TRTU part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tph-series-clean-room-poly-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TPH series clean-room polyolefin tubing?",
+          "a": "SMC TPH is clean-series polyolefin tubing for air, nitrogen and water, including pure water, in clean rooms and process equipment where clean, oil-free media are piped. This listing holds 11 part numbers in 4, 6, 8 and 10 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TPH part number such as TPH0604BU-100?",
+          "a": "TPH0604BU-100 is TPH polyolefin tube, 6 mm OD x 4 mm ID, blue (BU), on a 100 m reel; -20 is a 20 m roll. Colours are white, black, red, blue, yellow and green, coded W, B, R, BU, Y and G."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TPH clean-room tubing come in?",
+          "a": "SMC makes TPH in OD x ID 4 x 2.5, 6 x 4, 8 x 6, 10 x 7.5 and 12 x 9 mm. This listing stocks TPH0425, TPH0604, TPH0806 and TPH1075; ask for TPH1209 if you need 12 mm."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bending radius of SMC TPH tubing?",
+          "a": "Our size table lists a minimum bending radius of 15 mm for TPH0425, 25 mm for TPH0604, 35 mm for TPH0806 and 45 mm for TPH1075. SMC measures these at 20°C; at higher temperatures the tube may deform within that radius."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of SMC TPH polyolefin tubing?",
+          "a": "SMC rates TPH at 1.0 MPa for TPH0425 and TPH0604 and 0.7 MPa for TPH0806, TPH1075 and TPH1209, at 20°C. Pressure falls with temperature on SMC's burst-pressure curve, and our listing gives no figure per row, so use the maker's values."
+        },
+        {
+          "slot": "F",
+          "q": "Can SMC TPH polyolefin tubing be used with oil-lubricated air?",
+          "a": "No. SMC states polyolefin resin is not resistant to mineral oil, so TPH is not suited to regular pneumatic piping with lubricated air. Use it for clean, dry air, nitrogen or water from -20 to 80°C (water 5 to 80°C), and see our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TPH clean-room tubing RoHS compliant?",
+          "a": "SMC marks the TPH series RoHS in its clean-series catalogue. For a cleanliness or material declaration with your order, state it in the enquiry and we request it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings does SMC list for TPH clean-room tubing?",
+          "a": "SMC lists clean One-touch fittings, metal One-touch KQB2, stainless steel 316 One-touch KQG2 and insert fittings for TPH. Matching metric push-in fittings are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC TPH tubing be handled for clean-room use?",
+          "a": "Keep TPH rolls sealed until use, cut with a clean tube cutter and route above the minimum bending radius. Avoid oil-lubricated air and inspect periodically for cracks, wear and hardening, replacing damaged tube rather than patching it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC TPH and SMC TPS clean-room tubing?",
+          "a": "TPH is the firmer polyolefin with up to 1.0 MPa on the 4 and 6 mm sizes, while [SMC TPS](/p/smc-tps-series-clean-room-poly-tubing) is a soft polyolefin rated 0.7 MPa in all sizes. Both carry air, nitrogen and pure water from -20 to 80°C."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you ship SMC TPH tubing from?",
+          "a": "We ship SMC TPH clean-room tubing from Dubai, UAE to customers worldwide. Plastic tubing without fittings is normally entered under HS subheading 3917.32, and the country of origin is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is SMC TPH clean-room tubing in stock in Dubai?",
+          "a": "Yes. We keep SMC TPH series polyolefin tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers and lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tps-series-clean-room-poly-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TPS series clean-room tubing?",
+          "a": "SMC TPS is soft polyolefin clean-series tubing for air, nitrogen and pure water in clean rooms and process equipment where a flexible clean-series tube is needed. This listing holds 9 part numbers in 4, 6, 8 and 12 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TPS part number such as TPS0805BU-20?",
+          "a": "TPS0805BU-20 is TPS soft polyolefin tube, 8 mm OD x 5 mm ID, blue (BU), on a 20 m roll; -100 marks a 100 m reel. Colour letters are W, B, R, BU, Y and G."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TPS soft polyolefin tubing come in?",
+          "a": "SMC makes TPS in OD x ID 4 x 2.5, 6 x 4, 8 x 5, 10 x 6.5 and 12 x 8 mm. This listing stocks TPS0425, TPS0604, TPS0805 and TPS1208 in black, blue, green, red and white."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC TPS size should I use with a 6 mm or 8 mm push-in fitting?",
+          "a": "Use TPS0604 (6 x 4 mm) for a 6 mm fitting and TPS0805 (8 x 5 mm) for an 8 mm fitting. TPS is metric only, so inch fittings need a different tube."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is SMC TPS clean-room tubing rated for?",
+          "a": "SMC rates TPS at 0.7 MPa (7 bar) maximum operating pressure at 20°C in every size, matching the 7 bar on our size table. The figure falls as temperature rises toward 80°C, so check SMC's curve for hot water service."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids and temperatures suit SMC TPS soft polyolefin tubing?",
+          "a": "TPS carries air, nitrogen and water, including pure water, from -20 to 80°C, with water limited to 5 to 80°C. SMC states polyolefin is not resistant to mineral oil, so do not use TPS on lubricated pneumatic lines."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TPS tubing RoHS compliant?",
+          "a": "SMC marks the TPS series RoHS in its clean-series catalogue. We hold no other compliance documents on this listing; ask with your order if you need a declaration."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with SMC TPS tubing?",
+          "a": "SMC lists clean One-touch fittings, metal KQB2 and stainless steel 316 KQG2 One-touch fittings, and insert fittings for TPS. Metric push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I check when installing SMC TPS tubing?",
+          "a": "Cut square, insert fully into the fitting and route above the minimum bending radius, allowing for softening at higher temperatures. Keep surge pressure below 0.7 MPa and replace any length that shows cracks, wear or hardening."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose SMC TPS over SMC TPH tubing?",
+          "a": "Choose TPS when flexibility matters more than pressure, since it is the soft grade at 0.7 MPa, and [SMC TPH](/p/smc-tph-series-clean-room-poly-tubing) when 4 or 6 mm lines need up to 1.0 MPa. Both are polyolefin and avoid mineral oil."
+        },
+        {
+          "slot": "L",
+          "q": "Where is SMC TPS clean-room tubing shipped from?",
+          "a": "We ship SMC TPS from our Dubai, UAE warehouse to buyers worldwide. Plastic tube without fittings normally falls under HS subheading 3917.32; origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get SMC TPS clean-room tubing from stock in Dubai?",
+          "a": "Yes. We keep SMC TPS series soft polyolefin tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes and colours through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-til-series-fluoropolymer-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TIL series fluoropolymer tubing?",
+          "a": "SMC TIL is inch-size high-purity fluoropolymer tubing in Super PFA, with a very smooth bore and low fluorine-ion elution, for chemicals, deionised water, inert gas, air and water at up to 260°C. This listing holds 14 part numbers, including TILM inch PFA tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TIL part number such as TIL07-20 or TILM07N-33?",
+          "a": "TIL07-20 is TIL Super PFA tube, size 07 (1/4\"), on a 20 m roll; TILM07N-33 is TILM PFA tube, 1/4\", translucent (N), 100 ft (33 m) roll. SMC's length codes for this family include 16 for 50 ft (16 m) and 33 for 100 ft (33 m); suffixes such as -X48 mark special versions."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TIL fluoropolymer tubing come in?",
+          "a": "SMC makes TIL from 1/8\" to 1\" OD. This listing carries TIL01 (1/8\"), TIL07 (1/4\"), TIL11 (3/8\"), TIL13 (1/2\"), TIL19 and TIL25, plus TILM07 and TILM11. For metric sizes use [SMC TL series](/p/smc-tl-series-fluoropolymer-tubing)."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between SMC TIL and TILM tubing?",
+          "a": "TIL is Super PFA, chosen where a smooth internal surface and minimal fluorine-ion elution matter, while TILM is standard PFA with similar heat and chemical resistance. Our table lists TILM07 at 15 bar and TILM11 at 10 bar; TILM comes in colours such as red and translucent."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is SMC TIL tubing rated for?",
+          "a": "Our size table lists 10 bar for TIL07 and TIL11, 5 bar for TIL25 and 15 bar for TILM07, as maker figures at 20°C; SMC gives a maximum of 260°C for TL/TIL. Pressure falls steeply with temperature, so check SMC's curve before running hot fluid."
+        },
+        {
+          "slot": "F",
+          "q": "What chemicals and fluids can SMC TIL Super PFA tubing carry?",
+          "a": "SMC lists TIL for chemicals, deionised water, inert gas, air and water, with heat and chemical resistance equivalent to PFA. Fluoropolymer resists most industrial chemicals, but confirm compatibility for your fluid and temperature with the maker; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares the options."
+        },
+        {
+          "slot": "G",
+          "q": "Is SMC TIL Super PFA tubing RoHS compliant?",
+          "a": "SMC marks the TL/TIL fluoropolymer series RoHS in its catalogue. For high-purity or chemical projects that need a material declaration or certificate of conformity, name it in your enquiry and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings can be used with SMC TIL fluoropolymer tubing?",
+          "a": "SMC lists KQ2 and KQG2 One-touch, KF and KFG2 insert, M/MS miniature and LQ1, LQ2, LQ3 fluoropolymer fittings for its fluoropolymer tube. For chemical or high-purity lines use the LQ fluoropolymer fittings; push-in types are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC TIL fluoropolymer tubing be installed?",
+          "a": "Fluoropolymer is stiff, so route TIL with generous bends above the minimum bending radius and cut square with a sharp cutter. Use fittings rated for the fluid and temperature, keep surge pressure below the rating and inspect for kinks or whitening."
+        },
+        {
+          "slot": "J",
+          "q": "Where is SMC TIL high-purity fluoropolymer tubing used?",
+          "a": "TIL Super PFA is used in high-purity chemical, deionised-water and laboratory lines where a smooth, clean bore and heat resistance up to 260°C are needed. It also serves as heat-resistant air and inert-gas tube near hot equipment."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you export SMC TIL fluoropolymer tubing from?",
+          "a": "We export SMC TIL from Dubai, UAE to customers worldwide. Plastic tube without fittings is normally classed under HS subheading 3917.32, with the country of origin on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC TIL fluoropolymer tubing in Dubai?",
+          "a": "Yes. We keep SMC TIL series fluoropolymer tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send TIL or TILM part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tl-series-fluoropolymer-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC TL series fluoropolymer tubing?",
+          "a": "SMC TL is metric high-purity fluoropolymer tubing in Super PFA for chemicals, deionised water, inert gas, air and water up to 260°C. This listing holds 13 part numbers from 3 to 19 mm OD, including TLM metric PFA tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC TL part number such as TL0604-50 or TLM0806R-20?",
+          "a": "TL0604-50 is TL Super PFA tube, 6 mm OD x 4 mm ID, on a 50 m roll; TLM0806R-20 is TLM PFA tube, 8 x 6 mm, red, on a 20 m roll. SMC offers TL in 10, 20, 50 and 100 m rolls."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC TL fluoropolymer tubing come in?",
+          "a": "SMC lists TL0403 (4 x 3 mm), TL0604 (6 x 4 mm), TL0806 (8 x 6 mm), TL1008 (10 x 8 mm), TL1210 (12 x 10 mm) and TL1916 (19 x 16 mm), all on this listing. TLM PFA sizes here include TLM0302, TLM0403, TLM0806 and TLM1008."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC TL size suits a 6 mm or 8 mm push-in fitting?",
+          "a": "Use TL0604 for a 6 mm fitting and TL0806 for an 8 mm fitting, matching the tube OD to the fitting. Inch fittings need [SMC TIL](/p/smc-til-series-fluoropolymer-tubing) instead."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SMC TL fluoropolymer tubing?",
+          "a": "Our size table lists 10 bar for TL0403 and TL0604, 9 bar for TL0806 and 7 bar for TL1210 at room temperature, with TLM rows from 7 to 17 bar. Pressure drops as temperature rises toward 260°C, so use SMC's curve for hot service."
+        },
+        {
+          "slot": "F",
+          "q": "What chemicals can SMC TL Super PFA tubing carry?",
+          "a": "SMC lists TL for chemicals, deionised water, inert gas, air and water, with heat and chemical resistance equivalent to PFA and low fluorine-ion elution. Confirm compatibility for aggressive fluids at temperature; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) explains fluoropolymer grades."
+        },
+        {
+          "slot": "G",
+          "q": "Does SMC TL fluoropolymer tubing comply with RoHS?",
+          "a": "Yes, SMC marks the TL/TIL and TLM/TILM fluoropolymer series RoHS. We hold no other compliance documents on this listing, so ask with your order if your process needs a declaration of conformity."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with SMC TL fluoropolymer tubing?",
+          "a": "SMC lists KQ2 and KQG2 One-touch, KF and KFG2 insert, M/MS miniature and LQ1, LQ2, LQ3 fluoropolymer fittings for TL. For chemical service use the LQ fluoropolymer fittings; metric push-in fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC TL tubing be routed and inspected?",
+          "a": "Route TL with bends above the minimum bending radius, as fluoropolymer kinks if forced, and cut square with a sharp cutter. Inspect for kinks, whitening or wear and replace damaged tube rather than repairing it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC TL and TLM fluoropolymer tubing?",
+          "a": "TL is Super PFA for high-purity lines needing a smooth bore and minimal fluorine-ion elution, while TLM is standard PFA with similar heat and chemical resistance and is offered in colours such as red, blue and natural. Pick TL for deionised water and high-purity chemicals; TLM where colour-coding helps."
+        },
+        {
+          "slot": "L",
+          "q": "Where is SMC TL fluoropolymer tubing shipped from?",
+          "a": "We ship SMC TL from our Dubai, UAE warehouse to buyers worldwide. Plastic tube without fittings normally falls under HS subheading 3917.32, and the origin is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is SMC TL fluoropolymer tubing available from stock in Dubai?",
+          "a": "Yes. We keep SMC TL series fluoropolymer tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send TL or TLM part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-til-tl-series-fluoropolymer-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC TIL/TL Series Fluoropolymer Tubing listing contain?",
+          "a": "Despite its title, this listing holds SMC TH metric FEP tubing and TD/TID modified-PTFE soft fluoropolymer tubing, 26 part numbers in all; the Super PFA TL and TIL tubes are on [SMC TL series](/p/smc-tl-series-fluoropolymer-tubing). The maker lists heat and chemical resistance for water, air and inert gas."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read SMC TH and TD part numbers such as TH0604BU-20 and TD0806-20?",
+          "a": "TH0604BU-20 is TH FEP tube, 6 mm OD x 4 mm ID, blue, 20 m roll; TD0806-20 is TD modified-PTFE tube, 8 x 6 mm. TID codes such as TID07-16 are the inch TD tube, size 07 (1/4\"); colour letters N, BU, B and R are translucent, blue, black and red."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes of SMC TH FEP and TD PTFE tubing are on this listing?",
+          "a": "TH FEP sizes here include TH0402, TH0425, TH0604, TH0806, TH1008, TH1075 and TH1209, from 4 to 12 mm OD. TD sizes are TD0425, TD0806, TD1075 and TD1209, plus inch TID01 and TID07. SMC makes TH from 4 to 12 mm and TD from 4 to 12 mm."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between SMC TH FEP and SMC TD modified-PTFE tubing?",
+          "a": "TH is FEP tube rated to 200°C and offered in translucent, red, blue and black, while TD is modified PTFE rated to 260°C and about 20% more flexible than SMC's TL tube. Choose TD for higher heat or tighter routing and TH where colour-coding helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is SMC TH FEP and TD PTFE tubing rated for?",
+          "a": "Our size table lists TH from 7 bar to 17 bar and TD from 9 bar to 14 bar, by size, at room temperature. Pressure falls as temperature rises toward 200°C for TH and 260°C for TD, so confirm SMC's rating for your size and temperature."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids can SMC TH and TD fluoropolymer tubing carry?",
+          "a": "The maker lists water, air and inert gas, with heat and chemical resistance for food-service and heat-resistant applications. Fluoropolymer resists most chemicals; confirm compatibility for aggressive fluids with SMC, and see our [tubing materials guide](/blog/pneumatic-tubing-materials-guide)."
+        },
+        {
+          "slot": "G",
+          "q": "Does SMC TH FEP tubing meet RoHS?",
+          "a": "SMC marks its TL, TH and TD fluoropolymer series RoHS in the catalogue. We hold no other compliance documents for this listing; request a declaration with the order if your process needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings are used with SMC TH and TD fluoropolymer tubing?",
+          "a": "SMC lists KQ2 and KQG2 One-touch, KP fittings, M/MS miniature, KF and KFG2 insert and LQ1, LQ2, LQ3 fluoropolymer fittings for TH, and miniature, insert and LQ fittings for TD. Push-in fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What bending radius should be kept on SMC TH and TD tubing?",
+          "a": "The listing gives a recommended radius of 20 mm for the smaller sizes, rising to 100 mm on some 10 and 12 mm FEP rows. Route fluoropolymer tube with generous bends, since it kinks if forced, and replace any kinked or whitened length."
+        },
+        {
+          "slot": "J",
+          "q": "Where is SMC TH FEP and TD PTFE tubing used?",
+          "a": "These tubes are used for hot air, inert gas, water and chemical lines, including food-service equipment, where polyurethane or nylon would soften. TD's flexibility suits tight machine routing at up to 260°C."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you export SMC TH and TD fluoropolymer tubing from?",
+          "a": "We export SMC TH and TD tubing from Dubai, UAE to buyers worldwide. Plastic tubing without fittings is normally classified under HS subheading 3917.32, and the origin is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC TH and TD fluoropolymer tubing in stock in Dubai?",
+          "a": "Yes. We keep these SMC TH and TD fluoropolymer tubes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-peapp-series-polyethylene-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SMC PEAPP series polyethylene tubing?",
+          "a": "SMC PEAPP is polyethylene tubing listed in both metric (4, 6, 8, 10 and 12 mm) and inch (1/4\", 3/8\" and 1/2\") sizes, with 44 part numbers on this listing. Polyethylene is a light, economical tube for low-pressure air and fluid lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC PEAPP part number such as PEAPP07BU-33?",
+          "a": "PEAPP07BU-33 is PEAPP polyethylene tube, size 07 (1/4\"), blue (BU), length code 33. Metric sizes use the OD in mm, so PEAPP06 is 6 mm and PEAPP10 is 10 mm; inch sizes use 07, 11 and 13 for 1/4\", 3/8\" and 1/2\", and the last number is the roll length code."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does SMC PEAPP polyethylene tubing come in?",
+          "a": "This listing carries PEAPP04 (4 mm), PEAPP06 (6 mm), PEAPP08 (8 mm), PEAPP10 (10 mm) and PEAPP12 (12 mm), plus PEAPP07 (1/4\"), PEAPP11 (3/8\") and PEAPP13 (1/2\"). Use metric sizes with metric fittings and inch sizes with inch fittings."
+        },
+        {
+          "slot": "D",
+          "q": "What colours and roll lengths are available in SMC PEAPP tubing?",
+          "a": "PEAPP comes in natural (N), black (B), blue (BU), green (G) and red (R), with length codes -33, -77, -153 and -305 on this listing. The longer codes suit panel builders and OEMs cutting many lines from one reel."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is SMC PEAPP polyethylene tubing rated for?",
+          "a": "Our listing does not hold a pressure rating for PEAPP, and polyethylene ratings fall quickly with temperature. Send us the size and operating temperature and we will confirm the maker's figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is polyethylene tubing like SMC PEAPP suited for?",
+          "a": "Polyethylene is light and economical but softer and less heat resistant than nylon, so PEAPP suits low-pressure air, instrument and fluid lines at moderate temperature. Our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares polyethylene with nylon and polyurethane."
+        },
+        {
+          "slot": "G",
+          "q": "Do you supply documents with SMC PEAPP polyethylene tubing?",
+          "a": "Our listing holds no certificates for PEAPP. If you need a declaration of conformity or material data with the order, tell us when you enquire and we request it from the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings fit SMC PEAPP polyethylene tubing?",
+          "a": "PEAPP fits push-in or insert fittings of the same nominal OD: metric fittings for PEAPP04 to PEAPP12 and inch fittings for PEAPP07, PEAPP11 and PEAPP13. Push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC PEAPP polyethylene tubing be installed?",
+          "a": "Cut square, use an insert sleeve where the fitting maker calls for one with soft tube, push fully home and pull back to check grip. Keep polyethylene away from heat sources and replace any length that shows cracking or softening."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC PEAPP polyethylene and SMC TIA nylon tubing?",
+          "a": "[SMC TIA nylon](/p/smc-nylon-tubing) is rated 2.3 MPa at 20°C from -40 to +100°C, while PEAPP polyethylene is a softer, lower-cost tube for lower pressures and moderate temperatures. Choose TIA for main machine air lines and PEAPP for light-duty runs."
+        },
+        {
+          "slot": "L",
+          "q": "Where do you ship SMC PEAPP polyethylene tubing from?",
+          "a": "We ship SMC PEAPP from our Dubai, UAE warehouse to buyers worldwide. Plastic tube without fittings is normally classed under HS subheading 3917.32, and the origin is on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is SMC PEAPP polyethylene tubing in stock in Dubai?",
+          "a": "Yes. We keep SMC PEAPP series polyethylene tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send PEAPP part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC Tubing listing cover?",
+          "a": "SMC Tubing gathers 75 SMC tubing part numbers that sit outside the single-series listings: large metric T nylon (10, 12 and 16 mm), inch TIV tube, TIH inch FEP tube, TAU and TAS antistatic tube, TQ two-layer fluoropolymer and special-order variants. Use it when you have an SMC code that is not on a series page."
+        },
+        {
+          "slot": "B",
+          "q": "How do you tell the SMC series apart on the SMC Tubing listing by part number?",
+          "a": "The prefix names the series: T is nylon, TIH (with TIHA and TIHB) is inch FEP fluoropolymer, TAU antistatic polyurethane, TAS antistatic soft nylon and TQ two-layer soft fluoropolymer. TIV codes are inch tube from 1/4\" to 3/4\" OD; the digits after each prefix give the size."
+        },
+        {
+          "slot": "D",
+          "q": "Which large nylon sizes are on the SMC Tubing listing?",
+          "a": "The listing carries SMC T1075 (10 x 7.5 mm), T1209 (12 x 9 mm) and T1613 (16 x 13 mm) Nylon 12 tube. SMC rates T1075 and T1209 at 2.0 MPa and T1613 at 1.6 MPa at 20°C; smaller T sizes are on [SMC T series](/p/smc-t-series-nylon-tubing)."
+        },
+        {
+          "slot": "D",
+          "q": "Which inch SMC TIH FEP tubing sizes are listed on SMC Tubing?",
+          "a": "TIH FEP tube on this listing runs from TIHA01 (1/8\") through TIHA07 and TIHB07 (1/4\"), TIHA11 (3/8\") and TIH13 (1/2\") to TIH19, mostly on 16 m (50 ft) rolls. Our table lists 10 bar for most rated rows and 7 bar for TIH13R; SMC makes TIH FEP up to 3/4\" OD."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure ratings apply to the tubes on the SMC Tubing listing?",
+          "a": "They vary by series and size: T1075 and T1209 nylon are 2.0 MPa at 20°C, TAU antistatic 0.9 MPa, TAS antistatic 1.2 MPa, TQ0806 1.2 MPa and TIH FEP 0.7 to 1.0 MPa. TIV rows state 150 psi at room temperature. One T1209 row on our table showing 8 bar is a data error."
+        },
+        {
+          "slot": "F",
+          "q": "What is SMC antistatic TAU and TAS tubing used for?",
+          "a": "TAU (conductive polyurethane) and TAS (conductive nylon with flame-resistant nylon) are antistatic air tubes for equipment where static electricity must be dissipated through the tube. SMC rates them for air at 0 to 40°C and recommends its KA antistatic One-touch fittings."
+        },
+        {
+          "slot": "G",
+          "q": "Are the SMC tubes on the SMC Tubing listing RoHS compliant?",
+          "a": "SMC marks its T nylon and TH/TIH fluoropolymer tubing series RoHS in the catalogue. For any special-order code on this listing, confirm compliance with us before ordering, and ask for a declaration of conformity if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings suit the tubes on the SMC Tubing listing?",
+          "a": "Match the fitting to the tube type and OD: One-touch push-in fittings for T nylon and TIH FEP, KA antistatic fittings for TAU and TAS, and LQ fluoropolymer fittings for chemical lines on TIH or TQ. Standard push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What does SMC advise on installing large T1613 nylon tubing?",
+          "a": "Keep 16 mm nylon above its minimum bending radius, since it flattens if forced, and use an inner sleeve with metal One-touch fittings at 60°C or more. Use the lower pressure rating of tube or fitting and replace any cracked or hardened length rather than patching it."
+        },
+        {
+          "slot": "K",
+          "q": "What is SMC TQ two-layer soft fluoropolymer tubing?",
+          "a": "TQ is a two-layer soft fluoropolymer tube SMC makes for fluids such as solvents, combining a chemical-resistant inner layer with a soft, abrasion-resistant tube. TQ0806 on this listing is 8 mm OD, rated 1.2 MPa at 20°C; for high-purity work use [SMC TL series](/p/smc-tl-series-fluoropolymer-tubing)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is SMC tubing on this listing shipped from?",
+          "a": "We ship every part on the SMC Tubing listing from our Dubai, UAE warehouse to buyers worldwide. Plastic tube without fittings normally falls under HS subheading 3917.32; origin is printed on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC tubing part numbers on this listing in Dubai?",
+          "a": "Yes. We keep the SMC tubing on this listing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the exact SMC part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-201-series-ptfe-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker 201 series PTFE tubing used for?",
+          "a": "Parker 201 series is metric PTFE tubing for chemical, food, beverage, water and laboratory lines that need very wide temperature range, non-stick bore and chemical inertness. The maker lists -400°F to +500°F, Shore D 55 to 65, and this listing holds 19 part numbers from 3 to 10 mm OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 201 PTFE part number such as 201-0400100-NT-100?",
+          "a": "201-0400100-NT-100 reads as 201 series PTFE, 0400 for 4 mm OD, 100 for a 1 mm wall, NT for natural colour and 100 for a 100 ft length; the sizes on our table bear this out. So 201-0800100-NT-50 is 8 mm OD x 6 mm ID in 50 ft."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Parker 201 series PTFE tubing come in?",
+          "a": "This listing covers 1 mm wall tube from 3 mm OD (1 mm ID) through 4, 5, 6, 7, 8 and 9 mm to 10 mm OD (8 mm ID), in 25, 50 and 100 ft lengths. Larger 12, 14 and 16 mm OD tube is on [Parker PTFE Fluoropolymer Tubings, Metric](/p/parker-ptfe-fluoropolymer-tubings-metric)."
+        },
+        {
+          "slot": "D",
+          "q": "What bend radius and vacuum rating does Parker 201 PTFE tubing have?",
+          "a": "The listing gives a minimum bending radius of 1 1/2\" and states the tube is vacuum rated. PTFE is stiff, with 200% to 400% elongation, so route it in smooth bends rather than forcing tight radii, which can kink it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Parker 201 series PTFE tubing rated for?",
+          "a": "On the 50 ft and 100 ft rows the maker figures run from 108 bar for 4 x 2 mm down to 28 bar for 10 x 8 mm, falling as diameter grows. The 25 ft rows on our table show 0 to 2 bar, which conflicts with this, so confirm the rating for your exact part number and temperature before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What chemicals and fluids is Parker 201 PTFE tubing compatible with?",
+          "a": "The maker lists acetone, chlorine, ether, iodine, 35% nitric acid and zinc chloride, plus kerosene and mineral oil, and food fluids from beer and milk to vinegar and potable water. PTFE is non-wetting with the lowest coefficient of friction, so it resists build-up in the bore."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings are used with Parker 201 PTFE tubing?",
+          "a": "The maker lists compression and push-to-connect fittings for 201 series PTFE, matched to the metric OD. For high pressure or hot chemical lines compression fittings are the usual choice; push-in fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "Can Parker 201 PTFE tubing be autoclaved or washed down?",
+          "a": "Yes, the listing marks 201 series PTFE as autoclavable and suitable for washdown environments, with a working range up to +500°F. Pressure capacity is lower at high temperature, so check the maker's rating at the sterilising or washdown temperature."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries use Parker 201 series PTFE tubing?",
+          "a": "The maker lists automotive, chemical processing, food service, industrial, insulation and laboratory uses. Its laser-markable, self-extinguishing PTFE suits instrument, sampling and fluid-transfer lines where chemicals or heat rule out nylon or polyurethane."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between PTFE and FEP tubing from Parker?",
+          "a": "PTFE, as in the 201 series, takes up to +500°F and has the lowest friction, while [Parker FEP tubing](/p/parker-fep-fluoropolymer-tubings-metric) is rated to 400°F and is weldable. Choose PTFE for heat and friction, FEP for visibility; our [materials guide](/blog/pneumatic-tubing-materials-guide) compares them."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin and HS code of Parker 201 PTFE tubing?",
+          "a": "Parker 201 series PTFE tubing on this listing is made in the United States and carries HS code 3917320050 on our records. We ship it from Dubai, UAE to buyers worldwide with the commercial invoice stating both."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker 201 series PTFE tubing in stock in Dubai?",
+          "a": "Yes. We keep Parker 201 series PTFE tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 201 part numbers and lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-ptfe-fluoropolymer-tubings-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is on the Parker PTFE Fluoropolymer Tubings, Metric listing?",
+          "a": "This listing holds 4 larger metric PTFE tubes in Parker's 201 series: 12 x 10 mm, 14 x 12 mm and 16 x 14 mm OD x ID, in 25 ft and 100 ft lengths. They suit chemical, heat-resistant and fluid-transfer lines needing more bore than the smaller [Parker 201 series](/p/parker-201-series-ptfe-tubing)."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker PTFE metric part numbers such as 201-1400100-NT-100?",
+          "a": "201-1400100-NT-100 is 201 series PTFE, 1400 for 14 mm OD, 100 for a 1 mm wall, natural colour, 100 ft long, which gives a 12 mm ID. 201-1600100 is the 16 mm OD tube and 201-1200100 the 12 mm OD tube."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes are available in Parker PTFE metric fluoropolymer tubing?",
+          "a": "The listing covers 201-1200100 (12 mm OD, 10 mm ID), 201-1400100 (14 mm OD, 12 mm ID) and 201-1600100 (16 mm OD, 14 mm ID). The 12 mm size comes in 25 ft and 100 ft lengths; the 14 and 16 mm sizes in 100 ft."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker metric PTFE size should I pick for a 12 mm fitting?",
+          "a": "Pick 201-1200100, which is 12 mm OD, for a 12 mm compression or push-in fitting. The OD must match the fitting; the 1 mm wall then gives a 10 mm bore for flow."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker metric PTFE tubing?",
+          "a": "The maker figures on the 100 ft rows are 22 bar for 12 x 10 mm, 19 bar for 14 x 12 mm and 17 bar for 16 x 14 mm. The 25 ft 12 mm row shows 0 bar on our table, which conflicts, so confirm the rating for that part and your temperature before use."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids suit Parker PTFE fluoropolymer metric tubing?",
+          "a": "PTFE is chemically inert to almost all industrial chemicals and solvents, non-wetting and heat resistant, so it suits chemical, solvent, hot water and gas lines. Check the maker's pressure rating at temperature; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares PTFE with FEP and PFA."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with Parker PTFE metric tubing?",
+          "a": "Our listing holds no certificates for these sizes. If you need a certificate of conformity, material declaration or food-contact statement, ask with your enquiry and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings fit Parker 12 mm, 14 mm and 16 mm PTFE tubing?",
+          "a": "Use metric compression or push-in fittings of the same OD; with PTFE, compression fittings with an insert are the usual choice on larger sizes. Push-in fittings and connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker large-bore PTFE tubing be installed?",
+          "a": "Cut square with a sharp blade, deburr, and route in generous bends, since 12 to 16 mm PTFE is stiff and will kink if forced. Support long runs and check fittings after the first heat cycle."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker PTFE metric and Parker 201 series PTFE listings?",
+          "a": "Both are the same 201 series PTFE with 1 mm walls; this listing covers 12, 14 and 16 mm OD, while [Parker 201 Series PTFE Tubing](/p/parker-201-series-ptfe-tubing) covers 3 to 10 mm OD with higher pressure ratings. Pick by the fitting size you need."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin of Parker PTFE metric fluoropolymer tubing?",
+          "a": "The maker's origin on this listing is the United States. We ship from Dubai, UAE worldwide; plastic tube without fittings normally falls under HS subheading 3917.32."
+        },
+        {
+          "slot": "M",
+          "q": "Is Parker PTFE metric tubing in stock in Dubai?",
+          "a": "Yes. We keep Parker PTFE fluoropolymer metric tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers and lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-ptfe-fluoropolymer-tubings-fractional",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker PTFE fluoropolymer tubing, fractional?",
+          "a": "This is Parker's inch-size (fractional) PTFE tubing in the 101 series, natural white, Shore D 50 to 65, for chemical, solvent, gas and hot-fluid lines. The listing holds 53 part numbers from 1/8\" to about 1\" OD in 25, 50 and 100 ft lengths."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 101 PTFE part number such as 101-0250031-NT-100?",
+          "a": "101-0250031-NT-100 reads as 101 series PTFE, 0250 for a 1/4\" OD, 031 for a 0.031\" wall, NT natural and 100 for 100 ft; that gives a 3/16\" ID, as our table shows. 101-0438062 is 7/16\" OD with a 0.062\" wall."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Parker fractional PTFE tubing cover?",
+          "a": "The listing runs from 101-0125031 (1/8\" OD, 1/16\" ID) to 101-1100050 (1\" ID), with wall codes 031, 047 and 062 in the part number; most sizes come in both 0.031\" and 0.062\" walls. Thicker walls give higher pressure at the same OD."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the wall thickness for Parker fractional PTFE tubing?",
+          "a": "For the same OD, the 0.062\" wall roughly doubles pressure capacity over the 0.031\" wall: 101-0438062 is listed at 41 bar against 19 bar for 101-0438031. Use the thin wall for flexibility and flow, the thick wall for pressure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Parker fractional PTFE tubing rated for?",
+          "a": "Maker figures on our table run from 4 bar to 41 bar depending on OD and wall. Some 50 ft rows show lower figures than the same size in 100 ft (101-0563031: 4 bar vs 15 bar), so confirm the rating for your exact part number and temperature."
+        },
+        {
+          "slot": "F",
+          "q": "What chemicals can Parker PTFE fractional tubing handle?",
+          "a": "PTFE is chemically inert to nearly all industrial chemicals and solvents and is non-wetting, so it suits acids, solvents, fuels and hot water. Ratings fall with temperature; see our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) for PTFE versus FEP and PFA."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be supplied with Parker fractional PTFE tubing?",
+          "a": "Our listing holds no certificates for this range. Ask in your enquiry for any certificate of conformity or material declaration, and we will request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings fit Parker 1/4\" and 3/8\" PTFE tubing?",
+          "a": "Use inch compression or push-in fittings of the same OD, such as 1/4\" fittings for 101-0250 tube and 3/8\" fittings for 101-0375 tube. Inch push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker PTFE fractional tubing be cut and routed?",
+          "a": "Cut square with a tube cutter, deburr and route in smooth bends, as PTFE kinks if forced into a tight radius. For pressure lines use compression fittings with a support insert and check them after first heating."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker fractional PTFE and Parker fractional FEP tubing?",
+          "a": "This PTFE is white and non-stick, while [Parker FEP fractional tubing](/p/parker-fep-fluoropolymer-tubings-fractional) is offered clear and is weldable. Choose FEP to see the fluid, PTFE for heat and non-stick."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin of Parker fractional PTFE tubing?",
+          "a": "The listing records the United States as country of origin. We ship from Dubai, UAE to buyers worldwide, and plastic tube without fittings normally falls under HS subheading 3917.32."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker fractional PTFE tubing in Dubai?",
+          "a": "Yes. We keep Parker PTFE fluoropolymer fractional tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send 101 part numbers and lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-chemical-resistant-ptfe-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker chemical-resistant PTFE tubing?",
+          "a": "This listing holds 22 Parker PTFE tubes for chemical and heat-resistant service: black thin-wall tubes with part numbers starting 81914/1 and clear 101 series tubes in 50 ft lengths. The maker lists chemical inertness, non-flammability and a 500°F temperature limit."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Parker 81914/1 and 101 PTFE part numbers differ on this listing?",
+          "a": "81914/1-10xx-0TC parts are black PTFE with thin walls of 0.023\" to 1/25\", from 3/16\" to 1-1/2\" ID. 101-xxxxxxx-NT-50 parts are clear PTFE where the digits give OD and wall, so 101-0625062 is 5/8\" OD with a 0.062\" wall."
+        },
+        {
+          "slot": "D",
+          "q": "What inside diameters does Parker chemical-resistant PTFE tubing cover?",
+          "a": "The black 81914/1 tubes run from 3/16\" to 1-1/2\" ID, and the clear 101 tubes from 3/32\" to 1\" ID. Pick ID for the flow you need and OD to suit your fitting."
+        },
+        {
+          "slot": "D",
+          "q": "Is Parker chemical-resistant PTFE tubing suitable for vacuum?",
+          "a": "No. The listing records this tube as not vacuum rated, which fits its thin walls. For suction lines choose a vacuum-rated tube such as [Parker 201 series PTFE](/p/parker-201-series-ptfe-tubing)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Parker chemical-resistant PTFE tubing rated for?",
+          "a": "The maker figures range from 1 bar to 15 bar: the thin-wall black 81914/1 tubes run 1 to 7 bar, and the clear 101 tubes 3 to 15 bar, with 101-0156031 the highest. These are low-pressure tubes, so check the row and temperature before use."
+        },
+        {
+          "slot": "F",
+          "q": "Which chemicals is Parker chemical-resistant PTFE tubing compatible with?",
+          "a": "The maker lists acetone, chlorine, ether, iodine, 35% nitric acid and zinc chloride, plus kerosene and mineral oil, and food fluids such as milk, juice, vinegar and potable water. It is listed as chemically inert, non-wetting and self-extinguishing."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates come with Parker chemical-resistant PTFE tubing?",
+          "a": "Our listing holds no certificates for these parts. If you need a certificate of conformity or material declaration, ask with your enquiry and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings are used with Parker chemical-resistant PTFE tubing?",
+          "a": "The maker lists compression and push-to-connect fittings; for thin-wall PTFE a compression fitting with a support insert holds best. Push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should thin-wall Parker PTFE tubing be handled?",
+          "a": "Thin-wall PTFE kinks easily, so uncoil it carefully, route in wide bends and support it along its length. Cut square with a sharp blade and avoid crushing the tube in clamps."
+        },
+        {
+          "slot": "J",
+          "q": "Where is Parker chemical-resistant PTFE tubing used?",
+          "a": "The maker lists defence and military industry use, plus chemical, food, beverage and water applications. Thin-wall PTFE suits sleeving, insertion and low-pressure chemical transfer where heat up to 500°F or aggressive media rule out other plastics."
+        },
+        {
+          "slot": "L",
+          "q": "Where does Parker chemical-resistant PTFE tubing originate?",
+          "a": "The listing records the United States as country of origin. We export from Dubai, UAE, and plastic tube without fittings normally falls under HS subheading 3917.32."
+        },
+        {
+          "slot": "M",
+          "q": "Is Parker chemical-resistant PTFE tubing in stock in Dubai?",
+          "a": "Yes. We keep Parker chemical-resistant PTFE tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-chemical-resistant-fep-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker chemical-resistant FEP tubing?",
+          "a": "This listing holds 4 large-bore Parker FEP tubes in natural colour, 11/16\" to 7/8\" OD, for chemical, food, beverage and water transfer. The maker lists chemical inertness, a non-wetting surface, weldability and a 400°F temperature limit."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker FEP part number such as 103-0875062-NT-50?",
+          "a": "103-0875062-NT-50 is 103 series FEP, 0875 for 7/8\" OD, 062 for a 0.06\" wall, NT natural, 50 ft long, giving a 3/4\" ID. 103-0688031 is 11/16\" OD with a 0.03\" wall."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Parker chemical-resistant FEP tubing come in?",
+          "a": "The four sizes are 11/16\" OD x 5/8\" ID, 3/4\" OD x 11/16\" ID, 27/32\" OD x 3/4\" ID and 7/8\" OD x 3/4\" ID, all in 50 ft lengths. Smaller FEP sizes are on [Parker FEP fractional tubing](/p/parker-fep-fluoropolymer-tubings-fractional)."
+        },
+        {
+          "slot": "D",
+          "q": "What bend radius and vacuum rating apply to Parker chemical-resistant FEP tubing?",
+          "a": "The listing gives a 6\" bend radius and marks the tube as vacuum rated. Large-bore FEP is semi-clear and stiff at Shore D 55, so allow for that bend radius when planning routes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Parker chemical-resistant FEP tubing rated for?",
+          "a": "The maker figures are 4 to 8 bar: 4 bar for 3/4\" OD, 5 bar for 11/16\" and 27/32\" OD, and 8 bar for 7/8\" OD with its 0.06\" wall. These are low-pressure transfer tubes, and capacity falls further at high temperature."
+        },
+        {
+          "slot": "F",
+          "q": "Which chemicals and foods is Parker FEP tubing compatible with?",
+          "a": "The maker lists acetone, chlorine, ether, iodine, 35% nitric acid and zinc chloride, plus kerosene and mineral oil, and food fluids such as beer, dairy, juice, soft drinks and potable water. FEP is chemically inert and self-extinguishing."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can come with Parker FEP tubing?",
+          "a": "Our listing holds no certificates for these parts. Ask in your enquiry for any food-contact statement, certificate of conformity or material declaration you need."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings are used with large-bore Parker FEP tubing?",
+          "a": "The maker lists compression and push-to-connect fittings; at 11/16\" to 7/8\" OD compression fittings with inserts are the usual choice. Connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "Can Parker chemical-resistant FEP tubing be autoclaved?",
+          "a": "Yes, the listing marks this FEP tubing as autoclavable. Its pressure rating is lower at sterilising temperature, so keep the line unpressurised or at low pressure during the cycle."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker FEP and PTFE chemical-resistant tubing?",
+          "a": "FEP is semi-clear, weldable and rated to 400°F, while [Parker chemical-resistant PTFE](/p/parker-chemical-resistant-ptfe-tubing) is rated to 500°F and comes in black or clear. Choose FEP to see the fluid, PTFE for higher heat; our [materials guide](/blog/pneumatic-tubing-materials-guide) explains more."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin of Parker chemical-resistant FEP tubing?",
+          "a": "The listing records the United States as country of origin. We ship from Dubai, UAE worldwide, and plastic tube without fittings normally falls under HS subheading 3917.32."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker chemical-resistant FEP tubing in stock in Dubai?",
+          "a": "Yes. We keep Parker chemical-resistant FEP tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-fep-fluoropolymer-tubings-fractional",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker FEP fluoropolymer tubing, fractional?",
+          "a": "This is Parker's inch-size FEP tubing in the 103 series for chemical, fluid, water, laboratory and life-science lines. The maker lists inertness to nearly all industrial chemicals and solvents, UV and crack resistance, 400°F, and suitability for potable water; this listing holds 48 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 103 FEP part number such as 103-0250062-NT-100?",
+          "a": "103-0250062-NT-100 is 103 series FEP, 0250 for 1/4\" OD, 062 for a 0.062\" wall, NT natural, 100 ft long, giving a 1/8\" ID. The last number is the length: 25, 50, 100 or 500 ft."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Parker fractional FEP tubing cover?",
+          "a": "The listing runs from 103-0125031 (1/8\" OD, 1/16\" ID) to 103-1000062 (1\" OD, 7/8\" ID), including 3/16\", 5/32\", 1/4\", 5/16\", 3/8\", 7/16\", 1/2\", 9/16\", 5/8\" and 3/4\" OD. Most sizes come in 0.031\" and 0.062\" walls."
+        },
+        {
+          "slot": "D",
+          "q": "What lengths does Parker fractional FEP tubing come in?",
+          "a": "Parts end in -25, -50, -100 or -500 for 25, 50, 100 or 500 ft, such as 103-0250031-NT-25 and 103-0250031-NT-500. Order the length closest to your run to reduce joints."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Parker fractional FEP tubing rated for?",
+          "a": "Maker figures on our table run from 3 bar to 94 bar by size and wall. Some rows conflict, such as 103-0250047 at 94 bar in 500 ft and 23 bar in 100 ft, and 50 ft rows often show lower figures, so confirm the rating for your exact part and temperature."
+        },
+        {
+          "slot": "F",
+          "q": "Is Parker FEP fractional tubing suitable for potable water and beverages?",
+          "a": "Yes, the listing marks it for potable water use and for beverages, gas and water. FEP is chemically inert to nearly all industrial chemicals and solvents and non-wetting; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares FEP, PTFE and PFA."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can be supplied with Parker FEP fractional tubing?",
+          "a": "Our listing holds no certificates. Ask with your enquiry for a certificate of conformity, potable-water statement or material declaration and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with Parker 1/4\" and 3/8\" FEP tubing?",
+          "a": "Use inch compression or push-in fittings matched to the OD: 1/4\" fittings for 103-0250 tube and 3/8\" fittings for 103-0375 tube. Inch push-in fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "Can Parker FEP fractional tubing be used outdoors?",
+          "a": "Yes, the listing marks it for indoor and outdoor use, with UV and crack resistance. FEP is weldable and nonflammable, and its tensile strength is listed at 5000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker FEP fractional and Parker FEP metric tubing?",
+          "a": "Fractional 103 series tube is sized in inches from 1/8\" to 1\" OD, while [Parker FEP metric](/p/parker-fep-fluoropolymer-tubings-metric) 203 series is sized 4 to 10 mm OD. The material is the same; match the series to your fittings."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Parker FEP fractional tubing?",
+          "a": "The listing records the United States as country of origin. We ship from Dubai, UAE to buyers worldwide; plastic tube without fittings normally falls under HS subheading 3917.32."
+        },
+        {
+          "slot": "M",
+          "q": "Is Parker FEP fractional tubing in stock in Dubai?",
+          "a": "Yes. We keep Parker FEP fluoropolymer fractional tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send 103 part numbers and lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-fep-fluoropolymer-tubings-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker FEP fluoropolymer tubing, metric?",
+          "a": "This listing holds 4 Parker metric FEP tubes in the 203 series, 4 to 10 mm OD, for chemical, fluid, water, laboratory and life-science lines. The maker lists inertness to nearly all industrial chemicals and solvents, 400°F and suitability for potable water."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 203 FEP part number such as 203-0600100-NT-100?",
+          "a": "203-0600100-NT-100 is 203 series FEP, 0600 for 6 mm OD, 100 for a 1 mm wall, NT natural, 100 ft long, giving a 4 mm ID. 203-1000100 is the 10 mm OD x 8 mm ID tube."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Parker FEP metric tubing come in?",
+          "a": "The four sizes are 4 x 2 mm, 6 x 4 mm, 8 x 6 mm and 10 x 8 mm OD x ID, all in 100 ft lengths and coil form. Larger or inch sizes are on [Parker FEP fractional](/p/parker-fep-fluoropolymer-tubings-fractional)."
+        },
+        {
+          "slot": "D",
+          "q": "How flexible is Parker metric FEP tubing?",
+          "a": "The listing gives elongation of 250% to 330% and tensile strength of 5000 psi, with Shore D 55 hardness. It is supplied in coils and bends more easily than PTFE, but still needs generous bend radii."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Parker FEP metric tubing rated for?",
+          "a": "Maker figures on our table are 80 bar for 4 x 2 mm, 12 bar for 6 x 4 mm, 9 bar for 8 x 6 mm and 7 bar for 10 x 8 mm. Pressure falls as temperature rises toward 400°F, so check the rating at your operating temperature."
+        },
+        {
+          "slot": "F",
+          "q": "Is Parker metric FEP tubing safe for potable water and beverages?",
+          "a": "Yes, the listing marks it for potable water use and for beverages, gas and water. FEP is chemically inert, non-wetting and weldable; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) explains when FEP beats nylon or polyurethane."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be provided with Parker metric FEP tubing?",
+          "a": "Our listing holds no certificates. Ask in your enquiry for a certificate of conformity or potable-water statement, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings fit Parker 4 mm and 6 mm FEP tubing?",
+          "a": "The maker lists compression fittings for the 203 series, matched to the metric OD. Use 4 mm fittings for 203-0400100 and 6 mm for 203-0600100; push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker metric FEP tubing be cut and installed?",
+          "a": "Cut square with a sharp cutter, deburr, and use a support insert in compression fittings on thin walls. Allow for thermal expansion on hot lines and route in smooth bends to avoid kinks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is Parker metric FEP tubing used?",
+          "a": "The maker lists chemical, fluid, water, laboratory and life-science applications, indoors and outdoors. Its UV, crack and chemical resistance suit sampling, dosing and instrument lines."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin of Parker FEP metric tubing?",
+          "a": "The listing records the United States as country of origin. We ship from Dubai, UAE worldwide; plastic tube without fittings normally falls under HS subheading 3917.32."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker FEP metric tubing in stock in Dubai?",
+          "a": "Yes. We keep Parker FEP fluoropolymer metric tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 203 part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-polypropylene-tubing-black-white-100-ft-per-package",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker PP series polypropylene tubing?",
+          "a": "Parker PP series is polypropylene tubing in black or white for pneumatic lines, with FDA/NSF listed as a distinct property. This listing holds 4 part numbers, maker-rated at 21 to 24 bar, with a 93°C temperature limit."
+        },
+        {
+          "slot": "B",
+          "q": "What do the PP and PPB prefixes mean on Parker polypropylene tubing?",
+          "a": "On this listing PP parts are white and PPB parts are black, so PP-43-0500 and PPB-43-0500 are the same size in two colours. The middle number identifies the size and the last group the pack."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Parker polypropylene tubing come in on this listing?",
+          "a": "The listing covers PP-43 and PPB-43 with a 1/25\" wall, PPB-53 with a 0.062\" wall and PP-21 with a 0.023\" wall. Our size table's diameter descriptions for these parts are inconsistent, so confirm OD and ID for your fitting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Parker polypropylene tubing?",
+          "a": "The listing gives a minimum bending radius of 1/2\". Polypropylene is stiffer than polyurethane, so keep to this radius to avoid kinking."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Parker polypropylene tubing rated for?",
+          "a": "The maker states 300 to 350 psi (21 to 24 bar) by size: 21 bar for PP-43 and PPB-43, 24 bar for PPB-53 and PP-21. Polypropylene loses pressure capacity as temperature rises toward 93°C, so check the rating at your temperature."
+        },
+        {
+          "slot": "F",
+          "q": "Is Parker polypropylene tubing suitable for food and water?",
+          "a": "The listing records FDA/NSF as a distinct property of this PP series, which points to food and potable-water use. Ask us for the maker's statement for your exact part if you need it for an audit."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with Parker PP series tubing?",
+          "a": "The listing records FDA/NSF as a property but holds no certificate. Ask in your enquiry for the maker's compliance statement and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with Parker polypropylene tubing?",
+          "a": "Use inch push-in or compression fittings matched to the tube OD, with a support insert on thin walls. Push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker polypropylene tubing be installed?",
+          "a": "Cut square, deburr and push fully into the fitting, checking grip by pulling back. Keep bends above 1/2\" and keep the line away from heat beyond 93°C."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between polypropylene and polyethylene tubing?",
+          "a": "This Parker PP series is rated 21 to 24 bar up to 93°C with FDA/NSF listed, while the EB black polyethylene in [Parker Tubings](/p/parker-tubings) is rated 4 to 10 bar. Choose polypropylene for higher-pressure or food-related lines; see our [materials guide](/blog/pneumatic-tubing-materials-guide)."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Parker polypropylene tubing?",
+          "a": "The listing records the United States as country of origin. We export from Dubai, UAE, and plastic tube without fittings normally falls under HS subheading 3917.32."
+        },
+        {
+          "slot": "M",
+          "q": "Is Parker polypropylene tubing in stock in Dubai?",
+          "a": "Yes. We keep Parker PP series polypropylene tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send PP or PPB part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-tubings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker Tubings listing contain?",
+          "a": "Parker Tubings gathers 136 Parker air and fluid tubes: 95U inch and 95UM metric polyurethane, 95FR polyether polyurethane, EB black polyethylene, NBR/NNR nylon and 104 series PFA. Maker ratings run 4 to 26 bar by size, and the listing gives -60°F to +200°F."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 95U polyurethane part number such as 95U-4-062-BLK-0100?",
+          "a": "95U-4-062-BLK-0100 is 95U polyurethane, size 4 in sixteenths of an inch (1/4\" OD), 0.062\" wall, black, 100 ft long, giving a 1/8\" ID. 95UM-6X1 means 6 mm OD x 1 mm wall; colour codes include BLK, BLU, GRN, RED, WHT and TBL."
+        },
+        {
+          "slot": "D",
+          "q": "What inch sizes of Parker 95U polyurethane tubing are listed?",
+          "a": "95U sizes run from 1/8\" OD (95U-2-031) through 5/32\", 1/4\", 3/8\" and 1/2\" to 3/4\" OD (95U-12-125). 1/4\" comes in 0.045\" and 0.062\" walls, and 1/2\" in 0.062\" and 0.09\" walls."
+        },
+        {
+          "slot": "D",
+          "q": "What metric sizes of Parker 95UM polyurethane tubing are listed?",
+          "a": "95UM comes in 4 x 0.75, 6 x 1, 8 x 1.5, 10 x 1.75 and 12 x 2 mm OD x wall, in 100 ft and 500 ft lengths. Our table shows some IDs incorrectly (for example 6 mm ID on the 6 mm tube), so work from OD and wall."
+        },
+        {
+          "slot": "D",
+          "q": "Is Parker tubing on this listing rated for vacuum?",
+          "a": "Yes, the listing records vacuum service to 28 inHg and marks the range vacuum rated. Use thicker-wall sizes for suction lines to resist collapse."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure ratings apply to Parker 95U, 95UM and EB tubing?",
+          "a": "Maker figures are 8 to 17 bar for 95U, 10 to 13 bar for 95UM, 15 to 17 bar for 95FR, 4 to 10 bar for EB polyethylene, 26 bar for NBR/NNR nylon and 16 to 20 bar for 104 PFA. All fall as temperature rises; check the row for your part."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 95FR polyether polyurethane tubing for?",
+          "a": "95FR is polyether polyurethane in 1/4\", 3/8\" and 1/2\" OD, rated 15 to 17 bar, listed for air and water. It comes in white, green, blue and black on 250 ft and 500 ft reels; see our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) for polyurethane grades."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with Parker 95U and 95UM polyurethane tubing?",
+          "a": "The maker lists compression and push-to-connect fittings: inch fittings for 95U and metric fittings for 95UM, matched to the OD. Push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker polyurethane tubing be installed?",
+          "a": "Cut square, push fully into the fitting and pull back to check grip; keep bends above the 2 3/8\" bend radius listed for the semi-rigid grades. Replace any kinked, cut or hardened length."
+        },
+        {
+          "slot": "J",
+          "q": "Where is Parker 95U and nylon tubing used?",
+          "a": "The maker lists machine tool systems and marine control systems, plus air, water, oil and lubricant lines. Nylon NBR/NNR suits higher pressure, polyurethane flexible machine lines and EB polyethylene low-pressure runs."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin and HS code of Parker Tubings?",
+          "a": "The listing records the United States as country of origin and HS code 3917320050. We ship from Dubai, UAE to buyers worldwide with both on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker 95U, 95UM and EB tubing in stock in Dubai?",
+          "a": "Yes. We keep the Parker tubing on this listing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers, colours and lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "atp-tubings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the ATP Tubings listing contain?",
+          "a": "ATP Tubings is a set of 16 ATP air and water tubes in polyethylene, LLDPE and polyurethane, in inch and metric sizes from 5/32\" to 5/8\" and 6 to 12 mm OD. The maker lists Shore A 98, push-to-connect compatibility and pressures of 10 to 14 bar by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read ATP part numbers such as PU08MAG and PE38-DY?",
+          "a": "On this listing PU08MAG is 8 mm OD tube in green and PU06MAY 6 mm in yellow, while PE38-DY is 1/4\" ID x 3/8\" OD polyethylene in yellow and HDPE58ANA is 5/8\" OD in natural. The digits give the size and the final letters the colour."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does ATP tubing come in?",
+          "a": "Inch sizes are 5/32\", 1/4\", 3/8\" and 5/8\" OD; metric sizes are 6, 8, 10 and 12 mm OD. Lengths on this listing are 100, 250 and 1000 ft."
+        },
+        {
+          "slot": "D",
+          "q": "Which ATP tube should I use with a 6 mm or 1/4\" push-in fitting?",
+          "a": "Use a 6 mm OD tube such as PU06MAG for 6 mm fittings, and a 1/4\" OD tube for 1/4\" fittings. The two are close but not the same OD, so do not mix metric tube with inch fittings."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is ATP tubing rated for?",
+          "a": "The maker states 150 to 200 psi (10 to 14 bar) by size: 12 bar for most 1/4\", 6 mm and 8 mm parts, 14 bar for 5/32\", and 10 bar for 3/8\", 5/8\", 10 mm and 12 mm. Ratings are at room temperature and fall with heat up to the 140°F limit."
+        },
+        {
+          "slot": "F",
+          "q": "Can ATP tubing be used for water?",
+          "a": "Yes, the maker lists air and water use, but the water is non-potable only. It is non-marking and resists algae growth; for drinking water or food choose an FDA/NSF tube such as [Parker polypropylene](/p/parker-polypropylene-tubing-black-white-100-ft-per-package)."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with ATP tubing?",
+          "a": "Our listing holds no certificates for ATP tubing. Ask in your enquiry for a certificate of conformity or material declaration, and we request it from the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with ATP tubing?",
+          "a": "The maker lists push-to-connect fittings, matched to the tube OD in inch or metric. Push-in connectors are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and tolerance apply to ATP tubing?",
+          "a": "The listing gives a 1\" bend radius and an OD tolerance of -0.004\" to +0.004\". Keep to the bend radius and cut square so push-in fittings grip and seal reliably."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between polyethylene and polyurethane tubing in the ATP range?",
+          "a": "In this ATP range the polyurethane PU tubes carry 10 to 12 bar in 6 to 12 mm, while the polyethylene PE and HDPE tubes in 3/8\" and 5/8\" carry 10 bar; the maker lists abrasion and wear resistance for the range. Our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them in detail."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin and HS code of ATP tubing?",
+          "a": "The listing records the United States as country of origin and HS code 3917320050. We ship from Dubai, UAE to buyers worldwide with both on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep ATP tubing in stock in Dubai?",
+          "a": "Yes. We keep ATP tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, colours and lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "nycoil-tubings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Nycoil nylon tubing used for?",
+          "a": "Nycoil tubing on this listing is semi-flexible nylon air tubing for automation, with 5 part numbers from 5/32\" to 1/2\" OD and 6 mm OD. The maker lists Shore D 60, chemical and humidity resistance, and pressures of 18 to 28 bar by size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Nycoil nylon tubing come in?",
+          "a": "Inch sizes are 5/32\", 1/4\", 3/8\" and 1/2\" OD, and the metric size is 6 mm OD x 4 mm ID. Wall thickness runs from 0.03\" on the small sizes to 0.06\" on 1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which Nycoil tube suits a 1/4\" or 6 mm push-in fitting?",
+          "a": "Use the 1/4\" OD tube for 1/4\" fittings and the 6 mm OD tube for 6 mm fittings. They are close in size but not interchangeable, so match tube and fitting standards."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Nycoil nylon tubing rated for?",
+          "a": "The maker states 267 to 400 psi (18 to 28 bar) by size: 28 bar for 1/4\" and 6 mm, 23 bar for 5/32\" and 3/8\", and 18 bar for 1/2\". These are room-temperature figures that fall as temperature rises."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range is Nycoil nylon tubing rated for?",
+          "a": "The listing gives -4°F to +175°F. Nylon resists chemicals and humidity, but pressure capacity falls toward the top of that range, so check the maker's rating at temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with Nycoil tubing?",
+          "a": "Our listing holds no certificates for Nycoil tubing. Ask in your enquiry for a certificate of conformity or material declaration and we request it from the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings work with Nycoil nylon tubing?",
+          "a": "The maker lists compression and push-to-connect fittings for Nycoil, matched to the OD. Inch and metric push-in fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "What tolerance and handling does Nycoil nylon tubing need?",
+          "a": "The listing gives an OD tolerance of -0.004\" to +0.002\". Cut square and route above the minimum bend radius, since semi-flexible nylon kinks if forced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is Nycoil nylon tubing used?",
+          "a": "The maker lists automation as the industry application, for air lines on machines, valve manifolds and cylinders. Colour choice helps identify circuits."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Nycoil nylon and polyurethane air tubing?",
+          "a": "Nylon like Nycoil is firmer and holds higher pressure, 18 to 28 bar here, while polyurethane is more flexible and kink tolerant at lower ratings. See our [tubing materials guide](/blog/pneumatic-tubing-materials-guide)."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin and HS code of Nycoil tubing?",
+          "a": "The listing records the United States as country of origin and HS code 3917320050. We ship from Dubai, UAE to buyers worldwide."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Nycoil nylon tubing in Dubai?",
+          "a": "Yes. We keep Nycoil nylon tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

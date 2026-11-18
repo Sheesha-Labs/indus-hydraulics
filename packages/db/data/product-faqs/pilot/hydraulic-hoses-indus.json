@@ -1,0 +1,738 @@
+{
+  "family": "hydraulic-hoses (Indus Hydraulics brand)",
+  "extraFacts": [
+    {
+      "fact": "EN 857 specifies wire-braid reinforced compact rubber hydraulic hoses and hose assemblies, types 1SC and 2SC. It covers the hose and assembly, not the end fittings, and lists hydraulic fluids to ISO 6743-4 except HFD R, HFD S and HFD T.",
+      "source": "EN 857:2015 scope (BSI/CEN catalogue entry 'Rubber hoses and hose assemblies - Wire braid reinforced compact type for hydraulic applications - Specification'); superseded by EN 857:2026"
+    },
+    {
+      "fact": "EN 856 specifies four types of rubber-covered spiral wire reinforced hydraulic hose, 4SP, 4SH, R12 and R13, in nominal bores 6 to 51, for hydraulic fluids to ISO 6743-4 except HFD R, HFD S and HFD T: -40 to +100 °C for 4SP and 4SH, -40 to +120 °C for R12 and R13.",
+      "source": "EN 856:2015+AC:2019 scope ('Rubber hoses and hose assemblies - Rubber-covered spiral wire reinforced hydraulic type - Specification')"
+    },
+    {
+      "fact": "SAE J517 gives the general, dimensional and performance specifications for the SAE 100R series of hydraulic hose used on mobile and stationary equipment; SAE J343 gives the test methods.",
+      "source": "SAE J517_202007 'Hydraulic Hose' abstract (sae.org)"
+    },
+    {
+      "fact": "Figures of the sibling hoses in this family, as listed on each product page: 1SC 225 bar at -04 to 105 bar at -12, bend radius 50-180 mm; 2SC 400 bar at -04 to 165 bar at -16, bend radius 50-150 mm; R16 400 bar at 1/4\" to 165 bar at 1\"; R17 210 bar maximum, 1/4\" to 1\"; 4SP 450 bar at -06 to 210 bar at -32, bend radius 180-630 mm; 4SH 420 bar at -12 to 250 bar at -32, bend radius 280-700 mm; R12 280 bar from -06 to -16, 210 bar at -20, 175 bar at -24, 172 bar at -32; R13 350 bar from -12 to -32, bend radius 240-600 mm; R15 420 bar from -12 to -24, bend radius 265-510 mm; R4 21 bar at 3/4\" to 7 bar at 2\"; jack hose 10,000 psi at 1/4\" and 3/8\".",
+      "source": "Indus Hydraulics product listings (specs and size tables) for this family, facts dump 2026-11-18"
+    }
+  ],
+  "products": [
+    {
+      "slug": "r1-1sc-compact-single-wire-braid-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is EN 857 1SC compact single-wire braid hydraulic hose used for?",
+          "a": "EN 857 1SC is a compact single-wire-braid hydraulic hose for tight routing on mobile equipment such as skid-steer loaders, mini-excavators and telehandlers. It has an oil-resistant NBR tube, one high-tensile steel wire braid and an abrasion- and weather-resistant synthetic rubber cover. Other grades are on the [hydraulic hoses shelf](/c/hydraulic-hoses)."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does Indus list for EN 857 1SC hose?",
+          "a": "The Indus 1SC hose is listed from 1/4\" to 1-1/4\" bore (DN6 to DN31). Pressure, bend-radius and outside-diameter figures are published from -04 to -12, with outside diameters of 12.2 mm to 26.5 mm; for larger bores, confirm the figures with us before you specify."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right dash size of 1SC hose for a replacement line?",
+          "a": "Match the dash size to the inside bore of the old hose, not its outside diameter: -04 is 1/4\" bore and -12 is 3/4\". Read the size off the layline where it is legible, and measure cut length rather than overall length; [measuring a hose for replacement](/blog/how-to-measure-a-hydraulic-hose) shows how."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of EN 857 1SC hose at each size?",
+          "a": "EN 857 1SC hose is rated 225 bar at -04 (1/4\"), falling to 105 bar at -12 (3/4\"), with a minimum burst of four times working pressure (900 bar at -04). Pressure drops as the bore rises, so take the figure for your size, and the end fittings must carry the same rating."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of 1SC compact hose?",
+          "a": "The minimum bend radius of 1SC hose is 50 mm at -04, rising to 180 mm at -12. The listing gives it as half the bend radius of EN 853 1SN, which is the reason to choose it; measure the radius on the inside of the bend and start the bend clear of the ferrule."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids and temperatures suit 1SC compact hydraulic hose?",
+          "a": "1SC hose is for mineral-oil hydraulic fluid from -40°C to 100°C continuous, with an oil-resistant NBR tube. EN 857 lists ISO 6743-4 fluids except HFD R, HFD S and HFD T; phosphate-ester, water-glycol and some biodegradable fluids lower the upper limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus 1SC hose meet, and what does EN 857 cover?",
+          "a": "The Indus 1SC hose conforms to EN 857 1SC. EN 857 is the European specification for compact wire-braid rubber hydraulic hose, types 1SC and 2SC, and covers the hose and assembly but not the end fittings. Name any test or batch documents you need on the order."
+        },
+        {
+          "slot": "K",
+          "q": "1SC vs 1SN hydraulic hose: what is the difference?",
+          "a": "1SC is the compact version of single-wire-braid hose: a smaller outside diameter and about half the bend radius of EN 853 1SN at the same bore. Pick 1SC where routing space is tight and 1SN where standard EN 853 dimensions are already specified. For more pressure in the same compact size, see [2SC compact two-wire hose](/p/2sc-compact-two-wire-braid-hose)."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings and ferrules go on 1SC compact braid hose?",
+          "a": "1SC hose takes braided-hose crimp fittings and a ferrule matched to the compact outside diameter; a ferrule sized for 1SN will not crimp it correctly. JIC 37°, ORFS, BSP, NPT and metric 24° ends are crimped on this grade; see [braided hose crimp fittings](/c/braided-hose-crimp-fittings) and tell us the fitting series and whether it is skive or no-skive."
+        },
+        {
+          "slot": "I",
+          "q": "How should 1SC compact hose be installed to avoid early failure?",
+          "a": "Install 1SC hose with no twist, never tighter than its minimum bend radius (50 mm at -04), and with the bend starting clear of the fitting. Twist and tight bends at the ferrule are the usual causes of short life in compact hose; [installed with a twist](/blog/hydraulic-hose-installed-with-a-twist) shows how to spot it."
+        },
+        {
+          "slot": "L",
+          "q": "Where is Indus 1SC compact hose made, and can it be exported from Dubai?",
+          "a": "The 1SC hose is listed with the USA as its country of origin, and we export it from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the commercial invoice, packing list and certificate of origin are prepared for that country's customs."
+        },
+        {
+          "slot": "M",
+          "q": "Is EN 857 1SC hose in stock in Dubai?",
+          "a": "Yes. We keep 1SC compact single-wire braid hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE deliveries arrive within 3 working days. It is sold per metre, so send the bore, length and end fittings through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "2sc-compact-two-wire-braid-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is EN 857 2SC compact two-wire braid hose used for?",
+          "a": "EN 857 2SC is a compact two-wire-braid hydraulic hose for high-pressure mobile lines where routing space is tight, such as skid-steer and excavator attachments. It replaces bulkier R2 2SN where bend radius is critical, with an NBR tube, two high-tensile steel wire braids and a weather-resistant rubber cover."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes is EN 857 2SC hose listed in?",
+          "a": "The Indus 2SC hose is listed from 1/4\" to 1-1/4\" bore (DN6 to DN31). Published pressure, bend-radius and outside-diameter figures run from -04 to -16, with outside diameters of 13.8 mm to 36.6 mm; ask us for the figures at 1-1/4\" before specifying it."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is 2SC compact hose rated for by size?",
+          "a": "2SC compact hose is rated 400 bar at -04 (1/4\"), falling to 165 bar at -16 (1\"), with a minimum burst of 1600 bar at -04 (safety factor 4:1). Every bore has its own figure, so check the size you are fitting; [hose pressure by size](/blog/hydraulic-hose-pressure-by-size) explains why one number per grade misleads."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of 2SC compact two-wire hose?",
+          "a": "The minimum bend radius of 2SC hose is 50 mm at -04 and 150 mm at -16. That tight radius is what lets 2SC replace a larger 2SN line on a crowded machine; measure on the inside of the bend and keep the bend off the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "Which hydraulic fluids and temperatures can 2SC hose handle?",
+          "a": "2SC hose runs mineral-oil hydraulic fluid from -40°C to 100°C continuous through an oil-resistant NBR tube. EN 857 excludes HFD R, HFD S and HFD T fluids, and phosphate-ester, water-glycol or some biodegradable fluids reduce the upper limit, so tell us the fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does Indus 2SC hose conform to?",
+          "a": "The Indus 2SC hose conforms to EN 857 2SC, the European standard for compact wire-braid reinforced rubber hydraulic hose. EN 857 covers the hose and assembly, not the end fittings; [compact hose: 1SC and 2SC](/blog/compact-hose-1sc-2sc) explains where the compact types fit."
+        },
+        {
+          "slot": "K",
+          "q": "2SC vs R16 hose: which compact two-wire hose should I specify?",
+          "a": "2SC and R16 are both compact two-wire-braid hoses, and on our listings both run from 400 bar at 1/4\" to 165 bar at 1\". 2SC is the EN 857 designation and R16 the SAE 100R16 one, so specify the standard named on the drawing or the old layline; see [R16 compact two-wire hose](/p/r16-compact-two-wire-braid-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "2SC vs 2SN hose: when is compact hose the better choice?",
+          "a": "Choose 2SC over R2 2SN when the line has to bend tightly or fit a crowded space, because 2SC is the compact two-wire construction. Keep 2SN where EN 853 dimensions, existing ferrules or an OEM spec call for it; the two take different ferrules, so do not mix them on one crimp setup."
+        },
+        {
+          "slot": "H",
+          "q": "Which ferrules and crimp fittings suit 2SC compact hose?",
+          "a": "2SC hose takes braided-hose crimp fittings with a ferrule made for its compact outside diameter. JIC 37°, ORFS, BSP, NPT and metric 24° ends are all crimped on this grade; see [crimp ferrules](/c/crimp-ferrules) and give us the fitting series so we match ferrule and crimp die."
+        },
+        {
+          "slot": "I",
+          "q": "How often should 2SC hose on mobile equipment be inspected?",
+          "a": "Inspect 2SC hose at every scheduled service and replace it at the first sign of cover damage with exposed wire, leaks at the fitting, kinks or blistering. On attachments, check rub points against the boom and other hoses; [hose inspection](/blog/hydraulic-hose-inspection) lists what each defect means."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Indus 2SC hose for import paperwork?",
+          "a": "The Indus 2SC hose is listed with the USA as its country of origin. We ship it from Dubai, UAE, and issue the commercial invoice, packing list and certificate of origin for the destination; name the country on the enquiry so the documents match its customs rules."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy 2SC compact hose ex-stock from Dubai?",
+          "a": "Yes. 2SC compact two-wire hose is held in stock at our Dubai, UAE warehouse and shipped worldwide with the best lead times, with UAE delivery within 3 working days. Sold per metre or as finished assemblies; send bore, length and fittings through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "4sp-four-spiral-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is EN 856 4SP four-spiral hydraulic hose used for?",
+          "a": "EN 856 4SP is a four-spiral steel-wire hydraulic hose for heavy systems with sustained high pressure: wheel loaders, dozers and excavators, hydraulic presses and forging machines, and industrial power units. It has an NBR tube, four spiralled wire layers and an MSHA-accepted rubber cover."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is EN 856 4SP hose available in?",
+          "a": "The Indus 4SP hose is listed from 3/8\" to 2\" bore (DN10 to DN51), that is -06 to -32. Outside diameters run from 20.1 mm at -06 to 66.3 mm at -32, which matters when you size clamps and the crimp ferrule."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of 4SP hose from -06 to -32?",
+          "a": "4SP hose is rated 450 bar at -06 (3/8\"), falling to 210 bar at -32 (2\"), with a minimum burst of 1800 bar at -06 (safety factor 4:1). Use the figure for your bore, not the headline 450 bar, and check that the end fittings carry the same pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of EN 856 4SP hose?",
+          "a": "The minimum bend radius of 4SP hose is 180 mm at -06, rising to 630 mm at -32. Spiral hose is much stiffer than braid, so allow room for the bend in the routing; [braid or spiral](/blog/braid-vs-spiral-hydraulic-hose) explains why bore often decides the construction."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids and temperature range is 4SP hose suitable for?",
+          "a": "4SP hose carries mineral-oil hydraulic fluid from -40°C to 100°C continuous through an oil-resistant NBR tube. EN 856 sets the same -40 to +100 °C range for 4SP and excludes HFD R, HFD S and HFD T fluids; ask for a compatibility check on phosphate-ester, water-glycol or biodegradable fluids."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus 4SP hose conform to?",
+          "a": "The Indus 4SP hose conforms to EN 856 4SP and has an MSHA-accepted cover. EN 856 is the European specification for rubber-covered spiral-wire hydraulic hose and defines four types, 4SP, 4SH, R12 and R13, in nominal bores 6 to 51."
+        },
+        {
+          "slot": "K",
+          "q": "4SP vs 4SH hose: which four-spiral hose do I need?",
+          "a": "Choose 4SP for small and medium bores and 4SH for large bores. 4SP reaches 450 bar at -06 but falls to 210 bar at -32, while heavy-gauge 4SH holds 420 bar at -12 and 250 bar at -32 and starts at 3/4\"; see [4SH heavy-duty spiral hose](/p/4sh-four-spiral-heavy-duty-hydraulic-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "4SP vs SAE 100R12 hose: how do the ratings compare?",
+          "a": "4SP is rated higher than R12 at both ends of the range: 450 bar against 280 bar at -06, and 210 bar against 172 bar at -32. Both are four-spiral hoses in 3/8\" to 2\"; choose R12 where an SAE 100R12 spec allows the lower pressure, and 4SP where the circuit needs the margin."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings and ferrules fit 4SP spiral hose?",
+          "a": "4SP hose takes spiral-hose crimp fittings with a ferrule designed for four-spiral wire, not braided-hose fittings. Many spiral fittings need the cover or inner tube skived, so the series decides the preparation; see [spiral hose crimp fittings](/c/spiral-hose-crimp-fittings) and tell us the ends you need."
+        },
+        {
+          "slot": "I",
+          "q": "Why does 4SP hose fail at the fitting, and how is it prevented?",
+          "a": "A 4SP hose that fails at the fitting usually points to a wrong ferrule or crimp diameter, incorrect skiving, or a bend that starts at the ferrule. Use the fitting series matched to 4SP, crimp to the published diameter and route clear of the end; [burst at the fitting](/blog/hose-burst-at-the-fitting) walks through the evidence."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin is declared for Indus 4SP hose?",
+          "a": "The Indus 4SP hose is listed with the USA as its country of origin. We export it from Dubai, UAE to the GCC, Africa and Asia with a commercial invoice, packing list and certificate of origin prepared for the destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus keep EN 856 4SP hose in stock?",
+          "a": "Yes. We keep 4SP four-spiral hose in stock at our warehouse in Dubai, UAE and ship it worldwide with the best lead times; UAE orders arrive within 3 working days. Send the bore, cut lengths and end fittings through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "4sh-four-spiral-heavy-duty-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is EN 856 4SH heavy-duty four-spiral hose used for?",
+          "a": "EN 856 4SH is a heavy-gauge four-spiral hydraulic hose for large-bore, high-pressure lines on earth-moving and mining equipment, press lines and industrial hydraulics at 3/4\" and above. It has an NBR tube, four heavy-gauge spiralled wire layers and an MSHA-accepted cover."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Indus 4SH part numbers such as IH-HS-4SH-16-REEL mean?",
+          "a": "IH-HS-4SH-16-REEL is 4SH hose in dash 16 (1\" bore) on a reel. The number after 4SH is the dash size; no suffix means a 50 ft pre-cut length, and -REEL means a 150 ft reel at -12 and -16 or a 131 ft reel at -20, -24 and -32."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes and outside diameters is 4SH hose listed in?",
+          "a": "The Indus 4SH hose is listed in 3/4\", 1\", 1-1/4\", 1-1/2\" and 2\" (-12 to -32, DN19 to DN51). Outside diameters in the size table run from 32.3 mm at -12 to 68.1 mm at -32; give the OD when you order clamps or check a ferrule."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of EN 856 4SH hose at each size?",
+          "a": "4SH hose is rated 420 bar at -12 (3/4\"), falling to 250 bar at -32 (2\"), with a minimum burst of 1680 bar at -12 (safety factor 4:1). Take the figure for your bore and match the fittings to it; [hose pressure by size](/blog/hydraulic-hose-pressure-by-size) explains the drop."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of 4SH hose?",
+          "a": "The minimum bend radius of 4SH hose is 280 mm at -12, rising to 700 mm at -32. Heavy-gauge spiral hose is stiff, so plan the routing around these radii and use elbow fittings rather than forcing a bend near the ferrule."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids and temperatures is 4SH hose suitable for?",
+          "a": "4SH hose is for mineral-oil hydraulic fluid from -40°C to 100°C continuous, through an oil-resistant NBR tube. EN 856 gives 4SH the same -40 to +100 °C range and excludes HFD R, HFD S and HFD T; check phosphate-ester, water-glycol and biodegradable fluids with us first."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus 4SH hose meet?",
+          "a": "The Indus 4SH hose conforms to EN 856 4SH and carries an MSHA-accepted cover. EN 856 is the European specification for rubber-covered spiral-wire hydraulic hose; read the layline to confirm a hose on a machine is 4SH and not 4SP or R13."
+        },
+        {
+          "slot": "K",
+          "q": "4SH vs R13 hose: which is better for large bores?",
+          "a": "R13 holds 350 bar at every listed size from -12 to -32, while 4SH is rated 420 bar at -12 but falls to 250 bar at -32. So 4SH carries more pressure at 3/4\" and R13 more at 2\"; R13 also bends tighter (240 to 600 mm). Compare [R13 multi-spiral hose](/p/r13-multi-spiral-very-high-pressure-hose)."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings fit 4SH heavy-duty spiral hose?",
+          "a": "4SH hose needs spiral-hose crimp fittings and ferrules rated for heavy-gauge four-spiral wire at the pressure of your bore. Whether the cover or tube is skived depends on the fitting series; see [spiral hose crimp fittings](/c/spiral-hose-crimp-fittings) and send the end types so we match ferrule and die."
+        },
+        {
+          "slot": "I",
+          "q": "What should be checked when inspecting a 4SH hose on mining or crane equipment?",
+          "a": "Check 4SH hose for cover wear down to the wire, leaks or movement at the ferrule, kinks, and heat-hardened or cracked cover. On cranes and mining machines, a failure is a safety event, so replace on condition; see [mobile crane hoses](/blog/mobile-crane-hydraulic-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is Indus 4SH hose made, and how is it exported?",
+          "a": "The Indus 4SH hose is listed with the USA as its country of origin. We export it from Dubai, UAE, with the commercial invoice, packing list and certificate of origin prepared for the destination; reels at 131 ft or 150 ft are packed for sea or air freight."
+        },
+        {
+          "slot": "M",
+          "q": "Is 4SH hose stocked in Dubai for fast delivery?",
+          "a": "Yes. 4SH heavy-duty spiral hose is kept in stock at our Dubai, UAE warehouse in 50 ft lengths and reels, and shipped worldwide with the best lead times; UAE delivery is within 3 working days. Quote part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r12-four-spiral-high-pressure-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R12 four-spiral hydraulic hose used for?",
+          "a": "SAE 100R12 is a four-spiral steel-wire hydraulic hose for industrial and mobile hydraulics up to 280 bar in bores to 1\", main lines on heavy equipment and high-pressure return loops on press circuits. It has an NBR tube and an MSHA-accepted abrasion-resistant cover."
+        },
+        {
+          "slot": "B",
+          "q": "What do Indus R12 part numbers such as IH-HS-R12-08-COIL mean?",
+          "a": "IH-HS-R12-08-COIL is SAE 100R12 hose in dash 08 (1/2\" bore) as a 100 ft coil. The number after R12 is the dash size; no suffix is a 50 ft pre-cut length, and -COIL is a 100 ft coil up to -16 or a 131 ft coil from -20 to -32. The -10 size is listed as coil only."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of SAE 100R12 hose does Indus list?",
+          "a": "The Indus R12 hose is listed in eight sizes from 3/8\" to 2\": -06, -08, -10, -12, -16, -20, -24 and -32. Outside diameters run from 20.3 mm at -06 to 66.8 mm at -32; the size table gives the OD of each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SAE 100R12 hose by size?",
+          "a": "SAE 100R12 hose is rated 280 bar from 3/8\" to 1\", 210 bar at 1-1/4\", 175 bar at 1-1/2\" and 172 bar at 2\". Minimum burst is four times working pressure (1120 bar at the small sizes); [hose pressure by size](/blog/hydraulic-hose-pressure-by-size) explains why the large bores drop."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of SAE 100R12 hose?",
+          "a": "The R12 listing gives the minimum bend radius as per the SAE J517 size table and does not publish a figure for each size. Tell us the bore and the routing and we confirm the radius before you cut the hose; four-spiral R12 is stiffer than braided hose of the same bore."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range and fluids is SAE 100R12 hose rated for?",
+          "a": "SAE 100R12 hose is rated -40°C to 100°C continuous and 120°C intermittent, with an oil-resistant NBR tube for mineral-oil hydraulic fluid. EN 856 also defines an R12 type for -40 to +120 °C, excluding HFD R, HFD S and HFD T fluids; check other fluids with us."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus R12 hose conform to?",
+          "a": "The Indus R12 hose conforms to SAE 100R12, one of the hose types in SAE J517, and has an MSHA-accepted cover. EN 856 also defines an R12 type; if a tender asks for EN 856 marking, say so on the enquiry. [SAE 100R types](/blog/sae-100r-hose-types) explains the numbering."
+        },
+        {
+          "slot": "K",
+          "q": "R12 vs 4SH hose: which should I use?",
+          "a": "4SH is rated higher than R12 at both ends of their shared range: 420 bar against 280 bar at -12, and 250 bar against 172 bar at -32. R12 is also listed down to 3/8\"; use it where 280 bar is enough; above that, or on large bores, step up to [4SH heavy-duty hose](/p/4sh-four-spiral-heavy-duty-hydraulic-hose)."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings and ferrules suit SAE 100R12 hose?",
+          "a": "SAE 100R12 hose takes spiral-hose crimp fittings with ferrules sized for four-spiral wire; braided-hose ferrules are not interchangeable. Whether skiving is needed depends on the fitting series; see [spiral hose crimp fittings](/c/spiral-hose-crimp-fittings) and give us the end types."
+        },
+        {
+          "slot": "I",
+          "q": "How do I confirm a hose on a machine is SAE 100R12 before replacing it?",
+          "a": "Read the layline: an R12 hose is printed with the 100R12 designation, the dash size and the maker's batch mark. If the print has worn off, measure the outside diameter against our size table (20.3 mm at -06 up to 66.8 mm at -32); [reading a hose layline](/blog/how-to-read-a-hose-layline) shows what to look for."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Indus SAE 100R12 hose?",
+          "a": "The Indus R12 hose is listed with the USA as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice, packing list and certificate of origin prepared for the destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Is SAE 100R12 hose available ex-stock in Dubai?",
+          "a": "Yes. We hold SAE 100R12 four-spiral hose in stock at our Dubai, UAE warehouse, in 50 ft lengths and coils, and ship worldwide with the best lead times; UAE delivery takes up to 3 working days. Send part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r13-multi-spiral-very-high-pressure-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R13 multi-spiral hose used for?",
+          "a": "SAE 100R13 is a multi-spiral hydraulic hose with a uniform 350 bar rating, used on mining and construction equipment under sustained high load, presses, injection-moulding machines and off-highway equipment. It has an NBR tube, four or six spiralled wire layers and an MSHA-accepted cover."
+        },
+        {
+          "slot": "B",
+          "q": "What do Indus R13 part numbers such as IH-HS-R13-20-COIL mean?",
+          "a": "IH-HS-R13-20-COIL is SAE 100R13 hose in dash 20 (1-1/4\" bore) as a 131 ft coil. The number after R13 is the dash size; no suffix is a 50 ft pre-cut length, and -COIL is a 131 ft coil from -12 to -20 or a 100 ft coil at -24 and -32."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of SAE 100R13 hose are in the Indus size table?",
+          "a": "The R13 size table lists 3/4\", 1\", 1-1/4\", 1-1/2\" and 2\" (-12 to -32), with outside diameters from 32 mm to 71.6 mm. The listing's bore range starts at 3/8\", but no smaller part numbers are tabled, so ask us for 3/8\" or 1/2\" R13."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SAE 100R13 hose?",
+          "a": "SAE 100R13 hose is rated 350 bar at every listed size from -12 to -32, with a minimum burst of 1400 bar (safety factor 4:1). That constant rating is the point of R13: a 2\" line carries the same 350 bar as a 3/4\" one, provided the fittings are rated to match."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of SAE 100R13 hose?",
+          "a": "The minimum bend radius of R13 hose is 240 mm at -12, rising to 600 mm at -32. Multi-spiral hose resists bending, so route it with elbows or swept bends rather than forcing it near the ferrule."
+        },
+        {
+          "slot": "F",
+          "q": "Can SAE 100R13 hose handle high oil temperatures in Gulf heat?",
+          "a": "SAE 100R13 hose is rated -40°C to 100°C continuous and 120°C intermittent, with an oil-resistant NBR tube. In a Gulf summer the oil runs hotter than the ambient, so check the fluid temperature at the hose, not the air; see [hydraulic hose in UAE heat](/blog/hydraulic-hose-in-uae-heat)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus R13 hose conform to?",
+          "a": "The Indus R13 hose conforms to SAE 100R13, part of the SAE J517 hydraulic hose specification, and has an MSHA-accepted cover. EN 856 also defines an R13 type, rated -40 to +120 °C; tell us if a specification asks for EN 856 marking."
+        },
+        {
+          "slot": "K",
+          "q": "R13 vs 4SH hose: which suits a 2-inch high-pressure line?",
+          "a": "For a 2\" line, R13 carries more: 350 bar against 250 bar for 4SH at -32. At 3/4\" the order flips, with 4SH at 420 bar and R13 at 350 bar. R13 also bends tighter (600 mm at -32 against 700 mm); see [4SH heavy-duty hose](/p/4sh-four-spiral-heavy-duty-hydraulic-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "R13 vs R15 hose: when do I need six-spiral R15?",
+          "a": "Step up from R13 to R15 when the circuit runs above 350 bar: R15 is rated 420 bar from -12 to -24, against 350 bar for R13. R15 stops at 1-1/2\", while R13 is listed to 2\"; see [R15 six-spiral hose](/p/r15-six-spiral-ultra-high-pressure-hose)."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings go on SAE 100R13 multi-spiral hose?",
+          "a": "R13 hose takes spiral-hose crimp fittings with ferrules rated for 350 bar multi-spiral hose at your bore. Skive or no-skive preparation depends on the fitting series; see [spiral hose crimp fittings](/c/spiral-hose-crimp-fittings) and send the end types for a matched quote."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin applies to Indus SAE 100R13 hose?",
+          "a": "The Indus R13 hose is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond with the commercial invoice, packing list and certificate of origin made out for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock SAE 100R13 hose in Dubai?",
+          "a": "Yes. We keep SAE 100R13 multi-spiral hose in stock at our warehouse in Dubai, UAE, in 50 ft lengths and coils, and ship worldwide with the best lead times; within the UAE it arrives in up to 3 working days. Request a quote through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r15-six-spiral-ultra-high-pressure-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R15 hydraulic hose?",
+          "a": "SAE 100R15 is a six-spiral steel-wire hydraulic hose with a uniform 420 bar working pressure, used where circuits run beyond R13 capacity: mining and forestry equipment, heavy presses and forging machinery. It has an NBR tube and an MSHA-accepted abrasion-resistant cover."
+        },
+        {
+          "slot": "B",
+          "q": "What do Indus R15 part numbers such as IH-HS-R15-16 mean?",
+          "a": "IH-HS-R15-16 is SAE 100R15 hose in dash 16 (1\" bore) as a 50 ft pre-cut length. The number after R15 is the dash size, and a -COIL suffix means a 131 ft coil, which is the coil length at every listed size."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of SAE 100R15 hose does Indus list?",
+          "a": "The R15 size table lists 3/4\", 1\", 1-1/4\" and 1-1/2\" (-12 to -24), with outside diameters from 32 mm to 57.4 mm. The listing's bore range starts at 3/8\", but smaller part numbers are not tabled, so ask us for 3/8\" or 1/2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SAE 100R15 hose at each size?",
+          "a": "SAE 100R15 hose is rated 420 bar at every listed size from -12 to -24, with a minimum burst of 1680 bar (safety factor 4:1). The fittings and any adapters in the line must be rated to 420 bar as well, or they set the limit."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of SAE 100R15 hose?",
+          "a": "The minimum bend radius of R15 hose is 265 mm at -12, rising to 510 mm at -24. Six-spiral hose is stiff, so allow for the bend in the layout and use angled fittings instead of tight bends at the ferrule."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range is SAE 100R15 hose rated for?",
+          "a": "SAE 100R15 hose is rated -40°C to 100°C continuous and 120°C intermittent, with an oil-resistant NBR tube for mineral-oil hydraulic fluid. Phosphate-ester, water-glycol and some biodegradable fluids lower the upper limit, so name the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus R15 hose conform to?",
+          "a": "The Indus R15 hose conforms to SAE 100R15, one of the hose types in the SAE J517 hydraulic hose specification, and has an MSHA-accepted cover. [SAE 100R types](/blog/sae-100r-hose-types) explains why the R numbers are a catalogue rather than a ranking."
+        },
+        {
+          "slot": "K",
+          "q": "R15 vs 4SH hose: which carries more pressure?",
+          "a": "R15 holds 420 bar across its whole listed range, -12 to -24, while 4SH starts at 420 bar at -12 and drops to 250 bar at -32. At 3/4\" they match; above that R15 keeps its rating, but only 4SH is listed at 2\"; see [4SH heavy-duty hose](/p/4sh-four-spiral-heavy-duty-hydraulic-hose)."
+        },
+        {
+          "slot": "J",
+          "q": "Is SAE 100R15 hose used on concrete pumps and other very-high-pressure machines?",
+          "a": "Yes, R15 suits concrete pumps, forging presses and mining machines, where pressure stays high all shift; its 420 bar rating holds at every listed bore. On these machines, inspect at short intervals and replace on condition; see [concrete pump hydraulic hose](/blog/concrete-pump-hydraulic-hose)."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings and ferrules are used on SAE 100R15 hose?",
+          "a": "R15 hose needs spiral-hose crimp fittings and ferrules rated for six-spiral hose at 420 bar; a four-spiral ferrule is not a substitute. Skive or no-skive preparation is set by the fitting series; see [spiral hose crimp fittings](/c/spiral-hose-crimp-fittings) and tell us the end types."
+        },
+        {
+          "slot": "L",
+          "q": "Where is Indus SAE 100R15 hose made, and can it ship from Dubai?",
+          "a": "The Indus R15 hose is listed with the USA as its country of origin and ships from our Dubai, UAE warehouse to the GCC, Africa, Asia and beyond. We prepare the commercial invoice, packing list and certificate of origin for the destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Is SAE 100R15 hose kept in stock in Dubai?",
+          "a": "Yes. SAE 100R15 six-spiral hose is in stock at our warehouse in Dubai, UAE, as 50 ft lengths and 131 ft coils, and we ship worldwide with the best lead times; UAE delivery is within 3 working days. Send sizes and lengths through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r16-compact-two-wire-braid-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R16 compact two-wire braid hose used for?",
+          "a": "SAE 100R16 is a compact two-wire-braid hydraulic hose that gives R2-class pressure with a smaller outside diameter and tighter bend radius. It is used for tight routing on mobile and industrial equipment and compact pump and motor connections, with an NBR tube and MSHA-accepted cover."
+        },
+        {
+          "slot": "B",
+          "q": "What do Indus R16 part numbers such as IH-HS-R16S-06-REEL mean?",
+          "a": "IH-HS-R16S-06-REEL is SAE 100R16 hose in dash 06 (3/8\" bore) on a 450 ft reel. The number after R16S is the dash size; no suffix is a 50 ft pre-cut length, and reels are 500 ft at -04, 520 ft at -10, 400 ft at -12 and 200 ft at -16."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of SAE 100R16 hose does Indus list?",
+          "a": "The R16 hose is listed in 1/4\", 3/8\", 5/8\", 3/4\" and 1\" (-04, -06, -10, -12 and -16), with outside diameters from 15 mm to 38.1 mm. There is no size between 3/8\" and 5/8\" in the size table, so ask us if you need one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SAE 100R16 hose by size?",
+          "a": "SAE 100R16 hose is rated 400 bar at 1/4\", 330 bar at 3/8\", 250 bar at 5/8\", 215 bar at 3/4\" and 165 bar at 1\", as published by the manufacturer. Minimum burst is four times working pressure, and end fittings must carry the same rating."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of SAE 100R16 hose?",
+          "a": "The R16 listing gives the minimum bend radius as per the SAE J517 compact size table and does not publish a figure per size. It is tighter than standard R2 at the same bore, which is why R16 is chosen; tell us the bore and routing and we confirm it."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range and fluids suit SAE 100R16 hose?",
+          "a": "SAE 100R16 hose is rated -40°C to 100°C continuous and 120°C intermittent, with an oil-resistant NBR tube for mineral-oil hydraulic fluid. Ask for a compatibility check before running phosphate-ester, water-glycol or other aggressive fluids."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus R16 hose conform to?",
+          "a": "The Indus R16 hose conforms to SAE 100R16, part of the SAE J517 hydraulic hose specification, and has an MSHA-accepted cover. SAE J343 sets the test methods for 100R hoses; name any test documents you need when you order."
+        },
+        {
+          "slot": "K",
+          "q": "R16 vs 2SC hose: are they interchangeable?",
+          "a": "R16 and 2SC are both compact two-wire-braid hoses, and on our listings both run from 400 bar at 1/4\" to 165 bar at 1\". R16 is the SAE 100R16 designation and 2SC the EN 857 one; use the one your specification names, and match ferrules to the hose; see [2SC compact hose](/p/2sc-compact-two-wire-braid-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "R16 vs R17 hose: which compact hose do I need?",
+          "a": "Choose R16 when the line needs more than 210 bar at small bores: R16 is rated 400 bar at 1/4\" and 330 bar at 3/8\", while R17 has a 210 bar maximum. R17 suits moderate-pressure compact lines; see [R17 compact hose](/p/r17-compact-high-pressure-hose)."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings and ferrules fit SAE 100R16 hose?",
+          "a": "R16 hose takes braided-hose crimp fittings with a ferrule made for compact two-wire hose; a standard R2 ferrule does not suit the smaller outside diameter. See [braided hose crimp fittings](/c/braided-hose-crimp-fittings) and tell us the fitting series and end types."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Indus SAE 100R16 hose?",
+          "a": "The Indus R16 hose is listed with the USA as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice, packing list and certificate of origin prepared for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy SAE 100R16 hose by the reel from stock in Dubai?",
+          "a": "Yes. We keep SAE 100R16 compact hose in stock at our Dubai, UAE warehouse in 50 ft lengths and full reels, and ship worldwide with the best lead times; UAE delivery is within 3 working days. Send part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r17-compact-high-pressure-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R17 compact hydraulic hose used for?",
+          "a": "SAE 100R17 is a compact wire-braid hydraulic hose that gives 2-wire-class pressure at 1-wire dimensions and bend radius. It is used on mobile hydraulics where space is tight, light-to-medium machinery, and as a smaller replacement for R2 2SN at moderate pressure."
+        },
+        {
+          "slot": "B",
+          "q": "What do Indus R17 part numbers such as IH-HS-R17-08-REEL mean?",
+          "a": "IH-HS-R17-08-REEL is SAE 100R17 hose in dash 08 (1/2\" bore) on a 350 ft reel. The number after R17 is the dash size; no suffix is a 50 ft pre-cut length, and reels run 500 ft at -04 and -06, 520 ft at -10, 400 ft at -12 and 200 ft at -16."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of SAE 100R17 hose does Indus list?",
+          "a": "The R17 hose is listed in six sizes from 1/4\" to 1\" (-04, -06, -08, -10, -12 and -16). Outside diameters run from 12.4 mm at -04 to 36.3 mm at -16, which is what makes R17 fit where a standard two-wire hose will not."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SAE 100R17 hose?",
+          "a": "The Indus R17 listing gives a maximum working pressure of 210 bar, with a minimum burst of 840 bar (safety factor 4:1). Per-size figures are not published on the listing, so confirm the rating for your bore and fittings on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of SAE 100R17 hose?",
+          "a": "The R17 listing gives the minimum bend radius as half that of standard two-wire hose at the same bore, without per-size figures. Tell us the bore and routing and we confirm the radius in millimetres before the hose is cut."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids and temperatures can SAE 100R17 hose take?",
+          "a": "SAE 100R17 hose is rated -40°C to 100°C continuous with an oil-resistant NBR tube for mineral-oil hydraulic fluid. Phosphate-ester, water-glycol and some biodegradable fluids reduce the upper limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus R17 hose conform to?",
+          "a": "The Indus R17 hose conforms to SAE 100R17, part of the SAE J517 hydraulic hose specification. [SAE 100R types](/blog/sae-100r-hose-types) explains how R17 sits beside R16 and R2 and why the numbers are not a pressure ranking."
+        },
+        {
+          "slot": "K",
+          "q": "R17 vs R16 hose: what is the difference?",
+          "a": "R17 is a moderate-pressure compact hose with a 210 bar maximum, while R16 is rated 400 bar at 1/4\" and 165 bar at 1\". Use R17 for compact lines up to 210 bar and R16 where small bores need more; see [R16 compact two-wire hose](/p/r16-compact-two-wire-braid-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "R17 vs 1SC compact hose: which should I choose?",
+          "a": "Both are compact single-braid-class hoses: R17 has a 210 bar maximum across 1/4\" to 1\", while EN 857 1SC is rated 225 bar at -04 and 105 bar at -12. Choose by the standard your drawing names and the pressure at your bore; see [1SC compact hose](/p/r1-1sc-compact-single-wire-braid-hose)."
+        },
+        {
+          "slot": "H",
+          "q": "Which crimp fittings and ferrules go on SAE 100R17 hose?",
+          "a": "R17 hose takes braided-hose crimp fittings with ferrules sized for its compact outside diameter, which is smaller than R2 at the same bore. See [ferrules](/c/ferrules) and tell us the fitting series, so ferrule and crimp die are matched to R17."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin is listed for Indus SAE 100R17 hose?",
+          "a": "The Indus R17 hose is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond with the commercial invoice, packing list and certificate of origin made out for the destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Is SAE 100R17 compact hose in stock at Indus in Dubai?",
+          "a": "Yes. SAE 100R17 compact hose is kept in stock at our Dubai, UAE warehouse in 50 ft lengths and reels, and we ship worldwide with the best lead times; UAE delivery is within 3 working days. Send sizes and lengths through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r4-low-pressure-suction-return-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R4 suction and return hose used for?",
+          "a": "SAE 100R4 is a textile-reinforced hydraulic hose with a helix wire, used for suction lines from reservoir to pump, low-pressure return lines to tank, charge-pressure circuits and lubrication delivery. The helix wire stops the hose collapsing under vacuum."
+        },
+        {
+          "slot": "B",
+          "q": "What do Indus R4 part numbers such as IH-HS-R4-24-COIL mean?",
+          "a": "IH-HS-R4-24-COIL is SAE 100R4 hose in dash 24 (1-1/2\" bore) as a 100 ft coil. The number after R4 is the dash size; no suffix is a 50 ft pre-cut length, and every size from -12 to -32 comes in both forms."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of SAE 100R4 hose does Indus stock?",
+          "a": "The R4 hose is listed in 3/4\", 1\", 1-1/4\", 1-1/2\" and 2\" (-12 to -32, DN19 to DN51), each as a 50 ft length or a 100 ft coil. Suction lines are sized larger than pressure lines, so match the bore to the pump inlet rather than the pressure port."
+        },
+        {
+          "slot": "J",
+          "q": "Can SAE 100R4 hose be used on the pressure side of a hydraulic system?",
+          "a": "No. SAE 100R4 is a suction and low-pressure return hose, rated only 21 bar at 3/4\" and 7 bar at 2\". Use a wire-braid or spiral hose from the [hydraulic hoses shelf](/c/hydraulic-hoses) for any pressure line."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of SAE 100R4 hose by size?",
+          "a": "SAE 100R4 hose is rated 21 bar at 3/4\", 17 bar at 1\", 14 bar at 1-1/4\", 10 bar at 1-1/2\" and 7 bar at 2\", as published by the manufacturer. Minimum burst is four times working pressure (84 bar at 3/4\")."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range and fluids is SAE 100R4 hose rated for?",
+          "a": "SAE 100R4 hose is rated -40°C to 121°C continuous, with an oil-resistant NBR tube and an oil- and weather-resistant cover. Ask for a compatibility check if the system runs phosphate-ester, water-glycol or other aggressive fluids."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of SAE 100R4 hose?",
+          "a": "The R4 listing gives the minimum bend radius as per the SAE J517 size table and does not publish a figure per size. Keep suction lines short with gentle bends, because a kinked helix restricts the pump inlet; tell us the bore and routing and we confirm the radius."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Indus R4 hose conform to?",
+          "a": "The Indus R4 hose conforms to SAE 100R4, part of the SAE J517 hydraulic hose specification. It has a heavy textile braid with a spiral helix wire and a cloth-impression cover, which is how to tell it from wire-braid hose on a machine."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings are used to terminate SAE 100R4 suction hose?",
+          "a": "SAE 100R4 hose needs fittings and ferrules made for R4 textile-and-helix construction; wire-braid hose ferrules are not interchangeable by default. Tell us the fitting series and port, or order finished [hydraulic hose assemblies](/c/hydraulic-hose-assemblies) and we match the ends."
+        },
+        {
+          "slot": "I",
+          "q": "What should I check when inspecting an SAE 100R4 suction hose?",
+          "a": "Check an R4 suction hose for a flattened or kinked section, a soft spot where the helix has broken, cracked cover and leaks at the fittings. A collapsed suction line starves the pump, so replace it on condition; [hose inspection](/blog/hydraulic-hose-inspection) lists the defects to look for."
+        },
+        {
+          "slot": "L",
+          "q": "Where is Indus SAE 100R4 hose made, and can it be exported?",
+          "a": "The Indus R4 hose is listed with the USA as its country of origin, and we export it from Dubai, UAE to the GCC, Africa, Asia and beyond. The commercial invoice, packing list and certificate of origin are made out for the destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Is SAE 100R4 hose available from stock in Dubai?",
+          "a": "Yes. We keep SAE 100R4 suction and return hose in stock at our warehouse in Dubai, UAE, as 50 ft lengths and 100 ft coils, and ship worldwide with the best lead times; UAE delivery takes up to 3 working days. Send sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-jack-hose-2-wire-braid-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 10,000 psi two-wire braid hydraulic jack hose used for?",
+          "a": "This two-wire-braid hydraulic jack hose connects hand pumps to hydraulic jacks and rams, and is rated by its manufacturer at 10,000 psi working pressure in both sizes. It has two high-tensile steel wire braids and an abrasion- and weather-resistant synthetic rubber cover."
+        },
+        {
+          "slot": "B",
+          "q": "What do Indus jack hose part numbers IH-HS-4HJK and IH-HS-6HJK mean?",
+          "a": "IH-HS-4HJK is the 1/4\" jack hose and IH-HS-6HJK the 3/8\" jack hose, each as a 50 ft pre-cut length. The -REEL suffix means a reel: 500 ft for the 1/4\" size and 450 ft for the 3/8\" size."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 10,000 psi hydraulic jack hose come in?",
+          "a": "The jack hose comes in 1/4\" and 3/8\" bore, with outside diameters of 0.59\" and 0.75\". Choose the bore that matches the pump and jack couplings; 3/8\" gives more flow for larger rams or long runs."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus hydraulic jack hose rated for?",
+          "a": "The jack hose is rated by its manufacturer at 10,000 psi working pressure in both the 1/4\" and 3/8\" sizes. The couplings, gauge and any adapters must carry the same rating; tell us the couplings and we confirm the full assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range does the 10,000 psi jack hose take?",
+          "a": "The jack hose is rated −40 °F to 212 °F (−40 °C to 100 °C) continuous and 248 °F (120 °C) intermittent, as published. The tube compound is not stated on the listing, so confirm the hydraulic oil with us if it is not a standard mineral oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus 10,000 psi jack hose conform to?",
+          "a": "The listing does not name an SAE or EN hose standard for the jack hose; its 10,000 psi rating is the manufacturer's published figure, and the cover is stated as MSHA accepted. If your site requires a named standard or test record, say so on the enquiry."
+        },
+        {
+          "slot": "K",
+          "q": "Can standard two-wire hydraulic hose replace a 10,000 psi jack hose?",
+          "a": "No. Standard two-wire hose on our shelf is rated far lower: [R16 compact hose](/p/r16-compact-two-wire-braid-hose), for example, is rated 400 bar at 1/4\", well under 10,000 psi. Jack and ram circuits need hose and couplings rated for the pump's full pressure."
+        },
+        {
+          "slot": "J",
+          "q": "Where is 10,000 psi jack hose used besides hydraulic jacks?",
+          "a": "The 10,000 psi jack hose is used on hand-pump circuits generally: hydraulic jacks, rams and workshop presses driven by a hand pump. For shop presses and small builds, [log splitters and presses](/blog/log-splitter-and-shop-press-hose) covers how to specify the circuit."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings fit the Indus 10,000 psi jack hose?",
+          "a": "Fit the jack hose with couplings and adapters rated at 10,000 psi or higher, in the thread the pump and jack use. Tell us the couplings on your equipment, or order a finished assembly, and we confirm that every end carries the full rating."
+        },
+        {
+          "slot": "I",
+          "q": "How should a 10,000 psi jack hose be inspected before use?",
+          "a": "Inspect the jack hose before each use for cover cuts, exposed wire, kinks, crushed sections and leaks at the couplings, and retire it at the first defect. A pinhole leak at this pressure can inject oil into skin; see [hydraulic fluid injection injury](/blog/hydraulic-fluid-injection-injury)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Indus 10,000 psi jack hose be exported from Dubai?",
+          "a": "Yes. We ship the jack hose from our Dubai, UAE warehouse to the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so ask for both on the quotation if your customs broker needs them in advance."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 10,000 psi hydraulic jack hose in stock in Dubai?",
+          "a": "Yes. We keep the 1/4\" and 3/8\" jack hose in stock at our warehouse in Dubai, UAE, as 50 ft lengths and reels, and ship worldwide with the best lead times; UAE delivery is within 3 working days. Send the part numbers through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}
