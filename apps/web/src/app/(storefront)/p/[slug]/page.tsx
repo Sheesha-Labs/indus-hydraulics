@@ -693,10 +693,10 @@ export default async function ProductPage({ params }: Props) {
               <AddToQuoteButton sku={product.sku} title={product.title} />
 
               <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-                {whatsappHref(settings.contactPhone, product.sku) && (
+                {whatsappHref(settings.contactPhone, { title: product.title, url: urlFor(`/p/${product.slug}`) }) && (
                   <Button asChild kind="outline" size="lg">
                     <a
-                      href={whatsappHref(settings.contactPhone, product.sku)!}
+                      href={whatsappHref(settings.contactPhone, { title: product.title, url: urlFor(`/p/${product.slug}`) })!}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -925,7 +925,7 @@ export default async function ProductPage({ params }: Props) {
         title={product.title}
         sku={product.sku}
         datasheetUrl={datasheetUrl}
-        whatsappUrl={whatsappHref(settings.contactPhone, product.sku)}
+        whatsappUrl={whatsappHref(settings.contactPhone, { title: product.title, url: urlFor(`/p/${product.slug}`) })}
         emailUrl={mailtoQuoteHref(settings.contactEmail, product.sku)}
       />
 

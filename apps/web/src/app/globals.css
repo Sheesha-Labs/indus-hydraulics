@@ -125,7 +125,14 @@
   /* Typography */
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  /* No monospace anywhere on the site (owner call, 2026-11-19 — the admin went
+     first on 2026-11-11). The TOKEN is re-pointed rather than every `font-mono`
+     / `.mono` call site rewritten, so labels, eyebrows, table headers and
+     shared packages/ui primitives all turn Geist in one place. Numbers keep
+     their alignment through `tabular-nums`, which Geist supports. Real code
+     (<code>/<pre>) keeps a system monospace via --default-mono-font-family. */
+  --font-mono: var(--font-sans);
+  --default-mono-font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
   /* Geometry. Superseded the v1 "0–2px only" ceiling — see CLAUDE.md §2.3.
      --radius-sm 2px → 4px moves all 49 existing rounded-sm sites in one step. */
@@ -510,6 +517,14 @@
   line-height: 1.3;
   color: var(--color-ih-ink);
   margin: 30px 0 10px;
+}
+/* Navy blocks inside the case body (result box, SOP header). The two rules
+   above set ink on every h3 and strong; they are unlayered, so they outrank
+   any `text-white` utility and printed black on navy (2026-11-19). Blocks on a
+   dark ground carry .sc-on-dark and inherit their own white instead. */
+.sc-article-body .sc-on-dark :is(h3, h4, strong),
+.sc-article-body .sc-on-dark:is(h3, h4, strong) {
+  color: inherit;
 }
 .sc-article-body h4 {
   font-size: 16px;

@@ -3,7 +3,7 @@ import { MetaCellsSchema, type MetaCell } from '@indus/domain'
 
 type Props = {
   metaCellsRaw: unknown
-  /** Optional CTA href override; defaults to /quote. */
+  /** Optional CTA href override; defaults to /contact. */
   quoteHref?: string
 }
 
@@ -12,7 +12,7 @@ type Props = {
  * "Quote a similar job" CTA cell. Drops the leading 2px-thick top border
  * for a strong divider above the strip.
  */
-export default function CaseMetaStrip({ metaCellsRaw, quoteHref = '/quote' }: Props) {
+export default function CaseMetaStrip({ metaCellsRaw, quoteHref = '/contact' }: Props) {
   const parsed = MetaCellsSchema.safeParse(metaCellsRaw)
   const cells: MetaCell[] = parsed.success ? parsed.data : []
   const cellCount = cells.length

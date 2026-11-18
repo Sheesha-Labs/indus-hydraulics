@@ -846,7 +846,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     key={product.id}
                     product={product}
                     fallbackImage={nearestCategoryImage(product.category) ?? fallbackImage}
-                    inquire={inquireHref(settings, product.sku, product.title)}
+                    inquire={inquireHref(settings, { sku: product.sku, title: product.title, url: urlFor(`/p/${product.slug}`) })}
                   />
                 ))}
               </div>

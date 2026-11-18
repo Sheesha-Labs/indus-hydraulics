@@ -89,11 +89,18 @@ export default async function ServiceCasePage({ params }: Props) {
 
   // Fan out reads in parallel — case is the dependency for category lookup,
   // but related + gallery + settings can run concurrently from there.
-  const [related, galleryThumbs, settings] = await Promise.all([
+  // Figure blocks carry a Media id; resolve them with the same helper.
+  const figureIds = (Array.isArray(c.bodyBlocks) ? c.bodyBlocks : []).flatMap((b) => {
+    const block = b as { type?: unknown; imageId?: unknown }
+    return block?.type === 'figure' && typeof block.imageId === 'string' ? [block.imageId] : []
+  })
+  const [related, galleryThumbs, settings, figureRows] = await Promise.all([
     listServiceCases({ category: c.category, excludeSlugs: [c.slug], limit: 3 }),
     getGalleryMedia(galleryIds),
     getStoreSettingsCached(),
+    getGalleryMedia(figureIds),
   ])
+  const figureMedia = Object.fromEntries(figureRows.map((m) => [m.id, { storagePath: m.storagePath, alt: m.alt }]))
 
   const articleLd = buildArticleLd({
     headline: c.title,
@@ -140,7 +147,7 @@ export default async function ServiceCasePage({ params }: Props) {
             item this would otherwise size to its widest child.
           */}
           <div className="min-w-0">
-            <ArticleRenderer blocksRaw={c.bodyBlocks} />
+            <ArticleRenderer blocksRaw={c.bodyBlocks} figureMedia={figureMedia} />
             {reach && <MarketReachSection reach={reach} variant="article" />}
           </div>
 
@@ -148,7 +155,9 @@ export default async function ServiceCasePage({ params }: Props) {
             <CaseRail
               ctaCardTitle={c.ctaCardTitle}
               ctaCardBody={c.ctaCardBody}
-              ctaCardPhone={c.ctaCardPhone}
+              // The store's own number, not the per-case field: every case
+              // shipped with a placeholder (+971 4 881 2345) there.
+              ctaCardPhone={settings.contactPhone ?? c.ctaCardPhone}
               pullQuoteText={c.pullQuoteText}
               pullQuoteAuthor={c.pullQuoteAuthor}
               pullQuoteRole={c.pullQuoteRole}
