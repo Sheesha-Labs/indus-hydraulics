@@ -376,18 +376,19 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
     hero: (
       /* ── HERO ─────────────────────────────────────────────────────────── */
       <section className="overflow-hidden border-b border-ih-border bg-ih-surface">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-16 grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-16 items-center">
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 px-5 pb-10 pt-6 sm:px-8 sm:py-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 xl:px-12">
 
           {/* Left copy */}
           <div>
-            <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            {/* Phones open straight on the headline (owner call, 2026-11-19). */}
+            <span className="hidden font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted sm:inline">
               {t(str(hero, 'eyebrow'))}
             </span>
             {/* The rotating term sits on its own line deliberately. The six
                 terms differ in length; inline, every swap reflows the whole
                 headline, which reads as cheap. On its own line the reflow is
                 invisible and the term carries the emphasis anyway. */}
-            <h1 className="mb-5 mt-5 text-balance font-serif text-[clamp(38px,5vw,56px)] font-normal leading-[1.04] tracking-[-0.01em]">
+            <h1 className="mb-4 mt-0 text-balance font-serif sm:mb-5 sm:mt-5 text-[clamp(38px,5vw,56px)] font-normal leading-[1.04] tracking-[-0.01em]">
               {/* An override replaces the country-aware line entirely — an
                   editor who types one has decided the geo wording is wrong for
                   everyone, not for one country. */}
@@ -398,53 +399,48 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               {t(str(hero, 'body'))}
             </p>
 
-            {/* Static mirror of the rotating terms. Two jobs: a moving word is
-                a poor click target, and these are the only crawlable links the
-                hero contributes — without them the homepage passes its ranking
-                strength to no category page at all. */}
-            <ul className="mt-6 flex max-w-[540px] flex-wrap gap-2">
-              {HERO_TERMS.map((term) => (
-                <li key={term.href}>
-                  <Link
-                    href={term.href}
-                    className="inline-flex min-h-10 items-center rounded-md border border-ih-border px-3 text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
-                  >
-                    {term.word}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* The static pill list that mirrored the rotating terms was
+                removed (owner call, 2026-11-19). The same category pages are
+                linked from the megamenu and the category index below. */}
 
             {/* Hero search */}
-            <form action={`/search`} method="GET" className="mt-8 flex max-w-[540px] flex-col gap-1.5 rounded-md border border-ih-border bg-ih-surface p-1.5 sm:flex-row">
+            <form
+              action={`/search`}
+              method="GET"
+              className="mt-6 flex max-w-[540px] flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-1.5 sm:rounded-md sm:border sm:border-ih-border-strong sm:bg-white sm:p-1.5 sm:shadow-[0_1px_2px_rgba(20,28,45,0.05),0_8px_24px_rgba(20,28,45,0.06)]"
+            >
+              {/* On phones the category filter is a bar of its own above the
+                  search row, so it reads as a separate control. */}
               <select
                 name="category"
                 aria-label="Category"
-                className="w-full rounded-sm border-0 bg-transparent sm:w-[170px] px-3 text-[13.5px] text-ih-ink-2 outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+                className="h-11 w-full rounded-md border border-ih-border-strong bg-ih-surface-2 px-3 text-[14px] font-medium text-ih-ink outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft sm:h-auto sm:w-[170px] sm:rounded-sm sm:border-0 sm:bg-transparent sm:text-[13.5px] sm:font-normal sm:text-ih-ink-2"
               >
                 <option value="">All categories</option>
                 {categories.map((c) => (
                   <option key={c.slug} value={c.slug}>{c.name}</option>
                 ))}
               </select>
-              <input
-                name="q"
-                type="search"
-                aria-label="Search the catalogue"
-                placeholder={str(hero, 'search_placeholder') ?? 'Search by SKU, spec or part number…'}
-                className="w-full min-w-0 flex-1 rounded-sm border-0 bg-transparent px-3 py-2 text-[13.5px] text-ih-ink outline-none placeholder:text-ih-muted focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
-              />
-              <button
-                type="submit"
-                className="h-10 shrink-0 rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
-              >
-                {str(hero, 'search_button') ?? 'Search'}
-              </button>
+              <div className="flex min-w-0 flex-1 gap-1.5 rounded-md border border-ih-border-strong bg-white p-1.5 shadow-[0_1px_2px_rgba(20,28,45,0.05),0_8px_24px_rgba(20,28,45,0.06)] sm:border-0 sm:p-0 sm:shadow-none">
+                <input
+                  name="q"
+                  type="search"
+                  aria-label="Search the catalogue"
+                  placeholder={str(hero, 'search_placeholder') ?? 'Search by SKU, spec or part number…'}
+                  className="w-full min-w-0 flex-1 rounded-sm border-0 bg-white px-3 py-2 text-[14px] text-ih-ink outline-none placeholder:text-ih-muted focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft sm:text-[13.5px]"
+                />
+                <button
+                  type="submit"
+                  className="h-10 shrink-0 rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+                >
+                  {str(hero, 'search_button') ?? 'Search'}
+                </button>
+              </div>
             </form>
 
             {/* Stats */}
             {heroStats.length > 0 ? (
-              <div className="mt-10 grid grid-cols-2 gap-7 sm:grid-cols-4">
+              <div className="mt-10 hidden grid-cols-2 gap-7 sm:grid sm:grid-cols-4">
                 {heroStats.map((stat, i) => (
                   <div key={`${stat.label ?? ''}-${i}`} className="border-t-2 border-ih-accent pt-3.5">
                     <span className="block font-mono text-[26px] leading-none tracking-[-0.03em] tabular-nums">{t(stat.value ?? '')}</span>
@@ -503,7 +499,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     usp: uspItems.length > 0 ? (
       /* ── USP STRIP ────────────────────────────────────────────────────── */
-      <section className="bg-ih-navy py-[34px] text-[oklch(0.75_0.02_250)]">
+      <section className="hidden bg-ih-navy py-[34px] text-[oklch(0.75_0.02_250)] sm:block">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {uspItems.map((item, i) => (
             <div key={`${item.name ?? ''}-${i}`} className="flex gap-3.5 items-start">
@@ -525,7 +521,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
          bottom rule, so hero, strip and logos read as one block. It carries
          its own top and bottom padding, so it still sits cleanly if an
          editor moves it elsewhere under Pages & Blocks. */
-      <section className="border-b border-ih-border bg-ih-surface py-12">
+      <section className="border-b border-ih-border bg-ih-surface py-8 sm:py-12">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="flex items-end justify-between mb-6">
             <div>
@@ -539,7 +535,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             {str(brandsCopy, 'cta_label') && str(brandsCopy, 'cta_href') ? (
               <Link
                 href={str(brandsCopy, 'cta_href') ?? '/brands'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
               >
                 {str(brandsCopy, 'cta_label')}
               </Link>
@@ -553,7 +549,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     categories: (
       /* ── CATEGORIES ───────────────────────────────────────────────────── */
-      <section className="py-[72px]">
+      <section className="py-10 sm:py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="flex items-end justify-between mb-8">
             <div>
@@ -567,7 +563,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             {str(categoriesCopy, 'cta_label') && str(categoriesCopy, 'cta_href') ? (
               <Link
                 href={str(categoriesCopy, 'cta_href') ?? '/c'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
               >
                 {str(categoriesCopy, 'cta_label')}
               </Link>
@@ -581,7 +577,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
           {str(categoriesCopy, 'cta_label') && str(categoriesCopy, 'cta_href') ? (
             <Link
               href={str(categoriesCopy, 'cta_href') ?? '/c'}
-              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
             >
               {str(categoriesCopy, 'cta_label')}
             </Link>
@@ -592,7 +588,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     featured_products: featuredProducts.length > 0 ? (
       /* ── FEATURED PRODUCTS ────────────────────────────────────────────── */
-      <section className="border-t border-ih-border py-[72px]">
+      <section className="border-t border-ih-border py-10 sm:py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="flex items-end justify-between mb-8">
             <div>
@@ -602,7 +598,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             {str(featuredCopy, 'cta_label') && str(featuredCopy, 'cta_href') ? (
               <Link
                 href={str(featuredCopy, 'cta_href') ?? '/c'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
               >
                 {str(featuredCopy, 'cta_label')}
               </Link>
@@ -615,7 +611,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
           {str(featuredCopy, 'cta_label') && str(featuredCopy, 'cta_href') ? (
             <Link
               href={str(featuredCopy, 'cta_href') ?? '/c'}
-              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
             >
               {str(featuredCopy, 'cta_label')}
             </Link>
@@ -626,7 +622,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     industries: (
       /* ── INDUSTRIES ───────────────────────────────────────────────────── */
-      <section className="border-t border-ih-border py-[72px]">
+      <section className="border-t border-ih-border py-10 sm:py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="mb-8 flex items-end justify-between gap-6">
             <div>
@@ -637,7 +633,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             </div>
             <Link
               href="/industries"
-              className="hidden h-10 shrink-0 items-center border border-ih-border px-4 font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:flex"
+              className="hidden h-10 shrink-0 items-center border border-ih-border px-4 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:flex"
             >
               All industries →
             </Link>
@@ -645,7 +641,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
           <HomeIndustryTiles industries={industries} />
           <Link
             href="/industries"
-            className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+            className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
           >
             All industries →
           </Link>
@@ -655,7 +651,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     why: (
       /* ── WHY INDUS ────────────────────────────────────────────────────── */
-      <section className="border-t border-ih-border py-[72px]">
+      <section className="border-t border-ih-border py-10 sm:py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 border border-ih-border bg-ih-surface overflow-hidden">
             {/* Left */}
@@ -748,7 +744,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     blog: (
       /* ── BLOG TEASER ──────────────────────────────────────────────────── */
-      <section className="pb-[72px]">
+      <section className="pb-10 sm:pb-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="flex items-end justify-between mb-8">
             <div>
@@ -760,7 +756,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             {str(blog, 'cta_label') && str(blog, 'cta_href') ? (
               <Link
                 href={str(blog, 'cta_href') ?? '/blog'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
               >
                 {str(blog, 'cta_label')}
               </Link>
@@ -774,7 +770,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               {str(blog, 'cta_label') && str(blog, 'cta_href') ? (
                 <Link
                   href={str(blog, 'cta_href') ?? '/blog'}
-                  className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+                  className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
                 >
                   {str(blog, 'cta_label')}
                 </Link>
@@ -793,7 +789,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               {str(blog, 'empty_cta_label') ? (
                 <Link
                   href={str(blog, 'cta_href') ?? '/blog'}
-                  className="mt-4 inline-flex h-10 items-center border border-ih-border px-4 font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+                  className="mt-4 inline-flex h-10 items-center border border-ih-border px-4 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
                 >
                   {str(blog, 'empty_cta_label')}
                 </Link>
@@ -806,9 +802,13 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     newsletter: (
       /* ── NEWSLETTER CTA ───────────────────────────────────────────────── */
-      <section className="pb-16 border-t border-ih-border">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-16">
-          <div className="grid grid-cols-1 items-center gap-12 rounded-[14px] bg-ih-accent p-12 text-white lg:grid-cols-[1.2fr_1fr] lg:p-14">
+      <section className="border-t border-ih-border pb-10 sm:pb-16">
+        <div className="mx-auto max-w-[1440px] px-5 pt-10 sm:px-8 sm:pt-16 xl:px-12">
+          {/* Blueprint texture under a navy wash (owner call, 2026-11-19).
+              The wash, not the photo, sets the contrast: white text stays
+              above 7:1 over the brightest part of the linework. */}
+          <div className="relative isolate grid grid-cols-1 items-center gap-8 overflow-hidden rounded-[14px] bg-ih-navy bg-[url('/textures/newsletter-blueprint-blue.jpg')] bg-cover bg-[position:70%_center] p-6 text-white sm:gap-12 sm:p-12 lg:grid-cols-[1.2fr_1fr] lg:p-14">
+            <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(6,18,48,0.55)_0%,rgba(6,18,48,0.35)_55%,rgba(6,18,48,0.6)_100%)]" />
             <div>
               {/* On the accent band the eyebrow inverts — accent-on-accent
                   was invisible. */}
@@ -818,7 +818,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               <h2 className="mb-3 mt-3.5 font-serif text-[clamp(24px,3vw,32px)] font-normal leading-[1.15] tracking-[-0.01em]">
                 {t(str(newsletter, 'heading'))}
               </h2>
-              <p className="text-[#b6bac1] max-w-[460px] leading-[1.55] text-[15px]">
+              <p className="max-w-[460px] text-[15px] leading-[1.55] text-white/85">
                 {t(str(newsletter, 'body'))}
               </p>
             </div>

@@ -34,11 +34,11 @@ import ProductExportNote from '../../../../components/markets/ProductExportNote'
 import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../../lib/category-fallback'
 import ProductGallery from '../../../../components/ProductGallery'
 import AddToQuoteButton from '../../../../components/AddToQuoteButton'
-import AddToCompareButton from '../../../../components/AddToCompareButton'
 import ProductTabs from '../../../../components/ProductTabs'
 import RelatedReading from '../../../../components/blog/RelatedReading'
 import { getRelatedReadingForProduct } from '../../../../lib/related-reading'
 import ProductStickyBar from '../../../../components/ProductStickyBar'
+import { mailtoQuoteHref, whatsappHref } from '../../../../lib/enquiry-links'
 import AnalyticsEvent from '../../../../components/AnalyticsEvent'
 import { staticParamsOrNone } from '../../../../lib/static-params'
 
@@ -712,15 +712,6 @@ export default async function ProductPage({ params }: Props) {
                 </Button>
               </div>
 
-              <AddToCompareButton
-                sku={product.sku}
-                categoryId={product.categoryId}
-                specTemplateId={product.specTemplateId}
-                title={product.title}
-                imageUrl={
-                  product.images[0] ? mediaUrl(product.images[0].media.storagePath) : undefined
-                }
-              />
             </div>
 
             {/* Datasheet card */}
@@ -872,50 +863,59 @@ export default async function ProductPage({ params }: Props) {
         />
 
         {/* Related products */}
+        {/*
+          Two-up and swipeable on phones, four-up from lg (owner call,
+          2026-11-19): a fixed four-column grid squeezed eight cards into
+          ~80px columns on a phone. Cards share ProductCard's shape — square
+          image, title, brand — with no part number, so the title has room.
+        */}
         {related.length > 0 && (
-          <section className="border-ih-border border-t pb-20 pt-8">
-            <div className="mb-6">
+          <section className="border-ih-border border-t pb-16 pt-8 sm:pb-20">
+            <div className="mb-5">
               <div className="text-ih-muted mb-2 font-mono text-[11px] uppercase tracking-[0.16em]">
                 RELATED · OFTEN PAIRED WITH
               </div>
-              <h2 className="text-[28px] font-semibold tracking-[-0.02em]">
+              <h2 className="text-[17px] font-semibold leading-tight tracking-[-0.015em] sm:text-[24px]">
                 Engineers viewing this also looked at
               </h2>
             </div>
-            <div className="grid grid-cols-4 gap-4">
+            <ul className="no-scrollbar -mx-5 flex snap-x snap-mandatory scroll-px-5 gap-3 overflow-x-auto px-5 sm:-mx-8 sm:scroll-px-8 sm:px-8 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-4 lg:overflow-visible lg:px-0">
               {related.map((rel) => (
-                <Link
+                <li
                   key={rel.id}
-                  href={`/p/${rel.slug}`}
-                  className="border-ih-border bg-ih-surface hover:border-ih-accent group flex flex-col overflow-hidden border transition-colors"
+                  className="w-[calc((100%-0.75rem)/2.15)] shrink-0 snap-start sm:w-[calc((100%-1.5rem)/3.2)] lg:w-auto"
                 >
-                  <div className="border-ih-border bg-ih-surface-2 relative aspect-square border-b">
-                    {rel.images[0] ? (
-                      <Image
-                        src={mediaUrl(rel.images[0]!.media.storagePath)}
-                        alt={rel.images[0]!.alt ?? rel.images[0]!.media.alt ?? rel.title}
-                        fill
-                        className="object-contain p-4"
-                        sizes="25vw"
-                      />
-                    ) : (
-                      <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
-                        {rel.sku}
-                      </div>
-                    )}
-                  </div>
-                  <div className="p-4 pb-5">
-                    <div className="text-ih-muted-2 mb-1.5 font-mono text-[11px]">{rel.sku}</div>
-                    <h4 className="group-hover:text-ih-accent mb-2 text-[14px] font-medium leading-[1.3] transition-colors">
-                      {rel.title}
-                    </h4>
-                    {rel.brand && (
-                      <div className="text-ih-muted font-mono text-[11px]">{rel.brand.name}</div>
-                    )}
-                  </div>
-                </Link>
+                  <Link
+                    href={`/p/${rel.slug}`}
+                    className="border-ih-border bg-ih-surface hover:border-ih-accent group flex h-full flex-col overflow-hidden rounded-lg border transition-colors"
+                  >
+                    <div className="border-ih-border bg-ih-surface-2 relative aspect-square border-b">
+                      {rel.images[0] ? (
+                        <Image
+                          src={mediaUrl(rel.images[0]!.media.storagePath)}
+                          alt={rel.images[0]!.alt ?? rel.images[0]!.media.alt ?? rel.title}
+                          fill
+                          className="object-contain p-2.5 sm:p-3"
+                          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 31vw, 46vw"
+                        />
+                      ) : (
+                        <div className="text-ih-muted absolute inset-0 grid place-items-center px-3 text-center text-[12px]">
+                          {rel.title}
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex flex-1 flex-col gap-1.5 p-3 sm:p-4">
+                      <h3 className="group-hover:text-ih-accent line-clamp-3 text-[13.5px] font-medium leading-[1.35] transition-colors sm:text-[14px]">
+                        {rel.title}
+                      </h3>
+                      {rel.brand && (
+                        <div className="text-ih-muted mt-auto text-[12px]">{rel.brand.name}</div>
+                      )}
+                    </div>
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
       </div>
@@ -944,10 +944,6 @@ export default async function ProductPage({ params }: Props) {
   )
 }
 
-// Strip everything that isn't a digit so the StoreSettings phone (which
-// may include +, spaces, dashes) becomes a wa.me-compatible numeric ID.
-// Returns null when no phone is configured so the CTA can be hidden
-// rather than shipping a placeholder/dead-link.
 /**
  * Assurance-row icons. 24x24 viewBox, currentColor stroke, 1.7 stroke-width,
  * round caps and joins — the icon spec from the handoff's §8. Kept local
@@ -1019,20 +1015,6 @@ function WrenchIcon() {
       <path d="M15 3a5 5 0 0 0-4.6 7L3 17.4 6.6 21l7.4-7.4A5 5 0 0 0 21 9l-3 3-3-3 3-3a5 5 0 0 0-3-3Z" />
     </IconBase>
   )
-}
-
-function whatsappHref(phone: string | null, sku: string): string | null {
-  if (!phone) return null
-  const digits = phone.replace(/\D/g, '')
-  if (digits.length < 7) return null
-  const text = encodeURIComponent(`Enquiry on ${sku}`)
-  return `https://wa.me/${digits}?text=${text}`
-}
-
-function mailtoQuoteHref(email: string | null, sku: string): string {
-  const to = email ?? 'enquiries@indushydraulics.me'
-  const subject = encodeURIComponent(`Quotation for ${sku}`)
-  return `mailto:${to}?subject=${subject}`
 }
 
 // ── Stock pill — green when the item is available now, amber for a lead time ─────────────

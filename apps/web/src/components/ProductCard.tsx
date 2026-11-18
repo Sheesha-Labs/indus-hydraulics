@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { mediaUrl } from '../lib/media'
-import AddToCompareCardButton from './AddToCompareCardButton'
 
 type ProductCardProps = {
   product: {
@@ -24,14 +23,20 @@ type ProductCardProps = {
    * studio shot, muted and tagged so it never passes for a photo of this part.
    */
   fallbackImage?: { src: string; categoryName: string } | null
+  /**
+   * Where "Inquire" goes — WhatsApp with the part prefilled, or email when no
+   * number is set (`lib/enquiry-links.ts#inquireHref`). Omitted ⇒ no button.
+   */
+  inquire?: { href: string; external: boolean } | null
 }
 
 /**
  * Design language v2 — `.ih-prod`.
  *
- * 1:1 media, SKU in mono above the title, title at 14px/500, and a meta row
- * pinned to the bottom so cards in a row align on their last line regardless
- * of how long the titles run. Hover takes the border to accent — the card
+ * 1:1 media, title at 14px/500, and a meta row pinned to the bottom so cards
+ * in a row align on their last line regardless of how long the titles run.
+ * The part number is not printed on the card (owner call, 2026-11-19 — the
+ * title needs the room on a two-up phone grid); it is on the product page. Hover takes the border to accent — the card
  * itself is the affordance, so there is no separate "view" action.
  *
  * No price. The catalogue is quote-only and 02-screen-index.md §02 is
@@ -40,7 +45,7 @@ type ProductCardProps = {
  * resolved to "Quote on request", which was a stub for a field that must
  * never populate here.
  */
-export default function ProductCard({ product, fallbackImage }: ProductCardProps) {
+export default function ProductCard({ product, fallbackImage, inquire }: ProductCardProps) {
   const image = product.images[0]
   const imgUrl = image ? mediaUrl(image.media.storagePath) : null
 
@@ -65,8 +70,6 @@ export default function ProductCard({ product, fallbackImage }: ProductCardProps
       </div>
 
       <div className="flex flex-1 flex-col gap-[7px] px-4 pb-4 pt-3.5">
-        <div className="font-mono text-[10.5px] tracking-[0.02em] text-ih-muted">{product.sku}</div>
-
         {/*
           The link wraps only the title but is stretched over the whole card
           with an overlay. That keeps one link per card for assistive tech and
@@ -79,7 +82,7 @@ export default function ProductCard({ product, fallbackImage }: ProductCardProps
           </Link>
         </h3>
 
-        <div className="mt-auto flex flex-wrap gap-x-2.5 gap-y-1 pt-2 font-mono text-[11px] text-ih-muted">
+        <div className="mt-auto flex flex-wrap gap-x-2.5 gap-y-1 pt-2 text-[12px] text-ih-muted">
           {product.brand && <b className="font-medium text-ih-ink-2">{product.brand.name}</b>}
           {product.specs.slice(0, 2).map((spec) => (
             <span key={spec.label}>
@@ -90,18 +93,20 @@ export default function ProductCard({ product, fallbackImage }: ProductCardProps
         </div>
 
         {/*
-          Sits above the stretched link so it stays clickable. z-10 rather than
-          a nested button, which would be invalid inside the card's link.
+          "Inquire" replaced "Compare" (owner call, 2026-11-19): the card's one
+          action is now the enquiry itself. It sits above the stretched title
+          link (z-10) so it stays clickable without nesting a link in a link.
         */}
-        <div className="relative z-10 mt-3">
-          <AddToCompareCardButton
-            sku={product.sku}
-            categoryId={product.categoryId}
-            specTemplateId={product.specTemplateId}
-            title={product.title}
-            imageUrl={imgUrl ?? undefined}
-          />
-        </div>
+        {inquire ? (
+          <a
+            href={inquire.href}
+            {...(inquire.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            aria-label={`Inquire about ${product.title}`}
+            className="relative z-10 mt-3 inline-flex h-10 items-center justify-center rounded-[var(--radius-md)] border border-ih-border-strong text-[13px] font-medium text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            Inquire
+          </a>
+        ) : null}
       </div>
     </div>
   )

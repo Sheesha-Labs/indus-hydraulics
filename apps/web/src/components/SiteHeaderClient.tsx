@@ -199,7 +199,11 @@ export default function SiteHeaderClient({
         which is below AA for text this small. The frosted treatment is worth
         having on the main bar and is not worth an unreadable contact strip.
       */}
-      <div className="bg-ih-navy text-[oklch(0.82_0.02_250)]">
+      {/* Phones drop the strip (owner call, 2026-11-19): the header is the
+          only sticky chrome there and the contact routes are in the menu and
+          the footer. Anything pinned under the header uses top-[73px]
+          below sm and top-[107px] from sm. */}
+      <div className="hidden bg-ih-navy text-[oklch(0.82_0.02_250)] sm:block">
         <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 sm:px-8 xl:px-12 font-mono text-[11px] tracking-[0.04em]">
           {/*
             Phone and sales email, on every breakpoint. The opening hours used

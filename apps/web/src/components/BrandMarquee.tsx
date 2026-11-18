@@ -23,12 +23,12 @@ type Props = {
  * - Pauses on hover AND keyboard focus, so a moving target can be clicked or
  *   tabbed to. The second copy is decorative: `aria-hidden` and out of the tab
  *   order, so keyboard and screen-reader users meet each brand once.
- * - Touch screens (`hover: none`) never get that pause — the tile under a
- *   thumb would not be the tile that opened. There the animation stops, the
- *   duplicate copy is dropped, and the strip becomes a rail the visitor
- *   swipes. Free scroll, not snap: a snapped tile would come to rest inside
- *   the edge fade and read as half-drawn.
- * - `prefers-reduced-motion` stops the animation outright.
+ * - Touch screens scroll on their own too (owner call, 2026-11-19 — the old
+ *   swipe-only rail sat still and read as static). Holding a finger on the
+ *   strip pauses it (`:active`), so the tile under the thumb is the tile that
+ *   opens.
+ * - `prefers-reduced-motion` stops the animation outright; the strip is then
+ *   a plain sideways-scrolling rail with the duplicate copy dropped.
  * - Logos sit in a fixed box with `object-contain`: the files range from 120
  *   to 1200px wide and from 9:1 wordmarks to near-square marks, and bounding
  *   both axes is what evens out their optical weight.
@@ -41,10 +41,10 @@ export default function BrandMarquee({ brands, label }: Props) {
     <div
       role="region"
       aria-label={label}
-      className="group relative overflow-hidden [mask-image:linear-gradient(90deg,transparent_0,#000_7%,#000_93%,transparent_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0,#000_7%,#000_93%,transparent_100%)] [@media(hover:none)]:overflow-x-auto [@media(hover:none)]:overscroll-x-contain [@media(hover:none)]:[scrollbar-width:none] [@media(hover:none)]:[&::-webkit-scrollbar]:hidden"
+      className="group relative overflow-hidden [mask-image:linear-gradient(90deg,transparent_0,#000_7%,#000_93%,transparent_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0,#000_7%,#000_93%,transparent_100%)] motion-reduce:overflow-x-auto motion-reduce:[scrollbar-width:none]"
     >
       <ul
-        className={`flex w-max [animation-name:ih-marquee] [animation-timing-function:linear] [animation-iteration-count:infinite] ${marqueeDurationClass(brands.length)} group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused] motion-reduce:[animation-name:none] [@media(hover:none)]:[animation-name:none]`}
+        className={`flex w-max [animation-name:ih-marquee] [animation-timing-function:linear] [animation-iteration-count:infinite] ${marqueeDurationClass(brands.length)} group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused] group-active:[animation-play-state:paused] motion-reduce:[animation-name:none]`}
       >
         {loop.map((brand, i) => {
           const duplicate = i >= brands.length
@@ -52,7 +52,7 @@ export default function BrandMarquee({ brands, label }: Props) {
             <li
               key={`${brand.slug}-${i}`}
               aria-hidden={duplicate || undefined}
-              className={`shrink-0 pr-[14px] md:pr-5 ${duplicate ? '[@media(hover:none)]:hidden' : ''}`}
+              className={`shrink-0 pr-[14px] md:pr-5 ${duplicate ? 'motion-reduce:hidden' : ''}`}
             >
               <Link
                 href={`/brands/${brand.slug}`}

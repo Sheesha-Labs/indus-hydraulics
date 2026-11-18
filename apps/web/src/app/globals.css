@@ -298,6 +298,18 @@
 /* Compare tray dock. 03 §1 specifies 220ms on cubic-bezier(.32,.72,0,1),
    entering from translateY(100%). Reduced motion drops the translate via the
    motion-reduce: variant at the call site. */
+/* The PDP enquiry pop-up (ProductStickyBar). Used under motion-safe only. */
+@keyframes ih-pop-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @keyframes ih-dock {
   from {
     transform: translateY(100%);

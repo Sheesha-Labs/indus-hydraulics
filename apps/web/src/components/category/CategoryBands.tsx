@@ -467,8 +467,11 @@ export function CategoryDeliveryBrief({
 export function CategoryBriefStrip({ children }: { children: ReactNode[] }) {
   const cards = children.filter(Boolean)
   if (cards.length === 0) return null
+  // Tablet and up only (owner call, 2026-11-19). On a phone this was a
+  // sideways-scrolling row of cards between the title and the first product;
+  // the full bands further down the page still carry the same copy there.
   return (
-    <div className="border-ih-border border-b py-4">
+    <div className="border-ih-border hidden border-b py-4 md:block">
       <div className="no-scrollbar -mx-5 flex snap-x snap-mandatory scroll-px-5 items-start gap-3 sm:scroll-px-8 md:items-stretch overflow-x-auto px-5 sm:-mx-8 sm:px-8 md:mx-0 md:grid md:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] md:overflow-visible md:px-0">
         {cards}
       </div>

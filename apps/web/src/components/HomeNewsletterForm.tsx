@@ -91,7 +91,7 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
               className={
                 navy
                   ? 'h-10 w-full min-w-0 rounded-md border border-white/20 bg-ih-navy-2 px-3 text-[13.5px] text-white transition-[border-color] duration-150 placeholder:text-ih-on-navy-placeholder focus:border-ih-steel focus-visible:outline-ih-steel! disabled:opacity-50 motion-reduce:transition-none min-[761px]:flex-1'
-                  : 'h-12 w-full min-w-0 flex-1 rounded-md border border-white/35 bg-white/12 px-4 text-[13.5px] text-white outline-none transition-colors placeholder:text-white/60 focus:border-white focus:ring-[3px] focus:ring-white/25 disabled:opacity-50'
+                  : 'h-14 w-full min-w-0 shrink-0 rounded-md border border-white/40 bg-white/15 px-4 text-[15px] text-white backdrop-blur-sm sm:h-12 sm:flex-1 sm:text-[13.5px] outline-none transition-colors placeholder:text-white/60 focus:border-white focus:ring-[3px] focus:ring-white/25 disabled:opacity-50'
               }
             />
             <button
@@ -100,7 +100,7 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
               className={
                 navy
                   ? 'h-10 w-full shrink-0 rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors duration-150 hover:bg-ih-accent-hover focus-visible:outline-ih-steel! disabled:opacity-50 motion-reduce:transition-none min-[761px]:w-auto'
-                  : 'h-12 w-full shrink-0 rounded-md bg-white px-6 sm:w-auto text-[14.5px] font-medium text-ih-accent transition-colors hover:bg-white/90 disabled:opacity-50'
+                  : 'h-14 w-full shrink-0 rounded-md bg-white px-6 sm:h-12 sm:w-auto text-[14.5px] font-medium text-ih-accent transition-colors hover:bg-white/90 disabled:opacity-50'
               }
             >
               {isPending ? '...' : 'Subscribe'}
@@ -113,7 +113,7 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
           )}
           <span
             className={
-              navy ? 'text-[11.5px] leading-[1.5] text-ih-on-navy-fine' : 'font-mono text-[11px] text-white/70'
+              navy ? 'text-[11.5px] leading-[1.5] text-ih-on-navy-fine' : 'text-[12px] leading-[1.5] text-white/80'
             }
           >
             {CONSENT_BEFORE}
