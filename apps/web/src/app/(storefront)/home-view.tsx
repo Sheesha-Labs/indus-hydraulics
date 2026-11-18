@@ -518,6 +518,39 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
       </section>
     ) : null,
 
+    brands: (
+      /* ── BRANDS RAIL ──────────────────────────────────────────────────── */
+      /* The last band of the hero: it sits directly under the navy promise
+         strip by default, on the hero's surface and closed by the hero's
+         bottom rule, so hero, strip and logos read as one block. It carries
+         its own top and bottom padding, so it still sits cleanly if an
+         editor moves it elsewhere under Pages & Blocks. */
+      <section className="border-b border-ih-border bg-ih-surface py-12">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <div className="flex items-end justify-between mb-6">
+            <div>
+              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                {t(str(brandsCopy, 'eyebrow'))}
+              </span>
+              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
+                {t(str(brandsCopy, 'heading'))}
+              </h2>
+            </div>
+            {str(brandsCopy, 'cta_label') && str(brandsCopy, 'cta_href') ? (
+              <Link
+                href={str(brandsCopy, 'cta_href') ?? '/brands'}
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+              >
+                {str(brandsCopy, 'cta_label')}
+              </Link>
+            ) : null}
+          </div>
+
+          <BrandMarquee brands={brands} label="Brands we distribute" />
+        </div>
+      </section>
+    ),
+
     categories: (
       /* ── CATEGORIES ───────────────────────────────────────────────────── */
       <section className="py-[72px]">
@@ -553,34 +586,6 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               {str(categoriesCopy, 'cta_label')}
             </Link>
           ) : null}
-        </div>
-      </section>
-    ),
-
-    brands: (
-      /* ── BRANDS RAIL ──────────────────────────────────────────────────── */
-      <section className="pb-[72px]">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="flex items-end justify-between mb-6">
-            <div>
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                {t(str(brandsCopy, 'eyebrow'))}
-              </span>
-              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
-                {t(str(brandsCopy, 'heading'))}
-              </h2>
-            </div>
-            {str(brandsCopy, 'cta_label') && str(brandsCopy, 'cta_href') ? (
-              <Link
-                href={str(brandsCopy, 'cta_href') ?? '/brands'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
-              >
-                {str(brandsCopy, 'cta_label')}
-              </Link>
-            ) : null}
-          </div>
-
-          <BrandMarquee brands={brands} label="Brands we distribute" />
         </div>
       </section>
     ),

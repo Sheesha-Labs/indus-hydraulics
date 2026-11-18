@@ -74,6 +74,23 @@ export const HOME_PAGE: MasterPageDef = {
       },
     },
     {
+      key: 'brands',
+      label: 'Brand rail',
+      description: 'The scrolling partner-brand logo strip, closing the hero directly under the promise strip.',
+      dataNote: 'A scrolling strip of every published brand with a logo, one tile per logo, best-stocked first (house brand excluded). Each tile links to the brand page.',
+      fields: [
+        eyebrow({ help: 'Use {brands} for the live count.' }),
+        heading(),
+        ...ctaPair('', 'Link label'),
+      ],
+      defaults: {
+        eyebrow: 'PARTNER BRANDS · {brands}',
+        heading: 'Authorised distributor for the names engineers trust.',
+        cta_label: 'View brand index →',
+        cta_href: '/brands',
+      },
+    },
+    {
       key: 'categories',
       label: 'Category grid',
       description: 'Every top-level catalogue group, each with its photo and sub-category links.',
@@ -89,23 +106,6 @@ export const HOME_PAGE: MasterPageDef = {
         heading: 'The full catalogue, organised the way engineers think.',
         cta_label: 'Browse all categories →',
         cta_href: '/c',
-      },
-    },
-    {
-      key: 'brands',
-      label: 'Brand rail',
-      description: 'The grid of partner brand names.',
-      dataNote: 'A scrolling strip of every published brand with a logo, one tile per logo, best-stocked first (house brand excluded). Each tile links to the brand page.',
-      fields: [
-        eyebrow({ help: 'Use {brands} for the live count.' }),
-        heading(),
-        ...ctaPair('', 'Link label'),
-      ],
-      defaults: {
-        eyebrow: 'PARTNER BRANDS · {brands}',
-        heading: 'Authorised distributor for the names engineers trust.',
-        cta_label: 'View brand index →',
-        cta_href: '/brands',
       },
     },
     {
