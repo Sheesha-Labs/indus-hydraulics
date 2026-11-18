@@ -10,7 +10,7 @@ export const SERVICES_PAGE: MasterPageDef = {
     {
       key: 'hero',
       label: 'Hero',
-      description: 'Headline, standfirst, the three figures and the two buttons.',
+      description: 'Headline, the three figures under it and the two buttons. (The standfirst is kept but not shown.)',
       locked: true,
       fields: [
         eyebrow(),
@@ -42,7 +42,7 @@ export const SERVICES_PAGE: MasterPageDef = {
     {
       key: 'topics',
       label: 'Topic filter',
-      description: 'The chip rail and the sort control.',
+      description: 'The one-line chip rail of service categories.',
       dataNote:
         'The chips are the service-case categories, with live counts. Nothing here is free text.',
       fields: [],

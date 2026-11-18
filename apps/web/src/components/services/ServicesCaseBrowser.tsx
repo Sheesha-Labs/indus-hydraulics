@@ -2,10 +2,11 @@
 
 import { useSearchParams } from 'next/navigation'
 import ServicesCaseList, { type ServicesCaseListProps } from './ServicesCaseList'
-import { parseCategory, parseSort } from '../../lib/service-case-params'
+import { parseCategory } from '../../lib/service-case-params'
 
 /**
- * Applies `?category=` and `?sort=` in the browser.
+ * Applies `?category=` in the browser. (`?sort=` is no longer offered and is
+ * ignored if an old link carries it.)
  *
  * The server used to read those from `searchParams`, which made /services
  * dynamic — it rendered per request for every visitor and every crawler and
@@ -24,7 +25,6 @@ export default function ServicesCaseBrowser(props: ServicesCaseListProps) {
     <ServicesCaseList
       {...props}
       category={parseCategory(searchParams.get('category') ?? undefined)}
-      sort={parseSort(searchParams.get('sort') ?? undefined)}
     />
   )
 }

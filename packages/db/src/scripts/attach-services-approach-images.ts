@@ -34,7 +34,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { PrismaClient, type Prisma } from '@prisma/client'
 import { createClient } from '@supabase/supabase-js'
-import { getMasterPage, masterContentKey, validateSections } from '@indus/domain'
+import { getMasterPage, masterContentKey, validateSections, type SectionValues } from '@indus/domain'
 
 const db = new PrismaClient()
 
@@ -181,10 +181,22 @@ async function main() {
     panel_image: { mediaId: mediaIds[i]!, alt: BOARDS[i]!.alt },
   }))
 
+  // Every other section is stored as its LIST defaults and nothing else.
+  // `validateSections` normalises a missing list field to `[]`, and a stored
+  // `[]` is a real value, not "use the default" — the first run of this script
+  // (2026-11-18) wrote `{}` for the hero and blanked its three figures on the
+  // live page until they were restored by hand. Scalars are safe to omit:
+  // they normalise to null, which resolves to the default.
+  const listDefaults = (s: (typeof SERVICES_PAGE.sections)[number]) =>
+    Object.fromEntries(
+      s.fields
+        .filter((f) => f.kind === 'list' && Array.isArray(s.defaults[f.key]))
+        .map((f) => [f.key, s.defaults[f.key]]),
+    )
   const doc = SERVICES_PAGE.sections.map((s) => ({
     key: s.key,
     enabled: s.locked ? true : (s.defaultEnabled ?? true),
-    values: s.key === 'approach' ? { items } : {},
+    values: (s.key === 'approach' ? { items } : listDefaults(s)) as SectionValues,
   }))
 
   const checked = validateSections(SERVICES_PAGE, doc)

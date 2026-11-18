@@ -7,62 +7,56 @@ type Props = {
 }
 
 /**
- * Grid card on /services. Always 4:3 image with a category tag overlay
- * (top-left), an optional duration label (bottom-right), then meta + title +
- * one-liner + outcome pills.
+ * Grid card on /services: 4:3 image with the category tag (top-left) and the
+ * duration (bottom-right), then a one-line meta row, the headline and up to
+ * four outcome chips.
+ *
+ * Kept light on purpose (owner call, 2026-11-18): no one-liner under the
+ * title, Geist throughout instead of mono labels, and neutral chips. The
+ * chips used to be tinted green/blue by `style`; colour there read as status
+ * and made a grid of twenty cards loud. The case page itself still carries
+ * the full deck and the detail.
  */
 export default function ServiceCaseCard({ case: c }: Props) {
   const pills = (c.cardOutcomePills as Array<{ label: string; style: string }>) ?? []
-  const tagBg = c.cardTagStyle === 'oil' ? 'bg-ih-accent text-white' : 'bg-ih-navy text-white'
   return (
     <Link href={`/services/${c.slug}`} className="group flex flex-col">
-      <div className="relative">
+      <div className="relative mb-3.5 overflow-hidden rounded-[var(--radius-lg)]">
         <PlaceholderImage
           storagePath={c.heroImage?.storagePath}
           alt={c.heroImage?.alt ?? c.title}
-          placeholderLabel={`"${c.cardTagLabel.toLowerCase()} case\\n520×390"`}
-          className="aspect-[4/3] border border-ih-border mb-4 group-hover:outline group-hover:outline-2 group-hover:outline-ih-accent"
+          className="aspect-[4/3] transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw"
         />
-        <span className={`absolute left-3 top-3 ${tagBg} mono px-2.5 py-1 text-[10px] uppercase tracking-[0.12em]`}>
+        <span className="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-[11.5px] font-semibold text-ih-ink shadow-[0_1px_4px_rgba(10,20,40,0.18)]">
           {c.cardTagLabel}
         </span>
         {c.cardDurationLabel ? (
-          <span className="absolute bottom-3 right-3 bg-[oklch(0.18_0.01_240/0.85)] px-2.5 py-1 backdrop-blur-sm mono text-[10.5px] tracking-[0.06em] text-white">
+          <span className="absolute bottom-3 right-3 rounded-full bg-[oklch(0.18_0.01_240/0.8)] px-2.5 py-1 text-[11.5px] font-medium tabular-nums text-white backdrop-blur-sm">
             {c.cardDurationLabel}
           </span>
         ) : null}
       </div>
-      <div className="mono mb-1.5 flex gap-2.5 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
-        <span>
-          <strong className="font-medium text-ih-ink">NO. {c.caseNumber}</strong>
-        </span>
-        <span>{c.cardTagLabel}</span>
-      </div>
-      <h3 className="mb-2 text-[22px] font-semibold leading-tight tracking-[-0.015em]">{c.title}</h3>
-      <p className="mb-4 text-sm leading-[1.55] text-ih-muted">
-        {c.cardOneLiner ?? c.deck}
+      <p className="mb-1.5 text-[12.5px] font-medium text-ih-muted">
+        <span className="tabular-nums text-ih-ink">No. {c.caseNumber}</span>
+        <span aria-hidden="true"> · </span>
+        {c.cardTagLabel}
       </p>
+      <h3 className="mb-3.5 text-balance text-[19px] font-semibold leading-snug tracking-[-0.015em] group-hover:text-ih-accent">
+        {c.title}
+      </h3>
       {pills.length > 0 ? (
-        <div className="mt-auto flex flex-wrap gap-2">
+        <ul className="mt-auto flex flex-wrap gap-1.5">
           {pills.slice(0, 4).map((p, i) => (
-            <span
+            <li
               key={i}
-              className={`mono rounded-sm border px-2 py-1 text-[10.5px] tracking-[0.06em] ${pillClass(p.style)}`}
+              className="rounded-full border border-ih-border bg-ih-surface px-2.5 py-1 text-[12px] font-medium text-ih-ink"
             >
               {p.label}
-            </span>
+            </li>
           ))}
-        </div>
+        </ul>
       ) : null}
     </Link>
   )
-}
-
-function pillClass(style: string): string {
-  if (style === 'good')
-    return 'border-ih-success bg-ih-success-soft text-ih-success'
-  if (style === 'accent')
-    return 'border-ih-accent bg-ih-accent-soft text-ih-accent'
-  return 'border-ih-border bg-ih-surface text-ih-ink-2'
 }
