@@ -71,10 +71,11 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
           {/* Right: active preview */}
           <div className="overflow-hidden rounded-sm border border-ih-border bg-ih-bg">
             <PlaceholderImage
-              storagePath={null}
-              alt={active.preview.title}
+              storagePath={active.preview.image?.url ?? null}
+              alt={active.preview.image?.alt ?? active.preview.title}
               placeholderLabel={active.preview.placeholderLabel}
               className="aspect-video"
+              sizes="(min-width: 1024px) 860px, 100vw"
             />
             <div className="px-7 pb-7 pt-6">
               <span className="mono text-[11px] uppercase tracking-[0.12em] text-ih-accent">

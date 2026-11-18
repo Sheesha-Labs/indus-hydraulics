@@ -73,6 +73,12 @@ export const SERVICES_PAGE: MasterPageDef = {
             { key: 'enabled', label: 'Show this step', kind: 'toggle' },
             { key: 'name', label: 'Title', kind: 'text', max: 80 },
             { key: 'desc', label: 'One-line summary', kind: 'text', max: 160 },
+            {
+              key: 'panel_image',
+              label: 'Panel image',
+              kind: 'image',
+              help: '16:9, shown above the panel copy. Blank keeps the hatched placeholder.',
+            },
             { key: 'panel_tag', label: 'Panel eyebrow', kind: 'text', max: 80, optional: true },
             { key: 'panel_title', label: 'Panel heading', kind: 'textarea', max: 300, optional: true },
             { key: 'panel_body', label: 'Panel body', kind: 'textarea', max: 900, optional: true },

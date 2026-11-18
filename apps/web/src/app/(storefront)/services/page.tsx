@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Fragment, Suspense, type ReactNode } from 'react'
 import type { ServiceCaseCategory } from '@indus/db'
 import Link from 'next/link'
-import { MANUFACTURING_PAGE, QUALITY_CONTROL_PAGE, lines, str, visibleList } from '@indus/domain'
+import { MANUFACTURING_PAGE, QUALITY_CONTROL_PAGE, lines, str, visibleList, type ImageValue } from '@indus/domain'
 import { pageMetadata } from '../../../lib/seo'
 import {
   categoryCounts,
@@ -103,6 +103,7 @@ export default async function ServicesIndexPage() {
     panel_title?: string
     panel_body?: string
     panel_deliverables?: string
+    panel_image?: ImageValue | null
   }>(approach, 'items').map((step, i) => ({
     number: `/${String(i + 1).padStart(2, '0')}`,
     title: step.name ?? '',
@@ -116,6 +117,9 @@ export default async function ServicesIndexPage() {
       // taken. Dropping it leaves the panel with the copy, which is what an
       // editor can actually change.
       placeholderLabel: '',
+      image: step.panel_image?.mediaId && step.panel_image.url
+        ? { url: step.panel_image.url, alt: step.panel_image.alt }
+        : null,
     },
   }))
 
