@@ -23,6 +23,8 @@ import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/category-fallback'
 import ProductCard from '../../../components/ProductCard'
+import { getStoreSettings } from '../../../lib/store-settings'
+import { inquireHref } from '../../../lib/enquiry-links'
 import RelatedReading from '../../../components/blog/RelatedReading'
 import {
   CategoryBriefStrip,
@@ -433,6 +435,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     slug: category.slug,
   })
   const heroCopy = content.values('hero')
+  const settings = await getStoreSettings()
   /** An override, or the wording the shelf already had. */
   const over = (values: SectionValues, key: string, built: string): string =>
     str(values, key) ?? built
@@ -476,7 +479,9 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
           wide screens instead of taking a row of their own.
         */}
         <div className="border-ih-border border-b py-5">
-          <p className="text-ih-muted mb-2 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+          {/* Phones show the name alone: no eyebrow, no intro paragraph
+              (owner call, 2026-11-19). Both stay in the page from sm up. */}
+          <p className="text-ih-muted mb-2 hidden font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] sm:block">
             {over(heroCopy, 'eyebrow', 'Category')}
           </p>
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
@@ -496,7 +501,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
           </div>
           </div>
           {heroIntro && (
-            <p className="text-ih-muted mt-2 max-w-[760px] text-[14px] leading-[1.55]">
+            <p className="text-ih-muted mt-2 hidden max-w-[760px] text-[14px] leading-[1.55] sm:block">
               {heroIntro}
             </p>
           )}
@@ -835,12 +840,13 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                 )}
               </div>
             ) : (
-              <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
                 {products.map((product) => (
                   <ProductCard
                     key={product.id}
                     product={product}
                     fallbackImage={nearestCategoryImage(product.category) ?? fallbackImage}
+                    inquire={inquireHref(settings, product.sku, product.title)}
                   />
                 ))}
               </div>

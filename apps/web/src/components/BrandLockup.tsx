@@ -19,9 +19,10 @@ const GEOMETRY: Record<
   // doing the job of the mark *and* the type and deserves the type's height.
   header: {
     markPx: 34,
-    mark: 'h-[34px] w-[34px]',
-    lockup: 'h-11 min-w-[34px] max-w-[200px]',
-    name: 'text-[21px]',
+    // A step smaller on phones, where the 72px bar also holds the menu button.
+    mark: 'h-[30px] w-[30px] sm:h-[34px] sm:w-[34px]',
+    lockup: 'h-9 min-w-[30px] max-w-[170px] sm:h-11 sm:min-w-[34px] sm:max-w-[200px]',
+    name: 'text-[19px] sm:text-[21px]',
     // Secondary ink, not `--ih-muted`, and only on this surface. The top bar
     // is translucent, so this 9px line is read against whatever scrolls under
     // it: measured over the navy bands the storefront uses, muted lands at

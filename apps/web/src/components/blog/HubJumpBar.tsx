@@ -46,7 +46,7 @@ export default function HubJumpBar({ targets }: { targets: JumpTarget[] }) {
   if (targets.length === 0) return null
 
   return (
-    <nav aria-label="On this page" className="sticky top-[107px] z-30 bg-ih-bg">
+    <nav aria-label="On this page" className="sticky top-[73px] z-30 bg-ih-bg sm:top-[107px]">
       <div className="no-scrollbar mx-auto flex max-w-[var(--spacing-max-w)] gap-1 overflow-x-auto px-5 py-3 min-[761px]:overflow-visible min-[761px]:px-8 min-[761px]:py-4 min-[1181px]:px-12">
         {targets.map((target, i) => {
           const on = i === active

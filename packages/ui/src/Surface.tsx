@@ -256,7 +256,7 @@ export interface BreadcrumbItem {
 export function Breadcrumb({ items, className }: { items: readonly BreadcrumbItem[]; className?: string }) {
   return (
     <nav aria-label="Breadcrumb" className={className}>
-      <ol className="flex flex-wrap items-center gap-2 font-mono text-xs text-ih-muted">
+      <ol className="flex flex-wrap items-center gap-2 text-[12.5px] text-ih-muted">
         {items.map((item, i) => {
           const last = i === items.length - 1
           return (
