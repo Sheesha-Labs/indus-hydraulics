@@ -1,0 +1,1083 @@
+{
+ "_about": "Maker figures used to rebuild the pneumatic tubing size tables (fix-pneumatic-tubing-size-tables.ts, 2026-11-19). Working pressure is the maker's maximum working pressure at 20\u201323 \u00b0C; it is NOT burst pressure.",
+ "sources": {
+  "smc": "SMC Best Pneumatics catalogue, Fittings & Tubing section (Nylon T/TIA, Polyurethane TU/TIUB, Hard Polyurethane TUH, Wear Resistant TUZ, Coil TCU, Flame Resistant TRS/TRB/TRBU/TRTU, Clean TPH/TPS, Antistatic TAS/TAU)",
+  "parkerFluoropolymer": "Parker Parflex catalogue 4660, Fluoropolymer Tubing section (PTFE 101/201, FEP 103/203, PFA 104/105/204/205; SAE AS81914/1 convoluted PTFE). Working pressure at 73 \u00b0F, design factor 4."
+ },
+ "smcWorkingPressureBar": {
+  "T": {
+   "0425": 33,
+   "0604": 30,
+   "0403": 20,
+   "0645": 20,
+   "0806": 20,
+   "1075": 20,
+   "1209": 20,
+   "1613": 16
+  },
+  "TIA": {
+   "*": 23
+  },
+  "TU": {
+   "*": 8
+  },
+  "TIUB": {
+   "*": 8
+  },
+  "TUH": {
+   "0428": 8,
+   "0644": 8,
+   "0858": 8,
+   "1073": 8,
+   "1288": 8,
+   "0425": 10,
+   "0604": 10,
+   "0805": 10,
+   "1065": 10,
+   "1208": 10
+  },
+  "TUZ": {
+   "*": 8
+  },
+  "TCU": {
+   "*": 8
+  },
+  "TRS": {
+   "*": 12
+  },
+  "TRB": {
+   "*": 10
+  },
+  "TRBU": {
+   "*": 8
+  },
+  "TRTU": {
+   "*": 8
+  },
+  "TPH": {
+   "0425": 10,
+   "0604": 10,
+   "0806": 7,
+   "1075": 7,
+   "1209": 7
+  },
+  "TPS": {
+   "*": 7
+  },
+  "TAS": {
+   "*": 12
+  },
+  "TAU": {
+   "*": 9
+  }
+ },
+ "smcInchSizesMm": {
+  "TIA": {
+   "01": [
+    3.18,
+    2.18
+   ],
+   "05": [
+    4.76,
+    3.48
+   ],
+   "07": [
+    6.35,
+    4.57
+   ],
+   "11": [
+    9.53,
+    6.99
+   ],
+   "13": [
+    12.7,
+    9.56
+   ]
+  },
+  "TISA": {
+   "01": [
+    3.18,
+    2.18
+   ],
+   "05": [
+    4.76,
+    3.48
+   ],
+   "07": [
+    6.35,
+    4.57
+   ],
+   "11": [
+    9.53,
+    6.99
+   ],
+   "13": [
+    12.7,
+    9.56
+   ]
+  },
+  "TIUB": {
+   "01": [
+    3.18,
+    2.0
+   ],
+   "05": [
+    4.76,
+    3.18
+   ],
+   "07": [
+    6.35,
+    4.23
+   ],
+   "11": [
+    9.53,
+    6.35
+   ],
+   "13": [
+    12.7,
+    8.46
+   ]
+  }
+ },
+ "parkerFluoropolymer": {
+  "101-0094031": {
+   "odMm": 2.4,
+   "idMm": 0.79,
+   "wallMm": 0.79,
+   "workingPressureBar": 27.0,
+   "workingPressurePsi": 390,
+   "burstBar": 108.0
+  },
+  "101-0125031": {
+   "odMm": 3.18,
+   "idMm": 1.57,
+   "wallMm": 0.79,
+   "workingPressureBar": 20.0,
+   "workingPressurePsi": 290,
+   "burstBar": 80.0
+  },
+  "101-0156031": {
+   "odMm": 3.99,
+   "idMm": 2.39,
+   "wallMm": 0.79,
+   "workingPressureBar": 15.0,
+   "workingPressurePsi": 220,
+   "burstBar": 61.0
+  },
+  "101-0188031": {
+   "odMm": 4.78,
+   "idMm": 3.18,
+   "wallMm": 0.79,
+   "workingPressureBar": 12.0,
+   "workingPressurePsi": 180,
+   "burstBar": 50.0
+  },
+  "101-0188062": {
+   "odMm": 4.78,
+   "idMm": 1.57,
+   "wallMm": 1.57,
+   "workingPressureBar": 27.0,
+   "workingPressurePsi": 390,
+   "burstBar": 108.0
+  },
+  "101-0250031": {
+   "odMm": 6.35,
+   "idMm": 4.83,
+   "wallMm": 0.79,
+   "workingPressureBar": 9.0,
+   "workingPressurePsi": 130,
+   "burstBar": 36.0
+  },
+  "101-0250047": {
+   "odMm": 6.35,
+   "idMm": 3.99,
+   "wallMm": 1.19,
+   "workingPressureBar": 14.0,
+   "workingPressurePsi": 210,
+   "burstBar": 58.0
+  },
+  "101-0250062": {
+   "odMm": 6.35,
+   "idMm": 3.18,
+   "wallMm": 1.57,
+   "workingPressureBar": 20.0,
+   "workingPressurePsi": 290,
+   "burstBar": 80.0
+  },
+  "101-0312031": {
+   "odMm": 7.92,
+   "idMm": 6.35,
+   "wallMm": 0.79,
+   "workingPressureBar": 7.0,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "101-0312062": {
+   "odMm": 7.92,
+   "idMm": 4.76,
+   "wallMm": 1.57,
+   "workingPressureBar": 15.0,
+   "workingPressurePsi": 222,
+   "burstBar": 61.0
+  },
+  "101-0375031": {
+   "odMm": 9.52,
+   "idMm": 7.92,
+   "wallMm": 0.79,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 80,
+   "burstBar": 22.0
+  },
+  "101-0375062": {
+   "odMm": 9.52,
+   "idMm": 6.35,
+   "wallMm": 1.57,
+   "workingPressureBar": 12.0,
+   "workingPressurePsi": 180,
+   "burstBar": 50.0
+  },
+  "101-0438031": {
+   "odMm": 11.13,
+   "idMm": 9.52,
+   "wallMm": 0.79,
+   "workingPressureBar": 5.0,
+   "workingPressurePsi": 70,
+   "burstBar": 19.0
+  },
+  "101-0438062": {
+   "odMm": 11.13,
+   "idMm": 7.92,
+   "wallMm": 1.57,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 150,
+   "burstBar": 41.0
+  },
+  "101-0500031": {
+   "odMm": 12.7,
+   "idMm": 11.13,
+   "wallMm": 0.79,
+   "workingPressureBar": 4.0,
+   "workingPressurePsi": 60,
+   "burstBar": 17.0
+  },
+  "101-0500062": {
+   "odMm": 12.7,
+   "idMm": 9.52,
+   "wallMm": 1.57,
+   "workingPressureBar": 9.0,
+   "workingPressurePsi": 130,
+   "burstBar": 36.0
+  },
+  "101-0563031": {
+   "odMm": 14.3,
+   "idMm": 12.7,
+   "wallMm": 0.79,
+   "workingPressureBar": 4.0,
+   "workingPressurePsi": 55,
+   "burstBar": 15.0
+  },
+  "101-0563062": {
+   "odMm": 14.3,
+   "idMm": 11.13,
+   "wallMm": 1.57,
+   "workingPressureBar": 8.0,
+   "workingPressurePsi": 110,
+   "burstBar": 30.0
+  },
+  "101-0625031": {
+   "odMm": 15.88,
+   "idMm": 14.3,
+   "wallMm": 0.79,
+   "workingPressureBar": 3.0,
+   "workingPressurePsi": 50,
+   "burstBar": 14.0
+  },
+  "101-0625062": {
+   "odMm": 15.88,
+   "idMm": 12.7,
+   "wallMm": 1.57,
+   "workingPressureBar": 7.0,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "101-0688031": {
+   "odMm": 17.48,
+   "idMm": 15.88,
+   "wallMm": 0.79,
+   "workingPressureBar": 3.0,
+   "workingPressurePsi": 45,
+   "burstBar": 12.0
+  },
+  "101-0688062": {
+   "odMm": 17.48,
+   "idMm": 14.3,
+   "wallMm": 1.57,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 90,
+   "burstBar": 25.0
+  },
+  "101-0750032": {
+   "odMm": 19.05,
+   "idMm": 17.48,
+   "wallMm": 0.81,
+   "workingPressureBar": 3.0,
+   "workingPressurePsi": 40,
+   "burstBar": 11.0
+  },
+  "101-0750062": {
+   "odMm": 19.05,
+   "idMm": 15.88,
+   "wallMm": 1.57,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 80,
+   "burstBar": 22.0
+  },
+  "101-0830040": {
+   "odMm": 21.08,
+   "idMm": 19.05,
+   "wallMm": 1.02,
+   "workingPressureBar": 3,
+   "workingPressurePsi": 45,
+   "burstBar": 12
+  },
+  "101-0875062": {
+   "odMm": 22.22,
+   "idMm": 19.05,
+   "wallMm": 1.57,
+   "workingPressureBar": 5.0,
+   "workingPressurePsi": 70,
+   "burstBar": 19.0
+  },
+  "101-1000062": {
+   "odMm": 25.4,
+   "idMm": 22.22,
+   "wallMm": 1.57,
+   "workingPressureBar": 6.9,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "101-1100050": {
+   "odMm": 27.94,
+   "idMm": 25.4,
+   "wallMm": 1.27,
+   "workingPressureBar": 3,
+   "workingPressurePsi": 40,
+   "burstBar": 11
+  },
+  "103-0094031": {
+   "odMm": 2.4,
+   "idMm": 0.79,
+   "wallMm": 0.79,
+   "workingPressureBar": 43.0,
+   "workingPressurePsi": 630,
+   "burstBar": 174.0
+  },
+  "103-0125031": {
+   "odMm": 3.18,
+   "idMm": 1.57,
+   "wallMm": 0.79,
+   "workingPressureBar": 32.0,
+   "workingPressurePsi": 470,
+   "burstBar": 130.0
+  },
+  "103-0156031": {
+   "odMm": 3.99,
+   "idMm": 2.39,
+   "wallMm": 0.79,
+   "workingPressureBar": 25.0,
+   "workingPressurePsi": 360,
+   "burstBar": 99.0
+  },
+  "103-0188031": {
+   "odMm": 4.78,
+   "idMm": 3.18,
+   "wallMm": 0.79,
+   "workingPressureBar": 20.0,
+   "workingPressurePsi": 290,
+   "burstBar": 80.0
+  },
+  "103-0188062": {
+   "odMm": 4.78,
+   "idMm": 1.63,
+   "wallMm": 1.57,
+   "workingPressureBar": 43.0,
+   "workingPressurePsi": 630,
+   "burstBar": 174.0
+  },
+  "103-0250031": {
+   "odMm": 6.35,
+   "idMm": 4.78,
+   "wallMm": 0.79,
+   "workingPressureBar": 14.0,
+   "workingPressurePsi": 210,
+   "burstBar": 58.0
+  },
+  "103-0250040": {
+   "odMm": 6.35,
+   "idMm": 4.32,
+   "wallMm": 1.02,
+   "workingPressureBar": 19.0,
+   "workingPressurePsi": 280,
+   "burstBar": 77.0
+  },
+  "103-0250047": {
+   "odMm": 6.35,
+   "idMm": 3.96,
+   "wallMm": 1.19,
+   "workingPressureBar": 23.0,
+   "workingPressurePsi": 340,
+   "burstBar": 94.0
+  },
+  "103-0250062": {
+   "odMm": 6.35,
+   "idMm": 3.18,
+   "wallMm": 1.57,
+   "workingPressureBar": 32.0,
+   "workingPressurePsi": 470,
+   "burstBar": 130.0
+  },
+  "103-0312031": {
+   "odMm": 7.92,
+   "idMm": 6.35,
+   "wallMm": 0.79,
+   "workingPressureBar": 11.0,
+   "workingPressurePsi": 160,
+   "burstBar": 44.0
+  },
+  "103-0312062": {
+   "odMm": 7.92,
+   "idMm": 4.78,
+   "wallMm": 1.57,
+   "workingPressureBar": 25.0,
+   "workingPressurePsi": 360,
+   "burstBar": 99.0
+  },
+  "103-0375031": {
+   "odMm": 9.52,
+   "idMm": 7.92,
+   "wallMm": 0.79,
+   "workingPressureBar": 9.0,
+   "workingPressurePsi": 130,
+   "burstBar": 36.0
+  },
+  "103-0375062": {
+   "odMm": 9.52,
+   "idMm": 6.35,
+   "wallMm": 1.57,
+   "workingPressureBar": 20.0,
+   "workingPressurePsi": 290,
+   "burstBar": 80.0
+  },
+  "103-0438031": {
+   "odMm": 11.13,
+   "idMm": 9.52,
+   "wallMm": 0.79,
+   "workingPressureBar": 8.0,
+   "workingPressurePsi": 110,
+   "burstBar": 30.0
+  },
+  "103-0438062": {
+   "odMm": 11.13,
+   "idMm": 7.92,
+   "wallMm": 1.57,
+   "workingPressureBar": 17.0,
+   "workingPressurePsi": 250,
+   "burstBar": 69.0
+  },
+  "103-0500031": {
+   "odMm": 12.7,
+   "idMm": 11.13,
+   "wallMm": 0.79,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 90,
+   "burstBar": 25.0
+  },
+  "103-0500062": {
+   "odMm": 12.7,
+   "idMm": 9.53,
+   "wallMm": 1.57,
+   "workingPressureBar": 14.0,
+   "workingPressurePsi": 210,
+   "burstBar": 58.0
+  },
+  "103-0563031": {
+   "odMm": 14.3,
+   "idMm": 12.7,
+   "wallMm": 0.79,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 80,
+   "burstBar": 22.0
+  },
+  "103-0625062": {
+   "odMm": 15.88,
+   "idMm": 12.7,
+   "wallMm": 1.57,
+   "workingPressureBar": 11.0,
+   "workingPressurePsi": 160,
+   "burstBar": 44.0
+  },
+  "103-0750062": {
+   "odMm": 19.05,
+   "idMm": 15.88,
+   "wallMm": 1.57,
+   "workingPressureBar": 9.0,
+   "workingPressurePsi": 130,
+   "burstBar": 36.0
+  },
+  "103-1000062": {
+   "odMm": 25.4,
+   "idMm": 22.22,
+   "wallMm": 1.57,
+   "workingPressureBar": 6,
+   "workingPressurePsi": 90,
+   "burstBar": 25
+  },
+  "104-0094031": {
+   "odMm": 2.4,
+   "idMm": 0.79,
+   "wallMm": 0.79,
+   "workingPressureBar": 47.0,
+   "workingPressurePsi": 680,
+   "burstBar": 188.0
+  },
+  "104-0125031": {
+   "odMm": 3.18,
+   "idMm": 1.63,
+   "wallMm": 0.79,
+   "workingPressureBar": 34.0,
+   "workingPressurePsi": 500,
+   "burstBar": 138.0
+  },
+  "104-0156031": {
+   "odMm": 3.99,
+   "idMm": 2.39,
+   "wallMm": 0.79,
+   "workingPressureBar": 27.0,
+   "workingPressurePsi": 390,
+   "burstBar": 108.0
+  },
+  "104-0188031": {
+   "odMm": 4.78,
+   "idMm": 3.18,
+   "wallMm": 0.79,
+   "workingPressureBar": 22.0,
+   "workingPressurePsi": 320,
+   "burstBar": 88.0
+  },
+  "104-0188062": {
+   "odMm": 4.78,
+   "idMm": 1.57,
+   "wallMm": 1.57,
+   "workingPressureBar": 47.0,
+   "workingPressurePsi": 680,
+   "burstBar": 188.0
+  },
+  "104-0250031": {
+   "odMm": 6.35,
+   "idMm": 4.78,
+   "wallMm": 0.79,
+   "workingPressureBar": 16.0,
+   "workingPressurePsi": 230,
+   "burstBar": 63.0
+  },
+  "104-0250040": {
+   "odMm": 6.35,
+   "idMm": 4.32,
+   "wallMm": 1.02,
+   "workingPressureBar": 21.0,
+   "workingPressurePsi": 300,
+   "burstBar": 83.0
+  },
+  "104-0250047": {
+   "odMm": 6.35,
+   "idMm": 3.96,
+   "wallMm": 1.19,
+   "workingPressureBar": 26.0,
+   "workingPressurePsi": 370,
+   "burstBar": 102.0
+  },
+  "104-0250062": {
+   "odMm": 6.35,
+   "idMm": 3.18,
+   "wallMm": 1.57,
+   "workingPressureBar": 34.0,
+   "workingPressurePsi": 500,
+   "burstBar": 138.0
+  },
+  "104-0312031": {
+   "odMm": 7.92,
+   "idMm": 6.35,
+   "wallMm": 0.79,
+   "workingPressureBar": 12.0,
+   "workingPressurePsi": 180,
+   "burstBar": 50.0
+  },
+  "104-0312062": {
+   "odMm": 7.92,
+   "idMm": 4.78,
+   "wallMm": 1.57,
+   "workingPressureBar": 27.0,
+   "workingPressurePsi": 390,
+   "burstBar": 108.0
+  },
+  "104-0375031": {
+   "odMm": 9.52,
+   "idMm": 7.92,
+   "wallMm": 0.79,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 140,
+   "burstBar": 39.0
+  },
+  "104-0375062": {
+   "odMm": 9.52,
+   "idMm": 6.35,
+   "wallMm": 1.57,
+   "workingPressureBar": 22.0,
+   "workingPressurePsi": 320,
+   "burstBar": 88.0
+  },
+  "104-0438031": {
+   "odMm": 11.13,
+   "idMm": 9.53,
+   "wallMm": 0.79,
+   "workingPressureBar": 8.0,
+   "workingPressurePsi": 120,
+   "burstBar": 33.0
+  },
+  "104-0438062": {
+   "odMm": 11.13,
+   "idMm": 7.92,
+   "wallMm": 1.57,
+   "workingPressureBar": 19.0,
+   "workingPressurePsi": 270,
+   "burstBar": 74.0
+  },
+  "104-0500031": {
+   "odMm": 12.7,
+   "idMm": 11.13,
+   "wallMm": 0.79,
+   "workingPressureBar": 7.0,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "104-0500062": {
+   "odMm": 12.7,
+   "idMm": 9.53,
+   "wallMm": 1.57,
+   "workingPressureBar": 16.0,
+   "workingPressurePsi": 230,
+   "burstBar": 63.0
+  },
+  "104-0563031": {
+   "odMm": 14.3,
+   "idMm": 12.7,
+   "wallMm": 0.79,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 80,
+   "burstBar": 22.0
+  },
+  "104-0750062": {
+   "odMm": 19.05,
+   "idMm": 15.88,
+   "wallMm": 1.57,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 140,
+   "burstBar": 39.0
+  },
+  "104-1000062": {
+   "odMm": 25.4,
+   "idMm": 22.22,
+   "wallMm": 1.57,
+   "workingPressureBar": 7.0,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "105-0125031": {
+   "odMm": 3.18,
+   "idMm": 1.63,
+   "wallMm": 0.79,
+   "workingPressureBar": 34.0,
+   "workingPressurePsi": 500,
+   "burstBar": 138.0
+  },
+  "105-0188031": {
+   "odMm": 4.78,
+   "idMm": 3.18,
+   "wallMm": 0.79,
+   "workingPressureBar": 22.0,
+   "workingPressurePsi": 320,
+   "burstBar": 88.0
+  },
+  "105-0250031": {
+   "odMm": 6.35,
+   "idMm": 4.78,
+   "wallMm": 0.79,
+   "workingPressureBar": 16.0,
+   "workingPressurePsi": 230,
+   "burstBar": 63.0
+  },
+  "105-0250040": {
+   "odMm": 6.35,
+   "idMm": 4.32,
+   "wallMm": 1.02,
+   "workingPressureBar": 21.0,
+   "workingPressurePsi": 300,
+   "burstBar": 83.0
+  },
+  "105-0250047": {
+   "odMm": 6.35,
+   "idMm": 3.96,
+   "wallMm": 1.19,
+   "workingPressureBar": 26.0,
+   "workingPressurePsi": 370,
+   "burstBar": 102.0
+  },
+  "105-0250062": {
+   "odMm": 6.35,
+   "idMm": 3.18,
+   "wallMm": 1.57,
+   "workingPressureBar": 34.0,
+   "workingPressurePsi": 500,
+   "burstBar": 138.0
+  },
+  "105-0375031": {
+   "odMm": 9.52,
+   "idMm": 7.92,
+   "wallMm": 0.79,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 140,
+   "burstBar": 39.0
+  },
+  "105-0375062": {
+   "odMm": 9.52,
+   "idMm": 6.35,
+   "wallMm": 1.57,
+   "workingPressureBar": 22.0,
+   "workingPressurePsi": 320,
+   "burstBar": 88.0
+  },
+  "105-0500062": {
+   "odMm": 12.7,
+   "idMm": 9.53,
+   "wallMm": 1.57,
+   "workingPressureBar": 16.0,
+   "workingPressurePsi": 230,
+   "burstBar": 63.0
+  },
+  "105-0750062": {
+   "odMm": 19.05,
+   "idMm": 15.88,
+   "wallMm": 1.57,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 140,
+   "burstBar": 39.0
+  },
+  "105-1000062": {
+   "odMm": 25.4,
+   "idMm": 22.22,
+   "wallMm": 1.57,
+   "workingPressureBar": 7.0,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "201-0300100": {
+   "odMm": 3.0,
+   "idMm": 1.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 27.0,
+   "workingPressurePsi": 390,
+   "burstBar": 108.0
+  },
+  "201-0400100": {
+   "odMm": 4.0,
+   "idMm": 2.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 20.0,
+   "workingPressurePsi": 290,
+   "burstBar": 80.0
+  },
+  "201-0500100": {
+   "odMm": 5.0,
+   "idMm": 3.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 15.0,
+   "workingPressurePsi": 220,
+   "burstBar": 61.0
+  },
+  "201-0600100": {
+   "odMm": 6.0,
+   "idMm": 4.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 12.0,
+   "workingPressurePsi": 180,
+   "burstBar": 50.0
+  },
+  "201-0700100": {
+   "odMm": 7.0,
+   "idMm": 5.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 150,
+   "burstBar": 41.0
+  },
+  "201-0800100": {
+   "odMm": 8.0,
+   "idMm": 6.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 9.0,
+   "workingPressurePsi": 130,
+   "burstBar": 36.0
+  },
+  "201-0900100": {
+   "odMm": 9.0,
+   "idMm": 7.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 8.0,
+   "workingPressurePsi": 110,
+   "burstBar": 30.0
+  },
+  "201-1000100": {
+   "odMm": 10.0,
+   "idMm": 8.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 7.0,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "201-1200100": {
+   "odMm": 12.0,
+   "idMm": 10.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 80,
+   "burstBar": 22.0
+  },
+  "201-1400100": {
+   "odMm": 14.0,
+   "idMm": 12.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 5.0,
+   "workingPressurePsi": 70,
+   "burstBar": 19.0
+  },
+  "201-1600100": {
+   "odMm": 16.0,
+   "idMm": 14.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 4.0,
+   "workingPressurePsi": 60,
+   "burstBar": 17.0
+  },
+  "203-0300100": {
+   "odMm": 3.0,
+   "idMm": 1.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 27.0,
+   "workingPressurePsi": 390,
+   "burstBar": 108.0
+  },
+  "203-0400100": {
+   "odMm": 4.0,
+   "idMm": 2.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 20.0,
+   "workingPressurePsi": 290,
+   "burstBar": 80.0
+  },
+  "203-0600100": {
+   "odMm": 6.0,
+   "idMm": 4.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 12.0,
+   "workingPressurePsi": 180,
+   "burstBar": 50.0
+  },
+  "203-0700100": {
+   "odMm": 7.0,
+   "idMm": 5.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 150,
+   "burstBar": 41.0
+  },
+  "203-0800100": {
+   "odMm": 8.0,
+   "idMm": 6.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 9.0,
+   "workingPressurePsi": 130,
+   "burstBar": 36.0
+  },
+  "203-0900100": {
+   "odMm": 9.0,
+   "idMm": 7.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 8.0,
+   "workingPressurePsi": 110,
+   "burstBar": 30.0
+  },
+  "203-1000100": {
+   "odMm": 10.0,
+   "idMm": 8.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 7.0,
+   "workingPressurePsi": 100,
+   "burstBar": 28.0
+  },
+  "203-1200100": {
+   "odMm": 12.0,
+   "idMm": 10.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 6.0,
+   "workingPressurePsi": 80,
+   "burstBar": 22.0
+  },
+  "204-0600100": {
+   "odMm": 6.0,
+   "idMm": 4.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 22.0,
+   "workingPressurePsi": 320,
+   "burstBar": 88.0
+  },
+  "204-0800100": {
+   "odMm": 8.0,
+   "idMm": 6.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 16.0,
+   "workingPressurePsi": 230,
+   "burstBar": 63.0
+  },
+  "204-1000100": {
+   "odMm": 10.0,
+   "idMm": 8.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 12.0,
+   "workingPressurePsi": 180,
+   "burstBar": 50.0
+  },
+  "204-1200100": {
+   "odMm": 12.0,
+   "idMm": 10.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 140,
+   "burstBar": 39.0
+  },
+  "205-0300100": {
+   "odMm": 3.0,
+   "idMm": 1.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 47.0,
+   "workingPressurePsi": 680,
+   "burstBar": 188.0
+  },
+  "205-0400100": {
+   "odMm": 4.0,
+   "idMm": 2.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 34.0,
+   "workingPressurePsi": 500,
+   "burstBar": 138.0
+  },
+  "205-0600100": {
+   "odMm": 6.0,
+   "idMm": 4.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 22.0,
+   "workingPressurePsi": 320,
+   "burstBar": 88.0
+  },
+  "205-0800100": {
+   "odMm": 8.0,
+   "idMm": 6.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 16.0,
+   "workingPressurePsi": 230,
+   "burstBar": 63.0
+  },
+  "205-1000100": {
+   "odMm": 10.0,
+   "idMm": 8.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 12.0,
+   "workingPressurePsi": 180,
+   "burstBar": 50.0
+  },
+  "205-1200100": {
+   "odMm": 12.0,
+   "idMm": 10.0,
+   "wallMm": 1.0,
+   "workingPressureBar": 10.0,
+   "workingPressurePsi": 140,
+   "burstBar": 39.0
+  }
+ },
+ "parkerAS81914": {
+  "81914/1-1001": {
+   "maxIdMm": 4.78,
+   "maxOdMm": 8.13,
+   "workingPressureBar": null
+  },
+  "81914/1-1002": {
+   "maxIdMm": 7.14,
+   "maxOdMm": 10.5,
+   "workingPressureBar": null
+  },
+  "81914/1-1003": {
+   "maxIdMm": 7.93,
+   "maxOdMm": 11.4,
+   "workingPressureBar": null
+  },
+  "81914/1-1004": {
+   "maxIdMm": 9.53,
+   "maxOdMm": 13.5,
+   "workingPressureBar": null
+  },
+  "81914/1-1005": {
+   "maxIdMm": 11.1,
+   "maxOdMm": 15.0,
+   "workingPressureBar": null
+  },
+  "81914/1-1006": {
+   "maxIdMm": 12.7,
+   "maxOdMm": 16.8,
+   "workingPressureBar": null
+  },
+  "81914/1-1007": {
+   "maxIdMm": 15.9,
+   "maxOdMm": 19.9,
+   "workingPressureBar": null
+  },
+  "81914/1-1008": {
+   "maxIdMm": 19.1,
+   "maxOdMm": 24.8,
+   "workingPressureBar": null
+  },
+  "81914/1-1009": {
+   "maxIdMm": 22.2,
+   "maxOdMm": 27.9,
+   "workingPressureBar": null
+  },
+  "81914/1-1010": {
+   "maxIdMm": 25.4,
+   "maxOdMm": 32.0,
+   "workingPressureBar": null
+  },
+  "81914/1-1011": {
+   "maxIdMm": 28.6,
+   "maxOdMm": 35.3,
+   "workingPressureBar": null
+  },
+  "81914/1-1012": {
+   "maxIdMm": 31.8,
+   "maxOdMm": 39.1,
+   "workingPressureBar": null
+  },
+  "81914/1-1013": {
+   "maxIdMm": 38.1,
+   "maxOdMm": 47.0,
+   "workingPressureBar": null
+  }
+ }
+}
