@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import {
   hasVariantEquivalents,
   hasVariantPressures,
@@ -78,6 +79,46 @@ function formatCell(value: number | undefined, kind: VariantTableKind, column: V
     : String(value)
 }
 
+/** Size cards shown on a phone before the rest fold behind "Show all". */
+const MOBILE_PREVIEW = 8
+/**
+ * Above this many sizes the phone does NOT render a card per size: "Show all"
+ * opens the full table (sideways-scrolling) instead. The biggest listings
+ * carry 1,000+ sizes, and a card each would be ~10× the DOM of the table row.
+ */
+const MOBILE_ALL_CARDS_MAX = 40
+
+/** One column of the size table, shared by the table and the phone cards. */
+type SizeColumn = {
+  key: string
+  heading: ReactNode
+  /** Tooltip on the table header (the column's help text). */
+  title?: string
+  align?: 'right'
+  nowrap?: boolean
+  cell: (v: VariantLike) => ReactNode
+}
+
+/** A size as a card: part number on top, every other column as label → value. */
+function SizeCard({ v, cols, partNumberHeading }: { v: VariantLike; cols: SizeColumn[]; partNumberHeading: string }) {
+  return (
+    <li className="rounded-[var(--radius-lg)] border border-ih-border bg-ih-surface">
+      <div className="flex items-baseline justify-between gap-3 border-b border-ih-border px-4 py-2.5">
+        <span className="text-[11px] font-medium uppercase tracking-[0.08em] text-ih-muted">{partNumberHeading}</span>
+        <span className="text-[14px] font-semibold tabular-nums text-ih-ink">{v.partNumber}</span>
+      </div>
+      <dl className="grid grid-cols-2 gap-x-4 gap-y-2.5 px-4 py-3">
+        {cols.map((c) => (
+          <div key={c.key} className="min-w-0">
+            <dt className="text-[11px] font-medium uppercase tracking-[0.06em] text-ih-muted">{c.heading}</dt>
+            <dd className="mt-0.5 break-words text-[13.5px] tabular-nums text-ih-ink">{c.cell(v)}</dd>
+          </div>
+        ))}
+      </dl>
+    </li>
+  )
+}
+
 /** Columns that carry a manufacturer's rating — they get the lowest-rated-component note. */
 const RATING_KEYS = new Set(['ratedPsi', 'maxPsi', 'contPsi', 'flowGpm', 'maxFlowGpm', 'ratedRpm', 'maxRpm', 'torqueLbIn', 'columnLoadLbs', 'capacityTon'])
 
@@ -94,8 +135,8 @@ const RATING_KEYS = new Set(['ratedPsi', 'maxPsi', 'contPsi', 'flowGpm', 'maxFlo
  * component renders whichever of those the product carries instead of a fixed
  * set with empty cells.
  *
- * Wide by nature, so it scrolls inside its own container. Letting the page
- * scroll sideways instead is the bug the tab strip above it already had.
+ * Wide by nature, so from md up it scrolls inside its own container; on a
+ * phone each size is a card instead (see the render).
  */
 export default function ProductSizeTable({
   variants,
@@ -154,13 +195,77 @@ export default function ProductSizeTable({
     !dimensionColumns.some((c) => c.key.startsWith('wll') || c.key.startsWith('lc')) &&
     dimensionColumns.some((c) => c.key.startsWith('mbl'))
 
+  const dimHeading = (c: VariantColumn): ReactNode => (
+    <>
+      {/* A drawing letter keeps its case: `d` and `D` are different dimensions on
+          the same drawing, and the row's uppercase styling would merge them. */}
+      {DRAWING_LETTER_LABEL.test(c.label) ? <span className="normal-case">{c.label}</span> : c.label}
+      {variantColumnUnit(c) && (
+        <>
+          {' '}
+          <span className="text-ih-muted-2">({variantColumnUnit(c)})</span>
+        </>
+      )}
+    </>
+  )
+  const cols: SizeColumn[] = [
+    ...(showEquivalents
+      ? [{
+          key: 'competitorMpn',
+          heading: equivalentBrand ? `${equivalentBrand} equivalent` : 'Equivalent',
+          cell: (v: VariantLike) => v.competitorMpn ?? '—',
+        }]
+      : []),
+    ...xrefBrands.map((b) => ({
+      key: `xref-${b}`,
+      heading: equivalentHeading(b),
+      nowrap: true,
+      cell: (v: VariantLike) => equivalents?.byPartNumber[v.partNumber]?.[b] ?? '—',
+    })),
+    ...leadTextColumns.map((c) => ({
+      key: `lead-${c.key}`,
+      heading: c.label,
+      title: c.help,
+      nowrap: true,
+      cell: (v: VariantLike) => variantText(v.dimensions, c.key) ?? '—',
+    })),
+    ...(showHose ? [{ key: 'hose', heading: sizeHeading, cell: (v: VariantLike) => variantHoseLabel(v) ?? '—' }] : []),
+    ...(showPort ? [{ key: 'port', heading: portHeading, cell: (v: VariantLike) => v.portLabel ?? '—' }] : []),
+    ...endColumns.map((c) => ({
+      key: `end-${c.key}`,
+      heading: c.label,
+      title: c.help,
+      nowrap: true,
+      cell: (v: VariantLike) => v[c.key] ?? '—',
+    })),
+    ...dimensionColumns.map((c) => ({
+      key: `dim-${c.key}`,
+      heading: dimHeading(c),
+      title: c.help,
+      align: 'right' as const,
+      cell: (v: VariantLike) => formatCell(variantDimensions(v.dimensions)[c.key], kind, c),
+    })),
+    ...textColumns.map((c) => ({
+      key: `text-${c.key}`,
+      heading: c.label,
+      title: c.help,
+      cell: (v: VariantLike) => variantText(v.dimensions, c.key) ?? '—',
+    })),
+    ...(showWeight
+      ? [{ key: 'weight', heading: <>Weight <span className="text-ih-muted-2">(g)</span></>, align: 'right' as const, cell: (v: VariantLike) => v.weightG ?? '—' }]
+      : []),
+    ...(showPressure
+      ? [{ key: 'pressure', heading: <>Working pressure <span className="text-ih-muted-2">(bar)</span></>, align: 'right' as const, cell: (v: VariantLike) => v.pressureBar ?? '—' }]
+      : []),
+  ]
+
   return (
-    <div>
+    <div className="ih-sizes">
       <div className="mb-5 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="font-serif text-[26px] font-normal tracking-[-0.01em]">
           Sizes &amp; part numbers
         </h2>
-        <span className="font-mono text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+        <span className="text-[11px] uppercase tracking-[0.08em] text-ih-muted">
           {variants.length} size{variants.length === 1 ? '' : 's'}
         </span>
       </div>
@@ -169,148 +274,81 @@ export default function ProductSizeTable({
         <p className="mb-5 text-[14px] leading-[1.6] text-ih-ink-2">{equivalenceNote}</p>
       )}
 
-      <div className="overflow-x-auto border border-ih-border">
-        <table className="w-full min-w-[640px] font-mono text-[13px]">
+      {/*
+        One column list drives both layouts, so the phone cards and the table
+        can never disagree about what a size carries.
+
+        Phones (< md) get a card per size: the part number as the card's
+        heading and every other column as a label/value pair. A 7–12 column
+        table at 375px is a sideways scroll where the reader loses the part
+        number the moment they move off it; a buyer on a phone is looking up
+        one size, not comparing twelve. Long ranges show the first
+        MOBILE_PREVIEW cards and fold the rest behind "Show all", which is a
+        native <details>, so it needs no script and every card stays in the
+        HTML. From md up it is the table it always was.
+      */}
+      <ol className="flex flex-col gap-2.5 md:hidden">
+        {variants.slice(0, MOBILE_PREVIEW).map((v) => (
+          <SizeCard key={v.partNumber} v={v} cols={cols} partNumberHeading={partNumberHeading} />
+        ))}
+      </ol>
+      {variants.length > MOBILE_PREVIEW && (
+        <details className="group/sizes mt-2.5 md:hidden">
+          <summary className="flex h-11 cursor-pointer list-none items-center justify-center rounded-[var(--radius-md)] border border-ih-border-strong bg-ih-surface text-[13.5px] font-medium text-ih-ink [&::-webkit-details-marker]:hidden">
+            <span className="group-open/sizes:hidden">Show all {variants.length} sizes</span>
+            <span className="hidden group-open/sizes:inline">Show fewer sizes</span>
+          </summary>
+          {variants.length <= MOBILE_ALL_CARDS_MAX ? (
+            <ol className="mt-2.5 flex flex-col gap-2.5">
+              {variants.slice(MOBILE_PREVIEW).map((v) => (
+                <SizeCard key={v.partNumber} v={v} cols={cols} partNumberHeading={partNumberHeading} />
+              ))}
+            </ol>
+          ) : null}
+        </details>
+      )}
+
+      {/* On a phone the table only appears for a long range, once "Show all"
+          is opened (the wrapper's :has() sees the open <details>). */}
+      <div
+        className={`overflow-x-auto overscroll-x-contain border border-ih-border md:mt-0 md:block ${
+          variants.length > MOBILE_ALL_CARDS_MAX ? 'mt-2.5 hidden [.ih-sizes:has(details[open])_&]:block' : 'hidden'
+        }`}
+      >
+        <table className="w-full min-w-[640px] text-[13px] tabular-nums">
           <thead>
             <tr className="bg-ih-surface-2 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
               <th scope="col" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap">
                 {partNumberHeading}
               </th>
-              {showEquivalents && (
-                <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
-                  {equivalentBrand ? `${equivalentBrand} equivalent` : 'Equivalent'}
-                </th>
-              )}
-              {xrefBrands.map((b) => (
-                <th key={b} scope="col" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap">
-                  {equivalentHeading(b)}
-                </th>
-              ))}
-              {leadTextColumns.map((c) => (
+              {cols.map((c) => (
                 <th
                   key={c.key}
                   scope="col"
-                  title={c.help}
-                  className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap"
+                  title={c.title}
+                  className={`px-3.5 py-2.5 font-medium whitespace-nowrap ${c.align === 'right' ? 'text-right' : 'text-left'}`}
                 >
-                  {c.label}
+                  {c.heading}
                 </th>
               ))}
-              {showHose && (
-                <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
-                  {sizeHeading}
-                </th>
-              )}
-              {showPort && (
-                <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
-                  {portHeading}
-                </th>
-              )}
-              {endColumns.map((c) => (
-                <th
-                  key={c.key}
-                  scope="col"
-                  title={c.help}
-                  className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap"
-                >
-                  {c.label}
-                </th>
-              ))}
-              {dimensionColumns.map((c) => (
-                <th
-                  key={c.key}
-                  scope="col"
-                  title={c.help}
-                  className="px-3.5 py-2.5 text-right font-medium whitespace-nowrap"
-                >
-                  {/* A drawing letter keeps its case: `d` and `D` are different dimensions on
-                      the same drawing, and the row's uppercase styling would merge them. */}
-                  {DRAWING_LETTER_LABEL.test(c.label) ? <span className="normal-case">{c.label}</span> : c.label}
-                  {variantColumnUnit(c) && (
-                    <>
-                      {' '}
-                      <span className="text-ih-muted-2">({variantColumnUnit(c)})</span>
-                    </>
-                  )}
-                </th>
-              ))}
-              {textColumns.map((c) => (
-                <th
-                  key={c.key}
-                  scope="col"
-                  title={c.help}
-                  className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap"
-                >
-                  {c.label}
-                </th>
-              ))}
-              {showWeight && (
-                <th scope="col" className="px-3.5 py-2.5 text-right font-medium whitespace-nowrap">
-                  Weight <span className="text-ih-muted-2">(g)</span>
-                </th>
-              )}
-              {showPressure && (
-                <th scope="col" className="px-3.5 py-2.5 text-right font-medium whitespace-nowrap">
-                  Working pressure <span className="text-ih-muted-2">(bar)</span>
-                </th>
-              )}
             </tr>
           </thead>
           <tbody>
-            {variants.map((v) => {
-              const dims = variantDimensions(v.dimensions)
-              const hose = variantHoseLabel(v)
-              return (
-                <tr key={v.partNumber} className="border-t border-ih-border">
-                  <th
-                    scope="row"
-                    className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap text-ih-ink"
+            {variants.map((v) => (
+              <tr key={v.partNumber} className="border-t border-ih-border">
+                <th scope="row" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap text-ih-ink">
+                  {v.partNumber}
+                </th>
+                {cols.map((c) => (
+                  <td
+                    key={c.key}
+                    className={`px-3.5 py-2.5 text-ih-ink-2 ${c.nowrap ? 'whitespace-nowrap' : ''} ${c.align === 'right' ? 'text-right' : ''}`}
                   >
-                    {v.partNumber}
-                  </th>
-                  {showEquivalents && (
-                    <td className="px-3.5 py-2.5 text-ih-ink-2">{v.competitorMpn ?? '—'}</td>
-                  )}
-                  {xrefBrands.map((b) => (
-                    <td key={b} className="px-3.5 py-2.5 whitespace-nowrap text-ih-ink-2">
-                      {equivalents?.byPartNumber[v.partNumber]?.[b] ?? '—'}
-                    </td>
-                  ))}
-                  {leadTextColumns.map((c) => (
-                    <td key={c.key} className="px-3.5 py-2.5 whitespace-nowrap text-ih-ink-2">
-                      {variantText(v.dimensions, c.key) ?? '—'}
-                    </td>
-                  ))}
-                  {showHose && <td className="px-3.5 py-2.5 text-ih-ink-2">{hose ?? '—'}</td>}
-                  {showPort && (
-                    <td className="px-3.5 py-2.5 text-ih-ink-2">{v.portLabel ?? '—'}</td>
-                  )}
-                  {endColumns.map((c) => (
-                    <td key={c.key} className="px-3.5 py-2.5 whitespace-nowrap text-ih-ink-2">
-                      {v[c.key] ?? '—'}
-                    </td>
-                  ))}
-                  {dimensionColumns.map((c) => (
-                    <td key={c.key} className="px-3.5 py-2.5 text-right text-ih-ink-2">
-                      {formatCell(dims[c.key], kind, c)}
-                    </td>
-                  ))}
-                  {textColumns.map((c) => (
-                    <td key={c.key} className="px-3.5 py-2.5 text-ih-ink-2">
-                      {variantText(v.dimensions, c.key) ?? '—'}
-                    </td>
-                  ))}
-                  {showWeight && (
-                    <td className="px-3.5 py-2.5 text-right text-ih-ink-2">{v.weightG ?? '—'}</td>
-                  )}
-                  {showPressure && (
-                    <td className="px-3.5 py-2.5 text-right text-ih-ink-2">
-                      {v.pressureBar ?? '—'}
-                    </td>
-                  )}
-                </tr>
-              )
-            })}
+                    {c.cell(v)}
+                  </td>
+                ))}
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

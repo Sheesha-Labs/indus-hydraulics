@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, JetBrains_Mono, Instrument_Serif } from 'next/font/google'
+import { Geist, Instrument_Serif } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { buildIconMetadata } from '../lib/brand-identity'
@@ -24,9 +24,10 @@ import { BASE_URL } from '../lib/seo'
  * child.
  */
 
-// Design language v2 ships three families and no others: Geist for UI,
-// Instrument Serif for display, JetBrains Mono for data and labels.
-// See design_handoff_indus_hydraulics_v2/01-design-language.md §3.
+// Two families: Geist for UI and data, Instrument Serif for display. Design
+// language v2 shipped JetBrains Mono for data and labels; the owner removed
+// monospace site-wide on 2026-11-19 (CLAUDE.md §2.6), so it is no longer
+// loaded and `--font-mono` resolves to Geist (globals.css).
 //
 // next/font self-hosts and inlines these at build time, so the handoff's
 // "self-host for production" requirement is met by staying on next/font/google.
@@ -34,13 +35,6 @@ import { BASE_URL } from '../lib/seo'
 const geist = Geist({
   subsets: ['latin'],
   variable: '--font-geist',
-  display: 'swap',
-})
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-jetbrains-mono',
   display: 'swap',
 })
 
@@ -101,7 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${jetbrainsMono.variable} ${instrumentSerif.variable} h-full`}
+      className={`${geist.variable} ${instrumentSerif.variable} h-full`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-ih-bg text-ih-ink">

@@ -141,7 +141,7 @@ export default function DesignFoundationPage() {
         </div>
       </Section>
 
-      <Section n="/02" title="Type." note="Three families, no exceptions. Geist for UI, Instrument Serif for display (weight 400 only — never bold inside a serif headline), JetBrains Mono for anything machine-readable.">
+      <Section n="/02" title="Type." note="Two families. Geist for UI and for data (tabular figures keep numbers aligned), Instrument Serif for display (weight 400 only — never bold inside a serif headline). No monospace since 2026-11-19.">
         <div className="flex flex-col gap-6">
           {TYPE_SCALE.map(([role, family, cls]) => (
             <div key={role} className="grid grid-cols-[180px_1fr] items-baseline gap-8 border-b border-ih-border pb-5">

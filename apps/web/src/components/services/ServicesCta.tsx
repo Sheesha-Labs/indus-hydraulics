@@ -49,7 +49,7 @@ export default function ServicesCta({
       </p>
       <div className="flex flex-wrap justify-center gap-3">
         <Link
-          href="/quote"
+          href="/contact"
           className="inline-flex items-center gap-2 rounded-sm bg-ih-navy px-7 py-3.5 text-[15px] font-medium text-white hover:bg-ih-ink"
         >
           {primaryLabel ?? 'Open a service ticket'}

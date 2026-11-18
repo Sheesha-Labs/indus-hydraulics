@@ -38,7 +38,7 @@ export default function CaseRail(props: Props) {
     <aside className="space-y-3.5">
       {(props.ctaCardTitle || props.ctaCardBody) ? (
         <div className="rounded-sm border border-ih-ink bg-ih-navy p-4.5 font-sans text-white">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-accent">
+          <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.1em] text-ih-steel">
             Quote a similar job
           </div>
           {props.ctaCardTitle ? (
@@ -51,8 +51,10 @@ export default function CaseRail(props: Props) {
               {props.ctaCardBody}
             </p>
           ) : null}
+          {/* /contact, not /quote: a service job starts with a conversation,
+              not a parts shortlist (owner call, 2026-11-19). */}
           <Link
-            href="/quote"
+            href="/contact"
             className="mt-3 block w-full rounded-sm bg-ih-accent px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-ih-accent-hover"
           >
             Open a service ticket
@@ -78,7 +80,15 @@ export default function CaseRail(props: Props) {
           </p>
           {(props.pullQuoteAuthor || props.pullQuoteRole) ? (
             <div className="flex items-center gap-2.5 border-t border-ih-border pt-3">
-              <div className="size-8 rounded-full border border-ih-border bg-ih-surface-2" aria-hidden />
+              {/* The site favicon, as on the /services featured card. */}
+              {/* eslint-disable-next-line @next/next/no-img-element -- a route-served brand mark, not an optimisable asset */}
+              <img
+                src="/tab-icon.png"
+                alt=""
+                width={32}
+                height={32}
+                className="size-8 shrink-0 rounded-full border border-ih-border bg-ih-surface object-contain p-1"
+              />
               <div>
                 {props.pullQuoteAuthor ? <strong className="text-[13px] font-medium">{props.pullQuoteAuthor}</strong> : null}
                 {(props.pullQuoteRole || props.pullQuoteLocation) ? (
