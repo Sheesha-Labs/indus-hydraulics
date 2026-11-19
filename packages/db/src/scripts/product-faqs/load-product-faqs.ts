@@ -42,10 +42,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { homedir } from 'node:os'
 import { join } from 'node:path'
 import { PrismaClient } from '@prisma/client'
-import { scoreProductContent } from '@indus/domain'
-// Relative import: the worktree's domain package, which has the parser even
-// when the linked node_modules points at an older checkout.
-import { faqAnswerLinks, faqAnswerPlainText } from '../../../../domain/src/faq-answer'
+import { faqAnswerLinks, faqAnswerPlainText, scoreProductContent } from '@indus/domain'
 
 const db = new PrismaClient()
 
