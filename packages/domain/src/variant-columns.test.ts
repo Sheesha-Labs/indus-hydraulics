@@ -167,7 +167,7 @@ describe('text columns', () => {
     expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
       'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action', 'ratio',
       'series', 'cavity', 'capacity', 'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'voltage', 'output', 'maxPressure', 'outletThread',
-      'monitoring', 'usedOn',
+      'monitoring', 'usedOn', 'fits', 'range', 'dial', 'trim', 'connection',
     ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
@@ -834,6 +834,45 @@ describe('valve tables', () => {
 
   it('leaves a table without valve keys alone', () => {
     expect(variantTableKind([row('IH-LR-X', { size: '1/2"', wllT: 2 })])).toBe('lifting')
+  })
+
+  it('reads a mud gate valve row by model, class, ends and service, with no lengths', () => {
+    const gate = [
+      row('IH-OTC-112501', { model: 'GV250', size: '2"', pressureClass: '5,000 psi', ends: '2" line pipe thread', service: 'Standard' }),
+    ]
+    expect(variantTableKind(gate)).toBe('valve')
+    expect(variantTextColumns(gate).map((c) => c.key)).toEqual(['model', 'size', 'pressureClass', 'ends', 'service'])
+    expect(variantDimensionColumns(gate)).toEqual([])
+  })
+
+  it('reads a relief valve by its set range, which is not a class', () => {
+    const relief = [row('IH-OTC-132050', { model: '21050', size: '2"', setRange: '1,000–5,000 psi', ends: '2" LPT' })]
+    expect(variantTableKind(relief)).toBe('valve')
+    const set = variantTextColumns(relief).find((c) => c.key === 'setRange')!
+    expect(set.help).toMatch(/not the body rating/)
+  })
+
+  it('reads a float valve row as a valve on its service alone, although it carries size', () => {
+    expect(variantTableKind([row('IH-OTC-480124200', { model: 'Model F', size: '4R', service: 'Standard' })])).toBe('valve')
+  })
+})
+
+describe('spare part and gauge columns', () => {
+  const row = (partNumber: string, dims: Record<string, string>): VariantLike => ({ partNumber, dimensions: dims })
+
+  it('leads a spare-part table with what the part is and what it fits, without making it equipment', () => {
+    const parts = [row('IH-OTC-120012', { item: 'Minor repair kit, NBR, stainless inserts', fits: '224' })]
+    expect(variantTableKind(parts)).toBe('fitting')
+    expect(variantTextColumns(parts).map((c) => c.key)).toEqual(['item', 'fits'])
+  })
+
+  it('leads a gauge table with range, dial, service and end connection', () => {
+    const gauge = [
+      row('IH-OTC-360000', { range: '0–10,000 psi', dial: 'Standard', trim: 'Standard', connection: '2-1/16" 10,000 psi API flange (BX-152)' }),
+    ]
+    expect(variantTableKind(gauge)).toBe('fitting')
+    expect(variantTextColumns(gauge).map((c) => c.key)).toEqual(['range', 'dial', 'trim', 'connection'])
+    expect(variantTextColumns(gauge).every((c) => c.lead)).toBe(true)
   })
 })
 

@@ -71,7 +71,32 @@ export type VariantDimensionKey =
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | 'supply' | HoseTextKey | EquipmentTextKey | LiftingTextKey | ValveTextKey | TubeTextKey
+export type VariantTextKey =
+  | 'oRing'
+  | 'supply'
+  | HoseTextKey
+  | EquipmentTextKey
+  | LiftingTextKey
+  | ValveTextKey
+  | TubeTextKey
+  | SparePartTextKey
+  | GaugeTextKey
+
+/**
+ * Spare parts, kits and consumables listed against what they fit: `item` says
+ * what the part is and `fits` names the model, size or equipment the maker
+ * lists it for — "236, 250" on a gate valve part, "Hydril GK 13-5/8 in" on a
+ * packing unit, "4-1/2 in drill pipe" on a wiper. Unlike `usedOn` this does
+ * not make the table `equipment`.
+ */
+export type SparePartTextKey = 'fits'
+
+/**
+ * Drilling and wellsite pressure gauges: the dial range and unit as printed on
+ * the dial face, the dial style, the service trim and the end connection of the
+ * gauge sub — the four things a gauge is ordered by.
+ */
+export type GaugeTextKey = 'range' | 'dial' | 'trim' | 'connection'
 
 /**
  * Heat-transfer tube and pipe: seamless, finned, U-bend and copper-alloy tube.
@@ -238,7 +263,14 @@ export type LubricationTextKey =
  * borrowing that column.
  */
 export type ValveDimensionKey = 'lFf' | 'lRf' | 'lRtj' | 'lBw' | 'weightRfKg' | 'weightBwKg'
-export type ValveTextKey = 'dn' | 'pressureClass' | 'port'
+/**
+ * `model` is the maker's model code where one listing covers several (Model 72
+ * GV250, DM 25, PRV 21050). `setRange` is a relief valve's adjustable set-
+ * pressure band, never its body rating. `ends` and `service` are the end
+ * connections and the trim as the maker words them — a valve's working pressure
+ * can depend on both, so they sit beside the class rather than in the copy.
+ */
+export type ValveTextKey = 'dn' | 'pressureClass' | 'port' | 'model' | 'setRange' | 'ends' | 'service'
 
 /**
  * Lifting & rigging columns.
@@ -707,6 +739,13 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'outletThread', label: 'Outlet', help: 'Outlet port thread, as published.' },
   { key: 'monitoring', label: 'Monitoring', help: 'Level switch, pressure switch, gauge or controller the part number includes, as published.' },
   { key: 'usedOn', label: 'For', help: 'Pump, or pump version, the maker lists the spare part under.' },
+  // Valve spare parts and repair kits — see SparePartTextKey.
+  { key: 'fits', label: 'Fits', help: 'Model, size or equipment the maker lists the part or kit for.', lead: true },
+  // Drilling pressure gauges — see GaugeTextKey.
+  { key: 'range', label: 'Range', help: 'Dial range and unit, as printed on the dial face.', lead: true },
+  { key: 'dial', label: 'Dial face', help: 'Dial face style — standard, luminous, or dual units — as published.', lead: true },
+  { key: 'trim', label: 'Service', help: 'Service trim — standard, sour gas (H2S), salt water — as published.', lead: true },
+  { key: 'connection', label: 'End connection', help: 'End connection, as published.', lead: true },
 ]
 
 /**
@@ -994,11 +1033,15 @@ const TUBE_MARKERS: readonly TubeTextKey[] = ['odMm', 'odIn', 'nps', 'bwg', 'bas
 
 /** Valve rows lead with size, DN, class and port. See `ValveDimensionKey`. */
 export const VALVE_TEXT_COLUMNS: readonly VariantTextColumn[] = [
+  { key: 'model', label: 'Model', help: 'Manufacturer model code, where one listing covers several models.', lead: true },
   { key: 'type', label: 'Type', help: 'Valve type of this row, where one listing covers several.', lead: true },
   { key: 'size', label: 'Size', help: 'Nominal pipe size (NPS), as published.', lead: true },
   { key: 'dn', label: 'DN', help: 'Nominal diameter (DN), as published.', lead: true },
-  { key: 'pressureClass', label: 'Class', help: 'Pressure class the row is built to (ASME Class or PN), as published.', lead: true },
+  { key: 'pressureClass', label: 'Class', help: 'Pressure class or working pressure the row is built to (ASME Class, PN or psi), as published.', lead: true },
+  { key: 'setRange', label: 'Set range', help: 'Range the relief pressure can be set within, as published. It is not the body rating.', lead: true },
   { key: 'port', label: 'Port', help: 'Full bore or reduced bore, as published.', lead: true },
+  { key: 'ends', label: 'End connections', help: 'Inlet and outlet end connections, as published.', lead: true },
+  { key: 'service', label: 'Service', help: 'Service trim — standard, sour gas (H2S), waterflood, low temperature — as published.', lead: true },
 ]
 
 const VALVE_LENGTH_COLUMNS: readonly VariantColumn[] = [
@@ -1015,7 +1058,7 @@ const VALVE_WEIGHT_COLUMNS: readonly VariantColumn[] = [
 ]
 
 /** Keys only a valve row carries. Checked before the lifting markers, since a valve row also has `size`. */
-const VALVE_MARKERS: ReadonlySet<string> = new Set<string>(['pressureClass', 'dn', 'lFf', 'lRf', 'lRtj', 'lBw'])
+const VALVE_MARKERS: ReadonlySet<string> = new Set<string>(['pressureClass', 'dn', 'lFf', 'lRf', 'lRtj', 'lBw', 'setRange', 'ends', 'service'])
 
 const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
   ...LIFTING_LOAD_COLUMNS.map((c) => c.key),

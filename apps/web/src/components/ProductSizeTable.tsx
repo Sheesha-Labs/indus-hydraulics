@@ -420,11 +420,18 @@ export default function ProductSizeTable({
             part.
           </p>
         )}
-        {kind === 'valve' && (
+        {kind === 'valve' && dimensionColumns.length > 0 && (
           <p>
             Lengths are in millimetres and weights in kilograms, as published for each size and
             class. The end connection, trim, seat and operator you order can change the length and
             weight, so we confirm the general arrangement drawing with the quotation.
+          </p>
+        )}
+        {kind === 'valve' && leadTextColumns.some((c) => c.key === 'ends') && (
+          <p>
+            End connections are listed as the manufacturer builds them for each part number. A
+            threaded or union end can carry a lower working pressure than the valve body, so we
+            confirm the rating for the connection you order with the quotation.
           </p>
         )}
         {kind === 'tube' && (
