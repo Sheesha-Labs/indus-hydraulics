@@ -83,10 +83,11 @@ export type VariantTextKey =
   | GaugeTextKey
 
 /**
- * Spare parts and repair kits listed against the valve, pump or tool they fit:
- * `item` says what the part is and `fits` names the model(s) the maker lists it
- * under — "236, 250" on a gate valve part, "Model 25" on a DM seat. Unlike
- * `usedOn` this does not make the table `equipment`.
+ * Spare parts, kits and consumables listed against what they fit: `item` says
+ * what the part is and `fits` names the model, size or equipment the maker
+ * lists it for — "236, 250" on a gate valve part, "Hydril GK 13-5/8 in" on a
+ * packing unit, "4-1/2 in drill pipe" on a wiper. Unlike `usedOn` this does
+ * not make the table `equipment`.
  */
 export type SparePartTextKey = 'fits'
 
@@ -739,12 +740,12 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'monitoring', label: 'Monitoring', help: 'Level switch, pressure switch, gauge or controller the part number includes, as published.' },
   { key: 'usedOn', label: 'For', help: 'Pump, or pump version, the maker lists the spare part under.' },
   // Valve spare parts and repair kits — see SparePartTextKey.
-  { key: 'fits', label: 'Fits', help: 'Valve model(s) the maker lists the part or kit under.', lead: true },
+  { key: 'fits', label: 'Fits', help: 'Model, size or equipment the maker lists the part or kit for.', lead: true },
   // Drilling pressure gauges — see GaugeTextKey.
   { key: 'range', label: 'Range', help: 'Dial range and unit, as printed on the dial face.', lead: true },
   { key: 'dial', label: 'Dial face', help: 'Dial face style — standard, luminous, or dual units — as published.', lead: true },
-  { key: 'trim', label: 'Service', help: 'Service trim the gauge is built for — standard, sour gas (H2S) or salt water — as published.', lead: true },
-  { key: 'connection', label: 'End connection', help: 'End connection of the gauge sub, as published.', lead: true },
+  { key: 'trim', label: 'Service', help: 'Service trim — standard, sour gas (H2S), salt water — as published.', lead: true },
+  { key: 'connection', label: 'End connection', help: 'End connection, as published.', lead: true },
 ]
 
 /**
