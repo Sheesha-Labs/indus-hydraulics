@@ -1,0 +1,1132 @@
+{
+  "family": "oilfield-choke-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined: the male half of a 602 or 1002 union can make up into a 1502 wing nut and look made up, then separate under pressure. Mismatched unions have caused fatalities and IADC recommends colour coding, go/no-go gauges and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 and 03-16 (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "ANSI raised-face flanged valve ends are dimensioned to ASME B16.5.",
+      "source": "ASME B16.5 Pipe Flanges and Flanged Fittings"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 6,000 psi adjustable manual choke used for?",
+          "a": "A 3 in 6,000 psi adjustable manual choke (6K, sour service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. Mid-pressure 3-inch sour-gas choke."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 602 union end on the 3 in 6,000 psi adjustable manual choke mean?",
+          "a": "On this adjustable manual choke the listing gives a 3 in 602 female Weco union on the inlet and a male union on the outlet. 602 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this adjustable manual choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 6,000 psi adjustable manual choke have?",
+          "a": "On the 3 in 6,000 psi adjustable manual choke (sour service) the inlet is 3 in 602 Female Weco Union and the outlet is 3 in 602 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 6,000 psi adjustable manual choke or the 2 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 6,000 psi (sour service); the [2 in 15,000 psi adjustable manual choke](/p/adjustable-manual-choke-n-60-5x7-trim-2-in-1502-f-m-3-4-in-max-bean-15-000-psi-standard-w-autoclave-tap) is rated 15,000 psi with 2 in 1502 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 6,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 3 in 6,000 psi adjustable manual choke with its Forged AISI 4130 body is rated 6,000 psi working pressure (6K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 6,000 psi adjustable manual choke made from?",
+          "a": "The 3 in 6,000 psi adjustable manual choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 6,000 psi adjustable manual choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 6,000 psi adjustable manual choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 3 in 6,000 psi adjustable choke give?",
+          "a": "On the 3 in 6,000 psi adjustable choke the bean size is 3 in Nom / 2 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 6,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 3 in 6,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 6,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 3 in 6,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 6,000 psi adjustable manual choke made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson adjustable manual choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adjustable Manual Choke, H2 Trim, 3 in × 602 F×M, 3 in Nom / 2 in Max Bean, 6,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Adjustable Manual Choke, H2 Trim, 3 in × 602 F×M, 3 in Nom / 2 in Max Bean, 6,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-manual-choke-n-60-trim-2-in-602-f-m-3-4-in-max-bean-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 6,000 psi adjustable manual choke used for?",
+          "a": "A 2 in 6,000 psi adjustable manual choke (6K, sour service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. 602-union production-test choke for low-pressure trees."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 602 union end on the 2 in 6,000 psi adjustable manual choke mean?",
+          "a": "On this adjustable manual choke the listing gives a 2 in 602 female Weco union on the inlet and a male union on the outlet. 602 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this adjustable manual choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 6,000 psi adjustable manual choke have?",
+          "a": "On the 2 in 6,000 psi adjustable manual choke (sour service) the inlet is 2 in 602 Female Weco Union and the outlet is 2 in 602 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 6,000 psi adjustable manual choke or the 3 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 6,000 psi (sour service); the [3 in 10,000 psi adjustable manual choke](/p/adjustable-manual-choke-h2-trim-3-in-1502-f-m-3-in-nom-2-in-max-bean-10-000-psi-sour-service) is rated 10,000 psi with 3 in 1502 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 6,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 2 in 6,000 psi adjustable manual choke with its Forged AISI 4130 body is rated 6,000 psi working pressure (6K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 6,000 psi adjustable manual choke made from?",
+          "a": "The 2 in 6,000 psi adjustable manual choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 6,000 psi adjustable manual choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 6,000 psi adjustable manual choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 2 in 6,000 psi adjustable choke give?",
+          "a": "On the 2 in 6,000 psi adjustable choke the bean size is 3/4 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 6,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 2 in 6,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 6,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 2 in 6,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 6,000 psi adjustable manual choke made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson adjustable manual choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adjustable Manual Choke, N-60 Trim, 2 in × 602 F×M, 3/4 in Max Bean, 6,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Adjustable Manual Choke, N-60 Trim, 2 in × 602 F×M, 3/4 in Max Bean, 6,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-manual-choke-n-60-5x7-trim-2-in-1502-f-m-3-4-in-max-bean-15-000-psi-standard-w-autoclave-tap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 15,000 psi adjustable manual choke used for?",
+          "a": "A 2 in 15,000 psi adjustable manual choke (15K, standard service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. HP well-test flow control."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 15,000 psi adjustable manual choke mean?",
+          "a": "On this adjustable manual choke the listing gives a 2 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this adjustable manual choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 15,000 psi adjustable manual choke have?",
+          "a": "On the 2 in 15,000 psi adjustable manual choke (standard service) the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 15,000 psi adjustable manual choke or the 3 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 15,000 psi (standard service); the [3 in 6,000 psi adjustable manual choke](/p/adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service) is rated 6,000 psi with 3 in 602 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 15,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 2 in 15,000 psi adjustable manual choke with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 15,000 psi adjustable manual choke made from?",
+          "a": "The 2 in 15,000 psi adjustable manual choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 2 in 15,000 psi adjustable manual choke be used in sour (H2S) gas?",
+          "a": "No. The 2 in 15,000 psi adjustable manual choke listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 2 in 15,000 psi adjustable choke give?",
+          "a": "On the 2 in 15,000 psi adjustable choke the bean size is 3/4 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 15,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 2 in 15,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 15,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 2 in 15,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 15,000 psi adjustable manual choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron adjustable manual choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adjustable Manual Choke, N-60 5x7 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 15,000 psi, Standard, w/ Autoclave Tap in stock in Dubai?",
+          "a": "Yes. We keep the Adjustable Manual Choke, N-60 5x7 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 15,000 psi, Standard, w/ Autoclave Tap in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-manual-choke-n-60-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 10,000 psi adjustable manual choke used for?",
+          "a": "A 2 in 10,000 psi adjustable manual choke (10K, sour service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. Wellhead and well-test flow control."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 10,000 psi adjustable manual choke mean?",
+          "a": "On this adjustable manual choke the listing gives a 2 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this adjustable manual choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 10,000 psi adjustable manual choke have?",
+          "a": "On the 2 in 10,000 psi adjustable manual choke (sour service) the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 10,000 psi adjustable manual choke or the 3 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 10,000 psi (sour service); the [3 in 6,000 psi adjustable manual choke](/p/adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service) is rated 6,000 psi with 3 in 602 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 10,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 2 in 10,000 psi adjustable manual choke with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 10,000 psi adjustable manual choke made from?",
+          "a": "The 2 in 10,000 psi adjustable manual choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 10,000 psi adjustable manual choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 10,000 psi adjustable manual choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 2 in 10,000 psi adjustable choke give?",
+          "a": "On the 2 in 10,000 psi adjustable choke the bean size is 3/4 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 10,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 2 in 10,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 10,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 2 in 10,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 10,000 psi adjustable manual choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron adjustable manual choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adjustable Manual Choke, N-60 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Adjustable Manual Choke, N-60 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-manual-choke-h2-trim-3-in-1502-f-m-3-in-nom-2-in-max-bean-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 10,000 psi adjustable manual choke used for?",
+          "a": "A 3 in 10,000 psi adjustable manual choke (10K, sour service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. Large-bore sour-gas flow control."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 3 in 10,000 psi adjustable manual choke mean?",
+          "a": "On this adjustable manual choke the listing gives a 3 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this adjustable manual choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 10,000 psi adjustable manual choke have?",
+          "a": "On the 3 in 10,000 psi adjustable manual choke (sour service) the inlet is 3 in 1502 Female Weco Union and the outlet is 3 in 1502 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 10,000 psi adjustable manual choke or the 2 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 10,000 psi (sour service); the [2 in 6,000 psi adjustable manual choke](/p/adjustable-manual-choke-n-60-trim-2-in-602-f-m-3-4-in-max-bean-6-000-psi-sour-service) is rated 6,000 psi with 2 in 602 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 10,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 3 in 10,000 psi adjustable manual choke with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 10,000 psi adjustable manual choke made from?",
+          "a": "The 3 in 10,000 psi adjustable manual choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 10,000 psi adjustable manual choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 10,000 psi adjustable manual choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 3 in 10,000 psi adjustable choke give?",
+          "a": "On the 3 in 10,000 psi adjustable choke the bean size is 3 in Nom / 2 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 10,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 3 in 10,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 10,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 3 in 10,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 10,000 psi adjustable manual choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies adjustable manual choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adjustable Manual Choke, H2 Trim, 3 in × 1502 F×M, 3 in Nom / 2 in Max Bean, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Adjustable Manual Choke, H2 Trim, 3 in × 1502 F×M, 3 in Nom / 2 in Max Bean, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-manual-choke-h2-trim-3-in-1502-f-m-3-in-nom-2-in-max-bean-15-000-psi-standard",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 15,000 psi adjustable manual choke used for?",
+          "a": "A 3 in 15,000 psi adjustable manual choke (15K, standard service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. HP large-bore choke for sweet wells."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 3 in 15,000 psi adjustable manual choke mean?",
+          "a": "On this adjustable manual choke the listing gives a 3 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this adjustable manual choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 15,000 psi adjustable manual choke have?",
+          "a": "On the 3 in 15,000 psi adjustable manual choke (standard service) the inlet is 3 in 1502 Female Weco Union and the outlet is 3 in 1502 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 15,000 psi adjustable manual choke or the 2 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 15,000 psi (standard service); the [2 in 6,000 psi adjustable manual choke](/p/adjustable-manual-choke-n-60-trim-2-in-602-f-m-3-4-in-max-bean-6-000-psi-sour-service) is rated 6,000 psi with 2 in 602 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 15,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 3 in 15,000 psi adjustable manual choke with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 15,000 psi adjustable manual choke made from?",
+          "a": "The 3 in 15,000 psi adjustable manual choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 3 in 15,000 psi adjustable manual choke be used in sour (H2S) gas?",
+          "a": "No. The 3 in 15,000 psi adjustable manual choke listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 3 in 15,000 psi adjustable choke give?",
+          "a": "On the 3 in 15,000 psi adjustable choke the bean size is 3 in Nom / 2 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 15,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 3 in 15,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 15,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 3 in 15,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 15,000 psi adjustable manual choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies adjustable manual choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adjustable Manual Choke, H2 Trim, 3 in × 1502 F×M, 3 in Nom / 2 in Max Bean, 15,000 psi, Standard in stock in Dubai?",
+          "a": "Yes. We keep the Adjustable Manual Choke, H2 Trim, 3 in × 1502 F×M, 3 in Nom / 2 in Max Bean, 15,000 psi, Standard in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-manual-choke-h2-trim-3-in-206-f-m-3-in-nom-2-in-max-bean-2-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 2,000 psi adjustable manual choke used for?",
+          "a": "A 3 in 2,000 psi adjustable manual choke (2K, sour service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. Cost-effective low-pressure sour-gas choke."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 206 union end on the 3 in 2,000 psi adjustable manual choke mean?",
+          "a": "On this adjustable manual choke the listing gives a 3 in 206 female Weco union on the inlet and a male union on the outlet. 206 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this adjustable manual choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 2,000 psi adjustable manual choke have?",
+          "a": "On the 3 in 2,000 psi adjustable manual choke (sour service) the inlet is 3 in 206 Female Weco Union and the outlet is 3 in 206 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 2,000 psi adjustable manual choke or the 2 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 2,000 psi (sour service); the [2 in 6,000 psi adjustable manual choke](/p/adjustable-manual-choke-n-60-trim-2-in-602-f-m-3-4-in-max-bean-6-000-psi-sour-service) is rated 6,000 psi with 2 in 602 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 2,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 3 in 2,000 psi adjustable manual choke with its Forged carbon steel (LF2) body is rated 2,000 psi working pressure (2K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 2,000 psi adjustable manual choke made from?",
+          "a": "The 3 in 2,000 psi adjustable manual choke has a Forged carbon steel (LF2) body; the trim is Tungsten-carbide bean + 17-4PH stem + TC seat and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 2,000 psi adjustable manual choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 2,000 psi adjustable manual choke with its Forged carbon steel (LF2) body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 3 in 2,000 psi adjustable choke give?",
+          "a": "On the 3 in 2,000 psi adjustable choke the bean size is 3 in Nom / 2 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 2,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 3 in 2,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 2,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 3 in 2,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 3 in 2,000 psi adjustable manual choke be exported from Dubai with documents?",
+          "a": "Yes. We supply the 3 in 2,000 psi adjustable manual choke from Dubai, UAE and ship worldwide with the commercial invoice, packing list and test documents. Tell us the destination and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adjustable Manual Choke, H2 Trim, 3 in × 206 F×M, 3 in Nom / 2 in Max Bean, 2,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Adjustable Manual Choke, H2 Trim, 3 in × 206 F×M, 3 in Nom / 2 in Max Bean, 2,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-needle-choke-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A adjustable needle choke valve used for?",
+          "a": "Adjustable needle chokes to API 6A: 2-1/16\" to 5-1/8\", 2,000 to 20,000 psi, carbide-tipped needle and seat, 1/64\" indicator, needle lock, for well clean-up, testing and production."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A adjustable needle choke valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A adjustable needle choke valve the listing gives Tungsten carbide needle tip and seat; PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A adjustable needle choke valve come in?",
+          "a": "The listing covers 2-1/16\" to 5-1/8\" nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged, studded or hammer union. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I use an adjustable needle choke instead of an external sleeve or plug and cage choke?",
+          "a": "Use the needle choke for well clean-up, testing and general production where the flow rate is changed often. For high pressure drop and sand-laden flow see the [external sleeve choke valve](/p/external-sleeve-choke-valve); for high capacity see the [plug and cage choke valve](/p/plug-and-cage-choke-valve)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A adjustable needle choke valve tested?",
+          "a": "For the API 6A adjustable needle choke valve (2-1/16\" to 5-1/8\", 2,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A adjustable needle choke valve offer?",
+          "a": "On the API 6A adjustable needle choke valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes L to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A adjustable needle choke valve to API specification, and what documents are supplied?",
+          "a": "The API 6A adjustable needle choke valve is built to API 6A; CE-PED by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A adjustable needle choke valve operated?",
+          "a": "The API 6A adjustable needle choke valve is operated by handwheel. A needle-lock holds the setting and a 1/64\" indicator shows the opening, so the position can be repeated. Actuator operation can be added. End connections on the listing are aPI 6A flanged, studded or hammer union."
+        },
+        {
+          "slot": "I",
+          "q": "What does the 1/64 inch indicator on an API 6A needle choke show?",
+          "a": "The 1/64\" indicator shows the needle opening in 1/64 inch steps so the setting can be recorded and repeated, and the needle lock holds it. The needle tip and seat are tungsten carbide. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "Adjustable needle choke or positive fixed-bean choke: which should I fit?",
+          "a": "An adjustable needle choke can be re-set while flowing, while a positive choke uses a fixed bean for stable, repeatable flow and is changed by swapping the bean. See the [Positive Choke Valve, Fixed Bean, API 6A, 3,000 to 20,000 psi](/p/positive-choke-valve-fixed-bean)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A adjustable needle choke valve be supplied from Dubai with test records?",
+          "a": "For the API 6A adjustable needle choke valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A adjustable needle choke valve in Dubai?",
+          "a": "Yes. We keep the API 6A adjustable needle choke valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "external-sleeve-choke-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A external sleeve choke valve used for?",
+          "a": "External sleeve chokes to API 6A: 2-1/16\" to 7-1/16\", 2,000 to 15,000 psi, sleeve throttles outside the cage, carbide trim, for high pressure drop and sand-laden flow."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A external sleeve choke valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A external sleeve choke valve the listing gives Tungsten carbide stem and seat; PSL 1 to 4; PR1 or PR2F. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A external sleeve choke valve come in?",
+          "a": "The listing covers 2-1/16\" to 7-1/16\" nominal bore at 2,000 to 15,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When is an external sleeve choke the right choice over a needle choke?",
+          "a": "Choose the external sleeve type for high pressure drop and sand-laden flow, where the sleeve and carbide trim take the erosion. Use the [needle choke](/p/adjustable-needle-choke-valve) for general well clean-up and testing."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A external sleeve choke valve tested?",
+          "a": "For the API 6A external sleeve choke valve (2-1/16\" to 7-1/16\", 2,000 to 15,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A external sleeve choke valve offer?",
+          "a": "On the API 6A external sleeve choke valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes L to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A external sleeve choke valve to API specification, and what documents are supplied?",
+          "a": "The API 6A external sleeve choke valve is built to API 6A; CE-PED by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A external sleeve choke valve operated?",
+          "a": "The API 6A external sleeve choke valve is operated by handwheel or actuator. The sleeve slides over the ported cage to open or close the ports. Gear or actuator operation is available on request. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "How does the sleeve of an external sleeve choke throttle the flow?",
+          "a": "The sleeve moves outside the ported cage, covering or opening the ports, so erosion is kept away from the seat and the stem. Tungsten carbide stem and seat are fitted. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "External sleeve choke or adjustable needle choke for sand-laden flow?",
+          "a": "An external sleeve choke throttles outside a ported cage, which suits high pressure drop and sand-laden flow, while a needle choke throttles at a needle tip and seat and suits general well clean-up and testing. See the [Adjustable Needle Choke Valve, API 6A, 2,000 to 20,000 psi](/p/adjustable-needle-choke-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A external sleeve choke valve be supplied from Dubai with test records?",
+          "a": "For the API 6A external sleeve choke valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A external sleeve choke valve in Dubai?",
+          "a": "Yes. We keep the API 6A external sleeve choke valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "multiple-orifice-choke-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A multiple orifice choke valve used for?",
+          "a": "Multiple orifice (rotating disc) chokes to API 6A: 2-1/16\" to 7-1/16\", 3,000 to 20,000 psi, lapped carbide discs for precise control and positive shut-off, with gear operation."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A multiple orifice choke valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A multiple orifice choke valve the listing gives Tungsten carbide discs; PSL 1 to 4; PR1 or PR2F. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A multiple orifice choke valve come in?",
+          "a": "The listing covers 2-1/16\" to 7-1/16\" nominal bore at 3,000 to 20,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Is a multiple orifice choke or a plug and cage choke better for precise flow control?",
+          "a": "The multiple orifice choke gives precise control and positive shut-off with lapped carbide discs and gear operation. The [plug and cage choke](/p/plug-and-cage-choke-valve) gives more capacity at medium pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A multiple orifice choke valve tested?",
+          "a": "For the API 6A multiple orifice choke valve (2-1/16\" to 7-1/16\", 3,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A multiple orifice choke valve offer?",
+          "a": "On the API 6A multiple orifice choke valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes L to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A multiple orifice choke valve to API specification, and what documents are supplied?",
+          "a": "The API 6A multiple orifice choke valve is built to API 6A; CE-PED by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A multiple orifice choke valve operated?",
+          "a": "The API 6A multiple orifice choke valve is operated by gear operator or actuator. Gear operation turns one disc against the other to open the orifices. Actuators can be fitted on request. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "How does a rotating-disc multiple orifice choke control flow?",
+          "a": "Two lapped tungsten carbide discs rotate against each other, and the aligned holes set the flow area, so control is fine and shut-off is positive. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "Multiple orifice choke or plug and cage choke: how do they differ?",
+          "a": "A multiple orifice choke uses two rotating lapped carbide discs for precise control and positive shut-off, while a plug and cage choke gives higher capacity at medium pressure drop. See the [Plug and Cage Choke Valve, API 6A, 3,000 to 20,000 psi](/p/plug-and-cage-choke-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A multiple orifice choke valve be supplied from Dubai with test records?",
+          "a": "For the API 6A multiple orifice choke valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A multiple orifice choke valve in Dubai?",
+          "a": "Yes. We keep the API 6A multiple orifice choke valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-and-cage-choke-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A plug and cage choke valve used for?",
+          "a": "Plug and cage chokes to API 6A: 2-1/16\" to 5-1/8\", 3,000 to 20,000 psi, tungsten carbide plug and cage, for high-capacity, medium pressure-drop control and late-life well optimisation."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A plug and cage choke valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A plug and cage choke valve the listing gives Tungsten carbide plug and cage; PSL 1 to 4; PR1 or PR2F. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A plug and cage choke valve come in?",
+          "a": "The listing covers 2-1/16\" to 5-1/8\" nominal bore at 3,000 to 20,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a plug and cage choke instead of a needle choke?",
+          "a": "Choose plug and cage for high-capacity, medium pressure-drop control and late-life well optimisation. Use the [needle choke](/p/adjustable-needle-choke-valve) for well clean-up and testing."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A plug and cage choke valve tested?",
+          "a": "For the API 6A plug and cage choke valve (2-1/16\" to 5-1/8\", 3,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A plug and cage choke valve offer?",
+          "a": "On the API 6A plug and cage choke valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes L to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A plug and cage choke valve to API specification, and what documents are supplied?",
+          "a": "The API 6A plug and cage choke valve is built to API 6A; CE-PED by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A plug and cage choke valve operated?",
+          "a": "The API 6A plug and cage choke valve is operated by handwheel or actuator. The plug moves inside a ported cage, and the pressure-balanced design keeps actuating force low. Actuator operation is available on request. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "What does a pressure-balanced plug and cage choke do?",
+          "a": "The plug moves inside a ported cage and line pressure is balanced across it, so the force needed to move the plug stays low. Plug and cage are tungsten carbide. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "Plug and cage choke or multiple orifice choke: how do they differ?",
+          "a": "A plug and cage choke is pressure-balanced and gives high capacity at medium pressure drop, while a multiple orifice choke gives precise control with positive shut-off. See the [Multiple Orifice Choke Valve, API 6A, 3,000 to 20,000 psi](/p/multiple-orifice-choke-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A plug and cage choke valve be supplied from Dubai with test records?",
+          "a": "For the API 6A plug and cage choke valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A plug and cage choke valve in Dubai?",
+          "a": "Yes. We keep the API 6A plug and cage choke valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "positive-choke-valve-fixed-bean",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A positive choke valve used for?",
+          "a": "Positive (fixed bean) chokes to API 6A: 2-1/16\" to 7-1/16\", 3,000 to 20,000 psi, wide choice of bean sizes, body relief valve and bonnet relief hole for safe bean changes."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A positive choke valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A positive choke valve the listing gives Bean choice in steel, ceramic or tungsten carbide; PSL 1 to 4; PR1 or PR2F. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A positive choke valve come in?",
+          "a": "The listing covers 2-1/16\" to 7-1/16\" nominal bore at 3,000 to 20,000 psi working pressure, with aPI 6A flanged, studded or hammer union. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What bean materials can an API 6A positive choke use?",
+          "a": "The bean is offered in steel, ceramic or tungsten carbide. Choose carbide or ceramic for sand-laden flow and steel for clean service. Bean sizes are listed on the enquiry, and the body has a relief valve and a bonnet relief hole."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A positive choke valve tested?",
+          "a": "For the API 6A positive choke valve (2-1/16\" to 7-1/16\", 3,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A positive choke valve offer?",
+          "a": "On the API 6A positive choke valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes L to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A positive choke valve to API specification, and what documents are supplied?",
+          "a": "The API 6A positive choke valve is built to API 6A; CE-PED by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A positive choke valve operated?",
+          "a": "The API 6A positive choke valve is operated by fixed bean. The bean is replaced to change the flow. The body relief valve and the bonnet relief hole let trapped pressure bleed off before the bonnet is opened. End connections on the listing are aPI 6A flanged, studded or hammer union."
+        },
+        {
+          "slot": "I",
+          "q": "How do I change the bean on an API 6A positive choke safely?",
+          "a": "Isolate the choke and open the body relief valve to bleed trapped pressure, then check the bonnet relief hole is clear before opening the bonnet. Inspect the bean for erosion and replace it. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "Positive choke or adjustable needle choke for production allocation?",
+          "a": "A positive choke has a fixed bean, so the flow rate is stable and repeatable until the bean is changed, while a needle choke can be adjusted while flowing. See the [Adjustable Needle Choke Valve, API 6A, 2,000 to 20,000 psi](/p/adjustable-needle-choke-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A positive choke valve be supplied from Dubai with test records?",
+          "a": "For the API 6A positive choke valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A positive choke valve in Dubai?",
+          "a": "Yes. We keep the API 6A positive choke valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 10,000 psi positive choke used for?",
+          "a": "A 2 in 10,000 psi positive choke (10K, sour service) is a fixed-bean choke that gives stable, repeatable flow control for production allocation and well testing. Fixed-bean stable-flow allocation for sour wells."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 10,000 psi positive choke mean?",
+          "a": "On this positive choke the listing gives a 2 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this positive choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 10,000 psi positive choke have?",
+          "a": "On the 2 in 10,000 psi positive choke (sour service) the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 10,000 psi positive choke or the 2 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 10,000 psi (sour service); the [2 in 15,000 psi positive choke](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-15-000-psi-standard-9-16-in-autoclave-no-cap) is rated 15,000 psi with 2 in 1502 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 10,000 psi positive choke, and how is it tested?",
+          "a": "The 2 in 10,000 psi positive choke with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 10,000 psi positive choke made from?",
+          "a": "The 2 in 10,000 psi positive choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The bean is the flow-setting part and is replaced to change the flow rate."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 10,000 psi positive choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 10,000 psi positive choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "How do I change the bean on the 2 in 10,000 psi positive choke?",
+          "a": "On the 2 in 10,000 psi 2 in 1502 Female Weco Union positive choke, the replaceable bean goes up to the maximum bean size in the title (3/4 in Max Bean). Isolate and bleed the line before opening the body to change the bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 10,000 psi positive choke operated and maintained?",
+          "a": "On the 2 in 10,000 psi positive choke, the flow rate is changed by replacing the bean. Isolate and depressurise the line first, inspect the bean for wear and replace it when the bore has eroded. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 10,000 psi positive choke compare with a adjustable manual choke?",
+          "a": "The 2 in 10,000 psi positive choke has a fixed bean, so flow is repeatable and the bean is changed to alter the rate, while an adjustable choke can be re-set while running. See the [Adjustable Manual Choke, 3 in, 6,000 psi](/p/adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 10,000 psi positive choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this SPM Oil & Gas positive choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Positive Choke, FC-140 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 10,000 psi, Sour Service, No Cap in stock in Dubai?",
+          "a": "Yes. We keep the Positive Choke, FC-140 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 10,000 psi, Sour Service, No Cap in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-15-000-psi-standard-9-16-in-autoclave-no-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 15,000 psi positive choke used for?",
+          "a": "A 2 in 15,000 psi positive choke (15K, standard service) is a fixed-bean choke that gives stable, repeatable flow control for production allocation and well testing. HP fixed-bean allocation."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 15,000 psi positive choke mean?",
+          "a": "On this positive choke the listing gives a 2 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this positive choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 15,000 psi positive choke have?",
+          "a": "On the 2 in 15,000 psi positive choke (standard service) the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 15,000 psi positive choke or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 15,000 psi (standard service); the [2 in 10,000 psi positive choke](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap) is rated 10,000 psi with 2 in 1502 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 15,000 psi positive choke, and how is it tested?",
+          "a": "The 2 in 15,000 psi positive choke with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 15,000 psi positive choke made from?",
+          "a": "The 2 in 15,000 psi positive choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. The bean is the flow-setting part and is replaced to change the flow rate."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 2 in 15,000 psi positive choke be used in sour (H2S) gas?",
+          "a": "No. The 2 in 15,000 psi positive choke listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "How do I change the bean on the 2 in 15,000 psi positive choke?",
+          "a": "On the 2 in 15,000 psi 2 in 1502 Female Weco Union positive choke, the replaceable bean goes up to the maximum bean size in the title (3/4 in Max Bean). Isolate and bleed the line before opening the body to change the bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 15,000 psi positive choke operated and maintained?",
+          "a": "On the 2 in 15,000 psi positive choke, the flow rate is changed by replacing the bean. Isolate and depressurise the line first, inspect the bean for wear and replace it when the bore has eroded. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 15,000 psi positive choke compare with a adjustable manual choke?",
+          "a": "The 2 in 15,000 psi positive choke has a fixed bean, so flow is repeatable and the bean is changed to alter the rate, while an adjustable choke can be re-set while running. See the [Adjustable Manual Choke, 3 in, 6,000 psi](/p/adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 15,000 psi positive choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this SPM Oil & Gas positive choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Positive Choke, FC-140 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 15,000 psi, Standard, 9/16 in Autoclave, No Cap in stock in Dubai?",
+          "a": "Yes. We keep the Positive Choke, FC-140 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 15,000 psi, Standard, 9/16 in Autoclave, No Cap in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-manual-choke-h2-trim-3-1-8-in-5m-flanged-bw-3-in-nom-2-in-max-bean-5-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/8 in 5,000 psi adjustable manual choke used for?",
+          "a": "A 3-1/8 in 5,000 psi adjustable manual choke (5K, sour service) is a hand-adjustable choke that sets flow and pressure drop at the wellhead, test train or choke manifold with a tungsten-carbide bean and seat. Flanged-to-welded transition."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/8 in 5,000 psi valve use?",
+          "a": "The adjustable manual choke inlet is a 3-1/8 in API 6A 5M Flanged (RTJ), an API 6A flange with ring-type joint, so on this adjustable manual choke it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/8 in 5,000 psi adjustable manual choke have?",
+          "a": "On the 3-1/8 in 5,000 psi adjustable manual choke (sour service) the inlet is 3-1/8 in API 6A 5M Flanged (RTJ) and the outlet is 3 in Butt-Weld (Schedule 160). Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/8 in 5,000 psi adjustable manual choke or the 3 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/8 in at 5,000 psi (sour service); the [3 in 6,000 psi adjustable manual choke](/p/adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service) is rated 6,000 psi with 3 in 602 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/8 in 5,000 psi adjustable manual choke, and how is it tested?",
+          "a": "The 3-1/8 in 5,000 psi adjustable manual choke with its Forged AISI 4130 body is rated 5,000 psi working pressure (5K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/8 in 5,000 psi adjustable manual choke made from?",
+          "a": "The 3-1/8 in 5,000 psi adjustable manual choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Tungsten carbide resists erosion at the bean and seat."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/8 in 5,000 psi adjustable manual choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/8 in 5,000 psi adjustable manual choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What bean size and flow range does the 3-1/8 in 5,000 psi adjustable choke give?",
+          "a": "On the 3-1/8 in 5,000 psi adjustable choke the bean size is 3 in Nom / 2 in Max Bean. The adjustable stem moves the orifice opening continuously, so the flow can be set between fully closed and the maximum bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/8 in 5,000 psi adjustable manual choke operated and maintained?",
+          "a": "On the 3-1/8 in 5,000 psi adjustable manual choke, it is adjusted by hand and the stem position sets the opening. Check the bean and seat for erosion at each service, because sand cuts tungsten carbide over time. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/8 in 5,000 psi adjustable manual choke compare with a positive (fixed bean) choke?",
+          "a": "The 3-1/8 in 5,000 psi adjustable choke lets the operator change the flow setting while running, while a positive choke has a fixed bean and gives a stable, repeatable flow until the bean is changed. See the [Positive Choke, 2 in, 10,000 psi](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/8 in 5,000 psi adjustable manual choke made and can it be exported from Dubai?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries adjustable manual choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Adjustable Manual Choke, H2 Trim, 3-1/8 in × 5M Flanged BW, 3 in Nom / 2 in Max Bean, 5,000 psi, Sou from Indus Hydraulics?",
+          "a": "The Adjustable Manual Choke, H2 Trim, 3-1/8 in × 5M Flanged BW, 3 in Nom / 2 in Max Bean, 5,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "positive-choke-fc-140-5x7-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 10,000 psi positive choke used for?",
+          "a": "A 2 in 10,000 psi positive choke (10K, sour service) is a fixed-bean choke that gives stable, repeatable flow control for production allocation and well testing. Gear-reduction for bean change under pressure."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 10,000 psi positive choke mean?",
+          "a": "On this positive choke the listing gives a 2 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this positive choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 10,000 psi positive choke have?",
+          "a": "On the 2 in 10,000 psi positive choke (sour service) the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 10,000 psi positive choke or the 2 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 10,000 psi (sour service); the [2 in 15,000 psi positive choke](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-15-000-psi-standard-9-16-in-autoclave-no-cap) is rated 15,000 psi with 2 in 1502 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 10,000 psi positive choke, and how is it tested?",
+          "a": "The 2 in 10,000 psi positive choke with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 10,000 psi positive choke made from?",
+          "a": "The 2 in 10,000 psi positive choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The bean is the flow-setting part and is replaced to change the flow rate."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 10,000 psi positive choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 10,000 psi positive choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "How do I change the bean on the 2 in 10,000 psi positive choke?",
+          "a": "On the 2 in 10,000 psi 2 in 1502 Female Weco Union positive choke, the replaceable bean goes up to the maximum bean size in the title (3/4 in Max Bean). Isolate and bleed the line before opening the body to change the bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 10,000 psi positive choke operated and maintained?",
+          "a": "On the 2 in 10,000 psi positive choke, the flow rate is changed by replacing the bean. Isolate and depressurise the line first, inspect the bean for wear and replace it when the bore has eroded. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 10,000 psi positive choke compare with a adjustable manual choke?",
+          "a": "The 2 in 10,000 psi positive choke has a fixed bean, so flow is repeatable and the bean is changed to alter the rate, while an adjustable choke can be re-set while running. See the [Adjustable Manual Choke, 3 in, 6,000 psi](/p/adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 10,000 psi positive choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine positive choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Positive Choke, FC-140 5x7 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 10,000 psi, Sour Service, No Cap in stock in Dubai?",
+          "a": "Yes. We keep the Positive Choke, FC-140 5x7 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 10,000 psi, Sour Service, No Cap in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "positive-choke-fc-140-trim-2-in-602-f-m-3-4-in-max-bean-6-000-psi-sour-service-no-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 6,000 psi positive choke used for?",
+          "a": "A 2 in 6,000 psi positive choke (6K, sour service) is a fixed-bean choke that gives stable, repeatable flow control for production allocation and well testing. 602-union sour fixed-bean allocation."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 602 union end on the 2 in 6,000 psi positive choke mean?",
+          "a": "On this positive choke the listing gives a 2 in 602 female Weco union on the inlet and a male union on the outlet. 602 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this positive choke only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 6,000 psi positive choke have?",
+          "a": "On the 2 in 6,000 psi positive choke (sour service) the inlet is 2 in 602 Female Weco Union and the outlet is 2 in 602 Male Weco Union. Confirm both ends against the mating line before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 6,000 psi positive choke or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 6,000 psi (sour service); the [2 in 10,000 psi positive choke](/p/positive-choke-fc-140-trim-2-in-1502-f-m-3-4-in-max-bean-10-000-psi-sour-service-no-cap) is rated 10,000 psi with 2 in 1502 Female Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 6,000 psi positive choke, and how is it tested?",
+          "a": "The 2 in 6,000 psi positive choke with its Forged AISI 4130 body is rated 6,000 psi working pressure (6K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 6,000 psi positive choke made from?",
+          "a": "The 2 in 6,000 psi positive choke has a Forged AISI 4130 body; the trim is Tungsten-carbide bean + Inconel 625 stem + TC seat and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The bean is the flow-setting part and is replaced to change the flow rate."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 6,000 psi positive choke suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 6,000 psi positive choke with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "How do I change the bean on the 2 in 6,000 psi positive choke?",
+          "a": "On the 2 in 6,000 psi 2 in 602 Female Weco Union positive choke, the replaceable bean goes up to the maximum bean size in the title (3/4 in Max Bean). Isolate and bleed the line before opening the body to change the bean. Read the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 6,000 psi positive choke operated and maintained?",
+          "a": "On the 2 in 6,000 psi positive choke, the flow rate is changed by replacing the bean. Isolate and depressurise the line first, inspect the bean for wear and replace it when the bore has eroded. See the [positive vs adjustable choke guide](/blog/positive-vs-adjustable-chokes)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 6,000 psi positive choke compare with a adjustable manual choke?",
+          "a": "The 2 in 6,000 psi positive choke has a fixed bean, so flow is repeatable and the bean is changed to alter the rate, while an adjustable choke can be re-set while running. See the [Adjustable Manual Choke, 3 in, 6,000 psi](/p/adjustable-manual-choke-h2-trim-3-in-602-f-m-3-in-nom-2-in-max-bean-6-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 6,000 psi positive choke made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine positive choke. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Positive Choke, FC-140 Trim, 2 in × 602 F×M, 3/4 in Max Bean, 6,000 psi, Sour Service, No Cap in stock in Dubai?",
+          "a": "Yes. We keep the Positive Choke, FC-140 Trim, 2 in × 602 F×M, 3/4 in Max Bean, 6,000 psi, Sour Service, No Cap in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

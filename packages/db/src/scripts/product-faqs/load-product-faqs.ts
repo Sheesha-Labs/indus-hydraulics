@@ -205,6 +205,14 @@ async function main() {
   for (const [, uses] of answerUse) {
     if (uses.length > 3) errors.push(`same answer on ${uses.length} products: ${uses.slice(0, 4).join(', ')}…`)
   }
+  // extraFacts are committed with the payload, so the supplier guard applies to them too.
+  for (const [i, e] of (payload.extraFacts ?? []).entries()) {
+    for (const name of guard) {
+      const re = new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i')
+      if (re.test(e.fact) || re.test(e.source)) errors.push(`extraFacts #${i + 1}: SUPPLIER NAME "${name}"`)
+    }
+  }
+
   const missing = facts.products.filter((p) => !payload.products.some((x) => x.slug === p.slug))
   for (const p of missing) warnings.push(`${p.slug}: in the family but not in the payload`)
 
@@ -229,19 +237,38 @@ async function main() {
     throw new Error('Payload has links. Pass --allow-links only once the FAQ link renderer is deployed.')
   }
 
+  const failed: string[] = []
   for (const item of payload.products) {
     const fp = facts.products.find((p) => p.slug === item.slug)!
-    await db.$transaction(
-      async (tx) => {
-        await tx.productFaq.deleteMany({ where: { productId: fp.id } })
-        await tx.productFaq.createMany({
-          data: item.faqs.map((f, i) => ({ productId: fp.id, question: f.q.trim(), answer: f.a.trim(), position: i })),
-        })
-      },
-      { timeout: 30_000, maxWait: 10_000 },
-    )
+    // One transaction per product: delete + insert, so a failure leaves the old set intact.
+    // Under load a transaction can queue behind others; retry once rather than abort the run.
+    let ok = false
+    for (let attempt = 1; attempt <= 2 && !ok; attempt++) {
+      try {
+        await db.$transaction(
+          async (tx) => {
+            await tx.productFaq.deleteMany({ where: { productId: fp.id } })
+            await tx.productFaq.createMany({
+              data: item.faqs.map((f, i) => ({ productId: fp.id, question: f.q.trim(), answer: f.a.trim(), position: i })),
+            })
+          },
+          { timeout: 120_000, maxWait: 30_000 },
+        )
+        ok = true
+      } catch (e) {
+        console.log(`  retry ${attempt} ${item.slug}: ${(e as Error).message.split('\n').at(-1)?.slice(0, 160)}`)
+      }
+    }
+    if (!ok) {
+      failed.push(item.slug)
+      continue
+    }
     await rescore(fp.id)
     console.log(`  wrote ${item.faqs.length} → ${item.slug}`)
+  }
+  if (failed.length) {
+    console.log(`FAILED ${failed.length}: ${failed.join(' ')}`)
+    process.exitCode = 1
   }
 }
 

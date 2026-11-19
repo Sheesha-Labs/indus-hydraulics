@@ -1,0 +1,84 @@
+{
+  "family": "wt-transfer-pump",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "well-test-transfer-pump-centrifugal-single-stage-100-m-h-diesel-drive-skid-mounted",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 100 m³/h centrifugal well-test transfer pump used for?",
+          "a": "A well-test transfer pump moves liquid between tanks and vessels on a well-test spread. This single-stage centrifugal pump is rated 100 m³/h, with FRP-lined carbon steel wetted parts and a diesel drive on a skid."
+        },
+        {
+          "slot": "B",
+          "q": "What does single-stage centrifugal mean on this transfer pump?",
+          "a": "Single-stage centrifugal means one impeller stage adds the head, giving high flow at moderate pressure. This pump is rated 100 m³/h."
+        },
+        {
+          "slot": "D",
+          "q": "What pump types does the transfer pump family include?",
+          "a": "Membrane, progressive cavity, multistage centrifugal and reciprocating variants are available under the same family. Choose by the fluid, viscosity and pressure; state them on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What drive options does the 100 m³/h transfer pump have?",
+          "a": "The listed pump has a diesel drive with a manual or pneumatic PTO clutch, in CAT, Cummins, Deutz, Detroit Diesel or Volvo Penta engines. Electric variants with AC or DC and VFD speed control are available."
+        },
+        {
+          "slot": "E",
+          "q": "What flow rate does the transfer pump give?",
+          "a": "The pump is rated 100 m³/h. The listing does not state a head or pressure, so give the required head and suction conditions on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What are the wetted parts of the transfer pump made from?",
+          "a": "Wetted parts are FRP-lined carbon steel as standard, and full stainless and PTFE-interior variants are available for more corrosive fluids."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates apply to the transfer pump?",
+          "a": "The listing does not state a certificate for the transfer pump. State the approvals your site requires on the RFQ and we confirm them on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the well-test transfer pump connect to?",
+          "a": "It connects between tanks and vessels such as the surge tank, through suction and discharge hoses or piping. See the [surge tank](/c/wt-surge-tank) shelf and the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the diesel-driven transfer pump started and engaged?",
+          "a": "The diesel engine drives the pump through a manual or pneumatic PTO clutch, so engage the clutch after the engine is running. Prime the pump before starting."
+        },
+        {
+          "slot": "K",
+          "q": "Skid, trailer or truck-mounted transfer pump: which one?",
+          "a": "The listed pump is skid-mounted; skid, trailer and truck-mounted versions are offered. Choose the skid for a fixed spread and a trailer or truck for mobile work."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 100 m³/h transfer pump be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its skid. Give the destination and the engine make and we confirm freight and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 100 m³/h well-test transfer pump in Dubai?",
+          "a": "Yes. We keep the 100 m³/h well-test transfer pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the drive type and mounting through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

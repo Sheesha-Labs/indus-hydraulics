@@ -1,0 +1,1390 @@
+{
+  "family": "air-water-hoses-02",
+  "extraFacts": [
+    {
+      "fact": "1 bar = 14.5038 psi; 140 psi is about 10 bar, 300 psi about 21 bar and 3,000 psi about 207 bar.",
+      "source": "Unit conversion"
+    },
+    {
+      "fact": "Maker pressure figures in the range listings are working pressures; burst pressure in the size tables is a test figure, not a working limit, and end fittings must come from the series the hose maker approves.",
+      "source": "Indus Hydraulics listing text for these ranges (descriptionLong, 'Choosing the hose')"
+    }
+  ],
+  "products": [
+    {
+      "slug": "atp-coiled-air-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ATP coiled air hose assembly used for?",
+          "a": "ATP coiled air hose assemblies are ready-made polyurethane coiled hoses with brass male NPT ends and a strain relief at each end, for compressed air and fresh water. The listing carries 75 part numbers in 1/4\" and 3/8\" bore, in light blue, navy blue and red."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the ATP coiled air hose assembly come in?",
+          "a": "The assemblies are listed in 1/4\" (30 part numbers) and 3/8\" (45 part numbers) inside diameter, in 8, 12, 16, 20 and 24 ft hose lengths. Colours are light blue, navy blue and red; some part numbers end -QC for a quick coupler."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify ATP part numbers such as TT-14-20-LB-RS-QC?",
+          "a": "TT-14-20-LB-RS-QC is the Coiled Air Hose Assembly, 1/4 Inch Hose ID, Light Blue, Brass x Brass and TT-38-30-LB-RS2 is the Coiled Air Assembly, 3/8 Inch ID, Light Blue, Brass x Brass. The size table lists all 75 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the ATP coiled air hose assembly?",
+          "a": "The maker states 140 psi, about 10 bar, for the range, and the size table repeats that figure. The safety factor is listed as 3:1, so check the row for your part number and keep couplers and tools within the same rating."
+        },
+        {
+          "slot": "D",
+          "q": "What lengths and colours do ATP coiled air hose assemblies come in?",
+          "a": "Hose lengths in the table are 8, 12, 16, 20 and 24 ft, each in light blue, navy blue or red. The colour code in the part number is LB, NB or R, as in TT-14-20-LB-RS-QC (1/4\", light blue) and TT-14-15-R-RS-QC (red)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ATP coiled air hose assembly made of?",
+          "a": "The tube and cover are both polyurethane, and the ends are brass MNPT fittings with a strain relief. The listing names air and fresh water as the compatible fluids; it does not list oils or chemicals."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor is listed for ATP coiled air hose assemblies?",
+          "a": "The listing gives the safety factor as 31, which looks like a 3:1 figure. We therefore quote only the 140 psi working pressure stated by the maker; ask us for the maker's data sheet if you need burst figures."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to ATP coiled air hose assemblies?",
+          "a": "Both ends are MNPT brass, so they mate with female NPT ports or couplers. Quick-coupler versions, with -QC in the part number, take a matching plug; see [universal air couplings](/c/universal-air-couplings) and [Chicago, claw and crowfoot couplers](/blog/universal-air-couplings-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "ATP coiled air hose or Dixon polyurethane self-storing air hose: which should I buy?",
+          "a": "Both are coiled polyurethane air hoses. The ATP assemblies come coupled with brass MNPT ends, a strain relief and optional quick couplers in several lengths and colours, while the [Dixon self-storing air hose](/p/dixon-polyurethane-self-storing-air-hoses) also comes in a larger 1/2 inch bore. Choose on the fitting, length and bore."
+        },
+        {
+          "slot": "I",
+          "q": "How should a coiled air hose assembly be installed and cared for?",
+          "a": "Keep the coil from being stretched past its working length, avoid sharp edges and fit the quick coupler to a matching plug. Polyurethane resists abrasion well but should be kept clear of hot surfaces; [compressed air hose selection](/blog/compressed-air-hose-selection) covers choosing the right hose."
+        },
+        {
+          "slot": "L",
+          "q": "Can the ATP coiled air hose assembly be exported from Dubai, and what papers come with it?",
+          "a": "We export the ATP coiled air hose assembly from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ATP coiled air hose assembly in Dubai?",
+          "a": "Yes. We keep the ATP coiled air hose assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "alemite-air-water-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Alemite low-pressure air/water hose used for?",
+          "a": "Alemite air/water hoses are rubber hoses with steel reinforcement and brass ends, supplied as assemblies with male or female threads on each end. The listing has 11 part numbers in 3/8\" and 1/2\" inside diameter, and the maker's stated pressure runs from 300 to 1,200 psi by size."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Alemite low-pressure air/water hose come in?",
+          "a": "Eleven part numbers in two bores, 3/8\" ID and 1/2\" ID. The 3/8\" hoses are 1/4\" male x 1/4\" male, and the 1/2\" hoses are 1/2\" male x 1/2\" male, 1/2\" male x 1/4\" female or 3/8\" male x 1/4\" female; the length is the suffix."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Alemite part numbers such as 317803-3?",
+          "a": "317803-3 is the Hose, Low Pressure, 3/8 ID, 1/4 Male X 1/4 Male and 317811-5 is the Hose, Low Pressure, 1/2 ID, 1/2 Male X 1/2 Male. The size table lists all 11 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Alemite low-pressure air/water hose?",
+          "a": "The maker states 300 to 1,200 psi (21 to 83 bar) depending on the size, and the rows give 21 bar and 83 bar. Pressure is not the same on every part number, so read the row for the one you order and match the fittings to it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Alemite low-pressure air/water hose made of?",
+          "a": "The hose is steel-reinforced synthetic rubber with brass end fittings; the listing gives no more detail on tube or cover compound. For fluids other than air and water, name the fluid and temperature on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "How do I check Alemite air/water hose ratings before ordering?",
+          "a": "Use the pressure on the row for your part number, 21 bar or 83 bar, and not the whole-range 300 to 1,200 psi. No standards or certificates are listed for this range; if you need a test certificate, ask for it when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What threads do Alemite air/water hoses have?",
+          "a": "The part numbers describe the end threads: 1/4\" male x 1/4\" male on the 3/8\" ID hoses, and 1/2\" male x 1/2\" male, 1/2\" male x 1/4\" female or 3/8\" male x 1/4\" female on the 1/2\" ID hoses. See [universal air couplings](/c/universal-air-couplings) for mating ends."
+        },
+        {
+          "slot": "K",
+          "q": "Alemite air/water hose or Dixon grease whip hose assembly: what is the difference?",
+          "a": "The Alemite hoses are 3/8\" and 1/2\" ID air/water lines of 300 to 1,200 psi, while [Dixon grease whip assemblies](/p/dixon-grease-whip-hose-assemblies) are short brass-ended whip hoses of 3,000 psi for grease guns. Pick the Alemite for air and water supply, the Dixon whip for a grease-gun connection."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install Alemite air/water hose?",
+          "a": "Fit it with the right thread and a sealant suited to NPT, avoid sharp bends near the ends and add a whip restraint on air lines. See [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) for what to fit at each end."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Alemite low-pressure air/water hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Alemite low-pressure air/water hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Alemite low-pressure air/water hose in Dubai?",
+          "a": "Yes. We keep the Alemite low-pressure air/water hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "continental-bulk-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Continental bulk air hose used for?",
+          "a": "Continental bulk air hoses are black EPDM-tube, EPDM-cover air hoses sold by the length in five colours: black, blue, gray, red and yellow. The listing carries 152 part numbers, and the maker's pressure runs from 200 to 500 psi by series."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Continental bulk air hose come in?",
+          "a": "The listing has 152 part numbers in 200, 250, 300 and 500 psi series, in black, blue, gray, red and yellow. Bore and length are in the part number, for example PLB10025-100 or HZB05020-25-G; the size table gives the bore per row."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Continental part numbers such as HZB10020-100-G?",
+          "a": "HZB10020-100-G is the Air Hose, 1 Inch Hose ID, Black, 200 PSI and HZY02530-100-G is the Air Hose, 1/4 Inch Hose ID, Yellow, 300 PSI. The size table lists all 152 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Continental bulk air hose?",
+          "a": "The maker states 200 to 500 psi (14 to 34 bar) by series: 200 psi is 14 bar, 250 psi is 17 bar, 300 psi is 21 bar and 500 psi is 34 bar. Each part number has its own rating, and the safety factor is 4:1, so check the row for your part."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Continental bulk air hose cover?",
+          "a": "The maker states -40°F to +210°F for the EPDM tube and cover. That covers outdoor winter air lines and warm workshop service; for steam or hotter media use a hose built for it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Continental bulk air hose made of?",
+          "a": "The tube and cover are EPDM, the hose is black-based with coloured covers for line identification, and there is no strain relief on bulk hose. EPDM resists ozone and weather but not petroleum oil."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor does Continental bulk air hose have?",
+          "a": "The listing gives a 4:1 safety factor, so the burst pressure is four times the working pressure; for the 250 psi series that is 69 bar burst against 17 bar working. Couplings must match; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings go on Continental bulk air hose?",
+          "a": "Bulk hose is cut to length and needs hose-barb or crimp-style ends held with clamps or ferrules, sized to the bore. See [universal air couplings](/c/universal-air-couplings) and [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "K",
+          "q": "Continental bulk air hose or Continental push-on air hose: which should I order?",
+          "a": "The bulk air hose is EPDM and takes clamped fittings at 200 to 500 psi, while the [push-on air hose](/p/continental-bulk-push-on-air-hoses) has a nitrile tube and cover, is listed in 1/4\" to 3/4\" and takes push-on fittings without clamps at 250 to 400 psi. Choose by whether you want clamped or push-on ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose the right pressure series of Continental bulk air hose?",
+          "a": "Pick the series above your compressor pressure with margin, then check couplings against the same rating. The 200 psi series suits workshop air, and the 500 psi series is the only one rated for 34 bar; [compressed air hose selection](/blog/compressed-air-hose-selection) explains the margin."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Continental bulk air hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Continental bulk air hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Continental bulk air hose in Dubai?",
+          "a": "Yes. We keep the Continental bulk air hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "continental-bulk-push-on-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Continental push-on air hose used for?",
+          "a": "Continental push-on air hose is a nitrile-tube, nitrile-cover air hose that connects to push-on barbed fittings without clamps. The listing carries 123 part numbers in 1/4\" to 3/4\" bore, in black, blue, gray, green and red."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Continental push-on air hose come in?",
+          "a": "The listing has 123 part numbers in 1/4\", 3/8\", 1/2\" and 3/4\" bore: 31 are 1/4\", 36 are 3/8\", 51 are 1/2\" and 5 are 3/4\". Colours are black, blue, gray, green and red, and the part number carries bore, pressure and length, for example IGBK05030-50-G."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Continental part numbers such as IGBK05025-100-G?",
+          "a": "IGBK05025-100-G is the Air Hose, 1/2 Inch Hose ID, Black, 250 PSI and IGRD02525-150-G is the Air Hose, 1/4 Inch Hose ID, Red, 250 PSI. The size table lists all 123 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Continental push-on air hose?",
+          "a": "The maker states 250 to 400 psi (17 to 28 bar) by series: 250 psi is 17 bar, 300 psi is 21 bar and the single 3/4\" 400 psi part is 28 bar. Each part has its own rating, so read the row and match the fitting to it."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Continental push-on air hose cover?",
+          "a": "The maker states -20°F to +210°F. The nitrile tube and cover cope with oil mist in the air line; keep it away from hot surfaces and steam."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Continental push-on air hose made of?",
+          "a": "The tube and cover are nitrile, which resists oil mist and petroleum oils better than EPDM, and the hose is bulk with no strain relief. The listing names deionized, fresh and salt water as compatible fluids."
+        },
+        {
+          "slot": "G",
+          "q": "What ratings are listed for Continental push-on air hose?",
+          "a": "Burst pressure is listed as 69 bar for the 250 psi series, 83 bar for the 300 psi series and 110 bar for the 400 psi part, which is a 4:1 margin on the working pressure. No standards or certificates are listed for this range."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Continental push-on air hose?",
+          "a": "It takes push-on barbed fittings made for this hose, which grip without a clamp, so ordinary smooth-bore couplers will not hold. See [universal air couplings](/c/universal-air-couplings) and ask us for push-on barbs in the matching bore."
+        },
+        {
+          "slot": "K",
+          "q": "Continental push-on air hose or Parker Jiffy push-on hose?",
+          "a": "Continental push-on hose is nitrile and listed in 1/4\" to 3/4\" at 250 to 400 psi in five colours, while the [Parker Jiffy 7212 push-on hose](/p/parker-jiffy-7212-series-push-on-multipurpose-oil-resistant-hoses) is a separate Parker series. Both skip clamps; compare bore, pressure and colour in the size tables."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit push-on air hose to a barb?",
+          "a": "Cut the hose square, lubricate the barb lightly and push the hose fully over the last ridge; no clamp is needed on a barb made for push-on hose. Keep pressure below the rating of the part you ordered, and see [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Continental push-on air hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Continental push-on air hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Continental push-on air hose in Dubai?",
+          "a": "Yes. The Continental push-on air hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-grease-whip-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon grease whip hose assembly used for?",
+          "a": "Dixon grease whip hose assemblies are short brass-ended hoses that connect a grease gun or pump to the fitting, with 1/8\"-27 male NPT threads at both ends. The listing has 9 part numbers in lengths from 8 to 48 inches, rated 3,000 psi by the maker."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon grease whip hose assembly come in?",
+          "a": "The listing has 9 part numbers: strain-relief spring versions at 8, 12, 18, 24, 36 and 48 inches (GWH0800S to GWH4800S), a 36 inch plain version (GWH3600) and retail-pack versions at 12 and 18 inches (GWH1200R, GWH1800R)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Dixon part numbers such as GWH3600?",
+          "a": "GWH3600 is the Grease Whip Hose Assembly, 36 Inch Length, 1/8 Inch-27 Male Thread Size and GWH2400S is the Grease Whip Hose Assembly W/Strain Relief Spring, 24 Inch Length. The size table lists all 9 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon grease whip hose assembly?",
+          "a": "The maker states 3,000 psi, about 207 bar, for every part number in the range. Use grease guns and couplers rated at least that high, and do not use the whip for compressed air or water."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon grease whip hose assembly made of?",
+          "a": "The ends are brass with a 1/8\"-27 male thread, in a Dixon brass fittings series, and the S versions add a strain relief spring at the hose end. The listing does not give the hose compound, so name the grease type on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What thread do Dixon grease whip hose assemblies have?",
+          "a": "The ends are 1/8\"-27 male NPT at both ends, matching the thread on a standard grease gun and the female side of a grease fitting adapter. The listing shows an NPT male x NPT male brass configuration; no standards or certificates are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Dixon grease whip hose?",
+          "a": "The 1/8\"-27 NPT male ends screw into a grease gun outlet and a coupler or fitting with a 1/8\" female NPT port. See [universal air couplings](/c/universal-air-couplings) for related ends; our team can match the adapter to your gun."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon grease whip hose with strain relief spring or the plain version: which?",
+          "a": "The S versions (for example GWH1200S) have a strain relief spring at the hose end, which protects against kinking where the hose meets the fitting; the GWH3600 plain version has none. The [Dixon pin rack hose](/p/dixon-pin-rack-hose-assemblies) is a different product for fire-hose racks."
+        },
+        {
+          "slot": "I",
+          "q": "How should a grease whip hose be fitted and inspected?",
+          "a": "Use thread sealant suited to NPT, keep the spring-relief end at the gun, and replace the whip if the cover cracks or the spring is damaged. At 3,000 psi a failed whip can inject grease under the skin, so keep hands clear when testing."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon grease whip hose assembly made and can it be exported from Dubai?",
+          "a": "The Dixon grease whip hose assembly is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon grease whip hose assembly in Dubai?",
+          "a": "Yes, we stock the Dixon grease whip hose assembly at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-pin-rack-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon pin rack hose assembly used for?",
+          "a": "Dixon pin rack hose assemblies are 75 ft-class fire-hose lengths on a pin rack with NST threaded couplings, for plant and building fire protection. The listing has 3 part numbers, for 50, 75 and 100 ft capacity."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon pin rack hose assembly come in?",
+          "a": "Three part numbers: FHPR150-50CBF (50 ft capacity), FHPR150-75CBF (75 ft) and FHPR150-100CBF (100 ft). All use the NST thread, and the listing publishes no bore or pressure for them."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Dixon part numbers such as FHPR150-50CBF?",
+          "a": "FHPR150-50CBF is the Pin Rack Hose Assembly, 50 Ft. Capacity, NST Thread and FHPR150-100CBF is the Pin Rack Hose Assembly, 100 Ft. Capacity, NST Thread. The size table lists all 3 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon pin rack hose assembly?",
+          "a": "The listing does not publish a working pressure for these assemblies, so we do not quote one. Give us the fire-protection standard, supply pressure and the authority that approves your fire hose, and we confirm the right assembly before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon pin rack hose assembly made of?",
+          "a": "The listing gives the material as steel with an NST thread, and no hose compound. Tell us the standard your site requires and we obtain the maker's material data before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What thread is on a Dixon pin rack hose assembly?",
+          "a": "The threads are NST, the National Standard Thread used on fire hose couplings in North America. No fire-service approvals are listed for this range, so ask us for the maker's documents if your site requires listed fire equipment."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Dixon pin rack hose assembly?",
+          "a": "The NST threaded ends mate with NST hydrants, nozzles and valves. If your site uses another thread, tell us the standard and we suggest an adapter; see [cam and groove couplings](/c/cam-and-groove-couplings) for related hose ends."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon pin rack hose or a Dixon grease whip hose: why are they different?",
+          "a": "A pin rack hose is a long fire hose in 50, 75 or 100 ft lengths with NST ends, while a [grease whip hose](/p/dixon-grease-whip-hose-assemblies) is a short 3,000 psi brass-ended line for grease guns. They are unrelated products listed on the same shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should a pin rack fire hose be stored and inspected?",
+          "a": "Flake the hose on the rack without kinks, keep couplings clean and check gaskets and threads at each inspection. The length capacity is 50, 75 or 100 ft by part number, so match it to the farthest point the hose must reach."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon pin rack hose assembly made and can it be exported from Dubai?",
+          "a": "The Dixon pin rack hose assembly is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon pin rack hose assembly in Dubai?",
+          "a": "Yes, we stock the Dixon pin rack hose assembly at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-polyurethane-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon polyurethane air hose used for?",
+          "a": "Dixon polyurethane air hose is a 50 ft polyurethane hose with male thread ends, for compressed air. The listing has 2 part numbers: 650-6S with 3/8\" male thread and 650-4S with 1/4\" male thread, both on a 3/8\" ID hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon polyurethane air hose come in?",
+          "a": "Two part numbers: 650-6S (3/8\" ID, 50 ft, 3/8\" male thread) and 650-4S (3/8\" ID, 50 ft, 1/4\" male thread). The hose bore is the same; only the thread size on the ends changes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Dixon part numbers such as 650-6S?",
+          "a": "650-6S is the Polyurethane Air Hose, 3/8 Inch Hose ID, 50 Ft. Length, 3/8 Inch Male Thread and 650-4S is the Polyurethane Air Hose, 3/8 Inch Hose ID, 50 Ft. Length, 1/4 Inch Male Thread. The size table lists all 2 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon polyurethane air hose?",
+          "a": "The size table lists 14 bar for both part numbers. Polyurethane is flexible and light, but pressure falls as the temperature rises, so for hot environments ask for the maker's curve."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon polyurethane air hose made of?",
+          "a": "The listing gives the material as polyurethane, which is abrasion resistant and flexible. It does not list a temperature range or compatibility, so ask us for the maker's data for oils or hot areas."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to Dixon polyurethane air hose?",
+          "a": "No standards or certificates are listed for this range, only the 14 bar rating in the size table. If your project needs a test report or a material declaration, ask for it when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does 650-6S versus 650-4S mean on Dixon polyurethane air hose?",
+          "a": "Both are 3/8\" ID, 50 ft hoses; the last digit shows the thread, with 650-6S carrying a 3/8\" male thread and 650-4S a 1/4\" male thread on the ends. Match the thread to your tool inlet or coupler; see [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon polyurethane air hose or the Dixon self-storing air hose: what is the difference?",
+          "a": "The 650-series is a straight 50 ft hose at 14 bar with 3/8\" ID, while the [self-storing air hose](/p/dixon-polyurethane-self-storing-air-hoses) is a coiled-style hose in 1/4\" and 3/8\" at 9 to 10 bar. Straight hose suits fixed runs; self-storing suits a moving tool."
+        },
+        {
+          "slot": "I",
+          "q": "How do I look after polyurethane air hose?",
+          "a": "Keep it away from hot surfaces, welding spatter and sharp edges, and drain the condensate from the line. [Compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist and temperature."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon polyurethane air hose made and can it be exported from Dubai?",
+          "a": "The Dixon polyurethane air hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon polyurethane air hose in Dubai?",
+          "a": "Yes. The Dixon polyurethane air hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-polyurethane-self-storing-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon self-storing air hose used for?",
+          "a": "Dixon polyurethane self-storing air hose is a coiled hose that retracts after use, for tools on a bench or vehicle. The listing has 8 part numbers: 1/4\" ID at 145 psi, 3/8\" ID at 135 psi and one 1/2\" ID, 15 ft hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon self-storing air hose come in?",
+          "a": "Eight part numbers: 1/4\" ID (PU1410, PU1415, PU1425) at 145 psi, 3/8\" ID (PU3815, PU3820, PU3825, PU3850) at 135 psi and PU1215 in 1/2\" ID, 15 ft. The last digits give the length in feet, as in PU1425 for 25 ft."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Dixon part numbers such as PU1215?",
+          "a": "PU1215 and PU3815 are two of the 8 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon self-storing air hose?",
+          "a": "The 1/4\" parts are rated 145 psi (10 bar) and the 3/8\" parts 135 psi (9 bar), published by the maker as working pressure; the row for the 1/2\" PU1215 has no pressure listed, so ask us for it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon self-storing air hose made of?",
+          "a": "The listing gives polyurethane as the material, with resistance to abrasions, heat and oil. Polyurethane holds up to workshop wear better than rubber but should be kept away from welding spatter."
+        },
+        {
+          "slot": "G",
+          "q": "What resistance properties does Dixon self-storing air hose have?",
+          "a": "The listing gives abrasion, heat and oil as the resistance properties of this polyurethane hose. No standards or certificates are listed, so ask for the maker's documents if your project requires them."
+        },
+        {
+          "slot": "H",
+          "q": "What threads do Dixon self-storing air hoses have?",
+          "a": "The 1/4\" ID hoses have 1/4\" male thread ends, the 3/8\" ID hoses 3/8\" male, and PU1215 has 1/2\" thread. Match to the tool inlet or quick coupler; see [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon self-storing air hose or ATP coiled air hose: which should I use?",
+          "a": "The Dixon hose is polyurethane in 1/4\", 3/8\" and 1/2\" at 135 to 145 psi, while the [ATP coiled assemblies](/p/atp-coiled-air-hose-assemblies) are coupled brass-ended assemblies at 140 psi in 1/4\" and 3/8\" in several lengths and colours. Choose by bore, length and whether you want quick couplers fitted."
+        },
+        {
+          "slot": "I",
+          "q": "How should self-storing air hose be used and stored?",
+          "a": "Let the coil retract naturally and do not stretch it beyond its length, since overextension weakens the coil. Keep it away from heat and sharp edges; [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) covers the ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon self-storing air hose made and can it be exported from Dubai?",
+          "a": "The Dixon self-storing air hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon self-storing air hose in Dubai?",
+          "a": "Yes, we stock the Dixon self-storing air hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-h201-series-industrial-multipurpose-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Eaton H201 multipurpose hose used for?",
+          "a": "Eaton H201 series is a one-ply braid synthetic rubber multipurpose hose for air and general use, sold as Easy Couple hose in six sizes from 1/4\" to 1\". The listing has 31 part numbers in black, blue, gray, red and yellow, mostly 50 ft lengths."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Eaton H201 multipurpose hose come in?",
+          "a": "Six bores, 1/4\", 3/8\", 1/2\", 5/8\", 3/4\" and 1\", across 31 part numbers. The part number shows the size (04 is 1/4\", 08 is 1/2\", 16 is 1\"), then the colour code BK, BU, GY, RD or YL, for example H20108RD-250R."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Eaton H201 part numbers such as H20104BK?",
+          "a": "H20104BK is the Easy Couple Hose, 1/4 Inch Hose ID, Black, 300 psi Max. Working Pressure and H20112GY-250R is the Easy Couple Hose, 3/4 Inch Hose ID, Gray, 300 psi Max. Working Pressure. The size table lists all 31 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Eaton H201 multipurpose hose?",
+          "a": "The maker states 200 to 300 psi (14 to 21 bar) by size: most rows are 300 psi, 21 bar, and the 1\" H20116BU-50 is 250 psi, 14 bar. The vacuum rating is 28 in. Hg; read the row for the size you order."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Eaton H201 hose handle?",
+          "a": "The listing gives a conditional temperature of -40°C to +127°C, and the description quotes 212°F. Because the two figures differ, tell us the service temperature and we confirm the safe limit with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Eaton H201 multipurpose hose made of?",
+          "a": "H201 has a synthetic rubber tube and cover with a 1-ply braid, is conductive and black or coloured. The maker notes it is not recommended for hydraulic impulse applications and not approved for air brake applications."
+        },
+        {
+          "slot": "G",
+          "q": "Is Eaton H201 hose suitable for hydraulic or air brake service?",
+          "a": "No. The maker notes it is not recommended for hydraulic impulse applications and not approved for air brake applications. It is an air and multipurpose hose with a conductive construction; for hydraulics see [hydraulic hose](/c/hydraulic-hoses)."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Eaton H201 Easy Couple hose?",
+          "a": "Easy Couple hose takes Eaton's matching Easy Couple fittings, and bulk hose can also take clamped barbed ends. See [universal air couplings](/c/universal-air-couplings) and [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "K",
+          "q": "Eaton H201 hose or Gates Plant Master hose: which for plant air?",
+          "a": "Eaton H201 is a conductive 1-ply braid rubber hose rated 200 to 300 psi in 1/4\" to 1\", while [Gates Plant Master](/p/gates-plant-master-air-hoses) is an EPDM air hose at 200 to 300 psi in its own sizes. Both suit plant air; check bore, colour and fitting availability."
+        },
+        {
+          "slot": "I",
+          "q": "How should Eaton H201 air hose be installed?",
+          "a": "Keep the hose within its bend radius (76.2 mm on the 1/4\" and 127 mm on the 1/2\" listed rows), use the matching Easy Couple fittings and keep it clear of heat. Fit a whip restraint on air lines; see [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Eaton H201 multipurpose hose made and can it be exported from Dubai?",
+          "a": "The Eaton H201 multipurpose hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton H201 multipurpose hose in Dubai?",
+          "a": "Yes, the Eaton H201 multipurpose hose is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-air-conditioning-polar-seal-ii-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Polar Seal II air conditioning hose used for?",
+          "a": "Gates Polar Seal II is a nylon-barrier hose for vehicle and equipment air conditioning refrigerant lines, with a synthetic elastomeric rubber cover. The listing has 8 part numbers in four inside diameters, from 0.3125 to 0.625 inch, in black."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates Polar Seal II air conditioning hose come in?",
+          "a": "Eight part numbers in four sizes, 0.3125, 0.406, 0.5 and 0.625 inch inside diameter, two part numbers per size. Outside diameters are 0.62, 0.74, 0.83 and 0.96 inch respectively."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Gates Polar Seal II part numbers such as 33535009?",
+          "a": "33535009 is the Air Hose, 0.406 Inch ID, 0.74 Inch OD, 350 PSI, Black and 33535006 is the Air Hose, 0.3125 Inch ID, 0.62 Inch OD, 350 PSI, Black. The size table lists all 8 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates Polar Seal II air conditioning hose?",
+          "a": "The rows give 350 psi, which the size table lists as 24 bar. The listing does not state whether this is working or burst pressure for each part number, so confirm the limit with us for refrigerant service before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gates Polar Seal II air conditioning hose made of?",
+          "a": "The hose has a nylon liner as the barrier against refrigerant permeation and a standard synthetic elastomeric rubber cover. Barrier hose is what keeps refrigerant in; a plain air hose would leak through the tube wall."
+        },
+        {
+          "slot": "G",
+          "q": "What is the nylon barrier in Polar Seal II hose for?",
+          "a": "The nylon liner lowers refrigerant permeation through the hose wall compared with a plain rubber tube. The listing gives no refrigerant-specific approvals or standards, so state the refrigerant and system when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Gates Polar Seal II hose?",
+          "a": "The hose takes crimped or reusable A/C fittings sized to the bore and barrier hose, and the end style is set by the compressor and condenser ports. See [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules); tell us the fitting type you need."
+        },
+        {
+          "slot": "K",
+          "q": "Gates Polar Seal II hose or Gates Plant Master air hose?",
+          "a": "Polar Seal II is a barrier-lined air conditioning hose in 0.3125 to 0.625 inch ID, not a compressed-air hose. For shop air use [Gates Plant Master](/p/gates-plant-master-air-hoses), which is an EPDM air hose; do not swap them."
+        },
+        {
+          "slot": "I",
+          "q": "How should Gates air conditioning hose be routed?",
+          "a": "Keep it clear of exhaust, belts and sharp edges, use clips at the maker's spacing and do not kink it. The row sizes (0.3125 to 0.625 inch ID) set the minimum bend, so route gentle bends away from the fittings."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Gates Polar Seal II air conditioning hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Gates Polar Seal II air conditioning hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates Polar Seal II air conditioning hose in Dubai?",
+          "a": "Yes, we stock the Gates Polar Seal II air conditioning hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-air-duct-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates air duct hose used for?",
+          "a": "Gates air duct hose is a flexible chloroprene-covered hose for heating, ventilating, defroster and air intake ducts, rated for low pressure only. The listing has 13 part numbers from 2.25 to 5 inch inside diameter."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates air duct hose come in?",
+          "a": "Thirteen part numbers from 2.25 inch to 5 inch inside diameter, including 2.38, 2.5, 3.13, 3.5, 4, 4.5 and 5 inch sizes. The rows show the inside diameter and the outside diameter for each size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Gates part numbers such as 46631580?",
+          "a": "46631580 is the Air Duct Hose, 4 Inch ID, 4.25 Inch OD, 10 PSI, Black and 46631575 is the Air Duct Hose, 3.5 Inch ID, 3.75 Inch OD, 10 PSI, Black. The size table lists all 13 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates air duct hose?",
+          "a": "The rows list 10 psi, about 1 bar, as the maximum. This is a duct hose for air at near-atmospheric pressure, not a compressed-air hose; never connect it to a compressor line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gates air duct hose made of?",
+          "a": "The cover is chloroprene and the tube type is Type A, and the design factor construction is 4:1. The maker cautions it is not recommended for conveying liquids."
+        },
+        {
+          "slot": "G",
+          "q": "What is Gates air duct hose recommended for?",
+          "a": "The maker recommends it for heavy-duty heating and ventilating applications such as air intake for butane conversion units, air and heater ducts, defroster lines, air cleaner connections to the carburetor, exhaust ducts and vent lines. It is not recommended for liquids."
+        },
+        {
+          "slot": "H",
+          "q": "How do you connect Gates air duct hose?",
+          "a": "Duct hose slips over the duct stub and is held with a worm-drive clamp sized to the outside diameter. See [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules) and tell us the duct diameter."
+        },
+        {
+          "slot": "K",
+          "q": "Gates air duct hose or a Gates Plant Master compressed air hose?",
+          "a": "Duct hose is a 10 psi (about 1 bar) ventilation hose in 2.25 to 5 inch ID, while [Plant Master](/p/gates-plant-master-air-hoses) is a pressurised compressed-air hose in much smaller bores. They are not interchangeable."
+        },
+        {
+          "slot": "I",
+          "q": "How should Gates air duct hose be installed?",
+          "a": "Support it so it does not sag or collapse, keep it clear of exhaust surfaces beyond its rating and clamp each end firmly. The listing does not publish a temperature range, so give us the temperature of the duct on the enquiry."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Gates air duct hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Gates air duct hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates air duct hose in Dubai?",
+          "a": "Yes, the Gates air duct hose is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-air-master-diving-air-hose-stems",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Air Master diving air hose stem used for?",
+          "a": "Gates Air Master diving air hose stems are the hose-end stem components used on diving air hose. The listing has 3 part numbers: 71070500 for nominal size 1/2\" and 72070598 and 72070599 for nominal size 3/8\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates Air Master diving air hose stem come in?",
+          "a": "Three part numbers: 71070500 (nominal 1/2\") and 72070598 and 72070599 (nominal 3/8\"). The table lists an ID and OD for each stem; the pairs of numbers describe the stem, not the finished hose bore."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Gates Air Master part numbers such as 71070500?",
+          "a": "71070500 and 72070598 are two of the 3 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates Air Master diving air hose stem?",
+          "a": "The listing publishes no working pressure for these stems, and diving air is life-support service, so we do not quote one. Ask us for the maker's data and the assembly's test rating before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gates Air Master diving air hose stem made of?",
+          "a": "The listing gives no material for the stems. For life-support air we confirm the material, cleaning and oxygen-compatibility information with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Are Gates Air Master diving air hose stems approved for life support?",
+          "a": "The listing carries no approvals or standards for these stems, and we do not claim any. Diving air must meet the diving regulator's requirements, so ask us to obtain the maker's documents before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do Gates Air Master diving stems connect to?",
+          "a": "A stem is the end that is inserted into the hose and connects to the fitting or coupling on the diving air system. State the hose and the fitting type and we confirm the matching parts; see [crowfoot couplings](/c/crowfoot-couplings) for related ends."
+        },
+        {
+          "slot": "K",
+          "q": "Gates Air Master diving stem 71070500 or 72070599: what is the difference?",
+          "a": "71070500 is the nominal 1/2\" stem and 72070599 and 72070598 are nominal 3/8\" stems, so choose by the hose bore of your diving air line. Check the hose and stem together before assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should diving air hose stems be fitted and checked?",
+          "a": "Fit stems and ferrules to the maker's instructions with the correct crimp, pressure test the assembly before use and keep records. Diving air is life-support service, so use only parts the maker approves for it."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Gates Air Master diving air hose stem be exported from Dubai, and what papers come with it?",
+          "a": "We export the Gates Air Master diving air hose stem from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates Air Master diving air hose stem in Dubai?",
+          "a": "Yes, the Gates Air Master diving air hose stem is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-plant-master-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Plant Master air hose used for?",
+          "a": "Gates Plant Master is an EPDM air hose with maximum flexibility for air and water in mining, construction, agriculture, vehicle repair and in-plant work. The listing has 26 part numbers from 0.31 to 1 inch inside diameter in black, red and yellow."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates Plant Master air hose come in?",
+          "a": "Twenty-six part numbers in inside diameters from 0.31 to 1 inch, in 200, 250 and 300 psi versions. Outside diameters run from 0.53 to 1.48 inch, for example 32040710 is 0.31 inch ID x 0.53 inch OD and 32041432 is 1 inch ID x 1.4 inch OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Gates Plant Master part numbers such as 32040710?",
+          "a": "32040710 is the Air Hose, 0.31 Inch ID, 0.53 Inch OD, 200 PSI, Black and 32044431 is the Air Hose, 0.38 Inch ID, 0.66 Inch OD, 250 PSI, Black. The size table lists all 26 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates Plant Master air hose?",
+          "a": "Each part number carries its own rating: 200 psi (14 bar), 250 psi (17 bar) or 300 psi (21 bar). The 0.31 to 0.5 inch black hoses are 200 psi and the 1 inch red and black are 300 psi; the design factor is 3:1."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gates Plant Master air hose made of?",
+          "a": "The tube is Type P and the cover is EPDM, which the maker describes as having outstanding resistance to heat and ozone. EPDM is for air and water, not for petroleum oils."
+        },
+        {
+          "slot": "G",
+          "q": "What design factor does Gates Plant Master hose have?",
+          "a": "The listing gives a design factor construction of 3:1, so the burst pressure is three times the working pressure. It is recommended for air and water applications requiring maximum flexibility, in any industry."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings fit Gates Plant Master air hose?",
+          "a": "Use barbed or crimp-style air couplings sized to the hose ID and held with the right clamp. See [universal air couplings](/c/universal-air-couplings) and read [Chicago, claw and crowfoot couplings](/blog/universal-air-couplings-explained) for what to choose."
+        },
+        {
+          "slot": "K",
+          "q": "Gates Plant Master or Plant Master Plus air hose: how do they differ?",
+          "a": "Plant Master has a Type P tube and a 3:1 design factor over 26 part numbers, while [Plant Master Plus](/p/gates-plant-master-plus-air-hoses) has a specially compounded elastomer tube, Type B1, and is described as good in heat and with intermittent SAE oil contact. Plus has only 7 part numbers."
+        },
+        {
+          "slot": "I",
+          "q": "How should Gates Plant Master hose be installed?",
+          "a": "Keep it within the bend radius, protect it from sharp edges and use couplings rated for the hose pressure of your part number. Add whip restraints at the ends; see [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Gates Plant Master air hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Gates Plant Master air hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates Plant Master air hose in Dubai?",
+          "a": "Yes, we stock the Gates Plant Master air hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-plant-master-plus-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Plant Master Plus air hose used for?",
+          "a": "Gates Plant Master Plus is a red EPDM-cover air hose for air, water and heat applications that need maximum flexibility. The listing has 7 part numbers from 0.25 to 1.38 inch inside diameter, in 250 psi and 300 psi versions."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates Plant Master Plus air hose come in?",
+          "a": "Seven part numbers: 0.25, 0.38 and 0.75 inch ID and a 1.38 inch ID in 250 psi, plus 0.38, 0.5 and 0.75 inch ID in 300 psi. For example 32000202 is 0.25 inch ID x 0.5 inch OD and 32000237 is 1.38 inch ID x 1.88 inch OD."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Gates Plant Master Plus part numbers such as 32000202?",
+          "a": "32000202 is the Air Hose, 0.25 Inch ID, 0.5 Inch OD, 250 PSI, Red and 32000237 is the Air Hose, 1.38 Inch ID, 1.88 Inch OD, 250 PSI, Red. The size table lists all 7 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates Plant Master Plus air hose?",
+          "a": "The 250 psi parts are 17 bar and the 300 psi parts are 21 bar; the design factor is 3:1. Read the row for the part you order, since the rating changes with the version, not just the size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gates Plant Master Plus air hose made of?",
+          "a": "The tube is a specially compounded elastomer, Type B1, under an EPDM cover. The maker recommends it where maximum flexibility and good resistance to air, water and heat are needed, with intermittent contact only for SAE oils."
+        },
+        {
+          "slot": "G",
+          "q": "Can Gates Plant Master Plus hose carry oil?",
+          "a": "Only briefly. The maker notes intermittent contact only for SAE oils, so it is an air and water hose with some tolerance for oil mist. For continuous oil, choose a nitrile or oil-resistant hose from the same shelf."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings fit Gates Plant Master Plus air hose?",
+          "a": "Use barbed or crimp-style air couplings sized to the hose ID, for example 0.38 inch or 0.75 inch, held with the right clamp. See [universal air couplings](/c/universal-air-couplings) and [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "K",
+          "q": "Gates Plant Master Plus or Plant Master XTreme 300: which should I choose?",
+          "a": "Plant Master Plus is an EPDM-cover air hose with a Type B1 tube and a 3:1 design factor in 7 part numbers, while [Plant Master XTreme 300](/p/gates-plant-master-xtreme-300-lock-on-braid-air-hoses) has a carboxylated nitrile cover, a Type C tube and a 4:1 design factor in 25 part numbers. XTreme is for the tougher oil duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Gates Plant Master Plus air hose be installed?",
+          "a": "Keep it within its bend radius, clear of sharp edges and heat sources, and use couplings rated for the 250 or 300 psi of your part. See [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Gates Plant Master Plus air hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Gates Plant Master Plus air hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates Plant Master Plus air hose in Dubai?",
+          "a": "Yes. We keep the Gates Plant Master Plus air hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-plant-master-xtreme-300-lock-on-braid-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Plant Master XTreme 300 lock-on braid air hose used for?",
+          "a": "Gates Plant Master XTreme 300 is a braid-reinforced air hose with a carboxylated nitrile cover that locks onto its fittings. The listing has 25 part numbers in inside diameters from 0.25 to 0.75 inch, in black and red, with a 4:1 design factor."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates Plant Master XTreme 300 lock-on braid air hose come in?",
+          "a": "Twenty-five part numbers in three bores, from 0.25 inch to 0.75 inch ID: for example 32050216 is 0.25 inch ID x 0.57 inch OD at 315 psi, 32050230 is 0.5 inch ID at 250 psi and 32050241 is 0.75 inch ID at 315 psi."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Gates Plant Master XTreme 300 part numbers such as 32050402?",
+          "a": "32050402 is the Air Hose, 0.38 Inch ID, 0.7 Inch OD, 300 PSI, Red and 32050236 is the Air Hose, 0.63 Inch ID, 0.98 Inch OD, 315 PSI, Red. The size table lists all 25 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates Plant Master XTreme 300 lock-on braid air hose?",
+          "a": "Each part has its own rating: 250 psi (17 bar), 300 psi (21 bar) or 315 psi (22 bar). The design factor is 4:1, so check the row for your part number rather than the series name."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gates Plant Master XTreme 300 lock-on braid air hose made of?",
+          "a": "The tube is Type C and the cover is carboxylated nitrile, which resists oil mist and abrasion better than EPDM. The reinforcement is a braid that locks onto the matching fitting."
+        },
+        {
+          "slot": "G",
+          "q": "What design factor does Gates Plant Master XTreme 300 have?",
+          "a": "The listing gives a 4:1 design factor construction, so burst is four times working pressure. That is a higher margin than the 3:1 on the standard [Plant Master](/p/gates-plant-master-air-hoses)."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings does Gates Plant Master XTreme 300 lock-on hose use?",
+          "a": "It uses the maker's lock-on fittings made for the braided construction, which grip the braid without a clamp; ordinary barbs will not hold. Give us the bore and the thread and we match the fitting; see [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Gates Plant Master XTreme 300 or standard Plant Master air hose?",
+          "a": "XTreme 300 has a carboxylated nitrile cover, a braid and a 4:1 design factor, while [standard Plant Master](/p/gates-plant-master-air-hoses) has an EPDM cover and a 3:1 design factor. XTreme suits tougher shop and oil mist duty."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install lock-on braid air hose?",
+          "a": "Use only the fittings made for the hose, cut it square and assemble to the maker's instructions, then test before use. Keep within the bend radius and see [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Gates Plant Master XTreme 300 lock-on braid air hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Gates Plant Master XTreme 300 lock-on braid air hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates Plant Master XTreme 300 lock-on braid air hose in Dubai?",
+          "a": "Yes, we stock the Gates Plant Master XTreme 300 lock-on braid air hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "goodyear-engineered-products-1-2-300-psi-bulk-multipurpose-air-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear 1/2\" 300 psi bulk multipurpose air hose used for?",
+          "a": "This Goodyear Engineered Products hose is 1/2\" bulk multipurpose air hose rated 300 psi, with a TPE cover and a 4:1 safety factor. The listing has 3 part numbers in blue and yellow."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear 1/2\" 300 psi bulk multipurpose air hose come in?",
+          "a": "Three part numbers, all 1/2\" bore: 10A241, 1ABR7 and 1ABT5, in blue and yellow. It is bulk hose, cut to the length you need, with no fittings."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear 1/2\" 300 psi part numbers such as 10A241?",
+          "a": "10A241 and 1ABT5 are two of the 3 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear 1/2\" 300 psi bulk multipurpose air hose?",
+          "a": "The title rates it 300 psi, about 21 bar, with a 4:1 safety factor; the rows themselves carry no separate pressure. Keep fittings and tools to the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Goodyear 1/2\" bulk multipurpose air hose have?",
+          "a": "The listing gives -40°F to +158°F. That covers cold storage and normal outdoor air; for hot air or hot oil choose a hose built for the temperature."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear 1/2\" 300 psi bulk multipurpose air hose made of?",
+          "a": "The cover is TPE, and the hose is supplied as bulk hose with no strain relief. The listing gives no tube compound, so state the fluid and we confirm it."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor does Goodyear 300 psi bulk multipurpose air hose have?",
+          "a": "The listing gives a safety factor of 4:1, so the burst pressure is four times the 300 psi working pressure. HS code 3917390050 is listed for customs on this bulk hose."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Goodyear 1/2\" bulk air hose?",
+          "a": "It is bulk hose cut to length, so it needs barbed ends held with clamps or crimp ferrules, sized to 1/2\" ID. See [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules) and [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear 1/2\" bulk air hose or the 3/8\" bulk air hose: which?",
+          "a": "Choose by bore: this is 1/2\" ID with 3 part numbers, while the [3/8 inch hose](/p/goodyear-engineered-products-3-8-300-psi-bulk-multipurpose-air-hose) has 5 and the [1/4 inch hose](/p/goodyear-engineered-products-1-4-300-psi-bulk-multipurpose-air-hose) has 4. All three are 300 psi with a TPE cover and a 4:1 safety factor."
+        },
+        {
+          "slot": "I",
+          "q": "How should Goodyear bulk air hose be cut and fitted?",
+          "a": "Cut it square, fit barbed ends with clamps or ferrules rated for 300 psi and keep it clear of heat above +158°F. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear 1/2\" 300 psi bulk multipurpose air hose made and can it be exported from Dubai?",
+          "a": "The Goodyear 1/2\" 300 psi bulk multipurpose air hose is listed with United States as its country of origin and HS code 3917390050. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear 1/2\" 300 psi bulk multipurpose air hose in Dubai?",
+          "a": "Yes. The Goodyear 1/2\" 300 psi bulk multipurpose air hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "goodyear-engineered-products-1-4-300-psi-bulk-multipurpose-air-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear 1/4\" 300 psi bulk multipurpose air hose used for?",
+          "a": "This Goodyear Engineered Products hose is 1/4\" bulk multipurpose air hose rated 300 psi with a TPE cover and a 4:1 safety factor. The listing has 4 part numbers, one each in blue, black, red and yellow."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear 1/4\" 300 psi bulk multipurpose air hose come in?",
+          "a": "Four part numbers, all 1/4\" bore: 10A239 (blue), 1ABR8 (black), 1ABT1 (red) and 1ABT3 (yellow). The hose is bulk, cut to length, with no fittings."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear 1/4\" 300 psi part numbers such as 10A239?",
+          "a": "10A239 is the Multipurpose Air Hose Bulk Blue and 1ABT1 is the Multipurpose Air Hose Bulk Red. The size table lists all 4 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear 1/4\" 300 psi bulk multipurpose air hose?",
+          "a": "The title rates it 300 psi, about 21 bar, with a 4:1 safety factor, and the rows carry no separate pressure value. Use fittings and tools rated at least as high."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Goodyear 1/4\" bulk multipurpose air hose have?",
+          "a": "The listing gives -40°F to +158°F for this 1/4\" TPE-cover hose. That suits cold storage and outdoor air; do not use it for hot air, steam or hot oil."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear 1/4\" 300 psi bulk multipurpose air hose made of?",
+          "a": "The cover is TPE, and the hose is bulk hose without strain relief. The listing gives no tube material, so name the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which colours of Goodyear 1/4\" bulk air hose are listed?",
+          "a": "Four colours: blue (10A239), black (1ABR8), red (1ABT1) and yellow (1ABT3), so lines can be colour-coded by service. The HS code listed for this bulk hose is 3917390050."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Goodyear 1/4\" bulk air hose?",
+          "a": "It needs barbed ends held with clamps or crimp ferrules sized to 1/4\" ID. See [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules) and [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear 1/4\" bulk hose or the 1/4\" coupled assembly: which should I buy?",
+          "a": "The bulk hose is sold by the length with no ends, in four colours, while the [1/4 inch coupled assembly](/p/goodyear-engineered-products-1-4-300-psi-coupled-assembly-multipurpose-air-hose) has brass MNPT ends and a PVC tube and cover. Pick the assembly if you want it ready to use."
+        },
+        {
+          "slot": "I",
+          "q": "How should a bulk air hose be cut and fitted?",
+          "a": "Cut it square, fit barbed ends with clamps or ferrules rated for 300 psi and keep it away from heat above +158°F. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear 1/4\" 300 psi bulk multipurpose air hose made and can it be exported from Dubai?",
+          "a": "The Goodyear 1/4\" 300 psi bulk multipurpose air hose is listed with United States as its country of origin and HS code 3917390050. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear 1/4\" 300 psi bulk multipurpose air hose in Dubai?",
+          "a": "Yes. The Goodyear 1/4\" 300 psi bulk multipurpose air hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "goodyear-engineered-products-1-4-300-psi-coupled-assembly-multipurpose-air-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear 1/4\" 300 psi coupled air hose assembly used for?",
+          "a": "This Goodyear Engineered Products assembly is a 1/4\" multipurpose air hose with brass MNPT ends, a PVC tube and cover, rated 300 psi. The listing has 4 part numbers, in 25 and 50 ft lengths."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear 1/4\" 300 psi coupled air hose assembly come in?",
+          "a": "Four part numbers, all 1/4\" ID: 1ABP3, 1ABP4, 1ABP9 and 1ABR1, two in 25 ft and two in 50 ft lengths. Each is a coupled assembly with brass MNPT ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear 1/4\" 300 psi part numbers such as 1ABP3?",
+          "a": "1ABP3 is the Multipurpose Air Hose 1/4 Inch 25 Feet Length and 1ABP9 is the Multipurpose Air Hose 1/4 Inch 25 Feet Length. The size table lists all 4 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear 1/4\" 300 psi coupled air hose assembly?",
+          "a": "The maker states 300 psi, about 21 bar, for the 1/4\" assembly and the table lists 21 bar on every row; the safety factor is 4:1. Match couplers and tools to the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Goodyear 1/4\" coupled air hose have?",
+          "a": "The listing gives -10°F to +158°F, a warmer lower limit than the bulk hoses, because of the PVC tube and cover. Do not use it in freezing conditions."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear 1/4\" 300 psi coupled air hose assembly made of?",
+          "a": "The tube and cover are PVC, the fittings are brass MNPT at both ends, and the safety factor is 4:1. PVC is flexible and light, but it stiffens in the cold."
+        },
+        {
+          "slot": "G",
+          "q": "What HS code is listed for the Goodyear 1/4\" coupled assembly?",
+          "a": "The listing gives HS code 3917390020 for the coupled assembly, a plastics tubing heading. Confirm the code with your customs broker for the destination country."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Goodyear coupled air hose assembly?",
+          "a": "Both ends are brass MNPT, so they screw into female NPT ports, tools and couplers. See [universal air couplings](/c/universal-air-couplings) for the matching plug and socket."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear 1/4\" coupled assembly or the 3/8\" coupled assembly?",
+          "a": "The 1/4\" assembly has 4 part numbers, while the [3/8 inch coupled assembly](/p/goodyear-engineered-products-3-8-300-psi-coupled-assembly-multipurpose-air-hose) has 10 part numbers, including a 15 ft length. Choose the 3/8\" for more flow; both are PVC and 300 psi."
+        },
+        {
+          "slot": "I",
+          "q": "How should a coupled PVC air hose assembly be used and stored?",
+          "a": "Keep it away from freezing temperatures, because PVC stiffens, and from heat above +158°F. Coil it without kinks; see [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear 1/4\" 300 psi coupled air hose assembly made and can it be exported from Dubai?",
+          "a": "The Goodyear 1/4\" 300 psi coupled air hose assembly is listed with United States as its country of origin and HS code 3917390020. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear 1/4\" 300 psi coupled air hose assembly in Dubai?",
+          "a": "Yes, the Goodyear 1/4\" 300 psi coupled air hose assembly is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "goodyear-engineered-products-3-8-300-psi-bulk-multipurpose-air-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear 3/8\" 300 psi bulk multipurpose air hose used for?",
+          "a": "This Goodyear Engineered Products hose is 3/8\" bulk multipurpose air hose rated 300 psi with a TPE cover and a 4:1 safety factor. The listing has 5 part numbers in black, blue and red."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear 3/8\" 300 psi bulk multipurpose air hose come in?",
+          "a": "Five part numbers, all 3/8\" bore: 10A240, 1ABR6, 1ABR9, 1ABT2 and 1ABT4, in blue, black and red. The hose is bulk, cut to length, with no fittings."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear 3/8\" 300 psi part numbers such as 10A240?",
+          "a": "10A240 is the Multipurpose Air Hose 3/8 Inch Blue and 1ABR9 is the Multipurpose Air Hose 3/8 Inch Black. The size table lists all 5 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear 3/8\" 300 psi bulk multipurpose air hose?",
+          "a": "The title rates it 300 psi, about 21 bar, with a 4:1 safety factor, and the rows carry no separate pressure. Use fittings and tools rated at least as high."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Goodyear 3/8\" bulk multipurpose air hose have?",
+          "a": "The listing gives -40°F to +158°F for this 3/8\" TPE-cover hose, which covers cold stores and outdoor air. It is not for hot air, steam or hot-oil service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear 3/8\" 300 psi bulk multipurpose air hose made of?",
+          "a": "The cover is TPE, and the hose is bulk hose without strain relief. The listing gives no tube compound, so state the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor does the Goodyear 3/8\" bulk air hose have?",
+          "a": "The listing gives a 4:1 safety factor, so burst pressure is four times the 300 psi working pressure. The HS code listed is 3917390050."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Goodyear 3/8\" bulk air hose?",
+          "a": "Barbed ends held with clamps or crimp ferrules sized to 3/8\" ID. See [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules) and [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear 3/8\" bulk air hose or Goodyear push-on air hose?",
+          "a": "The 3/8\" bulk hose is a TPE-cover hose at 300 psi that takes clamped barbs, while the [push-on air hose](/p/goodyear-engineered-products-air-hose-push-on) has a carboxylated nitrile cover, goes to 1/2\" and takes push-on fittings with no clamp at 300 to 400 psi. Choose by clamped or push-on ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should 3/8\" bulk air hose be cut and fitted?",
+          "a": "Cut it square, fit barbed ends with clamps or ferrules rated for 300 psi and keep it clear of heat above +158°F. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear 3/8\" 300 psi bulk multipurpose air hose made and can it be exported from Dubai?",
+          "a": "The Goodyear 3/8\" 300 psi bulk multipurpose air hose is listed with United States as its country of origin and HS code 3917390050. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear 3/8\" 300 psi bulk multipurpose air hose in Dubai?",
+          "a": "Yes, we stock the Goodyear 3/8\" 300 psi bulk multipurpose air hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "goodyear-engineered-products-3-8-300-psi-coupled-assembly-multipurpose-air-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear 3/8\" 300 psi coupled air hose assembly used for?",
+          "a": "This Goodyear Engineered Products assembly is a 3/8\" multipurpose air hose with brass fittings, a PVC tube and cover, rated 300 psi. The listing has 10 part numbers in black and blue, including a 15 ft length."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear 3/8\" 300 psi coupled air hose assembly come in?",
+          "a": "Ten part numbers, all 3/8\" ID in the size table: for example 1ABP5, 1ABP6, 1ABP7, 1ABP8 and 1ABR2, in black and blue. The description also mentions 1/4\", so confirm the bore of your part number before ordering."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear 3/8\" 300 psi part numbers such as 1ABP5?",
+          "a": "1ABP5 is the Multipurpose Air Hose 3/8 Inch 15 Feet Length and 1ABR3 is the Multipurpose Air Hose Coupled Assembly. The size table lists all 10 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear 3/8\" 300 psi coupled air hose assembly?",
+          "a": "The maker states 300 psi, about 21 bar, and the table lists 21 bar on every row; the safety factor is 4:1. Use couplers and tools rated to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Goodyear 3/8\" coupled air hose have?",
+          "a": "The listing gives -10°F to +158°F, a warmer lower limit than the bulk hoses, because of the PVC construction. Do not use it in freezing conditions."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear 3/8\" 300 psi coupled air hose assembly made of?",
+          "a": "The tube and cover are PVC, with brass coupling and fittings at both ends and a 4:1 safety factor. PVC is light and flexible but stiffens in the cold."
+        },
+        {
+          "slot": "G",
+          "q": "What HS code is listed for the Goodyear 3/8\" coupled assembly?",
+          "a": "The listing gives HS code 3917390020, a plastics tubing heading, for the coupled assemblies. Confirm it with your customs broker for the destination country."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Goodyear coupled air hose assembly?",
+          "a": "The brass ends mate with tool inlets and couplers; confirm the thread of your part number in the size table. See [universal air couplings](/c/universal-air-couplings) for the matching plug and socket."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear 3/8\" coupled assembly or 1/4\" coupled assembly?",
+          "a": "The 3/8\" assembly has 10 part numbers and more flow, while the [1/4 inch assembly](/p/goodyear-engineered-products-1-4-300-psi-coupled-assembly-multipurpose-air-hose) is the smaller bore in longer lengths. Both are PVC and 300 psi."
+        },
+        {
+          "slot": "I",
+          "q": "How should PVC coupled air hose be used and stored?",
+          "a": "Keep it away from freezing temperatures, because PVC stiffens, and from heat above +158°F. Coil it without kinks; see [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear 3/8\" 300 psi coupled air hose assembly made and can it be exported from Dubai?",
+          "a": "The Goodyear 3/8\" 300 psi coupled air hose assembly is listed with United States as its country of origin and HS code 3917390020. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear 3/8\" 300 psi coupled air hose assembly in Dubai?",
+          "a": "Yes. We keep the Goodyear 3/8\" 300 psi coupled air hose assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "goodyear-engineered-products-air-hose-push-on",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear push-on air hose used for?",
+          "a": "Goodyear Engineered Products push-on air hose is bulk hose with a carboxylated nitrile cover that connects to push-on barbs without clamps. The listing has 13 part numbers in 1/4\", 3/8\" and 1/2\" bore, in black, gray, green and red, in 150 and 250 ft lengths."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear push-on air hose come in?",
+          "a": "Thirteen part numbers: five in 1/4\", five in 3/8\" and three in 1/2\" ID. The 1/4\" and 3/8\" hoses come in 250 ft lengths and the 1/2\" hose in 150 ft lengths, in black, gray, green and red."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear push-on part numbers such as 1ZLL4?",
+          "a": "1ZLL4 is the Air Hose Push-on 1/4 Inch Id x 250 Feet Black and 1ZLN1 is the Air Hose Push-on 3/8 Inch Id x 250 Feet Green. The size table lists all 13 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear push-on air hose?",
+          "a": "The maker states 300 to 400 psi (21 to 28 bar) by size; the rows give 28 bar for ten part numbers and 21 bar for three. Read the row for your part number, and use push-on barbs rated to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Goodyear push-on air hose cover?",
+          "a": "The listing gives -40°F to +200°F, a higher upper limit than the TPE-cover bulk hoses. The nitrile tube and cover resist oil mist, so it suits compressed air that carries some oil."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear push-on air hose made of?",
+          "a": "The tube is Buna N with vinyl and the cover is carboxylated nitrile rubber (Carbryn), with a 4:1 safety factor. Buna-N resists petroleum oil, which makes it better for oily compressed air than EPDM."
+        },
+        {
+          "slot": "G",
+          "q": "What HS code is listed for Goodyear push-on air hose?",
+          "a": "The listing gives HS code 4009310000, the heading for textile-reinforced rubber tubes without fittings. Confirm the code with your customs broker for the destination country."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Goodyear push-on air hose?",
+          "a": "It takes push-on barbed fittings that grip the hose without a clamp, so ordinary smooth couplers will not hold. See [universal air couplings](/c/universal-air-couplings), and give us the bore and thread for push-on barbs."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear push-on air hose or Goodyear Hose Push On: what is the difference?",
+          "a": "This listing has 13 part numbers in 1/4\", 3/8\" and 1/2\" with a Buna N and vinyl tube, while the [Hose Push On listing](/p/goodyear-engineered-products-hose-push-on) has fewer part numbers with a nitrile tube and adds a larger size in black. Compare the rows for the colour and length you need."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit push-on air hose to a barb?",
+          "a": "Cut the hose square, lubricate the barb lightly and push the hose fully over the last ridge; no clamp is needed on a barb made for push-on hose. See [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear push-on air hose made and can it be exported from Dubai?",
+          "a": "The Goodyear push-on air hose is listed with United States as its country of origin and HS code 4009310000. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear push-on air hose in Dubai?",
+          "a": "Yes, we stock the Goodyear push-on air hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "goodyear-engineered-products-hose-push-on",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear Hose Push On push-on hose used for?",
+          "a": "Goodyear Engineered Products Hose Push On is a nitrile-tube bulk push-on hose for compressed air. The listing has 5 part numbers in blue and black, in 150 and 250 ft lengths, from 1/4\" to 3/4\" ID."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear Hose Push On push-on hose come in?",
+          "a": "Five part numbers: 4KT66 (1/4\" ID, 250 ft, blue), 4KT67 (3/8\", 250 ft, blue), 4KT68 (1/2\", 150 ft, blue), 4KT69 (3/4\", 150 ft, black) and 5W555 (1/2\", 150 ft, black)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear Hose Push On part numbers such as 4KT66?",
+          "a": "4KT66 is the Hose Push On 1/4 Inch Id x 250 Feet Blue and 4KT68 is the Hose Push On 1/2 Inch Id x 150 Feet Blue. The size table lists all 5 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear Hose Push On push-on hose?",
+          "a": "The maker states 250 to 400 psi (17 to 28 bar) by size; the rows give 28 bar on three and 17 bar on two. Read the row for the part you order; the 3/4\" row's rating should be confirmed with us."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Goodyear Hose Push On cover?",
+          "a": "The listing gives -40°F to +200°F for this push-on hose. The nitrile tube is oil resistant, which suits compressed air that carries some oil mist."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear Hose Push On push-on hose made of?",
+          "a": "The tube is nitrile and the hose is bulk with no strain relief. The listing names a Carbryn rubber cover, and the safety factor is not stated for this listing."
+        },
+        {
+          "slot": "G",
+          "q": "What is the HS code for Goodyear Hose Push On?",
+          "a": "The listing gives HS code 4009110000, which is a heading for unreinforced rubber tubes without fittings. Because this is a braided push-on hose, confirm the code with your customs broker."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Goodyear Hose Push On?",
+          "a": "It takes push-on barbed fittings that grip the hose without a clamp. See [universal air couplings](/c/universal-air-couplings) and ask us for push-on barbs in the matching bore."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear Hose Push On or the Goodyear air hose push-on listing?",
+          "a": "This listing has 5 part numbers, including a larger black hose above 1/2\", while the [air hose push-on listing](/p/goodyear-engineered-products-air-hose-push-on) is the wider range in 1/4\", 3/8\" and 1/2\". For the larger push-on size, choose this one."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit Goodyear push-on hose?",
+          "a": "Cut the hose square, lubricate the barb and push the hose fully over the last ridge; no clamp is needed on a barb made for push-on hose. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear Hose Push On push-on hose made and can it be exported from Dubai?",
+          "a": "The Goodyear Hose Push On push-on hose is listed with United States as its country of origin and HS code 4009110000. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear Hose Push On push-on hose in Dubai?",
+          "a": "Yes. We keep the Goodyear Hose Push On push-on hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

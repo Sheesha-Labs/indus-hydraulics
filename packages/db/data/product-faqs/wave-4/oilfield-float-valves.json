@@ -1,0 +1,466 @@
+{
+  "family": "oilfield-float-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "drill-pipe-float-valve-size-2f-3r",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a size 2F-3R drill pipe float valve used for?",
+          "a": "A size 2F-3R drill pipe float valve sits in the float sub or bit sub above the bit and stops drilling fluid and cuttings flowing back up the string when circulation stops, when connections are made, and in a kick. The smallest float valve in the range is a flapper valve for 3-1/2″ API Reg and 2-7/8″ API IF float subs."
+        },
+        {
+          "slot": "D",
+          "q": "Which sub connections does the size 2F-3R drill pipe float valve fit?",
+          "a": "The size 2F-3R drill pipe float valve fits float or bit subs cut with 3-1/2″ API Reg and 2-7/8″ API IF (box × pin) connections. Check the sub connection and the recess dimensions before ordering: valve OD 2-13/32 in, sub recess 2-7/16 in, baffle plate recess 1-29/32 in, length 6-1/2 in."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the size 2F-3R drill pipe float valve?",
+          "a": "The size 2F-3R drill pipe float valve has valve OD 2-13/32 in, sub recess 2-7/16 in, baffle plate recess 1-29/32 in, length 6-1/2 in and Model G 1-1/4 in bore. The recess in the sub is the valve outside diameter plus 1/32 in. Send the sub drawing on the RFQ if the recess is not standard."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the size 2F-3R drill pipe float valve rated for?",
+          "a": "The listing gives 7,500 psi working pressure for the size 2F-3R drill pipe float valve, which is Forum's rating for its Model F and G valves. We confirm the rating of other makes on the quotation, so state the make and the differential pressure you expect."
+        },
+        {
+          "slot": "F",
+          "q": "What models does the size 2F-3R drill pipe float valve come in?",
+          "a": "The listing gives Model G (flapper) and Model GA (flapper, ported). Plunger valves have a spring-loaded plunger for positive shut-off, while flapper valves swing fully clear for an unrestricted bore. Ported models allow partial fill-up and pressure readings."
+        },
+        {
+          "slot": "C",
+          "q": "Which makes are listed for the size 2F-3R drill pipe float valve?",
+          "a": "The size 2F-3R drill pipe float valve is listed from Crestex, Baker, Forum and Drillmax, with part or cage numbers 152-432, 14423100N and 1520433. Baker-pattern valves of the same size and model interchange in the same sub, and we confirm the match against your sub connection on the quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the size 2F-3R drill pipe float valve?",
+          "a": "We supply the size 2F-3R drill pipe float valve new to the size, model and make on your RFQ, and can quote the float sub and repair parts with it. The listing gives no product standard, so ask for the material certificate and dimensional report you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What else do I order with the size 2F-3R drill pipe float valve?",
+          "a": "Order the 3-1/2″ API Reg and 2-7/8″ API IF (box × pin) float sub or bit sub that holds the size 2F-3R drill pipe float valve, and spare flappers or plungers for repair. See [float valves](/c/oilfield-float-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained) for how drill pipe float valves fit the string."
+        },
+        {
+          "slot": "I",
+          "q": "How should the size 2F-3R drill pipe float valve be run in the string?",
+          "a": "If more than one size 2F-3R drill pipe float valve runs in the same string, space them apart. Choose a ported model when you need to read shut-in drill pipe pressure or want the string to fill partly while running in."
+        },
+        {
+          "slot": "K",
+          "q": "How does the size 2F-3R drill pipe float valve differ from the size 3-1/2 IF valve?",
+          "a": "The size 2F-3R drill pipe float valve fits 3-1/2″ API Reg and 2-7/8″ API IF (box × pin) subs, while the [size 3-1/2 IF valve](/p/drill-pipe-float-valve-size-3-1-2-if) fits a different connection and has a different valve outside diameter. Choose the size from the sub connection, then the model."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the size 2F-3R drill pipe float valve used?",
+          "a": "The size 2F-3R drill pipe float valve is used in the drill string just above the bit, in drilling and well-control work where backflow through the string must be stopped. See [float valves](/c/oilfield-float-valves)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the size 2F-3R drill pipe float valve?",
+          "a": "Yes. We list the size 2F-3R drill pipe float valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, model and sub connection through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "drill-pipe-float-valve-size-3-1-2-if",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a size 3-1/2 IF drill pipe float valve used for?",
+          "a": "A size 3-1/2 IF drill pipe float valve sits in the float sub or bit sub above the bit and stops drilling fluid and cuttings flowing back up the string when circulation stops, when connections are made, and in a kick. This valve fits 3-1/2″ API IF and 4″ API FH float subs and is listed as the Forum Model G flapper valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which sub connections does the size 3-1/2 IF drill pipe float valve fit?",
+          "a": "The size 3-1/2 IF drill pipe float valve fits float or bit subs cut with 3-1/2″ API IF and 4″ API FH connections. Check the sub connection and the recess dimensions before ordering: valve OD 3-1/8 in, sub recess 3-5/32 in, baffle plate recess 2-11/16 in."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the size 3-1/2 IF drill pipe float valve?",
+          "a": "The size 3-1/2 IF drill pipe float valve has valve OD 3-1/8 in, sub recess 3-5/32 in, baffle plate recess 2-11/16 in. The recess in the sub is the valve outside diameter plus 1/32 in. Send the sub drawing on the RFQ if the recess is not standard."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the size 3-1/2 IF drill pipe float valve rated for?",
+          "a": "The listing gives 7,500 psi working pressure for the size 3-1/2 IF drill pipe float valve, which is Forum's rating for its Model F and G valves. We confirm the rating of other makes on the quotation, so state the make and the differential pressure you expect."
+        },
+        {
+          "slot": "F",
+          "q": "What models does the size 3-1/2 IF drill pipe float valve come in?",
+          "a": "The listing gives Model G (flapper). Plunger valves have a spring-loaded plunger for positive shut-off, while flapper valves swing fully clear for an unrestricted bore. Ported models allow partial fill-up and pressure readings."
+        },
+        {
+          "slot": "C",
+          "q": "Which makes are listed for the size 3-1/2 IF drill pipe float valve?",
+          "a": "The size 3-1/2 IF drill pipe float valve is listed from Forum, with part or cage numbers 480133600. Baker-pattern valves of the same size and model interchange in the same sub, and we confirm the match against your sub connection on the quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the size 3-1/2 IF drill pipe float valve?",
+          "a": "We supply the size 3-1/2 IF drill pipe float valve new to the size, model and make on your RFQ, and can quote the float sub and repair parts with it. The listing gives no product standard, so ask for the material certificate and dimensional report you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What else do I order with the size 3-1/2 IF drill pipe float valve?",
+          "a": "Order the 3-1/2″ API IF and 4″ API FH float sub or bit sub that holds the size 3-1/2 IF drill pipe float valve, and spare flappers or plungers for repair. See [float valves](/c/oilfield-float-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained) for how drill pipe float valves fit the string."
+        },
+        {
+          "slot": "I",
+          "q": "How should the size 3-1/2 IF drill pipe float valve be run in the string?",
+          "a": "If more than one size 3-1/2 IF drill pipe float valve runs in the same string, space them apart. Choose a ported model when you need to read shut-in drill pipe pressure or want the string to fill partly while running in."
+        },
+        {
+          "slot": "K",
+          "q": "How does the size 3-1/2 IF drill pipe float valve differ from the size 2F-3R valve?",
+          "a": "The size 3-1/2 IF drill pipe float valve fits 3-1/2″ API IF and 4″ API FH subs, while the [size 2F-3R valve](/p/drill-pipe-float-valve-size-2f-3r) fits a different connection and has a different valve outside diameter. Choose the size from the sub connection, then the model."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the size 3-1/2 IF drill pipe float valve used?",
+          "a": "The size 3-1/2 IF drill pipe float valve is used in the drill string just above the bit, in drilling and well-control work where backflow through the string must be stopped. See [float valves](/c/oilfield-float-valves)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the size 3-1/2 IF drill pipe float valve?",
+          "a": "Yes. We list the size 3-1/2 IF drill pipe float valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, model and sub connection through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "drill-pipe-float-valve-size-4f",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a size 4F drill pipe float valve used for?",
+          "a": "A size 4F drill pipe float valve sits in the float sub or bit sub above the bit and stops drilling fluid and cuttings flowing back up the string when circulation stops, when connections are made, and in a kick. This valve fits 4-1/2″ API FH and 4″ API IF float subs, as a Model G flapper from Forum and Baker."
+        },
+        {
+          "slot": "D",
+          "q": "Which sub connections does the size 4F drill pipe float valve fit?",
+          "a": "The size 4F drill pipe float valve fits float or bit subs cut with 4-1/2″ API FH and 4″ API IF connections. Check the sub connection and the recess dimensions before ordering: valve OD 3-21/32 in, sub recess 3-11/16 in, baffle plate recess 3-1/4 in, length 12 in."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the size 4F drill pipe float valve?",
+          "a": "The size 4F drill pipe float valve has valve OD 3-21/32 in, sub recess 3-11/16 in, baffle plate recess 3-1/4 in, length 12 in and Model G 2-3/16 in bore. The recess in the sub is the valve outside diameter plus 1/32 in. Send the sub drawing on the RFQ if the recess is not standard."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the size 4F drill pipe float valve rated for?",
+          "a": "The listing gives 7,500 psi working pressure for the size 4F drill pipe float valve, which is Forum's rating for its Model F and G valves. We confirm the rating of other makes on the quotation, so state the make and the differential pressure you expect."
+        },
+        {
+          "slot": "F",
+          "q": "What models does the size 4F drill pipe float valve come in?",
+          "a": "The listing gives Model G (flapper). Plunger valves have a spring-loaded plunger for positive shut-off, while flapper valves swing fully clear for an unrestricted bore. Ported models allow partial fill-up and pressure readings."
+        },
+        {
+          "slot": "C",
+          "q": "Which makes are listed for the size 4F drill pipe float valve?",
+          "a": "The size 4F drill pipe float valve is listed from Forum and Baker. Baker-pattern valves of the same size and model interchange in the same sub, and we confirm the match against your sub connection on the quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the size 4F drill pipe float valve?",
+          "a": "We supply the size 4F drill pipe float valve new to the size, model and make on your RFQ, and can quote the float sub and repair parts with it. The listing gives no product standard, so ask for the material certificate and dimensional report you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What else do I order with the size 4F drill pipe float valve?",
+          "a": "Order the 4-1/2″ API FH and 4″ API IF float sub or bit sub that holds the size 4F drill pipe float valve, and spare flappers or plungers for repair. See [float valves](/c/oilfield-float-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained) for how drill pipe float valves fit the string."
+        },
+        {
+          "slot": "I",
+          "q": "How should the size 4F drill pipe float valve be run in the string?",
+          "a": "If more than one size 4F drill pipe float valve runs in the same string, space them apart. Choose a ported model when you need to read shut-in drill pipe pressure or want the string to fill partly while running in."
+        },
+        {
+          "slot": "K",
+          "q": "How does the size 4F drill pipe float valve differ from the size 4R valve?",
+          "a": "The size 4F drill pipe float valve fits 4-1/2″ API FH and 4″ API IF subs, while the [size 4R valve](/p/drill-pipe-float-valve-size-4r) fits a different connection and has a different valve outside diameter. Choose the size from the sub connection, then the model."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the size 4F drill pipe float valve used?",
+          "a": "The size 4F drill pipe float valve is used in the drill string just above the bit, in drilling and well-control work where backflow through the string must be stopped. See [float valves](/c/oilfield-float-valves)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the size 4F drill pipe float valve?",
+          "a": "Yes. We list the size 4F drill pipe float valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, model and sub connection through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "drill-pipe-float-valve-size-4r",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a size 4R drill pipe float valve used for?",
+          "a": "A size 4R drill pipe float valve sits in the float sub or bit sub above the bit and stops drilling fluid and cuttings flowing back up the string when circulation stops, when connections are made, and in a kick. This valve fits 4-1/2″ API Reg float subs, and is the only size here offered in plunger, ported and flapper models from four makes."
+        },
+        {
+          "slot": "D",
+          "q": "Which sub connections does the size 4R drill pipe float valve fit?",
+          "a": "The size 4R drill pipe float valve fits float or bit subs cut with 4-1/2″ API Reg connections. Check the sub connection and the recess dimensions before ordering: valve OD 3-15/32 in, sub recess 3-1/2 in, baffle plate recess 2-15/16 in, length 8-5/16 in."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the size 4R drill pipe float valve?",
+          "a": "The size 4R drill pipe float valve has valve OD 3-15/32 in, sub recess 3-1/2 in, baffle plate recess 2-15/16 in, length 8-5/16 in and Model F 2-5/16 in and Model G 1-31/32 in bore. The recess in the sub is the valve outside diameter plus 1/32 in. Send the sub drawing on the RFQ if the recess is not standard."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the size 4R drill pipe float valve rated for?",
+          "a": "The listing gives 7,500 psi working pressure for the size 4R drill pipe float valve, which is Forum's rating for its Model F and G valves. We confirm the rating of other makes on the quotation, so state the make and the differential pressure you expect."
+        },
+        {
+          "slot": "F",
+          "q": "What models does the size 4R drill pipe float valve come in?",
+          "a": "The listing gives Model FA (plunger, ported), Model G (flapper) and Model GA (flapper, ported). Plunger valves have a spring-loaded plunger for positive shut-off, while flapper valves swing fully clear for an unrestricted bore. Ported models allow partial fill-up and pressure readings."
+        },
+        {
+          "slot": "C",
+          "q": "Which makes are listed for the size 4R drill pipe float valve?",
+          "a": "The size 4R drill pipe float valve is listed from Drillmax, Baker, Forum and Oteco, with part or cage numbers 1540201, 14419500G, P14419500H and 130526. Baker-pattern valves of the same size and model interchange in the same sub, and we confirm the match against your sub connection on the quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the size 4R drill pipe float valve?",
+          "a": "We supply the size 4R drill pipe float valve new to the size, model and make on your RFQ, and can quote the float sub and repair parts with it. The listing gives no product standard, so ask for the material certificate and dimensional report you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What else do I order with the size 4R drill pipe float valve?",
+          "a": "Order the 4-1/2″ API Reg float sub or bit sub that holds the size 4R drill pipe float valve, and spare flappers or plungers for repair. See [float valves](/c/oilfield-float-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained) for how drill pipe float valves fit the string."
+        },
+        {
+          "slot": "I",
+          "q": "How should the size 4R drill pipe float valve be run in the string?",
+          "a": "If more than one size 4R drill pipe float valve runs in the same string, space them apart. Choose a ported model when you need to read shut-in drill pipe pressure or want the string to fill partly while running in."
+        },
+        {
+          "slot": "K",
+          "q": "How does the size 4R drill pipe float valve differ from the size 4F valve?",
+          "a": "The size 4R drill pipe float valve fits 4-1/2″ API Reg subs, while the [size 4F valve](/p/drill-pipe-float-valve-size-4f) fits a different connection and has a different valve outside diameter. Choose the size from the sub connection, then the model."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the size 4R drill pipe float valve used?",
+          "a": "The size 4R drill pipe float valve is used in the drill string just above the bit, in drilling and well-control work where backflow through the string must be stopped. See [float valves](/c/oilfield-float-valves)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the size 4R drill pipe float valve?",
+          "a": "Yes. We list the size 4R drill pipe float valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, model and sub connection through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "drill-pipe-float-valve-size-5f-6r",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a size 5F-6R drill pipe float valve used for?",
+          "a": "A size 5F-6R drill pipe float valve sits in the float sub or bit sub above the bit and stops drilling fluid and cuttings flowing back up the string when circulation stops, when connections are made, and in a kick. This valve fits the large 6-5/8″ and 7-5/8″ API Reg subs and 5-1/2″ API FH and IF subs, in plunger and flapper models."
+        },
+        {
+          "slot": "D",
+          "q": "Which sub connections does the size 5F-6R drill pipe float valve fit?",
+          "a": "The size 5F-6R drill pipe float valve fits float or bit subs cut with 6-5/8″ API Reg, 7-5/8″ API Reg, 5-1/2″ API FH and 5-1/2″ API IF connections. Check the sub connection and the recess dimensions before ordering: valve OD 4-25/32 in, sub recess 4-13/16 in, baffle plate recess 4-9/32 in, length 11-3/4 in."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the size 5F-6R drill pipe float valve?",
+          "a": "The size 5F-6R drill pipe float valve has valve OD 4-25/32 in, sub recess 4-13/16 in, baffle plate recess 4-9/32 in, length 11-3/4 in and Model F 3-1/4 in and Model G 2-7/8 in bore. The recess in the sub is the valve outside diameter plus 1/32 in. Send the sub drawing on the RFQ if the recess is not standard."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the size 5F-6R drill pipe float valve rated for?",
+          "a": "The listing gives 7,500 psi working pressure for the size 5F-6R drill pipe float valve, which is Forum's rating for its Model F and G valves. We confirm the rating of other makes on the quotation, so state the make and the differential pressure you expect."
+        },
+        {
+          "slot": "F",
+          "q": "What models does the size 5F-6R drill pipe float valve come in?",
+          "a": "The listing gives Model FA (plunger, ported), Model G (flapper) and Model GA (flapper, ported). Plunger valves have a spring-loaded plunger for positive shut-off, while flapper valves swing fully clear for an unrestricted bore. Ported models allow partial fill-up and pressure readings."
+        },
+        {
+          "slot": "C",
+          "q": "Which makes are listed for the size 5F-6R drill pipe float valve?",
+          "a": "The size 5F-6R drill pipe float valve is listed from Baker-pattern manufacturers. Baker-pattern valves of the same size and model interchange in the same sub, and we confirm the match against your sub connection on the quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the size 5F-6R drill pipe float valve?",
+          "a": "We supply the size 5F-6R drill pipe float valve new to the size, model and make on your RFQ, and can quote the float sub and repair parts with it. The listing gives no product standard, so ask for the material certificate and dimensional report you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What else do I order with the size 5F-6R drill pipe float valve?",
+          "a": "Order the 6-5/8″ API Reg, 7-5/8″ API Reg, 5-1/2″ API FH and 5-1/2″ API IF float sub or bit sub that holds the size 5F-6R drill pipe float valve, and spare flappers or plungers for repair. See [float valves](/c/oilfield-float-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained) for how drill pipe float valves fit the string."
+        },
+        {
+          "slot": "I",
+          "q": "How should the size 5F-6R drill pipe float valve be run in the string?",
+          "a": "If more than one size 5F-6R drill pipe float valve runs in the same string, space them apart. Choose a ported model when you need to read shut-in drill pipe pressure or want the string to fill partly while running in."
+        },
+        {
+          "slot": "K",
+          "q": "How does the size 5F-6R drill pipe float valve differ from the size 5R valve?",
+          "a": "The size 5F-6R drill pipe float valve fits 6-5/8″ API Reg, 7-5/8″ API Reg, 5-1/2″ API FH and 5-1/2″ API IF subs, while the [size 5R valve](/p/drill-pipe-float-valve-size-5r) fits a different connection and has a different valve outside diameter. Choose the size from the sub connection, then the model."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the size 5F-6R drill pipe float valve used?",
+          "a": "The size 5F-6R drill pipe float valve is used in the drill string just above the bit, in drilling and well-control work where backflow through the string must be stopped. See [float valves](/c/oilfield-float-valves)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the size 5F-6R drill pipe float valve?",
+          "a": "Yes. We list the size 5F-6R drill pipe float valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, model and sub connection through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "drill-pipe-float-valve-size-5r",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a size 5R drill pipe float valve used for?",
+          "a": "A size 5R drill pipe float valve sits in the float sub or bit sub above the bit and stops drilling fluid and cuttings flowing back up the string when circulation stops, when connections are made, and in a kick. This valve fits 5-1/2″ API Reg and 4-1/2″ API IF float subs, as a Model G flapper from Baker and Forum."
+        },
+        {
+          "slot": "D",
+          "q": "Which sub connections does the size 5R drill pipe float valve fit?",
+          "a": "The size 5R drill pipe float valve fits float or bit subs cut with 5-1/2″ API Reg and 4-1/2″ API IF connections. Check the sub connection and the recess dimensions before ordering: valve OD 3-7/8 in, sub recess 3-29/32 in, baffle plate recess 3-3/8 in, length 9-3/4 in."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the size 5R drill pipe float valve?",
+          "a": "The size 5R drill pipe float valve has valve OD 3-7/8 in, sub recess 3-29/32 in, baffle plate recess 3-3/8 in, length 9-3/4 in and Model G 2-1/4 in bore. The recess in the sub is the valve outside diameter plus 1/32 in. Send the sub drawing on the RFQ if the recess is not standard."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the size 5R drill pipe float valve rated for?",
+          "a": "The listing gives 7,500 psi working pressure for the size 5R drill pipe float valve, which is Forum's rating for its Model F and G valves. We confirm the rating of other makes on the quotation, so state the make and the differential pressure you expect."
+        },
+        {
+          "slot": "F",
+          "q": "What models does the size 5R drill pipe float valve come in?",
+          "a": "The listing gives Model G (flapper). Plunger valves have a spring-loaded plunger for positive shut-off, while flapper valves swing fully clear for an unrestricted bore. Ported models allow partial fill-up and pressure readings."
+        },
+        {
+          "slot": "C",
+          "q": "Which makes are listed for the size 5R drill pipe float valve?",
+          "a": "The size 5R drill pipe float valve is listed from Baker and Forum. Baker-pattern valves of the same size and model interchange in the same sub, and we confirm the match against your sub connection on the quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the size 5R drill pipe float valve?",
+          "a": "We supply the size 5R drill pipe float valve new to the size, model and make on your RFQ, and can quote the float sub and repair parts with it. The listing gives no product standard, so ask for the material certificate and dimensional report you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What else do I order with the size 5R drill pipe float valve?",
+          "a": "Order the 5-1/2″ API Reg and 4-1/2″ API IF float sub or bit sub that holds the size 5R drill pipe float valve, and spare flappers or plungers for repair. See [float valves](/c/oilfield-float-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained) for how drill pipe float valves fit the string."
+        },
+        {
+          "slot": "I",
+          "q": "How should the size 5R drill pipe float valve be run in the string?",
+          "a": "If more than one size 5R drill pipe float valve runs in the same string, space them apart. Choose a ported model when you need to read shut-in drill pipe pressure or want the string to fill partly while running in."
+        },
+        {
+          "slot": "K",
+          "q": "How does the size 5R drill pipe float valve differ from the size 5F-6R valve?",
+          "a": "The size 5R drill pipe float valve fits 5-1/2″ API Reg and 4-1/2″ API IF subs, while the [size 5F-6R valve](/p/drill-pipe-float-valve-size-5f-6r) fits a different connection and has a different valve outside diameter. Choose the size from the sub connection, then the model."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the size 5R drill pipe float valve used?",
+          "a": "The size 5R drill pipe float valve is used in the drill string just above the bit, in drilling and well-control work where backflow through the string must be stopped. See [float valves](/c/oilfield-float-valves)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the size 5R drill pipe float valve?",
+          "a": "Yes. We list the size 5R drill pipe float valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, model and sub connection through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "drill-pipe-float-valve-size-6f",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a size 6F drill pipe float valve used for?",
+          "a": "A size 6F drill pipe float valve sits in the float sub or bit sub above the bit and stops drilling fluid and cuttings flowing back up the string when circulation stops, when connections are made, and in a kick. This valve fits the largest subs here, 8-5/8″ API Reg, 6-5/8″ API FH and 6-5/8″ API IF, as a Model F plunger valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which sub connections does the size 6F drill pipe float valve fit?",
+          "a": "The size 6F drill pipe float valve fits float or bit subs cut with 8-5/8″ API Reg, 6-5/8″ API FH and 6-5/8″ API IF connections. Check the sub connection and the recess dimensions before ordering: valve OD 5-11/16 in, sub recess 5-23/32 in, baffle plate recess 5-3/16 in, length 14-5/8 in."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the size 6F drill pipe float valve?",
+          "a": "The size 6F drill pipe float valve has valve OD 5-11/16 in, sub recess 5-23/32 in, baffle plate recess 5-3/16 in, length 14-5/8 in and Model F 4-1/8 in bore. The recess in the sub is the valve outside diameter plus 1/32 in. Send the sub drawing on the RFQ if the recess is not standard."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the size 6F drill pipe float valve rated for?",
+          "a": "The listing gives 7,500 psi working pressure for the size 6F drill pipe float valve, which is Forum's rating for its Model F and G valves. We confirm the rating of other makes on the quotation, so state the make and the differential pressure you expect."
+        },
+        {
+          "slot": "F",
+          "q": "What models does the size 6F drill pipe float valve come in?",
+          "a": "The listing gives Model F (plunger). Plunger valves have a spring-loaded plunger for positive shut-off, while flapper valves swing fully clear for an unrestricted bore. Ported models allow partial fill-up and pressure readings."
+        },
+        {
+          "slot": "C",
+          "q": "Which makes are listed for the size 6F drill pipe float valve?",
+          "a": "The size 6F drill pipe float valve is listed from Baker-pattern manufacturers. Baker-pattern valves of the same size and model interchange in the same sub, and we confirm the match against your sub connection on the quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the size 6F drill pipe float valve?",
+          "a": "We supply the size 6F drill pipe float valve new to the size, model and make on your RFQ, and can quote the float sub and repair parts with it. The listing gives no product standard, so ask for the material certificate and dimensional report you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What else do I order with the size 6F drill pipe float valve?",
+          "a": "Order the 8-5/8″ API Reg, 6-5/8″ API FH and 6-5/8″ API IF float sub or bit sub that holds the size 6F drill pipe float valve, and spare flappers or plungers for repair. See [float valves](/c/oilfield-float-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained) for how drill pipe float valves fit the string."
+        },
+        {
+          "slot": "I",
+          "q": "How should the size 6F drill pipe float valve be run in the string?",
+          "a": "If more than one size 6F drill pipe float valve runs in the same string, space them apart. Choose a ported model when you need to read shut-in drill pipe pressure or want the string to fill partly while running in."
+        },
+        {
+          "slot": "K",
+          "q": "How does the size 6F drill pipe float valve differ from the size 5F-6R valve?",
+          "a": "The size 6F drill pipe float valve fits 8-5/8″ API Reg, 6-5/8″ API FH and 6-5/8″ API IF subs, while the [size 5F-6R valve](/p/drill-pipe-float-valve-size-5f-6r) fits a different connection and has a different valve outside diameter. Choose the size from the sub connection, then the model."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the size 6F drill pipe float valve used?",
+          "a": "The size 6F drill pipe float valve is used in the drill string just above the bit, in drilling and well-control work where backflow through the string must be stopped. See [float valves](/c/oilfield-float-valves)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the size 6F drill pipe float valve?",
+          "a": "Yes. We list the size 6F drill pipe float valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, model and sub connection through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

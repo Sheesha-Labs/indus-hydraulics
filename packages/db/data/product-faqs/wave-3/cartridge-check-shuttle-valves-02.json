@@ -1,0 +1,1900 @@
+{
+  "family": "cartridge-check-shuttle-valves-02",
+  "extraFacts": [
+    {
+      "fact": "Sun Hydraulics builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, so every function in one series shares that cavity, and a larger series carries more flow. Series 0C and 1C parts fit industry-standard common cavities (SC-08, SC-10) instead of Sun's T-series cavities.",
+      "source": "Indus Hydraulics Sun Hydraulics listings (Sizes and cavities text), from the maker's catalogue"
+    },
+    {
+      "fact": "1 gpm = 3.785 L/min and 1 bar = 14.5038 psi; the listings state each capacity in both gpm and L/min and each pressure in both psi and bar.",
+      "source": "Unit conversion"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sun-hydraulics-cdab-back-back-check-shuttle-valve-signal-at-port-3",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CDAB back-to-back check / shuttle valve used for?",
+          "a": "The Sun Hydraulics CDAB is Two checks back to back in one cartridge, connecting the higher of two work ports to a common signal port. Hardened, lapped, guided poppets on a lightly stressed spring give very low leakage and long life."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CDAB back-to-back check / shuttle valve come in?",
+          "a": "It is built in one version, CDAB (series 1, T-11A cavity, 2.5 gpm or 10 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CDABXBN for the CDAB back-to-back check / shuttle valve?",
+          "a": "In CDABXBN, CDAB is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; B is 15 psi (1 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CDAB back-to-back check / shuttle valve?",
+          "a": "The CDAB is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CDAB back-to-back check / shuttle valve have?",
+          "a": "The CDAB is rated 2.5 gpm or 10 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CDAB back-to-back check / shuttle valve come with?",
+          "a": "Seal options on the CDAB are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CDABXBN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CDAB back-to-back check / shuttle valve fit?",
+          "a": "The CDAB screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CDAB back-to-back check / shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the CDAB. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CDAB back-to-back check / shuttle valve installed?",
+          "a": "Screw the CDAB into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CDAB back-to-back check / shuttle valve used?",
+          "a": "The CDAB is used for load-sensing and pilot circuits where the signal must not leak away between strokes. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CDAB or CKBG: what is the difference?",
+          "a": "The CDAB is the back-to-back check/shuttle valve and signal at port 3 version, rated 2.5 gpm or 10 L/min, while the [CKBG](/p/sun-hydraulics-ckbg-flush-mount-pilot-open-check-valve-sealed-pilot) is the flush mount pilot-to-open check valve and sealed pilot version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CDAB in Dubai?",
+          "a": "Yes, the Sun Hydraulics CDAB is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ckbg-flush-mount-pilot-open-check-valve-sealed-pilot",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CKBG pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CKBG is a pilot-to-open check lets oil flow freely from the valve side (port 2) into the actuator (port 1) and locks it there. It is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CKBG pilot-to-open check valve come in?",
+          "a": "It is built in one version, CKBG (series 0, T-163A cavity, 7.5 gpm or 30 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CKBGXCN for the CKBG pilot-to-open check valve?",
+          "a": "In CKBGXCN, CKBG is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adustable, Standard Hydraulic Pilot; C is 30 psi (2 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CKBG pilot-to-open check valve?",
+          "a": "The CKBG is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CKBG pilot-to-open check valve have?",
+          "a": "The CKBG is rated 7.5 gpm or 30 L/min in series 0, which screws into a T-163A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CKBG pilot-to-open check valve come with?",
+          "a": "Seal options on the CKBG are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CKBGXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CKBG pilot-to-open check valve fit?",
+          "a": "The CKBG screws into the T-163A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CKBG pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CKBG. Listed kits: series 0, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CKBG pilot-to-open check valve installed?",
+          "a": "Screw the CKBG into its T-163A cavity and tighten to the torque in the data. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CKBG pilot-to-open check valve used?",
+          "a": "The CKBG is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CKBG or CKCS: what is the difference?",
+          "a": "The CKBG is the flush mount pilot-to-open check valve version, rated 7.5 gpm or 30 L/min, while the [CKCS](/p/sun-hydraulics-ckcs-5-1-pilot-ratio-pilot-open-check-valve-sealed-pilot) is the 5:1 pilot ratio pilot-to-open check valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CKBG in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics CKBG at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ckcr-5-1-pilot-ratio-pilot-open-check-valve-standard-pilot",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CKCR pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CKCR is a pilot-to-open check lets oil flow freely from the valve side (port 2) into the actuator (port 1) and locks it there. It is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CKCR pilot-to-open check valve come in?",
+          "a": "It is built in one version, CKCR (series 1, T-11A cavity, 15 gpm or 60 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CKCRXCN for the CKCR pilot-to-open check valve?",
+          "a": "In CKCRXCN, CKCR is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Standard Pilot; C is 30 psi (2 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CKCR pilot-to-open check valve?",
+          "a": "The CKCR is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CKCR pilot-to-open check valve have?",
+          "a": "The CKCR is rated 15 gpm or 60 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CKCR pilot-to-open check valve come with?",
+          "a": "Seal options on the CKCR are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CKCRXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CKCR pilot-to-open check valve fit?",
+          "a": "The CKCR screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CKCR pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CKCR. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CKCR pilot-to-open check valve installed?",
+          "a": "Screw the CKCR into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CKCR pilot-to-open check valve used?",
+          "a": "The CKCR is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CKCR or CKCS: what is the difference?",
+          "a": "The CKCR is the standard pilot version, rated 15 gpm or 60 L/min, while the [CKCS](/p/sun-hydraulics-ckcs-5-1-pilot-ratio-pilot-open-check-valve-sealed-pilot) is the sealed pilot version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CKCR in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics CKCR in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ckcs-5-1-pilot-ratio-pilot-open-check-valve-sealed-pilot",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CKCS pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CKCS is a pilot-to-open check lets oil flow freely from the valve side (port 2) into the actuator (port 1) and locks it there. It is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CKCS pilot-to-open check valve come in?",
+          "a": "It is built in one version, CKCS (series 1, T-11A cavity, 15 gpm or 60 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CKCSXCN for the CKCS pilot-to-open check valve?",
+          "a": "In CKCSXCN, CKCS is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Standard Pilot; C is 30 psi (2 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CKCS pilot-to-open check valve?",
+          "a": "The CKCS is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CKCS pilot-to-open check valve have?",
+          "a": "The CKCS is rated 15 gpm or 60 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CKCS pilot-to-open check valve come with?",
+          "a": "Seal options on the CKCS are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in CKCSXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CKCS pilot-to-open check valve fit?",
+          "a": "The CKCS screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CKCS pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CKCS. Listed kits: series 1, Buna: 990011007, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CKCS pilot-to-open check valve installed?",
+          "a": "Screw the CKCS into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CKCS pilot-to-open check valve used?",
+          "a": "The CKCS is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CKCS or CKCR: what is the difference?",
+          "a": "The CKCS is the sealed pilot version, rated 15 gpm or 60 L/min, while the [CKCR](/p/sun-hydraulics-ckcr-5-1-pilot-ratio-pilot-open-check-valve-standard-pilot) is the standard pilot version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CKCS in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics CKCS in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-codd-20-1-ratio-pilot-close-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CODD pilot-to-close check valve used for?",
+          "a": "The Sun Hydraulics CODD is a spring-closed check that passes oil from port 1 to port 2 and blocks the reverse. It is used for accumulator discharge on shut-down, blocking a flow path while a function is pressurised, logic-style switching in pilot circuits."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CODD pilot-to-close check valve come in?",
+          "a": "It is built in one version, CODD (series 1, T-11A cavity). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CODDXDN for the CODD pilot-to-close check valve?",
+          "a": "In CODDXDN, CODD is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Standard Pilot; D is 50 psi (3,5 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CODD pilot-to-close check valve?",
+          "a": "The CODD is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CODD pilot-to-close check valve have?",
+          "a": "The listing gives no gpm flow rating for the CODD in the series 1 size, so send us your flow, pressure and duty and we confirm the series and version. A larger series carries more flow."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CODD pilot-to-close check valve come with?",
+          "a": "Seal options on the CODD are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in CODDXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CODD pilot-to-close check valve fit?",
+          "a": "The CODD screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CODD pilot-to-close check valve?",
+          "a": "Sun supplies a seal kit for every series of the CODD. Listed kits: series 1, Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CODD pilot-to-close check valve installed?",
+          "a": "Screw the CODD into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CODD pilot-to-close check valve used?",
+          "a": "The CODD is used for accumulator discharge on shut-down, blocking a flow path while a function is pressurised, logic-style switching in pilot circuits. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CODD or COFO: what is the difference?",
+          "a": "The CODD is the 20:1 ratio pilot-to-close check valve version, while the [COFO](/p/sun-hydraulics-cofo-120-1-ratio-pilot-close-check-valve) is the 120:1 ratio pilot-to-close check valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CODD in Dubai?",
+          "a": "Yes, the Sun Hydraulics CODD is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cofo-120-1-ratio-pilot-close-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics COFO pilot-to-close check valve used for?",
+          "a": "The Sun Hydraulics COFO is a spring-closed check that passes oil from port 1 to port 2 and blocks the reverse. It is used for accumulator discharge on shut-down, blocking a flow path while a function is pressurised, logic-style switching in pilot circuits."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics COFO pilot-to-close check valve come in?",
+          "a": "It is built in one version, COFO (series 2, T-2A cavity, 1 gpm (.05 inch) or 4 L/min. (1,3 mm)). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code COFOXDN for the COFO pilot-to-close check valve?",
+          "a": "In COFOXDN, COFO is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Standard Pilot; D is 60 psi (4 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics COFO pilot-to-close check valve?",
+          "a": "The COFO is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the COFO pilot-to-close check valve have?",
+          "a": "The COFO is rated 1 gpm (.05 inch) or 4 L/min. (1,3 mm) in series 2, which screws into a T-2A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics COFO pilot-to-close check valve come with?",
+          "a": "Seal options on the COFO are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in COFOXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics COFO pilot-to-close check valve fit?",
+          "a": "The COFO screws into the T-2A cavity for series 2, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics COFO pilot-to-close check valve?",
+          "a": "Sun supplies a seal kit for every series of the COFO. Listed kits: series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics COFO pilot-to-close check valve installed?",
+          "a": "Screw the COFO into its T-2A cavity and tighten to 45 - 50 lbf ft (61 - 68 Nm) on a 1 1/8 in. (28,6 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics COFO pilot-to-close check valve used?",
+          "a": "The COFO is used for accumulator discharge on shut-down, blocking a flow path while a function is pressurised, logic-style switching in pilot circuits. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics COFO or CODD: what is the difference?",
+          "a": "The COFO is the 120:1 ratio pilot-to-close check valve version, rated 1 gpm (.05 inch) or 4 L/min. (1,3 mm), while the [CODD](/p/sun-hydraulics-codd-20-1-ratio-pilot-close-check-valve) is the 20:1 ratio pilot-to-close check valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics COFO in Dubai?",
+          "a": "Yes, the Sun Hydraulics COFO is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cstt-single-ball-shuttle-valve-3000-psi-210-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CSTT single ball shuttle valve used for?",
+          "a": "The Sun Hydraulics CSTT is a ball shuttle connects whichever of two work ports is at the higher pressure to a common signal port and seals off the lower one. Hardened balls and seats tolerate dirt and wear well. This version At rest: 210 bar. Fits an industry-standard common cavity (SC-08 / SC-10 type) rather than a Sun T-series cavity. Rated to 3000 psi (210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CSTT single ball shuttle valve come in?",
+          "a": "It is built in one version, CSTT (series 0C, SC-08-03 cavity, 8 gpm or 30 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CSTTXXN for the CSTT single ball shuttle valve?",
+          "a": "The base model CSTT sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example CSTTXXN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CSTT single ball shuttle valve?",
+          "a": "The CSTT is rated 3000 psi or 210 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CSTT single ball shuttle valve have?",
+          "a": "The CSTT is rated 8 gpm or 30 L/min in series 0C, which screws into a SC-08-03 cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CSTT single ball shuttle valve come with?",
+          "a": "Seal options on the CSTT are N = Buna-N. The seal is chosen by a letter near the end of the model code, as in CSTTXXN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CSTT single ball shuttle valve fit?",
+          "a": "The CSTT screws into the SC-08-03 cavity for series 0C, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CSTT single ball shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the CSTT. Listed kits: series 0C, Buna: 99C083007. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CSTT single ball shuttle valve installed?",
+          "a": "Screw the CSTT into its SC-08-03 cavity and tighten to 21 - 23 lbf ft (28 - 31 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CSTT single ball shuttle valve used?",
+          "a": "The CSTT is used for load-sensing signal networks, brake release taken from either motor port, picking the higher of two pressures for a gauge or pilot. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CSTT or CDAB: what is the difference?",
+          "a": "The CSTT is the single ball shuttle valve and 3000 psi (210 bar) version, rated 8 gpm or 30 L/min, while the [CDAB](/p/sun-hydraulics-cdab-back-back-check-shuttle-valve-signal-at-port-3) is the back-to-back check/shuttle valve and signal at port 3 version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CSTT in Dubai?",
+          "a": "Yes. The Sun Hydraulics CSTT sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cxaa-free-flow-nose-side-check-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CXAA free-flow nose-to-side check valve used for?",
+          "a": "The Sun Hydraulics CXAA is a screw-in check cartridge that lets oil flow freely from the nose (port 1) out of the side (port 2) and seals against flow the other way. A hardened, lapped poppet gives near-zero leakage, and both ports are rated for 5,000 psi (350 bar). This version Pilot capacity: sized to switch pilot flows to larger valves, not main flows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CXAA free-flow nose-to-side check valve come in?",
+          "a": "It is built in one version, CXAA (series P, T-8A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CXAAXBN for the CXAA free-flow nose-to-side check valve?",
+          "a": "In CXAAXBN, CXAA is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; B is 15 psi (1 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CXAA free-flow nose-to-side check valve?",
+          "a": "The CXAA is rated 5,000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CXAA free-flow nose-to-side check valve have?",
+          "a": "The CXAA is rated 5 gpm or 20 L/min in series P, which screws into a T-8A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CXAA free-flow nose-to-side check valve come with?",
+          "a": "Seal options on the CXAA are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. EPDM seals are for phosphate-ester fluids only; petroleum oils and greases attack them. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CXAA free-flow nose-to-side check valve fit?",
+          "a": "The CXAA screws into the T-8A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CXAA free-flow nose-to-side check valve?",
+          "a": "Sun supplies a seal kit for every series of the CXAA. Listed kits: series P, Buna: 990608007, EPDM: 990608014, Viton: 990608006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CXAA free-flow nose-to-side check valve installed?",
+          "a": "Screw the CXAA into its T-8A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CXAA free-flow nose-to-side check valve used?",
+          "a": "The CXAA is used for pump outlet checks, load-holding checks in a manifold, isolating one branch of a circuit from another. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CXAA or CXBG: what is the difference?",
+          "a": "The CXAA is the pilot capacity version, rated 5 gpm or 20 L/min, while the [CXBG](/p/sun-hydraulics-cxbg-flush-mount-free-flow-nose-side-check-valve) is the flush mount version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CXAA in Dubai?",
+          "a": "Yes, the Sun Hydraulics CXAA is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cxbg-flush-mount-free-flow-nose-side-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CXBG free-flow nose-to-side check valve used for?",
+          "a": "The Sun Hydraulics CXBG is a screw-in check cartridge that lets oil flow freely from the nose (port 1) out of the side (port 2) and seals against flow the other way. A hardened, lapped poppet gives near-zero leakage, and both ports are rated for 5,000 psi (350 bar). This version Flush-mount body: sits level with the manifold face for a small footprint."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CXBG free-flow nose-to-side check valve come in?",
+          "a": "It is built in one version, CXBG (series 0, T-162A cavity, 10 gpm or 40 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CXBGXAN for the CXBG free-flow nose-to-side check valve?",
+          "a": "In CXBGXAN, CXBG is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; A is 4 psi (0,3 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CXBG free-flow nose-to-side check valve?",
+          "a": "The CXBG is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CXBG free-flow nose-to-side check valve have?",
+          "a": "The CXBG is rated 10 gpm or 40 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CXBG free-flow nose-to-side check valve come with?",
+          "a": "Seal options on the CXBG are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. EPDM seals are for phosphate-ester fluids only; petroleum oils and greases attack them. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CXBG free-flow nose-to-side check valve fit?",
+          "a": "The CXBG screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CXBG free-flow nose-to-side check valve?",
+          "a": "Sun supplies a seal kit for every series of the CXBG. Listed kits: series 0, Buna: 990162007, Polyurethane: 990162002, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CXBG free-flow nose-to-side check valve installed?",
+          "a": "Screw the CXBG into its T-162A cavity and tighten to the torque in the data. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CXBG free-flow nose-to-side check valve used?",
+          "a": "The CXBG is used for pump outlet checks, load-holding checks in a manifold, isolating one branch of a circuit from another. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CXBG or CXBM: what is the difference?",
+          "a": "The CXBG is the flush mount version, rated 10 gpm or 40 L/min, while the [CXBM](/p/sun-hydraulics-cxbm-insert-style-free-flow-nose-side-check-valve) is the insert style version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CXBG in Dubai?",
+          "a": "Yes, the Sun Hydraulics CXBG is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cxbm-insert-style-free-flow-nose-side-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CXBM free-flow nose-to-side check valve used for?",
+          "a": "The Sun Hydraulics CXBM is a screw-in check cartridge that lets oil flow freely from the nose (port 1) out of the side (port 2) and seals against flow the other way. A hardened, lapped poppet gives near-zero leakage, and both ports are rated for 5,000 psi (350 bar). This version Insert style: buried inside a manifold or actuator; study the cavity drawing closely before machining."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CXBM free-flow nose-to-side check valve come in?",
+          "a": "It is built in one version, CXBM (series 0, T-162DP cavity, 10 gpm or 40 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CXBMXAN for the CXBM free-flow nose-to-side check valve?",
+          "a": "In CXBMXAN, CXBM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; A is 4 psi (0,3 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CXBM free-flow nose-to-side check valve?",
+          "a": "The CXBM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the CXBM free-flow nose-to-side check valve have?",
+          "a": "The CXBM is rated 10 gpm or 40 L/min in series 0, which screws into a T-162DP cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CXBM free-flow nose-to-side check valve come with?",
+          "a": "Seal options on the CXBM are N = Buna-N, V = Viton, E = EPDM. EPDM seals are for phosphate-ester fluids only; petroleum oils and greases attack them. The seal is chosen by a letter near the end of the model code, as in CXBMXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CXBM free-flow nose-to-side check valve fit?",
+          "a": "The CXBM screws into the T-162DP cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CXBM free-flow nose-to-side check valve?",
+          "a": "Sun supplies a seal kit for every series of the CXBM. Listed kits: series 0, Buna: 990162007, EPDM: 990162014, Polyurethane: 990162002, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CXBM free-flow nose-to-side check valve installed?",
+          "a": "Screw the CXBM into its T-162DP cavity and tighten to the torque in the data. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CXBM free-flow nose-to-side check valve used?",
+          "a": "The CXBM is used for pump outlet checks, load-holding checks in a manifold, isolating one branch of a circuit from another. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CXBM or CXBG: what is the difference?",
+          "a": "The CXBM is the insert style version, rated 10 gpm or 40 L/min, while the [CXBG](/p/sun-hydraulics-cxbg-flush-mount-free-flow-nose-side-check-valve) is the flush mount version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CXBM in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics CXBM in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-daah-2-way-hydraulically-operated-spool-directional-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DAAH hydraulically operated pilot directional valve used for?",
+          "a": "The Sun Hydraulics DAAH is a small spool valve shifted by hydraulic pilot pressure against a return spring. It fits the T-8A pilot cavity, so it can sit in the end of a Sun main-stage or vent-to-operate cartridge and switch it from a remote pressure signal. This version Pilot capacity: sized to switch pilot flows to larger valves, not main flows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DAAH hydraulically operated pilot directional valve come in?",
+          "a": "It is built in one version, DAAH (series P, T-8A cavity, .25 gpm or 1 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DAAHBCN for the DAAH hydraulically operated pilot directional valve?",
+          "a": "In DAAHBCN, DAAH is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: B is External 4-SAE Port; C is Normally Closed; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DAAH hydraulically operated pilot directional valve?",
+          "a": "The DAAH is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DAAH hydraulically operated pilot directional valve have?",
+          "a": "The DAAH is rated .25 gpm or 1 L/min in series P, which screws into a T-8A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DAAH hydraulically operated pilot directional valve come with?",
+          "a": "Seal options on the DAAH are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in DAAHBCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DAAH hydraulically operated pilot directional valve fit?",
+          "a": "The DAAH screws into the T-8A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DAAH hydraulically operated pilot directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DAAH. Listed kits: series P, Buna: 990508007, Viton: 990508006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DAAH hydraulically operated pilot directional valve installed?",
+          "a": "Screw the DAAH into its T-8A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DAAH hydraulically operated pilot directional valve used?",
+          "a": "The DAAH is used for pressure-interlocked functions and remote hydraulic control of main-stage cartridges. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DAAH or DBAH: what is the difference?",
+          "a": "The DAAH is the 2-way version, rated .25 gpm or 1 L/min, while the [DBAH](/p/sun-hydraulics-dbah-3-way-hydraulically-operated-spool-directional-valve-pilot-capacity) is the 3-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DAAH in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics DAAH in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-daam-2-way-manually-operated-spool-directional-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DAAM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DAAM is a screw-in directional cartridge shifted by hand. A twist-lock or push operator moves the poppet or spool, so a function can be worked, overridden or isolated without electrical power. This version Pilot capacity: sized to switch pilot flows to larger valves, not main flows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DAAM manually operated directional valve come in?",
+          "a": "It is built in one version, DAAM (series P, T-8A cavity, .25 gpm or 1 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DAAMLCN for the DAAM manually operated directional valve?",
+          "a": "In DAAMLCN, DAAM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; C is Normally Closed; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DAAM manually operated directional valve?",
+          "a": "The DAAM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DAAM manually operated directional valve have?",
+          "a": "The DAAM is rated .25 gpm or 1 L/min in series P, which screws into a T-8A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DAAM manually operated directional valve come with?",
+          "a": "Seal options on the DAAM are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DAAMLCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DAAM manually operated directional valve fit?",
+          "a": "The DAAM screws into the T-8A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DAAM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DAAM. Listed kits: series P, Buna: 990108007, Viton: 990108006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DAAM manually operated directional valve installed?",
+          "a": "Screw the DAAM into its T-8A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DAAM manually operated directional valve used?",
+          "a": "The DAAM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DAAM or DBAM: what is the difference?",
+          "a": "The DAAM is the 2-way version, rated .25 gpm or 1 L/min, while the [DBAM](/p/sun-hydraulics-dbam-3-way-manually-operated-spool-directional-valve-pilot-capacity) is the 3-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DAAM in Dubai?",
+          "a": "Yes. The Sun Hydraulics DAAM sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-daap-2-way-air-operated-spool-directional-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DAAP air-operated pilot directional valve used for?",
+          "a": "The Sun Hydraulics DAAP is a small spool valve shifted by compressed air against a return spring. It fits the T-8A pilot cavity, so it can sit in the end of a Sun main-stage or vent-to-operate cartridge and control it from a pneumatic signal. This version Pilot capacity: sized to switch pilot flows to larger valves, not main flows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DAAP air-operated pilot directional valve come in?",
+          "a": "It is built in one version, DAAP (series P, T-8A cavity, .25 gpm or 1 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DAAPFCN for the DAAP air-operated pilot directional valve?",
+          "a": "In DAAPFCN, DAAP is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: F is External 1/8 NPTF Port; C is Normally Closed; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DAAP air-operated pilot directional valve?",
+          "a": "The DAAP is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DAAP air-operated pilot directional valve have?",
+          "a": "The DAAP is rated .25 gpm or 1 L/min in series P, which screws into a T-8A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DAAP air-operated pilot directional valve come with?",
+          "a": "Seal options on the DAAP are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in DAAPFCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DAAP air-operated pilot directional valve fit?",
+          "a": "The DAAP screws into the T-8A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DAAP air-operated pilot directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DAAP. Listed kits: series P, Buna: 990508007, Viton: 990508006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DAAP air-operated pilot directional valve installed?",
+          "a": "Screw the DAAP into its T-8A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DAAP air-operated pilot directional valve used?",
+          "a": "The DAAP is used for hydraulic functions controlled from pneumatic panels or air logic, and machines where electrics are unwanted. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DAAP or DBAP: what is the difference?",
+          "a": "The DAAP is the 2-way version, rated .25 gpm or 1 L/min, while the [DBAP](/p/sun-hydraulics-dbap-3-way-air-operated-spool-directional-valve-pilot-capacity) is the 3-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DAAP in Dubai?",
+          "a": "Yes. The Sun Hydraulics DAAP sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dbah-3-way-hydraulically-operated-spool-directional-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DBAH hydraulically operated pilot directional valve used for?",
+          "a": "The Sun Hydraulics DBAH is a small spool valve shifted by hydraulic pilot pressure against a return spring. It fits the T-8A pilot cavity, so it can sit in the end of a Sun main-stage or vent-to-operate cartridge and switch it from a remote pressure signal. This version Pilot capacity: sized to switch pilot flows to larger valves, not main flows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DBAH hydraulically operated pilot directional valve come in?",
+          "a": "It is built in one version, DBAH (series P, T-9A cavity, .25 gpm or 1 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DBAHBCN for the DBAH hydraulically operated pilot directional valve?",
+          "a": "In DBAHBCN, DBAH is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: B is External 4-SAE Port; C is Normally Open 1 to 3, Closed 1 to 2; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DBAH hydraulically operated pilot directional valve?",
+          "a": "The DBAH is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DBAH hydraulically operated pilot directional valve have?",
+          "a": "The DBAH is rated .25 gpm or 1 L/min in series P, which screws into a T-9A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DBAH hydraulically operated pilot directional valve come with?",
+          "a": "Seal options on the DBAH are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DBAHBCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DBAH hydraulically operated pilot directional valve fit?",
+          "a": "The DBAH screws into the T-9A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DBAH hydraulically operated pilot directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DBAH. Listed kits: series P, Buna: 990509007, Viton: 990509006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DBAH hydraulically operated pilot directional valve installed?",
+          "a": "Screw the DBAH into its T-9A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DBAH hydraulically operated pilot directional valve used?",
+          "a": "The DBAH is used for pressure-interlocked functions and remote hydraulic control of main-stage cartridges. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DBAH or DAAH: what is the difference?",
+          "a": "The DBAH is the 3-way version, rated .25 gpm or 1 L/min, while the [DAAH](/p/sun-hydraulics-daah-2-way-hydraulically-operated-spool-directional-valve-pilot-capacity) is the 2-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DBAH in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DBAH at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dbam-3-way-manually-operated-spool-directional-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DBAM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DBAM is a screw-in directional cartridge shifted by hand. A twist-lock or push operator moves the poppet or spool, so a function can be worked, overridden or isolated without electrical power. This version Pilot capacity: sized to switch pilot flows to larger valves, not main flows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DBAM manually operated directional valve come in?",
+          "a": "It is built in one version, DBAM (series P, T-9A cavity, .25 gpm or 1 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DBAMLCN for the DBAM manually operated directional valve?",
+          "a": "In DBAMLCN, DBAM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; C is Normally Open 1 to 3, Closed 1 to 2; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DBAM manually operated directional valve?",
+          "a": "The DBAM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DBAM manually operated directional valve have?",
+          "a": "The DBAM is rated .25 gpm or 1 L/min in series P, which screws into a T-9A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DBAM manually operated directional valve come with?",
+          "a": "Seal options on the DBAM are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in DBAMLCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DBAM manually operated directional valve fit?",
+          "a": "The DBAM screws into the T-9A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DBAM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DBAM. Listed kits: series P, Buna: 990109007, EPDM: 990009014, Viton: 990109006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DBAM manually operated directional valve installed?",
+          "a": "Screw the DBAM into its T-9A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DBAM manually operated directional valve used?",
+          "a": "The DBAM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DBAM or DAAM: what is the difference?",
+          "a": "The DBAM is the 3-way version, rated .25 gpm or 1 L/min, while the [DAAM](/p/sun-hydraulics-daam-2-way-manually-operated-spool-directional-valve-pilot-capacity) is the 2-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DBAM in Dubai?",
+          "a": "Yes, the Sun Hydraulics DBAM is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dbap-3-way-air-operated-spool-directional-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DBAP air-operated pilot directional valve used for?",
+          "a": "The Sun Hydraulics DBAP is a small spool valve shifted by compressed air against a return spring. It fits the T-8A pilot cavity, so it can sit in the end of a Sun main-stage or vent-to-operate cartridge and control it from a pneumatic signal. This version Pilot capacity: sized to switch pilot flows to larger valves, not main flows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DBAP air-operated pilot directional valve come in?",
+          "a": "It is built in one version, DBAP (series P, T-9A cavity, .25 gpm or 1 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DBAPFCN for the DBAP air-operated pilot directional valve?",
+          "a": "In DBAPFCN, DBAP is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: F is External 1/8 NPTF Port; C is Normally Open 1 to 3, Closed 1 to 2; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DBAP air-operated pilot directional valve?",
+          "a": "The DBAP is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DBAP air-operated pilot directional valve have?",
+          "a": "The DBAP is rated .25 gpm or 1 L/min in series P, which screws into a T-9A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DBAP air-operated pilot directional valve come with?",
+          "a": "Seal options on the DBAP are N = Buna-N, V = Viton, E = EPDM. Body options: /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DBAPFCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DBAP air-operated pilot directional valve fit?",
+          "a": "The DBAP screws into the T-9A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DBAP air-operated pilot directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DBAP. Listed kits: series P, Buna: 990509007, Viton: 990509006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DBAP air-operated pilot directional valve installed?",
+          "a": "Screw the DBAP into its T-9A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DBAP air-operated pilot directional valve used?",
+          "a": "The DBAP is used for hydraulic functions controlled from pneumatic panels or air logic, and machines where electrics are unwanted. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DBAP or DAAP: what is the difference?",
+          "a": "The DBAP is the 3-way version, rated .25 gpm or 1 L/min, while the [DAAP](/p/sun-hydraulics-daap-2-way-air-operated-spool-directional-valve-pilot-capacity) is the 2-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DBAP in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DBAP at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dldm-2-way-manually-operated-directional-spool-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DLDM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DLDM is a screw-in directional cartridge shifted by hand. A twist-lock or push operator moves the poppet or spool, so a function can be worked, overridden or isolated without electrical power."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DLDM manually operated directional valve come in?",
+          "a": "It is built in one version, DLDM (series 1, T-13A cavity, 12 gpm or 45 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DLDMLCN for the DLDM manually operated directional valve?",
+          "a": "In DLDMLCN, DLDM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; C is Normally Closed; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DLDM manually operated directional valve?",
+          "a": "The DLDM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DLDM manually operated directional valve have?",
+          "a": "The DLDM is rated 12 gpm or 45 L/min in series 1, which screws into a T-13A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DLDM manually operated directional valve come with?",
+          "a": "Seal options on the DLDM are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in DLDMLCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DLDM manually operated directional valve fit?",
+          "a": "The DLDM screws into the T-13A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DLDM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DLDM. Listed kits: series 1, Buna: 990413007, Polyurethane: 990413002, Viton: 990413006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DLDM manually operated directional valve installed?",
+          "a": "Screw the DLDM into its T-13A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DLDM manually operated directional valve used?",
+          "a": "The DLDM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DLDM or DMDM: what is the difference?",
+          "a": "The DLDM is the 2-way version, rated 12 gpm or 45 L/min, while the [DMDM](/p/sun-hydraulics-dmdm-3-way-manually-operated-directional-spool-valve) is the 3-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DLDM in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DLDM at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmdm-3-way-manually-operated-directional-spool-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DMDM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DMDM is a screw-in directional cartridge shifted by hand. A twist-lock or push operator moves the poppet or spool, so a function can be worked, overridden or isolated without electrical power."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DMDM manually operated directional valve come in?",
+          "a": "It is built in one version, DMDM (series 1, T-11A cavity, 12 gpm or 45 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DMDMLAN for the DMDM manually operated directional valve?",
+          "a": "In DMDMLAN, DMDM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; A is Normally Open 1 to 2, Closed 2 to 3; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DMDM manually operated directional valve?",
+          "a": "The DMDM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DMDM manually operated directional valve have?",
+          "a": "The DMDM is rated 12 gpm or 45 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DMDM manually operated directional valve come with?",
+          "a": "Seal options on the DMDM are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DMDMLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DMDM manually operated directional valve fit?",
+          "a": "The DMDM screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DMDM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DMDM. Listed kits: series 1, Buna: 990411007, Viton: 990411006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DMDM manually operated directional valve installed?",
+          "a": "Screw the DMDM into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DMDM manually operated directional valve used?",
+          "a": "The DMDM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DMDM or DLDM: what is the difference?",
+          "a": "The DMDM is the 3-way version, rated 12 gpm or 45 L/min, while the [DLDM](/p/sun-hydraulics-dldm-2-way-manually-operated-directional-spool-valve) is the 2-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DMDM in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics DMDM in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dndm-4-way-manually-operated-directional-spool-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DNDM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DNDM is a screw-in directional cartridge shifted by hand. A twist-lock or push operator moves the poppet or spool, so a function can be worked, overridden or isolated without electrical power."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DNDM manually operated directional valve come in?",
+          "a": "It is built in one version, DNDM (series 1, T-31A cavity, 10 gpm or 40 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DNDMLNN for the DNDM manually operated directional valve?",
+          "a": "In DNDMLNN, DNDM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; N is Through, Shift to Cross; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DNDM manually operated directional valve?",
+          "a": "The DNDM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 in³/min.@3000 psi (160 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DNDM manually operated directional valve have?",
+          "a": "The DNDM is rated 10 gpm or 40 L/min in series 1, which screws into a T-31A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DNDM manually operated directional valve come with?",
+          "a": "Seal options on the DNDM are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in DNDMLNN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DNDM manually operated directional valve fit?",
+          "a": "The DNDM screws into the T-31A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DNDM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DNDM. Listed kits: series 1, Buna: 990431007, EPDM: 990431014, Viton: 990431006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DNDM manually operated directional valve installed?",
+          "a": "Screw the DNDM into its T-31A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DNDM manually operated directional valve used?",
+          "a": "The DNDM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DNDM or DLDM: what is the difference?",
+          "a": "The DNDM is the 4-way version, rated 10 gpm or 40 L/min, while the [DLDM](/p/sun-hydraulics-dldm-2-way-manually-operated-directional-spool-valve) is the 2-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DNDM in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DNDM at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drax-2-way-pilot-shift-directional-valve-drain-port-4-normally-closed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRAX pilot-to-shift directional spool valve used for?",
+          "a": "The Sun Hydraulics DRAX is a spool directional cartridge moved by hydraulic pilot pressure instead of a solenoid. It is used for main-stage directional control piloted from a joystick, a remote pilot valve or a small solenoid pilot."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRAX pilot-to-shift directional spool valve come in?",
+          "a": "It is built in one version, DRAX (series 1, T-21A cavity, .5 gpm or 2 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRAXLAN for the DRAX pilot-to-shift directional spool valve?",
+          "a": "In DRAXLAN, DRAX is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 1000 - 3000 psi (70 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRAX pilot-to-shift directional spool valve?",
+          "a": "The DRAX is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 20 drops/min. (20 drops/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRAX pilot-to-shift directional spool valve have?",
+          "a": "The DRAX is rated .5 gpm or 2 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRAX pilot-to-shift directional spool valve come with?",
+          "a": "Seal options on the DRAX are L = Extended Temp. Buna, N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in DRAXLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRAX pilot-to-shift directional spool valve fit?",
+          "a": "The DRAX screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRAX pilot-to-shift directional spool valve?",
+          "a": "Sun supplies a seal kit for every series of the DRAX. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRAX pilot-to-shift directional spool valve installed?",
+          "a": "Screw the DRAX into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRAX pilot-to-shift directional spool valve used?",
+          "a": "The DRAX is used for main-stage directional control piloted from a joystick, a remote pilot valve or a small solenoid pilot. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRAX or DRAY: what is the difference?",
+          "a": "The DRAX is the normally closed version, rated .5 gpm or 2 L/min, while the [DRAY](/p/sun-hydraulics-dray-2-way-pilot-shift-directional-valve-drain-port-4-normally-open) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRAX in Dubai?",
+          "a": "Yes. The Sun Hydraulics DRAX sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dray-2-way-pilot-shift-directional-valve-drain-port-4-normally-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRAY pilot-to-shift directional spool valve used for?",
+          "a": "The Sun Hydraulics DRAY is a spool directional cartridge moved by hydraulic pilot pressure instead of a solenoid. It is used for main-stage directional control piloted from a joystick, a remote pilot valve or a small solenoid pilot."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRAY pilot-to-shift directional spool valve come in?",
+          "a": "It is built in one version, DRAY (series 1, T-21A cavity, .5 gpm or 2 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRAYLAN for the DRAY pilot-to-shift directional spool valve?",
+          "a": "In DRAYLAN, DRAY is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 1000 - 3000 psi (70 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRAY pilot-to-shift directional spool valve?",
+          "a": "The DRAY is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 20 drops/min. (20 drops/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRAY pilot-to-shift directional spool valve have?",
+          "a": "The DRAY is rated .5 gpm or 2 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRAY pilot-to-shift directional spool valve come with?",
+          "a": "Seal options on the DRAY are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in DRAYLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRAY pilot-to-shift directional spool valve fit?",
+          "a": "The DRAY screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRAY pilot-to-shift directional spool valve?",
+          "a": "Sun supplies a seal kit for every series of the DRAY. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRAY pilot-to-shift directional spool valve installed?",
+          "a": "Screw the DRAY into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRAY pilot-to-shift directional spool valve used?",
+          "a": "The DRAY is used for main-stage directional control piloted from a joystick, a remote pilot valve or a small solenoid pilot. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRAY or DRAX: what is the difference?",
+          "a": "The DRAY is the normally open version, rated .5 gpm or 2 L/min, while the [DRAX](/p/sun-hydraulics-drax-2-way-pilot-shift-directional-valve-drain-port-4-normally-closed) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRAY in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics DRAY in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drba-2-way-direct-acting-directional-valve-internal-drain-port-3-normally-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBA direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBA is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It can switch a moderate flow itself or pilot a larger directional or logic cartridge. Being direct-acting, it leaks little and uses almost no pilot flow. This version Normally open. The spring chamber drains internally to port 3, so pressure at port 3 adds to the setting."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBA direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBA (series 1, T-11A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBALAN for the DRBA direct-acting pressure-operated directional valve?",
+          "a": "In DRBALAN, DRBA is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 500 - 3000 psi (35 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBA direct-acting pressure-operated directional valve?",
+          "a": "The DRBA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBA direct-acting pressure-operated directional valve have?",
+          "a": "The DRBA is rated 7 gpm or 28 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBA direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBA are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DRBALAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBA direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBA screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBA direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBA. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBA direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBA into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBA direct-acting pressure-operated directional valve used?",
+          "a": "The DRBA is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBA or DRBB: what is the difference?",
+          "a": "The DRBA is the normally open version, rated 7 gpm or 28 L/min, while the [DRBB](/p/sun-hydraulics-drbb-2-way-direct-acting-directional-valve-internal-drain-port-3-normally-closed) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBA in Dubai?",
+          "a": "Yes, the Sun Hydraulics DRBA is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbb-2-way-direct-acting-directional-valve-internal-drain-port-3-normally-closed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBB direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBB is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It can switch a moderate flow itself or pilot a larger directional or logic cartridge. Being direct-acting, it leaks little and uses almost no pilot flow. This version Normally closed. The spring chamber drains internally to port 3, so pressure at port 3 adds to the setting."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBB direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBB (series 1, T-11A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBBLAN for the DRBB direct-acting pressure-operated directional valve?",
+          "a": "In DRBBLAN, DRBB is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 500 - 3000 psi (35 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBB direct-acting pressure-operated directional valve?",
+          "a": "The DRBB is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBB direct-acting pressure-operated directional valve have?",
+          "a": "The DRBB is rated 7 gpm or 28 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBB direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBB are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DRBBLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBB direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBB screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBB direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBB. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBB direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBB into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBB direct-acting pressure-operated directional valve used?",
+          "a": "The DRBB is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBB or DRBA: what is the difference?",
+          "a": "The DRBB is the normally closed version, rated 7 gpm or 28 L/min, while the [DRBA](/p/sun-hydraulics-drba-2-way-direct-acting-directional-valve-internal-drain-port-3-normally-open) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBB in Dubai?",
+          "a": "Yes, the Sun Hydraulics DRBB is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbd-3-way-direct-acting-directional-valve-internal-drain-port-3-1-2-open-3-blocked",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBD direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBD is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It can switch a moderate flow itself or pilot a larger directional or logic cartridge. Being direct-acting, it leaks little and uses almost no pilot flow. This version At rest: 1 to 2 open; 3 blocked. The spring chamber drains internally to port 3, so pressure at port 3 adds to the setting."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBD direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBD (series 1, T-11A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBDLAN for the DRBD direct-acting pressure-operated directional valve?",
+          "a": "In DRBDLAN, DRBD is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 500 - 3000 psi (35 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBD direct-acting pressure-operated directional valve?",
+          "a": "The DRBD is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBD direct-acting pressure-operated directional valve have?",
+          "a": "The DRBD is rated 7 gpm or 28 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBD direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBD are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DRBDLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBD direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBD screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBD direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBD. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBD direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBD into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBD direct-acting pressure-operated directional valve used?",
+          "a": "The DRBD is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBD or DRBA: what is the difference?",
+          "a": "The DRBD is the 3-way, internal drain to port 3 (1 to 2 open and 3 blocked) version, rated 7 gpm or 28 L/min, while the [DRBA](/p/sun-hydraulics-drba-2-way-direct-acting-directional-valve-internal-drain-port-3-normally-open) is the 2-way, internal drain to port 3 and normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBD in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics DRBD in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbm-2-way-direct-acting-directional-valve-drain-port-4-normally-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBM direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBM is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBM direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBM (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBMLAN for the DRBM direct-acting pressure-operated directional valve?",
+          "a": "In DRBMLAN, DRBM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 500 - 3000 psi (35 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBM direct-acting pressure-operated directional valve?",
+          "a": "The DRBM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBM direct-acting pressure-operated directional valve have?",
+          "a": "The DRBM is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBM direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBM are N = Buna-N, V = Viton. Body options: /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DRBMLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBM direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBM screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBM direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBM. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBM direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBM into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBM direct-acting pressure-operated directional valve used?",
+          "a": "The DRBM is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBM or DRBN: what is the difference?",
+          "a": "The DRBM is the 2-way and normally open version, rated 7 gpm or 28 L/min, while the [DRBN](/p/sun-hydraulics-drbn-3-way-direct-acting-directional-valve-drain-port-4-normally-closed) is the 3-way and normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBM in Dubai?",
+          "a": "Yes. The Sun Hydraulics DRBM sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbmx-2-way-direct-acting-fixed-setting-directional-valve-drain-port-4-normally-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBMX is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBMX (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBMXFN for the DRBMX direct-acting pressure-operated directional valve?",
+          "a": "In DRBMXFN, DRBMX is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: F is 100 psi (7 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve?",
+          "a": "The DRBMX is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBMX direct-acting pressure-operated directional valve have?",
+          "a": "The DRBMX is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBMX are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DRBMXFN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBMX screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBMX. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBMX into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBMX direct-acting pressure-operated directional valve used?",
+          "a": "The DRBMX is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBMX or DRBNX: what is the difference?",
+          "a": "The DRBMX is the normally open version, rated 7 gpm or 28 L/min, while the [DRBNX](/p/sun-hydraulics-drbnx-2-way-direct-acting-fixed-setting-directional-valve-drain-port-4-normally-closed) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBMX in Dubai?",
+          "a": "Yes, the Sun Hydraulics DRBMX is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbn-3-way-direct-acting-directional-valve-drain-port-4-normally-closed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBN direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBN is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBN direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBN (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBNLAN for the DRBN direct-acting pressure-operated directional valve?",
+          "a": "In DRBNLAN, DRBN is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 500 - 3000 psi (35 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBN direct-acting pressure-operated directional valve?",
+          "a": "The DRBN is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBN direct-acting pressure-operated directional valve have?",
+          "a": "The DRBN is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBN direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBN are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DRBNLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBN direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBN screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBN direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBN. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBN direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBN into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBN direct-acting pressure-operated directional valve used?",
+          "a": "The DRBN is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBN or DRBM: what is the difference?",
+          "a": "The DRBN is the 3-way and normally closed version, rated 7 gpm or 28 L/min, while the [DRBM](/p/sun-hydraulics-drbm-2-way-direct-acting-directional-valve-drain-port-4-normally-open) is the 2-way and normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBN in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DRBN at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbnx-2-way-direct-acting-fixed-setting-directional-valve-drain-port-4-normally-closed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBNX is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBNX (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBNXFN for the DRBNX direct-acting pressure-operated directional valve?",
+          "a": "In DRBNXFN, DRBNX is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: F is 100 psi (7 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve?",
+          "a": "The DRBNX is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBNX direct-acting pressure-operated directional valve have?",
+          "a": "The DRBNX is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBNX are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DRBNXFN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBNX screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBNX. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBNX into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBNX direct-acting pressure-operated directional valve used?",
+          "a": "The DRBNX is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBNX or DRBMX: what is the difference?",
+          "a": "The DRBNX is the normally closed version, rated 7 gpm or 28 L/min, while the [DRBMX](/p/sun-hydraulics-drbmx-2-way-direct-acting-fixed-setting-directional-valve-drain-port-4-normally-open) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBNX in Dubai?",
+          "a": "Yes, the Sun Hydraulics DRBNX is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbox-3-way-direct-acting-fixed-setting-directional-valve-drain-port-4-1-blocked-2-3-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBOX is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBOX (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBOXFN for the DRBOX direct-acting pressure-operated directional valve?",
+          "a": "In DRBOXFN, DRBOX is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: F is 100 psi (7 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve?",
+          "a": "The DRBOX is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBOX direct-acting pressure-operated directional valve have?",
+          "a": "The DRBOX is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBOX are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DRBOXFN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBOX screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBOX. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBOX into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBOX direct-acting pressure-operated directional valve used?",
+          "a": "The DRBOX is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBOX or DRBMX: what is the difference?",
+          "a": "The DRBOX is the 3-way, drain to port 4 (1 blocked and 2 to 3 open) version, rated 7 gpm or 28 L/min, while the [DRBMX](/p/sun-hydraulics-drbmx-2-way-direct-acting-fixed-setting-directional-valve-drain-port-4-normally-open) is the 2-way, drain to port 4 and normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBOX in Dubai?",
+          "a": "Yes, the Sun Hydraulics DRBOX is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

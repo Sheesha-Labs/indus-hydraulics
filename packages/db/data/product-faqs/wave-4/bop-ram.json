@@ -1,0 +1,791 @@
+{
+  "family": "bop-ram",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "coiled-tubing-quad-bop-5-1-8-10-000-psi-wp-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi used for?",
+          "a": "A coiled tubing quad BOP carries four ram cavities in one body, typically blind ram on top, then shear ram, slip ram and pipe ram at the bottom. It sits below the CT injector head and above the wellhead riser, and this 5-1/8\" 10,000 psi unit is for sour-service CT well intervention."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi?",
+          "a": "The Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi is rated 10,000 psi cold working pressure, 10K class, at a 5-1/8\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi have?",
+          "a": "This unit has a 5-1/8\" vertical bore with API 6A 5-1/8\" 10K connections: studded top (with CT-stripper integration) and flanged bottom. Approximate transport weight is 3,200 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi suitable for sour (H2S) service?",
+          "a": "Yes, the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi equivalent to?",
+          "a": "The Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi is listed as a matched-pressure equivalent to Cameron CT 5-1/8\" 10K Quad, NOV CT Quad 5-1/8\" 10K, Hydril CT 5-1/8\" 10K Quad and Jereh CT Quad 5-1/8\" 10K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi?",
+          "a": "The Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi for a complete stack?",
+          "a": "The four cavities are typically blind (top), shear, slip and pipe (bottom). A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi used?",
+          "a": "It is used for coiled tubing stimulation (acid, fracturing, scale removal), CT cleanout and milling on producing wells, and CT logging and intervention, on Aramco, ADNOC and KOC CT campaigns."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi differ from its nearest sibling?",
+          "a": "The snubbing stack also carries four cavities but is arranged as upper stripper, lower stripper, safety ram and pipe ram for moving pipe under pressure, whereas the CT quad is blind, shear, slip and pipe for coiled tubing. See the [Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams](/p/snubbing-bop-stack-7-1-16-10-000-psi-wp-with-stripper-rams-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi tested before shipping?",
+          "a": "Each 5-1/8\" 10,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi?",
+          "a": "The listing states a lead time of 90 days for the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi WP, Sour Service (NACE MR0175) available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi WP, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 90 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "ram-blowout-preventer-api-16a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 16A ram blowout preventer used for?",
+          "a": "An API 16A ram blowout preventer is the core of the well-control stack: hydraulic rams close on the pipe, on the open hole or shear through the string to shut the well in on a kick. For deep wells, two ram preventers are usually combined with an annular preventer and, where the well is drilled under pressure, a rotating device."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the Indus API 16A ram BOP cover?",
+          "a": "The published range is 7-1/16\" to 30\" nominal bore and 5,000 to 20,000 psi working pressure, in single or double ram bodies. Each unit is configured to the job, and the general arrangement drawing and data book index come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which rams should an API 16A ram BOP stack carry?",
+          "a": "Usually pipe rams sized to the drill pipe, or variable-bore rams for tapered strings, plus blind or blind-shear rams, with an annular preventer above. The well programme and regulator set the arrangement. See [ram blocks and assemblies](/c/bop-ram-blocks) and [annular BOPs](/c/bop-annular)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and material classes does the API 16A ram BOP offer?",
+          "a": "The listing gives temperature ratings T-75/250 to T-0/350 (-59 °C to 177 °C), API 6A material classes DD, EE, FF and HH, and PSL 1 to 4 with PR1 or PR2. Hydrostatic tests follow API 6A / 16A / 16C at the PSL ordered, so state the class on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "Can an API 16A ram BOP be used in sour wells?",
+          "a": "Yes, in material classes DD to HH to NACE MR0175 / ISO 15156. Send the H2S content, temperature and fluids on the RFQ so the correct material class and PSL are quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Indus ram blowout preventer made to API 16A?",
+          "a": "Yes. It is built to API 16A and API 6A, and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Hydrostatic tests follow API 6A / 16A / 16C at the PSL ordered."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an API 16A ram blowout preventer?",
+          "a": "You receive API 6A documentation for the PSL ordered: material certificates, heat-treatment and NDE records, the hydrostatic test record (and gas test at PSL 3G and 4), and the dimensional report. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What operates an API 16A ram BOP and what connects to it?",
+          "a": "The ram BOP is hydraulic with manual locks, with hydraulic bonnet cylinders and API 6A flanged or studded ends and side outlets for choke and kill lines. See [BOP control units](/c/bop-control-units), [choke and kill manifolds](/c/bop-choke-kill) and [drilling spools](/c/bop-spools-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a ram BOP quotation?",
+          "a": "Send the working pressure, bore sizes, end connections, material and temperature class, PSL, the fluids and H2S content, and the layout or P&ID. We review the data sheet before quoting and flag anything that needs clarifying, then list any deviation from an operator specification before the order is placed."
+        },
+        {
+          "slot": "J",
+          "q": "What is an API 16A ram BOP used for in drilling and workover?",
+          "a": "It is used for drilling, workover, completion and well testing. The range of sizes, 7-1/16\" to 30\", covers small-bore workover stacks and large-bore drilling stacks, and the fixed Cameron-style units in [Ram BOPs](/c/bop-ram) cover the common GCC configurations."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy a fixed-size ram BOP listing or the configurable API 16A ram BOP?",
+          "a": "Buy a fixed listing when your size and class match, such as the [13-5/8\" 10,000 psi double ram BOP](/p/ram-bop-cameron-u-style-13-5-8-10-000-psi-wp-double-cavity-sour-service-nace-mr0175). The configurable API 16A range covers 7-1/16\" to 30\" and 5,000 to 20,000 psi built to order, including sizes the fixed listings do not."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 16A ram blowout preventer?",
+          "a": "Yes. We list the API 16A ram BOP as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Most are configured to the order specification, so send the bore, pressure class and cavity arrangement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ram-bop-cameron-u-style-11-10-000-psi-wp-double-cavity-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity used for?",
+          "a": "The Cameron U style 11\" 10,000 psi double ram BOP is a two-cavity ram preventer for sour-service workover and slim-hole infill drilling. Each cavity takes a ram block (pipe, variable bore or blind-shear), and the body is forged AISI 4130 alloy steel with NACE MR0175 hardness control."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity is rated 10,000 psi cold working pressure, 10K class, at a 11\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity have?",
+          "a": "This unit has a 11\" vertical bore with API 6A 11\" 10K connections: studded top and flanged bottom, with both ends studded on request. Approximate transport weight is 6,700 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity equivalent to?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity is listed as a matched-pressure equivalent to Cameron U 11\" 10K, Shaffer SL 11\" 10K, Hydril V 11\" 10K and NOV Pressure Control 11\" 10K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity for a complete stack?",
+          "a": "Pair it with an 11\" 10K annular. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity used?",
+          "a": "It is used as the ram preventer on workover stacks and slim-hole infill drilling for sour-service wells across the GCC, paired with an 11\" 10K annular on top."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity differ from its nearest sibling?",
+          "a": "The 11\" 5,000 psi version is the lighter option for shallower or mature wells, while this 10,000 psi unit weighs 6,700 kg. See the [Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity](/p/ram-bop-cameron-u-style-11-5-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity tested before shipping?",
+          "a": "Each 11\" 10,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity?",
+          "a": "The listing states a lead time of 100 days for the Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 11\" 10,000 psi WP, Double Cavity, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 10,000 psi WP, Double Cavity, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 100 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "ram-bop-cameron-u-style-11-5-000-psi-wp-double-cavity-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity used for?",
+          "a": "The Cameron U style 11\" 5,000 psi double ram BOP is a two-cavity ram preventer for shallow and mature-field sour-service workover. Each cavity takes a ram block, and the unit suits the Bahrain, Iraq south, Oman and KOC mature-field programmes it is listed for."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity is rated 5,000 psi cold working pressure, 5K class, at a 11\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity have?",
+          "a": "This unit has a 11\" vertical bore with API 6A 11\" 5K connections: studded top and studded bottom. Approximate transport weight is 5,400 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity equivalent to?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity is listed as a matched-pressure equivalent to Cameron U 11\" 5K, Shaffer SL 11\" 5K and Hydril V 11\" 5K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity for a complete stack?",
+          "a": "Pair it with an 11\" 5K annular. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity used?",
+          "a": "It is used on shallow and mature-field workover stacks in Bahrain, Iraq south, Oman and KOC, with an 11\" 5K annular on top."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity differ from its nearest sibling?",
+          "a": "The 10,000 psi 11\" ram BOP is the higher-pressure sibling for deeper wells; this 5,000 psi unit weighs less and has studded top and bottom connections. See the [Ram BOP, Cameron U Style, 11\" 10,000 psi double cavity](/p/ram-bop-cameron-u-style-11-10-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity tested before shipping?",
+          "a": "Each 11\" 5,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity?",
+          "a": "The listing states a lead time of 75 days for the Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 11\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Ram BOP, Cameron U Style, 11\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 75 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "ram-bop-cameron-u-style-13-5-8-10-000-psi-wp-double-cavity-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity used for?",
+          "a": "The Cameron U style 13-5/8\" 10,000 psi double ram BOP is the mainstream development ram preventer for sour-service land drilling. It is supplied empty or with pipe and blind-shear ram blocks, and the bonnets and ram blocks are interchangeable per the OEM dimensional standard."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity is rated 10,000 psi cold working pressure, 10K class, at a 13-5/8\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity have?",
+          "a": "This unit has a 13-5/8\" vertical bore with API 6A 13-5/8\" 10K connections: studded top and flanged bottom, with both flanged on request. Approximate transport weight is 8,900 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity equivalent to?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity is listed as a matched-pressure equivalent to Cameron U 13-5/8\" 10K, Shaffer LWS 13-5/8\" 10K and Hydril V 13-5/8\" 10K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity for a complete stack?",
+          "a": "Fit it with pipe and blind-shear ram blocks. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity used?",
+          "a": "It is used on mainstream development drilling at Saudi Aramco, ADNOC, KOC and PDO land rigs, normally below a 13-5/8\" 10K annular."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity differ from its nearest sibling?",
+          "a": "The 5,000 psi 13-5/8\" ram BOP is the lighter option for shallower onshore wells, while this 10,000 psi unit weighs 8,900 kg and is the mainstream development choice. See the [Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity](/p/ram-bop-cameron-u-style-13-5-8-5-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity tested before shipping?",
+          "a": "Each 13-5/8\" 10,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity?",
+          "a": "The listing states a lead time of 120 days for the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi WP, Double Cavity, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi WP, Double Cavity, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 120 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "ram-bop-cameron-u-style-13-5-8-5-000-psi-wp-double-cavity-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity used for?",
+          "a": "The Cameron U style 13-5/8\" 5,000 psi double ram BOP is a two-cavity ram preventer for shallower onshore land drilling in sour service. It is listed for Oman heavy-oil, Bahrain mature fields and Iraqi southern oilfields, with studded top and bottom connections."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity is rated 5,000 psi cold working pressure, 5K class, at a 13-5/8\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity have?",
+          "a": "This unit has a 13-5/8\" vertical bore with API 6A 13-5/8\" 5K connections: studded top and studded bottom. Approximate transport weight is 7,200 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity equivalent to?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity is listed as a matched-pressure equivalent to Cameron U 13-5/8\" 5K, Shaffer LWS 13-5/8\" 5K and Hydril V 13-5/8\" 5K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity for a complete stack?",
+          "a": "Pair it with a 13-5/8\" 5K annular. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity used?",
+          "a": "It is used on shallower onshore land-drilling stacks for Oman heavy-oil, Bahrain mature fields and Iraq southern oilfields."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity differ from its nearest sibling?",
+          "a": "The 10,000 psi 13-5/8\" ram BOP is the mainstream development unit for deeper wells; this 5,000 psi unit is lighter at 7,200 kg for shallower wells. See the [Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity](/p/ram-bop-cameron-u-style-13-5-8-10-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity tested before shipping?",
+          "a": "Each 13-5/8\" 5,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity?",
+          "a": "The listing states a lead time of 90 days for the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi double cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 90 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "ram-bop-cameron-uii-style-13-5-8-15-000-psi-wp-double-cavity-hpht-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity used for?",
+          "a": "The Cameron UII style 13-5/8\" 15,000 psi double ram BOP is an HPHT and sour-service preventer with a temperature rating up to 350°F (177°C). It carries HPHT-capable trim and a larger-cylinder operating piston for ultra-sour plays where 10K working pressure is not enough."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity?",
+          "a": "The Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity is rated 15,000 psi cold working pressure, 15K class, at a 13-5/8\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 350°F (-29°C to 177°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity have?",
+          "a": "This unit has a 13-5/8\" vertical bore with API 6A 13-5/8\" 15K connections: flanged top and flanged bottom, with SBMS / SH-style mating per stack programme. Approximate transport weight is 12,500 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity equivalent to?",
+          "a": "The Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity is listed as a matched-pressure equivalent to Cameron UII 13-5/8\" 15K, Shaffer NXT-15K 13-5/8\" and Hydril V 13-5/8\" 15K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity?",
+          "a": "The Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity for a complete stack?",
+          "a": "It needs a 15K-class stack. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity used?",
+          "a": "It is listed for ADNOC Hail and Ghasha ultra-sour gas drilling, Aramco Jafurah unconventional sour gas, Oman Khazzan and Ghazeer tight gas, Saudi Khuff gas at 15K, and Iraq deep-gas exploration."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity differ from its nearest sibling?",
+          "a": "The 10,000 psi 13-5/8\" ram BOP covers mainstream sour wells to 180°F, while this 15,000 psi HPHT unit is rated to 350°F and weighs 12,500 kg. See the [Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity](/p/ram-bop-cameron-u-style-13-5-8-10-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity tested before shipping?",
+          "a": "Each 13-5/8\" 15,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity?",
+          "a": "The listing states a lead time of 180 days for the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi HPHT double cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi WP, Double Cavity, HPHT + Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi WP, Double Cavity, HPHT + Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 180 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "rotating-control-device-rcd-5-000-psi-class-sour-service-nace-mr0175-mpd-stack",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 5,000 psi class rotating control device (RCD) for managed-pressure drilling?",
+          "a": "A rotating control device is a passive rotating seal that diverts annular returns through a closed flow path while drilling, which enables managed-pressure drilling on narrow-margin wells. This 5,000 psi class sour-service RCD has an 11\" bore and a replaceable seal element of rubber and bearings."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Rotating Control Device (RCD), 5,000 psi class?",
+          "a": "The Rotating Control Device (RCD), 5,000 psi class is rated 5,000 psi cold working pressure, 5K class, at a 11\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Rotating Control Device (RCD), 5,000 psi class have?",
+          "a": "This unit has a 11\" vertical bore with API 6A 11\" 5K connections: studded top and flanged bottom, with a passive rotating seal on the drill string. Approximate transport weight is 2,200 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Rotating Control Device (RCD), 5,000 psi class suitable for sour (H2S) service?",
+          "a": "Yes, the Rotating Control Device (RCD), 5,000 psi class is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Rotating Control Device (RCD), 5,000 psi class equivalent to?",
+          "a": "The Rotating Control Device (RCD), 5,000 psi class is listed as a matched-pressure equivalent to Weatherford SafeShield / SeaShield 5M, SLB RCD-3 and NOV ReedHycalog RCD 5K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Rotating Control Device (RCD), 5,000 psi class?",
+          "a": "The Rotating Control Device (RCD), 5,000 psi class is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Rotating Control Device (RCD), 5,000 psi class for a complete stack?",
+          "a": "The seal element is the consumable. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Rotating Control Device (RCD), 5,000 psi class used?",
+          "a": "It is used for managed-pressure drilling on narrow-margin wells, Aramco Jafurah unconventional sour gas, Oman Khazzan and Ghazeer tight gas, depleted-reservoir infill drilling and underbalanced drilling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Rotating Control Device (RCD), 5,000 psi class differ from its nearest sibling?",
+          "a": "A ram BOP closes the well with ram blocks, while the RCD seals continuously around the rotating drill string so drilling can continue under pressure; it sits above the ram stack. See the [Ram BOP, Cameron U Style, 11\" 5,000 psi double cavity](/p/ram-bop-cameron-u-style-11-5-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Rotating Control Device (RCD), 5,000 psi class tested before shipping?",
+          "a": "Each 11\" 5,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Rotating Control Device (RCD), 5,000 psi class?",
+          "a": "The listing states a lead time of 120 days for the Rotating Control Device (RCD), 5,000 psi class. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Rotating Control Device (RCD), 5,000 psi Class, Sour Service (NACE MR0175) — MPD Stack from Indus Hydraulics?",
+          "a": "The Rotating Control Device (RCD), 5,000 psi Class, Sour Service (NACE MR0175) — MPD Stack is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 120 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "snubbing-bop-stack-7-1-16-10-000-psi-wp-with-stripper-rams-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams used for?",
+          "a": "A snubbing BOP stack is a four-cavity stack of upper stripper, lower stripper, safety ram and pipe ram that lets tubing or drill pipe be moved through under wellhead pressure. This 7-1/16\" 10,000 psi unit is built for sour service and integrates with a snubbing jack on the top connection."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams?",
+          "a": "The Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams is rated 10,000 psi cold working pressure, 10K class, at a 7-1/16\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams have?",
+          "a": "This unit has a 7-1/16\" vertical bore with API 6A 7-1/16\" 10K connections: studded top (with snubbing-jack integration) and flanged bottom. Approximate transport weight is 4,500 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams suitable for sour (H2S) service?",
+          "a": "Yes, the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams equivalent to?",
+          "a": "The Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams is listed as a matched-pressure equivalent to Cameron snubbing 7-1/16\" 10K, Hydril snubbing stack 7-1/16\" 10K and Otis snubbing BOP 7-1/16\" 10K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams?",
+          "a": "The Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams for a complete stack?",
+          "a": "It integrates with a snubbing jack. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams used?",
+          "a": "It is used for under-pressure snubbing on producing wells, underground-blowout remediation, live-well workover and intervention, and specialist well-intervention contractor scopes."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams differ from its nearest sibling?",
+          "a": "The CT quad BOP is blind, shear, slip and pipe for coiled tubing at 5-1/8\", while this stack is two strippers, a safety ram and a pipe ram at 7-1/16\" for snubbing jobs. See the [Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi](/p/coiled-tubing-quad-bop-5-1-8-10-000-psi-wp-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams tested before shipping?",
+          "a": "Each 7-1/16\" 10,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams?",
+          "a": "The listing states a lead time of 120 days for the Snubbing BOP Stack, 7-1/16\" 10,000 psi with stripper rams. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Snubbing BOP Stack, 7-1/16\" 10,000 psi WP with Stripper Rams, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Snubbing BOP Stack, 7-1/16\" 10,000 psi WP with Stripper Rams, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 120 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "subsea-ram-bop-cameron-tl-style-18-3-4-15-000-psi-wp-triple-cavity-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity used for?",
+          "a": "The Cameron TL style 18-3/4\" 15,000 psi triple ram BOP is the subsea-stack lower section, with three cavities (typically pipe ram, pipe ram and blind-shear ram) below the LMRP annular. It is a long-lead, build-to-order item with mandrel hub connections for a subsea wellhead connector."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity?",
+          "a": "The Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity is rated 15,000 psi cold working pressure, 15K class, at a 18-3/4\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity have?",
+          "a": "This unit has a 18-3/4\" vertical bore with API 6A 18-3/4\" 15K connections: mandrel hub top and mandrel hub bottom, compatible with a subsea wellhead connector. Approximate transport weight is 42,000 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity equivalent to?",
+          "a": "The Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity is listed as a matched-pressure equivalent to Cameron TL 18-3/4\" 15K, Shaffer NXT-15K subsea 18-3/4\" and NOV Pressure Control subsea 18-3/4\" 15K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity?",
+          "a": "The Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity for a complete stack?",
+          "a": "Pair it with an LMRP annular. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity used?",
+          "a": "It is used as the subsea stack lower section on jack-up and platform offshore drilling for ADNOC and Aramco offshore fields, and on new-build subsea stacks for the GCC offshore drilling fleet."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity differ from its nearest sibling?",
+          "a": "The 13-5/8\" 10K land ram BOP has two cavities and studded or flanged connections, while this 18-3/4\" 15K subsea unit has three cavities, mandrel hubs and weighs 42,000 kg. See the [Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi double cavity](/p/ram-bop-cameron-u-style-13-5-8-10-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity tested before shipping?",
+          "a": "Each 18-3/4\" 15,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity?",
+          "a": "The listing states a lead time of 240 days for the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi triple cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi WP, Triple Cavity, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi WP, Triple Cavity, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 240 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "workover-ram-bop-cameron-t-81-style-7-1-16-3-000-psi-wp-double-cavity-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity used for?",
+          "a": "The Cameron T-81 style 7-1/16\" 3,000 psi double ram BOP is a small-bore, lower-pressure workover preventer for shallow-tubing well intervention. It is sour-service listed, weighs 1,400 kg and uses studded top and bottom connections."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity?",
+          "a": "The Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity is rated 3,000 psi cold working pressure, 3K class, at a 7-1/16\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity have?",
+          "a": "This unit has a 7-1/16\" vertical bore with API 6A 7-1/16\" 3K connections: studded top and studded bottom. Approximate transport weight is 1,400 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity equivalent to?",
+          "a": "The Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity is listed as a matched-pressure equivalent to Cameron T-81 / T-82 7-1/16\" 3K and Shaffer SL 7-1/16\" 3K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity?",
+          "a": "The Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity for a complete stack?",
+          "a": "Fit it with tubing-size ram blocks. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity used?",
+          "a": "It is used as the lower-pressure workover stack for shallow-tubing well intervention, where a 7-1/16\" bore and a 3,000 psi rating are enough and a compact, light preventer helps rig-up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity differ from its nearest sibling?",
+          "a": "The 5,000 psi T-81 style version is rated higher, while this 3,000 psi unit is the lighter shallow-tubing option at 1,400 kg. See the [Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity](/p/workover-ram-bop-cameron-t-81-style-7-1-16-5-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity tested before shipping?",
+          "a": "Each 7-1/16\" 3,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity?",
+          "a": "The listing states a lead time of 45 days for the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi WP, Double Cavity, Sour Service (NACE MR0175) in stock in Dubai?",
+          "a": "Yes. We keep the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi WP, Double Cavity, Sour Service (NACE MR0175) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "workover-ram-bop-cameron-t-81-style-7-1-16-5-000-psi-wp-double-cavity-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity used for?",
+          "a": "The Cameron T-81 style 7-1/16\" 5,000 psi double ram BOP is a compact small-bore workover preventer for sour-service well intervention. It is the workover and snubbing-prep ram BOP listed for Aramco and ADNOC intervention campaigns, with extremely high deployment volume."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity?",
+          "a": "The Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity is rated 5,000 psi cold working pressure, 5K class, at a 7-1/16\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity have?",
+          "a": "This unit has a 7-1/16\" vertical bore with API 6A 7-1/16\" 5K connections: studded top and studded bottom, with flanged on request. Approximate transport weight is 1,800 kg. Confirm the connection style on your RFQ so it matches the wellhead and the stack above it."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity suitable for sour (H2S) service?",
+          "a": "Yes, the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM equipment is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity equivalent to?",
+          "a": "The Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity is listed as a matched-pressure equivalent to Cameron T-81 / T-82 7-1/16\" 5K and Shaffer SL 7-1/16\" 5K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. For an OEM-stamped unit, send the stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity?",
+          "a": "The Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I order with the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity for a complete stack?",
+          "a": "Fit it with tubing-size ram blocks. A complete stack also needs an accumulator control unit, a choke and kill manifold, ring gaskets and studs, and the ram blocks or elements for each cavity. See [BOP control units](/c/bop-control-units), [ram blocks](/c/bop-ram-blocks) and [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity used?",
+          "a": "It is used on Aramco and ADNOC well-intervention campaigns as a compact workover and snubbing-prep ram BOP, where deployment volume is high and a small-bore 5,000 psi preventer is enough."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity differ from its nearest sibling?",
+          "a": "The 3,000 psi T-81 style version is the lighter shallow-tubing option, while this 5,000 psi unit weighs 1,800 kg and is the higher-deployment workover choice. See the [Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi double cavity](/p/workover-ram-bop-cameron-t-81-style-7-1-16-3-000-psi-wp-double-cavity-sour-service-nace-mr0175) for comparison."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity tested before shipping?",
+          "a": "Each 7-1/16\" 5,000 psi unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with a mill test report and hydrostatic certificate per unit. A factory acceptance test report is available on request. State any witness requirement on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity?",
+          "a": "The listing states a lead time of 60 days for the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi double cavity. Exact timing depends on configuration, ram block fit-out and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175 from Indus Hydraulics?",
+          "a": "The Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 60 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

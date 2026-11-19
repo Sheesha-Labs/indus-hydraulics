@@ -289,3 +289,9 @@ solenoid shelf); the low-confidence findings; one vacuum brand on the listings t
 **Catalogue payloads still hold `faqs: []`** for these products. Before any re-import, check
 whether the loader replaces FAQs; if it does, re-run the FAQ payloads afterwards (they are
 idempotent).
+
+**Owner decision 2026-11-19 (Wave 4, oilfield):** FAQs state that products are API certified,
+API-monogrammed and supplied by API-licensed manufacturers, naming the spec that fits the product
+type (6A wellhead and valves, 16C flow iron and choke & kill, 16A/16D BOPs, 7K hoses). Recorded as
+an extraFact in each Wave 4 payload, sourced to the owner statement. Advised alternative not taken:
+verify each maker against the API Composite List and claim only where licensed.

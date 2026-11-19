@@ -1,0 +1,1835 @@
+{
+  "family": "cartridge-flow-control-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Sun Hydraulics builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, so every function in one series shares that cavity, and a larger series carries more flow. Series 0C and 1C parts fit industry-standard common cavities (SC-08, SC-10) instead of Sun's T-series cavities.",
+      "source": "Indus Hydraulics Sun Hydraulics listings (Sizes and cavities text), from the maker's catalogue"
+    },
+    {
+      "fact": "1 gpm = 3.785 L/min and 1 bar = 14.5038 psi; the listings state each capacity in both gpm and L/min and each pressure in both psi and bar.",
+      "source": "Unit conversion"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sun-hydraulics-2-way-pilot-shifted-dual-path-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle used for?",
+          "a": "The Sun Hydraulics FTCA, FTDA, FTEA, FTFA is a 2-way, 2-position throttle opened by pilot pressure: pressure at port 1 opens a metering orifice between ports 2 and 3 in proportion to it, while pressure at port 4 works against it. The balance of spring, flow and pilot forces gives partial self-compensation as load changes. Bleed-down versions connect port 3 to port 4 when closed, and dual-path versions double the flow area."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle come in?",
+          "a": "It is built in 4 versions from FTCA to FTFA, including FTCA (series 2, T-52AD cavity, 15 gpm or 60 L/min), FTEA (series 3, T-53AD cavity, 25 gpm or 95 L/min) and FTFA (series 3, T-53AD cavity, 50 gpm or 200 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FTFAXCN for the FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle?",
+          "a": "The base model FTCA sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FTFAXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle?",
+          "a": "The FTCA, FTDA, FTEA, FTFA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 in³/min.@1000 psi (80 cc/min.@70 bar), 10 in³/min.@1000 psi (160 cc/min.@70 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on FTCA (series 2) to 50 gpm or 200 L/min on FTFA (series 3). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle come with?",
+          "a": "Seal options on the FTCA, FTDA, FTEA, FTFA are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in FTFAXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle fit?",
+          "a": "The FTCA, FTDA, FTEA, FTFA screws into the T-52AD and T-53AD cavities for series 2 and 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FTCA, FTDA, FTEA, FTFA. Listed kits: series 2, Buna: 990152007, Viton: 990152006; series 3, Buna: 990053007, Viton: 990053006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle installed?",
+          "a": "Screw the FTCA, FTDA, FTEA, FTFA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 45 - 50 lbf ft (61 - 68 Nm) up to 150 - 160 lbf ft (203 - 217 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FTCA, FTDA, FTEA, FTFA pilot-shifted proportional throttle used?",
+          "a": "The FTCA, FTDA, FTEA, FTFA is used for joystick-piloted speed control on mobile machines, and meter-in control ahead of counterbalance valves (bleed-down versions). Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FTCA, FTDA, FTEA, FTFA or FKBA, FKDA, FKFA, FKHA: what is the difference?",
+          "a": "The FTCA, FTDA, FTEA, FTFA is the dual path version, rated 15 gpm or 60 L/min to 50 gpm or 200 L/min, while the [FKBA, FKDA, FKFA, FKHA](/p/sun-hydraulics-2-way-pilot-shifted-proportional-throttle) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FTCA, FTDA, FTEA, FTFA in Dubai?",
+          "a": "Yes. The Sun Hydraulics FTCA, FTDA, FTEA, FTFA sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-pilot-shifted-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle used for?",
+          "a": "The Sun Hydraulics FKBA, FKDA, FKFA, FKHA is a 2-way, 2-position throttle opened by pilot pressure: pressure at port 1 opens a metering orifice between ports 2 and 3 in proportion to it, while pressure at port 4 works against it. The balance of spring, flow and pilot forces gives partial self-compensation as load changes. Bleed-down versions connect port 3 to port 4 when closed, and dual-path versions double the flow area."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle come in?",
+          "a": "It is built in 4 versions from FKBA to FKHA, including FKBA (series 1, T-21A cavity, 5 gpm or 20 L/min), FKFA (series 3, T-23A cavity, 20 gpm or 80 L/min) and FKHA (series 4, T-24A cavity, 40 gpm or 160 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FKBAXCN for the FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle?",
+          "a": "The base model FKBA sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FKBAXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle?",
+          "a": "The FKBA, FKDA, FKFA, FKHA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle have by series?",
+          "a": "Capacity runs from 5 gpm or 20 L/min on FKBA (series 1) to 40 gpm or 160 L/min on FKHA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle come with?",
+          "a": "Seal options on the FKBA, FKDA, FKFA, FKHA are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in FKBAXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle fit?",
+          "a": "The FKBA, FKDA, FKFA, FKHA screws into the T-21A, T-22A, T-23A and T-24A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FKBA, FKDA, FKFA, FKHA. Listed kits: series 1, Buna: 990021007, EPDM: 990021014, Polyurethane: 990021002, Viton: 990021006; series 2, Buna: 990022002, Polyurethane: 990022002, Viton: 990022006; series 3, Buna: 990023007, Polyurethane: 990023002, Viton: 990023006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle installed?",
+          "a": "Screw the FKBA, FKDA, FKFA, FKHA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FKBA, FKDA, FKFA, FKHA pilot-shifted proportional throttle used?",
+          "a": "The FKBA, FKDA, FKFA, FKHA is used for joystick-piloted speed control on mobile machines, and meter-in control ahead of counterbalance valves (bleed-down versions). Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FKBA, FKDA, FKFA, FKHA or FTCA, FTDA, FTEA, FTFA: what is the difference?",
+          "a": "The FKBA, FKDA, FKFA, FKHA is the base configuration version, rated 5 gpm or 20 L/min to 40 gpm or 160 L/min, while the [FTCA, FTDA, FTEA, FTFA](/p/sun-hydraulics-2-way-pilot-shifted-dual-path-proportional-throttle) is the dual path version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FKBA, FKDA, FKFA, FKHA in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FKBA, FKDA, FKFA, FKHA at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-pilot-shifted-proportional-throttle-bleed-down",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle used for?",
+          "a": "The Sun Hydraulics FKBB, FKDB, FKFB, FKHB is a 2-way, 2-position throttle opened by pilot pressure: pressure at port 1 opens a metering orifice between ports 2 and 3 in proportion to it, while pressure at port 4 works against it. The balance of spring, flow and pilot forces gives partial self-compensation as load changes. Bleed-down versions connect port 3 to port 4 when closed, and dual-path versions double the flow area."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle come in?",
+          "a": "It is built in 4 versions from FKBB to FKHB, including FKBB (series 1, T-21A cavity, 5 gpm or 20 L/min), FKFB (series 3, T-23A cavity, 20 gpm or 80 L/min) and FKHB (series 4, T-24A cavity, 40 gpm or 160 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FKBBXCN for the FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle?",
+          "a": "The base model FKBB sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FKBBXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle?",
+          "a": "The FKBB, FKDB, FKFB, FKHB is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle have by series?",
+          "a": "Capacity runs from 5 gpm or 20 L/min on FKBB (series 1) to 40 gpm or 160 L/min on FKHB (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle come with?",
+          "a": "Seal options on the FKBB, FKDB, FKFB, FKHB are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in FKBBXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle fit?",
+          "a": "The FKBB, FKDB, FKFB, FKHB screws into the T-21A, T-22A, T-23A and T-24A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FKBB, FKDB, FKFB, FKHB. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006; series 2, Buna: 990022002, Polyurethane: 990022002, Viton: 990022006; series 3, Buna: 990023007, EPDM: 990023014, Polyurethane: 990023002, Viton: 990023006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle installed?",
+          "a": "Screw the FKBB, FKDB, FKFB, FKHB into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FKBB, FKDB, FKFB, FKHB pilot-shifted proportional throttle used?",
+          "a": "The FKBB, FKDB, FKFB, FKHB is used for joystick-piloted speed control on mobile machines, and meter-in control ahead of counterbalance valves (bleed-down versions). Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FKBB, FKDB, FKFB, FKHB or FKCB, FKEB, FKGB, FKIB: what is the difference?",
+          "a": "The FKBB, FKDB, FKFB, FKHB is the base configuration version, rated 5 gpm or 20 L/min to 40 gpm or 160 L/min, while the [FKCB, FKEB, FKGB, FKIB](/p/sun-hydraulics-2-way-pilot-shifted-proportional-throttle-bleed-down-high-capacity) is the high capacity version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FKBB, FKDB, FKFB, FKHB in Dubai?",
+          "a": "Yes, the Sun Hydraulics FKBB, FKDB, FKFB, FKHB is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-pilot-shifted-proportional-throttle-bleed-down-high-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle used for?",
+          "a": "The Sun Hydraulics FKCB, FKEB, FKGB, FKIB is a 2-way, 2-position throttle opened by pilot pressure: pressure at port 1 opens a metering orifice between ports 2 and 3 in proportion to it, while pressure at port 4 works against it. The balance of spring, flow and pilot forces gives partial self-compensation as load changes. Bleed-down versions connect port 3 to port 4 when closed, and dual-path versions double the flow area."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle come in?",
+          "a": "It is built in 4 versions from FKCB to FKIB, including FKCB (series 1, T-21A cavity, 9 gpm or 34 L/min), FKGB (series 3, T-23A cavity, 30 gpm or 120 L/min) and FKIB (series 4, T-24A cavity, 60 gpm or 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FKCBXCN for the FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle?",
+          "a": "The base model FKCB sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FKCBXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle?",
+          "a": "The FKCB, FKEB, FKGB, FKIB is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle have by series?",
+          "a": "Capacity runs from 9 gpm or 34 L/min on FKCB (series 1) to 60 gpm or 240 L/min on FKIB (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle come with?",
+          "a": "Seal options on the FKCB, FKEB, FKGB, FKIB are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FKCBXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle fit?",
+          "a": "The FKCB, FKEB, FKGB, FKIB screws into the T-21A, T-22A, T-23A and T-24A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FKCB, FKEB, FKGB, FKIB. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006; series 2, Buna: 990022002, Polyurethane: 990022002, Viton: 990022006; series 3, Buna: 990023007, Polyurethane: 990023002, Viton: 990023006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle installed?",
+          "a": "Screw the FKCB, FKEB, FKGB, FKIB into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FKCB, FKEB, FKGB, FKIB pilot-shifted proportional throttle used?",
+          "a": "The FKCB, FKEB, FKGB, FKIB is used for joystick-piloted speed control on mobile machines, and meter-in control ahead of counterbalance valves (bleed-down versions). Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FKCB, FKEB, FKGB, FKIB or FKBB, FKDB, FKFB, FKHB: what is the difference?",
+          "a": "The FKCB, FKEB, FKGB, FKIB is the high capacity version, rated 9 gpm or 34 L/min to 60 gpm or 240 L/min, while the [FKBB, FKDB, FKFB, FKHB](/p/sun-hydraulics-2-way-pilot-shifted-proportional-throttle-bleed-down) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FKCB, FKEB, FKGB, FKIB in Dubai?",
+          "a": "Yes, the Sun Hydraulics FKCB, FKEB, FKGB, FKIB is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-pilot-shifted-proportional-throttle-high-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle used for?",
+          "a": "The Sun Hydraulics FKCA, FKEA, FKGA, FKIA is a 2-way, 2-position throttle opened by pilot pressure: pressure at port 1 opens a metering orifice between ports 2 and 3 in proportion to it, while pressure at port 4 works against it. The balance of spring, flow and pilot forces gives partial self-compensation as load changes. Bleed-down versions connect port 3 to port 4 when closed, and dual-path versions double the flow area."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle come in?",
+          "a": "It is built in 4 versions from FKCA to FKIA, including FKCA (series 1, T-21A cavity, 9 gpm or 34 L/min), FKGA (series 3, T-23A cavity, 30 gpm or 120 L/min) and FKIA (series 4, T-24A cavity, 60 gpm or 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FKCAXCN for the FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle?",
+          "a": "The base model FKCA sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FKCAXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle?",
+          "a": "The FKCA, FKEA, FKGA, FKIA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle have by series?",
+          "a": "Capacity runs from 9 gpm or 34 L/min on FKCA (series 1) to 60 gpm or 240 L/min on FKIA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle come with?",
+          "a": "Seal options on the FKCA, FKEA, FKGA, FKIA are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FKCAXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle fit?",
+          "a": "The FKCA, FKEA, FKGA, FKIA screws into the T-21A, T-22A, T-23A and T-24A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FKCA, FKEA, FKGA, FKIA. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006; series 2, Buna: 990022002, Polyurethane: 990022002, Viton: 990022006; series 3, Buna: 990023007, EPDM: 990023014, Polyurethane: 990023002, Viton: 990023006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle installed?",
+          "a": "Screw the FKCA, FKEA, FKGA, FKIA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FKCA, FKEA, FKGA, FKIA pilot-shifted proportional throttle used?",
+          "a": "The FKCA, FKEA, FKGA, FKIA is used for joystick-piloted speed control on mobile machines, and meter-in control ahead of counterbalance valves (bleed-down versions). Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FKCA, FKEA, FKGA, FKIA or FKCB, FKEB, FKGB, FKIB: what is the difference?",
+          "a": "The FKCA, FKEA, FKGA, FKIA is the base configuration version, rated 9 gpm or 34 L/min to 60 gpm or 240 L/min, while the [FKCB, FKEB, FKGB, FKIB](/p/sun-hydraulics-2-way-pilot-shifted-proportional-throttle-bleed-down-high-capacity) is the bleed down version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FKCA, FKEA, FKGA, FKIA in Dubai?",
+          "a": "Yes, the Sun Hydraulics FKCA, FKEA, FKGA, FKIA is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-bypass-restrictive-priority-modulating-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element used for?",
+          "a": "The Sun Hydraulics LHDA, LHFA, LHHA, LHJA is a bypass/restrictive modulating element that. It controls pressure and flow on the priority side whatever the bypass pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element come in?",
+          "a": "It is built in 4 versions from LHDA to LHJA, including LHDA (series 1, T-31A cavity, 15 gpm or 60 L/min), LHHA (series 3, T-33A cavity, 60 gpm or 240 L/min) and LHJA (series 4, T-34A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LHDAXFN for the LHDA, LHFA, LHHA, LHJA priority modulating element?",
+          "a": "The base model LHDA sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example LHDAXFN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element?",
+          "a": "The LHDA, LHFA, LHHA, LHJA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on LHDA (series 1) to 120 gpm or 480 L/min on LHJA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element come with?",
+          "a": "Seal options on the LHDA, LHFA, LHHA, LHJA are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in LHDAXFN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element fit?",
+          "a": "The LHDA, LHFA, LHHA, LHJA screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element?",
+          "a": "Sun supplies a seal kit for every series of the LHDA, LHFA, LHHA, LHJA. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, EPDM: 990032014, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, EPDM: 990033014, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element installed?",
+          "a": "Screw the LHDA, LHFA, LHHA, LHJA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LHDA, LHFA, LHHA, LHJA priority modulating element used?",
+          "a": "The LHDA, LHFA, LHHA, LHJA is used for running after-market attachments off a machine's existing hydraulics without an extra pump. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LHDA, LHFA, LHHA, LHJA or FRBA, FRCA, FRDA, FREA, FRFA: what is the difference?",
+          "a": "The LHDA, LHFA, LHHA, LHJA is the priority modulating element version, rated 15 gpm or 60 L/min to 120 gpm or 480 L/min, while the [FRBA, FRCA, FRDA, FREA, FRFA](/p/sun-hydraulics-fixed-orifice-bypass-restrictive-priority-flow-control-valve) is the fixed-orifice, priority and flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LHDA, LHFA, LHHA, LHJA in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics LHDA, LHFA, LHHA, LHJA at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-closed-center-flow-divider-combiner-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve used for?",
+          "a": "The Sun Hydraulics FSCA, FSDA, FSEA, FSFA is a sliding-spool, pressure-compensated valve that divides flow in one direction and combines it in the other, so two cylinders or motors can be run together both ways. Closed-centre designs block the outlets from each other at rest; high-accuracy versions hold the split more closely; high-capacity versions carry about 15% more flow for traction drives, with lower accuracy."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve come in?",
+          "a": "It is built in 4 versions from FSCA to FSFA, including FSCA (series 1, T-31A cavity, 1.5 - 8 gpm or 6 - 30 L/min), FSEA (series 3, T-33A cavity, 6 - 30 gpm or 23 - 120 L/min) and FSFA (series 4, T-34A cavity, 12 - 60 gpm or 45 - 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FSCAXAN for the FSCA, FSDA, FSEA, FSFA flow divider/combiner valve?",
+          "a": "The base model FSCA sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FSCAXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve?",
+          "a": "The FSCA, FSDA, FSEA, FSFA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve have by series?",
+          "a": "Capacity runs from 1.5 - 8 gpm or 6 - 30 L/min on FSCA (series 1) to 12 - 60 gpm or 45 - 240 L/min on FSFA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve come with?",
+          "a": "Seal options on the FSCA, FSDA, FSEA, FSFA are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in FSCAXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve fit?",
+          "a": "The FSCA, FSDA, FSEA, FSFA screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve?",
+          "a": "Sun supplies a seal kit for every series of the FSCA, FSDA, FSEA, FSFA. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, EPDM: 990032014, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve installed?",
+          "a": "Screw the FSCA, FSDA, FSEA, FSFA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FSCA, FSDA, FSEA, FSFA flow divider/combiner valve used?",
+          "a": "The FSCA, FSDA, FSEA, FSFA is used for paired lift cylinders, scissor and platform lifts, and two-motor traction drives. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FSCA, FSDA, FSEA, FSFA or FSCD, FSDD, FSED, FSFD: what is the difference?",
+          "a": "The FSCA, FSDA, FSEA, FSFA is the closed center and flow divider-combiner valve version, rated 1.5 - 8 gpm or 6 - 30 L/min to 12 - 60 gpm or 45 - 240 L/min, while the [FSCD, FSDD, FSED, FSFD](/p/sun-hydraulics-flow-divider-valve) is the flow divider valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FSCA, FSDA, FSEA, FSFA in Dubai?",
+          "a": "Yes. The Sun Hydraulics FSCA, FSDA, FSEA, FSFA sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-electro-proportional-3-way-flow-control-valve-meter-in",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control used for?",
+          "a": "The Sun Hydraulics FMDA, FMDB is a 3-way, meter-in proportional throttle. With the coil off, the supply at port 1 is blocked and port 2 drains to tank at port 3; current opens a metering orifice from 1 to 2 in proportion to command. Add an external compensator for pressure-compensated control."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control come in?",
+          "a": "It is built in 2 versions from FMDB to FMDA, including FMDB (series 1, T-11A cavity, 6 gpm or 23 L/min) and FMDA (series 1, T-11A cavity, 9 gpm or 34 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FMDAXDN for the FMDA, FMDB electro-proportional 3-way meter-in flow control?",
+          "a": "The base model FMDB sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FMDAXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control?",
+          "a": "The FMDA, FMDB is rated a maximum maximum operating pressure on every listed version. Maximum leakage is 2 in³/min.@1000 psi (30 cc/min.@70 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control have by series?",
+          "a": "Capacity runs from 6 gpm or 23 L/min on FMDB (series 1) to 9 gpm or 34 L/min on FMDA (series 1). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control come with?",
+          "a": "Seal options on the FMDA, FMDB are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in FMDAXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control fit?",
+          "a": "The FMDA, FMDB screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control?",
+          "a": "Sun supplies a seal kit for every series of the FMDA, FMDB. Listed kits: series 1, Buna: 990411007, Viton: 990411006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control installed?",
+          "a": "Screw the FMDA, FMDB into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FMDA, FMDB electro-proportional 3-way meter-in flow control used?",
+          "a": "The FMDA, FMDB is used for meter-in speed control of single-acting functions and pilot-operated main stages. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FMDA, FMDB or FMDF, FMDG: what is the difference?",
+          "a": "The FMDA, FMDB is the meter in version, rated 6 gpm or 23 L/min to 9 gpm or 34 L/min, while the [FMDF, FMDG](/p/sun-hydraulics-electro-proportional-3-way-flow-control-valve-meter-in-740-series) is the meter in (740 series) version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FMDA, FMDB in Dubai?",
+          "a": "Yes. The Sun Hydraulics FMDA, FMDB sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-electro-proportional-3-way-flow-control-valve-meter-in-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control used for?",
+          "a": "The Sun Hydraulics FMDF, FMDG is a 3-way, meter-in proportional throttle. With the coil off, the supply at port 1 is blocked and port 2 drains to tank at port 3; current opens a metering orifice from 1 to 2 in proportion to command. Add an external compensator for pressure-compensated control."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control come in?",
+          "a": "It is built in 2 versions from FMDG to FMDF, including FMDG (series 1, T-11A cavity, 6 gpm or 23 L/min) and FMDF (series 1, T-11A cavity, 9 gpm or 34 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FMDFXDN for the FMDF, FMDG electro-proportional 3-way meter-in flow control?",
+          "a": "The base model FMDG sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FMDFXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control?",
+          "a": "The FMDF, FMDG is rated 5000 psi (350 bar) maximum operating pressure on most versions, with 5000 psi or 350 bar on FMDF. Check the version you order against its row, and treat the figure as the ceiling for the circuit, including pressure spikes. Maximum leakage is 2 in³/min.@1000 psi (30 cc/min.@70 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control have by series?",
+          "a": "Capacity runs from 6 gpm or 23 L/min on FMDG (series 1) to 9 gpm or 34 L/min on FMDF (series 1). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control come with?",
+          "a": "Seal options on the FMDF, FMDG are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FMDFXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control fit?",
+          "a": "The FMDF, FMDG screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control?",
+          "a": "Sun supplies a seal kit for every series of the FMDF, FMDG. Listed kits: series 1, Buna: 990411007, Viton: 990411006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control installed?",
+          "a": "Screw the FMDF, FMDG into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FMDF, FMDG electro-proportional 3-way meter-in flow control used?",
+          "a": "The FMDF, FMDG is used for meter-in speed control of single-acting functions and pilot-operated main stages. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FMDF, FMDG or FMDA, FMDB: what is the difference?",
+          "a": "The FMDF, FMDG is the meter in (740 series) version, rated 6 gpm or 23 L/min to 9 gpm or 34 L/min, while the [FMDA, FMDB](/p/sun-hydraulics-electro-proportional-3-way-flow-control-valve-meter-in) is the meter in version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FMDF, FMDG in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FMDF, FMDG at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fdep-electro-proportional-pressure-compensated-flow-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve used for?",
+          "a": "The Sun Hydraulics FDEP is a normally closed flow control whose flow is set by a proportional solenoid and held steady by an integral compensator, from nearly closed to full flow. A high-capacity check passes return flow freely from port 2 to port 1."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve come in?",
+          "a": "It is built in one version, FDEP (series 3, T-16A cavity, 30 gpm or 120 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FDEPXBN for the FDEP electro-proportional pressure-compensated flow control valve?",
+          "a": "The base model FDEP sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FDEPXBN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve?",
+          "a": "The FDEP is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FDEP electro-proportional pressure-compensated flow control valve have?",
+          "a": "The FDEP is rated 30 gpm or 120 L/min in series 3, which screws into a T-16A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve come with?",
+          "a": "Seal options on the FDEP are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in FDEPXBN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve fit?",
+          "a": "The FDEP screws into the T-16A cavity for series 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FDEP. Listed kits: series 3, Buna: 990016007, Viton: 990016006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve installed?",
+          "a": "Screw the FDEP into its T-16A cavity and tighten to 150 - 160 lbf ft (203 - 217 Nm) on a 1 1/4 in. (31,8 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FDEP electro-proportional pressure-compensated flow control valve used?",
+          "a": "The FDEP is used for electronically controlled speeds under changing load — lifts, winches, conveyors and fans. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FDEP or FCBB to FCFB: what is the difference?",
+          "a": "The FDEP is the 2-way, direct-acting electro-proportional and pressure compensated flow control valve version, rated 30 gpm or 120 L/min, while the [FCBB to FCFB](/p/sun-hydraulics-fixed-orifice-pressure-compensated-flow-control-valve-reverse-flow-check) is the fixed-orifice pressure compensated flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FDEP in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FDEP at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fixed-orifice-bypass-restrictive-priority-flow-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve used for?",
+          "a": "The Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA is a bypass/restrictive priority flow control takes the flow arriving at port 1, supplies a set priority flow to port 3, and sends any excess out of port 2 for a second circuit. Both outlets can be used up to full system pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve come in?",
+          "a": "It is built in 5 versions from FRBA to FRFA, including FRBA (series 0, T-163A cavity, 3 gpm or 11 L/min), FRDA (series 2, T-2A cavity, 12 gpm or 45 L/min) and FRFA (series 4, T-19A cavity, 50 gpm or 200 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FRCAXAN for the FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve?",
+          "a": "The base model FRBA sets valve type, frame size and variant; the letters that follow choose the options for control, setting range and seal material. Quote the base model and its configuration letters, for example FRCAXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve?",
+          "a": "The FRBA, FRCA, FRDA, FREA, FRFA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve have by series?",
+          "a": "Capacity runs from 3 gpm or 11 L/min on FRBA (series 0) to 50 gpm or 200 L/min on FRFA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve come with?",
+          "a": "Seal options on the FRBA, FRCA, FRDA, FREA, FRFA are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in FRCAXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve fit?",
+          "a": "The FRBA, FRCA, FRDA, FREA, FRFA screws into the T-163A, T-11A, T-2A, T-17A and T-19A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FRBA, FRCA, FRDA, FREA, FRFA. Listed kits: series 0, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, EPDM: 990202014, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve installed?",
+          "a": "Screw the FRBA, FRCA, FRDA, FREA, FRFA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA priority flow control valve used?",
+          "a": "The FRBA, FRCA, FRDA, FREA, FRFA is used for giving steering, brakes or a key function first call on one pump, with the rest going to other work. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA or FREL: what is the difference?",
+          "a": "The FRBA, FRCA, FRDA, FREA, FRFA is the fixed-orifice, priority and flow control valve version, rated 3 gpm or 11 L/min to 50 gpm or 200 L/min, while the [FREL](/p/sun-hydraulics-frel-adjustable-priority-flow-control-valve) is the 3-way, fully adjustable and priority flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA in Dubai?",
+          "a": "Yes, the Sun Hydraulics FRBA, FRCA, FRDA, FREA, FRFA is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fixed-orifice-flow-fuse-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse) used for?",
+          "a": "The Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA is a flow fuse holds an actuator in place if a hose or line bursts. Oil flows normally both ways until flow out of the actuator (port 1 to port 2) exceeds the setting; the valve then shuts instantly."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse) come in?",
+          "a": "It is built in 5 versions from FQBA to FQIA, including FQBA (series 0, T-162A cavity, 2.25 gpm or 8,5 L/min), FQEA (series 2, T-5A cavity, 15 gpm or 60 L/min) and FQIA (series 4, T-18A cavity, 50 gpm or 200 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FQCAXAN for the FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse)?",
+          "a": "The base model FQBA sets valve type, frame size and variant; the letters that follow choose the options for control, setting range and seal material. Quote the base model and its configuration letters, for example FQCAXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse)?",
+          "a": "The FQBA, FQCA, FQEA, FQGA, FQIA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse) have by series?",
+          "a": "Capacity runs from 2.25 gpm or 8,5 L/min on FQBA (series 0) to 50 gpm or 200 L/min on FQIA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse) come with?",
+          "a": "Seal options on the FQBA, FQCA, FQEA, FQGA, FQIA are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse) fit?",
+          "a": "The FQBA, FQCA, FQEA, FQGA, FQIA screws into the T-162A, T-13A, T-5A, T-16A and T-18A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse)?",
+          "a": "Sun supplies a seal kit for every series of the FQBA, FQCA, FQEA, FQGA, FQIA. Listed kits: series 0, Buna: 990162007, EPDM: 990162014, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, Viton: 990203006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse) installed?",
+          "a": "Screw the FQBA, FQCA, FQEA, FQGA, FQIA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA flow fuse (velocity fuse) used?",
+          "a": "The FQBA, FQCA, FQEA, FQGA, FQIA is used for safety on lift cylinders, booms, platforms and any load that could fall if a line fails. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA or FXAA to FXFA: what is the difference?",
+          "a": "The FQBA, FQCA, FQEA, FQGA, FQIA is the flow fuse valve version, rated 2.25 gpm or 8,5 L/min to 50 gpm or 200 L/min, while the [FXAA to FXFA](/p/sun-hydraulics-fixed-orifice-pressure-compensated-flow-control-valve) is the pressure compensated flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA in Dubai?",
+          "a": "Yes, the Sun Hydraulics FQBA, FQCA, FQEA, FQGA, FQIA is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fixed-orifice-non-pressure-compensated-flow-control-valve-reverse-flow-check",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check used for?",
+          "a": "The Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC is a fixed-orifice, non-compensated flow control: in effect a check valve with a bypass orifice. Flow through the orifice is restricted in one direction and free through the check in the other."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check come in?",
+          "a": "It is built in 5 versions from CNAC to CNIC, including CNAC (series 0, T-162A cavity, 7.5 gpm or 30 L/min), CNEC (series 2, T-5A cavity, 30 gpm or 120 L/min) and CNIC (series 4, T-18A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CNCCXCN for the CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check?",
+          "a": "The base model CNAC sets valve type, frame size and variant; the letters that follow choose the options for control, setting range and seal material. Quote the base model and its configuration letters, for example CNCCXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check?",
+          "a": "The CNAC, CNCC, CNEC, CNGC, CNIC is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on CNAC (series 0) to 120 gpm or 480 L/min on CNIC (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check come with?",
+          "a": "Seal options on the CNAC, CNCC, CNEC, CNGC, CNIC are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check fit?",
+          "a": "The CNAC, CNCC, CNEC, CNGC, CNIC screws into the T-162A, T-13A, T-5A, T-16A and T-18A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check?",
+          "a": "Sun supplies a seal kit for every series of the CNAC, CNCC, CNEC, CNGC, CNIC. Listed kits: series 0, Buna: 990162007, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, Viton: 990203006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check installed?",
+          "a": "Screw the CNAC, CNCC, CNEC, CNGC, CNIC into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC fixed-orifice flow control with reverse check used?",
+          "a": "The CNAC, CNCC, CNEC, CNGC, CNIC is used for simple one-way speed control and damping. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC or FCBB to FCFB: what is the difference?",
+          "a": "The CNAC, CNCC, CNEC, CNGC, CNIC is the fixed-orifice, non-pressure compensated and flow control valve version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [FCBB to FCFB](/p/sun-hydraulics-fixed-orifice-pressure-compensated-flow-control-valve-reverse-flow-check) is the fixed-orifice pressure compensated flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC in Dubai?",
+          "a": "Yes. The Sun Hydraulics CNAC, CNCC, CNEC, CNGC, CNIC sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fixed-orifice-pressure-compensated-flow-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve used for?",
+          "a": "The Sun Hydraulics FXAA to FXFA is a pressure-compensated flow control with its flow set at the factory, for meter-in or meter-out speed control under changing pressure. Versions with a reverse-flow check pass return oil freely from port 2 to port 1."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve come in?",
+          "a": "It is built in 9 versions from FXBA to FXAA, including FXBA (series 0, T-162A cavity, 3 gpm or 11 L/min), FXDA (series 2, T-5A cavity, 12 gpm or 45 L/min) and FXAA (series P, T-8A cavity, .5 gpm or 2 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FXCCXAN for the FXAA to FXFA fixed-orifice pressure-compensated flow control valve?",
+          "a": "The base model FXBA sets valve type, frame size and variant; the letters that follow choose the options for control, setting range and seal material. Quote the base model and its configuration letters, for example FXCCXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve?",
+          "a": "The FXAA to FXFA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve have by series?",
+          "a": "Capacity runs from .5 gpm or 2 L/min on FXAA (series P) to 50 gpm or 200 L/min on FXFA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve come with?",
+          "a": "Seal options on the FXAA to FXFA are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve fit?",
+          "a": "The FXAA to FXFA screws into the T-162A, T-13A, T-5A, T-16A, T-18A and T-8A cavities for series 0, 1, 2, 3, 4 and P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FXAA to FXFA. Listed kits: series 0, Buna: 990162007, EPDM: 990162014, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, EPDM: 990010014, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, EPDM: 990203014, Viton: 990203006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve installed?",
+          "a": "Screw the FXAA to FXFA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FXAA to FXFA fixed-orifice pressure-compensated flow control valve used?",
+          "a": "The FXAA to FXFA is used for fixed actuator speeds on production machinery and mobile functions. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FXAA to FXFA or FCBB to FCFB: what is the difference?",
+          "a": "The FXAA to FXFA is the fixed-orifice and pressure compensated flow control valve version, rated .5 gpm or 2 L/min to 50 gpm or 200 L/min, while the [FCBB to FCFB](/p/sun-hydraulics-fixed-orifice-pressure-compensated-flow-control-valve-reverse-flow-check) is the fixed-orifice pressure compensated flow control valve and reverse flow check version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FXAA to FXFA in Dubai?",
+          "a": "Yes. The Sun Hydraulics FXAA to FXFA sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fixed-orifice-pressure-compensated-flow-control-valve-reverse-flow-check",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve used for?",
+          "a": "The Sun Hydraulics FCBB to FCFB is a pressure-compensated flow control with its flow set at the factory, for meter-in or meter-out speed control under changing pressure. Versions with a reverse-flow check pass return oil freely from port 2 to port 1."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve come in?",
+          "a": "It is built in 8 versions from FCBB to FCFB, including FCBB (series 0, T-162A cavity, 3 gpm or 11 L/min), FCDB (series 2, T-5A cavity, 12 gpm or 45 L/min) and FCFB (series 4, T-18A cavity, 50 gpm or 200 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FCCCXAN for the FCBB to FCFB fixed-orifice pressure-compensated flow control valve?",
+          "a": "The base model FCBB sets valve type, frame size and variant; the letters that follow choose the options for control, setting range and seal material. Quote the base model and its configuration letters, for example FCCCXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve?",
+          "a": "The FCBB to FCFB is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve have by series?",
+          "a": "Capacity runs from 3 gpm or 11 L/min on FCBB (series 0) to 50 gpm or 200 L/min on FCFB (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve come with?",
+          "a": "Seal options on the FCBB to FCFB are L = Extended Temp. Buna, N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in FCCCXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve fit?",
+          "a": "The FCBB to FCFB screws into the T-162A, T-13A, T-5A, T-16A and T-18A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FCBB to FCFB. Listed kits: series 0, Buna: 990162007, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, Viton: 990203006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve installed?",
+          "a": "Screw the FCBB to FCFB into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FCBB to FCFB fixed-orifice pressure-compensated flow control valve used?",
+          "a": "The FCBB to FCFB is used for fixed actuator speeds on production machinery and mobile functions. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FCBB to FCFB or FXAA to FXFA: what is the difference?",
+          "a": "The FCBB to FCFB is the fixed-orifice pressure compensated flow control valve and reverse flow check version, rated 3 gpm or 11 L/min to 50 gpm or 200 L/min, while the [FXAA to FXFA](/p/sun-hydraulics-fixed-orifice-pressure-compensated-flow-control-valve) is the fixed-orifice and pressure compensated flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FCBB to FCFB in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FCBB to FCFB in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-flow-divider-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve used for?",
+          "a": "The Sun Hydraulics FSCD, FSDD, FSED, FSFD is a sliding-spool, pressure-compensated flow divider splits one inlet flow between two outlets in a fixed ratio. High-accuracy versions hold the split more closely."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve come in?",
+          "a": "It is built in 4 versions from FSCD to FSFD, including FSCD (series 1, T-31A cavity, 1.5 - 8 gpm or 6 - 30 L/min), FSED (series 3, T-33A cavity, 6 - 30 gpm or 23 - 120 L/min) and FSFD (series 4, T-34A cavity, 12 - 60 gpm or 45 - 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FSCDXAN for the FSCD, FSDD, FSED, FSFD flow divider valve?",
+          "a": "The base model FSCD sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FSCDXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve?",
+          "a": "The FSCD, FSDD, FSED, FSFD is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve have by series?",
+          "a": "Capacity runs from 1.5 - 8 gpm or 6 - 30 L/min on FSCD (series 1) to 12 - 60 gpm or 45 - 240 L/min on FSFD (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve come with?",
+          "a": "Seal options on the FSCD, FSDD, FSED, FSFD are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in FSCDXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve fit?",
+          "a": "The FSCD, FSDD, FSED, FSFD screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve?",
+          "a": "Sun supplies a seal kit for every series of the FSCD, FSDD, FSED, FSFD. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve installed?",
+          "a": "Screw the FSCD, FSDD, FSED, FSFD into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FSCD, FSDD, FSED, FSFD flow divider valve used?",
+          "a": "The FSCD, FSDD, FSED, FSFD is used for unidirectional hydraulic motors, cylinders that only need dividing in one direction, and serving several circuits from one pump. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FSCD, FSDD, FSED, FSFD or FSCA, FSDA, FSEA, FSFA: what is the difference?",
+          "a": "The FSCD, FSDD, FSED, FSFD is the flow divider valve version, rated 1.5 - 8 gpm or 6 - 30 L/min to 12 - 60 gpm or 45 - 240 L/min, while the [FSCA, FSDA, FSEA, FSFA](/p/sun-hydraulics-closed-center-flow-divider-combiner-valve) is the closed center and flow divider-combiner valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FSCD, FSDD, FSED, FSFD in Dubai?",
+          "a": "Yes. The Sun Hydraulics FSCD, FSDD, FSED, FSFD sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbd-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBD pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBD is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBD pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBD (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBDXDN for the FPBD pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBD sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBDXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBD pilot-operated electro-proportional throttle?",
+          "a": "The FPBD is rated 3000 psi or 210 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@3000 psi (0,07 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBD pilot-operated electro-proportional throttle have?",
+          "a": "The FPBD is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBD pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBD are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBDXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBD pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBD screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBD pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBD. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBD pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBD into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBD pilot-operated electro-proportional throttle used?",
+          "a": "The FPBD is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBD or FPBM: what is the difference?",
+          "a": "The FPBD is the normally closed version, rated 5 gpm or 20 L/min, while the [FPBM](/p/sun-hydraulics-fpbm-pilot-operated-electro-proportional-throttle) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBD in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FPBD in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbe-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBE pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBE is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBE pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBE (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBEXDN for the FPBE pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBE sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBEXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBE pilot-operated electro-proportional throttle?",
+          "a": "The FPBE is rated 3000 psi or 210 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@3000 psi (0,07 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBE pilot-operated electro-proportional throttle have?",
+          "a": "The FPBE is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBE pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBE are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBEXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBE pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBE screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBE pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBE. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBE pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBE into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBE pilot-operated electro-proportional throttle used?",
+          "a": "The FPBE is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBE or FPBN: what is the difference?",
+          "a": "The FPBE is the normally closed version, rated 5 gpm or 20 L/min, while the [FPBN](/p/sun-hydraulics-fpbn-pilot-operated-electro-proportional-throttle) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBE in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FPBE at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbf-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBF pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBF is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBF pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBF (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBFXDN for the FPBF pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBF sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBFXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBF pilot-operated electro-proportional throttle?",
+          "a": "The FPBF is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@3000 psi (0,07 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBF pilot-operated electro-proportional throttle have?",
+          "a": "The FPBF is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBF pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBF are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBFXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBF pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBF screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBF pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBF. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBF pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBF into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBF pilot-operated electro-proportional throttle used?",
+          "a": "The FPBF is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBF or FPBI: what is the difference?",
+          "a": "The FPBF is the normally closed version, rated 5 gpm or 20 L/min, while the [FPBI](/p/sun-hydraulics-fpbi-pilot-operated-electro-proportional-throttle) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBF in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FPBF in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbg-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBG pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBG is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBG pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBG (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBGXDN for the FPBG pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBG sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBGXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBG pilot-operated electro-proportional throttle?",
+          "a": "The FPBG is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@5000 psi (0,07 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBG pilot-operated electro-proportional throttle have?",
+          "a": "The FPBG is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBG pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBG are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBGXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBG pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBG screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBG pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBG. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBG pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBG into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBG pilot-operated electro-proportional throttle used?",
+          "a": "The FPBG is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBG or FPBJ: what is the difference?",
+          "a": "The FPBG is the normally closed version, rated 5 gpm or 20 L/min, while the [FPBJ](/p/sun-hydraulics-fpbj-pilot-operated-electro-proportional-throttle) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBG in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FPBG at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbi-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBI pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBI is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBI pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBI (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBIXDN for the FPBI pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBI sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBIXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBI pilot-operated electro-proportional throttle?",
+          "a": "The FPBI is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@5000 psi (0,07 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBI pilot-operated electro-proportional throttle have?",
+          "a": "The FPBI is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBI pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBI are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBIXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBI pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBI screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBI pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBI. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBI pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBI into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBI pilot-operated electro-proportional throttle used?",
+          "a": "The FPBI is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBI or FPBF: what is the difference?",
+          "a": "The FPBI is the normally open version, rated 5 gpm or 20 L/min, while the [FPBF](/p/sun-hydraulics-fpbf-pilot-operated-electro-proportional-throttle) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBI in Dubai?",
+          "a": "Yes, the Sun Hydraulics FPBI is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbj-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBJ is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBJ (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBJXDN for the FPBJ pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBJ sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBJXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle?",
+          "a": "The FPBJ is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@5000 psi (0,07 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBJ pilot-operated electro-proportional throttle have?",
+          "a": "The FPBJ is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBJ are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBJXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBJ screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBJ. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBJ into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBJ pilot-operated electro-proportional throttle used?",
+          "a": "The FPBJ is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBJ or FPBG: what is the difference?",
+          "a": "The FPBJ is the normally open version, rated 5 gpm or 20 L/min, while the [FPBG](/p/sun-hydraulics-fpbg-pilot-operated-electro-proportional-throttle) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBJ in Dubai?",
+          "a": "Yes, the Sun Hydraulics FPBJ is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbm-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBM pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBM is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBM pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBM (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBMXDN for the FPBM pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBM sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBMXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBM pilot-operated electro-proportional throttle?",
+          "a": "The FPBM is rated 3000 psi or 210 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@3000 psi (0,07 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBM pilot-operated electro-proportional throttle have?",
+          "a": "The FPBM is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBM pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBM are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBMXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBM pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBM screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBM pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBM. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBM pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBM into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBM pilot-operated electro-proportional throttle used?",
+          "a": "The FPBM is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBM or FPBD: what is the difference?",
+          "a": "The FPBM is the normally open version, rated 5 gpm or 20 L/min, while the [FPBD](/p/sun-hydraulics-fpbd-pilot-operated-electro-proportional-throttle) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBM in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FPBM in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbn-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBN pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPBN is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPBN pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPBN (series 0, T-162A cavity, 5 gpm or 20 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPBNXDN for the FPBN pilot-operated electro-proportional throttle?",
+          "a": "The base model FPBN sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPBNXDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPBN pilot-operated electro-proportional throttle?",
+          "a": "The FPBN is rated 3000 psi or 210 bar maximum operating pressure on every listed version. Maximum leakage is 0.004 in³/min.@3000 psi (0,07 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPBN pilot-operated electro-proportional throttle have?",
+          "a": "The FPBN is rated 5 gpm or 20 L/min in series 0, which screws into a T-162A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPBN pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPBN are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPBNXDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPBN pilot-operated electro-proportional throttle fit?",
+          "a": "The FPBN screws into the T-162A cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPBN pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPBN. Listed kits: series 0, Buna: 990162007, Viton: 990162006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPBN pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPBN into its T-162A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPBN pilot-operated electro-proportional throttle used?",
+          "a": "The FPBN is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPBN or FPBE: what is the difference?",
+          "a": "The FPBN is the normally open version, rated 5 gpm or 20 L/min, while the [FPBE](/p/sun-hydraulics-fpbe-pilot-operated-electro-proportional-throttle) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPBN in Dubai?",
+          "a": "Yes, the Sun Hydraulics FPBN is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpcc-electro-proportional-throttle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPCC electro-proportional throttle valve used for?",
+          "a": "The Sun Hydraulics FPCC is a direct-acting proportional throttle: the coil current sets the size of a metering orifice, normally closed or normally open depending on the version. It largely compensates itself in the 1-to-2 direction and needs an external compensator for proportional control the other way."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPCC electro-proportional throttle valve come in?",
+          "a": "It is built in one version, FPCC (series 1, T-13A cavity, 10 gpm or 40 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPCCXCN for the FPCC electro-proportional throttle valve?",
+          "a": "The base model FPCC sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPCCXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPCC electro-proportional throttle valve?",
+          "a": "The FPCC is rated a maximum maximum operating pressure on every listed version. Maximum leakage is 6 in³/min.@3000 psi (100 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPCC electro-proportional throttle valve have?",
+          "a": "The FPCC is rated 10 gpm or 40 L/min in series 1, which screws into a T-13A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPCC electro-proportional throttle valve come with?",
+          "a": "Seal options on the FPCC are N = Buna-N, L = Extended Temp. Buna, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in FPCCXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPCC electro-proportional throttle valve fit?",
+          "a": "The FPCC screws into the T-13A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPCC electro-proportional throttle valve?",
+          "a": "Sun supplies a seal kit for every series of the FPCC. Listed kits: series 1, Buna: 990413007, EPDM: 990010014, Polyurethane: 990413002, Viton: 990413006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPCC electro-proportional throttle valve installed?",
+          "a": "Screw the FPCC into its T-13A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPCC electro-proportional throttle valve used?",
+          "a": "The FPCC is used for electronic speed control of cylinders and motors. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPCC or FPCH: what is the difference?",
+          "a": "The FPCC is the normally closed version, rated 10 gpm or 40 L/min, while the [FPCH](/p/sun-hydraulics-fpch-electro-proportional-throttle-valve) is the normally open version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPCC in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FPCC in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpch-electro-proportional-throttle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPCH electro-proportional throttle valve used for?",
+          "a": "The Sun Hydraulics FPCH is a direct-acting proportional throttle: the coil current sets the size of a metering orifice, normally closed or normally open depending on the version. It largely compensates itself in the 1-to-2 direction and needs an external compensator for proportional control the other way."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPCH electro-proportional throttle valve come in?",
+          "a": "It is built in one version, FPCH (series 1, T-13A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPCHXCN for the FPCH electro-proportional throttle valve?",
+          "a": "The base model FPCH sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPCHXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPCH electro-proportional throttle valve?",
+          "a": "The FPCH is rated a maximum maximum operating pressure on every listed version. Maximum leakage is 6 in³/min.@3000 psi (100 cc/min.@210 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPCH electro-proportional throttle valve have?",
+          "a": "The FPCH is rated 7 gpm or 28 L/min in series 1, which screws into a T-13A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPCH electro-proportional throttle valve come with?",
+          "a": "Seal options on the FPCH are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in FPCHXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPCH electro-proportional throttle valve fit?",
+          "a": "The FPCH screws into the T-13A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPCH electro-proportional throttle valve?",
+          "a": "Sun supplies a seal kit for every series of the FPCH. Listed kits: series 1, Buna: 990413007, Polyurethane: 990413002, Viton: 990413006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPCH electro-proportional throttle valve installed?",
+          "a": "Screw the FPCH into its T-13A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPCH electro-proportional throttle valve used?",
+          "a": "The FPCH is used for electronic speed control of cylinders and motors. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPCH or FPCC: what is the difference?",
+          "a": "The FPCH is the normally open version, rated 7 gpm or 28 L/min, while the [FPCC](/p/sun-hydraulics-fpcc-electro-proportional-throttle-valve) is the normally closed version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPCH in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FPCH in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpjp-pilot-operated-electro-proportional-throttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPJP pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPJP is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPJP pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in one version, FPJP (series 4, T-18A cavity, 114 gpm or 431 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPJPXGN for the FPJP pilot-operated electro-proportional throttle?",
+          "a": "The base model FPJP sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPJPXGN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPJP pilot-operated electro-proportional throttle?",
+          "a": "The FPJP is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 20 drops/min.@5000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FPJP pilot-operated electro-proportional throttle have?",
+          "a": "The FPJP is rated 114 gpm or 431 L/min in series 4, which screws into a T-18A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPJP pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPJP are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FPJPXGN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPJP pilot-operated electro-proportional throttle fit?",
+          "a": "The FPJP screws into the T-18A cavity for series 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPJP pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPJP. Listed kits: series 4, Buna: 990018007, Viton: 990018006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPJP pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPJP into its T-18A cavity and tighten to 350 - 375 lbf ft (474 - 508 Nm) on a 1 5/8 in. (41,3 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPJP pilot-operated electro-proportional throttle used?",
+          "a": "The FPJP is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPJP or FPBG: what is the difference?",
+          "a": "The FPJP is the pilot-operated and (740 series) version, rated 114 gpm or 431 L/min, while the [FPBG](/p/sun-hydraulics-fpbg-pilot-operated-electro-proportional-throttle) is the flex series pilot-operated and flow 2-1 version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPJP in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FPJP at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-frel-adjustable-priority-flow-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FREL adjustable priority flow control valve used for?",
+          "a": "The Sun Hydraulics FREL is a fully adjustable, pressure-compensated priority flow control: flow at port 1 supplies the priority outlet (port 3) first, and the excess goes out of port 2. With port 2 blocked it works as a 2-way pressure-compensated flow control."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FREL adjustable priority flow control valve come in?",
+          "a": "It is built in one version, FREL (series 3, T-17A cavity, 30 gpm or 120 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FRELLAN for the FREL adjustable priority flow control valve?",
+          "a": "In FRELLAN, FREL is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is .02 - 18 gpm; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FREL adjustable priority flow control valve?",
+          "a": "The FREL is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FREL adjustable priority flow control valve have?",
+          "a": "The FREL is rated 30 gpm or 120 L/min in series 3, which screws into a T-17A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FREL adjustable priority flow control valve come with?",
+          "a": "Seal options on the FREL are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FRELLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FREL adjustable priority flow control valve fit?",
+          "a": "The FREL screws into the T-17A cavity for series 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FREL adjustable priority flow control valve?",
+          "a": "The listing gives no seal kit numbers for the FREL. Send us the model code and we confirm the seal kit with Sun before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FREL adjustable priority flow control valve installed?",
+          "a": "Screw the FREL into its T-17A cavity and tighten to 150 - 160 lbf ft (203 - 217 Nm) on a 1 1/4 in. (31,8 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FREL adjustable priority flow control valve used?",
+          "a": "The FREL is used for setting priority flow on the machine instead of at the factory. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FREL or FRBA, FRCA, FRDA, FREA, FRFA: what is the difference?",
+          "a": "The FREL is the 3-way, fully adjustable and priority flow control valve version, rated 30 gpm or 120 L/min, while the [FRBA, FRCA, FRDA, FREA, FRFA](/p/sun-hydraulics-fixed-orifice-bypass-restrictive-priority-flow-control-valve) is the fixed-orifice, priority and flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FREL in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FREL in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

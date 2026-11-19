@@ -1,0 +1,210 @@
+{
+  "family": "industrial-steam-hoses",
+  "extraFacts": [
+    {
+      "fact": "Steam hose safety factor: the safety factor is the ratio of minimum burst pressure to working pressure; the industrial hose guide quotes 10:1 for steam hose against 3:1 for water and 4:1 for chemicals. BS 5342 / EN ISO 6134 type 2 class A covers saturated steam hose.",
+      "source": "Indus Hydraulics steam hose listings; /blog/industrial-hose-safety-factors"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Black Saturated Steam Hose 10 Bar [IH-IH-A235BK]:   XX | Application Family industrial-steam; Manufacturer Part Code A235BK; Inner Diameter Range 13 mm to 25 mm; Max Working Pressure 10 bar; Min Bend Radius 91-175 mm; Operating Temperature From -20°C to +170°C; Safety Factor 10:1; Cover Material Black mandrel wrap, ozone and weather resistant pin pricked EPDM; Lining / Tube Material Black EPDM; Reinforcement High tensile strength textile plies; Weight 0.40-0.80 kg/m; Hose Branding (Printed) INDUS LOGO, BLACK SATURATED STEAM HOSE 10 BAR; Min Burst Pres | 3 part numbers (e.g. IH-IH-A235BK-013, IH-IH-A235BK-019, IH-IH-A235BK-025); hoseOD 25 to 40; bendRadius 91 to 175; weightPerMetre 0.4 to 0.8; rows:  /  /  || High Pressure Red Saturated Steam Hose 18 Bar [IH-IH-A230]:   XX | Application Family industrial-steam; Manufacturer Part Code A230; Inner Diameter Range 13 mm to 51 mm; Max Working Pressure 18 bar; Min Burst Pressure 180 bar; Min Bend Radius 130-500 mm; Operating Temperature From -40°C to +210°C. Intermittent 232°C; Safety Factor 10:1; Cover Material Red mandrel wrap, ozone and weather resistant pin pricked EPDM. (Also available in black); Lining / Tube Material Black EPDM; Reinforcement 2 ply multi stranded high tensile strength steel wires; Weight 0.53-2.20  | 6 part numbers (e.g. IH-IH-A230-013, IH-IH-A230-019, IH-IH-A230-025, IH-IH-A230-032); hoseOD 25 to 67; bendRadius 130 to 500; burstPressure 180; weightPerMetre 0.53 to 2.2; rows:  /  /  /  /  /  || Steam, Hot Water & Food Hose 7 Bar [IH-IH-A235BU]:   XX | Application Family industrial-steam; Manufacturer Part Code A235BU; Inner Diameter Range 13 mm to 25 mm; Max Working Pressure 7 bar; Min Burst Pressure 70 bar; Min Bend Radius 91-175 mm; Operating Temperature From -20°C to +170°C (STEAM) +95°C (HOT WATER); Safety Factor 10:1; Cover Material Blue mandrel wrap, ozone and weather resistant pin pricked EPDM; Lining / Tube Material White food grade EPDM rubber FDA approved compounds; Reinforcement High tensile strength textile plies; Weight 0.40-0.80 | 4 part numbers (e.g. IH-IH-A235BU-013, IH-IH-A235BU-016, IH-IH-A235BU-019, IH-IH-A235BU-025); hoseOD 24 to 39; bendRadius 91 to 175; burstPressure 70; weightPerMetre 0.4 to 0.8; rows:  /  /  / ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "black-saturated-steam-hose-10-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Black Saturated Steam Hose 10 Bar (A235BK) used for?",
+          "a": "The black A235BK saturated steam hose carries saturated steam at up to 10 bar and +170 °C, used in petrochemical plants and refineries for maintenance and pipe insulation. It has a black EPDM tube, textile reinforcement and a black pin-pricked EPDM cover; see the [industrial steam hoses shelf](/c/industrial-steam-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the A235BK part numbers such as IH-IH-A235BK-019?",
+          "a": "The last three digits are the bore in millimetres: -013 is 13 mm (1/2\"), -019 is 19 mm (3/4\") and -025 is 25 mm (1\"), as the size table shows. A235BK is the hose code and the black cover."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the black A235BK steam hose come in?",
+          "a": "Three sizes: 1/2\" (13 mm), 3/4\" (19 mm) and 1\" (25 mm), with outside diameters of 25, 32 and 40 mm. Bend radius is 91, 133 and 175 mm and weight 0.4, 0.6 and 0.8 kg/m."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the black A235BK steam hose rated for?",
+          "a": "The working pressure is 10 bar with a minimum burst pressure of 100 bar, a 10:1 safety factor, from -20°C to +170°C. Branding on the hose reads A235 Saturated Steam 10 BAR SF 10:1 170 deg C BS5122 A2."
+        },
+        {
+          "slot": "F",
+          "q": "What is the A235BK steam hose made of?",
+          "a": "A black EPDM tube, high tensile strength textile plies as reinforcement, and a black mandrel-wrap, ozone- and weather-resistant pin-pricked EPDM cover. The pin-pricked cover lets trapped steam vent."
+        },
+        {
+          "slot": "G",
+          "q": "Why does the 10:1 safety factor matter on steam hose?",
+          "a": "The safety factor is the ratio of minimum burst pressure to working pressure; the A235BK is rated 10 bar with 100 bar minimum burst, which is 10:1. Steam hose is rated at a higher safety factor than water hose because of the heat and the steam pressure."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings go on the A235BK steam hose?",
+          "a": "The listing recommends matching couplings and accessories: cam and groove, Boss steam couplings, hose clamps and permanently-attached fittings; see the [steam hose safety guide](/blog/steam-hose-safety) on why the coupling matters more than the hose."
+        },
+        {
+          "slot": "I",
+          "q": "How should the black A235BK 10 bar steam hose be installed?",
+          "a": "Keep the black A235BK 10 bar steam hose above its minimum bend radius, avoid twisting, and use couplings rated for steam with the hose clamped as the maker recommends; see the [steam hose safety guide](/blog/steam-hose-safety). Rows list 3 sizes, from IH-IH-A235BK-013, IH-IH-A235BK-019 and IH-IH-A235BK-025."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the black A235BK 10 bar steam hose typically used?",
+          "a": "The black A235BK 10 bar steam hose is used on plant steam lines: the listing names petrochemical plants and refineries for maintenance and pipe insulation, and the [industrial hose guide](/blog/industrial-hose-guide) helps pick a hose by application."
+        },
+        {
+          "slot": "K",
+          "q": "How does the black 10 bar steam hose compare with the red 18 bar hose?",
+          "a": "The black A235BK is rated 10 bar with textile plies in 1/2\" to 1\", while the [red A230 hose](/p/high-pressure-red-saturated-steam-hose-18-bar) is rated 18 bar with 2-ply steel wire reinforcement in 1/2\" to 2\" and to +210°C."
+        },
+        {
+          "slot": "L",
+          "q": "Can the black A235BK 10 bar steam hose be supplied as a made-up assembly from Dubai?",
+          "a": "Yes. Specify the inner diameter, assembly length, end fittings and any special requirements such as Lloyd's certification or third-party witness testing, and Indus engineering confirms the assembly drawing on the request. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Is the black A235BK 10 bar steam hose in stock in Dubai?",
+          "a": "Yes. We keep the black A235BK 10 bar steam hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "high-pressure-red-saturated-steam-hose-18-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the High Pressure Red Saturated Steam Hose 18 Bar (A230) used for?",
+          "a": "The red A230 hose carries saturated steam at up to 18 bar, used in petrochemical plants and refineries for maintenance and pipe insulation. It has a black EPDM tube, 2 ply multi stranded high tensile steel wire reinforcement and a red pin-pricked EPDM cover; see the [industrial steam hoses shelf](/c/industrial-steam-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the A230 part numbers such as IH-IH-A230-032?",
+          "a": "The last three digits are the bore in millimetres: -013 is 13 mm (1/2\"), -019 3/4\", -025 1\", -032 1-1/4\", -038 1-1/2\" and -051 51 mm (2\"), as the size table shows. A230 is the hose code."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the A230 18 bar steam hose come in?",
+          "a": "Six sizes from 1/2\" (13 mm) to 2\" (51 mm), with outside diameters from 25 to 67 mm. Bend radius runs from 130 to 500 mm and weight from 0.53 to 2.2 kg/m."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the A230 steam hose rated for?",
+          "a": "The working pressure is 18 bar with a minimum burst pressure of 180 bar (10:1), from -40°C to +210°C, with an intermittent limit of 232°C. The hose is printed INDUS LOGO, A230 SUPER STEAM 18 BAR."
+        },
+        {
+          "slot": "F",
+          "q": "What is the A230 steam hose made of?",
+          "a": "A black EPDM tube, two plies of multi stranded high tensile steel wire, and a red mandrel-wrap, ozone- and weather-resistant pin-pricked EPDM cover (also available in black)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the A230 steam hose family follow?",
+          "a": "The family text gives saturated-steam transfer hoses to BS 5342 / EN ISO 6134 type 2 class A for 7 to 18 bar service. The branding on the hose gives the 10:1 safety factor."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and sleeves go with the A230 steam hose?",
+          "a": "The listing recommends cam and groove and Boss steam couplings, hose clamps, permanently-attached fittings, hose tags and protective sleeves; see the [ground joint steam couplings guide](/blog/ground-joint-steam-couplings) for the coupling style."
+        },
+        {
+          "slot": "I",
+          "q": "How should the red A230 18 bar steam hose be installed?",
+          "a": "Keep the red A230 18 bar steam hose above its minimum bend radius, avoid twisting, and use couplings rated for steam with the hose clamped as the maker recommends; see the [steam hose safety guide](/blog/steam-hose-safety). Rows list 6 sizes, from IH-IH-A230-013, IH-IH-A230-019 and IH-IH-A230-025."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the red A230 18 bar steam hose typically used?",
+          "a": "The red A230 18 bar steam hose is used on plant steam lines: the listing names petrochemical plants and refineries for maintenance and pipe insulation, and the [industrial hose guide](/blog/industrial-hose-guide) helps pick a hose by application."
+        },
+        {
+          "slot": "K",
+          "q": "How does the red 18 bar steam hose compare with the black 10 bar hose?",
+          "a": "The red A230 is rated 18 bar with steel wire reinforcement and up to 2\", while the [black A235BK](/p/black-saturated-steam-hose-10-bar) is rated 10 bar with textile plies and stops at 1\"."
+        },
+        {
+          "slot": "L",
+          "q": "Can the red A230 18 bar steam hose be supplied as a made-up assembly from Dubai?",
+          "a": "Yes. Specify the inner diameter, assembly length, end fittings and any special requirements such as Lloyd's certification or third-party witness testing, and Indus engineering confirms the assembly drawing on the request. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Is the red A230 18 bar steam hose in stock in Dubai?",
+          "a": "Yes, we carry the red A230 18 bar steam hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steam-hot-water-food-hose-7-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steam, Hot Water and Food Hose 7 Bar (A235BU) used for?",
+          "a": "The blue A235BU is a multi-purpose steam, hot water and food hose rated 7 bar. It has a white food grade EPDM tube (FDA approved compounds), textile reinforcement and a blue pin-pricked EPDM cover; see the [industrial steam hoses shelf](/c/industrial-steam-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the A235BU part numbers such as IH-IH-A235BU-016?",
+          "a": "The last three digits are the bore in millimetres: -013 is 13 mm (1/2\"), -016 is 16 mm (5/8\"), -019 is 19 mm (3/4\") and -025 is 25 mm (1\"), as the size table shows."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the A235BU steam and food hose come in?",
+          "a": "Four sizes: 1/2\", 5/8\", 3/4\" and 1\" (13 to 25 mm), with outside diameters of 24, 28, 32 and 39 mm. Bend radius is 91, 112, 133 and 175 mm."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the A235BU hose rated for?",
+          "a": "The working pressure is 7 bar with a minimum burst pressure of 70 bar, a 10:1 safety factor. The temperature range is -20°C to +170°C on steam and up to +95°C on hot water."
+        },
+        {
+          "slot": "F",
+          "q": "What is the A235BU hose lined with?",
+          "a": "A white food grade EPDM tube made from FDA approved compounds, with high tensile strength textile plies and a blue ozone- and weather-resistant pin-pricked EPDM cover."
+        },
+        {
+          "slot": "G",
+          "q": "What does the blue cover of the A235BU hose indicate?",
+          "a": "The cover is blue and the hose is printed INDUS LOGO, A235 STEAM HOT WATER FOOD, so it can be told from the black steam hose on site. The food-grade white tube is what makes it suitable for food contact."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings go with the A235BU steam and food hose?",
+          "a": "Cam and groove, Boss steam couplings and hose clamps are listed as companion products. Choose stainless or food-grade fittings where the hose carries food."
+        },
+        {
+          "slot": "I",
+          "q": "How should the blue A235BU steam, hot water and food hose be installed?",
+          "a": "Keep the blue A235BU steam, hot water and food hose above its minimum bend radius, avoid twisting, and use couplings rated for steam with the hose clamped as the maker recommends; see the [steam hose safety guide](/blog/steam-hose-safety). Rows list 4 sizes, from IH-IH-A235BU-013, IH-IH-A235BU-016 and IH-IH-A235BU-019."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the blue A235BU steam, hot water and food hose typically used?",
+          "a": "The blue A235BU steam, hot water and food hose is used on plant steam lines: the listing names petrochemical plants and refineries for maintenance and pipe insulation, and the [industrial hose guide](/blog/industrial-hose-guide) helps pick a hose by application."
+        },
+        {
+          "slot": "K",
+          "q": "How does the A235BU compare with the black A235BK steam hose?",
+          "a": "The A235BU is rated 7 bar and carries food and hot water, while the [black A235BK](/p/black-saturated-steam-hose-10-bar) is rated 10 bar for steam only; both use textile plies and a 10:1 safety factor."
+        },
+        {
+          "slot": "L",
+          "q": "Can the blue A235BU steam, hot water and food hose be supplied as a made-up assembly from Dubai?",
+          "a": "Yes. Specify the inner diameter, assembly length, end fittings and any special requirements such as Lloyd's certification or third-party witness testing, and Indus engineering confirms the assembly drawing on the request. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Is the blue A235BU steam, hot water and food hose in stock in Dubai?",
+          "a": "Yes, we hold the blue A235BU steam, hot water and food hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

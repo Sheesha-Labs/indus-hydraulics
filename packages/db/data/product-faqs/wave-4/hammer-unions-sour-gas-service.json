@@ -1,0 +1,612 @@
+{
+  "family": "hammer-unions-sour-gas-service",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Sour gas service ratings on the Indus sour-service hammer union listings: Figure 1502 10,000 psi; Figure 1002 7,500 psi to 4\" and 5,000 psi at 5\" and 6\"; Figure 1003 7,500 psi in 2\" and 3\" and 5,000 psi in 4\" and 5\"; Figure 1004 7,500 psi; Figure 602 6,000 psi; Figure 2202 15,000 psi, butt weld 2\" to 6\", is the sour-gas figure for 15,000 psi.",
+      "source": "Indus Hydraulics Sour Gas Service Hammer Unions listings (/c/hammer-unions-sour-gas-service) and the guide /blog/hammer-union-figure-numbers (as-of 2026-10-06)"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "Accidents, including a fatality, have followed from hammering on hammer unions while the line was under pressure; bleed all pressure off a line before breaking it, and use lockout/tagout and permit-to-work on pressurised lines.",
+      "source": "IADC Safety Alert 03-16 (iadc.org/safety-alerts/alert-03-16-mismatched-hammer-unions-still-found)"
+    },
+    {
+      "fact": "On elastomer-sealed hammer union figures the seal ring is a service item and should be replaced whenever it is cut, flattened or hardened. To order a union, give the figure, size, end connection and weld schedule, and whether the service is standard or sour.",
+      "source": "Indus Hydraulics guide /blog/hammer-union-figure-numbers, section 5"
+    }
+  ],
+  "products": [
+    {
+      "slug": "figure-1002-hammer-union-butt-weld-sour-gas-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1002 butt weld sour gas hammer union used for?",
+          "a": "A Figure 1002 sour gas butt weld hammer union is a low-alloy steel union with Sch XXS butt weld ends, supplied in H2S trim for cementing, acidizing, fracturing and choke lines. It is listed from 1\" to 6\" and is rated 7,500 psi (517 bar) falling with size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HU-1002-BWXXS-SOUR-0300 on a sour Figure 1002 union?",
+          "a": "IH-HU-1002-BWXXS-SOUR-0300 is a Figure 1002 union with Sch XXS butt weld ends, sour gas trim, 3\" size. The last four digits give the size, from 0100 for 1\" to 0600 for 6\", and the size table lists each part number with its weight and dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the sour Figure 1002 butt weld hammer union by size?",
+          "a": "The sour Figure 1002 butt weld union is rated 7,500 psi (517 bar) cold working pressure at 1\", 2\", 3\" and 4\", and 5,000 psi (345 bar) at 5\" and 6\". The 1\" to 4\" sizes are tested at 12,000 psi. Read the rating for your size in the table, not from the figure number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the sour Figure 1002 butt weld union come in?",
+          "a": "It is listed in 1\", 2\", 3\", 4\", 5\" and 6\" with Sch XXS butt weld ends, weighing from 1,800 g at 1\" to 39,000 g at 6\". For line pipe threaded ends see the [sour Figure 1002 threaded union](/p/figure-1002-hammer-union-threaded-sour-gas-service-7500-psi), which covers 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the sour Figure 1002 or Figure 1004 at 5\" or 6\"?",
+          "a": "At 5\" and 6\" the sour Figure 1002 is rated 5,000 psi and seals on an O-ring, while the [sour Figure 1004 butt weld union](/p/figure-1004-hammer-union-butt-weld-sour-gas-service-7500-psi) is rated 7,500 psi with a lip-type seal. Choose the 1004 if you need the higher rating or want to avoid making an O-ring union up perfectly square."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the sour Figure 1002 butt weld union use?",
+          "a": "It is low-alloy steel with a replaceable elastomer seal ring, lip type from 1\" to 4\" and O-ring at 5\" and 6\". The seal is made by the seat and ring, not the thread, so a leaking union usually needs a new seal ring or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard Figure 1002 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service; the standard service Figure 1002 is not the sour version. Confirm the service class, the trim and the certification you need on the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a sour Figure 1002 butt weld hammer union?",
+          "a": "A Figure 1002 mates only with another Figure 1002 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a sour Figure 1002 butt weld union made up and serviced?",
+          "a": "A Figure 1002 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the sour Figure 1002 differ from the standard service version?",
+          "a": "The sour Figure 1002 is supplied in H2S trim and is rated 7,500 psi to 4\", below the standard service union of the same figure. See the [standard service Figure 1002](/p/hammer-union-set-1002-series-npt-npt-10-000-psi-standard-service) if the line carries no H2S, and read the sizes table for each rating."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 1002 butt weld sour gas hammer union?",
+          "a": "The Figure 1002 butt weld sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 1002 butt weld sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 1002 butt weld sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-1002-hammer-union-threaded-sour-gas-service-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1002 threaded sour gas hammer union used for?",
+          "a": "A Figure 1002 sour gas threaded hammer union has line pipe threaded ends and is supplied in H2S trim for cementing, acidizing, fracturing and choke lines. It is listed from 1\" to 4\" and rated 7,500 psi (517 bar), tested at 12,000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HU-1002-NPT-SOUR-0200 on a threaded Figure 1002 union?",
+          "a": "IH-HU-1002-NPT-SOUR-0200 is a Figure 1002 union with line pipe threaded ends, sour gas trim, 2\" size. The last four digits give the size, from 0100 for 1\" to 0400 for 4\", and the size table lists each part number with its weight and dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the threaded sour Figure 1002 hammer union?",
+          "a": "The threaded sour Figure 1002 union is rated 7,500 psi (517 bar) cold working pressure at every listed size from 1\" to 4\", tested at 12,000 psi. Read the rating in the size table for your size before you specify."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the threaded sour Figure 1002 union come in?",
+          "a": "It is listed in 1\", 2\", 3\" and 4\" with line pipe threaded ends, weighing from 1,800 g at 1\" to 15,500 g at 4\". The 5\" and 6\" sizes are butt weld only; see the [sour Figure 1002 butt weld union](/p/figure-1002-hammer-union-butt-weld-sour-gas-service)."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a threaded or butt weld sour Figure 1002 union?",
+          "a": "Choose the threaded union where the line is made up from threaded pipe and may be broken out again, and the [butt weld sour Figure 1002](/p/figure-1002-hammer-union-butt-weld-sour-gas-service) where the union is welded into the line. Threads are a pressure path as well, so check the pipe thread and condition on the order."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the threaded sour Figure 1002 union use?",
+          "a": "It is low-alloy steel with a replaceable elastomer seal ring, lip type from 1\" to 4\". The seal is made by the seat and ring, not the thread, so a leaking union usually needs a new seal ring or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard service threaded Figure 1002 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service; the standard service Figure 1002 is not the sour version. Confirm the service class, the trim and the certification you need on the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a threaded sour Figure 1002 hammer union?",
+          "a": "A Figure 1002 mates only with another Figure 1002 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a threaded sour Figure 1002 union made up and serviced?",
+          "a": "A Figure 1002 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the threaded sour Figure 1002 differ from the standard service threaded union?",
+          "a": "The sour union is supplied in H2S trim and rated 7,500 psi, below the standard service union of the same figure. See the [standard service Figure 1002 threaded union](/p/hammer-union-set-1002-series-npt-npt-10-000-psi-standard-service) for lines without H2S."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 1002 threaded sour gas hammer union?",
+          "a": "The Figure 1002 threaded sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 1002 threaded sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 1002 threaded sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-1003-misaligning-hammer-union-sour-gas-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1003 misaligning sour gas hammer union used for?",
+          "a": "A Figure 1003 misaligning hammer union is used for high-pressure water, oil, mud or gas service where the pipe will not line up. This sour gas version takes up to 7.5° off the centre line (15° included), and is listed from 2\" to 5\" in line pipe threaded and Sch XXS butt weld ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on a sour Figure 1003 misaligning union?",
+          "a": "The part numbers carry the figure number 1003, the end type (threaded or butt weld), the sour trim and a four-digit size, so a number ending 0300 is the 3\" union. The size table lists each part number with its weight and dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the sour Figure 1003 misaligning hammer union by size?",
+          "a": "The sour Figure 1003 is rated 7,500 psi (517 bar) cold working pressure at 2\" and 3\", and 5,000 psi (345 bar) at 4\" and 5\". Manufacturers do not agree on the Figure 1003 rating, so work to the rating stamped on the union in front of you."
+        },
+        {
+          "slot": "D",
+          "q": "How much misalignment does the sour Figure 1003 hammer union take?",
+          "a": "It takes up to 7.5° off the centre line, 15° included, with the 2\" size at 3.5° off the centre line and 7° included. The O-ring seal holds pressure at any position within that allowance, over steel-to-steel seating."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and end connections does the sour Figure 1003 union come in?",
+          "a": "It is listed in 2\", 3\", 4\" and 5\" in line pipe threaded and Sch XXS butt weld ends, and the 5\" is butt weld only. Weights run from 5,600 g at 2\" threaded to 36,900 g at 4\" butt weld."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the sour Figure 1003 union use?",
+          "a": "It uses an O-ring over steel-to-steel seating, which holds pressure at any position within the misalignment allowance. The seal is made by the seat and ring, not the thread, so a leak usually needs a new seal ring or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard Figure 1003 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service. Sour gas unions are rated below the standard service union of the same figure wherever a separate H2S rating is published, so read the size table rating."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a sour Figure 1003 hammer union?",
+          "a": "A Figure 1003 mates only with another Figure 1003 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a sour Figure 1003 union made up and serviced?",
+          "a": "A Figure 1003 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the sour Figure 1003 differ from a Figure 1002 union?",
+          "a": "The Figure 1003 allows pipe misalignment and is rated 7,500 psi at 2\" and 3\", while the [sour Figure 1002](/p/figure-1002-hammer-union-butt-weld-sour-gas-service) is rigid and is rated 7,500 psi to 4\". They are different figures and must never be joined."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 1003 misaligning sour gas hammer union?",
+          "a": "The Figure 1003 misaligning sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 1003 misaligning sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 1003 misaligning sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-1004-hammer-union-butt-weld-sour-gas-service-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1004 butt weld sour gas hammer union used for?",
+          "a": "A Figure 1004 sour gas butt weld hammer union is a 5\" and 6\" union with lip-type elastomer seals, in place of the O-ring of the 5\" and 6\" Figure 1002. It is rated 7,500 psi (517 bar) in sour gas service."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HU-1004 on a sour Figure 1004 union?",
+          "a": "The part numbers run IH-HU-1004 with the end type, sour trim and a four-digit size, so the two sizes are 0500 for 5\" and 0600 for 6\". The size table lists each part number with its weight and dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the sour Figure 1004 hammer union?",
+          "a": "The sour Figure 1004 is rated 7,500 psi (517 bar) cold working pressure at 5\" and 6\". Sour gas unions are rated below the standard service union of the same figure wherever a separate H2S rating is published."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the sour Figure 1004 union come in?",
+          "a": "It is listed in 5\" and 6\", butt weld ends only, weighing 38,600 g at 5\" and 63,600 g at 6\". Smaller sizes are served by other figures; see the [sour Figure 1002 butt weld union](/p/figure-1002-hammer-union-butt-weld-sour-gas-service)."
+        },
+        {
+          "slot": "D",
+          "q": "Why choose the Figure 1004 over the 5\" or 6\" Figure 1002?",
+          "a": "The 5\" and 6\" [Figure 1002](/p/figure-1002-hammer-union-butt-weld-sour-gas-service) seals on an O-ring that must be made up perfectly square, while the Figure 1004 uses lip-type seals instead, which is what it exists to fix. It is also rated 7,500 psi in sour service where the 1002 is 5,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the sour Figure 1004 union use?",
+          "a": "It uses a lip-type elastomer seal, the same style as the smaller unions rather than the O-ring of the 5\" and 6\" Figure 1002. The seal is made by the seat and ring, not the thread, so a leak usually needs a new seal or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard Figure 1004 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service; the standard service Figure 1004 is not the sour version. Confirm the service class and the certification you need on the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a sour Figure 1004 hammer union?",
+          "a": "A Figure 1004 mates only with another Figure 1004 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a sour Figure 1004 union made up and serviced?",
+          "a": "A Figure 1004 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the sour Figure 1004 differ from the standard service version?",
+          "a": "The sour union is supplied in H2S trim and rated 7,500 psi, below the standard service union. See the [standard service Figure 1004 butt weld union](/p/hammer-union-set-1004-series-butt-weld-schedule-xxh-10-000-psi-standard-service) for lines without H2S."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 1004 butt weld sour gas hammer union?",
+          "a": "The Figure 1004 butt weld sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 1004 butt weld sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 1004 butt weld sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-1502-hammer-union-butt-weld-sour-gas-service-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1502 butt weld sour gas hammer union used for?",
+          "a": "A Figure 1502 sour gas butt weld hammer union is a heavy-wall alloy steel union with Sch XXS butt weld ends, rated 10,000 psi (690 bar) cold working pressure, supplied in H2S trim. It is listed from 1\" to 6\" with a replaceable nitrile seal ring."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HU-1502 on a sour Figure 1502 butt weld union?",
+          "a": "The part numbers run IH-HU-1502 with the end type, sour trim and a four-digit size, so 0100 is 1\", 0150 is 1-1/2\", 0300 is 3\" and 0600 is 6\". The size table lists each part number with its weight and dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the sour Figure 1502 butt weld hammer union?",
+          "a": "The sour Figure 1502 butt weld union is rated 10,000 psi (690 bar) cold working pressure at every listed size from 1\" to 6\", tested at 15,000 psi. The test pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the sour Figure 1502 butt weld union come in?",
+          "a": "It is listed in 1\", 1-1/2\", 2\", 3\", 4\", 5\" and 6\" with Sch XXS butt weld ends, weighing from 3,700 g at 1\" to 65,800 g at 6\". For threaded ends see the [sour Figure 1502 threaded union](/p/figure-1502-hammer-union-threaded-sour-gas-service-10000-psi)."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between sour Figure 1502 and Figure 2202 hammer unions?",
+          "a": "The sour Figure 1502 is rated 10,000 psi, while the [sour Figure 2202](/p/hammer-union-set-2202-series-butt-weld-schedule-xxh-15-000-psi-sour-service-nace-mr0175) is rated 15,000 psi in butt weld sizes from 2\" to 6\". They are different figures and must never be connected to each other."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the sour Figure 1502 butt weld union use?",
+          "a": "It is heavy-wall alloy steel with a replaceable nitrile seal ring. The seal is made by the seat and ring, not the thread, so a leaking union usually needs a new seal ring or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard Figure 1502 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service; the standard service Figure 1502 is not the sour version. Confirm the service class and the certification you need on the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a sour Figure 1502 butt weld hammer union?",
+          "a": "A Figure 1502 mates only with another Figure 1502 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a sour Figure 1502 butt weld union made up and serviced?",
+          "a": "A Figure 1502 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the sour Figure 1502 differ from the standard service version?",
+          "a": "The sour Figure 1502 is supplied in H2S trim and is rated 10,000 psi. See the [standard service Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service) for lines without H2S, and compare the rating in each size table."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 1502 butt weld sour gas hammer union?",
+          "a": "The Figure 1502 butt weld sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 1502 butt weld sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 1502 butt weld sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-1502-hammer-union-threaded-sour-gas-service-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1502 threaded sour gas hammer union used for?",
+          "a": "A Figure 1502 sour gas threaded hammer union is a heavy-wall alloy steel union with line pipe threaded ends, rated 10,000 psi (690 bar) cold working pressure and supplied in H2S trim. It is listed from 1\" to 3\" with a replaceable nitrile seal ring."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HU-1502-NPT-10K-SOUR on a threaded Figure 1502 union?",
+          "a": "The part numbers run IH-HU-1502 with the threaded end, sour trim and a four-digit size, so 0100 is 1\", 0150 is 1-1/2\", 0200 is 2\" and 0300 is 3\". The size table lists each part number with its weight and dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the threaded sour Figure 1502 hammer union?",
+          "a": "The threaded sour Figure 1502 union is rated 10,000 psi (690 bar) cold working pressure at every listed size from 1\" to 3\", tested at 15,000 psi. The test pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the threaded sour Figure 1502 union come in?",
+          "a": "It is listed in 1\", 1-1/2\", 2\" and 3\" with line pipe threaded ends, weighing from 3,800 g at 1\" to 14,100 g at 3\". Larger sizes are butt weld; see the [sour Figure 1502 butt weld union](/p/figure-1502-hammer-union-butt-weld-sour-gas-service-10000-psi)."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the threaded or butt weld sour Figure 1502 union?",
+          "a": "The threaded union goes into threaded pipe and can be broken out again, while the [butt weld sour Figure 1502](/p/figure-1502-hammer-union-butt-weld-sour-gas-service-10000-psi) is welded in and goes to 6\". Choose the threaded one for 3\" and below where the line is built from threaded pipe."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the threaded sour Figure 1502 union use?",
+          "a": "It is heavy-wall alloy steel with a replaceable nitrile seal ring. The seal is made by the seat and ring, not the thread, so a leaking union usually needs a new seal ring or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard service threaded Figure 1502 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service. Confirm the service class, the trim and the certification you need on the enquiry; sour unions are rated below the standard service union wherever a separate rating is published."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a threaded sour Figure 1502 hammer union?",
+          "a": "A Figure 1502 mates only with another Figure 1502 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a threaded sour Figure 1502 union made up and serviced?",
+          "a": "A Figure 1502 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the threaded sour Figure 1502 differ from the standard service version?",
+          "a": "The sour Figure 1502 is supplied in H2S trim and is rated 10,000 psi. See the [standard service Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service) and its shelf for lines without H2S."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 1502 threaded sour gas hammer union?",
+          "a": "The Figure 1502 threaded sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 1502 threaded sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 1502 threaded sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-602-hammer-union-butt-weld-sour-gas-service-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 602 butt weld sour gas hammer union used for?",
+          "a": "A Figure 602 sour gas butt weld hammer union has butt weld ends in Sch 80 and Sch XXS and is supplied in H2S trim. It is listed from 1\" to 4\" and rated 6,000 psi (414 bar), tested at 9,000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on a sour Figure 602 butt weld union?",
+          "a": "The part numbers run IH-HU-602 with the weld schedule, sour trim and a four-digit size, so 0100 is 1\", 0200 is 2\" and 0400 is 4\". The listing has one part-number series for Sch 80 and one for Sch XXS, and the size table lists each."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the sour Figure 602 butt weld hammer union?",
+          "a": "The sour Figure 602 butt weld union is rated 6,000 psi (414 bar) cold working pressure at every listed size from 1\" to 4\", tested at 9,000 psi. The test pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "D",
+          "q": "What weld schedules does the sour Figure 602 butt weld union come in?",
+          "a": "It is listed with Sch 80 and Sch XXS butt weld ends in 1\" to 4\", with weights from 1,300 g at 1\" in the lighter series to 15,200 g at 4\" in the heavier one. Match the weld schedule to your pipe."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the sour Figure 602 butt weld and the threaded union?",
+          "a": "Choose the butt weld union where the union is welded into the line and the [threaded sour Figure 602](/p/figure-602-hammer-union-threaded-sour-gas-service-6000-psi) where it is made up on threaded pipe. Both are rated 6,000 psi, so the choice follows the line construction."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the sour Figure 602 union use?",
+          "a": "It uses a nitrile seal ring over steel-to-steel seating. The seal is made by the seat and ring, not the thread, so a leaking union usually needs a new seal ring or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard Figure 602 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service. Confirm the service class, the trim and the certification you need on the enquiry; sour unions are rated below the standard service union wherever a separate rating is published."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a sour Figure 602 butt weld hammer union?",
+          "a": "A Figure 602 mates only with another Figure 602 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a sour Figure 602 butt weld union made up and serviced?",
+          "a": "A Figure 602 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the sour Figure 602 differ from a Figure 1502?",
+          "a": "The sour Figure 602 is rated 6,000 psi, while the [sour Figure 1502 butt weld union](/p/figure-1502-hammer-union-butt-weld-sour-gas-service-10000-psi) is rated 10,000 psi. A 2\" Figure 602 male half can make up into a 2\" Figure 1502 wing nut, so never mix them."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 602 butt weld sour gas hammer union?",
+          "a": "The Figure 602 butt weld sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 602 butt weld sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 602 butt weld sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-602-hammer-union-threaded-sour-gas-service-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 602 threaded sour gas hammer union used for?",
+          "a": "A Figure 602 sour gas threaded hammer union has line pipe threaded ends and is supplied in H2S trim. It is listed from 1\" to 4\" and rated 6,000 psi (414 bar), tested at 9,000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HU-602-NPT-6K-SOUR on a threaded Figure 602 union?",
+          "a": "The part numbers run IH-HU-602 with the threaded end, sour trim and a four-digit size, so 0100 is 1\", 0150 is 1-1/2\" and 0400 is 4\". The size table lists each part number with its weight and dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the threaded sour Figure 602 hammer union?",
+          "a": "The threaded sour Figure 602 union is rated 6,000 psi (414 bar) cold working pressure at every listed size from 1\" to 4\", tested at 9,000 psi. The test pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the threaded sour Figure 602 union come in?",
+          "a": "It is listed in 1\", 1-1/2\", 2\", 3\" and 4\" with line pipe threaded ends, weighing from 1,800 g at 1\" to 15,400 g at 4\". Read the size table for dimensions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the threaded and butt weld sour Figure 602 union?",
+          "a": "The threaded union goes into threaded pipe and can be broken out again, while the [butt weld sour Figure 602](/p/figure-602-hammer-union-butt-weld-sour-gas-service-6000-psi) is welded in with Sch 80 or Sch XXS ends. Both are rated 6,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the threaded sour Figure 602 union use?",
+          "a": "It uses a nitrile seal ring over steel-to-steel seating. The seal is made by the seat and ring, not the thread, so a leaking union usually needs a new seal ring or sub."
+        },
+        {
+          "slot": "F",
+          "q": "Can I use a standard Figure 602 union in H2S service?",
+          "a": "No, use the sour gas trim for H2S service. Confirm the service class, the trim and the certification you need on the enquiry; read the size table rating."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a threaded sour Figure 602 hammer union?",
+          "a": "A Figure 602 mates only with another Figure 602 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a threaded sour Figure 602 union made up and serviced?",
+          "a": "A Figure 602 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "How does the threaded sour Figure 602 differ from a Figure 1502?",
+          "a": "The sour Figure 602 is rated 6,000 psi, while the [threaded sour Figure 1502 union](/p/figure-1502-hammer-union-threaded-sour-gas-service-10000-psi) is rated 10,000 psi. A 2\" Figure 602 male half can make up into a 2\" Figure 1502 wing nut, so never mix them."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 602 threaded sour gas hammer union?",
+          "a": "The Figure 602 threaded sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 602 threaded sour gas hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 602 threaded sour gas hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send sizes, quantities and the sour service requirement through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-2202-series-butt-weld-schedule-xxh-15-000-psi-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 2202 butt weld sour gas hammer union used for?",
+          "a": "A Figure 2202 butt weld sour gas hammer union is the sour gas union of the 2002 family, rated 15,000 psi (1,034 bar) cold working pressure, with butt weld ends only. It is listed from 2\" to 6\" with lip-type seals and stainless steel anti-extrusion rings."
+        },
+        {
+          "slot": "B",
+          "q": "Why are 3\" and 4\" Figure 2202 unions called 2.5\" and 3\" by some makers?",
+          "a": "The 3\" and 4\" Figure 2202 are called 2.5\" and 3\" by some other manufacturers. Check the bore against the weld prep dimensions in the size table before ordering, because the nominal size alone does not settle the bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Figure 2202 sour gas hammer union?",
+          "a": "The Figure 2202 is rated 15,000 psi (1,034 bar) cold working pressure at every listed size from 2\" to 6\". It is the sour gas figure for 15,000 psi, with butt weld ends only."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 2202 sour gas union come in?",
+          "a": "It is listed in 2\", 3\", 4\", 5\" and 6\" with butt weld ends only, weighing from 10,430 g at 2\" to 77,110 g at 6\". The size table also lists the weld prep dimensions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I check the weld prep dimensions of the Figure 2202 union?",
+          "a": "Compare the bore and the weld prep outside and inside diameters in the size table against your pipe before ordering. The listing carries the weld prep dimensions for each size, and the sizes differ from other makers."
+        },
+        {
+          "slot": "F",
+          "q": "What seal does the Figure 2202 sour gas union use?",
+          "a": "It has lip-type elastomer seals with stainless steel anti-extrusion rings, fitted as standard. The seal is made by the seat and ring, not the thread, so a leak usually needs new seals or a sub."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Figure 2202 union examined against NACE requirements?",
+          "a": "Every H2S service union is examined against the current requirements of NACE, the National Association of Corrosion Engineers. Confirm the certification and service class you need on the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a Figure 2202 hammer union?",
+          "a": "A Figure 2202 mates only with another Figure 2202 of the same size. Never join it to a different figure: industry safety alerts record that a 2\" Figure 602 or 1002 male half can make up into a 2\" Figure 1502 wing nut and separate under pressure, so segregate and mark the unions."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Figure 2202 sour gas union made up and serviced?",
+          "a": "A Figure 2202 is made up by striking the wing nut lugs with a hammer until the subs seat on the seal. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Figure 2202 and Figure 1502 hammer unions?",
+          "a": "The Figure 2202 is rated 15,000 psi in butt weld sizes 2\" to 6\", while the [sour Figure 1502 butt weld union](/p/figure-1502-hammer-union-butt-weld-sour-gas-service-10000-psi) is rated 10,000 psi. They are different figures and must never be connected to each other."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the Figure 2202 butt weld sour gas hammer union?",
+          "a": "The Figure 2202 butt weld sour gas hammer union is a flow-line hammer union supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. The figure number is an industry series, not a published standard, so state the figure, size, end connection and sour gas service on the order and ask for the material test report."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Figure 2202 Hammer Union — Butt Weld, Sour Gas Service, 15,000 psi in stock in Dubai?",
+          "a": "Yes. We keep the Figure 2202 Hammer Union — Butt Weld, Sour Gas Service, 15,000 psi in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

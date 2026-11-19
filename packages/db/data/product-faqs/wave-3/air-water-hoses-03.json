@@ -1,0 +1,1329 @@
+{
+  "family": "air-water-hoses-03",
+  "extraFacts": [
+    {
+      "fact": "1 bar = 14.5038 psi; 100 psi is about 7 bar, 150 psi about 10 bar, 250 psi about 17 bar, 300 psi about 21 bar and 500 psi about 34 bar.",
+      "source": "Unit conversion"
+    },
+    {
+      "fact": "Maker pressure figures in these range listings are working pressures; burst pressure is a test figure, not a working limit, and end fittings must come from the series the hose maker approves.",
+      "source": "Indus Hydraulics listing text for these ranges (descriptionLong, 'Choosing the hose')"
+    },
+    {
+      "fact": "ARPM (formerly RMA) oil-resistance classes: Class A is high oil resistance, Class B medium and Class C low or no oil resistance, so Class A nitrile suits oil service while Class C EPDM does not.",
+      "source": "Rubber Manufacturers Association / ARPM hose oil-resistance classification (IP-2 hose handbook), as used in Parker hose catalogues"
+    }
+  ],
+  "products": [
+    {
+      "slug": "goodyear-engineered-products-multipurpose-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Goodyear Multipurpose bulk air hose used for?",
+          "a": "Goodyear Engineered Products multipurpose air hose is a blue TPE-cover bulk air hose in sizes from 1/4\" to 2\". The listing has 15 part numbers in bulk reels and 50 ft lengths, with a 4:1 safety factor."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Goodyear Multipurpose bulk air hose come in?",
+          "a": "Fifteen part numbers from 1/4\" to 2\": for example 1ZLJ7 is 1-1/4\" bulk, 1ZLJ8 is 1-1/2\" bulk, 1ZNC8 is 2\" in a 50 ft length and 3JT76 is 1/2\" in a 500 ft length. Small sizes are the 5W035 to 5W038 bulk hoses."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Goodyear Multipurpose part numbers such as 10A242?",
+          "a": "10A242 is the Multipurpose Air Hose Bulk 3/4 Inch and 1ZNC6 is the Multipurpose Air Hose 1 Inch 50 Feet Length. The size table lists all 15 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Goodyear Multipurpose bulk air hose?",
+          "a": "The maker states 200 to 1,000 psi (14 to 69 bar) by size; the rows give 14, 21, 34 and 69 bar depending on the part number. The 50 ft 1ZNC lengths are the 69 bar ones, so read the row for the part you order and keep fittings to the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Goodyear multipurpose bulk air hose have?",
+          "a": "The listing gives -40°F to +158°F for the range. That suits cold storage and outdoor air lines; do not use it for hot air or steam."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Goodyear Multipurpose bulk air hose made of?",
+          "a": "The cover is TPE, the hose colour is blue and the hose is sold as bulk hose without strain relief. The safety factor is 4:1; the listing gives no tube material, so name the fluid on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What HS code and safety factor are listed for Goodyear multipurpose air hose?",
+          "a": "The listing gives HS code 3917390050 and a 4:1 safety factor. Confirm the customs code with your broker for the destination country."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Goodyear bulk multipurpose air hose?",
+          "a": "It is bulk hose, so it takes barbed ends held with clamps or crimp ferrules sized to the bore. See [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules) and [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Goodyear multipurpose air hose or Parker GST II air and water hose?",
+          "a": "The Goodyear range is a TPE-cover bulk hose from 1/4\" to 2\", while [Parker GST II](/p/parker-gst-ii-general-purpose-air-water-hoses) is a black EPDM air and water hose in a different set of part numbers. Compare bore, pressure and the reel lengths you need."
+        },
+        {
+          "slot": "I",
+          "q": "How should Goodyear bulk air hose be installed?",
+          "a": "Cut it square, fit barbed ends with rated clamps or ferrules and add whip restraints on air lines. [Compressed air hose selection](/blog/compressed-air-hose-selection) covers the choice of hose and fitting."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Goodyear Multipurpose bulk air hose made and can it be exported from Dubai?",
+          "a": "The Goodyear Multipurpose bulk air hose is listed with United States as its country of origin and HS code 3917390050. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Goodyear Multipurpose bulk air hose in Dubai?",
+          "a": "Yes. We keep the Goodyear Multipurpose bulk air hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "guardair-coilgaurd-nylon-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guardair Coilguard nylon coiled air hose used for?",
+          "a": "Guardair Coilguard nylon air hose is a yellow nylon coiled hose with brass MNPT ends, for air, nitrogen and oxygen. The listing has 6 part numbers in 12, 25 and 50 ft lengths, with a 250 psi maker rating."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Guardair Coilguard nylon coiled air hose come in?",
+          "a": "Six part numbers: 14X12B03, 14X25B03 and 14X50B03 in 1/4\" ID, and 38X12B03, 38X25B03 and 38X50B03 in 3/8\" ID, in 12, 25 and 50 ft lengths. The 14 and 38 in the part number are the 1/4\" and 3/8\" bores."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Guardair Coilguard nylon part numbers such as 14X25B03?",
+          "a": "14X25B03 is the Air Hose, 1/4 Inch ID, 25 Feet Length, Nylon and 38X50B03 is the Nylon Hose, 3/8 Inch ID, 50 Feet Length. The size table lists all 6 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Guardair Coilguard nylon coiled air hose?",
+          "a": "The maker states 250 psi, about 17 bar, for the range, and one row lists 17 bar. Check that couplers and tools are rated for the same pressure."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Guardair nylon coiled hose have?",
+          "a": "The listing gives 0°F to 80°F. That is a narrow range, so do not use it in freezing or hot conditions without checking with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guardair Coilguard nylon coiled air hose made of?",
+          "a": "The tube and cover are nylon, the ends are brass MNPT and one version, 14X50B03, is described as a steel and nylon recoil hose. The listing names air, nitrogen gas and oxygen as compatible."
+        },
+        {
+          "slot": "G",
+          "q": "Is Guardair nylon coiled hose suitable for oxygen?",
+          "a": "The listing names oxygen among the compatible fluids, but gives no oxygen-cleaning or approval documents. For oxygen service ask us for the maker's data and cleaning statement before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to Guardair Coilguard coiled hose?",
+          "a": "Both ends are brass MNPT, so they screw into female NPT tool inlets, blow guns and couplers. See [universal air couplings](/c/universal-air-couplings) for quick couplers."
+        },
+        {
+          "slot": "K",
+          "q": "Guardair nylon or polyurethane Coilguard hose: which should I buy?",
+          "a": "The nylon hose is yellow, rated 250 psi and runs from 0°F to 80°F, while the [polyurethane Coilguard hose](/p/guardair-coilguard-polyurethane-air-hoses) is blue and rated 100 psi, with a wider temperature range. Nylon is for higher pressure, polyurethane for wider temperature."
+        },
+        {
+          "slot": "I",
+          "q": "How should a coiled nylon air hose be used?",
+          "a": "Do not stretch the coil beyond its working length, keep it away from hot surfaces and fit quick couplers that match the tool. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Guardair Coilguard nylon coiled air hose made and can it be exported from Dubai?",
+          "a": "The Guardair Coilguard nylon coiled air hose is listed with United States as its country of origin and HS code 3917310000. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Guardair Coilguard nylon coiled air hose in Dubai?",
+          "a": "Yes, we stock the Guardair Coilguard nylon coiled air hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "guardair-coilguard-polyurethane-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guardair Coilguard polyurethane coiled air hose used for?",
+          "a": "Guardair Coilguard polyurethane air hose is a blue polyurethane coiled hose with brass MNPT ends, for air, nitrogen and oxygen. The listing has 4 part numbers in 1/4\" and 3/8\" ID, in 12 and 25 ft lengths."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Guardair Coilguard polyurethane coiled air hose come in?",
+          "a": "Four part numbers: 38X12B04 and 38X25B04 in 3/8\" ID, and 14X12B04 and 14X25B04 in 1/4\" ID, in 12 and 25 ft lengths. The first digits give the bore and the next two the length in feet, as the rows show."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Guardair Coilguard polyurethane part numbers such as 38X12B04?",
+          "a": "38X12B04 is the Air Hose, 3/8 Inch, 12 Feet Length, Polyurethane and 14X25B04 is the Polyurethane Hose, 1/4 Inch ID, 25 Feet Length. The size table lists all 4 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Guardair Coilguard polyurethane coiled air hose?",
+          "a": "The maker states 100 psi, about 7 bar, and one row shows 7 bar. This is a low-pressure hose, so do not connect it to a regulator set above 100 psi."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Guardair polyurethane coiled hose have?",
+          "a": "The listing gives -50°F to +180°F, which is wider than the nylon version. Polyurethane stays flexible in the cold, but keep it away from welding spatter and hot surfaces."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guardair Coilguard polyurethane coiled air hose made of?",
+          "a": "The tube is polyurethane, the colour is blue and the ends are brass MNPT. The listing names air, nitrogen gas and oxygen as compatible fluids."
+        },
+        {
+          "slot": "G",
+          "q": "What HS code is listed for Guardair Coilguard polyurethane hose?",
+          "a": "The listing gives HS code 3917310000, a plastics tube heading. The range carries no standards or approvals in our data; confirm the code with your customs broker."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to Guardair Coilguard polyurethane hose?",
+          "a": "Both ends are brass MNPT, so they screw into female NPT tool inlets and couplers. See [universal air couplings](/c/universal-air-couplings) for matching plugs and sockets."
+        },
+        {
+          "slot": "K",
+          "q": "Guardair polyurethane or nylon Coilguard coiled hose?",
+          "a": "The polyurethane hose is rated 100 psi in 12 and 25 ft lengths, while the [nylon Coilguard hose](/p/guardair-coilgaurd-nylon-air-hoses) is rated 250 psi but only 0°F to 80°F. Choose polyurethane for cold or heat, nylon for pressure."
+        },
+        {
+          "slot": "I",
+          "q": "How should polyurethane coiled air hose be installed?",
+          "a": "Let the coil retract, do not over-stretch it and keep it clear of heat and sharp edges. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Guardair Coilguard polyurethane coiled air hose made and can it be exported from Dubai?",
+          "a": "The Guardair Coilguard polyurethane coiled air hose is listed with United States as its country of origin and HS code 3917310000. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Guardair Coilguard polyurethane coiled air hose in Dubai?",
+          "a": "Yes. The Guardair Coilguard polyurethane coiled air hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "mi-t-m-high-pressure-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Mi-T-M high pressure hose assembly used for?",
+          "a": "Mi-T-M high pressure hose assemblies are replacement hose assemblies for Mi-T-M pressure washers and similar equipment. The listing has 6 part numbers, such as 851-0006, and publishes no bore, length or pressure figures."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Mi-T-M high pressure hose assembly come in?",
+          "a": "Six part numbers, listed as high pressure hose assemblies; the table does not publish bore or length. Tell us your washer model or the existing hose's bore and length, and we confirm the matching part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Mi-T-M high pressure part numbers such as 851-0006?",
+          "a": "851-0006 and 15-0192 are two of the 6 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Mi-T-M high pressure hose assembly?",
+          "a": "The listing publishes no pressure rating for these assemblies, so we do not quote one. Give us the washer model and its working pressure and we obtain the maker's figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Mi-T-M high pressure hose assembly made of?",
+          "a": "The listing gives no hose or fitting material. Ask us for the maker's data on the hose compound and couplings for your part number."
+        },
+        {
+          "slot": "G",
+          "q": "What documents are listed for Mi-T-M high pressure hose assemblies?",
+          "a": "None. The listing carries no standards, certificates or test data, so ask for the maker's information if your project needs it. We request it with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do Mi-T-M high pressure hose assemblies connect to?",
+          "a": "They are made to fit Mi-T-M equipment such as pressure washer pumps and guns; the end fittings are not published. Send the model or a photo of the ends and we match the part number; see [quick couplers](/c/universal-air-couplings) for related ends."
+        },
+        {
+          "slot": "K",
+          "q": "Mi-T-M high pressure hose assemblies or Mi-T-M hose assemblies?",
+          "a": "The [Mi-T-M hose assemblies](/p/mi-t-m-hose-assemblies) listing covers fuel and general rubber assemblies with pressures stated by size, while this listing is for high pressure washer-type assemblies with no pressure published. Pick by the equipment's parts list."
+        },
+        {
+          "slot": "I",
+          "q": "How should a high pressure hose assembly be inspected?",
+          "a": "Check for kinks, bulges, cover damage that exposes the braid and leaks at the couplings, and replace at the first sign of any of them. Always use an assembly rated at least equal to the pump's maximum pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Mi-T-M high pressure hose assembly made and can it be exported from Dubai?",
+          "a": "The Mi-T-M high pressure hose assembly is listed with Israel as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Mi-T-M high pressure hose assembly in Dubai?",
+          "a": "Yes, the Mi-T-M high pressure hose assembly is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "mi-t-m-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Mi-T-M rubber hose assembly used for?",
+          "a": "Mi-T-M hose assemblies are rubber hose assemblies for Mi-T-M equipment, including fuel hose assemblies. The listing has 5 part numbers, with the maker's pressures running from 300 to 3,000 psi by size."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Mi-T-M rubber hose assembly come in?",
+          "a": "Five part numbers, including 15-0147 and 15-0173 fuel hose assemblies, 15-0165 high pressure fuel hose assembly and 15-0174 hose assembly. The listing does not publish a bore or length for each."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Mi-T-M part numbers such as 15-0147?",
+          "a": "15-0147 and 15-0204 are two of the 5 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Mi-T-M rubber hose assembly?",
+          "a": "The maker states 300 to 3,000 psi (21 to 207 bar) by size: 15-0147 is rated 21 bar and 15-0173 and 15-0165 are rated 207 bar. Read the row for your part number; 15-0174 carries no pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Mi-T-M rubber hose assembly made of?",
+          "a": "The listing gives the material as rubber and the configuration as a coupled assembly. The hose compound and fitting materials are not published; for fuel service, name the fuel on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Are Mi-T-M fuel hose assemblies approved for fuel?",
+          "a": "The rows describe 15-0147, 15-0173 and 15-0165 as fuel hose assemblies, but no fuel standards or approvals are listed. If your project needs one, ask us for the maker's documents before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do Mi-T-M hose assemblies connect to?",
+          "a": "They are made for Mi-T-M equipment, and the end fittings are fixed on the assembly. Send the equipment model or part number and we match it; see [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules) for related items."
+        },
+        {
+          "slot": "K",
+          "q": "Mi-T-M hose assemblies or Mi-T-M hoses: which listing do I need?",
+          "a": "This listing is for coupled assemblies (hose with fittings), while [Mi-T-M hoses](/p/mi-t-m-hoses) covers bypass and other hoses sold without the same assembly. Choose by the part number in your equipment's parts list."
+        },
+        {
+          "slot": "I",
+          "q": "How should a rubber fuel hose assembly be installed?",
+          "a": "Route it clear of heat and moving parts, support it so it does not chafe and replace it if the cover cracks or it leaks at the ends. Use only the assembly matched to the equipment's pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Mi-T-M rubber hose assembly made and can it be exported from Dubai?",
+          "a": "The Mi-T-M rubber hose assembly is listed with Thailand as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Mi-T-M rubber hose assembly in Dubai?",
+          "a": "Yes. We keep the Mi-T-M rubber hose assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mi-t-m-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Mi-T-M hose used for?",
+          "a": "Mi-T-M hoses is a range of replacement hoses for Mi-T-M equipment, including bypass hose and pressure hose with quick connect. The listing has 10 part numbers, with a maker rating of 250 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Mi-T-M hose come in?",
+          "a": "Ten part numbers, including 15-0035 and 15-0140 bypass hoses, 15-0262 (1-3/4\" inner diameter, 90 degree flex), 15-0209 (3/8\" x 50 ft, 4000 psi) and 851-0317 pressure hose with quick connect."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Mi-T-M part numbers such as 15-0140?",
+          "a": "15-0140 is the Bypass Hose, 1/4 Inch ID, 10 Inch Size, 250 psi and 15-0262 is the Hose, 1-3/4 Inch ID. 90 Degrees Deg Flex. The size table lists all 10 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Mi-T-M hose?",
+          "a": "The maker states 250 psi (17 bar) for the range and the rows for the bypass hoses show 17 bar. 15-0209 is described as 4000 psi, so read the description of your part number and do not assume one rating covers all ten."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Mi-T-M hose made of?",
+          "a": "The listing gives brass, plastic, rubber and steel as the materials across the range, with no breakdown by part number. Name the equipment on the enquiry and we confirm."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply to Mi-T-M hoses?",
+          "a": "No standards or certificates are listed for the range. If your project needs documents, ask for them with the enquiry and we obtain the maker's data."
+        },
+        {
+          "slot": "H",
+          "q": "What do Mi-T-M bypass hoses and pressure hoses connect to?",
+          "a": "They are replacement parts for Mi-T-M equipment such as pressure washers and pumps. Send the machine model or the old part number and we match the replacement."
+        },
+        {
+          "slot": "K",
+          "q": "Mi-T-M bypass hose 15-0140 or pressure hose 15-0209: what is the difference?",
+          "a": "15-0140 is a bypass hose, 1/4\" inner diameter and 10 inch long at 250 psi, used to return flow in the pump. 15-0209 is a 3/8\" x 50 ft hose rated 4000 psi in its description, so they are not interchangeable."
+        },
+        {
+          "slot": "I",
+          "q": "How should Mi-T-M replacement hose be checked before use?",
+          "a": "Check the end fittings, look for cover cracks and leaks and confirm the part number against the machine's parts list. Use a hose rated at least as high as the pump's pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Mi-T-M hose made and can it be exported from Dubai?",
+          "a": "The Mi-T-M hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Mi-T-M hose in Dubai?",
+          "a": "Yes. The Mi-T-M hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-801-series-low-pressure-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 801 low-pressure hose used for?",
+          "a": "Parker 801 series is a one-braid synthetic rubber multipurpose air hose from 1/4\" to 1\", in black, blue, gray, green, red, white and yellow covers. The listing has 33 part numbers, with the maker's pressure from 200 to 350 psi by size."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 801 low-pressure hose come in?",
+          "a": "Thirty-three part numbers in 1/4\", 3/8\", 1/2\", 5/8\", 3/4\" and 1\" bore, in reels; the middle number is the dash size, so 801-8-BLU-RL is 1/2\", 801-12 is 3/4\" and 801-16 is 1\". The last letters are the colour and the RL reel package."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker 801 part numbers such as 801-12-BLK-RL?",
+          "a": "801-12-BLK-RL is the Multipurpose Air Hose, 3/4 Inch Hose ID and 801-12-BLU-RL is the Multipurpose Air Hose, 3/4 Inch Hose ID. The size table lists all 33 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 801 low-pressure hose?",
+          "a": "The maker states 200 to 350 psi (14 to 24 bar) by size: 350 psi in 1/4\" and 3/8\", 300 psi in 1/2\", 5/8\" and 3/4\", and 200 psi in 1\". Read the row for your size, because the rating falls as the bore rises."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Parker 801 hose by size?",
+          "a": "The listing gives 63.5 mm at 1/4\", 76.2 mm at 3/8\", 127 mm at 1/2\", 152.4 mm at 5/8\", 177.8 mm at 3/4\" and 254 mm at 1\". The series minimum is shown as 7 inches; keep bends clear of the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 801 low-pressure hose made of?",
+          "a": "The tube and cover are synthetic rubber, with a single braid. For temperature and chemical resistance see the [801 black multipurpose hose](/p/parker-801-series-multipurpose-hoses-black), which lists air, oil and water service."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 801 hose a hydraulic hose?",
+          "a": "Some distributor rows call it hydraulic hose, but 801 is the Parker low-pressure multipurpose air hose series, with 200 to 350 psi working pressure. For hydraulic circuits use a hose rated and tested for hydraulic fluid; see [hydraulic hoses](/c/hydraulic-hoses)."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Parker 801 low-pressure hose?",
+          "a": "The 801 takes Parker low-pressure barbed or crimp fittings sized to the bore, held with the matching ferrule or clamp. Give us the dash size and fitting style; see [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 801 low-pressure hose or the Parker 801 black multipurpose hose?",
+          "a": "This listing covers all colours from 1/4\" to 1\", while the [801 black multipurpose hose](/p/parker-801-series-multipurpose-hoses-black) is a separate, smaller listing from 1/4\" to 3/4\" with published air, oil and water temperatures. Choose by colour and size."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker 801 hose be installed?",
+          "a": "Keep it above the minimum bend radius for the size, use fittings made for the 801 series and protect it from abrasion and heat. See [compressed air hose selection](/blog/compressed-air-hose-selection) for the safe use of air hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 801 low-pressure hose made and can it be exported from Dubai?",
+          "a": "The Parker 801 low-pressure hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 801 low-pressure hose in Dubai?",
+          "a": "Yes. We keep the Parker 801 low-pressure hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-801-series-multipurpose-hoses-black",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 801 black multipurpose hose used for?",
+          "a": "The Parker 801 black multipurpose hose is a one-braid synthetic rubber hose for air, oil and water. The listing has 4 part numbers from 1/4\" to 3/4\" with a 4:1 safety factor."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 801 black multipurpose hose come in?",
+          "a": "Four part numbers: 801-4 (1/4\"), 801-8 (1/2\") and 801-12 (3/4\") are shown in the table, in bulk reels. The listing size range is 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker 801 black part numbers such as 801-12-GRA-RL?",
+          "a": "801-12-GRA-RL is the Multipurpose Air Hose, 3/4 Inch Hose ID and 801-8-GRA-RL is the Multipurpose Air Hose, 1/2 Inch Hose ID. The size table lists all 4 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 801 black multipurpose hose?",
+          "a": "The maker states 300 to 350 psi (21 to 24 bar) by size: 24 bar on the 1/4\" and 21 bar on the 1/2\" and 3/4\". Read the row for your size, and keep fittings to the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What temperatures can the Parker 801 black hose take in air, oil and water?",
+          "a": "The listing gives air to 158°F, oil from -40°F to 257°F and water to +185°F. The three figures differ by medium, so state the fluid and its temperature on the enquiry."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 801 black multipurpose hose made of?",
+          "a": "Tube and cover are synthetic rubber over a single braid layer. The listing names air, oil and water as compatible and gives a long list of chemicals that are not recommended, starting with acetic acid and acetone."
+        },
+        {
+          "slot": "G",
+          "q": "Which chemicals are not recommended for Parker 801 black hose?",
+          "a": "The listing gives a not-recommended list that starts with acetic acid, acetone, acetylene and anhydrous ammonia, and runs further. Ask us for the full list for your fluid; the safety factor is 4:1."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Parker 801 black multipurpose hose?",
+          "a": "It takes Parker low-pressure barbed or crimp fittings sized to the bore. See [universal air couplings](/c/universal-air-couplings) and [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 801 black hose or the Parker 801 low-pressure range?",
+          "a": "The black listing has only 4 part numbers with air, oil and water temperatures published, while the [Parker 801 low-pressure listing](/p/parker-801-series-low-pressure-hose) has many more part numbers in many colours up to 1\". Choose the black for the published oil and water ratings."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker 801 black hose be installed?",
+          "a": "Use the minimum bend radius for the size, such as 127 mm for the 1/2\" part, keep it out of the not-recommended chemicals and use matching fittings. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 801 black multipurpose hose made and can it be exported from Dubai?",
+          "a": "The Parker 801 black multipurpose hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 801 black multipurpose hose in Dubai?",
+          "a": "Yes, we stock the Parker 801 black multipurpose hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-804-push-lok-multipurpose-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 804 Push-Lok hose used for?",
+          "a": "Parker 804 Push-Lok is an EPDM tube and cover push-on hose for dry air and hot water, reinforced with a high-tensile fibre braid. The listing has 5 part numbers, such as 804-4, with a maker rating of 150 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 804 Push-Lok hose come in?",
+          "a": "Five part numbers; the table shows 804-4 as a dry air and hot water hose. The sizes are not published in the listing, so quote the Parker part number or give us the bore you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker 804 Push-Lok part numbers such as 804-4?",
+          "a": "804-4 and 804-12 are two of the 5 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 804 Push-Lok hose?",
+          "a": "The maker states 150 psi, about 10 bar, and the table gives a burst figure of 41 bar. Treat 150 psi as the working limit and use push-lock fittings made for the 804."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 804 Push-Lok hose made of?",
+          "a": "The inner tube and cover are EPDM synthetic rubber with a high-tensile fibre braid. The listing names hot water, phosphate-ester hydraulic fluids, water-glycol and vacuum among its applications; confirm your fluid before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What fluids is Parker 804 Push-Lok hose listed for?",
+          "a": "The listing names dry air, hot water, phosphate-ester based hydraulic fluids, water-glycol, emulsions and vacuum, with liquid soap as a lubricant. It is an EPDM hose, so it is not for petroleum oils."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Parker 804 Push-Lok hose?",
+          "a": "It takes Parker push-lock barbed fittings made for the 804, which grip the braid with no clamp. Give us the bore and the thread; see [brass push-lock hose barbs](/c/brass-push-lock-hose-barbs)."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 804 Push-Lok or Parker Jiffy 7212 push-on hose?",
+          "a": "The 804 is EPDM, for dry air and hot water at 150 psi, while the [Jiffy 7212](/p/parker-jiffy-7212-series-push-on-multipurpose-oil-resistant-hoses) has a nitrile tube for air, oil and fuels at 300 psi. Pick the 804 for hot water, the Jiffy for oil."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit Parker Push-Lok hose?",
+          "a": "Cut the hose square, lubricate the barb with liquid soap and push the hose fully on; no clamp is needed on a push-lock barb. Do not use petroleum-based lubricant on EPDM."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 804 Push-Lok hose made and can it be exported from Dubai?",
+          "a": "The Parker 804 Push-Lok hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 804 Push-Lok hose in Dubai?",
+          "a": "Yes, we stock the Parker 804 Push-Lok hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-air-hose-nylon",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker nylon self-retracting air hose used for?",
+          "a": "Parker nylon air hose is a self-retracting coiled nylon hose in the Fast Stor series, with NPT ends, for air and non-potable water. The listing has 6 part numbers with a maker rating of 170 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker nylon self-retracting air hose come in?",
+          "a": "Six part numbers with working lengths of 9, 18 and 38 feet, such as A0812-MC8-ML8 (9 ft) and A0625-MC6-ML6 (18 ft). The part number carries the coil size and end sizes, so quote it in full."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker nylon part numbers such as A0812-MC8-ML8?",
+          "a": "A0812-MC8-ML8 is the Air Hose, 9 Feet Working Length, Nylon and A0850-MC8-ML8 is the Air Hose, 38 Feet Working Length, Nylon. The size table lists all 6 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker nylon self-retracting air hose?",
+          "a": "The maker states 170 psi, about 12 bar, and the rows show 12 bar. Use it only with a regulator set at or below that, and with fittings rated at least as high."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Parker Fast Stor nylon hose have?",
+          "a": "The listing gives 200°F (93°C) as the upper limit and describes the environment as broad temperature, for indoor or outdoor use. Keep the coil away from welding spatter and hot surfaces."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker nylon self-retracting air hose made of?",
+          "a": "The tube is opaque yellow nylon, Shore D 62, flexible and abrasion resistant, with oil resistance and UV resistance listed. It is for air and non-potable water, not for fuel or potable water."
+        },
+        {
+          "slot": "G",
+          "q": "Is Parker nylon coiled hose for potable water?",
+          "a": "No. The listing states the hose is for air and non-potable water, is not for potable water use and is not fuel resistant. Use a hose approved for drinking water if you need that."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to Parker Fast Stor nylon air hose?",
+          "a": "Both ends are NPT, so they screw into female NPT tool inlets, blow guns and quick couplers of the matching size. See [universal air couplings](/c/universal-air-couplings) for the plug and socket."
+        },
+        {
+          "slot": "K",
+          "q": "Parker nylon coiled hose or Guardair nylon Coilguard hose?",
+          "a": "Parker's Fast Stor nylon hose is rated 170 psi and goes to 200°F, while the [Guardair nylon Coilguard hose](/p/guardair-coilgaurd-nylon-air-hoses) is rated 250 psi but 0°F to 80°F. Choose by pressure and temperature."
+        },
+        {
+          "slot": "I",
+          "q": "How should a self-retracting nylon hose be used?",
+          "a": "Let the coil retract naturally and do not over-stretch it, since overextension weakens the coil. Keep it clear of hot surfaces and welding spatter, and replace it if the nylon is kinked or cracked."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker nylon self-retracting air hose made and can it be exported from Dubai?",
+          "a": "The Parker nylon self-retracting air hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker nylon self-retracting air hose in Dubai?",
+          "a": "Yes, the Parker nylon self-retracting air hose is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-grizzly-7107-series-500-non-conductive-multipurpose-oil-resistant-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Grizzly 7107 500 psi multipurpose hose used for?",
+          "a": "Parker Grizzly 500 (7107 series) is a non-conductive multipurpose hose rated 500 psi for air, oil, mild chemicals and water in agriculture, construction, foundries and mines. The listing has 9 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker Grizzly 7107 500 psi multipurpose hose come in?",
+          "a": "Nine part numbers, including 7107-25500, 7107-38500, 7107-75500, 7107-100500, 7107-125500 and 7107-200500. The rows give a minimum bend radius from 2\" up to 24\", which grows with the hose size; the table does not list bores, so quote the full part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker Grizzly 7107 part numbers such as 7107-125500?",
+          "a": "7107-125500 and 7107-200500 are two of the 9 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker Grizzly 7107 500 psi multipurpose hose?",
+          "a": "The maker states 500 psi, about 34 bar, for the whole range, and every row lists 34 bar. That is a high rating for a multipurpose hose, so use fittings made for 500 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Grizzly 7107 500 psi multipurpose hose made of?",
+          "a": "The cover is nitrile and PVC in a wrapped finish and the hose is oil resistant and non-conductive. The listing names air, oil, mild chemicals and water as the specific applications."
+        },
+        {
+          "slot": "G",
+          "q": "What does non-conductive mean on the Parker Grizzly 500 hose?",
+          "a": "Non-conductive means the hose is built so it does not carry electric current along it, which matters near live electrical equipment. The listing carries no certificate number, so ask for the maker's data if your site needs a rating."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Parker Grizzly 7107 hose?",
+          "a": "It takes the maker's matching crimp or reusable fittings rated for 500 psi, sized to the bore. Give us the part number; see [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "K",
+          "q": "Parker Grizzly 7107 or Parker MPT II multipurpose hose?",
+          "a": "Grizzly 7107 is rated 500 psi, while [MPT II](/p/parker-mpt-ii-non-conductive-multipurpose-oil-resistant-hoses) is rated 200 to 300 psi and has a nitrile tube with a red chloroprene cover. Use Grizzly where the pressure is higher."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install Parker Grizzly 500 hose?",
+          "a": "Keep it above the minimum bend radius for its size, use fittings rated 500 psi and protect the cover from abrasion. See [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Grizzly 7107 500 psi multipurpose hose made and can it be exported from Dubai?",
+          "a": "The Parker Grizzly 7107 500 psi multipurpose hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Grizzly 7107 500 psi multipurpose hose in Dubai?",
+          "a": "Yes. We keep the Parker Grizzly 7107 500 psi multipurpose hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-gst-ii-general-purpose-air-water-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GST II air and water hose used for?",
+          "a": "Parker GST II is a general-service air and water hose with a black EPDM tube and cover over two textile plies, for shop air, air tools and wash-down. The listing has 40 part numbers, with the maker's pressure from 200 to 300 psi by size."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GST II air and water hose come in?",
+          "a": "Forty part numbers in series 7092 and 7093, for example 7092-100200 (200 psi), 7092-100304 (300 psi) and 7093-50250 (250 psi); one row reads 1 inch, black, 200 psi. Quote the whole part number so the right size and pressure are supplied."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker GST II part numbers such as 7093-100200?",
+          "a": "7093-100200 and 7093-75304 are two of the 40 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GST II air and water hose?",
+          "a": "The maker states 200 to 300 psi (14 to 21 bar) by size, and the rows show 14, 17 and 21 bar. Read the row for your part number; the pressure is a working pressure, not a burst figure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker GST II air and water hose made of?",
+          "a": "The tube and cover are black EPDM, rated ARPM Class C for oil resistance, with a smooth finish cover. Class C means low oil resistance, so use GST II on air with light oil mist, not on lines carrying oil."
+        },
+        {
+          "slot": "G",
+          "q": "What does ARPM Class C mean for Parker GST II hose?",
+          "a": "ARPM Class C oil resistance is the low class, suitable for air and water with light oil mist but not for oil transfer. For oil service use a Class A nitrile hose such as the [Parker MPT II](/p/parker-mpt-ii-non-conductive-multipurpose-oil-resistant-hoses)."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Parker GST II hose?",
+          "a": "It takes the maker's matching crimp or reusable air fittings sized to the bore. See [universal air couplings](/c/universal-air-couplings) and [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GST II or Parker MPT II hose: which one should I use?",
+          "a": "GST II is EPDM (ARPM Class C) for air and water, while [MPT II](/p/parker-mpt-ii-non-conductive-multipurpose-oil-resistant-hoses) is nitrile (ARPM Class A) for air, oil and mild chemicals. Choose MPT II if any oil is present."
+        },
+        {
+          "slot": "I",
+          "q": "What is Parker GST II hose used for in a workshop?",
+          "a": "The listing names air compressors, air tool hose including systems with light oil mists, shop air hose and water hose for clean up, wash down, cooling and spray. Fit a whip restraint on air lines; see [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker GST II air and water hose made and can it be exported from Dubai?",
+          "a": "The Parker GST II air and water hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GST II air and water hose in Dubai?",
+          "a": "Yes. We keep the Parker GST II air and water hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-jiffy-7212-series-push-on-multipurpose-oil-resistant-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Jiffy 7212 push-on hose used for?",
+          "a": "Parker Jiffy 7212 is a push-on multipurpose hose with a black nitrile tube and blue chloroprene cover over one textile braid, for air, oil, water, diesel, ethanol and gasoline. The listing has 15 part numbers rated 300 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker Jiffy 7212 push-on hose come in?",
+          "a": "Fifteen part numbers, for example 7212-251BL (blue) and 7212-251GY (gray); the colour code is the last two letters. The listing does not publish bores in the table, so give the Parker part number or the bore you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker Jiffy 7212 part numbers such as 7212-251BL?",
+          "a": "7212-251BL and 7212-750RD are two of the 15 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker Jiffy 7212 push-on hose?",
+          "a": "The maker states 300 psi, about 21 bar, for the range. Use push-on fittings made for this hose, and do not exceed the rating of the fitting."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum temperature of Parker Jiffy 7212 hose?",
+          "a": "The listing gives 212°F as the maximum temperature. The nitrile tube is ARPM Class A for oil resistance, which makes it suitable for oils and fuels at that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Jiffy 7212 push-on hose made of?",
+          "a": "The tube is black nitrile rated ARPM Class A for oil resistance, the cover is blue chloroprene with a smooth finish, and the reinforcement is one textile braid. The listing names biodiesel up to B20 in dedicated service, diesel, ethanol and gasoline."
+        },
+        {
+          "slot": "G",
+          "q": "Is Parker Jiffy 7212 hose suitable for biodiesel and gasoline?",
+          "a": "The listing names biodiesel to B20 in dedicated service, diesel, ethanol and gasoline among the applications, along with air, oil, water and mild chemicals. Fuel hose for dispensing may need extra approvals, so ask for them if required."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Parker Jiffy 7212 push-on hose?",
+          "a": "It takes push-on barbed fittings that grip without a clamp, so ordinary smooth couplers will not hold. Ask us for push-on barbs in the matching bore; see [universal air couplings](/c/universal-air-couplings)."
+        },
+        {
+          "slot": "K",
+          "q": "Parker Jiffy 7212 or Parker 804 Push-Lok hose?",
+          "a": "The Jiffy is nitrile for air, oil and fuels at 300 psi, while the [804 Push-Lok](/p/parker-804-push-lok-multipurpose-hoses) is EPDM for dry air and hot water at 150 psi. Choose the Jiffy for any oil or fuel."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit a push-on hose such as Parker Jiffy?",
+          "a": "Cut the hose square, lubricate the barb lightly and push the hose fully over the last ridge; no clamp is needed on a barb made for push-on hose. See [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Jiffy 7212 push-on hose made and can it be exported from Dubai?",
+          "a": "The Parker Jiffy 7212 push-on hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Jiffy 7212 push-on hose in Dubai?",
+          "a": "Yes, the Parker Jiffy 7212 push-on hose is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-mpt-ii-non-conductive-multipurpose-oil-resistant-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker MPT II multipurpose hose used for?",
+          "a": "Parker MPT II is a non-conductive multipurpose oil-resistant hose with a black nitrile tube and red chloroprene cover over two textile plies, for air, oil, mild chemicals and water. The listing has 25 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker MPT II multipurpose hose come in?",
+          "a": "Twenty-five part numbers in series 7094 and 7095, for example 7094-25200 (a 1/4\" red hose at 200 psi), 7094-50250 and 7095-100304. The rows give the colour (red or black), the pressure and the minimum bend radius."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Parker MPT II part numbers such as 7094-25200?",
+          "a": "7094-25200 and 7095-75304 are two of the 25 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker MPT II multipurpose hose?",
+          "a": "The maker states 200 to 300 psi (14 to 21 bar) by size, and the rows show 14, 17 and 21 bar. Read the row for the part number you order."
+        },
+        {
+          "slot": "E",
+          "q": "What air temperature range does Parker MPT II hose have?",
+          "a": "The listing gives -20°F to +158°F for air. The nitrile tube is ARPM Class A for oil resistance, so check oil and chemical temperatures with us before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker MPT II multipurpose hose made of?",
+          "a": "The tube is black nitrile rated ARPM Class A for oil resistance and the cover is red chloroprene with a smooth finish, over two textile plies. The listing names air, oil, mild chemicals, water and lubrication systems."
+        },
+        {
+          "slot": "G",
+          "q": "What does ARPM Class A mean for Parker MPT II hose?",
+          "a": "ARPM Class A is the high oil-resistance class, so the nitrile tube is made for petroleum oil, unlike a Class C EPDM hose. The hose is also non-conductive; ask for the maker's data if your site needs a rating."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on Parker MPT II hose?",
+          "a": "The rows show mating fitting series, 43 Series and Hy Series, for different sizes. Give us the part number and we match the right crimp or reusable fitting; see [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "K",
+          "q": "Parker MPT II or Parker GST II hose: which should I buy?",
+          "a": "MPT II is nitrile (Class A oil resistance), red-covered and meant for oil and mild chemicals as well as air and water, while [GST II](/p/parker-gst-ii-general-purpose-air-water-hoses) is EPDM (Class C) for air and water only. Use MPT II if oil is in the line."
+        },
+        {
+          "slot": "I",
+          "q": "How should Parker MPT II hose be installed?",
+          "a": "Keep it above the minimum bend radius shown on its row, use the matching fitting series and protect the cover from abrasion. See [whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker MPT II multipurpose hose made and can it be exported from Dubai?",
+          "a": "The Parker MPT II multipurpose hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker MPT II multipurpose hose in Dubai?",
+          "a": "Yes, we stock the Parker MPT II multipurpose hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "petersen-hose-nytrile",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Petersen Nytrile inflation hose used for?",
+          "a": "Petersen Nytrile hose is an inflation hose with a claw or safety coupler for tyre and bag inflation. The listing has 6 part numbers, such as 162-2100-0162 (16 ft, 1 inch, red) and 162-2038-80351 (35 ft, yellow)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Petersen Nytrile inflation hose come in?",
+          "a": "Six part numbers in lengths such as 16 ft and 35 ft, with claw or safety couplers. The listing publishes no pressure or bore for the range, so give us the application and the length you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Petersen Nytrile part numbers such as 162-2100-0162?",
+          "a": "162-2100-0162 is the Hose With Claw Coupler, Inflation, 16 Feet Length, 1 Inch Size, Red and 162-2038-90353 is the Hose With Safety Coupler, Inflation, 35 Feet Length, Nytrile, Blue. The size table lists all 6 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Petersen Nytrile inflation hose?",
+          "a": "The listing publishes no pressure rating for these hoses, so we do not quote one. Give us the inflation pressure you need and we confirm the right assembly with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Petersen Nytrile inflation hose made of?",
+          "a": "The listing names Nytrile as the hose material, with no more compound data. State the medium (air only for inflation) when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "What couplers does Petersen Nytrile inflation hose carry?",
+          "a": "The rows describe a claw coupler (162-2100-0162) and a safety coupler (162-2038-80351). Claw couplers are the pin-lug style, so match the mating socket on your equipment; see [crowfoot couplings](/c/crowfoot-couplings)."
+        },
+        {
+          "slot": "H",
+          "q": "What does Petersen Nytrile hose connect to?",
+          "a": "The claw or safety coupler on the hose mates with the matching air connection on a compressor or lift bag. Send us the existing coupler and we confirm the match."
+        },
+        {
+          "slot": "K",
+          "q": "Petersen Nytrile hose or Petersen lift bag hose?",
+          "a": "Nytrile hose is the inflation hose with a claw or safety coupler, while [lift bag hose](/p/petersen-lift-bag-hose) is supplied with a shutoff or relief valve at a stated 150 psi. Choose the lift bag hose for rescue and lifting bags."
+        },
+        {
+          "slot": "I",
+          "q": "How should an inflation hose be used safely?",
+          "a": "Stand clear of the hose when pressurising, check couplers before each use and replace the hose if the cover is cut or the coupler is damaged. Never exceed the pressure of the weakest part."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Petersen Nytrile inflation hose made and can it be exported from Dubai?",
+          "a": "The Petersen Nytrile inflation hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Petersen Nytrile inflation hose in Dubai?",
+          "a": "Yes. The Petersen Nytrile inflation hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "petersen-lift-bag-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Petersen lift bag hose used for?",
+          "a": "Petersen lift bag hose is a low-pressure air hose for inflating lifting and rescue bags, supplied with a shutoff and relief valve on most part numbers. The listing has 10 part numbers, in lengths such as 16 ft and 32 ft, rated 150 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Petersen lift bag hose come in?",
+          "a": "Ten part numbers; the rows show 16 ft (162-2038-50161) and 32 ft (162-2038-50321) with a shutoff and relief valve, and a 3/8\" ID 32 ft hose in yellow (162-2038-50324). Colours are black and yellow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Petersen lift bag part numbers such as 162-2038-50161?",
+          "a": "162-2038-50161 is the Hose, Lift Bag, With Shutoff/Relief Valve, 16 Feet Length, 150 Psi, Black and 162-2038-50321 is the Hose, Lift Bag, With Shutoff/Relief Valve, 32 Feet Length, 150 Psi, Black. The size table lists all 10 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Petersen lift bag hose?",
+          "a": "The rows list 150 psi, about 10 bar, for the lift bag hoses. Keep the supply regulated at or below that, and use the relief valve on the hose, as it is the safety device for over-pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Petersen lift bag hose made of?",
+          "a": "The listing gives no hose compound. The hose is described as a lift bag hose with a shutoff or relief valve; name the bag and air source when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "What is the shutoff and relief valve on a Petersen lift bag hose for?",
+          "a": "The shutoff valve isolates the bag, and the relief valve vents air if the supply pressure exceeds the setting. The listing does not publish the setting, so ask us for the maker's data for your part number."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Petersen lift bag hose connect to?",
+          "a": "One end connects to the bag inlet and the other to the air supply or regulator; fittings are not published. Send us the bag model and we confirm the matching hose."
+        },
+        {
+          "slot": "K",
+          "q": "Petersen lift bag hose or Petersen Nytrile inflation hose?",
+          "a": "Lift bag hose has a shutoff or relief valve and a stated 150 psi, while [Nytrile hose](/p/petersen-hose-nytrile) is an inflation hose with a claw or safety coupler and no pressure published. Choose lift bag hose for lifting bags."
+        },
+        {
+          "slot": "I",
+          "q": "How should lift bag hose be used safely?",
+          "a": "Regulate the air supply below the rating, use the relief valve, keep people clear of the load and the hose during inflation, and replace damaged hose. Lifting bags are safety equipment, so follow the bag maker's instructions."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Petersen lift bag hose made and can it be exported from Dubai?",
+          "a": "The Petersen lift bag hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Petersen lift bag hose in Dubai?",
+          "a": "Yes, the Petersen lift bag hose is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "reelcraft-air-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reelcraft air/water inlet hose used for?",
+          "a": "Reelcraft air hoses are short inlet hoses that connect the air or water supply to a Reelcraft hose reel. The listing has 3 part numbers in 3/8\" and 1\", for example S600982-10 (1\" x 10 ft)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Reelcraft air/water inlet hose come in?",
+          "a": "Three part numbers: S600982-10 (1\" x 10 ft), S601024-4 (3/8\" x 4 ft) and S601024-6 (3/8\" x 6 ft). Pick the bore to match the reel's inlet."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Reelcraft part numbers such as S600982-10?",
+          "a": "S600982-10 is the Air/Water Inlet Hose, 1 Inch x 10 ft. Size and S601024-4 is the Air/Water Inlet Hose, 3/8 Inch x 4 ft. Size. The size table lists all 3 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Reelcraft air/water inlet hose?",
+          "a": "The listing publishes no pressure rating for these inlet hoses, so we do not quote one. Give us the reel model and supply pressure and we confirm the right part before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Reelcraft air/water inlet hose made of?",
+          "a": "The listing names air and water as the hose type and gives no compound. Tell us the medium and the working temperature on the enquiry, and we confirm the hose with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to Reelcraft inlet hoses?",
+          "a": "None are listed for these hoses. If your project needs documents, ask for them with the enquiry and we obtain them from the maker."
+        },
+        {
+          "slot": "H",
+          "q": "What do Reelcraft inlet hoses connect to?",
+          "a": "One end connects to the reel's swivel inlet and the other to the supply line; the end threads are not published in the table. Send the reel model and we confirm the part; see [Reelcraft hose assemblies](/p/reelcraft-hose-assemblies)."
+        },
+        {
+          "slot": "K",
+          "q": "Reelcraft air hose or Reelcraft low-pressure air/water hose?",
+          "a": "The air hoses listing is three short inlet hoses, while the [low-pressure air/water hose listing](/p/reelcraft-low-pressure-air-water-hoses) goes up to long reel lengths such as 250 ft. Use the inlet hose between supply and reel and the longer hose on the reel itself."
+        },
+        {
+          "slot": "I",
+          "q": "How should a reel inlet hose be installed?",
+          "a": "Route it without twist from the supply to the reel swivel, keep the bend gentle and support it so the reel's rotation does not pull on it."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Reelcraft air/water inlet hose made and can it be exported from Dubai?",
+          "a": "The Reelcraft air/water inlet hose is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Reelcraft air/water inlet hose in Dubai?",
+          "a": "Yes. The Reelcraft air/water inlet hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "reelcraft-coupled-hose-assemblies-300-psi-3-8-inch-internal-diameter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reelcraft 3/8\" coupled hose assembly used for?",
+          "a": "Reelcraft 3/8\" coupled hose assemblies are red PVC multipurpose air hose assemblies with brass MNPT ends, rated 300 psi. The listing has 3 part numbers in 25, 35 and 50 ft lengths."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Reelcraft 3/8\" coupled hose assembly come in?",
+          "a": "Three part numbers, all 3/8\" ID: S601012-25 (25 ft), S601012-35 (35 ft) and S601012-50 (50 ft). Each is a coupled assembly with brass ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Reelcraft 3/8\" coupled part numbers such as S601012-25?",
+          "a": "S601012-25 is the Multipurpose Air Hose 3/8 Inch 25 Feet Length and S601012-35 is the Multipurpose Air Hose 3/8 Inch 35 Feet Length. The size table lists all 3 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Reelcraft 3/8\" coupled hose assembly?",
+          "a": "The maker states 300 psi, about 21 bar, for the assembly and the rows list 21 bar; the safety factor is 4:1. Keep couplers and tools at the same rating or higher."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Reelcraft 3/8\" coupled hose have?",
+          "a": "The listing gives 0°F to +150°F for this assembly, because of the PVC cover. Do not use it in freezing conditions or near hot surfaces."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Reelcraft 3/8\" coupled hose assembly made of?",
+          "a": "The cover is PVC, the hose colour is red and the ends are brass MNPT, with a 4:1 safety factor. PVC is light and flexible, but it stiffens in the cold and softens near heat."
+        },
+        {
+          "slot": "G",
+          "q": "What HS code is listed for Reelcraft 3/8\" coupled hose?",
+          "a": "The listing gives HS code 4009320050 for the assembly. Confirm the code with your customs broker for the destination country, since it can differ by country."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to Reelcraft 3/8\" coupled hose assemblies?",
+          "a": "Both ends are brass MNPT, so they screw into female NPT ports on reels, tools and quick couplers. See [universal air couplings](/c/universal-air-couplings) for the plug and socket."
+        },
+        {
+          "slot": "K",
+          "q": "Reelcraft coupled hose assembly or Reelcraft hose assemblies?",
+          "a": "This listing is the 3/8\" red PVC assembly at 300 psi in three lengths, while the [Reelcraft hose assemblies](/p/reelcraft-hose-assemblies) listing has more assemblies in other bores, including rubber assemblies at much higher pressures."
+        },
+        {
+          "slot": "I",
+          "q": "How should a coupled PVC air hose be used?",
+          "a": "Keep it clear of freezing temperatures and heat above +150°F, coil it without kinks and use quick couplers matched to the tool. See [compressed air hose selection](/blog/compressed-air-hose-selection)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Reelcraft 3/8\" coupled hose assembly made and can it be exported from Dubai?",
+          "a": "The Reelcraft 3/8\" coupled hose assembly is listed with United States as its country of origin and HS code 4009320050. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Reelcraft 3/8\" coupled hose assembly in Dubai?",
+          "a": "Yes. The Reelcraft 3/8\" coupled hose assembly sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "reelcraft-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reelcraft hose assembly used for?",
+          "a": "Reelcraft hose assemblies are replacement hose assemblies sold to fit Reelcraft reels, in PVC and rubber constructions from 1/4\" to 3/4\". The listing has 14 part numbers, with working pressures that range from 200 psi to 5000 psi by assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Reelcraft hose assembly come in?",
+          "a": "Fourteen part numbers in 1/4\", 3/8\", 1/2\" and 3/4\" bore; for example S7-260044 is 1/4\" at 5000 psi, S37-260043 is 1/2\" at 3000 psi and S26-260043 is 3/4\" at 1250 psi."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Reelcraft part numbers such as S601052-35?",
+          "a": "S601052-35 and 601012-25 are two of the 14 part numbers in the size table, each with its own bore, length and rating. Quote the exact part number, or the bore, length and pressure, so the right row is supplied."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Reelcraft hose assembly?",
+          "a": "Pressure is set by the assembly: PVC ones are 250 to 300 psi (S601026-40, S601021-30), and rubber ones run 200 to 5000 psi, such as S600669-1 at 2000 psi. There is no one figure for the range, so read the row for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What are the temperature limits of Reelcraft hose assemblies?",
+          "a": "The rows give 150°F for the PVC assemblies and 210°F for most rubber ones, and 150°F for 601040-75. Check the row for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Reelcraft hose assembly made of?",
+          "a": "The rows list PVC or rubber as the hose material, with brass fittings, and end sizes that include 9/16\"-18 on 601040-75. Rubber assemblies have the higher pressure ratings."
+        },
+        {
+          "slot": "G",
+          "q": "Which Reelcraft hose assembly is rated for the highest pressure?",
+          "a": "S7-260044 in 1/4\" is listed at 5000 psi, the highest in the range; S37-260043 follows at 3000 psi. Always check that the end fittings and the reel are rated for the same pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What do Reelcraft hose assemblies connect to?",
+          "a": "The rows give the end fitting sizes, such as 1/2\" at both ends of S37-260043 and 3/8\" and 1/2\" on S601021-30. They fit Reelcraft reels and tools; send the reel model and we match the part."
+        },
+        {
+          "slot": "K",
+          "q": "Reelcraft hose assemblies or the Reelcraft 3/8\" coupled assemblies?",
+          "a": "This listing covers 14 assemblies in many bores and pressures, while the [3/8 inch coupled assembly listing](/p/reelcraft-coupled-hose-assemblies-300-psi-3-8-inch-internal-diameter) is three red PVC hoses at 300 psi. Use this listing for rubber and high-pressure assemblies."
+        },
+        {
+          "slot": "I",
+          "q": "How should a reel hose assembly be inspected?",
+          "a": "Check the cover for cuts, the fittings for leaks and the hose for kinks at every service, and replace it at the first sign of damage. Match the pressure rating of the assembly to the reel and the tool."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Reelcraft hose assembly made and can it be exported from Dubai?",
+          "a": "The Reelcraft hose assembly is listed with United States as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Reelcraft hose assembly in Dubai?",
+          "a": "Yes, the Reelcraft hose assembly is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "reelcraft-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reelcraft hose used for?",
+          "a": "Reelcraft hoses are PVC air and water hoses made for Reelcraft hose reels, in 3/8\" to 1\" bore. The listing has 15 part numbers in lengths from 2 ft inlet hoses to 75 ft reel hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Reelcraft hose come in?",
+          "a": "Fifteen part numbers from 3/8\" to 1\", such as S601027-2 (1\" inlet, 2 ft), S601025-4 (4 ft), S3-260043 (3/8\", 30 ft), S7-260043 (1/2\", 40 ft) and 601020-75 (1/2\", 75 ft)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Reelcraft part numbers such as S601027-2?",
+          "a": "S601027-2 is the Hose, Inlet, 1 Inch Size, 2 ft. Length and S601024-50 is the Hose, With Fitting, 3/8 x 50 ft. Size. The size table lists all 15 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Reelcraft hose?",
+          "a": "The listing publishes no pressure rating for this range, so we do not quote one. Give us the reel model and working pressure and we confirm the right hose before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Reelcraft hose made of?",
+          "a": "The material is PVC with an MNPT end fitting, and the product type is air/water inlet hose. PVC is light and flexible but stiffens in the cold, so keep it away from freezing temperatures."
+        },
+        {
+          "slot": "G",
+          "q": "Where is the Reelcraft hose made?",
+          "a": "The listing gives Canada as the country of origin. No standards or certificates are listed for the range, so ask for the maker's data if you need them."
+        },
+        {
+          "slot": "H",
+          "q": "What do Reelcraft hoses connect to?",
+          "a": "The listing shows an MNPT end fitting on the hose, so it screws into female NPT ports on the reel and tools. See [universal air couplings](/c/universal-air-couplings) for quick couplers."
+        },
+        {
+          "slot": "K",
+          "q": "Reelcraft hoses or Reelcraft low-pressure air/water hoses?",
+          "a": "This listing has 15 part numbers in PVC from 3/8\" to 1\", while the [low-pressure air/water listing](/p/reelcraft-low-pressure-air-water-hoses) has 22 part numbers up to 250 ft reel lengths. Compare bore and length in the size tables."
+        },
+        {
+          "slot": "I",
+          "q": "How should hose on a Reelcraft reel be installed?",
+          "a": "Fit it without twist, keep the bend gentle at the swivel and do not exceed the rated pressure of the reel. Replace the hose if it is cracked, kinked or leaks at the ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Reelcraft hose made and can it be exported from Dubai?",
+          "a": "The Reelcraft hose is listed with Canada as its country of origin. We export it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Reelcraft hose in Dubai?",
+          "a": "Yes. We keep the Reelcraft hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "reelcraft-low-pressure-air-water-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reelcraft low-pressure air/water hose used for?",
+          "a": "Reelcraft low-pressure air/water hoses are reel hoses for air and water in 1/4\" to 1\" bore, sold in lengths from 3 ft inlet hoses to 250 ft reel lengths. The listing has 22 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Reelcraft low-pressure air/water hose come in?",
+          "a": "Twenty-two part numbers: for example S601020-4 (1/2\" x 4 ft), S601027-10 (1\" x 10 ft), S601022-120 (1/2\" x 120 ft), S601022-150 (1/2\" x 150 ft) and S601022-250 (1/2\" x 250 ft)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify Reelcraft low-pressure part numbers such as S601022-250?",
+          "a": "S601022-250 is the Air/Water Hose, Low Pressure, 1/2 Inch x 250 ft. Size and S601022-500 is the Air/Water Hose, Low Pressure, 1/2 Inch x 500 ft. Size. The size table lists all 22 part numbers, each with its own bore, length and rating, so match those to the line rather than the series name."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Reelcraft low-pressure air/water hose?",
+          "a": "The listing publishes no pressure rating for this range and calls it low pressure, so we do not quote one here. Give us the reel model and the supply pressure and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Reelcraft low-pressure air/water hose made of?",
+          "a": "The listing gives no hose compound; it names the product as air/water hose, low pressure. Tell us the medium and the temperature when you enquire, and we confirm the hose before quoting."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply to Reelcraft low-pressure hoses?",
+          "a": "None are listed for the range. If your project needs data sheets or certificates, ask for them with the enquiry and we request them from the maker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do Reelcraft low-pressure hoses connect to?",
+          "a": "Inlet hoses connect the supply to a reel's swivel, and the longer hoses are wound on the reel; end threads are not published in the table. Send the reel model and we confirm the match; see [Reelcraft hoses](/p/reelcraft-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "Reelcraft low-pressure air/water hose or Reelcraft coupled hose assemblies?",
+          "a": "The low-pressure listing is bulk-style hose in many lengths with no published pressure, while the [3/8 inch coupled assemblies](/p/reelcraft-coupled-hose-assemblies-300-psi-3-8-inch-internal-diameter) are finished red PVC assemblies at 300 psi in three lengths."
+        },
+        {
+          "slot": "I",
+          "q": "How should reel air/water hose be installed?",
+          "a": "Install it without twist, keep it clear of sharp edges and do not exceed the supply pressure the reel is rated for. Keep the hose within its stated length so the reel is not overloaded."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Reelcraft low-pressure air/water hose be exported from Dubai, and what papers come with it?",
+          "a": "We export the Reelcraft low-pressure air/water hose from Dubai, UAE to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Name the country on the enquiry; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Reelcraft low-pressure air/water hose in Dubai?",
+          "a": "Yes. The Reelcraft low-pressure air/water hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

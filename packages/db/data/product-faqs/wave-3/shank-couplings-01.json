@@ -1,0 +1,986 @@
+{
+  "family": "shank-couplings-01",
+  "extraFacts": [
+    {
+      "fact": "NPSM is the straight (parallel) mechanical pipe thread of ASME B1.20.1; NST (also called NH) is the national standard hose coupling thread and GHT the garden hose thread, both in ASME B1.20.7. Straight threads seal on a gasket or washer, not on the thread.",
+      "source": "ASME B1.20.1 Pipe Threads, General Purpose (Inch); ASME B1.20.7 Hose Coupling Screw Threads (Inch)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-boss-female-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Boss Female Adapters and what are they used for?",
+          "a": "Dixon Boss Female Adapters are ground joint wing nut by female NPT adapters in plated iron or steel. The wing nut end joins a Boss ground joint coupling, and the female NPT end takes a male pipe thread. Six sizes run from 3/4\" to 3\" thread size."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon Boss female adapter part numbers GFAS6 to GFAS36 map to sizes?",
+          "a": "The number after GFAS rises with the size: GFAS6 is 3/4\", GFAS11 is 1\", GFAS16 is 1-1/4\", GFAS21 is 1-1/2\", GFAS26 is 2\" and GFAS36 is 3\" female NPT thread. All six are listed as plated iron or steel."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Boss Female Adapters cover?",
+          "a": "The six part numbers are GFAS6, GFAS11, GFAS16, GFAS21, GFAS26 and GFAS36, covering female NPT threads of 3/4\", 1\", 1-1/4\", 1-1/2\", 2\" and 3\". Each part number is one size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick a Dixon Boss female adapter for my pipe thread?",
+          "a": "Pick the size of the male NPT pipe thread you are joining to: a 2\" male thread needs the 2\" female adapter, GFAS26. The Boss end and the NPT end are matched, so state the size of the ground joint coupling on the other side as well."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Boss Female Adapters have?",
+          "a": "The Dixon Boss Female Adapters do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Boss female adapters made from?",
+          "a": "The listing gives iron and steel, with a plated finish. Plated iron or steel suits air, water and general utility lines; the plating protects the surface but is not a stainless or chemical-resistant choice."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Boss female adapter connect to?",
+          "a": "Its ground joint wing nut end connects to a Boss ground joint half, and its female NPT end screws onto a male pipe thread. For the male version see [Dixon Boss male adapters](/p/dixon-boss-male-adapters), and for hose ends see [Boss holedall fittings](/p/dixon-boss-holedall-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Dixon Boss female adapter?",
+          "a": "Seal the NPT end with thread sealant or tape and tighten it onto the pipe, then bring the ground joint seat together with the mating half and tighten the wing nut. Keep the seat clean, because dirt on the ground faces stops the joint sealing."
+        },
+        {
+          "slot": "G",
+          "q": "What thread standard does the Dixon Boss female adapter use?",
+          "a": "The pipe end is NPT, a tapered pipe thread, so it seals with thread sealant or tape. The other end is a ground joint wing nut, which seals on the ground seat of the mating Boss coupling."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon Boss female adapters differ from Boss male adapters?",
+          "a": "The female adapter has female NPT threads and takes a male pipe end, while the [Boss male adapter](/p/dixon-boss-male-adapters) has a male NPT thread and screws into a female port. Both are listed in six sizes from 3/4\" to 3\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Boss Female Adapters made, and can you ship them from Dubai?",
+          "a": "The Dixon Boss Female Adapters are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Boss Female Adapters from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Dixon Boss Female Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-boss-male-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Boss Male Adapters and what are they used for?",
+          "a": "Dixon Boss Male Adapters are ground joint by male NPT adapters in plated iron or steel. The male NPT end screws into a female pipe port, and the ground joint end joins a Boss coupling. Six sizes run from 3/4\" to 3\" male thread."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon Boss male adapter part numbers GMAS6 to GMAS36 map to sizes?",
+          "a": "The number after GMAS rises with the size: GMAS6 is 3/4\", GMAS11 is 1\", GMAS16 is 1-1/4\", GMAS21 is 1-1/2\", GMAS26 is 2\" and GMAS36 is 3\" male NPT thread, all in plated iron or steel."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Boss Male Adapters cover?",
+          "a": "The six part numbers are GMAS6, GMAS11, GMAS16, GMAS21, GMAS26 and GMAS36, covering male NPT threads of 3/4\", 1\", 1-1/4\", 1-1/2\", 2\" and 3\". Each part number is one size."
+        },
+        {
+          "slot": "D",
+          "q": "Which Dixon Boss male adapter do I need for a given port?",
+          "a": "Match the size of the female NPT port: a 1-1/2\" port takes GMAS21. Check the size of the Boss ground joint coupling on the other end as well, because the Boss end and the NPT end are listed as one size."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Boss Male Adapters have?",
+          "a": "The Dixon Boss Male Adapters do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Boss male adapters made from?",
+          "a": "The listing gives iron and steel, plated, so the surface is protected for air, water and general utility lines. The plating is not a stainless or chemical-resistant finish."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Boss male adapter connect to?",
+          "a": "Its male NPT end screws into a female NPT port, and its ground joint end joins a Boss coupling half. For the female version see [Dixon Boss female adapters](/p/dixon-boss-female-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Dixon Boss male adapter?",
+          "a": "Wrap or coat the male NPT thread with sealant and tighten it into the port, then bring the ground joint faces together with the wing nut. Keep both ground faces clean, because dirt on the seat is a common cause of leaks."
+        },
+        {
+          "slot": "G",
+          "q": "What thread does the Dixon Boss male adapter use?",
+          "a": "The pipe end is a male NPT thread, which is tapered and seals with thread sealant or tape. The other end is a ground joint, which seals on the ground seat of the mating Boss half."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon Boss male adapters differ from Boss holedall fittings?",
+          "a": "The male adapter ends in a male NPT thread for a pipe port, while the [Boss holedall fitting](/p/dixon-boss-holedall-fittings) is a hose-end fitting sized to a hose outside diameter band. Use the adapter for pipe, the holedall for hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Boss Male Adapters made, and can you ship them from Dubai?",
+          "a": "The Dixon Boss Male Adapters are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Boss Male Adapters from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Dixon Boss Male Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-boss-holedall-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Boss Holedall Fittings and what are they used for?",
+          "a": "Dixon Boss Holedall Fittings are hose-end fittings in plated iron, steel or stainless steel, sized by body size from 3/4\" to 3\". Each part number covers one band of hose outside diameter, so the fitting grips the hose without a separate ferrule."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the P1, P2 and P3 Dixon Boss holedall part numbers?",
+          "a": "The letters P1, P2 and P3 at the end of the part number step through the hose outside diameter bands for one body size. For the 3\" body, GF111P1 fits 3-26/64 to 3-40/64 inch hose, GF111P2 fits 3-41/64 to 3-48/64 inch and GF111P3 fits 3-49/64 to 3-56/64 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Boss Holedall Fittings cover?",
+          "a": "The 18 part numbers cover body sizes 3/4\", 1\", 1-1/2\", 2\" and 3\". Each body size has several hose outside diameter bands, for example the 2\" body covers 2-28/64 to 2-56/64 inch in three steps. Three part numbers beginning RGF are listed as hose couplings."
+        },
+        {
+          "slot": "D",
+          "q": "How do I find the right Dixon Boss holedall for my hose?",
+          "a": "Measure the hose outside diameter and pick the part number whose band contains it. A hose of 1-35/64 inch outside diameter, for example, falls in the 1\" body band of GF36P2, which covers 1-35/64 to 1-38/64 inch."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Boss Holedall Fittings have?",
+          "a": "The Dixon Boss Holedall Fittings do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon Boss holedall fittings made from?",
+          "a": "The listing gives plated iron, steel and stainless steel, so the choice follows the medium: plated iron or steel for general utility lines and stainless for more corrosive service. State the material you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon Boss holedall fitting connect to?",
+          "a": "The Boss end connects to another Boss half through the ground joint seat and wing nut, and the hose end clamps the hose. For the pipe adapters of the same Boss family see [Dixon Boss male adapters](/p/dixon-boss-male-adapters) and [female adapters](/p/dixon-boss-female-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon Boss holedall to a hose?",
+          "a": "Cut the hose square, push it fully onto the fitting stem and close the clamp over the band that matches its outside diameter. A hose outside the band for the part number will leak or pull off, so measure it before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Boss Holedall Fittings follow?",
+          "a": "The listing names no dimensional standard for the Dixon Boss Holedall Fittings. What it does give is the connection: a Boss ground joint end and a hose end sized to a hose outside diameter band. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon Boss holedall fittings differ from the Boss male and female adapters?",
+          "a": "The holedall is the hose-end half and is chosen by hose outside diameter band, with 18 part numbers. The [male](/p/dixon-boss-male-adapters) and [female](/p/dixon-boss-female-adapters) adapters are the pipe-thread halves, with six part numbers each, chosen by NPT thread size."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Boss Holedall Fittings made, and can you ship them from Dubai?",
+          "a": "The Dixon Boss Holedall Fittings are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Boss Holedall Fittings in Dubai for export?",
+          "a": "Yes. The Dixon Boss Holedall Fittings sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-female-hose-shank-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Female Hose Shank Adapters and what are they used for?",
+          "a": "Dixon Female Hose Shank Adapters are quick-connect female couplers with a hose shank, in galvanized steel. They are Type B (and Type A in larger sizes) female cam and groove halves from 2\" to 12\" that connect hose to a male adapter."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Dixon female hose shank adapter part numbers FC3103 to FC31012?",
+          "a": "The FC31 codes are Type B female by hose shank in galvanized steel, and the digits after them give the size: FC3103 is 3\", FC3106 is 6\" and FC31012 is 12\". Codes starting FC21 are Type A, shown for 10\" and 12\". ST suffixes such as FC3106ST60 mark the machined hose shank version."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Female Hose Shank Adapters cover?",
+          "a": "The 12 part numbers cover 2\", 3\", 4\", 6\", 8\", 10\" and 12\" sizes in galvanized steel. Type B is the main version, Type A is listed in 10\" and 12\", and the ST codes are machined shank versions."
+        },
+        {
+          "slot": "D",
+          "q": "Which Dixon female hose shank adapter do I need for Type A or Type B?",
+          "a": "Pick the type to match the male adapter you will join: Type A and Type B are different cam and groove styles. Then pick the size of the hose bore. The machined shank ST versions suit applications that need a machined hose tail."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Female Hose Shank Adapters have?",
+          "a": "The Dixon Female Hose Shank Adapters do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon female hose shank adapters made from?",
+          "a": "The listing gives galvanized steel for every row. Galvanising protects the steel against corrosion in outdoor or damp service, but it is not a stainless or chemical-resistant choice."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon female hose shank adapter connect to?",
+          "a": "The female coupler engages a male cam and groove adapter of the same size, and its shank goes into the hose with a clamp. See the [cam and groove couplings shelf](/c/cam-and-groove-couplings) for male adapters and the [hose clamps shelf](/c/hose-clamps-sleeves-ferrules) for clamps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon female hose shank adapter?",
+          "a": "Push the hose fully over the shank, clamp it with a clamp sized for the hose outside diameter, then engage the cam arms onto the male adapter and fold them down. Check the gasket seat before each connection."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Female Hose Shank Adapters follow?",
+          "a": "The listing names no dimensional standard for the Dixon Female Hose Shank Adapters. What it does give is the connection: a quick-connect female cam and groove end and a hose shank. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon female hose shank adapters differ from the hose shanks in nylon and polypropylene?",
+          "a": "The female hose shank adapter is a 2\" to 12\" galvanized steel cam and groove coupler, while the [Dixon hose shanks](/p/dixon-hose-shanks) are small nylon or polypropylene shanks with NPT inserts. Pick on connection style first."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Female Hose Shank Adapters made, and can you ship them from Dubai?",
+          "a": "The Dixon Female Hose Shank Adapters are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Dixon Female Hose Shank Adapters in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Dixon Female Hose Shank Adapters are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hose-shanks",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Hose Shanks and what are they used for?",
+          "a": "Dixon Hose Shanks are push-on hose shanks in nylon and polypropylene, with an NPT insert. Most are male NPT inserts that join a hose to a female NPT thread, and one is a push-on shank with a female NPT insert. Six part numbers are listed."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Dixon hose shank part numbers THN20, TN43 and PPN200 identify?",
+          "a": "Each row is a hose shank with an NPT insert: THN15, THN20, THN25, TN43 and PPN200 are male NPT inserts, and TPF33 is a push-on shank with a female NPT insert. The listing gives the type of insert but not a size column, so quote the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Hose Shanks cover?",
+          "a": "The six part numbers are THN20, THN15, THN25, TN43, TPF33 and PPN200. Five are male NPT inserts and one is a female NPT insert. Quote the part number to be sure of size."
+        },
+        {
+          "slot": "D",
+          "q": "Do I need a nylon or a polypropylene Dixon hose shank?",
+          "a": "Nylon gives a tougher shank for general water and air lines, and polypropylene resists many chemicals better but is less rigid. The listing gives both materials across the six part numbers, so tell us the medium and we will pick one."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Hose Shanks have?",
+          "a": "The Dixon Hose Shanks do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon hose shanks made from?",
+          "a": "Dixon hose shanks are nylon or polypropylene, both plastics with an NPT thread insert. Neither material is a metal, so they suit water, air and mild chemical lines and not high-temperature or high-pressure service."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon hose shank screw into?",
+          "a": "A male NPT insert screws into a female NPT port, and the barbed shank takes the hose. The female NPT insert version, TPF33, takes a male pipe thread. For metal shanks see the [Dixon female hose shank adapters](/p/dixon-female-hose-shank-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon plastic hose shank?",
+          "a": "Seal the NPT thread with sealant, hand-tighten and then turn a little further, because plastic threads crack if overtightened. Push the hose onto the barb and clamp it. Never use a wrench on a plastic body beyond snug."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Hose Shanks follow?",
+          "a": "The listing names no dimensional standard for the Dixon Hose Shanks. What it does give is the connection: a hose stem with an NPT insert. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon hose shanks differ from the Tuff-Lite short shank couplings?",
+          "a": "Dixon hose shanks are NPT-insert shanks for pipe ports, while the [Tuff-Lite female](/p/dixon-tuff-lite-fittings-short-shank-female-ght-couplings) and [male](/p/dixon-tuff-lite-fittings-short-shank-male-couplings) couplings are short-shank hose couplings with garden-style threads. Use the hose shank at a pipe port."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Hose Shanks made, and can you ship them from Dubai?",
+          "a": "The Dixon Hose Shanks are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hose Shanks in Dubai for export?",
+          "a": "Yes, the Dixon Hose Shanks are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-king-short-shank-suction-complete-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon King Short Shank Suction Complete Couplings and what are they used for?",
+          "a": "Dixon King Short Shank Suction Complete Couplings are complete suction hose couplings in plated iron and steel with a rubber seal, in the King series. Each is a male and female pair on short shanks, in NPSM or NST thread. Forty-three part numbers cover 1-1/4\" to 6\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Dixon King complete suction coupling part numbers CAB200, CSM200 and CBB125?",
+          "a": "The C codes spell out the build: C, then the shank material (A aluminium, S steel, B brass), then the nut material (B brass, M iron), then the size in hundredths. CAB200 is a 2\" aluminium shank with a brass nut, and CSM200 is a 2\" steel shank with an iron nut. A trailing N, as in CAB250N, marks NST thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon King Short Shank Suction Complete Couplings cover?",
+          "a": "The 43 part numbers run from 1-1/4\" to 6\" in sizes such as 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\" and 6\". Many are NPSM, and the codes ending N are NST, so check the thread against the thread on your equipment."
+        },
+        {
+          "slot": "D",
+          "q": "Do I need the NPSM or NST version of a Dixon King complete suction coupling?",
+          "a": "Choose the version to match the thread already on your hose coupling or equipment: NPSM is the straight pipe thread, and NST is the national standard hose thread, marked by a trailing N on the part number. They do not interchange, so confirm before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon King Short Shank Suction Complete Couplings have?",
+          "a": "The Dixon King Short Shank Suction Complete Couplings do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon King suction couplings made from?",
+          "a": "The shanks and nuts are plated iron or steel on the main parts, with brass and aluminium options in the C codes, and a rubber seal. State the shank and nut material you want, because the part number follows it."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon King complete suction coupling connect?",
+          "a": "A complete coupling joins two suction hose lengths, with a shank in each hose held by a clamp. For single halves see the [female](/p/dixon-king-short-shank-suction-female-couplings) and [male](/p/dixon-king-short-shank-suction-male-couplings) King couplings. Clamps are on the [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain a Dixon King short shank suction coupling?",
+          "a": "Replace the rubber seal when it hardens or cuts, because suction joints draw air through a faulty seal. Hold each shank with a clamp sized for the hose and check them after the first pumping cycles."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon King Short Shank Suction Complete Couplings follow?",
+          "a": "The listing names no dimensional standard for the Dixon King Short Shank Suction Complete Couplings. What it does give is the connection: NPSM or NST thread with a rubber seal. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon King complete couplings differ from the separate male and female King couplings?",
+          "a": "The complete couplings supply both halves in one part number, with 43 part numbers. The [female](/p/dixon-king-short-shank-suction-female-couplings) and [male](/p/dixon-king-short-shank-suction-male-couplings) King listings are single halves, and the [short shank couplings](/p/dixon-short-shank-couplings) mix complete, male and female codes in a smaller set."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon King Short Shank Suction Complete Couplings made, and can you ship them from Dubai?",
+          "a": "The Dixon King Short Shank Suction Complete Couplings are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon King Short Shank Suction Complete Couplings from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Dixon King Short Shank Suction Complete Couplings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-king-short-shank-suction-female-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon King Short Shank Suction Female Couplings and what are they used for?",
+          "a": "Dixon King Short Shank Suction Female Couplings are the female half of a King suction coupling: a short hose shank and a female nut, in malleable iron with NPSM or NST thread. 43 part numbers cover the common hose sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon King female suction coupling part numbers FAB250N, FCSM300 and FBB200 read?",
+          "a": "The F codes start with F for female, then the shank (A aluminium, B brass, CS steel), then the nut, then the size in hundredths: FAB250 is 2-1/2\", FBB200 is 2\" and FCSM300 is 3\". A trailing N, as in FAB250N, marks NST thread, and rows without N are NPSM."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon King Short Shank Suction Female Couplings cover?",
+          "a": "The 43 part numbers cover sizes up to 6\", for example FAB150, FAB250, FCSB400 and FCSB600. Rows that end in N are NST and the rest are NPSM. Older S-series numbers such as S12 and SB22N are also listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which Dixon King female suction coupling do I need, NPSM or NST?",
+          "a": "Match the thread of the male half you are joining: NPSM is the straight pipe thread and NST is the fire-hose thread, marked with a trailing N. Then match the hose bore of the shank. Quote the part number from the old coupling if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon King Short Shank Suction Female Couplings have?",
+          "a": "The Dixon King Short Shank Suction Female Couplings do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon King female suction couplings made from?",
+          "a": "The base material is malleable iron, with plated iron nuts on the CSM codes and brass or aluminium parts in other codes. The shank and nut material is in the part number, so state the material you want."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon King female suction coupling mate with?",
+          "a": "It mates with a male King half of the same size and thread, such as the [King male suction couplings](/p/dixon-king-short-shank-suction-male-couplings). The shank goes into the hose under a clamp. For both halves in one order see the [complete couplings](/p/dixon-king-short-shank-suction-complete-couplings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon King female suction coupling?",
+          "a": "Push the hose fully over the short shank, clamp it, then screw the female nut onto the male half and tighten it. Suction lines draw air through a poor joint, so replace the seal when it hardens and check the clamp after the first run."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon King Short Shank Suction Female Couplings follow?",
+          "a": "The listing names no dimensional standard for the Dixon King Short Shank Suction Female Couplings. What it does give is the connection: NPSM or NST thread on the female nut. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon King female suction couplings differ from the male couplings?",
+          "a": "The female half has the female nut, with 43 part numbers, and the [male half](/p/dixon-king-short-shank-suction-male-couplings) has the male thread.  The [complete coupling](/p/dixon-king-short-shank-suction-complete-couplings) supplies both."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon King Short Shank Suction Female Couplings made, and can you ship them from Dubai?",
+          "a": "The Dixon King Short Shank Suction Female Couplings are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon King Short Shank Suction Female Couplings in Dubai for export?",
+          "a": "Yes. We keep the Dixon King Short Shank Suction Female Couplings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-king-short-shank-suction-male-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon King Short Shank Suction Male Couplings and what are they used for?",
+          "a": "Dixon King Short Shank Suction Male Couplings are plated iron male halves with a hose barb and a male NPSM or NST thread. The barb end goes into the suction hose, and the thread screws into a female half. 29 part numbers cover 1\" to 6\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon King male suction coupling part numbers MA200, MB200 and MCS200 differ?",
+          "a": "The three-digit number gives the size in hundredths: 200 is 2\", 300 is 3\", 400 is 4\" and 600 is 6\". MA, MB and MCS prefixes appear at each size, so a 2\" male half is available as MA200, MB200 or MCS200. A trailing N, as in MA150N, marks NST thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon King Short Shank Suction Male Couplings cover?",
+          "a": "The 29 part numbers cover 1\" to 6\", with hose barb by male NPSM end in sizes 1\", 2\", 3\", 4\" and 6\", and NST versions in some sizes. The S-series numbers such as S10, S25 and S36 sit alongside the M-series codes."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between MA, MB and MCS Dixon King male suction couplings?",
+          "a": "The three prefixes name different builds of the same male half in the same size, so pick the one that matches your existing coupling or the material you want. If you only have a size, tell us the hose bore, thread and shank material."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon King Short Shank Suction Male Couplings have?",
+          "a": "The Dixon King Short Shank Suction Male Couplings do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon King male suction couplings made from?",
+          "a": "The listing gives plated iron, so the body is protected against corrosion for general suction service. Check the shank material in the part number if you need brass or aluminium."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon King male suction coupling screw into?",
+          "a": "It screws into a King female half of the same size and thread, such as the [King female suction couplings](/p/dixon-king-short-shank-suction-female-couplings). The barb end goes into the suction hose under a clamp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon King male suction coupling?",
+          "a": "Push the barbed end into the hose to the shoulder and clamp it, then screw the male thread into the female nut. Replace the seal in the female half when it hardens so the line holds vacuum."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon King Short Shank Suction Male Couplings follow?",
+          "a": "The listing names no dimensional standard for the Dixon King Short Shank Suction Male Couplings. What it does give is the connection: a hose barb by male NPSM end, with NST on the codes ending N. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon King male suction couplings differ from the female couplings and the short shank couplings?",
+          "a": "The male half has the thread and the hose barb, with 29 part numbers, and the [female half](/p/dixon-king-short-shank-suction-female-couplings) has the nut. The [short shank couplings](/p/dixon-short-shank-couplings) listing mixes male, female and complete codes in 12 part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon King Short Shank Suction Male Couplings made, and can you ship them from Dubai?",
+          "a": "The Dixon King Short Shank Suction Male Couplings are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon King Short Shank Suction Male Couplings from stock in the UAE and get a quotation?",
+          "a": "Yes. The Dixon King Short Shank Suction Male Couplings sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-reusable-female-swivel-stem-and-ferrule-sets",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Reusable Female Swivel Stem And Ferrule Sets and what are they used for?",
+          "a": "Dixon Reusable Female Swivel Stem and Ferrule Sets are brass reusable hose ends with a female swivel NPSM nut. The stem and ferrule clamp a small-bore hose, and the swivel nut screws onto a male NPSM thread. 17 sizes run from 1/4\" to 1/2\" hose inside diameter."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dixon reusable swivel part number such as 1854084K or 1856126K?",
+          "a": "Each part number describes a reusable female swivel by hose ID, hose OD and female NPSM thread: 1858148K is 1/2\" ID by 7/8\" OD with a 1/2\" thread, and 1856126K is 3/8\" ID by 3/4\" OD with a 3/8\" thread. The same ID comes with several ODs."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Reusable Female Swivel Stem And Ferrule Sets cover?",
+          "a": "The 17 part numbers cover hose ID of 1/4\", 5/16\", 3/8\" and 1/2\", with female NPSM threads of 1/4\", 3/8\" and 1/2\". Several outside diameters are listed for each ID, for example 1/2\" to 5/8\" on 1/4\" ID hose."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match a Dixon reusable swivel set to my hose?",
+          "a": "Measure the hose inside diameter and outside diameter and match both to a row: a 1/4\" ID by 9/16\" OD hose with a 3/8\" thread is 1854096K. The ferrule clamps on the outside diameter, so a wrong OD will not hold."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Reusable Female Swivel Stem And Ferrule Sets have?",
+          "a": "The Dixon Reusable Female Swivel Stem And Ferrule Sets do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon reusable swivel sets made from?",
+          "a": "They are brass, which resists corrosion and suits water, air and light fluid service on small-bore hose. Brass is not a stainless choice, so check compatibility for aggressive chemicals."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon reusable female swivel connect to?",
+          "a": "Its female NPSM swivel nut screws onto a male NPSM thread, such as a nipple or a valve outlet of the same size. The stem and ferrule assemble onto the hose. For other small shank fittings see [Dixon standard shank female with swivel nut](/p/dixon-standard-shank-ght-female-with-swivel-nut)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble a Dixon reusable swivel set on a hose?",
+          "a": "Slide the ferrule over the cut hose, push the stem in and crimp or compress the ferrule as the set requires, and check the hose is fully seated. Reusable ends can be taken apart and refitted to a new hose, but replace a ferrule that is deformed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Reusable Female Swivel Stem And Ferrule Sets follow?",
+          "a": "The listing names no dimensional standard for the Dixon Reusable Female Swivel Stem And Ferrule Sets. What it does give is the connection: a reusable hose end with a female NPSM swivel nut. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the reusable swivel set differ from the Dixon straight swivel hose shank connectors?",
+          "a": "The reusable set clamps hose with a ferrule and has a female NPSM swivel nut, in 17 part numbers from 1/4\" to 1/2\" ID. The [straight swivel x hose shank connectors](/p/dixon-straight-swivel-x-hose-shank-connectors) are four part numbers with a barbed stainless shank on a swivel body."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Reusable Female Swivel Stem And Ferrule Sets made, and can you ship them from Dubai?",
+          "a": "The Dixon Reusable Female Swivel Stem And Ferrule Sets are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Dixon Reusable Female Swivel Stem And Ferrule Sets in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Dixon Reusable Female Swivel Stem And Ferrule Sets sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-short-shank-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Short Shank Couplings and what are they used for?",
+          "a": "Dixon Short Shank Couplings are plated iron suction couplings, mixing male, female and complete codes in 12 part numbers. Most are NPSM and one is NST. They join hose on a short shank to a threaded mate, in sizes up to 6\"."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Dixon short shank coupling part numbers S301, MCS150 and CAB300 identify?",
+          "a": "Each code names a type. S301 is a short shank suction male, NST, MCS150 is a male, NPSM, and SB17 is a female, NPSM. S123 and SB183 are complete couplings. CAB300 is a 3\" aluminium-shank coupling with a brass nut."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Short Shank Couplings cover?",
+          "a": "The 12 part numbers cover sizes from 1-1/2\" to 6\". Examples include MCS150 (1-1/2\"), CAB300 (3\"), CSB150 (1-1/2\" steel shank, brass nut) and the 6\" parts SB62, S62 and SB183."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon short shank coupling code for my suction hose?",
+          "a": "Pick the gender and build first, male, female or complete, then the size, then the shank and nut material, and last NPSM or NST. The listing mixes all four choices, so a quoted part number is the safest way to match."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Short Shank Couplings have?",
+          "a": "The Dixon Short Shank Couplings do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon short shank couplings made from?",
+          "a": "Most are plated iron, with aluminium-shank, steel-shank and brass parts in the C codes. The shank and nut material is in the code, so state it when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon short shank coupling connect?",
+          "a": "It joins a suction hose to a threaded mate. Male and female codes mate with each other, and the complete codes carry both. For the full King range see [King complete couplings](/p/dixon-king-short-shank-suction-complete-couplings), [female](/p/dixon-king-short-shank-suction-female-couplings) and [male](/p/dixon-king-short-shank-suction-male-couplings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain a Dixon short shank suction coupling?",
+          "a": "Replace the rubber seal when it hardens and check the clamp on the short shank after the first run. A poor seal draws air into a suction line, so test the joint under vacuum before putting the line in service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Short Shank Couplings follow?",
+          "a": "The listing names no dimensional standard for the Dixon Short Shank Couplings. What it does give is the connection: NPSM thread on most parts and NST on one part. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon short shank couplings differ from the King suction coupling listings?",
+          "a": "This listing is a 12 part number mix of male, female and complete codes, while the King listings are split by type: [complete](/p/dixon-king-short-shank-suction-complete-couplings), [female](/p/dixon-king-short-shank-suction-female-couplings) and [male](/p/dixon-king-short-shank-suction-male-couplings). Use whichever listing matches the code on your old coupling."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Short Shank Couplings made, and can you ship them from Dubai?",
+          "a": "The Dixon Short Shank Couplings are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Short Shank Couplings from stock in the UAE and get a quotation?",
+          "a": "Yes. The Dixon Short Shank Couplings sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-standard-shank-ght-female-with-swivel-nut",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Standard Shank GHT Female With Swivel Nut and what is it used for?",
+          "a": "Dixon Standard Shank GHT Female with Swivel Nut is a brass or stainless hose shank with a female GHT swivel nut, for garden-style hose threads. Eleven part numbers cover hose IDs of 1/2\", 5/8\", 3/4\" and 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon standard shank female part numbers 5910812C, 5911012SS and 5911212CLF read?",
+          "a": "The five-digit number gives the hose ID: 59108 is 1/2\", 59110 is 5/8\", 59112 is 3/4\" and 59116 is 1\". The suffix gives the material: C for brass, SS for stainless steel and CLF for lead-free brass alloy."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon Standard Shank GHT Female With Swivel Nut cover?",
+          "a": "The 11 part numbers cover hose IDs of 1/2\", 5/8\", 3/4\" and 1\", with hex sizes of 1-3/16\" and 1-7/16\" and lengths of 1.82\" to 2.25\" on the larger sizes. Each of 1/2\", 5/8\" and 3/4\" is offered in brass, stainless and lead-free."
+        },
+        {
+          "slot": "D",
+          "q": "Do I need brass, stainless or lead-free for a Dixon GHT female swivel shank?",
+          "a": "Use brass for general water hose, stainless steel where corrosion or hygiene matters, and the lead-free (CLF) alloy where the water is for drinking use. The listing gives all three for the 1/2\", 5/8\" and 3/4\" sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Dixon Standard Shank GHT Female With Swivel Nut have?",
+          "a": "The Dixon Standard Shank GHT Female With Swivel Nut does not carry one pressure figure on its listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon standard GHT female shanks made from?",
+          "a": "The listing gives alloy C27450 brass, stainless steel and lead-free brass across the eleven part numbers. Brass is the standard choice, and stainless steel suits corrosive or washdown environments."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon standard shank GHT female connect to?",
+          "a": "Its female GHT swivel nut screws onto a male GHT thread, such as the [Dixon standard shank GHT male](/p/dixon-standard-shank-ght-male), and the shank goes inside the hose. The listing is for hose and fittings of the garden-hose type."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon GHT female swivel shank?",
+          "a": "Push the shank into the hose and clamp it with a band clamp, then screw the swivel nut onto the male thread. A rubber washer in the nut seals the joint, so replace it if it is cut or flat."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Dixon Standard Shank GHT Female With Swivel Nut follow?",
+          "a": "The listing names no dimensional standard for the Dixon Standard Shank GHT Female With Swivel Nut. What it does give is the connection: a female GHT swivel nut. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon GHT female swivel shank differ from the GHT male shank?",
+          "a": "The female half has the swivel nut with a female GHT thread, and its hex is wider than the male half. The [male half](/p/dixon-standard-shank-ght-male) has the male GHT thread. Both come in the same 1/2\", 5/8\", 3/4\" and 1\" hose IDs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Standard Shank GHT Female With Swivel Nut made, and can you ship it from Dubai?",
+          "a": "The Dixon Standard Shank GHT Female With Swivel Nut is made by the manufacturer in the United States. Indus Hydraulics ships it worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Standard Shank GHT Female With Swivel Nut in Dubai for export?",
+          "a": "Yes, the Dixon Standard Shank GHT Female With Swivel Nut is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-standard-shank-ght-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Standard Shank GHT Male and what is it used for?",
+          "a": "Dixon Standard Shank GHT Male is a brass or stainless hose shank with a male GHT thread, for garden-style hose. Eleven part numbers cover hose IDs of 1/2\", 5/8\", 3/4\" and 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon standard shank male part numbers 5900812C, 5901012SS and 5901212CLF read?",
+          "a": "The number gives the hose ID: 59008 is 1/2\", 59010 is 5/8\", 59012 is 3/4\" and 59016 is 1\". The suffix gives the material: C for brass, SS for stainless steel and CLF for lead-free brass, which the rows list as alloy C27450."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon Standard Shank GHT Male cover?",
+          "a": "The 11 part numbers cover hose IDs of 1/2\", 5/8\", 3/4\" and 1\". The shank is 1.94\" long with a 1-1/16\" hex on most sizes, and the 1\" size is 2.38\" long with a 1-3/8\" hex."
+        },
+        {
+          "slot": "D",
+          "q": "Which Dixon GHT male shank do I need for a 5/8\" hose?",
+          "a": "For a 5/8\" hose choose 5901012C in brass, 5901012SS in stainless steel or 5901012CLF in lead-free brass. State the hose ID and the material, and add the use if it is drinking water so we pick the lead-free one."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Dixon Standard Shank GHT Male have?",
+          "a": "The Dixon Standard Shank GHT Male does not carry one pressure figure on its listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon standard GHT male shanks made from?",
+          "a": "The listing gives brass, lead-free brass and stainless steel, with a brown brass colour on the standard parts. It is made for water and garden-style hose, and the listing names the Colorite, Flexon, Swan, Ames and Teknor Apex hose families."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon standard shank GHT male connect to?",
+          "a": "Its male GHT thread screws into a female GHT swivel nut, such as the [Dixon standard shank GHT female with swivel nut](/p/dixon-standard-shank-ght-female-with-swivel-nut), and the shank goes into the hose. It suits the water and garden hose brands named on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon GHT male shank?",
+          "a": "Push the shank fully into the hose and clamp it, then screw the male thread into the female swivel nut. The washer in the female nut seals the joint, so replace it when it is flat or cut."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Dixon Standard Shank GHT Male follow?",
+          "a": "The listing names no dimensional standard for the Dixon Standard Shank GHT Male. What it does give is the connection: a male GHT thread on a hose barb. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon GHT male shank differ from the female shank with swivel nut?",
+          "a": "The male half has the male GHT thread on a barbed shank. The [female half](/p/dixon-standard-shank-ght-female-with-swivel-nut) has the swivel nut with a female GHT thread, and the two mate. Both come in the same 1/2\", 5/8\", 3/4\" and 1\" hose IDs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Standard Shank GHT Male made, and can you ship it from Dubai?",
+          "a": "The Dixon Standard Shank GHT Male is made by the manufacturer in the United States. Indus Hydraulics ships it worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Standard Shank GHT Male in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Dixon Standard Shank GHT Male at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-straight-swivel-x-hose-shank-connectors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Straight Swivel x Hose Shank Connectors and what are they used for?",
+          "a": "Dixon Straight Swivel x Hose Shank Connectors are straight swivel body connectors with a hose shank, in brass or stainless steel. A swivel body lets the hose rotate when it is connected, and the stainless shank goes inside the hose. Four part numbers are listed."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Dixon straight swivel part numbers BNS44, BNS64 and the SS versions mean?",
+          "a": "The four codes are BNS44 and BNS44SS for 1/2\" hose ID, and BNS64 and BNS64SS for 3/4\" hose ID, where the SS suffix marks stainless steel and the plain code is brass. The BNS64 row is described as a 1/2\" swivel with a 3/4\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Straight Swivel x Hose Shank Connectors cover?",
+          "a": "Four part numbers are listed, BNS44, BNS64, BNS44SS and BNS64SS, covering 1/2\" and 3/4\" hose ID in brass and stainless steel."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose brass or stainless for a Dixon straight swivel hose shank?",
+          "a": "Choose brass for general water or air hose and stainless steel where corrosion or washdown is a concern. The listing gives both for the 1/2\" and 3/4\" hose sizes, so state the medium and we will pick one."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Straight Swivel x Hose Shank Connectors have?",
+          "a": "The Dixon Straight Swivel x Hose Shank Connectors do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon straight swivel hose shank connectors made from?",
+          "a": "The listing gives a swivel body in brass or stainless steel with a stainless steel hose shank, and an EPDM gasket seal. EPDM suits water and many dilute chemicals but not oils, so check the medium."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Dixon straight swivel hose shank connector join?",
+          "a": "It joins a hose to a threaded NPT connection through a swivel body, so the hose can turn without twisting. The shank goes inside the hose with a clamp. See the [Dixon reusable swivel sets](/p/dixon-reusable-female-swivel-stem-and-ferrule-sets) for a reusable alternative."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon straight swivel hose shank connector?",
+          "a": "Push the stainless shank into the hose and clamp it, then screw the swivel body onto its NPT connection with a thread sealant. The EPDM gasket seals the swivel, so replace it when it is flat or cut."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Straight Swivel x Hose Shank Connectors follow?",
+          "a": "The listing names no dimensional standard for the Dixon Straight Swivel x Hose Shank Connectors. What it does give is the connection: a swivel body with an NPT thread, an EPDM seal and a stainless hose shank. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon straight swivel connectors differ from the standard GHT shanks?",
+          "a": "The swivel connectors have a swivel body, an EPDM gasket and an NPT thread, in four part numbers. The [standard GHT male shanks](/p/dixon-standard-shank-ght-male) have a fixed garden-hose thread in eleven part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Straight Swivel x Hose Shank Connectors made, and can you ship them from Dubai?",
+          "a": "The Dixon Straight Swivel x Hose Shank Connectors are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Straight Swivel x Hose Shank Connectors in Dubai for export?",
+          "a": "Yes. Indus stocks the Dixon Straight Swivel x Hose Shank Connectors at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-tuff-lite-fittings-short-shank-female-ght-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings and what are they used for?",
+          "a": "Dixon Tuff-Lite Short Shank Female GHT Couplings are white nylon female hose couplings with a red vinyl seal washer, with a female GH thread. They pair with the Tuff-Lite short shank male coupling. Nine part numbers are listed."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon Tuff-Lite female coupling part numbers TCF72 to TCF76 and PPCF72 to PPCF76 differ?",
+          "a": "The TCF codes are the nylon Tuff-Lite short shank female couplings, and the PPCF codes are the same female coupling in polypropylene. The last two digits give the size: 72, 73, 75 and 76 appear in both series, and TCF74 is also listed."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings cover?",
+          "a": "The nine part numbers are TCF72, TCF73, TCF75, TCF76, TCF74 and the PPCF72, PPCF73, PPCF75 and PPCF76 series. Each last-two-digit group is a hose size."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a TCF nylon or a PPCF polypropylene Dixon Tuff-Lite female coupling?",
+          "a": "Nylon (TCF) is the white standard part and polypropylene (PPCF) is the chemical-resistant alternative, so choose on the medium. Both mate with the male coupling named on the listing and both use a female GH thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings have?",
+          "a": "The Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Tuff-Lite female couplings made from?",
+          "a": "The listing gives nylon in white with a red vinyl seal washer. The polypropylene PPCF codes are in the same listing. Plastic couplings are light and do not corrode, but they are not for high temperatures or high pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Tuff-Lite female coupling mate with?",
+          "a": "It mates with the male Tuff-Lite short shank coupling named on the listing, TCM72, and its sizes, such as the [Dixon Tuff-Lite short shank male couplings](/p/dixon-tuff-lite-fittings-short-shank-male-couplings). The shank goes into the hose under a clamp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon Tuff-Lite female coupling?",
+          "a": "Push the short shank into the hose, clamp it, then screw the female thread onto the male half. Tighten by hand, because plastic threads strip if overtightened. Replace the red vinyl washer when it hardens."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings follow?",
+          "a": "The listing names no dimensional standard for the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings. What it does give is the connection: a female GH thread with a red vinyl seal washer. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Tuff-Lite female couplings differ from the male couplings?",
+          "a": "The female coupling is white nylon (TCF) or polypropylene (PPCF) with a red vinyl washer, with nine part numbers. The [male coupling](/p/dixon-tuff-lite-fittings-short-shank-male-couplings) is black polypropylene or the TCM nylon codes, with eight part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings made, and can you ship them from Dubai?",
+          "a": "The Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings in Dubai for export?",
+          "a": "Yes. We keep the Dixon Tuff-Lite Fittings, Short Shank Female GHT Couplings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-tuff-lite-fittings-short-shank-male-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Tuff-Lite Fittings, Short Shank Male Couplings and what are they used for?",
+          "a": "Dixon Tuff-Lite Short Shank Male Couplings are black polypropylene male hose couplings, with TCM codes in the same family. The male thread mates with the Tuff-Lite short shank female coupling. Eight part numbers are listed."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Dixon Tuff-Lite male coupling part numbers PPCM73 to PPCM76 and TCM72 to TCM76 differ?",
+          "a": "The PPCM codes are black polypropylene male couplings and the TCM codes are the TCM-series male couplings in the same sizes. The last two digits give the size: 72 to 76 appear across the two series."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Tuff-Lite Fittings, Short Shank Male Couplings cover?",
+          "a": "The eight part numbers are PPCM76, PPCM73, PPCM74, TCM74, TCM72, TCM76, TCM73 and TCM75, covering five size codes from 72 to 76."
+        },
+        {
+          "slot": "D",
+          "q": "Which Dixon Tuff-Lite male coupling do I need for a PPCF76 female coupling?",
+          "a": "Take the male coupling with the same size code: PPCM76 or TCM76 for a PPCF76 female. The listing names PPCF76 as the mating part, so size codes should match between male and female."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Tuff-Lite Fittings, Short Shank Male Couplings have?",
+          "a": "The Dixon Tuff-Lite Fittings, Short Shank Male Couplings do not carry one pressure figure on their listing, because ratings vary by part number. Give us your working pressure and size and we will confirm the rating with the manufacturer before supply. The hose and its clamp or ferrule usually limit the joint before the fitting does."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Tuff-Lite male couplings made from?",
+          "a": "The listing gives polypropylene in black. Polypropylene resists many chemicals and does not corrode, and it is light, but it is not for high temperature or high pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Tuff-Lite male coupling mate with?",
+          "a": "It mates with the Tuff-Lite short shank female coupling, such as the [Dixon Tuff-Lite female GHT couplings](/p/dixon-tuff-lite-fittings-short-shank-female-ght-couplings), and the shank goes into the hose under a clamp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon Tuff-Lite male coupling?",
+          "a": "Push the shank into the hose, clamp it, then screw the male end into the female coupling by hand. Plastic threads are easily stripped, so do not use a wrench beyond a snug fit."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Tuff-Lite Fittings, Short Shank Male Couplings follow?",
+          "a": "The listing names no dimensional standard for the Dixon Tuff-Lite Fittings, Short Shank Male Couplings. What it does give is the connection: a male thread that mates with the Tuff-Lite female coupling. Quote the part number and we will confirm that the connection and size match your equipment before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Tuff-Lite male couplings differ from the female couplings?",
+          "a": "The male coupling is black polypropylene with eight part numbers, while the [female coupling](/p/dixon-tuff-lite-fittings-short-shank-female-ght-couplings) is white nylon with a red vinyl washer, with nine. They mate as a pair."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Tuff-Lite Fittings, Short Shank Male Couplings made, and can you ship them from Dubai?",
+          "a": "The Dixon Tuff-Lite Fittings, Short Shank Male Couplings are made by the manufacturer in the United States. Indus Hydraulics ships them worldwide from Dubai with the best lead times."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Tuff-Lite Fittings, Short Shank Male Couplings from stock in the UAE and get a quotation?",
+          "a": "Yes, the Dixon Tuff-Lite Fittings, Short Shank Male Couplings are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

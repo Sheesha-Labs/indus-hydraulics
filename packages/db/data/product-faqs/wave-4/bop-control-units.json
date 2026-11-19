@@ -1,0 +1,141 @@
+{
+  "family": "bop-control-units",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "bop-control-unit-accumulator-koomey-type-80-11-station-80-gal-usable-api-16d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Koomey Type 80 11-station BOP control unit used for?",
+          "a": "A Koomey Type 80 BOP control unit is the closing unit that supplies hydraulic power to close and open BOP rams, the annular and the diverter. This 11-station skid has an air-hydraulic pump, electric pump backup and about 80 gal of usable nitrogen-precharged accumulator volume, built to API 16D."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations and how much accumulator volume does the Koomey Type 80 control unit have?",
+          "a": "The unit has 11 stations (configurable) and 80 gal of usable accumulator capacity. Each station has SPM-style valves with 1\" NPT closing and opening hydraulic outlets, plus a pilot air-hydraulic backup. Size the closing volume from the stack you operate and state the station count on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Koomey Type 80 BOP control unit?",
+          "a": "The Koomey Type 80 control unit is rated 3,000 psi working pressure, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, and closing time on the largest cavity is under 30 s per API STD 53."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Koomey Type 80 accumulator unit made from?",
+          "a": "The skid has a carbon-steel frame, a hydraulic reservoir lined in 304 stainless steel, and SPM-style station valves. The listing is standard service for sweet hydrocarbon, completion fluid, water, brine and gas streams; for wells with H2S exposure, ask for the sour-service variant."
+        },
+        {
+          "slot": "C",
+          "q": "Which control units is the Koomey Type 80 11-station unit equivalent to?",
+          "a": "It is listed as a matched-pressure equivalent to the Koomey Type 80 (Cameron lineage), NOV Pressure Control Type 80, Pacseal Type 80 and Jereh Type 80 on standard land-rig BOP control hookup. Indus Hydraulics is not an authorised distributor of these OEMs, and units come with full traceability."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Koomey Type 80 BOP control unit API 16D?",
+          "a": "Yes. This unit is built to API 16D (control systems) and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. A 5-year recertification programme is available, and FAT reports are available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Koomey Type 80 control unit connect to?",
+          "a": "Each station connects by 1\" NPT hydraulic lines to a BOP ram, annular or diverter function. For the preventers see [ram BOPs](/c/bop-ram) and [annular BOPs](/c/bop-annular), and for the driller's choke console see the [choke and kill control panel](/p/choke-and-kill-control-panel)."
+        },
+        {
+          "slot": "I",
+          "q": "How often should a Koomey Type 80 control unit be recertified?",
+          "a": "Indus offers a 5-year recertification programme for the API 16D build, and function-testing per API STD 53 is part of the factory test. Plan recertification and accumulator precharge checks into the rig maintenance schedule; send the unit serial number through [our contact page](/contact) to arrange."
+        },
+        {
+          "slot": "J",
+          "q": "Which rigs use the Koomey Type 80 BOP control unit?",
+          "a": "It is the standard land-rig BOP control unit, used for the standard land-rig hookup, as a workover-rig control unit, as a mobile pressure-control unit, and as a replacement or upgrade for end-of-life Koomey or Pacseal units. It is the default closing unit named for GCC land rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Koomey Type 80 unit differ from the choke and kill control panel?",
+          "a": "The Type 80 unit powers the BOP closing and opening functions from an accumulator, while the [choke and kill control panel](/p/choke-and-kill-control-panel) is the driller's console for the hydraulic chokes on the manifold. A land rig normally needs both, so quote them together."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Koomey Type 80 11-station control unit?",
+          "a": "The listing states a lead time of 75 days, and approximate transport weight is 2,800 kg. Exact timing depends on station count and certification scope and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BOP Control Unit / Accumulator, Koomey Type 80, 11-Station, ~80 gal Usable, API 16D available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The BOP Control Unit / Accumulator, Koomey Type 80, 11-Station, ~80 gal Usable, API 16D is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 75 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "choke-and-kill-control-panel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a choke and kill control panel used for?",
+          "a": "A choke and kill control panel is the driller's console for the hydraulic chokes on the choke and kill manifold. It operates one or two chokes, shows choke position, choke upstream pressure and standpipe pressure, and counts strokes on three mud pumps."
+        },
+        {
+          "slot": "D",
+          "q": "Which chokes can the Indus choke and kill control panel control?",
+          "a": "The panel controls one or two hydraulic chokes from 2-1/16\" to 4-1/16\" in size. It is listed for use with API 16C choke manifolds carrying chokes rated 3,000 to 15,000 psi. Send the choke make, size and hydraulic connections so the panel is matched on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What control pressure does the choke and kill control panel use?",
+          "a": "The panel is listed at 21 MPa (3,000 psi) control pressure, with hydraulic hose connections to the chokes. It compensates its own hydraulic pressure automatically, and a hand pump keeps the chokes workable if rig air or power is lost."
+        },
+        {
+          "slot": "F",
+          "q": "What is the choke and kill control panel made from?",
+          "a": "The cabinet and tubing are stainless steel 304, 316 or 316L, with 316 stainless components, and the electrical parts are explosion-proof with IP65 minimum protection. The ambient temperature range is -40 °C to 60 °C. Choose the grade from the offshore or onshore environment."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the choke and kill control panel?",
+          "a": "A factory acceptance test of the panel with function and pressure tests of every circuit, with material certificates and the pressure-test record. It is built for API 16C choke manifolds and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer; the API documentation comes with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the choke and kill control panel connect to?",
+          "a": "The panel connects by hydraulic hose to the hydraulic chokes on the manifold. See the [API 16C choke and kill manifold](/p/choke-and-kill-manifold-api-16c) it pairs with, and the [BOP control unit](/p/bop-control-unit-accumulator-koomey-type-80-11-station-80-gal-usable-api-16d) that powers the preventer functions."
+        },
+        {
+          "slot": "I",
+          "q": "Can the choke and kill control panel readings be sent to the driller's cabin?",
+          "a": "Yes, an optional remote display in the driller's cabin is listed. The panel itself shows choke opening, upstream (casing) and standpipe pressure and the stroke rate and count for 3 mud pumps. Specify the remote display on the RFQ."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a choke and kill control panel used?",
+          "a": "It is used on drilling rigs for well control, where the driller circulates a kick out through the hydraulic chokes while watching casing and standpipe pressure. It forms part of the well-control package with the choke manifold; see [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a choke and kill control panel quotation?",
+          "a": "Send the number of chokes and their size, the supply (air or power) available, the hazardous-area classification, and whether a remote display is needed. We review the data sheet before quoting and flag anything that needs clarifying."
+        },
+        {
+          "slot": "K",
+          "q": "Can the choke and kill control panel be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed. For BOP closing functions rather than choke control, see the [Koomey Type 80 control unit](/p/bop-control-unit-accumulator-koomey-type-80-11-station-80-gal-usable-api-16d)."
+        },
+        {
+          "slot": "J",
+          "q": "What happens to the choke and kill control panel if rig air or power is lost?",
+          "a": "A hand pump keeps the hydraulic chokes workable if rig air or power is lost, so the driller can still move the chokes. The panel is hydraulic with manual pump back-up, which is why it is specified for well-control duty."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the choke and kill control panel?",
+          "a": "Yes. We list the choke and kill control panel as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Most are configured to order, so send the choke count, size and supply through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

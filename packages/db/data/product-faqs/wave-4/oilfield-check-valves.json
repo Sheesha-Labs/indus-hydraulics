@@ -1,0 +1,1575 @@
+{
+  "family": "oilfield-check-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dart-check-valve-2-in-1502-f-m-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 F×M 10,000 psi sour dart check valve used for?",
+          "a": "This is a 2 in dart check valve rated 10,000 psi for sour service, with 1502 F female and male Weco union ends. A spring-loaded poppet, the dart, seats on no-flow or reverse flow, and it must be installed vertical-flow-up."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 F×M 10,000 psi sour dart check valve have?",
+          "a": "On the 2 in 1502 F×M 10,000 psi sour dart check valve the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 1502 F×M 10,000 psi sour dart check valve be installed?",
+          "a": "Install it vertical-flow-up only, because the dart relies on gravity to return to seat; horizontal or vertical-flow-down installation will cause the dart to drop or chatter. The body must be plumbed with the dart axis vertical and the inlet below the outlet. This applies to the 2 in 1502 F×M 10,000 psi sour dart check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 F×M 10,000 psi sour dart check valve?",
+          "a": "The 2 in 1502 F×M 10,000 psi sour dart check valve is rated 10,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 F×M 10,000 psi sour dart check valve made from?",
+          "a": "On the 2 in 1502 F×M 10,000 psi sour dart check valve the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with F6NM dart + Inconel 625 body insert. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 1502 F×M 10,000 psi sour dart check valve use?",
+          "a": "The 2 in 1502 F×M 10,000 psi sour dart check valve has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 F×M 10,000 psi sour dart check valve carry?",
+          "a": "For the 2 in 1502 F×M 10,000 psi sour dart check valve, the listing gives recognised oilfield flow-iron design standards, with NACE MR0175 / ISO 15156 sour-service compliance stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 F×M 10,000 psi sour dart check valve connect to?",
+          "a": "The 2 in 1502 F×M 10,000 psi sour dart check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 F×M 10,000 psi sour dart check valve used?",
+          "a": "It is used for sour-well frac iron (vertical); sour-cement pump-out; production-test pump checks. The 2 in dart check valve protects the line against reverse flow at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 F 10,000 psi dart check differ from similar models?",
+          "a": "This valve is a 2 in dart check at 10,000 psi, while the [2 in 1502 F×M 15,000 psi standard dart check](/p/dart-check-valve-2-in-1502-f-m-15-000-psi-standard-service) is a 2 in dart check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 F×M 10,000 psi sour dart check valve?",
+          "a": "The listing states a lead time of 21 days for the 2 in 1502 F×M 10,000 psi sour dart check valve, with United Kingdom given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dart Check Valve, 2 in × 1502 F×M, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Dart Check Valve, 2 in × 1502 F×M, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 F×M 10,000 psi sour in-line swing check valve used for?",
+          "a": "This is a 2 in in-line swing check valve rated 10,000 psi for sour service, with 1502 F and 1502 M ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 F×M 10,000 psi sour in-line swing check valve have?",
+          "a": "On the 2 in 1502 F×M 10,000 psi sour in-line swing check valve the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 1502 F×M 10,000 psi sour in-line swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 2 in 1502 F×M 10,000 psi sour in-line swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 F×M 10,000 psi sour in-line swing check valve?",
+          "a": "The 2 in 1502 F×M 10,000 psi sour in-line swing check valve is rated 10,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 F×M 10,000 psi sour in-line swing check valve made from?",
+          "a": "On the 2 in 1502 F×M 10,000 psi sour in-line swing check valve the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 1502 F×M 10,000 psi sour in-line swing check valve use?",
+          "a": "The 2 in 1502 F×M 10,000 psi sour in-line swing check valve has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 F×M 10,000 psi sour in-line swing check valve carry?",
+          "a": "For the 2 in 1502 F×M 10,000 psi sour in-line swing check valve, the listing gives recognised oilfield flow-iron design standards, with NACE MR0175 / ISO 15156 sour-service compliance stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 F×M 10,000 psi sour in-line swing check valve connect to?",
+          "a": "The 2 in 1502 F×M 10,000 psi sour in-line swing check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 F×M 10,000 psi sour in-line swing check valve used?",
+          "a": "It is used for frac iron service trees; kill / circulation lines (sour); coiled-tubing pump-in lines. The 2 in swing check valve protects the line against reverse flow at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 F 10,000 psi swing check differ from similar models?",
+          "a": "This valve is a 2 in swing check at 10,000 psi, while the [2 in 1502 F×M 15,000 psi standard in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-15-000-psi-standard-service) is a 2 in swing check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 F×M 10,000 psi sour in-line swing check valve?",
+          "a": "The listing states a lead time of 14 days for the 2 in 1502 F×M 10,000 psi sour in-line swing check valve, with United Kingdom given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 1502 F×M 10,000 psi sour in-line swing check valve?",
+          "a": "Yes. We list the 2 in 1502 F×M 10,000 psi sour in-line swing check valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, ends and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-in-line-2-in-602-f-m-5-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 602 F×M 5,000 psi sour in-line swing check valve used for?",
+          "a": "This is a 2 in in-line swing check valve rated 5,000 psi for sour service, with 602 F and 602 M ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 602 F×M 5,000 psi sour in-line swing check valve have?",
+          "a": "On the 2 in 602 F×M 5,000 psi sour in-line swing check valve the inlet is 2 in 602 Female Weco Union and the outlet is 2 in 602 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 602 F×M 5,000 psi sour in-line swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 2 in 602 F×M 5,000 psi sour in-line swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 602 F×M 5,000 psi sour in-line swing check valve?",
+          "a": "The 2 in 602 F×M 5,000 psi sour in-line swing check valve is rated 5,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 602 F×M 5,000 psi sour in-line swing check valve made from?",
+          "a": "On the 2 in 602 F×M 5,000 psi sour in-line swing check valve the body is ASTM A350 LF2 — NACE MR0175 compliant, listed as NACE-compliant, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 602 F×M 5,000 psi sour in-line swing check valve use?",
+          "a": "The 2 in 602 F×M 5,000 psi sour in-line swing check valve has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 602 F×M 5,000 psi sour in-line swing check valve carry?",
+          "a": "For the 2 in 602 F×M 5,000 psi sour in-line swing check valve, the listing gives recognised oilfield flow-iron design standards, with NACE MR0175 / ISO 15156 sour-service compliance stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 602 F×M 5,000 psi sour in-line swing check valve connect to?",
+          "a": "The 2 in 602 F×M 5,000 psi sour in-line swing check valve joins 602 F and 602 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 602 F×M 5,000 psi sour in-line swing check valve used?",
+          "a": "It is used for production-test flow lines; well-test surface equipment (sour); 5k / 6k frac iron. The 2 in swing check valve protects the line against reverse flow at 5,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 602 F 5,000 psi swing check differ from similar models?",
+          "a": "This valve is a 2 in swing check at 5,000 psi, while the [2 in 1502 F×M 10,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in swing check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 602 F×M 5,000 psi sour in-line swing check valve?",
+          "a": "The listing states a lead time of 14 days for the 2 in 602 F×M 5,000 psi sour in-line swing check valve, with United Kingdom given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 602 F×M 5,000 psi sour in-line swing check valve?",
+          "a": "Yes. We list the 2 in 602 F×M 5,000 psi sour in-line swing check valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, ends and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-in-line-3-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 1502 F×M 15,000 psi standard in-line swing check valve used for?",
+          "a": "This is a 3 in in-line swing check valve rated 15,000 psi for standard service, with 1502 F and 1502 M ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 1502 F×M 15,000 psi standard in-line swing check valve have?",
+          "a": "On the 3 in 1502 F×M 15,000 psi standard in-line swing check valve the inlet is 3 in 1502 Female Weco Union and the outlet is 3 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3 in 1502 F×M 15,000 psi standard in-line swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 3 in 1502 F×M 15,000 psi standard in-line swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 1502 F×M 15,000 psi standard in-line swing check valve?",
+          "a": "The 3 in 1502 F×M 15,000 psi standard in-line swing check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3 in 1502 F×M 15,000 psi standard in-line swing check valve made from?",
+          "a": "On the 3 in 1502 F×M 15,000 psi standard in-line swing check valve the body is Forged AISI 4130, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3 in 1502 F×M 15,000 psi standard in-line swing check valve use?",
+          "a": "The 3 in 1502 F×M 15,000 psi standard in-line swing check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3 in 1502 F×M 15,000 psi standard in-line swing check valve carry?",
+          "a": "For the 3 in 1502 F×M 15,000 psi standard in-line swing check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 1502 F×M 15,000 psi standard in-line swing check valve connect to?",
+          "a": "The 3 in 1502 F×M 15,000 psi standard in-line swing check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 1502 F×M 15,000 psi standard in-line swing check valve used?",
+          "a": "It is used for 3-inch frac discharge manifolds; high-rate cement-unit lines; 15k service trees (3-inch leg). The 3 in swing check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 1502 F 15,000 psi swing check differ from similar models?",
+          "a": "This valve is a 3 in swing check at 15,000 psi, while the [2 in 1502 F×M 10,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in swing check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 1502 F×M 15,000 psi standard in-line swing check valve?",
+          "a": "The listing states a lead time of 21 days for the 3 in 1502 F×M 15,000 psi standard in-line swing check valve, with United Kingdom given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swing Check Valve, In-Line, 3 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Swing Check Valve, In-Line, 3 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-tee-body-3-in-600-rf-1-480-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 600# RF 1,480 psi sour tee-body swing check valve used for?",
+          "a": "This is a 3 in tee-body swing check valve rated 1,480 psi for sour service, with 600# RF flanged ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 600# RF 1,480 psi sour tee-body swing check valve have?",
+          "a": "On the 3 in 600# RF 1,480 psi sour tee-body swing check valve the inlet is 3 in 600# ANSI Raised-Face Flange and the outlet is 3 in 600# ANSI Raised-Face Flange. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3 in 600# RF 1,480 psi sour tee-body swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 3 in 600# RF 1,480 psi sour tee-body swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 600# RF 1,480 psi sour tee-body swing check valve?",
+          "a": "The 3 in 600# RF 1,480 psi sour tee-body swing check valve is rated 1,480 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3 in 600# RF 1,480 psi sour tee-body swing check valve made from?",
+          "a": "On the 3 in 600# RF 1,480 psi sour tee-body swing check valve the body is Cast WCB carbon steel — NACE MR0175 compliant, listed as NACE-compliant, with 316SS disc + 316SS seats with Stellite hardfacing. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3 in 600# RF 1,480 psi sour tee-body swing check valve use?",
+          "a": "The 3 in 600# RF 1,480 psi sour tee-body swing check valve has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3 in 600# RF 1,480 psi sour tee-body swing check valve carry?",
+          "a": "The 3 in 600# RF 1,480 psi sour tee-body swing check valve is listed to API 6D, with NACE MR0175 / ISO 15156 sour-service compliance stated. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 600# RF 1,480 psi sour tee-body swing check valve connect to?",
+          "a": "The 3 in 600# RF 1,480 psi sour tee-body swing check valve bolts to matching 600# RF flanges of the same size. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 600# RF 1,480 psi sour tee-body swing check valve used?",
+          "a": "It is used for gas-processing inlet manifolds; pipeline pig-launcher block protection; process-plant service (sour). The 3 in swing check valve protects the line against reverse flow at 1,480 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 600# RF 1,480 psi swing check differ from similar models?",
+          "a": "This valve is a 3 in swing check at 1,480 psi, while the [3 in 1502 F×M 15,000 psi standard in-line swing check](/p/swing-check-valve-in-line-3-in-1502-f-m-15-000-psi-standard-service) is a 3 in swing check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 600# RF 1,480 psi sour tee-body swing check valve?",
+          "a": "The listing states a lead time of 35 days for the 3 in 600# RF 1,480 psi sour tee-body swing check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swing Check Valve, Tee Body, 3 in × 600# RF, 1,480 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Swing Check Valve, Tee Body, 3 in × 600# RF, 1,480 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "type-r-wafer-check-valve-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee-material-class-l-u",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) used for?",
+          "a": "This is a 3-1/16 in Type R wafer swing check valve rated 10,000 psi for sour service, with API 6A 10M flanged RTJ flanged ends. The disc pivots on a top-mounted hinge and the wafer body fits between matching API 6A 6BX flanges."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) have?",
+          "a": "On the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) the inlet is 3-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 10M Flanged (RTJ). Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) be installed?",
+          "a": "Horizontal flow with the hinge pin at the top is preferred, as the disc falls cleanly onto its seat, and vertical-flow-up is also supported. Vertical-flow-down is not supported. Install between matching ring-joint flanges with the flow arrow matching line direction. This applies to the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE)?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) is rated 10,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) made from?",
+          "a": "On the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with F6NM disc + Inconel 625 overlay seats. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) use?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) carry?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) is listed to API 6A, PSL 3, PR1, material class EE. It is supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) connect to?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) bolts between API 6A 10M flanged RTJ flanges with ring gaskets and studs per the flange class. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) used?",
+          "a": "It is used for christmas tree side outlets; wellhead service trees (sour); 10k production manifolds. The 3-1/16 in Type R wafer check valve protects the line against reverse flow at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 10M flanged 10,000 psi Type R wafer check differ from similar models?",
+          "a": "This valve is a 3-1/16 in Type R wafer check at 10,000 psi, while the [3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API](/p/type-r-wafer-check-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-material-class-l-u) is a 3-1/16 in Type R wafer check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE)?",
+          "a": "The listing states a lead time of 56 days for the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 3, EE), with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Type R Wafer Check Valve, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE Material Class L from Indus Hydraulics?",
+          "a": "The Type R Wafer Check Valve, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE Material Class L+U is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "type-r-wafer-check-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-material-class-l-u",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) used for?",
+          "a": "This is a 3-1/16 in Type R wafer swing check valve rated 15,000 psi for sour service, with API 6A 15M flanged RTJ flanged ends. The disc pivots on a top-mounted hinge and the wafer body fits between matching API 6A 6BX flanges."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) have?",
+          "a": "On the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ). Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) be installed?",
+          "a": "Horizontal flow with the hinge pin at the top is preferred, as the disc falls cleanly onto its seat, and vertical-flow-up is also supported. Vertical-flow-down is not supported. Install between matching ring-joint flanges with the flow arrow matching line direction. This applies to the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE)?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) made from?",
+          "a": "On the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with F6NM disc + Inconel 625 overlay seats. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) use?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) carry?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) is listed to API 6A, PSL 3, PR1, material class EE. It is supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) connect to?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) bolts between API 6A 15M flanged RTJ flanges with ring gaskets and studs per the flange class. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE) used?",
+          "a": "It is used for 15k christmas trees; hpht wellhead service; high-pressure manifolds (sour). The 3-1/16 in Type R wafer check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 15M flanged 15,000 psi Type R wafer check differ from similar models?",
+          "a": "This valve is a 3-1/16 in Type R wafer check at 15,000 psi, while the [3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve](/p/type-r-wafer-check-valve-3-1-16-in-15m-flanged-15-000-psi-psl-1-nm-ee-p-u) is a 3-1/16 in Type R wafer check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE)?",
+          "a": "The listing states a lead time of 70 days for the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE), with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Type R Wafer Check Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE Material Class L from Indus Hydraulics?",
+          "a": "The Type R Wafer Check Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE Material Class L+U is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 70 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-tee-body-3-1-16-in-15m-flanged-3-in-1502-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve used for?",
+          "a": "This is a 3-1/16 in × 3 in tee-body swing check valve rated 15,000 psi for standard service, with 15M flanged and 1502 F ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve have?",
+          "a": "On the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3 in 1502 Female Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve?",
+          "a": "The 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve made from?",
+          "a": "On the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve the body is Forged AISI 4130, with F6NM disc + Inconel 625 overlay seats. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve use?",
+          "a": "The 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve carry?",
+          "a": "The 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve is listed to API 6A, PSL 3, PR1, material class EE. It is supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve connect to?",
+          "a": "On the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve the inlet bolts to an API 6A 15M RTJ flange and the outlet is a 3 in 1502 female union, so it adapts a wellhead flange to 1502 flow iron. Never connect the union to a different figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve used?",
+          "a": "It is used for christmas tree to frac-iron interface; wellhead service-tree adapters; 15k well-intervention manifolds. The 3-1/16 in × 3 in swing check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in × 3 in 15M flanged 15,000 psi swing check differ from similar models?",
+          "a": "This valve is a 3-1/16 in × 3 in swing check at 15,000 psi, while the [2 in 1502 F×M 10,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in swing check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve?",
+          "a": "The listing states a lead time of 56 days for the 3-1/16 in × 3 in 15M flanged 15,000 psi standard tee-body swing check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Swing Check Valve, Tee Body, 3-1/16 in × 15M Flanged × 3 in 1502 F, 15,000 psi, Standard Service from Indus Hydraulics?",
+          "a": "The Swing Check Valve, Tee Body, 3-1/16 in × 15M Flanged × 3 in 1502 F, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "type-r-wafer-check-valve-3-1-16-in-15m-flanged-15-000-psi-psl-1-nm-ee-p-u",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) used for?",
+          "a": "This is a 3-1/16 in Type R wafer swing check valve rated 15,000 psi for standard service, with API 6A 15M flanged RTJ flanged ends. The disc pivots on a top-mounted hinge and the wafer body fits between matching API 6A 6BX flanges."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) have?",
+          "a": "On the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ). Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) be installed?",
+          "a": "Horizontal flow with the hinge pin at the top is preferred, as the disc falls cleanly onto its seat, and vertical-flow-up is also supported. Vertical-flow-down is not supported. Install between matching ring-joint flanges with the flow arrow matching line direction. This applies to the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE)?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) made from?",
+          "a": "On the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) the body is Forged AISI 4130, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) use?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) carry?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) is listed to API 6A, PSL 1, PR1, material class EE, supplied without the API monogram (PSL 1 NM). Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) connect to?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) bolts between API 6A 15M flanged RTJ flanges with ring gaskets and studs per the flange class. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE) used?",
+          "a": "It is used for sweet 15k production manifolds; service-iron christmas tree side outlets; test-tree applications. The 3-1/16 in Type R wafer check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 15M flanged 15,000 psi Type R wafer check differ from similar models?",
+          "a": "This valve is a 3-1/16 in Type R wafer check at 15,000 psi, while the [3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API](/p/type-r-wafer-check-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-material-class-l-u) is a 3-1/16 in Type R wafer check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE)?",
+          "a": "The listing states a lead time of 35 days for the 3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve (API 6A PSL 1, EE), with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Type R Wafer Check Valve, 3-1/16 in × 15M Flanged, 15,000 psi, PSL 1 NM, EE-P+U in stock in Dubai?",
+          "a": "Yes. We keep the Type R Wafer Check Valve, 3-1/16 in × 15M Flanged, 15,000 psi, PSL 1 NM, EE-P+U in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "type-r-wafer-check-valve-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-1-pr1-ee-p-u-sour",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) used for?",
+          "a": "This is a 3-1/8 in Type R wafer swing check valve rated 5,000 psi for sour service, with API 6A 5M flanged RTJ flanged ends. The disc pivots on a top-mounted hinge and the wafer body fits between matching API 6A 6BX flanges."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) have?",
+          "a": "On the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) the inlet is 3-1/8 in API 6A 5M Flanged (RTJ) and the outlet is 3-1/8 in API 6A 5M Flanged (RTJ). Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) be installed?",
+          "a": "Horizontal flow with the hinge pin at the top is preferred, as the disc falls cleanly onto its seat, and vertical-flow-up is also supported. Vertical-flow-down is not supported. Install between matching ring-joint flanges with the flow arrow matching line direction. This applies to the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE)?",
+          "a": "The 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) is rated 5,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) made from?",
+          "a": "On the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with F6NM disc + Inconel 625 overlay seats. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) use?",
+          "a": "The 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) carry?",
+          "a": "The 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) is listed to API 6A, PSL 1, PR1, material class EE. It is supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) connect to?",
+          "a": "The 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) bolts between API 6A 5M flanged RTJ flanges with ring gaskets and studs per the flange class. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) used?",
+          "a": "It is used for 5k wellhead production trees; sour-gas surface trees; 5m christmas tree side outlets. The 3-1/8 in Type R wafer check valve protects the line against reverse flow at 5,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/8 in 5M flanged 5,000 psi Type R wafer check differ from similar models?",
+          "a": "This valve is a 3-1/8 in Type R wafer check at 5,000 psi, while the [3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API](/p/type-r-wafer-check-valve-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee-material-class-l-u) is a 3-1/16 in Type R wafer check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE)?",
+          "a": "The listing states a lead time of 28 days for the 3-1/8 in 5M flanged 5,000 psi sour Type R wafer check valve (API 6A PSL 1, EE), with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Type R Wafer Check Valve, 3-1/8 in × 5M Flanged, 5,000 psi, API 6A PSL 1 PR1, EE-P+U Sour in stock in Dubai?",
+          "a": "Yes. We keep the Type R Wafer Check Valve, 3-1/8 in × 5M Flanged, 5,000 psi, API 6A PSL 1 PR1, EE-P+U Sour in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-in-line-2-in-206-f-m-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 206 F×M 2,000 psi standard in-line swing check valve used for?",
+          "a": "This is a 2 in in-line swing check valve rated 2,000 psi for standard service, with 206 F and 206 M ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 206 F×M 2,000 psi standard in-line swing check valve have?",
+          "a": "On the 2 in 206 F×M 2,000 psi standard in-line swing check valve the inlet is 2 in 206 Female Weco Union and the outlet is 2 in 206 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 206 F×M 2,000 psi standard in-line swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 2 in 206 F×M 2,000 psi standard in-line swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 206 F×M 2,000 psi standard in-line swing check valve?",
+          "a": "The 2 in 206 F×M 2,000 psi standard in-line swing check valve is rated 2,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 206 F×M 2,000 psi standard in-line swing check valve made from?",
+          "a": "On the 2 in 206 F×M 2,000 psi standard in-line swing check valve the body is Forged carbon steel (A105N), with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 206 F×M 2,000 psi standard in-line swing check valve use?",
+          "a": "The 2 in 206 F×M 2,000 psi standard in-line swing check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 206 F×M 2,000 psi standard in-line swing check valve carry?",
+          "a": "For the 2 in 206 F×M 2,000 psi standard in-line swing check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 206 F×M 2,000 psi standard in-line swing check valve connect to?",
+          "a": "The 2 in 206 F×M 2,000 psi standard in-line swing check valve joins 206 F and 206 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 206 F×M 2,000 psi standard in-line swing check valve used?",
+          "a": "It is used for cementing surface lines; kill-fluid circulation; low-pressure flow-back. The 2 in swing check valve protects the line against reverse flow at 2,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 206 F 2,000 psi swing check differ from similar models?",
+          "a": "This valve is a 2 in swing check at 2,000 psi, while the [2 in 1502 F×M 10,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in swing check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 206 F×M 2,000 psi standard in-line swing check valve?",
+          "a": "The listing states a lead time of 7 days for the 2 in 206 F×M 2,000 psi standard in-line swing check valve. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 206 F×M 2,000 psi standard in-line swing check valve?",
+          "a": "Yes. We list the 2 in 206 F×M 2,000 psi standard in-line swing check valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, ends and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-tee-body-3-in-150-rf-285-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 150# RF 285 psi sour tee-body swing check valve used for?",
+          "a": "This is a 3 in tee-body swing check valve rated 285 psi for sour service, with 150# RF flanged ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 150# RF 285 psi sour tee-body swing check valve have?",
+          "a": "On the 3 in 150# RF 285 psi sour tee-body swing check valve the inlet is 3 in 150# ANSI Raised-Face Flange and the outlet is 3 in 150# ANSI Raised-Face Flange. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3 in 150# RF 285 psi sour tee-body swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 3 in 150# RF 285 psi sour tee-body swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 150# RF 285 psi sour tee-body swing check valve?",
+          "a": "The 3 in 150# RF 285 psi sour tee-body swing check valve is rated 285 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3 in 150# RF 285 psi sour tee-body swing check valve made from?",
+          "a": "On the 3 in 150# RF 285 psi sour tee-body swing check valve the body is Cast WCB carbon steel — NACE MR0175 compliant, listed as NACE-compliant, with 316SS disc + 316SS seats. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3 in 150# RF 285 psi sour tee-body swing check valve use?",
+          "a": "The 3 in 150# RF 285 psi sour tee-body swing check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3 in 150# RF 285 psi sour tee-body swing check valve carry?",
+          "a": "The 3 in 150# RF 285 psi sour tee-body swing check valve is listed to API 6D, with NACE MR0175 / ISO 15156 sour-service compliance stated. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 150# RF 285 psi sour tee-body swing check valve connect to?",
+          "a": "The 3 in 150# RF 285 psi sour tee-body swing check valve bolts to matching 150# RF flanges of the same size. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 150# RF 285 psi sour tee-body swing check valve used?",
+          "a": "It is used for sour-gas vent headers; drain manifolds (sour); 150# utility process service. The 3 in swing check valve protects the line against reverse flow at 285 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 150# RF 285 psi swing check differ from similar models?",
+          "a": "This valve is a 3 in swing check at 285 psi, while the [3 in 1502 F×M 15,000 psi standard in-line swing check](/p/swing-check-valve-in-line-3-in-1502-f-m-15-000-psi-standard-service) is a 3 in swing check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 150# RF 285 psi sour tee-body swing check valve?",
+          "a": "The listing states a lead time of 14 days for the 3 in 150# RF 285 psi sour tee-body swing check valve. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 3 in 150# RF 285 psi sour tee-body swing check valve?",
+          "a": "Yes. We list the 3 in 150# RF 285 psi sour tee-body swing check valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, ends and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dart-check-valve-2-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 F×M 15,000 psi standard dart check valve used for?",
+          "a": "This is a 2 in dart check valve rated 15,000 psi for standard service, with 1502 F female and male Weco union ends. A spring-loaded poppet, the dart, seats on no-flow or reverse flow, and it must be installed vertical-flow-up."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 F×M 15,000 psi standard dart check valve have?",
+          "a": "On the 2 in 1502 F×M 15,000 psi standard dart check valve the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 1502 F×M 15,000 psi standard dart check valve be installed?",
+          "a": "Install it vertical-flow-up only, because the dart relies on gravity to return to seat; horizontal or vertical-flow-down installation will cause the dart to drop or chatter. The body must be plumbed with the dart axis vertical and the inlet below the outlet. This applies to the 2 in 1502 F×M 15,000 psi standard dart check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 F×M 15,000 psi standard dart check valve?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard dart check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 F×M 15,000 psi standard dart check valve made from?",
+          "a": "On the 2 in 1502 F×M 15,000 psi standard dart check valve the body is Forged AISI 4130, with F6NM dart + 316SS body insert. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 1502 F×M 15,000 psi standard dart check valve use?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard dart check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 F×M 15,000 psi standard dart check valve carry?",
+          "a": "For the 2 in 1502 F×M 15,000 psi standard dart check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 F×M 15,000 psi standard dart check valve connect to?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard dart check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 F×M 15,000 psi standard dart check valve used?",
+          "a": "It is used for cement pump-out lines (vertical); frac iron pump discharge; 15k service trees (vertical legs). The 2 in dart check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 F 15,000 psi dart check differ from similar models?",
+          "a": "This valve is a 2 in dart check at 15,000 psi, while the [2 in 1502 F×M 10,000 psi sour dart check](/p/dart-check-valve-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in dart check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 F×M 15,000 psi standard dart check valve?",
+          "a": "The listing states a lead time of 21 days for the 2 in 1502 F×M 15,000 psi standard dart check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dart Check Valve, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Dart Check Valve, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dart-check-valve-compact-2-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 F×M 15,000 psi standard compact dart check valve used for?",
+          "a": "This is a 2 in dart check valve rated 15,000 psi for standard service, with 1502 F female and male Weco union ends. A spring-loaded poppet, the dart, seats on no-flow or reverse flow, and it must be installed vertical-flow-up."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 F×M 15,000 psi standard compact dart check valve have?",
+          "a": "On the 2 in 1502 F×M 15,000 psi standard compact dart check valve the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. The compact body has a shorter face-to-face length for tightly packaged frac trees. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 1502 F×M 15,000 psi standard compact dart check valve be installed?",
+          "a": "Install it vertical-flow-up only, because the dart relies on gravity to return to seat; horizontal or vertical-flow-down installation will cause the dart to drop or chatter. The body must be plumbed with the dart axis vertical and the inlet below the outlet. This applies to the 2 in 1502 F×M 15,000 psi standard compact dart check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 F×M 15,000 psi standard compact dart check valve?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard compact dart check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 F×M 15,000 psi standard compact dart check valve made from?",
+          "a": "On the 2 in 1502 F×M 15,000 psi standard compact dart check valve the body is Forged AISI 4130, with F6NM dart + 316SS body insert. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 1502 F×M 15,000 psi standard compact dart check valve use?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard compact dart check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 F×M 15,000 psi standard compact dart check valve carry?",
+          "a": "For the 2 in 1502 F×M 15,000 psi standard compact dart check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 F×M 15,000 psi standard compact dart check valve connect to?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard compact dart check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 F×M 15,000 psi standard compact dart check valve used?",
+          "a": "It is used for tight-package service trees; skid-mounted frac iron; wireline / coiled-tubing pressure-control stack. The 2 in dart check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 F 15,000 psi dart check differ from similar models?",
+          "a": "This valve is a 2 in dart check at 15,000 psi, while the [2 in 1502 F×M 10,000 psi sour dart check](/p/dart-check-valve-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in dart check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 F×M 15,000 psi standard compact dart check valve?",
+          "a": "The listing states a lead time of 21 days for the 2 in 1502 F×M 15,000 psi standard compact dart check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dart Check Valve, Compact, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Dart Check Valve, Compact, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-in-line-2-in-1502-m-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 M×F 10,000 psi sour in-line swing check valve used for?",
+          "a": "This is a 2 in in-line swing check valve rated 10,000 psi for sour service, with 1502 M and 1502 F ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 M×F 10,000 psi sour in-line swing check valve have?",
+          "a": "On the 2 in 1502 M×F 10,000 psi sour in-line swing check valve the inlet is 2 in 1502 Male Weco Union and the outlet is 2 in 1502 Female Weco Union. The ends are reversed, male inlet and female outlet, for tee-to-line or branch-to-trunk direction. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 1502 M×F 10,000 psi sour in-line swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 2 in 1502 M×F 10,000 psi sour in-line swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 M×F 10,000 psi sour in-line swing check valve?",
+          "a": "The 2 in 1502 M×F 10,000 psi sour in-line swing check valve is rated 10,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 M×F 10,000 psi sour in-line swing check valve made from?",
+          "a": "On the 2 in 1502 M×F 10,000 psi sour in-line swing check valve the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 1502 M×F 10,000 psi sour in-line swing check valve use?",
+          "a": "The 2 in 1502 M×F 10,000 psi sour in-line swing check valve has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 M×F 10,000 psi sour in-line swing check valve carry?",
+          "a": "For the 2 in 1502 M×F 10,000 psi sour in-line swing check valve, the listing gives recognised oilfield flow-iron design standards, with NACE MR0175 / ISO 15156 sour-service compliance stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 M×F 10,000 psi sour in-line swing check valve connect to?",
+          "a": "The 2 in 1502 M×F 10,000 psi sour in-line swing check valve joins 1502 M and 1502 F unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 M×F 10,000 psi sour in-line swing check valve used?",
+          "a": "It is used for frac iron tee-to-line connections; service tree branch legs (reverse-flow); coiled-tubing kill lines. The 2 in swing check valve protects the line against reverse flow at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 M 10,000 psi swing check differ from similar models?",
+          "a": "This valve is a 2 in swing check at 10,000 psi, while the [2 in 602 F×M 5,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-602-f-m-5-000-psi-sour-service) is a 2 in swing check at 5,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 M×F 10,000 psi sour in-line swing check valve?",
+          "a": "The listing states a lead time of 14 days for the 2 in 1502 M×F 10,000 psi sour in-line swing check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 1502 M×F 10,000 psi sour in-line swing check valve?",
+          "a": "Yes. We list the 2 in 1502 M×F 10,000 psi sour in-line swing check valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, ends and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-tee-body-3-in-1502-m-f-15-000-psi-standard-service-reverse-flow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 1502 M×F 15,000 psi standard tee-body swing check valve used for?",
+          "a": "This is a 3 in tee-body swing check valve rated 15,000 psi for standard service, with 1502 M and 1502 F ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve have?",
+          "a": "On the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve the inlet is 3 in 1502 Male Weco Union and the outlet is 3 in 1502 Female Weco Union. The ends are reversed, male inlet and female outlet, for tee-to-line or branch-to-trunk direction. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve?",
+          "a": "The 3 in 1502 M×F 15,000 psi standard tee-body swing check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve made from?",
+          "a": "On the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve the body is Forged AISI 4130, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve use?",
+          "a": "The 3 in 1502 M×F 15,000 psi standard tee-body swing check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve carry?",
+          "a": "For the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve connect to?",
+          "a": "The 3 in 1502 M×F 15,000 psi standard tee-body swing check valve joins 1502 M and 1502 F unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve used?",
+          "a": "It is used for branch-to-trunk junctions in frac discharge; reverse-flow side outlets; manifold tee inlets. The 3 in swing check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 1502 M 15,000 psi swing check differ from similar models?",
+          "a": "This valve is a 3 in swing check at 15,000 psi, while the [3 in 600# RF 1,480 psi sour tee-body swing check](/p/swing-check-valve-tee-body-3-in-600-rf-1-480-psi-sour-service) is a 3 in swing check at 1,480 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve?",
+          "a": "The listing states a lead time of 21 days for the 3 in 1502 M×F 15,000 psi standard tee-body swing check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swing Check Valve, Tee Body, 3 in × 1502 M×F, 15,000 psi, Standard Service, Reverse Flow in stock in Dubai?",
+          "a": "Yes. We keep the Swing Check Valve, Tee Body, 3 in × 1502 M×F, 15,000 psi, Standard Service, Reverse Flow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "type-r-wafer-check-valve-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-1-pr1-ee-p-u-sour",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) used for?",
+          "a": "This is a 3-1/16 in Type R wafer swing check valve rated 10,000 psi for sour service, with API 6A 10M flanged RTJ flanged ends. The disc pivots on a top-mounted hinge and the wafer body fits between matching API 6A 6BX flanges."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) have?",
+          "a": "On the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) the inlet is 3-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 10M Flanged (RTJ). Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) be installed?",
+          "a": "Horizontal flow with the hinge pin at the top is preferred, as the disc falls cleanly onto its seat, and vertical-flow-up is also supported. Vertical-flow-down is not supported. Install between matching ring-joint flanges with the flow arrow matching line direction. This applies to the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE)?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) is rated 10,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) made from?",
+          "a": "On the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with F6NM disc + Inconel 625 overlay seats. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) use?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) carry?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) is listed to API 6A, PSL 1, PR1, material class EE. It is supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) connect to?",
+          "a": "The 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) bolts between API 6A 10M flanged RTJ flanges with ring gaskets and studs per the flange class. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE) used?",
+          "a": "It is used for 10k wellhead production trees (sour); christmas tree side outlets; 10m production manifolds. The 3-1/16 in Type R wafer check valve protects the line against reverse flow at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 10M flanged 10,000 psi Type R wafer check differ from similar models?",
+          "a": "This valve is a 3-1/16 in Type R wafer check at 10,000 psi, while the [3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API](/p/type-r-wafer-check-valve-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee-material-class-l-u) is a 3-1/16 in Type R wafer check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE)?",
+          "a": "The listing states a lead time of 42 days for the 3-1/16 in 10M flanged 10,000 psi sour Type R wafer check valve (API 6A PSL 1, EE), with Canada given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Type R Wafer Check Valve, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 1 PR1, EE-P+U Sour in stock in Dubai?",
+          "a": "Yes. We keep the Type R Wafer Check Valve, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 1 PR1, EE-P+U Sour in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "type-r-wafer-check-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-1-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) used for?",
+          "a": "This is a 3-1/16 in Type R wafer swing check valve rated 15,000 psi for sour service, with API 6A 15M flanged RTJ flanged ends. The disc pivots on a top-mounted hinge and the wafer body fits between matching API 6A 6BX flanges."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) have?",
+          "a": "On the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ). Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) be installed?",
+          "a": "Horizontal flow with the hinge pin at the top is preferred, as the disc falls cleanly onto its seat, and vertical-flow-up is also supported. Vertical-flow-down is not supported. Install between matching ring-joint flanges with the flow arrow matching line direction. This applies to the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5)?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) made from?",
+          "a": "On the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with F6NM disc + Inconel 625 overlay seats. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) use?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) carry?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) is listed to API 6A, PSL 3, PR1, material class EE-1.5. It is supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) connect to?",
+          "a": "The 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) bolts between API 6A 15M flanged RTJ flanges with ring gaskets and studs per the flange class. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5) used?",
+          "a": "It is used for 15k christmas trees (hpht); premium sour-gas wellheads; production manifold isolation. The 3-1/16 in Type R wafer check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 15M flanged 15,000 psi Type R wafer check differ from similar models?",
+          "a": "This valve is a 3-1/16 in Type R wafer check at 15,000 psi, while the [3-1/16 in 15M flanged 15,000 psi standard Type R wafer check valve](/p/type-r-wafer-check-valve-3-1-16-in-15m-flanged-15-000-psi-psl-1-nm-ee-p-u) is a 3-1/16 in Type R wafer check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5)?",
+          "a": "The listing states a lead time of 70 days for the 3-1/16 in 15M flanged 15,000 psi sour Type R wafer check valve (API 6A PSL 3, EE-1.5), with Canada given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Type R Wafer Check Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE-1.5 from Indus Hydraulics?",
+          "a": "The Type R Wafer Check Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE-1.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 70 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "dart-check-valve-3-in-1502-f-m-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 1502 F×M 10,000 psi sour dart check valve used for?",
+          "a": "This is a 3 in dart check valve rated 10,000 psi for sour service, with 1502 F female and male Weco union ends. A spring-loaded poppet, the dart, seats on no-flow or reverse flow, and it must be installed vertical-flow-up."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 1502 F×M 10,000 psi sour dart check valve have?",
+          "a": "On the 3 in 1502 F×M 10,000 psi sour dart check valve the inlet is 3 in 1502 Female Weco Union and the outlet is 3 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3 in 1502 F×M 10,000 psi sour dart check valve be installed?",
+          "a": "Install it vertical-flow-up only, because the dart relies on gravity to return to seat; horizontal or vertical-flow-down installation will cause the dart to drop or chatter. The body must be plumbed with the dart axis vertical and the inlet below the outlet. This applies to the 3 in 1502 F×M 10,000 psi sour dart check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 1502 F×M 10,000 psi sour dart check valve?",
+          "a": "The 3 in 1502 F×M 10,000 psi sour dart check valve is rated 10,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3 in 1502 F×M 10,000 psi sour dart check valve made from?",
+          "a": "On the 3 in 1502 F×M 10,000 psi sour dart check valve the body is Forged AISI 4130 — NACE MR0175 compliant, listed as NACE-compliant, with F6NM dart + Inconel 625 body insert. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3 in 1502 F×M 10,000 psi sour dart check valve use?",
+          "a": "The 3 in 1502 F×M 10,000 psi sour dart check valve has PEEK back-up + HNBR primary seals. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3 in 1502 F×M 10,000 psi sour dart check valve carry?",
+          "a": "For the 3 in 1502 F×M 10,000 psi sour dart check valve, the listing gives recognised oilfield flow-iron design standards, with NACE MR0175 / ISO 15156 sour-service compliance stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 1502 F×M 10,000 psi sour dart check valve connect to?",
+          "a": "The 3 in 1502 F×M 10,000 psi sour dart check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 1502 F×M 10,000 psi sour dart check valve used?",
+          "a": "It is used for high-rate sour-well frac iron; cement pump-out (sour); 3-inch vertical service iron. The 3 in dart check valve protects the line against reverse flow at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 1502 F 10,000 psi dart check differ from similar models?",
+          "a": "This valve is a 3 in dart check at 10,000 psi, while the [2 in 1502 F×M 15,000 psi standard dart check](/p/dart-check-valve-2-in-1502-f-m-15-000-psi-standard-service) is a 2 in dart check at 15,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 1502 F×M 10,000 psi sour dart check valve?",
+          "a": "The listing states a lead time of 28 days for the 3 in 1502 F×M 10,000 psi sour dart check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dart Check Valve, 3 in × 1502 F×M, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Dart Check Valve, 3 in × 1502 F×M, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-in-line-2-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 F×M 15,000 psi standard in-line swing check valve used for?",
+          "a": "This is a 2 in in-line swing check valve rated 15,000 psi for standard service, with 1502 F and 1502 M ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 F×M 15,000 psi standard in-line swing check valve have?",
+          "a": "On the 2 in 1502 F×M 15,000 psi standard in-line swing check valve the inlet is 2 in 1502 Female Weco Union and the outlet is 2 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 2 in 1502 F×M 15,000 psi standard in-line swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 2 in 1502 F×M 15,000 psi standard in-line swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 F×M 15,000 psi standard in-line swing check valve?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard in-line swing check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 F×M 15,000 psi standard in-line swing check valve made from?",
+          "a": "On the 2 in 1502 F×M 15,000 psi standard in-line swing check valve the body is Forged AISI 4130, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 2 in 1502 F×M 15,000 psi standard in-line swing check valve use?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard in-line swing check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 F×M 15,000 psi standard in-line swing check valve carry?",
+          "a": "For the 2 in 1502 F×M 15,000 psi standard in-line swing check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 F×M 15,000 psi standard in-line swing check valve connect to?",
+          "a": "The 2 in 1502 F×M 15,000 psi standard in-line swing check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 F×M 15,000 psi standard in-line swing check valve used?",
+          "a": "It is used for high-pressure frac discharge (sweet); cement-unit pump-off lines; 15k service trees. The 2 in swing check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 F 15,000 psi swing check differ from similar models?",
+          "a": "This valve is a 2 in swing check at 15,000 psi, while the [2 in 1502 F×M 10,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in swing check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 F×M 15,000 psi standard in-line swing check valve?",
+          "a": "The listing states a lead time of 21 days for the 2 in 1502 F×M 15,000 psi standard in-line swing check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swing Check Valve, In-Line, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Swing Check Valve, In-Line, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-tee-body-3-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 1502 F×M 15,000 psi standard tee-body swing check valve used for?",
+          "a": "This is a 3 in tee-body swing check valve rated 15,000 psi for standard service, with 1502 F and 1502 M ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve have?",
+          "a": "On the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve the inlet is 3 in 1502 Female Weco Union and the outlet is 3 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve?",
+          "a": "The 3 in 1502 F×M 15,000 psi standard tee-body swing check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve made from?",
+          "a": "On the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve the body is Forged AISI 4130, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve use?",
+          "a": "The 3 in 1502 F×M 15,000 psi standard tee-body swing check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve carry?",
+          "a": "For the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve connect to?",
+          "a": "The 3 in 1502 F×M 15,000 psi standard tee-body swing check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve used?",
+          "a": "It is used for frac iron junction blocks; discharge manifold trunk; 3-inch tee inlets to choke skids. The 3 in swing check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 1502 F 15,000 psi swing check differ from similar models?",
+          "a": "This valve is a 3 in swing check at 15,000 psi, while the [2 in 1502 F×M 10,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in swing check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve?",
+          "a": "The listing states a lead time of 21 days for the 3 in 1502 F×M 15,000 psi standard tee-body swing check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swing Check Valve, Tee Body, 3 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Swing Check Valve, Tee Body, 3 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swing-check-valve-tee-body-4-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4 in 1502 F×M 15,000 psi standard tee-body swing check valve used for?",
+          "a": "This is a 4 in tee-body swing check valve rated 15,000 psi for standard service, with 1502 F and 1502 M ends. A hinged disc lifts off its seat under forward flow and swings closed when forward flow stops or reverses."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve have?",
+          "a": "On the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve the inlet is 4 in 1502 Female Weco Union and the outlet is 4 in 1502 Male Weco Union. Confirm the connection type and size on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How should the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve be installed?",
+          "a": "Horizontal flow with the bonnet up is preferred, and vertical-flow-up is also supported with no derate. Vertical-flow-down is not recommended because the disc fights gravity to close. Install with the flow arrow matching line direction. This applies to the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve?",
+          "a": "The 4 in 1502 F×M 15,000 psi standard tee-body swing check valve is rated 15,000 psi working pressure. It is hydrotested at 1.5 times working pressure as a shell test, which is a test figure and not an operating limit, and the end connections are matched to the pressure class."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve made from?",
+          "a": "On the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve the body is Forged AISI 4130, with 316SS disc + 17-4PH stem/hinge. State the fluid and H2S level on the RFQ so the trim is confirmed."
+        },
+        {
+          "slot": "F",
+          "q": "What seals does the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve use?",
+          "a": "The 4 in 1502 F×M 15,000 psi standard tee-body swing check valve has RPTFE seats + Viton (FKM) O-rings. Choose the seal from the fluid and temperature, and state both on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve carry?",
+          "a": "For the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve, the listing gives recognised oilfield flow-iron design standards, and it is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve connect to?",
+          "a": "The 4 in 1502 F×M 15,000 psi standard tee-body swing check valve joins 1502 F and 1502 M unions of the same size; never connect it to a different union figure, as mismatched unions are a known failure cause. See [check valves](/c/oilfield-check-valves) and the guide on [oilfield check valves](/blog/oilfield-check-valves-explained)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve used?",
+          "a": "It is used for sand / water blender discharge; high-rate frac discharge; 4-inch service tree trunks. The 4 in swing check valve protects the line against reverse flow at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4 in 1502 F 15,000 psi swing check differ from similar models?",
+          "a": "This valve is a 4 in swing check at 15,000 psi, while the [2 in 1502 F×M 10,000 psi sour in-line swing check](/p/swing-check-valve-in-line-2-in-1502-f-m-10-000-psi-sour-service) is a 2 in swing check at 10,000 psi. Compare type, size, pressure and ends."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve?",
+          "a": "The listing states a lead time of 28 days for the 4 in 1502 F×M 15,000 psi standard tee-body swing check valve, with USA given as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swing Check Valve, Tee Body, 4 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Swing Check Valve, Tee Body, 4 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-lift-check-valve-2000-15000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A lift check valve used for?",
+          "a": "An API 6A lift check valve is a non-return valve for high-pressure mud, injection and kill service. A guided disc and return spring close it reliably in any line, and a stellite-overlaid metal seat avoids the elastomer seals that chemicals and well fluids attack."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the API 6A lift check valve cover?",
+          "a": "The published range is 1-13/16\" to 7-1/16\" bore and 2,000 to 15,000 psi working pressure, with flanged, clamp hub, welded and other ends. Sizes and ratings are confirmed per order, and the general arrangement drawing comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What material and temperature classes does the lift check valve offer?",
+          "a": "The listing gives API 6A material classes AA to HH, with DD to HH for sour service, temperature classes K to X, and PSL 1 to 4 with PR1 or PR2. Hydrostatic body and seat tests follow API 6A at the PSL ordered, with gas tests at PSL 3G and 4."
+        },
+        {
+          "slot": "F",
+          "q": "Does the API 6A lift check valve need maintenance?",
+          "a": "Very little: there are no non-metallic seals to replace, because the disc and seat are stellite-overlaid metal-to-metal. Inspect the disc and seat at normal intervals; the flow-shaped seat reduces turbulence and body wear."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Indus lift check valve made to API 6A?",
+          "a": "Yes. It is built to API 6A, with CE-PED listed, and supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. A fire-safe design is listed."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an API 6A lift check valve?",
+          "a": "You receive API 6A documentation for the PSL ordered: material certificates, heat-treatment and NDE records, the hydrostatic test record (and gas test at PSL 3G and 4), and the dimensional report. Third-party witness is confirmed with the quotation. This applies to the API 6A Lift Check Valve, 1-13/16\" to 7-1/16\", 2,000 to 15,000 psi."
+        },
+        {
+          "slot": "H",
+          "q": "What does the API 6A lift check valve connect to?",
+          "a": "It is a self-acting, spring-return valve for mud choke manifolds, tree injection and kill lines. See [choke and kill manifolds](/c/bop-choke-kill) and [API flanges](/c/flow-iron-flanges-api)."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose a lift check instead of a swing check?",
+          "a": "Use a lift check on choke and kill lines, injection points and mud lines, where flow can pulse, the line may be vertical, and a swing hinge would wear or foul. For clean fluids use the [API 6A swing check valve](/p/api-6a-swing-check-valve-2000-20000-psi)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A lift check valve used?",
+          "a": "It is used on mud choke manifolds, tree injection lines and kill lines at up to 15,000 psi. The metal-to-metal seat also suits high temperatures."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a lift check valve quotation?",
+          "a": "Send the nominal bore and working pressure, the end connections, the material and temperature class, PSL and PR level, and the H2S content. We review the data sheet before quoting."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A lift check valve be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed. This applies to the API 6A Lift Check Valve, 1-13/16\" to 7-1/16\", 2,000 to 15,000 psi."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A lift check valve?",
+          "a": "Yes. We list the API 6A lift check valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to order, so send the bore, pressure and ends through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-swing-check-valve-2000-20000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A swing check valve used for?",
+          "a": "An API 6A swing check valve gives non-return protection for flowlines, injection lines and manifolds. A full-bore body and a curved, convex disc keep pressure drop and turbulence low and let the disc carry high pressure, with soft or metal-to-metal seals to suit the fluid."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the API 6A swing check valve cover?",
+          "a": "The published range is 2-1/16\" to 4-1/16\" full bore and 2,000 to 20,000 psi working pressure, with API 6A flanged or studded ends. Sizes and ratings are confirmed per order, and the general arrangement drawing comes with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How should an API 6A swing check valve be installed?",
+          "a": "Install it horizontally, and use it on clean fluids, not for heavy solids or high viscosity. For mud, cement and solids-laden lines use a dart or lift check valve, which has no hinge for solids to foul."
+        },
+        {
+          "slot": "E",
+          "q": "What material and temperature classes does the swing check valve offer?",
+          "a": "The listing gives API 6A material classes AA to HH, with DD to HH for sour service, temperature classes L to X, and PSL 1 to 4 with PR1 or PR2F. Hydrostatic body and seat tests follow API 6A at the PSL ordered."
+        },
+        {
+          "slot": "F",
+          "q": "Is the API 6A swing check valve fire-safe?",
+          "a": "Yes, the design is fire-tested, and you should ask for PR2F where the specification requires it. The listing gives a convex swing disc and a soft or metal-to-metal seat, so choose the seal from the fluid."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Indus swing check valve made to API 6A?",
+          "a": "Yes. It is built to API 6A, with CE-PED listed, and supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an API 6A swing check valve?",
+          "a": "You receive API 6A documentation for the PSL ordered: material certificates, heat-treatment and NDE records, the hydrostatic test record (and gas test at PSL 3G and 4), and the dimensional report. Third-party witness is confirmed with the quotation. This applies to the API 6A Swing Check Valve, Full Bore, 2-1/16\" to 4-1/16\", 2,000 to 20,000 psi."
+        },
+        {
+          "slot": "H",
+          "q": "What does the API 6A swing check valve connect to?",
+          "a": "It is a self-acting valve with API 6A flanged or studded ends for wellhead and flowline non-return service. See [API flanges](/c/flow-iron-flanges-api) and [check valves](/c/oilfield-check-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 6A swing check differ from the lift check valve?",
+          "a": "The swing check has a hinged convex disc for clean fluids to 20,000 psi, while the [API 6A lift check valve](/p/api-6a-lift-check-valve-2000-15000-psi) has a guided spring-return disc for mud, injection and kill lines to 15,000 psi. Choose by the fluid."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A swing check valve used?",
+          "a": "It is used on wellhead and flowline non-return service, injection lines and manifolds with clean fluids at up to 20,000 psi."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a swing check valve quotation?",
+          "a": "Send the nominal bore and working pressure, the end connections, the material and temperature class, PSL and PR level, and the H2S content. We review the data sheet before quoting."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A swing check valve?",
+          "a": "Yes. We list the API 6A swing check valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to order, so send the bore, pressure and ends through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

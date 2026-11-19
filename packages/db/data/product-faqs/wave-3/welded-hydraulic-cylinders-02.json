@@ -1,0 +1,1644 @@
+{
+  "family": "welded-hydraulic-cylinders-02",
+  "extraFacts": [
+    {
+      "fact": "Column load is the compressive load an extended cylinder and its rod can carry before the rod buckles; it falls as stroke and extended length increase and rises with rod diameter. Push force is working pressure multiplied by the piston (bore) area.",
+      "source": "Standard mechanics (Euler column buckling; force = pressure x area), as applied in maker hydraulic cylinder catalogues"
+    },
+    {
+      "fact": "Pin-to-pin (retracted) length is the distance between the two mounting pin centres with the cylinder fully retracted; extended length is the retracted length plus the stroke.",
+      "source": "Maker cylinder catalogues; Indus guide to hydraulic cylinder mounting styles"
+    },
+    {
+      "fact": "SAE ORB (O-ring boss) ports use a straight thread sealed by an O-ring; NPT ports are tapered pipe threads that seal on the thread.",
+      "source": "SAE J1926 / ISO 11926-1 (ORB); ASME B1.20.1 (NPT)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "chief-welded-ag-clevis-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Chief Welded Ag Clevis 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2.5\" bore and a 1.125\" or 1.25\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Chief Welded Ag Clevis 2.5\" bore cylinder part numbers run from 297092 to 297115 across 14 listed part numbers, one per stroke and rod combination. 297092 is the 4\" stroke and 297115 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Welded Ag Clevis 2.5\" bore cylinder comes in twelve stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 20\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Ag Clevis 2.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Welded Ag Clevis 2.5\" bore cylinder is listed with two rod diameters, 1.125\" and 1.25\". Per rod: the 1.125\" rod (eleven part numbers, column load 5,270 to 14,720 lbs); the 1.25\" rod (three part numbers, column load 2,410 to 5,480 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Ag Clevis 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Ag Clevis 2.5\" bore cylinder is listed as 2,410 to 14,720 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Chief Welded Ag Clevis 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Ag Clevis 2.5\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Ag Clevis 2.5\" bore cylinder lists 2,410 to 14,720 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore](/p/chief-welded-ag-clevis-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded ag clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" or 1.25\" rod and column load of 2,410 to 14,720 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes, Chief Welded Ag Clevis 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-ag-clevis-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Chief Welded Ag Clevis 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2\" bore and a 1.125\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in thirteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Chief Welded Ag Clevis 2\" bore cylinder part numbers run from 297068 to 297091 across 15 listed part numbers, one per stroke and rod combination. 297068 is the 4\" stroke and 297091 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Chief Welded Ag Clevis 2\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Ag Clevis 2\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Chief Welded Ag Clevis 2\" bore cylinder uses the 1.125\" rod, and the listed column load is 1,570 to 9,420 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Chief Welded Ag Clevis 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Chief Welded Ag Clevis 2\" bore cylinder is listed as 1,570 to 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Chief Welded Ag Clevis 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Chief Welded Ag Clevis 2\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Chief Welded Ag Clevis 2\" bore cylinder lists 1,570 to 9,420 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore](/p/chief-welded-ag-clevis-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded ag clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 1,570 to 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Ag Clevis Hydraulic Cylinder, 2\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Chief Welded Ag Clevis 2\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-ag-clevis-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore do, and what is it for?",
+          "a": "Chief Welded Ag Clevis 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3.5\" bore and a 1.375\" or 1.5\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in thirteen stroke lengths from 4\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore come in?",
+          "a": "The Chief Welded Ag Clevis 3.5\" bore cylinder part numbers run from 297144 to 297168 across 14 listed part numbers, one per stroke and rod combination. 297144 is the 4\" stroke and 297168 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Chief Welded Ag Clevis 3.5\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Ag Clevis 3.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Chief Welded Ag Clevis 3.5\" bore cylinder is listed with two rod diameters, 1.375\" and 1.5\". Per rod: the 1.375\" rod (seven part numbers, column load 28,860 to 29,067 lbs); the 1.5\" rod (seven part numbers, column load 7,178 to 29,049 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,000 psi for the Chief Welded Ag Clevis 3.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Ag Clevis 3.5\" bore cylinder is listed as 7,178 to 29,067 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Chief Welded Ag Clevis 3.5\" bore cylinder has SAE ORB -8, SAE 8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Ag Clevis 3.5\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Ag Clevis 3.5\" bore cylinder lists 7,178 to 29,067 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore](/p/chief-welded-ag-clevis-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded ag clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.375\" or 1.5\" rod and column load of 7,178 to 29,067 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Chief Welded Ag Clevis 3.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-ag-clevis-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore do, and what is it for?",
+          "a": "Chief Welded Ag Clevis 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3\" bore and a 1.25\" or 1.5\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in thirteen stroke lengths from 4\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Chief Welded Ag Clevis 3\" bore cylinder part numbers run from 297118 to 297141 across 14 listed part numbers, one per stroke and rod combination. 297118 is the 4\" stroke and 297141 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Welded Ag Clevis 3\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Ag Clevis 3\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Welded Ag Clevis 3\" bore cylinder is listed with two rod diameters, 1.25\" and 1.5\". Per rod: the 1.25\" rod (twelve part numbers, column load 8,080 to 21,200 lbs); the 1.5\" rod (two part numbers, column load 4,970 to 11,300 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Ag Clevis 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Chief Welded Ag Clevis 3\" bore cylinder is listed as 4,970 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Chief Welded Ag Clevis 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Chief Welded Ag Clevis 3\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Chief Welded Ag Clevis 3\" bore cylinder lists 4,970 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-ag-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded ag clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" or 1.5\" rod and column load of 4,970 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Ag Clevis Hydraulic Cylinder, 3\" Bore in Dubai for export?",
+          "a": "Yes. We keep Chief Welded Ag Clevis 3\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-ag-clevis-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore do, and what is it for?",
+          "a": "Chief Welded Ag Clevis 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 4\" bore and a 1.75\" or 2\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 48\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Chief Welded Ag Clevis 4\" bore cylinder part numbers run from 297170 to 297186 across 13 listed part numbers, one per stroke and rod combination. 297170 is the 4\" stroke and 297186 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Welded Ag Clevis 4\" bore cylinder comes in twelve stroke lengths from 4\" to 48\", including 4\", 8\", 12\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Ag Clevis 4\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Welded Ag Clevis 4\" bore cylinder is listed with two rod diameters, 1.75\" and 2\". Per rod: the 1.75\" rod (eight part numbers, column load 37,795 to 37,971 lbs); the 2\" rod (five part numbers, column load 21,932 to 37,878 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,000 psi for the Chief Welded Ag Clevis 4\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Chief Welded Ag Clevis 4\" bore cylinder is listed as 21,932 to 37,971 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Chief Welded Ag Clevis 4\" bore cylinder has SAE ORB -8, SAE 8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Chief Welded Ag Clevis 4\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Chief Welded Ag Clevis 4\" bore cylinder lists 21,932 to 37,971 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Chief Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-ag-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded ag clevis pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.75\" or 2\" rod and column load of 21,932 to 37,971 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Ag Clevis Hydraulic Cylinder, 4\" Bore in Dubai for export?",
+          "a": "Yes. Chief Welded Ag Clevis 4\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-clevis-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore and what is it used for?",
+          "a": "Chief Welded Clevis 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 1.5\" bore and a 0.75\" or 1\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eight stroke lengths from 6\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore come in?",
+          "a": "The Chief Welded Clevis 1.5\" bore cylinder part numbers run from 287070 to 287078 across 9 listed part numbers, one per stroke and rod combination. 287070 is the 6\" stroke and 287078 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Chief Welded Clevis 1.5\" bore cylinder comes in eight stroke lengths from 6\" to 24\", including 6\", 8\", 10\", 12\", 16\", 18\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Clevis 1.5\" bore cylinder runs from 16.25\" to 34.25\" and extended length from 22.25\" to 58.25\", depending on stroke. For example the 6\" stroke is 16.25\" retracted and 22.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Chief Welded Clevis 1.5\" bore cylinder is listed with two rod diameters, 0.75\" and 1\". Per rod: the 0.75\" rod (six part numbers, column load 1,950 to 5,300 lbs); the 1\" rod (three part numbers, column load 3,140 to 4,950 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Clevis 1.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Clevis 1.5\" bore cylinder is listed as 1,950 to 5,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Chief Welded Clevis 1.5\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Clevis 1.5\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Clevis 1.5\" bore cylinder lists 1,950 to 5,300 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Chief Welded Clevis Hydraulic Cylinder, 2\" Bore](/p/chief-welded-clevis-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.5\" bore, in the same welded clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 0.75\" or 1\" rod and column load of 1,950 to 5,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Clevis Hydraulic Cylinder, 1.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Chief Welded Clevis 1.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-clevis-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore do, and what is it for?",
+          "a": "Chief Welded Clevis 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2.5\" bore and a 1.25\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in thirteen stroke lengths from 4\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore organised?",
+          "a": "The Chief Welded Clevis 2.5\" bore cylinder part numbers run from 287016 to 287082 across 14 listed part numbers, one per stroke and rod combination. 287016 is the 4\" stroke and 287082 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Welded Clevis 2.5\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Clevis 2.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Chief Welded Clevis 2.5\" bore cylinder uses the 1.25\" rod, and the listed column load is 2,400 to 14,720 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Clevis 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Clevis 2.5\" bore cylinder is listed as 2,400 to 14,720 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Chief Welded Clevis 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Clevis 2.5\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Clevis 2.5\" bore cylinder lists 2,400 to 14,720 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Chief Welded Clevis Hydraulic Cylinder, 3\" Bore](/p/chief-welded-clevis-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 2,400 to 14,720 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes, Chief Welded Clevis 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-clevis-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Chief Welded Clevis 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2\" bore and a 1.125\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in thirteen stroke lengths from 4\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Chief Welded Clevis 2\" bore cylinder part numbers run from 287001 to 287081 across 14 listed part numbers, one per stroke and rod combination. 287001 is the 4\" stroke and 287081 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Chief Welded Clevis 2\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Clevis 2\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Chief Welded Clevis 2\" bore cylinder uses the 1.125\" rod, and the listed column load is 1,560 to 9,420 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Clevis 2\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Chief Welded Clevis 2\" bore cylinder is listed as 1,560 to 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Chief Welded Clevis 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Chief Welded Clevis 2\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Chief Welded Clevis 2\" bore cylinder lists 1,560 to 9,420 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Clevis Hydraulic Cylinder, 2.5\" Bore](/p/chief-welded-clevis-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 1,560 to 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Clevis Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Chief Welded Clevis 2\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-clevis-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore and what is it used for?",
+          "a": "Chief Welded Clevis 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3.5\" bore and a 1.75\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 48\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore organised?",
+          "a": "The Chief Welded Clevis 3.5\" bore cylinder part numbers run from 287042 to 287084 across 13 listed part numbers, one per stroke and rod combination. 287042 is the 4\" stroke and 287084 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Chief Welded Clevis 3.5\" bore cylinder comes in twelve stroke lengths from 4\" to 48\", including 4\", 8\", 12\", 20\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Clevis 3.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Chief Welded Clevis 3.5\" bore cylinder uses the 1.75\" rod, and the listed column load is 9,120 to 28,860 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Clevis 3.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Clevis 3.5\" bore cylinder is listed as 9,120 to 28,860 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Chief Welded Clevis 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Clevis 3.5\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Clevis 3.5\" bore cylinder lists 9,120 to 28,860 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Chief Welded Clevis Hydraulic Cylinder, 4\" Bore](/p/chief-welded-clevis-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 9,120 to 28,860 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Chief Welded Clevis 3.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-clevis-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore, and where is it used?",
+          "a": "Chief Welded Clevis 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3\" bore and a 1.5\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in thirteen stroke lengths from 6\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Chief Welded Clevis 3\" bore cylinder part numbers run from 287030 to 287083 across 14 listed part numbers, one per stroke and rod combination. 287030 is the 6\" stroke and 287083 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Welded Clevis 3\" bore cylinder comes in thirteen stroke lengths from 6\" to 48\", including 6\", 10\", 16\", 20\", 32\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Clevis 3\" bore cylinder runs from 16.25\" to 58.25\" and extended length from 22.25\" to 106.25\", depending on stroke. For example the 6\" stroke is 16.25\" retracted and 22.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Chief Welded Clevis 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 4,970 to 21,200 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Clevis 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Chief Welded Clevis 3\" bore cylinder is listed as 4,970 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Chief Welded Clevis 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Chief Welded Clevis 3\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Chief Welded Clevis 3\" bore cylinder lists 4,970 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded clevis pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 4,970 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Clevis Hydraulic Cylinder, 3\" Bore in Dubai for export?",
+          "a": "Yes. We keep Chief Welded Clevis 3\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-clevis-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore do, and what is it for?",
+          "a": "Chief Welded Clevis 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 4\" bore and a 2\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 48\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore come in?",
+          "a": "The Chief Welded Clevis 4\" bore cylinder part numbers run from 287055 to 287068 across 13 listed part numbers, one per stroke and rod combination. 287055 is the 4\" stroke and 287068 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Welded Clevis 4\" bore cylinder comes in twelve stroke lengths from 4\" to 48\", including 4\", 10\", 14\", 20\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Clevis 4\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Chief Welded Clevis 4\" bore cylinder uses the 2\" rod, and the listed column load is 15,800 to 37,690 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Clevis 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Chief Welded Clevis 4\" bore cylinder is listed as 15,800 to 37,690 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Chief Welded Clevis 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Chief Welded Clevis 4\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Chief Welded Clevis 4\" bore cylinder lists 15,800 to 37,690 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Chief Welded Clevis Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded clevis pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 15,800 to 37,690 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Clevis Hydraulic Cylinder, 4\" Bore in Dubai for export?",
+          "a": "Yes. We keep Chief Welded Clevis 4\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore do, and what is it for?",
+          "a": "Chief Welded Cross Tube 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 1.5\" bore and a 0.75\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in seven stroke lengths from 4\" to 24\", 7 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore come in?",
+          "a": "The Chief Welded Cross Tube 1.5\" bore cylinder part numbers run from 207371 to 207380 across 7 listed part numbers, one per stroke and rod combination. 207371 is the 4\" stroke and 207380 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Chief Welded Cross Tube 1.5\" bore cylinder comes in seven stroke lengths from 4\" to 24\", including 4\", 6\", 8\", 10\", 12\", 18\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 1.5\" bore cylinder runs from 11\" to 31\" and extended length from 15\" to 55\", depending on stroke. For example the 4\" stroke is 11\" retracted and 15\" extended, and the 24\" stroke is 31\" and 55\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore use?",
+          "a": "Every part number of the Chief Welded Cross Tube 1.5\" bore cylinder uses the 0.75\" rod, and the listed column load is 1,210 to 5,300 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Cross Tube 1.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 1.5\" bore cylinder is listed as 1,210 to 5,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Chief Welded Cross Tube 1.5\" bore cylinder has SAE ORB -4 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 1.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 1.5\" bore cylinder lists 1,210 to 5,300 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.5\" bore, in the same welded cross tube pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 0.75\" rod and column load of 1,210 to 5,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Chief Welded Cross Tube 1.5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Chief Welded Cross Tube 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2.5\" bore and a 1.375\" or 1.5\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in sixteen stroke lengths from 4\" to 60\", 33 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Chief Welded Cross Tube 2.5\" bore cylinder part numbers run from 207398 to 207427 across 33 listed part numbers, one per stroke and rod combination. 207398 is the 4\" stroke and 207427 the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Welded Cross Tube 2.5\" bore cylinder comes in sixteen stroke lengths from 4\" to 60\", including 4\", 10\", 16\", 24\", 40\" and 60\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 2.5\" bore cylinder runs from 12\" to 72\" and extended length from 16\" to 132\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 60\" stroke is 72\" and 132\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Welded Cross Tube 2.5\" bore cylinder is listed with two rod diameters, 1.375\" and 1.5\". Per rod: the 1.375\" rod (sixteen part numbers, column load 2,280 to 14,720 lbs); the 1.5\" rod (seventeen part numbers, column load 8,460 to 14,725 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Chief Welded Cross Tube 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 2.5\" bore cylinder is listed as 2,280 to 14,725 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Chief Welded Cross Tube 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 2.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 2.5\" bore cylinder lists 2,280 to 14,725 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded cross tube pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.375\" or 1.5\" rod and column load of 2,280 to 14,725 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks Chief Welded Cross Tube 2.5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Chief Welded Cross Tube 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2\" bore and a 1.125\" or 1.25\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in fifteen stroke lengths from 4\" to 60\", 29 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Chief Welded Cross Tube 2\" bore cylinder part numbers run from 207381 to 207397 across 29 listed part numbers, one per stroke and rod combination. 207381 is the 4\" stroke and 207397 the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Chief Welded Cross Tube 2\" bore cylinder comes in fifteen stroke lengths from 4\" to 60\", including 4\", 10\", 16\", 20\", 36\" and 60\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 2\" bore cylinder runs from 11\" to 72\" and extended length from 15\" to 132\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 60\" stroke is 72\" and 132\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Chief Welded Cross Tube 2\" bore cylinder is listed with two rod diameters, 1.125\" and 1.25\". Per rod: the 1.125\" rod (fourteen part numbers, column load 1,030 to 9,420 lbs); the 1.25\" rod (fifteen part numbers, column load 4,260 to 9,420 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Chief Welded Cross Tube 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 2\" bore cylinder is listed as 1,030 to 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Chief Welded Cross Tube 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 2\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 2\" bore cylinder lists 1,030 to 9,420 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded cross tube pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" or 1.25\" rod and column load of 1,030 to 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Cross Tube Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Chief Welded Cross Tube 2\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore, and where is it used?",
+          "a": "Chief Welded Cross Tube 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3.5\" bore and a 1.75\" or 2\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in fourteen stroke lengths from 8\" to 60\", 20 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore come in?",
+          "a": "The Chief Welded Cross Tube 3.5\" bore cylinder part numbers run from 207460 to 207487 across 20 listed part numbers, one per stroke and rod combination. 207460 is the 8\" stroke and 207487 the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Chief Welded Cross Tube 3.5\" bore cylinder comes in fourteen stroke lengths from 8\" to 60\", including 8\", 14\", 18\", 30\", 40\" and 60\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 3.5\" bore cylinder runs from 16\" to 72\" and extended length from 24\" to 132\", depending on stroke. For example the 8\" stroke is 16\" retracted and 24\" extended, and the 60\" stroke is 72\" and 132\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Chief Welded Cross Tube 3.5\" bore cylinder is listed with two rod diameters, 1.75\" and 2\". Per rod: the 1.75\" rod (thirteen part numbers, column load 6,010 to 28,860 lbs); the 2\" rod (seven part numbers, column load 15,930 to 28,860 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Cross Tube 3.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 3.5\" bore cylinder is listed as 6,010 to 28,860 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Chief Welded Cross Tube 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 3.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 3.5\" bore cylinder lists 6,010 to 28,860 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded cross tube pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" or 2\" rod and column load of 6,010 to 28,860 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Chief Welded Cross Tube 3.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore and what is it used for?",
+          "a": "Chief Welded Cross Tube 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3\" bore and a 1.5\" or 1.75\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in sixteen stroke lengths from 4\" to 60\", 29 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Chief Welded Cross Tube 3\" bore cylinder part numbers run from 207428 to 207457 across 29 listed part numbers, one per stroke and rod combination. 207428 is the 4\" stroke and 207457 the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Welded Cross Tube 3\" bore cylinder comes in sixteen stroke lengths from 4\" to 60\", including 4\", 10\", 16\", 24\", 40\" and 60\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 3\" bore cylinder runs from 12\" to 72\" and extended length from 16\" to 132\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 60\" stroke is 72\" and 132\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Welded Cross Tube 3\" bore cylinder is listed with two rod diameters, 1.5\" and 1.75\". Per rod: the 1.5\" rod (fifteen part numbers, column load 3,210 to 21,200 lbs); the 1.75\" rod (fourteen part numbers, column load 9,370 to 21,200 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Cross Tube 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 3\" bore cylinder is listed as 3,210 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Chief Welded Cross Tube 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 3\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 3\" bore cylinder lists 3,210 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded cross tube pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" or 1.75\" rod and column load of 3,210 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Cross Tube Hydraulic Cylinder, 3\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Chief Welded Cross Tube 3\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore do, and what is it for?",
+          "a": "Chief Welded Cross Tube 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 4\" bore and a 2\" or 2.25\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in nineteen stroke lengths from 8\" to 96\", 33 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore come in?",
+          "a": "The Chief Welded Cross Tube 4\" bore cylinder part numbers run from 207490 to 212778 across 33 listed part numbers, one per stroke and rod combination. 207490 is the 8\" stroke and 212778 the 96\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Welded Cross Tube 4\" bore cylinder comes in nineteen stroke lengths from 8\" to 96\", including 8\", 16\", 24\", 40\", 54\" and 96\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 4\" bore cylinder runs from 17\" to 111\" and extended length from 25\" to 207\", depending on stroke. For example the 8\" stroke is 17\" retracted and 25\" extended, and the 96\" stroke is 111\" and 207\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Welded Cross Tube 4\" bore cylinder is listed with two rod diameters, 2\" and 2.25\". Per rod: the 2\" rod (fourteen part numbers, column load 9,490 to 37,690 lbs); the 2.25\" rod (nineteen part numbers, column load 6,290 to 37,690 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Cross Tube 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 4\" bore cylinder is listed as 6,290 to 37,690 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Chief Welded Cross Tube 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 4\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 4\" bore cylinder lists 6,290 to 37,690 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Chief Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded cross tube pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" or 2.25\" rod and column load of 6,290 to 37,690 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Cross Tube Hydraulic Cylinder, 4\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Chief Welded Cross Tube 4\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore and what is it used for?",
+          "a": "Chief Welded Cross Tube 5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 5\" bore and a 1.125\", 1.5\", 2.5\" or 3\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in seventeen stroke lengths from 8\" to 72\", 38 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore organised?",
+          "a": "The Chief Welded Cross Tube 5\" bore cylinder part numbers run from 207520 to 216130 across 38 listed part numbers, one per stroke and rod combination. 207520 is the 8\" stroke and 216130 the 72\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Chief Welded Cross Tube 5\" bore cylinder comes in seventeen stroke lengths from 8\" to 72\", including 8\", 14\", 20\", 36\", 48\" and 72\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 5\" bore cylinder runs from 19\" to 90\" and extended length from 27\" to 162\", depending on stroke. For example the 8\" stroke is 20\" retracted and 28\" extended, and the 72\" stroke is 89\" and 161\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Chief Welded Cross Tube 5\" bore cylinder is listed with four rod diameters, 1.125\", 1.5\", 2.5\" and 3\". Per rod: the 1.125\" rod (one part number, column load 58,900 lbs); the 1.5\" rod (one part number, column load 58,900 lbs); the 2.5\" rod (34 part numbers, column load 15,600 to 58,900 lbs); the 3\" rod (two part numbers, column load 58,900 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Cross Tube 5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 5\" bore cylinder is listed as 15,600 to 58,900 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore have?",
+          "a": "The Chief Welded Cross Tube 5\" bore cylinder has SAE ORB -12, NPT 3/4\" ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 5\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 5\" bore cylinder lists 15,600 to 58,900 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore compare with the 6\" bore version?",
+          "a": "The next size up is the [Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-6-in-bore) with a 6\" bore against this 5\" bore, in the same welded cross tube pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\", 1.5\", 2.5\" or 3\" rod and column load of 15,600 to 58,900 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Chief Welded Cross Tube 5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-6-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore do, and what is it for?",
+          "a": "Chief Welded Cross Tube 6\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 6\" bore and a 1.125\", 2.75\" or 3\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in seventeen stroke lengths from 8\" to 72\", 28 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore come in?",
+          "a": "The Chief Welded Cross Tube 6\" bore cylinder part numbers run from 216216 to 216150 across 28 listed part numbers, one per stroke and rod combination. 216216 is the 8\" stroke and 216150 the 72\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore?",
+          "a": "The Chief Welded Cross Tube 6\" bore cylinder comes in seventeen stroke lengths from 8\" to 72\", including 8\", 14\", 20\", 36\", 48\" and 72\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 6\" bore cylinder runs from 19\" to 89\" and extended length from 27\" to 161\", depending on stroke. For example the 8\" stroke is 19\" retracted and 27\" extended, and the 72\" stroke is 89\" and 161\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore?",
+          "a": "The Chief Welded Cross Tube 6\" bore cylinder is listed with three rod diameters, 1.125\", 2.75\" and 3\". Per rod: the 1.125\" rod (one part number, column load 42,210 lbs); the 2.75\" rod (one part number, column load 84,820 lbs); the 3\" rod (26 part numbers, column load 57,152 to 84,820 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Cross Tube 6\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 6\" bore cylinder is listed as 42,210 to 84,820 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore have?",
+          "a": "The Chief Welded Cross Tube 6\" bore cylinder has NPT 3/4\", SAE ORB -12 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 6\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 6\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 6\" bore cylinder lists 42,210 to 84,820 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore compare with the 5\" bore version?",
+          "a": "The next size down is the [Chief Welded Cross Tube Hydraulic Cylinder, 5\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-5-in-bore) with a 5\" bore against this 6\" bore, in the same welded cross tube pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.125\", 2.75\" or 3\" rod and column load of 42,210 to 84,820 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Chief Welded Cross Tube 6\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-cross-tube-hydraulic-cylinder-8-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore and what is it used for?",
+          "a": "Chief Welded Cross Tube 8\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 8\" bore and a 1.375\", 2.75\" or 4\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in nine stroke lengths from 8\" to 60\", 17 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore organised?",
+          "a": "The Chief Welded Cross Tube 8\" bore cylinder part numbers run from 216160 to 216241 across 17 listed part numbers, one per stroke and rod combination. 216160 is the 8\" stroke and 216241 the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore?",
+          "a": "The Chief Welded Cross Tube 8\" bore cylinder comes in nine stroke lengths from 8\" to 60\", including 8\", 16\", 20\", 30\", 36\" and 60\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Cross Tube 8\" bore cylinder runs from 24\" to 80\" and extended length from 32\" to 140\", depending on stroke. For example the 8\" stroke is 24\" retracted and 32\" extended, and the 60\" stroke is 80\" and 140\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore?",
+          "a": "The Chief Welded Cross Tube 8\" bore cylinder is listed with three rod diameters, 1.375\", 2.75\" and 4\". Per rod: the 1.375\" rod (two part numbers); the 2.75\" rod (two part numbers); the 4\" rod (thirteen part numbers). The listing gives one column load figure for the whole range, so confirm the load for your rod and stroke with us before you size it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Cross Tube 8\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore carry?",
+          "a": "Column load on the Chief Welded Cross Tube 8\" bore cylinder is listed as 150,790 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore have?",
+          "a": "The Chief Welded Cross Tube 8\" bore cylinder has SAE ORB -16, NPT 1\" ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore mounted and installed?",
+          "a": "The Chief Welded Cross Tube 8\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 8\" bore area, then check the load against the column load for your stroke (the Chief Welded Cross Tube 8\" bore cylinder lists 150,790 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore compare with the 6\" bore version?",
+          "a": "The next size down is the [Chief Welded Cross Tube Hydraulic Cylinder, 6\" Bore](/p/chief-welded-cross-tube-hydraulic-cylinder-6-in-bore) with a 6\" bore against this 8\" bore, in the same welded cross tube pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.375\", 2.75\" or 4\" rod and column load of 150,790 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Cross Tube Hydraulic Cylinder, 8\" Bore in Dubai for export?",
+          "a": "Yes. We keep Chief Welded Cross Tube 8\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-tang-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Chief Welded Tang 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2.5\" bore and a 1.375\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in three stroke lengths from 10\" to 20\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore organised?",
+          "a": "The Chief Welded Tang 2.5\" bore cylinder part numbers run from 400637 to 400640 across 3 listed part numbers, one per stroke and rod combination. 400637 is the 10\" stroke and 400640 the 20\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Welded Tang 2.5\" bore cylinder comes in three stroke lengths from 10\" to 20\", including 10\", 16\" and 20\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Tang 2.5\" bore cylinder runs from 20\" to 30\" and extended length from 30\" to 50\", depending on stroke. For example the 10\" stroke is 20\" retracted and 30\" extended, and the 20\" stroke is 30\" and 50\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Chief Welded Tang 2.5\" bore cylinder uses the 1.375\" rod, and the listed column load is 15,940 to 17,670 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Tang 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Tang 2.5\" bore cylinder is listed as 15,940 to 17,670 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Chief Welded Tang 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Tang 2.5\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Tang 2.5\" bore cylinder lists 15,940 to 17,670 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Chief Welded Tang Hydraulic Cylinder, 3\" Bore](/p/chief-welded-tang-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded tang pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.375\" rod and column load of 15,940 to 17,670 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Chief Welded Tang 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-tang-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Tang Hydraulic Cylinder, 2\" Bore and what is it used for?",
+          "a": "Chief Welded Tang 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2\" bore and a 1.125\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in four stroke lengths from 8\" to 20\", 4 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Tang Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Chief Welded Tang 2\" bore cylinder part numbers run from 400613 to 400617 across 4 listed part numbers, one per stroke and rod combination. 400613 is the 8\" stroke and 400617 the 20\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Tang Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Chief Welded Tang 2\" bore cylinder comes in four stroke lengths from 8\" to 20\", including 8\", 10\", 12\" and 20\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Tang Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Tang 2\" bore cylinder runs from 18\" to 30\" and extended length from 26\" to 50\", depending on stroke. For example the 8\" stroke is 18\" retracted and 26\" extended, and the 20\" stroke is 30\" and 50\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Tang Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Chief Welded Tang 2\" bore cylinder uses the 1.125\" rod, and the listed column load is 7,170 to 11,300 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Tang Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Tang 2\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Tang Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Chief Welded Tang 2\" bore cylinder is listed as 7,170 to 11,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Tang Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Chief Welded Tang 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Tang Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Chief Welded Tang 2\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Tang Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Chief Welded Tang 2\" bore cylinder lists 7,170 to 11,300 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Tang Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Tang Hydraulic Cylinder, 2.5\" Bore](/p/chief-welded-tang-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded tang pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 7,170 to 11,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Tang Hydraulic Cylinder, 2\" Bore in Dubai for export?",
+          "a": "Yes. We keep Chief Welded Tang 2\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-tang-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore, and where is it used?",
+          "a": "Chief Welded Tang 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3.5\" bore and a 1.75\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in three stroke lengths from 16\" to 36\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore organised?",
+          "a": "The Chief Welded Tang 3.5\" bore cylinder part numbers run from 400685 to 400688 across 3 listed part numbers, one per stroke and rod combination. 400685 is the 16\" stroke and 400688 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Chief Welded Tang 3.5\" bore cylinder comes in three stroke lengths from 16\" to 36\", including 16\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Tang 3.5\" bore cylinder runs from 26\" to 46\" and extended length from 42\" to 82\", depending on stroke. For example the 16\" stroke is 26\" retracted and 42\" extended, and the 36\" stroke is 46\" and 82\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Chief Welded Tang 3.5\" bore cylinder uses the 1.75\" rod, and the listed column load is 15,780 to 34,630 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Tang 3.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Chief Welded Tang 3.5\" bore cylinder is listed as 15,780 to 34,630 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Chief Welded Tang 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Chief Welded Tang 3.5\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Chief Welded Tang 3.5\" bore cylinder lists 15,780 to 34,630 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Chief Welded Tang Hydraulic Cylinder, 4\" Bore](/p/chief-welded-tang-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded tang pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 15,780 to 34,630 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Chief Welded Tang 3.5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-tang-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Tang Hydraulic Cylinder, 3\" Bore and what is it used for?",
+          "a": "Chief Welded Tang 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 3\" bore and a 1.5\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in three stroke lengths from 16\" to 36\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Tang Hydraulic Cylinder, 3\" Bore come in?",
+          "a": "The Chief Welded Tang 3\" bore cylinder part numbers run from 400662 to 400665 across 3 listed part numbers, one per stroke and rod combination. 400662 is the 16\" stroke and 400665 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Tang Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Welded Tang 3\" bore cylinder comes in three stroke lengths from 16\" to 36\", including 16\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Tang Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Tang 3\" bore cylinder runs from 26\" to 46\" and extended length from 42\" to 82\", depending on stroke. For example the 16\" stroke is 26\" retracted and 42\" extended, and the 36\" stroke is 46\" and 82\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Tang Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Chief Welded Tang 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 8,390 to 25,440 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Tang Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Tang 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Tang Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Chief Welded Tang 3\" bore cylinder is listed as 8,390 to 25,440 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Tang Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Chief Welded Tang 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Tang Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Chief Welded Tang 3\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Tang Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Chief Welded Tang 3\" bore cylinder lists 8,390 to 25,440 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Tang Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-tang-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded tang pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 8,390 to 25,440 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Welded Tang Hydraulic Cylinder, 3\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Chief Welded Tang 3\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-welded-tang-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Welded Tang Hydraulic Cylinder, 4\" Bore and what is it used for?",
+          "a": "Chief Welded Tang 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 4\" bore and a 2\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in two stroke lengths from 30\" to 36\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Welded Tang Hydraulic Cylinder, 4\" Bore come in?",
+          "a": "The Chief Welded Tang 4\" bore cylinder part numbers run from 400710 to 400711 across 2 listed part numbers, one per stroke and rod combination. 400710 is the 30\" stroke and 400711 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Welded Tang Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Welded Tang 4\" bore cylinder comes in two stroke lengths from 30\" to 36\", including 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Welded Tang Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Welded Tang 4\" bore cylinder runs from 41\" to 47\" and extended length from 71\" to 83\", depending on stroke. For example the 30\" stroke is 41\" retracted and 71\" extended, and the 36\" stroke is 47\" and 83\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Welded Tang Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Chief Welded Tang 4\" bore cylinder uses the 2\" rod, and the listed column load is 26,100 to 35,690 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Welded Tang Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Welded Tang 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Welded Tang Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Chief Welded Tang 4\" bore cylinder is listed as 26,100 to 35,690 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Welded Tang Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Chief Welded Tang 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Welded Tang Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Chief Welded Tang 4\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Welded Tang Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Chief Welded Tang 4\" bore cylinder lists 26,100 to 35,690 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Welded Tang Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Chief Welded Tang Hydraulic Cylinder, 3.5\" Bore](/p/chief-welded-tang-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded tang pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 26,100 to 35,690 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Welded Tang Hydraulic Cylinder, 4\" Bore in Dubai for export?",
+          "a": "Yes, Chief Welded Tang 4\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

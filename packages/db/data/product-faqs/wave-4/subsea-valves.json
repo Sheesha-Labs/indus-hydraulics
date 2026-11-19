@@ -1,0 +1,149 @@
+{
+  "family": "subsea-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "subsea-ball-valve-api-6dss",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6DSS subsea ball valve used for?",
+          "a": "Subsea ball valves to API 6DSS: 1/2\" to 48\", Class 150 to 2500, to 3,000 m water depth, side-entry, top-entry or fully welded, SPE or DPE seats, ROV operable."
+        },
+        {
+          "slot": "B",
+          "q": "What do the PSL and PR levels mean on an API 6DSS subsea ball valve?",
+          "a": "PSL 1 to 4 sets the inspection, testing and traceability level and PR1 or PR2 sets the performance-validation level. State the PSL and PR you need and the ASME class (150 to 2500) on the enquiry; hyperbaric testing is available on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6DSS subsea ball valve come in?",
+          "a": "The listing covers 1/2\" to 48\" nominal bore at ASME Class 150 to 2500, with flanged, hub or weld. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a side-entry, top-entry or fully welded API 6DSS subsea ball valve?",
+          "a": "Side-entry and top-entry bodies can be serviced in place, while a fully welded body removes a leak path in a pipeline. Seats are SPE (single piston effect) or DPE. State the body style, seat type and size on the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6DSS subsea ball valve tested?",
+          "a": "For the API 6DSS subsea ball valve (1/2\" to 48\", ASME Class 150 to 2500): hydrostatic and gas tests to API 6DSS, with hyperbaric testing on request. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6DSS subsea ball valve offer?",
+          "a": "On the API 6DSS subsea ball valve, body material is offered in Forged steel and corrosion-resistant alloys, and the temperature range is As specified. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6DSS subsea ball valve to API specification, and what documents are supplied?",
+          "a": "The API 6DSS subsea ball valve is built to API 6DSS by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6DSS subsea ball valve operated?",
+          "a": "The API 6DSS subsea ball valve is operated by manual, gearbox or hydraulic actuator; ROV interface. Operation is manual, by gearbox or by hydraulic actuator, with an ROV interface for diver-less operation. End connections on the listing are flanged, hub or weld."
+        },
+        {
+          "slot": "I",
+          "q": "What ROV interface does a subsea ball valve have?",
+          "a": "The valve has an ROV interface so a remotely operated vehicle can operate it subsea, to 3,000 m water depth per the shelf listing. Confirm the ROV torque tool class on the enquiry. See the [API 17D subsea gate valve](/p/subsea-gate-valve-api-17d) for gate valve duty."
+        },
+        {
+          "slot": "K",
+          "q": "API 6DSS subsea ball valve or API 17D subsea gate valve: how do they differ?",
+          "a": "A subsea ball valve to API 6DSS is a quarter-turn valve in 1/2\" to 48\" for pipelines, PLEMs and PLETs, while a subsea gate valve to API 17D is a slab gate valve in 1\" to 9\" for trees and manifolds. See the [Subsea Gate Valve, API 17D, 1\" to 9\", to 15,000 psi](/p/subsea-gate-valve-api-17d)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6DSS subsea ball valve be supplied from Dubai with test records?",
+          "a": "For the API 6DSS subsea ball valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6DSS subsea ball valve in Dubai?",
+          "a": "Yes. We keep the API 6DSS subsea ball valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "subsea-gate-valve-api-17d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 17D subsea gate valve used for?",
+          "a": "Subsea slab gate valves to API 17D: 1\" to 9\", to 15,000 psi, to 3,000 m water depth, metal-to-metal seats, manual, linear gearbox or hydraulic actuator with ROV interface."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 17D subsea gate valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 17D subsea gate valve the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 17D subsea gate valve come in?",
+          "a": "The listing covers 1\" to 9\" nominal bore at Up to 15,000 psi, with flanged, hub or weld. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I use a subsea gate valve instead of a subsea ball valve?",
+          "a": "Use the API 17D gate valve on subsea trees, manifolds, PLEMs, PLETs and chemical injection lines at up to 15,000 psi. For large-bore pipeline isolation see the [API 6DSS subsea ball valve](/p/subsea-ball-valve-api-6dss)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 17D subsea gate valve tested?",
+          "a": "For the API 17D subsea gate valve (1\" to 9\", Up to 15,000 psi): hydrostatic and gas tests to API 17D, with hyperbaric testing on request. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 17D subsea gate valve offer?",
+          "a": "On the API 17D subsea gate valve, body material is offered in Forged steel and corrosion-resistant alloys, and the temperature range is API 6A temperature classes. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 17D subsea gate valve to API specification, and what documents are supplied?",
+          "a": "The API 17D subsea gate valve is built to API 17D by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 17D subsea gate valve operated?",
+          "a": "The API 17D subsea gate valve is operated by manual, linear gearbox or hydraulic actuator; ROV interface. It is operated manually, by a linear gearbox or a hydraulic actuator, with an ROV interface. End connections on the listing are flanged, hub or weld."
+        },
+        {
+          "slot": "I",
+          "q": "How is a top-entry slab gate subsea valve serviced?",
+          "a": "The top-entry body lets the internals be reached without removing the body from the line, and the metal-to-metal seats give the seal. Depth is to 3,000 m per the shelf listing. See the [API 6DSS subsea ball valve](/p/subsea-ball-valve-api-6dss) for ball valve duty."
+        },
+        {
+          "slot": "K",
+          "q": "API 17D subsea gate valve or API 6DSS subsea ball valve: which one do I need?",
+          "a": "A subsea gate valve to API 17D is a top-entry slab gate valve with metal-to-metal seats up to 15,000 psi in 1\" to 9\", while a subsea ball valve to API 6DSS is quarter-turn and goes to 48\". See the [Subsea Ball Valve, API 6DSS, 1/2\" to 48\"](/p/subsea-ball-valve-api-6dss)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 17D subsea gate valve be supplied from Dubai with test records?",
+          "a": "For the API 17D subsea gate valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 17D subsea gate valve in Dubai?",
+          "a": "Yes. We keep the API 17D subsea gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

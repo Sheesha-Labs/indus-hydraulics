@@ -1,0 +1,84 @@
+{
+  "family": "wt-flare-stack",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "flare-stack-trailer-mounted-hydraulic-deployment-piezo-ignition-60-ft-tri-heads-green",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 60-ft trailer-mounted flare stack used for?",
+          "a": "A 60-ft trailer-mounted flare stack burns well-test gas safely at a distance from the rig, raised by a hydraulic deployment system. It has stabilizing legs, piezo-electric spark ignition and a Tri-Heads Green burner head for environmentally optimised flaring."
+        },
+        {
+          "slot": "B",
+          "q": "What does Tri-Heads Green mean on this 60-ft flare stack?",
+          "a": "Tri-Heads Green is the name of the burner head fitted, described on the listing as optimised for environmentally friendly flaring. The 60-ft is the stack height."
+        },
+        {
+          "slot": "D",
+          "q": "What height and deployment does the trailer-mounted flare stack have?",
+          "a": "The stack is 60 ft high on a trailer, deployed by a hydraulic system with stabilizing legs. Onshore skid-mounted variants with concrete anchor blocks are available, and offshore flare boom designs follow the client's crane and structural envelope."
+        },
+        {
+          "slot": "D",
+          "q": "Can I get a skid-mounted or offshore version of the 60-ft flare stack?",
+          "a": "Yes. Onshore skid-mounted variants with concrete anchor blocks are available, and offshore flare boom designs are built to the client crane and structural envelope. State the site type and the height on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "How is the 60-ft flare stack ignited?",
+          "a": "It uses a piezo-electric spark generator for ignition at the Tri-Heads Green burner head. Add a pilot or other ignition method on the RFQ if your site procedure calls for it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the flare stack made from, and what environments is it for?",
+          "a": "The listing does not give a material grade; the stack is built to the client specification for onshore and offshore well testing. State the climate, wind loading and gas composition on the RFQ so materials are matched."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates are available for the trailer-mounted flare stack?",
+          "a": "The listing gives CE and GOST as options, and a custom trailer with country-of-registration documentation. State which approvals your site requires on the RFQ, and they are confirmed on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 60-ft flare stack connect to on a well-test spread?",
+          "a": "It connects to the flare line from the knock-out drum on the well-test spread. See the [knock-out drum](/c/wt-knock-out-drum) shelf for the liquid knock-out and the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the trailer-mounted flare stack raised and secured?",
+          "a": "The hydraulic deployment system raises the stack from the trailer, and the stabilizing legs secure it. Position the trailer clear of the rig and downwind, and check the legs before ignition."
+        },
+        {
+          "slot": "K",
+          "q": "Trailer-mounted or skid-mounted flare stack: which should I choose?",
+          "a": "The trailer-mounted stack is hydraulically deployed and is registered for road movement, while the onshore skid-mounted variant is fixed on concrete anchor blocks. Choose the trailer for mobile work and the skid for a fixed site."
+        },
+        {
+          "slot": "L",
+          "q": "Can the trailer-mounted flare stack be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its trailer, with a custom trailer and the country-of-registration documentation. Give the destination and we confirm freight and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 60-ft trailer-mounted flare stack in Dubai?",
+          "a": "Yes. We keep the 60-ft trailer-mounted flare stack in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the height, deployment type and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

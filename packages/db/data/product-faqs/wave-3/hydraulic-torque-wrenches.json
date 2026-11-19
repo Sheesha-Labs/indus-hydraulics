@@ -1,0 +1,594 @@
+{
+  "family": "hydraulic-torque-wrenches",
+  "extraFacts": [
+    {
+      "fact": "Low profile cassette ratings as listed: HLP7315 10,252 N-m (7,562 ft-lb) for the HMT7500; W15402X 20,785 N-m (15,330 ft-lb), 4 1/8 inch maximum.",
+      "source": "Indus Hydraulics Enerpac low profile listing (item descriptions)"
+    },
+    {
+      "fact": "Size a torque wrench on the bolt torque, then on the clearance around the nut: square-drive wrenches take impact sockets, low-profile hexagon wrenches fit where a socket will not. Each Enerpac hydraulic torque wrench needs a 10,000 psi pump and twin hose.",
+      "source": "Indus Hydraulics Enerpac torque wrench listings (choosing text)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches [IH-ENE-TW-DSX]:   Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches. 5 models, each listed with its description and part number. | Brand Enerpac; Models 5 | 5 part numbers (e.g. DSX11000, DSX1500, DSX25000, DSX3000); ; rows: Square Drive Aluminum Hydraulic Torque Wrench, 11,524 ft. lbs. Torque, / Square Drive Aluminum Hydraulic Torque Wrench, 1,411 ft. lbs. Torque,  / Square Drive Aluminum Hydraulic Torque Wrench, 24,057 ft. lbs. Torque, / Square Drive Aluminum Hydraulic Torque Wrench, 3,233 ft. lbs. Torque,  / Square Drive Aluminum Hydraulic Torque Wrench, 5,635 ft. lbs. Torque,  || Enerpac HMT Hexagon Hydraulic Torque Wrenches [IH-ENE-TW-HMT]:   Enerpac HMT Hexagon Hydraulic Torque Wrenches. 3 models, each listed with its description and part number. | Brand Enerpac; Models 3 | 3 part numbers (e.g. HMT1500, HMT3500, HMT7500); ; rows: Hydraulic Torque Wrench Drive 1541 ft-lbs / Hydraulic Torque Wrench Drive 3543 ft-lbs / Hydraulic Torque Wrench Drive 7562 ft-lbs || Enerpac HSQ Square Drive Hydraulic Torque Wrenches [IH-ENE-TW-HSQ]:   Enerpac HSQ Square Drive Hydraulic Torque Wrenches. 3 models, each listed with its description and part number. | Brand Enerpac; Models 3 | 3 part numbers (e.g. HSQ1500, HSQ3500, HSQ7500); ; rows: Square Drive, 3/4 in Square Drive Size / Square Drive, 1 in Square Drive Size / Square Drive, 1 1/2 in. Square Drive Size || Enerpac Low Profile Hydraulic Torque Wrenches [IH-ENE-LOW-PROFILE-HYDRAULIC-TORQUE-WRENCHES]:   Enerpac Low Profile Hydraulic Torque Wrenches: 16 part numbers. | Compatible Manufacturer Drive Unit Number HMT7500; Nose Radius 2.89\"; Socket Shape Hex | 16 part numbers (e.g. HLP7315, W15402R090M, W15402X, W15402R308); ; rows: Interchangeable Low Profile Hexagon Cassette, 10, 252 N-m, 7, 562 ft-l / Torque Wrench Reducer, 105 mm Max, Reduces to 3 9/16 Inch Size / Low Profile Torque Wrench Cassette, 20, 785 N-m, 15, 330 ft-lb, 4 1/8  / Torque Wrench Reducer, 104.775 mm Max, Reduces to 3 1/2 Inch Size / Torque Wrench Reducer, 104.775 mm Max, Reduces to 3 1/4 Inch Size / Torque Wrench Reducer, 104.775 mm Max, Reduces to 3 5/16 Inch Size / Torque Wrench Reducer, 63.5 mm Max, Reduces to 1 13/16 Inch Size / Torque Wrench Reducer, 63.5 mm Max, Reduces to 2 Inch, Reduces From 2  || Enerpac PTW Pneumatic Torque Wrenches [IH-ENE-TW-PTW]:   Enerpac PTW Pneumatic Torque Wrenches. 8 models, each listed with its description and part number. | Brand Enerpac; Models 8 | 8 part numbers (e.g. PTW1000, PTW1000C, PTW2000, PTW2000C); ; rows: Pneumatic Torque Wrench 1000 ft-lbs / Pneumatic Torque Wrench 1000 ft-lbs, FRL included / Pneumatic Torque Wrench 2000 ft-lbs / Pneumatic Torque Wrench 2000 ft-lbs, FRL included / Pneumatic Torque Wrench 3000 ft-lbs / Pneumatic Torque Wrench 3000 ft-lbs, FRL included / Pneumatic Torque Wrench 6000 ft-lbs / Pneumatic Torque Wrench 6000 ft-lbs, FRL included || Enerpac RSL Low-Profile Hydraulic Torque Wrenches [IH-ENE-TW-RSL]:   Enerpac RSL Low-Profile Hydraulic Torque Wrenches. 7 models, each listed with its description and part number. | Brand Enerpac; Models 7 | 7 part numbers (e.g. RSL11000, RSL1500, RSL19000, RSL28000); ; rows: Hydraulic Torque Wrench Drive 11154 ft-lbs / Hydraulic Torque Wrench Drive 1408 ft-lbs / Hydraulic Torque Wrench Drive 18843 ft-lbs / Hydraulic Torque Wrench Drive 28002 ft-lbs / Hydraulic Torque Wrench Drive 3080 ft-lbs / Hydraulic Torque Wrench Drive 5303 ft-lbs / Hydraulic Torque Wrench Drive 7862 ft-lbs || Enerpac RSQ Square Drive Torque Wrenches [IH-ENE-TW-RSQ]:   Enerpac RSQ Square Drive Torque Wrenches. 14 models, each listed with its description and part number. | Brand Enerpac; Models 14 | 14 part numbers (e.g. RSQ11000, RSQ11000ST, RSQ1500, RSQ1500ST); ; rows: RSQ-11000 Square Drive Head 1 1/2 in Square Drive Size / RSQ-11000ST Square Drive Hydraulic Torque Wrench Set 11154 ft lbs Torq / RSQ-1500 Square Drive Head 3/4 in Square Drive Size / RSQ-1500ST Square Drive Hydraulic Torque Wrench Set 1408 ft lbs Torque / RSQ-19000 Square Drive Head 2 1/2 in Square Drive Size / RSQ-19000ST Square Drive Hydraulic Torque Wrench Set 18843 ft lbs Torq / RSQ-28000 Square Drive Head 2 1/2 in Square Drive Size / RSQ-28000ST Square Drive Hydraulic Torque Wrench Set 28002 ft lbs Torq || Enerpac S-Series Square Drive Hydraulic Torque Wrenches [IH-ENE-TW-S]:   Enerpac S-Series Square Drive Hydraulic Torque Wrenches. 10 models, each listed with its description and part number. | Brand Enerpac; Models 10 | 10 part numbers (e.g. S11000PX, S11000X, S1500PX, S1500X); ; rows: Square Drive Hydraulic Torque Wrench with Pro Series Swivel 11175 ft l / Square Drive Hydraulic Torque Wrench 11175 ft lbs Torque 1 1/2 in Squa / Square Drive Hydraulic Torque Wrench with Pro Series Swivel 1440 ft lb / Square Drive Hydraulic Torque Wrench 1440 ft lbs Torque 3/4 in Square  / Square Drive Hydraulic Torque Wrench with Pro Series Swivel 26150 ft l / Square Drive Hydraulic Torque Wrench 26150 ft lbs Torque 2 1/2 in Squa / Square Drive Hydraulic Torque Wrench with Pro Series Swivel 3225 ft lb / Square Drive Hydraulic Torque Wrench 3225 ft lbs Torque 1 in Square Dr || Enerpac W-Series Low-Profile Hexagon Torque Wrenches [IH-ENE-TW-W]:   Enerpac W-Series Low-Profile Hexagon Torque Wrenches. 6 models, each listed with its description and part number. | Brand Enerpac; Models 6 | 6 part numbers (e.g. W15000X, W2000X, W22000X, W35000X); ; rows: Low Profile Hydraulic Torque Wrench Drive Unit, 15000 ft. lbs Torque / Low Profile Hydraulic Torque Wrench Drive Unit, 2000 ft. lbs Torque / Low Profile Hydraulic Torque Wrench Drive Unit, 22000 ft. lbs Torque / Low Profile Hydraulic Torque Wrench Drive Unit, 35000 ft. lbs Torque / Low Profile Hydraulic Torque Wrench Drive Unit, 4000 ft. lbs Torque / Low Profile Hydraulic Torque Wrench Drive Unit, 8000 ft. lbs Torque",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "enerpac-dsx-aluminium-square-drive-hydraulic-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac DSX aluminium square drive hydraulic torque wrenches used for?",
+          "a": "Enerpac DSX wrenches are lightweight aluminium square-drive hydraulic torque wrenches for tightening and loosening large bolts, with five models from 1,411 to 24,057 ft-lbs. Each needs a 10,000 psi pump and twin hose; see the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac DSX part numbers?",
+          "a": "The number after DSX is the nominal size, and the rows give the real torque: DSX1500 is 1,411 ft-lbs and DSX3000 is 3,233 ft-lbs. DSX5000 is 5,635 ft-lbs, DSX11000 is 11,524 ft-lbs and DSX25000 is 24,057 ft-lbs."
+        },
+        {
+          "slot": "D",
+          "q": "Which square drive sizes do the Enerpac DSX wrenches have?",
+          "a": "The drives are 3/4 in (DSX1500), 1 in (DSX3000), 1 1/2 in (DSX5000 and DSX11000) and 2 1/2 in (DSX25000). Match the drive to your impact socket."
+        },
+        {
+          "slot": "E",
+          "q": "What torque range do the Enerpac DSX wrenches cover?",
+          "a": "They cover 1,411, 3,233, 5,635, 11,524 and 24,057 ft-lbs across the five models. Choose a wrench whose maximum torque is above the bolt torque with margin."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 5 part numbers, for example DSX11000, DSX1500 and DSX25000."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches?",
+          "a": "The Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches, check the torque against the list of part numbers such as DSX3000 and DSX5000."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches used?",
+          "a": "The Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "How does the aluminium DSX compare with the steel S-series wrench?",
+          "a": "The DSX is aluminium and runs from 1,411 to 24,057 ft-lbs, while the [S-series](/p/enerpac-s-series-square-drive-hydraulic-torque-wrenches) is square drive in 1,440 to 26,150 ft-lbs with an optional Pro Series swivel. Choose the DSX when weight matters."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac DSX Aluminium Square Drive Hydraulic Torque Wrenches and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-hmt-hexagon-hydraulic-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac HMT hexagon hydraulic torque wrenches used for?",
+          "a": "Enerpac HMT wrenches are hexagon-cassette hydraulic torque wrench drives for tightening bolts where a socket will not fit. Three models are listed, HMT1500, HMT3500 and HMT7500, at 1,541 to 7,562 ft-lbs; see the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac HMT part numbers?",
+          "a": "The number is the nominal size and the row gives the torque: HMT1500 is 1,541 ft-lbs, HMT3500 is 3,543 ft-lbs and HMT7500 is 7,562 ft-lbs. The HMT7500 is the drive unit that the [Enerpac low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches) list as compatible."
+        },
+        {
+          "slot": "D",
+          "q": "Which torque does each Enerpac HMT drive unit give?",
+          "a": "HMT1500 gives 1,541 ft-lbs, HMT3500 gives 3,543 ft-lbs and HMT7500 gives 7,562 ft-lbs. Choose the drive whose torque is above the bolt torque with margin."
+        },
+        {
+          "slot": "E",
+          "q": "What pump does an Enerpac HMT wrench need?",
+          "a": "The listing states each wrench needs a 10,000 psi pump and twin hose. Check that your pump and hose are rated for that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac HMT Hexagon Hydraulic Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac HMT Hexagon Hydraulic Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 3 part numbers, for example HMT1500, HMT3500 and HMT7500."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac HMT Hexagon Hydraulic Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac HMT Hexagon Hydraulic Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac HMT Hexagon Hydraulic Torque Wrenches?",
+          "a": "The Enerpac HMT Hexagon Hydraulic Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac HMT Hexagon Hydraulic Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac HMT Hexagon Hydraulic Torque Wrenches, check the torque against the list of part numbers such as HMT3500 and HMT7500."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac HMT Hexagon Hydraulic Torque Wrenches used?",
+          "a": "The Enerpac HMT Hexagon Hydraulic Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "How does the HMT compare with the RSL low-profile wrench?",
+          "a": "The HMT is a three-model hexagon drive from 1,541 to 7,562 ft-lbs, while the [RSL series](/p/enerpac-rsl-low-profile-hydraulic-torque-wrenches) has seven models from 1,408 to 28,002 ft-lbs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac HMT Hexagon Hydraulic Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac HMT Hexagon Hydraulic Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac HMT Hexagon Hydraulic Torque Wrenches in stock in Dubai?",
+          "a": "Yes. We keep Enerpac HMT Hexagon Hydraulic Torque Wrenches in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-hsq-square-drive-hydraulic-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac HSQ square drive hydraulic torque wrenches used for?",
+          "a": "Enerpac HSQ wrenches are square-drive hydraulic torque wrenches that take impact sockets, in three models: HSQ1500 (3/4 in), HSQ3500 (1 in) and HSQ7500 (1 1/2 in). See the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac HSQ part numbers?",
+          "a": "The number is the nominal size and the row gives the drive: HSQ1500 has a 3/4 in square drive, HSQ3500 has a 1 in square drive and HSQ7500 has a 1 1/2 in square drive. The HSQ sizes line up with the HMT1500, HMT3500 and HMT7500."
+        },
+        {
+          "slot": "E",
+          "q": "What pump does an Enerpac HSQ wrench need?",
+          "a": "Each wrench needs a 10,000 psi pump and twin hose, as the listing states. The rows do not list a torque figure, so use the matching drive unit size for the torque."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac HSQ Square Drive Hydraulic Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac HSQ Square Drive Hydraulic Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 3 part numbers, for example HSQ1500, HSQ3500 and HSQ7500."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac HSQ Square Drive Hydraulic Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac HSQ Square Drive Hydraulic Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac HSQ Square Drive Hydraulic Torque Wrenches?",
+          "a": "The Enerpac HSQ Square Drive Hydraulic Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac HSQ Square Drive Hydraulic Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac HSQ Square Drive Hydraulic Torque Wrenches, check the torque against the list of part numbers such as HSQ3500 and HSQ7500."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac HSQ Square Drive Hydraulic Torque Wrenches used?",
+          "a": "The Enerpac HSQ Square Drive Hydraulic Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "How does the HSQ compare with the RSQ square-drive wrench?",
+          "a": "The HSQ has three models, with 3/4, 1 and 1 1/2 in drives, while the [RSQ series](/p/enerpac-rsq-square-drive-torque-wrenches) has 14 part numbers with drives up to 2 1/2 in and listed torques from 1,408 to 28,002 ft-lbs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac HSQ Square Drive Hydraulic Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac HSQ Square Drive Hydraulic Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac HSQ Square Drive Hydraulic Torque Wrenches in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac HSQ Square Drive Hydraulic Torque Wrenches and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-low-profile-hydraulic-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac low profile hydraulic torque wrench cassettes and reducers?",
+          "a": "They are interchangeable hexagon cassettes and reducers for Enerpac low-profile torque wrenches, with 16 part numbers, made for tight clearance around the nut. Cassettes such as HLP7315 and W15402X give 7,562 and 15,330 ft-lb; see the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac W reducer part numbers?",
+          "a": "The reducer rows give the maximum size and what it reduces to: W15402R308 reduces a 104.775 mm cassette to 3 1/2 in, W4208R113 reduces a 63.5 mm cassette to 1 13/16 in, and W8308R300 reduces 3 1/2 in to 3 in. The first digits of the number are the wrench size."
+        },
+        {
+          "slot": "D",
+          "q": "Which cassette torques are listed?",
+          "a": "HLP7315 is a hexagon cassette rated 10,252 N-m (7,562 ft-lb) for the HMT7500, and W15402X is a cassette rated 20,785 N-m (15,330 ft-lb) for 4 1/8 in maximum nut size. The nose radius is 2.89 in in the specification."
+        },
+        {
+          "slot": "E",
+          "q": "Which drive unit does the HLP7315 cassette fit?",
+          "a": "The specification gives the compatible drive unit as HMT7500, so the HLP7315 cassette fits the [HMT7500 hexagon drive](/p/enerpac-hmt-hexagon-hydraulic-torque-wrenches). Quote your drive model before ordering other cassettes."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac Low Profile Hydraulic Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac Low Profile Hydraulic Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 16 part numbers, for example HLP7315, W15402R090M and W15402X."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac Low Profile Hydraulic Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac Low Profile Hydraulic Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac Low Profile Hydraulic Torque Wrenches?",
+          "a": "The Enerpac Low Profile Hydraulic Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the low profile cassettes. Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac Low Profile Hydraulic Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac Low Profile Hydraulic Torque Wrenches, check the torque against the list of part numbers such as W2206R202D and W15314R308D."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac Low Profile Hydraulic Torque Wrenches used?",
+          "a": "The Enerpac Low Profile Hydraulic Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between a cassette and a reducer?",
+          "a": "A cassette is the hexagon head that fits over the nut, while a reducer is a sleeve that reduces the hex opening to a smaller nut size, for example W15402R304 reduces to 3 1/4 in. Choose a reducer when one cassette must cover several nut sizes."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac Low Profile Hydraulic Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac Low Profile Hydraulic Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac Low Profile Hydraulic Torque Wrenches in stock in Dubai?",
+          "a": "Yes. We keep Enerpac Low Profile Hydraulic Torque Wrenches in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-ptw-pneumatic-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac PTW pneumatic torque wrenches used for?",
+          "a": "Enerpac PTW pneumatic torque wrenches tighten large bolts from shop air instead of a hydraulic pump, in four torque sizes of 1,000, 2,000, 3,000 and 6,000 ft-lbs. Eight part numbers are listed; see the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "What does the C in PTW1000C mean?",
+          "a": "In the rows, PTW1000C is the 1,000 ft-lbs wrench with an FRL included, against PTW1000 without it; the same applies to PTW2000C, PTW3000C and PTW6000C. FRL means a filter, regulator and lubricator."
+        },
+        {
+          "slot": "D",
+          "q": "What torque sizes do the Enerpac PTW wrenches come in?",
+          "a": "The models are 1,000, 2,000, 3,000 and 6,000 ft-lbs, each with and without the FRL unit, which makes eight part numbers. Choose a size above the bolt torque with margin."
+        },
+        {
+          "slot": "E",
+          "q": "Do the Enerpac PTW wrenches need a hydraulic pump?",
+          "a": "No, they are pneumatic, so they run from compressed air; the 10,000 psi pump and twin hose advice on the other Enerpac wrenches applies to the hydraulic models. The listing does not give an air pressure, so confirm your supply with us."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac PTW Pneumatic Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac PTW Pneumatic Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 8 part numbers, for example PTW1000, PTW1000C and PTW2000."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac PTW Pneumatic Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac PTW Pneumatic Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac PTW Pneumatic Torque Wrenches?",
+          "a": "The Enerpac PTW Pneumatic Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac PTW Pneumatic Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac PTW Pneumatic Torque Wrenches, check the torque against the list of part numbers such as PTW6000 and PTW6000C."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac PTW Pneumatic Torque Wrenches used?",
+          "a": "The Enerpac PTW Pneumatic Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose a PTW pneumatic wrench over a hydraulic wrench?",
+          "a": "Choose the PTW where compressed air is on hand and no hydraulic pump is wanted; torque tops out at 6,000 ft-lbs, while the [RSL series](/p/enerpac-rsl-low-profile-hydraulic-torque-wrenches) reaches 28,002 ft-lbs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac PTW Pneumatic Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac PTW Pneumatic Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac PTW Pneumatic Torque Wrenches in stock in Dubai?",
+          "a": "Yes. We keep Enerpac PTW Pneumatic Torque Wrenches in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-rsl-low-profile-hydraulic-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac RSL low-profile hydraulic torque wrenches used for?",
+          "a": "Enerpac RSL wrenches are low-profile hexagon hydraulic torque wrenches that fit where a socket will not. Seven models are listed from 1,408 to 28,002 ft-lbs; see the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac RSL part numbers?",
+          "a": "The number is the nominal size and the row gives the torque: RSL1500 is 1,408 ft-lbs, RSL3000 is 3,080 ft-lbs, RSL5000 is 5,303 ft-lbs, RSL8000 is 7,862 ft-lbs, RSL11000 is 11,154 ft-lbs, RSL19000 is 18,843 ft-lbs and RSL28000 is 28,002 ft-lbs."
+        },
+        {
+          "slot": "D",
+          "q": "What torque range do the Enerpac RSL wrenches cover?",
+          "a": "They cover 1,408 to 28,002 ft-lbs across seven models. Size the wrench on the bolt torque, then on the clearance around the nut."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac RSL Low-Profile Hydraulic Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac RSL Low-Profile Hydraulic Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 7 part numbers, for example RSL11000, RSL1500 and RSL19000."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac RSL Low-Profile Hydraulic Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac RSL Low-Profile Hydraulic Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac RSL Low-Profile Hydraulic Torque Wrenches?",
+          "a": "The Enerpac RSL Low-Profile Hydraulic Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac RSL Low-Profile Hydraulic Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac RSL Low-Profile Hydraulic Torque Wrenches, check the torque against the list of part numbers such as RSL5000 and RSL8000."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac RSL Low-Profile Hydraulic Torque Wrenches used?",
+          "a": "The Enerpac RSL Low-Profile Hydraulic Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "How does the RSL compare with the W-series low-profile wrench?",
+          "a": "The RSL spans 1,408 to 28,002 ft-lbs in seven models, while the [W-series](/p/enerpac-w-series-low-profile-hexagon-torque-wrenches) spans 2,000 to 35,000 ft-lbs in six. Pick on torque and nut clearance."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac RSL Low-Profile Hydraulic Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac RSL Low-Profile Hydraulic Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac RSL Low-Profile Hydraulic Torque Wrenches in stock in Dubai?",
+          "a": "Yes, we carry Enerpac RSL Low-Profile Hydraulic Torque Wrenches in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-rsq-square-drive-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac RSQ square drive torque wrenches used for?",
+          "a": "Enerpac RSQ wrenches are square-drive hydraulic torque wrenches for impact sockets, sold as a head or as a complete set. Fourteen part numbers cover 1,408 to 28,002 ft-lbs; see the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "What does the ST suffix mean on an Enerpac RSQ part number?",
+          "a": "In the rows, RSQ-1500 is the square drive head, and RSQ-1500ST is the hydraulic torque wrench set at 1,408 ft lbs with a 3/4 in drive. Every size has both a head and an ST set."
+        },
+        {
+          "slot": "D",
+          "q": "Which square drive sizes do the Enerpac RSQ wrenches have?",
+          "a": "The drives are 3/4 in (RSQ1500), 1 in (RSQ3000), 1 1/2 in (RSQ5000, RSQ8000, RSQ11000) and 2 1/2 in (RSQ19000, RSQ28000). Match the drive to the impact socket."
+        },
+        {
+          "slot": "E",
+          "q": "What torque do the Enerpac RSQ sets give?",
+          "a": "The ST sets are listed at 1,408, 3,080, 5,303, 7,862, 11,154, 18,843 and 28,002 ft lbs. Choose a set above the bolt torque with margin."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac RSQ Square Drive Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac RSQ Square Drive Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 14 part numbers, for example RSQ11000, RSQ11000ST and RSQ1500."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac RSQ Square Drive Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac RSQ Square Drive Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac RSQ Square Drive Torque Wrenches?",
+          "a": "The Enerpac RSQ Square Drive Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac RSQ Square Drive Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac RSQ Square Drive Torque Wrenches, check the torque against the list of part numbers such as RSQ8000 and RSQ8000ST."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac RSQ Square Drive Torque Wrenches used?",
+          "a": "The Enerpac RSQ Square Drive Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "How does the RSQ compare with the S-series wrench?",
+          "a": "The RSQ is sold as a head or a set from 1,408 to 28,002 ft-lbs, while the [S-series](/p/enerpac-s-series-square-drive-hydraulic-torque-wrenches) lists wrenches from 1,440 to 26,150 ft-lbs, with a Pro Series swivel option."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac RSQ Square Drive Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac RSQ Square Drive Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac RSQ Square Drive Torque Wrenches in stock in Dubai?",
+          "a": "Yes, we hold Enerpac RSQ Square Drive Torque Wrenches in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-s-series-square-drive-hydraulic-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac S-series square drive hydraulic torque wrenches used for?",
+          "a": "Enerpac S-series wrenches are square-drive hydraulic torque wrenches for impact sockets, in five sizes from 1,440 to 26,150 ft lbs, each with or without a Pro Series swivel. Ten part numbers are listed; see the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "What does the PX suffix mean on an Enerpac S-series part number?",
+          "a": "In the rows, S1500X is the wrench and S1500PX is the same wrench with a Pro Series swivel; the same pairing holds for S3000, S6000, S11000 and S25000. The number is the nominal size."
+        },
+        {
+          "slot": "D",
+          "q": "What torque and drive does each Enerpac S-series wrench have?",
+          "a": "S1500 gives 1,440 ft lbs with a 3/4 in drive, S3000 gives 3,225 ft lbs with 1 in, S6000 gives 6,150 ft lbs and S11000 gives 11,175 ft lbs with 1 1/2 in, and S25000 gives 26,150 ft lbs with 2 1/2 in."
+        },
+        {
+          "slot": "E",
+          "q": "What does the Pro Series swivel add to an Enerpac S-series wrench?",
+          "a": "The swivel is the hose connection that lets the wrench be turned without twisting the hoses; the PX versions list it as a Pro Series swivel. Each wrench needs a 10,000 psi pump and twin hose."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac S-Series Square Drive Hydraulic Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac S-Series Square Drive Hydraulic Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 10 part numbers, for example S11000PX, S11000X and S1500PX."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac S-Series Square Drive Hydraulic Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac S-Series Square Drive Hydraulic Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac S-Series Square Drive Hydraulic Torque Wrenches?",
+          "a": "The Enerpac S-Series Square Drive Hydraulic Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac S-Series Square Drive Hydraulic Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac S-Series Square Drive Hydraulic Torque Wrenches, check the torque against the list of part numbers such as S6000PX and S6000X."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac S-Series Square Drive Hydraulic Torque Wrenches used?",
+          "a": "The Enerpac S-Series Square Drive Hydraulic Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "How does the S-series compare with the DSX aluminium wrench?",
+          "a": "The S-series covers 1,440 to 26,150 ft lbs, while the [DSX](/p/enerpac-dsx-aluminium-square-drive-hydraulic-torque-wrenches) is aluminium and covers 1,411 to 24,057 ft-lbs. Choose the DSX for lighter weight."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac S-Series Square Drive Hydraulic Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac S-Series Square Drive Hydraulic Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac S-Series Square Drive Hydraulic Torque Wrenches in stock in Dubai?",
+          "a": "Yes, we carry Enerpac S-Series Square Drive Hydraulic Torque Wrenches in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-w-series-low-profile-hexagon-torque-wrenches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac W-series low-profile hexagon torque wrenches used for?",
+          "a": "Enerpac W-series wrenches are low-profile hexagon hydraulic torque wrench drive units for tight clearance, in six sizes from 2,000 to 35,000 ft lbs. See the [hydraulic torque wrenches shelf](/c/hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac W-series part numbers?",
+          "a": "The number is the torque in ft lbs: W2000X is 2,000, W4000X is 4,000, W8000X is 8,000, W15000X is 15,000, W22000X is 22,000 and W35000X is 35,000 ft lbs. The X marks the drive unit."
+        },
+        {
+          "slot": "D",
+          "q": "What torque range do the Enerpac W-series wrenches cover?",
+          "a": "They cover 2,000 to 35,000 ft lbs in six sizes. Choose a drive above the bolt torque with margin, and then the cassette for the nut size."
+        },
+        {
+          "slot": "E",
+          "q": "What do I need to run an Enerpac W-series wrench?",
+          "a": "Each wrench needs a 10,000 psi pump and twin hose, as the listing states. Interchangeable cassettes and reducers are on the [low profile cassettes page](/p/enerpac-low-profile-hydraulic-torque-wrenches)."
+        },
+        {
+          "slot": "F",
+          "q": "What pump and hose do the Enerpac W-Series Low-Profile Hexagon Torque Wrenches need?",
+          "a": "Hydraulic torque wrenches such as the Enerpac W-Series Low-Profile Hexagon Torque Wrenches need a 10,000 psi pump and twin hose, so the pump, hose and couplers must all be rated for that pressure. The listing has 6 part numbers, for example W15000X, W2000X and W22000X."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration or test documents for the Enerpac W-Series Low-Profile Hexagon Torque Wrenches?",
+          "a": "No calibration certificate or approval is listed for the Enerpac W-Series Low-Profile Hexagon Torque Wrenches. If your job needs a calibration or test report, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories go with the Enerpac W-Series Low-Profile Hexagon Torque Wrenches?",
+          "a": "The Enerpac W-Series Low-Profile Hexagon Torque Wrenches work with a 10,000 psi pump, twin hose, and the sockets or cassettes for your nut size; see the [Enerpac pump range](/c/hydraulic-torque-wrenches) and the [low profile cassettes](/p/enerpac-low-profile-hydraulic-torque-wrenches). Quote the model and nut size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac W-Series Low-Profile Hexagon Torque Wrenches for a bolt?",
+          "a": "Size a torque wrench on the bolt torque first, then on the clearance around the nut: square-drive wrenches take impact sockets, and low-profile hexagon wrenches fit where a socket will not. For the Enerpac W-Series Low-Profile Hexagon Torque Wrenches, check the torque against the list of part numbers such as W4000X and W8000X."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac W-Series Low-Profile Hexagon Torque Wrenches used?",
+          "a": "The Enerpac W-Series Low-Profile Hexagon Torque Wrenches are used on flanged joints, heavy machinery and structural bolting where manual torque is not practical. Browse the [hydraulic torque wrenches](/c/hydraulic-torque-wrenches) for other wrench types."
+        },
+        {
+          "slot": "K",
+          "q": "How does the W-series compare with the RSL wrench?",
+          "a": "The W-series reaches 35,000 ft lbs in six sizes, while the [RSL](/p/enerpac-rsl-low-profile-hydraulic-torque-wrenches) tops out at 28,002 ft-lbs in seven. Choose the W-series for the highest torque."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac W-Series Low-Profile Hexagon Torque Wrenches be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac W-Series Low-Profile Hexagon Torque Wrenches from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing carries no country of origin, so ask us for the maker's origin if your documents need it."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac W-Series Low-Profile Hexagon Torque Wrenches in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac W-Series Low-Profile Hexagon Torque Wrenches and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

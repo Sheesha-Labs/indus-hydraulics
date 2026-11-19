@@ -1,0 +1,779 @@
+{
+  "family": "air-water-hoses-01",
+  "extraFacts": [
+    {
+      "fact": "ISO 2398 is the international specification for textile-reinforced rubber hoses for compressed air.",
+      "source": "ISO 2398 (Rubber hoses and hose assemblies, textile-reinforced, for compressed air - Specification), iso.org catalogue"
+    },
+    {
+      "fact": "Sibling Indus air/water hoses referred to in comparisons: A101HP black, 1/4\", 5/16\", 3/8\", 1/2\", 3/4\" and 1\", 20 bar; A102HP yellow, 1/2\", 3/4\", 1\"; A103HP blue and A105HP green multi-utility, 3/4\" and 1\", 20 bar; A190 and A190Y mandrel-built, 1/2\" to 3\", 20 bar; A101AS-T3 anti-static, 1/4\" to 1\", 20 bar; A116EU100, 2\" to 4\", 40 bar; push-lock 1/4\" to 3/4\" 300 psi; red EPDM 1/4\" to 2\" 150 psi.",
+      "source": "Indus Hydraulics product listings (specs and size tables) for this family, facts dump 2026-11-19"
+    },
+    {
+      "fact": "1 bar = 14.5038 psi, so 150 psi is about 10 bar, 300 psi about 21 bar and 4,000 psi about 276 bar.",
+      "source": "Unit conversion"
+    }
+  ],
+  "products": [
+    {
+      "slug": "anti-static-air-water-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A101AS-T3 anti-static air/water hose used for?",
+          "a": "The Indus A101AS-T3 anti-static air/water hose is a textile-reinforced rubber hose for compressed air and water. Application: Widely used in offshore oil and gas industries where a spark free environment is crucial. It is listed in 5 bore sizes from 1/4\" to 1\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A101AS-T3 anti-static air/water hose come in?",
+          "a": "The Indus A101AS-T3 is listed in 1/4\", 3/8\", 1/2\", 3/4\" and 1\" bore (6, 10, 13, 19 and 25 mm), with outside diameters of 14 to 36 mm. Part numbers run IH-IH-A101AS-T3-006 to IH-IH-A101AS-T3-025. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A101AS-T3 air and water hose?",
+          "a": "The Indus A101AS-T3 is rated 20 bar maximum working pressure at every listed bore, with a minimum burst of 60 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A101AS-T3 hose work in?",
+          "a": "The Indus A101AS-T3 operates from -30°C to +80°C intermittent use up to 100°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A101AS-T3 hose?",
+          "a": "The Indus A101AS-T3 has a black extruded anti-static, oil mist resistant EPDM tube, high tensile strength textile plies and a black smooth extruded, anti-static, abrasion, oil mist, ozone and weather resistant EPDM cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A101AS-T3 hose?",
+          "a": "The Indus A101AS-T3 minimum bend radius is 55 mm on the 1/4\" (6 mm) bore, rising to 150 mm on the 1\" (25 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A101AS-T3 hose per metre?",
+          "a": "The Indus A101AS-T3 weighs 0.21 kg per metre on the 1/4\" (6 mm) bore and 0.7 kg per metre on the 1\" (25 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A101AS-T3 hose along its length?",
+          "a": "The Indus A101AS-T3 is printed \"INDUS A101AS T3 AIR WATER 20 BAR 3:1 BS2878\". The layline gives the part code, medium, working pressure and 3:1 safety factor. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings and fittings suit A101AS-T3 air/water hose?",
+          "a": "The A101AS-T3 takes barbed shank fittings or universal air couplings held with clamps or bands, matched to the outside diameter (14 to 36 mm). See [universal air couplings](/c/universal-air-couplings) and [shank couplings](/c/shank-couplings), and fit a whip restraint on air lines."
+        },
+        {
+          "slot": "K",
+          "q": "A101AS-T3 anti-static hose or A101HP black air/water hose: what is the difference?",
+          "a": "Both are 20 bar textile-reinforced air/water hoses, but the A101AS-T3 has an anti-static EPDM tube and cover for spark-free areas and runs from -30°C to +80°C, while the [A101HP black hose](/p/black-air-water-hose-20-bar) is EPDM/SBR over an NR/SBR tube and runs from -20°C to +80°C. Choose A101AS-T3 where static must be controlled."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A101AS-T3 air hose be installed safely?",
+          "a": "Fit the Indus A101AS-T3 with couplings rated for 20 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A101AS-T3 anti-static air/water hose in Dubai?",
+          "a": "Yes. The Indus A101AS-T3 anti-static air/water hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "black-air-water-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A101HP black air/water hose used for?",
+          "a": "The Indus A101HP black air/water hose is a textile-reinforced rubber hose for compressed air and water. Application: Used in various air and water applications in agriculture, construction, plant & civil engineering. It is listed in 6 bore sizes from 1/4\" to 1\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A101HP black air/water hose come in?",
+          "a": "The Indus A101HP is listed in 1/4\", 5/16\", 3/8\", 1/2\", 3/4\" and 1\" bore (6, 8, 10, 13, 19 and 25 mm), with outside diameters of 13 to 36 mm. Part numbers run IH-IH-A101HP-006 to IH-IH-A101HP-025. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A101HP air and water hose?",
+          "a": "The Indus A101HP is rated 20 bar maximum working pressure at every listed bore, with a minimum burst of 60 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A101HP hose work in?",
+          "a": "The Indus A101HP operates from -20°C to +80°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A101HP hose?",
+          "a": "The Indus A101HP has a black extruded oil mist resistant NR/SBR tube, high tensile strength textile plies and a black smooth extruded, abrasion, ozone and weather resistant EPDM/SBR cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A101HP hose?",
+          "a": "The Indus A101HP minimum bend radius is 60 mm on the 1/4\" (6 mm) bore, rising to 250 mm on the 1\" (25 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A101HP hose per metre?",
+          "a": "The Indus A101HP weighs 0.18 kg per metre on the 1/4\" (6 mm) bore and 0.67 kg per metre on the 1\" (25 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A101HP hose along its length?",
+          "a": "The Indus A101HP is printed \"INDUS A101HP AIR/WATER BS5118/2 & ISO2398 20 BAR SF 3:1\". The layline gives the part code, medium, working pressure and 3:1 safety factor. The ISO 2398 reference in the printing is the international specification for textile-reinforced compressed-air hose. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings and fittings suit A101HP air/water hose?",
+          "a": "The A101HP takes barbed shank fittings or universal air couplings held with clamps or bands, matched to the outside diameter (13 to 36 mm). See [universal air couplings](/c/universal-air-couplings) and [shank couplings](/c/shank-couplings), and fit a whip restraint on air lines."
+        },
+        {
+          "slot": "K",
+          "q": "A101HP black or A102HP yellow air/water hose: how do they differ?",
+          "a": "The A101HP black hose is listed from 1/4\" to 1\" in six bores, while the [A102HP yellow hose](/p/yellow-air-water-hose-20-bar) comes in three, 1/2\", 3/4\" and 1\". Both are 20 bar with an EPDM/SBR cover and the same -20°C to +80°C range; yellow is chosen for visibility and for separating air lines from other hoses."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A101HP air hose be installed safely?",
+          "a": "Fit the Indus A101HP with couplings rated for 20 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A101HP black air/water hose in Dubai?",
+          "a": "Yes. We keep the Indus A101HP black air/water hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "yellow-air-water-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A102HP yellow air/water hose used for?",
+          "a": "The Indus A102HP yellow air/water hose is a textile-reinforced rubber hose for compressed air and water. Application: Used in various air and water applications in agriculture, construction, plant & civil engineering. It is listed in 3 bore sizes from 1/2\" to 1\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A102HP yellow air/water hose come in?",
+          "a": "The Indus A102HP is listed in 1/2\", 3/4\" and 1\" bore (13, 19 and 25 mm), with outside diameters of 21 to 36 mm. Part numbers run IH-IH-A102HP-013 to IH-IH-A102HP-025. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A102HP air and water hose?",
+          "a": "The Indus A102HP is rated 20 bar maximum working pressure at every listed bore, with a minimum burst of 60 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A102HP hose work in?",
+          "a": "The Indus A102HP operates from -20°C to +80°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A102HP hose?",
+          "a": "The Indus A102HP has a black extruded oil mist resistant NR/SBR tube, high tensile strength textile plies and a yellow smooth extruded, abrasion, ozone and weather resistant EPDM/SBR cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A102HP hose?",
+          "a": "The Indus A102HP minimum bend radius is 130 mm on the 1/2\" (13 mm) bore, rising to 250 mm on the 1\" (25 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A102HP hose per metre?",
+          "a": "The Indus A102HP weighs 0.35 kg per metre on the 1/2\" (13 mm) bore and 0.67 kg per metre on the 1\" (25 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A102HP hose along its length?",
+          "a": "The Indus A102HP is printed \"INDUS A102HP AIR/WATER BS5118/2 & ISO2398 20 BAR SF 3:1\". The layline gives the part code, medium, working pressure and 3:1 safety factor. The ISO 2398 reference in the printing is the international specification for textile-reinforced compressed-air hose. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings and fittings suit A102HP air/water hose?",
+          "a": "The A102HP takes barbed shank fittings or universal air couplings held with clamps or bands, matched to the outside diameter (21 to 36 mm). See [universal air couplings](/c/universal-air-couplings) and [shank couplings](/c/shank-couplings), and fit a whip restraint on air lines."
+        },
+        {
+          "slot": "K",
+          "q": "A102HP yellow or A101HP black air/water hose: which one should I buy?",
+          "a": "Both are 20 bar EPDM/SBR air/water hoses from -20°C to +80°C; the A102HP yellow hose is listed in 1/2\", 3/4\" and 1\" only, while the [A101HP black hose](/p/black-air-water-hose-20-bar) also has 1/4\", 5/16\" and 3/8\". Pick on bore and the colour your site uses to mark air lines."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A102HP air hose be installed safely?",
+          "a": "Fit the Indus A102HP with couplings rated for 20 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A102HP yellow air/water hose in Dubai?",
+          "a": "Yes. The Indus A102HP yellow air/water hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "blue-multi-utility-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A103HP blue multi-utility hose used for?",
+          "a": "The Indus A103HP blue multi-utility hose is a textile-reinforced rubber hose for compressed air and water. Application: Multi-purpose hose used in steel mills, shipyard, foundries, automotive and construction industries. It is listed in 2 bore sizes from 3/4\" to 1\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A103HP blue multi-utility hose come in?",
+          "a": "The Indus A103HP is listed in 3/4\" and 1\" bore (19 and 25 mm), with outside diameters of 29 to 36 mm. Part numbers run IH-IH-A103HP-019 to IH-IH-A103HP-025. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A103HP air and water hose?",
+          "a": "The Indus A103HP is rated 20 bar maximum working pressure at every listed bore, with a minimum burst of 60 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A103HP hose work in?",
+          "a": "The Indus A103HP operates from -20°C to +90°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A103HP hose?",
+          "a": "The Indus A103HP has a black extruded SBR/NR oil mist resistant tube, high tensile strength textile plies and a blue smooth extruded, oil mist, abrasion, ozone and weather resistant EPDM/SBR cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A103HP hose?",
+          "a": "The Indus A103HP minimum bend radius is 190 mm on the 3/4\" (19 mm) bore, rising to 250 mm on the 1\" (25 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A103HP hose per metre?",
+          "a": "The Indus A103HP weighs 0.65 kg per metre on the 3/4\" (19 mm) bore and 0.88 kg per metre on the 1\" (25 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A103HP hose along its length?",
+          "a": "The Indus A103HP is printed \"INDUS A103HP Multi Utility 20 BAR SF 3:1\". The layline gives the part code, medium, working pressure and 3:1 safety factor. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings and fittings suit A103HP air/water hose?",
+          "a": "The A103HP takes barbed shank fittings or universal air couplings held with clamps or bands, matched to the outside diameter (29 to 36 mm). See [universal air couplings](/c/universal-air-couplings) and [shank couplings](/c/shank-couplings), and fit a whip restraint on air lines."
+        },
+        {
+          "slot": "K",
+          "q": "A103HP blue or A105HP green multi-utility hose: what is the difference?",
+          "a": "Only the cover colour. Both hoses are 20 bar multi-utility hoses in 3/4\" and 1\" with an EPDM/SBR cover and the same -20°C to +90°C range; the [A105HP green hose](/p/green-multi-utility-hose-20-bar) gives a second colour so air, water and other lines can be told apart on site."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A103HP air hose be installed safely?",
+          "a": "Fit the Indus A103HP with couplings rated for 20 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A103HP blue multi-utility hose in Dubai?",
+          "a": "Yes. The Indus A103HP blue multi-utility hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "green-multi-utility-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A105HP green multi-utility hose used for?",
+          "a": "The Indus A105HP green multi-utility hose is a textile-reinforced rubber hose for compressed air and water. Application: Multi-purpose hose used in steel mills, shipyard, foundries, automotive and construction industries. It is listed in 2 bore sizes from 3/4\" to 1\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A105HP green multi-utility hose come in?",
+          "a": "The Indus A105HP is listed in 3/4\" and 1\" bore (19 and 25 mm), with outside diameters of 29 to 36 mm. Part numbers run IH-IH-A105HP-019 to IH-IH-A105HP-025. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A105HP air and water hose?",
+          "a": "The Indus A105HP is rated 20 bar maximum working pressure at every listed bore, with a minimum burst of 60 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A105HP hose work in?",
+          "a": "The Indus A105HP operates from -20°C to +90°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A105HP hose?",
+          "a": "The Indus A105HP has a black extruded SBR/NR oil mist resistant tube, high tensile strength textile plies and a green smooth extruded, oil mist, abrasion, ozone and weather resistant EPDM/SBR cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A105HP hose?",
+          "a": "The Indus A105HP minimum bend radius is 190 mm on the 3/4\" (19 mm) bore, rising to 250 mm on the 1\" (25 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A105HP hose per metre?",
+          "a": "The Indus A105HP weighs 0.65 kg per metre on the 3/4\" (19 mm) bore and 0.88 kg per metre on the 1\" (25 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A105HP hose along its length?",
+          "a": "The Indus A105HP is printed \"INDUS A105HP Multi Utility 20 BAR SF 3:1\". The layline gives the part code, medium, working pressure and 3:1 safety factor. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings and fittings suit A105HP air/water hose?",
+          "a": "The A105HP takes barbed shank fittings or universal air couplings held with clamps or bands, matched to the outside diameter (29 to 36 mm). See [universal air couplings](/c/universal-air-couplings) and [shank couplings](/c/shank-couplings), and fit a whip restraint on air lines."
+        },
+        {
+          "slot": "K",
+          "q": "A105HP green or A103HP blue multi-utility hose: which should I order?",
+          "a": "Order on the colour your lines are coded in. The A105HP green hose and the [A103HP blue hose](/p/blue-multi-utility-hose-20-bar) share the same rating, 20 bar working pressure, 3/4\" and 1\" bores and -20°C to +90°C range, and differ in cover colour."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A105HP air hose be installed safely?",
+          "a": "Fit the Indus A105HP with couplings rated for 20 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A105HP green multi-utility hose in Dubai?",
+          "a": "Yes. The Indus A105HP green multi-utility hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "black-mandrel-built-air-water-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A190 black mandrel-built air/water hose used for?",
+          "a": "The Indus A190 black mandrel-built air/water hose is a textile-reinforced rubber hose for compressed air and water. Application: Robust mandrel built hose for arduous applications in mining and construction. It is listed in 7 bore sizes from 1/2\" to 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A190 black mandrel-built air/water hose come in?",
+          "a": "The Indus A190 is listed in 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\" and 3\" bore (13, 19, 25, 32, 38, 51 and 76 mm), with outside diameters of 23 to 92 mm. Part numbers run IH-IH-A190-013 to IH-IH-A190-076. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A190 air and water hose?",
+          "a": "The Indus A190 is rated 20 bar maximum working pressure at every listed bore, with a minimum burst of 60 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A190 hose work in?",
+          "a": "The Indus A190 operates from -20°C to +70°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A190 hose?",
+          "a": "The Indus A190 has a black SBR oil mist resistant tube, high tensile strength textile plies and a black mandrel wrap, abrasion, ozone and weather resistant SBR cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A190 hose?",
+          "a": "The Indus A190 minimum bend radius is 91 mm on the 1/2\" (13 mm) bore, rising to 532 mm on the 3\" (76 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A190 hose per metre?",
+          "a": "The Indus A190 weighs 0.4 kg per metre on the 1/2\" (13 mm) bore and 3.2 kg per metre on the 3\" (76 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A190 hose along its length?",
+          "a": "The Indus A190 is printed \"INDUS LOGO, A190 AIR WATER EN 2398 2008 - 20 BAR - SF 3:1\". The layline gives the part code, medium, working pressure and 3:1 safety factor. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings go on A190 mandrel-built hose?",
+          "a": "The A190 takes hose shank couplings held with clamps or bands, sized to the outside diameter (23 mm on 1/2\" up to 92 mm on 3\"). [Shank couplings](/c/shank-couplings) and [universal air couplings](/c/universal-air-couplings) are the usual ends; tell us the bore and the coupling style."
+        },
+        {
+          "slot": "K",
+          "q": "A190 mandrel-built hose or A101HP air/water hose: which is for heavy duty?",
+          "a": "The A190 is the heavy-duty choice: mandrel-built with an SBR cover, listed to 3\" (76 mm) against 1\" for the [A101HP black hose](/p/black-air-water-hose-20-bar), at the same 20 bar. The A101HP is lighter and runs to +80°C; the A190 suits mining and construction at -20°C to +70°C."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A190 air hose be installed safely?",
+          "a": "Fit the Indus A190 with couplings rated for 20 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A190 black mandrel-built air/water hose in Dubai?",
+          "a": "Yes. The Indus A190 black mandrel-built air/water hose sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "yellow-mandrel-built-air-water-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A190Y yellow mandrel-built air/water hose used for?",
+          "a": "The Indus A190Y yellow mandrel-built air/water hose is a textile-reinforced rubber hose for compressed air and water. Application: Robust mandrel built hose for arduous applications in mining and construction. It is listed in 7 bore sizes from 1/2\" to 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A190Y yellow mandrel-built air/water hose come in?",
+          "a": "The Indus A190Y is listed in 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\" and 3\" bore (13, 19, 25, 32, 38, 51 and 76 mm), with outside diameters of 23 to 92 mm. Part numbers run IH-IH-A190Y-013 to IH-IH-A190Y-076. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A190Y air and water hose?",
+          "a": "The Indus A190Y is rated 20 bar maximum working pressure at every listed bore, with a minimum burst of 60 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A190Y hose work in?",
+          "a": "The Indus A190Y operates from -20°C to +70°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A190Y hose?",
+          "a": "The Indus A190Y has a black SBR oil mist resistant tube, high tensile strength textile plies and a yellow mandrel wrap, abrasion, ozone and weather resistant SBR cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A190Y hose?",
+          "a": "The Indus A190Y minimum bend radius is 91 mm on the 1/2\" (13 mm) bore, rising to 532 mm on the 3\" (76 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A190Y hose per metre?",
+          "a": "The Indus A190Y weighs 0.4 kg per metre on the 1/2\" (13 mm) bore and 3.2 kg per metre on the 3\" (76 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A190Y hose along its length?",
+          "a": "The Indus A190Y is printed \"INDUS LOGO, A190 AIR WATER EN 2398 2008 - 20 BAR - SF 3:1\". The layline gives the part code, medium, working pressure and 3:1 safety factor. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings go on A190Y mandrel-built hose?",
+          "a": "The A190Y takes hose shank couplings held with clamps or bands, sized to the outside diameter (23 mm on 1/2\" up to 92 mm on 3\"). [Shank couplings](/c/shank-couplings) and [universal air couplings](/c/universal-air-couplings) are the usual ends; tell us the bore and the coupling style."
+        },
+        {
+          "slot": "K",
+          "q": "A190Y yellow or A190 black mandrel-built hose: what is the difference?",
+          "a": "Only the cover colour. The A190Y yellow hose and the [A190 black hose](/p/black-mandrel-built-air-water-hose-20-bar) are both 20 bar mandrel-built SBR hoses in 1/2\" to 3\", -20°C to +70°C; yellow makes the hose easier to see on a busy site."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A190Y air hose be installed safely?",
+          "a": "Fit the Indus A190Y with couplings rated for 20 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A190Y yellow mandrel-built air/water hose in Dubai?",
+          "a": "Yes, the Indus A190Y yellow mandrel-built air/water hose is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "high-temperature-air-hose-40-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus A116EU100 high-temperature air hose used for?",
+          "a": "The Indus A116EU100 high-temperature air hose is a textile-reinforced rubber hose for compressed air and water. Application: Robust heavy duty high pressure air hose for quarry, mining and construction industries. It is listed in 3 bore sizes from 2\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Indus A116EU100 high-temperature air hose come in?",
+          "a": "The Indus A116EU100 is listed in 2\", 3\" and 4\" bore (51, 76 and 102 mm), with outside diameters of 65 to 121 mm. Part numbers run IH-IH-A116EU100-051 to IH-IH-A116EU100-102. Give the bore and the cut length when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Indus A116EU100 air and water hose?",
+          "a": "The Indus A116EU100 is rated 40 bar maximum working pressure at every listed bore, with a minimum burst of 120 bar, a 3:1 safety factor. Couplings and clamps must carry the same rating; see [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range can Indus A116EU100 hose work in?",
+          "a": "The Indus A116EU100 operates from -30°C to +100°C. Choose a hose for the temperature as well as the pressure; [compressed air hose selection](/blog/compressed-air-hose-selection) covers oil mist, temperature and when a higher-pressure hose is needed."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Indus A116EU100 hose?",
+          "a": "The Indus A116EU100 has a black SBR oil mist resistant tube, high tensile strength steel wire plies and a yellow pin pricked, mandrel wrap, ozone, oil mist and weather resistant EPDM cover. The materials resist oil mist, ozone and weather; they are not intended for hot oil or solvents."
+        },
+        {
+          "slot": "D",
+          "q": "What is the minimum bend radius of Indus A116EU100 hose?",
+          "a": "The Indus A116EU100 minimum bend radius is 510 mm on the 2\" (51 mm) bore, rising to 1020 mm on the 4\" (102 mm) bore. Keep bends clear of the coupling and never kink the hose, which closes the bore."
+        },
+        {
+          "slot": "D",
+          "q": "How heavy is Indus A116EU100 hose per metre?",
+          "a": "The Indus A116EU100 weighs 1.97 kg per metre on the 2\" (51 mm) bore and 5.65 kg per metre on the 4\" (102 mm) bore, empty. Allow for the water inside on long runs when you plan supports and handling."
+        },
+        {
+          "slot": "G",
+          "q": "What is printed on Indus A116EU100 hose along its length?",
+          "a": "The Indus A116EU100 is printed \"INDUS LOGO A116EU100 AIR 40 BAR S:F 3:1\". The layline gives the part code, medium, working pressure and 3:1 safety factor. [Reading an industrial hose layline](/blog/reading-an-industrial-hose-layline) explains each part."
+        },
+        {
+          "slot": "H",
+          "q": "What couplings suit A116EU100 2\" to 4\" high-pressure air hose?",
+          "a": "Use couplings and clamps rated for 40 bar and sized to the hose outside diameter, 65 mm on the 2\" bore up to 121 mm on the 4\". [Universal air couplings](/c/universal-air-couplings) such as Chicago and claw types are common on air lines, and the safety clip should always be fitted."
+        },
+        {
+          "slot": "K",
+          "q": "A116EU100 40 bar air hose or A190 20 bar mandrel-built hose: which to use?",
+          "a": "Use the A116EU100 where air pressure goes above 20 bar, up to 40 bar, or where temperature reaches +100°C; it is steel-wire reinforced in 2\" to 4\". The [A190 mandrel-built hose](/p/black-mandrel-built-air-water-hose-20-bar) is textile-reinforced, 20 bar and cheaper where that is enough."
+        },
+        {
+          "slot": "I",
+          "q": "How should Indus A116EU100 air hose be installed safely?",
+          "a": "Fit the Indus A116EU100 with couplings rated for 40 bar and add a whip restraint or safety clip at each coupling so a failed connection cannot whip. [Whip restraints and burst protection](/blog/hose-whip-restraint-and-burst-protection) explains what actually stops a failed hose hurting someone."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Indus A116EU100 high-temperature air hose in Dubai?",
+          "a": "Yes, we stock the Indus A116EU100 high-temperature air hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "epdm-air-and-water-hose-red-150-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Indus red EPDM air and water hose rated 150 psi used for?",
+          "a": "The Indus red EPDM hose is a general-purpose rubber hose for compressed air and water. It has a red EPDM tube and cover over a textile spiral reinforcement, and the working pressure published for it is 150 psi, about 10 bar."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus red EPDM air and water hose come in?",
+          "a": "The Indus red EPDM hose is listed in ten bores from 1/4\" to 2\": 1/4\", 5/16\", 3/8\", 1/2\", 5/8\", 3/4\", 1\", 1-1/4\", 1-1/2\" and 2\". Part numbers run IH-HS-AWR-04 to IH-HS-AWR-32, and each is a 50 ft pre-cut length."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-HS-AWR-12 for the red EPDM hose?",
+          "a": "In IH-HS-AWR-12 the last two digits give the bore in sixteenths of an inch, so -12 is 3/4\" and -32 is 2\". Every part number in the table is one bore in one form, a 50 ft pre-cut length, which is how it appears in the size table."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the red EPDM air and water hose?",
+          "a": "The maximum working pressure published for the red EPDM hose is 150 psi, about 10 bar. It is one figure for the whole range; couplings and clamps must carry the same rating, and [industrial hose safety factors](/blog/industrial-hose-safety-factors) explains why a margin is kept above it."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can red EPDM air and water hose take?",
+          "a": "The maker gives two different temperature ranges for this hose, so we do not quote a single limit here. Tell us the service temperature on the enquiry and we confirm it against the maker's figures before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is red EPDM air and water hose made of?",
+          "a": "The tube and cover are red EPDM synthetic rubber and the reinforcement is textile spirals. EPDM resists weather, ozone and water well; it is not for petroleum oils, so for oil service look at [oil and chemical purpose hoses](/c/oil-chemical-purpose-hoses)."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go on the Indus red EPDM air and water hose?",
+          "a": "The red EPDM hose takes barbed shank fittings or universal air couplings held with a clamp, sized to the bore. See [universal air couplings](/c/universal-air-couplings) and [hose clamps, sleeves and ferrules](/c/hose-clamps-sleeves-ferrules) for the ends and clamps."
+        },
+        {
+          "slot": "K",
+          "q": "Red EPDM hose or Indus A101HP black air/water hose: which for compressed air?",
+          "a": "The red EPDM hose is rated 150 psi and comes in ten bores to 2\", while the [A101HP black air/water hose](/p/black-air-water-hose-20-bar) is rated 20 bar and has an oil-mist-resistant tube, but only to 1\". Choose by bore, pressure and whether oil mist is present in the air."
+        },
+        {
+          "slot": "I",
+          "q": "How should red EPDM air hose be installed and protected?",
+          "a": "Keep the hose clear of sharp edges, avoid kinks and tight bends, and fit couplings rated for 150 psi with a safety clip or whip restraint on air lines. [Compressed air hose selection](/blog/compressed-air-hose-selection) explains where oil mist or heat means a different hose."
+        },
+        {
+          "slot": "L",
+          "q": "Can Indus ship red EPDM air and water hose outside the UAE?",
+          "a": "Yes. We ship the red EPDM hose from Dubai, UAE, to the GCC, Africa, Asia and beyond. [GCC import documents for hose](/blog/gcc-import-documents-for-hose) lists what Qatar, Oman, Kuwait and Bahrain ask for; give us the destination so the papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the red EPDM 150 psi air and water hose in stock in Dubai?",
+          "a": "Yes, we stock the red EPDM air and water hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "low-density-polyethylene-tubing-translucent",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is translucent low-density polyethylene tubing used for?",
+          "a": "Indus translucent low-density polyethylene tubing is a plain plastic tube for low-pressure air, water and fluid lines. It is listed in 1/4\", 3/8\" and 1/2\" sizes, and the translucent wall lets you see fluid or contamination inside."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Indus LDPE tubing are available and how is it supplied?",
+          "a": "The tubing is listed in 1/4\", 3/8\" and 1/2\" as IH-HS-LDPE-04-N, IH-HS-LDPE-06-N and IH-HS-LDPE-08-N. Each part number is a 50 ft pre-cut length, and the minimum order is 300 ft."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-HS-LDPE-06-N?",
+          "a": "In IH-HS-LDPE-06-N, LDPE is the material, 06 is the size code, equal to 3/8\", and the N suffix is the natural translucent finish. The other codes are 04 for 1/4\" and 08 for 1/2\", each sold as a 50 ft cut length."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is Indus LDPE tubing rated for?",
+          "a": "The maker publishes no pressure rating for this tubing, so we do not give one. Tell us the working pressure, the fluid and the temperature and we confirm suitability before quoting; do not use it on compressed air at pressure without that confirmation."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does LDPE tubing have?",
+          "a": "The maker publishes no temperature rating for this tubing either. Polyethylene softens as it warms, so give us the service temperature on the enquiry and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is Indus translucent LDPE tubing made of and what does it suit?",
+          "a": "It is made of low-density polyethylene, translucent, a flexible plastic used for low-pressure air, water and fluid lines. For compatibility with a specific chemical, name the fluid and concentration on the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to 1/4\", 3/8\" and 1/2\" LDPE tubing?",
+          "a": "Plastic tubing connects with barbed or compression-style fittings sized to its outside diameter; see [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) for the push-in and barbed ends we hold. Tell us the tube size and thread, and we match the fitting."
+        },
+        {
+          "slot": "K",
+          "q": "LDPE tubing or Indus push-lock hose for low-pressure lines?",
+          "a": "LDPE tubing is a plain plastic tube with no published pressure rating in 1/4\" to 1/2\", while [push-lock nitrile hose](/p/push-lock-hose-nitrile-300-psi) is a braided rubber hose rated 300 psi to 3/4\" for air, water and petroleum oils. Choose the hose where a rating matters."
+        },
+        {
+          "slot": "I",
+          "q": "How should translucent LDPE tubing be cut and installed?",
+          "a": "Cut the tube square with a tube cutter, keep it clear of heat and sharp edges, and do not kink it. The minimum order is 300 ft in 50 ft lengths, so plan the run in whole lengths; [compressed air hose selection](/blog/compressed-air-hose-selection) covers when a rated hose is the better choice."
+        },
+        {
+          "slot": "L",
+          "q": "Can Indus ship LDPE tubing outside the UAE?",
+          "a": "Yes. We ship LDPE tubing from Dubai, UAE, to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination. Give us the country on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock translucent LDPE tubing in Dubai?",
+          "a": "Yes. We keep translucent LDPE tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-wash-hose-1-wire-braid-4000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Indus 1-wire braid pressure wash hose rated 4,000 psi used for?",
+          "a": "This is a single-wire-braid hose for pressure washers, rated 4,000 psi (about 276 bar) working pressure by the maker in 1/4\" and 3/8\". It has a water-resistant synthetic rubber tube, one high-tensile steel wire braid and a black abrasion-, ozone- and weather-resistant cover."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and lengths of 4,000 psi pressure wash hose does Indus list?",
+          "a": "The hose is listed in 1/4\" and 3/8\", each as per-foot cutting or in 50 ft, 100 ft, 250 ft and 500 ft lengths, ten part numbers in all. For example IH-HS-PW4000-04-100 is 1/4\" in a 100 ft length."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read pressure wash hose part numbers such as IH-HS-PW4000-06-250?",
+          "a": "In IH-HS-PW4000-06-250, PW4000 is the 4,000 psi pressure wash hose, 06 is the 3/8\" size and 250 is the length in feet. No length suffix, as in IH-HS-PW4000-04, means the hose is sold per foot."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4,000 psi pressure wash hose?",
+          "a": "The maker rates both sizes at 4,000 psi working pressure, about 276 bar. Couplings must carry the same rating; a fitting or quick coupling rated lower than the hose becomes the limit of the whole assembly."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can 4,000 psi pressure wash hose take?",
+          "a": "The hose is rated from -40°F to 212°F (-40°C to 100°C) as published. Hot-water washers should be checked against that upper limit; tell us the water temperature if it is near it."
+        },
+        {
+          "slot": "F",
+          "q": "What is Indus 1-wire braid pressure wash hose made of?",
+          "a": "The tube is a water-resistant synthetic rubber, the reinforcement is one high-tensile steel wire braid and the cover is black synthetic rubber resistant to abrasion, ozone and weather. The steel braid gives the pressure rating; a textile hose cannot do the job."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings go on 1/4\" and 3/8\" pressure wash hose?",
+          "a": "The hose takes crimped hose ends and quick couplings rated 4,000 psi or more, sized for 1/4\" or 3/8\" bore. Tell us the thread on your washer gun and pump so the ends can be matched."
+        },
+        {
+          "slot": "K",
+          "q": "3/8\" or 1/4\" pressure wash hose: which size should I choose?",
+          "a": "Both sizes carry the same 4,000 psi rating on this listing. The 3/8\" bore gives lower pressure drop and flow loss on long runs, while the 1/4\" is lighter and easier to handle for short runs; both come in 50 ft to 500 ft lengths."
+        },
+        {
+          "slot": "I",
+          "q": "How should a 4,000 psi pressure wash hose be inspected and replaced?",
+          "a": "Inspect for cover damage that exposes the steel braid, kinks, bulges and leaks at the couplings, and replace the hose at the first sign of any of them. A burst at 4,000 psi is dangerous, so store and run the hose so it is not crushed or twisted."
+        },
+        {
+          "slot": "L",
+          "q": "Can Indus ship pressure wash hose outside the UAE?",
+          "a": "Yes. We ship the hose from Dubai, UAE, to the GCC, Africa, Asia and beyond. Tell us the destination and we prepare the commercial invoice and packing list; [GCC import documents for hose](/blog/gcc-import-documents-for-hose) covers the Gulf states."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 4,000 psi pressure wash hose in stock in Dubai?",
+          "a": "Yes, the 4,000 psi pressure wash hose is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "push-lock-hose-nitrile-300-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Indus push-lock nitrile hose rated 300 psi used for?",
+          "a": "Push-lock hose is a push-on hose that needs no clamps or crimping, used for air, water and petroleum oils at low pressure. A special braid angle holds it on a push-lock barb, and the maker rates it 300 psi working pressure, about 21 bar."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does Indus push-lock hose come in?",
+          "a": "The hose is listed in five bores, 1/4\", 3/8\", 1/2\", 5/8\" and 3/4\", as IH-HS-2112-04 to IH-HS-2112-12. Each is a 50 ft pre-cut length."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the push-lock hose part number IH-HS-2112-08?",
+          "a": "In IH-HS-2112-08, 2112 is the hose style and 08 is the bore in sixteenths of an inch, so -08 is 1/2\" and -12 is 3/4\". Each part number is one bore in a 50 ft pre-cut length."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of push-lock nitrile hose?",
+          "a": "The maker publishes 300 psi working pressure, about 21 bar, for push-lock nitrile hose. Use push-lock barbs made for this hose; ordinary barbs need a clamp, and a clamped joint does not raise the rating."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does push-lock nitrile hose take?",
+          "a": "The hose is rated from -40°F to 212°F (-40°C to 100°C), as published. The nitrile tube is chosen for oil resistance, and the range covers normal compressed-air and fuel-oil service."
+        },
+        {
+          "slot": "F",
+          "q": "What is Indus push-lock hose made of?",
+          "a": "The tube is oil-resistant nitrile (Class A), the reinforcement is one textile braid and the cover is oil-resistant neoprene (Class A), black and non-conductive. Nitrile makes it suitable for air, water and petroleum oils."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings do I use with push-lock hose?",
+          "a": "Use push-lock barbs made for the hose; the braid angle grips the barb without a clamp. [Brass push-lock hose barbs](/c/brass-push-lock-hose-barbs) in matching sizes are the usual choice; give us the thread you need."
+        },
+        {
+          "slot": "K",
+          "q": "Push-lock hose or red EPDM air hose: which should I use?",
+          "a": "Push-lock nitrile hose handles petroleum oils, rated 300 psi in 1/4\" to 3/4\", and needs no clamps. The [red EPDM air and water hose](/p/epdm-air-and-water-hose-red-150-psi) is rated 150 psi, comes to 2\" and is for air and water only."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install push-lock hose on a barb?",
+          "a": "Cut the hose square, push it fully onto the push-lock barb until it seats over the last ridge, and do not use a clamp. For air lines add a whip restraint or safety clip; [compressed air hose selection](/blog/compressed-air-hose-selection) covers the rest."
+        },
+        {
+          "slot": "L",
+          "q": "Can Indus ship push-lock hose outside the UAE?",
+          "a": "Yes. We ship push-lock hose from Dubai, UAE, to the GCC, Africa, Asia and beyond, with the commercial invoice and packing list for the destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Is push-lock nitrile hose in stock in Dubai?",
+          "a": "Yes, we stock Indus push-lock nitrile hose at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

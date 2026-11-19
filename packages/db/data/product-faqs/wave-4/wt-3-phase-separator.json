@@ -1,0 +1,84 @@
+{
+  "family": "wt-3-phase-separator",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "3-phase-well-test-separator-1-440-psi-60-in-od-15-ft-asme-u-nace-mr-0175-dnv-skid",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1,440 psi 3-phase well-test separator used for?",
+          "a": "A 3-phase well-test separator splits well flow into gas, oil and water so each stream can be measured during a well test. This unit is a 1,440 psi MAWP vessel, 60-inch OD by 15-ft seam-to-seam, ASME U-stamped and built with NACE MR-0175 compliant materials."
+        },
+        {
+          "slot": "B",
+          "q": "What do 60-in OD × 15-ft and 1,440 psi mean on this well-test separator?",
+          "a": "60-in OD × 15-ft is the vessel size: 60 inches outside diameter and 15 feet seam-to-seam, and 1,440 psi is the maximum allowable working pressure (MAWP). The size sets the liquid retention time and gas capacity, so give the flow rates you expect when sizing a variant."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure variants of the 3-phase well-test separator are available?",
+          "a": "The 3-phase separator is built in pressure variants of 250, 900, 1,440 and 2,160 psi. This listing is the 1,440 psi, 60-inch OD by 15-ft unit; for a different size or rating, tell us the flow rates and pressure on the RFQ and we engineer the variant."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1,440 psi 3-phase separator, and what is MAWP?",
+          "a": "The 3-phase separator is rated 1,440 psi MAWP, the maximum allowable working pressure of the ASME U-stamped vessel. The pressure safety valve (PSV) is fitted to protect it, and operating pressure should stay below the MAWP with the margin your procedure requires."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1,440 psi well-test separator made from, and is it sour-service rated?",
+          "a": "The separator is built with NACE MR-0175 compliant materials for sour service, in an ASME U-stamped pressure vessel. Confirm the H2S level and the wetted-material requirements on the RFQ so the internals and trim are matched to the fluid."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes and certificates apply to the 1,440 psi 3-phase separator?",
+          "a": "The vessel is ASME U-stamped and the materials are NACE MR-0175 compliant, and the offshore skid is DNV-certified. These are the codes the listing states; third-party witness and the data book scope are agreed on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What instruments and valves are fitted to the 3-phase well-test separator?",
+          "a": "The separator has a Daniel orifice valve, a pressure safety valve (PSV) and a full suite of process control valves for level, flow and pressure. It connects to the well-test spread through the test line; see the [well testing equipment guide](/blog/surface-well-testing-equipment) for the spread."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-phase separator installed on an offshore or onshore well-test spread?",
+          "a": "It is mounted on a DNV-certified offshore skid, with an onshore skid variant and trailer-mounted variants integrated into full well-test trailers. Install it downstream of the choke manifold and ahead of the flare and surge tank, per the test layout."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a 60-inch 3-phase well-test separator used?",
+          "a": "It is used for multiphase well testing on exploration, appraisal and production wells, where gas, oil and water rates are measured separately. See the [well testing equipment guide](/blog/surface-well-testing-equipment) for the full spread from flowhead to flare."
+        },
+        {
+          "slot": "K",
+          "q": "3-phase separator or MPFM for well testing: how do they differ?",
+          "a": "A 3-phase separator physically splits the gas, oil and water for measurement, while a multiphase flow meter (MPFM) measures the mixed stream without separating it. See the [MPFM system](/c/wt-mpfm-system) shelf for the meter-based option."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 1,440 psi 3-phase separator be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its skid or trailer, with the vessel documents and the commercial invoice. Tell us the destination and the skid variant and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 1,440 psi 3-phase well-test separator in Dubai?",
+          "a": "Yes. We keep the 1,440 psi 3-phase well-test separator in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure variant and skid type through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

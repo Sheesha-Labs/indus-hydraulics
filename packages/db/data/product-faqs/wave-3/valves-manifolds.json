@@ -1,0 +1,279 @@
+{
+  "family": "valves-manifolds",
+  "extraFacts": [
+    {
+      "fact": "Mass of the Yuken DSG-01-3C4-D24-50 is 2.2 kg and of the DSG-01-2B2-D24-50 is 1.6 kg (design 50).",
+      "source": "Indus Hydraulics listings for the Yuken DSG-01 valves"
+    },
+    {
+      "fact": "1 kgf/cm² is about 0.098 MPa, so 250 kgf/cm² is about 24.5 MPa (about 245 bar) and 315 kgf/cm² is about 31 MPa (about 309 bar).",
+      "source": "SI conversion (1 kgf/cm² = 0.0980665 MPa)"
+    },
+    {
+      "fact": "ISO 4401-03 (CETOP 3, NG6) is the size 6 mounting-surface standard for sub-plate directional valves; ISO 6264 defines the mounting surfaces of pressure-relief valves.",
+      "source": "ISO 4401 and ISO 6264 (hydraulic fluid power, mounting surfaces)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "yuken-bg-pressure-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Yuken BG-03 Pilot Operated Relief Valve, up to 24.5 MPa, 100 L/min used for?",
+          "a": "The Yuken BG-03 is a pilot operated relief valve for sub-plate mounting, rated to 250 kgf/cm² (about 24.5 MPa) and 100 L/min. It protects pumps and control valves from excess pressure and holds system pressure at its setting, and through its vent port it can be set remotely or used to unload the pump."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Yuken model code BG-03-32 mean, and what is the V version?",
+          "a": "In BG-03-32, B is a pilot operated relief valve, G is sub-plate (gasket) mounting (a T would be a threaded body), 03 is the size and 32 is the design number. The code has no pressure field, so one valve covers the full range. Add V (BG-03-V-32) for the high-vent type, and an F- prefix for phosphate-ester fluid."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure can the Yuken BG-03 relief valve be set to?",
+          "a": "The BG-03 is rated to a maximum operating pressure of 250 kgf/cm² (about 24.5 MPa), and the handle changes the setting by about 5 MPa per turn. Collars under the adjusting handle cap the settable pressure, about 10 MPa each, so remove one if the setting you need cannot be reached."
+        },
+        {
+          "slot": "D",
+          "q": "How much flow can the Yuken BG-03 relief valve take?",
+          "a": "The BG-03 takes up to 100 L/min, and Yuken asks for at least 8 L/min through it for a stable setting. Below that flow the pressure setting can hunt, so size the valve to the pump flow it protects."
+        },
+        {
+          "slot": "E",
+          "q": "What oil and temperature can the Yuken BG-03 relief valve run on?",
+          "a": "Yuken gives an oil viscosity of 15 to 400 mm²/s and an oil temperature of -15 to +70 °C for the BG-03. The F- prefix is the version for phosphate-ester fluid."
+        },
+        {
+          "slot": "G",
+          "q": "Which mounting surface does the Yuken BG-03 relief valve use?",
+          "a": "The BG-03 mounts on the ISO 6264-AR-06-2-A relief-valve interface, not a CETOP directional-valve pattern. The valve is held by two M12 x 70 and two M12 x 95 bolts, and its mass is 4.7 kg."
+        },
+        {
+          "slot": "H",
+          "q": "Which sub-plates fit the Yuken BG-03 relief valve?",
+          "a": "Yuken's sub-plates for the BG-03 are the BGM-03 with a 3/8 BSP port and the BGM-03X with a 1/2 BSP port. Quote the sub-plate with the valve if you need one, and ask us which port size suits your pipework."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Yuken BG-03 relief valve be piped and set?",
+          "a": "Run the tank line straight to the reservoir rather than into other valves' tank lines, or the setting becomes unstable. The vent port lets you set the pressure remotely or unload the pump, and the high-vent type (BG-03-V-32) switches back from unloading to load faster at the cost of higher minimum and vent pressures."
+        },
+        {
+          "slot": "J",
+          "q": "What is the vent port on the Yuken BG-03 for?",
+          "a": "The vent port connects a remote relief valve to set the pressure from elsewhere, or is vented to tank to unload the pump. The high-vent type (BG-03-V-32) switches back from unloading to load faster."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Yuken BG-03 relief valve differ from the DSG-01 directional valves?",
+          "a": "The BG-03 limits pressure and mounts on the ISO 6264 relief-valve surface, while the [Yuken DSG-01 directional valve](/p/yuken-dsg-01-directional-valve) directs flow and mounts on the ISO 4401-03 (CETOP 3) surface. They do different jobs in the same circuit; see our [hydraulic control valve guide](/blog/mobile-hydraulic-control-valves-guide)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Yuken BG-03 relief valve made to protect, and how heavy is it?",
+          "a": "The BG-03 protects pumps and control valves from excess pressure. It has a mass of 4.7 kg, so it needs a firm sub-plate or manifold, and it is held down with M12 bolts of two lengths. Confirm the pressure collars and handle setting before you commission it."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Yuken BG-03 pilot operated relief valve?",
+          "a": "Quote BG-03-32, or BG-03-V-32 for the high-vent type, with the sub-plate if you need one. We supply Yuken valves from Dubai, UAE and ship worldwide with the best lead times; send the model code through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "yuken-dsg-01-2b2-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Yuken DSG-01-2B2-D24-50 Solenoid Directional Valve, 4/2 Spring-Offset, 24 V DC?",
+          "a": "The Yuken DSG-01-2B2-D24-50 is a two-position, spring-offset solenoid directional valve for sub-plate mounting on the ISO 4401-03 interface (CETOP 3, NG6), with a 24 V DC coil. One solenoid shifts the spool, and when it is switched off the spring returns the spool to its offset position."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Yuken model code DSG-01-2B2-D24-50 mean?",
+          "a": "DSG is a solenoid-operated directional valve for sub-plate mounting, 01 is the size (ISO 4401-03), 2B is two positions with spring offset and one solenoid on the b side, 2 is the spool type, D24 is a 24 V DC coil and 50 is the design number. An L suffix moves the solenoid to the a side."
+        },
+        {
+          "slot": "D",
+          "q": "How much flow and pressure can the Yuken DSG-01-2B2 take?",
+          "a": "Design 50 is rated 315 kgf/cm² (about 31 MPa) and 63 L/min. With a DC coil, spool 2B2 passes 63 L/min four-way from 50 to 315 kgf/cm², and the maximum tank-line back pressure is 160 kgf/cm²."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between design 50 and design 70 of the Yuken DSG-01?",
+          "a": "Both fit the same ISO 4401-03 mounting surface. Yuken India builds design 50, rated 315 kgf/cm² and 63 L/min, while Yuken in Japan has moved to design 70, which is rated 35 MPa and 100 L/min with a 29 W coil and a different outline. Say which you need, or send the nameplate of the valve you are replacing."
+        },
+        {
+          "slot": "E",
+          "q": "What coil does the Yuken DSG-01-2B2-D24-50 have?",
+          "a": "The coil is 24 V DC, 1.1 A and 26 W, with protection equivalent to IP65 and a changeover frequency up to 300 cycles per minute on a DC coil. Check your control supply is 24 V DC before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "Which way does the oil flow in the Yuken DSG-01-2B2?",
+          "a": "In Yuken's vent-type table the 2B2 connects P to port A when the solenoid is off and P to port B when solenoid b is energised. The valve is a spool type, so some internal leakage is normal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Yuken DSG-01-2B2 hold a cylinder in position?",
+          "a": "Not on its own. It is a spool valve, and Yuken notes that spool valves leak internally, so an actuator held only by this valve can creep. Where a load must hold position, add a pilot-operated check or a counterbalance valve."
+        },
+        {
+          "slot": "H",
+          "q": "Which sub-plates fit the Yuken DSG-01-2B2?",
+          "a": "Yuken's design-50 sub-plates are DSGM-01-3080 (1/8 BSP), DSGM-01X-3080 (1/4 BSP) and DSGM-01Y-3080 (3/8 BSP). The valve can also sit on top of a stack of Yuken 01-series modular valves, such as the [MBR-01 brake module](/p/yuken-mbr-01-brake-modular-valve)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Yuken DSG-01-2B2 mounted and what oil does it need?",
+          "a": "Mount it on an ISO 4401-03 sub-plate and bolt it down evenly. The solenoid core tube fills with oil, so keep the tank port full of oil and free of surge pressure, and give us the nameplate of the valve you are replacing if you want a like-for-like match."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Yuken DSG-01-2B2 used?",
+          "a": "Yuken also uses the 2B2 as the pilot valve on its BSG solenoid-controlled relief valves, to switch between pressure settings. On its own it shifts a single-acting or spring-return actuator between two positions with one solenoid."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Yuken DSG-01-2B2 differ from the DSG-01-3C4 valve?",
+          "a": "The 2B2 is a two-position, spring-offset valve with one solenoid and a mass of 1.6 kg, while the [DSG-01-3C4-D24-50](/p/yuken-dsg-01-directional-valve) is a three-position, spring-centred valve with two solenoids and a mass of 2.2 kg. Use the 3C4 where a cylinder must stop mid-stroke; see our [control valve guide](/blog/mobile-hydraulic-control-valves-guide)."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Yuken DSG-01-2B2-D24-50 solenoid valve?",
+          "a": "Give the full model code, the design number, the coil voltage and the solenoid side (L for the a side) on your RFQ. We supply Yuken valves from Dubai, UAE and ship worldwide with the best lead times; send the details through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "yuken-dsg-01-directional-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Yuken DSG-01-3C4-D24-50 Solenoid Directional Valve, 4/3 Spring-Centred, 24 V DC?",
+          "a": "The Yuken DSG-01-3C4-D24-50 is a three-position, spring-centred solenoid directional valve with two solenoids and a 24 V DC coil, for sub-plate mounting on the ISO 4401-03 interface (CETOP 3, NG6). The solenoids shift the spool to start, stop and reverse a cylinder or motor, and springs return it to the centre when both are off."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Yuken model code DSG-01-3C4-D24-50 mean?",
+          "a": "DSG is a solenoid-operated directional valve for sub-plate mounting, 01 is the size (ISO 4401-03), 3C is three positions with spring centring and two solenoids, 4 is the spool type, D24 is a 24 V DC coil usable from 21.6 to 26.4 V, and 50 is the design number. A DIN connector is ordered by adding N or N1 after the coil code."
+        },
+        {
+          "slot": "D",
+          "q": "What does spool 4 do in the centre position of the Yuken DSG-01-3C4?",
+          "a": "Yuken's flow tables give spool 4 no path from P to T in the centre, so the valve does not unload the pump when both solenoids are off. Yuken's centre-bypass spools, which do, are 5 and 60."
+        },
+        {
+          "slot": "D",
+          "q": "How much flow and pressure can the Yuken DSG-01-3C4 take?",
+          "a": "Design 50 is rated 315 kgf/cm² (about 31 MPa) and 63 L/min. With a DC coil, spool 3C4 passes 63 L/min up to 250 kgf/cm² and 35 L/min at 315 kgf/cm², and the tank-line back pressure must stay under 160 kgf/cm²."
+        },
+        {
+          "slot": "E",
+          "q": "What coil does the Yuken DSG-01-3C4-D24-50 have?",
+          "a": "The coil is 24 V DC, 1.1 A and 26 W, usable from 21.6 to 26.4 V, with protection equivalent to IP65 and a changeover frequency up to 300 cycles per minute. With no letter after the coil code the valve has a terminal box and a push-pin manual override."
+        },
+        {
+          "slot": "F",
+          "q": "What is the difference between design 50 and design 70 of the Yuken DSG-01?",
+          "a": "Both fit the same ISO 4401-03 mounting surface. Design 50, built by Yuken India, is rated 315 kgf/cm² and 63 L/min with a 26 W coil and 2.2 kg, while Yuken in Japan's design 70 is rated 35 MPa and 100 L/min with a 29 W coil and 1.85 kg. Tell us which you need, or send the nameplate."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Yuken DSG-01-3C4 hold a cylinder in position?",
+          "a": "Not on its own. It is a spool valve, and Yuken notes that spool valves leak internally, so an actuator held only by this valve can creep. Where a load must hold position, add a pilot-operated check or a counterbalance valve."
+        },
+        {
+          "slot": "H",
+          "q": "Which sub-plates fit the Yuken DSG-01-3C4?",
+          "a": "Yuken's design-50 sub-plates are DSGM-01-3080 (1/8 BSP), DSGM-01X-3080 (1/4 BSP) and DSGM-01Y-3080 (3/8 BSP). Four M5 x 45 socket-head screws hold the valve down, and it can also sit on a stack of Yuken 01-series modular valves."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Yuken DSG-01-3C4 installed, and why must the tank port stay full?",
+          "a": "The solenoids are wet-pin: the core tube fills with oil, which damps shock and noise, so the tank port must stay full of oil and must not see surge pressure. Yuken's manual gives a working oil viscosity of 15 to 400 mm²/s and an oil temperature of -15 to +70 °C."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Yuken DSG-01-3C4 used?",
+          "a": "The 3C4 is used to start, stop and reverse a cylinder or motor from a pump supply, with the spring centring the spool when both solenoids are off. Because spool 4 has no P-to-T path in the centre, it suits circuits where the pump does not need to unload through the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Yuken DSG-01-3C4 differ from the DSG-01-2B2 valve?",
+          "a": "The 3C4 has three positions, two solenoids and spring centring (2.2 kg), while the [DSG-01-2B2-D24-50](/p/yuken-dsg-01-2b2-valve) has two positions, one solenoid and spring offset (1.6 kg). Use the 3C4 to stop a cylinder mid-stroke; see our [control valve guide](/blog/mobile-hydraulic-control-valves-guide)."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Yuken DSG-01-3C4-D24-50 solenoid valve?",
+          "a": "Give the full model code, the design number and the coil voltage on your RFQ, with the sub-plate if you need one. We supply Yuken valves from Dubai, UAE and ship worldwide with the best lead times; send the details through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "yuken-mbr-01-brake-modular-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Yuken MBR-01 Brake Modular Valve, 01 Series (CETOP 3)?",
+          "a": "The Yuken MBR-01 is a brake valve in Yuken's 01-series modular range: a sandwich module that stacks between the sub-plate or manifold and a DSG-01 solenoid valve on the ISO 4401-03 interface (CETOP 3, NG6). It brakes the actuator the stack controls."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Yuken model code MBR-01-C-30 mean?",
+          "a": "In MBR-01-C-30 the 01 is the series size, C or H is the adjustment range, and the 30 is the design number, not a pressure. Order MBR-01-C-30 or MBR-01-H-30 by the adjustment range you need, with the stud-bolt kit for your stack height."
+        },
+        {
+          "slot": "D",
+          "q": "Which adjustment range do I need on the Yuken MBR-01 brake valve?",
+          "a": "Range C sets from the minimum to 140 kgf/cm², and range H from 70 to 210 kgf/cm². Choose C for lower brake settings and H for higher ones, within the 250 kgf/cm² maximum and the 35 L/min flow rating."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and pressure does the Yuken MBR-01 take?",
+          "a": "The MBR-01 is rated for a maximum operating pressure of 250 kgf/cm² (about 24.5 MPa) and a maximum flow of 35 L/min. Its mass is 1.3 kg."
+        },
+        {
+          "slot": "E",
+          "q": "How should the Yuken MBR-01 brake valve be set?",
+          "a": "Load pressure and back pressure both push the brake valve open. Set below their sum, it slows the actuator in normal running; set too high, braking causes shock. Its minimum setting rises with tank-line back pressure, so add the tank-line pressure drops of every valve in the stack."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids can the Yuken MBR-01 brake valve run on?",
+          "a": "It runs on mineral oil, phosphate ester (with the F- prefix), polyol ester or water-glycol, at 15 to 400 mm²/s and -15 to +70 °C. Keep the fluid to NAS 1638 class 12 through a 20 µm filter."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Yuken MBR-01 a pressure reducing valve?",
+          "a": "No. Yuken's reducing modules are the MRP-01, MRA-01 and MRB-01, acting on the P, A or B line. The MBR-01 is a brake valve, and the -30 in its code is the design number, not 30 MPa."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Yuken MBR-01 brake valve stack with?",
+          "a": "It stacks between the sub-plate or manifold and a DSG-01 solenoid valve such as the [Yuken DSG-01-3C4](/p/yuken-dsg-01-directional-valve), on the ISO 4401-AB-03-4-A mounting surface. Stud-bolt kits are MBK-01-*-30 and the seal kit is KS-MBR-01-30."
+        },
+        {
+          "slot": "I",
+          "q": "Where does the Yuken MBR-01 go in the stack?",
+          "a": "Between the sub-plate or manifold and the DSG-01, in a stack of one to five units high counting the solenoid valve. Its order relative to meter-out throttle-check modules matters, because back pressure acts on it."
+        },
+        {
+          "slot": "J",
+          "q": "When is a brake valve like the Yuken MBR-01 used?",
+          "a": "A brake valve slows an actuator in normal running and limits shock when the load tries to run away. Set it from the sum of load pressure and back pressure, and read our [hydraulic control valve guide](/blog/mobile-hydraulic-control-valves-guide) for how it fits with directional and flow control valves."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Yuken MBR-01 differ from the DSG-01 solenoid valves?",
+          "a": "The MBR-01 is a sandwich module that brakes the actuator, while the [DSG-01-2B2](/p/yuken-dsg-01-2b2-valve) and DSG-01-3C4 are the directional valves that sit on top of it. The MBR-01 cannot be used alone; it needs a directional valve and a sub-plate."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Yuken MBR-01 brake modular valve?",
+          "a": "Order MBR-01-C-30 or MBR-01-H-30, by the adjustment range you need, with the stud-bolt kit for your stack height. We supply Yuken valves from Dubai, UAE and ship worldwide with the best lead times; send the model code through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

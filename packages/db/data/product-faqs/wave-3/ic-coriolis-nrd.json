@@ -1,0 +1,92 @@
+{
+  "family": "ic-coriolis-nrd",
+  "extraFacts": [
+    {
+      "fact": "Related Indus instrumentation listings, as shown on their own pages: AC/DC Converter Package, 400 V AC → 24 V DC, NEMA 4X Enclosure, 1 kW: AC/DC converter package powering DC control circuits from a high-voltage AC mains supply. 400 V AC input → 24 V DC output, 1 kW continuous duty. NEMA 4X enclosure containing the converter, input breaker, output power-supply connections, status LEDs and surge protection.\nVoltage variants: 230 / 380 / 415 / 440 / 460 V AC input; 12 / 24 V DC output. Output powers 250 W / 500 W / 1 kW / 2 kW. Hazardous-area Ex-d variant available. | Analogic Pressure Sensor, 2-inch Fig.1502 Debooster, 6-inch Gauge + Adjustable Shutdown: 2-inch Fig.1502 pressure debooster providing safe transfer of HP wellhead pressure to the analogic gauge circuit. 6-inch glycerine-filled gauge for smooth pointer reading. Adjustable overpressure shutdown proximity switch enables interlock with ESD logic and shutdown sequencers.\nPressure ranges to 15,000 psi available. SS316 wetted connections; NACE MR-0175 on request. | Coriolis Mass Flowmeter (NRD), 2-inch, Cementing Service, Local + Remote Display: Coriolis-tube mass flowmeter providing simultaneous mass flow, fluid density, and fluid temperature outputs. Used as a non-radioactive densitometer (NRD) for cementing units, hydration units, and Liquid Additive Systems where radioactive source devices are restricted.\n2-inch process connections as standard; 1-inch and 3-inch available. Local digital display + 4-20 mA remote outputs. ATEX Zone 1 / 2 enclosure variants. | Multi-Channel Data Acquisition System, 15-inch Touchscreen, USB Export, Frac-Fleet Ready: Multi-channel oilfield Data Acquisition System engineered for pumping-unit and frac-fleet integration. Compatible signal types: 4-20 mA, 0-5 V, pulse, frequency. 15-inch touchscreen (9-inch and 11-inch variants available).\nOperator-configurable display modes: data, chart, curves. Local storage and USB export in ASCII / Excel for post-job reports. Network connectivity (wired / wifi) to fleet Data Vans for centralized fleet control. | Explosion-Proof Electrical Panel, Aluminium-Cast, ATEX Zone 1, 600 mm × 800 mm: Explosion-proof aluminium-cast electrical panel for ATEX Zone 1 hazardous-area deployment. 600 mm × 800 mm internal envelope; multiple sizes available. Internal mounting plate houses breakers, contactors, relays, terminal blocks, and surge protection per project schematic.\nIECEx-certified variants available. Weatherproof steel-sheet enclosure (powder-coated) for non-hazardous deployment as a lower-cost option. IP65 / IP66 sealing as standard. | Electronic Pressure Sensor, 0-15,000 psi, 2-inch Fig.1502M, 4-20 mA: 0-15,000 psi electronic pressure sensor with 2-inch Fig.1502M HP hammer-union connection. 4-20 mA loop output; HART / digital options available. SS316 wetted parts as standard; NACE MR-0175 materials for sour-service.\nPressure ranges 0-5,000 / 0-10,000 / 0-15,000 / 0-20,000 psi. Temperature compensation calibrated across operating range. | Magnetic Flowmeter, 2-inch Wafer, 600 psi, 4-20 mA Output: 2-inch wafer-style magnetic flowmeter with 600 psi MAWP and 4-20 mA loop output. Designed for water, brine, mud and acid-resistant lining where chemistry requires. Local display optional; remote display via 4-20 mA into DAQ.\nSizes 1/2 inch to 12 inch available; pressure ratings to ANSI 600. ATEX Zone 1 explosion-proof variant on request. | Magnetic-Pickup Proximity Sensor, 5/8-18 UNF, M12 Connector, Stroke / RPM Counter: Magnetic-pickup proximity sensor used as a bolt-counter on triplex / quintuplex pump crank shafts to feed RPM and calculated displacement back to the unit DAQ. 5/8-18 UNF threaded body with M12 4-pin connector.\nNo onboard power required — output is a passive signal proportional to shaft speed. Hazardous-area-rated variants available. | Bimetal Thermometer + Thermowell Pair, 1/2-inch NPT M×F, P+U API 6A Range, SS316: Matched bimetal thermometer and thermowell pair. The thermometer has a 1/2-inch NPT male connection with selectable stem length (2.5, 4, 6, 9 inch) and an API 6A P+U temperature range (-20 °F to +250 °F).\nThe thermowell is integral construction in SS316 with 1/2-inch NPT male-to-female connections, sized to match the thermometer stem. SS304 wetted-parts variant available. Pressure rating to 15,000 psi at process side; bore size selectable. | Turbine Flowmeter, 2-inch Fig.1502 F×M, 15,000 psi, Frac / Cementing Service: 2-inch turbine flowmeter for high-pressure frac and cementing service. Fig.1502 F×M connections at 15,000 psi MAWP. Optical or magnetic pickup output with K-factor calibration certificate.\n3-inch and lower-pressure variants available. NACE MR-0175 materials on request for sour-service applications. | VFD Package, AC Motor + Drive, 500 HP, ATEX Zone 2, Frac-Pumper Compatible: VFD (Variable Frequency Drive) package supplying a 500 HP AC motor for oilfield pump duty. Replaces costly DC converter and DC motor systems on legacy units. ATEX Zone 2 enclosure; regenerative braking option for energy recovery on deceleration.\nMotor + drive system rated for offshore environment (saltwater, vibration, temperature). Sizes 100 / 250 / 500 / 750 / 1,000 HP available. Compatible with frac pumper, cementing unit, transfer pump and stimulation unit deployments.",
+      "source": "Indus Hydraulics instrumentation listings"
+    },
+    {
+      "fact": "Figures of this listing, as shown on its product page: Coriolis-tube mass flowmeter providing simultaneous mass flow, fluid density, and fluid temperature outputs. Used as a non-radioactive densitometer (NRD) for cementing units, hydration units, and Liquid Additive Systems where radioactive source devices are restricted.\n2-inch process connections as standard; 1-inch and 3-inch available. Local digital display + 4-20 mA remote outputs. ATEX Zone 1 / 2 enclosure variants.",
+      "source": "Indus Hydraulics product listing"
+    },
+    {
+      "fact": "ATEX Zone 1 is an area where an explosive gas atmosphere is likely to occur occasionally in normal operation; Zone 2 is an area where it is not likely in normal operation and, if it occurs, lasts only for a short time. Ex-d denotes flameproof enclosure protection.",
+      "source": "ATEX workplace Directive 1999/92/EC annex I; IEC 60079-0 / 60079-1 (flameproof enclosure 'd')"
+    },
+    {
+      "fact": "A 4-20 mA signal is a standard analogue current loop in which 4 mA is the bottom of the range and 20 mA the top, so a broken wire can be told from a zero reading.",
+      "source": "IEC 60381-1 (analogue signals for process control, 4 to 20 mA)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Coriolis Mass Flowmeter (NRD), 2-inch, Cementing Service, Local + Remote Display [IH-NRD-CRL-2IN-CMT]:   2-inch Coriolis mass flowmeter providing flow + density + temperature. Non-radioactive alternative for cementing density control. |  | 0 part numbers (e.g. ); ; rows: ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "coriolis-mass-flowmeter-nrd-2-inch-cementing-service-local-remote-display",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-inch Coriolis mass flowmeter (NRD) used for?",
+          "a": "It is a Coriolis-tube mass flowmeter giving mass flow, fluid density and fluid temperature at once, used as a non-radioactive densitometer (NRD) on cementing units, hydration units and Liquid Additive Systems. See the [Coriolis NRD shelf](/c/ic-coriolis-nrd)."
+        },
+        {
+          "slot": "B",
+          "q": "What does NRD stand for on this Coriolis flowmeter?",
+          "a": "NRD means non-radioactive densitometer: the meter measures density with a Coriolis tube instead of a radioactive source. This suits units where radioactive source devices are restricted."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Coriolis NRD flowmeter come in?",
+          "a": "2-inch process connections are standard, and 1-inch and 3-inch are available. State your line size when you ask. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "E",
+          "q": "What outputs does the Coriolis NRD flowmeter give?",
+          "a": "It gives mass flow, fluid density and fluid temperature, with a local digital display and 4-20 mA remote outputs. The 4-20 mA lets you feed a data acquisition system."
+        },
+        {
+          "slot": "F",
+          "q": "Which service is the Coriolis NRD flowmeter built for?",
+          "a": "The listing names cementing service, with local and remote display. It is also used on hydration units and Liquid Additive Systems. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Coriolis NRD flowmeter available for hazardous areas?",
+          "a": "The listing says ATEX Zone 1 / 2 enclosure variants are available. Tell us the zone and we confirm the variant. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "H",
+          "q": "How does the Coriolis NRD flowmeter connect to a data system?",
+          "a": "Through its 4-20 mA remote outputs, which feed a [data acquisition system](/c/ic-data-acquisition). The local digital display shows values at the meter. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "I",
+          "q": "Why use a Coriolis meter rather than a turbine meter?",
+          "a": "A Coriolis meter measures mass flow, density and temperature together, while a [turbine flowmeter](/p/turbine-flowmeter-2-inch-fig-1502-f-m-15-000-psi-frac-cementing-service) measures volume flow only. Choose Coriolis where density matters, as in cementing."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the the 2-inch Coriolis mass flowmeter (NRD)?",
+          "a": "Quote the full title, Coriolis Mass Flowmeter (NRD), 2-inch, Cementing Service, Local + Remote Display, with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Coriolis NRD flowmeter used?",
+          "a": "It is used on cementing units, hydration units and Liquid Additive Systems where radioactive source devices are restricted. The [oilfield instrumentation guide](/blog/oilfield-pressure-and-flow-instrumentation) covers where it fits."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Coriolis NRD flowmeter supplied from?",
+          "a": "We supply it from Dubai, UAE and ship worldwide. Send the line size and the zone for the enclosure. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 2-inch Coriolis mass flowmeter (NRD) in stock in Dubai?",
+          "a": "Yes. We keep the 2-inch Coriolis mass flowmeter (NRD) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

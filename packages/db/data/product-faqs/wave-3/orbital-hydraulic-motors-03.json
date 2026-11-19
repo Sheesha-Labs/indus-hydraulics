@@ -1,0 +1,1550 @@
+{
+  "family": "orbital-hydraulic-motors-03",
+  "extraFacts": [
+    {
+      "fact": "One US gallon is 231 cubic inches, so shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses.",
+      "source": "US gallon definition; Indus Hydraulics orbital motor guide"
+    },
+    {
+      "fact": "SAE J744 defines the SAE A, B and C 2-bolt and 4-bolt flange mounts for hydraulic pumps and motors.",
+      "source": "SAE J744 Hydraulic Pump and Motor Mounting and Drive Shaft Dimensions"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 25 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 52 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Wheel Mount: displacement 118 to 745 cm³/rev, mount Wheel Mount, 78 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMH Orbital Motors: displacement 203.2 to 489.2 cm³/rev, mount Magneto, 15 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMH Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMK6 Orbital Motors: displacement 195.6 to 981.6 cm³/rev, mount SAE \"CC\", 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMK6 Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMM(Z) Orbital Motors: displacement 8.2 to 50.3 cm³/rev, mount 2-Bolt, Circle Flange, 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMM(Z) Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount: displacement 36 to 390 cm³/rev, mount SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, 90 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount: displacement 36 to 390 cm³/rev, mount SAE \"A\" 4-Bolt, 90 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount: displacement 36 to 390 cm³/rev, mount Magneto, 12 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount: displacement 51.7 to 381.4 cm³/rev, mount SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, 108 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount: displacement 51.7 to 381.4 cm³/rev, mount SAE \"A\" 4-Bolt, 81 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount: displacement 81.5 to 381.4 cm³/rev, mount Magneto, 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount: displacement 81 to 475 cm³/rev, mount SAE \"A\" 2 Bolt, 85 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount: displacement 81 to 475 cm³/rev, mount SAE \"A\" 4-Bolt, 43 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount: displacement 81 to 475 cm³/rev, mount Magneto, 77 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount: displacement 81 to 475 cm³/rev, mount Wheel Mount, 41 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMT Orbital Motors: displacement 161.1 to 801.8 cm³/rev, mount 4-Bolt, 32 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMT Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMV Orbital Motors: displacement 333 to 990 cm³/rev, mount 4-Bolt, 18 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMV Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne 500 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 84 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 500 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne 500 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, Wheel mount, 76 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 500 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne 501 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 39 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 501 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne 501 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 501 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 50 to 400 cm³/rev, mount 2-bolt SAE A, 85 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 50 to 400 cm³/rev, mount 4-bolt SAE A square, 58 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne FM3 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 50 to 315 cm³/rev, mount 2-bolt SAE A, 71 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM3 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne FM3 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 50 to 315 cm³/rev, mount 4-bolt SAE A square, 49 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM3 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne FM50 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 53 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM50 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne FM50 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 52 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM50 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne FM51 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM51 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne FM51 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 18 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM51 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 2.2 to 400 cm³/rev, mount 2-bolt SAE A, 4-bolt SAE A, 172 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 36 to 400 cm³/rev, mount 4-bolt magneto (SAE A), 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 2.2 to 400 cm³/rev, mount 4-bolt SAE A square, 142 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 4.9 to 375 cm³/rev, mount 2-bolt SAE A, 4-bolt magneto, 138 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 50 to 315 cm³/rev, mount 4-bolt magneto (SAE A), 20 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 4.9 to 375 cm³/rev, mount 4-bolt SAE A square, 102 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors: displacement 80 to 400 cm³/rev, mount 4-bolt SAE A, 2-bolt SAE A square, 4-bolt SAE B, 5 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 80 to 475 cm³/rev, mount 2-bolt SAE A, 298 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount: displacement 80 to 475 cm³/rev, mount 2-bolt SAE B, 115 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount: displacement 4.9 to 475 cm³/rev, mount 4-bolt magneto, 22 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 4.9 to 475 cm³/rev, mount 4-bolt magneto (SAE A), 74 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 80 to 475 cm³/rev, mount 4-bolt SAE A square, 114 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF105 Series Orbital Motors, Wheel Mount: displacement 80 to 375 cm³/rev, mount 4-bolt wheel, 74 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF105 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount: displacement 80 to 375 cm³/rev, mount 4-bolt, 14 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount: displacement 160 to 630 cm³/rev, mount 4-bolt SAE B, 48 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount"
+    },
+    {
+      "fact": "Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 160 to 630 cm³/rev, mount 4-bolt SAE C, 56 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount: displacement 245 to 985 cm³/rev, mount 4-bolt, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 195 to 985 cm³/rev, mount 4-bolt SAE C, 89 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF113 Series Orbital Motors, Wheel Mount: displacement 195 to 985 cm³/rev, mount 4-bolt wheel, Wheel mount, 29 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF113 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount: displacement 195 to 985 cm³/rev, mount 4-bolt SAE C bearingless, 4-bolt SAE C, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount"
+    },
+    {
+      "fact": "Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 315 to 1000 cm³/rev, mount 4-bolt SAE C, SAE C-Mount, 13 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors: displacement 8 to 32 cm³/rev, mount 3-bolt SAE C, 5 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount: displacement 8 to 50 cm³/rev, mount 2-bolt, 22 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount: displacement 8 to 50 cm³/rev, mount 3-bolt / 5-bolt, 60 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount: displacement 8 to 20 cm³/rev, mount 3-bolt, 6 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF130 Series Orbital Motors: displacement 160 cm³/rev, mount 4-bolt square, 1 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF130 Series Orbital Motors"
+    },
+    {
+      "fact": "Char-Lynn 101 Series Hydraulic Motors: displacement 2.8 to 22.6 in³/rev, mount 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot, 31 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 101 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 103 Series (S Series) Hydraulic Motors: displacement 4.6 to 22.7 in³/rev, mount 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot, 16 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 103 Series (S Series) Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 104 Series Hydraulic Motors: displacement 4.9 to 18.7 in³/rev, mount 2 Bolt / SAE A / 3.25\" Pilot, 16 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 104 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 112 and 119 Series Hydraulic Motors: displacement 19.0 to 30.0 in³/rev, mount None, 3 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 112 and 119 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton H Series Hydraulic Motors: displacement 2.8 in³/rev to 17.9 in³/rev, mount None, 25 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton H Series Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton Hydraulic Motors: displacement 2.8 in³/rev to 22.7 in³/rev, mount None, 30 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton J Series Hydraulic Motors: displacement 0.5 in³/rev to 1.9 in³/rev, mount None, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton J Series Hydraulic Motors"
+    },
+    {
+      "fact": "Parker 110A Series Hydraulic Motors: displacement 3.6 in³/rev to 16.4 in³/rev, mount SAE A 2-Bolt, 4 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker 110A Series Hydraulic Motors"
+    },
+    {
+      "fact": "Parker BG Series Brake Torqmotors: displacement None, mount None, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker BG Series Brake Torqmotors"
+    },
+    {
+      "fact": "Parker BH Series Brake Motors: displacement None, mount None, 6 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker BH Series Brake Motors"
+    },
+    {
+      "fact": "Parker Hydraulic Motors: displacement 8.6 in³/rev to 58.5 in³/rev, mount SAE A 2-Bolt, 15 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker Hydraulic Motors"
+    },
+    {
+      "fact": "Parker TB Series Torqmotors: displacement 2.2 in³/rev to 24 in³/rev, mount 2 Bolt SAE A, 4 Bolt and 2 Bolt, 79 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TB Series Torqmotors"
+    },
+    {
+      "fact": "Parker TC Series Torqmotors: displacement None, mount None, 42 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TC Series Torqmotors"
+    },
+    {
+      "fact": "Parker TF Series Torqmotors: displacement 4.9 in³/rev to 29.1 in³/rev, mount None, 450 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TF Series Torqmotors"
+    },
+    {
+      "fact": "Parker TG Series Torqmotors: displacement None, mount None, 14 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TG Series Torqmotors"
+    },
+    {
+      "fact": "Parker TJ Series Torqmotors: displacement None, mount None, 13 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TJ Series Torqmotors"
+    },
+    {
+      "fact": "Parker TK Series Torqmotors: displacement None, mount None, 37 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TK Series Torqmotors"
+    }
+  ],
+  "products": [
+    {
+      "slug": "fluidyne-wf104-series-orbital-motors-2-bolt-sae-a-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount and what is it used for?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount is a low-speed, high-torque orbital hydraulic motor, listed in 298 part numbers with displacement 80 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 2-bolt SAE A."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF104-1034 (1 1/4\" 14T spline shaft, 2-bolt SAE A mount, 7/8-14 O-ring ports) and WF104-50022Y (475 cm³/rev, 7/8\" 13T spline shaft, 2-bolt SAE A mount, 7/8-14 O-ring ports) are two of the 298 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount cover?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount spans 80 to 475 cm³/rev across 298 part numbers. That is 10 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount offer?",
+          "a": "The shaft options on the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount are 1 1/4\" keyed, 1\" keyed, 1 1/4\" 14T spline, 1\" SAE 6B spline and 4 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 298 part numbers of the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The mounting of the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount is 2-bolt SAE A, and the ports are 7/8-14 O-ring, 1 1/16-12 O-ring, G 1/2 BSP O-ring and 25 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount follow?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount names an SAE mounting flange, 2-bolt SAE A, which refers to the SAE J744 flange pattern. The ports are 7/8-14 O-ring, 1 1/16-12 O-ring, G 1/2 BSP O-ring and 25 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Hose or tube connects to the ports, 7/8-14 O-ring, 1 1/16-12 O-ring, G 1/2 BSP O-ring and 25 more, and the load fits on the shaft, 1 1/4\" keyed, 1\" keyed, 1 1/4\" 14T spline, 1\" SAE 6B spline and 4 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "For the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as flange rotated 90° and reverse on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount is listed with 2-bolt SAE A mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount differ from the Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "This one has 80 to 475 cm³/rev with 2-bolt SAE A mounting, in 298 part numbers. The [Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount](/p/fluidyne-fm1-series-orbital-motors-2-bolt-sae-a-mount) has 50 to 400 cm³/rev with 2-bolt SAE A mounting, in 85 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf104-series-orbital-motors-2-bolt-sae-b-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount and what is it used for?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount is a low-speed, high-torque orbital hydraulic motor, listed in 115 part numbers with displacement 80 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 2-bolt SAE B."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF104-1193 (80 cm³/rev, 1\" SAE 6B spline shaft, 2-bolt SAE B mount, 7/8-14 O-ring ports) and WF104-3670Y (475 cm³/rev, 1\" SAE 6B spline shaft, 2-bolt SAE B mount, 7/8-14 O-ring Dual Porting ports) are two of the 115 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount cover?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount spans 80 to 475 cm³/rev across 115 part numbers. That is 10 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount offer?",
+          "a": "The shaft options on the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount are 7/8\" 13T spline, 1 1/4\" 14T spline, 1 1/4\" keyed, 1\" SAE 6B spline and 4 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 115 part numbers of the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount have?",
+          "a": "The mounting of the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount is 2-bolt SAE B, and the ports are 7/8-14 O-ring, 1 1/16-12 O-ring, 1/2\" & 5/8\" Manifold, 3X3/8-16 and 16 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount follow?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount names an SAE mounting flange, 2-bolt SAE B, which refers to the SAE J744 flange pattern. The ports are 7/8-14 O-ring, 1 1/16-12 O-ring, 1/2\" & 5/8\" Manifold, 3X3/8-16 and 16 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount?",
+          "a": "Hose or tube connects to the ports, 7/8-14 O-ring, 1 1/16-12 O-ring, 1/2\" & 5/8\" Manifold, 3X3/8-16 and 16 more, and the load fits on the shaft, 7/8\" 13T spline, 1 1/4\" 14T spline, 1 1/4\" keyed, 1\" SAE 6B spline and 4 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount?",
+          "a": "For the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as reverse and flange rotated 90° on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount is listed with 2-bolt SAE B mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount differ from the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "This one has 80 to 475 cm³/rev with 2-bolt SAE B mounting, in 115 part numbers. The [Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount](/p/fluidyne-wf104-series-orbital-motors-2-bolt-sae-a-mount) has 80 to 475 cm³/rev with 2-bolt SAE A mounting, in 298 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount in Dubai for export?",
+          "a": "Yes. Indus stocks the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf104-series-orbital-motors-4-bolt-magneto-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount and what is it used for?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount is a low-speed, high-torque orbital hydraulic motor, listed in 22 part numbers with displacement 4.9 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF104-3311 (4.9 cm³/rev, 1\" keyed shaft, 4-bolt magneto mount, 7/8-14 O-ring ports) and WF104-3382Y (475 cm³/rev, 1 1/4\" keyed shaft, 4-bolt magneto mount, 7/8-14 O-ring , Dual Porting ports) are two of the 22 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount cover?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount spans 4.9 to 475 cm³/rev across 22 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount offer?",
+          "a": "The shaft options on the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount are 1 1/4\" keyed, 1 1/4\" 14T spline, 1\" keyed, 1\" SAE 6B spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 22 part numbers of the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount have?",
+          "a": "The mounting of the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount is 4-bolt magneto, and the ports are 7/8-14 O-ring, 7/8-14 O-ring Dual Porting, 7/8-14 O-ring , Dual Porting and 3 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount follow?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount names an SAE mounting flange, 4-bolt magneto, which refers to the SAE J744 flange pattern. The ports are 7/8-14 O-ring, 7/8-14 O-ring Dual Porting, 7/8-14 O-ring , Dual Porting and 3 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount?",
+          "a": "Hose or tube connects to the ports, 7/8-14 O-ring, 7/8-14 O-ring Dual Porting, 7/8-14 O-ring , Dual Porting and 3 more, and the load fits on the shaft, 1 1/4\" keyed, 1 1/4\" 14T spline, 1\" keyed, 1\" SAE 6B spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount?",
+          "a": "For the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as CCW, reverse and flange rotated 90° on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount is listed with 4-bolt magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount differ from the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount?",
+          "a": "This one has 4.9 to 475 cm³/rev with 4-bolt magneto mounting, in 22 part numbers. The [Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount](/p/fluidyne-wf104-series-orbital-motors-4-bolt-magneto-sae-a-mount) has 4.9 to 475 cm³/rev with 4-bolt magneto (SAE A) mounting, in 74 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount in Dubai for export?",
+          "a": "Yes. We keep the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf104-series-orbital-motors-4-bolt-magneto-sae-a-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount and what is it used for?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount is a low-speed, high-torque orbital hydraulic motor, listed in 74 part numbers with displacement 4.9 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt magneto (SAE A)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF104-1700 (4.9 cm³/rev, 1 1/4\" 14T spline shaft, 4-bolt magneto (SAE A) mount, 7/8-14 O-ring ports) and WF104-3407Y (475 cm³/rev, 1 1/4\" tapered, keyed shaft, 4-bolt magneto (SAE A) mount, Dual Porting ports) are two of the 74 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount cover?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount spans 4.9 to 475 cm³/rev across 74 part numbers. That is 11 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount offer?",
+          "a": "The shaft options on the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount are 1 1/4\" 14T spline, 1 1/4\" keyed, 1\" SAE 6B spline, 1\" keyed and 5 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 74 part numbers of the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount have?",
+          "a": "The mounting of the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount is 4-bolt magneto (SAE A), and the ports are 7/8-14 O-ring, 7/8-14 O-ring Dual, 7/8-14 O-ring , Dual Porting and 12 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount follow?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount names an SAE mounting flange, 4-bolt magneto (SAE A), which refers to the SAE J744 flange pattern. The ports are 7/8-14 O-ring, 7/8-14 O-ring Dual, 7/8-14 O-ring , Dual Porting and 12 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount?",
+          "a": "Hose or tube connects to the ports, 7/8-14 O-ring, 7/8-14 O-ring Dual, 7/8-14 O-ring , Dual Porting and 12 more, and the load fits on the shaft, 1 1/4\" 14T spline, 1 1/4\" keyed, 1\" SAE 6B spline, 1\" keyed and 5 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount?",
+          "a": "For the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as CCW, reverse and flange rotated 90° on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount is listed with 4-bolt magneto (SAE A) mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount differ from the WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount?",
+          "a": "This one has 4.9 to 475 cm³/rev with 4-bolt magneto (SAE A) mounting, in 74 part numbers. The [Fluidyne WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount](/p/fluidyne-wf101-series-orbital-motors-4-bolt-magneto-sae-a-mount) has 36 to 400 cm³/rev with 4-bolt magneto (SAE A) mounting, in 10 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf104-series-orbital-motors-4-bolt-sae-a-square-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount and what is it used for?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount is a low-speed, high-torque orbital hydraulic motor, listed in 114 part numbers with displacement 80 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt SAE A square."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF104-1246 (80 cm³/rev, 1 1/4\" keyed shaft, 4-bolt SAE A square mount, 7/8-14 O-ring ports) and WF104-50055Y (475 cm³/rev, 1 1/4\" tapered, keyed shaft, 4-bolt SAE A square mount, 7/8-14 O-ring , DUAL PORTING ports) are two of the 114 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount cover?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount spans 80 to 475 cm³/rev across 114 part numbers. That is 10 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount offer?",
+          "a": "The shaft options on the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount are 1 1/4\" 14T spline, 32 mm keyed, 1 1/4\" keyed, 1\" keyed and 3 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 114 part numbers of the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount have?",
+          "a": "The mounting of the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount is 4-bolt SAE A square, and the ports are 7/8-14 O-ring, G 1/2 BSP O-ring, 7/8-14 O-ring Dual Porting and 15 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount follow?",
+          "a": "The Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount names an SAE mounting flange, 4-bolt SAE A square, which refers to the SAE J744 flange pattern. The ports are 7/8-14 O-ring, G 1/2 BSP O-ring, 7/8-14 O-ring Dual Porting and 15 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount?",
+          "a": "Hose or tube connects to the ports, 7/8-14 O-ring, G 1/2 BSP O-ring, 7/8-14 O-ring Dual Porting and 15 more, and the load fits on the shaft, 1 1/4\" 14T spline, 32 mm keyed, 1 1/4\" keyed, 1\" keyed and 3 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount?",
+          "a": "For the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount is listed with 4-bolt SAE A square mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount differ from the Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount?",
+          "a": "This one has 80 to 475 cm³/rev with 4-bolt SAE A square mounting, in 114 part numbers. The [Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount](/p/fluidyne-fm1-series-orbital-motors-4-bolt-sae-a-square-mount) has 50 to 400 cm³/rev with 4-bolt SAE A square mounting, in 58 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. The Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf105-series-orbital-motors-wheel-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF105 Series Orbital Motors, Wheel Mount and what is it used for?",
+          "a": "The Fluidyne WF105 Series Orbital Motors, Wheel Mount is a low-speed, high-torque orbital hydraulic motor, listed in 74 part numbers with displacement 80 to 375 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt wheel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF105 Series Orbital Motors, Wheel Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF105-1001 (80 cm³/rev, 1 1/4\" tapered, keyed shaft, 4-bolt wheel mount, O-ring ports) and WF105-1526 (375 cm³/rev, 1 1/4\" tapered, keyed shaft, 4-bolt wheel mount, O-ring ports) are two of the 74 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF105 Series Orbital Motors, Wheel Mount cover?",
+          "a": "The Fluidyne WF105 Series Orbital Motors, Wheel Mount spans 80 to 375 cm³/rev across 74 part numbers. That is 8 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF105 Series Orbital Motors, Wheel Mount offer?",
+          "a": "The shaft options on the Fluidyne WF105 Series Orbital Motors, Wheel Mount are 1 1/4\" tapered, keyed, 1 1/4\" keyed, 1 1/4\" 14T spline, 1/4\" tapered, keyed and 3 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF105 Series Orbital Motors, Wheel Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 74 part numbers of the Fluidyne WF105 Series Orbital Motors, Wheel Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF105 Series Orbital Motors, Wheel Mount have?",
+          "a": "The mounting of the Fluidyne WF105 Series Orbital Motors, Wheel Mount is 4-bolt wheel, and the ports are O-ring, 7/8-14 O-ring, O-ring 180° Apart and 12 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF105 Series Orbital Motors, Wheel Mount follow?",
+          "a": "The listing names no dimensional standard for the Fluidyne WF105 Series Orbital Motors, Wheel Mount. The mount is 4-bolt wheel, the shaft options are 1 1/4\" tapered, keyed, 1 1/4\" keyed, 1 1/4\" 14T spline, 1/4\" tapered, keyed and 3 more, and the ports are O-ring, 7/8-14 O-ring, O-ring 180° Apart and 12 more. Identify the motor by its part number and match the mounting and ports to your machine."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF105 Series Orbital Motors, Wheel Mount?",
+          "a": "Hose or tube connects to the ports, O-ring, 7/8-14 O-ring, O-ring 180° Apart and 12 more, and the load fits on the shaft, 1 1/4\" tapered, keyed, 1 1/4\" keyed, 1 1/4\" 14T spline, 1/4\" tapered, keyed and 3 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF105 Series Orbital Motors, Wheel Mount?",
+          "a": "For the Fluidyne WF105 Series Orbital Motors, Wheel Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as reverse on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF105 Series Orbital Motors, Wheel Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF105 Series Orbital Motors, Wheel Mount is listed with 4-bolt wheel mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF105 Series Orbital Motors, Wheel Mount differ from the Fluidyne 500 Series Orbital Motors, Wheel Mount?",
+          "a": "This one has 80 to 375 cm³/rev with 4-bolt wheel mounting, in 74 part numbers. The [Fluidyne 500 Series Orbital Motors, Wheel Mount](/p/fluidyne-500-series-orbital-motors-wheel-mount) has 125 to 750 cm³/rev with 4-bolt wheel, Wheel mount mounting, in 76 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Fluidyne WF105 Series Orbital Motors, Wheel Mount in Dubai for export?",
+          "a": "Yes. Indus stocks the Fluidyne WF105 Series Orbital Motors, Wheel Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf106-series-orbital-motors-4-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount and what is it used for?",
+          "a": "The Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 14 part numbers with displacement 80 to 375 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF106-1008 (80 cm³/rev, 4-bolt mount, 7/8'-14 O-ring ports) and WF106-1037 (375 cm³/rev, No Shaft shaft, 4-bolt mount, 1 1/16-12 O-ring 180° Apart ports) are two of the 14 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount cover?",
+          "a": "The Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount spans 80 to 375 cm³/rev across 14 part numbers. That is 8 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount offer?",
+          "a": "The shaft options on the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount are No Shaft. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 14 part numbers of the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount have?",
+          "a": "The mounting of the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount is 4-bolt, and the ports are 7/8-14 O-ring, 7/8'-14 O-ring, 1 1/16-12 O-ring 180° Apart and 3 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount follow?",
+          "a": "The listing names no dimensional standard for the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount. The mount is 4-bolt, the shaft options are No Shaft, and the ports are 7/8-14 O-ring, 7/8'-14 O-ring, 1 1/16-12 O-ring 180° Apart and 3 more. Identify the motor by its part number and match the mounting and ports to your machine."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, 7/8-14 O-ring, 7/8'-14 O-ring, 1 1/16-12 O-ring 180° Apart and 3 more, and the load fits on the shaft, No Shaft. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "For the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount is listed with 4-bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount differ from the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "This one has 80 to 375 cm³/rev with 4-bolt mounting, in 14 part numbers. The [Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount](/p/fluidyne-wf112-series-orbital-motors-4-bolt-mount) has 245 to 985 cm³/rev with 4-bolt mounting, in 10 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf109-series-orbital-motors-4-bolt-sae-b-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount and what is it used for?",
+          "a": "The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount is a low-speed, high-torque orbital hydraulic motor, listed in 48 part numbers with displacement 160 to 630 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt SAE B."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF109-1102 (160 cm³/rev, 1 1/4\" keyed shaft, 4-bolt SAE B mount, 7/16-20 O-ring ports) and WF109-1455 (630 cm³/rev, 1 5/8\" tapered shaft, 4-bolt SAE B mount, O-ring ports) are two of the 48 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount cover?",
+          "a": "The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount spans 160 to 630 cm³/rev across 48 part numbers. That is 7 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount offer?",
+          "a": "The shaft options on the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount are 1 1/4\" keyed, 1 1/4\" 14T spline, 1 5/8\" tapered, 40 mm keyed and 1 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 48 part numbers of the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount have?",
+          "a": "The mounting of the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount is 4-bolt SAE B, and the ports are 1 1/16-12 O-ring, G 3/4 BSP O-ring, Flange and 6 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount follow?",
+          "a": "The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount names an SAE mounting flange, 4-bolt SAE B, which refers to the SAE J744 flange pattern. The ports are 1 1/16-12 O-ring, G 3/4 BSP O-ring, Flange and 6 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount?",
+          "a": "Hose or tube connects to the ports, 1 1/16-12 O-ring, G 3/4 BSP O-ring, Flange and 6 more, and the load fits on the shaft, 1 1/4\" keyed, 1 1/4\" 14T spline, 1 5/8\" tapered, 40 mm keyed and 1 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount?",
+          "a": "For the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount is listed with 4-bolt SAE B mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount differ from the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "This one has 160 to 630 cm³/rev with 4-bolt SAE B mounting, in 48 part numbers. The [Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount](/p/fluidyne-wf109-series-orbital-motors-4-bolt-sae-c-mount) has 160 to 630 cm³/rev with 4-bolt SAE C mounting, in 56 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf109-series-orbital-motors-4-bolt-sae-c-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount and what is it used for?",
+          "a": "The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount is a low-speed, high-torque orbital hydraulic motor, listed in 56 part numbers with displacement 160 to 630 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt SAE C."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF109-1287 (160 cm³/rev, 1 1/4\" 14T spline shaft, 4-bolt SAE C mount, 1 1/16-12 O-ring ports) and WF109-1400 (630 cm³/rev, 1 1/2\" 17T spline shaft, 4-bolt SAE C mount, 1 1/16-12 O-ring ports) are two of the 56 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount cover?",
+          "a": "The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount spans 160 to 630 cm³/rev across 56 part numbers. That is 7 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount offer?",
+          "a": "The shaft options on the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount are 1 1/4\" 14T spline, 1 1/2\" 17T spline, 40 mm keyed, 1 1/4\" keyed and 2 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 56 part numbers of the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount have?",
+          "a": "The mounting of the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount is 4-bolt SAE C, and the ports are 1 1/16-12 O-ring, G 3/4 BSP O-ring, Flange and 4 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount follow?",
+          "a": "The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount names an SAE mounting flange, 4-bolt SAE C, which refers to the SAE J744 flange pattern. The ports are 1 1/16-12 O-ring, G 3/4 BSP O-ring, Flange and 4 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Hose or tube connects to the ports, 1 1/16-12 O-ring, G 3/4 BSP O-ring, Flange and 4 more, and the load fits on the shaft, 1 1/4\" 14T spline, 1 1/2\" 17T spline, 40 mm keyed, 1 1/4\" keyed and 2 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "For the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount is listed with 4-bolt SAE C mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount differ from the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount?",
+          "a": "This one has 160 to 630 cm³/rev with 4-bolt SAE C mounting, in 56 part numbers. The [Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount](/p/fluidyne-wf109-series-orbital-motors-4-bolt-sae-b-mount) has 160 to 630 cm³/rev with 4-bolt SAE B mounting, in 48 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf112-series-orbital-motors-4-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount and what is it used for?",
+          "a": "The Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 10 part numbers with displacement 245 to 985 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF112-5001 (245 cm³/rev, 50 mm keyed shaft, 4-bolt mount, O-ring Staggered ports) and WF112-1220 (985 cm³/rev, 50 mm keyed shaft, 4-bolt mount, G1 (BSP) O-ring ports) are two of the 10 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount cover?",
+          "a": "The Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount spans 245 to 985 cm³/rev across 10 part numbers. That is 7 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount offer?",
+          "a": "The shaft options on the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount are 50 mm keyed, 1 1/2\" keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 10 part numbers of the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount have?",
+          "a": "The mounting of the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount is 4-bolt, and the ports are G1 (BSP) O-ring, Staggered, O-ring Staggered. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount follow?",
+          "a": "The listing names no dimensional standard for the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount. The mount is 4-bolt, the shaft options are 50 mm keyed, 1 1/2\" keyed, and the ports are G1 (BSP) O-ring, Staggered, O-ring Staggered. Identify the motor by its part number and match the mounting and ports to your machine."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, G1 (BSP) O-ring, Staggered, O-ring Staggered, and the load fits on the shaft, 50 mm keyed, 1 1/2\" keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "For the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount is listed with 4-bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount differ from the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "This one has 245 to 985 cm³/rev with 4-bolt mounting, in 10 part numbers. The [Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount](/p/fluidyne-wf112-series-orbital-motors-4-bolt-sae-c-mount) has 195 to 985 cm³/rev with 4-bolt SAE C mounting, in 89 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf112-series-orbital-motors-4-bolt-sae-c-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount and what is it used for?",
+          "a": "The Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount is a low-speed, high-torque orbital hydraulic motor, listed in 89 part numbers with displacement 195 to 985 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt SAE C."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF112-1001 (195 cm³/rev, 1 1/2\" keyed shaft, 4-bolt SAE C mount, Flange ports) and WF112-1581 (985 cm³/rev, 1 1/2\" 17T spline shaft, 4-bolt SAE C mount, Staggered ports) are two of the 89 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount cover?",
+          "a": "The Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount spans 195 to 985 cm³/rev across 89 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount offer?",
+          "a": "The shaft options on the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount are 1 1/2\" 17T spline, 1 1/2\" keyed, 40 mm keyed, 1 3/4\" tapered, keyed and 5 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 89 part numbers of the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount have?",
+          "a": "The mounting of the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount is 4-bolt SAE C, and the ports are Staggered, G 1 (BSP) O-ring, O-ring Staggered and 25 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount follow?",
+          "a": "The Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount names an SAE mounting flange, 4-bolt SAE C, which refers to the SAE J744 flange pattern. The ports are Staggered, G 1 (BSP) O-ring, O-ring Staggered and 25 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Hose or tube connects to the ports, Staggered, G 1 (BSP) O-ring, O-ring Staggered and 25 more, and the load fits on the shaft, 1 1/2\" 17T spline, 1 1/2\" keyed, 40 mm keyed, 1 3/4\" tapered, keyed and 5 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "For the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as reverse on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount is listed with 4-bolt SAE C mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount differ from the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "This one has 195 to 985 cm³/rev with 4-bolt SAE C mounting, in 89 part numbers. The [Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount](/p/fluidyne-wf109-series-orbital-motors-4-bolt-sae-c-mount) has 160 to 630 cm³/rev with 4-bolt SAE C mounting, in 56 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf113-series-orbital-motors-wheel-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF113 Series Orbital Motors, Wheel Mount and what is it used for?",
+          "a": "The Fluidyne WF113 Series Orbital Motors, Wheel Mount is a low-speed, high-torque orbital hydraulic motor, listed in 29 part numbers with displacement 195 to 985 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt wheel, Wheel mount."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF113 Series Orbital Motors, Wheel Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF113-1053 (195 cm³/rev, 1 3/4\" tapered, keyed shaft, 4-bolt wheel mount, 3/4\" ports) and WF113-1081 (985 cm³/rev, 1 1/2\" 17T spline shaft, 4-bolt wheel mount, Staggered ports) are two of the 29 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF113 Series Orbital Motors, Wheel Mount cover?",
+          "a": "The Fluidyne WF113 Series Orbital Motors, Wheel Mount spans 195 to 985 cm³/rev across 29 part numbers. That is 7 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF113 Series Orbital Motors, Wheel Mount offer?",
+          "a": "The shaft options on the Fluidyne WF113 Series Orbital Motors, Wheel Mount are 1 3/4\" tapered, 1 1/2\" keyed, 1 3/4\" tapered, keyed, 40 mm keyed and 2 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF113 Series Orbital Motors, Wheel Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 29 part numbers of the Fluidyne WF113 Series Orbital Motors, Wheel Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF113 Series Orbital Motors, Wheel Mount have?",
+          "a": "The mounting of the Fluidyne WF113 Series Orbital Motors, Wheel Mount is 4-bolt wheel, Wheel mount, and the ports are Staggered, 1 5/16-12 O-ring Staggered, 3/4\" Split Flanged and 14 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF113 Series Orbital Motors, Wheel Mount follow?",
+          "a": "The listing names no dimensional standard for the Fluidyne WF113 Series Orbital Motors, Wheel Mount. The mount is 4-bolt wheel, Wheel mount, the shaft options are 1 3/4\" tapered, 1 1/2\" keyed, 1 3/4\" tapered, keyed, 40 mm keyed and 2 more, and the ports are Staggered, 1 5/16-12 O-ring Staggered, 3/4\" Split Flanged and 14 more. Identify the motor by its part number and match the mounting and ports to your machine."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF113 Series Orbital Motors, Wheel Mount?",
+          "a": "Hose or tube connects to the ports, Staggered, 1 5/16-12 O-ring Staggered, 3/4\" Split Flanged and 14 more, and the load fits on the shaft, 1 3/4\" tapered, 1 1/2\" keyed, 1 3/4\" tapered, keyed, 40 mm keyed and 2 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF113 Series Orbital Motors, Wheel Mount?",
+          "a": "For the Fluidyne WF113 Series Orbital Motors, Wheel Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF113 Series Orbital Motors, Wheel Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF113 Series Orbital Motors, Wheel Mount is listed with 4-bolt wheel, Wheel mount mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF113 Series Orbital Motors, Wheel Mount differ from the Fluidyne 500 Series Orbital Motors, Wheel Mount?",
+          "a": "This one has 195 to 985 cm³/rev with 4-bolt wheel, Wheel mount mounting, in 29 part numbers. The [Fluidyne 500 Series Orbital Motors, Wheel Mount](/p/fluidyne-500-series-orbital-motors-wheel-mount) has 125 to 750 cm³/rev with 4-bolt wheel, Wheel mount mounting, in 76 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF113 Series Orbital Motors, Wheel Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Fluidyne WF113 Series Orbital Motors, Wheel Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf114-series-orbital-motors-4-bolt-sae-c-bearingless-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount and what is it used for?",
+          "a": "The Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount is a low-speed, high-torque orbital hydraulic motor, listed in 10 part numbers with displacement 195 to 985 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt SAE C bearingless, 4-bolt SAE C."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF114-1031 (195 cm³/rev, 4-bolt SAE C bearingless mount, 1 5/16-12 O-ring Staggered ports) and WF114-1036 (985 cm³/rev, 4-bolt SAE C bearingless mount, 1 5/16-12 O-ring Staggered ports) are two of the 10 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount cover?",
+          "a": "The Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount spans 195 to 985 cm³/rev across 10 part numbers. That is 7 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount offer?",
+          "a": "The shaft options on the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount are No Shaft. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 10 part numbers of the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount have?",
+          "a": "The mounting of the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount is 4-bolt SAE C bearingless, 4-bolt SAE C, and the ports are 1 5/16-12 O-ring Staggered, 3/4\" Split Flange Staggered, 3/4\" 4 Bolt Split Flanged and 1 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount follow?",
+          "a": "The Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount names an SAE mounting flange, 4-bolt SAE C bearingless, 4-bolt SAE C, which refers to the SAE J744 flange pattern. The ports are 1 5/16-12 O-ring Staggered, 3/4\" Split Flange Staggered, 3/4\" 4 Bolt Split Flanged and 1 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount?",
+          "a": "Hose or tube connects to the ports, 1 5/16-12 O-ring Staggered, 3/4\" Split Flange Staggered, 3/4\" 4 Bolt Split Flanged and 1 more, and the load fits on the shaft, No Shaft. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount?",
+          "a": "For the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount is listed with 4-bolt SAE C bearingless, 4-bolt SAE C mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount differ from the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "This one has 195 to 985 cm³/rev with 4-bolt SAE C bearingless, 4-bolt SAE C mounting, in 10 part numbers. The [Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount](/p/fluidyne-wf109-series-orbital-motors-4-bolt-sae-c-mount) has 160 to 630 cm³/rev with 4-bolt SAE C mounting, in 56 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf119-series-orbital-motors-4-bolt-sae-c-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount and what is it used for?",
+          "a": "The Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount is a low-speed, high-torque orbital hydraulic motor, listed in 13 part numbers with displacement 315 to 1000 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt SAE C, SAE C-Mount."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF119-1035 (1/8\" 16T spline shaft, 4-bolt SAE C mount, 1-5/16-12 O-ring ports) and WF119-1117 (1,000 cm³/rev, 1/4\" keyed shaft, 4-bolt SAE C mount, 1-5/16 O-ring ports) are two of the 13 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount cover?",
+          "a": "The Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount spans 315 to 1000 cm³/rev across 13 part numbers. That is 5 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount offer?",
+          "a": "The shaft options on the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount are 2 1/4\" tapered, keyed, 2 1/4\" keyed, 1/8\" 16T spline, 2 1/8\" 16T spline and 3 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 13 part numbers of the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount have?",
+          "a": "The mounting of the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount is 4-bolt SAE C, SAE C-Mount, and the ports are 1-5/16 O-ring, 1 5/16-12 O-ring, 1-5/16-12 O-ring and 1 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount follow?",
+          "a": "The Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount names an SAE mounting flange, 4-bolt SAE C, SAE C-Mount, which refers to the SAE J744 flange pattern. The ports are 1-5/16 O-ring, 1 5/16-12 O-ring, 1-5/16-12 O-ring and 1 more. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Hose or tube connects to the ports, 1-5/16 O-ring, 1 5/16-12 O-ring, 1-5/16-12 O-ring and 1 more, and the load fits on the shaft, 2 1/4\" tapered, keyed, 2 1/4\" keyed, 1/8\" 16T spline, 2 1/8\" 16T spline and 3 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "For the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount is listed with 4-bolt SAE C, SAE C-Mount mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount differ from the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount?",
+          "a": "This one has 315 to 1000 cm³/rev with 4-bolt SAE C, SAE C-Mount mounting, in 13 part numbers. The [Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount](/p/fluidyne-wf109-series-orbital-motors-4-bolt-sae-c-mount) has 160 to 630 cm³/rev with 4-bolt SAE C mounting, in 56 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf129-series-orbital-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Fluidyne WF129 Series Orbital Motors and what are they used for?",
+          "a": "The Fluidyne WF129 Series Orbital Motors are a low-speed, high-torque orbital hydraulic motor, listed in 5 part numbers with displacement 8 to 32 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 3-bolt SAE C."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF129 Series Orbital Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF129-0327 (8 cm³/rev, 16 mm keyed shaft, 3-bolt SAE C mount, G 3/8 BSP ports) and WF129-0489 (8 cm³/rev, 16 mm keyed shaft, 3-bolt SAE C mount, G 3/8 (BSP) ports) are two of the 5 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Fluidyne WF129 Series Orbital Motors cover?",
+          "a": "The Fluidyne WF129 Series Orbital Motors spans 8 to 32 cm³/rev across 5 part numbers. That is 3 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Fluidyne WF129 Series Orbital Motors offer?",
+          "a": "The shaft options on the Fluidyne WF129 Series Orbital Motors are 16 mm keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Fluidyne WF129 Series Orbital Motors have?",
+          "a": "The listing gives no pressure or speed figures for the 5 part numbers of the Fluidyne WF129 Series Orbital Motors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Fluidyne WF129 Series Orbital Motors have?",
+          "a": "The mounting of the Fluidyne WF129 Series Orbital Motors are 3-bolt SAE C, and the ports are G 3/8\", G 3/8 BSP, G 3/8 (BSP). Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Fluidyne WF129 Series Orbital Motors follow?",
+          "a": "The Fluidyne WF129 Series Orbital Motors names an SAE mounting flange, 3-bolt SAE C, which refers to the SAE J744 flange pattern. The ports are G 3/8\", G 3/8 BSP, G 3/8 (BSP). Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF129 Series Orbital Motors?",
+          "a": "Hose or tube connects to the ports, G 3/8\", G 3/8 BSP, G 3/8 (BSP), and the load fits on the shaft, 16 mm keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF129 Series Orbital Motors?",
+          "a": "For the Fluidyne WF129 Series Orbital Motors, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF129 Series Orbital Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF129 Series Orbital Motors are listed with 3-bolt SAE C mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Fluidyne WF129 Series Orbital Motors differ from the Fluidyne WF104 Series Orbital Motors?",
+          "a": "This one has 8 to 32 cm³/rev with 3-bolt SAE C mounting, in 5 part numbers. The [Fluidyne WF104 Series Orbital Motors](/p/fluidyne-wf104-series-orbital-motors) has 80 to 400 cm³/rev with 4-bolt SAE A, 2-bolt SAE A square, 4-bolt SAE B mounting, in 5 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF129 Series Orbital Motors from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Fluidyne WF129 Series Orbital Motors at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf129-series-orbital-motors-2-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount and what is it used for?",
+          "a": "The Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 22 part numbers with displacement 8 to 50 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 2-bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF129-0097 (8 cm³/rev, 5/8\" keyed shaft, 2-bolt mount, End ports) and WF129-0454 (50 cm³/rev, 16 mm keyed shaft, 2-bolt mount, G3/8 (BSP) ports) are two of the 22 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount cover?",
+          "a": "The Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount spans 8 to 50 cm³/rev across 22 part numbers. That is 5 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount offer?",
+          "a": "The shaft options on the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount are 5/8\" keyed, 16 mm keyed, 9T spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 22 part numbers of the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount have?",
+          "a": "The mounting of the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount is 2-bolt, and the ports are G3/8 (BSP), Side, G3/8 (BSP) Side Ported and 9 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount follow?",
+          "a": "The listing names no dimensional standard for the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount. The mount is 2-bolt, the shaft options are 5/8\" keyed, 16 mm keyed, 9T spline, and the ports are G3/8 (BSP), Side, G3/8 (BSP) Side Ported and 9 more. Identify the motor by its part number and match the mounting and ports to your machine."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, G3/8 (BSP), Side, G3/8 (BSP) Side Ported and 9 more, and the load fits on the shaft, 5/8\" keyed, 16 mm keyed, 9T spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount?",
+          "a": "For the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as reverse on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount is listed with 2-bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount differ from the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount?",
+          "a": "This one has 8 to 50 cm³/rev with 2-bolt mounting, in 22 part numbers. The [Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount](/p/fluidyne-wf129-series-orbital-motors-3-bolt-mount) has 8 to 20 cm³/rev with 3-bolt mounting, in 6 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf129-series-orbital-motors-3-bolt-5-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount and what is it used for?",
+          "a": "The Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 60 part numbers with displacement 8 to 50 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 3-bolt / 5-bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF129-0017 (8 cm³/rev, 5/8\" keyed shaft, 3-bolt / 5-bolt mount, 9/16-18 O- Ring Side Ported ports) and WF129-0505 (50 cm³/rev, 5/8\" keyed shaft, 3-bolt / 5-bolt mount, Side Ported ports) are two of the 60 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount cover?",
+          "a": "The Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount spans 8 to 50 cm³/rev across 60 part numbers. That is 6 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount offer?",
+          "a": "The shaft options on the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount are 5/8\" keyed, 9T spline, 16 mm keyed, 18 mm keyed and 1 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 60 part numbers of the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount have?",
+          "a": "The mounting of the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount is 3-bolt / 5-bolt, and the ports are G3/8 (BSP) Side Ported, 9/16-18 O- Ring End Ported, 9/16-18 O- Ring Side Ported and 18 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount follow?",
+          "a": "The listing names no dimensional standard for the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount. The mount is 3-bolt / 5-bolt, the shaft options are 5/8\" keyed, 9T spline, 16 mm keyed, 18 mm keyed and 1 more, and the ports are G3/8 (BSP) Side Ported, 9/16-18 O- Ring End Ported, 9/16-18 O- Ring Side Ported and 18 more. Identify the motor by its part number and match the mounting and ports to your machine."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, G3/8 (BSP) Side Ported, 9/16-18 O- Ring End Ported, 9/16-18 O- Ring Side Ported and 18 more, and the load fits on the shaft, 5/8\" keyed, 9T spline, 16 mm keyed, 18 mm keyed and 1 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount?",
+          "a": "For the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount is listed with 3-bolt / 5-bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount differ from the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount?",
+          "a": "This one has 8 to 50 cm³/rev with 3-bolt / 5-bolt mounting, in 60 part numbers. The [Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount](/p/fluidyne-wf129-series-orbital-motors-3-bolt-mount) has 8 to 20 cm³/rev with 3-bolt mounting, in 6 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf129-series-orbital-motors-3-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount and what is it used for?",
+          "a": "The Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 6 part numbers with displacement 8 to 20 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 3-bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF129-5004 (8 cm³/rev, 5/8\" 9T spline shaft, 3-bolt mount, 9/16-18 O-ring ports) and WF129-0337 (20 cm³/rev, 9T spline shaft, 3-bolt mount, G3/8 (BSP) ports) are two of the 6 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount cover?",
+          "a": "The Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount spans 8 to 20 cm³/rev across 6 part numbers. That is 3 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount offer?",
+          "a": "The shaft options on the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount are 16 mm keyed, 9T spline, 5/8\" 9T spline, 18 mm keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount have?",
+          "a": "The listing gives no pressure or speed figures for the 6 part numbers of the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount have?",
+          "a": "The mounting of the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount is 3-bolt, and the ports are G3/8 (BSP), 9/16-18 O-ring, G 3/8 (BSP) and 2 more. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount follow?",
+          "a": "The listing names no dimensional standard for the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount. The mount is 3-bolt, the shaft options are 16 mm keyed, 9T spline, 5/8\" 9T spline, 18 mm keyed, and the ports are G3/8 (BSP), 9/16-18 O-ring, G 3/8 (BSP) and 2 more. Identify the motor by its part number and match the mounting and ports to your machine."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, G3/8 (BSP), 9/16-18 O-ring, G 3/8 (BSP) and 2 more, and the load fits on the shaft, 16 mm keyed, 9T spline, 5/8\" 9T spline, 18 mm keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount?",
+          "a": "For the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount is listed with 3-bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount differ from the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount?",
+          "a": "This one has 8 to 20 cm³/rev with 3-bolt mounting, in 6 part numbers. The [Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount](/p/fluidyne-wf129-series-orbital-motors-3-bolt-5-bolt-mount) has 8 to 50 cm³/rev with 3-bolt / 5-bolt mounting, in 60 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-wf130-series-orbital-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Fluidyne WF130 Series Orbital Motors and what are they used for?",
+          "a": "The Fluidyne WF130 Series Orbital Motors are a low-speed, high-torque orbital hydraulic motor, listed in 1 part numbers with displacement 160 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-bolt square."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Fluidyne WF130 Series Orbital Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example WF130-1083 (160 cm³/rev, 1\" SAE 6B spline shaft, 4-bolt square mount, 7/8-14 W/7/16-20 Drain ports) and WF130-1083 (160 cm³/rev, 1\" SAE 6B spline shaft, 4-bolt square mount, 7/8-14 W/7/16-20 Drain ports) are two of the 1 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Fluidyne WF130 Series Orbital Motors cover?",
+          "a": "The Fluidyne WF130 Series Orbital Motors spans 160 cm³/rev across 1 part numbers. That is 1 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Fluidyne WF130 Series Orbital Motors offer?",
+          "a": "The shaft options on the Fluidyne WF130 Series Orbital Motors are 1\" SAE 6B spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Fluidyne WF130 Series Orbital Motors have?",
+          "a": "The listing gives no pressure or speed figures for the 1 part numbers of the Fluidyne WF130 Series Orbital Motors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Fluidyne WF130 Series Orbital Motors have?",
+          "a": "The mounting of the Fluidyne WF130 Series Orbital Motors are 4-bolt square, and the ports are 7/8-14 W/7/16-20 Drain. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Fluidyne WF130 Series Orbital Motors follow?",
+          "a": "The Fluidyne WF130 Series Orbital Motors names an SAE mounting flange, 4-bolt square, which refers to the SAE J744 flange pattern. The ports are 7/8-14 W/7/16-20 Drain. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Fluidyne WF130 Series Orbital Motors?",
+          "a": "Hose or tube connects to the ports, 7/8-14 W/7/16-20 Drain, and the load fits on the shaft, 1\" SAE 6B spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Fluidyne WF130 Series Orbital Motors?",
+          "a": "For the Fluidyne WF130 Series Orbital Motors, tell us the circuit pressure and flow so we confirm the part. Some part numbers carry a plugged case drain port, so connect or plug the drain as your circuit needs. Rotation is listed as CCW on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Fluidyne WF130 Series Orbital Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Fluidyne WF130 Series Orbital Motors are listed with 4-bolt square mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Fluidyne WF130 Series Orbital Motors differ from the Fluidyne WF104 Series Orbital Motors?",
+          "a": "This one has 160 cm³/rev with 4-bolt square mounting, in 1 part numbers. The [Fluidyne WF104 Series Orbital Motors](/p/fluidyne-wf104-series-orbital-motors) has 80 to 400 cm³/rev with 4-bolt SAE A, 2-bolt SAE A square, 4-bolt SAE B mounting, in 5 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Fluidyne WF130 Series Orbital Motors in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Fluidyne WF130 Series Orbital Motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}
