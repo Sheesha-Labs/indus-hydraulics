@@ -1,0 +1,559 @@
+{
+  "family": "electric-hoists",
+  "extraFacts": [
+    {
+      "fact": "Electric Chain Hoist — Type B listing: Size range 0.25 t to 2 t; Working load limit 0.25 to 2 t",
+      "source": "Indus Hydraulics listing for Electric Chain Hoist — Type B"
+    },
+    {
+      "fact": "Electric Chain Hoist — Type A listing: Size range 0.5 t to 3 t; Working load limit 0.5 to 3 t",
+      "source": "Indus Hydraulics listing for Electric Chain Hoist — Type A"
+    },
+    {
+      "fact": "Electric Chain Hoist — Type B listing: Size range 0.25 t to 2 t; Working load limit 0.25 to 2 t",
+      "source": "Indus Hydraulics listing for Electric Chain Hoist — Type B"
+    },
+    {
+      "fact": "Electric Chain Hoist — Type A listing: Size range 0.5 t to 3 t; Working load limit 0.5 to 3 t",
+      "source": "Indus Hydraulics listing for Electric Chain Hoist — Type A"
+    },
+    {
+      "fact": "Mini Electric Wire Rope Hoist — 220 V listing: Size range 100 / 200 kg to 400 / 800 kg; Working load limit 100 to 400 kg",
+      "source": "Indus Hydraulics listing for Mini Electric Wire Rope Hoist — 220 V"
+    },
+    {
+      "fact": "Mini Electric Wire Rope Hoist — 220 V listing: Working load limit 100 to 400 kg",
+      "source": "Indus Hydraulics listing for Mini Electric Wire Rope Hoist — 220 V"
+    },
+    {
+      "fact": "Mini Electric Wire Rope Hoist — 220 V listing: Working load limit 100 to 400 kg",
+      "source": "Indus Hydraulics listing for Mini Electric Wire Rope Hoist — 220 V"
+    },
+    {
+      "fact": "Foot-Mounted Electric Wire Rope Hoist — 2/1 Reeving listing: Working load limit Load rating on request",
+      "source": "Indus Hydraulics listing for Foot-Mounted Electric Wire Rope Hoist — 2/1 Reeving"
+    }
+  ],
+  "products": [
+    {
+      "slug": "electric-chain-hoist-type-a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Electric Chain Hoist, Type A used for?",
+          "a": "Electric Chain Hoist, Type A is an electric chain hoist for repetitive lifting, rated 0.5 to 3 t. It is listed in 4 sizes, 0.5 t to 3 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Electric Chain Hoist, Type A, such as IH-LR-EH-CA-0T5?",
+          "a": "Electric Chain Hoist, Type A part numbers begin with IH-LR-EH-CA and end in a size code: IH-LR-EH-CA-0T5 is the 0.5 t size and IH-LR-EH-CA-3T is the 3 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Electric Chain Hoist, Type A come in?",
+          "a": "Electric Chain Hoist, Type A is listed in 4 sizes, 0.5 t to 3 t, each with its own Indus part number, for example IH-LR-EH-CA-0T5 and IH-LR-EH-CA-3T. The table includes 0.5 t: WLL 0.5 t, proof load 6.3 kN and 3 t: WLL 3 t, proof load 37.5 kN."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Electric Chain Hoist, Type A?",
+          "a": "For Electric Chain Hoist, Type A, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Electric Chain Hoist, Type A?",
+          "a": "Electric Chain Hoist, Type A is listed with a working load limit 0.5 to 3 t. For example, 2 t: WLL 2 t, proof load 25 kN. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Electric Chain Hoist, Type A supplied in?",
+          "a": "The listing for Electric Chain Hoist, Type A does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Electric Chain Hoist, Type A?",
+          "a": "For Electric Chain Hoist, Type A, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Electric Chain Hoist, Type A connect to or work with?",
+          "a": "For Electric Chain Hoist, Type A, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Electric Chain Hoist, Type A be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Electric Chain Hoist, Type A examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "K",
+          "q": "How does Electric Chain Hoist, Type A differ from Electric Chain Hoist — Type B?",
+          "a": "Electric Chain Hoist, Type A differs from [Electric Chain Hoist — Type B](/p/electric-chain-hoist-type-b) in its size range 0.5 t to 3 t against 0.25 t to 2 t; working load limit 0.5 to 3 t against 0.25 to 2 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Electric Chain Hoist, Type A shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Electric Chain Hoist, Type A from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Electric Chain Hoist, Type A in stock in Dubai?",
+          "a": "Yes. We keep Electric Chain Hoist, Type A in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "electric-chain-hoist-type-b",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Electric Chain Hoist, Type B used for?",
+          "a": "Electric Chain Hoist, Type B is an electric chain hoist for repetitive lifting, rated 0.25 to 2 t. It is listed in 6 sizes, 0.25 t to 2 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Electric Chain Hoist, Type B, such as IH-LR-EH-CB-0T25?",
+          "a": "Electric Chain Hoist, Type B part numbers begin with IH-LR-EH-CB and end in a size code: IH-LR-EH-CB-0T25 is the 0.25 t size and IH-LR-EH-CB-2T is the 2 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Electric Chain Hoist, Type B come in?",
+          "a": "Electric Chain Hoist, Type B is listed in 6 sizes, 0.25 t to 2 t, each with its own Indus part number, for example IH-LR-EH-CB-0T25 and IH-LR-EH-CB-2T. The table includes 0.25 t: WLL 0.25 t, proof load 3.12 kN and 2 t: WLL 2 t, proof load 25 kN."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Electric Chain Hoist, Type B?",
+          "a": "For Electric Chain Hoist, Type B, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Electric Chain Hoist, Type B?",
+          "a": "Electric Chain Hoist, Type B is listed with a working load limit 0.25 to 2 t. For example, 1 t: WLL 1 t, proof load 12.5 kN. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Electric Chain Hoist, Type B supplied in?",
+          "a": "The listing for Electric Chain Hoist, Type B does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Electric Chain Hoist, Type B?",
+          "a": "For Electric Chain Hoist, Type B, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Electric Chain Hoist, Type B connect to or work with?",
+          "a": "For Electric Chain Hoist, Type B, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Electric Chain Hoist, Type B be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Electric Chain Hoist, Type B examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "K",
+          "q": "How does Electric Chain Hoist, Type B differ from Electric Chain Hoist — Type A?",
+          "a": "Electric Chain Hoist, Type B differs from [Electric Chain Hoist — Type A](/p/electric-chain-hoist-type-a) in its size range 0.25 t to 2 t against 0.5 t to 3 t; working load limit 0.25 to 2 t against 0.5 to 3 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Electric Chain Hoist, Type B shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Electric Chain Hoist, Type B from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Electric Chain Hoist, Type B in stock in Dubai?",
+          "a": "Yes, Electric Chain Hoist, Type B is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "electric-chain-hoist-type-hhbb",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Electric Chain Hoist, Type HHBB used for?",
+          "a": "Electric Chain Hoist, Type HHBB is an electric chain hoist for repetitive lifting, rated 0.5 to 5 t. It is listed in 7 sizes, 0.5 t to 5 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Electric Chain Hoist, Type HHBB, such as IH-LR-EH-HHBB-0P5T?",
+          "a": "Electric Chain Hoist, Type HHBB part numbers begin with IH-LR-EH-HHBB and end in a size code: IH-LR-EH-HHBB-0P5T is the 0.5 t size and IH-LR-EH-HHBB-5T is the 5 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Electric Chain Hoist, Type HHBB come in?",
+          "a": "Electric Chain Hoist, Type HHBB is listed in 7 sizes, 0.5 t to 5 t, each with its own Indus part number, for example IH-LR-EH-HHBB-0P5T and IH-LR-EH-HHBB-5T. The table includes 0.5 t: WLL 0.5 t and 5 t: WLL 5 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Electric Chain Hoist, Type HHBB?",
+          "a": "For Electric Chain Hoist, Type HHBB, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Electric Chain Hoist, Type HHBB?",
+          "a": "Electric Chain Hoist, Type HHBB is listed with a working load limit 0.5 to 5 t. For example, 1 t, 2 falls: WLL 1 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Electric Chain Hoist, Type HHBB made from, and what finish does it have?",
+          "a": "For Electric Chain Hoist, Type HHBB, the material is Steel body, alloy load chain and forged hook; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Electric Chain Hoist, Type HHBB?",
+          "a": "Electric Chain Hoist, Type HHBB is listed to Electric chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Electric Chain Hoist, Type HHBB connect to or work with?",
+          "a": "For Electric Chain Hoist, Type HHBB, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Electric Chain Hoist, Type HHBB be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Electric Chain Hoist, Type HHBB examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "K",
+          "q": "How does Electric Chain Hoist, Type HHBB differ from Electric Chain Hoist — Type B?",
+          "a": "Electric Chain Hoist, Type HHBB differs from [Electric Chain Hoist — Type B](/p/electric-chain-hoist-type-b) in its size range 0.5 t to 5 t against 0.25 t to 2 t; working load limit 0.5 to 5 t against 0.25 to 2 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Electric Chain Hoist, Type HHBB shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Electric Chain Hoist, Type HHBB from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Electric Chain Hoist — Type HHBB available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Electric Chain Hoist — Type HHBB is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "electric-chain-hoist-type-vkl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Electric Chain Hoist, Type VKL used for?",
+          "a": "Electric Chain Hoist, Type VKL is an electric chain hoist for repetitive lifting, rated 0.5 to 5 t. It is listed in 6 sizes, 0.5 t to 5 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Electric Chain Hoist, Type VKL, such as IH-LR-EH-VKL-0P5T?",
+          "a": "Electric Chain Hoist, Type VKL part numbers begin with IH-LR-EH-VKL and end in a size code: IH-LR-EH-VKL-0P5T is the 0.5 t size and IH-LR-EH-VKL-5T is the 5 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Electric Chain Hoist, Type VKL come in?",
+          "a": "Electric Chain Hoist, Type VKL is listed in 6 sizes, 0.5 t to 5 t, each with its own Indus part number, for example IH-LR-EH-VKL-0P5T and IH-LR-EH-VKL-5T. The table includes 0.5 t: WLL 0.5 t and 5 t: WLL 5 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Electric Chain Hoist, Type VKL?",
+          "a": "For Electric Chain Hoist, Type VKL, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Electric Chain Hoist, Type VKL?",
+          "a": "Electric Chain Hoist, Type VKL is listed with a working load limit 0.5 to 5 t. For example, 3 t, 3 falls: WLL 3 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Electric Chain Hoist, Type VKL made from, and what finish does it have?",
+          "a": "For Electric Chain Hoist, Type VKL, the material is Steel body, alloy load chain and forged hook; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Electric Chain Hoist, Type VKL?",
+          "a": "Electric Chain Hoist, Type VKL is listed to Electric chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Electric Chain Hoist, Type VKL connect to or work with?",
+          "a": "For Electric Chain Hoist, Type VKL, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Electric Chain Hoist, Type VKL be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Electric Chain Hoist, Type VKL examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "K",
+          "q": "How does Electric Chain Hoist, Type VKL differ from Electric Chain Hoist — Type A?",
+          "a": "Electric Chain Hoist, Type VKL differs from [Electric Chain Hoist — Type A](/p/electric-chain-hoist-type-a) in its size range 0.5 t to 5 t against 0.5 t to 3 t; working load limit 0.5 to 5 t against 0.5 to 3 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Electric Chain Hoist, Type VKL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Electric Chain Hoist, Type VKL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Electric Chain Hoist — Type VKL available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Electric Chain Hoist — Type VKL is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "electric-wire-rope-hoist-type-md1-two-speed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Electric Wire Rope Hoist, Type MD1, Two-Speed used for?",
+          "a": "Electric Wire Rope Hoist, Type MD1, Two-Speed is an electric hoist that lifts with steel wire rope on a drum, rated 0.5 to 16 t. It is listed in 7 sizes, 0.5 t to 16 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Electric Wire Rope Hoist, Type MD1, Two-Speed, such as IH-LR-EH-MD1-0P5T?",
+          "a": "Electric Wire Rope Hoist, Type MD1, Two-Speed part numbers begin with IH-LR-EH-MD1 and end in a size code: IH-LR-EH-MD1-0P5T is the 0.5 t size and IH-LR-EH-MD1-16T is the 16 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Electric Wire Rope Hoist, Type MD1, Two-Speed come in?",
+          "a": "Electric Wire Rope Hoist, Type MD1, Two-Speed is listed in 7 sizes, 0.5 t to 16 t, each with its own Indus part number, for example IH-LR-EH-MD1-0P5T and IH-LR-EH-MD1-16T. The table includes 0.5 t: WLL 0.5 t and 16 t: WLL 16 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Electric Wire Rope Hoist, Type MD1, Two-Speed?",
+          "a": "For Electric Wire Rope Hoist, Type MD1, Two-Speed, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Electric Wire Rope Hoist, Type MD1, Two-Speed?",
+          "a": "Electric Wire Rope Hoist, Type MD1, Two-Speed is listed with a working load limit 0.5 to 16 t. For example, 3 t: WLL 3 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Electric Wire Rope Hoist, Type MD1, Two-Speed made from, and what finish does it have?",
+          "a": "For Electric Wire Rope Hoist, Type MD1, Two-Speed, the material is Steel; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Electric Wire Rope Hoist, Type MD1, Two-Speed?",
+          "a": "Electric Wire Rope Hoist, Type MD1, Two-Speed is listed to MD1 two-speed wire rope hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Electric Wire Rope Hoist, Type MD1, Two-Speed connect to or work with?",
+          "a": "For Electric Wire Rope Hoist, Type MD1, Two-Speed, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Electric Wire Rope Hoist, Type MD1, Two-Speed be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Electric Wire Rope Hoist, Type MD1, Two-Speed examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "K",
+          "q": "How does Electric Wire Rope Hoist, Type MD1, Two-Speed differ from Mini Electric Wire Rope Hoist — 220 V?",
+          "a": "Electric Wire Rope Hoist, Type MD1, Two-Speed differs from [Mini Electric Wire Rope Hoist — 220 V](/p/mini-electric-wire-rope-hoist-220-v) in its size range 0.5 t to 16 t against 100 / 200 kg to 400 / 800 kg; working load limit 0.5 to 16 t against 100 to 400 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Electric Wire Rope Hoist, Type MD1, Two-Speed shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Electric Wire Rope Hoist, Type MD1, Two-Speed from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Electric Wire Rope Hoist, Type MD1, Two-Speed in stock in Dubai?",
+          "a": "Yes. We keep Electric Wire Rope Hoist, Type MD1, Two-Speed in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "foot-mounted-electric-wire-rope-hoist-2-1-reeving",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving used for?",
+          "a": "Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving is an electric hoist that lifts with steel wire rope on a drum, rated Load rating on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving be supplied in?",
+          "a": "Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving can be supplied in the size you need (dimensions are confirmed with the quotation). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving?",
+          "a": "For Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ. The listing gives the power supply as To order: state voltage, phase and frequency."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving?",
+          "a": "Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving is listed with a working load limit Load rating on request. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving supplied in?",
+          "a": "The listing for Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving?",
+          "a": "The listing for Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving connect to or work with?",
+          "a": "For Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "J",
+          "q": "Where is Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving typically used?",
+          "a": "For Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving, electric hoists suit repetitive lifting in workshops, production lines and warehouses."
+        },
+        {
+          "slot": "K",
+          "q": "How does Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving differ from Mini Electric Wire Rope Hoist — 220 V?",
+          "a": "Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving differs from [Mini Electric Wire Rope Hoist — 220 V](/p/mini-electric-wire-rope-hoist-220-v) in its working load limit Load rating on request against 100 to 400 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving in stock in Dubai?",
+          "a": "Yes. Foot-Mounted Electric Wire Rope Hoist, 2/1 Reeving is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "low-headroom-electric-wire-rope-hoist-2-1-reeving",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving used for?",
+          "a": "Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving is an electric hoist that lifts with steel wire rope on a drum, rated Load rating on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving be supplied in?",
+          "a": "Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving can be supplied in the size you need (dimensions are confirmed with the quotation). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving?",
+          "a": "For Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ. The listing gives the power supply as To order: state voltage, phase and frequency."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving?",
+          "a": "Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving is listed with a working load limit Load rating on request. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving supplied in?",
+          "a": "The listing for Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving?",
+          "a": "The listing for Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving connect to or work with?",
+          "a": "For Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "J",
+          "q": "Where is Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving typically used?",
+          "a": "For Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving, electric hoists suit repetitive lifting in workshops, production lines and warehouses."
+        },
+        {
+          "slot": "K",
+          "q": "How does Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving differ from Mini Electric Wire Rope Hoist — 220 V?",
+          "a": "Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving differs from [Mini Electric Wire Rope Hoist — 220 V](/p/mini-electric-wire-rope-hoist-220-v) in its working load limit Load rating on request against 100 to 400 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving in stock in Dubai?",
+          "a": "Yes. We keep Low-Headroom Electric Wire Rope Hoist, 2/1 Reeving in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mini-electric-wire-rope-hoist-220-v",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Mini Electric Wire Rope Hoist, 220 V used for?",
+          "a": "Mini Electric Wire Rope Hoist, 220 V is an electric hoist that lifts with steel wire rope on a drum, rated 100 to 400 kg. It is listed in 8 sizes, 100 / 200 kg to 400 / 800 kg."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Mini Electric Wire Rope Hoist, 220 V, such as IH-LR-EH-MINI-100-200KG?",
+          "a": "Mini Electric Wire Rope Hoist, 220 V part numbers begin with IH-LR-EH-MINI and end in a size code: IH-LR-EH-MINI-100-200KG is the 100 / 200 kg size and IH-LR-EH-MINI-400-800KG is the 400 / 800 kg size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Mini Electric Wire Rope Hoist, 220 V come in?",
+          "a": "Mini Electric Wire Rope Hoist, 220 V is listed in 8 sizes, 100 / 200 kg to 400 / 800 kg, each with its own Indus part number, for example IH-LR-EH-MINI-100-200KG and IH-LR-EH-MINI-400-800KG. The table includes 100 / 200 kg: WLL 100 kg and 400 / 800 kg: WLL 400 kg."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Mini Electric Wire Rope Hoist, 220 V?",
+          "a": "For Mini Electric Wire Rope Hoist, 220 V, choose on capacity, lift height, speed and duty, and state your supply voltage, phase and frequency on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Mini Electric Wire Rope Hoist, 220 V?",
+          "a": "Mini Electric Wire Rope Hoist, 220 V is listed with a working load limit 100 to 400 kg. For example, 250 / 500 kg: WLL 250 kg. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Mini Electric Wire Rope Hoist, 220 V supplied in?",
+          "a": "The listing for Mini Electric Wire Rope Hoist, 220 V does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Mini Electric Wire Rope Hoist, 220 V?",
+          "a": "For Mini Electric Wire Rope Hoist, 220 V, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Mini Electric Wire Rope Hoist, 220 V connect to or work with?",
+          "a": "For Mini Electric Wire Rope Hoist, 220 V, an electric hoist hangs from a fixed point or runs on a trolley along a beam, and the beam and supports must carry the hoist and its load. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [electric hoists shelf](/c/electric-hoists) for other models."
+        },
+        {
+          "slot": "I",
+          "q": "How should Mini Electric Wire Rope Hoist, 220 V be inspected and looked after?",
+          "a": "Before use, test the limit switches and the brake, check the chain or rope, the hooks and the control cable, and have Mini Electric Wire Rope Hoist, 220 V examined periodically by a competent person. Report any unusual noise or slipping before the next lift."
+        },
+        {
+          "slot": "K",
+          "q": "How does Mini Electric Wire Rope Hoist, 220 V differ from Foot-Mounted Electric Wire Rope Hoist — 2/1 Reeving?",
+          "a": "Mini Electric Wire Rope Hoist, 220 V differs from [Foot-Mounted Electric Wire Rope Hoist — 2/1 Reeving](/p/foot-mounted-electric-wire-rope-hoist-2-1-reeving) in its working load limit 100 to 400 kg against Load rating on request."
+        },
+        {
+          "slot": "L",
+          "q": "How are Mini Electric Wire Rope Hoist, 220 V shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Mini Electric Wire Rope Hoist, 220 V from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Mini Electric Wire Rope Hoist, 220 V in stock in Dubai?",
+          "a": "Yes. Mini Electric Wire Rope Hoist, 220 V is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

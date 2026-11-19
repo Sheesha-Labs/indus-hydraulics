@@ -1,0 +1,71 @@
+{
+  "family": "suction-hoses",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "epdm-pe-suction-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the EPDM/PE Suction Hose with Rigid Helix used for?",
+          "a": "The EPDM/PE Suction Hose with Rigid Helix is the suction side of a lay flat system: lay flat hose collapses under vacuum, so pumps draw through a rigid-helix hose and discharge into lay flat. It is vacuum rated to 0.95 bar in sizes 1\" to 6\"; applications include vacuum and dewatering pump intakes, frac fluid removal, marine bilge discharge, liquid fertiliser and manure handling and irrigation pump suction."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LF-SEP-025 for the EPDM/PE Suction Hose with Rigid Helix?",
+          "a": "The suffix is the nominal bore in mm: IH-LF-SEP-025 is the 1\" hose, IH-LF-SEP-080 the 3\" and IH-LF-SEP-150 the 6\". Each row gives wall, outside diameter, inside diameter, vacuum rating, bend radius and weight per metre."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the EPDM/PE Suction Hose with Rigid Helix come in?",
+          "a": "There are 7 sizes: 1, 1-1/2, 1-3/4, 2, 3, 4 and 6 in, with inside diameters from 25.4 to 151.1 mm and weight of 0.46 to 4 kg per metre. Standard lengths run up to 30 m."
+        },
+        {
+          "slot": "D",
+          "q": "What minimum bend radius applies to the EPDM/PE Suction Hose with Rigid Helix?",
+          "a": "The minimum bend radius runs from 60 mm on the 1 in size to 510 mm on the 6 in size, for example 180 mm at 3\". Keep the suction line short and straight and never bend it tighter than the table figure."
+        },
+        {
+          "slot": "E",
+          "q": "What vacuum and working pressure does the EPDM/PE Suction Hose with Rigid Helix have?",
+          "a": "At 40 °C the hose is rated 0.95 bar vacuum up to 2 in, 0.88 bar at 3 in and 4 in, and 0.81 bar at 6 in. Working pressure at 40 °C runs from 3.0 bar at 1 in to 1.4 bar at 6 in; ratings fall as temperature rises."
+        },
+        {
+          "slot": "F",
+          "q": "What is the EPDM/PE Suction Hose with Rigid Helix made from?",
+          "a": "The wall is an EPDM/PE compound resistant to chemicals, abrasion and weather, with a rigid polyethylene helix, in green with a black helix. The cold-resistant compound stays flexible at low temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and certificates apply to the EPDM/PE Suction Hose with Rigid Helix?",
+          "a": "The listing gives no product standard or certificate. It states vacuum and working pressure at 40 °C by size; ask on the RFQ for any document your project needs."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the EPDM/PE Suction Hose with Rigid Helix at the pump?",
+          "a": "Supply it with camlock or threaded ends fitted, or as a cut length, and join it to the discharge lay flat line from the [TPU lay flat hoses](/c/tpu-lay-flat-hoses) or [NBR lay flat hoses](/c/nbr-lay-flat-hoses). Make every joint airtight, since a small air leak on the suction side starves the pump; couplings are listed under [lay flat hose couplings](/c/lay-flat-hose-couplings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the EPDM/PE Suction Hose with Rigid Helix be installed on the pump inlet?",
+          "a": "Fit a strainer or foot valve sized to the pump's solids handling so debris cannot block the hose or damage the pump, keep the line short and straight, and stay within the vacuum listed at 40 °C. See [our suction versus lay flat hose guide](/blog/suction-hose-vs-lay-flat-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "Why not use lay flat hose on the pump suction instead of the EPDM/PE Suction Hose with Rigid Helix?",
+          "a": "Lay flat hose collapses under vacuum. The suction side needs a hose with a rigid helix like this one, and the discharge side can then be lay flat; [our lay flat hose guide](/blog/lay-flat-hose-guide) shows how the two pair up."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the EPDM/PE Suction Hose with Rigid Helix outside the UAE?",
+          "a": "Yes. We ship EPDM/PE Suction Hose with Rigid Helix from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Lengths up to 30 m are standard. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the EPDM/PE Suction Hose with Rigid Helix in stock in Dubai?",
+          "a": "Yes. We keep EPDM/PE Suction Hose with Rigid Helix in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

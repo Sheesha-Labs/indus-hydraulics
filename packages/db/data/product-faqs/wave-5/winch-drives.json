@@ -1,0 +1,206 @@
+{
+  "family": "winch-drives",
+  "extraFacts": [
+    {
+      "fact": "Dinamic Oil RW rotating-case winch drives: 2 and 3 stages, 7,380 to 32,530 Nm FEM, DNV TAS00001JK. WD: 3 and 4 stages, 18,100 to 400,000 Nm FEM.",
+      "source": "Indus Hydraulics listings for the Dinamic Oil winch drives"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dinamic-oil-rw-planetary-winch-drives",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil RW Planetary Winch Drives used for?",
+          "a": "The Dinamic Oil RW Planetary Winch Drives are rotating-case planetary winch drives that mount inside the drum, 2 or 3 stages, covering 7,380 Nm to 32.53 kNm FEM torque below the WD range. Two-stage builds with lower ratios suit electric motors, and three-stage builds suit hydraulic motors."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model number such as RW 513?",
+          "a": "The first digits are the frame and the last digit the number of stages: in the size table RW 512 is the 2-stage model and RW 513 the 3-stage model. Peak torque and FEM torque are listed per model, for example RW 512 at 7,380 Nm FEM and RW 2522 at 32,530 Nm."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Dinamic Oil RW Planetary Winch Drives are available?",
+          "a": "The table has 10 models from RW 512 (T2 FEM 7,380 Nm, ratio 13.79 – 43.64) to RW 2522 (32,530 Nm, ratio 17.51 – 41.81), weighing 75 to 275 kg. The rated torque varies with ratio, and the per-ratio values are in Dinamic Oil's winch-drive catalogue."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select an RW Planetary Winch Drives winch drive size?",
+          "a": "Pick the size whose ratio is close to what the winch needs and whose FEM torque, multiplied by the class coefficient, is above the application torque. Then check the rotating-flange bearing: its static rating must cover the drum load and its life (Lh10) must meet the FEM class; [our hydraulic winch sizing guide](/blog/hydraulic-winch-sizing) helps."
+        },
+        {
+          "slot": "E",
+          "q": "What torque rating do the Dinamic Oil RW Planetary Winch Drives carry and on what basis?",
+          "a": "The table gives T2 FEM torque for class M5-L2-T5 at 25 rpm, from 7,380 to 32,530 Nm, rated to FEM 1.001, ISO 6336 and ISO 281. For another FEM class, multiply by the catalogue coefficient c, for example 0.90 for class L3-T4 at 12 rpm."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and brakes do the Dinamic Oil RW Planetary Winch Drives use?",
+          "a": "They run in an oil bath of ISO VG 220–320 EP gear oil, with the first change after 150 h and then at the catalogue interval or at least every 2 years. The standard brake is negative multi-disc: FW from 230 to 1,600 Nm and FY from 1,840 to 3,600 Nm, with SAE B, C or D motor flanges and an optional freewheel."
+        },
+        {
+          "slot": "G",
+          "q": "Are the Dinamic Oil RW Planetary Winch Drives DNV type approved?",
+          "a": "Yes. Every RW size in the catalogue, RW 512 to RW 2522 and RW 513 to RW 1023, is covered by DNV type approval TAS00001JK for shipboard and offshore lifting appliances, life-saving appliance (davit) winches and drilling facilities, valid to January 2029. See [our guide to DNV type approval for crane gearboxes](/blog/dnv-type-approval-crane-gearboxes)."
+        },
+        {
+          "slot": "H",
+          "q": "What does the drum need to go with the Dinamic Oil RW Planetary Winch Drives?",
+          "a": "The rotating flange runs on a single bearing, which keeps the winch isostatic, so the drum must be carried on an outboard bearing on the side opposite the gearbox. A ready-built drum with the drive is the [Dinamic Oil WDD Motorized Winch Drums — 7,500 to 30,000 daN Line Pull](/p/dinamic-oil-wdd-motorized-winch-drums); see [our guide to winch drives, motor drums and complete winches](/blog/winch-drive-vs-motor-drum-vs-complete-winch) and the [gearbox and winch accessories](/c/gearbox-winch-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I run the Dinamic Oil RW Planetary Winch Drives in Gulf summer heat?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. For continuous input speeds above 1,500 rpm Dinamic Oil recommends its high-speed brake versions; [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) covers the lubricant."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dinamic Oil RW differ from the WD winch drive?",
+          "a": "The RW covers the lower torques, 7,380 to 32,530 Nm FEM, in 2 and 3 stages, while the [Dinamic Oil WD Planetary Winch Drives — 18.1 kNm to 400 kNm FEM Torque](/p/dinamic-oil-wd-planetary-winch-drives) runs 18.1 kNm to 400 kNm in 3 and 4 stages. Both are rotating-case drives that mount inside the drum."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil RW Planetary Winch Drives genuine Dinamic Oil units and can you export them?",
+          "a": "For the Dinamic Oil RW Planetary Winch Drives — 7,380 to 32,530 Nm, DNV Type Approved: yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil RW Planetary Winch Drives in stock in Dubai?",
+          "a": "Yes, we stock Dinamic Oil RW Planetary Winch Drives at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-wd-planetary-winch-drives",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil WD Planetary Winch Drives used for?",
+          "a": "The Dinamic Oil WD Planetary Winch Drives are rotating-case planetary winch drives that mount inside the drum, 3 or 4 stages, covering 18.1 kNm to 400 kNm FEM torque. They are built into the winch drum by the winch maker, with the drum carried on an outboard bearing."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model number such as WD 16004?",
+          "a": "The last digit is the number of stages: in the size table WD 1023 is a 3-stage model and WD 16004 a 4-stage model, with WD 1023 at 18,100 Nm FEM and WD 31004 at 400,000 Nm. The table lists 11 models with ratio, weight, peak and FEM torque."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Dinamic Oil WD Planetary Winch Drives are available?",
+          "a": "The 11 models run from WD 1023 (ratio 52.83 – 203.00, 150 kg) to WD 31004 (ratio 237.48 – 539.03, 2500 kg), with FEM torque of 18,100 to 400,000 Nm. Total ratio runs 48.16 to 714.39:1."
+        },
+        {
+          "slot": "D",
+          "q": "Which WD sizes are DNV type approved?",
+          "a": "The three-stage WD 1023 to WD 8003 hold DNV type approval TAS00000YS for shipboard and offshore lifting appliances and SOLAS life-saving appliance winches, valid to November 2029. The four-stage sizes are approved per project."
+        },
+        {
+          "slot": "E",
+          "q": "What torque rating do the Dinamic Oil WD Planetary Winch Drives carry and on what basis?",
+          "a": "T2 FEM runs 18,100 to 400,000 Nm for class M5-L2-T5 at 25 rpm, rated to FEM 1.001, ISO 6336 and ISO 281. Peak torque is higher, for example 26,900 Nm on the WD 1023, so select on FEM torque and keep peaks below the table maxima."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and brakes do the Dinamic Oil WD Planetary Winch Drives use?",
+          "a": "They run in an oil bath of ISO VG 220–320 EP gear oil, with the first change after 150 h and then at the catalogue interval or at least every 2 years. The standard brake is negative multi-disc, FW up to 1,600 Nm or FY up to 3,600 Nm, with SAE B, C or D motor flanges and an optional freewheel."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the Dinamic Oil WD Planetary Winch Drives?",
+          "a": "They are rated to FEM 1.001, ISO 6336 and ISO 281, and the three-stage WD 1023 to WD 8003 hold DNV type approval TAS00000YS to November 2029. Four-stage drives are approved per project; [our guide to DNV type approval for crane gearboxes](/blog/dnv-type-approval-crane-gearboxes) explains the scope."
+        },
+        {
+          "slot": "H",
+          "q": "What does the drum need to go with the Dinamic Oil WD Planetary Winch Drives?",
+          "a": "The rotating flange runs on a single bearing, so the drum must be carried on an outboard bearing on the opposite side. If you want the drum built in, see the [Dinamic Oil WDD Motorized Winch Drums — 7,500 to 30,000 daN Line Pull](/p/dinamic-oil-wdd-motorized-winch-drums); [our guide to winch drives, motor drums and complete winches](/blog/winch-drive-vs-motor-drum-vs-complete-winch) sets out the options, and brakes and accessories are on the [gearbox and winch accessories](/c/gearbox-winch-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I run the Dinamic Oil WD Planetary Winch Drives in Gulf summer heat?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. See [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) for the oil guidance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dinamic Oil WD differ from the RW winch drive?",
+          "a": "The WD covers 18.1 kNm to 400 kNm FEM in 3 and 4 stages, while the [Dinamic Oil RW Planetary Winch Drives — 7,380 to 32,530 Nm, DNV Type Approved](/p/dinamic-oil-rw-planetary-winch-drives) covers 7,380 to 32,530 Nm in 2 and 3 stages. Choose by the drum torque you need."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil WD Planetary Winch Drives genuine Dinamic Oil units and can you export them?",
+          "a": "For the Dinamic Oil WD Planetary Winch Drives — 18.1 kNm to 400 kNm FEM Torque: yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil WD Planetary Winch Drives in stock in Dubai?",
+          "a": "Yes, Dinamic Oil WD Planetary Winch Drives is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-wdd-motorized-winch-drums",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil WDD Motorized Winch Drums used for?",
+          "a": "The Dinamic Oil WDD Motorized Winch Drums are motor drums: a WD planetary drive, drum and outboard support in one unit, 7,500 to 30,000 daN line pull on 18 to 32 mm rope. Only the winch frame and motor remain to design."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a model such as WDD C130?",
+          "a": "The letter is the frame and the number the line pull in hundreds of daN: in the size table WDD A75 is 7,500 daN on 18 mm rope, WDD C130 is 13,000 daN on 22 mm and WDD G300 is 30,000 daN on 32 mm. The listing has 7 sizes."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Dinamic Oil WDD Motorized Winch Drums are available?",
+          "a": "The 7 sizes run WDD A75, B100, C130, D155, E190, F230 and G300, with first-layer line pull of 7,500 to 30,000 daN and suggested rope of 18 to 32 mm. Drums are smooth, standard grooved or Lebus-grooved, with length to order."
+        },
+        {
+          "slot": "D",
+          "q": "Can the drum of a WDD be longer or wider?",
+          "a": "Yes. Drum length and diameter are customised to the rope capacity you need, as long as they respect the minimum dimensions in Dinamic Oil's catalogue. Send the rope diameter, length and number of layers."
+        },
+        {
+          "slot": "E",
+          "q": "What line pull do the Dinamic Oil WDD Motorized Winch Drums deliver?",
+          "a": "First-layer line pull runs from 7,500 to 30,000 daN, which is the figure for the first layer of rope on the drum. Pull falls on outer layers, so size on the layer you will work from; [our hydraulic winch sizing guide](/blog/hydraulic-winch-sizing) explains it."
+        },
+        {
+          "slot": "F",
+          "q": "What drive and brake do the Dinamic Oil WDD Motorized Winch Drums use?",
+          "a": "The drum has a built-in rotating-case WD planetary drive with a negative multi-disc brake, run in an oil bath of ISO VG 220–320 EP gear oil. The motor is hydraulic on an SAE flange, with electric on request."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Dinamic Oil WDD Motorized Winch Drums carry type approval?",
+          "a": "The WD drive carries DNV type approval TAS00000YS and the drum is approved per project, so state the class society and project on the enquiry and we confirm what Dinamic Oil can supply. See [our guide to DNV type approval for crane gearboxes](/blog/dnv-type-approval-crane-gearboxes)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I add to a WDD Motorized Winch Drums motor drum to make a winch?",
+          "a": "Only the winch frame and motor remain to design, since the WD drive, drum and outboard support are already built together. Brakes and accessories are on the [gearbox and winch accessories](/c/gearbox-winch-accessories), and [hydraulic winches](/c/hydraulic-winches) lists complete winches."
+        },
+        {
+          "slot": "I",
+          "q": "How do I run the Dinamic Oil WDD Motorized Winch Drums in Gulf summer heat?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. The first oil change is after 150 h; [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) has the oil guidance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the WDD motor drum differ from a WD winch drive?",
+          "a": "A WD is the gearbox alone, to be built into your own drum and frame, while the WDD has the WD drive, drum and outboard support already assembled. See the [Dinamic Oil WD Planetary Winch Drives — 18.1 kNm to 400 kNm FEM Torque](/p/dinamic-oil-wd-planetary-winch-drives) for the gearbox on its own and [our guide to winch drives, motor drums and complete winches](/blog/winch-drive-vs-motor-drum-vs-complete-winch) for the choice."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil WDD Motorized Winch Drums genuine Dinamic Oil units and can you export them?",
+          "a": "For the Dinamic Oil WDD Motorized Winch Drums — 7,500 to 30,000 daN Line Pull: yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dinamic Oil WDD Motorized Winch Drums — 7,500 to 30,000 daN Line Pull available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Dinamic Oil WDD Motorized Winch Drums — 7,500 to 30,000 daN Line Pull is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "family": "mining-conveyor-chain",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "block-connecting-link-for-mining-chain-din-22258-1",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the block connecting link for mining chain to DIN 22258-1 and what sizes does it come in?",
+          "a": "The block connecting link to DIN 22258-1 is a two-part forged link for joining round link mining chain and compact chain, in 6 sizes from 22 × 86 mm to 38 × 137 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the block connecting link for mining chain to DIN 22258-1?",
+          "a": "In IH-LR-MC-D22258-22X86, the suffix 22X86 is the 22 × 86 mm size, and IH-LR-MC-D22258-38X137 ends in 38X137 for 38 × 137 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the block connecting link for mining chain to DIN 22258-1 are listed?",
+          "a": "The size table lists 6 rows, from 22 × 86 mm to 38 × 137 mm, each with link dimensions, test force and minimum breaking force. Sizes are given as diameter × pitch in mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of block connecting link for mining chain to DIN 22258-1?",
+          "a": "Choose the block connecting link for mining chain to DIN 22258-1 to match the chain you are running or joining (diameter × pitch), then the grade or class. The table gives the dimensions with test and minimum breaking force. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the block connecting link for mining chain to DIN 22258-1 have?",
+          "a": "The block connecting link for mining chain to DIN 22258-1 has no working load limit: it is rated by test force and minimum breaking force. Minimum breaking force runs from 540 kN for 22 × 86 mm to 1,610 kN for 38 × 137 mm, with test force from 456 to 1,360 kN. The table lists both for each size and grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the block connecting link for mining chain to DIN 22258-1 made of?",
+          "a": "The block connecting link for mining chain to DIN 22258-1 is forged alloy steel, heat treated, finished self-colour or painted. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the block connecting link for mining chain to DIN 22258-1?",
+          "a": "It follows DIN 22258-1 (also MT/T 99). Each consignment of the block connecting link for mining chain to DIN 22258-1 ships with the manufacturer's test certificate; for third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the block connecting link for mining chain to DIN 22258-1 connect to?",
+          "a": "It fits through the conveyor as a horizontal or vertical link in round link chain, and as a horizontal link in compact chain, and locks with its central pin. Match it to the chain's diameter and pitch."
+        },
+        {
+          "slot": "I",
+          "q": "Can the block connecting link for mining chain to DIN 22258-1 be used for lifting?",
+          "a": "Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting. Do not use the block connecting link for mining chain to DIN 22258-1 in lifting duty."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the block connecting link for mining chain to DIN 22258-1 used?",
+          "a": "It joins lengths of round link and compact chain on armoured face conveyors and similar mining machinery. See [proof load testing](/blog/proof-load-testing-lifting-gear) for how test force is applied."
+        },
+        {
+          "slot": "K",
+          "q": "Block connecting link compared with the open connecting link?",
+          "a": "The block link is a two-part link locked by a central pin, in 6 sizes. The [open connecting link to DIN 22253](/p/open-connecting-link-for-mining-chain-din-22253) is a forged open link closed with a locking pin, listed in several grades. Choose on the chain and the standard."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the block connecting link for mining chain to DIN 22258-1, and how do I order?",
+          "a": "Yes, the block connecting link for mining chain to DIN 22258-1 is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. For a quotation, send the size and grade via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "flat-link-mining-chain-din-22255",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the flat link mining chain to DIN 22255 and what sizes does it come in?",
+          "a": "The flat link mining chain to DIN 22255 is compact flat link chain with round horizontal links and flattened vertical links, in 7 sizes and 21 size and grade combinations from 26 × 92 mm to 42 × 146 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the flat link mining chain to DIN 22255?",
+          "a": "In IH-LR-MC-D22255-26X92-C, the suffix 26X92-C is the 26 × 92 mm size, and IH-LR-MC-D22255-42X146-D ends in 42X146-D for 42 × 146 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the flat link mining chain to DIN 22255 are listed?",
+          "a": "The size table lists 21 rows, from 26 × 92 mm to 42 × 146 mm, each with link dimensions, test force and minimum breaking force. Sizes are given as diameter × pitch in mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of flat link mining chain to DIN 22255?",
+          "a": "Choose the flat link mining chain to DIN 22255 to match the chain you are running or joining (diameter × pitch), then the grade or class. The table gives the dimensions with test and minimum breaking force. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the flat link mining chain to DIN 22255 have?",
+          "a": "The flat link mining chain to DIN 22255 has no working load limit: it is rated by test force and minimum breaking force. Minimum breaking force runs from 850 kN for 26 × 92 mm to 2,770 kN for 42 × 146 mm, with test force from 637 to 1,940 kN. The table lists both for each size and grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the flat link mining chain to DIN 22255 made of?",
+          "a": "The flat link mining chain to DIN 22255 is alloy steel, quenched and tempered, finished self-colour. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the flat link mining chain to DIN 22255?",
+          "a": "It follows DIN 22255. Each consignment of the flat link mining chain to DIN 22255 ships with the manufacturer's test certificate; for third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the flat link mining chain to DIN 22255 connect to?",
+          "a": "It runs in face conveyors and stage loaders, joined with connecting links of the same size and grade. Match the connector to the chain's diameter, pitch and grade."
+        },
+        {
+          "slot": "I",
+          "q": "Can the flat link mining chain to DIN 22255 be used for lifting?",
+          "a": "Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting. Do not use the flat link mining chain to DIN 22255 in lifting duty."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the flat link mining chain to DIN 22255 used?",
+          "a": "The chain is lower in height than round link chain of the same size, so a face conveyor or stage loader can run a stronger chain in the same pan height."
+        },
+        {
+          "slot": "K",
+          "q": "Flat link chain compared with round link mining chain?",
+          "a": "Flat link chain is lower in height than the same size of round link chain. The [round link mining chain to DIN 22252](/p/round-link-mining-chain-din-22252) has round links throughout and more size and grade choices. Choose on pan height."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the flat link mining chain to DIN 22255, and how do I order?",
+          "a": "Yes. The flat link mining chain to DIN 22255 is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending the size you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "long-link-monorail-suspension-chain-din-20637",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the long link monorail suspension chain to DIN 20637 and what sizes does it come in?",
+          "a": "The long link monorail suspension chain to DIN 20637 is calibrated alloy steel (NiCrMo) chain for suspending monorail track in underground mines, in 2 sizes, 16 × 80 mm and 18 × 90 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the long link monorail suspension chain to DIN 20637?",
+          "a": "In IH-LR-MC-D20637-16X80, the suffix 16X80 is the 16 × 80 mm size, and IH-LR-MC-D20637-18X90 ends in 18X90 for 18 × 90 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the long link monorail suspension chain to DIN 20637 are listed?",
+          "a": "The size table lists 2 rows, from 16 × 80 mm to 18 × 90 mm, each with link dimensions, test force and minimum breaking force. Sizes are given as diameter × pitch in mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of long link monorail suspension chain to DIN 20637?",
+          "a": "Choose the long link monorail suspension chain to DIN 20637 to match the chain you are running or joining (diameter × pitch), then the grade or class. The table gives the dimensions with test and minimum breaking force. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the long link monorail suspension chain to DIN 20637 have?",
+          "a": "The long link monorail suspension chain to DIN 20637 has no working load limit: it is rated by test force and minimum breaking force. Minimum breaking force runs from 180 kN for 16 × 80 mm to 250 kN for 18 × 90 mm, with test force from 60 to 100 kN. The table lists both for each size and grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the long link monorail suspension chain to DIN 20637 made of?",
+          "a": "The long link monorail suspension chain to DIN 20637 is alloy steel (nicrmo), calibrated and tested, finished self-colour. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the long link monorail suspension chain to DIN 20637?",
+          "a": "It follows DIN 20637. Each consignment of the long link monorail suspension chain to DIN 20637 ships with the manufacturer's test certificate; for third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the long link monorail suspension chain to DIN 20637 connect to?",
+          "a": "It suspends monorail track from the roof supports of an underground mine. Use it as the mine's design specifies, and match the connecting parts to its size."
+        },
+        {
+          "slot": "I",
+          "q": "Can the long link monorail suspension chain to DIN 20637 be used for lifting?",
+          "a": "Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting. Do not use the long link monorail suspension chain to DIN 20637 in lifting duty."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the long link monorail suspension chain to DIN 20637 used?",
+          "a": "Monorail suspension chain carries track in underground mines. The manufacturer states it exceeds the standard's forces by about 10%. Use it as the mine's design specifies."
+        },
+        {
+          "slot": "K",
+          "q": "Long link monorail chain compared with round link mining chain?",
+          "a": "The long link chain is calibrated for suspending track in 2 sizes. The [round link mining chain to DIN 22252](/p/round-link-mining-chain-din-22252) runs conveyors and face equipment. Choose on the duty."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the long link monorail suspension chain to DIN 20637, and how do I order?",
+          "a": "Yes. We keep the long link monorail suspension chain to DIN 20637 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size and grade through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "one-piece-plain-wheel-for-bucket-elevator-chain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the one-piece plain wheel for bucket elevator chain and what sizes does it come in?",
+          "a": "The one-piece plain wheel is a smooth-rim chain wheel for bucket elevators running DIN 764 or DIN 766 round steel chain, in 20 sizes from Ø 360 mm to Ø 820 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the one-piece plain wheel for bucket elevator chain?",
+          "a": "In IH-LR-MC-WOPW-360-10, the suffix 360-10 is the Ø 360 mm for 10 mm chain size, and IH-LR-MC-WOPW-820-30 ends in 820-30 for Ø 820 mm for 30 mm chain. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the one-piece plain wheel for bucket elevator chain are listed?",
+          "a": "The size table lists 20 rows, from Ø 360 mm for 10 mm chain to Ø 820 mm for 30 mm chain, each with the chain it fits, the lettered dimensions and the mass."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of one-piece plain wheel for bucket elevator chain?",
+          "a": "Choose the one-piece plain wheel for bucket elevator chain by chain size and wheel diameter. Wheels are made to order, so send the chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether it is a drive, tail or return wheel."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the one-piece plain wheel for bucket elevator chain have?",
+          "a": "The one-piece plain wheel for bucket elevator chain has no load rating: it is a drive or carrier wheel, selected by chain size and wheel diameter. Mass runs from 35 kg for Ø 360 mm for 10 mm chain to 415 kg for Ø 820 mm for 30 mm chain."
+        },
+        {
+          "slot": "F",
+          "q": "What is the one-piece plain wheel for bucket elevator chain made of?",
+          "a": "The one-piece plain wheel for bucket elevator chain is steel, wear surface hardened, finished machined. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the one-piece plain wheel for bucket elevator chain?",
+          "a": "It is for DIN 764 / DIN 766 round steel chain. Each consignment of the one-piece plain wheel for bucket elevator chain ships with the manufacturer's inspection certificate; for anything more, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the one-piece plain wheel for bucket elevator chain connect to?",
+          "a": "It carries DIN 764 or DIN 766 chain with DIN 745 or DIN 5699 bucket shackles on its smooth rim. The hub bore and keyway are machined to order, so send the shaft size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I know when the one-piece plain wheel for bucket elevator chain is worn?",
+          "a": "Check the one-piece plain wheel for bucket elevator chain for rim and pocket or tooth wear, loose bolts and cracks, and replace it when worn so chain and wheel pitch still match. Send a sample of the worn wheel and we match it."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the one-piece plain wheel for bucket elevator chain used?",
+          "a": "The smooth rim carries the chain without teeth, for elevators with rear-mounted buckets. Choose by chain size and wheel diameter. Tell us the duty and we confirm the right one-piece plain wheel for bucket elevator chain size."
+        },
+        {
+          "slot": "K",
+          "q": "One-piece plain wheel compared with the segmented plain wheel?",
+          "a": "The one-piece wheel is a single casting in 20 sizes. The [segmented plain wheel](/p/segmented-plain-wheel-for-bucket-elevator-chain) has bolted replaceable rim segments, so worn segments are changed without removing the wheel. Choose on maintenance access."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply the one-piece plain wheel for bucket elevator chain from Dubai, and what do I send?",
+          "a": "Yes. We supply the one-piece plain wheel for bucket elevator chain from our base in Dubai, UAE, and ship worldwide with the best lead times; wheels are made to order. Send the chain size, wheel diameter, shaft bore and keyway through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "open-connecting-link-for-mining-chain-din-22253",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the open connecting link for mining chain to DIN 22253 and what sizes does it come in?",
+          "a": "The open connecting link to DIN 22253 is a forged open link, also called an outboard chain connector or mining chain shackle, in 7 sizes and 16 size and grade combinations from 14 × 50 mm to 30 × 108 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the open connecting link for mining chain to DIN 22253?",
+          "a": "In IH-LR-MC-D22253-14X50-B, the suffix 14X50-B is the 14 × 50 mm size, and IH-LR-MC-D22253-30X108-DIN ends in 30X108-DIN for 30 × 108 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the open connecting link for mining chain to DIN 22253 are listed?",
+          "a": "The size table lists 16 rows, from 14 × 50 mm to 30 × 108 mm, each with link dimensions, test force and minimum breaking force. Sizes are given as diameter × pitch in mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of open connecting link for mining chain to DIN 22253?",
+          "a": "Choose the open connecting link for mining chain to DIN 22253 to match the chain you are running or joining (diameter × pitch), then the grade or class. The table gives the dimensions with test and minimum breaking force. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the open connecting link for mining chain to DIN 22253 have?",
+          "a": "The open connecting link for mining chain to DIN 22253 has no working load limit: it is rated by test force and minimum breaking force. Minimum breaking force runs from 170 kN for 14 × 50 mm to 869 kN for 30 × 108 mm, with test force from 135 to 750 kN. The table lists both for each size and grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the open connecting link for mining chain to DIN 22253 made of?",
+          "a": "The open connecting link for mining chain to DIN 22253 is forged alloy steel, heat treated, finished self-colour. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the open connecting link for mining chain to DIN 22253?",
+          "a": "It follows DIN 22253 (also PN-G-46696, MT/T 71). Each consignment of the open connecting link for mining chain to DIN 22253 ships with the manufacturer's test certificate; for third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the open connecting link for mining chain to DIN 22253 connect to?",
+          "a": "It joins lengths of round link scraper conveyor chain and is closed with its locking pin. Match the class of the chain it joins: each size is listed in grade B, grade C and the DIN 22253 class."
+        },
+        {
+          "slot": "I",
+          "q": "Can the open connecting link for mining chain to DIN 22253 be used for lifting?",
+          "a": "Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting. Do not use the open connecting link for mining chain to DIN 22253 in lifting duty."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the open connecting link for mining chain to DIN 22253 used?",
+          "a": "It is used underground on scraper conveyors to join chain lengths. See [proof load testing](/blog/proof-load-testing-lifting-gear) for how test force is applied. Tell us the duty and we confirm the right open connecting link for mining chain to DIN 22253 size."
+        },
+        {
+          "slot": "K",
+          "q": "Open connecting link compared with the block connecting link?",
+          "a": "The open link is a forged open link closed with a locking pin, in 3 grades. The [block connecting link to DIN 22258-1](/p/block-connecting-link-for-mining-chain-din-22258-1) is a two-part link for round link and compact chain. Choose on the chain type."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the open connecting link for mining chain to DIN 22253, and how do I order?",
+          "a": "Yes. The open connecting link for mining chain to DIN 22253 is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending the size you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "pocket-wheel-for-din-764-chain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the pocket wheel for DIN 764 chain and what sizes does it come in?",
+          "a": "The pocket wheel drives DIN 764 round steel chain through shaped pockets around its rim, in 9 sizes from 10 × 35 mm to 23 × 80 mm chain. It is made in one piece or in two halves."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the pocket wheel for DIN 764 chain?",
+          "a": "In IH-LR-MC-WPKT-10X35-7P, the suffix 10X35-7P is the 10 × 35 mm chain, pitch Ø 157 mm size, and IH-LR-MC-WPKT-23X80-8P ends in 23X80-8P for 23 × 80 mm chain, pitch Ø 411 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the pocket wheel for DIN 764 chain are listed?",
+          "a": "The size table lists 9 rows, from 10 × 35 mm chain, pitch Ø 157 mm to 23 × 80 mm chain, pitch Ø 411 mm, each with the chain it fits, the lettered dimensions and the mass."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of pocket wheel for DIN 764 chain?",
+          "a": "Choose the pocket wheel for DIN 764 chain by chain size and wheel diameter. Wheels are made to order, so send the chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether it is a drive, tail or return wheel."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the pocket wheel for DIN 764 chain have?",
+          "a": "The pocket wheel for DIN 764 chain has no load rating: it is a drive or carrier wheel, selected by chain size and wheel diameter. Mass runs from 5.2 kg for 10 × 35 mm chain, pitch Ø 157 mm to 85 kg for 23 × 80 mm chain, pitch Ø 411 mm."
+        },
+        {
+          "slot": "F",
+          "q": "What is the pocket wheel for DIN 764 chain made of?",
+          "a": "The pocket wheel for DIN 764 chain is cast or forged steel, pockets hardened, finished painted. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the pocket wheel for DIN 764 chain?",
+          "a": "It is for DIN 764 round steel chain. Each consignment of the pocket wheel for DIN 764 chain ships with the manufacturer's inspection certificate; for anything more, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the pocket wheel for DIN 764 chain connect to?",
+          "a": "It drives DIN 764 round steel chain. The Hole dia. column is the largest bore the hub takes; the bore and keyway are machined to order. Two halves bolt across for fitting without removing the shaft."
+        },
+        {
+          "slot": "I",
+          "q": "How do I know when the pocket wheel for DIN 764 chain is worn?",
+          "a": "Check the pocket wheel for DIN 764 chain for rim and pocket or tooth wear, loose bolts and cracks, and replace it when worn so chain and wheel pitch still match. Send a sample of the worn wheel and we match it."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the pocket wheel for DIN 764 chain used?",
+          "a": "Pocket wheels drive round steel chain in conveyors and elevators. Send the chain size, pitch diameter and shaft details. Tell us the duty and we confirm the right pocket wheel for DIN 764 chain size."
+        },
+        {
+          "slot": "K",
+          "q": "Pocket wheel compared with the toothed wheel?",
+          "a": "The pocket wheel has pockets for the chain links, in 9 sizes. The [toothed wheel](/p/toothed-wheel-for-din-764-chain) is a sprocket with teeth, in 6 sizes. Choose on the drive type and chain."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply the pocket wheel for DIN 764 chain from Dubai, and what do I send?",
+          "a": "Yes. We supply the pocket wheel for DIN 764 chain from our base in Dubai, UAE, and ship worldwide with the best lead times; wheels are made to order. Send the chain size, wheel diameter, shaft bore and keyway through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "round-link-mining-chain-din-22252",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the round link mining chain to DIN 22252 and what sizes does it come in?",
+          "a": "The round link mining chain to DIN 22252 is calibrated alloy steel round link chain for armoured face conveyors, beam stage loaders, roadheaders and coal ploughs, in 13 sizes and 46 size and grade combinations from 14 × 50 mm to 42 × 146 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the round link mining chain to DIN 22252?",
+          "a": "In IH-LR-MC-D22252-14X50-B, the suffix 14X50-B is the 14 × 50 mm size, and IH-LR-MC-D22252-42X146-D ends in 42X146-D for 42 × 146 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the round link mining chain to DIN 22252 are listed?",
+          "a": "The size table lists 46 rows, from 14 × 50 mm to 42 × 146 mm, each with link dimensions, test force and minimum breaking force. Sizes are given as diameter × pitch in mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of round link mining chain to DIN 22252?",
+          "a": "Choose the round link mining chain to DIN 22252 to match the chain you are running or joining (diameter × pitch), then the grade or class. The table gives the dimensions with test and minimum breaking force. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the round link mining chain to DIN 22252 have?",
+          "a": "The round link mining chain to DIN 22252 has no working load limit: it is rated by test force and minimum breaking force. Minimum breaking force runs from 190 kN for 14 × 50 mm to 2,770 kN for 42 × 146 mm, with test force from 150 to 2,070 kN. The table lists both for each size and grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the round link mining chain to DIN 22252 made of?",
+          "a": "The round link mining chain to DIN 22252 is alloy steel (e.g. 23mnnicrmo54), quenched and tempered, finished self-colour. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the round link mining chain to DIN 22252?",
+          "a": "It follows DIN 22252 (also PN-G-46701, GB/T 12718, GOST 25996). Each consignment of the round link mining chain to DIN 22252 ships with the manufacturer's test certificate; for third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the round link mining chain to DIN 22252 connect to?",
+          "a": "It is joined with connecting links, such as the [open connecting link](/p/open-connecting-link-for-mining-chain-din-22253) or the [block connecting link](/p/block-connecting-link-for-mining-chain-din-22258-1). Order by size (diameter × pitch) and grade, in matched lengths where the conveyor runs twin strands."
+        },
+        {
+          "slot": "I",
+          "q": "Can the round link mining chain to DIN 22252 be used for lifting?",
+          "a": "Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting. Do not use the round link mining chain to DIN 22252 in lifting duty."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the round link mining chain to DIN 22252 used?",
+          "a": "It runs in armoured face conveyors, beam stage loaders, roadheaders and coal ploughs. It is heat treated alloy steel in strength grades B, C, C++ and D."
+        },
+        {
+          "slot": "K",
+          "q": "Round link mining chain compared with wear-resistant round link conveyor chain?",
+          "a": "DIN 22252 chain is made in strength grades B, C, C++ and D. The [wear-resistant round link conveyor chain](/p/wear-resistant-round-link-conveyor-chain) has DIN 22252 link dimensions in G90, G60 and G40 versions. Choose on strength versus wear."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the round link mining chain to DIN 22252, and how do I order?",
+          "a": "Yes, the round link mining chain to DIN 22252 is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. For a quotation, send the size and grade via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "segmented-plain-rim-wheel-for-bucket-elevator-chain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the segmented plain rim wheel for bucket elevator chain and what sizes does it come in?",
+          "a": "The segmented plain rim wheel is a large plain wheel built from pairs of replaceable rim segments on a spoked hub, in 26 sizes from Ø 630 mm to Ø 1250 mm, for DIN 764 or DIN 766 chain."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the segmented plain rim wheel for bucket elevator chain?",
+          "a": "In IH-LR-MC-WSRW-630-13, the suffix 630-13 is the Ø 630 mm for 13 mm chain size, and IH-LR-MC-WSRW-1250-39 ends in 1250-39 for Ø 1250 mm for 39 mm chain. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the segmented plain rim wheel for bucket elevator chain are listed?",
+          "a": "The size table lists 26 rows, from Ø 630 mm for 13 mm chain to Ø 1250 mm for 39 mm chain, each with the chain it fits, the lettered dimensions and the mass."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of segmented plain rim wheel for bucket elevator chain?",
+          "a": "Choose the segmented plain rim wheel for bucket elevator chain by chain size and wheel diameter. Wheels are made to order, so send the chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether it is a drive, tail or return wheel."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the segmented plain rim wheel for bucket elevator chain have?",
+          "a": "The segmented plain rim wheel for bucket elevator chain has no load rating: it is a drive or carrier wheel, selected by chain size and wheel diameter. Mass runs from 65 kg for Ø 630 mm for 13 mm chain to 330 kg for Ø 1250 mm for 39 mm chain."
+        },
+        {
+          "slot": "F",
+          "q": "What is the segmented plain rim wheel for bucket elevator chain made of?",
+          "a": "The segmented plain rim wheel for bucket elevator chain is steel; replaceable hardened rim segments in pairs, finished machined, painted hub."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the segmented plain rim wheel for bucket elevator chain?",
+          "a": "It is for DIN 764 / DIN 766 round steel chain. Each consignment of the segmented plain rim wheel for bucket elevator chain ships with the manufacturer's inspection certificate; for anything more, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the segmented plain rim wheel for bucket elevator chain connect to?",
+          "a": "It carries DIN 764 or DIN 766 chain with DIN 745 or DIN 5699 shackles. The table gives the number of segment pairs, and the hub bore is machined to order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I know when the segmented plain rim wheel for bucket elevator chain is worn?",
+          "a": "Check the segmented plain rim wheel for bucket elevator chain for rim and pocket or tooth wear, loose bolts and cracks, and replace it when worn so chain and wheel pitch still match. Send a sample of the worn wheel and we match it."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the segmented plain rim wheel for bucket elevator chain used?",
+          "a": "Large bucket elevators use this wheel where a worn rim must be replaced by segment pairs rather than a whole wheel. Tell us the duty and we confirm the right segmented plain rim wheel for bucket elevator chain size."
+        },
+        {
+          "slot": "K",
+          "q": "Segmented plain rim wheel compared with the segmented plain wheel?",
+          "a": "The rim wheel is built on a spoked hub, from Ø 630 mm to Ø 1250 mm. The [segmented plain wheel](/p/segmented-plain-wheel-for-bucket-elevator-chain) has bolted rim segments in smaller diameters. Choose on the diameter."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply the segmented plain rim wheel for bucket elevator chain from Dubai, and what do I send?",
+          "a": "Yes. We supply the segmented plain rim wheel for bucket elevator chain from our base in Dubai, UAE, and ship worldwide with the best lead times; wheels are made to order. Send the chain size, wheel diameter, shaft bore and keyway through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "segmented-plain-wheel-for-bucket-elevator-chain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the segmented plain wheel for bucket elevator chain and what sizes does it come in?",
+          "a": "The segmented plain wheel is a plain chain wheel with bolted, replaceable rim segments, in 18 sizes from Ø 450 mm to Ø 800 mm, for bucket elevators and conveyors running DIN 764 or DIN 766 chain."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the segmented plain wheel for bucket elevator chain?",
+          "a": "In IH-LR-MC-WPSW-450-13, the suffix 450-13 is the Ø 450 mm for 13 mm chain size, and IH-LR-MC-WPSW-800-26 ends in 800-26 for Ø 800 mm for 26 mm chain. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the segmented plain wheel for bucket elevator chain are listed?",
+          "a": "The size table lists 18 rows, from Ø 450 mm for 13 mm chain to Ø 800 mm for 26 mm chain, each with the chain it fits, the lettered dimensions and the mass."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of segmented plain wheel for bucket elevator chain?",
+          "a": "Choose the segmented plain wheel for bucket elevator chain by chain size and wheel diameter. Wheels are made to order, so send the chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether it is a drive, tail or return wheel."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the segmented plain wheel for bucket elevator chain have?",
+          "a": "The segmented plain wheel for bucket elevator chain has no load rating: it is a drive or carrier wheel, selected by chain size and wheel diameter. Mass runs from 100 kg for Ø 450 mm for 13 mm chain to 250 kg for Ø 800 mm for 26 mm chain."
+        },
+        {
+          "slot": "F",
+          "q": "What is the segmented plain wheel for bucket elevator chain made of?",
+          "a": "The segmented plain wheel for bucket elevator chain is steel; replaceable hardened rim segments, finished machined, painted hub. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the segmented plain wheel for bucket elevator chain?",
+          "a": "It is for DIN 764 / DIN 766 round steel chain. Each consignment of the segmented plain wheel for bucket elevator chain ships with the manufacturer's inspection certificate; for anything more, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the segmented plain wheel for bucket elevator chain connect to?",
+          "a": "It carries DIN 764 or DIN 766 round steel chain on its plain rim. Worn segments are changed without taking the wheel off the shaft. The hub bore and keyway are machined to order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I know when the segmented plain wheel for bucket elevator chain is worn?",
+          "a": "Check the segmented plain wheel for bucket elevator chain for rim and pocket or tooth wear, loose bolts and cracks, and replace it when worn so chain and wheel pitch still match. Send a sample of the worn wheel and we match it."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the segmented plain wheel for bucket elevator chain used?",
+          "a": "Bucket elevators and conveyors use this wheel to cut the cost and downtime of replacing a whole wheel. Tell us the duty and we confirm the right segmented plain wheel for bucket elevator chain size."
+        },
+        {
+          "slot": "K",
+          "q": "Segmented plain wheel compared with the one-piece plain wheel?",
+          "a": "The segmented wheel has bolted rim segments in 18 sizes. The [one-piece plain wheel](/p/one-piece-plain-wheel-for-bucket-elevator-chain) is a single piece in 20 sizes. Choose on whether you want to change segments in place."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply the segmented plain wheel for bucket elevator chain from Dubai, and what do I send?",
+          "a": "Yes. We supply the segmented plain wheel for bucket elevator chain from our base in Dubai, UAE, and ship worldwide with the best lead times; wheels are made to order. Send the chain size, wheel diameter, shaft bore and keyway through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "toothed-wheel-for-din-764-chain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the toothed wheel for DIN 764 chain and what sizes does it come in?",
+          "a": "The toothed wheel (sprocket) drives DIN 764 round steel chain in scraper, conveyor and traction drives, in 6 sizes from 10 × 35 mm to 18 × 63 mm chain. It is made in one piece or in two halves."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the toothed wheel for DIN 764 chain?",
+          "a": "In IH-LR-MC-WTTH-10X35-6T, the suffix 10X35-6T is the 10 × 35 mm chain, pitch Ø 136 mm size, and IH-LR-MC-WTTH-18X63-9T ends in 18X63-9T for 18 × 63 mm chain, pitch Ø 363 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the toothed wheel for DIN 764 chain are listed?",
+          "a": "The size table lists 6 rows, from 10 × 35 mm chain, pitch Ø 136 mm to 18 × 63 mm chain, pitch Ø 363 mm, each with the chain it fits, the lettered dimensions and the mass."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of toothed wheel for DIN 764 chain?",
+          "a": "Choose the toothed wheel for DIN 764 chain by chain size and wheel diameter. Wheels are made to order, so send the chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether it is a drive, tail or return wheel."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the toothed wheel for DIN 764 chain have?",
+          "a": "The toothed wheel for DIN 764 chain has no load rating: it is a drive or carrier wheel, selected by chain size and wheel diameter. Mass runs from 2.1 kg for 10 × 35 mm chain, pitch Ø 136 mm to 38 kg for 18 × 63 mm chain, pitch Ø 363 mm."
+        },
+        {
+          "slot": "F",
+          "q": "What is the toothed wheel for DIN 764 chain made of?",
+          "a": "The toothed wheel for DIN 764 chain is cast or forged steel, teeth hardened, finished self-colour. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the toothed wheel for DIN 764 chain?",
+          "a": "It is for DIN 764 round steel chain. Each consignment of the toothed wheel for DIN 764 chain ships with the manufacturer's inspection certificate; for anything more, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the toothed wheel for DIN 764 chain connect to?",
+          "a": "It drives DIN 764 round steel chain through its teeth. The Hole dia. column is the largest bore the hub takes; the bore and keyway are machined to order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I know when the toothed wheel for DIN 764 chain is worn?",
+          "a": "Check the toothed wheel for DIN 764 chain for rim and pocket or tooth wear, loose bolts and cracks, and replace it when worn so chain and wheel pitch still match. Send a sample of the worn wheel and we match it."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the toothed wheel for DIN 764 chain used?",
+          "a": "Toothed wheels drive scraper, conveyor and traction chain. Send the chain size, pitch diameter and shaft details. Tell us the duty and we confirm the right toothed wheel for DIN 764 chain size."
+        },
+        {
+          "slot": "K",
+          "q": "Toothed wheel compared with the pocket wheel?",
+          "a": "The toothed wheel is a sprocket in 6 sizes. The [pocket wheel for DIN 764 chain](/p/pocket-wheel-for-din-764-chain) has pockets for the links, in 9 sizes. Choose on the drive type."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply the toothed wheel for DIN 764 chain from Dubai, and what do I send?",
+          "a": "Yes. We supply the toothed wheel for DIN 764 chain from our base in Dubai, UAE, and ship worldwide with the best lead times; wheels are made to order. Send the chain size, wheel diameter, shaft bore and keyway through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wear-resistant-round-link-conveyor-chain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the wear-resistant round link conveyor chain and what sizes does it come in?",
+          "a": "The wear-resistant round link conveyor chain has DIN 22252 link dimensions in three heat-treated versions for abrasive service: G90, G60 and G40, in 13 sizes and 39 size and grade combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on the wear-resistant round link conveyor chain?",
+          "a": "In IH-LR-MC-WEAR-14X50-G90, the suffix 14X50-G90 is the 14 × 50 mm size, and IH-LR-MC-WEAR-42X146-G40 ends in 42X146-G40 for 42 × 146 mm. Every row in the table has its own Indus part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the wear-resistant round link conveyor chain are listed?",
+          "a": "The size table lists 39 rows, from 14 × 50 mm to 42 × 146 mm, each with link dimensions, test force and minimum breaking force. Sizes are given as diameter × pitch in mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of wear-resistant round link conveyor chain?",
+          "a": "Choose the wear-resistant round link conveyor chain to match the chain you are running or joining (diameter × pitch), then the grade or class. The table gives the dimensions with test and minimum breaking force. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What rating does the wear-resistant round link conveyor chain have?",
+          "a": "The wear-resistant round link conveyor chain has no working load limit: it is rated by test force and minimum breaking force. Minimum breaking force runs from 123 kN for 14 × 50 mm to 2,495 kN for 42 × 146 mm, with test force from 75 to 1,550 kN. The table lists both for each size and grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the wear-resistant round link conveyor chain made of?",
+          "a": "The wear-resistant round link conveyor chain is alloy steel; three heat-treatment options, finished self-colour. Confirm the grade and heat treatment on the quotation if your specification names them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard or certificate applies to the wear-resistant round link conveyor chain?",
+          "a": "It follows DIN 22252 dimensions. Each consignment of the wear-resistant round link conveyor chain ships with the manufacturer's test certificate; for third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the wear-resistant round link conveyor chain connect to?",
+          "a": "It is joined with connecting links of the same size and class. Choose the version by duty: G90 where breaking force matters most, G40 where abrasive wear is the main enemy, G60 between the two."
+        },
+        {
+          "slot": "I",
+          "q": "Can the wear-resistant round link conveyor chain be used for lifting?",
+          "a": "Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting. Do not use the wear-resistant round link conveyor chain in lifting duty."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the wear-resistant round link conveyor chain used?",
+          "a": "It runs in abrasive conveyor service. G90 is low-temperature tempered, G60 is quenched and tempered and G40 is case-hardened with a hard wearing surface."
+        },
+        {
+          "slot": "K",
+          "q": "Wear-resistant conveyor chain compared with round link mining chain?",
+          "a": "The wear-resistant chain is sold as G90, G60 and G40 versions. The [round link mining chain to DIN 22252](/p/round-link-mining-chain-din-22252) is sold in strength grades B, C, C++ and D. Choose on strength versus wear."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the wear-resistant round link conveyor chain, and how do I order?",
+          "a": "Yes. The wear-resistant round link conveyor chain is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending the size you need through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "family": "anchor-handling-chasers",
+  "extraFacts": [
+    {
+      "fact": "J-Lock Chaser — Single Chain Grabber listing: Size range 110 t WLL to 250 t WLL; Working load limit 110–250 t",
+      "source": "Indus Hydraulics listing for J-Lock Chaser — Single Chain Grabber"
+    },
+    {
+      "fact": "J-Lock Chaser — Single Chain Grabber listing: Size range 110 t WLL to 250 t WLL; Working load limit 110–250 t",
+      "source": "Indus Hydraulics listing for J-Lock Chaser — Single Chain Grabber"
+    },
+    {
+      "fact": "Permanent Chaser listing: Size range 130 t SWL to 250 t SWL; Working load limit 130–250 t",
+      "source": "Indus Hydraulics listing for Permanent Chaser"
+    },
+    {
+      "fact": "J-Chaser listing: Size range 110 t SWL to 250 t SWL; 4 listed sizes",
+      "source": "Indus Hydraulics listing for J-Chaser"
+    },
+    {
+      "fact": "J-Chaser listing: Size range 110 t SWL to 250 t SWL; Working load limit 110–250 t",
+      "source": "Indus Hydraulics listing for J-Chaser"
+    },
+    {
+      "fact": "Permanent Chaser listing: Size range 130 t SWL to 250 t SWL; 2 listed sizes",
+      "source": "Indus Hydraulics listing for Permanent Chaser"
+    }
+  ],
+  "products": [
+    {
+      "slug": "anchor-line-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Anchor Line Hook used for?",
+          "a": "Anchor Line Hook is a hook for recovering a mooring line from the seabed, rated by safe working load in tonnes. It is listed in 6 sizes, 15 t SWL to 80 t SWL."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Anchor Line Hook, such as IH-MR-AH-ALH-15T?",
+          "a": "Anchor Line Hook part numbers begin with IH-MR-AH-ALH and end in a size code: IH-MR-AH-ALH-15T is the 15 t SWL size and IH-MR-AH-ALH-80T is the 80 t SWL size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Anchor Line Hook come in?",
+          "a": "Anchor Line Hook is listed in 6 sizes, 15 t SWL to 80 t SWL, each with its own Indus part number, for example IH-MR-AH-ALH-15T and IH-MR-AH-ALH-80T. The table includes 15 t SWL: minimum breaking load 60 t, WLL 15 t, proof load 30 t and 80 t SWL: minimum breaking load 320 t, WLL 80 t, proof load 160 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Anchor Line Hook?",
+          "a": "For Anchor Line Hook, state the SWL and the chain or wire size the tool works on. The SWL must be at least the working tension on the line being handled, and should be checked against the work wire and the vessel's winch pull."
+        },
+        {
+          "slot": "E",
+          "q": "What SWL does Anchor Line Hook have?",
+          "a": "Anchor Line Hook is listed with a 15 to 80 t working load, depending on size. The size table also gives a proof load of 30 to 160 t. The WLL or SWL is the most the tool may carry in service; proof and breaking loads are test figures, never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Anchor Line Hook supplied in?",
+          "a": "The listing for Anchor Line Hook does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Anchor Line Hook?",
+          "a": "The listing for Anchor Line Hook names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Anchor Line Hook connect to or work with?",
+          "a": "Anchor Line Hook is used with work wire, pendant wire, chain and rated shackles of the same capacity. Mooring chain and its connectors are on the [anchor chain accessories shelf](/c/anchor-chain-accessories) and anchors on the [marine anchors shelf](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Anchor Line Hook be inspected and looked after?",
+          "a": "Check Anchor Line Hook for wear on the throat and bearing surfaces, cracks, bent parts and pin wear after every job, and take it out of service if it is damaged. Offshore lifting equipment also needs periodic examination by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Anchor Line Hook differ from J-Lock Chaser — Single Chain Grabber?",
+          "a": "Anchor Line Hook differs from [J-Lock Chaser — Single Chain Grabber](/p/j-lock-chaser-single-chain-grabber) in its size range 15 t SWL to 80 t SWL against 110 t WLL to 250 t WLL; working load limit 15–80 t against 110–250 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Anchor Line Hook shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Anchor Line Hook from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Anchor Line Hook in stock in Dubai?",
+          "a": "Yes, Anchor Line Hook is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chain-link-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Chain Link Hook used for?",
+          "a": "Chain Link Hook is a hook that engages a link of anchor chain, used in anchor-handling and recovery. Tell us the size and duty you have in mind and we confirm the right part and its rating on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Chain Link Hook be supplied in?",
+          "a": "Chain Link Hook can be supplied in the size you need (dimensions are confirmed with the quotation). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Chain Link Hook?",
+          "a": "For Chain Link Hook, state the SWL and the chain or wire size the tool works on. The SWL must be at least the working tension on the line being handled, and should be checked against the work wire and the vessel's winch pull."
+        },
+        {
+          "slot": "E",
+          "q": "What SWL does Chain Link Hook have?",
+          "a": "The listing for Chain Link Hook gives its dimensions on request and does not publish a working load; the SWL is confirmed on the quotation for the duty you describe, and it is never inferred from the size."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Chain Link Hook supplied in?",
+          "a": "The listing for Chain Link Hook does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Chain Link Hook?",
+          "a": "The listing for Chain Link Hook names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Chain Link Hook connect to or work with?",
+          "a": "Chain Link Hook is used with work wire, pendant wire, chain and rated shackles of the same capacity. Mooring chain and its connectors are on the [anchor chain accessories shelf](/c/anchor-chain-accessories) and anchors on the [marine anchors shelf](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Chain Link Hook be inspected and looked after?",
+          "a": "Check Chain Link Hook for wear on the throat and bearing surfaces, cracks, bent parts and pin wear after every job, and take it out of service if it is damaged. Offshore lifting equipment also needs periodic examination by a competent person."
+        },
+        {
+          "slot": "J",
+          "q": "What job is Chain Link Hook used for?",
+          "a": "Chain Link Hook is used for anchor-handling and chain recovery. Tell us the duty and the site conditions and we confirm it suits the job."
+        },
+        {
+          "slot": "J",
+          "q": "What do I need to send to get a quotation for Chain Link Hook?",
+          "a": "For Chain Link Hook, send the Indus part number from the size table, or the size and the load or duty you need, with the quantity and delivery country. Send the size or rating you need and we quote with the drawing and certificate. Use [our contact page](/contact) and we reply with a price and lead time. Say on the RFQ if you need documents beyond the standard ones."
+        },
+        {
+          "slot": "L",
+          "q": "How are Chain Link Hook shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Chain Link Hook from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Chain Link Hook in stock in Dubai?",
+          "a": "Yes. We keep Chain Link Hook in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "four-prong-grapnel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Four-Prong Grapnel used for?",
+          "a": "Four-Prong Grapnel is a four-prong grapnel that is dragged along the seabed to catch and recover lines, chain or objects, rated by WLL in tonnes. It is listed in 3 sizes, 130 t WLL to 250 t WLL."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Four-Prong Grapnel, such as IH-MR-AH-GRP-130T?",
+          "a": "Four-Prong Grapnel part numbers begin with IH-MR-AH-GRP and end in a size code: IH-MR-AH-GRP-130T is the 130 t WLL size and IH-MR-AH-GRP-250T is the 250 t WLL size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Four-Prong Grapnel come in?",
+          "a": "Four-Prong Grapnel is listed in 3 sizes, 130 t WLL to 250 t WLL, each with its own Indus part number, for example IH-MR-AH-GRP-130T and IH-MR-AH-GRP-250T. The table includes 130 t WLL: WLL 130 t, proof load 250 t and 250 t WLL: WLL 250 t, proof load 350 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Four-Prong Grapnel?",
+          "a": "For Four-Prong Grapnel, state the SWL and the chain or wire size the tool works on. The SWL must be at least the working tension on the line being handled, and should be checked against the work wire and the vessel's winch pull."
+        },
+        {
+          "slot": "E",
+          "q": "What SWL does Four-Prong Grapnel have?",
+          "a": "Four-Prong Grapnel is listed with a 130 to 250 t working load, depending on size. The size table also gives a proof load of 250 to 350 t. The WLL or SWL is the most the tool may carry in service; proof and breaking loads are test figures, never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Four-Prong Grapnel supplied in?",
+          "a": "The listing for Four-Prong Grapnel does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Four-Prong Grapnel?",
+          "a": "The listing for Four-Prong Grapnel names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Four-Prong Grapnel connect to or work with?",
+          "a": "Four-Prong Grapnel is used with work wire, pendant wire, chain and rated shackles of the same capacity. Mooring chain and its connectors are on the [anchor chain accessories shelf](/c/anchor-chain-accessories) and anchors on the [marine anchors shelf](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Four-Prong Grapnel be inspected and looked after?",
+          "a": "Check Four-Prong Grapnel for wear on the throat and bearing surfaces, cracks, bent parts and pin wear after every job, and take it out of service if it is damaged. Offshore lifting equipment also needs periodic examination by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Four-Prong Grapnel differ from J-Lock Chaser — Single Chain Grabber?",
+          "a": "Four-Prong Grapnel differs from [J-Lock Chaser — Single Chain Grabber](/p/j-lock-chaser-single-chain-grabber) in its size range 130 t WLL to 250 t WLL against 110 t WLL to 250 t WLL; working load limit 130–250 t against 110–250 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Four-Prong Grapnel shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Four-Prong Grapnel from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Four-Prong Grapnel in stock in Dubai?",
+          "a": "Yes. Four-Prong Grapnel is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "j-chaser",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is J-Chaser used for?",
+          "a": "J-Chaser is a J-shaped chaser that is run down an anchor chain or pennant wire to the anchor so the anchor can be broken out and recovered. It is listed in 4 sizes, 110 t SWL to 250 t SWL."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for J-Chaser, such as IH-MR-AH-JCH-110T?",
+          "a": "J-Chaser part numbers begin with IH-MR-AH-JCH and end in a size code: IH-MR-AH-JCH-110T is the 110 t SWL size and IH-MR-AH-JCH-250T is the 250 t SWL size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does J-Chaser come in?",
+          "a": "J-Chaser is listed in 4 sizes, 110 t SWL to 250 t SWL, each with its own Indus part number, for example IH-MR-AH-JCH-110T and IH-MR-AH-JCH-250T. The table includes 110 t SWL: WLL 110 t and 250 t SWL: WLL 250 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of J-Chaser?",
+          "a": "For J-Chaser, state the SWL and the chain or wire size the tool works on. The SWL must be at least the working tension on the line being handled, and should be checked against the work wire and the vessel's winch pull."
+        },
+        {
+          "slot": "E",
+          "q": "What SWL does J-Chaser have?",
+          "a": "J-Chaser is listed with a 110 to 250 t working load, depending on size. The WLL or SWL is the most the tool may carry in service; proof and breaking loads are test figures, never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is J-Chaser supplied in?",
+          "a": "The listing for J-Chaser does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to J-Chaser?",
+          "a": "The listing for J-Chaser names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does J-Chaser connect to or work with?",
+          "a": "J-Chaser is used with work wire, pendant wire, chain and rated shackles of the same capacity. Mooring chain and its connectors are on the [anchor chain accessories shelf](/c/anchor-chain-accessories) and anchors on the [marine anchors shelf](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should J-Chaser be inspected and looked after?",
+          "a": "Check J-Chaser for wear on the throat and bearing surfaces, cracks, bent parts and pin wear after every job, and take it out of service if it is damaged. Offshore lifting equipment also needs periodic examination by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does J-Chaser differ from Permanent Chaser?",
+          "a": "J-Chaser differs from [Permanent Chaser](/p/permanent-chaser) in its size range 110 t SWL to 250 t SWL against 130 t SWL to 250 t SWL; working load limit 110–250 t against 130–250 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are J-Chaser shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship J-Chaser from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep J-Chaser in stock in Dubai?",
+          "a": "Yes. We keep J-Chaser in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "j-lock-chaser-single-chain-grabber",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is J-Lock Chaser, Single Chain Grabber used for?",
+          "a": "J-Lock Chaser, Single Chain Grabber is a single-chain grabber chaser: a J-chaser with a lock that holds the chain once it is caught, used to run down a chain and recover an anchor. It is listed in 2 sizes, 110 t WLL to 250 t WLL."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does J-Lock Chaser, Single Chain Grabber come in?",
+          "a": "J-Lock Chaser, Single Chain Grabber is listed in 2 sizes, 110 t WLL to 250 t WLL, each with its own Indus part number, for example IH-MR-AH-JLC-110T and IH-MR-AH-JLC-250T. The table includes 110 t WLL: WLL 110 t, proof load 250 t and 250 t WLL: WLL 250 t, proof load 400 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of J-Lock Chaser, Single Chain Grabber?",
+          "a": "For J-Lock Chaser, Single Chain Grabber, state the SWL and the chain or wire size the tool works on. The SWL must be at least the working tension on the line being handled, and should be checked against the work wire and the vessel's winch pull."
+        },
+        {
+          "slot": "E",
+          "q": "What SWL does J-Lock Chaser, Single Chain Grabber have?",
+          "a": "J-Lock Chaser, Single Chain Grabber is listed with a 110 to 250 t working load, depending on size. The size table also gives a proof load of 250 to 400 t. The WLL or SWL is the most the tool may carry in service; proof and breaking loads are test figures, never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is J-Lock Chaser, Single Chain Grabber supplied in?",
+          "a": "The listing for J-Lock Chaser, Single Chain Grabber does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to J-Lock Chaser, Single Chain Grabber?",
+          "a": "The listing for J-Lock Chaser, Single Chain Grabber names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does J-Lock Chaser, Single Chain Grabber connect to or work with?",
+          "a": "J-Lock Chaser, Single Chain Grabber is used with work wire, pendant wire, chain and rated shackles of the same capacity. Mooring chain and its connectors are on the [anchor chain accessories shelf](/c/anchor-chain-accessories) and anchors on the [marine anchors shelf](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should J-Lock Chaser, Single Chain Grabber be inspected and looked after?",
+          "a": "Check J-Lock Chaser, Single Chain Grabber for wear on the throat and bearing surfaces, cracks, bent parts and pin wear after every job, and take it out of service if it is damaged. Offshore lifting equipment also needs periodic examination by a competent person."
+        },
+        {
+          "slot": "J",
+          "q": "What job is J-Lock Chaser, Single Chain Grabber used for?",
+          "a": "J-Lock Chaser, Single Chain Grabber is used for recovering anchors in offshore anchor handling. Tell us the duty and the site conditions and we confirm it suits the job."
+        },
+        {
+          "slot": "K",
+          "q": "How does J-Lock Chaser, Single Chain Grabber differ from J-Chaser?",
+          "a": "J-Lock Chaser, Single Chain Grabber differs from [J-Chaser](/p/j-chaser) in its size range 110 t WLL to 250 t WLL against 110 t SWL to 250 t SWL; 2 listed sizes against 4."
+        },
+        {
+          "slot": "L",
+          "q": "How are J-Lock Chaser, Single Chain Grabber shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship J-Lock Chaser, Single Chain Grabber from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep J-Lock Chaser, Single Chain Grabber in stock in Dubai?",
+          "a": "Yes. J-Lock Chaser, Single Chain Grabber is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "permanent-chaser",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Permanent Chaser used for?",
+          "a": "Permanent Chaser is a chaser that stays on the mooring line as a permanent fitting, so the anchor can be recovered by pulling on the chaser. It is listed in 2 sizes, 130 t SWL to 250 t SWL."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Permanent Chaser come in?",
+          "a": "Permanent Chaser is listed in 2 sizes, 130 t SWL to 250 t SWL, each with its own Indus part number, for example IH-MR-AH-PCH-130T and IH-MR-AH-PCH-250T. The table includes 130 t SWL: WLL 130 t, proof load 250 t and 250 t SWL: WLL 250 t, proof load 350 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Permanent Chaser?",
+          "a": "For Permanent Chaser, state the SWL and the chain or wire size the tool works on. The SWL must be at least the working tension on the line being handled, and should be checked against the work wire and the vessel's winch pull."
+        },
+        {
+          "slot": "E",
+          "q": "What SWL does Permanent Chaser have?",
+          "a": "Permanent Chaser is listed with a 130 to 250 t working load, depending on size. The size table also gives a proof load of 250 to 350 t. The WLL or SWL is the most the tool may carry in service; proof and breaking loads are test figures, never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Permanent Chaser supplied in?",
+          "a": "The listing for Permanent Chaser does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Permanent Chaser?",
+          "a": "The listing for Permanent Chaser names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Permanent Chaser connect to or work with?",
+          "a": "Permanent Chaser is used with work wire, pendant wire, chain and rated shackles of the same capacity. Mooring chain and its connectors are on the [anchor chain accessories shelf](/c/anchor-chain-accessories) and anchors on the [marine anchors shelf](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Permanent Chaser be inspected and looked after?",
+          "a": "Check Permanent Chaser for wear on the throat and bearing surfaces, cracks, bent parts and pin wear after every job, and take it out of service if it is damaged. Offshore lifting equipment also needs periodic examination by a competent person."
+        },
+        {
+          "slot": "J",
+          "q": "What job is Permanent Chaser used for?",
+          "a": "Permanent Chaser is used for offshore mooring with recoverable anchors. Tell us the duty and the site conditions and we confirm it suits the job."
+        },
+        {
+          "slot": "K",
+          "q": "How does Permanent Chaser differ from J-Chaser?",
+          "a": "Permanent Chaser differs from [J-Chaser](/p/j-chaser) in its size range 130 t SWL to 250 t SWL against 110 t SWL to 250 t SWL; working load limit 130–250 t against 110–250 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Permanent Chaser shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Permanent Chaser from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Permanent Chaser in stock in Dubai?",
+          "a": "Yes. We keep Permanent Chaser in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-shackle-for-chaser",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Swivel Shackle for Chaser used for?",
+          "a": "Swivel Shackle for Chaser is a swivel shackle that joins a chaser to its pendant or work wire and lets it turn without twisting the wire. Its listed configuration is Ø100 mm and Ø82 mm pins, 644.5 mm between centres."
+        },
+        {
+          "slot": "D",
+          "q": "What size does Swivel Shackle for Chaser come in?",
+          "a": "Swivel Shackle for Chaser is supplied as one listed configuration, Ø100 mm and Ø82 mm pins, 644.5 mm between centres, under the Indus part number IH-MR-AH-SSC-644. Send us the quantity and, if your layout or fitting differs, the dimensions you need and we confirm it on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Shackle for Chaser?",
+          "a": "For Swivel Shackle for Chaser, state the SWL and the chain or wire size the tool works on. The SWL must be at least the working tension on the line being handled, and should be checked against the work wire and the vessel's winch pull."
+        },
+        {
+          "slot": "E",
+          "q": "What SWL does Swivel Shackle for Chaser have?",
+          "a": "The listing for Swivel Shackle for Chaser gives its dimensions on request and does not publish a working load; the SWL is confirmed on the quotation for the duty you describe, and it is never inferred from the size."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Swivel Shackle for Chaser supplied in?",
+          "a": "The listing for Swivel Shackle for Chaser does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Swivel Shackle for Chaser?",
+          "a": "The listing for Swivel Shackle for Chaser names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Swivel Shackle for Chaser connect to or work with?",
+          "a": "Swivel Shackle for Chaser is used with work wire, pendant wire, chain and rated shackles of the same capacity. Mooring chain and its connectors are on the [anchor chain accessories shelf](/c/anchor-chain-accessories) and anchors on the [marine anchors shelf](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Swivel Shackle for Chaser be inspected and looked after?",
+          "a": "Check Swivel Shackle for Chaser for wear on the throat and bearing surfaces, cracks, bent parts and pin wear after every job, and take it out of service if it is damaged. Offshore lifting equipment also needs periodic examination by a competent person."
+        },
+        {
+          "slot": "J",
+          "q": "What job is Swivel Shackle for Chaser used for?",
+          "a": "Swivel Shackle for Chaser is used for connecting chasers to work wires. Tell us the duty and the site conditions and we confirm it suits the job."
+        },
+        {
+          "slot": "K",
+          "q": "How does Swivel Shackle for Chaser differ from Permanent Chaser?",
+          "a": "Swivel Shackle for Chaser differs from [Permanent Chaser](/p/permanent-chaser) in its size range Ø100 mm and Ø82 mm pins, 644.5 mm between centres against 130 t SWL to 250 t SWL; 1 listed sizes against 2."
+        },
+        {
+          "slot": "L",
+          "q": "How are Swivel Shackle for Chaser shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Swivel Shackle for Chaser from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Swivel Shackle for Chaser in stock in Dubai?",
+          "a": "Yes, Swivel Shackle for Chaser is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

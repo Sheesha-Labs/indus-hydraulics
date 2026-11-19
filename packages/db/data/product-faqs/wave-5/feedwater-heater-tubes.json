@@ -1,0 +1,76 @@
+{
+  "family": "feedwater-heater-tubes",
+  "extraFacts": [
+    {
+      "fact": "EN 10204 type 3.1 is a manufacturer-issued inspection certificate, validated by the manufacturer's authorised inspection representative who is independent of the manufacturing department, and it reports the test results for the delivered lot.",
+      "source": "EN 10204:2004 Metallic products — Types of inspection documents (type 3.1)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "feedwater-heater-u-tubes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are feedwater heater U-tubes used for?",
+          "a": "Feedwater heater U-tubes are the bent tubes inside high- and low-pressure feedwater heaters in power and desalination plants. We supply stainless U-tubes to ASTM A688 and A803 and carbon steel U-tubes to ASTM A556, bent from straight seamless or welded tube."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do ASTM A688 and ASTM A556 feedwater heater U-tubes come in?",
+          "a": "A688 covers 15.9–25.4 mm (5/8–1 in) OD with a minimum average or minimum wall of 0.7 mm, and A556 covers 15.9–31.8 mm (5/8–1-1/4 in) OD with a wall of at least 1.1 mm. These U-tubes are made to your drawing, so there is no fixed size table."
+        },
+        {
+          "slot": "D",
+          "q": "How long can feedwater heater U-tube legs be?",
+          "a": "Legs up to about 12 m are typical for feedwater heater U-tubes, and straight tube up to 30 m can be supplied on request. Leg length, bend radius and the number of rows follow your bend schedule, which you send with the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "How tight a bend radius can feedwater heater U-tubes take?",
+          "a": "A centreline radius of 1.5×OD is available, with dimensional tolerances guaranteed from 2×OD. Wall thinning at the bend follows the governing specification on your order (A688 or TEMA, or A556), so state which one applies; there is no single percentage."
+        },
+        {
+          "slot": "F",
+          "q": "Which grades are available for ASTM A688 and A803 feedwater heater tubes?",
+          "a": "Stainless grades are TP304, TP304L, TP304N, TP316, TP316L and N08367 to A688, and ferritic TP439 to A803. Carbon steel U-tubes are A556 grades A2, B2 and C2. A688 tensile strength is 515 MPa for TP304/316 and 485 MPa for the L grades."
+        },
+        {
+          "slot": "G",
+          "q": "What tests apply to ASTM A688 feedwater heater U-tubes?",
+          "a": "Each U-tube is pressure tested after bending, and each straight tube is electric-tested after final heat treatment under A688 and A556. A262 IGC corrosion testing is done on straight lots and on the smallest heat-treated bend (A688). Optional eddy current uses EDM notch standards."
+        },
+        {
+          "slot": "G",
+          "q": "Do feedwater heater U-tubes come with mill test certificates?",
+          "a": "Yes, a mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged by agreement. Say which certificate and which inspector your project specification names when you enquire. See the [EN 10204 3.1 guide](/blog/en-10204-3-1-mill-test-certificate) for what the certificate states."
+        },
+        {
+          "slot": "I",
+          "q": "Does the bend of a feedwater heater U-tube need heat treatment?",
+          "a": "Heat treatment of the bend is made to order: stress-relief or solution anneal of the bend plus about 150 mm of leg for A688, or at least 300 mm where the project specification requires it. On A556 carbon steel the bent portion is stress relieved at 585–640 °C (1100–1200 °F) if specified."
+        },
+        {
+          "slot": "I",
+          "q": "What residual chloride limit applies to A688 feedwater heater tubes when packed?",
+          "a": "A688 limits residual chloride on tube surfaces to 10.7 mg/m² (1 mg/ft²) at packing, checked on one tube per 500. Stainless U-tubes are meant for chloride-sensitive service, so ask for this check and a cleaned, protected packing if your site specification demands it."
+        },
+        {
+          "slot": "K",
+          "q": "How does A688 stainless feedwater heater tube differ from A556 carbon steel?",
+          "a": "A688 is for seamless or welded austenitic tube, while A556 is for seamless cold-drawn carbon steel in grades A2, B2 and C2. A556 thinning is calculated with t_f ≥ T·2R/(2R + D), a more severe form than the A688/TEMA one. Our [U-bend tubes range](/c/carbon-steel-u-bend-tubes) includes plain carbon steel bends."
+        },
+        {
+          "slot": "J",
+          "q": "Where do feedwater heater U-tubes go in a power plant?",
+          "a": "Feedwater heater U-tubes are used in power-plant and cogeneration feedwater heaters: A688 stainless, A556 carbon steel and A803 ferritic. The bend and wall-thinning rules are explained in our [U-bend wall-thinning guide](/blog/u-bend-tubes-bend-radius-wall-thinning)."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply feedwater heater U-tubes from Dubai?",
+          "a": "Yes, we supply feedwater heater U-tubes from Dubai, UAE and ship worldwide with the best lead times. They are bent to your drawing and bend schedule rather than held as a catalogue size, so send the standard, grade, OD, wall, length and quantity through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}
