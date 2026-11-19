@@ -11,8 +11,18 @@ import SpecTableBlockView from './SpecTableBlock'
 import ResultBoxBlockView from './ResultBoxBlock'
 import TeamListBlockView from './TeamListBlock'
 
+/** Figure media resolved server-side, keyed by Media id. */
+export type FigureMedia = Record<string, { storagePath: string; alt: string | null }>
+
 type Props = {
   blocksRaw: unknown
+  /**
+   * The figure blocks store a Media ID, not a path. They used to hand that id
+   * straight to the image as if it were a storage path, so a figure with an
+   * image set rendered a broken URL; every figure was still a placeholder, so
+   * nobody saw it. The page now resolves the ids and passes them in here.
+   */
+  figureMedia?: FigureMedia
 }
 
 /**
@@ -20,7 +30,7 @@ type Props = {
  * Validates the array via Zod first; invalid blocks are silently dropped
  * (logged server-side) so a single broken block doesn't break the page.
  */
-export default function ArticleRenderer({ blocksRaw }: Props) {
+export default function ArticleRenderer({ blocksRaw, figureMedia = {} }: Props) {
   const parsed = BodyBlocksSchema.safeParse(blocksRaw)
   if (!parsed.success) {
     console.error('[ArticleRenderer] invalid bodyBlocks', parsed.error.flatten())
@@ -32,13 +42,13 @@ export default function ArticleRenderer({ blocksRaw }: Props) {
     // never had a constrained parent to scroll within.
     <article className="sc-article-body min-w-0">
       {parsed.data.map((block, i) => (
-        <BlockSwitch key={i} block={block} />
+        <BlockSwitch key={i} block={block} figureMedia={figureMedia} />
       ))}
     </article>
   )
 }
 
-function BlockSwitch({ block }: { block: BodyBlock }) {
+function BlockSwitch({ block, figureMedia }: { block: BodyBlock; figureMedia: FigureMedia }) {
   switch (block.type) {
     case 'section_head':
       return <SectionHeadBlockView block={block} />
@@ -49,7 +59,7 @@ function BlockSwitch({ block }: { block: BodyBlock }) {
     case 'problem_solution':
       return <ProblemSolutionBlockView block={block} />
     case 'figure':
-      return <FigureBlockView block={block} />
+      return <FigureBlockView block={block} media={block.imageId ? figureMedia[block.imageId] ?? null : null} />
     case 'pull_quote':
       return <PullQuoteBlockView block={block} />
     case 'approach_grid':

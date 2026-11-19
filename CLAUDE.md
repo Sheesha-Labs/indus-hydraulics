@@ -104,19 +104,20 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
    set the attribute and no `dark:` variant existed anywhere in the tree — and has been removed.
    Do not reintroduce one without a design package that specifies it.
 
-6. **Type families — storefront three, admin one.**
-   - **Storefront:** Geist (sans), Instrument Serif (display), JetBrains Mono (data and labels).
-     Mono is for machine-readable content only — part numbers, SKUs, quantities, dates,
-     pressures, statuses, table headers, eyebrows. Prose is never mono. A number inside a
-     sentence is not mono; the same number in a stat tile is.
-   - **Admin: no monospace, anywhere.** Owner decision 2026-11-11, following the Bazar admin.
-     All admin UI text is Geist (Instrument Serif stays for KPI numerals and card headings).
-     Eyebrows, table headers and group labels are Geist uppercase with tracking; slugs, SKUs,
-     codes, counts and dates are Geist with `tabular-nums` so columns still align. Never write
-     `font-mono`, the `.mono` class, `--font-mono` or a monospace stack under `app/admin` or
-     `components/admin` — `lib/admin-no-mono.test.ts` fails the build. Shared `packages/ui`
-     primitives that use mono for the storefront are turned to Geist on admin pages by the
-     `:root:has([data-surface='admin'])` token override in `globals.css`; do not remove it.
+6. **Type families — two, everywhere. No monospace.**
+   - **Geist** (sans) for all UI text *and* data. **Instrument Serif** (display) for headlines,
+     KPI numerals and card headings.
+   - **No monospace anywhere on the site.** Admin went first (owner decision 2026-11-11); the
+     storefront followed on 2026-11-19. Eyebrows, table headers and labels are Geist uppercase with
+     tracking; part numbers, SKUs, quantities, dates and pressures are Geist with `tabular-nums` so
+     columns still align.
+   - Implemented at the TOKEN: `--font-mono` resolves to Geist in `apps/web/src/app/globals.css`
+     and JetBrains Mono is no longer loaded, so legacy `font-mono` / `.mono` classes render Geist.
+     Do not write new `font-mono` anyway, and never reintroduce a monospace stack under `app/admin`
+     or `components/admin` — `lib/admin-no-mono.test.ts` fails the build. Real code samples
+     (`<code>`, `<pre>`) keep a system monospace via `--default-mono-font-family`.
+   - *(Superseded: "Storefront: Geist, Instrument Serif, JetBrains Mono — mono for machine-readable
+     content".)*
 
 7. **One primary action per view.** If a screen appears to need two, one of them is secondary.
 

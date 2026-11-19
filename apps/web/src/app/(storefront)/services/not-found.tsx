@@ -17,7 +17,7 @@ export default function ServicesNotFound() {
           All case studies
         </Link>
         <Link
-          href="/quote"
+          href="/contact"
           className="inline-flex items-center rounded-sm bg-ih-navy px-5 py-2.5 text-sm font-medium text-white"
         >
           Open a service ticket

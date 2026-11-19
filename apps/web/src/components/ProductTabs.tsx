@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, type ReactNode } from 'react'
+import { useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import Link from 'next/link'
 import {
   competitorBrandSlug,
@@ -102,6 +102,37 @@ export default function ProductTabs({
   weightKg,
 }: Props) {
   const [active, setActive] = useState(0)
+  const stripRef = useRef<HTMLDivElement>(null)
+  /** Where the strip sat on screen when a tab was tapped, to hold it there. */
+  const anchorTop = useRef<number | null>(null)
+
+  /*
+    Switching panels changes the page height under the reader's thumb, and on a
+    phone that read as the tab bar "jumping" (owner report, 2026-11-19). Before
+    paint, put the strip back where it was on screen, then scroll the chosen
+    tab fully into the strip — sideways only, so the page never moves twice.
+  */
+  useLayoutEffect(() => {
+    const strip = stripRef.current
+    if (!strip) return
+    if (anchorTop.current !== null) {
+      const drift = strip.getBoundingClientRect().top - anchorTop.current
+      if (Math.abs(drift) > 1) window.scrollBy({ top: drift, behavior: 'instant' as ScrollBehavior })
+      anchorTop.current = null
+    }
+    const btn = strip.querySelector<HTMLElement>('[aria-selected="true"]')
+    if (btn) {
+      const left = btn.offsetLeft - strip.offsetLeft
+      const right = left + btn.offsetWidth
+      if (left < strip.scrollLeft) strip.scrollTo({ left: left - 8, behavior: 'smooth' })
+      else if (right > strip.scrollLeft + strip.clientWidth) strip.scrollTo({ left: right - strip.clientWidth + 8, behavior: 'smooth' })
+    }
+  }, [active])
+
+  function choose(i: number) {
+    anchorTop.current = stripRef.current?.getBoundingClientRect().top ?? null
+    setActive(i)
+  }
 
   const allSpecs = Object.values(specGroups).flat()
   /*
@@ -153,12 +184,27 @@ export default function ProductTabs({
         overflow-x-auto here the whole page scrolls sideways instead — it was
         pushing the document to 710px at a 375px viewport.
       */}
-      <div className="mb-8 flex overflow-x-auto border-b border-ih-border">
+      {/*
+        overscroll-x-none: no rubber-band, so the strip cannot be dragged out
+        past its first or last tab and spring back (the "jiggle"), and a swipe
+        that ends at an edge does not hand off to the page. Snap stops a fling
+        on a whole tab. Scrollbar hidden: the cut-off last label is the cue.
+      */}
+      <div
+        ref={stripRef}
+        role="tablist"
+        aria-label="Product information"
+        className="no-scrollbar mb-8 flex snap-x snap-proximity overflow-x-auto overscroll-x-none border-b border-ih-border"
+      >
         {tabs.map((tab, i) => (
           <button
             key={tab.id}
-            onClick={() => setActive(i)}
-            className={`-mb-px whitespace-nowrap border-b-[1.5px] px-5 py-3 text-[13.5px] transition-colors ${
+            type="button"
+            role="tab"
+            aria-selected={i === active}
+            aria-controls={`tab-panel-${tab.id}`}
+            onClick={() => choose(i)}
+            className={`-mb-px shrink-0 snap-start whitespace-nowrap border-b-[1.5px] px-4 py-3 text-[13.5px] transition-colors sm:px-5 ${
               i === active
                 ? 'border-ih-accent text-ih-accent'
                 : 'border-transparent text-ih-muted hover:text-ih-ink'

@@ -3,10 +3,10 @@ import type { SopBlock } from '@indus/domain'
 export default function SopBlockView({ block }: { block: SopBlock }) {
   return (
     <div className="my-4 mb-7 overflow-hidden rounded-sm border border-ih-border bg-ih-surface font-sans">
-      <div className="mono flex items-center justify-between bg-ih-navy px-5 py-3.5 text-[11px] uppercase tracking-[0.1em] text-white">
+      <div className="sc-on-dark flex items-center justify-between gap-4 bg-ih-navy px-5 py-3.5 text-[12px] font-medium uppercase tracking-[0.08em] text-white">
         <span>{block.header}</span>
         <span>
-          <strong className="font-medium text-ih-accent">{block.completion}</strong>
+          <strong className="font-semibold tabular-nums text-white">{block.completion}</strong>
         </span>
       </div>
       {block.phases.map((phase, pi) => (
