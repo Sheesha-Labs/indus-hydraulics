@@ -1,0 +1,1725 @@
+{
+  "family": "pneumatic-solenoid-valves-04",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions: 1 bar = 14.5038 psi and 1 MPa = 10 bar, so 0.1 MPa is about 15 psi, 0.15 MPa about 22 psi, 0.2 MPa about 29 psi, 0.5 MPa about 73 psi, 0.6 MPa about 87 psi, 0.7 MPa about 101 psi (7 bar), 0.8 MPa about 116 psi and 1 MPa about 145 psi (10 bar). Temperature: -5 deg C is 23 deg F and +40 deg C is 104 deg F.",
+      "source": "NIST Special Publication 811 (unit conversion factors)"
+    },
+    {
+      "fact": "A pressure range such as 0.15 MPa to 0.7 MPa on a pilot-operated solenoid valve gives the lowest pressure at which the valve shifts reliably and the highest it may be used at; the upper figure is the maximum operating pressure and the lower figure is a minimum, not a rating.",
+      "source": "SMC valve catalogue specification tables (operating pressure range); ISO 4414"
+    },
+    {
+      "fact": "A 3-way valve has 3 ports and 2 positions; a 4-way or 5-port valve has 4 or 5 ports and 2 positions; a 3-position 5-port valve adds a centre position. All ports blocked (closed centre) holds a cylinder, centre exhaust vents both cylinder ports and pressure centre pressurises both. A single-solenoid valve returns when de-energised; a double-solenoid 2-position valve stays in its last position. A manifold base carries several valves on common supply and exhaust passages and is closed with blanking plates where a station is unused.",
+      "source": "ISO 1219-1 (fluid power graphical symbols); Indus Hydraulics guide 'Solenoid valve functions explained: 3/2, 5/2 and 5/3 valves'"
+    },
+    {
+      "fact": "A solenoid coil is built for one supply type and voltage; a coil on the wrong voltage or supply type will not switch the valve and can burn out.",
+      "source": "ISO 4414 (pneumatic fluid power, general rules and safety requirements)"
+    },
+    {
+      "fact": "Cv is a flow coefficient: the higher the Cv, the more air a valve passes at a given pressure drop.",
+      "source": "ANSI/ISA-75.01.01; Indus Hydraulics guide 'Sizing pneumatic valves: Cv, Kv, sonic conductance'"
+    },
+    {
+      "fact": "Customs classification: valves and parts of valves fall under HS heading 8481.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "Sibling SMC listings on indushydraulics.com: VQZ200 rows list widths of 12.5 mm and 45 mm; the VQZ2000 rows include VQZ2251-5L1 (2-position double), VQZ2420B-5YO1-C6F-Q (3-position exhaust centre) and the VQZ3000 rows VQZ3351-5YZ1 (3-position closed centre); the VFS listing has 169 part numbers and the VFS2000 listing 13; the VX2 valve listing has 90 part numbers with 1/8, 1/4 and 3/8 inch ports; the VG series has 1/2 and 3/4 inch ports; VF manifolds have 1/4 and 3/8 inch bases, VFR manifolds 1/4 to 3/4 inch bases with 17 rows at 1/4 inch, VV5Q41 manifolds 3/8 inch base mounts and VV81 manifolds 3/8 and 1/2 inch bases; VQZ1000 valves list 10 to 22 mm widths, VQZ200 and VQZ300 use 3-port-size bodies, VQZ2000 and VQZ3000 use 4/5-port-size bodies with 15, 18, 34 and 45 mm widths; VQ4000 valves list 0.15 MPa to 1 MPa; VQ5000 valves are 3-position plug-in DC valves; VV5Q manifolds are 4/5 port bases and VV3Q manifolds are 3-port bases; VFS, VFR and VF manifolds carry VV5FS, VV5FR and VV5F part numbers.",
+      "source": "Indus Hydraulics product listings compiled from SMC catalogues"
+    }
+  ],
+  "products": [
+    {
+      "slug": "smc-vqz1000-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQZ1000 series solenoid valve used for?",
+          "a": "The SMC VQZ1000 series is a compact 5-port pilot-operated solenoid valve for air cylinders, sold as single units or for manifold mounting. This listing carries 63 part numbers, such as VQZ1121-5L1-M5, VQZ1151-5LO1-Q and VQZ1220-5LO1-N7, with widths of 10 mm to 22 mm in the row text."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQZ1000 part number such as VQZ1151-5LO1-Q or VQZ1220-5LO1-N7?",
+          "a": "In the rows the digit after the VQZ1 prefix gives the function, and VQZ1121 and VQZ1151 are single-solenoid valves. On the VQZ2000 and VQZ3000 rows the same digit is 2 for double solenoid, 3 for closed centre and 4 for exhaust centre. The rest of the code carries options, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve functions does the SMC VQZ1000 series offer?",
+          "a": "The row text lists 2-position normally open (VQZ1121-5L1-M5), 2-position exhaust (VQZ1151-5LO1-Q), single actuation and piloted solenoid versions, plus other codes such as VQZ1220-5LO1-N7 and VQZ1421B-5MO1-M5 whose row text does not state the function."
+        },
+        {
+          "slot": "D",
+          "q": "Which port and mounting options does the SMC VQZ1000 series have?",
+          "a": "Rows show 4/5-port valves, a 1/8\" base mount (VQZ1151-5L1-01) and a 1/4\" base mount, listed as single units or units for manifold mounting. Match the base or manifold to the part number, for example [SMC VQ series manifolds](/p/smc-vq-series-manifold)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the SMC VQZ1000 series valve operate at?",
+          "a": "Rows state a maximum operating pressure of 101 psi, which is 0.7 MPa or about 7 bar, and some state 145 psi (1 MPa, about 10 bar, as on VQZ1151-5L1-01-Q); the row text gives ranges such as 0.15 MPa to 0.7 MPa. Check the row for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What coil voltages does the SMC VQZ1000 series come with?",
+          "a": "The row text lists 24 V DC on most valves (VQZ1151-5L1), 12 V DC on some (VQZ1151-5MO1) and 220 V AC on one. Voltage is a row attribute, so confirm it for your exact part number before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQZ1000 series?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VQZ1000 series, so name the document you need, for example a certificate of conformity or the SMC catalogue page for VQZ1151-5LO1-Q, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold and fittings go with SMC VQZ1000 valves?",
+          "a": "Units for manifold mounting need a matching SMC manifold base, see our [SMC VV5Z manifolds](/p/smc-vv5z-series-manifold), and one-touch fittings or tube from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should an SMC VQZ1000 valve be installed and tested?",
+          "a": "Mount the valve with its gasket on the base, plug in the connector, then use the manual override to confirm it shifts before applying power. Do not exceed the row's maximum operating pressure."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VQZ1000 and VQZ2000 valves?",
+          "a": "VQZ1000 rows are the smallest bodies, 10 to 22 mm wide, while the [SMC VQZ2000 series](/p/smc-vqz2000-series-valve) rows are 15 to 45 mm wide and carry more flow. Pick by the flow the cylinder needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQZ1000 series made and how is it exported?",
+          "a": "The country of origin for the SMC VQZ1000 series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQZ1000 series valves in Dubai?",
+          "a": "Yes. We keep SMC VQZ1000 series valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vqz200-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQZ200 series solenoid valve used for?",
+          "a": "The SMC VQZ200 series is a 5-port pilot-operated solenoid valve in a narrow body, listed with 3-port-size connections and a 12.5 mm to 45 mm width in the row text. This listing carries 26 part numbers, including VQZ212-6LO-N7T, VQZ232-5L-N7T and VQZ235-5YZ1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQZ200 part number such as VQZ232-5YZ1-N7T or VQZ235-5YZ1?",
+          "a": "In the rows the three digits after VQZ set the body: VQZ232-5YZ1-N7T is listed 12.5 mm wide and VQZ235-5YZ1 is listed 45 mm wide. The code after the dash carries coil, connector and option letters that the listing does not spell out, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which widths and port options does the SMC VQZ200 series have?",
+          "a": "Rows list widths of 12.5 mm and 45 mm, heights from 56.5 mm to 61.5 mm and 3-port-size connections, as on VQZ232-5YZ1-N7T and VQZ235-5YZ1. Single units and manifold versions both appear."
+        },
+        {
+          "slot": "D",
+          "q": "Which actuation types are listed on the SMC VQZ200 series?",
+          "a": "Rows give piloted solenoid actuation (VQZ232-5YZ1-N7T, VQZ222-5LO1-N7T) and single actuation. Check the number of solenoids and return method in the row for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the SMC VQZ200 series operate at?",
+          "a": "Rows state a maximum operating pressure of 101 psi (0.7 MPa, about 7 bar), with one row at 145 psi (1 MPa, about 10 bar) for VQZ235-5YZ1. Check the row for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What coil voltages does the SMC VQZ200 series come with?",
+          "a": "Rows list 24 V DC (VQZ232-5YZ1-N7T) and 24 V AC (VQZ222-5LO1-N7T), with an L plug electrical entry without connector on some. Confirm the voltage for your part number."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQZ200 series?",
+          "a": "No certificate or datasheet is attached to the the SMC VQZ200 series listing. Tell us in the enquiry what your file requires for VQZ232-5YZ1-N7T, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold and fittings fit SMC VQZ200 valves?",
+          "a": "Use an SMC manifold base for the series, for example the [SMC VV5Z manifolds](/p/smc-vv5z-series-manifold), and fittings and tubing from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) and [pneumatic tubing](/c/pneumatic-tubing) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and test an SMC VQZ200 valve?",
+          "a": "Seat the valve on its base with the gasket, connect the L plug or DIN terminal and use the manual override to confirm it shifts before powering it. Keep supply within the maximum pressure on the row."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VQZ200 series differ from the VQZ300 series?",
+          "a": "VQZ200 rows are narrow bodies from 12.5 mm, while the [SMC VQZ300 series](/p/smc-vqz300-series-valve) rows start at 18 mm and are 45 mm at the top. Choose by flow and space."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQZ200 series made and how is it exported?",
+          "a": "The country of origin for the SMC VQZ200 series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQZ200 series valves in Dubai?",
+          "a": "Yes, SMC VQZ200 series valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vqz2000-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQZ2000 series solenoid valve used for?",
+          "a": "The SMC VQZ2000 series is a 5-port pilot-operated solenoid valve for air cylinders, with 4/5-port-size bodies from 15 mm to 45 mm wide in the row text. This listing carries 92 part numbers, including VQZ2121-5YZ1-N7T, VQZ2151-5M1, VQZ2251-5L1 and VQZ2420B-5YO1-C6F-Q."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQZ2000 part number such as VQZ2251-5L1 or VQZ2420B-5YO1-C6F-Q?",
+          "a": "In the rows the digit after VQZ2 gives the function: VQZ2151 is a 2-position single solenoid valve, VQZ2251 a 2-position double solenoid valve and VQZ2420B a 3-position exhaust-centre valve. The rest of the code carries options, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve functions does the SMC VQZ2000 series offer?",
+          "a": "Rows list 2-position single (VQZ2151-5M1), 2-position double (VQZ2251-5L1) and one 3-position exhaust-centre valve (VQZ2420B-5YO1-C6F-Q). Single is the commonest, with 12 rows described as 2-position."
+        },
+        {
+          "slot": "D",
+          "q": "Which body widths does the SMC VQZ2000 series come in?",
+          "a": "Rows list widths of 15 mm (VQZ2121-5YZ1-N7T), 34 mm (VQZ2150-5YZ1) and 45 mm in the row text, so the series covers a range of flows. Pick the width from your cylinder's flow demand using the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the SMC VQZ2000 series operate at?",
+          "a": "Rows state a maximum operating pressure of 101 psi (0.7 MPa, about 7 bar) on most, 116 psi (0.8 MPa) on VQZ2151-5L1 and 145 psi (1 MPa, about 10 bar) on VQZ3151-3YZ1. Check the row for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What coil voltages does the SMC VQZ2000 series come with?",
+          "a": "Rows list 24 V DC on most (VQZ2150-5YZ1) and 110 V AC (VQZ2120-3YZ1). Confirm the supply voltage for your part number before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQZ2000 series?",
+          "a": "We hold no datasheet or certificate for the SMC VQZ2000 series on this page. Ask for the SMC catalogue sheet or a certificate of conformity for VQZ2251-5L1 in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold and fittings fit SMC VQZ2000 valves?",
+          "a": "Use a matching SMC manifold base, see the [SMC VV5Z manifolds](/p/smc-vv5z-series-manifold), and one-touch fittings or tube from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) and [pneumatic tubing](/c/pneumatic-tubing) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and wire an SMC VQZ2000 valve?",
+          "a": "Mount on a clean base with its gasket, connect the plug or DIN terminal, use the manual override to check shifting, then pressurise within the row's maximum pressure."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VQZ2000 and VQZ3000 valves?",
+          "a": "VQZ2000 rows start at 15 mm wide, while the [SMC VQZ3000 series](/p/smc-vqz3000-series-valve) rows are 18 mm and 45 mm wide and list 3-position closed-centre valves. Pick by flow."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQZ2000 series made and how is it exported?",
+          "a": "The country of origin for the SMC VQZ2000 series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQZ2000 series valves in Dubai?",
+          "a": "Yes. SMC VQZ2000 series valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vqz300-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQZ300 series solenoid valve used for?",
+          "a": "The SMC VQZ300 series is a 5-port pilot-operated solenoid valve with a 3-port-size body, 18 mm and 45 mm wide in the row text. This listing carries 51 part numbers, including VQZ312-5LO1-02T, VQZ332-5YZ1-02T and VQZ335-5YZ1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQZ300 part number such as VQZ332-5YZ1-02T or VQZ335-5YZ1?",
+          "a": "In the rows VQZ312 and VQZ315 are single-solenoid valves and VQZ332 is described as a double-solenoid valve, with 18 mm width on the 312 and 332 rows and 45 mm on VQZ335. The -02T style ending carries the port option. Quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which widths and electrical entries does the SMC VQZ300 series offer?",
+          "a": "Rows list 18 mm and 45 mm widths and two entry types: L plug (VQZ312-5LO1-02T, 0.35 W coil in the row text) and DIN terminal (VQZ332-5YZ1-02T, VQZ335-5YZ1)."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages does the SMC VQZ300 series come with?",
+          "a": "Rows list 24 V DC (VQZ312-5LO1-02T), 12 V DC (VQZ332-6LO1-N11T-F) and 110 V AC (VQZ315-3L1). Confirm the voltage for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the SMC VQZ300 series operate at?",
+          "a": "Rows state a maximum operating pressure of 101 psi (0.7 MPa, about 7 bar) on most and 145 psi (1 MPa, about 10 bar) on VQZ332-6LO1-N11T-F. Check the row for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC VQZ300 valves suitable for?",
+          "a": "The VQZ300 series switches compressed air for cylinders and small actuators. The listing does not hold material data, so send your medium and we confirm it with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQZ300 series?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VQZ300 series, so name the document you need, for example a certificate of conformity or the SMC catalogue page for VQZ332-5YZ1-02T, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold and fittings fit SMC VQZ300 valves?",
+          "a": "A matching SMC manifold base, such as the [SMC VV5Z manifolds](/p/smc-vv5z-series-manifold), and fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test an SMC VQZ300 valve?",
+          "a": "Connect the L plug or DIN terminal to the right supply, use the manual override to check the valve shifts, and keep pressure within the row's maximum."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VQZ300 series differ from the VQZ200 series?",
+          "a": "VQZ300 rows are 18 mm and 45 mm wide, while the [SMC VQZ200 series](/p/smc-vqz200-series-valve) starts at 12.5 mm. Both use 3-port-size bodies in the listing."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQZ300 series made and how is it exported?",
+          "a": "The country of origin for the SMC VQZ300 series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQZ300 series valves in Dubai?",
+          "a": "Yes, we stock SMC VQZ300 series valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vqz3000-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQZ3000 series solenoid valve used for?",
+          "a": "The SMC VQZ3000 series is a 5-port pilot-operated solenoid valve for larger air cylinders, with 4/5-port-size bodies 18 mm and 45 mm wide in the row text. This listing carries 73 part numbers, including VQZ3151-5YZ1, VQZ3251-5YOS1 and VQZ3351-5YZ1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQZ3000 part number such as VQZ3351-5YZ1 or VQZ3121-5YZ1-N11T?",
+          "a": "In the rows the digit after VQZ3 gives the function: VQZ3121 and VQZ3151 are 2-position single solenoid, VQZ3251 is 2-position double solenoid and VQZ3351 is a 3-position closed-centre valve. Quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve functions does the SMC VQZ3000 series offer?",
+          "a": "Rows describe 2-position single (VQZ3121-5YZ1-N11T), 2-position double (VQZ3251-5YOS1) and 3-position closed-centre double-solenoid valves (VQZ3351-5YZ1, VQZ3351-5LO1)."
+        },
+        {
+          "slot": "D",
+          "q": "Which voltages does the SMC VQZ3000 series come in?",
+          "a": "Rows list 24 V DC on most (VQZ3151-5YZ1) and 110 to 115 V AC (VQZ3150-3YZ1). Confirm the voltage for your part number. Quote the full part number when you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the SMC VQZ3000 series operate at?",
+          "a": "Rows state a maximum operating pressure of 101 psi, which is 0.7 MPa or about 7 bar. The listing summary gives the same single figure; check the row for your part number."
+        },
+        {
+          "slot": "J",
+          "q": "What does closed centre mean on the SMC VQZ3351 valve?",
+          "a": "Closed centre means all ports are blocked in the middle position, so a cylinder holds where it stops, see the [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3). Leakage can still let a vertical load drift, so add a mechanical lock where people are exposed."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQZ3000 series?",
+          "a": "No certificate or datasheet is attached to the the SMC VQZ3000 series listing. Tell us in the enquiry what your file requires for VQZ3351-5YZ1, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold and fittings fit SMC VQZ3000 valves?",
+          "a": "A matching SMC manifold base, such as the [SMC VV5Q manifolds](/p/smc-vv5q-series-manifold) or [SMC VV5Z manifolds](/p/smc-vv5z-series-manifold), and fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Confirm the match with us."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and wire an SMC VQZ3000 valve?",
+          "a": "Mount on a clean base with the gasket, wire each solenoid on a double or 3-position valve to its own output, never energise both, and test with the manual override."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VQZ3000 and VQ4000 valves?",
+          "a": "VQZ3000 rows state 101 psi (0.7 MPa) while the [SMC VQ4000 series](/p/smc-vq4000-series-valve) rows state ranges up to 1 MPa, about 10 bar. Pick VQ4000 for higher pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQZ3000 series made and how is it exported?",
+          "a": "The country of origin for the SMC VQZ3000 series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQZ3000 series valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps SMC VQZ3000 series valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vq4000-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQ4000 series solenoid valve used for?",
+          "a": "The SMC VQ4000 series is a 5-port pilot-operated solenoid valve for larger air cylinders, with a stated pressure range of 0.15 MPa to 1 MPa on many rows. This listing carries 121 part numbers, including VQ4100-5B, VQ4101-3W1 and VQ4401-3W, as single units or for manifold mounting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQ4000 part number such as VQ4100-5B or VQ4401-3W?",
+          "a": "In the rows VQ4100 and VQ4101 are 2-position valves with one solenoid (VQ4100-3W1, VQ4101-5B1), and the pressure range differs between the two codes, 0.15 MPa to 1 MPa on VQ4100 and 0.2 MPa to 1 MPa on VQ4101. Quote the full code for the other options."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve functions does the SMC VQ4000 series list?",
+          "a": "Rows describe 2-position valves (15 rows), 3-position closed-centre valves (3) and 3-position exhaust-centre valves (4). The VQ4400 and VQ4401 numbers (VQ4401-3W) appear in the 3-position rows."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes and mounting types does the SMC VQ4000 series have?",
+          "a": "Rows list 4/5-port bodies with 3/8\" ports (VQ4100-51) and a 3/8\" base mount, for single units or manifold mounting. The listing also holds a few ARBQ4000 numbers (ARBQ4000-N0-P-1) in the same table."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure range does the SMC VQ4000 series work at?",
+          "a": "Rows state a pressure rating of 0.15 MPa to 1 MPa (about 22 to 145 psi) or 0.2 MPa to 1 MPa (about 29 to 145 psi). The lower figure is the minimum pressure to shift the valve and the upper is the maximum, about 10 bar."
+        },
+        {
+          "slot": "F",
+          "q": "What coil voltages does the SMC VQ4000 series come with?",
+          "a": "Rows list 24 V DC and 12 V DC, with VQ4100-3W1 showing both 110 V AC and 24 V DC text in its row. Confirm the voltage for your part number."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQ4000 series?",
+          "a": "We hold no datasheet or certificate for the SMC VQ4000 series on this page. Ask for the SMC catalogue sheet or a certificate of conformity for VQ4100-5B in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold fits SMC VQ4000 valves?",
+          "a": "The [SMC VV5Q41 manifolds](/p/smc-vv5q41-series-manifold) and [VV5QC41 manifolds](/p/smc-vv5qc41-series-manifold) list 145 psi (1 MPa) rows and are the closest match; confirm the base with us before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and test an SMC VQ4000 valve?",
+          "a": "Mount the valve with its gasket, connect the coil and use the manual override to confirm shifting. Make sure supply pressure is at least the lower figure of the row's pressure range."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VQ4000 and VQ5000 valves?",
+          "a": "VQ4000 rows give a 0.15 MPa to 1 MPa range with 3/8\" ports, while the [SMC VQ5000 series](/p/smc-vq5000-series-valve) rows are larger 5-port valves with 3-position plug-in DC versions. Pick VQ5000 for more flow."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQ4000 series made and how is it exported?",
+          "a": "The country of origin for the SMC VQ4000 series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQ4000 series valves in Dubai?",
+          "a": "Yes. We keep SMC VQ4000 series valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vq5000-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQ5000 series solenoid valve used for?",
+          "a": "The SMC VQ5000 series is a 5-port solenoid valve for larger air cylinders, dust-protected with a metal seal and a 1 W coil in the row text. This listing carries 75 part numbers, including VQ5100-3, VQ5301-3W and VQ5450RY-5H-04, many as 3-position plug-in DC valves."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQ5000 part number such as VQ5100-3W or VQ5301-3?",
+          "a": "In the rows VQ53 and the VQ54 and VQ55 numbers (VQ5300-3W, VQ5450RY-5H-04, VQ5551-5G) are described as 3-position valves, while the VQ51 rows are listed under the 2-position single description. The ending carries port and option letters."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve functions does the SMC VQ5000 series list?",
+          "a": "Rows list 2-position single (the VQ51 numbers), 3-position plug-in DC valves (such as VQ5301-3W) and non-plug-in 3-position valves (VQ5551-5G). The specification summary gives 2-position single actuation."
+        },
+        {
+          "slot": "D",
+          "q": "Which port and mounting options does the SMC VQ5000 series have?",
+          "a": "Rows list 5-port bodies and base-mount sizes of 1/8\", 1/4\", 3/8\" and 1/2\" (VQ5450RY-5H-04 is a 1/2\" mounting). Check the mount size for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What features does the SMC VQ5000 series list?",
+          "a": "The specification gives a dust-protected enclosure, a standard 1 W type, a metal seal and a non-locking push-type manual override that needs a tool. The listing holds no pressure range for these rows, so we confirm it with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the SMC VQ5000 valve have?",
+          "a": "The specification gives a metal seal, which is the sealing method between spool and body. Body materials are not stated; send us your medium and conditions and we confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQ5000 series?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VQ5000 series, so name the document you need, for example a certificate of conformity or the SMC catalogue page for VQ5301-3W, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What base and fittings go with SMC VQ5000 valves?",
+          "a": "A matching SMC manifold base, see the [SMC VV5Q manifolds](/p/smc-vv5q-series-manifold) and [VFS manifolds](/p/smc-vfs-series-manifold), and fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Confirm the match with us."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and use the manual override on an SMC VQ5000 valve?",
+          "a": "The override is a non-locking push type that needs a tool, so press it only to test the valve; it springs back. Wire the coil with the correct DC polarity for plug-in versions."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VQ5000 series differ from the VQ4000 series?",
+          "a": "VQ5000 rows are the larger 5-port series with 3-position plug-in DC versions, while the [SMC VQ4000 series](/p/smc-vq4000-series-valve) lists a 0.15 MPa to 1 MPa range with 3/8\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQ5000 series made and how is it exported?",
+          "a": "The country of origin for the SMC VQ5000 series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQ5000 series valves in Dubai?",
+          "a": "Yes, SMC VQ5000 series valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vg-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VG series valve used for?",
+          "a": "The SMC VG series is an air-operated (air operating type) 2-position valve with NPTF connections, in 1/2\" and 3/4\" port sizes, listed as normally closed. This listing carries 32 part numbers, including VGA342-04A, VGA342-06A and VG342-5DZ-04TA-Y."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VG series part number such as VGA342-04A or VG342-5DZ-06NA-Y?",
+          "a": "In the rows the digits after the dash track the port, -04 being a 1/2\" port (VGA342-04A) and -06 a 3/4\" port (VGA342-06A). The listing does not decode the other letters, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VG series have?",
+          "a": "Rows list 1/2\" (VGA342-04A, VG342-5DZ-04TA-Y) and 3/4\" ports (VGA342-06A), plus VGA342-10NA listed at 3/4\". The listing gives the port size in each row."
+        },
+        {
+          "slot": "D",
+          "q": "Which voltages does the SMC VG series come in?",
+          "a": "Eight rows state a supply voltage: 24 V DC (1), 100 V AC (1), 110 V AC (5) and 220 V AC (1). The air-operated VGA numbers have no coil."
+        },
+        {
+          "slot": "E",
+          "q": "What valve action does the SMC VG series have?",
+          "a": "Rows give a 2-position normally closed valve (5 rows) and a 2-position normally open valve (2 rows), with single action and NPTF connections. The listing holds no pressure range, so we confirm it with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What medium can the SMC VG series valve handle?",
+          "a": "The listing gives an air-operated valve with NPTF connection; it holds no media or material data, so send your medium and we confirm it with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VG series?",
+          "a": "No certificate or datasheet is attached to the the SMC VG series listing. Tell us in the enquiry what your file requires for VGA342-04A, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go with the SMC VG series valve?",
+          "a": "NPTF fittings of 1/2\" or 3/4\" from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and for air operation an air pilot line from our [pneumatic tubing](/c/pneumatic-tubing) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install an SMC VG series valve?",
+          "a": "Pipe the 1/2\" or 3/4\" NPTF ports with thread sealant, connect the pilot air or coil, and test the normally closed or open action before starting the line."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VG series differ from the SMC VX2 media valve?",
+          "a": "VG is a 1/2\" to 3/4\" air-operated valve, while the [SMC VX2 series 2-way media valve](/p/smc-vx2-series-2-way-media-valve) is a smaller 1/8\" to 3/8\" 2-way solenoid valve with a stated pressure-difference range."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VG series made and how is it exported?",
+          "a": "The country of origin for the SMC VG series depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VG series valves in Dubai?",
+          "a": "Yes. SMC VG series valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vj3000-series-solenoid-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the SMC VJ3000 series solenoid valve listing?",
+          "a": "This listing holds four SMC valves, VZ1000-11-1-0, VZ1000-11-1-2, VZ1000-11-1-14 and VZ1000-11-1-18, all with the VZ1000 prefix. The table describes each only as a valve, so quote the part number you need and we confirm the specification with SMC."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC part numbers like VZ1000-11-1-14?",
+          "a": "In these rows VZ1000 is the series, 11 and 1 are fixed in all four, and the last number (0, 2, 14 or 18) is the option that varies between them. The listing does not decode the options, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "Which options are available on the SMC VZ1000-11-1 valve?",
+          "a": "There are four part numbers, VZ1000-11-1-0, -2, -14 and -18, so four option variants. We confirm the differences with SMC when you send your part number."
+        },
+        {
+          "slot": "D",
+          "q": "Is the SMC VJ3000 series the same as the VZ1000 numbers on this page?",
+          "a": "The listing is titled VJ3000 but its part numbers begin VZ1000, so ask for the exact part number you want and we confirm that we supply the right one. We cross-check against the SMC catalogue before quoting."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature ratings does this SMC valve have?",
+          "a": "The listing holds no pressure, temperature or coil figures for these four part numbers, so we confirm the ratings for your exact code with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media apply to the SMC VZ1000 valve?",
+          "a": "The listing does not state materials or media. Send your medium and operating conditions and we confirm suitability with SMC. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with SMC VZ1000 valves?",
+          "a": "We hold no datasheet or certificate for the SMC VZ1000 valves on this page. Ask for the SMC catalogue sheet or a certificate of conformity for VZ1000-11-1-14 in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I fit with the SMC VZ1000 valve?",
+          "a": "Connectors and fittings depend on the exact variant, so tell us the part number. See the [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for related solenoid valves and our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install an SMC VZ1000 solenoid valve?",
+          "a": "Confirm the supply voltage and port connections for your variant before connecting, test with the manual override if fitted, and check for leaks at working pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How do SMC VZ1000 valves differ from the SMC VT4 listing?",
+          "a": "The [SMC VT4 listing](/p/smc-vt4-series-solenoid-valve) holds VPA air-pilot valves, whereas this listing holds VZ1000 numbers. Both need the exact part number to confirm the specification."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VZ1000 valve made and how is it exported?",
+          "a": "The country of origin for the SMC VZ1000 valve depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VJ3000 and VZ1000 series valves in Dubai?",
+          "a": "Yes, we stock SMC VZ1000 series valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vt4-series-solenoid-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the SMC VPA series air pilot valve listing?",
+          "a": "This listing holds eight SMC air-pilot valves, three with 3-port sizes (VPA344V-1-01TA, VPA344V-1-02NB, VPA344-X279) and five with 4/5-port sizes (VPA542-1-03NA, VPA542-1-03A, VPA542-1-03TA, VPA542-1-03A-F, VPA542-1-03A-X250). The specification gives an NPT, pilot-type, normally open valve."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC part numbers such as VPA542-1-03A and VPA344V-1-01TA?",
+          "a": "In the rows VPA344 numbers are the 3-port valves and VPA542 numbers the 4/5-port valves. The -01, -02 and -03 groups and the letters after them carry port and option codes that the listing does not spell out, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VPA series listing offer?",
+          "a": "Rows list 3-port valves (VPA344V-1-01TA, VPA344V-1-02NB, VPA344-X279) and 4/5-port air-pilot valves (VPA542-1-03NA and four variants). The -X250, -X279 and -F endings mark special versions."
+        },
+        {
+          "slot": "D",
+          "q": "Is the SMC VPA542 a solenoid valve or an air-pilot valve?",
+          "a": "The row text describes VPA542-1-03A as an air-pilot valve, so it is shifted by pilot air rather than a coil. For a coil valve see the [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the SMC VPA series listing give?",
+          "a": "The listing gives a pilot-type, normally open, NPT-connection valve with one pilot, but no pressure or temperature figures, so we confirm the ratings for your part number with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media apply to the SMC VPA valves?",
+          "a": "The listing does not state materials or media. Send your medium and conditions and we confirm suitability with SMC. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VPA valves?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VPA valves, so name the document you need, for example a certificate of conformity or the SMC catalogue page for VPA542-1-03A, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go with the SMC VPA valves?",
+          "a": "NPT fittings of the port size, from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and an air pilot line from our [pneumatic tubing](/c/pneumatic-tubing) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and pilot an SMC VPA valve?",
+          "a": "Pipe the NPT ports with thread sealant, connect the pilot air line, and test the valve shifts when pilot pressure is applied before running the circuit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VPA series listing differ from the SMC VG series?",
+          "a": "The VPA series listing holds VPA air-pilot valves with NPT ports, while the [SMC VG series](/p/smc-vg-series-valve) holds larger 1/2\" and 3/4\" air-operated valves."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VPA valve made and how is it exported?",
+          "a": "The country of origin for the SMC VPA valve depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VPA series air-pilot valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps SMC VPA series air-pilot valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vx2-series-2-way-media-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VX2 series 2-way media valve used for?",
+          "a": "The SMC VX2 series is a 2-way direct-acting (linear motion) solenoid valve for air and other media, in 1/8\", 1/4\" and 3/8\" port sizes. This listing carries 90 part numbers, including VX2230-03T-5DZ1, VX2122-02T-5C1 and VXA2130-01N-1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VX2 part number such as VX2230-03T-5DZ1 or VX2A0BA?",
+          "a": "In the rows the series appears in the code and in the row text as VX21, VX22 and VX23, and the port size is stated per row, for example VX2A0BA and VX2A4AY as 1/8\" valves. The listing does not decode the letters after the series, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VX2 series come in?",
+          "a": "Rows list 1/8\" (4 rows), 1/4\" (16) and 3/8\" (4) port sizes, with VX21, VX22 and VX23 body series. The port size is stated in each row."
+        },
+        {
+          "slot": "D",
+          "q": "Is the SMC VX2 valve normally closed or normally open?",
+          "a": "Both exist: rows describe N.C. (normally closed, 3 rows) and N.O. (normally open, 3 rows) valves. Check the row for your part number, and see the [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3) for the difference."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the SMC VX2 series work at?",
+          "a": "Rows state an operating pressure difference of 0 MPa to 1 MPa (about 145 psi, 10 bar) on most, 0 MPa to 0.6 MPa on VX2A0BA and VX2A0BG and 0 MPa to 0.5 MPa on VXA2130-01N-1, with an operating temperature of -5 deg C to +40 deg C on some rows."
+        },
+        {
+          "slot": "F",
+          "q": "What coil voltages does the SMC VX2 series come with?",
+          "a": "Rows list 24 V DC (VX2A0BA), 12 V DC (VX2A4AY) and 110 V AC (VX2A0AA). Confirm the voltage for your part number. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VX2 series?",
+          "a": "No certificate or datasheet is attached to the the SMC VX2 series listing. Tell us in the enquiry what your file requires for VX2230-03T-5DZ1, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold and fittings fit the SMC VX2 valve?",
+          "a": "The [SMC VX series manifolds](/p/smc-vx-series-manifold) with 1/8\" and 1/4\" base mounts take VX valves, and pipe fittings are on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and wire an SMC VX2 valve?",
+          "a": "Pipe the ports, keep the operating pressure difference within the row's range, and connect the coil to the right supply; test the valve before starting the line."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VX2 and VQZ valves?",
+          "a": "VX2 is a 2-way direct-acting media valve, while [SMC VQZ2000 series](/p/smc-vqz2000-series-valve) valves are 5-port pilot-operated cylinder valves. Use VX2 for on-off flow control."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VX2 valve made and how is it exported?",
+          "a": "The country of origin for the SMC VX2 valve depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VX2 series 2-way valves in Dubai?",
+          "a": "Yes. We keep SMC VX2 series 2-way valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vf-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VF series manifold used for?",
+          "a": "The SMC VF series manifold is a base that mounts several SMC solenoid valves on common supply and exhaust passages. This listing carries 16 part numbers, such as VV5F3-30-021, VV5F5-20-041 and NVV5F5-20-091-00T, with 1/4\" and 3/8\" base-mount sizes and an M5 / Rc thread type in the specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VF series manifold part number?",
+          "a": "In the rows the three digits before the last group give the stations: VV5F3-30-021 is a 2-station base and VV5F5-20-041 a 4-station base, and a leading N, as in NVV5F5-20-031-00T, marks a variant that the listing does not spell out. VV5F3 and VV5F5 are the two base sizes."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5F manifold have?",
+          "a": "Rows with station text show 2 stations (VV5F3-30-021) and 4 stations (VV5F5-20-041), and the same three-digit pattern gives 3, 5, 6 and 9 stations for -031, -051, -061 and -091. The specification lists 2 stations for the series example."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV5F manifold come in?",
+          "a": "Rows list 1/4\" base mounts (9 rows), 3/8\" base mounts (4) and one-off variants without a stated size; the specification gives a metric M5 or Rc thread for the VF3000 example. Match the port to your valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VF series manifold have?",
+          "a": "The listing holds no pressure rating for the VF manifold bases, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VF series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VF series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VF series manifold?",
+          "a": "We hold no datasheet or certificate for the SMC VF series manifold on this page. Ask for the SMC catalogue sheet or a certificate of conformity for VV5F3-30-021 in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VF series manifold?",
+          "a": "The VF series is made for SMC VF solenoid valves; the specification names the VF3000 series. Confirm the valve series with us, and see our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for the valves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VF series manifold?",
+          "a": "Mount each valve on the VF series base with its gasket, torque the screws evenly and plug unused stations; wire connector or plug-in kits such as VV5F3-30-021 to your control system as the part number specifies."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VF series manifold differ from the VFR and VFS manifolds?",
+          "a": "VF is the smallest of the three with 1/4\" and 3/8\" bases, while the [VFR manifold](/p/smc-vfr-series-manifold) has 1/4\" to 3/4\" bases and the [VFS manifold](/p/smc-vfs-series-manifold) is the largest listing with 169 part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VF series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VF series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VF series manifolds in Dubai?",
+          "a": "Yes, SMC VF series manifolds is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vfr-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VFR series manifold used for?",
+          "a": "The SMC VFR series manifold is a base that mounts several SMC solenoid valves on common supply and exhaust passages. This listing carries 30 part numbers, such as NVV5FR2-01T-031-02T, VV5FR3-01T-041-03 and VV5FR2-01T-061-02, in 1/4\", 3/8\", 1/2\" and 3/4\" base-mount sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VFR series manifold part number?",
+          "a": "In the rows the three digits before the final group give the stations, so VV5FR3-01T-041-03 is a 4-station base, and the same pattern gives -031 as 3 stations and -061 as 6. VV5FR2 and VV5FR3 are the two base sizes, and an N prefix is a variant the listing does not explain."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5FR manifold have?",
+          "a": "Rows with station text show 4 stations (VV5FR3-01T-041-03); by the same three-digit pattern as the VFS rows, -021, -031, -061, -071, -081 and -151 are 2, 3, 6, 7, 8 and 15 stations, for example NVV5FR2-01T-151-02T."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV5FR manifold come in?",
+          "a": "Rows list 1/4\" (17 rows), 3/8\" (9), 1/2\" (2) and 3/4\" (1) base mounts, with one four-station 3/8\" base (VV5FR3-01T-041-03). Choose the size from the valves' flow."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VFR series manifold have?",
+          "a": "The listing holds no pressure rating for VFR manifold bases, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VFR series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VFR series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VFR series manifold?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VFR series manifold, so name the document you need, for example a certificate of conformity or the SMC catalogue page for NVV5FR2-01T-031-02T, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VFR series manifold?",
+          "a": "The VFR bases take SMC VFR-series solenoid valves; confirm the valve series with us before ordering, and see our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for the valves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VFR series manifold?",
+          "a": "Before fitting valves to NVV5FR2-01T-031-02T, check the base face is clean and the gaskets are seated, then tighten evenly and test each station for leaks at working pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VFR series manifold differ from the VFS manifold?",
+          "a": "VFR has 1/4\" to 3/4\" bases in 30 part numbers, while the [VFS manifold](/p/smc-vfs-series-manifold) is a larger listing with cylinder ports of 1/4\" and 3/8\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VFR series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VFR series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VFR series manifolds in Dubai?",
+          "a": "Yes. SMC VFR series manifolds is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vfs-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VFS series manifold used for?",
+          "a": "The SMC VFS series manifold is a base that mounts several SMC solenoid valves on common supply and exhaust passages, and this is the largest manifold listing with 169 part numbers, such as NVV5FS2-01T-061-02T, VV5FS2-10-061-02 and VV5FS4-01T-041-04T."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VFS series manifold part number?",
+          "a": "In the rows the three digits before the final group give the stations: VV5FS2-10-061-02 is a 6-station base, -031 is 3 stations and -021 is 2. VV5FS2, VV5FS3 and VV5FS4 name the base sizes, and a leading N marks a variant the listing does not explain."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does an SMC VV5FS manifold have?",
+          "a": "Rows with station text show 2 stations (VV5FS2-01T1-021-02), 3 (VV5FS2-01T1-031-02), 4 (VV5FS2-01T1-041-01) and 6 (VV5FS2-10-061-02), and the same pattern gives 8 stations for -081 as in NVV5FS2-01T1-081-02T. Pick the count from the number of valves you need."
+        },
+        {
+          "slot": "D",
+          "q": "Which cylinder port sizes does the SMC VV5FS manifold offer?",
+          "a": "The row text lists cylinder ports of 1/4\" and 3/8\" on the larger bases, and the part number carries the port group, for example -01T1, -10 and -30. Check the row for the part you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VFS series manifold have?",
+          "a": "Two rows state a pressure of 150 psi (10 bar), and the listing summary repeats it; the other rows do not carry a figure, so we confirm the maximum working pressure for your part number with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VFS series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VFS series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VFS series manifold?",
+          "a": "No certificate or datasheet is attached to the the SMC VFS series manifold listing. Tell us in the enquiry what your file requires for MBF2610-02-1A, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VFS series manifold?",
+          "a": "The VFS bases take SMC VFS-series solenoid valves, see the [VFS2000 manifold listing](/p/smc-vfs-seriesmanifold-vfs-series) for the NPTF versions; confirm the valve series with us before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VFS series manifold?",
+          "a": "Assemble the VFS series base on a flat support so it does not twist, fit the valves with new gaskets, blank any spare stations and connect supply and exhaust before testing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VFS series manifold differ from the VFS2000 NPTF listing?",
+          "a": "This listing covers VV5FS2, VV5FS3 and VV5FS4 bases with metric and pipe variants, while the [VFS2000 NPTF manifold](/p/smc-vfs-seriesmanifold-vfs-series) is 13 part numbers with NPTF threads and plug lead wires."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VFS series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VFS series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VFS series manifolds in Dubai?",
+          "a": "Yes, we stock SMC VFS series manifolds at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vfs-seriesmanifold-vfs-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VFS2000 series manifold used for?",
+          "a": "The SMC VFS2000 series manifold is a base with NPTF threads that mounts SMC solenoid valves, a plug-in type with attachment plug lead wire in the specification. This listing carries 13 part numbers, such as VV5FS2-01-021-02T, VV5FS2-20-031-03T and VV5FS3-01T-131-03T-CD."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VFS2000 series manifold part number?",
+          "a": "In the rows the three digits before the final group give the stations: VV5FS2-01-021-02T is a 2-station base and, by the same pattern as the VFS rows, -081 is 8 stations and VV5FS3-01T-131 is 13. VV5FS2 and VV5FS3 are the base sizes, and the specification lists 2 stations for the series example."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5FS2 manifold have?",
+          "a": "The part numbers show 2 stations (VV5FS2-01-021-02T), 3 (VV5FS2-20-031-03T), 5 (VV5FS2-20-051-03T), 7 (VV5FS3-01T-071-03T), 8 (VV5FS2-01T-081-02T), 11 (VV5FS2-01T1-111-02T) and 13, reading the station digits; the specification lists 2."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV5FS2 manifold have?",
+          "a": "Rows list 1/4\" base mounts (5 rows) and 3/8\" (7), with an NPTF thread type in the specification. VV5FS2-01 numbers are the 1/4\" size in the rows shown."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VFS2000 series manifold have?",
+          "a": "The listing holds no pressure rating for these bases, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VFS2000 series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VFS2000 series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VFS2000 series manifold?",
+          "a": "We hold no datasheet or certificate for the SMC VFS2000 series manifold on this page. Ask for the SMC catalogue sheet or a certificate of conformity for VV5FS2-01-021-02T in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VFS2000 series manifold?",
+          "a": "The VFS2000 bases take SMC VFS2000-series valves with plug-in lead wire; confirm the valve series with us, and see our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VFS2000 series manifold?",
+          "a": "With VV5FS2-01-021-02T, fit the valves and gaskets, tighten the screws evenly, then check supply and exhaust connections and test the circuit at low pressure before running."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VFS2000 series manifold differ from the general VFS listing?",
+          "a": "This listing is the NPTF VFS2000 bases (13 part numbers), while the [main VFS manifold listing](/p/smc-vfs-series-manifold) covers 169 part numbers across sizes."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VFS2000 series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VFS2000 series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VFS2000 series manifolds in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps SMC VFS2000 series manifolds in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vq-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VQ series manifold used for?",
+          "a": "The SMC VQ series manifold is a base for SMC VQ20-series solenoid valves, listed with 5 part numbers: VV2Q22-04, VV2Q22-02-X23, VV2Q32-02-00N, VV2Q32-03-D-00N and VV2Q22-03-00T. The rows describe a 2 port size and 3 stations on two of them."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VQ series manifold part number?",
+          "a": "VV2Q22 and VV2Q32 name the two base sizes, and the -02, -03 and -04 group reads as the station count, with two rows stating 3 stations. The listing does not tie the station text to individual part numbers, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV2Q manifold have?",
+          "a": "The part numbers read as 2 stations (VV2Q22-02-X23, VV2Q32-02-00N), 3 (VV2Q22-03-00T, VV2Q32-03-D-00N) and 4 (VV2Q22-04), and two rows state 3 stations. The listing gives the series as VQ20."
+        },
+        {
+          "slot": "D",
+          "q": "Which port size does the SMC VV2Q manifold have?",
+          "a": "The row text states a 2 port size, which looks like a code rather than a pipe size, so we confirm the port thread for your part number with SMC before supply. The -X23 and -D- endings mark variants."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VQ series manifold have?",
+          "a": "The listing holds no pressure rating for VV2Q bases, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VQ series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VQ series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VQ series manifold?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VQ series manifold, so name the document you need, for example a certificate of conformity or the SMC catalogue page for VV2Q22-04, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VQ20 series manifold?",
+          "a": "The listing names the VQ20 series, so use it with VQ20-series valves; confirm the valve with us, and see our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for SMC valves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VQ series manifold?",
+          "a": "Fit the gasket between each valve and its station on the VQ series base, tighten the screws evenly, close unused stations with blanking plates and pressure-test for leaks before commissioning."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VQ series manifold differ from the VV5Q manifold?",
+          "a": "The VV2Q bases carry VQ20-series valves and number 5, while the [VV5Q manifold](/p/smc-vv5q-series-manifold) listing has 84 part numbers for 4/5-port bases with VQ1000 rows."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VQ series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VQ series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VQ series manifolds in Dubai?",
+          "a": "Yes. We keep SMC VQ series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv3q-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV3Q series manifold used for?",
+          "a": "The SMC VV3Q series manifold is a plug-in base for SMC VQ100-series valves, with side electrical entry, a circular connector and cable in the specification. This listing carries 45 part numbers, such as VV3Q11-04CU1, VV3Q11-08CS0 and VV3Q11-16CS0, from 2 to 16 stations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV3Q series manifold part number?",
+          "a": "In the rows the number after VV3Q11 is the station count: VV3Q11-04CU1 is 4 stations, -06 is 6, -08 is 8, -10 is 10, -12 is 12 and -16 is 16. The letters after it, such as CU1 and CS0, carry connector options the listing does not spell out."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV3Q manifold have?",
+          "a": "Rows show 2, 3, 4, 5, 6, 7, 8, 10, 12, 14 and 16 stations, for example VV3Q12-02 (2), VV3Q12-03 (3) and VV3Q11-16CS0 (16). Pick the count from your valve number."
+        },
+        {
+          "slot": "D",
+          "q": "Which port size does the SMC VV3Q manifold have?",
+          "a": "All 45 rows state a port size of 3, which appears to be a code, so we confirm the thread size for your part number with SMC before supply. The specification gives a plug-in unit base."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV3Q series manifold have?",
+          "a": "The listing states 102 psi (7 bar) on one row and the same figure in the summary; the other rows carry no figure, so we confirm the working pressure for your part number with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV3Q series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV3Q series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV3Q series manifold?",
+          "a": "No certificate or datasheet is attached to the the SMC VV3Q series manifold listing. Tell us in the enquiry what your file requires for VV3Q11-04CS1, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV3Q series manifold?",
+          "a": "The specification names the VQ100 series, so use it with VQ100-series valves; see the [SMC VQ series manifold](/p/smc-vq-series-manifold) for the VQ20 bases and confirm the match with us."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV3Q series manifold?",
+          "a": "Mount each valve on the VV3Q series base with its gasket, torque the screws evenly and plug unused stations; wire connector or plug-in kits such as VV3Q11-04CS1 to your control system as the part number specifies."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV3Q manifold differ from the VV5Q manifold?",
+          "a": "VV3Q is the 3-port-size plug-in base for VQ100 valves with up to 16 stations, while the [VV5Q manifold](/p/smc-vv5q-series-manifold) is a 4/5-port base for VQ1000 rows."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV3Q series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV3Q series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV3Q series manifolds in Dubai?",
+          "a": "Yes, SMC VV3Q series manifolds is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv5q-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV5Q series manifold used for?",
+          "a": "The SMC VV5Q series manifold is a 4/5-port base for SMC VQ-series valves, with a C-kit connector and a built-in silencer option in the specification. This listing carries 84 part numbers, such as VV5Q11-10N7TN, VV5Q11-04N7FS0-S and VV5Q21-08C8SQ-W-X413."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV5Q series manifold part number?",
+          "a": "In the rows the number after VV5Q11 is the station count: VV5Q11-10N7TN is 10 stations, and by the same pattern -06 is 6 and -08 is 8, with VQ1000 named as the series in the row text. The letters after it carry connector and port options the listing does not spell out."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5Q manifold have?",
+          "a": "Rows with station text show 10 stations (VV5Q11-10N7TN) and examples of 6, 7 and 8 stations, and the part-number pattern gives 3 for VV5Q11-03N7FS0-S, 5 for VV5Q11-05C6TN and 8 for VV5Q11-08C6TN."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV5Q manifold have?",
+          "a": "All rows state a 4/5 port size, with VQ0000 and VQ1000 series named in the row text. The listing does not give a thread size per row, so we confirm it for your part number with SMC."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV5Q series manifold have?",
+          "a": "Three rows state 102 psi (7 bar), and the listing summary gives the same; we confirm the working pressure for other rows with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV5Q series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV5Q series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV5Q series manifold?",
+          "a": "We hold no datasheet or certificate for the SMC VV5Q series manifold on this page. Ask for the SMC catalogue sheet or a certificate of conformity for VV5Q05-04N3C-S in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV5Q series manifold?",
+          "a": "The row text names the VQ and VQ1000 series, so use it with VQ-series valves; see the [SMC VQ4000 valves](/p/smc-vq4000-series-valve) and [VQ5000 valves](/p/smc-vq5000-series-valve) and confirm the base with us."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV5Q series manifold?",
+          "a": "Before fitting valves to VV5Q05-04N3C-S, check the base face is clean and the gaskets are seated, then tighten evenly and test each station for leaks at working pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV5Q manifold differ from the VV5Q41 manifold?",
+          "a": "VV5Q rows state 102 psi (7 bar), while the [VV5Q41 manifold](/p/smc-vv5q41-series-manifold) states 145 psi (10 bar) and 3/8\" bases. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV5Q series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV5Q series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV5Q series manifolds in Dubai?",
+          "a": "Yes. SMC VV5Q series manifolds is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv5q41-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV5Q41 series manifold used for?",
+          "a": "The SMC VV5Q41 series manifold is a 5-port base for SMC VQ-series valves, with 3/8\" and 1/4\" base-mount sizes on some rows. This listing carries 70 part numbers, such as VV5Q41-0403TT0, VV5Q41-06N7TFU3 and VV5Q41-12N11TFD0."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV5Q41 series manifold part number?",
+          "a": "In the rows the digits after VV5Q41 appear to carry the station count (VV5Q41-06N7TFU3, VV5Q41-08N7TFU3, VV5Q41-12N11TFD0), but the listing does not state it per row. The remaining letters are connector options, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5Q41 manifold have?",
+          "a": "The part numbers read as 4 to 12 stations, for example VV5Q41-05N11TFD3 (5), VV5Q41-08N7TFU3 (8) and VV5Q41-12N11TFD0 (12), though the listing does not state the count per row. Pick the count from the number of valves you need."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV5Q41 manifold have?",
+          "a": "The row text states a 5 port size on most rows, with a 3/8\" base mount (3 rows) and a 1/4\" base mount, plus one built-in 1/4\" fitting. Confirm the thread for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV5Q41 series manifold have?",
+          "a": "The listing states 145 psi (1 MPa, about 10 bar) on one row and the summary repeats it; we confirm the working pressure for other rows with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV5Q41 series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV5Q41 series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV5Q41 series manifold?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VV5Q41 series manifold, so name the document you need, for example a certificate of conformity or the SMC catalogue page for VV5Q41-0403TT0, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV5Q41 series manifold?",
+          "a": "VQ4000-series valves such as the [SMC VQ4000 series](/p/smc-vq4000-series-valve) list the same 1 MPa pressure; confirm the base with us before ordering. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV5Q41 series manifold?",
+          "a": "Assemble the VV5Q41 series base on a flat support so it does not twist, fit the valves with new gaskets, blank any spare stations and connect supply and exhaust before testing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV5Q41 manifold differ from the VV5QC41 manifold?",
+          "a": "VV5Q41 has plain base codes, while the [VV5QC41 manifold](/p/smc-vv5qc41-series-manifold) rows list cylinder ports of 1/4\" and 3/8\" with one-touch fitting codes."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV5Q41 series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV5Q41 series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV5Q41 series manifolds in Dubai?",
+          "a": "Yes, we stock SMC VV5Q41 series manifolds at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv5qc21-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV5QC21 series manifold used for?",
+          "a": "The SMC VV5QC21 series manifold is a 5-port base with one-touch cylinder-port fittings for SMC VQ-series valves. This listing carries 71 part numbers, such as VV5QC21-04N7TD0, VV5QC21-10N7TD0 and VVQC2000-1A-S-C0, with 6 mm, 8 mm and 1/4\" fitting rows."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV5QC21 series manifold part number?",
+          "a": "In the rows the number after VV5QC21 appears to be the station count (VV5QC21-04N7TD0, VV5QC21-10N7TD0), and the row text also lists 2, 8 and 10-station examples. The VVQC2000 numbers in the table are not explained on the listing."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5QC21 manifold have?",
+          "a": "The row text lists 2, 8 and 10-station bases, and the part numbers read as 2 to 10 stations, for example VV5QC21-02N7TD0 (2), VV5QC21-03N7LD2-BS (3) and VV5QC21-10N7TD0 (10)."
+        },
+        {
+          "slot": "D",
+          "q": "Which cylinder port fittings does the SMC VV5QC21 manifold have?",
+          "a": "Rows list one-touch fittings for 6 mm and 8 mm tube and 1/4\" tube (7 rows state 1/4\" fittings). Order the fitting size to suit your tubing."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV5QC21 series manifold have?",
+          "a": "The listing states 102 psi (7 bar) on one row and the same figure in the summary; we confirm the working pressure for other rows with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV5QC21 series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV5QC21 series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV5QC21 series manifold?",
+          "a": "No certificate or datasheet is attached to the the SMC VV5QC21 series manifold listing. Tell us in the enquiry what your file requires for VVQC2000-1A-S-C0, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV5QC21 series manifold?",
+          "a": "SMC VQ-series valves; see the [SMC VQZ2000 series](/p/smc-vqz2000-series-valve) and [VQ4000 series](/p/smc-vq4000-series-valve) and confirm the match with us before ordering. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV5QC21 series manifold?",
+          "a": "With VVQC2000-1A-S-C0, fit the valves and gaskets, tighten the screws evenly, then check supply and exhaust connections and test the circuit at low pressure before running."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV5QC21 manifold differ from the VV5QC41 manifold?",
+          "a": "VV5QC21 rows state 102 psi (7 bar), while the [VV5QC41 manifold](/p/smc-vv5qc41-series-manifold) states 145 psi (10 bar) and larger cylinder ports. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV5QC21 series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV5QC21 series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV5QC21 series manifolds in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps SMC VV5QC21 series manifolds in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv5qc41-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV5QC41 series manifold used for?",
+          "a": "The SMC VV5QC41 series manifold is a 5-port base with one-touch cylinder-port fittings, with 1/4\" and 3/8\" cylinder ports in the row text. This listing carries 66 part numbers, such as VV5QC41-04N11TFD2, VV5QC41-06N7TTD0 and VV5QC41-0503TSD0A."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV5QC41 series manifold part number?",
+          "a": "In the rows the number after VV5QC41 appears to be the station count (VV5QC41-04N11TFD2, VV5QC41-06N7TTD0). The letters after it carry port and connector options that the listing does not spell out, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5QC41 manifold have?",
+          "a": "The part numbers read as 1 to 12 stations, for example VV5QC41-01N11TMD2 (1), VV5QC41-02N11TTD0 (2), VV5QC41-04N11TFD2 (4) and VV5QC41-12N11TSDZENN0 (12), though the listing does not state the count per row."
+        },
+        {
+          "slot": "D",
+          "q": "Which cylinder port sizes does the SMC VV5QC41 manifold have?",
+          "a": "The row text lists cylinder ports of 1/4\" (7 rows) and 3/8\" (15 rows, as 0.375 and fitting codes for 3/8\"). Choose by tube size."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV5QC41 series manifold have?",
+          "a": "The listing states 145 psi (1 MPa, about 10 bar) on one row and the summary repeats it; we confirm the working pressure for other rows with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV5QC41 series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV5QC41 series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV5QC41 series manifold?",
+          "a": "We hold no datasheet or certificate for the SMC VV5QC41 series manifold on this page. Ask for the SMC catalogue sheet or a certificate of conformity for VV5QC41-0403SDQN0-X160US in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV5QC41 series manifold?",
+          "a": "SMC VQ4000-series valves list a 1 MPa range, see the [SMC VQ4000 series](/p/smc-vq4000-series-valve); confirm the base with us before ordering. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV5QC41 series manifold?",
+          "a": "Fit the gasket between each valve and its station on the VV5QC41 series base, tighten the screws evenly, close unused stations with blanking plates and pressure-test for leaks before commissioning."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV5QC41 manifold differ from the VV5Q41 manifold?",
+          "a": "VV5QC41 has one-touch cylinder-port fittings, while the [VV5Q41 manifold](/p/smc-vv5q41-series-manifold) lists plain base codes and 3/8\" base mounts. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV5QC41 series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV5QC41 series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV5QC41 series manifolds in Dubai?",
+          "a": "Yes. We keep SMC VV5QC41 series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv5z-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV5Z series manifold used for?",
+          "a": "The SMC VV5Z series manifold is a 4/5-port base for SMC solenoid valves, with 1/8\" and 1/4\" base mounts in the row text. This listing carries 12 part numbers, such as NVV5Z2-50-021-01T, VV5Z2-50-041-01 and VV5Z5-03-X398."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV5Z series manifold part number?",
+          "a": "In the rows the three digits before the final group give the stations: VV5Z2-50-041-01 is a 4-station base and VV5Z5-03-X398 reads as 3 stations (the row says 3 Station), VV5Z5-02-X398 as 2. VV5Z2 and VV5Z5 are the base sizes, and a leading N marks a variant the listing does not explain."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV5Z manifold have?",
+          "a": "Rows show 2 stations (VV5Z5-02-X398), 3 (VV5Z5-03-X398) and 4 (VV5Z2-50-041-01), and the same pattern reads NVV5Z2-50-061-01T as 6, -101 as 10 and -201 as 20 stations."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV5Z manifold have?",
+          "a": "Rows list 1/8\" base mounts (3 rows) and a 1/4\" base mount (1 row), with 7 rows stated only as a 4/5 port size. Match the base to your valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV5Z series manifold have?",
+          "a": "The listing holds no pressure rating for VV5Z bases, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV5Z series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV5Z series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV5Z series manifold?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VV5Z series manifold, so name the document you need, for example a certificate of conformity or the SMC catalogue page for NVV5Z2-50-021-01T, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV5Z series manifold?",
+          "a": "The VV5Z bases go with the VQZ valves, see the [SMC VQZ1000 series](/p/smc-vqz1000-series-valve) and [VQZ2000 series](/p/smc-vqz2000-series-valve); confirm the match with us before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV5Z series manifold?",
+          "a": "Mount each valve on the VV5Z series base with its gasket, torque the screws evenly and plug unused stations; wire connector or plug-in kits such as NVV5Z2-50-021-01T to your control system as the part number specifies."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV5Z manifold differ from the VV5ZS manifold?",
+          "a": "VV5Z is a 12-part-number listing with 1/8\" and 1/4\" bases, while the [VZS manifold](/p/smc-vzs-series-manifold) holds three part numbers with 1/8\" bases. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV5Z series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV5Z series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV5Z series manifolds in Dubai?",
+          "a": "Yes, SMC VV5Z series manifolds is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv7-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV7 series manifold used for?",
+          "a": "The SMC VV7 series manifold is a base with 3/8\", 1/2\" and 3/4\" base-mount sizes for SMC solenoid valves, listed without silencer box and with 8 stations in the specification. This listing carries 11 part numbers, such as NVV718-02R-03B, VV714-03RT-03BT and NVV7110-03R-03D."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV7 series manifold part number?",
+          "a": "In the rows the last number group is the station count: NVV718-02R-03B, VV713-03R-03DSB and NVV7110-03R-03D end in -03, so the part numbers read as 3 stations with different connector letters. The listing does not decode the letters, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV7 manifold have?",
+          "a": "The specification states 8 stations for the series example. Other rows read as 3 to 6 stations in the part-number pattern, for example NVV728-04R-06U, so we confirm the count for your part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV7 manifold come in?",
+          "a": "Rows list 3/8\" (9 rows), 1/2\" (1) and 3/4\" (1) base-mount sizes, for example VV714-03RT-03BT. Match the base port to your valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV7 series manifold have?",
+          "a": "The listing states 145 psi (1 MPa, about 10 bar) on one row and the summary repeats it; we confirm the working pressure for other rows with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV7 series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV7 series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV7 series manifold?",
+          "a": "No certificate or datasheet is attached to the the SMC VV7 series manifold listing. Tell us in the enquiry what your file requires for NVV718-02R-03B, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV7 series manifold?",
+          "a": "The VV7 bases take SMC VQ7-type valves; confirm the valve series with us, and see our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for SMC valves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV7 series manifold?",
+          "a": "Before fitting valves to NVV718-02R-03B, check the base face is clean and the gaskets are seated, then tighten evenly and test each station for leaks at working pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV7 manifold differ from the VV81 manifold?",
+          "a": "VV7 has 3/8\", 1/2\" and 3/4\" bases for 8-station kits, while the [VV81 manifold](/p/smc-vv81-series-manifold) lists 3/8\" and 1/2\" bases in eight part numbers. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV7 series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV7 series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV7 series manifolds in Dubai?",
+          "a": "Yes. SMC VV7 series manifolds is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vv81-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VV81 series manifold used for?",
+          "a": "The SMC VV81 series manifold is a base with 3/8\" and 1/2\" base-mount sizes for SMC solenoid valves. This listing carries 8 part numbers, such as VV816-03-04DT, VV8015-03F-MD0-W1 and VV814-04-04DF, plus one regulator-style number, NARB250-N0-P-1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VV81 series manifold part number?",
+          "a": "In the rows the number after the base code (-03 or -04) appears to be the port group and the next group to carry the station count, as in VV814-04-04DF, but the listing does not state it per row. The listing does not decode the letters, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VV81 manifold have?",
+          "a": "The part numbers read as 3 to 4 stations in the pattern shown (VV816-03-04DT, VV813-03B-W03U-X53-XG), though the listing does not state the count per row. Quote the full code so we confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VV81 manifold have?",
+          "a": "Rows list 3/8\" (5 rows) and 1/2\" (2) base-mount sizes, for example VV814-04-04DF at 1/2\". The NARB250-N0-P-1 row has no size stated."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VV81 series manifold have?",
+          "a": "The listing holds no pressure rating for VV81 bases, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VV81 series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VV81 series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VV81 series manifold?",
+          "a": "We hold no datasheet or certificate for the SMC VV81 series manifold on this page. Ask for the SMC catalogue sheet or a certificate of conformity for NARB250-N0-P-1 in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VV81 series manifold?",
+          "a": "SMC solenoid valves of the matching series; confirm the valve with us, and see our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for SMC valves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VV81 series manifold?",
+          "a": "Assemble the VV81 series base on a flat support so it does not twist, fit the valves with new gaskets, blank any spare stations and connect supply and exhaust before testing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VV81 manifold differ from the VV7 manifold?",
+          "a": "VV81 lists 3/8\" and 1/2\" bases in 8 part numbers, while the [VV7 manifold](/p/smc-vv7-series-manifold) adds 3/4\" bases and a 145 psi (1 MPa) rating. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VV81 series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VV81 series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VV81 series manifolds in Dubai?",
+          "a": "Yes, we stock SMC VV81 series manifolds at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vx-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VX series manifold used for?",
+          "a": "The SMC VX series manifold is a base for SMC VX direct-acting 2-way solenoid valves, with 1/8\" and 1/4\" base-mount sizes in the row text. This listing carries 9 part numbers, such as VVX311-04-1, VVX332-02-1 and VVX232N-04-1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VX series manifold part number?",
+          "a": "In the rows the number after the base code is the station or port group, as in VVX311-04-1, VVX311-02-1 and VVX311-07-1, with the VVX3 and VVX2 prefixes naming the base sizes. The listing does not decode the codes, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VVX manifold have?",
+          "a": "The part numbers VVX311-02-1, VVX311-03-1, VVX311-04-1 and VVX311-07-1 read as 2, 3, 4 and 7 stations in the pattern, though the listing does not state the count per row. Quote the full code so we confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC VVX manifold have?",
+          "a": "Rows list 1/8\" (5 rows) and 1/4\" (4) base-mount sizes. Match the base to the port on your VX valve. Quote the full part number when you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VX series manifold have?",
+          "a": "The listing holds no pressure rating for VVX bases, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VX series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VX series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VX series manifold?",
+          "a": "This listing holds no datasheet or certificate file for the SMC VX series manifold, so name the document you need, for example a certificate of conformity or the SMC catalogue page for VVX311-04-1, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VX series manifold?",
+          "a": "The VVX bases take the VX direct-acting valves, such as the [SMC VX2 series 2-way valve](/p/smc-vx2-series-2-way-media-valve); confirm the valve and base series with us before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VX series manifold?",
+          "a": "With VVX311-04-1, fit the valves and gaskets, tighten the screws evenly, then check supply and exhaust connections and test the circuit at low pressure before running."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VX series manifold differ from the VX2 valve listing?",
+          "a": "The VX manifold is the base with 1/8\" and 1/4\" mounts, while the [VX2 series valve](/p/smc-vx2-series-2-way-media-valve) is the 90-part-number valve that mounts on it."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VX series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VX series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VX series manifolds in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps SMC VX series manifolds in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vzs-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VZS series manifold used for?",
+          "a": "The SMC VZS series manifold listing holds three SMC part numbers: VQD1151U-6MO-X55, NVV5ZS2-51FU-051-B7T and VV5ZS2-51FD-041-01, with 1/8\" base-mount sizes on two of them. VQD1151U-6MO-X55 reads as a valve rather than a base."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC VZS series manifold part number?",
+          "a": "In the rows NVV5ZS2-51FU-051 and VV5ZS2-51FD-041 read as 5 and 4 stations by the three-digit pattern used on SMC VFS and VV5Z bases, while VQD1151U-6MO-X55 is a valve number. The listing does not decode the letters, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the SMC VZS manifold have?",
+          "a": "The part numbers read as 5 stations (NVV5ZS2-51FU-051-B7T) and 4 stations (VV5ZS2-51FD-041-01), though the listing does not state the count per row."
+        },
+        {
+          "slot": "D",
+          "q": "Which port size does the SMC VZS manifold have?",
+          "a": "Two rows state a 1/8\" base-mount size and one has no size stated (VQD1151U-6MO-X55). Quote the full part number so we confirm the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VZS series manifold have?",
+          "a": "The listing holds no pressure rating for these part numbers, so we confirm the maximum working pressure for your part number with SMC before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VZS series manifold made from?",
+          "a": "The listing does not state the body material or the seal material of the VZS series manifold bases. Send your medium and operating conditions with the enquiry and we confirm material suitability with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC VZS series manifold?",
+          "a": "No certificate or datasheet is attached to the the SMC VZS series manifold listing. Tell us in the enquiry what your file requires for VQD1151U-6MO-X55, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC VZS series manifold?",
+          "a": "The VV5ZS2 bases are related to the [VV5Z manifold](/p/smc-vv5z-series-manifold) and the VQZ valves; confirm the match with us before ordering. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble valves on an SMC VZS series manifold?",
+          "a": "Fit the gasket between each valve and its station on the VZS series base, tighten the screws evenly, close unused stations with blanking plates and pressure-test for leaks before commissioning."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VZS manifold differ from the SMC VV5Z manifold?",
+          "a": "The VZS listing has three part numbers with 1/8\" bases, while the [VV5Z manifold](/p/smc-vv5z-series-manifold) listing has 12 with 1/8\" and 1/4\" bases. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VZS series manifold made and how is it exported?",
+          "a": "The country of origin for the SMC VZS series manifold depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves and valve manifolds fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VZS series manifolds in Dubai?",
+          "a": "Yes. We keep SMC VZS series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1010 @@
+{
+  "family": "air-motors",
+  "extraFacts": [
+    {
+      "fact": "Gast air motor model numbers are built from a size prefix (1AM, 2AM, 4AM, 6AM, 8AM, 16AM), a type code (NCC, NCW, NRV, ARV, FCC, FCW, FRV) and a model number with an optional suffix. Gast air motors with LL or NLP in the model number can operate with or without air-line lubrication; Gast still recommends lubrication for optimal service and life. Gast offers non-lubricated versions in most sizes.",
+      "source": "Gast Manufacturing air motor operation and maintenance manual, Part No. 45-200; Gast product page 2AM-NRV-89LL (gastmfg.com)"
+    },
+    {
+      "fact": "Ingersoll Rand M002 Series air motors cover 0.11 to 0.25 hp, M004 Series 0.31 to 0.5 hp and M007 Series 0.64 to 0.85 hp; all are in-line planetary gear multi-vane air motors. In Ingersoll Rand's tables RVR models are listed as reversible and RHR models as non-reversible, and the three-digit group after the rotation code tracks the gear reduction: higher numbers give lower free speed and higher stall torque.",
+      "source": "Ingersoll Rand Power Tools, M002, M004 and M007 Series Air Motors product pages (powertools.ingersollrand.com)"
+    },
+    {
+      "fact": "Rotary vane air motor behaviour: speed is governed by the air flow admitted and torque by the supply pressure at the motor; an air motor can be stalled or overloaded without damage and can be reversed by switching the supply between ports on reversible models; output falls when pressure at the inlet drops. Exhaust air is normally silenced with a muffler. Planetary gear heads put the output shaft in line with the motor axis, spur gear heads offset it.",
+      "source": "Gast Manufacturing Air Motors catalogue, air motor principles; Ingersoll Rand Air Motors product catalogue, gear motor overview"
+    },
+    {
+      "fact": "HS heading 8412 covers other engines and motors; subheading 8412.31 covers linear-acting pneumatic power engines (cylinders) and 8412.39 covers other pneumatic power engines and motors, which includes rotary air motors and air gearmotors.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.12"
+    },
+    {
+      "fact": "Unit conversion: 1 bar = 14.5038 psi.",
+      "source": "ISO 80000-4 / NIST SP 811"
+    },
+    {
+      "fact": "Air motor control valves: a one-way (non-reversible) air motor is started and stopped with a 3/2 directional valve; a reversible motor needs a 5/3 directional valve (or a pair of 3/2 valves) that sends supply to one port while the other exhausts. Valve and line size must pass the motor's air consumption.",
+      "source": "ISO 1219-1 graphical symbols and valve designation; Gast Manufacturing Air Motors catalogue, motor controls"
+    },
+    {
+      "fact": "Air motors shelf summary, from the Indus size tables of each listing: Gast 2AM listing 23 part numbers, 0.95 hp at 3,000 rpm, 1/4 in ports; Gast 4AM 1.7 hp at 3,000 rpm, 56 lb-in, 1/4 in or 3/8 in ports, LL/NLP versions 1.05 hp at 5.6 bar; Gast 6AM 4 hp at 3,000 rpm, 115 lb-in, up to 128 CFM; Gast 8AM 5 hp at 2,500 rpm, 185 lb-in, up to 175 CFM; Ingersoll Rand 2200 Series up to 1,800 lb-in; Ingersoll Rand 3800 Series up to 1,416 lb-in at 1.35 hp; Ingersoll Rand 92 Series 900 to 13,080 lb-in; Ingersoll Rand 34/48 spur gear motors 618 to 12,120 lb-in; Ingersoll Rand M002 up to 108.6 lb-in; M004 up to 440.4 lb-in, ratios 000 to 167; M007 up to 3,048 lb-in; the Ingersoll Rand aluminium and steel gearmotor listing carries M004RVR033AR3, M004RVR050AR3, M007RVR188BR6, 4840M and 4840U.",
+      "source": "Indus Hydraulics catalogue size tables for the listings named (product data export 2026-11-19)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "gast-2am-series-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Gast 2AM series air motor used for?",
+          "a": "The Gast 2AM is a compact four-vane rotary air motor of up to 0.95 hp, used to drive mixers, conveyors, winders and small machines where an electric motor is unwanted. This listing holds 23 part numbers with 1/4\" ports, in clockwise, counter-clockwise and reversible builds and face, foot, hub or flange mounting."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Gast 2AM part number such as 2AM-NCW-7ALL?",
+          "a": "In 2AM-NCW-7ALL, 2AM is the motor size, N marks 1/4\" NPT ports, CW clockwise rotation and 7A the model, while the LL suffix marks a motor that can run with or without lubrication. In this range A in the type code means BSP ports (2AM-ARV-92), CC is counter-clockwise and RV reversible, as in 2AM-NRV-89LL."
+        },
+        {
+          "slot": "D",
+          "q": "What power and speed do Gast 2AM air motors give?",
+          "a": "Standard Gast 2AM motors are rated 0.95 hp at 3,000 rpm with 7 bar maximum pressure, while the LL and NLP versions are rated 0.55 hp at 2,000 rpm with 5.6 bar maximum. Choose on the torque and speed you need at the air pressure actually available at the machine, not the compressor setting."
+        },
+        {
+          "slot": "D",
+          "q": "Which Gast 2AM models have 1/4\" BSP rather than NPT ports?",
+          "a": "The 2AM-ARV and 2AM-ACC models in this listing, such as 2AM-ARV-92, 2AM-ARV-93 and 2AM-ACC-88, have 1/4\" BSP ports; the N and F type codes, such as 2AM-NRV-160 and 2AM-FCW-13LL, have 1/4\" NPT. Match the fitting thread to the port so the inlet seals without forcing a mixed thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum air pressure for a Gast 2AM air motor?",
+          "a": "Gast states 81 to 102 psi (5.6 to 7 bar) maximum for the 2AM series, depending on the model: 7 bar for the standard 0.95 hp motors and 5.6 bar for the LL and NLP versions. The listing also gives a maximum air consumption of 30 CFM and a maximum sound level of 76 dBA."
+        },
+        {
+          "slot": "F",
+          "q": "Do Gast 2AM LL and NLP air motors need oil in the air supply?",
+          "a": "No. Gast says motors with LL or NLP in the model number, such as 2AM-NRV-89LL and 2AM-NCW-7BNLP, can run with or without lubrication, though Gast still recommends oil for longest vane life. The other 2AM models expect lubricated air from a [filter-regulator-lubricator](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be supplied with a Gast 2AM air motor?",
+          "a": "This listing carries no certificates, so ask for what your project needs when you enquire, typically the maker's certificate of conformity and a commercial invoice showing United States origin. Quote the full Gast 2AM part number so the paperwork matches the motor supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What valves and fittings connect to a Gast 2AM air motor?",
+          "a": "A Gast 2AM motor needs a 1/4\" BSP or NPT supply fitting to suit its ports, a filtered and regulated air line, and a control valve: a 3/2 valve for one-way motors or a 5/3 valve to run a reversible 2AM-NRV in both directions. Valves are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves) and flow controls for speed on the [flow control shelf](/c/pneumatic-flow-check-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you control the speed of a Gast 2AM air motor?",
+          "a": "Control a Gast 2AM's speed by throttling the air flow, usually with a flow control on the exhaust, and control its torque by setting the supply pressure with a regulator. A 2AM can stall under load without damage, which makes it suitable for tensioning and winding duties."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Gast 2AM and Gast 4AM air motors?",
+          "a": "The 2AM is the smaller motor, at 0.95 hp and 3,000 rpm with 1/4\" ports, while the [Gast 4AM series](/p/gast-4am-series-air-motors) gives 1.7 hp at 3,000 rpm with 1/4\" or 3/8\" ports. Pick the 2AM where space and air consumption matter; pick the 4AM where the load needs more torque."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Gast 2AM air motors made and shipped from?",
+          "a": "Gast 2AM air motors on this listing are of United States origin, and we ship them from our warehouse in Dubai to buyers in the GCC, Africa, Asia and beyond. Rotary air motors normally fall under HS subheading 8412.39; the final code is confirmed on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Gast 2AM air motors in stock in Dubai?",
+          "a": "Yes. We hold Gast 2AM series air motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 2AM part numbers and quantities through [our contact page](/contact) and we will confirm price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "gast-4am-series-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gast 4AM series air motor?",
+          "a": "The Gast 4AM is a reversible four-vane rotary air motor rated up to 1.7 hp at 3,000 rpm, used on mixers, agitators, hoists and conveyors. This listing covers 16 part numbers in standard and LL/NLP versions with 1/4\" NPT, 3/8\" NPT or 3/8\" BSPP ports and a keyed output shaft."
+        },
+        {
+          "slot": "B",
+          "q": "What do the codes ARV, FRV and NRV mean in Gast 4AM part numbers?",
+          "a": "All three mark reversible Gast 4AM motors: ARV models such as 4AM-ARV-119LL have 3/8\" BSPP ports, NRV models such as 4AM-NRV-130A have NPT ports, and FRV models such as 4AM-FRV-13A are listed with 1/4\" NPT. A trailing LL or NLP marks a motor that can run with or without lubrication."
+        },
+        {
+          "slot": "D",
+          "q": "What power ratings are available in the Gast 4AM air motor range?",
+          "a": "Gast 4AM motors in this listing come at two ratings: 1.7 hp at 3,000 rpm with 7 bar maximum for standard models such as 4AM-NRV-54, and 1.05 hp at 2,000 rpm with 5.6 bar maximum for LL and NLP models such as 4AM-NRV-70CLL. Most rows show 56 lb-in torque."
+        },
+        {
+          "slot": "D",
+          "q": "Which Gast 4AM motors have 3/8\" ports instead of 1/4\"?",
+          "a": "The 4AM-NRV-130 family (130A, 130LL, 130NLP) has 3/8\" NPT ports and the 4AM-ARV-119LL and 119NLP have 3/8\" BSPP; the rest of this listing, such as 4AM-NRV-22A and 4AM-FRV-13A, has 1/4\" NPT. The larger port suits longer supply runs where pressure drop would cut torque."
+        },
+        {
+          "slot": "E",
+          "q": "What air pressure is a Gast 4AM air motor rated for?",
+          "a": "Gast states 80 to 102 psi (5.5 to 7 bar) maximum for the 4AM, by model: 7 bar for the 1.7 hp standard motors and 5.6 bar for most LL and NLP versions, with 4AM-NRV-54ALL listed at 5.5 bar. The listing gives 87 dBA as the maximum sound level."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Gast 4AM air motor run without a lubricator?",
+          "a": "Only the LL and NLP versions, such as 4AM-NRV-22BNLP and 4AM-NRV-54ALL, are made to run with or without oil; Gast still recommends lubrication for best life. Standard 4AM models need lubricated air, so fit a lubricator, explained in our [FRL guide](/blog/frl-filter-regulator-lubricator-guide)."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates come with a Gast 4AM air motor?",
+          "a": "No certificates are held on this listing, so state your requirement when ordering: usually a maker certificate of conformity and proof of United States origin for customs. Give the exact Gast 4AM part number, including any LL or NLP suffix, so the documents match the motor."
+        },
+        {
+          "slot": "H",
+          "q": "What is needed to install and control a Gast 4AM reversible air motor?",
+          "a": "A Gast 4AM needs clean, regulated air at its 1/4\" or 3/8\" port, a 5/3 or 4-way valve to switch the supply between ports for reversing, and an exhaust muffler. Valves are on our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves); regulators and filters are on the FRL shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Gast 4AM rotary vane air motor?",
+          "a": "Keep the Gast 4AM supplied with filtered, dry air, keep the lubricator topped up on standard models, and replace vanes when power falls off at normal pressure. Water and dirt in the line are the usual causes of vane wear; our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers drying and filtration."
+        },
+        {
+          "slot": "K",
+          "q": "How do the two Gast 4AM air motor listings differ from each other?",
+          "a": "Both are the same 4AM motor family; this listing carries the LL/NLP and BSPP versions, while the [Gast 4AM rotary vane listing](/p/gast-4am-series-rotary-vane-air-motors) carries further standard part numbers and geared models with gear-head suffixes. Search both by part number, or send it to us."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Gast 4AM air motors?",
+          "a": "Gast 4AM air motors on this listing are of United States origin. We export them from Dubai to the GCC, Africa, Asia and other markets, normally under HS subheading 8412.39 for rotary pneumatic motors, with origin stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Gast 4AM air motors available ex-stock from Dubai?",
+          "a": "Yes. We keep Gast 4AM series air motors in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send the 4AM part numbers, such as 4AM-NRV-54 or 4AM-NRV-130LL, and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gast-4am-series-rotary-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Gast 4AM rotary vane air motor?",
+          "a": "The Gast 4AM rotary vane air motor is a reversible cast iron, four-vane motor giving 1.7 hp at 3,000 rpm and 72 cfm, with a steel keyed shaft and a muffler included. This listing holds 14 part numbers in face, foot and flange mounting, plus geared versions for low-speed, high-torque drives."
+        },
+        {
+          "slot": "B",
+          "q": "What do the suffixes CB20, CB60 and GR20 mean on Gast 4AM motors?",
+          "a": "They mark 4AM motors supplied with a gear head: 4AM-70C-CB20 is listed at 1.1 hp with 480 in-lb torque, 4AM-70C-CB60 at 0.85 hp, and 4AM-RV-75-GR20 at 640 lb-in. Plain models such as 4AM-NRV-130 run direct at 3,000 rpm; choose a geared one when the load needs low speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles does the Gast 4AM rotary vane motor come in?",
+          "a": "This 4AM listing includes face mount (4AM-ARV-119, 4AM-NRV-130), foot mount (4AM-FRV-63A), flange mount (4AM-RV-75) and the flanged 4AM-NRV-50C with a 5/8\" shaft. Gast allows mounting at any angle, so pick the style that suits the machine frame."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do Gast 4AM rotary vane air motors have?",
+          "a": "The Gast 4AM rotary vane motors here have female inlets of 1/4\" NPT (4AM-FRV-63A, 4AM-RV-75), 3/8\" NPT (4AM-NRV-130) or 3/8\" BSP (4AM-ARV-119 and 4AM-ARV-120). Use the full port size up to the motor so the 72 cfm demand does not starve the vanes."
+        },
+        {
+          "slot": "E",
+          "q": "What are the torque and temperature ratings of the Gast 4AM rotary vane motor?",
+          "a": "Gast rates the standard 4AM at 1.7 hp, 3,000 rpm and 35 in-lb torque, with 56 lb-in in the size table, for ambient temperatures from 34°F to 248°F. Maximum pressure is 7 bar on most models; the lubricated 4AM-NRV-22F and 4AM-NRV-70C are listed at 100 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gast 4AM rotary vane air motor made of?",
+          "a": "The Gast 4AM rotary vane motor has a painted cast iron housing and a steel output shaft with a #3 Woodruff key. Cast iron suits plant-floor duty; keep condensate out of the supply, as standing water in the body is what attacks vanes and bore."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Gast 4AM rotary vane air motor come with a test certificate?",
+          "a": "No certificate is held for this listing, so ask for a maker certificate of conformity or origin documents with the enquiry if your project needs them. Quote the complete Gast 4AM part number, such as 4AM-NRV-22B, so the paperwork matches the unit."
+        },
+        {
+          "slot": "H",
+          "q": "What exhaust and supply parts go with a Gast 4AM rotary vane motor?",
+          "a": "The Gast 4AM rotary vane motor ships with a muffler; you add a supply fitting for the 1/4\" or 3/8\" port, a regulator and filter, and a valve to start, stop or reverse it. Spare mufflers and fittings are on our [fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Gast 4AM rotary vane motor be sized for a load?",
+          "a": "Size a Gast 4AM on the torque and speed needed at the pressure available at the motor, since output falls as inlet pressure drops. Our [air motor sizing guide](/blog/air-motors-guide) explains the torque curve; where the load needs high torque at low speed, a geared model such as 4AM-RV-75-GR20 fits better."
+        },
+        {
+          "slot": "K",
+          "q": "Is the Gast 4AM-NRV-22B the same motor as the 4AM-NRV-22BNLP?",
+          "a": "They share the 4AM-NRV-22 base but differ in rating: 4AM-NRV-22B here is a standard motor at 1.7 hp and 7 bar, while 4AM-NRV-22BNLP on the [Gast 4AM listing](/p/gast-4am-series-air-motors) is rated 1.05 hp at 5.6 bar and can run with or without lubrication. Order by full part number."
+        },
+        {
+          "slot": "L",
+          "q": "Where do Gast 4AM rotary vane air motors originate and how are they exported?",
+          "a": "Gast 4AM rotary vane motors on this listing are of United States origin. We export them from Dubai to the GCC, Africa and Asia, normally under HS subheading 8412.39, with origin and HS code stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Gast 4AM rotary vane air motors from stock in Dubai?",
+          "a": "Yes. Gast 4AM rotary vane air motors are kept in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the 4AM part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gast-6am-series-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Gast 6AM series air motor used for?",
+          "a": "The Gast 6AM is a reversible rotary vane air motor rated 4 hp at 3,000 rpm, used for heavier drives such as mixers, pumps, winches and conveyors. This listing has four part numbers, 6AM-ARV-54, 6AM-ARV-55, 6AM-FRV-71 and 6AM-NRV-7B, all with 1/2\" ports and a keyed shaft."
+        },
+        {
+          "slot": "B",
+          "q": "What is the difference between Gast 6AM-ARV-54 and 6AM-NRV-7B?",
+          "a": "Both are 4 hp, 3,000 rpm reversible Gast 6AM motors; the ARV models (6AM-ARV-54 and 6AM-ARV-55) have 1/2\" BSPP ports, while 6AM-NRV-7B and 6AM-FRV-71 have 1/2\" NPT. Pick the thread to match your fittings, then the mounting to suit the machine."
+        },
+        {
+          "slot": "D",
+          "q": "How much air does a Gast 6AM air motor consume?",
+          "a": "The Gast 6AM is listed at up to 128 CFM maximum air consumption, so the supply line, valve and FRL must pass that flow at the working pressure. An undersized 1/2\" line or valve starves the motor and cuts its 4 hp output."
+        },
+        {
+          "slot": "D",
+          "q": "What torque does a Gast 6AM air motor deliver?",
+          "a": "Our size table lists 115 lb-in torque for each Gast 6AM model, with 4 hp at 3,000 rpm and 7 bar maximum pressure. If the load needs more torque at lower speed, consider a geared motor or the larger [Gast 8AM series](/p/gast-8am-series-air-motors)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure and noise level of a Gast 6AM air motor?",
+          "a": "Each Gast 6AM in this listing is rated for 7 bar maximum pressure, and the listing gives a maximum sound level of 90 dBA. Fit an exhaust muffler, and hearing protection may still be needed near a motor running at full load."
+        },
+        {
+          "slot": "F",
+          "q": "Does a Gast 6AM air motor need lubricated air?",
+          "a": "Yes. The four Gast 6AM models here carry no LL or NLP suffix, so plan to run them on oil mist from a line lubricator, as Gast reserves lube-optional running for LL and NLP models. Set it up as described in our [FRL guide](/blog/frl-filter-regulator-lubricator-guide), with a filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "What certification is available for a Gast 6AM air motor?",
+          "a": "This listing holds no certificates, so state what you need, such as a maker certificate of conformity and United States origin papers, when you request a quote. Quote the full Gast 6AM part number so the documents match."
+        },
+        {
+          "slot": "H",
+          "q": "Which valve is needed to reverse a Gast 6AM air motor?",
+          "a": "To run a Gast 6AM in both directions, use a valve that switches air between its two 1/2\" ports while exhausting the other, typically a 5/3 closed- or exhaust-centre valve sized for 128 CFM. Valves are on our [manual and pilot air valves shelf](/c/pneumatic-control-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set the speed and torque of a Gast 6AM air motor?",
+          "a": "Set the Gast 6AM's speed by restricting air flow, ideally on the exhaust, and its torque with the supply regulator. The motor can stall under overload without damage and restarts when the load eases, which suits winches and tensioning drives."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose a Gast 4AM or a Gast 6AM air motor?",
+          "a": "Choose the Gast 6AM when the load needs 4 hp and 115 lb-in; the [Gast 4AM](/p/gast-4am-series-air-motors) gives 1.7 hp and 56 lb-in from a smaller 1/4\" or 3/8\" port. The 6AM's higher air demand of up to 128 CFM needs a bigger supply."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin of Gast 6AM air motors?",
+          "a": "Gast 6AM air motors on this listing are of United States origin. We ship them from Dubai to buyers across the GCC, Africa and Asia, normally under HS subheading 8412.39, with the origin confirmed on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gast 6AM-ARV-54 and 6AM-NRV-7B in Dubai?",
+          "a": "Yes. We keep the Gast 6AM series, including 6AM-ARV-54 and 6AM-NRV-7B, in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Ask for a quotation through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gast-8am-series-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gast 8AM series air motor?",
+          "a": "The Gast 8AM is a 5 hp reversible rotary vane air motor running at 2,500 rpm with 7 bar maximum pressure, for heavier drives than the 6AM. This listing holds three part numbers: 8AM-ARV-70, 8AM-ARV-71 and 8AM-NRV-42A, all with 1/2\" ports."
+        },
+        {
+          "slot": "B",
+          "q": "What is the difference between Gast 8AM-ARV-70 and 8AM-ARV-71?",
+          "a": "Both are 5 hp Gast 8AM motors with 1/2\" BSP ports, an IEC flange mount, a 0.94\" shaft and an MQ10 key; 8AM-ARV-70 is listed with 4 vanes and 8AM-ARV-71 with 8 vanes. Confirm the vane count on the motor you are replacing before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Which Gast 8AM model suits an NPT air supply?",
+          "a": "Gast 8AM-NRV-42A is the NPT model in this listing, with 1/2\" NPT ports, face mounting, a 3/4\" shaft and an M30-KEYSQ key; the two ARV models have BSP ports and an IEC flange. Match both the thread and the shaft before swapping one for another."
+        },
+        {
+          "slot": "D",
+          "q": "How much compressed air does a Gast 8AM air motor need?",
+          "a": "The Gast 8AM is listed at up to 175 CFM maximum air consumption at 7 bar, so the compressor, line, valve and FRL must all pass that flow. Starving the 1/2\" port is the commonest reason an 8AM falls short of its 5 hp."
+        },
+        {
+          "slot": "E",
+          "q": "What torque and noise ratings apply to the Gast 8AM air motor?",
+          "a": "Our size table lists 185 lb-in torque for every Gast 8AM model at 5 hp and 2,500 rpm, and the listing gives a maximum sound level of 105 dBA. Pipe the exhaust away or fit a large muffler on an 8AM in a staffed area."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Gast 8AM air motor need a lubricator?",
+          "a": "Yes. The Gast 8AM models here have no LL or NLP suffix, so they need lubricated air from a filter-regulator-lubricator sized for 175 CFM. Our [FRL shelf](/c/air-preparation-frl) carries units with 1/2\" and larger ports."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be requested with a Gast 8AM air motor?",
+          "a": "No certificates are held for this listing, so request what your project needs, usually a maker certificate of conformity and United States origin documents, when you enquire. Quote 8AM-ARV-70, 8AM-ARV-71 or 8AM-NRV-42A exactly so the papers match."
+        },
+        {
+          "slot": "H",
+          "q": "Will a Gast 8AM-ARV motor fit an IEC flange gearbox?",
+          "a": "The Gast 8AM-ARV-70 and 8AM-ARV-71 are listed with an IEC flange mount and a 0.94\" shaft, so they are built to mate with IEC-pattern gearboxes and couplings of the matching frame. Check the flange and shaft size on the gearbox before ordering; 8AM-NRV-42A is face mounted instead."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Gast 8AM air motor be controlled?",
+          "a": "Control the Gast 8AM's speed by throttling air flow and its torque with the supply regulator, and reverse it with a valve that swaps supply and exhaust between its ports. Our [air motor guide](/blog/air-motors-guide) explains how torque falls with pressure and how to size at your supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Gast 8AM compare with the Gast 6AM air motor?",
+          "a": "The Gast 8AM gives 5 hp and 185 lb-in at 2,500 rpm against the [Gast 6AM](/p/gast-6am-series-air-motors) at 4 hp and 115 lb-in at 3,000 rpm. The 8AM needs more air, up to 175 CFM against 128 CFM, and is louder at 105 dBA."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Gast 8AM air motors made?",
+          "a": "Gast 8AM air motors on this listing are of United States origin. We export them from our Dubai warehouse to the GCC, Africa and Asia, normally classed under HS subheading 8412.39, with origin stated on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Gast 8AM air motor in stock at your Dubai warehouse?",
+          "a": "Yes. We keep the Gast 8AM series in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 8AM part number and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gast-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Which Gast air motors are in this listing?",
+          "a": "This Gast air motors listing gathers 10 part numbers across the range, from the small 1AM-NRV-39C with a 1/8\" NPT port to the 9 hp 16AM-FRV-2, plus 2AM, 4AM, 6AM and 8AM models and the four-vane NL32-NCW-2. Use it when you have a Gast part number that is not on a series page."
+        },
+        {
+          "slot": "B",
+          "q": "What does the number at the start of a Gast air motor part number mean?",
+          "a": "The prefix gives the motor size: 1AM, 2AM, 4AM, 6AM, 8AM and 16AM, with power rising from the 0.55 hp 2AM-NCC-43ANLP to the 9 hp 16AM-FRV-2. The letters after it give ports and rotation, such as N for NPT and RV for reversible, and the suffix marks variants like NLP."
+        },
+        {
+          "slot": "D",
+          "q": "What is the largest Gast air motor in this listing?",
+          "a": "The Gast 16AM-FRV-2 is the largest, rated 9 hp at 2,000 rpm with 7 bar maximum pressure, 1-1/4\" NPT ports and 372 lb-in torque in our size table. It needs a large supply line and valve to deliver that output."
+        },
+        {
+          "slot": "D",
+          "q": "Which Gast air motors here give low output speed for direct drives?",
+          "a": "The geared models do: 4AM-RV-75-GR25 is listed at 1.3 hp, 640 in-lb and 200 rpm, and 8AM-32A-FB20 at 3.8 hp with 125 rpm and a 0.5 NPT port. Direct motors such as 4AM-NRV-143 run at 3,000 rpm and need an external reducer for slow loads."
+        },
+        {
+          "slot": "E",
+          "q": "What air pressure do Gast air motors in this listing run at?",
+          "a": "Gast states 80 to 102 psi (5.5 to 7 bar) maximum, depending on the model: 7 bar for 16AM-FRV-2, 100 psi for 4AM-FRV-24, 5.6 bar for 2AM-NCC-43ANLP, 5.5 bar for 4AM-NRV-54ANLP and 80 psi for NL32-NCW-2. Check the row for the motor you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which Gast air motors in this listing run without lubrication?",
+          "a": "The NLP models, 2AM-NCC-43ANLP and 4AM-NRV-54ANLP, can run with or without oil according to Gast. Plan lubricated air for the others, including the 80 psi NL32-NCW-2, unless Gast confirms otherwise; see our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) for setting a lubricator."
+        },
+        {
+          "slot": "G",
+          "q": "What housing material are the Gast 4AM-NRV-143 and 6AM-FRV-81 motors?",
+          "a": "Both are listed with cast iron housings: 4AM-NRV-143 at 1.7 hp, 35 in-lb, 3,000 rpm and 72 CFM with a 1/4\" NPT port, and 6AM-FRV-81 at 4 hp, 84 in-lb, 3,000 rpm and 130 CFM, foot mounted with a 1/2\" NPT port. No certificates are held for this listing; request any you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where can I find the full Gast 2AM and 4AM ranges?",
+          "a": "The complete series are on their own pages: the [Gast 2AM series](/p/gast-2am-series-air-motors) with 23 part numbers and the [Gast 4AM series](/p/gast-4am-series-air-motors) with 16. This listing keeps the odd part numbers, such as 2AM-NCC-43ANLP and 4AM-NRV-54ANLP, that sit outside them."
+        },
+        {
+          "slot": "I",
+          "q": "How do you size a replacement Gast air motor?",
+          "a": "Size a replacement Gast air motor on the torque and speed the load needs at the pressure available at the motor, then match ports, shaft and mounting to the old unit. Our [air motor sizing guide](/blog/air-motors-guide) walks through the torque curve; quoting the old part number is quickest."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the small Gast 1AM-NRV-39C air motor used?",
+          "a": "The Gast 1AM-NRV-39C is a small reversible rotary vane motor with a 1/8\" NPT port, a 3/8\" shaft and a listed speed of 10,000 rpm, used for light high-speed drives such as small mixers, test rigs and instruments. For more torque, step up to a 2AM."
+        },
+        {
+          "slot": "L",
+          "q": "How are Gast air motors exported from Dubai?",
+          "a": "We export Gast air motors from our Dubai warehouse to the GCC, Africa, Asia and beyond, normally under HS subheading 8412.39 for rotary pneumatic motors. Country of origin is taken from the motor supplied and stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply Gast air motors such as 16AM-FRV-2 from Dubai stock?",
+          "a": "Yes. We keep Gast air motors, including the models on this listing, in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as 16AM-FRV-2 or 1AM-NRV-39C through [our contact page](/contact) for a price."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-0-series-in-line-planetary-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand 0-Series in-line planetary gear air motor?",
+          "a": "The Ingersoll Rand 0-Series is a multi-vane air motor with an in-line planetary gear head, giving a compact, high-torque, low-speed drive on one axis. This listing covers nine part numbers in the 8226 and 8228 families, from 8226-6A to 8226-14A and 8228-14B."
+        },
+        {
+          "slot": "B",
+          "q": "How are Ingersoll Rand 0-Series part numbers such as 8226-13A arranged?",
+          "a": "Ingersoll Rand 0-Series motors are numbered by family and build: 8226 with a dash number from 6A to 14A, plus 8228-14B. Each dash number is a separate build: 8226-12A and 8226-13A share 720 lb-in torque but are listed at 90 and 60 rpm. Quote the full number when ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What torque and speed does the Ingersoll Rand 8226-13A give?",
+          "a": "The Ingersoll Rand 8226-13A is listed at 720 lb-in torque and 60 rpm, the slowest 0-Series build here; the 8226-12A gives the same 720 lb-in at 90 rpm. Choose on the speed the driven shaft needs, then check torque at your supply pressure."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between Ingersoll Rand 8226 dash numbers?",
+          "a": "Choose an Ingersoll Rand 8226 motor by the output speed and torque the load needs; ratings for each dash number, where published, are on the Sizes & Part Numbers tab, such as 8226-12A at 90 rpm. When replacing a motor, quote the old part number and we will confirm the same gearing and mounting."
+        },
+        {
+          "slot": "E",
+          "q": "What limits the output of an Ingersoll Rand 0-Series air motor?",
+          "a": "An Ingersoll Rand 0-Series motor's torque is set by the air pressure at its inlet and its speed by the air flow, so output drops if the line pressure sags. It can stall under overload without damage, but the gear head should still be sized for the stall torque."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does an Ingersoll Rand 0-Series vane motor need?",
+          "a": "Feed an Ingersoll Rand 0-Series motor with filtered, dry compressed air; water and dirt wear the vanes and the planetary gear. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains filtration and dew point, and filters and lubricators are on the [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an Ingersoll Rand 8226 air motor?",
+          "a": "This listing holds no certificates, so ask for what you need when you request a quote, usually a maker certificate of conformity and United States origin papers. Quote the full Ingersoll Rand part number, such as 8226-10A, so the documents match."
+        },
+        {
+          "slot": "H",
+          "q": "What valves control an Ingersoll Rand 0-Series air motor?",
+          "a": "An Ingersoll Rand 0-Series motor is started, stopped and reversed by a directional valve sized for its air demand, with a flow control for speed and an exhaust muffler. Valves are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves) and silencers on the fittings shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do you size an Ingersoll Rand 0-Series motor for a replacement?",
+          "a": "Size an Ingersoll Rand 0-Series motor from the torque and output speed the load needs at the pressure available at the motor, or simply quote the nameplate number of the old 8226 or 8228 unit. Our [air motor guide](/blog/air-motors-guide) explains how torque falls as speed rises."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Ingersoll Rand 0-Series and the 2200 Series?",
+          "a": "Both are in-line planetary gear multi-vane motors; the 0-Series here covers the 8226 and 8228 builds, such as 8226-13A at 720 lb-in, while the [Ingersoll Rand 2200 Series](/p/ingersoll-rand-2200-series-in-line-planetary-gear-multi-vane-air-motors) spans 26 part numbers up to 1,800 lb-in. Compare on torque and speed."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Ingersoll Rand 0-Series air motors made?",
+          "a": "Ingersoll Rand 0-Series air motors on this listing are of United States origin. We export them from Dubai to the GCC, Africa and Asia, normally under HS subheading 8412.39, with origin stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Ingersoll Rand 8226 series air motors in stock?",
+          "a": "Yes. We keep Ingersoll Rand 0-Series air motors such as the 8226 builds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-2200-series-in-line-planetary-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand 2200 Series planetary gear air motor?",
+          "a": "The Ingersoll Rand 2200 Series is a range of multi-vane air motors with in-line planetary gearing, listed here with double gearing, covering 26 part numbers from direct high-speed builds to slow, high-torque ones. Part numbers run from 7800-B to 7817-1B and the 8274 and 8276 families."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 7800, 8274 and 8276 numbers mean in the Ingersoll Rand 2200 Series?",
+          "a": "They are build families within the 2200 Series: 7800 to 7817 numbers such as 7806-B cover the faster builds, while 8274 and 8276 numbers such as 8276-6A cover the slow, geared builds at 1,800 lb-in. The suffix, such as B or 1B, picks a variant; order by the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What speed range does the Ingersoll Rand 2200 Series cover?",
+          "a": "Ingersoll Rand 2200 Series motors in this listing are listed from 50 rpm (8276-6A) to 18,000 rpm (7800-B and 7800-1B), with builds between such as 7810-B at 450 rpm and 7802-B at 2,500 rpm. Pick the build whose speed matches the driven shaft so no extra reducer is needed."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand 2200 Series motor gives the most torque?",
+          "a": "The 8276-6A, 8274-5A and 8276-5A give the highest torque in the 2200 Series listing, 1,800 lb-in each, at listed speeds of 50, 65 and 100 rpm. For lighter duty, 7805-1B gives 660 lb-in at 350 rpm and 7809-1B 186 lb-in at 850 rpm."
+        },
+        {
+          "slot": "E",
+          "q": "How does supply pressure affect an Ingersoll Rand 2200 Series air motor?",
+          "a": "Torque from an Ingersoll Rand 2200 Series motor rises and falls with inlet pressure, while speed follows air flow, so the listed figures hold only when the motor gets full pressure and flow. Size the line and valve generously; our [air motor guide](/blog/air-motors-guide) shows the torque curve."
+        },
+        {
+          "slot": "F",
+          "q": "What compressed air does an Ingersoll Rand 2200 Series vane motor need?",
+          "a": "An Ingersoll Rand 2200 Series motor needs clean, dry air; water and particles wear vanes and gears, so fit a filter and regulator ahead of the control valve. Filter-regulators and lubricators are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "G",
+          "q": "Can I get a certificate of conformity with an Ingersoll Rand 2200 Series motor?",
+          "a": "No certificates are held for this listing, so request a maker certificate of conformity or origin papers when you send the enquiry. Give the full Ingersoll Rand part number, such as 7808-1B or 8274-4A, so the paperwork matches the motor."
+        },
+        {
+          "slot": "H",
+          "q": "What parts are needed to run an Ingersoll Rand 2200 Series air motor?",
+          "a": "Running an Ingersoll Rand 2200 Series motor needs a regulated air supply, a directional valve to start, stop or reverse it, a flow control for speed and an exhaust muffler. Flow controls are on our [flow control and check valve shelf](/c/pneumatic-flow-check-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you control the speed of an Ingersoll Rand 2200 Series air motor?",
+          "a": "Control an Ingersoll Rand 2200 Series motor's speed with a flow control, preferably on the exhaust, and its torque with the supply regulator. The vane motor can stall under overload without damage and restarts when the load eases, so no slip clutch is needed for tensioning duty."
+        },
+        {
+          "slot": "K",
+          "q": "Is the Ingersoll Rand 7808-B the same as the 7808-1B?",
+          "a": "They are listed with the same ratings, 1,800 rpm and about 88.8 lb-in torque, but carry different variant suffixes, so they are not automatically interchangeable on the mounting or shaft. Send the motor's nameplate number and we will confirm the correct build."
+        },
+        {
+          "slot": "L",
+          "q": "What is the HS code for an Ingersoll Rand 2200 Series air motor?",
+          "a": "Ingersoll Rand 2200 Series air motors normally fall under HS subheading 8412.39, other pneumatic power engines and motors. We export them from Dubai to the GCC, Africa and Asia, and the country of origin is stated on our commercial invoice for the unit supplied."
+        },
+        {
+          "slot": "M",
+          "q": "Are Ingersoll Rand 2200 Series air motors kept in stock in Dubai?",
+          "a": "Yes. We keep Ingersoll Rand 2200 Series air motors in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send part numbers such as 7802-B or 8276-5A with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-3800-series-in-line-planetary-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand 3800 Series air motor?",
+          "a": "The Ingersoll Rand 3800 Series is a reversible 1.35 hp multi-vane air motor family for slow, high-torque drives. This listing holds four part numbers, 3840P, 3840Q, 3840S and 3800S, which differ mainly in output speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do the letters in Ingersoll Rand 3840P, 3840Q and 3840S differ?",
+          "a": "The final letter picks the speed and torque build of the Ingersoll Rand 3840: in our table 3840P gives 642 lb-in, 3840Q 960 lb-in and 3840S 1,380 lb-in, with speed falling as torque rises. All three are listed at 1.35 hp and reversible."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand 3800 Series motor has the highest torque?",
+          "a": "The Ingersoll Rand 3800S has the highest listed torque in this range, 1,416 lb-in, followed by 3840S at 1,380 lb-in. Choose the lowest-torque build that still turns the load at your supply pressure, since it will run faster."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick an Ingersoll Rand 3840 build for my drive?",
+          "a": "Pick an Ingersoll Rand 3840 build from the torque the load needs at the pressure available: 642 lb-in for 3840P, 960 lb-in for 3840Q or 1,380 lb-in for 3840S, all at 1.35 hp. If you are replacing a motor, quote its nameplate number and we will confirm the match."
+        },
+        {
+          "slot": "E",
+          "q": "What happens if an Ingersoll Rand 3800 Series motor is overloaded?",
+          "a": "An Ingersoll Rand 3800 Series vane motor simply slows and stalls when overloaded, without damage, and restarts when the load is removed. Torque is proportional to inlet pressure, so a regulator sets the maximum force the motor can apply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does an Ingersoll Rand 3800 Series air motor need?",
+          "a": "An Ingersoll Rand 3800 Series motor needs filtered, dry compressed air at a steady pressure, with enough flow for its 1.35 hp. Moisture and dirt wear vanes; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) covers drying and filtration."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Ingersoll Rand 3840 air motors?",
+          "a": "No certificates are held on this listing, so ask for a maker certificate of conformity or origin documents with your enquiry if your project needs them. Quote 3840P, 3840Q, 3840S or 3800S exactly so the papers match."
+        },
+        {
+          "slot": "H",
+          "q": "How do you reverse an Ingersoll Rand 3800 Series air motor?",
+          "a": "Reverse an Ingersoll Rand 3800 Series motor by switching the supply from one port to the other while the opposite port exhausts, usually with a 5/3 directional valve. Valves are on our [manual and pilot air valves shelf](/c/pneumatic-control-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you adjust the speed of an Ingersoll Rand 3840 air motor?",
+          "a": "Adjust an Ingersoll Rand 3840 motor's speed with a flow control on the exhaust and its torque with the inlet regulator. Our [air motor guide](/blog/air-motors-guide) shows how the torque curve shifts with supply pressure, which helps when choosing between 3840P, 3840Q and 3840S."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ingersoll Rand 3800 Series compare with the 92 Series spur gear motor?",
+          "a": "The 3800 Series tops out at 1,416 lb-in from 1.35 hp, while the [Ingersoll Rand 92 Series](/p/ingersoll-rand-92-series-spur-gear-multi-vane-air-motors) spur gear motors reach 13,080 lb-in for heavier winches and mixers. Choose the 3800 for lighter loads and lower air demand."
+        },
+        {
+          "slot": "L",
+          "q": "What is the HS code for Ingersoll Rand 3800 Series air motors?",
+          "a": "Ingersoll Rand 3800 Series air motors normally fall under HS subheading 8412.39 for rotary pneumatic motors. We export them from our Dubai warehouse to the GCC, Africa and Asia, with the country of origin stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I order Ingersoll Rand 3840S air motors from Dubai stock?",
+          "a": "Yes. We keep Ingersoll Rand 3800 Series motors, including 3840S, in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Ask for a quotation through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-92-series-spur-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand 92 Series spur gear air motor?",
+          "a": "The Ingersoll Rand 92 Series is a reversible multi-vane air motor with a spur gear head, so the output shaft sits offset from the motor axis rather than in line. This listing covers seven part numbers, 92RA005 to 92RB078, with torque from 900 to 13,080 lb-in."
+        },
+        {
+          "slot": "B",
+          "q": "What do the codes RA and RB mean in Ingersoll Rand 92 Series part numbers?",
+          "a": "In the Ingersoll Rand 92 Series, RA builds (92RA005 to 92RA022) cover the lower-torque end and RB builds (92RB029 to 92RB078) the heavier end, with the number rising as torque rises. The three digits rise with torque, so 92RB078 is the slowest, highest-torque model."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand 92 Series motor suits a heavy winch drive?",
+          "a": "The Ingersoll Rand 92RB078 is the heaviest model here, listed at 7.9 hp and 13,080 lb-in torque; 92RB036 gives 5,964 lb-in and 92RB029 4,824 lb-in. Choose the model whose torque at your supply pressure covers the drum load."
+        },
+        {
+          "slot": "D",
+          "q": "What speeds are listed for the Ingersoll Rand 92 Series?",
+          "a": "Ingersoll Rand 92 Series speeds in our table run from 910 rpm on 92RA005 down to 130 rpm on 92RB036, with 92RA011 at 415 rpm and 92RA022 at 209 rpm. Higher-ratio builds trade speed for torque, so pick the fastest one that still turns the load."
+        },
+        {
+          "slot": "E",
+          "q": "How is torque set on an Ingersoll Rand 92 Series spur gear motor?",
+          "a": "Torque from an Ingersoll Rand 92 Series motor follows inlet pressure, so a regulator in the supply sets the maximum pull and the motor stalls safely if the load exceeds it. Speed follows air flow and is trimmed with a flow control."
+        },
+        {
+          "slot": "F",
+          "q": "What air treatment does an Ingersoll Rand 92 Series motor need?",
+          "a": "Give an Ingersoll Rand 92 Series motor filtered, dry and regulated air through a correctly sized FRL; water and dirt are the main causes of vane wear. Our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) explains filter grades, drains and lubricator setting."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can be supplied with an Ingersoll Rand 92RA motor?",
+          "a": "This listing holds no certificates, so state your requirement, such as a maker certificate of conformity or origin papers, when you send the enquiry. Quote the full Ingersoll Rand part number, such as 92RA008 or 92RB029, so the documents match."
+        },
+        {
+          "slot": "H",
+          "q": "What controls are needed to reverse an Ingersoll Rand 92 Series motor?",
+          "a": "The Ingersoll Rand 92 Series is reversible, so it needs a directional valve that switches supply and exhaust between its ports, plus a regulator, flow control and exhaust muffler. Directional valves are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you size an Ingersoll Rand 92 Series motor for a mixer or winch?",
+          "a": "Size an Ingersoll Rand 92 Series motor from the torque and speed the load needs at the pressure available at the motor, allowing for drop along the supply hose. Our [air motor guide](/blog/air-motors-guide) explains the torque curve; quoting the old 92RA or 92RB number is quickest."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ingersoll Rand 92 Series differ from the 34 and 48 spur gear motors?",
+          "a": "Both are reversible spur gear multi-vane motors; the 92 Series here reaches 13,080 lb-in, while the [Ingersoll Rand 34 and 48 spur gear motors](/p/ingersoll-rand-spur-gear-multi-vane-air-motors) span 618 to 12,120 lb-in. Compare torque and speed for your load and shaft position."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to Ingersoll Rand 92 Series air motors?",
+          "a": "Ingersoll Rand 92 Series spur gear air motors normally fall under HS subheading 8412.39 for other pneumatic power engines and motors. We export them from Dubai across the GCC, Africa and Asia, with origin stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Ingersoll Rand 92 Series air motors in Dubai?",
+          "a": "Yes. We keep the Ingersoll Rand 92 Series spur gear motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as 92RA011 or 92RB078 through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-aluminium-and-steel-rotary-vane-air-gearmotor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand aluminium and steel rotary vane air gearmotor?",
+          "a": "It is an Ingersoll Rand rotary vane air motor with a built-in gear head, in an aluminium and steel body finished black and gold, for compact low-speed drives. This listing holds five part numbers, from the 0.34 hp M004RVR033AR3 to the 3.2 hp 4840M."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code M004RVR033AR3 mean on an Ingersoll Rand air gearmotor?",
+          "a": "M004 is the motor series, RVR marks a reversible model in Ingersoll Rand's tables, and 033 tracks the gear reduction, here 33:1, which gives 450 rpm and 71 in-lb at 0.34 hp. The AR3 suffix completes the build code; order by the full number."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand air gearmotor in this listing gives the most torque?",
+          "a": "The Ingersoll Rand 4840U gives the most, listed at 3 hp, 170 rpm and 1,800 in-lb, followed by the M007RVR188BR6 at 0.61 hp, 94 rpm and 612 in-lb. For faster drives the 4840M runs at 975 rpm and 3.2 hp."
+        },
+        {
+          "slot": "D",
+          "q": "What speeds do the Ingersoll Rand M004 air gearmotors here run at?",
+          "a": "The two M004 gearmotors in this listing are M004RVR033AR3 at 450 rpm, 0.34 hp and 71 in-lb, and M004RVR050AR3 at 280 rpm, 0.31 hp and 99 in-lb. More M004 ratios are on the [Ingersoll Rand M004 Series listing](/p/ingersoll-rand-m004-series-in-line-planetary-gear-multi-vane-air-motors)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Ingersoll Rand air gearmotor rated for?",
+          "a": "The Ingersoll Rand aluminium and steel air gearmotor is listed for 0°F to +150°F ambient, with 18 SCFM air consumption on the M004 model. Keep condensate out of the line in cold conditions, as freezing water at the exhaust can stop a vane motor."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Ingersoll Rand air gearmotor housing made from?",
+          "a": "The listing gives aluminium and steel as the materials, with the housing listed as steel and a round output shaft, finished gold and black. That suits general plant duty; for washdown or corrosive areas, confirm the finish with us before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be supplied with an Ingersoll Rand 4840M or M004 gearmotor?",
+          "a": "No certificates are held on this listing, so ask for a maker certificate of conformity or origin documents with the enquiry if required. The gearmotors here are of United States origin, and we quote by the full Ingersoll Rand part number so papers match."
+        },
+        {
+          "slot": "H",
+          "q": "How should the Ingersoll Rand M004RVR033AR3 gearmotor be mounted?",
+          "a": "The Ingersoll Rand M004 gearmotor in this listing is specified for horizontal mounting with a round output shaft, so couple it to the load with a clamp or set-screw coupling on a horizontal axis. Feed it through a regulator and valve from our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you size an Ingersoll Rand air gearmotor?",
+          "a": "Size an Ingersoll Rand air gearmotor from the output speed and torque the load needs at the pressure available at the motor, then pick the ratio that gives it. Our [air motor guide](/blog/air-motors-guide) explains how torque changes with speed and pressure."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Ingersoll Rand 4840M and 4840U?",
+          "a": "Both are larger Ingersoll Rand air gearmotors; the 4840M is the faster build at 3.2 hp and 975 rpm, while the 4840U is geared down to 170 rpm at 3 hp, giving 1,800 in-lb. Choose by the shaft speed and torque the machine needs."
+        },
+        {
+          "slot": "L",
+          "q": "What is the HS code and origin of the Ingersoll Rand air gearmotor?",
+          "a": "The Ingersoll Rand aluminium and steel air gearmotor is listed under HS code 8412390080 and is of United States origin. We export it from our Dubai warehouse to the GCC, Africa and Asia with both stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Ingersoll Rand aluminium and steel air gearmotor in stock?",
+          "a": "Yes. We keep the Ingersoll Rand aluminium and steel rotary vane air gearmotor in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send the part number, such as 4840U, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-m002-series-in-line-planetary-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand M002 Series air motor?",
+          "a": "The Ingersoll Rand M002 is the smallest in-line planetary gear multi-vane air motor in the M-series, covering 0.11 to 0.25 hp. This listing holds 11 part numbers from the direct M002RVR000AR3 to the geared M002RVR101AR3, with a listed rating of 15 N-m."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an Ingersoll Rand M002 part number such as M002RVR021AR3?",
+          "a": "In M002RVR021AR3, M002 is the series, RVR marks a reversible model (RHR is non-reversible), and 021 tracks the gear reduction, with higher numbers slower and stronger. Ratios in this listing run from 000 to 101; AR3 completes the build code."
+        },
+        {
+          "slot": "D",
+          "q": "What torque range does the Ingersoll Rand M002 Series cover?",
+          "a": "Torque in our M002 table runs from 2.16 lb-in on the direct M002RVR000AR3 to 108.6 lb-in on M002RVR101AR3, with M002RVR021AR3 at 29.64 lb-in. Choose the ratio that gives the torque needed at the speed the load runs."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand M002 motor suits a slow output near 114 rpm?",
+          "a": "The M002RHR101AR3 is listed at 114 rpm and the M002RVR028AR3 at 385 rpm with 40.08 lb-in, so the 101 ratio builds suit the slowest drives. Pick RVR if the drive must reverse and RHR if it runs one way only."
+        },
+        {
+          "slot": "E",
+          "q": "Why do Ingersoll Rand M002 RHR motors give more torque than RVR?",
+          "a": "In our table the non-reversible RHR builds give more torque than the reversible RVR builds at the same ratio, for example 7.32 against 6.48 lb-in at 004 and 34.56 against 29.64 lb-in at 021. Use RHR where the drive turns in one direction only."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does an Ingersoll Rand M002 air motor need?",
+          "a": "An Ingersoll Rand M002 needs filtered, dry and regulated air; its small vanes are sensitive to water and dirt in the line. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) covers filtration, and compact regulators are on the [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates are available for Ingersoll Rand M002 motors?",
+          "a": "No certificates are held for this listing, so state what you need, such as a maker certificate of conformity or origin documents, when you request a quote. Quote the full part number, such as M002RHR008AR3, so the paperwork matches."
+        },
+        {
+          "slot": "H",
+          "q": "What valve is used with a reversible Ingersoll Rand M002RVR motor?",
+          "a": "A reversible Ingersoll Rand M002RVR motor needs a valve that switches the supply between its two ports, such as a 5/3 valve, while a one-way M002RHR needs only a 3/2 valve. Small valves are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you control the speed of an Ingersoll Rand M002 air motor?",
+          "a": "Control an Ingersoll Rand M002's speed with a flow control, usually on the exhaust, and its torque with a regulator on the supply. The motor can stall under load without damage and restarts when the load eases, which suits light indexing and tensioning work."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ingersoll Rand M002 compare with the M004 Series?",
+          "a": "The M002 covers 0.11 to 0.25 hp and up to 108.6 lb-in in our table, while the [Ingersoll Rand M004 Series](/p/ingersoll-rand-m004-series-in-line-planetary-gear-multi-vane-air-motors) covers 0.31 to 0.5 hp and up to 440.4 lb-in. Step up to the M004 when the M002 runs out of torque."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to Ingersoll Rand M002 Series air motors?",
+          "a": "Ingersoll Rand M002 air motors normally fall under HS subheading 8412.39 for rotary pneumatic motors. We export them from our Dubai warehouse to the GCC, Africa and Asia, with the country of origin stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Ingersoll Rand M002 air motors in Dubai?",
+          "a": "Yes. Ingersoll Rand M002 Series air motors are kept in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the M002 part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-m004-series-in-line-planetary-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand M004 Series air motor?",
+          "a": "The Ingersoll Rand M004 is an in-line planetary gear multi-vane air motor of 0.31 to 0.5 hp, listed at 30 N-m, for compact drives that need torque on one axis. This listing has 10 part numbers, from the direct M004RHR000AR3 at 18,000 rpm to the geared M004RVR167AR3."
+        },
+        {
+          "slot": "B",
+          "q": "What does RHR or RVR mean in an Ingersoll Rand M004 part number?",
+          "a": "In Ingersoll Rand's M004 tables RVR models are reversible and RHR models non-reversible; the three digits after, such as 006 in M004RHR006AR3, track the gear reduction. So M004RHR000AR3 is the direct one-way motor and M004RVR167AR3 a slow reversible gearmotor."
+        },
+        {
+          "slot": "D",
+          "q": "What torque and speed range does the Ingersoll Rand M004 cover?",
+          "a": "The M004 range here runs from M004RHR000AR3 at 18,000 rpm and 6.36 lb-in to M004RHR083AR3 at 440.4 lb-in, with M004RHR006AR3 at 2,680 rpm and 38.64 lb-in between. Choose the ratio that matches the shaft speed so no extra gearbox is needed."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand M004 gearmotor runs at about 85 rpm?",
+          "a": "The Ingersoll Rand M004RVR167AR3 is listed at 0.31 hp, 85 rpm and 330 in-lb, the slowest M004 build here, and it is reversible. For a one-way drive with more torque, the M004RHR083AR3 is listed at 440.4 lb-in."
+        },
+        {
+          "slot": "E",
+          "q": "How do RHR and RVR versions of the Ingersoll Rand M004 differ in torque?",
+          "a": "At the same ratio the non-reversible RHR builds give more torque than reversible RVR builds, for example 23.28 against 18.12 lb-in at 004 and 62.64 against 48 lb-in at 011. Choose RHR when the drive never needs to reverse."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does an Ingersoll Rand M004 motor need?",
+          "a": "Supply an Ingersoll Rand M004 with filtered, dry, regulated air; water and particles wear vanes and planetary gears quickly. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains purity classes and where to remove water."
+        },
+        {
+          "slot": "G",
+          "q": "Can a certificate be supplied with an Ingersoll Rand M004 motor?",
+          "a": "This listing holds no certificates, so ask for a maker certificate of conformity or origin documents with the enquiry if your project needs them. Give the full part number, such as M004RVR011AR3, so the documents match the motor."
+        },
+        {
+          "slot": "H",
+          "q": "What controls go with an Ingersoll Rand M004 air motor?",
+          "a": "An Ingersoll Rand M004 needs a regulator to set torque, a flow control to set speed, an exhaust muffler, and a 3/2 valve for RHR one-way models or a 5/3 valve for reversible RVR models. Flow controls are on our [flow control shelf](/c/pneumatic-flow-check-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you size an Ingersoll Rand M004 for a drive?",
+          "a": "Size an Ingersoll Rand M004 on the torque and speed the load needs at the pressure available at the motor, then pick the ratio that gives it. Our [air motor guide](/blog/air-motors-guide) shows how torque falls as speed rises and how supply pressure shifts the curve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the M004 Series compare with the Ingersoll Rand aluminium and steel gearmotor?",
+          "a": "The [Ingersoll Rand aluminium and steel air gearmotor](/p/ingersoll-rand-aluminium-and-steel-rotary-vane-air-gearmotor) listing carries two more M004 builds, M004RVR033AR3 and M004RVR050AR3, alongside larger 4840 models. This M004 listing covers the wider ratio range, from 000 to 167."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to Ingersoll Rand M004 air motors?",
+          "a": "Ingersoll Rand M004 air motors normally fall under HS subheading 8412.39 for rotary pneumatic motors. We export them from Dubai to the GCC, Africa and Asia, with the country of origin stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Ingersoll Rand M004 air motors available from Dubai stock?",
+          "a": "Yes. We keep Ingersoll Rand M004 Series air motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as M004RHR006AR3 with quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-m007-series-in-line-planetary-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand M007 Series air motor?",
+          "a": "The Ingersoll Rand M007 is the largest of the M-series in-line planetary gear multi-vane air motors, at 0.64 to 0.85 hp. This listing holds 20 part numbers, from the direct M007RHR000AR4 at 22,000 rpm to slow, high-torque builds such as M007RHR374BR6."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an Ingersoll Rand M007 part number such as M007RHR188BR6?",
+          "a": "M007 is the series, RHR marks a non-reversible model (RVR is reversible), 188 tracks the gear reduction and BR6 completes the build code. In this listing the lower ratios carry AR4 and the higher ratios BR4 or BR6, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "What torque range does the Ingersoll Rand M007 cover?",
+          "a": "Torque in our M007 table runs from 7.56 lb-in on the direct M007RVR000AR4 to 3,048 lb-in on M007RHR374BR6, with M007RHR027AR4 at 231.6 lb-in in between. Pick the ratio that turns the load at the speed you need."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand M007 motor suits a drive near 103 rpm?",
+          "a": "The M007RHR188BR6 is listed at 103 rpm and 1,536 lb-in, and the reversible M007RVR044AR4 at 420 rpm and 297.6 lb-in. For slower drives, the reversible M007RVR374BR6 is listed at 0.61 hp and 47 rpm."
+        },
+        {
+          "slot": "E",
+          "q": "Why do Ingersoll Rand M007 RHR models list higher torque than RVR?",
+          "a": "The non-reversible RHR builds give more torque than reversible RVR builds at the same ratio, for example 55.92 against 45.36 lb-in at 006 and 536.4 against 430.8 lb-in at 063. Choose RVR only where the drive must reverse."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does an Ingersoll Rand M007 need?",
+          "a": "An Ingersoll Rand M007 needs filtered, dry and regulated air with enough flow for its 0.64 to 0.85 hp, delivered through a 1/2\" NPT inlet on builds such as M007RVR037BR4. Filter-regulators are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can come with an Ingersoll Rand M007 air motor?",
+          "a": "No certificates are held for this listing, so request a maker certificate of conformity or origin papers when you send the enquiry. Quote the complete part number, such as M007RHR063BR6, so the documents match."
+        },
+        {
+          "slot": "H",
+          "q": "What valves suit a reversible Ingersoll Rand M007RVR motor?",
+          "a": "A reversible Ingersoll Rand M007RVR motor needs a valve that switches supply and exhaust between its ports, typically a 5/3 valve, with a flow control and exhaust muffler; a one-way M007RHR needs only a 3/2 valve. See our [solenoid valves shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set speed and torque on an Ingersoll Rand M007?",
+          "a": "Set an Ingersoll Rand M007's speed with a flow control and its torque with the supply regulator, since torque follows inlet pressure. The motor can stall under overload without damage; our [air motor guide](/blog/air-motors-guide) explains the torque curve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ingersoll Rand M007 compare with the M004 Series?",
+          "a": "The M007 covers 0.64 to 0.85 hp and up to 3,048 lb-in in our table, against 0.31 to 0.5 hp and 440.4 lb-in for the [Ingersoll Rand M004 Series](/p/ingersoll-rand-m004-series-in-line-planetary-gear-multi-vane-air-motors). Choose the M007 for heavier loads."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to Ingersoll Rand M007 air motors?",
+          "a": "Ingersoll Rand M007 air motors normally fall under HS subheading 8412.39 for rotary pneumatic motors and gearmotors. We export them from Dubai to the GCC, Africa and Asia, with origin stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Ingersoll Rand M007 air motors in stock in Dubai?",
+          "a": "Yes. We keep Ingersoll Rand M007 Series air motors in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send part numbers such as M007RHR188BR6 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-spur-gear-multi-vane-air-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Ingersoll Rand spur gear multi-vane air motors?",
+          "a": "They are reversible Ingersoll Rand multi-vane air motors with a spur gear head, which offsets the output shaft from the motor axis, for high-torque, low-speed drives. This listing covers 13 part numbers in the 34 and 48 families, from 48RA008 at 618 lb-in to 34RB078 at 12,120 lb-in."
+        },
+        {
+          "slot": "B",
+          "q": "What is the difference between Ingersoll Rand 34RA and 48RA spur gear motors?",
+          "a": "At the same gear code the 34 family gives more torque and less speed than the 48: 34RA008 is listed at 1,212 lb-in and 370 rpm against 618 lb-in and 580 rpm for 48RA008. RA codes are the lighter builds and RB the heavier ones."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand spur gear motor has the highest torque?",
+          "a": "The Ingersoll Rand 34RB078 has the highest listed torque here, 12,120 lb-in, followed by 48RB078 at 6,156 lb-in and 54 rpm. These suit winches, capstans and heavy mixers where the load must turn slowly."
+        },
+        {
+          "slot": "D",
+          "q": "What speeds are listed for Ingersoll Rand 48 Series spur gear motors?",
+          "a": "Ingersoll Rand 48 Series speeds in our table run from 580 rpm on 48RA008 and 386 rpm on 48RA011 down to 146 rpm on 48RB029, 118 rpm on 48RB036 and 54 rpm on 48RB078. Pick the fastest build that still covers the torque."
+        },
+        {
+          "slot": "E",
+          "q": "How is the pull of an Ingersoll Rand spur gear air motor limited?",
+          "a": "The torque of an Ingersoll Rand spur gear motor follows inlet pressure, so a regulator sets the maximum pull and the motor stalls safely if the load exceeds it. That makes these motors suitable for winching and tensioning without a separate clutch."
+        },
+        {
+          "slot": "F",
+          "q": "What air treatment does an Ingersoll Rand 34 or 48 spur gear motor need?",
+          "a": "Feed an Ingersoll Rand 34 or 48 spur gear motor through a filter and regulator sized for its air demand; water and dirt wear vanes and gears. Our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) covers filter grades, drains and lubricators."
+        },
+        {
+          "slot": "G",
+          "q": "Can documents be provided with an Ingersoll Rand 34RA motor?",
+          "a": "This listing holds no certificates, so state your requirement, such as a maker certificate of conformity or origin documents, when you request a quote. Quote the full part number, such as 34RA014, so the paperwork matches."
+        },
+        {
+          "slot": "H",
+          "q": "How is an Ingersoll Rand spur gear air motor reversed?",
+          "a": "Ingersoll Rand 34 and 48 spur gear motors are reversible: switch the supply between the two ports with a 5/3 directional valve while the other port exhausts through a muffler. Valves are on our [manual and pilot air valves shelf](/c/pneumatic-control-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How should an Ingersoll Rand spur gear motor be sized for a winch?",
+          "a": "Size an Ingersoll Rand spur gear motor from the drum torque and rope speed needed at the pressure available at the motor, allowing for pressure drop in long hoses. Our [air motor guide](/blog/air-motors-guide) explains how torque falls with speed."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Ingersoll Rand 34/48 spur gear motors compare with the 92 Series?",
+          "a": "Both are reversible spur gear multi-vane motors; this 34 and 48 listing covers 618 to 12,120 lb-in, while the [Ingersoll Rand 92 Series](/p/ingersoll-rand-92-series-spur-gear-multi-vane-air-motors) reaches 13,080 lb-in. Compare torque, speed and mounting for your drive."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code covers Ingersoll Rand spur gear air motors?",
+          "a": "Ingersoll Rand spur gear air motors normally fall under HS subheading 8412.39 for other pneumatic power engines and motors. We export them from Dubai to the GCC, Africa and Asia, with the country of origin stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Ingersoll Rand 34 and 48 spur gear motors kept in Dubai stock?",
+          "a": "Yes. We keep Ingersoll Rand 34 and 48 spur gear multi-vane motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as 48RB036 through [our contact page](/contact) for a price."
+        }
+      ]
+    }
+  ]
+}

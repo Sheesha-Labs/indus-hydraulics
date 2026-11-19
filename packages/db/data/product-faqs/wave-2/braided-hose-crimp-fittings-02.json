@@ -1,0 +1,1140 @@
+{
+  "family": "braided-hose-crimp-fittings-02",
+  "extraFacts": [
+    {
+      "fact": "A hose fitting's dash size is the hose inside diameter in sixteenths of an inch: -04 is 1/4 inch, -06 is 3/8 inch, -08 is 1/2 inch, -10 is 5/8 inch, -12 is 3/4 inch and -16 is 1 inch. A fitting must be matched to the hose construction and crimped to the diameter set for that hose and ferrule.",
+      "source": "SAE J517 hose size convention; hose and fitting maker crimp data"
+    },
+    {
+      "fact": "JIC 37° flare fittings (SAE J514, ISO 8434-2) and SAE 45° flare fittings (SAE J512) share thread sizes in several sizes but have different seat angles, 37° and 45°, and do not seal against each other. JIS B 8363 fittings use a 30° cone seat, 60° included, and a BSP parallel or metric straight thread. BS 5200 covers the BSP 60° cone connection.",
+      "source": "SAE J514, SAE J512, JIS B 8363, BS 5200"
+    },
+    {
+      "fact": "DIN 2353 24° cone connectors come in a light (L) and a heavy (S) series. Light and heavy fittings for the same tube size use different threads and do not mate. ORFS (O-ring face seal, SAE J1453, ISO 8434-3) fittings seal on an O-ring in a flat face, not on a cone.",
+      "source": "DIN 2353 / ISO 8434-1; SAE J1453 / ISO 8434-3"
+    },
+    {
+      "fact": "SAE J518 (ISO 6162) four-bolt flanges come as Code 61, the standard-pressure series, and Code 62, the high-pressure series. For the same nominal size they have different bolt spacings and are not interchangeable.",
+      "source": "SAE J518 / ISO 6162-1 and 6162-2"
+    },
+    {
+      "fact": "NPT and NPTF tapered pipe threads seal on the thread; the pressure rating of a pipe-thread end falls with size, so at the larger sizes the end can limit an assembly below the hose rating.",
+      "source": "SAE J514 pipe-thread connection ratings; ASME B1.20.1 / B1.20.3"
+    },
+    {
+      "fact": "NPSM is the straight (parallel) pipe thread, mechanical; a female NPSM swivel seats on a 60° cone and so mates with a male NPT or NPTF nose, whereas NPTF is a tapered thread that seals on the thread itself. ORB is the SAE O-ring boss straight thread (SAE J1926-1) sealed by an O-ring.",
+      "source": "SAE J476 and J516 (pipe-thread hose ends); SAE J1926-1; Parker 10743 Female NPSM (60° cone) entry in this shelf's range"
+    },
+    {
+      "fact": "Steel hose fittings and hose couplings are normally classified under HS subheading 7307.99; the importer's customs broker has the final say.",
+      "source": "WCO Harmonized System, heading 7307"
+    }
+  ],
+  "products": [
+    {
+      "slug": "jic-37-male-rigid-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus JIC 37° Male Rigid crimp fitting for braided hose used for?",
+          "a": "The Indus JIC 37° Male Rigid crimp fitting is a one-piece crimp hose fitting with a rigid JIC 37° male flare end with a UN/UNF straight thread and a metal-to-metal 37° cone, built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on pump, valve and cylinder connections on SAE-pattern equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-JICM-1010 and its Parker number 10343-10-10?",
+          "a": "IH-CF43-JICM-1010 is one row of the table: 5/8\" hose (-10) with a 7/8\"-14 end. Its Parker equivalent 10343-10-10 reads series 10343, then an end-size code (10), then the hose dash size (10), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus JIC 37° Male Rigid crimp fitting replace?",
+          "a": "The JIC 37° Male Rigid crimp fitting is listed as dimensionally interchangeable with the Parker 10343 series. Each part number in the table sits beside its Parker number, for example IH-CF43-JICM-0404 for Parker 10343-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus JIC 37° Male Rigid crimp fitting come in?",
+          "a": "The listing has 20 part numbers for hose sizes -04 to -20 (1/4\" to 1-1/4\"), with ends from 7/16\"-20 up to 1-7/8\"-12. For example IH-CF43-JICM-0404, IH-CF43-JICM-1010 and IH-CF43-JICM-2024. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the JIC 37° Male Rigid crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 46, B 26, H 14.2 for IH-CF43-JICM-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus JIC 37° Male Rigid crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the JIC 37° Male Rigid crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus JIC 37° Male Rigid crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the JIC 37° Male Rigid crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus JIC 37° Male Rigid crimp fitting follow?",
+          "a": "The listing names SAE J514, ISO 8434-2 for the JIC 37° Male Rigid crimp fitting. SAE J514 and ISO 8434-2 cover 37° flared tube fittings, which is why JIC ends are listed against both. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus JIC 37° Male Rigid crimp fitting connect to, and which ferrule does it need?",
+          "a": "The JIC 37° Male Rigid crimp fitting connects to a female JIC 37° swivel nut, a JIC female adapter or a 37° flared tube nut; matching parts are on our [JIC adapters](/c/jic-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with an SAE 45° male flare, which can look the same but has a different seat angle."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus JIC 37° Male Rigid crimp fitting crimped onto braided hose?",
+          "a": "Cut the hose square, push it fully home in the socket and crimp to the diameter set for the hose grade and ferrule. Check the JIC 37° Male Rigid crimp fitting crimp with a go/no-go gauge and pressure-test the assembly; our [guide to hose crimp faults](/blog/hydraulic-hose-crimp-faults) lists the usual crimp faults."
+        },
+        {
+          "slot": "K",
+          "q": "Why is the Indus JIC 37° Male Rigid crimp fitting not interchangeable with a similar-looking fitting?",
+          "a": "Because the seat and thread must match the port, and the JIC 37° Male Rigid crimp fitting has a rigid JIC 37° male flare end with a UN/UNF straight thread and a metal-to-metal 37° cone. It will not seal against an SAE 45° male flare, which can look the same but has a different seat angle. Check the thread form and seat angle on the port before ordering; our [guide to building a thread reference board](/blog/building-a-thread-reference-board) shows how to build a reference."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus JIC 37° Male Rigid crimp fitting in stock in Dubai?",
+          "a": "Yes, the JIC 37° Male Rigid crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-JICM-0404 or IH-CF43-JICM-2024), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "jis-bsp-30-female-swivel-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus JIS BSP 30° Female Swivel crimp fitting for braided hose used for?",
+          "a": "The Indus JIS BSP 30° Female Swivel crimp fitting is a one-piece crimp hose fitting with a JIS 30° female swivel with a BSP parallel (G) thread and a 30° cone seat (60° included), built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on Japanese-built construction and industrial machines that use JIS B 8363 connections."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-JISF-1212 on the JIS BSP 30° Female Swivel crimp fitting?",
+          "a": "Each part number is one row of the size table that pairs a hose bore with an end thread. IH-CF43-JISF-1212 is 3/4\" hose (-12) with a 3/4\"-14 end, while IH-CF43-JISF-0404 is 1/4\" hose with 1/4\"-19. Dash size is the hose ID in sixteenths of an inch."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus JIS BSP 30° Female Swivel crimp fitting replace?",
+          "a": "The JIS BSP 30° Female Swivel crimp fitting is listed as dimensionally interchangeable with the Parker 1FU43 series. The size table does not hold a Parker number for each row, so send us the Parker number you have and we will confirm the size. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus JIS BSP 30° Female Swivel crimp fitting come in?",
+          "a": "The listing has 9 part numbers for hose sizes -04 to -32 (1/4\" to 2\"), with ends from 1/4\"-19 up to 2\"-11. For example IH-CF43-JISF-0404, IH-CF43-JISF-1212 and IH-CF43-JISF-3232. Each hose size has one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the JIS BSP 30° Female Swivel crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 41, B 21, H 17, W 19 for IH-CF43-JISF-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus JIS BSP 30° Female Swivel crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the JIS BSP 30° Female Swivel crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus JIS BSP 30° Female Swivel crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the JIS BSP 30° Female Swivel crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus JIS BSP 30° Female Swivel crimp fitting follow?",
+          "a": "The listing names JIS B8363 for the JIS BSP 30° Female Swivel crimp fitting. JIS B 8363 is the Japanese standard listed on this product for the 30° cone seat. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus JIS BSP 30° Female Swivel crimp fitting connect to, and which ferrule does it need?",
+          "a": "The JIS BSP 30° Female Swivel crimp fitting connects to a male JIS 30° cone fitting with a G parallel thread, as used on Japanese-built excavators and machinery; matching parts are on our [JIS 30° adapters](/c/jis-30-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a BSP 60° cone fitting, which has the same G thread but a different seat and will not seal."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus JIS BSP 30° Female Swivel crimp fitting crimped onto braided hose?",
+          "a": "Match the JIS BSP 30° Female Swivel crimp fitting to the hose grade, crimp to the specified diameter and keep the straight orientation true to the machine port before crimping. Test the assembly before it is fitted; see our [hydraulic hose assembly guide](/blog/hydraulic-hose-assembly-guide) for the full sequence."
+        },
+        {
+          "slot": "K",
+          "q": "Why is the Indus JIS BSP 30° Female Swivel crimp fitting not interchangeable with a similar-looking fitting?",
+          "a": "Because the seat and thread must match the port, and the JIS BSP 30° Female Swivel crimp fitting has a JIS 30° female swivel with a BSP parallel (G) thread and a 30° cone seat (60° included). It will not seal against a BSP 60° cone fitting, which has the same G thread but a different seat and will not seal. Check the thread form and seat angle on the port before ordering; our [guide to building a thread reference board](/blog/building-a-thread-reference-board) shows how to build a reference."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus JIS BSP 30° Female Swivel crimp fitting in stock in Dubai?",
+          "a": "Yes, the JIS BSP 30° Female Swivel crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-JISF-0404 or IH-CF43-JISF-3232), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "komatsu-jis-metric-30-female-swivel-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting for braided hose used for?",
+          "a": "The Indus Komatsu JIS Metric 30° Female Swivel crimp fitting is a one-piece crimp hose fitting with a JIS 30° female swivel with a metric straight thread and a 30° cone seat (60° included), built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on Komatsu and other Japanese-built construction machines that use JIS B 8363 connections."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-KOMF-0822 on the Komatsu JIS Metric 30° Female Swivel crimp fitting?",
+          "a": "Each part number is one row of the size table that pairs a hose bore with an end thread. IH-CF43-KOMF-0822 is 1/2\" hose (-08) with a M22X1.5 end, while IH-CF43-KOMF-0414 is 1/4\" hose with M14X1.5. Dash size is the hose ID in sixteenths of an inch."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting replace?",
+          "a": "The Komatsu JIS Metric 30° Female Swivel crimp fitting is listed as dimensionally interchangeable with the Parker 1MU43 and 1XU43 series. The size table does not hold a Parker number for each row, so send us the Parker number you have and we will confirm the size. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting come in?",
+          "a": "The listing has 7 part numbers for hose sizes -04 to -16 (1/4\" to 1\"), with ends from M14X1.5 up to M33X1.5. For example IH-CF43-KOMF-0414, IH-CF43-KOMF-0822 and IH-CF43-KOMF-1633. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the Komatsu JIS Metric 30° Female Swivel crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 41, B 21, H 17, W 19 for IH-CF43-KOMF-0414, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the Komatsu JIS Metric 30° Female Swivel crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the Komatsu JIS Metric 30° Female Swivel crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting follow?",
+          "a": "The listing names JIS B8363 for the Komatsu JIS Metric 30° Female Swivel crimp fitting. JIS B 8363 is the Japanese standard listed on this product for the 30° cone seat. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting connect to, and which ferrule does it need?",
+          "a": "The Komatsu JIS Metric 30° Female Swivel crimp fitting connects to a male JIS 30° cone fitting with a metric straight thread, as used on Komatsu and other Japanese-built machines; matching parts are on our [JIS 30° adapters](/c/jis-30-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a DIN 24° cone fitting, which also uses metric threads but a different seat."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting crimped onto braided hose?",
+          "a": "Match the Komatsu JIS Metric 30° Female Swivel crimp fitting to the hose grade, crimp to the specified diameter and keep the straight orientation true to the machine port before crimping. Test the assembly before it is fitted; see our [hydraulic hose assembly guide](/blog/hydraulic-hose-assembly-guide) for the full sequence."
+        },
+        {
+          "slot": "K",
+          "q": "Why is the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting not interchangeable with a similar-looking fitting?",
+          "a": "Because the seat and thread must match the port, and the Komatsu JIS Metric 30° Female Swivel crimp fitting has a JIS 30° female swivel with a metric straight thread and a 30° cone seat (60° included). It will not seal against a DIN 24° cone fitting, which also uses metric threads but a different seat. Check the thread form and seat angle on the port before ordering; our [guide to building a thread reference board](/blog/building-a-thread-reference-board) shows how to build a reference."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus Komatsu JIS Metric 30° Female Swivel crimp fitting in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Komatsu JIS Metric 30° Female Swivel crimp fitting in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-CF43-KOMF-0414 or IH-CF43-KOMF-1633), hose grade and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "npt-male-rigid-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus NPT Male Rigid crimp fitting for braided hose used for?",
+          "a": "The Indus NPT Male Rigid crimp fitting is a one-piece crimp hose fitting with a rigid male NPTF (Dryseal) tapered pipe thread, metal-to-metal, built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on American-pattern equipment, compressors, power units and pipe-thread ports on valves and gauges."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-NPTM-1006 and its Parker number 10143-6-10?",
+          "a": "IH-CF43-NPTM-1006 is one row of the table: 5/8\" hose (-10) with a 3/8\"-18 end. Its Parker equivalent 10143-6-10 reads series 10143, then an end-size code (6), then the hose dash size (10), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus NPT Male Rigid crimp fitting replace?",
+          "a": "The NPT Male Rigid crimp fitting is listed as dimensionally interchangeable with the Parker 10143 series. Each part number in the table sits beside its Parker number, for example IH-CF43-NPTM-0404 for Parker 10143-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus NPT Male Rigid crimp fitting come in?",
+          "a": "The listing has 23 part numbers for hose sizes -04 to -32 (1/4\" to 2\"), with ends from 1/4\"-18 up to 2\"-11.5. For example IH-CF43-NPTM-0404, IH-CF43-NPTM-1006 and IH-CF43-NPTM-3232. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the NPT Male Rigid crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 49, B 27, H 14.2 for IH-CF43-NPTM-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus NPT Male Rigid crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the NPT Male Rigid crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing. A tapered pipe-thread end can also limit the assembly at the larger sizes."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus NPT Male Rigid crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the NPT Male Rigid crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus NPT Male Rigid crimp fitting follow?",
+          "a": "The listing names SAE J516, SAE J476 for the NPT Male Rigid crimp fitting. SAE J516 and SAE J476 are the standards listed on this product for pipe-thread hose ends. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus NPT Male Rigid crimp fitting connect to, and which ferrule does it need?",
+          "a": "The NPT Male Rigid crimp fitting connects to a female NPT or NPTF pipe port, such as a pump, valve, gauge or manifold port, or a female pipe adapter; matching parts are on our [NPT adapters](/c/npt-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a BSPT thread, which is also tapered but has a different thread angle and pitch in most sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus NPT Male Rigid crimp fitting crimped onto braided hose?",
+          "a": "Fit the correct ferrule, crimp to the specified diameter and mark the straight position against the hose layline first, so the line does not twist when tightened. Our [guide to hose installed with a twist](/blog/hydraulic-hose-installed-with-a-twist) shows why twist shortens the life of a NPT Male Rigid crimp fitting assembly."
+        },
+        {
+          "slot": "K",
+          "q": "Why is the Indus NPT Male Rigid crimp fitting not interchangeable with a similar-looking fitting?",
+          "a": "Because the seat and thread must match the port, and the NPT Male Rigid crimp fitting has a rigid male NPTF (Dryseal) tapered pipe thread, metal-to-metal. It will not seal against a BSPT thread, which is also tapered but has a different thread angle and pitch in most sizes. Check the thread form and seat angle on the port before ordering; our [guide to building a thread reference board](/blog/building-a-thread-reference-board) shows how to build a reference."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus NPT Male Rigid crimp fitting in stock in Dubai?",
+          "a": "Yes. The NPT Male Rigid crimp fitting sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-CF43-NPTM-0404 or IH-CF43-NPTM-3232), hose grade and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "npt-male-swivel-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus NPT Male Swivel crimp fitting for braided hose used for?",
+          "a": "The Indus NPT Male Swivel crimp fitting is a one-piece crimp hose fitting with a swivelling male NPTF (Dryseal) tapered pipe thread, metal-to-metal, built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on plumbing a hose to a fixed pipe port where the hose cannot be turned to thread in."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-NPTMS-0808 and its Parker number 11343-8-8?",
+          "a": "IH-CF43-NPTMS-0808 is one row of the table: 1/2\" hose (-08) with a 1/2\"-14 end. Its Parker equivalent 11343-8-8 reads series 11343, then an end-size code (8), then the hose dash size (8), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus NPT Male Swivel crimp fitting replace?",
+          "a": "The NPT Male Swivel crimp fitting is listed as dimensionally interchangeable with the Parker 11343 series. Each part number in the table sits beside its Parker number, for example IH-CF43-NPTMS-0404 for Parker 11343-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus NPT Male Swivel crimp fitting come in?",
+          "a": "The listing has 13 part numbers for hose sizes -04 to -16 (1/4\" to 1\"), with ends from 1/4\"-18 up to 1\"-11.5. For example IH-CF43-NPTMS-0404, IH-CF43-NPTMS-0808 and IH-CF43-NPTMS-1616. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the NPT Male Swivel crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 58, B 37, H 17.4 for IH-CF43-NPTMS-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus NPT Male Swivel crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the NPT Male Swivel crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing. A tapered pipe-thread end can also limit the assembly at the larger sizes."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus NPT Male Swivel crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the NPT Male Swivel crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus NPT Male Swivel crimp fitting follow?",
+          "a": "The listing names SAE J516, SAE J476 for the NPT Male Swivel crimp fitting. SAE J516 and SAE J476 are the standards listed on this product for pipe-thread hose ends. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus NPT Male Swivel crimp fitting connect to, and which ferrule does it need?",
+          "a": "The NPT Male Swivel crimp fitting connects to a female NPT or NPTF pipe port, such as a pump, valve, gauge or manifold port, or a female pipe adapter; matching parts are on our [NPT adapters](/c/npt-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a BSPT thread, which is also tapered but has a different thread angle and pitch in most sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus NPT Male Swivel crimp fitting crimped onto braided hose?",
+          "a": "Fit the correct ferrule, crimp to the specified diameter and mark the straight position against the hose layline first, so the line does not twist when tightened. Our [guide to hose installed with a twist](/blog/hydraulic-hose-installed-with-a-twist) shows why twist shortens the life of a NPT Male Swivel crimp fitting assembly."
+        },
+        {
+          "slot": "K",
+          "q": "Why is the Indus NPT Male Swivel crimp fitting not interchangeable with a similar-looking fitting?",
+          "a": "Because the seat and thread must match the port, and the NPT Male Swivel crimp fitting has a swivelling male NPTF (Dryseal) tapered pipe thread, metal-to-metal. It will not seal against a BSPT thread, which is also tapered but has a different thread angle and pitch in most sizes. Check the thread form and seat angle on the port before ordering; our [guide to building a thread reference board](/blog/building-a-thread-reference-board) shows how to build a reference."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus NPT Male Swivel crimp fitting in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the NPT Male Swivel crimp fitting in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-CF43-NPTMS-0404 or IH-CF43-NPTMS-1616), hose grade and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-female-swivel-45-elbow-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus ORFS Female Swivel 45° Elbow crimp fitting for braided hose used for?",
+          "a": "The Indus ORFS Female Swivel 45° Elbow crimp fitting is a one-piece crimp hose fitting with an ORFS (O-ring face seal) female swivel with a UN/UNF straight thread, built as a 45° elbow body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on high-pressure systems where leak-free joints matter, such as mobile hydraulics and heavy equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-ORFSF-45-1010 and its Parker number 1J743-10-10?",
+          "a": "IH-CF43-ORFSF-45-1010 is one row of the table: 5/8\" hose (-10) with a 1\"-14 end. Its Parker equivalent 1J743-10-10 reads series 1J743, then an end-size code (10), then the hose dash size (10), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus ORFS Female Swivel 45° Elbow crimp fitting replace?",
+          "a": "The ORFS Female Swivel 45° Elbow crimp fitting is listed as dimensionally interchangeable with the Parker 1J743 series. Each part number in the table sits beside its Parker number, for example IH-CF43-ORFSF-45-0404 for Parker 1J743-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus ORFS Female Swivel 45° Elbow crimp fitting come in?",
+          "a": "The listing has 23 part numbers for hose sizes -04 to -24 (1/4\" to 1-1/2\"), with ends from 9/16\"-18 up to 2\"-12. For example IH-CF43-ORFSF-45-0404, IH-CF43-ORFSF-45-1010 and IH-CF43-ORFSF-45-2424. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the ORFS Female Swivel 45° Elbow crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 55, B 34, E 13, W 17.4 for IH-CF43-ORFSF-45-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus ORFS Female Swivel 45° Elbow crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the ORFS Female Swivel 45° Elbow crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus ORFS Female Swivel 45° Elbow crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the ORFS Female Swivel 45° Elbow crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus ORFS Female Swivel 45° Elbow crimp fitting follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Female Swivel 45° Elbow crimp fitting. SAE J1453 and ISO 8434-3 cover O-ring face seal fittings, which is why ORFS ends are listed against both. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus ORFS Female Swivel 45° Elbow crimp fitting connect to, and which ferrule does it need?",
+          "a": "The ORFS Female Swivel 45° Elbow crimp fitting connects to a male ORFS end, whose flat face carries an O-ring in a groove, such as an ORFS adapter or a valve or pump port; matching parts are on our [ORFS adapters](/c/orfs-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a JIC 37° fitting of similar thread size, which seals on a cone, not a flat face."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus ORFS Female Swivel 45° Elbow crimp fitting crimped onto braided hose?",
+          "a": "Match the ORFS Female Swivel 45° Elbow crimp fitting to the hose grade, crimp to the specified diameter and keep the 45° elbow orientation true to the machine port before crimping. Test the assembly before it is fitted; see our [hydraulic hose assembly guide](/blog/hydraulic-hose-assembly-guide) for the full sequence."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus ORFS Female Swivel 45° Elbow crimp fitting differ from the 90° long-drop elbow version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the ORFS Female Swivel 45° Elbow crimp fitting is a 45° elbow, and [ORFS Female Swivel 90° Long Drop Crimp Fitting for Braided Hose](/p/orfs-female-swivel-90-long-drop-crimp-fitting-braided-hose) is the 90° long-drop elbow version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus ORFS Female Swivel 45° Elbow crimp fitting in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the ORFS Female Swivel 45° Elbow crimp fitting in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-CF43-ORFSF-45-0404 or IH-CF43-ORFSF-45-2424), hose grade and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-female-swivel-90-elbow-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus ORFS Female Swivel 90° Elbow crimp fitting for braided hose used for?",
+          "a": "The Indus ORFS Female Swivel 90° Elbow crimp fitting is a one-piece crimp hose fitting with an ORFS (O-ring face seal) female swivel with a UN/UNF straight thread, built as a 90° elbow body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on high-pressure systems where leak-free joints matter, such as mobile hydraulics and heavy equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-ORFSF-90-1010 and its Parker number 1J543-10-10?",
+          "a": "IH-CF43-ORFSF-90-1010 is one row of the table: 5/8\" hose (-10) with a 1\"-14 end. Its Parker equivalent 1J543-10-10 reads series 1J543, then an end-size code (10), then the hose dash size (10), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus ORFS Female Swivel 90° Elbow crimp fitting replace?",
+          "a": "The ORFS Female Swivel 90° Elbow crimp fitting is listed as dimensionally interchangeable with the Parker 1J543 series. Each part number in the table sits beside its Parker number, for example IH-CF43-ORFSF-90-0404 for Parker 1J543-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus ORFS Female Swivel 90° Elbow crimp fitting come in?",
+          "a": "The listing has 23 part numbers for hose sizes -04 to -24 (1/4\" to 1-1/2\"), with ends from 9/16\"-18 up to 2\"-12. For example IH-CF43-ORFSF-90-0404, IH-CF43-ORFSF-90-1010 and IH-CF43-ORFSF-90-2424. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the ORFS Female Swivel 90° Elbow crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 51, B 30, E 24, W 17.4 for IH-CF43-ORFSF-90-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus ORFS Female Swivel 90° Elbow crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the ORFS Female Swivel 90° Elbow crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus ORFS Female Swivel 90° Elbow crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the ORFS Female Swivel 90° Elbow crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus ORFS Female Swivel 90° Elbow crimp fitting follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Female Swivel 90° Elbow crimp fitting. SAE J1453 and ISO 8434-3 cover O-ring face seal fittings, which is why ORFS ends are listed against both. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus ORFS Female Swivel 90° Elbow crimp fitting connect to, and which ferrule does it need?",
+          "a": "The ORFS Female Swivel 90° Elbow crimp fitting connects to a male ORFS end, whose flat face carries an O-ring in a groove, such as an ORFS adapter or a valve or pump port; matching parts are on our [ORFS adapters](/c/orfs-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a JIC 37° fitting of similar thread size, which seals on a cone, not a flat face."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus ORFS Female Swivel 90° Elbow crimp fitting crimped onto braided hose?",
+          "a": "Fit the correct ferrule, crimp to the specified diameter and mark the 90° elbow position against the hose layline first, so the line does not twist when tightened. Our [guide to hose installed with a twist](/blog/hydraulic-hose-installed-with-a-twist) shows why twist shortens the life of a ORFS Female Swivel 90° Elbow crimp fitting assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus ORFS Female Swivel 90° Elbow crimp fitting differ from the straight version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the ORFS Female Swivel 90° Elbow crimp fitting is a 90° elbow, and [ORFS Female Swivel Crimp Fitting for Braided Hose](/p/orfs-female-swivel-crimp-fitting-braided-hose) is the straight version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus ORFS Female Swivel 90° Elbow crimp fitting in stock in Dubai?",
+          "a": "Yes. We keep the ORFS Female Swivel 90° Elbow crimp fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-CF43-ORFSF-90-0404 or IH-CF43-ORFSF-90-2424), hose grade and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-female-swivel-90-long-drop-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus ORFS Female Swivel 90° Long Drop crimp fitting for braided hose used for?",
+          "a": "The Indus ORFS Female Swivel 90° Long Drop crimp fitting is a one-piece crimp hose fitting with an ORFS (O-ring face seal) female swivel with a UN/UNF straight thread, built as a 90° long-drop elbow body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on high-pressure systems where leak-free joints matter, such as mobile hydraulics and heavy equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-ORFSF-90L-1212 and its Parker number 1J143-12-12?",
+          "a": "IH-CF43-ORFSF-90L-1212 is one row of the table: 3/4\" hose (-12) with a 1-3/16\"-12 end. Its Parker equivalent 1J143-12-12 reads series 1J143, then an end-size code (12), then the hose dash size (12), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus ORFS Female Swivel 90° Long Drop crimp fitting replace?",
+          "a": "The ORFS Female Swivel 90° Long Drop crimp fitting is listed as dimensionally interchangeable with the Parker 1J143 series. Each part number in the table sits beside its Parker number, for example IH-CF43-ORFSF-90L-0404 for Parker 1J143-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus ORFS Female Swivel 90° Long Drop crimp fitting come in?",
+          "a": "The listing has 6 part numbers for hose sizes -04 to -20 (1/4\" to 1-1/4\"), with ends from 9/16\"-18 up to 1-11/16\"-12. For example IH-CF43-ORFSF-90L-0404, IH-CF43-ORFSF-90L-1212 and IH-CF43-ORFSF-90L-2020. Each hose size has one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the ORFS Female Swivel 90° Long Drop crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 51, B 30, E 46, W 17.4 for IH-CF43-ORFSF-90L-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus ORFS Female Swivel 90° Long Drop crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the ORFS Female Swivel 90° Long Drop crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus ORFS Female Swivel 90° Long Drop crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the ORFS Female Swivel 90° Long Drop crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus ORFS Female Swivel 90° Long Drop crimp fitting follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Female Swivel 90° Long Drop crimp fitting. SAE J1453 and ISO 8434-3 cover O-ring face seal fittings, which is why ORFS ends are listed against both. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus ORFS Female Swivel 90° Long Drop crimp fitting connect to, and which ferrule does it need?",
+          "a": "The ORFS Female Swivel 90° Long Drop crimp fitting connects to a male ORFS end, whose flat face carries an O-ring in a groove, such as an ORFS adapter or a valve or pump port; matching parts are on our [ORFS adapters](/c/orfs-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a JIC 37° fitting of similar thread size, which seals on a cone, not a flat face."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus ORFS Female Swivel 90° Long Drop crimp fitting crimped onto braided hose?",
+          "a": "Fit the correct ferrule, crimp to the specified diameter and mark the 90° long-drop elbow position against the hose layline first, so the line does not twist when tightened. Our [guide to hose installed with a twist](/blog/hydraulic-hose-installed-with-a-twist) shows why twist shortens the life of a ORFS Female Swivel 90° Long Drop crimp fitting assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus ORFS Female Swivel 90° Long Drop crimp fitting differ from the straight version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the ORFS Female Swivel 90° Long Drop crimp fitting is a 90° long-drop elbow, and [ORFS Female Swivel Crimp Fitting for Braided Hose](/p/orfs-female-swivel-crimp-fitting-braided-hose) is the straight version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus ORFS Female Swivel 90° Long Drop crimp fitting in stock in Dubai?",
+          "a": "Yes, the ORFS Female Swivel 90° Long Drop crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-ORFSF-90L-0404 or IH-CF43-ORFSF-90L-2020), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-female-swivel-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus ORFS Female Swivel crimp fitting for braided hose used for?",
+          "a": "The Indus ORFS Female Swivel crimp fitting is a one-piece crimp hose fitting with an ORFS (O-ring face seal) female swivel with a UN/UNF straight thread, built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on high-pressure systems where leak-free joints matter, such as mobile hydraulics and heavy equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-ORFSF-1010 and its Parker number 1JC43-10-10?",
+          "a": "IH-CF43-ORFSF-1010 is one row of the table: 5/8\" hose (-10) with a 1\"-14 end. Its Parker equivalent 1JC43-10-10 reads series 1JC43, then an end-size code (10), then the hose dash size (10), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus ORFS Female Swivel crimp fitting replace?",
+          "a": "The ORFS Female Swivel crimp fitting is listed as dimensionally interchangeable with the Parker 1JC43 and 1JS43 series. Each part number in the table sits beside its Parker number, for example IH-CF43-ORFSF-0404 for Parker 1JC43-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus ORFS Female Swivel crimp fitting come in?",
+          "a": "The listing has 24 part numbers for hose sizes -04 to -24 (1/4\" to 1-1/2\"), with ends from 9/16\"-18 up to 2\"-12. For example IH-CF43-ORFSF-0404, IH-CF43-ORFSF-1010 and IH-CF43-ORFSF-2424. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the ORFS Female Swivel crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 50, B 29, H 14.2, W 17.4 for IH-CF43-ORFSF-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus ORFS Female Swivel crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the ORFS Female Swivel crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus ORFS Female Swivel crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the ORFS Female Swivel crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus ORFS Female Swivel crimp fitting follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Female Swivel crimp fitting. SAE J1453 and ISO 8434-3 cover O-ring face seal fittings, which is why ORFS ends are listed against both. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus ORFS Female Swivel crimp fitting connect to, and which ferrule does it need?",
+          "a": "The ORFS Female Swivel crimp fitting connects to a male ORFS end, whose flat face carries an O-ring in a groove, such as an ORFS adapter or a valve or pump port; matching parts are on our [ORFS adapters](/c/orfs-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a JIC 37° fitting of similar thread size, which seals on a cone, not a flat face."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus ORFS Female Swivel crimp fitting crimped onto braided hose?",
+          "a": "Cut the hose square, push it fully home in the socket and crimp to the diameter set for the hose grade and ferrule. Check the ORFS Female Swivel crimp fitting crimp with a go/no-go gauge and pressure-test the assembly; our [guide to hose crimp faults](/blog/hydraulic-hose-crimp-faults) lists the usual crimp faults."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus ORFS Female Swivel crimp fitting differ from the 45° elbow version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the ORFS Female Swivel crimp fitting is a straight, and [ORFS Female Swivel 45° Elbow Crimp Fitting for Braided Hose](/p/orfs-female-swivel-45-elbow-crimp-fitting-braided-hose) is the 45° elbow version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus ORFS Female Swivel crimp fitting in stock in Dubai?",
+          "a": "Yes, the ORFS Female Swivel crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-ORFSF-0404 or IH-CF43-ORFSF-2424), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sae-45-flare-female-swivel-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE 45° Flare Female Swivel crimp fitting for braided hose used for?",
+          "a": "The Indus SAE 45° Flare Female Swivel crimp fitting is a one-piece crimp hose fitting with an SAE 45° flare female swivel with a UN/UNF straight thread and a 45° seat, metal-to-metal, built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on older and lighter-duty hydraulic and fluid lines, and automotive and refrigeration-style connections."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-SAEF-0808 and its Parker number 10843-8-8?",
+          "a": "IH-CF43-SAEF-0808 is one row of the table: 1/2\" hose (-08) with a 3/4\"-16 end. Its Parker equivalent 10843-8-8 reads series 10843, then an end-size code (8), then the hose dash size (8), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE 45° Flare Female Swivel crimp fitting replace?",
+          "a": "The SAE 45° Flare Female Swivel crimp fitting is listed as dimensionally interchangeable with the Parker 10843 series. Each part number in the table sits beside its Parker number, for example IH-CF43-SAEF-0404 for Parker 10843-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE 45° Flare Female Swivel crimp fitting come in?",
+          "a": "The listing has 7 part numbers for hose sizes -04 to -16 (1/4\" to 1\"), with ends from 7/16\"-20 up to 1-5/16\"-12. For example IH-CF43-SAEF-0404, IH-CF43-SAEF-0808 and IH-CF43-SAEF-1616. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE 45° Flare Female Swivel crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 41, B 21, H 14.2, W 14.2 for IH-CF43-SAEF-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE 45° Flare Female Swivel crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE 45° Flare Female Swivel crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE 45° Flare Female Swivel crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE 45° Flare Female Swivel crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE 45° Flare Female Swivel crimp fitting follow?",
+          "a": "The listing names SAE J512, SAE J516 for the SAE 45° Flare Female Swivel crimp fitting. SAE J512 covers 45° flare fittings and SAE J516 hose-end fittings, both listed on this product. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE 45° Flare Female Swivel crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE 45° Flare Female Swivel crimp fitting connects to a male SAE 45° flare end, such as a flare adapter or an inverted or refrigeration-style flare port; matching parts are on our [brass SAE 45° flare fittings](/c/brass-sae-45-flare-fittings) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a JIC 37° fitting, which has the same thread in several sizes but a different seat angle."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE 45° Flare Female Swivel crimp fitting crimped onto braided hose?",
+          "a": "Cut the hose square, push it fully home in the socket and crimp to the diameter set for the hose grade and ferrule. Check the SAE 45° Flare Female Swivel crimp fitting crimp with a go/no-go gauge and pressure-test the assembly; our [guide to hose crimp faults](/blog/hydraulic-hose-crimp-faults) lists the usual crimp faults."
+        },
+        {
+          "slot": "K",
+          "q": "Why is the Indus SAE 45° Flare Female Swivel crimp fitting not interchangeable with a similar-looking fitting?",
+          "a": "Because the seat and thread must match the port, and the SAE 45° Flare Female Swivel crimp fitting has an SAE 45° flare female swivel with a UN/UNF straight thread and a 45° seat, metal-to-metal. It will not seal against a JIC 37° fitting, which has the same thread in several sizes but a different seat angle. Check the thread form and seat angle on the port before ordering; our [guide to building a thread reference board](/blog/building-a-thread-reference-board) shows how to build a reference."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE 45° Flare Female Swivel crimp fitting in stock in Dubai?",
+          "a": "Yes. The SAE 45° Flare Female Swivel crimp fitting sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-CF43-SAEF-0404 or IH-CF43-SAEF-1616), hose grade and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sae-code-61-flange-head-45-elbow-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting for braided hose used for?",
+          "a": "The Indus SAE Code 61 Flange Head 45° Elbow crimp fitting is a one-piece crimp hose fitting with an SAE four-bolt flange head, Code 61 (standard series), built as a 45° elbow body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on large-bore, high-flow connections on pumps, motors and valve blocks."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-C61-45-1620 and its Parker number 11743-20-16?",
+          "a": "IH-CF43-C61-45-1620 is one row of the table: 1\" hose (-16) with a 1-1/4\" flange end. Its Parker equivalent 11743-20-16 reads series 11743, then an end-size code (20), then the hose dash size (16), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting replace?",
+          "a": "The SAE Code 61 Flange Head 45° Elbow crimp fitting is listed as dimensionally interchangeable with the Parker 11743 series. Each part number in the table sits beside its Parker number, for example IH-CF43-C61-45-0808 for Parker 11743-8-8. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting come in?",
+          "a": "The listing has 11 part numbers for hose sizes -08 to -32 (1/2\" to 2\"), with ends from 1/2\" flange up to 2\" flange. For example IH-CF43-C61-45-0808, IH-CF43-C61-45-1620 and IH-CF43-C61-45-3232. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE Code 61 Flange Head 45° Elbow crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 80, B 48, F 30.1, W 19 for IH-CF43-C61-45-0808, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE Code 61 Flange Head 45° Elbow crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE Code 61 Flange Head 45° Elbow crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting follow?",
+          "a": "The listing names SAE J518 Code 61, ISO 6162-1 for the SAE Code 61 Flange Head 45° Elbow crimp fitting. SAE J518 Code 61 and ISO 6162-1 are the standards listed on this product for the standard-pressure flange series. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE Code 61 Flange Head 45° Elbow crimp fitting connects to an SAE Code 61 flange port with two flange clamp halves, four bolts and an O-ring, as used on pumps, motors and valves; matching parts are on our [SAE flange adapters](/c/sae-flange-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a Code 62 flange of the same nominal size, which has different bolt spacing and a higher pressure rating."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting crimped onto braided hose?",
+          "a": "Cut the hose square, push it fully home in the socket and crimp to the diameter set for the hose grade and ferrule. Check the SAE Code 61 Flange Head 45° Elbow crimp fitting crimp with a go/no-go gauge and pressure-test the assembly; our [guide to hose crimp faults](/blog/hydraulic-hose-crimp-faults) lists the usual crimp faults."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting differ from the straight version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the SAE Code 61 Flange Head 45° Elbow crimp fitting is a 45° elbow, and [SAE Code 61 Flange Head Crimp Fitting for Braided Hose](/p/sae-code-61-flange-head-crimp-fitting-braided-hose) is the straight version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE Code 61 Flange Head 45° Elbow crimp fitting in stock in Dubai?",
+          "a": "Yes, the SAE Code 61 Flange Head 45° Elbow crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-C61-45-0808 or IH-CF43-C61-45-3232), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sae-code-61-flange-head-90-elbow-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting for braided hose used for?",
+          "a": "The Indus SAE Code 61 Flange Head 90° Elbow crimp fitting is a one-piece crimp hose fitting with an SAE four-bolt flange head, Code 61 (standard series), built as a 90° elbow body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on large-bore, high-flow connections on pumps, motors and valve blocks."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-C61-90-1620 and its Parker number 11943-20-16?",
+          "a": "IH-CF43-C61-90-1620 is one row of the table: 1\" hose (-16) with a 1-1/4\" flange end. Its Parker equivalent 11943-20-16 reads series 11943, then an end-size code (20), then the hose dash size (16), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting replace?",
+          "a": "The SAE Code 61 Flange Head 90° Elbow crimp fitting is listed as dimensionally interchangeable with the Parker 11943 series. Each part number in the table sits beside its Parker number, for example IH-CF43-C61-90-0808 for Parker 11943-8-8. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting come in?",
+          "a": "The listing has 13 part numbers for hose sizes -08 to -32 (1/2\" to 2\"), with ends from 1/2\" flange up to 2\" flange. For example IH-CF43-C61-90-0808, IH-CF43-C61-90-1620 and IH-CF43-C61-90-3232. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE Code 61 Flange Head 90° Elbow crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 70, B 38, F 30.1, W 34 for IH-CF43-C61-90-0808, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE Code 61 Flange Head 90° Elbow crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE Code 61 Flange Head 90° Elbow crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting follow?",
+          "a": "The listing names SAE J518 Code 61, ISO 6162-1 for the SAE Code 61 Flange Head 90° Elbow crimp fitting. SAE J518 Code 61 and ISO 6162-1 are the standards listed on this product for the standard-pressure flange series. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE Code 61 Flange Head 90° Elbow crimp fitting connects to an SAE Code 61 flange port with two flange clamp halves, four bolts and an O-ring, as used on pumps, motors and valves; matching parts are on our [SAE flange adapters](/c/sae-flange-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a Code 62 flange of the same nominal size, which has different bolt spacing and a higher pressure rating."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting crimped onto braided hose?",
+          "a": "Cut the hose square, push it fully home in the socket and crimp to the diameter set for the hose grade and ferrule. Check the SAE Code 61 Flange Head 90° Elbow crimp fitting crimp with a go/no-go gauge and pressure-test the assembly; our [guide to hose crimp faults](/blog/hydraulic-hose-crimp-faults) lists the usual crimp faults."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting differ from the straight version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the SAE Code 61 Flange Head 90° Elbow crimp fitting is a 90° elbow, and [SAE Code 61 Flange Head Crimp Fitting for Braided Hose](/p/sae-code-61-flange-head-crimp-fitting-braided-hose) is the straight version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE Code 61 Flange Head 90° Elbow crimp fitting in stock in Dubai?",
+          "a": "Yes, the SAE Code 61 Flange Head 90° Elbow crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-C61-90-0808 or IH-CF43-C61-90-3232), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sae-code-61-flange-head-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE Code 61 Flange Head crimp fitting for braided hose used for?",
+          "a": "The Indus SAE Code 61 Flange Head crimp fitting is a one-piece crimp hose fitting with an SAE four-bolt flange head, Code 61 (standard series), built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on large-bore, high-flow connections on pumps, motors and valve blocks."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-C61-2020 and its Parker number 11543-20-20?",
+          "a": "IH-CF43-C61-2020 is one row of the table: 1-1/4\" hose (-20) with a 1-1/4\" flange end. Its Parker equivalent 11543-20-20 reads series 11543, then an end-size code (20), then the hose dash size (20), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE Code 61 Flange Head crimp fitting replace?",
+          "a": "The SAE Code 61 Flange Head crimp fitting is listed as dimensionally interchangeable with the Parker 11543 series. Each part number in the table sits beside its Parker number, for example IH-CF43-C61-0808 for Parker 11543-8-8. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE Code 61 Flange Head crimp fitting come in?",
+          "a": "The listing has 13 part numbers for hose sizes -08 to -32 (1/2\" to 2\"), with ends from 1/2\" flange up to 1-1/2\" flange. For example IH-CF43-C61-0808, IH-CF43-C61-2020 and IH-CF43-C61-3224. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE Code 61 Flange Head crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 76, B 45, F 30.1 for IH-CF43-C61-0808, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE Code 61 Flange Head crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE Code 61 Flange Head crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE Code 61 Flange Head crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE Code 61 Flange Head crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE Code 61 Flange Head crimp fitting follow?",
+          "a": "The listing names SAE J518 Code 61, ISO 6162-1 for the SAE Code 61 Flange Head crimp fitting. SAE J518 Code 61 and ISO 6162-1 are the standards listed on this product for the standard-pressure flange series. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE Code 61 Flange Head crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE Code 61 Flange Head crimp fitting connects to an SAE Code 61 flange port with two flange clamp halves, four bolts and an O-ring, as used on pumps, motors and valves; matching parts are on our [SAE flange adapters](/c/sae-flange-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a Code 62 flange of the same nominal size, which has different bolt spacing and a higher pressure rating."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE Code 61 Flange Head crimp fitting crimped onto braided hose?",
+          "a": "Match the SAE Code 61 Flange Head crimp fitting to the hose grade, crimp to the specified diameter and keep the straight orientation true to the machine port before crimping. Test the assembly before it is fitted; see our [hydraulic hose assembly guide](/blog/hydraulic-hose-assembly-guide) for the full sequence."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus SAE Code 61 Flange Head crimp fitting differ from the 90° elbow version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the SAE Code 61 Flange Head crimp fitting is a straight, and [SAE Code 61 Flange Head 90° Elbow Crimp Fitting for Braided Hose](/p/sae-code-61-flange-head-90-elbow-crimp-fitting-braided-hose) is the 90° elbow version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE Code 61 Flange Head crimp fitting in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the SAE Code 61 Flange Head crimp fitting in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-CF43-C61-0808 or IH-CF43-C61-3224), hose grade and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sae-code-62-flange-head-45-elbow-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting for braided hose used for?",
+          "a": "The Indus SAE Code 62 Flange Head 45° Elbow crimp fitting is a one-piece crimp hose fitting with an SAE four-bolt flange head, Code 62 (high-pressure series), built as a 45° elbow body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on high-pressure, large-bore connections on pumps, motors and valve blocks."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-C62-45-2020 and its Parker number 16F43-20-20?",
+          "a": "IH-CF43-C62-45-2020 is one row of the table: 1-1/4\" hose (-20) with a 1-1/4\" flange end. Its Parker equivalent 16F43-20-20 reads series 16F43, then an end-size code (20), then the hose dash size (20), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting replace?",
+          "a": "The SAE Code 62 Flange Head 45° Elbow crimp fitting is listed as dimensionally interchangeable with the Parker 16F43 series. Each part number in the table sits beside its Parker number, for example IH-CF43-C62-45-1212 for Parker 16F43-12-12. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting come in?",
+          "a": "The listing has 5 part numbers for hose sizes -12 to -32 (3/4\" to 2\"), with ends from 3/4\" flange up to 2\" flange. For example IH-CF43-C62-45-1212, IH-CF43-C62-45-2020 and IH-CF43-C62-45-3232. Each hose size has one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE Code 62 Flange Head 45° Elbow crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 119, B 79, F 41.2, W 32 for IH-CF43-C62-45-1212, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE Code 62 Flange Head 45° Elbow crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE Code 62 Flange Head 45° Elbow crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting follow?",
+          "a": "The listing names SAE J518 Code 62, ISO 6162-2 for the SAE Code 62 Flange Head 45° Elbow crimp fitting. SAE J518 Code 62 and ISO 6162-2 are the standards listed on this product for the high-pressure flange series. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE Code 62 Flange Head 45° Elbow crimp fitting connects to an SAE Code 62 flange port with two flange clamp halves, four bolts and an O-ring, as used on high-pressure pumps and valves; matching parts are on our [SAE flange adapters](/c/sae-flange-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a Code 61 flange of the same nominal size, which has different bolt spacing and a lower pressure rating."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting crimped onto braided hose?",
+          "a": "Match the SAE Code 62 Flange Head 45° Elbow crimp fitting to the hose grade, crimp to the specified diameter and keep the 45° elbow orientation true to the machine port before crimping. Test the assembly before it is fitted; see our [hydraulic hose assembly guide](/blog/hydraulic-hose-assembly-guide) for the full sequence."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting differ from the 90° elbow version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the SAE Code 62 Flange Head 45° Elbow crimp fitting is a 45° elbow, and [SAE Code 62 Flange Head 90° Elbow Crimp Fitting for Braided Hose](/p/sae-code-62-flange-head-90-elbow-crimp-fitting-braided-hose) is the 90° elbow version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE Code 62 Flange Head 45° Elbow crimp fitting in stock in Dubai?",
+          "a": "Yes. The SAE Code 62 Flange Head 45° Elbow crimp fitting sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-CF43-C62-45-1212 or IH-CF43-C62-45-3232), hose grade and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sae-code-62-flange-head-90-elbow-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting for braided hose used for?",
+          "a": "The Indus SAE Code 62 Flange Head 90° Elbow crimp fitting is a one-piece crimp hose fitting with an SAE four-bolt flange head, Code 62 (high-pressure series), built as a 90° elbow body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on high-pressure, large-bore connections on pumps, motors and valve blocks."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-C62-90-1620 and its Parker number 16N43-20-16?",
+          "a": "IH-CF43-C62-90-1620 is one row of the table: 1\" hose (-16) with a 1-1/4\" flange end. Its Parker equivalent 16N43-20-16 reads series 16N43, then an end-size code (20), then the hose dash size (16), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting replace?",
+          "a": "The SAE Code 62 Flange Head 90° Elbow crimp fitting is listed as dimensionally interchangeable with the Parker 16N43 series. Each part number in the table sits beside its Parker number, for example IH-CF43-C62-90-1212 for Parker 16N43-12-12. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting come in?",
+          "a": "The listing has 7 part numbers for hose sizes -12 to -32 (3/4\" to 2\"), with ends from 3/4\" flange up to 2\" flange. For example IH-CF43-C62-90-1212, IH-CF43-C62-90-1620 and IH-CF43-C62-90-3232. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE Code 62 Flange Head 90° Elbow crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 101, B 79, F 41.2, W 58 for IH-CF43-C62-90-1212, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE Code 62 Flange Head 90° Elbow crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE Code 62 Flange Head 90° Elbow crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting follow?",
+          "a": "The listing names SAE J518 Code 62, ISO 6162-2 for the SAE Code 62 Flange Head 90° Elbow crimp fitting. SAE J518 Code 62 and ISO 6162-2 are the standards listed on this product for the high-pressure flange series. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE Code 62 Flange Head 90° Elbow crimp fitting connects to an SAE Code 62 flange port with two flange clamp halves, four bolts and an O-ring, as used on high-pressure pumps and valves; matching parts are on our [SAE flange adapters](/c/sae-flange-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a Code 61 flange of the same nominal size, which has different bolt spacing and a lower pressure rating."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting crimped onto braided hose?",
+          "a": "Match the SAE Code 62 Flange Head 90° Elbow crimp fitting to the hose grade, crimp to the specified diameter and keep the 90° elbow orientation true to the machine port before crimping. Test the assembly before it is fitted; see our [hydraulic hose assembly guide](/blog/hydraulic-hose-assembly-guide) for the full sequence."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting differ from the straight version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the SAE Code 62 Flange Head 90° Elbow crimp fitting is a 90° elbow, and [SAE Code 62 Flange Head Crimp Fitting for Braided Hose](/p/sae-code-62-flange-head-crimp-fitting-braided-hose) is the straight version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE Code 62 Flange Head 90° Elbow crimp fitting in stock in Dubai?",
+          "a": "Yes, the SAE Code 62 Flange Head 90° Elbow crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-C62-90-1212 or IH-CF43-C62-90-3232), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sae-code-62-flange-head-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE Code 62 Flange Head crimp fitting for braided hose used for?",
+          "a": "The Indus SAE Code 62 Flange Head crimp fitting is a one-piece crimp hose fitting with an SAE four-bolt flange head, Code 62 (high-pressure series), built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on high-pressure, large-bore connections on pumps, motors and valve blocks."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-C62-2020 and its Parker number 16A43-20-20?",
+          "a": "IH-CF43-C62-2020 is one row of the table: 1-1/4\" hose (-20) with a 1-1/4\" flange end. Its Parker equivalent 16A43-20-20 reads series 16A43, then an end-size code (20), then the hose dash size (20), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE Code 62 Flange Head crimp fitting replace?",
+          "a": "The SAE Code 62 Flange Head crimp fitting is listed as dimensionally interchangeable with the Parker 16A43 series. Each part number in the table sits beside its Parker number, for example IH-CF43-C62-1212 for Parker 16A43-12-12. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE Code 62 Flange Head crimp fitting come in?",
+          "a": "The listing has 9 part numbers for hose sizes -12 to -32 (3/4\" to 2\"), with ends from 3/4\" flange up to 2\" flange. For example IH-CF43-C62-1212, IH-CF43-C62-2020 and IH-CF43-C62-3232. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE Code 62 Flange Head crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 88, B 49, F 41.2 for IH-CF43-C62-1212, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE Code 62 Flange Head crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE Code 62 Flange Head crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE Code 62 Flange Head crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE Code 62 Flange Head crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE Code 62 Flange Head crimp fitting follow?",
+          "a": "The listing names SAE J518 Code 62, ISO 6162-2 for the SAE Code 62 Flange Head crimp fitting. SAE J518 Code 62 and ISO 6162-2 are the standards listed on this product for the high-pressure flange series. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE Code 62 Flange Head crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE Code 62 Flange Head crimp fitting connects to an SAE Code 62 flange port with two flange clamp halves, four bolts and an O-ring, as used on high-pressure pumps and valves; matching parts are on our [SAE flange adapters](/c/sae-flange-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with a Code 61 flange of the same nominal size, which has different bolt spacing and a lower pressure rating."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE Code 62 Flange Head crimp fitting crimped onto braided hose?",
+          "a": "Match the SAE Code 62 Flange Head crimp fitting to the hose grade, crimp to the specified diameter and keep the straight orientation true to the machine port before crimping. Test the assembly before it is fitted; see our [hydraulic hose assembly guide](/blog/hydraulic-hose-assembly-guide) for the full sequence."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Indus SAE Code 62 Flange Head crimp fitting differ from the 90° elbow version of the same end?",
+          "a": "Same end connection and hose range, different body shape: the SAE Code 62 Flange Head crimp fitting is a straight, and [SAE Code 62 Flange Head 90° Elbow Crimp Fitting for Braided Hose](/p/sae-code-62-flange-head-90-elbow-crimp-fitting-braided-hose) is the 90° elbow version. Choose an elbow where the hose must leave the port at an angle in a tight space, and a straight body where there is room for a straight run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE Code 62 Flange Head crimp fitting in stock in Dubai?",
+          "a": "Yes, the SAE Code 62 Flange Head crimp fitting is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-CF43-C62-1212 or IH-CF43-C62-3232), hose grade and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sae-o-ring-boss-male-crimp-fitting-braided-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE O-Ring Boss Male crimp fitting for braided hose used for?",
+          "a": "The Indus SAE O-Ring Boss Male crimp fitting is a one-piece crimp hose fitting with a male SAE O-ring boss (ORB) end with a UN/UNF straight thread and an O-ring seal, built as a straight body. It crimps onto EN 853 1SN and 2SN and SAE 100R1AT, 100R2AT, 100R16 and 100R17 braided hose and is used on direct connection to ORB ports on pumps, valves and manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-CF43-ORBM-0806 and its Parker number 10543-6-8?",
+          "a": "IH-CF43-ORBM-0806 is one row of the table: 1/2\" hose (-08) with a 9/16\"-18 end. Its Parker equivalent 10543-6-8 reads series 10543, then an end-size code (6), then the hose dash size (8), the last number matching the hose dash on every row of this listing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker fitting does the Indus SAE O-Ring Boss Male crimp fitting replace?",
+          "a": "The SAE O-Ring Boss Male crimp fitting is listed as dimensionally interchangeable with the Parker 10543 series. Each part number in the table sits beside its Parker number, for example IH-CF43-ORBM-0404 for Parker 10543-4-4. Our [guide to cross-referencing a fitting part number](/blog/cross-referencing-a-fitting-part-number) explains how to cross a number when the brand is gone."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and end sizes does the Indus SAE O-Ring Boss Male crimp fitting come in?",
+          "a": "The listing has 15 part numbers for hose sizes -04 to -16 (1/4\" to 1\"), with ends from 7/16\"-20 up to 1-5/16\"-12. For example IH-CF43-ORBM-0404, IH-CF43-ORBM-0806 and IH-CF43-ORBM-1616. Several hose sizes come with more than one end size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE O-Ring Boss Male crimp fitting for a replacement hose?",
+          "a": "Choose the row by two sizes: the hose dash (the hose inside diameter in sixteenths of an inch; see our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose)) and the thread or flange size on the mating port. The table also gives drawing dimensions for each row, such as A 43, B 22, H 14.2 for IH-CF43-ORBM-0404, to check the fitted length."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does an assembly with the Indus SAE O-Ring Boss Male crimp fitting carry?",
+          "a": "The pressure rating of an assembly is set by the hose grade and bore, not by the SAE O-Ring Boss Male crimp fitting. The listing gives no separate fitting rating, so read the hose figure for your bore on the [hydraulic hoses shelf](/c/hydraulic-hoses) and tell us the hose grade, bore and working pressure; we confirm the fitting in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE O-Ring Boss Male crimp fitting made of, and is stainless available?",
+          "a": "The standard material is carbon steel, zinc-plated and Cr3+ passivated and RoHS-compliant. 316 stainless steel is available on request for marine, offshore and washdown service; add -SS to the part number when you enquire about the SAE O-Ring Boss Male crimp fitting."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Indus SAE O-Ring Boss Male crimp fitting follow?",
+          "a": "The listing names SAE J514, SAE J1926-1 for the SAE O-Ring Boss Male crimp fitting. SAE J514 and SAE J1926-1 are the standards listed on this product for the ORB end. The assembly standards come from the hose, EN 853 or SAE 100R; say which documents you need and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Indus SAE O-Ring Boss Male crimp fitting connect to, and which ferrule does it need?",
+          "a": "The SAE O-Ring Boss Male crimp fitting connects to a female ORB port, such as a pump, valve or manifold port with a machined O-ring seat; matching parts are on our [ORB adapters](/c/orb-adapters) shelf. It crimps with the ferrule for the hose grade, 1SN, 2SN, R1AT, R2AT, R16 or R17, as the ferrule changes between hose constructions; do not mix it up with an NPT pipe thread, which looks similar in the small sizes but seals on a taper, not an O-ring."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Indus SAE O-Ring Boss Male crimp fitting crimped onto braided hose?",
+          "a": "Fit the correct ferrule, crimp to the specified diameter and mark the straight position against the hose layline first, so the line does not twist when tightened. Our [guide to hose installed with a twist](/blog/hydraulic-hose-installed-with-a-twist) shows why twist shortens the life of a SAE O-Ring Boss Male crimp fitting assembly."
+        },
+        {
+          "slot": "K",
+          "q": "Why is the Indus SAE O-Ring Boss Male crimp fitting not interchangeable with a similar-looking fitting?",
+          "a": "Because the seat and thread must match the port, and the SAE O-Ring Boss Male crimp fitting has a male SAE O-ring boss (ORB) end with a UN/UNF straight thread and an O-ring seal. It will not seal against an NPT pipe thread, which looks similar in the small sizes but seals on a taper, not an O-ring. Check the thread form and seat angle on the port before ordering; our [guide to building a thread reference board](/blog/building-a-thread-reference-board) shows how to build a reference."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Indus SAE O-Ring Boss Male crimp fitting in stock in Dubai?",
+          "a": "Yes. The SAE O-Ring Boss Male crimp fitting sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-CF43-ORBM-0404 or IH-CF43-ORBM-1616), hose grade and quantities via [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

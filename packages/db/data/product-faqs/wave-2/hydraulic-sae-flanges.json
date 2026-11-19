@@ -1,0 +1,986 @@
+{
+  "family": "hydraulic-sae-flanges",
+  "extraFacts": [
+    {
+      "fact": "The pressure rating of an SAE J518 flange decreases as the flange size increases, and Code 61 and Code 62 flanges have different bolt patterns and groove dimensions at the same nominal size.",
+      "source": "SAE J518 hydraulic flange connections (Code 61 and Code 62 tables)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-hydraulic-4-bolt-flanges-nptf-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Hydraulic 4-Bolt Flanges, NPTF Port used for?",
+          "a": "The Dixon Hydraulic 4-Bolt Flanges, NPTF Port are SAE four-bolt hydraulic flanges in carbon steel with a NPTF female port, used to connect a hose, tube or port to a flanged line. The listing has 28 part numbers in Code 61 and Code 62, as O-ring flanges and flat-face flanges. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Dixon flange part numbers such as C6143K0808NPT and C6244K0808NPT?",
+          "a": "In the rows the first three characters give the flange code: C61 is Code 61 and C62 is Code 62. The last three letters, NPT, give the port type, and the digits before them show the size as a pair of dash sizes, such as 0808 for a 1/2\" size. The characters between them mark the flange style."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the Dixon Hydraulic 4-Bolt Flanges, NPTF Port come in?",
+          "a": "The part numbers in this listing run through dash sizes 08 to 48, starting at the 1/2\" size, with Code 61 flanges listed in 16 part numbers and Code 62 in 12. The size is in the part number as a dash size, where 08 is the 1/2\" size. Quote the code, size and port thread."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between Code 61 and Code 62 in the Dixon Hydraulic 4-Bolt Flanges, NPTF Port?",
+          "a": "Code 61 and Code 62 are the SAE J518 flange series: the shelf lists Code 61 at 210 bar and Code 62 at 415 bar. In this listing 16 part numbers are Code 61 (such as C6143K0808NPT) and 12 are Code 62 (such as C6244K0808NPT). Flanges of different codes do not mix, so match the code of your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Dixon Hydraulic 4-Bolt Flanges, NPTF Port rated for?",
+          "a": "The Dixon rows do not publish a pressure rating, and the shelf states Code 61 at 210 bar and Code 62 at 415 bar for the SAE J518 series. The rating of a flange decreases as its size increases, so confirm the figure for your size with us before ordering, and note that the joint is only as strong as the bolts, O-ring and flange together."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Hydraulic 4-Bolt Flanges, NPTF Port made of?",
+          "a": "The listing gives the material as carbon steel for all 28 part numbers, with no plating or finish stated. For wet, marine or chemical service ask us about the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings) instead, since carbon steel will corrode without protection."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Hydraulic 4-Bolt Flanges, NPTF Port follow?",
+          "a": "They are SAE four-bolt hydraulic flanges in the Code 61 and Code 62 series, covered by SAE J518, which is the standard named on the shelf. The listing states no other standard or certificate for the Dixon flanges, so name any certificate you need on the enquiry. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Dixon Hydraulic 4-Bolt Flanges, NPTF Port?",
+          "a": "A flange joint needs the matching O-ring, a four-bolt set and the mating flange or clamp half. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers), or buy a [Dixon split flange kit](/p/dixon-hydraulic-split-flange-kits)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an O-ring flange such as C6143K2424NPT correctly?",
+          "a": "Fit a new O-ring in the groove, clean both faces, and draw the four bolts up evenly in a cross pattern so the faces close parallel. For the NPTF female port, make up the thread or weld as the port requires before assembling the flange. The listing includes flat-face flanges such as C62450808NPT, which are not O-ring faces."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon Hydraulic 4-Bolt Flanges, NPTF Port or Dixon Hydraulic 4-Bolt Flanges, SAE Port: which should I choose?",
+          "a": "Choose by the port on your pump, valve or pipe: the Dixon Hydraulic 4-Bolt Flanges, NPTF Port have a NPTF female port, while the Dixon Hydraulic 4-Bolt Flanges, SAE Port have a SAE straight-thread port. See the [Dixon Hydraulic 4-Bolt Flanges, SAE Port page](/p/dixon-hydraulic-4-bolt-flanges-sae-port)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Hydraulic 4-Bolt Flanges, NPTF Port made?",
+          "a": "The listing gives the country of origin of the Dixon Hydraulic 4-Bolt Flanges, NPTF Port as China and no HS code. We ship from Dubai, UAE to the GCC, Africa and Asia; see [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hydraulic 4-Bolt Flanges, NPTF Port in Dubai?",
+          "a": "Yes. We keep the Dixon Hydraulic 4-Bolt Flanges, NPTF Port in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hydraulic-4-bolt-flanges-pipe-socket-weld",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld used for?",
+          "a": "The Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld are SAE four-bolt hydraulic flanges in carbon steel with a pipe socket-weld port, used to connect a hose, tube or port to a flanged line. The listing has 31 part numbers in Code 61 and Code 62, as O-ring flanges and flat-face flanges. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Dixon flange part numbers such as C614K1212PSW and C6259K0808PSW?",
+          "a": "In the rows the first three characters give the flange code: C61 is Code 61 and C62 is Code 62. The last three letters, PSW, give the port type, and the digits before them show the size as a pair of dash sizes, such as 0808 for a 1/2\" size. The characters between them mark the flange style."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld come in?",
+          "a": "The part numbers in this listing run through dash sizes 08 to 48, starting at the 1/2\" size, with Code 61 flanges listed in 15 part numbers and Code 62 in 16. The size is in the part number as a dash size, where 08 is the 1/2\" size. Quote the code, size and port thread."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between Code 61 and Code 62 in the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld?",
+          "a": "Code 61 and Code 62 are the SAE J518 flange series: the shelf lists Code 61 at 210 bar and Code 62 at 415 bar. In this listing 15 part numbers are Code 61 (such as C614K1212PSW) and 16 are Code 62 (such as C6259K0808PSW). Flanges of different codes do not mix, so match the code of your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld rated for?",
+          "a": "The Dixon rows do not publish a pressure rating, and the shelf states Code 61 at 210 bar and Code 62 at 415 bar for the SAE J518 series. The rating of a flange decreases as its size increases, so confirm the figure for your size with us before ordering, and note that the joint is only as strong as the bolts, O-ring and flange together."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld made of?",
+          "a": "The listing gives the material as carbon steel for all 31 part numbers, with no plating or finish stated. For wet, marine or chemical service ask us about the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings) instead, since carbon steel will corrode without protection."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld follow?",
+          "a": "They are SAE four-bolt hydraulic flanges in the Code 61 and Code 62 series, covered by SAE J518, which is the standard named on the shelf. The listing states no other standard or certificate for the Dixon flanges, so name any certificate you need on the enquiry. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld?",
+          "a": "A flange joint needs the matching O-ring, a four-bolt set and the mating flange or clamp half. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers), or buy a [Dixon split flange kit](/p/dixon-hydraulic-split-flange-kits)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an O-ring flange such as C614K1616PSW correctly?",
+          "a": "Fit a new O-ring in the groove, clean both faces, and draw the four bolts up evenly in a cross pattern so the faces close parallel. For the pipe socket-weld port, make up the thread or weld as the port requires before assembling the flange. The listing includes flat-face flanges such as C61610808PSW, which are not O-ring faces."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld or Dixon Hydraulic 4-Bolt Flanges, NPTF Port: which should I choose?",
+          "a": "Choose by the port on your pump, valve or pipe: the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld have a pipe socket-weld port, while the Dixon Hydraulic 4-Bolt Flanges, NPTF Port have a NPTF female port. See the [Dixon Hydraulic 4-Bolt Flanges, NPTF Port page](/p/dixon-hydraulic-4-bolt-flanges-nptf-port)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld made?",
+          "a": "The listing gives the country of origin of the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld as China and no HS code. We ship from Dubai, UAE to the GCC, Africa and Asia; see [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld in Dubai?",
+          "a": "Yes, we hold the Dixon Hydraulic 4-Bolt Flanges, Pipe Socket Weld in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hydraulic-4-bolt-flanges-sae-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Hydraulic 4-Bolt Flanges, SAE Port used for?",
+          "a": "The Dixon Hydraulic 4-Bolt Flanges, SAE Port are SAE four-bolt hydraulic flanges in carbon steel with a SAE straight-thread port, used to connect a hose, tube or port to a flanged line. The listing has 24 part numbers in Code 61 and Code 62, as O-ring flanges and flat-face flanges. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Dixon flange part numbers such as C6146K0808SAE and C6248K0808SAE?",
+          "a": "In the rows the first three characters give the flange code: C61 is Code 61 and C62 is Code 62. The last three letters, SAE, give the port type, and the digits before them show the size as a pair of dash sizes, such as 0808 for a 1/2\" size. The characters between them mark the flange style."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the Dixon Hydraulic 4-Bolt Flanges, SAE Port come in?",
+          "a": "The part numbers in this listing run through dash sizes 08 to 32, starting at the 1/2\" size, with Code 61 flanges listed in 12 part numbers and Code 62 in 12. The size is in the part number as a dash size, where 08 is the 1/2\" size. Quote the code, size and port thread."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between Code 61 and Code 62 in the Dixon Hydraulic 4-Bolt Flanges, SAE Port?",
+          "a": "Code 61 and Code 62 are the SAE J518 flange series: the shelf lists Code 61 at 210 bar and Code 62 at 415 bar. In this listing 12 part numbers are Code 61 (such as C6146K0808SAE) and 12 are Code 62 (such as C6248K0808SAE). Flanges of different codes do not mix, so match the code of your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Dixon Hydraulic 4-Bolt Flanges, SAE Port rated for?",
+          "a": "The Dixon rows do not publish a pressure rating, and the shelf states Code 61 at 210 bar and Code 62 at 415 bar for the SAE J518 series. The rating of a flange decreases as its size increases, so confirm the figure for your size with us before ordering, and note that the joint is only as strong as the bolts, O-ring and flange together."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Hydraulic 4-Bolt Flanges, SAE Port made of?",
+          "a": "The listing gives the material as carbon steel for all 24 part numbers, with no plating or finish stated. For wet, marine or chemical service ask us about the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings) instead, since carbon steel will corrode without protection."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do the Dixon Hydraulic 4-Bolt Flanges, SAE Port follow?",
+          "a": "They are SAE four-bolt hydraulic flanges in the Code 61 and Code 62 series, covered by SAE J518, which is the standard named on the shelf. The listing states no other standard or certificate for the Dixon flanges, so name any certificate you need on the enquiry. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Dixon Hydraulic 4-Bolt Flanges, SAE Port?",
+          "a": "A flange joint needs the matching O-ring, a four-bolt set and the mating flange or clamp half. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers), or buy a [Dixon split flange kit](/p/dixon-hydraulic-split-flange-kits)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an O-ring flange such as C6146K1212SAE correctly?",
+          "a": "Fit a new O-ring in the groove, clean both faces, and draw the four bolts up evenly in a cross pattern so the faces close parallel. For the SAE straight-thread port, make up the thread or weld as the port requires before assembling the flange. The listing includes flat-face flanges such as C62490808SAE, which are not O-ring faces."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon Hydraulic 4-Bolt Flanges, SAE Port or Dixon Hydraulic 4-Bolt Flanges, NPTF Port: which should I choose?",
+          "a": "Choose by the port on your pump, valve or pipe: the Dixon Hydraulic 4-Bolt Flanges, SAE Port have a SAE straight-thread port, while the Dixon Hydraulic 4-Bolt Flanges, NPTF Port have a NPTF female port. See the [Dixon Hydraulic 4-Bolt Flanges, NPTF Port page](/p/dixon-hydraulic-4-bolt-flanges-nptf-port)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Hydraulic 4-Bolt Flanges, SAE Port made?",
+          "a": "The listing gives the country of origin of the Dixon Hydraulic 4-Bolt Flanges, SAE Port as China and no HS code. We ship from Dubai, UAE to the GCC, Africa and Asia; see [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hydraulic 4-Bolt Flanges, SAE Port in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Dixon Hydraulic 4-Bolt Flanges, SAE Port, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hydraulic-split-flange-kits",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Dixon hydraulic split flange kit used for?",
+          "a": "The Dixon split flange kit is a carbon-steel kit for clamping an SAE flange head to a four-bolt flange port, in Code 61 and Code 62. The listing has 14 part numbers from C6124-SFKIT to C6212-SFKIT; see the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Dixon split flange kit numbers such as C6124-SFKIT and C6216-SFKIT?",
+          "a": "In C6124-SFKIT, C61 is the flange code (C62 is Code 62), the two digits that follow give the size as a dash size, and SFKIT marks the split flange kit. The rows prove it: C6124 is 1-1/2 in, C6132 is 2 in, C6108 is 1/2 in and C6216 is 1 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do Dixon split flange kits come in?",
+          "a": "Code 61 kits run from 1/2 in to 3 in, in 8 part numbers, and Code 62 kits from 1/2 in to 2 in, in 6 part numbers. The size is the two digits after the code, for example 24 for 1-1/2 in and 32 for 2 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which Dixon kit is the 2 in split flange kit in Code 62?",
+          "a": "The 2 in Code 62 kit is C6232-SFKIT; the Code 61 2 in kit is C6132-SFKIT. Match the code to your port, because Code 61 and Code 62 flanges do not interchange even at the same size."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Dixon split flange kits rated for?",
+          "a": "The Dixon rows publish no pressure rating, and the shelf states Code 61 at 210 bar and Code 62 at 415 bar for the SAE J518 series. The rating of a flange decreases as its size increases, so confirm the figure for your size with us before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon split flange kits made of?",
+          "a": "The listing gives the material as Code 61 carbon steel and Code 62 carbon steel. No plating or O-ring compound is stated, so ask us if you need the seal compound for a particular fluid, or look at [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings) for corrosive service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do Dixon split flange kits follow?",
+          "a": "They are SAE four-bolt split flange kits in Code 61 and Code 62, covered by SAE J518 as named on the shelf. The listing states no other standard or certificate. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges)."
+        },
+        {
+          "slot": "H",
+          "q": "What do Dixon split flange kits connect to?",
+          "a": "They clamp a flange head to an SAE Code 61 or Code 62 port. Pair them with the [Dixon four-bolt flange heads](/p/dixon-hydraulic-4-bolt-flanges-sae-port) and an [O-ring for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges); the listing does not say what each kit contains, so ask us to confirm."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Dixon split flange kit?",
+          "a": "Fit a new O-ring in the groove, bring the split halves together around the flange head and draw the four bolts up evenly in a cross pattern. Fit a fresh O-ring each time the joint is broken; see [reusing fittings in a rebuild](/blog/reusing-fittings-in-a-rebuild)."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon or Aeroquip split flange kits: which should I choose?",
+          "a": "The Dixon kits cover both Code 61 and Code 62 in carbon steel across 14 part numbers, while the [Aeroquip split flange kits](/p/aeroquip-split-flange-kits) are Code 61 only, in zinc-plated steel. Choose by the code of your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Dixon split flange kits made?",
+          "a": "The listing gives the country of origin of the Dixon split flange kits as China and no HS code. We ship from Dubai, UAE to the GCC, Africa and Asia; see [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Dixon split flange kits in Dubai?",
+          "a": "Yes, we stock the Dixon split flange kits in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-split-flange-kits",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an Aeroquip split flange kit used for?",
+          "a": "The Aeroquip split flange kit is a zinc-plated steel kit for making an SAE Code 61 four-bolt flange connection with a split flange. Each kit includes two bolts, both flange halves, an O-ring and washers. The range has 5 part numbers from FF593-12 to FF593-32; see the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Aeroquip kit numbers FF593-12 to FF593-32?",
+          "a": "In FF593-20 the base FF593 is the kit series and the suffix is the dash size of the flange: the rows describe FF593-16 as 1 inch, FF593-20 as 1 1/4 inch and FF593-24 as 1 1/2 inch. The -12 and -32 numbers follow the same pattern."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do Aeroquip split flange kits come in?",
+          "a": "The listing has five sizes: FF593-12, FF593-16 (1 inch), FF593-20 (1 1/4 inch), FF593-24 (1 1/2 inch) and FF593-32. The descriptions of FF593-12 and FF593-32 give no size, so confirm those two with us before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What is included in an Aeroquip FF593 split flange kit?",
+          "a": "The listing says the kit includes two bolts, both flange halves, an O-ring and washers. The O-ring is Buna N and the flange is zinc-plated steel, to SAE Code 61. Ask us to confirm that the kit matches your port before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Aeroquip FF593 split flange kits rated for?",
+          "a": "The descriptions of the kits give 3000 psi, for example FF593-20, FF593-16 and FF593-24. This is the Code 61 rating stated on the listing; the rating of a flange joint is only as high as the lowest-rated part of the joint, so check the mating flange, bolts and hose before running at that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Aeroquip split flange kits made of, and what is the temperature limit?",
+          "a": "The flange is zinc-plated steel and the O-ring is Buna N (nitrile). The listing gives a temperature of 250°F. Buna N suits mineral hydraulic oil; for other fluids tell us the fluid and we will check the O-ring compound."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do Aeroquip FF593 split flange kits follow?",
+          "a": "The listing states the flange SAE code as 61, so the kits are for SAE Code 61 flange ports under SAE J518, the standard named on the shelf. No other standard or certificate is stated, so name any document you need with the enquiry. See [SAE J518 Code 61 and 62 flanges](/blog/sae-j518-code-61-code-62-flanges)."
+        },
+        {
+          "slot": "H",
+          "q": "What do Aeroquip split flange kits connect to?",
+          "a": "The kit clamps a flange head onto an SAE Code 61 flange port, such as a pump, valve or manifold port. For other flange styles see the [Dixon split flange kits](/p/dixon-hydraulic-split-flange-kits) or the [Dixon four-bolt SAE port flanges](/p/dixon-hydraulic-4-bolt-flanges-sae-port)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an Aeroquip split flange kit?",
+          "a": "Fit the O-ring in the flange face groove, close the two flange halves around the flange head, and draw the four bolts up evenly in a cross pattern, using the washers supplied. A new O-ring should be fitted every time the joint is broken; see [reusing fittings in a rebuild](/blog/reusing-fittings-in-a-rebuild)."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip or Dixon split flange kits: what is the difference?",
+          "a": "The Aeroquip FF593 kits are zinc-plated steel, Code 61 only, with a Buna N O-ring, in 5 part numbers. The [Dixon split flange kits](/p/dixon-hydraulic-split-flange-kits) cover Code 61 and Code 62 in carbon steel. Choose by the code of your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Aeroquip split flange kits made, and what is the HS code?",
+          "a": "The listing gives the country of origin as the United States and the HS code as 7307915010. We ship from Dubai, UAE to the GCC, Africa and Asia; see [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Aeroquip split flange kits in Dubai?",
+          "a": "Yes. We keep the Aeroquip split flange kits in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-threaded",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus BSP Threaded SAE flange used for?",
+          "a": "The BSP Threaded is an SAE J518 four-bolt flange with a BSPP G1/2 to G2 female port on the back (parallel thread, bonded-seal washer), used for threading an SAE four-bolt flange onto a BSP port. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus BSP Threaded flange come in?",
+          "a": "The BSP Threaded is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port connections of the Indus BSP Threaded flange?",
+          "a": "The BSP Threaded has a BSPP G1/2 to G2 female port on the back (parallel thread, bonded-seal washer). Pair it only with a port of the same thread or seat; SAE flange is its own family and does not interchange with BSP, JIC, NPT, metric, ORFS or DIN threads directly. See [JIC vs ORFS vs NPT vs BSP](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus BSP Threaded flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the BSP Threaded. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus BSP Threaded flange made of and how is it finished?",
+          "a": "The BSP Threaded is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus BSP Threaded flange follow?",
+          "a": "The BSP Threaded follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus BSP Threaded flange?",
+          "a": "A flange joint with the BSP Threaded needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus BSP Threaded flange?",
+          "a": "For the BSP Threaded, make up the port thread end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus BSP Threaded or NPT Threaded: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The BSP Threaded has a BSPP G1/2 to G2 female port on the back (parallel thread, bonded-seal washer); the NPT Threaded is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [NPT Threaded page](/p/npt-threaded)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus BSP Threaded flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics BSP Threaded flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus BSP Threaded rather than another SAE flange?",
+          "a": "Specify the BSP Threaded when the job is threading an SAE four-bolt flange onto a BSP port. It is the Indus flange style, with a BSPP G1/2 to G2 female port on the back (parallel thread, bonded-seal washer), so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus BSP Threaded flange in Dubai?",
+          "a": "Yes, we hold the BSP Threaded flange in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-threaded-double-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus BSP Threaded Double Flange SAE flange used for?",
+          "a": "The BSP Threaded Double Flange is an SAE J518 four-bolt flange with BSPP G1/2 to G2 female ports (parallel thread, bonded-seal washer) with an SAE flange face on each side, used for joining two SAE flange lines through BSPP ports. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus BSP Threaded Double Flange flange come in?",
+          "a": "The BSP Threaded Double Flange is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port connections of the Indus BSP Threaded Double Flange flange?",
+          "a": "The BSP Threaded Double Flange has BSPP G1/2 to G2 female ports (parallel thread, bonded-seal washer) with an SAE flange face on each side. Pair it only with a port of the same thread or seat; SAE flange is its own family and does not interchange with BSP, JIC, NPT, metric, ORFS or DIN threads directly. See [JIC vs ORFS vs NPT vs BSP](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus BSP Threaded Double Flange flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the BSP Threaded Double Flange. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus BSP Threaded Double Flange flange made of and how is it finished?",
+          "a": "The BSP Threaded Double Flange is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus BSP Threaded Double Flange flange follow?",
+          "a": "The BSP Threaded Double Flange follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus BSP Threaded Double Flange flange?",
+          "a": "A flange joint with the BSP Threaded Double Flange needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus BSP Threaded Double Flange flange?",
+          "a": "For the BSP Threaded Double Flange, make up the port thread end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus BSP Threaded Double Flange or NPT Threaded Double Flange: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The BSP Threaded Double Flange has BSPP G1/2 to G2 female ports (parallel thread, bonded-seal washer) with an SAE flange face on each side; the NPT Threaded Double Flange is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [NPT Threaded Double Flange page](/p/npt-threaded-double-flange)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus BSP Threaded Double Flange flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics BSP Threaded Double Flange flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus BSP Threaded Double Flange rather than another SAE flange?",
+          "a": "Specify the BSP Threaded Double Flange when the job is joining two SAE flange lines through BSPP ports. It is the Indus double flange style, with BSPP G1/2 to G2 female ports (parallel thread, bonded-seal washer) with an SAE flange face on each side, so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus BSP Threaded Double Flange flange in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the BSP Threaded Double Flange flange, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "npt-threaded",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus NPT Threaded SAE flange used for?",
+          "a": "The NPT Threaded is an SAE J518 four-bolt flange with an NPT 1/2\" to 2\" female port on the back (taper thread, self-sealing), used for threading an SAE four-bolt flange onto an NPT port. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus NPT Threaded flange come in?",
+          "a": "The NPT Threaded is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port connections of the Indus NPT Threaded flange?",
+          "a": "The NPT Threaded has an NPT 1/2\" to 2\" female port on the back (taper thread, self-sealing). Pair it only with a port of the same thread or seat; SAE flange is its own family and does not interchange with BSP, JIC, NPT, metric, ORFS or DIN threads directly. See [JIC vs ORFS vs NPT vs BSP](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus NPT Threaded flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the NPT Threaded. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus NPT Threaded flange made of and how is it finished?",
+          "a": "The NPT Threaded is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus NPT Threaded flange follow?",
+          "a": "The NPT Threaded follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus NPT Threaded flange?",
+          "a": "A flange joint with the NPT Threaded needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus NPT Threaded flange?",
+          "a": "For the NPT Threaded, make up the port thread end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus NPT Threaded or BSP Threaded: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The NPT Threaded has an NPT 1/2\" to 2\" female port on the back (taper thread, self-sealing); the BSP Threaded is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [BSP Threaded page](/p/bsp-threaded)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus NPT Threaded flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics NPT Threaded flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus NPT Threaded rather than another SAE flange?",
+          "a": "Specify the NPT Threaded when the job is threading an SAE four-bolt flange onto an NPT port. It is the Indus flange style, with an NPT 1/2\" to 2\" female port on the back (taper thread, self-sealing), so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus NPT Threaded flange in Dubai?",
+          "a": "Yes, we stock the NPT Threaded flange in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "npt-threaded-double-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus NPT Threaded Double Flange SAE flange used for?",
+          "a": "The NPT Threaded Double Flange is an SAE J518 four-bolt flange with NPT 1/2\" to 2\" female ports (taper thread, self-sealing) with an SAE flange face on each side, used for joining two SAE flange lines through NPT ports. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus NPT Threaded Double Flange flange come in?",
+          "a": "The NPT Threaded Double Flange is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port connections of the Indus NPT Threaded Double Flange flange?",
+          "a": "The NPT Threaded Double Flange has NPT 1/2\" to 2\" female ports (taper thread, self-sealing) with an SAE flange face on each side. Pair it only with a port of the same thread or seat; SAE flange is its own family and does not interchange with BSP, JIC, NPT, metric, ORFS or DIN threads directly. See [JIC vs ORFS vs NPT vs BSP](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus NPT Threaded Double Flange flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the NPT Threaded Double Flange. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus NPT Threaded Double Flange flange made of and how is it finished?",
+          "a": "The NPT Threaded Double Flange is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus NPT Threaded Double Flange flange follow?",
+          "a": "The NPT Threaded Double Flange follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus NPT Threaded Double Flange flange?",
+          "a": "A flange joint with the NPT Threaded Double Flange needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus NPT Threaded Double Flange flange?",
+          "a": "For the NPT Threaded Double Flange, make up the port thread end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus NPT Threaded Double Flange or BSP Threaded Double Flange: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The NPT Threaded Double Flange has NPT 1/2\" to 2\" female ports (taper thread, self-sealing) with an SAE flange face on each side; the BSP Threaded Double Flange is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [BSP Threaded Double Flange page](/p/bsp-threaded-double-flange)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus NPT Threaded Double Flange flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics NPT Threaded Double Flange flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus NPT Threaded Double Flange rather than another SAE flange?",
+          "a": "Specify the NPT Threaded Double Flange when the job is joining two SAE flange lines through NPT ports. It is the Indus double flange style, with NPT 1/2\" to 2\" female ports (taper thread, self-sealing) with an SAE flange face on each side, so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus NPT Threaded Double Flange flange in Dubai?",
+          "a": "Yes. We keep the NPT Threaded Double Flange flange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "o-rings-for-sae-hydraulic-flanges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are O-rings for SAE hydraulic flanges used for?",
+          "a": "These are spare face O-rings for SAE J518 four-bolt flange connections, Code 61 and Code 62, in sizes 1/2\" to 5\". The O-ring sits in the groove machined into the flange face and makes the seal on its own; the four bolts only clamp the faces. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which flange sizes do the O-rings for SAE hydraulic flanges fit?",
+          "a": "The listing covers sizes 1/2\" to 5\" for both Code 61 and Code 62. State the flange code and the nominal size and we match the ring to the groove. Larger or non-standard sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between Code 61 and Code 62 O-rings?",
+          "a": "Choose by the flange code of your port, which is marked on the flange or its part number; Code 61 is standard pressure and Code 62 is high pressure. The two codes have different groove dimensions at the same nominal size, so quote the code with the size."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do SAE flange O-rings have?",
+          "a": "None of its own: the listing says the O-ring does not set the pressure rating of the joint, which comes from the flange, its code and the bolts. What the O-ring decides is whether the joint stays dry, so use a new, undamaged ring of the right compound."
+        },
+        {
+          "slot": "F",
+          "q": "What compound are O-rings for SAE hydraulic flanges made of?",
+          "a": "The listing gives the material as elastomer, with the compound matched to the fluid and temperature. Nitrile suits mineral hydraulic oil at ordinary temperatures, and fluorocarbon (FKM) is the usual step up for higher temperatures and many synthetic fluids. Tell us the fluid, temperature and pressure."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard do O-rings for SAE hydraulic flanges follow?",
+          "a": "They are the matching O-ring spare for SAE J518 four-bolt flanges, Code 61 and Code 62. The listing states no certificate for the ring. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do SAE flange O-rings go with?",
+          "a": "They go into the face groove of an SAE J518 flange, such as the [Dixon four-bolt SAE port flanges](/p/dixon-hydraulic-4-bolt-flanges-sae-port) or the [Indus BSP threaded flange](/p/bsp-threaded), with the bolts from the [bolt and spring washer set](/p/set-of-bolts-and-spring-washers)."
+        },
+        {
+          "slot": "I",
+          "q": "Can I re-use an SAE flange O-ring, and how do I fit it?",
+          "a": "Fit a new O-ring every time the flange is broken: a used ring has taken a set in its groove and may not seal again. Clean the groove and face, lightly lubricate the ring with system fluid, and draw the bolts up evenly in a cross pattern so the ring is not pinched out."
+        },
+        {
+          "slot": "J",
+          "q": "Why does an SAE four-bolt flange weep and is it the O-ring?",
+          "a": "A flange that weeps is more often a flattened, nicked or wrong-compound O-ring, or one pinched out of its groove at assembly, than a fault in the flange itself. Replace the ring first, checking the face for scratches across the sealing area; see [reading a weeping joint](/blog/reading-a-weeping-joint)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy flange O-rings separately or a split flange kit?",
+          "a": "Buy the O-ring on its own to reseal a flange you already have. A kit such as the [Aeroquip split flange kit](/p/aeroquip-split-flange-kits) includes the flange halves, bolts and an O-ring, so it suits a new connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where do the O-rings for SAE hydraulic flanges come from?",
+          "a": "The listing does not state a country of origin for these Indus Hydraulics O-rings, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [storing fittings and seals on site](/blog/storing-fittings-and-seals-on-site)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock O-rings for SAE hydraulic flanges in Dubai?",
+          "a": "Yes, we hold the O-rings for SAE hydraulic flanges in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "sae-blind-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus SAE Blind Flange SAE flange used for?",
+          "a": "The SAE Blind Flange is an SAE J518 four-bolt flange with a plain SAE flange face with no port, to blank off a flange connection, used for blanking off an SAE four-bolt flange port. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus SAE Blind Flange flange come in?",
+          "a": "The SAE Blind Flange is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What connection does the Indus SAE Blind Flange have?",
+          "a": "The SAE Blind Flange has a single SAE J518 flange face (Code 61, sizes 1/2\" to 5\") and no port; it blanks off a flange connection. Match it to the code and size of the port you are closing, because Code 61 and Code 62 flanges do not interchange."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus SAE Blind Flange flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the SAE Blind Flange. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus SAE Blind Flange flange made of and how is it finished?",
+          "a": "The SAE Blind Flange is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus SAE Blind Flange flange follow?",
+          "a": "The SAE Blind Flange follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus SAE Blind Flange flange?",
+          "a": "A flange joint with the SAE Blind Flange needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus SAE Blind Flange flange?",
+          "a": "For the SAE Blind Flange, make up the port thread end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus SAE Blind Flange or BSP Threaded: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The SAE Blind Flange has a plain SAE flange face with no port, to blank off a flange connection; the BSP Threaded is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [BSP Threaded page](/p/bsp-threaded)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus SAE Blind Flange flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics SAE Blind Flange flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus SAE Blind Flange rather than another SAE flange?",
+          "a": "Specify the SAE Blind Flange when the job is blanking off an SAE four-bolt flange port. It is the Indus blind flange style, with a plain SAE flange face with no port, to blank off a flange connection, so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus SAE Blind Flange flange in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the SAE Blind Flange flange, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "set-of-bolts-and-spring-washers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the set of bolts and spring washers for SAE flanges?",
+          "a": "It is a set of bolts with spring washers that matches the SAE J518 four-bolt flange pattern, in zinc-plated carbon steel. The listing describes the bolts as SAE J429 Grade 5 or Grade 8. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the SAE flange bolt and spring washer set come in?",
+          "a": "The listing covers flange sizes 1/2\" to 5\", for the SAE J518 four-bolt pattern. The bolt length and thread differ by flange size and code, so quote the flange code and size and we will confirm the set."
+        },
+        {
+          "slot": "D",
+          "q": "Why does the bolt set depend on the flange code?",
+          "a": "Code 61 and Code 62 flanges use different bolt patterns and sizes at the same nominal size, so the set must match your flange code as well as its size. Send the flange part number or the code and size, and we will match the bolts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SAE flange bolt set have?",
+          "a": "The listing gives no pressure rating of its own: working pressure matches the host port grade and the lowest-rated component in the assembly. The bolts clamp the flange faces and hold the O-ring under compression, so use the grade your flange needs."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SAE flange bolts made of, and what temperature range do they have?",
+          "a": "The bolts and spring washers are carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish, and stainless steel is available on request. The listing gives an operating temperature of -40°C to +120°C."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the SAE flange bolts and washers follow?",
+          "a": "The listing names SAE J518 for the four-bolt flange pattern and SAE J429 for the bolts, in Grade 5 or Grade 8. It states no certificate beyond that, so name any document you need on the enquiry. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges)."
+        },
+        {
+          "slot": "H",
+          "q": "What do the SAE flange bolts and spring washers go with?",
+          "a": "They clamp an SAE four-bolt flange to its mating port, with an O-ring in the face groove: see the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [Indus BSP threaded flange](/p/bsp-threaded). There is no port or seal on the bolt set itself."
+        },
+        {
+          "slot": "I",
+          "q": "How do I tighten the bolts of an SAE four-bolt flange?",
+          "a": "Draw the four bolts up evenly in a cross pattern, a little at a time, so the faces close parallel; tightening one side first can squeeze the O-ring out of its groove. The listing gives no torque figure, so ask us for the value for your flange size."
+        },
+        {
+          "slot": "J",
+          "q": "When should I replace the bolts on an SAE hydraulic flange?",
+          "a": "Replace them when a thread is damaged, a bolt has stretched, or the joint has been over-tightened, and use the same grade as the original. See [reusing fittings in a rebuild](/blog/reusing-fittings-in-a-rebuild) before refitting old hardware."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy a bolt set or a split flange kit?",
+          "a": "Buy the set to replace lost or damaged hardware on a flange you already have. A kit such as the [Dixon split flange kits](/p/dixon-hydraulic-split-flange-kits) supplies the flange halves as well, so it suits a new connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the set of bolts and spring washers come from?",
+          "a": "The listing does not state a country of origin for this Indus Hydraulics set, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the set of bolts and spring washers in Dubai?",
+          "a": "Yes, we stock the set of bolts and spring washers in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "socket-weld-double-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus Socket Weld Double Flange SAE flange used for?",
+          "a": "The Socket Weld Double Flange is an SAE J518 four-bolt flange with socket-weld ends for tube or pipe with an SAE flange face on each side, used for welding tube or pipe between two SAE flange faces. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus Socket Weld Double Flange flange come in?",
+          "a": "The Socket Weld Double Flange is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port connections of the Indus Socket Weld Double Flange flange?",
+          "a": "The Socket Weld Double Flange has socket-weld ends for tube or pipe with an SAE flange face on each side. Pair it only with a port of the same thread or seat; SAE flange is its own family and does not interchange with BSP, JIC, NPT, metric, ORFS or DIN threads directly. See [JIC vs ORFS vs NPT vs BSP](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus Socket Weld Double Flange flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the Socket Weld Double Flange. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus Socket Weld Double Flange flange made of and how is it finished?",
+          "a": "The Socket Weld Double Flange is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus Socket Weld Double Flange flange follow?",
+          "a": "The Socket Weld Double Flange follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus Socket Weld Double Flange flange?",
+          "a": "A flange joint with the Socket Weld Double Flange needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus Socket Weld Double Flange flange?",
+          "a": "For the Socket Weld Double Flange, make up the weld end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus Socket Weld Double Flange or Weld-in Socket Weld: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The Socket Weld Double Flange has socket-weld ends for tube or pipe with an SAE flange face on each side; the Weld-in Socket Weld is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [Weld-in Socket Weld page](/p/weld-in-socket-weld)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus Socket Weld Double Flange flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics Socket Weld Double Flange flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus Socket Weld Double Flange rather than another SAE flange?",
+          "a": "Specify the Socket Weld Double Flange when the job is welding tube or pipe between two SAE flange faces. It is the Indus double flange style, with socket-weld ends for tube or pipe with an SAE flange face on each side, so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus Socket Weld Double Flange flange in Dubai?",
+          "a": "Yes. We keep the Socket Weld Double Flange flange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "weld-in-socket-weld",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus Weld-in Socket Weld SAE flange used for?",
+          "a": "The Weld-in Socket Weld is an SAE J518 four-bolt flange with a socket-weld end for tube or pipe behind the SAE flange face, used for welding tube or pipe into an SAE four-bolt flange. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus Weld-in Socket Weld flange come in?",
+          "a": "The Weld-in Socket Weld is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port connections of the Indus Weld-in Socket Weld flange?",
+          "a": "The Weld-in Socket Weld has a socket-weld end for tube or pipe behind the SAE flange face. Pair it only with a port of the same thread or seat; SAE flange is its own family and does not interchange with BSP, JIC, NPT, metric, ORFS or DIN threads directly. See [JIC vs ORFS vs NPT vs BSP](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus Weld-in Socket Weld flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the Weld-in Socket Weld. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus Weld-in Socket Weld flange made of and how is it finished?",
+          "a": "The Weld-in Socket Weld is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus Weld-in Socket Weld flange follow?",
+          "a": "The Weld-in Socket Weld follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus Weld-in Socket Weld flange?",
+          "a": "A flange joint with the Weld-in Socket Weld needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus Weld-in Socket Weld flange?",
+          "a": "For the Weld-in Socket Weld, make up the weld end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus Weld-in Socket Weld or Weld-on Butt Weld: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The Weld-in Socket Weld has a socket-weld end for tube or pipe behind the SAE flange face; the Weld-on Butt Weld is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [Weld-on Butt Weld page](/p/weld-on-butt-weld)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus Weld-in Socket Weld flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics Weld-in Socket Weld flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus Weld-in Socket Weld rather than another SAE flange?",
+          "a": "Specify the Weld-in Socket Weld when the job is welding tube or pipe into an SAE four-bolt flange. It is the Indus weld flange style, with a socket-weld end for tube or pipe behind the SAE flange face, so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus Weld-in Socket Weld flange in Dubai?",
+          "a": "Yes, we hold the Weld-in Socket Weld flange in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "weld-on-butt-weld",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Indus Weld-on Butt Weld SAE flange used for?",
+          "a": "The Weld-on Butt Weld is an SAE J518 four-bolt flange with a butt-weld end for pipe behind the SAE flange face, used for butt-welding pipe to an SAE four-bolt flange. It is part of the Indus Hydraulic SAE Flange family, in carbon steel with a zinc-plated finish. See the [SAE flanges shelf](/c/hydraulic-sae-flanges)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Indus Weld-on Butt Weld flange come in?",
+          "a": "The Weld-on Butt Weld is listed in sizes from 1/2\" to 5\", for both Code 61 and Code 62. Larger or non-standard sizes are quoted on request. Send the port size and the flange code and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port connections of the Indus Weld-on Butt Weld flange?",
+          "a": "The Weld-on Butt Weld has a butt-weld end for pipe behind the SAE flange face. Pair it only with a port of the same thread or seat; SAE flange is its own family and does not interchange with BSP, JIC, NPT, metric, ORFS or DIN threads directly. See [JIC vs ORFS vs NPT vs BSP](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Indus Weld-on Butt Weld flange rated for?",
+          "a": "The listing states Code 61 up to 210 bar (3000 psi) and Code 62 up to 415 bar (6000 psi) for the Weld-on Butt Weld. The rating of an assembly follows its lowest-rated component, so check the host port, hose and bolts, and confirm the figure for your size with us."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Indus Weld-on Butt Weld flange made of and how is it finished?",
+          "a": "The Weld-on Butt Weld is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel is available on request for marine, chemical or food-grade service; see the [stainless steel hydraulic fittings](/c/stainless-steel-hydraulic-fittings)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Indus Weld-on Butt Weld flange follow?",
+          "a": "The Weld-on Butt Weld follows SAE J518, the four-bolt flange standard, in Code 61 (standard pressure) and Code 62 (high pressure). The listing states no certificate beyond that. See [SAE J518 Code 61 and Code 62 flanges](/blog/sae-j518-code-61-code-62-flanges) for how the codes differ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to assemble the Indus Weld-on Butt Weld flange?",
+          "a": "A flange joint with the Weld-on Butt Weld needs an O-ring, four bolts with spring washers and a matching flange or port. Use the [O-rings for SAE hydraulic flanges](/p/o-rings-for-sae-hydraulic-flanges) and the [set of bolts and spring washers](/p/set-of-bolts-and-spring-washers); the family's companion note says to pair with Indus hose-end fittings and crimp ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Indus Weld-on Butt Weld flange?",
+          "a": "For the Weld-on Butt Weld, make up the weld end first, then fit a new O-ring, close the flange faces and draw the bolts up evenly in a cross pattern. Fit a fresh O-ring whenever the joint is broken. See [identifying a fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Indus Weld-on Butt Weld or Weld-in Socket Weld: which flange should I choose?",
+          "a": "Choose by the connection behind the flange. The Weld-on Butt Weld has a butt-weld end for pipe behind the SAE flange face; the Weld-in Socket Weld is the nearest alternative in the Indus family, also SAE J518 carbon steel in Code 61 and Code 62. See the [Weld-in Socket Weld page](/p/weld-in-socket-weld)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Indus Weld-on Butt Weld flange come from?",
+          "a": "The listing does not state a country of origin for the Indus Hydraulics Weld-on Butt Weld flange, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "J",
+          "q": "When should I specify the Indus Weld-on Butt Weld rather than another SAE flange?",
+          "a": "Specify the Weld-on Butt Weld when the job is butt-welding pipe to an SAE four-bolt flange. It is the Indus weld flange style, with a butt-weld end for pipe behind the SAE flange face, so it suits a connection where your other end already matches that thread or weld. Send the port size, thread and flange code and we will confirm the part number."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Indus Weld-on Butt Weld flange in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Weld-on Butt Weld flange, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    }
+  ]
+}

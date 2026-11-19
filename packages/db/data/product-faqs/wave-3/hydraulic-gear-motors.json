@@ -1,0 +1,80 @@
+{
+  "family": "hydraulic-gear-motors",
+  "extraFacts": [
+    {
+      "fact": "Cross MH Series Hydraulic Gear Motors: 27 listed part numbers; displacement 0.5 in³/rev to 5.2 in³/rev; Type gear motor; Displacement 0.5–5.2 in³/rev; Mount 2 Bolt / SAE B / 4.00\" Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 & 4 Bolt / SAE B / 4\" Pilot; Shaft Keyed 0.875\", 11 Tooth 16/32 DP 0.875\", Keyed 0.625\", 9 Tooth 16/32 DP 0.625\" and 1 more; Ports ORB - 16, ORB - 12, ORB - 24; items: 40MH05 DACSC | 40MH05 DAASC | 40MH07 DACSC | 40MH07 DAASC | 40MH10 DACSC | 40MH10 DAASC | 40MH12 DACSC | 40MH12 DAASC | 40MH15 DAASC | 40MH15 DACSC.",
+      "source": "Indus Hydraulics product listing, /p/cross-mh-series-hydraulic-gear-motors"
+    },
+    {
+      "fact": "Cross 40 and 50 Series Hydraulic Gear Pumps: 21 listed part numbers; displacement 0.5 in³/rev to 5.2 in³/rev; Type gear pump; Displacement 0.5–5.2 in³/rev; items: 40PH05-DACSC Cross 40 Series Pump | 40PH07-DACSC Cross 40 Series Pump | 40PH10-DACSC Cross 40 Series Pump | 40PH12-DACSC Cross 40 Series Pump | 40PH15-DACSC Cross 40 Series Pump | 50PH15-DBCSC Cross 50 Series Pump | 50PH15-DBASC Cross 50 Series Pump | 40PH18-DACSC Cross 40 Series Pump | 50PH19-DBCSC Cross 50 Series Pump | 50PH19-DBASC Cross 50 Series Pump.",
+      "source": "Indus Hydraulics product listing, /p/cross-40-and-50-series-hydraulic-gear-pumps"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cross-mh-series-hydraulic-gear-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Cross MH series hydraulic gear motors used for?",
+          "a": "Cross MH series hydraulic gear motors are fixed-displacement gear motors from 0.5 to 5.2 in³/rev, with SAE A and SAE B two-bolt mounts, keyed or splined shafts and ORB ports. The listing carries 27 part numbers, each with displacement, shaft and port details."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Cross MH series hydraulic gear motors available in?",
+          "a": "The listing carries 27 part numbers, such as 360010 (40MH05 DACSC) and 360077 (40MH05 DAASC), from 0.5 to 5.2 in³/rev. Mounts are SAE A 3.25 in pilot and SAE B 4 in pilot, shafts are keyed 0.625, 0.875 or 1.25 in or splined, and ports are ORB 12, 16 and 24."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Cross MH series hydraulic gear motors?",
+          "a": "Choose the displacement for the speed and torque you need: for a given flow, a larger displacement turns slower with more torque. Shaft speed in rpm is roughly flow in US gpm times 231 divided by displacement in in³/rev, before volumetric losses. Then match the mount, shaft and ports."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Cross MH series hydraulic gear motors have?",
+          "a": "The listing gives no pressure rating for the Cross MH series hydraulic gear motors, so we do not quote one. A gear motor's pressure limit is set by the model and the fluid, so give us the working pressure and flow through [our contact page](/contact) and we confirm the model with Cross."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Cross MH series hydraulic gear motors offered in?",
+          "a": "The listing does not state the housing or gear material of the Cross MH series hydraulic gear motors. Tell us the fluid and duty and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Cross MH series hydraulic gear motors?",
+          "a": "The listing names SAE A and SAE B mounts and ORB ports for the Cross MH series hydraulic gear motors, which are SAE flange and port dimensions, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Cross MH series hydraulic gear motors mate with?",
+          "a": "The Cross MH series hydraulic gear motors bolt to the machine on an SAE A or SAE B two-bolt mount and takes ORB hydraulic ports in sizes 12, 16 or 24, with a keyed or splined shaft. Match the mount, shaft and ports to the motor you are replacing, and see [our orbital motors](/c/orbital-hydraulic-motors) for other motor types."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Cross MH series hydraulic gear motors be installed and maintained?",
+          "a": "Fill the circuit with clean oil, check rotation against the dual-rotation motor before connecting the load, and keep the shaft load within the model's limit. For the Cross MH series hydraulic gear motors, flush new lines, and check shaft seal leakage at the first service."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Cross MH series hydraulic gear motors?",
+          "a": "The Cross MH series hydraulic gear motors are used to turn fans, augers, conveyors, spreaders and other light to medium loads from a hydraulic supply, where a compact fixed-displacement motor is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Cross MH series hydraulic gear motors differ from Cross 40 and 50 Series Hydraulic Gear Pumps?",
+          "a": "The MH series are 27 gear motors of 0.5 to 5.2 in³/rev that turn a load from hydraulic flow, while [Cross 40 and 50 Series Hydraulic Gear Pumps](/p/cross-40-and-50-series-hydraulic-gear-pumps) are the gear pumps that make that flow. Use a motor to turn a load and a pump to supply the circuit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Cross MH series hydraulic gear motors shipped from, and what origin and HS code apply?",
+          "a": "We ship the Cross MH series hydraulic gear motors from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Cross MH series hydraulic gear motors available from stock in Dubai for export?",
+          "a": "Yes, we hold the Cross MH series hydraulic gear motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

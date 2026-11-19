@@ -1,0 +1,1648 @@
+{
+  "family": "wellhead",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    },
+    {
+      "fact": "API 6A temperature classes: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F.",
+      "source": "API Specification 6A temperature rating table; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "wellhead-studded-adapter-api-6bx-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Wellhead Studded Adapter, API 6BX 15K used for?",
+          "a": "The Wellhead Studded Adapter, API 6BX 15K is an API 6A wellhead studded adapter rated 15,000 psi working pressure (15K class), standard service. single-spool studded fitting bridging two flanged components without a separate flange-and-stud kit. The body is Forged alloy steel (AISI 4140)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR1 and material class AA mean on the Wellhead Studded Adapter, API 6BX 15K nameplate?",
+          "a": "On the Wellhead Studded Adapter, API 6BX 15K, PSL 3 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Wellhead Studded Adapter, API 6BX 15K a dimensional interchange for?",
+          "a": "The listing names Anson Studded Adapter, Cameron Studded Spool, FMC SDX Studded as the recognised dimensional and metallurgical interchange for the Wellhead Studded Adapter, API 6BX 15K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Wellhead Studded Adapter, API 6BX 15K?",
+          "a": "The Wellhead Studded Adapter, API 6BX 15K top connection is API 6BX 15K studded, and the bottom connection is API 6BX 15K studded. The vertical through-bore is 7-1/16 in, size 7-1/16 in × 7-1/16 in (full-bore). Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Wellhead Studded Adapter, API 6BX 15K and how is it tested?",
+          "a": "The Wellhead Studded Adapter, API 6BX 15K is rated 15,000 psi working pressure (15K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Wellhead Studded Adapter, API 6BX 15K suitable for sour (H2S) service?",
+          "a": "No. The Wellhead Studded Adapter, API 6BX 15K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Wellhead Studded Adapter, API 6BX 15K?",
+          "a": "The Wellhead Studded Adapter, API 6BX 15K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Wellhead Studded Adapter, API 6BX 15K mate with in a wellhead stack?",
+          "a": "The Wellhead Studded Adapter, API 6BX 15K (15K, 15,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Wellhead Studded Adapter, API 6BX 15K installed?",
+          "a": "Typical applications of the Wellhead Studded Adapter, API 6BX 15K are wellhead stack vertical bridges, tight-clearance frac-tree assembly, sub-assembly integration. It sits as the wellhead studded adapter in the 15K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Wellhead Studded Adapter, API 6BX 15K differ from the Casing Spool, API 6B 5K?",
+          "a": "The Wellhead Studded Adapter, API 6BX 15K is a wellhead studded adapter at 15,000 psi; the Casing Spool, API 6B 5K is a casing spool. They sit at different places in the wellhead stack. See the [Casing Spool, API 6B 5K](/p/casing-spool-api-6b-5k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wellhead Studded Adapter, API 6BX 15K made, and what is the lead time?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson wellhead studded adapter, with a typical lead time of 42 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Wellhead Studded Adapter, API 6BX 15K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Wellhead Studded Adapter, API 6BX 15K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "casing-spool-api-6b-5k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Casing Spool, API 6B 5K used for?",
+          "a": "The Casing Spool, API 6B 5K is an API 6A casing spool rated 5,000 psi working pressure (5K class), standard service. adapts intermediate casing (11 in flange) to production casing (7-1/16 in flange). The body is Forged alloy steel (AISI 4130)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 2, PR1 and material class AA mean on the Casing Spool, API 6B 5K nameplate?",
+          "a": "On the Casing Spool, API 6B 5K, PSL 2 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Casing Spool, API 6B 5K a dimensional interchange for?",
+          "a": "The listing names Cameron Casing Spool, Stream-Flo CS 5K, FMC SDX Casing Spool as the recognised dimensional and metallurgical interchange for the Casing Spool, API 6B 5K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Casing Spool, API 6B 5K?",
+          "a": "The Casing Spool, API 6B 5K top connection is API 6B 5K studded flange — 7-1/16 in, R-46 or RX-46 ring groove, and the bottom connection is API 6B 5K studded flange — 11 in. The vertical through-bore is 7-1/16 in (production casing), size 11 in × 7-1/16 in bore. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Casing Spool, API 6B 5K and how is it tested?",
+          "a": "The Casing Spool, API 6B 5K is rated 5,000 psi working pressure (5K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Casing Spool, API 6B 5K suitable for sour (H2S) service?",
+          "a": "No. The Casing Spool, API 6B 5K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Casing Spool, API 6B 5K?",
+          "a": "The Casing Spool, API 6B 5K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "Which ring gasket does the Casing Spool, API 6B 5K take?",
+          "a": "The listed ring groove is R-46, so the Casing Spool, API 6B 5K takes the matching ring joint gasket; fit a new ring each time the joint is made up. See the [R-46 ring joint gasket](/p/r-46-ring-joint-gasket) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Casing Spool, API 6B 5K installed?",
+          "a": "Typical applications of the Casing Spool, API 6B 5K are casing-to-tubing-head transitions, wellhead pressure step-up, production-casing landing. It sits as the casing spool in the 5K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Casing Spool, API 6B 5K differ from the Casing Spool, API 6BX 10K?",
+          "a": "The Casing Spool, API 6B 5K is a casing spool at 5,000 psi; the Casing Spool, API 6BX 10K is a casing spool. They sit at different places in the wellhead stack. See the [Casing Spool, API 6BX 10K](/p/casing-spool-api-6bx-10k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Casing Spool, API 6B 5K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this Cameron casing spool, with a typical lead time of 28 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Casing Spool, API 6B 5K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Casing Spool, API 6B 5K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "christmas-tree-api-6b-5k-conventional-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Christmas Tree, API 6B 5K Conventional used for?",
+          "a": "The Christmas Tree, API 6B 5K Conventional is an API 6A christmas tree rated 5,000 psi working pressure (5K class), standard service. 2 master valves + 1 swab + 2 wing valves. The body is Forged alloy steel (AISI 4130)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 2, PR1 and material class AA mean on the Christmas Tree, API 6B 5K Conventional nameplate?",
+          "a": "On the Christmas Tree, API 6B 5K Conventional, PSL 2 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Christmas Tree, API 6B 5K Conventional a dimensional interchange for?",
+          "a": "The listing names Cameron Type C XT 5K, FMC FlexMaster 5K, Stream-Flo XT 5K as the recognised dimensional and metallurgical interchange for the Christmas Tree, API 6B 5K Conventional. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Christmas Tree, API 6B 5K Conventional?",
+          "a": "The Christmas Tree, API 6B 5K Conventional top connection is Tree cap (API 6B 5K studded — top of swab valve), and the bottom connection is API 6B 5K studded flange (mates to tubing head adapter). The vertical through-bore is 2-9/16 in, size 2-9/16 in × 5K (conventional 5-valve tree). Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Christmas Tree, API 6B 5K Conventional and how is it tested?",
+          "a": "The Christmas Tree, API 6B 5K Conventional is rated 5,000 psi working pressure (5K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Christmas Tree, API 6B 5K Conventional suitable for sour (H2S) service?",
+          "a": "No. The Christmas Tree, API 6B 5K Conventional is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Christmas Tree, API 6B 5K Conventional?",
+          "a": "The Christmas Tree, API 6B 5K Conventional is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Christmas Tree, API 6B 5K Conventional mate with in a wellhead stack?",
+          "a": "The Christmas Tree, API 6B 5K Conventional (5K, 5,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Christmas Tree, API 6B 5K Conventional installed?",
+          "a": "Typical applications of the Christmas Tree, API 6B 5K Conventional are onshore production wells, conventional oil and gas tree assemblies, mature-field workover replacements. It sits as the christmas tree in the 5K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Christmas Tree, API 6B 5K Conventional differ from the Christmas Tree, API 6BX 10K Conventional?",
+          "a": "The Christmas Tree, API 6B 5K Conventional is a christmas tree at 5,000 psi; the Christmas Tree, API 6BX 10K Conventional is a christmas tree. They sit at different places in the wellhead stack. See the [Christmas Tree, API 6BX 10K Conventional](/p/christmas-tree-api-6bx-10k-conventional-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Christmas Tree, API 6B 5K Conventional made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this Cameron christmas tree, with a typical lead time of 56 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Christmas Tree, API 6B 5K Conventional, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Christmas Tree, API 6B 5K Conventional, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "christmas-tree-api-6bx-10k-conventional-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Christmas Tree, API 6BX 10K Conventional used for?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is an API 6A christmas tree rated 10,000 psi working pressure (10K class), sour service to NACE MR0175 / ISO 15156. 2 master + 1 swab + 2 wing valves. The body is Forged alloy steel (AISI 4130)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR1 and material class EE mean on the Christmas Tree, API 6BX 10K Conventional nameplate?",
+          "a": "On the Christmas Tree, API 6BX 10K Conventional, PSL 3 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class EE sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Christmas Tree, API 6BX 10K Conventional a dimensional interchange for?",
+          "a": "The listing names Cameron Type SS-15 NACE, FMC FlexMaster Sour 10K, Stream-Flo XT Sour as the recognised dimensional and metallurgical interchange for the Christmas Tree, API 6BX 10K Conventional. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Christmas Tree, API 6BX 10K Conventional?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional top connection is Tree cap (API 6BX 10K, NACE), and the bottom connection is API 6BX 10K studded flange (NACE). The vertical through-bore is 3-1/16 in, size 3-1/16 in × 10K (5-valve tree, NACE). Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Christmas Tree, API 6BX 10K Conventional and how is it tested?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is rated 10,000 psi working pressure (10K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Christmas Tree, API 6BX 10K Conventional suitable for sour (H2S) service?",
+          "a": "Yes. The Christmas Tree, API 6BX 10K Conventional is sour service to NACE MR0175 / ISO 15156 in material class EE, with NACE-compliant studs and nuts where listed. Send the H2S partial pressure and chloride content and we confirm the class and trim."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Christmas Tree, API 6BX 10K Conventional?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Christmas Tree, API 6BX 10K Conventional mate with in a wellhead stack?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional (10K, 10,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Christmas Tree, API 6BX 10K Conventional installed?",
+          "a": "Typical applications of the Christmas Tree, API 6BX 10K Conventional are sour-well production trees, h₂s gas-well wellheads, nace-compliant high-pressure production. It sits as the christmas tree in the 10K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Christmas Tree, API 6BX 10K Conventional differ from the Christmas Tree, API 6B 5K Conventional?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is a christmas tree at 10,000 psi; the Christmas Tree, API 6B 5K Conventional is a christmas tree. They sit at different places in the wellhead stack. See the [Christmas Tree, API 6B 5K Conventional](/p/christmas-tree-api-6b-5k-conventional-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Christmas Tree, API 6BX 10K Conventional made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this Cameron christmas tree, with a typical lead time of 112 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Christmas Tree, API 6BX 10K Conventional, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 112 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "slip-type-casing-hanger-api-6a-5k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Slip-Type Casing Hanger, API 6A 5K used for?",
+          "a": "The Slip-Type Casing Hanger, API 6A 5K is an API 6A slip-type casing hanger rated 5,000 psi working pressure (5K class), standard service. packoff slip device for landing production casing in the casing-head bowl. The body is Forged alloy steel with hardened slip teeth."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 2, PR1 and material class AA mean on the Slip-Type Casing Hanger, API 6A 5K nameplate?",
+          "a": "On the Slip-Type Casing Hanger, API 6A 5K, PSL 2 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Slip-Type Casing Hanger, API 6A 5K a dimensional interchange for?",
+          "a": "The listing names Cameron Slip Hanger, Stream-Flo Slip Hanger, FMC Casing Hanger as the recognised dimensional and metallurgical interchange for the Slip-Type Casing Hanger, API 6A 5K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Slip-Type Casing Hanger, API 6A 5K?",
+          "a": "The Slip-Type Casing Hanger, API 6A 5K top connection is Casing-hanger top — mates with casing-head bowl, and the bottom connection is Casing string (slip-and-pack-off). The vertical through-bore is 7 in (production casing), size 11 in × 7 in casing. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Slip-Type Casing Hanger, API 6A 5K and how is it tested?",
+          "a": "The Slip-Type Casing Hanger, API 6A 5K is rated 5,000 psi working pressure (5K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Slip-Type Casing Hanger, API 6A 5K suitable for sour (H2S) service?",
+          "a": "No. The Slip-Type Casing Hanger, API 6A 5K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Slip-Type Casing Hanger, API 6A 5K?",
+          "a": "The Slip-Type Casing Hanger, API 6A 5K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Slip-Type Casing Hanger, API 6A 5K mate with in a wellhead stack?",
+          "a": "The Slip-Type Casing Hanger, API 6A 5K (5K, 5,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Slip-Type Casing Hanger, API 6A 5K installed?",
+          "a": "Typical applications of the Slip-Type Casing Hanger, API 6A 5K are production casing landing, field-set casing hanger installation, casing string suspension. It sits as the slip-type casing hanger in the 5K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Slip-Type Casing Hanger, API 6A 5K differ from the Wellhead Studded Adapter, API 6BX 15K?",
+          "a": "The Slip-Type Casing Hanger, API 6A 5K is a slip-type casing hanger at 5,000 psi; the Wellhead Studded Adapter, API 6BX 15K is a wellhead studded adapter. They sit at different places in the wellhead stack. See the [Wellhead Studded Adapter, API 6BX 15K](/p/wellhead-studded-adapter-api-6bx-15k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Slip-Type Casing Hanger, API 6A 5K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this Cameron slip-type casing hanger, with a typical lead time of 28 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Slip-Type Casing Hanger, API 6A 5K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Slip-Type Casing Hanger, API 6A 5K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tubing-head-api-6b-5k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tubing Head, API 6B 5K used for?",
+          "a": "The Tubing Head, API 6B 5K is an API 6A tubing head rated 5,000 psi working pressure (5K class), standard service.  The body is Forged alloy steel (AISI 4130), normalised and tempered."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 2, PR1 and material class AA mean on the Tubing Head, API 6B 5K nameplate?",
+          "a": "On the Tubing Head, API 6B 5K, PSL 2 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Tubing Head, API 6B 5K a dimensional interchange for?",
+          "a": "The listing names Cameron Type C 5K, FMC SDX 5K, Stream-Flo SD 5K, NOV ML-15 as the recognised dimensional and metallurgical interchange for the Tubing Head, API 6B 5K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Tubing Head, API 6B 5K?",
+          "a": "The Tubing Head, API 6B 5K top connection is API 6B 5K studded flange — 11 in, R-54 or RX-54 ring groove, and the bottom connection is API 6B 5K studded flange — to mate with casing head. The vertical through-bore is 2-9/16 in or 2-1/16 in (tubing-spec dependent), size 11 in × 2-9/16 in or 2-1/16 in tubing. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tubing Head, API 6B 5K and how is it tested?",
+          "a": "The Tubing Head, API 6B 5K is rated 5,000 psi working pressure (5K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Tubing Head, API 6B 5K suitable for sour (H2S) service?",
+          "a": "No. The Tubing Head, API 6B 5K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Tubing Head, API 6B 5K?",
+          "a": "The Tubing Head, API 6B 5K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "Which ring gasket does the Tubing Head, API 6B 5K take?",
+          "a": "The listed ring groove is RX-54, so the Tubing Head, API 6B 5K takes the matching ring joint gasket; fit a new ring each time the joint is made up. See the [RX-54 ring joint gasket](/p/rx-54-ring-joint-gasket) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Tubing Head, API 6B 5K installed?",
+          "a": "Typical applications of the Tubing Head, API 6B 5K are production well tubing landing, onshore conventional oil and gas wellheads, mature-field workover wellhead replacement. It sits as the tubing head in the 5K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tubing Head, API 6B 5K differ from the Tubing Head, API 6BX 10K?",
+          "a": "The Tubing Head, API 6B 5K is a tubing head at 5,000 psi; the Tubing Head, API 6BX 10K is a tubing head. They sit at different places in the wellhead stack. See the [Tubing Head, API 6BX 10K](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tubing Head, API 6B 5K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this Cameron tubing head, with a typical lead time of 28 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Tubing Head, API 6B 5K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Tubing Head, API 6B 5K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tubing-head-api-6bx-10k-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tubing Head, API 6BX 10K used for?",
+          "a": "The Tubing Head, API 6BX 10K is an API 6A tubing head rated 10,000 psi working pressure (10K class), sour service to NACE MR0175 / ISO 15156. material class EE. The body is Forged alloy steel (AISI 4130)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR1 and material class EE mean on the Tubing Head, API 6BX 10K nameplate?",
+          "a": "On the Tubing Head, API 6BX 10K, PSL 3 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class EE sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Tubing Head, API 6BX 10K a dimensional interchange for?",
+          "a": "The listing names Cameron Sour 10K, FMC SDX-10 NACE, Stream-Flo Sour as the recognised dimensional and metallurgical interchange for the Tubing Head, API 6BX 10K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Tubing Head, API 6BX 10K?",
+          "a": "The Tubing Head, API 6BX 10K top connection is API 6BX 10K studded flange — sour-service ring groove (BX-158, NACE), and the bottom connection is API 6BX 10K studded flange — NACE-compliant studs and nuts. The vertical through-bore is 2-9/16 in / 3-1/16 in, size 11 in × 2-9/16 in / 3-1/16 in tubing. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tubing Head, API 6BX 10K and how is it tested?",
+          "a": "The Tubing Head, API 6BX 10K is rated 10,000 psi working pressure (10K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Tubing Head, API 6BX 10K suitable for sour (H2S) service?",
+          "a": "Yes. The Tubing Head, API 6BX 10K is sour service to NACE MR0175 / ISO 15156 in material class EE, with NACE-compliant studs and nuts where listed. Send the H2S partial pressure and chloride content and we confirm the class and trim."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Tubing Head, API 6BX 10K?",
+          "a": "The Tubing Head, API 6BX 10K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "Which ring gasket does the Tubing Head, API 6BX 10K take?",
+          "a": "The listed ring groove is BX-158, so the Tubing Head, API 6BX 10K takes the matching ring joint gasket; fit a new ring each time the joint is made up. See the [BX-158 ring joint gasket](/p/bx-158-ring-joint-gasket) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Tubing Head, API 6BX 10K installed?",
+          "a": "Typical applications of the Tubing Head, API 6BX 10K are sour-well production wellheads, h₂s high-pressure tubing landing, nace-compliant production trees. It sits as the tubing head in the 10K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tubing Head, API 6BX 10K differ from the Tubing Head, API 6B 5K?",
+          "a": "The Tubing Head, API 6BX 10K is a tubing head at 10,000 psi; the Tubing Head, API 6B 5K is a tubing head. They sit at different places in the wellhead stack. See the [Tubing Head, API 6B 5K](/p/tubing-head-api-6b-5k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tubing Head, API 6BX 10K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this Cameron tubing head, with a typical lead time of 56 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Tubing Head, API 6BX 10K, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Tubing Head, API 6BX 10K, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "casing-spool-api-6bx-10k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Casing Spool, API 6BX 10K used for?",
+          "a": "The Casing Spool, API 6BX 10K is an API 6A casing spool rated 10,000 psi working pressure (10K class), standard service. pressure step-up from 5K casing head to 10K production tree. The body is Forged alloy steel (AISI 4140)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR1 and material class AA mean on the Casing Spool, API 6BX 10K nameplate?",
+          "a": "On the Casing Spool, API 6BX 10K, PSL 3 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Casing Spool, API 6BX 10K a dimensional interchange for?",
+          "a": "The listing names FMC Casing Spool 10K, Cameron Type SS-15 Spool, Stream-Flo CS 10K as the recognised dimensional and metallurgical interchange for the Casing Spool, API 6BX 10K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Casing Spool, API 6BX 10K?",
+          "a": "The Casing Spool, API 6BX 10K top connection is API 6BX 10K studded flange — 7-1/16 in, BX-156 ring groove, and the bottom connection is API 6B 5K or API 6BX 10K studded flange — 11 in. The vertical through-bore is 7-1/16 in, size 11 in × 7-1/16 in bore. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Casing Spool, API 6BX 10K and how is it tested?",
+          "a": "The Casing Spool, API 6BX 10K is rated 10,000 psi working pressure (10K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Casing Spool, API 6BX 10K suitable for sour (H2S) service?",
+          "a": "No. The Casing Spool, API 6BX 10K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Casing Spool, API 6BX 10K?",
+          "a": "The Casing Spool, API 6BX 10K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "Which ring gasket does the Casing Spool, API 6BX 10K take?",
+          "a": "The listed ring groove is BX-156, so the Casing Spool, API 6BX 10K takes the matching ring joint gasket; fit a new ring each time the joint is made up. See the [BX-156 ring joint gasket](/p/bx-156-ring-joint-gasket) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Casing Spool, API 6BX 10K installed?",
+          "a": "Typical applications of the Casing Spool, API 6BX 10K are high-pressure wellhead stacks, pressure-class transitions, production-tree foundation. It sits as the casing spool in the 10K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Casing Spool, API 6BX 10K differ from the Casing Spool, API 6B 5K?",
+          "a": "The Casing Spool, API 6BX 10K is a casing spool at 10,000 psi; the Casing Spool, API 6B 5K is a casing spool. They sit at different places in the wellhead stack. See the [Casing Spool, API 6B 5K](/p/casing-spool-api-6b-5k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Casing Spool, API 6BX 10K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies casing spool, with a typical lead time of 35 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Casing Spool, API 6BX 10K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Casing Spool, API 6BX 10K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "christmas-tree-api-6bx-10k-conventional-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Christmas Tree, API 6BX 10K Conventional used for?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is an API 6A christmas tree rated 10,000 psi working pressure (10K class), standard service. 2 master + 1 swab + 2 wing valves. The body is Forged alloy steel (AISI 4140)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR1 and material class AA mean on the Christmas Tree, API 6BX 10K Conventional nameplate?",
+          "a": "On the Christmas Tree, API 6BX 10K Conventional, PSL 3 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Christmas Tree, API 6BX 10K Conventional a dimensional interchange for?",
+          "a": "The listing names FMC FlexMaster 10K, Cameron Type SS-15 XT 10K, Stream-Flo XT 10K as the recognised dimensional and metallurgical interchange for the Christmas Tree, API 6BX 10K Conventional. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Christmas Tree, API 6BX 10K Conventional?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional top connection is Tree cap (API 6BX 10K), and the bottom connection is API 6BX 10K studded flange. The vertical through-bore is 3-1/16 in, size 3-1/16 in × 10K (conventional 5-valve tree). Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Christmas Tree, API 6BX 10K Conventional and how is it tested?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is rated 10,000 psi working pressure (10K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Christmas Tree, API 6BX 10K Conventional suitable for sour (H2S) service?",
+          "a": "No. The Christmas Tree, API 6BX 10K Conventional is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Christmas Tree, API 6BX 10K Conventional?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Christmas Tree, API 6BX 10K Conventional mate with in a wellhead stack?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional (10K, 10,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Christmas Tree, API 6BX 10K Conventional installed?",
+          "a": "Typical applications of the Christmas Tree, API 6BX 10K Conventional are high-pressure production wells, gas-well production trees, tight-formation oil-well trees. It sits as the christmas tree in the 10K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Christmas Tree, API 6BX 10K Conventional differ from the Christmas Tree, API 6B 5K Conventional?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional is a christmas tree at 10,000 psi; the Christmas Tree, API 6B 5K Conventional is a christmas tree. They sit at different places in the wellhead stack. See the [Christmas Tree, API 6B 5K Conventional](/p/christmas-tree-api-6b-5k-conventional-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Christmas Tree, API 6BX 10K Conventional made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies christmas tree, with a typical lead time of 84 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Christmas Tree, API 6BX 10K Conventional, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Christmas Tree, API 6BX 10K Conventional, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "frac-tree-api-6bx-15k-frac-stimulation-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Frac Tree, API 6BX 15K (Frac Stimulation) used for?",
+          "a": "The Frac Tree, API 6BX 15K (Frac Stimulation) is an API 6A frac tree rated 15,000 psi working pressure (15K class), standard service. temporary high-pressure tree assembly for frac stimulation. The body is Forged alloy steel (AISI 4140), high-strength heat-treated."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR2 and material class AA mean on the Frac Tree, API 6BX 15K (Frac Stimulation) nameplate?",
+          "a": "On the Frac Tree, API 6BX 15K (Frac Stimulation), PSL 3 sets the inspection, testing and traceability level, PR2 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Frac Tree, API 6BX 15K (Frac Stimulation) a dimensional interchange for?",
+          "a": "The listing names FMC Frac Tree 15K, Cameron Type SS-15 Frac, NOV Frac Stack, Stream-Flo Frac as the recognised dimensional and metallurgical interchange for the Frac Tree, API 6BX 15K (Frac Stimulation). It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Frac Tree, API 6BX 15K (Frac Stimulation)?",
+          "a": "The Frac Tree, API 6BX 15K (Frac Stimulation) top connection is API 6BX 15K studded flange (mates to swab valve / kill spool), and the bottom connection is API 6BX 15K studded flange (mates to tubing head adapter). The vertical through-bore is 7-1/16 in (large bore for frac flow), size 7-1/16 in × 15K (frac configuration). Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Frac Tree, API 6BX 15K (Frac Stimulation) and how is it tested?",
+          "a": "The Frac Tree, API 6BX 15K (Frac Stimulation) is rated 15,000 psi working pressure (15K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Frac Tree, API 6BX 15K (Frac Stimulation) suitable for sour (H2S) service?",
+          "a": "No. The Frac Tree, API 6BX 15K (Frac Stimulation) is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Frac Tree, API 6BX 15K (Frac Stimulation)?",
+          "a": "The Frac Tree, API 6BX 15K (Frac Stimulation) is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Frac Tree, API 6BX 15K (Frac Stimulation) mate with in a wellhead stack?",
+          "a": "The Frac Tree, API 6BX 15K (Frac Stimulation) (15K, 15,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Frac Tree, API 6BX 15K (Frac Stimulation) installed?",
+          "a": "Typical applications of the Frac Tree, API 6BX 15K (Frac Stimulation) are hydraulic fracturing wellhead assemblies, high-pressure stimulation isolation, frac-stack with master / swab / wing arrangement. It sits as the frac tree in the 15K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Frac Tree, API 6BX 15K (Frac Stimulation) differ from the Casing Spool, API 6B 5K?",
+          "a": "The Frac Tree, API 6BX 15K (Frac Stimulation) is a frac tree at 15,000 psi; the Casing Spool, API 6B 5K is a casing spool. They sit at different places in the wellhead stack. See the [Casing Spool, API 6B 5K](/p/casing-spool-api-6b-5k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Frac Tree, API 6BX 15K (Frac Stimulation) made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies frac tree, with a typical lead time of 84 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Frac Tree, API 6BX 15K (Frac Stimulation), Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Frac Tree, API 6BX 15K (Frac Stimulation), Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "mandrel-tubing-hanger-api-6a-10k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Mandrel Tubing Hanger, API 6A 10K used for?",
+          "a": "The Mandrel Tubing Hanger, API 6A 10K is an API 6A mandrel tubing hanger rated 10,000 psi working pressure (10K class), standard service. supports the production tubing string within the tubing head. The body is Forged alloy steel (AISI 4140) with packoff seal pockets."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR1 and material class AA mean on the Mandrel Tubing Hanger, API 6A 10K nameplate?",
+          "a": "On the Mandrel Tubing Hanger, API 6A 10K, PSL 3 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Mandrel Tubing Hanger, API 6A 10K a dimensional interchange for?",
+          "a": "The listing names FMC Mandrel Hanger, Cameron Type C MTH, Stream-Flo MTH as the recognised dimensional and metallurgical interchange for the Mandrel Tubing Hanger, API 6A 10K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Mandrel Tubing Hanger, API 6A 10K?",
+          "a": "The Mandrel Tubing Hanger, API 6A 10K top connection is Tubing-hanger top — mates with tubing head adapter, and the bottom connection is Tubing thread (e.g. 2-7/8 in EUE 8RD or NU). The vertical through-bore is 2-9/16 in, size 2-9/16 in × 10K (single-string). Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Mandrel Tubing Hanger, API 6A 10K and how is it tested?",
+          "a": "The Mandrel Tubing Hanger, API 6A 10K is rated 10,000 psi working pressure (10K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Mandrel Tubing Hanger, API 6A 10K suitable for sour (H2S) service?",
+          "a": "No. The Mandrel Tubing Hanger, API 6A 10K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Mandrel Tubing Hanger, API 6A 10K?",
+          "a": "The Mandrel Tubing Hanger, API 6A 10K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Mandrel Tubing Hanger, API 6A 10K mate with in a wellhead stack?",
+          "a": "The Mandrel Tubing Hanger, API 6A 10K (10K, 10,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Mandrel Tubing Hanger, API 6A 10K installed?",
+          "a": "Typical applications of the Mandrel Tubing Hanger, API 6A 10K are production tubing string support, wireline-set or stab-in tubing landing, workover tubing replacement. It sits as the mandrel tubing hanger in the 10K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Mandrel Tubing Hanger, API 6A 10K differ from the Wellhead Studded Adapter, API 6BX 15K?",
+          "a": "The Mandrel Tubing Hanger, API 6A 10K is a mandrel tubing hanger at 10,000 psi; the Wellhead Studded Adapter, API 6BX 15K is a wellhead studded adapter. They sit at different places in the wellhead stack. See the [Wellhead Studded Adapter, API 6BX 15K](/p/wellhead-studded-adapter-api-6bx-15k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Mandrel Tubing Hanger, API 6A 10K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies mandrel tubing hanger, with a typical lead time of 35 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Mandrel Tubing Hanger, API 6A 10K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Mandrel Tubing Hanger, API 6A 10K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tubing-head-api-6bx-10k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tubing Head, API 6BX 10K used for?",
+          "a": "The Tubing Head, API 6BX 10K is an API 6A tubing head rated 10,000 psi working pressure (10K class), standard service.  The body is Forged alloy steel (AISI 4140), normalised and tempered."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR1 and material class AA mean on the Tubing Head, API 6BX 10K nameplate?",
+          "a": "On the Tubing Head, API 6BX 10K, PSL 3 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Tubing Head, API 6BX 10K a dimensional interchange for?",
+          "a": "The listing names FMC SDX 10K, Cameron Type SS-15 10K, Stream-Flo SD 10K, NOV ML-15 10K as the recognised dimensional and metallurgical interchange for the Tubing Head, API 6BX 10K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Tubing Head, API 6BX 10K?",
+          "a": "The Tubing Head, API 6BX 10K top connection is API 6BX 10K studded flange — 11 in, BX-158 ring groove, and the bottom connection is API 6BX 10K studded flange. The vertical through-bore is 2-9/16 in / 3-1/16 in, size 11 in × 2-9/16 in / 3-1/16 in tubing. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tubing Head, API 6BX 10K and how is it tested?",
+          "a": "The Tubing Head, API 6BX 10K is rated 10,000 psi working pressure (10K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Tubing Head, API 6BX 10K suitable for sour (H2S) service?",
+          "a": "No. The Tubing Head, API 6BX 10K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Tubing Head, API 6BX 10K?",
+          "a": "The Tubing Head, API 6BX 10K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "Which ring gasket does the Tubing Head, API 6BX 10K take?",
+          "a": "The listed ring groove is BX-158, so the Tubing Head, API 6BX 10K takes the matching ring joint gasket; fit a new ring each time the joint is made up. See the [BX-158 ring joint gasket](/p/bx-158-ring-joint-gasket) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Tubing Head, API 6BX 10K installed?",
+          "a": "Typical applications of the Tubing Head, API 6BX 10K are high-pressure production wellheads, frac-stimulation well isolation, high-pressure gas-well tubing landing. It sits as the tubing head in the 10K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tubing Head, API 6BX 10K differ from the Tubing Head, API 6B 5K?",
+          "a": "The Tubing Head, API 6BX 10K is a tubing head at 10,000 psi; the Tubing Head, API 6B 5K is a tubing head. They sit at different places in the wellhead stack. See the [Tubing Head, API 6B 5K](/p/tubing-head-api-6b-5k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tubing Head, API 6BX 10K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies tubing head, with a typical lead time of 35 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Tubing Head, API 6BX 10K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Tubing Head, API 6BX 10K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "casing-head-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A casing head used for?",
+          "a": "Casing heads to API 6A, the lowest section of the wellhead: threaded, slip-type or weld-on (with or without ring) bottom connection, side outlets for annulus access, BOP test capability."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A casing head?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A casing head the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A casing head come in?",
+          "a": "The listing covers To the surface casing size nominal bore at Rated to the wellhead working pressure, with top: API 6A flange; bottom: threaded, slip or weld-on. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a threaded, slip-type or weld-on casing head?",
+          "a": "The bottom connection is threaded, slip-type or weld-on, with or without a ring, to suit the surface casing. State the casing size and how it is run, and we match the bottom connection."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A casing head tested?",
+          "a": "For the API 6A casing head (To the surface casing size, Rated to the wellhead working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A casing head offer?",
+          "a": "On the API 6A casing head, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A casing head to API specification, and what documents are supplied?",
+          "a": "The API 6A casing head is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A casing head operated?",
+          "a": "The API 6A casing head has no operating mechanism; the listing gives operation as not applicable. It is a passive component with no operating mechanism. State the operator and any special requirement on the enquiry. End connections on the listing are top: API 6A flange; bottom: threaded, slip or weld-on."
+        },
+        {
+          "slot": "I",
+          "q": "What does a casing head do at the base of the wellhead?",
+          "a": "The casing head has a bowl and load shoulder to hang the casing, side outlets for annulus access and BOP test capability. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Casing head or tubing head: which one does my well need?",
+          "a": "A casing head is the lowest section of the wellhead and carries the casing strings, while a tubing head sits on it to hang the tubing and seal the tubing-casing annulus. See the [Tubing Head, API 6A, 2,000 to 15,000 psi](/p/tubing-head-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A casing head be supplied from Dubai with test records?",
+          "a": "For the API 6A casing head: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A casing head in Dubai?",
+          "a": "Yes. We keep the API 6A casing head in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dual-tubing-wellhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A dual tubing wellhead used for?",
+          "a": "Dual tubing wellheads to API 6A for producing two zones from one well: two independent tubing strings, 2,000 to 15,000 psi, -46 °C to 180 °C, material classes AA to HH."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A dual tubing wellhead?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A dual tubing wellhead the listing gives PSL 1 to 3G; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A dual tubing wellhead come in?",
+          "a": "The listing covers Configured to the completion nominal bore at 2,000 to 15,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What does a dual tubing wellhead let me do that a standard wellhead cannot?",
+          "a": "It produces two zones from one well through two independent tubing strings, using a dual tubing hanger and a dual-bore tree. Give the completion programme and the pressure of each zone on the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A dual tubing wellhead tested?",
+          "a": "For the API 6A dual tubing wellhead (Configured to the completion, 2,000 to 15,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A dual tubing wellhead offer?",
+          "a": "On the API 6A dual tubing wellhead, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is -46 °C to 180 °C. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A dual tubing wellhead to API specification, and what documents are supplied?",
+          "a": "The API 6A dual tubing wellhead is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A dual tubing wellhead operated?",
+          "a": "The API 6A dual tubing wellhead is operated by manual or actuated valves. Operation is manual or actuated, per the valves ordered. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "How does a dual-bore tree work on a dual tubing wellhead?",
+          "a": "A dual tubing hanger lands two strings in one head, and the dual-bore tree has a separate set of valves for each string. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Dual tubing wellhead or standard wellhead for a two-zone well?",
+          "a": "A dual tubing wellhead hangs two independent tubing strings to produce two zones from one well, while a standard wellhead and tree assembly carries one tubing string. See the [Wellhead and Christmas Tree Assembly, API 6A, 2,000 to 20,000 psi](/p/wellhead-and-christmas-tree-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A dual tubing wellhead be supplied from Dubai with test records?",
+          "a": "For the API 6A dual tubing wellhead: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A dual tubing wellhead in Dubai?",
+          "a": "Yes. We keep the API 6A dual tubing wellhead in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gas-storage-injection-production-wellhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A gas storage injection and production wellhead used for?",
+          "a": "Large-bore wellheads for underground gas and compressed-air storage: rapid injection and withdrawal, 2,000 to 20,000 psi, multi-seal design, corrosion-resistant for salt caverns, with monitoring."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A gas storage injection and production wellhead?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A gas storage injection and production wellhead the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A gas storage injection and production wellhead come in?",
+          "a": "The listing covers Configured to the storage well nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What makes a gas storage wellhead different from a production wellhead?",
+          "a": "It is large-bore with a multi-seal design for rapid injection and withdrawal, corrosion-resistant for salt caverns, and fitted with monitoring. Give the storage pressure and gas composition on the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A gas storage injection and production wellhead tested?",
+          "a": "For the API 6A gas storage injection and production wellhead (Configured to the storage well, 2,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A gas storage injection and production wellhead offer?",
+          "a": "On the API 6A gas storage injection and production wellhead, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to Y. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A gas storage injection and production wellhead to API specification, and what documents are supplied?",
+          "a": "The API 6A gas storage injection and production wellhead is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A gas storage injection and production wellhead operated?",
+          "a": "The API 6A gas storage injection and production wellhead is operated by manual and actuated valves. Operation is manual or actuated, per the valves ordered. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "Why is a gas storage wellhead large-bore with multiple seals?",
+          "a": "The large bore allows rapid injection and withdrawal of gas, and the multiple seals add barriers for long service. Monitoring is fitted. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Gas storage wellhead or salt-cavern leaching wellhead: which one?",
+          "a": "A gas storage injection and production wellhead is a large-bore multi-seal wellhead for rapid injection and withdrawal, while a leaching wellhead adds a brine-drain string for building a salt cavern. See the [Leaching Wellhead for Salt-Cavern Gas Storage, API 6A](/p/leaching-wellhead-salt-cavern)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A gas storage injection and production wellhead be supplied from Dubai with test records?",
+          "a": "For the API 6A gas storage injection and production wellhead: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A gas storage injection and production wellhead in Dubai?",
+          "a": "Yes. We keep the API 6A gas storage injection and production wellhead in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "geothermal-esp-wellhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A ESP wellhead used for?",
+          "a": "Electric submersible pump (ESP) wellheads for geothermal and oil wells: tree with cable penetrator and dual-seal design, 2,000 to 20,000 psi, with sensors for remote monitoring."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A ESP wellhead?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A ESP wellhead the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A ESP wellhead come in?",
+          "a": "The listing covers Configured to the pump and tubing nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "How does an ESP wellhead pass the pump cable through the pressure barrier?",
+          "a": "A cable penetrator takes the electric submersible pump cable through the tree, with a dual-seal design to hold the pressure barrier. Sensors can be added for remote monitoring."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A ESP wellhead tested?",
+          "a": "For the API 6A ESP wellhead (Configured to the pump and tubing, 2,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A ESP wellhead offer?",
+          "a": "On the API 6A ESP wellhead, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to Y. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A ESP wellhead to API specification, and what documents are supplied?",
+          "a": "The API 6A ESP wellhead is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A ESP wellhead operated?",
+          "a": "The API 6A ESP wellhead is operated by manual and actuated valves. Operation is manual or actuated, per the valves ordered. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "What does the dual-seal design on an ESP wellhead do?",
+          "a": "The dual-seal design gives two barriers around the cable penetrator so the pump cable can pass through without losing well pressure. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "ESP wellhead or geothermal wellhead assembly: how do they differ?",
+          "a": "An ESP wellhead is a tree with a cable penetrator and dual seals for a submersible pump, while a geothermal wellhead assembly is an extra-large-bore head built to accommodate thermal expansion. See the [Geothermal Wellhead Assembly, Large Bore, API 6A](/p/geothermal-wellhead-assembly)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A ESP wellhead be supplied from Dubai with test records?",
+          "a": "For the API 6A ESP wellhead: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A ESP wellhead in Dubai?",
+          "a": "Yes. We keep the API 6A ESP wellhead in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "geothermal-wellhead-assembly",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A geothermal wellhead assembly used for?",
+          "a": "Extra-large-bore geothermal wellheads for high-temperature, high-pressure wells: thermal expansion accommodated, seals that keep air out and limit corrosion, 2,000 to 20,000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A geothermal wellhead assembly?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A geothermal wellhead assembly the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A geothermal wellhead assembly come in?",
+          "a": "The listing covers Configured to the geothermal well nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Why does a geothermal wellhead need an expansion allowance?",
+          "a": "Hot wells make the casing grow, so the large-bore wellhead includes a thermal expansion allowance and seals that keep air out and limit corrosion. Give the temperature and casing programme on the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A geothermal wellhead assembly tested?",
+          "a": "For the API 6A geothermal wellhead assembly (Configured to the geothermal well, 2,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A geothermal wellhead assembly offer?",
+          "a": "On the API 6A geothermal wellhead assembly, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to Y. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A geothermal wellhead assembly to API specification, and what documents are supplied?",
+          "a": "The API 6A geothermal wellhead assembly is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A geothermal wellhead assembly operated?",
+          "a": "The API 6A geothermal wellhead assembly is operated by manual and actuated valves. Operation is per the valves ordered. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged."
+        },
+        {
+          "slot": "I",
+          "q": "How does a geothermal wellhead handle thermal expansion?",
+          "a": "The large-bore head includes an expansion allowance so the casing can move as it heats, and the seals keep air out to limit corrosion. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Geothermal wellhead assembly or ESP wellhead for a hot well?",
+          "a": "A geothermal wellhead assembly is an extra-large-bore head that accommodates thermal expansion, while an ESP wellhead adds a cable penetrator for a submersible pump. See the [Electric Submersible Pump (ESP) Wellhead, API 6A](/p/geothermal-esp-wellhead)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A geothermal wellhead assembly be supplied from Dubai with test records?",
+          "a": "For the API 6A geothermal wellhead assembly: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A geothermal wellhead assembly in Dubai?",
+          "a": "Yes. We keep the API 6A geothermal wellhead assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "leaching-wellhead-salt-cavern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A salt-cavern leaching wellhead used for?",
+          "a": "Leaching wellheads for building salt-cavern gas storage: gas injection, production and brine drainage in one assembly, 2,000 to 20,000 psi, with flow and pressure monitoring."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A salt-cavern leaching wellhead?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A salt-cavern leaching wellhead the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A salt-cavern leaching wellhead come in?",
+          "a": "The listing covers Configured to the cavern well nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What are the concentric strings on a leaching wellhead for?",
+          "a": "They carry gas injection, production and brine drainage in one assembly, so a salt cavern can be built and then used. Flow and pressure monitoring is included. State the cavern programme on the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A salt-cavern leaching wellhead tested?",
+          "a": "For the API 6A salt-cavern leaching wellhead (Configured to the cavern well, 2,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A salt-cavern leaching wellhead offer?",
+          "a": "On the API 6A salt-cavern leaching wellhead, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to Y. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A salt-cavern leaching wellhead to API specification, and what documents are supplied?",
+          "a": "The API 6A salt-cavern leaching wellhead is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A salt-cavern leaching wellhead operated?",
+          "a": "The API 6A salt-cavern leaching wellhead is operated by manual and actuated valves. Operation is per the valves ordered. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "How does a leaching wellhead build a salt cavern?",
+          "a": "It injects water and drains brine through concentric strings, with flow and pressure monitoring, until the cavern is formed for gas storage. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Leaching wellhead or gas storage wellhead: which one do I need?",
+          "a": "A leaching wellhead has concentric injection, production and brine-drain strings for building a salt cavern, while a gas storage wellhead serves the finished cavern. See the [Gas Storage Injection and Production Wellhead, API 6A](/p/gas-storage-injection-production-wellhead)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A salt-cavern leaching wellhead be supplied from Dubai with test records?",
+          "a": "For the API 6A salt-cavern leaching wellhead: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A salt-cavern leaching wellhead in Dubai?",
+          "a": "Yes. We keep the API 6A salt-cavern leaching wellhead in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "single-barrel-double-well-wellhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a single barrel double well wellhead and Christmas tree used for?",
+          "a": "Single barrel double well (conductor-sharing) wellheads and trees for offshore marginal fields: two wells in one conductor, 13-3/8\" casing × 4-1/2\" tubing, casing 5,000 psi × tubing 15,000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on a single barrel double well wellhead and Christmas tree?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the single barrel double well wellhead and Christmas tree the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the single barrel double well wellhead and Christmas tree come in?",
+          "a": "The listing covers Casing 13-3/8\" × tubing 4-1/2\" nominal bore at Casing 5,000 psi × tubing 15,000 psi, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What is a single barrel double well wellhead used for?",
+          "a": "It puts two wells in one conductor with metal-sealed casing hangers, for offshore marginal fields and infill wells. The listed size is 13-3/8\" casing by 4-1/2\" tubing, at 5,000 psi casing and 15,000 psi tubing."
+        },
+        {
+          "slot": "E",
+          "q": "How is the single barrel double well wellhead and Christmas tree tested?",
+          "a": "For the single barrel double well wellhead and Christmas tree (Casing 13-3/8\" × tubing 4-1/2\", Casing 5,000 psi × tubing 15,000 psi): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the single barrel double well wellhead and Christmas tree offer?",
+          "a": "On the single barrel double well wellhead and Christmas tree, body material is offered in API 6A material classes DD to HH, and the temperature range is -60 °C to 121 °C. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the single barrel double well wellhead and Christmas tree to API specification, and what documents are supplied?",
+          "a": "The single barrel double well wellhead and Christmas tree is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the single barrel double well wellhead and Christmas tree operated?",
+          "a": "The single barrel double well wellhead and Christmas tree is operated by manual or actuated valves. Operation is by manual or actuated valves. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "How do two wells share one conductor on a single barrel double well wellhead?",
+          "a": "Two wells run in one conductor and each has metal-sealed casing hangers, so the wells are separate but share the structure. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Single barrel double well wellhead or dual tubing wellhead?",
+          "a": "A single barrel double well wellhead puts two wells in one conductor with metal-sealed casing hangers for offshore marginal fields, while a dual tubing wellhead produces two zones from one well. See the [Dual Tubing Wellhead, API 6A, 2,000 to 15,000 psi](/p/dual-tubing-wellhead)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the single barrel double well wellhead and Christmas tree be supplied from Dubai with test records?",
+          "a": "For the single barrel double well wellhead and Christmas tree: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the single barrel double well wellhead and Christmas tree in Dubai?",
+          "a": "Yes. We keep the single barrel double well wellhead and Christmas tree in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "slip-casing-hanger-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A slip casing hanger used for?",
+          "a": "Slip casing hangers to API 6A: automatic (weight-set) or manual seal, 2,000 to 15,000 psi, material classes DD to HH, wrap-around for installation anywhere on the casing string."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A slip casing hanger?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A slip casing hanger the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A slip casing hanger come in?",
+          "a": "The listing covers To the casing size and bowl nominal bore at 2,000 to 15,000 psi working pressure, with lands in casing head or spool bowl. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose an automatic or manual slip casing hanger?",
+          "a": "The automatic hanger is weight-set and seals as the casing weight lands, while the manual hanger is set by the operator. Both are wrap-around, so they can be installed anywhere on the casing string."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A slip casing hanger tested?",
+          "a": "For the API 6A slip casing hanger (To the casing size and bowl, 2,000 to 15,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A slip casing hanger offer?",
+          "a": "On the API 6A slip casing hanger, body material is offered in API 6A material classes DD, FF, HH, and the temperature range is API 6A temperature classes K to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A slip casing hanger to API specification, and what documents are supplied?",
+          "a": "The API 6A slip casing hanger is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A slip casing hanger operated?",
+          "a": "The API 6A slip casing hanger is operated by automatic or manual seal. Operation is automatic (weight-set) or manual. State the operator and any special requirement on the enquiry. End connections on the listing are lands in casing head or spool bowl."
+        },
+        {
+          "slot": "I",
+          "q": "How does a wrap-around slip casing hanger land the casing?",
+          "a": "Wrap-around slips grip the casing and an annular seal closes the annulus as the hanger lands in the casing head or spool bowl. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Slip casing hanger or a mandrel hanger for casing?",
+          "a": "A slip casing hanger lands wrap-around slips with an annular seal anywhere on the casing, while a tubing head hangs the tubing and seals the tubing-casing annulus. See the [Tubing Head, API 6A, 2,000 to 15,000 psi](/p/tubing-head-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A slip casing hanger be supplied from Dubai with test records?",
+          "a": "For the API 6A slip casing hanger: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A slip casing hanger in Dubai?",
+          "a": "Yes. We keep the API 6A slip casing hanger in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tubing-head-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A tubing head used for?",
+          "a": "Tubing heads (tubing spools) to API 6A: 2,000 to 15,000 psi, -18 °C to 121 °C, mounted on the top casing head to hang the tubing and seal the tubing-casing annulus."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A tubing head?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A tubing head the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A tubing head come in?",
+          "a": "The listing covers To the casing and tubing programme nominal bore at 2,000 to 15,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What does a tubing head hold in the wellhead stack?",
+          "a": "A tubing head has a bowl for the tubing hanger, side outlets and a secondary seal, and it hangs the tubing and seals the tubing-casing annulus. State the casing and tubing programme on the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A tubing head tested?",
+          "a": "For the API 6A tubing head (To the casing and tubing programme, 2,000 to 15,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A tubing head offer?",
+          "a": "On the API 6A tubing head, body material is offered in API 6A material classes DD, FF, HH, and the temperature range is API 6A temperature classes K to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A tubing head to API specification, and what documents are supplied?",
+          "a": "The API 6A tubing head is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A tubing head operated?",
+          "a": "The API 6A tubing head has no operating mechanism; the listing gives operation as not applicable. It is a passive component with no operating mechanism. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "Where does a tubing head sit in the wellhead?",
+          "a": "It is mounted on the top casing head, and the tubing hanger lands inside it. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Tubing head or casing head: how do they differ?",
+          "a": "A tubing head (tubing spool) sits on the top casing head to hang the tubing and seal the tubing-casing annulus, while a casing head is the lowest section of the wellhead. See the [Casing Head, API 6A, Threaded, Slip or Weld-On Bottom](/p/casing-head-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A tubing head be supplied from Dubai with test records?",
+          "a": "For the API 6A tubing head: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A tubing head in Dubai?",
+          "a": "Yes. We keep the API 6A tubing head in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wellhead-and-christmas-tree-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A wellhead and Christmas tree assembly used for?",
+          "a": "Wellhead and christmas tree assemblies to API 6A for onshore and offshore platform wells: 2,000 to 20,000 psi, material classes AA to HH, PSL 1 to 4, with master, wing, swab and choke valves."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A wellhead and Christmas tree assembly?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A wellhead and Christmas tree assembly the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A wellhead and Christmas tree assembly come in?",
+          "a": "The listing covers Configured to the casing and tubing programme nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged, studded or clamp hub. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What do you need to configure a wellhead and Christmas tree assembly?",
+          "a": "Send the casing and tubing programme, the working pressure, the material class, the temperature class, the PSL and PR, and whether the well is sour. We then configure the casing head, spools, hangers, tubing head and tree."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A wellhead and Christmas tree assembly tested?",
+          "a": "For the API 6A wellhead and Christmas tree assembly (Configured to the casing and tubing programme, 2,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A wellhead and Christmas tree assembly offer?",
+          "a": "On the API 6A wellhead and Christmas tree assembly, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to Y. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A wellhead and Christmas tree assembly to API specification, and what documents are supplied?",
+          "a": "The API 6A wellhead and Christmas tree assembly is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A wellhead and Christmas tree assembly operated?",
+          "a": "The API 6A wellhead and Christmas tree assembly is operated by manual valves; actuated SSV on request. Operation is manual valves, with an actuated SSV on request. State the operator and any special requirement on the enquiry. End connections on the listing are aPI 6A flanged, studded or clamp hub."
+        },
+        {
+          "slot": "I",
+          "q": "What is in a wellhead and Christmas tree assembly?",
+          "a": "It comprises a casing head, spools, hangers, tubing head and tree with master, wing, swab and choke valves. See the [wellhead components guide](/blog/wellhead-components-explained). State your configuration on the enquiry and we confirm it."
+        },
+        {
+          "slot": "K",
+          "q": "Wellhead and Christmas tree assembly or a dual tubing wellhead?",
+          "a": "A wellhead and Christmas tree assembly is the full stack from casing head to tree for one tubing string, while a dual tubing wellhead carries two strings. See the [Dual Tubing Wellhead, API 6A, 2,000 to 15,000 psi](/p/dual-tubing-wellhead)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A wellhead and Christmas tree assembly be supplied from Dubai with test records?",
+          "a": "For the API 6A wellhead and Christmas tree assembly: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A wellhead and Christmas tree assembly in Dubai?",
+          "a": "Yes. We keep the API 6A wellhead and Christmas tree assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tubing-head-api-6bx-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tubing Head, API 6BX 15K used for?",
+          "a": "The Tubing Head, API 6BX 15K is an API 6A tubing head rated 15,000 psi working pressure (15K class), standard service.  The body is Forged alloy steel (AISI 4140), high-strength heat-treated."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 3, PR2 and material class AA mean on the Tubing Head, API 6BX 15K nameplate?",
+          "a": "On the Tubing Head, API 6BX 15K, PSL 3 sets the inspection, testing and traceability level, PR2 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Tubing Head, API 6BX 15K a dimensional interchange for?",
+          "a": "The listing names NOV ML-15 15K, Cameron Type SS-15 15K, FMC SDX 15K, Stream-Flo SD 15K as the recognised dimensional and metallurgical interchange for the Tubing Head, API 6BX 15K. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Tubing Head, API 6BX 15K?",
+          "a": "The Tubing Head, API 6BX 15K top connection is API 6BX 15K studded flange — 11 in, BX-158 ring groove, and the bottom connection is API 6BX 15K studded flange. The vertical through-bore is 2-1/16 in / 3-1/16 in, size 11 in × 2-1/16 in / 3-1/16 in tubing. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tubing Head, API 6BX 15K and how is it tested?",
+          "a": "The Tubing Head, API 6BX 15K is rated 15,000 psi working pressure (15K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Tubing Head, API 6BX 15K suitable for sour (H2S) service?",
+          "a": "No. The Tubing Head, API 6BX 15K is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Tubing Head, API 6BX 15K?",
+          "a": "The Tubing Head, API 6BX 15K is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "Which ring gasket does the Tubing Head, API 6BX 15K take?",
+          "a": "The listed ring groove is BX-158, so the Tubing Head, API 6BX 15K takes the matching ring joint gasket; fit a new ring each time the joint is made up. See the [BX-158 ring joint gasket](/p/bx-158-ring-joint-gasket) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Tubing Head, API 6BX 15K installed?",
+          "a": "Typical applications of the Tubing Head, API 6BX 15K are deep gas-well wellheads, 15k frac-stimulation wellheads, high-pressure subsea-pre-installation wellheads. It sits as the tubing head in the 15K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tubing Head, API 6BX 15K differ from the Tubing Head, API 6B 5K?",
+          "a": "The Tubing Head, API 6BX 15K is a tubing head at 15,000 psi; the Tubing Head, API 6B 5K is a tubing head. They sit at different places in the wellhead stack. See the [Tubing Head, API 6B 5K](/p/tubing-head-api-6b-5k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tubing Head, API 6BX 15K made, and what is the lead time?",
+          "a": "The listing gives USA as the country of origin of this National Oilwell Varco tubing head, with a typical lead time of 84 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Tubing Head, API 6BX 15K, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Tubing Head, API 6BX 15K, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "casing-head-api-6b-3k-multi-bowl-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Casing Head, API 6B 3K (Multi-Bowl) used for?",
+          "a": "The Casing Head, API 6B 3K (Multi-Bowl) is an API 6A casing head rated 3,000 psi working pressure (3K class), standard service.  The body is Forged alloy steel (AISI 4130)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1, PR1 and material class AA mean on the Casing Head, API 6B 3K (Multi-Bowl) nameplate?",
+          "a": "On the Casing Head, API 6B 3K (Multi-Bowl), PSL 1 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Casing Head, API 6B 3K (Multi-Bowl) a dimensional interchange for?",
+          "a": "The listing names Stream-Flo Casing Head, Cameron Type WH 3K, FMC Casing Head as the recognised dimensional and metallurgical interchange for the Casing Head, API 6B 3K (Multi-Bowl). It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Casing Head, API 6B 3K (Multi-Bowl)?",
+          "a": "The Casing Head, API 6B 3K (Multi-Bowl) top connection is API 6B 3K studded flange — 13-5/8 in, R-57 or RX-57 ring groove, and the bottom connection is Surface casing thread / weld-on (e.g. 13-3/8 in BTC casing thread). The vertical through-bore is 11 in (intermediate casing), size 13-5/8 in × 11 in bowl. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Casing Head, API 6B 3K (Multi-Bowl) and how is it tested?",
+          "a": "The Casing Head, API 6B 3K (Multi-Bowl) is rated 3,000 psi working pressure (3K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Casing Head, API 6B 3K (Multi-Bowl) suitable for sour (H2S) service?",
+          "a": "No. The Casing Head, API 6B 3K (Multi-Bowl) is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Casing Head, API 6B 3K (Multi-Bowl)?",
+          "a": "The Casing Head, API 6B 3K (Multi-Bowl) is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "Which ring gasket does the Casing Head, API 6B 3K (Multi-Bowl) take?",
+          "a": "The listed ring groove is R-57, so the Casing Head, API 6B 3K (Multi-Bowl) takes the matching ring joint gasket; fit a new ring each time the joint is made up. See the [R-57 ring joint gasket](/p/r-57-ring-joint-gasket) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Casing Head, API 6B 3K (Multi-Bowl) installed?",
+          "a": "Typical applications of the Casing Head, API 6B 3K (Multi-Bowl) are surface casing landing, intermediate casing landing, bop stack lower interface. It sits as the casing head in the 3K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Casing Head, API 6B 3K (Multi-Bowl) differ from the Wellhead Studded Adapter, API 6BX 15K?",
+          "a": "The Casing Head, API 6B 3K (Multi-Bowl) is a casing head at 3,000 psi; the Wellhead Studded Adapter, API 6BX 15K is a wellhead studded adapter. They sit at different places in the wellhead stack. See the [Wellhead Studded Adapter, API 6BX 15K](/p/wellhead-studded-adapter-api-6bx-15k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Casing Head, API 6B 3K (Multi-Bowl) made, and what is the lead time?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries casing head, with a typical lead time of 28 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Casing Head, API 6B 3K (Multi-Bowl), Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Casing Head, API 6B 3K (Multi-Bowl), Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tubing-head-adapter-5k-to-10k-api-6b-6bx-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tubing Head Adapter (5K to 10K), API 6B × 6BX used for?",
+          "a": "The Tubing Head Adapter (5K to 10K), API 6B × 6BX is an API 6A tubing head adapter rated 5,000 psi working pressure (5K class), standard service. bridges a 5K tubing head to a 10K Christmas tree. The body is Forged alloy steel (AISI 4130)."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 2, PR1 and material class AA mean on the Tubing Head Adapter (5K to 10K), API 6B × 6BX nameplate?",
+          "a": "On the Tubing Head Adapter (5K to 10K), API 6B × 6BX, PSL 2 sets the inspection, testing and traceability level, PR1 sets the design-validation level, material class AA sets the body chemistry and temperature class P covers -20 °F to +180 °F. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "C",
+          "q": "Which OEM wellhead lines is the Tubing Head Adapter (5K to 10K), API 6B × 6BX a dimensional interchange for?",
+          "a": "The listing names Stream-Flo THA, Cameron Tubing Head Adapter, FMC SDX TH Adapter as the recognised dimensional and metallurgical interchange for the Tubing Head Adapter (5K to 10K), API 6B × 6BX. It is supplied by Indus Hydraulics with no implied authorised-distributor relationship with those makers; confirm ring grooves and bolting before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What are the top and bottom connections of the Tubing Head Adapter (5K to 10K), API 6B × 6BX?",
+          "a": "The Tubing Head Adapter (5K to 10K), API 6B × 6BX top connection is API 6BX 10K studded — to mate with Christmas tree, and the bottom connection is API 6B 5K studded — to mate with tubing head. The vertical through-bore is 2-9/16 in / 3-1/16 in, size 5K × 10K studded. Confirm the ring-groove series against the mating flange before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tubing Head Adapter (5K to 10K), API 6B × 6BX and how is it tested?",
+          "a": "The Tubing Head Adapter (5K to 10K), API 6B × 6BX is rated 5,000 psi working pressure (5K class), at PSL and PR as marked. A hydrostatic shell test to API 6A is carried out on every unit, and the shell test is a proof test, never a working pressure. Temperature class P covers -20 °F to +180 °F."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Tubing Head Adapter (5K to 10K), API 6B × 6BX suitable for sour (H2S) service?",
+          "a": "No. The Tubing Head Adapter (5K to 10K), API 6B × 6BX is standard service, material class AA, for clean hydrocarbon and water-cut wellbores. For sour wells ask for the NACE MR0175 variant, such as the [sour-service API 6BX tubing head](/p/tubing-head-api-6bx-10k-sour-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and documents come with the Tubing Head Adapter (5K to 10K), API 6B × 6BX?",
+          "a": "The Tubing Head Adapter (5K to 10K), API 6B × 6BX is made to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. The listing also gives EN 10204 3.1 / 3.2 mill test reports, ring-groove dimension certificates and hardness reports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tubing Head Adapter (5K to 10K), API 6B × 6BX mate with in a wellhead stack?",
+          "a": "The Tubing Head Adapter (5K to 10K), API 6B × 6BX (5K, 5,000 psi) mates with matched-class gate valves, API 6B or 6BX flanges, ring joint gaskets, bolting and hangers of the same pressure class. See the [ring joint gasket range](/c/ring-joint-gaskets) and the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the Tubing Head Adapter (5K to 10K), API 6B × 6BX installed?",
+          "a": "Typical applications of the Tubing Head Adapter (5K to 10K), API 6B × 6BX are pressure-class step-up between wellhead and tree, wellhead retrofits, workover-driven pressure upgrades. It sits as the tubing head adapter in the 5K stack; see the [wellhead components guide](/blog/wellhead-components-explained) for the order of components from casing head to tree."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tubing Head Adapter (5K to 10K), API 6B × 6BX differ from the Wellhead Studded Adapter, API 6BX 15K?",
+          "a": "The Tubing Head Adapter (5K to 10K), API 6B × 6BX is a tubing head adapter at 5,000 psi; the Wellhead Studded Adapter, API 6BX 15K is a wellhead studded adapter. They sit at different places in the wellhead stack. See the [Wellhead Studded Adapter, API 6BX 15K](/p/wellhead-studded-adapter-api-6bx-15k-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tubing Head Adapter (5K to 10K), API 6B × 6BX made, and what is the lead time?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries tubing head adapter, with a typical lead time of 28 days. We supply it from Dubai, UAE and export worldwide with full API 6A traceability."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Tubing Head Adapter (5K to 10K), API 6B × 6BX, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Tubing Head Adapter (5K to 10K), API 6B × 6BX, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

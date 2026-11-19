@@ -1,0 +1,344 @@
+{
+  "family": "two-stage-hydraulic-pumps",
+  "extraFacts": [
+    {
+      "fact": "Pump flow in GPM is displacement in cubic inches per revolution multiplied by shaft rpm and divided by 231 (1 US gallon = 231 cubic inches); the size-table flows of the Anfield, Bailey and Haldex pumps match this at 3,600 rpm (0.71 in³/rev gives about 11 GPM).",
+      "source": "Standard hydraulic pump flow formula; checked against the listed flow figures"
+    },
+    {
+      "fact": "A two-stage (hi-lo) gear pump has a large and a small pumping section: both deliver together for fast approach at low pressure, then the large section unloads and only the small one supplies the high-pressure stroke.",
+      "source": "Indus guide: two-stage hydraulic pumps for log splitters (/blog/two-stage-hydraulic-pumps-log-splitter)"
+    },
+    {
+      "fact": "Displacement of the 22 and 28 GPM pumps: Anfield APHFL22PR 1.27 and APHFL28PR 1.62 in³/rev; Haldex Barnes 1057 1.41 and 1058 1.8 in³/rev.",
+      "source": "Indus Hydraulics size tables for the Anfield and Haldex Barnes two-stage pump listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "anfield-two-stage-log-splitter-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Anfield Two-Stage Log Splitter Pumps and what are they used for?",
+          "a": "The Anfield Two-Stage Log Splitter Pumps are hi-lo gear pumps for log splitters, in six part numbers from 0.51 to 1.62 in³/rev displacement and 8 to 28 GPM. A two-stage pump delivers high flow at low pressure to close the gap quickly, then shifts to its low-flow, high-pressure stage when the load builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Anfield Two-Stage Log Splitter Pumps, such as APHL8PR and APHFL22PR?",
+          "a": "In the table the number in the part number is the flow in GPM: APHL8PR is 8 GPM, APHL16PR is 16 GPM and APHFL22PR is 22 GPM. The FL versions (APHFL22PR and APHFL28PR) have the 2 bolt SAE A flange, while the HL versions have the 4 bolt standard mount."
+        },
+        {
+          "slot": "D",
+          "q": "What displacements and flows do the Anfield Two-Stage Log Splitter Pumps offer?",
+          "a": "The six pumps give 8, 11, 13, 16, 22 and 28 GPM from displacements of 0.51, 0.71, 0.83, 1.03, 1.27 and 1.62 in³/rev. Pick the flow that your engine speed and cylinder size need, and see our [log splitter pump guide](/blog/two-stage-hydraulic-pumps-log-splitter) for the sums."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting and shaft do the Anfield Two-Stage Log Splitter Pumps have?",
+          "a": "APHL8PR to APHL16PR have a 4 bolt standard mount, and APHFL22PR and APHFL28PR have a 2 bolt SAE A mount with a 3.25\" pilot. The 11 and 16 GPM pumps list a keyed 0.50\" shaft and the two large pumps a keyed 0.625\" shaft; the 8 and 13 GPM rows give no shaft."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Anfield Two-Stage Log Splitter Pumps rated for?",
+          "a": "The listing publishes no pressure rating for the Anfield Two-Stage Log Splitter Pumps, only displacement and flow. Ask us for Anfield's rating for your part number before you set the relief valve, and match the hose and cylinder to it."
+        },
+        {
+          "slot": "H",
+          "q": "What ports do the Anfield Two-Stage Log Splitter Pumps have?",
+          "a": "The 8 to 16 GPM pumps have a 1\" barb inlet and a 1/2\" NPT outlet, and the 22 and 28 GPM pumps have a 1\" NPT inlet and a 3/4\" NPT outlet. Plan hose sizes from those ports, using a larger suction hose for the bigger pumps."
+        },
+        {
+          "slot": "I",
+          "q": "What rotation do the Anfield Two-Stage Log Splitter Pumps turn, and how should they be installed?",
+          "a": "All six Anfield Two-Stage Log Splitter Pumps are listed clockwise (CW). Match the pump rotation to the engine direction before fitting, bolt it to the 4 bolt or SAE A mount, and keep the suction line short and tight so the pump does not draw air."
+        },
+        {
+          "slot": "J",
+          "q": "Which of the Anfield Two-Stage Log Splitter Pumps suits a small log splitter engine?",
+          "a": "The smaller pumps, 8 GPM (APHL8PR) to 16 GPM (APHL16PR), suit smaller engines, while the 22 GPM (APHFL22PR) and 28 GPM (APHFL28PR) flanged pumps need a larger engine and the SAE A mount. Check the engine power against the flow and pressure you need."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Anfield pumps compare with the Haldex Barnes two-stage log splitter pumps?",
+          "a": "Both ranges cover 11 to 28 GPM with the same two mounting patterns, but the [Haldex Barnes pumps](/p/haldex-barnes-two-stage-log-splitter-pumps) list 1.41 and 1.8 in³/rev for 22 and 28 GPM where these list 1.27 and 1.62. Compare the row you need, and ask us which is the better match for your engine."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet or pressure curve for the Anfield Two-Stage Log Splitter Pumps?",
+          "a": "This listing carries no datasheet or pressure curve for the Anfield Two-Stage Log Splitter Pumps. Send us the part number and the engine speed you will use, and we request the maker's data so you can check the mount, ports and rating before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "How do I work out the flow of the Anfield Two-Stage Log Splitter Pumps at my engine speed?",
+          "a": "Flow in GPM is displacement in cubic inches per revolution multiplied by rpm and divided by 231. The listed flows match 3,600 rpm, so for example 0.71 in³/rev gives about 11 GPM; at a slower engine speed the flow falls in proportion, so size the pump for the speed you will actually run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Anfield Two-Stage Log Splitter Pumps in Dubai for export?",
+          "a": "Yes. We keep the Anfield Two-Stage Log Splitter Pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bailey-two-stage-log-splitter-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Bailey Two-Stage Log Splitter Pumps and what are they used for?",
+          "a": "The Bailey Two-Stage Log Splitter Pumps are small hi-lo gear pumps for log splitters, in seven part numbers from 0.32 to 0.71 in³/rev and 5 to 11 GPM, all with a 4 bolt standard mount. A two-stage pump delivers high flow at low pressure to close the gap quickly, then shifts to its low-flow, high-pressure stage."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the Bailey Two-Stage Log Splitter Pumps part numbers such as 249005, 250095 and 250098B?",
+          "a": "The table lists 249005 and 250095 as the same pump (0.32 in³/rev, 5 GPM) and 249007 and 250096 as the same (0.45 in³/rev, 7 GPM), with 250097 at 9 GPM and 250003B at 11 GPM. 250098B has no data in the table, so ask us for its specification before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What displacements and flows do the Bailey Two-Stage Log Splitter Pumps offer?",
+          "a": "The pumps give 5, 7, 9 and 11 GPM from displacements of 0.32, 0.45, 0.58 and 0.71 in³/rev. The table repeats the 5 and 7 GPM sizes under two part numbers each; see our [log splitter pump guide](/blog/two-stage-hydraulic-pumps-log-splitter) for choosing the flow."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting, shaft and ports do the Bailey Two-Stage Log Splitter Pumps have?",
+          "a": "The listed pumps have a 4 bolt standard mount, a keyed 0.50\" shaft and 1/2\" NPT inlet and outlet ports. That is the same footprint on every row, so a larger or smaller Bailey pump can usually replace another on the same engine bracket."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Bailey Two-Stage Log Splitter Pumps rated for?",
+          "a": "The listing publishes no pressure rating for the Bailey Two-Stage Log Splitter Pumps. Ask us for Bailey's rating for your part number before you set the relief valve, and keep the hose and cylinder rated at least as high."
+        },
+        {
+          "slot": "H",
+          "q": "What is the difference between the clockwise and counter-clockwise Bailey Two-Stage Log Splitter Pumps?",
+          "a": "Six of the listed pumps turn clockwise (CW) and 250003B turns counter-clockwise (CCW), at 11 GPM and 0.71 in³/rev. Match the pump to the direction your engine turns, because a pump run backwards will not prime."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Bailey Two-Stage Log Splitter Pumps be installed?",
+          "a": "Bolt the pump to the 4 bolt mount, align the keyed 0.50\" shaft with the engine coupling, and connect the 1/2\" NPT ports with hose rated for the circuit. Keep the suction line short, and fill the pump with oil before the first start."
+        },
+        {
+          "slot": "J",
+          "q": "Which of the Bailey Two-Stage Log Splitter Pumps suits a small log splitter engine?",
+          "a": "The 5 GPM pump (0.32 in³/rev) and 7 GPM pump (0.45 in³/rev) suit smaller engines, and the 9 GPM and 11 GPM ones need more engine power. Check the engine power against the flow and pressure the splitter needs."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Bailey pumps compare with the Anfield and Haldex Barnes two-stage pumps?",
+          "a": "The Bailey pumps start lower, at 5 GPM, while the [Anfield pumps](/p/anfield-two-stage-log-splitter-pumps) and [Haldex Barnes pumps](/p/haldex-barnes-two-stage-log-splitter-pumps) start at 8 and 11 GPM and run to 28 GPM. Choose Bailey for the smaller engines and the others where you need more flow."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet or pressure curve for the Bailey Two-Stage Log Splitter Pumps?",
+          "a": "This listing carries no datasheet or pressure curve for the Bailey Two-Stage Log Splitter Pumps. Send us the part number and the engine speed you will use, and we request the maker's data so you can check the mount, ports and rating before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "How do I work out the flow of the Bailey Two-Stage Log Splitter Pumps at my engine speed?",
+          "a": "Flow in GPM is displacement in cubic inches per revolution multiplied by rpm and divided by 231. The listed flows match 3,600 rpm, so for example 0.71 in³/rev gives about 11 GPM; at a slower engine speed the flow falls in proportion, so size the pump for the speed you will actually run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Bailey Two-Stage Log Splitter Pumps in Dubai for export?",
+          "a": "Yes. We keep the Bailey Two-Stage Log Splitter Pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-hydraulic-gear-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Chief Hydraulic Gear Pumps and what are they used for?",
+          "a": "The Chief Hydraulic Gear Pumps are external-drive hydraulic gear pumps for log splitters, in three part numbers: CBNA-8.8/3.6A, which is listed as a two-stage 11 gpm pump, and 250092 and 250093 at 11 and 13 gpm. They have a 4 bolt mount, a clockwise rotation and an NPT discharge."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the Chief Hydraulic Gear Pumps part numbers CBNA-8.8/3.6A, 250092 and 250093?",
+          "a": "CBNA-8.8/3.6A is described as a two stage 11 gpm pump, 250092 as an 11 gpm pump and 250093 as a 13 gpm pump. The listing gives no decode of the numbers, so quote the part number or the flow you need."
+        },
+        {
+          "slot": "D",
+          "q": "What flows do the Chief Hydraulic Gear Pumps offer?",
+          "a": "The Chief Hydraulic Gear Pumps offer 11 gpm (CBNA-8.8/3.6A and 250092) and 13 gpm (250093). The listing gives no displacement figure, so ask us for it if you need to match the pump to an engine speed."
+        },
+        {
+          "slot": "D",
+          "q": "What mounting and rotation do the Chief Hydraulic Gear Pumps have?",
+          "a": "The Chief Hydraulic Gear Pumps have a 4 bolt mount (listed as 4F17 with 4 bolts), an external drive and clockwise (CW) rotation, and are listed for the log splitter application. Check the engine bracket matches the 4 bolt pattern before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Chief Hydraulic Gear Pumps rated for?",
+          "a": "The listing gives no pressure rating for the Chief Hydraulic Gear Pumps. For tooling pumps the listing says to check flow, pressure and shaft or mounting against the machine before ordering, so ask us for Chief's rating for your part number."
+        },
+        {
+          "slot": "H",
+          "q": "What discharge connection do the Chief Hydraulic Gear Pumps have?",
+          "a": "The Chief Hydraulic Gear Pumps have an NPT discharge connection. NPT is a tapered pipe thread that seals on the thread, so use NPT fittings for the outlet hose and tell us the port size if your hose is already chosen."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Chief Hydraulic Gear Pumps be installed?",
+          "a": "Bolt the pump to the 4 bolt mount, run it clockwise, and connect the NPT discharge with hose rated for the circuit. Keep the suction line short and tight, and fill the pump with oil before the first start."
+        },
+        {
+          "slot": "J",
+          "q": "Which of the Chief Hydraulic Gear Pumps suits a log splitter?",
+          "a": "All three are listed for the log splitter application. The 11 gpm CBNA-8.8/3.6A is the one described as two stage, so choose it where you want the high-flow approach and high-pressure stroke, and the 13 gpm 250093 where you need more flow."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Chief Hydraulic Gear Pumps compare with the Bailey and Haldex Barnes two-stage pumps?",
+          "a": "The Chief listing gives flow only, while the [Bailey two-stage pumps](/p/bailey-two-stage-log-splitter-pumps) and [Haldex Barnes pumps](/p/haldex-barnes-two-stage-log-splitter-pumps) also list displacement, ports and shaft. Use those pages if you need those figures, or ask us for the Chief data."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Chief Hydraulic Gear Pumps made?",
+          "a": "The listing gives China as the country of origin for the Chief Hydraulic Gear Pumps. We supply from Dubai, UAE and ship worldwide."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet or pressure curve for the Chief Hydraulic Gear Pumps?",
+          "a": "This listing carries no datasheet or pressure curve for the Chief Hydraulic Gear Pumps. Send us the part number and the engine speed you will use, and we request the maker's data so you can check the displacement, ports and rating before ordering."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Hydraulic Gear Pumps in Dubai for export?",
+          "a": "Yes. We keep the Chief Hydraulic Gear Pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-gp-cbn-hi-lo-two-stage-gear-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps and what are they used for?",
+          "a": "The Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps are small hi-lo two-stage gear pumps in five part numbers, with displacements of 2.1 to 7.63 cm³/rev (0.13 to 0.465 in³/rev) and a stated maximum pressure of up to 400 psi. A two-stage pump delivers high flow at low pressure, then shifts to its low-flow, high-pressure stage."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps part numbers such as GP-CBN-080-P-C and GP-CBN-280-P-C?",
+          "a": "The table gives each part number a displacement: GP-CBN-080-P-C is 2.1 cm³/rev, -090 is 3.6, -160 is 4.2 and both -220 and -280 are 7.63 cm³/rev. -220 and -280 differ only in shaft, a 1/2\" straight shaft on -220 and a 5/8\" straight shaft on -280."
+        },
+        {
+          "slot": "D",
+          "q": "What displacements do the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps offer?",
+          "a": "The five pumps give 2.1, 3.6, 4.2 and 7.63 cm³/rev, which is 0.13, 0.22, 0.256 and 0.465 in³/rev. Two pumps share the 7.63 cm³/rev size, so choose by shaft and the flow your engine speed gives."
+        },
+        {
+          "slot": "D",
+          "q": "What speed are the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps rated for?",
+          "a": "Every row of the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps lists a rated speed of 3,000 rpm and a maximum of 3,600 rpm. Do not run the pump above 3,600 rpm, and size the flow from the displacement at the speed your engine or motor actually turns."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps?",
+          "a": "The listing states a maximum pressure of up to 400 psi for the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps, and every row carries 400 psi. Treat that as a maximum, not a working figure, keep the relief valve below it, and ask us to confirm the pressure basis for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What shaft do the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps have?",
+          "a": "Four of the five pumps have a 1/2\" diameter straight shaft (GP-CBN-080, -090, -160 and -220) and GP-CBN-280-P-C has a 5/8\" diameter straight shaft. Match the shaft diameter to your coupling or engine."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet for the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps?",
+          "a": "This listing carries no datasheet for the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps. Send us the part number and we request the maker's drawing so you can check the mounting, ports and rotation before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting do the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps have?",
+          "a": "The listing does not state the port or mounting detail for the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps, only displacement, speed, pressure and shaft. Ask us for the drawing for your part number before you plan the hose and bracket."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps be installed?",
+          "a": "Align the 1/2\" or 5/8\" straight shaft with the drive coupling, bolt the pump to the bracket, and connect hose rated for the circuit. Keep the speed within the 3,600 rpm maximum, and fill the pump with oil before the first start."
+        },
+        {
+          "slot": "J",
+          "q": "Which of the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps suits a small hydraulic circuit?",
+          "a": "The 2.1 cm³/rev pump (GP-CBN-080-P-C) is the smallest and the two 7.63 cm³/rev pumps the largest. At the stated 400 psi maximum these are small pumps, so choose by the flow you need and confirm the pressure for your application."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps compare with the Anfield, Bailey and Haldex Barnes pumps?",
+          "a": "The Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps are listed in cm³/rev with a stated 400 psi maximum, while the [Anfield pumps](/p/anfield-two-stage-log-splitter-pumps) and [Haldex Barnes pumps](/p/haldex-barnes-two-stage-log-splitter-pumps) are listed in in³/rev and GPM for log splitters. Use those for log splitter flows of 8 to 28 GPM."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps in Dubai for export?",
+          "a": "Yes, the Dynamic Fluid Components GP-CBN Hi/Lo Two-Stage Gear Pumps are held in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "haldex-barnes-two-stage-log-splitter-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Haldex Barnes Two-Stage Log Splitter Pumps and what are they used for?",
+          "a": "The Haldex Barnes Two-Stage Log Splitter Pumps are hi-lo gear pumps for log splitters, in five part numbers from 0.71 to 1.8 in³/rev and 11 to 28 GPM. A two-stage pump delivers high flow at low pressure to close the gap quickly, then shifts to its low-flow, high-pressure stage when the load builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the Haldex Barnes Two-Stage Log Splitter Pumps part numbers 1012, 1053, 1056, 1057 and 1058?",
+          "a": "The table gives 1012 at 11 GPM (0.71 in³/rev), 1053 at 13 GPM, 1056 at 16 GPM, 1057 at 22 GPM and 1058 at 28 GPM (1.8 in³/rev). The listing gives no decode of the numbers, so choose by the flow, mount and ports."
+        },
+        {
+          "slot": "D",
+          "q": "What displacements and flows do the Haldex Barnes Two-Stage Log Splitter Pumps offer?",
+          "a": "The five pumps give 11, 13, 16, 22 and 28 GPM from displacements of 0.71, 0.83, 1.03, 1.41 and 1.8 in³/rev. See our [log splitter pump guide](/blog/two-stage-hydraulic-pumps-log-splitter) for matching flow to engine speed and cylinder size."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting, shaft and ports do the Haldex Barnes Two-Stage Log Splitter Pumps have?",
+          "a": "1012, 1053 and 1056 have a 4 bolt standard mount and a keyed 0.50\" shaft, with a 3/4\" or 1\" barb inlet and 1/2\" NPT outlet. 1057 and 1058 have a 2 bolt SAE A mount with a 3.25\" pilot and a keyed 0.625\" shaft, with a 1-1/4\" barb inlet and 1\" NPT outlet."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Haldex Barnes Two-Stage Log Splitter Pumps rated for?",
+          "a": "The listing publishes no pressure rating for the Haldex Barnes Two-Stage Log Splitter Pumps, only displacement and flow. Ask us for Haldex's rating for your part number before you set the relief valve, and keep the hose and cylinder rated at least as high."
+        },
+        {
+          "slot": "H",
+          "q": "What inlet and outlet ports do the Haldex Barnes Two-Stage Log Splitter Pumps have?",
+          "a": "The inlet is a barb: 3/4\" on 1012 and 1053, 1\" on 1056 and 1-1/4\" on 1057 and 1058. The outlet is NPT: 1/2\" on the three smaller pumps and 1\" on the two larger ones. Size the suction hose to the barb."
+        },
+        {
+          "slot": "I",
+          "q": "What rotation do the Haldex Barnes Two-Stage Log Splitter Pumps turn, and how should they be installed?",
+          "a": "All five Haldex Barnes Two-Stage Log Splitter Pumps are listed clockwise (CW). Match the rotation to your engine, bolt the pump to its 4 bolt or SAE A mount, keep the suction line short and tight, and fill the pump with oil before the first start."
+        },
+        {
+          "slot": "J",
+          "q": "Which of the Haldex Barnes Two-Stage Log Splitter Pumps suits a small log splitter engine?",
+          "a": "1012 (11 GPM) and 1053 (13 GPM) suit smaller engines, and 1057 (22 GPM) and 1058 (28 GPM) need a larger engine and the SAE A mount. Check the engine power against the flow and pressure the splitter needs."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Haldex Barnes pumps compare with the Anfield pumps?",
+          "a": "Both ranges run from 11 to 28 GPM with the same two mounting patterns, but the Haldex pumps list 1.41 and 1.8 in³/rev for 22 and 28 GPM while the [Anfield pumps](/p/anfield-two-stage-log-splitter-pumps) list 1.27 and 1.62. Compare the row you need and ask us which is the better match."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet or pressure curve for the Haldex Barnes Two-Stage Log Splitter Pumps?",
+          "a": "This listing carries no datasheet or pressure curve for the Haldex Barnes Two-Stage Log Splitter Pumps. Send us the part number and the engine speed you will use, and we request the maker's data so you can check the mount, ports and rating before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "How do I work out the flow of the Haldex Barnes Two-Stage Log Splitter Pumps at my engine speed?",
+          "a": "Flow in GPM is displacement in cubic inches per revolution multiplied by rpm and divided by 231. The listed flows match 3,600 rpm, so for example 0.71 in³/rev gives about 11 GPM; at a slower engine speed the flow falls in proportion, so size the pump for the speed you will actually run."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Haldex Barnes Two-Stage Log Splitter Pumps in Dubai for export?",
+          "a": "Yes. We keep the Haldex Barnes Two-Stage Log Splitter Pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

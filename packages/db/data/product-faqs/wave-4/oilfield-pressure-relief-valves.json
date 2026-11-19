@@ -1,0 +1,608 @@
+{
+  "family": "oilfield-pressure-relief-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined: the male half of a 602 or 1002 union can make up into a 1502 wing nut and look made up, then separate under pressure. Mismatched unions have caused fatalities and IADC recommends colour coding, go/no-go gauges and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 and 03-16 (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "ANSI raised-face flanged valve ends are dimensioned to ASME B16.5.",
+      "source": "ASME B16.5 Pipe Flanges and Flanged Fittings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "pressure-relief-valve-spring-loaded-2-in-1502-m-f-15-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 15,000 psi spring-loaded pressure relief valve used for?",
+          "a": "A 2 in 15,000 psi spring-loaded pressure relief valve (15K, sour service) is a spring-loaded relief valve that lifts at its set pressure to protect the line or vessel from over-pressure. NACE MR0175 compliant — sour-well frac iron over-pressure protection."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 15,000 psi spring-loaded pressure relief valve mean?",
+          "a": "On this spring-loaded pressure relief valve the listing gives a 2 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this spring-loaded pressure relief valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 15,000 psi spring-loaded pressure relief valve have?",
+          "a": "On the 2 in 15,000 psi spring-loaded pressure relief valve (sour service) the inlet is 2 in 1502 Male Weco Union and the outlet is 2 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 15,000 psi spring-loaded pressure relief valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 15,000 psi (sour service); the [3-1/8 in 5,000 psi spring-loaded pressure relief valve](/p/pressure-relief-valve-spring-loaded-3-1-8-in-5m-flanged-5-000-psi-sour-service) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 15,000 psi spring-loaded pressure relief valve, and how is it tested?",
+          "a": "The 2 in 15,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 15,000 psi spring-loaded pressure relief valve made from?",
+          "a": "The 2 in 15,000 psi spring-loaded pressure relief valve has a Forged AISI 4130 body; the trim is 316SS disc + nozzle, NACE-compliant Inconel X-750 spring and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The spring is hardness-controlled to suit the service."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 15,000 psi spring-loaded pressure relief valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 15,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. The listing gives Other for the body rating, and test certificates are supplied with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 2 in 15,000 psi spring-loaded relief valve?",
+          "a": "The listing figure of 15,000 psi is the body rating, not the set pressure. The set pressure is made to order, so state it on the RFQ together with the media, flow rate and temperature, and read the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 15,000 psi spring-loaded pressure relief valve operated and maintained?",
+          "a": "On the 2 in 15,000 psi spring-loaded pressure relief valve, the spring sets the lift pressure and it is factory-set to the pressure ordered, so do not adjust it in the field. Inspect and test-lift the valve at the interval set by your plant procedure, and replace the seals after any lift. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 15,000 psi spring-loaded pressure relief valve compare with a pilot-operated pressure relief valve?",
+          "a": "The 2 in 15,000 psi spring-loaded valve opens when line pressure overcomes the spring, while a pilot-operated valve uses a pilot to hold a tighter set point and suits processing systems. See the [Pressure Relief Valve, 3 in, 740 psi](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 15,000 psi spring-loaded pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson spring-loaded pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Spring-Loaded, 2 in × 1502 M×F, 15,000 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Spring-Loaded, 2 in × 1502 M×F, 15,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 35 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-spring-loaded-2-in-602-m-f-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 6,000 psi spring-loaded pressure relief valve used for?",
+          "a": "A 2 in 6,000 psi spring-loaded pressure relief valve (6K, sour service) is a spring-loaded relief valve that lifts at its set pressure to protect the line or vessel from over-pressure. 602 union — production-test iron over-pressure for sour wells."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 602 union end on the 2 in 6,000 psi spring-loaded pressure relief valve mean?",
+          "a": "On this spring-loaded pressure relief valve the listing gives a 2 in 602 male Weco union on the inlet and a female union on the outlet. 602 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this spring-loaded pressure relief valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 6,000 psi spring-loaded pressure relief valve have?",
+          "a": "On the 2 in 6,000 psi spring-loaded pressure relief valve (sour service) the inlet is 2 in 602 Male Weco Union and the outlet is 2 in 602 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 6,000 psi spring-loaded pressure relief valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 6,000 psi (sour service); the [3-1/8 in 5,000 psi spring-loaded pressure relief valve](/p/pressure-relief-valve-spring-loaded-3-1-8-in-5m-flanged-5-000-psi-sour-service) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 6,000 psi spring-loaded pressure relief valve, and how is it tested?",
+          "a": "The 2 in 6,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is rated 6,000 psi working pressure (6K class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 6,000 psi spring-loaded pressure relief valve made from?",
+          "a": "The 2 in 6,000 psi spring-loaded pressure relief valve has a Forged AISI 4130 body; the trim is 316SS disc + nozzle, NACE-compliant Inconel X-750 spring and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The spring is hardness-controlled to suit the service."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 6,000 psi spring-loaded pressure relief valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 6,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. The listing gives Other for the body rating, and test certificates are supplied with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 2 in 6,000 psi spring-loaded relief valve?",
+          "a": "The listing figure of 6,000 psi is the body rating, not the set pressure. The set pressure is made to order, so state it on the RFQ together with the media, flow rate and temperature, and read the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 6,000 psi spring-loaded pressure relief valve operated and maintained?",
+          "a": "On the 2 in 6,000 psi spring-loaded pressure relief valve, the spring sets the lift pressure and it is factory-set to the pressure ordered, so do not adjust it in the field. Inspect and test-lift the valve at the interval set by your plant procedure, and replace the seals after any lift. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 6,000 psi spring-loaded pressure relief valve compare with a pilot-operated pressure relief valve?",
+          "a": "The 2 in 6,000 psi spring-loaded valve opens when line pressure overcomes the spring, while a pilot-operated valve uses a pilot to hold a tighter set point and suits processing systems. See the [Pressure Relief Valve, 3 in, 740 psi](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 6,000 psi spring-loaded pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson spring-loaded pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Spring-Loaded, 2 in × 602 M×F, 6,000 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Spring-Loaded, 2 in × 602 M×F, 6,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 28 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 740 psi pilot-operated pressure relief valve used for?",
+          "a": "A 3 in 740 psi pilot-operated pressure relief valve (ANSI 300, sour service) is a pilot-operated relief valve that holds a tight set point for protecting gas-processing systems from over-pressure. Tight-setpoint protection for sour-gas processing systems."
+        },
+        {
+          "slot": "B",
+          "q": "What flange does the 3 in 740 psi valve use?",
+          "a": "Both ends are 3 in 300# ANSI Raised-Face Flange, built to ASME B16.5 flange dimensions. The flange class sets the pressure limit at the joint, so use matching class flanges, studs and gaskets."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 740 psi pilot-operated pressure relief valve have?",
+          "a": "On the 3 in 740 psi pilot-operated pressure relief valve (sour service) the inlet is 3 in 300# ANSI Raised-Face Flange and the outlet is 4 in 150# ANSI Raised-Face Flange. Match the flange classes at inlet and outlet to the pipework, because the outlet class differs from the inlet."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 740 psi pilot-operated pressure relief valve or the 3 in 1,480 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 740 psi (sour service); the [3 in 1,480 psi pilot-operated pressure relief valve](/p/pressure-relief-valve-pilot-operated-3-in-600-rf-1-480-psi-sour-service) is rated 1,480 psi with 3 in 600# ANSI Raised-Face Flange on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 740 psi pilot-operated pressure relief valve, and how is it tested?",
+          "a": "The 3 in 740 psi pilot-operated pressure relief valve with its Cast WCB carbon steel body is rated 740 psi working pressure (ANSI 300 class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 740 psi pilot-operated pressure relief valve made from?",
+          "a": "The 3 in 740 psi pilot-operated pressure relief valve has a Cast WCB carbon steel body; the trim is 316SS disc + nozzle, NACE-compliant Inconel X-750 spring and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The pilot and main valve are in the same body rating."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 740 psi pilot-operated pressure relief valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 740 psi pilot-operated pressure relief valve with its Cast WCB carbon steel body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 526. The design specification on the listing is API 526, and test certificates are supplied with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 3 in 740 psi pilot-operated relief valve?",
+          "a": "The listing figure of 740 psi is the body rating of the 3 in inlet flange, not the set pressure, which is made to order. State the set pressure, media, flow and temperature on the RFQ; the outlet is 4 in 150# ANSI Raised-Face Flange. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 740 psi pilot-operated pressure relief valve operated and maintained?",
+          "a": "On the 3 in 740 psi pilot-operated pressure relief valve, the pilot controls the main valve, so keep the pilot sensing line clear and free of debris, and test-lift the valve at the interval set by your plant procedure. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 740 psi pilot-operated pressure relief valve compare with a spring-loaded pressure relief valve?",
+          "a": "The 3 in 740 psi pilot-operated valve holds a tighter set point because a pilot controls the main valve, while a spring-loaded valve is simpler and lifts when line pressure overcomes the spring. See the [Pressure Relief Valve, 2 in, 15,000 psi](/p/pressure-relief-valve-spring-loaded-2-in-1502-m-f-15-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 740 psi pilot-operated pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron pilot-operated pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Pilot-Operated, 3 in × 300# RF, 740 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Pilot-Operated, 3 in × 300# RF, 740 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-spring-loaded-2-in-1502-m-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 10,000 psi spring-loaded pressure relief valve used for?",
+          "a": "A 2 in 10,000 psi spring-loaded pressure relief valve (10K, sour service) is a spring-loaded relief valve that lifts at its set pressure to protect the line or vessel from over-pressure. NACE-compliant — 10K sour-well frac iron and intervention protection."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 10,000 psi spring-loaded pressure relief valve mean?",
+          "a": "On this spring-loaded pressure relief valve the listing gives a 2 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this spring-loaded pressure relief valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 10,000 psi spring-loaded pressure relief valve have?",
+          "a": "On the 2 in 10,000 psi spring-loaded pressure relief valve (sour service) the inlet is 2 in 1502 Male Weco Union and the outlet is 2 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 10,000 psi spring-loaded pressure relief valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 10,000 psi (sour service); the [3-1/8 in 5,000 psi spring-loaded pressure relief valve](/p/pressure-relief-valve-spring-loaded-3-1-8-in-5m-flanged-5-000-psi-sour-service) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 10,000 psi spring-loaded pressure relief valve, and how is it tested?",
+          "a": "The 2 in 10,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 10,000 psi spring-loaded pressure relief valve made from?",
+          "a": "The 2 in 10,000 psi spring-loaded pressure relief valve has a Forged AISI 4130 body; the trim is 316SS disc + nozzle, NACE-compliant Inconel X-750 spring and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The spring is hardness-controlled to suit the service."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 10,000 psi spring-loaded pressure relief valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 10,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. The listing gives Other for the body rating, and test certificates are supplied with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 2 in 10,000 psi spring-loaded relief valve?",
+          "a": "The listing figure of 10,000 psi is the body rating, not the set pressure. The set pressure is made to order, so state it on the RFQ together with the media, flow rate and temperature, and read the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 10,000 psi spring-loaded pressure relief valve operated and maintained?",
+          "a": "On the 2 in 10,000 psi spring-loaded pressure relief valve, the spring sets the lift pressure and it is factory-set to the pressure ordered, so do not adjust it in the field. Inspect and test-lift the valve at the interval set by your plant procedure, and replace the seals after any lift. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 10,000 psi spring-loaded pressure relief valve compare with a pilot-operated pressure relief valve?",
+          "a": "The 2 in 10,000 psi spring-loaded valve opens when line pressure overcomes the spring, while a pilot-operated valve uses a pilot to hold a tighter set point and suits processing systems. See the [Pressure Relief Valve, 3 in, 740 psi](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 10,000 psi spring-loaded pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron spring-loaded pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Spring-Loaded, 2 in × 1502 M×F, 10,000 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Spring-Loaded, 2 in × 1502 M×F, 10,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 35 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-pilot-operated-3-in-600-rf-1-480-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 1,480 psi pilot-operated pressure relief valve used for?",
+          "a": "A 3 in 1,480 psi pilot-operated pressure relief valve (ANSI 600, sour service) is a pilot-operated relief valve that holds a tight set point for protecting gas-processing systems from over-pressure. HP gas-processing tight-setpoint relief."
+        },
+        {
+          "slot": "B",
+          "q": "What flange does the 3 in 1,480 psi valve use?",
+          "a": "Both ends are 3 in 600# ANSI Raised-Face Flange, built to ASME B16.5 flange dimensions. The flange class sets the pressure limit at the joint, so use matching class flanges, studs and gaskets."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 1,480 psi pilot-operated pressure relief valve have?",
+          "a": "On the 3 in 1,480 psi pilot-operated pressure relief valve (sour service) the inlet is 3 in 600# ANSI Raised-Face Flange and the outlet is 4 in 300# ANSI Raised-Face Flange. Match the flange classes at inlet and outlet to the pipework, because the outlet class differs from the inlet."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 1,480 psi pilot-operated pressure relief valve or the 3 in 740 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 1,480 psi (sour service); the [3 in 740 psi pilot-operated pressure relief valve](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service) is rated 740 psi with 3 in 300# ANSI Raised-Face Flange on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 1,480 psi pilot-operated pressure relief valve, and how is it tested?",
+          "a": "The 3 in 1,480 psi pilot-operated pressure relief valve with its Cast WCB carbon steel body is rated 1,480 psi working pressure (ANSI 600 class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 1,480 psi pilot-operated pressure relief valve made from?",
+          "a": "The 3 in 1,480 psi pilot-operated pressure relief valve has a Cast WCB carbon steel body; the trim is 316SS disc + nozzle, NACE-compliant Inconel X-750 spring and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The pilot and main valve are in the same body rating."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 1,480 psi pilot-operated pressure relief valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 1,480 psi pilot-operated pressure relief valve with its Cast WCB carbon steel body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 526. The design specification on the listing is API 526, and test certificates are supplied with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 3 in 1,480 psi pilot-operated relief valve?",
+          "a": "The listing figure of 1,480 psi is the body rating of the 3 in inlet flange, not the set pressure, which is made to order. State the set pressure, media, flow and temperature on the RFQ; the outlet is 4 in 300# ANSI Raised-Face Flange. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 1,480 psi pilot-operated pressure relief valve operated and maintained?",
+          "a": "On the 3 in 1,480 psi pilot-operated pressure relief valve, the pilot controls the main valve, so keep the pilot sensing line clear and free of debris, and test-lift the valve at the interval set by your plant procedure. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 1,480 psi pilot-operated pressure relief valve compare with a spring-loaded pressure relief valve?",
+          "a": "The 3 in 1,480 psi pilot-operated valve holds a tighter set point because a pilot controls the main valve, while a spring-loaded valve is simpler and lifts when line pressure overcomes the spring. See the [Pressure Relief Valve, 2 in, 15,000 psi](/p/pressure-relief-valve-spring-loaded-2-in-1502-m-f-15-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 1,480 psi pilot-operated pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies pilot-operated pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Pilot-Operated, 3 in × 600# RF, 1,480 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Pilot-Operated, 3 in × 600# RF, 1,480 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-spring-loaded-2-in-150-rf-285-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 285 psi spring-loaded pressure relief valve used for?",
+          "a": "A 2 in 285 psi spring-loaded pressure relief valve (ANSI 150, standard service) is a spring-loaded relief valve that lifts at its set pressure to protect the line or vessel from over-pressure. ASME B16.34 — utility, fire-water, and low-pressure process protection."
+        },
+        {
+          "slot": "B",
+          "q": "What flange does the 2 in 285 psi valve use?",
+          "a": "Both ends are 2 in 150# ANSI Raised-Face Flange, built to ASME B16.5 flange dimensions. The flange class sets the pressure limit at the joint, so use matching class flanges, studs and gaskets."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 285 psi spring-loaded pressure relief valve have?",
+          "a": "On the 2 in 285 psi spring-loaded pressure relief valve (standard service) the inlet is 2 in 150# ANSI Raised-Face Flange and the outlet is 3 in 150# ANSI Raised-Face Flange. Match the flange classes at inlet and outlet to the pipework, because the outlet class differs from the inlet."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 285 psi spring-loaded pressure relief valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 285 psi (standard service); the [3-1/8 in 5,000 psi spring-loaded pressure relief valve](/p/pressure-relief-valve-spring-loaded-3-1-8-in-5m-flanged-5-000-psi-sour-service) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 285 psi spring-loaded pressure relief valve, and how is it tested?",
+          "a": "The 2 in 285 psi spring-loaded pressure relief valve with its Cast WCB carbon steel body is rated 285 psi working pressure (ANSI 150 class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 285 psi spring-loaded pressure relief valve made from?",
+          "a": "The 2 in 285 psi spring-loaded pressure relief valve has a Cast WCB carbon steel body; the trim is 316SS disc + nozzle, hardness-controlled spring and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. The spring is hardness-controlled to suit the service."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 2 in 285 psi spring-loaded pressure relief valve be used in sour (H2S) gas?",
+          "a": "No. The 2 in 285 psi spring-loaded pressure relief valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. The listing gives ASME B16.34 for the body rating, and test certificates are supplied with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 2 in 285 psi spring-loaded relief valve?",
+          "a": "The listing figure of 285 psi is the body rating, not the set pressure. The set pressure is made to order, so state it on the RFQ together with the media, flow rate and temperature, and read the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 285 psi spring-loaded pressure relief valve operated and maintained?",
+          "a": "On the 2 in 285 psi spring-loaded pressure relief valve, the spring sets the lift pressure and it is factory-set to the pressure ordered, so do not adjust it in the field. Inspect and test-lift the valve at the interval set by your plant procedure, and replace the seals after any lift. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 285 psi spring-loaded pressure relief valve compare with a pilot-operated pressure relief valve?",
+          "a": "The 2 in 285 psi spring-loaded valve opens when line pressure overcomes the spring, while a pilot-operated valve uses a pilot to hold a tighter set point and suits processing systems. See the [Pressure Relief Valve, 3 in, 740 psi](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2 in 285 psi spring-loaded pressure relief valve be exported from Dubai with documents?",
+          "a": "Yes. We supply the 2 in 285 psi spring-loaded pressure relief valve from Dubai, UAE and ship worldwide with the commercial invoice, packing list and test documents. Tell us the destination and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Spring-Loaded, 2 in × 150# RF, 285 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Spring-Loaded, 2 in × 150# RF, 285 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-spring-loaded-2-in-1502-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 15,000 psi spring-loaded pressure relief valve used for?",
+          "a": "A 2 in 15,000 psi spring-loaded pressure relief valve (15K, standard service) is a spring-loaded relief valve that lifts at its set pressure to protect the line or vessel from over-pressure. Frac iron over-pressure protection — set pressure made-to-order."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 15,000 psi spring-loaded pressure relief valve mean?",
+          "a": "On this spring-loaded pressure relief valve the listing gives a 2 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this spring-loaded pressure relief valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 15,000 psi spring-loaded pressure relief valve have?",
+          "a": "On the 2 in 15,000 psi spring-loaded pressure relief valve (standard service) the inlet is 2 in 1502 Male Weco Union and the outlet is 2 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 15,000 psi spring-loaded pressure relief valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 15,000 psi (standard service); the [3-1/8 in 5,000 psi spring-loaded pressure relief valve](/p/pressure-relief-valve-spring-loaded-3-1-8-in-5m-flanged-5-000-psi-sour-service) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 15,000 psi spring-loaded pressure relief valve, and how is it tested?",
+          "a": "The 2 in 15,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 15,000 psi spring-loaded pressure relief valve made from?",
+          "a": "The 2 in 15,000 psi spring-loaded pressure relief valve has a Forged AISI 4130 body; the trim is 316SS disc + nozzle, hardness-controlled spring and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. The spring is hardness-controlled to suit the service."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 2 in 15,000 psi spring-loaded pressure relief valve be used in sour (H2S) gas?",
+          "a": "No. The 2 in 15,000 psi spring-loaded pressure relief valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. The listing gives Other for the body rating, and test certificates are supplied with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 2 in 15,000 psi spring-loaded relief valve?",
+          "a": "The listing figure of 15,000 psi is the body rating, not the set pressure. The set pressure is made to order, so state it on the RFQ together with the media, flow rate and temperature, and read the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 15,000 psi spring-loaded pressure relief valve operated and maintained?",
+          "a": "On the 2 in 15,000 psi spring-loaded pressure relief valve, the spring sets the lift pressure and it is factory-set to the pressure ordered, so do not adjust it in the field. Inspect and test-lift the valve at the interval set by your plant procedure, and replace the seals after any lift. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 15,000 psi spring-loaded pressure relief valve compare with a pilot-operated pressure relief valve?",
+          "a": "The 2 in 15,000 psi spring-loaded valve opens when line pressure overcomes the spring, while a pilot-operated valve uses a pilot to hold a tighter set point and suits processing systems. See the [Pressure Relief Valve, 3 in, 740 psi](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 15,000 psi spring-loaded pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this SPM Oil & Gas spring-loaded pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Spring-Loaded, 2 in × 1502 M×F, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Spring-Loaded, 2 in × 1502 M×F, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 28 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-spring-loaded-3-1-8-in-5m-flanged-5-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/8 in 5,000 psi spring-loaded pressure relief valve used for?",
+          "a": "A 3-1/8 in 5,000 psi spring-loaded pressure relief valve (5K, sour service) is a spring-loaded relief valve that lifts at its set pressure to protect the line or vessel from over-pressure. Wellhead Christmas tree relief."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/8 in 5,000 psi valve use (Pressure Relief Valve, Spring-Loaded, 3-1/8 in × 5M Flanged, 5,000 psi, Sour Service)?",
+          "a": "The spring-loaded pressure relief valve inlet is a 3-1/8 in API 6A 5M Flanged (RTJ), an API 6A flange with ring-type joint, so on this spring-loaded pressure relief valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/8 in 5,000 psi spring-loaded pressure relief valve have?",
+          "a": "On the 3-1/8 in 5,000 psi spring-loaded pressure relief valve (sour service) the inlet is 3-1/8 in API 6A 5M Flanged (RTJ) and the outlet is 3 in 600# ANSI Raised-Face Flange. Match the flange classes at inlet and outlet to the pipework, because the outlet class differs from the inlet."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/8 in 5,000 psi spring-loaded pressure relief valve or the 2 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/8 in at 5,000 psi (sour service); the [2 in 15,000 psi spring-loaded pressure relief valve](/p/pressure-relief-valve-spring-loaded-2-in-1502-m-f-15-000-psi-sour-service) is rated 15,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/8 in 5,000 psi spring-loaded pressure relief valve, and how is it tested?",
+          "a": "The 3-1/8 in 5,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is rated 5,000 psi working pressure (5K class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/8 in 5,000 psi spring-loaded pressure relief valve made from?",
+          "a": "The 3-1/8 in 5,000 psi spring-loaded pressure relief valve has a Forged AISI 4130 body; the trim is 316SS disc + nozzle, NACE-compliant Inconel X-750 spring and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The spring is hardness-controlled to suit the service."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/8 in 5,000 psi spring-loaded pressure relief valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/8 in 5,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6A. It is listed to API 6A and supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 3-1/8 in 5,000 psi spring-loaded relief valve?",
+          "a": "The listing figure of 5,000 psi is the body rating, not the set pressure. The set pressure is made to order, so state it on the RFQ together with the media, flow rate and temperature, and read the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/8 in 5,000 psi spring-loaded pressure relief valve operated and maintained?",
+          "a": "On the 3-1/8 in 5,000 psi spring-loaded pressure relief valve, the spring sets the lift pressure and it is factory-set to the pressure ordered, so do not adjust it in the field. Inspect and test-lift the valve at the interval set by your plant procedure, and replace the seals after any lift. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/8 in 5,000 psi spring-loaded pressure relief valve compare with a pilot-operated pressure relief valve?",
+          "a": "The 3-1/8 in 5,000 psi spring-loaded valve opens when line pressure overcomes the spring, while a pilot-operated valve uses a pilot to hold a tighter set point and suits processing systems. See the [Pressure Relief Valve, 3 in, 740 psi](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/8 in 5,000 psi spring-loaded pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries spring-loaded pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Spring-Loaded, 3-1/8 in × 5M Flanged, 5,000 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Spring-Loaded, 3-1/8 in × 5M Flanged, 5,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-relief-valve-spring-loaded-3-in-1502-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 15,000 psi spring-loaded pressure relief valve used for?",
+          "a": "A 3 in 15,000 psi spring-loaded pressure relief valve (15K, standard service) is a spring-loaded relief valve that lifts at its set pressure to protect the line or vessel from over-pressure. Large-bore over-pressure protection for high-rate frac discharge."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 3 in 15,000 psi spring-loaded pressure relief valve mean?",
+          "a": "On this spring-loaded pressure relief valve the listing gives a 3 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this spring-loaded pressure relief valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 15,000 psi spring-loaded pressure relief valve have?",
+          "a": "On the 3 in 15,000 psi spring-loaded pressure relief valve (standard service) the inlet is 3 in 1502 Male Weco Union and the outlet is 3 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 15,000 psi spring-loaded pressure relief valve or the 2 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 15,000 psi (standard service); the [2 in 6,000 psi spring-loaded pressure relief valve](/p/pressure-relief-valve-spring-loaded-2-in-602-m-f-6-000-psi-sour-service) is rated 6,000 psi with 2 in 602 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 15,000 psi spring-loaded pressure relief valve, and how is it tested?",
+          "a": "The 3 in 15,000 psi spring-loaded pressure relief valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). The pressure on the listing is the body rating; the set pressure is made to order and is a separate figure you specify on the RFQ. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 15,000 psi spring-loaded pressure relief valve made from?",
+          "a": "The 3 in 15,000 psi spring-loaded pressure relief valve has a Forged AISI 4130 body; the trim is 316SS disc + nozzle, hardness-controlled spring and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. The spring is hardness-controlled to suit the service."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 3 in 15,000 psi spring-loaded pressure relief valve be used in sour (H2S) gas?",
+          "a": "No. The 3 in 15,000 psi spring-loaded pressure relief valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. The listing gives Other for the body rating, and test certificates are supplied with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What set pressure can I specify for the 3 in 15,000 psi spring-loaded relief valve?",
+          "a": "The listing figure of 15,000 psi is the body rating, not the set pressure. The set pressure is made to order, so state it on the RFQ together with the media, flow rate and temperature, and read the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves) before choosing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 15,000 psi spring-loaded pressure relief valve operated and maintained?",
+          "a": "On the 3 in 15,000 psi spring-loaded pressure relief valve, the spring sets the lift pressure and it is factory-set to the pressure ordered, so do not adjust it in the field. Inspect and test-lift the valve at the interval set by your plant procedure, and replace the seals after any lift. See the [oilfield pressure relief valve guide](/blog/oilfield-pressure-relief-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 15,000 psi spring-loaded pressure relief valve compare with a pilot-operated pressure relief valve?",
+          "a": "The 3 in 15,000 psi spring-loaded valve opens when line pressure overcomes the spring, while a pilot-operated valve uses a pilot to hold a tighter set point and suits processing systems. See the [Pressure Relief Valve, 3 in, 740 psi](/p/pressure-relief-valve-pilot-operated-3-in-300-rf-740-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 15,000 psi spring-loaded pressure relief valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine spring-loaded pressure relief valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pressure Relief Valve, Spring-Loaded, 3 in × 1502 M×F, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Pressure Relief Valve, Spring-Loaded, 3 in × 1502 M×F, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 35 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

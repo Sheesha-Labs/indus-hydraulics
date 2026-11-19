@@ -1,0 +1,71 @@
+{
+  "family": "longitudinal-fin-tubes",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "longitudinal-fin-tubes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are longitudinal fin tubes and where are they used?",
+          "a": "Longitudinal fin tubes are tubes with steel fin channels welded along their length, so fluid flows along the fins rather than across them. They are used in double-pipe and multi-tube hairpin exchangers and in tank suction and line heaters for heavy oils and bitumen."
+        },
+        {
+          "slot": "D",
+          "q": "What tube sizes can longitudinal fin tubes be made in?",
+          "a": "Longitudinal fin tubes are made on base tubes from 5/8 to 10 3/4 in outside diameter (15.9 to 273.1 mm), in lengths up to 18.3 m. The size table gives these as limits: any size inside the range is made to order. Send the diameter, wall and length to confirm."
+        },
+        {
+          "slot": "D",
+          "q": "What fin height, fin thickness and number of fins are available on longitudinal fin tubes?",
+          "a": "Fin height runs from 5.3 to 38.1 mm (0.21 to 1 1/2 in) and fin thickness from 0.89 to 1.27 mm (0.035 to 0.050 in). The number of fins is a multiple of 4, with the maximum about the tube circumference divided by 3.8 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-TF-LG-LON-R1 for longitudinal fin tubes?",
+          "a": "IH-TF-LG-LON-R1 is a single range listing, not a fixed size: the R1 row carries the limits for outside diameter, fin height, fin thickness and length. When you order, send the actual diameter, wall, fin geometry and length so the made-to-order tube is quoted against that range."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum single length of longitudinal fin tubes?",
+          "a": "The maximum single length is 18.3 m (720 in). Fin thickness is 0.89 to 1.27 mm and fin height up to 38.1 mm. Send the required length and the bare length needed at each end, and we confirm whether it can be made in one piece."
+        },
+        {
+          "slot": "F",
+          "q": "What materials can longitudinal fin tubes be made from?",
+          "a": "The base tube can be any weldable tube material, and the fins are carbon steel or stainless steel. The listing references ASTM A106, ASTM A179 and ASTM A213 tube. Equivalent grades in other standards are indicative, and we check them against each tender."
+        },
+        {
+          "slot": "F",
+          "q": "Can longitudinal fin tubes have solid or perforated fins?",
+          "a": "Yes. Fin forms are solid or perforated, with a cut-and-twist option. The fins are formed from strip into a U-channel and attached by electric resistance welding along the tube. State the form you need on the enquiry, as it affects the heat transfer and the pressure drop on the finned side."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to longitudinal fin tubes?",
+          "a": "The base tube is specified to ASTM A106, ASTM A179 or ASTM A213, depending on the service. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative, and we check them against each tender. State the standard and grade on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and certificates come with longitudinal fin tubes?",
+          "a": "The base tube is hydrotested. A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged against your inspection and test plan. Say on the RFQ what you need so it is quoted with the order."
+        },
+        {
+          "slot": "K",
+          "q": "Longitudinal fin tubes compared with spiral wound fin tubes: which suits my exchanger?",
+          "a": "Longitudinal fins run along the tube, so flow goes parallel to the tube, which suits hairpin and double-pipe exchangers. Spiral fins wrap around the tube for crossflow, as on [HF-welded spiral fin tubes](/c/hf-welded-spiral-fin-tubes) and [wound fin tubes](/c/wound-fin-tubes-l-ll-kl). Our guide on [types of finned tubes](/blog/types-of-finned-tubes) covers the choice."
+        },
+        {
+          "slot": "I",
+          "q": "How should longitudinal fin tubes be cleaned and kept free of fouling?",
+          "a": "Fouling in the channels between longitudinal fins is cleaned by flushing or chemical cleaning, so fin spacing matters when the fluid is viscous or dirty. Our guide on [finned tube fouling and cleaning](/blog/finned-tube-fouling-cleaning) covers the methods. Discuss the service when you enquire."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply longitudinal fin tubes from Dubai, and what do I send for a quote?",
+          "a": "Yes. We supply longitudinal fin tubes from Dubai, UAE, and ship worldwide with the best lead times, with sizes inside the range made to order. Send the standard and grade, outside diameter and wall, length, quantity, fin material, height and thickness through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

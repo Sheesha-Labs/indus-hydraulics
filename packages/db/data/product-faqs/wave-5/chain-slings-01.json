@@ -1,0 +1,1870 @@
+{
+  "family": "chain-slings-01",
+  "extraFacts": [
+    {
+      "fact": "Grade 80 Four-Leg Chain Sling with Foundry Hooks — Type QOF: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Four-Leg Chain Sling with Foundry Hooks — Type QOF"
+    },
+    {
+      "fact": "Grade 80 Four-Leg Chain Sling with Grab Hooks — Type QOG: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Four-Leg Chain Sling with Grab Hooks — Type QOG"
+    },
+    {
+      "fact": "Grade 80 Four-Leg Chain Sling with Oblong Link Ends — Type QOO: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Four-Leg Chain Sling with Oblong Link Ends — Type QOO"
+    },
+    {
+      "fact": "Grade 80 Four-Leg Chain Sling with Self-Locking Hooks — Type QOSL: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Four-Leg Chain Sling with Self-Locking Hooks — Type QOSL"
+    },
+    {
+      "fact": "Grade 80 Four-Leg Chain Sling with Sling Hooks — Type QOS: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Four-Leg Chain Sling with Sling Hooks — Type QOS"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Foundry Hook Both Ends — Type SFF: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Foundry Hook Both Ends — Type SFF"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Foundry Hook and Grab Hook — Type SFG: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Foundry Hook and Grab Hook — Type SFG"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Grab Hook Both Ends — Type SGG: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Grab Hook Both Ends — Type SGG"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Master Link Both Ends — Type SOO: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Master Link Both Ends — Type SOO"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Master Link and Foundry Hook — Type SOF: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Master Link and Foundry Hook — Type SOF"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Master Link and Grab Hook — Type SOG: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Master Link and Grab Hook — Type SOG"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Master Link and Self-Locking Hook — Type SOSL: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Master Link and Self-Locking Hook — Type SOSL"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Master Link and Sling Hook — Type SOS: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Master Link and Sling Hook — Type SOS"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Self-Locking Hook Both Ends — Type SSLSL: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Self-Locking Hook Both Ends — Type SSLSL"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook — Type SSLG: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook — Type SSLG"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Sling Hook Both Ends — Type SSS: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Sling Hook Both Ends — Type SSS"
+    },
+    {
+      "fact": "Grade 80 Single-Leg Chain Sling, Sling Hook and Grab Hook — Type SSG: working load limit 8 t on 16 mm chain (wllT).",
+      "source": "Indus Hydraulics size table for Grade 80 Single-Leg Chain Sling, Sling Hook and Grab Hook — Type SSG"
+    },
+    {
+      "fact": "Grade 80 Three-Leg Chain Sling with Foundry Hooks — Type TOF: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Three-Leg Chain Sling with Foundry Hooks — Type TOF"
+    },
+    {
+      "fact": "Grade 80 Three-Leg Chain Sling with Grab Hooks — Type TOG: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Three-Leg Chain Sling with Grab Hooks — Type TOG"
+    },
+    {
+      "fact": "Grade 80 Three-Leg Chain Sling with Oblong Link Ends — Type TOO: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Three-Leg Chain Sling with Oblong Link Ends — Type TOO"
+    },
+    {
+      "fact": "Grade 80 Three-Leg Chain Sling with Self-Locking Hooks — Type TOSL: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Three-Leg Chain Sling with Self-Locking Hooks — Type TOSL"
+    },
+    {
+      "fact": "Grade 80 Three-Leg Chain Sling with Sling Hooks — Type TOS: working load limit 17 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Three-Leg Chain Sling with Sling Hooks — Type TOS"
+    },
+    {
+      "fact": "Grade 80 Two-Leg Chain Sling with Foundry Hooks — Type DOF: working load limit 11.2 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Two-Leg Chain Sling with Foundry Hooks — Type DOF"
+    },
+    {
+      "fact": "Grade 80 Two-Leg Chain Sling with Grab Hooks — Type DOG: working load limit 11.2 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Two-Leg Chain Sling with Grab Hooks — Type DOG"
+    },
+    {
+      "fact": "Grade 80 Two-Leg Chain Sling with Oblong Link Ends — Type DOO: working load limit 11.2 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Two-Leg Chain Sling with Oblong Link Ends — Type DOO"
+    },
+    {
+      "fact": "Grade 80 Two-Leg Chain Sling with Self-Locking Hooks — Type DOSL: working load limit 11.2 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Two-Leg Chain Sling with Self-Locking Hooks — Type DOSL"
+    },
+    {
+      "fact": "Grade 80 Two-Leg Chain Sling with Sling Hooks — Type DOS: working load limit 11.2 t on 16 mm chain (wllT@upto90).",
+      "source": "Indus Hydraulics size table for Grade 80 Two-Leg Chain Sling with Sling Hooks — Type DOS"
+    }
+  ],
+  "products": [
+    {
+      "slug": "grade-100-four-leg-chain-sling-foundry-hooks-qof",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF (type QOF) used for?",
+          "a": "Grade 100 four-leg chain sling made up with an oblong master link assembly at the top and a foundry hook on each of the four legs. A foundry hook has a wide, open throat with no latch, made for trunnions, ladle bails and handles too thick for a sling hook. With no latch, keep the load seated in the bowl of the hook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code QOF mean on Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: Q = quad leg; O = oblong master link; F = foundry hook. So a QOF sling is a quad leg sling with an oblong master link assembly at the top and a foundry hook on each of its four legs. The part numbers in the size table start IH-LR-CS-G100QOF and add the chain size, for example IH-LR-CS-G100QOF-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF come in?",
+          "a": "Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100QOF-6MM to IH-LR-CS-G100QOF-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF?",
+          "a": "For Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF, with oblong master link with sub-links at the top and a foundry hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF?",
+          "a": "Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a foundry hook on each leg on Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF?",
+          "a": "Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Four-Leg Chain Sling with Foundry Hooks — Type QOF](/p/grade-80-four-leg-chain-sling-foundry-hooks-qof), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Four-Leg Chain Sling with Foundry Hooks, Type QOF from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Four-Leg Chain Sling with Foundry Hooks — Type QOF available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Four-Leg Chain Sling with Foundry Hooks — Type QOF is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-four-leg-chain-sling-grab-hooks-qog",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG (type QOG) used for?",
+          "a": "Grade 100 four-leg chain sling made up with an oblong master link assembly at the top and a grab hook on each of the four legs. A grab hook has a narrow throat that seats across a single chain link, so a leg can be hooked back onto its own chain to shorten it or to wrap the load."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code QOG mean on Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: Q = quad leg; O = oblong master link; G = grab hook. So a QOG sling is a quad leg sling with an oblong master link assembly at the top and a grab hook on each of its four legs. The part numbers in the size table start IH-LR-CS-G100QOG and add the chain size, for example IH-LR-CS-G100QOG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG come in?",
+          "a": "Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100QOG-6MM to IH-LR-CS-G100QOG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG?",
+          "a": "For Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG, with oblong master link with sub-links at the top and a grab hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG?",
+          "a": "Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a grab hook on each leg on Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG?",
+          "a": "Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Four-Leg Chain Sling with Grab Hooks — Type QOG](/p/grade-80-four-leg-chain-sling-grab-hooks-qog), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Four-Leg Chain Sling with Grab Hooks, Type QOG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Four-Leg Chain Sling with Grab Hooks — Type QOG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Four-Leg Chain Sling with Grab Hooks — Type QOG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-four-leg-chain-sling-oblong-link-ends-qoo",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO (type QOO) used for?",
+          "a": "Grade 100 four-leg chain sling made up with an oblong master link assembly at the top and an oblong link at the end of each of the four legs. A plain oblong link at the working end is for shackling to a lifting lug or for coupling to another fitting on site."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code QOO mean on Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: Q = quad leg; O = oblong master link; O = oblong link. So a QOO sling is a quad leg sling with an oblong master link assembly at the top and an oblong link at the end of each of its four legs. The part numbers in the size table start IH-LR-CS-G100QOO and add the chain size, for example IH-LR-CS-G100QOO-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO come in?",
+          "a": "Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100QOO-6MM to IH-LR-CS-G100QOO-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO?",
+          "a": "For Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO, with oblong master link with sub-links at the top and a oblong link on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the bottom link, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO?",
+          "a": "Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a oblong link on each leg on Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO?",
+          "a": "Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Four-Leg Chain Sling with Oblong Link Ends — Type QOO](/p/grade-80-four-leg-chain-sling-oblong-link-ends-qoo), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Four-Leg Chain Sling with Oblong Link Ends, Type QOO from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Four-Leg Chain Sling with Oblong Link Ends — Type QOO available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Four-Leg Chain Sling with Oblong Link Ends — Type QOO is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-four-leg-chain-sling-self-locking-hooks-qosl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL (type QOSL) used for?",
+          "a": "Grade 100 four-leg chain sling made up with an oblong master link assembly at the top and a self-locking hook on each of the four legs. A self-locking hook closes and locks as the load comes on and opens only when the trigger is pressed with the hook unloaded, which suits lifts where the load could otherwise unhook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code QOSL mean on Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: Q = quad leg; O = oblong master link; SL = self-locking hook. So a QOSL sling is a quad leg sling with an oblong master link assembly at the top and a self-locking hook on each of its four legs. The part numbers in the size table start IH-LR-CS-G100QOSL and add the chain size, for example IH-LR-CS-G100QOSL-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL come in?",
+          "a": "Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100QOSL-6MM to IH-LR-CS-G100QOSL-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL?",
+          "a": "For Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL, with oblong master link with sub-links at the top and a self-locking hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL?",
+          "a": "Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a self-locking hook on each leg on Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL?",
+          "a": "Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Four-Leg Chain Sling with Self-Locking Hooks — Type QOSL](/p/grade-80-four-leg-chain-sling-self-locking-hooks-qosl), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Four-Leg Chain Sling with Self-Locking Hooks, Type QOSL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Four-Leg Chain Sling with Self-Locking Hooks — Type QOSL available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Four-Leg Chain Sling with Self-Locking Hooks — Type QOSL is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-four-leg-chain-sling-sling-hooks-qos",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS (type QOS) used for?",
+          "a": "Grade 100 four-leg chain sling made up with an oblong master link assembly at the top and a sling hook with safety latch on each of the four legs. A sling hook is the general-purpose end fitting: the spring latch closes the throat so the hook cannot slip off a slack lifting point."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code QOS mean on Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: Q = quad leg; O = oblong master link; S = sling hook with safety latch. So a QOS sling is a quad leg sling with an oblong master link assembly at the top and a sling hook with safety latch on each of its four legs. The part numbers in the size table start IH-LR-CS-G100QOS and add the chain size, for example IH-LR-CS-G100QOS-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS come in?",
+          "a": "Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100QOS-6MM to IH-LR-CS-G100QOS-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS?",
+          "a": "For Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS, with oblong master link with sub-links at the top and a sling hook with safety latch on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS?",
+          "a": "Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a sling hook with safety latch on each leg on Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS?",
+          "a": "Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Four-Leg Chain Sling with Sling Hooks — Type QOS](/p/grade-80-four-leg-chain-sling-sling-hooks-qos), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Four-Leg Chain Sling with Sling Hooks, Type QOS from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Four-Leg Chain Sling with Sling Hooks — Type QOS available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Four-Leg Chain Sling with Sling Hooks — Type QOS is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-foundry-hook-both-ends-sff",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF (type SFF) used for?",
+          "a": "Grade 100 single-leg chain sling made up with a foundry hook at each end. A foundry hook has a wide, open throat with no latch, made for trunnions, ladle bails and handles too thick for a sling hook. With no latch, keep the load seated in the bowl of the hook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SFF mean on Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; F = foundry hook; F = foundry hook. So an SFF sling is a single leg sling with a foundry hook at each end. The part numbers in the size table start IH-LR-CS-G100SFF and add the chain size, for example IH-LR-CS-G100SFF-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SFF-6MM to IH-LR-CS-G100SFF-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF, with foundry hook at the top and foundry hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF?",
+          "a": "Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF?",
+          "a": "Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Foundry Hook Both Ends — Type SFF](/p/grade-80-single-leg-chain-sling-foundry-hook-both-ends-sff), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends, Type SFF from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends — Type SFF available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Foundry Hook Both Ends — Type SFF is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-foundry-hook-grab-hook-sfg",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG (type SFG) used for?",
+          "a": "Grade 100 single-leg chain sling made up with a foundry hook at the top and a grab hook at the bottom. A foundry hook has a wide, open throat with no latch, made for trunnions, ladle bails and handles too thick for a sling hook. With no latch, keep the load seated in the bowl of the hook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SFG mean on Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; F = foundry hook; G = grab hook. So an SFG sling is a single leg sling with a foundry hook at the top and a grab hook at the bottom. The part numbers in the size table start IH-LR-CS-G100SFG and add the chain size, for example IH-LR-CS-G100SFG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SFG-6MM to IH-LR-CS-G100SFG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG, with foundry hook at the top and grab hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Foundry Hook and Grab Hook — Type SFG](/p/grade-80-single-leg-chain-sling-foundry-hook-grab-hook-sfg), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook, Type SFG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook — Type SFG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Foundry Hook and Grab Hook — Type SFG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-grab-hook-both-ends-sgg",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG (type SGG) used for?",
+          "a": "Grade 100 single-leg chain sling made up with a grab hook at each end. A grab hook has a narrow throat that seats across a single chain link, so a leg can be hooked back onto its own chain to shorten it or to wrap the load."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SGG mean on Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; G = grab hook; G = grab hook. So an SGG sling is a single leg sling with a grab hook at each end. The part numbers in the size table start IH-LR-CS-G100SGG and add the chain size, for example IH-LR-CS-G100SGG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SGG-6MM to IH-LR-CS-G100SGG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG, with grab hook at the top and grab hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Grab Hook Both Ends — Type SGG](/p/grade-80-single-leg-chain-sling-grab-hook-both-ends-sgg), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends, Type SGG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends — Type SGG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Grab Hook Both Ends — Type SGG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-master-link-both-ends-soo",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO (type SOO) used for?",
+          "a": "Grade 100 single-leg chain sling made up with an oblong master link at each end. A plain oblong link at the working end is for shackling to a lifting lug or for coupling to another fitting on site."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SOO mean on Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; O = oblong master link; O = oblong master link. So an SOO sling is a single leg sling with an oblong master link at each end. The part numbers in the size table start IH-LR-CS-G100SOO and add the chain size, for example IH-LR-CS-G100SOO-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SOO-6MM to IH-LR-CS-G100SOO-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO, with oblong master link at the top and oblong master link at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the master link to the bearing point of the bottom link, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Master Link Both Ends — Type SOO](/p/grade-80-single-leg-chain-sling-master-link-both-ends-soo), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Master Link Both Ends, Type SOO from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Master Link Both Ends — Type SOO available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Master Link Both Ends — Type SOO is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-master-link-foundry-hook-sof",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF (type SOF) used for?",
+          "a": "Grade 100 single-leg chain sling made up with an oblong master link at the top and a foundry hook at the bottom. The oblong master link sits on the crane hook and lets the sling hang and turn freely. A foundry hook has a wide, open throat with no latch, made for trunnions, ladle bails and handles too thick for a sling hook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SOF mean on Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; O = oblong master link; F = foundry hook. So an SOF sling is a single leg sling with an oblong master link at the top and a foundry hook at the bottom. The part numbers in the size table start IH-LR-CS-G100SOF and add the chain size, for example IH-LR-CS-G100SOF-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SOF-6MM to IH-LR-CS-G100SOF-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF, with oblong master link at the top and foundry hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the master link to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Master Link and Foundry Hook — Type SOF](/p/grade-80-single-leg-chain-sling-master-link-foundry-hook-sof), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook, Type SOF from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook — Type SOF available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Master Link and Foundry Hook — Type SOF is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-master-link-grab-hook-sog",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG (type SOG) used for?",
+          "a": "Grade 100 single-leg chain sling made up with an oblong master link at the top and a grab hook at the bottom. The oblong master link sits on the crane hook and lets the sling hang and turn freely. A grab hook has a narrow throat that seats across a single chain link, so a leg can be hooked back onto its own chain to shorten it or to wrap the load."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SOG mean on Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; O = oblong master link; G = grab hook. So an SOG sling is a single leg sling with an oblong master link at the top and a grab hook at the bottom. The part numbers in the size table start IH-LR-CS-G100SOG and add the chain size, for example IH-LR-CS-G100SOG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SOG-6MM to IH-LR-CS-G100SOG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG, with oblong master link at the top and grab hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the master link to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Master Link and Grab Hook — Type SOG](/p/grade-80-single-leg-chain-sling-master-link-grab-hook-sog), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook, Type SOG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook — Type SOG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Master Link and Grab Hook — Type SOG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-master-link-self-locking-hook-sosl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL (type SOSL) used for?",
+          "a": "Grade 100 single-leg chain sling made up with an oblong master link at the top and a self-locking hook at the bottom. The oblong master link sits on the crane hook and lets the sling hang and turn freely. A self-locking hook closes and locks as the load comes on and opens only when the trigger is pressed with the hook unloaded, which suits lifts where the load could otherwise unhook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SOSL mean on Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; O = oblong master link; SL = self-locking hook. So an SOSL sling is a single leg sling with an oblong master link at the top and a self-locking hook at the bottom. The part numbers in the size table start IH-LR-CS-G100SOSL and add the chain size, for example IH-LR-CS-G100SOSL-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SOSL-6MM to IH-LR-CS-G100SOSL-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL, with oblong master link at the top and self-locking hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the master link to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Master Link and Self-Locking Hook — Type SOSL](/p/grade-80-single-leg-chain-sling-master-link-self-locking-hook-sosl), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook, Type SOSL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook — Type SOSL available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Master Link and Self-Locking Hook — Type SOSL is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-master-link-sling-hook-sos",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS (type SOS) used for?",
+          "a": "Grade 100 single-leg chain sling made up with an oblong master link at the top and a sling hook with safety latch at the bottom. The oblong master link sits on the crane hook and lets the sling hang and turn freely. A sling hook is the general-purpose end fitting: the spring latch closes the throat so the hook cannot slip off a slack lifting point."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SOS mean on Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; O = oblong master link; S = sling hook with safety latch. So an SOS sling is a single leg sling with an oblong master link at the top and a sling hook with safety latch at the bottom. The part numbers in the size table start IH-LR-CS-G100SOS and add the chain size, for example IH-LR-CS-G100SOS-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SOS-6MM to IH-LR-CS-G100SOS-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS, with oblong master link at the top and sling hook with safety latch at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the master link to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS?",
+          "a": "Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Master Link and Sling Hook — Type SOS](/p/grade-80-single-leg-chain-sling-master-link-sling-hook-sos), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook, Type SOS from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook — Type SOS available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Master Link and Sling Hook — Type SOS is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-self-locking-hook-both-ends-sslsl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL (type SSLSL) used for?",
+          "a": "Grade 100 single-leg chain sling made up with a self-locking hook at each end. A self-locking hook closes and locks as the load comes on and opens only when the trigger is pressed with the hook unloaded, which suits lifts where the load could otherwise unhook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SSLSL mean on Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; SL = self-locking hook; SL = self-locking hook. So an SSLSL sling is a single leg sling with a self-locking hook at each end. The part numbers in the size table start IH-LR-CS-G100SSLSL and add the chain size, for example IH-LR-CS-G100SSLSL-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SSLSL-6MM to IH-LR-CS-G100SSLSL-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL, with self-locking hook at the top and self-locking hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL?",
+          "a": "Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL?",
+          "a": "Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Self-Locking Hook Both Ends — Type SSLSL](/p/grade-80-single-leg-chain-sling-self-locking-hook-both-ends-sslsl), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends, Type SSLSL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends — Type SSLSL available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Self-Locking Hook Both Ends — Type SSLSL is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-self-locking-hook-grab-hook-sslg",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG (type SSLG) used for?",
+          "a": "Grade 100 single-leg chain sling made up with a self-locking hook at the top and a grab hook at the bottom. A self-locking hook closes and locks as the load comes on and opens only when the trigger is pressed with the hook unloaded, which suits lifts where the load could otherwise unhook. A grab hook has a narrow throat that seats across a single chain link, so a leg can be hooked back onto its own chain to shorten it or to wrap the load."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SSLG mean on Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; SL = self-locking hook; G = grab hook. So an SSLG sling is a single leg sling with a self-locking hook at the top and a grab hook at the bottom. The part numbers in the size table start IH-LR-CS-G100SSLG and add the chain size, for example IH-LR-CS-G100SSLG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SSLG-6MM to IH-LR-CS-G100SSLG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG, with self-locking hook at the top and grab hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook — Type SSLG](/p/grade-80-single-leg-chain-sling-self-locking-hook-grab-hook-sslg), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook, Type SSLG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook — Type SSLG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Self-Locking Hook and Grab Hook — Type SSLG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-sling-hook-both-ends-sss",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS (type SSS) used for?",
+          "a": "Grade 100 single-leg chain sling made up with a sling hook with safety latch at each end. A sling hook is the general-purpose end fitting: the spring latch closes the throat so the hook cannot slip off a slack lifting point."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SSS mean on Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; S = sling hook with safety latch; S = sling hook with safety latch. So an SSS sling is a single leg sling with a sling hook with safety latch at each end. The part numbers in the size table start IH-LR-CS-G100SSS and add the chain size, for example IH-LR-CS-G100SSS-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SSS-6MM to IH-LR-CS-G100SSS-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS, with sling hook with safety latch at the top and sling hook with safety latch at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS?",
+          "a": "Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS?",
+          "a": "Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Sling Hook Both Ends — Type SSS](/p/grade-80-single-leg-chain-sling-sling-hook-both-ends-sss), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends, Type SSS from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends — Type SSS available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Sling Hook Both Ends — Type SSS is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-single-leg-chain-sling-sling-hook-grab-hook-ssg",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG (type SSG) used for?",
+          "a": "Grade 100 single-leg chain sling made up with a sling hook with safety latch at the top and a grab hook at the bottom. A sling hook is the general-purpose end fitting: the spring latch closes the throat so the hook cannot slip off a slack lifting point. A grab hook has a narrow throat that seats across a single chain link, so a leg can be hooked back onto its own chain to shorten it or to wrap the load."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code SSG mean on Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: S = single leg; S = sling hook with safety latch; G = grab hook. So an SSG sling is a single leg sling with a sling hook with safety latch at the top and a grab hook at the bottom. The part numbers in the size table start IH-LR-CS-G100SSG and add the chain size, for example IH-LR-CS-G100SSG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG come in?",
+          "a": "Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100SSG-6MM to IH-LR-CS-G100SSG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG?",
+          "a": "For Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG, with sling hook with safety latch at the top and grab hook at the bottom, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG is rated 1.4 to 26.5 t in a straight vertical lift, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 10 t and on 26 mm chain it is 26.5 t. The WLL is the most the sling may carry in service, never the proof or breaking load."
+        },
+        {
+          "slot": "J",
+          "q": "Can Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG be used in a choke hitch?",
+          "a": "Yes, but with a lower rating. Used in a choke hitch the rating falls to 80% of the figure in the table. On Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG, the tag and certificate carry the straight-lift rating, so the choke-hitch figure has to be worked out from it before the lift."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG?",
+          "a": "Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Single-Leg Chain Sling, Sling Hook and Grab Hook — Type SSG](/p/grade-80-single-leg-chain-sling-sling-hook-grab-hook-ssg), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 10 t and the Grade 80 one 8 t. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook, Type SSG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook — Type SSG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Single-Leg Chain Sling, Sling Hook and Grab Hook — Type SSG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-three-leg-chain-sling-foundry-hooks-tof",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF (type TOF) used for?",
+          "a": "Grade 100 three-leg chain sling made up with an oblong master link assembly at the top and a foundry hook on each of the three legs. A foundry hook has a wide, open throat with no latch, made for trunnions, ladle bails and handles too thick for a sling hook. With no latch, keep the load seated in the bowl of the hook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code TOF mean on Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: T = triple leg; O = oblong master link; F = foundry hook. So a TOF sling is a triple leg sling with an oblong master link assembly at the top and a foundry hook on each of its three legs. The part numbers in the size table start IH-LR-CS-G100TOF and add the chain size, for example IH-LR-CS-G100TOF-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF come in?",
+          "a": "Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100TOF-6MM to IH-LR-CS-G100TOF-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF?",
+          "a": "For Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF, with oblong master link with sub-links at the top and a foundry hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF?",
+          "a": "Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a foundry hook on each leg on Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF?",
+          "a": "Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Three-Leg Chain Sling with Foundry Hooks — Type TOF](/p/grade-80-three-leg-chain-sling-foundry-hooks-tof), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Three-Leg Chain Sling with Foundry Hooks, Type TOF from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Three-Leg Chain Sling with Foundry Hooks — Type TOF available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Three-Leg Chain Sling with Foundry Hooks — Type TOF is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-three-leg-chain-sling-grab-hooks-tog",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG (type TOG) used for?",
+          "a": "Grade 100 three-leg chain sling made up with an oblong master link assembly at the top and a grab hook on each of the three legs. A grab hook has a narrow throat that seats across a single chain link, so a leg can be hooked back onto its own chain to shorten it or to wrap the load."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code TOG mean on Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: T = triple leg; O = oblong master link; G = grab hook. So a TOG sling is a triple leg sling with an oblong master link assembly at the top and a grab hook on each of its three legs. The part numbers in the size table start IH-LR-CS-G100TOG and add the chain size, for example IH-LR-CS-G100TOG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG come in?",
+          "a": "Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100TOG-6MM to IH-LR-CS-G100TOG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG?",
+          "a": "For Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG, with oblong master link with sub-links at the top and a grab hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG?",
+          "a": "Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a grab hook on each leg on Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG?",
+          "a": "Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Three-Leg Chain Sling with Grab Hooks — Type TOG](/p/grade-80-three-leg-chain-sling-grab-hooks-tog), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Three-Leg Chain Sling with Grab Hooks, Type TOG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Three-Leg Chain Sling with Grab Hooks — Type TOG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Three-Leg Chain Sling with Grab Hooks — Type TOG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-three-leg-chain-sling-oblong-link-ends-too",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO (type TOO) used for?",
+          "a": "Grade 100 three-leg chain sling made up with an oblong master link assembly at the top and an oblong link at the end of each of the three legs. A plain oblong link at the working end is for shackling to a lifting lug or for coupling to another fitting on site."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code TOO mean on Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: T = triple leg; O = oblong master link; O = oblong link. So a TOO sling is a triple leg sling with an oblong master link assembly at the top and an oblong link at the end of each of its three legs. The part numbers in the size table start IH-LR-CS-G100TOO and add the chain size, for example IH-LR-CS-G100TOO-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO come in?",
+          "a": "Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100TOO-6MM to IH-LR-CS-G100TOO-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO?",
+          "a": "For Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO, with oblong master link with sub-links at the top and a oblong link on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the bottom link, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO?",
+          "a": "Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a oblong link on each leg on Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO?",
+          "a": "Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Three-Leg Chain Sling with Oblong Link Ends — Type TOO](/p/grade-80-three-leg-chain-sling-oblong-link-ends-too), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Three-Leg Chain Sling with Oblong Link Ends, Type TOO from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Three-Leg Chain Sling with Oblong Link Ends — Type TOO available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Three-Leg Chain Sling with Oblong Link Ends — Type TOO is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-three-leg-chain-sling-self-locking-hooks-tosl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL (type TOSL) used for?",
+          "a": "Grade 100 three-leg chain sling made up with an oblong master link assembly at the top and a self-locking hook on each of the three legs. A self-locking hook closes and locks as the load comes on and opens only when the trigger is pressed with the hook unloaded, which suits lifts where the load could otherwise unhook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code TOSL mean on Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: T = triple leg; O = oblong master link; SL = self-locking hook. So a TOSL sling is a triple leg sling with an oblong master link assembly at the top and a self-locking hook on each of its three legs. The part numbers in the size table start IH-LR-CS-G100TOSL and add the chain size, for example IH-LR-CS-G100TOSL-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL come in?",
+          "a": "Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100TOSL-6MM to IH-LR-CS-G100TOSL-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL?",
+          "a": "For Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL, with oblong master link with sub-links at the top and a self-locking hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL?",
+          "a": "Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a self-locking hook on each leg on Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL?",
+          "a": "Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Three-Leg Chain Sling with Self-Locking Hooks — Type TOSL](/p/grade-80-three-leg-chain-sling-self-locking-hooks-tosl), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Three-Leg Chain Sling with Self-Locking Hooks, Type TOSL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Three-Leg Chain Sling with Self-Locking Hooks — Type TOSL available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Three-Leg Chain Sling with Self-Locking Hooks — Type TOSL is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-three-leg-chain-sling-sling-hooks-tos",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS (type TOS) used for?",
+          "a": "Grade 100 three-leg chain sling made up with an oblong master link assembly at the top and a sling hook with safety latch on each of the three legs. A sling hook is the general-purpose end fitting: the spring latch closes the throat so the hook cannot slip off a slack lifting point."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code TOS mean on Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: T = triple leg; O = oblong master link; S = sling hook with safety latch. So a TOS sling is a triple leg sling with an oblong master link assembly at the top and a sling hook with safety latch on each of its three legs. The part numbers in the size table start IH-LR-CS-G100TOS and add the chain size, for example IH-LR-CS-G100TOS-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS come in?",
+          "a": "Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100TOS-6MM to IH-LR-CS-G100TOS-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS?",
+          "a": "For Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS, with oblong master link with sub-links at the top and a sling hook with safety latch on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS?",
+          "a": "Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS is rated 3 to 56 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 21.2 t with each leg up to 45° from vertical and 15 t between 45° and 60°; on 26 mm chain it is 56 t and 40 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link with sub-links at the top and a sling hook with safety latch on each leg on Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS?",
+          "a": "Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Three-Leg Chain Sling with Sling Hooks — Type TOS](/p/grade-80-three-leg-chain-sling-sling-hooks-tos), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 21.2 t and the Grade 80 one 17 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Three-Leg Chain Sling with Sling Hooks, Type TOS from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Three-Leg Chain Sling with Sling Hooks — Type TOS available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Three-Leg Chain Sling with Sling Hooks — Type TOS is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-two-leg-chain-sling-foundry-hooks-dof",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF (type DOF) used for?",
+          "a": "Grade 100 two-leg chain sling made up with an oblong master link at the top and a foundry hook on each of the two legs. A foundry hook has a wide, open throat with no latch, made for trunnions, ladle bails and handles too thick for a sling hook. With no latch, keep the load seated in the bowl of the hook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code DOF mean on Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: D = double leg; O = oblong master link; F = foundry hook. So a DOF sling is a double leg sling with an oblong master link at the top and a foundry hook on each of its two legs. The part numbers in the size table start IH-LR-CS-G100DOF and add the chain size, for example IH-LR-CS-G100DOF-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF come in?",
+          "a": "Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100DOF-6MM to IH-LR-CS-G100DOF-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF?",
+          "a": "For Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF, with oblong master link at the top and a foundry hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF?",
+          "a": "Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF is rated 2 to 37.5 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 14 t with each leg up to 45° from vertical and 10 t between 45° and 60°; on 26 mm chain it is 37.5 t and 26.5 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link at the top and a foundry hook on each leg on Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF?",
+          "a": "Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Two-Leg Chain Sling with Foundry Hooks — Type DOF](/p/grade-80-two-leg-chain-sling-foundry-hooks-dof), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 14 t and the Grade 80 one 11.2 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Two-Leg Chain Sling with Foundry Hooks, Type DOF from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Two-Leg Chain Sling with Foundry Hooks — Type DOF available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Two-Leg Chain Sling with Foundry Hooks — Type DOF is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-two-leg-chain-sling-grab-hooks-dog",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG (type DOG) used for?",
+          "a": "Grade 100 two-leg chain sling made up with an oblong master link at the top and a grab hook on each of the two legs. A grab hook has a narrow throat that seats across a single chain link, so a leg can be hooked back onto its own chain to shorten it or to wrap the load."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code DOG mean on Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: D = double leg; O = oblong master link; G = grab hook. So a DOG sling is a double leg sling with an oblong master link at the top and a grab hook on each of its two legs. The part numbers in the size table start IH-LR-CS-G100DOG and add the chain size, for example IH-LR-CS-G100DOG-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG come in?",
+          "a": "Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100DOG-6MM to IH-LR-CS-G100DOG-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG?",
+          "a": "For Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG, with oblong master link at the top and a grab hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG?",
+          "a": "Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG is rated 2 to 37.5 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 14 t with each leg up to 45° from vertical and 10 t between 45° and 60°; on 26 mm chain it is 37.5 t and 26.5 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link at the top and a grab hook on each leg on Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG?",
+          "a": "Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Two-Leg Chain Sling with Grab Hooks — Type DOG](/p/grade-80-two-leg-chain-sling-grab-hooks-dog), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 14 t and the Grade 80 one 11.2 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Two-Leg Chain Sling with Grab Hooks, Type DOG from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Two-Leg Chain Sling with Grab Hooks — Type DOG available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Two-Leg Chain Sling with Grab Hooks — Type DOG is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-two-leg-chain-sling-oblong-link-ends-doo",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO (type DOO) used for?",
+          "a": "Grade 100 two-leg chain sling made up with an oblong master link at the top and an oblong link at the end of each of the two legs. A plain oblong link at the working end is for shackling to a lifting lug or for coupling to another fitting on site."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code DOO mean on Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: D = double leg; O = oblong master link; O = oblong link. So a DOO sling is a double leg sling with an oblong master link at the top and an oblong link at the end of each of its two legs. The part numbers in the size table start IH-LR-CS-G100DOO and add the chain size, for example IH-LR-CS-G100DOO-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO come in?",
+          "a": "Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100DOO-6MM to IH-LR-CS-G100DOO-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO?",
+          "a": "For Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO, with oblong master link at the top and a oblong link on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the bottom link, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO?",
+          "a": "Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO is rated 2 to 37.5 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 14 t with each leg up to 45° from vertical and 10 t between 45° and 60°; on 26 mm chain it is 37.5 t and 26.5 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link at the top and a oblong link on each leg on Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO?",
+          "a": "Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Two-Leg Chain Sling with Oblong Link Ends — Type DOO](/p/grade-80-two-leg-chain-sling-oblong-link-ends-doo), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 14 t and the Grade 80 one 11.2 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Two-Leg Chain Sling with Oblong Link Ends, Type DOO from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Two-Leg Chain Sling with Oblong Link Ends — Type DOO available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Two-Leg Chain Sling with Oblong Link Ends — Type DOO is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-two-leg-chain-sling-self-locking-hooks-dosl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL (type DOSL) used for?",
+          "a": "Grade 100 two-leg chain sling made up with an oblong master link at the top and a self-locking hook on each of the two legs. A self-locking hook closes and locks as the load comes on and opens only when the trigger is pressed with the hook unloaded, which suits lifts where the load could otherwise unhook."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code DOSL mean on Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: D = double leg; O = oblong master link; SL = self-locking hook. So a DOSL sling is a double leg sling with an oblong master link at the top and a self-locking hook on each of its two legs. The part numbers in the size table start IH-LR-CS-G100DOSL and add the chain size, for example IH-LR-CS-G100DOSL-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL come in?",
+          "a": "Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100DOSL-6MM to IH-LR-CS-G100DOSL-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL?",
+          "a": "For Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL, with oblong master link at the top and a self-locking hook on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL?",
+          "a": "Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL is rated 2 to 37.5 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 14 t with each leg up to 45° from vertical and 10 t between 45° and 60°; on 26 mm chain it is 37.5 t and 26.5 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link at the top and a self-locking hook on each leg on Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL?",
+          "a": "Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Two-Leg Chain Sling with Self-Locking Hooks — Type DOSL](/p/grade-80-two-leg-chain-sling-self-locking-hooks-dosl), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 14 t and the Grade 80 one 11.2 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Two-Leg Chain Sling with Self-Locking Hooks, Type DOSL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Two-Leg Chain Sling with Self-Locking Hooks — Type DOSL available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Two-Leg Chain Sling with Self-Locking Hooks — Type DOSL is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "grade-100-two-leg-chain-sling-sling-hooks-dos",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS (type DOS) used for?",
+          "a": "Grade 100 two-leg chain sling made up with an oblong master link at the top and a sling hook with safety latch on each of the two legs. A sling hook is the general-purpose end fitting: the spring latch closes the throat so the hook cannot slip off a slack lifting point."
+        },
+        {
+          "slot": "B",
+          "q": "What does the code DOS mean on Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS?",
+          "a": "Chain sling make-ups are named by a letter code read from the top down: D = double leg; O = oblong master link; S = sling hook with safety latch. So a DOS sling is a double leg sling with an oblong master link at the top and a sling hook with safety latch on each of its two legs. The part numbers in the size table start IH-LR-CS-G100DOS and add the chain size, for example IH-LR-CS-G100DOS-6MM for 6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "Which chain sizes does Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS come in?",
+          "a": "Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS comes in 11 chain sizes, 6 mm to 26 mm chain, each with its own Indus part number from IH-LR-CS-G100DOS-6MM to IH-LR-CS-G100DOS-26MM. The chain and every fitting are matched in size and grade, so the chain size you pick sets the working load limit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I specify the reach when ordering Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS?",
+          "a": "For Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS, with oblong master link at the top and a sling hook with safety latch on each leg, slings are made up to length. Quote the Indus part number for the chain size and the reach you need, measured from the bearing point of the top fitting to the bearing point of the hook, or send the load, the number of lifting points and the headroom and we will size the sling for you."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS?",
+          "a": "Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS is rated 2 to 37.5 t, legs up to 45° from vertical, depending on chain size, at a 4:1 design factor. On 16 mm chain the WLL is 14 t with each leg up to 45° from vertical and 10 t between 45° and 60°; on 26 mm chain it is 37.5 t and 26.5 t."
+        },
+        {
+          "slot": "J",
+          "q": "Why does Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS show two working load limits for each size?",
+          "a": "The rating of a multi-leg sling depends on how far the legs spread. The table heads its columns by the angle between opposite legs: \"up to 90°\" means each leg is no more than 45° from vertical, and \"90–120°\" means each leg is between 45° and 60° from vertical. A chain sling is never used with its legs more than 60° from vertical. This applies to the oblong master link at the top and a sling hook with safety latch on each leg on Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS."
+        },
+        {
+          "slot": "G",
+          "q": "What identification and test certificate come with Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS?",
+          "a": "Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS carries a permanent tag and ships with a certificate. Each sling carries a permanent tag with its serial number, chain size, grade, reach and working load limit, and ships with the manufacturer's test certificate. The rating on the tag and certificate is the one that governs the sling in service. For third-party certification or a witnessed proof test, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Can I swap a hook or link on Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS for one from another sling?",
+          "a": "Only with a part of the same grade and size, because a sling is rated on its weakest component and a lower-grade hook or link pulls the whole sling down to that part's rating. Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS is built from Grade 100 alloy steel chain and fittings, so repairs and replacements should be Grade 100 parts as well; ask us for the matching fitting."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS be inspected and kept in service?",
+          "a": "Before each lift the user looks over Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS for stretched or nicked chain, bent links and a deformed hook throat. A damaged sling is taken out of service, and it also needs periodic inspection by a competent person. The [Chain sling capacity chart: Grade 80 and Grade 100 WLL by legs and angle](/blog/chain-sling-capacity-chart) explains how working load, proof load and breaking load relate."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS and the Grade 80 version?",
+          "a": "The Grade 80 version, [Grade 80 Two-Leg Chain Sling with Sling Hooks — Type DOS](/p/grade-80-two-leg-chain-sling-sling-hooks-dos), is built the same way from Grade 80 chain, and the chain size sets the rating. On 16 mm chain the Grade 100 sling is rated 14 t and the Grade 80 one 11.2 t with each leg up to 45° from vertical. Choose on the rating you need and on the chain size your hooks and links can accept."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 100 Two-Leg Chain Sling with Sling Hooks, Type DOS from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 100 Two-Leg Chain Sling with Sling Hooks — Type DOS available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Grade 100 Two-Leg Chain Sling with Sling Hooks — Type DOS is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

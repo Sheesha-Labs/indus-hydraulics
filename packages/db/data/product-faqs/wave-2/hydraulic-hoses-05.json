@@ -1,0 +1,1781 @@
+{
+  "family": "hydraulic-hoses-05",
+  "extraFacts": [
+    {
+      "fact": "R5 Textile-Cover Single Wire Braid Hose: 210 bar at -04 down to 24 bar at -32; standard SAE 100R5.",
+      "source": "Indus Hydraulics product listing for R5 Textile-Cover Single Wire Braid Hose"
+    },
+    {
+      "fact": "R14 PTFE Hydraulic Hose: 200 bar at -03 down to 65 bar at -16; standard SAE 100R14.",
+      "source": "Indus Hydraulics product listing for R14 PTFE Hydraulic Hose"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses: pressure 5,000 psi (345 bar); sizes 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24)",
+      "source": "Indus Hydraulics product listing for Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses: pressure 2,500 to 4,000 psi (172 to 276 bar), by size; sizes 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses: pressure 2,500 to 4,000 psi (172 to 276 bar), by size; sizes 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses: pressure 6,000 psi (414 bar); sizes 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24)",
+      "source": "Indus Hydraulics product listing for Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi: pressure 6,000 psi (414 bar); sizes 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi: temperature -40°F to +257°F; sizes 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 811HT Series Low Pressure Rubber Hoses: pressure 100 to 300 psi (7 to 21 bar), by size; sizes 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 811HT Series Low Pressure Rubber Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 811 Series Low Pressure Rubber Hoses: pressure 62 to 300 psi (4 to 21 bar), by size; sizes 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2-1/2\" (-40), 3\" (-48)",
+      "source": "Indus Hydraulics product listing for Parker 811 Series Low Pressure Rubber Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 804 Series Hydraulic Bulk Hoses: sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12)",
+      "source": "Indus Hydraulics product listing for Parker 804 Series Hydraulic Bulk Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses: pressure 62 to 300 psi (4 to 21 bar), by size; sizes 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), 2-1/2\" (-40)",
+      "source": "Indus Hydraulics product listing for Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover: pressure 1,000 psi (69 bar); sizes 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), 2-1/2\" (-40), 3\" (-48)",
+      "source": "Indus Hydraulics product listing for Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover: sizes 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1 1/4\" (-20), 1-1/2\" (-24), 1 1/2\" (-24), 2\" (-32), 2-1/2\" (-40), 3\" (-48)",
+      "source": "Indus Hydraulics product listing for Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover: sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover: sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover: sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24)",
+      "source": "Indus Hydraulics product listing for Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover: temperature -40°F to +257°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker Hydraulic Hose, 50 Feet: pressure 3,100 to 5,000 psi (214 to 345 bar), by size; temperature -40°F to +212°F; sizes 3/8\" (-6), 3/4\" (-12)",
+      "source": "Indus Hydraulics product listing for Parker Hydraulic Hose, 50 Feet, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: R14 PTFE Hydraulic Hose: ",
+      "source": "Indus Hydraulics product listing for R14 PTFE Hydraulic Hose, facts dump 2026-11-19"
+    },
+    {
+      "fact": "In SAE hose dash sizing, the dash number is the hose inside diameter in sixteenths of an inch, so -4 is 1/4\" and -8 is 1/2\".",
+      "source": "SAE J517 / SAE J514 dash-size convention; confirmed by the size tables on the Indus listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-772tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 6 part numbers from 1/2\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are listed in 6 hose sizes: 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), and on to 2\" (-32). The 6 part numbers run from 772TC-32 to 772TC-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 772TC-12 of the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 772TC-12 is the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in 3/4\" ID, 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 2,500 to 4,000 psi (172 to 276 bar), by size for the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses. By row: 276 bar at 1/2\"; 276 bar at 5/8\"; 276 bar at 3/4\"; 276 bar at 1\"; 207 bar at 1-1/4\"; 172 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/2\" (-8), and pick the same size in the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 772TC Series or Parker 782TC Series: which should I choose?",
+          "a": "The Parker 772TC Series are listed at 2,500 to 4,000 psi (172 to 276 bar), while the Parker 782TC Series are listed at 5,000 psi (345 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 782TC Series page](/p/parker-782tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 772TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-774-series-high-pressure-rubber-hydraulic-phosphate-ester-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses used for?",
+          "a": "The Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 3/4\" to 2\". Listed use: Phosphate Ester Base Hydraulic Fluids. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses come in?",
+          "a": "The Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses are listed in 5 hose sizes: 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 5 part numbers run from 774-12 to 774-32. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 774-20 of the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses cover?",
+          "a": "Part number 774-20 is the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses in 1-1/4\" ID, 207 bar, burst 827 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses?",
+          "a": "The maker states 2,500 to 4,000 psi (172 to 276 bar), by size for the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses. By row: 276 bar at 3/4\"; 276 bar at 1\"; 207 bar at 1-1/4\"; 172 bar at 1-1/2\"; 172 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses?",
+          "a": "The Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses have no temperature range stated in the listing. Listed fluids: Phosphate Ester Base Hydraulic Fluids. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses meet?",
+          "a": "The listing for the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses?",
+          "a": "End fittings for the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses must be from the series the hose maker approves for that hose; the listing names the Parkrimp NO Skive Series. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses recommended for?",
+          "a": "The listing describes the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses as follows: Phosphate Ester Base Hydraulic Fluids. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 774 Series or Parker 772TC Series: which should I choose?",
+          "a": "The Parker 774 Series are listed at 2,500 to 4,000 psi (172 to 276 bar), while the Parker 772TC Series are listed at 2,500 to 4,000 psi (172 to 276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 772TC Series page](/p/parker-772tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 774 Series High Pressure Rubber Hydraulic Phosphate Ester Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-781-series-high-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 781 Series High Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 781 Series High Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 4 part numbers from 3/4\" to 1-1/2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 781 Series High Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 781 Series High Pressure Rubber Hydraulic Hoses are listed in 4 hose sizes: 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24). The 4 part numbers run from 781-12 to 781-24. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 781-20 of the Parker 781 Series High Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 781-20 is the Parker 781 Series High Pressure Rubber Hydraulic Hoses in 1-1/4\" ID, 345 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 781 Series High Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 5,000 psi (345 bar) for the Parker 781 Series High Pressure Rubber Hydraulic Hoses. Every listed size, 3/4\" to 1-1/2\", is rated 345 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 781 Series High Pressure Rubber Hydraulic Hoses?",
+          "a": "The listing for the Parker 781 Series High Pressure Rubber Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 781 Series High Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 781 Series High Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 781 Series High Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 781 Series High Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 781 Series High Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 781 Series High Pressure Rubber Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 781 Series High Pressure Rubber Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/4\" (-12), and pick the same size in the Parker 781 Series High Pressure Rubber Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 781 Series High Pressure Rubber Hydraulic Hoses or Parker 774 Series: which should I choose?",
+          "a": "The Parker 781 Series High Pressure Rubber Hydraulic Hoses are listed at 5,000 psi (345 bar), while the Parker 774 Series are listed at 2,500 to 4,000 psi (172 to 276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 774 Series page](/p/parker-774-series-high-pressure-rubber-hydraulic-phosphate-ester-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 781 Series High Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 781 Series High Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 781 Series High Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 781 Series High Pressure Rubber Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-782tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 4 part numbers from 3/4\" to 1-1/2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are listed in 4 hose sizes: 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24). The 4 part numbers run from 782TC-12 to 782TC-24. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 782TC-20 of the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 782TC-20 is the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in 1-1/4\" ID, 345 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 5,000 psi (345 bar) for the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses. Every listed size, 3/4\" to 1-1/2\", is rated 345 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/4\" (-12), and pick the same size in the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 782TC Series or Parker 791TC Series: which should I choose?",
+          "a": "The Parker 782TC Series are listed at 5,000 psi (345 bar), while the Parker 791TC Series are listed at 6,000 psi (414 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 791TC Series page](/p/parker-791tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 782TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-787tc-series-tough-cover-hydraulic-hoses-5000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi used for?",
+          "a": "The Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi is a hydraulic hose from Parker Hannifin, listed in 6 part numbers from 1/2\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi come in?",
+          "a": "The Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi is listed in 6 hose sizes: 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1-1/4\" (-20), and on to 2\" (-32). The 6 part numbers run from 787TC-32 to 787TC-24. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 787TC-12 of the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi cover?",
+          "a": "Part number 787TC-12 is the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi in 3/4\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi?",
+          "a": "The size table for the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi states 5,000 psi against its part descriptions, for example 787TC-32. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi?",
+          "a": "The Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi has a temperature range of -40°F to +257°F. Listed fluids: Hydraulic Fluid (Petroleum), Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi meet?",
+          "a": "The listing for the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi?",
+          "a": "End fittings for the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi from 210 mm at 1-1/4\" to 317.5 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/2\" (-8), and pick the same size in the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi or Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi: which should I choose?",
+          "a": "The Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi is listed at 6,000 psi (414 bar); check the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi page](/p/parker-797tc-series-tough-cover-hydraulic-hoses-6000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi in Dubai?",
+          "a": "Yes. We keep the Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-791tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 4 part numbers from 3/4\" to 1-1/2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are listed in 4 hose sizes: 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24). The 4 part numbers run from 791TC-12 to 791TC-24. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 791TC-20 of the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 791TC-20 is the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in 1-1/4\" ID, 414 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 6,000 psi (414 bar) for the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses. Every listed size, 3/4\" to 1-1/2\", is rated 414 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/4\" (-12), and pick the same size in the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 791TC Series or Parker 782TC Series: which should I choose?",
+          "a": "The Parker 791TC Series are listed at 6,000 psi (414 bar), while the Parker 782TC Series are listed at 5,000 psi (345 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 782TC Series page](/p/parker-782tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 791TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-797tc-series-tough-cover-hydraulic-hoses-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi used for?",
+          "a": "The Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi is a hydraulic hose from Parker Hannifin, listed in 7 part numbers from 1/2\" to 2\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi come in?",
+          "a": "The Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi is listed in 7 hose sizes: 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), and on to 2\" (-32). The 7 part numbers run from 797TC-10 to 797TC-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 797TC-20 of the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi cover?",
+          "a": "Part number 797TC-20 is the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi in 1-1/4\" ID, 414 bar (6,000 psi), burst 1655 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi?",
+          "a": "The maker states 6,000 psi (414 bar) for the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi. Every listed size, 1/2\" to 2\", is rated 414 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi?",
+          "a": "The Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi has no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi meet?",
+          "a": "The listing for the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi?",
+          "a": "End fittings for the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi and what is the minimum bend radius?",
+          "a": "The listing for the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi recommended for?",
+          "a": "The listing describes the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi or Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi: which should I choose?",
+          "a": "The Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi runs 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 787TC Series Tough Cover Hydraulic Hoses, 5000 Psi page](/p/parker-787tc-series-tough-cover-hydraulic-hoses-5000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-804-series-hydraulic-bulk-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 804 Series Hydraulic Bulk Hoses used for?",
+          "a": "The Parker 804 Series Hydraulic Bulk Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 1/4\" to 3/4\". Listed use: Phosphate Ester Based Hydraulic Fluids Water Water Glycol Emulsions Air Use Liquid Soap As Lubricant. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 804 Series Hydraulic Bulk Hoses come in?",
+          "a": "The Parker 804 Series Hydraulic Bulk Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12). The 5 part numbers run from 804-4-RL to 804-8-RL. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 804-12-RL of the Parker 804 Series Hydraulic Bulk Hoses cover?",
+          "a": "Part number 804-12-RL is the Parker 804 Series Hydraulic Bulk Hoses in 3/4\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 804 Series Hydraulic Bulk Hoses?",
+          "a": "The listing for the Parker 804 Series Hydraulic Bulk Hoses gives no working pressure, so we do not state one. Quote your part number and size through [our contact page](/contact) and we will confirm the rating with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 804 Series Hydraulic Bulk Hoses?",
+          "a": "The Parker 804 Series Hydraulic Bulk Hoses have no temperature range stated in the listing. Listed fluids: Phosphate Ester Based Hydraulic Fluids Water Water Glycol Emulsions Air Use Liquid Soap As Lubricant. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 804 Series Hydraulic Bulk Hoses meet?",
+          "a": "The listing for the Parker 804 Series Hydraulic Bulk Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 804 Series Hydraulic Bulk Hoses?",
+          "a": "End fittings for the Parker 804 Series Hydraulic Bulk Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 804 Series Hydraulic Bulk Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 804 Series Hydraulic Bulk Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 804 Series Hydraulic Bulk Hoses recommended for?",
+          "a": "The listing describes the Parker 804 Series Hydraulic Bulk Hoses as follows: Phosphate Ester Based Hydraulic Fluids Water Water Glycol Emulsions Air Use Liquid Soap As Lubricant. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 804 Series Hydraulic Bulk Hoses or Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi: which should I choose?",
+          "a": "The Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi is listed at 6,000 psi (414 bar); check the Parker 804 Series Hydraulic Bulk Hoses size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 797TC Series Tough Cover Hydraulic Hoses, 6000 Psi page](/p/parker-797tc-series-tough-cover-hydraulic-hoses-6000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 804 Series Hydraulic Bulk Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker 804 Series Hydraulic Bulk Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 804 Series Hydraulic Bulk Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 804 Series Hydraulic Bulk Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-811-series-low-pressure-rubber-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 811 Series Low Pressure Rubber Hoses used for?",
+          "a": "The Parker 811 Series Low Pressure Rubber Hoses are hydraulic hoses from Parker Hannifin, listed in 6 part numbers from 3/4\" to 3\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 811 Series Low Pressure Rubber Hoses come in?",
+          "a": "The Parker 811 Series Low Pressure Rubber Hoses are listed in 6 hose sizes: 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2-1/2\" (-40), 3\" (-48). The 6 part numbers run from 811-40 to 811-12. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 811-20 of the Parker 811 Series Low Pressure Rubber Hoses cover?",
+          "a": "Part number 811-20 is the Parker 811 Series Low Pressure Rubber Hoses in 1-1/4\" ID, 14 bar, burst 55 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 811 Series Low Pressure Rubber Hoses?",
+          "a": "The maker states 62 to 300 psi (4 to 21 bar), by size for the Parker 811 Series Low Pressure Rubber Hoses. By row: 21 bar at 3/4\"; 17 bar at 1\"; 14 bar at 1-1/4\"; 10 bar at 1-1/2\"; 4 bar at 2-1/2\"; 4 bar at 3\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 811 Series Low Pressure Rubber Hoses?",
+          "a": "The Parker 811 Series Low Pressure Rubber Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 811 Series Low Pressure Rubber Hoses meet?",
+          "a": "The listing for the Parker 811 Series Low Pressure Rubber Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 811 Series Low Pressure Rubber Hoses?",
+          "a": "End fittings for the Parker 811 Series Low Pressure Rubber Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 811 Series Low Pressure Rubber Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 811 Series Low Pressure Rubber Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 811 Series Low Pressure Rubber Hoses recommended for?",
+          "a": "The listing describes the Parker 811 Series Low Pressure Rubber Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 811 Series Low Pressure Rubber Hoses or Parker 811HT Series Low Pressure Rubber Hoses: which should I choose?",
+          "a": "The Parker 811 Series Low Pressure Rubber Hoses are listed at 62 to 300 psi (4 to 21 bar), while the Parker 811HT Series Low Pressure Rubber Hoses are listed at 100 to 300 psi (7 to 21 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 811HT Series Low Pressure Rubber Hoses page](/p/parker-811ht-series-low-pressure-rubber-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 811 Series Low Pressure Rubber Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 811 Series Low Pressure Rubber Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 811 Series Low Pressure Rubber Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 811 Series Low Pressure Rubber Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-811ht-series-low-pressure-rubber-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 811HT Series Low Pressure Rubber Hoses used for?",
+          "a": "The Parker 811HT Series Low Pressure Rubber Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 3/4\" to 2\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 811HT Series Low Pressure Rubber Hoses come in?",
+          "a": "The Parker 811HT Series Low Pressure Rubber Hoses are listed in 5 hose sizes: 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 5 part numbers run from 811HT-32 to 811HT-12. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 811HT-20 of the Parker 811HT Series Low Pressure Rubber Hoses cover?",
+          "a": "Part number 811HT-20 is the Parker 811HT Series Low Pressure Rubber Hoses in 1-1/4\" ID, 14 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 811HT Series Low Pressure Rubber Hoses?",
+          "a": "The maker states 100 to 300 psi (7 to 21 bar), by size for the Parker 811HT Series Low Pressure Rubber Hoses. By row: 21 bar at 3/4\"; 17 bar at 1\"; 14 bar at 1-1/4\"; 10 bar at 1-1/2\"; 7 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 811HT Series Low Pressure Rubber Hoses?",
+          "a": "The Parker 811HT Series Low Pressure Rubber Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 811HT Series Low Pressure Rubber Hoses meet?",
+          "a": "The listing for the Parker 811HT Series Low Pressure Rubber Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 811HT Series Low Pressure Rubber Hoses?",
+          "a": "End fittings for the Parker 811HT Series Low Pressure Rubber Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 811HT Series Low Pressure Rubber Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 811HT Series Low Pressure Rubber Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 811HT Series Low Pressure Rubber Hoses recommended for?",
+          "a": "The listing describes the Parker 811HT Series Low Pressure Rubber Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 811HT Series Low Pressure Rubber Hoses or Parker 811 Series Low Pressure Rubber Hoses: which should I choose?",
+          "a": "The Parker 811HT Series Low Pressure Rubber Hoses are listed at 100 to 300 psi (7 to 21 bar), while the Parker 811 Series Low Pressure Rubber Hoses are listed at 62 to 300 psi (4 to 21 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 811 Series Low Pressure Rubber Hoses page](/p/parker-811-series-low-pressure-rubber-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 811HT Series Low Pressure Rubber Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 811HT Series Low Pressure Rubber Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 811HT Series Low Pressure Rubber Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 811HT Series Low Pressure Rubber Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-881-series-low-pressure-rubber-hydraulic-suction-and-return-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses used for?",
+          "a": "The Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses are hydraulic hoses from Parker Hannifin, listed in 6 part numbers from 3/4\" to 2-1/2\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses come in?",
+          "a": "The Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses are listed in 6 hose sizes: 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), and on to 2-1/2\" (-40). The 6 part numbers run from 881-12 to 881-40. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 881-24 of the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses cover?",
+          "a": "Part number 881-24 is the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses in 1-1/2\" ID, 10 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses?",
+          "a": "The maker states 62 to 300 psi (4 to 21 bar), by size for the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses. By row: 21 bar at 3/4\"; 17 bar at 1\"; 14 bar at 1-1/4\"; 10 bar at 1-1/2\"; 7 bar at 2\"; 4 bar at 2-1/2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses?",
+          "a": "The Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses have maximum 158°F. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses meet?",
+          "a": "The listing for the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses?",
+          "a": "End fittings for the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses must be from the series the hose maker approves for that hose; the listing gives Parker 43 Series, 81 Series, 88 Series. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses recommended for?",
+          "a": "The listing describes the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 881 Series or Parker 811HT Series Low Pressure Rubber Hoses: which should I choose?",
+          "a": "The Parker 881 Series are listed at 62 to 300 psi (4 to 21 bar), while the Parker 811HT Series Low Pressure Rubber Hoses are listed at 100 to 300 psi (7 to 21 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 811HT Series Low Pressure Rubber Hoses page](/p/parker-811ht-series-low-pressure-rubber-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 881 Series Low Pressure Rubber Hydraulic Suction And Return Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-bulk-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Bulk Hydraulic Hoses used for?",
+          "a": "The Parker Bulk Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 99 part numbers from 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker Bulk Hydraulic Hoses come in?",
+          "a": "The Parker Bulk Hydraulic Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32). The 99 part numbers run from 187TC-16-RL to 797TC-20-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 187TC-12-RL of the Parker Bulk Hydraulic Hoses cover?",
+          "a": "Part number 187TC-12-RL is the Parker Bulk Hydraulic Hoses in 3/4\" ID, 69 bar (1,000 psi), minimum bend radius 88.9 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker Bulk Hydraulic Hoses?",
+          "a": "The size table gives 24 to 414 bar at 1/4\"; 21 to 414 bar at 1/2\"; 21 to 414 bar at 5/8\"; 14 to 414 bar at 1\"; 276 to 414 bar at 1 1/4\"; 276 to 414 bar at 2\" for the Parker Bulk Hydraulic Hoses, which is the maximum working pressure for continuous duty. Burst pressure is a test figure, not a working limit, so choose on the working figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker Bulk Hydraulic Hoses?",
+          "a": "The Parker Bulk Hydraulic Hoses have a temperature range of -40°F to +257°F. Listed fluids: Hydraulic Fluid (Petroleum), Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker Bulk Hydraulic Hoses meet?",
+          "a": "The listing for the Parker Bulk Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker Bulk Hydraulic Hoses?",
+          "a": "End fittings for the Parker Bulk Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker Bulk Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker Bulk Hydraulic Hoses from 50.8 mm at 1/4\" to 381 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker Bulk Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker Bulk Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker Bulk Hydraulic Hoses or Parker 804 Series Hydraulic Bulk Hoses: which should I choose?",
+          "a": "The Parker Bulk Hydraulic Hoses run 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 804 Series Hydraulic Bulk Hoses page](/p/parker-804-series-hydraulic-bulk-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker Bulk Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker Bulk Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Bulk Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker Bulk Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-bxx-series-medium-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker BXX Series Medium Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 6 part numbers. Part descriptions in the size table give lengths such as 3ft. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker BXX Series Medium Pressure Rubber Hydraulic Hoses are listed in 6 part numbers, from BXX16 to bxx08. Lengths in the descriptions include 3ft. Each description is in the size table; send us the bore and length you need and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number BXX06 of the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number BXX06 is the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses in 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The listing for the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "D",
+          "q": "What do I send to order the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "Quote the part number from the size table, for example BXX16 or bxx08. If you only have the old hose, send its length, bore and end fittings and we will identify the match; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details."
+        },
+        {
+          "slot": "K",
+          "q": "Parker BXX Series Medium Pressure Rubber Hydraulic Hoses or Parker 881 Series: which should I choose?",
+          "a": "The Parker BXX Series Medium Pressure Rubber Hydraulic Hoses are listed at 2,000 to 5,000 psi (138 to 345 bar), while the Parker 881 Series are listed at 62 to 300 psi (4 to 21 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 881 Series page](/p/parker-881-series-low-pressure-rubber-hydraulic-suction-and-return-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Parker BXX Series Medium Pressure Rubber Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-187-series-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 187 Series Hydraulic Hoses used for?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 16 part numbers from 1/2\" to 3\". Listed use: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 187 Series Hydraulic Hoses come in?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses are listed in 9 hose sizes: 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), 2-1/2\" (-40), 3\" (-48). The 16 part numbers run from 187-10-BX to 187-32-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 187-16 of the Parker GlobalCore 187 Series Hydraulic Hoses cover?",
+          "a": "Part number 187-16 is the Parker GlobalCore 187 Series Hydraulic Hoses in 1\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 187 Series Hydraulic Hoses?",
+          "a": "The maker states 1,000 psi (69 bar) for the Parker GlobalCore 187 Series Hydraulic Hoses. Every listed size, 1-1/4\" to 3\", is rated 69 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 187 Series Hydraulic Hoses?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 187 Series Hydraulic Hoses meet?",
+          "a": "The listing for the Parker GlobalCore 187 Series Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 187 Series Hydraulic Hoses?",
+          "a": "End fittings for the Parker GlobalCore 187 Series Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 187 Series Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker GlobalCore 187 Series Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 187 Series Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker GlobalCore 187 Series Hydraulic Hoses as follows: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 187 Series Hydraulic Hoses or Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough: which should I choose?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses are listed at 1,000 psi (69 bar), while the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough is listed at 1,000 psi (69 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough page](/p/parker-globalcore-187-series-hydraulic-hoses-super-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 187 Series Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 187 Series Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 187 Series Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker GlobalCore 187 Series Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-187-series-hydraulic-hoses-super-tough-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover used for?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover is a hydraulic hose from Parker Hannifin, listed in 16 part numbers from 1/2\" to 3\". Listed use: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover come in?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover is listed in 9 hose sizes: 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), and on to 3\" (-48). The 16 part numbers run from 187ST-10 to 187ST-32-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 187ST-16-BX of the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover cover?",
+          "a": "Part number 187ST-16-BX is the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover in 1\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "The maker states 1,000 psi (69 bar) for the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover. Every listed size, 1-1/4\" to 3\", is rated 69 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover has no temperature range stated in the listing. Listed fluids: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover meet?",
+          "a": "The listing for the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "End fittings for the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover and what is the minimum bend radius?",
+          "a": "The listing for the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover recommended for?",
+          "a": "The listing describes the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover as follows: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough or Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover: which should I choose?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover runs 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), 2-1/2\" (-40), 3\" (-48), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover page](/p/parker-globalcore-187-series-hydraulic-hoses-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-187-series-hydraulic-hoses-tough-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover used for?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover is a hydraulic hose from Parker Hannifin, listed in 16 part numbers from 1/2\" to 3\". Listed use: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover come in?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover is listed in 11 hose sizes: 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), and on to 3\" (-48). The 16 part numbers run from 187TC-32 to 187TC-20-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 187TC-48-BX of the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover cover?",
+          "a": "Part number 187TC-48-BX is the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover in 3\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover?",
+          "a": "The size table for the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover states 1,000 psi against its part descriptions, for example 187TC-16-BX. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover has no temperature range stated in the listing. Listed fluids: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover meet?",
+          "a": "The listing for the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover?",
+          "a": "End fittings for the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover from 63.5 mm at 1/2\" to 317.5 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover recommended for?",
+          "a": "The listing describes the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover as follows: High-Pressure Hydraulic Applications (Petroleum Base Hydraulic Fluids And Lubricating Oils). Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover or Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough: which should I choose?",
+          "a": "The Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough Cover is listed at 1,000 psi (69 bar); check the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 187 Series Hydraulic Hoses, Super Tough page](/p/parker-globalcore-187-series-hydraulic-hoses-super-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover in Dubai?",
+          "a": "Yes, we stock the Parker GlobalCore 187 Series Hydraulic Hoses, Tough Cover in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-387-series-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 387 Series Hydraulic Hoses used for?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 9 part numbers from 1/4\" to 2\". Listed use: Petroleum Base Hydraulic Fluids And Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 387 Series Hydraulic Hoses come in?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 9 part numbers run from 387-4-BX to 387-32-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 387-6-BX of the Parker GlobalCore 387 Series Hydraulic Hoses cover?",
+          "a": "Part number 387-6-BX is the Parker GlobalCore 387 Series Hydraulic Hoses in 3/8\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 387 Series Hydraulic Hoses?",
+          "a": "The listing for the Parker GlobalCore 387 Series Hydraulic Hoses gives no working pressure, so we do not state one. Quote your part number and size through [our contact page](/contact) and we will confirm the rating with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 387 Series Hydraulic Hoses?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids And Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 387 Series Hydraulic Hoses meet?",
+          "a": "The listing for the Parker GlobalCore 387 Series Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 387 Series Hydraulic Hoses?",
+          "a": "End fittings for the Parker GlobalCore 387 Series Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 387 Series Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker GlobalCore 387 Series Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 387 Series Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker GlobalCore 387 Series Hydraulic Hoses as follows: Petroleum Base Hydraulic Fluids And Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 387 Series Hydraulic Hoses or Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough: which should I choose?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses run 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough page](/p/parker-globalcore-387-series-hydraulic-hoses-super-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 387 Series Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 387 Series Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 387 Series Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Parker GlobalCore 387 Series Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-387-series-hydraulic-hoses-super-tough-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover used for?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover is a hydraulic hose from Parker Hannifin, listed in 8 part numbers from 1/4\" to 2\". Listed use: Petroleum Base Hydraulic Fluids And Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover come in?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover is listed in 8 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 8 part numbers run from 387ST-4-BX to 387ST-32-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 387ST-6-BX of the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover cover?",
+          "a": "Part number 387ST-6-BX is the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover in 3/8\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "The listing for the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover gives no working pressure, so we do not state one. Quote your part number and size through [our contact page](/contact) and we will confirm the rating with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover has no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids And Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover meet?",
+          "a": "The listing for the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "End fittings for the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover and what is the minimum bend radius?",
+          "a": "The listing for the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover recommended for?",
+          "a": "The listing describes the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover as follows: Petroleum Base Hydraulic Fluids And Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough or Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover: which should I choose?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover runs 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover page](/p/parker-globalcore-387-series-hydraulic-hoses-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover in Dubai?",
+          "a": "Yes, we hold the Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough Cover in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-387-series-hydraulic-hoses-tough-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover used for?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover is a hydraulic hose from Parker Hannifin, listed in 9 part numbers from 1/4\" to 1\". Listed use: Petroleum Base Hydraulic Fluids And Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover come in?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover is listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 9 part numbers run from 387TC-20-BX to 387TC-10-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 387TC-8-BX of the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover cover?",
+          "a": "Part number 387TC-8-BX is the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover in 1/2\" ID, minimum bend radius 88.9 mm, 3,000 psi. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover?",
+          "a": "The size table for the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover states 3,000 psi against its part descriptions, for example 387TC-16-BX. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover has no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids And Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover meet?",
+          "a": "The listing for the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover?",
+          "a": "End fittings for the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover from 50.8 mm at 1/4\" to 317.5 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover recommended for?",
+          "a": "The listing describes the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover as follows: Petroleum Base Hydraulic Fluids And Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover or Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough: which should I choose?",
+          "a": "The Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover runs 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 387 Series Hydraulic Hoses, Super Tough page](/p/parker-globalcore-387-series-hydraulic-hoses-super-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker GlobalCore 387 Series Hydraulic Hoses, Tough Cover, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-487-series-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 487 Series Hydraulic Hoses used for?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 9 part numbers from 1/4\" to 2\". Listed use: Petroleum Base Hydraulic Fluids And Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 487 Series Hydraulic Hoses come in?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 9 part numbers run from 487-4-BX to 487-32-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 487-6-BX of the Parker GlobalCore 487 Series Hydraulic Hoses cover?",
+          "a": "Part number 487-6-BX is the Parker GlobalCore 487 Series Hydraulic Hoses in 3/8\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 487 Series Hydraulic Hoses?",
+          "a": "The listing for the Parker GlobalCore 487 Series Hydraulic Hoses gives no working pressure, so we do not state one. Quote your part number and size through [our contact page](/contact) and we will confirm the rating with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 487 Series Hydraulic Hoses?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids And Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 487 Series Hydraulic Hoses meet?",
+          "a": "The listing for the Parker GlobalCore 487 Series Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 487 Series Hydraulic Hoses?",
+          "a": "End fittings for the Parker GlobalCore 487 Series Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 487 Series Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker GlobalCore 487 Series Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 487 Series Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker GlobalCore 487 Series Hydraulic Hoses as follows: Petroleum Base Hydraulic Fluids And Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 487 Series Hydraulic Hoses or Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough: which should I choose?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses run 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough page](/p/parker-globalcore-487-series-hydraulic-hoses-super-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 487 Series Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 487 Series Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 487 Series Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker GlobalCore 487 Series Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-487-series-hydraulic-hoses-super-tough-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover used for?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover is a hydraulic hose from Parker Hannifin, listed in 8 part numbers from 1/4\" to 1-1/2\". Listed use: Petroleum Base Hydraulic Fluids And Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover come in?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover is listed in 8 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1-1/2\" (-24). The 8 part numbers run from 487ST-4-BX to 487ST-20-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 487ST-6-BX of the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover cover?",
+          "a": "Part number 487ST-6-BX is the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover in 3/8\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "The listing for the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover gives no working pressure, so we do not state one. Quote your part number and size through [our contact page](/contact) and we will confirm the rating with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover has no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids And Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover meet?",
+          "a": "The listing for the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover?",
+          "a": "End fittings for the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover and what is the minimum bend radius?",
+          "a": "The listing for the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover recommended for?",
+          "a": "The listing describes the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover as follows: Petroleum Base Hydraulic Fluids And Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough or Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover: which should I choose?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover runs 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover page](/p/parker-globalcore-487-series-hydraulic-hoses-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover in Dubai?",
+          "a": "Yes. We keep the Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough Cover in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-globalcore-487-series-hydraulic-hoses-tough-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover used for?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover is a hydraulic hose from Parker Hannifin, listed in 9 part numbers from 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover come in?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover is listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 9 part numbers run from 487TC-16-BX to 487TC-20-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 487TC-12-BX of the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover cover?",
+          "a": "Part number 487TC-12-BX is the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover in 3/4\" ID, minimum bend radius 120.6 mm, 4,000 psi. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover?",
+          "a": "The size table for the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover states 4,000 psi against its part descriptions, for example 487TC-16-BX. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover has a temperature range of -40°F to +257°F. Listed fluids: Hydraulic Fluid (Petroleum), Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover meet?",
+          "a": "The listing for the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover?",
+          "a": "End fittings for the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover from 50.8 mm at 1/4\" to 317.5 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover or Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough: which should I choose?",
+          "a": "The Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover runs 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 487 Series Hydraulic Hoses, Super Tough page](/p/parker-globalcore-487-series-hydraulic-hoses-super-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover in Dubai?",
+          "a": "Yes, we hold the Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-hydraulic-hose-50-feet",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Hydraulic Hose, 50 Feet used for?",
+          "a": "The Parker Hydraulic Hose, 50 Feet is a hydraulic hose from Parker Hannifin, listed in 3 part numbers from 3/8\" to 3/4\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker Hydraulic Hose, 50 Feet come in?",
+          "a": "The Parker Hydraulic Hose, 50 Feet is listed in 2 hose sizes: 3/8\" (-6), 3/4\" (-12). The 3 part numbers run from 302-12-BX to 471ST-6-RL. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 302-6-BX of the Parker Hydraulic Hose, 50 Feet cover?",
+          "a": "Part number 302-6-BX is the Parker Hydraulic Hose, 50 Feet in 3/8\" ID, 328 bar, minimum bend radius 127 mm, length 50 Feet. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker Hydraulic Hose, 50 Feet?",
+          "a": "The maker states 3,100 to 5,000 psi (214 to 345 bar), by size for the Parker Hydraulic Hose, 50 Feet. By row: 328 to 345 bar at 3/8\"; 214 bar at 3/4\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker Hydraulic Hose, 50 Feet?",
+          "a": "The Parker Hydraulic Hose, 50 Feet has a temperature range of -40°F to +212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker Hydraulic Hose, 50 Feet meet?",
+          "a": "The listing for the Parker Hydraulic Hose, 50 Feet states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker Hydraulic Hose, 50 Feet?",
+          "a": "End fittings for the Parker Hydraulic Hose, 50 Feet must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker Hydraulic Hose, 50 Feet and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker Hydraulic Hose, 50 Feet from 63.5 mm at 3/8\" to 241.3 mm at 3/4\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker Hydraulic Hose, 50 Feet to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/8\" (-6), and pick the same size in the Parker Hydraulic Hose, 50 Feet size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker Hydraulic Hose, 50 Feet or Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover: which should I choose?",
+          "a": "The Parker Hydraulic Hose, 50 Feet runs 3/8\" (-6), 3/4\" (-12), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover page](/p/parker-globalcore-487-series-hydraulic-hoses-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Hydraulic Hose, 50 Feet made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Parker Hydraulic Hose, 50 Feet as United States and the HS code as 4009210000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Hydraulic Hose, 50 Feet in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker Hydraulic Hose, 50 Feet, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Hydraulic Hoses used for?",
+          "a": "The Parker Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker Hydraulic Hoses come in?",
+          "a": "The Parker Hydraulic Hoses are listed in 3 hose sizes: 1/4\" (-4), 1/2\" (-8), 1\" (-16). The 5 part numbers run from 302-16-BX to 471ST-4-RL. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 302-8-BX of the Parker Hydraulic Hoses cover?",
+          "a": "Part number 302-8-BX is the Parker Hydraulic Hoses in 1/2\" ID, 276 bar, minimum bend radius 177.8 mm, length 50 Feet. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker Hydraulic Hoses?",
+          "a": "The maker states 2,400 to 5,800 psi (165 to 400 bar), by size for the Parker Hydraulic Hoses. By row: 400 bar at 1/4\"; 276 bar at 1/2\"; 165 to 172 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker Hydraulic Hoses?",
+          "a": "The Parker Hydraulic Hoses have a temperature range of -40°F to +212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker Hydraulic Hoses meet?",
+          "a": "The listing for the Parker Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker Hydraulic Hoses?",
+          "a": "End fittings for the Parker Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker Hydraulic Hoses from 50.8 mm at 1/4\" to 304.8 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker Hydraulic Hoses or Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover: which should I choose?",
+          "a": "The Parker Hydraulic Hoses run 1/4\" (-4), 1/2\" (-8), 1\" (-16), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker GlobalCore 487 Series Hydraulic Hoses, Tough Cover page](/p/parker-globalcore-487-series-hydraulic-hoses-tough-cover)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Hydraulic Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Parker Hydraulic Hoses as United States and the HS code as 4009210000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "r14-ptfe-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R14 PTFE Hydraulic Hose used for?",
+          "a": "R14 PTFE Hydraulic Hose: PTFE-tube hose with stainless braid for chemicals, food/beverage, steam, and high-temperature hydraulic service. Conforms to SAE 100R14. It has a virgin PTFE (chemically inert) tube, single layer of stainless-steel braid (Type A) or stainless braid + Aramid (Type B) and a stainless-steel braid (exposed) or polyurethane jacket cover. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does R14 PTFE Hydraulic Hose come in?",
+          "a": "R14 PTFE Hydraulic Hose is listed for 3/16\" – 1\" (DN5 – DN25), with outside diameters of 8–30 mm (-03 to -16). Sizes are given as dash sizes: the dash number is the inside diameter in sixteenths of an inch. It is sold per-metre, cut to length; see [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I order R14 PTFE Hydraulic Hose by size and length?",
+          "a": "Give the bore (3/16\" – 1\" (DN5 – DN25)), the cut length and the end fittings, and we will quote the hose per metre or as a made-up assembly with crimped ends. If you are unsure of the size, send the layline text or a photo; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details we need."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R14 PTFE Hydraulic Hose?",
+          "a": "The listing gives 200 bar at -03 down to 65 bar at -16, with a minimum burst of 800 bar and a 4:1 safety factor. Take the figure for your bore from the size data, because working pressure falls as the bore grows, and check the end fittings carry the same rating."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids can R14 PTFE Hydraulic Hose handle?",
+          "a": "R14 PTFE Hydraulic Hose is rated for continuous service from -54°C to 204°C, with the upper limit reduced for aggressive fluids such as phosphate-ester, water-glycol or some biodegradables. The tube is virgin PTFE (chemically inert), and the cover is stainless-steel braid (exposed) or polyurethane jacket. Ask for a fluid compatibility chart if your fluid is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does R14 PTFE Hydraulic Hose conform to?",
+          "a": "The listing says R14 PTFE Hydraulic Hose conforms to SAE 100R14. Name any certificate or test report you need on the order; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r) for how the families compare."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings go on R14 PTFE Hydraulic Hose?",
+          "a": "R14 PTFE Hydraulic Hose takes crimped or reusable fittings in JIC 37°, ORFS, BSP, NPT and metric 24° forms; name your termination and we will recommend a matched ferrule and crimp die. See [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of R14 PTFE Hydraulic Hose and how do I route it?",
+          "a": "The listing gives a minimum bend radius of 35–270 mm by bore (35 mm at -03, 270 mm at -16). Keep every bend at or above the figure for your bore, avoid twisting the hose and support long runs. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is R14 PTFE Hydraulic Hose recommended for?",
+          "a": "The listing names chemical transfer where PTFE chemical inertness is required, steam and high-temperature service to +204°C and food, beverage, and pharmaceutical applications (FDA-grade PTFE on request) for R14 PTFE Hydraulic Hose. The [hose guide](/blog/hydraulic-hose-guide) explains how to match hose to duty."
+        },
+        {
+          "slot": "K",
+          "q": "R14 PTFE Hydraulic Hose or R5 Textile-Cover Single Wire Braid Hose: which should I choose?",
+          "a": "Choose by pressure and construction: R14 PTFE Hydraulic Hose is stated at 200 bar at -03 down to 65 bar at -16, while R5 Textile-Cover Single Wire Braid Hose is stated at 210 bar at -04 down to 24 bar at -32. The listing adds: For lower temperatures with similar chemical resistance see R7 / R8 thermoplastic. For higher pressures in steel construction see R12 / R13. See the [R5 Textile-Cover Single Wire Braid Hose page](/p/r5-textile-cover-single-wire-braid-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R14 PTFE Hydraulic Hose come from and how is it shipped?",
+          "a": "The listing does not confirm a country of origin for R14 PTFE Hydraulic Hose, so origin is stated on the quotation. We supply from Dubai, UAE to buyers across the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R14 PTFE Hydraulic Hose in Dubai?",
+          "a": "Yes. We keep R14 PTFE Hydraulic Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "r5-textile-cover-single-wire-braid-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R5 Textile-Cover Single Wire Braid Hose used for?",
+          "a": "R5 Textile-Cover Single Wire Braid Hose: Textile-cover single-wire-braid hose for fuel, oil, air, and refrigerant lines on legacy and military equipment. Conforms to SAE 100R5. It has a synthetic rubber (NBR), oil-resistant tube, one layer of high-tensile steel wire braid under a textile-braid cover and a textile braid (cotton/polyester), exposing the wire braid for inspection cover. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does R5 Textile-Cover Single Wire Braid Hose come in?",
+          "a": "R5 Textile-Cover Single Wire Braid Hose is listed for 3/16\" – 2\" (DN5 – DN51), with outside diameters of 12.9–56.4 mm (-04 to -32). Sizes are given as dash sizes: the dash number is the inside diameter in sixteenths of an inch. It is sold per-metre, cut to length; see [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I order R5 Textile-Cover Single Wire Braid Hose by size and length?",
+          "a": "Give the bore (3/16\" – 2\" (DN5 – DN51)), the cut length and the end fittings, and we will quote the hose per metre or as a made-up assembly with crimped ends. If you are unsure of the size, send the layline text or a photo; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details we need."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R5 Textile-Cover Single Wire Braid Hose?",
+          "a": "The listing gives 210 bar at -04 down to 24 bar at -32, with a minimum burst of 840 bar and a 4:1 safety factor. Take the figure for your bore from the size data, because working pressure falls as the bore grows, and check the end fittings carry the same rating."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids can R5 Textile-Cover Single Wire Braid Hose handle?",
+          "a": "R5 Textile-Cover Single Wire Braid Hose is rated for continuous service from -40°C to 121°C, with the upper limit reduced for aggressive fluids such as phosphate-ester, water-glycol or some biodegradables. The tube is synthetic rubber (NBR), oil-resistant, and the cover is textile braid (cotton/polyester), exposing the wire braid for inspection. Ask for a fluid compatibility chart if your fluid is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does R5 Textile-Cover Single Wire Braid Hose conform to?",
+          "a": "The listing says R5 Textile-Cover Single Wire Braid Hose conforms to SAE 100R5. Name any certificate or test report you need on the order; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r) for how the families compare."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings go on R5 Textile-Cover Single Wire Braid Hose?",
+          "a": "R5 Textile-Cover Single Wire Braid Hose takes crimped or reusable fittings in JIC 37°, ORFS, BSP, NPT and metric 24° forms; name your termination and we will recommend a matched ferrule and crimp die. See [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of R5 Textile-Cover Single Wire Braid Hose and how do I route it?",
+          "a": "The listing gives a minimum bend radius of 75–335 mm by bore (75 mm at -04, 335 mm at -32). Keep every bend at or above the figure for your bore, avoid twisting the hose and support long runs. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is R5 Textile-Cover Single Wire Braid Hose recommended for?",
+          "a": "The listing names truck and bus fuel/oil lines for R5 Textile-Cover Single Wire Braid Hose. The [hose guide](/blog/hydraulic-hose-guide) explains how to match hose to duty."
+        },
+        {
+          "slot": "K",
+          "q": "R5 Textile-Cover Single Wire Braid Hose or R14 PTFE Hydraulic Hose: which should I choose?",
+          "a": "Choose by pressure and construction: R5 Textile-Cover Single Wire Braid Hose is stated at 210 bar at -04 down to 24 bar at -32, while R14 PTFE Hydraulic Hose is stated at 200 bar at -03 down to 65 bar at -16. The listing adds: For modern rubber-cover dimensions see R1 1SN. For thermoplastic equivalents see R7 / R8. See the [R14 PTFE Hydraulic Hose page](/p/r14-ptfe-hydraulic-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R5 Textile-Cover Single Wire Braid Hose come from and how is it shipped?",
+          "a": "The listing does not confirm a country of origin for R5 Textile-Cover Single Wire Braid Hose, so origin is stated on the quotation. We supply from Dubai, UAE to buyers across the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R5 Textile-Cover Single Wire Braid Hose in Dubai?",
+          "a": "Yes, we hold R5 Textile-Cover Single Wire Braid Hose in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    }
+  ]
+}

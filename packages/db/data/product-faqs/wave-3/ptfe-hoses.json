@@ -1,0 +1,1185 @@
+{
+  "family": "ptfe-hoses",
+  "extraFacts": [
+    {
+      "fact": "Hose dash size: each dash number is the nominal hose bore in sixteenths of an inch (-4 is 1/4 inch, -6 is 3/8 inch, -8 is 1/2 inch, -10 is 5/8 inch, -12 is 3/4 inch, -16 is 1 inch, -20 is 1 1/4 inch, -24 is 1 1/2 inch, -32 is 2 inch).",
+      "source": "SAE J517 hydraulic hose dash size convention"
+    },
+    {
+      "fact": "Indus listings in this range: convoluted PTFE hose with polypropylene braid 16 bar working, 64 bar burst, DN 10 to DN 50; with stainless braid 25 bar, 100 bar burst, DN 10 to DN 75; smoothbore with stainless braid 350 bar, 1400 bar burst, DN 5 to DN 50, bend radius 50 mm static; Dixon WOC non-conductive 1740 psi at -4 to 500 psi at -32; Dixon BOC conductive burst 6960 psi at -4 to 2000 psi at -32; Aeroquip PTFE 1500 psi 1/2 inch bore 7/8 FJIC 6 1/2 inch bending radius, 2000 psi 13/32 inch bore 3/4 FJIC, 2500 psi 5/16 inch bore 9/16 FJIC 4 inch bending radius, 3000 psi 3/16 inch bore 7/16 FJIC 2 inch bending radius; Parker 919 sizes -4 to -20 at 69 to 207 bar, 919B -5 to -8, 919J -4 to -12, 919U -4 to -16, 929BJ -4 to -16, 939 and 939B -6 to -32 at 17 to 103 bar.",
+      "source": "Indus Hydraulics listings for the PTFE hose range"
+    }
+  ],
+  "products": [
+    {
+      "slug": "convoluted-ptfe-hose-with-polypropylene-braid",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Convoluted PTFE Hose with Polypropylene Braid and what is it used for?",
+          "a": "The Convoluted PTFE Hose with Polypropylene Braid is a PTFE-core convoluted hose with a single polypropylene braid. It carries corrosive, anti-static-required chemicals, pharmaceutical and high-purity solvents, with a working pressure to 16 bar and a temperature range of -73°C to +260°C."
+        },
+        {
+          "slot": "B",
+          "q": "What does the OEM part code PTFE-CONV-POLY mean on the convoluted PTFE hose with polypropylene braid?",
+          "a": "PTFE-CONV-POLY is the family code: PTFE-CONV is the convoluted PTFE construction and POLY marks the polypropylene braid, against PTFE-CONV-SS for the stainless version. Assemblies are built to order, so quote the bore, length and end fittings."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Convoluted PTFE Hose with Polypropylene Braid cover?",
+          "a": "The nominal bore runs from DN 10 (3/8\") to DN 50 (2\"). The listing carries no fixed part numbers: it is built to order, with the end fitting chosen per side from NPT, BSPP, ANSI flanges, DIN flanges or sanitary tri-clamp."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the bore and end fittings for the convoluted PTFE hose with polypropylene braid?",
+          "a": "Confirm the line working pressure and process medium, the operating temperature, the bore size and overall length, and the end fitting type on each side. Working pressure is 16 bar at the smallest bore and falls with larger bores, so read the per-size rating before choosing."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Convoluted PTFE Hose with Polypropylene Braid have?",
+          "a": "Maximum working pressure is 16 bar at the smallest bore, decreasing with diameter, with a minimum burst pressure of 64 bar, a 4:1 factor. The range is -73°C to +260°C continuous. Assemblies are hydrotested at 1.5 times working pressure, and a witness-test certificate is available on request."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Convoluted PTFE Hose with Polypropylene Braid made from?",
+          "a": "The core is PTFE with a single braid of polypropylene, and the construction is convoluted. End fittings are carbon steel or 316 stainless steel as ordered. The listing describes it as anti-static convoluted PTFE, which suits chemical transfer where static must be controlled."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and certificates apply to the convoluted PTFE hose with polypropylene braid?",
+          "a": "The listing cites ISO 10380 for the 4:1 safety factor and gives EN 10204 3.1 and 3.2 test reports on request. Quote the working pressure, medium and temperature and we confirm the hose; ask for the datasheet if your specification calls for a certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Convoluted PTFE Hose with Polypropylene Braid?",
+          "a": "End fittings are fitted to order in carbon steel or 316 stainless steel: sanitary tri-clamp, NPT, JIC or flanged, per side. For metal hose couplings see the [metallic hose couplings shelf](/c/metallic-hose-couplings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and handle the convoluted PTFE hose with polypropylene braid?",
+          "a": "Keep to the minimum bend radius, 40 mm static and 130 mm dynamic, and do not twist or kink the hose. Support long runs and keep the hose within its pressure and temperature range. Flush it after chemical service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the convoluted PTFE hose with polypropylene braid differ from the stainless steel braid version?",
+          "a": "The polypropylene-braid hose is rated 16 bar working with a 64 bar burst and sizes to DN 50 (2\"). The [convoluted PTFE hose with stainless steel braid](/p/convoluted-ptfe-hose-with-stainless-steel-braid) is rated 25 bar with a 100 bar burst and sizes to DN 75 (3\"). See [PTFE hose explained](/blog/ptfe-hose-explained) for convoluted against smoothbore."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Convoluted PTFE Hose with Polypropylene Braid made, and can you ship it from Dubai?",
+          "a": "The Convoluted PTFE Hose with Polypropylene Braid is made in United Kingdom. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Convoluted PTFE Hose with Polypropylene Braid in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Convoluted PTFE Hose with Polypropylene Braid at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "convoluted-ptfe-hose-with-stainless-steel-braid",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Convoluted PTFE Hose with Stainless Steel Braid and what is it used for?",
+          "a": "The Convoluted PTFE Hose with Stainless Steel Braid is a PTFE-core convoluted hose with a single Type 304 stainless steel braid, for aggressive chemicals, high-purity pharmaceutical and solvent transfer and steam-cleanable lines. Working pressure is to 25 bar and the range is -73°C to +260°C."
+        },
+        {
+          "slot": "B",
+          "q": "What does the OEM part code PTFE-CONV-SS mean on the convoluted PTFE hose?",
+          "a": "PTFE-CONV-SS is the family code: PTFE-CONV is the convoluted PTFE construction and SS marks the Type 304 stainless steel braid, against PTFE-CONV-POLY for the polypropylene version. Assemblies are built to order, so quote the bore, length and fittings."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Convoluted PTFE Hose with Stainless Steel Braid cover?",
+          "a": "The nominal bore runs from DN 10 (3/8\") to DN 75 (3\"). The listing carries no fixed part numbers: it is built to order, with the end fitting chosen per side from NPT, BSPP, ANSI flanges, DIN flanges or sanitary tri-clamp."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the bore for the convoluted PTFE hose with stainless steel braid?",
+          "a": "Match the bore to the flow and the coupling, from DN 10 (3/8\") to DN 75 (3\"), and read the per-size working pressure, because the 25 bar figure is for the smallest bore and falls as the bore rises. Confirm the medium and the temperature range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Convoluted PTFE Hose with Stainless Steel Braid have?",
+          "a": "Maximum working pressure is 25 bar at the smallest bore, decreasing with diameter, with a minimum burst pressure of 100 bar, a 4:1 factor. The range is -73°C to +260°C continuous, and assemblies are hydrotested at 1.5 times working pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Convoluted PTFE Hose with Stainless Steel Braid made from?",
+          "a": "The core is PTFE with a single braid of Type 304 stainless steel, in a convoluted construction. End fittings are carbon steel or 316 stainless steel as ordered. The stainless braid gives pressure strength and a robust outer cover for steam-cleanable process lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and certificates apply to the convoluted PTFE hose with stainless steel braid?",
+          "a": "The listing cites ISO 10380 for the 4:1 safety factor and gives EN 10204 3.1 and 3.2 test reports on request. Quote the working pressure, medium and temperature and we confirm the hose; ask for the datasheet if your specification calls for a certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Convoluted PTFE Hose with Stainless Steel Braid?",
+          "a": "End fittings are fitted to order in carbon steel or 316 stainless steel: sanitary tri-clamp, NPT, JIC or flanged. For metal hose couplings see the [metallic hose couplings shelf](/c/metallic-hose-couplings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and handle the convoluted PTFE hose with stainless steel braid?",
+          "a": "Keep to the minimum bend radius, 40 mm static and 130 mm dynamic. Do not twist or kink the hose, support long runs and keep to the pressure and temperature range. Convoluted hose drains less fully than smoothbore, so flush it carefully."
+        },
+        {
+          "slot": "K",
+          "q": "How does the convoluted PTFE hose with stainless braid differ from the smoothbore PTFE hose with stainless braid?",
+          "a": "The convoluted hose is rated 25 bar working with a 100 bar burst, in DN 10 to DN 75. The [smoothbore PTFE hose with stainless steel braid](/p/ptfe-smoothbore-hose-with-stainless-steel-braid) is rated 350 bar working with a 1400 bar burst, in DN 5 to DN 50, with a bend radius of 50 mm static. Convoluted flexes more tightly; smoothbore drains cleanly."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Convoluted PTFE Hose with Stainless Steel Braid made, and can you ship it from Dubai?",
+          "a": "The Convoluted PTFE Hose with Stainless Steel Braid is made in United Kingdom. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Convoluted PTFE Hose with Stainless Steel Braid from stock in the UAE and get a quotation?",
+          "a": "Yes, the Convoluted PTFE Hose with Stainless Steel Braid is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "ptfe-smoothbore-hose-with-stainless-steel-braid",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the PTFE Smoothbore Hose with Stainless Steel Braid and what is it used for?",
+          "a": "The PTFE Smoothbore Hose with Stainless Steel Braid is a smooth-bore PTFE core hose with a single Type 304 stainless steel braid, for high-pressure clean fluids, paint and ink, aggressive small-bore chemical lines and high-pressure pharmaceutical transfer. Working pressure is to 350 bar and the range is -73°C to +260°C."
+        },
+        {
+          "slot": "B",
+          "q": "What does the OEM part code PTFE-SMOOTHBORE-SS mean?",
+          "a": "PTFE-SMOOTHBORE-SS is the family code: PTFE-SMOOTHBORE is the smooth-bore PTFE construction and SS marks the Type 304 stainless steel braid. Assemblies are built to order, so quote the bore, length and end fittings."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the PTFE Smoothbore Hose with Stainless Steel Braid cover?",
+          "a": "The nominal bore runs from DN 5 (3/16\") to DN 50 (2\"). The listing carries no fixed part numbers: it is built to order, with the end fitting chosen per side from NPT, BSPP, ANSI flanges, DIN flanges or sanitary tri-clamp."
+        },
+        {
+          "slot": "D",
+          "q": "How does the working pressure of the smoothbore PTFE hose change with bore?",
+          "a": "The 350 bar rating applies at the smallest bore, DN 5 (3/16\"), and falls as the bore rises to DN 50 (2\"). Read the per-size rating in the manufacturer's size table, and give us the working pressure so we confirm the bore."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the PTFE Smoothbore Hose with Stainless Steel Braid have?",
+          "a": "Maximum working pressure is 350 bar at the smallest bore, decreasing with diameter, with a minimum burst pressure of 1400 bar, a 4:1 factor. The range is -73°C to +260°C continuous, and assemblies are hydrotested at 1.5 times working pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the PTFE Smoothbore Hose with Stainless Steel Braid made from?",
+          "a": "The core is smooth-bore PTFE with a single braid of Type 304 stainless steel. End fittings are carbon steel or 316 stainless steel as ordered. A smooth bore leaves minimal residual, which is why the listing names paint and ink transfer."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and certificates apply to the smoothbore PTFE hose with stainless steel braid?",
+          "a": "The listing cites ISO 10380 for the 4:1 safety factor and gives EN 10204 3.1 and 3.2 test reports on request. Quote the working pressure, medium and temperature and we confirm the hose; ask for the datasheet if your specification calls for a certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the PTFE Smoothbore Hose with Stainless Steel Braid?",
+          "a": "End fittings are fitted to order in carbon steel or 316 stainless steel: sanitary tri-clamp, NPT, JIC or flanged, per side. See [metallic high-pressure hoses](/c/metallic-high-pressure-hoses) for other high-pressure assemblies."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and handle the smoothbore PTFE hose with stainless steel braid?",
+          "a": "Keep to the minimum bend radius, 50 mm static and 200 mm dynamic, and do not twist or kink the hose. Fit the end fittings to the pressure class and flush the bore after use."
+        },
+        {
+          "slot": "K",
+          "q": "How does the smoothbore PTFE hose differ from the convoluted PTFE hose with polypropylene braid?",
+          "a": "The smoothbore hose is rated 350 bar with a 1400 bar burst, in DN 5 to DN 50. The [convoluted PTFE hose with polypropylene braid](/p/convoluted-ptfe-hose-with-polypropylene-braid) is rated 16 bar with a 64 bar burst, in DN 10 to DN 50. See [PTFE hose explained](/blog/ptfe-hose-explained)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the PTFE Smoothbore Hose with Stainless Steel Braid made, and can you ship it from Dubai?",
+          "a": "The PTFE Smoothbore Hose with Stainless Steel Braid is made in United Kingdom. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the PTFE Smoothbore Hose with Stainless Steel Braid from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the PTFE Smoothbore Hose with Stainless Steel Braid at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-nominal-smooth-bore-ptfe-hoses-non-conductive",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive and what is it used for?",
+          "a": "Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive, are white smooth-bore PTFE hoses with a stainless steel braid cover, from -100°F to +450°F. The maker states 1,000 to 3,000 psi (69 to 207 bar) by size. 19 part numbers cover sizes from 3/16\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Dixon WSB part numbers such as WSB-04, WSB-06T and WSB-16-50?",
+          "a": "WSB is the smooth-bore series, and the number is the dash size: -4 is 1/4\", -6 is 3/8\", -8 is 1/2\", -10 is 5/8\", -12 is 3/4\" and -16 is 1\". A T marks the thin-wall version, and the suffixes -50 and -100 mark the reel length."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive cover?",
+          "a": "The 19 part numbers cover nominal sizes 3/16\", 1/4\", 5/16\", 3/8\", 1/2\", 5/8\", 3/4\" and 1\", in dash sizes -3 to -16. Several sizes come as standard, T and reel versions, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "Which Dixon WSB part number do I need, standard or T, and what do the -50 and -100 suffixes mean?",
+          "a": "Pick the dash size to match the fitting, then choose the standard or T (thin-wall) type. The T versions carry lower pressure ratings, for example 76 bar on WSB-12T against 103 bar on WSB-12-100. Suffix -50 and -100 rows are reel lengths."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive have?",
+          "a": "Row ratings run from 207 bar on WSB-04 and 172 bar on WSB-06 down to 69 bar on WSB-16, as bar figures per part number. The maker states 1,000 to 3,000 psi (69 to 207 bar) by size, and temperature from -100°F to +450°F. Read the row for the size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive made from?",
+          "a": "The hose is non-conductive smooth-bore PTFE with a stainless steel braid cover, white tube and metallic cover. Non-conductive PTFE does not dissipate static, so use the conductive types for fuels and solvents."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply to the Dixon nominal smooth bore PTFE hoses?",
+          "a": "The listing names no dimensional standard; hose is identified by dash size and Dixon part number. Select the hose on working pressure, bore, temperature and fluid, and use end fittings from the series the maker approves for that hose."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive?",
+          "a": "Use end fittings from the series the hose maker approves for each hose. Quote the part number and we confirm the matching fitting. For other PTFE hose with fittings see the [Aeroquip PTFE hose, 3000 psi](/p/aeroquip-ptfe-hose-3000-psi)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Dixon nominal smooth bore PTFE hose?",
+          "a": "Keep to the minimum bend radius for the size, avoid kinks and twisting, and keep within the pressure and temperature range. Do not exceed the working pressure for the part number, and treat burst figures as test values, not working limits."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon non-conductive smooth bore PTFE hose differ from the Dixon convoluted hoses?",
+          "a": "The smooth bore hose has a stainless braid and ratings up to 207 bar. The [Dixon open pitch convoluted hose, non-conductive](/p/dixon-true-i-d-open-pitch-convoluted-hoses-non-conductive) is convoluted for tight bending, with a Mawp of 1740 psi at -4 down to 500 psi at -32."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive made, and can you ship it from Dubai?",
+          "a": "The Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Dixon Nominal Smooth Bore PTFE Hoses, Non-Conductive sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-true-i-d-open-pitch-convoluted-hoses-non-conductive",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive and what is it used for?",
+          "a": "Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive, are white convoluted PTFE hoses with a full-size inside diameter, from -100°F to +450°F. Nine part numbers cover dash sizes -4 to -32, with a maximum working pressure that falls from 1740 psi at the smallest size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Dixon WOC part numbers such as WOC-T04 and WOC-T32?",
+          "a": "WOC is the open pitch non-conductive series and the number after T is the dash size: T04 is 1/4\", T06 is 3/8\", T08 is 1/2\", T12 is 3/4\", T16 is 1\", T20 is 1 1/4\", T24 is 1 1/2\" and T32 is 2\". WOC-T08-50 is the reel version."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive cover?",
+          "a": "Nine part numbers cover dash sizes -4, -6, -8, -12, -16, -20, -24 and -32, that is 1/4\" to 2\" true inside diameter, plus WOC-T08-50 as a reel."
+        },
+        {
+          "slot": "D",
+          "q": "How does the Mawp of the Dixon open pitch non-conductive hose change with size?",
+          "a": "The Mawp falls as the bore rises: 1740 psi at -4, 1850 psi at -6, 1500 psi at -8, 1300 psi at -12, 1000 psi at -16, 900 psi at -20, 700 psi at -24 and 500 psi at -32. Pick the size, then keep the line below that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive have?",
+          "a": "The rows give a Mawp of 1740 psi at 1/4\" down to 500 psi at 2\", and the listing gives -100°F to +450°F. The Mawp is the maximum working pressure for the dash size, so read the row for the part number you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive made from?",
+          "a": "The hose is white convoluted PTFE, non-conductive, with a true inside diameter and an open pitch. The open pitch convolution gives flexibility, but the tube does not dissipate static, so do not use it for fuels."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply to the Dixon true ID open pitch convoluted hoses?",
+          "a": "The listing names no dimensional standard; hose is identified by dash size and Dixon part number. Select the hose on working pressure, bore, temperature and fluid, and use fittings from the series the maker approves for that hose."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive?",
+          "a": "Use end fittings from the series the maker approves for this hose, with the part number quoted so we confirm the match. For the conductive version see the [Dixon open pitch convoluted hose, conductive](/p/dixon-true-id-open-pitch-convoluted-hoses-conductive)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Dixon open pitch convoluted hose?",
+          "a": "Keep to the minimum bend radius, avoid kinks and twisting and keep to the Mawp for the dash size. Convoluted hose holds some fluid in the grooves, so flush it after chemical service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the non-conductive open pitch hose differ from the conductive version?",
+          "a": "The non-conductive WOC hose is white and rated by Mawp from 1740 psi at -4 to 500 psi at -32. The [conductive BOC hose](/p/dixon-true-id-open-pitch-convoluted-hoses-conductive) is black with a static dissipating corrugated tube and is rated by burst, from 6960 psi at -4 to 2000 psi at -32."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive made, and can you ship it from Dubai?",
+          "a": "The Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive in Dubai for export?",
+          "a": "Yes, the Dixon True I.D. Open Pitch Convoluted Hoses, Non-Conductive is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-true-id-open-pitch-convoluted-hoses-conductive",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon True ID Open Pitch Convoluted Hoses, Conductive and what is it used for?",
+          "a": "Dixon True ID Open Pitch Convoluted Hoses, Conductive, are black corrugated PTFE hoses with a static-dissipating tube. Eight part numbers cover dash sizes -4 to -32 with burst pressures from 6960 psi down to 2000 psi, for fluids where static must be controlled."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Dixon BOC part numbers such as BOC-T04 and BOC-T32?",
+          "a": "BOC is the open pitch conductive series, and the number after T is the dash size: T04 is 1/4\", T06 is 3/8\", T08 is 1/2\", T12 is 3/4\", T16 is 1\", T20 is 1 1/4\", T24 is 1 1/2\" and T32 is 2\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon True ID Open Pitch Convoluted Hoses, Conductive cover?",
+          "a": "Eight part numbers cover dash sizes -4, -6, -8, -12, -16, -20, -24 and -32. The size sets the bore and also the burst pressure, which falls as the size rises."
+        },
+        {
+          "slot": "D",
+          "q": "How does the burst pressure of the Dixon BOC conductive hose change with size?",
+          "a": "Burst pressure falls with size: 6960 psi at -4, 7400 psi at -6, 6000 psi at -8, 5200 psi at -12, 4000 psi at -16, 3600 psi at -20, 2800 psi at -24 and 2000 psi at -32. Burst is a test value, not a working limit, so apply your safety factor."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon True ID Open Pitch Convoluted Hoses, Conductive have?",
+          "a": "The rows give burst pressure from 7400 psi at -6 down to 2000 psi at -32. Burst pressure is a test figure, not a working limit, so work out the working pressure from the safety factor for your service. The tube is a static dissipating black PTFE."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon True ID Open Pitch Convoluted Hoses, Conductive made from?",
+          "a": "The tube is corrugated, static-dissipating PTFE in black, with a true inside diameter and an open pitch. Static dissipation lets charge bleed away, which suits fuels and solvents where a non-conductive tube would build charge."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply to the Dixon BOC conductive hose?",
+          "a": "The listing names no dimensional standard; hose is identified by dash size and the Dixon part number. Select the hose on working pressure, bore, temperature and fluid, and use end fittings from the series the maker approves for that hose."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Dixon True ID Open Pitch Convoluted Hoses, Conductive?",
+          "a": "Use end fittings from the series the maker approves for this hose, and bond the fitting to the system so the static-dissipating tube earths. For the non-conductive version see the [Dixon open pitch convoluted hose, non-conductive](/p/dixon-true-i-d-open-pitch-convoluted-hoses-non-conductive)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Dixon BOC conductive convoluted hose?",
+          "a": "Make sure the fitting makes electrical contact with the static-dissipating tube, bond the assembly to earth, keep to the minimum bend radius and avoid kinks. Flush after chemical service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the conductive BOC hose differ from the non-conductive WOC hose?",
+          "a": "The BOC hose is black with a static dissipating tube, listed by burst pressure. The [WOC hose](/p/dixon-true-i-d-open-pitch-convoluted-hoses-non-conductive) is white, non-conductive and listed by Mawp, from 1740 psi at -4 to 500 psi at -32."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon True ID Open Pitch Convoluted Hoses, Conductive made, and can you ship it from Dubai?",
+          "a": "The Dixon True ID Open Pitch Convoluted Hoses, Conductive is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon True ID Open Pitch Convoluted Hoses, Conductive from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Dixon True ID Open Pitch Convoluted Hoses, Conductive in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ptfe-hose-1500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Ptfe Hose, 1500 Psi and what is it used for?",
+          "a": "The Aeroquip PTFE Hose, 1500 Psi is a smooth PTFE-tube hose assembly with a stainless steel cover and 7/8 stainless FJIC fittings, for non-conductive service from -65°F to +450°F. It is listed in 1/2\" bore, 12 part numbers in stainless steel and brass, lengths 12 to 60 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Aeroquip PTFE hose part numbers such as 1PCK7 identify length and fitting material?",
+          "a": "Each code is one bore, length and material: the first six numbers are the 1500 psi stainless steel assemblies in lengths 12, 18, 24, 36, 48 and 60 inch, and the next six are the brass versions in the same lengths. Quote the length and the material with the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip Ptfe Hose, 1500 Psi cover?",
+          "a": "The 12 part numbers cover 1/2\" bore in six lengths, 12, 18, 24, 36, 48 and 60 inch, in two materials, stainless steel and brass. The bore is the same on every row."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the stainless steel or the brass version of the Aeroquip PTFE hose, 1500 psi?",
+          "a": "On the 1500 psi hose, choose stainless steel for corrosive environments, washdown and high temperature, and brass where the medium and the surroundings are mild. Both are listed in the same six lengths from 12 to 60 inch with the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Aeroquip Ptfe Hose, 1500 Psi have?",
+          "a": "The rating is 1500 psi, listed on every row, from -65°F to +450°F, with a minimum bending radius of 6 1/2\". The hose is non-conductive. Burst pressure is a test figure, not a working limit, so keep the working pressure below the rated figure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Ptfe Hose, 1500 Psi made from?",
+          "a": "On the 1500 psi hose, the tube is polytetrafluoroethylene (PTFE) with a smooth interior, covered in stainless steel braid, with 301 stainless steel FJIC fittings on the stainless versions and brass on the others. PTFE resists most chemicals and high temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and certificates apply to the Aeroquip PTFE hose, 1500 psi?",
+          "a": "The listing names no dimensional or performance standard for the 1500 psi hose. Fittings are FJIC, JIC female swivel. Select on working pressure, bore, temperature and fluid, and use fittings from the series the hose maker approves."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Aeroquip Ptfe Hose, 1500 Psi?",
+          "a": "The ends are female JIC (FJIC) swivel fittings, so they mate with JIC male ports of the matching thread size. See the [Aeroquip PTFE hose, 2000 psi](/p/aeroquip-ptfe-hose-2000-psi) for the next pressure class."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip PTFE hose assembly?",
+          "a": "Keep to the minimum bending radius, 6 1/2\" on this hose, and do not kink or twist it. Tighten the JIC swivel nuts to the thread size, and keep the working pressure below the rating. The hose is non-conductive, so bond it where static is a concern."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip PTFE hose, 1500 psi, differ from the 2000 psi?",
+          "a": "This 1500 psi hose has a 1/2\" bore with 7/8 FJIC fittings and a 6 1/2\" bending radius. The [2000 psi hose](/p/aeroquip-ptfe-hose-2000-psi) has a smaller bore, 13/32\", with 3/4 FJIC fittings and a tighter bending radius, for higher pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Ptfe Hose, 1500 Psi made, and can you ship it from Dubai?",
+          "a": "The Aeroquip Ptfe Hose, 1500 Psi is made in the United States. The listing gives HS code 3917390010. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Aeroquip Ptfe Hose, 1500 Psi from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Aeroquip Ptfe Hose, 1500 Psi at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ptfe-hose-2000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Ptfe Hose, 2000 Psi and what is it used for?",
+          "a": "The Aeroquip PTFE Hose, 2000 Psi is a smooth PTFE-tube hose assembly with a stainless steel cover and 3/4 stainless FJIC fittings, for non-conductive service from -65°F to +450°F. It is listed in 13/32\" (3/8\") bore, 12 part numbers in stainless steel and brass, lengths 12 to 60 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Aeroquip PTFE hose part numbers such as 1PCJ4 identify length and fitting material?",
+          "a": "Each code is one bore, length and material: the first six numbers are the 2000 psi stainless steel assemblies in lengths 12, 18, 24, 36, 48 and 60 inch, and the next six are the brass versions in the same lengths. Quote the length and the material with the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip Ptfe Hose, 2000 Psi cover?",
+          "a": "The 12 part numbers cover 13/32\" (3/8\") bore in six lengths, 12, 18, 24, 36, 48 and 60 inch, in two materials, stainless steel and brass. The bore is the same on every row."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the stainless steel or the brass version of the Aeroquip PTFE hose, 2000 psi?",
+          "a": "On the 2000 psi hose, choose stainless steel for corrosive environments, washdown and high temperature, and brass where the medium and the surroundings are mild. Both are listed in the same six lengths from 12 to 60 inch with the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Aeroquip Ptfe Hose, 2000 Psi have?",
+          "a": "The rating is 2000 psi, listed on every row, from -65°F to +450°F, with a minimum bending radius of 5 1/5\". The hose is non-conductive. Burst pressure is a test figure, not a working limit, so keep the working pressure below the rated figure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Ptfe Hose, 2000 Psi made from?",
+          "a": "On the 2000 psi hose, the tube is polytetrafluoroethylene (PTFE) with a smooth interior, covered in stainless steel braid, with 301 stainless steel FJIC fittings on the stainless versions and brass on the others. PTFE resists most chemicals and high temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and certificates apply to the Aeroquip PTFE hose, 2000 psi?",
+          "a": "The listing names no dimensional or performance standard for the 2000 psi hose. Fittings are FJIC, JIC female swivel. Select on working pressure, bore, temperature and fluid, and use fittings from the series the hose maker approves."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Aeroquip Ptfe Hose, 2000 Psi?",
+          "a": "The ends are female JIC (FJIC) swivel fittings, so they mate with JIC male ports of the matching thread size. See the [Aeroquip PTFE hose, 2500 psi](/p/aeroquip-ptfe-hose-2500-psi) for the next pressure class."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip PTFE hose assembly?",
+          "a": "Keep to the minimum bending radius, 5 1/5\" on this hose, and do not kink or twist it. Tighten the JIC swivel nuts to the thread size, and keep the working pressure below the rating. The hose is non-conductive, so bond it where static is a concern."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip PTFE hose, 2000 psi, differ from the 2500 psi?",
+          "a": "This 2000 psi hose has a 13/32\" bore with 3/4 FJIC fittings. The [1500 psi hose](/p/aeroquip-ptfe-hose-1500-psi) has a larger 1/2\" bore, and the [2500 psi hose](/p/aeroquip-ptfe-hose-2500-psi) has a smaller 5/16\" bore with 9/16 FJIC fittings."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Ptfe Hose, 2000 Psi made, and can you ship it from Dubai?",
+          "a": "The Aeroquip Ptfe Hose, 2000 Psi is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Aeroquip Ptfe Hose, 2000 Psi in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Aeroquip Ptfe Hose, 2000 Psi at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ptfe-hose-2500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Ptfe Hose, 2500 Psi and what is it used for?",
+          "a": "The Aeroquip PTFE Hose, 2500 Psi is a smooth PTFE-tube hose assembly with a stainless steel cover and 9/16 stainless FJIC fittings, for non-conductive service from -65°F to +450°F. It is listed in 5/16\" bore, 12 part numbers in stainless steel and brass, lengths 12 to 60 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Aeroquip PTFE hose part numbers such as 1PCH1 identify length and fitting material?",
+          "a": "Each code is one bore, length and material: the first six numbers are the 2500 psi stainless steel assemblies in lengths 12, 18, 24, 36, 48 and 60 inch, and the next six are the brass versions in the same lengths. Quote the length and the material with the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip Ptfe Hose, 2500 Psi cover?",
+          "a": "The 12 part numbers cover 5/16\" bore in six lengths, 12, 18, 24, 36, 48 and 60 inch, in two materials, stainless steel and brass. The bore is the same on every row."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the stainless steel or the brass version of the Aeroquip PTFE hose, 2500 psi?",
+          "a": "On the 2500 psi hose, choose stainless steel for corrosive environments, washdown and high temperature, and brass where the medium and the surroundings are mild. Both are listed in the same six lengths from 12 to 60 inch with the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Aeroquip Ptfe Hose, 2500 Psi have?",
+          "a": "The rating is 2500 psi, listed on every row, from -65°F to +450°F, with a minimum bending radius of 4\". The hose is non-conductive. Burst pressure is a test figure, not a working limit, so keep the working pressure below the rated figure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Ptfe Hose, 2500 Psi made from?",
+          "a": "On the 2500 psi hose, the tube is polytetrafluoroethylene (PTFE) with a smooth interior, covered in stainless steel braid, with 301 stainless steel FJIC fittings on the stainless versions and brass on the others. PTFE resists most chemicals and high temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and certificates apply to the Aeroquip PTFE hose, 2500 psi?",
+          "a": "The listing names no dimensional or performance standard for the 2500 psi hose. Fittings are FJIC, JIC female swivel. Select on working pressure, bore, temperature and fluid, and use fittings from the series the hose maker approves."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Aeroquip Ptfe Hose, 2500 Psi?",
+          "a": "The ends are female JIC (FJIC) swivel fittings, so they mate with JIC male ports of the matching thread size. See the [Aeroquip PTFE hose, 3000 psi](/p/aeroquip-ptfe-hose-3000-psi) for the next pressure class."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip PTFE hose assembly?",
+          "a": "Keep to the minimum bending radius, 4\" on this hose, and do not kink or twist it. Tighten the JIC swivel nuts to the thread size, and keep the working pressure below the rating. The hose is non-conductive, so bond it where static is a concern."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip PTFE hose, 2500 psi, differ from the 3000 psi?",
+          "a": "This 2500 psi hose has a 5/16\" bore with 9/16 FJIC fittings and a 4\" bending radius, rated 2,500 psi (172 bar). The [3000 psi hose](/p/aeroquip-ptfe-hose-3000-psi) has a 3/16\" bore with 7/16 FJIC fittings and a 2\" bending radius."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Ptfe Hose, 2500 Psi made, and can you ship it from Dubai?",
+          "a": "The Aeroquip Ptfe Hose, 2500 Psi is made in the United States. The listing gives HS code 3917390010. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Aeroquip Ptfe Hose, 2500 Psi in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Aeroquip Ptfe Hose, 2500 Psi is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ptfe-hose-3000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Ptfe Hose, 3000 Psi and what is it used for?",
+          "a": "The Aeroquip PTFE Hose, 3000 Psi is a smooth PTFE-tube hose assembly with a stainless steel cover and 7/16 stainless FJIC fittings, for non-conductive service from -65°F to +450°F. It is listed in 3/16\" bore, 12 part numbers in stainless steel and brass, lengths 12 to 60 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Aeroquip PTFE hose part numbers such as 1PBK1 identify length and fitting material?",
+          "a": "Each code is one bore, length and material: the first six numbers are the 3000 psi stainless steel assemblies in lengths 12, 18, 24, 36, 48 and 60 inch, and the next six are the brass versions in the same lengths. Quote the length and the material with the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip Ptfe Hose, 3000 Psi cover?",
+          "a": "The 12 part numbers cover 3/16\" bore in six lengths, 12, 18, 24, 36, 48 and 60 inch, in two materials, stainless steel and brass. The bore is the same on every row."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the stainless steel or the brass version of the Aeroquip PTFE hose, 3000 psi?",
+          "a": "On the 3000 psi hose, choose stainless steel for corrosive environments, washdown and high temperature, and brass where the medium and the surroundings are mild. Both are listed in the same six lengths from 12 to 60 inch with the same rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Aeroquip Ptfe Hose, 3000 Psi have?",
+          "a": "The rating is 3000 psi, listed on every row, from -65°F to +450°F, with a minimum bending radius of 2\". The hose is non-conductive. Burst pressure is a test figure, not a working limit, so keep the working pressure below the rated figure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Ptfe Hose, 3000 Psi made from?",
+          "a": "On the 3000 psi hose, the tube is polytetrafluoroethylene (PTFE) with a smooth interior, covered in stainless steel braid, with 301 stainless steel FJIC fittings on the stainless versions and brass on the others. PTFE resists most chemicals and high temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and certificates apply to the Aeroquip PTFE hose, 3000 psi?",
+          "a": "The listing names no dimensional or performance standard for the 3000 psi hose. Fittings are FJIC, JIC female swivel. Select on working pressure, bore, temperature and fluid, and use fittings from the series the hose maker approves."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Aeroquip Ptfe Hose, 3000 Psi?",
+          "a": "The ends are female JIC (FJIC) swivel fittings, so they mate with JIC male ports of the matching thread size. See the [Aeroquip PTFE hose, 2500 psi](/p/aeroquip-ptfe-hose-2500-psi) for the next pressure class."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip PTFE hose assembly (Aeroquip Ptfe Hose, 3000 Psi)?",
+          "a": "Keep to the minimum bending radius, 2\" on this hose, and do not kink or twist it. Tighten the JIC swivel nuts to the thread size, and keep the working pressure below the rating. The hose is non-conductive, so bond it where static is a concern."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip PTFE hose, 3000 psi, differ from the 2500 psi?",
+          "a": "This 3000 psi hose has the smallest bore, 3/16\", with 7/16 FJIC fittings and a 2\" bending radius. The [2500 psi hose](/p/aeroquip-ptfe-hose-2500-psi) has a 5/16\" bore with 9/16 FJIC fittings and a 4\" bending radius."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Ptfe Hose, 3000 Psi made, and can you ship it from Dubai?",
+          "a": "The Aeroquip Ptfe Hose, 3000 Psi is made in the United States. The listing gives HS code 3917390010. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Ptfe Hose, 3000 Psi in Dubai for export?",
+          "a": "Yes. Indus stocks the Aeroquip Ptfe Hose, 3000 Psi at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-non-conductive-c14-ptfe-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Gates Non Conductive C14 PTFE Hydraulic Hoses and what are they used for?",
+          "a": "The Gates Non Conductive C14 PTFE Hydraulic Hose is a white smooth-bore PTFE hose with one stainless steel braid, silver in colour, from -65°F to +400°F. Three part numbers cover 3/16\", 1/4\" and 0.406\" bores, rated 1,000 to 1,500 psi (69 to 103 bar) by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the Gates C14 PTFE hose part numbers 77520425, 77520525 and 77520800?",
+          "a": "Each number is one size: 77520425 is the 3/16\" (-3) hose, 77520525 the 1/4\" (-4) hose and 77520800 the 0.406\" (-6) hose. The last digits track the dash size, 3 for 3/16\", 4 for 1/4\" and 6 for the larger bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Gates Non Conductive C14 PTFE Hydraulic Hoses cover?",
+          "a": "Three part numbers: 77520425 (3/16\", 0.31 inch OD), 77520525 (1/4\", 0.38 inch OD) and 77520800 (0.406\", 0.55 inch OD). The 0.406\" bore is the largest. Bend radius runs from 50.8 mm to 134.6 mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the three Gates C14 PTFE hose sizes?",
+          "a": "Match the bore to the flow and fitting: 3/16\" and 1/4\" carry 1500 psi (103 bar), and the larger 0.406\" bore carries 1000 psi (69 bar). Bend radius grows with size, from 50.8 mm on 3/16\" to 134.6 mm on 0.406\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do the Gates Non Conductive C14 PTFE Hydraulic Hoses have?",
+          "a": "The 3/16\" and 1/4\" sizes are rated 1500 psi (103 bar) and the 0.406\" size 1000 psi (69 bar). Temperature is -65°F to +400°F. Burst equals the working-rating columns in the table, so treat burst as a test figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Gates Non Conductive C14 PTFE Hydraulic Hoses made from?",
+          "a": "The tube is a white, non-conductive, smooth-bore PTFE (Type A), reinforced with one braid of stainless steel, with a silver stainless steel wire 304 cover as standard. The PTFE resists heat and chemicals, and the braid carries the pressure."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply to the Gates C14 PTFE hose?",
+          "a": "The listing names no standard beyond the Gates product name. It describes the tube as PTFE Type A, white, non-conductive and smooth bore. Select on working pressure, bore, temperature and fluid, and use fittings from the series Gates approves."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Gates Non Conductive C14 PTFE Hydraulic Hoses?",
+          "a": "Use end fittings from the series the hose maker approves for this hose. Quote the part number and we confirm the matching fitting. For other PTFE hose see the [Aeroquip PTFE hose, 3000 psi](/p/aeroquip-ptfe-hose-3000-psi)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Gates C14 PTFE hose?",
+          "a": "Keep to the minimum bend radius for the size, avoid kinks and twisting, and keep within the pressure and temperature rating. The listing recommends it for air compressor discharge and for hot oil and fluids in hot and greasy environments."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Gates C14 PTFE hose differ from the Aeroquip PTFE hose assemblies?",
+          "a": "The Gates C14 is sold as hose by part number, in three small bores with one stainless braid, rated 69 to 103 bar. The [Aeroquip PTFE hose](/p/aeroquip-ptfe-hose-1500-psi) lines are assemblies with FJIC fittings fitted, in 12 lengths per pressure class."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Gates C14 PTFE hose recommended?",
+          "a": "This hose is recommended for air compressor discharge and for hot oil and fluids in hot and greasy environments. The stainless braid and PTFE tube take heat, and the small bores suit instrument and hydraulic lines."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates Non Conductive C14 PTFE Hydraulic Hoses in Dubai for export?",
+          "a": "Yes. We keep the Gates Non Conductive C14 PTFE Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-919-series-medium-pressure-fluoropolymer-smooth-bore-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses and what are they used for?",
+          "a": "The Parker 919 Series is a medium-pressure fluoropolymer smooth-bore hose from the Parflex division, for fluid handling, medical, oilfield service, transportation, military and compressed gas. The maker states 1,000 to 3,000 psi (69 to 207 bar) by size, from -100°F to +450°F."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Parker 919 Series part numbers?",
+          "a": "The part numbers are 919 and the dash size: 919-4 is the smallest bore and 919-20 the largest listed. The number after the series is the dash size, in sixteenths of an inch of nominal bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses cover?",
+          "a": "Eight part numbers are listed: 919-4, 919-5, 919-6, 919-8, 919-10, 919-12, 919-16 and 919-20. Pressure runs from 207 bar on 919-4 and 919-5 down to 69 bar on 919-16."
+        },
+        {
+          "slot": "D",
+          "q": "How does the pressure of the Parker 919 hose change with size?",
+          "a": "Pressure falls as the bore rises: 207 bar on 919-4, 172 bar on 919-6, 138 bar on 919-8, 103 bar on 919-10, 83 bar on 919-12 and 69 bar on 919-16. Read the row for the part number you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses have?",
+          "a": "The maker states 1,000 to 3,000 psi (69 to 207 bar) by size, from -100°F to +450°F. Rows give 207, 172, 138, 103, 83 and 69 bar by part number. Burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses made from?",
+          "a": "The hose is fluoropolymer (Teflon) smooth bore, in the Parflex fluid connector range. The listing gives inch sizes. The smooth bore gives low flow resistance and easy cleaning, and the PTFE core resists most chemicals."
+        },
+        {
+          "slot": "G",
+          "q": "What fitting series and standards apply to the Parker 919 Series?",
+          "a": "For the Parker 919 Series: the mating fitting series is the Parker 91N Series. The listing names no standard beyond that, so use the 91N Series fittings for this hose and quote the part number."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses?",
+          "a": "Use the Parker 91N Series fittings. Quote the part number and we confirm the fitting. For other PTFE hose see the [PTFE hose explained](/blog/ptfe-hose-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker 919 Series?",
+          "a": "Cut the hose square, fit the 91N Series fitting as Parker specifies and keep to the minimum bend radius for the size. Avoid kinks and twisting, and keep within the pressure and temperature range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 919 hose differ from the 919B and 919U versions?",
+          "a": "The standard 919 is the plain smooth-bore hose with a pressure range of 69 to 207 bar. The [919B](/p/parker-919b-series-medium-pressure-fluoropolymer-smooth-bore-hoses-static-dissipative-tube) has a static-dissipative black PTFE tube, and the [919U](/p/parker-919u-series-medium-pressure-fluoropolymer-hoses-abrasion-resistant) adds a polyurethane abrasion-resistant cover."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses made, and can you ship them from Dubai?",
+          "a": "The Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses are made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses in Dubai for export?",
+          "a": "Yes. Indus stocks the Parker 919 Series Medium Pressure Fluoropolymer Smooth Bore Hoses at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-919b-series-medium-pressure-fluoropolymer-smooth-bore-hoses-static-dissipative-tube",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube and what is it used for?",
+          "a": "The Parker 919B Series is a medium-pressure fluoropolymer smooth-bore hose with a black static-dissipative PTFE tube and one stainless steel (304) braid, sold in lengths without a cover. The maker states 2,000 to 3,000 psi (138 to 207 bar) by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Parker 919B Series part numbers?",
+          "a": "The part numbers are 919B and the dash size: 919B-5, 919B-6 and 919B-8. The number after the series is the dash size, in sixteenths of an inch of nominal bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube cover?",
+          "a": "Three part numbers: 919B-5 (207 bar), 919B-6 (172 bar) and 919B-8 (138 bar). The listing is for oils, paint, fuels, steam and vacuum, sold in unit lengths."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker 919B size do I need?",
+          "a": "919B-5 is the smallest at 207 bar, 919B-6 is 172 bar and 919B-8 is 138 bar. Choose the bore for the flow and the fitting, because the pressure falls as the size rises."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube have?",
+          "a": "The maker states 2,000 to 3,000 psi (138 to 207 bar) by size: 207 bar on 919B-5, 172 bar on 919B-6 and 138 bar on 919B-8. Burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube made from?",
+          "a": "The tube is black static-dissipative PTFE, reinforced with one stainless steel (304) braid, with no cover. Static dissipation suits fuels and paints, and the braid carries the pressure."
+        },
+        {
+          "slot": "G",
+          "q": "What fitting series and standards apply to the Parker 919B Series?",
+          "a": "For the Parker 919B Series: the listing names no standard beyond the Parker series. Fit it with Parker-approved end fittings, and quote the part number so we confirm the match."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube?",
+          "a": "Use end fittings from the series Parker approves for the 919B. Quote the part number and we confirm the fitting. See [PTFE hose explained](/blog/ptfe-hose-explained) for how smoothbore PTFE is fitted."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker 919B Series?",
+          "a": "Fit Parker-approved end fittings and make sure they contact the static-dissipative tube so charge can earth. Keep to the minimum bend radius and avoid kinks."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 919B hose differ from the standard 919 hose?",
+          "a": "The 919B has a black static-dissipative tube and a stainless braid with no cover, in three sizes. The [standard 919](/p/parker-919-series-medium-pressure-fluoropolymer-smooth-bore-hoses) is the plain smooth-bore hose in eight sizes."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube made, and can you ship it from Dubai?",
+          "a": "The Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Parker 919B Series Medium Pressure Fluoropolymer Smooth Bore Hoses, Static-Dissipative Tube sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-919j-series-medium-pressure-fluoropolymer-silicone-jacketed-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses and what are they used for?",
+          "a": "The Parker 919J Series is a medium-pressure fluoropolymer hose with a red silicone jacket over the smooth-bore PTFE tube. The maker states 1,200 to 3,000 psi (83 to 207 bar) by size, with the Parker 91N Series as the mating fitting series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Parker 919J Series part numbers?",
+          "a": "The part numbers are 919J, the dash size and RED for the jacket colour: 919J-4-RED, 919J-6-RED, 919J-8-RED, 919J-10-RED and 919J-12-RED. The number after the series is the dash size, in sixteenths of an inch of nominal bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses cover?",
+          "a": "Five part numbers: 919J-4 (207 bar), 919J-6 (172 bar), 919J-8 (138 bar), 919J-10 (103 bar) and 919J-12 (83 bar), all with a red silicone jacket."
+        },
+        {
+          "slot": "D",
+          "q": "Why choose the Parker 919J with a silicone jacket?",
+          "a": "The silicone jacket protects the hose from heat and abrasion and gives it a red identification colour. Choose the size for the flow and fitting, then read the pressure for it: 207 bar at -4 down to 83 bar at -12."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses have?",
+          "a": "The maker states 1,200 to 3,000 psi (83 to 207 bar) by size: 207, 172, 138, 103 and 83 bar for -4, -6, -8, -10 and -12. Burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses made from?",
+          "a": "The hose is fluoropolymer with a silicone jacket, in imperial sizes. The jacket covers the braid, so it suits hot or abrasive surroundings where bare braid would be exposed."
+        },
+        {
+          "slot": "G",
+          "q": "What fitting series and standards apply to the Parker 919J Series?",
+          "a": "For the Parker 919J Series: the mating fitting series is the Parker 91N Series, and the hose is in the 919J Series. The listing names no further standard. Use the 91N fittings and quote the part number."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses?",
+          "a": "Use the Parker 91N Series fittings. Quote the part number and we confirm the match. For other PTFE hose see [PTFE hose explained](/blog/ptfe-hose-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker 919J Series?",
+          "a": "Fit with the 91N Series fitting, keep to the minimum bend radius and keep the jacket free of damage. The silicone cover is a surface protection and does not change the pressure rating."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 919J hose differ from the 919U hose?",
+          "a": "The 919J has a red silicone jacket in five sizes, -4 to -12. The [919U](/p/parker-919u-series-medium-pressure-fluoropolymer-hoses-abrasion-resistant) has a polyurethane cover for abrasion resistance, with a static-dissipative PTFE tube."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses made, and can you ship them from Dubai?",
+          "a": "The Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses are made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses in Dubai for export?",
+          "a": "Yes. Indus stocks the Parker 919J Series Medium Pressure Fluoropolymer Silicone Jacketed Hoses at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-919u-series-medium-pressure-fluoropolymer-hoses-abrasion-resistant",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant and what is it used for?",
+          "a": "The Parker 919U Series is a medium-pressure fluoropolymer hose with a black static-dissipative PTFE tube, one stainless steel (304) braid and a polyurethane cover for abrasion resistance. The maker states 1,200 to 3,000 psi (83 to 207 bar) by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Parker 919U Series part numbers?",
+          "a": "The part numbers are 919U and the dash size: 919U-4, 919U-6, 919U-8, 919U-12 and 919U-16. The number after the series is the dash size, in sixteenths of an inch of nominal bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant cover?",
+          "a": "Five part numbers: 919U-4 (207 bar), 919U-6 (172 bar), 919U-8 (138 bar), 919U-12 (83 bar) and 919U-16, with no pressure listed on its row. The listing covers chemical transfer, general hydraulics, compressed air, adhesive dispensing and coolant lines."
+        },
+        {
+          "slot": "D",
+          "q": "Where is the Parker 919U abrasion-resistant hose used?",
+          "a": "It is used for chemical transfer lines, general hydraulics, compressed air and gases, adhesive dispensing, coolant lines and medical gases. The polyurethane cover resists abrasion, which suits hose that is dragged or rubs on structure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant have?",
+          "a": "The maker states 1,200 to 3,000 psi (83 to 207 bar) by size: 207 bar on -4, 172 bar on -6, 138 bar on -8 and 83 bar on -12. The -16 row has no pressure listed, so confirm it with us. Burst is a test figure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant made from?",
+          "a": "The tube is black static-dissipative PTFE, reinforced with one stainless steel (304) braid, with a polyurethane cover. The cover protects the braid from abrasion, and the PTFE tube resists chemicals."
+        },
+        {
+          "slot": "G",
+          "q": "What fitting series and standards apply to the Parker 919U Series?",
+          "a": "For the Parker 919U Series: the listing names no standard beyond the Parker series. Use Parker-approved fittings and quote the part number so we confirm the match."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant?",
+          "a": "Use end fittings from the series Parker approves for the 919U. Quote the part number and we confirm the fitting. See [PTFE hose explained](/blog/ptfe-hose-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker 919U Series?",
+          "a": "Fit Parker-approved end fittings and make sure they contact the static-dissipative tube so charge can earth. Keep to the minimum bend radius and avoid kinks."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 919U hose differ from the 919J hose?",
+          "a": "The 919U has a polyurethane cover for abrasion resistance and a static-dissipative tube, in five sizes up to -16. The [919J](/p/parker-919j-series-medium-pressure-fluoropolymer-silicone-jacketed-hoses) has a red silicone jacket and runs from -4 to -12."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant made, and can you ship it from Dubai?",
+          "a": "The Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Parker 919U Series Medium Pressure Fluoropolymer Hoses, Abrasion Resistant at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-929bj-series-medium-pressure-fluoropolymer-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker 929BJ Series Medium Pressure Fluoropolymer Hoses and what are they used for?",
+          "a": "The Parker 929BJ Series is a medium-pressure fluoropolymer hose from the Parflex fluid connector range, in inch sizes. The maker states 1,200 to 3,000 psi (83 to 207 bar) by size. Five part numbers run from 929BJ-4 to 929BJ-16."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Parker 929BJ Series part numbers?",
+          "a": "The part numbers are 929BJ and the dash size: 929BJ-4, 929BJ-6, 929BJ-8, 929BJ-12 and 929BJ-16. The number after the series is the dash size, in sixteenths of an inch of nominal bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Parker 929BJ Series Medium Pressure Fluoropolymer Hoses cover?",
+          "a": "Five part numbers: 929BJ-4 (207 bar), 929BJ-6 (172 bar), 929BJ-8 (138 bar), 929BJ-12 (83 bar) and 929BJ-16 (86 bar). Two rows describe the item as a heavy wall food hose and a crimp hose fitting."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker 929BJ size do I need?",
+          "a": "Choose the dash size for the bore and fitting, then read the pressure: 207 bar at -4, 172 bar at -6, 138 bar at -8, 83 bar at -12. Confirm the -16 figure with us, because it is listed at 86 bar, above -12."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do the Parker 929BJ Series Medium Pressure Fluoropolymer Hoses have?",
+          "a": "The maker states 1,200 to 3,000 psi (83 to 207 bar) by size, with rows from 207 bar on -4 down to 83 bar on -12. Confirm the rating of the exact part number before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker 929BJ Series Medium Pressure Fluoropolymer Hoses made from?",
+          "a": "The listing gives a fluoropolymer (Teflon) hose in the Parflex fluid connector range, with inch sizes. The listing does not state the cover, so confirm the construction before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What fitting series and standards apply to the Parker 929BJ Series?",
+          "a": "For the Parker 929BJ Series: the listing names no standard beyond the Parker series. Use Parker-approved fittings and quote the part number so we confirm the match."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Parker 929BJ Series Medium Pressure Fluoropolymer Hoses?",
+          "a": "Use end fittings from the series Parker approves for the 929BJ. Quote the part number and we confirm the fitting. See [PTFE hose explained](/blog/ptfe-hose-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker 929BJ Series?",
+          "a": "Fit Parker-approved end fittings, keep to the minimum bend radius and avoid kinks. Confirm the construction and rating of the part number you order."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 929BJ hose differ from the 919 Series hose?",
+          "a": "The 929BJ is a separate series with five sizes, -4 to -16, rated 83 to 207 bar. The [919 Series](/p/parker-919-series-medium-pressure-fluoropolymer-smooth-bore-hoses) is the smooth-bore hose in eight sizes, with the 91N Series as its mating fitting series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Parker 929BJ fluoropolymer hose used?",
+          "a": "The listing places the 929BJ in the Parflex fluid connector range as an inch-size fluoropolymer hose, and two of its rows describe a heavy wall food hose. Confirm the application and the construction with us before ordering."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Parker 929BJ Series Medium Pressure Fluoropolymer Hoses in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Parker 929BJ Series Medium Pressure Fluoropolymer Hoses are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-939-series-medium-pressure-fluoropolymer-hoses-convoluted-tube",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube and what is it used for?",
+          "a": "The Parker 939 Series is a medium-pressure fluoropolymer hose with a convoluted tube from the Parflex division, for fluid handling, transportation, military and industrial use. The maker states 250 to 1,500 psi (17 to 103 bar) by size, from -100°F to +450°F."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Parker 939 Series part numbers?",
+          "a": "The part numbers are 939 and the dash size: 939-6, -8, -12, -16, -20, -24 and -32. The number after the series is the dash size, in sixteenths of an inch of nominal bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube cover?",
+          "a": "Seven part numbers run from -6 to -32: 939-6 (103 bar), -8 (93 bar), -12 (76 bar), -16 (69 bar), -20 (69 bar), -24 (52 bar) and -32 (17 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "How does the pressure of the Parker 939 Series change with size?",
+          "a": "Pressure falls as the bore rises, from 103 bar at -6 and 93 bar at -8 to 76 bar at -12, 69 bar at -16 and -20, 52 bar at -24 and 17 bar at -32. Pick the size, then keep the working pressure below its figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube have?",
+          "a": "The maker states 250 to 1,500 psi (17 to 103 bar) by size, from -100°F to +450°F. Rows give 103, 93, 76, 69, 52 and 17 bar by part number. Burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube made from?",
+          "a": "The tube is convoluted fluoropolymer (Teflon) in the Parflex fluid connector range, with inch sizes. The convolutions give a tight bend radius, which a smooth-bore hose of the same size cannot match."
+        },
+        {
+          "slot": "G",
+          "q": "What fitting series and standards apply to the Parker 939 Series?",
+          "a": "For the Parker 939 Series: the listing names no standard beyond the Parker series. Use Parker-approved fittings and quote the part number so we confirm the match."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube?",
+          "a": "Use end fittings from the series Parker approves for the convoluted hose. Quote the part number and we confirm the fitting. See [PTFE hose explained](/blog/ptfe-hose-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker 939 Series?",
+          "a": "Keep to the minimum bend radius, avoid kinks and keep within the pressure and temperature range. A convoluted bore holds some fluid in the grooves, so flush it after chemical service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 939 hose differ from the 939B static dissipative hose?",
+          "a": "The 939 is the plain convoluted-tube hose. The [939B](/p/parker-939b-series-medium-pressure-fluoropolymer-hoses-convoluted-tube-static-dissipative) has a static-dissipative convoluted tube, in the same seven sizes and pressure ratings."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube made, and can you ship it from Dubai?",
+          "a": "The Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube in Dubai for export?",
+          "a": "Yes. The Parker 939 Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-939b-series-medium-pressure-fluoropolymer-hoses-convoluted-tube-static-dissipative",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative and what is it used for?",
+          "a": "The Parker 939B Series is a medium-pressure fluoropolymer hose with a convoluted, static-dissipative tube from the Parflex division, for fluid handling, transportation, military and industrial use. The maker states 250 to 1,500 psi (17 to 103 bar) by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Parker 939B Series part numbers?",
+          "a": "The part numbers are 939B and the dash size: 939B-6, -8, -12, -16, -20, -24 and -32. The number after the series is the dash size, in sixteenths of an inch of nominal bore."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative cover?",
+          "a": "Seven part numbers run from -6 to -32: 939B-6 (103 bar), -8 (93 bar), -12 (76 bar), -16 (69 bar), -20 (69 bar), -24 (52 bar) and -32 (17 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "How does the pressure of the Parker 939B Series change with size?",
+          "a": "Pressure falls as the bore rises, from 103 bar at -6 and 93 bar at -8 to 76 bar at -12, 69 bar at -16 and -20, 52 bar at -24 and 17 bar at -32. Pick the size, then keep the working pressure below its figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative have?",
+          "a": "The maker states 250 to 1,500 psi (17 to 103 bar) by size, from -100°F to +450°F. Rows give 103, 93, 76, 69, 52 and 17 bar by part number. Burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative made from?",
+          "a": "The tube is convoluted fluoropolymer (Teflon) with a static-dissipative property, in the Parflex fluid connector range. Static dissipation lets charge bleed away, which suits fuels and solvents."
+        },
+        {
+          "slot": "G",
+          "q": "What fitting series and standards apply to the Parker 939B Series?",
+          "a": "For the Parker 939B Series: the listing names no standard beyond the Parker series. Use Parker-approved fittings and quote the part number so we confirm the match."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and couplings suit the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative?",
+          "a": "Use end fittings from the series Parker approves for the convoluted hose. Quote the part number and we confirm the fitting. See [PTFE hose explained](/blog/ptfe-hose-explained)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker 939B Series?",
+          "a": "Keep to the minimum bend radius, avoid kinks and keep within the pressure and temperature range. A convoluted bore holds some fluid in the grooves, so flush it after chemical service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 939B hose differ from the standard 939 hose?",
+          "a": "The 939B has a static-dissipative convoluted tube so charge can bleed away, in the same seven sizes as the [standard 939](/p/parker-939-series-medium-pressure-fluoropolymer-hoses-convoluted-tube). Choose it for fuels and solvents where static builds up."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative made, and can you ship it from Dubai?",
+          "a": "The Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative is made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Parker 939B Series Medium Pressure Fluoropolymer Hoses, Convoluted Tube, Static Dissipative at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

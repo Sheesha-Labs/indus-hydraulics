@@ -1,0 +1,291 @@
+{
+  "family": "high-pressure-cylinders-03",
+  "extraFacts": [
+    {
+      "fact": "High-pressure tooling cylinders run at up to 700 bar (10,000 psi) and need a pump, hose, coupler and gauge rated for that pressure; a circuit is limited by its lowest-rated component.",
+      "source": "Indus Hydraulics listing text (Enerpac cylinder pages and AME/Destaco/Miller listings)"
+    },
+    {
+      "fact": "AME International Hydraulic Cylinders: 14 listed part numbers; stroke 1.5\" to 10.125\"; capacity 25 ton to 100 ton; retracted length 3.2\" to 15.6\"; extended length 19.1\"; items: Hydraulic Cylinder, 10 Ton Capacity, 8 Inch Stroke | Hydraulic Cylinder, 10 Ton Capacity, 4 1/8 Inch Stroke | Cylinder, 25 Ton Capacity, 8 Inch Stroke | Hydraulic Cylinder, 10 Ton Capacity, 6 1/8 Inch Stroke | Cylinder, 25 Ton Capacity, 6 Inch Stroke | Hydraulic Cylinder, 10 Ton Capacity, 2 1/8 Inch Stroke | Aluminium Cylinder, 55 Ton Capacity, 6 Inch Stroke, Base Plate And Shut Off Valve | Low Profile Cylinder, 10 Ton Capacity With Hand Pump And Steel Case | Hydraulic Cylinder, 10 Ton Capacity, 10 1/8 Inch Stroke | Hydraulic Cylinder, 30 Ton Capacity, 2 Inch Stroke.",
+      "source": "Indus Hydraulics product listing, /p/ame-international-hydraulic-cylinders"
+    },
+    {
+      "fact": "Destaco 741 Series Hollow Piston Cylinders: 5 listed part numbers; rated pressure 5075 psi; stroke 0.39\" to 0.94\"; Handle Color Red; Spindle Included No; items: Hollow Piston Cylinder Double-Acting Stroke 40mm | Hollow Piston Cylinder Double-Acting Stroke 60mm | Hydraulic Double Action Hollow Piston Cylinder | Hydraulic Double Action Hollow Piston Cylinder, 10.0 mm Stroke | Hydraulic Double Action Hollow Piston Cylinder, 24.0 mm Stroke.",
+      "source": "Indus Hydraulics product listing, /p/destaco-741-series-hollow-piston-cylinders"
+    },
+    {
+      "fact": "Miller Fluid Power Cylinder Hydraulic: 4 listed part numbers; rod diameter 0.709\" to 1.417\"; bore 1.26\" to 2.48\"; stroke 3.937\"; rated pressure 1450 psi to 2030 psi; Max. Temp. 165°F; Single Acting/double Acting Double Acting; Type Double Acting; items: Cylinder Hydraulic 32mm Bore 100mm Stroke | Cylinder Hydraulic 40mm Bore 100mm Stroke | Cylinder Hydraulic 50mm Bore 100mm Stroke | Cylinder Hydraulic 63mm Bore 100mm Stroke.",
+      "source": "Indus Hydraulics product listing, /p/miller-fluid-power-cylinder-hydraulic"
+    },
+    {
+      "fact": "Miller Fluid Power Hydraulic Cylinder: 18 listed part numbers; rod diameter 0.472\" to 1.417\"; bore 0.787\" to 2.48\"; rated pressure 1450 psi to 2030 psi; stroke 0.394\" to 3.15\"; Max. Temp. 165°F; Single Acting/double Acting Double Acting; Type Double Acting; items: Hydraulic Cylinder 20mm Bore 10mm Stroke | Hydraulic Cylinder 20mm Bore 25mm Stroke | Hydraulic Cylinder 20mm Bore 50mm Stroke | Hydraulic Cylinder 25mm Bore 10mm Stroke | Hydraulic Cylinder 25mm Bore 25mm Stroke | Hydraulic Cylinder 25mm Bore 50mm Stroke | Hydraulic Cylinder 32mm Bore 10mm Stroke | Hydraulic Cylinder 32mm Bore 25mm Stroke | Hydraulic Cylinder 32mm Bore 50mm Stroke | Hydraulic Cylinder 32mm Bore 80mm Stroke.",
+      "source": "Indus Hydraulics product listing, /p/miller-fluid-power-hydraulic-cylinder"
+    },
+    {
+      "fact": "Enerpac General Purpose Hydraulic Cylinders: 8 listed part numbers; stroke 0.625\" to 6\"; Body Material Steel; Cylinder Type General Purpose; Handle No; Included Saddle; Material Steel; Plunger Type Solid; Single Acting/double Acting Single Acting; items: Hydraulic Cylinder, 4970 lbs Capacity, 1.01 Inch Stroke Length | Hydraulic Cylinder, 4970 lbs Capacity, 3.17 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 6.11 Inch Stroke Length | Hydraulic Cylinder, 4970 lbs Capacity, 0.62 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 0.99 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 2.18 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 4.18 Inch Stroke Length | Hydraulic Cylinder, 4970 lbs Capacity, 5.17 Inch Stroke Length.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-general-purpose-hydraulic-cylinders"
+    }
+  ],
+  "products": [
+    {
+      "slug": "ame-international-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the AME International hydraulic cylinders used?",
+          "a": "AME International hydraulic cylinders are general purpose cylinders from 10 to 100 ton, listed in 14 part numbers, such as 13040, 13020 and 13090. The listing gives capacities of 10 and 25 ton and strokes from 4-1/8 in to 10-1/8 in."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the AME International hydraulic cylinders?",
+          "a": "The AME International hydraulic cylinders are listed as 14 part numbers, for example 13040, 13076 and 13165. Together they cover stroke 1.5\" to 10.125\", capacity 25 ton to 100 ton, retracted length 3.2\" to 15.6\" and extended length 19.1\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the AME International hydraulic cylinders?",
+          "a": "Choose the capacity for the load with margin, 10, 25 or up to 100 ton, and the stroke for the full travel needed, such as 8 in for 13040 or 6 in for 13100. High-pressure tooling cylinders run at up to 700 bar (10,000 psi) and need a matching pump, hose and gauge."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the AME International hydraulic cylinders have?",
+          "a": "The listing gives capacities and strokes but no rated pressure on the rows. High-pressure tooling cylinders run at up to 700 bar (10,000 psi) and need a matching pump, hose and gauge, so give us the part number and we confirm the rating with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the AME International hydraulic cylinders made from?",
+          "a": "The listing does not state the material of the AME cylinders. Give us the part number and we confirm the body and seal material with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the AME International hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the AME International hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the AME International hydraulic cylinders mate with?",
+          "a": "The AME International hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the AME International hydraulic cylinders?",
+          "a": "Keep the AME International hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the AME International hydraulic cylinders used?",
+          "a": "The AME International hydraulic cylinders are used for general pushing, pressing and lifting in workshops and maintenance, where a 10 or 25 ton cylinder is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the AME International hydraulic cylinders differ from Enerpac General Purpose Hydraulic Cylinders?",
+          "a": "The AME cylinders are 14 part numbers from 10 to 100 ton, while [Enerpac General Purpose Hydraulic Cylinders](/p/enerpac-general-purpose-hydraulic-cylinders) are 8 part numbers rated in lb with a saddle included. Choose AME for the larger capacities."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the AME International hydraulic cylinders?",
+          "a": "We ship the AME International hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the AME International hydraulic cylinders available from stock in Dubai for export?",
+          "a": "Yes, we hold the AME International hydraulic cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-741-series-hollow-piston-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Destaco 741 series hollow piston cylinders used?",
+          "a": "Destaco 741 series hollow piston cylinders are double-acting hydraulic cylinders with a hole through the piston, and the maker states 5,075 psi (350 bar). The listing carries 5 part numbers, such as 7413-2X40 with a 40 mm stroke and 7411-2 with a 10.0 mm stroke."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Destaco 741 series hollow piston cylinders?",
+          "a": "The Destaco 741 series hollow piston cylinders are listed as 5 part numbers, for example 7413-2X40, 7418-2X and 7414-2. Together they cover rated pressure 5075 psi and stroke 0.39\" to 0.94\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Destaco 741 series hollow piston cylinders?",
+          "a": "Choose the stroke from the part number, such as 10 mm for 7411-2, 24 mm for 7414-2, 40 mm for 7413-2X40 or 60 mm for 7413-2X60, and the hollow piston for a rod or spindle to pass through. All are double-acting."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Destaco 741 series hollow piston cylinders have?",
+          "a": "Destaco states 5,075 psi (350 bar) for the 741 series, shown on the rows. Use a pump, hose and gauge rated for that pressure, and never exceed it."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Destaco 741 series hollow piston cylinders offered in?",
+          "a": "The listing gives a red handle colour and no spindle included, and does not state the body or seal material. Give us the part number and we confirm the build with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Destaco 741 series hollow piston cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Destaco 741 series hollow piston cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Destaco 741 series hollow piston cylinders connect to?",
+          "a": "The Destaco 741 series hollow piston cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Destaco 741 series hollow piston cylinders be installed and maintained?",
+          "a": "Keep the Destaco 741 series hollow piston cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Destaco 741 series hollow piston cylinders used?",
+          "a": "The Destaco 741 series hollow piston cylinders are used in fixtures and clamping tooling where a spindle or rod passes through a hollow piston, in machine tools and production holding."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Destaco 741 series hollow piston cylinders differ from the Miller Fluid Power hydraulic cylinders?",
+          "a": "The Destaco 741 is a hollow piston cylinder rated 5,075 psi in 5 part numbers, while [the Miller Fluid Power hydraulic cylinders](/p/miller-fluid-power-hydraulic-cylinder) are compact cylinders rated 1,450 to 2,030 psi in 18 part numbers. Choose the Destaco for hollow piston duty."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 741 series hollow piston cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Destaco 741 series hollow piston cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Destaco 741 series hollow piston cylinders in stock in Dubai?",
+          "a": "Yes. We stock the Destaco 741 series hollow piston cylinders at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "miller-fluid-power-cylinder-hydraulic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke used?",
+          "a": "Miller Fluid Power compact hydraulic cylinders in this listing are double-acting cylinders with a 100 mm stroke and bores of 32, 40, 50 and 63 mm. The listing carries 4 part numbers, and the maker states 1,450 to 2,030 psi by size."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke?",
+          "a": "The Miller Fluid Power compact hydraulic cylinders, 100 mm stroke are listed as 4 part numbers, for example 32 TNCHE3T9A x 100.00, 50 TNCHE3T9A x 100.00 and 63 TNCHE3T9A x 100.00. Together they cover rod diameter 0.709\" to 1.417\", bore 1.26\" to 2.48\", stroke 3.937\" and rated pressure 1450 psi to 2030 psi. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke?",
+          "a": "Choose the bore, 32, 40, 50 or 63 mm, for the force you need: the rod diameter grows with the bore from 0.709 in to 1.417 in. All four have a 100 mm stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke have?",
+          "a": "Miller states 1,450 to 2,030 psi (100 to 140 bar) depending on size, and the rows give 2,030 psi on the 40 mm bore, 1,740 psi on 50 mm and 1,450 psi on 63 mm. Use the row for your bore."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke made from?",
+          "a": "The listing gives compact double-acting cylinders with a maximum temperature of 165 °F, and does not state the body material. Give us the fluid and the temperature and we confirm the seals with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke?",
+          "a": "The listing names no ISO or ASME standard for the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke connect to?",
+          "a": "The Miller Fluid Power compact hydraulic cylinders, 100 mm stroke need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke be installed and maintained?",
+          "a": "Keep the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke?",
+          "a": "The Miller Fluid Power compact hydraulic cylinders, 100 mm stroke are used for machine actuation, clamping and lifting where a 100 mm stroke is wanted, in packaging, automation and special machines."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke differ from the Miller Fluid Power hydraulic cylinders?",
+          "a": "This listing has 4 part numbers of 32 to 63 mm bore with a 100 mm stroke, while [the Miller Fluid Power hydraulic cylinders](/p/miller-fluid-power-hydraulic-cylinder) has 18 part numbers from 20 mm bore with shorter strokes. Choose by bore and stroke."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke?",
+          "a": "We ship the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8412210075; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke in stock in Dubai?",
+          "a": "Yes, the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "miller-fluid-power-hydraulic-cylinder",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Miller Fluid Power hydraulic cylinders used?",
+          "a": "Miller Fluid Power hydraulic cylinders are compact double-acting cylinders from 20 mm bore to larger sizes, listed in 18 part numbers with strokes from 10 mm. The maker states 1,450 to 2,030 psi (100 to 140 bar) depending on size."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Miller Fluid Power hydraulic cylinders?",
+          "a": "The Miller Fluid Power hydraulic cylinders are listed as 18 part numbers, for example 20 TNCHE3T9A x 10.00, 32 TNCHE3T9A x 80.00 and 63 TNCHE3T9A x 50.00. Together they cover rod diameter 0.472\" to 1.417\", bore 0.787\" to 2.48\", rated pressure 1450 psi to 2030 psi and stroke 0.394\" to 3.15\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Miller Fluid Power hydraulic cylinders?",
+          "a": "Choose the bore and stroke from the part number: for example 20 TNCHE3T9A x 10.00 is a 20 mm bore with a 10 mm stroke. The maker states 1,450 to 2,030 psi by size, so read the row for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Miller Fluid Power hydraulic cylinders have?",
+          "a": "Miller states 1,450 to 2,030 psi (100 to 140 bar) depending on size, and the rows give 2,030 psi on the smaller bores and lower figures on the larger ones. Use the row for your bore and give us the working pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Miller Fluid Power hydraulic cylinders made from?",
+          "a": "The listing gives compact double-acting cylinders with a maximum temperature of 165 °F, and does not state the body material. Give us the fluid and the temperature and we confirm the seals with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Miller Fluid Power hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Miller Fluid Power hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Miller Fluid Power hydraulic cylinders mate with?",
+          "a": "The Miller Fluid Power hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Miller Fluid Power hydraulic cylinders?",
+          "a": "Keep the Miller Fluid Power hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Miller Fluid Power hydraulic cylinders used?",
+          "a": "The Miller Fluid Power hydraulic cylinders are used for compact machine actuation, clamping and positioning in packaging, automation and special machines, where a small double-acting cylinder is mounted in a limited space."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Miller Fluid Power hydraulic cylinders differ from the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke?",
+          "a": "The first Miller listing has 18 part numbers with bores from 20 mm and strokes of 10 mm to 80 mm, while [the Miller Fluid Power compact hydraulic cylinders, 100 mm stroke](/p/miller-fluid-power-cylinder-hydraulic) has 4 part numbers of 32 to 63 mm bore with a 100 mm stroke. Choose by bore and stroke."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Miller Fluid Power hydraulic cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Miller Fluid Power hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8412210075; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Miller Fluid Power hydraulic cylinders available from stock in Dubai for export?",
+          "a": "Yes, the Miller Fluid Power hydraulic cylinders are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "family": "gearbox-winch-accessories",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "dinamic-oil-gearbox-oil-cooling-units",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Dinamic Oil URO/W and URO/A gearbox oil cooling units used for?",
+          "a": "Dinamic Oil URO/W (oil/water) and URO/A (oil/air) units are independent coolers that circulate the oil of a planetary gearbox through a heat exchanger and back, removing up to 50 kW. Larger units are engineered on request."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read URO/W 13 and URO/A 13 cooling unit codes?",
+          "a": "URO/W is the oil/water unit and URO/A is the oil/air unit, and the number is the cooling capacity in kW at 20 °C water or 20 °C air, so URO/W 13 and URO/A 13 are both 13 kW. Indus part numbers follow, such as IH-DO-COOL-UROW13 and IH-DO-COOL-UROA46."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the URO/W and URO/A units come in?",
+          "a": "There are 17 sizes: seven URO/W units from 4 to 50 kW with water at 20 °C, and ten URO/A units from 5 to 46 kW with air at 20 °C. Oil flow runs from 16 to 80 L/min; the table gives each unit’s pump and fan motors and overall dimensions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size a gearbox oil cooler?",
+          "a": "The unit has to remove the difference between the power lost in the gearbox and the heat the housing sheds by itself. Send the gearbox model, the transmitted power and duty, the mounting position and the ambient or cooling-water temperature, and we size it with Dinamic Oil."
+        },
+        {
+          "slot": "E",
+          "q": "What are the URO/W and URO/A cooling capacities based on?",
+          "a": "Capacity is rated with water at 20 °C for URO/W and air at 20 °C for URO/A. The rating falls as the air gets hotter, so confirm the selection for your Gulf summer ambient with us before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What is in a URO/W oil/water unit?",
+          "a": "A URO/W has a water/oil heat exchanger, a motor-driven gear pump (four-pole B5 motor, 230/400 V 50 Hz three-phase, Viton seals), a 0–16 bar gauge between pump and exchanger and a 0–120 °C thermometer at the exchanger outlet."
+        },
+        {
+          "slot": "F",
+          "q": "What is in a URO/A oil/air unit?",
+          "a": "A URO/A has an air/oil exchanger with fan, an adjustable pre-wired 0–90 °C thermostat, a motor-driven screw pump (four-pole B3/B5 motor, 230/400 V 50 Hz), a gauge and a thermometer. No water supply is needed, which suits remote sites."
+        },
+        {
+          "slot": "K",
+          "q": "Water or air cooling for a planetary gearbox?",
+          "a": "Water units are smaller for the same capacity and keep their rating as long as the water is cool, while air units need no water supply but lose capacity as the ambient air gets hotter. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates) and the [planetary gearboxes](/c/planetary-gearboxes) range."
+        },
+        {
+          "slot": "H",
+          "q": "What options can be added to a gearbox oil cooling unit?",
+          "a": "A filter on the return to the gearbox (recommended), a minimum-pressure switch between pump and exchanger, and an electric flow switch for full control of the oil flow can be added. See the [gearbox and winch accessories shelf](/c/gearbox-winch-accessories)."
+        },
+        {
+          "slot": "J",
+          "q": "When does a planetary gearbox need an oil cooler?",
+          "a": "When the power in continuous duty exceeds the gearbox’s thermal power, for example a mixer, conveyor, mill or travel drive running all day, or any gearbox in a Gulf summer. Compare the transmitted power with the thermal power in the gearbox catalogue."
+        },
+        {
+          "slot": "G",
+          "q": "Are Dinamic Oil URO cooling units genuine?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies the URO/W and URO/A cooling units new and genuine, direct from the factory in Bomporto, Italy, with the manufacturer’s documentation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply Dinamic Oil URO cooling units from Dubai?",
+          "a": "Indus Hydraulics supplies Dinamic Oil URO cooling units from Dubai, UAE and ships worldwide with the best lead times; the delivery time from the factory is confirmed with the quotation. Send the gearbox model and duty through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-hydraulic-winch-accessories",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Dinamic Oil hydraulic winch accessories?",
+          "a": "They are rope tensioners, lowering and rotary limit switches, load limiters and the ELD electronic load detection system, built into Dinamic Oil hydraulic winches at the factory and ordered with the winch by accessory code. They suit the NP, NPA, A, P, CW, S, SE and SRD series and WDD motor drums."
+        },
+        {
+          "slot": "B",
+          "q": "What do the accessory codes B, C1, C2, D, E, ELD, F1 and F2 mean?",
+          "a": "B is a rope tensioner, C1 and C2 a tensioner with an electric (C1) or hydraulic (C2) lowering limit switch, D adds a strain-gauge pull limiter, E is load cells, ELD is electronic load detection, and F1 and F2 are electric and hydraulic rotary limit switches. Part numbers follow, such as IH-DO-WACC-C1."
+        },
+        {
+          "slot": "D",
+          "q": "What does the B rope tensioner do?",
+          "a": "The B rope tensioner is a pressure roller that keeps the rope tight on the drum so it spools evenly without load. C1, C2 and D include it with a lowering limit switch."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between the D pull limiter and the ELD system?",
+          "a": "D is an overload limiter: above the set load a solenoid valve stops hoisting while lowering stays possible. ELD measures and displays the actual line pull, rope paid out and working layer continuously, and can feed a crane’s load moment system. See our [crane winch load monitoring guide](/blog/crane-winch-load-monitoring)."
+        },
+        {
+          "slot": "E",
+          "q": "How does the D strain-gauge pull limiter work?",
+          "a": "A strain-gauge bridge on the winch structure measures its deformation under rope pull, and above the set load a solenoid valve stops hoisting while lowering stays possible. It measures the structure, not the drum torque, so it reads the same on every rope layer."
+        },
+        {
+          "slot": "F",
+          "q": "How does the ELD electronic load detection system work?",
+          "a": "A strain-gauged anti-rotation flange inside the drum measures torque, and a phonic wheel with two proximity sensors counts drum turns and direction. The system knows the working layer, rope paid out and actual line pull in real time, shown on the crane’s remote control, with analogue and digital signals and a PLC or PC."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Dinamic Oil winch accessories fitted and tested to?",
+          "a": "They are fitted and load-tested with the winch to UNI ISO 4301/1. Electric versions run on 12–24 V DC control circuits and hydraulic versions sit in the winch circuit."
+        },
+        {
+          "slot": "H",
+          "q": "Do I need a lowering limit switch on a hydraulic winch?",
+          "a": "On any winch where the operator can pay out the whole rope, yes: a lowering limit switch (C1 electric or C2 hydraulic) stops lowering before the last safety wraps leave the drum. F1 and F2 rotary limit switches add upper and lower travel limits."
+        },
+        {
+          "slot": "I",
+          "q": "Can accessories be added to a winch I already have?",
+          "a": "Some can, depending on the series and the drum. Send the winch model and serial number and we check with Dinamic Oil what can be retrofitted. Not every accessory fits every series, and the pull limiters are available on all series except SRD."
+        },
+        {
+          "slot": "K",
+          "q": "What do the E load cells do compared with the D limiter?",
+          "a": "E uses two load cells under the winch on its own base plate; the summed signal trips an alarm or stop, or displays the lifted load. D is a strain-gauge limiter on the winch structure. See the [hydraulic winches](/c/hydraulic-winches) range."
+        },
+        {
+          "slot": "G",
+          "q": "Are Dinamic Oil winch accessories from Indus Hydraulics genuine?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies the winch accessories new and genuine, direct from the factory in Bomporto, Italy, with the manufacturer’s documentation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply Dinamic Oil winch accessories from Dubai?",
+          "a": "Indus Hydraulics supplies Dinamic Oil winch accessories from Dubai, UAE and ships worldwide with the best lead times; the delivery time from the factory is confirmed with the quotation. Send the winch model through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-planetary-gearbox-brakes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Dinamic Oil negative multi-disc brakes for planetary gearboxes?",
+          "a": "They are static parking brakes fitted between the motor and the input of Dinamic Oil RE, RA, GB and GBA planetary gearboxes, and of the slewing drives built on them. Springs clamp the discs and hydraulic pressure on the release port frees the drive, so the brake locks the load whenever the motor stops or pressure is lost."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read brake codes such as F01, F501, F915 and MD45?",
+          "a": "The letters give the brake family (F1, F2, F5, F6, F8, F9 or MD) and the number the model, and the table gives each model’s braking torque, opening pressure and the gearbox frames it fits. For example F01 is 132 Nm on an SAE A flange, and F915 is 1,325 Nm. Part numbers follow, such as IH-DO-BRK-F01."
+        },
+        {
+          "slot": "D",
+          "q": "What torque range do the Dinamic Oil planetary gearbox brakes cover?",
+          "a": "There are seven families and 52 models from 110 Nm to 3,051 Nm static braking torque (±5 %). F1 and F2 are 132 to 608 Nm, F5 and F6 are 110 to 1,150 Nm, F8 is 1,271 to 3,051 Nm, F9 is 200 to 1,325 Nm and MD is 220 to 459 Nm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select a brake for a planetary gearbox?",
+          "a": "The braking torque times the gearbox ratio, divided by the gearbox efficiency, must be at least the output torque to be held and, except in special cases, must not exceed the gearbox’s T2max. Send the gearbox model and the load so we confirm the brake with Dinamic Oil."
+        },
+        {
+          "slot": "E",
+          "q": "What are the opening and maximum pressures of these brakes?",
+          "a": "Opening pressure runs from 10 to 87 bar across the range and maximum pressure from 150 to 300 bar. The circuit must supply clearly more than the opening pressure to release the brake fully, and never more than the maximum."
+        },
+        {
+          "slot": "E",
+          "q": "Why does my planetary gearbox brake slip under load?",
+          "a": "Usually back-pressure in the release line partly opens the brake, or the discs are worn. Actual torque = catalogue torque × (opening pressure − back-pressure) ÷ opening pressure, so drain the brake line freely to tank and compare the static torque with the load."
+        },
+        {
+          "slot": "F",
+          "q": "Which motors and gearbox frames do the brakes fit?",
+          "a": "Inputs are SAE A, SAE C, SAE D, ST, MU and MLR direct flange. F1 and F2 suit orbital motors on an SAE A flange, F5 and F6 an ST universal input, F8 MU or ST, F9 SAE C, SAE D or ST, and MD the MLR orbital motors on RE 110 to 240 stages."
+        },
+        {
+          "slot": "I",
+          "q": "How is the planetary gearbox brake lubricated and serviced?",
+          "a": "F1, F2 and the standard F5, F6 and F8 hold about 0.1 L of ISO VG 32 mineral oil, changed with the gearbox oil. A brake can be replaced without changing the gearbox within the frame group it is listed for."
+        },
+        {
+          "slot": "H",
+          "q": "Can the brakes handle high input speeds?",
+          "a": "F5, F6, F8 and F9 come in special versions for input speeds up to 3,500 rpm. The table gives each model’s maximum input speed, and F9 has an optional sprag-clutch freewheel."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between these gearbox brakes and the winch drive brakes?",
+          "a": "These F1 to F9 and MD brakes fit RE, RA, GB and GBA planetary gearboxes, while WD and RW winch drives use the FW, FY, F5 and F9 families in the [winch drive brakes listing](/p/dinamic-oil-winch-drive-brakes). See the [planetary gearboxes](/c/planetary-gearboxes) range."
+        },
+        {
+          "slot": "G",
+          "q": "Are Dinamic Oil planetary gearbox brakes from Indus Hydraulics genuine?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies the planetary gearbox brakes new and genuine, direct from the factory in Bomporto, Italy, with the manufacturer’s documentation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply Dinamic Oil planetary gearbox brakes from Dubai?",
+          "a": "Indus Hydraulics supplies Dinamic Oil brakes from Dubai, UAE and ships worldwide with the best lead times; delivery from the factory is confirmed with the quotation. Send the gearbox model or serial number through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-winch-drive-brakes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Dinamic Oil FW, FY, F5 and F9 winch drive brakes?",
+          "a": "They are negative static multi-disc brakes for Dinamic Oil WD and RW planetary winch drives, released hydraulically and applied by springs so the drum is held whenever control pressure falls to zero. The listing has 31 models from 110 to 3,600 Nm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read winch brake codes such as FW02, FY18, F501 and F915?",
+          "a": "The letters give the family (FW and FY for WD drives, F5 and F9 for RW drives) and the number the model; for example FW02 opens at 15 bar and FY36 holds 3,600 Nm. Part numbers follow, such as IH-DO-WBRK-FW02."
+        },
+        {
+          "slot": "D",
+          "q": "What torque range do the winch drive brakes cover?",
+          "a": "FW is 230 to 1,600 Nm, FY is 1,840 to 3,600 Nm, and F5 and F9 for RW drives are 110 to 1,335 Nm, all static torque (±5 %). Maximum pressure is 300 bar."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select a winch drive brake?",
+          "a": "The brake’s static torque times the drive ratio must hold the drum torque of the heaviest load with the margin the class rules require, and must not exceed the drive’s maximum static torque. Send the drive model and the load so we confirm the brake."
+        },
+        {
+          "slot": "E",
+          "q": "Why does a winch drive brake lose holding torque?",
+          "a": "Back-pressure in the release line reduces the holding torque, so drain the brake line freely to tank. Check that the release pressure is above the opening pressure listed for the model."
+        },
+        {
+          "slot": "F",
+          "q": "What does the freewheel version of a winch brake do?",
+          "a": "The freewheel (sprag clutch) lets the drive turn freely in the hoisting direction while the brake stays applied, a protection against load drop when hoisting starts while the brake is still releasing. It is optional on FW up to 1,160 Nm and on FY up to 3,070 Nm."
+        },
+        {
+          "slot": "F",
+          "q": "When do I need a low-opening-pressure winch brake?",
+          "a": "When the brake is released from the charge (boost) pump of a closed-loop hydrostatic winch circuit, which delivers far less pressure than the main loop. A special lubrication version is for continuous input speeds above 1,500 rpm."
+        },
+        {
+          "slot": "H",
+          "q": "Do WD and RW winch drives use the same brakes?",
+          "a": "No. WD drives use the FW and FY families and RW drives use F5 and F9 brakes, the same families as the gearbox brakes. See the [winch drives](/c/winch-drives) range and the [planetary gearbox brakes](/p/dinamic-oil-planetary-gearbox-brakes)."
+        },
+        {
+          "slot": "E",
+          "q": "What input flanges and speeds do the winch drive brakes take?",
+          "a": "FW takes SAE B, C, D or integral ST input at up to 3,500 rpm and FY takes SAE B, C, D or integral MU input at up to 2,800 rpm. F5 takes an ST universal input and F9 takes SAE C, SAE D and ST."
+        },
+        {
+          "slot": "G",
+          "q": "Are the winch drive brakes sized to class rules?",
+          "a": "They are sized to the winch drive torque in line with the main classification societies. State the class and the load so the selection is confirmed with the order."
+        },
+        {
+          "slot": "G",
+          "q": "Are Dinamic Oil winch drive brakes from Indus Hydraulics genuine?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies the FW, FY, F5 and F9 winch drive brakes new and genuine, direct from the factory in Bomporto, Italy, with the manufacturer’s documentation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply Dinamic Oil winch drive brakes from Dubai?",
+          "a": "Indus Hydraulics supplies Dinamic Oil winch drive brakes from Dubai, UAE and ships worldwide with the best lead times; delivery from the factory is confirmed with the quotation. Send the drive model through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

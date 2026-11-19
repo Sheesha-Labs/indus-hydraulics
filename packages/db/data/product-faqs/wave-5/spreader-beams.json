@@ -1,0 +1,685 @@
+{
+  "family": "spreader-beams",
+  "extraFacts": [
+    {
+      "fact": "Modular Spreader Beam — 24 t, 1–8 m Span (Indus listing): std EN 13155; mat Steel, bolted modular construction; size Span 1–8 m; rate working load limit Up to 24 t (by span and sling angle)",
+      "source": "Indus Hydraulics product listing /p/modular-spreader-beam-24-tonne"
+    },
+    {
+      "fact": "Modular Spreader Beam — 34 t, 1–10 m Span (Indus listing): std EN 13155; mat Steel, bolted modular construction; size Span 1–10 m; rate working load limit Up to 34 t (by span and sling angle)",
+      "source": "Indus Hydraulics product listing /p/modular-spreader-beam-34-tonne"
+    },
+    {
+      "fact": "Modular Spreader Beam — 50 t, 1–13 m Span (Indus listing): std EN 13155; mat Steel, bolted modular construction; size Span 1–13 m; rate working load limit Up to 50 t (by span and sling angle)",
+      "source": "Indus Hydraulics product listing /p/modular-spreader-beam-50-tonne"
+    },
+    {
+      "fact": "Modular Spreader Beam — 8 t, 0.5–4.5 m Span (Indus listing): std EN 13155; mat Steel, bolted modular construction; size Span 0.5–4.5 m; rate working load limit Up to 8 t (by span and sling angle)",
+      "source": "Indus Hydraulics product listing /p/modular-spreader-beam-8-tonne"
+    },
+    {
+      "fact": "Modular Spreader Beam — 70 t, 1–14 m Span (Indus listing): std EN 13155; mat Steel, bolted modular construction; size Span 1–14 m; rate working load limit Up to 70 t (by span and sling angle)",
+      "source": "Indus Hydraulics product listing /p/modular-spreader-beam-70-tonne"
+    },
+    {
+      "fact": "Modular Spreader Beam — 50 t, 1–13 m Span (Indus listing): std EN 13155; mat Steel, bolted modular construction; size Span 1–13 m; rate working load limit Up to 50 t (by span and sling angle)",
+      "source": "Indus Hydraulics product listing /p/modular-spreader-beam-50-tonne"
+    },
+    {
+      "fact": "Modular Spreader Beam — 13 t, 0.5–6.5 m Span (Indus listing): std EN 13155; mat Steel, bolted modular construction; size Span 0.5–6.5 m; rate working load limit Up to 13 t (by span and sling angle)",
+      "source": "Indus Hydraulics product listing /p/modular-spreader-beam-13-tonne"
+    }
+  ],
+  "products": [
+    {
+      "slug": "fixed-custom-spreader-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are fixed and custom spreader beams used for?",
+          "a": "A fixed spreader beam is welded to one span and suits a load that is lifted again and again, a span or capacity outside the modular range, or special end fittings, tag-line points or lifting lugs. Without bolted joints it is quick to inspect and cannot be assembled wrongly."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to quote the Fixed & Custom Spreader Beams?",
+          "a": "Send the load weight and where its centre of gravity sits, the load's length and width, the positions of its lifting points, the crane hook height and any headroom limit, and the environment it will work in. A drawing, a 3D model or a photo is the quickest way to start; [our centre of gravity guide](/blog/centre-of-gravity-in-lifting) explains the centre of gravity."
+        },
+        {
+          "slot": "D",
+          "q": "Fixed or modular: which spreader beam do I need?",
+          "a": "Choose modular when the span changes from job to job, and fixed when it does not, or when the capacity or span falls outside the modular charts. [Our spreader beam versus lifting beam guide](/blog/spreader-beam-vs-lifting-beam) and the [spreader beams shelf](/c/spreader-beams) compare the options."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Fixed & Custom Spreader Beams come in?",
+          "a": "There is no standard size table: the beam is built to the load, with the working load limit and size range set by the order. Typical builds are fixed-length beams for repeat lifts, direct-to-hook spreaders, monopile and long-structure beams, and beams with custom end links, spacers or extensions."
+        },
+        {
+          "slot": "E",
+          "q": "What working load limit do the Fixed & Custom Spreader Beams have?",
+          "a": "The listing gives the working load limit as to order, since each beam is designed for the load and span you specify. State the working load limit, span and sling angle on the RFQ and it is confirmed on the general arrangement drawing."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Fixed & Custom Spreader Beams made of and how are they finished?",
+          "a": "The Fixed & Custom Spreader Beams are structural steel, grade to the design, with a paint system to your specification; galvanized for outdoor use can be requested. The material grade is confirmed on the drawing for approval."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Fixed & Custom Spreader Beams?",
+          "a": "Each beam is designed to EN 13155, load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions. ASME B30.20 / BTH-1 or DNV offshore design can be requested, and design calculations, material certificates and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "How is the Fixed & Custom Spreader Beams rigged to the crane and load?",
+          "a": "A direct-to-hook spreader puts the hook straight onto the beam, saving the top slings and the headroom they take; otherwise top slings connect the beam to the hook. Heavy spreaders for monopiles and pressure vessels are designed around the load's own trunnions or padeyes; see [our guide to lifting bars for air handling units](/blog/lifting-bars-for-air-handling-units) for a worked case."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fixed & Custom Spreader Beams made and approved before supply?",
+          "a": "Your enquiry is reviewed by the maker's design engineers, who issue a general arrangement drawing for your approval before anything is made. The equipment then needs a pre-use check before every lift and periodic thorough examination as your site requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fixed & Custom Spreader Beams compare with a modular spreader beam?",
+          "a": "A fixed beam is welded to one span, while a modular beam such as the [Modular Spreader Beam — 13 t, 0.5–6.5 m Span](/p/modular-spreader-beam-13-tonne) bolts together to many spans. Fixed beams suit repeat lifts and special fittings; modular beams suit changing spans."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Fixed & Custom Spreader Beams outside the UAE?",
+          "a": "Yes, Fixed & Custom Spreader Beams goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Fixed & Custom Spreader Beams?",
+          "a": "Lead time on Fixed & Custom Spreader Beams is given with the quotation, since the listing shows \"Contact for availability\". Send the size and quantity you need through [our contact page](/contact) and we quote from Dubai, UAE and ship worldwide."
+        }
+      ]
+    },
+    {
+      "slug": "lattice-spreader-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m used for?",
+          "a": "The Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m is a light modular lattice beam for loads that are long rather than heavy. Lattice sections bolt together to the length of the load, which hangs from connections along the beam instead of from two ends, so a long flexible item is supported along its length."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m part numbers IH-LR-BH-LSB-3 and IH-LR-BH-LSB-6?",
+          "a": "IH-LR-BH-LSB-3 is the 3 t beam and IH-LR-BH-LSB-6 the 6 t beam, each for loads up to 44 m long with up to 44 lifting connections. The listed WLL is the total load on the beam."
+        },
+        {
+          "slot": "D",
+          "q": "How long a load can the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m lift?",
+          "a": "Standard beams handle loads up to 44 m long with up to 44 lifting connections. Sections bolt together, so the same kit builds a short beam for one job and a long one for the next."
+        },
+        {
+          "slot": "D",
+          "q": "When do I need a lattice beam instead of a solid spreader?",
+          "a": "Use a lattice when the load is long and flexible and has to be supported at many points, such as long panels, pipe or steel sections. A long load lifted at only two points bends between them, and a solid spreader long enough to avoid that is heavy; a lattice girder is stiff for its weight."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m?",
+          "a": "The WLL is 3 t or 6 t in total on the beam. How it shares between the connections depends on the rig, so the rigging is agreed with the order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m made of?",
+          "a": "The Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m is a steel lattice in bolted modular sections. Sections break down for transport and rebuild to the length the next load needs."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m?",
+          "a": "The Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m is listed to EN 13155 and comes with a declaration of conformity and user instructions. Say on the RFQ if your project needs further documentation and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "How is the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m rigged?",
+          "a": "The beam hangs from top slings to the hook and the load hangs from drop slings at the connection points, set at the spacing the load needs. Keep every drop sling vertical, and keep the top sling angle within the limit in the user instructions; see [our centre of gravity guide](/blog/centre-of-gravity-in-lifting) for locating the centre of gravity."
+        },
+        {
+          "slot": "I",
+          "q": "What loads can the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m lift?",
+          "a": "Typical loads are long cladding and façade panels, pipe spools and long pipe, steel sections and trusses, and blades and masts with cradles. Blade systems and larger capacities are built to order around the load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m compare with a modular spreader beam?",
+          "a": "A lattice beam supports a long load at many points, while a modular beam such as the [Modular Spreader Beam — 4 t, 0.5–4.5 m Span](/p/modular-spreader-beam-4-tonne) lifts at two end links only. Choose lattice for long flexible loads; [our spreader beam versus lifting beam guide](/blog/spreader-beam-vs-lifting-beam) covers the difference."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m outside the UAE?",
+          "a": "Yes. We ship Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m?",
+          "a": "Availability for Lattice Spreader Beams — 3 t and 6 t, Loads to 44 m is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "modular-spreader-beam-13-tonne",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Modular Spreader Beam — 13 t, 0.5–6.5 m Span used for?",
+          "a": "The Modular Spreader Beam — 13 t, 0.5–6.5 m Span is a bolt-together spreader beam made of two end units and interchangeable struts, rated up to 13 t (by span and sling angle). It suits long loads lifted at two points, takes its load at the two end links only and works in compression, which keeps it light for its capacity."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LR-BH-MSB-13-0050 for the Modular Spreader Beam — 13 t, 0.5–6.5 m Span?",
+          "a": "Each part number is one span of the beam: IH-LR-BH-MSB-13-0050 is the 0.5 m span, IH-LR-BH-MSB-13-0350 the 3.5 m span and IH-LR-BH-MSB-13-0650 the 6.5 m span. The span chart gives each its rated load at 45, 30 and 20 degrees top sling angle and the shortest top sling leg."
+        },
+        {
+          "slot": "D",
+          "q": "What spans can the Modular Spreader Beam — 13 t, 0.5–6.5 m Span be built to?",
+          "a": "The beam builds to any span from 0.5–6.5 m in the steps of its chart, from 0.5 m up to 6.5 m. Struts are interchangeable and bolt between the two end units, so the same kit is set to a new span for the next load."
+        },
+        {
+          "slot": "D",
+          "q": "How do I read the span chart for the Modular Spreader Beam — 13 t, 0.5–6.5 m Span?",
+          "a": "Find the distance between the load's two lifting points in the Span column, then read across to the sling angle you will rig. At 3.5 m the chart shows 13 t at 45° with a minimum top sling of 2.4 m; the WLL column is the most the beam may carry at that span and angle."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the Modular Spreader Beam — 13 t, 0.5–6.5 m Span carry less at wide sling angles?",
+          "a": "A wider top sling angle pushes the end units together harder, so the beam carries more compression for the same load. On the Modular Spreader Beam — 13 t, 0.5–6.5 m Span the rating at 6.5 m is 4 t at 45° and 11 t at 20°, which is why the chart steps the load down at long spans. See [our sling angle and compression force guide](/blog/sling-angle-compression-force)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Modular Spreader Beam — 13 t, 0.5–6.5 m Span struts and bolts made of and tightened to?",
+          "a": "The Modular Spreader Beam — 13 t, 0.5–6.5 m Span is steel in bolted modular construction. The struts join with M12 x 35 grade 8.8, 100 Nm bolts, nuts and washers at the torque in the listing, and each end unit and link plate is rated 6.5 t on its own because every component is rated separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Modular Spreader Beam — 13 t, 0.5–6.5 m Span?",
+          "a": "The Modular Spreader Beam — 13 t, 0.5–6.5 m Span is listed to EN 13155 with a declaration of conformity and user instructions with the load chart. It is certified for every configuration in its chart, so changing the span needs no new test; standard beams are not DNV type approved, and offshore versions with DNV design approval and witnessed testing are made to order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging goes with the Modular Spreader Beam — 13 t, 0.5–6.5 m Span?",
+          "a": "The Modular Spreader Beam — 13 t, 0.5–6.5 m Span is rigged with top slings to the hook, shackles at the end links (6.5 t each end (13 t combined)) and vertical bottom slings. Shackles, slings and master links can be quoted with the beam. For central lifting points use a beam from the [lifting beams](/c/lifting-beams), and for four-point loads see the [spreader frames and H-frames](/c/spreader-frames-h-frames)."
+        },
+        {
+          "slot": "I",
+          "q": "What are the rules for using the Modular Spreader Beam — 13 t, 0.5–6.5 m Span?",
+          "a": "Load the Modular Spreader Beam — 13 t, 0.5–6.5 m Span only at its two end links and never hang a load from a strut; at 3.5 m the chart allows 13 t at 45°. Keep the top sling angle at 45° to the vertical or less, hang the end links downward and check that no shackle or sling clashes with the beam; [our guide to spreader beam misuse](/blog/spreader-beam-misuse) lists common misuse."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Modular Spreader Beam — 13 t, 0.5–6.5 m Span compare with the Modular Spreader Beam — 24 t, 1–8 m Span?",
+          "a": "The Modular Spreader Beam — 13 t, 0.5–6.5 m Span is up to 13 t (by span and sling angle) and the [Modular Spreader Beam — 24 t, 1–8 m Span](/p/modular-spreader-beam-24-tonne) is up to 24 t (by span and sling angle), with spans of 0.5–6.5 m against 1–8 m. Pick the smaller beam that covers your load at your span and sling angle, since the rating falls as the span lengthens."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Modular Spreader Beam — 13 t, 0.5–6.5 m Span outside the UAE?",
+          "a": "Yes. We ship Modular Spreader Beam — 13 t, 0.5–6.5 m Span from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Modular Spreader Beam — 13 t, 0.5–6.5 m Span?",
+          "a": "Availability for Modular Spreader Beam — 13 t, 0.5–6.5 m Span is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "modular-spreader-beam-24-tonne",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Modular Spreader Beam — 24 t, 1–8 m Span used for?",
+          "a": "The Modular Spreader Beam — 24 t, 1–8 m Span is a bolt-together spreader beam made of two end units and interchangeable struts, rated up to 24 t (by span and sling angle). It suits long loads lifted at two points, takes its load at the two end links only and works in compression, which keeps it light for its capacity."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LR-BH-MSB-24-0100 for the Modular Spreader Beam — 24 t, 1–8 m Span?",
+          "a": "Each part number is one span of the beam: IH-LR-BH-MSB-24-0100 is the 1 m span, IH-LR-BH-MSB-24-0450 the 4.5 m span and IH-LR-BH-MSB-24-0800 the 8 m span. The span chart gives each its rated load at 45, 30 and 20 degrees top sling angle and the shortest top sling leg."
+        },
+        {
+          "slot": "D",
+          "q": "What spans can the Modular Spreader Beam — 24 t, 1–8 m Span be built to?",
+          "a": "The beam builds to any span from 1–8 m in the steps of its chart, from 1 m up to 8 m. Struts are interchangeable and bolt between the two end units, so the same kit is set to a new span for the next load."
+        },
+        {
+          "slot": "D",
+          "q": "How do I read the span chart for the Modular Spreader Beam — 24 t, 1–8 m Span?",
+          "a": "Find the distance between the load's two lifting points in the Span column, then read across to the sling angle you will rig. At 4.5 m the chart shows 20 t at 45° with a minimum top sling of 3.1 m; the WLL column is the most the beam may carry at that span and angle."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the Modular Spreader Beam — 24 t, 1–8 m Span carry less at wide sling angles?",
+          "a": "A wider top sling angle pushes the end units together harder, so the beam carries more compression for the same load. On the Modular Spreader Beam — 24 t, 1–8 m Span the rating at 8 m is 6 t at 45° and 17 t at 20°, which is why the chart steps the load down at long spans. See [our sling angle and compression force guide](/blog/sling-angle-compression-force)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Modular Spreader Beam — 24 t, 1–8 m Span struts and bolts made of and tightened to?",
+          "a": "The Modular Spreader Beam — 24 t, 1–8 m Span is steel in bolted modular construction. The struts join with M20 x 50 grade 8.8, 160 Nm bolts, nuts and washers at the torque in the listing, and each end unit and link plate is rated 12 t on its own because every component is rated separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Modular Spreader Beam — 24 t, 1–8 m Span?",
+          "a": "The Modular Spreader Beam — 24 t, 1–8 m Span is listed to EN 13155 with a declaration of conformity and user instructions with the load chart. It is certified for every configuration in its chart, so changing the span needs no new test; standard beams are not DNV type approved, and offshore versions with DNV design approval and witnessed testing are made to order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging goes with the Modular Spreader Beam — 24 t, 1–8 m Span?",
+          "a": "The Modular Spreader Beam — 24 t, 1–8 m Span is rigged with top slings to the hook, shackles at the end links (12 t each end (24 t combined)) and vertical bottom slings. Shackles, slings and master links can be quoted with the beam. For central lifting points use a beam from the [lifting beams](/c/lifting-beams), and for four-point loads see the [spreader frames and H-frames](/c/spreader-frames-h-frames)."
+        },
+        {
+          "slot": "I",
+          "q": "What are the rules for using the Modular Spreader Beam — 24 t, 1–8 m Span?",
+          "a": "Load the Modular Spreader Beam — 24 t, 1–8 m Span only at its two end links and never hang a load from a strut; at 4.5 m the chart allows 20 t at 45°. Keep the top sling angle at 45° to the vertical or less, hang the end links downward and check that no shackle or sling clashes with the beam; [our guide to spreader beam misuse](/blog/spreader-beam-misuse) lists common misuse."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Modular Spreader Beam — 24 t, 1–8 m Span compare with the Modular Spreader Beam — 34 t, 1–10 m Span?",
+          "a": "The Modular Spreader Beam — 24 t, 1–8 m Span is up to 24 t (by span and sling angle) and the [Modular Spreader Beam — 34 t, 1–10 m Span](/p/modular-spreader-beam-34-tonne) is up to 34 t (by span and sling angle), with spans of 1–8 m against 1–10 m. Pick the smaller beam that covers your load at your span and sling angle, since the rating falls as the span lengthens."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Modular Spreader Beam — 24 t, 1–8 m Span outside the UAE?",
+          "a": "Yes. We ship Modular Spreader Beam — 24 t, 1–8 m Span from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Modular Spreader Beam — 24 t, 1–8 m Span?",
+          "a": "Availability for Modular Spreader Beam — 24 t, 1–8 m Span is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "modular-spreader-beam-34-tonne",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Modular Spreader Beam — 34 t, 1–10 m Span used for?",
+          "a": "The Modular Spreader Beam — 34 t, 1–10 m Span is a bolt-together spreader beam made of two end units and interchangeable struts, rated up to 34 t (by span and sling angle). It suits long loads lifted at two points, takes its load at the two end links only and works in compression, which keeps it light for its capacity."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LR-BH-MSB-34-0100 for the Modular Spreader Beam — 34 t, 1–10 m Span?",
+          "a": "Each part number is one span of the beam: IH-LR-BH-MSB-34-0100 is the 1 m span, IH-LR-BH-MSB-34-0550 the 5.5 m span and IH-LR-BH-MSB-34-1000 the 10 m span. The span chart gives each its rated load at 45, 30 and 20 degrees top sling angle and the shortest top sling leg."
+        },
+        {
+          "slot": "D",
+          "q": "What spans can the Modular Spreader Beam — 34 t, 1–10 m Span be built to?",
+          "a": "The beam builds to any span from 1–10 m in the steps of its chart, from 1 m up to 10 m. Struts are interchangeable and bolt between the two end units, so the same kit is set to a new span for the next load."
+        },
+        {
+          "slot": "D",
+          "q": "How do I read the span chart for the Modular Spreader Beam — 34 t, 1–10 m Span?",
+          "a": "Find the distance between the load's two lifting points in the Span column, then read across to the sling angle you will rig. At 5.5 m the chart shows 25 t at 45° with a minimum top sling of 3.7 m; the WLL column is the most the beam may carry at that span and angle."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the Modular Spreader Beam — 34 t, 1–10 m Span carry less at wide sling angles?",
+          "a": "A wider top sling angle pushes the end units together harder, so the beam carries more compression for the same load. On the Modular Spreader Beam — 34 t, 1–10 m Span the rating at 10 m is 7 t at 45° and 20 t at 20°, which is why the chart steps the load down at long spans. See [our sling angle and compression force guide](/blog/sling-angle-compression-force)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Modular Spreader Beam — 34 t, 1–10 m Span struts and bolts made of and tightened to?",
+          "a": "The Modular Spreader Beam — 34 t, 1–10 m Span is steel in bolted modular construction. The struts join with M20 x 50 grade 8.8, 160 Nm bolts, nuts and washers at the torque in the listing, and each end unit and link plate is rated 17 t on its own because every component is rated separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Modular Spreader Beam — 34 t, 1–10 m Span?",
+          "a": "The Modular Spreader Beam — 34 t, 1–10 m Span is listed to EN 13155 with a declaration of conformity and user instructions with the load chart. It is certified for every configuration in its chart, so changing the span needs no new test; standard beams are not DNV type approved, and offshore versions with DNV design approval and witnessed testing are made to order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging goes with the Modular Spreader Beam — 34 t, 1–10 m Span?",
+          "a": "The Modular Spreader Beam — 34 t, 1–10 m Span is rigged with top slings to the hook, shackles at the end links (17 t each end (34 t combined)) and vertical bottom slings. Shackles, slings and master links can be quoted with the beam. For central lifting points use a beam from the [lifting beams](/c/lifting-beams), and for four-point loads see the [spreader frames and H-frames](/c/spreader-frames-h-frames)."
+        },
+        {
+          "slot": "I",
+          "q": "What are the rules for using the Modular Spreader Beam — 34 t, 1–10 m Span?",
+          "a": "Load the Modular Spreader Beam — 34 t, 1–10 m Span only at its two end links and never hang a load from a strut; at 5.5 m the chart allows 25 t at 45°. Keep the top sling angle at 45° to the vertical or less, hang the end links downward and check that no shackle or sling clashes with the beam; [our guide to spreader beam misuse](/blog/spreader-beam-misuse) lists common misuse."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Modular Spreader Beam — 34 t, 1–10 m Span compare with the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "The Modular Spreader Beam — 34 t, 1–10 m Span is up to 34 t (by span and sling angle) and the [Modular Spreader Beam — 50 t, 1–13 m Span](/p/modular-spreader-beam-50-tonne) is up to 50 t (by span and sling angle), with spans of 1–10 m against 1–13 m. Pick the smaller beam that covers your load at your span and sling angle, since the rating falls as the span lengthens."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Modular Spreader Beam — 34 t, 1–10 m Span outside the UAE?",
+          "a": "Yes. We ship Modular Spreader Beam — 34 t, 1–10 m Span from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Modular Spreader Beam — 34 t, 1–10 m Span?",
+          "a": "Availability for Modular Spreader Beam — 34 t, 1–10 m Span is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "modular-spreader-beam-4-tonne",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Modular Spreader Beam — 4 t, 0.5–4.5 m Span used for?",
+          "a": "The Modular Spreader Beam — 4 t, 0.5–4.5 m Span is a bolt-together spreader beam made of two end units and interchangeable struts, rated up to 4 t (by span and sling angle). It suits long loads lifted at two points, takes its load at the two end links only and works in compression, which keeps it light for its capacity."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LR-BH-MSB-4-0050 for the Modular Spreader Beam — 4 t, 0.5–4.5 m Span?",
+          "a": "Each part number is one span of the beam: IH-LR-BH-MSB-4-0050 is the 0.5 m span, IH-LR-BH-MSB-4-0250 the 2.5 m span and IH-LR-BH-MSB-4-0450 the 4.5 m span. The span chart gives each its rated load at 45, 30 and 20 degrees top sling angle and the shortest top sling leg."
+        },
+        {
+          "slot": "D",
+          "q": "What spans can the Modular Spreader Beam — 4 t, 0.5–4.5 m Span be built to?",
+          "a": "The beam builds to any span from 0.5–4.5 m in the steps of its chart, from 0.5 m up to 4.5 m. Struts are interchangeable and bolt between the two end units, so the same kit is set to a new span for the next load."
+        },
+        {
+          "slot": "D",
+          "q": "How do I read the span chart for the Modular Spreader Beam — 4 t, 0.5–4.5 m Span?",
+          "a": "Find the distance between the load's two lifting points in the Span column, then read across to the sling angle you will rig. At 2.5 m the chart shows 4 t at 45° with a minimum top sling of 1.7 m; the WLL column is the most the beam may carry at that span and angle."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the Modular Spreader Beam — 4 t, 0.5–4.5 m Span carry less at wide sling angles?",
+          "a": "A wider top sling angle pushes the end units together harder, so the beam carries more compression for the same load. On the Modular Spreader Beam — 4 t, 0.5–4.5 m Span the rating at 4.5 m is 2 t at 45° and 4 t at 20°, which is why the chart steps the load down at long spans. See [our sling angle and compression force guide](/blog/sling-angle-compression-force)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Modular Spreader Beam — 4 t, 0.5–4.5 m Span struts and bolts made of and tightened to?",
+          "a": "The Modular Spreader Beam — 4 t, 0.5–4.5 m Span is steel in bolted modular construction. The struts join with M10 x 30 grade 8.8, 80 Nm bolts, nuts and washers at the torque in the listing, and each end unit and link plate is rated 2 t on its own because every component is rated separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Modular Spreader Beam — 4 t, 0.5–4.5 m Span?",
+          "a": "The Modular Spreader Beam — 4 t, 0.5–4.5 m Span is listed to EN 13155 with a declaration of conformity and user instructions with the load chart. It is certified for every configuration in its chart, so changing the span needs no new test; standard beams are not DNV type approved, and offshore versions with DNV design approval and witnessed testing are made to order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging goes with the Modular Spreader Beam — 4 t, 0.5–4.5 m Span?",
+          "a": "The Modular Spreader Beam — 4 t, 0.5–4.5 m Span is rigged with top slings to the hook, shackles at the end links (2 t each end (4 t combined)) and vertical bottom slings. Shackles, slings and master links can be quoted with the beam. For central lifting points use a beam from the [lifting beams](/c/lifting-beams), and for four-point loads see the [spreader frames and H-frames](/c/spreader-frames-h-frames)."
+        },
+        {
+          "slot": "I",
+          "q": "What are the rules for using the Modular Spreader Beam — 4 t, 0.5–4.5 m Span?",
+          "a": "Load the Modular Spreader Beam — 4 t, 0.5–4.5 m Span only at its two end links and never hang a load from a strut; at 2.5 m the chart allows 4 t at 45°. Keep the top sling angle at 45° to the vertical or less, hang the end links downward and check that no shackle or sling clashes with the beam; [our guide to spreader beam misuse](/blog/spreader-beam-misuse) lists common misuse."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Modular Spreader Beam — 4 t, 0.5–4.5 m Span compare with the Modular Spreader Beam — 8 t, 0.5–4.5 m Span?",
+          "a": "The Modular Spreader Beam — 4 t, 0.5–4.5 m Span is up to 4 t (by span and sling angle) and the [Modular Spreader Beam — 8 t, 0.5–4.5 m Span](/p/modular-spreader-beam-8-tonne) is up to 8 t (by span and sling angle), with spans of 0.5–4.5 m against 0.5–4.5 m. Pick the smaller beam that covers your load at your span and sling angle, since the rating falls as the span lengthens."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Modular Spreader Beam — 4 t, 0.5–4.5 m Span outside the UAE?",
+          "a": "Yes. We ship Modular Spreader Beam — 4 t, 0.5–4.5 m Span from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Modular Spreader Beam — 4 t, 0.5–4.5 m Span?",
+          "a": "Availability for Modular Spreader Beam — 4 t, 0.5–4.5 m Span is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "modular-spreader-beam-50-tonne",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Modular Spreader Beam — 50 t, 1–13 m Span used for?",
+          "a": "The Modular Spreader Beam — 50 t, 1–13 m Span is a bolt-together spreader beam made of two end units and interchangeable struts, rated up to 50 t (by span and sling angle). It suits long loads lifted at two points, takes its load at the two end links only and works in compression, which keeps it light for its capacity."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LR-BH-MSB-50-0100 for the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "Each part number is one span of the beam: IH-LR-BH-MSB-50-0100 is the 1 m span, IH-LR-BH-MSB-50-0700 the 7 m span and IH-LR-BH-MSB-50-1300 the 13 m span. The span chart gives each its rated load at 45, 30 and 20 degrees top sling angle and the shortest top sling leg."
+        },
+        {
+          "slot": "D",
+          "q": "What spans can the Modular Spreader Beam — 50 t, 1–13 m Span be built to?",
+          "a": "The beam builds to any span from 1–13 m in the steps of its chart, from 1 m up to 13 m. Struts are interchangeable and bolt between the two end units, so the same kit is set to a new span for the next load."
+        },
+        {
+          "slot": "D",
+          "q": "How do I read the span chart for the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "Find the distance between the load's two lifting points in the Span column, then read across to the sling angle you will rig. At 7 m the chart shows 40 t at 45° with a minimum top sling of 4.7 m; the WLL column is the most the beam may carry at that span and angle."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the Modular Spreader Beam — 50 t, 1–13 m Span carry less at wide sling angles?",
+          "a": "A wider top sling angle pushes the end units together harder, so the beam carries more compression for the same load. On the Modular Spreader Beam — 50 t, 1–13 m Span the rating at 13 m is 10 t at 45° and 29 t at 20°, which is why the chart steps the load down at long spans. See [our sling angle and compression force guide](/blog/sling-angle-compression-force)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Modular Spreader Beam — 50 t, 1–13 m Span struts and bolts made of and tightened to?",
+          "a": "The Modular Spreader Beam — 50 t, 1–13 m Span is steel in bolted modular construction. The struts join with M20 x 65 grade 8.8, 160 Nm bolts, nuts and washers at the torque in the listing, and each end unit and link plate is rated 25 t on its own because every component is rated separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "The Modular Spreader Beam — 50 t, 1–13 m Span is listed to EN 13155 with a declaration of conformity and user instructions with the load chart. It is certified for every configuration in its chart, so changing the span needs no new test; standard beams are not DNV type approved, and offshore versions with DNV design approval and witnessed testing are made to order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging goes with the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "The Modular Spreader Beam — 50 t, 1–13 m Span is rigged with top slings to the hook, shackles at the end links (25 t each end (50 t combined)) and vertical bottom slings. Shackles, slings and master links can be quoted with the beam. For central lifting points use a beam from the [lifting beams](/c/lifting-beams), and for four-point loads see the [spreader frames and H-frames](/c/spreader-frames-h-frames)."
+        },
+        {
+          "slot": "I",
+          "q": "What are the rules for using the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "Load the Modular Spreader Beam — 50 t, 1–13 m Span only at its two end links and never hang a load from a strut; at 7 m the chart allows 40 t at 45°. Keep the top sling angle at 45° to the vertical or less, hang the end links downward and check that no shackle or sling clashes with the beam; [our guide to spreader beam misuse](/blog/spreader-beam-misuse) lists common misuse."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Modular Spreader Beam — 50 t, 1–13 m Span compare with the Modular Spreader Beam — 70 t, 1–14 m Span?",
+          "a": "The Modular Spreader Beam — 50 t, 1–13 m Span is up to 50 t (by span and sling angle) and the [Modular Spreader Beam — 70 t, 1–14 m Span](/p/modular-spreader-beam-70-tonne) is up to 70 t (by span and sling angle), with spans of 1–13 m against 1–14 m. Pick the smaller beam that covers your load at your span and sling angle, since the rating falls as the span lengthens."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Modular Spreader Beam — 50 t, 1–13 m Span outside the UAE?",
+          "a": "Yes. We ship Modular Spreader Beam — 50 t, 1–13 m Span from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "Availability for Modular Spreader Beam — 50 t, 1–13 m Span is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "modular-spreader-beam-70-tonne",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Modular Spreader Beam — 70 t, 1–14 m Span used for?",
+          "a": "The Modular Spreader Beam — 70 t, 1–14 m Span is a bolt-together spreader beam made of two end units and interchangeable struts, rated up to 70 t (by span and sling angle). It suits long loads lifted at two points, takes its load at the two end links only and works in compression, which keeps it light for its capacity."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LR-BH-MSB-70-0100 for the Modular Spreader Beam — 70 t, 1–14 m Span?",
+          "a": "Each part number is one span of the beam: IH-LR-BH-MSB-70-0100 is the 1 m span, IH-LR-BH-MSB-70-0750 the 7.5 m span and IH-LR-BH-MSB-70-1400 the 14 m span. The span chart gives each its rated load at 45, 30 and 20 degrees top sling angle and the shortest top sling leg."
+        },
+        {
+          "slot": "D",
+          "q": "What spans can the Modular Spreader Beam — 70 t, 1–14 m Span be built to?",
+          "a": "The beam builds to any span from 1–14 m in the steps of its chart, from 1 m up to 14 m. Struts are interchangeable and bolt between the two end units, so the same kit is set to a new span for the next load."
+        },
+        {
+          "slot": "D",
+          "q": "How do I read the span chart for the Modular Spreader Beam — 70 t, 1–14 m Span?",
+          "a": "Find the distance between the load's two lifting points in the Span column, then read across to the sling angle you will rig. At 7.5 m the chart shows 70 t at 45° with a minimum top sling of 5.1 m; the WLL column is the most the beam may carry at that span and angle."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the Modular Spreader Beam — 70 t, 1–14 m Span carry less at wide sling angles?",
+          "a": "A wider top sling angle pushes the end units together harder, so the beam carries more compression for the same load. On the Modular Spreader Beam — 70 t, 1–14 m Span the rating at 14 m is 21 t at 45° and 59 t at 20°, which is why the chart steps the load down at long spans. See [our sling angle and compression force guide](/blog/sling-angle-compression-force)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Modular Spreader Beam — 70 t, 1–14 m Span struts and bolts made of and tightened to?",
+          "a": "The Modular Spreader Beam — 70 t, 1–14 m Span is steel in bolted modular construction. The struts join with M20 x 65 grade 8.8, 160 Nm bolts, nuts and washers at the torque in the listing, and each end unit and link plate is rated 35 t on its own because every component is rated separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Modular Spreader Beam — 70 t, 1–14 m Span?",
+          "a": "The Modular Spreader Beam — 70 t, 1–14 m Span is listed to EN 13155 with a declaration of conformity and user instructions with the load chart. It is certified for every configuration in its chart, so changing the span needs no new test; standard beams are not DNV type approved, and offshore versions with DNV design approval and witnessed testing are made to order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging goes with the Modular Spreader Beam — 70 t, 1–14 m Span?",
+          "a": "The Modular Spreader Beam — 70 t, 1–14 m Span is rigged with top slings to the hook, shackles at the end links (35 t each end (70 t combined)) and vertical bottom slings. Shackles, slings and master links can be quoted with the beam. For central lifting points use a beam from the [lifting beams](/c/lifting-beams), and for four-point loads see the [spreader frames and H-frames](/c/spreader-frames-h-frames)."
+        },
+        {
+          "slot": "I",
+          "q": "What are the rules for using the Modular Spreader Beam — 70 t, 1–14 m Span?",
+          "a": "Load the Modular Spreader Beam — 70 t, 1–14 m Span only at its two end links and never hang a load from a strut; at 7.5 m the chart allows 70 t at 45°. Keep the top sling angle at 45° to the vertical or less, hang the end links downward and check that no shackle or sling clashes with the beam; [our guide to spreader beam misuse](/blog/spreader-beam-misuse) lists common misuse."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Modular Spreader Beam — 70 t, 1–14 m Span compare with the Modular Spreader Beam — 50 t, 1–13 m Span?",
+          "a": "The Modular Spreader Beam — 70 t, 1–14 m Span is up to 70 t (by span and sling angle) and the [Modular Spreader Beam — 50 t, 1–13 m Span](/p/modular-spreader-beam-50-tonne) is up to 50 t (by span and sling angle), with spans of 1–14 m against 1–13 m. Pick the smaller beam that covers your load at your span and sling angle, since the rating falls as the span lengthens."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Modular Spreader Beam — 70 t, 1–14 m Span outside the UAE?",
+          "a": "Yes. We ship Modular Spreader Beam — 70 t, 1–14 m Span from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Modular Spreader Beam — 70 t, 1–14 m Span?",
+          "a": "Availability for Modular Spreader Beam — 70 t, 1–14 m Span is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "modular-spreader-beam-8-tonne",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Modular Spreader Beam — 8 t, 0.5–4.5 m Span used for?",
+          "a": "The Modular Spreader Beam — 8 t, 0.5–4.5 m Span is a bolt-together spreader beam made of two end units and interchangeable struts, rated up to 8 t (by span and sling angle). It suits long loads lifted at two points, takes its load at the two end links only and works in compression, which keeps it light for its capacity."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-LR-BH-MSB-8-0050 for the Modular Spreader Beam — 8 t, 0.5–4.5 m Span?",
+          "a": "Each part number is one span of the beam: IH-LR-BH-MSB-8-0050 is the 0.5 m span, IH-LR-BH-MSB-8-0250 the 2.5 m span and IH-LR-BH-MSB-8-0450 the 4.5 m span. The span chart gives each its rated load at 45, 30 and 20 degrees top sling angle and the shortest top sling leg."
+        },
+        {
+          "slot": "D",
+          "q": "What spans can the Modular Spreader Beam — 8 t, 0.5–4.5 m Span be built to?",
+          "a": "The beam builds to any span from 0.5–4.5 m in the steps of its chart, from 0.5 m up to 4.5 m. Struts are interchangeable and bolt between the two end units, so the same kit is set to a new span for the next load."
+        },
+        {
+          "slot": "D",
+          "q": "How do I read the span chart for the Modular Spreader Beam — 8 t, 0.5–4.5 m Span?",
+          "a": "Find the distance between the load's two lifting points in the Span column, then read across to the sling angle you will rig. At 2.5 m the chart shows 7 t at 45° with a minimum top sling of 1.7 m; the WLL column is the most the beam may carry at that span and angle."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the Modular Spreader Beam — 8 t, 0.5–4.5 m Span carry less at wide sling angles?",
+          "a": "A wider top sling angle pushes the end units together harder, so the beam carries more compression for the same load. On the Modular Spreader Beam — 8 t, 0.5–4.5 m Span the rating at 4.5 m is 2 t at 45° and 7 t at 20°, which is why the chart steps the load down at long spans. See [our sling angle and compression force guide](/blog/sling-angle-compression-force)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Modular Spreader Beam — 8 t, 0.5–4.5 m Span struts and bolts made of and tightened to?",
+          "a": "The Modular Spreader Beam — 8 t, 0.5–4.5 m Span is steel in bolted modular construction. The struts join with M10 x 30 grade 8.8, 80 Nm bolts, nuts and washers at the torque in the listing, and each end unit and link plate is rated 4 t on its own because every component is rated separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and documents come with the Modular Spreader Beam — 8 t, 0.5–4.5 m Span?",
+          "a": "The Modular Spreader Beam — 8 t, 0.5–4.5 m Span is listed to EN 13155 with a declaration of conformity and user instructions with the load chart. It is certified for every configuration in its chart, so changing the span needs no new test; standard beams are not DNV type approved, and offshore versions with DNV design approval and witnessed testing are made to order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging goes with the Modular Spreader Beam — 8 t, 0.5–4.5 m Span?",
+          "a": "The Modular Spreader Beam — 8 t, 0.5–4.5 m Span is rigged with top slings to the hook, shackles at the end links (4 t each end (8 t combined)) and vertical bottom slings. Shackles, slings and master links can be quoted with the beam. For central lifting points use a beam from the [lifting beams](/c/lifting-beams), and for four-point loads see the [spreader frames and H-frames](/c/spreader-frames-h-frames)."
+        },
+        {
+          "slot": "I",
+          "q": "What are the rules for using the Modular Spreader Beam — 8 t, 0.5–4.5 m Span?",
+          "a": "Load the Modular Spreader Beam — 8 t, 0.5–4.5 m Span only at its two end links and never hang a load from a strut; at 2.5 m the chart allows 7 t at 45°. Keep the top sling angle at 45° to the vertical or less, hang the end links downward and check that no shackle or sling clashes with the beam; [our guide to spreader beam misuse](/blog/spreader-beam-misuse) lists common misuse."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Modular Spreader Beam — 8 t, 0.5–4.5 m Span compare with the Modular Spreader Beam — 13 t, 0.5–6.5 m Span?",
+          "a": "The Modular Spreader Beam — 8 t, 0.5–4.5 m Span is up to 8 t (by span and sling angle) and the [Modular Spreader Beam — 13 t, 0.5–6.5 m Span](/p/modular-spreader-beam-13-tonne) is up to 13 t (by span and sling angle), with spans of 0.5–4.5 m against 0.5–6.5 m. Pick the smaller beam that covers your load at your span and sling angle, since the rating falls as the span lengthens."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Modular Spreader Beam — 8 t, 0.5–4.5 m Span outside the UAE?",
+          "a": "Yes. We ship Modular Spreader Beam — 8 t, 0.5–4.5 m Span from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Modular Spreader Beam — 8 t, 0.5–4.5 m Span?",
+          "a": "Availability for Modular Spreader Beam — 8 t, 0.5–4.5 m Span is confirmed per order: the listing reads \"Contact for availability\", so we quote the current lead time from Dubai, UAE. Send the size, load or span you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "telescopic-spreader-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a telescopic spreader beam used for?",
+          "a": "The Telescopic Spreader Beams — 4 t to 16 t is a spreader beam with an inner section that slides inside the outer one and pins at drilled adjustment holes. It is the quickest beam to reset when one rig handles loads of different lengths, because changing the span takes a pin, not a spanner."
+        },
+        {
+          "slot": "B",
+          "q": "How are the Telescopic Spreader Beams — 4 t to 16 t part numbers such as IH-LR-BH-TSB-4-1525 organised?",
+          "a": "Each row of the size table is one WLL and span range: IH-LR-BH-TSB-4-1525 is the 4 t beam for 1.5–2.5 m, and the table lists ten standard rows from 4 t to 16 t. Each row also gives the self weight and the shackles the beam is designed for."
+        },
+        {
+          "slot": "D",
+          "q": "What spans and capacities do the Telescopic Spreader Beams — 4 t to 16 t cover?",
+          "a": "The standard Telescopic Spreader Beams — 4 t to 16 t run 4 t to 16 t over spans of 1.5–2.5 m, 2.5–4 m and 4–6 m. Beyond that they are built to order from 1 m to 10 m and from 1 t to 34 t, with adjustment holes drilled where the job needs them."
+        },
+        {
+          "slot": "D",
+          "q": "How fine is the adjustment on the Telescopic Spreader Beams — 4 t to 16 t?",
+          "a": "The standard Telescopic Spreader Beams — 4 t to 16 t adjust in 125 mm steps on the 1.5–2.5 m ranges and 250 mm steps on the longer ones. Beams built to order can have holes anywhere from 50 mm to 1000 mm apart."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working load limit of the Telescopic Spreader Beams — 4 t to 16 t?",
+          "a": "The Telescopic Spreader Beams — 4 t to 16 t are rated 4–16 t as standard, and 1–34 t to order. The WLL applies across the whole span range of each beam, and the sling angle is limited to 45° to the vertical at most."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Telescopic Spreader Beams — 4 t to 16 t made of?",
+          "a": "The Telescopic Spreader Beams — 4 t to 16 t are steel, with telescopic sections and pinned adjustment. The adjustment pin must be fully home and secured before every lift."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to the Telescopic Spreader Beams — 4 t to 16 t?",
+          "a": "The Telescopic Spreader Beams — 4 t to 16 t are listed to EN 13155 and come with a declaration of conformity and user instructions. Ask on the RFQ for any further documentation your site needs."
+        },
+        {
+          "slot": "H",
+          "q": "Which shackles and slings suit the Telescopic Spreader Beams — 4 t to 16 t?",
+          "a": "The table gives the top and bottom shackle sizes each beam is designed for, such as 6.5 t top and 4.75 t bottom on the 4 t and 8 t beams. Shackles and top slings can be quoted with the beam, and related equipment is on the [lifting beams](/c/lifting-beams) and [below-the-hook attachments](/c/below-the-hook-attachments)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Telescopic Spreader Beams — 4 t to 16 t be rigged?",
+          "a": "Load the beam only at its two end points through the bottom shackles, keep the top sling angle at 45° to the vertical or less, and make sure the adjustment pin is fully home and secured before every lift. See [our guide to spreader beam misuse](/blog/spreader-beam-misuse)."
+        },
+        {
+          "slot": "K",
+          "q": "Telescopic or modular spreader beam: how do the Telescopic Spreader Beams — 4 t to 16 t compare?",
+          "a": "A telescopic beam is the quickest to adjust: slide and pin. A modular beam such as the [Modular Spreader Beam — 8 t, 0.5–4.5 m Span](/p/modular-spreader-beam-8-tonne) is lighter, breaks down smaller for transport and covers a much wider range of spans and capacities. Choose telescopic when the span changes often within a narrow range; [our spreader beam versus lifting beam guide](/blog/spreader-beam-vs-lifting-beam) compares beam types."
+        },
+        {
+          "slot": "L",
+          "q": "Can you ship the Telescopic Spreader Beams — 4 t to 16 t outside the UAE?",
+          "a": "Yes, Telescopic Spreader Beams — 4 t to 16 t goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time on the Telescopic Spreader Beams — 4 t to 16 t?",
+          "a": "Lead time on Telescopic Spreader Beams — 4 t to 16 t is given with the quotation, since the listing shows \"Contact for availability\". Send the size and quantity you need through [our contact page](/contact) and we quote from Dubai, UAE and ship worldwide."
+        }
+      ]
+    }
+  ]
+}

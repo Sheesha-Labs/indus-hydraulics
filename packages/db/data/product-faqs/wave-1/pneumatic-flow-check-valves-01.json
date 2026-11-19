@@ -1,0 +1,1010 @@
+{
+  "family": "pneumatic-flow-check-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions (1 bar = 14.5038 psi): 100 psi = about 7 bar; 120 psi = about 8 bar; 125 psi = about 9 bar; 140 psi = about 10 bar; 145 psi = 10 bar; 150 psi = about 10 bar; 200 psi = about 14 bar; 246 psi = about 17 bar; 250 psi = about 17 bar; 300 psi = about 21 bar; 350 psi = about 24 bar; 500 psi = about 34 bar. Temperature (°C = (°F - 32) / 1.8): -40°F = -40°C; -32°F = -36°C; -25°F = -32°C; -10°F = -23°C; -4°F = -20°C; 0°F = -18°C; 15°F = -9°C; 23°F = -5°C; 32°F = 0°C; 122°F = 50°C; 140°F = 60°C; 150°F = 66°C; 158°F = 70°C; 160°F = 71°C; 176°F = 80°C; 200°F = 93°C; 350°F = 177°C; 400°F = 204°C; 450°F = 232°C.",
+      "source": "NIST SP 811 unit conversion; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "NPT is the American taper pipe thread to ASME B1.20.1 and NPTF is the dryseal version to ASME B1.20.3; BSPP (G) is parallel pipe thread to ISO 228-1 and BSPT (R) is taper pipe thread to ISO 7-1. NPT and BSP threads do not mate. FNPT is female NPT and MNPT is male NPT.",
+      "source": "ASME B1.20.1; ASME B1.20.3; ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "HS 2022 heading 84.81 covers taps, cocks and valves: subheading 8481.20 valves for oleohydraulic or pneumatic transmissions, 8481.30 check (non-return) valves, 8481.40 safety or relief valves, 8481.80 other appliances. The importing country's tariff fixes the final national digits.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "ISO 4414 sets the general rules and safety requirements for pneumatic fluid power systems, including that stored pressure be able to be isolated and exhausted before work on the machine.",
+      "source": "ISO 4414:2010 Pneumatic fluid power - General rules and safety requirements for systems and their components"
+    },
+    {
+      "fact": "A check (non-return) valve lets air flow in one direction only; on a compressor discharge line an in-tank check valve sits at the receiver inlet so the tank cannot back-flow into the pump. A pilot unloader check valve combines a check valve with an unloader port that vents the compressor head when it stops.",
+      "source": "Compressor accessory practice; WCO HS 2022 heading 84.81 (check valves 8481.30)"
+    },
+    {
+      "fact": "SCFM means standard cubic feet per minute of free air; it is the flow rating shown in the row text of each Conrader check valve.",
+      "source": "Compressed Air and Gas Institute (CAGI) terminology"
+    },
+    {
+      "fact": "Conrader in-tank check valve inlet types seen in the rows: FNPT (female NPT), Compression, and SAE flare; outlet is male NPT (MNPT). A minimum pressure check valve holds back flow until inlet pressure reaches a set minimum, listed in the CMP rows as 50 to 80 psi or 50 to 70 psi.",
+      "source": "Conrader CAC, CTA, CTB, CTD, CTF, CTL and CMP series row descriptions (Indus size tables)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "conrader-cac-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CAC series in-tank check valve used for?",
+          "a": "Conrader CAC series in-tank check valves are compression-inlet check valves that fit in the receiver inlet of a compressor and stop air flowing back to the pump. The listing has 4 part numbers rated 20 SCFM: CAC1212, CAC3812, CAC3812-NF and CAC3812-SU3-T."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CAC series in-tank check valve part numbers such as CAC3812 mean?",
+          "a": "Read the digits as inlet then outlet size: CAC1212 is a 1/2 inch compression inlet with a 1/2 inch male NPT outlet, and CAC3812 is 3/8 inch inlet with 1/2 inch outlet. NF and SU3-T are option suffixes on the 3812 body."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CAC series in-tank check valve come in?",
+          "a": "There are two inlet sizes, 1/2 inch (CAC1212) and 3/8 inch (CAC3812 and its two variants), both with a 1/2 inch male NPT outlet and a 20 SCFM rating."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CAC series in-tank check valve?",
+          "a": "Pick the compression inlet to match your discharge tube (3/8 inch or 1/2 inch) and the 1/2 inch outlet to the tank. For higher flow step up to the [CTA series](/p/conrader-cta-series-in-tank-check-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CAC series in-tank check valve have?",
+          "a": "The listing is rated 20 SCFM on every row. A maker pressure and temperature rating is not held for the CAC series here, so we do not state one; ask us for the Conrader data."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CAC series in-tank check valve made of?",
+          "a": "The listing does not record the body or seat material of the CAC series; ask us for the specification of your part number. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CAC series in-tank check valve come with certificates?",
+          "a": "We hold no certificate data for the Conrader CAC series in-tank check valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for CAC3812 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CAC series in-tank check valve?",
+          "a": "The compression inlet takes the discharge tube and the male NPT outlet screws into the tank. Pipe fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and receivers relate to our [air preparation shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CAC series in-tank check valve?",
+          "a": "Fit the valve at the tank inlet with the flow arrow toward the tank, tighten the compression nut on the tube and drain the tank before removal."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CAC series in-tank check valve differ from its sibling listings?",
+          "a": "The CAC has a compression inlet, while the [CTA series](/p/conrader-cta-series-in-tank-check-valves) has a female NPT inlet and the CTD adds more compression sizes. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CAC series in-tank check valve made and which HS code applies?",
+          "a": "The recorded country of origin for the Conrader CAC series is United States. No HS code is recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CAC series in-tank check valve in Dubai?",
+          "a": "Yes, the Conrader CAC series in-tank check valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-clb-series-inline-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CLB series inline check valve used for?",
+          "a": "Conrader CLB series inline check valves are brass female-NPT check valves for compressor discharge and air lines, with a PTFE poppet. The listing has 8 part numbers from CLB14 to CLB112-HF, and flows of 12 to 90 SCFM."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CLB series inline check valve part numbers such as CLB34-HF mean?",
+          "a": "The digits are the port size: CLB14 is 1/4 inch, CLB38 is 3/8, CLB12 is 1/2, CLB34 is 3/4, CLB1 is 1 inch and CLB112 is 1-1/2 inch FNPT. An -HF suffix marks the high-flow version, for example CLB34-HF at 60 SCFM and CLB112-HF at 90 SCFM."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CLB series inline check valve come in?",
+          "a": "Sizes run from 1/4 inch to 1-1/2 inch female NPT, five of them listed as 1/4, 3/8, 1/2, 3/4 and 1 inch, plus CLB112 and CLB112-HF. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CLB series inline check valve?",
+          "a": "Choose by line size and flow: CLB112 is 60 SCFM and CLB112-HF is 90 SCFM at the same 1-1/2 inch port; CLB1 has an unloader. Pick the size matching your discharge line."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CLB series inline check valve have?",
+          "a": "The listing gives a maximum temperature of 450°F (about 232°C), mounting horizontal or vertical, and 12 to 90 SCFM. A pressure rating is not confirmed for the CLB series here, so ask us before specifying."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CLB series inline check valve made of?",
+          "a": "The CLB body is brass with a PTFE seal, a glass-filled PTFE poppet and a stainless steel spring. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CLB series inline check valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Conrader CLB series inline check valve. Tell us what documents your project needs, such as a certificate of conformity or origin for CLB34-HF, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CLB series inline check valve?",
+          "a": "Both ports are female NPT, so use male NPT nipples and fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CLB series inline check valve?",
+          "a": "Install it in a horizontal or vertical line with the flow arrow in the flow direction and relieve line pressure before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CLB series inline check valve differ from its sibling listings?",
+          "a": "Unlike the in-tank [CTA series](/p/conrader-cta-series-in-tank-check-valves) the CLB sits inline in the pipe, and the [GV series](/p/conrader-gv-series-inline-cast-bronze-check-valves) is a cast bronze inline type. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CLB series inline check valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481301010. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CLB series inline check valve in Dubai?",
+          "a": "Yes. the Conrader CLB series inline check valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-cls-series-inline-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CLS series inline check valve used for?",
+          "a": "Conrader CLS series inline check valves are compact male-NPT check valves that stop back flow in air lines, rated 9 SCFM. The listing has 5 part numbers: CLS1414, CLSF1414, CLS3838, CLS1412 and CLS3812."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CLS series inline check valve part numbers such as CLS3838 mean?",
+          "a": "The digits are inlet then outlet size: CLS1414 is 1/4 inch by 1/4 inch, CLS3838 is 3/8 inch by 3/8 inch, CLS1412 is 1/4 inch by 1/2 inch and CLS3812 is 3/8 inch by 1/2 inch; CLSF1414 has a female 1/4 inch inlet."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CLS series inline check valve come in?",
+          "a": "Inlet sizes are 1/4 and 3/8 inch and outlets 1/4, 3/8 and 1/2 inch, all male NPT except the female inlet of CLSF1414. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CLS series inline check valve?",
+          "a": "Choose the pair of sizes that matches your line: use CLS1412 or CLS3812 to step up to a 1/2 inch outlet. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CLS series inline check valve have?",
+          "a": "The listing gives 250 psi (about 17 bar) maximum and a flow of 9 SCFM. A temperature rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CLS series inline check valve made of?",
+          "a": "The material of the CLS series is not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CLS series inline check valve come with certificates?",
+          "a": "The listing for the Conrader CLS series inline check valve states no certificates and we do not claim any. Certificate of conformity or origin requests for CLS3838 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CLS series inline check valve?",
+          "a": "Ports are NPT, so use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CLS series inline check valve?",
+          "a": "Fit it with the flow arrow in the flow direction and relieve pressure before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CLS series inline check valve differ from its sibling listings?",
+          "a": "Against the larger [CLB series](/p/conrader-clb-series-inline-check-valves) brass check valves, the CLS is a small 9 SCFM valve. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CLS series inline check valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CLS series inline check valve in Dubai?",
+          "a": "Yes, we stock the Conrader CLS series inline check valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-cmp-series-minimum-pressure-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CMP series minimum pressure check valve used for?",
+          "a": "Conrader CMP series minimum pressure check valves hold air back until inlet pressure reaches a minimum, so a compressor builds pressure before it feeds the line. The listing has 8 part numbers from CMP034A to CMP300A."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CMP series minimum pressure check valve part numbers such as CMP200A-E-BA-H-V mean?",
+          "a": "The digits after CMP give the outlet size and the letter the connection: CMP200A is 2 inch FNPT, CMP200D is 2 inch SAE female, CMP112A is 1-1/2 inch FNPT, CMP114D is 1-1/4 inch SAE female ORB and CMP300A is 3 inch FNPT."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CMP series minimum pressure check valve come in?",
+          "a": "Sizes run from 3/4 inch (CMP034A) through 1-1/4 inch, 1-1/2 inch and 2 inch to 3 inch (CMP300A), in FNPT or SAE female ORB. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CMP series minimum pressure check valve?",
+          "a": "Choose the size to match the oil separator or discharge port, and the minimum setting: rows show 50 to 80 psi on the smaller sizes and 50 to 70 psi on the 2 inch ones."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CMP series minimum pressure check valve have?",
+          "a": "The rows give a minimum opening pressure of 50 to 70 psi (2 inch) or 50 to 80 psi (3 inch, 1-1/2 inch and 1-1/4 inch). Maximum pressure is not recorded here."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CMP series minimum pressure check valve made of?",
+          "a": "The material is not recorded on this listing; ask us for the CMP specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CMP series minimum pressure check valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Conrader CMP series minimum pressure check valve. If your buyer needs paperwork for CMP200A-E-BA-H-V, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CMP series minimum pressure check valve?",
+          "a": "FNPT versions take NPT fittings, and the SAE female ORB versions take SAE O-ring boss fittings. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CMP series minimum pressure check valve?",
+          "a": "Fit it at the separator outlet with the flow arrow downstream, and relieve the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CMP series minimum pressure check valve differ from its sibling listings?",
+          "a": "The CMP holds a minimum pressure, while the [CLB inline check valve](/p/conrader-clb-series-inline-check-valves) is a plain check valve. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CMP series minimum pressure check valve made and which HS code applies?",
+          "a": "For the Conrader CMP series minimum pressure check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CMP series minimum pressure check valve in Dubai?",
+          "a": "Yes. We keep the Conrader CMP series minimum pressure check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-cta-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CTA series in-tank check valve used for?",
+          "a": "Conrader CTA series in-tank check valves have a female NPT inlet and a male NPT outlet and stop an air receiver back-flowing to the compressor. The listing has 9 part numbers, 20 to 90 SCFM, from CTA1212 to CTA34112."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CTA series in-tank check valve part numbers such as CTA3434 mean?",
+          "a": "The digits are inlet then outlet size: CTA1212 is 1/2 inch by 1/2 inch, CTA3434 is 3/4 by 3/4, CTA11 is 1 by 1, CTA114114 is 1-1/4 by 1-1/4, and CTA112112 and CTA34112 are 1-1/2 inch outlet types."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CTA series in-tank check valve come in?",
+          "a": "Flow bands on the rows are 20 SCFM (CTA1212, CTA3812), 30 SCFM (CTA3434), 60 SCFM (CTA11, CTA121, CTA341) and 90 SCFM (CTA114114, CTA112112, CTA34112)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CTA series in-tank check valve?",
+          "a": "Choose the SCFM band at or above the compressor output, then the inlet and outlet sizes that match the discharge line and tank port. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CTA series in-tank check valve have?",
+          "a": "The listing gives 20 to 90 SCFM. A maker pressure and temperature rating is not held for the CTA series here, so we do not state one. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CTA series in-tank check valve made of?",
+          "a": "The material is not recorded on this listing; ask us for the CTA specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CTA series in-tank check valve come with certificates?",
+          "a": "the Conrader CTA series in-tank check valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for CTA3434."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CTA series in-tank check valve?",
+          "a": "The female NPT inlet takes the discharge line and the male NPT outlet screws into the receiver. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CTA series in-tank check valve?",
+          "a": "Fit it at the tank inlet with the flow arrow into the tank, and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CTA series in-tank check valve differ from its sibling listings?",
+          "a": "The CTA has a female NPT inlet; the [CTD series](/p/conrader-ctd-series-in-tank-check-valves) has compression inlets and the [CTF series](/p/conrader-ctf-series-in-tank-check-valves) SAE flare. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CTA series in-tank check valve made and which HS code applies?",
+          "a": "For the Conrader CTA series in-tank check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CTA series in-tank check valve in Dubai?",
+          "a": "Yes, the Conrader CTA series in-tank check valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-ctb-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CTB series in-tank check valve used for?",
+          "a": "Conrader CTB series in-tank check valves are female NPT inlet, male NPT outlet check valves for compressor receivers. The listing has 12 part numbers, 20 to 90 SCFM, such as CTB1412, CTB3812 and CTB11."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CTB series in-tank check valve part numbers such as CTB341 mean?",
+          "a": "The digits are inlet then outlet size: CTB1412 is 1/4 inch in and 1/2 inch out, CTB3812 is 3/8 in and 1/2 out, CTB11 is 1 inch by 1 inch, CTB1114 is 1 inch in and 1-1/4 inch out and CTB114114 is 1-1/4 inch by 1-1/4 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CTB series in-tank check valve come in?",
+          "a": "Inlets run from 1/4 inch to 1-1/4 inch and outlets from 1/2 inch to 1-1/4 inch, in flow bands of 20, 30, 60 and 90 SCFM. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CTB series in-tank check valve?",
+          "a": "Choose by compressor output first, then match inlet and outlet sizes to the tank and discharge line; CTB121 stays at 20 SCFM despite its 1 inch outlet, so check the row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CTB series in-tank check valve have?",
+          "a": "Rows show 20 to 90 SCFM. Some rows carry a 500 psi figure, but the listing does not confirm it for all parts, so ask us before specifying pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CTB series in-tank check valve made of?",
+          "a": "The material is not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CTB series in-tank check valve come with certificates?",
+          "a": "We hold no certificate data for the Conrader CTB series in-tank check valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for CTB341 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CTB series in-tank check valve?",
+          "a": "Use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) on the female NPT inlet and male NPT outlet. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CTB series in-tank check valve?",
+          "a": "For the Conrader CTB series in-tank check valve: fit it at the tank inlet with the flow arrow into the tank, and drain the tank before removal."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CTB series in-tank check valve differ from its sibling listings?",
+          "a": "The CTB is a female NPT type like the [CTA series](/p/conrader-cta-series-in-tank-check-valves), with extra small sizes such as CTB1412. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CTB series in-tank check valve made and which HS code applies?",
+          "a": "For the Conrader CTB series in-tank check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CTB series in-tank check valve in Dubai?",
+          "a": "Yes. the Conrader CTB series in-tank check valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-ctd-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CTD series in-tank check valve used for?",
+          "a": "Conrader CTD series in-tank check valves have a compression inlet for tube and a male NPT outlet, and sit at the receiver inlet of a compressor. The listing has 9 part numbers from CTD3838 (15 SCFM) to CTD341 (60 SCFM)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CTD series in-tank check valve part numbers such as CTD3412 mean?",
+          "a": "The digits are inlet then outlet size: CTD3838 is 3/8 inch compression in and 3/8 inch out, CTD5812 is 5/8 inch in and 1/2 inch out, CTD1234 is 1/2 in and 3/4 out, and CTD341 is 3/4 in and 1 inch out."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CTD series in-tank check valve come in?",
+          "a": "Compression inlets are 3/8, 5/16, 5/8, 1/2 and 3/4 inch with outlets of 3/8, 1/2, 3/4 and 1 inch, at 15 to 60 SCFM. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CTD series in-tank check valve?",
+          "a": "Pick the compression size that matches your discharge tube and the outlet that matches the tank port. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CTD series in-tank check valve have?",
+          "a": "Rows show 15 to 60 SCFM and four rows give 500 psi (about 34 bar); we do not confirm the pressure rating of the whole listing, so ask us before specifying."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CTD series in-tank check valve made of?",
+          "a": "For the Conrader CTD series in-tank check valve: the material is not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CTD series in-tank check valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Conrader CTD series in-tank check valve. Tell us what documents your project needs, such as a certificate of conformity or origin for CTD3412, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CTD series in-tank check valve?",
+          "a": "The compression inlet takes tube and the male NPT outlet screws into the tank. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CTD series in-tank check valve?",
+          "a": "Tighten the compression nut on the tube, fit the outlet at the tank inlet with the arrow into the tank, and drain the tank before removal."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CTD series in-tank check valve differ from its sibling listings?",
+          "a": "The CTD has compression inlets while the [CTA series](/p/conrader-cta-series-in-tank-check-valves) has female NPT and the [CTF series](/p/conrader-ctf-series-in-tank-check-valves) SAE flare. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CTD series in-tank check valve made and which HS code applies?",
+          "a": "For the Conrader CTD series in-tank check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CTD series in-tank check valve in Dubai?",
+          "a": "Yes, we stock the Conrader CTD series in-tank check valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-ctf-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CTF series in-tank check valve used for?",
+          "a": "Conrader CTF series in-tank check valves have an SAE flare inlet and male NPT outlet for compressor receivers. The listing has 3 part numbers rated 20 to 30 SCFM: CTF1212, CTF3434 and CTF5834."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CTF series in-tank check valve part numbers such as CTF5834 mean?",
+          "a": "The digits are inlet then outlet size: CTF1212 is 1/2 inch SAE flare in and 1/2 inch out (20 SCFM), CTF3434 is 3/4 by 3/4 (30 SCFM) and CTF5834 is 5/8 in and 3/4 out (30 SCFM)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CTF series in-tank check valve come in?",
+          "a": "There are three sizes: 1/2, 3/4 and 5/8 inch SAE flare inlets with 1/2 or 3/4 inch male NPT outlets. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CTF series in-tank check valve?",
+          "a": "Choose by compressor output and the flare size of the discharge tube. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CTF series in-tank check valve have?",
+          "a": "Rows give 20 and 30 SCFM. A pressure and temperature rating is not held for the CTF series here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CTF series in-tank check valve made of?",
+          "a": "For the Conrader CTF series in-tank check valve: the material is not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CTF series in-tank check valve come with certificates?",
+          "a": "The listing for the Conrader CTF series in-tank check valve states no certificates and we do not claim any. Certificate of conformity or origin requests for CTF5834 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CTF series in-tank check valve?",
+          "a": "The SAE flare inlet takes a flared tube nut and the male NPT outlet screws into the tank. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CTF series in-tank check valve?",
+          "a": "Fit the outlet at the tank inlet with the arrow into the tank, seat the flare properly, and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CTF series in-tank check valve differ from its sibling listings?",
+          "a": "The CTF is the flare version; the [CTD series](/p/conrader-ctd-series-in-tank-check-valves) uses compression inlets and the [CTG series](/p/conrader-ctg-series-in-tank-check-valves) is brass. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CTF series in-tank check valve made and which HS code applies?",
+          "a": "For the Conrader CTF series in-tank check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CTF series in-tank check valve in Dubai?",
+          "a": "Yes. We keep the Conrader CTF series in-tank check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-ctg-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CTG series in-tank check valve used for?",
+          "a": "Conrader CTG series in-tank check valves are brass check valves with a glass-filled PTFE poppet, three sizes: CTG1212, CTG3434 and CTG5834."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CTG series in-tank check valve part numbers such as CTG5834 mean?",
+          "a": "The digits are inlet then outlet size: CTG1212 is 1/2 by 1/2, CTG3434 is 3/4 by 3/4 and CTG5834 is 5/8 by 3/4 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CTG series in-tank check valve come in?",
+          "a": "There are three sizes, with ports of 1/2, 3/4 and 5/8 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CTG series in-tank check valve?",
+          "a": "Choose by the discharge tube or port size at the tank. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CTG series in-tank check valve have?",
+          "a": "The listing gives a maximum temperature of 450°F (about 232°C). A maker pressure is shown as 500 psi but is not confirmed here, so ask us before specifying pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CTG series in-tank check valve made of?",
+          "a": "The CTG body is brass with a glass-filled PTFE poppet. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CTG series in-tank check valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Conrader CTG series in-tank check valve. If your buyer needs paperwork for CTG5834, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CTG series in-tank check valve?",
+          "a": "The ports are sized in inches; use matching fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CTG series in-tank check valve?",
+          "a": "Fit it with the arrow into the tank and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CTG series in-tank check valve differ from its sibling listings?",
+          "a": "Unlike the [CTF series](/p/conrader-ctf-series-in-tank-check-valves) with flare inlets, the CTG is a brass type with a glass-filled PTFE poppet. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CTG series in-tank check valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481309000. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CTG series in-tank check valve in Dubai?",
+          "a": "Yes, the Conrader CTG series in-tank check valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-ctl-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CTL series in-tank check valve used for?",
+          "a": "Conrader CTL series in-tank check valves are female-NPT (B) and compression (D) inlet check valves for compressor receivers. The listing has 18 part numbers from 15 SCFM to 150 SCFM, such as CTLB3434 and CTLD3412."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CTL series in-tank check valve part numbers such as CTLB3434 mean?",
+          "a": "After CTL, B marks a female NPT inlet and D a compression inlet, then inlet and outlet size: CTLB3434 is 3/4 inch FNPT in and 3/4 inch out (30 SCFM), CTLD3412 is 3/4 inch compression in and 1/2 inch out (20 SCFM)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CTL series in-tank check valve come in?",
+          "a": "Flow bands run 15, 20, 30, 60, 130 and 150 SCFM, with ports from 3/8 inch up to 1-1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CTL series in-tank check valve?",
+          "a": "Choose B for a threaded inlet and D for a compression inlet, then the flow band at or above compressor output. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CTL series in-tank check valve have?",
+          "a": "Rows show 15 to 150 SCFM. A pressure and temperature rating is not held here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CTL series in-tank check valve made of?",
+          "a": "For the Conrader CTL series in-tank check valve: the material is not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CTL series in-tank check valve come with certificates?",
+          "a": "the Conrader CTL series in-tank check valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for CTLB3434."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CTL series in-tank check valve?",
+          "a": "Use NPT fittings or tube from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) at the inlet and the male NPT outlet at the tank. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CTL series in-tank check valve?",
+          "a": "For the Conrader CTL series in-tank check valve: fit it with the arrow into the tank and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CTL series in-tank check valve differ from its sibling listings?",
+          "a": "The CTL combines the B and D inlet styles in one list, where the [CTA series](/p/conrader-cta-series-in-tank-check-valves) is FNPT only. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CTL series in-tank check valve made and which HS code applies?",
+          "a": "For the Conrader CTL series in-tank check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CTL series in-tank check valve in Dubai?",
+          "a": "Yes. the Conrader CTL series in-tank check valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-gv-series-inline-cast-bronze-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader GV series inline cast bronze check valve used for?",
+          "a": "Conrader GV series inline cast bronze check valves are brass female-NPT check valves from 1/8 to 2 inch with flows of 12 to 220 SCFM. The listing has 9 part numbers, from GV18 to GV2."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader GV series inline cast bronze check valve part numbers such as GV34 mean?",
+          "a": "The digits are the NPT port size: GV18 is 1/8 inch, GV14 is 1/4, GV38 is 3/8, GV12 is 1/2, GV34 is 3/4, GV1 is 1 inch, GV114 is 1-1/4, GV112 is 1-1/2 and GV2 is 2 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader GV series inline cast bronze check valve come in?",
+          "a": "Nine sizes from 1/8 inch to 2 inch female NPT, with GV1 rated 115 SCFM and GV2 220 SCFM. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader GV series inline cast bronze check valve?",
+          "a": "Pick the size matching your pipe and flow demand. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader GV series inline cast bronze check valve have?",
+          "a": "The listing gives 250 psi (about 17 bar) maximum, up to 450°F (about 232°C), horizontal mounting. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader GV series inline cast bronze check valve made of?",
+          "a": "The body is brass with a PTFE seal and a stainless steel spring. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader GV series inline cast bronze check valve come with certificates?",
+          "a": "We hold no certificate data for the Conrader GV series inline cast bronze check valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for GV34 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader GV series inline cast bronze check valve?",
+          "a": "Ports are female NPT, so use male NPT nipples from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader GV series inline cast bronze check valve?",
+          "a": "Mount it horizontally with the flow arrow downstream and relieve pressure before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader GV series inline cast bronze check valve differ from its sibling listings?",
+          "a": "Against the [CLB series](/p/conrader-clb-series-inline-check-valves) the GV is a cast bronze body rated 250 psi. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader GV series inline cast bronze check valve made and which HS code applies?",
+          "a": "For the Conrader GV series inline cast bronze check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader GV series inline cast bronze check valve in Dubai?",
+          "a": "Yes, we stock the Conrader GV series inline cast bronze check valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-n-series-pilot-unloader-check-valves-electrical-driven",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader N series electrical pilot unloader check valve used for?",
+          "a": "Conrader N series electrical pilot unloader check valves combine a check valve with an unloader port that vents the compressor head when it stops, for electric-driven compressors up to 30 SCFM. The listing has 39 part numbers, such as NDC-51 and NDC-57."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader N series electrical pilot unloader check valve part numbers such as NDC-51 mean?",
+          "a": "The NDC numbers are model numbers, and the row text gives the inlet and outlet type, such as NDC-43 with a 1/2 inch inlet and 3/8 inch male NPT outlet and NDC-49 with a 1/2 inch -8 JIC 37 degree top."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader N series electrical pilot unloader check valve come in?",
+          "a": "Inlets run from 1/4 inch to 3/4 inch in FNPT, flare and JIC types, with outlets of 1/4, 3/8 and 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader N series electrical pilot unloader check valve?",
+          "a": "Match the compressor's discharge connection (FNPT, SAE flare or JIC) and the tank outlet; send us the connection and we will pick the NDC number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader N series electrical pilot unloader check valve have?",
+          "a": "The listing gives a rated flow of 0-30 SCFM. A pressure and temperature rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader N series electrical pilot unloader check valve made of?",
+          "a": "For the Conrader N series electrical pilot unloader check valve: the material is not recorded on this listing; ask us for the specification."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader N series electrical pilot unloader check valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Conrader N series electrical pilot unloader check valve. Tell us what documents your project needs, such as a certificate of conformity or origin for NDC-51, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader N series electrical pilot unloader check valve?",
+          "a": "Ports include FNPT, SAE flare and JIC, so use matching fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader N series electrical pilot unloader check valve?",
+          "a": "Fit it at the receiver inlet with the unloader line connected to the compressor head, and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader N series electrical pilot unloader check valve differ from its sibling listings?",
+          "a": "The N series is electric-driven, while the [NS series](/p/conrader-ns-series-pilot-unloader-check-valves-electric-driven) is a similar electric type and the [NL series](/p/conrader-nl-series-pilot-unloader-check-valves) is rated to 60 SCFM. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader N series electrical pilot unloader check valve made and which HS code applies?",
+          "a": "For the Conrader N series electrical pilot unloader check valve: the recorded country of origin is United States. No HS code is recorded."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader N series electrical pilot unloader check valve in Dubai?",
+          "a": "Yes. We keep the Conrader N series electrical pilot unloader check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-nl-series-pilot-unloader-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader NL series pilot unloader check valve used for?",
+          "a": "Conrader NL series pilot unloader check valves are larger unloader check valves rated to 60 SCFM, with 3/4 and 1 inch connections. The listing has 40 part numbers such as NLG-1, NLDC-11 and NLDC-14."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader NL series pilot unloader check valve part numbers such as NLDC-14 mean?",
+          "a": "The NLG and NLDC numbers are model numbers, and the row text gives the connection: NLDC-14 has a 1 inch FNPT inlet and 1 inch FNPT outlet, and NLG-3 has a 3/4 inch inlet with an inverted flare."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader NL series pilot unloader check valve come in?",
+          "a": "Inlets of 3/4 or 1 inch and outlets of 3/4 or 1 inch, in FNPT, MNPT or inverted-flare, rated up to 60 SCFM. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader NL series pilot unloader check valve?",
+          "a": "Match the inlet connection and outlet gender to the compressor and the tank, then confirm the 60 SCFM rating covers the pump. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader NL series pilot unloader check valve have?",
+          "a": "Rows show up to 60 SCFM. A pressure and temperature rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader NL series pilot unloader check valve made of?",
+          "a": "For the Conrader NL series pilot unloader check valve: the material is not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader NL series pilot unloader check valve come with certificates?",
+          "a": "The listing for the Conrader NL series pilot unloader check valve states no certificates and we do not claim any. Certificate of conformity or origin requests for NLDC-14 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader NL series pilot unloader check valve?",
+          "a": "Use NPT or flare fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) to match each row. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader NL series pilot unloader check valve?",
+          "a": "Fit it at the receiver inlet, connect the unloader line, and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader NL series pilot unloader check valve differ from its sibling listings?",
+          "a": "The NL series handles up to 60 SCFM, against 30 SCFM for the [NS series](/p/conrader-ns-series-pilot-unloader-check-valves-electric-driven) and [N series](/p/conrader-n-series-pilot-unloader-check-valves-electrical-driven). Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader NL series pilot unloader check valve made and which HS code applies?",
+          "a": "For the Conrader NL series pilot unloader check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader NL series pilot unloader check valve in Dubai?",
+          "a": "Yes, the Conrader NL series pilot unloader check valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-nr-series-pilot-unloader-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader NR series pilot unloader check valve used for?",
+          "a": "Conrader NR series pilot unloader check valves are small unloader check valves rated 14 SCFM. The listing has 4 part numbers: NRP-A-1, NRP-A-2, NRP-A-3 and NRP-A-6."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader NR series pilot unloader check valve part numbers such as NRP-A-1 mean?",
+          "a": "The NRP-A numbers are model numbers: NRP-A-1 is 3/8 inch FNPT top with a 1/2 inch MNPT outlet, NRP-A-2 is 3/8 inch FNPT top with a 3/8 inch MNPT outlet, NRP-A-3 has a 1/2 inch SAE 45 degree flare inlet and 1/2 inch MNPT outlet."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader NR series pilot unloader check valve come in?",
+          "a": "Four variants: 3/8 inch FNPT or 1/2 inch SAE flare inlets with 3/8 or 1/2 inch MNPT outlets. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader NR series pilot unloader check valve?",
+          "a": "Choose the inlet (FNPT or flare) and outlet size matching the compressor. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader NR series pilot unloader check valve have?",
+          "a": "All rows show 14 SCFM. A pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader NR series pilot unloader check valve made of?",
+          "a": "For the Conrader NR series pilot unloader check valve: the material is not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader NR series pilot unloader check valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Conrader NR series pilot unloader check valve. If your buyer needs paperwork for NRP-A-1, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader NR series pilot unloader check valve?",
+          "a": "Use NPT or flare fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader NR series pilot unloader check valve?",
+          "a": "Fit it at the tank inlet, connect the unloader line, and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader NR series pilot unloader check valve differ from its sibling listings?",
+          "a": "The NR is a small 14 SCFM type; the [NL series](/p/conrader-nl-series-pilot-unloader-check-valves) handles up to 60 SCFM. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader NR series pilot unloader check valve made and which HS code applies?",
+          "a": "For the Conrader NR series pilot unloader check valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader NR series pilot unloader check valve in Dubai?",
+          "a": "Yes. the Conrader NR series pilot unloader check valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-ns-series-pilot-unloader-check-valves-electric-driven",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader NS series electric pilot unloader check valve used for?",
+          "a": "Conrader NS series electric pilot unloader check valves are check valves with an unloader port for electric-driven compressors up to 30 SCFM. The listing has 42 part numbers such as NSDC-49 and NSDC-26."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader NS series electric pilot unloader check valve part numbers such as NSDC-49 mean?",
+          "a": "The NSDC numbers are model numbers; the row text gives the connection, such as NSDC-49 with a 1/4 inch FNPT top and 1/4 inch outlet, and NSDC-26 with a 5/8 inch inlet and 3/8 inch male NPT outlet."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader NS series electric pilot unloader check valve come in?",
+          "a": "Inlets include 1/4, 3/8, 1/2 and 5/8 inch in FNPT, flare, JIC and tube-lock types with 3/8 and 1/2 inch outlets. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader NS series electric pilot unloader check valve?",
+          "a": "Match the compressor discharge connection and the tank port to find the NSDC number. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader NS series electric pilot unloader check valve have?",
+          "a": "The listing gives 0-30 SCFM; a pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader NS series electric pilot unloader check valve made of?",
+          "a": "For the Conrader NS series electric pilot unloader check valve: the material is not recorded on this listing; ask us for the specification."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader NS series electric pilot unloader check valve come with certificates?",
+          "a": "the Conrader NS series electric pilot unloader check valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for NSDC-49."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader NS series electric pilot unloader check valve?",
+          "a": "Use NPT, flare or JIC fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader NS series electric pilot unloader check valve?",
+          "a": "Fit it at the receiver inlet, connect the unloader line and drain the tank before removal. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader NS series electric pilot unloader check valve differ from its sibling listings?",
+          "a": "The NS series is similar to the [N series](/p/conrader-n-series-pilot-unloader-check-valves-electrical-driven) but has more variants and a Tubelok inlet. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader NS series electric pilot unloader check valve made and which HS code applies?",
+          "a": "For the Conrader NS series electric pilot unloader check valve: the recorded country of origin is United States. No HS code is recorded."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader NS series electric pilot unloader check valve in Dubai?",
+          "a": "Yes, we stock the Conrader NS series electric pilot unloader check valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

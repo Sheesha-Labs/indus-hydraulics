@@ -1,0 +1,141 @@
+{
+  "family": "wheel-drives",
+  "extraFacts": [
+    {
+      "fact": "Dinamic Oil EH/EW wheel drives: 3,950 to 24,000 Nm, ratio 11 to 135, 48 V and 96 V DC electric versions. GR wheel drives: 470 to 1,600 Nm continuous, ratios 5.23 and 6.2.",
+      "source": "Indus Hydraulics listings for the Dinamic Oil wheel drives"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dinamic-oil-eh-ew-planetary-wheel-drives",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil EH and EW Planetary Wheel Drives used for?",
+          "a": "The Dinamic Oil EH and EW Planetary Wheel Drives are planetary gearboxes for a hydraulic or electric motor, with a wheel flange on the rotating housing and bearings that carry the machine's weight on that wheel, up to 8,000 kg on the EH models. They serve skid-steer loaders, scissor and boom lifts, container AGVs and other self-propelled machines, and suit track drives."
+        },
+        {
+          "slot": "B",
+          "q": "What does a model number such as EW 702 mean?",
+          "a": "The last digit is the number of planetary stages: EW 702 is the EW 700 frame with two stages, EW 703 with three, and in the size table EH 212 is 2-stage and EH 213 is 3-stage. The table lists 10 models."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and torques do the Dinamic Oil EH and EW Planetary Wheel Drives cover?",
+          "a": "Six frames cover maximum output torques from 3,950 Nm (EH 210) to 24,000 Nm (EW 2500), with ratios of 11 to 135:1, 2 or 3 stages and weights of 35 to 145 kg. EH frames come in S, SC and PD output versions, and the EW range has a single version."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between EH and EW wheel drives?",
+          "a": "Both are planetary wheel drives for hydraulic or electric motors. The EH range (EH 210, EH 240) comes in S, SC and PD output versions with an optional mechanical release, while the newer EW range (EW 700 to EW 2500) has a single version with the mechanical release as standard."
+        },
+        {
+          "slot": "E",
+          "q": "What torque rating do the Dinamic Oil EH and EW Planetary Wheel Drives have?",
+          "a": "The table gives each frame's maximum output torque T2max: 3,950 Nm on EH 212 and EH 213, 5,600 Nm on EH 242 and 243, 7,000 Nm on EW 702 and 703, 10,000 Nm on EW 1002 and 1003, 17,500 Nm on EW 2003 and 24,000 Nm on EW 2503."
+        },
+        {
+          "slot": "F",
+          "q": "Can the Dinamic Oil EH and EW Planetary Wheel Drives be battery-electric?",
+          "a": "Yes. The EHe and EWe versions carry a permanent-magnet synchronous (PMSM) motor for 48 V DC or 96 V DC battery machines, with a built-in negative electric brake, so a battery machine needs no hydraulic circuit for travel. Other voltages are made on request."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the Dinamic Oil EH and EW Planetary Wheel Drives?",
+          "a": "The listing states no product standard or class approval. Ask on the enquiry for the documents your machine needs and we confirm what Dinamic Oil can supply with the manufacturer's documentation."
+        },
+        {
+          "slot": "H",
+          "q": "What motors and brakes fit the Dinamic Oil EH and EW Planetary Wheel Drives?",
+          "a": "Hydraulic versions take orbital or axial piston motors, and brakes and control valves are available as accessories; the EHe and EWe use a built-in electric brake. Related items are on the [gearbox and winch accessories](/c/gearbox-winch-accessories) and the [wheel drives](/c/wheel-drives)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I run and service the Dinamic Oil EH and EW Planetary Wheel Drives in Gulf heat?",
+          "a": "Fill with EP gear oil, ISO VG 220 to 320 before start-up and recheck the level after a few minutes' running; change the oil after the first 150 operating hours, then at the manual's interval or at least every 2 years. Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. See [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the EH and EW drives compare with the GR wheel drives?",
+          "a": "The EH and EW drives take separate motors and run 3,950 to 24,000 Nm, while the [Dinamic Oil GR Wheel Drives with Integrated Orbital Motor — 470 to 1,600 Nm](/p/dinamic-oil-gr-wheel-drives-with-orbital-motor) are a single-ratio hub with a built-in orbital motor at 470 to 1,600 Nm continuous. [Our wheel drive selection guide](/blog/wheel-drive-selection-guide) helps you choose."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil EH and EW Planetary Wheel Drives genuine Dinamic Oil units and can you export them?",
+          "a": "For the Dinamic Oil EH and EW Planetary Wheel Drives — 3,950 to 24,000 Nm: yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil EH and EW Planetary Wheel Drives in stock in Dubai?",
+          "a": "Yes. Dinamic Oil EH and EW Planetary Wheel Drives sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-gr-wheel-drives-with-orbital-motor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor used for?",
+          "a": "The Dinamic Oil GR Wheel Drives with Integrated Orbital Motor combine a single-ratio planetary gearbox with an orbital hydraulic motor in one compact hub: the wheel bolts to the output flange and the unit bolts to the chassis. They suit light self-propelled machines such as scissor and boom lifts, small loaders, AGVs and vineyard straddle robots."
+        },
+        {
+          "slot": "B",
+          "q": "What does a code like GR80-MR100 mean?",
+          "a": "GR80 is the gearbox frame and MR100 the orbital motor fitted, about 100 cm³/rev. The motor sets the torque per bar and the top speed for a given oil flow; in the size table the total displacement of GR80-MR100 is 522 cm³ (motor displacement times the 5.23 ratio)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and motor variants do the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor cover?",
+          "a": "There are 16 variants on two frames: GR 80 (ratio 5.23) and GR 200 (ratio 6.2), each with a choice of motor displacement from MR50 to MR250 or MR375. Continuous output torque runs 470 to 1,600 Nm and peak torque up to 2,500 Nm."
+        },
+        {
+          "slot": "D",
+          "q": "Which torque do I select the GR wheel drive on?",
+          "a": "Use the continuous torque for steady travel and the peak torque for starting and climbing. Size the drive on tractive effort at the wheel: rolling resistance plus gradient times the machine weight on that wheel, times the wheel's rolling radius; [our wheel drive selection guide](/blog/wheel-drive-selection-guide) covers the method."
+        },
+        {
+          "slot": "E",
+          "q": "What torque and speed do the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor deliver?",
+          "a": "Continuous output torque runs from 470 Nm on GR80-MR50 to 1,600 Nm on the larger GR 200 variants, and peak torque to 2,500 Nm. Maximum output speed falls with motor size, from 115 rpm on GR80-MR50 at 30 L/min."
+        },
+        {
+          "slot": "F",
+          "q": "What oil does the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor need?",
+          "a": "The gearbox runs in an oil bath of EP gear oil, ISO VG 220 to 320. Fill before start-up, recheck the level after a few minutes' running, and change the oil after the first 150 operating hours, then at the manual's interval or at least every 2 years."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor?",
+          "a": "The listing states no product standard or class approval, and the brake is not published. Ask on the enquiry for what your machine needs and we confirm it with Dinamic Oil."
+        },
+        {
+          "slot": "H",
+          "q": "Can a vehicle fitted with the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor be towed?",
+          "a": "Yes, with the optional mechanical release, which disconnects the drive so the wheel turns freely. The motor's pressure drop for each torque rating and the flange and port dimensions are in Dinamic Oil's wheel and track drive catalogue; see the [gearbox and winch accessories](/c/gearbox-winch-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I run the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor in Gulf heat?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. See [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the GR wheel drives compare with the EH and EW range?",
+          "a": "The GR is a single-ratio hub with a built-in orbital motor at 470 to 1,600 Nm, while the [Dinamic Oil EH and EW Planetary Wheel Drives — 3,950 to 24,000 Nm](/p/dinamic-oil-eh-ew-planetary-wheel-drives) take separate hydraulic or 48/96 V electric motors at 3,950 to 24,000 Nm."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor genuine Dinamic Oil units and can you export them?",
+          "a": "For the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor — 470 to 1,600 Nm: yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil GR Wheel Drives with Integrated Orbital Motor in stock in Dubai?",
+          "a": "Yes, Dinamic Oil GR Wheel Drives with Integrated Orbital Motor is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

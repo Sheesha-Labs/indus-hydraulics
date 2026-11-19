@@ -1,0 +1,1051 @@
+{
+  "family": "orb-adapters-01",
+  "extraFacts": [
+    {
+      "fact": "SAE J1926 / ISO 11926 is the O-ring boss port: a straight UN/UNF thread with an O-ring under the hex shoulder that makes the seal; the thread only holds the fitting.",
+      "source": "SAE J1926 / ISO 11926; Indus Steel ORB listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "steel-orb-female-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Female Coupling used for?",
+          "a": "The Steel ORB Female Coupling is a straight coupling in forged carbon steel with an SAE O-ring boss (ORB) (female) end and a SAE O-ring boss (ORB) (female) end. It joins two male O-ring boss ends through a short straight body, with an ORB female thread at each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6425-08-08 on the Steel ORB Female Coupling?",
+          "a": "Every part number starts IH-ST-6425 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6425-08-08 is 1/2\" ORB (3/4-16) by 1/2\" ORB (3/4-16); IH-ST-6425-10-10 is 5/8\" ORB (7/8-14) by 5/8\" ORB (7/8-14); IH-ST-6425-12-12 is 3/4\" ORB (1-1/16-12) by 3/4\" ORB (1-1/16-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Female Coupling come in?",
+          "a": "The Steel ORB Female Coupling has 3 part numbers, with the O-ring boss end from 1/2\" to 3/4\" (3/4-16 to 1-1/16-12) and the other end SAE O-ring boss (ORB), 1/2\" to 3/4\" (3/4-16 to 1-1/16-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Female Coupling to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/2\" ORB (3/4-16), 5/8\" ORB (7/8-14) and 3/4\" ORB (1-1/16-12). Measure the port thread or quote the part number and we confirm the size. The three part numbers cover 1/2\", 5/8\" and 3/4\" ORB, with the same size at both ends."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Female Coupling rated for?",
+          "a": "For the Steel ORB Female Coupling, the manufacturer's SAE J514 table rates the O-ring boss end from 4,500 psi in the smallest sizes of this listing down to 3,500 psi at the largest. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Female Coupling made of, and is there a stainless version?",
+          "a": "The Steel ORB Female Coupling is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Female Coupling; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Female Coupling follow?",
+          "a": "On the Steel ORB Female Coupling, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6425-08-08, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Female Coupling connect to?",
+          "a": "Both ends are female ORB, so it takes two male ORB ends, such as the male stud on a [Steel ORB Male × ORB Female Reducer / Expander](/p/steel-orb-male-x-orb-female-reducer-expander). Replacement O-rings are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Female Coupling without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Both mating male ends must carry their own O-ring, since a female coupling has none."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker part numbers match the Steel ORB Female Coupling?",
+          "a": "The cross-reference list gives Parker equivalents for the Steel ORB Female Coupling, all marked as direct matches. The size table lists a Parker number for 2 of the 3 Indus part numbers, for example IH-ST-6425-08-08 against Parker 8 G5HG5; IH-ST-6425-12-12 against Parker 12 G5HG5. Other listed numbers include Parker 12 G5HG5; Parker 8 G5HG5. Check the row for your size before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Female Coupling differ from the Steel ORB Male × ORB Female Reducer / Expander?",
+          "a": "A coupling has two female ends at one size each, while the [Steel ORB Male × ORB Female Reducer / Expander](/p/steel-orb-male-x-orb-female-reducer-expander) has a male end and a female end and changes size. Use the coupling to join two male ends of the same size."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Female Coupling in Dubai?",
+          "a": "Yes. We keep the Steel ORB Female Coupling in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-female-x-nptf-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Female × NPTF Male Adapter used for?",
+          "a": "The Steel ORB Female × NPTF Male Adapter is a straight adapter in forged carbon steel with an SAE O-ring boss (ORB) (female) end and a NPTF (Dryseal) (male) end. It converts an SAE O-ring boss female port to a male NPTF pipe thread, so a pipe-threaded part fits a boss connection."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6404-04-02 on the Steel ORB Female × NPTF Male Adapter?",
+          "a": "Every part number starts IH-ST-6404 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6404-04-02 is 1/4\" ORB (7/16-20) by 1/8\" NPTF (1/8-27); IH-ST-6404-08-08 is 1/2\" ORB (3/4-16) by 1/2\" NPTF (1/2-14); IH-ST-6404-24-24 is 1-1/2\" ORB (1-7/8-12) by 1-1/2\" NPTF (1-1/2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Female × NPTF Male Adapter come in?",
+          "a": "The Steel ORB Female × NPTF Male Adapter has 18 part numbers, with the O-ring boss end from 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and the other end NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Female × NPTF Male Adapter to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 1\" ORB (1-5/16-12) and 1-1/2\" ORB (1-7/8-12). Measure the port thread or quote the part number and we confirm the size. The 18 part numbers pair ORB sizes from 1/4\" to 1-1/2\" with NPTF sizes from 1/8\" to 1-1/2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Female × NPTF Male Adapter rated for?",
+          "a": "For the Steel ORB Female × NPTF Male Adapter, the manufacturer's SAE J514 table rates the O-ring boss end from 5,000 psi in the smallest sizes of this listing down to 2,000 psi at the largest. On pipe-thread ends the same table gives 5,000 psi at the small end falling to 1,000 psi, so the pipe end can be the limit. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Female × NPTF Male Adapter made of, and is there a stainless version?",
+          "a": "The Steel ORB Female × NPTF Male Adapter is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Female × NPT Male Connector; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Female × NPTF Male Adapter follow?",
+          "a": "On the Steel ORB Female × NPTF Male Adapter, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6404-04-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Female × NPTF Male Adapter connect to?",
+          "a": "The female ORB end takes a male ORB stud and the male NPTF end screws into an NPTF port; for the opposite arrangement see the [Steel ORB Male × NPTF Male Adapter](/p/steel-orb-male-x-nptf-male-adapter). More pipe-thread parts are in the [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Female × NPTF Male Adapter without leaking?",
+          "a": "Seal the NPTF thread with sealant as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) explains, and fit the male ORB mate with its O-ring in place. Avoid stacking several adapters, as the [adapter stacking guide](/blog/stacking-hydraulic-adapters) warns."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker part numbers match the Steel ORB Female × NPTF Male Adapter?",
+          "a": "The cross-reference list gives Parker equivalents for the Steel ORB Female × NPTF Male Adapter, all marked as direct matches. The size table lists a Parker number for 6 of the 18 Indus part numbers, for example IH-ST-6404-04-04 against Parker 1/4-4 FHG5; IH-ST-6404-06-06 against Parker 3/8-6 FHG5; IH-ST-6404-08-08 against Parker 1/2-8 FHG5. Other listed numbers include Parker 1 1/4-20 FHG5; Parker 1-16 FHG5. Check the row for your size before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Female × NPTF Male Adapter differ from the Steel ORB Male × NPTF Male Adapter?",
+          "a": "This adapter has the female ORB end, while the [Steel ORB Male × NPTF Male Adapter](/p/steel-orb-male-x-nptf-male-adapter) has the male ORB end. Choose by whether the port you are fitting to has a male or a female O-ring boss thread."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Female × NPTF Male Adapter in Dubai?",
+          "a": "Yes, the Steel ORB Female × NPTF Male Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-hex-head-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Hex Head Plug used for?",
+          "a": "The Steel ORB Hex Head Plug is a plug in forged carbon steel with a SAE O-ring boss (ORB) (male) end. It closes a male-threaded SAE O-ring boss port on a manifold, pump or valve, with an external hex head to drive it."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6408-02 on the Steel ORB Hex Head Plug?",
+          "a": "Every part number starts IH-ST-6408 and ends in a two-digit code that is the size in sixteenths of an inch. For example IH-ST-6408-02 is 1/8\" ORB (5/16-24); IH-ST-6408-10 is 5/8\" ORB (7/8-14); IH-ST-6408-32 is 2\" ORB (2-1/2-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Hex Head Plug come in?",
+          "a": "The Steel ORB Hex Head Plug has 13 part numbers, with the O-ring boss end from 1/8\" to 2\" (5/16-24 to 2-1/2-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Hex Head Plug to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/8\" ORB (5/16-24), 3/8\" ORB (9/16-18), 7/8\" ORB (1-3/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 13 part numbers run from 1/8\" ORB (5/16-24) to 2\" ORB (2-1/2-12)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Hex Head Plug rated for?",
+          "a": "For the Steel ORB Hex Head Plug, the manufacturer's SAE J514 table rates the O-ring boss end from 5,000 psi in the smallest sizes of this listing down to 1,500 psi at the largest. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Hex Head Plug made of, and is there a stainless version?",
+          "a": "The Steel ORB Hex Head Plug is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Hex Head Plug; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Hex Head Plug follow?",
+          "a": "On the Steel ORB Hex Head Plug, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6408-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Hex Head Plug connect to?",
+          "a": "The male ORB thread screws into a female O-ring boss port. For a socket drive instead of an external hex, use the [Steel ORB Hex Socket Plug](/p/steel-orb-hex-socket-plug)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Hex Head Plug without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Use a spanner on the hex head; do not over-tighten, since the O-ring, not torque, does the sealing."
+        },
+        {
+          "slot": "C",
+          "q": "Which Aeroquip, Parker, SAE and SSP part numbers match the Steel ORB Hex Head Plug?",
+          "a": "The cross-reference list gives Aeroquip, Parker, SAE and SSP equivalents for the Steel ORB Hex Head Plug, all marked as direct matches. The size table lists a Parker number for 13 of the 13 Indus part numbers, for example IH-ST-6408-02 against Parker 2 P5ON; IH-ST-6408-03 against Parker 3 P5ON; IH-ST-6408-04 against Parker 4 P5ON. Other listed numbers include Aeroquip 900598-10; Aeroquip 900598-12; Parker 10 P5ON; Parker 12 P5ON; SAE 090109A; SAE 090109A; SSP 10GP; SSP 12GP. Check the row for your size before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Hex Head Plug differ from the Steel ORB Hollow Hex Head Plug?",
+          "a": "This plug has a solid external hex head, while the [Steel ORB Hollow Hex Head Plug](/p/steel-orb-hollow-hex-head-plug) is the hollow hex version. Choose by the hex style your tool or port space needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Hex Head Plug in Dubai?",
+          "a": "Yes. The Steel ORB Hex Head Plug sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-hex-socket-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Hex Socket Plug used for?",
+          "a": "The Steel ORB Hex Socket Plug is a plug in forged carbon steel with a SAE O-ring boss (ORB) (male) end. It closes a male-threaded SAE O-ring boss port with a socket (Allen) drive, so the head sits low in the port."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6409-02 on the Steel ORB Hex Socket Plug?",
+          "a": "Every part number starts IH-ST-6409 and ends in a two-digit code that is the size in sixteenths of an inch. For example IH-ST-6409-02 is 1/8\" ORB (5/16-24); IH-ST-6409-10 is 5/8\" ORB (7/8-14); IH-ST-6409-32 is 2\" ORB (2-1/2-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Hex Socket Plug come in?",
+          "a": "The Steel ORB Hex Socket Plug has 13 part numbers, with the O-ring boss end from 1/8\" to 2\" (5/16-24 to 2-1/2-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Hex Socket Plug to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/8\" ORB (5/16-24), 3/8\" ORB (9/16-18), 7/8\" ORB (1-3/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 13 part numbers run from 1/8\" ORB (5/16-24) to 2\" ORB (2-1/2-12)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Hex Socket Plug rated for?",
+          "a": "For the Steel ORB Hex Socket Plug, the manufacturer's SAE J514 table rates the O-ring boss end from 5,000 psi in the smallest sizes of this listing down to 1,500 psi at the largest. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Hex Socket Plug made of, and is there a stainless version?",
+          "a": "The Steel ORB Hex Socket Plug is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Hex Socket Plug; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Hex Socket Plug follow?",
+          "a": "On the Steel ORB Hex Socket Plug, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6409-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Hex Socket Plug connect to?",
+          "a": "The male ORB thread screws into a female O-ring boss port. If you prefer an external hex to drive it, use the [Steel ORB Hex Head Plug](/p/steel-orb-hex-head-plug)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Hex Socket Plug without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Seat the hex key fully in the socket before tightening so it does not round out."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Hex Socket Plug used?",
+          "a": "Blanking ports where a protruding hex head would foul a hose, bracket or neighbouring part. Send us the port threads and the working pressure and we confirm the Steel ORB Hex Socket Plug suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Hex Socket Plug differ from the Steel ORB Hex Head Plug?",
+          "a": "The socket plug is driven by a hex key from inside the head, while the [Steel ORB Hex Head Plug](/p/steel-orb-hex-head-plug) is driven by a spanner on an external hex. Both fit the same ORB ports."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Hex Socket Plug in Dubai?",
+          "a": "Yes. Indus stocks the Steel ORB Hex Socket Plug at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-hollow-hex-head-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Hollow Hex Head Plug used for?",
+          "a": "The Steel ORB Hollow Hex Head Plug is a plug in forged carbon steel with a SAE O-ring boss (ORB) (male) end. It closes a male-threaded SAE O-ring boss port with a hollow hex head, which the listing numbers with a HOLLOW suffix."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6408-HOLLOW-02 on the Steel ORB Hollow Hex Head Plug?",
+          "a": "Every part number starts IH-ST-6408H and ends in a two-digit code that is the size in sixteenths of an inch. For example IH-ST-6408-HOLLOW-02 is 1/8\" ORB (5/16-24); IH-ST-6408-HOLLOW-10 is 5/8\" ORB (7/8-14); IH-ST-6408-HOLLOW-32 is 2\" ORB (2-1/2-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Hollow Hex Head Plug come in?",
+          "a": "The Steel ORB Hollow Hex Head Plug has 13 part numbers, with the O-ring boss end from 1/8\" to 2\" (5/16-24 to 2-1/2-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Hollow Hex Head Plug to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/8\" ORB (5/16-24), 3/8\" ORB (9/16-18), 7/8\" ORB (1-3/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 13 part numbers run from 1/8\" ORB (5/16-24) to 2\" ORB (2-1/2-12), each ending in HOLLOW and the size code."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Hollow Hex Head Plug rated for?",
+          "a": "For the Steel ORB Hollow Hex Head Plug, the manufacturer's SAE J514 table rates the O-ring boss end from 5,000 psi in the smallest sizes of this listing down to 1,500 psi at the largest. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Hollow Hex Head Plug made of, and is there a stainless version?",
+          "a": "The Steel ORB Hollow Hex Head Plug is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Hollow Hex Head Plug follow?",
+          "a": "On the Steel ORB Hollow Hex Head Plug, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6408-HOLLOW-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Hollow Hex Head Plug connect to?",
+          "a": "The male ORB thread screws into a female O-ring boss port of the same size, which carries the O-ring seat. For the solid external hex see the [Steel ORB Hex Head Plug](/p/steel-orb-hex-head-plug)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Hollow Hex Head Plug without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Use a spanner on the hex and tighten only until the shoulder meets the port face, and keep the hollow bore clear of dirt."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Hollow Hex Head Plug used?",
+          "a": "Blanking boss ports on hydraulic blocks when a hollow hex head plug is specified. Send us the port threads and the working pressure and we confirm the Steel ORB Hollow Hex Head Plug suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Hollow Hex Head Plug differ from the Steel ORB Hex Head Plug?",
+          "a": "This plug has a hollow head, while the [Steel ORB Hex Head Plug](/p/steel-orb-hex-head-plug) has a solid hex head. The thread and O-ring boss port are the same, so pick the head style from the drawing or the part you are replacing."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Hollow Hex Head Plug in Dubai?",
+          "a": "Yes. We keep the Steel ORB Hollow Hex Head Plug in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male 90° Elbow used for?",
+          "a": "The Steel ORB Male 90° Elbow is a 90° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a SAE O-ring boss (ORB) (male) end. It turns a line through 90° between two male O-ring boss ports, with an ORB male thread at each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6807-04-04 on the Steel ORB Male 90° Elbow?",
+          "a": "Every part number starts IH-ST-6807 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6807-04-04 is 1/4\" ORB (7/16-20) by 1/4\" ORB (7/16-20); IH-ST-6807-10-10 is 5/8\" ORB (7/8-14) by 5/8\" ORB (7/8-14); IH-ST-6807-24-24 is 1-1/2\" ORB (1-7/8-12) by 1-1/2\" ORB (1-7/8-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male 90° Elbow come in?",
+          "a": "The Steel ORB Male 90° Elbow has 10 part numbers, with the O-ring boss end from 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and the other end SAE O-ring boss (ORB), 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male 90° Elbow to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 1\" ORB (1-5/16-12) and 1-1/2\" ORB (1-7/8-12). Measure the port thread or quote the part number and we confirm the size. The 10 part numbers cover 1/4\" to 1-1/2\" ORB, the same size on both ends."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male 90° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male 90° Elbow family. Tell us the working pressure your line sees and the size, such as IH-ST-6807-04-04, and we confirm the Steel ORB Male 90° Elbow is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male 90° Elbow made of, and is there a stainless version?",
+          "a": "The Steel ORB Male 90° Elbow is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male 90° Elbow follow?",
+          "a": "On the Steel ORB Male 90° Elbow, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6807-04-04, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male 90° Elbow connect to?",
+          "a": "Both ends are male ORB and screw into two female boss ports. For a swivel female end see the [Steel ORB Male × ORB Female 90° Elbow](/p/steel-orb-male-x-orb-female-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male 90° Elbow without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Each male end carries its own O-ring, so check both before fitting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male 90° Elbow used?",
+          "a": "Changing direction between two boss-ported components, for example a pump port and a valve port. Send us the port threads and the working pressure and we confirm the Steel ORB Male 90° Elbow suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male 90° Elbow differ from the Steel ORB Male × ORB Female 90° Elbow?",
+          "a": "This elbow has a male ORB thread on both ends, while the [Steel ORB Male × ORB Female 90° Elbow](/p/steel-orb-male-x-orb-female-90-elbow) has one male and one female ORB end. Choose by whether the second connection is a stud or a port."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male 90° Elbow in Dubai?",
+          "a": "Yes, the Steel ORB Male 90° Elbow is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-adjustable-union",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male Adjustable Union used for?",
+          "a": "The Steel ORB Male Adjustable Union is a adjustable union in forged carbon steel with an SAE O-ring boss (ORB) (adjustable male) end and a SAE O-ring boss (ORB) (male) end. It joins two O-ring boss ports and lets the body be aligned, with an adjustable male ORB end and a male ORB end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6407-04-04 on the Steel ORB Male Adjustable Union?",
+          "a": "Every part number starts IH-ST-6407 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6407-04-04 is 1/4\" ORB (7/16-20) by 1/4\" ORB (7/16-20); IH-ST-6407-12-12 is 3/4\" ORB (1-1/16-12) by 3/4\" ORB (1-1/16-12); IH-ST-6407-32-32 is 2\" ORB (2-1/2-12) by 2\" ORB (2-1/2-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male Adjustable Union come in?",
+          "a": "The Steel ORB Male Adjustable Union has 9 part numbers, with the O-ring boss end from 1/4\" to 2\" (7/16-20 to 2-1/2-12) and the other end SAE O-ring boss (ORB), 1/4\" to 2\" (7/16-20 to 2-1/2-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male Adjustable Union to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 5/8\" ORB (7/8-14), 1-1/4\" ORB (1-5/8-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 9 part numbers run from 1/4\" ORB (7/16-20) to 2\" ORB (2-1/2-12), each with the same size at both ends."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Male Adjustable Union rated for?",
+          "a": "For the Steel ORB Male Adjustable Union, the manufacturer's SAE J514 table rates the O-ring boss end from 5,000 psi in the smallest sizes of this listing down to 1,500 psi at the largest. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male Adjustable Union made of, and is there a stainless version?",
+          "a": "The Steel ORB Male Adjustable Union is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Male Union; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male Adjustable Union follow?",
+          "a": "On the Steel ORB Male Adjustable Union, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6407-04-04, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male Adjustable Union connect to?",
+          "a": "It screws into two female boss ports; for a union with a different thread see the [Steel ORB Male × JIC 37° Female Swivel 90° Elbow](/p/steel-orb-male-x-jic-37-female-swivel-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male Adjustable Union without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Set the direction of the adjustable end before the final tightening."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male Adjustable Union used?",
+          "a": "Straight connections where the body must line up with the hose or tube after the thread is made up. Send us the port threads and the working pressure and we confirm the Steel ORB Male Adjustable Union suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male Adjustable Union differ from the Steel ORB Male 90° Elbow?",
+          "a": "The union is straight and adjustable, while the [Steel ORB Male 90° Elbow](/p/steel-orb-male-90-elbow) turns the line through 90° and is fixed. Choose the union for a straight run and the elbow where the line must change direction."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male Adjustable Union in Dubai?",
+          "a": "Yes. The Steel ORB Male Adjustable Union sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-jic-37-female-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × JIC 37° Female Swivel 90° Elbow used for?",
+          "a": "The Steel ORB Male × JIC 37° Female Swivel 90° Elbow is a 90° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a 37° JIC (female swivel) end. It connects an O-ring boss port to a 37° JIC tube or hose end through a 90° bend, with a female swivel nut on the JIC side."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6809-04-04 on the Steel ORB Male × JIC 37° Female Swivel 90° Elbow?",
+          "a": "Every part number starts IH-ST-6809 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6809-04-04 is 1/4\" ORB (7/16-20) by 1/4\" JIC 37° (7/16-20); IH-ST-6809-10-10 is 5/8\" ORB (7/8-14) by 5/8\" JIC 37° (7/8-14); IH-ST-6809-20-20 is 1-1/4\" ORB (1-5/8-12) by 1-1/4\" JIC 37° (1-5/8-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × JIC 37° Female Swivel 90° Elbow come in?",
+          "a": "The Steel ORB Male × JIC 37° Female Swivel 90° Elbow has 10 part numbers, with the O-ring boss end from 1/4\" to 1-1/4\" (7/16-20 to 1-5/8-12) and the other end 37° JIC, 1/4\" to 1-1/4\" (7/16-20 to 1-5/8-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × JIC 37° Female Swivel 90° Elbow to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 3/4\" ORB (1-1/16-12) and 1-1/4\" ORB (1-5/8-12). Measure the port thread or quote the part number and we confirm the size. Its 10 part numbers pair ORB and JIC at the same size, from 1/4\" (7/16-20) to 1-1/4\" (1-5/8-12)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male × JIC 37° Female Swivel 90° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male × JIC 37° Female Swivel 90° Elbow family. Tell us the working pressure your line sees and the size, such as IH-ST-6809-04-04, and we confirm the Steel ORB Male × JIC 37° Female Swivel 90° Elbow is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × JIC 37° Female Swivel 90° Elbow made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × JIC 37° Female Swivel 90° Elbow is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × JIC 37° Female Swivel 90° Elbow follow?",
+          "a": "On the Steel ORB Male × JIC 37° Female Swivel 90° Elbow, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6809-04-04, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × JIC 37° Female Swivel 90° Elbow connect to?",
+          "a": "The male ORB end goes into a boss port and the female JIC swivel takes a male 37° JIC end. More 37° parts are in the [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × JIC 37° Female Swivel 90° Elbow without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. On the JIC side the 37° cone seals metal-to-metal, so do not add sealant to the JIC thread."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male × JIC 37° Female Swivel 90° Elbow used?",
+          "a": "Hose connections on boss-ported pumps and valves that use JIC hose ends. Send us the port threads and the working pressure and we confirm the Steel ORB Male × JIC 37° Female Swivel 90° Elbow suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × JIC 37° Female Swivel 90° Elbow differ from the Steel ORB Male × NPSM Female Swivel 90° Elbow?",
+          "a": "This elbow has a 37° JIC swivel end, while the [Steel ORB Male × NPSM Female Swivel 90° Elbow](/p/steel-orb-male-x-npsm-female-swivel-90-elbow) has an NPSM swivel end. Match the thread on the line you are connecting, because JIC and NPSM look alike but seal differently."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × JIC 37° Female Swivel 90° Elbow in Dubai?",
+          "a": "Yes. Indus stocks the Steel ORB Male × JIC 37° Female Swivel 90° Elbow at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-npsm-female-swivel-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × NPSM Female Swivel 45° Elbow used for?",
+          "a": "The Steel ORB Male × NPSM Female Swivel 45° Elbow is a 45° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a NPSM (female swivel) end. It connects an O-ring boss port to an NPSM line through a 45° bend, with a female NPSM swivel nut on the line side."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6902-04-04 on the Steel ORB Male × NPSM Female Swivel 45° Elbow?",
+          "a": "Every part number starts IH-ST-6902 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6902-04-04 is 1/4\" ORB (7/16-20) by 1/4\" NPSM (1/4-18); IH-ST-6902-10-08 is 5/8\" ORB (7/8-14) by 1/2\" NPSM (1/2-14); IH-ST-6902-24-24 is 1-1/2\" ORB (1-7/8-12) by 1-1/2\" NPSM (1-1/2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × NPSM Female Swivel 45° Elbow come in?",
+          "a": "The Steel ORB Male × NPSM Female Swivel 45° Elbow has 16 part numbers, with the O-ring boss end from 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and the other end NPSM, 1/4\" to 1-1/2\" (1/4-18 to 1-1/2-11.5). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × NPSM Female Swivel 45° Elbow to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 1\" ORB (1-5/16-12) and 1-1/2\" ORB (1-7/8-12). Measure the port thread or quote the part number and we confirm the size. Its 16 part numbers pair ORB sizes from 1/4\" to 1-1/2\" with NPSM sizes from 1/4\" to 1-1/2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male × NPSM Female Swivel 45° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male × NPSM Female Swivel 45° Elbow family. Tell us the working pressure your line sees and the size, such as IH-ST-6902-04-04, and we confirm the Steel ORB Male × NPSM Female Swivel 45° Elbow is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × NPSM Female Swivel 45° Elbow made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × NPSM Female Swivel 45° Elbow is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × NPSM Female Swivel 45° Elbow follow?",
+          "a": "On the Steel ORB Male × NPSM Female Swivel 45° Elbow, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6902-04-04, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × NPSM Female Swivel 45° Elbow connect to?",
+          "a": "The male ORB end screws into a boss port and the swivel nut takes a male NPSM thread. For a 90° bend see the [Steel ORB Male × NPSM Female Swivel 90° Elbow](/p/steel-orb-male-x-npsm-female-swivel-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × NPSM Female Swivel 45° Elbow without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Position the 45° bend before tightening the swivel nut onto the NPSM thread."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male × NPSM Female Swivel 45° Elbow used?",
+          "a": "Lines with NPSM swivel connections where a gentle 45° change of direction clears a frame or hose. Send us the port threads and the working pressure and we confirm the Steel ORB Male × NPSM Female Swivel 45° Elbow suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × NPSM Female Swivel 45° Elbow differ from the Steel ORB Male × NPSM Female Swivel 90° Elbow?",
+          "a": "The 45° elbow gives a shallower bend and 16 part numbers, while the [Steel ORB Male × NPSM Female Swivel 90° Elbow](/p/steel-orb-male-x-npsm-female-swivel-90-elbow) turns a full 90° and has 27 part numbers. Choose by the space available for the hose."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × NPSM Female Swivel 45° Elbow in Dubai?",
+          "a": "Yes. We keep the Steel ORB Male × NPSM Female Swivel 45° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-npsm-female-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × NPSM Female Swivel 90° Elbow used for?",
+          "a": "The Steel ORB Male × NPSM Female Swivel 90° Elbow is a 90° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a NPSM (female swivel) end. It connects an O-ring boss port to an NPSM line through a 90° bend, with a female NPSM swivel nut on the line side."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6901-04-02 on the Steel ORB Male × NPSM Female Swivel 90° Elbow?",
+          "a": "Every part number starts IH-ST-6901 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6901-04-02 is 1/4\" ORB (7/16-20) by 1/8\" NPSM (1/8-27); IH-ST-6901-10-12 is 5/8\" ORB (7/8-14) by 3/4\" NPSM (3/4-14); IH-ST-6901-32-32 is 2\" ORB (2-1/2-12) by 2\" NPSM (2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × NPSM Female Swivel 90° Elbow come in?",
+          "a": "The Steel ORB Male × NPSM Female Swivel 90° Elbow has 27 part numbers, with the O-ring boss end from 1/4\" to 2\" (7/16-20 to 2-1/2-12) and the other end NPSM, 1/8\" to 2\" (1/8-27 to 2-11.5). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × NPSM Female Swivel 90° Elbow to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 5/8\" ORB (7/8-14), 1\" ORB (1-5/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 27 part numbers pair ORB sizes from 1/4\" to 2\" with NPSM sizes from 1/8\" to 2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male × NPSM Female Swivel 90° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male × NPSM Female Swivel 90° Elbow family. Tell us the working pressure your line sees and the size, such as IH-ST-6901-04-02, and we confirm the Steel ORB Male × NPSM Female Swivel 90° Elbow is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × NPSM Female Swivel 90° Elbow made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × NPSM Female Swivel 90° Elbow is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × NPSM Female Swivel 90° Elbow follow?",
+          "a": "On the Steel ORB Male × NPSM Female Swivel 90° Elbow, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6901-04-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × NPSM Female Swivel 90° Elbow connect to?",
+          "a": "The male ORB end screws into a boss port and the swivel nut takes a male NPSM thread. For a shallower bend see the [Steel ORB Male × NPSM Female Swivel 45° Elbow](/p/steel-orb-male-x-npsm-female-swivel-45-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × NPSM Female Swivel 90° Elbow without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Turn the swivel nut, not the elbow, onto the NPSM thread after the ORB end is tight."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male × NPSM Female Swivel 90° Elbow used?",
+          "a": "Right-angle connections between boss ports and NPSM swivel lines, where the elbow saves hose length. Send us the port threads and the working pressure and we confirm the Steel ORB Male × NPSM Female Swivel 90° Elbow suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × NPSM Female Swivel 90° Elbow differ from the Steel ORB Male × NPSM Female Swivel 45° Elbow?",
+          "a": "This is the full 90° version with 27 part numbers, while the [Steel ORB Male × NPSM Female Swivel 45° Elbow](/p/steel-orb-male-x-npsm-female-swivel-45-elbow) is a 45° bend with 16 part numbers. Pick the angle the hose routing needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × NPSM Female Swivel 90° Elbow in Dubai?",
+          "a": "Yes, the Steel ORB Male × NPSM Female Swivel 90° Elbow is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-nptf-female-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × NPTF Female 90° Elbow used for?",
+          "a": "The Steel ORB Male × NPTF Female 90° Elbow is a 90° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a NPTF (Dryseal) (female) end. It connects an O-ring boss port to a male NPTF pipe thread through a 90° bend, with a female NPTF end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6805-04-02 on the Steel ORB Male × NPTF Female 90° Elbow?",
+          "a": "Every part number starts IH-ST-6805 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6805-04-02 is 1/4\" ORB (7/16-20) by 1/8\" NPTF (1/8-27); IH-ST-6805-10-08 is 5/8\" ORB (7/8-14) by 1/2\" NPTF (1/2-14); IH-ST-6805-32-32 is 2\" ORB (2-1/2-12) by 2\" NPTF (2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × NPTF Female 90° Elbow come in?",
+          "a": "The Steel ORB Male × NPTF Female 90° Elbow has 17 part numbers, with the O-ring boss end from 1/4\" to 2\" (7/16-20 to 2-1/2-12) and the other end NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × NPTF Female 90° Elbow to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 1\" ORB (1-5/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 17 part numbers pair ORB sizes from 1/4\" to 2\" with NPTF sizes from 1/8\" to 2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male × NPTF Female 90° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male × NPTF Female 90° Elbow family. Tell us the working pressure your line sees and the size, such as IH-ST-6805-04-02, and we confirm the Steel ORB Male × NPTF Female 90° Elbow is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × NPTF Female 90° Elbow made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × NPTF Female 90° Elbow is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Male × NPT Female 90° Elbow; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × NPTF Female 90° Elbow follow?",
+          "a": "On the Steel ORB Male × NPTF Female 90° Elbow, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6805-04-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × NPTF Female 90° Elbow connect to?",
+          "a": "The male ORB end goes into a boss port and the female NPTF end takes a male pipe thread. For a male NPTF end see the [Steel ORB Male × NPTF Male 90° Elbow](/p/steel-orb-male-x-nptf-male-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × NPTF Female 90° Elbow without leaking?",
+          "a": "Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes, and fit the ORB end with its O-ring in place. Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male × NPTF Female 90° Elbow used?",
+          "a": "Turning a hose or pipe run through 90° at a boss port, where the other part has a male NPTF thread. Send us the port threads and the working pressure and we confirm the Steel ORB Male × NPTF Female 90° Elbow suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × NPTF Female 90° Elbow differ from the Steel ORB Male × NPTF Female 90° Elbow, Long?",
+          "a": "The standard elbow is compact with 17 part numbers, while the [Steel ORB Male × NPTF Female 90° Elbow, Long](/p/steel-orb-male-x-nptf-female-90-elbow-long) has a longer leg and 5 part numbers from 1/2\" to 1\" ORB. Choose the long version for extra clearance."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × NPTF Female 90° Elbow in Dubai?",
+          "a": "Yes. The Steel ORB Male × NPTF Female 90° Elbow sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-nptf-female-90-elbow-long",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × NPTF Female 90° Elbow, Long used for?",
+          "a": "The Steel ORB Male × NPTF Female 90° Elbow, Long is a 90° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a NPTF (Dryseal) (female) end. It connects an O-ring boss port to a male NPTF pipe thread through a 90° bend with a longer leg, and a female NPTF end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6805L-08-06 on the Steel ORB Male × NPTF Female 90° Elbow, Long?",
+          "a": "Every part number starts IH-ST-6805L and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6805L-08-06 is 1/2\" ORB (3/4-16) by 3/8\" NPTF (3/8-18); IH-ST-6805L-10-08 is 5/8\" ORB (7/8-14) by 1/2\" NPTF (1/2-14); IH-ST-6805L-16-16 is 1\" ORB (1-5/16-12) by 1\" NPTF (1-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × NPTF Female 90° Elbow, Long come in?",
+          "a": "The Steel ORB Male × NPTF Female 90° Elbow, Long has 5 part numbers, with the O-ring boss end from 1/2\" to 1\" (3/4-16 to 1-5/16-12) and the other end NPTF (Dryseal), 3/8\" to 1\" (3/8-18 to 1-11.5). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × NPTF Female 90° Elbow, Long to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/2\" ORB (3/4-16), 5/8\" ORB (7/8-14), 3/4\" ORB (1-1/16-12) and 1\" ORB (1-5/16-12). Measure the port thread or quote the part number and we confirm the size. Its 5 part numbers pair ORB sizes from 1/2\" to 1\" with NPTF sizes from 3/8\" to 1\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male × NPTF Female 90° Elbow, Long have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male × NPTF Female 90° Elbow, Long family. Tell us the working pressure your line sees and the size, such as IH-ST-6805L-08-06, and we confirm the Steel ORB Male × NPTF Female 90° Elbow, Long is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × NPTF Female 90° Elbow, Long made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × NPTF Female 90° Elbow, Long is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × NPTF Female 90° Elbow, Long follow?",
+          "a": "On the Steel ORB Male × NPTF Female 90° Elbow, Long, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6805L-08-06, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × NPTF Female 90° Elbow, Long connect to?",
+          "a": "The male ORB end goes into a boss port and the female NPTF end takes a male pipe thread. For the standard length see the [Steel ORB Male × NPTF Female 90° Elbow](/p/steel-orb-male-x-nptf-female-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × NPTF Female 90° Elbow, Long without leaking?",
+          "a": "Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes, and fit the ORB end with its O-ring in place and tightened to the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male × NPTF Female 90° Elbow, Long used?",
+          "a": "Fitting a pipe-threaded part where the longer leg gives clearance from the boss port body. Send us the port threads and the working pressure and we confirm the Steel ORB Male × NPTF Female 90° Elbow, Long suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × NPTF Female 90° Elbow, Long differ from the Steel ORB Male × NPTF Female 90° Elbow?",
+          "a": "The long elbow has 5 part numbers and a longer leg, while the [Steel ORB Male × NPTF Female 90° Elbow](/p/steel-orb-male-x-nptf-female-90-elbow) is the standard elbow and goes up to 2 inch. Choose by the clearance you need."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × NPTF Female 90° Elbow, Long in Dubai?",
+          "a": "Yes. Indus stocks the Steel ORB Male × NPTF Female 90° Elbow, Long at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-nptf-male-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × NPTF Male 90° Elbow used for?",
+          "a": "The Steel ORB Male × NPTF Male 90° Elbow is a 90° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a NPTF (Dryseal) (male) end. It connects an O-ring boss port to a female NPTF port through a 90° bend, with a male NPTF end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6806-04-02 on the Steel ORB Male × NPTF Male 90° Elbow?",
+          "a": "Every part number starts IH-ST-6806 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6806-04-02 is 1/4\" ORB (7/16-20) by 1/8\" NPTF (1/8-27); IH-ST-6806-10-08 is 5/8\" ORB (7/8-14) by 1/2\" NPTF (1/2-14); IH-ST-6806-32-32 is 2\" ORB (2-1/2-12) by 2\" NPTF (2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × NPTF Male 90° Elbow come in?",
+          "a": "The Steel ORB Male × NPTF Male 90° Elbow has 15 part numbers, with the O-ring boss end from 1/4\" to 2\" (7/16-20 to 2-1/2-12) and the other end NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × NPTF Male 90° Elbow to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 1\" ORB (1-5/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 15 part numbers pair ORB sizes from 1/4\" to 2\" with NPTF sizes from 1/8\" to 2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male × NPTF Male 90° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male × NPTF Male 90° Elbow family. Tell us the working pressure your line sees and the size, such as IH-ST-6806-04-02, and we confirm the Steel ORB Male × NPTF Male 90° Elbow is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × NPTF Male 90° Elbow made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × NPTF Male 90° Elbow is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × NPTF Male 90° Elbow follow?",
+          "a": "On the Steel ORB Male × NPTF Male 90° Elbow, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6806-04-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × NPTF Male 90° Elbow connect to?",
+          "a": "The male ORB end goes into a boss port and the male NPTF end screws into a female pipe port. For a female NPTF end see the [Steel ORB Male × NPTF Female 90° Elbow](/p/steel-orb-male-x-nptf-female-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × NPTF Male 90° Elbow without leaking?",
+          "a": "Seal the male NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes, and fit the ORB end with its O-ring in place. Do not exceed the pipe-thread rating."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male × NPTF Male 90° Elbow used?",
+          "a": "Right-angle connections between a boss port and a pipe-threaded port. Send us the port threads and the working pressure and we confirm the Steel ORB Male × NPTF Male 90° Elbow suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × NPTF Male 90° Elbow differ from the Steel ORB Male × NPTF Female 90° Elbow?",
+          "a": "This elbow has a male NPTF end, while the [Steel ORB Male × NPTF Female 90° Elbow](/p/steel-orb-male-x-nptf-female-90-elbow) has a female one. Choose by whether the mating pipe thread is a port or a stud."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × NPTF Male 90° Elbow in Dubai?",
+          "a": "Yes. We keep the Steel ORB Male × NPTF Male 90° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-nptf-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × NPTF Male Adapter used for?",
+          "a": "The Steel ORB Male × NPTF Male Adapter is a straight adapter in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a NPTF (Dryseal) (male) end. It converts an O-ring boss port to a female NPTF pipe port with a straight body, ORB male at one end and NPTF male at the other."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6401-03-02 on the Steel ORB Male × NPTF Male Adapter?",
+          "a": "Every part number starts IH-ST-6401 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6401-03-02 is 3/16\" ORB (3/8-24) by 1/8\" NPTF (1/8-27); IH-ST-6401-10-08 is 5/8\" ORB (7/8-14) by 1/2\" NPTF (1/2-14); IH-ST-6401-32-32 is 2\" ORB (2-1/2-12) by 2\" NPTF (2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × NPTF Male Adapter come in?",
+          "a": "The Steel ORB Male × NPTF Male Adapter has 28 part numbers, with the O-ring boss end from 3/16\" to 2\" (3/8-24 to 2-1/2-12) and the other end NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × NPTF Male Adapter to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 3/16\" ORB (3/8-24), 1/2\" ORB (3/4-16), 1\" ORB (1-5/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 28 part numbers pair ORB sizes from 3/16\" to 2\" with NPTF sizes from 1/8\" to 2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Male × NPTF Male Adapter rated for?",
+          "a": "For the Steel ORB Male × NPTF Male Adapter, the manufacturer's SAE J514 table rates the O-ring boss end from 5,000 psi in the smallest sizes of this listing down to 1,500 psi at the largest. On pipe-thread ends the same table gives 5,000 psi at the small end falling to 1,000 psi, so the pipe end can be the limit. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × NPTF Male Adapter made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × NPTF Male Adapter is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Male × NPT Male Connector; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × NPTF Male Adapter follow?",
+          "a": "On the Steel ORB Male × NPTF Male Adapter, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6401-03-02, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × NPTF Male Adapter connect to?",
+          "a": "The male ORB end screws into a boss port and the male NPTF end into a female pipe port. For the female ORB version see the [Steel ORB Female × NPTF Male Adapter](/p/steel-orb-female-x-nptf-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × NPTF Male Adapter without leaking?",
+          "a": "Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes, and fit the ORB end with its O-ring in place. Avoid stacking adapters, as the [adapter stacking guide](/blog/stacking-hydraulic-adapters) explains."
+        },
+        {
+          "slot": "C",
+          "q": "Which Parker and SSP part numbers match the Steel ORB Male × NPTF Male Adapter?",
+          "a": "The cross-reference list gives Parker and SSP equivalents for the Steel ORB Male × NPTF Male Adapter, all marked as direct matches. The size table lists a Parker number for 17 of the 28 Indus part numbers, for example IH-ST-6401-04-02 against Parker 4-1/8 F5OF; IH-ST-6401-04-04 against Parker 4-1/4 F5OF; IH-ST-6401-05-04 against Parker 5-1/4 F5OF. Other listed numbers include Parker 10-1/2 F5OF; Parker 10-3/4 F5OF; SSP 10X1/2GCM; SSP 10X3/4GCM. Check the row for your size before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × NPTF Male Adapter differ from the Steel ORB Female × NPTF Male Adapter?",
+          "a": "This adapter has a male ORB end, while the [Steel ORB Female × NPTF Male Adapter](/p/steel-orb-female-x-nptf-male-adapter) has a female ORB end. Choose by whether the boss connection you are fitting is a port or a stud."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × NPTF Male Adapter in Dubai?",
+          "a": "Yes, the Steel ORB Male × NPTF Male Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-orb-female-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × ORB Female 90° Elbow used for?",
+          "a": "The Steel ORB Male × ORB Female 90° Elbow is a 90° elbow in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a SAE O-ring boss (ORB) (female) end. It turns a line through 90° between an ORB male end and an ORB female end, as a street-style elbow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6815-04-04 on the Steel ORB Male × ORB Female 90° Elbow?",
+          "a": "Every part number starts IH-ST-6815 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6815-04-04 is 1/4\" ORB (7/16-20) by 1/4\" ORB (7/16-20); IH-ST-6815-08-08 is 1/2\" ORB (3/4-16) by 1/2\" ORB (3/4-16); IH-ST-6815-16-16 is 1\" ORB (1-5/16-12) by 1\" ORB (1-5/16-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × ORB Female 90° Elbow come in?",
+          "a": "The Steel ORB Male × ORB Female 90° Elbow has 10 part numbers, with the O-ring boss end from 1/4\" to 1\" (7/16-20 to 1-5/16-12) and the other end SAE O-ring boss (ORB), 1/4\" to 1\" (7/16-20 to 1-5/16-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × ORB Female 90° Elbow to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 3/4\" ORB (1-1/16-12) and 1\" ORB (1-5/16-12). Measure the port thread or quote the part number and we confirm the size. Its 10 part numbers cover 1/4\" to 1\" ORB, the same size at both ends."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Steel ORB Male × ORB Female 90° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the Steel ORB Male × ORB Female 90° Elbow family. Tell us the working pressure your line sees and the size, such as IH-ST-6815-04-04, and we confirm the Steel ORB Male × ORB Female 90° Elbow is suitable for it before you order. The O-ring boss end follows SAE J1926 / ISO 11926."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × ORB Female 90° Elbow made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × ORB Female 90° Elbow is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The listing is carbon steel only; if the line needs stainless steel, see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters) or ask us for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × ORB Female 90° Elbow follow?",
+          "a": "On the Steel ORB Male × ORB Female 90° Elbow, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6815-04-04, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × ORB Female 90° Elbow connect to?",
+          "a": "The male end screws into a boss port and the female end takes a male ORB stud. For two male ends see the [Steel ORB Male 90° Elbow](/p/steel-orb-male-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × ORB Female 90° Elbow without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. The female end needs a male ORB stud with its own O-ring."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORB Male × ORB Female 90° Elbow used?",
+          "a": "Fitting an elbow directly onto a boss port when the line continues from a male ORB stud. Send us the port threads and the working pressure and we confirm the Steel ORB Male × ORB Female 90° Elbow suits the job before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × ORB Female 90° Elbow differ from the Steel ORB Male 90° Elbow?",
+          "a": "This elbow has one male and one female ORB end, while the [Steel ORB Male 90° Elbow](/p/steel-orb-male-90-elbow) has two male ends and runs to 1-1/2\". Choose by what the second connection needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × ORB Female 90° Elbow in Dubai?",
+          "a": "Yes. The Steel ORB Male × ORB Female 90° Elbow sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-male-x-orb-female-reducer-expander",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Male × ORB Female Reducer / Expander used for?",
+          "a": "The Steel ORB Male × ORB Female Reducer / Expander is a straight reducer in forged carbon steel with an SAE O-ring boss (ORB) (male) end and a SAE O-ring boss (ORB) (female) end. It changes the size between two O-ring boss threads, with an ORB male end and an ORB female end, either reducing or expanding."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-6410-04-04 on the Steel ORB Male × ORB Female Reducer / Expander?",
+          "a": "Every part number starts IH-ST-6410 and then carries one two-digit code for each end in the order the ends are named; the code is the size in sixteenths of an inch. For example IH-ST-6410-04-04 is 1/4\" ORB (7/16-20) by 1/4\" ORB (7/16-20); IH-ST-6410-14-10 is 7/8\" ORB (1-3/16-12) by 5/8\" ORB (7/8-14); IH-ST-6410-32-24 is 2\" ORB (2-1/2-12) by 1-1/2\" ORB (1-7/8-12)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORB Male × ORB Female Reducer / Expander come in?",
+          "a": "The Steel ORB Male × ORB Female Reducer / Expander has 47 part numbers, with the O-ring boss end from 1/4\" to 2\" (7/16-20 to 2-1/2-12) and the other end SAE O-ring boss (ORB), 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12). The size table shows the size on each end and the dimensions in millimetres where the maker gives them."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the ORB size on the Steel ORB Male × ORB Female Reducer / Expander to my port thread?",
+          "a": "Match the thread on the port, not the tube size: on this listing 1/4\" ORB (7/16-20), 1/2\" ORB (3/4-16), 1\" ORB (1-5/16-12) and 2\" ORB (2-1/2-12). Measure the port thread or quote the part number and we confirm the size. Its 47 part numbers pair a male end from 1/4\" to 2\" with a female end from 1/4\" to 1-1/2\", for example 04-04 and 32-24."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORB Male × ORB Female Reducer / Expander rated for?",
+          "a": "For the Steel ORB Male × ORB Female Reducer / Expander, the manufacturer's SAE J514 table rates the O-ring boss end from 5,000 psi in the smallest sizes of this listing down to 1,500 psi at the largest. The table's note says the values should not be taken as guaranteed minimums, so read the figure for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Male × ORB Female Reducer / Expander made of, and is there a stainless version?",
+          "a": "The Steel ORB Male × ORB Female Reducer / Expander is forged carbon steel, trivalent zinc plated, with an NBR (Buna-N) O-ring. The same configuration is also listed in 316 stainless steel as Stainless Steel ORB Male × ORB Female Reducer / Expander; see the [stainless steel ORB adapters](/c/stainless-steel-orb-adapters)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Steel ORB Male × ORB Female Reducer / Expander follow?",
+          "a": "On the Steel ORB Male × ORB Female Reducer / Expander, the O-ring boss end follows SAE J1926 / ISO 11926, a straight-thread port sealed by an O-ring under the hex, and the pressure table is the manufacturer's SAE J514 table. For a material certificate or pressure test record, ask on your RFQ and quote the part number such as IH-ST-6410-04-04, because the listing does not state one."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORB Male × ORB Female Reducer / Expander connect to?",
+          "a": "The male end screws into a boss port and the female end takes a male ORB stud of a different size. For a coupling at one size see the [Steel ORB Female Coupling](/p/steel-orb-female-coupling)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORB Male × ORB Female Reducer / Expander without leaking?",
+          "a": "Check that the NBR O-ring is seated and undamaged, screw the male end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring makes the seal, not the thread. Use a single reducer instead of stacking adapters, as the [adapter stacking guide](/blog/stacking-hydraulic-adapters) recommends."
+        },
+        {
+          "slot": "C",
+          "q": "Which Aeroquip, Parker and SSP part numbers match the Steel ORB Male × ORB Female Reducer / Expander?",
+          "a": "The cross-reference list gives Aeroquip, Parker and SSP equivalents for the Steel ORB Male × ORB Female Reducer / Expander, all marked as direct matches. The size table lists a Parker number for 29 of the 47 Indus part numbers, for example IH-ST-6410-04-04 against Parker 4-4 F5OG5; IH-ST-6410-04-06 against Parker 4-6 F5OG5; IH-ST-6410-06-04 against Parker 6-4 F5OG5. Other listed numbers include Aeroquip FF1010-0404; Aeroquip FF1010-0406; Parker 10-12 F5OG5; Parker 10-4 F5OG5; SSP 10-12GCFP; SSP 10-4GCFP. Check the row for your size before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Male × ORB Female Reducer / Expander differ from the Steel ORB Female Coupling?",
+          "a": "The reducer changes size across 47 part numbers, while the [Steel ORB Female Coupling](/p/steel-orb-female-coupling) joins two male ends at the same size in 3 part numbers. Choose the reducer when the two ports differ in size."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORB Male × ORB Female Reducer / Expander in Dubai?",
+          "a": "Yes. Indus stocks the Steel ORB Male × ORB Female Reducer / Expander at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "family": "dw-mud-degasser",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "mud-degasser-vertical-1-000-gpm-u-tube-vent-nace-mr-0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a vertical 1,000 GPM mud degasser used for?",
+          "a": "A mud degasser removes entrained gas from the mud stream before it returns to the active pit. This vertical unit has 1,000 GPM nominal throughput, U-tube vent piping in the install package, and venturi-style gas evacuation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow rates can the vertical 1,000 GPM mud degasser handle?",
+          "a": "The listed unit has 1,000 GPM nominal throughput, and capacities from 250 to 2,000 GPM are available. State the maximum circulation rate on the RFQ so the degasser is sized above it."
+        },
+        {
+          "slot": "D",
+          "q": "What does the U-tube vent of the vertical 1,000 GPM mud degasser do?",
+          "a": "The U-tube vent piping is included as part of the install package, and the venturi-style gas evacuation pulls gas out of the mud. The U-tube seals the vent line so gas leaves safely to the vent."
+        },
+        {
+          "slot": "E",
+          "q": "Is the vertical 1,000 GPM mud degasser suitable for sour-service mud?",
+          "a": "Yes, it is listed with NACE MR-0175 materials for sour-service applications. Send the H2S level and mud type on the RFQ so the materials are confirmed against the well conditions."
+        },
+        {
+          "slot": "F",
+          "q": "What interface does the vertical 1,000 GPM mud degasser need?",
+          "a": "It is engineered to the project P&ID and the client interface requirements. Send the P&ID, tie-in sizes and vent routing so the degasser is built to match the rig layout."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply to the vertical 1,000 GPM mud degasser?",
+          "a": "The listing gives NACE MR-0175 materials for sour service and engineering to the client P&ID. State any further approvals the operator requires on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the vertical 1,000 GPM mud degasser connect to?",
+          "a": "It takes mud from the flowline or shaker and returns it to the active pit. See [mud tanks](/c/dw-mud-tanks), [mud pump packages](/c/dw-mud-pump-package) and [mud manifolds](/c/dw-mud-manifolds) for the rest of the circulating system."
+        },
+        {
+          "slot": "K",
+          "q": "How does a vertical mud degasser differ from a poor-boy degasser?",
+          "a": "A vertical degasser is a vessel installed in the mud return line to remove entrained gas continuously. For gas kicks the well-control equipment handles the flow; see [choke and kill manifolds](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the vertical 1,000 GPM mud degasser used?",
+          "a": "It is used on drilling rigs to remove entrained gas before mud returns to the active pit. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment) for how it fits the fluid system."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a mud degasser quotation?",
+          "a": "Send the maximum circulation rate in GPM, the sour-service requirement, the P&ID and tie-in sizes, the vent routing and the mounting. The unit is engineered to your project."
+        },
+        {
+          "slot": "L",
+          "q": "What capacity range can the vertical 1,000 GPM mud degasser be built for?",
+          "a": "Capacities from 250 to 2,000 GPM are available, so the 1,000 GPM unit can be scaled to the rig. Send the circulation rate so the degasser is sized."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the vertical 1,000 GPM mud degasser?",
+          "a": "Yes. We list the vertical 1,000 GPM mud degasser as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Units are engineered to the project P&ID. Send your capacity, configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

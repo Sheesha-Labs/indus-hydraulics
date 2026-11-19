@@ -1,0 +1,76 @@
+{
+  "family": "frac-trees",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-tree-api-6a-10000-20000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a API 6A frac tree used for?",
+          "a": "A frac tree is the wellhead channel for fracturing fluid. It combines two manual frac valves and one hydraulic valve, so the well can be switched between pumping, flowback and isolation at each stage of the job."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the API 6A frac tree cover?",
+          "a": "The published range is a 5-1/8\" to 7-1/16\" main bore with a 3-1/16\" bypass, at 10,000 to 20,000 psi working pressure. API 6A flanged or studded ends are listed. State the working pressure and bore on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and material classes does the API 6A frac tree offer?",
+          "a": "The listing gives -60 °C to 121 °C (temperature classes K to V), API 6A material classes AA to HH with DD to HH for sour service, and PSL 1 to 3 with PR1. Hydrostatic tests follow API 6A / 16A / 16C at the PSL ordered."
+        },
+        {
+          "slot": "F",
+          "q": "Why does the API 6A frac tree have Inconel 625 on the ring grooves?",
+          "a": "Every metal ring groove has an Inconel 625 weld overlay against sand and acid erosion, which keeps the seal faces intact through many stages. Carbon-steel grooves erode under frac sand and acid."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A frac tree made to API 6A?",
+          "a": "Yes. It is built to API 6A (21st edition) with API 20E bolting, and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the API 6A frac tree connect to?",
+          "a": "It connects through a universal (E-type) manifold to the zipper module, and an eight-way or universal frac head is optional. See [frac manifolds](/c/frac-manifold) and the [universal manifold](/p/universal-frac-manifold-e-type)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 6A frac tree differ from a wellhead?",
+          "a": "The frac tree is the temporary high-pressure connection for the fracturing job, with frac valves and eroded-groove protection, while the wellhead carries the casing and tubing. See [wellhead equipment](/c/wellhead)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A frac tree used?",
+          "a": "It is used at the wellhead during hydraulic fracturing, where the well is switched between pumping, flowback and isolation. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac tree quotation?",
+          "a": "Send the working pressure, main bore, the end connections, the material class and H2S content, the valve operation and the wellhead size. We review the data sheet before quoting."
+        },
+        {
+          "slot": "I",
+          "q": "What does API 20E bolting mean on the frac tree?",
+          "a": "The tree is listed with API 20E bolting and pressure-energised gaskets. Confirm the bolting grade for your service on the RFQ, particularly for sour service."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A frac tree be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A frac tree?",
+          "a": "Yes. We list the API 6A frac tree as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each tree is built to the order specification. Send your pump count, bore and pressure class through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

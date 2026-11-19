@@ -1,0 +1,921 @@
+{
+  "family": "low-pressure-oilfield-hoses",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "hose-megashield-5000-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Megashield 5000 hose assembly used for?",
+          "a": "The Gates Megashield 5000 is a fire-resistant hose assembly for low-pressure offshore service, with a hydraulic-fluid-compatible synthetic rubber liner, wire braid reinforcement and a Megashield fire-resistant cover. It is rated 5,000 psi WP and crimped."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Megashield 5000 hose assembly come in?",
+          "a": "The Megashield 5000 hose assembly is listed in inner diameters from 1/4\" to 2\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Megashield 5000 hose assembly?",
+          "a": "The Megashield 5000 hose assembly is rated 5,000 psi WP. This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Megashield 5000 hose assembly cover?",
+          "a": "The Megashield 5000 hose assembly is rated Fireshield rated. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Megashield 5000 hose assembly?",
+          "a": "The liner is hydraulic-fluid-compatible synthetic rubber, and the reinforcement is wire braid with a Megashield fire-resistant cover. Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Megashield 5000 hose assembly meet?",
+          "a": "The Megashield 5000 hose assembly is listed to API Spec 16D and the ISO 15540 fire test. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Megashield 5000 hose assembly use?",
+          "a": "The Megashield 5000 hose assembly is supplied with crimped couplings. Specify the connection type, size and length on the RFQ, and the end fitting material for offshore service."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Megashield 5000 hose assembly used?",
+          "a": "It is used for fire-resistant hydraulic lines in offshore service, such as BOP control lines. See the guide on [BOP control hose fire resistance](/blog/bop-control-hose-fire-resistance) and [well control hoses](/c/well-control-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Megashield 5000 hose assembly differ from the related Gates hoses?",
+          "a": "The Megashield is a 5,000 psi wire-braid fire-resistant hose to 2\", while the [Flameshield hose](/p/low-pressure-oilfield-hose-flameshield) is a textile-braid fire-resistant surface hose at 250-500 psi for sizes up to 6\"."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Megashield 5000 hose assembly?",
+          "a": "The Megashield 5000 hose assembly is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Megashield 5000 hose assembly?",
+          "a": "The listing states a lead time of 21 days for the Megashield 5000 hose assembly. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Hose Megashield 5000 hose assemblies in stock in Dubai?",
+          "a": "Yes. We keep the Hose Megashield 5000 hose assemblies in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "low-pressure-oilfield-hose-flameshield",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Flameshield low-pressure oilfield hose used for?",
+          "a": "The Gates Flameshield is a low-pressure oilfield hose with a flame-resistant outer cover and a petroleum-resistant tube, for surface-rig service. It has textile braid reinforcement, sizes from 1\" to 6\", and a typical rating of 250-500 psi WP."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Flameshield low-pressure oilfield hose come in?",
+          "a": "The Flameshield low-pressure oilfield hose is listed in inner diameters from 1\" to 6\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Flameshield low-pressure oilfield hose?",
+          "a": "The Flameshield low-pressure oilfield hose is rated 250-500 psi WP (typical low-pressure service). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Flameshield low-pressure oilfield hose cover?",
+          "a": "The Flameshield low-pressure oilfield hose is rated Flameshield-rated cover. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Flameshield low-pressure oilfield hose?",
+          "a": "The liner is petroleum-resistant rubber, and the reinforcement is textile braid with a Flameshield outer cover. Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Flameshield low-pressure oilfield hose meet?",
+          "a": "The Flameshield low-pressure oilfield hose is listed to API Spec 7K (low-pressure service). Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Flameshield low-pressure oilfield hose use?",
+          "a": "The Flameshield low-pressure oilfield hose is supplied with crimped or banded couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Flameshield low-pressure oilfield hose used?",
+          "a": "It is used for surface-rig petroleum and utility lines where a flame-resistant cover is wanted. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses) and the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Flameshield low-pressure oilfield hose differ from the related Gates hoses?",
+          "a": "The Flameshield is a flame-resistant surface hose at 250-500 psi, while the [Megashield 5000](/p/hose-megashield-5000-hose-assemblies) is a 5,000 psi fire-resistant wire-braid hose. The Black Gold hoses have no fire-resistant cover, so choose Flameshield where fire exposure is a risk."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Flameshield low-pressure oilfield hose?",
+          "a": "The Flameshield low-pressure oilfield hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Flameshield low-pressure oilfield hose?",
+          "a": "The listing states a lead time of 21 days for the Flameshield low-pressure oilfield hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Low pressure oilfield hose Flameshield in stock in Dubai?",
+          "a": "Yes. We keep the Low pressure oilfield hose Flameshield in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "material-handling-discharge-black-gold-bulk-material-300d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Bulk Material 300D hose used for?",
+          "a": "The Gates Black Gold Bulk Material 300D is a 300 psi discharge hose for dry and pelletised bulk-material transfer. It has an abrasion-resistant Black-gold rubber liner and textile braid reinforcement, in sizes from 1\" to 6\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Bulk Material 300D hose come in?",
+          "a": "The Black Gold Bulk Material 300D hose is listed in inner diameters from 1\" to 6\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Bulk Material 300D hose?",
+          "a": "The Black Gold Bulk Material 300D hose is rated 300 psi WP (discharge service). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Bulk Material 300D hose cover?",
+          "a": "The Black Gold Bulk Material 300D hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Bulk Material 300D hose?",
+          "a": "The liner is abrasion-resistant Black-gold rubber, and the reinforcement is textile braid. Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Bulk Material 300D hose meet?",
+          "a": "The Black Gold Bulk Material 300D hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Bulk Material 300D hose use?",
+          "a": "The Black Gold Bulk Material 300D hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Bulk Material 300D hose used?",
+          "a": "It is used for pneumatic or gravity discharge of dry and pelletised bulk material, such as bulk additives on a drilling site. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Bulk Material 300D hose differ from the related Gates hoses?",
+          "a": "The 300D is discharge-only with textile braid, while the [300SD bulk material hose](/p/material-handling-suction-discharge-black-gold-bulk-material-300sd) has helical wire and is suction-rated. Use the SD variant where the hose can be under vacuum."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Bulk Material 300D hose?",
+          "a": "The Black Gold Bulk Material 300D hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Bulk Material 300D hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Bulk Material 300D hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Material handling (discharge) Black Gold Bulk Material 300D in stock in Dubai?",
+          "a": "Yes. We keep the Material handling (discharge) Black Gold Bulk Material 300D in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "material-handling-discharge-black-gold-mud-oil-300d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Mud and Oil 300D hose used for?",
+          "a": "The Gates Black Gold Mud and Oil 300D is a 300 psi discharge hose for mud and oil mixture transfer. It has a mud and oil-resistant Black-gold rubber liner with textile braid reinforcement, in sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Mud and Oil 300D hose come in?",
+          "a": "The Black Gold Mud and Oil 300D hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Mud and Oil 300D hose?",
+          "a": "The Black Gold Mud and Oil 300D hose is rated 300 psi WP (discharge service). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Mud and Oil 300D hose cover?",
+          "a": "The Black Gold Mud and Oil 300D hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Mud and Oil 300D hose?",
+          "a": "The liner is mud and oil-resistant Black-gold rubber, and the reinforcement is textile braid. Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Mud and Oil 300D hose meet?",
+          "a": "The Black Gold Mud and Oil 300D hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Mud and Oil 300D hose use?",
+          "a": "The Black Gold Mud and Oil 300D hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Mud and Oil 300D hose used?",
+          "a": "It is used for transferring mud and oil mixtures on a rig, from tank to tank or to a vessel. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses) and [mud tanks](/c/dw-mud-tanks)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Mud and Oil 300D hose differ from the related Gates hoses?",
+          "a": "The 300D is discharge-only, while the [300SD mud and oil hose](/p/material-handling-suction-discharge-black-gold-mud-oil-300sd) has a helical wire for suction duty. The [400D oilfield service hose](/p/oilfield-service-black-gold-oilfield-service-400d) is the 400 psi general oilfield service hose."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Mud and Oil 300D hose?",
+          "a": "The Black Gold Mud and Oil 300D hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Mud and Oil 300D hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Mud and Oil 300D hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Material handling (discharge) Black Gold Mud & Oil 300D in stock in Dubai?",
+          "a": "Yes. We keep the Material handling (discharge) Black Gold Mud & Oil 300D in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "material-handling-discharge-black-gold-potable-water-300d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Potable Water 300D hose used for?",
+          "a": "The Gates Black Gold Potable Water 300D is a 300 psi discharge hose for potable and drinking water on remote oilfield sites. It has a potable-water-grade rubber liner listed as NSF and FDA-compatible, with textile braid, in sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Potable Water 300D hose come in?",
+          "a": "The Black Gold Potable Water 300D hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Potable Water 300D hose?",
+          "a": "The Black Gold Potable Water 300D hose is rated 300 psi WP (discharge service). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Potable Water 300D hose cover?",
+          "a": "The Black Gold Potable Water 300D hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Potable Water 300D hose?",
+          "a": "The liner is potable-water-grade rubber (NSF / FDA-compatible), and the reinforcement is textile braid. Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Potable Water 300D hose meet?",
+          "a": "The Black Gold Potable Water 300D hose is listed to NSF 61 / FDA-compatible (per the Gates Black Gold spec), and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Potable Water 300D hose use?",
+          "a": "The Black Gold Potable Water 300D hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Potable Water 300D hose used?",
+          "a": "It is used for drinking-water delivery at remote oilfield camps and drilling sites, where the liner must be potable-water grade. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Potable Water 300D hose differ from the related Gates hoses?",
+          "a": "The 300D is discharge-only for potable water, while the [300SD potable water hose](/p/material-handling-suction-discharge-black-gold-potable-water-300sd) adds a helical wire for suction. Neither should be used for fuel or mud; see the [drill water hose](/p/water-discharge-black-gold-drill-water-300d) for non-potable water."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Potable Water 300D hose?",
+          "a": "The Black Gold Potable Water 300D hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Potable Water 300D hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Potable Water 300D hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Material handling (discharge) Black Gold Potable Water 300D in stock in Dubai?",
+          "a": "Yes. We keep the Material handling (discharge) Black Gold Potable Water 300D in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "material-handling-suction-discharge-black-gold-bulk-material-300sd",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Bulk Material 300SD hose used for?",
+          "a": "The Gates Black Gold Bulk Material 300SD is a 300 psi suction and discharge hose for dry and pelletised bulk-material transfer. It has an abrasion-resistant Black-gold rubber liner and helical wire with textile braid, which makes it suction-rated, in sizes from 1\" to 6\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Bulk Material 300SD hose come in?",
+          "a": "The Black Gold Bulk Material 300SD hose is listed in inner diameters from 1\" to 6\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Bulk Material 300SD hose?",
+          "a": "The Black Gold Bulk Material 300SD hose is rated 300 psi WP (suction/discharge). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Bulk Material 300SD hose cover?",
+          "a": "The Black Gold Bulk Material 300SD hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Bulk Material 300SD hose?",
+          "a": "The liner is abrasion-resistant Black-gold rubber, and the reinforcement is helical wire plus textile braid (suction-rated). Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Bulk Material 300SD hose meet?",
+          "a": "The Black Gold Bulk Material 300SD hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Bulk Material 300SD hose use?",
+          "a": "The Black Gold Bulk Material 300SD hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Bulk Material 300SD hose used?",
+          "a": "It is used where bulk material must be drawn in by suction as well as discharged, such as vacuum loading of dry bulk. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Bulk Material 300SD hose differ from the related Gates hoses?",
+          "a": "The 300SD has helical wire for suction, while the [300D bulk material hose](/p/material-handling-discharge-black-gold-bulk-material-300d) is discharge-only with textile braid. Use the SD hose if the line is ever under vacuum."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Bulk Material 300SD hose?",
+          "a": "The Black Gold Bulk Material 300SD hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Bulk Material 300SD hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Bulk Material 300SD hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Material handling (suction/discharge) Black Gold Bulk Material 300SD in stock in Dubai?",
+          "a": "Yes. We keep the Material handling (suction/discharge) Black Gold Bulk Material 300SD in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "material-handling-suction-discharge-black-gold-mud-oil-300sd",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Mud and Oil 300SD hose used for?",
+          "a": "The Gates Black Gold Mud and Oil 300SD is a 300 psi suction and discharge hose for mud and oil mixture transfer. It has a mud and oil-resistant Black-gold rubber liner and helical wire with textile braid, which makes it suction-rated, in sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Mud and Oil 300SD hose come in?",
+          "a": "The Black Gold Mud and Oil 300SD hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Mud and Oil 300SD hose?",
+          "a": "The Black Gold Mud and Oil 300SD hose is rated 300 psi WP (suction/discharge). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Mud and Oil 300SD hose cover?",
+          "a": "The Black Gold Mud and Oil 300SD hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Mud and Oil 300SD hose?",
+          "a": "The liner is mud and oil-resistant Black-gold rubber, and the reinforcement is helical wire plus textile braid (suction-rated). Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Mud and Oil 300SD hose meet?",
+          "a": "The Black Gold Mud and Oil 300SD hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Mud and Oil 300SD hose use?",
+          "a": "The Black Gold Mud and Oil 300SD hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Mud and Oil 300SD hose used?",
+          "a": "It is used for suction and discharge of mud and oil mixtures on a rig, such as tank transfers with a suction line. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses) and [mud tanks](/c/dw-mud-tanks)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Mud and Oil 300SD hose differ from the related Gates hoses?",
+          "a": "The 300SD adds helical wire for suction, while the [300D mud and oil hose](/p/material-handling-discharge-black-gold-mud-oil-300d) is discharge-only. Both use mud and oil-resistant rubber and textile braid."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Mud and Oil 300SD hose?",
+          "a": "The Black Gold Mud and Oil 300SD hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Mud and Oil 300SD hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Mud and Oil 300SD hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Material handling (suction/discharge) Black Gold Mud & Oil 300SD in stock in Dubai?",
+          "a": "Yes. We keep the Material handling (suction/discharge) Black Gold Mud & Oil 300SD in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "material-handling-suction-discharge-black-gold-potable-water-300sd",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Potable Water 300SD hose used for?",
+          "a": "The Gates Black Gold Potable Water 300SD is a 300 psi suction and discharge hose for potable water. It has a potable-water-grade rubber liner listed as NSF and FDA-compatible, with helical wire reinforcement for suction, in sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Potable Water 300SD hose come in?",
+          "a": "The Black Gold Potable Water 300SD hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Potable Water 300SD hose?",
+          "a": "The Black Gold Potable Water 300SD hose is rated 300 psi WP (suction/discharge). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Potable Water 300SD hose cover?",
+          "a": "The Black Gold Potable Water 300SD hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Potable Water 300SD hose?",
+          "a": "The liner is potable-water-grade rubber (NSF / FDA-compatible), and the reinforcement is helical wire plus textile braid (suction-rated). Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Potable Water 300SD hose meet?",
+          "a": "The Black Gold Potable Water 300SD hose is listed to NSF 61 / FDA-compatible (per the Gates Black Gold spec), and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Potable Water 300SD hose use?",
+          "a": "The Black Gold Potable Water 300SD hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Potable Water 300SD hose used?",
+          "a": "It is used for suction and delivery of drinking water at remote oilfield sites, such as filling water tanks from a source. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Potable Water 300SD hose differ from the related Gates hoses?",
+          "a": "The 300SD adds helical wire for suction, while the [300D potable water hose](/p/material-handling-discharge-black-gold-potable-water-300d) is discharge-only. Use the SD hose when the hose draws from a tank or well."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Potable Water 300SD hose?",
+          "a": "The Black Gold Potable Water 300SD hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Potable Water 300SD hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Potable Water 300SD hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Material handling (suction/discharge) Black Gold Potable Water 300SD in stock in Dubai?",
+          "a": "Yes. We keep the Material handling (suction/discharge) Black Gold Potable Water 300SD in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "oilfield-service-black-gold-oilfield-service-400d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Oilfield Service 400D hose used for?",
+          "a": "The Gates Black Gold Oilfield Service 400D is a 400 psi discharge hose for general oilfield service. It has a petroleum-resistant Black-gold rubber liner and textile braid, in sizes from 1\" to 6\", and is the highest-rated of the Black Gold discharge hoses here."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Oilfield Service 400D hose come in?",
+          "a": "The Black Gold Oilfield Service 400D hose is listed in inner diameters from 1\" to 6\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Oilfield Service 400D hose?",
+          "a": "The Black Gold Oilfield Service 400D hose is rated 400 psi WP (discharge service). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Oilfield Service 400D hose cover?",
+          "a": "The Black Gold Oilfield Service 400D hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Oilfield Service 400D hose?",
+          "a": "The liner is petroleum-resistant Black-gold rubber, and the reinforcement is textile braid (discharge). Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Oilfield Service 400D hose meet?",
+          "a": "The Black Gold Oilfield Service 400D hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Oilfield Service 400D hose use?",
+          "a": "The Black Gold Oilfield Service 400D hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Oilfield Service 400D hose used?",
+          "a": "It is used for general oilfield service lines that carry petroleum products at up to 400 psi. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses) and the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Oilfield Service 400D hose differ from the related Gates hoses?",
+          "a": "The 400D is a 400 psi petroleum discharge hose, while the [300D fuel hose](/p/petroleum-transfer-discharge-black-gold-fuel-300d) is rated 300 psi for fuel transfer to 4\". Choose the 400D where the line pressure exceeds 300 psi."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Oilfield Service 400D hose?",
+          "a": "The Black Gold Oilfield Service 400D hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Oilfield Service 400D hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Oilfield Service 400D hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Oilfield service Black Gold Oilfield Service 400D in stock in Dubai?",
+          "a": "Yes. We keep the Oilfield service Black Gold Oilfield Service 400D in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "petroleum-transfer-discharge-black-gold-fuel-300d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Fuel 300D hose used for?",
+          "a": "The Gates Black Gold Fuel 300D is a 300 psi discharge hose for diesel, gasoline and oilfield petroleum transfer. It has a petroleum-resistant Black-gold rubber liner and textile braid, in sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Fuel 300D hose come in?",
+          "a": "The Black Gold Fuel 300D hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Fuel 300D hose?",
+          "a": "The Black Gold Fuel 300D hose is rated 300 psi WP (discharge service). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Fuel 300D hose cover?",
+          "a": "The Black Gold Fuel 300D hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Fuel 300D hose?",
+          "a": "The liner is petroleum-resistant Black-gold rubber, and the reinforcement is textile braid. Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Fuel 300D hose meet?",
+          "a": "The Black Gold Fuel 300D hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Fuel 300D hose use?",
+          "a": "The Black Gold Fuel 300D hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Fuel 300D hose used?",
+          "a": "It is used for fuel transfer at drilling sites, such as filling rig tanks or generators with diesel. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Fuel 300D hose differ from the related Gates hoses?",
+          "a": "The 300D is discharge-only, while the [300SD fuel hose](/p/petroleum-transfer-suction-discharge-black-gold-fuel-300sd) adds helical wire for suction. The [400D oilfield service hose](/p/oilfield-service-black-gold-oilfield-service-400d) is the higher-pressure petroleum discharge hose."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Fuel 300D hose?",
+          "a": "The Black Gold Fuel 300D hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Fuel 300D hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Fuel 300D hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Petroleum transfer (discharge) Black Gold Fuel 300D in stock in Dubai?",
+          "a": "Yes. We keep the Petroleum transfer (discharge) Black Gold Fuel 300D in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "petroleum-transfer-suction-discharge-black-gold-fuel-300sd",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Fuel 300SD hose used for?",
+          "a": "The Gates Black Gold Fuel 300SD is a 300 psi suction and discharge hose for diesel, gasoline and petroleum transfer. It has a petroleum-resistant Black-gold rubber liner with helical wire and textile braid, which makes it suction-rated, in sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Fuel 300SD hose come in?",
+          "a": "The Black Gold Fuel 300SD hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Fuel 300SD hose?",
+          "a": "The Black Gold Fuel 300SD hose is rated 300 psi WP (suction/discharge). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Fuel 300SD hose cover?",
+          "a": "The Black Gold Fuel 300SD hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Fuel 300SD hose?",
+          "a": "The liner is petroleum-resistant Black-gold rubber, and the reinforcement is helical wire plus textile braid (suction-rated). Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Fuel 300SD hose meet?",
+          "a": "The Black Gold Fuel 300SD hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Fuel 300SD hose use?",
+          "a": "The Black Gold Fuel 300SD hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Fuel 300SD hose used?",
+          "a": "It is used for fuel loading and unloading where the hose draws fuel from a tank or truck, as well as delivering it. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Fuel 300SD hose differ from the related Gates hoses?",
+          "a": "The 300SD adds helical wire for suction, while the [300D fuel hose](/p/petroleum-transfer-discharge-black-gold-fuel-300d) is discharge-only. Use the SD hose if you draw fuel from a lower tank."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Fuel 300SD hose?",
+          "a": "The Black Gold Fuel 300SD hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Fuel 300SD hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Fuel 300SD hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Petroleum transfer (suction/discharge) Black Gold Fuel 300SD in stock in Dubai?",
+          "a": "Yes. We keep the Petroleum transfer (suction/discharge) Black Gold Fuel 300SD in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "water-discharge-black-gold-drill-water-300d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Drill Water 300D hose used for?",
+          "a": "The Gates Black Gold Drill Water 300D is a 300 psi discharge-only hose for drilling-water service. It has a Black-gold rubber liner and textile braid, in sizes from 1\" to 4\", and is not listed for potable water."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Drill Water 300D hose come in?",
+          "a": "The Black Gold Drill Water 300D hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Drill Water 300D hose?",
+          "a": "The Black Gold Drill Water 300D hose is rated 300 psi WP (discharge service). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Drill Water 300D hose cover?",
+          "a": "The Black Gold Drill Water 300D hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Drill Water 300D hose?",
+          "a": "The liner is Black-gold rubber, and the reinforcement is textile braid (discharge-only). Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Drill Water 300D hose meet?",
+          "a": "The Black Gold Drill Water 300D hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Drill Water 300D hose use?",
+          "a": "The Black Gold Drill Water 300D hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Drill Water 300D hose used?",
+          "a": "It is used for drilling-water lines on a rig, delivering water to the mud system. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses) and [mud tanks](/c/dw-mud-tanks)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Drill Water 300D hose differ from the related Gates hoses?",
+          "a": "The 300D is discharge-only, while the [300SD drill water hose](/p/water-suction-discharge-black-gold-drill-water-300sd) adds helical wire for suction. For drinking water use the [potable water hose](/p/material-handling-discharge-black-gold-potable-water-300d) instead."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Drill Water 300D hose?",
+          "a": "The Black Gold Drill Water 300D hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Drill Water 300D hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Drill Water 300D hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Water (discharge) Black Gold Drill Water 300D in stock in Dubai?",
+          "a": "Yes. We keep the Water (discharge) Black Gold Drill Water 300D in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "water-suction-discharge-black-gold-drill-water-300sd",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Black Gold Drill Water 300SD hose used for?",
+          "a": "The Gates Black Gold Drill Water 300SD is a 300 psi suction and discharge hose for drilling water. It has a Black-gold rubber liner and helical wire with textile braid, which makes it suction-rated, in sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Black Gold Drill Water 300SD hose come in?",
+          "a": "The Black Gold Drill Water 300SD hose is listed in inner diameters from 1\" to 4\". State the inner diameter, length and end fittings on the RFQ. Custom sizes outside the range can be quoted with a longer lead time."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Black Gold Drill Water 300SD hose?",
+          "a": "The Black Gold Drill Water 300SD hose is rated 300 psi WP (suction/discharge). This is the working pressure, not the burst pressure, so keep the line pressure at or below it. Hydrotest pressure is normally 1.5 times WP, and the assembly ships with a test certificate."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Black Gold Drill Water 300SD hose cover?",
+          "a": "The Black Gold Drill Water 300SD hose is rated -40°C to +82°C. State the fluid temperature and the ambient range on the RFQ so the hose is confirmed for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Black Gold Drill Water 300SD hose?",
+          "a": "The liner is Black-gold rubber, and the reinforcement is helical wire plus textile braid (suction-rated). Check the fluid compatibility of the liner against the medium before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Black Gold Drill Water 300SD hose meet?",
+          "a": "The Black Gold Drill Water 300SD hose is listed to the Gates Black Gold series spec, and it carries no API 7K Grade D rating, so do not specify it as a rotary hose. Each assembly ships with a test certificate. State the documents you need on the RFQ; see the [oilfield hose document pack](/blog/oilfield-hose-document-pack)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Black Gold Drill Water 300SD hose use?",
+          "a": "The Black Gold Drill Water 300SD hose is supplied with banded or crimped couplings. Specify the connection type, size and length on the RFQ; the Gates [QC47 quick-connect coupling](/p/qc47-quick-connect-coupling) is the quick-hookup option for hoses of this kind."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black Gold Drill Water 300SD hose used?",
+          "a": "It is used for suction from a water source such as a pit or tank, and discharge to the rig water system. See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black Gold Drill Water 300SD hose differ from the related Gates hoses?",
+          "a": "The 300SD adds helical wire for suction, while the [300D drill water hose](/p/water-discharge-black-gold-drill-water-300d) is discharge-only. Use the SD hose when drawing from a pit or tank."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths and assembly options are available for the Black Gold Drill Water 300SD hose?",
+          "a": "The Black Gold Drill Water 300SD hose is supplied as an assembly to your length, with the couplings fitted. State the working length, the fittings and the number of assemblies on the RFQ. The [oilfield hose guide](/blog/oilfield-hose-guide) explains what to specify."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Black Gold Drill Water 300SD hose?",
+          "a": "The listing states a lead time of 21 days for the Black Gold Drill Water 300SD hose. Custom-spec assemblies take longer. The hose is made in Germany according to the listing, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Water (suction/discharge) Black Gold Drill Water 300SD in stock in Dubai?",
+          "a": "Yes. We keep the Water (suction/discharge) Black Gold Drill Water 300SD in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "qc47-quick-connect-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates QC47 quick-connect coupling used for?",
+          "a": "The Gates QC47 is a quick-connect coupling for fast hookup of low-pressure oilfield hoses. It engages mechanically, so no threading is required, which saves time on rig-up and rig-down."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Gates QC47 quick-connect coupling fit?",
+          "a": "The listing gives common low-pressure oilfield sizes. State the hose inner diameter and the type of hose on the RFQ so the correct size and tail are quoted."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Gates QC47 quick-connect coupling?",
+          "a": "The rating is that of the host hose. The coupling does not have a separate figure in the listing, so the system is limited by the lowest rating among the hose and coupling; confirm both on the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Gates QC47 quick-connect coupling cover?",
+          "a": "The temperature range follows the host hose rating. Check the rating of the hose it is fitted to, and confirm the coupling seal material for your duty."
+        },
+        {
+          "slot": "F",
+          "q": "How is the Gates QC47 quick-connect coupling engaged?",
+          "a": "It is a quick-connect coupling with mechanical engagement and no threading. Check engagement fully before pressurising the line."
+        },
+        {
+          "slot": "G",
+          "q": "What specification applies to the Gates QC47 quick-connect coupling?",
+          "a": "The listing gives the Gates QC47 spec. Each part ships with the usual traceability; state any documentation you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which hoses does the Gates QC47 quick-connect coupling fit?",
+          "a": "It is made for the low-pressure oilfield hoses, including the [Black Gold fuel hose](/p/petroleum-transfer-discharge-black-gold-fuel-300d) and the [400D oilfield service hose](/p/oilfield-service-black-gold-oilfield-service-400d). See [low-pressure oilfield hoses](/c/low-pressure-oilfield-hoses)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Gates QC47 quick-connect coupling used?",
+          "a": "It is used for fast hookup of low-pressure oilfield hose lines such as water, fuel and mud transfer on a drilling site, where hoses are connected and disconnected frequently."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Gates QC47 quick-connect coupling differ from a banded or crimped fitting?",
+          "a": "A quick-connect coupling engages mechanically without threading, while banded or crimped fittings are fixed to the hose end. The QC47 joins hose ends quickly; the fixed fittings are on the hose assembly itself."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Gates QC47 quick-connect coupling be fitted to a hose?",
+          "a": "The coupling is fitted to the hose end of a low-pressure oilfield hose and then engaged mechanically to its mate. Follow the hose maker instructions for the fitting method and test the joint at working pressure before use."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Gates QC47 quick-connect coupling?",
+          "a": "The listing states a lead time of 21 days for the coupling. The part is listed as made in Germany, and export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the QC47 quick connect coupling in stock in Dubai?",
+          "a": "Yes. We keep the QC47 quick connect coupling in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

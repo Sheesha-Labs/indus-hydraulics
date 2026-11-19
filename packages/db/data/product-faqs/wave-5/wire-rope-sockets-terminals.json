@@ -1,0 +1,1249 @@
+{
+  "family": "wire-rope-sockets-terminals",
+  "extraFacts": [
+    {
+      "fact": "Open Spelter Socket — G-416 Pattern (Indus listing): std G-416; mat Forged steel/alloy steel; fin Zinc plated / hot-dip galvanized",
+      "source": "Indus Hydraulics product listing /p/open-spelter-socket-g-416-pattern"
+    },
+    {
+      "fact": "Closed Spelter Socket — G-417 Pattern (Indus listing): std G-417; mat Forged steel/alloy steel; fin Zinc plated / hot-dip galvanized",
+      "source": "Indus Hydraulics product listing /p/closed-spelter-socket-g-417-pattern"
+    },
+    {
+      "fact": "Stainless Steel Swage Eye Terminal (Indus listing): std European type; fin Polished; size 2 mm to 26 mm; rate minimum breaking load 800 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Dome Head Terminal (Indus listing): std European type; mat Type 304 or type 316 stainless steel; fin Polished; size 3 mm to 10 mm",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-dome-head-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Toggle Terminal (Indus listing): std European type; mat Type 304 or type 316 stainless steel; fin Polished; size 3 mm to 10 mm; rate minimum breaking load 1,300 to 9,800 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-toggle-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Jaw Terminal (Indus listing): std European type; fin Polished; size 2 mm to 26 mm; rate minimum breaking load 500 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-jaw-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Eye Terminal (Indus listing): std European type; fin Polished; size 2 mm to 26 mm; rate minimum breaking load 800 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Eye Terminal (Indus listing): std European type; fin Polished; size 2 mm to 26 mm; rate minimum breaking load 800 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Eye Terminal (Indus listing): std European type; fin Polished; size 2 mm to 26 mm; rate minimum breaking load 800 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Eye Terminal (Indus listing): std European type; fin Polished; size 2 mm to 26 mm; rate minimum breaking load 800 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Toggle Terminal (Indus listing): std European type; mat Type 304 or type 316 stainless steel; fin Polished; size 3 mm to 10 mm; rate minimum breaking load 1,300 to 9,800 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-toggle-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Toggle Terminal (Indus listing): std European type; mat Type 304 or type 316 stainless steel; fin Polished; size 3 mm to 10 mm; rate minimum breaking load 1,300 to 9,800 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-toggle-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swageless Cone Toggle Terminal (Indus listing): mat Type 316 stainless steel; fin Polished; size 3 mm to 16 mm",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swageless-cone-toggle-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Eye Terminal (Indus listing): std European type; fin Polished; size 2 mm to 26 mm; rate minimum breaking load 800 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swageless Eye Terminal (Indus listing): mat Type 316 stainless steel; fin Polished; size 3 mm to 16 mm",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swageless-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swageless Eye Terminal (Indus listing): mat Type 316 stainless steel; fin Polished; size 3 mm to 16 mm",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swageless-eye-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Stud Terminal (Indus listing): std European type; fin Polished; size M4 to M36; rate minimum breaking load 50 to 43,000 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-stud-terminal"
+    },
+    {
+      "fact": "Stainless Steel Swage Deck Toggle Terminal for Cable Railing (Indus listing): mat Stainless steel 304 or 316 swage terminal deck toggle; fin Polished; size 1/8″ to 3/16″",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swage-deck-toggle-terminal-for-cable-railing"
+    }
+  ],
+  "products": [
+    {
+      "slug": "closed-spelter-socket-g-417-pattern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Closed Spelter Socket — G-417 Pattern and where is it used?",
+          "a": "The Closed Spelter Socket — G-417 Pattern is a closed spelter socket to G-417 that is poured or resin-set onto the end of a wire rope to form a terminated end. It is listed in sizes 1/4″ / 6 mm to 3-3/4~4″ / 95-100 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Closed Spelter Socket — G-417 Pattern part numbers such as IH-LR-ST-CSSG417-146MM?",
+          "a": "IH-LR-ST-CSSG417-146MM is the 1/4″ / 6 mm size, IH-LR-ST-CSSG417-1-5842MM the 1-5/8″ / 42 mm size and IH-LR-ST-CSSG417-3-34495-100MM the 3-3/4~4″ / 95-100 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Closed Spelter Socket — G-417 Pattern come in?",
+          "a": "Sizes on the Closed Spelter Socket — G-417 Pattern run 1/4″ / 6 mm to 3-3/4~4″ / 95-100 mm. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Closed Spelter Socket — G-417 Pattern for my job?",
+          "a": "Pick the Closed Spelter Socket — G-417 Pattern row whose rope size matches your rope (1/4″ / 6 mm, 5/16~3/8″ / 8~9 mm, 7/16~1/2″ / 11~12 mm and 9/16~5/8″ / 14~16 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Closed Spelter Socket — G-417 Pattern?",
+          "a": "No load rating is published on the Closed Spelter Socket — G-417 Pattern listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Closed Spelter Socket — G-417 Pattern made from and how is it finished?",
+          "a": "The Closed Spelter Socket — G-417 Pattern is made from forged steel/alloy steel and offered with these finishes: zinc plated / hot-dip galvanized. Spelter sockets are forged steel or alloy steel; the zinc or hot-dip galvanized finish protects them outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Closed Spelter Socket — G-417 Pattern?",
+          "a": "The listing names G-417 for the Closed Spelter Socket — G-417 Pattern but states no certificate. If your site needs a test certificate or third-party inspection, say so on the RFQ and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Closed Spelter Socket — G-417 Pattern?",
+          "a": "The Closed Spelter Socket — G-417 Pattern goes on the end of [steel wire rope](/c/steel-wire-rope). The alternative terminations are an eye closed with [wire rope clips](/c/wire-rope-clips) or [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), and thimbles for those eyes are on the [wire rope thimbles](/c/wire-rope-thimbles). [Our guide to open and closed spelter sockets](/blog/spelter-sockets-open-vs-closed) sets the two socket types side by side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Closed Spelter Socket — G-417 Pattern?",
+          "a": "The Closed Spelter Socket — G-417 Pattern is set onto the rope by the maker's procedure for the rope size, and a finished termination should be checked by a competent person before use. [Our guide to open and closed spelter sockets](/blog/spelter-sockets-open-vs-closed) covers the choice."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Closed Spelter Socket — G-417 Pattern compare with the Open Spelter Socket — G-416 Pattern?",
+          "a": "The nearest sibling is the [Open Spelter Socket — G-416 Pattern](/p/open-spelter-socket-g-416-pattern), and the two differ on pattern. In detail, pattern is G-417 here and G-416 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Closed Spelter Socket — G-417 Pattern outside the UAE?",
+          "a": "Yes, Closed Spelter Socket — G-417 Pattern goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Closed Spelter Socket — G-417 Pattern available from stock in Dubai?",
+          "a": "Yes, we stock Closed Spelter Socket — G-417 Pattern at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "open-spelter-socket-g-416-pattern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Open Spelter Socket — G-416 Pattern used for?",
+          "a": "The Open Spelter Socket — G-416 Pattern is a open spelter socket to G-416 that is poured or resin-set onto the end of a wire rope to form a terminated end. It is listed in sizes 1/4″ / 6 mm to 3-3/4~4″ / 95-100 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Open Spelter Socket — G-416 Pattern part numbers such as IH-LR-ST-OSSG416-146MM?",
+          "a": "IH-LR-ST-OSSG416-146MM is the 1/4″ / 6 mm size, IH-LR-ST-OSSG416-1-5842MM the 1-5/8″ / 42 mm size and IH-LR-ST-OSSG416-3-34495-100MM the 3-3/4~4″ / 95-100 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Open Spelter Socket — G-416 Pattern come in?",
+          "a": "Sizes on the Open Spelter Socket — G-416 Pattern run 1/4″ / 6 mm to 3-3/4~4″ / 95-100 mm. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Open Spelter Socket — G-416 Pattern for my job?",
+          "a": "Pick the Open Spelter Socket — G-416 Pattern row whose rope size matches your rope (1/4″ / 6 mm, 5/16~3/8″ / 8~9 mm, 7/16~1/2″ / 11~12 mm and 9/16~5/8″ / 14~16 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Open Spelter Socket — G-416 Pattern?",
+          "a": "No load rating is published on the Open Spelter Socket — G-416 Pattern listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Open Spelter Socket — G-416 Pattern made from and how is it finished?",
+          "a": "The Open Spelter Socket — G-416 Pattern is made from forged steel/alloy steel and offered with these finishes: zinc plated / hot-dip galvanized. Spelter sockets are forged steel or alloy steel; the zinc or hot-dip galvanized finish protects them outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Open Spelter Socket — G-416 Pattern?",
+          "a": "The listing names G-416 for the Open Spelter Socket — G-416 Pattern but states no certificate. If your site needs a test certificate or third-party inspection, say so on the RFQ and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Open Spelter Socket — G-416 Pattern?",
+          "a": "The Open Spelter Socket — G-416 Pattern goes on the end of [steel wire rope](/c/steel-wire-rope). The alternative terminations are an eye closed with [wire rope clips](/c/wire-rope-clips) or [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), and thimbles for those eyes are on the [wire rope thimbles](/c/wire-rope-thimbles). [Our guide to open and closed spelter sockets](/blog/spelter-sockets-open-vs-closed) sets the two socket types side by side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Open Spelter Socket — G-416 Pattern?",
+          "a": "The Open Spelter Socket — G-416 Pattern is set onto the rope by the maker's procedure for the rope size, and a finished termination should be checked by a competent person before use. [Our guide to open and closed spelter sockets](/blog/spelter-sockets-open-vs-closed) covers the choice."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Open Spelter Socket — G-416 Pattern compare with the Closed Spelter Socket — G-417 Pattern?",
+          "a": "The nearest sibling is the [Closed Spelter Socket — G-417 Pattern](/p/closed-spelter-socket-g-417-pattern), and the two differ on pattern. In detail, pattern is G-416 here and G-417 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Open Spelter Socket — G-416 Pattern from Dubai?",
+          "a": "Yes, Open Spelter Socket — G-416 Pattern goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Open Spelter Socket — G-416 Pattern for delivery from Dubai?",
+          "a": "Yes, we stock Open Spelter Socket — G-416 Pattern at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-dome-head-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Dome Head Terminal and where is it used?",
+          "a": "The Stainless Steel Dome Head Terminal is a stainless wire rope terminal (European type) that fits onto the end of a stainless wire rope. It is listed in sizes 3 mm to 10 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Dome Head Terminal part numbers such as IH-LR-ST-SSDHT-3MM?",
+          "a": "IH-LR-ST-SSDHT-3MM is the 3 mm size, IH-LR-ST-SSDHT-6MM the 6 mm size and IH-LR-ST-SSDHT-10MM the 10 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Dome Head Terminal cover?",
+          "a": "Sizes on the Stainless Steel Dome Head Terminal run 3 mm to 10 mm. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Dome Head Terminal?",
+          "a": "Pick the Stainless Steel Dome Head Terminal row whose rope size matches your rope (3 mm, 4 mm, 5 mm and 6 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Dome Head Terminal carry?",
+          "a": "No load rating is published on the Stainless Steel Dome Head Terminal listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Dome Head Terminal made from and how is it finished?",
+          "a": "The Stainless Steel Dome Head Terminal is made from type 304 or type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Dome Head Terminal come with a test certificate?",
+          "a": "The listing names European type for the Stainless Steel Dome Head Terminal but states no certificate. If your site needs a test certificate or third-party inspection, say so on the RFQ and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Dome Head Terminal?",
+          "a": "Use the Stainless Steel Dome Head Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Dome Head Terminal be fitted and inspected?",
+          "a": "The Stainless Steel Dome Head Terminal must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Dome Head Terminal compare with the Stainless Steel Swage Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Eye Terminal](/p/stainless-steel-swage-eye-terminal), and the two differ on material and size range. In detail, material is type 304 or type 316 stainless steel here and not stated there; size range is 3 mm to 10 mm here and 2 mm to 26 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Dome Head Terminal outside the UAE?",
+          "a": "Yes, Stainless Steel Dome Head Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Dome Head Terminal for delivery from Dubai?",
+          "a": "Yes, we stock Stainless Steel Dome Head Terminal at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-protector-sleeve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Protector Sleeve used for?",
+          "a": "The Stainless Steel Protector Sleeve is a stainless protector sleeve that protects the rope where it leaves a terminal. It is listed in sizes 1/8″ to 3/16″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Protector Sleeve part numbers such as IH-LR-ST-SSPS-012?",
+          "a": "IH-LR-ST-SSPS-012 is the 1/8″ size, IH-LR-ST-SSPS-016 the 5/32″ size and IH-LR-ST-SSPS-019 the 3/16″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Protector Sleeve cover?",
+          "a": "The Stainless Steel Protector Sleeve is listed in 1/8″ to 3/16″. Every size has its own Indus part number with dimensions in the size table; the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Protector Sleeve?",
+          "a": "Pick the size from the table (1/8″ to 3/16″) that matches your rope and the pin or thread it connects to, then quote its Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Protector Sleeve?",
+          "a": "The listing for the Stainless Steel Protector Sleeve gives dimensions and weights but no working load limit, so we do not quote one. Tell us the load on the RFQ and we confirm what the maker publishes before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Protector Sleeve made from and how is it finished?",
+          "a": "The Stainless Steel Protector Sleeve is made from type 304 or type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Protector Sleeve?",
+          "a": "The listing for the Stainless Steel Protector Sleeve names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Protector Sleeve?",
+          "a": "The Stainless Steel Protector Sleeve fits [steel wire rope](/c/steel-wire-rope) of the rope size in the table, and a turnbuckle or pin connects the other end; see [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) for building the whole assembly. For a clipped eye instead, use the [wire rope clips](/c/wire-rope-clips)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Protector Sleeve?",
+          "a": "The Stainless Steel Protector Sleeve must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Protector Sleeve compare with the Stainless Steel Dome Head Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Dome Head Terminal](/p/stainless-steel-dome-head-terminal), and the two differ on pattern and size range. In detail, pattern is not stated here and european type there; size range is 1/8″ to 3/16″ here and 3 mm to 10 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Protector Sleeve outside the UAE?",
+          "a": "Yes. We ship Stainless Steel Protector Sleeve from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Protector Sleeve available from stock in Dubai?",
+          "a": "Yes. Stainless Steel Protector Sleeve sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swage-deck-toggle-terminal-for-cable-railing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swage Deck Toggle Terminal for Cable Railing and where is it used?",
+          "a": "The Stainless Steel Swage Deck Toggle Terminal for Cable Railing is a swage stainless terminal that is pressed onto the end of the rope with a swaging tool. It is listed in sizes 1/8″ to 3/16″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swage Deck Toggle Terminal for Cable Railing part numbers such as IH-LR-ST-SSSDTTCR-012?",
+          "a": "IH-LR-ST-SSSDTTCR-012 is the 1/8″ size and IH-LR-ST-SSSDTTCR-019 the 3/16″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Swage Deck Toggle Terminal for Cable Railing come in?",
+          "a": "The Stainless Steel Swage Deck Toggle Terminal for Cable Railing is listed in 1/8″ to 3/16″. Every size has its own Indus part number with dimensions in the size table; the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swage Deck Toggle Terminal for Cable Railing for my job?",
+          "a": "Pick the Stainless Steel Swage Deck Toggle Terminal for Cable Railing row whose rope size matches your rope (1/8″ and 3/16″) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swage Deck Toggle Terminal for Cable Railing carry?",
+          "a": "The listing for the Stainless Steel Swage Deck Toggle Terminal for Cable Railing gives dimensions and weights but no working load limit, so we do not quote one. Tell us the load on the RFQ and we confirm what the maker publishes before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swage Deck Toggle Terminal for Cable Railing have?",
+          "a": "The Stainless Steel Swage Deck Toggle Terminal for Cable Railing is made from stainless steel 304 or 316 swage terminal deck toggle and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swage Deck Toggle Terminal for Cable Railing?",
+          "a": "The listing for the Stainless Steel Swage Deck Toggle Terminal for Cable Railing names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Swage Deck Toggle Terminal for Cable Railing?",
+          "a": "The Stainless Steel Swage Deck Toggle Terminal for Cable Railing fits [steel wire rope](/c/steel-wire-rope) of the rope size in the table, and a turnbuckle or pin connects the other end; see [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) for building the whole assembly. For a clipped eye instead, use the [wire rope clips](/c/wire-rope-clips)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Swage Deck Toggle Terminal for Cable Railing?",
+          "a": "The Stainless Steel Swage Deck Toggle Terminal for Cable Railing must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swage Deck Toggle Terminal for Cable Railing compare with the Stainless Steel Swage Toggle Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Toggle Terminal](/p/stainless-steel-swage-toggle-terminal), and the two differ on pattern, material and size range. In detail, pattern is not stated here and european type there; material is stainless steel 304 or 316 swage terminal deck toggle here and type 304 or type 316 stainless steel there; size range is 1/8″ to 3/16″ here and 3 mm to 10 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swage Deck Toggle Terminal for Cable Railing outside the UAE?",
+          "a": "Yes. We ship Stainless Steel Swage Deck Toggle Terminal for Cable Railing from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swage Deck Toggle Terminal for Cable Railing for delivery from Dubai?",
+          "a": "Yes. Stainless Steel Swage Deck Toggle Terminal for Cable Railing sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swage-eye-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swage Eye Terminal and where is it used?",
+          "a": "The Stainless Steel Swage Eye Terminal is a swage stainless terminal (European type) that is pressed onto the end of the rope with a swaging tool. It is listed in sizes 2 mm to 26 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swage Eye Terminal part numbers such as IH-LR-ST-SSSET-2MM?",
+          "a": "IH-LR-ST-SSSET-2MM is the 2 mm size, 800 kg minimum breaking load, IH-LR-ST-SSSET-8MM the 8 mm size, 7600 kg minimum breaking load and IH-LR-ST-SSSET-26MM the 26 mm size, 43000 kg minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swage Eye Terminal cover?",
+          "a": "Sizes on the Stainless Steel Swage Eye Terminal run 2 mm to 26 mm. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swage Eye Terminal for my job?",
+          "a": "Pick the Stainless Steel Swage Eye Terminal row whose rope size matches your rope (2 mm, 2.5 mm, 3 mm and 4 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Swage Eye Terminal?",
+          "a": "The Stainless Steel Swage Eye Terminal lists a minimum breaking load of 800 to 43,000 kg, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Swage Eye Terminal made from and how is it finished?",
+          "a": "The Stainless Steel Swage Eye Terminal is finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swage Eye Terminal?",
+          "a": "The Stainless Steel Swage Eye Terminal is listed as European type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Swage Eye Terminal?",
+          "a": "Use the Stainless Steel Swage Eye Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Swage Eye Terminal?",
+          "a": "The Stainless Steel Swage Eye Terminal must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swage Eye Terminal compare with the Stainless Steel Swage Jaw Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Jaw Terminal](/p/stainless-steel-swage-jaw-terminal), and the two differ on rating. In detail, rating is minimum breaking load 800 to 43,000 kg here and minimum breaking load 500 to 43,000 kg there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swage Eye Terminal outside the UAE?",
+          "a": "Yes, Stainless Steel Swage Eye Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Swage Eye Terminal available from stock in Dubai?",
+          "a": "Yes, Stainless Steel Swage Eye Terminal is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swage-jaw-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swage Jaw Terminal used for?",
+          "a": "The Stainless Steel Swage Jaw Terminal is a swage stainless terminal (European type) that is pressed onto the end of the rope with a swaging tool. It is listed in sizes 2 mm to 26 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swage Jaw Terminal part numbers such as IH-LR-ST-SSSJT-2MM?",
+          "a": "IH-LR-ST-SSSJT-2MM is the 2 mm size, 500 kg minimum breaking load, IH-LR-ST-SSSJT-6MM-2 the 6 mm size, 4700 kg minimum breaking load and IH-LR-ST-SSSJT-26MM the 26 mm size, 43000 kg minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Swage Jaw Terminal come in?",
+          "a": "The Stainless Steel Swage Jaw Terminal is listed in 2 mm to 26 mm. Every size has its own Indus part number with dimensions in the size table; the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Swage Jaw Terminal?",
+          "a": "Pick the Stainless Steel Swage Jaw Terminal row whose rope size matches your rope (2 mm, 2.5 mm, 3 mm and 3.2 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Swage Jaw Terminal?",
+          "a": "The Stainless Steel Swage Jaw Terminal lists a minimum breaking load of 500 to 43,000 kg, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Swage Jaw Terminal made from and how is it finished?",
+          "a": "The Stainless Steel Swage Jaw Terminal is finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swage Jaw Terminal?",
+          "a": "The Stainless Steel Swage Jaw Terminal is listed as European type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Swage Jaw Terminal?",
+          "a": "The Stainless Steel Swage Jaw Terminal fits [steel wire rope](/c/steel-wire-rope) of the rope size in the table, and a turnbuckle or pin connects the other end; see [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) for building the whole assembly. For a clipped eye instead, use the [wire rope clips](/c/wire-rope-clips)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Swage Jaw Terminal?",
+          "a": "The Stainless Steel Swage Jaw Terminal must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swage Jaw Terminal compare with the Stainless Steel Swage Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Eye Terminal](/p/stainless-steel-swage-eye-terminal), and the two differ on rating. In detail, rating is minimum breaking load 500 to 43,000 kg here and minimum breaking load 800 to 43,000 kg there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Swage Jaw Terminal from Dubai?",
+          "a": "Yes. We ship Stainless Steel Swage Jaw Terminal from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Swage Jaw Terminal available from stock in Dubai?",
+          "a": "Yes. We keep Stainless Steel Swage Jaw Terminal in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swage-machined-fork-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swage Machined Fork Terminal used for?",
+          "a": "The Stainless Steel Swage Machined Fork Terminal is a swage stainless terminal that is pressed onto the end of the rope with a swaging tool. It is listed in sizes 3 mm to 26 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swage Machined Fork Terminal part numbers such as IH-LR-ST-SSSMFT-3MM?",
+          "a": "IH-LR-ST-SSSMFT-3MM is the 3 mm size, 1300 kg minimum breaking load, IH-LR-ST-SSSMFT-10MM the 10 mm size, 9800 kg minimum breaking load and IH-LR-ST-SSSMFT-26MM the 26 mm size, 43000 kg minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swage Machined Fork Terminal cover?",
+          "a": "The Stainless Steel Swage Machined Fork Terminal is listed in 3 mm to 26 mm. Every size has its own Indus part number with dimensions in the size table; the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swage Machined Fork Terminal for my job?",
+          "a": "Pick the Stainless Steel Swage Machined Fork Terminal row whose rope size matches your rope (3 mm, 4 mm, 5 mm and 6 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swage Machined Fork Terminal carry?",
+          "a": "The Stainless Steel Swage Machined Fork Terminal lists a minimum breaking load of 1,300 to 43,000 kg, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Swage Machined Fork Terminal made from and how is it finished?",
+          "a": "The Stainless Steel Swage Machined Fork Terminal is made from type 304 or type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swage Machined Fork Terminal?",
+          "a": "The Stainless Steel Swage Machined Fork Terminal ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Swage Machined Fork Terminal?",
+          "a": "The Stainless Steel Swage Machined Fork Terminal fits [steel wire rope](/c/steel-wire-rope) of the rope size in the table, and a turnbuckle or pin connects the other end; see [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) for building the whole assembly. For a clipped eye instead, use the [wire rope clips](/c/wire-rope-clips)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Swage Machined Fork Terminal be fitted and inspected?",
+          "a": "The Stainless Steel Swage Machined Fork Terminal must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swage Machined Fork Terminal compare with the Stainless Steel Swage Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Eye Terminal](/p/stainless-steel-swage-eye-terminal), and the two differ on pattern, material and size range. In detail, pattern is not stated here and european type there; material is type 304 or type 316 stainless steel here and not stated there; size range is 3 mm to 26 mm here and 2 mm to 26 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swage Machined Fork Terminal outside the UAE?",
+          "a": "Yes. We ship Stainless Steel Swage Machined Fork Terminal from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swage Machined Fork Terminal for delivery from Dubai?",
+          "a": "Yes. Stainless Steel Swage Machined Fork Terminal sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swage-stud-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swage Stud Terminal and where is it used?",
+          "a": "The Stainless Steel Swage Stud Terminal is a swage stainless terminal (European type) that is pressed onto the end of the rope with a swaging tool. It is listed in sizes M4 to M36, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swage Stud Terminal part numbers such as IH-LR-ST-SSSST-M4?",
+          "a": "IH-LR-ST-SSSST-M4 is the M4 size, 50 kg minimum breaking load, IH-LR-ST-SSSST-M12 the M12 size, 5100 kg minimum breaking load and IH-LR-ST-SSSST-M36 the M36 size, 43000 kg minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Swage Stud Terminal come in?",
+          "a": "Sizes on the Stainless Steel Swage Stud Terminal run M4 to M36. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swage Stud Terminal for my job?",
+          "a": "Pick the Stainless Steel Swage Stud Terminal row whose rope size matches your rope (2 mm, 2.5 mm, 3.2 mm and 3 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Swage Stud Terminal?",
+          "a": "The Stainless Steel Swage Stud Terminal lists a minimum breaking load of 50 to 43,000 kg, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Swage Stud Terminal made from and how is it finished?",
+          "a": "The Stainless Steel Swage Stud Terminal is finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swage Stud Terminal?",
+          "a": "The Stainless Steel Swage Stud Terminal is listed as European type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Swage Stud Terminal?",
+          "a": "Use the Stainless Steel Swage Stud Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Swage Stud Terminal?",
+          "a": "The Stainless Steel Swage Stud Terminal must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swage Stud Terminal compare with the Stainless Steel Swage Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Eye Terminal](/p/stainless-steel-swage-eye-terminal), and the two differ on size range and rating. In detail, size range is M4 to M36 here and 2 mm to 26 mm there; rating is minimum breaking load 50 to 43,000 kg here and minimum breaking load 800 to 43,000 kg there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Swage Stud Terminal from Dubai?",
+          "a": "Yes, Stainless Steel Swage Stud Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Swage Stud Terminal available from stock in Dubai?",
+          "a": "Yes, we stock Stainless Steel Swage Stud Terminal at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swage-toggle-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swage Toggle Terminal used for?",
+          "a": "The Stainless Steel Swage Toggle Terminal is a swage stainless terminal (European type) that is pressed onto the end of the rope with a swaging tool. It is listed in sizes 3 mm to 10 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swage Toggle Terminal part numbers such as IH-LR-ST-SSSTT-3MM?",
+          "a": "IH-LR-ST-SSSTT-3MM is the 3 mm size, 1300 kg minimum breaking load, IH-LR-ST-SSSTT-6MM the 6 mm size, 4100 kg minimum breaking load and IH-LR-ST-SSSTT-10MM the 10 mm size, 9800 kg minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Swage Toggle Terminal come in?",
+          "a": "Sizes on the Stainless Steel Swage Toggle Terminal run 3 mm to 10 mm. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swage Toggle Terminal for my job?",
+          "a": "Pick the Stainless Steel Swage Toggle Terminal row whose rope size matches your rope (3 mm, 4 mm, 5 mm and 6 mm and others) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Swage Toggle Terminal?",
+          "a": "The Stainless Steel Swage Toggle Terminal lists a minimum breaking load of 1,300 to 9,800 kg, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Swage Toggle Terminal made from and how is it finished?",
+          "a": "The Stainless Steel Swage Toggle Terminal is made from type 304 or type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Swage Toggle Terminal come with a test certificate?",
+          "a": "The Stainless Steel Swage Toggle Terminal is listed as European type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Swage Toggle Terminal?",
+          "a": "Use the Stainless Steel Swage Toggle Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Swage Toggle Terminal be fitted and inspected?",
+          "a": "The Stainless Steel Swage Toggle Terminal must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swage Toggle Terminal compare with the Stainless Steel Swage Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Eye Terminal](/p/stainless-steel-swage-eye-terminal), and the two differ on material, size range and rating. In detail, material is type 304 or type 316 stainless steel here and not stated there; size range is 3 mm to 10 mm here and 2 mm to 26 mm there; rating is minimum breaking load 1,300 to 9,800 kg here and minimum breaking load 800 to 43,000 kg there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Swage Toggle Terminal from Dubai?",
+          "a": "Yes, Stainless Steel Swage Toggle Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swage Toggle Terminal for delivery from Dubai?",
+          "a": "Yes, Stainless Steel Swage Toggle Terminal is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swage-toggle-terminal-u-s-type-thin-wall",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) used for?",
+          "a": "The Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) is a swage stainless terminal that is pressed onto the end of the rope with a swaging tool. It is listed in sizes 1/8″ to 1/4″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) part numbers such as IH-LR-ST-SSSTTUST-012?",
+          "a": "IH-LR-ST-SSSTTUST-012 is the 1/8″ size, IH-LR-ST-SSSTTUST-019 the 3/16″ size and IH-LR-ST-SSSTTUST-025 the 1/4″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) come in?",
+          "a": "The Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) is listed in 1/8″ to 1/4″. Every size has its own Indus part number with dimensions in the size table; the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall)?",
+          "a": "Pick the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) row whose rope size matches your rope (1/8″, 3/16″ and 1/4″) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) carry?",
+          "a": "The listing for the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) gives dimensions and weights but no working load limit, so we do not quote one. Tell us the load on the RFQ and we confirm what the maker publishes before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) have?",
+          "a": "The Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) is finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall)?",
+          "a": "The listing for the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall)?",
+          "a": "The Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) fits [steel wire rope](/c/steel-wire-rope) of the rope size in the table, and a turnbuckle or pin connects the other end; see [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) for building the whole assembly. For a clipped eye instead, use the [wire rope clips](/c/wire-rope-clips)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) be fitted and inspected?",
+          "a": "The Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) compare with the Stainless Steel Swage Toggle Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Toggle Terminal](/p/stainless-steel-swage-toggle-terminal), and the two differ on pattern, material and size range. In detail, pattern is not stated here and european type there; material is not stated here and type 304 or type 316 stainless steel there; size range is 1/8″ to 1/4″ here and 3 mm to 10 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) outside the UAE?",
+          "a": "Yes. We ship Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) available from stock in Dubai?",
+          "a": "Yes. Stainless Steel Swage Toggle Terminal U.S. Type (thin-wall) sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swageless-cone-toggle-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swageless Cone Toggle Terminal and where is it used?",
+          "a": "The Stainless Steel Swageless Cone Toggle Terminal is a swageless stainless terminal that fits onto the rope end without a swaging press. It is listed in sizes 3 mm to 16 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swageless Cone Toggle Terminal part numbers such as IH-LR-ST-SCTTSS-3MM?",
+          "a": "IH-LR-ST-SCTTSS-3MM is the 3 mm size, IH-LR-ST-SCTTSS-8MM the 8 mm size and IH-LR-ST-SCTTSS-16MM the 16 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Swageless Cone Toggle Terminal come in?",
+          "a": "Sizes on the Stainless Steel Swageless Cone Toggle Terminal run 3 mm to 16 mm. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Swageless Cone Toggle Terminal?",
+          "a": "Pick the size from the table (3 mm to 16 mm) that matches your rope and the pin or thread it connects to, then quote its Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swageless Cone Toggle Terminal carry?",
+          "a": "No load rating is published on the Stainless Steel Swageless Cone Toggle Terminal listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Swageless Cone Toggle Terminal made from and how is it finished?",
+          "a": "The Stainless Steel Swageless Cone Toggle Terminal is made from type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Swageless Cone Toggle Terminal come with a test certificate?",
+          "a": "The listing for the Stainless Steel Swageless Cone Toggle Terminal names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Swageless Cone Toggle Terminal?",
+          "a": "Use the Stainless Steel Swageless Cone Toggle Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Swageless Cone Toggle Terminal be fitted and inspected?",
+          "a": "Fit the Stainless Steel Swageless Cone Toggle Terminal by following the maker's assembly instruction for the rope size and use the wrench sizes in the SW1 and SW2 columns of the table. Check the rope has not slipped before each use."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swageless Cone Toggle Terminal compare with the Stainless Steel Swage Toggle Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Toggle Terminal](/p/stainless-steel-swage-toggle-terminal), and the two differ on pattern, material and size range. In detail, pattern is not stated here and european type there; material is type 316 stainless steel here and type 304 or type 316 stainless steel there; size range is 3 mm to 16 mm here and 3 mm to 10 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swageless Cone Toggle Terminal outside the UAE?",
+          "a": "Yes, Stainless Steel Swageless Cone Toggle Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swageless Cone Toggle Terminal for delivery from Dubai?",
+          "a": "Yes, we stock Stainless Steel Swageless Cone Toggle Terminal at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swageless-deck-toggle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swageless Deck Toggle and where is it used?",
+          "a": "The Stainless Steel Swageless Deck Toggle is a swageless stainless terminal (US federal specification) that fits onto the rope end without a swaging press. It is listed in sizes 1/8″ to 1/4″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swageless Deck Toggle part numbers such as IH-LR-ST-SDTSS-012?",
+          "a": "IH-LR-ST-SDTSS-012 is the 1/8″ size, IH-LR-ST-SDTSS-019 the 3/16″ size and IH-LR-ST-SDTSS-025 the 1/4″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swageless Deck Toggle cover?",
+          "a": "The Stainless Steel Swageless Deck Toggle is listed in 1/8″ to 1/4″. Every size has its own Indus part number with dimensions in the size table; the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swageless Deck Toggle for my job?",
+          "a": "Pick the Stainless Steel Swageless Deck Toggle row whose rope size matches your rope (1/8″, 5/32″, 3/16″ and 1/4″) and check the end fitting dimensions in the table. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swageless Deck Toggle carry?",
+          "a": "The listing for the Stainless Steel Swageless Deck Toggle gives dimensions and weights but no working load limit, so we do not quote one. Tell us the load on the RFQ and we confirm what the maker publishes before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swageless Deck Toggle have?",
+          "a": "The Stainless Steel Swageless Deck Toggle is made from type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Swageless Deck Toggle come with a test certificate?",
+          "a": "The listing names US federal specification for the Stainless Steel Swageless Deck Toggle but states no certificate. If your site needs a test certificate or third-party inspection, say so on the RFQ and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Swageless Deck Toggle?",
+          "a": "The Stainless Steel Swageless Deck Toggle fits [steel wire rope](/c/steel-wire-rope) of the rope size in the table, and a turnbuckle or pin connects the other end; see [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) for building the whole assembly. For a clipped eye instead, use the [wire rope clips](/c/wire-rope-clips)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Swageless Deck Toggle?",
+          "a": "Fit the Stainless Steel Swageless Deck Toggle by following the maker's assembly instruction for the rope size and use the wrench sizes in the SW1 and SW2 columns of the table. Check the rope has not slipped before each use."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swageless Deck Toggle compare with the Stainless Steel Swageless Cone Toggle Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swageless Cone Toggle Terminal](/p/stainless-steel-swageless-cone-toggle-terminal), and the two differ on pattern and size range. In detail, pattern is US federal specification here and not stated there; size range is 1/8″ to 1/4″ here and 3 mm to 16 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swageless Deck Toggle outside the UAE?",
+          "a": "Yes. We ship Stainless Steel Swageless Deck Toggle from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swageless Deck Toggle for delivery from Dubai?",
+          "a": "Yes. We keep Stainless Steel Swageless Deck Toggle in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swageless-eye-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swageless Eye Terminal used for?",
+          "a": "The Stainless Steel Swageless Eye Terminal is a swageless stainless terminal that fits onto the rope end without a swaging press. It is listed in sizes 3 mm to 16 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swageless Eye Terminal part numbers such as IH-LR-ST-SSSET2-3MM?",
+          "a": "IH-LR-ST-SSSET2-3MM is the 3 mm size, IH-LR-ST-SSSET2-8MM the 8 mm size and IH-LR-ST-SSSET2-16MM the 16 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swageless Eye Terminal cover?",
+          "a": "Sizes on the Stainless Steel Swageless Eye Terminal run 3 mm to 16 mm. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Swageless Eye Terminal?",
+          "a": "Pick the size from the table (3 mm to 16 mm) that matches your rope and the pin or thread it connects to, then quote its Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swageless Eye Terminal carry?",
+          "a": "No load rating is published on the Stainless Steel Swageless Eye Terminal listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swageless Eye Terminal have?",
+          "a": "The Stainless Steel Swageless Eye Terminal is made from type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swageless Eye Terminal?",
+          "a": "The listing for the Stainless Steel Swageless Eye Terminal names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Swageless Eye Terminal?",
+          "a": "Use the Stainless Steel Swageless Eye Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Swageless Eye Terminal be fitted and inspected?",
+          "a": "Fit the Stainless Steel Swageless Eye Terminal by following the maker's assembly instruction for the rope size and use the wrench sizes in the SW1 and SW2 columns of the table. Check the rope has not slipped before each use."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swageless Eye Terminal compare with the Stainless Steel Swage Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Eye Terminal](/p/stainless-steel-swage-eye-terminal), and the two differ on pattern, material and size range. In detail, pattern is not stated here and european type there; material is type 316 stainless steel here and not stated there; size range is 3 mm to 16 mm here and 2 mm to 26 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swageless Eye Terminal outside the UAE?",
+          "a": "Yes, Stainless Steel Swageless Eye Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swageless Eye Terminal for delivery from Dubai?",
+          "a": "Yes, Stainless Steel Swageless Eye Terminal is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swageless-fork-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swageless Fork Terminal used for?",
+          "a": "The Stainless Steel Swageless Fork Terminal is a swageless stainless terminal that fits onto the rope end without a swaging press. It is listed in sizes 3 mm to 16 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swageless Fork Terminal part numbers such as IH-LR-ST-SFTSS-3MM?",
+          "a": "IH-LR-ST-SFTSS-3MM is the 3 mm size, IH-LR-ST-SFTSS-8MM the 8 mm size and IH-LR-ST-SFTSS-16MM the 16 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swageless Fork Terminal cover?",
+          "a": "The Stainless Steel Swageless Fork Terminal is listed in 3 mm to 16 mm. Every size has its own Indus part number with dimensions in the size table; the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swageless Fork Terminal for my job?",
+          "a": "Pick the size from the table (3 mm to 16 mm) that matches your rope and the pin or thread it connects to, then quote its Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swageless Fork Terminal carry?",
+          "a": "The listing for the Stainless Steel Swageless Fork Terminal gives dimensions and weights but no working load limit, so we do not quote one. Tell us the load on the RFQ and we confirm what the maker publishes before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swageless Fork Terminal have?",
+          "a": "The Stainless Steel Swageless Fork Terminal is made from type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swageless Fork Terminal?",
+          "a": "The listing for the Stainless Steel Swageless Fork Terminal names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Swageless Fork Terminal?",
+          "a": "The Stainless Steel Swageless Fork Terminal fits [steel wire rope](/c/steel-wire-rope) of the rope size in the table, and a turnbuckle or pin connects the other end; see [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) for building the whole assembly. For a clipped eye instead, use the [wire rope clips](/c/wire-rope-clips)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Swageless Fork Terminal be fitted and inspected?",
+          "a": "Fit the Stainless Steel Swageless Fork Terminal by following the maker's assembly instruction for the rope size and use the wrench sizes in the SW1 and SW2 columns of the table. Check the rope has not slipped before each use."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swageless Fork Terminal compare with the Stainless Steel Swageless Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swageless Eye Terminal](/p/stainless-steel-swageless-eye-terminal), and the listed data is close (same material and finish), so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Swageless Fork Terminal from Dubai?",
+          "a": "Yes. We ship Stainless Steel Swageless Fork Terminal from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swageless Fork Terminal for delivery from Dubai?",
+          "a": "Yes. Stainless Steel Swageless Fork Terminal sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swageless-lag-screw-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swageless Lag Screw Terminal used for?",
+          "a": "The Stainless Steel Swageless Lag Screw Terminal is a swageless stainless terminal that fits onto the rope end without a swaging press. It is listed in sizes 1/4″ × 2″ to 1/2″ × 2-1/2″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swageless Lag Screw Terminal part numbers such as IH-LR-ST-SLSTSS-025X200?",
+          "a": "IH-LR-ST-SLSTSS-025X200 is the 1/4″ × 2″ size, IH-LR-ST-SLSTSS-031X225 the 5/16″ × 2-1/4″ size and IH-LR-ST-SLSTSS-050X250 the 1/2″ × 2-1/2″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swageless Lag Screw Terminal cover?",
+          "a": "Sizes on the Stainless Steel Swageless Lag Screw Terminal run 1/4″ × 2″ to 1/2″ × 2-1/2″. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swageless Lag Screw Terminal for my job?",
+          "a": "Pick the size from the table (1/4″ × 2″ to 1/2″ × 2-1/2″) that matches your rope and the pin or thread it connects to, then quote its Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Swageless Lag Screw Terminal carry?",
+          "a": "No load rating is published on the Stainless Steel Swageless Lag Screw Terminal listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swageless Lag Screw Terminal have?",
+          "a": "The Stainless Steel Swageless Lag Screw Terminal is made from type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Swageless Lag Screw Terminal come with a test certificate?",
+          "a": "The listing for the Stainless Steel Swageless Lag Screw Terminal names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Swageless Lag Screw Terminal?",
+          "a": "Use the Stainless Steel Swageless Lag Screw Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Swageless Lag Screw Terminal be fitted and inspected?",
+          "a": "Fit the Stainless Steel Swageless Lag Screw Terminal by following the maker's assembly instruction for the rope size and use the wrench sizes in the SW1 and SW2 columns of the table. Check the rope has not slipped before each use."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swageless Lag Screw Terminal compare with the Stainless Steel Swageless Eye Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swageless Eye Terminal](/p/stainless-steel-swageless-eye-terminal), and the listed data is close (same material and finish), so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Swageless Lag Screw Terminal from Dubai?",
+          "a": "Yes, Stainless Steel Swageless Lag Screw Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Swageless Lag Screw Terminal available from stock in Dubai?",
+          "a": "Yes, Stainless Steel Swageless Lag Screw Terminal is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-swageless-stud-terminal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swageless Stud Terminal and where is it used?",
+          "a": "The Stainless Steel Swageless Stud Terminal is a swageless stainless terminal that fits onto the rope end without a swaging press. It is listed in sizes M6 (3 mm) to M24 (16 mm), each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swageless Stud Terminal part numbers such as IH-LR-ST-SSTSS-M6?",
+          "a": "IH-LR-ST-SSTSS-M6 is the M6 (3 mm) size, IH-LR-ST-SSTSS-M16 the M16 (10 mm) size and IH-LR-ST-SSTSS-M24 the M24 (16 mm) size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swageless Stud Terminal cover?",
+          "a": "Sizes on the Stainless Steel Swageless Stud Terminal run M6 (3 mm) to M24 (16 mm). The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Swageless Stud Terminal?",
+          "a": "Pick the size from the table (M6 (3 mm) to M24 (16 mm)) that matches your rope and the pin or thread it connects to, then quote its Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Swageless Stud Terminal?",
+          "a": "No load rating is published on the Stainless Steel Swageless Stud Terminal listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swageless Stud Terminal have?",
+          "a": "The Stainless Steel Swageless Stud Terminal is made from type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swageless Stud Terminal?",
+          "a": "The listing for the Stainless Steel Swageless Stud Terminal names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Swageless Stud Terminal?",
+          "a": "Use the Stainless Steel Swageless Stud Terminal on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Swageless Stud Terminal?",
+          "a": "Fit the Stainless Steel Swageless Stud Terminal by following the maker's assembly instruction for the rope size and use the wrench sizes in the SW1 and SW2 columns of the table. Check the rope has not slipped before each use."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swageless Stud Terminal compare with the Stainless Steel Swage Stud Terminal?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Stud Terminal](/p/stainless-steel-swage-stud-terminal), and the two differ on pattern and material. In detail, pattern is not stated here and european type there; material is type 316 stainless steel here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swageless Stud Terminal outside the UAE?",
+          "a": "Yes, Stainless Steel Swageless Stud Terminal goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swageless Stud Terminal for delivery from Dubai?",
+          "a": "Yes, Stainless Steel Swageless Stud Terminal is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-tapered-terminal-cable-connector",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Tapered Terminal Cable Connector used for?",
+          "a": "The Stainless Steel Tapered Terminal Cable Connector is a stainless wire rope terminal that fits onto the end of a stainless wire rope. It is listed in sizes M6 (M5) to M8, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Tapered Terminal Cable Connector part numbers such as IH-LR-ST-SSTTCC-M6?",
+          "a": "IH-LR-ST-SSTTCC-M6 is the M6 (M5) size, IH-LR-ST-SSTTCC-M8 the M8 (M6) size and IH-LR-ST-SSTTCC-M8-2 the M8 size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Tapered Terminal Cable Connector cover?",
+          "a": "Sizes on the Stainless Steel Tapered Terminal Cable Connector run M6 (M5) to M8. The size table gives each one its own Indus part number and dimensions, and the [sockets & terminals shelf](/c/wire-rope-sockets-terminals) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Tapered Terminal Cable Connector?",
+          "a": "Pick the size from the table (M6 (M5) to M8) that matches your rope and the pin or thread it connects to, then quote its Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Tapered Terminal Cable Connector?",
+          "a": "No load rating is published on the Stainless Steel Tapered Terminal Cable Connector listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Tapered Terminal Cable Connector have?",
+          "a": "The Stainless Steel Tapered Terminal Cable Connector is made from type 304 or type 316 stainless steel and finished polished. Stainless terminals suit wet and marine sites; confirm the grade (304 or 316) on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Tapered Terminal Cable Connector?",
+          "a": "The listing for the Stainless Steel Tapered Terminal Cable Connector names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Tapered Terminal Cable Connector?",
+          "a": "Use the Stainless Steel Tapered Terminal Cable Connector on [steel wire rope](/c/steel-wire-rope) of the matching size. It pairs with turnbuckles and rigging screws at the other end, as [our turnbuckle and guy-wire guide](/blog/turnbuckles-for-guy-wires-and-cable-bracing) explains."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Tapered Terminal Cable Connector be fitted and inspected?",
+          "a": "The Stainless Steel Tapered Terminal Cable Connector must be pressed onto the rope with the correct die set for the rope size, then checked against the maker's pressed dimension. Replace the terminal if the rope strands show movement or damage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Tapered Terminal Cable Connector compare with the Stainless Steel Swage Deck Toggle Terminal for Cable Railing?",
+          "a": "The nearest sibling is the [Stainless Steel Swage Deck Toggle Terminal for Cable Railing](/p/stainless-steel-swage-deck-toggle-terminal-for-cable-railing), and the two differ on material. In detail, material is type 304 or type 316 stainless steel here and stainless steel 304 or 316 swage terminal deck toggle there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Tapered Terminal Cable Connector from Dubai?",
+          "a": "Yes, Stainless Steel Tapered Terminal Cable Connector goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Tapered Terminal Cable Connector for delivery from Dubai?",
+          "a": "Yes, Stainless Steel Tapered Terminal Cable Connector is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

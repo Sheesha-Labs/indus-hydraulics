@@ -1,0 +1,864 @@
+{
+  "family": "ss316l-bsp-fittings",
+  "extraFacts": [
+    {
+      "fact": "ISO 228-1 specifies pipe threads, designated G, where pressure-tight joints are not made on the threads: both the external and internal thread are parallel (BSPP). The seal is made by a washer, O-ring, bonded seal or sealing face, not by the thread flanks.",
+      "source": "ISO 228-1:2000, scope"
+    },
+    {
+      "fact": "ISO 7-1 specifies pipe threads where pressure-tight joints are made on the threads: the external thread is a taper thread (designated R, BSPT) and the internal thread is parallel (Rp) or taper (Rc).",
+      "source": "ISO 7-1:1994, scope"
+    },
+    {
+      "fact": "316L is the low-carbon grade of 316 austenitic stainless steel (carbon 0.03 % maximum), which is why it can be welded without carbide precipitation at the grain boundaries; it contains molybdenum for resistance to chloride pitting.",
+      "source": "ASTM A240 / A276 chemical composition limits for UNS S31603"
+    }
+  ],
+  "products": [
+    {
+      "slug": "bsp-male-flat-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Male Flat Seat used for?",
+          "a": "The BSP Male Flat Seat is a 316L stainless-steel straight hose fitting with a male BSPP thread from G1/8 to G2 and a flat-face seal. It screws into a BSPP-threaded port or onto a female BSP flat-seat swivel and is used on stainless hose assemblies that must survive salt air or chemical washdown."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP Male Flat Seat come in?",
+          "a": "The BSP Male Flat Seat is listed from G1/8 to G2 in BSPP parallel thread. The listing publishes the range without a part-number table, so send us the thread and the hose bore to confirm the exact size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I tell whether a BSP Male Flat Seat or a 60° cone male is needed?",
+          "a": "Look at the mating female: a flat bottom face in the nut or port means a flat-seat male, while a conical seat means a 60° cone male. The two do not seal against each other, so check the seat before ordering, and see the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone) for the cone version."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP Male Flat Seat have?",
+          "a": "The listing gives the BSP Male Flat Seat no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male Flat Seat made from, and where does stainless suit it?",
+          "a": "The BSP Male Flat Seat is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male Flat Seat follow?",
+          "a": "The BSP Male Flat Seat is listed to ISO 228-1 for the BSPP thread and ISO 7-1 for BSPT taper threads in the same family. ISO 228-1 threads are parallel and not pressure-tight on the thread, so this fitting seals on its flat face."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male Flat Seat connect to?",
+          "a": "It mates with a female BSPP flat-seat swivel or a BSPP port with a flat sealing face. The hose end is an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How is a BSP flat-seat male fitting tightened without leaking?",
+          "a": "Seat the flat face squarely on the mating flat face, with its seal in place, and tighten the nut or body to the torque for its thread size without cross-threading. Do not add thread tape on a face-sealing joint, and replace the seal when the joint is opened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a stainless BSP flat-seat male fitting used?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical, food and pharmaceutical plants, wherever a flat-face joint is already specified. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) shows how 316L compares with plated steel in those settings."
+        },
+        {
+          "slot": "K",
+          "q": "BSP male flat seat or BSP male-parallel 60° cone: which one?",
+          "a": "Both have a BSPP male thread from G1/8 to G2, but the BSP Male Flat Seat seals on a flat face and the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone) seals on a 60° cone. Choose by the seat on the mating part; they are not interchangeable."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male Flat Seat supplied from, and can it be exported from Dubai?",
+          "a": "The BSP Male Flat Seat ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP Male Flat Seat in stock in Dubai?",
+          "a": "Yes. We keep the BSP Male Flat Seat in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-parallel-60-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP male-parallel 60° cone used for?",
+          "a": "The BSP male-parallel 60° cone is a 316L stainless-steel straight hose fitting with a male BSPP thread from G1/8 to G2 and a 60° cone seat. It mates with a female BSPP swivel nut that has a 60° cone seat, and is used on stainless hose assemblies for marine and chemical equipment."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP male-parallel 60° cone come in?",
+          "a": "The BSP male-parallel 60° cone is listed from G1/8 to G2 in BSPP thread. The listing gives the range, not a part-number table, so send the thread size and hose bore for us to confirm the exact part."
+        },
+        {
+          "slot": "D",
+          "q": "Which female end does a BSP male-parallel 60° cone connect to?",
+          "a": "It connects to a female BSPP swivel with a 60° cone seat, such as the [BSP swivel female 60° cone](/p/bsp-swivel-female-60-cone), where the male cone nose seats metal to metal in the nut. Do not pair it with a flat-seat female, which seals on a face."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP male-parallel 60° cone have?",
+          "a": "The listing gives the BSP male-parallel 60° cone no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP male-parallel 60° cone made from, and where does stainless suit it?",
+          "a": "The BSP male-parallel 60° cone is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP male-parallel 60° cone follow?",
+          "a": "The BSP male-parallel 60° cone is listed to ISO 228-1 for the BSPP thread and ISO 7-1 for BSPT in the same family. The thread only holds the joint, and the 60° cone seat makes the seal."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP male-parallel 60° cone connect to?",
+          "a": "It connects to a female BSPP swivel with a 60° cone seat. For the hose side it takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I stop a stainless 60° cone BSP fitting from galling?",
+          "a": "Stainless threads can gall when run up dry, so lubricate the thread lightly with a stainless-safe anti-seize, keep it off the cone, and tighten steadily without hammering. Our [guide to why fittings seize in coastal air](/blog/why-fittings-seize-in-coastal-air) covers the causes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a BSP male-parallel 60° cone fitting used?",
+          "a": "It is used on stainless hose assemblies that connect to BSP-threaded equipment with a 60° cone female swivel, common on marine, process and washdown plant. Choose it when the hose end needs a male cone rather than a flat seat."
+        },
+        {
+          "slot": "K",
+          "q": "BSP male-parallel 60° cone or Male BSPT tapered: what is the difference?",
+          "a": "The BSP male-parallel 60° cone has a parallel BSPP thread and seals on its 60° cone, while the [Male BSPT tapered](/p/male-bspt-tapered) has a tapered R thread that seals on the thread itself. They do not mate with the same ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP male-parallel 60° cone supplied from, and can it be exported from Dubai?",
+          "a": "The BSP male-parallel 60° cone ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP male-parallel 60° cone in stock in Dubai?",
+          "a": "Yes, the BSP male-parallel 60° cone is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-60-90-compact-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female 60° (90° compact elbow) used for?",
+          "a": "The BSP swivel female 60° (90° compact elbow) is a 316L stainless-steel elbow with a female BSPP swivel nut and a 60° cone seat, turning the hose through 90° in a compact body. It is used where a hose has to turn sharply at a port, for instance close to a bulkhead, and the swivel nut lets it be tightened without twisting the hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female 60° (90° compact elbow) come in?",
+          "a": "The BSP swivel female 60° (90° compact elbow) is listed from G1/8 to G2 in BSPP thread. The listing gives the range without a part-number table, so send the port thread and hose bore for the exact size."
+        },
+        {
+          "slot": "D",
+          "q": "When should I use the 90° compact elbow instead of the straight BSP swivel female?",
+          "a": "Use the 90° compact elbow where the hose would otherwise have to bend tighter than its minimum bend radius at the port, or where space is short behind the connection. Use the [straight BSP swivel female 60° cone](/p/bsp-swivel-female-60-cone) where the line runs straight on."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female 60° (90° compact elbow) have?",
+          "a": "The listing gives the BSP swivel female 60° (90° compact elbow) no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female 60° (90° compact elbow) made from, and where does stainless suit it?",
+          "a": "The BSP swivel female 60° (90° compact elbow) is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female 60° (90° compact elbow) follow?",
+          "a": "The BSP swivel female 60° (90° compact elbow) is listed to ISO 228-1 for its BSPP thread and ISO 7-1 for the BSPT taper in the family. The 60° cone seat makes the seal; the thread only holds the nut."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female 60° (90° compact elbow) connect to?",
+          "a": "The female swivel nut screws onto a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). The hose side takes an SS316L crimp ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How should a 90° compact elbow be positioned before tightening?",
+          "a": "Run the swivel nut onto the male cone by hand, set the elbow so the hose leaves in the right direction, then tighten the nut only; the body does not turn while the nut is tightened. Keep the hose free of twist, and keep it clear of the elbow's outer face."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a compact 90° BSP stainless elbow useful?",
+          "a": "It is useful on stainless hose runs in cramped marine, process and washdown equipment, where a straight fitting would force an over-tight hose bend. The 316L body keeps its finish in salt air, as the [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) explains."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female 60° 90° compact elbow or the standard 90° elbow: which one?",
+          "a": "The BSP swivel female 60° (90° compact elbow) is the compact version of the 90° turn, while the [BSP Swivel Female 60° cone (90° elbow)](/p/bsp-swivel-female-60-cone-90-elbow) is the 90° elbow with a size table. Choose the compact one where installation space is the limit."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female 60° (90° compact elbow) supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female 60° (90° compact elbow) ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female 60° (90° compact elbow) in stock in Dubai?",
+          "a": "Yes. The BSP swivel female 60° (90° compact elbow) is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-60-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female 60° cone used for?",
+          "a": "The BSP swivel female 60° cone is a 316L stainless-steel female BSPP swivel hose fitting with a 60° cone seat, in the straight form, for ports from G1/8 to G2. It runs the hose straight on from the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-THY-FBX-04-04 on the BSP swivel female 60° cone?",
+          "a": "IH-SS-THY-FBX-04-04 is for a 1/4\" hose (dash -04) and a 1/4\" BSPP female swivel (G1/4-19). In the BSP swivel female 60° cone part numbers the first two-digit number is the hose dash size and the second is the port size, so IH-SS-THY-FBX-12-12 is for a 3/4\" hose and a 3/4\" BSPP female swivel (G3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female 60° cone come in?",
+          "a": "The BSP swivel female 60° cone size table runs from hose size -04 (1/4\") to -16 (1\"). Ports run from 1/4\" BSPP female swivel to 1\" BSPP female swivel, and every part number gives both sizes. The BSP swivel female 60° cone is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact straight part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female 60° cone is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female 60° cone has a 60° cone seat, so it needs a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). Choose it when the cone alone is the specified seal. Choose the straight form where the line runs straight on."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female 60° cone have?",
+          "a": "The listing gives the BSP swivel female 60° cone no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female 60° cone made from, and where does stainless suit it?",
+          "a": "The BSP swivel female 60° cone is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female 60° cone follow?",
+          "a": "The BSP swivel female 60° cone is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the 60° cone of the nut seats metal to metal on the nose of a male BSPP end."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female 60° cone connect to?",
+          "a": "The female swivel nut of the BSP swivel female 60° cone screws onto a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female 60° cone be tightened onto the male end?",
+          "a": "On the BSP swivel female 60° cone, run the nut onto the male end by hand and then tighten it with a spanner without turning the straight body. Here the 60° cone of the nut seats metal to metal on the nose of a male BSPP end, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female 60° cone or BSP swivel female 60° cone with O-ring: which one do I order?",
+          "a": "The standard BSP swivel female 60° cone has no O-ring, so it seals on the metal cone alone. The [BSP swivel female 60° cone with O-ring](/p/bsp-swivel-female-60-cone-with-o-ring) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female 60° cone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female 60° cone supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female 60° cone ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female 60° cone in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the BSP swivel female 60° cone in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-60-cone-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female 60° cone (45° elbow) used for?",
+          "a": "The BSP swivel female 60° cone (45° elbow) is a 316L stainless-steel female BSPP swivel hose fitting with a 60° cone seat, in the 45° elbow form, for ports from G1/8 to G2. It turns the hose through 45° at the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female 60° cone (45° elbow) come in?",
+          "a": "The BSP swivel female 60° cone (45° elbow) is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact 45° elbow part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female 60° cone (45° elbow) is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female 60° cone (45° elbow) has a 60° cone seat, so it needs a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). Choose the 45° elbow form where a gentle 45° turn clears a cable, frame or bulkhead."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female 60° cone (45° elbow) have?",
+          "a": "The listing gives the BSP swivel female 60° cone (45° elbow) no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female 60° cone (45° elbow) made from, and where does stainless suit it?",
+          "a": "The BSP swivel female 60° cone (45° elbow) is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female 60° cone (45° elbow) follow?",
+          "a": "The BSP swivel female 60° cone (45° elbow) is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the 60° cone of the nut seats metal to metal on the nose of a male BSPP end."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female 60° cone (45° elbow) connect to?",
+          "a": "The female swivel nut of the BSP swivel female 60° cone (45° elbow) screws onto a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female 60° cone (45° elbow) be tightened onto the male end?",
+          "a": "On the BSP swivel female 60° cone (45° elbow), run the nut onto the male end by hand and then tighten it with a spanner without turning the 45° elbow body. Here the 60° cone of the nut seats metal to metal on the nose of a male BSPP end, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSP swivel female 60° cone (45° elbow) used in stainless hose assemblies?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical and washdown service, where a gentle 45° turn clears a cable, frame or bulkhead. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers the 316L material."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female 60° cone (45° elbow) or BSP Swivel Female 60° cone (90° elbow): which one do I order?",
+          "a": "The 45° elbow gives a gentle turn, where the 90° form turns the hose through a right angle. The [BSP Swivel Female 60° cone (90° elbow)](/p/bsp-swivel-female-60-cone-90-elbow) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female 60° cone (45° elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female 60° cone (45° elbow) supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female 60° cone (45° elbow) ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female 60° cone (45° elbow) in stock in Dubai?",
+          "a": "Yes, we stock the BSP swivel female 60° cone (45° elbow) at our warehouse in Dubai, UAE and ship worldwide with the best lead times. For a price and delivery date, send the sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-60-cone-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Swivel Female 60° cone (90° elbow) used for?",
+          "a": "The BSP Swivel Female 60° cone (90° elbow) is a 316L stainless-steel female BSPP swivel hose fitting with a 60° cone seat, in the 90° elbow form, for ports from G1/8 to G2. It turns the hose through 90° at the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-T43-FBX90-04-04 on the BSP Swivel Female 60° cone (90° elbow)?",
+          "a": "IH-SS-T43-FBX90-04-04 is for a 1/4\" hose (dash -04) and a 1/4\" BSPP female swivel (G1/4-19). In the BSP Swivel Female 60° cone (90° elbow) part numbers the first two-digit number is the hose dash size and the second is the port size, so IH-SS-T43-FBX90-08-08 is for a 1/2\" hose and a 1/2\" BSPP female swivel (G1/2-14)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP Swivel Female 60° cone (90° elbow) come in?",
+          "a": "The BSP Swivel Female 60° cone (90° elbow) size table runs from hose size -04 (1/4\") to -32 (2\"). Ports run from 1/4\" BSPP female swivel to 2\" BSPP female swivel, and every part number gives both sizes. The BSP Swivel Female 60° cone (90° elbow) is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact 90° elbow part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP Swivel Female 60° cone (90° elbow) is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP Swivel Female 60° cone (90° elbow) has a 60° cone seat, so it needs a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). Choose the 90° elbow form where a hard right-angle turn is needed at the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP Swivel Female 60° cone (90° elbow) have?",
+          "a": "The listing gives the BSP Swivel Female 60° cone (90° elbow) no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Swivel Female 60° cone (90° elbow) made from, and where does stainless suit it?",
+          "a": "The BSP Swivel Female 60° cone (90° elbow) is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Swivel Female 60° cone (90° elbow) follow?",
+          "a": "The BSP Swivel Female 60° cone (90° elbow) is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the 60° cone of the nut seats metal to metal on the nose of a male BSPP end."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Swivel Female 60° cone (90° elbow) connect to?",
+          "a": "The female swivel nut of the BSP Swivel Female 60° cone (90° elbow) screws onto a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP Swivel Female 60° cone (90° elbow) be tightened onto the male end?",
+          "a": "On the BSP Swivel Female 60° cone (90° elbow), run the nut onto the male end by hand and then tighten it with a spanner without turning the 90° elbow body. Here the 60° cone of the nut seats metal to metal on the nose of a male BSPP end, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "K",
+          "q": "BSP Swivel Female 60° cone (90° elbow) or BSP swivel female 60° cone (45° elbow): which one do I order?",
+          "a": "The 90° elbow turns the hose through a right angle, where the 45° form gives a gentler turn. The [BSP swivel female 60° cone (45° elbow)](/p/bsp-swivel-female-60-cone-45-elbow) is the alternative, so check the seat and the angle on the equipment before ordering the BSP Swivel Female 60° cone (90° elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Swivel Female 60° cone (90° elbow) supplied from, and can it be exported from Dubai?",
+          "a": "The BSP Swivel Female 60° cone (90° elbow) ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP Swivel Female 60° cone (90° elbow) in stock in Dubai?",
+          "a": "Yes. The BSP Swivel Female 60° cone (90° elbow) is kept in stock in Dubai, UAE, ready to ship worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-60-cone-with-o-ring",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female 60° cone with O-ring used for?",
+          "a": "The BSP swivel female 60° cone with O-ring is a 316L stainless-steel female BSPP swivel hose fitting with a 60° cone seat with an O-ring, in the straight form, for ports from G1/8 to G2. It runs the hose straight on from the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female 60° cone with O-ring come in?",
+          "a": "The BSP swivel female 60° cone with O-ring is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact straight part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female 60° cone with O-ring is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female 60° cone with O-ring has a 60° cone seat with an O-ring, so it needs a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). Choose it where the added O-ring seal is wanted. Choose the straight form where the line runs straight on."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female 60° cone with O-ring have?",
+          "a": "The listing gives the BSP swivel female 60° cone with O-ring no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female 60° cone with O-ring made from, and where does stainless suit it?",
+          "a": "The BSP swivel female 60° cone with O-ring is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female 60° cone with O-ring follow?",
+          "a": "The BSP swivel female 60° cone with O-ring is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the 60° cone seats on the male nose while the O-ring adds an elastomer seal alongside the metal cone."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female 60° cone with O-ring connect to?",
+          "a": "The female swivel nut of the BSP swivel female 60° cone with O-ring screws onto a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female 60° cone with O-ring be tightened onto the male end?",
+          "a": "On the BSP swivel female 60° cone with O-ring, run the nut onto the male end by hand and then tighten it with a spanner without turning the straight body. Here the 60° cone seats on the male nose while the O-ring adds an elastomer seal alongside the metal cone, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSP swivel female 60° cone with O-ring used in stainless hose assemblies?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical and washdown service, where the line runs straight on. The O-ring suits joints that see vibration or occasional undoing. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers the 316L material."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female 60° cone with O-ring or BSP swivel female 60° cone: which one do I order?",
+          "a": "This version adds an O-ring to the 60° cone, so it seals on both the metal cone and the elastomer. The [BSP swivel female 60° cone](/p/bsp-swivel-female-60-cone) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female 60° cone with O-ring."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female 60° cone with O-ring supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female 60° cone with O-ring ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female 60° cone with O-ring in stock in Dubai?",
+          "a": "Yes. We keep the BSP swivel female 60° cone with O-ring in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-60-cone-with-o-ring-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female 60° cone with O-ring (45° elbow) used for?",
+          "a": "The BSP swivel female 60° cone with O-ring (45° elbow) is a 316L stainless-steel female BSPP swivel hose fitting with a 60° cone seat with an O-ring, in the 45° elbow form, for ports from G1/8 to G2. It turns the hose through 45° at the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female 60° cone with O-ring (45° elbow) come in?",
+          "a": "The BSP swivel female 60° cone with O-ring (45° elbow) is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact 45° elbow part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female 60° cone with O-ring (45° elbow) is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female 60° cone with O-ring (45° elbow) has a 60° cone seat with an O-ring, so it needs a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). Use it where the O-ring seat is required. Choose the 45° elbow form where a gentle 45° turn clears a cable, frame or bulkhead."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female 60° cone with O-ring (45° elbow) have?",
+          "a": "The listing gives the BSP swivel female 60° cone with O-ring (45° elbow) no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female 60° cone with O-ring (45° elbow) made from, and where does stainless suit it?",
+          "a": "The BSP swivel female 60° cone with O-ring (45° elbow) is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female 60° cone with O-ring (45° elbow) follow?",
+          "a": "The BSP swivel female 60° cone with O-ring (45° elbow) is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the 60° cone seats on the male nose while the O-ring adds an elastomer seal alongside the metal cone."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female 60° cone with O-ring (45° elbow) connect to?",
+          "a": "The female swivel nut of the BSP swivel female 60° cone with O-ring (45° elbow) screws onto a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female 60° cone with O-ring (45° elbow) be tightened onto the male end?",
+          "a": "On the BSP swivel female 60° cone with O-ring (45° elbow), run the nut onto the male end by hand and then tighten it with a spanner without turning the 45° elbow body. Here the 60° cone seats on the male nose while the O-ring adds an elastomer seal alongside the metal cone, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSP swivel female 60° cone with O-ring (45° elbow) used in stainless hose assemblies?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical and washdown service, where a gentle 45° turn clears a cable, frame or bulkhead. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers the 316L material."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female 60° cone with O-ring (45° elbow) or BSP swivel female 60° cone with O-ring (90° elbow): which one do I order?",
+          "a": "The 45° elbow with an O-ring gives a gentle turn. The [BSP swivel female 60° cone with O-ring (90° elbow)](/p/bsp-swivel-female-60-cone-with-o-ring-90-elbow) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female 60° cone with O-ring (45° elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female 60° cone with O-ring (45° elbow) supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female 60° cone with O-ring (45° elbow) ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female 60° cone with O-ring (45° elbow) in stock in Dubai?",
+          "a": "Yes, the BSP swivel female 60° cone with O-ring (45° elbow) is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-60-cone-with-o-ring-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female 60° cone with O-ring (90° elbow) used for?",
+          "a": "The BSP swivel female 60° cone with O-ring (90° elbow) is a 316L stainless-steel female BSPP swivel hose fitting with a 60° cone seat with an O-ring, in the 90° elbow form, for ports from G1/8 to G2. It turns the hose through 90° at the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female 60° cone with O-ring (90° elbow) come in?",
+          "a": "The BSP swivel female 60° cone with O-ring (90° elbow) is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact 90° elbow part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female 60° cone with O-ring (90° elbow) is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female 60° cone with O-ring (90° elbow) has a 60° cone seat with an O-ring, so it needs a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). Use it where the O-ring seat is required. Choose the 90° elbow form where a hard right-angle turn is needed at the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female 60° cone with O-ring (90° elbow) have?",
+          "a": "The listing gives the BSP swivel female 60° cone with O-ring (90° elbow) no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female 60° cone with O-ring (90° elbow) made from, and where does stainless suit it?",
+          "a": "The BSP swivel female 60° cone with O-ring (90° elbow) is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female 60° cone with O-ring (90° elbow) follow?",
+          "a": "The BSP swivel female 60° cone with O-ring (90° elbow) is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the 60° cone seats on the male nose while the O-ring adds an elastomer seal alongside the metal cone."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female 60° cone with O-ring (90° elbow) connect to?",
+          "a": "The female swivel nut of the BSP swivel female 60° cone with O-ring (90° elbow) screws onto a male BSPP end with a 60° cone nose, such as the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female 60° cone with O-ring (90° elbow) be tightened onto the male end?",
+          "a": "On the BSP swivel female 60° cone with O-ring (90° elbow), run the nut onto the male end by hand and then tighten it with a spanner without turning the 90° elbow body. Here the 60° cone seats on the male nose while the O-ring adds an elastomer seal alongside the metal cone, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSP swivel female 60° cone with O-ring (90° elbow) used in stainless hose assemblies?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical and washdown service, where a hard right-angle turn is needed at the port. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers the 316L material."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female 60° cone with O-ring (90° elbow) or BSP swivel female 60° cone with O-ring (45° elbow): which one do I order?",
+          "a": "The 90° elbow with an O-ring turns the hose through a right angle. The [BSP swivel female 60° cone with O-ring (45° elbow)](/p/bsp-swivel-female-60-cone-with-o-ring-45-elbow) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female 60° cone with O-ring (90° elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female 60° cone with O-ring (90° elbow) supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female 60° cone with O-ring (90° elbow) ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female 60° cone with O-ring (90° elbow) in stock in Dubai?",
+          "a": "Yes. The BSP swivel female 60° cone with O-ring (90° elbow) is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-flat-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female flat seat used for?",
+          "a": "The BSP swivel female flat seat is a 316L stainless-steel female BSPP swivel hose fitting with a flat-face seal, in the straight form, for ports from G1/8 to G2. It runs the hose straight on from the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female flat seat come in?",
+          "a": "The BSP swivel female flat seat is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact straight part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female flat seat is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female flat seat has a flat-face seal, so it needs a male BSPP end with a flat sealing face, such as the [BSP Male Flat Seat](/p/bsp-male-flat-seat). A flat-seat nut will not seal on a cone nose. Choose the straight form where the line runs straight on."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female flat seat have?",
+          "a": "The listing gives the BSP swivel female flat seat no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female flat seat made from, and where does stainless suit it?",
+          "a": "The BSP swivel female flat seat is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female flat seat follow?",
+          "a": "The BSP swivel female flat seat is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the flat face of the nut seals face to face against a flat-faced male end."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female flat seat connect to?",
+          "a": "The female swivel nut of the BSP swivel female flat seat screws onto a male BSPP end with a flat sealing face, such as the [BSP Male Flat Seat](/p/bsp-male-flat-seat). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female flat seat be tightened onto the male end?",
+          "a": "On the BSP swivel female flat seat, run the nut onto the male end by hand and then tighten it with a spanner without turning the straight body. Here the flat face of the nut seals face to face against a flat-faced male end, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSP swivel female flat seat used in stainless hose assemblies?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical and washdown service, where the line runs straight on. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers the 316L material."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female flat seat or BSP swivel female 60° cone: which one do I order?",
+          "a": "The flat seat seals on a flat face, where the cone version seals on a 60° cone. The [BSP swivel female 60° cone](/p/bsp-swivel-female-60-cone) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female flat seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female flat seat supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female flat seat ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female flat seat in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the BSP swivel female flat seat in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-flat-seat-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female flat seat (45° elbow) used for?",
+          "a": "The BSP swivel female flat seat (45° elbow) is a 316L stainless-steel female BSPP swivel hose fitting with a flat-face seal, in the 45° elbow form, for ports from G1/8 to G2. It turns the hose through 45° at the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female flat seat (45° elbow) come in?",
+          "a": "The BSP swivel female flat seat (45° elbow) is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact 45° elbow part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female flat seat (45° elbow) is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female flat seat (45° elbow) has a flat-face seal, so it needs a male BSPP end with a flat sealing face, such as the [BSP Male Flat Seat](/p/bsp-male-flat-seat). Choose the 45° elbow form where a gentle 45° turn clears a cable, frame or bulkhead."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female flat seat (45° elbow) have?",
+          "a": "The listing gives the BSP swivel female flat seat (45° elbow) no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female flat seat (45° elbow) made from, and where does stainless suit it?",
+          "a": "The BSP swivel female flat seat (45° elbow) is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female flat seat (45° elbow) follow?",
+          "a": "The BSP swivel female flat seat (45° elbow) is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the flat face of the nut seals face to face against a flat-faced male end."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female flat seat (45° elbow) connect to?",
+          "a": "The female swivel nut of the BSP swivel female flat seat (45° elbow) screws onto a male BSPP end with a flat sealing face, such as the [BSP Male Flat Seat](/p/bsp-male-flat-seat). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female flat seat (45° elbow) be tightened onto the male end?",
+          "a": "On the BSP swivel female flat seat (45° elbow), run the nut onto the male end by hand and then tighten it with a spanner without turning the 45° elbow body. Here the flat face of the nut seals face to face against a flat-faced male end, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSP swivel female flat seat (45° elbow) used in stainless hose assemblies?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical and washdown service, where a gentle 45° turn clears a cable, frame or bulkhead. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers the 316L material."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female flat seat (45° elbow) or BSP swivel female flat seat (90° elbow): which one do I order?",
+          "a": "The 45° flat-seat elbow gives a gentle turn. The [BSP swivel female flat seat (90° elbow)](/p/bsp-swivel-female-flat-seat-90-elbow) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female flat seat (45° elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female flat seat (45° elbow) supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female flat seat (45° elbow) ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female flat seat (45° elbow) in stock in Dubai?",
+          "a": "Yes, we stock the BSP swivel female flat seat (45° elbow) at our warehouse in Dubai, UAE and ship worldwide with the best lead times. For a price and delivery date, send the sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-swivel-female-flat-seat-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP swivel female flat seat (90° elbow) used for?",
+          "a": "The BSP swivel female flat seat (90° elbow) is a 316L stainless-steel female BSPP swivel hose fitting with a flat-face seal, in the 90° elbow form, for ports from G1/8 to G2. It turns the hose through 90° at the port and uses a swivel nut, so the hose does not have to be twisted while the nut is tightened onto the port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP swivel female flat seat (90° elbow) come in?",
+          "a": "The BSP swivel female flat seat (90° elbow) is listed from G1/8 to G2 in BSPP thread. The listing gives the range rather than a part-number table, so send the thread size and the hose bore and we confirm the exact 90° elbow part."
+        },
+        {
+          "slot": "D",
+          "q": "How do I decide whether the BSP swivel female flat seat (90° elbow) is the right BSP swivel end?",
+          "a": "Check the male end it will meet: the BSP swivel female flat seat (90° elbow) has a flat-face seal, so it needs a male BSPP end with a flat sealing face, such as the [BSP Male Flat Seat](/p/bsp-male-flat-seat). Choose the 90° elbow form where a hard right-angle turn is needed at the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the BSP swivel female flat seat (90° elbow) have?",
+          "a": "The listing gives the BSP swivel female flat seat (90° elbow) no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP swivel female flat seat (90° elbow) made from, and where does stainless suit it?",
+          "a": "The BSP swivel female flat seat (90° elbow) is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP swivel female flat seat (90° elbow) follow?",
+          "a": "The BSP swivel female flat seat (90° elbow) is listed to ISO 228-1 for its BSPP thread, with ISO 7-1 also named for the BSPT taper in the family. The thread holds the nut; the seat does the sealing, and here the flat face of the nut seals face to face against a flat-faced male end."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP swivel female flat seat (90° elbow) connect to?",
+          "a": "The female swivel nut of the BSP swivel female flat seat (90° elbow) screws onto a male BSPP end with a flat sealing face, such as the [BSP Male Flat Seat](/p/bsp-male-flat-seat). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP swivel female flat seat (90° elbow) be tightened onto the male end?",
+          "a": "On the BSP swivel female flat seat (90° elbow), run the nut onto the male end by hand and then tighten it with a spanner without turning the 90° elbow body. Here the flat face of the nut seals face to face against a flat-faced male end, so the seat must meet squarely. Lightly lubricate the stainless thread to prevent galling, and keep lubricant off the seat."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSP swivel female flat seat (90° elbow) used in stainless hose assemblies?",
+          "a": "It is used on stainless hose assemblies for BSPP equipment in marine, chemical and washdown service, where a hard right-angle turn is needed at the port. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers the 316L material."
+        },
+        {
+          "slot": "K",
+          "q": "BSP swivel female flat seat (90° elbow) or BSP swivel female flat seat (45° elbow): which one do I order?",
+          "a": "The 90° flat-seat elbow turns the hose through a right angle. The [BSP swivel female flat seat (45° elbow)](/p/bsp-swivel-female-flat-seat-45-elbow) is the alternative, so check the seat and the angle on the equipment before ordering the BSP swivel female flat seat (90° elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP swivel female flat seat (90° elbow) supplied from, and can it be exported from Dubai?",
+          "a": "The BSP swivel female flat seat (90° elbow) ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP swivel female flat seat (90° elbow) in stock in Dubai?",
+          "a": "Yes. The BSP swivel female flat seat (90° elbow) is kept in stock in Dubai, UAE, ready to ship worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "male-bspt-tapered",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male BSPT tapered used for?",
+          "a": "The Male BSPT tapered is a 316L stainless-steel straight hose fitting with a tapered R thread from R1/8 to R2 that seals on the thread itself as it is tightened. It screws into a female BSP port that takes a tapered or parallel Rp thread, and is used on stainless hose assemblies where the thread joint, not a washer or cone, is the seal."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Male BSPT tapered come in?",
+          "a": "The Male BSPT tapered is listed from R1/8 to R2 in taper thread. The listing gives the range, not a part-number table, so send the thread size and hose bore for us to confirm the exact part."
+        },
+        {
+          "slot": "D",
+          "q": "Can a Male BSPT tapered fitting go into a BSPP port?",
+          "a": "A tapered R thread engages a parallel BSPP thread poorly and may leak or damage the port, so match taper to taper (or to a parallel Rp port that is designed for it). For a parallel male thread use the [BSP Male Flat Seat](/p/bsp-male-flat-seat) or the 60° cone version."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Male BSPT tapered have?",
+          "a": "The listing gives the Male BSPT tapered no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPT R1/8 to R2 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male BSPT tapered made from, and where does stainless suit it?",
+          "a": "The Male BSPT tapered is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male BSPT tapered follow?",
+          "a": "The Male BSPT tapered is listed to ISO 7-1, the standard for pipe threads where the joint is made on the thread, with ISO 228-1 also named for the parallel BSPP fittings in the family. The external thread is a taper R thread."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Male BSPT tapered connect to?",
+          "a": "It screws into a female taper (Rc) or parallel (Rp) BSP port as defined in ISO 7-1. The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should a stainless BSPT tapered thread be sealed?",
+          "a": "Use a PTFE tape or an anti-seize sealant suitable for stainless steel on the taper thread and tighten by turns, not to a torque: the thread seals as it wedges. Stainless taper threads gall readily, so never over-tighten, and avoid reusing a fitting that has been run hard."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a stainless male BSPT thread used on hose assemblies?",
+          "a": "It is used on stainless hose assemblies that screw into BSPT or Rp ports on pumps, valves and instrument connections in marine, chemical and washdown plant. The [why fittings seize in coastal air](/blog/why-fittings-seize-in-coastal-air) article covers galling and corrosion risks."
+        },
+        {
+          "slot": "K",
+          "q": "Male BSPT tapered or BSP male-parallel 60° cone: how do they differ?",
+          "a": "The Male BSPT tapered has an R taper thread that seals on the thread, while the [BSP male-parallel 60° cone](/p/bsp-male-parallel-60-cone) has a parallel thread and seals on a 60° cone. They fit different ports, so identify the port thread first."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male BSPT tapered supplied from, and can it be exported from Dubai?",
+          "a": "The Male BSPT tapered ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Male BSPT tapered in stock in Dubai?",
+          "a": "Yes. We keep the Male BSPT tapered in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

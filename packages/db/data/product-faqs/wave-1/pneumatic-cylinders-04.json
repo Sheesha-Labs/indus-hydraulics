@@ -1,0 +1,1733 @@
+{
+  "family": "pneumatic-cylinders-04",
+  "extraFacts": [
+    {
+      "fact": "Parker builds the 4MA Series NFPA pneumatic tie-rod cylinder in bores of 1-1/2, 2, 2-1/2, 3-1/4, 4, 5, 6 and 8 inch.",
+      "source": "Parker Hannifin, Pneumatic NFPA Cylinder - 4MA Series product page (ph.parker.com)"
+    },
+    {
+      "fact": "Standard 4MA ports are NPTF: 3/8\" on the 1-1/2\", 2\" and 2-1/2\" bores, 1/2\" on the 3-1/4\", 4\" and 5\" bores and 3/4\" on the 6\" and 8\" bores; BSPP and other port threads are options.",
+      "source": "Parker Pneumatic Division catalogue 0900P, Tie Rod Cylinders, 4MA port size table"
+    },
+    {
+      "fact": "Parker's standard-seal operating temperature for its NFPA tie-rod air cylinders is -10°F to +165°F, which is about -23°C to +74°C.",
+      "source": "Parker Industrial Cylinder Products catalogue 0106; conversion °C = (°F - 32) / 1.8"
+    },
+    {
+      "fact": "250 psi is about 17 bar and 80 psi is about 5.5 bar (1 bar = 14.5038 psi).",
+      "source": "Unit conversion, 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "Theoretical extend force of an air cylinder = piston area x pressure, with piston area = pi x bore^2 / 4. Piston areas: 1-1/2\" bore 1.77 sq in, 2\" 3.14, 2-1/2\" 4.91, 3-1/4\" 8.3, 4\" 12.57, 5\" 19.63, 6\" 28.27, 8\" 50.27. Extend force at 80 psi: 1-1/2\" about 141 lbf (64 kgf), 2\" 251 lbf (114 kgf), 2-1/2\" 393 lbf (178 kgf), 3-1/4\" 664 lbf (301 kgf), 4\" 1005 lbf (456 kgf), 5\" 1571 lbf (713 kgf), 6\" 2262 lbf (1026 kgf), 8\" 4021 lbf (1824 kgf). Retract force is lower by the rod area, and a load factor of 50 to 75 percent of theoretical force is used for dynamic loads.",
+      "source": "F = P x A (basic fluid power); Parker Pneumatic Division catalogue 0900P, cylinder force tables and sizing notes"
+    },
+    {
+      "fact": "In a Parker NFPA tie-rod cylinder model code the first figure is the bore in inches (e.g. 2.00) and the last figure is the stroke in inches (e.g. 04.00).",
+      "source": "Parker Pneumatic Division catalogue 0900P, 4MA How to Order / model number breakdown"
+    },
+    {
+      "fact": "Parker NFPA tie-rod cylinders are offered with several rod-end thread styles, including small male, intermediate male, full male and short female; a short female rod end has the thread tapped into the end of the piston rod.",
+      "source": "Parker Industrial Cylinder Products catalogue 0106, rod end styles"
+    },
+    {
+      "fact": "The Parker Lipseal piston uses lip-type piston seals that seal on pressure and are suited to non-lubricated air service. A magnetic ring on the piston lets an external reed or solid-state switch sense piston position.",
+      "source": "Parker Pneumatic Division catalogue 0900P, 4MA standard specifications (Lipseal piston, magnetic piston option)"
+    },
+    {
+      "fact": "Linear-acting pneumatic power engines (air cylinders) are classified under HS subheading 8412.31.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.12, subheading 8412.31"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-1-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 1 1/2\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 1 1/2\" bore, a short female (internally threaded) rod end and Parker rod code No. 3. We list 96 built part numbers for it, used for light pushing, stopping, ejecting and clamping on conveyors, assembly cells and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039164 in the 1 1/2\" bore short female listing describe?",
+          "a": "1P4MA0039164 is one complete 1 1/2\" bore 4MA short female No. 3 cylinder: a 0.38\" stroke with side tap mounting (MS4). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039265, a 4\" stroke with side tap (MS4). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 1 1/2\" bore cylinder?",
+          "a": "Strokes run from 0.38\" to 38.75\" across the 96 part numbers in this 1 1/2\" bore listing, and 1\", 2\", 3\" and 4\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 1 1/2\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 1 1/2\" bore has a piston area of 1.77 sq in, so the 1 1/2\" bore 4MA short female No. 3 cylinder pushes about 141 lbf (64 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 1 1/2\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 1 1/2\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 1 1/2\" bore short female cylinder need lubricated air?",
+          "a": "No. The 1 1/2\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 1 1/2\" bore listing include?",
+          "a": "The 1 1/2\" bore rows are built with NFPA mounts, most often side tap (MS4), head rectangular flange (MF1), cap detachable clevis (MP2), side lug (MS2) and cap fixed clevis (MP1). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 1 1/2\" bore cylinder have?",
+          "a": "Parker's standard port on the 1 1/2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 5/8\" and 1\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 1 1/2\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 1 1/2\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 1 1/2\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 1 1/2\" bore and the NFPA mounts; this listing holds 96 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 1 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-1-1-2-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 1 1/2\" bore cylinder?",
+          "a": "For customs, the 1 1/2\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 1 1/2\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA short female Rod Number 3, 1 1/2\" bore cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 2 1/2\" bore?",
+          "a": "It is a 2 1/2\" bore Parker 4MA NFPA tie-rod air cylinder with a short female rod end and rod code No. 3, built in 93 stroke and mount combinations. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039090 in the 2 1/2\" bore short female listing describe?",
+          "a": "1P4MA0039090 is one complete 2 1/2\" bore 4MA short female No. 3 cylinder: a 1\" stroke with cap fixed clevis mounting (MP1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039317, an 8\" stroke with cap fixed clevis (MP1). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 2 1/2\" bore cylinder?",
+          "a": "Strokes run from 1\" to 102\" across the 93 part numbers in this 2 1/2\" bore listing, and 2\", 3\", 6\" and 8\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2 1/2\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so the 2 1/2\" bore 4MA short female No. 3 cylinder pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 2 1/2\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 2 1/2\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 2 1/2\" bore short female cylinder need lubricated air?",
+          "a": "No. The 2 1/2\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 2 1/2\" bore listing include?",
+          "a": "The 2 1/2\" bore rows are built with NFPA mounts, most often cap detachable clevis (MP2), head rectangular flange (MF1), cap fixed clevis (MP1), sleeve nut with side tap (MX5, MS4) and side tap (MS4). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 2 1/2\" bore cylinder have?",
+          "a": "Parker's standard port on the 2 1/2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 5/8\" and 1\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 2 1/2\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 2 1/2\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 2 1/2\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 2 1/2\" bore and the NFPA mounts; this listing holds 93 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 2 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-2-1-2-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 2 1/2\" bore cylinder?",
+          "a": "For customs, the 2 1/2\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 2 1/2\" bore cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA short female Rod Number 3, 2 1/2\" bore cylinders is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the part numbers, or bore, stroke and mount, on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 2\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 2\" bore, a short female (internally threaded) rod end and Parker rod code No. 3. We list 80 built part numbers for it, used for light pushing, stopping, ejecting and clamping on conveyors, assembly cells and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039874 in the 2\" bore short female listing describe?",
+          "a": "1P4MA0039874 is one complete 2\" bore 4MA short female No. 3 cylinder: a 0.31\" stroke with head trunnion mounting (MT1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039177, a 6\" stroke with cap fixed clevis (MP1). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 2\" bore cylinder?",
+          "a": "Strokes run from 0.31\" to 58\" across the 80 part numbers in this 2\" bore listing, and 2\", 3\", 5\" and 6\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 2\" bore has a piston area of 3.14 sq in, so the 2\" bore 4MA short female No. 3 cylinder pushes about 251 lbf (114 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 2\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 2\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 2\" bore short female cylinder need lubricated air?",
+          "a": "No. The 2\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 2\" bore listing include?",
+          "a": "The 2\" bore rows are built with NFPA mounts, most often cap detachable clevis (MP2), cap fixed clevis (MP1), head rectangular flange (MF1), sleeve nut with side tap (MX5, MS4) and head trunnion (MT1). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 2\" bore cylinder have?",
+          "a": "Parker's standard port on the 2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 5/8\" and 1\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 2\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 2\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 2\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 2\" bore and the NFPA mounts; this listing holds 80 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-2-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 2\" bore cylinder?",
+          "a": "For customs, the 2\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 2\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA short female Rod Number 3, 2\" bore cylinders in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the part numbers, or bore, stroke and mount, via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 3 1/4\" bore?",
+          "a": "It is a 3 1/4\" bore Parker 4MA NFPA tie-rod air cylinder with a short female rod end and rod code No. 3, built in 70 stroke and mount combinations. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039858 in the 3 1/4\" bore short female listing describe?",
+          "a": "1P4MA0039858 is one complete 3 1/4\" bore 4MA short female No. 3 cylinder: a 1\" stroke with cap detachable eye mounting (MP4). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039624, an 11\" stroke with head rectangular flange (MF1). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 3 1/4\" bore cylinder?",
+          "a": "Strokes run from 1\" to 64\" across the 70 part numbers in this 3 1/4\" bore listing, and 7\", 10\", 11\" and 12\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 3 1/4\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 3 1/4\" bore has a piston area of 8.3 sq in, so the 3 1/4\" bore 4MA short female No. 3 cylinder pushes about 664 lbf (301 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 3 1/4\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 3 1/4\" bore listing carry 250 psi, about 17 bar, apart from one row that shows 100 psi, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 3 1/4\" bore short female cylinder need lubricated air?",
+          "a": "No. The 3 1/4\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 3 1/4\" bore listing include?",
+          "a": "The 3 1/4\" bore rows are built with NFPA mounts, most often head rectangular flange (MF1), cap fixed clevis (MP1), cap detachable clevis (MP2), head trunnion (MT1) and sleeve nut with side tap (MX5, MS4). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 3 1/4\" bore cylinder have?",
+          "a": "Parker's standard port on the 3 1/4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 1\" and 1 3/8\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 3 1/4\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 3 1/4\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 3 1/4\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 3 1/4\" bore and the NFPA mounts; this listing holds 70 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 3 1/4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-3-1-4-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 3 1/4\" bore cylinder?",
+          "a": "For customs, the 3 1/4\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 3 1/4\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA short female Rod Number 3, 3 1/4\" bore cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 4\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 4\" bore, a short female (internally threaded) rod end and Parker rod code No. 3. We list 66 built part numbers for it, used for pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039390 in the 4\" bore short female listing describe?",
+          "a": "1P4MA0039390 is one complete 4\" bore 4MA short female No. 3 cylinder: a 1\" stroke with cap detachable eye mounting (MP4). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039080, a 12\" stroke with cap detachable clevis (MP2). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 4\" bore cylinder?",
+          "a": "Strokes run from 1\" to 78.25\" across the 66 part numbers in this 4\" bore listing, and 2.5\", 6\", 8\" and 12\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 4\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so the 4\" bore 4MA short female No. 3 cylinder pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 4\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 4\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 4\" bore short female cylinder need lubricated air?",
+          "a": "No. The 4\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 4\" bore listing include?",
+          "a": "The 4\" bore rows are built with NFPA mounts, most often cap fixed clevis (MP1), cap detachable clevis (MP2), head rectangular flange (MF1), head trunnion (MT1) and side tap (MS4). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 4\" bore cylinder have?",
+          "a": "Parker's standard port on the 4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 1\" and 1 3/8\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 4\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 4\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 4\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 4\" bore and the NFPA mounts; this listing holds 66 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-4-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 4\" bore cylinder?",
+          "a": "For customs, the 4\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 4\" bore cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA short female Rod Number 3, 4\" bore cylinders is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the part numbers, or bore, stroke and mount, on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-5-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 5\" bore?",
+          "a": "It is a 5\" bore Parker 4MA NFPA tie-rod air cylinder with a short female rod end and rod code No. 3, built in 33 stroke and mount combinations. Typical uses are heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039705 in the 5\" bore short female listing describe?",
+          "a": "1P4MA0039705 is one complete 5\" bore 4MA short female No. 3 cylinder: a 1\" stroke with cap fixed clevis mounting (MP1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039143, a 12\" stroke with side end angle (MS1). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 5\" bore cylinder?",
+          "a": "Strokes run from 0.5\" to 42\" across the 33 part numbers in this 5\" bore listing, and 2\", 3.7\", 5\" and 8\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 5\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 5\" bore has a piston area of 19.63 sq in, so the 5\" bore 4MA short female No. 3 cylinder pushes about 1571 lbf (713 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 5\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 5\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 5\" bore short female cylinder need lubricated air?",
+          "a": "No. The 5\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 5\" bore listing include?",
+          "a": "The 5\" bore rows are built with NFPA mounts, most often cap detachable clevis (MP2), cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable eye (MP4) and head trunnion (MT1). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 5\" bore cylinder have?",
+          "a": "Parker's standard port on the 5\" bore 4MA is 1/2\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 1\" and 1 3/8\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 5\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 5\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 5\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 5\" bore and the NFPA mounts; this listing holds 33 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 5\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-5-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 5\" bore cylinder?",
+          "a": "For customs, the 5\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 5\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA short female Rod Number 3, 5\" bore cylinders in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the part numbers, or bore, stroke and mount, via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-6-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 6\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 6\" bore, a short female (internally threaded) rod end and Parker rod code No. 3. We list 26 built part numbers for it, used for heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039463 in the 6\" bore short female listing describe?",
+          "a": "1P4MA0039463 is one complete 6\" bore 4MA short female No. 3 cylinder: a 2\" stroke with head rectangular flange mounting (MF1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039559, an 18\" stroke with sleeve nut (MX5). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 6\" bore cylinder?",
+          "a": "Strokes run from 2\" to 30\" across the 26 part numbers in this 6\" bore listing, and 4\", 5\", 12\" and 24\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 6\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 6\" bore has a piston area of 28.27 sq in, so the 6\" bore 4MA short female No. 3 cylinder pushes about 2262 lbf (1026 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 6\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 6\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 6\" bore short female cylinder need lubricated air?",
+          "a": "No. The 6\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 6\" bore listing include?",
+          "a": "The 6\" bore rows are built with NFPA mounts, most often head rectangular flange (MF1), cap fixed clevis (MP1), tie-rods extended head end (MX3), cap detachable clevis (MP2) and side tap (MS4). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 6\" bore cylinder have?",
+          "a": "Parker's standard port on the 6\" bore 4MA is 3/4\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 1 3/8\" and 1 3/4\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 6\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 6\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 6\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 6\" bore and the NFPA mounts; this listing holds 26 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 6\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-6-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 6\" bore cylinder?",
+          "a": "For customs, the 6\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 6\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA short female Rod Number 3, 6\" bore cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-8-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with short female rod end, Rod Number 3, 8\" bore?",
+          "a": "It is an 8\" bore Parker 4MA NFPA tie-rod air cylinder with a short female rod end and rod code No. 3, built in 10 stroke and mount combinations. Typical uses are heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0039230 in the 8\" bore short female listing describe?",
+          "a": "1P4MA0039230 is one complete 8\" bore 4MA short female No. 3 cylinder: a 3\" stroke with cap fixed clevis mounting (MP1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0039311, a 26\" stroke with cap detachable clevis (MP2). Part numbers here begin 1P4MA003."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA short female Rod Number 3, 8\" bore cylinder?",
+          "a": "Strokes run from 3\" to 37.63\" across the 10 part numbers in this 8\" bore listing, and 3\", 4\", 20\" and 30\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does an 8\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "An 8\" bore has a piston area of 50.27 sq in, so the 8\" bore 4MA short female No. 3 cylinder pushes about 4021 lbf (1824 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA short female Rod Number 3, 8\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA short female Rod Number 3, 8\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 8\" bore short female cylinder need lubricated air?",
+          "a": "No. The 8\" bore 4MA short female No. 3 cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA short female Rod Number 3, 8\" bore listing include?",
+          "a": "The 8\" bore rows are built with NFPA mounts, most often cap fixed clevis (MP1), cap detachable clevis (MP2), side lug (MS2) and head square (ME3). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA short female Rod Number 3, 8\" bore cylinder have?",
+          "a": "Parker's standard port on the 8\" bore 4MA is 3/4\" NPTF; other port threads are made to order. The short female rod end takes a male-threaded rod clevis, rod eye or coupler stud. Rod diameters in the rows include 1 3/8\" and 1 3/4\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain an 8\" bore Parker 4MA short female tie rod cylinder?",
+          "a": "Align the 8\" bore 4MA short female No. 3 rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 8\" bore short female Rod Number 3 and small male cylinders?",
+          "a": "They share the 8\" bore and the NFPA mounts; this listing holds 10 builds with an internally threaded rod end, while the small male page holds builds with an external rod thread. If your cylinder has a male rod thread, check the [small male, 8\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-8-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA short female Rod Number 3, 8\" bore cylinder?",
+          "a": "For customs, the 8\" bore 4MA short female No. 3 is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA short female Rod Number 3, 8\" bore cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA short female Rod Number 3, 8\" bore cylinders is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the part numbers, or bore, stroke and mount, on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Parker 4MA small male cylinder part number 1P4MA0044957?",
+          "a": "1P4MA0044957 is one of 9 Parker 4MA Series NFPA tie-rod air cylinders on this small male listing, a double-acting build with an external male rod thread. Parker gives the listing the reference model 2.50CF4MA3US18AC01.00; the 4MA range is on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker model 2.50CF4MA3US18AC01.00 behind part number 1P4MA0044957?",
+          "a": "In a Parker 4MA model code the first figure is the bore and the last is the stroke, so 2.50CF4MA3US18AC01.00 is a 2 1/2\" bore cylinder with a 01.00 (1\") stroke. The letters between them set mounting, rod end, seals and options, and we confirm the full build against 1P4MA0044957 at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Parker 4MA small male listing cover?",
+          "a": "Parker builds the 4MA in 1 1/2\", 2\", 2 1/2\", 3 1/4\", 4\", 5\", 6\" and 8\" bores, and the reference model for this listing is a 2 1/2\" bore. For stroke and mount tables in that bore, see the [small male, 2 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-2-1-2-bore)."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 2 1/2\" bore Parker 4MA small male cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so it pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure apply to Parker 4MA small male cylinder 1P4MA0044957?",
+          "a": "Parker specifies -10°F to +165°F ambient for 4MA cylinders with standard seals, about -23°C to +74°C. The rows of this listing carry no pressure figure; the related small male listings are rated 250 psi, about 17 bar, and we confirm the rating of 1P4MA0044957 at quotation."
+        },
+        {
+          "slot": "F",
+          "q": "Does Parker 4MA small male cylinder 1P4MA0044957 need lubricated air?",
+          "a": "No. The 4MA is a Parker non-lube design for filtered, dry compressed air, so 1P4MA0044957 needs no oiler. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Is Parker 4MA part number 1P4MA0044957 built to NFPA dimensions?",
+          "a": "Yes. 1P4MA0044957 is a Parker 4MA NFPA tie-rod cylinder, so it replaces another NFPA cylinder of the same bore, mount, stroke and rod end. No certificates are listed for it; ask for a certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which port fittings fit Parker 4MA cylinder 1P4MA0044957?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on a 2 1/2\" bore 4MA, so a cylinder like 1P4MA0044957 takes 3/8\" NPT fittings unless the build specifies another thread. Matching push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How is Parker 4MA tie rod cylinder 1P4MA0044957 serviced?",
+          "a": "1P4MA0044957 is a repairable Parker 4MA tie-rod cylinder, so worn rod and piston seals are replaced from a seal kit rather than replacing the cylinder. Keep the rod aligned with the load and set the cushions before running at full speed."
+        },
+        {
+          "slot": "K",
+          "q": "How does Parker 4MA cylinder 1P4MA0044957 differ from the other small male listings?",
+          "a": "This page holds only 9 part numbers with no stroke or mount table, while the bore-specific small male pages list every stroke and mount for one bore. Use the [2 1/2\" bore small male listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-2-1-2-bore) to browse the full table."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to Parker 4MA cylinder 1P4MA0044957?",
+          "a": "Parker 4MA air cylinders such as 1P4MA0044957 are classified under HS subheading 8412.31, linear-acting pneumatic power engines. We export from Dubai, and the country of origin of the Parker build appears on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is Parker 4MA part number 1P4MA0044957 in stock in Dubai?",
+          "a": "Yes. We keep Parker 4MA cylinder 1P4MA0044957 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part number and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-1-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 1 1/2\" bore?",
+          "a": "It is a 1 1/2\" bore Parker 4MA NFPA tie-rod air cylinder with a small male rod end, offered as 168 finished part numbers. Typical uses are light pushing, stopping, ejecting and clamping on conveyors, assembly cells and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0034209 in the 1 1/2\" bore small male listing describe?",
+          "a": "1P4MA0034209 is one complete 1 1/2\" bore 4MA small male cylinder: a 0.38\" stroke with cap rectangular flange mounting (MF2). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0024928, a 9\" stroke with cap fixed clevis (MP1). Part numbers here begin 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 1 1/2\" bore cylinder?",
+          "a": "Strokes run from 0.38\" to 68\" across the 168 part numbers in this 1 1/2\" bore listing, and 2\", 3\", 4\" and 5\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 1 1/2\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 1 1/2\" bore has a piston area of 1.77 sq in, so the 1 1/2\" bore 4MA small male cylinder pushes about 141 lbf (64 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 1 1/2\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 1 1/2\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 1 1/2\" bore small male cylinder need lubricated air?",
+          "a": "No. The 1 1/2\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 1 1/2\" bore listing include?",
+          "a": "The 1 1/2\" bore rows are built with NFPA mounts, most often cap fixed clevis (MP1), side tap (MS4), head rectangular flange (MF1), cap detachable clevis (MP2) and sleeve nut with side tap (MX5, MS4). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 1 1/2\" bore cylinder have?",
+          "a": "Parker's standard port on the 1 1/2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 5/8\" and 1\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 1 1/2\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 1 1/2\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 1 1/2\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 1 1/2\" bore and the NFPA mounts; this listing holds 168 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 1 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-1-1-2-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 1 1/2\" bore cylinder?",
+          "a": "For customs, the 1 1/2\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 1 1/2\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA small male rod end, 1 1/2\" bore cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 2 1/2\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 2 1/2\" bore and a small male (externally threaded) rod end. We list 146 built part numbers for it, used for pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0044736 in the 2 1/2\" bore small male listing describe?",
+          "a": "1P4MA0044736 is one complete 2 1/2\" bore 4MA small male cylinder: a 1\" stroke with side tap mounting (MS4). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0044531, a 10\" stroke with side tap (MS4). Part numbers here begin 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 2 1/2\" bore cylinder?",
+          "a": "Strokes run from 0.5\" to 56\" across the 146 part numbers in this 2 1/2\" bore listing, and 2\", 3\", 4\" and 5\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2 1/2\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so the 2 1/2\" bore 4MA small male cylinder pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 2 1/2\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 2 1/2\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 2 1/2\" bore small male cylinder need lubricated air?",
+          "a": "No. The 2 1/2\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 2 1/2\" bore listing include?",
+          "a": "The 2 1/2\" bore rows are built with NFPA mounts, most often cap detachable clevis (MP2), head rectangular flange (MF1), side tap (MS4), cap fixed clevis (MP1) and side lug (MS2). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 2 1/2\" bore cylinder have?",
+          "a": "Parker's standard port on the 2 1/2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 5/8\" and 1\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 2 1/2\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 2 1/2\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 2 1/2\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 2 1/2\" bore and the NFPA mounts; this listing holds 146 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 2 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-2-1-2-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 2 1/2\" bore cylinder?",
+          "a": "For customs, the 2 1/2\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 2 1/2\" bore cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA small male rod end, 2 1/2\" bore cylinders is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the part numbers, or bore, stroke and mount, on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 2\" bore?",
+          "a": "It is a 2\" bore Parker 4MA NFPA tie-rod air cylinder with a small male rod end, offered as 185 finished part numbers. Typical uses are light pushing, stopping, ejecting and clamping on conveyors, assembly cells and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0024381 in the 2\" bore small male listing describe?",
+          "a": "1P4MA0024381 is one complete 2\" bore 4MA small male cylinder: a 1\" stroke with side lug mounting (MS2). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0024134, an 8\" stroke with side lug (MS2). Part numbers here begin 1P4MA001, 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 2\" bore cylinder?",
+          "a": "Strokes run from 1\" to 67\" across the 185 part numbers in this 2\" bore listing, and 2\", 3\", 4\" and 6\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 2\" bore has a piston area of 3.14 sq in, so the 2\" bore 4MA small male cylinder pushes about 251 lbf (114 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 2\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 2\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 2\" bore small male cylinder need lubricated air?",
+          "a": "No. The 2\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 2\" bore listing include?",
+          "a": "The 2\" bore rows are built with NFPA mounts, most often cap detachable clevis (MP2), head rectangular flange (MF1), cap fixed clevis (MP1), side lug (MS2) and side tap (MS4). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 2\" bore cylinder have?",
+          "a": "Parker's standard port on the 2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 5/8\" and 1\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 2\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 2\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 2\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 2\" bore and the NFPA mounts; this listing holds 185 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-2-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 2\" bore cylinder?",
+          "a": "For customs, the 2\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 2\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA small male rod end, 2\" bore cylinders in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the part numbers, or bore, stroke and mount, via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 3 1/4\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 3 1/4\" bore and a small male (externally threaded) rod end. We list 155 built part numbers for it, used for pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0024783 in the 3 1/4\" bore small male listing describe?",
+          "a": "1P4MA0024783 is one complete 3 1/4\" bore 4MA small male cylinder: a 1\" stroke with cap detachable clevis mounting (MP2). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0044795, a 10\" stroke with cap fixed clevis (MP1). Part numbers here begin 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 3 1/4\" bore cylinder?",
+          "a": "Strokes run from 0.5\" to 67\" across the 155 part numbers in this 3 1/4\" bore listing, and 2\", 4\", 6\" and 8\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 3 1/4\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 3 1/4\" bore has a piston area of 8.3 sq in, so the 3 1/4\" bore 4MA small male cylinder pushes about 664 lbf (301 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 3 1/4\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 3 1/4\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 3 1/4\" bore small male cylinder need lubricated air?",
+          "a": "No. The 3 1/4\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 3 1/4\" bore listing include?",
+          "a": "The 3 1/4\" bore rows are built with NFPA mounts, most often cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), side lug (MS2) and head trunnion (MT1). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 3 1/4\" bore cylinder have?",
+          "a": "Parker's standard port on the 3 1/4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 1\" and 1 3/8\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 3 1/4\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 3 1/4\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 3 1/4\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 3 1/4\" bore and the NFPA mounts; this listing holds 155 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 3 1/4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-3-1-4-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 3 1/4\" bore cylinder?",
+          "a": "For customs, the 3 1/4\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 3 1/4\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA small male rod end, 3 1/4\" bore cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 4\" bore?",
+          "a": "It is a 4\" bore Parker 4MA NFPA tie-rod air cylinder with a small male rod end, offered as 111 finished part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0024875 in the 4\" bore small male listing describe?",
+          "a": "1P4MA0024875 is one complete 4\" bore 4MA small male cylinder: a 1\" stroke with head trunnion mounting (MT1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0044747, an 11\" stroke with cap trunnion (MT2). Part numbers here begin 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 4\" bore cylinder?",
+          "a": "Strokes run from 1\" to 75\" across the 111 part numbers in this 4\" bore listing, and 1\", 4\", 8\" and 11\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 4\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so the 4\" bore 4MA small male cylinder pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 4\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 4\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 4\" bore small male cylinder need lubricated air?",
+          "a": "No. The 4\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 4\" bore listing include?",
+          "a": "The 4\" bore rows are built with NFPA mounts, most often cap fixed clevis (MP1), head rectangular flange (MF1), side tap (MS4), cap detachable clevis (MP2) and cap trunnion (MT2). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 4\" bore cylinder have?",
+          "a": "Parker's standard port on the 4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 1\" and 1 3/8\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 4\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 4\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 4\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 4\" bore and the NFPA mounts; this listing holds 111 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-4-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 4\" bore cylinder?",
+          "a": "For customs, the 4\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 4\" bore cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA small male rod end, 4\" bore cylinders is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the part numbers, or bore, stroke and mount, on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-5-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 5\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 5\" bore and a small male (externally threaded) rod end. We list 77 built part numbers for it, used for heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0024050 in the 5\" bore small male listing describe?",
+          "a": "1P4MA0024050 is one complete 5\" bore 4MA small male cylinder: a 1\" stroke with head rectangular flange mounting (MF1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0034138, a 12\" stroke with cap fixed clevis (MP1). Part numbers here begin 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 5\" bore cylinder?",
+          "a": "Strokes run from 1\" to 90\" across the 77 part numbers in this 5\" bore listing, and 2\", 3\", 4\" and 6\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 5\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 5\" bore has a piston area of 19.63 sq in, so the 5\" bore 4MA small male cylinder pushes about 1571 lbf (713 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 5\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 5\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 5\" bore small male cylinder need lubricated air?",
+          "a": "No. The 5\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 5\" bore listing include?",
+          "a": "The 5\" bore rows are built with NFPA mounts, most often head rectangular flange (MF1), cap fixed clevis (MP1), cap rectangular flange (MF2), head trunnion (MT1) and sleeve nut (MX5). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 5\" bore cylinder have?",
+          "a": "Parker's standard port on the 5\" bore 4MA is 1/2\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 1\" and 1 3/8\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 5\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 5\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 5\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 5\" bore and the NFPA mounts; this listing holds 77 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 5\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-5-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 5\" bore cylinder?",
+          "a": "For customs, the 5\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 5\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA small male rod end, 5\" bore cylinders in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the part numbers, or bore, stroke and mount, via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-6-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 6\" bore?",
+          "a": "It is a 6\" bore Parker 4MA NFPA tie-rod air cylinder with a small male rod end, offered as 55 finished part numbers. Typical uses are heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0044243 in the 6\" bore small male listing describe?",
+          "a": "1P4MA0044243 is one complete 6\" bore 4MA small male cylinder: a 2\" stroke with head trunnion mounting (MT1). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0044299, a 10\" stroke with side lug (MS2). Part numbers here begin 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 6\" bore cylinder?",
+          "a": "Strokes run from 2\" to 48\" across the 55 part numbers in this 6\" bore listing, and 4\", 5\", 6\" and 12\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 6\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "A 6\" bore has a piston area of 28.27 sq in, so the 6\" bore 4MA small male cylinder pushes about 2262 lbf (1026 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 6\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 6\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 6\" bore small male cylinder need lubricated air?",
+          "a": "No. The 6\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 6\" bore listing include?",
+          "a": "The 6\" bore rows are built with NFPA mounts, most often cap fixed clevis (MP1), head trunnion (MT1), head rectangular flange (MF1), cap detachable clevis (MP2) and side lug (MS2). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 6\" bore cylinder have?",
+          "a": "Parker's standard port on the 6\" bore 4MA is 3/4\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 1 3/8\" and 1 3/4\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a 6\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 6\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 6\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 6\" bore and the NFPA mounts; this listing holds 55 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 6\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-6-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 6\" bore cylinder?",
+          "a": "For customs, the 6\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 6\" bore cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA small male rod end, 6\" bore cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-small-male-8-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod cylinder with small male rod end and 8\" bore?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with an 8\" bore and a small male (externally threaded) rod end. We list 22 built part numbers for it, used for heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "What does Parker 4MA part number 1P4MA0024963 in the 8\" bore small male listing describe?",
+          "a": "1P4MA0024963 is one complete 8\" bore 4MA small male cylinder: a 1\" stroke with sleeve nut with side tap mounting (MX5, MS4). Every 1P4MA number on this page is a finished build, so the code alone is enough to order; another example is 1P4MA0024677, an 18\" stroke with head square (ME3). Part numbers here begin 1P4MA002, 1P4MA003 and 1P4MA004."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA small male rod end, 8\" bore cylinder?",
+          "a": "Strokes run from 1\" to 60\" across the 22 part numbers in this 8\" bore listing, and 12\", 16\", 36\" and 60\" are the strokes that appear most often. If the travel you need is not a listed row, send the stroke and mount and we will quote the closest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does an 8\" bore Parker 4MA cylinder give at 80 psi?",
+          "a": "An 8\" bore has a piston area of 50.27 sq in, so the 8\" bore 4MA small male cylinder pushes about 4021 lbf (1824 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker 4MA small male rod end, 8\" bore cylinder?",
+          "a": "The rated rows in the Parker 4MA small male rod end, 8\" bore listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C; ask before running outside that range."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Parker 4MA 8\" bore small male cylinder need lubricated air?",
+          "a": "No. The 8\" bore 4MA small male cylinder is a Parker non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Which NFPA mounts does the Parker 4MA small male rod end, 8\" bore listing include?",
+          "a": "The 8\" bore rows are built with NFPA mounts, most often head square (ME3), cap fixed clevis (MP1), cap square (ME4), cap detachable clevis (MP2) and side tap (MS4). The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits an NFPA envelope; no certificates sit on this listing, so ask for a certificate of conformity if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA small male rod end, 8\" bore cylinder have?",
+          "a": "Parker's standard port on the 8\" bore 4MA is 3/4\" NPTF; other port threads are made to order. The small male rod end is an external thread, so it takes a nut, rod clevis or rod eye. Rod diameters in the rows include 1 3/8\" and 1 3/4\", so match the clevis or coupler to the rod of your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain an 8\" bore Parker 4MA small male tie rod cylinder?",
+          "a": "Align the 8\" bore 4MA small male rod with the load and use the NFPA mount it was built for, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 4MA 8\" bore small male and short female Rod Number 3 cylinders?",
+          "a": "They share the 8\" bore and the NFPA mounts; this listing holds 22 builds with an external male rod thread, while the short female page holds builds with a tapped rod end. If your cylinder has a female rod thread, check the [short female Rod Number 3, 8\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-number-3-8-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA small male rod end, 8\" bore cylinder?",
+          "a": "For customs, the 8\" bore 4MA small male is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship it from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA small male rod end, 8\" bore cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA small male rod end, 8\" bore cylinders is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the part numbers, or bore, stroke and mount, on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-2-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 2 1/2\" bore tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 2 1/2\" bore, listed here as 969 built part numbers in Parker model-code form. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 2.50D4MA3U34A00.13 in the 2 1/2\" bore 4MA listing?",
+          "a": "The first figure in 2.50D4MA3U34A00.13 is the bore, 2.50 inch, and the last figure, 00.13, is the stroke in inches. In this 2 1/2\" bore listing the letters before 4MA select the mounting: 2.50D4MA3U34A00.13 carries head trunnion (MT1). Another listed code is 2.50CTB4MA3U18AC11.63; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 2 1/2\" bore tie rod cylinder?",
+          "a": "Strokes run from 0.13\" to 93\" across the 969 part numbers in this 2 1/2\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 2 1/2\" bore Parker 4MA tie rod cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so it pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range applies to the Parker 4MA 2 1/2\" bore tie rod cylinder?",
+          "a": "Parker specifies -10°F to +165°F ambient for 4MA cylinders with standard seals, about -23°C to +74°C. The 969 rows of this 2 1/2\" bore tie rod cylinder listing carry no pressure figure, so we confirm the rating of your part number at quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 2 1/2\" bore tie rod cylinder need?",
+          "a": "The 2 1/2\" bore 4MA is a non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2 1/2\" bore tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often head rectangular flange (MF1), head trunnion (MT1), sleeve nut with side tap (MX5, MS4), side tap (MS4) and cap detachable clevis (MP2). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 2 1/2\" bore tie rod cylinder have?",
+          "a": "Parker's standard port on a 2 1/2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. Rod diameters in the rows include 5/8\" and 1\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 2 1/2\" bore tie rod cylinder?",
+          "a": "Install 2 1/2\" bore 4MA cylinders such as 2.50D4MA3U34A00.13 square to the load using the NFPA mount of the build, and set any cushion or flow controls before full-speed running. Seals are replaceable from a kit. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 2 1/2\" bore tie rod cylinder listing differ from the other 2 1/2\" bore 4MA listing?",
+          "a": "This listing holds 969 codes in the tie rod cylinder form; the [Lipseals And Magnetic Ring, 2 1/2\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-2-1-2-inch-bore-lipseals-and-magnetic-ring-2-1-2-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 2 1/2\" bore tie rod cylinder?",
+          "a": "For customs, the 2 1/2\" bore 4MA tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 2 1/2\" bore tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA 2 1/2\" bore tie rod cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker model codes and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-2-1-2-inch-bore-lipseals-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 2 1/2\" bore and Lipseal piston seals, listed as 578 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 2.50H4MA1U19A00.65 in the 2 1/2\" bore 4MA listing?",
+          "a": "The first figure in 2.50H4MA1U19A00.65 is the bore, 2.50 inch, and the last figure, 00.65, is the stroke in inches. In this 2 1/2\" bore listing the letters before 4MA select the mounting: 2.50H4MA1U19A00.65 carries cap rectangular flange (MF2). Another listed code is 2.50CBC4MA2U14AC14.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder?",
+          "a": "Strokes run from 0.5\" to 93\" across the 578 part numbers in this 2 1/2\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 2 1/2\" bore Parker 4MA Lipseal piston tie rod cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so it pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder?",
+          "a": "Rated rows in this 2 1/2\" bore Lipseal piston tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder need?",
+          "a": "The Lipseal piston on this 2 1/2\" bore 4MA is built for non-lubricated air, with lip seals that seal on pressure. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap detachable clevis (MP2), cap fixed clevis (MP1), head rectangular flange (MF1), side lug (MS2) and side tap (MS4). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder have?",
+          "a": "Parker's standard port on a 2 1/2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. Rod diameters in the rows include 5/8\" and 1\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder?",
+          "a": "Align the rod of a 2 1/2\" bore 4MA such as 2.50H4MA1U19A00.65 with the load and use the NFPA mount it was built with, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder listing differ from the other 2 1/2\" bore 4MA listing?",
+          "a": "This listing holds 578 codes in the Lipseal piston tie rod cylinder form; the [2-1/2 Inch Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-2-1-2-inch-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder?",
+          "a": "For customs, the 2 1/2\" bore 4MA Lipseal piston tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2 1/2\" bore Lipseal piston tie rod cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker model codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-2-1-2-inch-bore-lipseals-and-magnetic-ring-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 2 1/2\" bore, Lipseal piston seals and a magnetic ring for position sensing, listed as 958 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 2.50CF4MA3U14A01.00 in the 2 1/2\" bore 4MA listing?",
+          "a": "The first figure in 2.50CF4MA3U14A01.00 is the bore, 2.50 inch, and the last figure, 01.00, is the stroke in inches. In this 2 1/2\" bore listing the letters before 4MA select the mounting: 2.50CF4MA3U14A01.00 carries side tap (MS4). Another listed code is 2.50CBC4MA3U34AC23.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "Strokes run from 0.2\" to 99\" across the 958 part numbers in this 2 1/2\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 2 1/2\" bore Parker 4MA Lipseal piston and magnetic ring tie rod cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so it pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "Rated rows in this 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder need?",
+          "a": "This 2 1/2\" bore 4MA has Lipseal piston seals for non-lubricated air and a magnetic ring on the piston, so a position switch can be fitted outside the barrel without changing the cylinder."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap detachable clevis (MP2), cap fixed clevis (MP1), side lug (MS2), cap detachable eye (MP4) and side tap (MS4). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder have?",
+          "a": "Parker's standard port on a 2 1/2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. Rod diameters in the rows include 5/8\" and 1\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "For a 2 1/2\" bore 4MA like 2.50CF4MA3U14A01.00, mount it so the rod pushes in line with the load and keep side load off the gland. Parker builds the 4MA as a repairable cylinder, so rod and piston seals come from a seal kit rather than a new cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder listing differ from the other 2 1/2\" bore 4MA listing?",
+          "a": "This listing holds 958 codes in the Lipseal piston and magnetic ring tie rod cylinder form; the [Lipseals, 2 1/2\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-2-1-2-inch-bore-lipseals-2-1-2-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "For customs, the 2 1/2\" bore 4MA Lipseal piston and magnetic ring tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA 2 1/2\" bore Lipseal piston and magnetic ring tie rod cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker model codes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 2\" bore tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 2\" bore, listed here as 1037 built part numbers in Parker model-code form. Typical uses are light pushing, stopping, ejecting and clamping on conveyors, assembly cells and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 2.00D4MA3U14A00.38 in the 2\" bore 4MA listing?",
+          "a": "The first figure in 2.00D4MA3U14A00.38 is the bore, 2.00 inch, and the last figure, 00.38, is the stroke in inches. In this 2\" bore listing the letters before 4MA select the mounting: 2.00D4MA3U14A00.38 carries head trunnion (MT1). Another listed code is 2.00CF4MAU18AC12.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 2\" bore tie rod cylinder?",
+          "a": "Strokes run from 0.25\" to 88\" across the 1037 part numbers in this 2\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 2\" bore Parker 4MA tie rod cylinder give at 80 psi?",
+          "a": "A 2\" bore has a piston area of 3.14 sq in, so it pushes about 251 lbf (114 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range applies to the Parker 4MA 2\" bore tie rod cylinder?",
+          "a": "Parker specifies -10°F to +165°F ambient for 4MA cylinders with standard seals, about -23°C to +74°C. The 1037 rows of this 2\" bore tie rod cylinder listing carry no pressure figure, so we confirm the rating of your part number at quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 2\" bore tie rod cylinder need?",
+          "a": "The 2\" bore 4MA is a non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2\" bore tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often head rectangular flange (MF1), side tap (MS4), cap fixed clevis (MP1), cap detachable clevis (MP2) and head trunnion (MT1). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 2\" bore tie rod cylinder have?",
+          "a": "Parker's standard port on a 2\" bore 4MA is 3/8\" NPTF, and the rows here also list NPTF, SAE, BSPP and BSPT port types; confirm the thread of your part number. Rod diameters in the rows include 5/8\" and 1\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 2\" bore tie rod cylinder?",
+          "a": "Install 2\" bore 4MA cylinders such as 2.00D4MA3U14A00.38 square to the load using the NFPA mount of the build, and set any cushion or flow controls before full-speed running. Seals are replaceable from a kit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 2\" bore tie rod cylinder listing differ from the other 2\" bore 4MA listing?",
+          "a": "This listing holds 1037 codes in the tie rod cylinder form; the [Lipseals, 2\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-2-inch-bore-lipseals-2-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 2\" bore tie rod cylinder?",
+          "a": "For customs, the 2\" bore 4MA tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 2\" bore tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA 2\" bore tie rod cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker model codes and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-2-inch-bore-lipseals-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 2\" bore Lipseal piston tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 2\" bore and Lipseal piston seals, listed as 530 built part numbers. Typical uses are light pushing, stopping, ejecting and clamping on conveyors, assembly cells and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 2.00CBB4MA2U14AC00.40 in the 2\" bore 4MA listing?",
+          "a": "The first figure in 2.00CBB4MA2U14AC00.40 is the bore, 2.00 inch, and the last figure, 00.40, is the stroke in inches. In this 2\" bore listing the letters before 4MA select the mounting: 2.00CBB4MA2U14AC00.40 carries cap fixed clevis (MP1). Another listed code is 2.00F4MA1U14A12.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 2\" bore Lipseal piston tie rod cylinder?",
+          "a": "Strokes run from 0.25\" to 93\" across the 530 part numbers in this 2\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 2\" bore Parker 4MA Lipseal piston tie rod cylinder give at 80 psi?",
+          "a": "A 2\" bore has a piston area of 3.14 sq in, so it pushes about 251 lbf (114 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 2\" bore Lipseal piston tie rod cylinder?",
+          "a": "Rated rows in this 2\" bore Lipseal piston tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 2\" bore Lipseal piston tie rod cylinder need?",
+          "a": "The Lipseal piston on this 2\" bore 4MA is built for non-lubricated air, with lip seals that seal on pressure. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2\" bore Lipseal piston tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), side tap (MS4), cap detachable clevis (MP2), head rectangular flange (MF1) and side lug (MS2). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 2\" bore Lipseal piston tie rod cylinder have?",
+          "a": "Parker's standard port on a 2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. Rod diameters in the rows include 5/8\" and 1\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 2\" bore Lipseal piston tie rod cylinder?",
+          "a": "Align the rod of a 2\" bore 4MA such as 2.00CBB4MA2U14AC00.40 with the load and use the NFPA mount it was built with, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 2\" bore Lipseal piston tie rod cylinder listing differ from the other 2\" bore 4MA listing?",
+          "a": "This listing holds 530 codes in the Lipseal piston tie rod cylinder form; the [2 Inch Bore, LipSeals And Magnetic Ring listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-2-inch-bore-lipseals-and-magnetic-ring) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 2\" bore Lipseal piston tie rod cylinder?",
+          "a": "For customs, the 2\" bore 4MA Lipseal piston tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 2\" bore Lipseal piston tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2\" bore Lipseal piston tie rod cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker model codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-2-inch-bore-lipseals-and-magnetic-ring",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 2\" bore, Lipseal piston seals and a magnetic ring for position sensing, listed as 976 built part numbers. Typical uses are light pushing, stopping, ejecting and clamping on conveyors, assembly cells and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 2.00CBB4MA3U14AC00.13 in the 2\" bore 4MA listing?",
+          "a": "The first figure in 2.00CBB4MA3U14AC00.13 is the bore, 2.00 inch, and the last figure, 00.13, is the stroke in inches. In this 2\" bore listing the letters before 4MA select the mounting: 2.00CBB4MA3U14AC00.13 carries cap fixed clevis (MP1). Another listed code is 2.00CBB4MA3U18AC15.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "Strokes run from 0.13\" to 98\" across the 976 part numbers in this 2\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 2\" bore Parker 4MA Lipseal piston and magnetic ring tie rod cylinder give at 80 psi?",
+          "a": "A 2\" bore has a piston area of 3.14 sq in, so it pushes about 251 lbf (114 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "Rated rows in this 2\" bore Lipseal piston and magnetic ring tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder need?",
+          "a": "This 2\" bore 4MA has Lipseal piston seals for non-lubricated air and a magnetic ring on the piston, so a position switch can be fitted outside the barrel without changing the cylinder."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), cap detachable clevis (MP2), side lug (MS2), cap detachable eye (MP4) and side end angle (MS1). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder have?",
+          "a": "Parker's standard port on a 2\" bore 4MA is 3/8\" NPTF; other port threads are made to order. Rod diameters in the rows include 5/8\" and 1\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "For a 2\" bore 4MA like 2.00CBB4MA3U14AC00.13, mount it so the rod pushes in line with the load and keep side load off the gland. Parker builds the 4MA as a repairable cylinder, so rod and piston seals come from a seal kit rather than a new cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder listing differ from the other 2\" bore 4MA listing?",
+          "a": "This listing holds 976 codes in the Lipseal piston and magnetic ring tie rod cylinder form; the [2 Inch Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-2-inch-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "For customs, the 2\" bore 4MA Lipseal piston and magnetic ring tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA 2\" bore Lipseal piston and magnetic ring tie rod cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker model codes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 3 1/4\" bore tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 3 1/4\" bore, listed here as 796 built part numbers in Parker model-code form. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 3.25TEF4MA3U19A00.38 in the 3 1/4\" bore 4MA listing?",
+          "a": "The first figure in 3.25TEF4MA3U19A00.38 is the bore, 3.25 inch, and the last figure, 00.38, is the stroke in inches. In this 3 1/4\" bore listing the letters before 4MA select the mounting: 3.25TEF4MA3U19A00.38 carries sleeve nut with side tap (MX5, MS4). Another listed code is 3.25CTEF4MA3UM18AC12.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 3 1/4\" bore tie rod cylinder?",
+          "a": "Strokes run from 0.25\" to 84\" across the 796 part numbers in this 3 1/4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 3 1/4\" bore Parker 4MA tie rod cylinder give at 80 psi?",
+          "a": "A 3 1/4\" bore has a piston area of 8.3 sq in, so it pushes about 664 lbf (301 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range applies to the Parker 4MA 3 1/4\" bore tie rod cylinder?",
+          "a": "Parker specifies -10°F to +165°F ambient for 4MA cylinders with standard seals, about -23°C to +74°C. The 796 rows of this 3 1/4\" bore tie rod cylinder listing carry no pressure figure, so we confirm the rating of your part number at quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 3 1/4\" bore tie rod cylinder need?",
+          "a": "The 3 1/4\" bore 4MA is a non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 3 1/4\" bore tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often head rectangular flange (MF1), sleeve nut with side tap (MX5, MS4), no mount (MX0), sleeve nut (MX5) and cap rectangular flange (MF2). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 3 1/4\" bore tie rod cylinder have?",
+          "a": "Parker's standard port on a 3 1/4\" bore 4MA is 1/2\" NPTF, and the rows here also list NPTF and SAE port types; confirm the thread of your part number. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 3 1/4\" bore tie rod cylinder?",
+          "a": "Install 3 1/4\" bore 4MA cylinders such as 3.25TEF4MA3U19A00.38 square to the load using the NFPA mount of the build, and set any cushion or flow controls before full-speed running. Seals are replaceable from a kit. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 3 1/4\" bore tie rod cylinder listing differ from the other 3 1/4\" bore 4MA listing?",
+          "a": "This listing holds 796 codes in the tie rod cylinder form; the [Lipseals And Magnetic Ring, 3 1/4\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore-lipseals-and-magnetic-ring-3-1-4-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 3 1/4\" bore tie rod cylinder?",
+          "a": "For customs, the 3 1/4\" bore 4MA tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 3 1/4\" bore tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA 3 1/4\" bore tie rod cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker model codes and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore-aluminum-piston-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 3 1/4\" bore and an aluminum piston, listed as 843 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 3.25CJ4MA3U19AC00.38 in the 3 1/4\" bore 4MA listing?",
+          "a": "The first figure in 3.25CJ4MA3U19AC00.38 is the bore, 3.25 inch, and the last figure, 00.38, is the stroke in inches. In this 3 1/4\" bore listing the letters before 4MA select the mounting: 3.25CJ4MA3U19AC00.38 carries head rectangular flange (MF1). Another listed code is 3.25CBC4MA3U14AC21.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder?",
+          "a": "Strokes run from 0.25\" to 99\" across the 843 part numbers in this 3 1/4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 3 1/4\" bore Parker 4MA aluminum piston tie rod cylinder give at 80 psi?",
+          "a": "A 3 1/4\" bore has a piston area of 8.3 sq in, so it pushes about 664 lbf (301 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder?",
+          "a": "Rated rows in this 3 1/4\" bore aluminum piston tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder need?",
+          "a": "The piston in this 3 1/4\" bore 4MA is aluminum, and the cylinder is a non-lube design for filtered, dry compressed air. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), cap detachable clevis (MP2), side lug (MS2), head rectangular flange (MF1) and cap detachable eye (MP4). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder have?",
+          "a": "Parker's standard port on a 3 1/4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder?",
+          "a": "Align the rod of a 3 1/4\" bore 4MA such as 3.25CJ4MA3U19AC00.38 with the load and use the NFPA mount it was built with, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder listing differ from the other 3 1/4\" bore 4MA listing?",
+          "a": "This listing holds 843 codes in the aluminum piston tie rod cylinder form; the [3-1/4 Inch Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder?",
+          "a": "For customs, the 3 1/4\" bore 4MA aluminum piston tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 3 1/4\" bore aluminum piston tie rod cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker model codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore-lipseals-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 3 1/4\" bore and Lipseal piston seals, listed as 488 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 3.25CH4MA2U14AC01.00 in the 3 1/4\" bore 4MA listing?",
+          "a": "The first figure in 3.25CH4MA2U14AC01.00 is the bore, 3.25 inch, and the last figure, 01.00, is the stroke in inches. In this 3 1/4\" bore listing the letters before 4MA select the mounting: 3.25CH4MA2U14AC01.00 carries cap rectangular flange (MF2). Another listed code is 3.25BC4MA2U14A15.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder?",
+          "a": "Strokes run from 0.75\" to 99\" across the 488 part numbers in this 3 1/4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 3 1/4\" bore Parker 4MA Lipseal piston tie rod cylinder give at 80 psi?",
+          "a": "A 3 1/4\" bore has a piston area of 8.3 sq in, so it pushes about 664 lbf (301 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder?",
+          "a": "Rated rows in this 3 1/4\" bore Lipseal piston tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder need?",
+          "a": "The Lipseal piston on this 3 1/4\" bore 4MA is built for non-lubricated air, with lip seals that seal on pressure. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), side tap (MS4) and side lug (MS2). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder have?",
+          "a": "Parker's standard port on a 3 1/4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder?",
+          "a": "For a 3 1/4\" bore 4MA like 3.25CH4MA2U14AC01.00, mount it so the rod pushes in line with the load and keep side load off the gland. Parker builds the 4MA as a repairable cylinder, so rod and piston seals come from a seal kit rather than a new cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder listing differ from the other 3 1/4\" bore 4MA listing?",
+          "a": "This listing holds 488 codes in the Lipseal piston tie rod cylinder form; the [Aluminum Piston, 3 1/4\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore-aluminum-piston-3-1-4-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder?",
+          "a": "For customs, the 3 1/4\" bore 4MA Lipseal piston tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA 3 1/4\" bore Lipseal piston tie rod cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker model codes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

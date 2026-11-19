@@ -1,0 +1,998 @@
+{
+  "family": "flow-iron-adapters",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "Accidents, including a fatality, have followed from hammering on hammer unions while the line was under pressure; bleed all pressure off a line before breaking it, and use lockout/tagout and permit-to-work on pressurised lines.",
+      "source": "IADC Safety Alert 03-16 (iadc.org/safety-alerts/alert-03-16-mismatched-hammer-unions-still-found)"
+    },
+    {
+      "fact": "A ring-joint (BX or R) gasket is a single-use seal: once energised it should not be reused, and a new gasket is fitted at every flange make-up.",
+      "source": "Indus Hydraulics BOP spare parts listing, API 6A BX ring gasket set (/c/bop-spare-parts)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "crossover-union-1502-series-m-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 10,000 psi for sour service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service come in?",
+          "a": "The Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "On the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Bore: Same as nominal — full bore through body."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "The Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service made from?",
+          "a": "The Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service meet?",
+          "a": "For the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service connect to?",
+          "a": "The Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Anson 1502, FMC WECO 1502, SPM 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service used?",
+          "a": "The Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service is used for sour-well frac iron service trees; H₂S-bearing flowback lines; NACE-compliant stimulation manifolds; sour-service coil-tubing surface lines. It is sized for 2 in, 3 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service](/p/crossover-union-1502-series-m-f-15-000-psi-standard-service) in figure, pressure class or service class. The Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service, and gives United Kingdom as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "Yes. We list the Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-206-series-m-f-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 2,000 psi for standard service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 206 Series M×F, 2,000 psi, Standard Service is rated 2,000 psi for standard service, in the configuration Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service come in?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Standard Service is listed in 2 in, 3 in, 4 in, 6 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service?",
+          "a": "On the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service, end A is 206 Male Weco Union and end B is 206 Female Weco Union. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Standard Service is rated 2,000 psi working pressure (2K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service made from?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service meet?",
+          "a": "For the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service connect to?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Anson 206, FMC WECO 206, SPM 206 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service installed and serviced?",
+          "a": "For the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service used?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Standard Service is used for water and brine transfer lines; low-pressure flowback and water-disposal manifolds; cement-mix tank circulation. It is sized for 2 in, 3 in, 4 in, 6 in lines at 2,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 206 2,000 psi standard differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 206 Series M×F, 2,000 psi, Sour Service](/p/crossover-union-206-series-m-f-2-000-psi-sour-service) in figure, pressure class or service class. The Crossover Union, 206 Series M×F, 2,000 psi, Standard Service is rated 2,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service, and gives United Kingdom as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service?",
+          "a": "Yes. We list the Crossover Union, 206 Series M×F, 2,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adapter-flange-api-6bx-15k-1502-female-weco-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an adapter flange rated 15,000 psi for standard service used for?",
+          "a": "An adapter flange joins an API flanged stack to a hammer-union flow line, so a wellhead or tree outlet can be connected to union iron. The Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service is rated 15,000 psi for standard service, in the configuration API Flange × Weco Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service come in?",
+          "a": "The Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service is listed in 2-1/16 in, 3-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service?",
+          "a": "On the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service, end A is API 6BX 15K flange (BX ring groove) and end B is 1502 Female Weco Union. Bore: Matches the API flange bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service?",
+          "a": "The Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service made from?",
+          "a": "The Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service meet?",
+          "a": "The adapter flange is built to API 6A and supplied API-monogrammed. The Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service connect to?",
+          "a": "The union end of the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service joins unions of the same figure and size only, and never to a different figure, as mismatched unions are a known failure cause. The flange end bolts to a matching API flange with the correct ring gasket. The listing names Cameron 15K, FMC WECO 1502, Stream-Flo 15K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api), [ring joint gaskets](/c/ring-joint-gaskets) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service installed and serviced?",
+          "a": "For the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service: fit a new ring gasket at the flange end and bolt up evenly, and make up the union end by striking the wing nut lugs with a hammer. Bleed the line to zero before breaking any joint, and never hammer on a pressurised union."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service used?",
+          "a": "The Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service is used for high-pressure frac-tree to flow-iron transitions; surface test-tree adapters; 15K wellhead to pump-discharge interfaces. It is sized for 2-1/16 in, 3-1/16 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the adapter flange 15K 15,000 psi standard differ from similar flow iron?",
+          "a": "The adapter flange differs from the [Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service](/p/adapter-flange-api-6bx-10k-1502-female-weco-standard-service) in figure, pressure class or service class. The Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "double-studded-adapter-api-6b-5k-3k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a double studded adapter (DSA) rated 5,000 psi for standard service used for?",
+          "a": "A double studded adapter steps between two API studded flanges of different pressure classes, with the studs and nuts integrated so no separate bolting is needed. The Double Studded Adapter, API 6B 5K × 3K, Standard Service is rated 5,000 psi for standard service, in the configuration Studded × Studded (different pressure classes)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Double Studded Adapter, API 6B 5K × 3K, Standard Service come in?",
+          "a": "The Double Studded Adapter, API 6B 5K × 3K, Standard Service is listed in 2-1/16 in × 2-1/16 in, 3-1/8 in × 3-1/8 in, 3-1/8 in × 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Double Studded Adapter, API 6B 5K × 3K, Standard Service?",
+          "a": "On the Double Studded Adapter, API 6B 5K × 3K, Standard Service, end A is API 6B 5K studded (top) and end B is API 6B 3K studded (bottom). Additional features: Studs and nuts integrated — no separate bolting needed. Bore: Through-bore matches the smaller flange size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Double Studded Adapter, API 6B 5K × 3K, Standard Service?",
+          "a": "The Double Studded Adapter, API 6B 5K × 3K, Standard Service is rated 5,000 psi working pressure (5K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). The rating is a working pressure, not a test pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Double Studded Adapter, API 6B 5K × 3K, Standard Service made from?",
+          "a": "The Double Studded Adapter, API 6B 5K × 3K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Double Studded Adapter, API 6B 5K × 3K, Standard Service meet?",
+          "a": "The double studded adapter (DSA) is built to API 6A and supplied API-monogrammed. The Double Studded Adapter, API 6B 5K × 3K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Double Studded Adapter, API 6B 5K × 3K, Standard Service connect to?",
+          "a": "The Double Studded Adapter, API 6B 5K × 3K, Standard Service connects at API 6B 5K studded (top) and API 6B 3K studded (bottom). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Cameron Type C DSA, Stream-Flo DSA, FMC Wellhead DSA as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Double Studded Adapter, API 6B 5K × 3K, Standard Service installed and serviced?",
+          "a": "For the Double Studded Adapter, API 6B 5K × 3K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Double Studded Adapter, API 6B 5K × 3K, Standard Service used?",
+          "a": "The Double Studded Adapter, API 6B 5K × 3K, Standard Service is used for wellhead bowl-to-Christmas-tree pressure step-down; BOP stack to wellhead adapter; tubing-head to tree-cap interface. It is sized for 2-1/16 in × 2-1/16 in, 3-1/8 in × 3-1/8 in, 3-1/8 in × 4-1/16 in lines at 5,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the double studded adapter (DSA) 5K 5,000 psi standard differ from similar flow iron?",
+          "a": "The double studded adapter (DSA) differs from the [Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service](/p/adapter-flange-api-6b-5k-602-female-weco-standard-service) in figure, pressure class or service class. The Double Studded Adapter, API 6B 5K × 3K, Standard Service is rated 5,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Double Studded Adapter, API 6B 5K × 3K, Standard Service?",
+          "a": "The listing states a lead time of 28 days for the Double Studded Adapter, API 6B 5K × 3K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Double Studded Adapter, API 6B 5K × 3K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Double Studded Adapter, API 6B 5K × 3K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adapter-flange-api-6bx-10k-1502-female-weco-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an adapter flange rated 10,000 psi for standard service used for?",
+          "a": "An adapter flange joins an API flanged stack to a hammer-union flow line, so a wellhead or tree outlet can be connected to union iron. The Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service is rated 10,000 psi for standard service, in the configuration API Flange × Weco Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service come in?",
+          "a": "The Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service?",
+          "a": "On the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service, end A is API 6BX 10K flange (raised face, BX ring groove) and end B is 1502 Female Weco Union. Bore: Matches the API flange bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service?",
+          "a": "The Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service is rated 10,000 psi working pressure (10K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service made from?",
+          "a": "The Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service meet?",
+          "a": "The adapter flange is built to API 6A and supplied API-monogrammed. The Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service connect to?",
+          "a": "The union end of the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service joins unions of the same figure and size only, and never to a different figure, as mismatched unions are a known failure cause. The flange end bolts to a matching API flange with the correct ring gasket. The listing names FMC WECO 1502, Cameron 10K, Stream-Flo 10K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api), [ring joint gaskets](/c/ring-joint-gaskets) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service installed and serviced?",
+          "a": "For the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service: fit a new ring gasket at the flange end and bolt up evenly, and make up the union end by striking the wing nut lugs with a hammer. Bleed the line to zero before breaking any joint, and never hammer on a pressurised union."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service used?",
+          "a": "The Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service is used for wellhead to frac-tree adapter; christmas-tree flange to flow-line tie-in; test-tree to flow-iron transition. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the adapter flange 10K 10,000 psi standard differ from similar flow iron?",
+          "a": "The adapter flange differs from the [Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service](/p/adapter-flange-api-6bx-15k-1502-female-weco-standard-service) in figure, pressure class or service class. The Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service is rated 10,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service?",
+          "a": "Yes. We list the Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-1002-series-m-m-10-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 10,000 psi for standard service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service is rated 10,000 psi for standard service, in the configuration Male × Male."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service come in?",
+          "a": "The Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service is listed in 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service?",
+          "a": "On the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service, end A is 1002 Male Weco Union and end B is 1002 Male Weco Union. Bore: Same as nominal — full bore through body."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service?",
+          "a": "The Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service is rated 10,000 psi working pressure (10K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service made from?",
+          "a": "The Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service meet?",
+          "a": "For the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service connect to?",
+          "a": "The Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1002, SPM 1002, Anson 1002 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service installed and serviced?",
+          "a": "For the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service used?",
+          "a": "The Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service is used for pump-truck flow lines; stimulation service trees (10K class); well-control kill manifolds. It is sized for 3 in, 4 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 1002 10,000 psi standard differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service](/p/crossover-union-1502-series-m-f-10-000-psi-sour-service) in figure, pressure class or service class. The Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service is rated 10,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service?",
+          "a": "Yes. We list the Crossover Union, 1002 Series M×M, 10,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-1502-series-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 15,000 psi for standard service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service come in?",
+          "a": "The Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service is listed in 2 in, 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "On the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Bore: Same as nominal — full bore through body."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "The Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service made from?",
+          "a": "The Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service meet?",
+          "a": "For the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service connect to?",
+          "a": "The Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service used?",
+          "a": "The Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service is used for frac iron service trees; pump-truck discharge lines; coiled-tubing surface equipment; cement and acid stimulation manifolds. It is sized for 2 in, 3 in, 4 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service](/p/crossover-union-1502-series-m-f-10-000-psi-sour-service) in figure, pressure class or service class. The Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-1502-series-m-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 15,000 psi for standard service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Male × Male."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service come in?",
+          "a": "The Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service is listed in 2 in, 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service?",
+          "a": "On the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Male Weco Union. Bore: Same as nominal — full bore through body."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service?",
+          "a": "The Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service made from?",
+          "a": "The Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service meet?",
+          "a": "For the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service connect to?",
+          "a": "The Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service used?",
+          "a": "The Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service is used for frac iron service trees (high-pressure pumping); coiled-tubing kill and circulation lines; cement and acid stimulation manifolds; well-stimulation flow lines. It is sized for 2 in, 3 in, 4 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service](/p/crossover-union-1502-series-m-f-10-000-psi-sour-service) in figure, pressure class or service class. The Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Crossover Union, 1502 Series M×M, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-1502-series-reducer-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 15,000 psi for standard service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Reducer (M × F, different sizes)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service come in?",
+          "a": "The Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service is listed in 4 in × 3 in, 4 in × 2 in, 3 in × 2 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service?",
+          "a": "On the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service, end A is 1502 Male Weco Union (larger) and end B is 1502 Female Weco Union (smaller). Bore: Stepped — matches each end."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service?",
+          "a": "The Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service made from?",
+          "a": "The Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service meet?",
+          "a": "For the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service connect to?",
+          "a": "The Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Reducer, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service used?",
+          "a": "The Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service is used for pump discharge to service-tree step-downs; manifold-to-frac-tree size transitions; coiled-tubing surface lines. It is sized for 4 in × 3 in, 4 in × 2 in, 3 in × 2 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service](/p/crossover-union-1502-series-m-f-10-000-psi-sour-service) in figure, pressure class or service class. The Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-206-series-m-f-2-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 2,000 psi for sour service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 206 Series M×F, 2,000 psi, Sour Service is rated 2,000 psi for sour service, in the configuration Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service come in?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Sour Service is listed in 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service?",
+          "a": "On the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service, end A is 206 Male Weco Union and end B is 206 Female Weco Union. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Sour Service is rated 2,000 psi working pressure (2K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service made from?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service meet?",
+          "a": "For the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service connect to?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 206, Anson 206, SPM 206 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service installed and serviced?",
+          "a": "For the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service used?",
+          "a": "The Crossover Union, 206 Series M×F, 2,000 psi, Sour Service is used for sour-well water injection lines; H₂S flowback water disposal; NACE-compliant low-pressure manifolds. It is sized for 3 in, 4 in lines at 2,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 206 2,000 psi sour differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 206 Series M×F, 2,000 psi, Standard Service](/p/crossover-union-206-series-m-f-2-000-psi-standard-service) in figure, pressure class or service class. The Crossover Union, 206 Series M×F, 2,000 psi, Sour Service is rated 2,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service?",
+          "a": "Yes. We list the Crossover Union, 206 Series M×F, 2,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-602-series-m-f-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 6,000 psi for sour service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 602 Series M×F, 6,000 psi, Sour Service is rated 6,000 psi for sour service, in the configuration Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service come in?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service?",
+          "a": "On the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service, end A is 602 Male Weco Union and end B is 602 Female Weco Union. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Sour Service is rated 6,000 psi working pressure (6K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service made from?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service meet?",
+          "a": "For the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service connect to?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602, SPM 602, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service installed and serviced?",
+          "a": "For the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service used?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Sour Service is used for sour-well production flow lines; H₂S flowback iron; sour-service well-test manifolds. It is sized for 2 in, 3 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 602 6,000 psi sour differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 602 Series M×F, 6,000 psi, Standard Service](/p/crossover-union-602-series-m-f-6-000-psi-standard-service) in figure, pressure class or service class. The Crossover Union, 602 Series M×F, 6,000 psi, Sour Service is rated 6,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service?",
+          "a": "Yes. We list the Crossover Union, 602 Series M×F, 6,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adapter-flange-api-6b-5k-602-female-weco-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an adapter flange rated 5,000 psi for standard service used for?",
+          "a": "An adapter flange joins an API flanged stack to a hammer-union flow line, so a wellhead or tree outlet can be connected to union iron. The Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service is rated 5,000 psi for standard service, in the configuration API Flange × Weco Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service come in?",
+          "a": "The Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service is listed in 2-1/16 in, 3-1/8 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service?",
+          "a": "On the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service, end A is API 6B 5K flange (R or RX ring groove) and end B is 602 Female Weco Union. Bore: Matches the API flange bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service?",
+          "a": "The Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service is rated 5,000 psi working pressure (5K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). The rating is a working pressure, not a test pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service made from?",
+          "a": "The Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service meet?",
+          "a": "The adapter flange is built to API 6A and supplied API-monogrammed. The Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service connect to?",
+          "a": "The union end of the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service joins unions of the same figure and size only, and never to a different figure, as mismatched unions are a known failure cause. The flange end bolts to a matching API flange with the correct ring gasket. The listing names Cameron 5K, FMC WECO 602, Stream-Flo 5K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api), [ring joint gaskets](/c/ring-joint-gaskets) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service installed and serviced?",
+          "a": "For the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service: fit a new ring gasket at the flange end and bolt up evenly, and make up the union end by striking the wing nut lugs with a hammer. Bleed the line to zero before breaking any joint, and never hammer on a pressurised union."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service used?",
+          "a": "The Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service is used for production wellhead to flow-line tie-ins; christmas-tree flange to test-iron transitions; tubing-head adapter applications. It is sized for 2-1/16 in, 3-1/8 in lines at 5,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the adapter flange 5K 5,000 psi standard differ from similar flow iron?",
+          "a": "The adapter flange differs from the [Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service](/p/adapter-flange-api-6bx-15k-1502-female-weco-standard-service) in figure, pressure class or service class. The Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service is rated 5,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service?",
+          "a": "Yes. We list the Adapter Flange, API 6B 5K × 602 Female Weco, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-602-series-m-f-6-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 6,000 psi for standard service used for?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 602 Series M×F, 6,000 psi, Standard Service is rated 6,000 psi for standard service, in the configuration Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service come in?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Standard Service is listed in 2 in, 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "On the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service, end A is 602 Male Weco Union and end B is 602 Female Weco Union. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Standard Service is rated 6,000 psi working pressure (6K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service made from?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service meet?",
+          "a": "For the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service connect to?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602, SPM 602, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service installed and serviced?",
+          "a": "For the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service used?",
+          "a": "The Crossover Union, 602 Series M×F, 6,000 psi, Standard Service is used for production well flow lines; flowback and well-test iron; intermediate-pressure manifolds. It is sized for 2 in, 3 in, 4 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 602 6,000 psi standard differ from similar flow iron?",
+          "a": "The crossover union differs from the [Crossover Union, 602 Series M×F, 6,000 psi, Sour Service](/p/crossover-union-602-series-m-f-6-000-psi-sour-service) in figure, pressure class or service class. The Crossover Union, 602 Series M×F, 6,000 psi, Standard Service is rated 6,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "Yes. We list the Crossover Union, 602 Series M×F, 6,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "double-flange-adapter-2500-rtj-1502-weco-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a double flange adapter rated 6,170 psi for sour service used for?",
+          "a": "A double flange adapter joins an ANSI RTJ flange to a hammer-union end, so process-plant pipework connects to sour-well frac iron. The Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service is rated 6,170 psi for sour service, in the configuration ANSI Flange × Weco Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service come in?",
+          "a": "The Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service is listed in 2 in × 1 in, 3 in × 3 in, 4 in × 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service?",
+          "a": "On the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service, end A is ANSI 2500# RTJ flange (raised face, ring-joint groove) and end B is 1502 Female Weco Union. Bore: Matches the smaller end."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service?",
+          "a": "The Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service is rated 6,170 psi working pressure (ANSI 2500 class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service made from?",
+          "a": "The Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service meet?",
+          "a": "For the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service connect to?",
+          "a": "The union end of the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service joins unions of the same figure and size only, and never to a different figure, as mismatched unions are a known failure cause. The flange end bolts to a matching API flange with the correct ring gasket. The listing names ANSI 2500 RTJ, FMC WECO 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api), [ring joint gaskets](/c/ring-joint-gaskets) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service installed and serviced?",
+          "a": "For the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service: fit a new ring gasket at the flange end and bolt up evenly, and make up the union end by striking the wing nut lugs with a hammer. Bleed the line to zero before breaking any joint, and never hammer on a pressurised union."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service used?",
+          "a": "The Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service is used for process-plant tie-ins to sour-well frac iron; ANSI / WECO interface adapters; refinery-to-wellsite test loops. It is sized for 2 in × 1 in, 3 in × 3 in, 4 in × 3 in lines at 6,170 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the double flange adapter 15K 6,170 psi sour differ from similar flow iron?",
+          "a": "The double flange adapter differs from the [Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service](/p/adapter-flange-api-6bx-15k-1502-female-weco-standard-service) in figure, pressure class or service class. The Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service is rated 6,170 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service?",
+          "a": "The listing states a lead time of 21 days for the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Double Flange Adapter, 2500# RTJ × 1502 Weco, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "crossover-union-1502-series-f-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a crossover union rated 15,000 psi for standard service used for (Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service)?",
+          "a": "A crossover union joins two hammer-union line ends that would not otherwise mate, such as male to female or male to male, in a flow line. The Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Female × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service come in?",
+          "a": "The Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service is listed in 2 in, 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service?",
+          "a": "On the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service, end A is 1502 Female Weco Union and end B is 1502 Female Weco Union. Bore: Same as nominal — full bore through body."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service?",
+          "a": "The Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service made from?",
+          "a": "The Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service meet?",
+          "a": "For the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service connect to?",
+          "a": "The Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM Oil & Gas 1502, FMC WECO 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service used?",
+          "a": "The Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service is used for frac iron service trees; pump discharge to manifold tie-ins; stimulation flow lines. It is sized for 2 in, 3 in, 4 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the crossover union 1502 15,000 psi standard differ from similar flow iron (Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service)?",
+          "a": "The crossover union differs from the [Crossover Union, 1502 Series M×F, 10,000 psi, Sour Service](/p/crossover-union-1502-series-m-f-10-000-psi-sour-service) in figure, pressure class or service class. The Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Crossover Union, 1502 Series F×F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

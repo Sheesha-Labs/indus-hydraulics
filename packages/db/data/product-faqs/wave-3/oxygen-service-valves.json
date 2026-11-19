@@ -1,0 +1,71 @@
+{
+  "family": "oxygen-service-valves",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "oxygen-service-valves-cleaned",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are oxygen service valves and where are they used?",
+          "a": "Oxygen service valves are globe, gate, ball, butterfly, check and control valves that are cleaned and built so that oxygen cannot ignite parts of the valve. They are used in air separation units, oxygen pipelines, steelworks, hospitals and chemical plants. Each valve is degreased, assembled in a clean room, then sealed and labelled for oxygen service."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes do oxygen service valves cover, from NPS 1/4\" to 24\"?",
+          "a": "The range runs from NPS 1/4\" to 24\" (DN8 to DN600) in ASME Class 150 to 1500. End connections are RF flanged, butt-weld or socket weld, and operation is by handwheel, gearbox or actuator. The general arrangement drawing with each quotation gives the dimensions for the size, class and options you choose."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range do oxygen service valves cover?",
+          "a": "The published range is -196 °C to 300 °C, within ASME Class 150 to 1500. Which end of the range a given valve can use depends on the body and seal materials chosen, so state the design temperature when you enquire. Cryogenic liquid oxygen duty also needs the right stem extension and materials, which we confirm per order."
+        },
+        {
+          "slot": "F",
+          "q": "When does an oxygen valve need Monel or copper alloy instead of stainless steel?",
+          "a": "Above certain velocity and pressure limits the risk of impact ignition rises, and alloys that resist burning, such as Monel or brass, replace stainless steel. The valve body materials on offer are stainless steel, nickel alloys and copper alloys. We check the choice against the velocity and pressure in your enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to oxygen service valves, and how are they tested?",
+          "a": "Design follows ASME B16.34, and cleaning follows CGA G-4.1 and EIGA practice. Valves get shell, seat and backseat tests to ASME B16.34 and API 598, plus any qualification tests the project specifies. Third-party inspection and extra tests are added when the order calls for them."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections do oxygen service valves have, and what do they mate with?",
+          "a": "Valves come with raised-face flanged, butt-weld or socket-weld ends, so they mate with RF flanges or welded pipe in the matching class. For butt-weld ends we need the pipe schedule. Related valve types for the same line are on the [gate valves](/c/industrial-gate-valves) and [check valves](/c/industrial-check-valves) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "How are oxygen service valves cleaned and kept clean?",
+          "a": "Components are degreased and inspected under UV light in a controlled area, then assembled clean. Each valve is sealed and labelled for oxygen service before it leaves, so keep the seals on until it is installed. Oxygen does not burn but makes almost everything else burn, which is why particles and oil must stay out."
+        },
+        {
+          "slot": "J",
+          "q": "Why are oxygen service valves built differently from standard valves?",
+          "a": "A particle strike, a sudden pressurisation or friction inside a valve can ignite oxygen-wetted parts, so oxygen valves are designed to remove those risks. They use low-velocity flow paths, avoid sharp-edged impingement and limit adiabatic compression, and they are cleaned to oxygen standard. A standard valve is not built or cleaned for that duty."
+        },
+        {
+          "slot": "K",
+          "q": "How do oxygen service valves differ from the cryogenic valves on the shelf?",
+          "a": "Oxygen service valves are defined by cleaning and oxygen-compatible design across -196 °C to 300 °C, while the [cryogenic and liquid hydrogen valves](/c/cryogenic-valves) are defined by their low-temperature construction. A valve for liquid oxygen can need both, so state the fluid, the temperature and whether it is gas or liquid when you enquire."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with an oxygen service valve?",
+          "a": "Each valve comes with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. We can also confirm compliance line by line against a project specification or approved vendor list."
+        },
+        {
+          "slot": "M",
+          "q": "How are oxygen service valves supplied, and how long do they take?",
+          "a": "They are supplied from Dubai to projects and plants across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator. We review the data sheet before quoting and flag gaps such as a missing pipe schedule or an unsized operator torque."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to get a quotation for oxygen service valves?",
+          "a": "Send the valve data sheet if you have one. Otherwise give the size, pressure class, body and trim material, end connection, operator, design temperature and the service fluid, plus any project specification and the delivery address. Use [our contact page](/contact); we quote with the delivery time for that build."
+        }
+      ]
+    }
+  ]
+}

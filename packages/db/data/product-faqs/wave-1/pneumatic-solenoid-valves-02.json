@@ -1,0 +1,1737 @@
+{
+  "family": "pneumatic-solenoid-valves-02",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions: 1 bar = 14.5038 psi, so 145 psi is about 10 bar and 150 psi about 10.3 bar. Temperature: deg C = (deg F - 32) / 1.8, so -10 deg F is about -23 deg C, +5 deg F about -15 deg C, +115 deg F about 46 deg C, +120 deg F about 49 deg C and +125 deg F about 52 deg C.",
+      "source": "NIST Special Publication 811 (unit conversion factors)"
+    },
+    {
+      "fact": "A 2-way valve opens or closes one flow path (normally closed means it blocks flow when de-energised); a 3-way valve has 3 ports and 2 positions; a 4-way or 5-port valve has 4 or 5 ports and 2 positions, and a 3-position valve adds a centre position. In the centre position of a 4/3 or 5/3 valve, all ports blocked (closed centre) holds the cylinder, centre exhaust vents both cylinder ports and pressure centre pressurises both. A single-solenoid spring or air return valve goes back when de-energised; a double-solenoid 2-position valve stays in the last position commanded.",
+      "source": "ISO 1219-1 (fluid power graphical symbols); Indus Hydraulics guide 'Solenoid valve functions explained: 3/2, 5/2 and 5/3 valves'"
+    },
+    {
+      "fact": "A solenoid coil is built for one supply type and voltage (for example 24 V DC or 120 V AC); a coil on the wrong voltage or supply type will not switch the valve and can burn out. An internal-pilot valve takes its pilot air from the main supply; an external-pilot valve needs a separate pilot supply, used when the main pressure is low or the valve runs on vacuum.",
+      "source": "ISO 4414 (pneumatic fluid power, general rules and safety requirements); Parker Pneumatic Division valve catalogues"
+    },
+    {
+      "fact": "ISO 5599-2 and ISO 15407-2 are mounting-interface standards for five-port pneumatic directional valves: they fix the mounting-surface dimensions and port layout so that valves built to the same interface size can be changed on one sub-base or manifold.",
+      "source": "ISO 5599-2 and ISO 15407-2, pneumatic fluid power five-port directional control valves, mounting interface surfaces"
+    },
+    {
+      "fact": "NEMA 4 is an enclosure type for indoor or outdoor use that gives protection against windblown dust, rain, splashing water and hose-directed water; it is not an explosion-proof or hazardous-area rating.",
+      "source": "NEMA 250, Enclosures for Electrical Equipment (1000 Volts Maximum)"
+    },
+    {
+      "fact": "Cv is a flow coefficient: the higher the Cv, the more air a valve passes at a given pressure drop; the Cv of the valve should be compared with the Cv the cylinder circuit needs. A valve manifold or sub-base carries several valves on one supply and exhaust passage.",
+      "source": "ANSI/ISA-75.01.01 flow coefficient definition; Indus Hydraulics guide 'Sizing pneumatic valves: Cv, Kv, sonic conductance'"
+    },
+    {
+      "fact": "Sibling listings on indushydraulics.com: Parker B Series valves are listed with ports from 1/8 to 3/4 inch; Parker N Series valves with ports from 3/8 to 1-1/4 inch; Parker Valvair II valves with ports of 3/8, 1 and 1-1/4 inch; Parker Valvair II manifolds with 3/8, 1/2 and 3/4 NPT ports; Parker VIKING XTREME 4-way valves with ports of 1/8, 1/4, 3/8 and 1/2 inch; Numatics Mark 8 valves with ports of 1/8, 1/4, 3/8 and 1/2 inch.",
+      "source": "Indus Hydraulics product listings compiled from Parker and Numatics catalogues"
+    },
+    {
+      "fact": "The notation 4/2 means a valve with 4 ports and 2 positions, 3/2 means 3 ports and 2 positions, 5/2 means 5 ports and 2 positions, 4/3 and 5/3 mean 4 or 5 ports and 3 positions.",
+      "source": "ISO 1219-1 valve designation (ports/positions)"
+    },
+    {
+      "fact": "Customs classification: taps, cocks, valves and similar appliances for pipes, tanks and the like, including pneumatic solenoid valves and their parts, fall under HS heading 8481.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "Flow and part-number facts from sibling listings on indushydraulics.com: Parker H-ISO HA valves list a Cv of 1 to 1.1 and HB valves 0.45 to 0.55 (HB4/3 rows 0.55 and 0.45; HA 4/3 rows 1 and 1.1); Parker N Series 3-way rows number 17 at 120 V AC; Numatics blocks 206-1760 (2 stations 3/8 inch NPT), 206-1761 (3 stations) and 206-1762 (4 stations 3/8 inch, Cv 1.7), 241-150 (4 stations 1/4 inch, Cv 0.2), 206-1764 (6 stations) and 241-151 (6 stations).",
+      "source": "Indus Hydraulics product listings compiled from Parker and Numatics catalogues"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-b-series-double-solenoid-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker B Series double solenoid 4-way 2-position valve used for?",
+          "a": "The Parker B Series double solenoid valve is a 4-way, 2-position inline valve with two solenoids, one for each position, used to drive a double-acting cylinder. This listing carries 12 part numbers from 1/8\" to 3/4\" ports, with a Cv of 1.4 stated in the listing specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker B Series part numbers such as B522BB549C and B622BB553A?",
+          "a": "In the rows the ending sets the coil: BB549 is a 24 V DC coil and BB553 a 120 V AC coil, with six part numbers of each on this listing. The letters and digits before it carry the body size and port, so quote the full code, for example B522BB549C."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker B Series double solenoid valve come in?",
+          "a": "The listing has 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" valves, each in 24 V DC and 120 V AC versions, for example B522BB549C (1/4\" 24 V DC) and B723BB553A (1/2\" 120 V AC)."
+        },
+        {
+          "slot": "D",
+          "q": "Why choose a double solenoid B Series valve rather than the single solenoid version?",
+          "a": "A double solenoid valve stays in the last position when power is removed, while the [single solenoid B Series valve](/p/parker-b-series-single-solenoid-valves-4-way-2-position) returns by air when de-energised. Choose double for memory on power loss, single for a defined safe position."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Parker B Series double solenoid valve have?",
+          "a": "The listing does not give a clear maximum pressure for this valve, so we confirm the operating range for your exact part number with Parker before supply. It has a non-locking flush override and internal pilot supply, and the 120 V AC versions are listed as 110 to 120 V AC."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker B Series valve body made of and what media can it use?",
+          "a": "The listing gives a body-ported inline valve for compressed air with internal pilot supply and a 15 mm, 3-pin DIN 43650C solenoid connection. Body and seal materials are not stated, so tell us your medium and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Parker B Series double solenoid valve?",
+          "a": "This listing holds no datasheet or certificate file for the Parker B Series double solenoid valve, so name the document you need, for example a certificate of conformity or the Parker catalogue page for B522BB549C, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Parker B Series 4-way valve?",
+          "a": "Fit pipe fittings of the same size as the port, from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and a DIN 43650C connector, since the listing specifies a 15 mm 3-pin DIN 43650C solenoid connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I check a Parker B Series double solenoid valve is working?",
+          "a": "Check the coil voltage in the part number against your supply, press the non-locking flush override on each solenoid to see the valve shift, then power it. Never energise both solenoids at the same time."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker B Series 4/2 and 4/3 valves?",
+          "a": "The 4/2 valve has two positions, while the [Parker B Series 4-way 3-position valve](/p/parker-b-series-solenoid-air-control-valve-4-way-3-position) adds a centre condition, listed as centre exhaust with open centre position. Use 4/3 when you need to vent or stop mid-stroke."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker B Series valve made and how is it exported?",
+          "a": "The listing records the United States as the country of origin for the Parker B Series valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker B Series double solenoid valves in Dubai?",
+          "a": "Yes. We keep Parker B Series double solenoid valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-b-series-single-solenoid-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker B Series single solenoid 4-way 2-position valve used for?",
+          "a": "The Parker B Series single solenoid valve is a 4-way, 2-position inline valve with one solenoid and an air return, used to drive a double-acting cylinder with a defined rest position. This listing carries 12 part numbers from 1/8\" to 3/4\" ports, with a Cv of 1.4."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker part numbers like B512BB549C and B713BB553A mean?",
+          "a": "In the rows the ending sets the coil: BB549 is 24 V DC and BB553 is 120 V AC, six part numbers each. The first digits track the port size in these rows, B310 being 1/8\", B511 1/4\", B612 3/8\", B713 1/2\" and B814 3/4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker B Series single solenoid valve come in?",
+          "a": "The listing runs from 1/8\" (B310BB553C) through 1/4\" (B511BB549C), 3/8\" (B612BB549A), 1/2\" (B713BB549A) to 3/4\" (B814BB549A), each in 24 V DC and 120 V AC."
+        },
+        {
+          "slot": "D",
+          "q": "What does air return mean on the Parker B Series single solenoid valve?",
+          "a": "The specification lists an air return offset, so the valve shifts when the solenoid is energised and returns by air pressure when the solenoid is released. Compare with the [double solenoid B Series valve](/p/parker-b-series-double-solenoid-valves-4-way-2-position), which keeps its last position."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker B Series single solenoid valve have?",
+          "a": "The listing does not give a clear maximum pressure for this valve, so we confirm the operating range for your exact part number with Parker before supply. It has internal pilot supply and a non-locking flush override."
+        },
+        {
+          "slot": "F",
+          "q": "What media and materials apply to the Parker B Series single solenoid valve?",
+          "a": "It is a body-ported inline valve for compressed air with internal pilot supply. Materials are not stated on the listing, so send us your medium and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates come with the Parker B Series single solenoid valve?",
+          "a": "No certificate or datasheet is attached to the the Parker B Series single solenoid valve listing. Tell us in the enquiry what your file requires for B512BB549C, such as a conformity certificate, and we obtain it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I fit to a Parker B Series single solenoid valve?",
+          "a": "A 15 mm, 3-pin DIN 43650C connector for the coil, as the listing specifies, and pipe fittings of the port size from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test a Parker B Series single solenoid valve?",
+          "a": "Match the coil to your supply (24 V DC or 120 V AC from the part number), plug in the DIN connector and press the non-locking flush override to check the valve shifts before powering it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker B Series single solenoid valve differ from the Parker H-ISO H1 single valve?",
+          "a": "The B Series is a body-ported inline valve, while the [Parker H-ISO H1 single solenoid valve](/p/parker-h-iso-h1-series-single-solenoid-valves-4-way-2-position) is a plug-in valve to ISO 5599-2 for sub-bases and manifolds. Pick B for piping direct and H-ISO for manifold systems."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker B Series single solenoid valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker B Series valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker B Series single solenoid valves in Dubai?",
+          "a": "Yes, Parker B Series single solenoid valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-b-series-solenoid-air-control-valve-4-way-3-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker B Series 4-way 3-position solenoid valve used for?",
+          "a": "The Parker B Series 4-way, 3-position valve is a double-solenoid inline valve with a centre-exhaust position, used to stop or free a double-acting cylinder mid-stroke. This listing carries 30 part numbers in ten port and voltage combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker B Series 3-position part numbers like B551BB549C and B763BB553A?",
+          "a": "In the rows the ending sets the coil: BB549 is 24 V DC and BB553 is 120 V AC, with 15 part numbers of each. The digits before BB set the port and body, so give the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker B Series 4/3 valve come in?",
+          "a": "The item text covers 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" ports, in both 24 V DC and 120 V AC, three part numbers each. Pick the port to match your cylinder and flow."
+        },
+        {
+          "slot": "D",
+          "q": "What is the centre position of the Parker B Series 4/3 valve?",
+          "a": "The listing specification gives a centre exhaust condition with an open centre position, so both cylinder ports vent when both solenoids are off. If you need a locked position, ask us about a closed-centre version."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Parker B Series 4/3 valve have?",
+          "a": "Most rows (25 part numbers) show 145 psi, about 10 bar, and the ambient range is +5 deg F to +120 deg F, which is about -15 deg C to 49 deg C. Some rows show lower figures, so we confirm the rating for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker B Series 4/3 valve made of and rated for?",
+          "a": "The listing gives a body-ported inline valve with internal pilot, NEMA 4 coil enclosure, a non-locking override and a 3-pin DIN 43650C connector. It is for compressed air; send us other media for confirmation."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the Parker B Series 4/3 valve?",
+          "a": "We hold no datasheet or certificate for the Parker B Series 4/3 valve on this page. Ask for the Parker catalogue sheet or a certificate of conformity for B551BB549C in your enquiry and we request it from Parker when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and connectors fit the Parker B Series 4/3 valve?",
+          "a": "Use pipe fittings of the port size from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and a DIN 43650C 3-pin connector for each solenoid, since this is a double-solenoid valve."
+        },
+        {
+          "slot": "I",
+          "q": "How should I use a centre-exhaust 4/3 valve safely?",
+          "a": "A centre-exhaust valve vents the cylinder when both solenoids are off, so a vertical load may fall. Fit a holding or check device if the load must not move, and never energise both solenoids at once."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker B Series 4/3 and 4/2 valves?",
+          "a": "The 4/3 valve has a centre position, while the [Parker B Series double solenoid 4/2 valve](/p/parker-b-series-double-solenoid-valves-4-way-2-position) has just two positions. Pick 4/3 to stop mid-stroke or free the cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker B Series 4/3 valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker B Series 4/3 valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker B Series 4-way 3-position valves in Dubai?",
+          "a": "Yes. Parker B Series 4-way 3-position valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-h1-series-double-solenoid-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO H1 double solenoid 4-way 2-position valve?",
+          "a": "The Parker H-ISO H1 double solenoid valve is a 4-way, 2-position plug-in valve to the ISO 5599-2 interface, with a solenoid at each end so it keeps its last position. This listing carries 8 part numbers, H12VXBG023D to H12VXXH0B9D."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker H-ISO part numbers such as H12VXBG023D and H12VXXH0B9D?",
+          "a": "In the rows H12 is the H1 double solenoid valve, the letter after VX sets the pilot supply (B internal, X external) and the next letter the override (G non-lockable, H locking). The 023 and 0g9 or 0b9 groups before the last letter are parker coil option codes that the listing does not spell out, so quote the code exactly."
+        },
+        {
+          "slot": "D",
+          "q": "Which options are available on the Parker H12 double solenoid valve?",
+          "a": "The eight part numbers combine internal or external pilot supply (four each), a non-lockable or locking override, and two coil options, 023D and 0B9D. For example H12VXBG023D is internal pilot, non-lockable; H12VXXH0B9D external pilot, locking."
+        },
+        {
+          "slot": "D",
+          "q": "When should I use external pilot on a Parker H-ISO H1 valve?",
+          "a": "Choose an external pilot valve (H12VXXG023D, H12VXXH0B9D) when the main supply is too low or varies, or when the valve operates on vacuum, since external pilot takes pilot air from a separate line. Internal pilot rows such as H12VXBG023D take pilot air from the main supply."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the Parker H-ISO H1 double solenoid valve have?",
+          "a": "The listing holds no pressure or Cv figure for H12 rows, so we confirm the pressure range and flow for your exact part number with Parker before supply. The valve is listed as ISO 5599-2, plug-in."
+        },
+        {
+          "slot": "F",
+          "q": "What media can a Parker H-ISO H1 valve handle?",
+          "a": "It is a pneumatic valve for compressed air; the listing does not state materials. Send your medium and operating conditions and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Parker H-ISO H1 valve?",
+          "a": "The listing gives the ISO 5599-2 plug-in interface, which fixes the mounting surface so the valve fits an ISO 5599-2 sub-base or manifold. It holds no certificates, so name the document you need and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "What sub-base or manifold fits the Parker H-ISO H1 valve?",
+          "a": "An ISO 5599-2 plug-in sub-base or manifold. See the [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for valves and manifolds, and our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for port fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and test a Parker H-ISO H1 double solenoid valve?",
+          "a": "Mount it on the sub-base with the seal in place, connect both coils, and use the override to check it shifts. A locking override (H) stays latched until released, a non-lockable one (G) springs back."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker H-ISO H1 double valve differ from the H1 single valve?",
+          "a": "The double valve (H12 numbers) has two solenoids and holds its last position, while the [H1 single solenoid valve](/p/parker-h-iso-h1-series-single-solenoid-valves-4-way-2-position) (H11 and H1E numbers) returns by air when de-energised."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker H-ISO H1 valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker H-ISO H1 valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO H1 double solenoid valves in Dubai?",
+          "a": "Yes, we stock Parker H-ISO H1 double solenoid valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-h1-series-single-solenoid-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO H1 single solenoid 4-way 2-position valve?",
+          "a": "The Parker H-ISO H1 single solenoid valve is a 4-way, 2-position plug-in valve to ISO 5599-2 with one solenoid and an air return. This listing carries 16 part numbers in H11 and H1E versions, such as H11VXBG023D and H1EVXXH0B9D."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker part numbers like H11VXBG023D and H1EVXXH023D mean?",
+          "a": "In the rows H11 and H1E are the single-solenoid versions, with H1E rows marked spring assist; the letter after VX sets the pilot (B internal, X external) and the next the override (G non-lockable, H locking). The 023 and 0g9 or 0b9 groups before the last letter are parker coil option codes that the listing does not spell out, so quote the code exactly."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between H11 and H1E on Parker H-ISO H1 valves?",
+          "a": "Both are single solenoid, air-return 4/2 valves, but the H1E rows are described as spring assist, so a spring helps the return, while H11 rows return by air alone. For example H11VXBG023D versus H1EVXBG023D."
+        },
+        {
+          "slot": "D",
+          "q": "Which override and pilot options does the Parker H1 single solenoid valve offer?",
+          "a": "Rows combine internal or external pilot, a non-lockable or locking override, and two coil options (023D, 0B9D). With 8 H11 and 8 H1E part numbers, the full list is on the table below the listing."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker H-ISO H1 single solenoid valve have?",
+          "a": "The listing holds no pressure or Cv figure for the H1 single valve, so we confirm the rating for your part number with Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are Parker H-ISO H1 single valves rated for in terms of media?",
+          "a": "They are pneumatic plug-in valves for compressed air. The listing does not state seal or body materials; send your medium and we confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker H-ISO H1 single valve follow a standard?",
+          "a": "The listing gives an ISO 5599-2 plug-in interface, so the valve fits an ISO 5599-2 sub-base or manifold. No certificate file is held; name the document you need and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "What do I mount a Parker H-ISO H1 valve on?",
+          "a": "An ISO 5599-2 plug-in sub-base or manifold, with port fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. See the [sizing guide](/blog/sizing-pneumatic-valves-flow-cv) to check the flow."
+        },
+        {
+          "slot": "I",
+          "q": "How do I commission a Parker H-ISO H1 single solenoid valve?",
+          "a": "Seat it on a clean sub-base with the seal fitted, wire the coil and cycle it with the override first. With air return, the valve returns only when pilot pressure is present, so check the pilot supply on external-pilot versions."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker H-ISO H1 single valve compare with the HA single valve?",
+          "a": "H1 follows ISO 5599-2, while the [HA single solenoid valve](/p/parker-h-iso-ha-series-single-solenoid-valves-4-way-2-position) follows ISO 15407-2 and lists a Cv of 1 to 1.1. Choose the one that matches your sub-base."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker H-ISO H1 single valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker H-ISO H1 single valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO H1 single solenoid valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Parker H-ISO H1 single solenoid valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-ha-series-double-solenoid-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO HA double solenoid 4-way 2-position valve?",
+          "a": "The Parker H-ISO HA double solenoid valve is a 4-way, 2-position plug-in valve to ISO 15407-2 with two solenoids, so it keeps its last position. This listing carries 7 part numbers, HA2VXBG023A to HA2VXLG023A, with Cv of 1 to 1.1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker HA part numbers such as HA2VXBG023A and HA2VXLH0G9A?",
+          "a": "In the rows HA2 is the double solenoid valve, the letter after VX sets the pilot (B internal, L external) and the next letter the override (G non-lockable, H locking). The 023 and 0g9 or 0b9 groups before the last letter are parker coil option codes that the listing does not spell out, so quote the code exactly."
+        },
+        {
+          "slot": "D",
+          "q": "Which pilot and override options does the Parker HA double valve have?",
+          "a": "Of the 7 part numbers, four are internal pilot (HA2VXBG023A, HA2VXBG0G9A, HA2VXBH023A, HA2VXBH0G9A) and three external pilot (HA2VXLG023A, HA2VXLG0G9A, HA2VXLH0G9A), each with non-lockable or locking override."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Parker HA double solenoid valve have?",
+          "a": "The rows state a Cv factor of 1 (HA2VXBH023A) or 1.1 (HA2VXBG023A and others), meaning the valve passes slightly more than a Cv of 1. Use the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) to compare with your cylinder."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker HA double solenoid valve have?",
+          "a": "The listing holds a Cv figure but no pressure range for these rows, so we confirm the pressure rating for your exact part number with Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What media can the Parker H-ISO HA valve be used with?",
+          "a": "It is a pneumatic plug-in valve for compressed air; materials are not stated, so tell us your medium and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker H-ISO HA valve follow?",
+          "a": "The listing gives the ISO 15407-2 plug-in interface, which fixes the mounting surface so the valve fits an ISO 15407-2 sub-base. Certificates are not held on the listing; ask for the one you need."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold does the Parker H-ISO HA valve fit?",
+          "a": "An ISO 15407-2 plug-in sub-base or manifold. Browse the [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for valves and bases, and [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) for port fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test a Parker HA double solenoid valve?",
+          "a": "Connect both coils to separate outputs, never energise them together, and use the override (G non-lockable, H locking) to check the valve shifts before commissioning."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker HA double 4/2 valve differ from the HA 4/3 version?",
+          "a": "The 4/2 valve has two positions, while the [HA double solenoid 4/3 valve](/p/parker-h-iso-ha-series-double-solenoid-valves-4-way-3-position) adds a centre: HA5 all ports blocked, HA6 centre exhaust, HA7 pressure centre."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker H-ISO HA valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker H-ISO HA valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO HA double solenoid valves in Dubai?",
+          "a": "Yes. We keep Parker H-ISO HA double solenoid valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-ha-series-double-solenoid-valves-4-way-3-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO HA double solenoid 4-way 3-position valve?",
+          "a": "The Parker H-ISO HA 4/3 valve is a double-solenoid plug-in valve to ISO 15407-2 with a centre position, used to stop, free or pressurise a cylinder mid-stroke. This listing carries 18 part numbers in all-ports-blocked, centre-exhaust and pressure-centre versions."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker HA5, HA6 and HA7 mean in part numbers like HA6VXBG023A?",
+          "a": "In the rows HA5 has all ports blocked in the centre, HA6 is centre exhaust and HA7 is pressure centre. The letter after VX sets the pilot (B internal, L external) and the next the override (G non-lockable, H locking)."
+        },
+        {
+          "slot": "D",
+          "q": "Which centre condition do I need on the Parker HA 4/3 valve?",
+          "a": "Use all ports blocked (HA5, six part numbers) to hold a cylinder, centre exhaust (HA6) to let it float, or pressure centre (HA7) to pressurise both ends. Check the load behaviour with the [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3)."
+        },
+        {
+          "slot": "D",
+          "q": "How much flow does the Parker HA 4/3 valve pass?",
+          "a": "Rows state a Cv factor of 1 or 1.1, for example HA6VXBH023A at 1.1 and HA6VXLG023A at 1. Some rows do not carry a figure, so check yours against the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker HA 4/3 valve have?",
+          "a": "The listing gives Cv figures but no pressure range for the 4/3 rows, so we confirm the pressure rating for your part number with Parker. The valves have a spring return."
+        },
+        {
+          "slot": "F",
+          "q": "What media can the Parker HA double solenoid 4/3 valve use?",
+          "a": "It is a pneumatic valve for compressed air with internal or external pilot supply. Materials are not stated; send your medium and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker H-ISO HA 4/3 valve conform to?",
+          "a": "The listing gives the ISO 15407-2 plug-in interface. No certificates are held on the listing; name the one you need and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "What sub-base fits the Parker HA 4/3 valve?",
+          "a": "An ISO 15407-2 plug-in sub-base or manifold. Fittings for the cylinder ports are on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker HA 4/3 valve be set up to avoid surprises?",
+          "a": "Pick the centre condition for the load, never energise both solenoids, and on external-pilot versions (rows with L) check that the separate pilot supply is connected."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker HA 4/3 compare with the HB 4/3 valve?",
+          "a": "HA has Cv 1 to 1.1 on ISO 15407-2 while the [HB double solenoid 4/3 valve](/p/parker-h-iso-hb-series-double-solenoid-valves-4-way-3-position) is the smaller range with Cv 0.45 to 0.55. Pick by the flow your cylinder needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker HA 4/3 valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker HA 4/3 valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO HA 4/3 solenoid valves in Dubai?",
+          "a": "Yes, Parker H-ISO HA 4/3 solenoid valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-ha-series-single-solenoid-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO HA single solenoid 4-way 2-position valve?",
+          "a": "The Parker H-ISO HA single solenoid valve is a 4-way, 2-position plug-in valve to ISO 15407-2 with one solenoid. This listing carries 15 part numbers in HA1 and HAE versions, such as HA1VXBG023A and HAEVXLG0G9A, with a Cv of 1 to 1.1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker HA1 and HAE part numbers such as HAEVXBG023A?",
+          "a": "In the rows HA1 and HAE are single-solenoid versions, the letter after VX sets the pilot (B internal, L external) and the next the override (G non-lockable, H locking). The 023 and 0g9 or 0b9 groups before the last letter are parker coil option codes that the listing does not spell out, so quote the code exactly."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between HA1 and HAE on Parker H-ISO HA valves?",
+          "a": "Both are single solenoid 4/2 valves. The HAE rows are described as spring assist (HAEVXBG023A, HAEVXLH0G9A) and HA1 rows are not, so quote the prefix when ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What Cv does the Parker HA single solenoid valve have?",
+          "a": "Rows state a Cv of 1 (HA1VXBG023A) or 1.1 (HAEVXBG023A, HA1VXBH0G9A), so flow is about the same across the range. Use the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) to compare with your cylinder."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker HA single solenoid valve have?",
+          "a": "The listing carries Cv figures but no pressure range for these rows, so we confirm the pressure rating for your exact part number with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What media can the Parker HA single solenoid valve be used on?",
+          "a": "It is a compressed-air plug-in valve with internal or external pilot supply. Materials are not on the listing; send your medium and we confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker HA single solenoid valve follow?",
+          "a": "The listing gives the ISO 15407-2 plug-in interface. No certificates are held on the listing; tell us which you need and we request it."
+        },
+        {
+          "slot": "H",
+          "q": "Which manifold or sub-base fits the Parker HA single solenoid valve?",
+          "a": "An ISO 15407-2 plug-in sub-base or manifold; the [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) lists valves and bases, and the [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf lists port fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and test a Parker HA single solenoid valve?",
+          "a": "Seat it on a clean base with its seal, wire the coil and cycle it with the override first (G non-lockable, H locking). Check the separate pilot supply on external-pilot versions."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker HA single valve compare with the HB single valve?",
+          "a": "The HA single valve has Cv 1 to 1.1, while the [HB single solenoid valve](/p/parker-h-iso-hb-series-single-solenoid-valves-4-way-2-position) is a smaller range with Cv 0.45 to 0.55. Choose by the flow your cylinder needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker HA single solenoid valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker HA single solenoid valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO HA single solenoid valves in Dubai?",
+          "a": "Yes. Parker H-ISO HA single solenoid valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-hb-series-double-solenoid-valves-3-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO HB double solenoid valve listing?",
+          "a": "The Parker H-ISO HB double solenoid listing carries 16 plug-in valves to ISO 15407-2: eight dual 3-way, 2-position valves (HBN and HBP numbers) and eight 4-way, 2-position valves (HB2 numbers), with Cv of 0.45 to 0.55."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker HBN, HBP and HB2 part numbers?",
+          "a": "In the rows HBN is a dual 3-way valve with both halves normally closed (NC/NC), HBP is a dual 3-way valve with both normally open (NO/NO) and HB2 is a 4-way, 2-position valve. The letter after VX sets the pilot (B internal, L external)."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve do I need, HBN, HBP or HB2?",
+          "a": "Use HBN (HBNVXBG023A) for two normally closed 3-way functions, HBP (HBPVXBG023A) for two normally open ones, and HB2 (HB2VXBG023A) for a standard 4/2 cylinder valve. Check function with the [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3)."
+        },
+        {
+          "slot": "D",
+          "q": "What Cv does the Parker HB double solenoid valve have?",
+          "a": "The HBN and HBP rows state a Cv of 0.55 and the HB2 rows 0.45 or 0.55. This is a small valve; compare it with the flow your cylinder needs using the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker HB double solenoid valve have?",
+          "a": "The listing carries Cv figures but no pressure range for these rows, so we confirm the pressure rating for your part number with Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What media can the Parker HB double solenoid valve use?",
+          "a": "It is a compressed-air plug-in valve with internal or external pilot supply. Materials are not stated on the listing; send your medium and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker HB valve follow?",
+          "a": "The listing gives the ISO 15407-2 plug-in interface. No certificates are held on the listing; name the one you need and we request it."
+        },
+        {
+          "slot": "H",
+          "q": "What sub-base fits the Parker HB double solenoid valve?",
+          "a": "An ISO 15407-2 plug-in sub-base or manifold. Port fittings are on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I commission a Parker HB double solenoid valve?",
+          "a": "Mount on a clean base, wire both coils to separate outputs, never energise both together, and test with the override (G non-lockable, H locking)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker HB 3/2 and 4/2 listing differ from the HB 4/3 valve?",
+          "a": "This listing is 2-position, while the [HB double solenoid 4/3 valve](/p/parker-h-iso-hb-series-double-solenoid-valves-4-way-3-position) adds a centre condition. Choose 4/3 to stop or free a cylinder mid-stroke."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker HB double solenoid valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker HB double solenoid valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO HB double solenoid valves in Dubai?",
+          "a": "Yes, we stock Parker H-ISO HB double solenoid valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-hb-series-double-solenoid-valves-4-way-3-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO HB double solenoid 4-way 3-position valve?",
+          "a": "The Parker H-ISO HB 4/3 valve is a double-solenoid plug-in valve to ISO 15407-2 with a centre condition, in a compact range with Cv of 0.45 to 0.55. This listing carries 18 part numbers in HB5, HB6 and HB7 versions."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker HB5, HB6 and HB7 mean in part numbers like HB6VXBG023A?",
+          "a": "In the rows HB5 has all ports blocked in the centre, HB6 is centre exhaust and HB7 is pressure centre. The letter after VX sets the pilot (B internal, L external) and the next the override (G non-lockable, H locking)."
+        },
+        {
+          "slot": "D",
+          "q": "Which centre condition do I need on the Parker HB 4/3 valve?",
+          "a": "Use HB5 (all ports blocked) to hold a cylinder, HB6 (centre exhaust) to let it float or HB7 (pressure centre) to pressurise both ends. The [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3) explains each."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Parker HB 4/3 valve pass?",
+          "a": "Rows state a Cv of 0.55, with HB7VXBH0G9A at 0.45. This is a compact valve, so check the Cv against the cylinder with the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker HB 4/3 valve have?",
+          "a": "The listing carries Cv figures but no pressure range for these rows, so we confirm the pressure rating for your part number with Parker. The valves have a spring return."
+        },
+        {
+          "slot": "F",
+          "q": "What media can the Parker HB 4/3 valve use?",
+          "a": "It is a compressed-air plug-in valve; materials are not on the listing. Send your medium and we confirm with Parker. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker HB 4/3 valve follow?",
+          "a": "The listing gives the ISO 15407-2 plug-in interface. No certificates are held; name the document you need and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "Which sub-base fits the Parker HB 4/3 valve?",
+          "a": "An ISO 15407-2 plug-in sub-base or manifold, with port fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and test a Parker HB 4/3 valve?",
+          "a": "Mount on a clean base, wire each coil to its own output and never energise both. Test with the override, and on external-pilot versions (rows with L) check the pilot supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker HB 4/3 differ from the HA 4/3 valve?",
+          "a": "HB is the compact range with Cv 0.45 to 0.55, while the [HA 4/3 valve](/p/parker-h-iso-ha-series-double-solenoid-valves-4-way-3-position) has Cv of 1 to 1.1. Choose by the flow you need. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker HB 4/3 valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker HB 4/3 valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO HB 4/3 solenoid valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Parker H-ISO HB 4/3 solenoid valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-iso-hb-series-single-solenoid-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker H-ISO HB single solenoid 4-way 2-position valve?",
+          "a": "The Parker H-ISO HB single solenoid valve is a compact 4-way, 2-position plug-in valve to ISO 15407-2 with one solenoid. This listing carries 15 part numbers in HB1 and HBE versions, with a Cv of 0.45 to 0.55."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker HB1 and HBE part numbers such as HBEVXBG023A?",
+          "a": "In the rows HB1 and HBE are the single-solenoid versions, with HBE rows marked spring assist. The letter after VX sets the pilot (B internal, L external) and the next the override (G non-lockable, H locking)."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between HB1 and HBE on Parker H-ISO HB valves?",
+          "a": "Both are single solenoid 4/2 valves, but the HBE rows (HBEVXBG023A, HBEVXLH0G9A) are described as spring assist and the HB1 rows (HB1VXBG023A) are not."
+        },
+        {
+          "slot": "D",
+          "q": "What Cv does the Parker HB single solenoid valve have?",
+          "a": "Rows state a Cv of 0.55, with some at 0.45 (HB1VXLH023A, HB1VXBH023A, HBEVXBG0G9A). Use the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) to compare with your cylinder."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker HB single solenoid valve have?",
+          "a": "The listing carries Cv figures but no pressure range, so we confirm the pressure rating for your part number with Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What media can the Parker HB single solenoid valve use?",
+          "a": "It is a compressed-air plug-in valve; materials are not on the listing, so send your medium and we confirm. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker HB single solenoid valve follow?",
+          "a": "The listing gives the ISO 15407-2 plug-in interface. Certificates are not held on the listing; name the one you need. Quote the exact part number so the right document is matched."
+        },
+        {
+          "slot": "H",
+          "q": "Which sub-base fits the Parker HB single solenoid valve?",
+          "a": "An ISO 15407-2 plug-in sub-base or manifold, with port fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Parker HB single solenoid valve?",
+          "a": "Mount on a clean base with the seal fitted, wire the coil and test with the override. On external-pilot versions (rows with L) check the separate pilot supply is connected."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker HB single valve differ from the HB double 3/2 and 4/2 valves?",
+          "a": "The single valve has one solenoid and returns itself, while the [HB double solenoid valves](/p/parker-h-iso-hb-series-double-solenoid-valves-3-way-2-position) hold their last position. Choose single for a defined rest state."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker HB single solenoid valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker HB single solenoid valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker H-ISO HB single solenoid valves in Dubai?",
+          "a": "Yes. We keep Parker H-ISO HB single solenoid valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-solenoid-air-control-valve-2-way-normally-closed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker N Series 2-way normally closed solenoid valve used for?",
+          "a": "The Parker N Series 2-way, normally closed solenoid valve is an on-off valve that blocks air or vacuum flow until the coil is energised, with an aluminium body and nitrile seals. This listing carries 10 part numbers in 3/8\", 3/4\" and 1-1/4\" sizes, in 24 V DC and 120 V AC."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker N Series part numbers such as N3154904549 and N3259904753?",
+          "a": "In the rows the ending sets the coil: 4549 is 24 V DC and 4553 is 120 V AC on 3/8\" and 3/4\" valves, while 4749 and 4753 are the 24 V DC and 120 V AC codes on the 1-1/4\" valves. Quote the full 10-digit code."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Parker N 2-way valve come in?",
+          "a": "The item text covers 3/8\" (N3153904549, N3154904549), 3/4\" (N3156904549, N3157904553) and 1-1/4\" (N3258504749, N3259904753), with five 24 V DC and five 120 V AC part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Can the Parker N Series 2-way valve be used on vacuum?",
+          "a": "Yes, the specification lists it as vacuum operable and the listing gives a slow-shifting, continuous-duty valve with a locking override. Confirm the vacuum level you need with us, since the listing gives no vacuum figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Parker N 2-way valve handle?",
+          "a": "The listing gives an ambient range of 0 deg F to +125 deg F, about -18 deg C to 52 deg C, with nitrile seals. The listing has no clear maximum pressure for these rows, so we confirm the rating for your part number with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker N Series 2-way valve made from?",
+          "a": "The listing gives an aluminium body with aluminium and stainless steel poppet parts, nitrile seals, NPT inlet and exhaust connections and a NEMA 4 coil enclosure, with lubrication not required."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Parker N Series 2-way valve?",
+          "a": "This listing holds no datasheet or certificate file for the Parker N Series 2-way valve, so name the document you need, for example a certificate of conformity or the Parker catalogue page for N3154904549, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Parker N Series 2-way valve?",
+          "a": "NPT pipe fittings for the inlet and exhaust, from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and a plug-in electrical connection for the coil as the specification gives."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Parker N Series 2-way normally closed valve?",
+          "a": "Pipe the inlet to supply and the outlet to the line, check the coil voltage matches your supply and use the locking override to confirm it opens. Keep flow in the direction marked on the body."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker N 2-way valve differ from the Parker N 3-way 2-position valve?",
+          "a": "The 2-way valve only blocks or passes flow, whereas the [Parker N 3-way 2-position valve](/p/parker-solenoid-air-control-valve-3-way-2-position) also vents the outlet. Use a 3-way valve to fill and exhaust a single-acting cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker N Series 2-way valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker N Series 2-way valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker N Series 2-way solenoid valves in Dubai?",
+          "a": "Yes, Parker N Series 2-way solenoid valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-solenoid-air-control-valve-3-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Valvair 4-way 3-position solenoid valve used for?",
+          "a": "The Parker Valvair 4-way, 3-position solenoid valve is a double-solenoid aluminium spool valve for larger cylinders, with a centre position, a 12 W coil and a plug-in electrical connection. This listing carries 12 part numbers in 3/8\", 1\" and 1-1/4\" sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker Valvair part numbers such as L6958922149 and L6959922153?",
+          "a": "In the rows the ending sets the coil: 49 is 24 V DC and 53 is 120 V AC, and the digits before it track the size, 53 for 3/8\" (L6653923149), 58 for 1\" (L6958922149) and 59 for 1-1/4\" (L6959922153). Quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Parker Valvair 3-position valve come in?",
+          "a": "The rows cover 3/8\" (L6653923149), 1\" (L6958922149) and 1-1/4\" (L6959921149), with seven 24 V DC and five 120 V AC part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Is the Parker Valvair 3-position valve closed centre?",
+          "a": "This listing does not state the centre condition; the [all ports blocked Valvair listing](/p/parker-solenoid-air-control-valve-3-position-all-ports-blocked) is the closed-centre version. Tell us which centre you need and we confirm the part number."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and electrical rating apply to the Parker Valvair 3-position valve?",
+          "a": "The listing gives an ambient range of 0 deg F to +125 deg F, about -18 deg C to 52 deg C, a 12 W coil and NEMA 1 and 12 enclosure ratings. No maximum pressure is given for these rows, so we confirm it with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Valvair 3-position valve made of?",
+          "a": "The listing gives an aluminium body and aluminium spool with internal pilot, a locking override and a plug-in connection. It is not vacuum operable according to the listing."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the Parker Valvair 3-position valve?",
+          "a": "No certificate or datasheet is attached to the the Parker Valvair 3-position valve listing. Tell us in the enquiry what your file requires for L6958922149, such as a conformity certificate, and we obtain it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and base does the Parker Valvair 3-position valve use?",
+          "a": "Pipe fittings of the port size (see our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf) or the [Valvair II manifold](/p/parker-valvair-ii-series-manifold-valveair-ii-series) with 3/8\", 1/2\" or 3/4\" NPT ports."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test a Parker Valvair 3-position valve?",
+          "a": "Connect each coil separately, never energise both together, and use the locking override to confirm the valve shifts. Check that the supply matches the coil voltage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Valvair 4/3 valve differ from the 4/2 5-port valve?",
+          "a": "The 4/3 valve has a centre position, while the [Valvair II 4/2 5-port valve](/p/parker-solenoid-air-control-valve-4-way-2-position-5-port) has two positions. Pick 4/3 to stop mid-stroke. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Valvair 3-position valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker Valvair 3-position valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker Valvair 4-way 3-position valves in Dubai?",
+          "a": "Yes. Parker Valvair 4-way 3-position valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-solenoid-air-control-valve-3-position-all-ports-blocked",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Valvair 3-position all-ports-blocked solenoid valve?",
+          "a": "The Parker Valvair 3-position, all-ports-blocked valve is a closed-centre 4-way solenoid valve that holds a cylinder in place when both coils are off. This listing carries 6 part numbers in 3/8\", 1\" and 1-1/4\" sizes, with 12 W coils."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker part numbers such as L6958921153 and L6653921149?",
+          "a": "In the rows the ending sets the coil: 53 is 120 V AC and 49 is 24 V DC, and the digits 53, 58 or 59 before the 921 group track the port size, 3/8\", 1\" and 1-1/4\" respectively. Quote the whole code."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages are listed for the Parker all-ports-blocked valve?",
+          "a": "Four part numbers are 120 V AC (L6959921153, L6958921153, L6658921153, L6653921153) and two are 24 V DC (L6658921149, L6653921149). Sizes are 3/8\", 1\" and 1-1/4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What does all ports blocked mean on a Parker Valvair valve?",
+          "a": "All ports blocked means that in the centre position the supply and both cylinder ports are closed, so a cylinder holds its position. Compare with centre exhaust, which vents it, using the [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and power rating does this Parker valve have?",
+          "a": "The listing gives an ambient range of 0 deg F to +125 deg F, about -18 deg C to 52 deg C, a 12 W coil and NEMA 1 and 12 ratings. We confirm the pressure rating for your part number with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Valvair all-ports-blocked valve made from?",
+          "a": "The listing gives an aluminium body and spool, internal pilot, a non-locking override and NPT connections, with lubrication not required and not vacuum operable."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the Parker Valvair all-ports-blocked valve?",
+          "a": "We hold no datasheet or certificate for the Parker Valvair all-ports-blocked valve on this page. Ask for the Parker catalogue sheet or a certificate of conformity for L6958921153 in your enquiry and we request it from Parker when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What base and fittings does the Parker Valvair closed-centre valve use?",
+          "a": "It mounts on a Valvair II base such as the [Valvair II manifold](/p/parker-valvair-ii-series-manifold-valveair-ii-series) or pipes direct with NPT fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I use a closed-centre valve safely on a vertical cylinder?",
+          "a": "Closed centre traps air on both sides, but leakage can still let a vertical load drift, so add a mechanical lock if people are exposed. Never energise both coils together."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Valvair all-ports-blocked valve differ from the other Valvair 3-position listing?",
+          "a": "This listing is stated as all ports blocked, while the [other Valvair 3-position listing](/p/parker-solenoid-air-control-valve-3-position) does not state the centre condition. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Valvair all-ports-blocked valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker Valvair valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker Valvair all-ports-blocked valves in Dubai?",
+          "a": "Yes, we stock Parker Valvair all-ports-blocked valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "parker-solenoid-air-control-valve-3-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker N Series 3-way 2-position solenoid valve used for?",
+          "a": "The Parker N Series 3-way, 2-position solenoid valve fills and exhausts a single-acting cylinder or switches one line between supply and exhaust, with spring return and a NEMA 4 coil. This listing carries 32 part numbers from 1/8\" to 1-1/4\", mostly N35 to N38 codes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker N Series 3-way part numbers such as N3553904549 and N3858904753?",
+          "a": "In the rows the ending sets the coil: 4549 is 24 V DC and 4553 is 120 V AC for 3/8\" and 3/4\" valves, and 4749 and 4753 are the codes for 1-1/4\" valves. The listing also holds a few B Series codes such as B5G1BB553C."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Parker N 3-way valve come in?",
+          "a": "The item text covers 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1-1/4\" valves, 15 in 24 V DC and 17 in 120 V AC. For example N3554904549 is 3/8\" 24 V DC and N3756904553 is 3/4\" 120 V AC."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between N35, N36, N37 and N38 valves?",
+          "a": "The listing does not publish a one-line difference between these families, which cover 3/8\" to 1-1/4\" bodies, so quote the exact code, or the size and voltage, and we confirm with Parker."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Parker N 3-way valve handle?",
+          "a": "Rows show 140 psi on the N-series valves and 145 psi on the B-series codes, about 10 bar, and the listing gives an ambient range of 0 deg F to +125 deg F, about -18 deg C to 52 deg C. A few rows carry lower figures, so confirm the rating for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker N 3-way valve made from?",
+          "a": "The listing gives a body-ported valve with a plug-in connection, NEMA 4 coil, slow shifting and a normally closed spring-return action. Material details are not stated; send us your medium and we confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Parker N Series 3-way valve?",
+          "a": "This listing holds no datasheet or certificate file for the Parker N Series 3-way valve, so name the document you need, for example a certificate of conformity or the Parker catalogue page for N3554904549, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to a Parker N 3-way valve?",
+          "a": "Use NPT-type pipe fittings of the port size, from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and a plug-in connector for the coil."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Parker N 3-way solenoid valve?",
+          "a": "Pipe supply to the inlet, the cylinder to the outlet and leave the exhaust free or fitted with a silencer, see our [silencers](/c/pneumatic-fittings-silencers). Check the coil voltage against the supply before powering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker N 3-way valve differ from the Parker N 2-way valve?",
+          "a": "The 3-way valve exhausts the outlet when de-energised, while the [N Series 2-way valve](/p/parker-solenoid-air-control-valve-2-way-normally-closed) only blocks flow. Use 3-way for a single-acting cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker N Series 3-way valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker N Series 3-way valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker N Series 3-way 2-position solenoid valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Parker N Series 3-way 2-position solenoid valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "parker-solenoid-air-control-valve-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker VIKING XTREME 4-way 2-position solenoid valve?",
+          "a": "The Parker VIKING XTREME 4-way, 2-position valve is a body-ported double-solenoid aluminium spool valve sold with a valveless coil, so the solenoid is ordered separately. This listing carries 8 part numbers, P2LAX591EEHDDN to P2LDX594EEHDDN, in four port sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker VIKING XTREME part numbers like P2LBX592ESHDDN?",
+          "a": "In the rows P2LA, P2LB, P2LC and P2LD are the 1/8\", 1/4\", 3/8\" and 1/2\" valves (P2LAX591EEHDDN is 1/8\", P2LDX594EEHDDN is 1/2\"), and EE or ES after the digits gives two versions of each size."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker VIKING XTREME valve have?",
+          "a": "1/8\" (P2LAX591EEHDDN, P2LAX591ESHDDN), 1/4\" (P2LBX592...), 3/8\" (P2LCX593...) and 1/2\" (P2LDX594...), two part numbers each. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Does the Parker VIKING XTREME valve come with a coil?",
+          "a": "No. The listing specification says the solenoid coil is not included and gives an electrical connection of valveless coil, so order the coil separately for your voltage."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker VIKING XTREME valve have?",
+          "a": "The rows state 232 psi for the 1/8\" and 1/4\" valves and 174 psi for the 3/8\" and 1/2\" valves, about 16 bar and 12 bar. The listing gives NEMA 4 and 4X ratings; confirm the rating for your part number with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker VIKING XTREME valve made from?",
+          "a": "The listing gives an aluminium body and spool with nitrile seals, internal pilot and NPT inlet and pilot connections, for compressed air."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the Parker VIKING XTREME valve?",
+          "a": "No certificate or datasheet is attached to the the Parker VIKING XTREME valve listing. Tell us in the enquiry what your file requires for P2LBX592ESHDDN, such as a conformity certificate, and we obtain it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I fit to a Parker VIKING XTREME valve?",
+          "a": "A coil of the right voltage, because none is included, and NPT pipe fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a coil to a Parker VIKING XTREME valve?",
+          "a": "Fit the separately supplied coil, secure it and connect it before powering. Check the voltage matches your supply and never energise both coils on a double-solenoid valve together."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker VIKING XTREME compare with the Valvair II valves?",
+          "a": "VIKING XTREME is the smaller 1/8\" to 1/2\" valve for higher pressure, while the [Valvair II 4/2 5-port valves](/p/parker-solenoid-air-control-valve-4-way-2-position-5-port) are 3/8\" to 1-1/4\" with a 12 W coil included."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker VIKING XTREME valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker VIKING XTREME valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker VIKING XTREME solenoid valves in Dubai?",
+          "a": "Yes. We keep Parker VIKING XTREME solenoid valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-solenoid-air-control-valve-4-way-2-position-5-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Valvair II 4-way 2-position 5-port solenoid valve?",
+          "a": "The Parker Valvair II 4/2 valve is a single-solenoid, spring-return 5-port aluminium spool valve for larger cylinders, with a 12 W coil and plug-in connection. This listing carries 16 part numbers in 3/8\", 1\" and 1-1/4\" sizes, in 24 V DC and 120 V AC."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker Valvair II part numbers such as L7058910249 and L6858910253?",
+          "a": "In the rows the ending sets the coil: 49 is 24 V DC and 53 is 120 V AC, and the digits before the 910 group track the port size, 53 for 3/8\" (L6553910249), 58 for 1\" (L6558910249) and 59 for 1-1/4\" (L6859910249)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Parker Valvair II 5-port valve come in?",
+          "a": "Eight part numbers are 24 V DC and eight are 120 V AC, across 3/8\", 1\" and 1-1/4\" ports. The family has body-ported and inline versions according to the specification."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Parker Valvair II valve pass?",
+          "a": "The listing gives no Cv for these rows, so choose by port size (3/8\", 1\" or 1-1/4\") and confirm the flow with us; see the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) for sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Parker Valvair II valve handle?",
+          "a": "Rows show 140 psi on the 1\" and 1-1/4\" L70 codes and 145 psi on the others, about 10 bar, and the ambient range is 0 deg F to +125 deg F, about -18 deg C to 52 deg C."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Valvair II valve made from?",
+          "a": "The listing gives an aluminium body and spool with nitrile seals, internal pilot, a locking override and NEMA 1 and 12 ratings. It is not vacuum operable."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Parker Valvair II valve?",
+          "a": "We hold no datasheet or certificate for the Parker Valvair II valve on this page. Ask for the Parker catalogue sheet or a certificate of conformity for L7058910249 in your enquiry and we request it from Parker when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold fits the Parker Valvair II 5-port valve?",
+          "a": "The [Parker Valvair II manifold](/p/parker-valvair-ii-series-manifold-valveair-ii-series) with 3/8\", 1/2\" or 3/4\" NPT ports; for pipe fittings see [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers). Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and service a Parker Valvair II valve?",
+          "a": "Check the supply matches the 24 V DC or 120 V AC coil, use the locking override to prove the valve shifts, and keep lines clean because the spool is aluminium."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Valvair II 4/2 valve differ from the Valvair 4/3 valve?",
+          "a": "The 4/2 valve has two positions with spring return, while the [Valvair 4/3 valve](/p/parker-solenoid-air-control-valve-3-position) is a double-solenoid 3-position valve. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Valvair II valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker Valvair II valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker Valvair II 4/2 solenoid valves in Dubai?",
+          "a": "Yes, Parker Valvair II 4/2 solenoid valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-valvair-ii-series-manifold-valveair-ii-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Valvair II series manifold used for?",
+          "a": "The Parker Valvair II manifold is a single-station base that mounts a Valvair II solenoid valve and carries its supply and exhaust, supplied with mounting hardware. This listing carries 3 part numbers: K142230 (3/8\" NPT), K142231 (1/2\" NPT) and K142270 (3/4\" NPT)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker manifold part numbers such as K142230 and K142270?",
+          "a": "In the rows K142230 is the 3/8\" NPT manifold, K142231 the 1/2\" and K142270 the 3/4\" NPT. Quote the full code; the listing does not decode the K142 prefix further."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker Valvair II manifold have?",
+          "a": "3/8\" NPT (K142230), 1/2\" NPT (K142231) and 3/4\" NPT (K142270). Match the port to the valve size and the flow you need. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the Parker Valvair II manifold have?",
+          "a": "The specification lists one station, so each manifold takes one valve. For multi-valve banks ask us about a different base. Quote the full part number when you order."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the Parker Valvair II manifold have?",
+          "a": "The listing holds no pressure or temperature rating for the manifold, so we confirm both with Parker for your part number before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Parker Valvair II manifold made from?",
+          "a": "The listing does not state the material; it says mounting hardware is included. Send your medium and environment and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the Parker Valvair II manifold?",
+          "a": "This listing holds no datasheet or certificate file for the Parker Valvair II manifold, so name the document you need, for example a certificate of conformity or the Parker catalogue page for K142231, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the Parker Valvair II manifold?",
+          "a": "Parker Valvair II valves such as the [Valvair II 4/2 5-port valve](/p/parker-solenoid-air-control-valve-4-way-2-position-5-port), compatible series VALVAIR II per the listing. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Valvair II valve to its manifold?",
+          "a": "Seat the valve on a clean base face with its seal, tighten the supplied hardware evenly and pressure-test before commissioning. Test at low pressure first and check every connection for leaks before going to line pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Valvair II manifold differ from a Numatics manifold block?",
+          "a": "The Valvair II manifold is a single-station base with 3/8\" to 3/4\" NPT ports, while the [Numatics manifold blocks](/p/numatics-manifold-block) come in 1 or 2 stations from 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Valvair II manifold made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Parker Valvair II manifold, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker Valvair II manifolds in Dubai?",
+          "a": "Yes. Parker Valvair II manifolds is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-manifold-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics manifold block used for?",
+          "a": "The Numatics manifold block is a small valve base that carries one or two solenoid valves on common supply and exhaust ports. This listing carries 11 part numbers, such as 229-676 (1 station, 1/4\" NPT) and 206-1760 (2 stations, 3/8\" NPT), in port sizes from #10-32 to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics manifold numbers such as 229-748 and 206-1760?",
+          "a": "In the rows the item text gives the station count and port: 229-748 is a 1-station 1/2\" NPT block, 229-749 a 1-station 3/4\" block, 206-1760 a 2-station 3/8\" block and 241-148 a 2-station 1/4\" block. The prefix does not decode further on the listing."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Numatics manifold block come in?",
+          "a": "1-station blocks come in 1/8\" (229-718), 1/4\" (229-676), 3/8\" (229-630), 1/2\" (229-748, 229-880) and 3/4\" (229-749, 229-881); 2-station blocks in #10-32 (229-524), 1/4\" (241-148, 206-1749) and 3/8\" (206-1760)."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does the Numatics manifold block have?",
+          "a": "This listing is 1-station and 2-station blocks; the 3, 4 and 6-station versions are on the [3-station](/p/numatics-manifold-block-3-stations), [4-station](/p/numatics-manifold-block-4-stations-npt) and [6-station](/p/numatics-manifold-block-6-stations-npt) pages."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Numatics manifold block have?",
+          "a": "The listing holds no pressure or temperature rating for these blocks, so we confirm both with Numatics before supply. We confirm the maker's rating for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics manifold block made from?",
+          "a": "The listing does not state the material of the block. Send your medium and operating conditions and we confirm with Numatics. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the Numatics manifold block?",
+          "a": "No certificate or datasheet is attached to the the Numatics manifold block listing. Tell us in the enquiry what your file requires for 229-748, such as a conformity certificate, and we obtain it from Numatics with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the Numatics manifold block?",
+          "a": "Numatics solenoid valves such as the [4-way 2-position valve](/p/numatics-solenoid-air-control-valve-4-way-2-position) mount on blocks like these; match the valve series to the block with us before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble a Numatics manifold block?",
+          "a": "Fit the gasket between valve and block, tighten the mounting screws evenly and plug unused ports. Pressure-test for leaks before commissioning."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics manifold block differ from the 3-station block?",
+          "a": "This listing is 1 and 2 stations, while the [3-station block](/p/numatics-manifold-block-3-stations) holds three valves with #10-32, 1/4\" and 3/8\" ports. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics manifold block made and exported from?",
+          "a": "The listing records Taiwan as the country of origin for the Numatics manifold block, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Numatics manifold blocks in Dubai?",
+          "a": "Yes, we stock Numatics manifold blocks at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-manifold-block-3-stations",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics 3-station manifold block used for?",
+          "a": "The Numatics 3-station manifold block carries three solenoid valves on common supply and exhaust ports, supplied with a gasket and mounting hardware. This listing carries 3 part numbers: 229-525 (#10-32), 206-1750 (1/4\" NPT) and 206-1761 (3/8\" NPT)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics numbers such as 206-1750 and 206-1761?",
+          "a": "In the rows 206-1750 is the 3-station 1/4\" block and 206-1761 the 3-station 3/8\" block, and the last two digits count up with stations in the 206-17 series: 206-1760 is 2 stations 3/8\", 206-1761 is 3 and 206-1762 is 4."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Numatics 3-station block have?",
+          "a": "#10-32 UNF (229-525), 1/4\" NPT (206-1750) and 3/8\" NPT (206-1761). Choose the thread to suit your fittings and the flow your valves need."
+        },
+        {
+          "slot": "D",
+          "q": "What is included with the Numatics 3-station manifold block?",
+          "a": "The specification lists a gasket and mounting hardware, so you can mount the valves without separate seals. Check the exact kit contents with us when ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the Numatics 3-station block have?",
+          "a": "The listing holds no pressure or temperature rating, so we confirm both with Numatics before supply. We confirm the maker's rating for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics 3-station block made of?",
+          "a": "The material is not stated on the listing. Send your medium and we confirm with Numatics. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Numatics 3-station block?",
+          "a": "We hold no datasheet or certificate for the Numatics 3-station block on this page. Ask for the Numatics catalogue sheet or a certificate of conformity for 206-1761 in your enquiry and we request it from Numatics when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What valves fit the Numatics 3-station block?",
+          "a": "Numatics solenoid valves such as the [Numatics 4-way 2-position 5-port valve](/p/numatics-solenoid-air-control-valve-4-way-2-position-5-port); confirm the series match with us before ordering. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit valves to the Numatics 3-station block?",
+          "a": "Place the gasket, set each valve on its station, tighten the screws evenly and plug unused ports before pressure-testing. Test at low pressure first and check every connection for leaks before going to line pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics 3-station block compare with the 4-station block?",
+          "a": "The 3-station block has #10-32, 1/4\" and 3/8\" ports, whereas the [4-station block](/p/numatics-manifold-block-4-stations-npt) is 1/4\" and 3/8\" NPT with stated Cv values of 0.2 and 1.7."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics 3-station block made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Numatics 3-station block, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Numatics 3-station manifold block in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Numatics 3-station manifold block in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-manifold-block-4-stations-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics 4-station manifold block used for?",
+          "a": "The Numatics 4-station NPT manifold block carries 4 solenoid valves on common supply and exhaust ports, supplied with mounting hardware. This listing carries 3 part numbers: 206-1762 (3/8\" NPT), 241-150 (1/4\" NPT) and 206-1751 (1/4\" NPT)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics numbers such as 206-1762 and 241-150?",
+          "a": "In the rows 206-1762 is the 4-station 3/8\" NPT block with Cv 1.7, 241-150 the 4-station 1/4\" block with Cv 0.2 and 206-1751 the 4-station 1/4\" block. The items differ in width, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Numatics 4-station block come in?",
+          "a": "3/8\" NPT (206-1762) and 1/4\" NPT (241-150 and 206-1751). The two 1/4\" versions differ in size: 241-150 is 4 7/8\" wide and 206-1751 is 2 5/16\" wide."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Numatics 206-1762 manifold have?",
+          "a": "The row for 206-1762 states a Cv of 1.7, against 0.2 for 241-150. A larger Cv passes more air, so choose the 3/8\" block for larger valves and check against the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Numatics 4-station block have?",
+          "a": "The listing gives dimensions and Cv but no pressure or temperature rating, so we confirm both with Numatics before supply. We confirm the maker's rating for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics 4-station manifold block made of?",
+          "a": "The listing does not state the material. Send your medium and operating conditions and we confirm with Numatics. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Numatics 4-station block?",
+          "a": "This listing holds no datasheet or certificate file for the Numatics 4-station block, so name the document you need, for example a certificate of conformity or the Numatics catalogue page for 206-1762, and we request it from Numatics with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the Numatics 4-station manifold block?",
+          "a": "The specification gives Aventics as the compatible brand. See the [Numatics solenoid valves](/p/numatics-solenoid-air-control-valve-4-way-2-position-5-port) and confirm the series with us. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount valves on the Numatics 4-station block?",
+          "a": "Fit the supplied hardware, tighten evenly and plug unused ports, then pressure-test. The block is about 3/4\" to 1 3/16\" high, so check clearance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics 4-station block differ from the 6-station block?",
+          "a": "The 4-station block holds 4 valves, while the [6-station block](/p/numatics-manifold-block-6-stations-npt) holds 6. Part numbers and ports are the same style. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics 4-station block made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Numatics 4-station block, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Numatics 4-station manifold block in Dubai?",
+          "a": "Yes. We keep the Numatics 4-station manifold block in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-manifold-block-6-stations-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics 6-station manifold block used for?",
+          "a": "The Numatics 6-station NPT manifold block carries 6 solenoid valves on common supply and exhaust ports, supplied with mounting hardware. This listing carries 3 part numbers: 206-1764 (3/8\" NPT), 241-151 (1/4\" NPT) and 206-1753 (1/4\" NPT)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics numbers such as 206-1764 and 241-151?",
+          "a": "In the rows 206-1764 is the 6-station 3/8\" NPT block with Cv 1.7, 241-151 the 6-station 1/4\" block with Cv 0.2 and 206-1753 the 6-station 1/4\" block. The items differ in width, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Numatics 6-station block come in?",
+          "a": "3/8\" NPT (206-1764) and 1/4\" NPT (241-151 and 206-1753). The two 1/4\" versions differ in size: 241-151 is 4 7/8\" wide and 206-1753 is 2 5/16\" wide."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Numatics 206-1764 manifold have?",
+          "a": "The row for 206-1764 states a Cv of 1.7, against 0.2 for 241-151. A larger Cv passes more air, so choose the 3/8\" block for larger valves and check against the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Numatics 6-station block have?",
+          "a": "The listing gives dimensions and Cv but no pressure or temperature rating, so we confirm both with Numatics before supply. We confirm the maker's rating for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics 6-station manifold block made of?",
+          "a": "The listing does not state the material. Send your medium and operating conditions and we confirm with Numatics. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Numatics 6-station block?",
+          "a": "No certificate or datasheet is attached to the the Numatics 6-station block listing. Tell us in the enquiry what your file requires for 206-1764, such as a conformity certificate, and we obtain it from Numatics with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the Numatics 6-station manifold block?",
+          "a": "The specification gives Aventics as the compatible brand. See the [Numatics solenoid valves](/p/numatics-solenoid-air-control-valve-4-way-2-position-5-port) and confirm the series with us. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount valves on the Numatics 6-station block?",
+          "a": "Fit the supplied hardware, tighten evenly and plug unused ports, then pressure-test. The block is about 3/4\" to 1 3/16\" high, so check clearance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics 6-station block differ from the 4-station block?",
+          "a": "The 6-station block holds 6 valves, while the [4-station block](/p/numatics-manifold-block-4-stations-npt) holds 4. Part numbers and ports are the same style. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics 6-station block made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Numatics 6-station block, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Numatics 6-station manifold block in Dubai?",
+          "a": "Yes, the Numatics 6-station manifold block is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-solenoid-air-control-valve-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics 4-way 2-position solenoid air control valve used for?",
+          "a": "The Numatics 4-way, 2-position solenoid valve is a body-ported spool-and-sleeve valve for driving a double-acting cylinder, with a DIN plug-in solenoid and NEMA 4 rating. This listing carries 16 part numbers in 1/8\" and 1/4\" sizes, in 24 V DC and 110 to 120 V AC."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics part numbers such as L01SS4594060T61 and 152SA400K000030?",
+          "a": "In the rows the ending sets the coil: 061 or T61 is 24 V DC and 030 or T30 is 110 to 120 V AC. Size shows in the prefix, L01 being 1/8\" and 152 being 1/4\" (152SA400M000061)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Numatics 4/2 valve come in?",
+          "a": "The rows cover 1/8\" and 1/4\" valves, plus 110/120 V AC and 24 V DC valves without a stated port (11SAD400C000030). There are 8 part numbers at 110 to 120 V AC and 7 at 24 V DC, plus 92280-2 at 24 V DC."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between SS and SA in Numatics part numbers like L01SS4592060T30?",
+          "a": "Both appear on the same 1/8\" 120 V AC valve (L01SS4592060T30 and L01SA4592060T30), so they mark two versions of that valve. The listing does not spell out the difference, so quote the full number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Numatics 4/2 valve have?",
+          "a": "Most rows show 150 psi, about 10 bar, and the specification gives -10 deg F to +115 deg F, about -23 deg C to 46 deg C, with 4.1 W coil power. Vacuum is listed from 0 to 28 inches of mercury."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics 4/2 valve made from?",
+          "a": "The specification lists a body-ported valve with a spool-and-sleeve shift, a DIN AC plug-in solenoid and a NEMA 4 coil. Materials are not stated; send your medium and we confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Numatics 4/2 valve?",
+          "a": "We hold no datasheet or certificate for the Numatics 4/2 valve on this page. Ask for the Numatics catalogue sheet or a certificate of conformity for L01SS4592060T30 in your enquiry and we request it from Numatics when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold fits the Numatics 4/2 valve?",
+          "a": "See the [Numatics manifold blocks](/p/numatics-manifold-block) with 1/8\" to 3/4\" ports; confirm the valve series with us. Pipe fittings are on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test a Numatics 4/2 solenoid valve?",
+          "a": "Check the supply matches the coil (24 V DC or 110 to 120 V AC from the part number), plug in the DIN connector and test the valve at low pressure first."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics 4/2 valve differ from the Numatics 5-port Mark 8 valve?",
+          "a": "This listing is body-ported 1/8\" and 1/4\" valves, while the [Mark 8 5-port valves](/p/numatics-solenoid-air-control-valve-4-way-2-position-5-port) are base-mounted steel-body valves in 1/8\" to 1/2\" for high cycle-rate machines."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics 4/2 valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Numatics 4/2 valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Numatics 4-way 2-position solenoid valves in Dubai?",
+          "a": "Yes. Numatics 4-way 2-position solenoid valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-solenoid-air-control-valve-4-way-2-position-5-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics Mark 8 4-way 2-position 5-port solenoid valve used for?",
+          "a": "The Numatics Mark 8 5-port valve is a base-mounted single-solenoid spring-return valve for high cycle-rate machines, with a steel body, stainless steel spool and 6 W coil. This listing carries 41 part numbers in 1/8\" to 1/2\" sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics part numbers such as 554BB400MT00061 and L12BA452O060T40?",
+          "a": "In the rows the ending sets the coil: 061 or T61 is 24 V DC, 030 or T30 is 110 to 120 V AC and T40 is 240 V AC. The prefix tracks size, 031 or L11 being 1/8\", 081, 152 or L12 1/4\", L23 3/8\" and 554 1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Numatics Mark 8 5-port valve come in?",
+          "a": "Ports are 1/8\", 1/4\", 3/8\" and 1/2\". Coils are 24 V DC (20 part numbers), 110 to 120 V AC (17) and 220 to 240 V AC (4); for example L12BA452O060T40 is 1/4\" 240 V AC."
+        },
+        {
+          "slot": "D",
+          "q": "Does Numatics offer hazardous location versions of the Mark 8 5-port valve?",
+          "a": "Rows such as L11XA452BP00061 (1/8\" 24 V DC) and L23XA452OP00030 (3/8\" 120 V AC) are described as hazardous location solenoid valves. The listing holds no approval details, so ask us for the certificate and classification before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Numatics Mark 8 valve have?",
+          "a": "Most rows show 150 psi, about 10 bar, and the ambient range is -10 deg F to +115 deg F, about -23 deg C to 46 deg C. Vacuum is listed from 0 to 28 inches of mercury."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics Mark 8 valve made from?",
+          "a": "The specification gives a steel body, a stainless steel spool, an aluminium poppet, internal or remote pilot and a NEMA 4 coil. It is rated for continuous duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Numatics Mark 8 valve?",
+          "a": "This listing holds no datasheet or certificate file for the Numatics Mark 8 valve, so name the document you need, for example a certificate of conformity or the Numatics catalogue page for 554BB400MT00061, and we request it from Numatics with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What base and fittings does the Numatics Mark 8 valve use?",
+          "a": "It is base mounted, so it needs a base such as the [Numatics manifold block](/p/numatics-manifold-block) with NPT ports from 1/8\" to 3/4\"; pipe fittings are on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and wire a Numatics Mark 8 valve?",
+          "a": "Mount on a clean base, check the coil voltage against the supply, and use the non-locking override to confirm it shifts. Choose internal or remote pilot to suit your supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics Mark 8 4/2 valve compare with the detented version?",
+          "a": "The standard valve spring-returns, while the [detented 5-port valve](/p/numatics-solenoid-air-control-valve-4-way-2-position-5-port-detented) stays in its last position when power is removed. Choose detented when the position must hold."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics Mark 8 valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Numatics Mark 8 valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Numatics Mark 8 5-port solenoid valves in Dubai?",
+          "a": "Yes, we stock Numatics Mark 8 5-port solenoid valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-solenoid-air-control-valve-4-way-2-position-5-port-detented",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics 4-way 2-position 5-port detented solenoid valve?",
+          "a": "The Numatics detented 5-port valve is a 4-way, 2-position solenoid valve that holds its last position when power is removed, with a hardwired coil and NEMA 4 rating. This listing carries 10 part numbers in 1/8\", 1/4\" and 3/8\" sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics numbers such as L12II452BP00061 and L23XX452OP00030?",
+          "a": "In the rows the ending sets the coil: 061 is 24 V DC and 030 is 110 to 120 V AC. The II and XX letters mark two versions, with the XX rows described as hazardous location valves."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Numatics detented valve come in?",
+          "a": "Sizes are 1/8\" (L11II452BP00061), 1/4\" (L12II452BP00061) and 3/8\" (L23II452BP00061); eight part numbers are 24 V DC and two are 110 to 120 V AC (L11XX452OP00030, L23XX452OP00030)."
+        },
+        {
+          "slot": "D",
+          "q": "What does detented mean on a Numatics solenoid valve?",
+          "a": "A detented valve keeps its spool in the last commanded position after the coil is switched off. Use it when the cylinder must hold position through a power loss; see the [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and power does the Numatics detented valve have?",
+          "a": "The specification gives -10 deg F to +115 deg F, about -23 deg C to 46 deg C, and 3.5 W coil power. The listing does not give a clear operating pressure range, so we confirm it with Numatics."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics detented valve made from?",
+          "a": "The specification gives a spool-and-sleeve valve with hardwired electrical connection and NEMA 4 coil. Materials are not stated; send your medium and we confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Numatics detented valve?",
+          "a": "No certificate or datasheet is attached to the the Numatics detented valve listing. Tell us in the enquiry what your file requires for L12II452BP00061, such as a conformity certificate, and we obtain it from Numatics with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I fit with the Numatics detented valve?",
+          "a": "A base such as the [Numatics manifold block](/p/numatics-manifold-block) and pipe fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf; the coil is hardwired, so route the leads to your control panel."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and set up a Numatics detented valve?",
+          "a": "Connect the hardwired leads to the right supply, apply a short pulse to the coil to shift and note the position it holds after power-off. Check the position on start-up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics detented valve differ from the Mark 8 spring-return valve?",
+          "a": "The detented valve holds position without power, while the [Mark 8 5-port valve](/p/numatics-solenoid-air-control-valve-4-way-2-position-5-port) spring-returns when the coil is off. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics detented valve made and exported from?",
+          "a": "The country of origin for the Numatics detented valve depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Numatics detented 5-port solenoid valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Numatics detented 5-port solenoid valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-solenoid-air-control-valve-4-way-3-position-5-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics Mark 8 4-way 3-position 5-port solenoid valve used for?",
+          "a": "The Numatics Mark 8 4/3 valve is a base-mounted double-solenoid valve with a centre position for high cycle-rate machines, with a steel body, stainless steel spool and 6 W coil. This listing carries 43 part numbers in 1/8\" to 1/2\" sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Numatics part numbers such as 081SS500M000061 and L12BB652O060T30?",
+          "a": "In the rows the ending sets the coil: 061 or T61 is 24 V DC, 030 or T30 is 110 to 120 V AC and T40 is 240 V AC. The 5 or 6 in the middle of numbers such as L12BB552 and L12BB652 appears on 3-position valves, with 4 on 2-position."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and voltages does the Numatics Mark 8 4/3 valve come in?",
+          "a": "Ports are 1/8\", 1/4\", 3/8\" and 1/2\"; coils are 24 V DC (21 part numbers), 110 to 120 V AC (19) and 240 V AC (3). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which centre condition does the Numatics 4/3 valve have?",
+          "a": "The listing does not state the centre condition for each row; centre types differ by code (5 or 6 in the middle digits). Tell us whether you need closed, exhaust or pressure centre and we confirm the part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Numatics 4/3 valve have?",
+          "a": "The listing gives -10 deg F to +115 deg F, about -23 deg C to 46 deg C, and vacuum from 0 to 28 inches of mercury. It has no clear operating pressure range for these rows, so we confirm it with Numatics."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics Mark 8 4/3 valve made from?",
+          "a": "The specification gives a steel body, a stainless steel spool, an aluminium poppet and internal or remote pilot, for continuous duty with a NEMA 4 coil."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the Numatics 4/3 valve?",
+          "a": "We hold no datasheet or certificate for the Numatics 4/3 valve on this page. Ask for the Numatics catalogue sheet or a certificate of conformity for 152SS500M000061 in your enquiry and we request it from Numatics when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What base fits the Numatics Mark 8 4/3 valve?",
+          "a": "It is base mounted, so use a base such as the [Numatics manifold block](/p/numatics-manifold-block) and fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test a Numatics 4/3 valve?",
+          "a": "Wire each solenoid to its own output, never energise both, and check supply against the coil code in the part number. Hazardous location rows (XX) need the approval documents checked."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics 4/3 valve differ from the 4/2 Mark 8 valve?",
+          "a": "The 4/3 valve has a centre position and two solenoids, while the [4/2 Mark 8 valve](/p/numatics-solenoid-air-control-valve-4-way-2-position-5-port) has two positions. Pick 4/3 to stop or free a cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics Mark 8 4/3 valve made and exported from?",
+          "a": "The listing records the United States as the country of origin for the Numatics Mark 8 4/3 valve, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Numatics Mark 8 4/3 solenoid valves in Dubai?",
+          "a": "Yes. We keep Numatics Mark 8 4/3 solenoid valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

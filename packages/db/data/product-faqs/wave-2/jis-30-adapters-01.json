@@ -1,0 +1,872 @@
+{
+  "family": "jis-30-adapters-01",
+  "extraFacts": [
+    {
+      "fact": "SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port.",
+      "source": "SAE J514 (Hydraulic Tube Fittings)"
+    },
+    {
+      "fact": "ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare.",
+      "source": "ISO 8434-2 (Metallic tube connections for fluid power, Part 2: 37° flared connections)"
+    },
+    {
+      "fact": "SAE J1926 and ISO 11926 cover straight-thread (UN/UNF) O-ring ports and stud ends.",
+      "source": "SAE J1926 / ISO 11926"
+    },
+    {
+      "fact": "SAE J1453 and ISO 8434-3 cover O-ring face seal (ORFS) tube connections.",
+      "source": "SAE J1453 / ISO 8434-3"
+    },
+    {
+      "fact": "ISO 228-1 covers G (BSP parallel) pipe threads where the pressure-tight seal is not made on the thread.",
+      "source": "ISO 228-1"
+    }
+  ],
+  "products": [
+    {
+      "slug": "steel-30-sealing-seat-bspp-male-to-jis-30-converter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter and where is it used?",
+          "a": "The Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter is an Indus straight adapter with a male BSPP end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 7 sizes, 1/4\" to 1-1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-ST-9999-04 mean for the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter?",
+          "a": "IH-ST-9999-04 is the Indus number for \"1/4\" BSPP (G1/4-19)\" in the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter range. The size table lists every number with its connections. IH-ST-9999-24 is listed as \"1-1/2\" BSPP (G1-1/2-11)\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel 30° Sealing Seat, BSPP differ from the Steel JIS 30° Male ×?",
+          "a": "The Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter and the [Steel JIS 30° Male × BSPP Adjustable 90° Elbow](/p/steel-jis-30-male-x-bspp-adjustable-90-elbow) differ in their end connections. The Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter has male BSPP; the other has male JIS 30° flare and adjustable male BSPP. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter cover?",
+          "a": "The Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter is listed in 7 part numbers, 1/4\" to 1-1/2\". Examples: IH-ST-9999-04 (1/4\" BSPP (G1/4-19)); IH-ST-9999-08 (1/2\" BSPP (G1/2-14)); IH-ST-9999-16 (1\" BSPP (G1-11)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter for my line?",
+          "a": "Choose the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter by the thread and seat on each end, not by the hose or tube size alone: here that is male BSPP. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter rated for?",
+          "a": "No pressure rating is published for the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter have?",
+          "a": "The material shown for the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter follow?",
+          "a": "The Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter is listed against ISO 228-1. ISO 228-1 covers G (BSP parallel) pipe threads where the pressure-tight seal is not made on the thread. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter?",
+          "a": "The Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter connects to a female BSP thread end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter?",
+          "a": "For the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter?",
+          "a": "The country of origin of the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter available from stock in the UAE?",
+          "a": "Yes. The Steel 30° Sealing Seat, BSPP Male to JIS 30° Converter is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-female-x-jis-30-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Female × JIS 30° Female Adapter and where is it used?",
+          "a": "The Steel JIC 37° Female × JIS 30° Female Adapter is an Indus straight adapter with a female 37° JIC end and a female JIS 30° flare end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 3 sizes, 1/4\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9226-04-04 on the Steel JIC 37° Female × JIS 30° Female Adapter?",
+          "a": "IH-ST-9226-04-04 is the Steel JIC 37° Female × JIS 30° Female Adapter with 1/4\" JIC 37° (7/16-20) and 1/4\" JIS 30° (G1/4-19). After the series code the size figures follow the order of the ends, so IH-ST-9226-08-08 is 1/2\" JIC 37° (3/4-16) and 1/2\" JIS 30° (G1/2-14). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Female × JIS 30° Female Adapter differ from the Steel JIC 37° Male × JIS 30° Female Adapter?",
+          "a": "The Steel JIC 37° Female × JIS 30° Female Adapter and the [Steel JIC 37° Male × JIS 30° Female Adapter](/p/steel-jic-37-male-x-jis-30-female-adapter) differ in their end connections. The Steel JIC 37° Female × JIS 30° Female Adapter has female 37° JIC and female JIS 30° flare; the other has male 37° JIC and female JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel JIC 37° Female × JIS 30° Female Adapter do you list?",
+          "a": "The Steel JIC 37° Female × JIS 30° Female Adapter is listed in 3 part numbers, 1/4\" to 1/2\". Examples: IH-ST-9226-04-04 (1/4\" JIC 37° (7/16-20) x 1/4\" JIS 30° (G1/4-19)); IH-ST-9226-06-06 (3/8\" JIC 37° (9/16-18) x 3/8\" JIS 30° (G3/8-19)); IH-ST-9226-08-08 (1/2\" JIC 37° (3/4-16) x 1/2\" JIS 30° (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel JIC 37° Female × JIS 30° Female Adapter?",
+          "a": "Choose the Steel JIC 37° Female × JIS 30° Female Adapter by the thread and seat on each end, not by the hose or tube size alone: here that is female 37° JIC and female JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIC 37° Female × JIS 30° Female Adapter?",
+          "a": "No pressure rating is published for the Steel JIC 37° Female × JIS 30° Female Adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel JIC 37° Female × JIS 30° Female Adapter have?",
+          "a": "The material shown for the Steel JIC 37° Female × JIS 30° Female Adapter is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Female × JIS 30° Female Adapter follow?",
+          "a": "The Steel JIC 37° Female × JIS 30° Female Adapter is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIC 37° Female × JIS 30° Female Adapter?",
+          "a": "The Steel JIC 37° Female × JIS 30° Female Adapter connects to a male JIC 37° flare end of the same size on one end and a male JIS end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel JIC 37° Female × JIS 30° Female Adapter without leaks?",
+          "a": "For the Steel JIC 37° Female × JIS 30° Female Adapter: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Steel JIC 37° Female × JIS 30° Female Adapter?",
+          "a": "The country of origin of the Steel JIC 37° Female × JIS 30° Female Adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIC 37° Female × JIS 30° Female Adapter in Dubai?",
+          "a": "Yes. The Steel JIC 37° Female × JIS 30° Female Adapter is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-jis-30-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel JIC 37° Male × JIS 30° Female Adapter do in a hydraulic line?",
+          "a": "The Steel JIC 37° Male × JIS 30° Female Adapter is an Indus straight adapter with a male 37° JIC end and a female JIS 30° flare end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 9 sizes, 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9220-06-04 on the Steel JIC 37° Male × JIS 30° Female Adapter?",
+          "a": "IH-ST-9220-06-04 is the Steel JIC 37° Male × JIS 30° Female Adapter with 3/8\" JIC 37° (9/16-18) and 1/4\" JIS 30° (G1/4-19). After the series code the size figures follow the order of the ends. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × JIS 30° Female Adapter differ from the Steel JIC 37° Female × JIS 30° Female Adapter?",
+          "a": "The Steel JIC 37° Male × JIS 30° Female Adapter and the [Steel JIC 37° Female × JIS 30° Female Adapter](/p/steel-jic-37-female-x-jis-30-female-adapter) differ in their end connections. The Steel JIC 37° Male × JIS 30° Female Adapter has male 37° JIC and female JIS 30° flare; the other has female 37° JIC and female JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel JIC 37° Male × JIS 30° Female Adapter come in?",
+          "a": "The Steel JIC 37° Male × JIS 30° Female Adapter is listed in 9 part numbers, 1/4\" to 2\". Examples: IH-ST-9220-04-04 (1/4\" JIC 37° (7/16-20) x 1/4\" JIS 30° (G1/4-19)); IH-ST-9220-08-08 (1/2\" JIC 37° (3/4-16) x 1/2\" JIS 30° (G1/2-14)); IH-ST-9220-16-16 (1\" JIC 37° (1-5/16-12) x 1\" JIS 30° (G1-11)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel JIC 37° Male × JIS 30° Female Adapter?",
+          "a": "Choose the Steel JIC 37° Male × JIS 30° Female Adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male 37° JIC and female JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel JIC 37° Male × JIS 30° Female Adapter rated for?",
+          "a": "No pressure rating is published for the Steel JIC 37° Male × JIS 30° Female Adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel JIC 37° Male × JIS 30° Female Adapter have?",
+          "a": "The material shown for the Steel JIC 37° Male × JIS 30° Female Adapter is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × JIS 30° Female Adapter follow?",
+          "a": "The Steel JIC 37° Male × JIS 30° Female Adapter is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIC 37° Male × JIS 30° Female Adapter?",
+          "a": "The Steel JIC 37° Male × JIS 30° Female Adapter connects to a female JIC 37° flare end of the same size on one end and a male JIS end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel JIC 37° Male × JIS 30° Female Adapter without leaks?",
+          "a": "For the Steel JIC 37° Male × JIS 30° Female Adapter: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Steel JIC 37° Male × JIS 30° Female Adapter?",
+          "a": "The country of origin of the Steel JIC 37° Male × JIS 30° Female Adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel JIC 37° Male × JIS 30° Female Adapter available from stock in the UAE?",
+          "a": "Yes. The Steel JIC 37° Male × JIS 30° Female Adapter is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-jis-30-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × JIS 30° Male Adapter and where is it used?",
+          "a": "The Steel JIC 37° Male × JIS 30° Male Adapter is an Indus straight adapter with a male 37° JIC end and a male JIS 30° flare end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 4 sizes, 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9337-04-04 on the Steel JIC 37° Male × JIS 30° Male Adapter?",
+          "a": "IH-ST-9337-04-04 is the Steel JIC 37° Male × JIS 30° Male Adapter with 1/4\" JIC 37° (7/16-20) and 1/4\" JIS 30° (G1/4-19). After the series code the size figures follow the order of the ends, so IH-ST-9337-12-12 is 3/4\" JIC 37° (1-1/16-12) and 3/4\" JIS 30° (G3/4-14). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × JIS 30° Male Adapter differ from the Steel JIC 37° Male × JIS 30° Female Adapter?",
+          "a": "The Steel JIC 37° Male × JIS 30° Male Adapter and the [Steel JIC 37° Male × JIS 30° Female Adapter](/p/steel-jic-37-male-x-jis-30-female-adapter) differ in their end connections. The Steel JIC 37° Male × JIS 30° Male Adapter has male 37° JIC and male JIS 30° flare; the other has male 37° JIC and female JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel JIC 37° Male × JIS 30° Male Adapter cover?",
+          "a": "The Steel JIC 37° Male × JIS 30° Male Adapter is listed in 4 part numbers, 1/4\" to 3/4\". Examples: IH-ST-9337-04-04 (1/4\" JIC 37° (7/16-20) x 1/4\" JIS 30° (G1/4-19)); IH-ST-9337-06-06 (3/8\" JIC 37° (9/16-18) x 3/8\" JIS 30° (G3/8-19)); IH-ST-9337-08-08 (1/2\" JIC 37° (3/4-16) x 1/2\" JIS 30° (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel JIC 37° Male × JIS 30° Male Adapter?",
+          "a": "Choose the Steel JIC 37° Male × JIS 30° Male Adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male 37° JIC and male JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIC 37° Male × JIS 30° Male Adapter?",
+          "a": "No pressure rating is published for the Steel JIC 37° Male × JIS 30° Male Adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × JIS 30° Male Adapter made from, and is stainless available?",
+          "a": "The material shown for the Steel JIC 37° Male × JIS 30° Male Adapter is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × JIS 30° Male Adapter follow?",
+          "a": "The Steel JIC 37° Male × JIS 30° Male Adapter is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × JIS 30° Male Adapter connect to?",
+          "a": "The Steel JIC 37° Male × JIS 30° Male Adapter connects to a female JIC 37° flare end of the same size on one end and a female JIS end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel JIC 37° Male × JIS 30° Male Adapter without leaks?",
+          "a": "For the Steel JIC 37° Male × JIS 30° Male Adapter: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × JIS 30° Male Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIC 37° Male × JIS 30° Male Adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel JIC 37° Male × JIS 30° Male Adapter available from stock in the UAE?",
+          "a": "Yes. The Steel JIC 37° Male × JIS 30° Male Adapter is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jis-30-female-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIS 30° Female Cap used for?",
+          "a": "The Steel JIS 30° Female Cap is an Indus cap with a female JIS 30° flare end. It is used to close off the end of a male fitting or tube end, for example during storage, testing or when a line is isolated. It is listed in 9 sizes, 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-ST-9222-04 mean for the Steel JIS 30° Female Cap?",
+          "a": "IH-ST-9222-04 is the Indus number for \"1/4\" JIS 30° (G1/4-19)\" in the Steel JIS 30° Female Cap range. The size table lists every number with its connections. IH-ST-9222-32 is listed as \"2\" JIS 30° (G2-11)\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIS 30° Female Cap differ from the Steel JIC 37° Female × JIS 30° Female Adapter?",
+          "a": "The Steel JIS 30° Female Cap and the [Steel JIC 37° Female × JIS 30° Female Adapter](/p/steel-jic-37-female-x-jis-30-female-adapter) differ in their end connections. The Steel JIS 30° Female Cap has female JIS 30° flare; the other has female 37° JIC and female JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel JIS 30° Female Cap cover?",
+          "a": "The Steel JIS 30° Female Cap is listed in 9 part numbers, 1/4\" to 2\". Examples: IH-ST-9222-04 (1/4\" JIS 30° (G1/4-19)); IH-ST-9222-10 (5/8\" JIS 30° (G5/8-14)); IH-ST-9222-16 (1\" JIS 30° (G1-11)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel JIS 30° Female Cap?",
+          "a": "Choose the Steel JIS 30° Female Cap by the thread and seat on each end, not by the hose or tube size alone: here that is female JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel JIS 30° Female Cap rated for?",
+          "a": "No pressure rating is published for the Steel JIS 30° Female Cap on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIS 30° Female Cap made from, and is stainless available?",
+          "a": "The material shown for the Steel JIS 30° Female Cap is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the Steel JIS 30° Female Cap?",
+          "a": "For the Steel JIS 30° Female Cap we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIS 30° Female Cap connect to?",
+          "a": "The Steel JIS 30° Female Cap mates with a male JIS end of the same size. A male plug threads into a female port; a female cap or swivel cap goes over a male end of the same thread and seat. For the mating ports see [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Steel JIS 30° Female Cap?",
+          "a": "For the Steel JIS 30° Female Cap: a cap is made up onto the male end it covers; keep the sealing seat clean and undamaged so the cap seals metal to metal or on its seal. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIS 30° Female Cap made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIS 30° Female Cap is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIS 30° Female Cap in Dubai?",
+          "a": "Yes, the Steel JIS 30° Female Cap is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jis-30-hex-head-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIS 30° Hex Head Plug used for?",
+          "a": "The Steel JIS 30° Hex Head Plug is an Indus plug with a male JIS 30° flare end. It is used to close a port or the open end of a line, for example to blank off a test point or a spare port. It is listed in 10 sizes, 1/8\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-ST-9221-02 mean for the Steel JIS 30° Hex Head Plug?",
+          "a": "IH-ST-9221-02 is the Indus number for \"1/8\" JIS 30° (G1/8-28)\" in the Steel JIS 30° Hex Head Plug range. The size table lists every number with its connections. IH-ST-9221-32 is listed as \"2\" JIS 30° (G2-11)\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIS 30° Hex Head Plug differ from the Steel JIS 30° Female Cap?",
+          "a": "The Steel JIS 30° Hex Head Plug and the [Steel JIS 30° Female Cap](/p/steel-jis-30-female-cap) differ in their end connections. The Steel JIS 30° Hex Head Plug has male JIS 30° flare; the other has female JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel JIS 30° Hex Head Plug cover?",
+          "a": "The Steel JIS 30° Hex Head Plug is listed in 10 part numbers, 1/8\" to 2\". Examples: IH-ST-9221-02 (1/8\" JIS 30° (G1/8-28)); IH-ST-9221-08 (1/2\" JIS 30° (G1/2-14)); IH-ST-9221-16 (1\" JIS 30° (G1-11)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Steel JIS 30° Hex Head Plug for my line?",
+          "a": "Choose the Steel JIS 30° Hex Head Plug by the thread and seat on each end, not by the hose or tube size alone: here that is male JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIS 30° Hex Head Plug?",
+          "a": "No pressure rating is published for the Steel JIS 30° Hex Head Plug on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIS 30° Hex Head Plug made from, and is stainless available?",
+          "a": "The material shown for the Steel JIS 30° Hex Head Plug is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the Steel JIS 30° Hex Head Plug?",
+          "a": "For the Steel JIS 30° Hex Head Plug we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIS 30° Hex Head Plug connect to?",
+          "a": "The Steel JIS 30° Hex Head Plug mates with a female JIS end of the same size. A male plug threads into a female port; a female cap or swivel cap goes over a male end of the same thread and seat. For the mating ports see [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Steel JIS 30° Hex Head Plug?",
+          "a": "For the Steel JIS 30° Hex Head Plug: a plug is made up into the mating port or fitting and is not meant to carry flow: use a clean thread and the seal type that matches the port. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIS 30° Hex Head Plug made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIS 30° Hex Head Plug is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel JIS 30° Hex Head Plug available from stock in the UAE?",
+          "a": "Yes. The Steel JIS 30° Hex Head Plug is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jis-30-male-x-bspp-adjustable-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIS 30° Male × BSPP Adjustable 90° Elbow used for?",
+          "a": "The Steel JIS 30° Male × BSPP Adjustable 90° Elbow is an Indus 90° elbow adapter with a male JIS 30° flare end and a adjustable male BSPP end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 2 sizes, 3/8\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-ST-9259-06-06 mean for the Steel JIS 30° Male × BSPP Adjustable 90° Elbow?",
+          "a": "IH-ST-9259-06-06 is the Indus number for \"3/8\" JIS 30° (G3/8-19) / 3/8\" BSPP (G3/8-19)\" in the Steel JIS 30° Male × BSPP Adjustable 90° Elbow range. The size table lists every number with its connections. IH-ST-9259-08-08 is listed as \"1/2\" JIS 30° (G1/2-14) / 1/2\" BSPP (G1/2-14)\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIS 30° Male × BSPP Adjustable 90° Elbow differ from the Steel JIS 30° Male × ORB Adjustable 90° Elbow?",
+          "a": "The Steel JIS 30° Male × BSPP Adjustable 90° Elbow and the [Steel JIS 30° Male × ORB Adjustable 90° Elbow](/p/steel-jis-30-male-x-orb-adjustable-90-elbow) differ in their end connections. The Steel JIS 30° Male × BSPP Adjustable 90° Elbow has male JIS 30° flare and adjustable male BSPP; the other has male JIS 30° flare and adjustable male SAE O-ring boss. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel JIS 30° Male × BSPP Adjustable 90° Elbow do you list?",
+          "a": "The Steel JIS 30° Male × BSPP Adjustable 90° Elbow is listed in 2 part numbers, 3/8\" to 1/2\". Examples: IH-ST-9259-06-06 (3/8\" JIS 30° (G3/8-19) x 3/8\" BSPP (G3/8-19)); IH-ST-9259-08-08 (1/2\" JIS 30° (G1/2-14) x 1/2\" BSPP (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Steel JIS 30° Male × BSPP Adjustable 90° Elbow for my line?",
+          "a": "Choose the Steel JIS 30° Male × BSPP Adjustable 90° Elbow by the thread and seat on each end, not by the hose or tube size alone: here that is male JIS 30° flare and adjustable male BSPP. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel JIS 30° Male × BSPP Adjustable 90° Elbow rated for?",
+          "a": "No pressure rating is published for the Steel JIS 30° Male × BSPP Adjustable 90° Elbow on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIS 30° Male × BSPP Adjustable 90° Elbow made from, and is stainless available?",
+          "a": "The material shown for the Steel JIS 30° Male × BSPP Adjustable 90° Elbow is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIS 30° Male × BSPP Adjustable 90° Elbow follow?",
+          "a": "The Steel JIS 30° Male × BSPP Adjustable 90° Elbow is listed against ISO 228-1. ISO 228-1 covers G (BSP parallel) pipe threads where the pressure-tight seal is not made on the thread. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIS 30° Male × BSPP Adjustable 90° Elbow?",
+          "a": "The Steel JIS 30° Male × BSPP Adjustable 90° Elbow connects to a female JIS end of the same size on one end and a male BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel JIS 30° Male × BSPP Adjustable 90° Elbow without leaks?",
+          "a": "For the Steel JIS 30° Male × BSPP Adjustable 90° Elbow: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Steel JIS 30° Male × BSPP Adjustable 90° Elbow?",
+          "a": "The country of origin of the Steel JIS 30° Male × BSPP Adjustable 90° Elbow is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel JIS 30° Male × BSPP Adjustable 90° Elbow from stock in Dubai?",
+          "a": "Yes, the Steel JIS 30° Male × BSPP Adjustable 90° Elbow is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jis-30-male-x-jis-30-female-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow do in a hydraulic line?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow is an Indus 90° elbow adapter with a male JIS 30° flare end and a female swivel JIS 30° flare end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 4 sizes, 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9292-04-04 on the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow?",
+          "a": "IH-ST-9292-04-04 is the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow with 1/4\" JIS 30° (G1/4-19) and 1/4\" JIS 30° (G1/4-19). After the series code the size figures follow the order of the ends, so IH-ST-9292-12-12 is 3/4\" JIS 30° (G3/4-14) and 3/4\" JIS 30° (G3/4-14). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow differ from the Steel JIS 30° Male × BSPP Adjustable 90° Elbow?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow and the [Steel JIS 30° Male × BSPP Adjustable 90° Elbow](/p/steel-jis-30-male-x-bspp-adjustable-90-elbow) differ in their end connections. The Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow has male JIS 30° flare and female swivel JIS 30° flare; the other has male JIS 30° flare and adjustable male BSPP. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow cover?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow is listed in 4 part numbers, 1/4\" to 3/4\". Examples: IH-ST-9292-04-04 (1/4\" JIS 30° (G1/4-19) x 1/4\" JIS 30° (G1/4-19)); IH-ST-9292-06-06 (3/8\" JIS 30° (G3/8-19) x 3/8\" JIS 30° (G3/8-19)); IH-ST-9292-08-08 (1/2\" JIS 30° (G1/2-14) x 1/2\" JIS 30° (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow for my line?",
+          "a": "Choose the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow by the thread and seat on each end, not by the hose or tube size alone: here that is male JIS 30° flare and female swivel JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow?",
+          "a": "No pressure rating is published for the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow made from, and is stainless available?",
+          "a": "The material shown for the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow?",
+          "a": "For the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow connects to a female JIS end of the same size on one end and a male JIS end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow?",
+          "a": "For the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow?",
+          "a": "The country of origin of the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow available from stock in the UAE?",
+          "a": "Yes, the Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jis-30-male-x-jis-30-female-swivel-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee and where is it used?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel Run Tee is an Indus tee with a male JIS 30° flare end and a male JIS 30° flare end. It is used to split a line into a branch or join two lines into one. It is listed in 4 sizes, 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9291-04-04-04 on the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee?",
+          "a": "IH-ST-9291-04-04-04 is the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee with 1/4\" JIS 30° (G1/4-19) and 1/4\" JIS 30° (G1/4-19) and 1/4\" JIS 30° (G1/4-19). After the series code the size figures follow the order of the ends, so IH-ST-9291-12-12-12 is 3/4\" JIS 30° (G3/4-14) and 3/4\" JIS 30° (G3/4-14) and 3/4\" JIS 30° (G3/4-14). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIS 30° Male × differ from the Steel JIS 30° Male ×?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel Run Tee and the [Steel JIS 30° Male × JIS 30° Female Swivel 90° Elbow](/p/steel-jis-30-male-x-jis-30-female-swivel-90-elbow) differ in their end connections. The Steel JIS 30° Male × JIS 30° Female Swivel Run Tee has male JIS 30° flare and male JIS 30° flare; the other has male JIS 30° flare and female swivel JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee cover?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel Run Tee is listed in 4 part numbers, 1/4\" to 3/4\". Examples: IH-ST-9291-04-04-04 (1/4\" JIS 30° (G1/4-19) x 1/4\" JIS 30° (G1/4-19) x 1/4\" JIS 30° (G1/4-19)); IH-ST-9291-06-06-06 (3/8\" JIS 30° (G3/8-19) x 3/8\" JIS 30° (G3/8-19) x 3/8\" JIS 30° (G3/8-19)); IH-ST-9291-08-08-08 (1/2\" JIS 30° (G1/2-14) x 1/2\" JIS 30° (G1/2-14) x 1/2\" JIS 30° (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Steel JIS 30° Male × JIS 30° Female Swivel Run Tee for my line?",
+          "a": "Choose the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee by the thread and seat on each end, not by the hose or tube size alone: here that is male JIS 30° flare and male JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee?",
+          "a": "No pressure rating is published for the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee have?",
+          "a": "The material shown for the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee?",
+          "a": "For the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee?",
+          "a": "The Steel JIS 30° Male × JIS 30° Female Swivel Run Tee connects to a female JIS end of the same size on one end and a female JIS end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee?",
+          "a": "For the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee: orient the branch before final tightening and make up each end with its own sealing type. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIS 30° Male × JIS 30° Female Swivel Run Tee in Dubai?",
+          "a": "Yes. The Steel JIS 30° Male × JIS 30° Female Swivel Run Tee is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jis-30-male-x-orb-adjustable-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel JIS 30° Male × ORB Adjustable 90° Elbow do in a hydraulic line?",
+          "a": "The Steel JIS 30° Male × ORB Adjustable 90° Elbow is an Indus 90° elbow adapter with a male JIS 30° flare end and a adjustable male SAE O-ring boss end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 2 sizes, 1/4\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-ST-9278-04-04 mean for the Steel JIS 30° Male × ORB Adjustable 90° Elbow?",
+          "a": "IH-ST-9278-04-04 is the Indus number for \"1/4\" JIS 30° (G1/4-19) / 1/4\" ORB (7/16-20)\" in the Steel JIS 30° Male × ORB Adjustable 90° Elbow range. The size table lists every number with its connections. IH-ST-9278-08-06 is listed as \"1/2\" JIS 30° (G1/2-14) / 3/8\" ORB (9/16-18)\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIS 30° Male × ORB Adjustable 90° Elbow differ from the Steel JIS 30° Male × BSPP Adjustable 90° Elbow?",
+          "a": "The Steel JIS 30° Male × ORB Adjustable 90° Elbow and the [Steel JIS 30° Male × BSPP Adjustable 90° Elbow](/p/steel-jis-30-male-x-bspp-adjustable-90-elbow) differ in their end connections. The Steel JIS 30° Male × ORB Adjustable 90° Elbow has male JIS 30° flare and adjustable male SAE O-ring boss; the other has male JIS 30° flare and adjustable male BSPP. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel JIS 30° Male × ORB Adjustable 90° Elbow come in?",
+          "a": "The Steel JIS 30° Male × ORB Adjustable 90° Elbow is listed in 2 part numbers, 1/4\" to 1/2\". Examples: IH-ST-9278-04-04 (1/4\" JIS 30° (G1/4-19) x 1/4\" ORB (7/16-20)); IH-ST-9278-08-06 (1/2\" JIS 30° (G1/2-14) x 3/8\" ORB (9/16-18)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel JIS 30° Male × ORB Adjustable 90° Elbow?",
+          "a": "Choose the Steel JIS 30° Male × ORB Adjustable 90° Elbow by the thread and seat on each end, not by the hose or tube size alone: here that is male JIS 30° flare and adjustable male SAE O-ring boss. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel JIS 30° Male × ORB Adjustable 90° Elbow rated for?",
+          "a": "No pressure rating is published for the Steel JIS 30° Male × ORB Adjustable 90° Elbow on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel JIS 30° Male × ORB Adjustable 90° Elbow have?",
+          "a": "The material shown for the Steel JIS 30° Male × ORB Adjustable 90° Elbow is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIS 30° Male × ORB Adjustable 90° Elbow follow?",
+          "a": "The Steel JIS 30° Male × ORB Adjustable 90° Elbow is listed against SAE J1926 / ISO 11926. SAE J1926 and ISO 11926 cover straight-thread (UN/UNF) O-ring ports and stud ends. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIS 30° Male × ORB Adjustable 90° Elbow connect to?",
+          "a": "The Steel JIS 30° Male × ORB Adjustable 90° Elbow connects to a female JIS end of the same size on one end and a male SAE O-ring boss end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORB adapters](/c/orb-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel JIS 30° Male × ORB Adjustable 90° Elbow without leaks?",
+          "a": "For the Steel JIS 30° Male × ORB Adjustable 90° Elbow: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIS 30° Male × ORB Adjustable 90° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIS 30° Male × ORB Adjustable 90° Elbow is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel JIS 30° Male × ORB Adjustable 90° Elbow available from stock in the UAE?",
+          "a": "Yes. The Steel JIS 30° Male × ORB Adjustable 90° Elbow is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jis-30-male-x-orb-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIS 30° Male × ORB Male Adapter and where is it used?",
+          "a": "The Steel JIS 30° Male × ORB Male Adapter is an Indus straight adapter with a male JIS 30° flare end and a male SAE O-ring boss end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 3 sizes, 1/4\" to 3/8\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9277-04-06 on the Steel JIS 30° Male × ORB Male Adapter?",
+          "a": "IH-ST-9277-04-06 is the Steel JIS 30° Male × ORB Male Adapter with 1/4\" JIS 30° (G1/4-19) and 3/8\" ORB (9/16-18). After the series code the size figures follow the order of the ends, so IH-ST-9277-06-04 is 3/8\" JIS 30° (G3/8-19) and 1/4\" ORB (7/16-20). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIS 30° Male × ORB Male Adapter differ from the Steel ORFS Male × JIS 30° Male Adapter?",
+          "a": "The Steel JIS 30° Male × ORB Male Adapter and the [Steel ORFS Male × JIS 30° Male Adapter](/p/steel-orfs-male-x-jis-30-male-adapter) differ in their end connections. The Steel JIS 30° Male × ORB Male Adapter has male JIS 30° flare and male SAE O-ring boss; the other has male O-ring face seal and male JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel JIS 30° Male × ORB Male Adapter do you list?",
+          "a": "The Steel JIS 30° Male × ORB Male Adapter is listed in 3 part numbers, 1/4\" to 3/8\". Examples: IH-ST-9277-04-06 (1/4\" JIS 30° (G1/4-19) x 3/8\" ORB (9/16-18)); IH-ST-9277-06-04 (3/8\" JIS 30° (G3/8-19) x 1/4\" ORB (7/16-20)); IH-ST-9277-06-06 (3/8\" JIS 30° (G3/8-19) x 3/8\" ORB (9/16-18)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel JIS 30° Male × ORB Male Adapter?",
+          "a": "Choose the Steel JIS 30° Male × ORB Male Adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male JIS 30° flare and male SAE O-ring boss. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIS 30° Male × ORB Male Adapter?",
+          "a": "No pressure rating is published for the Steel JIS 30° Male × ORB Male Adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIS 30° Male × ORB Male Adapter made from, and is stainless available?",
+          "a": "The material shown for the Steel JIS 30° Male × ORB Male Adapter is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIS 30° Male × ORB Male Adapter follow?",
+          "a": "The Steel JIS 30° Male × ORB Male Adapter is listed against SAE J1926 / ISO 11926. SAE J1926 and ISO 11926 cover straight-thread (UN/UNF) O-ring ports and stud ends. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIS 30° Male × ORB Male Adapter?",
+          "a": "The Steel JIS 30° Male × ORB Male Adapter connects to a female JIS end of the same size on one end and a female SAE O-ring boss end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORB adapters](/c/orb-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Steel JIS 30° Male × ORB Male Adapter?",
+          "a": "For the Steel JIS 30° Male × ORB Male Adapter: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIS 30° Male × ORB Male Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIS 30° Male × ORB Male Adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel JIS 30° Male × ORB Male Adapter from stock in Dubai?",
+          "a": "Yes. We keep the Steel JIS 30° Male × ORB Male Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-jis-30-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × JIS 30° Female Adapter and where is it used?",
+          "a": "The Steel ORFS Male × JIS 30° Female Adapter is an Indus straight adapter with a male O-ring face seal end and a female JIS 30° flare end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 4 sizes, 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-6220-04-04 on the Steel ORFS Male × JIS 30° Female Adapter?",
+          "a": "IH-ST-6220-04-04 is the Steel ORFS Male × JIS 30° Female Adapter with 1/4\" ORFS (9/16-18) and 1/4\" JIS 30° (G1/4-19). After the series code the size figures follow the order of the ends, so IH-ST-6220-12-12 is 3/4\" ORFS (1-3/16-12) and 3/4\" JIS 30° (G3/4-14). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × JIS 30° Female Adapter differ from the Steel ORFS Male × JIS 30° Male Adapter?",
+          "a": "The Steel ORFS Male × JIS 30° Female Adapter and the [Steel ORFS Male × JIS 30° Male Adapter](/p/steel-orfs-male-x-jis-30-male-adapter) differ in their end connections. The Steel ORFS Male × JIS 30° Female Adapter has male O-ring face seal and female JIS 30° flare; the other has male O-ring face seal and male JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel ORFS Male × JIS 30° Female Adapter do you list?",
+          "a": "The Steel ORFS Male × JIS 30° Female Adapter is listed in 4 part numbers, 1/4\" to 3/4\". Examples: IH-ST-6220-04-04 (1/4\" ORFS (9/16-18) x 1/4\" JIS 30° (G1/4-19)); IH-ST-6220-06-06 (3/8\" ORFS (11/16-16) x 3/8\" JIS 30° (G3/8-19)); IH-ST-6220-08-08 (1/2\" ORFS (13/16-16) x 1/2\" JIS 30° (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel ORFS Male × JIS 30° Female Adapter?",
+          "a": "Choose the Steel ORFS Male × JIS 30° Female Adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male O-ring face seal and female JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel ORFS Male × JIS 30° Female Adapter?",
+          "a": "No pressure rating is published for the Steel ORFS Male × JIS 30° Female Adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel ORFS Male × JIS 30° Female Adapter have?",
+          "a": "The material shown for the Steel ORFS Male × JIS 30° Female Adapter is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × JIS 30° Female Adapter follow?",
+          "a": "The Steel ORFS Male × JIS 30° Female Adapter is listed against SAE J1453 / ISO 8434-3. SAE J1453 and ISO 8434-3 cover O-ring face seal (ORFS) tube connections. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Male × JIS 30° Female Adapter connect to?",
+          "a": "The Steel ORFS Male × JIS 30° Female Adapter connects to a male JIS end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Steel ORFS Male × JIS 30° Female Adapter?",
+          "a": "For the Steel ORFS Male × JIS 30° Female Adapter: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel ORFS Male × JIS 30° Female Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel ORFS Male × JIS 30° Female Adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel ORFS Male × JIS 30° Female Adapter available from stock in the UAE?",
+          "a": "Yes. We keep the Steel ORFS Male × JIS 30° Female Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-jis-30-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × JIS 30° Male Adapter and where is it used?",
+          "a": "The Steel ORFS Male × JIS 30° Male Adapter is an Indus straight adapter with a male O-ring face seal end and a male JIS 30° flare end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 3 sizes, 1/4\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-6337-04-04 on the Steel ORFS Male × JIS 30° Male Adapter?",
+          "a": "IH-ST-6337-04-04 is the Steel ORFS Male × JIS 30° Male Adapter with 1/4\" ORFS (9/16-18) and 1/4\" JIS 30° (G1/4-19). After the series code the size figures follow the order of the ends, so IH-ST-6337-08-08 is 1/2\" ORFS (13/16-16) and 1/2\" JIS 30° (G1/2-14). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × JIS 30° Male Adapter differ from the Steel ORFS Male × JIS 30° Female Adapter?",
+          "a": "The Steel ORFS Male × JIS 30° Male Adapter and the [Steel ORFS Male × JIS 30° Female Adapter](/p/steel-orfs-male-x-jis-30-female-adapter) differ in their end connections. The Steel ORFS Male × JIS 30° Male Adapter has male O-ring face seal and male JIS 30° flare; the other has male O-ring face seal and female JIS 30° flare. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel ORFS Male × JIS 30° Male Adapter do you list?",
+          "a": "The Steel ORFS Male × JIS 30° Male Adapter is listed in 3 part numbers, 1/4\" to 1/2\". Examples: IH-ST-6337-04-04 (1/4\" ORFS (9/16-18) x 1/4\" JIS 30° (G1/4-19)); IH-ST-6337-06-06 (3/8\" ORFS (11/16-16) x 3/8\" JIS 30° (G3/8-19)); IH-ST-6337-08-08 (1/2\" ORFS (13/16-16) x 1/2\" JIS 30° (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Steel ORFS Male × JIS 30° Male Adapter?",
+          "a": "Choose the Steel ORFS Male × JIS 30° Male Adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male O-ring face seal and male JIS 30° flare. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel ORFS Male × JIS 30° Male Adapter rated for?",
+          "a": "No pressure rating is published for the Steel ORFS Male × JIS 30° Male Adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × JIS 30° Male Adapter made from, and is stainless available?",
+          "a": "The material shown for the Steel ORFS Male × JIS 30° Male Adapter is forged carbon steel, trivalent zinc plated. The maker states the material for the whole range; ask us if your fluid or environment needs stainless steel or another material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × JIS 30° Male Adapter follow?",
+          "a": "The Steel ORFS Male × JIS 30° Male Adapter is listed against SAE J1453 / ISO 8434-3. SAE J1453 and ISO 8434-3 cover O-ring face seal (ORFS) tube connections. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel ORFS Male × JIS 30° Male Adapter?",
+          "a": "The Steel ORFS Male × JIS 30° Male Adapter connects to a female JIS end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Male × JIS 30° Male Adapter without leaks?",
+          "a": "For the Steel ORFS Male × JIS 30° Male Adapter: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Steel ORFS Male × JIS 30° Male Adapter?",
+          "a": "The country of origin of the Steel ORFS Male × JIS 30° Male Adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel ORFS Male × JIS 30° Male Adapter available from stock in the UAE?",
+          "a": "Yes. We keep the Steel ORFS Male × JIS 30° Male Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

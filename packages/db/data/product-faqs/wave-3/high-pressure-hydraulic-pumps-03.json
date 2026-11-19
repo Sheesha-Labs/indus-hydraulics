@@ -1,0 +1,636 @@
+{
+  "family": "high-pressure-hydraulic-pumps-03",
+  "extraFacts": [
+    {
+      "fact": "ATEX is the EU framework for equipment used in potentially explosive atmospheres; the listing marks HP series part numbers with an EX suffix as ATEX certified.",
+      "source": "Indus Hydraulics listing item names, Enerpac HP series sealed hand pumps"
+    },
+    {
+      "fact": "AME International Electric Pumps: 3 listed part numbers; items: Electric Pump, 2 Gallon Capacity, 2 Speed | Electric Pump, 2.5 Gallon Capacity, 1/2 Hp Motor | Electric Pump, 2.5 Gallon Capacity, 1-1/8 Hp Motor.",
+      "source": "Indus Hydraulics product listing, /p/ame-international-electric-pumps"
+    },
+    {
+      "fact": "AME International Hydraulic Pumps: 26 listed part numbers; maximum pressure 10,000 psi; items: Air Hydraulic Pump, Turbo Ii, 5 Quart Capacity | Air Hydraulic Pump, 2 Gallon Capacity, Turbo Ii With Hose And Coupler | Air Driven Hydraulic Pump, 2 Quart Capacity, Hi Flow With Gauge | Air Hydraulic Pump, 2 Gallon Capacity, Turbo Ii | Air Hydraulic Pump, 5 Quart Capacity | Cordless Hydraulic Pump, 28-Volt Battery | Air Hydraulic Pump, 2.5 Gallon Capacity | Air Hydraulic Turbo Ii Pump, 3.5 Quart Capacity | Air Hydraulic Pump, 2.5 Quart Capacity, Titan With 8 Ft. Hose And Coupler | Air Driven Hydraulic Pump, 3 Quart Capacity.",
+      "source": "Indus Hydraulics product listing, /p/ame-international-hydraulic-pumps"
+    },
+    {
+      "fact": "BVA PA Series Air Hydraulic Pumps: 2 listed part numbers; Type hydraulic pump; items: Air Hydraulic Pump.",
+      "source": "Indus Hydraulics product listing, /p/bva-pa-series-air-hydraulic-pumps"
+    },
+    {
+      "fact": "Destaco 70130 Series Air Hydraulic Pumps: 12 listed part numbers; Conversion Ratio 1:30; Product Application Clamping; Spindle Included No; items: Air-Hydraulic Pump | Air-Hydraulic-Pump | Hydraulic Pump | Air-Hydraulic Pump With Manual Control | Air-Hydraulic Pump, 500 Bar.",
+      "source": "Indus Hydraulics product listing, /p/destaco-70130-series-air-hydraulic-pumps"
+    },
+    {
+      "fact": "Destaco 713D Series Air Hydraulic Double Action Pumps: 8 listed part numbers; Conversion Ratio 1:25; Spindle Included No; items: Air Hydraulic Pump, Double Acting | Air-Hydraulic Pump | Air-Hydraulic-Pump P Max 600 Bar, Double Acting.",
+      "source": "Indus Hydraulics product listing, /p/destaco-713d-series-air-hydraulic-double-action-pumps"
+    },
+    {
+      "fact": "Destaco 713E Series Air Hydraulic Single Action Pumps: 6 listed part numbers; Conversion Ratio 1:25; Spindle Included No; items: Air-Hydraulic-Pump P Max 150 Bar, Single Acting | Hydraulic Pump | Air-Hydraulic-Pump P Max 360 Bar, Single Acting | Air-Hydraulic-Pump P Max 600 Bar, Single Acting.",
+      "source": "Indus Hydraulics product listing, /p/destaco-713e-series-air-hydraulic-single-action-pumps"
+    },
+    {
+      "fact": "GKS-Perfekt Hydraulic Electric Pumps: 4 listed part numbers; Frequency 60 Hz; Hydraulic Hose Included With Quick Release Fastener; items: Hydraulic Electric Pump, 1.27 Gallon Tank Capacity, 2 Hoses | Hydraulic Electric Pump, 1.27 Gallon Tank Capacity, 4 Hoses | Hydraulic Pump, 2 Hose.",
+      "source": "Indus Hydraulics product listing, /p/gks-perfekt-hydraulic-electric-pumps"
+    },
+    {
+      "fact": "Parker H Series Fixed Displacement Gear Pumps: 28 listed part numbers; displacement 2.52 in³/rev to 9.31 in³/rev; items: HYDRAULIC GEAR PUMP | Hydraulic Motor.",
+      "source": "Indus Hydraulics product listing, /p/parker-h-series-fixed-displacement-gear-pumps"
+    },
+    {
+      "fact": "Wheeler-Rex Hydraulic Pumps: 3 listed part numbers; items: Hydraulic Pump.",
+      "source": "Indus Hydraulics product listing, /p/wheeler-rex-hydraulic-pumps"
+    },
+    {
+      "fact": "Enerpac PA-Series Air Hydraulic Pumps: 4 listed part numbers; Type hydraulic pump; items: PA-1150 Air Hydraulic Pump | PA-133 Air Hydraulic Pump | PA-135 Air Hydraulic Pump | PA-136 Air Hydraulic Pump.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-pa-series-air-hydraulic-pumps"
+    }
+  ],
+  "products": [
+    {
+      "slug": "ame-international-electric-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the AME International electric pumps used for?",
+          "a": "AME International electric pumps are 2 gallon and 2.5 gallon electric fuel and oil pumps with a 1/2 hp motor on one model. The listing carries 3 part numbers: 15700, 15705 and 15710."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the AME International electric pumps available in?",
+          "a": "The listing carries 3 part numbers: 15700 (2 gallon, 2 speed), 15705 (2.5 gallon, 1/2 hp motor) and 15710 (2.5 gallon, 1-1/8 hp motor)."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the AME International electric pumps for my application?",
+          "a": "Choose the reservoir, 2 gallons or 2.5 gallons, and the motor, 1/2 hp or 1-1/8 hp, from the item name. The listing gives no pressure on the rows."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the AME International electric pumps?",
+          "a": "The listing gives no pressure rating on its rows for the AME International electric pumps, so we do not quote one. The rating is set by the model, so quote the part number and we confirm the rated pressure, flow and reservoir size with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the AME International electric pumps offered in?",
+          "a": "The listing does not state the reservoir or housing material of the AME International electric pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the AME International electric pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the AME International electric pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "What do the AME International electric pumps connect to?",
+          "a": "The AME International electric pumps connect to a cylinder or tool through a hose and a coupler rated for the pump's pressure. The supply voltage and the valve type in the part number must match the cylinder and the site supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the AME International electric pumps?",
+          "a": "Fit the AME International electric pumps on a level base, check the supply voltage against the nameplate, fill with clean oil and bleed the hose before loading. Set the relief valve for the cylinder, keep within the duty cycle and check oil level and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the AME International electric pumps?",
+          "a": "The AME International electric pumps are used to drive cylinders, torque wrenches, tensioners and presses where mains power is available, in plants, workshops, shipyards and on construction sites."
+        },
+        {
+          "slot": "K",
+          "q": "How do the AME International electric pumps differ from the AME International hydraulic pumps?",
+          "a": "The AME electric pumps are 3 part numbers of 2 to 2.5 gallons, while [the AME International hydraulic pumps](/p/ame-international-hydraulic-pumps) are 26 part numbers of 2 quart to 5 quart with 10,000 psi. Choose by the reservoir."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the AME International electric pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the AME International electric pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the AME International electric pumps available from stock in Dubai for export?",
+          "a": "Yes, we hold the AME International electric pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "ame-international-hydraulic-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the AME International hydraulic pumps used for?",
+          "a": "AME International hydraulic pumps are air hydraulic and cordless pumps with reservoirs of 2 quart to 5 quart, rated 10,000 psi by the maker. The listing carries 26 part numbers, such as 15020, 15125 and 15940."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the AME International hydraulic pumps available in?",
+          "a": "The listing carries 26 part numbers, such as 15020 (Turbo II air hydraulic pump, 5 quart), 15125 (cordless, 28-volt battery), 15924C (Titan 5 quart, steel reservoir) and 15940 (2 gallon, steel reservoir)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the AME International hydraulic pumps?",
+          "a": "Choose the drive, air or cordless, the reservoir, from 2 quart to 5 quart and up to 2 gallon, and the pump family, Turbo II or Titan. Hose and coupler are included on some models."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the AME International hydraulic pumps have?",
+          "a": "AME states 10,000 psi (689 bar) for its hydraulic pumps, with 9 rows giving it. Use a cylinder, hose and gauge rated for 10,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the AME International hydraulic pumps offered in?",
+          "a": "The listing does not state the reservoir or housing material of the AME International hydraulic pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the AME International hydraulic pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the AME International hydraulic pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the AME International hydraulic pumps mate with?",
+          "a": "The AME International hydraulic pumps need a compressed air supply and a hose and coupler to the cylinder or tool, rated for the pump's pressure. The valve configuration in the part number must match the cylinder: single-acting or double-acting."
+        },
+        {
+          "slot": "I",
+          "q": "How should the AME International hydraulic pumps be installed and maintained?",
+          "a": "Connect clean, dry compressed air to the AME International hydraulic pumps, fill the reservoir with clean hydraulic oil, bleed the hose and cylinder and set the relief valve before loading. Use an air line lubricator or filter only as the maker advises, and keep the air supply pressure steady."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the AME International hydraulic pumps used?",
+          "a": "The AME International hydraulic pumps are used where compressed air is on hand and a hydraulic pump is wanted without electric power: jacking, pressing, torque wrench work, bolt tensioning and clamping, in plants and workshops."
+        },
+        {
+          "slot": "K",
+          "q": "How do the AME International hydraulic pumps differ from the AME International electric pumps?",
+          "a": "The AME hydraulic pumps are 26 air and cordless pumps rated 10,000 psi, while [the AME International electric pumps](/p/ame-international-electric-pumps) are 3 electric pumps without a stated rating. Choose the hydraulic pumps for 10,000 psi work."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the AME International hydraulic pumps?",
+          "a": "We ship the AME International hydraulic pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the AME International hydraulic pumps in stock in Dubai?",
+          "a": "Yes. We stock the AME International hydraulic pumps at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bva-pa-series-air-hydraulic-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the BVA PA series air hydraulic pumps used for?",
+          "a": "BVA PA series air hydraulic pumps are air-driven hydraulic pumps from BVA Hydraulics. The listing carries 2 part numbers: PA1500 and PA2000."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the BVA PA series air hydraulic pumps?",
+          "a": "The listing carries 2 part numbers, PA1500 and PA2000, both described as air hydraulic pumps. The listing gives no pressure, flow or reservoir on the rows."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the BVA PA series air hydraulic pumps for my application?",
+          "a": "Choose between the PA1500 and PA2000 by the pressure and flow your tool needs, and note that the listing gives no rating on the rows, so we confirm it with BVA Hydraulics."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the BVA PA series air hydraulic pumps?",
+          "a": "The listing gives no pressure rating on its rows for the BVA PA series air hydraulic pumps, so we do not quote one. The rating is set by the model, so quote the part number and we confirm the rated pressure, flow and reservoir size with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the BVA PA series air hydraulic pumps made from?",
+          "a": "The listing does not state the reservoir or housing material of the BVA PA series air hydraulic pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the BVA PA series air hydraulic pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the BVA PA series air hydraulic pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the BVA PA series air hydraulic pumps mate with?",
+          "a": "The BVA PA series air hydraulic pumps need a compressed air supply and a hose and coupler to the cylinder or tool, rated for the pump's pressure. The valve configuration in the part number must match the cylinder: single-acting or double-acting."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the BVA PA series air hydraulic pumps?",
+          "a": "Connect clean, dry compressed air to the BVA PA series air hydraulic pumps, fill the reservoir with clean hydraulic oil, bleed the hose and cylinder and set the relief valve before loading. Use an air line lubricator or filter only as the maker advises, and keep the air supply pressure steady."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the BVA PA series air hydraulic pumps used?",
+          "a": "The BVA PA series air hydraulic pumps are used where compressed air is on hand and a hydraulic pump is wanted without electric power: jacking, pressing, torque wrench work, bolt tensioning and clamping, in plants and workshops."
+        },
+        {
+          "slot": "K",
+          "q": "How do the BVA PA series air hydraulic pumps differ from Enerpac PA-Series Air Hydraulic Pumps?",
+          "a": "The BVA PA pumps are 2 air hydraulic pumps, while [Enerpac PA-Series Air Hydraulic Pumps](/p/enerpac-pa-series-air-hydraulic-pumps) are 4 Enerpac air hydraulic pumps with the same series name. Choose by make and rating."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the BVA PA series air hydraulic pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the BVA PA series air hydraulic pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the BVA PA series air hydraulic pumps available from stock in Dubai for export?",
+          "a": "Yes, the BVA PA series air hydraulic pumps are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-70130-series-air-hydraulic-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Destaco 70130 series air hydraulic pumps used for?",
+          "a": "Destaco 70130 series air hydraulic pumps are air-hydraulic pumps with a 1:30 conversion ratio for clamping. The listing carries 12 part numbers, such as 70130, 70130R and 70130-Y12-HR."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Destaco 70130 series air hydraulic pumps available in?",
+          "a": "The listing carries 12 part numbers, such as 70130, 70130R, 70130-Y12-HR, 70130-Y12-F and 70130-Y12-HW1DP, each an air-hydraulic pump with a 1:30 conversion ratio for clamping."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Destaco 70130 series air hydraulic pumps?",
+          "a": "Choose the part number by the options in the suffix, Y12 versions with handle, foot or other controls, and note the 1:30 conversion ratio: air pressure is multiplied by 30 on the hydraulic side."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Destaco 70130 series air hydraulic pumps have?",
+          "a": "The listing gives a conversion ratio of 1:30 and no pressure, so the hydraulic pressure is the air pressure multiplied by 30 within the pump's limit. Give us your air pressure and we confirm the maximum with Destaco."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Destaco 70130 series air hydraulic pumps made from?",
+          "a": "The listing does not state the reservoir or housing material of the Destaco 70130 series air hydraulic pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Destaco 70130 series air hydraulic pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the Destaco 70130 series air hydraulic pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Destaco 70130 series air hydraulic pumps connect to?",
+          "a": "The Destaco 70130 series air hydraulic pumps need a compressed air supply and a hose and coupler to the cylinder or tool, rated for the pump's pressure. The valve configuration in the part number must match the cylinder: single-acting or double-acting."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Destaco 70130 series air hydraulic pumps?",
+          "a": "Connect clean, dry compressed air to the Destaco 70130 series air hydraulic pumps, fill the reservoir with clean hydraulic oil, bleed the hose and cylinder and set the relief valve before loading. Use an air line lubricator or filter only as the maker advises, and keep the air supply pressure steady."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Destaco 70130 series air hydraulic pumps used?",
+          "a": "The Destaco 70130 series air hydraulic pumps are used where compressed air is on hand and a hydraulic pump is wanted without electric power: jacking, pressing, torque wrench work, bolt tensioning and clamping, in plants and workshops."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Destaco 70130 series air hydraulic pumps differ from the Destaco 713D series air hydraulic double action pumps?",
+          "a": "The 70130 series have a 1:30 conversion ratio in 12 part numbers, while [the Destaco 713D series air hydraulic double action pumps](/p/destaco-713d-series-air-hydraulic-double-action-pumps) have a 1:25 ratio in 8 double action part numbers. Choose by the ratio and the pressure you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 70130 series air hydraulic pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Destaco 70130 series air hydraulic pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Destaco 70130 series air hydraulic pumps in stock in Dubai?",
+          "a": "Yes, we hold the Destaco 70130 series air hydraulic pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-713d-series-air-hydraulic-double-action-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Destaco 713D series air hydraulic double action pumps used for?",
+          "a": "Destaco 713D series air hydraulic double action pumps drive double-acting cylinders from compressed air, with a 1:25 conversion ratio. The listing carries 8 part numbers, such as 713D15051-1 and 713D36051-1."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Destaco 713D series air hydraulic double action pumps available in?",
+          "a": "The listing carries 8 part numbers, such as 713D15051-1, 713D36051-1, 713D36052-1 and 713D36058-1, each a double-acting air hydraulic pump with a 1:25 conversion ratio."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Destaco 713D series air hydraulic double action pumps for my application?",
+          "a": "Choose the double action 713D for double-acting clamping cylinders, then the part number whose suffix matches your control. Confirm the pressure of the part number with us."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Destaco 713D series air hydraulic double action pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Destaco 713D series air hydraulic double action pumps, so we do not quote one. The rating is set by the model, so quote the part number and we confirm the rated pressure, flow and reservoir size with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Destaco 713D series air hydraulic double action pumps offered in?",
+          "a": "The listing does not state the reservoir or housing material of the Destaco 713D series air hydraulic double action pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Destaco 713D series air hydraulic double action pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the Destaco 713D series air hydraulic double action pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Destaco 713D series air hydraulic double action pumps mate with?",
+          "a": "The Destaco 713D series air hydraulic double action pumps need a compressed air supply and a hose and coupler to the cylinder or tool, rated for the pump's pressure. The valve configuration in the part number must match the cylinder: single-acting or double-acting."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Destaco 713D series air hydraulic double action pumps?",
+          "a": "Connect clean, dry compressed air to the Destaco 713D series air hydraulic double action pumps, fill the reservoir with clean hydraulic oil, bleed the hose and cylinder and set the relief valve before loading. Use an air line lubricator or filter only as the maker advises, and keep the air supply pressure steady."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Destaco 713D series air hydraulic double action pumps?",
+          "a": "The Destaco 713D series air hydraulic double action pumps are used where compressed air is on hand and a hydraulic pump is wanted without electric power: jacking, pressing, torque wrench work, bolt tensioning and clamping, in plants and workshops."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Destaco 713D series air hydraulic double action pumps differ from the Destaco 713E series air hydraulic single action pumps?",
+          "a": "The 713D pumps are double action with a 1:25 ratio, while [the Destaco 713E series air hydraulic single action pumps](/p/destaco-713e-series-air-hydraulic-single-action-pumps) are single action with a 1:25 ratio, one stating 150 bar and another 360 bar. Choose by the cylinder action."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 713D series air hydraulic double action pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Destaco 713D series air hydraulic double action pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco 713D series air hydraulic double action pumps from stock in the UAE?",
+          "a": "Yes. We keep the Destaco 713D series air hydraulic double action pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-713e-series-air-hydraulic-single-action-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Destaco 713E series air hydraulic single action pumps used for?",
+          "a": "Destaco 713E series air hydraulic single action pumps drive single-acting cylinders from compressed air, with a 1:25 conversion ratio. The listing carries 6 part numbers, such as 713E15051-1 with a P max of 150 bar and 713E36051-1 with 360 bar."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Destaco 713E series air hydraulic single action pumps?",
+          "a": "The listing carries 6 part numbers: 713E15051-1, an air-hydraulic pump with a maximum pressure of 150 bar; 713E36051-1, with a maximum of 360 bar; and 713E360X008 and 713E36058-3X."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Destaco 713E series air hydraulic single action pumps?",
+          "a": "Choose the pressure first, 150 bar or 360 bar, and note that the pump is single acting, for single-acting cylinders. The 1:25 conversion ratio multiplies the air pressure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Destaco 713E series air hydraulic single action pumps have?",
+          "a": "The item names state a maximum pressure of 150 bar for 713E15051-1 and 360 bar for 713E36051-1, with a 1:25 conversion ratio. Use cylinders and hose rated above your chosen pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Destaco 713E series air hydraulic single action pumps made from?",
+          "a": "The listing does not state the reservoir or housing material of the Destaco 713E series air hydraulic single action pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Destaco 713E series air hydraulic single action pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the Destaco 713E series air hydraulic single action pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Destaco 713E series air hydraulic single action pumps mate with?",
+          "a": "The Destaco 713E series air hydraulic single action pumps need a compressed air supply and a hose and coupler to the cylinder or tool, rated for the pump's pressure. The valve configuration in the part number must match the cylinder: single-acting or double-acting."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Destaco 713E series air hydraulic single action pumps be installed and maintained?",
+          "a": "Connect clean, dry compressed air to the Destaco 713E series air hydraulic single action pumps, fill the reservoir with clean hydraulic oil, bleed the hose and cylinder and set the relief valve before loading. Use an air line lubricator or filter only as the maker advises, and keep the air supply pressure steady."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Destaco 713E series air hydraulic single action pumps used?",
+          "a": "The Destaco 713E series air hydraulic single action pumps are used where compressed air is on hand and a hydraulic pump is wanted without electric power: jacking, pressing, torque wrench work, bolt tensioning and clamping, in plants and workshops."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Destaco 713E series air hydraulic single action pumps differ from the Destaco 713D series air hydraulic double action pumps?",
+          "a": "The 713E pumps are single action in 6 part numbers with 150 bar and 360 bar versions, while [the Destaco 713D series air hydraulic double action pumps](/p/destaco-713d-series-air-hydraulic-double-action-pumps) are double action in 8 part numbers. Choose by the cylinder action."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 713E series air hydraulic single action pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Destaco 713E series air hydraulic single action pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Destaco 713E series air hydraulic single action pumps available from stock in Dubai for export?",
+          "a": "Yes, we hold the Destaco 713E series air hydraulic single action pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gks-perfekt-hydraulic-electric-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the GKS-Perfekt hydraulic electric pumps used for?",
+          "a": "GKS-Perfekt hydraulic electric pumps are 60 Hz electric pumps with a 1.27 gallon tank, supplied with quick-release hoses. The listing carries 4 part numbers, such as 2-13591 with 2 hoses and 2-13592 with 4 hoses."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the GKS-Perfekt hydraulic electric pumps available in?",
+          "a": "The listing carries 4 part numbers: 2-13591 and 2-13592 with a 1.27 gallon tank and 2 or 4 hoses, and 2-10199 and 2-10198 listed as 2 hose hydraulic pumps."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the GKS-Perfekt hydraulic electric pumps for my application?",
+          "a": "Choose the number of hoses, 2 or 4, to match your tools, and note the 60 Hz frequency. The hoses come with a quick-release fastener."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the GKS-Perfekt hydraulic electric pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the GKS-Perfekt hydraulic electric pumps, so we do not quote one. The rating is set by the model, so quote the part number and we confirm the rated pressure, flow and reservoir size with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the GKS-Perfekt hydraulic electric pumps made from?",
+          "a": "The listing does not state the reservoir or housing material of the GKS-Perfekt hydraulic electric pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the GKS-Perfekt hydraulic electric pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the GKS-Perfekt hydraulic electric pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the GKS-Perfekt hydraulic electric pumps mate with?",
+          "a": "The GKS-Perfekt hydraulic electric pumps connect to a cylinder or tool through a hose and a coupler rated for the pump's pressure. The supply voltage and the valve type in the part number must match the cylinder and the site supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the GKS-Perfekt hydraulic electric pumps be installed and maintained?",
+          "a": "Fit the GKS-Perfekt hydraulic electric pumps on a level base, check the supply voltage against the nameplate, fill with clean oil and bleed the hose before loading. Set the relief valve for the cylinder, keep within the duty cycle and check oil level and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the GKS-Perfekt hydraulic electric pumps used?",
+          "a": "The GKS-Perfekt hydraulic electric pumps are used to drive cylinders, torque wrenches, tensioners and presses where mains power is available, in plants, workshops, shipyards and on construction sites."
+        },
+        {
+          "slot": "K",
+          "q": "How do the GKS-Perfekt hydraulic electric pumps differ from the AME International electric pumps?",
+          "a": "The GKS-Perfekt pumps have a 1.27 gallon tank and 60 Hz motors in 4 part numbers, while [the AME International electric pumps](/p/ame-international-electric-pumps) are 3 pumps of 2 to 2.5 gallons. Choose by the number of hoses."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the GKS-Perfekt hydraulic electric pumps?",
+          "a": "We ship the GKS-Perfekt hydraulic electric pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Germany. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the GKS-Perfekt hydraulic electric pumps available from stock in Dubai for export?",
+          "a": "Yes. We stock the GKS-Perfekt hydraulic electric pumps at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-h-series-fixed-displacement-gear-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Parker H series fixed displacement gear pumps used?",
+          "a": "Parker H series fixed displacement gear pumps and motors cover 2.52 to 9.31 gal per 1000 rpm. The listing carries 28 part numbers, such as H31AA1B, H62AA1A and H90AA2B, listed as gear pumps and hydraulic motors."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Parker H series fixed displacement gear pumps?",
+          "a": "The listing carries 28 part numbers, such as h31aa1b (hydraulic gear pump), H62AA1A and H77AA1A (hydraulic motor) and H90AA2B (hydraulic motor). Displacement runs from 2.52 gal to 9.31 gal per 1000 rpm."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Parker H series fixed displacement gear pumps for my application?",
+          "a": "Choose the displacement from 2.52 to 9.31 gal per 1000 rpm for the flow you need, then the pump or motor version from the part number. The same H series frames are listed as pumps and as motors, so check the item name."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Parker H series fixed displacement gear pumps have?",
+          "a": "The listing gives a size range of 2.52 to 9.31 gal per 1000 rpm and no pressure on the rows, so we do not quote a pressure. Give us the part number and your duty and we confirm the rating with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker H series fixed displacement gear pumps made from?",
+          "a": "The listing does not state the body material of the H series. Quote the part number and we confirm the build with Parker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Parker H series fixed displacement gear pumps?",
+          "a": "The listing names no ISO or SAE standard for the H series and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask Parker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Parker H series fixed displacement gear pumps mate with?",
+          "a": "The H series pump bolts to an engine or gearbox and connects to your hoses through ports in the part number; the motor versions drive a load from hydraulic flow. See [our gear pumps](/c/hydraulic-gear-pumps) for other fixed displacement pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Parker H series fixed displacement gear pumps be installed and maintained?",
+          "a": "Fit the H series pump with the shaft aligned, prime it with clean oil and check rotation before connecting the load. Keep the inlet line short and large, and change the oil and filter on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Parker H series fixed displacement gear pumps?",
+          "a": "Parker H series gear pumps and motors are used on mobile and industrial machinery, such as tippers, loaders and winches, where a fixed displacement pump or motor is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker H series fixed displacement gear pumps differ from the Wheeler-Rex hydraulic pumps?",
+          "a": "The Parker H series are 28 gear pumps and motors from 2.52 to 9.31 gal per 1000 rpm, while [the Wheeler-Rex hydraulic pumps](/p/wheeler-rex-hydraulic-pumps) are 3 Wheeler-Rex hydraulic pumps. Choose the H series for engine-driven flow."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Parker H series fixed displacement gear pumps?",
+          "a": "We ship the Parker H series fixed displacement gear pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Parker H series fixed displacement gear pumps in stock in Dubai?",
+          "a": "Yes, we hold the Parker H series fixed displacement gear pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "wheeler-rex-hydraulic-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wheeler-Rex hydraulic pumps used for?",
+          "a": "Wheeler-Rex hydraulic pumps are pumps for Wheeler-Rex tools such as pipe cutters. The listing carries 3 part numbers: 1830, 1930 and 1630."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Wheeler-Rex hydraulic pumps available in?",
+          "a": "The listing carries 3 part numbers, 1830, 1930 and 1630, each listed as a hydraulic pump. The listing gives no pressure, flow or reservoir on the rows."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Wheeler-Rex hydraulic pumps for my application?",
+          "a": "Choose the pump by the Wheeler-Rex tool it must drive, since the listing gives no rating on the rows. Quote the tool model and we confirm the pump with the maker."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Wheeler-Rex hydraulic pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Wheeler-Rex hydraulic pumps, so we do not quote one. The rating is set by the model, so quote the part number and we confirm the rated pressure, flow and reservoir size with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Wheeler-Rex hydraulic pumps offered in?",
+          "a": "The listing does not state the reservoir or housing material of the Wheeler-Rex hydraulic pumps. Quote the part number and we confirm the build, such as aluminium or steel reservoir, with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Wheeler-Rex hydraulic pumps?",
+          "a": "The listing names no ISO, ASME or EN standard for the Wheeler-Rex hydraulic pumps and holds no certificates. If your site needs a test certificate or a conformity document, say so in the enquiry and we ask the maker what it can issue. See [our guide to high-pressure cylinders and pumps](/blog/high-pressure-hydraulic-cylinders-and-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Wheeler-Rex hydraulic pumps mate with?",
+          "a": "The pump drives a Wheeler-Rex tool such as the hydraulic pipe cutter through a hose and coupler. See [the Wheeler-Rex hydraulic pipe cutters](/p/wheeler-rex-hydraulic-pipe-cutter) for a tool they drive."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Wheeler-Rex hydraulic pumps?",
+          "a": "Fill the pump with clean oil, connect the hose to the tool and bleed air before use. Pump the tool through its stroke and release the valve to retract, and check for leaks before each job."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Wheeler-Rex hydraulic pumps?",
+          "a": "Wheeler-Rex pumps are used with pipe cutters and other Wheeler-Rex hydraulic tools in plumbing, mechanical and pipeline work."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Wheeler-Rex hydraulic pumps differ from the Parker H series fixed displacement gear pumps?",
+          "a": "The Wheeler-Rex pumps are 3 part numbers for tools, while [the Parker H series fixed displacement gear pumps](/p/parker-h-series-fixed-displacement-gear-pumps) are 28 engine-driven gear pumps and motors. Choose Wheeler-Rex to drive Wheeler-Rex tools."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Wheeler-Rex hydraulic pumps?",
+          "a": "We ship the Wheeler-Rex hydraulic pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Wheeler-Rex hydraulic pumps available from stock in Dubai for export?",
+          "a": "Yes. We keep the Wheeler-Rex hydraulic pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

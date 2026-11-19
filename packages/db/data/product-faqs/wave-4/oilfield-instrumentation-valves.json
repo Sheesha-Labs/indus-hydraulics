@@ -1,0 +1,474 @@
+{
+  "family": "oilfield-instrumentation-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "ANSI raised-face flanged valve ends are dimensioned to ASME B16.5.",
+      "source": "ASME B16.5 Pipe Flanges and Flanged Fittings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1/2 in 10,000 psi double block and bleed valve used for?",
+          "a": "A 1/2 in 10,000 psi double block and bleed valve (10K, sour service) is a three-handle double block and bleed valve that gives positive isolation plus a bleed for instrument tap-offs. Positive isolation + bleed for instrumentation tap-offs."
+        },
+        {
+          "slot": "B",
+          "q": "What does NPT female mean on the 1/2 in 10,000 psi valve ends?",
+          "a": "The listing gives 1/2 in NPT Female (process) on the inlet and 1/2 in NPT Female (instrument) on the outlet; NPT is the tapered pipe thread and female means the thread is cut inside the valve body. Seal with thread sealant and confirm the thread rating with the mating fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 1/2 in 10,000 psi double block and bleed valve have?",
+          "a": "On the 1/2 in 10,000 psi double block and bleed valve (sour service) the inlet is 1/2 in NPT Female (process) and the outlet is 1/2 in NPT Female (instrument). NPT ends make up with thread sealant such as PTFE tape or anaerobic sealant, and the threaded joint, not the valve, may limit the pressure of the assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1/2 in 10,000 psi double block and bleed valve or the 1/2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 1/2 in at 10,000 psi (sour service); the [Gauge Isolation Valve](/p/gauge-isolation-valve-single-block-1-2-in-npt-1-2-in-npt-10-000-psi-standard-service) is rated 10,000 psi with 1/2 in NPT Female (process) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1/2 in 10,000 psi double block and bleed valve, and how is it tested?",
+          "a": "The 1/2 in 10,000 psi double block and bleed valve with its 316 stainless steel body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; that shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1/2 in 10,000 psi double block and bleed valve made from?",
+          "a": "The 1/2 in 10,000 psi double block and bleed valve has a 316 stainless steel body; the trim is 316SS stem + 17-4PH spindle and the seals are Graphite + Inconel braided packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Stem, spindle and packing complete the pressure boundary."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1/2 in 10,000 psi double block and bleed valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 1/2 in 10,000 psi double block and bleed valve with its 316 stainless steel body is listed to NACE MR0175 / ISO 15156 with material class EE. Mill test reports to EN 10204 3.1 or 3.2 and the hydrostatic test certificate are supplied with the order, per the listing. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1/2 in 10,000 psi double block and bleed valve connect to?",
+          "a": "The process side is 1/2 in NPT Female (process) and the instrument side is 1/2 in NPT Female (instrument), so it sits between the process tap and the transmitter or gauge. See the [instrumentation valves shelf](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 1/2 in 10,000 psi double block and bleed valve operated and maintained?",
+          "a": "On the 1/2 in 10,000 psi double block and bleed valve, each of the three handles is independent, so close the two block valves, then open the bleed to vent the instrument side. The rising-stem T-bar handle is standard, a knurled knob is available for compact panels, and a lockable handle is available for LOTO. Read the [needle, globe and instrumentation valve guide](/blog/needle-globe-and-instrumentation-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1/2 in 10,000 psi double block and bleed valve compare with a needle valve?",
+          "a": "The 1/2 in 10,000 psi double block and bleed valve has two block valves and a bleed in one assembly so a gauge or transmitter can be isolated and vented safely, while a single needle valve only isolates once. See the [Gauge Isolation Valve, 1/2 in, 10,000 psi](/p/gauge-isolation-valve-single-block-1-2-in-npt-1-2-in-npt-10-000-psi-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 1/2 in 10,000 psi double block and bleed valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron double block and bleed valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Double Block and Bleed (DBB) Needle Valve, Three Handle, 1/2 in NPT, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Double Block and Bleed (DBB) Needle Valve, Three Handle, 1/2 in NPT, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gauge-isolation-valve-single-block-1-2-in-npt-1-2-in-npt-10-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1/2 in 10,000 psi gauge isolation valve used for?",
+          "a": "A 1/2 in 10,000 psi gauge isolation valve (10K, standard service) is a single-block valve fitted between the process tap and a pressure gauge so the gauge can be replaced or calibrated without depressurising the line. Allows pressure-gauge replacement and calibration without depressurising the line."
+        },
+        {
+          "slot": "B",
+          "q": "What does NPT female mean on the 1/2 in 10,000 psi valve ends?",
+          "a": "The listing gives 1/2 in NPT Female (process) on the inlet and 1/2 in NPT Female (gauge) on the outlet; NPT is the tapered pipe thread and female means the thread is cut inside the valve body. Seal with thread sealant and confirm the thread rating with the mating fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 1/2 in 10,000 psi gauge isolation valve have?",
+          "a": "On the 1/2 in 10,000 psi gauge isolation valve (standard service) the inlet is 1/2 in NPT Female (process) and the outlet is 1/2 in NPT Female (gauge). NPT ends make up with thread sealant such as PTFE tape or anaerobic sealant, and the threaded joint, not the valve, may limit the pressure of the assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1/2 in 10,000 psi gauge isolation valve or the 1/2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 1/2 in at 10,000 psi (standard service); the [Double Block and Bleed (DBB) Needle Valve](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service) is rated 10,000 psi with 1/2 in NPT Female (process) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1/2 in 10,000 psi gauge isolation valve, and how is it tested?",
+          "a": "The 1/2 in 10,000 psi gauge isolation valve with its 316 stainless steel body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; that shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1/2 in 10,000 psi gauge isolation valve made from?",
+          "a": "The 1/2 in 10,000 psi gauge isolation valve has a 316 stainless steel body; the trim is 316SS stem + 17-4PH spindle and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. Stem, spindle and packing complete the pressure boundary."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 1/2 in 10,000 psi gauge isolation valve be used in sour (H2S) gas?",
+          "a": "No. The 1/2 in 10,000 psi gauge isolation valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. Mill test reports to EN 10204 3.1 or 3.2 and the hydrostatic test certificate are supplied with the order, per the listing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1/2 in 10,000 psi gauge isolation valve connect to?",
+          "a": "Inlet is 1/2 in NPT Female (process) for the process tap and outlet is 1/2 in NPT Female (gauge) for the gauge. See the [instrumentation valves shelf](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 1/2 in 10,000 psi gauge isolation valve operated and maintained?",
+          "a": "On the 1/2 in 10,000 psi gauge isolation valve, it is a single block valve mounted directly between the process tap and the gauge, so close it to remove or calibrate the gauge without depressurising the line. Read the [needle, globe and instrumentation valve guide](/blog/needle-globe-and-instrumentation-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1/2 in 10,000 psi gauge isolation valve compare with a needle valve?",
+          "a": "The 1/2 in 10,000 psi gauge isolation valve is a single block valve between tap and gauge for gauge replacement, while a double block and bleed valve adds a second block and a vent for positive isolation. See the [Double Block and Bleed (DBB) Needle Valve, 1/2 in, 10,000 psi](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 1/2 in 10,000 psi gauge isolation valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron gauge isolation valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 1/2 in 10,000 psi gauge isolation valve in Dubai?",
+          "a": "Yes. We keep the 1/2 in 10,000 psi gauge isolation valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "monoflange-valve-3-valve-manifold-1-2-in-npt-2-1-16-in-15m-flanged-15-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve used for?",
+          "a": "A 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve (15K, sour service) is an integrated primary block, secondary block and bleed in one flanged body that replaces a conventional close-coupled manifold. Replaces conventional close-coupled manifold."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 2-1/16 in flange × 1/2 in NPT 15,000 psi valve use?",
+          "a": "The monoflange valve inlet is a 2-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this monoflange valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve have?",
+          "a": "On the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve (sour service) the inlet is 2-1/16 in API 6A 15M Flanged (RTJ) — process side and the outlet is 1/2 in NPT Female — instrument side. NPT ends make up with thread sealant such as PTFE tape or anaerobic sealant, and the threaded joint, not the valve, may limit the pressure of the assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve or the 1/2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2-1/16 in flange × 1/2 in NPT at 15,000 psi (sour service); the [Double Block and Bleed (DBB) Needle Valve](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service) is rated 10,000 psi with 1/2 in NPT Female (process) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve, and how is it tested?",
+          "a": "The 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). The listing states shell testing at 1.5 times working pressure; that shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve made from?",
+          "a": "The 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve has a Forged AISI 4130 body; the trim is 316SS stem + 17-4PH spindle and the seals are Graphite + Inconel braided packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Stem, spindle and packing complete the pressure boundary."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6A. It is listed to API 6A and supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve connect to?",
+          "a": "The process side is 2-1/16 in API 6A 15M Flanged (RTJ) — process side, which connects directly to the line tap, and the instrument side is 1/2 in NPT Female — instrument side for the gauge, transmitter or capillary line. See the [instrumentation valves shelf](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve operated and maintained?",
+          "a": "On the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve, each block and the bleed has its own handle, so isolate the line with the two blocks and vent through the bleed. Tag-and-lock each handle per LOTO procedure. Read the [needle, globe and instrumentation valve guide](/blog/needle-globe-and-instrumentation-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve compare with a needle valve?",
+          "a": "The 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve integrates two blocks and a bleed in one flanged body, replacing a conventional close-coupled manifold, while a needle valve is a single threaded valve. See the [Double Block and Bleed (DBB) Needle Valve, 1/2 in, 10,000 psi](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2-1/16 in flange × 1/2 in NPT 15,000 psi monoflange valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron monoflange valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Monoflange Valve, Double Block and Bleed, 1/2 in NPT × 2-1/16 in 15M Flanged, 15,000 psi, Sour Servi from Indus Hydraulics?",
+          "a": "The Monoflange Valve, Double Block and Bleed, 1/2 in NPT × 2-1/16 in 15M Flanged, 15,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "needle-valve-1-2-in-npt-10-000-psi-sour-service-316ss-body-50-250-f",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1/2 in 10,000 psi needle valve used for?",
+          "a": "A 1/2 in 10,000 psi needle valve (10K, sour service) is a multi-turn needle valve that throttles or isolates small-bore instrument and sample lines. Premium corrosion resistance for harsh sour-gas service."
+        },
+        {
+          "slot": "B",
+          "q": "What does NPT female mean on the 1/2 in 10,000 psi valve ends?",
+          "a": "The listing gives 1/2 in NPT Female on the inlet and 1/2 in NPT Female on the outlet; NPT is the tapered pipe thread and female means the thread is cut inside the valve body. Seal with thread sealant and confirm the thread rating with the mating fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 1/2 in 10,000 psi needle valve have?",
+          "a": "On the 1/2 in 10,000 psi needle valve (sour service) the inlet is 1/2 in NPT Female and the outlet is 1/2 in NPT Female. NPT ends make up with thread sealant such as PTFE tape or anaerobic sealant, and the threaded joint, not the valve, may limit the pressure of the assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1/2 in 10,000 psi needle valve or the 1/4 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 1/2 in at 10,000 psi (sour service); the [1/4 in 15,000 psi needle valve](/p/needle-valve-1-4-in-npt-15-000-psi-sour-service-316ss-body) is rated 15,000 psi with 1/4 in NPT Female on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1/2 in 10,000 psi needle valve, and how is it tested?",
+          "a": "The 1/2 in 10,000 psi needle valve with its 316 stainless steel body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; that shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1/2 in 10,000 psi needle valve made from?",
+          "a": "The 1/2 in 10,000 psi needle valve has a 316 stainless steel body; the trim is 316SS stem + 17-4PH spindle and the seals are Graphite + Inconel braided packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Stem, spindle and packing complete the pressure boundary."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1/2 in 10,000 psi needle valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 1/2 in 10,000 psi needle valve with its 316 stainless steel body is listed to NACE MR0175 / ISO 15156 with material class EE. Mill test reports to EN 10204 3.1 or 3.2 and the hydrostatic test certificate are supplied with the order, per the listing. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1/2 in 10,000 psi needle valve connect to?",
+          "a": "It connects to instrument tubing and process taps through 1/2 in NPT Female on the inlet and 1/2 in NPT Female on the outlet, usually with NPT fittings of the same pressure rating. See the [instrumentation valves shelf](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 1/2 in 10,000 psi needle valve operated and maintained?",
+          "a": "On the 1/2 in 10,000 psi needle valve, the rising stem drives a tapered point into a precision orifice, so the flow is set finely over several turns. Close it fully for bubble-tight shut-off, and open it slowly to avoid pressure shock on instruments. Read the [needle, globe and instrumentation valve guide](/blog/needle-globe-and-instrumentation-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1/2 in 10,000 psi needle valve compare with a double block and bleed valve?",
+          "a": "The 1/2 in 10,000 psi needle valve is a single stem valve for throttling and isolation, while a double block and bleed valve combines two block valves and a bleed in one assembly for positive isolation. See the [Double Block and Bleed (DBB) Needle Valve, 1/2 in, 10,000 psi](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 1/2 in 10,000 psi needle valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron needle valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Needle Valve, 1/2 in NPT, 10,000 psi, Sour Service, 316SS Body, -50/+250°F in stock in Dubai?",
+          "a": "Yes. We keep the Needle Valve, 1/2 in NPT, 10,000 psi, Sour Service, 316SS Body, -50/+250°F in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "needle-valve-1-2-in-npt-10-000-psi-sour-service-carbon-steel-body-50-250-f",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1/2 in 10,000 psi needle valve used for?",
+          "a": "A 1/2 in 10,000 psi needle valve (10K, sour service) is a multi-turn needle valve that throttles or isolates small-bore instrument and sample lines. Instrumentation throttling and isolation for sour-gas service."
+        },
+        {
+          "slot": "B",
+          "q": "What does NPT female mean on the 1/2 in 10,000 psi valve ends (Needle Valve, 1/2 in NPT, 10,000 psi, Sour Service, Carbon Steel Body, -50/+250°F)?",
+          "a": "The listing gives 1/2 in NPT Female on the inlet and 1/2 in NPT Female on the outlet; NPT is the tapered pipe thread and female means the thread is cut inside the valve body. Seal with thread sealant and confirm the thread rating with the mating fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 1/2 in 10,000 psi needle valve have?",
+          "a": "On the 1/2 in 10,000 psi needle valve (sour service) the inlet is 1/2 in NPT Female and the outlet is 1/2 in NPT Female. NPT ends make up with thread sealant such as PTFE tape or anaerobic sealant, and the threaded joint, not the valve, may limit the pressure of the assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1/2 in 10,000 psi needle valve or the 1/4 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 1/2 in at 10,000 psi (sour service); the [1/4 in 15,000 psi needle valve](/p/needle-valve-1-4-in-npt-15-000-psi-sour-service-316ss-body) is rated 15,000 psi with 1/4 in NPT Female on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1/2 in 10,000 psi needle valve, and how is it tested?",
+          "a": "The 1/2 in 10,000 psi needle valve with its Carbon steel A105N body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; that shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1/2 in 10,000 psi needle valve made from?",
+          "a": "The 1/2 in 10,000 psi needle valve has a Carbon steel A105N body; the trim is 17-4PH stem + AISI 4130 spindle (carbon steel body) and the seals are Graphite + Inconel braided packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Stem, spindle and packing complete the pressure boundary."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1/2 in 10,000 psi needle valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 1/2 in 10,000 psi needle valve with its Carbon steel A105N body is listed to NACE MR0175 / ISO 15156 with material class EE. Mill test reports to EN 10204 3.1 or 3.2 and the hydrostatic test certificate are supplied with the order, per the listing. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1/2 in 10,000 psi needle valve connect to?",
+          "a": "It connects to instrument tubing and process taps through 1/2 in NPT Female on the inlet and 1/2 in NPT Female on the outlet, usually with NPT fittings of the same pressure rating. See the [instrumentation valves shelf](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 1/2 in 10,000 psi needle valve operated and maintained?",
+          "a": "On the 1/2 in 10,000 psi needle valve, the rising stem drives a tapered point into a precision orifice, so the flow is set finely over several turns. Close it fully for bubble-tight shut-off, and open it slowly to avoid pressure shock on instruments. Read the [needle, globe and instrumentation valve guide](/blog/needle-globe-and-instrumentation-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1/2 in 10,000 psi needle valve compare with a double block and bleed valve?",
+          "a": "The 1/2 in 10,000 psi needle valve is a single stem valve for throttling and isolation, while a double block and bleed valve combines two block valves and a bleed in one assembly for positive isolation. See the [Double Block and Bleed (DBB) Needle Valve, 1/2 in, 10,000 psi](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 1/2 in 10,000 psi needle valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron needle valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 1/2 in 10,000 psi needle valve in Dubai?",
+          "a": "Yes. We keep the 1/2 in 10,000 psi needle valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "needle-valve-1-4-in-npt-15-000-psi-sour-service-316ss-body",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1/4 in 15,000 psi needle valve used for?",
+          "a": "A 1/4 in 15,000 psi needle valve (15K, sour service) is a multi-turn needle valve that throttles or isolates small-bore instrument and sample lines. HP small-bore instrumentation isolation for HPHT installations."
+        },
+        {
+          "slot": "B",
+          "q": "What does NPT female mean on the 1/4 in 15,000 psi valve ends?",
+          "a": "The listing gives 1/4 in NPT Female on the inlet and 1/4 in NPT Female on the outlet; NPT is the tapered pipe thread and female means the thread is cut inside the valve body. Seal with thread sealant and confirm the thread rating with the mating fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 1/4 in 15,000 psi needle valve have?",
+          "a": "On the 1/4 in 15,000 psi needle valve (sour service) the inlet is 1/4 in NPT Female and the outlet is 1/4 in NPT Female. NPT ends make up with thread sealant such as PTFE tape or anaerobic sealant, and the threaded joint, not the valve, may limit the pressure of the assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1/4 in 15,000 psi needle valve or the 1/2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 1/4 in at 15,000 psi (sour service); the [1/2 in 10,000 psi needle valve](/p/needle-valve-1-2-in-npt-10-000-psi-sour-service-316ss-body-50-250-f) is rated 10,000 psi with 1/2 in NPT Female on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1/4 in 15,000 psi needle valve, and how is it tested?",
+          "a": "The 1/4 in 15,000 psi needle valve with its 316 stainless steel body is rated 15,000 psi working pressure (15K class). The listing states shell testing at 1.5 times working pressure; that shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1/4 in 15,000 psi needle valve made from?",
+          "a": "The 1/4 in 15,000 psi needle valve has a 316 stainless steel body; the trim is 316SS stem + 17-4PH spindle and the seals are Graphite + Inconel braided packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Stem, spindle and packing complete the pressure boundary."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1/4 in 15,000 psi needle valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 1/4 in 15,000 psi needle valve with its 316 stainless steel body is listed to NACE MR0175 / ISO 15156 with material class EE. Mill test reports to EN 10204 3.1 or 3.2 and the hydrostatic test certificate are supplied with the order, per the listing. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1/4 in 15,000 psi needle valve connect to?",
+          "a": "It connects to instrument tubing and process taps through 1/4 in NPT Female on the inlet and 1/4 in NPT Female on the outlet, usually with NPT fittings of the same pressure rating. See the [instrumentation valves shelf](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 1/4 in 15,000 psi needle valve operated and maintained?",
+          "a": "On the 1/4 in 15,000 psi needle valve, the rising stem drives a tapered point into a precision orifice, so the flow is set finely over several turns. Close it fully for bubble-tight shut-off, and open it slowly to avoid pressure shock on instruments. Read the [needle, globe and instrumentation valve guide](/blog/needle-globe-and-instrumentation-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1/4 in 15,000 psi needle valve compare with a double block and bleed valve?",
+          "a": "The 1/4 in 15,000 psi needle valve is a single stem valve for throttling and isolation, while a double block and bleed valve combines two block valves and a bleed in one assembly for positive isolation. See the [Double Block and Bleed (DBB) Needle Valve, 1/2 in, 10,000 psi](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 1/4 in 15,000 psi needle valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies needle valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Needle Valve, 1/4 in NPT, 15,000 psi, Sour Service, 316SS Body in stock in Dubai?",
+          "a": "Yes. We keep the Needle Valve, 1/4 in NPT, 15,000 psi, Sour Service, 316SS Body in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bleed-valve-1-2-in-npt-10-000-psi-sour-service-316ss-body",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1/2 in 10,000 psi bleed valve used for?",
+          "a": "A 1/2 in 10,000 psi bleed valve (10K, sour service) is a small-bore vent valve that opens to atmosphere or a closed bleed system to depressurise downstream instrumentation. Vent / drain leg for double-block-and-bleed instrumentation manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "What does NPT female mean on the 1/2 in 10,000 psi valve ends (Bleed Valve, 1/2 in NPT, 10,000 psi, Sour Service, 316SS Body)?",
+          "a": "The listing gives 1/2 in NPT Female on the inlet and 1/2 in NPT Female (vent) on the outlet; NPT is the tapered pipe thread and female means the thread is cut inside the valve body. Seal with thread sealant and confirm the thread rating with the mating fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 1/2 in 10,000 psi bleed valve have?",
+          "a": "On the 1/2 in 10,000 psi bleed valve (sour service) the inlet is 1/2 in NPT Female and the outlet is 1/2 in NPT Female (vent). NPT ends make up with thread sealant such as PTFE tape or anaerobic sealant, and the threaded joint, not the valve, may limit the pressure of the assembly."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1/2 in 10,000 psi bleed valve or the 1/2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 1/2 in at 10,000 psi (sour service); the [Double Block and Bleed (DBB) Needle Valve](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service) is rated 10,000 psi with 1/2 in NPT Female (process) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1/2 in 10,000 psi bleed valve, and how is it tested?",
+          "a": "The 1/2 in 10,000 psi bleed valve with its 316 stainless steel body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; that shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1/2 in 10,000 psi bleed valve made from?",
+          "a": "The 1/2 in 10,000 psi bleed valve has a 316 stainless steel body; the trim is 316SS stem + 17-4PH spindle and the seals are Graphite + Inconel braided packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Stem, spindle and packing complete the pressure boundary."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1/2 in 10,000 psi bleed valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 1/2 in 10,000 psi bleed valve with its 316 stainless steel body is listed to NACE MR0175 / ISO 15156 with material class EE. Mill test reports to EN 10204 3.1 or 3.2 and the hydrostatic test certificate are supplied with the order, per the listing. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1/2 in 10,000 psi bleed valve vent to?",
+          "a": "The outlet is 1/2 in NPT Female (vent), which can be piped to atmosphere or a closed bleed system. See the [instrumentation valves shelf](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 1/2 in 10,000 psi bleed valve operated and maintained?",
+          "a": "On the 1/2 in 10,000 psi bleed valve, it opens to atmosphere or a closed bleed system to depressurise the instrument side after the blocks are closed. Vent to a safe location, particularly in sour service. Read the [needle, globe and instrumentation valve guide](/blog/needle-globe-and-instrumentation-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1/2 in 10,000 psi bleed valve compare with a needle valve?",
+          "a": "The 1/2 in 10,000 psi bleed valve is the vent leg of a double block and bleed assembly, while a needle valve is used for throttling or isolation in the line. See the [Double Block and Bleed (DBB) Needle Valve, 1/2 in, 10,000 psi](/p/double-block-and-bleed-dbb-needle-valve-three-handle-1-2-in-npt-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 1/2 in 10,000 psi bleed valve be exported from Dubai with documents?",
+          "a": "Yes. We supply the 1/2 in 10,000 psi bleed valve from Dubai, UAE and ship worldwide with the commercial invoice, packing list and test documents. Tell us the destination and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 1/2 in 10,000 psi bleed valve in Dubai?",
+          "a": "Yes. We keep the 1/2 in 10,000 psi bleed valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

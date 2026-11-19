@@ -1,0 +1,71 @@
+{
+  "family": "return-bends",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "return-bends-short-and-long-radius",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are short and long radius return bends and what are they used for?",
+          "a": "Return Bends — Short and Long Radius are 180° return bends to ASME B16.9 and MSS SP-43, with short radius at 2 × NPS centre-to-centre and long radius at 3 × NPS, for furnace coils, serpentines and heater sections. The tube material follows the family: SA179, SA192, SA210, SA213, SA334 and SA335. Each size is supplied from Dubai under its own Indus part number. See the [return bends](/c/return-bends) shelf and our [guide to bend radius and wall thinning](/blog/u-bend-tubes-bend-radius-wall-thinning)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the short and long radius return bends come in?",
+          "a": "The size table lists 7 return bend sizes from NPS 1 (33.4 mm OD) to NPS 4 (114.3 mm OD), each with short and long radius dimensions. Centre-to-centre runs 51 to 203 mm for short radius and 76 to 305 mm for long radius. The table lists typical sizes; other sizes are made on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose short or long radius return bends?",
+          "a": "Choose short radius for the tightest layout (2 × NPS centre-to-centre) and long radius (3 × NPS) where a gentler bend and less thinning matter. For NPS 1, the short radius is 51 mm and the long radius 76 mm centre-to-centre; for NPS 2, 102 mm and 152 mm. State the bend schedule, the centreline radius and leg length for each row, when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What are the centre-to-centre dimensions of the return bends?",
+          "a": "B16.9 short-radius return bends are 2 × NPS centre-to-centre (NPS 1 = 51 mm, NPS 2 = 102 mm), and long-radius ones are 3 × NPS from NPS 1 (NPS 1 = 76 mm, NPS 2 = 152 mm, NPS 4 = 305 mm). NPS 1/2 and 3/4 long radius are both 76 mm. The size table also lists back-to-face dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number for the return bends?",
+          "a": "In the Indus part number the last four digits give the nominal pipe size multiplied by 100. IH-TF-RB-SRB-N0100 is NPS 1, IH-TF-RB-SRB-N0125 is NPS 1-1/4, IH-TF-RB-SRB-N0150 is NPS 1-1/2 and IH-TF-RB-SRB-N0400 is NPS 4. Quote the part number, or send the standard and grade, outside diameter and wall, length, quantity and bend schedule."
+        },
+        {
+          "slot": "C",
+          "q": "Which standards cover 180° return bends?",
+          "a": "ASME B16.9 and MSS SP-43 cover 180° return bends, and the tube material follows ASME SA179, SA192, SA210, SA213, SA334 or SA335. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative, and we check them against each tender. B16.9 lists short-radius returns for NPS 1 to 24 only."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are the return bends made from?",
+          "a": "The return bend tube material is per family: SA179, SA192, SA210, SA213, SA334 and SA335. Pick the grade for the service temperature and fluid, for example carbon steel boiler tube or low-temperature or stainless grades. State the grade on the enquiry because the standard does not fix it."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and certificates come with return bends?",
+          "a": "Testing is per the fitting standard and material specification, and a mill test certificate to EN 10204 3.1 is available on request. Third-party inspection can be arranged against your inspection and test plan. State the tests you need on the enquiry."
+        },
+        {
+          "slot": "I",
+          "q": "How much does a return bend thin at the bend?",
+          "a": "Order the wall before bending at least 1.06 × tm for a 6D radius, rising to at least 1.25 × tm for a 3D radius, under the pipe-bend thinning allowance (PFI ES-24). Tube-size bends tighter than 1.5 × OD centreline radius exceed the A688 and TEMA thinning and ovality basis. State the minimum wall you need after bending. See our [guide to bend radius and wall thinning](/blog/u-bend-tubes-bend-radius-wall-thinning)."
+        },
+        {
+          "slot": "J",
+          "q": "Where are return bends used?",
+          "a": "Return bends are used in furnace coils, serpentines and heater sections, where tubes are joined at the ends to make a continuous coil. They are the 180° fitting that links parallel tube runs. For tubes bent as U-tubes see the U-bend shelves. See our [carbon steel U-bend tubes](/c/carbon-steel-u-bend-tubes) and [stainless U-bend tubes](/c/stainless-u-bend-tubes)."
+        },
+        {
+          "slot": "L",
+          "q": "What lengths and dimensions can return bends be made in?",
+          "a": "Return bends are made to B16.9 centre-to-centre and back-to-face dimensions, with leg length ordered on the bend schedule. Random or fixed lengths are cut to length on request. Send the centreline radius and leg length for each row."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock return bends in Dubai?",
+          "a": "Yes. We keep the Return Bends — Short and Long Radius in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the standard and grade, outside diameter and wall, length, quantity and bend schedule through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

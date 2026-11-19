@@ -1,0 +1,340 @@
+{
+  "family": "valve-actuators",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "compact-hydraulic-actuator-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a compact hydraulic actuator for API 6A gate valves used for?",
+          "a": "Low-height hydraulic actuators for API 6A gate valves where space is tight: offshore platforms, frac wellheads, test trees, integrated wellheads; 3,000 psi, fail-close or fail-open."
+        },
+        {
+          "slot": "B",
+          "q": "Do PSL levels apply to a compact hydraulic actuator for API 6A valves?",
+          "a": "No. The listing states that PSL does not apply to actuators; the PSL stays with the valve the actuator is fitted to. The actuator carries pressure and function tests, plus a combined valve-and-actuator test."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the compact hydraulic actuator for API 6A gate valves come in?",
+          "a": "The listing covers Fitted to API 6A gate valves nominal bore at 3,000 psi control pressure, with bonnet-mounted on the valve. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a compact hydraulic actuator instead of a standard single-acting actuator?",
+          "a": "Choose the compact type where headroom is tight, such as offshore platforms, frac wellheads, test trees and integrated wellheads. For SSV duty with PR2F see the [single-acting hydraulic actuator](/p/hydraulic-single-acting-actuator-api-6a)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the compact hydraulic actuator for API 6A gate valves tested?",
+          "a": "For the compact hydraulic actuator for API 6A gate valves (Fitted to API 6A gate valves, 3,000 psi control pressure): actuator pressure and function tests, and a combined valve-and-actuator test when supplied together. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the compact hydraulic actuator for API 6A gate valves offer?",
+          "a": "On the compact hydraulic actuator for API 6A gate valves, body material is offered in API 6A material classes AA, BB, CC, and the temperature range is -29 °C to 121 °C. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the compact hydraulic actuator for API 6A gate valves to API specification, and what documents are supplied?",
+          "a": "The compact hydraulic actuator for API 6A gate valves is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the compact hydraulic actuator for API 6A gate valves operated?",
+          "a": "The compact hydraulic actuator for API 6A gate valves is operated by hydraulic, fail close or fail open. It is a spring-return piston that fails closed or open depending on the spring arrangement ordered. End connections on the listing are bonnet-mounted on the valve."
+        },
+        {
+          "slot": "I",
+          "q": "How does a compact spring-return hydraulic actuator fail safe?",
+          "a": "Control pressure compresses the spring and holds the gate in position; when pressure is lost the spring returns the valve to the fail position, fail close or fail open as ordered. The control pressure is 3,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "Compact hydraulic actuator or double-acting actuator for a gate valve?",
+          "a": "A compact actuator is a low-height spring-return piston for tight spaces, while a standard single-acting actuator is taller and suits wellhead SSVs and pipeline valves. See the [Hydraulic Single-Acting Actuator for API 6A Gate Valves](/p/hydraulic-single-acting-actuator-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the compact hydraulic actuator for API 6A gate valves be supplied from Dubai with test records?",
+          "a": "For the compact hydraulic actuator for API 6A gate valves: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the compact hydraulic actuator for API 6A gate valves in Dubai?",
+          "a": "Yes. We keep the compact hydraulic actuator for API 6A gate valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-double-acting-actuator-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a double-acting hydraulic actuator for API 6A gate valves used for?",
+          "a": "Double-acting hydraulic actuators for large, high-pressure API 6A gate valves at full differential pressure: 3,000 psi, for choke and kill, fracturing and drilling manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "Do PSL levels apply to a double-acting hydraulic actuator?",
+          "a": "No. The listing states that PSL does not apply to actuators; the PSL of the valve it is fitted to applies. Actuator pressure and function tests, and a combined valve-and-actuator test, are carried out."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the double-acting hydraulic actuator for API 6A gate valves come in?",
+          "a": "The listing covers Fitted to API 6A gate valves nominal bore at 3,000 psi control pressure, with bonnet-mounted on the valve. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a double-acting hydraulic actuator for an API 6A gate valve?",
+          "a": "Choose it for large, high-pressure gate valves that must be driven at full differential pressure, such as choke and kill, fracturing and drilling manifolds. If you need fail-safe closure, use a spring-return actuator such as the [compact hydraulic actuator](/p/compact-hydraulic-actuator-api-6a)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the double-acting hydraulic actuator for API 6A gate valves tested?",
+          "a": "For the double-acting hydraulic actuator for API 6A gate valves (Fitted to API 6A gate valves, 3,000 psi control pressure): actuator pressure and function tests, and a combined valve-and-actuator test when supplied together. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the double-acting hydraulic actuator for API 6A gate valves offer?",
+          "a": "On the double-acting hydraulic actuator for API 6A gate valves, body material is offered in API 6A material classes AA, BB, CC, and the temperature range is -29 °C to 121 °C. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the double-acting hydraulic actuator for API 6A gate valves to API specification, and what documents are supplied?",
+          "a": "The double-acting hydraulic actuator for API 6A gate valves is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the double-acting hydraulic actuator for API 6A gate valves operated?",
+          "a": "The double-acting hydraulic actuator for API 6A gate valves is operated by hydraulic open and close. Hydraulic pressure drives the piston both ways, so there is no spring return. End connections on the listing are bonnet-mounted on the valve."
+        },
+        {
+          "slot": "I",
+          "q": "Does a double-acting hydraulic actuator fail safe on loss of pressure?",
+          "a": "No. With no spring the valve stays where it is when hydraulic pressure is lost, so a double-acting actuator is not a fail-close device. Use a spring-return actuator when fail-safe closure is required. Control pressure is 3,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "Double-acting actuator or spring-return actuator for a manifold valve?",
+          "a": "A double-acting actuator drives the valve open and closed hydraulically at full differential pressure and has no spring, while a compact spring-return actuator fails to a set position. See the [Compact Hydraulic Actuator for API 6A Gate Valves](/p/compact-hydraulic-actuator-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the double-acting hydraulic actuator for API 6A gate valves be supplied from Dubai with test records?",
+          "a": "For the double-acting hydraulic actuator for API 6A gate valves: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the double-acting hydraulic actuator for API 6A gate valves in Dubai?",
+          "a": "Yes. We keep the double-acting hydraulic actuator for API 6A gate valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-single-acting-actuator-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a single-acting hydraulic actuator for API 6A gate valves used for?",
+          "a": "Single-acting (spring-return) hydraulic piston actuators for API 6A gate valves: 3,000 psi control pressure, fail-close or fail-open, for wellhead SSVs, pipelines, headers and storage valves."
+        },
+        {
+          "slot": "B",
+          "q": "Do PSL levels apply to a single-acting hydraulic actuator?",
+          "a": "No. The listing states PSL does not apply to actuators, and notes PR2F for SSV duty. The PSL stays with the valve. Actuator pressure and function tests and a combined valve-and-actuator test are done."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the single-acting hydraulic actuator for API 6A gate valves come in?",
+          "a": "The listing covers Fitted to API 6A gate valves nominal bore at 3,000 psi control pressure, with bonnet-mounted on the valve. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a single-acting hydraulic actuator for a surface safety valve?",
+          "a": "Choose it for wellhead SSVs, pipelines, headers and storage valves where the valve must fail close or fail open when control pressure is lost. For large valves driven at full differential see the [double-acting actuator](/p/hydraulic-double-acting-actuator-api-6a)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the single-acting hydraulic actuator for API 6A gate valves tested?",
+          "a": "For the single-acting hydraulic actuator for API 6A gate valves (Fitted to API 6A gate valves, 3,000 psi control pressure): actuator pressure and function tests, and a combined valve-and-actuator test when supplied together. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the single-acting hydraulic actuator for API 6A gate valves offer?",
+          "a": "On the single-acting hydraulic actuator for API 6A gate valves, body material is offered in API 6A material classes AA, BB, CC, and the temperature range is -29 °C to 121 °C. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the single-acting hydraulic actuator for API 6A gate valves to API specification, and what documents are supplied?",
+          "a": "The single-acting hydraulic actuator for API 6A gate valves is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the single-acting hydraulic actuator for API 6A gate valves operated?",
+          "a": "The single-acting hydraulic actuator for API 6A gate valves is operated by hydraulic, fail close or fail open. It is a spring-return hydraulic piston, fail close or fail open, with PR2F noted for SSV duty. End connections on the listing are bonnet-mounted on the valve."
+        },
+        {
+          "slot": "I",
+          "q": "What does PR2F mean for a single-acting hydraulic actuator on SSV duty?",
+          "a": "The listing notes PR2F for SSV duty, with PSL not applying to actuators. PR2F is the fire-test level, which the valve-and-actuator assembly must carry for SSV service. Confirm the valve and actuator combination on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Single-acting or double-acting hydraulic actuator for an SSV?",
+          "a": "A single-acting actuator uses a spring to return the valve to its fail position, while a double-acting actuator drives both strokes hydraulically with no fail position. See the [Hydraulic Double-Acting Actuator for API 6A Gate Valves](/p/hydraulic-double-acting-actuator-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the single-acting hydraulic actuator for API 6A gate valves be supplied from Dubai with test records?",
+          "a": "For the single-acting hydraulic actuator for API 6A gate valves: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the single-acting hydraulic actuator for API 6A gate valves in Dubai?",
+          "a": "Yes. We keep the single-acting hydraulic actuator for API 6A gate valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pneumatic-diaphragm-actuator-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pneumatic diaphragm actuator for API 6A gate valves used for?",
+          "a": "Pneumatic diaphragm actuators for API 6A surface safety and shutdown valves: 170 psi operating pressure on air, nitrogen or treated well gas, fail-close or fail-open, light and easy to service."
+        },
+        {
+          "slot": "B",
+          "q": "Do PSL levels apply to a pneumatic diaphragm actuator?",
+          "a": "No. The listing states PSL does not apply to actuators; the PSL of the valve it is fitted to applies. Actuator pressure and function tests, and a combined valve-and-actuator test, are supplied."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the pneumatic diaphragm actuator for API 6A gate valves come in?",
+          "a": "The listing covers Fitted to API 6A gate valves nominal bore at 170 psi operating pressure, with bonnet-mounted on the valve. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a pneumatic diaphragm actuator over a pneumatic piston actuator?",
+          "a": "Choose the diaphragm type for wellhead SSVs, manifolds and pipeline or storage ESD valves where a light, easily serviced actuator is enough. For larger or higher-rated valves see the [pneumatic piston actuator](/p/pneumatic-piston-actuator-api-6a)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the pneumatic diaphragm actuator for API 6A gate valves tested?",
+          "a": "For the pneumatic diaphragm actuator for API 6A gate valves (Fitted to API 6A gate valves, 170 psi operating pressure): actuator pressure and function tests, and a combined valve-and-actuator test when supplied together. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the pneumatic diaphragm actuator for API 6A gate valves offer?",
+          "a": "On the pneumatic diaphragm actuator for API 6A gate valves, body material is offered in API 6A material classes AA, BB, CC, and the temperature range is -29 °C to 121 °C. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the pneumatic diaphragm actuator for API 6A gate valves to API specification, and what documents are supplied?",
+          "a": "The pneumatic diaphragm actuator for API 6A gate valves is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the pneumatic diaphragm actuator for API 6A gate valves operated?",
+          "a": "The pneumatic diaphragm actuator for API 6A gate valves is operated by pneumatic, fail close or fail open. It runs on air, nitrogen or treated well gas, with the spring returning the valve to fail close or fail open. End connections on the listing are bonnet-mounted on the valve."
+        },
+        {
+          "slot": "I",
+          "q": "What supply gas can a pneumatic diaphragm actuator run on?",
+          "a": "It runs on air, nitrogen or treated well gas at 170 psi operating pressure, per the listing. Use clean, dry gas and fit a regulator and filter so the diaphragm and spring are protected."
+        },
+        {
+          "slot": "K",
+          "q": "Pneumatic diaphragm actuator or hydraulic actuator for an SSV?",
+          "a": "A diaphragm actuator is light and easy to service, with a spring-return power assembly, while a piston actuator suits larger, higher-rated valves. See the [Pneumatic Piston Actuator for API 6A Gate Valves](/p/pneumatic-piston-actuator-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the pneumatic diaphragm actuator for API 6A gate valves be supplied from Dubai with test records?",
+          "a": "For the pneumatic diaphragm actuator for API 6A gate valves: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the pneumatic diaphragm actuator for API 6A gate valves in Dubai?",
+          "a": "Yes. We keep the pneumatic diaphragm actuator for API 6A gate valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pneumatic-piston-actuator-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pneumatic piston actuator for API 6A gate valves used for?",
+          "a": "Pneumatic piston actuators for larger, higher-rated API 6A gate valves: 170 psi on air, nitrogen or treated well gas, fail-close or fail-open, quick piston removal for seal service."
+        },
+        {
+          "slot": "B",
+          "q": "Do PSL levels apply to a pneumatic piston actuator?",
+          "a": "No. The listing states PSL does not apply to actuators; the PSL stays with the valve. Actuator pressure and function tests, and a combined valve-and-actuator test, are supplied with the unit."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the pneumatic piston actuator for API 6A gate valves come in?",
+          "a": "The listing covers Fitted to API 6A gate valves nominal bore at 170 psi operating pressure, with bonnet-mounted on the valve. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a pneumatic piston actuator instead of a diaphragm actuator?",
+          "a": "Choose the piston type for larger wellhead and manifold safety valves and higher-rated valves, where more force is needed. For lighter duty see the [pneumatic diaphragm actuator](/p/pneumatic-diaphragm-actuator-api-6a)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the pneumatic piston actuator for API 6A gate valves tested?",
+          "a": "For the pneumatic piston actuator for API 6A gate valves (Fitted to API 6A gate valves, 170 psi operating pressure): actuator pressure and function tests, and a combined valve-and-actuator test when supplied together. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the pneumatic piston actuator for API 6A gate valves offer?",
+          "a": "On the pneumatic piston actuator for API 6A gate valves, body material is offered in API 6A material classes AA, BB, CC, and the temperature range is -29 °C to 121 °C. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the pneumatic piston actuator for API 6A gate valves to API specification, and what documents are supplied?",
+          "a": "The pneumatic piston actuator for API 6A gate valves is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the pneumatic piston actuator for API 6A gate valves operated?",
+          "a": "The pneumatic piston actuator for API 6A gate valves is operated by pneumatic, fail close or fail open. It is a spring-return piston cylinder, fail close or fail open, with quick piston removal for seal service. End connections on the listing are bonnet-mounted on the valve."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the seals on a pneumatic piston actuator?",
+          "a": "The piston can be removed quickly for seal service, so depressurise the supply, isolate the valve and take out the piston to replace the seals. It runs on air, nitrogen or treated well gas at 170 psi operating pressure."
+        },
+        {
+          "slot": "K",
+          "q": "Pneumatic piston actuator or diaphragm actuator for a manifold valve?",
+          "a": "A piston actuator suits larger, higher-rated valves with quick piston removal for seal service, while a diaphragm actuator is lighter for smaller safety valves. See the [Pneumatic Diaphragm Actuator for API 6A Gate Valves](/p/pneumatic-diaphragm-actuator-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the pneumatic piston actuator for API 6A gate valves be supplied from Dubai with test records?",
+          "a": "For the pneumatic piston actuator for API 6A gate valves: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the pneumatic piston actuator for API 6A gate valves in Dubai?",
+          "a": "Yes. We keep the pneumatic piston actuator for API 6A gate valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

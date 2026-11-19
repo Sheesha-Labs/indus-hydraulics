@@ -1,0 +1,76 @@
+{
+  "family": "cementing-dust-collector",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cement-dust-collector-velocity-drop-50-cu-ft-vessel-synthetic-fabric-bag",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 50 cu.ft. velocity-drop cement dust collector used for?",
+          "a": "A cement dust collector captures cement dust at a cement handling site. This low-capex, low-OPEX unit drops the air velocity at the inlet, lets the dust separate by gravity inside a 50 cu.ft. vessel, and collects it in a synthetic fabric bag on the dump line."
+        },
+        {
+          "slot": "D",
+          "q": "What vessel sizes does the 50 cu.ft. velocity-drop cement dust collector come in?",
+          "a": "The vessel volume is adjustable on a project basis, with 25 to 200 cu.ft. envelopes as standard. This listing is the 50 cu.ft. size. State the dust-generating throughput and the venting airflow on the RFQ to choose the vessel."
+        },
+        {
+          "slot": "E",
+          "q": "How does the velocity-drop principle in the 50 cu.ft. velocity-drop cement dust collector work?",
+          "a": "Cement dust is captured by a drop in velocity at the inlet and by gravity separation inside the vessel. The collected material falls into a synthetic fabric bag attached to the dump line with quick-release clamps, so the bag is changed without tools."
+        },
+        {
+          "slot": "F",
+          "q": "What is the collection bag in the 50 cu.ft. velocity-drop cement dust collector made of?",
+          "a": "The collection bag is a synthetic fabric bag on the dump line, held with quick-release clamps. Send the vessel material and coating requirement on the RFQ if the site is offshore or corrosive."
+        },
+        {
+          "slot": "G",
+          "q": "What monitoring options does the 50 cu.ft. velocity-drop cement dust collector offer?",
+          "a": "An optional differential pressure indicator and a remote alarm are available, which show when the bag is loading up. State on the RFQ whether remote alarm signals are needed in the control cabin."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 50 cu.ft. velocity-drop cement dust collector connect to?",
+          "a": "It connects to the vent lines of cement silos, the cutting bottle and the mixing system. See [cement silos](/c/cementing-silos), [cutting bottles](/c/cementing-cutting-bottle) and [cementing units](/c/cementing-units) for the equipment it serves."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 50 cu.ft. velocity-drop cement dust collector differ from a rock catcher?",
+          "a": "A dust collector cleans the air leaving the cement system, while a [rock catcher](/p/cement-rock-catcher-inline-vessel-ss-screen-selectable-mesh) is an inline screen that stops debris and cement lumps in the transfer line. Both protect the system, in different places."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 50 cu.ft. velocity-drop cement dust collector used?",
+          "a": "It is used at cement handling sites where dust must be controlled and capex and operating cost are limited, including cementing unit charge points and silo vents."
+        },
+        {
+          "slot": "I",
+          "q": "How often should the cement dust collector bag be emptied?",
+          "a": "Empty the bag when the differential pressure indicator rises or the remote alarm sounds, and inspect the fabric for wear at each change. The quick-release clamps make the bag change simple."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a cement dust collector quotation?",
+          "a": "Send the airflow or silo size being vented, the vessel size you expect, the alarm and indicator options, and the mounting. See the [guide to cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment) for how the equipment connects."
+        },
+        {
+          "slot": "L",
+          "q": "Can the vessel size of the 50 cu.ft. velocity-drop cement dust collector be changed?",
+          "a": "Yes. The vessel volume is adjustable on a project basis from 25 to 200 cu.ft., so the 50 cu.ft. unit can be resized to the site throughput. Send the vent airflow so the right size is quoted."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 50 cu.ft. velocity-drop cement dust collector?",
+          "a": "Yes. We list the 50 cu.ft. velocity-drop cement dust collector as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your capacity, drive and mounting requirements through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

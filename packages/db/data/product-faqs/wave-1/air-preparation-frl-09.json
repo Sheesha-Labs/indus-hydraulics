@@ -1,0 +1,1603 @@
+{
+  "family": "air-preparation-frl-09",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversion used in these answers: 1 bar = 14.5038 psi, so 100 psi is about 7 bar, 125 psi about 9 bar, 145 psi about 10 bar, 150 psi about 10 bar, 160 psi about 11 bar, 175 psi about 12 bar, 200 psi about 14 bar, 215 psi about 15 bar, 220 psi about 15 bar, 250 psi about 17 bar, 290 psi about 20 bar, 300 psi about 21 bar and 500 psi about 34 bar.",
+      "source": "ISO 80000-4 / NIST SP 811 unit conversion (1 bar = 100 kPa = 14.5038 psi)"
+    },
+    {
+      "fact": "FRL line order and roles: in a compressed-air line the usual order is filter, then regulator, then lubricator, with the lubricator last before the tool or cylinder. The filter protects the regulator and tools from dirt and water, the regulator sets a steady working pressure, and the lubricator adds oil mist only while air is flowing. Size units on port size and on the air flow the downstream tools need, not on line size alone.",
+      "source": "Indus guide /blog/frl-filter-regulator-lubricator-guide; maker FRL catalogues (Parker 0700P, Norgren, SMC)"
+    },
+    {
+      "fact": "Filter grades: a particulate filter removes solids and bulk liquid water down to its micron grade; a coalescing filter removes oil aerosol and very fine particles and needs a particulate pre-filter upstream; an activated-carbon filter removes oil vapour and odour and is placed after a coalescing filter. ISO 8573-1 is the standard that sets compressed-air purity classes for solid particles, water and oil, and a single filter stage does not by itself guarantee a class.",
+      "source": "ISO 8573-1 (compressed air purity classes); Indus guide /blog/compressed-air-quality-iso-8573-1; maker catalogues"
+    },
+    {
+      "fact": "Bowls: polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, and should be cleaned with mild soap and water only; metal bowls with a sight glass are used where those chemicals are present or where a plastic bowl is not permitted. Pressure and temperature ratings of plastic and metal bowl versions differ and are given per part number.",
+      "source": "Maker catalogue bowl cautions (Parker 0700P Prep-Air II, Norgren, SMC)"
+    },
+    {
+      "fact": "Regulators: a relieving regulator vents excess downstream pressure through the bonnet when the setting is turned down, while a non-relieving regulator holds the pressure until the load uses it. A regulator is set by turning the adjusting knob up to the working pressure on the gauge, and the inlet rating and the outlet adjustment range are separate figures. A regulator that creeps or will not hold its setting usually has dirt on the seat or a worn diaphragm.",
+      "source": "Maker catalogues (Norgren, ARO, Parker); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Lubricators: a mist (oil-fog) lubricator sends the drops it meters into the air stream and suits a single tool or cylinder close by; a micro-mist (micro-fog) lubricator returns the larger drops to the bowl and sends only fine particles, which travel further and can feed several points or a longer pipe run. Both feed oil only while air is flowing, and the lubricant should be the oil the maker recommends.",
+      "source": "Maker catalogues (Parker 0700P, Norgren, Dixon); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Harmonized System headings: 8421.39 covers filtering or purifying machinery and apparatus for gases (compressed-air filters); 8421.99 covers parts of such filters (replacement filter elements); 8481.10 covers pressure-reducing valves (air regulators); 8481.80 covers other taps, cocks and valves. Customs authorities classify combination units and lubricators individually, commonly under 8421.39, 8481.10 or 8481.80.",
+      "source": "World Customs Organization, Harmonized System Nomenclature 2022, headings 84.21 and 84.81"
+    },
+    {
+      "fact": "Flow ratings in cfm or scfm are quoted by the maker at a stated inlet pressure and pressure drop, so a unit sized on port size alone can drop pressure at full flow; check the flow curve or the row for the part you order.",
+      "source": "Maker air preparation catalogues (flow curves at stated inlet pressure and pressure drop)"
+    },
+    {
+      "fact": "Size-table data across the listings in this group (from the part-number rows): Air Systems International BB30 Series Filters: flow 30 to 30 cfm; Air Systems International BB75 Series Filters: flow 75 to 75 cfm; Alemite Filters: ports 1/4\", 3/8\" and 1/2\", rated 250 psi; Alemite Lubricators: ports 1/4\", 3/8\", 1/2\" and 3/4\", rated 250 psi; Boston Gear Filter Regulators: ports 3/8\" and 1/2\", rated 250 psi; Boston Gear Miniature Air Regulators: ports 1/8\" and 1/4\", flow 15 to 15 scfm, rated 300 psi; Boston Gear Modular Air Lubricators: rated 250 psi; Boston Gear Modular Style Air Filters: ports 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\", flow 19 to 445 scfm, grades 5 micron and 40 micron; Boston Gear Standard Air Regulators: ports 3/8\", 1/2\" and 3/4\", flow 144 to 480 scfm, rated 300 psi; Groz 220 psi General Purpose Air Regulators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\", flow 17 to 210 cfm, rated 220 psi; Groz Filter/Regulator: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\", flow 14 to 193 cfm; Groz Filter/Regulator/Lubricator: ports 1/4\" and 1/2\", flow 18 to 106 cfm; Groz FRL Compressed Air Lubricators: ports 1/4\", 3/8\", 1/2\", 3/4\" and 1\", flow 48 to 318 cfm, rated 145 and 290 psi; Groz Pipe Adapters: ports 1/4\", 3/8\", 1/2\" and 3/4\"; Hankison Main Line Compressed Air Filters: ports 3/8\", 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 2 1/2\", flow 35 to 584 scfm, rated 150 psi, grades 0.01 micron; Ingersoll Rand Coalescing Filter Elements: grades 0.01 micron; Ingersoll Rand High Efficiency Filters: ports 3/4\", flow 45 to 235 cfm, rated 250 psi; Ingersoll Rand Main Line Compressed Air Filters: ports 3/8\", 3/4\" and 1\", flow 17 to 135 cfm, rated 250 psi, grades 0.01 micron and 1 micron; Ingersoll Rand Main Line Compressed Air Regulators: ports 1/2\", 1\" and 2\", flow 75 to 1000 cfm, rated 300 psi; Ingersoll Rand Zero Loss Condensate Drain Electric: flow 100 to 5400 cfm.",
+      "source": "Indus Hydraulics listing size tables (maker part-number rows), November 2026"
+    }
+  ],
+  "products": [
+    {
+      "slug": "air-systems-international-bb30-series-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Air Systems International BB30 Series Filters used for?",
+          "a": "The Air Systems International BB30 Series Filters are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Air Systems International BB30 Series Filters listing?",
+          "a": "Examples from the listing are BB30-A (Replacement Particulate Filter, 30 cfm), BB30-C (Replacement Coalescing Filter, 30 cfm) and BB30-D (Replacement Charcoal Filter, 30 cfm). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Air Systems International BB30 Series Filters?",
+          "a": "The grade or flow rating is stated in each part-number row. The listed flow is 30 cfm. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Air Systems International BB30 Series Filters to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Air Systems International BB30 Series Filters?",
+          "a": "The working pressure and temperature of the Air Systems International BB30 Series Filters are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Air Systems International BB30 Series Filters use?",
+          "a": "Media for the Air Systems International BB30 Series Filters is described per part number in the size table. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Air Systems International BB30 Series Filters part number?",
+          "a": "Check the grade of the Air Systems International BB30 Series Filters in the part-number row before ordering, because the grade sets what the filter removes and the pressure drop. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Air Systems International BB30 Series Filters fit and what goes with it?",
+          "a": "The Air Systems International BB30 Series Filters fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Air Systems International BB30 Series Filters?",
+          "a": "Replace the Air Systems International BB30 Series Filters when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Air Systems International BB30 Series Filters and the Air Systems International BB75 Series Filters?",
+          "a": "The Air Systems International BB30 Series Filters and the [Air Systems International BB75 Series Filters](/p/air-systems-international-bb75-series-filters) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Air Systems International BB30 Series Filters made and how is it shipped from Dubai?",
+          "a": "The Air Systems International BB30 Series Filters listing gives United States as the country of origin and HS code 8421990180. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Air Systems International BB30 Series Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Air Systems International BB30 Series Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "air-systems-international-bb75-series-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Air Systems International BB75 Series Filters used for?",
+          "a": "The Air Systems International BB75 Series Filters are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Air Systems International BB75 Series Filters listing?",
+          "a": "Examples from the listing are BB75-A (Replacement Particulate Filter, 75 cfm), BB75-C (Replacement Coalescing Filter, 75 cfm) and BB75-D (Replacement Charcoal Filter, 75 cfm). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Air Systems International BB75 Series Filters?",
+          "a": "The grade or flow rating is stated in each part-number row. The listed flow is 75 cfm. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Air Systems International BB75 Series Filters to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Air Systems International BB75 Series Filters?",
+          "a": "The working pressure and temperature of the Air Systems International BB75 Series Filters are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Air Systems International BB75 Series Filters use?",
+          "a": "Media for the Air Systems International BB75 Series Filters is described per part number in the size table. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Air Systems International BB75 Series Filters part number?",
+          "a": "Check the grade of the Air Systems International BB75 Series Filters in the part-number row before ordering, because the grade sets what the filter removes and the pressure drop. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Air Systems International BB75 Series Filters fit and what goes with it?",
+          "a": "The Air Systems International BB75 Series Filters fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Air Systems International BB75 Series Filters?",
+          "a": "Replace the Air Systems International BB75 Series Filters when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Air Systems International BB75 Series Filters and the Air Systems International BB30 Series Filters?",
+          "a": "The Air Systems International BB75 Series Filters and the [Air Systems International BB30 Series Filters](/p/air-systems-international-bb30-series-filters) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Air Systems International BB75 Series Filters?",
+          "a": "The Air Systems International BB75 Series Filters listing gives United States as the country of origin and HS code 8421990180. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Air Systems International BB75 Series Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Air Systems International BB75 Series Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "alemite-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Alemite Filters do in a compressed-air line?",
+          "a": "The Alemite Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 6 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Alemite Filters range and how do they differ?",
+          "a": "Examples from the listing are 5604-3 (1/4\" port, 250 psi), 5606-3 (3/8\" port, 250 psi) and 5608-3 (1/2\" port, 250 psi). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Alemite Filters come in?",
+          "a": "The Alemite Filters are listed in 1/4\", 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Alemite Filters part number for my air line?",
+          "a": "To choose a part number from the Alemite Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Alemite Filters?",
+          "a": "The Alemite Filters rows are rated 250 psi (about 17 bar). Check whether the Alemite Filters part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Alemite Filters?",
+          "a": "The element grade of the Alemite Filters is shown in each part-number row. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Alemite Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Alemite Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Alemite Filters in an air line?",
+          "a": "Fit the Alemite Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Alemite Lubricators](/p/alemite-lubricators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Alemite Filters?",
+          "a": "Automatic-drain versions empty the bowl for you; check the drain still dumps at each service. Change the element of the Alemite Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Alemite Filters and the Alemite Lubricators?",
+          "a": "The Alemite Filters are compressed-air particulate filters, while the [Lubricators](/p/alemite-lubricators) are air-line lubricators. They do different jobs in the same air line and are often fitted together; the Alemite Filters are listed with 1/4\", 3/8\" and 1/2\" ports and ratings of 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Alemite Filters?",
+          "a": "For the Alemite Filters, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8421.39, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Alemite Filters in Dubai?",
+          "a": "Yes. We keep the Alemite Filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "alemite-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Alemite Lubricators do in a compressed-air line?",
+          "a": "The Alemite Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 4 part numbers in 1/4\", 3/8\", 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Alemite Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 5904-3 (1/4\" port, 250 psi), 5908-3 (1/2\" port, 250 psi) and 5912-2 (3/4\" port). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Alemite Lubricators come in?",
+          "a": "The Alemite Lubricators are listed in 1/4\", 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Alemite Lubricators part number?",
+          "a": "For the Alemite Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Alemite Lubricators?",
+          "a": "The Alemite Lubricators rows are rated 250 psi (about 17 bar). Check whether the Alemite Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Alemite Lubricators give, and which oil does it use?",
+          "a": "Check the Alemite Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Alemite Lubricators have?",
+          "a": "Bowl material of the Alemite Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Alemite Lubricators in an air line?",
+          "a": "Fit the Alemite Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Alemite Filters](/p/alemite-filters) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Alemite Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Alemite Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Alemite Lubricators and the Alemite Filters?",
+          "a": "The Alemite Lubricators are air-line lubricators, while the [Filters](/p/alemite-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Alemite Lubricators are listed with 1/4\", 3/8\", 1/2\" and 3/4\" ports and ratings of 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Alemite Lubricators?",
+          "a": "The Alemite Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Alemite Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Alemite Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "boston-gear-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Boston Gear Filter Regulator Lubricators used for?",
+          "a": "The Boston Gear Filter Regulator Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Boston Gear Filter Regulator Lubricators range and how do they differ?",
+          "a": "Examples from the listing are EN65330-MG (Filter Regulator Lubricator). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Boston Gear Filter Regulator Lubricators come in?",
+          "a": "The Boston Gear Filter Regulator Lubricators are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Boston Gear Filter Regulator Lubricators part number?",
+          "a": "For the Boston Gear Filter Regulator Lubricators, pick the port size from the flow the tools draw at the working pressure, then match the options shown in each part-number row. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Boston Gear Filter Regulator Lubricators have?",
+          "a": "The Boston Gear Filter Regulator Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Boston Gear Filter Regulator Lubricators?",
+          "a": "On the Boston Gear Filter Regulator Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Boston Gear Filter Regulator Lubricators?",
+          "a": "The Boston Gear Filter Regulator Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Boston Gear Filter Regulator Lubricators?",
+          "a": "Connect the Boston Gear Filter Regulator Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Boston Gear Miniature Air Regulators](/p/boston-gear-miniature-air-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Boston Gear Filter Regulator Lubricators?",
+          "a": "Drain the Boston Gear Filter Regulator Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Boston Gear Filter Regulator Lubricators and the Boston Gear Filter Regulators?",
+          "a": "The Boston Gear Filter Regulator Lubricators are filter/regulator/lubricator (FRL) units, while the [Filter Regulators](/p/boston-gear-filter-regulators) are filter/regulators. They do different jobs in the same air line and are often fitted together."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Boston Gear Filter Regulator Lubricators made and how is it shipped from Dubai?",
+          "a": "For the Boston Gear Filter Regulator Lubricators, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8421.39, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Boston Gear Filter Regulator Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Boston Gear Filter Regulator Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "boston-gear-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Boston Gear Filter Regulators used for?",
+          "a": "The Boston Gear Filter Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 4 part numbers in 3/8\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Boston Gear Filter Regulators range and how do they differ?",
+          "a": "Examples from the listing are EN44120 (Filter Regulator), EN65340-MG (Filter Regulator, Three-Piece, 1/2 Npt, 250 Psi) and EN74231-MGG (Filter Regulator, Two-Piece, 3/8 Npt, 250 Psi). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Boston Gear Filter Regulators come in?",
+          "a": "The Boston Gear Filter Regulators are listed in 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Boston Gear Filter Regulators part number?",
+          "a": "For the Boston Gear Filter Regulators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Boston Gear Filter Regulators have?",
+          "a": "The Boston Gear Filter Regulators rows are rated 250 psi (about 17 bar). Check whether the Boston Gear Filter Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Boston Gear Filter Regulators?",
+          "a": "On the Boston Gear Filter Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Boston Gear Filter Regulators include a lubricator?",
+          "a": "The Boston Gear Filter Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Boston Gear Filter Regulators?",
+          "a": "Connect the Boston Gear Filter Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Boston Gear Miniature Air Regulators](/p/boston-gear-miniature-air-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Boston Gear Filter Regulators?",
+          "a": "Drain the Boston Gear Filter Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Boston Gear Filter Regulators and the Boston Gear Filter Regulator Lubricators?",
+          "a": "The Boston Gear Filter Regulators are filter/regulators, while the [Filter Regulator Lubricators](/p/boston-gear-filter-regulator-lubricators) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Boston Gear Filter Regulators are listed with 3/8\" and 1/2\" ports and ratings of 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Boston Gear Filter Regulators made and how is it shipped from Dubai?",
+          "a": "For the Boston Gear Filter Regulators, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.10, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Boston Gear Filter Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Boston Gear Filter Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "boston-gear-miniature-air-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Boston Gear Miniature Air Regulators used for?",
+          "a": "The Boston Gear Miniature Air Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 3 part numbers in 1/8\" and 1/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Boston Gear Miniature Air Regulators range and how do they differ?",
+          "a": "Examples from the listing are EN42110-G (1/8\" port, 15 cfm), EN42120 (1/4\" port, 15 cfm) and EN42120-G (300 psi). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Boston Gear Miniature Air Regulators come in?",
+          "a": "The Boston Gear Miniature Air Regulators are listed in 1/8\" and 1/4\" NPT ports. The listed flow is 15 scfm. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Boston Gear Miniature Air Regulators part number?",
+          "a": "For the Boston Gear Miniature Air Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Boston Gear Miniature Air Regulators?",
+          "a": "The Boston Gear Miniature Air Regulators rows are rated 300 psi (about 21 bar). The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Boston Gear Miniature Air Regulators relieving, and what is it made from?",
+          "a": "The Boston Gear Miniature Air Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Boston Gear Miniature Air Regulators come with a pressure gauge?",
+          "a": "The Boston Gear Miniature Air Regulators listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Boston Gear Miniature Air Regulators?",
+          "a": "Fit the Boston Gear Miniature Air Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Boston Gear Modular Air Lubricators](/p/boston-gear-modular-air-lubricators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Boston Gear Miniature Air Regulators?",
+          "a": "To set the Boston Gear Miniature Air Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Boston Gear Miniature Air Regulators and the Boston Gear Standard Air Regulators?",
+          "a": "The Boston Gear Miniature Air Regulators are listed with 1/8\" and 1/4\" ports, flow up to 15 scfm and ratings of 300 psi. The [Standard Air Regulators](/p/boston-gear-standard-air-regulators) are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 480 scfm and ratings of 300 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Boston Gear Miniature Air Regulators made and how is it shipped from Dubai?",
+          "a": "The Boston Gear Miniature Air Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Boston Gear Miniature Air Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Boston Gear Miniature Air Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "boston-gear-modular-air-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Boston Gear Modular Air Lubricators do in a compressed-air line?",
+          "a": "The Boston Gear Modular Air Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 14 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Boston Gear Modular Air Lubricators range and how do they differ?",
+          "a": "Examples from the listing are EN73220-MG (metal bowl), EN73220-FMG (250 psi) and EN73230-FMG (250 psi, metal bowl). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Boston Gear Modular Air Lubricators come in?",
+          "a": "The Boston Gear Modular Air Lubricators are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Boston Gear Modular Air Lubricators part number?",
+          "a": "For the Boston Gear Modular Air Lubricators, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Boston Gear Modular Air Lubricators?",
+          "a": "The Boston Gear Modular Air Lubricators rows are rated 250 psi (about 17 bar). The Boston Gear Modular Air Lubricators listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Boston Gear Modular Air Lubricators give, and which oil does it use?",
+          "a": "Check the Boston Gear Modular Air Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Boston Gear Modular Air Lubricators have?",
+          "a": "Bowl material of the Boston Gear Modular Air Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Boston Gear Modular Air Lubricators in an air line?",
+          "a": "Fit the Boston Gear Modular Air Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Boston Gear Modular Style Air Filters](/p/boston-gear-modular-style-air-filters) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Boston Gear Modular Air Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Boston Gear Modular Air Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Boston Gear Modular Air Lubricators and the Boston Gear Modular Style Air Filters?",
+          "a": "The Boston Gear Modular Air Lubricators are air-line lubricators, while the [Modular Style Air Filters](/p/boston-gear-modular-style-air-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Boston Gear Modular Air Lubricators are listed with ratings of 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Boston Gear Modular Air Lubricators?",
+          "a": "For the Boston Gear Modular Air Lubricators, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.80, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Boston Gear Modular Air Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Boston Gear Modular Air Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "boston-gear-modular-style-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Boston Gear Modular Style Air Filters do in a compressed-air line?",
+          "a": "The Boston Gear Modular Style Air Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 21 part numbers in 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Boston Gear Modular Style Air Filters range and how do they differ?",
+          "a": "Examples from the listing are EN41111 (1/8\" port, 19 cfm, 5 micron, polycarbonate bowl, manual drain), EN61341-MG (150 cfm, metal bowl) and EN71240-MG (80 cfm, metal bowl). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Boston Gear Modular Style Air Filters come in?",
+          "a": "The Boston Gear Modular Style Air Filters are listed in 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" NPT ports. Listed flow runs from 19 to 445 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Boston Gear Modular Style Air Filters part number for my air line?",
+          "a": "To choose a part number from the Boston Gear Modular Style Air Filters, choose by port size, bowl type, drain type and filter grade, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Boston Gear Modular Style Air Filters?",
+          "a": "The Boston Gear Modular Style Air Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Boston Gear Modular Style Air Filters use?",
+          "a": "The Boston Gear Modular Style Air Filters rows show 5 micron and 40 micron element grades. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Boston Gear Modular Style Air Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Boston Gear Modular Style Air Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Boston Gear Modular Style Air Filters in an air line?",
+          "a": "Fit the Boston Gear Modular Style Air Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Boston Gear Modular Air Lubricators](/p/boston-gear-modular-air-lubricators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Boston Gear Modular Style Air Filters?",
+          "a": "Both manual-drain and automatic-drain versions are listed: drain a manual bowl before the liquid reaches the element, and check an automatic drain still dumps. Change the element of the Boston Gear Modular Style Air Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Boston Gear Modular Style Air Filters and the Boston Gear Modular Air Lubricators?",
+          "a": "The Boston Gear Modular Style Air Filters are compressed-air particulate filters, while the [Modular Air Lubricators](/p/boston-gear-modular-air-lubricators) are air-line lubricators. They do different jobs in the same air line and are often fitted together; the Boston Gear Modular Style Air Filters are listed with 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" ports and flow up to 445 scfm."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Boston Gear Modular Style Air Filters?",
+          "a": "The Boston Gear Modular Style Air Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Boston Gear Modular Style Air Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Boston Gear Modular Style Air Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "boston-gear-standard-air-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Boston Gear Standard Air Regulators used for?",
+          "a": "The Boston Gear Standard Air Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 16 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Boston Gear Standard Air Regulators range and how do they differ?",
+          "a": "Examples from the listing are EN72230-G (3/8\" port, 144 cfm), EN42460-G (480 cfm) and EN42110 (300 psi). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Boston Gear Standard Air Regulators come in?",
+          "a": "The Boston Gear Standard Air Regulators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Listed flow runs from 144 to 480 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Boston Gear Standard Air Regulators part number?",
+          "a": "For the Boston Gear Standard Air Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Boston Gear Standard Air Regulators?",
+          "a": "The Boston Gear Standard Air Regulators rows are rated 300 psi (about 21 bar). The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Boston Gear Standard Air Regulators relieving, and what is it made from?",
+          "a": "The Boston Gear Standard Air Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Boston Gear Standard Air Regulators come with a pressure gauge?",
+          "a": "The Boston Gear Standard Air Regulators listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Boston Gear Standard Air Regulators?",
+          "a": "Fit the Boston Gear Standard Air Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Boston Gear Modular Air Lubricators](/p/boston-gear-modular-air-lubricators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Boston Gear Standard Air Regulators?",
+          "a": "To set the Boston Gear Standard Air Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Boston Gear Standard Air Regulators and the Boston Gear Miniature Air Regulators?",
+          "a": "The Boston Gear Standard Air Regulators are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 480 scfm and ratings of 300 psi. The [Miniature Air Regulators](/p/boston-gear-miniature-air-regulators) are listed with 1/8\" and 1/4\" ports, flow up to 15 scfm and ratings of 300 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Boston Gear Standard Air Regulators made and how is it shipped from Dubai?",
+          "a": "For the Boston Gear Standard Air Regulators, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.10, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Boston Gear Standard Air Regulators in Dubai?",
+          "a": "Yes. We keep the Boston Gear Standard Air Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-cdv-series-drain-valves-cable-operated",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Conrader CDV Series Drain Valves, Cable Operated used for?",
+          "a": "The Conrader CDV Series Drain Valves, Cable Operated are manual drain valves that are opened by pulling a cable, so a tank, filter or separator drain can be operated from a distance. This listing has 6 part numbers, all with a 1/4\" MNPT inlet."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Conrader CDV Series Drain Valves, Cable Operated range and how do they differ?",
+          "a": "The listing has CDV25-0, CDV25-12, CDV25-14, CDV25-24, CDV25-36 and CDV25-60, all described as a cable-operated drain valve with a 1/4\" inlet. The rows do not say what the number after the dash stands for, so quote the part number and we confirm the cable details before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What inlet size and thread do the Conrader CDV Series Drain Valves, Cable Operated have?",
+          "a": "Every row lists a 1/4\" inlet with an MNPT thread, which means a male NPT thread that screws into a female 1/4\" drain port. Check the drain port of your tank or filter before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the Conrader CDV Series Drain Valves, Cable Operated part numbers?",
+          "a": "Choose by the number after CDV25, which separates the six part numbers, and by how far the cable must reach from the drain to where you will operate it. Tell us the distance and the port and we confirm the right part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature ratings do the Conrader CDV Series Drain Valves, Cable Operated have?",
+          "a": "The listing gives no pressure or temperature rating for these valves. Quote the part number and we confirm the working limits from the maker data before supply, especially if the valve will sit on a high-pressure receiver."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Conrader CDV Series Drain Valves, Cable Operated made of?",
+          "a": "The listing does not state the body or seal material, so we confirm it from the maker data before supply. Tell us the condensate and the operating conditions so we can check compatibility."
+        },
+        {
+          "slot": "G",
+          "q": "Why choose a cable-operated drain such as the Conrader CDV Series Drain Valves, Cable Operated?",
+          "a": "A cable lets you open the drain from a safe or convenient position when the tank or filter drain is low, hard to reach or inside a guarded area. It is a manual drain, so it still has to be opened on a routine."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Conrader CDV Series Drain Valves, Cable Operated connect to?",
+          "a": "They screw into a 1/4\" female drain port on a receiver, filter or separator. For an automatic alternative see the [Dynaquip Timed Electric Auto Drain Valve](/p/dynaquip-timed-electric-auto-drain-valve), and for filters that need draining see the [Ingersoll Rand Main Line Compressed Air Filters](/p/ingersoll-rand-main-line-compressed-air-filters)."
+        },
+        {
+          "slot": "I",
+          "q": "How often should I drain a tank or filter with the Conrader CDV Series Drain Valves, Cable Operated?",
+          "a": "Open the valve long enough to clear the liquid, then close it, and repeat on a routine suited to how wet the air is. If you have to drain very often, the air needs a dryer or an automatic drain."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Conrader CDV Series Drain Valves, Cable Operated and an automatic drain?",
+          "a": "The CDV valves are opened by hand through a cable, while an automatic drain such as the [Ingersoll Rand Zero Loss Condensate Drain](/p/ingersoll-rand-zero-loss-condensate-drain-electric) opens by itself. Choose the manual cable valve where a simple, low-cost drain is enough."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Conrader CDV Series Drain Valves, Cable Operated made and how are they shipped from Dubai?",
+          "a": "The Conrader CDV Series Drain Valves, Cable Operated listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Conrader CDV Series Drain Valves, Cable Operated in Dubai?",
+          "a": "Yes. We keep the Conrader CDV Series Drain Valves, Cable Operated in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynaquip-timed-electric-auto-drain-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynaquip Timed Electric Auto Drain Valve used for?",
+          "a": "The Dynaquip Timed Electric Auto Drain Valve is an electrically operated drain that opens on a timer to discharge condensate from a compressed-air line, tank or filter without anyone having to open it by hand. The listing has 4 part numbers in brass, with NPT pipe sizes from 1/2\" to 1 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dynaquip Timed Electric Auto Drain Valve range and how do they differ?",
+          "a": "The listing has AD2A 1/2, AD2A 3/4, AD2A 1 and AD2A 1 1/4, and the number after AD2A is the NPT pipe size in inches. The first three rows list a 7 second purge time, so quote the part number and the voltage you need and we confirm the options."
+        },
+        {
+          "slot": "D",
+          "q": "Which pipe sizes does the Dynaquip Timed Electric Auto Drain Valve come in?",
+          "a": "The rows list 1/2\", 3/4\", 1\" and 1 1/4\" NPT pipe sizes with a matching drain size, and the listing says 1/4\" bushings are included. Choose the size from the drain port of the tank or filter it serves."
+        },
+        {
+          "slot": "D",
+          "q": "How do I set the drain cycle on the Dynaquip Timed Electric Auto Drain Valve?",
+          "a": "The listing gives an adjustable drain cycle from 1 minute to 14 days and a purge time of 7 sec. Set the interval from how fast condensate collects and the purge from how long the liquid takes to clear, so the valve drains the liquid without blowing air."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and enclosure ratings does the Dynaquip Timed Electric Auto Drain Valve have?",
+          "a": "The listing gives an ambient temperature of 35°F to 165°F and a NEMA 4 enclosure. It does not state a pressure rating on the rows, so quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dynaquip Timed Electric Auto Drain Valve made of?",
+          "a": "The listing gives a lead-free brass body in a 2-piece body style with a threaded inline mount. Brass suits compressed-air condensate, and we confirm the seal material from the maker data if your condensate is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Dynaquip Timed Electric Auto Drain Valve controlled?",
+          "a": "The listing says it is electrically operated, with the drain cycle and purge time set on the unit. The supply voltage is not stated on the rows, so tell us the voltage you have and we confirm the version before supply."
+        },
+        {
+          "slot": "H",
+          "q": "Where does the Dynaquip Timed Electric Auto Drain Valve fit in an air system?",
+          "a": "It screws into the drain port of an air receiver, filter, separator or low point in the pipework through the NPT connection. Our guide to [compressed air quality and ISO 8573-1](/blog/compressed-air-quality-iso-8573-1) explains where to remove the water."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain the Dynaquip Timed Electric Auto Drain Valve?",
+          "a": "Check that it discharges at each timed cycle and that the condensate flows freely, and clean the strainer or port if the liquid backs up. Depressurise the line before removing the valve."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dynaquip Timed Electric Auto Drain Valve and a zero-loss drain?",
+          "a": "A timed valve opens on a set cycle whether or not liquid has collected, while the [Ingersoll Rand Zero Loss Condensate Drain](/p/ingersoll-rand-zero-loss-condensate-drain-electric) is a solenoid ball valve sized by the flow of the machine it serves. Choose the timed valve where a simple, adjustable cycle is enough."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dynaquip Timed Electric Auto Drain Valve made and how is it shipped from Dubai?",
+          "a": "The Dynaquip Timed Electric Auto Drain Valve listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dynaquip Timed Electric Auto Drain Valve in Dubai?",
+          "a": "Yes. We keep the Dynaquip Timed Electric Auto Drain Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "groz-220-psi-general-purpose-air-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Groz 220 psi General Purpose Air Regulators do in a compressed-air line?",
+          "a": "The Groz 220 psi General Purpose Air Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 7 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Groz 220 psi General Purpose Air Regulators range and how do they differ?",
+          "a": "Examples from the listing are 36JN46 (1\" port, 220 psi, 210 cfm), 36JN41 (1/4\" port, 220 psi, 21 cfm) and 36JN45 (3/4\" port, 220 psi, 175 cfm). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Groz 220 psi General Purpose Air Regulators come in?",
+          "a": "The Groz 220 psi General Purpose Air Regulators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Listed flow runs from 17 to 210 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Groz 220 psi General Purpose Air Regulators part number?",
+          "a": "For the Groz 220 psi General Purpose Air Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Groz 220 psi General Purpose Air Regulators?",
+          "a": "The Groz 220 psi General Purpose Air Regulators rows are rated 220 psi (about 15 bar). The listing gives a temperature of 140°F. The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Groz 220 psi General Purpose Air Regulators relieving, and what is it made from?",
+          "a": "The listing gives a balanced valve design and does not say whether the regulator is relieving; we confirm that per part number. Specification lines: aluminum body. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Groz 220 psi General Purpose Air Regulators come with a pressure gauge?",
+          "a": "The Groz 220 psi General Purpose Air Regulators listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Groz 220 psi General Purpose Air Regulators?",
+          "a": "Fit the Groz 220 psi General Purpose Air Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Groz Filter/Regulator](/p/groz-filter-regulator) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Groz 220 psi General Purpose Air Regulators?",
+          "a": "To set the Groz 220 psi General Purpose Air Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Groz 220 psi General Purpose Air Regulators and the Groz Pipe Adapters?",
+          "a": "The Groz 220 psi General Purpose Air Regulators are air pressure regulators, while the [Pipe Adapters](/p/groz-pipe-adapters) are related parts. They do different jobs in the same air line and are often fitted together; the Groz 220 psi General Purpose Air Regulators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports, flow up to 210 cfm and ratings of 220 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Groz 220 psi General Purpose Air Regulators?",
+          "a": "The Groz 220 psi General Purpose Air Regulators listing gives India as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Groz 220 psi General Purpose Air Regulators in Dubai?",
+          "a": "Yes. We keep the Groz 220 psi General Purpose Air Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "groz-filter-lubricator-bowls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Groz Filter/Lubricator Bowls used for?",
+          "a": "The Groz Filter/Lubricator Bowls are replacement bowls for air filters and lubricators, holding the condensate or the oil. This listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Groz Filter/Lubricator Bowls listing?",
+          "a": "Examples from the listing are 36JN87 (Filter/Lubricator Bowl Miniature), 36JN88 (Filter/Lubricator Bowl Intermediate) and 36JN89 (Filter/Lubricator Bowl Standard). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What bowl types and drain options are in the Groz Filter/Lubricator Bowls listing?",
+          "a": "The rows describe the bowl material and the drain type for each part number. Choose polycarbonate or transparent bowls for visibility and metal bowls with a sight glass where the pressure, temperature or chemical exposure calls for it."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Groz Filter/Lubricator Bowls to my filter or lubricator?",
+          "a": "Match the bowl by the housing series or model on the body and quote that, because a bowl from another range will not seat or seal. A bowl for a filter and a bowl for a lubricator are different parts. [Groz Filter/Regulator](/p/groz-filter-regulator) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Groz Filter/Lubricator Bowls have?",
+          "a": "The rating follows the bowl material and the housing: polycarbonate or transparent bowls are usually rated lower than metal ones, and the figure is set by the maker per series. Quote the housing part number and we confirm the rating from the maker data."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Groz Filter/Lubricator Bowls made of?",
+          "a": "The rows describe the bowl as polycarbonate, transparent or metal depending on the part number. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, which is the main reason to choose a metal bowl."
+        },
+        {
+          "slot": "G",
+          "q": "Which drain is fitted to the Groz Filter/Lubricator Bowls?",
+          "a": "The row text states manual, automatic or petcock drain for each part number, so pick the drain that matches how often the bowl will be emptied. An automatic drain removes the daily chore but needs checking that it still dumps."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Groz Filter/Lubricator Bowls connect to?",
+          "a": "The Groz Filter/Lubricator Bowls thread or bayonet-fit onto the filter or lubricator body named in the listing. Replace the bowl seal at the same time so the new bowl does not weep. [Groz Filter/Regulator](/p/groz-filter-regulator) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Groz Filter/Lubricator Bowls?",
+          "a": "Depressurise the line, remove the old bowl and guard, check the seal and the sight glass, and refit the bowl by hand without tools. Clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose a plastic or a metal bowl from the Groz Filter/Lubricator Bowls?",
+          "a": "Choose plastic when you want to see the liquid level and the air is clean mineral-oil air, and metal when pressure, temperature or chemicals call for it. The part-number rows state which type each one is."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Groz Filter/Lubricator Bowls?",
+          "a": "The Groz Filter/Lubricator Bowls listing gives India as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Groz Filter/Lubricator Bowls available from stock at Indus Hydraulics?",
+          "a": "Yes. The Groz Filter/Lubricator Bowls is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "groz-filter-regulator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Groz Filter/Regulator do in a compressed-air line?",
+          "a": "The Groz Filter/Regulator is a filter/regulator that cleans the air and holds a steady working pressure in one body. This listing has 8 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Listed materials: aluminum body, bronze element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Groz Filter/Regulator range and how do they differ?",
+          "a": "Examples from the listing are 36JN63 (1/8\" port, 14 cfm), 36JN66 (3/8\" port, 77 cfm) and 36JN70 (1\" port, 193 cfm). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Groz Filter/Regulator come in?",
+          "a": "The Groz Filter/Regulator is listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Listed flow runs from 14 to 193 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Groz Filter/Regulator part number?",
+          "a": "For the Groz Filter/Regulator, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Groz Filter/Regulator have?",
+          "a": "The maker pressure line on the listing reads 145 to 220 psi (10 to 15 bar), by size. The listing gives a temperature of 140°F. The rating can differ by part number, so quote the part number and we confirm it from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Groz Filter/Regulator?",
+          "a": "Specification lines: aluminum body, bronze element and nitrile seals. On the Groz Filter/Regulator, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Groz Filter/Regulator include a lubricator?",
+          "a": "The Groz Filter/Regulator combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Groz Filter/Regulator?",
+          "a": "Connect the Groz Filter/Regulator to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Groz FRL Compressed Air Lubricators](/p/groz-frl-compressed-air-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Groz Filter/Regulator?",
+          "a": "Drain the Groz Filter/Regulator bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Groz Filter/Regulator and the Groz Filter/Regulator/Lubricator?",
+          "a": "The Groz Filter/Regulator is a filter/regulator, while the [Filter/Regulator/Lubricator](/p/groz-filter-regulator-lubricator) is a filter/regulator/lubricator (FRL) unit. They do different jobs in the same air line and are often fitted together; the Groz Filter/Regulator is listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports and flow up to 193 cfm."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Groz Filter/Regulator?",
+          "a": "The Groz Filter/Regulator listing gives India as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Groz Filter/Regulator available from stock at Indus Hydraulics?",
+          "a": "Yes. The Groz Filter/Regulator is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "groz-filter-regulator-lubricator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Groz Filter/Regulator/Lubricator do in a compressed-air line?",
+          "a": "The Groz Filter/Regulator/Lubricator is a filter/regulator/lubricator (FRL) unit that cleans, regulates and lubricates the air for a tool or cylinder in one assembly. This listing has 8 part numbers in 1/4\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Groz Filter/Regulator/Lubricator range and how do they differ?",
+          "a": "Examples from the listing are 7DX47 (106 cfm), 7DX38 (1/4\" port, 53 cfm) and 7DX45 (1/4\" port, 46 cfm). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Groz Filter/Regulator/Lubricator come in?",
+          "a": "The Groz Filter/Regulator/Lubricator is listed in 1/4\" and 1/2\" NPT ports. Listed flow runs from 18 to 106 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Groz Filter/Regulator/Lubricator part number?",
+          "a": "For the Groz Filter/Regulator/Lubricator, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Groz Filter/Regulator/Lubricator have?",
+          "a": "The maker pressure line on the listing reads 145 to 290 psi (10 to 20 bar), by size. The listing gives a temperature of 140°F. The rating can differ by part number, so quote the part number and we confirm it from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Groz Filter/Regulator/Lubricator?",
+          "a": "On the Groz Filter/Regulator/Lubricator, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Groz Filter/Regulator/Lubricator?",
+          "a": "The Groz Filter/Regulator/Lubricator puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Groz Filter/Regulator/Lubricator?",
+          "a": "Connect the Groz Filter/Regulator/Lubricator to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Groz FRL Compressed Air Lubricators](/p/groz-frl-compressed-air-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Groz Filter/Regulator/Lubricator?",
+          "a": "Drain the Groz Filter/Regulator/Lubricator bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Groz Filter/Regulator/Lubricator and the Groz Filter/Regulator?",
+          "a": "The Groz Filter/Regulator/Lubricator is a filter/regulator/lubricator (FRL) unit, while the [Filter/Regulator](/p/groz-filter-regulator) is a filter/regulator. They do different jobs in the same air line and are often fitted together; the Groz Filter/Regulator/Lubricator is listed with 1/4\" and 1/2\" ports and flow up to 106 cfm."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Groz Filter/Regulator/Lubricator?",
+          "a": "The Groz Filter/Regulator/Lubricator listing gives India as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Groz Filter/Regulator/Lubricator ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Groz Filter/Regulator/Lubricator in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "groz-frl-compressed-air-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Groz FRL Compressed Air Lubricators used for?",
+          "a": "The Groz FRL Compressed Air Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 7 part numbers in 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Listed materials: aluminum body, bowl: polycarbonate and nitrile rubber seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Groz FRL Compressed Air Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L1391 (1/4\" port, 145 psi, 48 cfm), L1593 (1/2\" port, 145 psi, 200 cfm) and L1795-M (1\" port, 290 psi, 318 cfm). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Groz FRL Compressed Air Lubricators come in?",
+          "a": "The Groz FRL Compressed Air Lubricators are listed in 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Listed flow runs from 48 to 318 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Groz FRL Compressed Air Lubricators part number?",
+          "a": "For the Groz FRL Compressed Air Lubricators, choose by port size and pressure rating, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Groz FRL Compressed Air Lubricators?",
+          "a": "The Groz FRL Compressed Air Lubricators rows are rated 145 psi (about 10 bar) and 290 psi (about 20 bar). The listing gives a temperature of 140°F. The Groz FRL Compressed Air Lubricators listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Groz FRL Compressed Air Lubricators give, and which oil does it use?",
+          "a": "The listing gives a micro mist-type lubricator. Recommended lubricant: ISO VG 32. Maximum pipe run to the point of use: 50 ft. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Groz FRL Compressed Air Lubricators have?",
+          "a": "The Groz FRL Compressed Air Lubricators listing gives a polycarbonate bowl. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Groz FRL Compressed Air Lubricators in an air line?",
+          "a": "Fit the Groz FRL Compressed Air Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Groz Filter/Regulator](/p/groz-filter-regulator) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Groz FRL Compressed Air Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Groz FRL Compressed Air Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Groz FRL Compressed Air Lubricators and the Groz Filter/Regulator?",
+          "a": "The Groz FRL Compressed Air Lubricators are air-line lubricators, while the [Filter/Regulator](/p/groz-filter-regulator) is a filter/regulator. They do different jobs in the same air line and are often fitted together; the Groz FRL Compressed Air Lubricators are listed with 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports, flow up to 318 cfm and ratings of 145 and 290 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Groz FRL Compressed Air Lubricators made and how is it shipped from Dubai?",
+          "a": "The Groz FRL Compressed Air Lubricators listing gives India as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Groz FRL Compressed Air Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Groz FRL Compressed Air Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "groz-pipe-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Groz Pipe Adapters used for?",
+          "a": "The Groz Pipe Adapters are pipe adapters that give a modular air preparation unit threaded pipe ports so it can be piped into the line. This listing has 5 part numbers in 1/4\", 3/8\", 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Groz Pipe Adapters listing?",
+          "a": "Examples from the listing are 36JN95 (1/4\" port), 36JN98 (1/2\" port) and 36JN99 (3/4\" port). Quote the unit model and the pipe size and we confirm the adapter."
+        },
+        {
+          "slot": "D",
+          "q": "Which pipe sizes do the Groz Pipe Adapters come in?",
+          "a": "The rows list 1/4\", 3/8\", 1/2\" and 3/4\" NPT adapters. Match the adapter to the pipe size of your line and to the modular unit series it is listed for."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right adapter from the Groz Pipe Adapters?",
+          "a": "Choose by the series of the filter, regulator or lubricator and by the pipe size, because the adapter bolts to that body. Two adapters per unit are needed for the inlet and the outlet. [Groz 220 psi General Purpose Air Regulators](/p/groz-220-psi-general-purpose-air-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can the Groz Pipe Adapters take?",
+          "a": "The adapter sits in the same air path as the unit, so the working pressure is set by the filter, regulator or lubricator body, not by the adapter. Quote the unit model and we confirm its rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Groz Pipe Adapters made from?",
+          "a": "The listing gives aluminum as the body material. Aluminum adapters suit compressed air and are light, but check compatibility if the air carries aggressive condensate."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do the Groz Pipe Adapters use?",
+          "a": "The ports are tapered pipe threads, as stated in each row. Check the thread form on the pipe you are connecting before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Groz Pipe Adapters connect to?",
+          "a": "Each adapter fits between the modular body and the pipe, for the unit series named in the listing. Our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) has the fittings and silencers for the rest of the circuit. [Groz 220 psi General Purpose Air Regulators](/p/groz-220-psi-general-purpose-air-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Groz Pipe Adapters?",
+          "a": "Fit the adapter to the unit with its seal in place, then thread the pipe into the adapter using thread sealant suitable for compressed air. Support the pipe so its weight does not load the unit body."
+        },
+        {
+          "slot": "K",
+          "q": "Do I need pipe adapters like the Groz Pipe Adapters or can the unit be mounted directly?",
+          "a": "Units that have threaded ports of their own do not need adapters, while modular bodies need them to take pipe. Check the listing of the unit you are buying."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Groz Pipe Adapters made and how is it shipped from Dubai?",
+          "a": "The Groz Pipe Adapters listing gives India as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Groz Pipe Adapters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Groz Pipe Adapters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "hankison-main-line-compressed-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Hankison Main Line Compressed Air Filters do in a compressed-air line?",
+          "a": "The Hankison Main Line Compressed Air Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 9 part numbers in 3/8\", 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 2 1/2\" NPT ports. Listed materials: bowl: aluminum. The rows are described as pre/after filter packages at 0.01 micron."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Hankison Main Line Compressed Air Filters range and how do they differ?",
+          "a": "Examples from the listing are 7456378 (3/8\" port, 150 psi, 35 cfm, 0.01 micron), 7456382 (1\" port, 150 psi, 157 cfm, 0.01 micron) and 7456386 (2 1/2\" port, 150 psi, 584 cfm, 0.01 micron). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Hankison Main Line Compressed Air Filters come in?",
+          "a": "The Hankison Main Line Compressed Air Filters are listed in 3/8\", 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 2 1/2\" NPT ports. Listed flow runs from 35 to 584 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Hankison Main Line Compressed Air Filters part number for my air line?",
+          "a": "To choose a part number from the Hankison Main Line Compressed Air Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Hankison Main Line Compressed Air Filters?",
+          "a": "The Hankison Main Line Compressed Air Filters rows are rated 150 psi (about 10 bar). The maker pressure line on the listing reads 150 psi (10 bar). The listing gives a temperature of 150°F. Check whether the Hankison Main Line Compressed Air Filters part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Hankison Main Line Compressed Air Filters use?",
+          "a": "The Hankison Main Line Compressed Air Filters listing gives 0.01 micron element grades. Specification lines: bowl: aluminum. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Hankison Main Line Compressed Air Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Hankison Main Line Compressed Air Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Hankison Main Line Compressed Air Filters in an air line?",
+          "a": "Fit the Hankison Main Line Compressed Air Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Hankison Main Line Compressed Air Filters?",
+          "a": "Automatic-drain versions empty the bowl for you; check the drain still dumps at each service. Change the element of the Hankison Main Line Compressed Air Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hankison Main Line Compressed Air Filters compare with other compressed-air filters?",
+          "a": "The Hankison Main Line Compressed Air Filters sits beside the other filters on our [FRL shelf](/c/air-preparation-frl). Compare the size tables for port size, pressure rating and flow before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Hankison Main Line Compressed Air Filters?",
+          "a": "For the Hankison Main Line Compressed Air Filters, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8421.39, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Hankison Main Line Compressed Air Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Hankison Main Line Compressed Air Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-coalescing-filter-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Ingersoll Rand Coalescing Filter Elements used for?",
+          "a": "The Ingersoll Rand Coalescing Filter Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 5 part numbers, with 0.01 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Ingersoll Rand Coalescing Filter Elements listing?",
+          "a": "Examples from the listing are F108IHE (0.01 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Ingersoll Rand Coalescing Filter Elements?",
+          "a": "The rows show 0.01 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Ingersoll Rand Coalescing Filter Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Ingersoll Rand High Efficiency Filters](/p/ingersoll-rand-high-efficiency-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Ingersoll Rand Coalescing Filter Elements?",
+          "a": "The working pressure and temperature of the Ingersoll Rand Coalescing Filter Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Ingersoll Rand Coalescing Filter Elements use?",
+          "a": "The listing describes the media as microglass. The rows also name the grades 0.01 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Ingersoll Rand Coalescing Filter Elements part number?",
+          "a": "Check the grade of the Ingersoll Rand Coalescing Filter Elements in the part-number row before ordering, because the grade sets what the filter removes and the pressure drop. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Ingersoll Rand Coalescing Filter Elements fit and what goes with it?",
+          "a": "The Ingersoll Rand Coalescing Filter Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Ingersoll Rand High Efficiency Filters](/p/ingersoll-rand-high-efficiency-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Ingersoll Rand Coalescing Filter Elements?",
+          "a": "Replace the Ingersoll Rand Coalescing Filter Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "Should I replace the element or the whole filter when using the Ingersoll Rand Coalescing Filter Elements?",
+          "a": "For the Ingersoll Rand Coalescing Filter Elements: replace the element for routine service, and replace the housing only if the body, bowl threads or drain are damaged. Elements are the consumable part of the filter."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Ingersoll Rand Coalescing Filter Elements?",
+          "a": "The Ingersoll Rand Coalescing Filter Elements listing gives United Kingdom as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Ingersoll Rand Coalescing Filter Elements ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Ingersoll Rand Coalescing Filter Elements in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-high-efficiency-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Ingersoll Rand High Efficiency Filters used for?",
+          "a": "The Ingersoll Rand High Efficiency Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 3 part numbers in 3/4\" NPT ports. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Ingersoll Rand High Efficiency Filters range and how do they differ?",
+          "a": "Examples from the listing are FA75IH (3/4\" port, 250 psi, 45 cfm), FA110IH (3/4\" port, 250 psi, 65 cfm) and FA400IH (250 psi, 235 cfm). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Ingersoll Rand High Efficiency Filters come in?",
+          "a": "The Ingersoll Rand High Efficiency Filters are listed in 3/4\" NPT ports. Listed flow runs from 45 to 235 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Ingersoll Rand High Efficiency Filters part number for my air line?",
+          "a": "To choose a part number from the Ingersoll Rand High Efficiency Filters, pick the port size from the flow the downstream tools draw at the working pressure, then match the options shown in the size table. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Ingersoll Rand High Efficiency Filters?",
+          "a": "The Ingersoll Rand High Efficiency Filters rows are rated 250 psi (about 17 bar). The maker pressure line on the listing reads 250 psi (17 bar). The listing gives a temperature of 176°F. Check whether the Ingersoll Rand High Efficiency Filters part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Ingersoll Rand High Efficiency Filters use?",
+          "a": "The Ingersoll Rand High Efficiency Filters listing describes the element as a coalescing grade for oil removal. Specification lines: aluminum body. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Ingersoll Rand High Efficiency Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Ingersoll Rand High Efficiency Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Ingersoll Rand High Efficiency Filters in an air line?",
+          "a": "Fit the Ingersoll Rand High Efficiency Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Ingersoll Rand Main Line Compressed Air Regulators](/p/ingersoll-rand-main-line-compressed-air-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Ingersoll Rand High Efficiency Filters?",
+          "a": "Automatic-drain versions empty the bowl for you; check the drain still dumps at each service. Change the element of the Ingersoll Rand High Efficiency Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Ingersoll Rand High Efficiency Filters and the Ingersoll Rand Main Line Compressed Air Filters?",
+          "a": "The Ingersoll Rand High Efficiency Filters are listed with 3/4\" ports, flow up to 235 cfm and ratings of 250 psi. The [Main Line Compressed Air Filters](/p/ingersoll-rand-main-line-compressed-air-filters) are listed with 3/8\", 3/4\" and 1\" ports, flow up to 135 cfm and ratings of 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Ingersoll Rand High Efficiency Filters made and how is it shipped from Dubai?",
+          "a": "The Ingersoll Rand High Efficiency Filters listing gives Slovenia as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Ingersoll Rand High Efficiency Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Ingersoll Rand High Efficiency Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-main-line-compressed-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Ingersoll Rand Main Line Compressed Air Filters do in a compressed-air line?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 5 part numbers in 3/8\", 3/4\" and 1\" NPT ports. Listed materials: bowl: aluminum and stainless steel element."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Ingersoll Rand Main Line Compressed Air Filters range and how do they differ?",
+          "a": "Examples from the listing are FA30IG (3/8\" port, 250 psi, 17 cfm), FA230IH (1\" port, 250 psi, 135 cfm, 0.01 micron) and FA230IG (1\" port, 250 psi, 135 cfm, 1 micron). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Ingersoll Rand Main Line Compressed Air Filters come in?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Filters are listed in 3/8\", 3/4\" and 1\" NPT ports. Listed flow runs from 17 to 135 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Ingersoll Rand Main Line Compressed Air Filters part number for my air line?",
+          "a": "To choose a part number from the Ingersoll Rand Main Line Compressed Air Filters, choose by port size and filter grade, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Ingersoll Rand Main Line Compressed Air Filters?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Filters rows are rated 250 psi (about 17 bar). The listing gives a temperature of 176°F. Check whether the Ingersoll Rand Main Line Compressed Air Filters part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Ingersoll Rand Main Line Compressed Air Filters use?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Filters listing gives 0.01 micron and 1 micron element grades. Specification lines: bowl: aluminum and stainless steel element. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Ingersoll Rand Main Line Compressed Air Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Ingersoll Rand Main Line Compressed Air Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Ingersoll Rand Main Line Compressed Air Filters in an air line?",
+          "a": "Fit the Ingersoll Rand Main Line Compressed Air Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Ingersoll Rand Main Line Compressed Air Regulators](/p/ingersoll-rand-main-line-compressed-air-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Ingersoll Rand Main Line Compressed Air Filters?",
+          "a": "Automatic-drain versions empty the bowl for you; check the drain still dumps at each service. Change the element of the Ingersoll Rand Main Line Compressed Air Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Ingersoll Rand Main Line Compressed Air Filters and the Ingersoll Rand High Efficiency Filters?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Filters are listed with 3/8\", 3/4\" and 1\" ports, flow up to 135 cfm and ratings of 250 psi. The [High Efficiency Filters](/p/ingersoll-rand-high-efficiency-filters) are listed with 3/4\" ports, flow up to 235 cfm and ratings of 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Ingersoll Rand Main Line Compressed Air Filters?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Ingersoll Rand Main Line Compressed Air Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Ingersoll Rand Main Line Compressed Air Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-main-line-compressed-air-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Ingersoll Rand Main Line Compressed Air Regulators used for?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 6 part numbers in 1/2\", 1\" and 2\" NPT ports. Listed materials: aluminum, brass, nitrile, nylon, stainless steel body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Ingersoll Rand Main Line Compressed Air Regulators range and how do they differ?",
+          "a": "Examples from the listing are 49124365 (1/2\" port, 300 psi, 75 cfm), 49124373 (1\" port, 300 psi, 200 cfm) and 49124381 (2\" port, 300 psi, 1000 cfm). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Ingersoll Rand Main Line Compressed Air Regulators come in?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Regulators are listed in 1/2\", 1\" and 2\" NPT ports. Listed flow runs from 75 to 1000 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Ingersoll Rand Main Line Compressed Air Regulators part number?",
+          "a": "For the Ingersoll Rand Main Line Compressed Air Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Ingersoll Rand Main Line Compressed Air Regulators?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Regulators rows are rated 300 psi (about 21 bar). The listing gives a temperature of 176°F. The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Ingersoll Rand Main Line Compressed Air Regulators relieving, and what is it made from?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. Specification lines: aluminum, brass, nitrile, nylon, stainless steel body. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Ingersoll Rand Main Line Compressed Air Regulators come with a pressure gauge?",
+          "a": "The listing says it includes: (2) Gauges, Adjusting Dial, Mounting Bracket. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Ingersoll Rand Main Line Compressed Air Regulators?",
+          "a": "Fit the Ingersoll Rand Main Line Compressed Air Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Ingersoll Rand Coalescing Filter Elements](/p/ingersoll-rand-coalescing-filter-elements) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Ingersoll Rand Main Line Compressed Air Regulators?",
+          "a": "To set the Ingersoll Rand Main Line Compressed Air Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Ingersoll Rand Main Line Compressed Air Regulators and the Ingersoll Rand Main Line Compressed Air Filters?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Regulators are air pressure regulators, while the [Main Line Compressed Air Filters](/p/ingersoll-rand-main-line-compressed-air-filters) are coalescing (oil-removal) filters. They do different jobs in the same air line and are often fitted together; the Ingersoll Rand Main Line Compressed Air Regulators are listed with 1/2\", 1\" and 2\" ports, flow up to 1000 cfm and ratings of 300 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Ingersoll Rand Main Line Compressed Air Regulators made and how is it shipped from Dubai?",
+          "a": "The Ingersoll Rand Main Line Compressed Air Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Ingersoll Rand Main Line Compressed Air Regulators in Dubai?",
+          "a": "Yes. We keep the Ingersoll Rand Main Line Compressed Air Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-zero-loss-condensate-drain-electric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand Zero Loss Condensate Drain Electric used for?",
+          "a": "The Ingersoll Rand Zero Loss Condensate Drain Electric is a zero-loss condensate drain that removes condensate from compressed-air equipment through a solenoid ball valve. The listing has 9 part numbers for 115 V AC and 230 V AC supplies and compressed-air flows from 100 to 5,400 cfm."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Ingersoll Rand Zero Loss Condensate Drain Electric range and how do they differ?",
+          "a": "The listing has ENL 2, ENL 5, ENL 10, ENL 30 and ENL 100 models, each with a 115V or 230V suffix, for example ENL 2 CCN-115V and ENL 5 CCN-230V. The model number rises with the maximum flow rate in the row, and the voltage suffix gives the supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacities does the Ingersoll Rand Zero Loss Condensate Drain Electric cover?",
+          "a": "The rows give a maximum flow rate of 100 cfm on ENL 2, 225 cfm on ENL 5, 500 cfm on ENL 10, 1300 cfm on ENL 30 and 5400 cfm on ENL 100. Size the drain on the compressed-air flow of the machine or dryer it serves."
+        },
+        {
+          "slot": "D",
+          "q": "Which voltage and connection sizes does the Ingersoll Rand Zero Loss Condensate Drain Electric offer?",
+          "a": "The rows list 115V AC and 230V AC versions, with a drain port of 1/4\" on ENL 2 and ENL 5 and 1/2\" on ENL 10, ENL 30 and ENL 100. Outlet sizes are 1/2\" or 3/4\" depending on the model."
+        },
+        {
+          "slot": "E",
+          "q": "What are the temperature and drain rate ratings of the Ingersoll Rand Zero Loss Condensate Drain Electric?",
+          "a": "The listing gives a temperature of 158°F and a drain rate of 0.5 GPM, with single-phase supply. It does not state a pressure rating on the rows, so quote the model and we confirm the working pressure from the maker data."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Ingersoll Rand Zero Loss Condensate Drain Electric made of and how does it work?",
+          "a": "The listing gives an aluminum body and a solenoid ball valve operated electrically, with NPT female inlet and outlet. A zero-loss drain opens only to discharge condensate instead of venting air on a timer."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Ingersoll Rand Zero Loss Condensate Drain Electric help with compressed air quality?",
+          "a": "It removes the liquid water that collects in filters, receivers and dryers, which supports a clean, dry air system. Our guide to [compressed air quality and ISO 8573-1](/blog/compressed-air-quality-iso-8573-1) explains the classes and where to fix the water."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Ingersoll Rand Zero Loss Condensate Drain Electric connect to?",
+          "a": "It connects to the condensate port of a receiver, filter, dryer or aftercooler through the female NPT inlet. For filters that need draining see the [Hankison Main Line Compressed Air Filters](/p/hankison-main-line-compressed-air-filters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain the Ingersoll Rand Zero Loss Condensate Drain Electric?",
+          "a": "Check that the drain discharges at each cycle, keep the strainer clear and test the electrical supply and solenoid. Depressurise the line before servicing the valve."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Ingersoll Rand Zero Loss Condensate Drain Electric and a timed drain such as the Dynaquip Timed Electric Auto Drain Valve?",
+          "a": "The [Dynaquip Timed Electric Auto Drain Valve](/p/dynaquip-timed-electric-auto-drain-valve) opens on a set time cycle of 1 minute to 14 days, while the zero-loss drain is sized by the flow rate of the machine it serves. Choose by the equipment and the supply voltage."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Ingersoll Rand Zero Loss Condensate Drain Electric made and how is it shipped from Dubai?",
+          "a": "The Ingersoll Rand Zero Loss Condensate Drain Electric listing gives Germany as the country of origin and HS code 8481809015. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Ingersoll Rand Zero Loss Condensate Drain Electric in Dubai?",
+          "a": "Yes. We keep the Ingersoll Rand Zero Loss Condensate Drain Electric in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

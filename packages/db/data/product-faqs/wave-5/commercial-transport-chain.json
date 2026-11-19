@@ -1,0 +1,1594 @@
+{
+  "family": "commercial-transport-chain",
+  "extraFacts": [
+    {
+      "fact": "Double Loop Chain — US Standard Sizes listing: 18 listed sizes",
+      "source": "Indus Hydraulics listing for Double Loop Chain — US Standard Sizes"
+    },
+    {
+      "fact": "Grade 70 Chain — AS/NZS 4344 listing: Finish Yellow or white zinc chromate finish; Size range 6 mm to 13 mm; Minimum breaking load 44.1 to 176 kN",
+      "source": "Indus Hydraulics listing for Grade 70 Chain — AS/NZS 4344"
+    },
+    {
+      "fact": "Grade 30 Long Link Chain — Inch Sizes listing: Size range 1/4″ (7 mm) to 3/8″ (10 mm); 3 listed sizes",
+      "source": "Indus Hydraulics listing for Grade 30 Long Link Chain — Inch Sizes"
+    },
+    {
+      "fact": "Grade 30 Proof Coil Chain — Inch Sizes listing: Pattern / standard ASTM Grade 30; Size range 1/8″ to 3/4″; Working load limit 170 to 4,420 kg",
+      "source": "Indus Hydraulics listing for Grade 30 Proof Coil Chain — Inch Sizes"
+    },
+    {
+      "fact": "Grade 30 Long Link Chain — Inch Sizes listing: Pattern / standard NACM / ASTM Grade 30, long link; Size range 1/4″ (7 mm) to 3/8″ (10 mm); Working load limit 1,300 to 2,650 lbs",
+      "source": "Indus Hydraulics listing for Grade 30 Long Link Chain — Inch Sizes"
+    },
+    {
+      "fact": "Grade 30 Proof Coil Chain — Inch Sizes listing: Pattern / standard ASTM Grade 30; Size range 1/8″ to 3/4″; Working load limit 170 to 4,420 kg",
+      "source": "Indus Hydraulics listing for Grade 30 Proof Coil Chain — Inch Sizes"
+    },
+    {
+      "fact": "Grade 30 Long Link Chain — Inch Sizes listing: Pattern / standard NACM / ASTM Grade 30, long link; Size range 1/4″ (7 mm) to 3/8″ (10 mm); Working load limit 1,300 to 2,650 lbs",
+      "source": "Indus Hydraulics listing for Grade 30 Long Link Chain — Inch Sizes"
+    },
+    {
+      "fact": "Grade 43 High Test Chain — NACM 1996 / 2003 listing: Pattern / standard NACM 1996/2003 Grade 43; Size range 7 mm to 22 mm; Working load limit 1,180 to 11,140 kg",
+      "source": "Indus Hydraulics listing for Grade 43 High Test Chain — NACM 1996 / 2003"
+    },
+    {
+      "fact": "Grade 43 High Test Chain — NACM 1990 listing: Pattern / standard NACM 1990 Grade 43; Size range 7 mm to 20 mm; Working load limit 1,180 to 7,350 kg",
+      "source": "Indus Hydraulics listing for Grade 43 High Test Chain — NACM 1990"
+    },
+    {
+      "fact": "Binder Chain with Hooks — Grade 43 and Grade 70 listing: Material Carbon steel / alloy steel; Finish Electro-galvanized, powder coated; Minimum breaking load 7,800 to 26,400 lbs",
+      "source": "Indus Hydraulics listing for Binder Chain with Hooks — Grade 43 and Grade 70"
+    },
+    {
+      "fact": "Clevis Lug Link, Grade 70 — AS/NZS 4344 listing: Finish Gold zinc plated, hot-dip galvanized; Size range 8 mm to 13 mm; Minimum breaking load 7,600 to 18,000 kg",
+      "source": "Indus Hydraulics listing for Clevis Lug Link, Grade 70 — AS/NZS 4344"
+    },
+    {
+      "fact": "Grade 70 Transport Chain — NACM 1990 listing: Pattern / standard NACM 1990 Grade 70; Size range 7 mm to 20 mm; Minimum breaking load 12,100 to 98,900 lbs",
+      "source": "Indus Hydraulics listing for Grade 70 Transport Chain — NACM 1990"
+    },
+    {
+      "fact": "Grade 43 High Test Chain — Inch Sizes listing: Pattern / standard ASTM Grade 43; Size range 1/4″ to 5/8″; Working load limit 1,180 to 6,200 kg",
+      "source": "Indus Hydraulics listing for Grade 43 High Test Chain — Inch Sizes"
+    },
+    {
+      "fact": "Grade 43 High Test Chain — NACM 1990 listing: Pattern / standard NACM 1990 Grade 43; Working load limit 1,180 to 7,350 kg; Minimum breaking load 7,500 to 60,700 lbs",
+      "source": "Indus Hydraulics listing for Grade 43 High Test Chain — NACM 1990"
+    },
+    {
+      "fact": "Grade 30 Long Link Chain — Inch Sizes listing: Pattern / standard NACM / ASTM Grade 30, long link; Material Low-carbon steel; Finish Self-colour, electro-galvanized or hot-dip galvanized",
+      "source": "Indus Hydraulics listing for Grade 30 Long Link Chain — Inch Sizes"
+    },
+    {
+      "fact": "Split Connecting Link — G-335 Pattern listing: Pattern / standard G-335; Working load limit 800 to 15,500 lbs",
+      "source": "Indus Hydraulics listing for Split Connecting Link — G-335 Pattern"
+    },
+    {
+      "fact": "Machine Chain, Twist Link — NACM 1990 listing: Working load limit 93 to 400 kg; Minimum breaking load 820 to 3,520 lbs",
+      "source": "Indus Hydraulics listing for Machine Chain, Twist Link — NACM 1990"
+    },
+    {
+      "fact": "Machine Chain, Straight Link — NACM 1990 listing: Working load limit 98 to 420 kg; Minimum breaking load 860 to 3,700 lbs",
+      "source": "Indus Hydraulics listing for Machine Chain, Straight Link — NACM 1990"
+    },
+    {
+      "fact": "Split Connecting Link — G-335 Pattern listing: Pattern / standard G-335; Working load limit 800 to 15,500 lbs",
+      "source": "Indus Hydraulics listing for Split Connecting Link — G-335 Pattern"
+    },
+    {
+      "fact": "Grade 30 Proof Coil Chain — Inch Sizes listing: Pattern / standard ASTM Grade 30; Size range 1/8″ to 3/4″; Working load limit 170 to 4,420 kg",
+      "source": "Indus Hydraulics listing for Grade 30 Proof Coil Chain — Inch Sizes"
+    },
+    {
+      "fact": "Machine Chain, Twist Link — NACM 1990 listing: Working load limit 93 to 400 kg; 9 listed sizes",
+      "source": "Indus Hydraulics listing for Machine Chain, Twist Link — NACM 1990"
+    },
+    {
+      "fact": "Grade L Short Link Chain — AS 2321, Galvanized listing: Pattern / standard AS 2321; Material Low-strength carbon steel; Finish Electro-galvanized",
+      "source": "Indus Hydraulics listing for Grade L Short Link Chain — AS 2321, Galvanized"
+    },
+    {
+      "fact": "Long Link Chain — UK Pattern listing: Pattern / standard UK pattern welded link chain; Working load limit Load rating on request",
+      "source": "Indus Hydraulics listing for Long Link Chain — UK Pattern"
+    }
+  ],
+  "products": [
+    {
+      "slug": "binder-chain-with-hooks-grade-43-and-grade-70",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Binder Chain with Hooks, Grade 43 and Grade 70 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Carbon steel / alloy steel, electro-galvanized, powder coated. It is listed in 24 sizes, 1/4×14′ to 3/8×25′."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Binder Chain with Hooks, Grade 43 and Grade 70, such as IH-LR-CH-BCH4370-14X14?",
+          "a": "Binder Chain with Hooks, Grade 43 and Grade 70 part numbers begin with IH-LR-CH-BCH4370 and end in a size code: IH-LR-CH-BCH4370-14X14 is the 1/4×14′ size and IH-LR-CH-BCH4370-38X25-G70 is the 3/8×25′ size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Binder Chain with Hooks, Grade 43 and Grade 70 come in?",
+          "a": "Binder Chain with Hooks, Grade 43 and Grade 70 is listed in 24 sizes, 1/4×14′ to 3/8×25′, each with its own Indus part number, for example IH-LR-CH-BCH4370-14X14 and IH-LR-CH-BCH4370-38X25-G70. The table includes 1/4×14′: WLL 2600 lbs and 3/8×25′: WLL 6600 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Binder Chain with Hooks, Grade 43 and Grade 70?",
+          "a": "For Binder Chain with Hooks, Grade 43 and Grade 70, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Binder Chain with Hooks, Grade 43 and Grade 70?",
+          "a": "Binder Chain with Hooks, Grade 43 and Grade 70 is listed with a working load limit 2,600 to 6,600 lbs; minimum breaking load 7,800 to 26,400 lbs. For example, 1/4×14′: WLL 3150 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Binder Chain with Hooks, Grade 43 and Grade 70 made from, and what finish does it have?",
+          "a": "For Binder Chain with Hooks, Grade 43 and Grade 70, the material is Carbon steel / alloy steel; the finish is Electro-galvanized, powder coated."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Binder Chain with Hooks, Grade 43 and Grade 70?",
+          "a": "For Binder Chain with Hooks, Grade 43 and Grade 70, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Binder Chain with Hooks, Grade 43 and Grade 70 for overhead lifting?",
+          "a": "For Binder Chain with Hooks, Grade 43 and Grade 70, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Binder Chain with Hooks, Grade 43 and Grade 70 be inspected and looked after?",
+          "a": "Inspect Binder Chain with Hooks, Grade 43 and Grade 70 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Binder Chain with Hooks, Grade 43 and Grade 70 differ from Double Loop Chain — US Standard Sizes?",
+          "a": "Binder Chain with Hooks, Grade 43 and Grade 70 differs from [Double Loop Chain — US Standard Sizes](/p/double-loop-chain-us-standard-sizes) in its 24 listed sizes against 18."
+        },
+        {
+          "slot": "L",
+          "q": "How are Binder Chain with Hooks, Grade 43 and Grade 70 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Binder Chain with Hooks, Grade 43 and Grade 70 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Binder Chain with Hooks, Grade 43 and Grade 70 in stock in Dubai?",
+          "a": "Yes. We keep Binder Chain with Hooks, Grade 43 and Grade 70 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "clevis-lug-link-grade-70-as-nzs-4344",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Clevis Lug Link, Grade 70, AS/NZS 4344 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Made to AS/NZS 4344. It is listed in 3 sizes, 8 mm to 13 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Clevis Lug Link, Grade 70, AS/NZS 4344, such as IH-LR-CH-CLL70ASN4-8MM?",
+          "a": "Clevis Lug Link, Grade 70, AS/NZS 4344 part numbers begin with IH-LR-CH-CLL70ASN4 and end in a size code: IH-LR-CH-CLL70ASN4-8MM is the 8 mm size and IH-LR-CH-CLL70ASN4-13MM is the 13 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Clevis Lug Link, Grade 70, AS/NZS 4344 come in?",
+          "a": "Clevis Lug Link, Grade 70, AS/NZS 4344 is listed in 3 sizes, 8 mm to 13 mm, each with its own Indus part number, for example IH-LR-CH-CLL70ASN4-8MM and IH-LR-CH-CLL70ASN4-13MM. The table includes 8 mm: minimum breaking load 7600 kg and 13 mm: minimum breaking load 18000 kg."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Clevis Lug Link, Grade 70, AS/NZS 4344?",
+          "a": "For Clevis Lug Link, Grade 70, AS/NZS 4344, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Clevis Lug Link, Grade 70, AS/NZS 4344?",
+          "a": "Clevis Lug Link, Grade 70, AS/NZS 4344 is listed with a minimum breaking load 7,600 to 18,000 kg. For example, 10 mm: minimum breaking load 12000 kg. A breaking load is a test figure, not a working load, so the duty rating for your application is confirmed with us before the order."
+        },
+        {
+          "slot": "F",
+          "q": "What is Clevis Lug Link, Grade 70, AS/NZS 4344 made from, and what finish does it have?",
+          "a": "For Clevis Lug Link, Grade 70, AS/NZS 4344, the material is Alloy steel; the finish is Gold zinc plated, hot-dip galvanized. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Clevis Lug Link, Grade 70, AS/NZS 4344?",
+          "a": "Clevis Lug Link, Grade 70, AS/NZS 4344 is listed to AS/NZS 4344. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Clevis Lug Link, Grade 70, AS/NZS 4344 for overhead lifting?",
+          "a": "For Clevis Lug Link, Grade 70, AS/NZS 4344, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Clevis Lug Link, Grade 70, AS/NZS 4344 be inspected and looked after?",
+          "a": "Inspect Clevis Lug Link, Grade 70, AS/NZS 4344 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Clevis Lug Link, Grade 70, AS/NZS 4344 differ from Grade 70 Chain — AS/NZS 4344?",
+          "a": "Clevis Lug Link, Grade 70, AS/NZS 4344 differs from [Grade 70 Chain — AS/NZS 4344](/p/grade-70-chain-as-nzs-4344) in its finish Gold zinc plated, hot-dip galvanized against Yellow or white zinc chromate finish; size range 8 mm to 13 mm against 6 mm to 13 mm. It also differs in its minimum breaking load 7,600 to 18,000 kg against 44.1 to 176 kN."
+        },
+        {
+          "slot": "L",
+          "q": "How are Clevis Lug Link, Grade 70, AS/NZS 4344 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Clevis Lug Link, Grade 70, AS/NZS 4344 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Clevis Lug Link, Grade 70, AS/NZS 4344 in stock in Dubai?",
+          "a": "Yes. We keep Clevis Lug Link, Grade 70, AS/NZS 4344 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "double-loop-chain-us-standard-sizes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Double Loop Chain, US Standard Sizes used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. It is listed in 18 sizes, No. 5 to No. 6/0."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Double Loop Chain, US Standard Sizes, such as IH-LR-CH-DLC-N5?",
+          "a": "Double Loop Chain, US Standard Sizes part numbers begin with IH-LR-CH-DLC and end in a size code: IH-LR-CH-DLC-N5 is the No. 5 size and IH-LR-CH-DLC-N6-0 is the No. 6/0 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Double Loop Chain, US Standard Sizes come in?",
+          "a": "Double Loop Chain, US Standard Sizes is listed in 18 sizes, No. 5 to No. 6/0, each with its own Indus part number, for example IH-LR-CH-DLC-N5 and IH-LR-CH-DLC-N6-0."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Double Loop Chain, US Standard Sizes?",
+          "a": "For Double Loop Chain, US Standard Sizes, for overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Double Loop Chain, US Standard Sizes supplied in?",
+          "a": "The listing for Double Loop Chain, US Standard Sizes does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Double Loop Chain, US Standard Sizes?",
+          "a": "For Double Loop Chain, US Standard Sizes, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Double Loop Chain, US Standard Sizes for overhead lifting?",
+          "a": "For Double Loop Chain, US Standard Sizes, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Double Loop Chain, US Standard Sizes be inspected and looked after?",
+          "a": "Inspect Double Loop Chain, US Standard Sizes before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "J",
+          "q": "What do I need to send to get a quotation for Double Loop Chain, US Standard Sizes?",
+          "a": "For Double Loop Chain, US Standard Sizes, send the Indus part number from the size table, or the size and the load or duty you need, with the quantity and delivery country. Use [our contact page](/contact) and we reply with a price and lead time. Say on the RFQ if you need documents beyond the standard ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does Double Loop Chain, US Standard Sizes differ from Grade 30 Long Link Chain — Inch Sizes?",
+          "a": "Double Loop Chain, US Standard Sizes differs from [Grade 30 Long Link Chain — Inch Sizes](/p/grade-30-long-link-chain-inch-sizes) in its size range No. 5 to No. 6/0 against 1/4″ (7 mm) to 3/8″ (10 mm); 18 listed sizes against 3."
+        },
+        {
+          "slot": "L",
+          "q": "How are Double Loop Chain, US Standard Sizes shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Double Loop Chain, US Standard Sizes from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Double Loop Chain, US Standard Sizes in stock in Dubai?",
+          "a": "Yes. Double Loop Chain, US Standard Sizes is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-30-long-link-chain-inch-sizes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 30 Long Link Chain, Inch Sizes used for?",
+          "a": "Grade 30 proof coil chain made with a longer link than the regular pattern, welded from low-carbon steel. It is supplied self-colour, electro-galvanized or hot-dip galvanized. It is not for overhead lifting. It is listed in 3 sizes, 1/4″ (7 mm) to 3/8″ (10 mm)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 30 Long Link Chain, Inch Sizes, such as IH-LR-CH-G30LL-7MM?",
+          "a": "Grade 30 Long Link Chain, Inch Sizes part numbers begin with IH-LR-CH-G30LL and end in a size code: IH-LR-CH-G30LL-7MM is the 1/4″ (7 mm) size and IH-LR-CH-G30LL-10MM is the 3/8″ (10 mm) size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 30 Long Link Chain, Inch Sizes come in?",
+          "a": "Grade 30 Long Link Chain, Inch Sizes is listed in 3 sizes, 1/4″ (7 mm) to 3/8″ (10 mm), each with its own Indus part number, for example IH-LR-CH-G30LL-7MM and IH-LR-CH-G30LL-10MM. The table includes 1/4″ (7 mm): WLL 1300 lbs and 3/8″ (10 mm): WLL 2650 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 30 Long Link Chain, Inch Sizes?",
+          "a": "For Grade 30 Long Link Chain, Inch Sizes, a general utility chain for tie-down, towing, barriers and farm use; the longer link lets a hook or shackle pass through the chain. Select on working load limit. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 30 Long Link Chain, Inch Sizes?",
+          "a": "Grade 30 Long Link Chain, Inch Sizes is listed with a working load limit 1,300 to 2,650 lbs. For example, 5/16″ (8 mm): WLL 1900 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Grade 30 Long Link Chain, Inch Sizes made from, and what finish does it have?",
+          "a": "For Grade 30 Long Link Chain, Inch Sizes, the material is Low-carbon steel; the finish is Self-colour, electro-galvanized or hot-dip galvanized."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 30 Long Link Chain, Inch Sizes?",
+          "a": "Grade 30 Long Link Chain, Inch Sizes is listed to NACM / ASTM Grade 30, long link. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 30 Long Link Chain, Inch Sizes for overhead lifting?",
+          "a": "For Grade 30 Long Link Chain, Inch Sizes, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 30 Long Link Chain, Inch Sizes be inspected and looked after?",
+          "a": "Inspect Grade 30 Long Link Chain, Inch Sizes before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 30 Long Link Chain, Inch Sizes differ from Grade 30 Proof Coil Chain — Inch Sizes?",
+          "a": "Grade 30 Long Link Chain, Inch Sizes differs from [Grade 30 Proof Coil Chain — Inch Sizes](/p/grade-30-proof-coil-chain-inch-sizes) in its pattern / standard NACM / ASTM Grade 30, long link against ASTM Grade 30. It also differs in its size range 1/4″ (7 mm) to 3/8″ (10 mm) against 1/8″ to 3/4″; working load limit 1,300 to 2,650 lbs against 170 to 4,420 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 30 Long Link Chain, Inch Sizes shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 30 Long Link Chain, Inch Sizes from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 30 Long Link Chain, Inch Sizes in stock in Dubai?",
+          "a": "Yes. We keep Grade 30 Long Link Chain, Inch Sizes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "grade-30-proof-coil-chain-inch-sizes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 30 Proof Coil Chain, Inch Sizes used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to ASTM Grade 30. It is listed in 9 sizes, 1/8″ to 3/4″."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 30 Proof Coil Chain, Inch Sizes, such as IH-LR-CH-G30A-012?",
+          "a": "Grade 30 Proof Coil Chain, Inch Sizes part numbers begin with IH-LR-CH-G30A and end in a size code: IH-LR-CH-G30A-012 is the 1/8″ size and IH-LR-CH-G30A-075 is the 3/4″ size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 30 Proof Coil Chain, Inch Sizes come in?",
+          "a": "Grade 30 Proof Coil Chain, Inch Sizes is listed in 9 sizes, 1/8″ to 3/4″, each with its own Indus part number, for example IH-LR-CH-G30A-012 and IH-LR-CH-G30A-075. The table includes 1/8″: minimum breaking load 7.1 kN, WLL 170 kg, WLL 375 lbs and 3/4″: minimum breaking load 173.5 kN, WLL 4420 kg, WLL 9750 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 30 Proof Coil Chain, Inch Sizes?",
+          "a": "For Grade 30 Proof Coil Chain, Inch Sizes, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 30 Proof Coil Chain, Inch Sizes?",
+          "a": "Grade 30 Proof Coil Chain, Inch Sizes is listed with a working load limit 170 to 4,420 kg; minimum breaking load 1,600 to 39,000 lbs. For example, 3/8″: minimum breaking load 47.2 kN, WLL 1200 kg, WLL 2650 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Grade 30 Proof Coil Chain, Inch Sizes supplied in?",
+          "a": "The listing for Grade 30 Proof Coil Chain, Inch Sizes does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 30 Proof Coil Chain, Inch Sizes?",
+          "a": "Grade 30 Proof Coil Chain, Inch Sizes is listed to ASTM Grade 30. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 30 Proof Coil Chain, Inch Sizes for overhead lifting?",
+          "a": "For Grade 30 Proof Coil Chain, Inch Sizes, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 30 Proof Coil Chain, Inch Sizes be inspected and looked after?",
+          "a": "Inspect Grade 30 Proof Coil Chain, Inch Sizes before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 30 Proof Coil Chain, Inch Sizes differ from Grade 30 Long Link Chain — Inch Sizes?",
+          "a": "Grade 30 Proof Coil Chain, Inch Sizes differs from [Grade 30 Long Link Chain — Inch Sizes](/p/grade-30-long-link-chain-inch-sizes) in its pattern / standard ASTM Grade 30 against NACM / ASTM Grade 30, long link. It also differs in its size range 1/8″ to 3/4″ against 1/4″ (7 mm) to 3/8″ (10 mm); working load limit 170 to 4,420 kg against 1,300 to 2,650 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 30 Proof Coil Chain, Inch Sizes shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 30 Proof Coil Chain, Inch Sizes from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 30 Proof Coil Chain, Inch Sizes in stock in Dubai?",
+          "a": "Yes. Grade 30 Proof Coil Chain, Inch Sizes is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-30-proof-coil-chain-nacm-1990",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 30 Proof Coil Chain, NACM 1990 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to NACM 1990 Grade 30. It is listed in 10 sizes, 4 mm to 25 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 30 Proof Coil Chain, NACM 1990, such as IH-LR-CH-G30N-4MM?",
+          "a": "Grade 30 Proof Coil Chain, NACM 1990 part numbers begin with IH-LR-CH-G30N and end in a size code: IH-LR-CH-G30N-4MM is the 4 mm size and IH-LR-CH-G30N-25MM is the 25 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 30 Proof Coil Chain, NACM 1990 come in?",
+          "a": "Grade 30 Proof Coil Chain, NACM 1990 is listed in 10 sizes, 4 mm to 25 mm, each with its own Indus part number, for example IH-LR-CH-G30N-4MM and IH-LR-CH-G30N-25MM. The table includes 4 mm: minimum breaking load 7.1 kN, WLL 170 kg, WLL 375 lbs and 25 mm: minimum breaking load 318.2 kN, WLL 8140 kg, WLL 17900 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 30 Proof Coil Chain, NACM 1990?",
+          "a": "For Grade 30 Proof Coil Chain, NACM 1990, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 30 Proof Coil Chain, NACM 1990?",
+          "a": "Grade 30 Proof Coil Chain, NACM 1990 is listed with a working load limit 170 to 8,140 kg; minimum breaking load 1,600 to 71,600 lbs. For example, 13 mm: minimum breaking load 79.6 kN, WLL 2030 kg, WLL 4500 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Grade 30 Proof Coil Chain, NACM 1990 supplied in?",
+          "a": "The listing for Grade 30 Proof Coil Chain, NACM 1990 does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 30 Proof Coil Chain, NACM 1990?",
+          "a": "Grade 30 Proof Coil Chain, NACM 1990 is listed to NACM 1990 Grade 30. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 30 Proof Coil Chain, NACM 1990 for overhead lifting?",
+          "a": "For Grade 30 Proof Coil Chain, NACM 1990, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 30 Proof Coil Chain, NACM 1990 be inspected and looked after?",
+          "a": "Inspect Grade 30 Proof Coil Chain, NACM 1990 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 30 Proof Coil Chain, NACM 1990 differ from Grade 30 Proof Coil Chain — Inch Sizes?",
+          "a": "Grade 30 Proof Coil Chain, NACM 1990 differs from [Grade 30 Proof Coil Chain — Inch Sizes](/p/grade-30-proof-coil-chain-inch-sizes) in its pattern / standard NACM 1990 Grade 30 against ASTM Grade 30; size range 4 mm to 25 mm against 1/8″ to 3/4″. It also differs in its working load limit 170 to 8,140 kg against 170 to 4,420 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 30 Proof Coil Chain, NACM 1990 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 30 Proof Coil Chain, NACM 1990 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 30 Proof Coil Chain, NACM 1990 in stock in Dubai?",
+          "a": "Yes. We keep Grade 30 Proof Coil Chain, NACM 1990 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "grade-43-high-test-chain-inch-sizes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 43 High Test Chain, Inch Sizes used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to ASTM Grade 43. It is listed in 6 sizes, 1/4″ to 5/8″."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 43 High Test Chain, Inch Sizes, such as IH-LR-CH-G43A-025?",
+          "a": "Grade 43 High Test Chain, Inch Sizes part numbers begin with IH-LR-CH-G43A and end in a size code: IH-LR-CH-G43A-025 is the 1/4″ size and IH-LR-CH-G43A-062 is the 5/8″ size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 43 High Test Chain, Inch Sizes come in?",
+          "a": "Grade 43 High Test Chain, Inch Sizes is listed in 6 sizes, 1/4″ to 5/8″, each with its own Indus part number, for example IH-LR-CH-G43A-025 and IH-LR-CH-G43A-062. The table includes 1/4″: minimum breaking load 34.5 kN, WLL 1180 kg, WLL 2600 lbs and 5/8″: minimum breaking load 188 kN, WLL 6200 kg, WLL 14200 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 43 High Test Chain, Inch Sizes?",
+          "a": "For Grade 43 High Test Chain, Inch Sizes, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 43 High Test Chain, Inch Sizes?",
+          "a": "Grade 43 High Test Chain, Inch Sizes is listed with a working load limit 1,180 to 6,200 kg; minimum breaking load 7,750 to 42,400 lbs. For example, 7/16″: minimum breaking load 95.6 kN, WLL 3260 kg, WLL 7200 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Grade 43 High Test Chain, Inch Sizes supplied in?",
+          "a": "The listing for Grade 43 High Test Chain, Inch Sizes does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 43 High Test Chain, Inch Sizes?",
+          "a": "Grade 43 High Test Chain, Inch Sizes is listed to ASTM Grade 43. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 43 High Test Chain, Inch Sizes for overhead lifting?",
+          "a": "For Grade 43 High Test Chain, Inch Sizes, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 43 High Test Chain, Inch Sizes be inspected and looked after?",
+          "a": "Inspect Grade 43 High Test Chain, Inch Sizes before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 43 High Test Chain, Inch Sizes differ from Grade 30 Long Link Chain — Inch Sizes?",
+          "a": "Grade 43 High Test Chain, Inch Sizes differs from [Grade 30 Long Link Chain — Inch Sizes](/p/grade-30-long-link-chain-inch-sizes) in its pattern / standard ASTM Grade 43 against NACM / ASTM Grade 30, long link. It also differs in its size range 1/4″ to 5/8″ against 1/4″ (7 mm) to 3/8″ (10 mm); working load limit 1,180 to 6,200 kg against 1,300 to 2,650 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 43 High Test Chain, Inch Sizes shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 43 High Test Chain, Inch Sizes from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 43 High Test Chain, Inch Sizes in stock in Dubai?",
+          "a": "Yes. Grade 43 High Test Chain, Inch Sizes is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-43-high-test-chain-nacm-1990",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 43 High Test Chain, NACM 1990 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to NACM 1990 Grade 43. It is listed in 6 sizes, 7 mm to 20 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 43 High Test Chain, NACM 1990, such as IH-LR-CH-G43N-7MM?",
+          "a": "Grade 43 High Test Chain, NACM 1990 part numbers begin with IH-LR-CH-G43N and end in a size code: IH-LR-CH-G43N-7MM is the 7 mm size and IH-LR-CH-G43N-20MM is the 20 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 43 High Test Chain, NACM 1990 come in?",
+          "a": "Grade 43 High Test Chain, NACM 1990 is listed in 6 sizes, 7 mm to 20 mm, each with its own Indus part number, for example IH-LR-CH-G43N-7MM and IH-LR-CH-G43N-20MM. The table includes 7 mm: minimum breaking load 33.1 kN, WLL 1180 kg, WLL 2600 lbs and 20 mm: minimum breaking load 270.2 kN, WLL 7350 kg, WLL 16200 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 43 High Test Chain, NACM 1990?",
+          "a": "For Grade 43 High Test Chain, NACM 1990, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 43 High Test Chain, NACM 1990?",
+          "a": "Grade 43 High Test Chain, NACM 1990 is listed with a working load limit 1,180 to 7,350 kg; minimum breaking load 7,500 to 60,700 lbs. For example, 13 mm: minimum breaking load 114.2 kN, WLL 4170 kg, WLL 9200 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Grade 43 High Test Chain, NACM 1990 supplied in?",
+          "a": "The listing for Grade 43 High Test Chain, NACM 1990 does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 43 High Test Chain, NACM 1990?",
+          "a": "Grade 43 High Test Chain, NACM 1990 is listed to NACM 1990 Grade 43. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 43 High Test Chain, NACM 1990 for overhead lifting?",
+          "a": "For Grade 43 High Test Chain, NACM 1990, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 43 High Test Chain, NACM 1990 be inspected and looked after?",
+          "a": "Inspect Grade 43 High Test Chain, NACM 1990 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 43 High Test Chain, NACM 1990 differ from Grade 43 High Test Chain — NACM 1996 / 2003?",
+          "a": "Grade 43 High Test Chain, NACM 1990 differs from [Grade 43 High Test Chain — NACM 1996 / 2003](/p/grade-43-high-test-chain-nacm-1996-2003) in its pattern / standard NACM 1990 Grade 43 against NACM 1996/2003 Grade 43; size range 7 mm to 20 mm against 7 mm to 22 mm. It also differs in its working load limit 1,180 to 7,350 kg against 1,180 to 11,140 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 43 High Test Chain, NACM 1990 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 43 High Test Chain, NACM 1990 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 43 High Test Chain, NACM 1990 in stock in Dubai?",
+          "a": "Yes. Grade 43 High Test Chain, NACM 1990 is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-43-high-test-chain-nacm-1996-2003",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 43 High Test Chain, NACM 1996 / 2003 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to NACM 1996/2003 Grade 43. It is listed in 8 sizes, 7 mm to 22 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 43 High Test Chain, NACM 1996 / 2003, such as IH-LR-CH-G43N96-7MM?",
+          "a": "Grade 43 High Test Chain, NACM 1996 / 2003 part numbers begin with IH-LR-CH-G43N96 and end in a size code: IH-LR-CH-G43N96-7MM is the 7 mm size and IH-LR-CH-G43N96-22MM is the 22 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 43 High Test Chain, NACM 1996 / 2003 come in?",
+          "a": "Grade 43 High Test Chain, NACM 1996 / 2003 is listed in 8 sizes, 7 mm to 22 mm, each with its own Indus part number, for example IH-LR-CH-G43N96-7MM and IH-LR-CH-G43N96-22MM. The table includes 7 mm: minimum breaking load 34.6 kN, WLL 1180 kg, WLL 2800 lbs and 22 mm: minimum breaking load 326.4 kN, WLL 11100 kg, WLL 24500 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 43 High Test Chain, NACM 1996 / 2003?",
+          "a": "For Grade 43 High Test Chain, NACM 1996 / 2003, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 43 High Test Chain, NACM 1996 / 2003?",
+          "a": "Grade 43 High Test Chain, NACM 1996 / 2003 is listed with a working load limit 1,180 to 11,140 kg; minimum breaking load 7,800 to 73,500 lbs. For example, 13 mm: minimum breaking load 122.6 kN, WLL 4170 kg, WLL 9200 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Grade 43 High Test Chain, NACM 1996 / 2003 supplied in?",
+          "a": "The listing for Grade 43 High Test Chain, NACM 1996 / 2003 does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 43 High Test Chain, NACM 1996 / 2003?",
+          "a": "Grade 43 High Test Chain, NACM 1996 / 2003 is listed to NACM 1996/2003 Grade 43. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 43 High Test Chain, NACM 1996 / 2003 for overhead lifting?",
+          "a": "For Grade 43 High Test Chain, NACM 1996 / 2003, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 43 High Test Chain, NACM 1996 / 2003 be inspected and looked after?",
+          "a": "Inspect Grade 43 High Test Chain, NACM 1996 / 2003 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 43 High Test Chain, NACM 1996 / 2003 differ from Grade 43 High Test Chain — NACM 1990?",
+          "a": "Grade 43 High Test Chain, NACM 1996 / 2003 differs from [Grade 43 High Test Chain — NACM 1990](/p/grade-43-high-test-chain-nacm-1990) in its pattern / standard NACM 1996/2003 Grade 43 against NACM 1990 Grade 43; size range 7 mm to 22 mm against 7 mm to 20 mm. It also differs in its working load limit 1,180 to 11,140 kg against 1,180 to 7,350 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 43 High Test Chain, NACM 1996 / 2003 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 43 High Test Chain, NACM 1996 / 2003 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 43 High Test Chain, NACM 1996 / 2003 in stock in Dubai?",
+          "a": "Yes. We keep Grade 43 High Test Chain, NACM 1996 / 2003 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "grade-70-chain-anchor-with-delta-ring-and-grab-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 70 Chain Anchor with Delta Ring and Grab Hook used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Alloy steel, electro-galvanized. It is listed in 7 sizes, 7.938 mm to 9.525 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 70 Chain Anchor with Delta Ring and Grab Hook, such as IH-LR-CH-70CADRGH-7P938MM?",
+          "a": "Grade 70 Chain Anchor with Delta Ring and Grab Hook part numbers begin with IH-LR-CH-70CADRGH and end in a size code: IH-LR-CH-70CADRGH-7P938MM is the 7.938 mm size and IH-LR-CH-70CADRGH-9P525MM-5 is the 9.525 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 70 Chain Anchor with Delta Ring and Grab Hook come in?",
+          "a": "Grade 70 Chain Anchor with Delta Ring and Grab Hook is listed in 7 sizes, 7.938 mm to 9.525 mm, each with its own Indus part number, for example IH-LR-CH-70CADRGH-7P938MM and IH-LR-CH-70CADRGH-9P525MM-5. The table includes 7.938 mm: weight 0.9 kg and 9.525 mm: weight 1.68 kg."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 70 Chain Anchor with Delta Ring and Grab Hook?",
+          "a": "For Grade 70 Chain Anchor with Delta Ring and Grab Hook, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 70 Chain Anchor with Delta Ring and Grab Hook?",
+          "a": "Grade 70 Chain Anchor with Delta Ring and Grab Hook is listed with a minimum breaking load 10,000 to 20,000 lbs. For example, 9.525 mm: weight 1.48 kg. A breaking load is a test figure, not a working load, so the duty rating for your application is confirmed with us before the order."
+        },
+        {
+          "slot": "F",
+          "q": "What is Grade 70 Chain Anchor with Delta Ring and Grab Hook made from, and what finish does it have?",
+          "a": "For Grade 70 Chain Anchor with Delta Ring and Grab Hook, the material is Alloy steel; the finish is Electro-galvanized. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 70 Chain Anchor with Delta Ring and Grab Hook?",
+          "a": "For Grade 70 Chain Anchor with Delta Ring and Grab Hook, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 70 Chain Anchor with Delta Ring and Grab Hook for overhead lifting?",
+          "a": "For Grade 70 Chain Anchor with Delta Ring and Grab Hook, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 70 Chain Anchor with Delta Ring and Grab Hook be inspected and looked after?",
+          "a": "Inspect Grade 70 Chain Anchor with Delta Ring and Grab Hook before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 70 Chain Anchor with Delta Ring and Grab Hook differ from Binder Chain with Hooks — Grade 43 and Grade 70?",
+          "a": "Grade 70 Chain Anchor with Delta Ring and Grab Hook differs from [Binder Chain with Hooks — Grade 43 and Grade 70](/p/binder-chain-with-hooks-grade-43-and-grade-70) in its material Alloy steel against Carbon steel / alloy steel. It also differs in its finish Electro-galvanized against Electro-galvanized, powder coated; minimum breaking load 10,000 to 20,000 lbs against 7,800 to 26,400 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 70 Chain Anchor with Delta Ring and Grab Hook shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 70 Chain Anchor with Delta Ring and Grab Hook from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 70 Chain Anchor with Delta Ring and Grab Hook in stock in Dubai?",
+          "a": "Yes. Grade 70 Chain Anchor with Delta Ring and Grab Hook is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-70-chain-as-nzs-4344",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 70 Chain, AS/NZS 4344 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Made to AS/NZS 4344. It is listed in 6 sizes, 6 mm to 13 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 70 Chain, AS/NZS 4344, such as IH-LR-CH-70CASN434-6MM?",
+          "a": "Grade 70 Chain, AS/NZS 4344 part numbers begin with IH-LR-CH-70CASN434 and end in a size code: IH-LR-CH-70CASN434-6MM is the 6 mm size and IH-LR-CH-70CASN434-13MM is the 13 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 70 Chain, AS/NZS 4344 come in?",
+          "a": "Grade 70 Chain, AS/NZS 4344 is listed in 6 sizes, 6 mm to 13 mm, each with its own Indus part number, for example IH-LR-CH-70CASN434-6MM and IH-LR-CH-70CASN434-13MM. The table includes 6 mm: minimum breaking load 44.1 kN and 13 mm: minimum breaking load 176 kN."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 70 Chain, AS/NZS 4344?",
+          "a": "For Grade 70 Chain, AS/NZS 4344, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 70 Chain, AS/NZS 4344?",
+          "a": "Grade 70 Chain, AS/NZS 4344 is listed with a minimum breaking load 44.1 to 176 kN. For example, 8 mm: minimum breaking load 73.6 kN. A breaking load is a test figure, not a working load, so the duty rating for your application is confirmed with us before the order."
+        },
+        {
+          "slot": "F",
+          "q": "What is Grade 70 Chain, AS/NZS 4344 made from, and what finish does it have?",
+          "a": "For Grade 70 Chain, AS/NZS 4344, the material is Alloy steel; the finish is Yellow or white zinc chromate finish. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 70 Chain, AS/NZS 4344?",
+          "a": "Grade 70 Chain, AS/NZS 4344 is listed to AS/NZS 4344. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 70 Chain, AS/NZS 4344 for overhead lifting?",
+          "a": "For Grade 70 Chain, AS/NZS 4344, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 70 Chain, AS/NZS 4344 be inspected and looked after?",
+          "a": "Inspect Grade 70 Chain, AS/NZS 4344 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 70 Chain, AS/NZS 4344 differ from Clevis Lug Link, Grade 70 — AS/NZS 4344?",
+          "a": "Grade 70 Chain, AS/NZS 4344 differs from [Clevis Lug Link, Grade 70 — AS/NZS 4344](/p/clevis-lug-link-grade-70-as-nzs-4344) in its finish Yellow or white zinc chromate finish against Gold zinc plated, hot-dip galvanized; size range 6 mm to 13 mm against 8 mm to 13 mm. It also differs in its minimum breaking load 44.1 to 176 kN against 7,600 to 18,000 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 70 Chain, AS/NZS 4344 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 70 Chain, AS/NZS 4344 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 70 Chain, AS/NZS 4344 in stock in Dubai?",
+          "a": "Yes. We keep Grade 70 Chain, AS/NZS 4344 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "grade-70-trailer-safety-chain-nzs-5467",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 70 Trailer Safety Chain, NZS 5467 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Made to NZS 5467. It is listed in 2 sizes, 8 mm to 10 mm."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 70 Trailer Safety Chain, NZS 5467 come in?",
+          "a": "Grade 70 Trailer Safety Chain, NZS 5467 is listed in 2 sizes, 8 mm to 10 mm, each with its own Indus part number, for example IH-LR-CH-70TSCN546-8MM and IH-LR-CH-70TSCN546-10MM. The table includes 8 mm: minimum breaking load 5 t and 10 mm: minimum breaking load 7 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 70 Trailer Safety Chain, NZS 5467?",
+          "a": "For Grade 70 Trailer Safety Chain, NZS 5467, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 70 Trailer Safety Chain, NZS 5467?",
+          "a": "Grade 70 Trailer Safety Chain, NZS 5467 is listed with a minimum breaking load 5 to 7 t. For example, 10 mm: minimum breaking load 7 t. Rated with a 2:1 design factor between working load limit and minimum breaking load. A breaking load is a test figure, not a working load, so the duty rating for your application is confirmed with us before the order."
+        },
+        {
+          "slot": "F",
+          "q": "What is Grade 70 Trailer Safety Chain, NZS 5467 made from, and what finish does it have?",
+          "a": "For Grade 70 Trailer Safety Chain, NZS 5467, the material is Alloy steel; the finish is Gold passivated coating. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 70 Trailer Safety Chain, NZS 5467?",
+          "a": "Grade 70 Trailer Safety Chain, NZS 5467 is listed to NZS 5467. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 70 Trailer Safety Chain, NZS 5467 for overhead lifting?",
+          "a": "For Grade 70 Trailer Safety Chain, NZS 5467, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 70 Trailer Safety Chain, NZS 5467 be inspected and looked after?",
+          "a": "Inspect Grade 70 Trailer Safety Chain, NZS 5467 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "J",
+          "q": "What do I need to send to get a quotation for Grade 70 Trailer Safety Chain, NZS 5467?",
+          "a": "For Grade 70 Trailer Safety Chain, NZS 5467, send the Indus part number from the size table, or the size and the load or duty you need, with the quantity and delivery country. Use [our contact page](/contact) and we reply with a price and lead time. Say on the RFQ if you need documents beyond the standard ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 70 Trailer Safety Chain, NZS 5467 differ from Grade 70 Transport Chain — NACM 1990?",
+          "a": "Grade 70 Trailer Safety Chain, NZS 5467 differs from [Grade 70 Transport Chain — NACM 1990](/p/grade-70-transport-chain-nacm-1990) in its pattern / standard NZS 5467 against NACM 1990 Grade 70; size range 8 mm to 10 mm against 7 mm to 20 mm. It also differs in its minimum breaking load 5 to 7 t against 12,100 to 98,900 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 70 Trailer Safety Chain, NZS 5467 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 70 Trailer Safety Chain, NZS 5467 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 70 Trailer Safety Chain, NZS 5467 in stock in Dubai?",
+          "a": "Yes, Grade 70 Trailer Safety Chain, NZS 5467 is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "grade-70-transport-chain-inch-sizes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 70 Transport Chain, Inch Sizes used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to ASTM Grade 70. It is listed in 4 sizes, 1/4″ to 1/2″."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 70 Transport Chain, Inch Sizes, such as IH-LR-CH-G70A-025?",
+          "a": "Grade 70 Transport Chain, Inch Sizes part numbers begin with IH-LR-CH-G70A and end in a size code: IH-LR-CH-G70A-025 is the 1/4″ size and IH-LR-CH-G70A-050 is the 1/2″ size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 70 Transport Chain, Inch Sizes come in?",
+          "a": "Grade 70 Transport Chain, Inch Sizes is listed in 4 sizes, 1/4″ to 1/2″, each with its own Indus part number, for example IH-LR-CH-G70A-025 and IH-LR-CH-G70A-050. The table includes 1/4″: minimum breaking load 56.1 kN, WLL 1430 kg, WLL 3150 lbs and 1/2″: minimum breaking load 201.1 kN, WLL 5130 kg, WLL 11300 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 70 Transport Chain, Inch Sizes?",
+          "a": "For Grade 70 Transport Chain, Inch Sizes, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 70 Transport Chain, Inch Sizes?",
+          "a": "Grade 70 Transport Chain, Inch Sizes is listed with a working load limit 1,430 to 5,130 kg; minimum breaking load 12,600 to 45,200 lbs. For example, 3/8″: minimum breaking load 117.4 kN, WLL 3000 kg, WLL 6600 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Grade 70 Transport Chain, Inch Sizes supplied in?",
+          "a": "The listing for Grade 70 Transport Chain, Inch Sizes does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 70 Transport Chain, Inch Sizes?",
+          "a": "Grade 70 Transport Chain, Inch Sizes is listed to ASTM Grade 70. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 70 Transport Chain, Inch Sizes for overhead lifting?",
+          "a": "For Grade 70 Transport Chain, Inch Sizes, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 70 Transport Chain, Inch Sizes be inspected and looked after?",
+          "a": "Inspect Grade 70 Transport Chain, Inch Sizes before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 70 Transport Chain, Inch Sizes differ from Grade 43 High Test Chain — Inch Sizes?",
+          "a": "Grade 70 Transport Chain, Inch Sizes differs from [Grade 43 High Test Chain — Inch Sizes](/p/grade-43-high-test-chain-inch-sizes) in its pattern / standard ASTM Grade 70 against ASTM Grade 43; size range 1/4″ to 1/2″ against 1/4″ to 5/8″. It also differs in its working load limit 1,430 to 5,130 kg against 1,180 to 6,200 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 70 Transport Chain, Inch Sizes shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 70 Transport Chain, Inch Sizes from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 70 Transport Chain, Inch Sizes in stock in Dubai?",
+          "a": "Yes, Grade 70 Transport Chain, Inch Sizes is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "grade-70-transport-chain-nacm-1990",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade 70 Transport Chain, NACM 1990 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to NACM 1990 Grade 70. It is listed in 7 sizes, 7 mm to 20 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade 70 Transport Chain, NACM 1990, such as IH-LR-CH-G70N-7MM?",
+          "a": "Grade 70 Transport Chain, NACM 1990 part numbers begin with IH-LR-CH-G70N and end in a size code: IH-LR-CH-G70N-7MM is the 7 mm size and IH-LR-CH-G70N-20MM is the 20 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade 70 Transport Chain, NACM 1990 come in?",
+          "a": "Grade 70 Transport Chain, NACM 1990 is listed in 7 sizes, 7 mm to 20 mm, each with its own Indus part number, for example IH-LR-CH-G70N-7MM and IH-LR-CH-G70N-20MM. The table includes 7 mm: minimum breaking load 53.9 kN, WLL 1430 kg, WLL 3150 lbs and 20 mm: minimum breaking load 439.8 kN, WLL 11200 kg, WLL 24700 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 70 Transport Chain, NACM 1990?",
+          "a": "For Grade 70 Transport Chain, NACM 1990, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade 70 Transport Chain, NACM 1990?",
+          "a": "Grade 70 Transport Chain, NACM 1990 is listed with a working load limit 1,430 to 11,200 kg; minimum breaking load 12,100 to 98,900 lbs. For example, 11.9 mm: minimum breaking load 155.4 kN, WLL 3970 kg, WLL 8750 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Grade 70 Transport Chain, NACM 1990 supplied in?",
+          "a": "The listing for Grade 70 Transport Chain, NACM 1990 does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade 70 Transport Chain, NACM 1990?",
+          "a": "Grade 70 Transport Chain, NACM 1990 is listed to NACM 1990 Grade 70. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade 70 Transport Chain, NACM 1990 for overhead lifting?",
+          "a": "For Grade 70 Transport Chain, NACM 1990, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade 70 Transport Chain, NACM 1990 be inspected and looked after?",
+          "a": "Inspect Grade 70 Transport Chain, NACM 1990 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade 70 Transport Chain, NACM 1990 differ from Grade 43 High Test Chain — NACM 1990?",
+          "a": "Grade 70 Transport Chain, NACM 1990 differs from [Grade 43 High Test Chain — NACM 1990](/p/grade-43-high-test-chain-nacm-1990) in its pattern / standard NACM 1990 Grade 70 against NACM 1990 Grade 43; working load limit 1,430 to 11,200 kg against 1,180 to 7,350 kg. It also differs in its minimum breaking load 12,100 to 98,900 lbs against 7,500 to 60,700 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade 70 Transport Chain, NACM 1990 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade 70 Transport Chain, NACM 1990 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade 70 Transport Chain, NACM 1990 in stock in Dubai?",
+          "a": "Yes. We keep Grade 70 Transport Chain, NACM 1990 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "grade-l-short-link-chain-as-2321-galvanized",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Grade L Short Link Chain, AS 2321, Galvanized used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Made to AS 2321. It is listed in 9 sizes, 5 mm to 24 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Grade L Short Link Chain, AS 2321, Galvanized, such as IH-LR-CH-LSLCA2321-5MM?",
+          "a": "Grade L Short Link Chain, AS 2321, Galvanized part numbers begin with IH-LR-CH-LSLCA2321 and end in a size code: IH-LR-CH-LSLCA2321-5MM is the 5 mm size and IH-LR-CH-LSLCA2321-24MM is the 24 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Grade L Short Link Chain, AS 2321, Galvanized come in?",
+          "a": "Grade L Short Link Chain, AS 2321, Galvanized is listed in 9 sizes, 5 mm to 24 mm, each with its own Indus part number, for example IH-LR-CH-LSLCA2321-5MM and IH-LR-CH-LSLCA2321-24MM. The table includes 5 mm: WLL 0.25 t and 24 mm: WLL 5.61 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade L Short Link Chain, AS 2321, Galvanized?",
+          "a": "For Grade L Short Link Chain, AS 2321, Galvanized, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Grade L Short Link Chain, AS 2321, Galvanized?",
+          "a": "Grade L Short Link Chain, AS 2321, Galvanized is listed with a working load limit 0.25 to 5.61 t. For example, 13 mm: WLL 1.7 t. Rated with a 5:1 design factor between working load limit and minimum breaking load. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Grade L Short Link Chain, AS 2321, Galvanized made from, and what finish does it have?",
+          "a": "For Grade L Short Link Chain, AS 2321, Galvanized, the material is Low-strength carbon steel; the finish is Electro-galvanized."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Grade L Short Link Chain, AS 2321, Galvanized?",
+          "a": "Grade L Short Link Chain, AS 2321, Galvanized is listed to AS 2321. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Grade L Short Link Chain, AS 2321, Galvanized for overhead lifting?",
+          "a": "For Grade L Short Link Chain, AS 2321, Galvanized, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Grade L Short Link Chain, AS 2321, Galvanized be inspected and looked after?",
+          "a": "Inspect Grade L Short Link Chain, AS 2321, Galvanized before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Grade L Short Link Chain, AS 2321, Galvanized differ from Grade 30 Long Link Chain — Inch Sizes?",
+          "a": "Grade L Short Link Chain, AS 2321, Galvanized differs from [Grade 30 Long Link Chain — Inch Sizes](/p/grade-30-long-link-chain-inch-sizes) in its pattern / standard AS 2321 against NACM / ASTM Grade 30, long link. It also differs in its material Low-strength carbon steel against Low-carbon steel; finish Electro-galvanized against Self-colour, electro-galvanized or hot-dip galvanized."
+        },
+        {
+          "slot": "L",
+          "q": "How are Grade L Short Link Chain, AS 2321, Galvanized shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Grade L Short Link Chain, AS 2321, Galvanized from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Grade L Short Link Chain, AS 2321, Galvanized in stock in Dubai?",
+          "a": "Yes, Grade L Short Link Chain, AS 2321, Galvanized is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "long-link-chain-uk-pattern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Long Link Chain, UK Pattern used for?",
+          "a": "Welded steel long link chain to the UK pattern, in thirteen wire sizes from 1/8″ to 1″. It is supplied self-colour, black or hot-dip galvanized. It is not for overhead lifting. It is listed in 13 sizes, 1/8″ (3.2 mm) to 1″ (25.4 mm)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Long Link Chain, UK Pattern, such as IH-LR-CH-UKLL-3P2MM?",
+          "a": "Long Link Chain, UK Pattern part numbers begin with IH-LR-CH-UKLL and end in a size code: IH-LR-CH-UKLL-3P2MM is the 1/8″ (3.2 mm) size and IH-LR-CH-UKLL-25P4MM is the 1″ (25.4 mm) size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Long Link Chain, UK Pattern come in?",
+          "a": "Long Link Chain, UK Pattern is listed in 13 sizes, 1/8″ (3.2 mm) to 1″ (25.4 mm), each with its own Indus part number, for example IH-LR-CH-UKLL-3P2MM and IH-LR-CH-UKLL-25P4MM. The table includes 1/8″ (3.2 mm): minimum breaking load 400 kg, proof load 200 kg and 1″ (25.4 mm): minimum breaking load 24300 kg, proof load 12150 kg."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Long Link Chain, UK Pattern?",
+          "a": "For Long Link Chain, UK Pattern, a general-purpose chain for barriers, fencing, securing and guarding. The manufacturer publishes a test load and a breaking load for each size and no working load limit, so it is not a lifting chain; ask us for a load rating if the duty needs one. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Long Link Chain, UK Pattern?",
+          "a": "Long Link Chain, UK Pattern is listed with a working load limit Load rating on request; minimum breaking load 400 to 24,300 kg. For example, 3/8″ (9.5 mm): minimum breaking load 3400 kg, proof load 1700 kg. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Long Link Chain, UK Pattern made from, and what finish does it have?",
+          "a": "For Long Link Chain, UK Pattern, the material is Carbon steel; stainless steel 316 on request; the finish is Self-colour, black or hot-dip galvanized."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Long Link Chain, UK Pattern?",
+          "a": "Long Link Chain, UK Pattern is listed to UK pattern welded link chain. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Long Link Chain, UK Pattern for overhead lifting?",
+          "a": "For Long Link Chain, UK Pattern, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Long Link Chain, UK Pattern be inspected and looked after?",
+          "a": "Inspect Long Link Chain, UK Pattern before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Long Link Chain, UK Pattern differ from Split Connecting Link — G-335 Pattern?",
+          "a": "Long Link Chain, UK Pattern differs from [Split Connecting Link — G-335 Pattern](/p/split-connecting-link-g-335-pattern) in its pattern / standard UK pattern welded link chain against G-335; working load limit Load rating on request against 800 to 15,500 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Long Link Chain, UK Pattern shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Long Link Chain, UK Pattern from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Long Link Chain, UK Pattern in stock in Dubai?",
+          "a": "Yes, Long Link Chain, UK Pattern is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "machine-chain-straight-link-nacm-1990",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Machine Chain, Straight Link, NACM 1990 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to NACM 1990 machine chain. It is listed in 9 sizes, 3 mm to 6.4 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Machine Chain, Straight Link, NACM 1990, such as IH-LR-CH-MSL-3MM?",
+          "a": "Machine Chain, Straight Link, NACM 1990 part numbers begin with IH-LR-CH-MSL and end in a size code: IH-LR-CH-MSL-3MM is the 3 mm size and IH-LR-CH-MSL-6.4MM is the 6.4 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Machine Chain, Straight Link, NACM 1990 come in?",
+          "a": "Machine Chain, Straight Link, NACM 1990 is listed in 9 sizes, 3 mm to 6.4 mm, each with its own Indus part number, for example IH-LR-CH-MSL-3MM and IH-LR-CH-MSL-6.4MM. The table includes 3 mm: minimum breaking load 3.82 kN, WLL 98 kg, WLL 215 lbs and 6.4 mm: minimum breaking load 16.44 kN, WLL 420 kg, WLL 925 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Machine Chain, Straight Link, NACM 1990?",
+          "a": "For Machine Chain, Straight Link, NACM 1990, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Machine Chain, Straight Link, NACM 1990?",
+          "a": "Machine Chain, Straight Link, NACM 1990 is listed with a working load limit 98 to 420 kg; minimum breaking load 860 to 3,700 lbs. For example, 4.5 mm: minimum breaking load 8.27 kN, WLL 211 kg, WLL 465 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Machine Chain, Straight Link, NACM 1990 supplied in?",
+          "a": "The listing for Machine Chain, Straight Link, NACM 1990 does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Machine Chain, Straight Link, NACM 1990?",
+          "a": "Machine Chain, Straight Link, NACM 1990 is listed to NACM 1990 machine chain. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Machine Chain, Straight Link, NACM 1990 for overhead lifting?",
+          "a": "For Machine Chain, Straight Link, NACM 1990, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Machine Chain, Straight Link, NACM 1990 be inspected and looked after?",
+          "a": "Inspect Machine Chain, Straight Link, NACM 1990 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Machine Chain, Straight Link, NACM 1990 differ from Machine Chain, Twist Link — NACM 1990?",
+          "a": "Machine Chain, Straight Link, NACM 1990 differs from [Machine Chain, Twist Link — NACM 1990](/p/machine-chain-twist-link-nacm-1990) in its working load limit 98 to 420 kg against 93 to 400 kg; minimum breaking load 860 to 3,700 lbs against 820 to 3,520 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Machine Chain, Straight Link, NACM 1990 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Machine Chain, Straight Link, NACM 1990 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Machine Chain, Straight Link, NACM 1990 in stock in Dubai?",
+          "a": "Yes. We keep Machine Chain, Straight Link, NACM 1990 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "machine-chain-twist-link-nacm-1990",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Machine Chain, Twist Link, NACM 1990 used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Sized and rated to NACM 1990 machine chain. It is listed in 9 sizes, 3 mm to 6.4 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Machine Chain, Twist Link, NACM 1990, such as IH-LR-CH-MTL-3MM?",
+          "a": "Machine Chain, Twist Link, NACM 1990 part numbers begin with IH-LR-CH-MTL and end in a size code: IH-LR-CH-MTL-3MM is the 3 mm size and IH-LR-CH-MTL-6.4MM is the 6.4 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Machine Chain, Twist Link, NACM 1990 come in?",
+          "a": "Machine Chain, Twist Link, NACM 1990 is listed in 9 sizes, 3 mm to 6.4 mm, each with its own Indus part number, for example IH-LR-CH-MTL-3MM and IH-LR-CH-MTL-6.4MM. The table includes 3 mm: minimum breaking load 3.64 kN, WLL 93 kg, WLL 205 lbs and 6.4 mm: minimum breaking load 15.64 kN, WLL 400 kg, WLL 880 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Machine Chain, Twist Link, NACM 1990?",
+          "a": "For Machine Chain, Twist Link, NACM 1990, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Machine Chain, Twist Link, NACM 1990?",
+          "a": "Machine Chain, Twist Link, NACM 1990 is listed with a working load limit 93 to 400 kg; minimum breaking load 820 to 3,520 lbs. For example, 4.5 mm: minimum breaking load 7.82 kN, WLL 200 kg, WLL 440 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Machine Chain, Twist Link, NACM 1990 supplied in?",
+          "a": "The listing for Machine Chain, Twist Link, NACM 1990 does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Machine Chain, Twist Link, NACM 1990?",
+          "a": "Machine Chain, Twist Link, NACM 1990 is listed to NACM 1990 machine chain. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Machine Chain, Twist Link, NACM 1990 for overhead lifting?",
+          "a": "For Machine Chain, Twist Link, NACM 1990, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Machine Chain, Twist Link, NACM 1990 be inspected and looked after?",
+          "a": "Inspect Machine Chain, Twist Link, NACM 1990 before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Machine Chain, Twist Link, NACM 1990 differ from Machine Chain, Straight Link — NACM 1990?",
+          "a": "Machine Chain, Twist Link, NACM 1990 differs from [Machine Chain, Straight Link — NACM 1990](/p/machine-chain-straight-link-nacm-1990) in its working load limit 93 to 400 kg against 98 to 420 kg; minimum breaking load 820 to 3,520 lbs against 860 to 3,700 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Machine Chain, Twist Link, NACM 1990 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Machine Chain, Twist Link, NACM 1990 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Machine Chain, Twist Link, NACM 1990 in stock in Dubai?",
+          "a": "Yes, Machine Chain, Twist Link, NACM 1990 is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "medium-link-chain-uk-pattern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Medium Link Chain, UK Pattern used for?",
+          "a": "Welded steel medium link chain to the UK pattern, in thirteen wire sizes from 1/8″ to 1″. It is supplied self-colour, black or hot-dip galvanized. It is not for overhead lifting. It is listed in 13 sizes, 1/8″ (3.2 mm) to 1″ (25.4 mm)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Medium Link Chain, UK Pattern, such as IH-LR-CH-UKML-3P2MM?",
+          "a": "Medium Link Chain, UK Pattern part numbers begin with IH-LR-CH-UKML and end in a size code: IH-LR-CH-UKML-3P2MM is the 1/8″ (3.2 mm) size and IH-LR-CH-UKML-25P4MM is the 1″ (25.4 mm) size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Medium Link Chain, UK Pattern come in?",
+          "a": "Medium Link Chain, UK Pattern is listed in 13 sizes, 1/8″ (3.2 mm) to 1″ (25.4 mm), each with its own Indus part number, for example IH-LR-CH-UKML-3P2MM and IH-LR-CH-UKML-25P4MM. The table includes 1/8″ (3.2 mm): minimum breaking load 400 kg, proof load 200 kg and 1″ (25.4 mm): minimum breaking load 24300 kg, proof load 12150 kg."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Medium Link Chain, UK Pattern?",
+          "a": "For Medium Link Chain, UK Pattern, a general-purpose chain for barriers, fencing, securing and guarding. The manufacturer publishes a test load and a breaking load for each size and no working load limit, so it is not a lifting chain; ask us for a load rating if the duty needs one. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Medium Link Chain, UK Pattern?",
+          "a": "Medium Link Chain, UK Pattern is listed with a working load limit Load rating on request; minimum breaking load 400 to 24,300 kg. For example, 3/8″ (9.5 mm): minimum breaking load 3400 kg, proof load 1700 kg. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Medium Link Chain, UK Pattern made from, and what finish does it have?",
+          "a": "For Medium Link Chain, UK Pattern, the material is Carbon steel; stainless steel 316 on request; the finish is Self-colour, black or hot-dip galvanized."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Medium Link Chain, UK Pattern?",
+          "a": "Medium Link Chain, UK Pattern is listed to UK pattern welded link chain. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Medium Link Chain, UK Pattern for overhead lifting?",
+          "a": "For Medium Link Chain, UK Pattern, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Medium Link Chain, UK Pattern be inspected and looked after?",
+          "a": "Inspect Medium Link Chain, UK Pattern before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Medium Link Chain, UK Pattern differ from Split Connecting Link — G-335 Pattern?",
+          "a": "Medium Link Chain, UK Pattern differs from [Split Connecting Link — G-335 Pattern](/p/split-connecting-link-g-335-pattern) in its pattern / standard UK pattern welded link chain against G-335; working load limit Load rating on request against 800 to 15,500 lbs."
+        },
+        {
+          "slot": "L",
+          "q": "How are Medium Link Chain, UK Pattern shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Medium Link Chain, UK Pattern from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Medium Link Chain, UK Pattern in stock in Dubai?",
+          "a": "Yes. Medium Link Chain, UK Pattern is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "proof-coil-chain-australian-standard",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Proof Coil Chain, Australian Standard used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. Built to the Australian standard. It is listed in 27 sizes, 3 mm to 24 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Proof Coil Chain, Australian Standard, such as IH-LR-CH-PCCAS-5MM-SL?",
+          "a": "Proof Coil Chain, Australian Standard part numbers begin with IH-LR-CH-PCCAS and end in a size code: IH-LR-CH-PCCAS-5MM-SL is the 5 mm size and IH-LR-CH-PCCAS-10MM-LL is the 10 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Proof Coil Chain, Australian Standard come in?",
+          "a": "Proof Coil Chain, Australian Standard is listed in 27 sizes, 3 mm to 24 mm, each with its own Indus part number, for example IH-LR-CH-PCCAS-5MM-SL and IH-LR-CH-PCCAS-10MM-LL. The table includes 5 mm: WLL 0.24 t and 10 mm: WLL 0.83 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Proof Coil Chain, Australian Standard?",
+          "a": "For Proof Coil Chain, Australian Standard, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Proof Coil Chain, Australian Standard?",
+          "a": "Proof Coil Chain, Australian Standard is listed with a working load limit 0.05 to 5.34 t. For example, 6 mm: WLL 0.32 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Proof Coil Chain, Australian Standard made from, and what finish does it have?",
+          "a": "For Proof Coil Chain, Australian Standard, the material is Mild steel; the finish is Electro-galvanized / hot-dip galvanized."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Proof Coil Chain, Australian Standard?",
+          "a": "Proof Coil Chain, Australian Standard is listed to Australian standard. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Proof Coil Chain, Australian Standard for overhead lifting?",
+          "a": "For Proof Coil Chain, Australian Standard, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Proof Coil Chain, Australian Standard be inspected and looked after?",
+          "a": "Inspect Proof Coil Chain, Australian Standard before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Proof Coil Chain, Australian Standard differ from Grade 30 Proof Coil Chain — Inch Sizes?",
+          "a": "Proof Coil Chain, Australian Standard differs from [Grade 30 Proof Coil Chain — Inch Sizes](/p/grade-30-proof-coil-chain-inch-sizes) in its pattern / standard Australian standard against ASTM Grade 30; size range 3 mm to 24 mm against 1/8″ to 3/4″. It also differs in its working load limit 0.05 to 5.34 t against 170 to 4,420 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Proof Coil Chain, Australian Standard shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Proof Coil Chain, Australian Standard from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Proof Coil Chain, Australian Standard in stock in Dubai?",
+          "a": "Yes. Proof Coil Chain, Australian Standard is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sash-chain-weldless",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Sash Chain, Weldless used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. It is listed in 7 sizes, No. 8 to No. 50."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Sash Chain, Weldless, such as IH-LR-CH-SCW-NOP8?",
+          "a": "Sash Chain, Weldless part numbers begin with IH-LR-CH-SCW and end in a size code: IH-LR-CH-SCW-NOP8 is the No. 8 size and IH-LR-CH-SCW-NOP50 is the No. 50 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Sash Chain, Weldless come in?",
+          "a": "Sash Chain, Weldless is listed in 7 sizes, No. 8 to No. 50, each with its own Indus part number, for example IH-LR-CH-SCW-NOP8 and IH-LR-CH-SCW-NOP50. The table includes No. 8: WLL 75 lbs and No. 50: WLL 225 lbs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Sash Chain, Weldless?",
+          "a": "For Sash Chain, Weldless, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Sash Chain, Weldless?",
+          "a": "Sash Chain, Weldless is listed with a working load limit 75 to 225 lbs. For example, No. 35: WLL 105 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Sash Chain, Weldless supplied in?",
+          "a": "The listing for Sash Chain, Weldless does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Sash Chain, Weldless?",
+          "a": "For Sash Chain, Weldless, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Sash Chain, Weldless for overhead lifting?",
+          "a": "For Sash Chain, Weldless, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Sash Chain, Weldless be inspected and looked after?",
+          "a": "Inspect Sash Chain, Weldless before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Sash Chain, Weldless differ from Machine Chain, Twist Link — NACM 1990?",
+          "a": "Sash Chain, Weldless differs from [Machine Chain, Twist Link — NACM 1990](/p/machine-chain-twist-link-nacm-1990) in its working load limit 75 to 225 lbs against 93 to 400 kg; 7 listed sizes against 9."
+        },
+        {
+          "slot": "L",
+          "q": "How are Sash Chain, Weldless shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Sash Chain, Weldless from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Sash Chain, Weldless in stock in Dubai?",
+          "a": "Yes. Sash Chain, Weldless is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "short-link-chain-uk-pattern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Short Link Chain, UK Pattern used for?",
+          "a": "Welded steel short link chain to the UK pattern, in thirteen wire sizes from 1/8″ to 1″. It is supplied self-colour, black or hot-dip galvanized. It is not for overhead lifting. It is listed in 13 sizes, 1/8″ (3.2 mm) to 1″ (25.4 mm)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Short Link Chain, UK Pattern, such as IH-LR-CH-UKSL-3P2MM?",
+          "a": "Short Link Chain, UK Pattern part numbers begin with IH-LR-CH-UKSL and end in a size code: IH-LR-CH-UKSL-3P2MM is the 1/8″ (3.2 mm) size and IH-LR-CH-UKSL-25P4MM is the 1″ (25.4 mm) size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Short Link Chain, UK Pattern come in?",
+          "a": "Short Link Chain, UK Pattern is listed in 13 sizes, 1/8″ (3.2 mm) to 1″ (25.4 mm), each with its own Indus part number, for example IH-LR-CH-UKSL-3P2MM and IH-LR-CH-UKSL-25P4MM. The table includes 1/8″ (3.2 mm): minimum breaking load 400 kg, proof load 200 kg and 1″ (25.4 mm): minimum breaking load 24300 kg, proof load 12150 kg."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Short Link Chain, UK Pattern?",
+          "a": "For Short Link Chain, UK Pattern, a general-purpose chain for barriers, fencing, securing and guarding. The manufacturer publishes a test load and a breaking load for each size and no working load limit, so it is not a lifting chain; ask us for a load rating if the duty needs one. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Short Link Chain, UK Pattern?",
+          "a": "Short Link Chain, UK Pattern is listed with a working load limit Load rating on request; minimum breaking load 400 to 24,300 kg. For example, 3/8″ (9.5 mm): minimum breaking load 3400 kg, proof load 1700 kg. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Short Link Chain, UK Pattern made from, and what finish does it have?",
+          "a": "For Short Link Chain, UK Pattern, the material is Carbon steel; stainless steel 316 on request; the finish is Self-colour, black or hot-dip galvanized."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Short Link Chain, UK Pattern?",
+          "a": "Short Link Chain, UK Pattern is listed to UK pattern welded link chain. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Short Link Chain, UK Pattern for overhead lifting?",
+          "a": "For Short Link Chain, UK Pattern, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Short Link Chain, UK Pattern be inspected and looked after?",
+          "a": "Inspect Short Link Chain, UK Pattern before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Short Link Chain, UK Pattern differ from Grade L Short Link Chain — AS 2321, Galvanized?",
+          "a": "Short Link Chain, UK Pattern differs from [Grade L Short Link Chain — AS 2321, Galvanized](/p/grade-l-short-link-chain-as-2321-galvanized) in its pattern / standard UK pattern welded link chain against AS 2321. It also differs in its material Carbon steel; stainless steel 316 on request against Low-strength carbon steel; finish Self-colour, black or hot-dip galvanized against Electro-galvanized."
+        },
+        {
+          "slot": "L",
+          "q": "How are Short Link Chain, UK Pattern shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Short Link Chain, UK Pattern from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Short Link Chain, UK Pattern in stock in Dubai?",
+          "a": "Yes. Short Link Chain, UK Pattern is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "split-connecting-link-g-335-pattern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Split Connecting Link, G-335 Pattern used for?",
+          "a": "Commercial and transport chain for tie-down, towing and general duty — not for overhead lifting. This range follows the G-335 pattern, sized to interchange in an existing rigging plan. It is listed in 11 sizes, inch / mm to 1” / 26."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Split Connecting Link, G-335 Pattern, such as IH-LR-CH-SCL-G335-INCHMM?",
+          "a": "Split Connecting Link, G-335 Pattern part numbers begin with IH-LR-CH-SCL-G335 and end in a size code: IH-LR-CH-SCL-G335-INCHMM is the inch / mm size and IH-LR-CH-SCL-G335-126 is the 1” / 26 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Split Connecting Link, G-335 Pattern come in?",
+          "a": "Split Connecting Link, G-335 Pattern is listed in 11 sizes, inch / mm to 1” / 26, each with its own Indus part number, for example IH-LR-CH-SCL-G335-INCHMM and IH-LR-CH-SCL-G335-126."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Split Connecting Link, G-335 Pattern?",
+          "a": "For Split Connecting Link, G-335 Pattern, select on the working load limit for the tie-down or duty. For overhead lifting use Grade 80 or Grade 100 alloy chain instead. Check the working load limit against the tie-down, towing or general duty, using the rating basis shown for this chain."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Split Connecting Link, G-335 Pattern?",
+          "a": "Split Connecting Link, G-335 Pattern is listed with a working load limit 800 to 15,500 lbs. For example, 7/16” / 11: WLL 3620 lbs. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Split Connecting Link, G-335 Pattern supplied in?",
+          "a": "The listing for Split Connecting Link, G-335 Pattern does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Split Connecting Link, G-335 Pattern?",
+          "a": "Split Connecting Link, G-335 Pattern is listed to G-335. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What should I use instead of Split Connecting Link, G-335 Pattern for overhead lifting?",
+          "a": "For Split Connecting Link, G-335 Pattern, overhead lifting needs alloy chain: [alloy lifting chain](/c/alloy-lifting-chain), Grade 80 or Grade 100, with fittings of the same grade. This range is for securing, towing and general duty."
+        },
+        {
+          "slot": "I",
+          "q": "How should Split Connecting Link, G-335 Pattern be inspected and looked after?",
+          "a": "Inspect Split Connecting Link, G-335 Pattern before use for stretched, nicked or bent links, worn bearing points and corrosion, and retire any damaged length. Securing chain on a vehicle or load also needs checking whenever the load shifts."
+        },
+        {
+          "slot": "K",
+          "q": "How does Split Connecting Link, G-335 Pattern differ from Long Link Chain — UK Pattern?",
+          "a": "Split Connecting Link, G-335 Pattern differs from [Long Link Chain — UK Pattern](/p/long-link-chain-uk-pattern) in its pattern / standard G-335 against UK pattern welded link chain; working load limit 800 to 15,500 lbs against Load rating on request."
+        },
+        {
+          "slot": "L",
+          "q": "How are Split Connecting Link, G-335 Pattern shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Split Connecting Link, G-335 Pattern from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Split Connecting Link, G-335 Pattern in stock in Dubai?",
+          "a": "Yes. Split Connecting Link, G-335 Pattern is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

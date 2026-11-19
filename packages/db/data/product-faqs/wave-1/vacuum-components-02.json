@@ -1,0 +1,742 @@
+{
+  "family": "vacuum-components-02",
+  "extraFacts": [
+    {
+      "fact": "An oil mist filter (coalescing filter) on the discharge of an oil-sealed vacuum pump captures oil fog and mist from the exhaust so it is not blown into the workplace, and the captured oil drains to the bottom of the housing; the filter element needs replacing when the pressure drop across it rises. A liquid separator or water separator in a vacuum line stops liquid being drawn into the pump or ejector.",
+      "source": "Solberg and Gast vacuum filter product catalogues; general vacuum pump practice"
+    },
+    {
+      "fact": "A vacuum ejector (vacuum generator) uses compressed air flowing through a nozzle to draw a vacuum with no moving parts; a suction pad holds with a force equal to the vacuum pressure difference times the pad area, so a safety factor must be applied for lifting. A vacuum regulator limits the vacuum applied to the pad circuit.",
+      "source": "Indus Hydraulics guide 'Pneumatic grippers and vacuum'; SMC vacuum equipment catalogue"
+    },
+    {
+      "fact": "Unit conversions: 1 bar = 14.5038 psi, so 102 psi is about 7 bar, 30 psi about 2 bar and 75 psi about 5.2 bar; 1 cfm = 1.699 cubic metres per hour (cmh) and 1 LPM = 0.06 cubic metres per hour. Temperature: deg C = (deg F - 32) / 1.8, so +40 deg F is about 4 deg C, +180 deg F about 82 deg C, +220 deg F about 104 deg C, +122 deg F is 50 deg C and 176 deg F is 80 deg C.",
+      "source": "NIST Special Publication 811 (unit conversion factors)"
+    },
+    {
+      "fact": "Customs classification: vacuum pumps and parts, including ejectors, fall under HS heading 8414; filtering and purifying machinery under 8421; pressure-reducing valves under 8481.",
+      "source": "WCO Harmonized System Nomenclature 2022, headings 84.14, 84.21 and 84.81"
+    },
+    {
+      "fact": "Sibling listings on indushydraulics.com: SMC AMJ water separators have 1/4, 3/8, 3/4 and 1 inch ports; SMC ZP series adaptors are M4 to M8 and 1/8 inch; SMC IRV vacuum regulators are 1/8 to 3/8 inch; SMC vacuum ejectors use nozzles of 0.5 to 2 mm; Solberg HDL filters list 2, 2.5, 3, 4, 5 and 6 inch ports; Solberg LRS liquid separators list 3/4, 1 and 1-1/2 inch; Solberg HDL 3 to 8 inch filters list 250 to 1100 cfm (300 cfm at 3 inch and 500 cfm at 4 inch, 99.97 percent efficiency) and the 2 inch HDL filters 125 to 175 cfm; Gast VG generators give 62 to 481 LPM; 121 deg C is about 250 deg F and 60 deg C is 140 deg F; Value Line vacuum generators give 16 LPM with 6 mm or 1/4 inch tube ports and Value Line pads are 20 to 75 mm with 5 pads per pack.",
+      "source": "Indus Hydraulics product listings compiled from the maker catalogues"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cash-valve-d51-series-vacuum-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the Cash Valve D51 series regulator listing?",
+          "a": "The Cash Valve D51 listing holds 7 bronze-bodied regulators in 1\" to 2\" sizes, six described as pressure regulators and D51GASBSB02-E1 as a vacuum regulator with a Buna-N diaphragm. Part numbers include D51EASBSB01-E2 (1\", 2 to 30 psi) and D51HASBSB01-E2 (2\", 8 to 30 psi)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Cash Valve D51 part numbers such as D51GASBSB01-E2 and D51HWSBSB01-E1?",
+          "a": "In the rows D51 is the series, the next letter gives the size (E 1\", F 1-1/4\", G 1-1/2\", H 2\") with HA and HW both 2\" in the rows. The SB01 or SB02 group and the E1 or E2 ending carry version options that the listing does not spell out, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and pressure ranges does the Cash Valve D51 offer?",
+          "a": "Rows give 1\" 2 to 30 psi (D51EASBSB01-E2), 1-1/4\" 2 to 30 psi (D51FASBSB01-E2), 1-1/2\" 8 to 30 psi (D51GASBSB01-E2), 2\" 8 to 30 psi (D51HASBSB01-E2) and 2\" 0 to 10 psi (D51HWSBSB01-E1)."
+        },
+        {
+          "slot": "D",
+          "q": "Which D51 part is the vacuum regulator?",
+          "a": "D51GASBSB02-E1 is described as a 1-1/2\" vacuum regulator with a Buna-N diaphragm and stainless steel parts. The other rows are described as pressure regulators, so quote the exact part number for a vacuum application."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure range do Cash Valve D51 regulators give?",
+          "a": "The row text gives set ranges of 0 to 10 psi, 2 to 30 psi and 8 to 30 psi, about 2 bar at 30 psi. These are the outlet pressure ranges, not maximum ratings, so confirm the supply limit with Cash Valve."
+        },
+        {
+          "slot": "F",
+          "q": "What are Cash Valve D51 regulators made from?",
+          "a": "The rows give a bronze body with steel or stainless steel internals and, on D51GASBSB02-E1, a Buna-N diaphragm. Check media compatibility with us before use."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Cash Valve D51 regulators?",
+          "a": "This listing holds no datasheet or certificate file for the Cash Valve D51 regulators, so name the document you need, for example a certificate of conformity or the Cash Valve catalogue page for D51GASBSB02-E1, and we request it from Cash Valve with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Cash Valve D51 regulator?",
+          "a": "Pipe connections in 1\" to 2\" sizes with fittings and unions from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf; for vacuum circuits see the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set up a Cash Valve D51 regulator?",
+          "a": "Install it in the direction marked on the body, adjust the setting under flow and lock the adjuster. Fit a gauge so the set pressure can be checked."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cash Valve D51 differ from the SMC IRV vacuum regulators?",
+          "a": "The D51 is a 1\" to 2\" bronze regulator, while the [SMC vacuum regulator](/p/smc-vacuum-regulator) listing holds small 1/8\" to 3/8\" IRV units for pad circuits."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Cash Valve D51 made and how is it exported?",
+          "a": "The country of origin for the Cash Valve D51 regulators depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Pressure-reducing valves fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Cash Valve D51 series regulators in Dubai?",
+          "a": "Yes. We keep Cash Valve D51 series regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gast-filter-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Gast AJ135 filter elements used for?",
+          "a": "The Gast AJ135 series are replacement filter elements for Gast AJ151B, AJ151C and AJ151D filter assemblies. This listing carries 3 part numbers, AJ135E (2.57\" ID x 5\" OD x 4.75\" high), AJ135F and AJ135G."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters in Gast AJ135E, AJ135F and AJ135G mean?",
+          "a": "In the rows AJ135 is the element series and the E, F and G letters mark the three elements. The listing gives dimensions only for AJ135E, so quote the filter assembly (AJ151B, AJ151C or AJ151D) you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "Which Gast filter assemblies do the AJ135 elements fit?",
+          "a": "The specification lists AJ151B, AJ151C and AJ151D filter assemblies. Tell us the assembly model and we confirm which of AJ135E, AJ135F or AJ135G fits."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the Gast AJ135E filter element?",
+          "a": "AJ135E is listed as 2.57\" inside diameter, 5\" outside diameter and 4.75\" high. The other two rows give no dimensions, so check your housing before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the Gast AJ135 elements have?",
+          "a": "The listing holds no flow, micron or temperature rating for the elements, so we confirm the filtration grade for your part number with Gast."
+        },
+        {
+          "slot": "F",
+          "q": "What are Gast AJ135 elements made of?",
+          "a": "The listing does not state the element material. Send your pump model and application and we confirm the element with Gast. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Gast filter elements?",
+          "a": "No certificate or datasheet is attached to the the Gast AJ135 elements listing. Tell us in the enquiry what your file requires for AJ135E, such as a conformity certificate, and we obtain it from Gast with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Gast AJ135 elements fit into?",
+          "a": "They fit Gast AJ151B, AJ151C and AJ151D filter assemblies. For other vacuum filters see the [Solberg oil mist filters](/p/solberg-ef-series-small-vacuum-pump-oil-mist-filters). Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "When and how should a Gast AJ135 element be replaced?",
+          "a": "Replace the element when the pressure drop rises or the filter is visibly dirty, using the housing's service instructions and a clean seal. Check the vacuum level afterwards."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Gast AJ135 elements differ from the Gast vacuum generators?",
+          "a": "The AJ135 elements are replacement filter elements, while the [Gast vacuum generators](/p/gast-vacuum-generators) are ejectors that make the vacuum; use the element to filter the air stream and the generator to produce vacuum."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Gast AJ135 elements made and how are they exported?",
+          "a": "The listing records United States as the country of origin for the Gast AJ135 elements, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Filtering machinery parts fall under HS heading 8421."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Gast AJ135 filter elements in Dubai?",
+          "a": "Yes, Gast AJ135 filter elements is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "gast-vacuum-generators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Gast VG vacuum generators used for?",
+          "a": "The Gast VG series are compressed-air vacuum generators (ejectors) with a muffler, for suction handling and vacuum holding, rated for continuous 100 percent duty. This listing carries 4 part numbers: VG-010-00-00, VG-015-00-00, VG-020-00-00 and VG-260-00-00."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Gast part numbers such as VG-015-00-00 and VG-260-00-00?",
+          "a": "In the rows the three digits after VG- set the model: VG-015 is 62 LPM with a 1/4\" NPT vacuum port, VG-020 is 113 LPM with 3/8\" and VG-260 is 481 LPM with 1/2\". All have a 1/8\" NPT pressure port."
+        },
+        {
+          "slot": "D",
+          "q": "Which vacuum flows and ports do the Gast VG generators have?",
+          "a": "VG-015-00-00 gives 62 LPM, VG-020-00-00 113 LPM and VG-260-00-00 481 LPM, each with a 1/8\" NPT pressure port and a 1/4\", 3/8\" or 1/2\" NPT vacuum port. VG-010-00-00 is the inline box type."
+        },
+        {
+          "slot": "D",
+          "q": "What supply pressure do the Gast VG generators need?",
+          "a": "The VG-010-00-00 row gives an operating supply of 30 to 75 psi, about 2 to 5 bar, for the inline box ejector with muffler. The other rows state flow but not the supply pressure, so we confirm it for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the Gast VG generator have?",
+          "a": "The specification gives 100 percent duty cycle, no thermal protection and a temperature of 52 deg C. The listing holds no vacuum level for the VG rows, so we confirm it with Gast."
+        },
+        {
+          "slot": "F",
+          "q": "What does the Gast VG generator include?",
+          "a": "A muffler is included in the specification, with a muffler exhaust type. Body materials are not stated, so send your operating conditions and we confirm with Gast."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Gast VG generators?",
+          "a": "We hold no datasheet or certificate for the Gast VG generators on this page. Ask for the Gast catalogue sheet or a certificate of conformity for VG-015-00-00 in your enquiry and we request it from Gast when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Gast VG generator?",
+          "a": "Air supply to the 1/8\" NPT pressure port and a vacuum line to the 1/4\", 3/8\" or 1/2\" NPT port, with fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf and pads from the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Gast VG generator?",
+          "a": "Mount it near the load, connect supply and vacuum, keep the muffler clear and filter the air; see our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Gast VG generators differ from the Value Line generators?",
+          "a": "The Gast VG units give 62 to 481 LPM, while the [Value Line vacuum generators](/p/value-line-vacuum-generators) give 16 LPM with 6 mm or 1/4\" tube ports. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Gast VG generators made and how are they exported?",
+          "a": "The listing records United States as the country of origin for the Gast VG generators, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Items of this kind fall under HS heading 8414, 8421 or 8481 depending on the product."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Gast VG series vacuum generators in Dubai?",
+          "a": "Yes. Gast VG series vacuum generators is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "solberg-ef-series-small-vacuum-pump-oil-mist-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Solberg EF series oil mist filters used for?",
+          "a": "Solberg EF series filters are small oil mist filters for the exhaust of small oil-sealed vacuum pumps, nickel plated with a 3/4\"-20 UNEF connection on some models. This listing carries 14 part numbers, such as EF-FG5-075, EF-FG7-050 and EFDB-FG11-177, from 7 to 41 CMH."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Solberg part numbers such as EF-FG7-075 and EFDB-FG11-177?",
+          "a": "In the rows EF is the series, FG followed by a number (3 to 11) tracks the flow size, and the last group is the connection: -050 is 1/2\", -075 is 3/4\" and -103 or -177 are other threads. FG3 is the replacement element in the specification."
+        },
+        {
+          "slot": "D",
+          "q": "Which flow sizes do Solberg EF filters come in?",
+          "a": "Rows give 7 CMH (EF-FG3-077), 8 CMH (EF-FG5-075), 12 CMH (EF-FG7-050), 27 CMH (EF-FG9-103) and 41 CMH (EF-FG10-103), matched to the pump's exhaust flow."
+        },
+        {
+          "slot": "D",
+          "q": "Which connections do Solberg EF filters have?",
+          "a": "Rows list 1/2\" and 3/4\" inlet and outlet sizes (EF-FG5-050, EF-FG5-075), a 3/4\"-20 UNEF thread, and NW16 and NW2516 flange versions (EF-FG5-NW16, EF-FG5-NW2516)."
+        },
+        {
+          "slot": "E",
+          "q": "What flow and size does the Solberg EF series have?",
+          "a": "Flows run from 7 CMH to 41 CMH, and example dimensions are 95 mm A and 63.5 mm C on EF-FG3-077 up to 244 mm A and 158.75 mm C on EFDB-FG11-177. The listing holds no pressure rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are Solberg EF filters made of?",
+          "a": "The specification gives a nickel-plated finish. Element and housing materials are not otherwise stated, so send your pump oil and we confirm with Solberg."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Solberg EF filters?",
+          "a": "This listing holds no datasheet or certificate file for the Solberg EF filters, so name the document you need, for example a certificate of conformity or the Solberg catalogue page for EF-FG5-075, and we request it from Solberg with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Solberg EF filter?",
+          "a": "The discharge port of a small vacuum pump on the inlet, matching 1/2\", 3/4\" or NW flange, and a drain or return line if the pump uses one. See our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and service a Solberg EF filter?",
+          "a": "Fit it on the pump exhaust, mount it upright so the oil drains, and replace the element when pressure drop rises or the filter is oily. See the [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) for air quality."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Solberg EF differ from the Solberg HDL filters?",
+          "a": "EF filters are small units for pumps to 41 CMH, while the [Solberg HDL series](/p/solberg-hdl-series-discharge-oil-mist-filters-3-8-inch) are large discharge filters up to 1100 cfm. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Solberg EF filters made and how are they exported?",
+          "a": "The listing records United States as the country of origin for the Solberg EF filters, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Filtering machinery falls under HS heading 8421."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Solberg EF series oil mist filters in Dubai?",
+          "a": "Yes, we stock Solberg EF series oil mist filters at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "solberg-hdl-series-discharge-oil-mist-filters-1-2-1-2-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Solberg HDL oil mist discharge filters (2 to 2-1/2 inch) used for?",
+          "a": "The Solberg HDL discharge filters in this listing are medium oil mist filters for vacuum pump and blower exhaust, with BSPP connections and a white powder finish in the specification. This listing carries 6 part numbers, such as HDL-PSG850/1-200HC, HDL-PSG244/2-251HC and HDLPSG848101HC."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Solberg HDL part numbers such as HDL-PSG850/1-201HC?",
+          "a": "In the rows HDL is the series, PSG850 and PSG860 name the housing, and the ending (-200HC, -201HC, -251HC) carries the port: HDL-PSG850/1-200HC is 2\" FNPT at 125 cfm and HDL-PSG860/1-200HC is 2\" FNPT at 175 cfm."
+        },
+        {
+          "slot": "D",
+          "q": "Which ports and flows do these Solberg HDL filters have?",
+          "a": "Rows give 2\" FNPT at 125 cfm (HDL-PSG850/1-200HC), 2\" FNPT at 175 cfm (HDL-PSG860/1-200HC), 2\" size (HDL-PSG850/1-201HC) and 2.5\" size (HDL-PSG244/2-251HC)."
+        },
+        {
+          "slot": "D",
+          "q": "What is the HDLPSG848101HC part number?",
+          "a": "HDLPSG848101HC is listed as an FG housing with element and has no size or flow in the row text. Quote the part number and we confirm the details with Solberg."
+        },
+        {
+          "slot": "E",
+          "q": "What size and finish do these Solberg HDL filters have?",
+          "a": "The specification gives dimensions of 408.18 mm A, 224.03 mm B and 221.74 mm D, a BSPP connection and a white powder finish. The listing holds no pressure rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are Solberg HDL filters made of?",
+          "a": "The listing states a white powder-coated finish; the [HDL 3-8 inch listing](/p/solberg-hdl-series-discharge-oil-mist-filters-3-8-inch) gives a carbon steel housing and polyester element. Confirm the materials for your part number."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Solberg HDL filters?",
+          "a": "No certificate or datasheet is attached to the the Solberg HDL filters listing. Tell us in the enquiry what your file requires for HDL-PSG850/1-200HC, such as a conformity certificate, and we obtain it from Solberg with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Solberg HDL filter?",
+          "a": "The exhaust line of an oil-sealed vacuum pump or blower on the 2\" or 2.5\" port, with a drain for captured oil. See our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and service a Solberg HDL filter?",
+          "a": "Mount it upright on the discharge, drain the housing regularly and replace the element when pressure drop rises. Do not run the pump with a blocked filter."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 to 2-1/2 inch Solberg HDL listing differ from the larger HDL filters?",
+          "a": "This listing is 2\" to 2.5\" filters, while the [HDL 3-8 inch filters](/p/solberg-hdl-series-discharge-oil-mist-filters-3-8-inch) run from 2-1/2\" to 6\" with 250 to 1100 cfm. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Solberg HDL filters made and how are they exported?",
+          "a": "The listing records United States as the country of origin for the Solberg HDL filters, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Filtering machinery falls under HS heading 8421."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Solberg HDL series 2 inch oil mist filters in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Solberg HDL series 2 inch oil mist filters in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "solberg-hdl-series-discharge-oil-mist-filters-3-4-inch-dn125-dn200",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Solberg HDL oil mist discharge filters (3 to 4 inch, DN125 to DN200) used for?",
+          "a": "The Solberg HDL 3 to 4 inch filters are large oil mist discharge filters for the exhaust of vacuum pumps and blowers. This listing carries 3 part numbers: HDL-PSG344/2-301 (3\"), HDL-PSG344/2-401 (4\") and HDLPSG476GDN200, a DN200 version."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Solberg HDL part numbers such as HDL-PSG344/2-401 and HDLPSG476GDN200?",
+          "a": "In the rows PSG344 is the housing, and the ending carries the size: -301 is 3\" and -401 is 4\", while HDLPSG476GDN200 is a PSG476 housing with a DN200 flange. The listing does not decode further, so quote the full code."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the Solberg HDL 3 to 4 inch DN200 filters come in?",
+          "a": "3\" (HDL-PSG344/2-301), 4\" (HDL-PSG344/2-401) and DN200 (HDLPSG476GDN200). The DN125 to DN200 flanged range is named in the listing title."
+        },
+        {
+          "slot": "D",
+          "q": "What flow do the Solberg HDL 3 and 4 inch filters pass?",
+          "a": "The listing holds no flow figure for these rows; the [HDL 3-8 inch listing](/p/solberg-hdl-series-discharge-oil-mist-filters-3-8-inch) gives 300 cfm for a 3\" and 500 cfm for a 4\" HDL-PSG344/2 housing. We confirm the flow for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the Solberg HDL HDL-PSG344/2 filters have?",
+          "a": "The listing holds no pressure, temperature or flow rating for the three rows, so we confirm them with Solberg before supply. We confirm the maker's rating for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Solberg HDL HDL-PSG344/2 filters made from?",
+          "a": "The listing does not state the materials; the [HDL 3-8 inch listing](/p/solberg-hdl-series-discharge-oil-mist-filters-3-8-inch) gives a carbon steel housing, polyester element and 99.97 percent filtration efficiency for the same family. Confirm for your part number."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Solberg HDL filters?",
+          "a": "We hold no datasheet or certificate for the Solberg HDL 3 to 4 inch filters on this page. Ask for the Solberg catalogue sheet or a certificate of conformity for HDL-PSG344/2-301 in your enquiry and we request it from Solberg when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Solberg HDL 3 or 4 inch filter?",
+          "a": "The exhaust of a large vacuum pump or blower on the 3\", 4\" or DN200 port, with a drain for captured oil. See our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Solberg HDL filter?",
+          "a": "Mount upright on the discharge, drain the oil regularly and replace the element when the pressure drop rises. Support the housing so pipe loads do not strain the port."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Solberg HDL 3 to 4 inch filters differ from the 2 inch HDL filters?",
+          "a": "These are larger 3\", 4\" and DN200 units, while the [2 to 2-1/2 inch HDL filters](/p/solberg-hdl-series-discharge-oil-mist-filters-1-2-1-2-inch) are for smaller pumps at 125 to 175 cfm. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Solberg HDL filters made and how are they exported?",
+          "a": "The listing records United States as the country of origin for the Solberg HDL filters, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Filtering machinery falls under HS heading 8421."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Solberg HDL series 3 and 4 inch oil mist filters in Dubai?",
+          "a": "Yes. We keep Solberg HDL series 3 and 4 inch oil mist filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "solberg-hdl-series-discharge-oil-mist-filters-3-8-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Solberg HDL oil mist filters (listed 3 to 8 inch) used for?",
+          "a": "The Solberg HDL oil mist filters are coalescing filters for low-pressure-drop treatment of large air volumes, such as blower exhaust and oil-flooded vacuum pump exhaust. This listing carries 5 part numbers, HDL-PSG244/2-250C to HDL-PSG474/2-600, from 250 cfm to 1100 cfm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Solberg HDL part numbers such as HDL-PSG344/2-400 and HDL-PSG474/2-600?",
+          "a": "In the rows HDL-PSG344/2 and HDL-PSG474/2 are the housings and the ending carries the size: -300 is 3\" MNPT at 300 cfm, -400 is 4\" at 500 cfm, -500 is 5\" at 800 cfm and -600 is 6\" at 1100 cfm; HDL-PSG244/2-250C is 2-1/2\" FNPT at 250 cfm."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and flows do these Solberg HDL filters have?",
+          "a": "The rows give 2-1/2\" FNPT at 250 cfm, 3\" MNPT at 300 cfm, 4\" at 500 cfm, 5\" at 800 cfm and 6\" at 1100 cfm. The listing title says 3 to 8 inch but the largest part number here is 6\"."
+        },
+        {
+          "slot": "D",
+          "q": "What does low delta P coalescing mean on the Solberg HDL?",
+          "a": "The specification says the filter coalesces large air volumes with a low pressure drop, capturing oil fog, mist or smoke from exhaust. A low pressure drop means little back pressure on the pump."
+        },
+        {
+          "slot": "E",
+          "q": "What efficiency and temperature do Solberg HDL filters have?",
+          "a": "The specification gives 99.97 percent filtration efficiency, a temperature of 180 deg F (about 82 deg C) and a range of +40 deg F to +220 deg F, about 4 to 104 deg C. The drain is manual and no gauge is included."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Solberg HDL filters made from?",
+          "a": "The specification gives a carbon steel housing and a polyester filter element, with female NPT inlet and outlet connections on the smaller sizes and a manual drain. Confirm the materials with us for your application."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Solberg HDL filters?",
+          "a": "This listing holds no datasheet or certificate file for the Solberg HDL filters, so name the document you need, for example a certificate of conformity or the Solberg catalogue page for HDL-PSG344/2-300, and we request it from Solberg with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Solberg HDL filter?",
+          "a": "The exhaust of an oil-flooded vacuum pump or blower on the 2-1/2\" to 6\" port, with a drain for the captured oil. See our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for pipe fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service a Solberg HDL filter?",
+          "a": "Drain the housing through the manual drain, fit no gauge unless you add one and replace the polyester element when the pressure drop rises. See the [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) for air quality."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Solberg HDL 3 to 8 inch filters differ from the Solberg LRS separators?",
+          "a": "HDL filters coalesce oil mist from exhaust, while the [Solberg LRS right-angle separators](/p/solberg-lrs-series-right-angle-liquid-separators) separate liquid and particulate from the line."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Solberg HDL filters made and how are they exported?",
+          "a": "The listing records United States as the country of origin for the Solberg HDL filters, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. The listing records HS code 8421290015."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Solberg HDL series oil mist filters in Dubai?",
+          "a": "Yes, Solberg HDL series oil mist filters is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "solberg-lrs-series-right-angle-liquid-separators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Solberg LRS right-angle liquid separators used for?",
+          "a": "The Solberg LRS right-angle liquid separators remove oil and liquid from an air or vacuum line before the pump, with a drain included. This listing carries 5 part numbers: LRS-19-075HC (3/4\"), LRS-19-100HC (1\"), LRS-19-150HC (1-1/2\"), LRS-237-250HC and LRS-237-300HC."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Solberg part numbers such as LRS-19-100HC and LRS-237-300HC?",
+          "a": "In the rows LRS-19 numbers carry the size in the ending (-075 is 3/4\", -100 is 1\" and -150 is 1-1/2\") and LRS-237 is a larger body, with -250 and -300 as its two versions. HC is common to all five."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do Solberg LRS separators come in?",
+          "a": "3/4\", 1\" and 1-1/2\" on the LRS-19 body, and LRS-237-250HC and LRS-237-300HC, which are listed only as right angle liquid separators without a stated size."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between LRS-19 and LRS-237 separators?",
+          "a": "LRS-19 is the smaller body in 3/4\" to 1-1/2\" sizes, while LRS-237 is the larger right-angle body; the listing gives A 431.8 mm and C 195.07 mm for the series. Quote the part number so we confirm size."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the Solberg LRS separator have?",
+          "a": "The listing gives dimensions of 431.8 mm A, 195.07 mm C and 76.2 mm D, with a drain included, but no pressure, flow or temperature rating. We confirm them with Solberg for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What does the Solberg LRS separator filter?",
+          "a": "The specification lists oil as the filtered substance in air, with a drain included. Body materials are not stated, so send your conditions and we confirm with Solberg."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Solberg LRS separators?",
+          "a": "No certificate or datasheet is attached to the the Solberg LRS separators listing. Tell us in the enquiry what your file requires for LRS-19-100HC, such as a conformity certificate, and we obtain it from Solberg with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Solberg LRS separator?",
+          "a": "Piping on the inlet and outlet at the right angle, a drain line, and the vacuum pump or compressor downstream. See our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and drain a Solberg LRS separator?",
+          "a": "Install it ahead of the pump with the drain at the bottom, drain it regularly and check for liquid carry-over. See the [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Solberg LRS differ from the Solberg HDL filters?",
+          "a": "LRS separates liquid and particulate upstream, while the [Solberg HDL filters](/p/solberg-hdl-series-discharge-oil-mist-filters-3-8-inch) coalesce oil mist at the pump exhaust. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Solberg LRS separators made and how are they exported?",
+          "a": "The country of origin for the Solberg LRS separators depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Filtering machinery falls under HS heading 8421."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Solberg LRS series right-angle liquid separators in Dubai?",
+          "a": "Yes. Solberg LRS series right-angle liquid separators is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "value-line-vacuum-generators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Value Line vacuum generators used for?",
+          "a": "The Value Line vacuum generators are small compressed-air ejectors that make vacuum for suction pads, giving 16 LPM. This listing carries 3 part numbers: VL06I (6 mm), VL06T with a 1/4\" tube port and VL06T with 6 mm ports."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Value Line part numbers such as VL06T, 6mm and VL06T, 1/4?",
+          "a": "In the rows VL06 is the generator, the letter I or T names the style, and the suffix after the comma is the tube size, 6 mm or 1/4\". The listing does not decode the I and T letters, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which tube sizes do the Value Line vacuum generators have?",
+          "a": "The three part numbers have 6 mm pressure and vacuum ports (VL06I, 6mm and VL06T, 6mm) or 1/4\" tube ports (VL06T, 1/4). Pick the one that matches your tubing."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Value Line generator give?",
+          "a": "All three rows state 16 LPM. The VL06T, 6mm row adds a 102 psi maximum supply pressure, about 7 bar. Quote the full part number when you order."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure does the Value Line generator have?",
+          "a": "The listing gives a temperature of 176 deg F (80 deg C) and the VL06T, 6mm row states a maximum supply pressure of 102 psi, about 7 bar. The other rows state no supply limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Value Line generator made from?",
+          "a": "The listing does not state the body material. Send your operating conditions and we confirm with the maker. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Value Line generator?",
+          "a": "We hold no datasheet or certificate for the Value Line vacuum generators on this page. Ask for the Value Line catalogue sheet or a certificate of conformity for VL06T, 6mm in your enquiry and we request it from Value Line when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Value Line vacuum generator?",
+          "a": "Compressed air to the pressure port and a vacuum line to the pad, in 6 mm or 1/4\" tube; see our [pneumatic tubing](/c/pneumatic-tubing) shelf and the [Value Line pads](/p/value-line-vacuum-pads)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Value Line generator?",
+          "a": "Mount it close to the pad, connect supply and vacuum tube and check the vacuum with the part held. Keep supply at or below 102 psi on the 6 mm version."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Value Line generators differ from the Gast VG generators?",
+          "a": "The Value Line units give 16 LPM with tube ports, while the [Gast VG generators](/p/gast-vacuum-generators) give 62 to 481 LPM with NPT ports. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Value Line vacuum generators made and how are they exported?",
+          "a": "The country of origin for the Value Line vacuum generators depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Items of this kind fall under HS heading 8414, 8421 or 8481 depending on the product."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Value Line vacuum generators in Dubai?",
+          "a": "Yes, we stock Value Line vacuum generators at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "value-line-vacuum-pad-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Value Line vacuum pad adapters used for?",
+          "a": "The Value Line pad adapters connect Value Line pads to a vacuum line, in packs of 5. This listing carries 12 part numbers in 6, 10 and 12 mm port sizes, for pads of 20 to 75 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Value Line adapter numbers such as Fitting D=10, G1/4 - G1/8?",
+          "a": "In the rows D is the port size in mm (6, 10 or 12) and the two threads after it give the connection pair, such as G1/4 to G1/8 or 3/8 NPT to 1/4 NPSF. Each row is a different thread combination."
+        },
+        {
+          "slot": "D",
+          "q": "Which pad sizes do the Value Line adapters suit?",
+          "a": "The D=6 adapters suit 20 mm to 30 mm pads, the D=10 adapters 40 mm to 50 mm pads and the D=12 adapters 60 mm to 75 mm pads, four thread versions each."
+        },
+        {
+          "slot": "D",
+          "q": "Which threads do the Value Line pad adapters have?",
+          "a": "Rows list 1/4 NPT to 1/8 NPSF, 1/8 NPT to M5, G1/4 to G1/8 and G1/8 to M5 on D=6, and 3/8 NPT to 1/4 NPSF, G3/8 to G1/4 and others on D=10 and D=12. Choose the pair that matches your line."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the Value Line pad adapters take?",
+          "a": "The listing gives 121 deg C, which is about 250 deg F. It holds no pressure rating, so we confirm the limits with the maker. We confirm the maker's rating for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Value Line pad adapters made of?",
+          "a": "The listing does not state the adapter material. Send your operating conditions and we confirm with the maker. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Value Line adapters?",
+          "a": "This listing holds no datasheet or certificate file for the Value Line pad adapters, so name the document you need, for example a certificate of conformity or the Value Line catalogue page for a D=10 adapter, and we request it from Value Line with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What pads and lines do Value Line adapters connect?",
+          "a": "They connect the [Value Line vacuum pads](/p/value-line-vacuum-pads) to your vacuum line; see the [vacuum generators, pads and filters shelf](/c/vacuum-components) for ejectors and our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a Value Line pad adapter?",
+          "a": "Thread the adapter into the pad and the line fitting, using thread sealant on NPT threads and checking for leaks before lifting. Each pack holds 5."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Value Line adapters differ from the SMC ZP adaptors?",
+          "a": "Value Line adapters suit 20 mm to 75 mm pads with 6 to 12 mm ports, while the [SMC ZP adaptors](/p/smc-zp-series-vacuum-pad) are metric M4 to M8 and 1/8\" fittings for SMC pads."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Value Line pad adapters made and how are they exported?",
+          "a": "The country of origin for the Value Line pad adapters depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Items of this kind fall under HS heading 8414, 8421 or 8481 depending on the product."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Value Line vacuum pad adapters in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Value Line vacuum pad adapters in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "value-line-vacuum-pads",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Value Line vacuum pads used for?",
+          "a": "The Value Line vacuum pads are thermoplastic elastomer suction pads in bellows and flat styles, sold in packs of 5. This listing carries 20 part numbers, such as VL20BX, VL50BL and VL75FC, in diameters of 20 mm to 75 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Value Line pad numbers such as VL25BL and VL40FC?",
+          "a": "In the rows VL and the diameter (25, 40) are followed by B for bellows or F for flat, and X or L or C for the version: VL25BX is 22.5 mm high and VL25BL 34 mm high, and the flat VL25FC is 16 mm high."
+        },
+        {
+          "slot": "D",
+          "q": "Which diameters and heights do the Value Line pads come in?",
+          "a": "Bellows pads run 20, 25, 30, 40, 50, 60 and 75 mm (VL20BX 20 mm high, VL75BL 93 mm high) and flat pads 20 to 75 mm (VL20FC 15 mm high, VL75FC 38.5 mm high)."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between the BX and BL Value Line pads?",
+          "a": "Both are bellows pads of the same diameter, but BL is taller: VL50BX is 44 mm high and VL50BL 63 mm high. Choose the taller pad where more compliance is needed."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the Value Line pads take?",
+          "a": "The listing gives 0 deg C to 60 deg C and a 60A durometer, which is about 32 to 140 deg F. They are not suited to hot parts. We confirm the maker's rating for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Value Line pads made from?",
+          "a": "The specification gives thermoplastic elastomer with a 60A durometer, supplied as a plain pad without adapter. Confirm oil and chemical compatibility with us before use."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Value Line pads?",
+          "a": "No certificate or datasheet is attached to the the Value Line pads listing. Tell us in the enquiry what your file requires for VL25BL, such as a conformity certificate, and we obtain it from Value Line with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adapter fits a Value Line vacuum pad?",
+          "a": "The pads are plain, so fit one of the [Value Line pad adapters](/p/value-line-vacuum-pad-adapters): D=6 for 20 to 30 mm pads, D=10 for 40 to 50 mm and D=12 for 60 to 75 mm."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose and fit a Value Line pad?",
+          "a": "Choose the diameter from the load, apply a safety factor, fit the adapter and check the vacuum before lifting; see our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Value Line pads differ from the SMC bellows pads?",
+          "a": "The Value Line pads are thermoplastic elastomer to 60 deg C in 20 to 75 mm, while the [SMC bellows pads](/p/smc-vacuum-pad-bellows) are fluoro rubber and other grades up to 250 deg C in 6 to 50 mm."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Value Line vacuum pads made and how are they exported?",
+          "a": "The country of origin for the Value Line vacuum pads depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Items of this kind fall under HS heading 8414, 8421 or 8481 depending on the product."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Value Line vacuum pads in Dubai?",
+          "a": "Yes. We keep Value Line vacuum pads in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

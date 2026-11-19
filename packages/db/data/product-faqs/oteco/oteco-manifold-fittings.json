@@ -1,0 +1,656 @@
+{
+ "family": "oteco-manifold-fittings",
+ "extraFacts": [],
+ "products": [
+  {
+   "slug": "oteco-long-sweep-full-flow-crosses",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco long-sweep full flow cross used for?",
+     "a": "The Oteco long-sweep full flow cross is a four-way long-sweep cross with full bore through every leg, used on mud pump discharge, standpipe and choke and kill manifolds. The long sweep keeps abrasive mud flowing with less erosion and pressure loss than a short-radius fitting. It is listed in 2\", 3\", 4\" and 5\", with 16 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read the Oteco cross model code 5555X and part number IH-OTC-415104?",
+     "a": "The model code gives the size of each leg, so 5555X is a 5\" four-way full flow cross and 4444X is the 4\" version. IH-OTC-415104 is the 5555X with 5\" butt weld ends, Sch. XXS, standard service, rated 5,000 psi. The size table lists the ends and rating against every part number."
+    },
+    {
+     "slot": "K",
+     "q": "How does an Oteco full flow cross differ from a full flow tee?",
+     "a": "The cross has four legs on two axes, so it joins two lines or feeds two branches from one run, while the [full flow tee](/p/oteco-long-sweep-full-flow-tees) has three. Both carry full bore through every leg, in castings from the same Oteco range. Use the cross where a manifold needs an opposed branch, and the tee where it needs one."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and end connections does the Oteco long-sweep full flow cross come in?",
+     "a": "The cross is listed in 2\", 3\", 4\" and 5\" with 16 part numbers: line pipe thread at 2\" and 4\", and butt weld Sch. 160 or Sch. XXS in 2\", 3\", 4\" and 5\". Part IH-OTC-410034 is the 2222X with 2\" × 2-1/2\" line pipe thread ends, and the 5\" sizes are butt weld only."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 4444X or 5555X cross should I pick for a 5,000 psi manifold?",
+     "a": "Pick a Sch. 160 or Sch. XXS butt weld cross, because the 4\" line pipe thread cross is rated 3,000 psi. For 4\" the Sch. 160 part is IH-OTC-414103 and the Sch. XXS part is IH-OTC-414104, both 5,000 psi. For 5\" the Sch. 160 part is IH-OTC-415103 and the Sch. XXS part is IH-OTC-415104."
+    },
+    {
+     "slot": "E",
+     "q": "What working pressures does the Oteco long-sweep full flow cross carry?",
+     "a": "The cross is listed from 3,000 psi to 8,000 psi, depending on the size and the end. A 4\" line pipe thread cross is 3,000 psi, a 5\" Sch. XXS cross is 5,000 psi, and the 5\" extra-heavy-wall crosses are 7,500 psi (IH-OTC-417035) and 8,000 psi (IH-OTC-418035). Every fitting is hydrostatically tested to at least 1.5 times working pressure."
+    },
+    {
+     "slot": "F",
+     "q": "Is there a sour gas (H2S) Oteco full flow cross?",
+     "a": "Yes, the cross is listed in sour gas (H2S) service at 4\" and 5\": IH-OTC-414107 for 4\" and IH-OTC-415105, IH-OTC-417037 and IH-OTC-418037 for 5\". Oteco states that sour gas service is available on all its manifold fittings. Send the pressure and the service so we can match the right part number."
+    },
+    {
+     "slot": "G",
+     "q": "What material is the Oteco 5555X cross cast in, and how is it tested?",
+     "a": "The 2\" to 5\" crosses at 5,000 psi are cast in ASTM A216 Grade WCC, and the 5\" 7,500 and 8,000 psi extra-heavy-wall crosses in A487 Grade 4D modified. Each casting is machined and hydrostatically tested to at least 1.5 times working pressure. Butt weld ends have a 37.5° bevel and match ASME B36.10 OD and ID."
+    },
+    {
+     "slot": "H",
+     "q": "What do I fit with an Oteco full flow cross in a mud manifold?",
+     "a": "A cross sits between the pipe runs, so you match its ends to the pipe: butt weld to the same schedule, or line pipe thread at 2\" and 4\". Pair it with [full flow tees](/p/oteco-long-sweep-full-flow-tees), [90° long-sweep ells](/p/oteco-90-degree-long-sweep-ells) and [Y fittings](/p/oteco-long-sweep-y-fittings) from the same Oteco range, all cast to the same style."
+    },
+    {
+     "slot": "J",
+     "q": "Where is an Oteco 4444X full flow cross installed on a rig?",
+     "a": "A full flow cross is installed in the high-pressure mud system, at the pump discharge and the standpipe manifold, wherever two lines meet and cross. The 4444X in Sch. XXS (IH-OTC-414104) is rated 5,000 psi and suits the discharge side of a 5,000 psi pump line. Choke and kill manifolds use the same long-sweep geometry."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco long-sweep full flow cross?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East. See the wider range on the [Mud Manifold Fittings shelf](/c/mud-manifold-fittings) or the matching [full flow tees](/p/oteco-long-sweep-full-flow-tees)."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco long-sweep full flow cross in the UAE?",
+     "a": "We keep Oteco long-sweep full flow crosses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end connection, pressure and standard or sour gas service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-long-sweep-full-flow-tees",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco long-sweep full flow tee?",
+     "a": "The Oteco long-sweep full flow tee is a long-sweep tee with the full bore carried through the branch, so mud flows with less erosion and pressure loss than a short-radius tee. It goes into pump discharge, standpipe and choke and kill manifolds. It is listed in 2\", 3\", 4\" and 5\", with 33 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco tee models 222T, 333T, 444T, 555T and 545T?",
+     "a": "The three digits give the run, run and branch sizes, so 222T is a 2\" tee, 333T a 3\" tee and 555T a 5\" tee. A mixed code such as 545T or 525T shows a smaller branch than the run. IH-OTC-415014 is a 555T with 5\" butt weld ends, Sch. XXS, standard service, 5,000 psi."
+    },
+    {
+     "slot": "K",
+     "q": "Which Oteco tee should I use: full flow tee or long-sweep tee?",
+     "a": "Use the full flow tee when the branch must carry the full bore, and the [long-sweep tee](/p/oteco-long-sweep-tees) when a swept branch is enough. The full flow tee is listed in 33 part numbers and the long-sweep tee in 26. Both are cast to the same material and test standard."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the Oteco full flow tee come in?",
+     "a": "The tee is listed in 2\", 3\", 4\" and 5\" with line pipe thread at 2\", 3\" and 4\", and butt weld in Sch. 80, Sch. 160 and Sch. XXS. Some parts have special ends: IH-OTC-410025 has 127 mm (5.000 in) OD butt weld ends and IH-OTC-410039 is a 3\" socket weld, Sch. XXS. The size table lists every end."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 333T or 444T tee do I choose for 5,000 psi?",
+     "a": "For 5,000 psi choose a Sch. 160 or Sch. XXS butt weld end, since the line pipe thread tees are rated 3,000 psi at 3\" and 4\". The 3\" parts are IH-OTC-413013 (Sch. 160) and IH-OTC-413014 (Sch. XXS), and the 4\" parts are IH-OTC-414013 and IH-OTC-414014."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do Oteco full flow tees have?",
+     "a": "The listing runs from 3,000 psi to 8,000 psi: 3\" and 4\" threaded tees are 3,000 psi, Sch. 160 and Sch. XXS butt weld tees are 5,000 psi, and the 5\" extra-heavy-wall tees are 7,500 psi and 8,000 psi. Confirm the exact rating from the size table for the part number, because the end connection sets it."
+    },
+    {
+     "slot": "F",
+     "q": "Can an Oteco full flow tee be supplied for sour gas (H2S) service?",
+     "a": "Yes, sour gas (H2S) tees are listed in 2\", 3\", 4\" and 5\": IH-OTC-412017 and IH-OTC-412018 for 2\", IH-OTC-413017 for 3\", IH-OTC-414109 for 4\" and IH-OTC-415015, IH-OTC-417027 and IH-OTC-418027 for 5\". Oteco states that sour gas service is available on all its manifold fittings."
+    },
+    {
+     "slot": "G",
+     "q": "What is the full flow tee made of and how is it pressure tested?",
+     "a": "The 5,000 psi tees are cast in ASTM A216 Grade WCC, and the 5\" 7,500 and 8,000 psi tees in A487 Grade 4D modified. Each fitting is hydrostatically tested to at least 1.5 times working pressure, and Oteco supplies material tensile and chemical certification on request. Weld ends are bevelled at 37.5° to ASME B36.10."
+    },
+    {
+     "slot": "H",
+     "q": "What parts connect to an Oteco full flow tee in a manifold?",
+     "a": "The tee joins to line pipe or to butt weld pipe of the same schedule, and sits next to [full flow crosses](/p/oteco-long-sweep-full-flow-crosses), [45° ells](/p/oteco-45-degree-long-sweep-ells) and [90° ells](/p/oteco-90-degree-long-sweep-ells) from the Oteco range. A choke and kill or pump manifold usually needs several styles, so we can quote them together from one part list."
+    },
+    {
+     "slot": "J",
+     "q": "Where does an Oteco 555T full flow tee go in the mud system?",
+     "a": "A 555T tee typically sits on the pump discharge manifold or the standpipe, where a 5\" line splits to feed a branch. IH-OTC-415014 in Sch. XXS is rated 5,000 psi, and IH-OTC-417025 is rated 7,500 psi for higher-pressure systems. Choose the rating to suit the highest pump discharge pressure in the system."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco long-sweep full flow tee made?",
+     "a": "It is made by Oteco Inc. in Houston, Texas, USA, so the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. Browse the [Mud Manifold Fittings shelf](/c/mud-manifold-fittings) for the other styles, or see the [full flow crosses](/p/oteco-long-sweep-full-flow-crosses) for four-way joints."
+    },
+    {
+     "slot": "M",
+     "q": "How do I buy an Oteco long-sweep full flow tee in Dubai?",
+     "a": "We keep Oteco long-sweep full flow tees in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end, pressure rating and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-long-sweep-tees",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco long-sweep tee?",
+     "a": "The Oteco long-sweep tee is a long-sweep tee with a swept branch, cast for the mud pump discharge, standpipe and choke and kill manifolds. The swept branch keeps abrasive drilling mud moving with less erosion and pressure loss than a short-radius tee. It is listed in 2\", 3\", 4\" and 5\", with 26 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco model 444LST and part number IH-OTC-414024?",
+     "a": "The model code gives the sizes and the style: 444LST is a 4\" long-sweep tee and 555LST is the 5\" tee, while 443LST has a smaller branch. IH-OTC-414024 is the 444LST with 4\" butt weld ends, Sch. XXS, standard service, rated 5,000 psi. The size table gives each part its ends and rating."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between an Oteco long-sweep tee and a full flow tee?",
+     "a": "The long-sweep tee has a swept branch, while the [full flow tee](/p/oteco-long-sweep-full-flow-tees) carries the full bore through the branch. The long-sweep tee is the lower-cost choice where the branch flow is lighter, and both are made to the same casting and test standard. Choose by the branch flow you need."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the Oteco long-sweep tee come in?",
+     "a": "It is listed in 2\", 3\", 4\" and 5\": line pipe thread at 2\", 3\" and 4\", and butt weld in Sch. 80, Sch. 160 and Sch. XXS. Special parts include IH-OTC-410035, a 2\" socket weld, Sch. XXS, and IH-OTC-410026, a 5\" butt weld with a J-prep. The 26 part numbers are all in the size table."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco long-sweep tee suits a 3\" 5,000 psi mud line?",
+     "a": "Take IH-OTC-413023 (Sch. 160) or IH-OTC-413024 (Sch. XXS), both 333LST butt weld tees at 5,000 psi. The 3\" line pipe thread tee, IH-OTC-413021, is rated 3,000 psi, so it suits a lower-pressure line. For sour gas the 3\" part is IH-OTC-413025."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do the Oteco long-sweep tees have?",
+     "a": "The tees are listed from 3,000 psi to 8,000 psi: 3\" and 4\" threaded tees at 3,000 psi, butt weld tees at 5,000 psi, and 5\" extra-heavy-wall tees at 7,500 and 8,000 psi. A 2\" Sch. XXS tee, IH-OTC-417012, is rated 7,500 psi. The end connection sets the rating, so read it from the size table."
+    },
+    {
+     "slot": "F",
+     "q": "Are there sour gas (H2S) Oteco long-sweep tees?",
+     "a": "Yes, sour gas (H2S) long-sweep tees are listed at 3\", 4\" and 5\": IH-OTC-413025, IH-OTC-414108, IH-OTC-415027, IH-OTC-417017 and IH-OTC-418017. Oteco states sour gas service is available on all its manifold fittings. Tell us the pressure and size so we can match the sour part number."
+    },
+    {
+     "slot": "G",
+     "q": "What is the long-sweep tee made from, and is it tested?",
+     "a": "The 5,000 psi tees are cast in ASTM A216 Grade WCC, and the 5\" 7,500 and 8,000 psi tees in A487 Grade 4D modified. Each fitting is machined and hydrostatically tested to at least 1.5 times working pressure, with tensile and chemical certification on request. Weld ends are 37.5° to ASME B36.10."
+    },
+    {
+     "slot": "H",
+     "q": "What mating parts and spares go with an Oteco long-sweep tee?",
+     "a": "The tee mates with line pipe or butt weld pipe, and is fitted with [90° long-sweep ells](/p/oteco-90-degree-long-sweep-ells), [crosses](/p/oteco-long-sweep-full-flow-crosses) and [Y fittings](/p/oteco-long-sweep-y-fittings) from the same Oteco range. There is no wearing seal to replace, so spares are normally a new fitting in the same part number."
+    },
+    {
+     "slot": "J",
+     "q": "Where do Oteco 444LST and 555LST tees go on a rig?",
+     "a": "They go into the mud pump discharge line and the standpipe manifold, where a 4\" or 5\" line needs a branch. The 444LST in Sch. XXS, IH-OTC-414024, is rated 5,000 psi, and IH-OTC-415024 is the 555LST at 5,000 psi. For higher pressure, use the 7,500 psi or 8,000 psi 5\" parts."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco long-sweep tees made?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, which is the country of origin. We are an authorised Oteco distributor for the Middle East, with Oteco stock in the UAE. The full set of styles is on the [Mud Manifold Fittings shelf](/c/mud-manifold-fittings)."
+    },
+    {
+     "slot": "M",
+     "q": "How do I get a quotation for an Oteco long-sweep tee?",
+     "a": "We keep Oteco long-sweep tees in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end connection, pressure and standard or sour gas service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-long-sweep-y-fittings",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco long-sweep Y fitting?",
+     "a": "The Oteco long-sweep Y splits or joins two lines with no hard turn, so abrasive mud keeps flowing with less erosion and pressure loss than through a tee. It is cast for mud pump discharge, standpipe and manifold service. It is listed in 2\" and 4\" only, with 9 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read the Oteco model codes 222Y, 444Y and 454Y?",
+     "a": "The three digits give the leg sizes: 222Y is a 2\" Y, 444Y is a 4\" Y, and 454Y has one leg at 5\". IH-OTC-414094 is the 444Y with 4\" butt weld ends, Sch. XXS, standard service, 5,000 psi. IH-OTC-410013 is the 454Y with butt weld, Sch. 160. The size table lists all 9."
+    },
+    {
+     "slot": "K",
+     "q": "When should I use an Oteco Y fitting instead of a tee?",
+     "a": "Use the Y where one line splits into two, or two merge into one, and you want to avoid the hard turn that a [long-sweep tee](/p/oteco-long-sweep-tees) makes. The Y is available in 2\" and 4\" only. Choose the tee or cross where a 90° branch is needed."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the Oteco long-sweep Y come in?",
+     "a": "The Y is listed in 2\" and 4\". The 2\" Y has line pipe thread, butt weld Sch. 160 and Sch. XXS, and one part, IH-OTC-412092, has a Fig. 1502 union end. The 4\" Y has line pipe thread and butt weld Sch. 160 and Sch. XXS. There is no 3\" or 5\" Y in the list."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 2\" Y do I choose for a 5,000 psi line?",
+     "a": "Choose a 222Y in line pipe thread (IH-OTC-412091), Sch. 160 (IH-OTC-412093) or Sch. XXS (IH-OTC-412094); all are rated 5,000 psi. At 2\" the threaded end carries 5,000 psi, unlike the 4\" threaded Y, IH-OTC-414091, which is 3,000 psi. For sour gas the part is IH-OTC-412097."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do the Oteco long-sweep Y fittings have?",
+     "a": "The Y fittings run from 3,000 psi to 5,000 psi. The 4\" line pipe thread Y is 3,000 psi, and the 2\" threaded, Sch. 160 and Sch. XXS Y fittings and the 4\" butt weld Y fittings are 5,000 psi. Each is hydrostatically tested to at least 1.5 times working pressure."
+    },
+    {
+     "slot": "F",
+     "q": "Is the Oteco 222Y available for sour gas (H2S) service?",
+     "a": "Yes, IH-OTC-412097 is the 2\" Y with butt weld, Sch. XXS ends for sour gas (H2S) service, rated 5,000 psi. There is no 4\" sour Y in the list, but Oteco states that sour gas service is available on all manifold fittings, so send the size and pressure if you need one."
+    },
+    {
+     "slot": "G",
+     "q": "What material is the Oteco long-sweep Y made from?",
+     "a": "The Y fittings are castings in ASTM A216 Grade WCC at 5,000 psi, machined and hydrostatically tested to at least 1.5 times working pressure. The A487 Grade 4D modified castings apply to the 5\" 7,500 and 8,000 psi fittings, which are not in the Y range. Oteco supplies material tensile and chemical certification on request."
+    },
+    {
+     "slot": "H",
+     "q": "What do I connect to an Oteco 2\" Y fitting?",
+     "a": "Match the pipe to the Y end: line pipe thread, butt weld to Sch. 160 or XXS, or a Fig. 1502 union end on IH-OTC-412092. The Y sits in the same manifold as [45° long-sweep ells](/p/oteco-45-degree-long-sweep-ells) and [90° ells](/p/oteco-90-degree-long-sweep-ells), since the 45° leg of a Y lines up with them."
+    },
+    {
+     "slot": "J",
+     "q": "Where is an Oteco Y fitting used in a mud system?",
+     "a": "A long-sweep Y is used where one mud line splits to two pumps or two lines merge to one, as at a discharge manifold or standpipe junction. The 444Y in Sch. XXS, IH-OTC-414094, suits a 5,000 psi 4\" junction. A Y keeps the turn gradual so erosion at the junction is lower than with a tee."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco long-sweep Y and where?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, so the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East. For other branch styles see the [crosses](/p/oteco-long-sweep-full-flow-crosses) and the [Mud Manifold Fittings shelf](/c/mud-manifold-fittings)."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco long-sweep Y fitting?",
+     "a": "We keep Oteco long-sweep Y fittings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end connection, pressure and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-45-degree-long-sweep-ells",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco 45° long-sweep ell?",
+     "a": "The Oteco 45° long-sweep ell is a 45° long-radius elbow for mud pump discharge, standpipe and manifold piping, where the long sweep keeps abrasive mud flowing with less erosion and pressure loss. It is listed in 2\", 3\", 4\" and 5\", with 24 part numbers in standard and sour gas service."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco model 44L45 and part number IH-OTC-414074?",
+     "a": "The model code gives the size and angle: 44L45 is a 4\" long-sweep 45° ell, 22L45 is 2\", 33L45 is 3\" and 55L45 is 5\". IH-OTC-414074 is the 44L45 with 4\" butt weld ends, Sch. XXS, standard service, 5,000 psi. The size table lists all 24 part numbers."
+    },
+    {
+     "slot": "K",
+     "q": "When do I choose an Oteco 45° ell over a 90° ell?",
+     "a": "Choose the 45° ell when a line changes direction gradually or offsets around an obstacle, and the [90° long-sweep ell](/p/oteco-90-degree-long-sweep-ells) where it must turn a right angle. Two 45° ells make a 90° turn with a straight run between them. Both styles are cast and tested alike."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the Oteco 45° long-sweep ell come in?",
+     "a": "It is listed in 2\", 3\", 4\" and 5\". The 2\" and 4\" sizes come in line pipe thread, and all four sizes in butt weld Sch. 160 and Sch. XXS. Special ends include IH-OTC-410205, a 4\" butt weld in Sch. 120, and IH-OTC-418046, a 5\" 8,000 psi part with a 7\" OD × 5.125\" bore butt weld end."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 22L45 or 33L45 do I pick for a 5,000 psi line?",
+     "a": "Take a butt weld Sch. 160 or Sch. XXS ell: IH-OTC-412073 and IH-OTC-412074 for 2\" and IH-OTC-413073 and IH-OTC-413074 for 3\", all 5,000 psi. The 2\" threaded ell, IH-OTC-412071, is also 5,000 psi, but the 4\" threaded ell, IH-OTC-414071, is only 3,000 psi."
+    },
+    {
+     "slot": "E",
+     "q": "What working pressures do the Oteco 45° ells have?",
+     "a": "The 45° ells run from 3,000 psi to 8,000 psi. The 4\" threaded ell is 3,000 psi, the Sch. 160 and Sch. XXS butt weld ells are 5,000 psi, and the 5\" and 2\" Sch. XXS extra-heavy parts are 7,500 psi, with 5\" at 8,000 psi too. Each fitting is tested to at least 1.5 times working pressure."
+    },
+    {
+     "slot": "F",
+     "q": "Are there sour gas (H2S) Oteco 45° long-sweep ells?",
+     "a": "Yes, sour gas (H2S) 45° ells are listed in all four sizes: IH-OTC-412077 (2\"), IH-OTC-413087 (3\"), IH-OTC-414075 (4\") and IH-OTC-415075, IH-OTC-417047 and IH-OTC-418047 (5\"). Oteco states that sour gas service is available on all its manifold fittings."
+    },
+    {
+     "slot": "G",
+     "q": "What is the 45° long-sweep ell cast in?",
+     "a": "The 5,000 psi ells are cast in ASTM A216 Grade WCC and the 5\" 7,500 and 8,000 psi ells in A487 Grade 4D modified, with hydrostatic testing to at least 1.5 times working pressure. One part, IH-OTC-410047, is described as an A487 grade 1B casting. Tensile and chemical certification is available on request."
+    },
+    {
+     "slot": "H",
+     "q": "What do I pair with an Oteco 45° long-sweep ell?",
+     "a": "Pair it with [90° long-sweep ells](/p/oteco-90-degree-long-sweep-ells), [long-sweep tees](/p/oteco-long-sweep-tees) and straight pipe of the same schedule. The weld end is bevelled at 37.5° and sized to ASME B36.10, so the pipe matches the end directly. Oteco sends dimension drawings with the quotation."
+    },
+    {
+     "slot": "J",
+     "q": "Where is an Oteco 44L45 ell used?",
+     "a": "A 44L45 ell turns a 4\" mud line 45°, for example in the discharge manifold or the standpipe run around a structure. IH-OTC-414073 in Sch. 160 and IH-OTC-414074 in Sch. XXS are both 5,000 psi. Pairs of 45° ells give a smoother offset than a single 90° turn."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco 45° long-sweep ell?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East. See the whole [Mud Manifold Fittings shelf](/c/mud-manifold-fittings) for the other styles."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco 45° long-sweep ell?",
+     "a": "We keep Oteco 45° long-sweep ells in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end connection, pressure and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-90-degree-long-sweep-ells",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco 90° long-sweep ell?",
+     "a": "The Oteco 90° long-sweep ell is a 90° long-radius elbow for mud pump discharge, standpipe, and choke and kill manifolds. The long sweep keeps abrasive mud flowing with less erosion and pressure loss than a short-radius elbow. It is the widest of the ells, listed in 2\" to 6\", with 31 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco model 55L90 and part number IH-OTC-418005?",
+     "a": "The model code gives the size and angle: 55L90 is a 5\" 90° long-sweep ell, 66L90 is the 6\" ell and 54L90 has a 4\" end. IH-OTC-418005 is the 55L90 with 5\" butt weld ends, Sch. XXS, standard service, rated 8,000 psi. The size table lists all 31 part numbers."
+    },
+    {
+     "slot": "K",
+     "q": "How does the Oteco 90° long-sweep ell differ from the 90° ell with a 2\" outlet?",
+     "a": "The plain 90° ell is a single elbow, while the [90° ell with 2 inch outlet](/p/oteco-90-degree-long-sweep-ells-2-inch-outlet) adds a 2\" outlet for a gauge, bleed-off or fill line. The plain ell also goes up to 6\", which the outlet version does not. Choose the outlet style where you need a tapping on the bend."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and end connections does the Oteco 90° long-sweep ell come in?",
+     "a": "It is listed in 2\", 3\", 4\", 5\" and 6\". Ends are line pipe thread at 2\", 3\" and 4\", and butt weld Sch. 80, Sch. 160 and Sch. XXS, with some special ends such as IH-OTC-410040, a 4\" socket weld, and IH-OTC-410029, a 5\" butt weld × 4\" line pipe thread. The only 6\" part is IH-OTC-418008."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 90° ell do I choose for a 4\" 5,000 psi line?",
+     "a": "Choose the 44L90 in Sch. 160 (IH-OTC-414063) or Sch. XXS (IH-OTC-414064), both 5,000 psi. The threaded 4\" ell, IH-OTC-414061, and the Sch. 80 ell, IH-OTC-414062, are rated 3,000 psi. For sour gas the 4\" part is IH-OTC-414106."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do the Oteco 90° long-sweep ells have?",
+     "a": "The ells run from 3,000 psi to 8,000 psi. Threaded 3\" and 4\" ells and Sch. 80 ells are 3,000 psi, Sch. 160 and Sch. XXS butt weld ells are 5,000 psi, and the extra-heavy-wall parts are 7,500 psi (2\" and 5\") and 8,000 psi (5\" and 6\"). Each is tested to at least 1.5 times working pressure."
+    },
+    {
+     "slot": "F",
+     "q": "Are there sour gas (H2S) Oteco 90° long-sweep ells?",
+     "a": "Yes, there are sour gas (H2S) 90° ells at 2\", 3\", 4\" and 5\": IH-OTC-412067 and IH-OTC-412068 (2\"), IH-OTC-413088 (3\"), IH-OTC-414106 (4\"), and IH-OTC-415065, IH-OTC-417007 and IH-OTC-418007 (5\"). Oteco states that sour gas service is available on all its manifold fittings."
+    },
+    {
+     "slot": "G",
+     "q": "What is the 6\" 66L90 and 5\" 55L90 ell cast in?",
+     "a": "The 8,000 psi 5\" and 6\" ells are extra-heavy-wall castings in A487 Grade 4D modified, and the 5,000 psi ells are ASTM A216 Grade WCC. Every fitting is hydrostatically tested to at least 1.5 times working pressure; the 8,000 psi parts are tested at 12,000 psi. Weld ends are 37.5° and follow ASME B36.10."
+    },
+    {
+     "slot": "H",
+     "q": "What spares or mating parts go with an Oteco 90° ell?",
+     "a": "The ell is a casting with no wearing parts, so it mates with pipe of the same schedule and with [45° ells](/p/oteco-45-degree-long-sweep-ells), [tees](/p/oteco-long-sweep-tees) and [crosses](/p/oteco-long-sweep-full-flow-crosses) from the same range. Order replacement by part number if a bend erodes. Oteco sends the dimension drawing with the quotation."
+    },
+    {
+     "slot": "J",
+     "q": "Where is an Oteco 90° long-sweep ell used on a rig?",
+     "a": "It turns the mud line a right angle at the pump discharge, the standpipe base, and the choke and kill manifold. A 5\" Sch. XXS ell, IH-OTC-415064, is rated 5,000 psi, and IH-OTC-418005 is rated 8,000 psi for the highest-pressure systems. The long sweep protects the outer bend from erosion."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco 90° long-sweep ells made?",
+     "a": "They are made by Oteco Inc. in Houston, Texas, USA, so the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. The [Mud Manifold Fittings shelf](/c/mud-manifold-fittings) lists the other manifold styles."
+    },
+    {
+     "slot": "M",
+     "q": "How do I buy an Oteco 90° long-sweep ell in the UAE?",
+     "a": "We keep Oteco 90° long-sweep ells in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end, pressure and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-90-degree-long-sweep-ells-2-inch-outlet",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco 90° long-sweep ell with a 2\" outlet?",
+     "a": "The Oteco 90° long-sweep ell with 2 inch outlet is a 90° long-radius elbow with a 2-inch outlet for a gauge, a bleed-off or a fill line. It is cast for mud pump discharge, standpipe and manifold piping. It is listed in 4\" and 5\", with 10 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco models 424L90, 525L90 and 535L90?",
+     "a": "The three digits give the run and outlet sizes: 424L90 is a 4\" ell with a 2\" outlet, 525L90 is a 5\" ell with a 2\" outlet, and 535L90 has a 3\" outlet. IH-OTC-414084 is the 424L90 in butt weld Sch. XXS, standard service, 5,000 psi. The size table lists all 10 parts."
+    },
+    {
+     "slot": "K",
+     "q": "Should I use the 90° ell with a 2\" outlet or fit a tee?",
+     "a": "Use the outlet ell when you want a tapping at the bend, because it saves one fitting and one weld joint compared with an elbow plus a [tee](/p/oteco-long-sweep-tees). The plain [90° ell](/p/oteco-90-degree-long-sweep-ells) suits runs with no tapping. The outlet ell is listed only in 4\" and 5\"."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the 90° ell with 2\" outlet come in?",
+     "a": "It comes in 4\" (model 424L90) and 5\" (525L90 and 535L90). Ends are 4\" line pipe thread, butt weld Sch. 160 and Sch. XXS, and one 4\" part, IH-OTC-410015, has a 2\" line pipe thread outlet. The 5\" parts are butt weld, including a J-prep part, IH-OTC-410023."
+    },
+    {
+     "slot": "D",
+     "q": "Which 424L90 ell should I choose for a 5,000 psi gauge tapping?",
+     "a": "Choose the Sch. 160 (IH-OTC-414083) or Sch. XXS (IH-OTC-414084) 424L90, both 5,000 psi. IH-OTC-410015 and IH-OTC-410032 give a 2\" line pipe thread outlet with the Sch. XXS or Sch. 160 4\" butt weld end. IH-OTC-414081 is threaded and rated 3,000 psi."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do the 90° ells with 2\" outlet have?",
+     "a": "This style is listed from 3,000 psi to 5,000 psi. The 4\" line pipe thread ell, IH-OTC-414081, is 3,000 psi, and the butt weld Sch. 160 and Sch. XXS ells in 4\" and 5\" are 5,000 psi. There is no 7,500 or 8,000 psi part in this style."
+    },
+    {
+     "slot": "F",
+     "q": "Is there a sour gas (H2S) Oteco 424L90 ell?",
+     "a": "Yes, IH-OTC-414110 is the 4\" 424L90 with butt weld Sch. XXS ends for sour gas (H2S) service, rated 5,000 psi. There is no 5\" sour part listed, but Oteco states sour gas service is available on all its manifold fittings, so ask us if you need one."
+    },
+    {
+     "slot": "G",
+     "q": "What material and test standard applies to the 2\" outlet ell?",
+     "a": "The 5,000 psi ells are cast in ASTM A216 Grade WCC and hydrostatically tested to at least 1.5 times working pressure, with weld ends at 37.5° to ASME B36.10. The A487 Grade 4D modified castings are for the 5\" 7,500 and 8,000 psi parts, which are not in this style. Certification is available on request."
+    },
+    {
+     "slot": "H",
+     "q": "What do I connect to the 2\" outlet of an Oteco 424L90 ell?",
+     "a": "The 2\" outlet takes line pipe thread on parts such as IH-OTC-410015, so it accepts a threaded gauge, bleed valve or fill line fitting. The main ends join to 4\" pipe of the same schedule. Check the outlet thread rating, since a 2\" threaded end is lower-rated than a weld end on some sizes."
+    },
+    {
+     "slot": "J",
+     "q": "What is an Oteco 90° ell with 2\" outlet used for in a mud system?",
+     "a": "It is used where the bend of a mud line needs a tapping: a pressure gauge, a bleed-off or a fill line, so you avoid welding a separate tee. A 424L90 in Sch. XXS (IH-OTC-414084) is a common 4\" choice at 5,000 psi. The bend also protects the outlet from direct mud impact."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco 90° long-sweep ell with 2\" outlet?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, and the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. Compare the plain [90° long-sweep ells](/p/oteco-90-degree-long-sweep-ells) or browse the [Mud Manifold Fittings shelf](/c/mud-manifold-fittings)."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco 90° ell with 2\" outlet?",
+     "a": "We keep Oteco 90° long-sweep ells with 2\" outlet in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end, outlet thread, pressure and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-160-degree-standpipe-goosenecks",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco 160° standpipe gooseneck?",
+     "a": "The Oteco 160° standpipe gooseneck is the cast fitting at the top of the standpipe that turns the mud line down into the rotary hose. It uses a long sweep so abrasive mud passes with less erosion and pressure loss. It is listed in 3\", 4\" and 5\", with 13 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco model 44G6 and part number IH-OTC-414034?",
+     "a": "The model code gives the sizes and style: 33G6 is a 3\" 160° gooseneck, 44G6 a 4\", 55G6 a 5\", and 54G6 has a 5\" and a 4\" end. IH-OTC-414034 is the 44G6 with 4\" butt weld ends, Sch. XXS, standard service, 5,000 psi. The size table lists all 13 parts."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between the 160° gooseneck and the 180° gooseneck?",
+     "a": "The 160° gooseneck turns the standpipe flow down into the rotary hose, while the [180° standpipe gooseneck](/p/oteco-180-degree-standpipe-goosenecks) is a full return bend. The 160° style is listed in 3\", 4\" and 5\", the 180° in 4\" and 5\" only. Choose by the angle your standpipe geometry needs."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the Oteco 160° gooseneck come in?",
+     "a": "It is listed in 3\", 4\" and 5\": line pipe thread at 3\", 4\" and 5\", and butt weld in Sch. 80 (3\"), Sch. 160 and Sch. XXS. One part, IH-OTC-410028, is a 54G6 with a 5\" butt weld Sch. XXS end and a 4\" line pipe thread end. The size table lists all 13 part numbers."
+    },
+    {
+     "slot": "D",
+     "q": "Which 33G6, 44G6 or 55G6 gooseneck suits a 5,000 psi standpipe?",
+     "a": "Choose the Sch. 160 or Sch. XXS butt weld gooseneck: IH-OTC-413033 and IH-OTC-413034 (3\"), IH-OTC-414033 and IH-OTC-414034 (4\"), or IH-OTC-415033 and IH-OTC-415034 (5\"), all 5,000 psi. The threaded parts, such as IH-OTC-414031, are rated 3,000 psi."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do the Oteco 160° standpipe goosenecks have?",
+     "a": "The listing runs from 3,000 psi to 5,000 psi. Line pipe thread goosenecks are 3,000 psi and butt weld Sch. 160 and Sch. XXS goosenecks are 5,000 psi. There are no 7,500 or 8,000 psi parts in this style; the top outlet style goes higher. Each is tested to at least 1.5 times working pressure."
+    },
+    {
+     "slot": "F",
+     "q": "Is there a sour gas (H2S) Oteco 160° gooseneck?",
+     "a": "Yes, sour gas (H2S) goosenecks are listed at 4\" and 5\": IH-OTC-414111 and IH-OTC-415036, both butt weld Sch. XXS at 5,000 psi. Oteco states sour gas service is available on all its manifold fittings, so ask if you need another size."
+    },
+    {
+     "slot": "G",
+     "q": "What is the 160° gooseneck cast in, and how is it tested?",
+     "a": "The goosenecks are castings in ASTM A216 Grade WCC at 5,000 psi, machined and hydrostatically tested to at least 1.5 times working pressure. Weld ends are bevelled at 37.5° to ASME B36.10, and line pipe threads are cut in the 3\" and 4\" sizes. Oteco supplies tensile and chemical certification on request."
+    },
+    {
+     "slot": "H",
+     "q": "What does a 160° gooseneck connect to at the top of a standpipe?",
+     "a": "The gooseneck joins the standpipe by weld or line pipe thread on one end, and the rotary hose connection on the other. If you need a gauge or wireline entry at the top, see the [gooseneck with top outlet](/p/oteco-160-degree-standpipe-goosenecks-top-outlet). The other manifold styles are in the same Oteco range."
+    },
+    {
+     "slot": "J",
+     "q": "Where does the Oteco 55G6 gooseneck sit on a rig?",
+     "a": "The 55G6 sits at the top of the standpipe on the derrick, joining the standpipe to the rotary hose. IH-OTC-415034 is the Sch. XXS part at 5,000 psi, and IH-OTC-415033 is Sch. 160 at 5,000 psi. IH-OTC-410018 is the 5\" threaded part at 3,000 psi."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco 160° standpipe gooseneck?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, so the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. See the [Mud Manifold Fittings shelf](/c/mud-manifold-fittings) for the other fittings."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco 160° standpipe gooseneck?",
+     "a": "We keep Oteco 160° standpipe goosenecks in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end connection, pressure and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-160-degree-standpipe-goosenecks-top-outlet",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco 160° gooseneck with a top outlet?",
+     "a": "The Oteco 160° gooseneck with top outlet is a 160° standpipe gooseneck with a top outlet for a pressure gauge or a wireline entry. It turns the mud line down into the rotary hose and keeps the long sweep. It is listed in 3\", 4\" and 5\", with 18 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco models 333GTO, 444GTO and 555GTO?",
+     "a": "The three digits give the sizes and GTO marks the gooseneck with top outlet, so 333GTO is 3\", 444GTO is 4\" and 555GTO is 5\". IH-OTC-415054 is the 555GTO with 5\" butt weld ends, Sch. XXS, standard service, 5,000 psi. The size table lists all 18 part numbers."
+    },
+    {
+     "slot": "K",
+     "q": "Why choose the top-outlet gooseneck over the plain 160° gooseneck?",
+     "a": "Choose the top outlet when you need a gauge or wireline entry at the top of the standpipe, because the outlet is cast in. The plain [160° gooseneck](/p/oteco-160-degree-standpipe-goosenecks) has no outlet and tops out at 5,000 psi, while this style goes to 8,000 psi in 5\". Both are the same long-sweep casting."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the Oteco top-outlet gooseneck come in?",
+     "a": "It comes in 3\", 4\" and 5\": line pipe thread, and butt weld Sch. 160 and Sch. XXS, with special parts such as IH-OTC-410022, a 5\" butt weld with a 127 mm (5.000 in) OD end, and IH-OTC-410009, a 4\" Sch. XXS butt weld × line pipe thread. The size table lists all 18."
+    },
+    {
+     "slot": "D",
+     "q": "Which 5\" 555GTO do I choose for 7,500 or 8,000 psi?",
+     "a": "For 7,500 psi take IH-OTC-417055, and for 8,000 psi take IH-OTC-418055, both 5\" butt weld Sch. XXS in standard service. The 5,000 psi 555GTO parts are IH-OTC-415053 (Sch. 160) and IH-OTC-415054 (Sch. XXS). Confirm the highest pressure in your standpipe system before choosing."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do the Oteco top-outlet goosenecks have?",
+     "a": "The listing runs from 3,000 psi to 8,000 psi: threaded parts at 3,000 psi, Sch. 160 and Sch. XXS butt weld parts at 5,000 psi, and the 5\" Sch. XXS extra-heavy-wall parts at 7,500 psi and 8,000 psi. Each fitting is hydrostatically tested to at least 1.5 times working pressure."
+    },
+    {
+     "slot": "F",
+     "q": "Are there sour gas (H2S) Oteco top-outlet goosenecks?",
+     "a": "Yes, sour gas (H2S) parts are listed at 4\" and 5\": IH-OTC-414055, IH-OTC-415055, IH-OTC-417057 and IH-OTC-418057. Oteco states that sour gas service is available on all its manifold fittings, so ask us for a 3\" sour part if you need one."
+    },
+    {
+     "slot": "G",
+     "q": "What is the top-outlet gooseneck made from?",
+     "a": "The 5,000 psi goosenecks are cast in ASTM A216 Grade WCC, and the 5\" 7,500 and 8,000 psi goosenecks in A487 Grade 4D modified, all machined and hydrostatically tested to at least 1.5 times working pressure. The 8,000 psi parts are tested at 12,000 psi. Weld ends are 37.5° to ASME B36.10."
+    },
+    {
+     "slot": "H",
+     "q": "What fits the top outlet of an Oteco gooseneck?",
+     "a": "The top outlet takes a pressure gauge or a wireline entry fitting, which you choose to suit the outlet connection on the drawing Oteco supplies with the quotation. The main ends join the standpipe and the rotary hose. For gauge range selection, see the [pressure gauge guide](/blog/pressure-gauge-guide)."
+    },
+    {
+     "slot": "J",
+     "q": "Where is the Oteco gooseneck with top outlet used?",
+     "a": "It is used at the top of the standpipe where a gauge or wireline entry is needed, for example on a rig that runs wireline through the mud system. The 444GTO in Sch. XXS, IH-OTC-414054, is rated 5,000 psi, and the 5\" parts go up to 8,000 psi."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco 160° gooseneck with top outlet?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, so the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. The plain version is the [160° standpipe gooseneck](/p/oteco-160-degree-standpipe-goosenecks)."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco 160° gooseneck with top outlet?",
+     "a": "We keep Oteco 160° standpipe goosenecks with top outlet in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end connection, pressure and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-180-degree-standpipe-goosenecks",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco 180° standpipe gooseneck?",
+     "a": "The Oteco 180° standpipe gooseneck is a 180° return-bend gooseneck for standpipes and manifolds, cast with a long sweep so abrasive mud passes with less erosion and pressure loss. It is the smallest range in the family: 4\" and 5\" only, with 5 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco model 44G8 and part number IH-OTC-415044?",
+     "a": "The model code gives the size and the angle style: 44G8 is a 4\" 180° gooseneck and 55G8 is a 5\". IH-OTC-415044 is the 55G8 with 5\" butt weld ends, Sch. XXS, standard service, rated 5,000 psi. All 5 parts are in the size table."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between the Oteco 180° and 160° goosenecks?",
+     "a": "The 180° is a full return bend, while the [160° gooseneck](/p/oteco-160-degree-standpipe-goosenecks) turns the flow down into the rotary hose at a shallower angle. The 180° is listed in 4\" and 5\" with 5 parts, and the 160° adds a 3\" size."
+    },
+    {
+     "slot": "D",
+     "q": "What sizes and ends does the Oteco 180° gooseneck come in?",
+     "a": "It comes in 4\" (44G8) and 5\" (55G8). The 4\" part IH-OTC-414041 has line pipe thread, while IH-OTC-414043 and IH-OTC-414044 are butt weld Sch. 160 and Sch. XXS. The 5\" parts are IH-OTC-415043 (Sch. 160) and IH-OTC-415044 (Sch. XXS), both butt weld."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 180° gooseneck do I choose for 5,000 psi?",
+     "a": "For 5,000 psi choose a butt weld part: IH-OTC-414043 or IH-OTC-414044 for 4\", and IH-OTC-415043 or IH-OTC-415044 for 5\". The only threaded part, IH-OTC-414041, is rated 3,000 psi. There is no 7,500 or 8,000 psi part in this style."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do the Oteco 180° goosenecks have?",
+     "a": "The ratings run from 3,000 psi to 5,000 psi. The 4\" line pipe thread part is 3,000 psi, and the Sch. 160 and Sch. XXS butt weld parts are 5,000 psi. Each fitting is hydrostatically tested to at least 1.5 times working pressure."
+    },
+    {
+     "slot": "F",
+     "q": "Is there a sour gas (H2S) Oteco 180° gooseneck?",
+     "a": "None of the 5 listed parts is a sour gas (H2S) part number. Oteco states that sour gas service is available on all its manifold fittings, so send the size, end and pressure for a sour 44G8 or 55G8 and we quote it with Oteco."
+    },
+    {
+     "slot": "G",
+     "q": "What is the 180° gooseneck cast in?",
+     "a": "The 5,000 psi goosenecks are castings in ASTM A216 Grade WCC, machined and hydrostatically tested to at least 1.5 times working pressure. Weld ends are bevelled at 37.5° and match ASME B36.10, and the 4\" line pipe thread is cut in the casting. Material tensile and chemical certification is available on request."
+    },
+    {
+     "slot": "H",
+     "q": "What do I connect to an Oteco 180° gooseneck?",
+     "a": "Join it by weld or line pipe thread to the standpipe or manifold pipe of the same schedule as its end. If the layout needs a gentler 160° turn, use the [160° gooseneck](/p/oteco-160-degree-standpipe-goosenecks), or add a top outlet with the [top outlet style](/p/oteco-160-degree-standpipe-goosenecks-top-outlet)."
+    },
+    {
+     "slot": "J",
+     "q": "Where does an Oteco 180° gooseneck go in a mud system?",
+     "a": "It is used where a standpipe or manifold line has to reverse direction, as a return bend at the top or end of a run. The 44G8 in Sch. XXS, IH-OTC-414044, is rated 5,000 psi, and the 5\" part IH-OTC-415044 is also 5,000 psi."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco 180° standpipe gooseneck?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, and the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. See the [Mud Manifold Fittings shelf](/c/mud-manifold-fittings) for the other styles."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco 180° standpipe gooseneck?",
+     "a": "We keep Oteco 180° standpipe goosenecks in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the part number, or the size, end connection, pressure and service. We confirm the part and the delivery before you order."
+    }
+   ]
+  }
+ ]
+}

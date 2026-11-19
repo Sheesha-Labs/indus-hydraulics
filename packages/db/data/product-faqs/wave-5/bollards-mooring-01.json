@@ -1,0 +1,1318 @@
+{
+  "family": "bollards-mooring-01",
+  "extraFacts": [
+    {
+      "fact": "R Type Dock Bollard listing: Material Cast steel; 10 listed sizes",
+      "source": "Indus Hydraulics listing for R Type Dock Bollard"
+    },
+    {
+      "fact": "Curved Type Bollard listing: Material Cast iron",
+      "source": "Indus Hydraulics listing for Curved Type Bollard"
+    },
+    {
+      "fact": "Single Bitt Bollard listing: Material Cast steel; 7 listed sizes",
+      "source": "Indus Hydraulics listing for Single Bitt Bollard"
+    },
+    {
+      "fact": "R Type Dock Bollard listing: Size range 10 t to 200 t; Working load limit 10 to 200 t",
+      "source": "Indus Hydraulics listing for R Type Dock Bollard"
+    },
+    {
+      "fact": "T Head Dock Bollard listing: Size range 10 t to 200 t; Working load limit 10 to 200 t",
+      "source": "Indus Hydraulics listing for T Head Dock Bollard"
+    },
+    {
+      "fact": "Marine Double Bollard JIS F2001-1995 listing: Pattern / standard JIS F 2001; 14 listed sizes; weight 18.9 to 3071 kg",
+      "source": "Indus Hydraulics listing for Marine Double Bollard JIS F2001-1995"
+    },
+    {
+      "fact": "Marine Double Bollard GB/T 554-2008 Type B listing: 8 listed sizes",
+      "source": "Indus Hydraulics listing for Marine Double Bollard GB/T 554-2008 Type B"
+    },
+    {
+      "fact": "Marine Double Bollard GB/T 554-1996 Type B listing: Size range 160 mm to 500 mm; Minimum breaking load 49 to 451 kN",
+      "source": "Indus Hydraulics listing for Marine Double Bollard GB/T 554-1996 Type B"
+    },
+    {
+      "fact": "Marine Double Bollard GB/T 554-1996 Type A listing: Size range 100 mm to 800 mm; Minimum breaking load 29 to 981 kN",
+      "source": "Indus Hydraulics listing for Marine Double Bollard GB/T 554-1996 Type A"
+    },
+    {
+      "fact": "Marine Double Bollard GB/T 554-2008 Type A listing: 14 listed sizes",
+      "source": "Indus Hydraulics listing for Marine Double Bollard GB/T 554-2008 Type A"
+    },
+    {
+      "fact": "Marine Double Bollard GB/T 554-1996 Type A listing: Size range 100 mm to 800 mm; Minimum breaking load 29 to 981 kN",
+      "source": "Indus Hydraulics listing for Marine Double Bollard GB/T 554-1996 Type A"
+    },
+    {
+      "fact": "Marine Double Bollard GB/T 554-2008 Type A listing: 14 listed sizes; weight 19 to 3071 kg",
+      "source": "Indus Hydraulics listing for Marine Double Bollard GB/T 554-2008 Type A"
+    },
+    {
+      "fact": "Marine Double Bollard ISO 13795 Type B listing: weight 45 to 1850 kg",
+      "source": "Indus Hydraulics listing for Marine Double Bollard ISO 13795 Type B"
+    },
+    {
+      "fact": "Marine Double Bollard ISO 13795 Type A listing: weight 29 to 1391 kg",
+      "source": "Indus Hydraulics listing for Marine Double Bollard ISO 13795 Type A"
+    },
+    {
+      "fact": "Marine Double Bollard DIN 82607-1995 listing: Pattern / standard DIN 82607; 8 listed sizes; weight 21 to 770 kg",
+      "source": "Indus Hydraulics listing for Marine Double Bollard DIN 82607-1995"
+    },
+    {
+      "fact": "Marine Double Bollard JIS F2001-1995 listing: Pattern / standard JIS F 2001; 14 listed sizes; weight 18.9 to 3071 kg",
+      "source": "Indus Hydraulics listing for Marine Double Bollard JIS F2001-1995"
+    },
+    {
+      "fact": "Marine Double Cross Bollard GB/T 554-2008 Type DL listing: Working load limit 13 to 62 kN; 6 listed sizes; weight 7 to 103 kg",
+      "source": "Indus Hydraulics listing for Marine Double Cross Bollard GB/T 554-2008 Type DL"
+    },
+    {
+      "fact": "Marine Double Cross Bollard GB/T 554-2008 Type DH listing: Working load limit 72 to 185 kN; 3 listed sizes; weight 181 to 576 kg",
+      "source": "Indus Hydraulics listing for Marine Double Cross Bollard GB/T 554-2008 Type DH"
+    },
+    {
+      "fact": "Marine Double Bollard GB/T 554-1996 Type A listing: 14 listed sizes; weight 19 to 3071 kg",
+      "source": "Indus Hydraulics listing for Marine Double Bollard GB/T 554-1996 Type A"
+    }
+  ],
+  "products": [
+    {
+      "slug": "curved-type-bollard",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Curved Type Bollard used for?",
+          "a": "Curved Type Bollard is a curved-type cast iron bollard for holding mooring lines on a dock or jetty. It is listed in 8 sizes, 5 t (150 mm) to 100 t (450 mm)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Curved Type Bollard, such as IH-LR-BM-CB-5T?",
+          "a": "Curved Type Bollard part numbers begin with IH-LR-BM-CB and end in a size code: IH-LR-BM-CB-5T is the 5 t (150 mm) size and IH-LR-BM-CB-100T is the 100 t (450 mm) size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Curved Type Bollard come in?",
+          "a": "Curved Type Bollard is listed in 8 sizes, 5 t (150 mm) to 100 t (450 mm), each with its own Indus part number, for example IH-LR-BM-CB-5T and IH-LR-BM-CB-100T. The table includes 5 t (150 mm): weight 70 kg and 100 t (450 mm): weight 1670 kg."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Curved Type Bollard?",
+          "a": "For Curved Type Bollard, choose on the safe working load of the lines and the standard the vessel or berth is built to; the rating assumes structure that can carry it."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Curved Type Bollard have?",
+          "a": "The listing for Curved Type Bollard gives its dimensions and weights but no working load limit. The load that goes with each size is set by the standard or the maker's data, so tell us the line loads and the standard the berth or vessel is built to and we confirm what can be supplied."
+        },
+        {
+          "slot": "F",
+          "q": "What is Curved Type Bollard made from, and what finish does it have?",
+          "a": "Curved Type Bollard is made from cast iron. Cast bollards are bolted down to the quay structure. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Curved Type Bollard?",
+          "a": "The listing for Curved Type Bollard names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Curved Type Bollard connect to or work with?",
+          "a": "Curved Type Bollard takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Curved Type Bollard be inspected and looked after?",
+          "a": "Check Curved Type Bollard for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Curved Type Bollard differ from R Type Dock Bollard?",
+          "a": "Curved Type Bollard differs from [R Type Dock Bollard](/p/r-type-dock-bollard) in its material Cast iron against Cast steel; 8 listed sizes against 10."
+        },
+        {
+          "slot": "L",
+          "q": "How are Curved Type Bollard shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Curved Type Bollard from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Curved Type Bollard in stock in Dubai?",
+          "a": "Yes, Curved Type Bollard is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "cvi-bollard",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is CVI Bollard used for?",
+          "a": "CVI Bollard is a cast steel CVI pattern bollard for holding mooring lines on a quay or jetty, rated by working load in tonnes. It is listed in 8 sizes, CVI-10 to CVI-200."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for CVI Bollard, such as IH-LR-BM-CVIB-CVI-10?",
+          "a": "CVI Bollard part numbers begin with IH-LR-BM-CVIB and end in a size code: IH-LR-BM-CVIB-CVI-10 is the CVI-10 size and IH-LR-BM-CVIB-CVI-200 is the CVI-200 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does CVI Bollard come in?",
+          "a": "CVI Bollard is listed in 8 sizes, CVI-10 to CVI-200, each with its own Indus part number, for example IH-LR-BM-CVIB-CVI-10 and IH-LR-BM-CVIB-CVI-200. The table includes CVI-10: WLL 10 t and CVI-200: WLL 200 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of CVI Bollard?",
+          "a": "For CVI Bollard, choose on the safe working load of the lines and the standard the vessel or berth is built to; the rating assumes structure that can carry it."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does CVI Bollard have?",
+          "a": "CVI Bollard is listed with a working load limit of 10 to 200 t, depending on size; for example CVI-75: WLL 75 t. The WLL is the most the bollard may carry in service, and the rating assumes a structure that can carry the load."
+        },
+        {
+          "slot": "F",
+          "q": "What is CVI Bollard made from, and what finish does it have?",
+          "a": "CVI Bollard is made from casting steel. Cast bollards are bolted down to the quay structure. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to CVI Bollard?",
+          "a": "The listing for CVI Bollard names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does CVI Bollard connect to or work with?",
+          "a": "CVI Bollard takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should CVI Bollard be inspected and looked after?",
+          "a": "Check CVI Bollard for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does CVI Bollard differ from Curved Type Bollard?",
+          "a": "CVI Bollard differs from [Curved Type Bollard](/p/curved-type-bollard) in its material Casting steel against Cast iron. Choose on the size range and ratings you need; the part numbers for each are in their own size tables."
+        },
+        {
+          "slot": "L",
+          "q": "How are CVI Bollard shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship CVI Bollard from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep CVI Bollard in stock in Dubai?",
+          "a": "Yes. We keep CVI Bollard in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dock-inclined-double-bitts-bollard",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Dock Inclined Double Bitts Bollard used for?",
+          "a": "Dock Inclined Double Bitts Bollard is a cast steel dock bollard with two inclined bitts, for holding mooring lines on a quay or jetty. It is listed in 9 sizes, DBA20 to DBA200."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Dock Inclined Double Bitts Bollard, such as IH-LR-BM-DIDBB-DBA20?",
+          "a": "Dock Inclined Double Bitts Bollard part numbers begin with IH-LR-BM-DIDBB and end in a size code: IH-LR-BM-DIDBB-DBA20 is the DBA20 size and IH-LR-BM-DIDBB-DBA200 is the DBA200 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Dock Inclined Double Bitts Bollard come in?",
+          "a": "Dock Inclined Double Bitts Bollard is listed in 9 sizes, DBA20 to DBA200, each with its own Indus part number, for example IH-LR-BM-DIDBB-DBA20 and IH-LR-BM-DIDBB-DBA200. The table includes DBA20: WLL 20 t and DBA200: WLL 200 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Dock Inclined Double Bitts Bollard?",
+          "a": "For Dock Inclined Double Bitts Bollard, choose on the safe working load of the lines and the standard the vessel or berth is built to; the rating assumes structure that can carry it."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Dock Inclined Double Bitts Bollard have?",
+          "a": "Dock Inclined Double Bitts Bollard is listed with a working load limit of 20 to 200 t, depending on size; for example DBA100: WLL 100 t. The WLL is the most the bollard may carry in service, and the rating assumes a structure that can carry the load."
+        },
+        {
+          "slot": "F",
+          "q": "What is Dock Inclined Double Bitts Bollard made from, and what finish does it have?",
+          "a": "Dock Inclined Double Bitts Bollard is made from casting steel. Cast bollards are bolted down to the quay structure. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to Dock Inclined Double Bitts Bollard?",
+          "a": "The listing for Dock Inclined Double Bitts Bollard names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does Dock Inclined Double Bitts Bollard connect to or work with?",
+          "a": "Dock Inclined Double Bitts Bollard takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Dock Inclined Double Bitts Bollard be inspected and looked after?",
+          "a": "Check Dock Inclined Double Bitts Bollard for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Dock Inclined Double Bitts Bollard differ from Single Bitt Bollard?",
+          "a": "Dock Inclined Double Bitts Bollard differs from [Single Bitt Bollard](/p/single-bitt-bollard) in its material Casting steel against Cast steel; 9 listed sizes against 7."
+        },
+        {
+          "slot": "L",
+          "q": "How are Dock Inclined Double Bitts Bollard shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Dock Inclined Double Bitts Bollard from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Dock Inclined Double Bitts Bollard in stock in Dubai?",
+          "a": "Yes. We keep Dock Inclined Double Bitts Bollard in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "j-type-dock-bollard",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is J Type Dock Bollard used for?",
+          "a": "J Type Dock Bollard is a cast J-type dock bollard for holding mooring lines on a quay or jetty. It is listed in 5 sizes, 10 t to 50 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for J Type Dock Bollard, such as IH-LR-BM-JDB-10T?",
+          "a": "J Type Dock Bollard part numbers begin with IH-LR-BM-JDB and end in a size code: IH-LR-BM-JDB-10T is the 10 t size and IH-LR-BM-JDB-50T is the 50 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does J Type Dock Bollard come in?",
+          "a": "J Type Dock Bollard is listed in 5 sizes, 10 t to 50 t, each with its own Indus part number, for example IH-LR-BM-JDB-10T and IH-LR-BM-JDB-50T. The table includes 10 t: WLL 10 t and 50 t: WLL 50 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of J Type Dock Bollard?",
+          "a": "For J Type Dock Bollard, choose on the safe working load of the lines and the standard the vessel or berth is built to; the rating assumes structure that can carry it."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does J Type Dock Bollard have?",
+          "a": "J Type Dock Bollard is listed with a working load limit of 10 to 50 t, depending on size; for example 20 t: WLL 20 t. The WLL is the most the bollard may carry in service, and the rating assumes a structure that can carry the load."
+        },
+        {
+          "slot": "F",
+          "q": "What is J Type Dock Bollard made from, and what finish does it have?",
+          "a": "J Type Dock Bollard is made from cast steel. Cast bollards are bolted down to the quay structure. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to J Type Dock Bollard?",
+          "a": "The listing for J Type Dock Bollard names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does J Type Dock Bollard connect to or work with?",
+          "a": "J Type Dock Bollard takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should J Type Dock Bollard be inspected and looked after?",
+          "a": "Check J Type Dock Bollard for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does J Type Dock Bollard differ from R Type Dock Bollard?",
+          "a": "J Type Dock Bollard differs from [R Type Dock Bollard](/p/r-type-dock-bollard) in its size range 10 t to 50 t against 10 t to 200 t; working load limit 10 to 50 t against 10 to 200 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are J Type Dock Bollard shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship J Type Dock Bollard from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep J Type Dock Bollard in stock in Dubai?",
+          "a": "Yes. J Type Dock Bollard is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "k-head-dock-bollard",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is K Head Dock Bollard used for?",
+          "a": "K Head Dock Bollard is a cast K-head dock bollard for holding mooring lines on a quay or jetty. It is listed in 7 sizes, 15 t to 200 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for K Head Dock Bollard, such as IH-LR-BM-KHDB-15T?",
+          "a": "K Head Dock Bollard part numbers begin with IH-LR-BM-KHDB and end in a size code: IH-LR-BM-KHDB-15T is the 15 t size and IH-LR-BM-KHDB-200T is the 200 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does K Head Dock Bollard come in?",
+          "a": "K Head Dock Bollard is listed in 7 sizes, 15 t to 200 t, each with its own Indus part number, for example IH-LR-BM-KHDB-15T and IH-LR-BM-KHDB-200T. The table includes 15 t: WLL 15 t and 200 t: WLL 200 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of K Head Dock Bollard?",
+          "a": "For K Head Dock Bollard, choose on the safe working load of the lines and the standard the vessel or berth is built to; the rating assumes structure that can carry it."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does K Head Dock Bollard have?",
+          "a": "K Head Dock Bollard is listed with a working load limit of 15 to 200 t, depending on size; for example 80 t: WLL 80 t. The WLL is the most the bollard may carry in service, and the rating assumes a structure that can carry the load."
+        },
+        {
+          "slot": "F",
+          "q": "What is K Head Dock Bollard made from, and what finish does it have?",
+          "a": "K Head Dock Bollard is made from cast iron. Cast bollards are bolted down to the quay structure. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents apply to K Head Dock Bollard?",
+          "a": "The listing for K Head Dock Bollard names no standard and no certificate. If your project needs a particular standard, a material certificate or a classification-society or inspection document, state it on the RFQ and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does K Head Dock Bollard connect to or work with?",
+          "a": "K Head Dock Bollard takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should K Head Dock Bollard be inspected and looked after?",
+          "a": "Check K Head Dock Bollard for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does K Head Dock Bollard differ from T Head Dock Bollard?",
+          "a": "K Head Dock Bollard differs from [T Head Dock Bollard](/p/t-head-dock-bollard) in its size range 15 t to 200 t against 10 t to 200 t; working load limit 15 to 200 t against 10 to 200 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are K Head Dock Bollard shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship K Head Dock Bollard from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep K Head Dock Bollard in stock in Dubai?",
+          "a": "Yes. K Head Dock Bollard is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-din-82607-1995",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard DIN 82607-1995 used for?",
+          "a": "Marine Double Bollard DIN 82607-1995 is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 8 sizes, No. 1 to No. 32."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard DIN 82607-1995, such as IH-LR-BM-MDBD82607-NOP1?",
+          "a": "Marine Double Bollard DIN 82607-1995 part numbers begin with IH-LR-BM-MDBD82607 and end in a size code: IH-LR-BM-MDBD82607-NOP1 is the No. 1 size and IH-LR-BM-MDBD82607-NOP32 is the No. 32 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard DIN 82607-1995 come in?",
+          "a": "Marine Double Bollard DIN 82607-1995 is listed in 8 sizes, No. 1 to No. 32, each with its own Indus part number, for example IH-LR-BM-MDBD82607-NOP1 and IH-LR-BM-MDBD82607-NOP32. The table includes No. 1: weight 21 kg and No. 32: weight 770 kg."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard DIN 82607-1995 mean, and how do I choose one?",
+          "a": "Marine Double Bollard DIN 82607-1995 is sized to DIN 82607: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard DIN 82607-1995 have?",
+          "a": "The listing for Marine Double Bollard DIN 82607-1995 gives its dimensions and weights but no working load limit. The load that goes with each size is set by the standard or the maker's data, so tell us the line loads and the standard the berth or vessel is built to and we confirm what can be supplied."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard DIN 82607-1995 made from, and what finish does it have?",
+          "a": "Marine Double Bollard DIN 82607-1995 is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard DIN 82607-1995?",
+          "a": "Marine Double Bollard DIN 82607-1995 is made to DIN 82607. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard DIN 82607-1995 connect to or work with?",
+          "a": "Marine Double Bollard DIN 82607-1995 takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard DIN 82607-1995 be inspected and looked after?",
+          "a": "Check Marine Double Bollard DIN 82607-1995 for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard DIN 82607-1995 differ from Marine Double Bollard JIS F2001-1995?",
+          "a": "Marine Double Bollard DIN 82607-1995 differs from [Marine Double Bollard JIS F2001-1995](/p/marine-double-bollard-jis-f2001-1995) in its pattern / standard DIN 82607 against JIS F 2001; 8 listed sizes against 14; weight 21 to 770 kg against 18.9 to 3071 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard DIN 82607-1995 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard DIN 82607-1995 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard DIN 82607-1995 in stock in Dubai?",
+          "a": "Yes, Marine Double Bollard DIN 82607-1995 is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-gb-t-554-type-a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard GB/T 554-2008 Type A used for?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 14 sizes, DN 100 to DN 800."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard GB/T 554-2008 Type A, such as IH-LR-BM-MDBG55420-DN100?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A part numbers begin with IH-LR-BM-MDBG55420 and end in a size code: IH-LR-BM-MDBG55420-DN100 is the DN 100 size and IH-LR-BM-MDBG55420-DN800 is the DN 800 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard GB/T 554-2008 Type A come in?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A is listed in 14 sizes, DN 100 to DN 800, each with its own Indus part number, for example IH-LR-BM-MDBG55420-DN100 and IH-LR-BM-MDBG55420-DN800. The table includes DN 100: WLL 29 kN and DN 800: WLL 981 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard GB/T 554-2008 Type A mean, and how do I choose one?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard GB/T 554-2008 Type A have?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A is listed with a working load limit of 29 to 981 kN, depending on size; for example DN 400: WLL 314 kN. The WLL is the most the bollard may carry in service, and the rating assumes a structure that can carry the load."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard GB/T 554-2008 Type A made from, and what finish does it have?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard GB/T 554-2008 Type A?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard GB/T 554-2008 Type A connect to or work with?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard GB/T 554-2008 Type A be inspected and looked after?",
+          "a": "Check Marine Double Bollard GB/T 554-2008 Type A for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard GB/T 554-2008 Type A differ from Marine Double Bollard GB/T 554-2008 Type B?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type A differs from [Marine Double Bollard GB/T 554-2008 Type B](/p/marine-double-bollard-gb-t-554-type-b-2) in its 14 listed sizes against 8."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard GB/T 554-2008 Type A shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard GB/T 554-2008 Type A from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard GB/T 554-2008 Type A in stock in Dubai?",
+          "a": "Yes. We keep Marine Double Bollard GB/T 554-2008 Type A in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-gb-t-554-type-a-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard GB/T 554-1996 Type A used for?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 14 sizes, 100 mm to 800 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard GB/T 554-1996 Type A, such as IH-LR-BM-MDBG55419-100MM?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A part numbers begin with IH-LR-BM-MDBG55419 and end in a size code: IH-LR-BM-MDBG55419-100MM is the 100 mm size and IH-LR-BM-MDBG55419-800MM is the 800 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard GB/T 554-1996 Type A come in?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A is listed in 14 sizes, 100 mm to 800 mm, each with its own Indus part number, for example IH-LR-BM-MDBG55419-100MM and IH-LR-BM-MDBG55419-800MM. The table includes 100 mm: minimum breaking load 29 kN and 800 mm: minimum breaking load 981 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard GB/T 554-1996 Type A mean, and how do I choose one?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard GB/T 554-1996 Type A have?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A is listed with a minimum breaking load of 29 to 981 kN, depending on size. That is a strength figure for the standard's sizes; the safe working load that goes with each nominal size is set by the standard, so quote the standard, type and size."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard GB/T 554-1996 Type A made from, and what finish does it have?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard GB/T 554-1996 Type A?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard GB/T 554-1996 Type A connect to or work with?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard GB/T 554-1996 Type A be inspected and looked after?",
+          "a": "Check Marine Double Bollard GB/T 554-1996 Type A for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard GB/T 554-1996 Type A differ from Marine Double Bollard GB/T 554-1996 Type B?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type A differs from [Marine Double Bollard GB/T 554-1996 Type B](/p/marine-double-bollard-gb-t-554-type-b) in its size range 100 mm to 800 mm against 160 mm to 500 mm; minimum breaking load 29 to 981 kN against 49 to 451 kN."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard GB/T 554-1996 Type A shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard GB/T 554-1996 Type A from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard GB/T 554-1996 Type A in stock in Dubai?",
+          "a": "Yes. Marine Double Bollard GB/T 554-1996 Type A is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-gb-t-554-type-b",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard GB/T 554-1996 Type B used for?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 8 sizes, 160 mm to 500 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard GB/T 554-1996 Type B, such as IH-LR-BM-MDBG554192-160MM?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B part numbers begin with IH-LR-BM-MDBG554192 and end in a size code: IH-LR-BM-MDBG554192-160MM is the 160 mm size and IH-LR-BM-MDBG554192-500MM is the 500 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard GB/T 554-1996 Type B come in?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B is listed in 8 sizes, 160 mm to 500 mm, each with its own Indus part number, for example IH-LR-BM-MDBG554192-160MM and IH-LR-BM-MDBG554192-500MM. The table includes 160 mm: minimum breaking load 49 kN and 500 mm: minimum breaking load 451 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard GB/T 554-1996 Type B mean, and how do I choose one?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard GB/T 554-1996 Type B have?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B is listed with a minimum breaking load of 49 to 451 kN, depending on size. That is a strength figure for the standard's sizes; the safe working load that goes with each nominal size is set by the standard, so quote the standard, type and size."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard GB/T 554-1996 Type B made from, and what finish does it have?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard GB/T 554-1996 Type B?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard GB/T 554-1996 Type B connect to or work with?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard GB/T 554-1996 Type B be inspected and looked after?",
+          "a": "Check Marine Double Bollard GB/T 554-1996 Type B for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard GB/T 554-1996 Type B differ from Marine Double Bollard GB/T 554-1996 Type A?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type B differs from [Marine Double Bollard GB/T 554-1996 Type A](/p/marine-double-bollard-gb-t-554-type-a-2) in its size range 160 mm to 500 mm against 100 mm to 800 mm; minimum breaking load 49 to 451 kN against 29 to 981 kN."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard GB/T 554-1996 Type B shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard GB/T 554-1996 Type B from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard GB/T 554-1996 Type B in stock in Dubai?",
+          "a": "Yes. We keep Marine Double Bollard GB/T 554-1996 Type B in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-gb-t-554-type-b-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard GB/T 554-2008 Type B used for?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 8 sizes, 160 mm to 500 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard GB/T 554-2008 Type B, such as IH-LR-BM-MDBG554202-160MM?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B part numbers begin with IH-LR-BM-MDBG554202 and end in a size code: IH-LR-BM-MDBG554202-160MM is the 160 mm size and IH-LR-BM-MDBG554202-500MM is the 500 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard GB/T 554-2008 Type B come in?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B is listed in 8 sizes, 160 mm to 500 mm, each with its own Indus part number, for example IH-LR-BM-MDBG554202-160MM and IH-LR-BM-MDBG554202-500MM. The table includes 160 mm: minimum breaking load 49 kN and 500 mm: minimum breaking load 451 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard GB/T 554-2008 Type B mean, and how do I choose one?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard GB/T 554-2008 Type B have?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B is listed with a minimum breaking load of 49 to 451 kN, depending on size. That is a strength figure for the standard's sizes; the safe working load that goes with each nominal size is set by the standard, so quote the standard, type and size."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard GB/T 554-2008 Type B made from, and what finish does it have?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard GB/T 554-2008 Type B?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard GB/T 554-2008 Type B connect to or work with?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard GB/T 554-2008 Type B be inspected and looked after?",
+          "a": "Check Marine Double Bollard GB/T 554-2008 Type B for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard GB/T 554-2008 Type B differ from Marine Double Bollard GB/T 554-2008 Type A?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type B differs from [Marine Double Bollard GB/T 554-2008 Type A](/p/marine-double-bollard-gb-t-554-type-a) in its 8 listed sizes against 14."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard GB/T 554-2008 Type B shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard GB/T 554-2008 Type B from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard GB/T 554-2008 Type B in stock in Dubai?",
+          "a": "Yes. Marine Double Bollard GB/T 554-2008 Type B is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-gb-t-554-type-c",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard GB/T 554-1996 Type C used for?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 5 sizes, 50 mm to 150 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard GB/T 554-1996 Type C, such as IH-LR-BM-MDBG554193-50MM?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C part numbers begin with IH-LR-BM-MDBG554193 and end in a size code: IH-LR-BM-MDBG554193-50MM is the 50 mm size and IH-LR-BM-MDBG554193-150MM is the 150 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard GB/T 554-1996 Type C come in?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C is listed in 5 sizes, 50 mm to 150 mm, each with its own Indus part number, for example IH-LR-BM-MDBG554193-50MM and IH-LR-BM-MDBG554193-150MM. The table includes 50 mm: minimum breaking load 13 kN and 150 mm: minimum breaking load 43 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard GB/T 554-1996 Type C mean, and how do I choose one?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard GB/T 554-1996 Type C have?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C is listed with a minimum breaking load of 13 to 43 kN, depending on size. That is a strength figure for the standard's sizes; the safe working load that goes with each nominal size is set by the standard, so quote the standard, type and size."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard GB/T 554-1996 Type C made from, and what finish does it have?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard GB/T 554-1996 Type C?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard GB/T 554-1996 Type C connect to or work with?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard GB/T 554-1996 Type C be inspected and looked after?",
+          "a": "Check Marine Double Bollard GB/T 554-1996 Type C for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard GB/T 554-1996 Type C differ from Marine Double Bollard GB/T 554-1996 Type A?",
+          "a": "Marine Double Bollard GB/T 554-1996 Type C differs from [Marine Double Bollard GB/T 554-1996 Type A](/p/marine-double-bollard-gb-t-554-type-a-2) in its size range 50 mm to 150 mm against 100 mm to 800 mm; minimum breaking load 13 to 43 kN against 29 to 981 kN."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard GB/T 554-1996 Type C shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard GB/T 554-1996 Type C from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard GB/T 554-1996 Type C in stock in Dubai?",
+          "a": "Yes. Marine Double Bollard GB/T 554-1996 Type C is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-gb-t-554-type-c-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard GB/T 554-2008 Type C used for?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 5 sizes, DN 50 to DN 150."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard GB/T 554-2008 Type C, such as IH-LR-BM-MDBG554203-DN50?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C part numbers begin with IH-LR-BM-MDBG554203 and end in a size code: IH-LR-BM-MDBG554203-DN50 is the DN 50 size and IH-LR-BM-MDBG554203-DN150 is the DN 150 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard GB/T 554-2008 Type C come in?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C is listed in 5 sizes, DN 50 to DN 150, each with its own Indus part number, for example IH-LR-BM-MDBG554203-DN50 and IH-LR-BM-MDBG554203-DN150. The table includes DN 50: minimum breaking load 13 kN and DN 150: minimum breaking load 43 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard GB/T 554-2008 Type C mean, and how do I choose one?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard GB/T 554-2008 Type C have?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C is listed with a minimum breaking load of 13 to 43 kN, depending on size. That is a strength figure for the standard's sizes; the safe working load that goes with each nominal size is set by the standard, so quote the standard, type and size."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard GB/T 554-2008 Type C made from, and what finish does it have?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard GB/T 554-2008 Type C?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard GB/T 554-2008 Type C connect to or work with?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard GB/T 554-2008 Type C be inspected and looked after?",
+          "a": "Check Marine Double Bollard GB/T 554-2008 Type C for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard GB/T 554-2008 Type C differ from Marine Double Bollard GB/T 554-2008 Type A?",
+          "a": "Marine Double Bollard GB/T 554-2008 Type C differs from [Marine Double Bollard GB/T 554-2008 Type A](/p/marine-double-bollard-gb-t-554-type-a) in its 5 listed sizes against 14; weight 4.5 to 49 kg against 19 to 3071 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard GB/T 554-2008 Type C shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard GB/T 554-2008 Type C from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard GB/T 554-2008 Type C in stock in Dubai?",
+          "a": "Yes. Marine Double Bollard GB/T 554-2008 Type C is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-iso-13795-type-a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard ISO 13795 Type A used for?",
+          "a": "Marine Double Bollard ISO 13795 Type A is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 17 sizes, DN 150 to DN 600."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard ISO 13795 Type A, such as IH-LR-BM-MDBI137952-DN150?",
+          "a": "Marine Double Bollard ISO 13795 Type A part numbers begin with IH-LR-BM-MDBI137952 and end in a size code: IH-LR-BM-MDBI137952-DN150 is the DN 150 size and IH-LR-BM-MDBI137952-DN600 is the DN 600 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard ISO 13795 Type A come in?",
+          "a": "Marine Double Bollard ISO 13795 Type A is listed in 17 sizes, DN 150 to DN 600, each with its own Indus part number, for example IH-LR-BM-MDBI137952-DN150 and IH-LR-BM-MDBI137952-DN600. The table includes DN 150: WLL (towing) 10 t, WLL (towing) 98 kN, WLL (mooring 1) 5.5 t and DN 600: WLL (towing) 193 t, WLL (towing) 1893 kN, WLL (mooring 1) 143 t."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard ISO 13795 Type A mean, and how do I choose one?",
+          "a": "Marine Double Bollard ISO 13795 Type A is sized to ISO 13795: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard ISO 13795 Type A have?",
+          "a": "Marine Double Bollard ISO 13795 Type A is listed with a towing safe working load of 10 to 193 t and two mooring load columns, 5.5 to 143 t and 5 to 97 t, by size; for example size 400A is rated 106 t for towing. Quote the ISO 13795 type and size to match the vessel."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard ISO 13795 Type A made from, and what finish does it have?",
+          "a": "Marine Double Bollard ISO 13795 Type A is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard ISO 13795 Type A?",
+          "a": "Marine Double Bollard ISO 13795 Type A is made to ISO 13795. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard ISO 13795 Type A connect to or work with?",
+          "a": "Marine Double Bollard ISO 13795 Type A takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard ISO 13795 Type A be inspected and looked after?",
+          "a": "Check Marine Double Bollard ISO 13795 Type A for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard ISO 13795 Type A differ from Marine Double Bollard ISO 13795 Type B?",
+          "a": "Marine Double Bollard ISO 13795 Type A differs from [Marine Double Bollard ISO 13795 Type B](/p/marine-double-bollard-iso-13795-type-b) in its weight 29 to 1391 kg against 45 to 1850 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard ISO 13795 Type A shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard ISO 13795 Type A from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard ISO 13795 Type A in stock in Dubai?",
+          "a": "Yes, Marine Double Bollard ISO 13795 Type A is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-iso-13795-type-b",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard ISO 13795 Type B used for?",
+          "a": "Marine Double Bollard ISO 13795 Type B is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 17 sizes, DN 150 to DN 600."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard ISO 13795 Type B, such as IH-LR-BM-MDBI13795-DN150?",
+          "a": "Marine Double Bollard ISO 13795 Type B part numbers begin with IH-LR-BM-MDBI13795 and end in a size code: IH-LR-BM-MDBI13795-DN150 is the DN 150 size and IH-LR-BM-MDBI13795-DN600 is the DN 600 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard ISO 13795 Type B come in?",
+          "a": "Marine Double Bollard ISO 13795 Type B is listed in 17 sizes, DN 150 to DN 600, each with its own Indus part number, for example IH-LR-BM-MDBI13795-DN150 and IH-LR-BM-MDBI13795-DN600. The table includes DN 150: WLL (towing) 10 t, WLL (towing) 98 kN, WLL (mooring 1) 5.5 t and DN 600: WLL (towing) 193 t, WLL (towing) 1893 kN, WLL (mooring 1) 143 t."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard ISO 13795 Type B mean, and how do I choose one?",
+          "a": "Marine Double Bollard ISO 13795 Type B is sized to ISO 13795: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard ISO 13795 Type B have?",
+          "a": "Marine Double Bollard ISO 13795 Type B is listed with a towing safe working load of 10 to 193 t and two mooring load columns, 5.5 to 143 t and 5 to 97 t, by size; for example size 400A is rated 106 t for towing. Quote the ISO 13795 type and size to match the vessel."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard ISO 13795 Type B made from, and what finish does it have?",
+          "a": "Marine Double Bollard ISO 13795 Type B is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard ISO 13795 Type B?",
+          "a": "Marine Double Bollard ISO 13795 Type B is made to ISO 13795. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard ISO 13795 Type B connect to or work with?",
+          "a": "Marine Double Bollard ISO 13795 Type B takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard ISO 13795 Type B be inspected and looked after?",
+          "a": "Check Marine Double Bollard ISO 13795 Type B for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard ISO 13795 Type B differ from Marine Double Bollard ISO 13795 Type A?",
+          "a": "Marine Double Bollard ISO 13795 Type B differs from [Marine Double Bollard ISO 13795 Type A](/p/marine-double-bollard-iso-13795-type-a) in its weight 45 to 1850 kg against 29 to 1391 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard ISO 13795 Type B shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard ISO 13795 Type B from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard ISO 13795 Type B in stock in Dubai?",
+          "a": "Yes. We keep Marine Double Bollard ISO 13795 Type B in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-jis-f2001-1995",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard JIS F2001-1995 used for?",
+          "a": "Marine Double Bollard JIS F2001-1995 is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 14 sizes, DN 100 to DN 800."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard JIS F2001-1995, such as IH-LR-BM-MDBJISF20-DN100?",
+          "a": "Marine Double Bollard JIS F2001-1995 part numbers begin with IH-LR-BM-MDBJISF20 and end in a size code: IH-LR-BM-MDBJISF20-DN100 is the DN 100 size and IH-LR-BM-MDBJISF20-DN800 is the DN 800 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard JIS F2001-1995 come in?",
+          "a": "Marine Double Bollard JIS F2001-1995 is listed in 14 sizes, DN 100 to DN 800, each with its own Indus part number, for example IH-LR-BM-MDBJISF20-DN100 and IH-LR-BM-MDBJISF20-DN800. The table includes DN 100: weight 18.9 kg and DN 800: weight 3071 kg."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard JIS F2001-1995 mean, and how do I choose one?",
+          "a": "Marine Double Bollard JIS F2001-1995 is sized to JIS F 2001: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard JIS F2001-1995 have?",
+          "a": "The listing for Marine Double Bollard JIS F2001-1995 gives its dimensions and weights but no working load limit. The load that goes with each size is set by the standard or the maker's data, so tell us the line loads and the standard the berth or vessel is built to and we confirm what can be supplied."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard JIS F2001-1995 made from, and what finish does it have?",
+          "a": "Marine Double Bollard JIS F2001-1995 is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard JIS F2001-1995?",
+          "a": "Marine Double Bollard JIS F2001-1995 is made to JIS F 2001. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard JIS F2001-1995 connect to or work with?",
+          "a": "Marine Double Bollard JIS F2001-1995 takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard JIS F2001-1995 be inspected and looked after?",
+          "a": "Check Marine Double Bollard JIS F2001-1995 for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard JIS F2001-1995 differ from Marine Double Bollard DIN 82607-1995?",
+          "a": "Marine Double Bollard JIS F2001-1995 differs from [Marine Double Bollard DIN 82607-1995](/p/marine-double-bollard-din-82607-1995) in its pattern / standard JIS F 2001 against DIN 82607; 14 listed sizes against 8; weight 18.9 to 3071 kg against 21 to 770 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard JIS F2001-1995 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard JIS F2001-1995 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard JIS F2001-1995 in stock in Dubai?",
+          "a": "Yes, Marine Double Bollard JIS F2001-1995 is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-bollard-ns-2584",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Bollard NS 2584 used for?",
+          "a": "Marine Double Bollard NS 2584 is a marine double bollard, a welded steel plate bollard with two bitts, to the standard in its name, for ship decks and mooring lines. It is listed in 9 sizes, DN 125 to DN 710."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Bollard NS 2584, such as IH-LR-BM-MDBNS2584-DN125?",
+          "a": "Marine Double Bollard NS 2584 part numbers begin with IH-LR-BM-MDBNS2584 and end in a size code: IH-LR-BM-MDBNS2584-DN125 is the DN 125 size and IH-LR-BM-MDBNS2584-DN710 is the DN 710 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Bollard NS 2584 come in?",
+          "a": "Marine Double Bollard NS 2584 is listed in 9 sizes, DN 125 to DN 710, each with its own Indus part number, for example IH-LR-BM-MDBNS2584-DN125 and IH-LR-BM-MDBNS2584-DN710. The table includes DN 125: weight 26 kg and DN 710: weight 1532 kg."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Bollard NS 2584 mean, and how do I choose one?",
+          "a": "Marine Double Bollard NS 2584 is sized to NS 2584: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Bollard NS 2584 have?",
+          "a": "The listing for Marine Double Bollard NS 2584 gives its dimensions and weights but no working load limit. The load that goes with each size is set by the standard or the maker's data, so tell us the line loads and the standard the berth or vessel is built to and we confirm what can be supplied."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Bollard NS 2584 made from, and what finish does it have?",
+          "a": "Marine Double Bollard NS 2584 is made from steel plate. Steel plate bollards are welded and fixed to the deck structure. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Bollard NS 2584?",
+          "a": "Marine Double Bollard NS 2584 is made to NS 2584. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Bollard NS 2584 connect to or work with?",
+          "a": "Marine Double Bollard NS 2584 takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Bollard NS 2584 be inspected and looked after?",
+          "a": "Check Marine Double Bollard NS 2584 for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Bollard NS 2584 differ from Marine Double Bollard JIS F2001-1995?",
+          "a": "Marine Double Bollard NS 2584 differs from [Marine Double Bollard JIS F2001-1995](/p/marine-double-bollard-jis-f2001-1995) in its pattern / standard NS 2584 against JIS F 2001; 9 listed sizes against 14; weight 26 to 1532 kg against 18.9 to 3071 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Bollard NS 2584 shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Bollard NS 2584 from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Bollard NS 2584 in stock in Dubai?",
+          "a": "Yes, Marine Double Bollard NS 2584 is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-cross-bollard-gb-t-554-type-dh",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Cross Bollard GB/T 554-2008 Type DH used for?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH is a marine double cross bollard, a welded steel bollard with a cross bar on a double pillar, for ship decks and mooring lines. It is listed in 3 sizes, DN 200 to DN 300."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Cross Bollard GB/T 554-2008 Type DH, such as IH-LR-BM-MDCBG5542-DN200?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH part numbers begin with IH-LR-BM-MDCBG5542 and end in a size code: IH-LR-BM-MDCBG5542-DN200 is the DN 200 size and IH-LR-BM-MDCBG5542-DN300 is the DN 300 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Cross Bollard GB/T 554-2008 Type DH come in?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH is listed in 3 sizes, DN 200 to DN 300, each with its own Indus part number, for example IH-LR-BM-MDCBG5542-DN200 and IH-LR-BM-MDCBG5542-DN300. The table includes DN 200: WLL 72 kN and DN 300: WLL 185 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Cross Bollard GB/T 554-2008 Type DH mean, and how do I choose one?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Cross Bollard GB/T 554-2008 Type DH have?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH is listed with a working load limit of 72 to 185 kN, depending on size; for example DN 250: WLL 105 kN. The WLL is the most the bollard may carry in service, and the rating assumes a structure that can carry the load."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Cross Bollard GB/T 554-2008 Type DH made from, and what finish does it have?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Cross Bollard GB/T 554-2008 Type DH?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Cross Bollard GB/T 554-2008 Type DH connect to or work with?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Cross Bollard GB/T 554-2008 Type DH be inspected and looked after?",
+          "a": "Check Marine Double Cross Bollard GB/T 554-2008 Type DH for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Cross Bollard GB/T 554-2008 Type DH differ from Marine Double Cross Bollard GB/T 554-2008 Type DL?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DH differs from [Marine Double Cross Bollard GB/T 554-2008 Type DL](/p/marine-double-cross-bollard-gb-t-554-type-dl) in its working load limit 72 to 185 kN against 13 to 62 kN; 3 listed sizes against 6. It also differs in its weight 181 to 576 kg against 7 to 103 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Cross Bollard GB/T 554-2008 Type DH shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Cross Bollard GB/T 554-2008 Type DH from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Cross Bollard GB/T 554-2008 Type DH in stock in Dubai?",
+          "a": "Yes. We keep Marine Double Cross Bollard GB/T 554-2008 Type DH in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-cross-bollard-gb-t-554-type-dl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Cross Bollard GB/T 554-2008 Type DL used for?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL is a marine double cross bollard, a welded steel bollard with a cross bar on a double pillar, for ship decks and mooring lines. It is listed in 6 sizes, 50 mm (50) to 175 mm (175)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Cross Bollard GB/T 554-2008 Type DL, such as IH-LR-BM-MDCBG55422-50MM?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL part numbers begin with IH-LR-BM-MDCBG55422 and end in a size code: IH-LR-BM-MDCBG55422-50MM is the 50 mm (50) size and IH-LR-BM-MDCBG55422-175MM is the 175 mm (175) size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Cross Bollard GB/T 554-2008 Type DL come in?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL is listed in 6 sizes, 50 mm (50) to 175 mm (175), each with its own Indus part number, for example IH-LR-BM-MDCBG55422-50MM and IH-LR-BM-MDCBG55422-175MM. The table includes 50 mm (50): WLL 13 kN and 175 mm (175): WLL 62 kN."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Cross Bollard GB/T 554-2008 Type DL mean, and how do I choose one?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Cross Bollard GB/T 554-2008 Type DL have?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL is listed with a working load limit of 13 to 62 kN, depending on size; for example 125 mm (125): WLL 34 kN. The WLL is the most the bollard may carry in service, and the rating assumes a structure that can carry the load."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Cross Bollard GB/T 554-2008 Type DL made from, and what finish does it have?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Cross Bollard GB/T 554-2008 Type DL?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Cross Bollard GB/T 554-2008 Type DL connect to or work with?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Cross Bollard GB/T 554-2008 Type DL be inspected and looked after?",
+          "a": "Check Marine Double Cross Bollard GB/T 554-2008 Type DL for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Cross Bollard GB/T 554-2008 Type DL differ from Marine Double Cross Bollard GB/T 554-2008 Type DH?",
+          "a": "Marine Double Cross Bollard GB/T 554-2008 Type DL differs from [Marine Double Cross Bollard GB/T 554-2008 Type DH](/p/marine-double-cross-bollard-gb-t-554-type-dh) in its working load limit 13 to 62 kN against 72 to 185 kN; 6 listed sizes against 3. It also differs in its weight 7 to 103 kg against 181 to 576 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Cross Bollard GB/T 554-2008 Type DL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Cross Bollard GB/T 554-2008 Type DL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Cross Bollard GB/T 554-2008 Type DL in stock in Dubai?",
+          "a": "Yes. We keep Marine Double Cross Bollard GB/T 554-2008 Type DL in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "marine-double-cross-bollard-gb-t-554-type-e",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Marine Double Cross Bollard GB/T 554-1996 Type E used for?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E is a marine double cross bollard, a welded steel bollard with a cross bar on a double pillar, for ship decks and mooring lines. It is listed in 9 sizes, DN 50 to DN 300."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Marine Double Cross Bollard GB/T 554-1996 Type E, such as IH-LR-BM-MDCBG5541-DN50?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E part numbers begin with IH-LR-BM-MDCBG5541 and end in a size code: IH-LR-BM-MDCBG5541-DN50 is the DN 50 size and IH-LR-BM-MDCBG5541-DN300 is the DN 300 size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Marine Double Cross Bollard GB/T 554-1996 Type E come in?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E is listed in 9 sizes, DN 50 to DN 300, each with its own Indus part number, for example IH-LR-BM-MDCBG5541-DN50 and IH-LR-BM-MDCBG5541-DN300. The table includes DN 50: weight 7 kg and DN 300: weight 576 kg."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nominal size of Marine Double Cross Bollard GB/T 554-1996 Type E mean, and how do I choose one?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E is sized to GB/T 554: the nominal size is the diameter of the pillar in millimetres, and the standard sets the safe working load and dimensions that go with it. Quote the standard, the type and the nominal size on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does Marine Double Cross Bollard GB/T 554-1996 Type E have?",
+          "a": "The listing for Marine Double Cross Bollard GB/T 554-1996 Type E gives its dimensions and weights but no working load limit. The load that goes with each size is set by the standard or the maker's data, so tell us the line loads and the standard the berth or vessel is built to and we confirm what can be supplied."
+        },
+        {
+          "slot": "F",
+          "q": "What is Marine Double Cross Bollard GB/T 554-1996 Type E made from, and what finish does it have?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E is made from steel plate. Steel plate bollards are welded and fixed to the deck structure."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Marine Double Cross Bollard GB/T 554-1996 Type E?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E is made to GB/T 554. The standard fixes the dimensions and the safe working load for each nominal size; the listing carries no other certificate, so state on the RFQ if the order needs a material test certificate."
+        },
+        {
+          "slot": "H",
+          "q": "What does Marine Double Cross Bollard GB/T 554-1996 Type E connect to or work with?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E takes mooring lines such as those in our [fibre rope guide](/blog/fibre-rope-materials-compared), and is chosen with the fenders and fittings of the berth. See the [Bollards & Mooring shelf](/c/bollards-mooring) for related bollards and fittings and the [guide to bollard types](/blog/types-of-mooring-bollards)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Marine Double Cross Bollard GB/T 554-1996 Type E be inspected and looked after?",
+          "a": "Check Marine Double Cross Bollard GB/T 554-1996 Type E for corrosion, cracks and movement of the base or fixing bolts at each berth inspection, and renew bolts and coatings as needed. Marine bollards also need their foundation and holding-down bolts checked against the line loads."
+        },
+        {
+          "slot": "K",
+          "q": "How does Marine Double Cross Bollard GB/T 554-1996 Type E differ from Marine Double Bollard GB/T 554-1996 Type A?",
+          "a": "Marine Double Cross Bollard GB/T 554-1996 Type E differs from [Marine Double Bollard GB/T 554-1996 Type A](/p/marine-double-bollard-gb-t-554-type-a-2) in its 9 listed sizes against 14; weight 7 to 576 kg against 19 to 3071 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Marine Double Cross Bollard GB/T 554-1996 Type E shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Marine Double Cross Bollard GB/T 554-1996 Type E from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Marine Double Cross Bollard GB/T 554-1996 Type E in stock in Dubai?",
+          "a": "Yes, Marine Double Cross Bollard GB/T 554-1996 Type E is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

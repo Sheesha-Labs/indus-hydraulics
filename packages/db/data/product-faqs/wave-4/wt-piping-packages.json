@@ -1,0 +1,84 @@
+{
+  "family": "wt-piping-packages",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "well-testing-piping-package-1502-series-15-000-psi-nace-mr-0175-x-ray-pwht",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1502 series 15,000 psi well-testing piping package?",
+          "a": "A well-testing piping package is a welded set of straight joints, elbows, tees and crossovers that forms the flowline of a well test or early production facility (EPF). This 1502 series package is rated 15,000 psi working pressure with NACE MR-0175 wetted materials."
+        },
+        {
+          "slot": "B",
+          "q": "What does 1502 series mean on this piping package?",
+          "a": "1502 series is the hammer-union connection figure used, and the typical package is rated 15,000 psi working pressure. The full range available is 200 psi to 20,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure range can the well-testing piping package be supplied in?",
+          "a": "The package is typical at 15,000 psi with 1502 series connections, and the full range is 200 psi to 20,000 psi. State the working pressure and the connection style on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What connections and fittings are in the piping package?",
+          "a": "Connections are flange, hammer union, API clamp hub or Grayloc, on client preference. The package includes straight joints, 90° elbows, 45° elbows, tees, crossovers and other fittings to project drawing."
+        },
+        {
+          "slot": "E",
+          "q": "What weld inspection and heat treatment does the piping package have?",
+          "a": "All welds are X-ray inspected and post weld heat treatment (PWHT) is performed on welded joints, per the listing. Test records are included in the databook."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the well-testing piping package made from?",
+          "a": "NACE MR-0175 wetted materials are standard, and arctic-grade carbon steel is offered for cold-climate operations. State the H2S level and the minimum temperature on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which certification comes with the piping package?",
+          "a": "The listing states full third-party (BV, DNV, Lloyds) certification reports in the databook. The 1502 flowline is supplied by API-licensed manufacturers to API 16C, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the well-testing piping package connect to?",
+          "a": "It connects the well-test spread: choke manifold, separator, data header and flare. See the [data header](/c/wt-data-header) shelf and the [well testing equipment guide](/blog/surface-well-testing-equipment). Ring gaskets for flanged ends are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the piping package delivered and racked?",
+          "a": "It is delivered loose, or in DNV piping baskets or racking systems. Lay it out to the project drawing and make up each union or flange per the figure number."
+        },
+        {
+          "slot": "K",
+          "q": "Welded piping package or hammer-union flow iron: which should I use?",
+          "a": "A welded package with X-ray and PWHT suits fixed test and EPF layouts, while hammer-union flow iron rigs up and breaks down quickly. See the [flow iron flow line](/c/flow-iron-flow-line) shelf for union iron."
+        },
+        {
+          "slot": "L",
+          "q": "Can the well-testing piping package be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide with the databook. Give the destination and the project drawing and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 1502 series well-testing piping package in Dubai?",
+          "a": "Yes. We keep the 1502 series well-testing piping package in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the drawing, pressure and connection style through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

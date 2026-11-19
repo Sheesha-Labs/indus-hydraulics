@@ -1,0 +1,466 @@
+{
+  "family": "drilling-hoses",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "mud-booster-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Continental mud booster hose used for?",
+          "a": "A mud booster hose boosts circulating mud volume in deep and horizontal-well drilling. This Continental ContiTech hose has a mud-resistant NBR liner and high-tensile steel-cable plies, with a bonded coupling, for standard-service mud lines."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Continental mud booster hose come in?",
+          "a": "The Continental mud booster hose is listed from 3\" to 5\" inner diameter. Custom sizes outside this range can be quoted, and the lead time extends accordingly. State the inner diameter and the host port type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Continental mud booster hose have?",
+          "a": "The Continental mud booster hose is rated 3,000 psi working pressure (WP) and 7,500 psi minimum burst pressure (MBP). WP is the continuous service rating, MBP is 2.5 times WP, and hydrotest pressure is 1.5 times WP."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Continental mud booster hose cover?",
+          "a": "The Continental mud booster hose is rated -30°C to +82°C for standard service. Sour service (H2S and CO2) and high-temperature variants exist for most product families, so state the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Continental mud booster hose?",
+          "a": "The liner is mud-resistant NBR and the reinforcement is high-tensile steel cable plies. The coupling is bonded to the hose body, so end fittings are not field-replaceable."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Continental mud booster hose meet?",
+          "a": "The listing gives the standard as API 7K-equivalent (mud booster service), which is not the same as API 7K Grade D rotary hose. Each assembly ships with a test certificate referencing the applicable API standard, and third-party witness is available if you ask on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental mud booster hose use?",
+          "a": "The coupling is factory-bonded with the hose body and not field-replaceable, and the bonded geometry follows API 7K. Specify the host port type on the RFQ, typically NPT, hammer union or API ring joint."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths are standard for the Continental mud booster hose?",
+          "a": "Standard rig-floor assemblies of the Continental mud booster hose are 50 ft (15 m), 75 ft (23 m) and 100 ft (30 m), and lengths up to 250 ft (75 m) are available for offshore tensioner and compensator service. Specify the exact length and end fittings on the RFQ; the [oilfield hose guide](/blog/oilfield-hose-guide) explains how."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Continental mud booster hose used?",
+          "a": "It is used in mud lines that boost circulating volume on deep and horizontal wells, connecting through the rig mud system. See [drilling hoses](/c/drilling-hoses) and the guide on [API 7K rotary and vibrator hose](/blog/api-7k-rotary-vibrator-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental mud booster hose differ from other drilling hoses?",
+          "a": "The mud booster is rated 3,000 psi WP with a 3\" to 5\" bore, while the [rotary and vibrator hose, mud bonded](/p/rotary-vibrator-hose-mud-bonded) is the API 7K Grade D hose for standpipe and kelly hose service. Use the booster hose only for the mud booster duty."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Continental mud booster hose?",
+          "a": "The listing states a lead time of 21 days for the Continental mud booster hose, typically two to three weeks ex-works for common configurations. Custom-spec assemblies such as sour service, exotic liners or project-specific lengths ship within six to eight weeks. It is made in Germany by Continental."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Mud Booster Hose in stock in Dubai?",
+          "a": "Yes. We keep the Mud Booster Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "rotary-vibrator-hose-cement-bonded",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Continental rotary and vibrator hose, cement bonded used for?",
+          "a": "This bonded cementing hose carries cement slurry in cement-circulating service, with a cement-resistant NBR liner that resists cement abrasion. It is a Continental ContiTech drilling hose rated 5,000 psi working pressure to API 7K Grade D."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Continental rotary and vibrator hose, cement bonded come in?",
+          "a": "The cement bonded rotary and vibrator hose is listed from 2\" to 5\" inner diameter. Custom sizes outside this range can be quoted, and the lead time extends accordingly. State the inner diameter and the host port type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Continental rotary and vibrator hose, cement bonded have?",
+          "a": "The Continental rotary and vibrator hose, cement bonded is rated 5,000 psi working pressure (WP) and 12,500 psi minimum burst pressure (MBP) to API 7K. MBP is 2.5 times WP, and hydrotest pressure is 1.5 times WP. Rate the working line pressure below WP."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Continental rotary and vibrator hose, cement bonded cover?",
+          "a": "The Continental rotary and vibrator hose, cement bonded is rated -30°C to +82°C. Sour service and high-temperature variants exist for most product families, so state the wellbore conditions on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Continental rotary and vibrator hose, cement bonded?",
+          "a": "The liner is cement-resistant NBR, and the reinforcement is multiple high-tensile steel cable plies. The coupling is bonded to the hose body."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Continental rotary and vibrator hose, cement bonded meet?",
+          "a": "It is built to API 7K, API Spec 7K Grade D, and each assembly ships with a test certificate referencing the API standard. We supply API 7K certificate documentation with the order; for audit-grade papers ask for third-party witness on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental rotary and vibrator hose, cement bonded use?",
+          "a": "The coupling is bonded to the hose body, so it is not field-replaceable. Specify the host port type on the RFQ, typically NPT, hammer union or API ring joint."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths are standard for the Continental rotary and vibrator hose, cement bonded?",
+          "a": "Standard rig-floor assemblies of the Continental rotary and vibrator hose, cement bonded are 50 ft (15 m), 75 ft (23 m) and 100 ft (30 m), and lengths up to 250 ft (75 m) are available for offshore tensioner and compensator service. Specify the exact length and end fittings on the RFQ; the [oilfield hose guide](/blog/oilfield-hose-guide) explains how."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Continental rotary and vibrator hose, cement bonded used?",
+          "a": "It is used for cement circulation from the cementing unit to the wellhead or standpipe. See [cementing units](/c/cementing-units) and [drilling hoses](/c/drilling-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental rotary and vibrator hose, cement bonded differ from other drilling hoses?",
+          "a": "The cement hose uses a cement-resistant liner, while the [mud bonded hose](/p/rotary-vibrator-hose-mud-bonded) uses an oil-resistant NBR liner for drilling mud. The [Gates Powerspiral cement crimped hose](/p/rotary-vibrator-hose-cement-crimped-powerspiral) is the crimped, spiral-reinforced alternative."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Continental rotary and vibrator hose, cement bonded?",
+          "a": "The listing states a lead time of 21 days for the Continental rotary and vibrator hose, cement bonded, typically two to three weeks ex-works for common configurations. Custom-spec assemblies such as sour service, exotic liners or project-specific lengths ship within six to eight weeks. It is made in Germany by Continental."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Rotary & vibrator hose cement bonded in stock in Dubai?",
+          "a": "Yes. We keep the Rotary & vibrator hose cement bonded in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "rotary-vibrator-hose-for-high-temperature-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Continental rotary and vibrator hose for high temperature and sour service used for?",
+          "a": "This rotary and vibrator hose is built for high-temperature, sour-service drilling with H2S and CO2, with an HNBR sour-service-rated liner and a NACE MR-0175 listing. It is rated 5,000 psi working pressure to API 7K Grade D."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Continental rotary and vibrator hose for high temperature and sour service come in?",
+          "a": "The high temperature sour-service rotary and vibrator hose is listed from 2\" to 5\" inner diameter. Custom sizes outside this range can be quoted, and the lead time extends accordingly. State the inner diameter and the host port type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Continental rotary and vibrator hose for high temperature and sour service have?",
+          "a": "The Continental rotary and vibrator hose for high temperature and sour service is rated 5,000 psi working pressure (WP) and 12,500 psi minimum burst pressure (MBP) to API 7K. MBP is 2.5 times WP, and hydrotest pressure is 1.5 times WP."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Continental rotary and vibrator hose for high temperature and sour service cover?",
+          "a": "The Continental rotary and vibrator hose for high temperature and sour service is rated -30°C to +121°C for high-temperature service. State the wellbore temperature, H2S and CO2 levels on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Continental rotary and vibrator hose for high temperature and sour service?",
+          "a": "The liner is HNBR sour-service-rated synthetic rubber, and the reinforcement is multiple high-tensile steel cable plies. The coupling is bonded to the hose body."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Continental rotary and vibrator hose for high temperature and sour service meet?",
+          "a": "It is listed to API 7K and NACE MR-0175 for sour service, and each assembly ships with a test certificate referencing the API standard. See the guide on [NACE MR0175 hose documentation](/blog/nace-mr0175-hose-documentation) for what to request."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental rotary and vibrator hose for high temperature and sour service use?",
+          "a": "The coupling is bonded to the hose body and not field-replaceable. Specify the host port type on the RFQ, typically NPT, hammer union or API ring joint, and the sour-service coupling material."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths are standard for the Continental rotary and vibrator hose for high temperature and sour service?",
+          "a": "Standard rig-floor assemblies of the Continental rotary and vibrator hose for high temperature and sour service are 50 ft (15 m), 75 ft (23 m) and 100 ft (30 m), and lengths up to 250 ft (75 m) are available for offshore tensioner and compensator service. Specify the exact length and end fittings on the RFQ; the [oilfield hose guide](/blog/oilfield-hose-guide) explains how."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Continental rotary and vibrator hose for high temperature and sour service used?",
+          "a": "It is used on drilling rigs with H2S and CO2 exposure and high-temperature mud returns. See [drilling hoses](/c/drilling-hoses) and the guide on [API 7K, 16C and 16D](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental rotary and vibrator hose for high temperature and sour service differ from other drilling hoses?",
+          "a": "The sour-service hose is rated to +121°C with an HNBR liner, while the [standard mud bonded hose](/p/rotary-vibrator-hose-mud-bonded) has an NBR liner for standard service. Choose by temperature and H2S exposure."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Continental rotary and vibrator hose for high temperature and sour service?",
+          "a": "The listing states a lead time of 21 days for the Continental rotary and vibrator hose for high temperature and sour service, typically two to three weeks ex-works for common configurations. Custom-spec assemblies such as sour service, exotic liners or project-specific lengths ship within six to eight weeks. It is made in Germany by Continental."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Rotary & Vibrator Hose for high temperature & sour service in stock in Dubai?",
+          "a": "Yes. We keep the Rotary & Vibrator Hose for high temperature & sour service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "rotary-vibrator-hose-mud-bonded",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Continental rotary and vibrator hose, mud bonded used for?",
+          "a": "A rotary and vibrator hose circulates drilling mud at the standpipe, kelly hose and vibrator service. This Continental ContiTech bonded hose has an oil-resistant NBR liner and multiple steel-cable plies, rated 5,000 psi working pressure to API 7K Grade D."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Continental rotary and vibrator hose, mud bonded come in?",
+          "a": "The mud bonded rotary and vibrator hose is listed from 2\" to 5\" inner diameter. Custom sizes outside this range can be quoted, and the lead time extends accordingly. State the inner diameter and the host port type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Continental rotary and vibrator hose, mud bonded have?",
+          "a": "The Continental rotary and vibrator hose, mud bonded is rated 5,000 psi working pressure (WP) and 12,500 psi minimum burst pressure (MBP) to API 7K. MBP is 2.5 times WP, and hydrotest pressure is 1.5 times WP."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Continental rotary and vibrator hose, mud bonded cover?",
+          "a": "The Continental rotary and vibrator hose, mud bonded is rated -30°C to +82°C in standard service. Sour service and high-temperature variants exist, so state the wellbore conditions on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Continental rotary and vibrator hose, mud bonded?",
+          "a": "The liner is oil-resistant NBR synthetic rubber, and the reinforcement is multiple high-tensile steel cable plies. The coupling is bonded to the hose body."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Continental rotary and vibrator hose, mud bonded meet?",
+          "a": "It is built to API 7K, API Spec 7K Grade D, and each assembly ships with a test certificate referencing the API standard. See [API 7K, 16C and 16D](/blog/api-7k-16c-16d-which-standard) for which standard to cite."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental rotary and vibrator hose, mud bonded use?",
+          "a": "The coupling is factory-bonded and not field-replaceable, and the geometry follows API 7K. Specify the host port type on the RFQ, typically NPT, hammer union or API ring joint."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths are standard for the Continental rotary and vibrator hose, mud bonded?",
+          "a": "Standard rig-floor assemblies of the Continental rotary and vibrator hose, mud bonded are 50 ft (15 m), 75 ft (23 m) and 100 ft (30 m), and lengths up to 250 ft (75 m) are available for offshore tensioner and compensator service. Specify the exact length and end fittings on the RFQ; the [oilfield hose guide](/blog/oilfield-hose-guide) explains how."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Continental rotary and vibrator hose, mud bonded used?",
+          "a": "It is used between the standpipe manifold, the kelly hose and the vibrator service on drilling rigs. See [rig site hose replacement in Abu Dhabi](/blog/rig-site-hose-replacement-abu-dhabi) and [drilling hoses](/c/drilling-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental rotary and vibrator hose, mud bonded differ from other drilling hoses?",
+          "a": "The bonded hose has couplings bonded in the factory, while the [crimped version](/p/rotary-vibrator-hose-mud-crimped) has crimped end fittings for inline replacement. See the [sour-service version](/p/rotary-vibrator-hose-for-high-temperature-sour-service) for H2S."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Continental rotary and vibrator hose, mud bonded?",
+          "a": "The listing states a lead time of 21 days for the Continental rotary and vibrator hose, mud bonded, typically two to three weeks ex-works for common configurations. Custom-spec assemblies such as sour service, exotic liners or project-specific lengths ship within six to eight weeks. It is made in Germany by Continental."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Rotary & vibrator hose mud bonded in stock in Dubai?",
+          "a": "Yes. We keep the Rotary & vibrator hose mud bonded in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "rotary-vibrator-hose-mud-crimped",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Continental rotary and vibrator hose, mud crimped used for?",
+          "a": "A crimped rotary and vibrator hose circulates drilling mud with factory-crimped end fittings for inline replacement. This Continental ContiTech hose has an oil-resistant NBR liner and is rated 5,000 psi working pressure to API 7K Grade D."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Continental rotary and vibrator hose, mud crimped come in?",
+          "a": "The mud crimped rotary and vibrator hose is listed from 2\" to 5\" inner diameter. Custom sizes outside this range can be quoted, and the lead time extends accordingly. State the inner diameter and the host port type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Continental rotary and vibrator hose, mud crimped have?",
+          "a": "The Continental rotary and vibrator hose, mud crimped is rated 5,000 psi working pressure (WP) and 12,500 psi minimum burst pressure (MBP) to API 7K. MBP is 2.5 times WP, and hydrotest pressure is 1.5 times WP."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Continental rotary and vibrator hose, mud crimped cover?",
+          "a": "The Continental rotary and vibrator hose, mud crimped is rated -30°C to +82°C in standard service. Sour service and high-temperature variants exist, so state the wellbore conditions on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Continental rotary and vibrator hose, mud crimped?",
+          "a": "The liner is oil-resistant NBR, and the reinforcement is multiple high-tensile steel cable plies. The end fitting is hydraulic-crimped on a swaged bell-mouth."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Continental rotary and vibrator hose, mud crimped meet?",
+          "a": "It is built to API 7K, API Spec 7K Grade D, and each assembly ships with a test certificate referencing the API standard. We supply API 7K certificate documentation with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental rotary and vibrator hose, mud crimped use?",
+          "a": "The end fitting is a hydraulic crimp on a swaged bell-mouth, field-replaceable on RFQ. Typical fittings are NPT, hammer union (Weco or FMC) or API hammer-lug per the rig spec."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths are standard for the Continental rotary and vibrator hose, mud crimped?",
+          "a": "Standard rig-floor assemblies of the Continental rotary and vibrator hose, mud crimped are 50 ft (15 m), 75 ft (23 m) and 100 ft (30 m), and lengths up to 250 ft (75 m) are available for offshore tensioner and compensator service. Specify the exact length and end fittings on the RFQ; the [oilfield hose guide](/blog/oilfield-hose-guide) explains how."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Continental rotary and vibrator hose, mud crimped used?",
+          "a": "It is used for circulating drilling mud where the fittings must be replaceable inline on the rig. See [drilling hoses](/c/drilling-hoses) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental rotary and vibrator hose, mud crimped differ from other drilling hoses?",
+          "a": "The crimped hose has field-replaceable fittings, while the [bonded hose](/p/rotary-vibrator-hose-mud-bonded) has couplings bonded in the factory. The [swaged-coupling hose](/p/rotary-vibrator-hose-swaged-coupling) uses a cold-formed coupling for high-cycle service."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Continental rotary and vibrator hose, mud crimped?",
+          "a": "The listing states a lead time of 21 days for the Continental rotary and vibrator hose, mud crimped, typically two to three weeks ex-works for common configurations. Custom-spec assemblies such as sour service, exotic liners or project-specific lengths ship within six to eight weeks. It is made in Germany by Continental."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Rotary & vibrator hose mud crimped in stock in Dubai?",
+          "a": "Yes. We keep the Rotary & vibrator hose mud crimped in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "rotary-vibrator-hose-swaged-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Continental rotary and vibrator hose with swaged couplings used for?",
+          "a": "This rotary and vibrator hose has cold-formed swaged couplings for high-cycle drilling service. It is a Continental ContiTech hose with an oil-resistant NBR liner, rated 5,000 psi working pressure and listed to API 7K Grade D."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Continental rotary and vibrator hose with swaged couplings come in?",
+          "a": "The swaged-coupling rotary and vibrator hose is listed from 2\" to 5\" inner diameter. Custom sizes outside this range can be quoted, and the lead time extends accordingly. State the inner diameter and the host port type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Continental rotary and vibrator hose with swaged couplings have?",
+          "a": "The Continental rotary and vibrator hose with swaged couplings is rated 5,000 psi working pressure (WP) to API 7K, and the listing gives no minimum burst figure. The usual relation is a burst of 2.5 times WP with a hydrotest of 1.5 times WP, so confirm on the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Continental rotary and vibrator hose with swaged couplings cover?",
+          "a": "The Continental rotary and vibrator hose with swaged couplings is rated -30°C to +82°C in standard service. Sour service and high-temperature variants exist, so state the wellbore conditions on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Continental rotary and vibrator hose with swaged couplings?",
+          "a": "The liner is oil-resistant NBR, and the reinforcement is multiple high-tensile steel cable plies. The coupling is a cold-formed swaged attachment."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Continental rotary and vibrator hose with swaged couplings meet?",
+          "a": "It is listed to API 7K Grade D, and each assembly ships with a test certificate referencing the API standard. We supply API 7K certificate documentation with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental rotary and vibrator hose with swaged couplings use?",
+          "a": "The coupling is a cold-formed swaged attachment with a high-cycle fatigue rating, specified per API 7K. Typical end fittings are hammer union or API flange."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths are standard for the Continental rotary and vibrator hose with swaged couplings?",
+          "a": "Standard rig-floor assemblies of the Continental rotary and vibrator hose with swaged couplings are 50 ft (15 m), 75 ft (23 m) and 100 ft (30 m), and lengths up to 250 ft (75 m) are available for offshore tensioner and compensator service. Specify the exact length and end fittings on the RFQ; the [oilfield hose guide](/blog/oilfield-hose-guide) explains how."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Continental rotary and vibrator hose with swaged couplings used?",
+          "a": "It is used where the hose flexes many times, in high-cycle drilling service at the standpipe and kelly hose. See [drilling hoses](/c/drilling-hoses)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental rotary and vibrator hose with swaged couplings differ from other drilling hoses?",
+          "a": "The swaged hose is made for high-cycle fatigue, while the [crimped hose](/p/rotary-vibrator-hose-mud-crimped) has field-replaceable crimped fittings and the [bonded hose](/p/rotary-vibrator-hose-mud-bonded) has bonded couplings."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Continental rotary and vibrator hose with swaged couplings?",
+          "a": "The listing states a lead time of 21 days for the Continental rotary and vibrator hose with swaged couplings, typically two to three weeks ex-works for common configurations. Custom-spec assemblies such as sour service, exotic liners or project-specific lengths ship within six to eight weeks. It is made in Germany by Continental."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Rotary & Vibrator Hose (swaged coupling) in stock in Dubai?",
+          "a": "Yes. We keep the Rotary & Vibrator Hose (swaged coupling) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "rotary-vibrator-hose-cement-crimped-powerspiral",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Gates Powerspiral cement crimped rotary and vibrator hose used for?",
+          "a": "This Gates PowerSpiral hose carries cement slurry in cement-circulating service, with spiral steel reinforcement and crimped end fittings. It has a cement-resistant NBR liner and is rated 5,000 psi working pressure to API 7K Grade D."
+        },
+        {
+          "slot": "D",
+          "q": "What inner diameters does the Gates Powerspiral cement crimped rotary and vibrator hose come in?",
+          "a": "The Gates Powerspiral cement crimped hose is listed from 2\" to 5\" inner diameter. Custom sizes outside this range can be quoted, and the lead time extends accordingly. State the inner diameter and the host port type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Gates Powerspiral cement crimped rotary and vibrator hose have?",
+          "a": "The Gates Powerspiral cement crimped rotary and vibrator hose is rated 5,000 psi working pressure (WP) and 12,500 psi minimum burst pressure (MBP) to API 7K. MBP is 2.5 times WP, and hydrotest pressure is 1.5 times WP."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Gates Powerspiral cement crimped rotary and vibrator hose cover?",
+          "a": "The Gates Powerspiral cement crimped rotary and vibrator hose is rated -30°C to +82°C in standard service. Sour service and high-temperature variants exist, so state the wellbore conditions on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Gates Powerspiral cement crimped rotary and vibrator hose?",
+          "a": "The liner is cement-resistant NBR, and the reinforcement is Gates PowerSpiral high-tensile steel spiral plies. The end fitting is hydraulic-crimped on a swaged bell-mouth."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Gates Powerspiral cement crimped rotary and vibrator hose meet?",
+          "a": "It is built to API 7K, API Spec 7K Grade D, and each assembly ships with a test certificate referencing the API standard. We supply API 7K certificate documentation with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Gates Powerspiral cement crimped rotary and vibrator hose use?",
+          "a": "The end fitting is a hydraulic crimp on a swaged bell-mouth, field-replaceable on RFQ. Typical fittings are NPT, hammer union (Weco or FMC) or API hammer-lug per the rig spec."
+        },
+        {
+          "slot": "I",
+          "q": "What lengths are standard for the Gates Powerspiral cement crimped rotary and vibrator hose?",
+          "a": "Standard rig-floor assemblies of the Gates Powerspiral cement crimped rotary and vibrator hose are 50 ft (15 m), 75 ft (23 m) and 100 ft (30 m), and lengths up to 250 ft (75 m) are available for offshore tensioner and compensator service. Specify the exact length and end fittings on the RFQ; the [oilfield hose guide](/blog/oilfield-hose-guide) explains how."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Gates Powerspiral cement crimped rotary and vibrator hose used?",
+          "a": "It is used for cement circulation from the cementing unit to the well, where spiral steel reinforcement is preferred. See [cementing units](/c/cementing-units) and the guide on [API 7K rotary and vibrator hose](/blog/api-7k-rotary-vibrator-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Gates Powerspiral cement crimped rotary and vibrator hose differ from other drilling hoses?",
+          "a": "This hose has spiral steel reinforcement and crimped fittings, while the [cement bonded hose](/p/rotary-vibrator-hose-cement-bonded) has multiple steel-cable plies with a bonded coupling. Both use a cement-resistant liner."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Gates Powerspiral cement crimped rotary and vibrator hose?",
+          "a": "The listing states a lead time of 21 days for the Gates Powerspiral cement crimped rotary and vibrator hose, typically two to three weeks ex-works for common configurations. Custom-spec assemblies such as sour service, exotic liners or project-specific lengths ship within six to eight weeks."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Rotary & vibrator hose cement crimped Powerspiral in stock in Dubai?",
+          "a": "Yes. We keep the Rotary & vibrator hose cement crimped Powerspiral in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

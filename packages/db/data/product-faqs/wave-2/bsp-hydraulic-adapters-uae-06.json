@@ -1,0 +1,84 @@
+{
+  "family": "bsp-hydraulic-adapters-uae-06",
+  "extraFacts": [
+    {
+      "fact": "NPTF is the Dryseal American pipe taper thread, covered by ASME B1.20.3.",
+      "source": "ASME B1.20.3 (Dryseal pipe threads, inch)"
+    },
+    {
+      "fact": "BSPP is the British Standard Pipe parallel thread, covered by ISO 228-1; it seals with a washer, O-ring or cone seat rather than on the thread.",
+      "source": "ISO 228-1 (Pipe threads where pressure-tight joints are not made on the threads)"
+    },
+    {
+      "fact": "A JIC 37° flare fitting seals metal to metal on a 37° flare, covered by SAE J514 and ISO 8434-2.",
+      "source": "SAE J514; ISO 8434-2 (37° flared fittings)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-british-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon British Adapters used for?",
+          "a": "The Dixon British Adapters join an American NPTF or JIC 37° port to a British BSPP port, so equipment with one thread standard can be connected to a line with the other. The listing carries 17 part numbers in brass and steel in three series, B3401, B3455 and B3800, plus two British instantaneous couplings."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers B3401, B3455 and B3800 on the Dixon British Adapters?",
+          "a": "The series number sets the ends and the dash numbers set the size: B3401 is a male NPTF × male BSPP adapter, B3455 is a female NPTF × male BSPP adapter and B3800 is a male JIC 37° flare × male BSPP adapter. In B3455-12-12 and B3401-12-12 the 12 is the 3/4\" size, and -4, -6, -8 and -16 are the 1/4\", 3/8\", 1/2\" and 1\" sizes."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Dixon British Adapters come in?",
+          "a": "Each of the three adapter series is listed in the -4, -6, -8, -12 and -16 sizes. For the B3455 female NPTF series the thread runs from 1/4\"-18 at -4 to 1\"-11.5 at -16, and B3800 uses the JIC thread sizes 7/16\"-20, 9/16\"-18, 3/4\"-16, 1 1/16\"-12 and 1 5/16\"-12 at the same dash sizes. The size table lists every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Dixon British Adapters?",
+          "a": "Identify the thread on each side first: NPTF is a tapered pipe thread, BSPP a parallel British pipe thread and JIC a 37° flare, and an adapter only seals when both ends match the ports they go into. Then pick the dash size, and quote the Dixon part number or measure the threads and tell us the seat. Our [guide to bridging two thread standards](/blog/bridging-two-thread-standards) explains when one adapter is enough."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Dixon British Adapters rated for?",
+          "a": "The maker states a rating by size, up to 5,000 psi (345 bar) on the adapters: the rows list 345 bar at -4, 276 bar at -6, 207 bar at -8, 172 bar at -12 and 138 bar at -16, so the rating falls as the size grows. Read the figure on the row you order, and remember the line is rated to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon British Adapters made from?",
+          "a": "The listing gives the material as brass and steel, and the item description in the size table does not say which part number is which, so quote the part number and tell us the fluid if the line carries anything other than hydraulic oil. We will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon British Adapters follow?",
+          "a": "The listing names the thread pairing NPTF × BSPP and does not state a standard for the adapters themselves. NPTF is the Dryseal pipe taper thread under ASME B1.20.3, BSPP the parallel British pipe thread under ISO 228-1 and JIC the 37° flare of SAE J514 and ISO 8434-2. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon British Adapters connect to?",
+          "a": "One end is a male BSPP thread that goes into a British parallel-thread port; the other is a male NPTF (B3401), female NPTF (B3455) or male JIC 37° flare (B3800) end for the American side. Each end only seals against a port or fitting of the same thread and seat. For other thread pairs see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Dixon British Adapters?",
+          "a": "Check the thread and seat at each end before you tighten: a BSPP end seals on a washer, O-ring or cone seat, not on the thread, while an NPTF end seals on the thread with sealant. Start the thread by hand and do not force it. See our [guide to fitting make-up torque](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon British Adapters differ from the BSP adapters range?",
+          "a": "The Dixon British Adapters are NPTF × BSPP and JIC × BSPP adapters from one maker, with the series numbers B3401, B3455 and B3800, while the other adapters on this shelf are Indus-listed families such as the [Brennan 7000 MJ-MBSPT Straight Conversion Adapters](/p/brennan-7000-mj-mbspt-straight-conversion-adapters). Choose by the thread and seat at each port, not by the name."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon British Adapters made and can you export them from Dubai?",
+          "a": "The Dixon British Adapters is listed with United States as the country of origin; the HS code is confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Dixon British Adapters in stock in Dubai?",
+          "a": "Yes. We keep the Dixon British Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

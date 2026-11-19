@@ -1,0 +1,1018 @@
+{
+  "family": "air-preparation-frl-07",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversion used in these answers: 1 bar = 14.5038 psi, so 100 psi is about 7 bar, 125 psi about 9 bar, 145 psi about 10 bar, 150 psi about 10 bar, 160 psi about 11 bar, 175 psi about 12 bar, 200 psi about 14 bar, 215 psi about 15 bar, 220 psi about 15 bar, 250 psi about 17 bar, 290 psi about 20 bar, 300 psi about 21 bar and 500 psi about 34 bar.",
+      "source": "ISO 80000-4 / NIST SP 811 unit conversion (1 bar = 100 kPa = 14.5038 psi)"
+    },
+    {
+      "fact": "FRL line order and roles: in a compressed-air line the usual order is filter, then regulator, then lubricator, with the lubricator last before the tool or cylinder. The filter protects the regulator and tools from dirt and water, the regulator sets a steady working pressure, and the lubricator adds oil mist only while air is flowing. Size units on port size and on the air flow the downstream tools need, not on line size alone.",
+      "source": "Indus guide /blog/frl-filter-regulator-lubricator-guide; maker FRL catalogues (Parker 0700P, Norgren, SMC)"
+    },
+    {
+      "fact": "Filter grades: a particulate filter removes solids and bulk liquid water down to its micron grade; a coalescing filter removes oil aerosol and very fine particles and needs a particulate pre-filter upstream; an activated-carbon filter removes oil vapour and odour and is placed after a coalescing filter. ISO 8573-1 is the standard that sets compressed-air purity classes for solid particles, water and oil, and a single filter stage does not by itself guarantee a class.",
+      "source": "ISO 8573-1 (compressed air purity classes); Indus guide /blog/compressed-air-quality-iso-8573-1; maker catalogues"
+    },
+    {
+      "fact": "Bowls: polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, and should be cleaned with mild soap and water only; metal bowls with a sight glass are used where those chemicals are present or where a plastic bowl is not permitted. Pressure and temperature ratings of plastic and metal bowl versions differ and are given per part number.",
+      "source": "Maker catalogue bowl cautions (Parker 0700P Prep-Air II, Norgren, SMC)"
+    },
+    {
+      "fact": "Regulators: a relieving regulator vents excess downstream pressure through the bonnet when the setting is turned down, while a non-relieving regulator holds the pressure until the load uses it. A regulator is set by turning the adjusting knob up to the working pressure on the gauge, and the inlet rating and the outlet adjustment range are separate figures. A regulator that creeps or will not hold its setting usually has dirt on the seat or a worn diaphragm.",
+      "source": "Maker catalogues (Norgren, ARO, Parker); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Lubricators: a mist (oil-fog) lubricator sends the drops it meters into the air stream and suits a single tool or cylinder close by; a micro-mist (micro-fog) lubricator returns the larger drops to the bowl and sends only fine particles, which travel further and can feed several points or a longer pipe run. Both feed oil only while air is flowing, and the lubricant should be the oil the maker recommends.",
+      "source": "Maker catalogues (Parker 0700P, Norgren, Dixon); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Harmonized System headings: 8421.39 covers filtering or purifying machinery and apparatus for gases (compressed-air filters); 8421.99 covers parts of such filters (replacement filter elements); 8481.10 covers pressure-reducing valves (air regulators); 8481.80 covers other taps, cocks and valves. Customs authorities classify combination units and lubricators individually, commonly under 8421.39, 8481.10 or 8481.80.",
+      "source": "World Customs Organization, Harmonized System Nomenclature 2022, headings 84.21 and 84.81"
+    },
+    {
+      "fact": "Flow ratings in cfm or scfm are quoted by the maker at a stated inlet pressure and pressure drop, so a unit sized on port size alone can drop pressure at full flow; check the flow curve or the row for the part you order.",
+      "source": "Maker air preparation catalogues (flow curves at stated inlet pressure and pressure drop)"
+    },
+    {
+      "fact": "Size-table data across the listings in this group (from the part-number rows): Wilkerson Air Regulators: ports 1/4\", 1/2\" and 1\", flow 12 to 80 cfm, rated 300 psi; Wilkerson B08 Series Filter/Regulators: ports 1/4\", flow 70 to 73 cfm, rated 150 and 250 psi, grades 5 micron; Wilkerson B18 Series Filter/Regulators: ports 1/4\", 3/8\" and 1/2\", flow 140 to 180 cfm, rated 150 and 250 psi, grades 5 micron; Wilkerson B28 Series Filter/Regulators: ports 3/8\", 1/2\" and 3/4\", flow 250 to 280 cfm, rated 150 and 250 psi, grades 5 micron; Wilkerson C18 Series Filter/Regulator/Lubricators: ports 1/4\", 3/8\" and 1/2\", flow 42 to 70 cfm, rated 150 and 250 psi; Wilkerson C28 Series Filter/Regulator/Lubricators: ports 3/8\", 1/2\" and 3/4\", flow 90 to 112 cfm, rated 150 and 250 psi; Wilkerson D18 Series Filter/Regulator/Lubricators: ports 1/4\", 3/8\" and 1/2\", flow 70 to 70 cfm, rated 150 and 250 psi; Wilkerson D28 Series Filter/Regulator/Lubricators: ports 3/8\", 1/2\" and 3/4\", flow 112 to 112 cfm, rated 150 and 250 psi; Wilkerson F18 Particulate Filters: ports 1/4\", 3/8\" and 1/2\", rated 150 and 250 psi; Wilkerson F28 Particulate Filters: ports 3/8\", 1/2\" and 3/4\", rated 150 and 250 psi; Wilkerson F30 Particulate Filters: ports 3/4\" and 1\", rated 150 and 200 psi, grades 5 micron; Wilkerson Filter/Regulators: ports 1/4\" and 1/2\", flow 70 to 70 cfm, rated 150 and 300 psi, grades 5 micron; Wilkerson FRLs B08 Series Miniature Filters/Regulators: ports 1/4\", rated 150 and 250 psi; Wilkerson FRLs B18 Series Compact Filters/Regulators: ports 1/4\", 3/8\" and 1/2\", rated 150 and 250 psi; Wilkerson FRLs B28 Series Standard Filters/Regulators: ports 3/8\", 1/2\" and 3/4\", rated 150 and 250 psi.",
+      "source": "Indus Hydraulics listing size tables (maker part-number rows), November 2026"
+    }
+  ],
+  "products": [
+    {
+      "slug": "wilkerson-air-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson Air Regulators used for?",
+          "a": "The Wilkerson Air Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 5 part numbers in 1/4\", 1/2\" and 1\" NPT ports. Listed materials: stainless steel body and fluorocarbon seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson Air Regulators range and how do they differ?",
+          "a": "Examples from the listing are SR2-04-LAS0 (1/2\" port, 300 psi, 80 cfm), SR1-02-LAS0 (1/4\" port, 300 psi, 12 cfm) and R30-08-G00 (1\" port, 300 psi). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson Air Regulators come in?",
+          "a": "The Wilkerson Air Regulators are listed in 1/4\", 1/2\" and 1\" NPT ports. Listed flow runs from 12 to 80 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson Air Regulators part number?",
+          "a": "For the Wilkerson Air Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Wilkerson Air Regulators?",
+          "a": "The Wilkerson Air Regulators rows are rated 300 psi (about 21 bar). The listing gives an adjustment range of 0 psi to 125 psi. The listing gives a temperature of 150°F. The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Wilkerson Air Regulators relieving, and what is it made from?",
+          "a": "The listing gives a relieving regulator with a balanced valve design. Specification lines: stainless steel body and fluorocarbon seals. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson Air Regulators come with a pressure gauge?",
+          "a": "The Wilkerson Air Regulators listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Wilkerson Air Regulators?",
+          "a": "Fit the Wilkerson Air Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Wilkerson Filter/Regulators](/p/wilkerson-filter-regulators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Wilkerson Air Regulators?",
+          "a": "To set the Wilkerson Air Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson Air Regulators and the Wilkerson Filter/Regulators?",
+          "a": "The Wilkerson Air Regulators are air pressure regulators, while the [Filter/Regulators](/p/wilkerson-filter-regulators) are filter/regulators. They do different jobs in the same air line and are often fitted together; the Wilkerson Air Regulators are listed with 1/4\", 1/2\" and 1\" ports, flow up to 80 cfm and ratings of 300 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson Air Regulators made and how is it shipped from Dubai?",
+          "a": "The Wilkerson Air Regulators listing gives United States as the country of origin and HS code 8481100060. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wilkerson Air Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Wilkerson Air Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-b08-series-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Wilkerson B08 Series Filter/Regulators do in a compressed-air line?",
+          "a": "The Wilkerson B08 Series Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 3 part numbers in 1/4\" NPT ports. Listed materials: aluminum body, bowl: metal, polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson B08 Series Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B08-02-FLG0B (1/4\" port, 250 psi, 73 cfm, 5 micron), B08-C2-FRG0B (150 psi, 70 cfm, 5 micron) and B08-02-FRG0B (1/4\" port, 150 psi, 70 cfm, 5 micron). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson B08 Series Filter/Regulators come in?",
+          "a": "The Wilkerson B08 Series Filter/Regulators are listed in 1/4\" NPT ports. Listed flow runs from 70 to 73 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson B08 Series Filter/Regulators part number?",
+          "a": "For the Wilkerson B08 Series Filter/Regulators, choose by pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson B08 Series Filter/Regulators have?",
+          "a": "The Wilkerson B08 Series Filter/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 150°F. The Wilkerson B08 Series Filter/Regulators listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson B08 Series Filter/Regulators?",
+          "a": "The rows show 5 micron element grades. Specification lines: aluminum body, bowl: metal, polyethylene element and nitrile seals. On the Wilkerson B08 Series Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson B08 Series Filter/Regulators include a lubricator?",
+          "a": "The Wilkerson B08 Series Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson B08 Series Filter/Regulators?",
+          "a": "Connect the Wilkerson B08 Series Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson C18 Series Filter/Regulator/Lubricators](/p/wilkerson-c18-series-filter-regulator-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson B08 Series Filter/Regulators?",
+          "a": "Drain the Wilkerson B08 Series Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson B08 Series Filter/Regulators and the Wilkerson FRLs B08 Series Miniature Filters/Regulators?",
+          "a": "The Wilkerson B08 Series Filter/Regulators are listed with 1/4\" ports, flow up to 73 cfm and ratings of 150 and 250 psi. The [FRLs B08 Series Miniature Filters/Regulators](/p/wilkerson-frls-b08-series-miniature-filters-regulators) are listed with 1/4\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Wilkerson B08 Series Filter/Regulators?",
+          "a": "The Wilkerson B08 Series Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wilkerson B08 Series Filter/Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Wilkerson B08 Series Filter/Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-b18-series-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson B18 Series Filter/Regulators used for?",
+          "a": "The Wilkerson B18 Series Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 7 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports. Listed materials: aluminum body, polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson B18 Series Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B18-02-FK00B (1/4\" port, 150 psi, 140 cfm), B18-03-FL00B (3/8\" port, 250 psi, 160 cfm, 5 micron) and B18-04-FL00B (1/2\" port, 250 psi, 180 cfm, 5 micron). In these part numbers the middle block is the port size (02 is 1/4\", 03 is 3/8\" and 04 is 1/2\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson B18 Series Filter/Regulators come in?",
+          "a": "The Wilkerson B18 Series Filter/Regulators are listed in 1/4\", 3/8\" and 1/2\" NPT ports. Listed flow runs from 140 to 180 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson B18 Series Filter/Regulators part number?",
+          "a": "For the Wilkerson B18 Series Filter/Regulators, choose by port size and pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson B18 Series Filter/Regulators have?",
+          "a": "The Wilkerson B18 Series Filter/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives an adjustment range of 0 psi to 125 psi. Check whether the Wilkerson B18 Series Filter/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson B18 Series Filter/Regulators?",
+          "a": "The rows show 5 micron element grades. Specification lines: aluminum body, polyethylene element and nitrile seals. On the Wilkerson B18 Series Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson B18 Series Filter/Regulators include a lubricator?",
+          "a": "The Wilkerson B18 Series Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson B18 Series Filter/Regulators?",
+          "a": "Connect the Wilkerson B18 Series Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson C18 Series Filter/Regulator/Lubricators](/p/wilkerson-c18-series-filter-regulator-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson B18 Series Filter/Regulators?",
+          "a": "Drain the Wilkerson B18 Series Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson B18 Series Filter/Regulators and the Wilkerson FRLs B18 Series Compact Filters/Regulators?",
+          "a": "The Wilkerson B18 Series Filter/Regulators are listed with 1/4\", 3/8\" and 1/2\" ports, flow up to 180 cfm and ratings of 150 and 250 psi. The [FRLs B18 Series Compact Filters/Regulators](/p/wilkerson-frls-b18-series-compact-filters-regulators) are listed with 1/4\", 3/8\" and 1/2\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson B18 Series Filter/Regulators made and how is it shipped from Dubai?",
+          "a": "The Wilkerson B18 Series Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wilkerson B18 Series Filter/Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Wilkerson B18 Series Filter/Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-b28-series-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Wilkerson B28 Series Filter/Regulators do in a compressed-air line?",
+          "a": "The Wilkerson B28 Series Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 6 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: aluminum body, polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson B28 Series Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B28-03-FK00B (3/8\" port, 150 psi, 250 cfm, 5 micron), B28-04-FL00B (1/2\" port, 250 psi, 260 cfm) and B28-06-FL00B (3/4\" port, 250 psi, 280 cfm, 5 micron). In these part numbers the middle block is the port size (03 is 3/8\", 04 is 1/2\" and 06 is 3/4\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson B28 Series Filter/Regulators come in?",
+          "a": "The Wilkerson B28 Series Filter/Regulators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Listed flow runs from 250 to 280 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson B28 Series Filter/Regulators part number?",
+          "a": "For the Wilkerson B28 Series Filter/Regulators, choose by port size and pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson B28 Series Filter/Regulators have?",
+          "a": "The Wilkerson B28 Series Filter/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives an adjustment range of 0 psi to 125 psi. Check whether the Wilkerson B28 Series Filter/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson B28 Series Filter/Regulators?",
+          "a": "The rows show 5 micron element grades. Specification lines: aluminum body, polyethylene element and nitrile seals. On the Wilkerson B28 Series Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson B28 Series Filter/Regulators include a lubricator?",
+          "a": "The Wilkerson B28 Series Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson B28 Series Filter/Regulators?",
+          "a": "Connect the Wilkerson B28 Series Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson C18 Series Filter/Regulator/Lubricators](/p/wilkerson-c18-series-filter-regulator-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson B28 Series Filter/Regulators?",
+          "a": "Drain the Wilkerson B28 Series Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson B28 Series Filter/Regulators and the Wilkerson FRLs B28 Series Standard Filters/Regulators?",
+          "a": "The Wilkerson B28 Series Filter/Regulators are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 280 cfm and ratings of 150 and 250 psi. The [FRLs B28 Series Standard Filters/Regulators](/p/wilkerson-frls-b28-series-standard-filters-regulators) are listed with 3/8\", 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Wilkerson B28 Series Filter/Regulators?",
+          "a": "The Wilkerson B28 Series Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Wilkerson B28 Series Filter/Regulators in Dubai?",
+          "a": "Yes. We keep the Wilkerson B28 Series Filter/Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-c18-series-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson C18 Series Filter/Regulator/Lubricators used for?",
+          "a": "The Wilkerson C18 Series Filter/Regulator/Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 6 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports. Listed materials: aluminum body, bowl: polycarbonate, polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson C18 Series Filter/Regulator/Lubricators range and how do they differ?",
+          "a": "Examples from the listing are C18-02-FKG0B (1/4\" port, 150 psi, 42 cfm), C18-02-FLG0B (1/4\" port, 250 psi) and C18-04-FLG0B (1/2\" port, 250 psi). In these part numbers the middle block is the port size (02 is 1/4\", 03 is 3/8\" and 04 is 1/2\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson C18 Series Filter/Regulator/Lubricators come in?",
+          "a": "The Wilkerson C18 Series Filter/Regulator/Lubricators are listed in 1/4\", 3/8\" and 1/2\" NPT ports. Listed flow runs from 42 to 70 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson C18 Series Filter/Regulator/Lubricators part number?",
+          "a": "For the Wilkerson C18 Series Filter/Regulator/Lubricators, choose by port size and pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson C18 Series Filter/Regulator/Lubricators have?",
+          "a": "The Wilkerson C18 Series Filter/Regulator/Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives an adjustment range of 0 psi to 125 psi. The listing gives a temperature of 125°F. The Wilkerson C18 Series Filter/Regulator/Lubricators listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson C18 Series Filter/Regulator/Lubricators?",
+          "a": "Specification lines: aluminum body, bowl: polycarbonate, polyethylene element and nitrile seals. On the Wilkerson C18 Series Filter/Regulator/Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Wilkerson C18 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson C18 Series Filter/Regulator/Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson C18 Series Filter/Regulator/Lubricators?",
+          "a": "Connect the Wilkerson C18 Series Filter/Regulator/Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson B08 Series Filter/Regulators](/p/wilkerson-b08-series-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson C18 Series Filter/Regulator/Lubricators?",
+          "a": "Drain the Wilkerson C18 Series Filter/Regulator/Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson C18 Series Filter/Regulator/Lubricators and the Wilkerson C28 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson C18 Series Filter/Regulator/Lubricators are listed with 1/4\", 3/8\" and 1/2\" ports, flow up to 70 cfm and ratings of 150 and 250 psi. The [C28 Series Filter/Regulator/Lubricators](/p/wilkerson-c28-series-filter-regulator-lubricators) are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 112 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson C18 Series Filter/Regulator/Lubricators made and how is it shipped from Dubai?",
+          "a": "The Wilkerson C18 Series Filter/Regulator/Lubricators listing gives China as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Wilkerson C18 Series Filter/Regulator/Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Wilkerson C18 Series Filter/Regulator/Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-c28-series-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Wilkerson C28 Series Filter/Regulator/Lubricators do in a compressed-air line?",
+          "a": "The Wilkerson C28 Series Filter/Regulator/Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 6 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: bowl: metal with sight gauge."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson C28 Series Filter/Regulator/Lubricators range and how do they differ?",
+          "a": "Examples from the listing are C28-04-FLG0B (1/2\" port, 90 cfm), C28-04-FKG0B (1/2\" port, 150 psi) and C28-06-FLG0B (3/4\" port, 250 psi). In these part numbers the middle block is the port size (03 is 3/8\", 04 is 1/2\" and 06 is 3/4\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson C28 Series Filter/Regulator/Lubricators come in?",
+          "a": "The Wilkerson C28 Series Filter/Regulator/Lubricators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Listed flow runs from 90 to 112 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson C28 Series Filter/Regulator/Lubricators part number?",
+          "a": "For the Wilkerson C28 Series Filter/Regulator/Lubricators, choose by port size and pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson C28 Series Filter/Regulator/Lubricators have?",
+          "a": "The Wilkerson C28 Series Filter/Regulator/Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives an adjustment range of 0 psi to 125 psi. The Wilkerson C28 Series Filter/Regulator/Lubricators listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson C28 Series Filter/Regulator/Lubricators?",
+          "a": "Specification lines: bowl: metal with sight gauge. On the Wilkerson C28 Series Filter/Regulator/Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Wilkerson C28 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson C28 Series Filter/Regulator/Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson C28 Series Filter/Regulator/Lubricators?",
+          "a": "Connect the Wilkerson C28 Series Filter/Regulator/Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson B08 Series Filter/Regulators](/p/wilkerson-b08-series-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson C28 Series Filter/Regulator/Lubricators?",
+          "a": "Drain the Wilkerson C28 Series Filter/Regulator/Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson C28 Series Filter/Regulator/Lubricators and the Wilkerson C18 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson C28 Series Filter/Regulator/Lubricators are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 112 cfm and ratings of 150 and 250 psi. The [C18 Series Filter/Regulator/Lubricators](/p/wilkerson-c18-series-filter-regulator-lubricators) are listed with 1/4\", 3/8\" and 1/2\" ports, flow up to 70 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Wilkerson C28 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson C28 Series Filter/Regulator/Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Wilkerson C28 Series Filter/Regulator/Lubricators in Dubai?",
+          "a": "Yes. We keep the Wilkerson C28 Series Filter/Regulator/Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-d18-series-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson D18 Series Filter/Regulator/Lubricators used for?",
+          "a": "The Wilkerson D18 Series Filter/Regulator/Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 6 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports. Listed materials: aluminum body, polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson D18 Series Filter/Regulator/Lubricators range and how do they differ?",
+          "a": "Examples from the listing are D18-02-FKG0B (1/4\" port, 150 psi), D18-02-FLG0B (1/4\" port, 250 psi) and D18-04-FLG0B (1/2\" port, 250 psi). In these part numbers the middle block is the port size (02 is 1/4\", 03 is 3/8\" and 04 is 1/2\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson D18 Series Filter/Regulator/Lubricators come in?",
+          "a": "The Wilkerson D18 Series Filter/Regulator/Lubricators are listed in 1/4\", 3/8\" and 1/2\" NPT ports. The listed flow is 70 cfm. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson D18 Series Filter/Regulator/Lubricators part number?",
+          "a": "For the Wilkerson D18 Series Filter/Regulator/Lubricators, choose by port size and pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson D18 Series Filter/Regulator/Lubricators have?",
+          "a": "The Wilkerson D18 Series Filter/Regulator/Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives an adjustment range of 0 psi to 125 psi. The listing gives a temperature of 125°F. Check whether the Wilkerson D18 Series Filter/Regulator/Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson D18 Series Filter/Regulator/Lubricators?",
+          "a": "Specification lines: aluminum body, polyethylene element and nitrile seals. On the Wilkerson D18 Series Filter/Regulator/Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Wilkerson D18 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson D18 Series Filter/Regulator/Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson D18 Series Filter/Regulator/Lubricators?",
+          "a": "Connect the Wilkerson D18 Series Filter/Regulator/Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson B08 Series Filter/Regulators](/p/wilkerson-b08-series-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson D18 Series Filter/Regulator/Lubricators?",
+          "a": "Drain the Wilkerson D18 Series Filter/Regulator/Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson D18 Series Filter/Regulator/Lubricators and the Wilkerson D28 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson D18 Series Filter/Regulator/Lubricators are listed with 1/4\", 3/8\" and 1/2\" ports, flow up to 70 cfm and ratings of 150 and 250 psi. The [D28 Series Filter/Regulator/Lubricators](/p/wilkerson-d28-series-filter-regulator-lubricators) are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 112 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson D18 Series Filter/Regulator/Lubricators made and how is it shipped from Dubai?",
+          "a": "The Wilkerson D18 Series Filter/Regulator/Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wilkerson D18 Series Filter/Regulator/Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Wilkerson D18 Series Filter/Regulator/Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-d28-series-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson D28 Series Filter/Regulator/Lubricators used for?",
+          "a": "The Wilkerson D28 Series Filter/Regulator/Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 6 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: aluminum body, polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson D28 Series Filter/Regulator/Lubricators range and how do they differ?",
+          "a": "Examples from the listing are D28-03-FKG0B (3/8\" port, 150 psi), D28-03-FLG0B (3/8\" port, 250 psi) and D28-06-FLG0B (3/4\" port, 250 psi). In these part numbers the middle block is the port size (03 is 3/8\", 04 is 1/2\" and 06 is 3/4\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson D28 Series Filter/Regulator/Lubricators come in?",
+          "a": "The Wilkerson D28 Series Filter/Regulator/Lubricators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. The listed flow is 112 cfm. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson D28 Series Filter/Regulator/Lubricators part number?",
+          "a": "For the Wilkerson D28 Series Filter/Regulator/Lubricators, choose by port size and pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson D28 Series Filter/Regulator/Lubricators have?",
+          "a": "The Wilkerson D28 Series Filter/Regulator/Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives an adjustment range of 0 psi to 125 psi. The listing gives a temperature of 125°F. Check whether the Wilkerson D28 Series Filter/Regulator/Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson D28 Series Filter/Regulator/Lubricators?",
+          "a": "Specification lines: aluminum body, polyethylene element and nitrile seals. On the Wilkerson D28 Series Filter/Regulator/Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Wilkerson D28 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson D28 Series Filter/Regulator/Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson D28 Series Filter/Regulator/Lubricators?",
+          "a": "Connect the Wilkerson D28 Series Filter/Regulator/Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson B08 Series Filter/Regulators](/p/wilkerson-b08-series-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson D28 Series Filter/Regulator/Lubricators?",
+          "a": "Drain the Wilkerson D28 Series Filter/Regulator/Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson D28 Series Filter/Regulator/Lubricators and the Wilkerson D18 Series Filter/Regulator/Lubricators?",
+          "a": "The Wilkerson D28 Series Filter/Regulator/Lubricators are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 112 cfm and ratings of 150 and 250 psi. The [D18 Series Filter/Regulator/Lubricators](/p/wilkerson-d18-series-filter-regulator-lubricators) are listed with 1/4\", 3/8\" and 1/2\" ports, flow up to 70 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson D28 Series Filter/Regulator/Lubricators made and how is it shipped from Dubai?",
+          "a": "The Wilkerson D28 Series Filter/Regulator/Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Wilkerson D28 Series Filter/Regulator/Lubricators in Dubai?",
+          "a": "Yes. We keep the Wilkerson D28 Series Filter/Regulator/Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-f18-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Wilkerson F18 Particulate Filters do in a compressed-air line?",
+          "a": "The Wilkerson F18 Particulate Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 7 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports. Listed materials: aluminum body, sintered polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson F18 Particulate Filters range and how do they differ?",
+          "a": "Examples from the listing are F18-04-SH00B (1/2\" port, 250 psi), F18-02-SL00B (1/4\" port, 250 psi) and F18-03-SL00B (3/8\" port, 250 psi). In these part numbers the middle block is the port size (02 is 1/4\", 03 is 3/8\" and 04 is 1/2\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson F18 Particulate Filters come in?",
+          "a": "The Wilkerson F18 Particulate Filters are listed in 1/4\", 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson F18 Particulate Filters part number for my air line?",
+          "a": "To choose a part number from the Wilkerson F18 Particulate Filters, choose by port size and pressure rating, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Wilkerson F18 Particulate Filters?",
+          "a": "The Wilkerson F18 Particulate Filters rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The maker pressure line on the listing reads 150 to 250 psi (10 to 17 bar), by size. The listing gives a temperature of 250°F. Check whether the Wilkerson F18 Particulate Filters part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Wilkerson F18 Particulate Filters use?",
+          "a": "The element grade of the Wilkerson F18 Particulate Filters is shown in each part-number row. Specification lines: aluminum body, sintered polyethylene element and nitrile seals. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson F18 Particulate Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Wilkerson F18 Particulate Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Wilkerson F18 Particulate Filters in an air line?",
+          "a": "Fit the Wilkerson F18 Particulate Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Wilkerson FRLs B08 Series Miniature Filters/Regulators](/p/wilkerson-frls-b08-series-miniature-filters-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Wilkerson F18 Particulate Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Wilkerson F18 Particulate Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson F18 Particulate Filters and the Wilkerson F28 Particulate Filters?",
+          "a": "The Wilkerson F18 Particulate Filters are listed with 1/4\", 3/8\" and 1/2\" ports and ratings of 150 and 250 psi. The [F28 Particulate Filters](/p/wilkerson-f28-particulate-filters) are listed with 3/8\", 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Wilkerson F18 Particulate Filters?",
+          "a": "The Wilkerson F18 Particulate Filters listing gives China as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Wilkerson F18 Particulate Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Wilkerson F18 Particulate Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-f28-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson F28 Particulate Filters used for?",
+          "a": "The Wilkerson F28 Particulate Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 6 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: aluminum body, sintered polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson F28 Particulate Filters range and how do they differ?",
+          "a": "Examples from the listing are F28-04-SK00B (1/2\" port, 150 psi), F28-06-SL00B (3/4\" port, 250 psi) and F28-03-SL00B (3/8\" port, 250 psi). In these part numbers the middle block is the port size (03 is 3/8\", 04 is 1/2\" and 06 is 3/4\"), and the letter K or L in the last block marks the 150 or 250 psi version. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson F28 Particulate Filters come in?",
+          "a": "The Wilkerson F28 Particulate Filters are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson F28 Particulate Filters part number for my air line?",
+          "a": "To choose a part number from the Wilkerson F28 Particulate Filters, choose by port size and pressure rating, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Wilkerson F28 Particulate Filters?",
+          "a": "The Wilkerson F28 Particulate Filters rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The maker pressure line on the listing reads 150 to 250 psi (10 to 17 bar), by size. The listing gives a temperature of 125°F. Check whether the Wilkerson F28 Particulate Filters part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Wilkerson F28 Particulate Filters use?",
+          "a": "The element grade of the Wilkerson F28 Particulate Filters is shown in each part-number row. Specification lines: aluminum body, sintered polyethylene element and nitrile seals. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson F28 Particulate Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Wilkerson F28 Particulate Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Wilkerson F28 Particulate Filters in an air line?",
+          "a": "Fit the Wilkerson F28 Particulate Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Wilkerson FRLs B08 Series Miniature Filters/Regulators](/p/wilkerson-frls-b08-series-miniature-filters-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Wilkerson F28 Particulate Filters?",
+          "a": "Drain a manual bowl before the liquid reaches the element. Change the element of the Wilkerson F28 Particulate Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson F28 Particulate Filters and the Wilkerson F18 Particulate Filters?",
+          "a": "The Wilkerson F28 Particulate Filters are listed with 3/8\", 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. The [F18 Particulate Filters](/p/wilkerson-f18-particulate-filters) are listed with 1/4\", 3/8\" and 1/2\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson F28 Particulate Filters made and how is it shipped from Dubai?",
+          "a": "The Wilkerson F28 Particulate Filters listing gives South Korea as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Wilkerson F28 Particulate Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Wilkerson F28 Particulate Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-f30-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson F30 Particulate Filters used for?",
+          "a": "The Wilkerson F30 Particulate Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 5 part numbers in 3/4\" and 1\" NPT ports. Listed materials: zinc body, bowl: plastic, polyethylene element and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson F30 Particulate Filters range and how do they differ?",
+          "a": "Examples from the listing are F30-08-000 (1\" port, 150 psi), F30-06-G00 (3/4\" port, 200 psi) and F30-08-F00 (1\" port, 150 psi, 5 micron). In these part numbers 06 is 3/4\" and 08 is 1\", and the final block 000 is the 150 psi version while G00 is the 200 psi version. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson F30 Particulate Filters come in?",
+          "a": "The Wilkerson F30 Particulate Filters are listed in 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson F30 Particulate Filters part number for my air line?",
+          "a": "To choose a part number from the Wilkerson F30 Particulate Filters, choose by port size and pressure rating, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Wilkerson F30 Particulate Filters?",
+          "a": "The Wilkerson F30 Particulate Filters rows are rated 150 psi (about 10 bar) and 200 psi (about 14 bar). The maker pressure line on the listing reads 150 to 200 psi (10 to 14 bar), by size. The listing gives a temperature of 125°F. The Wilkerson F30 Particulate Filters listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Wilkerson F30 Particulate Filters use?",
+          "a": "The Wilkerson F30 Particulate Filters rows show 5 micron element grades. Specification lines: zinc body, bowl: plastic, polyethylene element and nitrile seals. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson F30 Particulate Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Wilkerson F30 Particulate Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Wilkerson F30 Particulate Filters in an air line?",
+          "a": "Fit the Wilkerson F30 Particulate Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Wilkerson FRLs B08 Series Miniature Filters/Regulators](/p/wilkerson-frls-b08-series-miniature-filters-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Wilkerson F30 Particulate Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Wilkerson F30 Particulate Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson F30 Particulate Filters and the Wilkerson F18 Particulate Filters?",
+          "a": "The Wilkerson F30 Particulate Filters are listed with 3/4\" and 1\" ports and ratings of 150 and 200 psi. The [F18 Particulate Filters](/p/wilkerson-f18-particulate-filters) are listed with 1/4\", 3/8\" and 1/2\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson F30 Particulate Filters made and how is it shipped from Dubai?",
+          "a": "The Wilkerson F30 Particulate Filters listing gives United States as the country of origin and HS code 8421398090. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wilkerson F30 Particulate Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Wilkerson F30 Particulate Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Wilkerson Filter/Regulators do in a compressed-air line?",
+          "a": "The Wilkerson Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 6 part numbers in 1/4\" and 1/2\" NPT ports. Listed materials: stainless steel body, bowl: stainless steel and fluorocarbon seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are SB1-02-LYSS (1/4\" port, 300 psi), CB6-04-F00 (1/2\" port, 150 psi, 70 cfm, 5 micron) and SB2-04-LYSS (1/2\" port, 300 psi). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson Filter/Regulators come in?",
+          "a": "The Wilkerson Filter/Regulators are listed in 1/4\" and 1/2\" NPT ports. The listed flow is 70 cfm. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson Filter/Regulators part number?",
+          "a": "For the Wilkerson Filter/Regulators, choose by port size and pressure rating, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson Filter/Regulators have?",
+          "a": "The Wilkerson Filter/Regulators rows are rated 150 psi (about 10 bar) and 300 psi (about 21 bar). The listing gives an adjustment range of 0 psi to 125 psi. The listing gives a temperature of 150°F. Check whether the Wilkerson Filter/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Wilkerson Filter/Regulators?",
+          "a": "The rows show 5 micron element grades. Specification lines: stainless steel body, bowl: stainless steel and fluorocarbon seals. On the Wilkerson Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson Filter/Regulators include a lubricator?",
+          "a": "The Wilkerson Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson Filter/Regulators?",
+          "a": "Connect the Wilkerson Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson Air Regulators](/p/wilkerson-air-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson Filter/Regulators?",
+          "a": "Drain the Wilkerson Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson Filter/Regulators and the Wilkerson B08 Series Filter/Regulators?",
+          "a": "The Wilkerson Filter/Regulators are listed with 1/4\" and 1/2\" ports, flow up to 70 cfm and ratings of 150 and 300 psi. The [B08 Series Filter/Regulators](/p/wilkerson-b08-series-filter-regulators) are listed with 1/4\" ports, flow up to 73 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Wilkerson Filter/Regulators?",
+          "a": "The Wilkerson Filter/Regulators listing gives United States as the country of origin and HS code 8481100040. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wilkerson Filter/Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Wilkerson Filter/Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-frls-b08-series-miniature-filters-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Wilkerson FRLs B08 Series Miniature Filters/Regulators do in a compressed-air line?",
+          "a": "The Wilkerson FRLs B08 Series Miniature Filters/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 4 part numbers in 1/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson FRLs B08 Series Miniature Filters/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B08-02MG (1/4\" port, 150 psi, polycarbonate bowl, manual drain), B08-02AG (1/4\" port, 150 psi, polycarbonate bowl, auto drain) and B08-02AGMB (1/4\" port, 250 psi). In these part numbers the digits after the series are the port size (02 is 1/4\"), AG is the automatic-drain version and MG the manual-drain version with a transparent bowl and guard, and MB at the end marks the metal-bowl version rated 250 psi instead of 150 psi. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson FRLs B08 Series Miniature Filters/Regulators come in?",
+          "a": "The Wilkerson FRLs B08 Series Miniature Filters/Regulators are listed in 1/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson FRLs B08 Series Miniature Filters/Regulators part number?",
+          "a": "For the Wilkerson FRLs B08 Series Miniature Filters/Regulators, choose by pressure rating and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson FRLs B08 Series Miniature Filters/Regulators have?",
+          "a": "The Wilkerson FRLs B08 Series Miniature Filters/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 32°F to 125°F. The Wilkerson FRLs B08 Series Miniature Filters/Regulators listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Wilkerson FRLs B08 Series Miniature Filters/Regulators?",
+          "a": "On the Wilkerson FRLs B08 Series Miniature Filters/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson FRLs B08 Series Miniature Filters/Regulators include a lubricator?",
+          "a": "The Wilkerson FRLs B08 Series Miniature Filters/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson FRLs B08 Series Miniature Filters/Regulators?",
+          "a": "Connect the Wilkerson FRLs B08 Series Miniature Filters/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson F18 Particulate Filters](/p/wilkerson-f18-particulate-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson FRLs B08 Series Miniature Filters/Regulators?",
+          "a": "Drain the Wilkerson FRLs B08 Series Miniature Filters/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson FRLs B08 Series Miniature Filters/Regulators and the Wilkerson B08 Series Filter/Regulators?",
+          "a": "The Wilkerson FRLs B08 Series Miniature Filters/Regulators are listed with 1/4\" ports and ratings of 150 and 250 psi. The [B08 Series Filter/Regulators](/p/wilkerson-b08-series-filter-regulators) are listed with 1/4\" ports, flow up to 73 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Wilkerson FRLs B08 Series Miniature Filters/Regulators?",
+          "a": "The Wilkerson FRLs B08 Series Miniature Filters/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Wilkerson FRLs B08 Series Miniature Filters/Regulators in Dubai?",
+          "a": "Yes. We keep the Wilkerson FRLs B08 Series Miniature Filters/Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-frls-b18-series-compact-filters-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson FRLs B18 Series Compact Filters/Regulators used for?",
+          "a": "The Wilkerson FRLs B18 Series Compact Filters/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 12 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson FRLs B18 Series Compact Filters/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B18-02AG (1/4\" port, 150 psi, polycarbonate bowl, auto drain), B18-02MG (1/4\" port, 150 psi, polycarbonate bowl, manual drain) and B18-03MGMB (3/8\" port, 250 psi). In these part numbers the digits after the series are the port size (02 is 1/4\", 03 is 3/8\" and 04 is 1/2\"), AG is the automatic-drain version and MG the manual-drain version with a transparent bowl and guard, and MB at the end marks the metal-bowl version rated 250 psi instead of 150 psi. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson FRLs B18 Series Compact Filters/Regulators come in?",
+          "a": "The Wilkerson FRLs B18 Series Compact Filters/Regulators are listed in 1/4\", 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson FRLs B18 Series Compact Filters/Regulators part number?",
+          "a": "For the Wilkerson FRLs B18 Series Compact Filters/Regulators, choose by port size, pressure rating and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson FRLs B18 Series Compact Filters/Regulators have?",
+          "a": "The Wilkerson FRLs B18 Series Compact Filters/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 32°F to 125°F. The Wilkerson FRLs B18 Series Compact Filters/Regulators listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Wilkerson FRLs B18 Series Compact Filters/Regulators?",
+          "a": "On the Wilkerson FRLs B18 Series Compact Filters/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson FRLs B18 Series Compact Filters/Regulators include a lubricator?",
+          "a": "The Wilkerson FRLs B18 Series Compact Filters/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson FRLs B18 Series Compact Filters/Regulators?",
+          "a": "Connect the Wilkerson FRLs B18 Series Compact Filters/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson F18 Particulate Filters](/p/wilkerson-f18-particulate-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson FRLs B18 Series Compact Filters/Regulators?",
+          "a": "Drain the Wilkerson FRLs B18 Series Compact Filters/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson FRLs B18 Series Compact Filters/Regulators and the Wilkerson B18 Series Filter/Regulators?",
+          "a": "The Wilkerson FRLs B18 Series Compact Filters/Regulators are listed with 1/4\", 3/8\" and 1/2\" ports and ratings of 150 and 250 psi. The [B18 Series Filter/Regulators](/p/wilkerson-b18-series-filter-regulators) are listed with 1/4\", 3/8\" and 1/2\" ports, flow up to 180 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson FRLs B18 Series Compact Filters/Regulators made and how is it shipped from Dubai?",
+          "a": "The Wilkerson FRLs B18 Series Compact Filters/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Wilkerson FRLs B18 Series Compact Filters/Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Wilkerson FRLs B18 Series Compact Filters/Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-frls-b28-series-standard-filters-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson FRLs B28 Series Standard Filters/Regulators used for?",
+          "a": "The Wilkerson FRLs B28 Series Standard Filters/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 11 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Wilkerson FRLs B28 Series Standard Filters/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B28-04MG (1/2\" port, 150 psi, polycarbonate bowl, manual drain), B28-04AG (1/2\" port, 150 psi, polycarbonate bowl, auto drain) and B28-06MGMB (3/4\" port, 250 psi). In these part numbers the digits after the series are the port size (03 is 3/8\", 04 is 1/2\" and 06 is 3/4\"), AG is the automatic-drain version and MG the manual-drain version with a transparent bowl and guard, and MB at the end marks the metal-bowl version rated 250 psi instead of 150 psi. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Wilkerson FRLs B28 Series Standard Filters/Regulators come in?",
+          "a": "The Wilkerson FRLs B28 Series Standard Filters/Regulators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson FRLs B28 Series Standard Filters/Regulators part number?",
+          "a": "For the Wilkerson FRLs B28 Series Standard Filters/Regulators, choose by port size, pressure rating and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Wilkerson FRLs B28 Series Standard Filters/Regulators have?",
+          "a": "The Wilkerson FRLs B28 Series Standard Filters/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 32°F to 125°F. The Wilkerson FRLs B28 Series Standard Filters/Regulators listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Wilkerson FRLs B28 Series Standard Filters/Regulators?",
+          "a": "On the Wilkerson FRLs B28 Series Standard Filters/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson FRLs B28 Series Standard Filters/Regulators include a lubricator?",
+          "a": "The Wilkerson FRLs B28 Series Standard Filters/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Wilkerson FRLs B28 Series Standard Filters/Regulators?",
+          "a": "Connect the Wilkerson FRLs B28 Series Standard Filters/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Wilkerson F18 Particulate Filters](/p/wilkerson-f18-particulate-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Wilkerson FRLs B28 Series Standard Filters/Regulators?",
+          "a": "Drain the Wilkerson FRLs B28 Series Standard Filters/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Wilkerson FRLs B28 Series Standard Filters/Regulators and the Wilkerson B28 Series Filter/Regulators?",
+          "a": "The Wilkerson FRLs B28 Series Standard Filters/Regulators are listed with 3/8\", 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. The [B28 Series Filter/Regulators](/p/wilkerson-b28-series-filter-regulators) are listed with 3/8\", 1/2\" and 3/4\" ports, flow up to 280 cfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson FRLs B28 Series Standard Filters/Regulators made and how is it shipped from Dubai?",
+          "a": "The Wilkerson FRLs B28 Series Standard Filters/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wilkerson FRLs B28 Series Standard Filters/Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Wilkerson FRLs B28 Series Standard Filters/Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}
