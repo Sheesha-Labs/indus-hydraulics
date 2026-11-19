@@ -1,0 +1,348 @@
+{
+  "family": "adapter-o-rings",
+  "extraFacts": [
+    {
+      "fact": "SAE J1926 (ISO 11926) covers straight-thread O-ring boss (ORB) ports, where an O-ring sits at the port face and seals against the fitting; SAE J1453 (ISO 8434-3) covers O-ring face seal (ORFS) fittings, where the O-ring sits in a groove in a flat face. Standard O-rings are AS568 dash sizes: the 9xx series (-902 to -932) for ORB ports and the 0xx series (-011 to -029) for ORFS.",
+      "source": "SAE J1926-1 / ISO 11926-1; SAE J1453 / ISO 8434-3; SAE AS568 (uniform dash numbers for O-rings)"
+    },
+    {
+      "fact": "Nitrile (NBR) is the standard O-ring elastomer for mineral-oil hydraulic fluid and is typically rated to about 100 degrees C. Fluoroelastomer (FKM, trade name Viton) is typically rated to about 200 degrees C and resists a wider range of fluids and heat, but ratings depend on the compound, so confirm the compound for the fluid and temperature.",
+      "source": "Parker O-Ring Handbook ORD 5700 (elastomer properties); ISO 1629 rubber designations NBR and FKM"
+    },
+    {
+      "fact": "An O-ring seals by being compressed, so it takes a set once used and a new one should be fitted whenever a joint is remade. A nicked, twisted or dry-rolled O-ring is the usual cause of a leak at an ORB or ORFS joint.",
+      "source": "SAE J1453 and J1926 assembly practice"
+    },
+    {
+      "fact": "Rubber O-rings are normally classified under HS subheading 4016.93 (gaskets, washers and other seals of vulcanised rubber); the importer's customs broker has the final say.",
+      "source": "WCO Harmonized System, heading 4016"
+    }
+  ],
+  "products": [
+    {
+      "slug": "buna-n-nbr-o-ring-for-orb-male-ports",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Buna-N (NBR) O-Ring for ORB Male Ports used for?",
+          "a": "The Buna-N (NBR) O-Ring for ORB Male Ports is the replacement Buna-N (NBR) O-ring for ORB male ports (O-ring boss, UN/UNF straight thread). It is the sealing part of the joint, so fit a new one whenever the fitting is remade. The listing has 13 part numbers, 1/8\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the O-ring size in 5/8\" ORB ORB row IH-ST-OB1-10 of the Buna-N (NBR) O-Ring for ORB Male Ports table?",
+          "a": "Each row pairs a port size with the AS568 dash number of its O-ring. For IH-ST-OB1-10 the port is 5/8\" ORB ORB and the O-ring is size 910; IH-ST-OB1-02 is 1/8\" ORB (size 902) and IH-ST-OB1-32 is 2\" ORB (size 932). The [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the numbering."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Buna-N (NBR) O-Ring for ORB Male Ports come in?",
+          "a": "The Buna-N (NBR) O-Ring for ORB Male Ports is listed in 13 sizes, from 1/8\" ORB to 2\" ORB, with part numbers such as IH-ST-OB1-02, IH-ST-OB1-10 and IH-ST-OB1-32. Choose by the thread size on the port or fitting, which is stamped or measured on the part, not by hose or tube size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right O-ring size for an ORB joint from the Buna-N (NBR) O-Ring for ORB Male Ports table?",
+          "a": "Identify the thread size and type of the ORB port, then read the O-ring dash number on the same row: a 5/8\" ORB port takes size 910 (IH-ST-OB1-10). If you only have the fitting, send us a photo and the thread size and we will confirm the O-ring; the [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) guide lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Buna-N (NBR) O-Ring for ORB Male Ports stand?",
+          "a": "The maker gives no pressure rating for the Buna-N (NBR) O-Ring for ORB Male Ports, because the joint rating belongs to the fitting and port, not the O-ring alone. Nitrile is typically rated to about 100 degrees C. Tell us the fluid, pressure and temperature and we will confirm the compound."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Buna-N (NBR) O-Ring for ORB Male Ports suitable for mineral hydraulic oil?",
+          "a": "Yes. Buna-N (NBR) is the standard O-ring material for mineral-oil hydraulic fluid, which covers most mobile and industrial machines. For higher temperatures or harsher fluids use the Viton version, [Viton (FKM) O-ring for ORB](/p/viton-fkm-o-ring-for-orb-male-ports); confirm the fluid with us first."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard sets the O-ring sizes in the Buna-N (NBR) O-Ring for ORB Male Ports?",
+          "a": "The sizes follow the AS568 dash numbers used with SAE J1926 ORB ports; the table records the dash number for each size, such as 910 for 5/8\" ORB. This listing carries no other compliance documents, so say which material or batch document you need and we will ask the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings take the Buna-N (NBR) O-Ring for ORB Male Ports?",
+          "a": "ORB male ports on adapters, plugs and hose ends, where the O-ring seats against the port face. Matching parts are on our [ORB adapters](/c/orb-adapters) shelf, and the whole range is on the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "When should the O-ring on an ORB joint be replaced?",
+          "a": "Replace the O-ring every time the ORB joint is undone, and whenever it is nicked, flattened or hardened. Wet the new Buna-N (NBR) ring with clean system fluid, keep it from rolling or twisting, and tighten to the make-up torque; our [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) shows the turns."
+        },
+        {
+          "slot": "K",
+          "q": "Buna-N vs Viton O-rings for ORB: which do I order?",
+          "a": "Buna-N is the standard for mineral-oil hydraulics and costs less; Viton takes more heat and a wider range of fluids. This listing is the Buna-N (NBR) version in 13 sizes; the Viton (FKM) version of the same ORB sizes is [Viton (FKM) O-ring for ORB](/p/viton-fkm-o-ring-for-orb-male-ports)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Buna-N (NBR) O-Ring for ORB Male Ports be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Buna-N (NBR) O-Ring for ORB Male Ports from Dubai, UAE to the GCC, Africa, Asia and beyond. Rubber O-rings normally fall under HS subheading 4016.93; origin is confirmed on the quotation, and the invoice and packing list are prepared for your destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Buna-N (NBR) O-Ring for ORB Male Ports in stock in Dubai?",
+          "a": "Yes. We keep the Buna-N (NBR) O-Ring for ORB Male Ports in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-ST-OB1-02 or IH-ST-OB1-10) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "viton-fkm-o-ring-for-orb-male-ports",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Viton (FKM) O-Ring for ORB Male Ports used for?",
+          "a": "The Viton (FKM) O-Ring for ORB Male Ports is the replacement Viton (FKM) O-ring for ORB male ports (O-ring boss, UN/UNF straight thread). It is the sealing part of the joint, so fit a new one whenever the fitting is remade. The listing has 13 part numbers, 1/8\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the O-ring size in 5/8\" ORB ORB row IH-ST-OB2-10 of the Viton (FKM) O-Ring for ORB Male Ports table?",
+          "a": "Each row pairs a port size with the AS568 dash number of its O-ring. For IH-ST-OB2-10 the port is 5/8\" ORB ORB and the O-ring is size 910; IH-ST-OB2-02 is 1/8\" ORB (size 902) and IH-ST-OB2-32 is 2\" ORB (size 932). The [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the numbering."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Viton (FKM) O-Ring for ORB Male Ports come in?",
+          "a": "The Viton (FKM) O-Ring for ORB Male Ports is listed in 13 sizes, from 1/8\" ORB to 2\" ORB, with part numbers such as IH-ST-OB2-02, IH-ST-OB2-10 and IH-ST-OB2-32. Choose by the thread size on the port or fitting, which is stamped or measured on the part, not by hose or tube size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right O-ring size for an ORB joint from the Viton (FKM) O-Ring for ORB Male Ports table?",
+          "a": "Identify the thread size and type of the ORB port, then read the O-ring dash number on the same row: a 5/8\" ORB port takes size 910 (IH-ST-OB2-10). If you only have the fitting, send us a photo and the thread size and we will confirm the O-ring; the [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) guide lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Viton (FKM) O-Ring for ORB Male Ports stand?",
+          "a": "The maker gives no pressure rating for the Viton (FKM) O-Ring for ORB Male Ports, because the joint rating belongs to the fitting and port, not the O-ring alone. Fluoroelastomer is typically rated to about 200 degrees C, depending on the compound. Tell us the fluid, pressure and temperature and we will confirm the compound."
+        },
+        {
+          "slot": "F",
+          "q": "When should I choose Viton (FKM) rather than Buna-N for ORB O-rings?",
+          "a": "Choose Viton (FKM) when the joint runs hot or the fluid is hard on nitrile, such as high-temperature oil. For ordinary mineral-oil hydraulics Buna-N is the usual and cheaper choice, see [Buna-N (NBR) O-ring for ORB](/p/buna-n-nbr-o-ring-for-orb-male-ports). Confirm the fluid with us before ordering the Viton (FKM) O-Ring for ORB Male Ports."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard sets the O-ring sizes in the Viton (FKM) O-Ring for ORB Male Ports?",
+          "a": "The sizes follow the AS568 dash numbers used with SAE J1926 ORB ports; the table records the dash number for each size, such as 910 for 5/8\" ORB. This listing carries no other compliance documents, so say which material or batch document you need and we will ask the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings take the Viton (FKM) O-Ring for ORB Male Ports?",
+          "a": "ORB male ports on adapters, plugs and hose ends, where the O-ring seats against the port face. Matching parts are on our [ORB adapters](/c/orb-adapters) shelf, and the whole range is on the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "When should the O-ring on an ORB joint be replaced?",
+          "a": "Replace the O-ring every time the ORB joint is undone, and whenever it is nicked, flattened or hardened. Wet the new Viton (FKM) ring with clean system fluid, keep it from rolling or twisting, and tighten to the make-up torque; our [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) shows the turns."
+        },
+        {
+          "slot": "K",
+          "q": "Viton vs Buna-N O-rings for ORB: which do I order?",
+          "a": "Buna-N is the standard for mineral-oil hydraulics and costs less; Viton takes more heat and a wider range of fluids. This listing is the Viton (FKM) version in 13 sizes; the Buna-N (NBR) version of the same ORB sizes is [Buna-N (NBR) O-ring for ORB](/p/buna-n-nbr-o-ring-for-orb-male-ports)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Viton (FKM) O-Ring for ORB Male Ports be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Viton (FKM) O-Ring for ORB Male Ports from Dubai, UAE to the GCC, Africa, Asia and beyond. Rubber O-rings normally fall under HS subheading 4016.93; origin is confirmed on the quotation, and the invoice and packing list are prepared for your destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Viton (FKM) O-Ring for ORB Male Ports in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Viton (FKM) O-Ring for ORB Male Ports in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-ST-OB2-02 or IH-ST-OB2-10) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "buna-n-nbr-o-ring-for-orfs-face-seals",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Buna-N (NBR) O-Ring for ORFS Face Seals used for?",
+          "a": "The Buna-N (NBR) O-Ring for ORFS Face Seals is the replacement Buna-N (NBR) O-ring for ORFS fittings (O-ring face seal, flat face with the O-ring in a groove). It is the sealing part of the joint, so fit a new one whenever the fitting is remade. The listing has 8 part numbers, 1/4\" to 1-1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the O-ring size in 3/4\" ORFS ORFS row IH-ST-OFS1-12 of the Buna-N (NBR) O-Ring for ORFS Face Seals table?",
+          "a": "Each row pairs a port size with the AS568 dash number of its O-ring. For IH-ST-OFS1-12 the port is 3/4\" ORFS ORFS and the O-ring is size 018; IH-ST-OFS1-04 is 1/4\" ORFS (size 011) and IH-ST-OFS1-24 is 1-1/2\" ORFS (size 029). The [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the numbering."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Buna-N (NBR) O-Ring for ORFS Face Seals come in?",
+          "a": "The Buna-N (NBR) O-Ring for ORFS Face Seals is listed in 8 sizes, from 1/4\" ORFS to 1-1/2\" ORFS, with part numbers such as IH-ST-OFS1-04, IH-ST-OFS1-12 and IH-ST-OFS1-24. Choose by the thread size on the port or fitting, which is stamped or measured on the part, not by hose or tube size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right O-ring size for an ORFS joint from the Buna-N (NBR) O-Ring for ORFS Face Seals table?",
+          "a": "Identify the thread size and type of the ORFS port, then read the O-ring dash number on the same row: a 3/4\" ORFS port takes size 018 (IH-ST-OFS1-12). If you only have the fitting, send us a photo and the thread size and we will confirm the O-ring; the [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) guide lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Buna-N (NBR) O-Ring for ORFS Face Seals stand?",
+          "a": "The maker gives no pressure rating for the Buna-N (NBR) O-Ring for ORFS Face Seals, because the joint rating belongs to the fitting and port, not the O-ring alone. Nitrile is typically rated to about 100 degrees C. Tell us the fluid, pressure and temperature and we will confirm the compound."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Buna-N (NBR) O-Ring for ORFS Face Seals suitable for mineral hydraulic oil?",
+          "a": "Yes. Buna-N (NBR) is the standard O-ring material for mineral-oil hydraulic fluid, which covers most mobile and industrial machines. For higher temperatures or harsher fluids use the Viton version, [Viton (FKM) O-ring for ORFS](/p/viton-fkm-o-ring-for-orfs-face-seals); confirm the fluid with us first."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard sets the O-ring sizes in the Buna-N (NBR) O-Ring for ORFS Face Seals?",
+          "a": "The sizes follow the AS568 dash numbers used with SAE J1453 ORFS fittings; the table records the dash number for each size, such as 018 for 3/4\" ORFS. This listing carries no other compliance documents, so say which material or batch document you need and we will ask the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings take the Buna-N (NBR) O-Ring for ORFS Face Seals?",
+          "a": "ORFS fittings, where the O-ring sits in a groove in the flat face and seals against a mating flat face. Matching parts are on our [ORFS adapters](/c/orfs-adapters) shelf, and the whole range is on the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "When should the O-ring on an ORFS joint be replaced?",
+          "a": "Replace the O-ring every time the ORFS joint is undone, and whenever it is nicked, flattened or hardened. Wet the new Buna-N (NBR) ring with clean system fluid, keep it from rolling or twisting, and tighten to the make-up torque; our [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) shows the turns."
+        },
+        {
+          "slot": "K",
+          "q": "Buna-N vs Viton O-rings for ORFS: which do I order?",
+          "a": "Buna-N is the standard for mineral-oil hydraulics and costs less; Viton takes more heat and a wider range of fluids. This listing is the Buna-N (NBR) version in 8 sizes; the Viton (FKM) version of the same ORFS sizes is [Viton (FKM) O-ring for ORFS](/p/viton-fkm-o-ring-for-orfs-face-seals)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Buna-N (NBR) O-Ring for ORFS Face Seals be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Buna-N (NBR) O-Ring for ORFS Face Seals from Dubai, UAE to the GCC, Africa, Asia and beyond. Rubber O-rings normally fall under HS subheading 4016.93; origin is confirmed on the quotation, and the invoice and packing list are prepared for your destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Buna-N (NBR) O-Ring for ORFS Face Seals in stock in Dubai?",
+          "a": "Yes, the Buna-N (NBR) O-Ring for ORFS Face Seals is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-ST-OFS1-04 or IH-ST-OFS1-12) and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "viton-fkm-o-ring-for-orfs-face-seals",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Viton (FKM) O-Ring for ORFS Face Seals used for?",
+          "a": "The Viton (FKM) O-Ring for ORFS Face Seals is the replacement Viton (FKM) O-ring for ORFS fittings (O-ring face seal, flat face with the O-ring in a groove). It is the sealing part of the joint, so fit a new one whenever the fitting is remade. The listing has 8 part numbers, 1/4\" to 1-1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the O-ring size in 3/4\" ORFS ORFS row IH-ST-OFS2-12 of the Viton (FKM) O-Ring for ORFS Face Seals table?",
+          "a": "Each row pairs a port size with the AS568 dash number of its O-ring. For IH-ST-OFS2-12 the port is 3/4\" ORFS ORFS and the O-ring is size 018; IH-ST-OFS2-04 is 1/4\" ORFS (size 011) and IH-ST-OFS2-24 is 1-1/2\" ORFS (size 029). The [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the numbering."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Viton (FKM) O-Ring for ORFS Face Seals come in?",
+          "a": "The Viton (FKM) O-Ring for ORFS Face Seals is listed in 8 sizes, from 1/4\" ORFS to 1-1/2\" ORFS, with part numbers such as IH-ST-OFS2-04, IH-ST-OFS2-12 and IH-ST-OFS2-24. Choose by the thread size on the port or fitting, which is stamped or measured on the part, not by hose or tube size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right O-ring size for an ORFS joint from the Viton (FKM) O-Ring for ORFS Face Seals table?",
+          "a": "Identify the thread size and type of the ORFS port, then read the O-ring dash number on the same row: a 3/4\" ORFS port takes size 018 (IH-ST-OFS2-12). If you only have the fitting, send us a photo and the thread size and we will confirm the O-ring; the [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) guide lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Viton (FKM) O-Ring for ORFS Face Seals stand?",
+          "a": "The maker gives no pressure rating for the Viton (FKM) O-Ring for ORFS Face Seals, because the joint rating belongs to the fitting and port, not the O-ring alone. Fluoroelastomer is typically rated to about 200 degrees C, depending on the compound. Tell us the fluid, pressure and temperature and we will confirm the compound."
+        },
+        {
+          "slot": "F",
+          "q": "When should I choose Viton (FKM) rather than Buna-N for ORFS O-rings?",
+          "a": "Choose Viton (FKM) when the joint runs hot or the fluid is hard on nitrile, such as high-temperature oil. For ordinary mineral-oil hydraulics Buna-N is the usual and cheaper choice, see [Buna-N (NBR) O-ring for ORFS](/p/buna-n-nbr-o-ring-for-orfs-face-seals). Confirm the fluid with us before ordering the Viton (FKM) O-Ring for ORFS Face Seals."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard sets the O-ring sizes in the Viton (FKM) O-Ring for ORFS Face Seals?",
+          "a": "The sizes follow the AS568 dash numbers used with SAE J1453 ORFS fittings; the table records the dash number for each size, such as 018 for 3/4\" ORFS. This listing carries no other compliance documents, so say which material or batch document you need and we will ask the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings take the Viton (FKM) O-Ring for ORFS Face Seals?",
+          "a": "ORFS fittings, where the O-ring sits in a groove in the flat face and seals against a mating flat face. Matching parts are on our [ORFS adapters](/c/orfs-adapters) shelf, and the whole range is on the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "When should the O-ring on an ORFS joint be replaced?",
+          "a": "Replace the O-ring every time the ORFS joint is undone, and whenever it is nicked, flattened or hardened. Wet the new Viton (FKM) ring with clean system fluid, keep it from rolling or twisting, and tighten to the make-up torque; our [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) shows the turns."
+        },
+        {
+          "slot": "K",
+          "q": "Viton vs Buna-N O-rings for ORFS: which do I order?",
+          "a": "Buna-N is the standard for mineral-oil hydraulics and costs less; Viton takes more heat and a wider range of fluids. This listing is the Viton (FKM) version in 8 sizes; the Buna-N (NBR) version of the same ORFS sizes is [Buna-N (NBR) O-ring for ORFS](/p/buna-n-nbr-o-ring-for-orfs-face-seals)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Viton (FKM) O-Ring for ORFS Face Seals be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Viton (FKM) O-Ring for ORFS Face Seals from Dubai, UAE to the GCC, Africa, Asia and beyond. Rubber O-rings normally fall under HS subheading 4016.93; origin is confirmed on the quotation, and the invoice and packing list are prepared for your destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Viton (FKM) O-Ring for ORFS Face Seals in stock in Dubai?",
+          "a": "Yes. We keep the Viton (FKM) O-Ring for ORFS Face Seals in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-ST-OFS2-04 or IH-ST-OFS2-12) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-o-ring-assortment-kit-288-pieces-in-24-sizes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the Hydraulic O-Ring Assortment Kit, 288 Pieces in 24 Sizes?",
+          "a": "The Hydraulic O-Ring Assortment Kit holds 288 replacement O-rings in 24 sizes, supplied in a steel case, for hydraulic adapters. It is a workshop kit for remaking ORB and ORFS joints without waiting for single O-rings; the part number is IH-ST-30002-24."
+        },
+        {
+          "slot": "B",
+          "q": "What does part number IH-ST-30002-24 on the 288-piece O-ring kit cover?",
+          "a": "IH-ST-30002-24 is the single orderable part number for the whole kit: 288 O-rings in 24 sizes, in a steel case. There is no size table to choose from because every size is already in the case; if you need one size by the dozen, we quote the single O-ring listings instead."
+        },
+        {
+          "slot": "D",
+          "q": "Which O-ring sizes does the 288-piece hydraulic kit cover?",
+          "a": "The kit covers 24 O-ring sizes for hydraulic adapters, which the listing groups under ORB ports and ORFS face seals. The maker's size list is not published on the page, so send us the port sizes you work on and we will confirm they are in the case before you order."
+        },
+        {
+          "slot": "D",
+          "q": "Is the 24-size O-ring kit enough for a service van or workshop?",
+          "a": "It suits a service van or a small workshop that remakes ORB and ORFS joints on many machines, because 288 O-rings in 24 sizes cover the common ports in one case. For one size used heavily, buy that size loose: see the [Buna-N O-ring for ORB male ports](/p/buna-n-nbr-o-ring-for-orb-male-ports) or the [Buna-N O-ring for ORFS face seals](/p/buna-n-nbr-o-ring-for-orfs-face-seals)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the 288-piece O-ring kit have?",
+          "a": "The maker publishes no pressure or temperature rating for the kit, and the material of the O-rings is not stated on the listing; only the case is described as steel. For a rated compound, such as nitrile or Viton, use the single-size listings, or tell us the fluid, pressure and temperature and we will ask the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What material are the O-rings in the 288-piece hydraulic kit made from?",
+          "a": "The listing names the case as steel but does not state the O-ring material. For a known compound, order the Buna-N (NBR) or Viton (FKM) single-size listings, which state the material; or send the fluid and temperature and we will confirm what the kit contains before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the hydraulic O-ring assortment kit follow a standard?",
+          "a": "The kit is described as replacement O-rings for ORB ports and ORFS face seals, whose sizes follow the AS568 dash numbers in SAE J1926 and SAE J1453. The listing holds no certificate for the kit; if your project needs material or batch documents, say so in the enquiry and we will ask the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which adapters can use the 288-piece hydraulic O-ring kit?",
+          "a": "The kit is for hydraulic adapters with ORB (O-ring boss) ports and ORFS (O-ring face seal) ends. Matching parts are on our [ORB adapters](/c/orb-adapters) and [ORFS adapters](/c/orfs-adapters) shelves, and the full O-ring range is on the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should O-rings from an assortment kit be fitted to an ORB or ORFS joint?",
+          "a": "Pick the dash size that matches the port, discard the old ring, wet the new one with clean system fluid and fit it without twisting or rolling it. Then tighten to the make-up torque; our [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) shows how far to turn."
+        },
+        {
+          "slot": "J",
+          "q": "Who uses a 288-piece hydraulic O-ring assortment kit?",
+          "a": "Mobile-equipment service technicians, plant maintenance teams and hose workshops use an O-ring assortment kit, because a leaking ORB or ORFS joint usually needs only a new ring and any size may be needed on a call-out. Keeping the case in the service vehicle saves a return trip for a missing ring."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 288-piece hydraulic O-ring kit be exported from Dubai?",
+          "a": "Yes. We export the Hydraulic O-Ring Assortment Kit from Dubai, UAE to the GCC, Africa, Asia and beyond. The commercial invoice and packing list are prepared for your destination, and the origin is confirmed on the quotation; the kit is one case, which keeps freight simple."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the 288-piece hydraulic O-ring kit in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the 288-piece Hydraulic O-Ring Assortment Kit in stock, and we ship worldwide with the best lead times. Put the quantity of cases you need in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

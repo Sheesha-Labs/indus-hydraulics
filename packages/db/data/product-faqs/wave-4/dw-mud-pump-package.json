@@ -1,0 +1,76 @@
+{
+  "family": "dw-mud-pump-package",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "mud-pump-package-triplex-1-600-hp-electric-drive-modular-for-offshore-lift",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1,600 HP triplex mud pump package used for?",
+          "a": "A triplex mud pump package circulates drilling mud on drilling and workover rigs. This one has a 1,600 HP nominal rating, electric drive, an integrated pulsation dampener, a charging centrifugal pump, and pressure safety and reset valves, on a modular sub-frame for offshore lifts."
+        },
+        {
+          "slot": "D",
+          "q": "What power variants does the 1,600 HP triplex mud pump package come in?",
+          "a": "Variants of 750 HP, 1,000 HP, 1,300 HP, 1,600 HP and 2,200 HP are available. This listing is the 1,600 HP package, so state the mud pump rating and pressure you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What pump makes can the 1,600 HP triplex mud pump package use?",
+          "a": "The pump make is selectable from Gardner Denver, National, Dragon, Bomco or Gaso. Choose to match the pump fleet and spares you already hold, and state the make on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What drive options does the 1,600 HP triplex mud pump package offer?",
+          "a": "The drive can be electric (GE or Joliet), hydraulic, or mechanical with a CAT, MTU, Cummins or Deutz engine. This listing is the electric-drive version."
+        },
+        {
+          "slot": "F",
+          "q": "What accessories are integrated in the 1,600 HP triplex mud pump package?",
+          "a": "The package includes an integrated pulsation dampener, a charging centrifugal pump, and pressure safety and reset valves. These protect the pump and the discharge line."
+        },
+        {
+          "slot": "G",
+          "q": "How is the 1,600 HP triplex mud pump package made modular for offshore lifts?",
+          "a": "Modular sub-frame construction lets the package be split across multiple lifts, complying with rig crane envelopes. An onshore land skid or a DNV offshore skid is available."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1,600 HP triplex mud pump package connect to?",
+          "a": "It feeds the standpipe manifold and the drill string, taking mud from the tanks. See [mud tanks](/c/dw-mud-tanks), [mud manifolds](/c/dw-mud-manifolds) and [mud degassers](/c/dw-mud-degasser)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1,600 HP triplex mud pump package differ from a cementing unit pump?",
+          "a": "A mud pump package circulates drilling mud at the rig, while a [single-pump cementing unit](/p/single-pump-cementing-unit-skid-mounted-triplex-600-hp-auto-density-control) pumps cement slurry at controlled density. Both use triplex pumps, but they are built for different services."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 1,600 HP triplex mud pump package used?",
+          "a": "It is used for drilling and workover operations, onshore or offshore. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment) for the fluid system."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a mud pump package quotation?",
+          "a": "Send the pump rating, pump make, drive type, discharge pressure, the mounting (land skid or DNV offshore skid), the crane lift limits and the area classification."
+        },
+        {
+          "slot": "L",
+          "q": "Is the 1,600 HP triplex mud pump package suitable for offshore deployment?",
+          "a": "Yes, it is listed with a DNV offshore skid option and modular sub-frame construction that splits across lifts for rig cranes. State the crane limits on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 1,600 HP triplex mud pump package?",
+          "a": "Yes. We list the 1,600 HP triplex mud pump package as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Pump make and drive are quoted to your specification. Send your capacity, configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1193 @@
+{
+  "family": "npt-adapters-04",
+  "extraFacts": [
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "NPSM is a straight (parallel) pipe thread for mechanical joints (ASME B1.20.1): it does not seal on the thread, so an NPSM swivel end seals on its seat, which on these Dixon swivels is a 30° seat.",
+      "source": "ASME B1.20.1; Dixon swivel listing feature note (female NPSM swivel seals on a 30° seat)"
+    },
+    {
+      "fact": "An SAE O-ring boss (ORB) port seals on an O-ring compressed in the port; the thread only holds the fitting in place (SAE J1926, ISO 11926).",
+      "source": "SAE J1926; ISO 11926-1"
+    },
+    {
+      "fact": "NPT pipe-thread ends carry a lower pressure limit than the same size in a flare, boss or flange end; for example a 2\" NPT end is limited to 1,000 psi.",
+      "source": "SAE J514 pipe-thread end pressure limits (Indus Hydraulics NPTF pressure-limits note)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "90-elbow-connector-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Connector NPT used for and which ports does it connect?",
+          "a": "The 90° Elbow Connector NPT is a 90 elbow hydraulic adapter that turns the line through 90 degrees. Ports A and B are male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the 90° Elbow Connector NPT?",
+          "a": "Quote IH-AD-NPT-020-02 for NPT1/8-27 on every port, IH-AD-NPT-020-1216 for NPT3/4-14 × NPT1-11.5 and IH-AD-NPT-020-0402 for NPT1/4-18 × NPT1/8-27. The 90° Elbow Connector NPT lists 20 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow Connector NPT are available?",
+          "a": "The 90° Elbow Connector NPT comes in 20 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-020-0204 (NPT1/8-27 × NPT1/4-18), IH-AD-NPT-020-0608 (NPT3/8-18 × NPT1/2-14) and IH-AD-NPT-020-0604 (NPT3/8-18 × NPT1/4-18). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Elbow Connector NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the 90° Elbow Connector NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-020-06 (NPT3/8-18 on every port) and IH-AD-NPT-020-1612 (NPT1-11.5 × NPT3/4-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Connector NPT?",
+          "a": "The size table prints a working pressure against each size of the 90° Elbow Connector NPT, from 50 bar (IH-AD-NPT-020-32) to 345 bar (IH-AD-NPT-020-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Connector NPT made from, and is it suitable for my fluid?",
+          "a": "The 90° Elbow Connector NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Connector NPT conform to, and can I get test certificates?",
+          "a": "The 90° Elbow Connector NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow Connector NPT, and which fittings do I pair it with?",
+          "a": "On the 90° Elbow Connector NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Elbow Connector NPT seal, and what should I check when fitting it?",
+          "a": "The 90° Elbow Connector NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the 90° Elbow Connector NPT?",
+          "a": "The size table lists a Tompkins equivalent for 14 of the 20 part numbers of the 90° Elbow Connector NPT. For example IH-AD-NPT-020-02 is Tompkins 5500-02-02, IH-AD-NPT-020-24 is Tompkins 5500-24-24 and IH-AD-NPT-020-0402 is Tompkins 5500-04-02. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Connector NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Connector NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Elbow Connector NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. The 90° Elbow Connector NPT sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-female-f-npt-x-f-swivel-npsm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Female f NPT X f Swivel NPSM used for and which ports does it connect?",
+          "a": "The 90° Elbow Female f NPT X f Swivel NPSM is a 90 elbow hydraulic adapter that turns the line through 90 degrees. Ports A and B are female NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the 90° Elbow Female f NPT X f Swivel NPSM (SKU IH-AD-NPT-005)?",
+          "a": "Quote the SKU IH-AD-NPT-005 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the 90° Elbow Female f NPT X f Swivel NPSM against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Elbow Female f NPT X f Swivel NPSM come in?",
+          "a": "The 90° Elbow Female f NPT X f Swivel NPSM is listed in NPT 1/8\" to 2\". Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Elbow Female f NPT X f Swivel NPSM for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the 90° Elbow Female f NPT X f Swivel NPSM only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Female f NPT X f Swivel NPSM?",
+          "a": "The working pressure of the 90° Elbow Female f NPT X f Swivel NPSM depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Female f NPT X f Swivel NPSM made from, and is it suitable for my fluid?",
+          "a": "The 90° Elbow Female f NPT X f Swivel NPSM is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Female f NPT X f Swivel NPSM conform to, and can I get test certificates?",
+          "a": "The 90° Elbow Female f NPT X f Swivel NPSM is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow Female f NPT X f Swivel NPSM, and which fittings do I pair it with?",
+          "a": "On the 90° Elbow Female f NPT X f Swivel NPSM, its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Elbow Female f NPT X f Swivel NPSM seal, and what should I check when fitting it?",
+          "a": "The 90° Elbow Female f NPT X f Swivel NPSM seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow Female f NPT X f Swivel NPSM differ from the Female Connector f NPT X f Swivel NPSM?",
+          "a": "The 90° Elbow Female f NPT X f Swivel NPSM and the [Female Connector f NPT X f Swivel NPSM](/p/female-connector-f-npt-x-f-swivel-npsm) are separate listings with different end combinations. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Female f NPT X f Swivel NPSM made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Female f NPT X f Swivel NPSM is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Elbow Female f NPT X f Swivel NPSM in Dubai, and how do I get a quote?",
+          "a": "Yes. The 90° Elbow Female f NPT X f Swivel NPSM sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-fixed-female-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Fixed Female NPT used for and which ports does it connect?",
+          "a": "The 90° Elbow Fixed Female NPT is a 90 elbow hydraulic adapter that turns the line through 90 degrees. Ports A and B are female NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the 90° Elbow Fixed Female NPT?",
+          "a": "Quote IH-AD-NPT-007-02 for NPT1/8-27 on every port, IH-AD-NPT-007-24 for NPT1-1/2-11.5 on every port and IH-AD-NPT-007-0402 for NPT1/4-18 × NPT1/8-27. The 90° Elbow Fixed Female NPT lists 14 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow Fixed Female NPT are available?",
+          "a": "The 90° Elbow Fixed Female NPT comes in 14 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-007-04 (NPT1/4-18 on every port), IH-AD-NPT-007-12 (NPT3/4-14 on every port) and IH-AD-NPT-007-0604 (NPT3/8-18 × NPT1/4-18). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Elbow Fixed Female NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the 90° Elbow Fixed Female NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-007-08 (NPT1/2-14 on every port) and IH-AD-NPT-007-1208 (NPT3/4-14 × NPT1/2-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Fixed Female NPT?",
+          "a": "The size table prints a working pressure against each size of the 90° Elbow Fixed Female NPT, from 70 bar (IH-AD-NPT-007-24) to 345 bar (IH-AD-NPT-007-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Fixed Female NPT made from, and is it suitable for my fluid?",
+          "a": "The 90° Elbow Fixed Female NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Fixed Female NPT conform to, and can I get test certificates?",
+          "a": "The 90° Elbow Fixed Female NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow Fixed Female NPT, and which fittings do I pair it with?",
+          "a": "On the 90° Elbow Fixed Female NPT, its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Elbow Fixed Female NPT seal, and what should I check when fitting it?",
+          "a": "The 90° Elbow Fixed Female NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the 90° Elbow Fixed Female NPT?",
+          "a": "The size table lists a Tompkins equivalent for most part numbers of the 90° Elbow Fixed Female NPT. For example IH-AD-NPT-007-02 is Tompkins 5504-02-02, IH-AD-NPT-007-20 is Tompkins 5504-20-20 and IH-AD-NPT-007-0402 is Tompkins 5504-04-02. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Fixed Female NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Fixed Female NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Elbow Fixed Female NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the 90° Elbow Fixed Female NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-male-female-connector-m-npt-x-f-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Male Female Connector m NPT X f NPT used for and which ports does it connect?",
+          "a": "The 90° Male Female Connector m NPT X f NPT is a 90 elbow hydraulic adapter that turns the line through 90 degrees. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread; Port B is female NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the 90° Male Female Connector m NPT X f NPT?",
+          "a": "Quote IH-AD-NPT-009-02 for NPT1/8-27 on every port, IH-AD-NPT-009-24 for NPT1-1/2-11.5 on every port and IH-AD-NPT-009-0204 for NPT1/8-27 × NPT1/4-18. The 90° Male Female Connector m NPT X f NPT lists 19 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Male Female Connector m NPT X f NPT are available?",
+          "a": "The 90° Male Female Connector m NPT X f NPT comes in 19 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-009-04 (NPT1/4-18 on every port), IH-AD-NPT-009-12 (NPT3/4-14 on every port) and IH-AD-NPT-009-0402 (NPT1/4-18 × NPT1/8-27). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Male Female Connector m NPT X f NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the 90° Male Female Connector m NPT X f NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-009-08 (NPT1/2-14 on every port) and IH-AD-NPT-009-0806 (NPT1/2-14 × NPT3/8-18)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Male Female Connector m NPT X f NPT?",
+          "a": "The size table prints a working pressure against each size of the 90° Male Female Connector m NPT X f NPT, from 50 bar (IH-AD-NPT-009-32) to 345 bar (IH-AD-NPT-009-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Male Female Connector m NPT X f NPT made from, and is it suitable for my fluid?",
+          "a": "The 90° Male Female Connector m NPT X f NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Male Female Connector m NPT X f NPT conform to, and can I get test certificates?",
+          "a": "The 90° Male Female Connector m NPT X f NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Male Female Connector m NPT X f NPT, and which fittings do I pair it with?",
+          "a": "On the 90° Male Female Connector m NPT X f NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat; its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Male Female Connector m NPT X f NPT seal, and what should I check when fitting it?",
+          "a": "The 90° Male Female Connector m NPT X f NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the 90° Male Female Connector m NPT X f NPT?",
+          "a": "The size table lists a Tompkins equivalent for 18 of the 19 part numbers of the 90° Male Female Connector m NPT X f NPT. For example IH-AD-NPT-009-02 is Tompkins 5502-02-02, IH-AD-NPT-009-32 is Tompkins 5502-32-32 and IH-AD-NPT-009-0204 is Tompkins 5502-02-04. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Male Female Connector m NPT X f NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Male Female Connector m NPT X f NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Male Female Connector m NPT X f NPT in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The 90° Male Female Connector m NPT X f NPT is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "90-swivel-connector-m-npt-x-f-npsm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Swivel Connector m NPT X f NPSM used for and which ports does it connect?",
+          "a": "The 90° Swivel Connector m NPT X f NPSM is a 90 elbow hydraulic adapter that turns the line through 90 degrees. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread; Port B is female swivel NPSM straight pipe (parallel) 1/8\" to 2\", sealing as a flat face."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/4-18 × 1/4-18 in the 90° Swivel Connector m NPT X f NPSM?",
+          "a": "Quote IH-AD-NPT-017-04 for NPT1/4-18 × 1/4-18, IH-AD-NPT-017-1216 for NPT3/4-14 × 1-11.5 and IH-AD-NPT-017-02 for NPT1/8-27 × 1/8-27. The 90° Swivel Connector m NPT X f NPSM lists 28 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Swivel Connector m NPT X f NPSM are available?",
+          "a": "The 90° Swivel Connector m NPT X f NPSM comes in 28 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-017-06 (NPT3/8-18 × 3/8-18), IH-AD-NPT-017-2016 (NPT1-1/4-11.5 × 1-11.5) and IH-AD-NPT-017-0204 (NPT1/8-27 × 1/4-18). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Swivel Connector m NPT X f NPSM for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the 90° Swivel Connector m NPT X f NPSM only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-017-32 (NPT2-11.5 × 2-11.5) and IH-AD-NPT-017-0612 (NPT3/8-18 × 3/4-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Swivel Connector m NPT X f NPSM?",
+          "a": "The size table prints a working pressure against each size of the 90° Swivel Connector m NPT X f NPSM, from 70 bar (IH-AD-NPT-017-24) to 275 bar (IH-AD-NPT-017-04). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Swivel Connector m NPT X f NPSM made from, and is it suitable for my fluid?",
+          "a": "The 90° Swivel Connector m NPT X f NPSM is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Swivel Connector m NPT X f NPSM conform to, and can I get test certificates?",
+          "a": "The 90° Swivel Connector m NPT X f NPSM is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Swivel Connector m NPT X f NPSM, and which fittings do I pair it with?",
+          "a": "On the 90° Swivel Connector m NPT X f NPSM, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. Its female swivel NPSM straight pipe (parallel) 1/8\" to 2\" end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Swivel Connector m NPT X f NPSM seal, and what should I check when fitting it?",
+          "a": "The 90° Swivel Connector m NPT X f NPSM seals on an NPT taper thread at port A and on a flat face at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the 90° Swivel Connector m NPT X f NPSM?",
+          "a": "The size table lists a Tompkins equivalent for 28 of the 28 part numbers of the 90° Swivel Connector m NPT X f NPSM. For example IH-AD-NPT-017-04 is Tompkins 1501-04-04, IH-AD-NPT-017-1216 is Tompkins 1501-12-16 and IH-AD-NPT-017-02 is Tompkins 1501-02-02. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Swivel Connector m NPT X f NPSM made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Swivel Connector m NPT X f NPSM is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Swivel Connector m NPT X f NPSM in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the 90° Swivel Connector m NPT X f NPSM in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "branch-tee-connector-f-npt-x-m-npt-x-f-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Branch Tee Connector f NPT X m NPT X f NPT used for and which ports does it connect?",
+          "a": "The Branch Tee Connector f NPT X m NPT X f NPT is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Port A is female NPT taper 1/8\" to 2\", sealing as an NPT taper thread; Port B is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF female (1/8-27) × 1/8\" NPTF female (1/8-27) × in the Branch Tee Connector f NPT X m NPT X f NPT?",
+          "a": "Quote IH-ST-5604-02-02-02 for 1/8\" NPTF female (1/8-27) × 1/8\" NPTF female (1/8-27) × 1/8\" NPT and IH-ST-5604-12-12-08 for 3/4\" NPTF female (3/4-14) × 3/4\" NPTF female (3/4-14) × 1/2\" NPT. The Branch Tee Connector f NPT X m NPT X f NPT lists 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Branch Tee Connector f NPT X m NPT X f NPT come in?",
+          "a": "The Branch Tee Connector f NPT X m NPT X f NPT comes in 9 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-ST-5604-04-04-04 (1/4\" NPTF female (1/4-18) × 1/4\" NPTF female (1/4-18) × 1/4\"), IH-ST-5604-08-08-08 (1/2\" NPTF female (1/2-14) × 1/2\" NPTF female (1/2-14) × 1/2\") and IH-ST-5604-20-20-20 (1-1/4\" NPTF female (1-1/4-11.5) × 1-1/4\" NPTF female (1-1/4-). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Branch Tee Connector f NPT X m NPT X f NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Branch Tee Connector f NPT X m NPT X f NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-ST-5604-06-06-06 (3/8\" NPTF female (3/8-18) × 3/8\" NPTF female (3/8-18) × 3/8\") and IH-ST-5604-16-16-16 (1\" NPTF female (1-11.5) × 1\" NPTF female (1-11.5) × 1\" NPTF )."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Branch Tee Connector f NPT X m NPT X f NPT?",
+          "a": "The working pressure of the Branch Tee Connector f NPT X m NPT X f NPT depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Branch Tee Connector f NPT X m NPT X f NPT made from, and is it suitable for my fluid?",
+          "a": "The Branch Tee Connector f NPT X m NPT X f NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Branch Tee Connector f NPT X m NPT X f NPT conform to, and can I get test certificates?",
+          "a": "The Branch Tee Connector f NPT X m NPT X f NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Branch Tee Connector f NPT X m NPT X f NPT, and which fittings do I pair it with?",
+          "a": "On the Branch Tee Connector f NPT X m NPT X f NPT, its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat; its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Branch Tee Connector f NPT X m NPT X f NPT seal, and what should I check when fitting it?",
+          "a": "The Branch Tee Connector f NPT X m NPT X f NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Branch Tee Connector f NPT X m NPT X f NPT?",
+          "a": "The size table lists a Tompkins equivalent for 8 of the 9 part numbers of the Branch Tee Connector f NPT X m NPT X f NPT. For example IH-ST-5604-02-02-02 is Tompkins 5604-02-02-02, IH-ST-5604-12-12-12 is Tompkins 5604-12-12-12 and IH-ST-5604-24-24-24 is Tompkins 5604-24-24-24. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Branch Tee Connector f NPT X m NPT X f NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Branch Tee Connector f NPT X m NPT X f NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Branch Tee Connector f NPT X m NPT X f NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Branch Tee Connector f NPT X m NPT X f NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "cap-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cap NPT used for and which ports does it connect?",
+          "a": "The Cap NPT is a hydraulic cap that closes off the end of a line or a male-threaded stub. Port A is female NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF female (1/8-27) in the Cap NPT?",
+          "a": "Quote IH-ST-5406C-02 for 1/8\" NPTF female (1/8-27), IH-ST-5406C-12 for 3/4\" NPTF female (3/4-14) and IH-ST-5406C-24 for 1-1/2\" NPTF female (1-1/2-11.5). The Cap NPT lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Cap NPT come in?",
+          "a": "The Cap NPT comes in 8 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-ST-5406C-04 (1/4\" NPTF female (1/4-18)), IH-ST-5406C-06 (3/8\" NPTF female (3/8-18)) and IH-ST-5406C-20 (1-1/4\" NPTF female (1-1/4-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Cap NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Cap NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a cap you only need the single thread it closes. Then pick the row: IH-ST-5406C-06 (3/8\" NPTF female (3/8-18)) and IH-ST-5406C-20 (1-1/4\" NPTF female (1-1/4-11.5))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Cap NPT?",
+          "a": "The working pressure of the Cap NPT depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cap NPT made from, and is it suitable for my fluid?",
+          "a": "The Cap NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Cap NPT conform to, and can I get test certificates?",
+          "a": "The Cap NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Cap NPT, and which fittings do I pair it with?",
+          "a": "On the Cap NPT, its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Cap NPT seal, and what should I check when fitting it?",
+          "a": "The Cap NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cap NPT differ from the Plug NPT?",
+          "a": "The Cap NPT has Cap where the [Plug NPT](/p/plug-npt) has Plug. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Cap NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Cap NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Cap NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Cap NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "female-connector-f-npt-x-f-swivel-npsm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Female Connector f NPT X f Swivel NPSM used for and which ports does it connect?",
+          "a": "The Female Connector f NPT X f Swivel NPSM is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF female (1/8-27) × 1/8\" NPSM female swivel (1/ in the Female Connector f NPT X f Swivel NPSM?",
+          "a": "Quote IH-ST-1405-02-02 for 1/8\" NPTF female (1/8-27) × 1/8\" NPSM female swivel (1/8-27) and IH-ST-1405-08-08 for 1/2\" NPTF female (1/2-14) × 1/2\" NPSM female swivel (1/2-14). The Female Connector f NPT X f Swivel NPSM lists a full range of part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Female Connector f NPT X f Swivel NPSM are available?",
+          "a": "The Female Connector f NPT X f Swivel NPSM comes in a full range of part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-ST-1405-02-04 (1/8\" NPTF female (1/8-27) × 1/4\" NPSM female swivel (1/4-18)), IH-ST-1405-06-08 (3/8\" NPTF female (3/8-18) × 1/2\" NPSM female swivel (1/2-14)) and IH-ST-1405-32-32 (2\" NPTF female (2-11.5) × 2\" NPSM female swivel (2-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Female Connector f NPT X f Swivel NPSM for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Female Connector f NPT X f Swivel NPSM only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-1405-06-04 (3/8\" NPTF female (3/8-18) × 1/4\" NPSM female swivel (1/4-18)) and IH-ST-1405-16-12 (1\" NPTF female (1-11.5) × 3/4\" NPSM female swivel (3/4-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Female Connector f NPT X f Swivel NPSM?",
+          "a": "The working pressure of the Female Connector f NPT X f Swivel NPSM depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Female Connector f NPT X f Swivel NPSM made from, and is it suitable for my fluid?",
+          "a": "The Female Connector f NPT X f Swivel NPSM is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Female Connector f NPT X f Swivel NPSM conform to, and can I get test certificates?",
+          "a": "The Female Connector f NPT X f Swivel NPSM is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Female Connector f NPT X f Swivel NPSM, and which fittings do I pair it with?",
+          "a": "On the Female Connector f NPT X f Swivel NPSM, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Female Connector f NPT X f Swivel NPSM seal, and what should I check when fitting it?",
+          "a": "The Female Connector f NPT X f Swivel NPSM seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Female Connector f NPT X f Swivel NPSM?",
+          "a": "The size table lists a Tompkins equivalent for most part numbers of the Female Connector f NPT X f Swivel NPSM. For example IH-ST-1405-02-02 is Tompkins 1405-02-02, IH-ST-1405-08-08 is Tompkins 1405-08-08 and IH-ST-1405-04-08 is Tompkins 1405-04-08. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Female Connector f NPT X f Swivel NPSM made, and can you export it from Dubai?",
+          "a": "The country of origin of the Female Connector f NPT X f Swivel NPSM is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Female Connector f NPT X f Swivel NPSM in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Female Connector f NPT X f Swivel NPSM is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "female-cross-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Female Cross NPT used for and which ports does it connect?",
+          "a": "The Female Cross NPT is a cross hydraulic adapter that brings four ports together at one point. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF female (1/8-27) on every port in the Female Cross NPT?",
+          "a": "Quote IH-ST-5652-02-02-02-02 for 1/8\" NPTF female (1/8-27) on every port, IH-ST-5652-12-12-12-12 for 3/4\" NPTF female (3/4-14) on every port and IH-ST-5652-32-32-32-32 for 2\" NPTF female (2-11.5) on every port. The Female Cross NPT lists 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Female Cross NPT come in?",
+          "a": "The Female Cross NPT comes in 9 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-ST-5652-04-04-04-04 (1/4\" NPTF female (1/4-18) on every port), IH-ST-5652-08-08-08-08 (1/2\" NPTF female (1/2-14) on every port) and IH-ST-5652-24-24-24-24 (1-1/2\" NPTF female (1-1/2-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Female Cross NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Female Cross NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this cross also say which port is the run and which is the branch. Then pick the row: IH-ST-5652-06-06-06-06 (3/8\" NPTF female (3/8-18) on every port) and IH-ST-5652-20-20-20-20 (1-1/4\" NPTF female (1-1/4-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Female Cross NPT?",
+          "a": "The working pressure of the Female Cross NPT depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Female Cross NPT made from, and is it suitable for my fluid?",
+          "a": "The Female Cross NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Female Cross NPT conform to, and can I get test certificates?",
+          "a": "The Female Cross NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Female Cross NPT, and which fittings do I pair it with?",
+          "a": "On the Female Cross NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Female Cross NPT seal, and what should I check when fitting it?",
+          "a": "The Female Cross NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Female Cross NPT?",
+          "a": "The size table lists a Tompkins equivalent for 9 of the 9 part numbers of the Female Cross NPT. For example IH-ST-5652-02-02-02-02 is Tompkins 5652-02-02-02-02, IH-ST-5652-12-12-12-12 is Tompkins 5652-12-12-12-12 and IH-ST-5652-32-32-32-32 is Tompkins 5652-32-32-32-32. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Female Cross NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Female Cross NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Female Cross NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. The Female Cross NPT sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fixed-female-connector-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fixed Female Connector NPT used for and which ports does it connect?",
+          "a": "The Fixed Female Connector NPT is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the Fixed Female Connector NPT?",
+          "a": "Quote IH-AD-NPT-008-02 for NPT1/8-27 on every port, IH-AD-NPT-008-20 for NPT1-1/4-11.5 on every port and IH-AD-NPT-008-0402 for NPT1/4-18 × NPT1/8-27. The Fixed Female Connector NPT lists 28 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Fixed Female Connector NPT are available?",
+          "a": "The Fixed Female Connector NPT comes in 28 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-008-0204 (NPT1/8-27 × NPT1/4-18), IH-AD-NPT-008-08 (NPT1/2-14 on every port) and IH-AD-NPT-008-0602 (NPT3/8-18 × NPT1/8-27). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Fixed Female Connector NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Fixed Female Connector NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-008-0608 (NPT3/8-18 × NPT1/2-14) and IH-AD-NPT-008-1208 (NPT3/4-14 × NPT1/2-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Fixed Female Connector NPT?",
+          "a": "The size table prints a working pressure against each size of the Fixed Female Connector NPT, from 70 bar (IH-AD-NPT-008-24) to 345 bar (IH-AD-NPT-008-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Fixed Female Connector NPT made from, and is it suitable for my fluid?",
+          "a": "The Fixed Female Connector NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Fixed Female Connector NPT conform to, and can I get test certificates?",
+          "a": "The Fixed Female Connector NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Fixed Female Connector NPT, and which fittings do I pair it with?",
+          "a": "On the Fixed Female Connector NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Fixed Female Connector NPT seal, and what should I check when fitting it?",
+          "a": "The Fixed Female Connector NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Fixed Female Connector NPT?",
+          "a": "The size table lists a Tompkins equivalent for 20 of the 28 part numbers of the Fixed Female Connector NPT. For example IH-AD-NPT-008-02 is Tompkins 5000-02-02, IH-AD-NPT-008-2012 is Tompkins 5000-20-12 and IH-AD-NPT-008-0402 is Tompkins 5000-04-02. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Fixed Female Connector NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Fixed Female Connector NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Fixed Female Connector NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Fixed Female Connector NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-npt-x-m-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m NPT X m NPT used for and which ports does it connect?",
+          "a": "The Male Connector m NPT X m NPT is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Ports A and B are male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the Male Connector m NPT X m NPT?",
+          "a": "Quote IH-AD-NPT-019-02 for NPT1/8-27 on every port, IH-AD-NPT-019-2024 for NPT1-1/4-11.5 × NPT1-1/2-11.5 and IH-AD-NPT-019-0402 for NPT1/4-18 × NPT1/8-27. The Male Connector m NPT X m NPT lists 38 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Male Connector m NPT X m NPT come in?",
+          "a": "The Male Connector m NPT X m NPT comes in 38 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-019-0204 (NPT1/8-27 × NPT1/4-18), IH-AD-NPT-019-12 (NPT3/4-14 on every port) and IH-AD-NPT-019-0602 (NPT3/8-18 × NPT1/8-27). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m NPT X m NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m NPT X m NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-019-08 (NPT1/2-14 on every port) and IH-AD-NPT-019-1608 (NPT1-11.5 × NPT1/2-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m NPT X m NPT?",
+          "a": "The size table prints a working pressure against each size of the Male Connector m NPT X m NPT, from 70 bar (IH-AD-NPT-019-1624) to 345 bar (IH-AD-NPT-019-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m NPT X m NPT made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m NPT X m NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m NPT X m NPT conform to, and can I get test certificates?",
+          "a": "The Male Connector m NPT X m NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m NPT X m NPT, and which fittings do I pair it with?",
+          "a": "On the Male Connector m NPT X m NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m NPT X m NPT seal, and what should I check when fitting it?",
+          "a": "The Male Connector m NPT X m NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Male Connector m NPT X m NPT?",
+          "a": "The size table lists a Tompkins equivalent for 24 of the 38 part numbers of the Male Connector m NPT X m NPT. For example IH-AD-NPT-019-02 is Tompkins 5404-02-02, IH-AD-NPT-019-2012 is Tompkins 5404-20-12 and IH-AD-NPT-019-0402 is Tompkins 5404-04-02. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m NPT X m NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m NPT X m NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m NPT X m NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Male Connector m NPT X m NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-female-connector-m-npt-x-f-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Female Connector m NPT X f NPT used for and which ports does it connect?",
+          "a": "The Male Female Connector m NPT X f NPT is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread; Port B is female NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the Male Female Connector m NPT X f NPT?",
+          "a": "Quote IH-AD-NPT-011-02 for NPT1/8-27 on every port, IH-AD-NPT-011-2412 for NPT1-1/2-11.5 × NPT3/4-14 and IH-AD-NPT-011-4032 for NPT2-1/2-8 × NPT2-11.5. The Male Female Connector m NPT X f NPT lists a full range of part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Male Female Connector m NPT X f NPT come in?",
+          "a": "The Male Female Connector m NPT X f NPT comes in a full range of part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-011-0402 (NPT1/4-18 × NPT1/8-27), IH-AD-NPT-011-2420 (NPT1-1/2-11.5 × NPT1-1/4-11.5) and IH-AD-NPT-011-0204 (NPT1/8-27 × NPT1/4-18). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Female Connector m NPT X f NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Female Connector m NPT X f NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-011-1620 (NPT1-11.5 × NPT1-1/4-11.5) and IH-AD-NPT-011-1202 (NPT3/4-14 × NPT1/8-27)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Female Connector m NPT X f NPT?",
+          "a": "The size table prints a working pressure against each size of the Male Female Connector m NPT X f NPT, from 50 bar (IH-AD-NPT-011-3224) to 345 bar (IH-AD-NPT-011-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Female Connector m NPT X f NPT made from, and is it suitable for my fluid?",
+          "a": "The Male Female Connector m NPT X f NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Female Connector m NPT X f NPT conform to, and can I get test certificates?",
+          "a": "The Male Female Connector m NPT X f NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Female Connector m NPT X f NPT, and which fittings do I pair it with?",
+          "a": "On the Male Female Connector m NPT X f NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat; its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Female Connector m NPT X f NPT seal, and what should I check when fitting it?",
+          "a": "The Male Female Connector m NPT X f NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Male Female Connector m NPT X f NPT?",
+          "a": "The size table lists a Tompkins equivalent for most part numbers of the Male Female Connector m NPT X f NPT. For example IH-AD-NPT-011-02 is Tompkins 5405-02-02, IH-AD-NPT-011-2412 is Tompkins 5406-24-12 and IH-AD-NPT-011-4032 is Tompkins 5406-40-32. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Female Connector m NPT X f NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Female Connector m NPT X f NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Female Connector m NPT X f NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. The Male Female Connector m NPT X f NPT sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-female-connector-m-sae-x-f-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Female Connector m SAE X f NPT used for and which ports does it connect?",
+          "a": "The Male Female Connector m SAE X f NPT is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12), sealing as an O-ring boss seal; Port B is female NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" ORB male (7/16-20) × 1/8\" NPTF female (1/8-27) in the Male Female Connector m SAE X f NPT?",
+          "a": "Quote IH-ST-6405-04-02 for 1/4\" ORB male (7/16-20) × 1/8\" NPTF female (1/8-27) and IH-ST-6405-14-08 for 7/8\" ORB male (1-3/16-12) × 1/2\" NPTF female (1/2-14). The Male Female Connector m SAE X f NPT lists a full range of part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Male Female Connector m SAE X f NPT are available?",
+          "a": "The Male Female Connector m SAE X f NPT comes in a full range of part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-ST-6405-04-04 (1/4\" ORB male (7/16-20) × 1/4\" NPTF female (1/4-18)), IH-ST-6405-10-06 (5/8\" ORB male (7/8-14) × 3/8\" NPTF female (3/8-18)) and IH-ST-6405-02-04 (1/8\" ORB male (5/16-24) × 1/4\" NPTF female (1/4-18)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Female Connector m SAE X f NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Female Connector m SAE X f NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-6405-08-06 (1/2\" ORB male (3/4-16) × 3/8\" NPTF female (3/8-18)) and IH-ST-6405-20-24 (1-1/4\" ORB male (1-5/8-12) × 1-1/2\" NPTF female (1-1/2-11.5))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Female Connector m SAE X f NPT?",
+          "a": "The working pressure of the Male Female Connector m SAE X f NPT depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Female Connector m SAE X f NPT made from, and is it suitable for my fluid?",
+          "a": "The Male Female Connector m SAE X f NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Female Connector m SAE X f NPT conform to, and can I get test certificates?",
+          "a": "The Male Female Connector m SAE X f NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Female Connector m SAE X f NPT, and which fittings do I pair it with?",
+          "a": "On the Male Female Connector m SAE X f NPT, its male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12) end takes a female port or fitting of the same thread and seat. Its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [ORB Adapters](/c/orb-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Female Connector m SAE X f NPT seal, and what should I check when fitting it?",
+          "a": "The Male Female Connector m SAE X f NPT seals on an O-ring boss seal at port A and on an NPT taper thread at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Male Female Connector m SAE X f NPT?",
+          "a": "The size table lists a Tompkins equivalent for most part numbers of the Male Female Connector m SAE X f NPT. For example IH-ST-6405-04-02 is Tompkins 6405-04-02, IH-ST-6405-12-16 is Tompkins 6405-12-16 and IH-ST-6405-02-02 is Tompkins 6405-02-02. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Female Connector m SAE X f NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Female Connector m SAE X f NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Female Connector m SAE X f NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Male Female Connector m SAE X f NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-tee-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Tee NPT used for and which ports does it connect?",
+          "a": "The Male Tee NPT is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the Male Tee NPT?",
+          "a": "Quote IH-AD-NPT-003-02 for NPT1/8-27 on every port, IH-AD-NPT-003-12 for NPT3/4-14 on every port and IH-AD-NPT-003-24 for NPT1-1/2-11.5 on every port. The Male Tee NPT lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Male Tee NPT are available?",
+          "a": "The Male Tee NPT comes in 8 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-003-04 (NPT1/4-18 on every port), IH-AD-NPT-003-06 (NPT3/8-18 on every port) and IH-AD-NPT-003-20 (NPT1-1/4-11.5 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Tee NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Tee NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-AD-NPT-003-06 (NPT3/8-18 on every port) and IH-AD-NPT-003-20 (NPT1-1/4-11.5 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Tee NPT?",
+          "a": "The size table prints a working pressure against each size of the Male Tee NPT, from 70 bar (IH-AD-NPT-003-24) to 345 bar (IH-AD-NPT-003-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Tee NPT made from, and is it suitable for my fluid?",
+          "a": "The Male Tee NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Tee NPT conform to, and can I get test certificates?",
+          "a": "The Male Tee NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Tee NPT, and which fittings do I pair it with?",
+          "a": "On the Male Tee NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Tee NPT seal, and what should I check when fitting it?",
+          "a": "The Male Tee NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Male Tee NPT?",
+          "a": "The size table lists a Tompkins equivalent for 7 of the 8 part numbers of the Male Tee NPT. For example IH-AD-NPT-003-02 is Tompkins 5600-02-02-02, IH-AD-NPT-003-08 is Tompkins 5600-08-08-08 and IH-AD-NPT-003-20 is Tompkins 5600-20-20-20. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Tee NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Tee NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Tee NPT in Dubai, and how do I get a quote?",
+          "a": "Yes. The Male Tee NPT sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "npt-female-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the NPT Female Tee used for and which ports does it connect?",
+          "a": "The NPT Female Tee is a tee hydraulic adapter that splits or combines a line through three ports. Ports A and B are female NPT 1/8-27 to 2-11.5, sealing as NPT taper thread; Port C is NPT 1/8-27 to 2-11.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 on every port in the NPT Female Tee?",
+          "a": "Quote IH-AD-NPT-021-02 for NPT1/8-27 on every port, IH-AD-NPT-021-12 for NPT3/4-14 on every port and IH-AD-NPT-021-32 for NPT2-11.5 on every port. The NPT Female Tee lists 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the NPT Female Tee come in?",
+          "a": "The NPT Female Tee comes in 9 part numbers covering -02 to -32. Examples from the table: IH-AD-NPT-021-04 (NPT1/4-18 on every port), IH-AD-NPT-021-08 (NPT1/2-14 on every port) and IH-AD-NPT-021-24 (NPT1-1/2-11.5 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right NPT Female Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the NPT Female Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: IH-AD-NPT-021-06 (NPT3/8-18 on every port) and IH-AD-NPT-021-20 (NPT1-1/4-11.5 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the NPT Female Tee?",
+          "a": "The size table prints a working pressure against each size of the NPT Female Tee, from 70 bar (IH-AD-NPT-021-24) to 345 bar (IH-AD-NPT-021-02). The maker states up to 345 bar (5,004 psi). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the NPT Female Tee made from, and is it suitable for my fluid?",
+          "a": "The NPT Female Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the NPT Female Tee conform to, and can I get test certificates?",
+          "a": "The NPT Female Tee is listed to ANSI/ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the NPT Female Tee, and which fittings do I pair it with?",
+          "a": "On the NPT Female Tee, its female NPT 1/8-27 to 2-11.5 end takes a male port or fitting of the same thread and seat; its threaded NPT 1/8-27 to 2-11.5 end takes a matching port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the NPT Female Tee seal, and what should I check when fitting it?",
+          "a": "The NPT Female Tee seals on NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the NPT Female Tee differ from the Steel NPTF Female Tee?",
+          "a": "The NPT Female Tee has NPT where the [Steel NPTF Female Tee](/p/steel-nptf-female-tee) has Steel NPTF. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the NPT Female Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the NPT Female Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the NPT Female Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. The NPT Female Tee sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Plug NPT used for and which ports does it connect?",
+          "a": "The Plug NPT is a hydraulic plug that closes off a port or the end of a line. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/8-27 in the Plug NPT?",
+          "a": "Quote IH-AD-NPT-015-02 for NPT1/8-27, IH-AD-NPT-015-12 for NPT3/4-14 and IH-AD-NPT-015-32 for NPT2-11.5. The Plug NPT lists 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Plug NPT come in?",
+          "a": "The Plug NPT comes in 9 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-015-04 (NPT1/4-18), IH-AD-NPT-015-08 (NPT1/2-14) and IH-AD-NPT-015-24 (NPT1-1/2-11.5). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Plug NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Plug NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a plug you only need the single thread it closes. Then pick the row: IH-AD-NPT-015-06 (NPT3/8-18) and IH-AD-NPT-015-20 (NPT1-1/4-11.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Plug NPT?",
+          "a": "The size table prints a working pressure against each size of the Plug NPT, from 70 bar (IH-AD-NPT-015-24) to 345 bar (IH-AD-NPT-015-02). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Plug NPT made from, and is it suitable for my fluid?",
+          "a": "The Plug NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Plug NPT conform to, and can I get test certificates?",
+          "a": "The Plug NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Plug NPT, and which fittings do I pair it with?",
+          "a": "On the Plug NPT, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Plug NPT seal, and what should I check when fitting it?",
+          "a": "The Plug NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Plug NPT?",
+          "a": "The size table lists a Tompkins equivalent for 9 of the 9 part numbers of the Plug NPT. For example IH-AD-NPT-015-02 is Tompkins 5406-P-02, IH-AD-NPT-015-12 is Tompkins 5406-P-12 and IH-AD-NPT-015-32 is Tompkins 5406-P-32. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Plug NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Plug NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Plug NPT in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Plug NPT is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "run-tee-connector-f-npt-x-f-npt-x-m-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Run Tee Connector f NPT X f NPT X m NPT used for and which ports does it connect?",
+          "a": "The Run Tee Connector f NPT X f NPT X m NPT is a run tee hydraulic adapter that carries the line through the run and takes a side branch. Ports A and B are female NPT taper 1/8\" to 2\", sealing as an NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Run Tee Connector f NPT X f NPT X m NPT (SKU IH-AD-NPT-004)?",
+          "a": "Quote the SKU IH-AD-NPT-004 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Run Tee Connector f NPT X f NPT X m NPT against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Run Tee Connector f NPT X f NPT X m NPT come in?",
+          "a": "The Run Tee Connector f NPT X f NPT X m NPT is listed in NPT 1/8\" to 2\". Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Run Tee Connector f NPT X f NPT X m NPT for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Run Tee Connector f NPT X f NPT X m NPT only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this run tee also say which port is the run and which is the branch."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Run Tee Connector f NPT X f NPT X m NPT?",
+          "a": "The working pressure of the Run Tee Connector f NPT X f NPT X m NPT depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Run Tee Connector f NPT X f NPT X m NPT made from, and is it suitable for my fluid?",
+          "a": "The Run Tee Connector f NPT X f NPT X m NPT is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Run Tee Connector f NPT X f NPT X m NPT conform to, and can I get test certificates?",
+          "a": "The Run Tee Connector f NPT X f NPT X m NPT is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Run Tee Connector f NPT X f NPT X m NPT, and which fittings do I pair it with?",
+          "a": "On the Run Tee Connector f NPT X f NPT X m NPT, its female NPT taper 1/8\" to 2\" end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Run Tee Connector f NPT X f NPT X m NPT seal, and what should I check when fitting it?",
+          "a": "The Run Tee Connector f NPT X f NPT X m NPT seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Run Tee Connector f NPT X f NPT X m NPT differ from the Branch Tee Connector f NPT X m NPT X f NPT?",
+          "a": "The Run Tee Connector f NPT X f NPT X m NPT and the [Branch Tee Connector f NPT X m NPT X f NPT](/p/branch-tee-connector-f-npt-x-m-npt-x-f-npt) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Run Tee Connector f NPT X f NPT X m NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the Run Tee Connector f NPT X f NPT X m NPT is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Run Tee Connector f NPT X f NPT X m NPT in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Run Tee Connector f NPT X f NPT X m NPT is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-npsm-female-swivel-union",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPSM Female Swivel Union used for and which ports does it connect?",
+          "a": "The Steel NPSM Female Swivel Union is a swivel union hydraulic adapter that connects the two thread types named in its title. Ports A and B are female swivel NPSM, 1/4\" to 1\" (1/4-18 to 1-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" NPSM (1/4-18) on every port in the Steel NPSM Female Swivel Union?",
+          "a": "Quote IH-ST-1406-04-04 for 1/4\" NPSM (1/4-18) on every port, IH-ST-1406-08-08 for 1/2\" NPSM (1/2-14) on every port and IH-ST-1406-16-16 for 1\" NPSM (1-11.5) on every port. The Steel NPSM Female Swivel Union lists 5 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPSM Female Swivel Union are available?",
+          "a": "The Steel NPSM Female Swivel Union comes in 5 part numbers covering 1/4\" to 1\". Examples from the table: IH-ST-1406-06-06 (3/8\" NPSM (3/8-18) on every port) and IH-ST-1406-12-12 (3/4\" NPSM (3/4-14) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPSM Female Swivel Union for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPSM Female Swivel Union only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-1406-06-06 (3/8\" NPSM (3/8-18) on every port) and IH-ST-1406-12-12 (3/4\" NPSM (3/4-14) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPSM Female Swivel Union?",
+          "a": "The maker publishes no pressure rating for the Steel NPSM Female Swivel Union, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPSM Female Swivel Union made from, and is it suitable for my fluid?",
+          "a": "The Steel NPSM Female Swivel Union is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPSM Female Swivel Union conform to, and can I get test certificates?",
+          "a": "The Steel NPSM Female Swivel Union is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPSM Female Swivel Union, and which fittings do I pair it with?",
+          "a": "On the Steel NPSM Female Swivel Union, its female swivel NPSM, 1/4\" to 1\" (1/4-18 to 1-11.5) end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPSM Female Swivel Union seal, and what should I check when fitting it?",
+          "a": "The Steel NPSM Female Swivel Union seals on straight pipe thread that does not seal on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPSM Female Swivel Union differ from the Steel NPSM Female Swivel Union Tee?",
+          "a": "The [Steel NPSM Female Swivel Union Tee](/p/steel-npsm-female-swivel-union-tee) carries Tee in its name where the Steel NPSM Female Swivel Union does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPSM Female Swivel Union made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPSM Female Swivel Union is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPSM Female Swivel Union in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPSM Female Swivel Union is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

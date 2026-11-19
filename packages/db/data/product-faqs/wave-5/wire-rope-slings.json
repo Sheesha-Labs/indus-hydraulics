@@ -1,0 +1,470 @@
+{
+  "family": "wire-rope-slings",
+  "extraFacts": [
+    {
+      "fact": "Swaged soft eye sling working load 0.25 to 116.7 t; hand-spliced soft eye sling 0.24 to 81.7 t (5 mm to 110 mm).",
+      "source": "Indus Hydraulics listings for the two soft eye sling products"
+    },
+    {
+      "fact": "Swaged soft eye sling working load 0.25 to 116.7 t; hand-spliced soft eye sling 0.24 to 81.7 t (5 mm to 110 mm).",
+      "source": "Indus Hydraulics listings for the two soft eye sling products"
+    }
+  ],
+  "products": [
+    {
+      "slug": "endless-wire-rope-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Endless Wire Rope Sling and where is it used?",
+          "a": "The Endless Wire Rope Sling is an endless steel wire rope sling for lifting with cranes and hoists, listed in sizes 10 mm to 240 mm. Each row gives working loads in kN for single, double-leg and four-leg use at 45 and 90 degrees, with a minimum breaking load of 60 to 29,275 kN."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Endless Wire Rope Sling part numbers such as IH-LR-WS-END-10MM?",
+          "a": "IH-LR-WS-END-10MM is the 10 mm size, 60 kN minimum breaking load, IH-LR-WS-END-114MM the 114 mm size, 6875 kN minimum breaking load and IH-LR-WS-END-240MM the 240 mm size, 29275 kN minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Endless Wire Rope Sling come in?",
+          "a": "The Endless Wire Rope Sling is listed in sizes 10 mm to 240 mm. The size table gives each size its own Indus part number, with rope size, ratings or dimensions for that size."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Endless Wire Rope Sling for my job?",
+          "a": "Choose on the rated load for the way you will rig it: the angle between legs cuts what each leg may carry, and [our sling angle chart](/blog/sling-angle-chart) shows how. Then pick the Endless Wire Rope Sling row whose rating covers the load; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) lists typical wire rope sling capacities."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Endless Wire Rope Sling carry?",
+          "a": "For the Endless Wire Rope Sling the table gives working loads in kN by hitch. At 114 mm it lists 1140 kN single, 2060 kN double at 45 and 4120 kN four-leg at 45, against a minimum breaking load of 6875 kN. Choose on the hitch you will rig; see [our sling angle chart](/blog/sling-angle-chart) for how the angle cuts the load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Endless Wire Rope Sling have?",
+          "a": "The Endless Wire Rope Sling is made of steel wire rope, with eyes finished as the listing describes. For rope construction and core choices, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Endless Wire Rope Sling?",
+          "a": "The Endless Wire Rope Sling ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Endless Wire Rope Sling?",
+          "a": "The Endless Wire Rope Sling is used with shackles and hooks rated at least to the sling's working load limit, and with the [synthetic slings](/c/synthetic-slings) or [chain slings](/c/chain-slings) where a different sling type suits the load. [Our guide to wire rope eye terminations](/blog/wire-rope-eye-terminations) covers the eye terminations."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Endless Wire Rope Sling?",
+          "a": "Inspect the Endless Wire Rope Sling before every use for broken wires, kinks, corrosion and damaged eyes, and take it out of service if it is damaged. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Endless Wire Rope Sling compare with the Flemish Eye Wire Rope Sling?",
+          "a": "The Endless Wire Rope Sling is a different sling build from the [Flemish Eye Wire Rope Sling](/p/flemish-eye-wire-rope-sling): choose on the hitch, the load and whether the sling is endless or has formed eyes. [Our guide to types of lifting slings](/blog/types-of-lifting-slings) compares the sling types."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Endless Wire Rope Sling from Dubai?",
+          "a": "Yes. We ship Endless Wire Rope Sling from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Endless Wire Rope Sling available from stock in Dubai?",
+          "a": "Yes. Endless Wire Rope Sling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "flemish-eye-wire-rope-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Flemish Eye Wire Rope Sling and where is it used?",
+          "a": "The Flemish Eye Wire Rope Sling is a Flemish eye wire rope sling to EN 13414 for lifting with cranes and hoists, listed with 1.2 to 123 t. It is rated with a 5:1 design factor between working load limit and minimum breaking load, with vertical, choker and basket ratings in each row."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Flemish Eye Wire Rope Sling part numbers such as IH-LR-SL-FEWRS-200MM?",
+          "a": "IH-LR-SL-FEWRS-200MM is the 200 mm (100 mm) size, IH-LR-SL-FEWRS-840MM the 840 mm (420 mm) size and IH-LR-SL-FEWRS-2100MM the 2100 mm (1050 mm) size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Flemish Eye Wire Rope Sling cover?",
+          "a": "The Flemish Eye Wire Rope Sling is listed in sizes 200 mm (100 mm) to 2100 mm (1050 mm). The size table gives each size its own Indus part number, with rope size, ratings or dimensions for that size."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Flemish Eye Wire Rope Sling for my job?",
+          "a": "Start from the load, the hitch and the sling angle, then read the Flemish Eye Wire Rope Sling row that covers it. The angle between legs cuts what each leg may carry ([our sling angle chart](/blog/sling-angle-chart)), and inspection before every use applies to all sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Flemish Eye Wire Rope Sling carry?",
+          "a": "For the Flemish Eye Wire Rope Sling the working load limit runs 1.2 to 123 t, given for three hitches. At 840 mm (420 mm) the table shows 21 t vertical, 17 t choker and 42 t basket. The limit is the most the sling may carry in service; [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength) explains how it differs from breaking load."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Flemish Eye Wire Rope Sling made from and how is it finished?",
+          "a": "The Flemish Eye Wire Rope Sling is made of steel wire rope (mild steel), with eyes finished as the listing describes. For rope construction and core choices, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Flemish Eye Wire Rope Sling?",
+          "a": "The Flemish Eye Wire Rope Sling is made to EN 13414 and ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Flemish Eye Wire Rope Sling?",
+          "a": "The Flemish Eye Wire Rope Sling is used with shackles and hooks rated at least to the sling's working load limit, and with the [synthetic slings](/c/synthetic-slings) or [chain slings](/c/chain-slings) where a different sling type suits the load. [Our guide to wire rope eye terminations](/blog/wire-rope-eye-terminations) covers the eye terminations."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Flemish Eye Wire Rope Sling be fitted and inspected?",
+          "a": "Inspect the Flemish Eye Wire Rope Sling before every use for broken wires, kinks, corrosion and damaged eyes, and take it out of service if it is damaged. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Flemish Eye Wire Rope Sling compare with the Swaged Soft Eye Wire Rope Sling (Ferrule Secured)?",
+          "a": "The Flemish Eye Wire Rope Sling is a different sling build from the [Swaged Soft Eye Wire Rope Sling (Ferrule Secured)](/p/swaged-soft-eye-wire-rope-sling-ferrule-secured): choose on the hitch, the load and whether the sling is endless or has formed eyes. [Our guide to types of lifting slings](/blog/types-of-lifting-slings) compares the sling types."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Flemish Eye Wire Rope Sling outside the UAE?",
+          "a": "Yes, Flemish Eye Wire Rope Sling goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Flemish Eye Wire Rope Sling for delivery from Dubai?",
+          "a": "Yes, Flemish Eye Wire Rope Sling is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "four-leg-wire-rope-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Four-Leg Wire Rope Sling used for?",
+          "a": "The Four-Leg Wire Rope Sling is a four-leg steel wire rope sling to EN 13414 for lifting with cranes and hoists, listed in sizes 6 mm to 56 mm. The listing publishes no load rating, so confirm the rating in writing before it is used to lift."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Four-Leg Wire Rope Sling part numbers such as IH-LR-SL-FWRS-6MM?",
+          "a": "IH-LR-SL-FWRS-6MM is the 6 mm size, IH-LR-SL-FWRS-24MM the 24 mm size and IH-LR-SL-FWRS-56MM the 56 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Four-Leg Wire Rope Sling cover?",
+          "a": "The Four-Leg Wire Rope Sling is listed in sizes 6 mm to 56 mm. The size table gives each size its own Indus part number, with rope size, ratings or dimensions for that size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Four-Leg Wire Rope Sling?",
+          "a": "Choose on the rated load for the way you will rig it: the angle between legs cuts what each leg may carry, and [our sling angle chart](/blog/sling-angle-chart) shows how. Then pick the Four-Leg Wire Rope Sling row whose rating covers the load; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) lists typical wire rope sling capacities."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Four-Leg Wire Rope Sling carry?",
+          "a": "The listing for the Four-Leg Wire Rope Sling publishes no load rating, so we do not quote one here and it must not be used to lift until the rating is confirmed in writing. Send the duty, rope size and hitch on the RFQ and we confirm the rating with the quotation; see [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) for typical capacities."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Four-Leg Wire Rope Sling have?",
+          "a": "The Four-Leg Wire Rope Sling is made of steel wire rope (mild steel), with eyes finished as the listing describes. For rope construction and core choices, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Four-Leg Wire Rope Sling?",
+          "a": "The Four-Leg Wire Rope Sling is made to EN 13414; the listing does not state a certificate, so ask on the RFQ for the documents your site needs and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Four-Leg Wire Rope Sling?",
+          "a": "The Four-Leg Wire Rope Sling is used with shackles and hooks rated at least to the sling's working load limit, and with the [synthetic slings](/c/synthetic-slings) or [chain slings](/c/chain-slings) where a different sling type suits the load. [Our guide to wire rope eye terminations](/blog/wire-rope-eye-terminations) covers the eye terminations."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Four-Leg Wire Rope Sling?",
+          "a": "Inspect the Four-Leg Wire Rope Sling before every use for broken wires, kinks, corrosion and damaged eyes, and take it out of service if it is damaged. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Four-Leg Wire Rope Sling compare with the Two-Leg Wire Rope Sling?",
+          "a": "The Four-Leg Wire Rope Sling and the [Two-Leg Wire Rope Sling](/p/two-leg-wire-rope-sling) are both EN 13414 multi-leg slings with no load rating published on the listing, and they differ in the number of legs and how the load shares between them. Confirm the rating in writing for either before use, and quote the leg count and sling angle on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Four-Leg Wire Rope Sling from Dubai?",
+          "a": "Yes. We ship Four-Leg Wire Rope Sling from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Four-Leg Wire Rope Sling available from stock in Dubai?",
+          "a": "Yes. Four-Leg Wire Rope Sling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "hand-spliced-soft-eye-wire-rope-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Hand-Spliced Soft Eye Wire Rope Sling and where is it used?",
+          "a": "The Hand-Spliced Soft Eye Wire Rope Sling is a hand-spliced soft eye sling for lifting with cranes and hoists, listed in sizes 5 mm to 110 mm with working loads 0.24 to 81.7 t and a minimum breaking load of 1.25 to 583.28 t. Rows give the working load limit at safety factors of 5 and 6."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Hand-Spliced Soft Eye Wire Rope Sling part numbers such as IH-LR-WS-SPL-5MM?",
+          "a": "IH-LR-WS-SPL-5MM is the 5 mm size, 1.25 t minimum breaking load, IH-LR-WS-SPL-54MM the 54 mm size, 146.8 t minimum breaking load and IH-LR-WS-SPL-110MM the 110 mm size, 583.3 t minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Hand-Spliced Soft Eye Wire Rope Sling come in?",
+          "a": "The Hand-Spliced Soft Eye Wire Rope Sling is listed in sizes 5 mm to 110 mm. The size table gives each size its own Indus part number, with rope size, ratings or dimensions for that size."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Hand-Spliced Soft Eye Wire Rope Sling for my job?",
+          "a": "Choose on the rated load for the way you will rig it: the angle between legs cuts what each leg may carry, and [our sling angle chart](/blog/sling-angle-chart) shows how. Then pick the Hand-Spliced Soft Eye Wire Rope Sling row whose rating covers the load; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) lists typical wire rope sling capacities."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Hand-Spliced Soft Eye Wire Rope Sling?",
+          "a": "The Hand-Spliced Soft Eye Wire Rope Sling lists working load limits of 0.24 to 81.7 t, given at safety factor 5 and safety factor 6. At 54 mm the table shows 20.6 t at 5 and 17.1 t at 6, against a minimum breaking load of 146.8 t. Use the figure for the safety factor your lift calls for; [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength) sets out the terms."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Hand-Spliced Soft Eye Wire Rope Sling have?",
+          "a": "The Hand-Spliced Soft Eye Wire Rope Sling is made of steel wire rope, with eyes finished as the listing describes. For rope construction and core choices, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Hand-Spliced Soft Eye Wire Rope Sling?",
+          "a": "The Hand-Spliced Soft Eye Wire Rope Sling ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Hand-Spliced Soft Eye Wire Rope Sling?",
+          "a": "The Hand-Spliced Soft Eye Wire Rope Sling is used with shackles and hooks rated at least to the sling's working load limit, and with the [synthetic slings](/c/synthetic-slings) or [chain slings](/c/chain-slings) where a different sling type suits the load. [Our guide to wire rope eye terminations](/blog/wire-rope-eye-terminations) covers the eye terminations."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Hand-Spliced Soft Eye Wire Rope Sling be fitted and inspected?",
+          "a": "Inspect the Hand-Spliced Soft Eye Wire Rope Sling before every use for broken wires, kinks, corrosion and damaged eyes, and take it out of service if it is damaged. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "Swaged or hand-spliced: how does the Hand-Spliced Soft Eye Wire Rope Sling compare with the Swaged Soft Eye Wire Rope Sling (Ferrule Secured)?",
+          "a": "A swaged sling has its eye secured with a pressed ferrule, which gives a compact, consistent termination, while a hand-spliced eye has no ferrule to snag and is easier to inspect by eye. Rated against each other, the swaged listing carries working loads 0.25 to 116.7 t and the hand-spliced 0.24 to 81.7 t, so the spliced eye is rated lower for the same rope. See [Swaged Soft Eye Wire Rope Sling (Ferrule Secured)](/p/swaged-soft-eye-wire-rope-sling-ferrule-secured)."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Hand-Spliced Soft Eye Wire Rope Sling from Dubai?",
+          "a": "Yes. We ship Hand-Spliced Soft Eye Wire Rope Sling from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Hand-Spliced Soft Eye Wire Rope Sling for delivery from Dubai?",
+          "a": "Yes. We keep Hand-Spliced Soft Eye Wire Rope Sling in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "single-leg-wire-rope-sling-with-end-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Single Leg Wire Rope Sling with End Fittings and where is it used?",
+          "a": "The Single Leg Wire Rope Sling with End Fittings is a single-leg wire rope sling with end fittings to EN 13414, listed in sizes 6 mm to 70 mm with a working load limit of 2.9 to 400 kN. It is rated with a 5:1 design factor between working load limit and minimum breaking load."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Single Leg Wire Rope Sling with End Fittings part numbers such as IH-LR-SL-SLWRSEF-6MM?",
+          "a": "IH-LR-SL-SLWRSEF-6MM is the 6 mm size, 2.9 kN WLL, IH-LR-SL-SLWRSEF-28MM the 28 mm size, 68.6 kN WLL and IH-LR-SL-SLWRSEF-70MM the 70 mm size, 400 kN WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Single Leg Wire Rope Sling with End Fittings cover?",
+          "a": "The Single Leg Wire Rope Sling with End Fittings is listed in sizes 6 mm to 70 mm. The size table gives each size its own Indus part number, with rope size, ratings or dimensions for that size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Single Leg Wire Rope Sling with End Fittings?",
+          "a": "Start from the load, the hitch and the sling angle, then read the Single Leg Wire Rope Sling with End Fittings row that covers it. The angle between legs cuts what each leg may carry ([our sling angle chart](/blog/sling-angle-chart)), and inspection before every use applies to all sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Single Leg Wire Rope Sling with End Fittings carry?",
+          "a": "The Single Leg Wire Rope Sling with End Fittings lists working load limits of 2.9 to 400 kN, rated with a 5:1 design factor between working load limit and minimum breaking load. At 28 mm the table shows 68.6 kN. The working load limit is the most the sling may carry in service; see [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Single Leg Wire Rope Sling with End Fittings made from and how is it finished?",
+          "a": "The Single Leg Wire Rope Sling with End Fittings is made of steel wire rope (mild steel), with eyes finished as the listing describes. For rope construction and core choices, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Single Leg Wire Rope Sling with End Fittings?",
+          "a": "The Single Leg Wire Rope Sling with End Fittings is made to EN 13414 and ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Single Leg Wire Rope Sling with End Fittings?",
+          "a": "The Single Leg Wire Rope Sling with End Fittings is used with shackles and hooks rated at least to the sling's working load limit, and with the [synthetic slings](/c/synthetic-slings) or [chain slings](/c/chain-slings) where a different sling type suits the load. [Our guide to wire rope eye terminations](/blog/wire-rope-eye-terminations) covers the eye terminations."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Single Leg Wire Rope Sling with End Fittings be fitted and inspected?",
+          "a": "Inspect the Single Leg Wire Rope Sling with End Fittings before every use for broken wires, kinks, corrosion and damaged eyes, and take it out of service if it is damaged. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Single Leg Wire Rope Sling with End Fittings compare with the Two-Leg Wire Rope Sling?",
+          "a": "The Single Leg Wire Rope Sling with End Fittings carries one leg with end fittings and a stated working load limit of 2.9 to 400 kN, while the [Two-Leg Wire Rope Sling](/p/two-leg-wire-rope-sling) has two legs and no rating published on its listing. Choose on the number of lift points and rig angle, and confirm any rating in writing."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Single Leg Wire Rope Sling with End Fittings from Dubai?",
+          "a": "Yes, Single Leg Wire Rope Sling with End Fittings goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Single Leg Wire Rope Sling with End Fittings available from stock in Dubai?",
+          "a": "Yes, we stock Single Leg Wire Rope Sling with End Fittings at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "swaged-soft-eye-wire-rope-sling-ferrule-secured",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) and where is it used?",
+          "a": "The Swaged Soft Eye Wire Rope Sling (Ferrule Secured) is a swaged soft eye sling with ferrule-secured eyes for lifting with cranes and hoists, listed in sizes 5 mm to 110 mm with working loads 0.25 to 116.7 t and a minimum breaking load of 1.25 to 583.28 t. Rows give the working load limit at safety factors of 5 and 6."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swaged Soft Eye Wire Rope Sling (Ferrule Secured) part numbers such as IH-LR-WS-SWG-5MM?",
+          "a": "IH-LR-WS-SWG-5MM is the 5 mm size, 1.25 t minimum breaking load, IH-LR-WS-SWG-54MM the 54 mm size, 146.8 t minimum breaking load and IH-LR-WS-SWG-110MM the 110 mm size, 583.3 t minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) come in?",
+          "a": "The Swaged Soft Eye Wire Rope Sling (Ferrule Secured) is listed in sizes 5 mm to 110 mm. The size table gives each size its own Indus part number, with rope size, ratings or dimensions for that size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swaged Soft Eye Wire Rope Sling (Ferrule Secured)?",
+          "a": "Start from the load, the hitch and the sling angle, then read the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) row that covers it. The angle between legs cuts what each leg may carry ([our sling angle chart](/blog/sling-angle-chart)), and inspection before every use applies to all sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) carry?",
+          "a": "The Swaged Soft Eye Wire Rope Sling (Ferrule Secured) lists working load limits of 0.25 to 116.7 t, given at safety factor 5 and safety factor 6. At 54 mm the table shows 29.4 t at 5 and 24.5 t at 6, against a minimum breaking load of 146.8 t. Use the figure for the safety factor your lift calls for; [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength) sets out the terms."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) made from and how is it finished?",
+          "a": "The Swaged Soft Eye Wire Rope Sling (Ferrule Secured) is made of steel wire rope, with eyes finished as the listing describes. For rope construction and core choices, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Swaged Soft Eye Wire Rope Sling (Ferrule Secured)?",
+          "a": "The Swaged Soft Eye Wire Rope Sling (Ferrule Secured) ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Swaged Soft Eye Wire Rope Sling (Ferrule Secured)?",
+          "a": "The Swaged Soft Eye Wire Rope Sling (Ferrule Secured) is used with shackles and hooks rated at least to the sling's working load limit, and with the [synthetic slings](/c/synthetic-slings) or [chain slings](/c/chain-slings) where a different sling type suits the load. [Our guide to wire rope eye terminations](/blog/wire-rope-eye-terminations) covers the eye terminations."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) be fitted and inspected?",
+          "a": "Inspect the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) before every use for broken wires, kinks, corrosion and damaged eyes, and take it out of service if it is damaged. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "Swaged or hand-spliced: how does the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) compare with the Hand-Spliced Soft Eye Wire Rope Sling?",
+          "a": "A swaged sling has its eye secured with a pressed ferrule, which gives a compact, consistent termination, while a hand-spliced eye has no ferrule to snag and is easier to inspect by eye. Rated against each other, the swaged listing carries working loads 0.25 to 116.7 t and the hand-spliced 0.24 to 81.7 t, so the spliced eye is rated lower for the same rope. See [Hand-Spliced Soft Eye Wire Rope Sling](/p/hand-spliced-soft-eye-wire-rope-sling)."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) outside the UAE?",
+          "a": "Yes, Swaged Soft Eye Wire Rope Sling (Ferrule Secured) goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Swaged Soft Eye Wire Rope Sling (Ferrule Secured) for delivery from Dubai?",
+          "a": "Yes, Swaged Soft Eye Wire Rope Sling (Ferrule Secured) is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "two-leg-wire-rope-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Two-Leg Wire Rope Sling used for?",
+          "a": "The Two-Leg Wire Rope Sling is a two-leg steel wire rope sling to EN 13414 for lifting with cranes and hoists, listed in sizes 6 mm to 70 mm. The listing publishes no load rating, so confirm the rating in writing before it is used to lift."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Two-Leg Wire Rope Sling part numbers such as IH-LR-SL-TWRS-6MM?",
+          "a": "IH-LR-SL-TWRS-6MM is the 6 mm size, IH-LR-SL-TWRS-28MM the 28 mm size and IH-LR-SL-TWRS-70MM the 70 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Two-Leg Wire Rope Sling cover?",
+          "a": "The Two-Leg Wire Rope Sling is listed in sizes 6 mm to 70 mm. The size table gives each size its own Indus part number, with rope size, ratings or dimensions for that size."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Two-Leg Wire Rope Sling for my job?",
+          "a": "Choose on the rated load for the way you will rig it: the angle between legs cuts what each leg may carry, and [our sling angle chart](/blog/sling-angle-chart) shows how. Then pick the Two-Leg Wire Rope Sling row whose rating covers the load; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) lists typical wire rope sling capacities."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Two-Leg Wire Rope Sling carry?",
+          "a": "The listing for the Two-Leg Wire Rope Sling publishes no load rating, so we do not quote one here and it must not be used to lift until the rating is confirmed in writing. Send the duty, rope size and hitch on the RFQ and we confirm the rating with the quotation; see [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) for typical capacities."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Two-Leg Wire Rope Sling made from and how is it finished?",
+          "a": "The Two-Leg Wire Rope Sling is made of steel wire rope (mild steel), with eyes finished as the listing describes. For rope construction and core choices, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Two-Leg Wire Rope Sling come with a test certificate?",
+          "a": "The Two-Leg Wire Rope Sling is made to EN 13414; the listing does not state a certificate, so ask on the RFQ for the documents your site needs and we confirm what can be supplied before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Two-Leg Wire Rope Sling?",
+          "a": "The Two-Leg Wire Rope Sling is used with shackles and hooks rated at least to the sling's working load limit, and with the [synthetic slings](/c/synthetic-slings) or [chain slings](/c/chain-slings) where a different sling type suits the load. [Our guide to wire rope eye terminations](/blog/wire-rope-eye-terminations) covers the eye terminations."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Two-Leg Wire Rope Sling be fitted and inspected?",
+          "a": "Inspect the Two-Leg Wire Rope Sling before every use for broken wires, kinks, corrosion and damaged eyes, and take it out of service if it is damaged. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Two-Leg Wire Rope Sling compare with the Four-Leg Wire Rope Sling?",
+          "a": "The Two-Leg Wire Rope Sling and the [Four-Leg Wire Rope Sling](/p/four-leg-wire-rope-sling) are both EN 13414 multi-leg slings with no load rating published on the listing, and they differ in the number of legs and how the load shares between them. Confirm the rating in writing for either before use, and quote the leg count and sling angle on the RFQ."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Two-Leg Wire Rope Sling from Dubai?",
+          "a": "Yes. We ship Two-Leg Wire Rope Sling from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Two-Leg Wire Rope Sling available from stock in Dubai?",
+          "a": "Yes. Two-Leg Wire Rope Sling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

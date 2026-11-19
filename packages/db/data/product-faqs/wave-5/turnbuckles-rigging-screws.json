@@ -1,0 +1,1249 @@
+{
+  "family": "turnbuckles-rigging-screws",
+  "extraFacts": [
+    {
+      "fact": "Commercial Turnbuckle, Hook and Eye (Indus listing): size 6 mm to 24 mm; rate working load limit 100 to 3,000 kg",
+      "source": "Indus Hydraulics product listing /p/commercial-turnbuckle-hook-and-eye"
+    },
+    {
+      "fact": "Commercial Turnbuckle — Eye and Eye, Cast Steel (Indus listing): std DIN 1480; mat Malleable iron; fin Self colour, electro-galvanized; size M5 to M42; rate working load limit 0.995 to 59.15 kN",
+      "source": "Indus Hydraulics product listing /p/commercial-turnbuckle-eye-and-eye-cast-steel"
+    },
+    {
+      "fact": "Commercial Turnbuckle — Eye and Eye, Cast Steel (Indus listing): std DIN 1480; mat Malleable iron; fin Self colour, electro-galvanized; size M5 to M42; rate working load limit 0.995 to 59.15 kN",
+      "source": "Indus Hydraulics product listing /p/commercial-turnbuckle-eye-and-eye-cast-steel"
+    },
+    {
+      "fact": "DIN 1480 Turnbuckle (Indus listing): std DIN 1480; mat Steel; size M6 to M42; rate working load limit 1.53 to 91 kN",
+      "source": "Indus Hydraulics product listing /p/din-1480-turnbuckle"
+    },
+    {
+      "fact": "Stainless Steel DIN 1480 Turnbuckle (Indus listing): std DIN 1480; mat Type 316 or 304 stainless steel turnbuckle; fin Polished; size M5 to M20; rate working load limit 40 to 2,750 kg",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-din-1480-turnbuckle"
+    },
+    {
+      "fact": "Stainless Steel Drop Forged Turnbuckle — US Type (Indus listing): std US federal specification; mat Stainless steel 304 or 316 turnbuckle; rate working load limit 500 to 75,000 lbs",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-drop-forged-turnbuckle-us-type"
+    },
+    {
+      "fact": "Rigging Screw, Jaw and Jaw (Indus listing): size M12 to M39",
+      "source": "Indus Hydraulics product listing /p/rigging-screw-jaw-and-jaw"
+    },
+    {
+      "fact": "Turnbuckle — Italian Type (Indus listing): std Italian type; mat Mild steel; fin Zinc plated, hot-dip galvanized; size M5 to M52; rate working load limit 50 to 19,800 kg",
+      "source": "Indus Hydraulics product listing /p/turnbuckle-italian-type"
+    },
+    {
+      "fact": "Commercial Turnbuckle, Hook and Eye (Indus listing): size 6 mm to 24 mm; rate working load limit 100 to 3,000 kg",
+      "source": "Indus Hydraulics product listing /p/commercial-turnbuckle-hook-and-eye"
+    },
+    {
+      "fact": "Stainless Steel Rigging Screw, Jaw and Jaw (Indus listing): mat Stainless steel 304 or 316; size 5 mm to 20 mm; rate working load limit 550 to 6,875 lbs",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-rigging-screw-jaw-and-jaw"
+    },
+    {
+      "fact": "DIN 1480 Turnbuckle (Indus listing): std DIN 1480; mat Steel; size M6 to M42; rate working load limit 1.53 to 91 kN",
+      "source": "Indus Hydraulics product listing /p/din-1480-turnbuckle"
+    },
+    {
+      "fact": "Drop Forged Turnbuckle — US Type (Indus listing): mat Drop-forged steel; size 1/4″ × 4″ to 2″-3/4″ × 24″; rate working load limit 500 to 75,000 lbs",
+      "source": "Indus Hydraulics product listing /p/drop-forged-turnbuckle-us-type"
+    },
+    {
+      "fact": "Rigging Screw, Jaw and Jaw (Indus listing): size M12 to M39",
+      "source": "Indus Hydraulics product listing /p/rigging-screw-jaw-and-jaw"
+    },
+    {
+      "fact": "Stainless Steel Rigging Screw, Jaw and Jaw (Indus listing): mat Stainless steel 304 or 316; size 5 mm to 20 mm; rate working load limit 550 to 6,875 lbs",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-rigging-screw-jaw-and-jaw"
+    },
+    {
+      "fact": "Stainless Steel Turnbuckle — US Type (Indus listing): std ASTM F1145, type 1; mat Stainless steel (AISI 304/AISI 316); fin Polished; size 1/4″ to 1-1/2″",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-turnbuckle-us-type"
+    },
+    {
+      "fact": "Stainless Steel Turnbuckle — US Type (Indus listing): std ASTM F1145, type 1; mat Stainless steel (AISI 304/AISI 316); fin Polished; size 1/4″ to 1-1/2″",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-turnbuckle-us-type"
+    },
+    {
+      "fact": "Stainless Steel Drop Forged Turnbuckle — US Type (Indus listing): std US federal specification; mat Stainless steel 304 or 316 turnbuckle; rate working load limit 500 to 75,000 lbs",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-drop-forged-turnbuckle-us-type"
+    },
+    {
+      "fact": "DIN 1480 Turnbuckle (Indus listing): std DIN 1480; mat Steel; size M6 to M42; rate working load limit 1.53 to 91 kN",
+      "source": "Indus Hydraulics product listing /p/din-1480-turnbuckle"
+    }
+  ],
+  "products": [
+    {
+      "slug": "commercial-turnbuckle-eye-and-eye-cast-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Commercial Turnbuckle — Eye and Eye, Cast Steel and where is it used?",
+          "a": "The Commercial Turnbuckle — Eye and Eye, Cast Steel is a eye-and-eye commercial turnbuckle to DIN 1480 that tensions a line between two eyes. It is listed in sizes M5 to M42, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Commercial Turnbuckle — Eye and Eye, Cast Steel part numbers such as IH-LR-TB-CTEEC-M5?",
+          "a": "IH-LR-TB-CTEEC-M5 is the M5 size, 0.994 kN WLL, IH-LR-TB-CTEEC-M20 the M20 size, 17.5 kN WLL and IH-LR-TB-CTEEC-M42 the M42 size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Commercial Turnbuckle — Eye and Eye, Cast Steel come in?",
+          "a": "Sizes on the Commercial Turnbuckle — Eye and Eye, Cast Steel run M5 to M42. The size table gives each one its own Indus part number and dimensions, and the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Commercial Turnbuckle — Eye and Eye, Cast Steel?",
+          "a": "Pick the size by rated load first, then the end fittings, and check the body length and overall length in the Commercial Turnbuckle — Eye and Eye, Cast Steel table against the room you have to tension in. See [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Commercial Turnbuckle — Eye and Eye, Cast Steel carry?",
+          "a": "The Commercial Turnbuckle — Eye and Eye, Cast Steel lists a working load limit of 0.995 to 59.15 kN, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Commercial Turnbuckle — Eye and Eye, Cast Steel have?",
+          "a": "The Commercial Turnbuckle — Eye and Eye, Cast Steel is made from malleable iron and offered with these finishes: self colour, electro-galvanized. Galvanized or plated finishes protect the steel outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Commercial Turnbuckle — Eye and Eye, Cast Steel come with a test certificate?",
+          "a": "The Commercial Turnbuckle — Eye and Eye, Cast Steel is listed as DIN 1480, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Commercial Turnbuckle — Eye and Eye, Cast Steel?",
+          "a": "Connect the Commercial Turnbuckle — Eye and Eye, Cast Steel to [shackles](/c/shackles), [lifting hooks](/c/lifting-hooks) or [rigging pins](/c/rigging-pins) at the ends, and to rope through a terminal from the [sockets and terminals](/c/wire-rope-sockets-terminals). For a full cable-bracing build, see [our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Commercial Turnbuckle — Eye and Eye, Cast Steel?",
+          "a": "Set the Commercial Turnbuckle — Eye and Eye, Cast Steel with equal thread in both ends and turn the body to tension, keeping the pull in line with the fittings. Rigging hardware needs periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Commercial Turnbuckle — Eye and Eye, Cast Steel compare with the Commercial Turnbuckle, Hook and Eye?",
+          "a": "The nearest sibling is the [Commercial Turnbuckle, Hook and Eye](/p/commercial-turnbuckle-hook-and-eye), and the two differ on pattern, material and finish. In detail, pattern is DIN 1480 here and not stated there; material is malleable iron here and not stated there; finish is self colour, electro-galvanized here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Commercial Turnbuckle — Eye and Eye, Cast Steel from Dubai?",
+          "a": "Yes, Commercial Turnbuckle — Eye and Eye, Cast Steel goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Commercial Turnbuckle — Eye and Eye, Cast Steel for delivery from Dubai?",
+          "a": "Yes, Commercial Turnbuckle — Eye and Eye, Cast Steel is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-turnbuckle-hook-and-eye",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Commercial Turnbuckle, Hook and Eye and where is it used?",
+          "a": "The Commercial Turnbuckle, Hook and Eye is a hook-and-eye commercial turnbuckle that tensions a line between a hook and an eye. It is listed in sizes 6 mm to 24 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Commercial Turnbuckle, Hook and Eye part numbers such as IH-LR-TB-COM-6MM?",
+          "a": "IH-LR-TB-COM-6MM is the 6 mm size, 100 kg WLL, IH-LR-TB-COM-16MM the 16 mm size, 1000 kg WLL and IH-LR-TB-COM-24MM the 24 mm size, 3000 kg WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Commercial Turnbuckle, Hook and Eye come in?",
+          "a": "The Commercial Turnbuckle, Hook and Eye is listed in 6 mm to 24 mm, rated 100 to 3,000 kg. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Commercial Turnbuckle, Hook and Eye?",
+          "a": "Choose the thread size from the working load in the Commercial Turnbuckle, Hook and Eye table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Commercial Turnbuckle, Hook and Eye carry?",
+          "a": "The Commercial Turnbuckle, Hook and Eye lists a working load limit of 100 to 3,000 kg, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Commercial Turnbuckle, Hook and Eye have?",
+          "a": "The listing for the Commercial Turnbuckle, Hook and Eye does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Commercial Turnbuckle, Hook and Eye?",
+          "a": "The Commercial Turnbuckle, Hook and Eye ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Commercial Turnbuckle, Hook and Eye?",
+          "a": "The Commercial Turnbuckle, Hook and Eye connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Commercial Turnbuckle, Hook and Eye?",
+          "a": "Fit the Commercial Turnbuckle, Hook and Eye with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Commercial Turnbuckle, Hook and Eye compare with the Commercial Turnbuckle — Eye and Eye, Cast Steel?",
+          "a": "The nearest sibling is the [Commercial Turnbuckle — Eye and Eye, Cast Steel](/p/commercial-turnbuckle-eye-and-eye-cast-steel), and the two differ on pattern, material and finish. In detail, pattern is not stated here and DIN 1480 there; material is not stated here and malleable iron there; finish is not stated here and self colour, electro-galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Commercial Turnbuckle, Hook and Eye from Dubai?",
+          "a": "Yes. We ship Commercial Turnbuckle, Hook and Eye from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Commercial Turnbuckle, Hook and Eye for delivery from Dubai?",
+          "a": "Yes. We keep Commercial Turnbuckle, Hook and Eye in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "die-cast-zinc-turnbuckle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Die-Cast Zinc Turnbuckle used for?",
+          "a": "The Die-Cast Zinc Turnbuckle is a die-cast zinc turnbuckle for light tensioning duty in small sizes. It is listed in sizes 5/32″ to M12X130, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Die-Cast Zinc Turnbuckle part numbers such as IH-LR-TB-DZT-016-EE?",
+          "a": "IH-LR-TB-DZT-016-EE is the 5/32″ size, Eye and eye, IH-LR-TB-DZT-M5X70-HEE the M5X70 size, Hook and eye, ES and IH-LR-TB-DZT-038-HHR the 3/8″ size, Hook and hook, RS. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Die-Cast Zinc Turnbuckle come in?",
+          "a": "The Die-Cast Zinc Turnbuckle is listed in 5/32″ to M12X130. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range. End types in the table: Eye and eye, Hook and eye, RS, Hook and eye, ES and Hook and hook, RS."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Die-Cast Zinc Turnbuckle?",
+          "a": "Choose the thread size from the working load in the Die-Cast Zinc Turnbuckle table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Die-Cast Zinc Turnbuckle?",
+          "a": "The listing for the Die-Cast Zinc Turnbuckle gives dimensions and weights but no working load limit, so we do not quote one. If it must carry a load, send the load on the RFQ and we confirm a rated option, for example from the drop-forged and DIN ranges on this shelf."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Die-Cast Zinc Turnbuckle have?",
+          "a": "The Die-Cast Zinc Turnbuckle is made from zinc alloy and finished zinc plated. Galvanized or plated finishes protect the steel outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Die-Cast Zinc Turnbuckle?",
+          "a": "The listing for the Die-Cast Zinc Turnbuckle names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Die-Cast Zinc Turnbuckle?",
+          "a": "The Die-Cast Zinc Turnbuckle connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Die-Cast Zinc Turnbuckle be fitted and inspected?",
+          "a": "Fit the Die-Cast Zinc Turnbuckle with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Die-Cast Zinc Turnbuckle compare with the Commercial Turnbuckle — Eye and Eye, Cast Steel?",
+          "a": "The nearest sibling is the [Commercial Turnbuckle — Eye and Eye, Cast Steel](/p/commercial-turnbuckle-eye-and-eye-cast-steel), and the two differ on pattern, material and finish. In detail, pattern is not stated here and DIN 1480 there; material is zinc alloy here and malleable iron there; finish is zinc plated here and self colour, electro-galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Die-Cast Zinc Turnbuckle outside the UAE?",
+          "a": "Yes. We ship Die-Cast Zinc Turnbuckle from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Die-Cast Zinc Turnbuckle for delivery from Dubai?",
+          "a": "Yes. Die-Cast Zinc Turnbuckle sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "din-1478-turnbuckle-galvanized",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DIN 1478 Turnbuckle — Galvanized used for?",
+          "a": "The DIN 1478 Turnbuckle — Galvanized is a DIN 1478 turnbuckle to DIN 1478 that tensions rope or rod in a rigging line, with eye, hook or jaw ends. It is listed in sizes M6 to M42, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DIN 1478 Turnbuckle — Galvanized part numbers such as IH-LR-TB-D1478TG-M6-EE?",
+          "a": "IH-LR-TB-D1478TG-M6-EE is the M6 size, Eye and eye, 225 kg WLL, IH-LR-TB-D1478TG-42MM-JE the 42 mm size, Jaw and eye and IH-LR-TB-D1478TG-M48-BO the M48 size, Body only, 16500 kg WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the DIN 1478 Turnbuckle — Galvanized cover?",
+          "a": "Sizes on the DIN 1478 Turnbuckle — Galvanized run M6 to M42. The size table gives each one its own Indus part number and dimensions, and the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) lists the neighbouring products. End types in the table: Eye and eye, Hook and eye, Hook and hook, Jaw and eye, Jaw and jaw and Stub ends."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of DIN 1478 Turnbuckle — Galvanized for my job?",
+          "a": "Pick the size by rated load first, then the end fittings, and check the body length and overall length in the DIN 1478 Turnbuckle — Galvanized table against the room you have to tension in. See [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the DIN 1478 Turnbuckle — Galvanized carry?",
+          "a": "The DIN 1478 Turnbuckle — Galvanized lists a working load limit of 75 to 16,500 kg, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 1478 Turnbuckle — Galvanized made from and how is it finished?",
+          "a": "The DIN 1478 Turnbuckle — Galvanized is offered with these finishes: zinc plated, hot-dip galvanized. Galvanized or plated finishes protect the steel outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "Does the DIN 1478 Turnbuckle — Galvanized come with a test certificate?",
+          "a": "The listing names DIN 1478 for the DIN 1478 Turnbuckle — Galvanized but states no certificate. If your site needs a test certificate or third-party inspection, say so on the RFQ and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the DIN 1478 Turnbuckle — Galvanized?",
+          "a": "Connect the DIN 1478 Turnbuckle — Galvanized to [shackles](/c/shackles), [lifting hooks](/c/lifting-hooks) or [rigging pins](/c/rigging-pins) at the ends, and to rope through a terminal from the [sockets and terminals](/c/wire-rope-sockets-terminals). For a full cable-bracing build, see [our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the DIN 1478 Turnbuckle — Galvanized be fitted and inspected?",
+          "a": "Set the DIN 1478 Turnbuckle — Galvanized with equal thread in both ends and turn the body to tension, keeping the pull in line with the fittings. Rigging hardware needs periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DIN 1478 Turnbuckle — Galvanized compare with the DIN 1480 Turnbuckle?",
+          "a": "The nearest sibling is the [DIN 1480 Turnbuckle](/p/din-1480-turnbuckle), and the two differ on pattern, material and finish. In detail, pattern is DIN 1478 here and DIN 1480 there; material is not stated here and steel there; finish is zinc plated, hot-dip galvanized here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the DIN 1478 Turnbuckle — Galvanized outside the UAE?",
+          "a": "Yes, DIN 1478 Turnbuckle — Galvanized goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 1478 Turnbuckle — Galvanized available from stock in Dubai?",
+          "a": "Yes, we stock DIN 1478 Turnbuckle — Galvanized at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "din-1480-turnbuckle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DIN 1480 Turnbuckle and where is it used?",
+          "a": "The DIN 1480 Turnbuckle is a DIN 1480 turnbuckle to DIN 1480 that tensions rope or rod, with eye, hook or jaw ends. It is listed in sizes M6 to M42, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DIN 1480 Turnbuckle part numbers such as IH-LR-TB-D1480-M6?",
+          "a": "IH-LR-TB-D1480-M6 is the M6 size, Hook and eye, 2.25 kN WLL, IH-LR-TB-D1480-M22-SE the M22 size, Stub ends, 33.9 kN WLL and IH-LR-TB-D1480-M42-EE the M42 size, Eye and eye. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the DIN 1480 Turnbuckle cover?",
+          "a": "The DIN 1480 Turnbuckle is listed in M6 to M42, rated 1.53 to 91 kN. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range. End types in the table: Hook and eye, Body only, Hook and hook, Stub ends, Jaw and jaw and Cast, hook and hook."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of DIN 1480 Turnbuckle for my job?",
+          "a": "Choose the thread size from the working load in the DIN 1480 Turnbuckle table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the DIN 1480 Turnbuckle carry?",
+          "a": "The DIN 1480 Turnbuckle lists a working load limit and a minimum breaking load for each size, in kN. At M22 the table shows 33.9 kN working load limit against 135.6 kN minimum breaking load, so read the row for your size and end type. The working load limit is the most it may carry in service; [our guide to proof load testing](/blog/proof-load-testing-lifting-gear) covers how rated loads are proved."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 1480 Turnbuckle made from and how is it finished?",
+          "a": "The DIN 1480 Turnbuckle is made from steel. Ask on the RFQ if your specification needs the material grade or coating confirmed before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the DIN 1480 Turnbuckle come with a test certificate?",
+          "a": "The DIN 1480 Turnbuckle is listed as DIN 1480, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the DIN 1480 Turnbuckle?",
+          "a": "The DIN 1480 Turnbuckle connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should the DIN 1480 Turnbuckle be fitted and inspected?",
+          "a": "Fit the DIN 1480 Turnbuckle with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DIN 1480 Turnbuckle compare with the Stainless Steel DIN 1480 Turnbuckle?",
+          "a": "The nearest sibling is the [Stainless Steel DIN 1480 Turnbuckle](/p/stainless-steel-din-1480-turnbuckle), and the two differ on material, finish and size range. In detail, material is steel here and type 316 or 304 stainless steel turnbuckle there; finish is not stated here and polished there; size range is M6 to M42 here and M5 to M20 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the DIN 1480 Turnbuckle from Dubai?",
+          "a": "Yes. We ship DIN 1480 Turnbuckle from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 1480 Turnbuckle available from stock in Dubai?",
+          "a": "Yes. We keep DIN 1480 Turnbuckle in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "drop-forged-turnbuckle-us-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Drop Forged Turnbuckle — US Type and where is it used?",
+          "a": "The Drop Forged Turnbuckle — US Type is a drop-forged turnbuckle that tensions a line, with hook, eye or jaw ends rated separately. It is listed in sizes 1/4″ × 4″ to 2″-3/4″ × 24″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Drop Forged Turnbuckle — US Type part numbers such as IH-LR-TB-US-025X400?",
+          "a": "IH-LR-TB-US-025X400 is the 1/4″ × 4″ size, IH-LR-TB-US-100X1800 the 1″ × 18″ size and IH-LR-TB-US-200-075X2400 the 2″-3/4″ × 24″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Drop Forged Turnbuckle — US Type come in?",
+          "a": "The Drop Forged Turnbuckle — US Type is listed in 1/4″ × 4″ to 2″-3/4″ × 24″, rated 500 to 75,000 lbs. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Drop Forged Turnbuckle — US Type?",
+          "a": "Choose the thread size from the working load in the Drop Forged Turnbuckle — US Type table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Drop Forged Turnbuckle — US Type carry?",
+          "a": "The Drop Forged Turnbuckle — US Type lists a working load limit of 500 to 75,000 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Drop Forged Turnbuckle — US Type have?",
+          "a": "The Drop Forged Turnbuckle — US Type is made from drop-forged steel. Ask on the RFQ if your specification needs the material grade or coating confirmed before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Drop Forged Turnbuckle — US Type?",
+          "a": "The Drop Forged Turnbuckle — US Type ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ. For US-type rigging hardware the relevant background is in [our ASME B30.26 rigging hardware guide](/blog/asme-b30-26-rigging-hardware-explained)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Drop Forged Turnbuckle — US Type?",
+          "a": "The Drop Forged Turnbuckle — US Type connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Drop Forged Turnbuckle — US Type be fitted and inspected?",
+          "a": "Fit the Drop Forged Turnbuckle — US Type with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Drop Forged Turnbuckle — US Type compare with the Stainless Steel Drop Forged Turnbuckle — US Type?",
+          "a": "The nearest sibling is the [Stainless Steel Drop Forged Turnbuckle — US Type](/p/stainless-steel-drop-forged-turnbuckle-us-type), and the two differ on pattern and material. In detail, pattern is not stated here and US federal specification there; material is drop-forged steel here and stainless steel 304 or 316 turnbuckle there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Drop Forged Turnbuckle — US Type from Dubai?",
+          "a": "Yes. We ship Drop Forged Turnbuckle — US Type from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Drop Forged Turnbuckle — US Type for delivery from Dubai?",
+          "a": "Yes. We keep Drop Forged Turnbuckle — US Type in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "galvanized-rigging-screw-closed-body",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Galvanized Rigging Screw, Closed Body used for?",
+          "a": "The Galvanized Rigging Screw, Closed Body is a closed-body rigging screw that tensions a line, with eye, jaw or body-only options. It is listed in sizes M6 to M50, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Galvanized Rigging Screw, Closed Body part numbers such as IH-LR-TB-GRSCB-M6-EE?",
+          "a": "IH-LR-TB-GRSCB-M6-EE is the M6 size, Eye and eye, 0.2 t WLL, IH-LR-TB-GRSCB-M24-JE the M24 (24 mm) size, Jaw and eye, 2 t WLL and IH-LR-TB-GRSCB-M50-BO the M50 size, Body only, 10 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Galvanized Rigging Screw, Closed Body come in?",
+          "a": "Sizes on the Galvanized Rigging Screw, Closed Body run M6 to M50. The size table gives each one its own Indus part number and dimensions, and the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) lists the neighbouring products. End types in the table: Eye and eye, Jaw and eye and Body only."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Galvanized Rigging Screw, Closed Body for my job?",
+          "a": "Pick the size by rated load first, then the end fittings, and check the body length and overall length in the Galvanized Rigging Screw, Closed Body table against the room you have to tension in. See [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Galvanized Rigging Screw, Closed Body carry?",
+          "a": "The Galvanized Rigging Screw, Closed Body lists a working load limit of 0.1 to 11 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Galvanized Rigging Screw, Closed Body made from and how is it finished?",
+          "a": "The Galvanized Rigging Screw, Closed Body is made from cold-drawn seamless steel tube C1020 and offered with these finishes: hot-dip galvanized / electro-galvanized / self colour. Galvanized or plated finishes protect the steel outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Galvanized Rigging Screw, Closed Body?",
+          "a": "The Galvanized Rigging Screw, Closed Body ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Galvanized Rigging Screw, Closed Body?",
+          "a": "Connect the Galvanized Rigging Screw, Closed Body to [shackles](/c/shackles), [lifting hooks](/c/lifting-hooks) or [rigging pins](/c/rigging-pins) at the ends, and to rope through a terminal from the [sockets and terminals](/c/wire-rope-sockets-terminals). For a full cable-bracing build, see [our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Galvanized Rigging Screw, Closed Body?",
+          "a": "Set the Galvanized Rigging Screw, Closed Body with equal thread in both ends and turn the body to tension, keeping the pull in line with the fittings. Rigging hardware needs periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Galvanized Rigging Screw, Closed Body compare with the Rigging Screw, Jaw and Jaw?",
+          "a": "The nearest sibling is the [Rigging Screw, Jaw and Jaw](/p/rigging-screw-jaw-and-jaw), and the two differ on material and finish. In detail, material is cold-drawn seamless steel tube C1020 here and not stated there; finish is hot-dip galvanized / electro-galvanized / self colour here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Galvanized Rigging Screw, Closed Body from Dubai?",
+          "a": "Yes, Galvanized Rigging Screw, Closed Body goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Galvanized Rigging Screw, Closed Body available from stock in Dubai?",
+          "a": "Yes, we stock Galvanized Rigging Screw, Closed Body at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hamburger-lashing-turnbuckle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Hamburger Lashing Turnbuckle and where is it used?",
+          "a": "The Hamburger Lashing Turnbuckle is a lashing turnbuckle for lashing and securing loads. It is listed in sizes M24 × 400 mm to M38 × 480 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Hamburger Lashing Turnbuckle part numbers such as IH-LR-TB-HLT-M24X400MM?",
+          "a": "IH-LR-TB-HLT-M24X400MM is the M24 × 400 mm size, 13 t minimum breaking load, IH-LR-TB-HLT-M27X500MM-2 the M27 × 500 mm size, 25 t minimum breaking load and IH-LR-TB-HLT-M38X480MM-2 the M38 × 480 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Hamburger Lashing Turnbuckle come in?",
+          "a": "The Hamburger Lashing Turnbuckle is listed in M24 × 400 mm to M38 × 480 mm, rated 13 to 30 t. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Hamburger Lashing Turnbuckle?",
+          "a": "Choose the thread size from the working load in the Hamburger Lashing Turnbuckle table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Hamburger Lashing Turnbuckle?",
+          "a": "The Hamburger Lashing Turnbuckle lists a minimum breaking load of 13 to 30 t, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Hamburger Lashing Turnbuckle made from and how is it finished?",
+          "a": "The Hamburger Lashing Turnbuckle is made from mild steel and offered with these finishes: self coloured, electro-galvanized, hot dip galvanized. Galvanized or plated finishes protect the steel outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Hamburger Lashing Turnbuckle?",
+          "a": "The Hamburger Lashing Turnbuckle ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Hamburger Lashing Turnbuckle?",
+          "a": "The Hamburger Lashing Turnbuckle connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Hamburger Lashing Turnbuckle be fitted and inspected?",
+          "a": "Fit the Hamburger Lashing Turnbuckle with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hamburger Lashing Turnbuckle compare with the Turnbuckle — Italian Type?",
+          "a": "The nearest sibling is the [Turnbuckle — Italian Type](/p/turnbuckle-italian-type), and the two differ on pattern, finish and rating. In detail, pattern is not stated here and italian type there; finish is self coloured, electro-galvanized, hot dip galvanized here and zinc plated, hot-dip galvanized there; rating is minimum breaking load 13 to 30 t here and working load limit 50 to 19,800 kg there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Hamburger Lashing Turnbuckle outside the UAE?",
+          "a": "Yes. We ship Hamburger Lashing Turnbuckle from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Hamburger Lashing Turnbuckle available from stock in Dubai?",
+          "a": "Yes. We keep Hamburger Lashing Turnbuckle in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "jis-frame-turnbuckle-eye-and-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Frame Turnbuckle, Eye and Hook and where is it used?",
+          "a": "The JIS Frame Turnbuckle, Eye and Hook is a JIS frame turnbuckle (JIS frame type) that tensions a line between an eye and a hook. It is listed in sizes 6 mm to 24 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read JIS Frame Turnbuckle, Eye and Hook part numbers such as IH-LR-TB-JIS-6MM?",
+          "a": "IH-LR-TB-JIS-6MM is the 6 mm size, IH-LR-TB-JIS-16MM the 16 mm size and IH-LR-TB-JIS-24MM the 24 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the JIS Frame Turnbuckle, Eye and Hook come in?",
+          "a": "The JIS Frame Turnbuckle, Eye and Hook is listed in 6 mm to 24 mm. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of JIS Frame Turnbuckle, Eye and Hook for my job?",
+          "a": "Choose the thread size from the working load in the JIS Frame Turnbuckle, Eye and Hook table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the JIS Frame Turnbuckle, Eye and Hook carry?",
+          "a": "The listing for the JIS Frame Turnbuckle, Eye and Hook gives dimensions and weights but no working load limit, so we do not quote one. If it must carry a load, send the load on the RFQ and we confirm a rated option, for example from the drop-forged and DIN ranges on this shelf."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIS Frame Turnbuckle, Eye and Hook made from and how is it finished?",
+          "a": "The JIS Frame Turnbuckle, Eye and Hook is made from steel. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Does the JIS Frame Turnbuckle, Eye and Hook come with a test certificate?",
+          "a": "The JIS Frame Turnbuckle, Eye and Hook is listed as JIS frame type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the JIS Frame Turnbuckle, Eye and Hook?",
+          "a": "The JIS Frame Turnbuckle, Eye and Hook connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should the JIS Frame Turnbuckle, Eye and Hook be fitted and inspected?",
+          "a": "Fit the JIS Frame Turnbuckle, Eye and Hook with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Frame Turnbuckle, Eye and Hook compare with the Commercial Turnbuckle, Hook and Eye?",
+          "a": "The nearest sibling is the [Commercial Turnbuckle, Hook and Eye](/p/commercial-turnbuckle-hook-and-eye), and the two differ on pattern and material. In detail, pattern is JIS frame type here and not stated there; material is steel here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the JIS Frame Turnbuckle, Eye and Hook from Dubai?",
+          "a": "Yes. We ship JIS Frame Turnbuckle, Eye and Hook from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the JIS Frame Turnbuckle, Eye and Hook available from stock in Dubai?",
+          "a": "Yes. We keep JIS Frame Turnbuckle, Eye and Hook in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "rigging-screw-jaw-and-jaw",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Rigging Screw, Jaw and Jaw and where is it used?",
+          "a": "The Rigging Screw, Jaw and Jaw is a rigging screw that tensions a line between two jaw ends. It is listed in sizes M12 to M39, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Rigging Screw, Jaw and Jaw part numbers such as IH-LR-TB-RSJJ-M12?",
+          "a": "IH-LR-TB-RSJJ-M12 is the M12 size, IH-LR-TB-RSJJ-M24 the M24 size and IH-LR-TB-RSJJ-M39 the M39 size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Rigging Screw, Jaw and Jaw cover?",
+          "a": "The Rigging Screw, Jaw and Jaw is listed in M12 to M39. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Rigging Screw, Jaw and Jaw for my job?",
+          "a": "Choose the thread size from the working load in the Rigging Screw, Jaw and Jaw table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Rigging Screw, Jaw and Jaw?",
+          "a": "The listing for the Rigging Screw, Jaw and Jaw gives dimensions and weights but no working load limit, so we do not quote one. If it must carry a load, send the load on the RFQ and we confirm a rated option, for example from the drop-forged and DIN ranges on this shelf."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Rigging Screw, Jaw and Jaw have?",
+          "a": "The listing for the Rigging Screw, Jaw and Jaw does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Rigging Screw, Jaw and Jaw come with a test certificate?",
+          "a": "The Rigging Screw, Jaw and Jaw ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Rigging Screw, Jaw and Jaw?",
+          "a": "The Rigging Screw, Jaw and Jaw connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Rigging Screw, Jaw and Jaw?",
+          "a": "Fit the Rigging Screw, Jaw and Jaw with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Rigging Screw, Jaw and Jaw compare with the Stainless Steel Rigging Screw, Jaw and Jaw?",
+          "a": "The nearest sibling is the [Stainless Steel Rigging Screw, Jaw and Jaw](/p/stainless-steel-rigging-screw-jaw-and-jaw), and the two differ on material and size range. In detail, material is not stated here and stainless steel 304 or 316 there; size range is M12 to M39 here and 5 mm to 20 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Rigging Screw, Jaw and Jaw outside the UAE?",
+          "a": "Yes. We ship Rigging Screw, Jaw and Jaw from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Rigging Screw, Jaw and Jaw for delivery from Dubai?",
+          "a": "Yes. Rigging Screw, Jaw and Jaw sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-1480-turnbuckle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 1480 Turnbuckle used for?",
+          "a": "The Stainless Steel DIN 1480 Turnbuckle is a stainless DIN 1480 turnbuckle to DIN 1480 that tensions rope or rod where a stainless fitting is wanted. It is listed in sizes M5 to M20, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel DIN 1480 Turnbuckle part numbers such as IH-LR-TB-SSD1480T-M5-EE?",
+          "a": "IH-LR-TB-SSD1480T-M5-EE is the M5 size, Eye and eye, 170 kg WLL, IH-LR-TB-SSD1480T-M10-EH the M10 size, Eye and hook, 220 kg WLL and IH-LR-TB-SSD1480T-M20-HH the M20 size, Hook and hook, 900 kg WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel DIN 1480 Turnbuckle cover?",
+          "a": "Sizes on the Stainless Steel DIN 1480 Turnbuckle run M5 to M20. The size table gives each one its own Indus part number and dimensions, and the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) lists the neighbouring products. End types in the table: Eye and eye, Eye and hook and Hook and hook."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel DIN 1480 Turnbuckle?",
+          "a": "Pick the size by rated load first, then the end fittings, and check the body length and overall length in the Stainless Steel DIN 1480 Turnbuckle table against the room you have to tension in. See [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel DIN 1480 Turnbuckle?",
+          "a": "The Stainless Steel DIN 1480 Turnbuckle lists a working load limit of 40 to 2,750 kg, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel DIN 1480 Turnbuckle have?",
+          "a": "The Stainless Steel DIN 1480 Turnbuckle is made from type 316 or 304 stainless steel turnbuckle and finished polished. Stainless suits wet and corrosive sites; the listing gives 304 or 316 where stated, so confirm the grade on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel DIN 1480 Turnbuckle come with a test certificate?",
+          "a": "The Stainless Steel DIN 1480 Turnbuckle is listed as DIN 1480, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel DIN 1480 Turnbuckle?",
+          "a": "Connect the Stainless Steel DIN 1480 Turnbuckle to [shackles](/c/shackles), [lifting hooks](/c/lifting-hooks) or [rigging pins](/c/rigging-pins) at the ends, and to rope through a terminal from the [sockets and terminals](/c/wire-rope-sockets-terminals). For a full cable-bracing build, see [our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel DIN 1480 Turnbuckle?",
+          "a": "Set the Stainless Steel DIN 1480 Turnbuckle with equal thread in both ends and turn the body to tension, keeping the pull in line with the fittings. Rigging hardware needs periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel DIN 1480 Turnbuckle compare with the DIN 1480 Turnbuckle?",
+          "a": "The nearest sibling is the [DIN 1480 Turnbuckle](/p/din-1480-turnbuckle), and the two differ on material, finish and size range. In detail, material is type 316 or 304 stainless steel turnbuckle here and steel there; finish is polished here and not stated there; size range is M5 to M20 here and M6 to M42 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel DIN 1480 Turnbuckle outside the UAE?",
+          "a": "Yes, Stainless Steel DIN 1480 Turnbuckle goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel DIN 1480 Turnbuckle available from stock in Dubai?",
+          "a": "Yes, we stock Stainless Steel DIN 1480 Turnbuckle at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-drop-forged-turnbuckle-us-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Drop Forged Turnbuckle — US Type used for?",
+          "a": "The Stainless Steel Drop Forged Turnbuckle — US Type is a stainless drop-forged turnbuckle (US federal specification) that tensions a line, with eye, jaw or body-only options. It is listed in sizes 1/4″ × 4″ to 1-1/2″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Drop Forged Turnbuckle — US Type part numbers such as IH-LR-TB-SSDFTUS-025X400-EE?",
+          "a": "IH-LR-TB-SSDFTUS-025X400-EE is the 1/4″ × 4″ size, Eye and eye, 500 lb WLL, IH-LR-TB-SSDFTUS-125X2400-JE the 1-1/4″ × 24″ size, Jaw and eye, 15200 lb WLL and IH-LR-TB-SSDFTUS-150-BO the 1-1/2″ size, Body only, 17000 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Drop Forged Turnbuckle — US Type cover?",
+          "a": "The Stainless Steel Drop Forged Turnbuckle — US Type is listed in 1/4″ × 4″ to 1-1/2″, rated 500 to 75,000 lbs. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range. End types in the table: Eye and eye, Jaw and eye, Jaw and jaw and Body only."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Drop Forged Turnbuckle — US Type for my job?",
+          "a": "Choose the thread size from the working load in the Stainless Steel Drop Forged Turnbuckle — US Type table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Drop Forged Turnbuckle — US Type carry?",
+          "a": "The Stainless Steel Drop Forged Turnbuckle — US Type lists a working load limit of 500 to 75,000 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Drop Forged Turnbuckle — US Type made from and how is it finished?",
+          "a": "The Stainless Steel Drop Forged Turnbuckle — US Type is made from stainless steel 304 or 316 turnbuckle. Stainless suits wet and corrosive sites; the listing gives 304 or 316 where stated, so confirm the grade on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Drop Forged Turnbuckle — US Type come with a test certificate?",
+          "a": "The Stainless Steel Drop Forged Turnbuckle — US Type is listed as US federal specification, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ. For US-type rigging hardware the relevant background is in [our ASME B30.26 rigging hardware guide](/blog/asme-b30-26-rigging-hardware-explained)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Drop Forged Turnbuckle — US Type?",
+          "a": "The Stainless Steel Drop Forged Turnbuckle — US Type connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Drop Forged Turnbuckle — US Type be fitted and inspected?",
+          "a": "Fit the Stainless Steel Drop Forged Turnbuckle — US Type with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Drop Forged Turnbuckle — US Type compare with the Drop Forged Turnbuckle — US Type?",
+          "a": "The nearest sibling is the [Drop Forged Turnbuckle — US Type](/p/drop-forged-turnbuckle-us-type), and the two differ on pattern and material. In detail, pattern is US federal specification here and not stated there; material is stainless steel 304 or 316 turnbuckle here and drop-forged steel there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Drop Forged Turnbuckle — US Type from Dubai?",
+          "a": "Yes. We ship Stainless Steel Drop Forged Turnbuckle — US Type from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Drop Forged Turnbuckle — US Type available from stock in Dubai?",
+          "a": "Yes. We keep Stainless Steel Drop Forged Turnbuckle — US Type in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-rigging-screw-jaw-and-jaw",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Rigging Screw, Jaw and Jaw and where is it used?",
+          "a": "The Stainless Steel Rigging Screw, Jaw and Jaw is a stainless rigging screw that tensions a line between two jaw ends. It is listed in sizes 5 mm to 20 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Rigging Screw, Jaw and Jaw part numbers such as IH-LR-TB-SSJJ-5MM?",
+          "a": "IH-LR-TB-SSJJ-5MM is the 5 mm size, 550 lb WLL, IH-LR-TB-SSJJ-10MM the 10 mm size, 2350 lb WLL and IH-LR-TB-SSJJ-20MM the 20 mm size, 6870 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Rigging Screw, Jaw and Jaw cover?",
+          "a": "The Stainless Steel Rigging Screw, Jaw and Jaw is listed in 5 mm to 20 mm, rated 550 to 6,875 lbs. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Rigging Screw, Jaw and Jaw for my job?",
+          "a": "Choose the thread size from the working load in the Stainless Steel Rigging Screw, Jaw and Jaw table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Rigging Screw, Jaw and Jaw carry?",
+          "a": "The Stainless Steel Rigging Screw, Jaw and Jaw lists a working load limit of 550 to 6,875 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Rigging Screw, Jaw and Jaw made from and how is it finished?",
+          "a": "The Stainless Steel Rigging Screw, Jaw and Jaw is made from stainless steel 304 or 316. Stainless suits wet and corrosive sites; the listing gives 304 or 316 where stated, so confirm the grade on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Rigging Screw, Jaw and Jaw?",
+          "a": "The Stainless Steel Rigging Screw, Jaw and Jaw ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Rigging Screw, Jaw and Jaw?",
+          "a": "The Stainless Steel Rigging Screw, Jaw and Jaw connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Rigging Screw, Jaw and Jaw be fitted and inspected?",
+          "a": "Fit the Stainless Steel Rigging Screw, Jaw and Jaw with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Rigging Screw, Jaw and Jaw compare with the Rigging Screw, Jaw and Jaw?",
+          "a": "The nearest sibling is the [Rigging Screw, Jaw and Jaw](/p/rigging-screw-jaw-and-jaw), and the two differ on material and size range. In detail, material is stainless steel 304 or 316 here and not stated there; size range is 5 mm to 20 mm here and M12 to M39 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Rigging Screw, Jaw and Jaw from Dubai?",
+          "a": "Yes. We ship Stainless Steel Rigging Screw, Jaw and Jaw from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Rigging Screw, Jaw and Jaw available from stock in Dubai?",
+          "a": "Yes. Stainless Steel Rigging Screw, Jaw and Jaw sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-rigging-screw-swage-and-fork-ends",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Rigging Screw — Swage and Fork Ends and where is it used?",
+          "a": "The Stainless Steel Rigging Screw — Swage and Fork Ends is a stainless rigging screw (European type) that tensions rope through a swage terminal. It is listed in sizes M4 to M36, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Rigging Screw — Swage and Fork Ends part numbers such as IH-LR-TB-SSRSSFE-M4-JSS?",
+          "a": "IH-LR-TB-SSRSSFE-M4-JSS is the M4 size, Jaw and swage stud, 500 kg minimum breaking load and IH-LR-TB-SSRSSFE-M36-BO the M36 size, Body only, 43000 kg minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Rigging Screw — Swage and Fork Ends come in?",
+          "a": "Sizes on the Stainless Steel Rigging Screw — Swage and Fork Ends run M4 to M36. The size table gives each one its own Indus part number and dimensions, and the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) lists the neighbouring products. End types in the table: Jaw and swage stud, Swage stud and swage stud, Machined fork and fork, Machined fork and terminal, Toggle and swage stud and Toggle and toggle."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Rigging Screw — Swage and Fork Ends?",
+          "a": "Pick the size by rated load first, then the end fittings, and check the body length and overall length in the Stainless Steel Rigging Screw — Swage and Fork Ends table against the room you have to tension in. See [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Rigging Screw — Swage and Fork Ends carry?",
+          "a": "The Stainless Steel Rigging Screw — Swage and Fork Ends lists a minimum breaking load of 500 to 43,000 kg, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Rigging Screw — Swage and Fork Ends have?",
+          "a": "The Stainless Steel Rigging Screw — Swage and Fork Ends is made from AISI 316 stainless steel turnbuckle rigging screw and finished polished. Stainless suits wet and corrosive sites; the listing gives 304 or 316 where stated, so confirm the grade on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Rigging Screw — Swage and Fork Ends?",
+          "a": "The Stainless Steel Rigging Screw — Swage and Fork Ends is listed as European type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Rigging Screw — Swage and Fork Ends?",
+          "a": "Connect the Stainless Steel Rigging Screw — Swage and Fork Ends to [shackles](/c/shackles), [lifting hooks](/c/lifting-hooks) or [rigging pins](/c/rigging-pins) at the ends, and to rope through a terminal from the [sockets and terminals](/c/wire-rope-sockets-terminals). For a full cable-bracing build, see [our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Rigging Screw — Swage and Fork Ends?",
+          "a": "Set the Stainless Steel Rigging Screw — Swage and Fork Ends with equal thread in both ends and turn the body to tension, keeping the pull in line with the fittings. Rigging hardware needs periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Rigging Screw — Swage and Fork Ends compare with the Stainless Steel Rigging Screw, Jaw and Jaw?",
+          "a": "The nearest sibling is the [Stainless Steel Rigging Screw, Jaw and Jaw](/p/stainless-steel-rigging-screw-jaw-and-jaw), and the two differ on pattern, material and finish. In detail, pattern is european type here and not stated there; material is AISI 316 stainless steel turnbuckle rigging screw here and stainless steel 304 or 316 there; finish is polished here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Rigging Screw — Swage and Fork Ends outside the UAE?",
+          "a": "Yes, Stainless Steel Rigging Screw — Swage and Fork Ends goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Rigging Screw — Swage and Fork Ends available from stock in Dubai?",
+          "a": "Yes, we stock Stainless Steel Rigging Screw — Swage and Fork Ends at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-turnbuckle-european-commercial-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Turnbuckle — European Commercial Type used for?",
+          "a": "The Stainless Steel Turnbuckle — European Commercial Type is a stainless European commercial turnbuckle (European type) that tensions a line between eye, hook or jaw ends. It is listed in sizes M5 to M20, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Turnbuckle — European Commercial Type part numbers such as IH-LR-TB-SSTEC-M5-EE?",
+          "a": "IH-LR-TB-SSTEC-M5-EE is the M5 size, Eye and eye, 170 kg WLL, IH-LR-TB-SSTEC-M5-HH the M5 size, Hook and hook, 40 kg WLL and IH-LR-TB-SSTEC-M20-JJ the M20 size, Jaw and jaw, 2620 kg WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Turnbuckle — European Commercial Type come in?",
+          "a": "Sizes on the Stainless Steel Turnbuckle — European Commercial Type run M5 to M20. The size table gives each one its own Indus part number and dimensions, and the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) lists the neighbouring products. End types in the table: Eye and eye, Hook and eye, Hook and hook and Jaw and jaw."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Turnbuckle — European Commercial Type?",
+          "a": "Pick the size by rated load first, then the end fittings, and check the body length and overall length in the Stainless Steel Turnbuckle — European Commercial Type table against the room you have to tension in. See [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Turnbuckle — European Commercial Type?",
+          "a": "The Stainless Steel Turnbuckle — European Commercial Type lists a working load limit of 40 to 2,750 kg, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Turnbuckle — European Commercial Type made from and how is it finished?",
+          "a": "The Stainless Steel Turnbuckle — European Commercial Type is made from stainless steel 316 or stainless steel 304 and finished polished. Stainless suits wet and corrosive sites; the listing gives 304 or 316 where stated, so confirm the grade on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Turnbuckle — European Commercial Type come with a test certificate?",
+          "a": "The Stainless Steel Turnbuckle — European Commercial Type is listed as European type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Turnbuckle — European Commercial Type?",
+          "a": "Connect the Stainless Steel Turnbuckle — European Commercial Type to [shackles](/c/shackles), [lifting hooks](/c/lifting-hooks) or [rigging pins](/c/rigging-pins) at the ends, and to rope through a terminal from the [sockets and terminals](/c/wire-rope-sockets-terminals). For a full cable-bracing build, see [our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Turnbuckle — European Commercial Type be fitted and inspected?",
+          "a": "Set the Stainless Steel Turnbuckle — European Commercial Type with equal thread in both ends and turn the body to tension, keeping the pull in line with the fittings. Rigging hardware needs periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Turnbuckle — European Commercial Type compare with the Stainless Steel Turnbuckle — US Type?",
+          "a": "The nearest sibling is the [Stainless Steel Turnbuckle — US Type](/p/stainless-steel-turnbuckle-us-type), and the two differ on pattern, material and size range. In detail, pattern is european type here and ASTM F1145, type 1 there; material is stainless steel 316 or stainless steel 304 here and stainless steel (AISI 304/AISI 316) there; size range is M5 to M20 here and 1/4″ to 1-1/2″ there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Turnbuckle — European Commercial Type from Dubai?",
+          "a": "Yes, Stainless Steel Turnbuckle — European Commercial Type goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Turnbuckle — European Commercial Type for delivery from Dubai?",
+          "a": "Yes, we stock Stainless Steel Turnbuckle — European Commercial Type at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-turnbuckle-korean-type-eye-and-eye",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Turnbuckle — Korean Type, Eye and Eye used for?",
+          "a": "The Stainless Steel Turnbuckle — Korean Type, Eye and Eye is a stainless Korean-type turnbuckle (Korean standard) that tensions a line between two eyes. It is listed in sizes 3/16″ to 1″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Turnbuckle — Korean Type, Eye and Eye part numbers such as IH-LR-TB-SSTKEE-019?",
+          "a": "IH-LR-TB-SSTKEE-019 is the 3/16″ size, IH-LR-TB-SSTKEE-050 the 1/2″ size and IH-LR-TB-SSTKEE-100 the 1″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Turnbuckle — Korean Type, Eye and Eye come in?",
+          "a": "Sizes on the Stainless Steel Turnbuckle — Korean Type, Eye and Eye run 3/16″ to 1″. The size table gives each one its own Indus part number and dimensions, and the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Turnbuckle — Korean Type, Eye and Eye?",
+          "a": "Pick the size by rated load first, then the end fittings, and check the body length and overall length in the Stainless Steel Turnbuckle — Korean Type, Eye and Eye table against the room you have to tension in. See [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Turnbuckle — Korean Type, Eye and Eye?",
+          "a": "No load rating is published on the Stainless Steel Turnbuckle — Korean Type, Eye and Eye listing, only dimensions and weights, so none is stated here. Tell us the load and application on the RFQ and we confirm a rated turnbuckle before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Turnbuckle — Korean Type, Eye and Eye made from and how is it finished?",
+          "a": "The Stainless Steel Turnbuckle — Korean Type, Eye and Eye is made from type 316 or type 304 stainless steel and finished polished. Stainless suits wet and corrosive sites; the listing gives 304 or 316 where stated, so confirm the grade on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Turnbuckle — Korean Type, Eye and Eye?",
+          "a": "The listing names Korean standard for the Stainless Steel Turnbuckle — Korean Type, Eye and Eye but states no certificate. If your site needs a test certificate or third-party inspection, say so on the RFQ and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Turnbuckle — Korean Type, Eye and Eye?",
+          "a": "Connect the Stainless Steel Turnbuckle — Korean Type, Eye and Eye to [shackles](/c/shackles), [lifting hooks](/c/lifting-hooks) or [rigging pins](/c/rigging-pins) at the ends, and to rope through a terminal from the [sockets and terminals](/c/wire-rope-sockets-terminals). For a full cable-bracing build, see [our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Turnbuckle — Korean Type, Eye and Eye be fitted and inspected?",
+          "a": "Set the Stainless Steel Turnbuckle — Korean Type, Eye and Eye with equal thread in both ends and turn the body to tension, keeping the pull in line with the fittings. Rigging hardware needs periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Turnbuckle — Korean Type, Eye and Eye compare with the Stainless Steel Turnbuckle — US Type?",
+          "a": "The nearest sibling is the [Stainless Steel Turnbuckle — US Type](/p/stainless-steel-turnbuckle-us-type), and the two differ on pattern, material and size range. In detail, pattern is korean standard here and ASTM F1145, type 1 there; material is type 316 or type 304 stainless steel here and stainless steel (AISI 304/AISI 316) there; size range is 3/16″ to 1″ here and 1/4″ to 1-1/2″ there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Turnbuckle — Korean Type, Eye and Eye outside the UAE?",
+          "a": "Yes, Stainless Steel Turnbuckle — Korean Type, Eye and Eye goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Turnbuckle — Korean Type, Eye and Eye available from stock in Dubai?",
+          "a": "Yes, Stainless Steel Turnbuckle — Korean Type, Eye and Eye is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-turnbuckle-us-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Turnbuckle — US Type and where is it used?",
+          "a": "The Stainless Steel Turnbuckle — US Type is a stainless US-type turnbuckle (ASTM F1145, type 1) that tensions a line, with eye, hook or jaw ends. It is listed in sizes 1/4″ to 1-1/2″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Turnbuckle — US Type part numbers such as IH-LR-TB-SSTUS-025-EE?",
+          "a": "IH-LR-TB-SSTUS-025-EE is the 1/4″ size, Eye and eye, IH-LR-TB-SSTUS-062-JE the 5/8″ size, Jaw and eye and IH-LR-TB-SSTUS-150-BO the 1-1/2″ size, Body only. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Turnbuckle — US Type cover?",
+          "a": "The Stainless Steel Turnbuckle — US Type is listed in 1/4″ to 1-1/2″. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range. End types in the table: Eye and eye, Hook and eye, Hook and hook, Jaw and eye, Jaw and jaw and Body only."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Turnbuckle — US Type?",
+          "a": "Choose the thread size from the working load in the Stainless Steel Turnbuckle — US Type table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Turnbuckle — US Type carry?",
+          "a": "The listing for the Stainless Steel Turnbuckle — US Type gives dimensions and weights but no working load limit, so we do not quote one. If it must carry a load, send the load on the RFQ and we confirm a rated option, for example from the drop-forged and DIN ranges on this shelf."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Turnbuckle — US Type made from and how is it finished?",
+          "a": "The Stainless Steel Turnbuckle — US Type is made from stainless steel (AISI 304/AISI 316) and finished polished. Stainless suits wet and corrosive sites; the listing gives 304 or 316 where stated, so confirm the grade on your RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Turnbuckle — US Type?",
+          "a": "The listing names ASTM F1145, type 1 for the Stainless Steel Turnbuckle — US Type but states no certificate. If your site needs a test certificate or third-party inspection, say so on the RFQ and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Turnbuckle — US Type?",
+          "a": "The Stainless Steel Turnbuckle — US Type connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Turnbuckle — US Type?",
+          "a": "Fit the Stainless Steel Turnbuckle — US Type with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Turnbuckle — US Type compare with the Stainless Steel Drop Forged Turnbuckle — US Type?",
+          "a": "The nearest sibling is the [Stainless Steel Drop Forged Turnbuckle — US Type](/p/stainless-steel-drop-forged-turnbuckle-us-type), and the two differ on pattern, material and finish. In detail, pattern is ASTM F1145, type 1 here and US federal specification there; material is stainless steel (AISI 304/AISI 316) here and stainless steel 304 or 316 turnbuckle there; finish is polished here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Turnbuckle — US Type from Dubai?",
+          "a": "Yes. We ship Stainless Steel Turnbuckle — US Type from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Turnbuckle — US Type for delivery from Dubai?",
+          "a": "Yes. Stainless Steel Turnbuckle — US Type sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "turnbuckle-italian-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Turnbuckle — Italian Type and where is it used?",
+          "a": "The Turnbuckle — Italian Type is a Italian-type turnbuckle (Italian type) that tensions a line, with eye or hook ends. It is listed in sizes M5 to M52, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Turnbuckle — Italian Type part numbers such as IH-LR-TB-IT-M5-EE?",
+          "a": "IH-LR-TB-IT-M5-EE is the M5 size, Eye and eye, 140 kg WLL, IH-LR-TB-IT-M14-EH the M14 size, Eye and hook, 420 kg WLL and IH-LR-TB-IT-M39-HH the M39 size, Hook and hook, 4150 kg WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Turnbuckle — Italian Type cover?",
+          "a": "The Turnbuckle — Italian Type is listed in M5 to M52, rated 50 to 19,800 kg. Every size has its own Indus part number with dimensions in the size table; the [turnbuckles & rigging screws shelf](/c/turnbuckles-rigging-screws) shows the rest of the range. End types in the table: Eye and eye, Eye and hook and Hook and hook."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Turnbuckle — Italian Type?",
+          "a": "Choose the thread size from the working load in the Turnbuckle — Italian Type table, then the end type (eye, hook or jaw) from the fittings it connects to, and check the take-up in the table. [Our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Turnbuckle — Italian Type?",
+          "a": "The Turnbuckle — Italian Type lists a working load limit of 50 to 19,800 kg, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Turnbuckle — Italian Type made from and how is it finished?",
+          "a": "The Turnbuckle — Italian Type is made from mild steel and offered with these finishes: zinc plated, hot-dip galvanized. Galvanized or plated finishes protect the steel outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Turnbuckle — Italian Type?",
+          "a": "The Turnbuckle — Italian Type is listed as Italian type, and the manufacturer's test certificate comes with each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Turnbuckle — Italian Type?",
+          "a": "The Turnbuckle — Italian Type connects to [shackles](/c/shackles), [rigging pins](/c/rigging-pins) or [eye bolts and eye nuts](/c/eye-bolts-eye-nuts) at its eye or jaw ends, and to [steel wire rope](/c/steel-wire-rope) through [sockets and terminals](/c/wire-rope-sockets-terminals). [Our guide to turnbuckles for guy wires and cable bracing](/blog/turnbuckles-for-guy-wires-and-cable-bracing) shows the whole assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Turnbuckle — Italian Type?",
+          "a": "Fit the Turnbuckle — Italian Type with the thread engaged equally in both ends, tension by turning the body and keep the load in line; [our guide to choosing and tensioning a turnbuckle](/blog/how-to-choose-and-tension-a-turnbuckle) walks through the tensioning. Inspect for bent, stretched or corroded parts and replace damaged ones."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Turnbuckle — Italian Type compare with the DIN 1480 Turnbuckle?",
+          "a": "The nearest sibling is the [DIN 1480 Turnbuckle](/p/din-1480-turnbuckle), and the two differ on pattern, material and finish. In detail, pattern is italian type here and DIN 1480 there; material is mild steel here and steel there; finish is zinc plated, hot-dip galvanized here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Turnbuckle — Italian Type from Dubai?",
+          "a": "Yes. We ship Turnbuckle — Italian Type from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Turnbuckle — Italian Type available from stock in Dubai?",
+          "a": "Yes. Turnbuckle — Italian Type sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

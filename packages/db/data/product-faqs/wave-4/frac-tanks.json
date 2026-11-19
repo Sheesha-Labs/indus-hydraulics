@@ -1,0 +1,76 @@
+{
+  "family": "frac-tanks",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-tank-500-bbl-insulated-trailer-mounted-road-registered",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 500 BBL insulated frac tank used for?",
+          "a": "A frac tank stores fracturing fluid and water at the well site. This 500 BBL tank has an insulated shell, internal baffling, top and side manholes, a vent, and fill and drain lines, on a road-registered custom trailer."
+        },
+        {
+          "slot": "D",
+          "q": "What volumes does the 500 BBL insulated frac tank range come in?",
+          "a": "Volumes of 100 to 1,000 BBL are standard, and custom volumes are available on request. This listing is the 500 BBL size. State the volume on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "Why is the 500 BBL insulated frac tank insulated?",
+          "a": "The insulated shell reduces heat gain and loss in the stored fluid, which helps keep fluid temperature stable. An optional heating coil and recirculation manifold can be added."
+        },
+        {
+          "slot": "F",
+          "q": "What lining does the 500 BBL insulated frac tank use?",
+          "a": "Wetted parts are lined or unlined depending on fluid chemistry. State the fluid, additives and temperature on the RFQ so the lining is chosen."
+        },
+        {
+          "slot": "G",
+          "q": "How is the 500 BBL insulated frac tank mounted and registered?",
+          "a": "It is on a custom trailer with country-of-registration documentation, and an ISO-frame skid variant is available for global container shipping."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 500 BBL insulated frac tank connect to?",
+          "a": "It supplies the [hydration unit](/p/frac-hydration-unit-200-bbl-12-12-centrifugal-90-bbl-min-ss316-tote-tanks) and the [frac transfer pumps](/p/frac-transfer-pump-centrifugal-12-12-300-hp-diesel-hydraulic-drive-skid-mounted) through its fill, recirculation and drain lines, with a vent and top and side manholes on the tank. See [frac tanks](/c/frac-tanks)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 500 BBL insulated frac tank differ from a sand silo?",
+          "a": "The frac tank stores liquid with insulation and baffling, while the [sand silo](/p/frac-sand-silo-sand-chief-vertical-round-hydraulic-tilt-200-t-capacity-knife-gate-discharge) stores dry proppant and tilts for chute delivery. A frac site needs both."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 500 BBL insulated frac tank used?",
+          "a": "It is used on hydraulic fracturing sites to store water and fracturing fluid. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac tank quotation?",
+          "a": "Send the volume, the fluid and its temperature, the lining requirement, heating and recirculation options, and the registration country or ISO-skid need."
+        },
+        {
+          "slot": "L",
+          "q": "What are the standard dimensions of the 500 BBL insulated frac tank?",
+          "a": "The listing gives no fixed external dimensions because the tank is built on a custom trailer and the design varies with insulation and options. Send the road limits of your site and we confirm the trailer dimensions with the quotation."
+        },
+        {
+          "slot": "I",
+          "q": "Can the frac tank be heated?",
+          "a": "Yes. An optional heating coil and recirculation manifold are available on the insulated tank. State the fluid temperature you must hold on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 500 BBL insulated frac tank?",
+          "a": "Yes. We list the 500 BBL insulated frac tank as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

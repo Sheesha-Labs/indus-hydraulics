@@ -1,0 +1,880 @@
+{
+  "family": "reusable-hose-ends-02",
+  "extraFacts": [
+    {
+      "fact": "NPSM is a straight (parallel) American pipe thread under ASME B1.20.1, so it does not seal on the thread the way NPT does.",
+      "source": "ASME B1.20.1"
+    },
+    {
+      "fact": "Inverted flare ends follow SAE J512, a 45° flare connection.",
+      "source": "SAE J512"
+    },
+    {
+      "fact": "JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat.",
+      "source": "SAE J514"
+    },
+    {
+      "fact": "NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread.",
+      "source": "SAE J476"
+    },
+    {
+      "fact": "NPT is the American tapered pipe thread of ASME B1.20.1, which seals on the thread.",
+      "source": "ASME B1.20.1"
+    },
+    {
+      "fact": "JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat.",
+      "source": "SAE J514; ISO 8434-2"
+    },
+    {
+      "fact": "NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread.",
+      "source": "SAE J476"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-reusable-female-swivel-stems",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Reusable Female Swivel Stems and what is it used for?",
+          "a": "The Dixon Reusable Female Swivel Stems are a reusable or field-attachable hose fitting from Dixon Valve & Coupling in brass with NPSM ends. It is listed in 5 part numbers, such as 1840406A and 1840604A, and the Sizes & Part Numbers tab gives the connections for each number. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the part numbers of the Dixon Reusable Female Swivel Stems?",
+          "a": "The Dixon Reusable Female Swivel Stems are listed under 5 part numbers. For example 1840406A (Swivel Stem, 1/4 Inch Hose I.D. x 3/8-18 Inch FNPSM, Brass, Reusable), 1840604A (Reusable Female Stem, 3/8 Inch Hose I.D. x 1/4 Inch-18 NPSM, Brass) and 1840504A (Reusable Female Stem, 5/16 Inch Hose I.D. x 1/4 Inch-18 NPSM, Brass). The Sizes & Part Numbers tab shows every number with its connections; quote the full number when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Which hose goes with the Dixon Reusable Female Swivel Stems?",
+          "a": "A Dixon Valve & Coupling fitting is rated only on the hose it is designed for, and the listing for the Dixon Reusable Female Swivel Stems does not name a hose series. Quote the hose type and size with the part number and we will check the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Dixon Reusable Female Swivel Stems come in?",
+          "a": "The Dixon Reusable Female Swivel Stems are listed for sizes 1/4\" to 3/8\", across 5 part numbers. Match the size on the row to your hose or port; the size table shows both ends for every part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which end connections does the Dixon Reusable Female Swivel Stems have?",
+          "a": "The ends listed on the Dixon Reusable Female Swivel Stems are NPSM. Each part number pairs one hose or port size with its connection, so check the row before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Dixon Reusable Female Swivel Stems rated for?",
+          "a": "The maker states 250 psi (17 bar) for the Dixon Reusable Female Swivel Stems. Use the figure on the row for the size you order, because ratings vary by size and the lowest-rated part in an assembly governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon Reusable Female Swivel Stems made from?",
+          "a": "The Dixon Reusable Female Swivel Stems are listed in brass. The listing gives no plating or finish detail. Ask us if the fluid or the environment needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard does the Dixon Reusable Female Swivel Stems use?",
+          "a": "The Dixon Reusable Female Swivel Stems have an NPSM straight pipe thread end. NPSM is a straight (parallel) American pipe thread under ASME B1.20.1, so it does not seal on the thread the way NPT does. Match the end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Reusable Female Swivel Stems connect to?",
+          "a": "The Dixon Reusable Female Swivel Stems fix to the hose at one end and connects to the thread described in the size table at the other. Check the thread and seat against your port, because ends that look alike do not seal together; see the [thread reference board guide](/blog/building-a-thread-reference-board)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Dixon Reusable Female Swivel Stems be fitted without a crimping machine?",
+          "a": "Reusable and field-attachable fittings such as the Dixon Reusable Female Swivel Stems are made to be fitted to hose without a crimp machine and reused when the hose is replaced. Read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to choose between them, or send us the hose and lengths for a tested assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Reusable Female Swivel Stems differ from the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings?",
+          "a": "The Dixon Reusable Female Swivel Stems and the [Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings](/p/aeroquip-reusable-female-jic-swivel-hydraulic-hose-fittings) are two listings in the same range. They differ in brand Dixon Valve & Coupling here against Eaton Aeroquip; material Brass here against Carbon Steel; ends NPSM here against JIC (female), Universal (female) and Inverted Flare (female). Choose by the thread on your port and the hose, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Reusable Female Swivel Stems in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Dixon Reusable Female Swivel Stems are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-reusable-female-jic-swivel-hydraulic-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings and what is it used for?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are a reusable or field-attachable hose fitting from Eaton Aeroquip in carbon steel with JIC (female), Universal (female), Inverted Flare (female) and SAE 45º Flare (female) ends. It is listed in 11 part numbers, such as 190296-4S and 4411-10S, and the Sizes & Part Numbers tab gives the connections for each number. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the part numbers of the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are listed under 11 part numbers. For example 190296-4S (Elbow, 90 Deg., 7/16 Inch x 1/4 Inch Size, JIC x Hose), 4411-10S (Hose Fitting Hydraulic JIC Straight 7/8-14) and 4411-12S (Hydraulic Hose Fitting, 1-1/16 Inch x 3/4 Inch Size, JIC x Hose). The Sizes & Part Numbers tab shows every number with its connections; quote the full number when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Which hoses does the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings fit?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are listed for these hose series: 302A, 303, 1503, 2580, 2651, FC234, FC300, FC321, FC350, FC355. A fitting is rated only with the hose it is designed for, so quote the hose you have and we will confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings come in?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are listed in 11 part numbers with sizes from 1/16 Inch to 3/4 Inch in the item text. The size table shows the connections for each number."
+        },
+        {
+          "slot": "D",
+          "q": "Which end connections does the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings have?",
+          "a": "The ends listed on the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are JIC (female), Universal (female), Inverted Flare (female) and SAE 45º Flare (female). Each part number pairs one hose or port size with its connection, so check the row before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings rated for?",
+          "a": "The maker states 1,500 to 3,000 psi (103 to 207 bar), by size for the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings. Use the figure on the row for the size you order, because ratings vary by size and the lowest-rated part in an assembly governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings made from?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are listed in carbon steel, finished trivalent chromate zinc. Ask us if the fluid or the environment needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard does the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings use?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings have an SAE inverted flare end and a JIC 37° flare end. Inverted flare ends follow SAE J512, a 45° flare connection. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match the end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings connect to?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings fix to the hose at one end and connects to the thread described in the size table at the other. Check the thread and seat against your port, because ends that look alike do not seal together; see the [thread reference board guide](/blog/building-a-thread-reference-board)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings be fitted without a crimping machine?",
+          "a": "Reusable and field-attachable fittings such as the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are made to be fitted to hose without a crimp machine and reused when the hose is replaced. Read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to choose between them, or send us the hose and lengths for a tested assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings differ from the Aeroquip Reusable Hydraulic Hose Fittings?",
+          "a": "The Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings and the [Aeroquip Reusable Hydraulic Hose Fittings](/p/aeroquip-reusable-hydraulic-hose-fittings) are two listings in the same range. They differ in shape 90° Elbow here against Straight; ends JIC (female), Universal (female) and Inverted Flare (female) here against SAE (female) and NPTF (male). Choose by the thread on your port and the hose, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings in Dubai for export?",
+          "a": "Yes, the Aeroquip Reusable Female JIC Swivel Hydraulic Hose Fittings are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-reusable-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Reusable Hose Fittings and what is it used for?",
+          "a": "The Aeroquip Reusable Hose Fittings are a reusable or field-attachable hose fitting from Eaton Aeroquip in brass, brass and carbon steel, carbon steel with SAE 45 (female) and SAE 45 (male) ends. It is listed in 23 part numbers, such as 63-190990-6 and 4411-6-8S, and the Sizes & Part Numbers tab gives the connections for each number. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the part numbers of the Aeroquip Reusable Hose Fittings?",
+          "a": "The Aeroquip Reusable Hose Fittings are listed under 23 part numbers. For example 63-190990-6 (Hydraulic Hose Fitting, 3/4 Inch x 3/8 Inch Size, NPTF x Hose), 4411-6-8S (Hydraulic Hose Fitting, 9/16 Inch x 1/2 Inch Size, JIC x Hose) and 63-190990-10 (Hydraulic Hose Fitting, 7/8 Inch x 1/2 Inch Size, Inverted Flare x Hose). The Sizes & Part Numbers tab shows every number with its connections; quote the full number when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Which hoses does the Aeroquip Reusable Hose Fittings fit?",
+          "a": "The Aeroquip Reusable Hose Fittings are listed for these hose series: 2807 Series, FC465 Series, S-TW Series. A fitting is rated only with the hose it is designed for, so quote the hose you have and we will confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aeroquip Reusable Hose Fittings come in?",
+          "a": "The Aeroquip Reusable Hose Fittings are listed in 23 part numbers with sizes from 1/16 Inch to 7/8 Inch in the item text. The size table shows the connections for each number."
+        },
+        {
+          "slot": "D",
+          "q": "Which end connections does the Aeroquip Reusable Hose Fittings have?",
+          "a": "The ends listed on the Aeroquip Reusable Hose Fittings are SAE 45 (female) and SAE 45 (male). Each part number pairs one hose or port size with its connection, so check the row before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Aeroquip Reusable Hose Fittings rated for?",
+          "a": "The listing for the Aeroquip Reusable Hose Fittings gives no pressure rating, so we do not quote one. Tell us the hose and the working pressure and we will confirm the fitting before you order, because the assembly is rated to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Reusable Hose Fittings made from?",
+          "a": "The Aeroquip Reusable Hose Fittings are listed in brass, brass and carbon steel, carbon steel, finished brass, trivalent chromate zinc. Ask us if the fluid or the environment needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard does the Aeroquip Reusable Hose Fittings use?",
+          "a": "The Aeroquip Reusable Hose Fittings have an SAE inverted flare end and a JIC 37° flare end. Inverted flare ends follow SAE J512, a 45° flare connection. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match the end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip Reusable Hose Fittings connect to?",
+          "a": "The Aeroquip Reusable Hose Fittings fix to the hose at one end and connects to the thread described in the size table at the other. Check the thread and seat against your port, because ends that look alike do not seal together; see the [thread reference board guide](/blog/building-a-thread-reference-board)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Aeroquip Reusable Hose Fittings be fitted without a crimping machine?",
+          "a": "Reusable and field-attachable fittings such as the Aeroquip Reusable Hose Fittings are made to be fitted to hose without a crimp machine and reused when the hose is replaced. Read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to choose between them, or send us the hose and lengths for a tested assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Reusable Hose Fittings differ from the Aeroquip Reusable Hydraulic Hose Fittings?",
+          "a": "The Aeroquip Reusable Hose Fittings and the [Aeroquip Reusable Hydraulic Hose Fittings](/p/aeroquip-reusable-hydraulic-hose-fittings) are two listings in the same range. They differ in material Brass, Brass And Carbon Steel, Carbon Steel here against Carbon Steel; ends SAE (female) and SAE (male) here against SAE (female) and NPTF (male). Choose by the thread on your port and the hose, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Aeroquip Reusable Hose Fittings in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Aeroquip Reusable Hose Fittings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-reusable-hydraulic-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Reusable Hydraulic Hose Fittings and what is it used for?",
+          "a": "The Aeroquip Reusable Hydraulic Hose Fittings are a reusable or field-attachable hose fitting from Eaton Aeroquip in carbon steel with SAE 37 (female) and NPTF (male) ends. It is listed in 8 part numbers, such as 411-32S and 4411-24S, and the Sizes & Part Numbers tab gives the connections for each number. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the part numbers of the Aeroquip Reusable Hydraulic Hose Fittings?",
+          "a": "The Aeroquip Reusable Hydraulic Hose Fittings are listed under 8 part numbers. For example 411-32S (Hydraulic Hose Fitting, -32 For Hose Dash Size, 2 Inch Fitting Size), 4411-24S (Hydraulic Hose Fitting, -24 For Hose Dash Size, 1 1/2 Inch Fitting Size) and 411-20S (Hydraulic Hose Fitting, -20 For Hose Dash Size, 1 1/4 Inch Fitting Size). The Sizes & Part Numbers tab shows every number with its connections; quote the full number when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Which hose goes with the Aeroquip Reusable Hydraulic Hose Fittings?",
+          "a": "A Eaton Aeroquip fitting is rated only on the hose it is designed for, and the listing for the Aeroquip Reusable Hydraulic Hose Fittings does not name a hose series. Quote the hose type and size with the part number and we will check the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aeroquip Reusable Hydraulic Hose Fittings come in?",
+          "a": "The Aeroquip Reusable Hydraulic Hose Fittings are listed for sizes 1 1/4\" to 2 1/2\", across 8 part numbers. Match the size on the row to your hose or port; the size table shows both ends for every part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which end connections does the Aeroquip Reusable Hydraulic Hose Fittings have?",
+          "a": "The ends listed on the Aeroquip Reusable Hydraulic Hose Fittings are SAE 37 (female) and NPTF (male). Each part number pairs one hose or port size with its connection, so check the row before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Aeroquip Reusable Hydraulic Hose Fittings rated for?",
+          "a": "The size table gives a pressure per row for the Aeroquip Reusable Hydraulic Hose Fittings, for example 21 bar for 411-32S, 34 bar for 4411-24S and 43 bar for 411-20S. Use the figure on the row for your size; the lowest-rated part in the assembly governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Reusable Hydraulic Hose Fittings made from?",
+          "a": "The Aeroquip Reusable Hydraulic Hose Fittings are listed in carbon steel, finished dura kote. Ask us if the fluid or the environment needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard does the Aeroquip Reusable Hydraulic Hose Fittings use?",
+          "a": "The Aeroquip Reusable Hydraulic Hose Fittings have a JIC 37° flare end and an NPTF tapered pipe thread end. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread. Match the end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip Reusable Hydraulic Hose Fittings connect to?",
+          "a": "The Aeroquip Reusable Hydraulic Hose Fittings fix to the hose at one end and connects to the thread described in the size table at the other. Check the thread and seat against your port, because ends that look alike do not seal together; see the [thread reference board guide](/blog/building-a-thread-reference-board)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Aeroquip Reusable Hydraulic Hose Fittings be fitted without a crimping machine?",
+          "a": "Reusable and field-attachable fittings such as the Aeroquip Reusable Hydraulic Hose Fittings are made to be fitted to hose without a crimp machine and reused when the hose is replaced. Read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to choose between them, or send us the hose and lengths for a tested assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Reusable Hydraulic Hose Fittings differ from the Aeroquip Reusable Hose Fittings?",
+          "a": "The Aeroquip Reusable Hydraulic Hose Fittings and the [Aeroquip Reusable Hose Fittings](/p/aeroquip-reusable-hose-fittings) are two listings in the same range. They differ in material Carbon Steel here against Brass, Brass And Carbon Steel, Carbon Steel; ends SAE (female) and NPTF (male) here against SAE (female) and SAE (male). Choose by the thread on your port and the hose, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Aeroquip Reusable Hydraulic Hose Fittings from stock in the UAE and get a quotation?",
+          "a": "Yes. The Aeroquip Reusable Hydraulic Hose Fittings sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-reusable-male-npt-hydraulic-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Reusable Male NPT Hydraulic Hose Fittings and what is it used for?",
+          "a": "The Aeroquip Reusable Male NPT Hydraulic Hose Fittings are a reusable or field-attachable hose fitting from Eaton Aeroquip in steel with NPTF (male) and NPTF (female) ends. It is listed in 11 part numbers, such as 4412-2-4S and 4412-6-8S, and the Sizes & Part Numbers tab gives the connections for each number. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Eaton Aeroquip part number 4412-2-4S on the Aeroquip Reusable Male NPT Hydraulic Hose Fittings?",
+          "a": "In 4412-2-4S, 4412 is the style and series code and the two numbers after it are sizes in sixteenths of an inch. The size table gives 4412-2-4S as: Hydraulic Hose Fitting, 1/8 Inch x 1/4 Inch Size, NPTF x Hose. Other numbers follow the same pattern, for example 4412-6-8S and 412-16-16s."
+        },
+        {
+          "slot": "J",
+          "q": "Which hoses does the Aeroquip Reusable Male NPT Hydraulic Hose Fittings fit?",
+          "a": "The Aeroquip Reusable Male NPT Hydraulic Hose Fittings are listed for these hose series: 1503, 2580, 2651, FC234, FC300, FC321, FC350, FC355, FC802. A fitting is rated only with the hose it is designed for, so quote the hose you have and we will confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aeroquip Reusable Male NPT Hydraulic Hose Fittings come in?",
+          "a": "The Aeroquip Reusable Male NPT Hydraulic Hose Fittings are listed for sizes 1/8\" to 1\", across 11 part numbers. Match the size on the row to your hose or port; the size table shows both ends for every part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which end connections does the Aeroquip Reusable Male NPT Hydraulic Hose Fittings have?",
+          "a": "The ends listed on the Aeroquip Reusable Male NPT Hydraulic Hose Fittings are NPTF (male) and NPTF (female). Each part number pairs one hose or port size with its connection, so check the row before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Aeroquip Reusable Male NPT Hydraulic Hose Fittings rated for?",
+          "a": "The maker states 800 to 3,000 psi (55 to 207 bar), by size for the Aeroquip Reusable Male NPT Hydraulic Hose Fittings. Use the figure on the row for the size you order, because ratings vary by size and the lowest-rated part in an assembly governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Reusable Male NPT Hydraulic Hose Fittings made from?",
+          "a": "The Aeroquip Reusable Male NPT Hydraulic Hose Fittings are listed in steel, finished zinc dicromate plated. Ask us if the fluid or the environment needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard does the Aeroquip Reusable Male NPT Hydraulic Hose Fittings use?",
+          "a": "The Aeroquip Reusable Male NPT Hydraulic Hose Fittings have an NPTF tapered pipe thread end. NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread. Match the end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip Reusable Male NPT Hydraulic Hose Fittings connect to?",
+          "a": "The Aeroquip Reusable Male NPT Hydraulic Hose Fittings fix to the hose at one end and connects to the thread described in the size table at the other. Check the thread and seat against your port, because ends that look alike do not seal together; see the [thread reference board guide](/blog/building-a-thread-reference-board)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Aeroquip Reusable Male NPT Hydraulic Hose Fittings be fitted without a crimping machine?",
+          "a": "Reusable and field-attachable fittings such as the Aeroquip Reusable Male NPT Hydraulic Hose Fittings are made to be fitted to hose without a crimp machine and reused when the hose is replaced. Read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to choose between them, or send us the hose and lengths for a tested assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Reusable Male NPT Hydraulic Hose Fittings differ from the Aeroquip Reusable Hydraulic Hose Fittings?",
+          "a": "The Aeroquip Reusable Male NPT Hydraulic Hose Fittings and the [Aeroquip Reusable Hydraulic Hose Fittings](/p/aeroquip-reusable-hydraulic-hose-fittings) are two listings in the same range. They differ in material Steel here against Carbon Steel; ends NPTF (male) and NPTF (female) here against SAE (female) and NPTF (male). Choose by the thread on your port and the hose, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Aeroquip Reusable Male NPT Hydraulic Hose Fittings in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Aeroquip Reusable Male NPT Hydraulic Hose Fittings at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-reusable-hydraulic-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Eaton Reusable Hydraulic Hose Fittings and what is it used for?",
+          "a": "The Eaton Reusable Hydraulic Hose Fittings are a reusable or field-attachable hose fitting from Eaton Aeroquip in steel (compression union). It is listed in 29 part numbers, such as 62X8 and C5365X8, and the Sizes & Part Numbers tab gives the connections for each number. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the part numbers of the Eaton Reusable Hydraulic Hose Fittings?",
+          "a": "The Eaton Reusable Hydraulic Hose Fittings are listed under 29 part numbers. For example 62X8 (Compression Union, 1/2 Inch Size), C5365X8 (Fitting, 1/2 Jic 37 Deg) and 1168X6X2 (Connector Push, 3/8 Inch x 1/8 Npt). The Sizes & Part Numbers tab shows every number with its connections; quote the full number when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Which hose goes with the Eaton Reusable Hydraulic Hose Fittings?",
+          "a": "A Eaton Aeroquip fitting is rated only on the hose it is designed for, and the listing for the Eaton Reusable Hydraulic Hose Fittings does not name a hose series. Quote the hose type and size with the part number and we will check the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Eaton Reusable Hydraulic Hose Fittings come in?",
+          "a": "The Eaton Reusable Hydraulic Hose Fittings are listed in 29 part numbers with sizes from 1/4 Inch to 3/4 Inch in the item text. The size table shows the connections for each number."
+        },
+        {
+          "slot": "D",
+          "q": "What connection does the Eaton Reusable Hydraulic Hose Fittings have?",
+          "a": "The size table describes the Eaton Reusable Hydraulic Hose Fittings as compression union. Check the row for your part number to see the size and connection of each end."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Eaton Reusable Hydraulic Hose Fittings rated for?",
+          "a": "The listing for the Eaton Reusable Hydraulic Hose Fittings gives no pressure rating, so we do not quote one. Tell us the hose and the working pressure and we will confirm the fitting before you order, because the assembly is rated to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Eaton Reusable Hydraulic Hose Fittings made from?",
+          "a": "The Eaton Reusable Hydraulic Hose Fittings are listed in steel. The listing gives no plating or finish detail. Ask us if the fluid or the environment needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard does the Eaton Reusable Hydraulic Hose Fittings use?",
+          "a": "The Eaton Reusable Hydraulic Hose Fittings have a JIC 37° flare end and an NPT tapered pipe thread end. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. NPT is the American tapered pipe thread of ASME B1.20.1, which seals on the thread. Match the end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Eaton Reusable Hydraulic Hose Fittings connect to?",
+          "a": "The Eaton Reusable Hydraulic Hose Fittings fix to the hose at one end and connects to the thread described in the size table at the other. Check the thread and seat against your port, because ends that look alike do not seal together; see the [thread reference board guide](/blog/building-a-thread-reference-board)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Eaton Reusable Hydraulic Hose Fittings be fitted without a crimping machine?",
+          "a": "Reusable and field-attachable fittings such as the Eaton Reusable Hydraulic Hose Fittings are made to be fitted to hose without a crimp machine and reused when the hose is replaced. Read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to choose between them, or send us the hose and lengths for a tested assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Eaton Reusable Hydraulic Hose Fittings differ from the Aeroquip Reusable Hydraulic Hose Fittings?",
+          "a": "The Eaton Reusable Hydraulic Hose Fittings and the [Aeroquip Reusable Hydraulic Hose Fittings](/p/aeroquip-reusable-hydraulic-hose-fittings) are two listings in the same range. They differ in material Steel here against Carbon Steel. Choose by the thread on your port and the hose, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton Reusable Hydraulic Hose Fittings in Dubai for export?",
+          "a": "Yes. We keep the Eaton Reusable Hydraulic Hose Fittings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-hose-end-for-sae-100r1-hose-x-jic-37-female-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel and which hose is it made for?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel is a reusable straight hose end in carbon steel for SAE 100R1AT hose, with a JIC 37° flare end. It screws onto the hose without a crimper, so an assembly can be made or repaired in the field, and the fitting is reused when the hose is replaced. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel, such as IH-ST-R1-RE-FJX-04-04?",
+          "a": "The two number groups at the end of an IH-ST-R1-RE-FJX part number are the hose dash size and then the end size code. In the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel size table, IH-ST-R1-RE-FJX-04-04 is a 1/4\" hose ID (-4) hose with a 1/4\" JIC 37° (7/16-20) end, and IH-ST-R1-RE-FJX-08-08 is a 1/2\" hose ID (-8) hose with a 1/2\" JIC 37° (3/4-16) end."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel fit?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel covers hose sizes 1/4\" hose ID (-4) to 1/2\" hose ID (-8) in 2 part numbers. The sizes listed are 1/4\" hose ID (-4) and 1/2\" hose ID (-8). Match the dash size to the hose inside diameter shown beside it."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes are available on the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel?",
+          "a": "The end on the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel runs 1/4\" JIC 37° (7/16-20) to 1/2\" JIC 37° (3/4-16). One hose size can carry more than one end size, so give us the hose size and the thread on your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel made from?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel is made from carbon steel. Tell us the fluid and the environment if you need another material quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the end on the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel follow?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel has a JIC 37° flare end. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match it to a port of the same standard, because ends that look alike do not seal together."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel connect to?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel connects to a male JIC end of the same thread size. Confirm the thread size on your port against the size table, then quote the hose size and end size."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel be fitted without a crimper?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel screws onto the hose by hand tools, with no crimper, so you can make an assembly or repair one in the field; the fitting is reused when the hose is replaced. For a factory-tested assembly read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies)."
+        },
+        {
+          "slot": "J",
+          "q": "Which hose does the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel suit?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel is listed for SAE 100R1AT hose, so use it where an assembly has to be made or repaired in the field without a crimper. The hose line in its listing reads: Single Wire Hydraulic Hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel differ from the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel?",
+          "a": "The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel and the [Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel](/p/reusable-hose-end-for-sae-100r2at-hose-x-jic-37-female-swivel) belong to the same hose end range. They differ as follows: in size range and part numbers. Choose by the thread on your port and the hose size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-hose-end-for-sae-100r2at-hose-x-jic-37-female-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel and which hose is it made for?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel is a reusable straight hose end in carbon steel for SAE 100R2AT hose, with a JIC 37° flare end. It screws onto the hose without a crimper, so an assembly can be made or repaired in the field, and the fitting is reused when the hose is replaced. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel, such as IH-ST-R2-RE-FJX-04-04?",
+          "a": "The two number groups at the end of an IH-ST-R2-RE-FJX part number are the hose dash size and then the end size code. In the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel size table, IH-ST-R2-RE-FJX-04-04 is a 1/4\" hose ID (-4) hose with a 1/4\" JIC 37° (7/16-20) end, and IH-ST-R2-RE-FJX-08-08 is a 1/2\" hose ID (-8) hose with a 1/2\" JIC 37° (3/4-16) end."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel fit?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel covers hose sizes 1/4\" hose ID (-4) to 1/2\" hose ID (-8) in 3 part numbers. The sizes listed are 1/4\" hose ID (-4), 3/8\" hose ID (-6) and 1/2\" hose ID (-8). Match the dash size to the hose inside diameter shown beside it."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes are available on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel?",
+          "a": "The end on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel runs 1/4\" JIC 37° (7/16-20) to 1/2\" JIC 37° (3/4-16), for example 1/4\" JIC 37° (7/16-20), 3/8\" JIC 37° (9/16-18) and 1/2\" JIC 37° (3/4-16). One hose size can carry more than one end size, so give us the hose size and the thread on your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel made from?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel is made from carbon steel. Tell us the fluid and the environment if you need another material quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the end on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel follow?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel has a JIC 37° flare end. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match it to a port of the same standard, because ends that look alike do not seal together."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel connect to?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel connects to a male JIC end of the same thread size. Confirm the thread size on your port against the size table, then quote the hose size and end size."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel be fitted without a crimper?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel screws onto the hose by hand tools, with no crimper, so you can make an assembly or repair one in the field; the fitting is reused when the hose is replaced. For a factory-tested assembly read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies)."
+        },
+        {
+          "slot": "J",
+          "q": "Which hose does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel suit?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel is listed for SAE 100R2AT hose, so use it where an assembly has to be made or repaired in the field without a crimper. The hose line in its listing reads: Weatherhead H425, Parker 301, Gates G2, Aeroquip FC212."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel differ from the Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel and the [Reusable Hose End for SAE 100R1 Hose × JIC 37° Female Swivel](/p/reusable-hose-end-for-sae-100r1-hose-x-jic-37-female-swivel) belong to the same hose end range. They differ as follows: in size range and part numbers. Choose by the thread on your port and the hose size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel in Dubai for export?",
+          "a": "Yes. We keep the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-hose-end-for-sae-100r2at-hose-x-jic-37-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male and which hose is it made for?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male is a reusable straight hose end in carbon steel for SAE 100R2AT hose, with a JIC 37° flare end. It screws onto the hose without a crimper, so an assembly can be made or repaired in the field, and the fitting is reused when the hose is replaced. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male, such as IH-ST-R2-RE-MJ-06-06?",
+          "a": "The two number groups at the end of an IH-ST-R2-RE-MJ part number are the hose dash size and then the end size code. In the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male size table, IH-ST-R2-RE-MJ-06-06 is a 3/8\" hose ID (-6) hose with a 3/8\" JIC 37° (9/16-18) end, and IH-ST-R2-RE-MJ-08-10 is a 1/2\" hose ID (-8) hose with a 5/8\" JIC 37° (7/8-14) end."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male fit?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male covers hose sizes 3/8\" hose ID (-6) to 1/2\" hose ID (-8) in 3 part numbers. The sizes listed are 3/8\" hose ID (-6) and 1/2\" hose ID (-8). Match the dash size to the hose inside diameter shown beside it."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes are available on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male?",
+          "a": "The end on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male runs 3/8\" JIC 37° (9/16-18) to 5/8\" JIC 37° (7/8-14), for example 3/8\" JIC 37° (9/16-18), 1/2\" JIC 37° (3/4-16) and 5/8\" JIC 37° (7/8-14). One hose size can carry more than one end size, so give us the hose size and the thread on your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male made from?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male is made from carbon steel. Tell us the fluid and the environment if you need another material quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the end on the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male follow?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male has a JIC 37° flare end. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match it to a port of the same standard, because ends that look alike do not seal together."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male connect to?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male connects to a female port or swivel nut of the same JIC thread size. Confirm the thread size on your port against the size table, then quote the hose size and end size."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male be fitted without a crimper?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male screws onto the hose by hand tools, with no crimper, so you can make an assembly or repair one in the field; the fitting is reused when the hose is replaced. For a factory-tested assembly read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies)."
+        },
+        {
+          "slot": "J",
+          "q": "Which hose does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male suit?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male is listed for SAE 100R2AT hose, so use it where an assembly has to be made or repaired in the field without a crimper. The hose line in its listing reads: Weatherhead H425, Parker 301, Gates G2, Aeroquip FC212."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male differ from the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male and the [Reusable Hose End for SAE 100R2AT Hose × JIC 37° Female Swivel](/p/reusable-hose-end-for-sae-100r2at-hose-x-jic-37-female-swivel) belong to the same hose end range. They differ as follows: in size range and part numbers. Choose by the thread on your port and the hose size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male from stock in the UAE and get a quotation?",
+          "a": "Yes, the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-hose-end-for-sae-100r2at-hose-x-nptf-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reusable Hose End for SAE 100R2AT Hose × NPTF Male and which hose is it made for?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male is a reusable straight hose end in carbon steel for SAE 100R2AT hose, with an NPTF tapered pipe thread end. It screws onto the hose without a crimper, so an assembly can be made or repaired in the field, and the fitting is reused when the hose is replaced. See all [reusable hose ends](/c/reusable-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Reusable Hose End for SAE 100R2AT Hose × NPTF Male, such as IH-ST-R2-RE-MP-06-06?",
+          "a": "The two number groups at the end of an IH-ST-R2-RE-MP part number are the hose dash size and then the end size code. In the Reusable Hose End for SAE 100R2AT Hose × NPTF Male size table, IH-ST-R2-RE-MP-06-06 is a 3/8\" hose ID (-6) hose with a 3/8\" NPTF (3/8-18) end, and IH-ST-R2-RE-MP-12-12 is a 3/4\" hose ID (-12) hose with a 3/4\" NPTF (3/4-14) end."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Reusable Hose End for SAE 100R2AT Hose × NPTF Male fit?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male covers hose sizes 3/8\" hose ID (-6) to 3/4\" hose ID (-12) in 3 part numbers. The sizes listed are 3/8\" hose ID (-6), 1/2\" hose ID (-8) and 3/4\" hose ID (-12). Match the dash size to the hose inside diameter shown beside it."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes are available on the Reusable Hose End for SAE 100R2AT Hose × NPTF Male?",
+          "a": "The end on the Reusable Hose End for SAE 100R2AT Hose × NPTF Male runs 3/8\" NPTF (3/8-18) to 3/4\" NPTF (3/4-14), for example 3/8\" NPTF (3/8-18), 1/2\" NPTF (1/2-14) and 3/4\" NPTF (3/4-14). One hose size can carry more than one end size, so give us the hose size and the thread on your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Reusable Hose End for SAE 100R2AT Hose × NPTF Male rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Reusable Hose End for SAE 100R2AT Hose × NPTF Male. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Reusable Hose End for SAE 100R2AT Hose × NPTF Male made from?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male is made from carbon steel. Tell us the fluid and the environment if you need another material quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the end on the Reusable Hose End for SAE 100R2AT Hose × NPTF Male follow?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male has an NPTF tapered pipe thread end. NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread. Match it to a port of the same standard, because ends that look alike do not seal together."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reusable Hose End for SAE 100R2AT Hose × NPTF Male connect to?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male connects to a female port or swivel nut of the same NPTF thread size. Confirm the thread size on your port against the size table, then quote the hose size and end size."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Reusable Hose End for SAE 100R2AT Hose × NPTF Male be fitted without a crimper?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male screws onto the hose by hand tools, with no crimper, so you can make an assembly or repair one in the field; the fitting is reused when the hose is replaced. For a factory-tested assembly read [crimped, reusable or ready-made hose assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies)."
+        },
+        {
+          "slot": "J",
+          "q": "Which hose does the Reusable Hose End for SAE 100R2AT Hose × NPTF Male suit?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male is listed for SAE 100R2AT hose, so use it where an assembly has to be made or repaired in the field without a crimper. The hose line in its listing reads: Weatherhead H425, Parker 301, Gates G2, Aeroquip FC212."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Reusable Hose End for SAE 100R2AT Hose × NPTF Male differ from the Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male?",
+          "a": "The Reusable Hose End for SAE 100R2AT Hose × NPTF Male and the [Reusable Hose End for SAE 100R2AT Hose × JIC 37° Male](/p/reusable-hose-end-for-sae-100r2at-hose-x-jic-37-male) belong to the same hose end range. They differ as follows: end NPTF tapered pipe thread end here against JIC 37° flare end. Choose by the thread on your port and the hose size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Reusable Hose End for SAE 100R2AT Hose × NPTF Male in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Reusable Hose End for SAE 100R2AT Hose × NPTF Male at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-hose-end-for-sae-100r5-hose-x-jic-37-female-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel and which hose is it made for?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel is a straight hose end in carbon steel for SAE 100R5 textile-cover hose (R5 Textile Cover Hydraulic Hose), with a JIC 37° flare end. It is made for R5 hose sizes, which differ from 1- and 2-wire braided hose. See all [R5 textile-cover hose ends](/c/r5-textile-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel, such as IH-ST-R5-RE-FJX-04-04?",
+          "a": "The two number groups at the end of an IH-ST-R5-RE-FJX part number are the hose dash size and then the end size code. In the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel size table, IH-ST-R5-RE-FJX-04-04 is a -4 (3/16\" ID) hose with a 1/4\" JIC 37° (7/16-20) end, and IH-ST-R5-RE-FJX-16-16 is a -16 (7/8\" ID) hose with a 1\" JIC 37° (1-5/16-12) end. The inside diameter is given beside each hose size because it is not the dash size in sixteenths."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel fit?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel covers hose sizes -4 (3/16\" ID) to -16 (7/8\" ID) in 5 part numbers. The sizes listed are -4 (3/16\" ID), -5 (1/4\" ID), -6 (5/16\" ID), -12 (5/8\" ID) and -16 (7/8\" ID). Hose sizes are SAE dash sizes, and for R5 and R14 hose the inside diameter is given beside each one because it is not the dash size in sixteenths."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes are available on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel?",
+          "a": "The end on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel runs 1/4\" JIC 37° (7/16-20) to 1\" JIC 37° (1-5/16-12), for example 1/4\" JIC 37° (7/16-20), 3/8\" JIC 37° (9/16-18), 3/4\" JIC 37° (1-1/16-12) and 1\" JIC 37° (1-5/16-12). One hose size can carry more than one end size, so give us the hose size and the thread on your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel made from?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel is made from carbon steel. Tell us the fluid and the environment if you need another material quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the end on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel follow?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel has a JIC 37° flare end. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match it to a port of the same standard, because ends that look alike do not seal together."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel connect to?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel connects to a male JIC end of the same thread size. Confirm the thread size on your port against the size table, then quote the hose size and end size."
+        },
+        {
+          "slot": "I",
+          "q": "Can Indus make up a hose assembly with the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel?",
+          "a": "Yes. Send the hose type and size, the overall length and both end fittings, and Indus will crimp and pressure-test the assembly with the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel before dispatch. See [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Why does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel not fit ordinary braided hose?",
+          "a": "SAE 100R5 hose has a single wire braid under a textile cover, and the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel is made for its sizes, which differ from 1- and 2-wire braided hose. Read [PTFE (R14) and R5 textile hose ends](/blog/ptfe-and-textile-hose-ends) for how the dash sizing differs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel differ from the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel and the [Reusable Hose End for SAE 100R5 Hose × JIC 37° Male](/p/reusable-hose-end-for-sae-100r5-hose-x-jic-37-male) belong to the same hose end range. They differ as follows: in size range and part numbers. Choose by the thread on your port and the hose size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-hose-end-for-sae-100r5-hose-x-jic-37-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male and which hose is it made for?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Male is a straight hose end in carbon steel for SAE 100R5 textile-cover hose (R5 Textile Cover Hydraulic Hose), with a JIC 37° flare end. It is made for R5 hose sizes, which differ from 1- and 2-wire braided hose. See all [R5 textile-cover hose ends](/c/r5-textile-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male, such as IH-ST-R5-RE-MJ-08-08?",
+          "a": "The two number groups at the end of an IH-ST-R5-RE-MJ part number are the hose dash size and then the end size code. In the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male size table, IH-ST-R5-RE-MJ-08-08 is a -8 (13/32\" ID) hose with a 1/2\" JIC 37° (3/4-16) end. The inside diameter is given beside each hose size because it is not the dash size in sixteenths."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male fit?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Male covers hose sizes -8 (13/32\" ID) in 1 part number. The sizes listed are -8 (13/32\" ID). Hose sizes are SAE dash sizes, and for R5 and R14 hose the inside diameter is given beside each one because it is not the dash size in sixteenths."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes are available on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male?",
+          "a": "The end on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male runs 1/2\" JIC 37° (3/4-16). One hose size can carry more than one end size, so give us the hose size and the thread on your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male made from?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Male is made from carbon steel. Tell us the fluid and the environment if you need another material quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the end on the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male follow?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Male has a JIC 37° flare end. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match it to a port of the same standard, because ends that look alike do not seal together."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male connect to?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Male connects to a female port or swivel nut of the same JIC thread size. Confirm the thread size on your port against the size table, then quote the hose size and end size."
+        },
+        {
+          "slot": "I",
+          "q": "Can Indus make up a hose assembly with the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male?",
+          "a": "Yes. Send the hose type and size, the overall length and both end fittings, and Indus will crimp and pressure-test the assembly with the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male before dispatch. See [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Why does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male not fit ordinary braided hose?",
+          "a": "SAE 100R5 hose has a single wire braid under a textile cover, and the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male is made for its sizes, which differ from 1- and 2-wire braided hose. Read [PTFE (R14) and R5 textile hose ends](/blog/ptfe-and-textile-hose-ends) for how the dash sizing differs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male differ from the Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × JIC 37° Male and the [Reusable Hose End for SAE 100R5 Hose × JIC 37° Female Swivel](/p/reusable-hose-end-for-sae-100r5-hose-x-jic-37-female-swivel) belong to the same hose end range. They differ as follows: in size range and part numbers. Choose by the thread on your port and the hose size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Reusable Hose End for SAE 100R5 Hose × JIC 37° Male sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-hose-end-for-sae-100r5-hose-x-nptf-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Reusable Hose End for SAE 100R5 Hose × NPTF Male and which hose is it made for?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × NPTF Male is a straight hose end in carbon steel for SAE 100R5 textile-cover hose (R5 Textile Cover Hydraulic Hose), with an NPTF tapered pipe thread end. It is made for R5 hose sizes, which differ from 1- and 2-wire braided hose. See all [R5 textile-cover hose ends](/c/r5-textile-hose-ends)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Reusable Hose End for SAE 100R5 Hose × NPTF Male, such as IH-ST-R5-RE-MP-04-04?",
+          "a": "The two number groups at the end of an IH-ST-R5-RE-MP part number are the hose dash size and then the end size code. In the Reusable Hose End for SAE 100R5 Hose × NPTF Male size table, IH-ST-R5-RE-MP-04-04 is a -4 (3/16\" ID) hose with a 1/4\" NPTF (1/4-18) end, and IH-ST-R5-RE-MP-08-08 is a -8 (13/32\" ID) hose with a 1/2\" NPTF (1/2-14) end. The inside diameter is given beside each hose size because it is not the dash size in sixteenths."
+        },
+        {
+          "slot": "D",
+          "q": "What hose sizes does the Reusable Hose End for SAE 100R5 Hose × NPTF Male fit?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × NPTF Male covers hose sizes -4 (3/16\" ID) to -8 (13/32\" ID) in 2 part numbers. The sizes listed are -4 (3/16\" ID) and -8 (13/32\" ID). Hose sizes are SAE dash sizes, and for R5 and R14 hose the inside diameter is given beside each one because it is not the dash size in sixteenths."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes are available on the Reusable Hose End for SAE 100R5 Hose × NPTF Male?",
+          "a": "The end on the Reusable Hose End for SAE 100R5 Hose × NPTF Male runs 1/4\" NPTF (1/4-18) to 1/2\" NPTF (1/2-14). One hose size can carry more than one end size, so give us the hose size and the thread on your port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Reusable Hose End for SAE 100R5 Hose × NPTF Male rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Reusable Hose End for SAE 100R5 Hose × NPTF Male. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Reusable Hose End for SAE 100R5 Hose × NPTF Male made from?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × NPTF Male is made from carbon steel. Tell us the fluid and the environment if you need another material quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the end on the Reusable Hose End for SAE 100R5 Hose × NPTF Male follow?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × NPTF Male has an NPTF tapered pipe thread end. NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread. Match it to a port of the same standard, because ends that look alike do not seal together."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reusable Hose End for SAE 100R5 Hose × NPTF Male connect to?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × NPTF Male connects to a female port or swivel nut of the same NPTF thread size. Confirm the thread size on your port against the size table, then quote the hose size and end size."
+        },
+        {
+          "slot": "I",
+          "q": "Can Indus make up a hose assembly with the Reusable Hose End for SAE 100R5 Hose × NPTF Male?",
+          "a": "Yes. Send the hose type and size, the overall length and both end fittings, and Indus will crimp and pressure-test the assembly with the Reusable Hose End for SAE 100R5 Hose × NPTF Male before dispatch. See [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Why does the Reusable Hose End for SAE 100R5 Hose × NPTF Male not fit ordinary braided hose?",
+          "a": "SAE 100R5 hose has a single wire braid under a textile cover, and the Reusable Hose End for SAE 100R5 Hose × NPTF Male is made for its sizes, which differ from 1- and 2-wire braided hose. Read [PTFE (R14) and R5 textile hose ends](/blog/ptfe-and-textile-hose-ends) for how the dash sizing differs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Reusable Hose End for SAE 100R5 Hose × NPTF Male differ from the Reusable Hose End for SAE 100R5 Hose × JIC 37° Male?",
+          "a": "The Reusable Hose End for SAE 100R5 Hose × NPTF Male and the [Reusable Hose End for SAE 100R5 Hose × JIC 37° Male](/p/reusable-hose-end-for-sae-100r5-hose-x-jic-37-male) belong to the same hose end range. They differ as follows: end NPTF tapered pipe thread end here against JIC 37° flare end. Choose by the thread on your port and the hose size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Reusable Hose End for SAE 100R5 Hose × NPTF Male in Dubai for export?",
+          "a": "Yes, the Reusable Hose End for SAE 100R5 Hose × NPTF Male is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

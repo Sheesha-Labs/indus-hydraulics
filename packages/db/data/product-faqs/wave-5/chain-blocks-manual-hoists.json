@@ -1,0 +1,1111 @@
+{
+  "family": "chain-blocks-manual-hoists",
+  "extraFacts": [
+    {
+      "fact": "Wire Rope Puller — Aluminium listing: Size range 8.3mm; Working load limit 800 kg",
+      "source": "Indus Hydraulics listing for Wire Rope Puller — Aluminium"
+    },
+    {
+      "fact": "Lever Hoist — Type VA listing: Size range 0.5 t to 6 t; Working load limit 0.5 to 6 t",
+      "source": "Indus Hydraulics listing for Lever Hoist — Type VA"
+    },
+    {
+      "fact": "Lever Hoist — Type VL listing: Finish Powder coated; Size range 0.5 t to 9 t; Working load limit 0.5 to 9 t",
+      "source": "Indus Hydraulics listing for Lever Hoist — Type VL"
+    },
+    {
+      "fact": "Lever Hoist — Type VA listing: Finish Painted; Size range 0.5 t to 6 t; Working load limit 0.5 to 6 t",
+      "source": "Indus Hydraulics listing for Lever Hoist — Type VA"
+    },
+    {
+      "fact": "Manual Chain Block — Type B listing: 9 listed sizes",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type B"
+    },
+    {
+      "fact": "Manual Chain Block — Type CB listing: Size range 1 t to 10 t; Working load limit 1 to 10 t",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type CB"
+    },
+    {
+      "fact": "Manual Chain Block — Type B listing: Size range 0.5 t to 20 t; Working load limit 0.5 to 20 t",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type B"
+    },
+    {
+      "fact": "Manual Chain Block — Type A listing: Size range 0.5 t to 20 t; Working load limit 0.5 to 20 t",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type A"
+    },
+    {
+      "fact": "Manual Chain Block — Type A listing: weight 7 to 160 kg",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type A"
+    },
+    {
+      "fact": "Manual Chain Block — Type A listing: Size range 0.5 t to 20 t; Working load limit 0.5 to 20 t",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type A"
+    },
+    {
+      "fact": "Manual Chain Block — Type A listing: weight 7 to 160 kg",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type A"
+    },
+    {
+      "fact": "Manual Chain Block — Type A listing: Size range 0.5 t to 20 t; Working load limit 0.5 to 20 t",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type A"
+    },
+    {
+      "fact": "Manual Chain Block — Type A listing: Size range 0.5 t to 20 t; Working load limit 0.5 to 20 t",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type A"
+    },
+    {
+      "fact": "Manual Chain Block — Type A listing: Size range 0.5 t to 20 t; Working load limit 0.5 to 20 t",
+      "source": "Indus Hydraulics listing for Manual Chain Block — Type A"
+    },
+    {
+      "fact": "Wire Rope Puller — Steel listing: Size range 8.3 mm to 16 mm; Working load limit 0.8 to 3.2 t",
+      "source": "Indus Hydraulics listing for Wire Rope Puller — Steel"
+    },
+    {
+      "fact": "Wire Rope Puller — Aluminium listing: Size range 8.3mm; Working load limit 800 kg",
+      "source": "Indus Hydraulics listing for Wire Rope Puller — Aluminium"
+    }
+  ],
+  "products": [
+    {
+      "slug": "close-headroom-trolley-chain-hoist",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Close Headroom Trolley Chain Hoist used for?",
+          "a": "Close Headroom Trolley Chain Hoist is a manual chain hoist built into a trolley that runs along the beam flange, with a close-headroom design for places where there is little space under the beam. It is listed in 5 sizes, 0.5 t to 5 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Close Headroom Trolley Chain Hoist, such as IH-LR-CB-CHT-0T5?",
+          "a": "Close Headroom Trolley Chain Hoist part numbers begin with IH-LR-CB-CHT and end in a size code: IH-LR-CB-CHT-0T5 is the 0.5 t size and IH-LR-CB-CHT-5T is the 5 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Close Headroom Trolley Chain Hoist come in?",
+          "a": "Close Headroom Trolley Chain Hoist is listed in 5 sizes, 0.5 t to 5 t, each with its own Indus part number, for example IH-LR-CB-CHT-0T5 and IH-LR-CB-CHT-5T. The table includes 0.5 t: WLL 0.5 t, proof load 7.5 kN and 5 t: WLL 5 t, proof load 75 kN."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Close Headroom Trolley Chain Hoist?",
+          "a": "For Close Headroom Trolley Chain Hoist, choose on capacity, on the beam flange width the trolley adjusts to, and on the headroom you have; the size table lists the beam flange range and the minimum curve radius for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Close Headroom Trolley Chain Hoist?",
+          "a": "Close Headroom Trolley Chain Hoist is listed with a working load limit 0.5 to 5 t. For example, 2 t: WLL 2 t, proof load 30 kN. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Close Headroom Trolley Chain Hoist supplied in?",
+          "a": "The listing for Close Headroom Trolley Chain Hoist does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Close Headroom Trolley Chain Hoist?",
+          "a": "For Close Headroom Trolley Chain Hoist, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Close Headroom Trolley Chain Hoist connect to or work with?",
+          "a": "For Close Headroom Trolley Chain Hoist, the trolley runs on the flange of an I-beam, and the beam and its supports must carry the hoist and the load. See the [beam trolleys shelf](/c/beam-trolleys) for separate push and geared trolleys."
+        },
+        {
+          "slot": "I",
+          "q": "How should Close Headroom Trolley Chain Hoist be inspected and looked after?",
+          "a": "Check the beam flange fit, trolley wheels and stops, the load chain and hooks before use. Keep the chain free of twists and have Close Headroom Trolley Chain Hoist inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Close Headroom Trolley Chain Hoist differ from Wire Rope Puller — Aluminium?",
+          "a": "Close Headroom Trolley Chain Hoist differs from [Wire Rope Puller — Aluminium](/p/wire-rope-puller-aluminium) in its size range 0.5 t to 5 t against 8.3mm; working load limit 0.5 to 5 t against 800 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Close Headroom Trolley Chain Hoist shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Close Headroom Trolley Chain Hoist from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Close Headroom Trolley Chain Hoist available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Close Headroom Trolley Chain Hoist is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "lever-hoist-type-d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Lever Hoist, Type D used for?",
+          "a": "Lever Hoist, Type D is a lever hoist, a hand-operated ratchet-lever block with a geared load sheave and an automatic load brake, used for lifting, pulling and tensioning loads in any direction. It is listed in 5 sizes, 0.8 t to 9 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Lever Hoist, Type D, such as IH-LR-CB-LVD-0P8T?",
+          "a": "Lever Hoist, Type D part numbers begin with IH-LR-CB-LVD and end in a size code: IH-LR-CB-LVD-0P8T is the 0.8 t size and IH-LR-CB-LVD-9T is the 9 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Lever Hoist, Type D come in?",
+          "a": "Lever Hoist, Type D is listed in 5 sizes, 0.8 t to 9 t, each with its own Indus part number, for example IH-LR-CB-LVD-0P8T and IH-LR-CB-LVD-9T. The table includes 0.8 t: WLL 0.8 t, proof load 0.96 t and 9 t: WLL 9 t, proof load 10.8 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Lever Hoist, Type D?",
+          "a": "For Lever Hoist, Type D, choose by capacity and by the standard lift, and say on the RFQ if you need a longer load chain. A lever hoist pulls in any direction, so it also serves for tensioning and positioning; it is never used with an extension on the lever."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Lever Hoist, Type D?",
+          "a": "Lever Hoist, Type D is listed with a working load limit 0.8 to 9 t. For example, 3.2 t: WLL 3.2 t, proof load 3.84 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Lever Hoist, Type D made from, and what finish does it have?",
+          "a": "For Lever Hoist, Type D, the material is Steel body, alloy load chain and forged hooks; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Lever Hoist, Type D?",
+          "a": "Lever Hoist, Type D is listed to Manual lever hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Lever Hoist, Type D connect to or work with?",
+          "a": "For Lever Hoist, Type D, attach it with rated shackles, slings or beam clamps of at least the same working load. For lifting from a beam, see the [beam trolleys shelf](/c/beam-trolleys), and for hand-chain alternatives the [chain blocks shelf](/c/chain-blocks-manual-hoists)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Lever Hoist, Type D be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the ratchet and load brake hold. Never lengthen the lever with a bar, and have Lever Hoist, Type D inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Lever Hoist, Type D differ from Lever Hoist — Type VA?",
+          "a": "Lever Hoist, Type D differs from [Lever Hoist — Type VA](/p/lever-hoist-type-va) in its size range 0.8 t to 9 t against 0.5 t to 6 t; working load limit 0.8 to 9 t against 0.5 to 6 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Lever Hoist, Type D shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Lever Hoist, Type D from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Lever Hoist, Type D in stock in Dubai?",
+          "a": "Yes. Lever Hoist, Type D is in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "lever-hoist-type-va",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Lever Hoist, Type VA used for?",
+          "a": "Lever Hoist, Type VA is a lever hoist, a hand-operated ratchet-lever block with a geared load sheave and an automatic load brake, used for lifting, pulling and tensioning loads in any direction. It is listed in 7 sizes, 0.5 t to 6 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Lever Hoist, Type VA, such as IH-LR-CB-LVA-0P5T?",
+          "a": "Lever Hoist, Type VA part numbers begin with IH-LR-CB-LVA and end in a size code: IH-LR-CB-LVA-0P5T is the 0.5 t size and IH-LR-CB-LVA-6T is the 6 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Lever Hoist, Type VA come in?",
+          "a": "Lever Hoist, Type VA is listed in 7 sizes, 0.5 t to 6 t, each with its own Indus part number, for example IH-LR-CB-LVA-0P5T and IH-LR-CB-LVA-6T. The table includes 0.5 t: WLL 0.5 t and 6 t: WLL 6 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Lever Hoist, Type VA?",
+          "a": "For Lever Hoist, Type VA, choose by capacity and by the standard lift, and say on the RFQ if you need a longer load chain. A lever hoist pulls in any direction, so it also serves for tensioning and positioning; it is never used with an extension on the lever."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Lever Hoist, Type VA?",
+          "a": "Lever Hoist, Type VA is listed with a working load limit 0.5 to 6 t. For example, 1.5 t: WLL 1.5 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Lever Hoist, Type VA made from, and what finish does it have?",
+          "a": "For Lever Hoist, Type VA, the material is Steel body, alloy load chain and forged hooks; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Lever Hoist, Type VA?",
+          "a": "Lever Hoist, Type VA is listed to Manual lever hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Lever Hoist, Type VA connect to or work with?",
+          "a": "For Lever Hoist, Type VA, attach it with rated shackles, slings or beam clamps of at least the same working load. For lifting from a beam, see the [beam trolleys shelf](/c/beam-trolleys), and for hand-chain alternatives the [chain blocks shelf](/c/chain-blocks-manual-hoists)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Lever Hoist, Type VA be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the ratchet and load brake hold. Never lengthen the lever with a bar, and have Lever Hoist, Type VA inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Lever Hoist, Type VA differ from Lever Hoist — Type VL?",
+          "a": "Lever Hoist, Type VA differs from [Lever Hoist — Type VL](/p/lever-hoist-type-vl) in its finish Painted against Powder coated; size range 0.5 t to 6 t against 0.5 t to 9 t; working load limit 0.5 to 6 t against 0.5 to 9 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Lever Hoist, Type VA shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Lever Hoist, Type VA from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Lever Hoist, Type VA in stock in Dubai?",
+          "a": "Yes, Lever Hoist, Type VA is held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "lever-hoist-type-vl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Lever Hoist, Type VL used for?",
+          "a": "Lever Hoist, Type VL is a lever hoist, a hand-operated ratchet-lever block with a geared load sheave and an automatic load brake, used for lifting, pulling and tensioning loads in any direction. It is listed in 6 sizes, 0.5 t to 9 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Lever Hoist, Type VL, such as IH-LR-CB-LVL-0P5T?",
+          "a": "Lever Hoist, Type VL part numbers begin with IH-LR-CB-LVL and end in a size code: IH-LR-CB-LVL-0P5T is the 0.5 t size and IH-LR-CB-LVL-9T is the 9 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Lever Hoist, Type VL come in?",
+          "a": "Lever Hoist, Type VL is listed in 6 sizes, 0.5 t to 9 t, each with its own Indus part number, for example IH-LR-CB-LVL-0P5T and IH-LR-CB-LVL-9T. The table includes 0.5 t: WLL 0.5 t and 9 t: WLL 9 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Lever Hoist, Type VL?",
+          "a": "For Lever Hoist, Type VL, choose by capacity and by the standard lift, and say on the RFQ if you need a longer load chain. A lever hoist pulls in any direction, so it also serves for tensioning and positioning; it is never used with an extension on the lever."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Lever Hoist, Type VL?",
+          "a": "Lever Hoist, Type VL is listed with a working load limit 0.5 to 9 t. For example, 3 t: WLL 3 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Lever Hoist, Type VL made from, and what finish does it have?",
+          "a": "For Lever Hoist, Type VL, the material is Steel body, alloy load chain and forged hooks; the finish is Powder coated. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Lever Hoist, Type VL?",
+          "a": "Lever Hoist, Type VL is listed to Manual lever hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Lever Hoist, Type VL connect to or work with?",
+          "a": "For Lever Hoist, Type VL, attach it with rated shackles, slings or beam clamps of at least the same working load. For lifting from a beam, see the [beam trolleys shelf](/c/beam-trolleys), and for hand-chain alternatives the [chain blocks shelf](/c/chain-blocks-manual-hoists)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Lever Hoist, Type VL be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the ratchet and load brake hold. Never lengthen the lever with a bar, and have Lever Hoist, Type VL inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Lever Hoist, Type VL differ from Lever Hoist — Type VA?",
+          "a": "Lever Hoist, Type VL differs from [Lever Hoist — Type VA](/p/lever-hoist-type-va) in its finish Powder coated against Painted; size range 0.5 t to 9 t against 0.5 t to 6 t; working load limit 0.5 to 9 t against 0.5 to 6 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Lever Hoist, Type VL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Lever Hoist, Type VL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Lever Hoist, Type VL in stock in Dubai?",
+          "a": "Yes. We keep Lever Hoist, Type VL in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type A used for?",
+          "a": "Manual Chain Block, Type A is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 8 sizes, 0.5 t to 20 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type A, such as IH-LR-CB-A-0T5?",
+          "a": "Manual Chain Block, Type A part numbers begin with IH-LR-CB-A and end in a size code: IH-LR-CB-A-0T5 is the 0.5 t size and IH-LR-CB-A-20T is the 20 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type A come in?",
+          "a": "Manual Chain Block, Type A is listed in 8 sizes, 0.5 t to 20 t, each with its own Indus part number, for example IH-LR-CB-A-0T5 and IH-LR-CB-A-20T. The table includes 0.5 t: WLL 0.5 t, proof load 0.75 t and 20 t: WLL 20 t, proof load 30 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type A?",
+          "a": "For Manual Chain Block, Type A, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type A?",
+          "a": "Manual Chain Block, Type A is listed with a working load limit 0.5 to 20 t. For example, 3 t: WLL 3 t, proof load 4.5 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Manual Chain Block, Type A supplied in?",
+          "a": "The listing for Manual Chain Block, Type A does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type A?",
+          "a": "For Manual Chain Block, Type A, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type A connect to or work with?",
+          "a": "For Manual Chain Block, Type A, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type A be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type A inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type A differ from Manual Chain Block — Type B?",
+          "a": "Manual Chain Block, Type A differs from [Manual Chain Block — Type B](/p/manual-chain-block-type-b) in its 8 listed sizes against 9. Choose on the size range and ratings you need; the part numbers for each are in their own size tables."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type A shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type A from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type A available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type A is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-b",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type B used for?",
+          "a": "Manual Chain Block, Type B is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 9 sizes, 0.5 t to 20 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type B, such as IH-LR-CB-B-0T5?",
+          "a": "Manual Chain Block, Type B part numbers begin with IH-LR-CB-B and end in a size code: IH-LR-CB-B-0T5 is the 0.5 t size and IH-LR-CB-B-20T is the 20 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type B come in?",
+          "a": "Manual Chain Block, Type B is listed in 9 sizes, 0.5 t to 20 t, each with its own Indus part number, for example IH-LR-CB-B-0T5 and IH-LR-CB-B-20T. The table includes 0.5 t: WLL 0.5 t, proof load 0.75 t and 20 t: WLL 20 t, proof load 30 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type B?",
+          "a": "For Manual Chain Block, Type B, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type B?",
+          "a": "Manual Chain Block, Type B is listed with a working load limit 0.5 to 20 t. For example, 3 t: WLL 3 t, proof load 4.5 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Manual Chain Block, Type B supplied in?",
+          "a": "The listing for Manual Chain Block, Type B does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type B?",
+          "a": "For Manual Chain Block, Type B, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type B connect to or work with?",
+          "a": "For Manual Chain Block, Type B, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type B be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type B inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type B differ from Manual Chain Block — Type CB?",
+          "a": "Manual Chain Block, Type B differs from [Manual Chain Block — Type CB](/p/manual-chain-block-type-cb) in its size range 0.5 t to 20 t against 1 t to 10 t; working load limit 0.5 to 20 t against 1 to 10 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type B shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type B from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type B available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type B is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-cb",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type CB used for?",
+          "a": "Manual Chain Block, Type CB is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 6 sizes, 1 t to 10 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type CB, such as IH-LR-CB-CB-1T?",
+          "a": "Manual Chain Block, Type CB part numbers begin with IH-LR-CB-CB and end in a size code: IH-LR-CB-CB-1T is the 1 t size and IH-LR-CB-CB-10T is the 10 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type CB come in?",
+          "a": "Manual Chain Block, Type CB is listed in 6 sizes, 1 t to 10 t, each with its own Indus part number, for example IH-LR-CB-CB-1T and IH-LR-CB-CB-10T. The table includes 1 t: WLL 1 t and 10 t: WLL 10 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type CB?",
+          "a": "For Manual Chain Block, Type CB, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type CB?",
+          "a": "Manual Chain Block, Type CB is listed with a working load limit 1 to 10 t. For example, 3 t: WLL 3 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Manual Chain Block, Type CB made from, and what finish does it have?",
+          "a": "For Manual Chain Block, Type CB, the material is Steel body, alloy load chain and forged hooks; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type CB?",
+          "a": "Manual Chain Block, Type CB is listed to Hand chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type CB connect to or work with?",
+          "a": "For Manual Chain Block, Type CB, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type CB be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type CB inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type CB differ from Manual Chain Block — Type B?",
+          "a": "Manual Chain Block, Type CB differs from [Manual Chain Block — Type B](/p/manual-chain-block-type-b) in its size range 1 t to 10 t against 0.5 t to 20 t; working load limit 1 to 10 t against 0.5 to 20 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type CB shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type CB from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type CB available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type CB is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type D used for?",
+          "a": "Manual Chain Block, Type D is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 9 sizes, 0.5 t to 30 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type D, such as IH-LR-CB-D-0P5T?",
+          "a": "Manual Chain Block, Type D part numbers begin with IH-LR-CB-D and end in a size code: IH-LR-CB-D-0P5T is the 0.5 t size and IH-LR-CB-D-30T is the 30 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type D come in?",
+          "a": "Manual Chain Block, Type D is listed in 9 sizes, 0.5 t to 30 t, each with its own Indus part number, for example IH-LR-CB-D-0P5T and IH-LR-CB-D-30T. The table includes 0.5 t: WLL 0.5 t, proof load 0.75 t and 30 t: WLL 30 t, proof load 45 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type D?",
+          "a": "For Manual Chain Block, Type D, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type D?",
+          "a": "Manual Chain Block, Type D is listed with a working load limit 0.5 to 30 t. For example, 5 t: WLL 5 t, proof load 7.5 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Manual Chain Block, Type D made from, and what finish does it have?",
+          "a": "For Manual Chain Block, Type D, the material is Steel body, alloy load chain and forged hooks; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type D?",
+          "a": "Manual Chain Block, Type D is listed to Hand chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type D connect to or work with?",
+          "a": "For Manual Chain Block, Type D, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type D be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type D inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type D differ from Manual Chain Block — Type A?",
+          "a": "Manual Chain Block, Type D differs from [Manual Chain Block — Type A](/p/manual-chain-block-type-a) in its size range 0.5 t to 30 t against 0.5 t to 20 t; working load limit 0.5 to 30 t against 0.5 to 20 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type D shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type D from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type D available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type D is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-e",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type E used for?",
+          "a": "Manual Chain Block, Type E is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 8 sizes, 0.5 t to 20 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type E, such as IH-LR-CB-E-0T5?",
+          "a": "Manual Chain Block, Type E part numbers begin with IH-LR-CB-E and end in a size code: IH-LR-CB-E-0T5 is the 0.5 t size and IH-LR-CB-E-20T is the 20 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type E come in?",
+          "a": "Manual Chain Block, Type E is listed in 8 sizes, 0.5 t to 20 t, each with its own Indus part number, for example IH-LR-CB-E-0T5 and IH-LR-CB-E-20T. The table includes 0.5 t: WLL 0.5 t, proof load 0.75 t and 20 t: WLL 20 t, proof load 30 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type E?",
+          "a": "For Manual Chain Block, Type E, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type E?",
+          "a": "Manual Chain Block, Type E is listed with a working load limit 0.5 to 20 t. For example, 3 t: WLL 3 t, proof load 4.5 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Manual Chain Block, Type E supplied in?",
+          "a": "The listing for Manual Chain Block, Type E does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type E?",
+          "a": "For Manual Chain Block, Type E, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type E connect to or work with?",
+          "a": "For Manual Chain Block, Type E, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type E be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type E inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type E differ from Manual Chain Block — Type A?",
+          "a": "Manual Chain Block, Type E differs from [Manual Chain Block — Type A](/p/manual-chain-block-type-a) in its weight 9.5 to 150 kg against 7 to 160 kg. Choose on the size range and ratings you need; the part numbers for each are in their own size tables."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type E shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type E from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type E available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type E is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-hsz",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type HSZ used for?",
+          "a": "Manual Chain Block, Type HSZ is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 7 sizes, 0.5 t to 10 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type HSZ, such as IH-LR-CB-HSZ-0P5T?",
+          "a": "Manual Chain Block, Type HSZ part numbers begin with IH-LR-CB-HSZ and end in a size code: IH-LR-CB-HSZ-0P5T is the 0.5 t size and IH-LR-CB-HSZ-10T is the 10 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type HSZ come in?",
+          "a": "Manual Chain Block, Type HSZ is listed in 7 sizes, 0.5 t to 10 t, each with its own Indus part number, for example IH-LR-CB-HSZ-0P5T and IH-LR-CB-HSZ-10T. The table includes 0.5 t: WLL 0.5 t, proof load 0.75 t and 10 t: WLL 10 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type HSZ?",
+          "a": "For Manual Chain Block, Type HSZ, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type HSZ?",
+          "a": "Manual Chain Block, Type HSZ is listed with a working load limit 0.5 to 10 t. For example, 2 t: WLL 2 t, proof load 3 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Manual Chain Block, Type HSZ made from, and what finish does it have?",
+          "a": "For Manual Chain Block, Type HSZ, the material is Steel body, alloy load chain and forged hooks; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type HSZ?",
+          "a": "Manual Chain Block, Type HSZ is listed to Hand chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type HSZ connect to or work with?",
+          "a": "For Manual Chain Block, Type HSZ, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type HSZ be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type HSZ inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type HSZ differ from Manual Chain Block — Type A?",
+          "a": "Manual Chain Block, Type HSZ differs from [Manual Chain Block — Type A](/p/manual-chain-block-type-a) in its size range 0.5 t to 10 t against 0.5 t to 20 t; working load limit 0.5 to 10 t against 0.5 to 20 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type HSZ shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type HSZ from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type HSZ available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type HSZ is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-j",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type J used for?",
+          "a": "Manual Chain Block, Type J is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 8 sizes, 0.5 t to 20 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type J, such as IH-LR-CB-J-0T5?",
+          "a": "Manual Chain Block, Type J part numbers begin with IH-LR-CB-J and end in a size code: IH-LR-CB-J-0T5 is the 0.5 t size and IH-LR-CB-J-20T is the 20 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type J come in?",
+          "a": "Manual Chain Block, Type J is listed in 8 sizes, 0.5 t to 20 t, each with its own Indus part number, for example IH-LR-CB-J-0T5 and IH-LR-CB-J-20T. The table includes 0.5 t: WLL 0.5 t, proof load 0.75 t and 20 t: WLL 20 t, proof load 30 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type J?",
+          "a": "For Manual Chain Block, Type J, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type J?",
+          "a": "Manual Chain Block, Type J is listed with a working load limit 0.5 to 20 t. For example, 3 t: WLL 3 t, proof load 4.5 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Manual Chain Block, Type J supplied in?",
+          "a": "The listing for Manual Chain Block, Type J does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type J?",
+          "a": "For Manual Chain Block, Type J, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type J connect to or work with?",
+          "a": "For Manual Chain Block, Type J, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type J be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type J inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type J differ from Manual Chain Block — Type A?",
+          "a": "Manual Chain Block, Type J differs from [Manual Chain Block — Type A](/p/manual-chain-block-type-a) in its weight 8 to 156 kg against 7 to 160 kg. Choose on the size range and ratings you need; the part numbers for each are in their own size tables."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type J shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type J from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type J available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type J is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-orm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type ORM used for?",
+          "a": "Manual Chain Block, Type ORM is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 7 sizes, 0.25 t to 10 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type ORM, such as IH-LR-CB-ORM-0P25T?",
+          "a": "Manual Chain Block, Type ORM part numbers begin with IH-LR-CB-ORM and end in a size code: IH-LR-CB-ORM-0P25T is the 0.25 t size and IH-LR-CB-ORM-10T is the 10 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type ORM come in?",
+          "a": "Manual Chain Block, Type ORM is listed in 7 sizes, 0.25 t to 10 t, each with its own Indus part number, for example IH-LR-CB-ORM-0P25T and IH-LR-CB-ORM-10T. The table includes 0.25 t: WLL 0.25 t, proof load 0.375 t and 10 t: WLL 10 t, proof load 15 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type ORM?",
+          "a": "For Manual Chain Block, Type ORM, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type ORM?",
+          "a": "Manual Chain Block, Type ORM is listed with a working load limit 0.25 to 10 t. For example, 2 t: WLL 2 t, proof load 3 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Manual Chain Block, Type ORM made from, and what finish does it have?",
+          "a": "For Manual Chain Block, Type ORM, the material is Steel body, alloy load chain and forged hooks; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type ORM?",
+          "a": "Manual Chain Block, Type ORM is listed to Hand chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type ORM connect to or work with?",
+          "a": "For Manual Chain Block, Type ORM, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type ORM be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type ORM inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type ORM differ from Manual Chain Block — Type A?",
+          "a": "Manual Chain Block, Type ORM differs from [Manual Chain Block — Type A](/p/manual-chain-block-type-a) in its size range 0.25 t to 10 t against 0.5 t to 20 t; working load limit 0.25 to 10 t against 0.5 to 20 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type ORM shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type ORM from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type ORM available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type ORM is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-chain-block-type-vl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Manual Chain Block, Type VL used for?",
+          "a": "Manual Chain Block, Type VL is a hand chain hoist, a manual chain block that lifts and positions loads when the user pulls the hand chain, with alloy load chain and forged hooks. It is listed in 10 sizes, 0.5 t to 50 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Manual Chain Block, Type VL, such as IH-LR-CB-VL-0P5T?",
+          "a": "Manual Chain Block, Type VL part numbers begin with IH-LR-CB-VL and end in a size code: IH-LR-CB-VL-0P5T is the 0.5 t size and IH-LR-CB-VL-50T is the 50 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Manual Chain Block, Type VL come in?",
+          "a": "Manual Chain Block, Type VL is listed in 10 sizes, 0.5 t to 50 t, each with its own Indus part number, for example IH-LR-CB-VL-0P5T and IH-LR-CB-VL-50T. The table includes 0.5 t: WLL 0.5 t and 50 t: WLL 50 t."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Manual Chain Block, Type VL?",
+          "a": "For Manual Chain Block, Type VL, choose on rated capacity, the lift you need and the headroom you have. Standard lift is supplied and longer lifts are made to order; the size table shows the hand effort, number of chain falls and minimum hook distance for each size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Manual Chain Block, Type VL?",
+          "a": "Manual Chain Block, Type VL is listed with a working load limit 0.5 to 50 t. For example, 5 t: WLL 5 t. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Manual Chain Block, Type VL made from, and what finish does it have?",
+          "a": "For Manual Chain Block, Type VL, the material is Steel body, alloy load chain and forged hooks; the finish is Painted. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Manual Chain Block, Type VL?",
+          "a": "Manual Chain Block, Type VL is listed to Hand chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Manual Chain Block, Type VL connect to or work with?",
+          "a": "For Manual Chain Block, Type VL, hang it from a rated trolley, beam clamp or fixed point, and sling the load with rated slings. See the [beam trolleys shelf](/c/beam-trolleys) for trolleys and the [lever hoists in this shelf](/c/chain-blocks-manual-hoists) for pulling and tensioning."
+        },
+        {
+          "slot": "I",
+          "q": "How should Manual Chain Block, Type VL be inspected and looked after?",
+          "a": "Before use, check the load chain for stretch and nicks, the hooks and their latches, and that the brake holds. Never use a hand chain block for more than its rated load, and have Manual Chain Block, Type VL inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Manual Chain Block, Type VL differ from Manual Chain Block — Type A?",
+          "a": "Manual Chain Block, Type VL differs from [Manual Chain Block — Type A](/p/manual-chain-block-type-a) in its size range 0.5 t to 50 t against 0.5 t to 20 t; working load limit 0.5 to 50 t against 0.5 to 20 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Manual Chain Block, Type VL shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Manual Chain Block, Type VL from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Chain Block — Type VL available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Chain Block — Type VL is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-manual-chain-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Stainless Steel Manual Chain Block used for?",
+          "a": "Stainless Steel Manual Chain Block is a hand chain hoist in stainless steel 304 or 316 for lifting in washdown, food, marine and chemical settings where painted carbon steel would corrode. It is listed in 6 sizes, 0.5 t to 5 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Stainless Steel Manual Chain Block, such as IH-LR-CB-SS-0P5T?",
+          "a": "Stainless Steel Manual Chain Block part numbers begin with IH-LR-CB-SS and end in a size code: IH-LR-CB-SS-0P5T is the 0.5 t size and IH-LR-CB-SS-5T is the 5 t size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Stainless Steel Manual Chain Block come in?",
+          "a": "Stainless Steel Manual Chain Block is listed in 6 sizes, 0.5 t to 5 t, each with its own Indus part number, for example IH-LR-CB-SS-0P5T and IH-LR-CB-SS-5T. The table includes 0.5 t: WLL 0.5 t, proof load 6.25 kN and 5 t: WLL 5 t, proof load 62.5 kN."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Manual Chain Block?",
+          "a": "For Stainless Steel Manual Chain Block, choose on capacity and lift height, and say which stainless grade, 304 or 316, your environment needs. Allow for the extra weight of the chain on longer lifts."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Stainless Steel Manual Chain Block?",
+          "a": "Stainless Steel Manual Chain Block is listed with a working load limit 0.5 to 5 t. For example, 2 t: WLL 2 t, proof load 25 kN. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is Stainless Steel Manual Chain Block made from, and what finish does it have?",
+          "a": "For Stainless Steel Manual Chain Block, the material is Stainless steel 304 or 316; the finish is Stainless, as machined. If your site needs a particular material grade, coating or material certificate, say so on the enquiry and we confirm it before the order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Stainless Steel Manual Chain Block?",
+          "a": "Stainless Steel Manual Chain Block is listed to Hand chain hoist. The listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Stainless Steel Manual Chain Block connect to or work with?",
+          "a": "For Stainless Steel Manual Chain Block, fit it with rated stainless shackles, slings or a beam trolley of at least equal working load. For carbon-steel hand hoists see the [chain blocks and manual hoists shelf](/c/chain-blocks-manual-hoists)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Stainless Steel Manual Chain Block be inspected and looked after?",
+          "a": "Rinse and dry Stainless Steel Manual Chain Block after exposure to salt or chemicals, check the load chain, hooks and brake before each use, and have it inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Stainless Steel Manual Chain Block differ from Manual Chain Block — Type A?",
+          "a": "Stainless Steel Manual Chain Block differs from [Manual Chain Block — Type A](/p/manual-chain-block-type-a) in its size range 0.5 t to 5 t against 0.5 t to 20 t; working load limit 0.5 to 5 t against 0.5 to 20 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Stainless Steel Manual Chain Block shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Stainless Steel Manual Chain Block from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Manual Chain Block available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Stainless Steel Manual Chain Block is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "wire-rope-puller-aluminium",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Wire Rope Puller, Aluminium used for?",
+          "a": "Wire Rope Puller, Aluminium is a hand-operated wire rope puller for pulling, tensioning and lifting loads by hand, rated 800 kg. Its listed configuration is 8.3mm."
+        },
+        {
+          "slot": "D",
+          "q": "What size does Wire Rope Puller, Aluminium come in?",
+          "a": "Wire Rope Puller, Aluminium is supplied as one listed configuration, 8.3mm, under the Indus part number IH-LR-HO-WRPA-8P3MM. Send us the quantity and, if your layout or fitting differs, the dimensions you need and we confirm it on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Wire Rope Puller, Aluminium?",
+          "a": "For Wire Rope Puller, Aluminium, choose on the working load, which is 800 kg for this model, and on the wire rope size it takes, listed as 8.3mm. Check the lift or pull length you need, since the rope is fed through the body."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Wire Rope Puller, Aluminium?",
+          "a": "Wire Rope Puller, Aluminium is listed with a working load limit 800 kg. For example, 8.3mm: WLL 800 kg. Rated with a 5:1 design factor between working load limit and minimum breaking load. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Wire Rope Puller, Aluminium supplied in?",
+          "a": "The listing for Wire Rope Puller, Aluminium does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Wire Rope Puller, Aluminium?",
+          "a": "For Wire Rope Puller, Aluminium, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Wire Rope Puller, Aluminium connect to or work with?",
+          "a": "For Wire Rope Puller, Aluminium, anchor points, shackles and slings used with the puller must be rated at least equal to its working load. See our [chain blocks and manual hoists shelf](/c/chain-blocks-manual-hoists) for chain-type alternatives."
+        },
+        {
+          "slot": "I",
+          "q": "How should Wire Rope Puller, Aluminium be inspected and looked after?",
+          "a": "For Wire Rope Puller, Aluminium, check the wire rope for broken wires, kinks and crushing, and the body, hooks and release lever before use. Replace damaged rope rather than repair it, and have the puller inspected periodically by a competent person."
+        },
+        {
+          "slot": "J",
+          "q": "Where is Wire Rope Puller, Aluminium typically used?",
+          "a": "For Wire Rope Puller, Aluminium, wire rope pullers are used where a hand-operated pull is needed in any direction, such as positioning machinery, tensioning, and lifting in places without power."
+        },
+        {
+          "slot": "K",
+          "q": "How does Wire Rope Puller, Aluminium differ from Wire Rope Puller — Steel?",
+          "a": "Wire Rope Puller, Aluminium differs from [Wire Rope Puller — Steel](/p/wire-rope-puller-steel) in its size range 8.3mm against 8.3 mm to 16 mm; working load limit 800 kg against 0.8 to 3.2 t."
+        },
+        {
+          "slot": "L",
+          "q": "How are Wire Rope Puller, Aluminium shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Wire Rope Puller, Aluminium from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wire Rope Puller — Aluminium available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Wire Rope Puller — Aluminium is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "wire-rope-puller-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Wire Rope Puller, Steel used for?",
+          "a": "Wire Rope Puller, Steel is a hand-operated wire rope puller for pulling, tensioning and lifting loads by hand, rated 0.8 to 3.2 t. It is listed in 3 sizes, 8.3 mm to 16 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Indus part number for Wire Rope Puller, Steel, such as IH-LR-HO-WRP-8P3MM?",
+          "a": "Wire Rope Puller, Steel part numbers begin with IH-LR-HO-WRP and end in a size code: IH-LR-HO-WRP-8P3MM is the 8.3 mm size and IH-LR-HO-WRP-16MM is the 16 mm size. Quote the full part number from the size table, or give us the size and the load you need, when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Wire Rope Puller, Steel come in?",
+          "a": "Wire Rope Puller, Steel is listed in 3 sizes, 8.3 mm to 16 mm, each with its own Indus part number, for example IH-LR-HO-WRP-8P3MM and IH-LR-HO-WRP-16MM. The table includes 8.3 mm: WLL 0.8 t, WLL 0.284 kN and 16 mm: WLL 3.2 t, WLL 0.441 kN."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Wire Rope Puller, Steel?",
+          "a": "For Wire Rope Puller, Steel, choose on the working load, which is 0.8 to 3.2 t for this model, and on the wire rope size it takes, listed as 8.3 mm to 16 mm. Check the lift or pull length you need, since the rope is fed through the body."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Wire Rope Puller, Steel?",
+          "a": "Wire Rope Puller, Steel is listed with a working load limit 0.8 to 3.2 t. For example, 11 mm: WLL 1.6 t, WLL 0.412 kN. The working load is the figure to lift or load to; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Wire Rope Puller, Steel supplied in?",
+          "a": "The listing for Wire Rope Puller, Steel does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to Wire Rope Puller, Steel?",
+          "a": "For Wire Rope Puller, Steel, the listing gives its documentation as: Manufacturer's test certificate. For third-party certification or a witnessed proof test, say so on the RFQ before the order is placed."
+        },
+        {
+          "slot": "H",
+          "q": "What does Wire Rope Puller, Steel connect to or work with?",
+          "a": "For Wire Rope Puller, Steel, anchor points, shackles and slings used with the puller must be rated at least equal to its working load. See our [chain blocks and manual hoists shelf](/c/chain-blocks-manual-hoists) for chain-type alternatives."
+        },
+        {
+          "slot": "I",
+          "q": "How should Wire Rope Puller, Steel be inspected and looked after?",
+          "a": "For Wire Rope Puller, Steel, check the wire rope for broken wires, kinks and crushing, and the body, hooks and release lever before use. Replace damaged rope rather than repair it, and have the puller inspected periodically by a competent person."
+        },
+        {
+          "slot": "K",
+          "q": "How does Wire Rope Puller, Steel differ from Wire Rope Puller — Aluminium?",
+          "a": "Wire Rope Puller, Steel differs from [Wire Rope Puller — Aluminium](/p/wire-rope-puller-aluminium) in its size range 8.3 mm to 16 mm against 8.3mm; working load limit 0.8 to 3.2 t against 800 kg."
+        },
+        {
+          "slot": "L",
+          "q": "How are Wire Rope Puller, Steel shipped, and can they be exported from Dubai?",
+          "a": "Yes. We ship Wire Rope Puller, Steel from our warehouse in Dubai, UAE, to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the part numbers, quantities and delivery country through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wire Rope Puller — Steel available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Wire Rope Puller — Steel is built to order and supplied from Dubai, UAE, with shipping worldwide. The lead time is confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

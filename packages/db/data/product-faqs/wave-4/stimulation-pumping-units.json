@@ -1,0 +1,80 @@
+{
+  "family": "stimulation-pumping-units",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "stimulation-pumping-unit-twin-triplex-1-000-hp-15-000-psi-trailer-mounted",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a twin triplex 1,000 HP 15,000 psi stimulation pumping unit used for?",
+          "a": "A twin triplex stimulation pumping unit pumps water, acid, brine and mud into a well for stimulation. This trailer-mounted unit has two triplex pumps, each rated 1,000 HP continuous duty at 15,000 psi MAWP, with a diesel-hydraulic drive and full electronic control."
+        },
+        {
+          "slot": "B",
+          "q": "What does twin triplex mean on this stimulation pumping unit?",
+          "a": "Twin triplex means two triplex plunger pumps on one trailer, each with three plungers. Each pump on this unit is rated 1,000 HP continuous duty at 15,000 psi MAWP."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure and power rating does the twin triplex pumping unit have?",
+          "a": "Each pump is rated 1,000 HP continuous duty at 15,000 psi MAWP. The shelf range is single or twin triplex units for stimulation service at 10K to 15K psi, on skid, trailer or truck."
+        },
+        {
+          "slot": "D",
+          "q": "Skid, trailer or truck: how is the stimulation pumping unit mounted?",
+          "a": "This listing is trailer-mounted on a custom-built trailer. The shelf also lists skid and truck-mounted units; state the mounting and the destination on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 15,000 psi pumping unit?",
+          "a": "The unit is rated 15,000 psi MAWP per pump, the maximum allowable working pressure. Keep the treating pressure below the lowest-rated component in the surface line."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids can the stimulation pumping unit pump?",
+          "a": "The fluid end is rated for water, acid, brine and mud injection. State the acid type and concentration on the RFQ so the fluid-end material and seals are matched."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates and options are available on the pumping unit?",
+          "a": "The listing gives CE, GOST and Rigsafe / Zone 2 options on request, and a DNV skid variant for offshore. State the approvals your site requires on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What drives the stimulation pumping unit, and what does it connect to?",
+          "a": "A diesel deck engine drives the pumps through an Allison, CAT or ZF transmission. The discharge connects to the treating line; see the [stimulation transfer pump](/c/stimulation-transfer-pump) shelf for feeding the unit."
+        },
+        {
+          "slot": "I",
+          "q": "How is the pumping unit controlled and winterised?",
+          "a": "It has a full electronic control system with an HVAC operator cabin and pre-heating winterisation, and it integrates with cementing and data-van fleet networks."
+        },
+        {
+          "slot": "K",
+          "q": "Stimulation pumping unit or nitrogen unit: what is the difference?",
+          "a": "A stimulation pumping unit pumps liquids such as water and acid, while a nitrogen unit supplies nitrogen. See the [stimulation nitrogen unit](/c/stimulation-nitrogen-unit) shelf for gas."
+        },
+        {
+          "slot": "L",
+          "q": "Can the twin triplex pumping unit be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its trailer, with a custom trailer and the registration documents for the destination. Give the destination and we confirm freight and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the twin triplex 1,000 HP pumping unit in Dubai?",
+          "a": "Yes. We keep the twin triplex 1,000 HP pumping unit in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the pressure, mounting and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

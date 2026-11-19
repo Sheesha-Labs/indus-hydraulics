@@ -1,0 +1,3874 @@
+{
+ "source": "Maker catalogue and part data 2026-11-19 — Oteco Wave 3 (mud pump fluid-end parts)",
+ "imageDir": "",
+ "brandSlug": "oteco",
+ "specTemplate": {
+  "slug": "rig-equipment-spec",
+  "name": "Rig Floor & Rig Hardware",
+  "position": 42,
+  "description": "Rig-floor consumables and rig hardware: product type, model, sizes, what it fits, compound or material, rating and maker.",
+  "fields": [
+   {
+    "key": "product_type",
+    "label": "Product type",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 0
+   },
+   {
+    "key": "model",
+    "label": "Model",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 1
+   },
+   {
+    "key": "sizes",
+    "label": "Sizes",
+    "dataType": "text",
+    "group": "Dimensions",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 2
+   },
+   {
+    "key": "fits",
+    "label": "Fits",
+    "dataType": "text",
+    "group": "Compatibility",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 3
+   },
+   {
+    "key": "material",
+    "label": "Material / compound",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 4
+   },
+   {
+    "key": "rating",
+    "label": "Rating",
+    "dataType": "text",
+    "group": "Performance",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 5
+   },
+   {
+    "key": "connection",
+    "label": "Connection",
+    "dataType": "text",
+    "group": "Dimensions",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 6
+   },
+   {
+    "key": "maker",
+    "label": "Maker",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 7
+   }
+  ]
+ },
+ "categories": [
+  {
+   "slug": "drilling-workover-systems",
+   "name": "Drilling & Workover Systems",
+   "parentSlug": null,
+   "position": 14,
+   "shortDescription": "Drilling & workover packaged systems — mud pump packages, mud manifolds, degassers, mud / workover tanks, liquid mud plants, and mobile labs / workshops.",
+   "seoTitle": "Drilling & Workover Systems — Mud Pumps",
+   "seoDescription": "Engineered drilling & workover packaged systems: mud pump packages, mud manifolds, mud degassers, mud + workover tanks, liquid mud plants",
+   "focusKeyword": "workover systems"
+  },
+  {
+   "slug": "mud-pump-fluid-end-parts",
+   "name": "Mud Pump Fluid-End Parts",
+   "parentSlug": "drilling-workover-systems",
+   "position": 10,
+   "shortDescription": "Mud pump pistons, piston rubbers and hubs, valves and seats, and pulsation dampener diaphragms from Oteco of Houston — authorised distributor, stock in the UAE.",
+   "seoTitle": "Mud Pump Fluid-End Parts — Pistons, Valves, Seats",
+   "seoDescription": "Oteco mud pump pistons, rubbers, hubs, valves and seats and K-10/K-20 dampener diaphragms. Authorised distributor, stock in the UAE.",
+   "focusKeyword": "mud pump fluid end parts",
+   "bands": {
+    "hero": {
+     "intro": "The expendables of the mud pump fluid end — pistons, valves, seats and dampener diaphragms — from Oteco."
+    },
+    "guidance": {
+     "heading": "Start from the pump and the liner",
+     "body": "Pistons go by liner size, series and rod fit (API taper on double-acting pistons, straight bore on single-acting); valves and seats by API series 6 or 7, matched to the pump model; dampener diaphragms by dampener model and pressure."
+    },
+    "standards": {
+     "heading": "API-design parts from Houston",
+     "body": "Oteco makes premium fabric-backed and bonded urethane pistons interchangeable with other API-design pistons, wing-guided valves with carburised bodies and snap-on polyurethane inserts, and one-piece moulded dampener diaphragms."
+    },
+    "service": {
+     "heading": "Oteco, stocked in the UAE",
+     "body": "Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Tell us the part number, or the pump or swivel model and the size, and we confirm it before quoting."
+    },
+    "faq": {
+     "heading": null,
+     "items": [
+      {
+       "q": "Bonded urethane or premium rubber piston?",
+       "a": "Bonded urethane lasts longer in abrasive fluids and oil-based mud, but needs ample liner cooling water; premium fabric-backed rubber suits the widest range of conditions."
+      },
+      {
+       "q": "Which valve and seat fit my pump?",
+       "a": "Oteco lists its valves, seats and springs by pump maker and model — Continental Emsco, Gardner Denver, Ideco, National, OPI-Gist, Oilwell and Skytop Brewster. The valves and seats listing has the full selection table."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-OTC-PST-DA",
+   "slug": "oteco-double-acting-mud-pump-pistons",
+   "title": "Oteco Double-Acting Mud Pump Pistons",
+   "category": "mud-pump-fluid-end-parts",
+   "focusKeyword": "double acting mud pump piston",
+   "descriptionShort": "Oteco Double-Acting Mud Pump Pistons: double-acting premium piston assemblies for duplex mud pumps, 3\" to 8\" liners, series A, B, K and L, with API 3 to 6 or GD1 taper bores — 82 part numbers by liner size, series and rod fit. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Double-acting premium piston assemblies for duplex mud pumps, 3\" to 8\" liners, series A, B, K and L, with API 3 to 6 or GD1 taper bores.</p><p>Oteco makes two piston constructions for triplex and duplex mud pumps:</p><ul><li><strong>Premium pistons</strong> — rubbers with a multi-ply, fabric-reinforced backing that gives positive, wear-resistant seals with high tensile strength and resistance to chemicals, hydrocarbons and abrasion. Oteco states that they are fully interchangeable with other API-design pistons.</li><li><strong>Bonded urethane pistons</strong> — a harder, denser polyurethane bonded to the hub in place of fabric-backed rubber. They resist abrasive fluids, chemicals and oil-based muds of varying aniline point, and give long life in triplex pumps that have ample liner cooling water.</li></ul><p>Choose the piston by the <strong>liner size</strong> (the piston OD), the <strong>series</strong> (hub size — see the table), and the rod fit: double-acting pistons are bored with an API taper (API 3 to 6) or a GD1 taper; single-acting pistons have a 1-inch or a 1-1/2-inch or 1-5/8-inch straight bore.</p><p><strong>Oteco piston series</strong></p><table><thead><tr><th>Series</th><th>Snap ring</th><th>Retainer plate bore</th><th>Liner sizes listed</th></tr></thead><tbody><tr><td>A</td><td>SR20 (2\")</td><td>2\"</td><td>2-3/4\" to 5\"</td></tr><tr><td>K</td><td>SR24 (2-1/2\")</td><td>2-1/2\"</td><td>3-1/2\" to 4-1/2\"</td></tr><tr><td>B</td><td>SR30 (3\")</td><td>3\"</td><td>4-1/2\" to 7-3/4\"</td></tr><tr><td>L</td><td>SR36 (3-3/4\")</td><td>3-3/4\"</td><td>5\" to 9\"</td></tr></tbody></table><p>Liner sizes are decoded from Oteco's part codes — I44 is a 4-1/2-inch piston (inches plus eighths), B the series and the last digits the taper or bore. We confirm the exact piston against your pump and rod before shipping.</p><h3>Related listings</h3><ul><li><a href=\"/p/oteco-single-acting-mud-pump-pistons\">Oteco single-acting and bonded urethane pistons</a></li><li><a href=\"/p/oteco-mud-pump-piston-rubbers-kits\">Oteco piston rubbers and replacement kits</a></li><li><a href=\"/p/oteco-mud-pump-piston-hubs-parts\">Oteco piston hubs, plates and snap rings</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Double-Acting Mud Pump Pistons",
+   "seoDescription": "Oteco double-acting premium mud pump pistons, 3\" to 8\" liners, series A/B/K/L, API 3–6 and GD1 tapers. Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Mud pump piston, double acting",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Model",
+     "value": "Series A, B, K, L",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "model"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Sizes",
+     "value": "3\" to 8\" liners",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "sizes"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Triplex and duplex mud pumps, API-design pistons",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Fabric-reinforced rubber or bonded polyurethane on a steel hub",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "mud pump piston",
+    "triplex piston",
+    "Oteco piston",
+    "piston rubber",
+    "640045",
+    "640046",
+    "640047",
+    "640048",
+    "640049",
+    "640050",
+    "640051",
+    "640052",
+    "640053",
+    "640054",
+    "640055",
+    "640056",
+    "640057",
+    "640058",
+    "640059",
+    "640060",
+    "640061",
+    "640062",
+    "640063",
+    "640064",
+    "640065",
+    "640066",
+    "640067",
+    "640068",
+    "640069",
+    "640070",
+    "640071",
+    "640072",
+    "640073",
+    "640074",
+    "640075",
+    "640076",
+    "640077",
+    "640078",
+    "640079",
+    "640080",
+    "640081",
+    "640082",
+    "640083",
+    "640084",
+    "640085",
+    "640086",
+    "640087",
+    "640088",
+    "640089",
+    "640090",
+    "640091",
+    "640092",
+    "640093",
+    "640094",
+    "640095",
+    "640096",
+    "640097",
+    "640098",
+    "640099",
+    "640100",
+    "640101",
+    "640102",
+    "640103",
+    "640104",
+    "640105",
+    "640106",
+    "640107",
+    "640108",
+    "640109",
+    "640110",
+    "640111",
+    "640112",
+    "640113",
+    "640114",
+    "640115",
+    "640116",
+    "640117",
+    "640118",
+    "640119",
+    "640120",
+    "640121",
+    "640122",
+    "640123",
+    "640124",
+    "640125",
+    "640126"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-pistons-clean.jpg",
+     "alt": "Oteco mud pump pistons: yellow bonded urethane piston above a black premium rubber piston, steel hubs",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    },
+    {
+     "file": "oteco-fe-pistons-pair-clean.jpg",
+     "alt": "Oteco bonded urethane piston and premium rubber piston side by side, showing hub bore and seal lips",
+     "caption": "Oteco product photograph, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-640045",
+     "position": 0,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640046",
+     "position": 1,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640047",
+     "position": 2,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640048",
+     "position": 3,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640049",
+     "position": 4,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640050",
+     "position": 5,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640051",
+     "position": 6,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640052",
+     "position": 7,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640053",
+     "position": 8,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640054",
+     "position": 9,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640055",
+     "position": 10,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640056",
+     "position": 11,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640057",
+     "position": 12,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640058",
+     "position": 13,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640059",
+     "position": 14,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640060",
+     "position": 15,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640061",
+     "position": 16,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640062",
+     "position": 17,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640063",
+     "position": 18,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640064",
+     "position": 19,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640065",
+     "position": 20,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640066",
+     "position": 21,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640067",
+     "position": 22,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640068",
+     "position": 23,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640069",
+     "position": 24,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640070",
+     "position": 25,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640071",
+     "position": 26,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640072",
+     "position": 27,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640073",
+     "position": 28,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640074",
+     "position": 29,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640075",
+     "position": 30,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640076",
+     "position": 31,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640077",
+     "position": 32,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640078",
+     "position": 33,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640079",
+     "position": 34,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640080",
+     "position": 35,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640081",
+     "position": 36,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640082",
+     "position": 37,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640083",
+     "position": 38,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640084",
+     "position": 39,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 3 taper",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640085",
+     "position": 40,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 4 taper",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640086",
+     "position": 41,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series B, API 5 taper",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640087",
+     "position": 42,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640088",
+     "position": 43,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640089",
+     "position": 44,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640090",
+     "position": 45,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640091",
+     "position": 46,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640092",
+     "position": 47,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640093",
+     "position": 48,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640094",
+     "position": 49,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640095",
+     "position": 50,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640096",
+     "position": 51,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640097",
+     "position": 52,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640098",
+     "position": 53,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series L, API 6 taper",
+      "fits": "8\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640099",
+     "position": 54,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, GD1 taper",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640100",
+     "position": 55,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 1 taper",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640101",
+     "position": 56,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 2 taper",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640102",
+     "position": 57,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 3 taper",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640103",
+     "position": 58,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, GD1 taper",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640104",
+     "position": 59,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 1 taper",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640105",
+     "position": 60,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 2 taper",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640106",
+     "position": 61,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 3 taper",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640107",
+     "position": 62,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, GD1 taper",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640108",
+     "position": 63,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 1 taper",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640109",
+     "position": 64,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 2 taper",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640110",
+     "position": 65,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 3 taper",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640111",
+     "position": 66,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, GD1 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640112",
+     "position": 67,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 1 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640113",
+     "position": 68,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 2 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640114",
+     "position": 69,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 3 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640115",
+     "position": 70,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, GD1 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640116",
+     "position": 71,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 1 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640117",
+     "position": 72,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 2 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640118",
+     "position": 73,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series A, API 3 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640119",
+     "position": 74,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 3 taper",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640120",
+     "position": 75,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 4 taper",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640121",
+     "position": 76,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 3 taper",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640122",
+     "position": 77,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 4 taper",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640123",
+     "position": 78,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 3 taper",
+      "fits": "4-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640124",
+     "position": 79,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 4 taper",
+      "fits": "4-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640125",
+     "position": 80,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 3 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640126",
+     "position": 81,
+     "dimensions": {
+      "item": "Premium piston assembly, double acting, series K, API 4 taper",
+      "fits": "4-1/2\" liner"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-PST-SA",
+   "slug": "oteco-single-acting-mud-pump-pistons",
+   "title": "Oteco Single-Acting Mud Pump Pistons — Premium & Bonded Urethane",
+   "category": "mud-pump-fluid-end-parts",
+   "focusKeyword": "single acting mud pump piston",
+   "descriptionShort": "Oteco Single-Acting Mud Pump Pistons — Premium & Bonded Urethane: single-acting premium and bonded urethane piston assemblies for triplex mud pumps, 2-3/4\" to 9\" liners, with 1\" or 1-1/2\"/1-5/8\" straight bores — 46 part numbers by liner size, series and rod fit. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Single-acting premium and bonded urethane piston assemblies for triplex mud pumps, 2-3/4\" to 9\" liners, with 1\" or 1-1/2\"/1-5/8\" straight bores.</p><p>Oteco makes two piston constructions for triplex and duplex mud pumps:</p><ul><li><strong>Premium pistons</strong> — rubbers with a multi-ply, fabric-reinforced backing that gives positive, wear-resistant seals with high tensile strength and resistance to chemicals, hydrocarbons and abrasion. Oteco states that they are fully interchangeable with other API-design pistons.</li><li><strong>Bonded urethane pistons</strong> — a harder, denser polyurethane bonded to the hub in place of fabric-backed rubber. They resist abrasive fluids, chemicals and oil-based muds of varying aniline point, and give long life in triplex pumps that have ample liner cooling water.</li></ul><p>Choose the piston by the <strong>liner size</strong> (the piston OD), the <strong>series</strong> (hub size — see the table), and the rod fit: double-acting pistons are bored with an API taper (API 3 to 6) or a GD1 taper; single-acting pistons have a 1-inch or a 1-1/2-inch or 1-5/8-inch straight bore.</p><p><strong>Oteco piston series</strong></p><table><thead><tr><th>Series</th><th>Snap ring</th><th>Retainer plate bore</th><th>Liner sizes listed</th></tr></thead><tbody><tr><td>A</td><td>SR20 (2\")</td><td>2\"</td><td>2-3/4\" to 5\"</td></tr><tr><td>K</td><td>SR24 (2-1/2\")</td><td>2-1/2\"</td><td>3-1/2\" to 4-1/2\"</td></tr><tr><td>B</td><td>SR30 (3\")</td><td>3\"</td><td>4-1/2\" to 7-3/4\"</td></tr><tr><td>L</td><td>SR36 (3-3/4\")</td><td>3-3/4\"</td><td>5\" to 9\"</td></tr></tbody></table><p>Liner sizes are decoded from Oteco's part codes — I44 is a 4-1/2-inch piston (inches plus eighths), B the series and the last digits the taper or bore. We confirm the exact piston against your pump and rod before shipping.</p><h3>Related listings</h3><ul><li><a href=\"/p/oteco-double-acting-mud-pump-pistons\">Oteco double-acting premium pistons</a></li><li><a href=\"/p/oteco-mud-pump-piston-rubbers-kits\">Oteco piston rubbers and replacement kits</a></li><li><a href=\"/p/oteco-mud-pump-piston-hubs-parts\">Oteco piston hubs, plates and snap rings</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Single-Acting Pistons — Premium & Urethane",
+   "seoDescription": "Oteco single-acting premium and bonded urethane triplex pistons, 2-3/4\" to 9\" liners, straight bore. Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Mud pump piston, single acting",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Model",
+     "value": "Series A, B, K, L",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "model"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Sizes",
+     "value": "2-3/4\" to 9\" liners",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "sizes"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Triplex and duplex mud pumps, API-design pistons",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Fabric-reinforced rubber or bonded polyurethane on a steel hub",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "mud pump piston",
+    "triplex piston",
+    "Oteco piston",
+    "piston rubber",
+    "640000",
+    "640001",
+    "640002",
+    "640004",
+    "640005",
+    "640007",
+    "640008",
+    "640009",
+    "640010",
+    "640011",
+    "640013",
+    "640015",
+    "640016",
+    "640018",
+    "640019",
+    "640021",
+    "640022",
+    "640024",
+    "640025",
+    "640027",
+    "640028",
+    "640030",
+    "640031",
+    "640033",
+    "640034",
+    "640035",
+    "640036",
+    "640037",
+    "640038",
+    "640039",
+    "640040",
+    "640041",
+    "640043",
+    "640044",
+    "640127",
+    "640128",
+    "640129",
+    "640131",
+    "640132",
+    "640133",
+    "640134",
+    "640135",
+    "640136",
+    "640137",
+    "640138",
+    "640205"
+   ],
+   "images": [
+    {
+     "file": "oteco-fe-urethane-piston-clean.jpg",
+     "alt": "Oteco premium bonded urethane piston for triplex mud pumps, yellow polyurethane on a steel hub",
+     "caption": "Oteco fluid end brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    },
+    {
+     "file": "oteco-ov-pistons-clean.jpg",
+     "alt": "Oteco bonded urethane and premium rubber single-acting pistons, one above the other",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-640000",
+     "position": 0,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series A, 1\" straight bore",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640001",
+     "position": 1,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series A, 1-5/8\" straight bore",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640002",
+     "position": 2,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1\" straight bore",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640004",
+     "position": 3,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640005",
+     "position": 4,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1\" straight bore",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640007",
+     "position": 5,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640008",
+     "position": 6,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1\" straight bore",
+      "fits": "4-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640009",
+     "position": 7,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640010",
+     "position": 8,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "4-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640011",
+     "position": 9,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640013",
+     "position": 10,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series K, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640015",
+     "position": 11,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640016",
+     "position": 12,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1\" straight bore",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640018",
+     "position": 13,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640019",
+     "position": 14,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1\" straight bore",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640021",
+     "position": 15,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640022",
+     "position": 16,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1\" straight bore",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640024",
+     "position": 17,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640025",
+     "position": 18,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1\" straight bore",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640027",
+     "position": 19,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640028",
+     "position": 20,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1\" straight bore",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640030",
+     "position": 21,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640031",
+     "position": 22,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1\" straight bore",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640033",
+     "position": 23,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640034",
+     "position": 24,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1\" straight bore",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640035",
+     "position": 25,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640036",
+     "position": 26,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640037",
+     "position": 27,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640038",
+     "position": 28,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640039",
+     "position": 29,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640040",
+     "position": 30,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640041",
+     "position": 31,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640043",
+     "position": 32,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640044",
+     "position": 33,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640127",
+     "position": 34,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640128",
+     "position": 35,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series A, 1\" straight bore",
+      "fits": "2-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640129",
+     "position": 36,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1\" straight bore",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640131",
+     "position": 37,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "8\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640132",
+     "position": 38,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series L, 1\" straight bore",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640133",
+     "position": 39,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640134",
+     "position": 40,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640135",
+     "position": 41,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640136",
+     "position": 42,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series B, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640137",
+     "position": 43,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "8\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640138",
+     "position": 44,
+     "dimensions": {
+      "item": "Bonded urethane piston assembly, single acting, series L, 1-1/2\" or 1-5/8\" straight bore",
+      "fits": "9\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-640205",
+     "position": 45,
+     "dimensions": {
+      "item": "Premium piston assembly, single acting, series A, bore code 14/15",
+      "fits": "3-1/4\" liner"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-PST-RUBBERS",
+   "slug": "oteco-mud-pump-piston-rubbers-kits",
+   "title": "Oteco Mud Pump Piston Rubbers & Replacement Kits",
+   "category": "mud-pump-fluid-end-parts",
+   "focusKeyword": "mud pump piston rubber",
+   "descriptionShort": "Oteco Mud Pump Piston Rubbers & Replacement Kits: replacement piston rubbers and rubber replacement kits for single- and double-acting pistons, series A, B, K and L, 2-3/4\" to 8\" — 104 part numbers by liner size, series and rod fit. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Replacement piston rubbers and rubber replacement kits for single- and double-acting pistons, series A, B, K and L, 2-3/4\" to 8\".</p><p>Oteco makes two piston constructions for triplex and duplex mud pumps:</p><ul><li><strong>Premium pistons</strong> — rubbers with a multi-ply, fabric-reinforced backing that gives positive, wear-resistant seals with high tensile strength and resistance to chemicals, hydrocarbons and abrasion. Oteco states that they are fully interchangeable with other API-design pistons.</li><li><strong>Bonded urethane pistons</strong> — a harder, denser polyurethane bonded to the hub in place of fabric-backed rubber. They resist abrasive fluids, chemicals and oil-based muds of varying aniline point, and give long life in triplex pumps that have ample liner cooling water.</li></ul><p>Choose the piston by the <strong>liner size</strong> (the piston OD), the <strong>series</strong> (hub size — see the table), and the rod fit: double-acting pistons are bored with an API taper (API 3 to 6) or a GD1 taper; single-acting pistons have a 1-inch or a 1-1/2-inch or 1-5/8-inch straight bore.</p><p><strong>Oteco piston series</strong></p><table><thead><tr><th>Series</th><th>Snap ring</th><th>Retainer plate bore</th><th>Liner sizes listed</th></tr></thead><tbody><tr><td>A</td><td>SR20 (2\")</td><td>2\"</td><td>2-3/4\" to 5\"</td></tr><tr><td>K</td><td>SR24 (2-1/2\")</td><td>2-1/2\"</td><td>3-1/2\" to 4-1/2\"</td></tr><tr><td>B</td><td>SR30 (3\")</td><td>3\"</td><td>4-1/2\" to 7-3/4\"</td></tr><tr><td>L</td><td>SR36 (3-3/4\")</td><td>3-3/4\"</td><td>5\" to 9\"</td></tr></tbody></table><p>Liner sizes are decoded from Oteco's part codes — I44 is a 4-1/2-inch piston (inches plus eighths), B the series and the last digits the taper or bore. We confirm the exact piston against your pump and rod before shipping.</p><h3>Related listings</h3><ul><li><a href=\"/p/oteco-double-acting-mud-pump-pistons\">Oteco double-acting premium pistons</a></li><li><a href=\"/p/oteco-single-acting-mud-pump-pistons\">Oteco single-acting and bonded urethane pistons</a></li><li><a href=\"/p/oteco-mud-pump-piston-hubs-parts\">Oteco piston hubs, plates and snap rings</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Piston Rubbers & Replacement Kits",
+   "seoDescription": "Oteco mud pump piston rubbers and rubber replacement kits, single and double acting, series A/B/K/L, 2-3/4\" to 8\". UAE stock.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Mud pump piston rubber and replacement kit",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Model",
+     "value": "Series A, B, K, L",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "model"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Sizes",
+     "value": "2-3/4\" to 8\" liners",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "sizes"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Triplex and duplex mud pumps, API-design pistons",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Fabric-reinforced rubber or bonded polyurethane on a steel hub",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "mud pump piston",
+    "triplex piston",
+    "Oteco piston",
+    "piston rubber",
+    "650002",
+    "650003",
+    "650004",
+    "650007",
+    "650018",
+    "650019",
+    "650020",
+    "650021",
+    "650022",
+    "650023",
+    "650024",
+    "650025",
+    "650026",
+    "650027",
+    "650028",
+    "650029",
+    "650030",
+    "650031",
+    "650032",
+    "650033",
+    "650034",
+    "650035",
+    "650036",
+    "650037",
+    "650038",
+    "650039",
+    "650040",
+    "650041",
+    "650042",
+    "650043",
+    "650044",
+    "650045",
+    "650046",
+    "650047",
+    "650048",
+    "650100",
+    "650101",
+    "650102",
+    "650103",
+    "650104",
+    "650105",
+    "650106",
+    "650107",
+    "650108",
+    "650109",
+    "650110",
+    "650111",
+    "650112",
+    "650113",
+    "650114",
+    "650115",
+    "650116",
+    "650117",
+    "650118",
+    "650119",
+    "650120",
+    "650121",
+    "650122",
+    "650123",
+    "650124",
+    "650125",
+    "650126",
+    "650127",
+    "650128",
+    "650129",
+    "650130",
+    "650131",
+    "650132",
+    "650133",
+    "650134",
+    "650135",
+    "650200",
+    "650201",
+    "650202",
+    "650203",
+    "650204",
+    "650205",
+    "650206",
+    "650207",
+    "650208",
+    "650209",
+    "650210",
+    "650211",
+    "650212",
+    "650213",
+    "650214",
+    "650215",
+    "650216",
+    "650217",
+    "650218",
+    "650219",
+    "650220",
+    "650221",
+    "650222",
+    "650223",
+    "650224",
+    "650225",
+    "650226",
+    "650227",
+    "650228",
+    "650229",
+    "650231",
+    "650232",
+    "650238"
+   ],
+   "images": [
+    {
+     "file": "oteco-fe-pistons-pair-clean.jpg",
+     "alt": "Oteco premium piston with black fabric-backed rubber and red lip seal on a steel hub, beside a urethane piston",
+     "caption": "Oteco product photograph, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-650002",
+     "position": 0,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series K",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650003",
+     "position": 1,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series K",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650004",
+     "position": 2,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series K",
+      "fits": "4-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650007",
+     "position": 3,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series K",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650018",
+     "position": 4,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650019",
+     "position": 5,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650020",
+     "position": 6,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650021",
+     "position": 7,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650022",
+     "position": 8,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650023",
+     "position": 9,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650024",
+     "position": 10,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650025",
+     "position": 11,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650026",
+     "position": 12,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650027",
+     "position": 13,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650028",
+     "position": 14,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650029",
+     "position": 15,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650030",
+     "position": 16,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650031",
+     "position": 17,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series B",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650032",
+     "position": 18,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650033",
+     "position": 19,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650034",
+     "position": 20,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650035",
+     "position": 21,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650036",
+     "position": 22,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650037",
+     "position": 23,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650038",
+     "position": 24,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650039",
+     "position": 25,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650040",
+     "position": 26,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650041",
+     "position": 27,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650042",
+     "position": 28,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650043",
+     "position": 29,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series L",
+      "fits": "8\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650044",
+     "position": 30,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series A",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650045",
+     "position": 31,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series A",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650046",
+     "position": 32,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series A",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650047",
+     "position": 33,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series A",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650048",
+     "position": 34,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, double acting, series A",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650100",
+     "position": 35,
+     "dimensions": {
+      "item": "Piston rubber, series K",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650101",
+     "position": 36,
+     "dimensions": {
+      "item": "Piston rubber, series K",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650102",
+     "position": 37,
+     "dimensions": {
+      "item": "Piston rubber, series K",
+      "fits": "4-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650103",
+     "position": 38,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650104",
+     "position": 39,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650105",
+     "position": 40,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650106",
+     "position": 41,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650107",
+     "position": 42,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650108",
+     "position": 43,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650109",
+     "position": 44,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650110",
+     "position": 45,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650111",
+     "position": 46,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650112",
+     "position": 47,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650113",
+     "position": 48,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650114",
+     "position": 49,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650115",
+     "position": 50,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650116",
+     "position": 51,
+     "dimensions": {
+      "item": "Piston rubber, series B",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650117",
+     "position": 52,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650118",
+     "position": 53,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650119",
+     "position": 54,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650120",
+     "position": 55,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650121",
+     "position": 56,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650122",
+     "position": 57,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650123",
+     "position": 58,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650124",
+     "position": 59,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650125",
+     "position": 60,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650126",
+     "position": 61,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650127",
+     "position": 62,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650128",
+     "position": 63,
+     "dimensions": {
+      "item": "Piston rubber, series L",
+      "fits": "8\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650129",
+     "position": 64,
+     "dimensions": {
+      "item": "Piston rubber, series A",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650130",
+     "position": 65,
+     "dimensions": {
+      "item": "Piston rubber, series A",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650131",
+     "position": 66,
+     "dimensions": {
+      "item": "Piston rubber, series A",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650132",
+     "position": 67,
+     "dimensions": {
+      "item": "Piston rubber, series A",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650133",
+     "position": 68,
+     "dimensions": {
+      "item": "Piston rubber, series A",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650134",
+     "position": 69,
+     "dimensions": {
+      "item": "Piston rubber, series K",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650135",
+     "position": 70,
+     "dimensions": {
+      "item": "Piston rubber, series A",
+      "fits": "2-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650200",
+     "position": 71,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series K",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650201",
+     "position": 72,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series K",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650202",
+     "position": 73,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series K",
+      "fits": "4-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650203",
+     "position": 74,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650204",
+     "position": 75,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "4-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650205",
+     "position": 76,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650206",
+     "position": 77,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650207",
+     "position": 78,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650208",
+     "position": 79,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "5-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650209",
+     "position": 80,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650210",
+     "position": 81,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650211",
+     "position": 82,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650212",
+     "position": 83,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650213",
+     "position": 84,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650214",
+     "position": 85,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650215",
+     "position": 86,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650216",
+     "position": 87,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series B",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650217",
+     "position": 88,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650218",
+     "position": 89,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650219",
+     "position": 90,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650220",
+     "position": 91,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650221",
+     "position": 92,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650222",
+     "position": 93,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650223",
+     "position": 94,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650224",
+     "position": 95,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series L",
+      "fits": "8\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650225",
+     "position": 96,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series A",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650226",
+     "position": 97,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series A",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650227",
+     "position": 98,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series A",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650228",
+     "position": 99,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series A",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650229",
+     "position": 100,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series A",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650231",
+     "position": 101,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series K",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650232",
+     "position": 102,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series A",
+      "fits": "2-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650238",
+     "position": 103,
+     "dimensions": {
+      "item": "Piston rubber replacement kit, single acting, series A",
+      "fits": "3-1/4\" liner"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-PST-PARTS",
+   "slug": "oteco-mud-pump-piston-hubs-parts",
+   "title": "Oteco Mud Pump Piston Hubs, Retainer Plates & Snap Rings",
+   "category": "mud-pump-fluid-end-parts",
+   "focusKeyword": "mud pump piston hub",
+   "descriptionShort": "Oteco Mud Pump Piston Hubs, Retainer Plates & Snap Rings: piston hubs for single- and double-acting pistons, piston bodies for bonded rubber, rubber retainer plates, snap rings and bore inserts, series A, B, K and L — 92 part numbers by liner size, series and rod fit. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Piston hubs for single- and double-acting pistons, piston bodies for bonded rubber, rubber retainer plates, snap rings and bore inserts, series A, B, K and L.</p><p>Oteco makes two piston constructions for triplex and duplex mud pumps:</p><ul><li><strong>Premium pistons</strong> — rubbers with a multi-ply, fabric-reinforced backing that gives positive, wear-resistant seals with high tensile strength and resistance to chemicals, hydrocarbons and abrasion. Oteco states that they are fully interchangeable with other API-design pistons.</li><li><strong>Bonded urethane pistons</strong> — a harder, denser polyurethane bonded to the hub in place of fabric-backed rubber. They resist abrasive fluids, chemicals and oil-based muds of varying aniline point, and give long life in triplex pumps that have ample liner cooling water.</li></ul><p>Choose the piston by the <strong>liner size</strong> (the piston OD), the <strong>series</strong> (hub size — see the table), and the rod fit: double-acting pistons are bored with an API taper (API 3 to 6) or a GD1 taper; single-acting pistons have a 1-inch or a 1-1/2-inch or 1-5/8-inch straight bore.</p><p><strong>Oteco piston series</strong></p><table><thead><tr><th>Series</th><th>Snap ring</th><th>Retainer plate bore</th><th>Liner sizes listed</th></tr></thead><tbody><tr><td>A</td><td>SR20 (2\")</td><td>2\"</td><td>2-3/4\" to 5\"</td></tr><tr><td>K</td><td>SR24 (2-1/2\")</td><td>2-1/2\"</td><td>3-1/2\" to 4-1/2\"</td></tr><tr><td>B</td><td>SR30 (3\")</td><td>3\"</td><td>4-1/2\" to 7-3/4\"</td></tr><tr><td>L</td><td>SR36 (3-3/4\")</td><td>3-3/4\"</td><td>5\" to 9\"</td></tr></tbody></table><p>Liner sizes are decoded from Oteco's part codes — I44 is a 4-1/2-inch piston (inches plus eighths), B the series and the last digits the taper or bore. We confirm the exact piston against your pump and rod before shipping.</p><h3>Related listings</h3><ul><li><a href=\"/p/oteco-double-acting-mud-pump-pistons\">Oteco double-acting premium pistons</a></li><li><a href=\"/p/oteco-single-acting-mud-pump-pistons\">Oteco single-acting and bonded urethane pistons</a></li><li><a href=\"/p/oteco-mud-pump-piston-rubbers-kits\">Oteco piston rubbers and replacement kits</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Piston Hubs, Retainer Plates & Snap Rings",
+   "seoDescription": "Oteco mud pump piston hubs, bodies, rubber retainer plates, snap rings and bore inserts, series A/B/K/L. Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Mud pump piston hub and parts",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Model",
+     "value": "Series A, B, K, L",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "model"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Sizes",
+     "value": "2-3/4\" to 8\" liners",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "sizes"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Triplex and duplex mud pumps, API-design pistons",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Fabric-reinforced rubber or bonded polyurethane on a steel hub",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "mud pump piston",
+    "triplex piston",
+    "Oteco piston",
+    "piston rubber",
+    "301908",
+    "302082",
+    "302083",
+    "302284",
+    "302285",
+    "302409",
+    "302546",
+    "303002",
+    "650001",
+    "650008",
+    "650049",
+    "650050",
+    "650051",
+    "650052",
+    "650053",
+    "650054",
+    "650055",
+    "650056",
+    "650057",
+    "650058",
+    "650059",
+    "650060",
+    "650061",
+    "650062",
+    "650063",
+    "650064",
+    "650065",
+    "650066",
+    "650067",
+    "650068",
+    "650069",
+    "650070",
+    "650071",
+    "650072",
+    "650073",
+    "650074",
+    "650075",
+    "650076",
+    "650077",
+    "650078",
+    "650079",
+    "650080",
+    "650081",
+    "650082",
+    "650083",
+    "650084",
+    "650085",
+    "650086",
+    "650087",
+    "650088",
+    "650089",
+    "650090",
+    "650091",
+    "650092",
+    "650093",
+    "650094",
+    "650095",
+    "650096",
+    "650097",
+    "650098",
+    "650099",
+    "650136",
+    "650137",
+    "650138",
+    "650139",
+    "650140",
+    "650150",
+    "650151",
+    "650152",
+    "650153",
+    "650154",
+    "650155",
+    "650156",
+    "650157",
+    "650158",
+    "650159",
+    "650160",
+    "650161",
+    "650162",
+    "650163",
+    "650164",
+    "650165",
+    "650166",
+    "650167",
+    "650168",
+    "650169",
+    "650170",
+    "650175",
+    "650176",
+    "650177",
+    "650178",
+    "650179"
+   ],
+   "images": [
+    {
+     "file": "oteco-fe-pistons-pair-clean.jpg",
+     "alt": "Oteco piston assemblies showing the steel hub, bore and retainer the parts in this listing fit",
+     "caption": "Oteco product photograph, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-301908",
+     "position": 0,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series L, 1-1/2\" straight bore",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-302082",
+     "position": 1,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series B, 1-1/2\" straight bore",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-302083",
+     "position": 2,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series B, 1-1/2\" straight bore",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-302284",
+     "position": 3,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series B, 1-1/2\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-302285",
+     "position": 4,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series L, 1-1/2\" straight bore",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-302409",
+     "position": 5,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series L, 1-1/2\" straight bore",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-302546",
+     "position": 6,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series B, 1-1/2\" straight bore",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-303002",
+     "position": 7,
+     "dimensions": {
+      "item": "Piston body for bonded rubber, single acting, series B, 1-1/2\" straight bore",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650001",
+     "position": 8,
+     "dimensions": {
+      "item": "Piston hub, single acting, series L, 1-1/2\" straight bore, water cooled",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650008",
+     "position": 9,
+     "dimensions": {
+      "item": "Piston hub, single acting, series K, 1\" straight bore",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650049",
+     "position": 10,
+     "dimensions": {
+      "item": "Piston hub, single acting, series K, 1-1/2\" straight bore",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650050",
+     "position": 11,
+     "dimensions": {
+      "item": "Piston hub, single acting, series A, 1\" straight bore",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650051",
+     "position": 12,
+     "dimensions": {
+      "item": "Piston hub, single acting, series K, 1\" straight bore",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650052",
+     "position": 13,
+     "dimensions": {
+      "item": "Piston hub, single acting, series K, 1\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650053",
+     "position": 14,
+     "dimensions": {
+      "item": "Piston hub, single acting, series K, 1-1/2\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650054",
+     "position": 15,
+     "dimensions": {
+      "item": "Piston hub, single acting, series B, 1-1/2\" straight bore",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650055",
+     "position": 16,
+     "dimensions": {
+      "item": "Piston hub, single acting, series B, 1-1/2\" straight bore",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650056",
+     "position": 17,
+     "dimensions": {
+      "item": "Piston hub, single acting, series B, 1-1/2\" straight bore",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650057",
+     "position": 18,
+     "dimensions": {
+      "item": "Piston hub, single acting, series B, 1-1/2\" straight bore",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650058",
+     "position": 19,
+     "dimensions": {
+      "item": "Piston hub, single acting, series L, 1-1/2\" straight bore",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650059",
+     "position": 20,
+     "dimensions": {
+      "item": "Piston hub, single acting, series L, 1-1/2\" straight bore",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650060",
+     "position": 21,
+     "dimensions": {
+      "item": "Piston hub, single acting, series L, 1-1/2\" straight bore",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650061",
+     "position": 22,
+     "dimensions": {
+      "item": "Piston hub, double acting, series A, taper code 01",
+      "fits": "3\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650062",
+     "position": 23,
+     "dimensions": {
+      "item": "Piston hub, double acting, series A, taper code 01",
+      "fits": "3-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650063",
+     "position": 24,
+     "dimensions": {
+      "item": "Piston hub, double acting, series A, taper code 01",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650064",
+     "position": 25,
+     "dimensions": {
+      "item": "Piston hub, double acting, series A, taper code 01",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650065",
+     "position": 26,
+     "dimensions": {
+      "item": "Piston hub, double acting, series A, taper code 01",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650066",
+     "position": 27,
+     "dimensions": {
+      "item": "Piston hub, double acting, series A, GD1 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650067",
+     "position": 28,
+     "dimensions": {
+      "item": "Piston hub, double acting, series A, GD1 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650068",
+     "position": 29,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 3 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650069",
+     "position": 30,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 3 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650070",
+     "position": 31,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 3 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650071",
+     "position": 32,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 3 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650072",
+     "position": 33,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650073",
+     "position": 34,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650074",
+     "position": 35,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650075",
+     "position": 36,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650076",
+     "position": 37,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "6-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650077",
+     "position": 38,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650078",
+     "position": 39,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650079",
+     "position": 40,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650080",
+     "position": 41,
+     "dimensions": {
+      "item": "Piston hub, double acting, series K, API 3 taper",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650081",
+     "position": 42,
+     "dimensions": {
+      "item": "Piston hub, double acting, series K, API 3 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650082",
+     "position": 43,
+     "dimensions": {
+      "item": "Piston hub, double acting, series L, API 6 taper",
+      "fits": "5\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650083",
+     "position": 44,
+     "dimensions": {
+      "item": "Piston hub, double acting, series L, API 6 taper",
+      "fits": "5-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650084",
+     "position": 45,
+     "dimensions": {
+      "item": "Piston hub, double acting, series L, API 6 taper",
+      "fits": "6\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650085",
+     "position": 46,
+     "dimensions": {
+      "item": "Piston hub, double acting, series L, API 6 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650086",
+     "position": 47,
+     "dimensions": {
+      "item": "Piston hub, single acting, series L, 1-1/2\" straight bore",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650087",
+     "position": 48,
+     "dimensions": {
+      "item": "Piston hub, double acting, series K, API 4 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650088",
+     "position": 49,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 3 taper",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650089",
+     "position": 50,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650090",
+     "position": 51,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "7-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650091",
+     "position": 52,
+     "dimensions": {
+      "item": "Piston hub, single acting, series K, 1-1/2\" straight bore",
+      "fits": "4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650092",
+     "position": 53,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650093",
+     "position": 54,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 3 taper",
+      "fits": "6-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650094",
+     "position": 55,
+     "dimensions": {
+      "item": "Piston hub, single acting, series A, 1\" straight bore",
+      "fits": "2-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650095",
+     "position": 56,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650096",
+     "position": 57,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650097",
+     "position": 58,
+     "dimensions": {
+      "item": "Piston hub, double acting, series L, API 6 taper",
+      "fits": "7-3/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650098",
+     "position": 59,
+     "dimensions": {
+      "item": "Piston hub, double acting, series L, API 6 taper",
+      "fits": "8\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650099",
+     "position": 60,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 3 taper",
+      "fits": "7\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650136",
+     "position": 61,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "7-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650137",
+     "position": 62,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650138",
+     "position": 63,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 4 taper",
+      "fits": "4-1/2\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650139",
+     "position": 64,
+     "dimensions": {
+      "item": "Piston hub, double acting, series L, API 6 taper",
+      "fits": "6-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650140",
+     "position": 65,
+     "dimensions": {
+      "item": "Piston hub, double acting, series B, API 5 taper",
+      "fits": "5-1/4\" liner"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650150",
+     "position": 66,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series A, 2-3/4\" × 2\"",
+      "fits": "Series A pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650151",
+     "position": 67,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series A, 3-1/4\" × 2\"",
+      "fits": "Series A pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650152",
+     "position": 68,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series A, 3-3/4\" × 2\"",
+      "fits": "Series A pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650153",
+     "position": 69,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series K, 3-1/4\" × 2-1/2\"",
+      "fits": "Series K pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650154",
+     "position": 70,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series K, 3-1/2\" × 2-1/2\"",
+      "fits": "Series K pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650155",
+     "position": 71,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series K, 4\" × 2-1/2\"",
+      "fits": "Series K pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650156",
+     "position": 72,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series B, 4\" × 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650157",
+     "position": 73,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series B, 4-1/2\" × 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650158",
+     "position": 74,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series B, 5\" × 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650159",
+     "position": 75,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series B, 5-1/2\" × 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650160",
+     "position": 76,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series B, 6\" × 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650161",
+     "position": 77,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series B, 6-3/8\" × 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650162",
+     "position": 78,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series B, 6-3/4\" × 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650163",
+     "position": 79,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 4-1/2\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650164",
+     "position": 80,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 5\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650165",
+     "position": 81,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 5-1/2\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650166",
+     "position": 82,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 6\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650167",
+     "position": 83,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 6-3/8\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650168",
+     "position": 84,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 6-3/4\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650169",
+     "position": 85,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 7\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650170",
+     "position": 86,
+     "dimensions": {
+      "item": "Piston rubber retainer plate, series L, 7-1/4\" × 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650175",
+     "position": 87,
+     "dimensions": {
+      "item": "Piston snap ring SR20, 2\"",
+      "fits": "Series A pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650176",
+     "position": 88,
+     "dimensions": {
+      "item": "Piston snap ring SR24, 2-1/2\"",
+      "fits": "Series K pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650177",
+     "position": 89,
+     "dimensions": {
+      "item": "Piston snap ring SR30, 3\"",
+      "fits": "Series B pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650178",
+     "position": 90,
+     "dimensions": {
+      "item": "Piston snap ring SR36, 3-3/4\"",
+      "fits": "Series L pistons"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-650179",
+     "position": 91,
+     "dimensions": {
+      "item": "Piston bore insert, 1-5/8\" to 1-1/2\"",
+      "fits": "Single-acting pistons with 1-5/8\" bore"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-VALVES-SEATS",
+   "slug": "oteco-mud-pump-valves-seats",
+   "title": "Oteco Mud Pump Valves & Seats — Wing-Guided, Full-Open, API 6 & 7",
+   "category": "mud-pump-fluid-end-parts",
+   "focusKeyword": "mud pump valve and seat",
+   "descriptionShort": "Oteco premium wing-guided mud pump valves, full-open seats, springs, polyurethane inserts and seat puller heads in API 6 and API 7 series, for 40 triplex and duplex pump models — 15 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco's premium wing-guided valve and full-open seat are made in API 6 and API 7 series for most popular mud pumps:</p><ul><li>A uni-body valve with a snap-on polyurethane insert — no snap rings, plates or keepers to fail — and a carburised body for longer life and lower maintenance.</li><li>A seating angle and full-open seat design that improve flow through the seat and pass lost-circulation material better than conventional valves and seats.</li><li>A full-open seat that is easier to service in valve-over-valve fluid ends and carries a heavy bearing load.</li></ul><p>Each valve must be used with its matching full-open spring. Inserts and seat puller heads are listed separately for each series.</p><p><strong>Oteco premium wing-guided valve and full-open seat selection (fluid end sheet)</strong></p><table><thead><tr><th>Pump</th><th>Model</th><th>Valve</th><th>Seat</th><th>Spring</th></tr></thead><tbody><tr><td>Continental Emsco</td><td>D-125</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-15</td></tr><tr><td>Continental Emsco</td><td>D-225</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-15</td></tr><tr><td>Continental Emsco</td><td>D-375</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-84</td></tr><tr><td>Continental Emsco</td><td>F-1000</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-91</td></tr><tr><td>Continental Emsco</td><td>F-1300</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-91</td></tr><tr><td>Continental Emsco</td><td>FA-1300</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-91</td></tr><tr><td>Continental Emsco</td><td>FA-1600</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-91</td></tr><tr><td>Continental Emsco</td><td>FB-1300</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-91</td></tr><tr><td>Continental Emsco</td><td>FB-1600</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-91</td></tr><tr><td>Gardner Denver</td><td>PZ-10</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Gardner Denver</td><td>PZ-10-K</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Gardner Denver</td><td>PZ-11-L</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Gardner Denver</td><td>PZ-7-G Model A & B</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Gardner Denver</td><td>PZ-8 Model HE</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Gardner Denver</td><td>PZ-9 Model JC & JD</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Ideco</td><td>T-1000</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>Ideco</td><td>T-1300</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Ideco</td><td>T-1600</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Ideco</td><td>T-500</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>Ideco</td><td>T-800</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>National</td><td>10-P-130</td><td>O-U6VL-1</td><td>O-6SL-2</td><td>O-5710-90</td></tr><tr><td>National</td><td>12-P-160</td><td>O-U7VL-1</td><td>O-7SL-2</td><td>O-5710-90</td></tr><tr><td>National</td><td>8-P-80</td><td>O-U6VL-1</td><td>O-6SL-2</td><td>O-5710-90</td></tr><tr><td>National</td><td>9-P-100</td><td>O-U6VL-1</td><td>O-6SL-2</td><td>O-5710-90</td></tr><tr><td>National</td><td>K-180</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-93</td></tr><tr><td>National</td><td>K-280</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-93</td></tr><tr><td>National</td><td>K-380</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-93</td></tr><tr><td>OPI-Gist</td><td>700-HDL</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>1400-PT</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>1700-PT</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>350-PT</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>A1100-PT</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>A1400-PT</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>A1700-PT</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>A560-PT</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>A600-PT</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>Oilwell</td><td>A850-PT</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Skytop Brewster</td><td>B-1000-T</td><td>O-U6VL-1</td><td>O-6SL-1</td><td>O-5710-90</td></tr><tr><td>Skytop Brewster</td><td>B-1300-T</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr><tr><td>Skytop Brewster</td><td>B-1600-T</td><td>O-U7VL-1</td><td>O-7SL-1</td><td>O-5710-90</td></tr></tbody></table><p>The selection table is from Oteco's fluid-end product sheet. Oteco also makes premium stem-guided valves and seats with an extra-wide metal-to-metal seal and a serrated upper face; we confirm the current part number for your pump before quoting.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Related listings</h3><ul><li><a href=\"/p/oteco-double-acting-mud-pump-pistons\">Oteco double-acting premium pistons</a></li><li><a href=\"/p/oteco-single-acting-mud-pump-pistons\">Oteco single-acting and bonded urethane pistons</a></li><li><a href=\"/p/oteco-mud-pump-piston-rubbers-kits\">Oteco piston rubbers and replacement kits</a></li><li><a href=\"/p/oteco-mud-pump-piston-hubs-parts\">Oteco piston hubs, plates and snap rings</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Mud Pump Valves & Seats — API 6 & 7",
+   "seoDescription": "Oteco wing-guided mud pump valves, full-open seats, springs, inserts and pullers, API 6 and 7, for 40 pump models. UAE stock.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Mud pump valve, seat and spring",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Model",
+     "value": "API 6 and API 7 series",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "model"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Sizes",
+     "value": "API 6, API 7",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "sizes"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Continental Emsco, Gardner Denver, Ideco, National, OPI-Gist, Oilwell, Skytop Brewster pumps",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Carburised steel valve, polyurethane insert, steel seat",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "mud pump valve",
+    "valve and seat",
+    "API 7 valve",
+    "full open seat",
+    "wing guided valve",
+    "O-5710-15",
+    "O-5710-84",
+    "O-5710-90",
+    "O-5710-91",
+    "O-5710-93",
+    "O-6SL-1",
+    "O-6SL-2",
+    "O-7SL-1",
+    "O-7SL-2",
+    "O-U6VL-1",
+    "O-U7VL-1",
+    "OP1700-6",
+    "OP1700-7",
+    "OU-23310",
+    "OU-23315"
+   ],
+   "images": [
+    {
+     "file": "oteco-fe-valve-spring-seat-clean.jpg",
+     "alt": "Oteco premium wing-guided mud pump valve with polyurethane insert, its spring and a full-open seat",
+     "caption": "Oteco fluid end brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    },
+    {
+     "file": "oteco-fe-seat-valve-pair-clean.jpg",
+     "alt": "Oteco mud pump valve seat with four cross-arms beside a valve with yellow polyurethane insert",
+     "caption": "Oteco product photograph, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    },
+    {
+     "file": "oteco-ov-valve-seat-clean.jpg",
+     "alt": "Oteco premium stem-guided mud pump valve and seat, polyurethane insert and steel seat",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19); background and JPEG artefacts cleaned with GPT Image 2.6 (Higgsfield), checked against the original."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-O-5710-15",
+     "position": 0,
+     "dimensions": {
+      "item": "Full-open valve spring",
+      "fits": "Continental Emsco D-125, D-225"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-5710-84",
+     "position": 1,
+     "dimensions": {
+      "item": "Full-open valve spring",
+      "fits": "Continental Emsco D-375"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-5710-90",
+     "position": 2,
+     "dimensions": {
+      "item": "Full-open valve spring",
+      "fits": "Gardner Denver PZ-10, PZ-10-K, PZ-11-L, PZ-7-G Model A & B, PZ-8 Model HE, PZ-9 Model JC & JD; Ideco T-1000, T-1300, T-1600, T-500, T-800; National 10-P-130, 12-P-160, 8-P-80, 9-P-100; OPI-Gist 700-HDL; Oilwell 1400-PT, 1700-PT, 350-PT, A1100-PT, A1400-PT, A1700-PT, A560-PT, A600-PT, A850-PT; Skytop Brewster B-1000-T, B-1300-T, B-1600-T"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-5710-91",
+     "position": 3,
+     "dimensions": {
+      "item": "Full-open valve spring",
+      "fits": "Continental Emsco F-1000, F-1300, FA-1300, FA-1600, FB-1300, FB-1600"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-5710-93",
+     "position": 4,
+     "dimensions": {
+      "item": "Full-open valve spring",
+      "fits": "National K-180, K-280, K-380"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-6SL-1",
+     "position": 5,
+     "dimensions": {
+      "item": "Full-open valve seat, API 6 series",
+      "fits": "Continental Emsco D-125, D-225, F-1000; Ideco T-1000, T-500, T-800; OPI-Gist 700-HDL; Oilwell 350-PT, A560-PT, A600-PT; Skytop Brewster B-1000-T"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-6SL-2",
+     "position": 6,
+     "dimensions": {
+      "item": "Full-open valve seat, API 6 series",
+      "fits": "National 10-P-130, 8-P-80, 9-P-100"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-7SL-1",
+     "position": 7,
+     "dimensions": {
+      "item": "Full-open valve seat, API 7 series",
+      "fits": "Continental Emsco D-375, F-1300, FA-1300, FA-1600, FB-1300, FB-1600; Gardner Denver PZ-10, PZ-10-K, PZ-11-L, PZ-7-G Model A & B, PZ-8 Model HE, PZ-9 Model JC & JD; Ideco T-1300, T-1600; National K-180, K-280, K-380; Oilwell 1400-PT, 1700-PT, A1100-PT, A1400-PT, A1700-PT, A850-PT; Skytop Brewster B-1300-T, B-1600-T"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-7SL-2",
+     "position": 8,
+     "dimensions": {
+      "item": "Full-open valve seat, API 7 series",
+      "fits": "National 12-P-160"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-U6VL-1",
+     "position": 9,
+     "dimensions": {
+      "item": "Premium wing-guided valve, API 6 series, carburised body, snap-on polyurethane insert",
+      "fits": "Continental Emsco D-125, D-225, F-1000; Ideco T-1000, T-500, T-800; National 10-P-130, 8-P-80, 9-P-100; OPI-Gist 700-HDL; Oilwell 350-PT, A560-PT, A600-PT; Skytop Brewster B-1000-T"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-O-U7VL-1",
+     "position": 10,
+     "dimensions": {
+      "item": "Premium wing-guided valve, API 7 series, carburised body, snap-on polyurethane insert",
+      "fits": "Continental Emsco D-375, F-1300, FA-1300, FA-1600, FB-1300, FB-1600; Gardner Denver PZ-10, PZ-10-K, PZ-11-L, PZ-7-G Model A & B, PZ-8 Model HE, PZ-9 Model JC & JD; Ideco T-1300, T-1600; National 12-P-160, K-180, K-280, K-380; Oilwell 1400-PT, 1700-PT, A1100-PT, A1400-PT, A1700-PT, A850-PT; Skytop Brewster B-1300-T, B-1600-T"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-OP1700-6",
+     "position": 11,
+     "dimensions": {
+      "item": "Valve seat puller head, API 6 series seats",
+      "fits": "All API 6 series valves"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-OP1700-7",
+     "position": 12,
+     "dimensions": {
+      "item": "Valve seat puller head, API 7 series seats",
+      "fits": "All API 7 series valves"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-OU-23310",
+     "position": 13,
+     "dimensions": {
+      "item": "Polyurethane valve insert, API 6 series",
+      "fits": "All API 6 series valves"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-OU-23315",
+     "position": 14,
+     "dimensions": {
+      "item": "Polyurethane valve insert, API 7 series",
+      "fits": "All API 7 series valves"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-DAMPENER",
+   "slug": "oteco-pulsation-dampener-diaphragms-parts",
+   "title": "Oteco Pulsation Dampener Diaphragms & Parts — K-10, K-20",
+   "category": "mud-pump-fluid-end-parts",
+   "focusKeyword": "pulsation dampener diaphragm",
+   "descriptionShort": "Oteco replacement diaphragms and parts for Hydril and Mattco K-10 and K-20 pulsation dampeners — NBR 5,000 psi (K-10, K-20) and HNBR 7,500 psi (K-20) diaphragms, stabilizers, plates, gauge, charging valve, gaskets — plus the Continental Emsco PD-55 diaphragm. 15 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco makes most replacement parts for Hydril and Mattco K-10 (10 gallon) and K-20 (20 gallon) pulsation dampeners on the mud pump discharge. Diaphragms are moulded in one piece down to the bottom flange, with a metal insert moulded into the bottom so the rubber cannot extrude into the bottom-flange connection. Oteco makes diaphragms for 1,500, 3,000, 5,000 and 7,500 psi service. The part numbers listed here are nitrile (NBR) diaphragms to 5,000 psi for the K-10 and K-20, and a hydrogenated nitrile (HNBR) diaphragm to 7,500 psi for the K-20. The stabilizer, stabilizer plate, screw and lock washer are needed only for the 1,500 psi range.</p><p>The size table also lists the 316 stainless 0–6,000 psi gauge, the brass charging valve with bull plug, the bottom plate gasket, the K-20 bottom plate (4-1/16 in 5,000 psi, R-39) and a diaphragm for the Continental Emsco PD-55 dampener.</p><p>Pre-charge the dampener with nitrogen only, to the pressure the pump maker specifies for the operating pressure; never use air or oxygen.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Pulsation Dampener Diaphragms — K-10, K-20",
+   "seoDescription": "Oteco diaphragms and parts for Hydril/Mattco K-10 and K-20 pulsation dampeners, NBR 5K, HNBR 7.5K (K-20), Emsco PD-55. UAE stock.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Pulsation dampener diaphragm and parts",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Model",
+     "value": "K-10, K-20",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "model"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Sizes",
+     "value": "10 and 20 gallon",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "sizes"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Hydril and Mattco K-10 and K-20; Continental Emsco PD-55",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Nitrile (NBR) or hydrogenated nitrile (HNBR)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Performance",
+     "label": "Rating",
+     "value": "1,500 to 7,500 psi",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "rating"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "pulsation dampener bladder",
+    "K-20 diaphragm",
+    "Hydril K20 diaphragm",
+    "dampener bladder",
+    "123754",
+    "230010",
+    "230012",
+    "230020",
+    "230030",
+    "230040",
+    "230050",
+    "230060",
+    "230070",
+    "230080",
+    "230085",
+    "230110",
+    "230120",
+    "230140",
+    "230150"
+   ],
+   "images": [
+    {
+     "file": "oteco-pd-diagram.jpg",
+     "alt": "Pulsation dampener section drawing: charging valve, gauge, stabilizer plate, diaphragm, bottom plate and gasket",
+     "caption": "Oteco rig hardware brochure drawing, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-123754",
+     "position": 0,
+     "dimensions": {
+      "item": "Bottom plate, 4-1/16\" 5,000 psi R-39",
+      "fits": "K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230010",
+     "position": 1,
+     "dimensions": {
+      "item": "Diaphragm, nitrile (NBR), 0–5,000 psi",
+      "fits": "Hydril / Mattco K-20 (20 gallon)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230012",
+     "position": 2,
+     "dimensions": {
+      "item": "Diaphragm, hydrogenated nitrile (HNBR), 0–7,500 psi",
+      "fits": "Hydril / Mattco K-20 (20 gallon)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230020",
+     "position": 3,
+     "dimensions": {
+      "item": "Diaphragm stabilizer, nitrile (NBR) — optional for 1,500 psi range",
+      "fits": "K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230030",
+     "position": 4,
+     "dimensions": {
+      "item": "Stabilizer plate — optional for 1,500 psi range",
+      "fits": "K-10 and K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230040",
+     "position": 5,
+     "dimensions": {
+      "item": "Screw — optional for 1,500 psi range",
+      "fits": "K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230050",
+     "position": 6,
+     "dimensions": {
+      "item": "Lock washer — optional for 1,500 psi range",
+      "fits": "K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230060",
+     "position": 7,
+     "dimensions": {
+      "item": "Pressure gauge, 0–6,000 psi, 316 stainless",
+      "fits": "K-10 and K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230070",
+     "position": 8,
+     "dimensions": {
+      "item": "Charging valve with bull plug, brass",
+      "fits": "K-10 and K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230080",
+     "position": 9,
+     "dimensions": {
+      "item": "Bottom plate gasket",
+      "fits": "K-10 and K-20"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230085",
+     "position": 10,
+     "dimensions": {
+      "item": "Diaphragm",
+      "fits": "Continental Emsco PD-55 pulsation dampener"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230110",
+     "position": 11,
+     "dimensions": {
+      "item": "Diaphragm, nitrile (NBR), 0–5,000 psi",
+      "fits": "Hydril / Mattco K-10 (10 gallon)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230120",
+     "position": 12,
+     "dimensions": {
+      "item": "Diaphragm stabilizer, nitrile (NBR) — optional for 1,500 psi range",
+      "fits": "K-10"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230140",
+     "position": 13,
+     "dimensions": {
+      "item": "Screw — optional for 1,500 psi range",
+      "fits": "K-10"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-230150",
+     "position": 14,
+     "dimensions": {
+      "item": "Lock washer — optional for 1,500 psi range",
+      "fits": "K-10"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  }
+ ],
+ "hold": []
+}

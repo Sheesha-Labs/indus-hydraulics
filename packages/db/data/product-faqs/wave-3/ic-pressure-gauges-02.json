@@ -1,0 +1,738 @@
+{
+  "family": "ic-pressure-gauges-02",
+  "extraFacts": [
+    {
+      "fact": "75% of a 10,000 psi full scale is 7,500 psi; 75% of 15,000 psi is 11,250 psi.",
+      "source": "Calculated from Enerpac guidance (about 75% of full scale)"
+    },
+    {
+      "fact": "Enerpac advises running a gauge at no more than about 75% of full scale in normal use, and recommends a gauge snubber or needle valve for high-cycle applications. A glycerine fill damps pointer flutter from pump pulsation and vibration.",
+      "source": "Indus Hydraulics Enerpac gauge listings (G-series and H-series text)"
+    },
+    {
+      "fact": "ASME B40.100 covers pressure gauges and gauge attachments, including accuracy grades.",
+      "source": "ASME B40.100"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges [IH-ENE-GAUGE-G25]:   Enerpac 2.5\" glycerin-filled hydraulic pressure gauges, lower or center rear mount, from 100 psi to 15,000 psi full scale. |  | 15 part numbers (e.g. G2509L, G2510L, G2511L, G2512L); mounting Center rear mount; rows: Hydraulic Pressure Gauge, 2.50\" Display Face, 100 PSI, Glycerin Filled / Hydraulic Pressure Gauge, 2.50\" Display Face, 160 PSI, Glycerin Filled / Hydraulic Pressure Gauge, 2.50\" Display Face, 200 PSI, Glycerin Filled / Hydraulic Pressure Gauge, 2.50\" Display Face, 300 PSI, Glycerin Filled / Hydraulic Pressure Gauge, 2.50\" Display Face, 600 PSI, Glycerin Filled / Hydraulic Pressure Gauge, 2.50\" Display Face, 1000 PSI, Glycerin Fille / Hydraulic Pressure Gauge, 2.50\" Display Face, 1000 PSI, Glycerin Fille / Hydraulic Pressure Gauge, 2.50\" Display Face, 2000 PSI, Glycerin Fille || Enerpac 4\" Hydraulic Pressure Gauges: Glycerine-Filled G-Series and High-Cycle Dry H-Series [IH-ENE-GAUGE-G40]:   Enerpac 100 mm (4\") lower-mount hydraulic pressure gauges: glycerine-filled G-series to 10,000 and 15,000 psi, and dry H-series high-cycle gauges to 10,000 psi, with 1/4\" or 1/2\" NPTF connections. |  | 6 part numbers (e.g. G4039L, G4088L, H4049L, H4071L); mounting Lower mount; ports 1/2\" NPTF and 1/4\" NPTF; rows: Hydraulic Pressure Gauge, 4\" Display Face, 10000 PSI, Glycerin Filled, / Hydraulic Pressure Gauge, 4\" Display Face, 10000 PSI, Glycerin Filled, / Hydraulic Pressure Gauge, 4\" Display Face, 10000 PSI, High Cycle, Dry, / Hydraulic Pressure Gauge, 4\" Display Face, 10000 PSI, High Cycle, Dry, / Hydraulic Pressure Gauge, 4\" Display Face, 15000 PSI, Glycerin Filled, / Hydraulic Pressure Gauge, 4\" Display Face, 15000 PSI, Glycerin Filled, || Enerpac DGR-2 Digital High-Pressure Gauge [IH-ENE-GAUGE-DGR]:   Enerpac DGR-2 digital high-pressure gauge, rated to 20,000 psi maximum. |  | 1 part numbers (e.g. DGR2); ; rows: Digital High Pressure Gauge, DGR-2, Rated to 20,000 Maximum PSI || Enerpac GA45GC Gauge Adapter Assembly [IH-ENE-GAUGE-GA45GC]:   Enerpac GA45GC gauge adapter assembly for fitting a gauge into a high-pressure line. |  | 1 part numbers (e.g. GA45GC); ; rows: Gauge Adapter Assembly || Enerpac GF Force and Pressure Gauges [IH-ENE-GAUGE-GF]:   Enerpac GF glycerin-filled gauges that read both pressure and cylinder force, each matched to the cylinder capacity it is listed for. |  | 11 part numbers (e.g. GF10P, GF120P, GF200P, GF20P); ; rows: GF-10P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use wi / GF-120P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use w / GF-200P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use w / GF-20P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use wi / GF-230P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use w / GF-50P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use wi / GF-510P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use w / GF-5P Hydraulic Force and Pressure Gauge, Glycerin Filled, For Use wit || Enerpac GP 4\" Dry Pressure Gauges [IH-ENE-GAUGE-GP]:   Enerpac GP dry pressure gauges with a 4\" display face, 0–10,000 psi and 0–15,000 psi. |  | 2 part numbers (e.g. GP10S, GP15S); ; rows: GP-10S Dry Pressure Gauge, 4\" Display Face, 0-10000 PSI / GP-15S Dry Pressure Gauge, 4\" Display Face, 0-15000 PSI || Enerpac T-6000 Test System Gauges [IH-ENE-GAUGE-T6000]:   Enerpac T-6000 test system gauges in alloy steel and stainless steel, from 1,000 psi to 50,000 psi. |  | 7 part numbers (e.g. T6001L, T6002L, T6003L, T6007L); ; rows: T-6001L Test System Gauge, 1000 PSI, Alloy Steel / T-6002L Test System Gauge, 5000 PSI, Alloy Steel / T-6003L Test System Gauge, 10000 PSI, Alloy Steel / T-6007L Test System Gauge, 10000 PSI, Stainless Steel / T-6008L Test System Gauge, 20000 PSI, Stainless Steel / T-6010L Test System Gauge, 40000 PSI, Stainless Steel / T-6011L Test System Gauge, 50000 PSI, Stainless Steel || 2-1/2\" Glycerin-Filled Panel Gauge, Front Flange, 1/4\" Back Mount [IH-GA-204L]:   2-1/2\" Glycerin-Filled Panel Gauge, Front Flange, 1/4\" Back Mount: brass internals, ASME B40.100, 6 ranges from vacuum and 0–100 psi up to 0–5,000 psi. | Body Configuration 2-1/2\" pressure gauge, centre back mount with front flange; Port A Thread 1/4\" connection, centre back mount with front flange; Nominal Size Range 2-1/2\" dial; Material stainless steel case and bezel, brass internals, polycarbonate lens, glycerin fill; Applicable Standards ASME B40.100 | 6 part numbers (e.g. IH-GA-204L-254A, IH-GA-204L-254E, IH-GA-204L-254G, IH-GA-204L-254K); ; rows:  /  /  /  /  /  || 2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Back Mount [IH-GA-202L]:   2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Back Mount: brass internals, ASME B40.100, 17 ranges from 0–160 psi up to 0–15,000 psi. | Body Configuration 2-1/2\" pressure gauge, centre back mount; Port A Thread 1/4\" connection, centre back mount; Nominal Size Range 2-1/2\" dial; Material stainless steel case and bezel, brass internals, polycarbonate lens, glycerin fill; Applicable Standards ASME B40.100 | 17 part numbers (e.g. IH-GA-202L-254F, IH-GA-202L-254G, IH-GA-202L-254H, IH-GA-202L-254I); ; rows:  /  /  /  /  /  /  /  || 2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Bottom Mount [IH-GA-201L]:   2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Bottom Mount: brass internals, ASME B40.100, 28 ranges from vacuum, compound and 0–15 psi up to 0–15,000 psi. | Body Configuration 2-1/2\" pressure gauge, bottom (lower) mount; Port A Thread 1/4\" connection, bottom (lower) mount; Nominal Size Range 2-1/2\" dial; Material stainless steel case and bezel, brass internals, polycarbonate lens, glycerin fill; Applicable Standards ASME B40.100 | 28 part numbers (e.g. IH-GA-201L-254A, IH-GA-201L-254CB, IH-GA-201L-254CC, IH-GA-201L-254CD); ; rows:  /  /  /  /  /  /  /  || Pressure Gauge, 1/2-inch NPT Bottom Mount, 6-inch Dial, 10,000 psi, SS316, Glycerine-Filled [IH-PG-12NPT-BM-6IN-10K]:   1/2-inch NPT bottom-mount pressure gauge, 6-inch dial, 0-10,000 psi range. SS316 connection, glycerine-filled for smooth reading. |  | 0 part numbers (e.g. ); ; rows: ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "enerpac-2-5-in-glycerin-filled-hydraulic-pressure-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac 2.5\" glycerin-filled hydraulic pressure gauges used for?",
+          "a": "Enerpac 2.5\" gauges are glycerin-filled hydraulic pressure gauges with a lower or center rear mount, from 100 psi to 15,000 psi full scale. Fifteen part numbers are listed on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac 2.5\" gauge part numbers?",
+          "a": "The G25 numbers step up with the range: G2509L is 0-100 psi, G2510L is 0-160 psi and G2536L is 0-15,000 psi. An R at the end, as in G2531R and G2538R, marks the center rear mount versions; the L numbers are lower mount."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the Enerpac 2.5\" gauge come in?",
+          "a": "The ranges are 0-100, 0-160, 0-200, 0-300, 0-600, 0-1,000, 0-2,000, 0-3,000, 0-6,000, 0-10,000 and 0-15,000 psi. Pick a scale whose full reading is roughly twice the normal working pressure."
+        },
+        {
+          "slot": "E",
+          "q": "Which Enerpac 2.5\" gauges have a center rear mount?",
+          "a": "Four are listed with a center rear mount: G2531R (0-1,000 psi), G2534R (0-6,000 psi), G2537R (0-10,000 psi) and G2538R (0-15,000 psi). The rest mount from the lower connection."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluid and pressure basis apply to the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges?",
+          "a": "Gauge ranges are full-scale pressure readings, so choose a range well above the working pressure of the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges application; the pressure is read in psi, and the ranges listed are in the size table. Quote the range and connection you need."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges?",
+          "a": "No calibration certificate is listed for the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 15 part numbers are listed for the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges, for example G2509L, G2510L and G2511L."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges used?",
+          "a": "The Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Enerpac 2.5\" gauge compare with the 4\" G and H series?",
+          "a": "The 2.5\" gauges run from 100 to 15,000 psi, while the [4\" gauges](/p/enerpac-4-in-glycerin-filled-hydraulic-pressure-gauges-g-and-high-cycle-h) cover 10,000 and 15,000 psi with 1/4\" or 1/2\" NPTF connections and add a dry high-cycle H-series."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges in stock in Dubai?",
+          "a": "Yes, we carry Enerpac 2.5\" Glycerin-Filled Hydraulic Pressure Gauges in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-4-in-glycerin-filled-hydraulic-pressure-gauges-g-and-high-cycle-h",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac 4\" G-series and H-series hydraulic pressure gauges used for?",
+          "a": "They are 100 mm (4\") lower-mount hydraulic pressure gauges in two builds. The glycerine-filled G-series goes to 10,000 and 15,000 psi and the dry H-series high-cycle gauges go to 10,000 psi, all with dual psi and bar scales; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac G40 and H40 part numbers?",
+          "a": "The letter is the build: G4039L, G4088L, G4040L and G4089L are glycerine-filled G-series, and H4049L and H4071L are dry high-cycle H-series. The two connections are 1/4\" NPTF and 1/2\" NPTF, which the rows show per part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which ranges and connections does the Enerpac 4\" gauge come in?",
+          "a": "Ranges are 0-10,000 psi and 0-15,000 psi, each with a 1/4\" or 1/2\" NPTF connection. G4088L and H4049L are 10,000 psi with 1/4\" NPTF; G4039L and H4071L are 10,000 psi with 1/2\" NPTF."
+        },
+        {
+          "slot": "E",
+          "q": "What is the difference between the Enerpac G-series and H-series gauge?",
+          "a": "The G-series is glycerine-filled and the H-series is dry. In the G-series the pressure-sensing parts are sealed and damped in glycerine, with a safety blow-out disc and pressure-equalising membrane. The H-series is dry and built for high-cycle work and harsh environments; Enerpac recommends a snubber or needle valve with both."
+        },
+        {
+          "slot": "F",
+          "q": "How much of full scale should an Enerpac gauge run at?",
+          "a": "Enerpac advises running a gauge at no more than about 75% of full scale in normal use. So a 0-10,000 psi gauge suits a working pressure of about 7,500 psi or less."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the Enerpac 4\" G-series and H-series gauges?",
+          "a": "No calibration certificate is listed for the Enerpac 4\" G-series and H-series gauges. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the Enerpac 4\" G-series and H-series gauges to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 6 part numbers are listed for the Enerpac 4\" G-series and H-series gauges, for example G4039L, G4088L and H4049L."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the Enerpac 4\" G-series and H-series gauges in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the Enerpac 4\" G-series and H-series gauges by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac 4\" G-series and H-series gauges used?",
+          "a": "The Enerpac 4\" G-series and H-series gauges are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Enerpac 4\" gauge compare with the GP 4\" dry gauge?",
+          "a": "The G and H series gauges have lower-mount 1/4\" or 1/2\" NPTF connections and a glycerine-filled or high-cycle dry build, while the [GP 4\" dry gauges](/p/enerpac-gp-4-in-dry-pressure-gauges) list two ranges, 0-10,000 and 0-15,000 psi, as dry gauges."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac 4\" G-series and H-series gauges be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac 4\" G-series and H-series gauges from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac 4\" G-series and H-series gauges in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac 4\" G-series and H-series gauges and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-dgr-2-digital-high-pressure-gauge",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Enerpac DGR-2 digital high-pressure gauge used for?",
+          "a": "The Enerpac DGR-2 is a digital high-pressure gauge rated to 20,000 psi maximum, used where a digital reading of hydraulic pressure is wanted instead of a pointer. One part number, DGR2, is listed on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What does DGR2 mean on the Enerpac digital gauge?",
+          "a": "DGR2 is the Enerpac part number for the DGR-2 digital high-pressure gauge, listed as rated to 20,000 maximum psi. Quote DGR2 when ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure range does the Enerpac DGR-2 cover?",
+          "a": "The listing gives 0-20,000 psi, and describes the gauge as rated to 20,000 maximum psi. Do not exceed that rating. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "E",
+          "q": "How should I size a range for the DGR-2?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure; for the DGR-2 at 20,000 psi that suits working pressures up to about 10,000 psi. Enerpac advises about 75% of full scale for its analogue gauges."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluid and pressure basis apply to the Enerpac DGR-2 Digital High-Pressure Gauge?",
+          "a": "Gauge ranges are full-scale pressure readings, so choose a range well above the working pressure of the Enerpac DGR-2 Digital High-Pressure Gauge application; the pressure is read in psi, and the ranges listed are in the size table. Quote the range and connection you need."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the Enerpac DGR-2 Digital High-Pressure Gauge?",
+          "a": "No calibration certificate is listed for the Enerpac DGR-2 Digital High-Pressure Gauge. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the Enerpac DGR-2 Digital High-Pressure Gauge to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 1 part numbers are listed for the Enerpac DGR-2 Digital High-Pressure Gauge, for example DGR2."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the Enerpac DGR-2 Digital High-Pressure Gauge in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the Enerpac DGR-2 Digital High-Pressure Gauge by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac DGR-2 Digital High-Pressure Gauge used?",
+          "a": "The Enerpac DGR-2 Digital High-Pressure Gauge are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose the digital DGR-2 over an analogue gauge?",
+          "a": "Choose the DGR-2 when you need a digital reading to 20,000 psi, as the [Enerpac T-6000 test gauges](/p/enerpac-t-6000-test-system-gauges) reach 50,000 psi in analogue form and the [4\" gauges](/p/enerpac-4-in-glycerin-filled-hydraulic-pressure-gauges-g-and-high-cycle-h) stop at 15,000 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac DGR-2 Digital High-Pressure Gauge be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac DGR-2 Digital High-Pressure Gauge from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac DGR-2 Digital High-Pressure Gauge in stock in Dubai?",
+          "a": "Yes. We keep Enerpac DGR-2 Digital High-Pressure Gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-ga45gc-gauge-adapter-assembly",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Enerpac GA45GC gauge adapter assembly used for?",
+          "a": "The Enerpac GA45GC is a gauge adapter assembly for fitting a gauge into a high-pressure line. One part number is listed, GA45GC, on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What does GA45GC mean on the Enerpac gauge adapter?",
+          "a": "GA45GC is the Enerpac part number for the gauge adapter assembly, described in the listing as a gauge adapter assembly. Quote it as written."
+        },
+        {
+          "slot": "D",
+          "q": "What does the GA45GC adapter connect?",
+          "a": "It connects a pressure gauge to a high-pressure hydraulic line. The listing does not give the thread sizes, so send us your gauge connection and port and we confirm the fit."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the GA45GC rated for?",
+          "a": "The listing does not state a pressure rating for the adapter assembly. It is listed beside Enerpac 10,000 and 15,000 psi gauges, so confirm the rating with us before use."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluid and pressure basis apply to the Enerpac GA45GC Gauge Adapter Assembly?",
+          "a": "Gauge ranges are full-scale pressure readings, so choose a range well above the working pressure of the Enerpac GA45GC Gauge Adapter Assembly application; the pressure is read in psi, and the ranges listed are in the size table. Quote the range and connection you need."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the Enerpac GA45GC Gauge Adapter Assembly?",
+          "a": "No calibration certificate is listed for the Enerpac GA45GC Gauge Adapter Assembly. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the Enerpac GA45GC Gauge Adapter Assembly to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 1 part numbers are listed for the Enerpac GA45GC Gauge Adapter Assembly, for example GA45GC."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the Enerpac GA45GC Gauge Adapter Assembly in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the Enerpac GA45GC Gauge Adapter Assembly by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac GA45GC Gauge Adapter Assembly used?",
+          "a": "The Enerpac GA45GC Gauge Adapter Assembly are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "Do I need an adapter or a gauge with the right thread?",
+          "a": "Where the line port and the gauge thread differ, an adapter such as the GA45GC joins them; otherwise choose a gauge with the right connection, such as the [4\" gauges](/p/enerpac-4-in-glycerin-filled-hydraulic-pressure-gauges-g-and-high-cycle-h) with 1/4\" or 1/2\" NPTF."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac GA45GC Gauge Adapter Assembly be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac GA45GC Gauge Adapter Assembly from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac GA45GC Gauge Adapter Assembly in stock in Dubai?",
+          "a": "Yes, we carry Enerpac GA45GC Gauge Adapter Assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-gf-force-and-pressure-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac GF force and pressure gauges used for?",
+          "a": "Enerpac GF gauges are glycerin-filled gauges that read both pressure and cylinder force, each matched to the cylinder capacity it is listed for. Eleven part numbers are listed, GF5P to GF871P; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose the right Enerpac GF gauge for my cylinder?",
+          "a": "Match the gauge to the cylinder capacity: GF5P is for 5 ton cylinders, GF10P for 10 ton, GF120P for 12 ton, GF20P for 25 ton and GF50P for 50 ton. Larger GF numbers cover families, such as GF200P for all 150 and 200 ton RR, RSM and HCRL cylinders."
+        },
+        {
+          "slot": "D",
+          "q": "Which cylinders does the Enerpac GF-230P fit?",
+          "a": "The GF-230P is for all 30 ton RC, RCS, RR and RSM cylinders. The GF-510P is for all 50 and 100 ton RCS and RSM cylinders. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "E",
+          "q": "Which Enerpac GF gauge fits RCH and RRH cylinders?",
+          "a": "The GF-813P is for all 20, 30 and 60 ton RCH, RRH and RWH cylinders, and the GF-871P is for all 100 ton RC, RCH, RR and RRH cylinders. The GF-835P covers all 25 and 50 ton RC, RR, RAC and RACL cylinders."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluid and pressure basis apply to the Enerpac GF Force and Pressure Gauges?",
+          "a": "Gauge ranges are full-scale pressure readings, so choose a range well above the working pressure of the Enerpac GF Force and Pressure Gauges application; the pressure is read in psi, and the ranges listed are in the size table. Quote the range and connection you need."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the Enerpac GF Force and Pressure Gauges?",
+          "a": "No calibration certificate is listed for the Enerpac GF Force and Pressure Gauges. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the Enerpac GF Force and Pressure Gauges to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 11 part numbers are listed for the Enerpac GF Force and Pressure Gauges, for example GF10P, GF120P and GF200P."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the Enerpac GF Force and Pressure Gauges in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the Enerpac GF Force and Pressure Gauges by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac GF Force and Pressure Gauges used?",
+          "a": "The Enerpac GF Force and Pressure Gauges are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does a GF force gauge differ from a standard Enerpac pressure gauge?",
+          "a": "A GF gauge reads cylinder force as well as pressure, because its scale is matched to the cylinder capacity, while a standard gauge such as the [Enerpac 2.5\" gauge](/p/enerpac-2-5-in-glycerin-filled-hydraulic-pressure-gauges) reads pressure only."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac GF Force and Pressure Gauges be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac GF Force and Pressure Gauges from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac GF Force and Pressure Gauges in stock in Dubai?",
+          "a": "Yes, we carry Enerpac GF Force and Pressure Gauges in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-gp-4-in-dry-pressure-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac GP 4\" dry pressure gauges used for?",
+          "a": "Enerpac GP gauges are dry pressure gauges with a 4\" display face, in 0-10,000 psi and 0-15,000 psi ranges. Two part numbers are listed, GP10S and GP15S; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do GP10S and GP15S mean?",
+          "a": "GP10S is the 0-10,000 psi dry gauge and GP15S is the 0-15,000 psi dry gauge, as the rows show (GP-10S 0-10000 psi, GP-15S 0-15000 psi). The number is the range in thousands of psi."
+        },
+        {
+          "slot": "D",
+          "q": "What display size do the Enerpac GP gauges have?",
+          "a": "Both have a 4\" display face. The 4\" dial is easier to read at a distance than a 2.5\" gauge. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "E",
+          "q": "Which range of GP gauge should I pick?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the GP10S suits a working pressure up to about 5,000 psi; Enerpac advises running its gauges at no more than about 75% of full scale."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluid and pressure basis apply to the Enerpac GP 4\" Dry Pressure Gauges?",
+          "a": "Gauge ranges are full-scale pressure readings, so choose a range well above the working pressure of the Enerpac GP 4\" Dry Pressure Gauges application; the pressure is read in psi, and the ranges listed are in the size table. Quote the range and connection you need."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the Enerpac GP 4\" Dry Pressure Gauges?",
+          "a": "No calibration certificate is listed for the Enerpac GP 4\" Dry Pressure Gauges. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the Enerpac GP 4\" Dry Pressure Gauges to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 2 part numbers are listed for the Enerpac GP 4\" Dry Pressure Gauges, for example GP10S and GP15S."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the Enerpac GP 4\" Dry Pressure Gauges in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the Enerpac GP 4\" Dry Pressure Gauges by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac GP 4\" Dry Pressure Gauges used?",
+          "a": "The Enerpac GP 4\" Dry Pressure Gauges are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How do the GP dry gauges compare with the G-series filled gauges?",
+          "a": "The GP gauges are dry, with no liquid fill, while the [G-series](/p/enerpac-4-in-glycerin-filled-hydraulic-pressure-gauges-g-and-high-cycle-h) is glycerine-filled and the H-series is dry high-cycle. Use a snubber or needle valve with a dry gauge."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac GP 4\" Dry Pressure Gauges be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac GP 4\" Dry Pressure Gauges from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac GP 4\" Dry Pressure Gauges in stock in Dubai?",
+          "a": "Yes. We keep Enerpac GP 4\" Dry Pressure Gauges in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-t-6000-test-system-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac T-6000 test system gauges used for?",
+          "a": "Enerpac T-6000 gauges are test system gauges in alloy steel and stainless steel, from 1,000 psi to 50,000 psi. Seven part numbers are listed, T6001L to T6011L; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac T-6000 part numbers?",
+          "a": "The T600 number steps up with range: T6001L is 1,000 psi, T6002L is 5,000 psi, T6003L is 10,000 psi alloy steel and T6007L is 10,000 psi stainless steel. T6008L, T6010L and T6011L are 20,000, 40,000 and 50,000 psi stainless steel."
+        },
+        {
+          "slot": "D",
+          "q": "Which ranges does the Enerpac T-6000 come in?",
+          "a": "The ranges are 0-1,000, 0-5,000, 0-10,000 (two), 0-20,000, 0-40,000 and 0-50,000 psi. The 40,000 and 50,000 psi gauges are the highest on the shelf."
+        },
+        {
+          "slot": "E",
+          "q": "Which Enerpac T-6000 gauges are alloy steel and which are stainless?",
+          "a": "T6001L, T6002L and T6003L are alloy steel, and T6007L, T6008L, T6010L and T6011L are stainless steel. Choose stainless for corrosive environments."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluid and pressure basis apply to the Enerpac T-6000 Test System Gauges?",
+          "a": "Gauge ranges are full-scale pressure readings, so choose a range well above the working pressure of the Enerpac T-6000 Test System Gauges application; the pressure is read in psi, and the ranges listed are in the size table. Quote the range and connection you need."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the Enerpac T-6000 Test System Gauges?",
+          "a": "No calibration certificate is listed for the Enerpac T-6000 Test System Gauges. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the Enerpac T-6000 Test System Gauges to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 7 part numbers are listed for the Enerpac T-6000 Test System Gauges, for example T6001L, T6002L and T6003L."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the Enerpac T-6000 Test System Gauges in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the Enerpac T-6000 Test System Gauges by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac T-6000 Test System Gauges used?",
+          "a": "The Enerpac T-6000 Test System Gauges are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does the T-6000 compare with the Enerpac DGR-2 digital gauge?",
+          "a": "The T-6000 is analogue and reaches 50,000 psi, while the [DGR-2](/p/enerpac-dgr-2-digital-high-pressure-gauge) is a digital gauge rated to 20,000 psi. Choose on range and on analogue or digital reading."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac T-6000 Test System Gauges be shipped from Dubai?",
+          "a": "Yes, we ship the Enerpac T-6000 Test System Gauges from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac T-6000 Test System Gauges in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac T-6000 Test System Gauges and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "2-1-2-glycerin-filled-panel-gauge-front-flange-1-4-back-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 2-1/2\" glycerin-filled panel gauge with a front flange used for?",
+          "a": "It is a 2-1/2\" dial pressure gauge with a stainless steel case and bezel and a brass Bourdon tube, glycerin-filled to damp pump pulsation and vibration. The front flange screws to a panel cut-out with a centre back 1/4\" connection; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the IH-GA-204L part numbers?",
+          "a": "IH-GA-204L is the series and the last letters give the range: -254A is 30\"Hg vacuum, -254E is 0-100 psi, -254G is 0-200 psi, -254K is 0-600 psi, -254P is 0-3,000 psi and -254R is 0-5,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which ranges does the panel gauge come in?",
+          "a": "Six ranges: 30\"Hg vacuum to 0, 0-100, 0-200, 0-600, 0-3,000 and 0-5,000 psi, all with dual psi and bar scales. Pick a scale about twice the working pressure."
+        },
+        {
+          "slot": "E",
+          "q": "Which standard does the Indus panel gauge follow?",
+          "a": "The specification gives ASME B40.100. That standard covers pressure gauges and gauge attachments, including accuracy grades. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "F",
+          "q": "What media suit the panel gauge's brass internals?",
+          "a": "Brass internals suit oil, water and air; for corrosive media ask for a stainless-internal gauge. The case and bezel are stainless steel with a polycarbonate lens."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the 2-1/2\" panel gauges with front flange?",
+          "a": "No calibration certificate is listed for the 2-1/2\" panel gauges with front flange. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the 2-1/2\" panel gauges with front flange to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 6 part numbers are listed for the 2-1/2\" panel gauges with front flange, for example IH-GA-204L-254A, IH-GA-204L-254E and IH-GA-204L-254G."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the 2-1/2\" panel gauges with front flange in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the 2-1/2\" panel gauges with front flange by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2-1/2\" panel gauges with front flange used?",
+          "a": "The 2-1/2\" panel gauges with front flange are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does the front-flange panel gauge compare with the plain back-mount gauge?",
+          "a": "The front flange screws to the face of a panel cut-out, while the [plain back-mount gauge](/p/2-1-2-glycerin-filled-pressure-gauge-stainless-case-1-4-back-mount) mounts through a panel or on a manifold face and has 17 ranges up to 0-15,000 psi against 6 here."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2-1/2\" panel gauges with front flange be shipped from Dubai?",
+          "a": "Yes, we ship the 2-1/2\" panel gauges with front flange from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are 2-1/2\" panel gauges with front flange in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock 2-1/2\" panel gauges with front flange and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "2-1-2-glycerin-filled-pressure-gauge-stainless-case-1-4-back-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 2-1/2\" glycerin-filled stainless case pressure gauge with a 1/4\" back mount used for?",
+          "a": "It is a 2-1/2\" dial pressure gauge with a stainless case and bezel, brass internals and glycerin fill, with a 1/4\" centre back connection for panel or manifold-face mounting. It has 17 ranges, 0-160 psi up to 0-15,000 psi; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the IH-GA-202L part numbers?",
+          "a": "IH-GA-202L is the series and the last letter is the range: -254F is 0-160 psi, -254M is 0-1,000 psi, -254R is 0-5,000 psi, -254U is 0-10,000 psi and -254V is 0-15,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which ranges does the 2-1/2\" back-mount glycerin gauge come in?",
+          "a": "Seventeen ranges from 0-160 psi to 0-15,000 psi, including 0-200, 0-300, 0-400, 0-500, 0-600, 0-800, 0-1,000, 0-1,500, 0-2,000, 0-3,000, 0-4,000, 0-5,000, 0-6,000 and 0-7,500 psi."
+        },
+        {
+          "slot": "E",
+          "q": "Which standard does the back-mount gauge follow?",
+          "a": "The specification gives ASME B40.100. The dial is dual scale psi and bar. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "F",
+          "q": "Can the 2-1/2\" back-mount glycerin gauge be used with corrosive fluids?",
+          "a": "Its brass Bourdon tube and socket suit oil, water and air; for corrosive media ask for a stainless-internal gauge. The glycerin fill damps pointer flutter."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the 2-1/2\" back-mount glycerin-filled gauges?",
+          "a": "No calibration certificate is listed for the 2-1/2\" back-mount glycerin-filled gauges. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the 2-1/2\" back-mount glycerin-filled gauges to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 17 part numbers are listed for the 2-1/2\" back-mount glycerin-filled gauges, for example IH-GA-202L-254F, IH-GA-202L-254G and IH-GA-202L-254H."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the 2-1/2\" back-mount glycerin-filled gauges in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the 2-1/2\" back-mount glycerin-filled gauges by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2-1/2\" back-mount glycerin-filled gauges used?",
+          "a": "The 2-1/2\" back-mount glycerin-filled gauges are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does the back-mount gauge compare with the bottom-mount gauge?",
+          "a": "This gauge connects at the centre of the back for panel or manifold mounting, while the [bottom-mount gauge](/p/2-1-2-glycerin-filled-pressure-gauge-stainless-case-1-4-bottom-mount) is stem-mounted on the line and adds vacuum and compound ranges (28 ranges against 17)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2-1/2\" back-mount glycerin-filled gauges be shipped from Dubai?",
+          "a": "Yes, we ship the 2-1/2\" back-mount glycerin-filled gauges from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are 2-1/2\" back-mount glycerin-filled gauges in stock in Dubai?",
+          "a": "Yes, we carry 2-1/2\" back-mount glycerin-filled gauges in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "2-1-2-glycerin-filled-pressure-gauge-stainless-case-1-4-bottom-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 2-1/2\" glycerin-filled stainless case pressure gauge with a 1/4\" bottom mount used for?",
+          "a": "It is a 2-1/2\" dial pressure gauge with a stainless case and bezel, brass internals and glycerin fill, stem-mounted on a line or manifold with the 1/4\" connection underneath. It has 28 ranges, including vacuum and compound; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the IH-GA-201L part numbers?",
+          "a": "IH-GA-201L is the series and the last letters give the range: -254A is 30\"Hg vacuum, -254CB is 30\"Hg vac-0-15 psi, -254B is 0-15 psi, -254E is 0-100 psi and -254N is 0-1,500 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which ranges does the bottom-mount gauge come in?",
+          "a": "Twenty-eight ranges: vacuum, compound ranges from 30\"Hg vac-0-15 psi to 30\"Hg vac-0-300 psi, and pressure ranges from 0-15 psi up to 0-15,000 psi. Pick a scale about twice the working pressure."
+        },
+        {
+          "slot": "E",
+          "q": "Does the bottom-mount gauge have a compound scale?",
+          "a": "Yes, compound scales from 30\"Hg vacuum through 0-15, 0-30, 0-60, 0-100, 0-150 and 0-300 psi are listed, for lines that can see vacuum and pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the bottom-mount gauge made of?",
+          "a": "Stainless steel case and bezel, copper-alloy (brass) Bourdon tube and socket, a polycarbonate lens and a glycerin fill. Brass internals suit oil, water and air."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the 2-1/2\" bottom-mount glycerin-filled gauges?",
+          "a": "No calibration certificate is listed for the 2-1/2\" bottom-mount glycerin-filled gauges. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the 2-1/2\" bottom-mount glycerin-filled gauges to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 28 part numbers are listed for the 2-1/2\" bottom-mount glycerin-filled gauges, for example IH-GA-201L-254A, IH-GA-201L-254CB and IH-GA-201L-254CC."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the 2-1/2\" bottom-mount glycerin-filled gauges in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the 2-1/2\" bottom-mount glycerin-filled gauges by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2-1/2\" bottom-mount glycerin-filled gauges used?",
+          "a": "The 2-1/2\" bottom-mount glycerin-filled gauges are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does the bottom-mount gauge compare with the back-mount gauge?",
+          "a": "The bottom-mount gauge is stem-mounted with the connection underneath and offers 28 ranges, while the [back-mount gauge](/p/2-1-2-glycerin-filled-pressure-gauge-stainless-case-1-4-back-mount) has a centre back connection and 17 ranges."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2-1/2\" bottom-mount glycerin-filled gauges be shipped from Dubai?",
+          "a": "Yes, we ship the 2-1/2\" bottom-mount glycerin-filled gauges from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are 2-1/2\" bottom-mount glycerin-filled gauges in stock in Dubai?",
+          "a": "Yes. We keep 2-1/2\" bottom-mount glycerin-filled gauges in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-gauge-1-2-inch-npt-bottom-mount-6-inch-dial-10-000-psi-ss316-glycerine-filled",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 6-inch 10,000 psi glycerine-filled pressure gauge with a 1/2-inch NPT bottom mount used for?",
+          "a": "It is a high-pressure oilfield pressure gauge with a 1/2-inch NPT bottom-mount connection, a 6-inch dial face and a 0-10,000 psi range. It has an SS316 wetted connection and a glycerine fill for smooth pointer behaviour under vibration; see the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which pressure ranges can the 6-inch oilfield gauge be supplied in?",
+          "a": "The full range available is 100, 200, 500, 1,000, 3,000, 5,000, 10,000 and 15,000 psi. This listing is the 10,000 psi gauge. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "D",
+          "q": "What connection does the 6-inch oilfield gauge have?",
+          "a": "A 1/2-inch NPT bottom-mount connection. A panel-mount variant with a 1/2-inch NPT rear connection is also available. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "E",
+          "q": "What is the wetted material of the 6-inch gauge?",
+          "a": "SS316 wetted connection. NACE MR-0175 materials are available on request for sour service. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "F",
+          "q": "Why is the 6-inch oilfield gauge glycerine-filled?",
+          "a": "The glycerine fill gives smooth pointer behaviour under vibration, which is useful on pumping units and frac lines. A dry gauge reads more erratically in pulsating service."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply calibration documents with the 6-inch 10,000 psi glycerine-filled gauge?",
+          "a": "No calibration certificate is listed for the 6-inch 10,000 psi glycerine-filled gauge. If your job needs a calibration or test report, ask for it on your [request](/contact) before ordering so we can confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect the 6-inch 10,000 psi glycerine-filled gauge to a line?",
+          "a": "Use fittings that match the gauge connection and the working pressure, such as the [instrumentation tube fittings](/c/instrumentation-tube-fittings); 0 part numbers are listed for the 6-inch 10,000 psi glycerine-filled gauge, for example ."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect the 6-inch 10,000 psi glycerine-filled gauge in service?",
+          "a": "Fit a snubber or needle valve where the line pulsates or runs high cycle, and choose a range roughly twice the working pressure so spikes stay on the scale. Mount the 6-inch 10,000 psi glycerine-filled gauge by its connection, not by the case; see the [glycerine-filled vs dry gauges guide](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 6-inch 10,000 psi glycerine-filled gauge used?",
+          "a": "The 6-inch 10,000 psi glycerine-filled gauge are used on hydraulic power units, test benches and tooling lines where a local pressure reading is needed. See the [high-pressure hydraulic gauges guide](/blog/high-pressure-hydraulic-gauges) for pressure, force and digital gauges."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6-inch 10,000 psi gauge compare with the Enerpac 4\" gauges?",
+          "a": "The Indus 6-inch gauge has a larger dial and ranges from 100 to 15,000 psi with SS316 wetted parts, while the [Enerpac 4\" gauges](/p/enerpac-4-in-glycerin-filled-hydraulic-pressure-gauges-g-and-high-cycle-h) have a 100 mm dial and 10,000 or 15,000 psi ranges."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 6-inch 10,000 psi glycerine-filled gauge be shipped from Dubai?",
+          "a": "Yes, we ship the 6-inch 10,000 psi glycerine-filled gauge from Dubai, UAE to the GCC, Africa, Asia and beyond. Tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 6-inch 10,000 psi glycerine-filled gauge in stock in Dubai?",
+          "a": "Yes. We keep the 6-inch 10,000 psi glycerine-filled gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

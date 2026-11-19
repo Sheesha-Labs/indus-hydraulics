@@ -1,0 +1,921 @@
+{
+  "family": "cryogenic-valves",
+  "extraFacts": [
+    {
+      "fact": "NPS is the nominal pipe size in inches and DN the matching metric nominal diameter (NPS 1 = DN25, NPS 2 = DN50, NPS 12 = DN300); ASME Class numbers such as 150, 300, 600, 900, 1500 and 2500 are pressure-temperature rating classes defined for valves in ASME B16.34, so the allowable pressure at a given temperature depends on the class and the body material.",
+      "source": "ASME B16.34 (valves, flanged, threaded and welding end) and ASME B36.10M nominal pipe size"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cryogenic-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow and where is it used?",
+          "a": "The Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow is listed as: check valve, cryogenic (swing, lift, dual plate, axial flow), published in NPS 1/2\" to 64\" (DN15 to DN1600), ASME Class 150 to 2500. Non-return valves for liquefied gas service, in four designs. Swing checks suit most horizontal lines; forged lift checks the small bores; dual-plate checks save weight and length; axial-flow checks close fast and quietly on pump and compressor discharges, where a slam would damage the line. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a part number of the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow, such as IH-PV-CCK-AL-150-0200?",
+          "a": "In the part numbers of the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow. The last four digits are the nominal size in hundredths of an inch and the segment before them is the pressure class: IH-PV-CCK-AL-150-0200 is NPS 2\" in Class 150. Quote the full number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and dimensions does the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow come in?",
+          "a": "The size table of the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow lists 520 standard size and class combinations in NPS 1/2\" to 64\" (DN15 to DN1600). For example IH-PV-CCK-AL-150-0200: NPS 2\", Class 150, 203 mm face-to-face (RF), 14 kg; IH-PV-CCK-DF-600-1200: NPS 12\", Class 600, 229 mm face-to-face (RF), 249 kg; IH-PV-CCK-SW-2500-1200: NPS 12\", Class 2500, 1422 mm face-to-face (RF), 896 mm high, 3715 kg. Check these against the piping layout before you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow cover?",
+          "a": "The Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow is published in ASME Class 150 to 2500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow made of, and how is it built?",
+          "a": "The body of the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow is stainless steel, cast and forged. Construction: swing: bolted cover, hinged disc; lift (forged): guided piston disc, small bores; dual plate: twin spring-loaded plates in wafer, lug or flanged bodies; axial flow: spring-assisted nozzle disc, long or short pattern."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow?",
+          "a": "The listing gives the design standard of the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow as BS 6364, BS 1868, API 594, API 602, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow have?",
+          "a": "The Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow is offered with RF, RTJ flanged; butt-weld; wafer and lug (dual plate); socket weld on forged sizes ends and is operated by self-acting. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Which check valve suits an LNG pump discharge on the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow?",
+          "a": "An axial-flow or dual-plate check: both close quickly, before reverse flow builds, which limits surge on the discharge line. Swing checks suit steady, low-velocity lines. The Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial is published in NPS 1/2\" to 64\" (DN15 to DN1600), ASME Class 150 to 2500."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow used for?",
+          "a": "The listing names the typical service of the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow as LNG, LPG, liquefied gases, pump and compressor discharge. Non-return valves for liquefied gas service, in four designs. Swing checks suit most horizontal lines; forged lift checks the small bores; dual-plate checks save weight and length; axial-flow checks close fast and quietly on pump and compressor discharges, where a slam would damage the line."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow differ from the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed?",
+          "a": "The Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow differs from the [Liquid Hydrogen Lift Check Valve, Vacuum Jacketed](/p/liquid-hydrogen-lift-check-valve) in its listed specification. By the listing, valve type Check valve, cryogenic (swing, lift, dual plate, axial flow) against Check valve, lift type, liquid hydrogen; size NPS 1/2\" to 64\" (DN15 to DN1600) against NPS 1/2\" to 6\" (DN15 to DN150); class ASME Class 150 to 2500 against ASME Class 150 to 600."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, we stock the Cryogenic Check Valves: Swing, Lift, Dual Plate and Axial Flow at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact). Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "cryogenic-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cryogenic Control Valve, Globe Pattern and where is it used?",
+          "a": "The Cryogenic Control Valve, Globe Pattern is listed as: control valve, globe, cryogenic, published in NPS 3/4\" to 12\" (DN20 to DN300), ASME Class 150 to 2500. Flow, pressure and level control on liquefied gas lines. A plug-guided globe body gives a wide control range and accurate flow; the extended bonnet and low-emission packing keep the gland warm and tight; and the actuator and positioner are fitted and calibrated before dispatch. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Cryogenic Control Valve, Globe Pattern mean?",
+          "a": "For the Cryogenic Control Valve, Globe Pattern, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 3/4\" to 12\" (DN20 to DN300) spans the sizes published, and ASME Class 150 to 2500 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Cryogenic Control Valve, Globe Pattern come in?",
+          "a": "The Cryogenic Control Valve, Globe Pattern is published in NPS 3/4\" to 12\" (DN20 to DN300), ASME Class 150 to 2500. Dimensions depend on the size, rating and options chosen, so the general arrangement drawing, with face-to-face length and weight, comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Cryogenic Control Valve, Globe Pattern cover?",
+          "a": "The Cryogenic Control Valve, Globe Pattern is published in ASME Class 150 to 2500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cryogenic Control Valve, Globe Pattern made of, and how is it built?",
+          "a": "The body of the Cryogenic Control Valve, Globe Pattern is stainless steel. Construction: s-pattern globe body, top-guided plug; extended bonnet, low-emission packing; linear or equal-percentage trim; pneumatic diaphragm, pneumatic cylinder or electric actuator with positioner."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Cryogenic Control Valve, Globe Pattern?",
+          "a": "The listing gives the design standard of the Cryogenic Control Valve, Globe Pattern as BS 6364, IEC 60534, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Emissions: low-emission packing. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Cryogenic Control Valve, Globe Pattern have?",
+          "a": "The Cryogenic Control Valve, Globe Pattern is offered with RF, RTJ flanged; butt-weld ends and is operated by pneumatic diaphragm or cylinder actuator, electric actuator, with positioner. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "What do you need to size a control valve on the Cryogenic Control Valve, Globe Pattern?",
+          "a": "The fluid, the flow range (minimum, normal and maximum), the inlet and outlet pressure at each, the temperature and the line size. We return the Cv, the trim and the noise estimate with the quotation. The Cryogenic Control Valve, Globe Pattern is published in NPS 3/4\" to 12\" (DN20 to DN300), ASME Class 150 to 2500."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Cryogenic Control Valve, Globe Pattern used for?",
+          "a": "The listing names the typical service of the Cryogenic Control Valve, Globe Pattern as LNG, LPG, air separation, liquefied gas control. Flow, pressure and level control on liquefied gas lines. A plug-guided globe body gives a wide control range and accurate flow; the extended bonnet and low-emission packing keep the gland warm and tight; and the actuator and positioner are fitted and calibrated before dispatch."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cryogenic Control Valve, Globe Pattern differ from the Cryogenic Globe Valve, Extended Bonnet?",
+          "a": "The Cryogenic Control Valve, Globe Pattern differs from the [Cryogenic Globe Valve, Extended Bonnet](/p/cryogenic-globe-valve-extended-bonnet) in its listed specification. By the listing, valve type Control valve, globe, cryogenic against Globe valve, cryogenic; construction S-pattern body, plug guided, extended bonnet against Extended bonnet, T-pattern body; ends RF, RTJ flanged; butt-weld against RF, RTJ flanged; butt-weld; socket weld on forged sizes."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Cryogenic Control Valve, Globe Pattern be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Cryogenic Control Valve, Globe Pattern, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Cryogenic Control Valve, Globe Pattern in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We hold the Cryogenic Control Valve, Globe Pattern in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "cryogenic-gate-valve-extended-bonnet",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cryogenic Gate Valve, Extended Bonnet and where is it used?",
+          "a": "The Cryogenic Gate Valve, Extended Bonnet is listed as: gate valve, cryogenic, published in NPS 1/2\" to 52\" (DN15 to DN1300), ASME Class 150 to 2500. Isolation for LNG, LPG, liquid nitrogen and oxygen lines. The extended bonnet lifts the gland well above the cold body so the packing stays at near-ambient temperature, and the wedge carries a cavity relief so liquid trapped between the seats cannot over-pressurise the body as it warms. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Cryogenic Gate Valve, Extended Bonnet mean?",
+          "a": "For the Cryogenic Gate Valve, Extended Bonnet, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 52\" (DN15 to DN1300) spans the sizes published, and ASME Class 150 to 2500 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and dimensions does the Cryogenic Gate Valve, Extended Bonnet come in?",
+          "a": "The size table of the Cryogenic Gate Valve, Extended Bonnet lists 62 standard size and class combinations in NPS 1/2\" to 52\" (DN15 to DN1300). For example IH-PV-CGT-CS-150-0200: NPS 2\", Class 150, 178 mm face-to-face (RF), 480 mm high; IH-PV-CGT-CS-600-1200: NPS 12\", Class 600, 838 mm face-to-face (RF), 2092 mm high; IH-PV-CGT-FG-800-0200: NPS 2\", Class 800, 549.6 mm high, 10.8 kg. Check these against the piping layout before you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Cryogenic Gate Valve, Extended Bonnet cover?",
+          "a": "The Cryogenic Gate Valve, Extended Bonnet is published in ASME Class 150 to 2500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cryogenic Gate Valve, Extended Bonnet made of, and how is it built?",
+          "a": "The body of the Cryogenic Gate Valve, Extended Bonnet is stainless steel (CF8, CF8M, CF3, CF3M) and forged stainless. Construction: extended bonnet, length to BS 6364 for the service temperature; flexible wedge with cavity relief hole on the upstream side; cast (CF8, CF8M, CF3, CF3M) or forged stainless body; low-emission packing to ISO 15848; gear operator or actuator on request."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Cryogenic Gate Valve, Extended Bonnet?",
+          "a": "The listing gives the design standard of the Cryogenic Gate Valve, Extended Bonnet as BS 6364, API 600, API 602, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Emissions: low-emission packing to ISO 15848. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Cryogenic Gate Valve, Extended Bonnet have?",
+          "a": "The Cryogenic Gate Valve, Extended Bonnet is offered with RF, RTJ flanged; butt-weld; socket weld on forged sizes ends and is operated by handwheel, gear operator or actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Why does a cryogenic gate valve have a relief hole on the Cryogenic Gate Valve, Extended Bonnet?",
+          "a": "Liquid trapped in the body cavity when the valve closes boils as it warms and can reach very high pressure. A relief hole in the upstream side of the wedge vents the cavity to the upstream line, so the valve is one-directional and marked with an arrow. The Cryogenic Gate Valve, Extended Bonnet is published in NPS 1/2\" to 52\" (DN15 to DN1300), ASME Class 150 to 2500."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Cryogenic Gate Valve, Extended Bonnet used for?",
+          "a": "The listing names the typical service of the Cryogenic Gate Valve, Extended Bonnet as LNG, LPG, liquid nitrogen and oxygen, air separation. Isolation for LNG, LPG, liquid nitrogen and oxygen lines. The extended bonnet lifts the gland well above the cold body so the packing stays at near-ambient temperature, and the wedge carries a cavity relief so liquid trapped between the seats cannot over-pressurise the body as it warms."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cryogenic Gate Valve, Extended Bonnet differ from the Cryogenic Globe Valve, Extended Bonnet?",
+          "a": "The Cryogenic Gate Valve, Extended Bonnet differs from the [Cryogenic Globe Valve, Extended Bonnet](/p/cryogenic-globe-valve-extended-bonnet) in its listed specification. By the listing, valve type Gate valve, cryogenic against Globe valve, cryogenic; construction Extended bonnet, flexible wedge with cavity relief against Extended bonnet, T-pattern body."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Cryogenic Gate Valve, Extended Bonnet be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Cryogenic Gate Valve, Extended Bonnet, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Cryogenic Gate Valve, Extended Bonnet in Dubai for export?",
+          "a": "Yes. We hold the Cryogenic Gate Valve, Extended Bonnet in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "cryogenic-globe-valve-extended-bonnet",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cryogenic Globe Valve, Extended Bonnet and where is it used?",
+          "a": "The Cryogenic Globe Valve, Extended Bonnet is listed as: globe valve, cryogenic, published in NPS 1/2\" to 42\" (DN15 to DN1050), ASME Class 150 to 2500. For throttling and tight shut-off on cryogenic lines: tank fill and drain, vaporiser feeds, bypasses and sampling. The disc closes straight onto the seat, so control is steady, and the extended bonnet keeps the packing warm and sealing. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Cryogenic Globe Valve, Extended Bonnet mean?",
+          "a": "For the Cryogenic Globe Valve, Extended Bonnet, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 42\" (DN15 to DN1050) spans the sizes published, and ASME Class 150 to 2500 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and dimensions does the Cryogenic Globe Valve, Extended Bonnet come in?",
+          "a": "The size table of the Cryogenic Globe Valve, Extended Bonnet lists 53 standard size and class combinations in NPS 1/2\" to 42\" (DN15 to DN1050). For example IH-PV-CGL-CS-150-0200: NPS 2\", Class 150, 203 mm face-to-face (RF), 530 mm high; IH-PV-CGL-CS-600-1200: NPS 12\", Class 600, 838 mm face-to-face (RF), 1539 mm high; IH-PV-CGL-FG-800-0150F: NPS 1-1/2\", Class 800, 15.5 kg. Check these against the piping layout before you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Cryogenic Globe Valve, Extended Bonnet cover?",
+          "a": "The Cryogenic Globe Valve, Extended Bonnet is published in ASME Class 150 to 2500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cryogenic Globe Valve, Extended Bonnet made of, and how is it built?",
+          "a": "The body of the Cryogenic Globe Valve, Extended Bonnet is stainless steel, cast and forged. Construction: extended bonnet to BS 6364; swivel or plug disc, hardfaced seat; cast or forged stainless body; handwheel, gear operator or actuator."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Cryogenic Globe Valve, Extended Bonnet?",
+          "a": "The listing gives the design standard of the Cryogenic Globe Valve, Extended Bonnet as BS 6364, BS 1873, API 602, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Emissions: low-emission packing to ISO 15848. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Cryogenic Globe Valve, Extended Bonnet have?",
+          "a": "The Cryogenic Globe Valve, Extended Bonnet is offered with RF, RTJ flanged; butt-weld; socket weld on forged sizes ends and is operated by handwheel, gear operator or actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Can a cryogenic globe valve be installed horizontally on the Cryogenic Globe Valve, Extended Bonnet?",
+          "a": "Cryogenic valves are best installed with the bonnet vertical or within about 45° of it, so a gas pocket forms in the bonnet extension and keeps liquid away from the packing. The Cryogenic Globe Valve, Extended Bonnet is published in NPS 1/2\" to 42\" (DN15 to DN1050), ASME Class 150 to 2500."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Cryogenic Globe Valve, Extended Bonnet used for?",
+          "a": "The listing names the typical service of the Cryogenic Globe Valve, Extended Bonnet as LNG, LPG, liquid nitrogen and oxygen, air separation. For throttling and tight shut-off on cryogenic lines: tank fill and drain, vaporiser feeds, bypasses and sampling. The disc closes straight onto the seat, so control is steady, and the extended bonnet keeps the packing warm and sealing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cryogenic Globe Valve, Extended Bonnet differ from the Cryogenic Gate Valve, Extended Bonnet?",
+          "a": "The Cryogenic Globe Valve, Extended Bonnet differs from the [Cryogenic Gate Valve, Extended Bonnet](/p/cryogenic-gate-valve-extended-bonnet) in its listed specification. By the listing, valve type Globe valve, cryogenic against Gate valve, cryogenic; construction Extended bonnet, T-pattern body against Extended bonnet, flexible wedge with cavity relief."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Cryogenic Globe Valve, Extended Bonnet be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Cryogenic Globe Valve, Extended Bonnet, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Cryogenic Globe Valve, Extended Bonnet from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Cryogenic Globe Valve, Extended Bonnet in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "cryogenic-triple-offset-butterfly-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cryogenic Offset Butterfly Valve and where is it used?",
+          "a": "The Cryogenic Offset Butterfly Valve is listed as: butterfly valve, offset, cryogenic, published in NPS 3\" to 120\" (DN80 to DN3000), ASME Class 150 to 600. For large cryogenic lines where a ball valve would be too heavy: LNG loading and transfer, tank outlets and air separation plant. The offset disc seals metal to metal without rubbing, and the extended bonnet keeps the gland warm. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Cryogenic Offset Butterfly Valve mean?",
+          "a": "For the Cryogenic Offset Butterfly Valve, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 3\" to 120\" (DN80 to DN3000) spans the sizes published, and ASME Class 150 to 600 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Cryogenic Offset Butterfly Valve come in?",
+          "a": "The Cryogenic Offset Butterfly Valve is published in NPS 3\" to 120\" (DN80 to DN3000), ASME Class 150 to 600. Dimensions depend on the size, rating and options chosen, so the general arrangement drawing, with face-to-face length and weight, comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Cryogenic Offset Butterfly Valve cover?",
+          "a": "The Cryogenic Offset Butterfly Valve is published in ASME Class 150 to 600 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cryogenic Offset Butterfly Valve made of, and how is it built?",
+          "a": "The body of the Cryogenic Offset Butterfly Valve is stainless steel. Construction: offset (triple offset) disc and laminated seal; extended bonnet for cryogenic service; all parts replaceable; in-line maintenance; pneumatic diaphragm, pneumatic cylinder or electric actuator."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Cryogenic Offset Butterfly Valve?",
+          "a": "The listing gives the design standard of the Cryogenic Offset Butterfly Valve as BS 6364, API 609, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Cryogenic Offset Butterfly Valve have?",
+          "a": "The Cryogenic Offset Butterfly Valve is offered with Wafer, lug, RF flanged, butt-weld ends and is operated by gear operator, pneumatic diaphragm or cylinder actuator, electric actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Why a butterfly valve on LNG lines on the Cryogenic Offset Butterfly Valve?",
+          "a": "On large lines a butterfly valve is a fraction of the weight and length of a ball valve, which matters on loading arms, jetties and tank outlets. The Cryogenic Offset Butterfly Valve is published in NPS 3\" to 120\" (DN80 to DN3000), ASME Class 150 to 600."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Cryogenic Offset Butterfly Valve used for?",
+          "a": "The listing names the typical service of the Cryogenic Offset Butterfly Valve as LNG transfer and storage, air separation. For large cryogenic lines where a ball valve would be too heavy: LNG loading and transfer, tank outlets and air separation plant. The offset disc seals metal to metal without rubbing, and the extended bonnet keeps the gland warm."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cryogenic Offset Butterfly Valve differ from the Cryogenic Control Valve, Globe Pattern?",
+          "a": "The Cryogenic Offset Butterfly Valve differs from the [Cryogenic Control Valve, Globe Pattern](/p/cryogenic-control-valve) in its listed specification. By the listing, valve type Butterfly valve, offset, cryogenic against Control valve, globe, cryogenic; construction Offset metal-seated disc, extended bonnet against S-pattern body, plug guided, extended bonnet; ends Wafer, lug, RF flanged, butt-weld against RF, RTJ flanged; butt-weld."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Cryogenic Offset Butterfly Valve be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Cryogenic Offset Butterfly Valve, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Cryogenic Offset Butterfly Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, we stock the Cryogenic Offset Butterfly Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact). Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "liquid-hydrogen-butterfly-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Liquid Hydrogen Butterfly Valve, -253 °C and where is it used?",
+          "a": "The Liquid Hydrogen Butterfly Valve, -253 °C is listed as: butterfly valve, liquid hydrogen, published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Quarter-turn isolation for liquid hydrogen storage, transfer and dispensing. An elevated stuffing box keeps the packing at ambient temperature, the seal rings can be changed without replacing the valve, and the materials are selected against hydrogen embrittlement. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Liquid Hydrogen Butterfly Valve, -253 °C mean?",
+          "a": "For the Liquid Hydrogen Butterfly Valve, -253 °C, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 6\" (DN15 to DN150) spans the sizes published, and ASME Class 150 to 600 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Liquid Hydrogen Butterfly Valve, -253 °C come in?",
+          "a": "The Liquid Hydrogen Butterfly Valve, -253 °C is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Dimensions depend on the size, rating and options chosen, so the general arrangement drawing, with face-to-face length and weight, comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Liquid Hydrogen Butterfly Valve, -253 °C cover?",
+          "a": "The Liquid Hydrogen Butterfly Valve, -253 °C is published in ASME Class 150 to 600 for -253 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Liquid Hydrogen Butterfly Valve, -253 °C made of, and how is it built?",
+          "a": "The body of the Liquid Hydrogen Butterfly Valve, -253 °C is austenitic stainless steel. Construction: elevated stuffing box: packing at ambient temperature; interchangeable sealing rings; wafer, lug, butt-weld or flanged body; manual or pneumatic operation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Liquid Hydrogen Butterfly Valve, -253 °C?",
+          "a": "The listing gives the design standard of the Liquid Hydrogen Butterfly Valve, -253 °C as ASME B16.34, BS 6364. Testing: shell and seat tests, with helium leak and cryogenic tests. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Liquid Hydrogen Butterfly Valve, -253 °C have?",
+          "a": "The Liquid Hydrogen Butterfly Valve, -253 °C is offered with Wafer, lug, butt-weld, RF flanged ends and is operated by manual or pneumatic actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Why do liquid hydrogen valves differ from LNG valves on the Liquid Hydrogen Butterfly Valve, -253 °C?",
+          "a": "Liquid hydrogen is 90 °C colder than LNG and its heat of vaporisation is small, so heat leak matters far more. Hydrogen also embrittles some steels. Valves therefore use longer extensions, vacuum jackets and controlled material chemistry. The Liquid Hydrogen Butterfly Valve, -253 °C is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Liquid Hydrogen Butterfly Valve, -253 °C used for?",
+          "a": "The listing names the typical service of the Liquid Hydrogen Butterfly Valve, -253 °C as liquid hydrogen storage, transfer and dispensing. Quarter-turn isolation for liquid hydrogen storage, transfer and dispensing. An elevated stuffing box keeps the packing at ambient temperature, the seal rings can be changed without replacing the valve, and the materials are selected against hydrogen embrittlement."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Liquid Hydrogen Butterfly Valve, -253 °C differ from the Liquid Hydrogen Emergency Shutdown Valve?",
+          "a": "The Liquid Hydrogen Butterfly Valve, -253 °C differs from the [Liquid Hydrogen Emergency Shutdown Valve](/p/liquid-hydrogen-emergency-shutdown-valve) in its listed specification. By the listing, valve type Butterfly valve, liquid hydrogen against Emergency shutdown valve, liquid hydrogen; construction Elevated stuffing box, replaceable seal rings against Lift-type valve, bellows seal, vacuum-jacketed body; ends Wafer, lug, butt-weld, RF flanged against Socket weld, butt-weld, RF flanged."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Liquid Hydrogen Butterfly Valve, -253 °C be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Liquid Hydrogen Butterfly Valve, -253 °C, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Liquid Hydrogen Butterfly Valve, -253 °C in Dubai for export?",
+          "a": "Yes. We keep the Liquid Hydrogen Butterfly Valve, -253 °C in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "liquid-hydrogen-emergency-shutdown-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Liquid Hydrogen Emergency Shutdown Valve and where is it used?",
+          "a": "The Liquid Hydrogen Emergency Shutdown Valve is listed as: emergency shutdown valve, liquid hydrogen, published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Fast, reliable shutdown on liquid hydrogen lines. A pneumatic actuator closes the lift-type valve without jamming; a bellows seal stops hydrogen escaping at the stem; and the vacuum-jacketed extended body keeps heat out of the liquid. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Liquid Hydrogen Emergency Shutdown Valve mean?",
+          "a": "For the Liquid Hydrogen Emergency Shutdown Valve, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 6\" (DN15 to DN150) spans the sizes published, and ASME Class 150 to 600 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Liquid Hydrogen Emergency Shutdown Valve come in?",
+          "a": "The Liquid Hydrogen Emergency Shutdown Valve is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Dimensions depend on the size, rating and options chosen, so the general arrangement drawing, with face-to-face length and weight, comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Liquid Hydrogen Emergency Shutdown Valve cover?",
+          "a": "The Liquid Hydrogen Emergency Shutdown Valve is published in ASME Class 150 to 600 for -253 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Liquid Hydrogen Emergency Shutdown Valve made of, and how is it built?",
+          "a": "The body of the Liquid Hydrogen Emergency Shutdown Valve is austenitic stainless steel. Construction: pneumatic actuator for fast, jam-free closing; bellows stem seal; extended bonnet, vacuum-jacketed body; PCTFE-insulated extended stem."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Liquid Hydrogen Emergency Shutdown Valve?",
+          "a": "The listing gives the design standard of the Liquid Hydrogen Emergency Shutdown Valve as ASME B16.34. Testing: shell and seat tests, helium leak and cryogenic tests, actuator function test. Emissions: bellows stem seal. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Liquid Hydrogen Emergency Shutdown Valve have?",
+          "a": "The Liquid Hydrogen Emergency Shutdown Valve is offered with Socket weld, butt-weld, RF flanged ends and is operated by pneumatic actuator, spring return. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "What fail position is available on the Liquid Hydrogen Emergency Shutdown Valve?",
+          "a": "Spring-return actuators close on loss of air (fail closed), which is the usual choice for emergency shutdown. Fail open is available. The Liquid Hydrogen Emergency Shutdown Valve is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Liquid Hydrogen Emergency Shutdown Valve used for?",
+          "a": "The listing names the typical service of the Liquid Hydrogen Emergency Shutdown Valve as liquid hydrogen storage and transfer, emergency isolation. Fast, reliable shutdown on liquid hydrogen lines. A pneumatic actuator closes the lift-type valve without jamming; a bellows seal stops hydrogen escaping at the stem; and the vacuum-jacketed extended body keeps heat out of the liquid."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Liquid Hydrogen Emergency Shutdown Valve differ from the Liquid Hydrogen Butterfly Valve, -253 °C?",
+          "a": "The Liquid Hydrogen Emergency Shutdown Valve differs from the [Liquid Hydrogen Butterfly Valve, -253 °C](/p/liquid-hydrogen-butterfly-valve) in its listed specification. By the listing, valve type Emergency shutdown valve, liquid hydrogen against Butterfly valve, liquid hydrogen; construction Lift-type valve, bellows seal, vacuum-jacketed body against Elevated stuffing box, replaceable seal rings; ends Socket weld, butt-weld, RF flanged against Wafer, lug, butt-weld, RF flanged."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Liquid Hydrogen Emergency Shutdown Valve be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Liquid Hydrogen Emergency Shutdown Valve, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Liquid Hydrogen Emergency Shutdown Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We hold the Liquid Hydrogen Emergency Shutdown Valve in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "liquid-hydrogen-filter-vacuum-jacketed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Liquid Hydrogen Filter, Vacuum Jacketed and where is it used?",
+          "a": "The Liquid Hydrogen Filter, Vacuum Jacketed is listed as: filter (strainer), liquid hydrogen, published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Strainer protection for liquid hydrogen pumps, valves and meters. The housing extends above the line inside a vacuum jacket, so the element can be removed from the top while heat leak into the liquid stays low; a PCTFE insert in the extension cuts the space in which liquid can vaporise. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Liquid Hydrogen Filter, Vacuum Jacketed mean?",
+          "a": "For the Liquid Hydrogen Filter, Vacuum Jacketed, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 6\" (DN15 to DN150) spans the sizes published, and ASME Class 150 to 600 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Liquid Hydrogen Filter, Vacuum Jacketed come in?",
+          "a": "The Liquid Hydrogen Filter, Vacuum Jacketed is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Dimensions depend on the size, rating and options chosen, so the general arrangement drawing, with face-to-face length and weight, comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Liquid Hydrogen Filter, Vacuum Jacketed cover?",
+          "a": "The Liquid Hydrogen Filter, Vacuum Jacketed is published in ASME Class 150 to 600 for -253 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Liquid Hydrogen Filter, Vacuum Jacketed made of, and how is it built?",
+          "a": "The body of the Liquid Hydrogen Filter, Vacuum Jacketed is austenitic stainless steel. Construction: extended housing inside a vacuum jacket; PCTFE-insulated extension reduces vaporisation space; element removable from the top cover; socket-weld, butt-weld or flanged ends."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Liquid Hydrogen Filter, Vacuum Jacketed?",
+          "a": "The listing gives the design standard of the Liquid Hydrogen Filter, Vacuum Jacketed as ASME B16.34. Testing: shell tests, with helium leak and cryogenic tests. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Liquid Hydrogen Filter, Vacuum Jacketed have?",
+          "a": "The Liquid Hydrogen Filter, Vacuum Jacketed is offered with Socket weld, butt-weld, RF flanged ends and is operated by not applicable (static). For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "What mesh is the element on the Liquid Hydrogen Filter, Vacuum Jacketed?",
+          "a": "Element mesh is chosen to protect the equipment downstream; tell us what it protects and the allowable pressure drop. This applies to the Liquid Hydrogen Filter, Vacuum Jacketed, published in NPS 1/2\" to 6\" (DN15 to DN150)."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Liquid Hydrogen Filter, Vacuum Jacketed used for?",
+          "a": "The listing names the typical service of the Liquid Hydrogen Filter, Vacuum Jacketed as liquid hydrogen pump, meter and valve protection. Strainer protection for liquid hydrogen pumps, valves and meters. The housing extends above the line inside a vacuum jacket, so the element can be removed from the top while heat leak into the liquid stays low; a PCTFE insert in the extension cuts the space in which liquid can vaporise."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Liquid Hydrogen Filter, Vacuum Jacketed differ from the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed?",
+          "a": "The Liquid Hydrogen Filter, Vacuum Jacketed differs from the [Liquid Hydrogen Lift Check Valve, Vacuum Jacketed](/p/liquid-hydrogen-lift-check-valve) in its listed specification. By the listing, valve type Filter (strainer), liquid hydrogen against Check valve, lift type, liquid hydrogen; construction Extended, vacuum-jacketed housing with PCTFE insert against Guided spring-return disc, vacuum-jacketed extended body."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Liquid Hydrogen Filter, Vacuum Jacketed be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Liquid Hydrogen Filter, Vacuum Jacketed, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Liquid Hydrogen Filter, Vacuum Jacketed from stock in the UAE and get a quotation?",
+          "a": "Yes, we hold the Liquid Hydrogen Filter, Vacuum Jacketed in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact). Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "liquid-hydrogen-globe-valve-bellows-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Liquid Hydrogen Globe Valve, Bellows Seal and where is it used?",
+          "a": "The Liquid Hydrogen Globe Valve, Bellows Seal is listed as: globe valve, liquid hydrogen, published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Shut-off and throttling for liquid hydrogen. The extended body keeps the packing at ambient temperature, a bellows seal stops stem leakage, the vacuum jacket keeps heat out, and a PCTFE insert in the extension reduces the space in which liquid can boil. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Liquid Hydrogen Globe Valve, Bellows Seal mean?",
+          "a": "For the Liquid Hydrogen Globe Valve, Bellows Seal, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 6\" (DN15 to DN150) spans the sizes published, and ASME Class 150 to 600 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Liquid Hydrogen Globe Valve, Bellows Seal come in?",
+          "a": "The Liquid Hydrogen Globe Valve, Bellows Seal is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Dimensions depend on the size, rating and options chosen, so the general arrangement drawing, with face-to-face length and weight, comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Liquid Hydrogen Globe Valve, Bellows Seal cover?",
+          "a": "The Liquid Hydrogen Globe Valve, Bellows Seal is published in ASME Class 150 to 600 for -253 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Liquid Hydrogen Globe Valve, Bellows Seal made of, and how is it built?",
+          "a": "The body of the Liquid Hydrogen Globe Valve, Bellows Seal is austenitic stainless steel. Construction: extended valve body, packing at ambient temperature; vacuum jacket against heat ingress; bellows stem seal; PCTFE insert in the extension."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Liquid Hydrogen Globe Valve, Bellows Seal?",
+          "a": "The listing gives the design standard of the Liquid Hydrogen Globe Valve, Bellows Seal as ASME B16.34. Testing: shell and seat tests, with helium leak and cryogenic tests. Emissions: bellows stem seal. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Liquid Hydrogen Globe Valve, Bellows Seal have?",
+          "a": "The Liquid Hydrogen Globe Valve, Bellows Seal is offered with Socket weld, butt-weld, RF flanged ends and is operated by handwheel or pneumatic actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Manual or actuated on the Liquid Hydrogen Globe Valve, Bellows Seal?",
+          "a": "Both: handwheel, or pneumatic actuator for remote and automatic operation. This applies to the Liquid Hydrogen Globe Valve, Bellows Seal, published in NPS 1/2\" to 6\" (DN15 to DN150)."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Liquid Hydrogen Globe Valve, Bellows Seal used for?",
+          "a": "The listing names the typical service of the Liquid Hydrogen Globe Valve, Bellows Seal as liquid hydrogen storage, transfer and dispensing. Shut-off and throttling for liquid hydrogen. The extended body keeps the packing at ambient temperature, a bellows seal stops stem leakage, the vacuum jacket keeps heat out, and a PCTFE insert in the extension reduces the space in which liquid can boil."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Liquid Hydrogen Globe Valve, Bellows Seal differ from the Liquid Hydrogen Emergency Shutdown Valve?",
+          "a": "The Liquid Hydrogen Globe Valve, Bellows Seal differs from the [Liquid Hydrogen Emergency Shutdown Valve](/p/liquid-hydrogen-emergency-shutdown-valve) in its listed specification. By the listing, valve type Globe valve, liquid hydrogen against Emergency shutdown valve, liquid hydrogen; construction Extended, vacuum-jacketed body, bellows seal against Lift-type valve, bellows seal, vacuum-jacketed body."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Liquid Hydrogen Globe Valve, Bellows Seal be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Liquid Hydrogen Globe Valve, Bellows Seal, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Liquid Hydrogen Globe Valve, Bellows Seal in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Liquid Hydrogen Globe Valve, Bellows Seal in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "liquid-hydrogen-lift-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed and where is it used?",
+          "a": "The Liquid Hydrogen Lift Check Valve, Vacuum Jacketed is listed as: check valve, lift type, liquid hydrogen, published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Backflow prevention on liquid hydrogen lines. A guided disc with a return spring closes reliably without jamming at -253 °C; the extended, vacuum-jacketed body keeps heat out of the liquid; and the material chemistry is controlled against hydrogen embrittlement. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed mean?",
+          "a": "For the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 6\" (DN15 to DN150) spans the sizes published, and ASME Class 150 to 600 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed come in?",
+          "a": "The Liquid Hydrogen Lift Check Valve, Vacuum Jacketed is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600. Dimensions depend on the size, rating and options chosen, so the general arrangement drawing, with face-to-face length and weight, comes with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed cover?",
+          "a": "The Liquid Hydrogen Lift Check Valve, Vacuum Jacketed is published in ASME Class 150 to 600 for -253 °C to 120 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed made of, and how is it built?",
+          "a": "The body of the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed is austenitic stainless steel. Construction: guided lift disc with spring return; extended body inside a vacuum jacket; materials with controlled chemistry for -253 °C; socket-weld, butt-weld or flanged ends."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed?",
+          "a": "The listing gives the design standard of the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed as ASME B16.34. Testing: shell and seat tests, with helium leak and cryogenic tests. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed have?",
+          "a": "The Liquid Hydrogen Lift Check Valve, Vacuum Jacketed is offered with Socket weld, butt-weld, RF flanged ends and is operated by self-acting, spring return. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed be installed vertically?",
+          "a": "Yes, with flow upward; the spring returns the disc in any orientation. Tell us the orientation so the spring force is confirmed. The Liquid Hydrogen Lift Check Valve, Vacuum Jacketed is published in NPS 1/2\" to 6\" (DN15 to DN150), ASME Class 150 to 600."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed used for?",
+          "a": "The listing names the typical service of the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed as liquid hydrogen storage and transfer. Backflow prevention on liquid hydrogen lines. A guided disc with a return spring closes reliably without jamming at -253 °C; the extended, vacuum-jacketed body keeps heat out of the liquid; and the material chemistry is controlled against hydrogen embrittlement."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed differ from the Liquid Hydrogen Filter, Vacuum Jacketed?",
+          "a": "The Liquid Hydrogen Lift Check Valve, Vacuum Jacketed differs from the [Liquid Hydrogen Filter, Vacuum Jacketed](/p/liquid-hydrogen-filter-vacuum-jacketed) in its listed specification. By the listing, valve type Check valve, lift type, liquid hydrogen against Filter (strainer), liquid hydrogen; temperature -253 °C to 120 °C against -253 °C to 80 °C; construction Guided spring-return disc, vacuum-jacketed extended body against Extended, vacuum-jacketed housing with PCTFE insert."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed in Dubai for export?",
+          "a": "Yes, we stock the Liquid Hydrogen Lift Check Valve, Vacuum Jacketed at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact). Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "side-entry-cryogenic-floating-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Side Entry Cryogenic Floating Ball Valve and where is it used?",
+          "a": "The Side Entry Cryogenic Floating Ball Valve is listed as: ball valve, floating, side entry, cryogenic, published in NPS 1/2\" to 8\" (DN15 to DN200), ASME Class 150 to 1500. The standard quarter-turn valve for small cryogenic lines. A split body holds a floating ball between lip-seal seats that stay tight at -196 °C, with an extended bonnet carrying the stem and packing clear of the cold. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a part number of the Side Entry Cryogenic Floating Ball Valve, such as IH-PV-CFS-150-0050?",
+          "a": "In the part numbers of the Side Entry Cryogenic Floating Ball Valve, the last four digits are the nominal size in hundredths of an inch and the segment before them is the pressure class: IH-PV-CFS-150-0050 is NPS 1/2\" in Class 150. Quote the full number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and dimensions does the Side Entry Cryogenic Floating Ball Valve come in?",
+          "a": "The size table of the Side Entry Cryogenic Floating Ball Valve lists 29 standard size and class combinations in NPS 1/2\" to 8\" (DN15 to DN200). For example IH-PV-CFS-150-0050: NPS 1/2\", Class 150, 108 mm face-to-face (RF), 326 mm high, 4 kg; IH-PV-CFS-300-0300: NPS 3\", Class 300, 283 mm face-to-face (RF), 516 mm high, 51 kg; IH-PV-CFS-900-1500-0200: NPS 2\", Class 900/1500, 368 mm face-to-face (RF), 579 mm high. Check these against the piping layout before you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Side Entry Cryogenic Floating Ball Valve cover?",
+          "a": "The Side Entry Cryogenic Floating Ball Valve is published in ASME Class 150 to 1500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Side Entry Cryogenic Floating Ball Valve made of, and how is it built?",
+          "a": "The body of the Side Entry Cryogenic Floating Ball Valve is stainless steel. Seats and trim: lip-seal seats. Construction: two-piece split body, side entry; floating ball, lip-seal seats, cavity vented upstream; extended bonnet and stem; lever, gear operator or actuator."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Side Entry Cryogenic Floating Ball Valve?",
+          "a": "The listing gives the design standard of the Side Entry Cryogenic Floating Ball Valve as BS 6364, ISO 28921-1, ISO 17292, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Side Entry Cryogenic Floating Ball Valve have?",
+          "a": "The Side Entry Cryogenic Floating Ball Valve is offered with RF flanged; butt-weld ends and is operated by lever, gear operator, pneumatic, electric or hydraulic actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Why is the lever so far above the valve on the Side Entry Cryogenic Floating Ball Valve?",
+          "a": "The stem extension keeps the packing and operator warm, so the packing seals and the operator does not ice up. This applies to the Side Entry Cryogenic Floating Ball Valve, published in NPS 1/2\" to 8\" (DN15 to DN200)."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Side Entry Cryogenic Floating Ball Valve used for?",
+          "a": "The listing names the typical service of the Side Entry Cryogenic Floating Ball Valve as LNG, LPG, air separation. The standard quarter-turn valve for small cryogenic lines. A split body holds a floating ball between lip-seal seats that stay tight at -196 °C, with an extended bonnet carrying the stem and packing clear of the cold."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Side Entry Cryogenic Floating Ball Valve differ from the Top Entry Cryogenic Floating Ball Valve?",
+          "a": "The Side Entry Cryogenic Floating Ball Valve differs from the [Top Entry Cryogenic Floating Ball Valve](/p/top-entry-cryogenic-floating-ball-valve) in its listed specification. By the listing, valve type Ball valve, floating, side entry, cryogenic against Ball valve, floating, top entry, cryogenic; size NPS 1/2\" to 8\" (DN15 to DN200) against NPS 1/2\" to 3\" (DN15 to DN80); construction Two-piece split body, extended bonnet against Top entry body, extended bonnet."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Side Entry Cryogenic Floating Ball Valve be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Side Entry Cryogenic Floating Ball Valve, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Side Entry Cryogenic Floating Ball Valve from stock in the UAE and get a quotation?",
+          "a": "Yes, we stock the Side Entry Cryogenic Floating Ball Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact). Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "side-entry-cryogenic-trunnion-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Side Entry Cryogenic Trunnion Mounted Ball Valve and where is it used?",
+          "a": "The Side Entry Cryogenic Trunnion Mounted Ball Valve is listed as: ball valve, trunnion mounted, side entry, cryogenic, published in NPS 1/2\" to 24\" (DN15 to DN600), ASME Class 150 to 1500. Larger cryogenic ball valves with the ball carried on trunnion bearings, so the operating torque stays low at size and pressure. Spring-energised lip-seal seats seal at -196 °C and the body cavity vents upstream. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a part number of the Side Entry Cryogenic Trunnion Mounted Ball Valve, such as IH-PV-CTS-150-0200?",
+          "a": "In the part numbers of the Side Entry Cryogenic Trunnion Mounted Ball Valve, the last four digits are the nominal size in hundredths of an inch and the segment before them is the pressure class: IH-PV-CTS-150-0200 is NPS 2\" in Class 150. Quote the full number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and dimensions does the Side Entry Cryogenic Trunnion Mounted Ball Valve come in?",
+          "a": "The size table of the Side Entry Cryogenic Trunnion Mounted Ball Valve lists 73 standard size and class combinations in NPS 1/2\" to 24\" (DN15 to DN600). For example IH-PV-CTS-150-0200: NPS 2\", Class 150, 178 mm face-to-face (RF), 472 mm high, 45 kg; IH-PV-CTS-600-2000: NPS 20\", Class 600, 1194 mm face-to-face (RF), 2050 mm high, 3585 kg; IH-PV-CTS-1500-2400: NPS 24\", Class 1500, 1943 mm end-to-end (butt-weld), 2680 mm high, 7181 kg. Check these against the piping layout before you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Side Entry Cryogenic Trunnion Mounted Ball Valve cover?",
+          "a": "The Side Entry Cryogenic Trunnion Mounted Ball Valve is published in ASME Class 150 to 1500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Side Entry Cryogenic Trunnion Mounted Ball Valve made of, and how is it built?",
+          "a": "The body of the Side Entry Cryogenic Trunnion Mounted Ball Valve is stainless steel. Seats and trim: spring-energised lip-seal seats. Construction: two- or three-piece split body; trunnion-mounted ball, lip-seal seats; extended bonnet, anti-static and blow-out proof stem; gear operator or actuator."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Side Entry Cryogenic Trunnion Mounted Ball Valve?",
+          "a": "The listing gives the design standard of the Side Entry Cryogenic Trunnion Mounted Ball Valve as BS 6364, ISO 28921-1, API 6D, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Side Entry Cryogenic Trunnion Mounted Ball Valve have?",
+          "a": "The Side Entry Cryogenic Trunnion Mounted Ball Valve is offered with RF, RTJ flanged; butt-weld ends and is operated by gear operator, pneumatic, electric or hydraulic actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Side entry or top entry on the Side Entry Cryogenic Trunnion Mounted Ball Valve?",
+          "a": "Side entry is the economical choice where the valve is flanged and can be removed for repair. Choose top entry for welded-in valves that must be serviced in place. The Side Entry Cryogenic Trunnion Mounted Ball Valve is published in NPS 1/2\" to 24\" (DN15 to DN600), ASME Class 150 to 1500."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Side Entry Cryogenic Trunnion Mounted Ball Valve used for?",
+          "a": "The listing names the typical service of the Side Entry Cryogenic Trunnion Mounted Ball Valve as LNG, LPG, air separation. Larger cryogenic ball valves with the ball carried on trunnion bearings, so the operating torque stays low at size and pressure. Spring-energised lip-seal seats seal at -196 °C and the body cavity vents upstream."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Side Entry Cryogenic Trunnion Mounted Ball Valve differ from the Top Entry Cryogenic Trunnion Mounted Ball Valve?",
+          "a": "The Side Entry Cryogenic Trunnion Mounted Ball Valve differs from the [Top Entry Cryogenic Trunnion Mounted Ball Valve](/p/top-entry-cryogenic-trunnion-ball-valve) in its listed specification. By the listing, valve type Ball valve, trunnion mounted, side entry, cryogenic against Ball valve, trunnion mounted, top entry, cryogenic; construction Split body, extended bonnet against One-piece body, top cover with extended bonnet."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Side Entry Cryogenic Trunnion Mounted Ball Valve be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Side Entry Cryogenic Trunnion Mounted Ball Valve, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Side Entry Cryogenic Trunnion Mounted Ball Valve in Dubai for export?",
+          "a": "Yes, we hold the Side Entry Cryogenic Trunnion Mounted Ball Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact). Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "top-entry-cryogenic-floating-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Top Entry Cryogenic Floating Ball Valve and where is it used?",
+          "a": "The Top Entry Cryogenic Floating Ball Valve is listed as: ball valve, floating, top entry, cryogenic, published in NPS 1/2\" to 3\" (DN15 to DN80), ASME Class 150 to 1500. A small-bore cryogenic ball valve that opens from the top for maintenance. The extended stem keeps the packing above the cold zone, and the floating ball seals on the downstream seat with the cavity vented upstream. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What do the NPS and Class ratings of the Top Entry Cryogenic Floating Ball Valve mean?",
+          "a": "For the Top Entry Cryogenic Floating Ball Valve, NPS is the nominal pipe size in inches and DN the metric equivalent, so NPS 1/2\" to 3\" (DN15 to DN80) spans the sizes published, and ASME Class 150 to 1500 is the pressure class range. State size, class, body material and end connection on the enquiry and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and dimensions does the Top Entry Cryogenic Floating Ball Valve come in?",
+          "a": "The size table of the Top Entry Cryogenic Floating Ball Valve lists 11 standard size and class combinations in NPS 1/2\" to 3\" (DN15 to DN80). For example IH-PV-CFT-900-1500-0050: NPS 1/2\", Class 900/1500, 216 mm face-to-face (RTJ), 435 mm high, 15 kg; IH-PV-CFT-150-300-600-0050: NPS 1/2\", Class 150/300/600, 330 mm high, 8.5 kg; IH-PV-CFT-150-300-600-0300: NPS 3\", Class 150/300/600, 550 mm high, 96 kg. Check these against the piping layout before you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Top Entry Cryogenic Floating Ball Valve cover?",
+          "a": "The Top Entry Cryogenic Floating Ball Valve is published in ASME Class 150 to 1500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Top Entry Cryogenic Floating Ball Valve made of, and how is it built?",
+          "a": "The body of the Top Entry Cryogenic Floating Ball Valve is stainless steel (316, CF8M). Construction: top entry body, serviceable in line; extended bonnet and stem; floating ball, cavity vented upstream; lever, pneumatic, electric or hydraulic actuator."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Top Entry Cryogenic Floating Ball Valve?",
+          "a": "The listing gives the design standard of the Top Entry Cryogenic Floating Ball Valve as BS 6364, ISO 28921-1, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Top Entry Cryogenic Floating Ball Valve have?",
+          "a": "The Top Entry Cryogenic Floating Ball Valve is offered with RF flanged; butt-weld ends and is operated by lever, pneumatic, electric or hydraulic actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Top Entry Cryogenic Floating Ball Valve be used on oxygen?",
+          "a": "Yes, cleaned and assembled for oxygen service when ordered. State oxygen service in the enquiry. This applies to the Top Entry Cryogenic Floating Ball Valve, published in NPS 1/2\" to 3\" (DN15 to DN80)."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Top Entry Cryogenic Floating Ball Valve used for?",
+          "a": "The listing names the typical service of the Top Entry Cryogenic Floating Ball Valve as LNG, industrial gases, oxygen lines, air separation. A small-bore cryogenic ball valve that opens from the top for maintenance. The extended stem keeps the packing above the cold zone, and the floating ball seals on the downstream seat with the cavity vented upstream."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Top Entry Cryogenic Floating Ball Valve differ from the Side Entry Cryogenic Floating Ball Valve?",
+          "a": "The Top Entry Cryogenic Floating Ball Valve differs from the [Side Entry Cryogenic Floating Ball Valve](/p/side-entry-cryogenic-floating-ball-valve) in its listed specification. By the listing, valve type Ball valve, floating, top entry, cryogenic against Ball valve, floating, side entry, cryogenic; size NPS 1/2\" to 3\" (DN15 to DN80) against NPS 1/2\" to 8\" (DN15 to DN200); construction Top entry body, extended bonnet against Two-piece split body, extended bonnet."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Top Entry Cryogenic Floating Ball Valve be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Top Entry Cryogenic Floating Ball Valve, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Top Entry Cryogenic Floating Ball Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We hold the Top Entry Cryogenic Floating Ball Valve in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    },
+    {
+      "slug": "top-entry-cryogenic-trunnion-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Top Entry Cryogenic Trunnion Mounted Ball Valve and where is it used?",
+          "a": "The Top Entry Cryogenic Trunnion Mounted Ball Valve is listed as: ball valve, trunnion mounted, top entry, cryogenic, published in NPS 1/2\" to 24\" (DN15 to DN600), ASME Class 150 to 1500. The cryogenic ball valve that can be serviced while welded in. Ball, seats and seals come out through the top cover, so an LNG line does not have to be cut to repair a valve. See the full [cryogenic & liquid hydrogen valves](/c/cryogenic-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a part number of the Top Entry Cryogenic Trunnion Mounted Ball Valve, such as IH-PV-CTT-150-0050?",
+          "a": "In the part numbers of the Top Entry Cryogenic Trunnion Mounted Ball Valve, the last four digits are the nominal size in hundredths of an inch and the segment before them is the pressure class: IH-PV-CTT-150-0050 is NPS 1/2\" in Class 150. Quote the full number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and dimensions does the Top Entry Cryogenic Trunnion Mounted Ball Valve come in?",
+          "a": "The size table of the Top Entry Cryogenic Trunnion Mounted Ball Valve lists 68 standard size and class combinations in NPS 1/2\" to 24\" (DN15 to DN600). For example IH-PV-CTT-150-0050: NPS 1/2\", Class 150, 175 mm face-to-face (RF), 420 mm high, 31 kg; IH-PV-CTT-900-0050: NPS 1/2\", Class 900, 230 mm end-to-end (butt-weld), 440 mm high, 38 kg; IH-PV-CTT-1500-2400: NPS 24\", Class 1500, 1972 mm end-to-end (butt-weld), 2810 mm high, 9040 kg. Check these against the piping layout before you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure class and temperature range does the Top Entry Cryogenic Trunnion Mounted Ball Valve cover?",
+          "a": "The Top Entry Cryogenic Trunnion Mounted Ball Valve is published in ASME Class 150 to 1500 for -196 °C to 80 °C. The allowable pressure at a given temperature depends on the class and the body material, so give us the design pressure and temperature and we confirm the class for your service."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Top Entry Cryogenic Trunnion Mounted Ball Valve made of, and how is it built?",
+          "a": "The body of the Top Entry Cryogenic Trunnion Mounted Ball Valve is stainless steel. Seats and trim: spring-energised lip-seal seats. Construction: one-piece body, bolted top cover with extended bonnet; trunnion-mounted ball, spring-energised lip-seal seats; cavity relief to the upstream side; anti-static, fire-safe and blow-out proof stem."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and tests apply to the Top Entry Cryogenic Trunnion Mounted Ball Valve?",
+          "a": "The listing gives the design standard of the Top Entry Cryogenic Trunnion Mounted Ball Valve as BS 6364, ISO 28921-1, API 6D, ASME B16.34. Testing: shell and seat tests to API 598, with cryogenic tests to BS 6364 in liquid nitrogen. Fire-safe design: API 607 design. Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Which end connections and operators does the Top Entry Cryogenic Trunnion Mounted Ball Valve have?",
+          "a": "The Top Entry Cryogenic Trunnion Mounted Ball Valve is offered with RF, RTJ flanged; butt-weld ends and is operated by gear operator, pneumatic, electric or hydraulic actuator. For the actuator and positioner side see the [actuated valves](/c/actuated-valves) range. State the end connection and operator on the enquiry so the arrangement drawing matches your piping and your control signal."
+        },
+        {
+          "slot": "I",
+          "q": "Why choose top entry for LNG on the Top Entry Cryogenic Trunnion Mounted Ball Valve?",
+          "a": "LNG valves are usually welded in to avoid flange leaks at low temperature. Top entry lets seats and seals be replaced in place. The Top Entry Cryogenic Trunnion Mounted Ball Valve is published in NPS 1/2\" to 24\" (DN15 to DN600), ASME Class 150 to 1500."
+        },
+        {
+          "slot": "J",
+          "q": "What service is the Top Entry Cryogenic Trunnion Mounted Ball Valve used for?",
+          "a": "The listing names the typical service of the Top Entry Cryogenic Trunnion Mounted Ball Valve as LNG, LPG, air separation, liquefied gas terminals. The cryogenic ball valve that can be serviced while welded in. Ball, seats and seals come out through the top cover, so an LNG line does not have to be cut to repair a valve. Lip-seal seats spring onto the ball at temperature, and the body cavity vents upstream to stop trapped liquid over-pressurising it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Top Entry Cryogenic Trunnion Mounted Ball Valve differ from the Side Entry Cryogenic Trunnion Mounted Ball Valve?",
+          "a": "The Top Entry Cryogenic Trunnion Mounted Ball Valve differs from the [Side Entry Cryogenic Trunnion Mounted Ball Valve](/p/side-entry-cryogenic-trunnion-ball-valve) in its listed specification. By the listing, valve type Ball valve, trunnion mounted, top entry, cryogenic against Ball valve, trunnion mounted, side entry, cryogenic; construction One-piece body, top cover with extended bonnet against Split body, extended bonnet."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Top Entry Cryogenic Trunnion Mounted Ball Valve be supplied against a project specification or vendor list?",
+          "a": "Yes. Send the project specification or vendor list with the enquiry for the Top Entry Cryogenic Trunnion Mounted Ball Valve, and we confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it. Third-party inspection and positive material identification can be added when the order specifies them."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Top Entry Cryogenic Trunnion Mounted Ball Valve from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Top Entry Cryogenic Trunnion Mounted Ball Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation. Sizes, classes, materials and operators outside standard stock are built to the order specification."
+        }
+      ]
+    }
+  ]
+}

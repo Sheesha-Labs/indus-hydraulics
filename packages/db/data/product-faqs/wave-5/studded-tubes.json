@@ -1,0 +1,76 @@
+{
+  "family": "studded-tubes",
+  "extraFacts": [
+    {
+      "fact": "Studded tube listing size: 12.7 mm (1/2 in) studs, 25.4 mm high, 15.9 mm row spacing, about 63 rows per metre.",
+      "source": "Indus Hydraulics product listing"
+    }
+  ],
+  "products": [
+    {
+      "slug": "studded-tubes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are studded tubes used for?",
+          "a": "The Studded Tubes have steel studs welded in rows round the tube, for the convection sections of fired heaters. Studs shed soot and ash better than fins, so they are used on the shield rows and where the burners fire liquid or dirty fuel."
+        },
+        {
+          "slot": "B",
+          "q": "How is the part number IH-TF-ST-STD-R1 read?",
+          "a": "IH-TF-ST-STD-R1 is the single listed size: 12.7 mm (1/2 in) studs, 25.4 mm (1 in) high, at a row spacing of 15.9 mm, about 63 rows per metre. Other sizes are made on request, so send the tube OD and wall with the stud details."
+        },
+        {
+          "slot": "D",
+          "q": "What stud diameter, height and spacing do the studded tubes have?",
+          "a": "The size table gives a 12.7 mm (1/2 in) stud diameter, 25.4 mm stud height and 15.9 mm row spacing, about 63 rows per metre. Studs of 12.7 mm are the most common, and 25.4 mm height is typical, with a maximum of 19 mm for heavier liquid fuels."
+        },
+        {
+          "slot": "D",
+          "q": "How many rows of studs must rest on each tube support?",
+          "a": "At least three rows of studs should rest on each tube support. The listing also states that three rows of bare shield tubes sit between the extended surface and the radiant firebox."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum service temperature of the Studded Tubes?",
+          "a": "It is set by the stud material, and fired-heater stud-tip limits per API 560 are carbon steel 454 °C, 2¼Cr / 5Cr 549 °C and 25Cr-20Ni 982 °C. Treat these as typical limits and confirm them for your duty with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are the Studded Tubes made from?",
+          "a": "Base tubes are A106 B, A335 P5/P9, A213 T9 or A312 TP347, and the studs are carbon steel, 11–13Cr, 18Cr-8Ni or 25Cr-20Ni. Tell us the tube grade and stud material on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and certificates apply to the Studded Tubes?",
+          "a": "The Studded Tubes are listed to API 560 with tube standards ASTM A106, A335, A312, A192, A193, A199, A213 and A510. A mill test certificate to EN 10204 3.1 is available on request, and stud weld quality follows the heater specification."
+        },
+        {
+          "slot": "H",
+          "q": "Where do studded tubes sit in a fired heater?",
+          "a": "They go in the convection section only, behind three rows of bare shield tubes, in refinery crude, vacuum and reformer heaters firing fuel oil or mixed fuel. See the [HF welded spiral fin tubes](/c/hf-welded-spiral-fin-tubes) and [embedded G-fin tubes](/c/embedded-g-fin-tubes) for finned alternatives."
+        },
+        {
+          "slot": "I",
+          "q": "How are the studs attached and checked on the Studded Tubes?",
+          "a": "Each stud is arc- or resistance-welded to the tube, with stud weld quality checked per the heater specification and the base tube hydrotested. [Our finned tube fouling and cleaning guide](/blog/finned-tube-fouling-cleaning) covers keeping extended surface clean in service."
+        },
+        {
+          "slot": "K",
+          "q": "Studs or fins: which suits a fired-heater convection section?",
+          "a": "Studs shed soot and ash better than fins, so they suit liquid or dirty fuel, and some owner specifications require studs on vertical convection tubes burning liquid fuel. For cleaner gas, see [our guide to finned tube types](/blog/types-of-finned-tubes) and [our serrated versus solid spiral fin tube guide](/blog/serrated-vs-solid-spiral-fin-tubes)."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Studded Tubes from Dubai?",
+          "a": "Yes, Studded Tubes goes out of Dubai, UAE to export customers worldwide. Tubes ship with mill certificates on request. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Studded Tubes in stock in Dubai?",
+          "a": "Yes, we stock Studded Tubes at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

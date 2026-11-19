@@ -1,0 +1,141 @@
+{
+  "family": "bop-choke-kill",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "choke-and-kill-manifold-api-16c",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 16C choke and kill manifold used for?",
+          "a": "An API 16C choke and kill manifold holds back-pressure on a well with the BOPs closed so bottom-hole pressure stays above formation pressure while a kick is circulated out. The kill side pumps heavy fluid in, and the manifold also allows soft shut-in, over-pressure protection and direct blow-down through gate valves."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Indus API 16C choke and kill manifold cover?",
+          "a": "The published range is 2-1/16\" to 7-1/16\" bore and 3,000 to 20,000 psi working pressure. Each unit is configured to the job, and the general arrangement drawing and data book index come with the quotation. The [3-1/16\" 10,000 psi sour-service manifold](/p/choke-kill-manifold-3-1-16-10-000-psi-wp-api-16c-sour-service-nace-mr0175) is a fixed configuration in the same shelf."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a manual or hydraulic choke for an API 16C choke manifold?",
+          "a": "Most manifolds carry one of each: a hydraulic choke operated from the remote panel on the rig floor, with a manual choke as back-up. Fixed chokes are also listed. Choose the mix from the well-control programme, and send the layout or P&ID with your RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and material classes does the API 16C choke and kill manifold offer?",
+          "a": "The listing gives API 6A temperature classes A to X and material classes DD, EE, FF and HH, with PSL 3 to 4 on the seat and trim. Hydrostatic tests follow API 6A / 16A / 16C at the PSL ordered. State H2S content and temperature on the RFQ so the correct class is quoted."
+        },
+        {
+          "slot": "F",
+          "q": "Can an API 16C choke and kill manifold be supplied for H2S sour service?",
+          "a": "Yes, the listing offers H2S service with sour-service materials to NACE MR0175 / ISO 15156 where the well needs them. The material class (DD to HH) is chosen from the H2S partial pressure, chloride content and temperature you supply, so give those figures on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Indus choke and kill manifold made to API 16C?",
+          "a": "Yes. The manifold is built to API 16C and API 6A for its working pressure, temperature class and material class, and is supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an API 16C choke and kill manifold?",
+          "a": "You receive API 6A documentation for the PSL ordered: material certificates, heat-treatment and NDE records, the hydrostatic test record (and gas test at PSL 3G and 4), and the dimensional report. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections can an API 16C choke and kill manifold have?",
+          "a": "The manifold is listed with API 6A flanged or studded ends, or hammer union. Match them to your BOP stack outlets and flowline: send the flange size and pressure class, and see [flow iron adapters](/c/flow-iron-adapters) and [API flanges](/c/flow-iron-flanges-api) for matching connections."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a choke and kill manifold quotation?",
+          "a": "Send the working pressure, bore sizes, end connections, material and temperature class, PSL, the fluids and H2S content, and the layout or P&ID. For controls, list the valves to control, the supply available, the hazardous-area classification and the shutdown logic."
+        },
+        {
+          "slot": "J",
+          "q": "Where is an API 16C choke and kill manifold installed?",
+          "a": "It is used for well control during drilling and completion, with mud, oil and gas, on land rigs and on skid-mounted offshore platform packages. Compact complete skids with a control cabinet are listed for platforms, and vertical mud manifolds are available on request. See [choke and kill manifolds and valves](/c/bop-choke-kill)."
+        },
+        {
+          "slot": "K",
+          "q": "Can the Indus API 16C choke and kill manifold be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed. The related [3-1/16\" 10K sour-service manifold](/p/choke-kill-manifold-3-1-16-10-000-psi-wp-api-16c-sour-service-nace-mr0175) is the fixed-configuration alternative when that size and class fit."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 16C choke and kill manifold?",
+          "a": "Yes. We list the API 16C choke and kill manifold as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Most are configured to the order specification, so send your pressure class, bore and controls through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "choke-kill-manifold-3-1-16-10-000-psi-wp-api-16c-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 3-1/16\" 10,000 psi API 16C sour-service choke and kill manifold used for?",
+          "a": "This manifold sits next to a 10K BOP stack and holds back-pressure while a kick is circulated out, with gate-valve isolation on each leg. It has at least one hydraulic choke and one manual choke, and is listed for sour-service development drilling and workover or well-intervention work."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16\" 10,000 psi API 16C choke and kill manifold?",
+          "a": "The manifold is rated 10,000 psi cold working pressure, 10K class, at a 3-1/16\" bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16\" 10,000 psi choke and kill manifold have?",
+          "a": "It has API 6A 3-1/16\" 10K flanged inlet and flanged choke and kill outlets, with gate-valve isolation on every leg. Approximate transport weight is 3,500 kg. Confirm the connection style on the RFQ so it matches your BOP stack and flowline."
+        },
+        {
+          "slot": "D",
+          "q": "Which BOP stack does the 3-1/16\" 10,000 psi API 16C choke and kill manifold pair with?",
+          "a": "It is listed to pair with 13-5/8\" 10K BOP stacks on mainstream development drilling. For the preventers on the stack see [annular BOPs](/c/bop-annular) and [ram BOPs](/c/bop-ram), and confirm the choke and kill outlet sizes from your stack-up drawing."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 3-1/16\" 10,000 psi choke and kill manifold suitable for sour (H2S) service?",
+          "a": "Yes, it is listed as sour service to NACE MR0175 / ISO 15156, with Inconel-clad seats and gate and B7M studs throughout. The forged AISI 4130 body has a maximum hardness of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure and chloride content on the RFQ."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM choke manifolds is the 3-1/16\" 10,000 psi Indus manifold equivalent to?",
+          "a": "It is listed as a matched-pressure equivalent to the Cameron 3-1/16\" 10K and NOV 3-1/16\" 10K choke manifolds, and McEvoy and Wood Group choke manifolds. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the 3-1/16\" 10,000 psi choke and kill manifold?",
+          "a": "It is an API 16C unit, supplied as an API-certified, API-monogrammed manifold from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. The package also lists a hydrostatic test certificate, EN 10204 3.1 / 3.2 mill test reports and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories complete the 3-1/16\" 10,000 psi choke and kill manifold?",
+          "a": "A complete system also needs ring gaskets and studs for the flanged joints, hoses or flowline to the BOP, and a control unit for the hydraulic choke. See [ring joint gaskets](/c/ring-joint-gaskets), [BOP control units](/c/bop-control-units) and the [API 16C manifold range](/p/choke-and-kill-manifold-api-16c)."
+        },
+        {
+          "slot": "J",
+          "q": "What drilling applications is the 3-1/16\" 10,000 psi choke and kill manifold made for?",
+          "a": "It is listed for choke and kill duty on 10K BOP stacks in mainstream development drilling, sour-service drilling where the sour trim is the default, and workover and well-intervention manifolds. The Aramco, ADNOC, KOC and PDO fields are named as typical users."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16\" 10,000 psi manifold differ from the API 16C configurable choke and kill manifold?",
+          "a": "This listing is a fixed 3-1/16\" 10K sour-service manifold with a stated weight and lead time, while the [configurable API 16C manifold](/p/choke-and-kill-manifold-api-16c) covers 2-1/16\" to 7-1/16\" and 3,000 to 20,000 psi built to your specification. Choose the configurable one for other sizes or pressure classes."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/16\" 10,000 psi choke and kill manifold?",
+          "a": "The listing states a lead time of 100 days for this manifold. Exact timing depends on configuration, certification scope and any witnessed testing, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Choke & Kill Manifold, 3-1/16\" 10,000 psi WP, API 16C, Sour Service (NACE MR0175) available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Choke & Kill Manifold, 3-1/16\" 10,000 psi WP, API 16C, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 100 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

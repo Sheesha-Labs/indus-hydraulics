@@ -1,0 +1,868 @@
+{
+  "family": "water-suction-delivery-hoses",
+  "extraFacts": [
+    {
+      "fact": "A 3:1 safety (design) factor means the minimum burst pressure of the hose is three times its maximum working pressure; the working pressure is the maximum for continuous duty and burst pressure is a test figure, not a working limit.",
+      "source": "Indus guide: industrial hose safety factors (/blog/industrial-hose-safety-factors); hose maker catalogues"
+    },
+    {
+      "fact": "NPSM is the straight (parallel) American pipe thread for mechanical joints and FNPSM is its female form; NPT is the tapered pipe thread.",
+      "source": "ASME B1.20.1 (NPT, NPSM)"
+    },
+    {
+      "fact": "In cam and groove couplings, type C is a coupler with a hose shank and type E is an adapter with a hose shank; the coupler and adapter lock together with two cam arms.",
+      "source": "MIL-C-27487 / A-A-59326 cam and groove coupling types"
+    },
+    {
+      "fact": "A suction hose has an internal helix so it resists collapse under vacuum, while a discharge hose is built for positive pressure and may collapse under vacuum; a suction-and-discharge hose does both.",
+      "source": "Indus guides: water suction and dewatering hose; PVC or rubber suction hose"
+    }
+  ],
+  "products": [
+    {
+      "slug": "continental-discharge-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Continental Discharge Hoses and what is it used for?",
+          "a": "The Continental Discharge Hoses are a coupled water suction and discharge hose assembly with aluminum fittings. It is listed in fourteen part numbers, 1 1/2\" to 4\". Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Continental Discharge Hoses?",
+          "a": "The Continental Discharge Hoses have fourteen part numbers, each one size, length or colour. Examples from the table: SP400-50MF-G is Water Suction and Discharge Hose, 4 Inch Hose Inside Dia, 55 psi, Green; RSG400-15MF-G is Water Suction and Discharge Hose, 4 Inch Hose Inside Dia, 150 psi, Black; GH200-50MF-G is Water Suction and Discharge Hose, 2 Inch Hose Inside Dia, 50 psi, Green. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Continental Discharge Hoses come in?",
+          "a": "The Continental Discharge Hoses are listed in 1 1/2\", 2\", 3\" and 4\" inside diameters across fourteen part numbers. Several sizes come in more than one length or colour, so quote the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure do the Continental Discharge Hoses have at each size?",
+          "a": "The working pressure of the Continental Discharge Hoses depends on the size and the version: 1 1/2\" at 89 psi, 125 psi or 150 psi, 3\" at 65 psi or 125 psi and 4\" at 40 psi, 55 psi or 150 psi, out of eight different ratings from 40 to 150 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Continental Discharge Hoses rated for?",
+          "a": "The Continental Discharge Hoses are listed for 0°F to +158°F. It is rated for 29 in. hg of vacuum. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Continental Discharge Hoses made of?",
+          "a": "The listing gives no construction detail for the Continental Discharge Hoses beyond that it are a coupled water suction and discharge hose assembly with aluminum fittings. Compatible fluids listed: deionized water, fresh water, salt water."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard do the Continental Discharge Hoses have?",
+          "a": "The listing names no hose standard for the Continental Discharge Hoses and gives a 3:1 safety factor. A 3:1 factor means the minimum burst pressure is three times the working pressure, and the working pressure is the maximum for continuous duty. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings do the Continental Discharge Hoses take?",
+          "a": "The Continental Discharge Hoses is a coupled assembly with aluminum fittings, and the listing gives the second end as an FNPSM (female NPSM) thread. Check the thread on your pump or hose tail before you order, and see our [cam and groove couplings](/c/cam-and-groove-couplings) for matching couplings."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care do the Continental Discharge Hoses need?",
+          "a": "The listing gives a minimum bend radius of 16\" for the Continental Discharge Hoses. Route the hose in curves no tighter than that, avoid kinks and sharp edges, and support its weight when full. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Are the Continental Discharge Hoses suction hoses, discharge hoses or both?",
+          "a": "It is a suction and discharge hose: every row is listed as a water suction and discharge hose and the specification gives 29 in. hg of vacuum. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Continental Discharge Hoses compare with the Continental Water Discharge Hose?",
+          "a": "Compared with the [Continental Water Discharge Hose](/p/continental-water-discharge-hose), the Continental Discharge Hoses are a coupled water suction and discharge hose assembly with aluminum fittings; the other listing is a plain discharge hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Continental Discharge Hoses in Dubai for export?",
+          "a": "Yes, Continental Discharge Hoses are held in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "continental-water-discharge-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Continental Water Discharge Hose and what is it used for?",
+          "a": "The Continental Water Discharge Hose is a water discharge hose. It is listed in nineteen part numbers, 3/8\" to 4\". Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Continental Water Discharge Hose?",
+          "a": "The Continental Water Discharge Hose has nineteen part numbers, each one size, length or colour. Examples from the table: 20026512 is Discharge Hose 1-1/2 Inch Id 300ft 150psi; RD400-25MF-G is Discharge Hose 4 Inch Id x 25 Feet 125 Psi; 20016811 is Discharge Hose 2.5 Id x 100 Feet 125 Psi. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Continental Water Discharge Hose come in?",
+          "a": "The Continental Water Discharge Hose is listed in 3/8\", 1/2\", 3/4\", 1\", 1 1/4\", 1-1/2\", 1 1/2\", 2\", 2 1/2\", 3\", 3\" and 4\" inside diameters across nineteen part numbers. Several sizes come in more than one length or colour, so quote the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure does the Continental Water Discharge Hose have at each size?",
+          "a": "The working pressure of the Continental Water Discharge Hose depends on the size and the version: 3/8\" at 150 psi, 1 1/2\" at 125 psi and 4\" at 125 psi, out of two different ratings from 125 to 150 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Continental Water Discharge Hose rated for?",
+          "a": "The Continental Water Discharge Hose is listed for a maximum of 190°F. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Continental Water Discharge Hose made of?",
+          "a": "The listing gives no construction detail for the Continental Water Discharge Hose beyond that it is a water discharge hose. Colour: black."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Continental Water Discharge Hose have?",
+          "a": "The listing names no hose standard for the Continental Water Discharge Hose. The working pressure in the table is the maximum for continuous duty and burst pressure is a test figure, not a working limit. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental Water Discharge Hose take?",
+          "a": "The Continental Water Discharge Hose is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Continental Water Discharge Hose need?",
+          "a": "The listing gives no bend radius for the Continental Water Discharge Hose. Avoid kinks and tight curves, support the weight of a full hose, and keep it clear of sharp edges; see our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Continental Water Discharge Hose a suction hose, a discharge hose or both?",
+          "a": "It is a discharge hose: the rows are listed as discharge hose with working pressures and no vacuum rating, so do not use it on a suction line. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental Water Discharge Hose compare with the Continental Water Suction/Discharge Hose?",
+          "a": "Compared with the [Continental Water Suction/Discharge Hose](/p/continental-water-suction-discharge-hose), the Continental Water Discharge Hose is a water discharge hose; the other listing is a suction and discharge hose with a thermoplastic rubber tube. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Continental Water Discharge Hose in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Continental Water Discharge Hose sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "continental-water-suction-discharge-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Continental Water Suction/Discharge Hose and what is it used for?",
+          "a": "The Continental Water Suction/Discharge Hose is a water suction and discharge hose with a thermoplastic rubber tube. It is listed in 46 part numbers, 1 1/4\" to 4\". Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Continental Water Suction/Discharge Hose?",
+          "a": "The Continental Water Suction/Discharge Hose has 46 part numbers, each one size, length or colour. Examples from the table: 20450351 is Suction Hose 3 Inch Id x 100 Feet 45 Psi Max; 20450178 is Suction Hose 1.25 Inch Idx100 Feet 50 Psi; GH200-50CE-G is Suction Hose 2 Inch Id x 50 Feet 50 Psi Max. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Continental Water Suction/Discharge Hose come in?",
+          "a": "The Continental Water Suction/Discharge Hose is listed in 1 1/4\", 1 1/2\", 2\", 3\", 3\" and 4\" inside diameters across 46 part numbers. Several sizes come in more than one length or colour, so quote the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure does the Continental Water Suction/Discharge Hose have at each size?",
+          "a": "The working pressure of the Continental Water Suction/Discharge Hose depends on the size and the version: 1 1/4\" at 50 psi, 3\" at 45 psi and 4\" at 40 psi, 55 psi or 100 psi, out of eight different ratings from 40 to 100 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Continental Water Suction/Discharge Hose rated for?",
+          "a": "The Continental Water Suction/Discharge Hose is listed for a maximum of 180°F. It is rated for 29 in. hg of vacuum. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Continental Water Suction/Discharge Hose made of?",
+          "a": "The Continental Water Suction/Discharge Hose has a thermoplastic rubber tube. Colour: black, green. Ask us for the maker's data sheet if your fluid is not plain water, and tell us the temperature and pressure so we confirm the hose."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Continental Water Suction/Discharge Hose have?",
+          "a": "The listing names no hose standard for the Continental Water Suction/Discharge Hose. The working pressure in the table is the maximum for continuous duty and burst pressure is a test figure, not a working limit. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Continental Water Suction/Discharge Hose take?",
+          "a": "The Continental Water Suction/Discharge Hose is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Continental Water Suction/Discharge Hose need?",
+          "a": "The listing gives a minimum bend radius of 5\" for the Continental Water Suction/Discharge Hose. Route the hose in curves no tighter than that, avoid kinks and sharp edges, and support its weight when full. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Continental Water Suction/Discharge Hose a suction hose, a discharge hose or both?",
+          "a": "It is both: the rows are listed as suction hose or suction/discharge hose and the specification gives 29 in. hg of vacuum. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Continental Water Suction/Discharge Hose compare with the Continental Discharge Hoses?",
+          "a": "Compared with the [Continental Discharge Hoses](/p/continental-discharge-hoses), the Continental Water Suction/Discharge Hose is a water suction and discharge hose with a thermoplastic rubber tube; the other listing is a coupled assembly with aluminum fittings. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Continental Water Suction/Discharge Hose in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Continental Water Suction/Discharge Hose sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "gates-black-gold-abs-potable-water-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Gates Black Gold ABS Potable Water Hoses and what is it used for?",
+          "a": "The Gates Black Gold ABS Potable Water Hoses are an EPDM-covered potable water hose. It is listed in three part numbers, 2 to 4. Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Gates Black Gold ABS Potable Water Hoses?",
+          "a": "The Gates Black Gold ABS Potable Water Hoses have three part numbers, each one size, length or colour. Examples from the table: 31325010 is Water Hose, 2 Inch I.D, 2.69 Inch O.D, 300 PSI, Orange; 31325011 is Water Hose, 3 Inch I.D, 3.74 Inch O.D, 300 PSI, Orange; 31325012 is Water Hose, 4 Inch I.D, 4.69 Inch O.D, 300 PSI, Orange. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Gates Black Gold ABS Potable Water Hoses come in?",
+          "a": "The Gates Black Gold ABS Potable Water Hoses are listed in 2\", 3\" and 4\" inside diameters across three part numbers. Each part number is one size."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure do the Gates Black Gold ABS Potable Water Hoses have at each size?",
+          "a": "The working pressure of the Gates Black Gold ABS Potable Water Hoses depends on the size and the version: 2\" at 300 psi, 3\" at 300 psi and 4\" at 300 psi, out of one different ratings from 300 to 300 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Gates Black Gold ABS Potable Water Hoses rated for?",
+          "a": "The Gates Black Gold ABS Potable Water Hoses are listed for -40°F to +150°F. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Gates Black Gold ABS Potable Water Hoses made of?",
+          "a": "The listing gives no construction detail for the Gates Black Gold ABS Potable Water Hoses beyond that it are an EPDM-covered potable water hose."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard do the Gates Black Gold ABS Potable Water Hoses have?",
+          "a": "The listing names no hose standard for the Gates Black Gold ABS Potable Water Hoses. The working pressure in the table is the maximum for continuous duty and burst pressure is a test figure, not a working limit. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings do the Gates Black Gold ABS Potable Water Hoses take?",
+          "a": "The Gates Black Gold ABS Potable Water Hoses is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care do the Gates Black Gold ABS Potable Water Hoses need?",
+          "a": "The listing gives a minimum bend radius of 5\" for the Gates Black Gold ABS Potable Water Hoses. Route the hose in curves no tighter than that, avoid kinks and sharp edges, and support its weight when full. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Are the Gates Black Gold ABS Potable Water Hoses suction hoses, discharge hoses or both?",
+          "a": "The listing calls it a water hose rated 300 PSI on all three sizes and gives no vacuum rating, so treat it as a delivery hose and ask us before using it on a suction line. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Gates Black Gold ABS Potable Water Hoses compare with the Gates Water Master 150SD Hoses?",
+          "a": "Compared with the [Gates Water Master 150SD Hoses](/p/gates-water-master-150sd-hoses), the Gates Black Gold ABS Potable Water Hoses are an EPDM-covered potable water hose; the other listing is a braided textile hose with a thermoplastic helix. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Gates Black Gold ABS Potable Water Hoses in Dubai for export?",
+          "a": "Yes, Gates Black Gold ABS Potable Water Hoses are held in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-water-master-150sd-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Gates Water Master 150SD Hoses and what is it used for?",
+          "a": "The Gates Water Master 150SD Hoses are a water hose with a braided textile and thermoplastic helix construction. It is listed in eleven part numbers, 1.5 to 12. Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Gates Water Master 150SD Hoses?",
+          "a": "The Gates Water Master 150SD Hoses have eleven part numbers, each one size, length or colour. Examples from the table: 77441504 is Water Hose, 1.5 Inch I.D, 2.03 Inch O.D, 110 PSI, Clear; 46860213 is Water Hose, 10 Inch I.D, 11.27 Inch O.D, 100 PSI, Black; 46860250 is Water Hose, 2.5 Inch I.D, 2.96 Inch O.D, 150 PSI, Black. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Gates Water Master 150SD Hoses come in?",
+          "a": "The Gates Water Master 150SD Hoses are listed in 1.5\", 2\", 2.5\", 3\", 6\", 8\", 10\" and 12\" inside diameters across eleven part numbers. Several sizes come in more than one length or colour, so quote the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure do the Gates Water Master 150SD Hoses have at each size?",
+          "a": "The working pressure of the Gates Water Master 150SD Hoses depends on the size and the version: 1.5\" at 110 psi, 6\" at 100 psi and 12\" at 100 psi, out of three different ratings from 100 to 150 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Gates Water Master 150SD Hoses rated for?",
+          "a": "The Gates Water Master 150SD Hoses are listed for -13°F to +140°F. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Gates Water Master 150SD Hoses made of?",
+          "a": "The listing gives no construction detail for the Gates Water Master 150SD Hoses beyond that it are a water hose with a braided textile and thermoplastic helix construction."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard do the Gates Water Master 150SD Hoses have?",
+          "a": "The listing names no hose standard for the Gates Water Master 150SD Hoses and gives a 3:1 safety factor. A 3:1 factor means the minimum burst pressure is three times the working pressure, and the working pressure is the maximum for continuous duty. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings do the Gates Water Master 150SD Hoses take?",
+          "a": "The Gates Water Master 150SD Hoses is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care do the Gates Water Master 150SD Hoses need?",
+          "a": "The table gives a minimum bend radius for the Gates Water Master 150SD Hoses that grows with the size, from 63.5 mm to 1524 mm, so route the hose in gentle curves and avoid kinks. Support the weight of a full hose and keep it clear of sharp edges. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Are the Gates Water Master 150SD Hoses suction hoses, discharge hoses or both?",
+          "a": "The listing calls it a water hose with a thermoplastic helix and gives pressure ratings but no vacuum rating, so ask us before using it on a suction line. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Gates Water Master 150SD Hoses compare with the Gates Black Gold ABS Potable Water Hoses?",
+          "a": "Compared with the [Gates Black Gold ABS Potable Water Hoses](/p/gates-black-gold-abs-potable-water-hoses), the Gates Water Master 150SD Hoses are a water hose with a braided textile and thermoplastic helix construction; the other listing is an EPDM-covered potable water hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Gates Water Master 150SD Hoses in Dubai for export?",
+          "a": "Yes, Gates Water Master 150SD Hoses are held in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "clear-pvc-discharge-hose-with-rigid-helix",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Clear PVC Discharge Hose with Rigid Helix and what is it used for?",
+          "a": "The Clear PVC Discharge Hose with Rigid Helix is a clear PVC discharge hose with a rigid white PVC helix. The listing describes it as pump discharge: construction dewatering, liquid waste, septic, agricultural and marine use. It is listed in ten part numbers, 3/4\" to 8\". Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Clear PVC Discharge Hose with Rigid Helix, such as IH-HS-1500-32?",
+          "a": "The Clear PVC Discharge Hose with Rigid Helix part numbers run IH-HS-1500-12 to IH-HS-1500-128, and the rows show the number at the end grows with the bore: -12 is 3/4\", -16 is 1\", -32 is 2\" and -128 is 8\". Each part number is one size supplied as a 50 ft pre-cut length."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Clear PVC Discharge Hose with Rigid Helix come in?",
+          "a": "The Clear PVC Discharge Hose with Rigid Helix comes in ten sizes: 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 6\" and 8\". Choose the bore from the flow you need and match the end fitting to the hose outside diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure does the Clear PVC Discharge Hose with Rigid Helix have?",
+          "a": "The manufacturer gives 40 to 100 psi working pressure for the Clear PVC Discharge Hose with Rigid Helix, depending on size, and publishes no per-size table; larger sizes sit at the lower end. Tell us the size and pressure and we confirm the rating before you order."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Clear PVC Discharge Hose with Rigid Helix rated for?",
+          "a": "The listing gives no temperature range for the Clear PVC Discharge Hose with Rigid Helix. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Clear PVC Discharge Hose with Rigid Helix made of?",
+          "a": "The tube is clear PVC with a rigid white PVC helix, so the hose is rigid enough to keep its shape on pump discharge and the clear wall lets you see the flow."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Clear PVC Discharge Hose with Rigid Helix have?",
+          "a": "The listing names no hose standard for the Clear PVC Discharge Hose with Rigid Helix. The working pressure in the table is the maximum for continuous duty and burst pressure is a test figure, not a working limit. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Clear PVC Discharge Hose with Rigid Helix take?",
+          "a": "The Clear PVC Discharge Hose with Rigid Helix is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Clear PVC Discharge Hose with Rigid Helix need?",
+          "a": "The listing gives no bend radius for the Clear PVC Discharge Hose with Rigid Helix. Avoid kinks and tight curves, support the weight of a full hose, and keep it clear of sharp edges; see our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Clear PVC Discharge Hose with Rigid Helix a suction hose, a discharge hose or both?",
+          "a": "It is a discharge hose: it is made for pump discharge, with a rigid white PVC helix and a 40 to 100 psi working pressure. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Clear PVC Discharge Hose with Rigid Helix compare with the Clear PVC Suction & Delivery Hose?",
+          "a": "Compared with the [Clear PVC Suction & Delivery Hose](/p/clear-pvc-suction-delivery-hose), the Clear PVC Discharge Hose with Rigid Helix is a clear PVC discharge hose with a rigid white PVC helix; the other listing is a PVC spiral-helix suction and delivery hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Clear PVC Discharge Hose with Rigid Helix in Dubai for export?",
+          "a": "Yes. We keep Clear PVC Discharge Hose with Rigid Helix in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "clear-pvc-suction-delivery-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Clear PVC Suction & Delivery Hose and what is it used for?",
+          "a": "The Clear PVC Suction & Delivery Hose is a clear PVC suction and delivery hose with a PVC spiral helix. The listing describes it as low pressure generic hose for water and dilute chemicals. It is listed in five part numbers, 19 mm to 51 mm. Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Clear PVC Suction & Delivery Hose, such as IH-IH-DELVAC-019?",
+          "a": "On the Clear PVC Suction & Delivery Hose table the last three digits of the part number are the inside diameter in millimetres: IH-IH-DELVAC-019 is 19 mm (3/4\"), IH-IH-DELVAC-032 is 32 mm (1-1/4\") and IH-IH-DELVAC-051 is 51 mm (2\"). The branding printed on the hose reads INDUS DELVAC."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Clear PVC Suction & Delivery Hose come in?",
+          "a": "The Clear PVC Suction & Delivery Hose comes in five sizes: 3/4\" (19 mm), 1\" (25 mm), 1-1/4\" (32 mm), 1-1/2\" (38 mm) and 2\" (51 mm). Choose the bore from the flow you need and match the end fitting to the hose outside diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure and burst pressure does the Clear PVC Suction & Delivery Hose have?",
+          "a": "The Clear PVC Suction & Delivery Hose is rated for a maximum working pressure of 4-8 bar on the five sizes, with a minimum burst pressure of 13-24 bar. For example 3/4\" (19 mm) is 8 bar with 24 bar minimum burst, and 2\" (51 mm) is 4 bar with 13.5 bar minimum burst."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Clear PVC Suction & Delivery Hose rated for?",
+          "a": "The Clear PVC Suction & Delivery Hose is listed for -10°C TO +55°C. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Clear PVC Suction & Delivery Hose made of?",
+          "a": "The Clear PVC Suction & Delivery Hose has a PVC tube with no separate cover or lining and PVC spiral helix reinforcement. Ask us for the maker's data sheet if your fluid is not plain water, and tell us the temperature and pressure so we confirm the hose."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Clear PVC Suction & Delivery Hose have?",
+          "a": "The listing names no hose standard for the Clear PVC Suction & Delivery Hose and gives a 3:1 safety factor. A 3:1 factor means the minimum burst pressure is three times the working pressure, and the working pressure is the maximum for continuous duty. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Clear PVC Suction & Delivery Hose take?",
+          "a": "The Clear PVC Suction & Delivery Hose is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Clear PVC Suction & Delivery Hose need?",
+          "a": "The table gives a minimum bend radius for the Clear PVC Suction & Delivery Hose that grows with the size, from 86 mm to 230 mm, so route the hose in gentle curves and avoid kinks. Support the weight of a full hose and keep it clear of sharp edges. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Clear PVC Suction & Delivery Hose a suction hose, a discharge hose or both?",
+          "a": "It is both: the hose is listed as a suction and delivery hose with a PVC spiral helix, and the table gives a vacuum figure on every size. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Clear PVC Suction & Delivery Hose compare with the Medium-Duty PVC Suction & Delivery Hose?",
+          "a": "Compared with the [Medium-Duty PVC Suction & Delivery Hose](/p/medium-duty-pvc-suction-delivery-hose), the Clear PVC Suction & Delivery Hose is a clear PVC suction and delivery hose with a PVC spiral helix; the other listing is a medium-duty PVC spiral-helix hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Clear PVC Suction & Delivery Hose in Dubai for export?",
+          "a": "Yes. Clear PVC Suction & Delivery Hose sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "medium-duty-pvc-suction-delivery-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Medium-Duty PVC Suction & Delivery Hose and what is it used for?",
+          "a": "The Medium-Duty PVC Suction & Delivery Hose is a medium-duty PVC suction and delivery hose with a PVC spiral helix. The listing describes it as medium Duty hose for water, slurry, abrasives and chemicals. It is listed in eight part numbers, 25 mm to 152 mm. Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Medium-Duty PVC Suction & Delivery Hose, such as IH-IH-IRRIBULK-025?",
+          "a": "On the Medium-Duty PVC Suction & Delivery Hose table the last three digits of the part number are the inside diameter in millimetres: IH-IH-IRRIBULK-025 is 25 mm (1\"), IH-IH-IRRIBULK-063 is 63 mm (2-1/2\") and IH-IH-IRRIBULK-152 is 152 mm (6\"). The branding printed on the hose reads INDUS IRRIBULK M."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Medium-Duty PVC Suction & Delivery Hose come in?",
+          "a": "The Medium-Duty PVC Suction & Delivery Hose comes in eight sizes: 1\" (25 mm), 1-1/4\" (32 mm), 1-1/2\" (38 mm), 2\" (51 mm), 2-1/2\" (63 mm), 3\" (76 mm), 4\" (102 mm) and 6\" (152 mm). Choose the bore from the flow you need and match the end fitting to the hose outside diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure and burst pressure does the Medium-Duty PVC Suction & Delivery Hose have?",
+          "a": "The Medium-Duty PVC Suction & Delivery Hose is rated for a maximum working pressure of 3-8 bar on the eight sizes, with a minimum burst pressure of 10-24 bar. For example 1\" (25 mm) is 8 bar with 24 bar minimum burst, and 6\" (152 mm) is 3 bar with 10 bar minimum burst."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Medium-Duty PVC Suction & Delivery Hose rated for?",
+          "a": "The Medium-Duty PVC Suction & Delivery Hose is listed for -10°C TO +55°C. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Medium-Duty PVC Suction & Delivery Hose made of?",
+          "a": "The Medium-Duty PVC Suction & Delivery Hose has a PVC tube with no separate cover or lining and PVC spiral helix reinforcement."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Medium-Duty PVC Suction & Delivery Hose have?",
+          "a": "The listing names no hose standard for the Medium-Duty PVC Suction & Delivery Hose and gives a 3:1 safety factor. A 3:1 factor means the minimum burst pressure is three times the working pressure, and the working pressure is the maximum for continuous duty. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Medium-Duty PVC Suction & Delivery Hose take?",
+          "a": "The Medium-Duty PVC Suction & Delivery Hose is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Medium-Duty PVC Suction & Delivery Hose need?",
+          "a": "The table gives a minimum bend radius for the Medium-Duty PVC Suction & Delivery Hose that grows with the size, from 57 mm to 401 mm, so route the hose in gentle curves and avoid kinks. Support the weight of a full hose and keep it clear of sharp edges. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Medium-Duty PVC Suction & Delivery Hose a suction hose, a discharge hose or both?",
+          "a": "It is both: the hose is listed as a suction and delivery hose with a PVC spiral helix, and the table gives a vacuum figure on every size. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Medium-Duty PVC Suction & Delivery Hose compare with the Water Suction & Delivery Hose 10 Bar?",
+          "a": "Compared with the [Water Suction & Delivery Hose 10 Bar](/p/water-suction-delivery-hose-10-bar), the Medium-Duty PVC Suction & Delivery Hose is a medium-duty PVC suction and delivery hose with a PVC spiral helix; the other listing is a 10 bar SBR hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Medium-Duty PVC Suction & Delivery Hose in Dubai for export?",
+          "a": "Yes. Indus stocks Medium-Duty PVC Suction & Delivery Hose at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "water-suction-delivery-hose-10-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Water Suction & Delivery Hose 10 Bar and what is it used for?",
+          "a": "The Water Suction & Delivery Hose 10 Bar is a 10 bar SBR water suction and delivery hose with a textile and wire helix reinforcement. The listing describes it as industrial hose for water and mild abrasives. It is listed in eight part numbers, 25 mm to 152 mm. Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Water Suction & Delivery Hose 10 Bar, such as IH-IH-A210-025?",
+          "a": "On the Water Suction & Delivery Hose 10 Bar table the last three digits of the part number are the inside diameter in millimetres: IH-IH-A210-025 is 25 mm (1\"), IH-IH-A210-063 is 63 mm (2-1/2\") and IH-IH-A210-152 is 152 mm (6\"). The branding printed on the hose reads INDUS LOGO, A210 WATER S&D 10 BAR/700mmHg SF 3:1."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Water Suction & Delivery Hose 10 Bar come in?",
+          "a": "The Water Suction & Delivery Hose 10 Bar comes in eight sizes: 1\" (25 mm), 1-1/4\" (32 mm), 1-1/2\" (38 mm), 2\" (51 mm), 2-1/2\" (63 mm), 3\" (76 mm), 4\" (102 mm) and 6\" (152 mm). Choose the bore from the flow you need and match the end fitting to the hose outside diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure and burst pressure does the Water Suction & Delivery Hose 10 Bar have?",
+          "a": "The Water Suction & Delivery Hose 10 Bar is rated for a maximum working pressure of 10 bar on the eight sizes, with a minimum burst pressure of 30 bar. For example 1\" (25 mm) is 10 bar with 30 bar minimum burst, and 6\" (152 mm) is 10 bar with 30 bar minimum burst."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Water Suction & Delivery Hose 10 Bar rated for?",
+          "a": "The Water Suction & Delivery Hose 10 Bar is listed for -20°C to +70°C. The branding on the hose gives 700mmHg vacuum. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Water Suction & Delivery Hose 10 Bar made of?",
+          "a": "The Water Suction & Delivery Hose 10 Bar has a black SBR lining, a black mandrel wrap, ozone and weather resistant SBR cover and high tensile strength textile plies, carbon wire helix reinforcement."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Water Suction & Delivery Hose 10 Bar have?",
+          "a": "The listing names no hose standard for the Water Suction & Delivery Hose 10 Bar and gives a 3:1 safety factor. A 3:1 factor means the minimum burst pressure is three times the working pressure, and the working pressure is the maximum for continuous duty. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Water Suction & Delivery Hose 10 Bar take?",
+          "a": "The Water Suction & Delivery Hose 10 Bar is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Water Suction & Delivery Hose 10 Bar need?",
+          "a": "The table gives a minimum bend radius for the Water Suction & Delivery Hose 10 Bar that grows with the size, from 150 mm to 1064 mm, so route the hose in gentle curves and avoid kinks. Support the weight of a full hose and keep it clear of sharp edges. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Water Suction & Delivery Hose 10 Bar a suction hose, a discharge hose or both?",
+          "a": "It is both: the hose is listed as a suction and delivery hose, and its printed branding gives 700mmHg vacuum. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Water Suction & Delivery Hose 10 Bar compare with the Water Suction & Delivery Hose 16 Bar?",
+          "a": "Compared with the [Water Suction & Delivery Hose 16 Bar](/p/water-suction-delivery-hose-16-bar), the Water Suction & Delivery Hose 10 Bar is a 10 bar SBR water suction and delivery hose with a textile and wire helix reinforcement; the other listing is a 16 bar SBR hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Water Suction & Delivery Hose 10 Bar from stock in the UAE and get a quotation?",
+          "a": "Yes, Water Suction & Delivery Hose 10 Bar is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "water-suction-delivery-hose-16-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Water Suction & Delivery Hose 16 Bar and what is it used for?",
+          "a": "The Water Suction & Delivery Hose 16 Bar is a 16 bar SBR water suction and delivery hose with textile plies and a double helix. The listing describes it as industrial hose for water and mild abrasives. It is listed in six part numbers, 51 mm to 203 mm. Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Water Suction & Delivery Hose 16 Bar, such as IH-IH-A216-051?",
+          "a": "On the Water Suction & Delivery Hose 16 Bar table the last three digits of the part number are the inside diameter in millimetres: IH-IH-A216-051 is 51 mm (2\"), IH-IH-A216-127 is 127 mm (5\") and IH-IH-A216-203 is 203 mm (8\"). The branding printed on the hose reads INDUS LOGO A216 WATER S&D 16 BAR."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Water Suction & Delivery Hose 16 Bar come in?",
+          "a": "The Water Suction & Delivery Hose 16 Bar comes in six sizes: 2\" (51 mm), 3\" (76 mm), 4\" (102 mm), 5\" (127 mm), 6\" (152 mm) and 8\" (203 mm). Choose the bore from the flow you need and match the end fitting to the hose outside diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure and burst pressure does the Water Suction & Delivery Hose 16 Bar have?",
+          "a": "The Water Suction & Delivery Hose 16 Bar is rated for a maximum working pressure of 16 bar on the six sizes, with a minimum burst pressure of 48 bar. For example 2\" (51 mm) is 16 bar with 48 bar minimum burst, and 8\" (203 mm) is 16 bar with 48 bar minimum burst."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Water Suction & Delivery Hose 16 Bar rated for?",
+          "a": "The Water Suction & Delivery Hose 16 Bar is listed for -35°C to +70°C. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Water Suction & Delivery Hose 16 Bar made of?",
+          "a": "The Water Suction & Delivery Hose 16 Bar has a black SBR lining, a black mandrel wrap, abrasion, ozone and weather resistant SBR cover and high tensile strength textile plies, double helix reinforcement."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Water Suction & Delivery Hose 16 Bar have?",
+          "a": "The listing names no hose standard for the Water Suction & Delivery Hose 16 Bar and gives a 3:1 safety factor. A 3:1 factor means the minimum burst pressure is three times the working pressure, and the working pressure is the maximum for continuous duty. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Water Suction & Delivery Hose 16 Bar take?",
+          "a": "The Water Suction & Delivery Hose 16 Bar is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Water Suction & Delivery Hose 16 Bar need?",
+          "a": "The table gives a minimum bend radius for the Water Suction & Delivery Hose 16 Bar that grows with the size, from 200 mm to 1100 mm, so route the hose in gentle curves and avoid kinks. Support the weight of a full hose and keep it clear of sharp edges. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Water Suction & Delivery Hose 16 Bar a suction hose, a discharge hose or both?",
+          "a": "It is listed as a suction and delivery hose rated 16 bar; the table gives no vacuum figure, so ask us for the vacuum rating of the size you need. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Water Suction & Delivery Hose 16 Bar compare with the Water Suction & Delivery Hose 10 Bar?",
+          "a": "Compared with the [Water Suction & Delivery Hose 10 Bar](/p/water-suction-delivery-hose-10-bar), the Water Suction & Delivery Hose 16 Bar is a 16 bar SBR water suction and delivery hose with textile plies and a double helix; the other listing is a 10 bar SBR hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Water Suction & Delivery Hose 16 Bar in Dubai for export?",
+          "a": "Yes. We keep Water Suction & Delivery Hose 16 Bar in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "kuriyama-water-suction-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Kuriyama Water Suction Hoses and what is it used for?",
+          "a": "The Kuriyama Water Suction Hoses are a PVC water suction hose with cam and groove aluminum ends. It is listed in six part numbers, 1\" to 4\". Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Kuriyama Water Suction Hoses?",
+          "a": "The Kuriyama Water Suction Hoses have six part numbers, each one size, length or colour. Examples from the table: 45DU39 is Water Suction Hose, 1 Inch Fitting Size, 90 Psi; 45DU66 is Water Suction Hose, 2 Inch Hose Inside Dia, 90 psi, Blue/Clear, 100 ft Hose Length; 45DU68 is Water Suction Hose, 4 Inch Hose Inside Dia, 55 psi, Blue/Clear, 100 ft Hose Length. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Kuriyama Water Suction Hoses come in?",
+          "a": "The Kuriyama Water Suction Hoses are listed in 1\", 1 1/2\", 2\", 3\" and 4\" inside diameters across six part numbers. Several sizes come in more than one length or colour, so quote the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure do the Kuriyama Water Suction Hoses have at each size?",
+          "a": "The working pressure of the Kuriyama Water Suction Hoses depends on the size and the version: 1\" at 90 psi, 2\" at 90 psi and 4\" at 55 psi, out of three different ratings from 55 to 90 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Kuriyama Water Suction Hoses rated for?",
+          "a": "The Kuriyama Water Suction Hoses are listed for -10°F to +130°F. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Kuriyama Water Suction Hoses made of?",
+          "a": "The Kuriyama Water Suction Hoses have a pvc tube. Compatible fluids listed: deionized water, fresh water, salt water. Colour: white, clear."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard do the Kuriyama Water Suction Hoses have?",
+          "a": "The listing names no hose standard for the Kuriyama Water Suction Hoses. The working pressure in the table is the maximum for continuous duty and burst pressure is a test figure, not a working limit. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings do the Kuriyama Water Suction Hoses take?",
+          "a": "The Kuriyama Water Suction Hoses is supplied with aluminum cam and groove ends: a type C coupler on one end and a type E adapter on the other, listed as Cam And Groove C and E. Our [cam and groove couplings](/c/cam-and-groove-couplings) cover the mating parts."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care do the Kuriyama Water Suction Hoses need?",
+          "a": "The table gives a minimum bend radius for the Kuriyama Water Suction Hoses that grows with the size, from 76.2 mm to 381 mm, so route the hose in gentle curves and avoid kinks. Support the weight of a full hose and keep it clear of sharp edges. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Are the Kuriyama Water Suction Hoses suction hoses, discharge hoses or both?",
+          "a": "It is a suction hose: the listing type is water suction hose, in PVC with cam and groove aluminum ends. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Kuriyama Water Suction Hoses compare with the Petersen Water Suction Hose?",
+          "a": "Compared with the [Petersen Water Suction Hose](/p/petersen-water-suction-hose), the Kuriyama Water Suction Hoses are a PVC water suction hose with cam and groove aluminum ends; the other listing is an EPDM and PVC suction hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Kuriyama Water Suction Hoses in Dubai for export?",
+          "a": "Yes, Kuriyama Water Suction Hoses are held in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "novaflex-water-discharge-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Novaflex Water Discharge Hoses and what is it used for?",
+          "a": "The Novaflex Water Discharge Hoses are a blue bulk water discharge hose for fresh water. It is listed in five part numbers, 1\" to 4\". Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Novaflex Water Discharge Hoses?",
+          "a": "The Novaflex Water Discharge Hoses have five part numbers, each one size, length or colour. Examples from the table: 6285WN-16 is Water Discharge Hose, 1 Inch Hose Inside Dia, 250 psi, Blue, 100 ft Hose Length; 6285WN-48 is Water Discharge Hose, 3 Inch Hose Inside Dia, 145 psi, Blue, 100 ft Hose Length; 6285WN-24 is Water Discharge Hose, 1 1/2 Inch Hose Inside Dia, 250 psi, Blue, 100 ft Hose Length. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Novaflex Water Discharge Hoses come in?",
+          "a": "The Novaflex Water Discharge Hoses are listed in 1\", 1 1/2\", 2\", 3\" and 4\" inside diameters across five part numbers. Each part number is one size."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure do the Novaflex Water Discharge Hoses have at each size?",
+          "a": "The working pressure of the Novaflex Water Discharge Hoses depends on the size and the version: 1\" at 250 psi, 2\" at 200 psi and 4\" at 150 psi, out of four different ratings from 145 to 250 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Novaflex Water Discharge Hoses rated for?",
+          "a": "The Novaflex Water Discharge Hoses are listed for -20°F to +180°F. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Novaflex Water Discharge Hoses made of?",
+          "a": "The listing gives no construction detail for the Novaflex Water Discharge Hoses beyond that it are a blue bulk water discharge hose for fresh water. Compatible fluids listed: fresh water."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard do the Novaflex Water Discharge Hoses have?",
+          "a": "The listing names no hose standard for the Novaflex Water Discharge Hoses. The working pressure in the table is the maximum for continuous duty and burst pressure is a test figure, not a working limit. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings do the Novaflex Water Discharge Hoses take?",
+          "a": "The Novaflex Water Discharge Hoses is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care do the Novaflex Water Discharge Hoses need?",
+          "a": "The table gives a minimum bend radius for the Novaflex Water Discharge Hoses that grows with the size, from 101.6 mm to 406.4 mm, so route the hose in gentle curves and avoid kinks. Support the weight of a full hose and keep it clear of sharp edges. Our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) covers laying and support."
+        },
+        {
+          "slot": "J",
+          "q": "Are the Novaflex Water Discharge Hoses suction hoses, discharge hoses or both?",
+          "a": "It is a discharge hose: the rows are listed as water discharge hose with working pressures and no vacuum rating, so do not use it on a suction line. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Novaflex Water Discharge Hoses compare with the Continental Water Discharge Hose?",
+          "a": "Compared with the [Continental Water Discharge Hose](/p/continental-water-discharge-hose), the Novaflex Water Discharge Hoses are a blue bulk water discharge hose for fresh water; the other listing is a plain discharge hose. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Novaflex Water Discharge Hoses in Dubai for export?",
+          "a": "Yes. We keep Novaflex Water Discharge Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "petersen-water-suction-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Petersen Water Suction Hose and what is it used for?",
+          "a": "The Petersen Water Suction Hose is a water suction hose in EPDM and PVC. It is listed in three part numbers, 1 to 1.5. Pick the size by bore and working pressure, then the end fittings from the same maker or hose series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the part numbers of the Petersen Water Suction Hose?",
+          "a": "The Petersen Water Suction Hose has three part numbers, each one size, length or colour. Examples from the table: 936-2150-6024HP is Water Suction Hose, 1.5 Inch Diameter, 24 Feet Length, 250 Psi; 936-2100-5024 is Water Suction Hose, 1 Inch Diameter, 24 Feet Length, 90 Psi; 936-2150-6024 is Water Suction Hose, 1.5 Inch Diameter, 24 Feet Length, 100 Psi. The listing gives no decode of the codes, so quote the part number or the bore, length and colour you need."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Petersen Water Suction Hose come in?",
+          "a": "The Petersen Water Suction Hose is listed in 1\" and 1.5\" inside diameters across three part numbers. Several sizes come in more than one length or colour, so quote the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What working pressure does the Petersen Water Suction Hose have at each size?",
+          "a": "The working pressure of the Petersen Water Suction Hose depends on the size and the version: 1\" at 90 psi and 1.5\" at 100 psi or 250 psi, out of three different ratings from 90 to 250 psi in the table. Use the figure on the row for your part number, and size the fittings to match."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range is the Petersen Water Suction Hose rated for?",
+          "a": "The listing gives no temperature range for the Petersen Water Suction Hose. Check the temperature and the fluid before you order, and use the lower of the hose and fitting ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Petersen Water Suction Hose made of?",
+          "a": "The listing gives no construction detail for the Petersen Water Suction Hose beyond that it is a water suction hose in EPDM and PVC."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor and standard does the Petersen Water Suction Hose have?",
+          "a": "The listing names no hose standard for the Petersen Water Suction Hose. The working pressure in the table is the maximum for continuous duty and burst pressure is a test figure, not a working limit. Ask us for the maker's test certificates if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Petersen Water Suction Hose take?",
+          "a": "The Petersen Water Suction Hose is a bulk or assembled hose that takes hose couplings clamped to its outside diameter, so match the coupling to the hose outside diameter and the working pressure. See our [cam and groove couplings](/c/cam-and-groove-couplings) and [Bauer-type couplings](/c/bauer-type-couplings) for the common ends."
+        },
+        {
+          "slot": "I",
+          "q": "What bend radius and installation care does the Petersen Water Suction Hose need?",
+          "a": "The listing gives no bend radius for the Petersen Water Suction Hose. Avoid kinks and tight curves, support the weight of a full hose, and keep it clear of sharp edges; see our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Petersen Water Suction Hose a suction hose, a discharge hose or both?",
+          "a": "It is a suction hose: the listing type is water suction hose, in EPDM and PVC. See our [water suction and dewatering hose guide](/blog/water-suction-and-dewatering-hose) for choosing between suction, discharge and combined hose."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Petersen Water Suction Hose compare with the Kuriyama Water Suction Hoses?",
+          "a": "Compared with the [Kuriyama Water Suction Hoses](/p/kuriyama-water-suction-hoses), the Petersen Water Suction Hose is a water suction hose in EPDM and PVC; the other listing is a PVC suction hose with cam and groove ends. Choose by the working pressure, the vacuum duty and the fluid."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Petersen Water Suction Hose in Dubai for export?",
+          "a": "Yes. We keep Petersen Water Suction Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

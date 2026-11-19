@@ -1,0 +1,1615 @@
+{
+  "family": "orbital-hydraulic-motors-01",
+  "extraFacts": [
+    {
+      "fact": "One US gallon is 231 cubic inches, so shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses.",
+      "source": "US gallon definition; Indus Hydraulics orbital motor guide"
+    },
+    {
+      "fact": "SAE J744 defines the SAE A, B and C 2-bolt and 4-bolt flange mounts for hydraulic pumps and motors.",
+      "source": "SAE J744 Hydraulic Pump and Motor Mounting and Drive Shaft Dimensions"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 25 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 52 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Wheel Mount: displacement 118 to 745 cm³/rev, mount Wheel Mount, 78 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMH Orbital Motors: displacement 203.2 to 489.2 cm³/rev, mount Magneto, 15 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMH Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMK6 Orbital Motors: displacement 195.6 to 981.6 cm³/rev, mount SAE \"CC\", 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMK6 Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMM(Z) Orbital Motors: displacement 8.2 to 50.3 cm³/rev, mount 2-Bolt, Circle Flange, 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMM(Z) Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount: displacement 36 to 390 cm³/rev, mount SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, 90 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount: displacement 36 to 390 cm³/rev, mount SAE \"A\" 4-Bolt, 90 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount: displacement 36 to 390 cm³/rev, mount Magneto, 12 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount: displacement 51.7 to 381.4 cm³/rev, mount SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, 108 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount: displacement 51.7 to 381.4 cm³/rev, mount SAE \"A\" 4-Bolt, 81 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount: displacement 81.5 to 381.4 cm³/rev, mount Magneto, 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount: displacement 81 to 475 cm³/rev, mount SAE \"A\" 2 Bolt, 85 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount: displacement 81 to 475 cm³/rev, mount SAE \"A\" 4-Bolt, 43 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount: displacement 81 to 475 cm³/rev, mount Magneto, 77 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount: displacement 81 to 475 cm³/rev, mount Wheel Mount, 41 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMT Orbital Motors: displacement 161.1 to 801.8 cm³/rev, mount 4-Bolt, 32 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMT Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMV Orbital Motors: displacement 333 to 990 cm³/rev, mount 4-Bolt, 18 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMV Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne 500 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 84 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 500 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne 500 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, Wheel mount, 76 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 500 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne 501 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 39 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 501 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne 501 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 501 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 50 to 400 cm³/rev, mount 2-bolt SAE A, 85 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 50 to 400 cm³/rev, mount 4-bolt SAE A square, 58 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne FM3 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 50 to 315 cm³/rev, mount 2-bolt SAE A, 71 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM3 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne FM3 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 50 to 315 cm³/rev, mount 4-bolt SAE A square, 49 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM3 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne FM50 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 53 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM50 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne FM50 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 52 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM50 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne FM51 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM51 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne FM51 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 18 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM51 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 2.2 to 400 cm³/rev, mount 2-bolt SAE A, 4-bolt SAE A, 172 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 36 to 400 cm³/rev, mount 4-bolt magneto (SAE A), 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 2.2 to 400 cm³/rev, mount 4-bolt SAE A square, 142 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 4.9 to 375 cm³/rev, mount 2-bolt SAE A, 4-bolt magneto, 138 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 50 to 315 cm³/rev, mount 4-bolt magneto (SAE A), 20 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 4.9 to 375 cm³/rev, mount 4-bolt SAE A square, 102 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors: displacement 80 to 400 cm³/rev, mount 4-bolt SAE A, 2-bolt SAE A square, 4-bolt SAE B, 5 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 80 to 475 cm³/rev, mount 2-bolt SAE A, 298 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount: displacement 80 to 475 cm³/rev, mount 2-bolt SAE B, 115 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount: displacement 4.9 to 475 cm³/rev, mount 4-bolt magneto, 22 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 4.9 to 475 cm³/rev, mount 4-bolt magneto (SAE A), 74 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 80 to 475 cm³/rev, mount 4-bolt SAE A square, 114 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF105 Series Orbital Motors, Wheel Mount: displacement 80 to 375 cm³/rev, mount 4-bolt wheel, 74 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF105 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount: displacement 80 to 375 cm³/rev, mount 4-bolt, 14 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount: displacement 160 to 630 cm³/rev, mount 4-bolt SAE B, 48 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount"
+    },
+    {
+      "fact": "Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 160 to 630 cm³/rev, mount 4-bolt SAE C, 56 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount: displacement 245 to 985 cm³/rev, mount 4-bolt, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 195 to 985 cm³/rev, mount 4-bolt SAE C, 89 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF113 Series Orbital Motors, Wheel Mount: displacement 195 to 985 cm³/rev, mount 4-bolt wheel, Wheel mount, 29 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF113 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount: displacement 195 to 985 cm³/rev, mount 4-bolt SAE C bearingless, 4-bolt SAE C, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount"
+    },
+    {
+      "fact": "Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 315 to 1000 cm³/rev, mount 4-bolt SAE C, SAE C-Mount, 13 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors: displacement 8 to 32 cm³/rev, mount 3-bolt SAE C, 5 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount: displacement 8 to 50 cm³/rev, mount 2-bolt, 22 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount: displacement 8 to 50 cm³/rev, mount 3-bolt / 5-bolt, 60 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount: displacement 8 to 20 cm³/rev, mount 3-bolt, 6 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF130 Series Orbital Motors: displacement 160 cm³/rev, mount 4-bolt square, 1 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF130 Series Orbital Motors"
+    },
+    {
+      "fact": "Char-Lynn 101 Series Hydraulic Motors: displacement 2.8 to 22.6 in³/rev, mount 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot, 31 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 101 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 103 Series (S Series) Hydraulic Motors: displacement 4.6 to 22.7 in³/rev, mount 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot, 16 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 103 Series (S Series) Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 104 Series Hydraulic Motors: displacement 4.9 to 18.7 in³/rev, mount 2 Bolt / SAE A / 3.25\" Pilot, 16 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 104 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 112 and 119 Series Hydraulic Motors: displacement 19.0 to 30.0 in³/rev, mount None, 3 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 112 and 119 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton H Series Hydraulic Motors: displacement 2.8 in³/rev to 17.9 in³/rev, mount None, 25 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton H Series Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton Hydraulic Motors: displacement 2.8 in³/rev to 22.7 in³/rev, mount None, 30 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton J Series Hydraulic Motors: displacement 0.5 in³/rev to 1.9 in³/rev, mount None, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton J Series Hydraulic Motors"
+    },
+    {
+      "fact": "Parker 110A Series Hydraulic Motors: displacement 3.6 in³/rev to 16.4 in³/rev, mount SAE A 2-Bolt, 4 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker 110A Series Hydraulic Motors"
+    },
+    {
+      "fact": "Parker BG Series Brake Torqmotors: displacement None, mount None, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker BG Series Brake Torqmotors"
+    },
+    {
+      "fact": "Parker BH Series Brake Motors: displacement None, mount None, 6 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker BH Series Brake Motors"
+    },
+    {
+      "fact": "Parker Hydraulic Motors: displacement 8.6 in³/rev to 58.5 in³/rev, mount SAE A 2-Bolt, 15 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker Hydraulic Motors"
+    },
+    {
+      "fact": "Parker TB Series Torqmotors: displacement 2.2 in³/rev to 24 in³/rev, mount 2 Bolt SAE A, 4 Bolt and 2 Bolt, 79 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TB Series Torqmotors"
+    },
+    {
+      "fact": "Parker TC Series Torqmotors: displacement None, mount None, 42 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TC Series Torqmotors"
+    },
+    {
+      "fact": "Parker TF Series Torqmotors: displacement 4.9 in³/rev to 29.1 in³/rev, mount None, 450 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TF Series Torqmotors"
+    },
+    {
+      "fact": "Parker TG Series Torqmotors: displacement None, mount None, 14 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TG Series Torqmotors"
+    },
+    {
+      "fact": "Parker TJ Series Torqmotors: displacement None, mount None, 13 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TJ Series Torqmotors"
+    },
+    {
+      "fact": "Parker TK Series Torqmotors: displacement None, mount None, 37 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TK Series Torqmotors"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dynamic-fluid-components-bmer-orbital-motors-magneto-mount-1-1-4-in-keyed-shaft",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft and what is it used for?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft is a low-speed, high-torque orbital hydraulic motor, listed in 25 part numbers with displacement 118 to 745 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 6-Hole Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMER-2-125-FS-G2-S (118 cm³/rev, 1.25\" Keyed shaft, 6-Hole Magneto mount, SAE-10 ports, 2,973 psi continuous) and BMER-2-750-FS-G2-S-R (745 cm³/rev, 1.25\" Keyed shaft, 6-Hole Magneto mount, SAE-10 ports, 1,523 psi continuous) are two of the 25 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft cover?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft spans 118 to 745 cm³/rev across 25 part numbers. That is 13 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft are 1.25\" Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft have?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft lists these ratings by part number. Continuous pressure runs 1,523 to 2,973 psi. Intermittent or maximum pressure runs 1,740 to 3,481 psi. Torque runs 3,363 to 11,063 lb-in. Maximum speed runs 120 to 490 rpm. Rated flow runs 14 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft have?",
+          "a": "The mounting of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft is 6-Hole Magneto, and the ports are SAE-10. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft follow?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft names an SAE mounting flange, 6-Hole Magneto, which refers to the SAE J744 flange pattern. The ports are SAE-10. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft?",
+          "a": "Hose or tube connects to the ports, SAE-10, and the load fits on the shaft, 1.25\" Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft?",
+          "a": "For the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft is listed with 6-Hole Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft differ from the BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft?",
+          "a": "This one has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 25 part numbers. The [Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft](/p/dynamic-fluid-components-bmer-orbital-motors-magneto-mount-1-in-keyed-shaft) has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 26 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmer-orbital-motors-magneto-mount-1-1-4-in-tapered-shaft",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft and what is it used for?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft is a low-speed, high-torque orbital hydraulic motor, listed in 26 part numbers with displacement 118 to 745 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 6-Hole Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMER-2-125-FS-T4-S (118 cm³/rev, 1.25\" Taper shaft, 6-Hole Magneto mount, SAE-10 ports, 2,973 psi continuous) and BMER-2-750-FS-T4-S-R (745 cm³/rev, 1.25\" Taper shaft, 6-Hole Magneto mount, SAE-10 ports, 1,523 psi continuous) are two of the 26 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft cover?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft spans 118 to 745 cm³/rev across 26 part numbers. That is 13 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft are 1.25\" Taper. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft have?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft lists these ratings by part number. Continuous pressure runs 1,523 to 2,973 psi. Intermittent or maximum pressure runs 1,740 to 3,481 psi. Torque runs 3,363 to 11,063 lb-in. Maximum speed runs 120 to 490 rpm. Rated flow runs 14 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft have?",
+          "a": "The mounting of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft is 6-Hole Magneto, and the ports are SAE-10. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft follow?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft names an SAE mounting flange, 6-Hole Magneto, which refers to the SAE J744 flange pattern. The ports are SAE-10. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft?",
+          "a": "Hose or tube connects to the ports, SAE-10, and the load fits on the shaft, 1.25\" Taper. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft?",
+          "a": "For the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft is listed with 6-Hole Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft differ from the BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft?",
+          "a": "This one has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 26 part numbers. The [Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft](/p/dynamic-fluid-components-bmer-orbital-motors-magneto-mount-1-1-4-in-keyed-shaft) has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 25 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmer-orbital-motors-magneto-mount-1-in-keyed-shaft",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft and what is it used for?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft is a low-speed, high-torque orbital hydraulic motor, listed in 26 part numbers with displacement 118 to 745 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 6-Hole Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMER-2-125-FS-RW-S (118 cm³/rev, 1\" Keyed shaft, 6-Hole Magneto mount, SAE-10 ports, 2,973 psi continuous) and BMER-2-750-FS-RW-S-R (745 cm³/rev, 1\" Keyed shaft, 6-Hole Magneto mount, SAE-10 ports, 1,523 psi continuous) are two of the 26 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft cover?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft spans 118 to 745 cm³/rev across 26 part numbers. That is 13 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft are 1\" Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft have?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft lists these ratings by part number. Continuous pressure runs 1,523 to 2,973 psi. Intermittent or maximum pressure runs 1,740 to 3,481 psi. Torque runs 3,363 to 11,063 lb-in. Maximum speed runs 120 to 490 rpm. Rated flow runs 14 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft have?",
+          "a": "The mounting of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft is 6-Hole Magneto, and the ports are SAE-10. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft follow?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft names an SAE mounting flange, 6-Hole Magneto, which refers to the SAE J744 flange pattern. The ports are SAE-10. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft?",
+          "a": "Hose or tube connects to the ports, SAE-10, and the load fits on the shaft, 1\" Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft?",
+          "a": "For the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft is listed with 6-Hole Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft differ from the BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft?",
+          "a": "This one has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 26 part numbers. The [Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft](/p/dynamic-fluid-components-bmer-orbital-motors-magneto-mount-1-1-4-in-keyed-shaft) has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 25 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft in Dubai for export?",
+          "a": "Yes, the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmer-orbital-motors-magneto-mount-splined-shaft",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft and what is it used for?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft is a low-speed, high-torque orbital hydraulic motor, listed in 52 part numbers with displacement 118 to 745 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 6-Hole Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMER-2-125-FS-FD1-S (118 cm³/rev, 14T Spline shaft, 6-Hole Magneto mount, SAE-10 ports, 2,973 psi continuous) and BMER-2-750-FS-SW-S-R (745 cm³/rev, 6B Spline shaft, 6-Hole Magneto mount, SAE-10 ports, 1,523 psi continuous) are two of the 52 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft cover?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft spans 118 to 745 cm³/rev across 52 part numbers. That is 13 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft are 14T Spline, 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft have?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft lists these ratings by part number. Continuous pressure runs 1,523 to 2,973 psi. Intermittent or maximum pressure runs 1,740 to 3,481 psi. Torque runs 3,363 to 11,063 lb-in. Maximum speed runs 120 to 490 rpm. Rated flow runs 14 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft have?",
+          "a": "The mounting of the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft is 6-Hole Magneto, and the ports are SAE-10. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft follow?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft names an SAE mounting flange, 6-Hole Magneto, which refers to the SAE J744 flange pattern. The ports are SAE-10. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft?",
+          "a": "Hose or tube connects to the ports, SAE-10, and the load fits on the shaft, 14T Spline, 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft?",
+          "a": "For the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft is listed with 6-Hole Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BMER Orbital Motors, Magneto Mount, Splined Shaft differ from the BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft?",
+          "a": "This one has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 52 part numbers. The [Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft](/p/dynamic-fluid-components-bmer-orbital-motors-magneto-mount-1-in-keyed-shaft) has 118 to 745 cm³/rev with 6-Hole Magneto mounting, in 26 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft from stock in the UAE and get a quotation?",
+          "a": "Yes, the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmer-orbital-motors-wheel-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Wheel Mount is a low-speed, high-torque orbital hydraulic motor, listed in 78 part numbers with displacement 118 to 745 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is Wheel Mount."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMER-2-125-WS-FD1-S (118 cm³/rev, 14T Spline shaft, Wheel Mount mount, SAE-10 ports, 2,973 psi continuous) and BMER-2-750-WS-T4-S-R (745 cm³/rev, 1.25\" Taper shaft, Wheel Mount mount, SAE-10 ports, 1,523 psi continuous) are two of the 78 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount cover?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Wheel Mount spans 118 to 745 cm³/rev across 78 part numbers. That is 13 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount are 14T Spline, 1.25\" Keyed, 1.25\" Taper. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount have?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Wheel Mount lists these ratings by part number. Continuous pressure runs 1,523 to 2,973 psi. Intermittent or maximum pressure runs 1,740 to 3,481 psi. Torque runs 3,363 to 11,063 lb-in. Maximum speed runs 120 to 490 rpm. Rated flow runs 14 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount is Wheel Mount, and the ports are SAE-10. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount follow?",
+          "a": "The Dynamic Fluid Components BMER Orbital Motors, Wheel Mount names an SAE mounting flange, Wheel Mount, which refers to the SAE J744 flange pattern. The ports are SAE-10. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount?",
+          "a": "Hose or tube connects to the ports, SAE-10, and the load fits on the shaft, 14T Spline, 1.25\" Keyed, 1.25\" Taper. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount?",
+          "a": "For the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMER Orbital Motors, Wheel Mount is listed with Wheel Mount mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount differ from the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount?",
+          "a": "This one has 118 to 745 cm³/rev with Wheel Mount mounting, in 78 part numbers. The [Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount](/p/dynamic-fluid-components-bmsy-orbital-motors-wheel-mount) has 81 to 475 cm³/rev with Wheel Mount mounting, in 41 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Dynamic Fluid Components BMER Orbital Motors, Wheel Mount sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmh-orbital-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dynamic Fluid Components BMH Orbital Motors and what are they used for?",
+          "a": "The Dynamic Fluid Components BMH Orbital Motors are a low-speed, high-torque orbital hydraulic motor, listed in 15 part numbers with displacement 203.2 to 489.2 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMH-200-4-F-S (203.2 cm³/rev, 1 1/4\"-14 DP Spline shaft, Magneto mount, 7/8-14 SAE ports, 2,580 psi continuous) and BMH-500-4-S-S (489.2 cm³/rev, SAE 6B Spline shaft, Magneto mount, 7/8-14 SAE ports, 1,845 psi continuous) are two of the 15 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Dynamic Fluid Components BMH Orbital Motors cover?",
+          "a": "The Dynamic Fluid Components BMH Orbital Motors spans 203.2 to 489.2 cm³/rev across 15 part numbers. That is 5 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Dynamic Fluid Components BMH Orbital Motors offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMH Orbital Motors are 1 1/4\" Parallel Key, SAE 6B Spline, 1 1/4\"-14 DP Spline, 1 1/4\" - 14 DP Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Dynamic Fluid Components BMH Orbital Motors have?",
+          "a": "The Dynamic Fluid Components BMH Orbital Motors list these ratings by part number. Continuous pressure runs 1,845 to 2,580 psi. Intermittent or maximum pressure runs 2,360 to 2,950 psi. Torque runs 5,125 to 8,744 lb-in. Maximum speed runs 166 to 439 rpm. Rated flow runs 19.75 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Dynamic Fluid Components BMH Orbital Motors have?",
+          "a": "The mounting of the Dynamic Fluid Components BMH Orbital Motors are Magneto, and the ports are 7/8-14 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dynamic Fluid Components BMH Orbital Motors follow?",
+          "a": "The Dynamic Fluid Components BMH Orbital Motors names an SAE mounting flange, Magneto, which refers to the SAE J744 flange pattern. The ports are 7/8-14 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "Hose or tube connects to the ports, 7/8-14 SAE, and the load fits on the shaft, 1 1/4\" Parallel Key, SAE 6B Spline, 1 1/4\"-14 DP Spline, 1 1/4\" - 14 DP Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "For the Dynamic Fluid Components BMH Orbital Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMH Orbital Motors are listed with Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dynamic Fluid Components BMH Orbital Motors differ from the Dynamic Fluid Components BMK6 Orbital Motors?",
+          "a": "This one has 203.2 to 489.2 cm³/rev with Magneto mounting, in 15 part numbers. The [Dynamic Fluid Components BMK6 Orbital Motors](/p/dynamic-fluid-components-bmk6-orbital-motors) has 195.6 to 981.6 cm³/rev with SAE \"CC\" mounting, in 24 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMH Orbital Motors in Dubai for export?",
+          "a": "Yes. We keep the Dynamic Fluid Components BMH Orbital Motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmk6-orbital-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dynamic Fluid Components BMK6 Orbital Motors and what are they used for?",
+          "a": "The Dynamic Fluid Components BMK6 Orbital Motors are a low-speed, high-torque orbital hydraulic motor, listed in 24 part numbers with displacement 195.6 to 981.6 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE \"CC\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMK6 Orbital Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMK6-200-CC-FE-SF5 (195.6 cm³/rev, 17-Tooth Spline shaft, SAE \"CC\" mount, 1 5/16-12 SAE ports, 2,900 psi continuous) and BMK6-1000-CC-T1-SF5 (981.6 cm³/rev, 1 3/4\" Tapered shaft, SAE \"CC\" mount, 1 5/16-12 SAE ports, 2,031 psi continuous) are two of the 24 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Dynamic Fluid Components BMK6 Orbital Motors cover?",
+          "a": "The Dynamic Fluid Components BMK6 Orbital Motors spans 195.6 to 981.6 cm³/rev across 24 part numbers. That is 8 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Dynamic Fluid Components BMK6 Orbital Motors offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMK6 Orbital Motors are 17-Tooth Spline, 1 1/2\" Parallel Key, 1 3/4\" Tapered. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Dynamic Fluid Components BMK6 Orbital Motors have?",
+          "a": "The Dynamic Fluid Components BMK6 Orbital Motors list these ratings by part number. Continuous pressure runs 2,031 to 2,900 psi. Intermittent or maximum pressure runs 2,031 to 4,351 psi. Torque runs 7,434 to 16,726 lb-in. Maximum speed runs 230 to 865 rpm. Rated flow runs 39.62 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Dynamic Fluid Components BMK6 Orbital Motors have?",
+          "a": "The mounting of the Dynamic Fluid Components BMK6 Orbital Motors are SAE \"CC\", and the ports are 1 5/16-12 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dynamic Fluid Components BMK6 Orbital Motors follow?",
+          "a": "The Dynamic Fluid Components BMK6 Orbital Motors names an SAE mounting flange, SAE \"CC\", which refers to the SAE J744 flange pattern. The ports are 1 5/16-12 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMK6 Orbital Motors?",
+          "a": "Hose or tube connects to the ports, 1 5/16-12 SAE, and the load fits on the shaft, 17-Tooth Spline, 1 1/2\" Parallel Key, 1 3/4\" Tapered. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMK6 Orbital Motors?",
+          "a": "For the Dynamic Fluid Components BMK6 Orbital Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMK6 Orbital Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMK6 Orbital Motors are listed with SAE \"CC\" mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dynamic Fluid Components BMK6 Orbital Motors differ from the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "This one has 195.6 to 981.6 cm³/rev with SAE \"CC\" mounting, in 24 part numbers. The [Dynamic Fluid Components BMH Orbital Motors](/p/dynamic-fluid-components-bmh-orbital-motors) has 203.2 to 489.2 cm³/rev with Magneto mounting, in 15 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dynamic Fluid Components BMK6 Orbital Motors from stock in the UAE and get a quotation?",
+          "a": "Yes, the Dynamic Fluid Components BMK6 Orbital Motors are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmm-z-orbital-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dynamic Fluid Components BMM(Z) Orbital Motors and what are they used for?",
+          "a": "The Dynamic Fluid Components BMM(Z) Orbital Motors are a low-speed, high-torque orbital hydraulic motor, listed in 24 part numbers with displacement 8.2 to 50.3 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 2-Bolt, Circle Flange."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMM(Z) Orbital Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMM(Z)-8-F-B-1U (8.2 cm³/rev, 5/8\" Straight Key shaft, 2-Bolt mount, Back Port: 9/16\" - 18 SAE ports, 1,450 psi continuous) and BMM(Z)-50-U-B-U (50.3 cm³/rev, 5/8\" Straight Key shaft, Circle Flange mount, Side Port: 9/16\" - 18 SAE ports, 1,015 psi continuous) are two of the 24 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Dynamic Fluid Components BMM(Z) Orbital Motors cover?",
+          "a": "The Dynamic Fluid Components BMM(Z) Orbital Motors spans 8.2 to 50.3 cm³/rev across 24 part numbers. That is 6 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Dynamic Fluid Components BMM(Z) Orbital Motors offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMM(Z) Orbital Motors are 5/8\" Straight Key. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Dynamic Fluid Components BMM(Z) Orbital Motors have?",
+          "a": "The Dynamic Fluid Components BMM(Z) Orbital Motors list these ratings by part number. Continuous pressure runs 1,015 to 1,450 psi. Intermittent or maximum pressure runs 2,031 psi. Torque runs 133 to 779 lb-in. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Dynamic Fluid Components BMM(Z) Orbital Motors have?",
+          "a": "The mounting of the Dynamic Fluid Components BMM(Z) Orbital Motors are 2-Bolt, Circle Flange, and the ports are Back Port: 9/16\" - 18 SAE, Side Port: 9/16\" - 18 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dynamic Fluid Components BMM(Z) Orbital Motors follow?",
+          "a": "The Dynamic Fluid Components BMM(Z) Orbital Motors names an SAE mounting flange, 2-Bolt, Circle Flange, which refers to the SAE J744 flange pattern. The ports are Back Port: 9/16\" - 18 SAE, Side Port: 9/16\" - 18 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMM(Z) Orbital Motors?",
+          "a": "Hose or tube connects to the ports, Back Port: 9/16\" - 18 SAE, Side Port: 9/16\" - 18 SAE, and the load fits on the shaft, 5/8\" Straight Key. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMM(Z) Orbital Motors?",
+          "a": "For the Dynamic Fluid Components BMM(Z) Orbital Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMM(Z) Orbital Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMM(Z) Orbital Motors are listed with 2-Bolt, Circle Flange mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dynamic Fluid Components BMM(Z) Orbital Motors differ from the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "This one has 8.2 to 50.3 cm³/rev with 2-Bolt, Circle Flange mounting, in 24 part numbers. The [Dynamic Fluid Components BMH Orbital Motors](/p/dynamic-fluid-components-bmh-orbital-motors) has 203.2 to 489.2 cm³/rev with Magneto mounting, in 15 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMM(Z) Orbital Motors in Dubai for export?",
+          "a": "Yes. Indus stocks the Dynamic Fluid Components BMM(Z) Orbital Motors at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmph-orbital-motors-2-bolt-sae-a-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount is a low-speed, high-torque orbital hydraulic motor, listed in 90 part numbers with displacement 36 to 390 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMPH-36 H2-H-F (36 cm³/rev, 1\" Parallel .40 dia. Cross Hole shaft, SAE \"A\" 2 Bolt mount, Manifold ports, 1,813 psi continuous) and BMPH-400 H2-S-S (390 cm³/rev, SAE 6B Spline shaft, SAE \"A\" 2 Bolt mount, 7/8 -14 SAE ports, 1,450 psi continuous) are two of the 90 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount cover?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount spans 36 to 390 cm³/rev across 90 part numbers. That is 10 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount are 1\" Parallel .40 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount lists these ratings by part number. Continuous pressure runs 1,450 to 2,031 psi. Intermittent or maximum pressure runs 1,813 to 2,538 psi. Torque runs 673 to 5,133 lb-in. Maximum speed runs 190 to 1,650 rpm. Rated flow runs 14.53 to 15.85 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount is SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, and the ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount follow?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount names an SAE mounting flange, SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, which refers to the SAE J744 flange pattern. The ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Hose or tube connects to the ports, Manifold, 1/2 NPTF, 7/8 -14 SAE, and the load fits on the shaft, 1\" Parallel .40 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "For the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount is listed with SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BMPH Orbital Motors, 2-Bolt SAE A Mount differ from the BMRS Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "This one has 36 to 390 cm³/rev with SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt mounting, in 90 part numbers. The [Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount](/p/dynamic-fluid-components-bmrs-orbital-motors-2-bolt-sae-a-mount) has 51.7 to 381.4 cm³/rev with SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt mounting, in 108 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmph-orbital-motors-4-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 90 part numbers with displacement 36 to 390 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE \"A\" 4-Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMPH-36 H4-H-F (36 cm³/rev, 1\" Parallel .40 dia. Cross Hole shaft, SAE \"A\" 4-Bolt mount, Manifold ports, 1,813 psi continuous) and BMPH-400 H4-S-S (390 cm³/rev, SAE 6B Spline shaft, SAE \"A\" 4-Bolt mount, 7/8 -14 SAE ports, 1,450 psi continuous) are two of the 90 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount cover?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount spans 36 to 390 cm³/rev across 90 part numbers. That is 10 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount are 1\" Parallel .40 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount have?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount lists these ratings by part number. Continuous pressure runs 1,450 to 2,031 psi. Intermittent or maximum pressure runs 1,813 to 2,538 psi. Torque runs 673 to 5,133 lb-in. Maximum speed runs 190 to 1,650 rpm. Rated flow runs 14.53 to 15.85 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount is SAE \"A\" 4-Bolt, and the ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount follow?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount names an SAE mounting flange, SAE \"A\" 4-Bolt, which refers to the SAE J744 flange pattern. The ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, Manifold, 1/2 NPTF, 7/8 -14 SAE, and the load fits on the shaft, 1\" Parallel .40 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount?",
+          "a": "For the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount is listed with SAE \"A\" 4-Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount differ from the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount?",
+          "a": "This one has 36 to 390 cm³/rev with SAE \"A\" 4-Bolt mounting, in 90 part numbers. The [Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount](/p/dynamic-fluid-components-bmrs-orbital-motors-4-bolt-mount) has 51.7 to 381.4 cm³/rev with SAE \"A\" 4-Bolt mounting, in 81 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmph-orbital-motors-magneto-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount is a low-speed, high-torque orbital hydraulic motor, listed in 12 part numbers with displacement 36 to 390 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMPH-36 H6-K-S (36 cm³/rev, 1\" Woodruff Key shaft, Magneto mount, 7/8 -14 SAE ports, 1,813 psi continuous) and BMPH-400 H6-K-P (390 cm³/rev, 1\" Woodruff Key shaft, Magneto mount, 1/2 NPTF ports, 1,450 psi continuous) are two of the 12 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount cover?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount spans 36 to 390 cm³/rev across 12 part numbers. That is 10 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount are 1\" Woodruff Key, 1\" Parallel .40 dia. Cross Hole, SAE 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount have?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount lists these ratings by part number. Continuous pressure runs 1,450 to 2,031 psi. Intermittent or maximum pressure runs 1,813 to 2,538 psi. Torque runs 673 to 5,133 lb-in. Maximum speed runs 190 to 1,650 rpm. Rated flow runs 14.53 to 15.85 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount is Magneto, and the ports are 7/8 -14 SAE, 1/2 NPTF. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount follow?",
+          "a": "The Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount names an SAE mounting flange, Magneto, which refers to the SAE J744 flange pattern. The ports are 7/8 -14 SAE, 1/2 NPTF. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount?",
+          "a": "Hose or tube connects to the ports, 7/8 -14 SAE, 1/2 NPTF, and the load fits on the shaft, 1\" Woodruff Key, 1\" Parallel .40 dia. Cross Hole, SAE 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount?",
+          "a": "For the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount is listed with Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount differ from the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount?",
+          "a": "This one has 36 to 390 cm³/rev with Magneto mounting, in 12 part numbers. The [Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount](/p/dynamic-fluid-components-bmrs-orbital-motors-magneto-mount) has 81.5 to 381.4 cm³/rev with Magneto mounting, in 24 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount from stock in the UAE and get a quotation?",
+          "a": "Yes, the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmrs-orbital-motors-2-bolt-sae-a-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount is a low-speed, high-torque orbital hydraulic motor, listed in 108 part numbers with displacement 51.7 to 381.4 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMRS-50 H2-H-F (51.7 cm³/rev, 1\" Parallel .40 dia. Cross Hole shaft, SAE \"A\" 2-Bolt mount, Manifold ports, 2,031 psi continuous) and BMRS-375 H2-S-S (381.4 cm³/rev, SAE 6B Spline shaft, SAE \"A\" 2-Bolt mount, 7/8 -14 SAE ports, 1,450 psi continuous) are two of the 108 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount cover?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount spans 51.7 to 381.4 cm³/rev across 108 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount are 1\" Parallel .40 dia. Cross Hole, 1\" Parallel .31 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount lists these ratings by part number. Continuous pressure runs 1,450 to 2,321 psi. Intermittent or maximum pressure runs 2,031 to 2,900 psi. Torque runs 1,115 to 4,735 lb-in. Maximum speed runs 190 to 1,150 rpm. Rated flow runs 13.21 to 15.85 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount is SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, and the ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount follow?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount names an SAE mounting flange, SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, which refers to the SAE J744 flange pattern. The ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Hose or tube connects to the ports, Manifold, 1/2 NPTF, 7/8 -14 SAE, and the load fits on the shaft, 1\" Parallel .40 dia. Cross Hole, 1\" Parallel .31 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "For the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount is listed with SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BMRS Orbital Motors, 2-Bolt SAE A Mount differ from the BMPH Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "This one has 51.7 to 381.4 cm³/rev with SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt mounting, in 108 part numbers. The [Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount](/p/dynamic-fluid-components-bmph-orbital-motors-2-bolt-sae-a-mount) has 36 to 390 cm³/rev with SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt mounting, in 90 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmrs-orbital-motors-4-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 81 part numbers with displacement 51.7 to 381.4 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE \"A\" 4-Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMRS-50 H4-H-F (51.7 cm³/rev, 1\" Parallel .40 dia. Cross Hole shaft, SAE \"A\" 4-Bolt mount, Manifold ports, 2,031 psi continuous) and BMRS-375 H4-S-S (381.4 cm³/rev, SAE 6B Spline shaft, SAE \"A\" 4-Bolt mount, 7/8 -14 SAE ports, 1,450 psi continuous) are two of the 81 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount cover?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount spans 51.7 to 381.4 cm³/rev across 81 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount are 1\" Parallel .40 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount have?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount lists these ratings by part number. Continuous pressure runs 1,450 to 2,321 psi. Intermittent or maximum pressure runs 2,031 to 2,900 psi. Torque runs 1,115 to 4,735 lb-in. Maximum speed runs 190 to 1,150 rpm. Rated flow runs 13.21 to 15.85 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount is SAE \"A\" 4-Bolt, and the ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount follow?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount names an SAE mounting flange, SAE \"A\" 4-Bolt, which refers to the SAE J744 flange pattern. The ports are Manifold, 1/2 NPTF, 7/8 -14 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, Manifold, 1/2 NPTF, 7/8 -14 SAE, and the load fits on the shaft, 1\" Parallel .40 dia. Cross Hole, 1\" Woodruff Key, SAE 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount?",
+          "a": "For the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount is listed with SAE \"A\" 4-Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount differ from the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount?",
+          "a": "This one has 51.7 to 381.4 cm³/rev with SAE \"A\" 4-Bolt mounting, in 81 part numbers. The [Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount](/p/dynamic-fluid-components-bmph-orbital-motors-4-bolt-mount) has 36 to 390 cm³/rev with SAE \"A\" 4-Bolt mounting, in 90 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmrs-orbital-motors-magneto-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount is a low-speed, high-torque orbital hydraulic motor, listed in 24 part numbers with displacement 81.5 to 381.4 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMRS-80 H6-K-F (81.5 cm³/rev, 1\" Woodruff Key shaft, Magneto mount, Manifold ports, 2,321 psi continuous) and BMRS-375 H6-S-S (381.4 cm³/rev, SAE 6B Spline shaft, Magneto mount, 7/8 -14 SAE ports, 1,450 psi continuous) are two of the 24 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount cover?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount spans 81.5 to 381.4 cm³/rev across 24 part numbers. That is 8 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount are 1\" Woodruff Key, SAE 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount have?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount lists these ratings by part number. Continuous pressure runs 1,450 to 2,321 psi. Intermittent or maximum pressure runs 2,031 to 2,900 psi. Torque runs 1,947 to 4,735 lb-in. Maximum speed runs 190 to 940 rpm. Rated flow runs 15.85 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount is Magneto, and the ports are 7/8 -14 SAE, Manifold, 1/2 NPTF. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount follow?",
+          "a": "The Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount names an SAE mounting flange, Magneto, which refers to the SAE J744 flange pattern. The ports are 7/8 -14 SAE, Manifold, 1/2 NPTF. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount?",
+          "a": "Hose or tube connects to the ports, 7/8 -14 SAE, Manifold, 1/2 NPTF, and the load fits on the shaft, 1\" Woodruff Key, SAE 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount?",
+          "a": "For the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount is listed with Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount differ from the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount?",
+          "a": "This one has 81.5 to 381.4 cm³/rev with Magneto mounting, in 24 part numbers. The [Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount](/p/dynamic-fluid-components-bmph-orbital-motors-magneto-mount) has 36 to 390 cm³/rev with Magneto mounting, in 12 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount in Dubai for export?",
+          "a": "Yes. We keep the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmsy-orbital-motors-2-bolt-sae-a-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount is a low-speed, high-torque orbital hydraulic motor, listed in 85 part numbers with displacement 81 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE \"A\" 2 Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMSY-80 E2-F-ED (81 cm³/rev, 1 1/4\" - 14 DP Spline shaft, SAE \"A\" 2 Bolt mount, Side Ports 1 1/16-12 SAE ports, 2,973 psi continuous) and BMSY-475 E2-S1-S (475 cm³/rev, SAE 6B Spline shaft, SAE \"A\" 2 Bolt mount, 7/8\" - 14 SAE ports, 2,030 psi continuous) are two of the 85 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount cover?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount spans 81 to 475 cm³/rev across 85 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount are 1 1/4\" Parallel Key, 1\" Woodruff Key, SAE 6B Spline, 1 1/4\" - 14 DP Spline and 2 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount lists these ratings by part number. Continuous pressure runs 2,030 to 3,045 psi. Intermittent or maximum pressure runs 2,175 to 3,265 psi. Torque runs 2,212 to 8,495 lb-in. Maximum speed runs 185 to 988 rpm. Rated flow runs 17.1 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount is SAE \"A\" 2 Bolt, and the ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount follow?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount names an SAE mounting flange, SAE \"A\" 2 Bolt, which refers to the SAE J744 flange pattern. The ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Hose or tube connects to the ports, 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE, and the load fits on the shaft, 1 1/4\" Parallel Key, 1\" Woodruff Key, SAE 6B Spline, 1 1/4\" - 14 DP Spline and 2 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "For the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount is listed with SAE \"A\" 2 Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BMSY Orbital Motors, 2-Bolt SAE A Mount differ from the BMPH Orbital Motors, 2-Bolt SAE A Mount?",
+          "a": "This one has 81 to 475 cm³/rev with SAE \"A\" 2 Bolt mounting, in 85 part numbers. The [Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount](/p/dynamic-fluid-components-bmph-orbital-motors-2-bolt-sae-a-mount) has 36 to 390 cm³/rev with SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt mounting, in 90 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount in Dubai for export?",
+          "a": "Yes, the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmsy-orbital-motors-4-bolt-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount is a low-speed, high-torque orbital hydraulic motor, listed in 43 part numbers with displacement 81 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE \"A\" 4-Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMSY-80 E4-F-S (81 cm³/rev, 1 1/4\" - 14 DP Spline shaft, SAE \"A\" 4-Bolt mount, 7/8\" - 14 SAE ports, 2,973 psi continuous) and BMSY-475 E4-K-S (475 cm³/rev, 1\" Woodruff Key shaft, SAE \"A\" 4-Bolt mount, 7/8\" - 14 SAE ports, 2,030 psi continuous) are two of the 43 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount cover?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount spans 81 to 475 cm³/rev across 43 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount are 1 1/4\" Parallel Key, 1\" Woodruff Key, 1 1/4\" - 14 DP Spline, 6 Spline PTO and 2 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount have?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount lists these ratings by part number. Continuous pressure runs 2,030 to 3,045 psi. Intermittent or maximum pressure runs 2,175 to 3,265 psi. Torque runs 2,212 to 8,495 lb-in. Maximum speed runs 185 to 988 rpm. Rated flow runs 17.1 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount is SAE \"A\" 4-Bolt, and the ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount follow?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount names an SAE mounting flange, SAE \"A\" 4-Bolt, which refers to the SAE J744 flange pattern. The ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount?",
+          "a": "Hose or tube connects to the ports, 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE, and the load fits on the shaft, 1 1/4\" Parallel Key, 1\" Woodruff Key, 1 1/4\" - 14 DP Spline, 6 Spline PTO and 2 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount?",
+          "a": "For the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount is listed with SAE \"A\" 4-Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount differ from the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount?",
+          "a": "This one has 81 to 475 cm³/rev with SAE \"A\" 4-Bolt mounting, in 43 part numbers. The [Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount](/p/dynamic-fluid-components-bmph-orbital-motors-4-bolt-mount) has 36 to 390 cm³/rev with SAE \"A\" 4-Bolt mounting, in 90 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount in Dubai for export?",
+          "a": "Yes. We keep the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmsy-orbital-motors-magneto-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount is a low-speed, high-torque orbital hydraulic motor, listed in 77 part numbers with displacement 81 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is Magneto."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMSY-80 F6-F-ED (81 cm³/rev, 1 1/4\" - 14 DP Spline shaft, Magneto mount, Side Ports 1 1/16-12 SAE ports, 2,973 psi continuous) and BMSY-475 F6-S1-S (475 cm³/rev, SAE 6B Spline shaft, Magneto mount, 7/8\" - 14 SAE ports, 2,030 psi continuous) are two of the 77 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount cover?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount spans 81 to 475 cm³/rev across 77 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount are 1 1/4\" - 14 DP Spline, 1 1/4\" Parallel Key, SAE 6B Spline, 1\" Woodruff Key and 1 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount have?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount lists these ratings by part number. Continuous pressure runs 2,030 to 3,045 psi. Intermittent or maximum pressure runs 2,175 to 3,265 psi. Torque runs 2,212 to 8,495 lb-in. Maximum speed runs 185 to 988 rpm. Rated flow runs 17.1 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount is Magneto, and the ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount follow?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount names an SAE mounting flange, Magneto, which refers to the SAE J744 flange pattern. The ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount?",
+          "a": "Hose or tube connects to the ports, 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE, and the load fits on the shaft, 1 1/4\" - 14 DP Spline, 1 1/4\" Parallel Key, SAE 6B Spline, 1\" Woodruff Key and 1 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount?",
+          "a": "For the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount is listed with Magneto mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount differ from the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount?",
+          "a": "This one has 81 to 475 cm³/rev with Magneto mounting, in 77 part numbers. The [Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount](/p/dynamic-fluid-components-bmph-orbital-motors-magneto-mount) has 36 to 390 cm³/rev with Magneto mounting, in 12 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount from stock in the UAE and get a quotation?",
+          "a": "Yes, the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmsy-orbital-motors-wheel-mount",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount and what is it used for?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount is a low-speed, high-torque orbital hydraulic motor, listed in 41 part numbers with displacement 81 to 475 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is Wheel Mount."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMSY-80 WE-D-S (81 cm³/rev, 1\" Parallel Key shaft, Wheel Mount mount, 7/8\" - 14 SAE ports, 2,973 psi continuous) and BMSY-475 WE-T4-S (475 cm³/rev, 1 1/4\" Tapered shaft, Wheel Mount mount, 7/8\" - 14 SAE ports, 2,030 psi continuous) are two of the 41 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range does the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount cover?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount spans 81 to 475 cm³/rev across 41 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options does the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount are 1 1/4\" Tapered, 1 1/4\" Parallel Key, 1\" Parallel Key, 1 1/4\" - 14 DP Spline and 1 more. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings does the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount have?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount lists these ratings by part number. Continuous pressure runs 2,030 to 3,045 psi. Intermittent or maximum pressure runs 2,175 to 3,265 psi. Torque runs 2,212 to 8,495 lb-in. Maximum speed runs 185 to 988 rpm. Rated flow runs 17.1 to 19.81 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options does the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount have?",
+          "a": "The mounting of the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount is Wheel Mount, and the ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount follow?",
+          "a": "The Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount names an SAE mounting flange, Wheel Mount, which refers to the SAE J744 flange pattern. The ports are 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount?",
+          "a": "Hose or tube connects to the ports, 7/8\" - 14 SAE, Side Ports 1 1/16-12 SAE, and the load fits on the shaft, 1 1/4\" Tapered, 1 1/4\" Parallel Key, 1\" Parallel Key, 1 1/4\" - 14 DP Spline and 1 more. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount?",
+          "a": "For the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount is listed with Wheel Mount mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount differ from the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount?",
+          "a": "This one has 81 to 475 cm³/rev with Wheel Mount mounting, in 41 part numbers. The [Dynamic Fluid Components BMER Orbital Motors, Wheel Mount](/p/dynamic-fluid-components-bmer-orbital-motors-wheel-mount) has 118 to 745 cm³/rev with Wheel Mount mounting, in 78 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount in Dubai for export?",
+          "a": "Yes. Indus stocks the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmt-orbital-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dynamic Fluid Components BMT Orbital Motors and what are they used for?",
+          "a": "The Dynamic Fluid Components BMT Orbital Motors are a low-speed, high-torque orbital hydraulic motor, listed in 32 part numbers with displacement 161.1 to 801.8 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMT Orbital Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMT-160-K6-F-S1 (161.1 cm³/rev, 1 1/2\" - 17 DP Spline shaft, 4-Bolt mount, 1 1/16\" - 12 SAE ports, 2,944 psi continuous) and BMT-800-K6-G1-S1 (801.8 cm³/rev, 1 1/4\" Parallel Key shaft, 4-Bolt mount, 1 1/16\" - 12 SAE ports, 1,840 psi continuous) are two of the 32 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Dynamic Fluid Components BMT Orbital Motors cover?",
+          "a": "The Dynamic Fluid Components BMT Orbital Motors spans 161.1 to 801.8 cm³/rev across 32 part numbers. That is 8 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Dynamic Fluid Components BMT Orbital Motors offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMT Orbital Motors are 1 1/2\" - 17 DP Spline, 1 1/4\" - 14 DP Spline, 1 1/2\" Parallel Key, 1 1/4\" Parallel Key. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Dynamic Fluid Components BMT Orbital Motors have?",
+          "a": "The Dynamic Fluid Components BMT Orbital Motors list these ratings by part number. Continuous pressure runs 1,840 to 2,944 psi. Intermittent or maximum pressure runs 1,914 to 3,533 psi. Torque runs 5,071 to 13,452 lb-in. Maximum speed runs 185 to 770 rpm. Rated flow runs 26.42 to 33.02 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Dynamic Fluid Components BMT Orbital Motors have?",
+          "a": "The mounting of the Dynamic Fluid Components BMT Orbital Motors are 4-Bolt, and the ports are 1 1/16\" - 12 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dynamic Fluid Components BMT Orbital Motors follow?",
+          "a": "The Dynamic Fluid Components BMT Orbital Motors names an SAE mounting flange, 4-Bolt, which refers to the SAE J744 flange pattern. The ports are 1 1/16\" - 12 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMT Orbital Motors?",
+          "a": "Hose or tube connects to the ports, 1 1/16\" - 12 SAE, and the load fits on the shaft, 1 1/2\" - 17 DP Spline, 1 1/4\" - 14 DP Spline, 1 1/2\" Parallel Key, 1 1/4\" Parallel Key. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMT Orbital Motors?",
+          "a": "For the Dynamic Fluid Components BMT Orbital Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMT Orbital Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMT Orbital Motors are listed with 4-Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dynamic Fluid Components BMT Orbital Motors differ from the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "This one has 161.1 to 801.8 cm³/rev with 4-Bolt mounting, in 32 part numbers. The [Dynamic Fluid Components BMH Orbital Motors](/p/dynamic-fluid-components-bmh-orbital-motors) has 203.2 to 489.2 cm³/rev with Magneto mounting, in 15 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dynamic Fluid Components BMT Orbital Motors from stock in the UAE and get a quotation?",
+          "a": "Yes. The Dynamic Fluid Components BMT Orbital Motors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-bmv-orbital-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dynamic Fluid Components BMV Orbital Motors and what are they used for?",
+          "a": "The Dynamic Fluid Components BMV Orbital Motors are a low-speed, high-torque orbital hydraulic motor, listed in 18 part numbers with displacement 333 to 990 cm³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4-Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Dynamic Fluid Components BMV Orbital Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BMV-315-4-B-S-B (333 cm³/rev, 2 1/8\" 16 DP Spline shaft, 4-Bolt mount, 2,900 psi continuous) and BMV-1000-4-T1-S1 (990 cm³/rev, 2 1/4\" Tapered shaft, 4-Bolt mount, 1 5/16\" - 12 SAE ports, 2,030 psi continuous) are two of the 18 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Dynamic Fluid Components BMV Orbital Motors cover?",
+          "a": "The Dynamic Fluid Components BMV Orbital Motors spans 333 to 990 cm³/rev across 18 part numbers. That is 6 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Dynamic Fluid Components BMV Orbital Motors offer?",
+          "a": "The shaft options on the Dynamic Fluid Components BMV Orbital Motors are 2 1/8\" 16 DP Spline, 2 1/4\" Parallel Key, 2 1/4\" Tapered. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Dynamic Fluid Components BMV Orbital Motors have?",
+          "a": "The Dynamic Fluid Components BMV Orbital Motors list these ratings by part number. Continuous pressure runs 2,030 to 2,900 psi. Intermittent or maximum pressure runs 2,320 to 3,481 psi. Torque runs 9,736 to 20,179 lb-in. Maximum speed runs 240 to 630 rpm. Rated flow runs 42.3 to 52.8 US gpm. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Dynamic Fluid Components BMV Orbital Motors have?",
+          "a": "The mounting of the Dynamic Fluid Components BMV Orbital Motors are 4-Bolt, and the ports are 1 5/16\" - 12 SAE, 1 5/16-12 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dynamic Fluid Components BMV Orbital Motors follow?",
+          "a": "The Dynamic Fluid Components BMV Orbital Motors names an SAE mounting flange, 4-Bolt, which refers to the SAE J744 flange pattern. The ports are 1 5/16\" - 12 SAE, 1 5/16-12 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Dynamic Fluid Components BMV Orbital Motors?",
+          "a": "Hose or tube connects to the ports, 1 5/16\" - 12 SAE, 1 5/16-12 SAE, and the load fits on the shaft, 2 1/8\" 16 DP Spline, 2 1/4\" Parallel Key, 2 1/4\" Tapered. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Dynamic Fluid Components BMV Orbital Motors?",
+          "a": "For the Dynamic Fluid Components BMV Orbital Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Dynamic Fluid Components BMV Orbital Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Dynamic Fluid Components BMV Orbital Motors are listed with 4-Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dynamic Fluid Components BMV Orbital Motors differ from the Dynamic Fluid Components BMH Orbital Motors?",
+          "a": "This one has 333 to 990 cm³/rev with 4-Bolt mounting, in 18 part numbers. The [Dynamic Fluid Components BMH Orbital Motors](/p/dynamic-fluid-components-bmh-orbital-motors) has 203.2 to 489.2 cm³/rev with Magneto mounting, in 15 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dynamic Fluid Components BMV Orbital Motors in Dubai for export?",
+          "a": "Yes. Indus stocks the Dynamic Fluid Components BMV Orbital Motors at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "family": "nickel-alloy-u-bend-tubes",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "nickel-alloy-u-bend-tubes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are nickel-alloy U-bend tubes and what are they used for?",
+          "a": "Nickel-Alloy U-Bend Tubes are U-tubes bent from straight seamless or welded tube in nickel 200 and 201 and nickel alloys 400, 600, 800 and 825 to ASTM B163, and alloy 625 to ASTM B444. They are made for corrosive and high-temperature exchanger service. Each size is supplied from Dubai under its own Indus part number. See the [nickel-alloy U-bend tubes](/c/nickel-alloy-u-bend-tubes) shelf and our [guide to bend radius and wall thinning](/blog/u-bend-tubes-bend-radius-wall-thinning)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the nickel-alloy U-bend tubes come in?",
+          "a": "The size table lists 4 nickel-alloy U-bend tube sizes: 19.05 mm (3/4 in) and 25.4 mm (1 in) outside diameter, each in BWG 16 (1.65 mm) and BWG 14 (2.11 mm) wall. The table lists typical sizes; other sizes are made on request. Legs are typically up to about 12 m, and straight tube up to 30 m on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the alloy for nickel-alloy U-bend tubes?",
+          "a": "Choose the alloy from the service: Alloy 625 for bio and green-diesel condensers and HCl service, N04400 for HF alkylation condensers, and Alloy 825 for refinery hydrotreater REAC and FEAC, sour-water strippers and amine coolers. Seawater-cooled offshore exchangers use duplex or Alloy 625. Send the fluid, temperature and standard and we confirm the grade."
+        },
+        {
+          "slot": "E",
+          "q": "What test pressure applies to nickel-alloy U-bend tubes?",
+          "a": "B163 nickel alloy tube is hydro tested at 1000 psi (6.9 MPa), unless the fibre stress P = 2St/D would exceed S, so the test pressure is fibre-stress limited. The allowable stress S is 120.6 MPa for annealed N04400 and 137.9 MPa for annealed N06600, which is where the limit bites. B163 allows an electric NDE test instead, at the maker's option unless the test is specified on the order."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number for nickel-alloy U-bend tubes?",
+          "a": "In the Indus part number the first group of digits gives the outside diameter and the last group the wall in hundredths of a millimetre. IH-TF-UN-NI-0190-165 is 19.05 mm OD with 1.65 mm wall (BWG 16), IH-TF-UN-NI-0190-211 has 2.11 mm wall (BWG 14), and IH-TF-UN-NI-0254-211 is 25.4 mm OD with 2.11 mm wall. Quote the part number, or send the standard, grade, OD, wall, length, quantity and bend schedule."
+        },
+        {
+          "slot": "C",
+          "q": "Are there welded equivalents for ASTM B163 nickel-alloy tube?",
+          "a": "Yes, the maker maps welded equivalents for several nickel alloys: Alloy 825 to B704, Alloy 800 to B515, Alloy 600 to B516 and Alloy 400 to B730, with the seamless tube all to B163. This mapping is indicative, so we check each tender against its own specification. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are also indicative."
+        },
+        {
+          "slot": "F",
+          "q": "Which nickel alloys are supplied as U-bend tubes?",
+          "a": "The listed base tube alloys are N04400, N06600, N06625, N08800 and N08825, with nickel 200 and 201 also named in the description. B163 covers N02200, N02201, N04400, N06600, N06601, N06690, N08800, N08810, N08811, N08825 and others; N06625 is not in B163 but in B444. B444 grade 1 is annealed (871 °C minimum) for service up to 593 °C and grade 2 solution annealed (1093 °C minimum) above 593 °C."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and certificates apply to nickel-alloy U-bend tubes?",
+          "a": "Nickel-alloy U-bend tubes are made to ASTM B163, B444, B407, B423, E571 and B165, with ASTM A688 and TEMA rules governing the bend geometry on the order. A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged against your inspection and test plan. B163, B444, B407 and B423 contain no U-bend section, so say on the order which bend rules apply."
+        },
+        {
+          "slot": "I",
+          "q": "How tight can nickel-alloy U-bend tubes be bent?",
+          "a": "A centreline radius of 1.5 × OD can be bent, and dimensional tolerances are guaranteed from 2 × OD. Wall thinning at the bend follows the specification on your order, in the TEMA form t_before ≥ t1·(1 + do/4R). Ovality is held to 10 % of nominal OD on an R ≥ 2·D basis, and annealed tube to 2 % of average OD (B423). Our [guide to bend radius and wall thinning](/blog/u-bend-tubes-bend-radius-wall-thinning) explains the limits."
+        },
+        {
+          "slot": "I",
+          "q": "Do nickel-alloy U-bends need heat treatment after bending?",
+          "a": "Heat treatment of the bend is by agreement between maker and purchaser, and is ordered as stress relief or solution anneal of the bend plus about 150 mm of leg (A688), or at least 300 mm where the project specification requires. Alloy 400 U-bends in HF alkylation service are stress relieved at about 620 °C (1150 °F), because cold work from bending is enough to start SCC if oxygen is present. For Alloy 600 a 705 °C (1300 °F) cycle of 5 min in-situ was qualified for U-bends."
+        },
+        {
+          "slot": "J",
+          "q": "Where are nickel-alloy U-bend tubes used?",
+          "a": "Nickel-alloy U-bend tubes are used in bio and green-diesel condensers and HCl service (Alloy 625), HF alkylation condensers (N04400) and refinery hydrotreater REAC and FEAC exchangers. Alloy 825 also serves sour-water strippers and amine coolers, and seawater-cooled offshore exchangers use duplex or Alloy 625. Other U-bend materials are on the stainless, copper-alloy and carbon-steel shelves. See our [stainless U-bend tubes](/c/stainless-u-bend-tubes) and [return bends](/c/return-bends)."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock nickel-alloy U-bend tubes in Dubai?",
+          "a": "Yes. Indus keeps the Nickel-Alloy U-Bend Tubes in stock in Dubai, UAE, and ships worldwide with the best lead times. For pricing, send your part numbers and quantities via [the contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "family": "ic-electronic-pressure-sensors",
+  "extraFacts": [
+    {
+      "fact": "Related Indus instrumentation listings, as shown on their own pages: AC/DC Converter Package, 400 V AC → 24 V DC, NEMA 4X Enclosure, 1 kW: AC/DC converter package powering DC control circuits from a high-voltage AC mains supply. 400 V AC input → 24 V DC output, 1 kW continuous duty. NEMA 4X enclosure containing the converter, input breaker, output power-supply connections, status LEDs and surge protection.\nVoltage variants: 230 / 380 / 415 / 440 / 460 V AC input; 12 / 24 V DC output. Output powers 250 W / 500 W / 1 kW / 2 kW. Hazardous-area Ex-d variant available. | Analogic Pressure Sensor, 2-inch Fig.1502 Debooster, 6-inch Gauge + Adjustable Shutdown: 2-inch Fig.1502 pressure debooster providing safe transfer of HP wellhead pressure to the analogic gauge circuit. 6-inch glycerine-filled gauge for smooth pointer reading. Adjustable overpressure shutdown proximity switch enables interlock with ESD logic and shutdown sequencers.\nPressure ranges to 15,000 psi available. SS316 wetted connections; NACE MR-0175 on request. | Coriolis Mass Flowmeter (NRD), 2-inch, Cementing Service, Local + Remote Display: Coriolis-tube mass flowmeter providing simultaneous mass flow, fluid density, and fluid temperature outputs. Used as a non-radioactive densitometer (NRD) for cementing units, hydration units, and Liquid Additive Systems where radioactive source devices are restricted.\n2-inch process connections as standard; 1-inch and 3-inch available. Local digital display + 4-20 mA remote outputs. ATEX Zone 1 / 2 enclosure variants. | Multi-Channel Data Acquisition System, 15-inch Touchscreen, USB Export, Frac-Fleet Ready: Multi-channel oilfield Data Acquisition System engineered for pumping-unit and frac-fleet integration. Compatible signal types: 4-20 mA, 0-5 V, pulse, frequency. 15-inch touchscreen (9-inch and 11-inch variants available).\nOperator-configurable display modes: data, chart, curves. Local storage and USB export in ASCII / Excel for post-job reports. Network connectivity (wired / wifi) to fleet Data Vans for centralized fleet control. | Explosion-Proof Electrical Panel, Aluminium-Cast, ATEX Zone 1, 600 mm × 800 mm: Explosion-proof aluminium-cast electrical panel for ATEX Zone 1 hazardous-area deployment. 600 mm × 800 mm internal envelope; multiple sizes available. Internal mounting plate houses breakers, contactors, relays, terminal blocks, and surge protection per project schematic.\nIECEx-certified variants available. Weatherproof steel-sheet enclosure (powder-coated) for non-hazardous deployment as a lower-cost option. IP65 / IP66 sealing as standard. | Electronic Pressure Sensor, 0-15,000 psi, 2-inch Fig.1502M, 4-20 mA: 0-15,000 psi electronic pressure sensor with 2-inch Fig.1502M HP hammer-union connection. 4-20 mA loop output; HART / digital options available. SS316 wetted parts as standard; NACE MR-0175 materials for sour-service.\nPressure ranges 0-5,000 / 0-10,000 / 0-15,000 / 0-20,000 psi. Temperature compensation calibrated across operating range. | Magnetic Flowmeter, 2-inch Wafer, 600 psi, 4-20 mA Output: 2-inch wafer-style magnetic flowmeter with 600 psi MAWP and 4-20 mA loop output. Designed for water, brine, mud and acid-resistant lining where chemistry requires. Local display optional; remote display via 4-20 mA into DAQ.\nSizes 1/2 inch to 12 inch available; pressure ratings to ANSI 600. ATEX Zone 1 explosion-proof variant on request. | Magnetic-Pickup Proximity Sensor, 5/8-18 UNF, M12 Connector, Stroke / RPM Counter: Magnetic-pickup proximity sensor used as a bolt-counter on triplex / quintuplex pump crank shafts to feed RPM and calculated displacement back to the unit DAQ. 5/8-18 UNF threaded body with M12 4-pin connector.\nNo onboard power required — output is a passive signal proportional to shaft speed. Hazardous-area-rated variants available. | Bimetal Thermometer + Thermowell Pair, 1/2-inch NPT M×F, P+U API 6A Range, SS316: Matched bimetal thermometer and thermowell pair. The thermometer has a 1/2-inch NPT male connection with selectable stem length (2.5, 4, 6, 9 inch) and an API 6A P+U temperature range (-20 °F to +250 °F).\nThe thermowell is integral construction in SS316 with 1/2-inch NPT male-to-female connections, sized to match the thermometer stem. SS304 wetted-parts variant available. Pressure rating to 15,000 psi at process side; bore size selectable. | Turbine Flowmeter, 2-inch Fig.1502 F×M, 15,000 psi, Frac / Cementing Service: 2-inch turbine flowmeter for high-pressure frac and cementing service. Fig.1502 F×M connections at 15,000 psi MAWP. Optical or magnetic pickup output with K-factor calibration certificate.\n3-inch and lower-pressure variants available. NACE MR-0175 materials on request for sour-service applications. | VFD Package, AC Motor + Drive, 500 HP, ATEX Zone 2, Frac-Pumper Compatible: VFD (Variable Frequency Drive) package supplying a 500 HP AC motor for oilfield pump duty. Replaces costly DC converter and DC motor systems on legacy units. ATEX Zone 2 enclosure; regenerative braking option for energy recovery on deceleration.\nMotor + drive system rated for offshore environment (saltwater, vibration, temperature). Sizes 100 / 250 / 500 / 750 / 1,000 HP available. Compatible with frac pumper, cementing unit, transfer pump and stimulation unit deployments.",
+      "source": "Indus Hydraulics instrumentation listings"
+    },
+    {
+      "fact": "Figures of this listing, as shown on its product page: 0-15,000 psi electronic pressure sensor with 2-inch Fig.1502M HP hammer-union connection. 4-20 mA loop output; HART / digital options available. SS316 wetted parts as standard; NACE MR-0175 materials for sour-service.\nPressure ranges 0-5,000 / 0-10,000 / 0-15,000 / 0-20,000 psi. Temperature compensation calibrated across operating range.",
+      "source": "Indus Hydraulics product listing"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 specifies materials for equipment used in oil and gas production environments containing hydrogen sulfide (sour service).",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "A 4-20 mA signal is a standard analogue current loop in which 4 mA is the bottom of the range and 20 mA the top, so a broken wire can be told from a zero reading.",
+      "source": "IEC 60381-1 (analogue signals for process control, 4 to 20 mA)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Electronic Pressure Sensor, 0-15,000 psi, 2-inch Fig.1502M, 4-20 mA [IH-EPS-15K-1502M-420]:   0-15,000 psi electronic pressure sensor with 2-inch Fig.1502M HP connection. 4-20 mA output for DAQ integration. |  | 0 part numbers (e.g. ); ; rows: ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "electronic-pressure-sensor-0-15-000-psi-2-inch-fig-1502m-4-20-ma",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 0-15,000 psi electronic pressure sensor with a 2-inch Fig.1502M connection used for?",
+          "a": "It is a 0-15,000 psi electronic pressure sensor with a 2-inch Fig.1502M HP hammer-union connection and a 4-20 mA loop output, for frac, cementing and wellhead lines. See the [electronic pressure sensors shelf](/c/ic-electronic-pressure-sensors)."
+        },
+        {
+          "slot": "B",
+          "q": "What pressure ranges does the electronic pressure sensor come in?",
+          "a": "Ranges are 0-5,000, 0-10,000, 0-15,000 and 0-20,000 psi. This listing is the 0-15,000 psi sensor. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "D",
+          "q": "What output does the electronic pressure sensor give?",
+          "a": "A 4-20 mA loop output, with HART or digital options available. The loop feeds a [data acquisition system](/c/ic-data-acquisition). Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "E",
+          "q": "What are the wetted parts of the electronic pressure sensor made of?",
+          "a": "SS316 wetted parts as standard, with NACE MR-0175 materials for sour service. State your service when you order. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "F",
+          "q": "Is the electronic pressure sensor temperature compensated?",
+          "a": "Yes, the listing says temperature compensation is calibrated across the operating range. This keeps the reading stable as the fluid heats up."
+        },
+        {
+          "slot": "G",
+          "q": "Is NACE MR-0175 available on the electronic pressure sensor?",
+          "a": "Yes, NACE MR-0175 materials are available for sour service. Ask for them when you order. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What connection does the electronic pressure sensor have?",
+          "a": "A 2-inch Fig.1502M HP hammer-union connection. It mates with the Fig.1502 female half on the line. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire the electronic pressure sensor to a data system?",
+          "a": "Connect the 4-20 mA loop to a channel of the [data acquisition system](/p/multi-channel-data-acquisition-system-15-inch-touchscreen-usb-export-frac-fleet-ready); the loop needs a 24 V DC supply from a [converter](/c/ic-acdc-converters) or the unit supply."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the the 0-15,000 psi electronic pressure sensor?",
+          "a": "Quote the full title, Electronic Pressure Sensor, 0-15,000 psi, 2-inch Fig.1502M, 4-20 mA, with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "K",
+          "q": "Electronic or analogic: which pressure sensor should I choose?",
+          "a": "The electronic sensor gives a 4-20 mA signal for remote logging, while the [analogic sensor](/p/analogic-pressure-sensor-2-inch-fig-1502-debooster-6-inch-gauge-adjustable-shutdown) gives a local 6-inch gauge with a shutdown switch. Use electronic when a DAQ needs the signal."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the electronic pressure sensor supplied from?",
+          "a": "We supply it from Dubai, UAE and ship worldwide. Send the range and connection. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 0-15,000 psi electronic pressure sensor in stock in Dubai?",
+          "a": "Yes, we hold the 0-15,000 psi electronic pressure sensor in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

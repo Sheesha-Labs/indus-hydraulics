@@ -1,0 +1,214 @@
+{
+  "family": "wt-desanders-debris-catchers",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cyclone-desander-flowback",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a cyclone desander for flowback used for?",
+          "a": "Cyclone desanders for flowback: 5,000 to 20,000 psi, 2-1/16\" to 4-1/16\" ports, carbide cyclone elements, 200 L+ sand storage with continuous on-line discharge."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 3G and PR1 mean on a cyclone desander?",
+          "a": "PSL 1 to 3G is the product specification level range, where 3G adds a gas test, and PR1 is the performance requirement level. State the level you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the cyclone desander for flowback come in?",
+          "a": "The listing covers 2-1/16\" to 4-1/16\" main and bypass ports nominal bore at 5,000 to 20,000 psi working pressure, with aPI 6A flanged or hammer union. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a cyclone desander instead of a screen desander?",
+          "a": "Choose the cyclone when sand loads are heavy, because it has no screen to plug and discharges sand continuously while staying on line. Choose the [double barrel screen desander](/p/double-barrel-screen-desander) for short-term clean-up and testing."
+        },
+        {
+          "slot": "E",
+          "q": "How is the cyclone desander for flowback tested?",
+          "a": "For the cyclone desander for flowback (2-1/16\" to 4-1/16\" main and bypass ports, 5,000 to 20,000 psi working pressure): hydrostatic tests to API 6A / 16A / 16C at the PSL ordered, with function tests of valves and controls. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the cyclone desander for flowback offer?",
+          "a": "On the cyclone desander for flowback, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is -60 °C to 121 °C (K to V). For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the cyclone desander for flowback to API specification, and what documents are supplied?",
+          "a": "The cyclone desander for flowback is built to API 6A (21st edition) by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the cyclone desander for flowback operated?",
+          "a": "The cyclone desander for flowback is operated by manual, or remote with power choke. Operation is manual, or remote with a power choke. End connections on the listing are aPI 6A flanged or hammer union."
+        },
+        {
+          "slot": "I",
+          "q": "How does a cyclone desander remove sand from a flowback stream?",
+          "a": "The well stream enters tangentially and spins, and centrifugal force throws sand to the wall, where it falls into a separate storage cylinder of 200 L or more and is discharged on line. Read the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "K",
+          "q": "Cyclone desander or double barrel screen desander for flowback?",
+          "a": "A cyclone desander spins sand out by centrifugal force into a separate storage cylinder with no screen to plug, while a double-barrel screen desander holds sand on a screen and is emptied barrel by barrel. See the [Double Barrel Screen Desander, 5,000 to 20,000 psi](/p/double-barrel-screen-desander)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the cyclone desander for flowback be supplied from Dubai with test records?",
+          "a": "For the cyclone desander for flowback: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the cyclone desander for flowback in Dubai?",
+          "a": "Yes. We keep the cyclone desander for flowback in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "debris-catcher-dual-channel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a dual-channel debris catcher used for?",
+          "a": "Dual-channel debris catchers for gas testing and coiled-tubing milling: 5,000 to 20,000 psi, 2-1/16\" to 4-1/16\" ports, switchable filters, quick unions, instant pressure relief."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 3G and PR1 mean on a debris catcher?",
+          "a": "PSL 1 to 3G is the product specification level range, where 3G adds a gas test, and PR1 is the performance requirement level. State the level you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the dual-channel debris catcher come in?",
+          "a": "The listing covers 2-1/16\" to 4-1/16\" main and bypass ports nominal bore at 5,000 to 20,000 psi working pressure, with hammer union or flanged. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Why does a dual-channel debris catcher have two filter channels?",
+          "a": "Two filter channels let one be cleaned while the other stays on line, so the well keeps flowing. It catches bridge-plug pieces and milling cuttings before they block lines or wreck chokes downstream."
+        },
+        {
+          "slot": "E",
+          "q": "How is the dual-channel debris catcher tested?",
+          "a": "For the dual-channel debris catcher (2-1/16\" to 4-1/16\" main and bypass ports, 5,000 to 20,000 psi working pressure): hydrostatic tests to API 6A / 16A / 16C at the PSL ordered, with function tests of valves and controls. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the dual-channel debris catcher offer?",
+          "a": "On the dual-channel debris catcher, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is -60 °C to 121 °C (K to V). For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the dual-channel debris catcher to API specification, and what documents are supplied?",
+          "a": "The dual-channel debris catcher is built to API 6A (21st edition) by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the dual-channel debris catcher operated?",
+          "a": "The dual-channel debris catcher is operated by manual valves. Operation is by manual valves, with quick-union connections for fast disassembly. End connections on the listing are hammer union or flanged."
+        },
+        {
+          "slot": "I",
+          "q": "How do I clean a dual-channel debris catcher safely?",
+          "a": "Switch flow to the other channel, then use the instant pressure-relief device before removing the filter, so no pressure is trapped. Quick-union connections speed disassembly. Read the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "K",
+          "q": "Debris catcher or desander: which do I need for plug mill-out?",
+          "a": "A debris catcher stops bridge-plug pieces and milling cuttings with two switchable filter channels, while a cyclone desander removes sand from the stream. See the [Cyclone Desander, 5,000 to 20,000 psi](/p/cyclone-desander-flowback)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the dual-channel debris catcher be supplied from Dubai with test records?",
+          "a": "For the dual-channel debris catcher: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the dual-channel debris catcher in Dubai?",
+          "a": "Yes. We keep the dual-channel debris catcher in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "double-barrel-screen-desander",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a double-barrel screen desander used for?",
+          "a": "Double-barrel screen desanders for flowback and well testing: 5,000 to 20,000 psi, 2-1/16\" to 4-1/16\" ports, 40 or 48 L barrels, 800 m³/d liquid, differential-pressure monitoring."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 3 and PR1 mean on a screen desander?",
+          "a": "PSL 1 to 3 is the product specification level range and PR1 is the performance requirement level. State the level you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the double-barrel screen desander come in?",
+          "a": "The listing covers 2-1/16\" to 4-1/16\" main and bypass ports nominal bore at 5,000 to 20,000 psi working pressure, with aPI 6A flanged or hammer union. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Why does a screen desander have two barrels?",
+          "a": "Two screened barrels, 40 or 48 L each, let one be emptied while the other stays on line, which suits short-term well clean-up and testing. See the [cyclone desander](/p/cyclone-desander-flowback) for heavy sand loads."
+        },
+        {
+          "slot": "E",
+          "q": "How is the double-barrel screen desander tested?",
+          "a": "For the double-barrel screen desander (2-1/16\" to 4-1/16\" main and bypass ports, 5,000 to 20,000 psi working pressure): hydrostatic tests to API 6A / 16A / 16C at the PSL ordered, with function tests of valves and controls. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the double-barrel screen desander offer?",
+          "a": "On the double-barrel screen desander, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is -60 °C to 121 °C (K to V). For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the double-barrel screen desander to API specification, and what documents are supplied?",
+          "a": "The double-barrel screen desander is built to API 6A (21st edition) by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the double-barrel screen desander operated?",
+          "a": "The double-barrel screen desander is operated by manual valves. Operation is by manual valves, with mechanical or electronic differential-pressure monitoring of each screen. End connections on the listing are aPI 6A flanged or hammer union."
+        },
+        {
+          "slot": "I",
+          "q": "How do I know when a screen desander barrel is full?",
+          "a": "Mechanical or electronic differential-pressure monitoring of each screen shows loading; then switch barrels and discharge sand through the on-line sand outlet with screen lifting and two-stage throttling. Read the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "K",
+          "q": "Double barrel screen desander or cyclone desander for fracturing flowback?",
+          "a": "A double-barrel screen desander holds sand on a screen with two barrels so one can be emptied while the other is on line, while a cyclone desander uses centrifugal force and discharges sand continuously. See the [Cyclone Desander, 5,000 to 20,000 psi](/p/cyclone-desander-flowback)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the double-barrel screen desander be supplied from Dubai with test records?",
+          "a": "For the double-barrel screen desander: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the double-barrel screen desander in Dubai?",
+          "a": "Yes. We keep the double-barrel screen desander in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

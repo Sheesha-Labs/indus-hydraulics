@@ -1,0 +1,1981 @@
+{
+  "family": "sae-flange-adapters-01",
+  "extraFacts": [
+    {
+      "fact": "JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat.",
+      "source": "SAE J514"
+    },
+    {
+      "fact": "SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange.",
+      "source": "SAE J518"
+    },
+    {
+      "fact": "SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange.",
+      "source": "SAE J518"
+    },
+    {
+      "fact": "NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread.",
+      "source": "SAE J476"
+    },
+    {
+      "fact": "ORB (O-ring boss) ports follow SAE J1926 / ISO 11926 and seal on an O-ring in the port.",
+      "source": "SAE J1926; ISO 11926"
+    },
+    {
+      "fact": "ORFS ends follow SAE J1453 / ISO 8434-3 and seal with an O-ring in the flat face of the connection.",
+      "source": "SAE J1453; ISO 8434-3"
+    }
+  ],
+  "products": [
+    {
+      "slug": "45-elbow-flange-connector-m-jic-x-l-series-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Elbow Flange Connector m JIC X L-series flange and where is it used?",
+          "a": "The 45° Elbow Flange Connector m JIC X L-series flange is a 45° elbow hydraulic adapter in the SAE Flange Adapter family. It is listed in 7 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the 45° Elbow Flange Connector m JIC X L-series flange, such as IH-ST-1703-08-08?",
+          "a": "At the end of an IH-AD-SAEFL-003 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the 45° Elbow Flange Connector m JIC X L-series flange table, IH-ST-1703-08-08 is 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 61 flange, and IH-ST-1703-32-32 is 2\" JIC 37° male (2-1/2-12) with 2\" Code 61 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 45° Elbow Flange Connector m JIC X L-series flange come in?",
+          "a": "The 45° Elbow Flange Connector m JIC X L-series flange is listed in 7 sizes, 1/2\" to 2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the 45° Elbow Flange Connector m JIC X L-series flange?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 61 flange, 1\" JIC 37° male (1-5/16-12) with 1-1/2\" Code 61 flange and 2\" JIC 37° male (2-1/2-12) with 2\" Code 61 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the 45° Elbow Flange Connector m JIC X L-series flange rated for?",
+          "a": "The 45° Elbow Flange Connector m JIC X L-series flange is listed with a rating against each part number, and the figures vary with size and series, so read the row for the number you order. Tell us the working pressure of your line and we will confirm the part before supply, because an assembly is rated to its lowest-rated component."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Elbow Flange Connector m JIC X L-series flange made from, and is stainless steel available?",
+          "a": "The 45° Elbow Flange Connector m JIC X L-series flange is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Elbow Flange Connector m JIC X L-series flange follow?",
+          "a": "The 45° Elbow Flange Connector m JIC X L-series flange is listed to SAE J518, ISO 6162. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the 45° Elbow Flange Connector m JIC X L-series flange come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the 45° Elbow Flange Connector m JIC X L-series flange, and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the 45° Elbow Flange Connector m JIC X L-series flange?",
+          "a": "Quote the Indus part number from the size table to order the 45° Elbow Flange Connector m JIC X L-series flange. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "What port does the 45° Elbow Flange Connector m JIC X L-series flange connect to?",
+          "a": "The 45° Elbow Flange Connector m JIC X L-series flange bolts to an SAE four-bolt flange port and its other end connects to the thread described in the size table. Check the flange series on your port before ordering. Read the [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° Elbow Flange Connector m JIC X L-series flange differ from the 90° Elbow Flange Connector m JIC X L-series flange?",
+          "a": "The 45° Elbow Flange Connector m JIC X L-series flange and the [90° Elbow Flange Connector m JIC X L-series flange](/p/90-elbow-flange-connector-m-jic-x-l-series-flange) are two adapters in the same flange range. They differ in the name: 45° here against 90°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Elbow Flange Connector m JIC X L-series flange in Dubai for export?",
+          "a": "Yes, the 45° Elbow Flange Connector m JIC X L-series flange is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-flange-connector-m-jic-x-l-series-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Flange Connector m JIC X L-series flange and where is it used?",
+          "a": "The 90° Elbow Flange Connector m JIC X L-series flange is a 90° elbow hydraulic adapter in the SAE Flange Adapter family. It is listed in 14 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the 90° Elbow Flange Connector m JIC X L-series flange, such as IH-AD-SAEFL-005-08?",
+          "a": "Each IH-AD-SAEFL-005 part number in the 90° Elbow Flange Connector m JIC X L-series flange table is one size combination. For example IH-AD-SAEFL-005-08 is 3/4\"X16 with 1/2\", and IH-AD-SAEFL-005-32 is 2-1/2\"X12 with 2\". Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° Elbow Flange Connector m JIC X L-series flange come in?",
+          "a": "The 90° Elbow Flange Connector m JIC X L-series flange is listed in 14 sizes, 1/2\" to 2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the 90° Elbow Flange Connector m JIC X L-series flange?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\"X16 with 1/2\", 1-5/16\"X12 with 1\" and 2-1/2\"X12 with 2\". Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the 90° Elbow Flange Connector m JIC X L-series flange rated for?",
+          "a": "The 90° Elbow Flange Connector m JIC X L-series flange is listed with a rating against each part number, and the figures vary with size and series, so read the row for the number you order. Tell us the working pressure of your line and we will confirm the part before supply, because an assembly is rated to its lowest-rated component."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Flange Connector m JIC X L-series flange made from, and is stainless steel available?",
+          "a": "The 90° Elbow Flange Connector m JIC X L-series flange is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Flange Connector m JIC X L-series flange follow?",
+          "a": "The 90° Elbow Flange Connector m JIC X L-series flange is listed to SAE J518, ISO 6162. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the 90° Elbow Flange Connector m JIC X L-series flange come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the 90° Elbow Flange Connector m JIC X L-series flange, and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the 90° Elbow Flange Connector m JIC X L-series flange?",
+          "a": "Quote the Indus part number from the size table to order the 90° Elbow Flange Connector m JIC X L-series flange. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "What port does the 90° Elbow Flange Connector m JIC X L-series flange connect to?",
+          "a": "The 90° Elbow Flange Connector m JIC X L-series flange bolts to an SAE four-bolt flange port and its other end connects to the thread described in the size table. Check the flange series on your port before ordering. Read the [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow Flange Connector m JIC X L-series flange differ from the 45° Elbow Flange Connector m JIC X L-series flange?",
+          "a": "The 90° Elbow Flange Connector m JIC X L-series flange and the [45° Elbow Flange Connector m JIC X L-series flange](/p/45-elbow-flange-connector-m-jic-x-l-series-flange) are two adapters in the same flange range. They differ in the name: 90° here against 45°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow Flange Connector m JIC X L-series flange in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the 90° Elbow Flange Connector m JIC X L-series flange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-jic-male-74-cone-x-sae-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° JIC Male 74° Cone × SAE Flange and where is it used?",
+          "a": "The 90° JIC Male 74° Cone × SAE Flange is a 90 elbow hydraulic adapter in the Indus SAE flange range. It is listed in 11 part numbers, -08 to -24. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the 90° JIC Male 74° Cone × SAE Flange, such as IH-AD-SAEFL-011-08?",
+          "a": "Each IH-AD-SAEFL-011 part number in the 90° JIC Male 74° Cone × SAE Flange table is one size combination. For example IH-AD-SAEFL-011-08 is 3/4\"X16 with 1/2\", and IH-AD-SAEFL-011-24 is 1-7/8\"X12 with 1-1/2\". Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° JIC Male 74° Cone × SAE Flange come in?",
+          "a": "The 90° JIC Male 74° Cone × SAE Flange is listed in 11 sizes, -08 to -24. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the 90° JIC Male 74° Cone × SAE Flange?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\"X16 with 1/2\", 1-5/16\"X12 with 1\" and 1-7/8\"X12 with 1-1/2\". Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the 90° JIC Male 74° Cone × SAE Flange rated for?",
+          "a": "For the 90° JIC Male 74° Cone × SAE Flange the listing gives: up to 310 bar (4,496 psi), manufacturer stated. The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° JIC Male 74° Cone × SAE Flange made from, and is stainless steel available?",
+          "a": "The 90° JIC Male 74° Cone × SAE Flange is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° JIC Male 74° Cone × SAE Flange follow?",
+          "a": "The 90° JIC Male 74° Cone × SAE Flange is listed to SAE J514, ISO 8434-2, ISO 6162. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the 90° JIC Male 74° Cone × SAE Flange come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the 90° JIC Male 74° Cone × SAE Flange, and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the 90° JIC Male 74° Cone × SAE Flange?",
+          "a": "Quote the Indus part number from the size table to order the 90° JIC Male 74° Cone × SAE Flange. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the 90° JIC Male 74° Cone × SAE Flange a hose end, or does it connect to tube?",
+          "a": "No. The 90° JIC Male 74° Cone × SAE Flange is a tube and port adapter, not a hose end. For hose assemblies pair it with Indus crimp ferrules and the matching hose-end fitting, and for tube runs with Indus cutting rings and end nuts."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° JIC Male 74° Cone × SAE Flange differ from the JIC Male 74° Cone × SAE Flange?",
+          "a": "The 90° JIC Male 74° Cone × SAE Flange and the [JIC Male 74° Cone × SAE Flange](/p/jic-male-74-cone-x-sae-flange) are two adapters in the same flange range. They differ in configuration 90 elbow here against straight. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° JIC Male 74° Cone × SAE Flange from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the 90° JIC Male 74° Cone × SAE Flange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-male-bite-type-x-sae-flange-l-series-3000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) and where is it used?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is a 90 elbow hydraulic adapter in the Indus SAE flange range. It is listed in 22 part numbers, -20 to -52. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi), such as IH-AD-SAEFL-008-C2208?",
+          "a": "Each IH-AD-SAEFL-008 part number in the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) table is one size combination. For example IH-AD-SAEFL-008-C2208 is M22X1.5 with M8X25, and IH-AD-SAEFL-008-D5224 is M52X2 with M10X35. Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) come in?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is listed in 22 sizes, -20 to -52. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)?",
+          "a": "The size table pairs one end size with one flange size per row, for example M22X1.5 with M8X25, M52X2 with M12X35 and M52X2 with M10X35. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) rated for?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi), so we do not state one. Tell us the working pressure of your line and we will confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) made from, and is stainless steel available?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) follow?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is listed to ISO 6162. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi), and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)?",
+          "a": "Quote the Indus part number from the size table to order the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi). If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) a hose end, or does it connect to tube?",
+          "a": "No. The 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is a tube and port adapter, not a hose end. For hose assemblies pair it with Indus crimp ferrules and the matching hose-end fitting, and for tube runs with Indus cutting rings and end nuts."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) differ from the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) and the [Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)](/p/metric-male-bite-type-x-sae-flange-l-series-3000-psi) are two adapters in the same flange range. They differ in configuration 90 elbow here against straight. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-male-bite-type-x-sae-flange-s-series-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) and where is it used?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is a 90 elbow hydraulic adapter in the Indus SAE flange range. It is listed in 14 part numbers, -20 to -52. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi), such as IH-AD-SAEFL-009-2008?",
+          "a": "Each IH-AD-SAEFL-009 part number in the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) table is one size combination. For example IH-AD-SAEFL-009-2008 is M20X1.5 with M8X30, and IH-AD-SAEFL-009-5224 is M52X2 with M16X55. Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) come in?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is listed in 14 sizes, -20 to -52. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)?",
+          "a": "The size table pairs one end size with one flange size per row, for example M20X1.5 with M8X30, M30X2 with M12X45 and M52X2 with M16X55. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) rated for?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi), so we do not state one. Tell us the working pressure of your line and we will confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) made from, and is stainless steel available?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) follow?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is listed to ISO 6162. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi), and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)?",
+          "a": "Quote the Indus part number from the size table to order the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi). If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) a hose end, or does it connect to tube?",
+          "a": "No. The 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is a tube and port adapter, not a hose end. For hose assemblies pair it with Indus crimp ferrules and the matching hose-end fitting, and for tube runs with Indus cutting rings and end nuts."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) differ from the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)?",
+          "a": "The 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) and the [Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)](/p/metric-male-bite-type-x-sae-flange-s-series-6000-psi) are two adapters in the same flange range. They differ in configuration 90 elbow here against straight. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) in Dubai for export?",
+          "a": "Yes. The 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "jic-male-74-cone-x-sae-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIC Male 74° Cone × SAE Flange and where is it used?",
+          "a": "The JIC Male 74° Cone × SAE Flange is a straight hydraulic adapter in the Indus SAE flange range. It is listed in 13 part numbers, -08 to -24. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the JIC Male 74° Cone × SAE Flange, such as IH-AD-SAEFL-010-08?",
+          "a": "Each IH-AD-SAEFL-010 part number in the JIC Male 74° Cone × SAE Flange table is one size combination. For example IH-AD-SAEFL-010-08 is 3/4\"X16 with 1/2\", and IH-AD-SAEFL-010-24 is 1-7/8\"X12 with 1-1/2\". Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the JIC Male 74° Cone × SAE Flange come in?",
+          "a": "The JIC Male 74° Cone × SAE Flange is listed in 13 sizes, -08 to -24. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the JIC Male 74° Cone × SAE Flange?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\"X16 with 1/2\", 1-5/16\"X12 with 1\" and 1-7/8\"X12 with 1-1/2\". Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the JIC Male 74° Cone × SAE Flange rated for?",
+          "a": "For the JIC Male 74° Cone × SAE Flange the listing gives: up to 310 bar (4,496 psi), manufacturer stated. The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIC Male 74° Cone × SAE Flange made from, and is stainless steel available?",
+          "a": "The JIC Male 74° Cone × SAE Flange is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the JIC Male 74° Cone × SAE Flange follow?",
+          "a": "The JIC Male 74° Cone × SAE Flange is listed to SAE J514, ISO 8434-2, ISO 6162. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the JIC Male 74° Cone × SAE Flange come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the JIC Male 74° Cone × SAE Flange, and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the JIC Male 74° Cone × SAE Flange?",
+          "a": "Quote the Indus part number from the size table to order the JIC Male 74° Cone × SAE Flange. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the JIC Male 74° Cone × SAE Flange a hose end, or does it connect to tube?",
+          "a": "No. The JIC Male 74° Cone × SAE Flange is a tube and port adapter, not a hose end. For hose assemblies pair it with Indus crimp ferrules and the matching hose-end fitting, and for tube runs with Indus cutting rings and end nuts."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIC Male 74° Cone × SAE Flange differ from the 90° JIC Male 74° Cone × SAE Flange?",
+          "a": "The JIC Male 74° Cone × SAE Flange and the [90° JIC Male 74° Cone × SAE Flange](/p/90-jic-male-74-cone-x-sae-flange) are two adapters in the same flange range. They differ in the name: 90° on the other listing, which this one does not carry. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the JIC Male 74° Cone × SAE Flange in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The JIC Male 74° Cone × SAE Flange sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "male-flange-connector-m-jic-x-l-series-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Flange Connector m JIC X L-series flange and where is it used?",
+          "a": "The Male Flange Connector m JIC X L-series flange is a Straight hydraulic adapter in the SAE Flange Adapter family. It is listed in 17 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Male Flange Connector m JIC X L-series flange, such as IH-AD-SAEFL-004-08?",
+          "a": "Each IH-AD-SAEFL-004 part number in the Male Flange Connector m JIC X L-series flange table is one size combination. For example IH-AD-SAEFL-004-08 is 3/4\"X16 with 1/2\", and IH-AD-SAEFL-004-32 is 2-1/2\"X12 with 2\". Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Male Flange Connector m JIC X L-series flange come in?",
+          "a": "The Male Flange Connector m JIC X L-series flange is listed in 17 sizes, 1/2\" to 2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Male Flange Connector m JIC X L-series flange?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\"X16 with 1/2\", 1-5/16\"X12 with 1\" and 2-1/2\"X12 with 2\". Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Male Flange Connector m JIC X L-series flange rated for?",
+          "a": "The Male Flange Connector m JIC X L-series flange is listed with a rating against each part number, and the figures vary with size and series, so read the row for the number you order. Tell us the working pressure of your line and we will confirm the part before supply, because an assembly is rated to its lowest-rated component."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Flange Connector m JIC X L-series flange made from, and is stainless steel available?",
+          "a": "The Male Flange Connector m JIC X L-series flange is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Flange Connector m JIC X L-series flange follow?",
+          "a": "The Male Flange Connector m JIC X L-series flange is listed to SAE J518, ISO 6162. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Male Flange Connector m JIC X L-series flange come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the Male Flange Connector m JIC X L-series flange, and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Male Flange Connector m JIC X L-series flange?",
+          "a": "Quote the Indus part number from the size table to order the Male Flange Connector m JIC X L-series flange. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "What port does the Male Flange Connector m JIC X L-series flange connect to?",
+          "a": "The Male Flange Connector m JIC X L-series flange bolts to an SAE four-bolt flange port and its other end connects to the thread described in the size table. Check the flange series on your port before ordering. Read the [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Flange Connector m JIC X L-series flange differ from the 45° Elbow Flange Connector m JIC X L-series flange?",
+          "a": "The Male Flange Connector m JIC X L-series flange and the [45° Elbow Flange Connector m JIC X L-series flange](/p/45-elbow-flange-connector-m-jic-x-l-series-flange) are two adapters in the same flange range. They differ in the name: Male here against 45° Elbow. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Flange Connector m JIC X L-series flange in Dubai for export?",
+          "a": "Yes, the Male Flange Connector m JIC X L-series flange is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-bite-type-x-sae-flange-l-series-3000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) and where is it used?",
+          "a": "The Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is a straight hydraulic adapter in the Indus SAE flange range. It is listed in 20 part numbers, -22 to -52. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi), such as IH-AD-SAEFL-006-C2208?",
+          "a": "Each IH-AD-SAEFL-006 part number in the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) table is one size combination. For example IH-AD-SAEFL-006-C2208 is M22X1.5 with M8X25, and IH-AD-SAEFL-006-D5224 is M52X2 with M10X35. Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) come in?",
+          "a": "The Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is listed in 20 sizes, -22 to -52. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)?",
+          "a": "The size table pairs one end size with one flange size per row, for example M22X1.5 with M8X25, M45X2 with M12X35 and M52X2 with M10X35. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi), so we do not state one. Tell us the working pressure of your line and we will confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) made from, and is stainless steel available?",
+          "a": "The Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) follow?",
+          "a": "The Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is listed to ISO 6162. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi), and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)?",
+          "a": "Quote the Indus part number from the size table to order the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi). If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) a hose end, or does it connect to tube?",
+          "a": "No. The Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) is a tube and port adapter, not a hose end. For hose assemblies pair it with Indus crimp ferrules and the matching hose-end fitting, and for tube runs with Indus cutting rings and end nuts."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) differ from the 90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)?",
+          "a": "The Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) and the [90° Metric Male Bite Type × SAE Flange (L-Series, 3000 psi)](/p/90-metric-male-bite-type-x-sae-flange-l-series-3000-psi) are two adapters in the same flange range. They differ in the name: 90° on the other listing, which this one does not carry. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Metric Male Bite Type × SAE Flange (L-Series, 3000 psi) at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-bite-type-x-sae-flange-s-series-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) and where is it used?",
+          "a": "The Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is a straight hydraulic adapter in the Indus SAE flange range. It is listed in 16 part numbers, -20 to -52. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi), such as IH-AD-SAEFL-007-2008?",
+          "a": "Each IH-AD-SAEFL-007 part number in the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) table is one size combination. For example IH-AD-SAEFL-007-2008 is M20X1.5 with M8X30, and IH-AD-SAEFL-007-5224 is M52X2 with M16X55. Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) come in?",
+          "a": "The Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is listed in 16 sizes, -20 to -52. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)?",
+          "a": "The size table pairs one end size with one flange size per row, for example M20X1.5 with M8X30, M36X2 with M12X45 and M52X2 with M16X55. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi), so we do not state one. Tell us the working pressure of your line and we will confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) made from, and is stainless steel available?",
+          "a": "The Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) follow?",
+          "a": "The Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is listed to ISO 6162. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi), and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)?",
+          "a": "Quote the Indus part number from the size table to order the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi). If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Is the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) a hose end, or does it connect to tube?",
+          "a": "No. The Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is a tube and port adapter, not a hose end. For hose assemblies pair it with Indus crimp ferrules and the matching hose-end fitting, and for tube runs with Indus cutting rings and end nuts."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) differ from the 90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)?",
+          "a": "The Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) and the [90° Metric Male Bite Type × SAE Flange (S-Series, 6000 psi)](/p/90-metric-male-bite-type-x-sae-flange-s-series-6000-psi) are two adapters in the same flange range. They differ in the name: 90° on the other listing, which this one does not carry. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) from stock in the UAE and get a quotation?",
+          "a": "Yes, the Metric Male Bite Type × SAE Flange (S-Series, 6000 psi) is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-code-62-flange-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 45° Elbow and where is it used?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Elbow is a 45° elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 5 part numbers, 3/4\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel JIC 37° Male × Code 62 Flange 45° Elbow, such as IH-ST-1803-12-12?",
+          "a": "At the end of an IH-ST-1803 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel JIC 37° Male × Code 62 Flange 45° Elbow table, IH-ST-1803-12-12 is 3/4\" JIC 37° male (1-1/16-12) with 3/4\" Code 62 flange, and IH-ST-1803-32-32 is 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel JIC 37° Male × Code 62 Flange 45° Elbow come in?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Elbow is listed in 5 sizes, 3/4\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel JIC 37° Male × Code 62 Flange 45° Elbow?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\" JIC 37° male (1-1/16-12) with 3/4\" Code 62 flange, 1-1/4\" JIC 37° male (1-5/8-12) with 1-1/4\" Code 62 flange and 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × Code 62 Flange 45° Elbow rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel JIC 37° Male × Code 62 Flange 45° Elbow, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 45° Elbow made from, and is stainless steel available?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Elbow is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Code 62 Flange 45° Elbow follow?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Elbow is listed to SAE J518, SAE J514. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 45° Elbow come with the flange clamp and bolts?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Elbow has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel JIC 37° Male × Code 62 Flange 45° Elbow?",
+          "a": "Quote the Indus part number from the size table to order the Steel JIC 37° Male × Code 62 Flange 45° Elbow. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 45° Elbow fit a Code 61 port?",
+          "a": "No. The Steel JIC 37° Male × Code 62 Flange 45° Elbow has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Code 62 Flange 45° Elbow differ from the Steel JIC 37° Male × Code 62 Flange 90° Elbow?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Elbow and the [Steel JIC 37° Male × Code 62 Flange 90° Elbow](/p/steel-jic-37-male-x-code-62-flange-90-elbow) are two adapters in the same flange range. They differ in the name: 45° here against 90°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel JIC 37° Male × Code 62 Flange 45° Elbow from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Steel JIC 37° Male × Code 62 Flange 45° Elbow at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-code-62-flange-45-tube-elbow-one-piece",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece and where is it used?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece is a 45° bent-tube elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 5 part numbers, 1/2\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece, such as IH-ST-NB6847-08-08?",
+          "a": "At the end of an IH-ST-NB6847 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece table, IH-ST-NB6847-08-08 is 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 62 flange, and IH-ST-NB6847-32-32 is 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece come in?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece is listed in 5 sizes, 1/2\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 62 flange, 1\" JIC 37° male (1-5/16-12) with 1\" Code 62 flange and 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece made from, and is stainless steel available?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece follow?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece is listed to SAE J518, SAE J514. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece come with the flange clamp and bolts?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece?",
+          "a": "Quote the Indus part number from the size table to order the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece fit a Code 61 port?",
+          "a": "No. The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece differ from the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece and the [Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece](/p/steel-jic-37-male-x-code-62-flange-90-tube-elbow-one-piece) are two adapters in the same flange range. They differ in the name: 45° here against 90°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece in Dubai for export?",
+          "a": "Yes, the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-code-62-flange-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 90° Elbow and where is it used?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Elbow is a 90° elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 13 part numbers, 3/4\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel JIC 37° Male × Code 62 Flange 90° Elbow, such as IH-ST-1804-12-12?",
+          "a": "At the end of an IH-ST-1804 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel JIC 37° Male × Code 62 Flange 90° Elbow table, IH-ST-1804-12-12 is 3/4\" JIC 37° male (1-1/16-12) with 3/4\" Code 62 flange, and IH-ST-1804-32-32 is 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel JIC 37° Male × Code 62 Flange 90° Elbow come in?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Elbow is listed in 13 sizes, 3/4\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel JIC 37° Male × Code 62 Flange 90° Elbow?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\" JIC 37° male (1-1/16-12) with 3/4\" Code 62 flange, 1-1/4\" JIC 37° male (1-5/8-12) with 1-1/4\" Code 62 flange and 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × Code 62 Flange 90° Elbow rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel JIC 37° Male × Code 62 Flange 90° Elbow, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 90° Elbow made from, and is stainless steel available?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Elbow is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Code 62 Flange 90° Elbow follow?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Elbow is listed to SAE J518, SAE J514. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 90° Elbow come with the flange clamp and bolts?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Elbow has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel JIC 37° Male × Code 62 Flange 90° Elbow?",
+          "a": "Quote the Indus part number from the size table to order the Steel JIC 37° Male × Code 62 Flange 90° Elbow. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 90° Elbow fit a Code 61 port?",
+          "a": "No. The Steel JIC 37° Male × Code 62 Flange 90° Elbow has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Code 62 Flange 90° Elbow differ from the Steel JIC 37° Male × Code 62 Flange 45° Elbow?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Elbow and the [Steel JIC 37° Male × Code 62 Flange 45° Elbow](/p/steel-jic-37-male-x-code-62-flange-45-elbow) are two adapters in the same flange range. They differ in the name: 90° here against 45°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel JIC 37° Male × Code 62 Flange 90° Elbow from stock in the UAE and get a quotation?",
+          "a": "Yes, the Steel JIC 37° Male × Code 62 Flange 90° Elbow is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-code-62-flange-90-tube-elbow-one-piece",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece and where is it used?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece is a 90° bent-tube elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 6 part numbers, 1/2\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece, such as IH-ST-NB6892-08-08?",
+          "a": "At the end of an IH-ST-NB6892 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece table, IH-ST-NB6892-08-08 is 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 62 flange, and IH-ST-NB6892-32-32 is 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece come in?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece is listed in 6 sizes, 1/2\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 62 flange, 3/4\" JIC 37° male (1-1/16-12) with 1\" Code 62 flange and 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece made from, and is stainless steel available?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece follow?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece is listed to SAE J518, SAE J514. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece come with the flange clamp and bolts?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece?",
+          "a": "Quote the Indus part number from the size table to order the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece fit a Code 61 port?",
+          "a": "No. The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece differ from the Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece and the [Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece](/p/steel-jic-37-male-x-code-62-flange-45-tube-elbow-one-piece) are two adapters in the same flange range. They differ in the name: 90° here against 45°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece in Dubai for export?",
+          "a": "Yes, the Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-code-62-flange-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange Adapter and where is it used?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange Adapter is a straight flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 15 part numbers, 1/2\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel JIC 37° Male × Code 62 Flange Adapter, such as IH-ST-1800-08-08?",
+          "a": "At the end of an IH-ST-1800 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel JIC 37° Male × Code 62 Flange Adapter table, IH-ST-1800-08-08 is 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 62 flange, and IH-ST-1800-32-32 is 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel JIC 37° Male × Code 62 Flange Adapter come in?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange Adapter is listed in 15 sizes, 1/2\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel JIC 37° Male × Code 62 Flange Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" JIC 37° male (3/4-16) with 1/2\" Code 62 flange, 1-1/4\" JIC 37° male (1-5/8-12) with 1\" Code 62 flange and 2\" JIC 37° male (2-1/2-12) with 2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × Code 62 Flange Adapter rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel JIC 37° Male × Code 62 Flange Adapter, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Code 62 Flange Adapter made from, and is stainless steel available?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Code 62 Flange Adapter follow?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange Adapter is listed to SAE J518, SAE J514. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange Adapter come with the flange clamp and bolts?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange Adapter has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel JIC 37° Male × Code 62 Flange Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel JIC 37° Male × Code 62 Flange Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel JIC 37° Male × Code 62 Flange Adapter fit a Code 61 port?",
+          "a": "No. The Steel JIC 37° Male × Code 62 Flange Adapter has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Code 62 Flange Adapter differ from the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "The Steel JIC 37° Male × Code 62 Flange Adapter and the [Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter](/p/steel-jic-37-male-x-sae-code-62-flange-pad-adapter) are two adapters in the same flange range. They differ in configuration straight flange adapter here against flange pad adapter. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel JIC 37° Male × Code 62 Flange Adapter from stock in the UAE and get a quotation?",
+          "a": "Yes, the Steel JIC 37° Male × Code 62 Flange Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-sae-code-61-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter and where is it used?",
+          "a": "The Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are 37° JIC male and SAE Code 61 flange pad. It is listed in 10 part numbers, 1/2\" to 1-1/2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter, such as IH-ST-W300-08-08?",
+          "a": "At the end of an IH-ST-W300 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter table, IH-ST-W300-08-08 is 1/2\" JIC 37° (3/4-16) with 1/2\" SAE Code 61 flange pad, and IH-ST-W300-24-24K is 1-1/2\" JIC 37° (1-7/8-12) with 1-1/2\" SAE Code 61 flange pad, kit."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter come in?",
+          "a": "The Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter is listed in 10 sizes, 1/2\" to 1-1/2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" JIC 37° (3/4-16) with 1/2\" SAE Code 61 flange pad, 1\" JIC 37° (1-5/16-12) with 1\" SAE Code 61 flange pad and 1-1/2\" JIC 37° (1-7/8-12) with 1-1/2\" SAE Code 61 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter rated for?",
+          "a": "For the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter the listing gives: Up to 3,000 psi, falling with size (SAE J518 Code 61, manufacturer); see the table. The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter follow?",
+          "a": "The Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter is listed to SAE J514, ISO 8434-2, SAE J518, ISO 6162-1. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter has a Code 61 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 61](/p/split-flange-clamps-code-61-pair-bolts), because Code 61 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter fit a Code 62 port?",
+          "a": "No. The Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter has a Code 61 flange head and needs a Code 61 port and clamp, because Code 61 and Code 62 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter differ from the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "The Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter and the [Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter](/p/steel-jic-37-male-x-sae-code-62-flange-pad-adapter) are two adapters in the same flange range. They differ in the name: 61 here against 62. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-sae-code-62-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter and where is it used?",
+          "a": "The Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are 37° JIC male and SAE Code 62 flange pad. It is listed in 10 part numbers, 1/2\" to 1-1/2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter, such as IH-ST-W600-08-08?",
+          "a": "At the end of an IH-ST-W600 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter table, IH-ST-W600-08-08 is 1/2\" JIC 37° (3/4-16) with 1/2\" SAE Code 62 flange pad, and IH-ST-W600-24-24K is 1-1/2\" JIC 37° (1-7/8-12) with 1-1/2\" SAE Code 62 flange pad, kit."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter come in?",
+          "a": "The Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter is listed in 10 sizes, 1/2\" to 1-1/2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" JIC 37° (3/4-16) with 1/2\" SAE Code 62 flange pad, 1\" JIC 37° (1-5/16-12) with 1\" SAE Code 62 flange pad and 1-1/2\" JIC 37° (1-7/8-12) with 1-1/2\" SAE Code 62 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter follow?",
+          "a": "The Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter is listed to SAE J514, ISO 8434-2, SAE J518, ISO 6162-2. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter fit a Code 61 port?",
+          "a": "No. The Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter differ from the Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter?",
+          "a": "The Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter and the [Steel JIC 37° Male × SAE Code 61 Flange Pad Adapter](/p/steel-jic-37-male-x-sae-code-61-flange-pad-adapter) are two adapters in the same flange range. They differ in the name: 62 here against 61. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Steel JIC 37° Male × SAE Code 62 Flange Pad Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-female-x-sae-code-61-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Female × SAE Code 61 Flange Pad Adapter and where is it used?",
+          "a": "The Steel NPTF Female × SAE Code 61 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are NPTF (Dryseal) female and SAE Code 61 flange pad. It is listed in 19 part numbers, 1/2\" to 3\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel NPTF Female × SAE Code 61 Flange Pad Adapter, such as IH-ST-W43-08-08?",
+          "a": "Each IH-ST-W43 part number in the Steel NPTF Female × SAE Code 61 Flange Pad Adapter table is one size combination. For example IH-ST-W43-08-08 is 1/2\" NPTF (1/2-14) with 1/2\" SAE Code 61 flange pad, and IH-ST-W43-48-48K is 3\" NPTF (3-8) with 3\" SAE Code 61 flange pad, kit. Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel NPTF Female × SAE Code 61 Flange Pad Adapter come in?",
+          "a": "The Steel NPTF Female × SAE Code 61 Flange Pad Adapter is listed in 19 sizes, 1/2\" to 3\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel NPTF Female × SAE Code 61 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" NPTF (1/2-14) with 1/2\" SAE Code 61 flange pad, 1-1/4\" NPTF (1-1/4-11.5) with 1-1/4\" SAE Code 61 flange pad and 3\" NPTF (3-8) with 3\" SAE Code 61 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel NPTF Female × SAE Code 61 Flange Pad Adapter rated for?",
+          "a": "For the Steel NPTF Female × SAE Code 61 Flange Pad Adapter the listing gives: Up to 3,000 psi, falling with size (SAE J518 Code 61, manufacturer); see the table. The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Female × SAE Code 61 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel NPTF Female × SAE Code 61 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Female × SAE Code 61 Flange Pad Adapter follow?",
+          "a": "The Steel NPTF Female × SAE Code 61 Flange Pad Adapter is listed to ASME B1.20.3, SAE J518, ISO 6162-1. NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel NPTF Female × SAE Code 61 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel NPTF Female × SAE Code 61 Flange Pad Adapter has a Code 61 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 61](/p/split-flange-clamps-code-61-pair-bolts), because Code 61 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel NPTF Female × SAE Code 61 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel NPTF Female × SAE Code 61 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel NPTF Female × SAE Code 61 Flange Pad Adapter fit a Code 62 port?",
+          "a": "No. The Steel NPTF Female × SAE Code 61 Flange Pad Adapter has a Code 61 flange head and needs a Code 61 port and clamp, because Code 61 and Code 62 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Female × SAE Code 61 Flange Pad Adapter differ from the Steel NPTF Female × SAE Code 62 Flange Pad Adapter?",
+          "a": "The Steel NPTF Female × SAE Code 61 Flange Pad Adapter and the [Steel NPTF Female × SAE Code 62 Flange Pad Adapter](/p/steel-nptf-female-x-sae-code-62-flange-pad-adapter) are two adapters in the same flange range. They differ in the name: 61 here against 62. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel NPTF Female × SAE Code 61 Flange Pad Adapter in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Steel NPTF Female × SAE Code 61 Flange Pad Adapter sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-female-x-sae-code-62-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Female × SAE Code 62 Flange Pad Adapter and where is it used?",
+          "a": "The Steel NPTF Female × SAE Code 62 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are NPTF (Dryseal) female and SAE Code 62 flange pad. It is listed in 12 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel NPTF Female × SAE Code 62 Flange Pad Adapter, such as IH-ST-W44-08-08?",
+          "a": "At the end of an IH-ST-W44 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel NPTF Female × SAE Code 62 Flange Pad Adapter table, IH-ST-W44-08-08 is 1/2\" NPTF (1/2-14) with 1/2\" SAE Code 62 flange pad, and IH-ST-W44-32-32K is 2\" NPTF (2-11.5) with 2\" SAE Code 62 flange pad, kit."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel NPTF Female × SAE Code 62 Flange Pad Adapter come in?",
+          "a": "The Steel NPTF Female × SAE Code 62 Flange Pad Adapter is listed in 12 sizes, 1/2\" to 2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel NPTF Female × SAE Code 62 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" NPTF (1/2-14) with 1/2\" SAE Code 62 flange pad, 1-1/4\" NPTF (1-1/4-11.5) with 1-1/4\" SAE Code 62 flange pad and 2\" NPTF (2-11.5) with 2\" SAE Code 62 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel NPTF Female × SAE Code 62 Flange Pad Adapter rated for?",
+          "a": "For the Steel NPTF Female × SAE Code 62 Flange Pad Adapter the listing gives: 6,000 psi (SAE J518 Code 62, manufacturer). The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Female × SAE Code 62 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel NPTF Female × SAE Code 62 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Female × SAE Code 62 Flange Pad Adapter follow?",
+          "a": "The Steel NPTF Female × SAE Code 62 Flange Pad Adapter is listed to ASME B1.20.3, SAE J518, ISO 6162-2. NPTF is the Dryseal tapered pipe thread of SAE J476, which seals on the thread. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel NPTF Female × SAE Code 62 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel NPTF Female × SAE Code 62 Flange Pad Adapter has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel NPTF Female × SAE Code 62 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel NPTF Female × SAE Code 62 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel NPTF Female × SAE Code 62 Flange Pad Adapter fit a Code 61 port?",
+          "a": "No. The Steel NPTF Female × SAE Code 62 Flange Pad Adapter has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Female × SAE Code 62 Flange Pad Adapter differ from the Steel NPTF Female × SAE Code 61 Flange Pad Adapter?",
+          "a": "The Steel NPTF Female × SAE Code 62 Flange Pad Adapter and the [Steel NPTF Female × SAE Code 61 Flange Pad Adapter](/p/steel-nptf-female-x-sae-code-61-flange-pad-adapter) are two adapters in the same flange range. They differ in the name: 62 here against 61. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Female × SAE Code 62 Flange Pad Adapter in Dubai for export?",
+          "a": "Yes, the Steel NPTF Female × SAE Code 62 Flange Pad Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-female-x-sae-code-61-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Female × SAE Code 61 Flange Pad Adapter and where is it used?",
+          "a": "The Steel ORB Female × SAE Code 61 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are SAE O-ring boss (ORB) female and SAE Code 61 flange pad. It is listed in 13 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORB Female × SAE Code 61 Flange Pad Adapter, such as IH-ST-W46-08-08?",
+          "a": "Each IH-ST-W46 part number in the Steel ORB Female × SAE Code 61 Flange Pad Adapter table is one size combination. For example IH-ST-W46-08-08 is 1/2\" ORB (3/4-16) with 1/2\" SAE Code 61 flange pad, and IH-ST-W46-32-32KU-SS is 2\" ORB (2-1/2-12) with 2\" SAE Code 61 flange pad. Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORB Female × SAE Code 61 Flange Pad Adapter come in?",
+          "a": "The Steel ORB Female × SAE Code 61 Flange Pad Adapter is listed in 13 sizes, 1/2\" to 2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORB Female × SAE Code 61 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" ORB (3/4-16) with 1/2\" SAE Code 61 flange pad, 1-1/4\" ORB (1-5/8-12) with 1-1/4\" SAE Code 61 flange pad and 2\" ORB (2-1/2-12) with 2\" SAE Code 61 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORB Female × SAE Code 61 Flange Pad Adapter rated for?",
+          "a": "For the Steel ORB Female × SAE Code 61 Flange Pad Adapter the listing gives: Up to 3,000 psi, falling with size (SAE J518 Code 61, manufacturer); see the table. The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Female × SAE Code 61 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel ORB Female × SAE Code 61 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORB Female × SAE Code 61 Flange Pad Adapter follow?",
+          "a": "The Steel ORB Female × SAE Code 61 Flange Pad Adapter is listed to SAE J1926, ISO 11926, SAE J518, ISO 6162-1. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. ORB (O-ring boss) ports follow SAE J1926 / ISO 11926 and seal on an O-ring in the port. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORB Female × SAE Code 61 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel ORB Female × SAE Code 61 Flange Pad Adapter has a Code 61 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 61](/p/split-flange-clamps-code-61-pair-bolts), because Code 61 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORB Female × SAE Code 61 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORB Female × SAE Code 61 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORB Female × SAE Code 61 Flange Pad Adapter fit a Code 62 port?",
+          "a": "No. The Steel ORB Female × SAE Code 61 Flange Pad Adapter has a Code 61 flange head and needs a Code 61 port and clamp, because Code 61 and Code 62 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Female × SAE Code 61 Flange Pad Adapter differ from the Steel NPTF Female × SAE Code 61 Flange Pad Adapter?",
+          "a": "The Steel ORB Female × SAE Code 61 Flange Pad Adapter and the [Steel NPTF Female × SAE Code 61 Flange Pad Adapter](/p/steel-nptf-female-x-sae-code-61-flange-pad-adapter) are two adapters in the same flange range. They differ in end SAE O-ring boss (ORB) here against NPTF (Dryseal). Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel ORB Female × SAE Code 61 Flange Pad Adapter in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Steel ORB Female × SAE Code 61 Flange Pad Adapter at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orb-female-x-sae-code-62-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORB Female × SAE Code 62 Flange Pad Adapter and where is it used?",
+          "a": "The Steel ORB Female × SAE Code 62 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are SAE O-ring boss (ORB) female and SAE Code 62 flange pad. It is listed in 13 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORB Female × SAE Code 62 Flange Pad Adapter, such as IH-ST-W48-08-08?",
+          "a": "Each IH-ST-W48 part number in the Steel ORB Female × SAE Code 62 Flange Pad Adapter table is one size combination. For example IH-ST-W48-08-08 is 1/2\" ORB (3/4-16) with 1/2\" SAE Code 62 flange pad, and IH-ST-W48-32-32K is 2\" ORB (2-1/2-12) with 2\" SAE Code 62 flange pad, kit. Quote the full number, or send the thread on each end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORB Female × SAE Code 62 Flange Pad Adapter come in?",
+          "a": "The Steel ORB Female × SAE Code 62 Flange Pad Adapter is listed in 13 sizes, 1/2\" to 2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORB Female × SAE Code 62 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" ORB (3/4-16) with 1/2\" SAE Code 62 flange pad, 1-1/4\" ORB (1-5/8-12) with 1-1/4\" SAE Code 62 flange pad and 2\" ORB (2-1/2-12) with 2\" SAE Code 62 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORB Female × SAE Code 62 Flange Pad Adapter rated for?",
+          "a": "For the Steel ORB Female × SAE Code 62 Flange Pad Adapter the listing gives: 6,000 psi (SAE J518 Code 62, manufacturer). The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORB Female × SAE Code 62 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel ORB Female × SAE Code 62 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORB Female × SAE Code 62 Flange Pad Adapter follow?",
+          "a": "The Steel ORB Female × SAE Code 62 Flange Pad Adapter is listed to SAE J1926, ISO 11926, SAE J518, ISO 6162-2. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. ORB (O-ring boss) ports follow SAE J1926 / ISO 11926 and seal on an O-ring in the port. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORB Female × SAE Code 62 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel ORB Female × SAE Code 62 Flange Pad Adapter has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORB Female × SAE Code 62 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORB Female × SAE Code 62 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORB Female × SAE Code 62 Flange Pad Adapter fit a Code 61 port?",
+          "a": "No. The Steel ORB Female × SAE Code 62 Flange Pad Adapter has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORB Female × SAE Code 62 Flange Pad Adapter differ from the Steel NPTF Female × SAE Code 62 Flange Pad Adapter?",
+          "a": "The Steel ORB Female × SAE Code 62 Flange Pad Adapter and the [Steel NPTF Female × SAE Code 62 Flange Pad Adapter](/p/steel-nptf-female-x-sae-code-62-flange-pad-adapter) are two adapters in the same flange range. They differ in end SAE O-ring boss (ORB) here against NPTF (Dryseal). Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel ORB Female × SAE Code 62 Flange Pad Adapter in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Steel ORB Female × SAE Code 62 Flange Pad Adapter at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-code-61-flange-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × Code 61 Flange 45° Elbow and where is it used?",
+          "a": "The Steel ORFS Male × Code 61 Flange 45° Elbow is a 45° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 61 flanged port on a pump, valve or manifold. It is listed in 4 part numbers, 3/4\" to 1-1/2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × Code 61 Flange 45° Elbow, such as IH-ST-FS1703-12-12?",
+          "a": "At the end of an IH-ST-FS1703 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × Code 61 Flange 45° Elbow table, IH-ST-FS1703-12-12 is 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 61 flange, and IH-ST-FS1703-24-24 is 1-1/2\" ORFS male (2-12) with 1-1/2\" Code 61 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × Code 61 Flange 45° Elbow come in?",
+          "a": "The Steel ORFS Male × Code 61 Flange 45° Elbow is listed in 4 sizes, 3/4\" to 1-1/2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × Code 61 Flange 45° Elbow?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 61 flange, 1-1/4\" ORFS male (1-11/16-12) with 1-1/4\" Code 61 flange and 1-1/2\" ORFS male (2-12) with 1-1/2\" Code 61 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × Code 61 Flange 45° Elbow rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel ORFS Male × Code 61 Flange 45° Elbow, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × Code 61 Flange 45° Elbow made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × Code 61 Flange 45° Elbow is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × Code 61 Flange 45° Elbow follow?",
+          "a": "The Steel ORFS Male × Code 61 Flange 45° Elbow is listed to SAE J518, SAE J1453. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × Code 61 Flange 45° Elbow come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × Code 61 Flange 45° Elbow has a Code 61 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 61](/p/split-flange-clamps-code-61-pair-bolts), because Code 61 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × Code 61 Flange 45° Elbow?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × Code 61 Flange 45° Elbow. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × Code 61 Flange 45° Elbow fit a Code 62 port?",
+          "a": "No. The Steel ORFS Male × Code 61 Flange 45° Elbow has a Code 61 flange head and needs a Code 61 port and clamp, because Code 61 and Code 62 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × Code 61 Flange 45° Elbow differ from the Steel ORFS Male × Code 61 Flange 90° Elbow?",
+          "a": "The Steel ORFS Male × Code 61 Flange 45° Elbow and the [Steel ORFS Male × Code 61 Flange 90° Elbow](/p/steel-orfs-male-x-code-61-flange-90-elbow) are two adapters in the same flange range. They differ in the name: 45° here against 90°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × Code 61 Flange 45° Elbow in Dubai for export?",
+          "a": "Yes, the Steel ORFS Male × Code 61 Flange 45° Elbow is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-code-61-flange-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × Code 61 Flange 90° Elbow and where is it used?",
+          "a": "The Steel ORFS Male × Code 61 Flange 90° Elbow is a 90° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 61 flanged port on a pump, valve or manifold. It is listed in 11 part numbers, 3/4\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × Code 61 Flange 90° Elbow, such as IH-ST-FS1704-12-12?",
+          "a": "At the end of an IH-ST-FS1704 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × Code 61 Flange 90° Elbow table, IH-ST-FS1704-12-12 is 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 61 flange, and IH-ST-FS1704-24-32 is 1-1/2\" ORFS male (2-12) with 2\" Code 61 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × Code 61 Flange 90° Elbow come in?",
+          "a": "The Steel ORFS Male × Code 61 Flange 90° Elbow is listed in 11 sizes, 3/4\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × Code 61 Flange 90° Elbow?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 61 flange, 1-1/4\" ORFS male (1-11/16-12) with 1\" Code 61 flange and 1-1/2\" ORFS male (2-12) with 2\" Code 61 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × Code 61 Flange 90° Elbow rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel ORFS Male × Code 61 Flange 90° Elbow, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × Code 61 Flange 90° Elbow made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × Code 61 Flange 90° Elbow is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × Code 61 Flange 90° Elbow follow?",
+          "a": "The Steel ORFS Male × Code 61 Flange 90° Elbow is listed to SAE J518, SAE J1453. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × Code 61 Flange 90° Elbow come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × Code 61 Flange 90° Elbow has a Code 61 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 61](/p/split-flange-clamps-code-61-pair-bolts), because Code 61 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × Code 61 Flange 90° Elbow?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × Code 61 Flange 90° Elbow. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × Code 61 Flange 90° Elbow fit a Code 62 port?",
+          "a": "No. The Steel ORFS Male × Code 61 Flange 90° Elbow has a Code 61 flange head and needs a Code 61 port and clamp, because Code 61 and Code 62 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × Code 61 Flange 90° Elbow differ from the Steel ORFS Male × Code 61 Flange 45° Elbow?",
+          "a": "The Steel ORFS Male × Code 61 Flange 90° Elbow and the [Steel ORFS Male × Code 61 Flange 45° Elbow](/p/steel-orfs-male-x-code-61-flange-45-elbow) are two adapters in the same flange range. They differ in the name: 90° here against 45°. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel ORFS Male × Code 61 Flange 90° Elbow from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Steel ORFS Male × Code 61 Flange 90° Elbow at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-code-61-flange-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × Code 61 Flange Adapter and where is it used?",
+          "a": "The Steel ORFS Male × Code 61 Flange Adapter is a straight flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 61 flanged port on a pump, valve or manifold. It is listed in 11 part numbers, 3/4\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × Code 61 Flange Adapter, such as IH-ST-FS1700-12-12?",
+          "a": "At the end of an IH-ST-FS1700 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × Code 61 Flange Adapter table, IH-ST-FS1700-12-12 is 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 61 flange, and IH-ST-FS1700-24-32 is 1-1/2\" ORFS male (2-12) with 2\" Code 61 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × Code 61 Flange Adapter come in?",
+          "a": "The Steel ORFS Male × Code 61 Flange Adapter is listed in 11 sizes, 3/4\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × Code 61 Flange Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 61 flange, 1-1/4\" ORFS male (1-11/16-12) with 1\" Code 61 flange and 1-1/2\" ORFS male (2-12) with 2\" Code 61 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × Code 61 Flange Adapter rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel ORFS Male × Code 61 Flange Adapter, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × Code 61 Flange Adapter made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × Code 61 Flange Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × Code 61 Flange Adapter follow?",
+          "a": "The Steel ORFS Male × Code 61 Flange Adapter is listed to SAE J518, SAE J1453. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × Code 61 Flange Adapter come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × Code 61 Flange Adapter has a Code 61 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 61](/p/split-flange-clamps-code-61-pair-bolts), because Code 61 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × Code 61 Flange Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × Code 61 Flange Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × Code 61 Flange Adapter fit a Code 62 port?",
+          "a": "No. The Steel ORFS Male × Code 61 Flange Adapter has a Code 61 flange head and needs a Code 61 port and clamp, because Code 61 and Code 62 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × Code 61 Flange Adapter differ from the Steel ORFS Male × SAE Code 61 Flange Pad Adapter?",
+          "a": "The Steel ORFS Male × Code 61 Flange Adapter and the [Steel ORFS Male × SAE Code 61 Flange Pad Adapter](/p/steel-orfs-male-x-sae-code-61-flange-pad-adapter) are two adapters in the same flange range. They differ in configuration straight flange adapter here against flange pad adapter; end ORFS male here against O-ring face seal (ORFS). Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × Code 61 Flange Adapter in Dubai for export?",
+          "a": "Yes, the Steel ORFS Male × Code 61 Flange Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-code-62-flange-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × Code 62 Flange 45° Elbow and where is it used?",
+          "a": "The Steel ORFS Male × Code 62 Flange 45° Elbow is a 45° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 4 part numbers, 3/4\" to 1-1/2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × Code 62 Flange 45° Elbow, such as IH-ST-FS1803-12-12?",
+          "a": "At the end of an IH-ST-FS1803 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × Code 62 Flange 45° Elbow table, IH-ST-FS1803-12-12 is 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 62 flange, and IH-ST-FS1803-24-24 is 1-1/2\" ORFS male (2-12) with 1-1/2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × Code 62 Flange 45° Elbow come in?",
+          "a": "The Steel ORFS Male × Code 62 Flange 45° Elbow is listed in 4 sizes, 3/4\" to 1-1/2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × Code 62 Flange 45° Elbow?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\" ORFS male (1-3/16-12) with 3/4\" Code 62 flange, 1-1/4\" ORFS male (1-11/16-12) with 1-1/4\" Code 62 flange and 1-1/2\" ORFS male (2-12) with 1-1/2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × Code 62 Flange 45° Elbow rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel ORFS Male × Code 62 Flange 45° Elbow, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × Code 62 Flange 45° Elbow made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × Code 62 Flange 45° Elbow is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × Code 62 Flange 45° Elbow follow?",
+          "a": "The Steel ORFS Male × Code 62 Flange 45° Elbow is listed to SAE J518, SAE J1453. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × Code 62 Flange 45° Elbow come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × Code 62 Flange 45° Elbow has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × Code 62 Flange 45° Elbow?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × Code 62 Flange 45° Elbow. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × Code 62 Flange 45° Elbow fit a Code 61 port?",
+          "a": "No. The Steel ORFS Male × Code 62 Flange 45° Elbow has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × Code 62 Flange 45° Elbow differ from the Steel ORFS Male × Code 61 Flange 45° Elbow?",
+          "a": "The Steel ORFS Male × Code 62 Flange 45° Elbow and the [Steel ORFS Male × Code 61 Flange 45° Elbow](/p/steel-orfs-male-x-code-61-flange-45-elbow) are two adapters in the same flange range. They differ in the name: 62 here against 61. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × Code 62 Flange 45° Elbow in Dubai for export?",
+          "a": "Yes, the Steel ORFS Male × Code 62 Flange 45° Elbow is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-code-62-flange-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × Code 62 Flange 90° Elbow and where is it used?",
+          "a": "The Steel ORFS Male × Code 62 Flange 90° Elbow is a 90° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 12 part numbers, 1/2\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × Code 62 Flange 90° Elbow, such as IH-ST-FS1804-12-08?",
+          "a": "At the end of an IH-ST-FS1804 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × Code 62 Flange 90° Elbow table, IH-ST-FS1804-12-08 is 3/4\" ORFS male (1-3/16-12) with 1/2\" Code 62 flange, and IH-ST-FS1804-24-32 is 1-1/2\" ORFS male (2-12) with 2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × Code 62 Flange 90° Elbow come in?",
+          "a": "The Steel ORFS Male × Code 62 Flange 90° Elbow is listed in 12 sizes, 1/2\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × Code 62 Flange 90° Elbow?",
+          "a": "The size table pairs one end size with one flange size per row, for example 3/4\" ORFS male (1-3/16-12) with 1/2\" Code 62 flange, 1-1/4\" ORFS male (1-11/16-12) with 1\" Code 62 flange and 1-1/2\" ORFS male (2-12) with 2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × Code 62 Flange 90° Elbow rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel ORFS Male × Code 62 Flange 90° Elbow, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × Code 62 Flange 90° Elbow made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × Code 62 Flange 90° Elbow is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × Code 62 Flange 90° Elbow follow?",
+          "a": "The Steel ORFS Male × Code 62 Flange 90° Elbow is listed to SAE J518, SAE J1453. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × Code 62 Flange 90° Elbow come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × Code 62 Flange 90° Elbow has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × Code 62 Flange 90° Elbow?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × Code 62 Flange 90° Elbow. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × Code 62 Flange 90° Elbow fit a Code 61 port?",
+          "a": "No. The Steel ORFS Male × Code 62 Flange 90° Elbow has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × Code 62 Flange 90° Elbow differ from the Steel ORFS Male × Code 61 Flange 90° Elbow?",
+          "a": "The Steel ORFS Male × Code 62 Flange 90° Elbow and the [Steel ORFS Male × Code 61 Flange 90° Elbow](/p/steel-orfs-male-x-code-61-flange-90-elbow) are two adapters in the same flange range. They differ in the name: 62 here against 61. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel ORFS Male × Code 62 Flange 90° Elbow in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Steel ORFS Male × Code 62 Flange 90° Elbow sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-code-62-flange-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × Code 62 Flange Adapter and where is it used?",
+          "a": "The Steel ORFS Male × Code 62 Flange Adapter is a straight flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is listed in 12 part numbers, 1/2\" to 2\" flange. See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × Code 62 Flange Adapter, such as IH-ST-FS1800-08-08?",
+          "a": "At the end of an IH-ST-FS1800 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × Code 62 Flange Adapter table, IH-ST-FS1800-08-08 is 1/2\" ORFS male (13/16-16) with 1/2\" Code 62 flange, and IH-ST-FS1800-24-32 is 1-1/2\" ORFS male (2-12) with 2\" Code 62 flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × Code 62 Flange Adapter come in?",
+          "a": "The Steel ORFS Male × Code 62 Flange Adapter is listed in 12 sizes, 1/2\" to 2\" flange. The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × Code 62 Flange Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" ORFS male (13/16-16) with 1/2\" Code 62 flange, 1-1/4\" ORFS male (1-11/16-12) with 1\" Code 62 flange and 1-1/2\" ORFS male (2-12) with 2\" Code 62 flange. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × Code 62 Flange Adapter rated for?",
+          "a": "The lowest-rated part in the joint governs the Steel ORFS Male × Code 62 Flange Adapter, and the rating falls as the size goes up. Give us the size and the working pressure of your line and we will confirm the fitting in writing before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × Code 62 Flange Adapter made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × Code 62 Flange Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × Code 62 Flange Adapter follow?",
+          "a": "The Steel ORFS Male × Code 62 Flange Adapter is listed to SAE J518, SAE J1453. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × Code 62 Flange Adapter come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × Code 62 Flange Adapter has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × Code 62 Flange Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × Code 62 Flange Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × Code 62 Flange Adapter fit a Code 61 port?",
+          "a": "No. The Steel ORFS Male × Code 62 Flange Adapter has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × Code 62 Flange Adapter differ from the Steel ORFS Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "The Steel ORFS Male × Code 62 Flange Adapter and the [Steel ORFS Male × SAE Code 62 Flange Pad Adapter](/p/steel-orfs-male-x-sae-code-62-flange-pad-adapter) are two adapters in the same flange range. They differ in configuration straight flange adapter here against flange pad adapter; end ORFS male here against O-ring face seal (ORFS). Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Steel ORFS Male × Code 62 Flange Adapter from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Steel ORFS Male × Code 62 Flange Adapter at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-sae-code-61-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × SAE Code 61 Flange Pad Adapter and where is it used?",
+          "a": "The Steel ORFS Male × SAE Code 61 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are O-ring face seal (ORFS) male and SAE Code 61 flange pad. It is listed in 10 part numbers, 1/2\" to 1-1/2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × SAE Code 61 Flange Pad Adapter, such as IH-ST-W304-08-08?",
+          "a": "At the end of an IH-ST-W304 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × SAE Code 61 Flange Pad Adapter table, IH-ST-W304-08-08 is 1/2\" ORFS (13/16-16) with 1/2\" SAE Code 61 flange pad, and IH-ST-W304-24-24K is 1-1/2\" ORFS (2-12) with 1-1/2\" SAE Code 61 flange pad, kit."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × SAE Code 61 Flange Pad Adapter come in?",
+          "a": "The Steel ORFS Male × SAE Code 61 Flange Pad Adapter is listed in 10 sizes, 1/2\" to 1-1/2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × SAE Code 61 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" ORFS (13/16-16) with 1/2\" SAE Code 61 flange pad, 1\" ORFS (1-7/16-12) with 1\" SAE Code 61 flange pad and 1-1/2\" ORFS (2-12) with 1-1/2\" SAE Code 61 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × SAE Code 61 Flange Pad Adapter rated for?",
+          "a": "For the Steel ORFS Male × SAE Code 61 Flange Pad Adapter the listing gives: Up to 3,000 psi, falling with size (SAE J518 Code 61, manufacturer); see the table. The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × SAE Code 61 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × SAE Code 61 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × SAE Code 61 Flange Pad Adapter follow?",
+          "a": "The Steel ORFS Male × SAE Code 61 Flange Pad Adapter is listed to SAE J1453, ISO 8434-3, SAE J518, ISO 6162-1. SAE J518 Code 61 is the standard-pressure four-bolt flange series (ISO 6162-1); Code 61 and Code 62 parts do not interchange. ORFS ends follow SAE J1453 / ISO 8434-3 and seal with an O-ring in the flat face of the connection. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × SAE Code 61 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × SAE Code 61 Flange Pad Adapter has a Code 61 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 61](/p/split-flange-clamps-code-61-pair-bolts), because Code 61 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × SAE Code 61 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × SAE Code 61 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × SAE Code 61 Flange Pad Adapter fit a Code 62 port?",
+          "a": "No. The Steel ORFS Male × SAE Code 61 Flange Pad Adapter has a Code 61 flange head and needs a Code 61 port and clamp, because Code 61 and Code 62 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × SAE Code 61 Flange Pad Adapter differ from the Steel ORFS Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "The Steel ORFS Male × SAE Code 61 Flange Pad Adapter and the [Steel ORFS Male × SAE Code 62 Flange Pad Adapter](/p/steel-orfs-male-x-sae-code-62-flange-pad-adapter) are two adapters in the same flange range. They differ in the name: 61 here against 62. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel ORFS Male × SAE Code 61 Flange Pad Adapter in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Steel ORFS Male × SAE Code 61 Flange Pad Adapter at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-sae-code-62-flange-pad-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × SAE Code 62 Flange Pad Adapter and where is it used?",
+          "a": "The Steel ORFS Male × SAE Code 62 Flange Pad Adapter is a flange pad adapter, in forged carbon steel, trivalent zinc plated. Its ends are O-ring face seal (ORFS) male and SAE Code 62 flange pad. It is listed in 10 part numbers, 1/2\" to 1-1/2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number on the Steel ORFS Male × SAE Code 62 Flange Pad Adapter, such as IH-ST-W604-08-08?",
+          "a": "At the end of an IH-ST-W604 part number, the two number groups are the sizes of the two ends in sixteenths of an inch. In the Steel ORFS Male × SAE Code 62 Flange Pad Adapter table, IH-ST-W604-08-08 is 1/2\" ORFS (13/16-16) with 1/2\" SAE Code 62 flange pad, and IH-ST-W604-24-24K is 1-1/2\" ORFS (2-12) with 1-1/2\" SAE Code 62 flange pad, kit."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel ORFS Male × SAE Code 62 Flange Pad Adapter come in?",
+          "a": "The Steel ORFS Male × SAE Code 62 Flange Pad Adapter is listed in 10 sizes, 1/2\" to 1-1/2\". The Sizes & Part Numbers tab gives the thread on each end for every one."
+        },
+        {
+          "slot": "D",
+          "q": "Which end sizes pair up on the Steel ORFS Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "The size table pairs one end size with one flange size per row, for example 1/2\" ORFS (13/16-16) with 1/2\" SAE Code 62 flange pad, 1\" ORFS (1-7/16-12) with 1\" SAE Code 62 flange pad and 1-1/2\" ORFS (2-12) with 1-1/2\" SAE Code 62 flange pad, kit. Pick the row that matches the thread on your port and the flange size on the equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel ORFS Male × SAE Code 62 Flange Pad Adapter rated for?",
+          "a": "For the Steel ORFS Male × SAE Code 62 Flange Pad Adapter the listing gives: 6,000 psi (SAE J518 Code 62, manufacturer). The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × SAE Code 62 Flange Pad Adapter made from, and is stainless steel available?",
+          "a": "The Steel ORFS Male × SAE Code 62 Flange Pad Adapter is forged carbon steel, trivalent zinc plated. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × SAE Code 62 Flange Pad Adapter follow?",
+          "a": "The Steel ORFS Male × SAE Code 62 Flange Pad Adapter is listed to SAE J1453, ISO 8434-3, SAE J518, ISO 6162-2. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. ORFS ends follow SAE J1453 / ISO 8434-3 and seal with an O-ring in the flat face of the connection. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Steel ORFS Male × SAE Code 62 Flange Pad Adapter come with the flange clamp and bolts?",
+          "a": "The Steel ORFS Male × SAE Code 62 Flange Pad Adapter has a Code 62 flange head, and the flange clamp and bolts are ordered separately. Use the matching [Split Flange Clamps Code 62](/p/split-flange-clamps-code-62-pair-bolts), because Code 62 parts do not fit the other code's ports or clamps."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Steel ORFS Male × SAE Code 62 Flange Pad Adapter?",
+          "a": "Quote the Indus part number from the size table to order the Steel ORFS Male × SAE Code 62 Flange Pad Adapter. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Steel ORFS Male × SAE Code 62 Flange Pad Adapter fit a Code 61 port?",
+          "a": "No. The Steel ORFS Male × SAE Code 62 Flange Pad Adapter has a Code 62 flange head and needs a Code 62 port and clamp, because Code 62 and Code 61 share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × SAE Code 62 Flange Pad Adapter differ from the Steel ORFS Male × SAE Code 61 Flange Pad Adapter?",
+          "a": "The Steel ORFS Male × SAE Code 62 Flange Pad Adapter and the [Steel ORFS Male × SAE Code 61 Flange Pad Adapter](/p/steel-orfs-male-x-sae-code-61-flange-pad-adapter) are two adapters in the same flange range. They differ in the name: 62 here against 61. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × SAE Code 62 Flange Pad Adapter in Dubai for export?",
+          "a": "Yes, the Steel ORFS Male × SAE Code 62 Flange Pad Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "weld-flange-connector-l-series-flange-x-weld-tube",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weld Flange Connector L-series flange X Weld tube and where is it used?",
+          "a": "The Weld Flange Connector L-series flange X Weld tube is a Weld flange hydraulic adapter in the SAE Flange Adapter family. It is listed in 0 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Weld Flange Connector L-series flange X Weld tube when no part numbers are listed?",
+          "a": "The Weld Flange Connector L-series flange X Weld tube has no size table on its page yet, and it is quoted on request. Send the flange size and code, and the tube size for the weld end, and we will give you the part number and price."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weld Flange Connector L-series flange X Weld tube come in?",
+          "a": "The Weld Flange Connector L-series flange X Weld tube covers 1/2\" to 2\", and larger or non-standard sizes are typically quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to specify to quote the Weld Flange Connector L-series flange X Weld tube?",
+          "a": "Because the Weld Flange Connector L-series flange X Weld tube is quoted on request, give us the flange size, the flange series and the tube size for the weld end, and we will confirm the match to your equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Weld Flange Connector L-series flange X Weld tube rated for?",
+          "a": "For the Weld Flange Connector L-series flange X Weld tube the listing gives: L-series up to 210 bar (3000 psi); S-series up to 415 bar (6000 psi). The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Weld Flange Connector L-series flange X Weld tube made from, and is stainless steel available?",
+          "a": "The Weld Flange Connector L-series flange X Weld tube is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Weld Flange Connector L-series flange X Weld tube follow?",
+          "a": "The Weld Flange Connector L-series flange X Weld tube is listed to SAE J518, ISO 6162. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Weld Flange Connector L-series flange X Weld tube come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the Weld Flange Connector L-series flange X Weld tube, and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Weld Flange Connector L-series flange X Weld tube?",
+          "a": "Quote the Indus part number from the size table to order the Weld Flange Connector L-series flange X Weld tube. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "What port does the Weld Flange Connector L-series flange X Weld tube connect to?",
+          "a": "The Weld Flange Connector L-series flange X Weld tube bolts to an SAE four-bolt flange port and its other end connects to the thread described in the size table. Check the flange series on your port before ordering. Read the [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Weld Flange Connector L-series flange X Weld tube differ from the Weld Flange Connector S-series flange X Weld tube?",
+          "a": "The Weld Flange Connector L-series flange X Weld tube and the [Weld Flange Connector S-series flange X Weld tube](/p/weld-flange-connector-s-series-flange-x-weld-tube) are two adapters in the same flange range. They differ in the name: L-series here against S-series. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Weld Flange Connector L-series flange X Weld tube in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Weld Flange Connector L-series flange X Weld tube sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "weld-flange-connector-s-series-flange-x-weld-tube",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weld Flange Connector S-series flange X Weld tube and where is it used?",
+          "a": "The Weld Flange Connector S-series flange X Weld tube is a Weld flange hydraulic adapter in the SAE Flange Adapter family. It is listed in 0 part numbers, 1/2\" to 2\". See all [SAE flange adapters](/c/sae-flange-adapters)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Weld Flange Connector S-series flange X Weld tube when no part numbers are listed?",
+          "a": "The Weld Flange Connector S-series flange X Weld tube has no size table on its page yet, and it is quoted on request. Send the flange size and code, and the tube size for the weld end, and we will give you the part number and price."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weld Flange Connector S-series flange X Weld tube come in?",
+          "a": "The Weld Flange Connector S-series flange X Weld tube covers 1/2\" to 2\", and larger or non-standard sizes are typically quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to specify to quote the Weld Flange Connector S-series flange X Weld tube?",
+          "a": "Because the Weld Flange Connector S-series flange X Weld tube is quoted on request, give us the flange size, the flange series and the tube size for the weld end, and we will confirm the match to your equipment."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Weld Flange Connector S-series flange X Weld tube rated for?",
+          "a": "For the Weld Flange Connector S-series flange X Weld tube the listing gives: L-series up to 210 bar (3000 psi); S-series up to 415 bar (6000 psi). The rating of the adapter is not the rating of the assembly; the lowest-rated component, whether hose, tube or port, governs."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Weld Flange Connector S-series flange X Weld tube made from, and is stainless steel available?",
+          "a": "The Weld Flange Connector S-series flange X Weld tube is carbon steel (stainless on request), zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request; tell us the fluid and the environment if you need it quoted. Add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Weld Flange Connector S-series flange X Weld tube follow?",
+          "a": "The Weld Flange Connector S-series flange X Weld tube is listed to SAE J518, ISO 6162. JIC ends are the SAE J514 / ISO 8434-2 37° flare connection, sealing metal-to-metal on the flare seat. SAE J518 Code 62 is the high-pressure four-bolt flange series (ISO 6162-2); Code 61 and Code 62 parts do not interchange. Match every end to a port of the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Weld Flange Connector S-series flange X Weld tube come with the flange clamp and bolts?",
+          "a": "The flange clamp and bolts are ordered separately from the Weld Flange Connector S-series flange X Weld tube, and the clamp has to match the flange code and size of the port. Tell us the flange code and size and we will quote the clamp set; see the [SAE flange fittings](/c/sae-flange-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send to order the Weld Flange Connector S-series flange X Weld tube?",
+          "a": "Quote the Indus part number from the size table to order the Weld Flange Connector S-series flange X Weld tube. If you only have the ports, send the thread on each end and whether you need carbon steel or stainless, and Indus engineering will confirm the part number against your equipment. See [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "J",
+          "q": "What port does the Weld Flange Connector S-series flange X Weld tube connect to?",
+          "a": "The Weld Flange Connector S-series flange X Weld tube bolts to an SAE four-bolt flange port and its other end connects to the thread described in the size table. Check the flange series on your port before ordering. Read the [SAE flange adapters guide](/blog/sae-flange-adapters-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Weld Flange Connector S-series flange X Weld tube differ from the Weld Flange Connector L-series flange X Weld tube?",
+          "a": "The Weld Flange Connector S-series flange X Weld tube and the [Weld Flange Connector L-series flange X Weld tube](/p/weld-flange-connector-l-series-flange-x-weld-tube) are two adapters in the same flange range. They differ in the name: S-series here against L-series. Choose by the thread on your port and the flange code and size, then confirm both in the size tables."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Weld Flange Connector S-series flange X Weld tube from stock in the UAE and get a quotation?",
+          "a": "Yes. The Weld Flange Connector S-series flange X Weld tube sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    }
+  ]
+}

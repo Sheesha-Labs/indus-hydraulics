@@ -1,0 +1,1391 @@
+{
+  "family": "metric-adapters-02",
+  "extraFacts": [
+    {
+      "fact": "ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare.",
+      "source": "ISO 8434-2 (Metallic tube connections for fluid power, Part 2: 37° flared connections)"
+    },
+    {
+      "fact": "ISO 8434-1 covers 24° cone compression (bite-type) tube connections; DIN 2353 is the older German standard for the same 24° cone.",
+      "source": "ISO 8434-1 and DIN 2353"
+    },
+    {
+      "fact": "ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power.",
+      "source": "ISO 6149 (Connections for hydraulic fluid power: ports and stud ends with ISO 261 metric threads and O-ring sealing)"
+    },
+    {
+      "fact": "ASME B1.20.1 is the standard for NPT general-purpose taper pipe threads, which seal on the thread.",
+      "source": "ASME B1.20.1 (Pipe threads, general purpose, inch)"
+    },
+    {
+      "fact": "SAE J1926 and ISO 11926 cover straight-thread (UN/UNF) O-ring ports and stud ends.",
+      "source": "SAE J1926 / ISO 11926"
+    },
+    {
+      "fact": "ISO 7-1 covers R/Rp (BSP taper) pipe threads where the pressure-tight joint is made on the thread.",
+      "source": "ISO 7-1"
+    }
+  ],
+  "products": [
+    {
+      "slug": "45-elbow-metric-male-74-cone-x-npt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Elbow Metric Male 74° Cone × NPT Male and where is it used?",
+          "a": "The 45° Elbow Metric Male 74° Cone × NPT Male is an Indus 45° elbow adapter with a male Metric M12×1.5 to M45×2 end and a male NPT 1/8-27 to 1.1/4-11.5 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 12 sizes, -12 to -45."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-036-1202 on the 45° Elbow Metric Male 74° Cone × NPT Male?",
+          "a": "IH-AD-MET-036-1202 is the 45° Elbow Metric Male 74° Cone × NPT Male with M12X1.5 and NPT1/8\"X27. After the series code the size figures follow the order of the ends, so IH-AD-MET-036-4520 is M45X2 and NPT1-1/4\"X11.5. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 45° Elbow Metric Male 74° Cone × NPT Male do you list?",
+          "a": "The 45° Elbow Metric Male 74° Cone × NPT Male is listed in 12 part numbers, -12 to -45. Examples: IH-AD-MET-036-1202 (M12X1.5 x NPT1/8\"X27); IH-AD-MET-036-1806 (M18X1.5 x NPT3/8\"X18); IH-AD-MET-036-2712 (M27X1.5 x NPT3/4\"X14). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 45° Elbow Metric Male 74° Cone × NPT Male for my line?",
+          "a": "Choose the 45° Elbow Metric Male 74° Cone × NPT Male by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M12×1.5 to M45×2 and male NPT 1/8-27 to 1.1/4-11.5. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Elbow Metric Male 74° Cone × NPT Male?",
+          "a": "No pressure rating is published for the 45° Elbow Metric Male 74° Cone × NPT Male on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 45° Elbow Metric Male 74° Cone × NPT Male have?",
+          "a": "The material shown for the 45° Elbow Metric Male 74° Cone × NPT Male is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Elbow Metric Male 74° Cone × NPT Male follow?",
+          "a": "The 45° Elbow Metric Male 74° Cone × NPT Male is listed against ISO 8434-2, ASME B1.20.1. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. ASME B1.20.1 is the standard for NPT general-purpose taper pipe threads, which seal on the thread. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° Elbow Metric Male 74° Cone × NPT Male connect to?",
+          "a": "The 45° Elbow Metric Male 74° Cone × NPT Male connects to a female metric thread end of the same size on one end and a female NPT/NPTF pipe thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 45° Elbow Metric Male 74° Cone × NPT Male?",
+          "a": "For the 45° Elbow Metric Male 74° Cone × NPT Male: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. NPT and NPTF are taper threads that seal on the thread, so do not over-tighten them. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Elbow Metric Male 74° Cone × NPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Elbow Metric Male 74° Cone × NPT Male is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 45° Elbow Metric Male 74° Cone × NPT Male from stock in Dubai?",
+          "a": "Yes. We keep the 45° Elbow Metric Male 74° Cone × NPT Male in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-metric-male-o-ring-x-metric-male-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Metric Male O-Ring × Metric Male Adjustable Stud End and where is it used?",
+          "a": "The 45° Metric Male O-Ring × Metric Male Adjustable Stud End is an Indus straight adapter with male Metric M12×1.25 to M52×2 end, male Metric M10×1 to M48×2 end and O08.1-1.6 to O44.5-3.0 end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 12 sizes, -12 to -52."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-023-1210OG on the 45° Metric Male O-Ring × Metric Male Adjustable Stud End?",
+          "a": "IH-AD-MET-023-1210OG is the 45° Metric Male O-Ring × Metric Male Adjustable Stud End with M12X1.25 and M10X1 and O08.1X1.6. After the series code the size figures follow the order of the ends, so IH-AD-MET-023-5248OG is M52X2 and M48X2 and O44.5X3.0. IH-AD-MET-023-42OG carries a single size figure and is listed with M42X2 and M42X2 and O38.5X3.0. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 45° Metric Male O-Ring × Metric Male Adjustable Stud End do you list?",
+          "a": "The 45° Metric Male O-Ring × Metric Male Adjustable Stud End is listed in 12 part numbers, -12 to -52. Examples: IH-AD-MET-023-1210OG (M12X1.25 x M10X1 x O08.1X1.6); IH-AD-MET-023-2218OG (M22X1.5 x M18X1.5 x O15.3X2.4); IH-AD-MET-023-3633OG (M36X2 x M33X2 x O29.2X3.0). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 45° Metric Male O-Ring × Metric Male Adjustable Stud End?",
+          "a": "Choose the 45° Metric Male O-Ring × Metric Male Adjustable Stud End by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M12×1.25 to M52×2 and male Metric M10×1 to M48×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 45° Metric Male O-Ring × Metric Male Adjustable Stud End rated for?",
+          "a": "No pressure rating is published for the 45° Metric Male O-Ring × Metric Male Adjustable Stud End on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Metric Male O-Ring × Metric Male Adjustable Stud End made from, and is stainless available?",
+          "a": "The material shown for the 45° Metric Male O-Ring × Metric Male Adjustable Stud End is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Metric Male O-Ring × Metric Male Adjustable Stud End follow?",
+          "a": "The 45° Metric Male O-Ring × Metric Male Adjustable Stud End is listed against ISO 6149. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° Metric Male O-Ring × Metric Male Adjustable Stud End connect to?",
+          "a": "The 45° Metric Male O-Ring × Metric Male Adjustable Stud End connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 45° Metric Male O-Ring × Metric Male Adjustable Stud End?",
+          "a": "For the 45° Metric Male O-Ring × Metric Male Adjustable Stud End: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 45° Metric Male O-Ring × Metric Male Adjustable Stud End?",
+          "a": "The country of origin of the 45° Metric Male O-Ring × Metric Male Adjustable Stud End is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Metric Male O-Ring × Metric Male Adjustable Stud End in Dubai?",
+          "a": "Yes, the 45° Metric Male O-Ring × Metric Male Adjustable Stud End is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "90-bulkhead-metric-flat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Bulkhead Metric Flat used for?",
+          "a": "The 90° Bulkhead Metric Flat is an Indus straight adapter with a male Metric M10×1 to M42×2 end and a male Metric M10×1 to M42×2 end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. Sizes run M10×1 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to quote to order the 90° Bulkhead Metric Flat?",
+          "a": "To order the 90° Bulkhead Metric Flat, quote the size and thread on each end (M10×1 to M42×2) and tell us whether you need carbon steel or stainless. Engineering confirms the part number against your equipment before supply, so a photo or the mating port is enough to start."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 90° Bulkhead Metric Flat cover?",
+          "a": "The 90° Bulkhead Metric Flat covers M10×1 to M42×2. Send the thread on each end and the size you need, and we confirm the exact part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Bulkhead Metric Flat for my line?",
+          "a": "Choose the 90° Bulkhead Metric Flat by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M10×1 to M42×2 and male Metric M10×1 to M42×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Bulkhead Metric Flat rated for?",
+          "a": "The maker states up to 400 bar for the 90° Bulkhead Metric Flat. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Bulkhead Metric Flat have?",
+          "a": "The material shown for the 90° Bulkhead Metric Flat is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Bulkhead Metric Flat follow?",
+          "a": "The 90° Bulkhead Metric Flat is listed against ISO 8434-1 and DIN 2353, ISO 6149, DIN 3852-1. ISO 8434-1 covers 24° cone compression (bite-type) tube connections; DIN 2353 is the older German standard for the same 24° cone. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Bulkhead Metric Flat?",
+          "a": "The 90° Bulkhead Metric Flat connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Bulkhead Metric Flat?",
+          "a": "For the 90° Bulkhead Metric Flat: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 90° Bulkhead Metric Flat?",
+          "a": "The country of origin of the 90° Bulkhead Metric Flat is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Bulkhead Metric Flat from stock in Dubai?",
+          "a": "Yes. We keep the 90° Bulkhead Metric Flat in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-jis-metric-male-60-cone-x-bsp-male-o-ring-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow JIS Metric adjustable elbow adapter used for?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter is an Indus 90° elbow adapter with a male Metric M14×1.5 to M42×1.5 end and a male BSP end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 10 sizes, -14 to -42."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-055-1404OG on the 90° Elbow JIS Metric adjustable elbow adapter?",
+          "a": "IH-AD-MET-055-1404OG is the 90° Elbow JIS Metric adjustable elbow adapter with M14X1.5 and G1/4\"X19. After the series code the size figures follow the order of the ends, so IH-AD-MET-055-4220OG is M42X1.5 and G1-1/4\"X11. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow JIS Metric adjustable elbow adapter differ from the 90° Elbow JIS Metric adjustable elbow adapter?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter and the [90° Elbow JIS Metric adjustable elbow adapter](/p/90-elbow-jis-metric-male-60-cone-x-metric-male-adjustable-stud-end) differ in their end connections. The 90° Elbow JIS Metric adjustable elbow adapter has male Metric M14×1.5 to M42×1.5 and male BSP; the other has male Metric M14×1.5 to M36×1.5 and male Metric M12×1.5 to M33×2. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow JIS Metric adjustable elbow adapter do you list?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter is listed in 10 part numbers, -14 to -42. Examples: IH-AD-MET-055-1404OG (M14X1.5 x G1/4\"X19); IH-AD-MET-055-1806OG (M18X1.5 x G3/8\"X19); IH-AD-MET-055-2412OG (M24X1.5 x G3/4\"X14). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 90° Elbow JIS Metric adjustable elbow adapter?",
+          "a": "Choose the 90° Elbow JIS Metric adjustable elbow adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M42×1.5 and male BSP. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow JIS Metric adjustable elbow adapter rated for?",
+          "a": "No pressure rating is published for the 90° Elbow JIS Metric adjustable elbow adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Elbow JIS Metric adjustable elbow adapter have?",
+          "a": "The material shown for the 90° Elbow JIS Metric adjustable elbow adapter is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the 90° Elbow JIS Metric adjustable elbow adapter?",
+          "a": "For the 90° Elbow JIS Metric adjustable elbow adapter we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow JIS Metric adjustable elbow adapter connect to?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter connects to a female metric thread end of the same size on one end and a female BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae) and [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow JIS Metric adjustable elbow adapter?",
+          "a": "For the 90° Elbow JIS Metric adjustable elbow adapter: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow JIS Metric adjustable elbow adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow JIS Metric adjustable elbow adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow JIS Metric adjustable elbow adapter from stock in Dubai?",
+          "a": "Yes. The 90° Elbow JIS Metric adjustable elbow adapter is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-jis-metric-male-60-cone-x-metric-male-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow JIS Metric adjustable elbow adapter and where is it used?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter is an Indus 90° elbow adapter with a male Metric M14×1.5 to M36×1.5 end and a male Metric M12×1.5 to M33×2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 13 sizes, -14 to -36."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-054-1412OG on the 90° Elbow JIS Metric adjustable elbow adapter?",
+          "a": "IH-AD-MET-054-1412OG is the 90° Elbow JIS Metric adjustable elbow adapter with M14X1.5 and M12X1.5. After the series code the size figures follow the order of the ends, so IH-AD-MET-054-3633OG is M36X1.5 and M33X2. IH-AD-MET-054-14OG carries a single size figure and is listed with M14X1.5 and M14X1.5. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Elbow JIS Metric adjustable elbow adapter come in?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter is listed in 13 part numbers, -14 to -36. Examples: IH-AD-MET-054-1412OG (M14X1.5 x M12X1.5); IH-AD-MET-054-1816OG (M18X1.5 x M16X1.5); IH-AD-MET-054-2420OG (M24X1.5 x M20X1.5). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Elbow JIS Metric adjustable elbow adapter for my line?",
+          "a": "Choose the 90° Elbow JIS Metric adjustable elbow adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M36×1.5 and male Metric M12×1.5 to M33×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow JIS Metric adjustable elbow adapter rated for?",
+          "a": "No pressure rating is published for the 90° Elbow JIS Metric adjustable elbow adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow JIS Metric adjustable elbow adapter made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow JIS Metric adjustable elbow adapter is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow JIS Metric adjustable elbow adapter follow?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter is listed against ISO 6149. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow JIS Metric adjustable elbow adapter?",
+          "a": "The 90° Elbow JIS Metric adjustable elbow adapter connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 90° Elbow JIS Metric adjustable elbow adapter without leaks?",
+          "a": "For the 90° Elbow JIS Metric adjustable elbow adapter: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow JIS Metric adjustable elbow adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow JIS Metric adjustable elbow adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow JIS Metric adjustable elbow adapter available from stock in the UAE?",
+          "a": "Yes. We keep the 90° Elbow JIS Metric adjustable elbow adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-male-74-cone-bulkhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric Male 74° Cone Bulkhead used for?",
+          "a": "The 90° Elbow Metric Male 74° Cone Bulkhead is an Indus 90° elbow adapter with a male Metric M12×1.5 to M45×2 end and a male Metric M12×1.5 to M45×2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 12 sizes, -12 to -45."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-049-12LN mean for the 90° Elbow Metric Male 74° Cone Bulkhead?",
+          "a": "IH-AD-MET-049-12LN is the Indus number for \"M12X1.5 / M12X1.5\" in the 90° Elbow Metric Male 74° Cone Bulkhead range. The size table lists every number with its connections. IH-AD-MET-049-45LN is listed as \"M45X2 / M45X2\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow Metric Male 74° Cone Bulkhead differ from the 90° Elbow Metric Male 74° Cone × BSPT Male?",
+          "a": "The 90° Elbow Metric Male 74° Cone Bulkhead and the [90° Elbow Metric Male 74° Cone × BSPT Male](/p/90-elbow-metric-male-74-cone-x-bspt-male) differ in their end connections. The 90° Elbow Metric Male 74° Cone Bulkhead has male Metric M12×1.5 to M45×2 and male Metric M12×1.5 to M45×2; the other has male Metric M14×1.5 to M45×2 and male BSPT. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow Metric Male 74° Cone Bulkhead do you list?",
+          "a": "The 90° Elbow Metric Male 74° Cone Bulkhead is listed in 12 part numbers, -12 to -45. Examples: IH-AD-MET-049-12LN (M12X1.5 x M12X1.5); IH-AD-MET-049-22LN (M22X1.5 x M22X1.5); IH-AD-MET-049-33LN (M33X2 x M33X2). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 90° Elbow Metric Male 74° Cone Bulkhead?",
+          "a": "Choose the 90° Elbow Metric Male 74° Cone Bulkhead by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M12×1.5 to M45×2 and male Metric M12×1.5 to M45×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow Metric Male 74° Cone Bulkhead rated for?",
+          "a": "The maker states up to 350 bar (5,076 psi), manufacturer stated for the 90° Elbow Metric Male 74° Cone Bulkhead. The size table gives the figure per size, from 100 bar to 350 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Metric Male 74° Cone Bulkhead made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow Metric Male 74° Cone Bulkhead is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Metric Male 74° Cone Bulkhead follow?",
+          "a": "The 90° Elbow Metric Male 74° Cone Bulkhead is listed against ISO 8434-2. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow Metric Male 74° Cone Bulkhead connect to?",
+          "a": "The 90° Elbow Metric Male 74° Cone Bulkhead connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 90° Elbow Metric Male 74° Cone Bulkhead without leaks?",
+          "a": "For the 90° Elbow Metric Male 74° Cone Bulkhead: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Metric Male 74° Cone Bulkhead made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Metric Male 74° Cone Bulkhead is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow Metric Male 74° Cone Bulkhead from stock in Dubai?",
+          "a": "Yes. We keep the 90° Elbow Metric Male 74° Cone Bulkhead in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-male-74-cone-x-bsp-male-o-ring-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric adjustable elbow adapter and where is it used?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter is an Indus 90° elbow adapter with a male Metric M14×1.5 to M45×2 end and a male BSP end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 11 sizes, -14 to -45."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-042-1404OG on the 90° Elbow Metric adjustable elbow adapter?",
+          "a": "IH-AD-MET-042-1404OG is the 90° Elbow Metric adjustable elbow adapter with M14X1.5 and G1/4\"X19. After the series code the size figures follow the order of the ends, so IH-AD-MET-042-4520OG is M45X2 and G1-1/4\"X11. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Elbow Metric adjustable elbow adapter come in?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter is listed in 11 part numbers, -14 to -45. Examples: IH-AD-MET-042-1404OG (M14X1.5 x G1/4\"X19); IH-AD-MET-042-1808OG (M18X1.5 x G1/2\"X14); IH-AD-MET-042-3316OG (M33X2 x G1\"X11). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Elbow Metric adjustable elbow adapter for my line?",
+          "a": "Choose the 90° Elbow Metric adjustable elbow adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M45×2 and male BSP. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow Metric adjustable elbow adapter rated for?",
+          "a": "The maker states up to 315 bar (4,569 psi), manufacturer stated for the 90° Elbow Metric adjustable elbow adapter. The size table gives the figure per size, from 100 bar to 315 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Metric adjustable elbow adapter made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow Metric adjustable elbow adapter is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Metric adjustable elbow adapter follow?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter is listed against ISO 8434-2. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow Metric adjustable elbow adapter?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter connects to a female metric thread end of the same size on one end and a female BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow Metric adjustable elbow adapter?",
+          "a": "For the 90° Elbow Metric adjustable elbow adapter: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Metric adjustable elbow adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Metric adjustable elbow adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow Metric adjustable elbow adapter available from stock in the UAE?",
+          "a": "Yes. The 90° Elbow Metric adjustable elbow adapter is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-male-74-cone-x-bspt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric Male 74° Cone × BSPT Male and where is it used?",
+          "a": "The 90° Elbow Metric Male 74° Cone × BSPT Male is an Indus 90° elbow adapter with a male Metric M14×1.5 to M45×2 end and a male BSPT end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 12 sizes, -14 to -45."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-032-1404SP on the 90° Elbow Metric Male 74° Cone × BSPT Male?",
+          "a": "IH-AD-MET-032-1404SP is the 90° Elbow Metric Male 74° Cone × BSPT Male with M14X1.5 and R1/4\"X19. After the series code the size figures follow the order of the ends, so IH-AD-MET-032-4520SP is M45X2 and R1-1/4\"X11. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow Metric Male 74° Cone × BSPT Male differ from the 90° Elbow Metric Male 74° Cone Bulkhead?",
+          "a": "The 90° Elbow Metric Male 74° Cone × BSPT Male and the [90° Elbow Metric Male 74° Cone Bulkhead](/p/90-elbow-metric-male-74-cone-bulkhead) differ in their end connections. The 90° Elbow Metric Male 74° Cone × BSPT Male has male Metric M14×1.5 to M45×2 and male BSPT; the other has male Metric M12×1.5 to M45×2 and male Metric M12×1.5 to M45×2. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Elbow Metric Male 74° Cone × BSPT Male come in?",
+          "a": "The 90° Elbow Metric Male 74° Cone × BSPT Male is listed in 12 part numbers, -14 to -45. Examples: IH-AD-MET-032-1404SP (M14X1.5 x R1/4\"X19); IH-AD-MET-032-2208SP (M22X1.5 x R1/2\"X14); IH-AD-MET-032-3012SP (M30X2 x R3/4\"X14). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 90° Elbow Metric Male 74° Cone × BSPT Male to my port or hose?",
+          "a": "Choose the 90° Elbow Metric Male 74° Cone × BSPT Male by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M45×2 and male BSPT. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow Metric Male 74° Cone × BSPT Male rated for?",
+          "a": "No pressure rating is published for the 90° Elbow Metric Male 74° Cone × BSPT Male on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Metric Male 74° Cone × BSPT Male made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow Metric Male 74° Cone × BSPT Male is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Metric Male 74° Cone × BSPT Male follow?",
+          "a": "The 90° Elbow Metric Male 74° Cone × BSPT Male is listed against ISO 8434-2, ISO 7-1. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. ISO 7-1 covers R/Rp (BSP taper) pipe threads where the pressure-tight joint is made on the thread. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow Metric Male 74° Cone × BSPT Male?",
+          "a": "The 90° Elbow Metric Male 74° Cone × BSPT Male connects to a female metric thread end of the same size on one end and a female BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow Metric Male 74° Cone × BSPT Male?",
+          "a": "For the 90° Elbow Metric Male 74° Cone × BSPT Male: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Metric Male 74° Cone × BSPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Metric Male 74° Cone × BSPT Male is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow Metric Male 74° Cone × BSPT Male from stock in Dubai?",
+          "a": "Yes, the 90° Elbow Metric Male 74° Cone × BSPT Male is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-male-74-cone-x-metric-female-74-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat and where is it used?",
+          "a": "The 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat is an Indus 90° elbow adapter with a male Metric M14×1.5 to M45×2 end and a female Metric M14×1.5 to M45×2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 10 sizes, -14 to -45."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-044-14 mean for the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat?",
+          "a": "IH-AD-MET-044-14 is the Indus number for \"M14X1.5 / M14X1.5\" in the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat range. The size table lists every number with its connections. IH-AD-MET-044-45 is listed as \"M45X2 / M45X2\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat differ from the 90° Elbow Metric Male 74° Cone Bulkhead?",
+          "a": "The 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat and the [90° Elbow Metric Male 74° Cone Bulkhead](/p/90-elbow-metric-male-74-cone-bulkhead) differ in their end connections. The 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat has male Metric M14×1.5 to M45×2 and female Metric M14×1.5 to M45×2; the other has male Metric M12×1.5 to M45×2 and male Metric M12×1.5 to M45×2. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat do you list?",
+          "a": "The 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat is listed in 10 part numbers, -14 to -45. Examples: IH-AD-MET-044-14 (M14X1.5 x M14X1.5); IH-AD-MET-044-22 (M22X1.5 x M22X1.5); IH-AD-MET-044-33 (M33X2 x M33X2). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat for my line?",
+          "a": "Choose the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M45×2 and female Metric M14×1.5 to M45×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat?",
+          "a": "The maker states up to 350 bar (5,076 psi), manufacturer stated for the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat. The size table gives the figure per size, from 100 bar to 350 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat have?",
+          "a": "The material shown for the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat follow?",
+          "a": "The 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat is listed against ISO 8434-2. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat connect to?",
+          "a": "The 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat connects to a female metric thread end of the same size on one end and a male metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat?",
+          "a": "For the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat?",
+          "a": "The country of origin of the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat from stock in Dubai?",
+          "a": "Yes. We keep the 90° Elbow Metric Male 74° Cone × Metric Female 74° Seat in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-male-74-cone-x-metric-male-adjustable-stud-end-iso",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric adjustable elbow adapter used for?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter is an Indus 90° elbow adapter with a male Metric M14×1.5 to M45×2 end and a male Metric M12×1.5 to M42×2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 10 sizes, -14 to -45."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-041-1412OG on the 90° Elbow Metric adjustable elbow adapter?",
+          "a": "IH-AD-MET-041-1412OG is the 90° Elbow Metric adjustable elbow adapter with M14X1.5 and M12X1.5. After the series code the size figures follow the order of the ends, so IH-AD-MET-041-4542OG is M45X2 and M42X2. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow Metric adjustable elbow adapter do you list?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter is listed in 10 part numbers, -14 to -45. Examples: IH-AD-MET-041-1412OG (M14X1.5 x M12X1.5); IH-AD-MET-041-2218OG (M22X1.5 x M18X1.5); IH-AD-MET-041-3327OG (M33X2 x M27X2). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 90° Elbow Metric adjustable elbow adapter to my port or hose?",
+          "a": "Choose the 90° Elbow Metric adjustable elbow adapter by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M45×2 and male Metric M12×1.5 to M42×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Metric adjustable elbow adapter?",
+          "a": "No pressure rating is published for the 90° Elbow Metric adjustable elbow adapter on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Metric adjustable elbow adapter made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow Metric adjustable elbow adapter is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Metric adjustable elbow adapter follow?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter is listed against ISO 8434-2. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow Metric adjustable elbow adapter connect to?",
+          "a": "The 90° Elbow Metric adjustable elbow adapter connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow Metric adjustable elbow adapter?",
+          "a": "For the 90° Elbow Metric adjustable elbow adapter: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Metric adjustable elbow adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Metric adjustable elbow adapter is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow Metric adjustable elbow adapter available from stock in the UAE?",
+          "a": "Yes. We keep the 90° Elbow Metric adjustable elbow adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-male-74-cone-x-npt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric Male 74° Cone × NPT Male and where is it used?",
+          "a": "The 90° Elbow Metric Male 74° Cone × NPT Male is an Indus 90° elbow adapter with a male Metric M12×1.5 to M52×2 end and a male NPT 1/8-27 to 1.1/2-11.5 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 21 sizes, -12 to -52."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-037-1202 on the 90° Elbow Metric Male 74° Cone × NPT Male?",
+          "a": "IH-AD-MET-037-1202 is the 90° Elbow Metric Male 74° Cone × NPT Male with M12X1.5 and NPT1/8\"X27. After the series code the size figures follow the order of the ends, so IH-AD-MET-037-5224 is M52X2 and NPT1-1/2\"X11.5. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow Metric Male 74° Cone × NPT Male differ from the 45° Elbow Metric Male 74° Cone × NPT Male?",
+          "a": "The 90° Elbow Metric Male 74° Cone × NPT Male and the [45° Elbow Metric Male 74° Cone × NPT Male](/p/45-elbow-metric-male-74-cone-x-npt-male) differ in their end connections. The 90° Elbow Metric Male 74° Cone × NPT Male has male Metric M12×1.5 to M52×2 and male NPT 1/8-27 to 1.1/2-11.5; the other has male Metric M12×1.5 to M45×2 and male NPT 1/8-27 to 1.1/4-11.5. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Elbow Metric Male 74° Cone × NPT Male come in?",
+          "a": "The 90° Elbow Metric Male 74° Cone × NPT Male is listed in 21 part numbers, -12 to -52. Examples: IH-AD-MET-037-1202 (M12X1.5 x NPT1/8\"X27); IH-AD-MET-037-1804 (M18X1.5 x NPT1/4\"X18); IH-AD-MET-037-2716 (M27X1.5 x NPT1\"X11.5). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 90° Elbow Metric Male 74° Cone × NPT Male to my port or hose?",
+          "a": "Choose the 90° Elbow Metric Male 74° Cone × NPT Male by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M12×1.5 to M52×2 and male NPT 1/8-27 to 1.1/2-11.5. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Metric Male 74° Cone × NPT Male?",
+          "a": "No pressure rating is published for the 90° Elbow Metric Male 74° Cone × NPT Male on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Elbow Metric Male 74° Cone × NPT Male have?",
+          "a": "The material shown for the 90° Elbow Metric Male 74° Cone × NPT Male is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Metric Male 74° Cone × NPT Male follow?",
+          "a": "The 90° Elbow Metric Male 74° Cone × NPT Male is listed against ISO 8434-2, ASME B1.20.1. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. ASME B1.20.1 is the standard for NPT general-purpose taper pipe threads, which seal on the thread. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow Metric Male 74° Cone × NPT Male connect to?",
+          "a": "The 90° Elbow Metric Male 74° Cone × NPT Male connects to a female metric thread end of the same size on one end and a female NPT/NPTF pipe thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 90° Elbow Metric Male 74° Cone × NPT Male without leaks?",
+          "a": "For the 90° Elbow Metric Male 74° Cone × NPT Male: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. NPT and NPTF are taper threads that seal on the thread, so do not over-tighten them. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Metric Male 74° Cone × NPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Metric Male 74° Cone × NPT Male is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow Metric Male 74° Cone × NPT Male from stock in Dubai?",
+          "a": "Yes, the 90° Elbow Metric Male 74° Cone × NPT Male is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-male-74-cone-x-o-ring-boss",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric Male 74° Cone × O-Ring Boss used for?",
+          "a": "The 90° Elbow Metric Male 74° Cone × O-Ring Boss is an Indus 90° elbow adapter with a male Metric M16×1.5 to M45×2 end and an UN/UNF 9/16-18 to 1.5/8-12 SAE O-ring boss end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 8 sizes, -16 to -45."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-034-1606OG on the 90° Elbow Metric Male 74° Cone × O-Ring Boss?",
+          "a": "IH-AD-MET-034-1606OG is the 90° Elbow Metric Male 74° Cone × O-Ring Boss with M16X1.5 and 9/16\"X18. After the series code the size figures follow the order of the ends, so IH-AD-MET-034-4520OG is M45X2 and 1-5/8\"X12. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow Metric Male 74° Cone × O-Ring Boss do you list?",
+          "a": "The 90° Elbow Metric Male 74° Cone × O-Ring Boss is listed in 8 part numbers, -16 to -45. Examples: IH-AD-MET-034-1606OG (M16X1.5 x 9/16\"X18); IH-AD-MET-034-2210OG (M22X1.5 x 7/8\"X14); IH-AD-MET-034-3316OG (M33X2 x 1-5/16\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 90° Elbow Metric Male 74° Cone × O-Ring Boss?",
+          "a": "Choose the 90° Elbow Metric Male 74° Cone × O-Ring Boss by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M16×1.5 to M45×2 and UN/UNF 9/16-18 to 1.5/8-12 SAE O-ring boss. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow Metric Male 74° Cone × O-Ring Boss rated for?",
+          "a": "No pressure rating is published for the 90° Elbow Metric Male 74° Cone × O-Ring Boss on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Elbow Metric Male 74° Cone × O-Ring Boss have?",
+          "a": "The material shown for the 90° Elbow Metric Male 74° Cone × O-Ring Boss is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Metric Male 74° Cone × O-Ring Boss follow?",
+          "a": "The 90° Elbow Metric Male 74° Cone × O-Ring Boss is listed against ISO 8434-2, SAE J1926 / ISO 11926. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. SAE J1926 and ISO 11926 cover straight-thread (UN/UNF) O-ring ports and stud ends. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow Metric Male 74° Cone × O-Ring Boss connect to?",
+          "a": "The 90° Elbow Metric Male 74° Cone × O-Ring Boss connects to a female metric thread end of the same size on one end and a male SAE O-ring boss end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORB adapters](/c/orb-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow Metric Male 74° Cone × O-Ring Boss?",
+          "a": "For the 90° Elbow Metric Male 74° Cone × O-Ring Boss: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 90° Elbow Metric Male 74° Cone × O-Ring Boss?",
+          "a": "The country of origin of the 90° Elbow Metric Male 74° Cone × O-Ring Boss is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow Metric Male 74° Cone × O-Ring Boss available from stock in the UAE?",
+          "a": "Yes. The 90° Elbow Metric Male 74° Cone × O-Ring Boss is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-metric-o-ring",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Metric O-Ring used for?",
+          "a": "The 90° Elbow Metric O-Ring is an Indus 90° elbow adapter with a Metric M12×1.25 to M52×2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 12 sizes, -12 to -52."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-019-12 mean for the 90° Elbow Metric O-Ring?",
+          "a": "IH-AD-MET-019-12 is the Indus number for \"M12X1.25\" in the 90° Elbow Metric O-Ring range. The size table lists every number with its connections. IH-AD-MET-019-52 is listed as \"M52X2\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Elbow Metric O-Ring differ from the 90° Metric Male O-Ring?",
+          "a": "The 90° Elbow Metric O-Ring and the [90° Metric Male O-Ring](/p/90-metric-male-o-ring) differ in their end connections. The 90° Elbow Metric O-Ring has Metric M12×1.25 to M52×2; the other has male Metric M12×1.25 to M52×2. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 90° Elbow Metric O-Ring cover?",
+          "a": "The 90° Elbow Metric O-Ring is listed in 12 part numbers, -12 to -52. Examples: IH-AD-MET-019-12 (M12X1.25); IH-AD-MET-019-22 (M22X1.5); IH-AD-MET-019-36 (M36X2). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 90° Elbow Metric O-Ring to my port or hose?",
+          "a": "Choose the 90° Elbow Metric O-Ring by the thread and seat on each end, not by the hose or tube size alone: here that is Metric M12×1.25 to M52×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Metric O-Ring?",
+          "a": "No pressure rating is published for the 90° Elbow Metric O-Ring on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Metric O-Ring made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow Metric O-Ring is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the 90° Elbow Metric O-Ring?",
+          "a": "For the 90° Elbow Metric O-Ring we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow Metric O-Ring?",
+          "a": "The 90° Elbow Metric O-Ring connects to a male metric thread end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow Metric O-Ring?",
+          "a": "For the 90° Elbow Metric O-Ring: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 90° Elbow Metric O-Ring?",
+          "a": "The country of origin of the 90° Elbow Metric O-Ring is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow Metric O-Ring available from stock in the UAE?",
+          "a": "Yes. The 90° Elbow Metric O-Ring is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-male-o-ring",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Male O-Ring and where is it used?",
+          "a": "The 90° Metric Male O-Ring is an Indus straight adapter with a male Metric M12×1.25 to M52×2 end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 12 sizes, -12 to -52."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-018-12 mean for the 90° Metric Male O-Ring?",
+          "a": "IH-AD-MET-018-12 is the Indus number for \"M12X1.25\" in the 90° Metric Male O-Ring range. The size table lists every number with its connections. IH-AD-MET-018-52 is listed as \"M52X2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Metric Male O-Ring do you list?",
+          "a": "The 90° Metric Male O-Ring is listed in 12 part numbers, -12 to -52. Examples: IH-AD-MET-018-12 (M12X1.25); IH-AD-MET-018-22 (M22X1.5); IH-AD-MET-018-36 (M36X2). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 90° Metric Male O-Ring?",
+          "a": "Choose the 90° Metric Male O-Ring by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M12×1.25 to M52×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Metric Male O-Ring?",
+          "a": "No pressure rating is published for the 90° Metric Male O-Ring on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Metric Male O-Ring have?",
+          "a": "The material shown for the 90° Metric Male O-Ring is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Male O-Ring follow?",
+          "a": "The 90° Metric Male O-Ring is listed against ISO 6149. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Metric Male O-Ring?",
+          "a": "The 90° Metric Male O-Ring connects to a female metric thread end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Metric Male O-Ring?",
+          "a": "For the 90° Metric Male O-Ring: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Metric Male O-Ring made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Metric Male O-Ring is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Metric Male O-Ring from stock in Dubai?",
+          "a": "Yes, the 90° Metric Male O-Ring is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-male-o-ring-x-butt-weld-tube",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the 90° Metric Male O-Ring × Butt-Weld Tube do in a hydraulic line?",
+          "a": "The 90° Metric Male O-Ring × Butt-Weld Tube is an Indus straight adapter with a male Metric M12×1.25 to M52×2 end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 12 sizes, -12 to -52."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-028-1206 mean for the 90° Metric Male O-Ring × Butt-Weld Tube?",
+          "a": "IH-AD-MET-028-1206 is the Indus number for \"M12X1.25\" in the 90° Metric Male O-Ring × Butt-Weld Tube range. The size table lists every number with its connections. IH-AD-MET-028-5242 is listed as \"M52X2\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Metric Male O-Ring × Butt-Weld Tube come in?",
+          "a": "The 90° Metric Male O-Ring × Butt-Weld Tube is listed in 12 part numbers, -12 to -52. Examples: IH-AD-MET-028-1206 (M12X1.25); IH-AD-MET-028-2214 (M22X1.5); IH-AD-MET-028-3628 (M36X2). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 90° Metric Male O-Ring × Butt-Weld Tube?",
+          "a": "Choose the 90° Metric Male O-Ring × Butt-Weld Tube by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M12×1.25 to M52×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Metric Male O-Ring × Butt-Weld Tube rated for?",
+          "a": "No pressure rating is published for the 90° Metric Male O-Ring × Butt-Weld Tube on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Metric Male O-Ring × Butt-Weld Tube made from, and is stainless available?",
+          "a": "The material shown for the 90° Metric Male O-Ring × Butt-Weld Tube is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Male O-Ring × Butt-Weld Tube follow?",
+          "a": "The 90° Metric Male O-Ring × Butt-Weld Tube is listed against ISO 6149. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Metric Male O-Ring × Butt-Weld Tube connect to?",
+          "a": "The 90° Metric Male O-Ring × Butt-Weld Tube connects to a female metric thread end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [flareless bite-type tube fittings](/c/flareless-bite-type-tube-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 90° Metric Male O-Ring × Butt-Weld Tube without leaks?",
+          "a": "For the 90° Metric Male O-Ring × Butt-Weld Tube: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 90° Metric Male O-Ring × Butt-Weld Tube?",
+          "a": "The country of origin of the 90° Metric Male O-Ring × Butt-Weld Tube is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Metric Male O-Ring × Butt-Weld Tube available from stock in the UAE?",
+          "a": "Yes. The 90° Metric Male O-Ring × Butt-Weld Tube is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-male-o-ring-x-metric-male-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Male O-Ring × Metric Male Adjustable Stud End and where is it used?",
+          "a": "The 90° Metric Male O-Ring × Metric Male Adjustable Stud End is an Indus straight adapter with male Metric M12×1.25 to M52×2 end, male Metric M10×1 to M48×2 end and O08.1-1.6 to O44.5-3.0 end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 12 sizes, -12 to -52."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-MET-024-1210OG on the 90° Metric Male O-Ring × Metric Male Adjustable Stud End?",
+          "a": "IH-AD-MET-024-1210OG is the 90° Metric Male O-Ring × Metric Male Adjustable Stud End with M12X1.25 and M10X1 and O08.1X1.6. After the series code the size figures follow the order of the ends, so IH-AD-MET-024-5248OG is M52X2 and M48X2 and O44.5X3.0. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 90° Metric Male O-Ring × Metric Male Adjustable Stud End cover?",
+          "a": "The 90° Metric Male O-Ring × Metric Male Adjustable Stud End is listed in 12 part numbers, -12 to -52. Examples: IH-AD-MET-024-1210OG (M12X1.25 x M10X1 x O08.1X1.6); IH-AD-MET-024-2218OG (M22X1.5 x M18X1.5 x O15.3X2.4); IH-AD-MET-024-3633OG (M36X2 x M33X2 x O29.2X3.0). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Metric Male O-Ring × Metric Male Adjustable Stud End for my line?",
+          "a": "Choose the 90° Metric Male O-Ring × Metric Male Adjustable Stud End by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M12×1.25 to M52×2 and male Metric M10×1 to M48×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Metric Male O-Ring × Metric Male Adjustable Stud End rated for?",
+          "a": "No pressure rating is published for the 90° Metric Male O-Ring × Metric Male Adjustable Stud End on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Metric Male O-Ring × Metric Male Adjustable Stud End have?",
+          "a": "The material shown for the 90° Metric Male O-Ring × Metric Male Adjustable Stud End is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Male O-Ring × Metric Male Adjustable Stud End follow?",
+          "a": "The 90° Metric Male O-Ring × Metric Male Adjustable Stud End is listed against ISO 6149. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Metric Male O-Ring × Metric Male Adjustable Stud End connect to?",
+          "a": "The 90° Metric Male O-Ring × Metric Male Adjustable Stud End connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 90° Metric Male O-Ring × Metric Male Adjustable Stud End without leaks?",
+          "a": "For the 90° Metric Male O-Ring × Metric Male Adjustable Stud End: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Metric Male O-Ring × Metric Male Adjustable Stud End made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Metric Male O-Ring × Metric Male Adjustable Stud End is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Metric Male O-Ring × Metric Male Adjustable Stud End from stock in Dubai?",
+          "a": "Yes. We keep the 90° Metric Male O-Ring × Metric Male Adjustable Stud End in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsm-bonded-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSM Bonded Seal used for?",
+          "a": "The BSM Bonded Seal is an Indus bonded seal. It is used to seal a parallel-thread port face. It is listed in 12 sizes, M10×1 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-ST-9500-02 mean for the BSM Bonded Seal?",
+          "a": "IH-ST-9500-02 is the Indus number for \"1/8\" BSPP (G1/8-28)\" in the BSM Bonded Seal range. The size table lists every number with its connections. IH-ST-9500-48 is listed as \"-48 BSPP (GNone)\"."
+        },
+        {
+          "slot": "K",
+          "q": "How do I choose between the BSM Bonded Seal and other Metric Adapters?",
+          "a": "Pick the BSM Bonded Seal when its end types and sizes match your ports, and compare it with the other listings on the [Metric Adapters](/c/metric-adapters) shelf before you choose. The size table of each listing shows the thread on every end."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the BSM Bonded Seal cover?",
+          "a": "The BSM Bonded Seal is listed in 12 part numbers, M10×1 to M42×2. Examples: IH-ST-9500-02 (1/8\" BSPP (G1/8-28)); IH-ST-9500-10 (5/8\" BSPP (G5/8-14)); IH-ST-9500-20 (1-1/4\" BSPP (G1-1/4-11)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the BSM Bonded Seal?",
+          "a": "Choose the BSM Bonded Seal by the thread and seat on each end, not by the hose or tube size alone. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSM Bonded Seal rated for?",
+          "a": "No pressure rating is published for the BSM Bonded Seal on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSM Bonded Seal made from, and is stainless available?",
+          "a": "The material shown for the BSM Bonded Seal is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSM Bonded Seal follow?",
+          "a": "The BSM Bonded Seal is listed against ISO 8434-1 and DIN 2353, ISO 6149, DIN 3852-1. ISO 8434-1 covers 24° cone compression (bite-type) tube connections; DIN 2353 is the older German standard for the same 24° cone. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the BSM Bonded Seal?",
+          "a": "In use the BSM Bonded Seal sits under the head of a fitting on a parallel-thread (BSPP or metric) port face and seals against that face. See also [Metric Adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the BSM Bonded Seal without leaks?",
+          "a": "For the BSM Bonded Seal: fit it under the head of the fitting on a clean flat port face; a seal washer is a service item and should be replaced once it is cut, flattened or hardened. Bonded-seal ends seal on the seal washer against the port face, so replace the seal if it is cut or hardened. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSM Bonded Seal made, and can you export it from Dubai?",
+          "a": "The country of origin of the BSM Bonded Seal is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the BSM Bonded Seal from stock in Dubai?",
+          "a": "Yes. We keep the BSM Bonded Seal in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bulkhead-union-metric-flat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Bulkhead Union Metric Flat do in a hydraulic line?",
+          "a": "The Bulkhead Union Metric Flat is an Indus union with a male Metric M10×1 to M42×2 end and a male Metric M10×1 to M42×2 end. It is used to join two like ends in a straight line. Sizes run M10×1 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to quote to order the Bulkhead Union Metric Flat?",
+          "a": "To order the Bulkhead Union Metric Flat, quote the size and thread on each end (M10×1 to M42×2) and tell us whether you need carbon steel or stainless. Engineering confirms the part number against your equipment before supply, so a photo or the mating port is enough to start."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Bulkhead Union Metric Flat come in?",
+          "a": "The Bulkhead Union Metric Flat covers M10×1 to M42×2. Send the thread on each end and the size you need, and we confirm the exact part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Bulkhead Union Metric Flat for my line?",
+          "a": "Choose the Bulkhead Union Metric Flat by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M10×1 to M42×2 and male Metric M10×1 to M42×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Bulkhead Union Metric Flat?",
+          "a": "The maker states up to 400 bar for the Bulkhead Union Metric Flat. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Bulkhead Union Metric Flat have?",
+          "a": "The material shown for the Bulkhead Union Metric Flat is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Bulkhead Union Metric Flat follow?",
+          "a": "The Bulkhead Union Metric Flat is listed against ISO 8434-1 and DIN 2353, ISO 6149, DIN 3852-1. ISO 8434-1 covers 24° cone compression (bite-type) tube connections; DIN 2353 is the older German standard for the same 24° cone. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Bulkhead Union Metric Flat?",
+          "a": "The Bulkhead Union Metric Flat connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Bulkhead Union Metric Flat?",
+          "a": "For the Bulkhead Union Metric Flat: make up each end against its seat in turn; a union has no flexibility, so line it up before tightening. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Bulkhead Union Metric Flat made, and can you export it from Dubai?",
+          "a": "The country of origin of the Bulkhead Union Metric Flat is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Bulkhead Union Metric Flat in Dubai?",
+          "a": "Yes, the Bulkhead Union Metric Flat is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "butt-weld-tube-x-metric-female-o-ring",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Butt-Weld Tube × Metric Female O-Ring do in a hydraulic line?",
+          "a": "The Butt-Weld Tube × Metric Female O-Ring is an Indus straight adapter with a Metric M12×1.25 to M64×2 end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 14 sizes, -06 to -52."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-029-0612 mean for the Butt-Weld Tube × Metric Female O-Ring?",
+          "a": "IH-AD-MET-029-0612 is the Indus number for \"M12X1.25\" in the Butt-Weld Tube × Metric Female O-Ring range. The size table lists every number with its connections. IH-AD-MET-029-5264 is listed as \"M64X2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Butt-Weld Tube × Metric Female O-Ring do you list?",
+          "a": "The Butt-Weld Tube × Metric Female O-Ring is listed in 14 part numbers, -06 to -52. Examples: IH-AD-MET-029-0612 (M12X1.25); IH-AD-MET-029-1422 (M22X1.5); IH-AD-MET-029-3442 (M42X2). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Butt-Weld Tube × Metric Female O-Ring for my line?",
+          "a": "Choose the Butt-Weld Tube × Metric Female O-Ring by the thread and seat on each end, not by the hose or tube size alone: here that is Metric M12×1.25 to M64×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Butt-Weld Tube × Metric Female O-Ring rated for?",
+          "a": "No pressure rating is published for the Butt-Weld Tube × Metric Female O-Ring on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Butt-Weld Tube × Metric Female O-Ring have?",
+          "a": "The material shown for the Butt-Weld Tube × Metric Female O-Ring is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the Butt-Weld Tube × Metric Female O-Ring?",
+          "a": "For the Butt-Weld Tube × Metric Female O-Ring we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Butt-Weld Tube × Metric Female O-Ring?",
+          "a": "The Butt-Weld Tube × Metric Female O-Ring connects to a male metric thread end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [flareless bite-type tube fittings](/c/flareless-bite-type-tube-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Butt-Weld Tube × Metric Female O-Ring?",
+          "a": "For the Butt-Weld Tube × Metric Female O-Ring: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Butt-Weld Tube × Metric Female O-Ring?",
+          "a": "The country of origin of the Butt-Weld Tube × Metric Female O-Ring is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Butt-Weld Tube × Metric Female O-Ring from stock in Dubai?",
+          "a": "Yes, the Butt-Weld Tube × Metric Female O-Ring is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "hollow-hex-plug-metric-flat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Hollow Hex Plug Metric Flat do in a hydraulic line?",
+          "a": "The Hollow Hex Plug Metric Flat is an Indus plug with a male Metric M10×1 to M42×2 end. It is used to close a port or the open end of a line, for example to blank off a test point or a spare port. It is listed in 14 sizes, M10×1 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-ST-9029-08X1.0 mean for the Hollow Hex Plug Metric Flat?",
+          "a": "IH-ST-9029-08X1.0 is the Indus number for \"M8×1 male, countersunk with seal\" in the Hollow Hex Plug Metric Flat range. The size table lists every number with its connections. IH-ST-9029-48X2.0 is listed as \"M48×2 male, countersunk with seal\"."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Hollow Hex Plug Metric Flat cover?",
+          "a": "The Hollow Hex Plug Metric Flat is listed in 14 part numbers, M10×1 to M42×2. Examples: IH-ST-9029-08X1.0 (M8×1 male, countersunk with seal); IH-ST-9029-16X1.5 (M16×1.5 male, countersunk with seal); IH-ST-9029-26X1.5 (M26×1.5 male, countersunk with seal). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Hollow Hex Plug Metric Flat to my port or hose?",
+          "a": "Choose the Hollow Hex Plug Metric Flat by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M10×1 to M42×2. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hollow Hex Plug Metric Flat?",
+          "a": "The maker states up to 400 bar for the Hollow Hex Plug Metric Flat. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Hollow Hex Plug Metric Flat have?",
+          "a": "The material shown for the Hollow Hex Plug Metric Flat is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Hollow Hex Plug Metric Flat follow?",
+          "a": "The Hollow Hex Plug Metric Flat is listed against ISO 8434-1 and DIN 2353, ISO 6149, DIN 3852-1. ISO 8434-1 covers 24° cone compression (bite-type) tube connections; DIN 2353 is the older German standard for the same 24° cone. ISO 6149 covers metric-thread ports and stud ends with an O-ring seal for fluid power. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Hollow Hex Plug Metric Flat connect to?",
+          "a": "The Hollow Hex Plug Metric Flat mates with a female metric thread end of the same size. A male plug threads into a female port; a female cap or swivel cap goes over a male end of the same thread and seat. For the mating ports see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Hollow Hex Plug Metric Flat?",
+          "a": "For the Hollow Hex Plug Metric Flat: a plug is made up into the mating port or fitting and is not meant to carry flow: use a clean thread and the seal type that matches the port. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Hollow Hex Plug Metric Flat?",
+          "a": "The country of origin of the Hollow Hex Plug Metric Flat is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Hollow Hex Plug Metric Flat in Dubai?",
+          "a": "Yes, the Hollow Hex Plug Metric Flat is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "jis-metric-male-60-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Metric Male 60° Cone and where is it used?",
+          "a": "The JIS Metric Male 60° Cone is an Indus straight adapter with a male Metric M14×1.5 to M42×1.5 end and a male Metric M14×1.5 to M42×1.5 end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 10 sizes, -14 to -42."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-056-14 mean for the JIS Metric Male 60° Cone?",
+          "a": "IH-AD-MET-056-14 is the Indus number for \"M14X1.5 / M14X1.5\" in the JIS Metric Male 60° Cone range. The size table lists every number with its connections. IH-AD-MET-056-42 is listed as \"M42X1.5 / M42X1.5\"."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the JIS Metric Male 60° Cone cover?",
+          "a": "The JIS Metric Male 60° Cone is listed in 10 part numbers, -14 to -42. Examples: IH-AD-MET-056-14 (M14X1.5 x M14X1.5); IH-AD-MET-056-20 (M20X1.5 x M20X1.5); IH-AD-MET-056-30 (M30X1.5 x M30X1.5). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the JIS Metric Male 60° Cone to my port or hose?",
+          "a": "Choose the JIS Metric Male 60° Cone by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M42×1.5 and male Metric M14×1.5 to M42×1.5. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIS Metric Male 60° Cone?",
+          "a": "No pressure rating is published for the JIS Metric Male 60° Cone on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the JIS Metric Male 60° Cone have?",
+          "a": "The material shown for the JIS Metric Male 60° Cone is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the JIS Metric Male 60° Cone?",
+          "a": "For the JIS Metric Male 60° Cone we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the JIS Metric Male 60° Cone connect to?",
+          "a": "The JIS Metric Male 60° Cone connects to a female metric thread end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the JIS Metric Male 60° Cone without leaks?",
+          "a": "For the JIS Metric Male 60° Cone: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the JIS Metric Male 60° Cone?",
+          "a": "The country of origin of the JIS Metric Male 60° Cone is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the JIS Metric Male 60° Cone from stock in Dubai?",
+          "a": "Yes. The JIS Metric Male 60° Cone is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "jis-metric-male-60-cone-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Metric Male 60° Cone Plug used for?",
+          "a": "The JIS Metric Male 60° Cone Plug is an Indus plug with a male Metric M14×1.5 to M33×1.5 end. It is used to close a port or the open end of a line, for example to blank off a test point or a spare port. It is listed in 8 sizes, -14 to -33."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-MET-050-14 mean for the JIS Metric Male 60° Cone Plug?",
+          "a": "IH-AD-MET-050-14 is the Indus number for \"M14X1.5\" in the JIS Metric Male 60° Cone Plug range. The size table lists every number with its connections. IH-AD-MET-050-33 is listed as \"M33X1.5\"."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Metric Male 60° Cone Plug differ from the JIS Metric Male 60° Cone?",
+          "a": "The JIS Metric Male 60° Cone Plug and the [JIS Metric Male 60° Cone](/p/jis-metric-male-60-cone) differ in their end connections. The JIS Metric Male 60° Cone Plug has male Metric M14×1.5 to M33×1.5; the other has male Metric M14×1.5 to M42×1.5 and male Metric M14×1.5 to M42×1.5. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the JIS Metric Male 60° Cone Plug come in?",
+          "a": "The JIS Metric Male 60° Cone Plug is listed in 8 part numbers, -14 to -33. Examples: IH-AD-MET-050-14 (M14X1.5); IH-AD-MET-050-18 (M18X1.5); IH-AD-MET-050-24 (M24X1.5). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct JIS Metric Male 60° Cone Plug for my line?",
+          "a": "Choose the JIS Metric Male 60° Cone Plug by the thread and seat on each end, not by the hose or tube size alone: here that is male Metric M14×1.5 to M33×1.5. Measure the port thread and check the seat shape before ordering; the [thread-matching guide](/blog/bridging-two-thread-standards) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the JIS Metric Male 60° Cone Plug rated for?",
+          "a": "No pressure rating is published for the JIS Metric Male 60° Cone Plug on this listing. Tell us the working pressure your line sees and we confirm the fitting is suitable before you order; the assembly is limited by the lowest-rated part in it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the JIS Metric Male 60° Cone Plug have?",
+          "a": "The material shown for the JIS Metric Male 60° Cone Plug is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel BSP and metric adapters](/c/stainless-steel-bsp-metric-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I request with the JIS Metric Male 60° Cone Plug?",
+          "a": "For the JIS Metric Male 60° Cone Plug we can supply the quotation with the full part number and, where the maker issues them, material and test documents on request. The listing does not state a standard for this range, so name the thread and seat you need on the enquiry and we confirm them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the JIS Metric Male 60° Cone Plug connect to?",
+          "a": "The JIS Metric Male 60° Cone Plug mates with a female metric thread end of the same size. A male plug threads into a female port; a female cap or swivel cap goes over a male end of the same thread and seat. For the mating ports see [Japanese JIS 30° adapters](/c/jis-30-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the JIS Metric Male 60° Cone Plug without leaks?",
+          "a": "For the JIS Metric Male 60° Cone Plug: a plug is made up into the mating port or fitting and is not meant to carry flow: use a clean thread and the seal type that matches the port. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the JIS Metric Male 60° Cone Plug made, and can you export it from Dubai?",
+          "a": "The country of origin of the JIS Metric Male 60° Cone Plug is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIS Metric Male 60° Cone Plug in Dubai?",
+          "a": "Yes, the JIS Metric Male 60° Cone Plug is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    }
+  ]
+}

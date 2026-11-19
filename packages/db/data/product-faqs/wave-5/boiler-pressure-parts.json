@@ -1,0 +1,348 @@
+{
+  "family": "boiler-pressure-parts",
+  "extraFacts": [
+    {
+      "fact": "Pressure Vessel Heads listing: Standards ASME VIII Div 1 UG-32, DIN 28011 / DIN 28013, EN 13445-3",
+      "source": "Indus Hydraulics listing for Pressure Vessel Heads"
+    },
+    {
+      "fact": "Superheaters and Reheaters listing: Standards ASME Section I / EN 12952",
+      "source": "Indus Hydraulics listing for Superheaters and Reheaters"
+    },
+    {
+      "fact": "Boiler Headers listing: Standards ASME Section I; SA-106 / SA-335 P22, ASME SA335-P22, SA-106, SA-335",
+      "source": "Indus Hydraulics listing for Boiler Headers"
+    },
+    {
+      "fact": "Corrugated Furnaces listing: Standards ASME Section I PFT-18 / PFT-19, EN 12953-3, ASME SA516",
+      "source": "Indus Hydraulics listing for Corrugated Furnaces"
+    }
+  ],
+  "products": [
+    {
+      "slug": "boiler-headers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Boiler Headers used for?",
+          "a": "Boiler and HRSG headers in A106 and A335 P22 and other grades, with stubs and nozzles, built to your drawing under ASME Section I. Headers collect and distribute water and steam between tube panels, superheaters and drums."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Boiler Headers be supplied in?",
+          "a": "Boiler Headers can be supplied in the size you need (Engineered to order: quoted from your data sheet or drawing). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to send to get Boiler Headers quoted?",
+          "a": "Send your data sheet or drawing, the design code (ASME Section I or VIII, EN 12952, EN 12953 or EN 13445), the design pressure and temperature, the material grades, the NDE, heat treatment and hydrotest requirements, any third-party inspection. And the quantity and delivery point. Boiler Headers are engineered equipment, not catalogue items, so we quote against that information."
+        },
+        {
+          "slot": "E",
+          "q": "What design pressure and temperature can Boiler Headers be built for?",
+          "a": "Boiler Headers have no catalogue pressure rating: they are designed for the design pressure and temperature on your data sheet or drawing, to the design code you name, and the documents follow the order. Send the design pressure and temperature with the enquiry and we quote against them."
+        },
+        {
+          "slot": "J",
+          "q": "How are Boiler Headers built, examined and documented?",
+          "a": "For Boiler Headers, pressure parts are made to the drawing and the design code: ASME Section I for power boilers, Section VIII for vessels, or EN 12952, EN 12953 and EN 13445 under PED. Materials come with mill certificates, welding is to qualified procedures and welders, and NDE, heat treatment and hydrotest follow the code and the inspection and test plan. Third-party inspection is arranged with the order."
+        },
+        {
+          "slot": "F",
+          "q": "What are Boiler Headers made from?",
+          "a": "For Boiler Headers, boiler headers are made from heavy-wall pipe in A106 or A335 grades, with A335 P22 named in the listing, and have stub tubes, nozzles, end caps and handholes welded on, then heat treated and examined to the code. The welding and NDE plan matters as much as the material."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes and standards apply to Boiler Headers?",
+          "a": "Boiler Headers are built to ASME Section I; SA-106 / SA-335 P22, ASME SA335-P22, SA-106, SA-335. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative and are checked against each tender."
+        },
+        {
+          "slot": "H",
+          "q": "What do Boiler Headers connect to or work with?",
+          "a": "For Boiler Headers, boiler headers collect and distribute water and steam between tube panels, superheaters and drums. They connect to the tube panels and coils made on the [membrane water walls](/p/membrane-water-walls) and [superheater and reheater](/p/superheaters-and-reheaters) listings."
+        },
+        {
+          "slot": "I",
+          "q": "What inspection and documents come with Boiler Headers?",
+          "a": "Boiler Headers are inspected and tested to the order's code and inspection and test plan, including hydrotest, before they ship. On receipt, check the marking and the certificate package against the order and keep the openings capped until installation. Our [Boiler pressure parts: headers, superheater coils and membrane walls](/blog/boiler-pressure-parts-headers-superheaters) explains the parts and what to specify."
+        },
+        {
+          "slot": "K",
+          "q": "How do Boiler Headers differ from Pressure Vessel Heads?",
+          "a": "Boiler Headers differ from [Pressure Vessel Heads](/p/pressure-vessel-heads) in its standards ASME Section I; SA-106 / SA-335 P22, ASME SA335-P22, SA-106, SA-335 against ASME VIII Div 1 UG-32, DIN 28011 / DIN 28013, EN 13445-3."
+        },
+        {
+          "slot": "L",
+          "q": "Can Boiler Headers be supplied to customers outside the UAE?",
+          "a": "Yes. We supply Boiler Headers to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the delivery country and the drawing or data sheet through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Boiler Headers in stock, or are they made to order?",
+          "a": "Boiler Headers are made to your drawing or data sheet rather than held as catalogue stock, so the lead time is confirmed with the quotation. We quote from our office in Dubai, UAE, and supply worldwide; send the drawing or data sheet, the material and the quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "corrugated-furnaces",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Corrugated Furnaces used for?",
+          "a": "Corrugated furnace tubes for fire-tube shell boilers, designed to ASME Section I or EN 12953-3 and built to your drawing. Corrugated Furnaces are engineered equipment, not catalogue items."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Corrugated Furnaces be supplied in?",
+          "a": "Corrugated Furnaces can be supplied in the size you need (Engineered to order: quoted from your data sheet or drawing). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to send to get Corrugated Furnaces quoted?",
+          "a": "Send your data sheet or drawing, the design code (ASME Section I or VIII, EN 12952, EN 12953 or EN 13445), the design pressure and temperature, the material grades, the NDE, heat treatment and hydrotest requirements, any third-party inspection. And the quantity and delivery point. Corrugated Furnaces are engineered equipment, not catalogue items, so we quote against that information."
+        },
+        {
+          "slot": "E",
+          "q": "What design rule sets the allowable pressure of corrugated furnaces?",
+          "a": "For Corrugated Furnaces, corrugated furnaces are sized by the ASME I rule P = C t / D, with plain ends of not more than 228 mm each, where C is a constant for the corrugation type. The listing gives C as 107,000 (metric, P in kPa) for Morison, 96,000 for Fox, Purves and Brown, and 81,000 for Leeds."
+        },
+        {
+          "slot": "J",
+          "q": "Which corrugation types are used on corrugated furnaces?",
+          "a": "For Corrugated Furnaces, the listing covers Morison, Fox, Leeds, Purves (ribbed) and Brown furnaces. The maximum corrugation pitch is 203 mm (8 in) for Morison, Fox and Leeds and 230 mm (9 in) for Purves and Brown, and the minimum depth runs from 32 mm (1-1/4 in) for Morison to 51 mm (2 in) for Leeds."
+        },
+        {
+          "slot": "F",
+          "q": "What plate and minimum thickness do Corrugated Furnaces use?",
+          "a": "For Corrugated Furnaces, corrugated furnaces are designed to ASME Section I PFT-18 and PFT-19 or EN 12953-3, with plate to ASME SA516 named in the listing. The minimum thickness in the design data is 8 mm (5/16 in), and 11 mm for the Purves ribbed type."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes and standards apply to Corrugated Furnaces?",
+          "a": "Corrugated Furnaces are built to ASME Section I PFT-18 / PFT-19, EN 12953-3, ASME SA516. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative and are checked against each tender."
+        },
+        {
+          "slot": "H",
+          "q": "What do Corrugated Furnaces connect to or work with?",
+          "a": "For Corrugated Furnaces, a corrugated furnace is the large flue tube inside a fire-tube shell boiler, and it is welded to the boiler end plates. It is built to your drawing; see the [Boiler Pressure Parts shelf](/c/boiler-pressure-parts) for other boiler components."
+        },
+        {
+          "slot": "I",
+          "q": "What inspection and documents come with Corrugated Furnaces?",
+          "a": "Corrugated Furnaces are inspected and tested to the order's code and inspection and test plan, including hydrotest, before they ship. On receipt, check the marking and the certificate package against the order and keep the openings capped until installation. Our [Boiler pressure parts: headers, superheater coils and membrane walls](/blog/boiler-pressure-parts-headers-superheaters) explains the parts and what to specify."
+        },
+        {
+          "slot": "K",
+          "q": "How do Corrugated Furnaces differ from Superheaters and Reheaters?",
+          "a": "Corrugated Furnaces differ from [Superheaters and Reheaters](/p/superheaters-and-reheaters) in its standards ASME Section I PFT-18 / PFT-19, EN 12953-3, ASME SA516 against ASME Section I / EN 12952."
+        },
+        {
+          "slot": "L",
+          "q": "Can Corrugated Furnaces be supplied to customers outside the UAE?",
+          "a": "Yes. We supply Corrugated Furnaces to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the delivery country and the drawing or data sheet through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Corrugated Furnaces in stock, or are they made to order?",
+          "a": "Corrugated Furnaces are made to your drawing or data sheet rather than held as catalogue stock, so the lead time is confirmed with the quotation. We quote from our office in Dubai, UAE, and supply worldwide; send the drawing or data sheet, the material and the quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "membrane-water-walls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Membrane Water Walls used for?",
+          "a": "Boiler tube panels joined by flat membrane bars welded between the tubes, for furnace walls in utility and industrial boilers and HRSGs. Membrane panels form gas-tight furnace walls: the tubes carry water or steam and the membrane bars close the gaps between them, so the furnace needs no separate casing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Membrane Water Walls be supplied in?",
+          "a": "Membrane Water Walls can be supplied in the size you need (Engineered to order: quoted from your data sheet or drawing). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to send to get Membrane Water Walls quoted?",
+          "a": "Send your data sheet or drawing, the design code (ASME Section I or VIII, EN 12952, EN 12953 or EN 13445), the design pressure and temperature, the material grades, the NDE, heat treatment and hydrotest requirements, any third-party inspection. And the quantity and delivery point. Membrane Water Walls are engineered equipment, not catalogue items, so we quote against that information."
+        },
+        {
+          "slot": "E",
+          "q": "What tube pitch and membrane bar thickness do membrane water walls use?",
+          "a": "For Membrane Water Walls, the listing gives geometry rather than a pressure rating: the tube pitch ratio s/d is usually 1.2 to 1.5, set by pressure and furnace heat load, and a membrane bar about 6.4 mm (1/4 in) thick is an example with 2 to 3 in tubes. The design pressure and temperature come from your data sheet."
+        },
+        {
+          "slot": "J",
+          "q": "How are Membrane Water Walls built, examined and documented?",
+          "a": "For Membrane Water Walls, pressure parts are made to the drawing and the design code: ASME Section I for power boilers, Section VIII for vessels, or EN 12952, EN 12953 and EN 13445 under PED. Materials come with mill certificates, welding is to qualified procedures and welders, and NDE, heat treatment and hydrotest follow the code and the inspection and test plan. Third-party inspection is arranged with the order."
+        },
+        {
+          "slot": "F",
+          "q": "What tubes and bars are Membrane Water Walls made from?",
+          "a": "For Membrane Water Walls, membrane water walls use tubes to ASTM A210, A192 or A213 and flat bars to SA-36 or ASTM A387 grades (including SA387 Gr 12, 22 and 91), as named in the listing. The tubes are joined by flat steel membrane bars welded between them."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes and standards apply to Membrane Water Walls?",
+          "a": "Membrane Water Walls are built to ASME Section I / EN 12952, ASTM A210, ASTM A192, ASTM A213 tubes; SA-36, ASTM A387 bars, ASME SA36, ASME SA387-GR12CL1, ASME SA387-GR12CL2, ASME SA387-GR22CL1, ASME SA387-GR91. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative and are checked against each tender."
+        },
+        {
+          "slot": "H",
+          "q": "What do Membrane Water Walls connect to or work with?",
+          "a": "For Membrane Water Walls, panels are built in shop-assembled sections with headers, bends and openings for burners, sootblowers and inspection doors where the drawing calls for them. The headers are described on the [boiler headers](/p/boiler-headers) listing."
+        },
+        {
+          "slot": "I",
+          "q": "What inspection and documents come with Membrane Water Walls?",
+          "a": "Membrane Water Walls are inspected and tested to the order's code and inspection and test plan, including hydrotest, before they ship. On receipt, check the marking and the certificate package against the order and keep the openings capped until installation. Our [Boiler pressure parts: headers, superheater coils and membrane walls](/blog/boiler-pressure-parts-headers-superheaters) explains the parts and what to specify."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Membrane Water Walls typically used?",
+          "a": "For Membrane Water Walls, membrane water walls form gas-tight furnace walls in utility and industrial boilers and HRSGs, so the furnace needs no separate casing."
+        },
+        {
+          "slot": "L",
+          "q": "Can Membrane Water Walls be supplied to customers outside the UAE?",
+          "a": "Yes. We supply Membrane Water Walls to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the delivery country and the drawing or data sheet through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Membrane Water Walls in stock, or are they made to order?",
+          "a": "Membrane Water Walls are made to your drawing or data sheet rather than held as catalogue stock, so the lead time is confirmed with the quotation. We quote from our office in Dubai, UAE, and supply worldwide; send the drawing or data sheet, the material and the quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-vessel-heads",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Pressure Vessel Heads used for?",
+          "a": "Ellipsoidal, torispherical, hemispherical and flat heads for pressure vessels and exchanger channels, to ASME VIII, EN 13445 and DIN 28011 / 28013. Pressure Vessel Heads are engineered equipment, not catalogue items."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Pressure Vessel Heads be supplied in?",
+          "a": "Pressure Vessel Heads can be supplied in the size you need (Engineered to order: quoted from your data sheet or drawing). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to send to get Pressure Vessel Heads quoted?",
+          "a": "Send your data sheet or drawing, the design code (ASME Section I or VIII, EN 12952, EN 12953 or EN 13445), the design pressure and temperature, the material grades, the NDE, heat treatment and hydrotest requirements, any third-party inspection. And the quantity and delivery point. Pressure Vessel Heads are engineered equipment, not catalogue items, so we quote against that information."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do Pressure Vessel Heads have?",
+          "a": "For Pressure Vessel Heads, a pressure vessel head has no catalogue rating: its thickness is calculated from the design pressure, temperature and head type under the code. Tell us the code, pressure, temperature, material and diameter and we quote against them."
+        },
+        {
+          "slot": "J",
+          "q": "What head shapes are pressure vessel heads made in?",
+          "a": "For Pressure Vessel Heads, the listing covers 2:1 semi-ellipsoidal heads (crown radius 0.90 D, knuckle 0.17 D, inside depth D/4), ASME flanged and dished heads (crown radius Do, knuckle 0.06 Do and not less than 3t). Kloepper heads to DIN 28011 and Korbbogen heads to DIN 28013 (crown 0.80 Do, knuckle 0.154 Do), plus hemispherical and flat heads."
+        },
+        {
+          "slot": "F",
+          "q": "What codes and materials govern Pressure Vessel Heads?",
+          "a": "For Pressure Vessel Heads, pressure vessel heads are formed to ASME VIII Div 1 UG-32, DIN 28011 / 28013 or EN 13445-3 from the plate grade on your data sheet. The material, thickness and heat treatment follow the design code you name."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes and standards apply to Pressure Vessel Heads?",
+          "a": "Pressure Vessel Heads are built to ASME VIII Div 1 UG-32, DIN 28011 / DIN 28013, EN 13445-3. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative and are checked against each tender."
+        },
+        {
+          "slot": "H",
+          "q": "What do Pressure Vessel Heads connect to or work with?",
+          "a": "For Pressure Vessel Heads, heads are welded to vessel shells and exchanger channels, so the head type, diameter, thickness and straight flange must match the shell. See the [Boiler Pressure Parts shelf](/c/boiler-pressure-parts) for related pressure parts."
+        },
+        {
+          "slot": "I",
+          "q": "What inspection and documents come with Pressure Vessel Heads?",
+          "a": "Pressure Vessel Heads are inspected and tested to the order's code and inspection and test plan, including hydrotest, before they ship. On receipt, check the marking and the certificate package against the order and keep the openings capped until installation. Our [Boiler pressure parts: headers, superheater coils and membrane walls](/blog/boiler-pressure-parts-headers-superheaters) explains the parts and what to specify."
+        },
+        {
+          "slot": "K",
+          "q": "How do Pressure Vessel Heads differ from Boiler Headers?",
+          "a": "Pressure Vessel Heads differ from [Boiler Headers](/p/boiler-headers) in its standards ASME VIII Div 1 UG-32, DIN 28011 / DIN 28013, EN 13445-3 against ASME Section I; SA-106 / SA-335 P22, ASME SA335-P22, SA-106, SA-335."
+        },
+        {
+          "slot": "L",
+          "q": "Can Pressure Vessel Heads be supplied to customers outside the UAE?",
+          "a": "Yes. We supply Pressure Vessel Heads to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the delivery country and the drawing or data sheet through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Pressure Vessel Heads in stock, or are they made to order?",
+          "a": "Pressure Vessel Heads are made to your drawing or data sheet rather than held as catalogue stock, so the lead time is confirmed with the quotation. We quote from our office in Dubai, UAE, and supply worldwide; send the drawing or data sheet, the material and the quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "superheaters-and-reheaters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Superheaters and Reheaters used for?",
+          "a": "Superheater and reheater coils and assemblies for boilers and HRSGs, to ASME Section I or EN 12952, built to your drawing. Superheaters and reheaters run at the highest metal temperatures in the boiler, so the tube grade steps up along the coil: carbon steel at the cool end, then chrome-moly grades such as T11, T22 and T91, and stainless where the metal is hottest."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes can Superheaters and Reheaters be supplied in?",
+          "a": "Superheaters and Reheaters can be supplied in the size you need (Engineered to order: quoted from your data sheet or drawing). Tell us the size or capacity you need, and the application, through the enquiry and we confirm the dimensions and the part number with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to send to get Superheaters and Reheaters quoted?",
+          "a": "Send your data sheet or drawing, the design code (ASME Section I or VIII, EN 12952, EN 12953 or EN 13445), the design pressure and temperature, the material grades, the NDE, heat treatment and hydrotest requirements, any third-party inspection. And the quantity and delivery point. Superheaters and Reheaters are engineered equipment, not catalogue items, so we quote against that information."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure are superheaters and reheaters built for?",
+          "a": "For Superheaters and Reheaters, superheaters and reheaters run at the highest metal temperatures in the boiler, so their design temperature sets the tube grade. The listing gives no catalogue rating; the design pressure and temperature come from your data sheet or drawing under ASME Section I or EN 12952."
+        },
+        {
+          "slot": "J",
+          "q": "How are Superheaters and Reheaters built, examined and documented?",
+          "a": "For Superheaters and Reheaters, pressure parts are made to the drawing and the design code: ASME Section I for power boilers, Section VIII for vessels, or EN 12952, EN 12953 and EN 13445 under PED. Materials come with mill certificates, welding is to qualified procedures and welders, and NDE, heat treatment and hydrotest follow the code and the inspection and test plan. Third-party inspection is arranged with the order."
+        },
+        {
+          "slot": "F",
+          "q": "Which tube grades are used in Superheaters and Reheaters?",
+          "a": "For Superheaters and Reheaters, superheaters and reheaters step up the tube grade along the coil: carbon steel at the cool end, then chrome-moly grades such as T11, T22 and T91, and stainless where the metal is hottest. The exact grades follow your data sheet and the design code."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes and standards apply to Superheaters and Reheaters?",
+          "a": "Superheaters and Reheaters are built to ASME Section I / EN 12952. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative and are checked against each tender."
+        },
+        {
+          "slot": "H",
+          "q": "What do Superheaters and Reheaters connect to or work with?",
+          "a": "For Superheaters and Reheaters, coils are built as pendant or horizontal elements with their headers, bends and supports to the drawing. The headers are described on the [boiler headers](/p/boiler-headers) listing and the tubes on the [alloy steel boiler and superheater tubes](/p/alloy-steel-boiler-and-superheater-tubes) listing."
+        },
+        {
+          "slot": "I",
+          "q": "What inspection and documents come with Superheaters and Reheaters?",
+          "a": "Superheaters and Reheaters are inspected and tested to the order's code and inspection and test plan, including hydrotest, before they ship. On receipt, check the marking and the certificate package against the order and keep the openings capped until installation. Our [Boiler pressure parts: headers, superheater coils and membrane walls](/blog/boiler-pressure-parts-headers-superheaters) explains the parts and what to specify."
+        },
+        {
+          "slot": "K",
+          "q": "How do Superheaters and Reheaters differ from Corrugated Furnaces?",
+          "a": "Superheaters and Reheaters differ from [Corrugated Furnaces](/p/corrugated-furnaces) in its standards ASME Section I / EN 12952 against ASME Section I PFT-18 / PFT-19, EN 12953-3, ASME SA516."
+        },
+        {
+          "slot": "L",
+          "q": "Can Superheaters and Reheaters be supplied to customers outside the UAE?",
+          "a": "Yes. We supply Superheaters and Reheaters to buyers in the GCC, Africa, Asia and beyond, with export documents prepared for the destination. Give us the delivery country and the drawing or data sheet through our contact page and we quote the freight and lead time with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Superheaters and Reheaters in stock, or are they made to order?",
+          "a": "Superheaters and Reheaters are made to your drawing or data sheet rather than held as catalogue stock, so the lead time is confirmed with the quotation. We quote from our office in Dubai, UAE, and supply worldwide; send the drawing or data sheet, the material and the quantity through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

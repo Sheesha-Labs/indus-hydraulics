@@ -1,0 +1,1022 @@
+{
+  "family": "hydraulic-hoses-01",
+  "extraFacts": [
+    {
+      "fact": "Sibling listing figures: Aeroquip FC300 Bulk Hydraulic Hoses: pressure 625 to 1,750 psi (43 to 121 bar), by size; temperature -40°F to +302°F; sizes 1/4\" (-5), 1/2\" (-10), 5/8\" (-12), 7/8\" (-16), 1 1/8\" (-20)",
+      "source": "Indus Hydraulics product listing for Aeroquip FC300 Bulk Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses: pressure 1,500 to 3,700 psi (103 to 255 bar), by size; temperature -50°F to +260°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses: pressure 3,000 to 6,500 psi (207 to 448 bar), by size; temperature -50°F to +260°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Aeroquip Bulk Hydraulic Hoses: temperature -40°F to +250°F; sizes 1\" (-16), 1 1/8\" (-18), 1 1/4\" (-20), 1 3/8\" (-22), 1 1/2\" (-24), 1 13/16\" (-29)",
+      "source": "Indus Hydraulics product listing for Aeroquip Bulk Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Aeroquip GH663 Series Hydraulic Hoses: pressure 1,500 to 3,700 psi (103 to 255 bar), by size; temperature -50°F to +260°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Aeroquip GH663 Series Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses: pressure 1,600 to 6,500 psi (110 to 448 bar), by size; temperature -40°F to +260°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Aeroquip GH793 MatchMate Hydraulic Hoses: pressure 3,000 to 6,500 psi (207 to 448 bar), by size; temperature -40°F to +260°F; sizes 1/4\" (-4), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Aeroquip GH793 MatchMate Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Aeroquip Hydraulic Hoses: pressure 150 to 5,100 psi (10 to 352 bar), by size; temperature -50.8° to +258.8°F; sizes 3/16\" (-3), 1/4\" (-4), 5/16\" (-5), 3/8\" (-6), 13/32\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 7/8\" (-14), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), 1 13/16\" (-29), 2\" (-32), 2 1/2\" (-40), 3\" (-48), 4\" (-64)",
+      "source": "Indus Hydraulics product listing for Aeroquip Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses: temperature 212°F; sizes 1/4\" (-4), 5/16\" (-5), 3/8\" (-6), 1/2\" (-8)",
+      "source": "Indus Hydraulics product listing for Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "In SAE hose dash sizing, the dash number is the hose inside diameter in sixteenths of an inch, so -4 is 1/4\" and -8 is 1/2\".",
+      "source": "SAE J517 / SAE J514 dash-size convention; confirmed by the size tables on the Indus listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aeroquip-bulk-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Bulk Hydraulic Hoses used for?",
+          "a": "The Aeroquip Bulk Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 6 part numbers from 1\" to 1 13/16\". Part descriptions in the size table give pressures such as 300 psi, 500 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Bulk Hydraulic Hoses come in?",
+          "a": "The Aeroquip Bulk Hydraulic Hoses are listed in 6 hose sizes: 1\" (-16), 1 1/8\" (-18), 1 1/4\" (-20), 1 3/8\" (-22), 1 1/2\" (-24), 1 13/16\" (-29). The 6 part numbers run from EC600-16-50 to FC300-32-100. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number FC300-20-100 of the Aeroquip Bulk Hydraulic Hoses cover?",
+          "a": "Part number FC300-20-100 is the Aeroquip Bulk Hydraulic Hoses in 1 1/8\" ID, 625 psi. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Bulk Hydraulic Hoses?",
+          "a": "The size table for the Aeroquip Bulk Hydraulic Hoses states 300 psi, 500 psi, 625 psi against its part descriptions, for example FC300-20-100. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip Bulk Hydraulic Hoses?",
+          "a": "The Aeroquip Bulk Hydraulic Hoses have a temperature range of -40°F to +250°F. Listed fluids: Petroleum, Water-Based Fluid. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Bulk Hydraulic Hoses meet?",
+          "a": "The listing for the Aeroquip Bulk Hydraulic Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip Bulk Hydraulic Hoses?",
+          "a": "End fittings for the Aeroquip Bulk Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip Bulk Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing gives a minimum bend radius of 6 1/2\" for the Aeroquip Bulk Hydraulic Hoses. Keep every bend at or above it and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip Bulk Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1\" (-16), and pick the same size in the Aeroquip Bulk Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Bulk Hydraulic Hoses or Aeroquip FC300 Bulk Hydraulic Hoses: which should I choose?",
+          "a": "The Aeroquip FC300 Bulk Hydraulic Hoses are listed at 625 to 1,750 psi (43 to 121 bar), by size; check the Aeroquip Bulk Hydraulic Hoses size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip FC300 Bulk Hydraulic Hoses page](/p/aeroquip-fc300-bulk-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Aeroquip Bulk Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Aeroquip Bulk Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Bulk Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Aeroquip Bulk Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-danfoss-gh493-series-rubber-hydraulic-spiral-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses used for?",
+          "a": "The Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses are hydraulic hoses from Eaton Aeroquip, listed in 8 part numbers from 1/2\" to 2\". Listed use: Hydraulic System Service With Petroleum And Water Based Fluids, For General Use. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses come in?",
+          "a": "The Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses are listed in 7 hose sizes: 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), and on to 2\" (-32). The 8 part numbers run from GH493-16 to GH493-20X60FT. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH493-10X50 of the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses cover?",
+          "a": "Part number GH493-10X50 is the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses in 5/8\" ID, 414 bar (6,000 psi), length 50 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses?",
+          "a": "The maker states 4,000 to 6,000 psi (276 to 414 bar), by size for the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses. By row: 414 bar at 1/2\"; 414 bar at 5/8\"; 379 bar at 3/4\"; 310 bar at 1 1/4\"; 276 bar at 1 1/2\"; 276 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses?",
+          "a": "The Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses have a temperature range of -40°F to +260°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses meet?",
+          "a": "The listing for the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses?",
+          "a": "End fittings for the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses must be from the series the hose maker approves for that hose; the listing gives 4S. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses from 180.1 mm at 1/2\" to 420.1 mm at 1 1/4\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses recommended for?",
+          "a": "The listing describes the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses as follows: Hydraulic System Service With Petroleum And Water Based Fluids, For General Use. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses or Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses are listed at 4,000 to 6,000 psi (276 to 414 bar), while the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses are listed at 1,500 to 3,700 psi (103 to 255 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh663-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses in Dubai?",
+          "a": "Yes, we hold the Aeroquip Danfoss GH493 Series Rubber Hydraulic Spiral Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-danfoss-gh663-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses are hydraulic hoses from Eaton Aeroquip, listed in 5 part numbers from 1/4\" to 1\". Listed use: Hydraulic Systems With Petroleum And Water-glycol Base Fluids, For Lubricating Oils And Water. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16). The 5 part numbers run from GH663-16R150 to GH663-6R250. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH663-4R250 of the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number GH663-4R250 is the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses in 1/4\" ID, 255 bar, minimum bend radius 50 mm, burst 1020 bar, length 250 Foot. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The maker states 1,500 to 3,700 psi (103 to 255 bar), by size for the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses. By row: 255 bar at 1/4\"; 234 bar at 3/8\"; 200 bar at 1/2\"; 138 bar at 3/4\"; 103 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses have a temperature range of -50°F to +260°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives TTC. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses from 50 mm at 1/4\" to 150.1 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses recommended for?",
+          "a": "The listing describes the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses as follows: Hydraulic Systems With Petroleum And Water-glycol Base Fluids, For Lubricating Oils And Water. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses or Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses are listed at 1,500 to 3,700 psi (103 to 255 bar), while the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses are listed at 3,000 to 6,500 psi (207 to 448 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh781-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-danfoss-gh781-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses are hydraulic hoses from Eaton Aeroquip, listed in 6 part numbers from 1/4\" to 1\". Listed use: High Pressure Hydraulic Systems With Petroleum And Water-glycol Based Fluids, For Lubricating Oils And Water. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses are listed in 6 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1\" (-16). The 6 part numbers run from GH781-16R150 to GH781-10R250. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH781-12R250 of the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number GH781-12R250 is the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses in 3/4\" ID, 241 bar (3,500 psi), minimum bend radius 119.9 mm, burst 963 bar, length 250 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The maker states 3,000 to 6,500 psi (207 to 448 bar), by size for the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses. By row: 448 bar at 1/4\"; 365 bar at 3/8\"; 310 bar at 1/2\"; 276 bar at 5/8\"; 241 bar at 3/4\"; 207 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses have a temperature range of -50°F to +260°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives TTC. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses from 50 mm at 1/4\" to 149.9 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses recommended for?",
+          "a": "The listing describes the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses as follows: High Pressure Hydraulic Systems With Petroleum And Water-glycol Based Fluids, For Lubricating Oils And Water. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses or Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses are listed at 3,000 to 6,500 psi (207 to 448 bar), while the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses are listed at 1,500 to 3,700 psi (103 to 255 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh663-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes, we stock the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-danfoss-gh793-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses are hydraulic hoses from Eaton Aeroquip, listed in 10 part numbers from 1/4\" to 2\". Listed use: Hydraulic Systems With Petroleum And Water-glycol Base Fluids, For Lubricating Oils And Water. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 10 part numbers run from GH793-16R150 to GH793-20X60FT. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH793-6R250 of the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number GH793-6R250 is the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses in 3/8\" ID, 400 bar (5,800 psi), minimum bend radius 127 mm, burst 1103 bar, length 250 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The maker states 1,600 to 6,500 psi (110 to 448 bar), by size for the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses. By row: 448 bar at 1/4\"; 345 bar at 1/2\"; 276 bar at 5/8\"; 207 bar at 1\"; 172 bar at 1 1/4\"; 110 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses have a temperature range of -40°F to +260°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives TTC, 1SA. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses from 101.6 mm at 1/4\" to 635 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses recommended for?",
+          "a": "The listing describes the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses as follows: Hydraulic Systems With Petroleum And Water-glycol Base Fluids, For Lubricating Oils And Water. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses or Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses are listed at 1,600 to 6,500 psi (110 to 448 bar), while the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses are listed at 3,000 to 6,500 psi (207 to 448 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh781-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes. We keep the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-fc300-bulk-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FC300 Bulk Hydraulic Hoses used for?",
+          "a": "The Aeroquip FC300 Bulk Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 5 part numbers from 1/4\" to 1 1/8\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip FC300 Bulk Hydraulic Hoses come in?",
+          "a": "The Aeroquip FC300 Bulk Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-5), 1/2\" (-10), 5/8\" (-12), 7/8\" (-16), 1 1/8\" (-20). The 5 part numbers run from FC300-10-25 to FC300-20-25. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number FC300-12-25 of the Aeroquip FC300 Bulk Hydraulic Hoses cover?",
+          "a": "Part number FC300-12-25 is the Aeroquip FC300 Bulk Hydraulic Hoses in 5/8\" ID, 103 bar (1,500 psi), minimum bend radius 165.1 mm, length 25 Feet. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip FC300 Bulk Hydraulic Hoses?",
+          "a": "The maker states 625 to 1,750 psi (43 to 121 bar), by size for the Aeroquip FC300 Bulk Hydraulic Hoses. By row: 207 bar at 1/4\"; 121 bar at 1/2\"; 103 bar at 5/8\"; 55 bar at 7/8\"; 43 bar at 1 1/8\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip FC300 Bulk Hydraulic Hoses?",
+          "a": "The Aeroquip FC300 Bulk Hydraulic Hoses have a temperature range of -40°F to +302°F. Listed fluids: Air, Automatic Transmission Fluid, Brake Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic). Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip FC300 Bulk Hydraulic Hoses meet?",
+          "a": "The listing for the Aeroquip FC300 Bulk Hydraulic Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip FC300 Bulk Hydraulic Hoses?",
+          "a": "End fittings for the Aeroquip FC300 Bulk Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip FC300 Bulk Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip FC300 Bulk Hydraulic Hoses from 139.7 mm at 1/2\" to 228.6 mm at 1 1/8\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip FC300 Bulk Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-5), and pick the same size in the Aeroquip FC300 Bulk Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip FC300 Bulk Hydraulic Hoses or Aeroquip Bulk Hydraulic Hoses: which should I choose?",
+          "a": "The Aeroquip FC300 Bulk Hydraulic Hoses run 1/4\" (-5), 1/2\" (-10), 5/8\" (-12), 7/8\" (-16), 1 1/8\" (-20), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Bulk Hydraulic Hoses page](/p/aeroquip-bulk-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FC300 Bulk Hydraulic Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip FC300 Bulk Hydraulic Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FC300 Bulk Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Aeroquip FC300 Bulk Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-gh195-aqp-series-double-braid-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses used for?",
+          "a": "The Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 15 part numbers from 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses come in?",
+          "a": "The Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 15 part numbers run from GH195-16-50 to GH195-20-50. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH195-12-50 of the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses cover?",
+          "a": "Part number GH195-12-50 is the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses in 3/4\" ID, 215 bar, minimum bend radius 241.3 mm, length 50 Feet. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses?",
+          "a": "The maker states 1,525 to 5,800 psi (105 to 400 bar), by size for the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses. By row: 400 bar at 1/4\"; 293 bar at 1/2\"; 252 bar at 5/8\"; 176 bar at 1\"; 155 bar at 1 1/4\"; 105 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses?",
+          "a": "The Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses have a temperature range of -40°F to +302°F. Listed fluids: Air, Automatic Transmission Fluid, Brake Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic). Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses meet?",
+          "a": "The listing for the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses?",
+          "a": "End fittings for the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses from 101.6 mm at 1/4\" to 635 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses or Aeroquip GH663 Series Hydraulic Hoses: which should I choose?",
+          "a": "The Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses are listed at 1,525 to 5,800 psi (105 to 400 bar), while the Aeroquip GH663 Series Hydraulic Hoses are listed at 1,500 to 3,700 psi (103 to 255 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip GH663 Series Hydraulic Hoses page](/p/aeroquip-gh663-series-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Aeroquip GH195 AQP Series Double Braid Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-gh663-series-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip GH663 Series Hydraulic Hoses used for?",
+          "a": "The Aeroquip GH663 Series Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 5 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip GH663 Series Hydraulic Hoses come in?",
+          "a": "The Aeroquip GH663 Series Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16). The 5 part numbers run from GH663-16X50 to GH663-6X50. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH663-4X50 of the Aeroquip GH663 Series Hydraulic Hoses cover?",
+          "a": "Part number GH663-4X50 is the Aeroquip GH663 Series Hydraulic Hoses in 1/4\" ID, 255 bar (3,700 psi), minimum bend radius 101.6 mm, length 50 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip GH663 Series Hydraulic Hoses?",
+          "a": "The maker states 1,500 to 3,700 psi (103 to 255 bar), by size for the Aeroquip GH663 Series Hydraulic Hoses. By row: 255 bar at 1/4\"; 234 bar at 3/8\"; 200 bar at 1/2\"; 138 bar at 3/4\"; 103 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip GH663 Series Hydraulic Hoses?",
+          "a": "The Aeroquip GH663 Series Hydraulic Hoses have a temperature range of -50°F to +260°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip GH663 Series Hydraulic Hoses meet?",
+          "a": "The listing for the Aeroquip GH663 Series Hydraulic Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip GH663 Series Hydraulic Hoses?",
+          "a": "End fittings for the Aeroquip GH663 Series Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip GH663 Series Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip GH663 Series Hydraulic Hoses from 101.6 mm at 1/4\" to 304.8 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip GH663 Series Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Aeroquip GH663 Series Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip GH663 Series Hydraulic Hoses or Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip GH663 Series Hydraulic Hoses are listed at 1,500 to 3,700 psi (103 to 255 bar), while the Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses are listed at 1,500 to 3,700 psi (103 to 255 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH663 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh663-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip GH663 Series Hydraulic Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip GH663 Series Hydraulic Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip GH663 Series Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Aeroquip GH663 Series Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-gh781-series-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip GH781 Series Hydraulic Hoses used for?",
+          "a": "The Aeroquip GH781 Series Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 10 part numbers from 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip GH781 Series Hydraulic Hoses come in?",
+          "a": "The Aeroquip GH781 Series Hydraulic Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32). The 10 part numbers run from GH781-16X50 to GH781-20X60FT. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH781-6X50 of the Aeroquip GH781 Series Hydraulic Hoses cover?",
+          "a": "Part number GH781-6X50 is the Aeroquip GH781 Series Hydraulic Hoses in 3/8\" ID, 365 bar (5,300 psi), minimum bend radius 63.5 mm, length 50 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip GH781 Series Hydraulic Hoses?",
+          "a": "The maker states 1,600 to 6,500 psi (110 to 448 bar), by size for the Aeroquip GH781 Series Hydraulic Hoses. By row: 448 bar at 1/4\"; 345 bar at 1/2\"; 276 bar at 5/8\"; 207 bar at 1\"; 172 bar at 1 1/4\"; 110 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip GH781 Series Hydraulic Hoses?",
+          "a": "The Aeroquip GH781 Series Hydraulic Hoses have a temperature range of -50°F to +260°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip GH781 Series Hydraulic Hoses meet?",
+          "a": "The listing for the Aeroquip GH781 Series Hydraulic Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip GH781 Series Hydraulic Hoses?",
+          "a": "End fittings for the Aeroquip GH781 Series Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip GH781 Series Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip GH781 Series Hydraulic Hoses from 50.8 mm at 1/4\" to 317.5 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip GH781 Series Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Aeroquip GH781 Series Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip GH781 Series Hydraulic Hoses or Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip GH781 Series Hydraulic Hoses are listed at 1,600 to 6,500 psi (110 to 448 bar), while the Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses are listed at 3,000 to 6,500 psi (207 to 448 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH781 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh781-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip GH781 Series Hydraulic Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip GH781 Series Hydraulic Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip GH781 Series Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Aeroquip GH781 Series Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-gh793-matchmate-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip GH793 MatchMate Hydraulic Hoses used for?",
+          "a": "The Aeroquip GH793 MatchMate Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 5 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip GH793 MatchMate Hydraulic Hoses come in?",
+          "a": "The Aeroquip GH793 MatchMate Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16). The 5 part numbers run from GH793-16-50 to GH793-10-50. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number GH793-4-50 of the Aeroquip GH793 MatchMate Hydraulic Hoses cover?",
+          "a": "Part number GH793-4-50 is the Aeroquip GH793 MatchMate Hydraulic Hoses in 1/4\" ID, 448 bar (6,500 psi), minimum bend radius 101.6 mm, length 50 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip GH793 MatchMate Hydraulic Hoses?",
+          "a": "The maker states 3,000 to 6,500 psi (207 to 448 bar), by size for the Aeroquip GH793 MatchMate Hydraulic Hoses. By row: 448 bar at 1/4\"; 345 bar at 1/2\"; 276 bar at 5/8\"; 241 bar at 3/4\"; 207 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip GH793 MatchMate Hydraulic Hoses?",
+          "a": "The Aeroquip GH793 MatchMate Hydraulic Hoses have a temperature range of -40°F to +260°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip GH793 MatchMate Hydraulic Hoses meet?",
+          "a": "The listing for the Aeroquip GH793 MatchMate Hydraulic Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip GH793 MatchMate Hydraulic Hoses?",
+          "a": "End fittings for the Aeroquip GH793 MatchMate Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip GH793 MatchMate Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Aeroquip GH793 MatchMate Hydraulic Hoses from 101.6 mm at 1/4\" to 304.8 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip GH793 MatchMate Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Aeroquip GH793 MatchMate Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip GH793 MatchMate Hydraulic Hoses or Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip GH793 MatchMate Hydraulic Hoses are listed at 3,000 to 6,500 psi (207 to 448 bar), while the Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses are listed at 1,600 to 6,500 psi (110 to 448 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh793-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip GH793 MatchMate Hydraulic Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip GH793 MatchMate Hydraulic Hoses as United States and the HS code as 4009210000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip GH793 MatchMate Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Aeroquip GH793 MatchMate Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Hydraulic Hoses used for?",
+          "a": "The Aeroquip Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 73 part numbers from 3/16\" to 4\". Part descriptions in the size table give lengths such as 50ft, 250ft, 150ft and pressures such as 150 psi, 200 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Hydraulic Hoses come in?",
+          "a": "The Aeroquip Hydraulic Hoses are listed in 17 hose sizes: 3/16\" (-3), 1/4\" (-4), 5/16\" (-5), 3/8\" (-6), 13/32\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), and on to 4\" (-64). The 73 part numbers run from GH681-12-50 to 2807-16X25. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number H10010-50 of the Aeroquip Hydraulic Hoses cover?",
+          "a": "Part number H10010-50 is the Aeroquip Hydraulic Hoses in 5/8\" ID, 24 bar (350 psi), length 50 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Hydraulic Hoses?",
+          "a": "The maker states 150 to 5,100 psi (10 to 352 bar), by size for the Aeroquip Hydraulic Hoses. By row: 207 bar at 3/16\"; 21 to 234 bar at 3/8\"; 24 to 83 bar at 5/8\"; 14 to 352 bar at 1 1/4\"; 21 to 352 bar at 2\"; 14 bar at 4\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip Hydraulic Hoses?",
+          "a": "The Aeroquip Hydraulic Hoses have a temperature range of -50.8° to +258.8°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Hydraulic Hoses meet?",
+          "a": "The listing for the Aeroquip Hydraulic Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip Hydraulic Hoses?",
+          "a": "End fittings for the Aeroquip Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Aeroquip Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/16\" (-3), and pick the same size in the Aeroquip Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Hydraulic Hoses or Aeroquip GH793 MatchMate Hydraulic Hoses: which should I choose?",
+          "a": "The Aeroquip Hydraulic Hoses are listed at 150 to 5,100 psi (10 to 352 bar), while the Aeroquip GH793 MatchMate Hydraulic Hoses are listed at 3,000 to 6,500 psi (207 to 448 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip GH793 MatchMate Hydraulic Hoses page](/p/aeroquip-gh793-matchmate-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Aeroquip Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Aeroquip Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Aeroquip Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-protective-sleeve-nylon-abrasive",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Protective Sleeve, Nylon, Abrasive used for?",
+          "a": "The Aeroquip Protective Sleeve, Nylon, Abrasive is a nylon protective sleeve from Eaton Aeroquip that slides over a hose to guard it against abrasion. The range has 9 part numbers from FC425-12X25 to FC425-59X25. It is a hose accessory, not a hose; see the [hydraulic hoses shelf](/c/hydraulic-hoses) for the hose it protects."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the sleeve part number FC425-12X25?",
+          "a": "In FC425-12X25 and the other numbers in the range, the middle digits change with the sleeve size and the part number ends in X25. For example FC425-12X25 is the .71 size and FC425-59X25 is the 3.66 size in the size table. Confirm the size you need against your hose outside diameter before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Protective Sleeve, Nylon, Abrasive come in?",
+          "a": "The size table lists 9 sizes: .71, 1, 1.25, 1.59, 1.75, 2.07, 2.86, 3.34, 3.66. The listing does not state the unit, so check the size against your hose outside diameter, and send us the hose you want to cover and we will confirm the match."
+        },
+        {
+          "slot": "D",
+          "q": "Which sleeve size do I pick for a given hose outside diameter?",
+          "a": "Pick the smallest sleeve that slides freely over the hose and its fittings' crimp collar, taking the hose outside diameter from the hose listing or a measurement. The sleeve sizes run .71 to 3.66 in the size table, so measure first; [how to measure a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose) explains how."
+        },
+        {
+          "slot": "E",
+          "q": "Does the Aeroquip Protective Sleeve, Nylon, Abrasive have a pressure rating?",
+          "a": "No. The Aeroquip Protective Sleeve, Nylon, Abrasive is a protective sleeve that carries no fluid, so it has no working pressure. The hose and fittings under it set the pressure rating. Choose the hose first, then the sleeve; the [hose guide](/blog/hydraulic-hose-guide) covers that choice."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Protective Sleeve, Nylon, Abrasive made of, and what temperature can it take?",
+          "a": "The sleeve is nylon, and the listing states a melting point of 420°F. The listing gives no continuous working temperature, so keep the sleeve well below its melting point, away from exhaust manifolds and hot surfaces. Tell us the operating temperature and we will advise."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aeroquip Protective Sleeve, Nylon, Abrasive carry any standard or approval?",
+          "a": "The listing states no standard or approval for the nylon sleeve; it is described only as a protective sleeve in nylon, abrasive grade. If your specification needs a fire-resistant or certified sleeve, tell us and we will check what the maker offers before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip Protective Sleeve, Nylon, Abrasive fit over?",
+          "a": "It fits over a hydraulic hose to protect the cover from rubbing against frames, other hoses or sharp edges. Choose the sleeve size from the hose outside diameter, and see the Aeroquip hose listings, for example the [Aeroquip hydraulic hoses](/p/aeroquip-hydraulic-hoses), for sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Aeroquip Protective Sleeve, Nylon, Abrasive and where do I use it?",
+          "a": "Slide the sleeve over the hose before the end fittings are crimped, or use a sleeve sized to pass over the ferrule, then secure it so it does not creep along the hose. Use it where the hose rubs against a bracket or frame; see [hydraulic hose abrasion failure](/blog/hydraulic-hose-abrasion-failure)."
+        },
+        {
+          "slot": "K",
+          "q": "Does a protective sleeve replace a hose with a tougher cover?",
+          "a": "A sleeve adds abrasion protection to a hose you already have, whereas a tough-cover hose builds it into the hose cover. Where the hose is already installed, the Aeroquip Protective Sleeve, Nylon, Abrasive is the quicker fix; for new builds compare the hose covers on the [hydraulic hoses shelf](/c/hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Protective Sleeve, Nylon, Abrasive made and what is its HS code?",
+          "a": "The listing gives the country of origin as the United States and the HS code as 6304930000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Protective Sleeve, Nylon, Abrasive in Dubai?",
+          "a": "Yes, we stock the Aeroquip Protective Sleeve, Nylon, Abrasive in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-socketless-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Socketless Hoses used for?",
+          "a": "The Aeroquip Socketless Hoses are hydraulic hoses from Eaton Aeroquip, listed in 10 part numbers from 1/4\" to 3/4\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Aeroquip Socketless Hoses come in?",
+          "a": "The Aeroquip Socketless Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12). The 10 part numbers run from FC332-08-R500 to FC332-10-50. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number FC332-12-50 of the Aeroquip Socketless Hoses cover?",
+          "a": "Part number FC332-12-50 is the Aeroquip Socketless Hoses in 3/4\" ID, 21 bar (300 psi), length 50 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Socketless Hoses?",
+          "a": "The maker states 300 psi (21 bar) for the Aeroquip Socketless Hoses. By row: 17 to 21 bar at 1/4\"; 21 bar at 3/8\"; 21 bar at 1/2\"; 21 bar at 5/8\"; 21 bar at 3/4\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Aeroquip Socketless Hoses?",
+          "a": "The Aeroquip Socketless Hoses have a temperature range of -40°F to +302°F. Listed fluids: Air, Automatic Transmission Fluid, Brake Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic). Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Socketless Hoses meet?",
+          "a": "The listing for the Aeroquip Socketless Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Aeroquip Socketless Hoses?",
+          "a": "End fittings for the Aeroquip Socketless Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Aeroquip Socketless Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Aeroquip Socketless Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Aeroquip Socketless Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Aeroquip Socketless Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Socketless Hoses or Aeroquip Hydraulic Hoses: which should I choose?",
+          "a": "The Aeroquip Socketless Hoses are listed at 300 psi (21 bar), while the Aeroquip Hydraulic Hoses are listed at 150 to 5,100 psi (10 to 352 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Hydraulic Hoses page](/p/aeroquip-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Socketless Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Aeroquip Socketless Hoses as United States and the HS code as 4009220050. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Socketless Hoses in Dubai?",
+          "a": "Yes. We keep the Aeroquip Socketless Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-bulk-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Eaton Bulk Hydraulic Hoses used for?",
+          "a": "The Eaton Bulk Hydraulic Hoses are hydraulic hoses from Eaton Aeroquip, listed in 4 part numbers from 1/4\" to 1/2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Eaton Bulk Hydraulic Hoses come in?",
+          "a": "The Eaton Bulk Hydraulic Hoses are listed in 4 hose sizes: 1/4\" (-4), 5/16\" (-5), 25/64\" (-6), 1/2\" (-8). The 4 part numbers run from 3TR7-08-50 to 3TR7-06-50. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 3TR7-05-50 of the Eaton Bulk Hydraulic Hoses cover?",
+          "a": "Part number 3TR7-05-50 is the Eaton Bulk Hydraulic Hoses in 5/16\" ID, minimum bend radius 38.1 mm, 3,000 psi, length 50 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Eaton Bulk Hydraulic Hoses?",
+          "a": "The maker states 2,050 to 3,050 psi (141 to 210 bar), by size for the Eaton Bulk Hydraulic Hoses. By row: 210 bar at 1/4\"; 159 bar at 25/64\"; 141 bar at 1/2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Eaton Bulk Hydraulic Hoses?",
+          "a": "The Eaton Bulk Hydraulic Hoses have a temperature range of -40°F to +212°F. Listed fluids: Air, Diesel Fuel, Ethyl Acetate, Ethylene Glycol (Not to Exceed +150F), Formaldehyde, Fuel Oil, Gasoline, Glycerin (Not to Exceed +150), Heptane, Hexane, Hydrogen. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Eaton Bulk Hydraulic Hoses meet?",
+          "a": "The listing for the Eaton Bulk Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Eaton Bulk Hydraulic Hoses?",
+          "a": "End fittings for the Eaton Bulk Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Eaton Bulk Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Eaton Bulk Hydraulic Hoses from 31.8 mm at 1/4\" to 69.8 mm at 1/2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Eaton Bulk Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Eaton Bulk Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Eaton Bulk Hydraulic Hoses or Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Eaton Bulk Hydraulic Hoses run 1/4\" (-4), 5/16\" (-5), 25/64\" (-6), 1/2\" (-8), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses page](/p/eaton-danfoss-h009-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Eaton Bulk Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Eaton Bulk Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton Bulk Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Eaton Bulk Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-danfoss-h009-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses are hydraulic hoses from Eaton Aeroquip, listed in 10 part numbers from 1/4\" to 1/2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses are listed in 4 hose sizes: 1/4\" (-4), 5/16\" (-5), 3/8\" (-6), 1/2\" (-8). The 10 part numbers run from H00908-25R to H00905-50R. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number H00906-25R of the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number H00906-25R is the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses in 3/8\" ID, minimum bend radius 76.2 mm, 400 psi, length 25 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The size table for the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses states 400 psi against its part descriptions, for example H00908-25R. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses have a temperature range of 212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses from 63.5 mm at 1/4\" to 101.6 mm at 1/2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses or Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses are listed at 1,600 to 6,500 psi (110 to 448 bar), by size; check the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Aeroquip Danfoss GH793 Series Rubber Hydraulic Braided Hoses page](/p/aeroquip-danfoss-gh793-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009410000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Eaton Danfoss H009 Series Rubber Hydraulic Braided Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    }
+  ]
+}

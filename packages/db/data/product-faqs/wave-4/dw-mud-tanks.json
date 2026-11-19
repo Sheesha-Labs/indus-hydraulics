@@ -1,0 +1,76 @@
+{
+  "family": "dw-mud-tanks",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "mud-tank-skid-mounted-500-bbl-40-ft-iso-footprint-manholes-sight-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 500 BBL skid-mounted mud tank used for?",
+          "a": "A mud tank stores and transports drilling mud. This skid-mounted 500 BBL tank sits within a 40-ft ISO seafreight container footprint, which avoids oversize-shipping surcharges, and is designed for variable mud density."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the 500 BBL skid-mounted mud tank?",
+          "a": "The tank has a 500 BBL capacity inside a 40-ft ISO container footprint. An open-top multi-compartment treatment-tank variant is available for cuttings and recycled mud handling."
+        },
+        {
+          "slot": "D",
+          "q": "What lines and fittings does the 500 BBL skid-mounted mud tank have?",
+          "a": "Fill, recirculation, discharge and drain lines are standard, with liquid-level sight gauges. Dual manholes, one on top and one on the side, allow cross-ventilation for safe inspector entry."
+        },
+        {
+          "slot": "E",
+          "q": "Why does the 500 BBL skid-mounted mud tank have two manholes?",
+          "a": "The top and side manholes allow cross-ventilation so an inspector can enter the tank safely. Follow the site confined-space entry procedure before anyone enters."
+        },
+        {
+          "slot": "F",
+          "q": "What fluid density can the 500 BBL skid-mounted mud tank handle?",
+          "a": "It is designed for variable mud density, so it can store drilling muds of different weights. State the heaviest mud density on the RFQ so the shell and supports are checked."
+        },
+        {
+          "slot": "G",
+          "q": "How is the 500 BBL skid-mounted mud tank shipped?",
+          "a": "It is skid-mounted within the 40-ft ISO seafreight footprint, so it ships as standard container freight without oversize surcharges. An axle-mounted, road-registered variant is also available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the 500 BBL skid-mounted mud tank?",
+          "a": "It connects to the mud pumps, the degasser and the liquid mud plant through the fill, recirculation and discharge lines. See [mud pump packages](/c/dw-mud-pump-package), [mud degassers](/c/dw-mud-degasser) and [liquid mud plants](/c/dw-liquid-mud-plant)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 500 BBL skid-mounted mud tank differ from a workover tank?",
+          "a": "The mud tank is a drilling mud storage and transport vessel in a 40-ft container footprint, while the [insulated workover tank](/p/workover-tank-240-bbl-brine-service-insulated-manholes-recirc-manifold) is built for brine and mud service in workovers. Choose by service and volume."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 500 BBL skid-mounted mud tank used?",
+          "a": "It is used on drilling rigs for mud storage and transport, and the open-top variant handles cuttings and recycled mud. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a mud tank quotation?",
+          "a": "Send the volume, the mud density range, the number of compartments, the mounting (skid or axle) and the delivery site. The treatment-tank variant is quoted separately."
+        },
+        {
+          "slot": "L",
+          "q": "Is an axle-mounted version of the 500 BBL skid-mounted mud tank available?",
+          "a": "Yes, an axle-mounted, road-registered variant is available. State whether the tank must move by road between sites on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 500 BBL skid-mounted mud tank?",
+          "a": "Yes. We list the 500 BBL skid-mounted mud tank as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your capacity, configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

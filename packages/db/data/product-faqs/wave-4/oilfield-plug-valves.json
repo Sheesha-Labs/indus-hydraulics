@@ -1,0 +1,1128 @@
+{
+  "family": "oilfield-plug-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined: the male half of a 602 or 1002 union can make up into a 1502 wing nut and look made up, then separate under pressure. Mismatched unions have caused fatalities and IADC recommends colour coding, go/no-go gauges and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 and 03-16 (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "ANSI raised-face flanged valve ends are dimensioned to ASME B16.5.",
+      "source": "ASME B16.5 Pipe Flanges and Flanged Fittings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 10,000 psi lubricated plug valve used for?",
+          "a": "A 2 in 10,000 psi lubricated plug valve (10K, sour service) is a quarter-turn sealant-injected taper plug valve for isolation in frac, cementing and well-service iron. Sealant-injected taper plug — frac iron service standard for high-cycle isolation."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 10,000 psi lubricated plug valve mean?",
+          "a": "On this lubricated plug valve the listing gives a 2 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 10,000 psi lubricated plug valve have?",
+          "a": "On the 2 in 10,000 psi lubricated plug valve (sour service) the inlet is 2 in 1502 Male Weco Union and the outlet is 2 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 10,000 psi lubricated plug valve or the 3 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 10,000 psi (sour service); the [3 in 15,000 psi lubricated plug valve](/p/plug-valve-lubricated-lt-manual-3-in-1502-m-f-15-000-psi-standard-service) is rated 15,000 psi with 3 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 10,000 psi lubricated plug valve, and how is it tested?",
+          "a": "The 2 in 10,000 psi lubricated plug valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 10,000 psi lubricated plug valve made from?",
+          "a": "The 2 in 10,000 psi lubricated plug valve has a Forged AISI 4130 body; the trim is 17-4PH plug + 410SS body inserts (sealant-injected) and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Sealant is pumped through the stem to seal between plug and body."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 10,000 psi lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 10,000 psi lubricated plug valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 10,000 psi lubricated plug valve connect to?",
+          "a": "It connects to flow iron with a matching 2 in 1502 Male Weco Union and 2 in 1502 Female Weco Union, such as hammer-union pup joints, swivels and manifold spools of the same figure number and pressure rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 10,000 psi lubricated plug valve operated and maintained?",
+          "a": "On the 2 in 10,000 psi lubricated plug valve, it is operated by a manual quarter-turn handle. Being sealant-injected, it needs the correct sealant injected through the stem at service intervals. Read the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves) for the maintenance routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 10,000 psi lubricated plug valve compare with a non-lubricated plug valve?",
+          "a": "The 2 in 10,000 psi lubricated plug valve seals with injected sealant and needs sealant maintenance, while a non-lubricated plug valve uses a PEEK liner and needs none. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 10,000 psi lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1502 M×F, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1502 M×F, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-lubricated-lt-manual-2-in-1502-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 15,000 psi lubricated plug valve used for?",
+          "a": "A 2 in 15,000 psi lubricated plug valve (15K, standard service) is a quarter-turn sealant-injected taper plug valve for isolation in frac, cementing and well-service iron. 15K HP frac iron isolation — sweet wells."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 15,000 psi lubricated plug valve mean?",
+          "a": "On this lubricated plug valve the listing gives a 2 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 15,000 psi lubricated plug valve have?",
+          "a": "On the 2 in 15,000 psi lubricated plug valve (standard service) the inlet is 2 in 1502 Male Weco Union and the outlet is 2 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 15,000 psi lubricated plug valve or the 2 in × 1 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 15,000 psi (standard service); the [2 in × 1 in 10,000 psi lubricated plug valve](/p/plug-valve-lubricated-lt-manual-2-in-1-in-1502-m-f-reducing-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 15,000 psi lubricated plug valve, and how is it tested?",
+          "a": "The 2 in 15,000 psi lubricated plug valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 15,000 psi lubricated plug valve made from?",
+          "a": "The 2 in 15,000 psi lubricated plug valve has a Forged AISI 4130 body; the trim is 17-4PH plug + 410SS body inserts (sealant-injected) and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. Sealant is pumped through the stem to seal between plug and body."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 2 in 15,000 psi lubricated plug valve be used in sour (H2S) gas?",
+          "a": "No. The 2 in 15,000 psi lubricated plug valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 15,000 psi lubricated plug valve connect to?",
+          "a": "It connects to flow iron with a matching 2 in 1502 Male Weco Union and 2 in 1502 Female Weco Union, such as hammer-union pup joints, swivels and manifold spools of the same figure number and pressure rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 15,000 psi lubricated plug valve operated and maintained?",
+          "a": "On the 2 in 15,000 psi lubricated plug valve, it is operated by a manual quarter-turn handle. Being sealant-injected, it needs the correct sealant injected through the stem at service intervals. Read the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves) for the maintenance routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 15,000 psi lubricated plug valve compare with a non-lubricated plug valve?",
+          "a": "The 2 in 15,000 psi lubricated plug valve seals with injected sealant and needs sealant maintenance, while a non-lubricated plug valve uses a PEEK liner and needs none. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 15,000 psi lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1502 M×F, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1502 M×F, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 10,000 psi non-lubricated plug valve used for?",
+          "a": "A 2 in 10,000 psi non-lubricated plug valve (10K, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. PEEK liner — no sealant maintenance. Long-cycle sour frac iron."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in 10,000 psi non-lubricated plug valve mean?",
+          "a": "On this non-lubricated plug valve the listing gives a 2 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this non-lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 10,000 psi non-lubricated plug valve have?",
+          "a": "On the 2 in 10,000 psi non-lubricated plug valve (sour service) the inlet is 2 in 1502 Male Weco Union and the outlet is 2 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 10,000 psi non-lubricated plug valve or the 2-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 10,000 psi (sour service); the [2-1/16 in 15,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-1-16-in-15m-flanged-15-000-psi-sour-service) is rated 15,000 psi with 2-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 10,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 2 in 10,000 psi non-lubricated plug valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 10,000 psi non-lubricated plug valve made from?",
+          "a": "The 2 in 10,000 psi non-lubricated plug valve has a Forged AISI 4130 body; the trim is Inconel 625 plug + PEEK liner (sour) and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 10,000 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 10,000 psi non-lubricated plug valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 10,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 2 in 1502 Male Weco Union and 2 in 1502 Female Weco Union, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 10,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 2 in 10,000 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 10,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 2 in 10,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 10,000 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 1502 M×F, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 1502 M×F, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-2-in-602-m-f-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 6,000 psi non-lubricated plug valve used for?",
+          "a": "A 2 in 6,000 psi non-lubricated plug valve (6K, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. 602 union — production-test iron with PEEK liner for low-maintenance sour service."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 602 union end on the 2 in 6,000 psi non-lubricated plug valve mean?",
+          "a": "On this non-lubricated plug valve the listing gives a 2 in 602 male Weco union on the inlet and a female union on the outlet. 602 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this non-lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 6,000 psi non-lubricated plug valve have?",
+          "a": "On the 2 in 6,000 psi non-lubricated plug valve (sour service) the inlet is 2 in 602 Male Weco Union and the outlet is 2 in 602 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 6,000 psi non-lubricated plug valve or the 2-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 6,000 psi (sour service); the [2-1/16 in 15,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-1-16-in-15m-flanged-15-000-psi-sour-service) is rated 15,000 psi with 2-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 6,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 2 in 6,000 psi non-lubricated plug valve with its Forged AISI 4130 body is rated 6,000 psi working pressure (6K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 6,000 psi non-lubricated plug valve made from?",
+          "a": "The 2 in 6,000 psi non-lubricated plug valve has a Forged AISI 4130 body; the trim is Inconel 625 plug + PEEK liner (sour) and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 6,000 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 6,000 psi non-lubricated plug valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 6,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 2 in 602 Male Weco Union and 2 in 602 Female Weco Union, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 6,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 2 in 6,000 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 6,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 2 in 6,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 6,000 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives United Kingdom as the country of origin of this Anson non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 602 M×F, 6,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 602 M×F, 6,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-2-1-16-in-15m-flanged-15-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in 15,000 psi non-lubricated plug valve used for?",
+          "a": "A 2-1/16 in 15,000 psi non-lubricated plug valve (15K, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. Wellhead Christmas tree side-outlet plug."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 2-1/16 in 15,000 psi valve use?",
+          "a": "The non-lubricated plug valve inlet is a 2-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this non-lubricated plug valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2-1/16 in 15,000 psi non-lubricated plug valve have?",
+          "a": "On the 2-1/16 in 15,000 psi non-lubricated plug valve (sour service) the inlet is 2-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 2-1/16 in API 6A 15M Flanged (RTJ). It bolts to API 6A flanged equipment on the tree."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 15,000 psi non-lubricated plug valve or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2-1/16 in at 15,000 psi (sour service); the [2 in 10,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2-1/16 in 15,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 2-1/16 in 15,000 psi non-lubricated plug valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2-1/16 in 15,000 psi non-lubricated plug valve made from?",
+          "a": "The 2-1/16 in 15,000 psi non-lubricated plug valve has a Forged AISI 4130 body; the trim is Inconel 625 plug + PEEK liner (sour) and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-1.5. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in 15,000 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2-1/16 in 15,000 psi non-lubricated plug valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-1.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2-1/16 in 15,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 2-1/16 in API 6A 15M Flanged (RTJ) and 2-1/16 in API 6A 15M Flanged (RTJ), such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2-1/16 in 15,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 2-1/16 in 15,000 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2-1/16 in 15,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 2-1/16 in 15,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2-1/16 in 15,000 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Plug Valve, Non-lubricated (TE), Manual, 2-1/16 in × 15M Flanged, 15,000 psi, Sour Service from Indus Hydraulics?",
+          "a": "The Plug Valve, Non-lubricated (TE), Manual, 2-1/16 in × 15M Flanged, 15,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-2-in-900-rf-2-220-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 2,220 psi non-lubricated plug valve used for?",
+          "a": "A 2 in 2,220 psi non-lubricated plug valve (ANSI 900, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. ANSI raised-face flanges — process-plant and pipeline manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "What flange does the 2 in 2,220 psi valve use?",
+          "a": "Both ends are 2 in 900# ANSI Raised-Face Flange, built to ASME B16.5 flange dimensions. The flange class sets the pressure limit at the joint, so use matching class flanges, studs and gaskets."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 2,220 psi non-lubricated plug valve have?",
+          "a": "On the 2 in 2,220 psi non-lubricated plug valve (sour service) the inlet is 2 in 900# ANSI Raised-Face Flange and the outlet is 2 in 900# ANSI Raised-Face Flange. It bolts into process pipework of the same flange class."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 2,220 psi non-lubricated plug valve or the 2-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 2,220 psi (sour service); the [2-1/16 in 15,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-1-16-in-15m-flanged-15-000-psi-sour-service) is rated 15,000 psi with 2-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 2,220 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 2 in 2,220 psi non-lubricated plug valve with its Cast WCB carbon steel body is rated 2,220 psi working pressure (ANSI 900 class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 2,220 psi non-lubricated plug valve made from?",
+          "a": "The 2 in 2,220 psi non-lubricated plug valve has a Cast WCB carbon steel body; the trim is 17-4PH plug + PEEK liner and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 2,220 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 2,220 psi non-lubricated plug valve with its Cast WCB carbon steel body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6D. Its design specification on the listing is API 6D; the API certificate and monogram documentation are supplied with the order by the API-licensed manufacturer. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 2,220 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 2 in 900# ANSI Raised-Face Flange and 2 in 900# ANSI Raised-Face Flange, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 2,220 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 2 in 2,220 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 2,220 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 2 in 2,220 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in 2,220 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 900# RF, 2,220 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 900# RF, 2,220 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-lubricated-lt-manual-3-in-1502-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 15,000 psi lubricated plug valve used for?",
+          "a": "A 3 in 15,000 psi lubricated plug valve (15K, standard service) is a quarter-turn sealant-injected taper plug valve for isolation in frac, cementing and well-service iron. Large-bore HP frac discharge and cement-pumping iron."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 3 in 15,000 psi lubricated plug valve mean?",
+          "a": "On this lubricated plug valve the listing gives a 3 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 15,000 psi lubricated plug valve have?",
+          "a": "On the 3 in 15,000 psi lubricated plug valve (standard service) the inlet is 3 in 1502 Male Weco Union and the outlet is 3 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 15,000 psi lubricated plug valve or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 15,000 psi (standard service); the [2 in 10,000 psi lubricated plug valve](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 15,000 psi lubricated plug valve, and how is it tested?",
+          "a": "The 3 in 15,000 psi lubricated plug valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 15,000 psi lubricated plug valve made from?",
+          "a": "The 3 in 15,000 psi lubricated plug valve has a Forged AISI 4130 body; the trim is 17-4PH plug + 410SS body inserts (sealant-injected) and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. Sealant is pumped through the stem to seal between plug and body."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 3 in 15,000 psi lubricated plug valve be used in sour (H2S) gas?",
+          "a": "No. The 3 in 15,000 psi lubricated plug valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 15,000 psi lubricated plug valve connect to?",
+          "a": "It connects to flow iron with a matching 3 in 1502 Male Weco Union and 3 in 1502 Female Weco Union, such as hammer-union pup joints, swivels and manifold spools of the same figure number and pressure rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 15,000 psi lubricated plug valve operated and maintained?",
+          "a": "On the 3 in 15,000 psi lubricated plug valve, it is operated by a manual quarter-turn handle. Being sealant-injected, it needs the correct sealant injected through the stem at service intervals. Read the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves) for the maintenance routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 15,000 psi lubricated plug valve compare with a non-lubricated plug valve?",
+          "a": "The 3 in 15,000 psi lubricated plug valve seals with injected sealant and needs sealant maintenance, while a non-lubricated plug valve uses a PEEK liner and needs none. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 15,000 psi lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Lubricated (LT), Manual, 3 in × 1502 M×F, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Lubricated (LT), Manual, 3 in × 1502 M×F, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-2-1-16-in-15m-flanged-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in 15,000 psi non-lubricated plug valve used for?",
+          "a": "A 2-1/16 in 15,000 psi non-lubricated plug valve (15K, standard service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. Wellhead side-outlet plug for sweet HP wells."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 2-1/16 in 15,000 psi valve use?",
+          "a": "The non-lubricated plug valve inlet is a 2-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this non-lubricated plug valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2-1/16 in 15,000 psi non-lubricated plug valve have?",
+          "a": "On the 2-1/16 in 15,000 psi non-lubricated plug valve (standard service) the inlet is 2-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 2-1/16 in API 6A 15M Flanged (RTJ). It bolts to API 6A flanged equipment on the tree."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 15,000 psi non-lubricated plug valve or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2-1/16 in at 15,000 psi (standard service); the [2 in 10,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2-1/16 in 15,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 2-1/16 in 15,000 psi non-lubricated plug valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2-1/16 in 15,000 psi non-lubricated plug valve made from?",
+          "a": "The 2-1/16 in 15,000 psi non-lubricated plug valve has a Forged AISI 4130 body; the trim is 17-4PH plug + PEEK liner and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 2-1/16 in 15,000 psi non-lubricated plug valve be used in sour (H2S) gas?",
+          "a": "No. The 2-1/16 in 15,000 psi non-lubricated plug valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2-1/16 in 15,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 2-1/16 in API 6A 15M Flanged (RTJ) and 2-1/16 in API 6A 15M Flanged (RTJ), such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2-1/16 in 15,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 2-1/16 in 15,000 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2-1/16 in 15,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 2-1/16 in 15,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2-1/16 in 15,000 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Plug Valve, Non-lubricated (TE), Manual, 2-1/16 in × 15M Flanged, 15,000 psi, Standard Service from Indus Hydraulics?",
+          "a": "The Plug Valve, Non-lubricated (TE), Manual, 2-1/16 in × 15M Flanged, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-plug-valve-10000-20000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A high-pressure plug valve used for?",
+          "a": "An API 6A high-pressure plug valve is a quarter-turn, bidirectional valve for cementing, fracturing, acidizing, coiled tubing and sand-washing lines, in 1-13/16\" to 4-1/16\" and 10,000 to 20,000 psi working pressure. It is supplied for standard or sour service."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A plug valve come in?",
+          "a": "The listing covers 1-13/16\" to 4-1/16\" nominal bore at 10,000 to 20,000 psi working pressure, with flanged or hammer-union ends. Give the bore, pressure and end connection on the enquiry and we confirm the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Can the API 6A plug valve be handle-operated or gear-operated?",
+          "a": "The listing gives handle or gear operator. Larger bores and higher pressures normally take the gear operator to reduce turning effort; state the operator type and the bore on the enquiry."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature class and PSL does the API 6A plug valve carry?",
+          "a": "The listing gives API 6A temperature class PU (-29 °C to 121 °C) at PSL 1 to 3 and PR1. State the PSL and PR level you need on the enquiry; test pressures follow API 6A at the PSL ordered."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class is needed on an API 6A plug valve for sour service?",
+          "a": "Body material is offered in API 6A material classes AA to HH, with DD to HH for sour service to NACE MR0175 / ISO 15156. Give the H2S partial pressure, CO2 and chloride content and we confirm the class."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A high-pressure plug valve API monogrammed?",
+          "a": "It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. API 6A documentation, the hydrostatic test record and the material certificates for the PSL ordered travel with the valve."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections can the API 6A plug valve be supplied with?",
+          "a": "Flanged or hammer-union ends, per the listing. Match the flange or union figure number and pressure rating to the mating flow iron, and browse the [plug valves shelf](/c/oilfield-plug-valves) for union-end plug valves in stock."
+        },
+        {
+          "slot": "I",
+          "q": "Why choose a quarter-turn plug valve for high-pressure flow iron?",
+          "a": "A quarter-turn plug valve opens or closes fully in a 90 degree turn, which suits cementing and frac lines that are cycled often. The plug is bidirectional, so the valve can be installed in either direction. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a 10,000 to 20,000 psi API 6A plug valve typically used?",
+          "a": "It is typically fitted in cementing, fracturing, acidizing, coiled-tubing and sand-washing lines, upstream and downstream of pumps and manifolds. For ready-made union-end valves see the [2 in 1502 plug valve](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "K",
+          "q": "API 6A plug valve or gate valve for a high-pressure line?",
+          "a": "Use a plug valve where fast quarter-turn isolation in frac and cementing iron matters; use an API 6A gate valve on trees and wellheads. See the [gate valves shelf](/c/oilfield-gate-valves) for full-bore gate valves."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A plug valve be supplied from Dubai with test records?",
+          "a": "Yes. It is supplied from Dubai with API 6A documentation, the test record and material certificates, and exported worldwide. Tell us the destination and the specification so we confirm the documents on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A high-pressure plug valve in Dubai?",
+          "a": "Yes. We keep the API 6A high-pressure plug valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-2-in-206-m-f-2-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 2,000 psi non-lubricated plug valve used for?",
+          "a": "A 2 in 2,000 psi non-lubricated plug valve (2K, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. Cost-effective low-pressure sour-service iron — cementing and kill-fluid lines."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 206 union end on the 2 in 2,000 psi non-lubricated plug valve mean?",
+          "a": "On this non-lubricated plug valve the listing gives a 2 in 206 male Weco union on the inlet and a female union on the outlet. 206 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this non-lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 2,000 psi non-lubricated plug valve have?",
+          "a": "On the 2 in 2,000 psi non-lubricated plug valve (sour service) the inlet is 2 in 206 Male Weco Union and the outlet is 2 in 206 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in 2,000 psi non-lubricated plug valve or the 2-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in at 2,000 psi (sour service); the [2-1/16 in 15,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-1-16-in-15m-flanged-15-000-psi-sour-service) is rated 15,000 psi with 2-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 2,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 2 in 2,000 psi non-lubricated plug valve with its Forged carbon steel (LF2) body is rated 2,000 psi working pressure (2K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in 2,000 psi non-lubricated plug valve made from?",
+          "a": "The 2 in 2,000 psi non-lubricated plug valve has a Forged carbon steel (LF2) body; the trim is 17-4PH plug + PEEK liner and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in 2,000 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in 2,000 psi non-lubricated plug valve with its Forged carbon steel (LF2) body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 2,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 2 in 206 Male Weco Union and 2 in 206 Female Weco Union, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 2,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 2 in 2,000 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 2,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 2 in 2,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2 in 2,000 psi non-lubricated plug valve be exported from Dubai with documents?",
+          "a": "Yes. We supply the 2 in 2,000 psi non-lubricated plug valve from Dubai, UAE and ship worldwide with the commercial invoice, packing list and test documents. Tell us the destination and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 2 in 2,000 psi non-lubricated plug valve in Dubai?",
+          "a": "Yes. We keep the 2 in 2,000 psi non-lubricated plug valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-3-in-206-m-f-2-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 2,000 psi non-lubricated plug valve used for?",
+          "a": "A 3 in 2,000 psi non-lubricated plug valve (2K, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. 3-inch low-pressure cementing and kill-fluid iron, sour-rated."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 206 union end on the 3 in 2,000 psi non-lubricated plug valve mean?",
+          "a": "On this non-lubricated plug valve the listing gives a 3 in 206 male Weco union on the inlet and a female union on the outlet. 206 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this non-lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 2,000 psi non-lubricated plug valve have?",
+          "a": "On the 3 in 2,000 psi non-lubricated plug valve (sour service) the inlet is 3 in 206 Male Weco Union and the outlet is 3 in 206 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 2,000 psi non-lubricated plug valve or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 2,000 psi (sour service); the [2 in 10,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 2,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 3 in 2,000 psi non-lubricated plug valve with its Forged carbon steel (LF2) body is rated 2,000 psi working pressure (2K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 2,000 psi non-lubricated plug valve made from?",
+          "a": "The 3 in 2,000 psi non-lubricated plug valve has a Forged carbon steel (LF2) body; the trim is 17-4PH plug + PEEK liner and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 2,000 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 2,000 psi non-lubricated plug valve with its Forged carbon steel (LF2) body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 2,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 3 in 206 Male Weco Union and 3 in 206 Female Weco Union, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 2,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 3 in 2,000 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 2,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 3 in 2,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 3 in 2,000 psi non-lubricated plug valve be exported from Dubai with documents?",
+          "a": "Yes. We supply the 3 in 2,000 psi non-lubricated plug valve from Dubai, UAE and ship worldwide with the commercial invoice, packing list and test documents. Tell us the destination and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 3 in 2,000 psi non-lubricated plug valve in Dubai?",
+          "a": "Yes. We keep the 3 in 2,000 psi non-lubricated plug valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-lubricated-lt-manual-2-in-1-in-1502-m-f-reducing-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in × 1 in 10,000 psi lubricated plug valve used for?",
+          "a": "A 2 in × 1 in 10,000 psi lubricated plug valve (10K, sour service) is a quarter-turn sealant-injected taper plug valve for isolation in frac, cementing and well-service iron. Adapts 2-inch frac iron to 1-inch lines — pump-in / kill-fluid service."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in × 1 in 10,000 psi lubricated plug valve mean?",
+          "a": "On this lubricated plug valve the listing gives a 2 in × 1 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in × 1 in 10,000 psi lubricated plug valve have?",
+          "a": "On the 2 in × 1 in 10,000 psi lubricated plug valve (sour service) the inlet is 2 in 1502 Male Weco Union and the outlet is 1 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in × 1 in 10,000 psi lubricated plug valve or the 2 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in × 1 in at 10,000 psi (sour service); the [2 in 15,000 psi lubricated plug valve](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-15-000-psi-standard-service) is rated 15,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in × 1 in 10,000 psi lubricated plug valve, and how is it tested?",
+          "a": "The 2 in × 1 in 10,000 psi lubricated plug valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in × 1 in 10,000 psi lubricated plug valve made from?",
+          "a": "The 2 in × 1 in 10,000 psi lubricated plug valve has a Forged AISI 4130 body; the trim is 17-4PH plug + 410SS body inserts (sealant-injected) and the seals are HNBR + graphite packing (sour). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. Sealant is pumped through the stem to seal between plug and body."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in × 1 in 10,000 psi lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in × 1 in 10,000 psi lubricated plug valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in × 1 in 10,000 psi lubricated plug valve connect to?",
+          "a": "It connects to flow iron with a matching 2 in 1502 Male Weco Union and 1 in 1502 Female Weco Union, such as hammer-union pup joints, swivels and manifold spools of the same figure number and pressure rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in × 1 in 10,000 psi lubricated plug valve operated and maintained?",
+          "a": "On the 2 in × 1 in 10,000 psi lubricated plug valve, it is operated by a manual quarter-turn handle. Being sealant-injected, it needs the correct sealant injected through the stem at service intervals. Read the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves) for the maintenance routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in × 1 in 10,000 psi lubricated plug valve compare with a non-lubricated plug valve?",
+          "a": "The 2 in × 1 in 10,000 psi lubricated plug valve seals with injected sealant and needs sealant maintenance, while a non-lubricated plug valve uses a PEEK liner and needs none. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in × 1 in 10,000 psi lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this SPM Oil & Gas lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1 in 1502 M×F (Reducing), 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1 in 1502 M×F (Reducing), 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-lubricated-lt-manual-2-in-1-in-1502-m-f-reducing-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in × 1 in 15,000 psi lubricated plug valve used for?",
+          "a": "A 2 in × 1 in 15,000 psi lubricated plug valve (15K, standard service) is a quarter-turn sealant-injected taper plug valve for isolation in frac, cementing and well-service iron. HP adapter for instrument tap-offs and small-line pump-in."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in × 1 in 15,000 psi lubricated plug valve mean?",
+          "a": "On this lubricated plug valve the listing gives a 2 in × 1 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in × 1 in 15,000 psi lubricated plug valve have?",
+          "a": "On the 2 in × 1 in 15,000 psi lubricated plug valve (standard service) the inlet is 2 in 1502 Male Weco Union and the outlet is 1 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in × 1 in 15,000 psi lubricated plug valve or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in × 1 in at 15,000 psi (standard service); the [2 in 10,000 psi lubricated plug valve](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in × 1 in 15,000 psi lubricated plug valve, and how is it tested?",
+          "a": "The 2 in × 1 in 15,000 psi lubricated plug valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in × 1 in 15,000 psi lubricated plug valve made from?",
+          "a": "The 2 in × 1 in 15,000 psi lubricated plug valve has a Forged AISI 4130 body; the trim is 17-4PH plug + 410SS body inserts (sealant-injected) and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. Sealant is pumped through the stem to seal between plug and body."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 2 in × 1 in 15,000 psi lubricated plug valve be used in sour (H2S) gas?",
+          "a": "No. The 2 in × 1 in 15,000 psi lubricated plug valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in × 1 in 15,000 psi lubricated plug valve connect to?",
+          "a": "It connects to flow iron with a matching 2 in 1502 Male Weco Union and 1 in 1502 Female Weco Union, such as hammer-union pup joints, swivels and manifold spools of the same figure number and pressure rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in × 1 in 15,000 psi lubricated plug valve operated and maintained?",
+          "a": "On the 2 in × 1 in 15,000 psi lubricated plug valve, it is operated by a manual quarter-turn handle. Being sealant-injected, it needs the correct sealant injected through the stem at service intervals. Read the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves) for the maintenance routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in × 1 in 15,000 psi lubricated plug valve compare with a non-lubricated plug valve?",
+          "a": "The 2 in × 1 in 15,000 psi lubricated plug valve seals with injected sealant and needs sealant maintenance, while a non-lubricated plug valve uses a PEEK liner and needs none. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in × 1 in 15,000 psi lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this SPM Oil & Gas lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1 in 1502 M×F (Reducing), 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Lubricated (LT), Manual, 2 in × 1 in 1502 M×F (Reducing), 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-2-in-1-in-1502-m-f-reducing-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in × 1 in 10,000 psi non-lubricated plug valve used for?",
+          "a": "A 2 in × 1 in 10,000 psi non-lubricated plug valve (10K, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. PEEK liner — no sealant maintenance. Sour-rated trim with Inconel 625 plug."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 2 in × 1 in 10,000 psi non-lubricated plug valve mean?",
+          "a": "On this non-lubricated plug valve the listing gives a 2 in × 1 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this non-lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in × 1 in 10,000 psi non-lubricated plug valve have?",
+          "a": "On the 2 in × 1 in 10,000 psi non-lubricated plug valve (sour service) the inlet is 2 in 1502 Male Weco Union and the outlet is 1 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2 in × 1 in 10,000 psi non-lubricated plug valve or the 2 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2 in × 1 in at 10,000 psi (sour service); the [2 in 6,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-in-602-m-f-6-000-psi-sour-service) is rated 6,000 psi with 2 in 602 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in × 1 in 10,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 2 in × 1 in 10,000 psi non-lubricated plug valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2 in × 1 in 10,000 psi non-lubricated plug valve made from?",
+          "a": "The 2 in × 1 in 10,000 psi non-lubricated plug valve has a Forged AISI 4130 body; the trim is Inconel 625 plug + PEEK liner (sour) and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2 in × 1 in 10,000 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2 in × 1 in 10,000 psi non-lubricated plug valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in × 1 in 10,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 2 in 1502 Male Weco Union and 1 in 1502 Female Weco Union, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in × 1 in 10,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 2 in × 1 in 10,000 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in × 1 in 10,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 2 in × 1 in 10,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2 in × 1 in 10,000 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this SPM Oil & Gas non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 1 in 1502 M×F (Reducing), 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Non-lubricated (TE), Manual, 2 in × 1 in 1502 M×F (Reducing), 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-manual-3-in-300-rf-740-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 740 psi non-lubricated plug valve used for?",
+          "a": "A 3 in 740 psi non-lubricated plug valve (ANSI 300, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. Process-plant low-pressure block valve, sour-rated."
+        },
+        {
+          "slot": "B",
+          "q": "What flange does the 3 in 740 psi valve use?",
+          "a": "Both ends are 3 in 300# ANSI Raised-Face Flange, built to ASME B16.5 flange dimensions. The flange class sets the pressure limit at the joint, so use matching class flanges, studs and gaskets."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 740 psi non-lubricated plug valve have?",
+          "a": "On the 3 in 740 psi non-lubricated plug valve (sour service) the inlet is 3 in 300# ANSI Raised-Face Flange and the outlet is 3 in 300# ANSI Raised-Face Flange. It bolts into process pipework of the same flange class."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 740 psi non-lubricated plug valve or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 740 psi (sour service); the [2 in 10,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 740 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 3 in 740 psi non-lubricated plug valve with its Cast WCB carbon steel body is rated 740 psi working pressure (ANSI 300 class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 740 psi non-lubricated plug valve made from?",
+          "a": "The 3 in 740 psi non-lubricated plug valve has a Cast WCB carbon steel body; the trim is 17-4PH plug + PEEK liner and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 740 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 740 psi non-lubricated plug valve with its Cast WCB carbon steel body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6D. Its design specification on the listing is API 6D; the API certificate and monogram documentation are supplied with the order by the API-licensed manufacturer. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 740 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 3 in 300# ANSI Raised-Face Flange and 3 in 300# ANSI Raised-Face Flange, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 740 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 3 in 740 psi non-lubricated plug valve, it is operated by a manual quarter-turn handle. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 740 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 3 in 740 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 740 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Non-lubricated (TE), Manual, 3 in × 300# RF, 740 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Non-lubricated (TE), Manual, 3 in × 300# RF, 740 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-lubricated-lt-gear-operated-3-in-1502-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 15,000 psi lubricated plug valve used for?",
+          "a": "A 3 in 15,000 psi lubricated plug valve (15K, standard service) is a quarter-turn sealant-injected taper plug valve for isolation in frac, cementing and well-service iron. Larger 3-inch bore for high-rate frac discharge and cement-unit pump-off."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 3 in 15,000 psi lubricated plug valve mean?",
+          "a": "On this lubricated plug valve the listing gives a 3 in 1502 male Weco union on the inlet and a female union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 15,000 psi lubricated plug valve have?",
+          "a": "On the 3 in 15,000 psi lubricated plug valve (standard service) the inlet is 3 in 1502 Male Weco Union and the outlet is 3 in 1502 Female Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 15,000 psi lubricated plug valve or the 2 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 15,000 psi (standard service); the [2 in 10,000 psi lubricated plug valve](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service) is rated 10,000 psi with 2 in 1502 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 15,000 psi lubricated plug valve, and how is it tested?",
+          "a": "The 3 in 15,000 psi lubricated plug valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 15,000 psi lubricated plug valve made from?",
+          "a": "The 3 in 15,000 psi lubricated plug valve has a Forged AISI 4130 body; the trim is 17-4PH plug + 410SS body inserts (sealant-injected) and the seals are RPTFE back-up + Viton (FKM) primary seals. This is the standard-service build, so it is not offered here for H2S service. Sealant is pumped through the stem to seal between plug and body."
+        },
+        {
+          "slot": "G",
+          "q": "Can the standard-service 3 in 15,000 psi lubricated plug valve be used in sour (H2S) gas?",
+          "a": "No. The 3 in 15,000 psi lubricated plug valve listing is standard service only. For sour wells order the NACE MR0175 / ISO 15156 variant and state the H2S partial pressure on the RFQ. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 15,000 psi lubricated plug valve connect to?",
+          "a": "It connects to flow iron with a matching 3 in 1502 Male Weco Union and 3 in 1502 Female Weco Union, such as hammer-union pup joints, swivels and manifold spools of the same figure number and pressure rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 15,000 psi lubricated plug valve operated and maintained?",
+          "a": "On the 3 in 15,000 psi lubricated plug valve, it is operated by a gear-operated handwheel. Being sealant-injected, it needs the correct sealant injected through the stem at service intervals. Read the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves) for the maintenance routine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 15,000 psi lubricated plug valve compare with a non-lubricated plug valve?",
+          "a": "The 3 in 15,000 psi lubricated plug valve seals with injected sealant and needs sealant maintenance, while a non-lubricated plug valve uses a PEEK liner and needs none. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-non-lubricated-te-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 15,000 psi lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Lubricated (LT), Gear-Operated, 3 in × 1502 M×F, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Lubricated (LT), Gear-Operated, 3 in × 1502 M×F, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-valve-non-lubricated-te-gear-operated-3-in-1502-f-m-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 10,000 psi non-lubricated plug valve used for?",
+          "a": "A 3 in 10,000 psi non-lubricated plug valve (10K, sour service) is a quarter-turn plug valve with a PEEK liner for isolation in flow iron, with no sealant to maintain. Large-bore sour iron with PEEK liner — high-rate sour wells."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Weco 1502 union end on the 3 in 10,000 psi non-lubricated plug valve mean?",
+          "a": "On this non-lubricated plug valve the listing gives a 3 in 1502 female Weco union on the inlet and a male union on the outlet. 1502 is the union figure number, which fixes the thread, seal and pressure class of the joint, so mate this non-lubricated plug valve only with a union of the same figure number and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 10,000 psi non-lubricated plug valve have?",
+          "a": "On the 3 in 10,000 psi non-lubricated plug valve (sour service) the inlet is 3 in 1502 Female Weco Union and the outlet is 3 in 1502 Male Weco Union. A union end makes up quickly in flow iron; never join two different figure numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 10,000 psi non-lubricated plug valve or the 2 in 6,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3 in at 10,000 psi (sour service); the [2 in 6,000 psi non-lubricated plug valve](/p/plug-valve-non-lubricated-te-manual-2-in-602-m-f-6-000-psi-sour-service) is rated 6,000 psi with 2 in 602 Male Weco Union on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 10,000 psi non-lubricated plug valve, and how is it tested?",
+          "a": "The 3 in 10,000 psi non-lubricated plug valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3 in 10,000 psi non-lubricated plug valve made from?",
+          "a": "The 3 in 10,000 psi non-lubricated plug valve has a Forged AISI 4130 body; the trim is Inconel 625 plug + PEEK liner (sour) and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The PEEK liner replaces the sealant system, so there is no sealant to inject."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 10,000 psi non-lubricated plug valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3 in 10,000 psi non-lubricated plug valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 10,000 psi non-lubricated plug valve connect to?",
+          "a": "It connects to flow iron or pipework with a matching 3 in 1502 Female Weco Union and 3 in 1502 Male Weco Union, such as pup joints, check valves and manifold spools of the same rating. Browse the [plug valves shelf](/c/oilfield-plug-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 10,000 psi non-lubricated plug valve operated and maintained?",
+          "a": "On the 3 in 10,000 psi non-lubricated plug valve, it is operated by a gear-operated handwheel. The PEEK liner means no sealant injection, so routine service is limited to inspection and seal replacement. See the [lubricated vs non-lubricated plug valve guide](/blog/lubricated-vs-non-lubricated-plug-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 10,000 psi non-lubricated plug valve compare with a lubricated plug valve?",
+          "a": "The 3 in 10,000 psi non-lubricated plug valve uses a PEEK liner and needs no sealant maintenance, while a lubricated plug valve is sealant-injected and suits very high-cycle duty. See the [Plug Valve, 2 in, 10,000 psi](/p/plug-valve-lubricated-lt-manual-2-in-1502-m-f-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 in 10,000 psi non-lubricated plug valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine non-lubricated plug valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Plug Valve, Non-lubricated (TE), Gear-Operated, 3 in × 1502 F×M, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Plug Valve, Non-lubricated (TE), Gear-Operated, 3 in × 1502 F×M, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

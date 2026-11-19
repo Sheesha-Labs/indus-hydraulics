@@ -1,0 +1,413 @@
+{
+  "family": "hydraulic-vane-pumps-03",
+  "extraFacts": [
+    {
+      "fact": "Vane pump flow in US gpm equals displacement (in³/rev) x speed (rpm) / 231. Vickers V10 pumps run 3.3 to 22.8 cc/rev and V20 pumps 19.5 to 42.4 cc/rev, rated 172 bar (2,500 psi) except the largest rings (2,200 or 2,000 psi). Vickers V-series: anti-wear hydraulic oils or SAE J183 crankcase oils; running viscosity 13 to 54 cSt; inlet vacuum not above 5 inHg on petroleum oil; recommended oil temperature 49 °C, maximum 65 °C; the ring number in the model code is the flow in US gpm at 1,200 rpm and 100 psi; rotation L = left hand viewed from the shaft end; the shaft carries the combined torque of a double pump.",
+      "source": "Indus Hydraulics guide /blog/vane-pump-guide-v10-v20-t6, citing Vickers V10/V20 technical information"
+    },
+    {
+      "fact": "Vickers single vane pump listing counts from the size table: 116 part numbers, 34 keyed shaft rows and 6 splined shaft rows; displacements 0.4, 0.6, 0.8, 1, 1.19, 1.39, 1.62, 1.81, 2.22, 2.38, 2.59, 2.78, 3.39, 4.13, 4.94, 5.91, 6.83, 9.85 and 11.75 cu in per revolution.",
+      "source": "Indus Hydraulics size table (counted from rows)"
+    },
+    {
+      "fact": "Parker T7B-B09 sibling figures used for comparison: 290 bar continuous, 3600 rpm maximum, ISO 3019-2 two-bolt flange; Parker T6C-012: 2800 rpm maximum, SAE B two-bolt flange.",
+      "source": "Indus Hydraulics listings for Parker T6C and T7B (maker figures)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Parker T6C Vane Pump, 012 Cartridge, 37.1 cm³/rev [IH-T6C-012-1R00-B1]:  Parker T6C-012-1R00-B1: a Denison-technology fixed-displacement single vane pump with the 012 cartridge, 37.1 cm³/rev, rated 275 bar intermittent and 240 bar continuous on antiwear oil, up to 2800 rpm. Supplied new. | Displacement 37.1; Pressure (peak) 275; Speed (max) 2800; Pump type Vane, fixed displacement, single; Mounting SAE B two-bolt flange (SAE J744); Rotation Clockwise (R); Weight 15.7; Continuous pressure 240; Flow at 1500 rpm, 0 bar 55.6; Shaft Keyed SAE B, 22.2 mm; Seals S1 nitrile (mineral oil) | 0 part numbers (e.g. ); ; rows:  || Parker T7B Vane Pump, B09 Cartridge, 28.0 cm³/rev [IH-T7B-B09-2R00-A100]:  Parker T7B single vane pump with the B09 cartridge: 28.0 cm³/rev, rated 320 bar intermittent and 290 bar continuous on antiwear oil, up to 3600 rpm, on an ISO 3019-2 two-bolt flange. SAE B flange version: T7BS. | Displacement 28.0; Pressure (peak) 320; Speed (max) 3600; Pump type Vane, fixed displacement, single; Mounting ISO 3019-2 100A2HW two-bolt flange (T7BS: SAE B); Rotation Clockwise (R); Weight 23.0; Continuous pressure 290; Flow at 1500 rpm, 0 bar 42.0; Shaft Keyed, ISO R775, 25 mm | 0 part numbers (e.g. ); ; rows:  || Vickers Fixed Displacement Double Vane Pumps [IH-VKS-FIXED-DISPLACEMENT-DOUBLE-VANE-PUMPS]: pressure stated by the maker 2,495 to 3,046 psi (172 to 210 bar), by size Vickers Fixed Displacement Double Vane Pumps: 53 part numbers. | Application Oil, Gas, Metal Cutting, Dump Truck, Wheel Loader, Plastic Injection Molding; Material Cast Iron; Seal Material Buna N; Series VHO Series | 53 part numbers (e.g. 02-137191-3, 02-137201-1, 02-137272-3, 02-137323-3); flow 17 to 402.96 gpm; maximum pressure 2,495 to 3,046 psi; rows: VICKERS 02-137191-3 / VICKERS 02-137201-1 / VICKERS 02-137272-3 / VICKERS 02-137323-3 / VICKERS 02-137328-1 / VICKERS 02-137366-1 / VICKERS 02-137432-1 / VICKERS 02-137440-1 || Vickers Fixed Displacement Single Vane Pumps [IH-VKS-FIXED-DISPLACEMENT-SINGLE-VANE-PUMPS]: pressure stated by the maker 1,000 to 2,500 psi (69 to 172 bar), by size Vickers Fixed Displacement Single Vane Pumps, 0.4 cu. in./rev. to 60 cu. in./rev.: 116 part numbers. | Application Lifts, Mobile Equipment, Power Units; Discharge Connection Type Flange; Housing Material Cast Iron; Shaft Rotation Right; Shaft Style Keyed | 116 part numbers (e.g. 02-137113-1, 372552-7, 02-137121-1, 02-137151-1); shaft Keyed and Spline; flow 2 to 234.738 gpm; displacement 0.4 to 60 cu in/rev; maximum pressure 1,000 to 2,500 psi; rows: Single Vane Pump 17 Gpm 3.39 Cubic In./rev / VICKERS 372552-7 / VICKERS 02-137121-1 / VICKERS 02-137151-1 / VICKERS 02-137152-3 / VICKERS 382061-3 / VICKERS 390902-3 / VICKERS 382075-5 || Vickers Single Unit Thru-Drive Vane Pumps [IH-VKS-SINGLE-UNIT-THRU-DRIVE-VANE-PUMPS]:  Vickers Single Unit Thru-Drive Vane Pumps: 11 part numbers. | Application Oil, Gas, Metal Cutting, Dump Truck, Wheel Loader, Plastic Injection Molding; Material Cast Iron; Seal Material Buna N; Series 25V Series | 11 part numbers (e.g. 02-125379-N, 708-0024-032, 708-0030-032, 708-0017-032); flow 121.233 to 432.76 gpm; rows: VICKERS 02-125379-N / VICKERS 708-0024-032 / VICKERS 708-0030-032 / VICKERS 708-0017-032 / VICKERS 02-125403-1 / VICKERS 02-125527-1 / VICKERS 708-0042-032 / VICKERS 02-306209-3 || Vickers V10 and V20 Vane Pumps [IH-VKR-V10-V20]:  Vickers V10 and V20 Vane Pumps. 4 part numbers. | Type vane pump | 4 part numbers (e.g. V10P1P7K11A6H10, V10P1P7K11B6H10, V10P1P7K11C6H10, V201S11S62C11L); ; rows: V10 Series Single Vane Hydraulic Pump: V10P 1P7K 11A6H 10 / V10 Series Single Vane Hydraulic Pump: V10P 1P7K 11B6H 10 / V10 Series Single Vane Hydraulic Pump: V10P 1P7K 11C6H 10 / Vickers Single Vane Pump",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-t6c-vane-pump",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker T6C-012 vane pump with the 012 cartridge used for?",
+          "a": "The Parker T6C-012 vane pump is a fixed-displacement industrial vane pump from Parker's Denison-technology T7, T67 and T6 range, made in Vierzon, France. The 012 cartridge displaces 37.1 cm³/rev, and the pump is serviced by changing the cartridge; more on the family is in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the model code T6C-012-1R00-B1 on this Parker pump?",
+          "a": "T6C-012-1R00-B1 is a T6 single vane pump (C, SAE B two-bolt flange) with the 012 cartridge, 37.1 cm³/rev. The 1 is the keyed SAE B shaft, 22.2 mm, R is clockwise rotation, 00 is standard porting, B is the design letter and 1 is S1 nitrile seals for mineral oil. Quote the nameplate code if any element differs."
+        },
+        {
+          "slot": "D",
+          "q": "Is the Parker T6C 012 cartridge a 12 cm³ pump?",
+          "a": "No. The 012 cartridge displaces 37.1 cm³/rev, and Parker's current catalogue writes the same cartridge as B12. At 1500 rpm and 24 cSt the pump gives 55.6 L/min at 0 bar, 50.6 L/min at 140 bar and 47.1 L/min at 240 bar."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker T6C-012 vane pump rated for?",
+          "a": "On antiwear mineral oil (HF-0, HF-2) the T6C-012 is rated 240 bar continuous and 275 bar intermittent. On HF-1, water glycol (HF-4) and synthetic fluids (HF-5) this falls to 175 bar continuous and 210 bar intermittent, and on invert emulsion (HF-3) to 140 bar continuous and 175 bar intermittent."
+        },
+        {
+          "slot": "E",
+          "q": "How fast can the Parker T6C-012 vane pump run?",
+          "a": "The T6C-012 runs from 600 to 2800 rpm on mineral oil, and is limited to 1800 rpm on HF-3, HF-4 and HF-5 fluids. Input power at 1500 rpm is 14.4 kW at 140 bar and 24.1 kW at 240 bar, so size the motor for the pressure you run at."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids and seals suit the Parker T6C-012 vane pump?",
+          "a": "This T6C has S1 nitrile seals, which suit mineral oil, and the 275 bar rating applies to antiwear mineral oil. Water glycol, synthetic and invert-emulsion fluids lower the pressure and speed limits shown for the pump, so state the fluid when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What are the port and flange sizes on the Parker T6C-012?",
+          "a": "The mounting is an SAE B two-bolt flange (SAE J744) with a keyed SAE B shaft of 22.2 mm. Ports are SAE J518 four-bolt flanges: 1 1/2 in suction and 1 in pressure; the pump weighs 15.7 kg."
+        },
+        {
+          "slot": "H",
+          "q": "Can a second pump be driven from the Parker T6C-012?",
+          "a": "Not from this model: the plain T6C is a single pump with no rear drive. For tandem arrangements Parker sells the separate T6*R thru-drive series, with SAE A, B or C rear drives; see the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) for double-pump options."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Parker T6C-012 vane pump serviced?",
+          "a": "The pumping parts sit in a replaceable cartridge, so the pump can be serviced, or its displacement changed, by fitting a new cartridge into the existing body. Quote T6C-012-1R00-B1 or its current form T6C-B12-1R00-B1 when ordering one."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker T6C-012 compare with the Parker T7B-B09 vane pump?",
+          "a": "The T6C-012 gives 37.1 cm³/rev at 240 bar continuous and up to 2800 rpm, while the [Parker T7B vane pump](/p/parker-t7b-vane-pump) gives 28.0 cm³/rev at 290 bar continuous and up to 3600 rpm. The T6C mounts on an SAE B flange, the T7B on an ISO 3019-2 flange."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker T6C vane pump made?",
+          "a": "Parker makes the T6C in Vierzon, France. We supply new pumps and export them from Dubai, UAE; tell us the destination so the paperwork matches, and see the [vane pumps shelf](/c/hydraulic-vane-pumps) for the other vane pumps."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker T6C-012 vane pump in stock in Dubai?",
+          "a": "Yes, we hold the Parker T6C-012 vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-t7b-vane-pump",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker T7B-B09 vane pump used for?",
+          "a": "The Parker T7B-B09 vane pump is a fixed-displacement industrial vane pump from Parker's Denison-technology T7, T67 and T6 range, built for high pressure in a small envelope. The B09 cartridge displaces 28.0 cm³/rev; see the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) for where it sits against the V-series pumps."
+        },
+        {
+          "slot": "B",
+          "q": "What is the difference between the Parker T7B and the T7BS vane pump?",
+          "a": "The flange. The T7B mounts on an ISO 3019-2 100A2HW two-bolt flange, and the T7BS on an SAE B two-bolt flange with extra SAE shaft options; both take the same B cartridges. Tell us which you need, with the code on your pump nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "Is the Parker T7B B09 cartridge a 9 cm³ pump?",
+          "a": "No. B09 is the cartridge code, and the B09 cartridge displaces 28.0 cm³/rev. At 1500 rpm and 24 cSt the pump gives 42.0 L/min at 0 bar, 40.3 L/min at 140 bar and 38.1 L/min at 320 bar."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker T7B-B09 rated for?",
+          "a": "On antiwear mineral oil (HF-0, HF-2) the T7B-B09 is rated 290 bar continuous and 320 bar intermittent. On HF-1, HF-4 and HF-5 fluids this falls to 210 bar continuous and 240 bar intermittent, and on invert emulsion (HF-3) to 140 bar and 175 bar."
+        },
+        {
+          "slot": "E",
+          "q": "How fast can the Parker T7B-B09 run?",
+          "a": "The T7B-B09 runs from 600 to 3600 rpm on mineral oil and 1800 rpm on HF-3, HF-4 and HF-5 fluids. Input power at 1500 rpm is 10.4 kW at 140 bar and 23.2 kW at 320 bar."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids can the Parker T7B-B09 vane pump run on?",
+          "a": "The 320 bar rating applies to antiwear mineral oil (HF-0, HF-2). Fire-resistant and synthetic fluids (HF-1, HF-3, HF-4, HF-5) lower the pressure and speed limits, so give the fluid when you ask for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "What flange and shaft does the Parker T7B-B09 have?",
+          "a": "The T7B has an ISO 3019-2 100A2HW two-bolt flange and a keyed shaft to ISO R775, 25 mm (shaft code 2). Ports are SAE J518 four-bolt flanges: 1 1/2 in suction and 1 in or 3/4 in pressure; weight is 23.0 kg as Parker prints it."
+        },
+        {
+          "slot": "H",
+          "q": "Which Parker T7B code should I order for a replacement?",
+          "a": "Send the code on your pump nameplate. The nearest current codes are T7B-B09-2R00-A1M0 (ISO flange, metric port threads) and T7BS-B09-2R00-A100 (SAE flange, UNC threads), so tell us which flange and port threads you need."
+        },
+        {
+          "slot": "I",
+          "q": "Can the cartridge in the Parker T7B-B09 be changed?",
+          "a": "Yes. The Denison-technology T7 range keeps its pumping parts in a replaceable cartridge, so the pump can be serviced or its displacement changed by fitting another B cartridge. The larger B11 to B14 cartridges drop to 300 bar and B15 to 280 bar."
+        },
+        {
+          "slot": "J",
+          "q": "When should I choose the Parker T7B over a Vickers V20 vane pump?",
+          "a": "Choose a T7B when the machine needs more than about 2,500 psi from a vane pump, since the T7B-B09 is rated 320 bar intermittent. It is not a drop-in for a V-series pump: flange, shaft and port positions differ, as the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) explains."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker T7B-B09 compare with the Parker T6C-012?",
+          "a": "The T7B-B09 is rated 290 bar continuous at 28.0 cm³/rev and up to 3600 rpm; the [Parker T6C vane pump](/p/parker-t6c-vane-pump) gives 37.1 cm³/rev at 240 bar continuous and up to 2800 rpm. Choose the T7B for pressure in a small envelope and the T6C for more flow per revolution."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker T7B-B09 vane pump in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Parker T7B-B09 vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-fixed-displacement-double-vane-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Vickers fixed displacement double vane pumps used for?",
+          "a": "Vickers fixed displacement double vane pumps put two pumping sections on one body and shaft, for machines that need two separate flows, such as oil and gas, metal-cutting, dump-truck, wheel-loader and plastic-injection-moulding applications. The range lists 53 part numbers in cast iron with Buna N seals; see the [vane pumps shelf](/c/hydraulic-vane-pumps) for single pumps."
+        },
+        {
+          "slot": "B",
+          "q": "How are the 53 Vickers double vane pump part numbers laid out?",
+          "a": "The part numbers are Vickers item numbers such as 02-137191-3, 02-137201-1 and 850047-1, and the size table lists each with its flow in gpm. Quote the number from your old pump nameplate and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure are Vickers fixed displacement double vane pumps rated for?",
+          "a": "The maker states 2,495 to 3,046 psi (172 to 210 bar), depending on size. Check the row of the part number you order, because the rating differs between pumps."
+        },
+        {
+          "slot": "D",
+          "q": "Which series are the Vickers fixed displacement double vane pumps?",
+          "a": "The listing gives the series as the Vickers VHO series, in cast iron with Buna N (nitrile) seals. Quote the Vickers part number and we will confirm the series and mounting."
+        },
+        {
+          "slot": "E",
+          "q": "What material and seals do Vickers double vane pumps have?",
+          "a": "They are cast iron with Buna N seals. Buna N suits mineral oil; for fire-resistant fluids ask for the fluid-compatible seal version before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids suit Vickers fixed displacement double vane pumps?",
+          "a": "The Buna N seals in this range suit petroleum-based hydraulic oil, and the Vickers V-series is run on anti-wear hydraulic oil at 13 to 54 cSt. For other fluids, give the fluid when you quote."
+        },
+        {
+          "slot": "G",
+          "q": "Do Vickers double vane pumps come with test documents?",
+          "a": "No certificate or approval is listed for these pumps. If your project needs a test report or a certificate of conformity, state it on your request and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to match when replacing a Vickers double vane pump?",
+          "a": "Match the part number first, then the flow and pressure of each section, the shaft and the mounting. The [how to size a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) guide explains how to check flow against the machine."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Vickers fixed displacement double vane pump?",
+          "a": "Keep the inlet vacuum within the maker limit, fill the pump with clean oil before starting, and check rotation against the drive. Never assume both sections can be loaded to rated pressure at once, because the shaft carries the combined torque."
+        },
+        {
+          "slot": "J",
+          "q": "Which Vickers vane pump range covers a thru-drive arrangement?",
+          "a": "The [Vickers single unit thru-drive vane pumps](/p/vickers-single-unit-thru-drive-vane-pumps) cover pumps with a rear drive for a second pump. Double pumps in this range already carry two sections in one body."
+        },
+        {
+          "slot": "K",
+          "q": "How does a double vane pump differ from a Vickers single vane pump?",
+          "a": "A double pump has two pumping sections on one shaft with a common inlet and two outlets, while a single pump has one. This range holds 53 part numbers; the [Vickers fixed displacement single vane pumps](/p/vickers-fixed-displacement-single-vane-pumps) hold 116."
+        },
+        {
+          "slot": "M",
+          "q": "Are Vickers fixed displacement double vane pumps in stock in Dubai?",
+          "a": "Yes. We keep Vickers fixed displacement double vane pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-fixed-displacement-single-vane-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Vickers fixed displacement single vane pumps used for?",
+          "a": "Vickers fixed displacement single vane pumps drive lifts, mobile equipment and power units with a quiet, smooth flow. The range lists 116 part numbers from 0.4 to 60 cu. in. per revolution; the [vane pumps shelf](/c/hydraulic-vane-pumps) shows the other vane pumps."
+        },
+        {
+          "slot": "B",
+          "q": "How do I find the right part number among the 116 Vickers single vane pumps?",
+          "a": "Start from the part number on your old pump, such as 02-137113-1, 372552-7 or 02-137121-1, then match the displacement, shaft and flange. Send us the nameplate and we will confirm."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement sizes do Vickers single vane pumps come in?",
+          "a": "The size table lists displacements from 0.4 to 11.75 cu. in. per revolution, including 0.6, 1, 1.19, 1.39, 1.62, 1.81, 2.22, 2.38, 2.59, 2.78, 3.39, 4.13, 4.94, 5.91, 6.83 and 9.85. Flow in US gpm is displacement times speed in rpm divided by 231."
+        },
+        {
+          "slot": "D",
+          "q": "Which shafts do Vickers single vane pumps have?",
+          "a": "The rows that state a shaft list 34 keyed shafts and 6 splined shafts, and the pump has a cast-iron housing with a flange discharge connection and right-hand rotation. Match the shaft and rotation to the pump you replace."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Vickers single vane pumps rated for?",
+          "a": "The maker states 1,000 to 2,500 psi (69 to 172 bar), by size, with most rows at 2,500 psi. Check the row of the part number you order, since the rating changes with the pump size."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids suit Vickers fixed displacement single vane pumps?",
+          "a": "These pumps run on anti-wear hydraulic oil; Vickers limits the V-series to 13 to 54 cSt running viscosity. State the fluid and temperature when you request a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What flange and connections do Vickers single vane pumps have?",
+          "a": "The listing gives a flange discharge connection and a cast-iron housing. Port sizes depend on the pump size, so quote the part number and we confirm the ports before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size a replacement Vickers single vane pump?",
+          "a": "Match displacement, rotation, shaft and mounting to the old pump, then check flow at your running speed; [how to size a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) walks through the arithmetic. The 20 displacement sizes in the table cover most replacements."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Vickers single vane pumps used?",
+          "a": "The listing gives lifts, mobile equipment and power units as the typical applications. For pumps above 2,500 psi see the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6)."
+        },
+        {
+          "slot": "K",
+          "q": "How do Vickers single vane pumps differ from double vane pumps?",
+          "a": "A single pump has one pumping section and one outlet, while the [Vickers fixed displacement double vane pumps](/p/vickers-fixed-displacement-double-vane-pumps) put two sections on one shaft. This range has 116 part numbers against 53 for the double pumps."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Vickers fixed displacement single vane pumps from, and what is the HS code?",
+          "a": "The listing gives the United States as the country of origin and HS code 8413600040. We supply them new and export from Dubai, UAE; confirm the destination so the paperwork is right."
+        },
+        {
+          "slot": "M",
+          "q": "Are Vickers fixed displacement single vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Vickers fixed displacement single vane pumps and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-single-unit-thru-drive-vane-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Vickers single unit thru-drive vane pumps used for?",
+          "a": "Vickers single unit thru-drive vane pumps have a rear drive so a second pump can run from the same shaft. The range lists 11 part numbers in cast iron with Buna N seals, for oil and gas, metal-cutting, dump-truck, wheel-loader and plastic-injection-moulding applications; see the [vane pumps shelf](/c/hydraulic-vane-pumps) for others."
+        },
+        {
+          "slot": "B",
+          "q": "How are the 11 Vickers thru-drive vane pump part numbers laid out?",
+          "a": "The numbers are Vickers items such as 02-125379-N, 708-0024-032, 708-0030-032 and 710-0089-032. Quote the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which series are the Vickers single unit thru-drive vane pumps?",
+          "a": "The listing gives the Vickers 25V series, in cast iron with Buna N seals. Quote the part number and we confirm the series and the shaft before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the 11 Vickers thru-drive vane pumps?",
+          "a": "The table lists each pump by Vickers part number with its flow. Pick the part number that matches your old pump, or tell us the flow, shaft and mounting you need and we will match one."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Vickers thru-drive vane pumps have?",
+          "a": "The listing states no pressure for this range, so take the rating from the Vickers part number or ask us with the number from your pump nameplate."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seals do Vickers thru-drive vane pumps have?",
+          "a": "They are cast iron with Buna N seals. Buna N suits mineral oil; give the fluid when you quote if you run something else."
+        },
+        {
+          "slot": "G",
+          "q": "Do Vickers thru-drive vane pumps come with test documents?",
+          "a": "No certificate or approval is listed for these pumps. If your project needs a test report or a certificate of conformity, say so on your request and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What can be driven from a Vickers single unit thru-drive vane pump?",
+          "a": "A second pump mounts on the rear drive and turns on the same shaft, so one motor drives two circuits. The pairing needs the right coupling and flange; see the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) for tandem pump arrangements."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Vickers thru-drive vane pump?",
+          "a": "Fit the rear pump with its coupling, keep the inlet vacuum within the maker limit and prime the pump with clean oil before starting. Never assume both pumps can be loaded to rated pressure together, because the shaft carries the combined torque."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use Vickers thru-drive vane pumps?",
+          "a": "The listing names oil and gas, metal cutting, dump trucks, wheel loaders and plastic injection moulding. Use one when a single drive has to feed two independent flows."
+        },
+        {
+          "slot": "K",
+          "q": "How does a thru-drive vane pump differ from a double vane pump?",
+          "a": "A thru-drive pump is one pumping section with a rear drive for a second pump, while a double vane pump carries two sections in one body; the [Vickers fixed displacement double vane pumps](/p/vickers-fixed-displacement-double-vane-pumps) list 53 part numbers against 11 here. Single pumps with no rear drive are on the [Vickers fixed displacement single vane pumps](/p/vickers-fixed-displacement-single-vane-pumps) listing."
+        },
+        {
+          "slot": "M",
+          "q": "Are Vickers single unit thru-drive vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Vickers single unit thru-drive vane pumps and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-v10-and-v20-vane-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Vickers V10 and V20 vane pumps used for?",
+          "a": "Vickers V10 and V20 are balanced fixed-displacement vane pumps used on industrial machines, mobile power steering, refuse trucks and agricultural equipment. This listing holds 4 part numbers; the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the series in detail."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Vickers V10P1P7K11A6H10 model number?",
+          "a": "The V10 pump numbers here are of the form V10P1P7K11A6H10: V10 is the series, and the rest set mounting, inlet, ring, shaft, outlet position and design. The [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) walks through each position of a V-series model code."
+        },
+        {
+          "slot": "C",
+          "q": "Are Fluidyne vane pumps interchangeable with Vickers V20 pumps?",
+          "a": "The Fluidyne V20 listings show the Vickers part number each size replaces, as the maker publishes it; for example the [Fluidyne V20 19.5 cm³/rev pump](/p/fluidyne-v20-vane-pumps-19-5-cm-rev) lists the Vickers numbers it replaces. Quote either number."
+        },
+        {
+          "slot": "D",
+          "q": "Which Vickers V10 and V20 pump part numbers are listed?",
+          "a": "Four are listed: V10P1P7K11A6H10, V10P1P7K11B6H10, V10P1P7K11C6H10 and the V20 pump V201S11S62C11L. Send the number from your nameplate and we confirm the match."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement do Vickers V10 and V20 vane pumps come in?",
+          "a": "Vickers V10 pumps run 3.3 to 22.8 cc/rev and V20 pumps 19.5 to 42.4 cc/rev. The ring number in the model code is the flow in US gpm at 1,200 rpm and 100 psi."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Vickers V10 and V20 vane pumps rated for?",
+          "a": "Vickers rates them at 172 bar (2,500 psi) except the largest rings, which are rated 2,200 or 2,000 psi. The same 19.5 cc ring is 2,200 psi in a V10 body and 2,500 psi in a V20."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil suits a Vickers V10 or V20 vane pump?",
+          "a": "Anti-wear hydraulic oils, or SAE J183 crankcase oils, at 13 to 54 cSt running viscosity. Vickers limits inlet vacuum to 5 inHg on petroleum oil and recommends an oil temperature of 49 °C, maximum 65 °C."
+        },
+        {
+          "slot": "H",
+          "q": "How do I choose rotation on a Vickers V-series pump?",
+          "a": "State rotation viewed from the shaft end: L is left hand (anticlockwise) and no letter is right hand. Check it against the drive, because a truck PTO rotation is stated relative to the engine crankshaft."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Vickers V10 or V20 pump repaired?",
+          "a": "The rotor, vanes, ring and side plates are sold as one cartridge, and fitting a new one restores a worn pump without disturbing the mounting. Rotation can be changed by reassembling the internal parts; see the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6)."
+        },
+        {
+          "slot": "J",
+          "q": "Where do Vickers V10 and V20 vane pumps fit in the vane pump range?",
+          "a": "They are the original Vickers pattern that the Fluidyne V10 and V20 lines interchange with; browse the [vane pumps shelf](/c/hydraulic-vane-pumps) for the Fluidyne and Parker alternatives. For above 2,500 psi see the [Parker T6C vane pump](/p/parker-t6c-vane-pump) or [Parker T7B vane pump](/p/parker-t7b-vane-pump)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose a Vickers V10 or a V20 vane pump?",
+          "a": "A V10 covers 3.3 to 22.8 cc/rev and a V20 covers 19.5 to 42.4 cc/rev. If the machine needs 19.5 cc at full pressure, choose the V20, which is rated 2,500 psi against 2,200 psi for the V10 with that ring."
+        },
+        {
+          "slot": "M",
+          "q": "Are Vickers V10 and V20 vane pumps in stock in Dubai?",
+          "a": "Yes, we hold Vickers V10 and V20 vane pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1388 @@
+{
+  "family": "vacuum-components-01",
+  "extraFacts": [
+    {
+      "fact": "A vacuum ejector (vacuum generator) uses compressed air flowing through a nozzle to draw a vacuum with no moving parts; a larger nozzle size passes more air and moves more vacuum flow but uses more compressed air. A suction pad holds a part with a force equal to the vacuum pressure difference multiplied by the pad area, so a larger pad or a deeper vacuum holds more, and a safety factor must be applied for lifting.",
+      "source": "SMC vacuum equipment catalogue (ejectors and pads, selection basics); Indus Hydraulics guide 'Pneumatic grippers and vacuum'"
+    },
+    {
+      "fact": "Unit conversions: 1 kPa = 0.145 psi, so 50 kPa is about 7 psi and 105 kPa is about 15 psi; 1 inch of mercury = 3.386 kPa; 1 bar = 14.5038 psi and 40 psi is about 2.8 bar. Temperature: -30 deg C = -22 deg F, 250 deg C = 482 deg F, 200 deg C = 392 deg F, 120 deg C = 248 deg F and 60 deg C = 140 deg F.",
+      "source": "NIST Special Publication 811 (unit conversion factors)"
+    },
+    {
+      "fact": "Customs classification: vacuum pumps, air or gas compressors and their parts fall under HS heading 8414, valves under 8481, and filtering or purifying machinery under 8421.",
+      "source": "WCO Harmonized System Nomenclature 2022, headings 84.14, 84.21 and 84.81"
+    },
+    {
+      "fact": "Sibling listings on indushydraulics.com: the SMC single ejector listing gives 5 to 100 LPM for its ZQ1051U, ZQ1071U, NZM and NZL units; SMC vacuum pad listings give pad diameters of 4, 6, 8, 10, 13, 16, 20, 25, 32, 40 and 50 mm (bellows 6 to 50 mm, flat 4 to 50 mm, deep 10 and 25 mm, flat with ribs 10 to 50 mm) and pad assemblies of 40, 50, 80, 100 and 125 mm; SMC ejector listings use nozzle sizes of 0.5, 0.7, 1, 1.2, 1.3, 1.5, 1.8 and 2 mm and the ZH inline ejectors use 1/4 inch tube, 5/16 inch tube, 1/8 inch NPT and 3/8 NPT connections; the SMC ZSE pressure switch has 2 m leads and the SMC AMJ water separator has 1/4, 3/8, 3/4 and 1 inch ports; the Value Line pad adapters are for 20 to 75 mm pads with 6, 10 and 12 mm ports.",
+      "source": "Indus Hydraulics product listings compiled from SMC catalogues"
+    }
+  ],
+  "products": [
+    {
+      "slug": "smc-vacuum-pad-bellows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC vacuum pad bellows used for?",
+          "a": "The SMC bellows vacuum pad is a multi-fold suction cup that follows uneven or angled parts and cushions the contact. This listing carries 46 part numbers, ZP06BF to ZP50BU, in diameters of 6 mm to 50 mm, with a 60A durometer fluoro rubber specification and a 0 to 250 deg C listing range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC pad part number such as ZP06BF or ZP10BS?",
+          "a": "In the rows ZP followed by the diameter (06, 10, 50) and B for bellows give the pad, and the last letter sets the version, as in ZP06BF (F), ZP06BS (S) and ZP06BU (U). The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which diameters does the SMC bellows pad come in?",
+          "a": "The listing has 6, 8, 10, 13, 16, 20, 25, 32, 40 and 50 mm bellows pads, for example ZP06BF, ZP13BN and ZP50BU. The 6, 8 and 10 mm sizes have six versions each and the larger ones four."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions does the SMC ZP06B bellows pad offer?",
+          "a": "The 6 mm, 8 mm and 10 mm pads have six versions: F, GN, GS, N, S and U, for example ZP06BF, ZP06BGN and ZP06BU. The larger diameters (13 to 50 mm) have F, N, S and U."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC vacuum pad bellows take?",
+          "a": "The temperature limit of the SMC vacuum pad bellows depends on the version: rows give 250 deg C for the green-marked black pad (ZP06BF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC vacuum pad bellows versions made from?",
+          "a": "The listing gives fluoro rubber as the pad material, and the black pad with a green mark (F suffix) is the 250 deg C version in the rows. The other colours are other rubber grades; the listing does not name them, so ask us for the material of your suffix before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC vacuum pad bellows?",
+          "a": "This listing holds no datasheet or certificate file for the SMC vacuum pad bellows, so name the document you need, for example a certificate of conformity or the SMC catalogue page for ZP06BF, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with an SMC ZP bellows pad?",
+          "a": "Bellows pads fit SMC pad adaptors such as the [SMC ZP series adaptors](/p/smc-zp-series-vacuum-pad), and a vacuum line from an ejector on the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose and fit an SMC bellows vacuum pad?",
+          "a": "Choose a diameter from the load and the vacuum level, apply a safety factor, fit the pad to its adaptor and check for leaks with the part held. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) for selection."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC bellows pad differ from the flat pad?",
+          "a": "A bellows pad flexes to take up height differences, while the [SMC flat vacuum pad](/p/smc-vacuum-pad-flat) is the stiffer, lower-profile cup for flat, smooth parts."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC vacuum pad bellows made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC vacuum pad bellows, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC vacuum pad bellows in Dubai?",
+          "a": "Yes. We keep the SMC vacuum pad bellows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-flat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC vacuum pad, flat used for?",
+          "a": "The SMC flat vacuum pad is a low-profile suction cup for flat, smooth parts. This listing carries 32 part numbers, ZP04UF to ZP40UU, in diameters of 4 mm to 40 mm, with a 60A durometer fluoro rubber specification and a 0 to 250 deg C listing range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC pad part number such as ZP04UF or ZP25US?",
+          "a": "In the rows ZP followed by the diameter (04, 25) and U for flat give the pad, and the last letters set the version, as in ZP04UF, ZP04UGN and ZP25US. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which diameters does the SMC flat vacuum pad come in?",
+          "a": "The listing has 4, 10, 13, 16, 20, 25 and 40 mm flat pads, such as ZP04UF, ZP16UN and ZP40UU; the 32 and 50 mm flat pads are on their own pages."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions does the SMC ZP04U flat pad offer?",
+          "a": "The 4 mm and 10 mm pads come in six versions (F, GN, GS, N, S, U, for example ZP04UGN) and the larger sizes in four (F, N, S and U), so check the suffix for your temperature and colour need."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC flat vacuum pad take?",
+          "a": "The temperature limit of the SMC flat vacuum pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP04UF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC flat vacuum pad versions made from?",
+          "a": "The listing gives fluoro rubber as the pad material, and the black pad with a green mark (F suffix) is the 250 deg C version in the rows. The other colours are other rubber grades; the listing does not name them, so ask us for the material of your suffix before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC vacuum pad, flat?",
+          "a": "No certificate or datasheet is attached to the the SMC vacuum pad, flat listing. Tell us in the enquiry what your file requires for ZP04UF, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adaptor fits an SMC ZP flat pad?",
+          "a": "Use an SMC pad adaptor such as the [ZP series adaptors](/p/smc-zp-series-vacuum-pad) and a vacuum line from the [vacuum generators, pads and filters shelf](/c/vacuum-components). Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and test an SMC flat vacuum pad?",
+          "a": "Screw or press the pad on its adaptor, bring it flat to the part and check it reaches the vacuum level before lifting. Replace worn or cracked pads, as a leaking pad drops the load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC flat pad differ from the flat pad with ribs?",
+          "a": "The plain flat pad has a smooth face, while the [flat pad with ribs](/p/smc-vacuum-pad-flat-with-ribbons) has ribs that stop thin parts being drawn into the pad. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC vacuum pad, flat made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC vacuum pad, flat, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC vacuum pad, flat in Dubai?",
+          "a": "Yes, the SMC vacuum pad, flat is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-flat-with-ribbons",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC vacuum pad, flat with ribs used for?",
+          "a": "The SMC flat vacuum pad with ribs is a suction cup whose ribbed face supports thin or flexible parts. This listing carries 31 part numbers, ZP10CF to ZP50CU, in diameters of 10 mm to 50 mm, with a 60A durometer fluoro rubber specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC pad part number such as ZP10CF or ZP50CS?",
+          "a": "In the rows ZP, the diameter (10, 13, 50) and C for the ribbed flat pad give the pad, with the version letter last, as in ZP10CF, ZP13CN and ZP50CS. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which diameters does the SMC ribbed flat pad come in?",
+          "a": "The listing has 10, 13, 16, 20, 25, 32, 40 and 50 mm ribbed pads, for example ZP10CF, ZP25CN and ZP50CU, mostly with four versions each (F, N, S, U)."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions does the SMC ZP16C ribbed pad offer?",
+          "a": "The 16 mm size has three part numbers on this listing and the others have four: F, N, S and U, for example ZP20CF and ZP20CU. Check the suffix for your temperature need."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC ribbed flat vacuum pad take?",
+          "a": "The temperature limit of the SMC ribbed flat vacuum pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP10CF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC ribbed flat vacuum pad versions made from?",
+          "a": "The listing gives fluoro rubber as the pad material, and the black pad with a green mark (F suffix) is the 250 deg C version in the rows. The other colours are other rubber grades; the listing does not name them, so ask us for the material of your suffix before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC vacuum pad, flat with ribs?",
+          "a": "We hold no datasheet or certificate for the SMC vacuum pad, flat with ribs on this page. Ask for the SMC catalogue sheet or a certificate of conformity for ZP10CF in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with an SMC ZP ribbed pad?",
+          "a": "Fit an SMC pad adaptor such as the [ZP series adaptors](/p/smc-zp-series-vacuum-pad) and run vacuum from the [vacuum generators, pads and filters shelf](/c/vacuum-components). Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I use an SMC ribbed flat pad?",
+          "a": "Position the pad flat on the part so the ribs support it, check the vacuum level before lifting and replace the pad if the ribs wear. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC ribbed flat pad differ from the bellows pad?",
+          "a": "The ribbed pad is a flat, supported cup for thin parts, while the [SMC bellows pad](/p/smc-vacuum-pad-bellows) flexes to take up height differences. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC vacuum pad, flat with ribs made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC vacuum pad, flat with ribs, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC vacuum pad, flat with ribs in Dubai?",
+          "a": "Yes. the SMC vacuum pad, flat with ribs is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-flat-6mm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC 6 mm flat vacuum pad used for?",
+          "a": "The SMC 6 mm flat vacuum pad is a small suction cup for flat, smooth parts such as electronic components and thin sheets. This listing carries 6 part numbers, ZP06UF to ZP06UU, in a 60A durometer fluoro rubber specification with a 0 to 250 deg C listing range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC part number such as ZP06UF or ZP06UGN?",
+          "a": "In the rows ZP06U is the 6 mm flat pad and the letters after it set the version: F, GN, GS, N, S and U. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C. GN is black with one silver mark (100 deg C) and GS black with two silver marks (200 deg C, minimum -10 deg C)."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions of the SMC 6 mm flat pad are available?",
+          "a": "Six versions: F, GN, GS, N, S and U, for example ZP06UF, ZP06UGN and ZP06UU. The colour and marks identify the rubber grade, so check the suffix against your temperature need."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the SMC 6 mm flat pad colours?",
+          "a": "Choose the black pad (N, 120 deg C) for general use, white (S, 200 deg C, down to -30 deg C) for hotter or colder parts, brown (U, 60 deg C) for the mildest duty and the green-marked black pad (F) up to 250 deg C. The silver-marked GN and GS versions are the 100 deg C and 200 deg C black pads."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC 6 mm flat pad take?",
+          "a": "The temperature limit of the SMC 6 mm flat pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP06UF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC 6 mm flat pad versions made from?",
+          "a": "The listing gives fluoro rubber as the pad material, and the black pad with a green mark (F suffix) is the 250 deg C version in the rows. The other versions are other rubber grades that the listing does not name, so ask us for the material of your suffix."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC 6 mm flat pad?",
+          "a": "This listing holds no datasheet or certificate file for the SMC 6 mm flat pad, so name the document you need, for example a certificate of conformity or the SMC catalogue page for ZP06UF, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adaptor fits the SMC 6 mm flat pad?",
+          "a": "A pad adaptor such as the [SMC ZP series adaptors](/p/smc-zp-series-vacuum-pad) with a small-bore thread; check the pad and adaptor sizes together. The [vacuum generators, pads and filters shelf](/c/vacuum-components) lists ejectors for the vacuum supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and test an SMC 6 mm flat pad?",
+          "a": "Push or screw the pad onto its adaptor, bring it flat to the part and check the vacuum builds before lifting. Small pads wear quickly on abrasive parts, so replace them at the first sign of leakage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC 6 mm flat pad differ from the 8 mm flat pad?",
+          "a": "Both are flat pads with the same six versions, but they differ in diameter; see the [8 mm flat pad](/p/smc-vacuum-pad-flat-8mm) page. Choose by the size of the part and the load."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC 6 mm flat pad made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC 6 mm flat pad, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC 6 mm flat vacuum pad in Dubai?",
+          "a": "Yes, we stock the SMC 6 mm flat vacuum pad at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-flat-8mm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC 8 mm flat vacuum pad used for?",
+          "a": "The SMC 8 mm flat vacuum pad is a small suction cup for flat, smooth parts such as electronic components and thin sheets. This listing carries 6 part numbers, ZP08UF to ZP08UU, in a 60A durometer fluoro rubber specification with a 0 to 250 deg C listing range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC part number such as ZP08UF or ZP08UGS?",
+          "a": "In the rows ZP08U is the 8 mm flat pad and the letters after it set the version: F, GN, GS, N, S and U. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C. GN is black with one silver mark (100 deg C) and GS black with two silver marks (200 deg C, minimum -10 deg C)."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions of the SMC 8 mm flat pad are available?",
+          "a": "Six versions: F, GN, GS, N, S and U, for example ZP08UF, ZP08UGS and ZP08US. The colour and marks identify the rubber grade, so check the suffix against your temperature need."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the SMC 8 mm flat pad colours?",
+          "a": "Choose the black pad (N, 120 deg C) for general use, white (S, 200 deg C, down to -30 deg C) for hotter or colder parts, brown (U, 60 deg C) for the mildest duty and the green-marked black pad (F) up to 250 deg C. The silver-marked GN and GS versions are the 100 deg C and 200 deg C black pads."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC 8 mm flat pad take?",
+          "a": "The temperature limit of the SMC 8 mm flat pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP08UF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC 8 mm flat pad versions made from?",
+          "a": "The listing gives fluoro rubber as the pad material, and the black pad with a green mark (F suffix) is the 250 deg C version in the rows. The other versions are other rubber grades that the listing does not name, so ask us for the material of your suffix."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC 8 mm flat pad?",
+          "a": "No certificate or datasheet is attached to the the SMC 8 mm flat pad listing. Tell us in the enquiry what your file requires for ZP08UF, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adaptor fits the SMC 8 mm flat pad?",
+          "a": "A pad adaptor such as the [SMC ZP series adaptors](/p/smc-zp-series-vacuum-pad) with a small-bore thread; check the pad and adaptor sizes together. The [vacuum generators, pads and filters shelf](/c/vacuum-components) lists ejectors for the vacuum supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and test an SMC 8 mm flat pad?",
+          "a": "Push or screw the pad onto its adaptor, bring it flat to the part and check the vacuum builds before lifting. Small pads wear quickly on abrasive parts, so replace them at the first sign of leakage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC 8 mm flat pad differ from the 6 mm flat pad?",
+          "a": "Both are flat pads with the same six versions, but they differ in diameter; see the [6 mm flat pad](/p/smc-vacuum-pad-flat-6mm) page. Choose by the size of the part and the load."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC 8 mm flat pad made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC 8 mm flat pad, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC 8 mm flat vacuum pad in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the SMC 8 mm flat vacuum pad in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-flat-32mm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC flat vacuum pad 32 mm used for?",
+          "a": "The SMC 32 mm flat vacuum pad is a flat, low-profile suction cup for flat smooth parts. This listing carries 4 part numbers, ZP32UF, ZP32UN, ZP32US and ZP32UU, one for each rubber version."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC part number such as ZP32UF or ZP32UU?",
+          "a": "In the rows ZP32U is the 32 mm flat pad and the last letter sets the version. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions of the SMC 32 mm flat pad are available?",
+          "a": "Four versions: ZP32UF (green-marked black), ZP32UN (black), ZP32US (white) and ZP32UU (brown). All four share the 32 mm diameter; only the rubber grade and temperature range change."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the SMC ZP32UN and ZP32US pads?",
+          "a": "ZP32UN is the black 32 mm pad rated to 120 deg C and ZP32US the white pad rated to 200 deg C (down to -30 deg C), so choose white for hotter or colder parts and black for general use. Choose ZP32UF when the part is above 200 deg C."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC 32 mm flat pad take?",
+          "a": "The temperature limit of the SMC 32 mm flat pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP32UF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC 32 mm flat pads made from?",
+          "a": "The listing gives a 60A durometer pad and fluoro rubber as the pad material for the 32 mm flat pad, with ZP32UF the 250 deg C green-marked version in the rows. ZP32UN, ZP32US and ZP32UU are other rubber grades; ask us for the material of your suffix."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC 32 mm flat pad?",
+          "a": "We hold no datasheet or certificate for the SMC 32 mm flat pad on this page. Ask for the SMC catalogue sheet or a certificate of conformity for ZP32UF in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adaptor and vacuum supply suit the SMC 32 mm flat pad?",
+          "a": "For the 32 mm flat pad (ZP32UF) fit a pad adaptor such as the [SMC ZP series adaptors](/p/smc-zp-series-vacuum-pad) and run vacuum from an ejector on the [vacuum generators, pads and filters shelf](/c/vacuum-components). Check the pad connection against the adaptor thread."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and check an SMC 32 mm flat pad?",
+          "a": "Screw the 32 mm pad onto its adaptor, bring it square to the part and check the vacuum builds before lifting. Replace pads that wear or crack; see our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC 32 mm flat pad differ from the SMC 50 mm flat pad?",
+          "a": "The 32 mm pad is a different diameter from the [SMC 50 mm flat pad](/p/smc-vacuum-pad-flat-50mm) with the same four rubber versions. Choose by the size of the part and the load."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC 32 mm flat pad made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC 32 mm flat pad, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC 32 mm flat vacuum pad in Dubai?",
+          "a": "Yes. We keep the SMC 32 mm flat vacuum pad in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-flat-50mm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC flat vacuum pad 50 mm used for?",
+          "a": "The SMC 50 mm flat vacuum pad is a flat, low-profile suction cup for flat smooth parts. This listing carries 4 part numbers, ZP50UF, ZP50UN, ZP50US and ZP50UU, one for each rubber version."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC part number such as ZP50UF or ZP50UU?",
+          "a": "In the rows ZP50U is the 50 mm flat pad and the last letter sets the version. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions of the SMC 50 mm flat pad are available?",
+          "a": "Four versions: ZP50UF (green-marked black), ZP50UN (black), ZP50US (white) and ZP50UU (brown). All four share the 50 mm diameter; only the rubber grade and temperature range change."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the SMC ZP50UN and ZP50US pads?",
+          "a": "ZP50UN is the black 50 mm pad rated to 120 deg C and ZP50US the white pad rated to 200 deg C (down to -30 deg C), so choose white for hotter or colder parts and black for general use. Choose ZP50UF when the part is above 200 deg C."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC 50 mm flat pad take?",
+          "a": "The temperature limit of the SMC 50 mm flat pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP50UF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC 50 mm flat pads made from?",
+          "a": "The listing gives a 60A durometer pad and fluoro rubber as the pad material for the 50 mm flat pad, with ZP50UF the 250 deg C green-marked version in the rows. ZP50UN, ZP50US and ZP50UU are other rubber grades; ask us for the material of your suffix."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC 50 mm flat pad?",
+          "a": "This listing holds no datasheet or certificate file for the SMC 50 mm flat pad, so name the document you need, for example a certificate of conformity or the SMC catalogue page for ZP50UF, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adaptor and vacuum supply suit the SMC 50 mm flat pad?",
+          "a": "For the 50 mm flat pad (ZP50UF) fit a pad adaptor such as the [SMC ZP series adaptors](/p/smc-zp-series-vacuum-pad) and run vacuum from an ejector on the [vacuum generators, pads and filters shelf](/c/vacuum-components). Check the pad connection against the adaptor thread."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and check an SMC 50 mm flat pad?",
+          "a": "Screw the 50 mm pad onto its adaptor, bring it square to the part and check the vacuum builds before lifting. Replace pads that wear or crack; see our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC 50 mm flat pad differ from the SMC 32 mm flat pad?",
+          "a": "The 50 mm pad is a different diameter from the [SMC 32 mm flat pad](/p/smc-vacuum-pad-flat-32mm) with the same four rubber versions. Choose by the size of the part and the load."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC 50 mm flat pad made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC 50 mm flat pad, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC 50 mm flat vacuum pad in Dubai?",
+          "a": "Yes, the SMC 50 mm flat vacuum pad is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-deep-10mm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC deep vacuum pad 10 mm used for?",
+          "a": "The SMC 10 mm deep vacuum pad is a deep, tall suction cup that reaches curved or recessed parts and tolerates height variation. This listing carries 4 part numbers, ZP10DF, ZP10DN, ZP10DS and ZP10DU, one for each rubber version."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC part number such as ZP10DF or ZP10DU?",
+          "a": "In the rows ZP10D is the 10 mm deep pad and the last letter sets the version. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions of the SMC 10 mm deep pad are available?",
+          "a": "Four versions: ZP10DF (green-marked black), ZP10DN (black), ZP10DS (white) and ZP10DU (brown). All four share the 10 mm diameter; only the rubber grade and temperature range change."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the SMC ZP10DN and ZP10DS pads?",
+          "a": "ZP10DN is the black 10 mm pad rated to 120 deg C and ZP10DS the white pad rated to 200 deg C (down to -30 deg C), so choose white for hotter or colder parts and black for general use. Choose ZP10DF when the part is above 200 deg C."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC 10 mm deep pad take?",
+          "a": "The temperature limit of the SMC 10 mm deep pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP10DF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC 10 mm deep pads made from?",
+          "a": "The listing gives a 60A durometer pad and fluoro rubber as the pad material for the 10 mm deep pad, with ZP10DF the 250 deg C green-marked version in the rows. ZP10DN, ZP10DS and ZP10DU are other rubber grades; ask us for the material of your suffix."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC 10 mm deep pad?",
+          "a": "No certificate or datasheet is attached to the the SMC 10 mm deep pad listing. Tell us in the enquiry what your file requires for ZP10DF, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adaptor and vacuum supply suit the SMC 10 mm deep pad?",
+          "a": "For the 10 mm deep pad (ZP10DF) fit a pad adaptor such as the [SMC ZP series adaptors](/p/smc-zp-series-vacuum-pad) and run vacuum from an ejector on the [vacuum generators, pads and filters shelf](/c/vacuum-components). Check the pad connection against the adaptor thread."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and check an SMC 10 mm deep pad?",
+          "a": "Screw the 10 mm pad onto its adaptor, bring it square to the part and check the vacuum builds before lifting. Replace pads that wear or crack; see our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC 10 mm deep pad differ from the SMC 25 mm deep pad?",
+          "a": "The 10 mm pad is a different diameter from the [SMC 25 mm deep pad](/p/smc-vacuum-pad-deep-25mm) with the same four rubber versions. Choose by the size of the part and the load."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC 10 mm deep pad made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC 10 mm deep pad, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC 10 mm deep vacuum pad in Dubai?",
+          "a": "Yes. the SMC 10 mm deep vacuum pad is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-deep-25mm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC deep vacuum pad 25 mm used for?",
+          "a": "The SMC 25 mm deep vacuum pad is a deep, tall suction cup that reaches curved or recessed parts and tolerates height variation. This listing carries 4 part numbers, ZP25DF, ZP25DN, ZP25DS and ZP25DU, one for each rubber version."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC part number such as ZP25DF or ZP25DU?",
+          "a": "In the rows ZP25D is the 25 mm deep pad and the last letter sets the version. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which versions of the SMC 25 mm deep pad are available?",
+          "a": "Four versions: ZP25DF (green-marked black), ZP25DN (black), ZP25DS (white) and ZP25DU (brown). All four share the 25 mm diameter; only the rubber grade and temperature range change."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the SMC ZP25DN and ZP25DS pads?",
+          "a": "ZP25DN is the black 25 mm pad rated to 120 deg C and ZP25DS the white pad rated to 200 deg C (down to -30 deg C), so choose white for hotter or colder parts and black for general use. Choose ZP25DF when the part is above 200 deg C."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC 25 mm deep pad take?",
+          "a": "The temperature limit of the SMC 25 mm deep pad depends on the version: rows give 250 deg C for the green-marked black pad (ZP25DF), 120 deg C for black, 200 deg C for white (minimum -30 deg C) and 60 deg C for brown. The listing-wide 0 to 250 deg C therefore applies only to the 250 deg C version."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC 25 mm deep pads made from?",
+          "a": "The listing gives a 60A durometer pad and fluoro rubber as the pad material for the 25 mm deep pad, with ZP25DF the 250 deg C green-marked version in the rows. ZP25DN, ZP25DS and ZP25DU are other rubber grades; ask us for the material of your suffix."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with the SMC 25 mm deep pad?",
+          "a": "We hold no datasheet or certificate for the SMC 25 mm deep pad on this page. Ask for the SMC catalogue sheet or a certificate of conformity for ZP25DF in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What adaptor and vacuum supply suit the SMC 25 mm deep pad?",
+          "a": "For the 25 mm deep pad (ZP25DF) fit a pad adaptor such as the [SMC ZP series adaptors](/p/smc-zp-series-vacuum-pad) and run vacuum from an ejector on the [vacuum generators, pads and filters shelf](/c/vacuum-components). Check the pad connection against the adaptor thread."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and check an SMC 25 mm deep pad?",
+          "a": "Screw the 25 mm pad onto its adaptor, bring it square to the part and check the vacuum builds before lifting. Replace pads that wear or crack; see our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC 25 mm deep pad differ from the SMC 10 mm deep pad?",
+          "a": "The 25 mm pad is a different diameter from the [SMC 10 mm deep pad](/p/smc-vacuum-pad-deep-10mm) with the same four rubber versions. Choose by the size of the part and the load."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC 25 mm deep pad made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC 25 mm deep pad, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC 25 mm deep vacuum pad in Dubai?",
+          "a": "Yes, we stock the SMC 25 mm deep vacuum pad at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad-assembly",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC vacuum pad assembly used for?",
+          "a": "The SMC vacuum pad assembly is a large bellows suction pad supplied complete with its adaptor for heavier or larger parts. This listing carries 24 part numbers, such as ZPT40HBF-B8, ZPT80HBN-B16 and ZPT125HBU-B16, in diameters of 40 mm to 125 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an SMC assembly part number such as ZPT80HBN-B16 or ZPT40HN-B8?",
+          "a": "In the rows ZPT and the diameter (40, 80, 125) give the assembly, and the letters after H set the pad: BN is NBR (the rows say Nbr), BS white and BU brown, with BF and the plain HN versions also listed. B8 is an M8 x 1.25 connection and B16 an M16 x 1.5 one."
+        },
+        {
+          "slot": "D",
+          "q": "Which diameters does the SMC vacuum pad assembly come in?",
+          "a": "The listing has 40, 50, 80, 100 and 125 mm assemblies. The 40 mm and 50 mm ones use an M8 x 1.25 connection (ZPT40HBN-B8, ZPT50HBN-B8) and the 80, 100 and 125 mm ones an M16 x 1.5 connection (ZPT80HBN-B16)."
+        },
+        {
+          "slot": "D",
+          "q": "Which pad materials are offered on the SMC pad assembly?",
+          "a": "The rows name NBR (ZPT50HBN-B8) and colours white (ZPT50HBS-B8) and brown (ZPT50HBU-B8), and also unlabelled ZPT50HBF-style versions. Ask us for the material of your suffix before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC vacuum pad assembly take?",
+          "a": "The listing gives 0 deg C to 250 deg C for the range, with a 60C durometer and large bellows pad type. The limit varies with the pad version, as on the [SMC bellows pads](/p/smc-vacuum-pad-bellows), so confirm the version you need."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC vacuum pad assemblies made from?",
+          "a": "The listing names NBR on the N versions and gives a large bellows pad with a 60C durometer. Materials for the other versions are not stated, so ask us before ordering for oil, heat or food use."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC vacuum pad assembly?",
+          "a": "This listing holds no datasheet or certificate file for the SMC vacuum pad assembly, so name the document you need, for example a certificate of conformity or the SMC catalogue page for ZPT80HBN-B16, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an SMC vacuum pad assembly?",
+          "a": "A vacuum line with an M8 x 1.25 or M16 x 1.5 fitting to match the assembly, from an ejector on the [vacuum generators, pads and filters shelf](/c/vacuum-components); see our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and check an SMC pad assembly?",
+          "a": "Thread the assembly onto its mating connection, bring it square to the load and check the vacuum before lifting heavy parts. Lifting needs a safety factor; see our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC pad assembly differ from the plain bellows pad?",
+          "a": "The assembly comes complete with its adaptor in 40 mm to 125 mm sizes, while the [SMC vacuum pad bellows](/p/smc-vacuum-pad-bellows) is the pad only in 6 mm to 50 mm."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC vacuum pad assembly made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC vacuum pad assembly, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC vacuum pad assembly in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the SMC vacuum pad assembly in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-zp-series-vacuum-pad",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC ZP series vacuum pad adaptor used for?",
+          "a": "The SMC ZP series pad adaptor connects a vacuum pad to a vacuum line or fitting, in male or female M4 to M8 and 1/8\" threads. This listing carries 19 part numbers, such as ZPT1-A5, ZPT2-B6 and ZPT3-N01, with a temperature range of -30 to +250 deg C."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC adaptor part numbers such as ZPT1-A5 and ZPT3-B8?",
+          "a": "In the rows ZPT and a number (1 to 4) give the adaptor size, A is a male thread, B a female thread and the digit is the metric size, so ZPT1-A5 is male M5, ZPT3-B8 is female M8 and ZPT1-B4 female M4. N01 is a female 1/8\" thread, as in ZPT2-N01."
+        },
+        {
+          "slot": "D",
+          "q": "Which thread sizes does the SMC ZP adaptor come in?",
+          "a": "Male M5, M6 and M8, female M4, M5, M6 and M8, and female 1/8\", for example ZPT1-A5, ZPT4-A8, ZPT1-B4 and ZPT4-N01. Match the thread to your pad and vacuum line."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between ZPT1, ZPT2, ZPT3 and ZPT4 adaptors?",
+          "a": "The number sets the adaptor body size, with ZPT1 and ZPT2 carrying M4 to M6 threads (ZPT2 also 1/8\") and ZPT3 and ZPT4 M5 to M8 and 1/8\" in the rows. Pick the one that fits your pad diameter."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can the SMC ZP adaptor take?",
+          "a": "The listing gives -30 deg C to +250 deg C, which is -22 deg F to +482 deg F. It holds no pressure rating for adaptors, so we confirm limits with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What are the SMC ZP adaptors made from?",
+          "a": "The listing does not state the adaptor material. Send us your operating conditions and we confirm the material with SMC. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC ZP adaptor?",
+          "a": "No certificate or datasheet is attached to the the SMC ZP adaptor listing. Tell us in the enquiry what your file requires for ZPT1-A5, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which pads fit the SMC ZP adaptors?",
+          "a": "They fit SMC pads such as the [flat pads](/p/smc-vacuum-pad-flat) and [bellows pads](/p/smc-vacuum-pad-bellows); check the pad connection against the adaptor thread. Confirm the port thread and size against the part number before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an SMC ZP adaptor?",
+          "a": "Thread the adaptor into the pad and the vacuum fitting, tighten by hand plus a light wrench turn and check there is no leak at the joint before lifting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC ZP adaptor differ from the Value Line pad adapters?",
+          "a": "The ZP adaptors are metric M4 to M8 and 1/8\" fittings for SMC pads, while the [Value Line pad adapters](/p/value-line-vacuum-pad-adapters) cover 20 mm to 75 mm pads with 6 to 12 mm ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC ZP adaptor made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC ZP adaptor, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC ZP series pad adaptors in Dubai?",
+          "a": "Yes. We keep the SMC ZP series pad adaptors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pad",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the SMC vacuum pad listing?",
+          "a": "The SMC vacuum pad listing is the broad range of SMC suction pads and pad accessories, 366 part numbers in all, grouped by pad size 2-8, 10-25 and 32-50 mm plus oval and special pads. It includes ZPT06BS-A5, ZPB1J6-U4, ZP2004UN and ZCDUKQ16-10D."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC pad part numbers such as ZPT10BS-A5 or ZPT16BN-A6?",
+          "a": "In the rows ZPT and the two digits are the pad diameter (10, 16), B is a bellows pad and the next letter sets the version (S, N, U), with -A5, -A6 and -B5 giving the connection thread. The suffix letters on SMC pad part numbers set the pad version: F is the black pad with a green mark rated to 250 deg C, N is black to 120 deg C, S is white to 200 deg C (down to -30 deg C) and U is brown to 60 deg C."
+        },
+        {
+          "slot": "D",
+          "q": "Which pad sizes does the SMC vacuum pad listing cover?",
+          "a": "Rows are grouped as pad size 2-8, 10-25 and 32-50, with other-size and oval pads and 16 mm, 25 mm and 32 mm entries. For one diameter see the [flat pads](/p/smc-vacuum-pad-flat) or [bellows pads](/p/smc-vacuum-pad-bellows)."
+        },
+        {
+          "slot": "D",
+          "q": "What other products are in the SMC vacuum pad listing?",
+          "a": "Besides pads, the table holds a ZCDUKQ16-10D double-acting auto switcher and RFKSS-GAS0067 to RFKSS-GAS0069 numbers described as 16 mm, 25 mm and 32 mm black/clear pads. Quote the exact part number so we confirm the item."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure do SMC vacuum pads handle?",
+          "a": "Temperature depends on the pad version: ZP pads are rated 250 deg C (F), 120 deg C (N), 200 deg C (S) and 60 deg C (U), as on the [SMC flat pad rows](/p/smc-vacuum-pad-flat). The listing holds no vacuum rating per pad."
+        },
+        {
+          "slot": "F",
+          "q": "What are the pads in the SMC vacuum pad listing made from?",
+          "a": "The specification gives a bellows cup type with threaded vacuum entry for air, but pad materials differ by suffix and the listing does not name them for every row. Tell us the part number and we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC vacuum pad range?",
+          "a": "We hold no datasheet or certificate for the SMC vacuum pad range on this page. Ask for the SMC catalogue sheet or a certificate of conformity for ZPT10BS-A5 in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an SMC vacuum pad?",
+          "a": "A vacuum line from an ejector on the [vacuum generators, pads and filters shelf](/c/vacuum-components), with tube from our [pneumatic tubing](/c/pneumatic-tubing) shelf and a threaded connection that matches the -A5, -A6 or -B5 code."
+        },
+        {
+          "slot": "I",
+          "q": "How should I choose and test a suction pad from this listing?",
+          "a": "Choose the diameter from the load and vacuum level, apply a safety factor, and test the grip before production. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC vacuum pad listing differ from the individual pad pages?",
+          "a": "This listing is the full 366-part range, while pages such as the [flat pad](/p/smc-vacuum-pad-flat) and [bellows pad](/p/smc-vacuum-pad-bellows) list one pad type each with its versions."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC vacuum pads made and how are they exported?",
+          "a": "The country of origin for the SMC vacuum pads depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC vacuum pads in Dubai?",
+          "a": "Yes, SMC vacuum pads is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-ejector-single",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC single vacuum ejector used for?",
+          "a": "The SMC single vacuum ejector is a compact vacuum generator unit that makes vacuum from compressed air, listed with M5 and 1/8\" NPT connections and a muffler. This listing carries 22 part numbers in the ZQ1051U, ZQ1071U, NZM and NZL ranges, such as ZQ1051U-J15L-EBG-00 and NZM132HT."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC ejector part numbers such as ZQ1071U-K15L-EAG-00 and NZM101HT-K5LZ?",
+          "a": "In the rows the first digits after ZQ1 or NZM give the nozzle: ZQ1051U has a 0.5 mm orifice and a 5 LPM vacuum flow, ZQ1071U 0.7 mm and 10 LPM, and NZM052HT 0.5 mm and 18 LPM. The letters after the dash carry valve and switch options."
+        },
+        {
+          "slot": "D",
+          "q": "Which flow rates do SMC single vacuum ejectors offer?",
+          "a": "Rows list vacuum flow rates of 5 LPM (ZQ1051U), 10 LPM (ZQ1071U), 18 LPM (NZM052HT), 24 LPM (NZM071HT), 36 LPM (NZM102HT), 40 LPM (NZM132HT) and 100 LPM (NZL112-K15LZ-DPPL)."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve and switch options are on the SMC single ejector?",
+          "a": "Rows list a 1 NC supply valve (ZQ1051U-J15L-F) or a 2 NC supply and release valve (ZQ1051U-K15L-F), and PNP or NPN switch outputs (ZQ1051U-J15L-EBG-00 is PNP, ZQ1071U-K15L-EAG-00 NPN)."
+        },
+        {
+          "slot": "E",
+          "q": "What vacuum pressure and temperature does the SMC single ejector give?",
+          "a": "Rows state a vacuum pressure of -50 kPa at 40 psi on NZM102HT and -55 kPa on NZM132HT, and the listing gives +5 deg C to +60 deg C. These are at 40 psi supply, about 2.8 bar."
+        },
+        {
+          "slot": "F",
+          "q": "What is included with the SMC single vacuum ejector?",
+          "a": "The specification lists a muffler, needle flow control valve, supply valve and vacuum switch in the kit, depending on the part number. The listing gives a muffler exhaust."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC single vacuum ejector?",
+          "a": "This listing holds no datasheet or certificate file for the SMC single vacuum ejector, so name the document you need, for example a certificate of conformity or the SMC catalogue page for ZQ1071U-K15L-EAG-00, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an SMC single vacuum ejector?",
+          "a": "Compressed air supply on the pressure port (M5 or 1/8\" NPT) and a vacuum line to the pad, from the [vacuum generators, pads and filters shelf](/c/vacuum-components); fittings are on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and set up an SMC single ejector?",
+          "a": "Mount it close to the pads, connect supply and vacuum, then adjust the needle flow control and switch level with the part held. A muffler keeps noise down; see our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC single ejector differ from the SMC ZQ ejector listing?",
+          "a": "This listing mixes ZQ, NZM and NZL single units, while the [SMC ZQ series ejector](/p/smc-zq-series-vacuum-ejector) lists 11 ZQ part numbers with 0.7 mm and 1 mm nozzles."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC single vacuum ejector made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC single vacuum ejector, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC single vacuum ejector in Dubai?",
+          "a": "Yes. the SMC single vacuum ejector is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-ejectorline",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC vacuum ejector line used for?",
+          "a": "The SMC ejector line is an inline vacuum ejector with a muffler, in body and box styles with tube or NPT connections, used to make vacuum close to the pad. This listing carries 22 part numbers, such as NZHI05BS-07-T01, NZHI10BL-07-T01 and NZHI05DS-07-07-07."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC part numbers such as NZHI05BS-07-T01 and NZHI10DS-07-07-09?",
+          "a": "In the rows NZHI and the two digits (05, 07, 10, 13) look like the nozzle size, B and D the body style and L or S a version, and the groups -07 and -T01 the connections. The listing does not decode them, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which connections does the SMC ejector line have?",
+          "a": "Rows list 1/4\" tube (11 rows), 5/16\" tube (2), 1/8\" NPT (7), 1/4\" NPT and 3/8\" NPT inline bodies and boxes, for example NZHI05BS-07-T01 (box, 1/4\" tube) and NZHI13DL-09-11-11 (5/16\" tube body)."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between box and body style on the SMC ejector line?",
+          "a": "The rows describe Inline Box (7 on 1/4\" tube, NZHI05BL-07-T01) and Inline Body versions (4 on 1/4\" tube, NZHI05DS-07-07-07). The listing does not describe the difference, so quote the full part number and we confirm the style with SMC."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature does the SMC ejector line work at?",
+          "a": "The listing gives +5 deg C to +60 deg C with a muffler exhaust. It holds no vacuum pressure or flow figure for the ejector line rows, so we confirm them with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What does the SMC ejector line include?",
+          "a": "The specification gives a muffler as the exhaust type and as the included part, in the ZH series. Send your operating conditions and we confirm material and kit details with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC ejector line?",
+          "a": "No certificate or datasheet is attached to the the SMC ejector line listing. Tell us in the enquiry what your file requires for NZHI05BS-07-T01, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What tubing and pads connect to the SMC ejector line?",
+          "a": "Tube of 1/4\" or 5/16\" from our [pneumatic tubing](/c/pneumatic-tubing) shelf on the tube versions, or NPT fittings on the 1/8\" and 3/8\" versions, and pads from the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install an SMC inline ejector?",
+          "a": "Mount close to the pad to cut response time, connect supply and vacuum lines and keep the muffler exhaust clear. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC ejector line differ from the ZH series ejector?",
+          "a": "The ejector line is inline-style with tube or NPT connections, while the [SMC ZH series vacuum ejector](/p/smc-zh-series-vacuum-ejector) is an attachment-type ejector with an M8 male mounting thread."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC vacuum ejector line made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC vacuum ejector line, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC vacuum ejector line in Dubai?",
+          "a": "Yes, we stock the SMC vacuum ejector line at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-ejectors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the SMC vacuum ejectors listing?",
+          "a": "The SMC vacuum ejectors listing is a broad range of SMC ejectors, 100 part numbers in all, in the ZX, ZL, ZR, ZU and ZK families with non-silenced exhaust and nozzle sizes from 0.5 to 2 mm. It includes ZU05S, ZX1101-K15LZ-E55C and NZL112-K13DZ-G."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC ejector part numbers such as ZX1101-K15LZ-E55C and ZU07S?",
+          "a": "In the rows the digits after the family letters give the nozzle: ZU05S is 0.5 mm, ZX105 0.5, ZX107 0.7, ZX110 1, ZL112 1.2, ZR115 1.5 and ZR120 2 mm. The letters after the dash carry valve and switch options that the listing does not spell out."
+        },
+        {
+          "slot": "D",
+          "q": "Which nozzle sizes do SMC vacuum ejectors come in?",
+          "a": "Rows list nozzle sizes of 0.5 mm (7 rows), 0.7 mm (6), 1 mm (20), 1.2 mm (40), 1.3 mm (3), 1.5 mm (4) and 2 mm (4). The larger nozzle moves more vacuum flow but uses more air."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between ZX, ZL and ZU ejectors in this listing?",
+          "a": "The listing groups ZX (23 part numbers), ZL (21), ZR (9) and ZU (3) ejectors without a one-line difference, so give us the flow and port you need and we confirm the family with SMC."
+        },
+        {
+          "slot": "E",
+          "q": "What exhaust and flow does the SMC ejector listing state?",
+          "a": "The specification gives a non-silenced exhaust for air, and rows such as NZM072HT are described as single 1/8\" NPT ejectors. The listing holds no vacuum pressure figure for most rows, so we confirm it for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What medium do SMC vacuum ejectors use?",
+          "a": "They run on clean compressed air, with the vacuum drawn from the pad side. Filter the supply air, since dirt in the nozzle cuts the vacuum; see the [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for SMC vacuum ejectors?",
+          "a": "We hold no datasheet or certificate for SMC vacuum ejectors on this page. Ask for the SMC catalogue sheet or a certificate of conformity for ZX1101-K15LZ-E55C in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to an SMC vacuum ejector?",
+          "a": "Compressed air supply on the pressure port, a vacuum line to the pad and an exhaust or silencer. See the [vacuum generators, pads and filters shelf](/c/vacuum-components) and our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for silencers and fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install an SMC vacuum ejector?",
+          "a": "Mount it as close to the pads as possible, connect supply and vacuum, and test the vacuum level with the part held. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the SMC ZH ejectors differ from this ejectors listing?",
+          "a": "This listing is a broad range with non-silenced exhaust, while the [SMC ZH series vacuum ejector](/p/smc-zh-series-vacuum-ejector) is an attachment-type ejector with an M8 male mounting thread."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC vacuum ejectors made and how are they exported?",
+          "a": "The country of origin for SMC vacuum ejectors depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC vacuum ejectors in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps SMC vacuum ejectors in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-generator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC vacuum generator used for?",
+          "a": "The SMC vacuum generator is an ejector-type unit that makes vacuum from compressed air for suction pads and handling. This listing carries 40 part numbers in the ZM, ZZM and ZZX ranges, such as ZM132H, ZM051H-J5LZ and ZZX104-B, with nozzle sizes from 0.5 to 1.3 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC generator part numbers such as ZM051H-K5LZ and ZM132H?",
+          "a": "In the rows the digits after ZM give the nozzle: ZM051H is a 0.5 mm nozzle, ZM071H 0.7, ZM101 1 and ZM131H and ZM132H 1.3. The letters after the dash carry valve and connector options that the listing does not spell out."
+        },
+        {
+          "slot": "D",
+          "q": "Which nozzle sizes do SMC vacuum generators come in?",
+          "a": "Rows list 0.5 mm (5 rows), 0.7 mm (4), 1 mm (12) and 1.3 mm (15). The larger nozzle moves more vacuum flow but uses more air. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What is the ZZX104-B vacuum generator?",
+          "a": "ZZX104-B is listed as a 1/8\" ported vacuum generator, separate from the ZM numbers. Quote the part number so we confirm the specification with SMC."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the SMC vacuum generator listing give?",
+          "a": "The listing holds no vacuum pressure, flow or temperature figures for the generator rows, so we confirm them for your exact part number with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What medium and material apply to the SMC vacuum generators?",
+          "a": "They run on clean compressed air; materials are not stated. Filter the supply and send your conditions if you need material details."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for SMC vacuum generators?",
+          "a": "This listing holds no datasheet or certificate file for SMC vacuum generators, so name the document you need, for example a certificate of conformity or the SMC catalogue page for ZM101M-K5L, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to an SMC vacuum generator?",
+          "a": "Air supply on the pressure port and a vacuum line to the pad, from the [vacuum generators, pads and filters shelf](/c/vacuum-components); fittings and silencers are on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install an SMC vacuum generator?",
+          "a": "Mount it near the pad, connect supply and vacuum lines and check the vacuum level with the part held. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC vacuum generator differ from the SMC vacuum ejector listing?",
+          "a": "The generator listing is the ZM-style range with 0.5 to 1.3 mm nozzles, while the [SMC vacuum ejectors](/p/smc-vacuum-ejectors) listing is broader, up to 2 mm."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC vacuum generator made and how is it exported?",
+          "a": "The country of origin for the SMC vacuum generator depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC vacuum generator in Dubai?",
+          "a": "Yes. We keep the SMC vacuum generator in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-pressure-switch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC ZSE vacuum pressure switch used for?",
+          "a": "The SMC ZSE vacuum pressure switch monitors vacuum level and switches an output when a pad has gripped, with 2 NPN outputs, a bracket and a lead. This listing carries 5 part numbers: ZSE10-M5-A-PG, ZSE10-M5-B-PG, ZSE10-N01-A-PG, ZSE10-N01-B-PG and ZSE40A-N01-R-A."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC part numbers such as ZSE10-M5-A-PG and ZSE10-N01-B-PG?",
+          "a": "In the rows ZSE10 is the series, -M5 is an M5 (5 mm) port and -N01 a 1/8\" port, and the A and B group gives two versions. ZSE40A-N01-R-A is the larger body with a 1/8\" port."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC ZSE switch have?",
+          "a": "Two part numbers have an M5 (5 mm) port (ZSE10-M5-A-PG, ZSE10-M5-B-PG) and three have a 1/8\" port (ZSE10-N01-A-PG, ZSE10-N01-B-PG, ZSE40A-N01-R-A)."
+        },
+        {
+          "slot": "D",
+          "q": "What lead length and size does the SMC ZSE10 switch have?",
+          "a": "The ZSE10 rows state 2 m leads, 25 mm height and 9.8 mm width, and ZSE40A-N01-R-A is 3 m with a 40 mm height. Quote the part number for exact dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What range and temperature does the SMC ZSE switch have?",
+          "a": "Rows state a maximum vacuum pressure of 105 kPa, about 15 psi, and the listing gives +5 deg C to +60 deg C. The listing gives output type as 2 NPN outputs."
+        },
+        {
+          "slot": "F",
+          "q": "What does the SMC ZSE vacuum switch include?",
+          "a": "The specification lists a bracket and a ZSE series switch with 2 NPN outputs. Materials are not stated; send your operating conditions and we confirm with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC ZSE switch?",
+          "a": "No certificate or datasheet is attached to the the SMC ZSE vacuum switch listing. Tell us in the enquiry what your file requires for ZSE10-N01-A-PG, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an SMC ZSE vacuum switch?",
+          "a": "A vacuum port connection (M5 or 1/8\") on the vacuum line near the pad, and the lead to your PLC input, plus ejectors from the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and set an SMC ZSE switch?",
+          "a": "Connect the lead to your controller with the correct NPN wiring, set the switching level above the vacuum needed to hold the part, and check the output with a gripped part."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC ZSE switch differ from the SMC vacuum regulator?",
+          "a": "The switch signals a vacuum level, while the [SMC vacuum regulator](/p/smc-vacuum-regulator) sets the vacuum level. Use the switch to prove grip and the regulator to limit vacuum."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC ZSE vacuum switch made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC ZSE vacuum switch, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Pressure switches fall under HS heading 8536."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC ZSE vacuum pressure switch in Dubai?",
+          "a": "Yes, the SMC ZSE vacuum pressure switch is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-regulator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the SMC vacuum regulator listing?",
+          "a": "The SMC vacuum regulator listing holds 9 part numbers that regulate vacuum level for pad and ejector circuits, including IRV10-N01-X3, IRV20-N09BG, IRV20-N11BG, NIT209-T003BG and the P53801018 and P601010-12 numbers. The specification gives an electro-pneumatic input signal and an NPTF thread."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC part numbers such as IRV20-N11BG and IRV10-N01-X3?",
+          "a": "In the rows IRV10 and IRV20 are the two sizes, and the code after the dash sets the port: IRV10-N01-X3 is a 1/8\" regulator, IRV20-N09BG a 5/16\" (0.312\") one and IRV20-N11BG a 3/8\" one. The remaining letters are options the listing does not spell out."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes do the SMC IRV vacuum regulators have?",
+          "a": "Rows list 1/8\" (IRV10-N01-X3, stated as 0.125), 5/16\" (IRV20-N09BG, 71 mm high and deep) and 3/8\" (IRV20-N11BG, 72 mm). The other rows do not state a port size."
+        },
+        {
+          "slot": "D",
+          "q": "What are the P53801018 and P601010-12 vacuum regulator numbers?",
+          "a": "They are listed as vacuum regulators with no size or rating in the row text, so quote the part number and we confirm what the regulator is and its ports with SMC before supply."
+        },
+        {
+          "slot": "E",
+          "q": "What range and ratings does the SMC vacuum regulator have?",
+          "a": "The listing holds no vacuum range, flow or temperature figures for these rows, so we confirm them for your exact part number with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC vacuum regulator made of?",
+          "a": "The listing does not state the body or diaphragm material. Send your operating conditions and we confirm with SMC. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC vacuum regulator?",
+          "a": "We hold no datasheet or certificate for the SMC vacuum regulator on this page. Ask for the SMC catalogue sheet or a certificate of conformity for IRV20-N11BG in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to an SMC vacuum regulator?",
+          "a": "A vacuum line on the inlet and the pad or ejector circuit on the outlet, with NPTF fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf and vacuum generators from the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set an SMC vacuum regulator?",
+          "a": "Adjust the setting with the pad held on a part until the vacuum is just high enough for a secure grip, then lock the setting. A lower vacuum protects delicate parts."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC vacuum regulator differ from the Cash Valve D51 vacuum regulator?",
+          "a": "The SMC IRV regulators are small 1/8\" to 3/8\" units, while the [Cash Valve D51 series](/p/cash-valve-d51-series-vacuum-regulators) are 1\" to 2\" bronze regulators. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC vacuum regulator made and how is it exported?",
+          "a": "The country of origin for the SMC vacuum regulator depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC vacuum regulator in Dubai?",
+          "a": "Yes. the SMC vacuum regulator is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vacuum-water-separator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC AMJ vacuum water separator used for?",
+          "a": "The SMC AMJ vacuum water separator removes water from the vacuum line ahead of an ejector or pump, with a drain cock and a water element. This listing carries 4 part numbers: AMJ3000-N02B (1/4\"), AMJ3000-N03B (3/8\"), AMJ5000-N06B (3/4\") and AMJ5000-N10B (1\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC part numbers such as AMJ3000-N03B and AMJ5000-N10B?",
+          "a": "In the rows AMJ3000 and AMJ5000 are the two body sizes and the code after the dash is the port: N02 is 1/4\", N03 3/8\", N06 3/4\" and N10 1\". The B ending is common to all four."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the SMC AMJ separator come in?",
+          "a": "1/4\" and 3/8\" on the AMJ3000 body and 3/4\" and 1\" on the AMJ5000 body. Pick the port to match your vacuum line. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between AMJ3000 and AMJ5000 separators?",
+          "a": "AMJ3000 is the smaller body with 1/4\" and 3/8\" ports, and AMJ5000 the larger with 3/4\" and 1\" ports. Choose the size from the vacuum flow in the line."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature does the SMC AMJ separator handle?",
+          "a": "The listing gives a temperature of 60 deg C, which is 140 deg F. It holds no vacuum or flow rating for the AMJ rows, so we confirm them with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What is included with the SMC AMJ separator?",
+          "a": "The specification lists a drain cock and a water element. Body and bowl materials are not stated, so send your conditions and we confirm with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC AMJ separator?",
+          "a": "This listing holds no datasheet or certificate file for the SMC AMJ separator, so name the document you need, for example a certificate of conformity or the SMC catalogue page for AMJ3000-N03B, and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to an SMC AMJ vacuum water separator?",
+          "a": "Vacuum lines on the inlet and outlet ports, with fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, between the pad circuit and the [vacuum ejector](/p/smc-vacuum-ejectors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain an SMC AMJ separator?",
+          "a": "Drain the separator through the drain cock before it fills, and replace the water element when it clogs. Install it with the drain downwards."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC AMJ separator differ from the Solberg liquid separators?",
+          "a": "The AMJ is an SMC vacuum-line water separator with 1/4\" to 1\" ports, while the [Solberg LRS separators](/p/solberg-lrs-series-right-angle-liquid-separators) are right-angle liquid separators for vacuum pumps."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC AMJ separator made and how is it exported?",
+          "a": "The listing records Japan as the country of origin for the SMC AMJ separator, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Filtering and separating machinery falls under HS heading 8421."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC AMJ vacuum water separator in Dubai?",
+          "a": "Yes, we stock the SMC AMJ vacuum water separator at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "smc-zh-series-vacuum-ejector",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC ZH series vacuum ejector used for?",
+          "a": "The SMC ZH series vacuum ejector is an attachment-type ejector with an M8 male mounting thread that draws vacuum for suction pads, in the rubber group. This listing carries 55 part numbers, such as ZH05BS-01-01, ZH10-B-X185 and ZHI07BS-07-07, with nozzle sizes from 0.5 to 2 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC ZH part numbers such as ZH07BL-01-01 and ZH13BS-06-06?",
+          "a": "In the rows the two digits after ZH give the nozzle: ZH05 is 0.5 mm, ZH07 0.7, ZH10 1, ZH13 1.3, ZH15 1.5, ZH18 1.8 and ZH20 2 mm. The B, S and L letters and the connection groups carry options the listing does not spell out."
+        },
+        {
+          "slot": "D",
+          "q": "Which nozzle sizes do SMC ZH ejectors come in?",
+          "a": "Rows list 0.5 mm (7 part numbers), 0.7 (7), 1 (12), 1.3 (13), 1.5 (3), 1.8 (4) and 2 mm (5). The larger nozzle gives more vacuum flow and uses more compressed air."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between ZH and ZHI part numbers in this listing?",
+          "a": "The listing includes ZH numbers (ZH05BS-01-01) and ZHI numbers (ZHI07BS-07-07, ZHI10BS-T01-T01), which carry different connection codes. Quote the full part number and we confirm the connections with SMC."
+        },
+        {
+          "slot": "E",
+          "q": "What mounting and ratings does the SMC ZH ejector have?",
+          "a": "The specification gives an attachment mounting method with a male M8 mounting thread. The listing holds no vacuum pressure, flow or temperature figures for the ZH rows, so we confirm them with SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the SMC ZH ejector?",
+          "a": "The specification lists the material as rubber group, which refers to the ejector with its rubber seal parts. Send your operating conditions and we confirm the material details with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC ZH ejector?",
+          "a": "No certificate or datasheet is attached to the the SMC ZH ejector listing. Tell us in the enquiry what your file requires for ZH07BL-01-01, such as a conformity certificate, and we obtain it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an SMC ZH ejector?",
+          "a": "Compressed air supply, a vacuum line to the pad and a silencer or exhaust; the ejector mounts on the M8 thread of the pad holder. See our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf and the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install an SMC ZH ejector?",
+          "a": "Thread it into the M8 attachment point near the pad, connect supply and vacuum and test the vacuum with the part held. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC ZH ejector differ from the SMC ZQ ejector?",
+          "a": "ZH is an attachment-type ejector with an M8 thread and 0.5 to 2 mm nozzles, while the [SMC ZQ series ejector](/p/smc-zq-series-vacuum-ejector) is a compact unit with 0.7 mm and 1 mm nozzles."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC ZH ejector made and how is it exported?",
+          "a": "The country of origin for the SMC ZH ejector depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC ZH series vacuum ejectors in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps SMC ZH series vacuum ejectors in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "smc-zq-series-vacuum-ejector",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC ZQ series vacuum ejector used for?",
+          "a": "The SMC ZQ series vacuum ejector is a compact ejector for suction pads, with 0.7 mm and 1 mm nozzles in the row text. This listing carries 11 part numbers, such as ZQ1101U-K15L-F, ZQ1073M-K25L-FEPG-3 and ZZQ104-BSB."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read SMC ZQ part numbers such as ZQ1101U-K15L-F and ZQ1073M-K25L-FEPG-3?",
+          "a": "In the rows the digits after ZQ1 give the nozzle: ZQ107 is 0.7 mm and ZQ110 is 1 mm. The letters after the dash carry valve and switch options that the listing does not spell out, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which nozzle sizes do SMC ZQ ejectors come in?",
+          "a": "Rows list 0.7 mm (ZQ1073M-K25L-FEPG-3) and 1 mm (ZQ1101U-K15L-F, 5 rows), and three rows give the nozzle only as a part number (ZQ1-FCE-AS and others). Choose the nozzle by the vacuum flow you need."
+        },
+        {
+          "slot": "D",
+          "q": "What are the ZZQ104-BSB and ZZQ106-BSB part numbers?",
+          "a": "They are listed in the ZQ ejector table without a size or rating, so quote the number and we confirm what they are with SMC before supply."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings does the SMC ZQ ejector have?",
+          "a": "The listing holds no vacuum pressure, flow or temperature figures for the ZQ rows. The [single ejector listing](/p/smc-vacuum-ejector-single) gives 5 to 100 LPM for related ZQ1051U and ZQ1071U units, and we confirm figures for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC ZQ ejector made of?",
+          "a": "The listing does not state the material. Send your operating conditions and we confirm with SMC. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the SMC ZQ ejector?",
+          "a": "We hold no datasheet or certificate for the SMC ZQ ejector on this page. Ask for the SMC catalogue sheet or a certificate of conformity for ZQ1101U-K15L-F in your enquiry and we request it from SMC when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an SMC ZQ ejector?",
+          "a": "Compressed air supply and a vacuum line to the pad, with fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf and pads from the [vacuum generators, pads and filters shelf](/c/vacuum-components)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install an SMC ZQ ejector?",
+          "a": "Mount close to the pad, connect supply and vacuum, and check the vacuum with the part held. See our [grippers and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide). Test at low pressure first and check every connection for leaks before going to line pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC ZQ ejector differ from the SMC ZH ejector?",
+          "a": "ZQ is a compact unit in 0.7 mm and 1 mm nozzles, while the [SMC ZH ejector](/p/smc-zh-series-vacuum-ejector) is an attachment type with an M8 thread and nozzles to 2 mm."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC ZQ ejector made and how is it exported?",
+          "a": "The country of origin for the SMC ZQ ejector depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Vacuum equipment and parts fall under HS heading 8414 or 8481 depending on the item."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC ZQ series vacuum ejectors in Dubai?",
+          "a": "Yes. We keep SMC ZQ series vacuum ejectors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1128 @@
+{
+  "family": "npt-adapters-06",
+  "extraFacts": [
+    {
+      "fact": "NPTF (Dryseal) is a taper pipe thread cut so the crests and roots close up as the joint is tightened, so it seals on the thread (ASME B1.20.3).",
+      "source": "ASME B1.20.3 (Dryseal pipe threads)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "NPSM is a straight (parallel) pipe thread for mechanical joints (ASME B1.20.1): it does not seal on the thread, so an NPSM swivel end seals on its seat, which on these Dixon swivels is a 30° seat.",
+      "source": "ASME B1.20.1; Dixon swivel listing feature note (female NPSM swivel seals on a 30° seat)"
+    },
+    {
+      "fact": "NPT pipe-thread ends carry a lower pressure limit than the same size in a flare, boss or flange end; for example a 2\" NPT end is limited to 1,000 psi.",
+      "source": "SAE J514 pipe-thread end pressure limits (Indus Hydraulics NPTF pressure-limits note)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-hex-caps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Hex Caps used for?",
+          "a": "The Dixon Hex Caps are caps from Dixon Valve & Coupling that close off the end of a line or a male-threaded stub. They come in 8 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1-1/2\"-11-1/2 NPTF (female) in the Dixon Hex Caps?",
+          "a": "Quote 5406C-24 for 1-1/2\"-11-1/2 NPTF (female), 5406C-12 for 3/4\"-14 NPTF (female) and 5406C-2 for 1/8\"-27 NPTF (female). The Dixon Hex Caps list 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Hex Caps come in?",
+          "a": "The Dixon Hex Caps come in 8 part numbers. Examples from the table: 5406C-16 (1\"-11-1/2 NPTF (female)), 5406C-20 (1-1/4\"-11-1/2 NPTF (female)) and 5406C-8 (1/2\"-14 NPTF (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Hex Caps for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Hex Caps only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a cap you only need the single thread it closes. Then pick the row: 5406C-20 (1-1/4\"-11-1/2 NPTF (female)) and 5406C-8 (1/2\"-14 NPTF (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Hex Caps?",
+          "a": "The maker states 1,000 to 5,000 psi (69 to 345 bar), by size for the Dixon Hex Caps. For example 5406C-4 is listed at 345 bar and 5406C-24 at 69 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Hex Caps made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Hex Caps in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Hex Caps conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Hex Caps names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Hex Caps, and which fittings do I pair them with?",
+          "a": "For the Dixon Hex Caps: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Hex Caps seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon Hex Caps seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Hex Caps differ from the Dixon Tees?",
+          "a": "The Dixon Hex Caps has Hex Caps where the [Dixon Tees](/p/dixon-tees) has Tees. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Hex Caps made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Hex Caps as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hex Caps in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon Hex Caps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hex-reducer-bushing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Hex Reducer Bushing used for?",
+          "a": "The Dixon Hex Reducer Bushing is a bushing from Dixon Valve & Coupling that steps a larger female port down to a smaller male thread. It comes in 17 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Hex Reducer Bushing, Plated Steel in the Dixon Hex Reducer Bushing?",
+          "a": "Quote 5406-12-4 for Hex Reducer Bushing, Plated Steel, 5406-20-8 for 1/2\"-14 × 1 1/4\"-11.5 and 5406-6-2 for Hex Reducer Bushing, Plated Steel. The Dixon Hex Reducer Bushing lists 17 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon Hex Reducer Bushing come in?",
+          "a": "The Dixon Hex Reducer Bushing comes in 17 part numbers. Examples from the table: 5406-16-4 (1/4\"-18 × 1\"-11.5), 5406-20-6 (3/8\"-18 × 1 1/4\"-11.5) and 5406-6-4 (Hex Reducer Bushing, Plated Steel). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Hex Reducer Bushing for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Hex Reducer Bushing only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 5406-16-6 (3/8\"-18 × 1\"-11.5) and 5406-8-4 (Hex Reducer Bushing, Plated Steel)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Hex Reducer Bushing?",
+          "a": "The maker states 1,000 to 2,000 psi (69 to 138 bar), by size for the Dixon Hex Reducer Bushing. For example 5406-16-4 is listed at 138 bar and 5406-24-8 at 69 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon Hex Reducer Bushing made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Hex Reducer Bushing in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dixon Hex Reducer Bushing conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Hex Reducer Bushing names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Hex Reducer Bushing, and which fittings do I pair it with?",
+          "a": "For the Dixon Hex Reducer Bushing: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Dixon Hex Reducer Bushing seal, and what should I check when fitting it?",
+          "a": "A tapered NPT or NPTF end of the Dixon Hex Reducer Bushing seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Hex Reducer Bushing differ from the Dixon Hex Caps?",
+          "a": "The Dixon Hex Reducer Bushing has Reducer Bushing where the [Dixon Hex Caps](/p/dixon-hex-caps) has Caps. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Hex Reducer Bushing made, and can you export it from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Hex Reducer Bushing as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hex Reducer Bushing in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Hex Reducer Bushing sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-male-flat-face-unions",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Male Flat Face Unions used for?",
+          "a": "The Dixon Male Flat Face Unions are unions from Dixon Valve & Coupling that join two lines so they can be parted without turning the pipework. They come in 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 11/16\"-16 Flat Face (male) in the Dixon Male Flat Face Unions?",
+          "a": "Quote FS2403-6 for 11/16\"-16 Flat Face (male), FS2403-16 for 1 7/16\"-12 Flat Face (male) and FS2403-8 for 13/16\"-16 Flat Face (male). The Dixon Male Flat Face Unions list 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Male Flat Face Unions are available?",
+          "a": "The Dixon Male Flat Face Unions come in 6 part numbers. Examples from the table: FS2403-10 (1\"-14 Flat Face (male)), FS2403-12 (1 3/16\"-12 Flat Face (male)) and FS2403-4 (9/16\"-18 Flat Face (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Male Flat Face Unions for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Male Flat Face Unions only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: FS2403-10 (1\"-14 Flat Face (male)) and FS2403-4 (9/16\"-18 Flat Face (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Male Flat Face Unions?",
+          "a": "The maker states 6,000 psi (414 bar) for the Dixon Male Flat Face Unions. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Male Flat Face Unions made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Male Flat Face Unions in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Male Flat Face Unions conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Male Flat Face Unions names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Male Flat Face Unions, and which fittings do I pair them with?",
+          "a": "Each end of the Dixon Male Flat Face Unions must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Male Flat Face Unions seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Dixon Male Flat Face Unions, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Male Flat Face Unions differ from the Dixon Unions?",
+          "a": "The Dixon Male Flat Face Unions carries Male Flat Face in its name where the [Dixon Unions](/p/dixon-unions) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Male Flat Face Unions made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Male Flat Face Unions as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Male Flat Face Unions in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Dixon Male Flat Face Unions are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-nominal-female-sae-swivels",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Nominal Female SAE Swivels used for?",
+          "a": "The Dixon Nominal Female SAE Swivels are swivels from Dixon Valve & Coupling that join two ports where one end must turn freely while it is made up. The maker notes: Crimp Collars For All Nominal Fittings Are Included. They come in 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Swivel Adapter, Nominal Female SAE in the Dixon Nominal Female SAE Swivels?",
+          "a": "Quote SAEC-12-12 for Swivel Adapter, Nominal Female SAE, SAEB-06-06 for Swivel Adapter, Nominal Female SAE and SAEB-12-12 for Swivel Adapter, Nominal Female SAE. The Dixon Nominal Female SAE Swivels list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Nominal Female SAE Swivels are available?",
+          "a": "The Dixon Nominal Female SAE Swivels come in 4 part numbers. Examples from the table: SAEC-06-06 (Swivel Adapter, Nominal Female SAE) and SAEB-06-06 (Swivel Adapter, Nominal Female SAE). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Nominal Female SAE Swivels for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Nominal Female SAE Swivels only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: SAEC-06-06 (Swivel Adapter, Nominal Female SAE) and SAEB-12-12 (Swivel Adapter, Nominal Female SAE)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Nominal Female SAE Swivels?",
+          "a": "No working pressure is published for the Dixon Nominal Female SAE Swivels, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Nominal Female SAE Swivels made from, and is it suitable for my fluid?",
+          "a": "The Dixon Nominal Female SAE Swivels are made from brass, carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Nominal Female SAE Swivels conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Nominal Female SAE Swivels names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Nominal Female SAE Swivels, and which fittings do I pair them with?",
+          "a": "Each end of the Dixon Nominal Female SAE Swivels must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Nominal Female SAE Swivels seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Dixon Nominal Female SAE Swivels, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Nominal Female SAE Swivels differ from the Steel NPSM Female Swivel Union?",
+          "a": "The Dixon Nominal Female SAE Swivels has Dixon Nominal where the [Steel NPSM Female Swivel Union](/p/steel-npsm-female-swivel-union) has Steel NPSM, and SAE Swivels where it has Swivel Union. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Nominal Female SAE Swivels made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Nominal Female SAE Swivels as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Nominal Female SAE Swivels in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Dixon Nominal Female SAE Swivels are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-pipe-tees",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Pipe Tees used for?",
+          "a": "The Dixon Pipe Tees are tees from Dixon Valve & Coupling that split or combine a line through three ports. They come in 20 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\"-11.5 NPTF (male) in the Dixon Pipe Tees?",
+          "a": "Quote 5600-16 for 1\"-11.5 NPTF (male), 5605-16 for Pipe Tee, Zinc Plated Steel, 1-11.5 Inch FNPTF Size and 5602-20 for 1 1/4\"-11.5 NPTF (male). The Dixon Pipe Tees list 20 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Pipe Tees come in?",
+          "a": "The Dixon Pipe Tees come in 20 part numbers. Examples from the table: 5600-12 (3/4\"-14 NPTF (male)), 5605-4 (Pipe Tee, 1/4-18 Inch FNPTF, Zinc Plated Steel) and 5602-24 (1 1/2\"-11.5 NPTF (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Pipe Tees for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Pipe Tees only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: 5602-16 (1\"-11.5 NPTF (male)) and 5602-12 (3/4\"-14 NPTF (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Pipe Tees?",
+          "a": "The maker states 1,000 to 5,000 psi (69 to 345 bar), by size for the Dixon Pipe Tees. For example 5605-4 is listed at 345 bar and 5602-24 at 69 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Pipe Tees made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Pipe Tees in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Pipe Tees conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Pipe Tees names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Pipe Tees, and which fittings do I pair them with?",
+          "a": "For the Dixon Pipe Tees: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Pipe Tees seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon Pipe Tees seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Pipe Tees differ from the Dixon Tees?",
+          "a": "The Dixon Pipe Tees carries Pipe in its name where the [Dixon Tees](/p/dixon-tees) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Pipe Tees made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Pipe Tees as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Pipe Tees in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon Pipe Tees in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-ra-series-reducing-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Ra Series Reducing Adapters used for?",
+          "a": "The Dixon Ra Series Reducing Adapters are adapters from Dixon Valve & Coupling that connect the two end types named in its title and size table. They come in 12 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Grooved Reducing Adapter, Ductile Iron in the Dixon Ra Series Reducing Adapters?",
+          "a": "Quote RAGG6030 for Grooved Reducing Adapter, Ductile Iron, 6 x 3 Inch Nominal Size and RAGG6040 for Grooved Reducing Adapter, Ductile Iron, 6 x 4 Inch Nominal Size. The Dixon Ra Series Reducing Adapters list 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Ra Series Reducing Adapters come in?",
+          "a": "The Dixon Ra Series Reducing Adapters come in 12 part numbers. Examples from the table: RAGG3020 (Grooved Reducing Adapter, Ductile Iron), RAGG5040 (Grooved Reducing Adapter, Ductile Iron) and RAGG40250 (Grooved Reducing Adapter, 4 x 2-1/2 Inch Nominal Size). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Ra Series Reducing Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Ra Series Reducing Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: RAGG4030 (Grooved Reducing Adapter, Ductile Iron) and RAGG30250 (Grooved Reducing Adapter, 3 x 2-1/2 Inch Nominal Size)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Ra Series Reducing Adapters?",
+          "a": "No working pressure is published for the Dixon Ra Series Reducing Adapters, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Ra Series Reducing Adapters made from, and is it suitable for my fluid?",
+          "a": "The Dixon Ra Series Reducing Adapters are made from ductile iron. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Ra Series Reducing Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Ra Series Reducing Adapters names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Ra Series Reducing Adapters, and which fittings do I pair them with?",
+          "a": "Each end of the Dixon Ra Series Reducing Adapters must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Ra Series Reducing Adapters seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Dixon Ra Series Reducing Adapters, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Ra Series Reducing Adapters differ from the Aeroquip 2081 Series Reducer Adapters?",
+          "a": "The Dixon Ra Series Reducing Adapters has Dixon Ra where the [Aeroquip 2081 Series Reducer Adapters](/p/aeroquip-2081-series-reducer-adapters) has Aeroquip 2081, and Reducing where it has Reducer. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Ra Series Reducing Adapters made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Ra Series Reducing Adapters as made in Taiwan. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Ra Series Reducing Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Ra Series Reducing Adapters sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-tees",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Tees used for?",
+          "a": "The Dixon Tees are tees from Dixon Valve & Coupling that split or combine a line through three ports. They come in 367 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Tee, 1 Inch FNPT Size, Polypropylene in the Dixon Tees?",
+          "a": "Quote 62211 for Tee, 1 Inch FNPT Size, Polypropylene, T7RMPS-250075PL for Tee, 2-1/2 x 3/4 Inch Dia., 316L Stainless Steel and B7W-R50U for Tee, 1/2 Inch Dia., 316L Stainless Steel. The Dixon Tees list 367 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Tees are available?",
+          "a": "The Dixon Tees come in 367 part numbers. Examples from the table: 62190 (Tee, 2 Inch FNPT Size, Polypropylene), T7IMPS-100150PL (Tee, 1 x 1-1/2 Inch Dia., 316L Stainless Steel) and T7WWW-600PL (Tee, 6 Inch Dia., 316L Stainless Steel). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Tees for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Tees only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: B7RWWW-R7550P (Tee, 3/4 x 1/2 Inch Dia., 316L Stainless Steel) and T7RWWMS075050PM (Tee, 3/4 x 1/2 Inch Dia., 316L Stainless Steel)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Tees?",
+          "a": "No working pressure is published for the Dixon Tees, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Tees made from, and is it suitable for my fluid?",
+          "a": "The material of the Dixon Tees depends on the row: 316L stainless steel, stainless steel, polypropylene (7 part numbers) and brass (3 part numbers), shown in the item description of each part number. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Tees conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Tees names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Tees, and which fittings do I pair them with?",
+          "a": "Each end of the Dixon Tees must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Tees seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Dixon Tees, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Tees differ from the Dixon Pipe Tees?",
+          "a": "The [Dixon Pipe Tees](/p/dixon-pipe-tees) carries Pipe in its name where the Dixon Tees does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Tees made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Tees as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Tees in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Tees sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-unions",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Unions used for?",
+          "a": "The Dixon Unions are unions from Dixon Valve & Coupling that join two lines so they can be parted without turning the pipework. They come in 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Union, 3/8 Inch Dia., Polypropylene in the Dixon Unions?",
+          "a": "Quote PP6VUC6-MG for Union, 3/8 Inch Dia., Polypropylene, HUCH20CS for Union, 5/16 Inch Size and PP6VEU4-MG for Union, 3/8 x 1/4 Inch Dia., Polypropylene. The Dixon Unions list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Unions come in?",
+          "a": "The Dixon Unions come in 3 part numbers. Examples from the table: PP6VUC6-MG (Union, 3/8 Inch Dia., Polypropylene), HUCH20CS (Union, 5/16 Inch Size) and PP6VEU4-MG (Union, 3/8 x 1/4 Inch Dia., Polypropylene). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Unions for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Unions only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: PP6VUC6-MG (Union, 3/8 Inch Dia., Polypropylene) and PP6VEU4-MG (Union, 3/8 x 1/4 Inch Dia., Polypropylene)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Unions?",
+          "a": "No working pressure is published for the Dixon Unions, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Unions made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Unions in polypropylene. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Unions conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Unions names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Unions, and which fittings do I pair them with?",
+          "a": "Each end of the Dixon Unions must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Unions seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Dixon Unions, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Unions differ from the Dixon Tees?",
+          "a": "The Dixon Unions has Unions where the [Dixon Tees](/p/dixon-tees) has Tees. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Unions made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Unions as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Unions in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Dixon Unions are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "hatec-compression-tube-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Hatec Compression Tube Fitting used for?",
+          "a": "The Hatec Compression Tube Fitting is a fitting from Hatec that connects the two end types named in its title and size table. It comes in 24 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Fitting Compression Straight M12 x 1.5 in the Hatec Compression Tube Fitting?",
+          "a": "Quote VNW04HL for Fitting Compression Straight M12 x 1.5, VNW13HL for Fitting Compression Straight M22 x 1.5 and WNW20HS for Fitting Compression Elbow M36 x 2.0. The Hatec Compression Tube Fitting lists 24 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Hatec Compression Tube Fitting are available?",
+          "a": "The Hatec Compression Tube Fitting comes in 24 part numbers. Examples from the table: WNW04HL (Fitting Compression Elbow M12 x 1.5), VMW10HL (Fitting Compression Straight M18 x 1.5) and VNW20HS (Fitting Compression Straight M36 x 2.0). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Hatec Compression Tube Fitting for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Hatec Compression Tube Fitting only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: VNW06HS (Fitting Compression Straight M18 x 1.5) and VNW16HS (Fitting Compression Straight M30 x 2.0)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hatec Compression Tube Fitting?",
+          "a": "No working pressure is published for the Hatec Compression Tube Fitting, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Hatec Compression Tube Fitting made from, and is it suitable for my fluid?",
+          "a": "The Hatec Compression Tube Fitting is made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Hatec Compression Tube Fitting conform to, and can I get test certificates?",
+          "a": "The listing for the Hatec Compression Tube Fitting names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Hatec Compression Tube Fitting, and which fittings do I pair it with?",
+          "a": "Each end of the Hatec Compression Tube Fitting must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Hatec Compression Tube Fitting seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Hatec Compression Tube Fitting, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "What should I send with an enquiry for the Hatec Compression Tube Fitting so you can quote it?",
+          "a": "Send the part number from the size table, or the thread and seat on each end, the size, the material and the quantity for the Hatec Compression Tube Fitting. The guide on [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what else speeds up a quote."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Hatec Compression Tube Fitting made, and what HS code and export terms apply?",
+          "a": "The country of origin of the Hatec Compression Tube Fitting is confirmed on the quotation. The HS code on the listing is 7307994000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Hatec Compression Tube Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Hatec Compression Tube Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "petersen-142-9-series-test-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Petersen 142-9 Series Test Cap used for?",
+          "a": "The Petersen 142-9 Series Test Cap is a cap from Petersen that closes off the end of a line or a male-threaded stub. It comes in 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Test Cap, Hose Clamp Style, 2 Inch Pipe Size in the Petersen 142-9 Series Test Cap?",
+          "a": "Quote 142-9402 for Test Cap, Hose Clamp Style, 2 Inch Pipe Size, 142-9405 for Test Cap, Hose Clamp Style, 5 Inch Pipe Size and 142-94015 for Test Cap, Hose Clamp Style, 1.5 Inch Pipe Size. The Petersen 142-9 Series Test Cap lists 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Petersen 142-9 Series Test Cap are available?",
+          "a": "The Petersen 142-9 Series Test Cap comes in 6 part numbers. Examples from the table: 142-9403 (Test Cap, Hose Clamp Style, 3 Inch Pipe Size), 142-9404 (Test Cap, Hose Clamp Style, 4 Inch Pipe Size) and 142-9406 (Test Cap, Hose Clamp Style, 6 Inch Pipe Size). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Petersen 142-9 Series Test Cap for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Petersen 142-9 Series Test Cap only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a cap you only need the single thread it closes. Then pick the row: 142-9403 (Test Cap, Hose Clamp Style, 3 Inch Pipe Size) and 142-9406 (Test Cap, Hose Clamp Style, 6 Inch Pipe Size)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Petersen 142-9 Series Test Cap?",
+          "a": "The maker states 13 psi (1 bar) for the Petersen 142-9 Series Test Cap. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Petersen 142-9 Series Test Cap made from, and is it suitable for my fluid?",
+          "a": "The listing gives the material for the Petersen 142-9 Series Test Cap on each row of the size table, not as a single figure. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Petersen 142-9 Series Test Cap conform to, and can I get test certificates?",
+          "a": "The listing for the Petersen 142-9 Series Test Cap names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Petersen 142-9 Series Test Cap, and which fittings do I pair it with?",
+          "a": "Each end of the Petersen 142-9 Series Test Cap must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Petersen 142-9 Series Test Cap seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Petersen 142-9 Series Test Cap, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Petersen 142-9 Series Test Cap differ from the Aeroquip 2090 Series Tee/Y Adapters?",
+          "a": "The Petersen 142-9 Series Test Cap has Petersen 142-9 where the [Aeroquip 2090 Series Tee/Y Adapters](/p/aeroquip-2090-series-tee-y-adapters) has Aeroquip 2090, and Test Cap where it has Tee/Y Adapters. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Petersen 142-9 Series Test Cap made, and can you export it from Dubai?",
+          "a": "Petersen lists the Petersen 142-9 Series Test Cap as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Petersen 142-9 Series Test Cap in Dubai, and how do I get a quote?",
+          "a": "Yes. The Petersen 142-9 Series Test Cap sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-1501-ll-male-nptf-female-npsm-swivel-90-elbow-extra-long",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long used for?",
+          "a": "The Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long is an elbow from Tompkins that turns the line through 90 degrees. It comes in 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8-27 NPTF × 1/8-27 NPSM in the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long?",
+          "a": "Quote 1501-LL-02-02 for 1/8-27 NPTF × 1/8-27 NPSM, 1501-LL-08-08 for 1/2-14 NPTF × 1/2-14 NPSM and 1501-LL-16-16 for 1-11½ NPTF × 1-11½ NPSM. The Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long lists 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long come in?",
+          "a": "The Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long comes in 6 part numbers. Examples from the table: 1501-LL-04-04 (1/4-18 NPTF × 1/4-18 NPSM), 1501-LL-06-06 (3/8-18 NPTF × 3/8-18 NPSM) and 1501-LL-12-12 (3/4-14 NPTF × 3/4-14 NPSM). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1501-LL-04-04 (1/4-18 NPTF × 1/4-18 NPSM) and 1501-LL-12-12 (3/4-14 NPTF × 3/4-14 NPSM)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long?",
+          "a": "No working pressure is published for the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long made from, and is it suitable for my fluid?",
+          "a": "The Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long is made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long conform to, and can I get test certificates?",
+          "a": "The listing for the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long, and which fittings do I pair it with?",
+          "a": "For the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long seal, and what should I check when fitting it?",
+          "a": "An NPSM end of the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long differ from the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow?",
+          "a": "The Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long and the [Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow](/p/tompkins-5500-s-male-nptf-male-nptf-swivel-90-elbow) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long made, and can you export it from Dubai?",
+          "a": "The country of origin of the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-5406-cap-female-nptf-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins 5406-CAP Female NPTF Cap used for?",
+          "a": "The Tompkins 5406-CAP Female NPTF Cap is a cap from Tompkins that closes off the end of a line or a male-threaded stub. It comes in 6 part numbers covering 1/8-27 NPTF to 1-11½ NPTF."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8-27 NPTF in the Tompkins 5406-CAP Female NPTF Cap?",
+          "a": "Quote 5406-CAP-02 for 1/8-27 NPTF, 5406-CAP-08 for 1/2-14 NPTF and 5406-CAP-16 for 1-11½ NPTF. The Tompkins 5406-CAP Female NPTF Cap lists 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins 5406-CAP Female NPTF Cap come in?",
+          "a": "The Tompkins 5406-CAP Female NPTF Cap comes in 6 part numbers covering 1/8-27 NPTF to 1-11½ NPTF. Examples from the table: 5406-CAP-04 (1/4-18 NPTF), 5406-CAP-06 (3/8-18 NPTF) and 5406-CAP-12 (3/4-14 NPTF). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Tompkins 5406-CAP Female NPTF Cap for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Tompkins 5406-CAP Female NPTF Cap only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a cap you only need the single thread it closes. Then pick the row: 5406-CAP-04 (1/4-18 NPTF) and 5406-CAP-12 (3/4-14 NPTF)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tompkins 5406-CAP Female NPTF Cap?",
+          "a": "No working pressure is published for the Tompkins 5406-CAP Female NPTF Cap, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins 5406-CAP Female NPTF Cap made from, and is it suitable for my fluid?",
+          "a": "The Tompkins 5406-CAP Female NPTF Cap is made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Tompkins 5406-CAP Female NPTF Cap conform to, and can I get test certificates?",
+          "a": "The listing for the Tompkins 5406-CAP Female NPTF Cap names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Tompkins 5406-CAP Female NPTF Cap, and which fittings do I pair it with?",
+          "a": "For the Tompkins 5406-CAP Female NPTF Cap: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Tompkins 5406-CAP Female NPTF Cap seal, and what should I check when fitting it?",
+          "a": "A tapered NPT or NPTF end of the Tompkins 5406-CAP Female NPTF Cap seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins 5406-CAP Female NPTF Cap differ from the Tompkins 5406-FLP Male NPTF Flush Plug?",
+          "a": "The Tompkins 5406-CAP Female NPTF Cap has 5406-CAP Female where the [Tompkins 5406-FLP Male NPTF Flush Plug](/p/tompkins-5406-flp-male-nptf-flush-plug) has 5406-FLP Male, and Cap where it has Flush Plug. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tompkins 5406-CAP Female NPTF Cap made, and can you export it from Dubai?",
+          "a": "The country of origin of the Tompkins 5406-CAP Female NPTF Cap is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins 5406-CAP Female NPTF Cap in Dubai, and how do I get a quote?",
+          "a": "Yes. The Tompkins 5406-CAP Female NPTF Cap sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-5406-flp-male-nptf-flush-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins 5406-FLP Male NPTF Flush Plug used for?",
+          "a": "The Tompkins 5406-FLP Male NPTF Flush Plug is a plug from Tompkins that closes off a port or the end of a line. It comes in 4 part numbers covering 1/8-27 NPTF to 1/2-14 NPTF."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8-27 NPTF in the Tompkins 5406-FLP Male NPTF Flush Plug?",
+          "a": "Quote 5406-FLP-02 for 1/8-27 NPTF, 5406-FLP-06 for 3/8-18 NPTF and 5406-FLP-08 for 1/2-14 NPTF. The Tompkins 5406-FLP Male NPTF Flush Plug lists 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Tompkins 5406-FLP Male NPTF Flush Plug are available?",
+          "a": "The Tompkins 5406-FLP Male NPTF Flush Plug comes in 4 part numbers covering 1/8-27 NPTF to 1/2-14 NPTF. Examples from the table: 5406-FLP-04 (1/4-18 NPTF) and 5406-FLP-06 (3/8-18 NPTF). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Tompkins 5406-FLP Male NPTF Flush Plug for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Tompkins 5406-FLP Male NPTF Flush Plug only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a plug you only need the single thread it closes. Then pick the row: 5406-FLP-04 (1/4-18 NPTF) and 5406-FLP-08 (1/2-14 NPTF)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tompkins 5406-FLP Male NPTF Flush Plug?",
+          "a": "No working pressure is published for the Tompkins 5406-FLP Male NPTF Flush Plug, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins 5406-FLP Male NPTF Flush Plug made from, and is it suitable for my fluid?",
+          "a": "The Tompkins 5406-FLP Male NPTF Flush Plug is made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Tompkins 5406-FLP Male NPTF Flush Plug conform to, and can I get test certificates?",
+          "a": "The listing for the Tompkins 5406-FLP Male NPTF Flush Plug names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Tompkins 5406-FLP Male NPTF Flush Plug, and which fittings do I pair it with?",
+          "a": "For the Tompkins 5406-FLP Male NPTF Flush Plug: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Tompkins 5406-FLP Male NPTF Flush Plug seal, and what should I check when fitting it?",
+          "a": "A tapered NPT or NPTF end of the Tompkins 5406-FLP Male NPTF Flush Plug seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins 5406-FLP Male NPTF Flush Plug differ from the Tompkins 5406-HHP Male NPTF Hollow Hex Plug?",
+          "a": "The Tompkins 5406-FLP Male NPTF Flush Plug has 5406-FLP where the [Tompkins 5406-HHP Male NPTF Hollow Hex Plug](/p/tompkins-5406-hhp-male-nptf-hollow-hex-plug) has 5406-HHP, and Flush where it has Hollow Hex. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tompkins 5406-FLP Male NPTF Flush Plug made, and can you export it from Dubai?",
+          "a": "The country of origin of the Tompkins 5406-FLP Male NPTF Flush Plug is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins 5406-FLP Male NPTF Flush Plug in Dubai, and how do I get a quote?",
+          "a": "Yes. The Tompkins 5406-FLP Male NPTF Flush Plug sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-5406-hhp-male-nptf-hollow-hex-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins 5406-HHP Male NPTF Hollow Hex Plug used for?",
+          "a": "The Tompkins 5406-HHP Male NPTF Hollow Hex Plug is a plug from Tompkins that closes off a port or the end of a line. It comes in 10 part numbers covering 1/16-27 NPTF to 2-11½ NPTF."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/16-27 NPTF in the Tompkins 5406-HHP Male NPTF Hollow Hex Plug?",
+          "a": "Quote 5406-HHP-01 for 1/16-27 NPTF, 5406-HHP-12 for 3/4-14 NPTF and 5406-HHP-32 for 2-11½ NPTF. The Tompkins 5406-HHP Male NPTF Hollow Hex Plug lists 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Tompkins 5406-HHP Male NPTF Hollow Hex Plug are available?",
+          "a": "The Tompkins 5406-HHP Male NPTF Hollow Hex Plug comes in 10 part numbers covering 1/16-27 NPTF to 2-11½ NPTF. Examples from the table: 5406-HHP-02 (1/8-27 NPTF), 5406-HHP-06 (3/8-18 NPTF) and 5406-HHP-24 (1-1/2-11½ NPTF). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Tompkins 5406-HHP Male NPTF Hollow Hex Plug for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Tompkins 5406-HHP Male NPTF Hollow Hex Plug only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a plug you only need the single thread it closes. Then pick the row: 5406-HHP-04 (1/4-18 NPTF) and 5406-HHP-20 (1-1/4-11½ NPTF)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tompkins 5406-HHP Male NPTF Hollow Hex Plug?",
+          "a": "No working pressure is published for the Tompkins 5406-HHP Male NPTF Hollow Hex Plug, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins 5406-HHP Male NPTF Hollow Hex Plug made from, and is it suitable for my fluid?",
+          "a": "The Tompkins 5406-HHP Male NPTF Hollow Hex Plug is made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Tompkins 5406-HHP Male NPTF Hollow Hex Plug conform to, and can I get test certificates?",
+          "a": "The listing for the Tompkins 5406-HHP Male NPTF Hollow Hex Plug names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Tompkins 5406-HHP Male NPTF Hollow Hex Plug, and which fittings do I pair it with?",
+          "a": "For the Tompkins 5406-HHP Male NPTF Hollow Hex Plug: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Tompkins 5406-HHP Male NPTF Hollow Hex Plug seal, and what should I check when fitting it?",
+          "a": "A tapered NPT or NPTF end of the Tompkins 5406-HHP Male NPTF Hollow Hex Plug seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins 5406-HHP Male NPTF Hollow Hex Plug differ from the Tompkins 5406-FLP Male NPTF Flush Plug?",
+          "a": "The Tompkins 5406-HHP Male NPTF Hollow Hex Plug has 5406-HHP where the [Tompkins 5406-FLP Male NPTF Flush Plug](/p/tompkins-5406-flp-male-nptf-flush-plug) has 5406-FLP, and Hollow Hex where it has Flush. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tompkins 5406-HHP Male NPTF Hollow Hex Plug made, and can you export it from Dubai?",
+          "a": "The country of origin of the Tompkins 5406-HHP Male NPTF Hollow Hex Plug is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins 5406-HHP Male NPTF Hollow Hex Plug in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Tompkins 5406-HHP Male NPTF Hollow Hex Plug is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-5500-s-male-nptf-male-nptf-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow used for?",
+          "a": "The Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow is an elbow from Tompkins that turns the line through 90 degrees. It comes in 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4-18 NPTF on every port in the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow?",
+          "a": "Quote 5500-S-04-04 for 1/4-18 NPTF on every port, 5500-S-08-08 for 1/2-14 NPTF on every port and 5500-S-12-12 for 3/4-14 NPTF on every port. The Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow lists 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow are available?",
+          "a": "The Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow comes in 4 part numbers. Examples from the table: 5500-S-06-06 (3/8-18 NPTF on every port) and 5500-S-08-08 (1/2-14 NPTF on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 5500-S-06-06 (3/8-18 NPTF on every port) and 5500-S-12-12 (3/4-14 NPTF on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow?",
+          "a": "No working pressure is published for the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow is made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow conform to, and can I get test certificates?",
+          "a": "The listing for the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow, and which fittings do I pair it with?",
+          "a": "For the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow seal, and what should I check when fitting it?",
+          "a": "A tapered NPT or NPTF end of the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow differ from the Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long?",
+          "a": "The Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow and the [Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long](/p/tompkins-1501-ll-male-nptf-female-npsm-swivel-90-elbow-extra-long) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-5502-s-male-nptf-swivel-female-nptf-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow used for?",
+          "a": "The Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow is an elbow from Tompkins that turns the line through 90 degrees. It comes in 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4-18 NPTF on every port in the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow?",
+          "a": "Quote 5502-S-04-04 for 1/4-18 NPTF on every port, 5502-S-08-08 for 1/2-14 NPTF on every port and 5502-S-12-12 for 3/4-14 NPTF on every port. The Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow lists 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow come in?",
+          "a": "The Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow comes in 4 part numbers. Examples from the table: 5502-S-06-06 (3/8-18 NPTF on every port) and 5502-S-08-08 (1/2-14 NPTF on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 5502-S-06-06 (3/8-18 NPTF on every port) and 5502-S-12-12 (3/4-14 NPTF on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow?",
+          "a": "No working pressure is published for the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow is made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow conform to, and can I get test certificates?",
+          "a": "The listing for the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow, and which fittings do I pair it with?",
+          "a": "For the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow seal, and what should I check when fitting it?",
+          "a": "A tapered NPT or NPTF end of the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow differ from the Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow?",
+          "a": "The Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow has 5502-S where the [Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow](/p/tompkins-5500-s-male-nptf-male-nptf-swivel-90-elbow) has 5500-S Male NPTF ×. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-modular-pipe-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson Modular Pipe Adapters used for?",
+          "a": "The Wilkerson Modular Pipe Adapters are adapters from Wilkerson that connect the two end types named in its title and size table. They come in 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Adapter in the Wilkerson Modular Pipe Adapters?",
+          "a": "Quote GPA-95-035 for Adapter, GPA-95-036 for Adapter and GPA-95-037 for Adapter. The Wilkerson Modular Pipe Adapters list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Wilkerson Modular Pipe Adapters are available?",
+          "a": "The Wilkerson Modular Pipe Adapters come in 3 part numbers. Examples from the table: GPA-95-035 (Adapter), GPA-95-036 (Adapter) and GPA-95-037 (Adapter). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson Modular Pipe Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Wilkerson Modular Pipe Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: GPA-95-035 (Adapter) and GPA-95-037 (Adapter)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Wilkerson Modular Pipe Adapters?",
+          "a": "No working pressure is published for the Wilkerson Modular Pipe Adapters, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Wilkerson Modular Pipe Adapters made from, and is it suitable for my fluid?",
+          "a": "The listing gives the material for the Wilkerson Modular Pipe Adapters on each row of the size table, not as a single figure. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Wilkerson Modular Pipe Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Wilkerson Modular Pipe Adapters names no product standard beyond the thread type. NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Wilkerson Modular Pipe Adapters, and which fittings do I pair them with?",
+          "a": "For the Wilkerson Modular Pipe Adapters: NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Wilkerson Modular Pipe Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Wilkerson Modular Pipe Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Wilkerson Modular Pipe Adapters differ from the Aeroquip Steel Hydraulic Hose Adapters?",
+          "a": "The Wilkerson Modular Pipe Adapters and the [Aeroquip Steel Hydraulic Hose Adapters](/p/aeroquip-steel-hydraulic-hose-adapters) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Wilkerson Modular Pipe Adapters made, and can you export them from Dubai?",
+          "a": "Wilkerson lists the Wilkerson Modular Pipe Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Wilkerson Modular Pipe Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Wilkerson Modular Pipe Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

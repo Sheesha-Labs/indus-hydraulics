@@ -1,0 +1,1785 @@
+{
+  "family": "pneumatic-cylinders-05",
+  "extraFacts": [
+    {
+      "fact": "Parker builds the 4MA Series NFPA pneumatic tie-rod cylinder in bores of 1-1/2, 2, 2-1/2, 3-1/4, 4, 5, 6 and 8 inch.",
+      "source": "Parker Hannifin, Pneumatic NFPA Cylinder - 4MA Series product page (ph.parker.com)"
+    },
+    {
+      "fact": "Standard 4MA ports are NPTF: 3/8\" on the 1-1/2\", 2\" and 2-1/2\" bores, 1/2\" on the 3-1/4\", 4\" and 5\" bores and 3/4\" on the 6\" and 8\" bores; BSPP and other port threads are options.",
+      "source": "Parker Pneumatic Division catalogue 0900P, Tie Rod Cylinders, 4MA port size table"
+    },
+    {
+      "fact": "Parker's standard-seal operating temperature for its NFPA tie-rod air cylinders is -10°F to +165°F, which is about -23°C to +74°C.",
+      "source": "Parker Industrial Cylinder Products catalogue 0106; conversion °C = (°F - 32) / 1.8"
+    },
+    {
+      "fact": "250 psi is about 17 bar and 80 psi is about 5.5 bar (1 bar = 14.5038 psi).",
+      "source": "Unit conversion, 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "Theoretical extend force of an air cylinder = piston area x pressure, with piston area = pi x bore^2 / 4. Piston areas: 1-1/2\" bore 1.77 sq in, 2\" 3.14, 2-1/2\" 4.91, 3-1/4\" 8.3, 4\" 12.57, 5\" 19.63, 6\" 28.27, 8\" 50.27. Extend force at 80 psi: 1-1/2\" about 141 lbf (64 kgf), 2\" 251 lbf (114 kgf), 2-1/2\" 393 lbf (178 kgf), 3-1/4\" 664 lbf (301 kgf), 4\" 1005 lbf (456 kgf), 5\" 1571 lbf (713 kgf), 6\" 2262 lbf (1026 kgf), 8\" 4021 lbf (1824 kgf). Retract force is lower by the rod area, and a load factor of 50 to 75 percent of theoretical force is used for dynamic loads.",
+      "source": "F = P x A (basic fluid power); Parker Pneumatic Division catalogue 0900P, cylinder force tables and sizing notes"
+    },
+    {
+      "fact": "In a Parker NFPA tie-rod cylinder model code the first figure is the bore in inches (e.g. 2.00) and the last figure is the stroke in inches (e.g. 04.00).",
+      "source": "Parker Pneumatic Division catalogue 0900P, 4MA How to Order / model number breakdown"
+    },
+    {
+      "fact": "Parker NFPA tie-rod cylinders are offered with several rod-end thread styles, including small male, intermediate male, full male and short female; a short female rod end has the thread tapped into the end of the piston rod.",
+      "source": "Parker Industrial Cylinder Products catalogue 0106, rod end styles"
+    },
+    {
+      "fact": "The Parker Lipseal piston uses lip-type piston seals that seal on pressure and are suited to non-lubricated air service. A magnetic ring on the piston lets an external reed or solid-state switch sense piston position.",
+      "source": "Parker Pneumatic Division catalogue 0900P, 4MA standard specifications (Lipseal piston, magnetic piston option)"
+    },
+    {
+      "fact": "Linear-acting pneumatic power engines (air cylinders) are classified under HS subheading 8412.31.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.12, subheading 8412.31"
+    },
+    {
+      "fact": "Parker lists the LP and LPM compact pneumatic cylinders in bore sizes 1-1/8 to 4 inch with strokes from 1/8 to 6 inch, with six mounting styles and a rated pressure of 145 psi (10 bar).",
+      "source": "Parker Pneumatic Division catalogue 0900P-7, Compact Cylinders (LP/LPM), pages D33-D35"
+    },
+    {
+      "fact": "Theoretical extend force at 80 psi = piston area x 80 psi, area = pi x bore^2 / 4. Extend force at 80 psi (about 5.5 bar): 1 1/8\" bore 0.99 sq in gives about 80 lbf (36 kgf); 1 1/2\" bore 1.77 sq in gives about 141 lbf (64 kgf); 2\" bore 3.14 sq in gives about 251 lbf (114 kgf); 2 1/2\" bore 4.91 sq in gives about 393 lbf (178 kgf); 3\" bore 7.07 sq in gives about 565 lbf (256 kgf); 4\" bore 12.57 sq in gives about 1005 lbf (456 kgf). Retract force is lower by the rod area; size moving loads on 50 to 75 percent of theoretical.",
+      "source": "F = P x A (basic fluid power); 1 bar = 14.5038 psi; 1 lbf = 0.4536 kgf"
+    },
+    {
+      "fact": "145 psi is 10 bar; 80 psi is about 5.5 bar (1 bar = 14.5038 psi).",
+      "source": "Unit conversion, 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "The Parker P1F series is an ISO 15552 pneumatic cylinder in smooth-profile design, listed in bores of 32 to 125 mm; the P1F-T tie-rod version covers 160 to 320 mm. ISO 15552 is the standard that fixes mounting dimensions of 32 to 320 mm bore pneumatic tie-rod cylinders (formerly ISO 6431 and VDMA 24562).",
+      "source": "Parker Pneumatic Division Europe catalogues PDE3570TCEN (P1F, 32 to 125 mm) and PDE2667TCEN (P1F-T, 160 to 320 mm)"
+    },
+    {
+      "fact": "Parker gives the P1F maximum operating pressure as 10 bar (145 psi) and the standard operating temperature range as -20 to +80 °C.",
+      "source": "Parker Pneumatic Division Europe catalogue PDE3570TCEN, P1F technical data"
+    },
+    {
+      "fact": "In a Parker P1F part number such as P1F-S032MS-0125-0000 the letter after P1F- is the cylinder type (S smooth profile, L dynamic rod lock, K through rod, T tie-rod), the three digits after it are the bore in mm, and the four digits after the build letters are the stroke in mm.",
+      "source": "Parker P1F catalogue PDE3570TCEN, order key (P1F-S032MS-0160-0000 example); the letters S, L, K and T match the listing names"
+    },
+    {
+      "fact": "Theoretical push force at 6 bar (87 psi) = pi x bore^2 / 4 x 0.6 N/mm2: 32 mm bore 483 N, 40 mm bore 754 N, 50 mm bore 1178 N, 63 mm bore 1870 N, 80 mm bore 3016 N, 100 mm bore 4712 N, 160 mm bore 12064 N, 250 mm bore 29452 N, 320 mm bore 48255 N. Retract force is lower by the rod area, and moving loads are sized on 50 to 75 percent of theoretical.",
+      "source": "F = P x A (basic fluid power); 6 bar = 0.6 N/mm2; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "The Parker P1F smooth-profile cylinder has an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod.",
+      "source": "Parker P1F-S product page (ph.parker.com), ISO 15552 Pneumatic Cylinders, Smooth Profile Design"
+    },
+    {
+      "fact": "Parker P1F ports are BSPP (G) threaded: G 1/8 on 32 mm bore, G 1/4 on 40 and 50 mm bore, G 3/8 on 63 and 80 mm bore, as listed in the size table.",
+      "source": "Indus size tables (ports) for the Parker P1F 32, 40, 50, 63 and 80 mm listings"
+    },
+    {
+      "fact": "The Parker P1A series is a mini ISO 6432 round-body cylinder built in bores from 10 to 25 mm; ISO 6432 fixes the dimensions of 8 to 25 mm bore round-body pneumatic cylinders.",
+      "source": "Parker Pneumatic Division Europe, P1A series product page (ph.parker.com)"
+    },
+    {
+      "fact": "The Parker P1D series is an ISO 15552 tie-rod pneumatic cylinder built in bores of 32 to 125 mm.",
+      "source": "Parker Pneumatic Division Europe catalogue PDE2570TCUK, P1D ISO Series"
+    },
+    {
+      "fact": "The Parker P5E guided cylinder slide is built on a P1D or P1F ISO cylinder, with a maximum of 10 bar (145 psi) and bores of 32, 40, 50, 63, 80 and 100 mm.",
+      "source": "Parker P5E Series product page (ph.parker.com), Pneumatic Guided Cylinder Slide"
+    },
+    {
+      "fact": "The Parker HBC is a compact guided slide for standard-duty linear motion, powered by a standard cylinder.",
+      "source": "Parker HBC Series product page (ph.parker.com), Pneumatic Guided Cylinder Slide"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore-lipseals-and-magnetic-ring-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 3 1/4\" bore, Lipseal piston seals and a magnetic ring for position sensing, listed as 357 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 3.25D4MAU14A00.62 in the 3 1/4\" bore 4MA listing?",
+          "a": "The first figure in 3.25D4MAU14A00.62 is the bore, 3.25 inch, and the last figure, 00.62, is the stroke in inches. In this 3 1/4\" bore listing the letters before 4MA select the mounting: 3.25D4MAU14A00.62 carries head trunnion (MT1). Another listed code is 3.25BC4MAUE18A15.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "Strokes run from 0.5\" to 84\" across the 357 part numbers in this 3 1/4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 3 1/4\" bore Parker 4MA Lipseal piston and magnetic ring tie rod cylinder give at 80 psi?",
+          "a": "A 3 1/4\" bore has a piston area of 8.3 sq in, so it pushes about 664 lbf (301 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "Rated rows in this 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder need?",
+          "a": "This 3 1/4\" bore 4MA has Lipseal piston seals for non-lubricated air and a magnetic ring on the piston, so a position switch can be fitted outside the barrel without changing the cylinder."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often head rectangular flange (MF1), cap fixed clevis (MP1), side lug (MS2), cap detachable clevis (MP2) and head trunnion (MT1). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder have?",
+          "a": "Parker's standard port on a 3 1/4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. Rod diameters in the rows include 1\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "Align the rod of a 3 1/4\" bore 4MA such as 3.25D4MAU14A00.62 with the load and use the NFPA mount it was built with, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder listing differ from the other 3 1/4\" bore 4MA listing?",
+          "a": "This listing holds 357 codes in the Lipseal piston and magnetic ring tie rod cylinder form; the [3-1/4 Inch Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-3-1-4-inch-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder?",
+          "a": "For customs, the 3 1/4\" bore 4MA Lipseal piston and magnetic ring tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 3 1/4\" bore Lipseal piston and magnetic ring tie rod cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker model codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 4\" bore tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 4\" bore, listed here as 418 built part numbers in Parker model-code form. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 4.00CB4MAU14AC01.00 in the 4\" bore 4MA listing?",
+          "a": "The first figure in 4.00CB4MAU14AC01.00 is the bore, 4.00 inch, and the last figure, 01.00, is the stroke in inches. In this 4\" bore listing the letters before 4MA select the mounting: 4.00CB4MAU14AC01.00 carries side end angle (MS1). Another listed code is 4.00TEF4MAU14AC16.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 4\" bore tie rod cylinder?",
+          "a": "Strokes run from 0.5\" to 96\" across the 418 part numbers in this 4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 4\" bore Parker 4MA tie rod cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so it pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 4\" bore tie rod cylinder?",
+          "a": "Rated rows in this 4\" bore tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 4\" bore tie rod cylinder need?",
+          "a": "The 4\" bore 4MA is a non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap detachable clevis (MP2), cap fixed clevis (MP1), head rectangular flange (MF1), side lug (MS2) and head trunnion (MT1). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 4\" bore tie rod cylinder have?",
+          "a": "Parker's standard port on a 4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 4\" bore tie rod cylinder?",
+          "a": "For a 4\" bore 4MA like 4.00CB4MAU14AC01.00, mount it so the rod pushes in line with the load and keep side load off the gland. Parker builds the 4MA as a repairable cylinder, so rod and piston seals come from a seal kit rather than a new cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 4\" bore tie rod cylinder listing differ from the other 4\" bore 4MA listing?",
+          "a": "This listing holds 418 codes in the tie rod cylinder form; the [Lipseals, 4\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-lipseals-4-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 4\" bore tie rod cylinder?",
+          "a": "For customs, the 4\" bore 4MA tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 4\" bore tie rod cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA 4\" bore tie rod cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker model codes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-bumper-seals",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 4\" bore bumper seal tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting, non-lube NFPA tie-rod air cylinder with a 4\" bore and bumper seals, an anodized aluminium body and a short female rod end, listed as 13 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 4.00TT4MA4U19A02.00 in the 4\" bore 4MA listing?",
+          "a": "The first figure in 4.00TT4MA4U19A02.00 is the bore, 4.00 inch, and the last figure, 02.00, is the stroke in inches. In this 4\" bore listing the letters before 4MA select the mounting: 4.00TT4MA4U19A02.00 carries no mount (MX0). Another listed code is 4.00CBB4MA4U14AC12.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 4\" bore bumper seal tie rod cylinder?",
+          "a": "Strokes run from 2\" to 20\" across the 13 part numbers in this 4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 4\" bore Parker 4MA bumper seal tie rod cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so it pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 4\" bore bumper seal tie rod cylinder?",
+          "a": "Rated rows in this 4\" bore bumper seal tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 4\" bore bumper seal tie rod cylinder need?",
+          "a": "Parker lists the 4\" bore 4MA bumper-seal build with an anodized aluminium body, an aluminium piston with nylon wear band, a composite piston bearing, bronze gland and rod bearing, and a hard chrome-plated carbon steel rod. It is a non-lube design for filtered, dry air."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore bumper seal tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), sleeve nut with side tap (MX5, MS4), head trunnion (MT1), cap rectangular flange (MF2) and no mount (MX0). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 4\" bore bumper seal tie rod cylinder have?",
+          "a": "Parker's standard port on a 4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 4\" bore bumper seal tie rod cylinder?",
+          "a": "Install 4\" bore 4MA cylinders such as 4.00TT4MA4U19A02.00 square to the load using the NFPA mount of the build, and set any cushion or flow controls before full-speed running. Seals are replaceable from a kit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 4\" bore bumper seal tie rod cylinder listing differ from the other 4\" bore 4MA listing?",
+          "a": "This listing holds 13 codes in the bumper seal tie rod cylinder form; the [Lipseals And Magnetic Ring, NPTF Port, 4\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-lipseals-and-magnetic-ring-nptf-port-4-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 4\" bore bumper seal tie rod cylinder?",
+          "a": "For customs, the 4\" bore 4MA bumper seal tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 4\" bore bumper seal tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA 4\" bore bumper seal tie rod cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker model codes and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-lipseals-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 4\" bore Lipseal piston tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 4\" bore and Lipseal piston seals, listed as 420 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 4.00CF4MA2U19AC01.00 in the 4\" bore 4MA listing?",
+          "a": "The first figure in 4.00CF4MA2U19AC01.00 is the bore, 4.00 inch, and the last figure, 01.00, is the stroke in inches. In this 4\" bore listing the letters before 4MA select the mounting: 4.00CF4MA2U19AC01.00 carries side tap (MS4). Another listed code is 4.00CJ4MA1U14AC14.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 4\" bore Lipseal piston tie rod cylinder?",
+          "a": "Strokes run from 0.5\" to 96\" across the 420 part numbers in this 4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 4\" bore Parker 4MA Lipseal piston tie rod cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so it pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 4\" bore Lipseal piston tie rod cylinder?",
+          "a": "Rated rows in this 4\" bore Lipseal piston tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 4\" bore Lipseal piston tie rod cylinder need?",
+          "a": "The Lipseal piston on this 4\" bore 4MA is built for non-lubricated air, with lip seals that seal on pressure. Fit a filter-regulator ahead of the valve, and if oil has ever been added keep supplying it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore Lipseal piston tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), cap detachable clevis (MP2), head rectangular flange (MF1), head trunnion (MT1) and side tap (MS4). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 4\" bore Lipseal piston tie rod cylinder have?",
+          "a": "Parker's standard port on a 4\" bore 4MA is 1/2\" NPTF; other port threads are made to order. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 4\" bore Lipseal piston tie rod cylinder?",
+          "a": "Align the rod of a 4\" bore 4MA such as 4.00CF4MA2U19AC01.00 with the load and use the NFPA mount it was built with, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 4\" bore Lipseal piston tie rod cylinder listing differ from the other 4\" bore 4MA listing?",
+          "a": "This listing holds 420 codes in the Lipseal piston tie rod cylinder form; the [4 Inch Bore, Lipseals And Magnetic Ring, SAE Ports listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-lipseals-and-magnetic-ring-sae-ports) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 4\" bore Lipseal piston tie rod cylinder?",
+          "a": "For customs, the 4\" bore 4MA Lipseal piston tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 4\" bore Lipseal piston tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 4\" bore Lipseal piston tie rod cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker model codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-lipseals-and-magnetic-ring-nptf-port-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 4\" bore, Lipseal piston seals, a magnetic ring and NPTF ports, listed as 757 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 4.00CBE4MA3U14AC00.30 in the 4\" bore 4MA listing?",
+          "a": "The first figure in 4.00CBE4MA3U14AC00.30 is the bore, 4.00 inch, and the last figure, 00.30, is the stroke in inches. In this 4\" bore listing the letters before 4MA select the mounting: 4.00CBE4MA3U14AC00.30 carries cap detachable eye (MP4). Another listed code is 4.00BC4MA3U39A24.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder?",
+          "a": "Strokes run from 0.25\" to 99\" across the 757 part numbers in this 4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 4\" bore Parker 4MA Lipseal, magnetic ring, NPTF port tie rod cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so it pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder?",
+          "a": "Rated rows in this 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder need?",
+          "a": "This 4\" bore 4MA has Lipseal piston seals for non-lubricated air and a magnetic ring on the piston for position switches; run it on filtered, dry air with a filter-regulator upstream."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap detachable clevis (MP2), cap fixed clevis (MP1), side lug (MS2), cap detachable eye (MP4) and head trunnion (MT1). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder have?",
+          "a": "The rows of this listing are built with NPTF ports, 1/2\" on a 4\" bore 4MA. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder?",
+          "a": "For a 4\" bore 4MA like 4.00CBE4MA3U14AC00.30, mount it so the rod pushes in line with the load and keep side load off the gland. Parker builds the 4MA as a repairable cylinder, so rod and piston seals come from a seal kit rather than a new cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder listing differ from the other 4\" bore 4MA listing?",
+          "a": "This listing holds 757 codes in the Lipseal, magnetic ring, NPTF port tie rod cylinder form; the [4\" Bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-4-bore) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder?",
+          "a": "For customs, the 4\" bore 4MA Lipseal, magnetic ring, NPTF port tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA 4\" bore Lipseal, magnetic ring, NPTF port tie rod cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker model codes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-lipseals-and-magnetic-ring-sae-ports",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder?",
+          "a": "It is a Parker 4MA Series NFPA tie-rod air cylinder with a 4\" bore, Lipseal piston seals, a magnetic ring and SAE ports, listed as 41 built part numbers. Typical uses are pushing, lifting, diverting and clamping on conveyor lines, assembly machines and packaging equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 4.00C4MA3T14A01.63 in the 4\" bore 4MA listing?",
+          "a": "The first figure in 4.00C4MA3T14A01.63 is the bore, 4.00 inch, and the last figure, 01.63, is the stroke in inches. In this 4\" bore listing the letters before 4MA select the mounting: 4.00C4MA3T14A01.63 carries side lug (MS2). Another listed code is 4.00CBB4MA3T34AC11.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder?",
+          "a": "Strokes run from 1.63\" to 80\" across the 41 part numbers in this 4\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 4\" bore Parker 4MA Lipseal, magnetic ring, SAE port tie rod cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so it pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder?",
+          "a": "Rated rows in this 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder need?",
+          "a": "This 4\" bore 4MA has Lipseal piston seals for non-lubricated air and a magnetic ring on the piston for position switches; run it on filtered, dry air with a filter-regulator upstream."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), cap rectangular flange (MF2), side lug (MS2), cap detachable clevis (MP2) and no mount (MX0). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder have?",
+          "a": "The rows of this listing are built with SAE ports; Parker's standard 4MA port on a 4\" bore is 1/2\" NPTF, so state the port you need. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder?",
+          "a": "Install 4\" bore 4MA cylinders such as 4.00C4MA3T14A01.63 square to the load using the NFPA mount of the build, and set any cushion or flow controls before full-speed running. Seals are replaceable from a kit. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder listing differ from the other 4\" bore 4MA listing?",
+          "a": "This listing holds 41 codes in the Lipseal, magnetic ring, SAE port tie rod cylinder form; the [4 Inch Bore, Bumper Seals listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-4-inch-bore-bumper-seals) page covers the same bore with a different seal or rod-end option. Choose by the seal, sensing and rod end printed on your existing cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder?",
+          "a": "For customs, the 4\" bore 4MA Lipseal, magnetic ring, SAE port tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA 4\" bore Lipseal, magnetic ring, SAE port tie rod cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker model codes and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-5-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 5\" bore tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 5\" bore, listed here as 943 built part numbers in Parker model-code form. Typical uses are heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 5.00BB4MAU14AC00.30 in the 5\" bore 4MA listing?",
+          "a": "The first figure in 5.00BB4MAU14AC00.30 is the bore, 5.00 inch, and the last figure, 00.30, is the stroke in inches. In this 5\" bore listing the letters before 4MA select the mounting: 5.00BB4MAU14AC00.30 carries cap fixed clevis (MP1). Another listed code is 5.00CBB4MA4U14AC16.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 5\" bore tie rod cylinder?",
+          "a": "Strokes run from 0.3\" to 99\" across the 943 part numbers in this 5\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 5\" bore Parker 4MA tie rod cylinder give at 80 psi?",
+          "a": "A 5\" bore has a piston area of 19.63 sq in, so it pushes about 1571 lbf (713 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range applies to the Parker 4MA 5\" bore tie rod cylinder?",
+          "a": "Parker specifies -10°F to +165°F ambient for 4MA cylinders with standard seals, about -23°C to +74°C. The 943 rows of this 5\" bore tie rod cylinder listing carry no pressure figure, so we confirm the rating of your part number at quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 5\" bore tie rod cylinder need?",
+          "a": "The 5\" bore 4MA is a non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 5\" bore tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap detachable clevis (MP2), cap fixed clevis (MP1), side lug (MS2), head trunnion (MT1) and cap detachable eye (MP4). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 5\" bore tie rod cylinder have?",
+          "a": "Parker's standard port on a 5\" bore 4MA is 1/2\" NPTF, and the rows here also list NPTF, SAE and BSPP port types; confirm the thread of your part number. Rod diameters in the rows include 1\" and 1 3/8\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 5\" bore tie rod cylinder?",
+          "a": "Align the rod of a 5\" bore 4MA such as 5.00BB4MAU14AC00.30 with the load and use the NFPA mount it was built with, so the gland carries no side load. The 4MA is a repairable tie-rod design, so worn rod and piston seals are replaced from a kit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 5\" bore 4MA tie rod cylinder differ from other Parker 4MA bores?",
+          "a": "It shares the NFPA mounting pattern of the whole 4MA range, but a 5\" bore gives 1571 lbf theoretical at 80 psi, and bigger bores give more force and take longer strokes. Browse the range on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 5\" bore tie rod cylinder?",
+          "a": "For customs, the 5\" bore 4MA tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 5\" bore tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 5\" bore tie rod cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker model codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-6-inch-bore-6-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 6\" bore tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with a 6\" bore, listed here as 1080 built part numbers in Parker model-code form. Typical uses are heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 6.00J4MAU19A00.38 in the 6\" bore 4MA listing?",
+          "a": "The first figure in 6.00J4MAU19A00.38 is the bore, 6.00 inch, and the last figure, 00.38, is the stroke in inches. In this 6\" bore listing the letters before 4MA select the mounting: 6.00J4MAU19A00.38 carries head rectangular flange (MF1). Another listed code is 6.00BB4MA3U14AC18.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 6\" bore tie rod cylinder?",
+          "a": "Strokes run from 0.38\" to 99\" across the 1080 part numbers in this 6\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 6\" bore Parker 4MA tie rod cylinder give at 80 psi?",
+          "a": "A 6\" bore has a piston area of 28.27 sq in, so it pushes about 2262 lbf (1026 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 6\" bore tie rod cylinder?",
+          "a": "Rated rows in this 6\" bore tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 6\" bore tie rod cylinder need?",
+          "a": "The 6\" bore 4MA is a non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 6\" bore tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), side lug (MS2) and cap rectangular flange (MF2). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 6\" bore tie rod cylinder have?",
+          "a": "Parker's standard port on a 6\" bore 4MA is 3/4\" NPTF; other port threads are made to order. Rod diameters in the rows include 1 3/8\" and 1 3/4\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 6\" bore tie rod cylinder?",
+          "a": "For a 6\" bore 4MA like 6.00J4MAU19A00.38, mount it so the rod pushes in line with the load and keep side load off the gland. Parker builds the 4MA as a repairable cylinder, so rod and piston seals come from a seal kit rather than a new cylinder. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6\" bore 4MA tie rod cylinder differ from other Parker 4MA bores?",
+          "a": "It shares the NFPA mounting pattern of the whole 4MA range, but a 6\" bore gives 2262 lbf theoretical at 80 psi, and bigger bores give more force and take longer strokes. Browse the range on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 6\" bore tie rod cylinder?",
+          "a": "For customs, the 6\" bore 4MA tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 6\" bore tie rod cylinder from stock in Dubai?",
+          "a": "Yes. The Parker 4MA 6\" bore tie rod cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker model codes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-8-inch-bore-8-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA 8\" bore tie rod cylinder?",
+          "a": "It is a Parker 4MA Series double-acting NFPA tie-rod air cylinder with an 8\" bore, listed here as 594 built part numbers in Parker model-code form. Typical uses are heavier pressing, lifting, gate and damper operation and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker model code such as 8.00JB4MAU19A00.38 in the 8\" bore 4MA listing?",
+          "a": "The first figure in 8.00JB4MAU19A00.38 is the bore, 8.00 inch, and the last figure, 00.38, is the stroke in inches. In this 8\" bore listing the letters before 4MA select the mounting: 8.00JB4MAU19A00.38 carries head square (ME3). Another listed code is 8.00CBB4MA3U14AC14.00; we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker 4MA 8\" bore tie rod cylinder?",
+          "a": "Strokes run from 0.25\" to 99.99\" across the 594 part numbers in this 8\" bore listing, and each code carries its stroke as the last figure. If the travel you need is not listed, send the bore, stroke and mount and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the 8\" bore Parker 4MA tie rod cylinder give at 80 psi?",
+          "a": "An 8\" bore has a piston area of 50.27 sq in, so it pushes about 4021 lbf (1824 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area; for a moving load size on 50 to 75 percent of that figure. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating applies to the Parker 4MA 8\" bore tie rod cylinder?",
+          "a": "Rated rows in this 8\" bore tie rod cylinder listing carry 250 psi, about 17 bar, for compressed air service. With standard seals Parker gives -10°F to +165°F, about -23°C to +74°C, so check both against your duty."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality and construction does the Parker 4MA 8\" bore tie rod cylinder need?",
+          "a": "The 8\" bore 4MA is a non-lube design for filtered, dry compressed air, so no oiler is needed. Fit a filter-regulator ahead of the valve to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 8\" bore tie rod cylinder built to NFPA dimensions?",
+          "a": "Yes. The 4MA follows NFPA tie-rod mounting conventions, so a build with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. The rows use NFPA mounts, most often cap fixed clevis (MP1), head square (ME3), cap detachable clevis (MP2), cap square (ME4) and tie-rods extended head end (MX3). No certificates sit on this listing; ask for a certificate of conformity in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod connection does the Parker 4MA 8\" bore tie rod cylinder have?",
+          "a": "Parker's standard port on an 8\" bore 4MA is 3/4\" NPTF; other port threads are made to order. Rod diameters in the rows include 1 3/8\" and 1 3/4\". Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain the Parker 4MA 8\" bore tie rod cylinder?",
+          "a": "Install 8\" bore 4MA cylinders such as 8.00JB4MAU19A00.38 square to the load using the NFPA mount of the build, and set any cushion or flow controls before full-speed running. Seals are replaceable from a kit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 8\" bore 4MA tie rod cylinder differ from other Parker 4MA bores?",
+          "a": "It shares the NFPA mounting pattern of the whole 4MA range, but an 8\" bore gives 4021 lbf theoretical at 80 psi, and bigger bores give more force and take longer strokes. Browse the range on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker 4MA 8\" bore tie rod cylinder?",
+          "a": "For customs, the 8\" bore 4MA tie rod cylinder is a linear-acting pneumatic cylinder under HS subheading 8412.31. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice and certificate of origin."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 4MA 8\" bore tie rod cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker 4MA 8\" bore tie rod cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker model codes and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-hb-series-guided-pneumatic-cylinders-compact-slide",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker HB series guided compact slide pneumatic cylinder?",
+          "a": "It is a Parker HB Series guided pneumatic cylinder in the compact slide form, a cylinder built into a guided carriage for standard-duty linear motion. This listing holds 9 part numbers in the HBC15, HBC20 and HBC25 sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker HBC part number such as HBC15-2.5PT4A-B?",
+          "a": "Each code starts HBC and a two-figure size, as in HBC15-2.5PT4A-B, HBC20-04D4A-B and HBC25-10T4A-B, and the rest of the code carries the stroke and build options. Codes differ widely in length, such as HBC20-05JTCS1X-B005, so quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker HBC compact slide listing cover?",
+          "a": "The 9 part numbers here use the HBC15, HBC20 and HBC25 size prefixes, for example HBC20-04D4A-B and HBC25-10T4A-B. The listing has no bore or stroke table, so send the size, stroke and mounting you need and we will match the Parker code."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between a Parker HB compact slide and a standard air cylinder?",
+          "a": "Choose a guided slide when the load must be carried and kept from twisting, because the guides take side load and torque that a plain cylinder rod cannot. A standard cylinder is simpler and cheaper for a straight push, and our [cylinder types guide](/blog/pneumatic-cylinder-types-guide) compares the options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker HB series compact slide have?",
+          "a": "The rows of this HB listing carry no pressure figure, so we confirm the rating of your code from Parker before supply. Parker states 145 psi (10 bar) for its related P5E guided slide, but do not assume the same limit for an HBC code."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker HBC compact slide need?",
+          "a": "Run the Parker HB series compact slide on filtered, regulated compressed air with a filter-regulator ahead of the valve, and keep the guides clean. The listing does not state materials, so tell us the environment and we confirm the build from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker HB series compact slide follow a standard or carry certificates?",
+          "a": "This listing states no standard and holds no certificate documents. Parker describes the HBC as a compact slide powered by a standard cylinder, so ask for the datasheet or a certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker HBC compact slide?",
+          "a": "The slide takes the cylinder ports and a mounting face for the load, so it needs air fittings, flow controls and a valve. Matching [solenoid valves](/c/pneumatic-solenoid-valves) and fittings are on our shelves."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker HBC slide such as HBC15-3.0AJD4LV-B?",
+          "a": "Mount HBC15-3.0AJD4LV-B on a flat, rigid surface and fix the load to the carriage so it moves along the guides without binding. Check the guides for play and keep them clean, and keep the air filtered."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker HB compact slide differ from the P5E guided slide?",
+          "a": "Both are guided slides powered by an air cylinder; the HB listing holds 9 HBC codes, while the P5E is built on an ISO cylinder in 32 to 100 mm bores. Compare the [P5E guided cylinder listing](/p/parker-p5e-series-guided-pneumatic-cylinders-composite-bearing-chrome-plated-oversize-shaft) if you need an ISO-cylinder slide."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker HB compact slide?",
+          "a": "Air cylinders such as the Parker HB compact slide fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker HB series compact slide from stock in Dubai?",
+          "a": "Yes. We keep the Parker HB series compact slide range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lp-series-compact-pneumatic-cylinders-1-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LP 1 1/2\" bore compact cylinder?",
+          "a": "It is a Parker LP Series compact pneumatic cylinder listing with a 1 1/2\" bore, offered as 144 part numbers with strokes from 0.13\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LP part number 1.504FLP90.13 for a 1 1/2\" bore compact cylinder?",
+          "a": "The code 1.504FLP90.13 begins with the 1 1/2\" bore figure, and the size table lists this cylinder with a 0.13\" stroke and head bolt mounting. Another listed example is 1.50NLP96.00, a 6\" stroke with basic (standard) mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LP 1 1/2\" bore compact cylinder?",
+          "a": "Strokes run from 0.13\" to 6\" across the 144 part numbers in this LP listing, and 0.5\", 1\", 1.5\" and 2\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 1 1/2\" bore Parker LP cylinder give at 80 psi?",
+          "a": "A 1 1/2\" bore has a piston area of 1.77 sq in, so the 1 1/2\" bore LP cylinder pushes about 141 lbf (64 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LP 1 1/2\" bore compact cylinder have?",
+          "a": "The rated rows of this LP listing (144 part numbers, a 1 1/2\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LP 1 1/2\" bore compact cylinder need?",
+          "a": "Run the 1 1/2\" bore LP cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LP 1 1/2\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LP listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap pivot eye, cap bolt, head bolt, head trunnion and head bolt, cap bolt mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LP 1 1/2\" bore compact cylinder?",
+          "a": "The size table lists basic, cap pivot eye, cap bolt, head bolt, head trunnion and head bolt, cap bolt mountings. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LP compact cylinder such as 1.504FLP90.13?",
+          "a": "Mount 1.504FLP90.13 so the rod moves in line with the load and keep side load off the rod, because a compact cylinder has a short bearing length. Check the rod and seals regularly and keep the air clean."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LP 1 1/2\" bore compact cylinder differ from the LPM 1 1/2\" bore?",
+          "a": "Both are Parker compact cylinders in a 1 1/2\" bore; this LP listing has 144 part numbers with strokes to 6\", while the LPM listing is a separate Parker range with its own codes. Check the [LPM 1 1/2\" bore listing](/p/parker-lpm-series-compact-pneumatic-cylinders-1-1-2-inch-bore) if your existing cylinder is marked LPM."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LP 1 1/2\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LP compact cylinder with a 1 1/2\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LP 1 1/2\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. The Parker LP 1 1/2\" bore compact cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lp-series-compact-pneumatic-cylinders-1-1-8-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LP 1 1/8\" bore compact cylinder?",
+          "a": "It is a Parker LP Series compact pneumatic cylinder listing with a 1 1/8\" bore, offered as 147 part numbers with strokes from 0.08\" to 5.5\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LP part number 1.124RLP90.13 for a 1 1/8\" bore compact cylinder?",
+          "a": "The code 1.124RLP90.13 begins with the 1 1/8\" bore figure, and the size table lists this cylinder with a 0.13\" stroke and cap bolt mounting. Another listed example is 1.12NLPB45.00, a 5\" stroke with basic (standard) mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LP 1 1/8\" bore compact cylinder?",
+          "a": "Strokes run from 0.08\" to 5.5\" across the 147 part numbers in this LP listing, and 0.38\", 1\", 1.25\" and 2\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 1 1/8\" bore Parker LP cylinder give at 80 psi?",
+          "a": "A 1 1/8\" bore has a piston area of 0.99 sq in, so the 1 1/8\" bore LP cylinder pushes about 80 lbf (36 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LP 1 1/8\" bore compact cylinder have?",
+          "a": "The rated rows of this LP listing (147 part numbers, a 1 1/8\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LP 1 1/8\" bore compact cylinder need?",
+          "a": "Run the 1 1/8\" bore LP cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LP 1 1/8\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LP listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap bolt, head bolt, cap pivot eye, head trunnion and cap trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LP 1 1/8\" bore compact cylinder?",
+          "a": "The size table lists basic, cap bolt, head bolt, cap pivot eye, head trunnion and cap trunnion mountings. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LP compact cylinder such as 1.124RLP90.13?",
+          "a": "Install a 1 1/8\" bore LP cylinder like 1.124RLP90.13 with the rod aligned to the load and no side thrust on the gland. Compact bodies have little bearing length, so guide the load separately where it can swing. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LP 1 1/8\" bore compact cylinder differ from the LPM 1 1/8\" bore?",
+          "a": "Both are Parker compact cylinders in a 1 1/8\" bore; this LP listing has 147 part numbers with strokes to 5.5\", while the LPM listing is a separate Parker range with its own codes. Check the [LPM 1 1/8\" bore listing](/p/parker-lpm-series-compact-pneumatic-cylinders-1-1-8-inch-bore) if your existing cylinder is marked LPM."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LP 1 1/8\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LP compact cylinder with a 1 1/8\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LP 1 1/8\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker LP 1 1/8\" bore compact cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lp-series-compact-pneumatic-cylinders-1-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LP compact cylinder listing with 1P part numbers?",
+          "a": "It is a Parker LP Series compact pneumatic cylinder listing with bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\", offered as 297 part numbers with strokes from 0.25\" to 5\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PLP00003003 work in the Parker LP compact range?",
+          "a": "1PLP00003003 is a Parker item number for one complete LP cylinder with its bore, stroke and mounting already fixed; this page holds 297 such numbers, and 1PLP00002341 is a 1 1/8\" bore with a 0.31\" stroke and basic (standard) mounting. Quote the item number and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LP compact cylinder listing with 1P part numbers?",
+          "a": "Strokes run from 0.25\" to 5\" across the 297 part numbers in this LP listing, and 1\", 1.5\", 2\" and 3\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a Parker LP compact cylinder give at 80 psi?",
+          "a": "It depends on the bore: at 80 psi, about 5.5 bar, a 1 1/8\" bore gives about 80 lbf, a 2\" bore about 251 lbf and a 4\" bore about 1005 lbf theoretical on extend. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of those figures."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LP compact cylinder listing with 1P part numbers have?",
+          "a": "The rated rows of this LP listing (297 part numbers, bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\") carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LP compact cylinder listing with 1P part numbers need?",
+          "a": "Run the LP 1P listing cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LP compact cylinder listing with 1P part numbers follow a standard or carry certificates?",
+          "a": "This LP listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap bolt, cap pivot eye, head bolt, head trunnion and head bolt, cap bolt mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LP compact cylinder listing with 1P part numbers?",
+          "a": "The size table lists basic, cap bolt, cap pivot eye, head bolt, head trunnion and head bolt, cap bolt mountings, with rod diameters of 0.75\" and 1\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LP compact cylinder such as 1PLP00002341?",
+          "a": "Mount 1PLP00002341 so the rod moves in line with the load and keep side load off the rod, because a compact cylinder has a short bearing length. Check the rod and seals regularly and keep the air clean."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LP compact range differ from the LPM compact range?",
+          "a": "Both are Parker compact cylinders with their own part-number ranges; this LP listing holds 297 item numbers across bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\". See the [LPM 1P listing](/p/parker-lpm-series-compact-pneumatic-cylinders-1-inch-bore) if your cylinder is marked LPM."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LP compact cylinder listing with 1P part numbers?",
+          "a": "Air cylinders such as the Parker LP compact cylinder with bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\" fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LP compact cylinder listing with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We keep the Parker LP compact cylinder listing with 1P part numbers range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lp-series-compact-pneumatic-cylinders-2-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LP 2 1/2\" bore compact cylinder?",
+          "a": "It is a Parker LP Series compact pneumatic cylinder listing with a 2 1/2\" bore, offered as 122 part numbers with strokes from 0.12\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LP part number 2.50NLPL40.15 for a 2 1/2\" bore compact cylinder?",
+          "a": "The code 2.50NLPL40.15 begins with the 2 1/2\" bore figure, and the size table lists this cylinder with a 0.15\" stroke and basic (standard) mounting. Another listed example is 2.502RLP90.25, a 0.25\" stroke with cap trunnion mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LP 2 1/2\" bore compact cylinder?",
+          "a": "Strokes run from 0.12\" to 6\" across the 122 part numbers in this LP listing, and 0.5\", 1\", 2\" and 2.5\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2 1/2\" bore Parker LP cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so the 2 1/2\" bore LP cylinder pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LP 2 1/2\" bore compact cylinder have?",
+          "a": "The rated rows of this LP listing (122 part numbers, a 2 1/2\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LP 2 1/2\" bore compact cylinder need?",
+          "a": "Run the 2 1/2\" bore LP cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LP 2 1/2\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LP listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, head bolt, cap bolt, cap pivot eye, head trunnion and cap trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LP 2 1/2\" bore compact cylinder?",
+          "a": "The size table lists basic, head bolt, cap bolt, cap pivot eye, head trunnion and cap trunnion mountings, with rod diameters of 0.75\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LP compact cylinder such as 2.50NLPL40.15?",
+          "a": "Install a 2 1/2\" bore LP cylinder like 2.50NLPL40.15 with the rod aligned to the load and no side thrust on the gland. Compact bodies have little bearing length, so guide the load separately where it can swing. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LP 2 1/2\" bore compact cylinder differ from the LPM 2 1/2\" bore?",
+          "a": "Both are Parker compact cylinders in a 2 1/2\" bore; this LP listing has 122 part numbers with strokes to 6\", while the LPM listing is a separate Parker range with its own codes. Check the [LPM 2 1/2\" bore listing](/p/parker-lpm-series-compact-pneumatic-cylinders-2-1-2-inch-bore) if your existing cylinder is marked LPM."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LP 2 1/2\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LP compact cylinder with a 2 1/2\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LP 2 1/2\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. The Parker LP 2 1/2\" bore compact cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lp-series-compact-pneumatic-cylinders-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LP 2\" bore compact cylinder?",
+          "a": "It is a Parker LP Series compact pneumatic cylinder listing with a 2\" bore, offered as 157 part numbers with strokes from 0.06\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LP part number 2.00NLPLB40.06 for a 2\" bore compact cylinder?",
+          "a": "The code 2.00NLPLB40.06 begins with the 2\" bore figure, and the size table lists this cylinder with a 0.06\" stroke and basic (standard) mounting. Another listed example is 2.004FLP40.50, a 0.5\" stroke with head bolt mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LP 2\" bore compact cylinder?",
+          "a": "Strokes run from 0.06\" to 6\" across the 157 part numbers in this LP listing, and 0.5\", 1\", 1.5\" and 2\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2\" bore Parker LP cylinder give at 80 psi?",
+          "a": "A 2\" bore has a piston area of 3.14 sq in, so the 2\" bore LP cylinder pushes about 251 lbf (114 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LP 2\" bore compact cylinder have?",
+          "a": "The rated rows of this LP listing (157 part numbers, a 2\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LP 2\" bore compact cylinder need?",
+          "a": "Run the 2\" bore LP cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LP 2\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LP listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap pivot eye, cap bolt, head bolt, head trunnion and cap trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LP 2\" bore compact cylinder?",
+          "a": "The size table lists basic, cap pivot eye, cap bolt, head bolt, head trunnion and cap trunnion mountings, with rod diameters of 0.75\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LP compact cylinder such as 2.00NLPLB40.06?",
+          "a": "Mount 2.00NLPLB40.06 so the rod moves in line with the load and keep side load off the rod, because a compact cylinder has a short bearing length. Check the rod and seals regularly and keep the air clean."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LP 2\" bore compact cylinder differ from the LPM 2\" bore?",
+          "a": "Both are Parker compact cylinders in a 2\" bore; this LP listing has 157 part numbers with strokes to 6\", while the LPM listing is a separate Parker range with its own codes. Check the [LPM 2\" bore listing](/p/parker-lpm-series-compact-pneumatic-cylinders-2-inch-bore) if your existing cylinder is marked LPM."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LP 2\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LP compact cylinder with a 2\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LP 2\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker LP 2\" bore compact cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lp-series-compact-pneumatic-cylinders-3-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LP 3\" bore compact cylinder?",
+          "a": "It is a Parker LP Series compact pneumatic cylinder listing with a 3\" bore, offered as 127 part numbers with strokes from 0.13\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LP part number 3.004RLP90.13 for a 3\" bore compact cylinder?",
+          "a": "The code 3.004RLP90.13 begins with the 3\" bore figure, and the size table lists this cylinder with a 0.13\" stroke and cap bolt mounting. Another listed example is 3.004RLP46.00, a 6\" stroke with cap bolt mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LP 3\" bore compact cylinder?",
+          "a": "Strokes run from 0.13\" to 6\" across the 127 part numbers in this LP listing, and 1\", 1.5\", 2\" and 3\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 3\" bore Parker LP cylinder give at 80 psi?",
+          "a": "A 3\" bore has a piston area of 7.07 sq in, so the 3\" bore LP cylinder pushes about 565 lbf (256 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LP 3\" bore compact cylinder have?",
+          "a": "The rated rows of this LP listing (127 part numbers, a 3\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LP 3\" bore compact cylinder need?",
+          "a": "Run the 3\" bore LP cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LP 3\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LP listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap bolt, head bolt, cap pivot eye, head trunnion and head bolt, cap bolt mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LP 3\" bore compact cylinder?",
+          "a": "The size table lists basic, cap bolt, head bolt, cap pivot eye, head trunnion and head bolt, cap bolt mountings. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LP compact cylinder such as 3.004RLP90.13?",
+          "a": "Install a 3\" bore LP cylinder like 3.004RLP90.13 with the rod aligned to the load and no side thrust on the gland. Compact bodies have little bearing length, so guide the load separately where it can swing. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LP 3\" bore compact cylinder differ from the LPM 3\" bore?",
+          "a": "Both are Parker compact cylinders in a 3\" bore; this LP listing has 127 part numbers with strokes to 6\", while the LPM listing is a separate Parker range with its own codes. Check the [LPM 3\" bore listing](/p/parker-lpm-series-compact-pneumatic-cylinders-3-inch-bore) if your existing cylinder is marked LPM."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LP 3\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LP compact cylinder with a 3\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LP 3\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker LP 3\" bore compact cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lp-series-compact-pneumatic-cylinders-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LP 4\" bore compact cylinder?",
+          "a": "It is a Parker LP Series compact pneumatic cylinder listing with a 4\" bore, offered as 128 part numbers with strokes from 0.08\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LP part number 4.00NLPV90.13 for a 4\" bore compact cylinder?",
+          "a": "The code 4.00NLPV90.13 begins with the 4\" bore figure, and the size table lists this cylinder with a 0.13\" stroke and basic (standard) mounting. Another listed example is 4.00NLPH95.00, a 5\" stroke with basic (standard) mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LP 4\" bore compact cylinder?",
+          "a": "Strokes run from 0.08\" to 6\" across the 128 part numbers in this LP listing, and 0.75\", 1\", 2\" and 4\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 4\" bore Parker LP cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so the 4\" bore LP cylinder pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LP 4\" bore compact cylinder have?",
+          "a": "The rated rows of this LP listing (128 part numbers, a 4\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LP 4\" bore compact cylinder need?",
+          "a": "Run the 4\" bore LP cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LP 4\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LP listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, head bolt, cap bolt, cap pivot eye, head trunnion and cap trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LP 4\" bore compact cylinder?",
+          "a": "The size table lists basic, head bolt, cap bolt, cap pivot eye, head trunnion and cap trunnion mountings, with rod diameters of 1\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LP compact cylinder such as 4.00NLPV90.13?",
+          "a": "Mount 4.00NLPV90.13 so the rod moves in line with the load and keep side load off the rod, because a compact cylinder has a short bearing length. Check the rod and seals regularly and keep the air clean."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LP 4\" bore compact cylinder differ from the LPM 4\" bore?",
+          "a": "Both are Parker compact cylinders in a 4\" bore; this LP listing has 128 part numbers with strokes to 6\", while the LPM listing is a separate Parker range with its own codes. Check the [LPM 4\" bore listing](/p/parker-lpm-series-compact-pneumatic-cylinders-4-inch-bore) if your existing cylinder is marked LPM."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LP 4\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LP compact cylinder with a 4\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LP 4\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. The Parker LP 4\" bore compact cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lpm-series-compact-pneumatic-cylinders-1-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LPM 1 1/2\" bore compact cylinder?",
+          "a": "It is a Parker LPM Series compact pneumatic cylinder listing with a 1 1/2\" bore, offered as 69 part numbers with strokes from 0.38\" to 5\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LPM part number 1.50NLPM90.38 for a 1 1/2\" bore compact cylinder?",
+          "a": "The code 1.50NLPM90.38 begins with the 1 1/2\" bore figure, and the size table lists this cylinder with a 0.38\" stroke and basic (standard) mounting. Another listed example is 1.501LPMB45.00, a 5\" stroke with cap pivot eye mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LPM 1 1/2\" bore compact cylinder?",
+          "a": "Strokes run from 0.38\" to 5\" across the 69 part numbers in this LPM listing, and 1\", 1.5\", 1.75\" and 2\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 1 1/2\" bore Parker LPM cylinder give at 80 psi?",
+          "a": "A 1 1/2\" bore has a piston area of 1.77 sq in, so the 1 1/2\" bore LPM cylinder pushes about 141 lbf (64 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LPM 1 1/2\" bore compact cylinder have?",
+          "a": "The rated rows of this LPM listing (69 part numbers, a 1 1/2\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LPM 1 1/2\" bore compact cylinder need?",
+          "a": "Run the 1 1/2\" bore LPM cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LPM 1 1/2\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LPM listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap bolt, head bolt, cap pivot eye and head trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LPM 1 1/2\" bore compact cylinder?",
+          "a": "The size table lists basic, cap bolt, head bolt, cap pivot eye and head trunnion mountings. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LPM compact cylinder such as 1.50NLPM90.38?",
+          "a": "Install a 1 1/2\" bore LPM cylinder like 1.50NLPM90.38 with the rod aligned to the load and no side thrust on the gland. Compact bodies have little bearing length, so guide the load separately where it can swing. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LPM 1 1/2\" bore compact cylinder differ from the LP 1 1/2\" bore?",
+          "a": "Both are Parker compact cylinders in a 1 1/2\" bore; this LPM listing has 69 part numbers with strokes to 5\", while the LP listing is a separate Parker range with its own codes. Check the [LP 1 1/2\" bore listing](/p/parker-lp-series-compact-pneumatic-cylinders-1-1-2-inch-bore) if your existing cylinder is marked LP."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LPM 1 1/2\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LPM compact cylinder with a 1 1/2\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LPM 1 1/2\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker LPM 1 1/2\" bore compact cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lpm-series-compact-pneumatic-cylinders-1-1-8-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LPM 1 1/8\" bore compact cylinder?",
+          "a": "It is a Parker LPM Series compact pneumatic cylinder listing with a 1 1/8\" bore, offered as 55 part numbers with strokes from 0.25\" to 5\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LPM part number 1.124FLPM90.38 for a 1 1/8\" bore compact cylinder?",
+          "a": "The code 1.124FLPM90.38 begins with the 1 1/8\" bore figure, and the size table lists this cylinder with a 0.38\" stroke and head bolt mounting. Another listed example is 1.121LPMB95.00, a 5\" stroke with cap pivot eye mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LPM 1 1/8\" bore compact cylinder?",
+          "a": "Strokes run from 0.25\" to 5\" across the 55 part numbers in this LPM listing, and 1\", 1.5\", 2\" and 3\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 1 1/8\" bore Parker LPM cylinder give at 80 psi?",
+          "a": "A 1 1/8\" bore has a piston area of 0.99 sq in, so the 1 1/8\" bore LPM cylinder pushes about 80 lbf (36 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LPM 1 1/8\" bore compact cylinder have?",
+          "a": "The rated rows of this LPM listing (55 part numbers, a 1 1/8\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LPM 1 1/8\" bore compact cylinder need?",
+          "a": "Run the 1 1/8\" bore LPM cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LPM 1 1/8\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LPM listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in head bolt, basic, cap bolt, cap trunnion, head trunnion and head bolt, cap bolt mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LPM 1 1/8\" bore compact cylinder?",
+          "a": "The size table lists head bolt, basic, cap bolt, cap trunnion, head trunnion and head bolt, cap bolt mountings. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LPM compact cylinder such as 1.124FLPM90.38?",
+          "a": "Mount 1.124FLPM90.38 so the rod moves in line with the load and keep side load off the rod, because a compact cylinder has a short bearing length. Check the rod and seals regularly and keep the air clean."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LPM 1 1/8\" bore compact cylinder differ from the LP 1 1/8\" bore?",
+          "a": "Both are Parker compact cylinders in a 1 1/8\" bore; this LPM listing has 55 part numbers with strokes to 5\", while the LP listing is a separate Parker range with its own codes. Check the [LP 1 1/8\" bore listing](/p/parker-lp-series-compact-pneumatic-cylinders-1-1-8-inch-bore) if your existing cylinder is marked LP."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LPM 1 1/8\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LPM compact cylinder with a 1 1/8\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LPM 1 1/8\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker LPM 1 1/8\" bore compact cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lpm-series-compact-pneumatic-cylinders-1-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LPM compact cylinder listing with 1P part numbers?",
+          "a": "It is a Parker LPM Series compact pneumatic cylinder listing with bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\", offered as 47 part numbers with strokes from 0.75\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PLPM0000319 work in the Parker LPM compact range?",
+          "a": "1PLPM0000319 is a Parker item number for one complete LPM cylinder with its bore, stroke and mounting already fixed; this page holds 47 such numbers, and 1PLPM0000135 is a 1 1/8\" bore with a 1\" stroke and head bolt mounting. Quote the item number and we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LPM compact cylinder listing with 1P part numbers?",
+          "a": "Strokes run from 0.75\" to 6\" across the 47 part numbers in this LPM listing, and 0.75\", 1\", 2\" and 3\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a Parker LPM compact cylinder give at 80 psi?",
+          "a": "It depends on the bore: at 80 psi, about 5.5 bar, a 1 1/8\" bore gives about 80 lbf, a 2\" bore about 251 lbf and a 4\" bore about 1005 lbf theoretical on extend. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of those figures."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LPM compact cylinder listing with 1P part numbers have?",
+          "a": "The rated rows of this LPM listing (47 part numbers, bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\") carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LPM compact cylinder listing with 1P part numbers need?",
+          "a": "Run the LPM 1P listing cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LPM compact cylinder listing with 1P part numbers follow a standard or carry certificates?",
+          "a": "This LPM listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap bolt, cap pivot eye, head bolt and cap trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LPM compact cylinder listing with 1P part numbers?",
+          "a": "The size table lists basic, cap bolt, cap pivot eye, head bolt and cap trunnion mountings, with rod diameters of 0.75\" and 1\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LPM compact cylinder such as 1PLPM0000135?",
+          "a": "Install a LPM 1P listing cylinder like 1PLPM0000135 with the rod aligned to the load and no side thrust on the gland. Compact bodies have little bearing length, so guide the load separately where it can swing. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LPM compact range differ from the LP compact range?",
+          "a": "Both are Parker compact cylinders with their own part-number ranges; this LPM listing holds 47 item numbers across bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\". See the [LP 1P listing](/p/parker-lp-series-compact-pneumatic-cylinders-1-inch-bore) if your cylinder is marked LP."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LPM compact cylinder listing with 1P part numbers?",
+          "a": "Air cylinders such as the Parker LPM compact cylinder with bores of 1 1/8\", 1 1/2\", 2\", 2 1/2\", 3\" and 4\" fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LPM compact cylinder listing with 1P part numbers from stock in Dubai?",
+          "a": "Yes. The Parker LPM compact cylinder listing with 1P part numbers range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lpm-series-compact-pneumatic-cylinders-2-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LPM 2 1/2\" bore compact cylinder?",
+          "a": "It is a Parker LPM Series compact pneumatic cylinder listing with a 2 1/2\" bore, offered as 49 part numbers with strokes from 0.09\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LPM part number 2.50NLPM40.09 for a 2 1/2\" bore compact cylinder?",
+          "a": "The code 2.50NLPM40.09 begins with the 2 1/2\" bore figure, and the size table lists this cylinder with a 0.09\" stroke and basic (standard) mounting. Another listed example is 2.504FLPMB46.00, a 6\" stroke with head bolt mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LPM 2 1/2\" bore compact cylinder?",
+          "a": "Strokes run from 0.09\" to 6\" across the 49 part numbers in this LPM listing, and 1\", 2\", 3\" and 4\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2 1/2\" bore Parker LPM cylinder give at 80 psi?",
+          "a": "A 2 1/2\" bore has a piston area of 4.91 sq in, so the 2 1/2\" bore LPM cylinder pushes about 393 lbf (178 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LPM 2 1/2\" bore compact cylinder have?",
+          "a": "The rated rows of this LPM listing (49 part numbers, a 2 1/2\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LPM 2 1/2\" bore compact cylinder need?",
+          "a": "Run the 2 1/2\" bore LPM cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LPM 2 1/2\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LPM listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, head bolt, cap bolt, cap pivot eye and head bolt, cap bolt mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LPM 2 1/2\" bore compact cylinder?",
+          "a": "The size table lists basic, head bolt, cap bolt, cap pivot eye and head bolt, cap bolt mountings, with rod diameters of 0.75\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LPM compact cylinder such as 2.50NLPM40.09?",
+          "a": "Mount 2.50NLPM40.09 so the rod moves in line with the load and keep side load off the rod, because a compact cylinder has a short bearing length. Check the rod and seals regularly and keep the air clean."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LPM 2 1/2\" bore compact cylinder differ from the LP 2 1/2\" bore?",
+          "a": "Both are Parker compact cylinders in a 2 1/2\" bore; this LPM listing has 49 part numbers with strokes to 6\", while the LP listing is a separate Parker range with its own codes. Check the [LP 2 1/2\" bore listing](/p/parker-lp-series-compact-pneumatic-cylinders-2-1-2-inch-bore) if your existing cylinder is marked LP."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LPM 2 1/2\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LPM compact cylinder with a 2 1/2\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LPM 2 1/2\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker LPM 2 1/2\" bore compact cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lpm-series-compact-pneumatic-cylinders-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LPM 2\" bore compact cylinder?",
+          "a": "It is a Parker LPM Series compact pneumatic cylinder listing with a 2\" bore, offered as 66 part numbers with strokes from 0.13\" to 5\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LPM part number 2.001LPM40.13 for a 2\" bore compact cylinder?",
+          "a": "The code 2.001LPM40.13 begins with the 2\" bore figure, and the size table lists this cylinder with a 0.13\" stroke and cap pivot eye mounting. Another listed example is 2.002FLPM90.25, a 0.25\" stroke with head trunnion mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LPM 2\" bore compact cylinder?",
+          "a": "Strokes run from 0.13\" to 5\" across the 66 part numbers in this LPM listing, and 1\", 2\", 3\" and 4\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 2\" bore Parker LPM cylinder give at 80 psi?",
+          "a": "A 2\" bore has a piston area of 3.14 sq in, so the 2\" bore LPM cylinder pushes about 251 lbf (114 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LPM 2\" bore compact cylinder have?",
+          "a": "The rated rows of this LPM listing (66 part numbers, a 2\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LPM 2\" bore compact cylinder need?",
+          "a": "Run the 2\" bore LPM cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LPM 2\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LPM listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap bolt, cap pivot eye, head bolt, head trunnion and cap trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LPM 2\" bore compact cylinder?",
+          "a": "The size table lists basic, cap bolt, cap pivot eye, head bolt, head trunnion and cap trunnion mountings, with rod diameters of 0.75\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LPM compact cylinder such as 2.001LPM40.13?",
+          "a": "Install a 2\" bore LPM cylinder like 2.001LPM40.13 with the rod aligned to the load and no side thrust on the gland. Compact bodies have little bearing length, so guide the load separately where it can swing. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LPM 2\" bore compact cylinder differ from the LP 2\" bore?",
+          "a": "Both are Parker compact cylinders in a 2\" bore; this LPM listing has 66 part numbers with strokes to 5\", while the LP listing is a separate Parker range with its own codes. Check the [LP 2\" bore listing](/p/parker-lp-series-compact-pneumatic-cylinders-2-inch-bore) if your existing cylinder is marked LP."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LPM 2\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LPM compact cylinder with a 2\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LPM 2\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker LPM 2\" bore compact cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lpm-series-compact-pneumatic-cylinders-3-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LPM 3\" bore compact cylinder?",
+          "a": "It is a Parker LPM Series compact pneumatic cylinder listing with a 3\" bore, offered as 31 part numbers with strokes from 0.25\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LPM part number 3.001LPM41.00 for a 3\" bore compact cylinder?",
+          "a": "The code 3.001LPM41.00 begins with the 3\" bore figure, and the size table lists this cylinder with a 1\" stroke and cap pivot eye mounting. Another listed example is 3.004FLPM91.50, a 1.5\" stroke with head bolt mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LPM 3\" bore compact cylinder?",
+          "a": "Strokes run from 0.25\" to 6\" across the 31 part numbers in this LPM listing, and 1.25\", 1.5\", 3\" and 3.5\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 3\" bore Parker LPM cylinder give at 80 psi?",
+          "a": "A 3\" bore has a piston area of 7.07 sq in, so the 3\" bore LPM cylinder pushes about 565 lbf (256 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LPM 3\" bore compact cylinder have?",
+          "a": "The rated rows of this LPM listing (31 part numbers, a 3\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LPM 3\" bore compact cylinder need?",
+          "a": "Run the 3\" bore LPM cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LPM 3\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LPM listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap bolt, cap pivot eye, head bolt and head trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LPM 3\" bore compact cylinder?",
+          "a": "The size table lists basic, cap bolt, cap pivot eye, head bolt and head trunnion mountings. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LPM compact cylinder such as 3.001LPM41.00?",
+          "a": "Mount 3.001LPM41.00 so the rod moves in line with the load and keep side load off the rod, because a compact cylinder has a short bearing length. Check the rod and seals regularly and keep the air clean."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LPM 3\" bore compact cylinder differ from the LP 3\" bore?",
+          "a": "Both are Parker compact cylinders in a 3\" bore; this LPM listing has 31 part numbers with strokes to 6\", while the LP listing is a separate Parker range with its own codes. Check the [LP 3\" bore listing](/p/parker-lp-series-compact-pneumatic-cylinders-3-inch-bore) if your existing cylinder is marked LP."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LPM 3\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LPM compact cylinder with a 3\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LPM 3\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. The Parker LPM 3\" bore compact cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lpm-series-compact-pneumatic-cylinders-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LPM 4\" bore compact cylinder?",
+          "a": "It is a Parker LPM Series compact pneumatic cylinder listing with a 4\" bore, offered as 62 part numbers with strokes from 0.27\" to 6\". Compact cylinders suit short-stroke clamping, ejecting and pressing where a tie-rod cylinder is too long."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker LPM part number 4.001LPM90.27 for a 4\" bore compact cylinder?",
+          "a": "The code 4.001LPM90.27 begins with the 4\" bore figure, and the size table lists this cylinder with a 0.27\" stroke and cap pivot eye mounting. Another listed example is 4.00NLPMB45.00, a 5\" stroke with basic (standard) mounting. Quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker LPM 4\" bore compact cylinder?",
+          "a": "Strokes run from 0.27\" to 6\" across the 62 part numbers in this LPM listing, and 1\", 2\", 4\" and 6\" are the strokes that appear most often. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 4\" bore Parker LPM cylinder give at 80 psi?",
+          "a": "A 4\" bore has a piston area of 12.57 sq in, so the 4\" bore LPM cylinder pushes about 1005 lbf (456 kgf) theoretical on extend at 80 psi, about 5.5 bar. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker LPM 4\" bore compact cylinder have?",
+          "a": "The rated rows of this LPM listing (62 part numbers, a 4\" bore) carry 145 psi, which is 10 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your part number from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker LPM 4\" bore compact cylinder need?",
+          "a": "Run the 4\" bore LPM cylinder on filtered, regulated compressed air within its 145 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LPM 4\" bore compact cylinder follow a standard or carry certificates?",
+          "a": "This LPM listing states no ISO or NFPA standard and holds no certificate documents. The cylinders are offered in basic, cap pivot eye, cap bolt, head bolt, cap trunnion and head trunnion mountings, so match the mounting to your machine, and ask for a datasheet or certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which mountings and rod sizes are listed for the Parker LPM 4\" bore compact cylinder?",
+          "a": "The size table lists basic, cap pivot eye, cap bolt, head bolt, cap trunnion and head trunnion mountings, with rod diameters of 1\" in the rows that state one. Port fittings and silencers for a compact cylinder are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker LPM compact cylinder such as 4.001LPM90.27?",
+          "a": "Install a 4\" bore LPM cylinder like 4.001LPM90.27 with the rod aligned to the load and no side thrust on the gland. Compact bodies have little bearing length, so guide the load separately where it can swing. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LPM 4\" bore compact cylinder differ from the LP 4\" bore?",
+          "a": "Both are Parker compact cylinders in a 4\" bore; this LPM listing has 62 part numbers with strokes to 6\", while the LP listing is a separate Parker range with its own codes. Check the [LP 4\" bore listing](/p/parker-lp-series-compact-pneumatic-cylinders-4-inch-bore) if your existing cylinder is marked LP."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker LPM 4\" bore compact cylinder?",
+          "a": "Air cylinders such as the Parker LPM compact cylinder with a 4\" bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker LPM 4\" bore compact cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker LPM 4\" bore compact cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1a-series-round-body-pneumatic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1A series round body pneumatic cylinder?",
+          "a": "It is a Parker P1A Series mini round-body air cylinder to ISO 6432, built in bores from 10 to 25 mm. This listing holds 3 part numbers: P1A-S016KS-0100, P1A-S016DF-0125 and P1A-S020SS-0012."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1A part number such as P1A-S020SS-0012?",
+          "a": "In P1A-S020SS-0012 the figure after P1A-S is the bore in mm, 020 for a 20 mm bore, which the listing confirms for this code; P1A-S016KS-0100 and P1A-S016DF-0125 carry 016 for a 16 mm bore. The letters and the last four digits give build options and stroke, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes are listed for the Parker P1A round body cylinder?",
+          "a": "The three codes here are a 16 mm bore, P1A-S016KS-0100 and P1A-S016DF-0125, and a 20 mm bore, P1A-S020SS-0012. Parker builds the P1A from 10 to 25 mm, so send the bore and stroke you need and we will match the code."
+        },
+        {
+          "slot": "D",
+          "q": "Where is a Parker P1A round body cylinder normally used?",
+          "a": "A P1A mini round-body cylinder suits light-duty pushing, ejecting, stopping and clamping on small machines, with compact ISO 6432 dimensions so it fits standard mounts. Our [cylinder types guide](/blog/pneumatic-cylinder-types-guide) compares round-body, tie-rod and compact designs."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker P1A series round body cylinder have?",
+          "a": "The rows of this P1A listing carry no pressure or temperature figure, so we confirm the rating of your code from Parker before supply. Check it against the pressure at the cylinder port, after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker P1A cylinder need?",
+          "a": "Run the Parker P1A series round body cylinder on filtered, regulated compressed air with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1A series round body cylinder follow a standard?",
+          "a": "Yes. The Parker P1A is an ISO 6432 round-body cylinder, so a 16 or 20 mm bore has standard ISO 6432 mounting dimensions. This listing holds no certificate documents; ask for a datasheet or certificate in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1A series round body cylinder?",
+          "a": "A mini round-body cylinder takes small threaded ports and ISO 6432 foot, flange or clevis mounts for its bore. The listing gives no port thread, so we confirm it for your code. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker P1A cylinder such as P1A-S016KS-0100?",
+          "a": "Mount P1A-S016KS-0100 so the rod moves in line with the load and keep side load off the rod, because mini cylinders have little bearing length. Fit flow controls to set speed and keep the air filtered."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker P1A differ from a tie-rod cylinder like the P1D?",
+          "a": "The P1A is a small round-body cylinder in 10 to 25 mm bores, while the P1D is an ISO 15552 tie-rod cylinder in 32 to 125 mm bores for heavier duty. Choose the P1A for light, compact work and see the [P1D listing](/p/parker-p1d-series-tie-rod-pneumatic-cylinders-composite-piston-bspp-ports-male-rod-end-63-mm-bore) for larger bores."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1A cylinder?",
+          "a": "Air cylinders such as the Parker P1A fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1A series round body cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker P1A series round body cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1d-series-tie-rod-pneumatic-cylinders-aluminum-pistol-bspp-ports-male-rod-end-80-mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1D tie rod cylinder with aluminum piston, BSPP ports and male rod end, 80 mm bore?",
+          "a": "It is a single Parker P1D Series ISO 15552 tie-rod cylinder, part number P1D4R080MC-0150NNNNN, with an 80 mm bore, an aluminum piston, BSPP ports and a male rod end. It is listed on its own page with no mounting accessories."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker P1D part number P1D4R080MC-0150NNNNN?",
+          "a": "In P1D4R080MC-0150NNNNN the three digits 080 match the 80 mm bore in the title, and the four digits 0150 follow the build letters as the stroke figure. The remaining letters set rod end, piston and options, and we confirm the full build against the code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore and stroke does Parker P1D part number P1D4R080MC-0150NNNNN have?",
+          "a": "P1D4R080MC-0150NNNNN is an 80 mm bore cylinder; its code ends with 0150 after the build letters, which we read as a stroke of 150 mm, so confirm it against the datasheet before ordering. Parker builds the P1D in 32 to 125 mm bores."
+        },
+        {
+          "slot": "D",
+          "q": "What force does the 80 mm bore Parker P1D cylinder produce at 6 bar?",
+          "a": "A P1D is an ISO 15552 cylinder, so its push force follows the bore: about 483 N for 32 mm, 1870 N for 63 mm and 3016 N for 80 mm, theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area; size moving loads on 50 to 75 percent of theoretical."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does Parker P1D aluminum piston 80 mm cylinder have?",
+          "a": "The size table row for P1D4R080MC-0150NNNNN carries 145 psi, which is 10 bar, with no mounting. We confirm the temperature range of the build from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the piston of Parker P1D cylinder P1D4R080MC-0150NNNNN made of?",
+          "a": "The title of P1D4R080MC-0150NNNNN specifies an aluminum piston, in place of the composite piston on other P1D listings. Run it on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state other materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1D aluminum piston 80 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1D is an ISO 15552 tie-rod cylinder, so its mounting dimensions follow ISO 15552 for the bore. This listing holds no certificate documents; ask for a datasheet or certificate in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1D aluminum piston 80 mm cylinder?",
+          "a": "The title specifies BSPP ports and a male rod end. ISO 15552 mounting accessories fit by bore. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1D cylinder such as P1D4R080MC-0150NNNNN?",
+          "a": "Mount P1D4R080MC-0150NNNNN so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 80 mm aluminum piston P1D differ from the 63 mm composite piston P1D?",
+          "a": "The P1D4R080MC-0150NNNNN has an 80 mm bore and an aluminum piston, while the other single-code page is a 63 mm bore with a composite piston, both with BSPP ports and a male rod end. See the [composite piston 63 mm P1D listing](/p/parker-p1d-series-tie-rod-pneumatic-cylinders-composite-piston-bspp-ports-male-rod-end-63-mm-bore) for the smaller size."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1D aluminum piston 80 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1D fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1D aluminum piston 80 mm cylinder from stock in Dubai?",
+          "a": "Yes. The Parker P1D aluminum piston 80 mm cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

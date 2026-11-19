@@ -1,0 +1,1729 @@
+{
+  "family": "pneumatic-solenoid-valves-03",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions used in these answers: 1 bar = 14.5038 psi; 1 MPa = 10 bar = about 145 psi, so 0.1 MPa is about 15 psi, 0.15 MPa about 22 psi, 0.6 MPa about 87 psi, 0.7 MPa about 101 psi (7 bar), 0.9 MPa about 130 psi (9 bar) and 1 MPa about 145 psi (10 bar). Temperature: deg C = (deg F - 32) / 1.8, so +14 deg F = -10 deg C and +122 deg F = 50 deg C. JIS nominal pipe sizes: 20A = 3/4 inch, 25A = 1 inch, 40A = 1 1/2 inch, 50A = 2 inch.",
+      "source": "NIST Special Publication 811 (unit conversion factors); JIS B 0203 / JIS G 3452 nominal size designations"
+    },
+    {
+      "fact": "SMC directional valve part numbers (SV, SY, SYJ, VQ, VQZ, VFR, VFS series): the first digit after the series letters is the body size (e.g. SV1000 to SV4000, SY3000 to SY9000); the next digit is the valve function: 1 = 2-position single solenoid, 2 = 2-position double solenoid, 3 = 3-position closed centre, 4 = 3-position exhaust centre, 5 = 3-position pressure centre; on SY valves A = dual 3-port N.C. + N.C., B = N.O. + N.O., C = N.C. + N.O. On plug-in SY valves the following 0 marks the plug-in (manifold) type and 2 a body-ported valve. An R after the model number (e.g. SY5101R, SY3A00R) marks an external pilot version, used where supply pressure is below the pilot minimum or for vacuum. A single-solenoid spring-return valve returns to its normal position when de-energised; a double-solenoid 2-position valve stays in its last position. Closed centre blocks all ports, exhaust centre vents both cylinder ports, pressure centre pressurises both. A spool valve has a small internal leakage, so a cylinder held by a closed-centre spool valve can creep; pilot-operated check valves at the cylinder give a firm hold.",
+      "source": "SMC Best Pneumatics catalogue, 5-port solenoid valves SV, SY, VQ, VQZ, VF series, How to Order and Technical Data; ISO 1219-1 graphic symbols"
+    },
+    {
+      "fact": "SMC rated-voltage digit (the first character after the first dash on SMC solenoid valves, e.g. SV1100-5FU, VQ1101-51, SY3100-5U1, VDW23-5G-2, LVM11-5C): 1 = 100 V AC, 3 = 110 V AC, 5 = 24 V DC, 6 = 12 V DC. G in the electrical-entry position (e.g. VDW23-5G-2) is a grommet entry. An -X suffix followed by a number (e.g. -X90, -X37, -X250) marks an SMC made-to-order special. -F on SMC valves and regulators denotes a bracket; on regulators B = bracket and G = pressure gauge.",
+      "source": "SMC Best Pneumatics catalogue, solenoid valve How to Order sections; SMC made-to-order (-X) specifications"
+    },
+    {
+      "fact": "SMC port and fitting codes: M5 = M5 x 0.8 thread, M3 = M3 thread; 01 = 1/8, 02 = 1/4, 03 = 3/8, 04 = 1/2, 06 = 3/4, 10 = 1, 12 = 1 1/4, 14 = 1 1/2, 20 = 2 (thread size); thread type suffix: none = Rc (BSPT taper), N = NPT, T = NPTF, F = G. One-touch (push-in) fitting codes: C3, C4, C6, C8, C10 = metric tube OD 3.2, 4, 6, 8, 10 mm; N1 = 1/8 in, N3 = 5/32 in, N7 = 1/4 in, N9 = 5/16 in, N11 = 3/8 in tube.",
+      "source": "SMC Best Pneumatics catalogue, valve and manifold How to Order sections (port size and thread type symbols)"
+    },
+    {
+      "fact": "SMC manifold part numbers (SS5Y, SS3Y, SS5YJ, SS3YJ, SS5V, VV5K, VV5FR, NVV5FS): SS5 = 5-port manifold, SS3 = 3-port manifold; the following letters and digit name the valve series and size (SS5Y3 = SY3000, SS5Y5 = SY5000, SS5Y7 = SY7000, SS5Y9 = SY9000, SS3Y1 = SY100, SS3YJ5 = SYJ500, SS3YJ7 = SYJ700, SS5YJ7 = SYJ7000, SS5V1 = SV1000, VV5K3 = VK3000, VV5FR5 = VFR5000, NVV5FS3 = VFS3000); then the manifold type code (e.g. 20, 21, 31, 41, 42, 45, S41, 10FD1), the number of stations as two digits, and the A/B port code. On SV manifolds the letter after the station count gives the side for the SUP/EXH ports (U, D or B for both). Codes beginning SV1000- / SV1300- (SV series), SX3000- / SX5000- (SY series) and VVQ / VVQC (VQ, VQC series) are manifold option and spare parts. Unused manifold stations are closed with a blanking plate.",
+      "source": "SMC Best Pneumatics catalogue, SY / SYJ / SV / VK / VF series manifold How to Order and Manifold Options"
+    },
+    {
+      "fact": "SMC series descriptions: LVM = compact direct-operated 2- and 3-port chemical valves in which a diaphragm isolates the fluid from the solenoid, used in analytical and medical equipment; PVQ = direct-operated proportional solenoid valve for flow control (flow varies with coil current); VEP = electro-pneumatic proportional valve, pressure control type; VEF = electro-pneumatic proportional valve, flow control type; VEX = power valve series: VEX1 pilot-operated regulators (air-operated, solenoid-piloted or manual-handle precision type) and VEX3 / VEX5 3-port and 5-port power valves; VDW = compact direct-operated 2-port (VDW10/20/30) and 3-port (VDW200/300) solenoid valves; VNA, VNB = pilot-operated (air-operated or external-pilot solenoid) 2-port process valves; AV, NAV = soft start-up valves with exhaust function; LVA = air-operated chemical valve; VK = compact 5-port solenoid valve.",
+      "source": "SMC Best Pneumatics catalogue series overviews (Chemical valves, Proportional valves, Power valves, Process valves, Air preparation/soft start-up valves)"
+    },
+    {
+      "fact": "SMC states a maximum operating pressure of 0.7 MPa (102 psi, 7 bar) for the SS5Y3, SS5Y5 and SS5Y7 / SS5Y9 SY-series manifolds, the figure given on our SS5Y3, SS5Y5 and SY7000 series manifold listings.",
+      "source": "SMC SY series catalogue, manifold specifications"
+    },
+    {
+      "fact": "HS (Harmonized System) classification: heading 8481 covers taps, cocks, valves and similar appliances; subheading 8481.20 = valves for oleohydraulic or pneumatic transmissions; 8481.90 = parts. US HTS 8481.20.0060 and 8481.90.9040 are national 10-digit lines within these subheadings.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81; US Harmonized Tariff Schedule chapter 84"
+    }
+  ],
+  "products": [
+    {
+      "slug": "smc-lvm-series-chemical-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC LVM series chemical valve used for?",
+          "a": "The SMC LVM series is a compact direct-operated solenoid valve for switching small flows of chemical liquids, the kind used in analytical and medical equipment. This listing carries 7 SMC part numbers, from LVM10R1-6B-1 and LVM11-5C to LVM20R3-5A, so quote the exact code when you order."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC LVM part number such as LVM11-5C?",
+          "a": "In LVM11-5C the LVM prefix is the chemical valve series, 11 is SMC's body and valve-type code, and the 5 after the dash is the coil voltage, 24 V DC in SMC's usual coding (6 is 12 V DC, as in LVM10R1-6B-1). The letters and suffixes that follow, such as -Q or -X37, set the electrical entry, options and specials."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC LVM chemical valve models are on this listing?",
+          "a": "The listing covers LVM10R1-6B-1, LVM10R3-5C, LVM11-5C, LVM11-5C-1, LVM13R-5C-X37, LVM15R3Y-5C-Q and LVM20R3-5A. The digits after LVM identify the body size and valve type, so a replacement should match the full code of the valve on the machine, including any -X special number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between SMC LVM10, LVM15 and LVM20 chemical valves?",
+          "a": "Choose by the orifice, port and valve type the circuit needs rather than by the series number alone. LVM10, LVM11 and LVM13 are the smaller bodies here and LVM15 and LVM20 the larger ones; send the fluid, pressure and required flow and we confirm the right LVM model with SMC before supply."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature ratings apply to the SMC LVM chemical valve?",
+          "a": "SMC publishes operating pressure, orifice and fluid temperature for each LVM model in its LVM catalogue, and the figures differ by body size and valve type. This listing does not hold a rating against each part number, so we confirm the maker's figures for your exact LVM code with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids can the SMC LVM series chemical valve handle?",
+          "a": "SMC designs the LVM series for chemical liquids, with a diaphragm that isolates the fluid from the solenoid so the coil and armature stay dry. Wetted body and seal materials depend on the model code, so tell us the exact chemical, concentration and temperature and we check compatibility with SMC before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with SMC LVM series chemical valves?",
+          "a": "This listing holds no certificates or declarations for the LVM range. If your equipment file needs a certificate of conformity, a material declaration for the wetted parts or a test report, name it in the enquiry and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and tubing connect to an SMC LVM chemical valve?",
+          "a": "SMC LVM valves are small-bore valves, so they are usually plumbed with fine chemical-resistant tubing and matching miniature fittings or onto a manifold base. Choose tube material for the chemical; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares nylon, polyurethane and fluoropolymer tube."
+        },
+        {
+          "slot": "I",
+          "q": "How should an SMC LVM chemical valve be installed and maintained?",
+          "a": "Mount the LVM valve with the flow direction SMC marks on the body, keep the line clean and flush it after aggressive chemicals so crystals do not build on the diaphragm seat. Check the coil voltage against the part number before powering it, and replace the valve if the diaphragm leaks."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC LVM and SMC VDW solenoid valves?",
+          "a": "SMC LVM is a chemical valve whose isolation diaphragm keeps aggressive liquids away from the solenoid, while the [SMC VDW series](/p/smc-vdw-series-valve) is a compact general-purpose 2-way and 3-way solenoid valve for air and similar media. Pick LVM when the fluid would attack a standard valve."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC LVM chemical valves shipped from?",
+          "a": "We ship SMC LVM chemical valves from our Dubai warehouse to buyers in the GCC, Africa, Asia and beyond. Solenoid valves of this kind are normally classed under HS heading 8481; the country of origin depends on the SMC plant that built the valve and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC LVM series chemical valves in Dubai?",
+          "a": "Yes. We keep SMC LVM series chemical valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the LVM part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-pvq-series-proportional-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC PVQ series proportional valve used for?",
+          "a": "The SMC PVQ series is a direct-operated proportional solenoid valve whose flow rises with the coil current, used to meter air in blow, leak-test and flow-control circuits. Our listing has 7 SMC part numbers in the PVQ13, PVQ31 and PVQ33 models, all 2-position normally closed linear-motion poppet valves."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC PVQ part number such as PVQ31-5G-23-01N?",
+          "a": "In PVQ31-5G-23-01N, PVQ31 is the body model, 5 is the coil voltage (24 V DC in SMC coding), G the electrical entry, 23 the orifice code and 01N the port, 1/8 NPT. The smaller PVQ13 codes end in M5, an M5 x 0.8 port, and a trailing -F or -A marks a bracket or option."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do SMC PVQ13 and PVQ31 proportional valves have?",
+          "a": "The PVQ13 valves on this listing (PVQ13-5L-06-M5-A, PVQ13-5L-08-M5-A, PVQ13-6M-08-M5-A) have M5 ports, while the PVQ31 and PVQ33 valves use 1/8 threads such as 01 (Rc) and 01N (NPT). PVQ31-5G-16-01 is also listed as a 1/4 base-mount size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size an SMC PVQ proportional valve for a flow-control job?",
+          "a": "Pick the PVQ body and orifice code that passes your maximum flow at the supply pressure, then check that the coil current range suits the controller. The orifice code sits in the middle of the part number, such as 06, 08, 16, 23 or 40; our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) explains Cv and sonic conductance."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC PVQ proportional valve have?",
+          "a": "SMC rates each PVQ model and orifice separately, so the maximum operating pressure differs between PVQ13, PVQ31 and PVQ33 codes. Our size table does not carry a pressure figure for these rows, so we confirm SMC's rating and flow curve for your exact PVQ part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What media and seals suit the SMC PVQ proportional valve?",
+          "a": "The PVQ valves on this listing are soft-seal poppet valves for clean, dry compressed air and inert gas. For any other gas or for oil-free duty, give us the medium with the enquiry and we check the seal and body options with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "What compliance documents are available for SMC PVQ proportional valves?",
+          "a": "No certificates or declarations are attached to this PVQ listing. If you need a certificate of conformity, a RoHS declaration or flow-test data for the valve, say so when you order and we request it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "What does an SMC PVQ proportional valve need to run?",
+          "a": "A PVQ valve needs a current or PWM driver that matches its coil, wired through the M plug connector listed in the specification, plus filtered air upstream. Fit an air filter and regulator ahead of it from our [FRL shelf](/c/air-preparation-frl) so the flow curve stays repeatable."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain an SMC PVQ proportional valve?",
+          "a": "Mount the PVQ valve directly as the specification lists, with flow in the direction marked on the body and filtered air at the inlet. Keep dirt out of the poppet seat, since contamination shifts the flow curve; if output drifts, clean the supply and check the driver current before replacing the valve."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC PVQ and SMC VEP proportional valves?",
+          "a": "SMC PVQ is a small direct-operated proportional valve that controls flow through a normally closed poppet, while the [SMC VEP series](/p/smc-vep-series-proportional-valve) is an electro-pneumatic proportional valve for controlling pressure on a larger body. Choose PVQ to meter flow, VEP to set pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC PVQ proportional valves shipped from?",
+          "a": "We ship SMC PVQ proportional valves from our Dubai warehouse to the GCC, Africa, Asia and other export markets. They are normally classed as pneumatic valves under HS subheading 8481.20, and the country of origin follows the SMC plant that built the valve and appears on our invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy SMC PVQ proportional valves ex-stock in Dubai?",
+          "a": "Yes. We keep SMC PVQ series proportional valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the PVQ part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-solenoid-air-control-valve-4-way-3-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SV 4-way 3-position closed centre solenoid valve used for?",
+          "a": "This listing covers SMC SV series 3-position closed centre solenoid valves, SV1300-5FU, SV2300-5FU, SV3300-5FU and SV4300-5FU, which stop and hold a double-acting cylinder in mid-stroke when both coils are off. They are base-mounted, internally piloted spool valves for 24 V DC."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number SMC SV3300-5FU mean?",
+          "a": "In SV3300-5FU, SV is the series, the first 3 the body size (SV3000), the second 3 the function, a 3-position closed centre valve, and 5 the 24 V DC coil. The FU letters set the electrical entry and options, so the same suffix appears on SV1300-5FU, SV2300-5FU and SV4300-5FU."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of SMC SV closed centre valve are on this listing?",
+          "a": "There are four body sizes: SV1300-5FU (2 15/32\" wide, 3 3/4\" high), SV2300-5FU (2 13/16\" x 4 15/32\"), SV3300-5FU (3 1/4\" x 5 1/16\") and SV4300-5FU (3 3/8\" x 6 15/32\"). Larger bodies pass more air, so pick the size by the cylinder bore and speed you need."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose an SMC SV valve size for a cylinder?",
+          "a": "Size the SV valve on the flow the cylinder needs at your working pressure, then choose the smallest body that delivers it: SV1000 for small bores, up to SV4000 for large bores and long hoses. Our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) walks through Cv and cylinder speed."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of SMC SV1300 and SV2300 valves?",
+          "a": "The size table lists 101 psi (about 7 bar) as the maximum operating pressure for SV1300-5FU and SV2300-5FU. Check the row for the larger SV3300 and SV4300 bodies before ordering, and keep the supply regulated below the valve's rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC SV 3-position closed centre valve made of?",
+          "a": "The listing gives an aluminium body and spool with rubber seals, and the valve needs no lubrication. It is for compressed air and is listed as not vacuum operable, so use a dedicated vacuum valve on suction lines."
+        },
+        {
+          "slot": "G",
+          "q": "What enclosure rating does the SMC SV closed centre valve carry?",
+          "a": "The SV 3-position closed centre valves on this listing are given as NEMA 6 with a plug-in electrical connection and a 0.6 W coil. This listing holds no certificates; if your project needs a declaration of conformity, ask with the order and we request it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold does the SMC SV1300 closed centre valve mount on?",
+          "a": "SV1300-5FU is base mounted, so it sits on an SV1000 manifold such as the [SMC SS5V1 series manifold](/p/smc-ss5v1-series-manifold), which supplies air and exhaust to every station. The cylinder ports and fittings are on the manifold, not the valve body."
+        },
+        {
+          "slot": "I",
+          "q": "Does the SMC SV closed centre valve need oiled air?",
+          "a": "No. The listing states that lubrication is not required, but the air should be filtered and dry so the spool stays clean. A non-locking manual override lets you shift the valve during set-up; release it and the spring-centred spool returns to the closed centre."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SV closed centre and exhaust centre valves?",
+          "a": "In the centre position SV1300 blocks all ports so the cylinder holds its place, while the exhaust centre version vents both cylinder ports so the rod can be moved by hand. Exhaust and pressure centre SV valves are on the [SMC 5-way 3-position 5-port listing](/p/smc-solenoid-air-control-valve-5-way-3-position-5-port)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to the SMC SV 3-position closed centre valve?",
+          "a": "Our listing classes these SMC SV valves under HS code 8481200060, within subheading 8481.20 for valves for pneumatic transmissions. We export them from Dubai to the GCC, Africa and Asia, and the SMC country of origin is shown on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have SMC SV1300-5FU to SV4300-5FU valves in stock?",
+          "a": "Yes. Our Dubai, UAE warehouse holds SMC SV series 3-position closed centre valves in stock, and we ship them worldwide with the best lead times. Send the SV part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-solenoid-air-control-valve-5-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an SMC 5-way 2-position solenoid air control valve used for?",
+          "a": "An SMC 5-way 2-position solenoid valve switches a double-acting cylinder between extend and retract through five ports: supply, two outlets and two exhausts. This listing gathers 55 SMC part numbers from the SV, SY, VQ, VQZ, VFR and VFS series in single and double solenoid versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC 5/2 valve code such as SY5120-5DZ-01T?",
+          "a": "In SY5120-5DZ-01T, SY5 is the SY5000 size, the 1 after it is a single solenoid 2-position valve (2 would be double), 5 is the 24 V DC coil and 01T is a 1/8 NPTF port. The same function digit reads across SV, VQ and VQZ codes, so SV1200 and VQ1201 are double solenoid valves."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages are offered on SMC 5-way 2-position valves?",
+          "a": "This listing holds 19 valves for 24 V DC, 8 for 12 V DC and 28 for 110 V AC. The voltage digit follows the dash: -5 is 24 V DC (VQ1101-51), -6 is 12 V DC (SV1100-6FU) and -3 is 110 V AC (VFS2210-3DZ)."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do the SMC SY 5-way 2-position valves on this listing have?",
+          "a": "The SY valves step up with body size: SY3120-5LZ-M5 has M5 ports, SY5120-5DZ-01T 1/8 NPTF, SY7120-5DZ-02T 1/4 NPTF and SY9120-5DZ-03T 3/8 NPTF. Match the port to your tube and fittings, then check the flow with our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of SMC VFS and VFR 5/2 solenoid valves?",
+          "a": "The size table lists 140 psi for VFS2000 and VFS3000 valves, 145 psi (10 bar) for VFS5100-3FZ and VFS5110-3DZ, and 130 psi (about 9 bar) for VFR valves. SMC rates the SV1000, SV2000, SY, VQ and VQZ valves here at 101 psi (about 7 bar); read the row for the exact part you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are SMC 5-way 2-position spool valves made from?",
+          "a": "The listing specifies an aluminium body and spool with rubber seals, and the valves need no lubrication. They are for clean compressed air; filter the supply to the grade SMC asks for, as covered in our [ISO 8573-1 air quality guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "G",
+          "q": "What power consumption and response time do SMC SV 5/2 valves have?",
+          "a": "The listing gives 0.6 W coil power and a 10 ms response time for the SV1000 series double solenoid valve, with an ambient range of +14°F to +122°F (about -10 to 50°C). Other series on the listing have their own figures, published in SMC's catalogue."
+        },
+        {
+          "slot": "H",
+          "q": "Which manifolds suit the SMC SY and SV 5/2 valves on this listing?",
+          "a": "SY valves mount on SS5Y manifolds of the same size, such as the [SMC SS5Y5 series manifold](/p/smc-ss5y5-series-manifold) for SY5000, and SV valves mount on SS5V1 manifolds. VQ, VQZ and VFS valves have their own SMC bases, so match the manifold series to the valve series."
+        },
+        {
+          "slot": "I",
+          "q": "What happens to an SMC double solenoid 5/2 valve when power is lost?",
+          "a": "A double solenoid 2-position valve such as SV1200-6FU or SY5240-5LZ stays in its last position when power is lost, because no spring returns the spool. A single solenoid valve such as SV1100-6FU springs back to its normal position, so choose by how the machine must behave on a power failure."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 5/2 and 5/3 solenoid valves?",
+          "a": "A 5/2 valve has two positions, extend and retract, while a 5/3 valve adds a centre position that blocks, exhausts or pressurises the cylinder ports. The 3-position SY, SV and VQ versions are on the [SMC 5-way 3-position listing](/p/smc-solenoid-air-control-valve-5-way-3-position)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the SMC 5-way 2-position solenoid valves on this listing made?",
+          "a": "This listing gives Japan as the country of origin, and we ship the valves from our Dubai warehouse to the GCC, Africa, Asia and beyond. Pneumatic directional valves are normally classed under HS subheading 8481.20; the origin of each shipment is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 5-way 2-position solenoid valves in stock in Dubai?",
+          "a": "Yes. We hold SMC 5-way 2-position solenoid valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SV, SY, VQ, VQZ, VFR or VFS part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-solenoid-air-control-valve-5-way-2-position-5-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC 5-way 2-position 5-port solenoid valve range on this listing?",
+          "a": "It is a group of 31 SMC 5-port 2-position solenoid valves for 24 V DC, covering the SV1000 to SV4000, VQZ1000 to VQZ3000, VFR2000 and VFR3000 and VFS2000 to VFS5000 series. Each part number gives one body size and either a single or double solenoid."
+        },
+        {
+          "slot": "B",
+          "q": "How do you tell single from double solenoid in SMC SV1100-5FU and SV1200-5FU?",
+          "a": "The digit after the body size gives the function: 1 means single solenoid, so SV1100-5FU springs back when the coil is off, and 2 means double solenoid, so SV1200-5FU holds its last position. The -5 after the dash is the 24 V DC coil."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes of SMC SV 5-port 2-position valve are listed?",
+          "a": "The SV valves come in four widths: SV1100 and SV1200 at 2 15/32\", SV2100 and SV2200 at 2 13/16\", SV3100 and SV3200 at 3 1/4\", and SV4100 and SV4200 at 3 3/8\". The smaller VQZ valves are 1 1/2\" wide for tight manifolds."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC 5-port 2-position series should I choose: SV, VQZ, VFR or VFS?",
+          "a": "Choose VQZ or SV1000 for compact, low-flow machine valves; SV2000 to SV4000 for larger cylinders on a manifold; VFR for 130 psi duty; and VFS, including VFS5100-5FZ and VFS5110-5DZ, for the highest pressure and flow here. Compare Cv with our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the operating pressure range of SMC SV and VQZ 5-port valves?",
+          "a": "SMC's pressure range is 22 to 100 psi for single solenoid SV and VQZ valves such as SV1100-5FU and VQZ1151-5LO1, and 15 to 100 psi for double solenoid ones such as SV1200-5FU. Below the minimum the pilot cannot shift the spool reliably."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure range do SMC VFR and VFS 5-port valves cover?",
+          "a": "SMC gives 30 to 130 psi for single solenoid VFR valves such as VFR2100-5FZ and 15 to 130 psi for double solenoid VFR2200-5FZ. The VFS valves on this listing cover 15 to 145 psi (about 1 to 10 bar), the widest range of the group."
+        },
+        {
+          "slot": "F",
+          "q": "What is the body and seal material of SMC 5-port 2-position solenoid valves?",
+          "a": "This listing specifies an aluminium body and spool with rubber seals and no lubrication requirement. The valves are for compressed air and are listed as not vacuum operable, so use a vacuum-rated valve from our [vacuum components shelf](/c/vacuum-components) for suction."
+        },
+        {
+          "slot": "G",
+          "q": "What enclosure class and response time are listed for SMC SV 5-port valves?",
+          "a": "The SV1000 single solenoid valve is listed with a NEMA 6 enclosure class, an internal pilot and an 11 ms response time. This listing holds no certificates; request a declaration of conformity or other documents with the order if your project needs them."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to SMC 5-port 2-position solenoid valves?",
+          "a": "Body-ported VFR and VFS valves take threaded fittings in their ports, while base-mounted SV and VQZ valves connect through the manifold's cylinder ports. Push-in fittings and exhaust silencers for the outlets are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC 5-port solenoid valves be maintained?",
+          "a": "Supply filtered, dry air, keep exhaust ports fitted with silencers and check the coil voltage on the label before wiring. The valves need no oil; if a spool sticks, clean the air supply first, and use the non-locking manual override to test the valve without power."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code is used for SMC 5-way 2-position 5-port valves?",
+          "a": "Our listing gives HS code 8481200060, inside subheading 8481.20 for valves for pneumatic transmissions. We ship from Dubai to buyers in the GCC, Africa, Asia and beyond, and the SMC country of origin is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are SMC 5-port 2-position valves available ex-stock from Dubai?",
+          "a": "Yes. We stock SMC 5-way 2-position 5-port solenoid valves at our warehouse in Dubai, UAE, and ship them worldwide with the best lead times. Send the SV, VQZ, VFR or VFS part numbers with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-solenoid-air-control-valve-5-way-3-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an SMC 5-way 3-position solenoid valve used for?",
+          "a": "An SMC 5-way 3-position solenoid valve drives a double-acting cylinder both ways and adds a centre position for stopping, venting or pressurising the cylinder when both coils are off. This listing carries 20 part numbers from the SV, SY3000, SY5000 and VQ2000 series."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits 3, 4 and 5 mean in SMC codes such as SY3340, SY3440 and SY3540?",
+          "a": "The digit after the body size sets the centre: 3 is closed centre (SY3340-5LZ), 4 is exhaust centre (SY3440-5LZ) and 5 is pressure centre (SY3540-5LZ). The same rule applies to SV and VQ codes, so VQ2301 is closed centre and VQ2401 is exhaust centre."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages do the SMC 5-way 3-position valves on this listing use?",
+          "a": "Ten valves are 12 V DC, such as SV3300-6FU, eight are 24 V DC, such as SY5340-5LZ and VQ2301-51, and two are 110 V AC, VQ2301-31 and VQ2401-31. Order the voltage digit to match your controller output."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between closed, exhaust and pressure centre SMC 5/3 valves?",
+          "a": "Choose closed centre to hold a cylinder in place, exhaust centre to let the rod float and vent pressure for safe handling, and pressure centre to push both sides and balance the rod. Our [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3) shows each centre symbol."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of SMC SY and VQ 5-way 3-position valves?",
+          "a": "The size table lists 101 psi (about 7 bar) for the SY3000, SY5000 and VQ2000 3-position valves and for SV1000 and SV2000 rows. Check the row for SV3000 and SV4000 parts, and regulate the supply below the rating shown."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 5-way 3-position spool valves made from?",
+          "a": "The listing specifies an aluminium body and spool with rubber seals, for compressed air without lubrication. Fit filtration ahead of the valve from our [FRL shelf](/c/air-preparation-frl) so the spool and pilot stay clean."
+        },
+        {
+          "slot": "G",
+          "q": "What response time and coil power are listed for SMC SV3000 3-position valves?",
+          "a": "The listing gives a 32 ms response time and 0.6 W coil power for the SV3000 series 3-position valve, with an ambient range of +14°F to +122°F (about -10 to 50°C). The valves are internally piloted, so the supply must stay above the pilot minimum."
+        },
+        {
+          "slot": "H",
+          "q": "Which manifold takes the SMC SY3340 and SY5340 3-position valves?",
+          "a": "SY3000 valves such as SY3340-5LZ mount on SS5Y3 manifolds and SY5000 valves such as SY5340-5LZ on SS5Y5 manifolds. The [SMC SS5Y3 series manifold](/p/smc-ss5y3-series-manifold) listing shows station counts and port options for the smaller size."
+        },
+        {
+          "slot": "I",
+          "q": "Can a cylinder drift on an SMC closed centre 5/3 valve?",
+          "a": "Yes, a cylinder held by a closed centre spool valve can creep slowly because spool valves have a small internal leak. For a firm hold over long periods add pilot-operated check valves at the cylinder ports, and do not rely on the valve alone for personnel safety."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SV3300-6FU and SV3400-6FU?",
+          "a": "Both are SV3000 3-position valves with 12 V DC coils, but SV3300-6FU has a closed centre that blocks all ports and SV3400-6FU an exhaust centre that vents both cylinder ports. The 24 V DC versions are on the [SMC 5-way 3-position 5-port listing](/p/smc-solenoid-air-control-valve-5-way-3-position-5-port)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the SMC 5-way 3-position valves on this listing made?",
+          "a": "This listing gives Japan as the country of origin. We ship the valves from our Dubai warehouse to the GCC, Africa, Asia and other export markets, classed as pneumatic valves under HS subheading 8481.20, with origin stated on our invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I order SMC 5-way 3-position valves from stock in Dubai?",
+          "a": "Yes. SMC 5-way 3-position solenoid valves are kept in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the SV, SY or VQ part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-solenoid-air-control-valve-5-way-3-position-5-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SV 5-way 3-position 5-port exhaust centre valve used for?",
+          "a": "This listing covers SMC SV series 3-position 5-port valves for 24 V DC, SV1400 to SV4400 and SV1500 to SV4500 in -5FU form, which stop a double-acting cylinder and vent or pressurise its ports when both coils are off. They are base mounted, internally piloted spool valves."
+        },
+        {
+          "slot": "B",
+          "q": "What is the difference between SMC SV2400-5FU and SV2500-5FU?",
+          "a": "The digit after the body size sets the centre position: 4 in SV2400-5FU is exhaust centre, venting both cylinder ports, and 5 in SV2500-5FU is pressure centre, supplying both. Both are SV2000 bodies with 24 V DC coils, as the -5 shows."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes of SMC SV 3-position 5-port valve are available?",
+          "a": "Four bodies are listed: SV1400 and SV1500 (2 15/32\" wide, 3 3/4\" high), SV2400 and SV2500 (2 13/16\" x 4 15/32\"), SV3400 and SV3500 (3 1/4\" x 5 1/16\") and SV4400 and SV4500 (3 3/8\" x 6 15/32\")."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the SMC SV valve size for my manifold?",
+          "a": "Pick the SV size that matches the manifold already on the machine, because SV1000 to SV4000 valves each fit their own manifold width. For a new build, size on cylinder flow first, using our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv), then choose the matching manifold."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the SMC SV1400 and SV2400 exhaust centre valve rated for?",
+          "a": "The size table lists 101 psi (about 7 bar) maximum for the SV1400, SV1500, SV2400 and SV2500 rows. Read the row for SV3000 and SV4000 parts, and keep the supply above the pilot minimum so the spool shifts cleanly."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and media suit the SMC SV 3-position 5-port valve?",
+          "a": "The listing gives an aluminium body and spool with rubber seals, for compressed air without lubrication. The valves are not vacuum operable, so put vacuum circuits on a dedicated vacuum valve."
+        },
+        {
+          "slot": "G",
+          "q": "What electrical rating does the SMC SV exhaust centre valve have?",
+          "a": "The SV 3-position 5-port valves are listed as NEMA 6 with a plug-in, hardwired connection, a 0.6 W coil and a non-locking manual override. If you need a declaration of conformity for the panel file, ask with the order and we request it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "Which manifold suits the SMC SV1400-5FU and SV1500-5FU valves?",
+          "a": "SV1400-5FU and SV1500-5FU fit SV1000 manifolds such as the [SMC SS5V1 series manifold](/p/smc-ss5v1-series-manifold), which carries the supply, exhaust and cylinder ports. Larger SV2000 to SV4000 valves need the manifold of their own size."
+        },
+        {
+          "slot": "I",
+          "q": "Why use an exhaust centre SMC SV valve for maintenance safety?",
+          "a": "An exhaust centre valve such as SV3400-5FU vents both cylinder ports when the coils are off, so trapped air is released and the rod can be moved by hand. Even so, isolate and dump the supply before servicing; our [safety and lockout valve guide](/blog/air-safety-relief-soft-start-and-lockout-valves) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC SV exhaust centre valve compare with the closed centre version?",
+          "a": "The SV1400 to SV4400 exhaust centre valves vent the cylinder in mid-position, while the closed centre SV versions block all ports to hold it. The closed centre valves are on the [SMC 4-way 3-position listing](/p/smc-solenoid-air-control-valve-4-way-3-position)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to SMC SV 3-position 5-port valves?",
+          "a": "Our listing gives HS code 8481200060, within subheading 8481.20 for valves for pneumatic transmissions. We ship from Dubai across the GCC, Africa and Asia, and the SMC country of origin is stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC SV1400 to SV4500 valves in stock?",
+          "a": "Yes. We keep SMC SV series 3-position 5-port valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SV part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ss3y1-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SS3Y1 series manifold used for?",
+          "a": "The SMC SS3Y1 manifold is a bar manifold for SMC SY100 3-port solenoid valves, feeding one air supply and exhaust to a row of valves. This listing has 8 SMC part numbers, including SS3Y1-S41-08-M5 and SS3Y1-31-12, plus two VV100-S41 manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SS3Y1 manifold code such as SS3Y1-S41-08-M5?",
+          "a": "SS3Y1 is the 3-port manifold for SY100 valves, S41 the manifold type, 08 the number of stations and M5 the outlet port, an M5 x 0.8 thread. SS3Y1-S41-03-M3 swaps in M3 ports, and SS3Y1-31-08 and SS3Y1-31-12 are the type 31 base in 8 and 12 stations."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations do SMC SS3Y1 manifolds come in?",
+          "a": "The SS3Y1 and VV100 manifolds on this listing run from 2 stations (SS3Y1-S41-02-M5, VV100-S41-02-M5) through 3, 8 and 10 up to 12 stations (SS3Y1-S41-12-M5, SS3Y1-31-12). Order one station per valve, and leave a spare station with a blanking plate if the machine may grow."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes are available on SMC SS3Y1 manifolds?",
+          "a": "The outlet ports on this listing are M5 x 0.8 on the S41 and 31 types and M3 on SS3Y1-S41-03-M3, sized for the small flows of SY100 valves. Use miniature push-in fittings of the same thread from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the SMC SS3Y1 manifold?",
+          "a": "SMC states 102 psi (7 bar) for the SS3Y1 manifold, the figure on the SS3Y1-S41-08-M5 row. The usable pressure is the lower of the manifold and the SY100 valves mounted on it."
+        },
+        {
+          "slot": "F",
+          "q": "What media can the SMC SS3Y1 manifold carry?",
+          "a": "The SS3Y1 manifold is built for compressed air feeding SY100 3-port valves. Supply clean, dry air through a filter and regulator; our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) explains the order and filter grades."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I get with an SMC SS3Y1 manifold?",
+          "a": "This SS3Y1 listing carries no certificates. If your order needs a certificate of conformity or a maker's declaration, name it in the enquiry and we ask SMC to supply it with the manifold."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC SS3Y1 manifold?",
+          "a": "SS3Y1 manifolds take SMC SY100 series 3-port solenoid valves, one per station, fixed with the screws supplied with each valve. Unused stations need a blanking plate so the common supply does not leak."
+        },
+        {
+          "slot": "I",
+          "q": "How do you add a station to an SMC SS3Y1 manifold?",
+          "a": "SS3Y1 bases are built to a fixed station count, so adding valves usually means ordering a manifold with more stations, for example moving from SS3Y1-S41-08-M5 to SS3Y1-S41-12-M5. Specify spare stations with blanking plates at the design stage."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SS3Y1 and SS3YJ5 manifolds?",
+          "a": "SS3Y1 is the manifold for the compact SY100 3-port valve with M5 or M3 outlets, while the [SMC SS3YJ5 series manifold](/p/smc-ss3yj5-series-manifold) is for the SYJ500 3-port valve with 1/8 NPTF or push-in outlets. Choose by the valve series already on the machine."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC SS3Y1 manifold shipped from?",
+          "a": "We ship SMC SS3Y1 manifolds from our Dubai warehouse to the GCC, Africa, Asia and other export markets. Valve manifolds are normally classed with valves under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have SMC SS3Y1 manifolds in stock in Dubai?",
+          "a": "Yes. We keep SMC SS3Y1 series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SS3Y1 or VV100 part numbers and station counts through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ss3yj5-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SS3YJ5 series manifold used for?",
+          "a": "The SMC SS3YJ5 manifold is a base for SMC SYJ500 3-port solenoid valves, sharing one supply and exhaust across a row of stations. This listing has 7 SMC part numbers from SS3YJ5-41-02-01T (2 stations) to SS3YJ5-41-10-01T (10 stations)."
+        },
+        {
+          "slot": "B",
+          "q": "What does the SMC part number SS3YJ5-41-05-01T mean?",
+          "a": "SS3YJ5 is the 3-port manifold for SYJ500 valves, 41 the manifold type, 05 the number of stations and 01T the outlet port, 1/8 NPTF. SS3YJ5-41R-02-N7T is the 41R type in 2 stations with N7 push-in fittings for 1/4\" tube and NPTF supply threads."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations are available on SMC SS3YJ5 manifolds?",
+          "a": "This listing covers 2, 4, 5, 7, 8 and 10 stations, from SS3YJ5-41-02-01T to SS3YJ5-41-10-01T. The two-digit block after 41 is the station count, so order one per valve plus any spares you want blanked."
+        },
+        {
+          "slot": "D",
+          "q": "Which outlet ports do SMC SS3YJ5 manifolds have?",
+          "a": "Most SS3YJ5 manifolds here have 1/8 NPTF outlet ports (01T), and SS3YJ5-41R-02-N7T has built-in push-in fittings for 1/4\" tube. Use threaded fittings and tube from our [pneumatic tubing shelf](/c/pneumatic-tubing) for the threaded versions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the SMC SS3YJ5 manifold rated for?",
+          "a": "SMC states 102 psi (7 bar) for the SS3YJ5 manifold, shown on the SS3YJ5-41-04-01T row. The circuit is limited by the lower of the manifold rating and the SYJ500 valves fitted to it."
+        },
+        {
+          "slot": "F",
+          "q": "Can the SMC SS3YJ5 manifold be used with lubricated air?",
+          "a": "The SS3YJ5 manifold carries compressed air to SYJ500 valves; dry, filtered air is the normal supply. If the plant runs lubricated air, keep it lubricated consistently, because oil washes out the factory grease and the valves then need oil permanently."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC SS3YJ5 manifolds use?",
+          "a": "The T at the end of SS3YJ5 codes such as SS3YJ5-41-07-01T marks NPTF threads, the inch taper thread used in North America. Rc or G threaded versions carry a different suffix, so state the thread your fittings use when ordering."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the SMC SS3YJ5 manifold?",
+          "a": "SS3YJ5 manifolds take SMC SYJ500 series 3-port solenoid valves, one per station. Blank any unused station with an SMC blanking plate, and fit silencers on the exhaust ports from our [fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you replace a valve on an SMC SS3YJ5 manifold?",
+          "a": "Shut off and vent the supply, unplug the coil, remove the valve's mounting screws and lift it off, then fit the new SYJ500 valve with a new gasket. The outlet tubing stays connected to the manifold, so the piping does not have to be disturbed."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SS3YJ5 and SS3YJ7 manifolds?",
+          "a": "SS3YJ5 is for the SYJ500 valve, while the [SMC SS3YJ7 series manifold](/p/smc-ss3yj7-series-manifold) is for the larger SYJ700 valve, with 1/4\" push-in and 1/8 NPTF outlet options. Pick by the valve size and flow your actuators need."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to the SMC SS3YJ5 manifold?",
+          "a": "Valve manifolds are normally classed under HS heading 8481, either with the valves or as parts under 8481.90 depending on how they ship. We export SMC SS3YJ5 manifolds from Dubai and state the code and country of origin on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy SMC SS3YJ5 manifolds ex-stock in Dubai?",
+          "a": "Yes. SMC SS3YJ5 series manifolds are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the SS3YJ5 part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ss3yj7-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SS3YJ7 series manifold used for?",
+          "a": "The SMC SS3YJ7 manifold is a base for SMC SYJ700 3-port solenoid valves, sharing supply and exhaust across up to 16 stations. This listing has 17 SMC part numbers in the 20, 21 and 42 types, such as SS3YJ7-42-06-N7T and SS3YJ7-20-04-00T."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SS3YJ7 manifold code such as SS3YJ7-42-06-N9T?",
+          "a": "SS3YJ7 is the 3-port manifold for SYJ700 valves, 42 the manifold type, 06 the number of stations and N9 the outlet, a built-in push-in fitting for 5/16\" tube. The final T marks NPTF threads on the supply and exhaust ports."
+        },
+        {
+          "slot": "D",
+          "q": "What station counts are available on SMC SS3YJ7 manifolds?",
+          "a": "This listing covers 2 to 16 stations: the 42 type in 2, 4, 5, 6, 7, 10, 14 and 16 stations, the 20 type in 3, 4 and 10, and SS3YJ7-21-08-00T in 8. Choose one station per SYJ700 valve, plus spares."
+        },
+        {
+          "slot": "D",
+          "q": "Which outlet options do SMC SS3YJ7 manifolds offer?",
+          "a": "The 42 type comes with N7 push-in fittings for 1/4\" tube (SS3YJ7-42-02-N7T), N9 fittings for 5/16\" tube (SS3YJ7-42-06-N9T) or 1/8 NPTF threaded outlets (SS3YJ7-42-16-01T). The 20 and 21 types are listed with 1/8\" ports."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can the SMC SS3YJ7 manifold be used at?",
+          "a": "This listing does not give a pressure figure for the SS3YJ7 manifold, so we confirm SMC's rating for your exact code with the quotation. In service, the limit is the lower of the manifold and the SYJ700 valves fitted to it."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does an SMC SS3YJ7 manifold need?",
+          "a": "Feed the SS3YJ7 manifold with filtered, dry compressed air, since dirt and water reach every SYJ700 valve on the bar. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the ISO 8573-1 classes and where to remove water."
+        },
+        {
+          "slot": "G",
+          "q": "What thread standard is used on SMC SS3YJ7 manifolds?",
+          "a": "The T suffix on codes such as SS3YJ7-42-10-N9T and SS3YJ7-20-03-00T marks NPTF threads. If your plant uses Rc or G threads, say so with the order and we confirm the matching SMC code."
+        },
+        {
+          "slot": "H",
+          "q": "What tubing suits the push-in outlets on SMC SS3YJ7 manifolds?",
+          "a": "N7 outlets take 1/4\" OD tube and N9 outlets 5/16\" OD tube, so use inch tubing rather than 6 mm or 8 mm metric tube. Inch nylon and polyurethane tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you service an SMC SS3YJ7 valve manifold?",
+          "a": "Vent the supply before removing any SYJ700 valve, replace gaskets when a valve comes off, and check that blanking plates on unused stations are tight. Cut push-in tube square and push it fully home, then pull-test each tube before restoring air."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SS3YJ7 and SS5YJ7 manifolds?",
+          "a": "SS3YJ7 carries 3-port SYJ700 valves for single-acting duty or blow-off, while the [SMC SS5YJ7 series manifold](/p/smc-ss5yj7-series-manifold) carries 5-port SYJ7000 valves to drive double-acting cylinders. The 3 or 5 after SS tells you which."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC SS3YJ7 manifolds shipped from?",
+          "a": "We ship SMC SS3YJ7 manifolds from our Dubai warehouse to buyers in the GCC, Africa, Asia and beyond. They are normally classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC SS3YJ7 manifolds in stock?",
+          "a": "Yes. We keep SMC SS3YJ7 series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SS3YJ7 codes, station counts and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ss5v1-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SS5V1 series manifold used for?",
+          "a": "The SMC SS5V1 manifold carries a row of SMC SV1000 5-port solenoid valves on one base, with shared supply, exhaust and wiring. This listing has 73 part numbers: complete SS5V1 manifolds such as SS5V1-10FD1-08B-N1-D, plus SV1000 and SV1300 manifold parts."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SS5V1 manifold code such as SS5V1-10FD1-04B-N1-D?",
+          "a": "SS5V1 is the SV1000 manifold, 10FD1 the electrical connection block, 04 the number of stations, B the supply and exhaust port side and N1 the cylinder port fitting. In SMC coding C4, C6 and C8 are push-in fittings for 4, 6 and 8 mm tube and N1, N3 and N7 for 1/8\", 5/32\" and 1/4\" tube."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations do SMC SS5V1 manifolds have?",
+          "a": "The SS5V1 manifolds here run from 2 stations (SS5V1-10FD1-02B-C4) to 20 stations (SS5V1-10FD1-20B-N3), with 4, 5, 6, 8, 10, 12, 15 and 16 in between. The two digits before the port-side letter give the count."
+        },
+        {
+          "slot": "D",
+          "q": "What wiring options do SMC SS5V1 manifolds use?",
+          "a": "The block right after SS5V1 sets the wiring and connector, and this listing carries 10FD1, 16FD1, W10CD, W16CD, W10SA2WD, W10S1QWD and W10S1ZEND versions. The listing shows single wiring; quote the full code so the connector matches your PLC or controller."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the SMC SS5V1 manifold rated for?",
+          "a": "SMC states 102 psi (7 bar) for the SS5V1 manifold. The working limit is the lower of the manifold and the SV1000 valves on it, so check the valve rating too, for example on the [SMC 5-way 3-position 5-port listing](/p/smc-solenoid-air-control-valve-5-way-3-position-5-port)."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does an SMC SS5V1 manifold need?",
+          "a": "SS5V1 manifolds and their SV1000 valves run on filtered compressed air and need no lubrication. Size the supply port and regulator for all stations switching at once so the pilot pressure does not drop."
+        },
+        {
+          "slot": "G",
+          "q": "What documentation comes with an SMC SS5V1 manifold?",
+          "a": "This SS5V1 listing holds no certificates. For a panel or machine file, ask for SMC's wiring diagram for your connector code and any declaration of conformity with the order, and we request them from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves and parts fit the SMC SS5V1 manifold?",
+          "a": "SS5V1 manifolds take SV1000 series valves in any function, from single solenoid to 3-position. The SV1000- and SV1300- codes on this listing, such as SV1000-55-1-8 and SV1300-06-P, are SMC manifold parts and options; quote them exactly when replacing one."
+        },
+        {
+          "slot": "I",
+          "q": "How do you add a valve station to an SMC SS5V1 manifold?",
+          "a": "Adding a station to an SS5V1 manifold needs the matching SMC station parts and a spare signal in the connector block for the new coil. Send the full SS5V1 code from the manifold label and we confirm the parts with SMC; vent the supply before any work."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC SS5V1 manifold compare with SMC SS5Y manifolds?",
+          "a": "SS5V1 is a plug-in manifold for SV1000 valves with the wiring carried in the base, while SS5Y manifolds such as the [SMC SS5Y3 series manifold](/p/smc-ss5y3-series-manifold) carry SY valves. The valve series do not interchange, so choose the manifold that matches your valves."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC SS5V1 manifold shipped from?",
+          "a": "We ship SMC SS5V1 manifolds and SV1000 manifold parts from our Dubai warehouse to the GCC, Africa, Asia and beyond. Complete manifolds and parts are classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC SS5V1 manifolds and SV1000 parts in Dubai?",
+          "a": "Yes. We keep SMC SS5V1 series manifolds and SV1000 manifold parts in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the full SS5V1 or SV1000 codes and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ss5y3-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SS5Y3 series manifold used for?",
+          "a": "The SMC SS5Y3 manifold is a base for SMC SY3000 5-port solenoid valves, giving a row of valves one supply and exhaust. This listing has 23 SMC part numbers: SS5Y3 manifolds from 2 to 16 stations plus SX3000, SY3000 and SY100 manifold parts."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SS5Y3 manifold code such as SS5Y3-41-04-N3T?",
+          "a": "SS5Y3 is the 5-port manifold for SY3000 valves, 41 the manifold type, 04 the number of stations and N3 the cylinder port, a push-in fitting for 5/32\" tube. The final T marks NPTF threads, so SS5Y3-42-04-01T has 1/8 NPTF ports."
+        },
+        {
+          "slot": "D",
+          "q": "What station counts do SMC SS5Y3 manifolds come in?",
+          "a": "This listing runs from SS5Y3-20-02-00N (2 stations) through 3, 4, 5, 8, 10 and 12 to SS5Y3-45S10D-16B-N7 (16 stations). The two-digit block after the type code is the station count."
+        },
+        {
+          "slot": "D",
+          "q": "Which port options do SMC SS5Y3 manifolds offer?",
+          "a": "SS5Y3 manifolds here come with M5 x 0.8 ports (SS5Y3-41-04-M5), 1/8\" NPTF ports (SS5Y3-42-04-01T) or push-in fittings for 5/32\" (N3), 1/4\" (N7) and 6 mm (C6) tube. Choose the outlet to match your tube; see the [pneumatic tubing shelf](/c/pneumatic-tubing)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the SMC SS5Y3 manifold rated for?",
+          "a": "SMC states 102 psi (7 bar) for the SS5Y3 manifold, shown on rows such as SS5Y3-41-04-N3T and SS5Y3-42-04-01T. The usable pressure is the lower of the manifold and the SY3000 valves fitted to it."
+        },
+        {
+          "slot": "F",
+          "q": "How tall is an SMC SS5Y3 manifold?",
+          "a": "The listing gives an overall height of 57.5 mm for the 41 type, such as SS5Y3-41-04-M5, and 61 mm for the 42 type base-mount version SS5Y3-42-04-01T. Allow extra space above for the valves and connectors."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC SS5Y3 manifolds use?",
+          "a": "The listing specifies NPTF threads, marked by a final T in codes such as SS5Y3-42-04-01T. Codes ending N, such as SS5Y3-20-02-00N, use NPT; state the thread your fittings use and we confirm the right SMC code."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the SMC SS5Y3 manifold?",
+          "a": "SS5Y3 manifolds take SMC SY3000 5-port valves, single or double solenoid and 3-position, one per station; see the [SMC SY3000 series valve listing](/p/smc-sy3000-series-valve). Fit a blanking plate on any unused station."
+        },
+        {
+          "slot": "I",
+          "q": "What are the SX3000 and SY3000 part numbers on the SS5Y3 listing?",
+          "a": "Codes such as SX3000-51-10A, SX3000-50-1A-C0, SY3000-52-6A and SX11F-KG are SMC parts and options for SY3000 manifolds, used for repairs or for changing a manifold's layout. Quote the full code from the old part or the manifold label when ordering."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SS5Y3 and SS5Y5 manifolds?",
+          "a": "SS5Y3 carries SY3000 valves with M5, 1/8\" and small push-in ports, while the [SMC SS5Y5 series manifold](/p/smc-ss5y5-series-manifold) carries the larger SY5000 valve with 1/8\" and 1/4\" ports and higher flow. Pick by the cylinder sizes you drive."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC SS5Y3 manifold shipped from?",
+          "a": "We ship SMC SS5Y3 manifolds and SY3000 manifold parts from our Dubai warehouse to the GCC, Africa, Asia and other export markets. They are classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are SMC SS5Y3 manifolds in stock in Dubai?",
+          "a": "Yes. We keep SMC SS5Y3 series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SS5Y3 codes, station counts and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ss5y5-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SS5Y5 series manifold used for?",
+          "a": "The SMC SS5Y5 manifold is a base for SMC SY5000 5-port solenoid valves, sharing one supply and exhaust across a row of stations. This listing has 51 part numbers: SS5Y5 manifolds from 2 to 20 stations and SX5000 manifold parts."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SS5Y5 manifold code such as SS5Y5-42-04-02T?",
+          "a": "SS5Y5 is the 5-port manifold for SY5000 valves, 42 the manifold type, 04 the station count and 02T the cylinder port, 1/4 NPTF. In SS5Y5-45NFD-08U-C8, 45NFD is a type 45 base with its connector option, 08 the stations, U the port side and C8 push-in fittings for 8 mm tube."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations are available on SMC SS5Y5 manifolds?",
+          "a": "The SS5Y5 manifolds on this listing range from 2 stations (SS5Y5-41-02-01T) to 20 stations (SS5Y5-20-20-00F-Q), with 3, 4, 5, 6, 8, 9, 10, 12 and 16 in between. Order one station per valve and blank any spares."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do SMC SS5Y5 manifolds have?",
+          "a": "The listed outlets are 1/8\" NPTF (01T, 41 type), 1/4\" NPTF (02T, 42 type), 1/8\" BSPT on SS5Y5-20-03, and push-in fittings for 6 and 8 mm (C6, C8) or 1/4\" and 5/16\" tube (N7, N9). Our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) helps match port size to flow."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the SMC SS5Y5 manifold?",
+          "a": "SMC states 102 psi (7 bar) for the SS5Y5 manifold, shown on rows such as SS5Y5-41-02-01T and SS5Y5-42-02-02T. Use the lower of the manifold and the SY5000 valve ratings for the circuit."
+        },
+        {
+          "slot": "F",
+          "q": "How tall are SMC SS5Y5 manifolds?",
+          "a": "Overall height is listed as 61.6 mm for the 41 type (SS5Y5-41-02-01T), 66.4 mm for the 42 type (SS5Y5-42-02-02T), 67.4 mm for the 20 type (SS5Y5-20-03) and 71.1 mm for SS5Y5-45-03UR-N7. Add the valve and connector height for panel clearance."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard applies to SMC SS5Y5 manifolds?",
+          "a": "The listing specifies NPTF threads, marked by a T at the end of codes such as SS5Y5-41-05-01T; SS5Y5-20-03 has 1/8\" BSPT ports and codes ending N, such as SS5Y5-41-02-01N, use NPT. State your thread when ordering."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on the SMC SS5Y5 manifold?",
+          "a": "SS5Y5 manifolds take SMC SY5000 5-port solenoid valves, such as those on the [SMC SY5000 series valve listing](/p/smc-sy5000-series-valve), one per station. The SX5000 codes here, such as SX5000-51-10A and SX5000-72-1A, are SMC parts for the manifold."
+        },
+        {
+          "slot": "I",
+          "q": "How do you change a valve on an SMC SS5Y5 manifold?",
+          "a": "Turn off and vent the air, disconnect the coil, undo the valve's mounting screws and fit the replacement SY5000 valve with its gasket. Because the cylinder lines connect to the manifold, the tubing stays in place."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC SS5Y5-41 and SS5Y5-42 manifolds?",
+          "a": "Both carry SY5000 valves, but the 41 type has 1/8\" outlet ports and a 61.6 mm height, while the 42 type has 1/4\" ports and a 66.4 mm height for more flow. The [4-station SMC manifold listing](/p/smc-valve-manifold-4-station) shows both side by side."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC SS5Y5 manifold shipped from?",
+          "a": "We ship SMC SS5Y5 manifolds and SX5000 parts from our Dubai warehouse to buyers across the GCC, Africa and Asia. They are classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC SS5Y5 manifolds in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse holds SMC SS5Y5 series manifolds in stock, and we ship worldwide with the best lead times. Send the SS5Y5 or SX5000 codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ss5yj7-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SS5YJ7 series manifold used for?",
+          "a": "The SMC SS5YJ7 manifold is a base for SMC SYJ7000 5-port solenoid valves, letting several valves share one supply and exhaust. This listing has 3 part numbers: SS5YJ7-41-03-01T, SS5YJ7-41-06-01T and SS5YJ7-42-06-N7T."
+        },
+        {
+          "slot": "B",
+          "q": "What does the SMC part number SS5YJ7-42-06-N7T mean?",
+          "a": "SS5YJ7 is the 5-port manifold for SYJ7000 valves, 42 the manifold type, 06 the number of stations and N7 the cylinder ports, push-in fittings for 1/4\" tube. The final T marks NPTF threads on the supply and exhaust ports."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations are SMC SS5YJ7 manifolds available with?",
+          "a": "This listing covers 3 stations (SS5YJ7-41-03-01T) and 6 stations (SS5YJ7-41-06-01T and SS5YJ7-42-06-N7T). For another count, send the number of valves and the port style and we confirm the SMC code."
+        },
+        {
+          "slot": "D",
+          "q": "What port options do SMC SS5YJ7 manifolds have?",
+          "a": "The 41 type on this listing has 1/8\" NPTF threaded outlets (01T), and the 42 type has built-in push-in fittings for 1/4\" tube (N7T). Push-in outlets save fittings and assembly time; threaded outlets let you choose your own fittings."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to the SMC SS5YJ7 manifold?",
+          "a": "This listing does not hold a pressure figure for the SS5YJ7 manifold, so we confirm SMC's rating for your code with the quotation. The circuit limit is always the lower of the manifold and the SYJ7000 valves mounted on it."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does an SMC SS5YJ7 manifold need?",
+          "a": "Supply the SS5YJ7 manifold with filtered, dry compressed air, as dirt and water reach every valve on the bar. Fit a filter regulator from our [FRL shelf](/c/air-preparation-frl) close to the manifold."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread type is used on SMC SS5YJ7 manifolds?",
+          "a": "The listing specifies NPTF threads, marked by the T at the end of SS5YJ7-41-03-01T and SS5YJ7-42-06-N7T. If your fittings are Rc or G, tell us and we confirm the SMC code with that thread."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the SMC SS5YJ7 manifold?",
+          "a": "SS5YJ7 manifolds take SMC SYJ7000 5-port solenoid valves, one per station, in single, double or 3-position versions. Blank any unused station, and fit silencers on the exhaust ports from our [fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you connect tube to the SMC SS5YJ7-42-06-N7T manifold?",
+          "a": "Cut 1/4\" OD tube square, push it fully into the N7 push-in outlet and pull back to check it has locked. To remove it, vent the air, press the release collar and pull the tube out."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SS5YJ7 and SS5Y7 manifolds?",
+          "a": "SS5YJ7 carries the compact SYJ7000 valve, while the SS5Y7 manifolds on the [SMC SY7000 series manifold listing](/p/smc-sy7000-series-manifold) carry the larger SY7000 valve with 1/4\" and 3/8\" ports for bigger cylinders."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC SS5YJ7 manifold shipped from?",
+          "a": "We ship SMC SS5YJ7 manifolds from our Dubai warehouse to the GCC, Africa, Asia and other export markets. Valve manifolds are classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I order SMC SS5YJ7 manifolds from stock?",
+          "a": "Yes. We keep SMC SS5YJ7 series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SS5YJ7 codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-sy3000-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SY3000 series solenoid valve used for?",
+          "a": "The SMC SY3000 is a compact 5-port pilot-operated solenoid valve for driving double-acting cylinders, made in 2-position, 3-position and dual 3-port versions. This listing has 21 part numbers, mostly plug-in valves for SS5Y3 manifolds, such as SY3100-5U1 and SY3300-5U1."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SY3000 code such as SY3100-5U1?",
+          "a": "In SY3100-5U1, SY3 is the SY3000 size, 1 the function (single solenoid 2-position), 0 the plug-in manifold type, 5 the 24 V DC coil and U1 the light, surge suppressor and entry options. SY3200 is double solenoid, SY3300 closed centre and SY3400 exhaust centre; an R after the model, as in SY3A00R-5U1, marks external pilot."
+        },
+        {
+          "slot": "D",
+          "q": "What are the SMC SY3A00, SY3B00 and SY3C00 valves?",
+          "a": "They are dual 3-port SY3000 valves: two 3-port valves in one 5-port body, each with its own solenoid. SY3A00 is N.C. + N.C., SY3B00 N.O. + N.O. and SY3C00 N.C. + N.O., useful for two single-acting cylinders or blow-off circuits on one station."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC SY3000 function should I order for a double-acting cylinder?",
+          "a": "Use SY3100 single solenoid if the cylinder must return when power drops, SY3200 double solenoid if it must hold its last position, and SY3300 or SY3400 when it must stop mid-stroke. Our [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3) shows each symbol."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the SMC SY3000 valve need?",
+          "a": "The SY3130-5U1-N7 row gives SMC's operating range of 0.15 to 0.7 MPa (about 22 to 101 psi) for the single solenoid SY3000 valve. Internally piloted valves need at least the minimum pressure at the valve to shift; below that use an external pilot version."
+        },
+        {
+          "slot": "F",
+          "q": "How much power does an SMC SY3000 solenoid valve use?",
+          "a": "The listing gives 0.35 W solenoid power consumption for the SY3000 series, which lets a PLC output drive the coil directly. The coil voltage is set by the digit after the dash, 5 for 24 V DC on every valve listed here."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard and options are listed for the SMC SY3000 valve?",
+          "a": "The listing specifies Rc threads, a non-locking push manual override and no mounting bracket. Plug-in valves such as SY3100-5U1 have no ports of their own; their port threads are on the manifold, for example the [SMC SS5Y3 series manifold](/p/smc-ss5y3-series-manifold)."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SMC SY3000 plug-in valve connect to?",
+          "a": "Plug-in SY3000 valves mount on SS5Y3 manifolds, which carry the supply, exhaust and cylinder ports and the electrical connection. SY3130-5U1-N7 carries the N7 code, SMC's push-in fitting for 1/4\" tube; other cylinder fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you test an SMC SY3000 valve without power?",
+          "a": "Press the non-locking manual override on the pilot to shift the valve while air is on; it returns when released. Use it during commissioning only, with the machine guarded, and check that the 24 V DC coil matches the -5 code before wiring."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SY3000 and SY5000 valves?",
+          "a": "SY3000 is the smaller body for small and medium bores, while the [SMC SY5000 series valve](/p/smc-sy5000-series-valve) passes more air for larger cylinders and longer lines. The two sizes mount on different manifolds, SS5Y3 and SS5Y5, and do not interchange."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC SY3000 series valves shipped from?",
+          "a": "We ship SMC SY3000 valves from our Dubai warehouse to the GCC, Africa, Asia and other export markets. They are classed as pneumatic valves under HS subheading 8481.20, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC SY3000 valves in Dubai?",
+          "a": "Yes. We keep SMC SY3000 series valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SY3000 part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-sy5000-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SY5000 series valve used for?",
+          "a": "The SMC SY5000 is a 5-port pilot-operated solenoid valve for driving medium and large double-acting cylinders, offered in 2-position, 3-position and dual 3-port versions. This listing carries 22 part numbers, such as SY5100-5U1, SY5200-5NZ1 and SY5400-5U1, plus SY5000 manifold parts."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SY5000 code such as SY5101R-5U1?",
+          "a": "SY5 is the SY5000 size, the 1 after it the function (single solenoid 2-position), R the external pilot option and 5 the 24 V DC coil, with U1 for the electrical entry and options. SY5200 is double solenoid, SY5300 closed centre, SY5400 exhaust centre and SY5A00 a dual 3-port valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC SY5000 valve function do I need?",
+          "a": "Pick SY5100 single solenoid for spring return on power loss, SY5200 double solenoid to hold position, SY5300 closed centre to stop and hold mid-stroke, and SY5400 exhaust centre to stop and vent. SY5A00-5U1-WO-02T is the dual 3-port version."
+        },
+        {
+          "slot": "D",
+          "q": "When do I need an external pilot SMC SY5000 valve such as SY5101R-5U1?",
+          "a": "Choose an external pilot version, marked R, when the main supply is too low to shift an internally piloted valve, or when the valve switches vacuum. The pilot then takes air from a separate port held within SMC's pilot pressure range."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the SMC SY5000 valve?",
+          "a": "SMC states 101 psi (7 bar) maximum for the SY5000 series, the figure on the SY5100-5U1-X90 row. Keep the supply regulated below that and above the pilot minimum, using a regulator from our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "F",
+          "q": "What do the SMC SY50M and SY70M codes on the SY5000 listing mean?",
+          "a": "SY50M-27-1-WO-02T, SY50M-27-1-WO-02 and SY50M-27-1-WO-02N are SMC SY5000 manifold parts with 1/4 ports in NPTF, Rc and NPT threads, and SY70M-38-1A-N11 is a part for SY7000. Quote the full code from the old part when ordering a replacement."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread types are offered on SMC SY5000 valves?",
+          "a": "Body-ported SY5000 valves carry the thread in the code: 01F on SY5130-5UD1-01F is G 1/8, a T ending such as 02T is NPTF and N is NPT. Plug-in valves such as SY5100-5U1 take their threads from the manifold."
+        },
+        {
+          "slot": "H",
+          "q": "Which manifold takes the SMC SY5100-5U1 plug-in valve?",
+          "a": "SY5100-5U1 and the other plug-in SY5000 valves mount on SS5Y5 manifolds; see the [SMC SS5Y5 series manifold](/p/smc-ss5y5-series-manifold) for 2 to 20 station versions. Each station carries one valve; blank spare stations."
+        },
+        {
+          "slot": "I",
+          "q": "What does the -X90 suffix on SMC SY5100-5U1-X90 mean?",
+          "a": "An -X suffix on an SMC code marks a made-to-order special, so SY5100-5U1-X90 and SY5300-5U1-X90 differ from the standard valves in a detail SMC defines for that X number. Always order by the full code so the replacement matches the original."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SY5200 and SY5300 valves?",
+          "a": "SY5200 is a double solenoid 2-position valve that holds its last position, while SY5300 is a 3-position closed centre valve that stops and holds the cylinder when both coils are off. Our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) helps confirm SY5000 suits your cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC SY5000 valves shipped from?",
+          "a": "We ship SMC SY5000 valves and SY5000 manifold parts from our Dubai warehouse to the GCC, Africa, Asia and beyond. They are classed as pneumatic valves under HS subheading 8481.20, and the SMC country of origin is stated on our invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy SMC SY5000 series valves from stock in Dubai?",
+          "a": "Yes. We keep SMC SY5000 series valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SY5000 part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-sy7000-series-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC SY7000 series manifold used for?",
+          "a": "This listing covers SMC SS5Y7 manifolds for SY7000 5-port solenoid valves and SS5Y9 manifolds for the larger SY9000 valve, each feeding a row of valves from one supply and exhaust. There are 23 part numbers, from SS5Y7-20-02-00N to SS5Y9-43-06B-N11-D."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC SY7000 manifold code such as SS5Y7-42-06-02T?",
+          "a": "SS5Y7 is the 5-port manifold for SY7000 valves, 42 the manifold type, 06 the number of stations and 02T the cylinder port, 1/4 NPTF. SS5Y9 codes follow the same pattern for SY9000 valves, so SS5Y9-23-04-00T is a type 23 base in 4 stations."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations do SMC SS5Y7 and SS5Y9 manifolds have?",
+          "a": "The SS5Y7 manifolds here range from 2 stations (SS5Y7-42-02-02T) to 10 (SS5Y7-20-10), and the SS5Y9 manifolds from 2 (SS5Y9-23-02) to 8 (SS5Y9-23-08-00T). The two digits after the type code give the count."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do SMC SY7000 manifolds have?",
+          "a": "The listed SS5Y7 manifolds have 1/4\" NPTF ports on the 42 type, 1/4\" BSPT on SS5Y7-20-04 and 3/8\" NPTF on SS5Y7-42-08-N11T. Bigger ports suit larger bores; size them with our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the SMC SY7000 series manifold rated for?",
+          "a": "SMC states 102 psi (7 bar) for these manifolds, shown on rows such as SS5Y7-42-06-02T and SS5Y7-20-04. The circuit limit is the lower of the manifold and the SY7000 or SY9000 valves fitted."
+        },
+        {
+          "slot": "F",
+          "q": "How tall is the SMC SS5Y7 manifold?",
+          "a": "The listing gives an overall height of 73 mm for the SS5Y7-42 manifolds, such as SS5Y7-42-02-02T, and 74.6 mm for SS5Y7-20-04. Allow extra room above for the valves and connectors."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards are used on SMC SY7000 manifolds?",
+          "a": "Codes ending T, such as SS5Y7-42-06-02T, have NPTF threads; codes ending N, such as SS5Y9-23-02-00N, have NPT; and codes with no suffix, such as SS5Y7-20-04, have Rc (BSPT) threads. Order the thread your fittings use."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit SMC SS5Y7 and SS5Y9 manifolds?",
+          "a": "SS5Y7 manifolds take SY7000 5-port solenoid valves and SS5Y9 manifolds take SY9000 valves, one per station; the two sizes do not interchange. Smaller SY3000 and SY5000 valves need the [SMC SS5Y5 series manifold](/p/smc-ss5y5-series-manifold) or SS5Y3."
+        },
+        {
+          "slot": "I",
+          "q": "How do you add or blank a station on an SMC SY7000 manifold?",
+          "a": "SS5Y7 bases are ordered by station count, so plan spares at the design stage and fit SMC blanking plates on stations without valves. Vent the supply before removing a valve or plate, and replace the gasket every time."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC SS5Y7 and SS5Y9 manifolds?",
+          "a": "SS5Y7 manifolds carry SY7000 valves with 1/4\" to 3/8\" ports, while SS5Y9 manifolds carry the larger SY9000 valves for the biggest flows in the SY range. Choose SS5Y9 when the cylinders are too large for SY7000."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC SY7000 series manifolds shipped from?",
+          "a": "We ship SMC SS5Y7 and SS5Y9 manifolds from our Dubai warehouse to buyers in the GCC, Africa, Asia and beyond. They are classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC SS5Y7 and SS5Y9 manifolds in Dubai?",
+          "a": "Yes. We keep SMC SY7000 and SY9000 series manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SS5Y7 or SS5Y9 codes and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-two-port-process-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC two-port process valve used for?",
+          "a": "An SMC two-port process valve is a 2-port on/off valve that opens and shuts a process line for air or other fluids on larger pipe sizes. This listing carries 5 SMC part numbers: EVNB401AL-F25A, EVNB602AL-F40A, EVNB701AL-F50A, VNA302A-N20A-X250 and VNB304BS-N20A-B-X241."
+        },
+        {
+          "slot": "B",
+          "q": "What does the F25A in SMC EVNB401AL-F25A mean?",
+          "a": "F25A is the port code: a flanged connection in the 25A nominal size, about 1 inch. EVNB602AL-F40A has a 40A (1 1/2 inch) flange and EVNB701AL-F50A a 50A (2 inch) flange, while N20A on the VNA and VNB valves is a 20A (3/4 inch) NPT thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes are the SMC two-port process valves on this listing?",
+          "a": "They run from 20A (3/4 inch) threaded ports on VNA302A-N20A-X250 and VNB304BS-N20A-B-X241 to 25A, 40A and 50A flanges on the EVNB401AL, EVNB602AL and EVNB701AL valves. Match the flange or thread to the pipe, and confirm flow for the line size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between SMC VNA, VNB and EVNB process valves?",
+          "a": "Choose by the fluid, pipe size and connection: VNA and VNB valves here have 20A threaded ports, and the EVNB valves have 25A to 50A flanges for larger lines. Send the medium, pressure and temperature and we confirm the SMC model and seal before supply."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do SMC two-port process valves have?",
+          "a": "SMC rates each process valve model by series, size and seal, and this listing does not hold a pressure figure for these five codes. We confirm the maker's operating pressure, fluid temperature and pilot pressure for your exact part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids can SMC two-port process valves handle?",
+          "a": "SMC builds its process valves for several media and picks the seal and body material by model, so the right code depends on your fluid. Tell us whether the line carries air, water, oil or another medium, and its temperature, and we check the code with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "What documents are available for SMC two-port process valves?",
+          "a": "No certificates are attached to this process valve listing. If your plant needs a certificate of conformity, a material declaration or a pressure test report, name it in the enquiry and we request it from SMC with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What is needed to operate an SMC two-port process valve?",
+          "a": "Pilot-operated process valves need a clean pilot air supply switched by a small solenoid valve, such as one from our [manual, mechanical and pilot air valves shelf](/c/pneumatic-control-valves). Flanged EVNB valves also need mating flanges, gaskets and bolts sized for 25A, 40A or 50A."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an SMC flanged process valve such as EVNB602AL-F40A?",
+          "a": "Fit EVNB602AL-F40A between 40A flanges with the flow arrow in the line direction, tighten the bolts evenly across the flange and keep the pilot port clear of dirt. Flush new pipework before fitting so weld slag does not damage the seat."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between an SMC process valve and a solenoid valve?",
+          "a": "An SMC process valve opens a large-bore line using pilot air, while a direct solenoid valve such as the [SMC VDW series](/p/smc-vdw-series-valve) switches a small orifice straight from the coil. Choose a process valve for 20A and larger lines."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC two-port process valves shipped from?",
+          "a": "We ship SMC two-port process valves from our Dubai warehouse to the GCC, Africa, Asia and other export markets. Valves are classed under HS heading 8481, and the code and SMC country of origin are stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have SMC EVNB and VNB process valves in stock in Dubai?",
+          "a": "Yes. We keep SMC two-port process valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the EVNB, VNA or VNB part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC Valve listing at Indus Hydraulics cover?",
+          "a": "It is a general SMC valve listing with 571 part numbers across many series, including AV and NAV soft-start valves, EVS1 and EVS7 5-port valves, VP4150 and VFN2120N solenoid valves and VQ21M1 valves. Quote the full SMC code and we match it to the right series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I find the right SMC part number on the SMC Valve listing?",
+          "a": "Search the size table for the full code printed on the valve label, such as NAV3000-N03-3DC or EVS7-8-FG-D-3CVO-Q. The letters before the first dash give the series and size; the digit after the dash is usually the coil voltage, 5 for 24 V DC and 3 for 110 V AC."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages appear on SMC valves in this listing?",
+          "a": "Rows on this listing carry 24 V DC, 12 V DC, 100 V AC, 110 V AC, 110/120 V AC, 200 V AC and 220 V AC coils, for example VT315-022D at 200 V AC and SZ3360-5NLOZ-C6 at 12 V DC. Match the coil to your control voltage before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do SMC EVS1 and EVS7 valves on this listing come in?",
+          "a": "The listing gives EVS1-02-FG-D-3ZRM0-Q at 34 mm wide and 74.5 mm high, and EVS7-6-FG-S-3CV at 62 mm by 112 mm, with EVS7-8 and EVS7-10 codes for larger EVS7 sizes. Larger bodies pass more air; size the valve with our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure ratings apply to SMC valves on the SMC Valve listing?",
+          "a": "The maker's pressure for this listing is 87 to 145 psi (6 to 10 bar) by series: VQ21M1-5YO-C8-Q is rated 0.6 MPa, SZ3160 valves 0.15 to 0.7 MPa, VFN2120N valves 0.15 to 0.9 MPa and EVS1 and EVS7 valves 1 MPa. Check the row for your part."
+        },
+        {
+          "slot": "F",
+          "q": "What media do the SMC valves on this listing switch?",
+          "a": "Most valves on this listing are directional and soft-start valves for compressed air. The LVA codes are SMC air-operated chemical valves; give us the fluid with the enquiry so we confirm the seal and body material."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can I get for valves on the SMC Valve listing?",
+          "a": "This listing holds no certificates for its 571 part numbers. If a project needs a certificate of conformity, a material declaration or a test report, name it on the enquiry against the part numbers and we request it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "What are the SMC AV and NAV valves on this listing used for?",
+          "a": "SMC AV and NAV valves, such as NAV3000-N03-3DC and AV2000-F02G-5YZ, are soft-start valves that bring a machine's air pressure up gradually and exhaust it when switched off. Our [soft-start and lockout valve guide](/blog/air-safety-relief-soft-start-and-lockout-valves) explains where they fit."
+        },
+        {
+          "slot": "I",
+          "q": "How should SMC solenoid valves from this listing be maintained?",
+          "a": "Feed the valves with filtered, dry air, keep silencers clean and check coil voltage against the code before wiring. If a valve sticks, check the air quality first; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the ISO 8573-1 classes."
+        },
+        {
+          "slot": "J",
+          "q": "Which SMC valve series on this listing suit manifold mounting?",
+          "a": "Rows such as SZ3160-5LOZ-C4, SX3140-5LOZD, VP4150-031T and VO315-005D are listed as units for manifold mounting, while VFN2120N and VT315-025TL are single units. For dedicated series pages, browse our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the SMC valves on the SMC Valve listing shipped from?",
+          "a": "We ship SMC valves from this listing from our Dubai warehouse to buyers in the GCC, Africa, Asia and beyond. Pneumatic valves are normally classed under HS subheading 8481.20, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the SMC valves on this listing in stock in Dubai?",
+          "a": "Yes. We hold SMC valves from this listing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the full SMC part numbers and quantities through [our contact page](/contact) and we confirm price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-valve-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC Valve Manifold listing include?",
+          "a": "The SMC Valve Manifold listing carries 191 SMC manifold assemblies and manifold parts for several valve series, including VVQ1000 and VVQ5000 parts, VVQC1000 to VVQC4000 parts, VV3P3, VV5FR5, VV5K3 and NVV5FS3 manifolds and SS5Q13 and SS5Q23 manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC manifold code such as VV5K3-42-10-01N?",
+          "a": "VV5K3 is the 5-port manifold for SMC VK3000 valves, 42 the manifold type, 10 the number of stations and 01N the cylinder port, 1/8 NPT. Codes starting VVQ or VVQC, such as VVQ1000-70-12, are parts for VQ and VQC manifolds."
+        },
+        {
+          "slot": "D",
+          "q": "What station counts do SMC manifolds on this listing cover?",
+          "a": "Complete manifolds on the listing run from 2 stations, such as NVV5K3-42-02-01T, to 10 stations, such as VV5K3-42-10-01N, and VVQ5000-44A-8-2 to VVQ5000-44A-8-7 cover 2 to 7 stations. Order one station per valve plus spares."
+        },
+        {
+          "slot": "D",
+          "q": "How do I identify the right SMC manifold part from this listing?",
+          "a": "Read the full code from the manifold label or the old part and match it exactly, since codes such as VVQC1000-1A-D-C4 and VVQC1000-1A-D-C6 differ only by fitting size, 4 mm against 6 mm tube. If the label is gone, send photos and the valve codes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do SMC valve manifolds on this listing have?",
+          "a": "SMC states 102 psi (7 bar) for the manifolds on this listing. The usable pressure is the lower of the manifold and the valves fitted to it, so check the valve series rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality do SMC valve manifolds need?",
+          "a": "SMC manifolds and their valves need filtered, dry compressed air, because dirt or water reaches every valve on the bar. Install a filter and regulator ahead of the manifold; our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) covers order and filter grades."
+        },
+        {
+          "slot": "G",
+          "q": "What thread codes are used on SMC manifolds in this listing?",
+          "a": "A T ending, as in VV3P3-41-061-02T, marks NPTF; N, as in VV5K3-42-10-01N, marks NPT; F, as in VV5K3-20-08-00F, marks G; and no suffix marks Rc. C4 to C8 are push-in fittings for 4 to 8 mm tube and N3 to N11 for 5/32\" to 3/8\" tube."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the SMC manifolds on this listing?",
+          "a": "Each manifold takes its own valve series: VV5K3 and NVV5K3 take VK3000 valves, VV5FR5 takes VFR5000, NVV5FS3 takes VFS3000, and VVQ and VVQC parts belong to VQ and VQC manifolds. Single valves are on our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you replace a part on an SMC valve manifold?",
+          "a": "Vent the manifold supply, note the station and part code, then swap the part using a new gasket and the screws SMC specifies. Parts such as VVQ1000-70-6 and VVQ1000-70-12 are sized by station count, so order the one that matches your manifold length."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between this SMC manifold listing and the SS5Y series listings?",
+          "a": "This listing gathers manifolds and parts for many SMC valve series, while the SS5Y listings, such as the [SMC SS5Y5 series manifold](/p/smc-ss5y5-series-manifold), cover the SY valve manifolds by size. Search here when your code starts VV, VVQ, NVV or SS5Q."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC valve manifolds shipped from?",
+          "a": "We ship SMC valve manifolds and manifold parts from our Dubai warehouse to the GCC, Africa, Asia and other export markets. They are classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC valve manifolds and manifold parts in Dubai?",
+          "a": "Yes. We keep SMC valve manifolds and manifold parts in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the full SMC codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-valve-manifold-4-station",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC 4-station valve manifold used for?",
+          "a": "The SMC 4-station valve manifold is a base-mounted bar manifold that carries 4 SMC SY solenoid valves on one air supply and exhaust. This listing offers three versions: SS5Y3-41-04-M5T, SS5Y5-41-04-01T and SS5Y7-42-04-02T."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC 4-station manifold code SS5Y5-41-04-01T?",
+          "a": "In SS5Y5-41-04-01T, SS5Y5 is the 5-port manifold for SY5000 valves, 41 the manifold type, 04 the number of stations and 01T the cylinder ports, 1/8 NPTF. SS5Y7-42-04-02T is the SY7000 version with 1/4 NPTF ports, and SS5Y3-41-04-M5T the SY3000 version."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are available on SMC 4-station manifolds?",
+          "a": "The three 4-station manifolds have 1/4\" NPT ports (SS5Y7-42-04-02T), 1/8\" NPT ports (SS5Y5-41-04-01T) or the small M5T port code on the SY3000 base (SS5Y3-41-04-M5T). Pick the port size that suits your cylinder flow and fittings."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC 4-station manifold should I choose for my valves?",
+          "a": "Choose by valve series: SS5Y3-41-04-M5T takes SY3000 valves, SS5Y5-41-04-01T takes SY5000 valves and SS5Y7-42-04-02T takes the larger SY7000 valves. For other station counts, see the [SMC SS5Y5 series manifold listing](/p/smc-ss5y5-series-manifold)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature apply to SMC 4-station manifolds?",
+          "a": "SMC rates the SS5Y3, SS5Y5 and SS5Y7 manifold series at 102 psi (7 bar), and this listing gives 122°F (50°C) as the temperature limit. Use the lower of the manifold and the valve ratings for the whole 4-station assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC 4-station manifold made for?",
+          "a": "The 4-station manifolds are horizontal, base-mounted bar manifolds for compressed air, compatible with SMC valves only. Filter the supply before the manifold; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the right grade."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 4-station manifolds use?",
+          "a": "The final T in SS5Y7-42-04-02T and SS5Y5-41-04-01T marks NPTF threads, the inch taper thread common in North America. If your plant uses Rc or G threads, tell us and we confirm the matching SMC code for a 4-station base."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the SMC 4-station manifold SS5Y5-41-04-01T?",
+          "a": "SS5Y5-41-04-01T takes up to 4 SMC SY5000 5-port valves, such as those on the [SMC SY5000 series valve listing](/p/smc-sy5000-series-valve), in single, double or 3-position versions. Fit a blanking plate on any station left empty."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an SMC 4-station valve manifold?",
+          "a": "Mount the 4-station manifold horizontally as listed, connect supply and exhaust to the end ports, then fit each valve with its gasket and screws. Fit silencers or piped exhausts, and pressure-test before connecting the cylinders."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 4-station and 6-station valve manifolds?",
+          "a": "A 4-station manifold carries four valves and a 6-station one carries six, on the same SS5Y3 or SS5Y5 bases. If the machine may gain a valve later, the [SMC 6-station manifold](/p/smc-valve-manifold-6-station) leaves room for spares under blanking plates."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to SMC 4-station valve manifolds?",
+          "a": "Our listing classes the SMC 4-station manifolds under HS code 8481909040, within subheading 8481.90 for parts of valves. We export them from Dubai, and the SMC country of origin is stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 4-station valve manifolds in stock in Dubai?",
+          "a": "Yes. We keep SMC 4-station valve manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part number, such as SS5Y5-41-04-01T, and the quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-valve-manifold-6-station",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC 6-station valve manifold used for?",
+          "a": "The SMC 6-station valve manifold is a base-mounted bar manifold that carries 6 SMC SY solenoid valves on one air supply and exhaust. This listing offers three versions: SS5Y3-41-06-M5T, SS5Y5-41-06-01T and SS5Y5-42-06-02T."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC 6-station manifold code SS5Y5-42-06-02T?",
+          "a": "In SS5Y5-42-06-02T, SS5Y5 is the 5-port manifold for SY5000 valves, 42 the manifold type, 06 the number of stations and 02T the cylinder ports, 1/4 NPTF. SS5Y5-41-06-01T is the 41 type with 1/8 NPTF ports, and SS5Y3-41-06-M5T is the SY3000 version."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are available on SMC 6-station manifolds?",
+          "a": "The three 6-station manifolds have 1/4\" NPT ports (SS5Y5-42-06-02T), 1/8\" NPT ports (SS5Y5-41-06-01T) or the small M5T port code on the SY3000 base (SS5Y3-41-06-M5T). Pick the port size that suits your cylinder flow and fittings."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC 6-station manifold should I choose for my valves?",
+          "a": "Choose by valve series: SS5Y3-41-06-M5T takes SY3000 valves, while SS5Y5-41-06-01T and SS5Y5-42-06-02T take SY5000 valves. For a mixed panel or larger cylinders, compare the series on the [SMC SS5Y5 series manifold listing](/p/smc-ss5y5-series-manifold)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature apply to SMC 6-station manifolds?",
+          "a": "SMC rates the SS5Y3 and SS5Y5 manifold series at 102 psi (7 bar), and this listing gives 122°F (50°C) as the temperature limit. Use the lower of the manifold and the valve ratings for the whole 6-station assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC 6-station manifold made for?",
+          "a": "The 6-station manifolds are horizontal, base-mounted bar manifolds for compressed air, compatible with SMC valves only. Filter the supply before the manifold; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the right grade."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 6-station manifolds use?",
+          "a": "The final T in SS5Y5-42-06-02T and SS5Y5-41-06-01T marks NPTF threads, the inch taper thread common in North America. If your plant uses Rc or G threads, tell us and we confirm the matching SMC code for a 6-station base."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the SMC 6-station manifold SS5Y5-41-06-01T?",
+          "a": "SS5Y5-41-06-01T takes up to 6 SMC SY5000 5-port valves, such as those on the [SMC SY5000 series valve listing](/p/smc-sy5000-series-valve), in single, double or 3-position versions. Fit a blanking plate on any station left empty."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an SMC 6-station valve manifold?",
+          "a": "Mount the 6-station manifold horizontally as listed, connect supply and exhaust to the end ports, then fit each valve with its gasket and screws. Fit silencers or piped exhausts, and pressure-test before connecting the cylinders."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose a 6-station or an 8-station SMC valve manifold?",
+          "a": "Choose a 6-station SMC manifold for six valves, or the [SMC 8-station manifold](/p/smc-valve-manifold-8-station) if you want two spare stations for later valves. Spare stations stay sealed with blanking plates until they are used."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to SMC 6-station valve manifolds?",
+          "a": "Our listing classes the SMC 6-station manifolds under HS code 8481909040, within subheading 8481.90 for parts of valves. We export them from Dubai, and the SMC country of origin is stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 6-station valve manifolds in stock in Dubai?",
+          "a": "Yes. We keep SMC 6-station valve manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part number, such as SS5Y5-41-06-01T, and the quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-valve-manifold-8-station",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC 8-station valve manifold used for?",
+          "a": "The SMC 8-station valve manifold is a base-mounted bar manifold that carries 8 SMC SY solenoid valves on one air supply and exhaust. This listing offers three versions: SS5Y3-41-08-M5T, SS5Y5-41-08-01T and SS5Y5-42-08-02T."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC 8-station manifold code SS5Y5-42-08-02T?",
+          "a": "In SS5Y5-42-08-02T, SS5Y5 is the 5-port manifold for SY5000 valves, 42 the manifold type, 08 the number of stations and 02T the cylinder ports, 1/4 NPTF. SS5Y5-41-08-01T is the 41 type with 1/8 NPTF ports, and SS5Y3-41-08-M5T is the SY3000 version."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are available on SMC 8-station manifolds?",
+          "a": "The three 8-station manifolds have 1/4\" NPT ports (SS5Y5-42-08-02T), 1/8\" NPT ports (SS5Y5-41-08-01T) or the small M5T port code on the SY3000 base (SS5Y3-41-08-M5T). Pick the port size that suits your cylinder flow and fittings."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC 8-station manifold should I choose for my valves?",
+          "a": "Choose by valve series: SS5Y3-41-08-M5T takes SY3000 valves, while SS5Y5-41-08-01T and SS5Y5-42-08-02T take SY5000 valves. For a mixed panel or larger cylinders, compare the series on the [SMC SS5Y5 series manifold listing](/p/smc-ss5y5-series-manifold)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature apply to SMC 8-station manifolds?",
+          "a": "SMC rates the SS5Y3 and SS5Y5 manifold series at 102 psi (7 bar), and this listing gives 122°F (50°C) as the temperature limit. Use the lower of the manifold and the valve ratings for the whole 8-station assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC 8-station manifold made for?",
+          "a": "The 8-station manifolds are horizontal, base-mounted bar manifolds for compressed air, compatible with SMC valves only. Filter the supply before the manifold; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) covers the right grade."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 8-station manifolds use?",
+          "a": "The final T in SS5Y5-42-08-02T and SS5Y5-41-08-01T marks NPTF threads, the inch taper thread common in North America. If your plant uses Rc or G threads, tell us and we confirm the matching SMC code for a 8-station base."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the SMC 8-station manifold SS5Y5-41-08-01T?",
+          "a": "SS5Y5-41-08-01T takes up to 8 SMC SY5000 5-port valves, such as those on the [SMC SY5000 series valve listing](/p/smc-sy5000-series-valve), in single, double or 3-position versions. Fit a blanking plate on any station left empty."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an SMC 8-station valve manifold?",
+          "a": "Mount the 8-station manifold horizontally as listed, connect supply and exhaust to the end ports, then fit each valve with its gasket and screws. Fit silencers or piped exhausts, and pressure-test before connecting the cylinders."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 8-station and 4-station valve manifolds?",
+          "a": "An 8-station manifold carries eight valves on one supply and exhaust, twice the [SMC 4-station manifold](/p/smc-valve-manifold-4-station). On a long bar, feed air from both ends if all valves switch together, so the far stations do not starve."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to SMC 8-station valve manifolds?",
+          "a": "Our listing classes the SMC 8-station manifolds under HS code 8481909040, within subheading 8481.90 for parts of valves. We export them from Dubai, and the SMC country of origin is stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 8-station valve manifolds in stock in Dubai?",
+          "a": "Yes. We keep SMC 8-station valve manifolds in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part number, such as SS5Y5-41-08-01T, and the quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vdw-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VDW series solenoid valve used for?",
+          "a": "The SMC VDW series is a compact direct-operated solenoid valve, made as a 2-way valve (VDW10, VDW20 and VDW30 bodies) and a 3-way valve (VDW250 and VDW350), for switching small flows of air. This listing has 32 SMC part numbers, all normally closed single units."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC VDW code such as VDW350-5G-4-02N?",
+          "a": "VDW350 is the 3-way body, 5 the 24 V DC coil, G the grommet electrical entry and 4 SMC's orifice code, while 02N is a 1/4 NPT port. VDW23-6G-3-L has a 12 V DC coil and VDW250-3G-1-01N-Q a 110 V AC coil."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do SMC VDW valves have?",
+          "a": "The VDW valves here have M5 ports (VDW11-5G-2-M5, VDW250-5G-2-M5-A), 1/8 NPT (01N, as in VDW21-5G-1-01N), 1/4 NPT (02N, as in VDW350-5G-4-02N) and G 1/8 (01F) ports. The listing's NPT 1/8 option matches US-style fittings."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a 2-way or 3-way SMC VDW valve?",
+          "a": "Choose a 2-way VDW valve, such as VDW21 or VDW31, to open and shut a line, and a 3-way VDW250 or VDW350 to pressurise and then exhaust a small actuator or pilot port. Our [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3) shows the port layouts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can an SMC VDW solenoid valve switch?",
+          "a": "SMC rates each VDW valve by body size, orifice and coil, so the pressure differs across the 32 codes here, and this listing does not hold a figure for each. We confirm the maker's operating pressure for your exact VDW part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "Is the SMC VDW valve suitable for deionised water or oil-free duty?",
+          "a": "The standard VDW valves on this listing are not the oil-free or deionised water versions, according to the listed options. If the line needs either, tell us and we quote the SMC VDW variant built for that duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which electrical entry is listed for SMC VDW valves?",
+          "a": "The listing gives a grommet electrical entry on the IN side, which is SMC's standard for VDW, shown by the G in codes such as VDW23-5G-2. A bracket interchangeable with the older type is listed as a mounting option."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to SMC VDW solenoid valves?",
+          "a": "Use M5, 1/8 or 1/4 fittings to match the VDW port code, such as 1/8 NPT push-in fittings for VDW21-5G-1-01N. Miniature and inch push-in fittings and silencers are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an SMC VDW solenoid valve?",
+          "a": "Mount the VDW valve with flow from the IN port, fitted with the bracket if needed, and wire the grommet leads to the voltage in the code, 5 for 24 V DC. Fit a filter upstream so dirt does not hold the small orifice open."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VDW21 and VDW250 valves?",
+          "a": "VDW21 is a 2-way normally closed valve that simply opens and closes a line, while VDW250 is a 3-way valve with an exhaust port for supplying and venting a small actuator. Both use the same coil and port codes; for chemical liquids see the [SMC LVM series](/p/smc-lvm-series-chemical-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC VDW solenoid valves shipped from?",
+          "a": "We ship SMC VDW valves from our Dubai warehouse to buyers in the GCC, Africa, Asia and beyond. Solenoid valves are normally classed under HS heading 8481, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC VDW series valves in stock in Dubai?",
+          "a": "Yes. SMC VDW series valves are kept in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the VDW part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vep-series-proportional-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VEP series proportional valve used for?",
+          "a": "The SMC VEP series is an electro-pneumatic proportional valve that sets output pressure in proportion to an electrical signal, used where force must change during a machine cycle. This listing has 12 part numbers in VEP3120, VEP3121, VEP3140 and VEP3141 sizes, plus a VEF2120-2."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC VEP code such as VEP3121-1-03N?",
+          "a": "VEP3121 is the valve model, the -1 after it SMC's version code, and 03N the port, 3/8 NPT. VEP3120-1-02 has a 1/4 Rc port, and VEP3140-1-06 is the larger body with a 3/4 port."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do SMC VEP proportional valves have?",
+          "a": "The listing has VEP3120 and VEP3121 valves with 1/4 (02) and 3/8 (03) ports, VEP3121-1-03N and VEP3141-1-03N with 3/8 NPT, and VEP3140-1-06 with a 3/4 port. Size the port for the flow the actuator needs."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between SMC VEP3120 and VEP3140 proportional valves?",
+          "a": "Choose VEP3120 or VEP3121 for 1/4 and 3/8 ports and VEP3140 or VEP3141 for higher flow on a larger body with up to 3/4 ports. Our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) shows how to match flow to the actuator volume and cycle time."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure range does the SMC VEP proportional valve control?",
+          "a": "SMC sets the VEP pressure range by model and option code, and this listing does not hold a range for each part. We confirm the maker's supply pressure, set pressure range and signal for your exact VEP code with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the SMC VEP proportional valve need?",
+          "a": "Proportional valves are sensitive to dirt and water, so feed the VEP with well-filtered, dry air through a filter regulator. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the ISO 8573-1 classes."
+        },
+        {
+          "slot": "G",
+          "q": "What documents are available with SMC VEP proportional valves?",
+          "a": "No certificates are attached to this VEP listing. If you need a certificate of conformity, a calibration record or wiring data for the controller, name it on the enquiry and we request it from SMC."
+        },
+        {
+          "slot": "H",
+          "q": "What is the SMC VEF2120-2 on the VEP listing?",
+          "a": "VEF2120-2 is SMC's matching electro-pneumatic proportional valve for flow control, with a 3/8 base-mount size, while the VEP valves control pressure. Use VEF to vary actuator speed and VEP to vary force."
+        },
+        {
+          "slot": "I",
+          "q": "How should an SMC VEP proportional valve be installed?",
+          "a": "Install the VEP on its base with filtered air at the inlet, a stable signal supply and the exhaust port free. Keep the outlet line short to the actuator for fast response, and check the controller output against the VEP code before switching on."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VEP and SMC VEX valves?",
+          "a": "SMC VEP sets pressure electrically from a control signal, while the [SMC VEX series](/p/smc-vex-series-proportional-valve) is a high-flow power valve family that includes air-operated, solenoid and manual handle precision regulator versions. Choose VEP for electronic set-point control."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC VEP proportional valves shipped from?",
+          "a": "We ship SMC VEP valves from our Dubai warehouse to the GCC, Africa, Asia and other export markets. They are classed as pneumatic valves under HS subheading 8481.20, and the SMC country of origin is stated on our invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC VEP proportional valves in stock?",
+          "a": "Yes. We hold SMC VEP series proportional valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the VEP or VEF part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vex-series-proportional-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VEX series valve used for?",
+          "a": "The SMC VEX series is SMC's high-flow power valve family: pilot-operated regulators (VEX1) and 3-port and 5-port valves (VEX3, VEX5) for large air volumes. This listing has 99 part numbers in VEX1, VEX3 and VEX5 sizes, with FKM seals and a manual handle precision regulator option."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC VEX code such as VEX1501-045DZ-B?",
+          "a": "VEX1 is the regulator-type series and 5 the body size; codes that end in a coil block, such as 045DZ (04 for the 1/2 port, 5 for 24 V DC), are solenoid-piloted. VEX1500-04N, with no coil block, is air-operated with a 1/2 NPT port."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do SMC VEX valves on this listing have?",
+          "a": "Port codes run from 01 (1/8) and 02 (1/4) on VEX1100 and VEX1130 through 03 (3/8), 04 (1/2) and 06 (3/4) to 10 (1 inch), 12, 14 and 20 (2 inch) on VEX1700 and VEX1900 bodies. N marks NPT and F marks G threads."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose an SMC VEX valve size?",
+          "a": "Choose the VEX body by the flow the line needs: VEX1100 and VEX1300 for small ports, VEX1500 and VEX1700 for 1/2 to 1 inch, and VEX1900 or VEX5900 with 2 inch ports for the largest flows. Our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) shows how to check Cv."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC VEX valve have?",
+          "a": "SMC rates each VEX model by body size and operation type, and this listing does not hold a pressure figure for these 99 codes. We confirm the maker's supply and set pressure ranges for your exact VEX part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What seal material is used in SMC VEX valves?",
+          "a": "The listing gives FKM seals for the VEX series, which handle hotter air and many oils better than standard nitrile. For other media or high temperatures, send the conditions and we confirm the right VEX code with SMC."
+        },
+        {
+          "slot": "G",
+          "q": "What does the manual handle type mean for SMC VEX regulators?",
+          "a": "The manual handle type, such as VEX1133-02-BG and VEX1333-04N-BG, is a precision regulator version set by hand with a knob, listed here for precision control. Suffix letters add options, such as B for a bracket and G for a gauge."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and gauges suit SMC VEX valves?",
+          "a": "VEX valves take threaded fittings to their port code, from 1/8 to 2 inch, with N for NPT and F for G threads. Gauges, filters and lubricators to fit ahead of a VEX are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "How should an SMC VEX power valve be maintained?",
+          "a": "Feed the VEX with filtered air, keep the exhaust port free and silenced, and check that the pilot supply stays within SMC's range on air-operated versions. If output pressure drifts, clean the air supply before replacing seals."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC VEX1 and VEX3 valves?",
+          "a": "VEX1 valves such as VEX1500-04N are regulator-type power valves that control output pressure, while VEX3 valves such as VEX3220-02F and VEX3320-04N are 3-port power valves that switch air on and off. For electronic pressure set-points see the [SMC VEP series](/p/smc-vep-series-proportional-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC VEX series valves shipped from?",
+          "a": "We ship SMC VEX valves from our Dubai warehouse to buyers in the GCC, Africa, Asia and beyond. They are classed as pneumatic valves under HS subheading 8481.20, and the SMC country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC VEX series valves in Dubai?",
+          "a": "Yes. We keep SMC VEX series valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the VEX part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

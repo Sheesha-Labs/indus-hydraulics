@@ -1,0 +1,1721 @@
+{
+  "family": "pneumatic-cylinders-07",
+  "extraFacts": [
+    {
+      "fact": "Parker's SR series stainless-steel round-body air cylinder is rated for 250 psi air service; standard seals operate from -10°F to +165°F, about -23°C to +74°C. Nose, pivot and foot-type mountings are offered, and the stainless body is a non-repairable design.",
+      "source": "Parker Pneumatic Division catalogue 0900P-7, Round Body Cylinders (SR / SRM series) (parker.com)"
+    },
+    {
+      "fact": "In the SR series model code the first figure is the bore in inches (e.g. 1.50 for 1-1/2 inch) and the last figure is the stroke in inches (e.g. 04.00 for 4 inch); this matches the stroke in the size-table row for every SR, SRD, SRG, SRGM and SRM code listed.",
+      "source": "Indus size tables (partNumber vs strokeIn) for the Parker SR family; Parker catalogue 0900P-7"
+    },
+    {
+      "fact": "In the Indus Parker SRM listings the specification reads Features: Switch Ready, Body Material: Stainless Steel, End Cap Material: Aluminum and Cushion Type: None; the M suffix marks the switch-ready magnetic-piston version of the SR cylinder.",
+      "source": "Indus listing specifications for Parker SRM Series Air Cylinders (1-1/16 and 1-1/2 inch bore)"
+    },
+    {
+      "fact": "The Parker SRG listing describes a double-acting stainless steel pneumatic cylinder with a LipSeal piston, 303 stainless steel head and cap, aluminium piston, oil-impregnated bronze rod bushing and stainless steel piston rod, non-repairable, with 2 x 1/8 inch NPT ports and a 1/4-28 UNF male rod thread on the 3/4 inch bore, ambient -10°F to +165°F. The SRGM adds a piston magnet and lists ambient 14°F to 140°F, about -10°C to +60°C.",
+      "source": "Indus listing specifications for Parker SRG Series (3/4 inch bore) and SRGM Series (1-1/16 and 3/4 inch bore) Air Cylinders"
+    },
+    {
+      "fact": "100 psi is about 6.9 bar and 250 psi is about 17 bar (1 bar = 14.5038 psi).",
+      "source": "Unit conversion, 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "Linear-acting pneumatic power engines (air cylinders) are classified under HS subheading 8412.31.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.12, subheading 8412.31"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-1-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 1/2\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 1/2\" bore, listed as 203 part numbers with strokes from 0.5\" to 48\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00005971 work in the Parker SR series 1 1/2\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00005971 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 5\" stroke with nose mounting. All 203 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 1/2\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 48\" across the 203 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 1/2\" bore cylinder with 1P part numbers?",
+          "a": "The 203 rows of the Parker SR series 1 1/2\" bore cylinder with 1P part numbers listing show nose, pivot/nose, pivot/nose (with pivot pin) and front block mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 1/2\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 1 1/2\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, except a few at 100 psi, about 6.9 bar, so read the row for your part number. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 1/2\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 1/2\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 1/2\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (203 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 1/2\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 1 1/2\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00005971?",
+          "a": "Mount 1PSR00005971 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 1/2\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/2\" bore; this SR listing holds 203 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-1-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 1/2\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 1 1/2\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 1/2\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 1 1/2\" bore cylinder with 1P part numbers range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-1-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 1/4\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 1/4\" bore, listed as 131 part numbers with strokes from 0.5\" to 42\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00007673 work in the Parker SR series 1 1/4\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00007673 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 17\" stroke with pivot, nose mounting. All 131 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 1/4\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 42\" across the 131 part numbers in this listing, and 1\", 2\", 3\" and 6\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 1/4\" bore cylinder with 1P part numbers?",
+          "a": "The 131 rows of the Parker SR series 1 1/4\" bore cylinder with 1P part numbers listing show pivot/nose, nose, threaded both ends and pivot mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 1/4\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 1 1/4\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 1/4\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 1/4\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 1/4\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (131 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 1/4\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 1 1/4\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00007673?",
+          "a": "Install 1PSR00007673 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 1/4\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/4\" bore; this SR listing holds 131 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-1-4-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 1/4\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 1 1/4\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 1/4\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. The Parker SR series 1 1/4\" bore cylinder with 1P part numbers range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-1-3-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 3/4\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 3/4\" bore, listed as 24 part numbers with strokes from 1\" to 32\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00008783 work in the Parker SR series 1 3/4\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00008783 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 2\" stroke with nose mounting. All 24 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 3/4\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 1\" to 32\" across the 24 part numbers in this listing, and 1\", 2\", 3\" and 6.5\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 3/4\" bore cylinder with 1P part numbers?",
+          "a": "The 24 rows of the Parker SR series 1 3/4\" bore cylinder with 1P part numbers listing show nose, pivot/nose and pivot mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 3/4\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 1 3/4\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 3/4\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 3/4\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 3/4\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (24 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 3/4\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 1 3/4\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00008783?",
+          "a": "Mount 1PSR00008783 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 3/4\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 3/4\" bore; this SR listing holds 24 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-3-4-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 3/4\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 1 3/4\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 3/4\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 1 3/4\" bore cylinder with 1P part numbers range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 2 1/2\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 2 1/2\" bore, listed as 45 part numbers with strokes from 1\" to 34\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00009375 work in the Parker SR series 2 1/2\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00009375 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 12\" stroke with pivot, nose mounting. All 45 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 2 1/2\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 1\" to 34\" across the 45 part numbers in this listing, and 3\", 5\", 6\" and 13\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 2 1/2\" bore cylinder with 1P part numbers?",
+          "a": "The 45 rows of the Parker SR series 2 1/2\" bore cylinder with 1P part numbers listing show pivot/nose and nose mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 2 1/2\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 2 1/2\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 2 1/2\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 2 1/2\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 2 1/2\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (45 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 2 1/2\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 2 1/2\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00009375?",
+          "a": "Install 1PSR00009375 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 2 1/2\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 2 1/2\" bore; this SR listing holds 45 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-2-1-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 2 1/2\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 2 1/2\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 2 1/2\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 2 1/2\" bore cylinder with 1P part numbers range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 2\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 2\" bore, listed as 131 part numbers with strokes from 1\" to 48\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00007675 work in the Parker SR series 2\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00007675 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 1\" stroke with nose mounting. All 131 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 2\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 1\" to 48\" across the 131 part numbers in this listing, and 1\", 2\", 3\" and 6\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 2\" bore cylinder with 1P part numbers?",
+          "a": "The 131 rows of the Parker SR series 2\" bore cylinder with 1P part numbers listing show pivot/nose, nose, threaded both ends and pivot mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 2\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 2\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, except a few at 100 psi, about 6.9 bar, so read the row for your part number. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 2\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 2\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 2\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (131 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 2\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 2\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00007675?",
+          "a": "Mount 1PSR00007675 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 2\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 2\" bore; this SR listing holds 131 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 2\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 2\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 2\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. The Parker SR series 2\" bore cylinder with 1P part numbers range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-3-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 3/4\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 3/4\" bore, listed as 132 part numbers with strokes from 0.5\" to 24.61\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00007997 work in the Parker SR series 3/4\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00007997 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 2.25\" stroke with nose mounting. All 132 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 3/4\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 24.61\" across the 132 part numbers in this listing, and 0.5\", 1\", 2\" and 3\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 3/4\" bore cylinder with 1P part numbers?",
+          "a": "The 132 rows of the Parker SR series 3/4\" bore cylinder with 1P part numbers listing show nose, pivot/nose, pivot/nose (with pivot pin) and pivot mountings, with rod diameters of 0.25\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 3/4\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 3/4\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, except a few at 100 psi, about 6.9 bar, so read the row for your part number. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 3/4\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 3/4\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 3/4\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (132 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 3/4\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 3/4\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00007997?",
+          "a": "Install 1PSR00007997 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 3/4\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 3/4\" bore; this SR listing holds 132 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-3-4-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 3/4\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 3/4\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 3/4\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 3/4\" bore cylinder with 1P part numbers range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-3-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 3\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 3\" bore, listed as 38 part numbers with strokes from 1.5\" to 16\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00007859 work in the Parker SR series 3\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00007859 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 9.5\" stroke with threaded both ends mounting. All 38 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 3\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 1.5\" to 16\" across the 38 part numbers in this listing, and 3.15\", 4\", 6\" and 8\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 3\" bore cylinder with 1P part numbers?",
+          "a": "The 38 rows of the Parker SR series 3\" bore cylinder with 1P part numbers listing show pivot/nose, nose and threaded both ends mountings, with rod diameters of 0.75\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 3\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 3\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 3\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 3\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 3\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (38 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 3\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 3\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00007859?",
+          "a": "Mount 1PSR00007859 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 3\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 3\" bore; this SR listing holds 38 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-3-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 3\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 3\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 3\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 3\" bore cylinder with 1P part numbers range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-5-16-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 5/16\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 5/16\" bore, listed as 3 part numbers with strokes from 0.5\" to 1.25\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00009576 work in the Parker SR series 5/16\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00009576 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 0.5\" stroke with nose mounting. All 3 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 5/16\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 1.25\" across the 3 part numbers in this listing, and 0.5\" and 1.25\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 5/16\" bore cylinder with 1P part numbers?",
+          "a": "The 3 rows of the Parker SR series 5/16\" bore cylinder with 1P part numbers listing show nose mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 5/16\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 5/16\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 5/16\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 5/16\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 5/16\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (3 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 5/16\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 5/16\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00009576?",
+          "a": "Install 1PSR00009576 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 3 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 5/16\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 5/16\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 5/16\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. The Parker SR series 5/16\" bore cylinder with 1P part numbers range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-7-16-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 7/16\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 7/16\" bore, listed as 12 part numbers with strokes from 0.5\" to 1\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00009498 work in the Parker SR series 7/16\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00009498 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 0.5\" stroke with nose mounting. All 12 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 7/16\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 1\" across the 12 part numbers in this listing, and 0.5\", 0.69\" and 1\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 7/16\" bore cylinder with 1P part numbers?",
+          "a": "The 12 rows of the Parker SR series 7/16\" bore cylinder with 1P part numbers listing show nose, pivot/nose (with pivot pin) and pivot mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 7/16\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 7/16\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 7/16\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 7/16\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 7/16\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (12 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 7/16\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 7/16\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00009498?",
+          "a": "Mount 1PSR00009498 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges (Parker SR Series Air Cylinders, 7/16\" Bore, 1P Part Numbers)?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 12 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 7/16\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 7/16\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 7/16\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 7/16\" bore cylinder with 1P part numbers range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-7-8-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 7/8\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 7/8\" bore, listed as 22 part numbers with strokes from 0.5\" to 6\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00007613 work in the Parker SR series 7/8\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00007613 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 2\" stroke with nose mounting. All 22 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 7/8\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 6\" across the 22 part numbers in this listing, and 1\", 2\", 3\" and 5\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 7/8\" bore cylinder with 1P part numbers?",
+          "a": "The 22 rows of the Parker SR series 7/8\" bore cylinder with 1P part numbers listing show nose, pivot/nose, pivot and threaded both ends mountings, with rod diameters of 0.25\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 7/8\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 7/8\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 7/8\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 7/8\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 7/8\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (22 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 7/8\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 7/8\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00007613?",
+          "a": "Install 1PSR00007613 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges (Parker SR Series Air Cylinders, 7/8\" Bore, 1P Part Numbers)?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 22 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 7/8\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 7/8\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 7/8\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 7/8\" bore cylinder with 1P part numbers range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-9-16-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 9/16\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 9/16\" bore, listed as 30 part numbers with strokes from 0.5\" to 7\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00008638 work in the Parker SR series 9/16\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00008638 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 0.5\" stroke with nose mounting. All 30 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 9/16\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 7\" across the 30 part numbers in this listing, and 0.5\", 0.63\", 1\" and 3\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 9/16\" bore cylinder with 1P part numbers?",
+          "a": "The 30 rows of the Parker SR series 9/16\" bore cylinder with 1P part numbers listing show nose, pivot/nose and threaded both ends mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 9/16\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 9/16\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 9/16\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 9/16\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 9/16\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (30 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 9/16\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 9/16\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00008638?",
+          "a": "Mount 1PSR00008638 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 9/16\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 9/16\" bore; this SR listing holds 30 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-9-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 9/16\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 9/16\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 9/16\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. The Parker SR series 9/16\" bore cylinder with 1P part numbers range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-2-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 2 1/2\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 2 1/2\" bore, listed as 200 part numbers with strokes from 0.13\" to 55\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 2.50DSR00.13?",
+          "a": "The first figure in 2.50DSR00.13 is the bore, 2.50 inch, and the last figure, 00.13, is the stroke in inches. The size table lists it with nose mounting. Another listed code is 2.50DXPSRVYC14.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 2 1/2\" bore air cylinder?",
+          "a": "Strokes run from 0.13\" to 55\" across the 200 part numbers in this listing, and 2\", 3\", 4\" and 20\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 2 1/2\" bore air cylinder?",
+          "a": "The 200 rows of the Parker SR series 2 1/2\" bore air cylinder listing show pivot/nose, nose, nose and nose/pivot mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 2 1/2\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SR series 2 1/2\" bore air cylinder listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 2 1/2\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 2 1/2\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 2 1/2\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (200 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 2 1/2\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 2 1/2\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 2.50DSR00.13?",
+          "a": "Install 2.50DSR00.13 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 2 1/2\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 2 1/2\" bore; this SR listing holds 200 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-2-1-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 2 1/2\" bore air cylinder?",
+          "a": "The Parker SR series 2 1/2\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 2 1/2\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 2 1/2\" bore air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 2\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 2\" bore, listed as 334 part numbers with strokes from 0.13\" to 50\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 2.00DSR03.00?",
+          "a": "The first figure in 2.00DSR03.00 is the bore, 2.00 inch, and the last figure, 03.00, is the stroke in inches. The size table lists it with nose mounting as a double acting build. Another listed code is 2.00CDXPSRC16.06; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 2\" bore air cylinder?",
+          "a": "Strokes run from 0.13\" to 50\" across the 334 part numbers in this listing, and 1.5\", 2\", 4\" and 6\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 2\" bore air cylinder?",
+          "a": "The 334 rows of the Parker SR series 2\" bore air cylinder listing show pivot/nose, nose, pivot and nose mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 2\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 2\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 2\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 2\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 2\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (334 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 2\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 2\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 2.00DSR03.00?",
+          "a": "Mount 2.00DSR03.00 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 2\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 2\" bore; this SR listing holds 334 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 2\" bore air cylinder?",
+          "a": "The Parker SR series 2\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 2\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 2\" bore air cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-3-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 3/4\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 3/4\" bore, listed as 337 part numbers with strokes from 0.05\" to 37\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 0.75BRDSR02.00?",
+          "a": "The first figure in 0.75BRDSR02.00 is the bore, 0.75 inch, and the last figure, 02.00, is the stroke in inches. The size table lists it with rear block mounting as a double acting build. Another listed code is 0.75CDSRC10.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 3/4\" bore air cylinder?",
+          "a": "Strokes run from 0.05\" to 37\" across the 337 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 3/4\" bore air cylinder?",
+          "a": "The 337 rows of the Parker SR series 3/4\" bore air cylinder listing show nose, pivot/nose, pivot/nose (with pivot pin) and front block mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 3/4\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 3/4\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 3/4\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 3/4\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 3/4\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (337 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 3/4\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 3/4\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 0.75BRDSR02.00?",
+          "a": "Install 0.75BRDSR02.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 3/4\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 3/4\" bore; this SR listing holds 337 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-3-4-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 3/4\" bore air cylinder?",
+          "a": "The Parker SR series 3/4\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 3/4\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker SR series 3/4\" bore air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-3-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 3\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 3\" bore, listed as 156 part numbers with strokes from 0.15\" to 40\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 3.00DXPSR00.15?",
+          "a": "The first figure in 3.00DXPSR00.15 is the bore, 3.00 inch, and the last figure, 00.15, is the stroke in inches. The size table lists it with pivot, nose mounting. Another listed code is 3.00CDXPSRY13.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 3\" bore air cylinder?",
+          "a": "Strokes run from 0.15\" to 40\" across the 156 part numbers in this listing, and 1\", 3\", 4\" and 24\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 3\" bore air cylinder?",
+          "a": "The 156 rows of the Parker SR series 3\" bore air cylinder listing show pivot/nose, nose, nose and nose/pivot mountings, with rod diameters of 0.75\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 3\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SR series 3\" bore air cylinder listing carry 250 psi, about 17 bar, for compressed air. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 3\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 3\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 3\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (156 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 3\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 3\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 3.00DXPSR00.15?",
+          "a": "Mount 3.00DXPSR00.15 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 3\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 3\" bore; this SR listing holds 156 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-3-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 3\" bore air cylinder?",
+          "a": "The Parker SR series 3\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 3\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 3\" bore air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-5-16-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 5/16\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 5/16\" bore, listed as 49 part numbers with strokes from 0.2\" to 10\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 0.31BFDSR01.00?",
+          "a": "The first figure in 0.31BFDSR01.00 is the bore, 0.31 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with front block mounting as a double acting build. Another listed code is 0.31DSR04.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 5/16\" bore air cylinder?",
+          "a": "Strokes run from 0.2\" to 10\" across the 49 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 5/16\" bore air cylinder?",
+          "a": "The 49 rows of the Parker SR series 5/16\" bore air cylinder listing show nose, pivot/nose, nose and front block mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 5/16\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 5/16\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 5/16\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 5/16\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 5/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (49 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 5/16\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 5/16\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 0.31BFDSR01.00?",
+          "a": "Install 0.31BFDSR01.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges (Parker SR Series Air Cylinders, 5/16 Inch Bore)?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 49 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 5/16\" bore air cylinder?",
+          "a": "The Parker SR series 5/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 5/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 5/16\" bore air cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-7-16-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 7/16\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 7/16\" bore, listed as 132 part numbers with strokes from 0.15\" to 15\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 0.44BFDSR01.00?",
+          "a": "The first figure in 0.44BFDSR01.00 is the bore, 0.44 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with front block mounting as a double acting build. Another listed code is 0.44DSR05.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 7/16\" bore air cylinder?",
+          "a": "Strokes run from 0.15\" to 15\" across the 132 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 7/16\" bore air cylinder?",
+          "a": "The 132 rows of the Parker SR series 7/16\" bore air cylinder listing show nose, pivot/nose, nose and nose/pivot mountings, with rod diameters of 0.1875\" and 0.188\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 7/16\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 7/16\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 7/16\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 7/16\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 7/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (132 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 7/16\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 7/16\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 0.44BFDSR01.00?",
+          "a": "Mount 0.44BFDSR01.00 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges (Parker SR Series Air Cylinders, 7/16 Inch Bore)?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 132 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 7/16\" bore air cylinder?",
+          "a": "The Parker SR series 7/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 7/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker SR series 7/16\" bore air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-7-8-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 7/8\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 7/8\" bore, listed as 108 part numbers with strokes from 0.12\" to 32\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 0.88DSR04.00?",
+          "a": "The first figure in 0.88DSR04.00 is the bore, 0.88 inch, and the last figure, 04.00, is the stroke in inches. The size table lists it with nose mounting as a double acting build. Another listed code is 0.88DXPSR07.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 7/8\" bore air cylinder?",
+          "a": "Strokes run from 0.12\" to 32\" across the 108 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 7/8\" bore air cylinder?",
+          "a": "The 108 rows of the Parker SR series 7/8\" bore air cylinder listing show nose, pivot/nose, nose and pivot mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 7/8\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 7/8\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 7/8\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 7/8\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 7/8\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (108 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 7/8\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 7/8\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 0.88DSR04.00?",
+          "a": "Install 0.88DSR04.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges (Parker SR Series Air Cylinders, 7/8 Inch Bore)?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 108 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 7/8\" bore air cylinder?",
+          "a": "The Parker SR series 7/8\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 7/8\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 7/8\" bore air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-9-16-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 9/16\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 9/16\" bore, listed as 98 part numbers with strokes from 0.05\" to 22\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 0.56PSR0.500?",
+          "a": "The first figure in 0.56PSR0.500 is the bore, 0.56 inch, and the last figure, 0.500, is the stroke in inches. The size table lists it with pivot mounting as a single acting build. Another listed code is 0.56NSR05.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 9/16\" bore air cylinder?",
+          "a": "Strokes run from 0.05\" to 22\" across the 98 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 9/16\" bore air cylinder?",
+          "a": "The 98 rows of the Parker SR series 9/16\" bore air cylinder listing show pivot/nose, nose, nose and nose/pivot mountings, with rod diameters of 0.1875\" and 0.188\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 9/16\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 9/16\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 9/16\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 9/16\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 9/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (98 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 9/16\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 9/16\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 0.56PSR0.500?",
+          "a": "Mount 0.56PSR0.500 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 9/16\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 9/16\" bore; this SR listing holds 98 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-9-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 9/16\" bore air cylinder?",
+          "a": "The Parker SR series 9/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 9/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 9/16\" bore air cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-srd-series-air-cylinders-1-1-16-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SRD series 1 1/16\" bore air cylinder?",
+          "a": "It is a Parker SRD Series round-body air cylinder with a 1 1/16\" bore, listed as 16 part numbers with strokes from 1\" to 26.25\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SRD model code such as 1.06DXPSRDW01.00?",
+          "a": "The first figure in 1.06DXPSRDW01.00 is the bore, 1.06 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with pivot, nose mounting. Another listed code is 1.06DXPSRDW09.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SRD series 1 1/16\" bore air cylinder?",
+          "a": "Strokes run from 1\" to 26.25\" across the 16 part numbers in this listing, and 1\", 1.29\", 4\" and 6\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SRD series 1 1/16\" bore air cylinder?",
+          "a": "The 16 rows of the Parker SRD series 1 1/16\" bore air cylinder listing show pivot/nose and nose mountings, with rod diameters of 0.3125\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SRD series 1 1/16\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SRD series 1 1/16\" bore air cylinder listing carry 100 psi, about 6.9 bar, for compressed air. The listing does not publish a temperature range, so we confirm it from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SRD series 1 1/16\" bore air cylinder made of and what air does it need?",
+          "a": "The SRD listing for the Parker SRD series 1 1/16\" bore air cylinder does not state materials, so tell us the environment and we confirm the build from Parker data. Run it on filtered, regulated air with a filter-regulator ahead of the valve."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SRD series 1 1/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SRD listing (16 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SRD series 1 1/16\" bore air cylinder have?",
+          "a": "The listing for the Parker SRD series 1 1/16\" bore air cylinder does not give a port thread, so we confirm it for your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SRD cylinder such as 1.06DXPSRDW01.00?",
+          "a": "Install 1.06DXPSRDW01.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SRD 1 1/16\" cylinder differ from the SR version?",
+          "a": "Both are Parker round-body cylinders in a 1 1/16\" bore; this SRD listing holds 16 part numbers, while the SR range is listed separately with its own codes. See the [SR listing](/p/parker-sr-series-air-cylinders-1-1-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SRD series 1 1/16\" bore air cylinder?",
+          "a": "The Parker SRD series 1 1/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SRD series 1 1/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker SRD series 1 1/16\" bore air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-srd-series-air-cylinders-1-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SRD series 1 1/2\" bore air cylinder?",
+          "a": "It is a Parker SRD Series round-body air cylinder with a 1 1/2\" bore, listed as 19 part numbers with strokes from 1\" to 16\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SRD model code such as 1.50DXPSRDB01.00?",
+          "a": "The first figure in 1.50DXPSRDB01.00 is the bore, 1.50 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with pivot, nose mounting. Another listed code is 1.50DXPSRD08.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SRD series 1 1/2\" bore air cylinder?",
+          "a": "Strokes run from 1\" to 16\" across the 19 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SRD series 1 1/2\" bore air cylinder?",
+          "a": "The 19 rows of the Parker SRD series 1 1/2\" bore air cylinder listing show pivot/nose and nose mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SRD series 1 1/2\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SRD series 1 1/2\" bore air cylinder listing carry 100 psi, about 6.9 bar, for compressed air. The listing does not publish a temperature range, so we confirm it from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SRD series 1 1/2\" bore air cylinder made of and what air does it need?",
+          "a": "The SRD listing for the Parker SRD series 1 1/2\" bore air cylinder does not state materials, so tell us the environment and we confirm the build from Parker data. Run it on filtered, regulated air with a filter-regulator ahead of the valve."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SRD series 1 1/2\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SRD listing (19 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SRD series 1 1/2\" bore air cylinder have?",
+          "a": "The listing for the Parker SRD series 1 1/2\" bore air cylinder does not give a port thread, so we confirm it for your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SRD cylinder such as 1.50DXPSRDB01.00?",
+          "a": "Mount 1.50DXPSRDB01.00 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SRD 1 1/2\" cylinder differ from the SR version?",
+          "a": "Both are Parker round-body cylinders in a 1 1/2\" bore; this SRD listing holds 19 part numbers, while the SR range is listed separately with its own codes. See the [SR listing](/p/parker-sr-series-air-cylinders-1-1-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SRD series 1 1/2\" bore air cylinder?",
+          "a": "The Parker SRD series 1 1/2\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SRD series 1 1/2\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker SRD series 1 1/2\" bore air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-srd-series-air-cylinders-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SRD series 2\" bore air cylinder?",
+          "a": "It is a Parker SRD Series round-body air cylinder with a 2\" bore, listed as 18 part numbers with strokes from 1\" to 24.5\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SRD model code such as 2.00DSRD01.00?",
+          "a": "The first figure in 2.00DSRD01.00 is the bore, 2.00 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with nose mounting. Another listed code is 2.00DXPSRDB12.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SRD series 2\" bore air cylinder?",
+          "a": "Strokes run from 1\" to 24.5\" across the 18 part numbers in this listing, and 1\", 2\", 15\" and 18\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SRD series 2\" bore air cylinder?",
+          "a": "The 18 rows of the Parker SRD series 2\" bore air cylinder listing show pivot/nose and nose mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SRD series 2\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SRD series 2\" bore air cylinder listing carry 100 psi, about 6.9 bar, for compressed air. The listing does not publish a temperature range, so we confirm it from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SRD series 2\" bore air cylinder made of and what air does it need?",
+          "a": "The SRD listing for the Parker SRD series 2\" bore air cylinder does not state materials, so tell us the environment and we confirm the build from Parker data. Run it on filtered, regulated air with a filter-regulator ahead of the valve."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SRD series 2\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SRD listing (18 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SRD series 2\" bore air cylinder have?",
+          "a": "The listing for the Parker SRD series 2\" bore air cylinder does not give a port thread, so we confirm it for your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SRD cylinder such as 2.00DSRD01.00?",
+          "a": "Install 2.00DSRD01.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SRD 2\" cylinder differ from the SR version?",
+          "a": "Both are Parker round-body cylinders in a 2\" bore; this SRD listing holds 18 part numbers, while the SR range is listed separately with its own codes. See the [SR listing](/p/parker-sr-series-air-cylinders-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SRD series 2\" bore air cylinder?",
+          "a": "The Parker SRD series 2\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SRD series 2\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker SRD series 2\" bore air cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-srd-series-air-cylinders-3-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SRD series 3/4\" bore air cylinder?",
+          "a": "It is a Parker SRD Series round-body air cylinder with a 3/4\" bore, listed as 10 part numbers with strokes from 0.5\" to 26\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SRD model code such as 0.75DXPSRDV01.00?",
+          "a": "The first figure in 0.75DXPSRDV01.00 is the bore, 0.75 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with pivot, nose mounting. Another listed code is 0.75DXPSRD00.50; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SRD series 3/4\" bore air cylinder?",
+          "a": "Strokes run from 0.5\" to 26\" across the 10 part numbers in this listing, and 0.5\", 1\", 2\" and 2.5\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SRD series 3/4\" bore air cylinder?",
+          "a": "The 10 rows of the Parker SRD series 3/4\" bore air cylinder listing show pivot/nose and nose mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SRD series 3/4\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SRD series 3/4\" bore air cylinder listing carry 100 psi, about 6.9 bar, for compressed air. The listing does not publish a temperature range, so we confirm it from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SRD series 3/4\" bore air cylinder made of and what air does it need?",
+          "a": "The SRD listing for the Parker SRD series 3/4\" bore air cylinder does not state materials, so tell us the environment and we confirm the build from Parker data. Run it on filtered, regulated air with a filter-regulator ahead of the valve."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SRD series 3/4\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SRD listing (10 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SRD series 3/4\" bore air cylinder have?",
+          "a": "The listing for the Parker SRD series 3/4\" bore air cylinder does not give a port thread, so we confirm it for your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SRD cylinder such as 0.75DXPSRDV01.00?",
+          "a": "Mount 0.75DXPSRDV01.00 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SRD 3/4\" cylinder differ from the SR version?",
+          "a": "Both are Parker round-body cylinders in a 3/4\" bore; this SRD listing holds 10 part numbers, while the SR range is listed separately with its own codes. See the [SR listing](/p/parker-sr-series-air-cylinders-3-4-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SRD series 3/4\" bore air cylinder?",
+          "a": "The Parker SRD series 3/4\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SRD series 3/4\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker SRD series 3/4\" bore air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-srd-series-air-cylinders-9-16-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SRD series 9/16\" bore air cylinder?",
+          "a": "It is a Parker SRD Series round-body air cylinder with a 9/16\" bore, listed as 4 part numbers with strokes from 2\" to 11\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SRD model code such as 0.56DXPSRD02.00?",
+          "a": "The first figure in 0.56DXPSRD02.00 is the bore, 0.56 inch, and the last figure, 02.00, is the stroke in inches. The size table lists it with pivot, nose mounting. Another listed code is 0.56DXPSRD02.50; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SRD series 9/16\" bore air cylinder?",
+          "a": "Strokes run from 2\" to 11\" across the 4 part numbers in this listing, and 2\", 2.5\" and 11\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SRD series 9/16\" bore air cylinder?",
+          "a": "The 4 rows of the Parker SRD series 9/16\" bore air cylinder listing show pivot/nose and nose mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SRD series 9/16\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SRD series 9/16\" bore air cylinder listing carry 100 psi, about 6.9 bar, for compressed air. The listing does not publish a temperature range, so we confirm it from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SRD series 9/16\" bore air cylinder made of and what air does it need?",
+          "a": "The SRD listing for the Parker SRD series 9/16\" bore air cylinder does not state materials, so tell us the environment and we confirm the build from Parker data. Run it on filtered, regulated air with a filter-regulator ahead of the valve."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SRD series 9/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SRD listing (4 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SRD series 9/16\" bore air cylinder have?",
+          "a": "The listing for the Parker SRD series 9/16\" bore air cylinder does not give a port thread, so we confirm it for your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SRD cylinder such as 0.56DXPSRD02.00?",
+          "a": "Install 0.56DXPSRD02.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SRD 9/16\" cylinder differ from the SR version?",
+          "a": "Both are Parker round-body cylinders in a 9/16\" bore; this SRD listing holds 4 part numbers, while the SR range is listed separately with its own codes. See the [SR listing](/p/parker-sr-series-air-cylinders-9-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SRD series 9/16\" bore air cylinder?",
+          "a": "The Parker SRD series 9/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SRD series 9/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker SRD series 9/16\" bore air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-srdm-series-round-body-pneumatic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SRDM series round body cylinder?",
+          "a": "It is a Parker SRDM Series round-body air cylinder, listed as 37 part numbers with strokes from 1\" to 24\" across several bore sizes. Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SRDM model code such as 0.56DSRDM01.00?",
+          "a": "The first figure in 0.56DSRDM01.00 is the bore, 0.56 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with nose mounting. Another listed code is 1.50DXPSRDM07.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SRDM series round body cylinder?",
+          "a": "Strokes run from 1\" to 24\" across the 37 part numbers in this listing, and 1\", 2\", 3\" and 3.19\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SRDM series round body cylinder?",
+          "a": "The 37 rows of the Parker SRDM series round body cylinder listing show pivot/nose and nose mountings, with rod diameters of 0.3125\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SRDM series round body cylinder have?",
+          "a": "The rated rows of this Parker SRDM series round body cylinder listing carry 100 psi, about 6.9 bar, for compressed air. The listing does not publish a temperature range, so we confirm it from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SRDM series round body cylinder made of and what air does it need?",
+          "a": "The SRDM listing for the Parker SRDM series round body cylinder does not state materials, so tell us the environment and we confirm the build from Parker data. Run it on filtered, regulated air with a filter-regulator ahead of the valve."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SRDM series round body cylinder follow a standard or carry certificates?",
+          "a": "This SRDM listing (37 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SRDM series round body cylinder have?",
+          "a": "The listing for the Parker SRDM series round body cylinder does not give a port thread, so we confirm it for your part number. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SRDM cylinder such as 0.56DSRDM01.00?",
+          "a": "Mount 0.56DSRDM01.00 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SRDM multi-bore cylinder differ from the SRD version?",
+          "a": "Both are Parker round-body cylinders; this SRDM listing holds 37 part numbers, while the SRD range is listed separately with its own codes. See the [SRD listing](/p/parker-srd-series-air-cylinders-1-1-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SRDM series round body cylinder?",
+          "a": "The Parker SRDM series round body cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SRDM series round body cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker SRDM series round body cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-srg-series-air-cylinders-1-1-16-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SRG series 1 1/16\" bore air cylinder?",
+          "a": "It is a Parker SRG Series LipSeal stainless-steel round-body air cylinder with a 1 1/16\" bore, listed as 22 part numbers with strokes from 0.5\" to 19\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SRG model code such as 1.06DXPSRGVY00.63?",
+          "a": "The first figure in 1.06DXPSRGVY00.63 is the bore, 1.06 inch, and the last figure, 00.63, is the stroke in inches. The size table lists it with pivot, nose mounting. Another listed code is 1.06DXPSRGVY12.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SRG series 1 1/16\" bore air cylinder?",
+          "a": "Strokes run from 0.5\" to 19\" across the 22 part numbers in this listing, and 0.63\", 2\", 4\" and 4.5\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SRG series 1 1/16\" bore air cylinder?",
+          "a": "The 22 rows of the Parker SRG series 1 1/16\" bore air cylinder listing show pivot/nose and nose mountings, with rod diameters of 0.3125\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SRG series 1 1/16\" bore air cylinder have?",
+          "a": "The rated rows of this Parker SRG series 1 1/16\" bore air cylinder listing carry 250 psi, about 17 bar, for compressed air. The specification gives an ambient range of -10°F to +165°F, about -23°C to +74°C."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SRG series 1 1/16\" bore air cylinder made of and what air does it need?",
+          "a": "Parker describes the SRG, here the Parker SRG series 1 1/16\" bore air cylinder, as a stainless steel cylinder body with an aluminium piston, oil-impregnated bronze rod bushing and stainless steel piston rod, with a LipSeal piston. Run it on filtered, regulated air."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SRG series 1 1/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SRG listing (22 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SRG series 1 1/16\" bore air cylinder have?",
+          "a": "Parker lists 1/8\" NPT ports and a male rod thread on the SRG and SRGM, including this Parker SRG series 1 1/16\" bore air cylinder; match fittings and rod accessories to those threads. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SRG cylinder such as 1.06DXPSRGVY00.63?",
+          "a": "Install 1.06DXPSRGVY00.63 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SRG 1 1/16\" cylinder differ from the SRGM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/16\" bore; this SRG listing holds 22 part numbers, while the SRGM range is listed separately with its own codes. See the [SRGM listing](/p/parker-srgm-series-air-cylinders-1-1-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SRG series 1 1/16\" bore air cylinder?",
+          "a": "The Parker SRG series 1 1/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SRG series 1 1/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker SRG series 1 1/16\" bore air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "family": "pressure-washer-waterjet-fittings",
+  "extraFacts": [
+    {
+      "fact": "BSP (G) parallel threads, as in the 3/8 inch BSP option, are covered by ISO 228-1 and are not sealed on the thread.",
+      "source": "ISO 228-1"
+    }
+  ],
+  "products": [
+    {
+      "slug": "pressure-washer-gun-insert-karcher-interchange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pressure Washer Gun Insert — Kärcher Interchange used for?",
+          "a": "The Pressure Washer Gun Insert — Kärcher Interchange is a straight hose fitting that crimps onto a pressure washer hose and plugs into the spray gun as a bayonet gun insert. It is made to Kärcher-pattern dimensions as an interchange part, and it is not an OEM Kärcher component and is not sold as one."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to confirm before ordering the Pressure Washer Gun Insert — Kärcher Interchange?",
+          "a": "Confirm the machine series first, because the bayonet profile changed across generations and an insert of the wrong generation will not fit the gun socket. Then give the hose bore, which the listing covers from DN6 to DN8 (1/4 inch to 5/16 inch), and the overall length of the finished hose."
+        },
+        {
+          "slot": "D",
+          "q": "What hose bore does the Pressure Washer Gun Insert — Kärcher Interchange fit?",
+          "a": "The Pressure Washer Gun Insert — Kärcher Interchange is listed for hose bores from DN6 to DN8, which is 1/4 inch to 5/16 inch. It is a hose tail end, so the tail is crimped onto the hose with a matching Indus crimp ferrule chosen for your hose grade. Send the hose grade and bore on the RFQ and we confirm the ferrule."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Pressure Washer Gun Insert — Kärcher Interchange have?",
+          "a": "The listing gives no rating for the fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and the maker says it is tested to manufacturer-recommended impulse cycles when crimped to the correct ferrule diameter. The listing gives an operating temperature of -40°C to +120°C. Quote your pump pressure and we confirm the hose grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pressure Washer Gun Insert — Kärcher Interchange made of?",
+          "a": "The Pressure Washer Gun Insert — Kärcher Interchange is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish, with 316 stainless steel available on request. Ask for the stainless version if the machine runs in a corrosive or washdown environment, and say so on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Pressure Washer Gun Insert — Kärcher Interchange follow?",
+          "a": "It follows no published standard: the listing gives manufacturer interchange dimensions, meaning it is made to match the Kärcher-pattern gun socket rather than to a thread or fitting standard. Confirm the machine series on your RFQ, because an interchange fit depends on the profile and not on a standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pressure Washer Gun Insert — Kärcher Interchange connect to?",
+          "a": "It plugs into the spray gun socket, where an O-ring face seal in the socket makes the seal, and its tail is crimped onto the hose. For the other end of the hose, such as a female M22 connection, see the [Pressure Washer / Waterjet Female Hose Fitting](/p/pressure-washer-waterjet-female-hose-fitting)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Pressure Washer Gun Insert — Kärcher Interchange to a hose?",
+          "a": "Crimp the tail onto the hose with the ferrule and die set that suit the hose grade; Indus crimps and pressure-tests the assembly before dispatch if you order it as a finished hose. Quote the hose bore and length through the [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote), and read the [guide to getting a hydraulic hose assembly made](/blog/crimped-reusable-or-ready-made-hose-assemblies) to decide between crimped and other assemblies."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pressure Washer Gun Insert — Kärcher Interchange used?",
+          "a": "It is used to replace the gun-end connection on pressure washer hoses where the machine uses a Kärcher-pattern bayonet gun. Industrial cold and hot water machines use the same conventions according to the listing. Tell us the machine and hose and we confirm the Pressure Washer Gun Insert — Kärcher Interchange suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Pressure Washer Gun Insert — Kärcher Interchange differ from the Pressure Washer / Waterjet Female Hose Fitting?",
+          "a": "The gun insert is a male bayonet tail for the gun end of a hose, while the [Pressure Washer / Waterjet Female Hose Fitting](/p/pressure-washer-waterjet-female-hose-fitting) is a female swivel with an M22 × 1.5 thread for the machine or connection end. They are the two ends of one pressure washer hose, so order both if you are making a complete assembly."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Pressure Washer Gun Insert — Kärcher Interchange made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the Pressure Washer Gun Insert — Kärcher Interchange. We ship from Dubai worldwide, and the commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Pressure Washer Gun Insert — Kärcher Interchange in Dubai?",
+          "a": "Yes. We keep the Pressure Washer Gun Insert — Kärcher Interchange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-washer-waterjet-female-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pressure Washer / Waterjet Female Hose Fitting used for?",
+          "a": "The Pressure Washer / Waterjet Female Hose Fitting is a straight female swivel hose fitting with an M22 × 1.5 thread, crimped onto pressure washer and waterjet hose. It is used on the machine or connection end of the hose, and the swivel nut turns freely so the hose does not twist while you tighten it."
+        },
+        {
+          "slot": "B",
+          "q": "Which thread does the Pressure Washer / Waterjet Female Hose Fitting have and what is the BSP option?",
+          "a": "The standard thread is M22 × 1.5 female, and the listing says a 3/8 inch BSP female thread is also available. State which one your machine has on the RFQ, because an M22 nut will not screw onto a BSP outlet and the BSP version is a separate order."
+        },
+        {
+          "slot": "D",
+          "q": "What hose bore does the Pressure Washer / Waterjet Female Hose Fitting fit?",
+          "a": "The Pressure Washer / Waterjet Female Hose Fitting is listed for hose bores from DN6 to DN10, which is 1/4 inch to 3/8 inch. The fitting is crimped onto the hose with the ferrule that matches the hose grade, so send the hose grade, bore and overall length on the RFQ and we recommend the ferrule."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Pressure Washer / Waterjet Female Hose Fitting have?",
+          "a": "The listing gives no rating for the fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and it is tested to manufacturer-recommended impulse cycles when crimped to the correct ferrule diameter. The listing gives an operating temperature of -40°C to +120°C. Quote the pump pressure and we confirm the hose grade."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pressure Washer / Waterjet Female Hose Fitting made of?",
+          "a": "The Pressure Washer / Waterjet Female Hose Fitting is carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish, with 316 stainless steel available on request. Ask for stainless steel when the equipment is washed down or used with water that corrodes zinc, and say so on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Pressure Washer / Waterjet Female Hose Fitting follow?",
+          "a": "It is made to manufacturer interchange dimensions rather than to a published standard, with an M22 × 1.5 metric thread. The 3/8 inch BSP option follows the BSP parallel thread of the machine. Confirm the machine make and the thread on your RFQ so the interchange fit can be checked."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pressure Washer / Waterjet Female Hose Fitting connect to?",
+          "a": "The female swivel screws onto a male M22 × 1.5 outlet, or a 3/8 inch BSP male outlet in the BSP version, and it seals on a 15 mm internal cone or an O-ring seat depending on the variant. For BSP-threaded hose ends in other sizes see the [BSP hose fittings](/c/bsp-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the Pressure Washer / Waterjet Female Hose Fitting?",
+          "a": "Specify the machine-side insert diameter, 14 mm or 15 mm, on the RFQ: the two look alike and will not seal against each other. Crimp the fitting to the hose with the ferrule for your hose grade, then tighten the swivel nut onto the outlet so the cone or O-ring seat seals."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pressure Washer / Waterjet Female Hose Fitting used?",
+          "a": "It is used on pressure washers and waterjet equipment that use M22 and 3/8 inch conventions, including Kärcher-pattern and industrial cold and hot water machines, according to the listing. It is an interchange part and not an OEM-branded component. Send the machine model and we confirm the fit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Pressure Washer / Waterjet Female Hose Fitting differ from the Pressure Washer Gun Insert — Kärcher Interchange?",
+          "a": "The Pressure Washer / Waterjet Female Hose Fitting is a female swivel for the machine or connection end of a hose, while the [Pressure Washer Gun Insert — Kärcher Interchange](/p/pressure-washer-gun-insert-karcher-interchange) is a male bayonet tail for the gun end. A complete pressure washer hose usually needs one of each, so check which end of your hose you are replacing."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Pressure Washer / Waterjet Female Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the Pressure Washer / Waterjet Female Hose Fitting. We ship from Dubai worldwide, and the commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Pressure Washer / Waterjet Female Hose Fitting in Dubai?",
+          "a": "Yes, the Pressure Washer / Waterjet Female Hose Fitting is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

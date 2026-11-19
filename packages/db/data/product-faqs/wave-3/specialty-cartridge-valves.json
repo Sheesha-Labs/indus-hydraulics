@@ -1,0 +1,860 @@
+{
+  "family": "specialty-cartridge-valves",
+  "extraFacts": [
+    {
+      "fact": "Neighbouring Sun listings in this shelf: QPA pilot capacity 46 in³/min (0,75 L/min); filter cartridges 10 gpm to 80 gpm (40 L/min to 320 L/min) rated 5000 psi (350 bar); RV CavitySaver valves 5 gpm to 80 gpm (20 L/min to 320 L/min); LPDS 15 gpm (60 L/min), nominal compensating pressure 200 psi (14 bar); QCD 15 gpm (60 L/min); HPUA 3000 psi (210 bar); blocked plug 29 versions, open plug 13 versions, flow-path plug 21 versions.",
+      "source": "Indus Hydraulics listings for the Sun specialty cartridges"
+    },
+    {
+      "fact": "Sun Hydraulics screw-in cartridge valves are built in frame sizes called series; each series fixes the cavity (a T-number such as T-11A) that the cartridge screws into, so every function in one series shares that cavity and a larger series carries more flow.",
+      "source": "Sun Hydraulics cartridge catalogue, as summarised on the Indus product pages"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sun-hydraulics-accumulator-sense-pump-unload-valve-check-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity and what is it used for?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity is a pilot valve that watches accumulator pressure at port 2. When it reaches the setting, the valve connects port 3 to port 4, venting a relief valve so the pump unloads."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives QCDDLAN as an example of a full code. Seal material letters are N — Buna-N, V — Viton. Control letters are C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity come in?",
+          "a": "Sun builds the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity in four versions, listed with their series and cavity. For example: QCDA — series 1, T-21A cavity, 15 gpm (60 L/min), 15% reset differential; QCDB — series 1, T-21A cavity, 15 gpm (60 L/min), 20% reset differential; QCDC — series 1, T-21A cavity, 15 gpm (60 L/min), 30% reset differential; QCDD — series 1, T-21A cavity, 15 gpm (60 L/min), 50% reset differential."
+        },
+        {
+          "slot": "D",
+          "q": "What are the reset differential options of the Sun QCD accumulator sense unload valve?",
+          "a": "The QCD valves differ in reset differential: QCDA is 15%, QCDB 20%, QCDC 30% and QCDD 50%, all in series 1 and the T-21A cavity at 15 gpm (60 L/min). The percentage is the drop below the unload setting at which the pump comes back on, so a 15% valve set at 2,000 psi unloads at 2,000 psi and reloads at about 1,700 psi."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity have?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity is rated: maximum operating pressure: 5000 psi (350 bar). Further ratings: Check cracking pressure: 4 psi (0,3 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity?",
+          "a": "Seal material options for the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity are N — Buna-N, V — Viton. Weight: .35 lb (0,15 kg)."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity need?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity has a hex size of 7/8 in. (22,2 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm). Its cavity is T-21A. Seal kit numbers include 990021007 and 990021002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity used?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity is used for accumulator charging circuits on presses, braking systems and power units with a fixed pump. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "Does the Sun QCD accumulator sense valve include a check, and what pump size does it suit?",
+          "a": "Yes, this version has an integral free-flow check from pump to accumulator, with a check cracking pressure of 4 psi (0,3 bar), and it suits pumps up to 15 gpm (60 L/min). For bigger pumps use the version without check and a separate check cartridge."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun QCD valve differ from the QPA pilot-capacity valve?",
+          "a": "The QCD has an integral check and is rated 15 gpm (60 L/min) in the T-21A cavity, while the QPA has no check and a pilot capacity of 46 in³/min (0,75 L/min) in the T-11A cavity. Both are series 1 accumulator sense pump unload valves rated to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Accumulator Sense, Pump Unload Valve with Check, Pilot Capacity from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-accumulator-sense-pump-unload-valve-pilot-capacity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity and what is it used for?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity is a pilot valve that watches accumulator pressure at port 2. When it reaches the setting, the valve connects port 3 to port 4, venting a relief valve so the pump unloads."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives QPADLAN as an example of a full code. Seal material letters are N — Buna-N, V — Viton. Control letters are C — Tamper Resistant - Factory Set, L — Standard Screw Adjustment, K — Handknob."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity come in?",
+          "a": "Sun builds the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity in four versions, listed with their series and cavity. For example: QPAA — series 1, T-11A cavity, 46 in³/min. (0,75 L/min), 15% reset differential; QPAB — series 1, T-11A cavity, 46 in³/min. (0,75 L/min), 20% reset differential; QPAC — series 1, T-11A cavity, 46 in³/min. (0,75 L/min), 30% reset differential; QPAD — series 1, T-11A cavity, 46 in³/min. (0,75 L/min), 50% reset differential."
+        },
+        {
+          "slot": "D",
+          "q": "What are the reset differential options of the Sun QPA accumulator sense unload valve?",
+          "a": "The QPA valves differ in reset differential: QPAA is 15%, QPAB 20%, QPAC 30% and QPAD 50%, all in series 1 and the T-11A cavity. The percentage is the drop below the unload setting at which the pump comes back on, so a 15% valve set at 2,000 psi reloads at about 1,700 psi."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity have?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity is rated: maximum operating pressure: 5000 psi (350 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity?",
+          "a": "Seal material options for the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity are N — Buna-N, V — Viton. Weight: .35 lb (0,15 kg)."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity need?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity has a hex size of 7/8 in. (22,2 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm). Its cavity is T-11A. Seal kit numbers include 990011007 and 990011002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity used?",
+          "a": "The Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity is used for accumulator charging circuits on presses, braking systems and power units with a fixed pump. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "What does pilot capacity mean for the Sun QPA accumulator sense valve?",
+          "a": "The QPA is rated 46 in³/min (0,75 L/min) pilot capacity: it is a pilot valve that vents a relief valve, so it handles only the small pilot flow, not the pump flow. The unload-to-reload differential is held within +3/-2% of its stated ratio and the sensing area is positively sealed."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun QPA valve differ from the QCD valve with check?",
+          "a": "The QPA has no check and a pilot capacity of 46 in³/min (0,75 L/min) in the T-11A cavity, while the QCD has an integral check for pumps up to 15 gpm (60 L/min) in the T-21A cavity. Both are series 1 accumulator sense pump unload valves with four reset differentials."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Accumulator Sense, Pump Unload Valve, Pilot Capacity from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-all-ports-blocked-cavity-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun All Ports Blocked Cavity Plug and what is it used for?",
+          "a": "The Sun All Ports Blocked Cavity Plug is a solid cartridge that fits a valve cavity in place of a valve. Depending on the version it blocks every port, connects ports permanently, or brings a port out to an external connection in the hex end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun All Ports Blocked Cavity Plug?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives XRCCXXN as an example of a full code. Seal material letters are N — Buna-N, V — Viton."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun All Ports Blocked Cavity Plug come in?",
+          "a": "Sun builds the Sun All Ports Blocked Cavity Plug in 29 versions, listed with their series and cavity. For example: XUCA — series 0, T-30A cavity; XZCA — series 0, T-162A cavity; XZCB — series 0, T-163A cavity; XZCC — series 0, T-162A cavity, Flush mount, all ports blocked; XECA — series 1, T-11A cavity; XFCA — series 1, T-10A cavity. The rest are in the size table."
+        },
+        {
+          "slot": "D",
+          "q": "Which cavity sizes does the Sun all-ports-blocked cavity plug fit?",
+          "a": "The plug is built in 29 versions across series 0 to 4, P and Z, from T-30A, T-162A and T-163A in series 0 and T-11A, T-10A, T-13A, T-21A, T-31A and T-61A in series 1 to T-382A in series Z. Pick the row whose cavity matches the one machined in your manifold."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun All Ports Blocked Cavity Plug have?",
+          "a": "The Sun All Ports Blocked Cavity Plug is rated: maximum operating pressure: 5000 psi (350 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun All Ports Blocked Cavity Plug?",
+          "a": "Seal material options for the Sun All Ports Blocked Cavity Plug are N — Buna-N, V — Viton. EPDM seals are for phosphate-ester fluids only."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun All Ports Blocked Cavity Plug need?",
+          "a": "The Sun All Ports Blocked Cavity Plug has a hex size of 3/4 in. (19,1 mm) to 3/16 in. (5 mm) depending on the series and an installation torque of 20 - 25 lbf ft (27 - 33 Nm) to 100 - 120 lbf in. (11 - 14 Nm) depending on the series. The cavity depends on the version, as the size table shows. Seal kit numbers include 990162007 and 990162002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun All Ports Blocked Cavity Plug can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun All Ports Blocked Cavity Plug can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun All Ports Blocked Cavity Plug used?",
+          "a": "The Sun All Ports Blocked Cavity Plug is used for unused cavities in standard manifolds, permanent connections in place of a valve, test and gauge points. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "What is the difference between the A, B and C versions of the Sun all-ports-blocked cavity plug?",
+          "a": "Rows ending CA are the standard plug, such as XECA and XFCA, and rows ending CC, such as XRCC and XVCC, are the T-61A, T-62A, T-63A and T-64A-cavity versions or the flush-mount, all-ports-blocked version (XZCC). Choose by the cavity and the port arrangement; each row names both."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun all-ports-blocked cavity plug differ from the all-ports-open plug?",
+          "a": "The blocked plug seals every port of the cavity, while the [all-ports-open plug](/p/sun-hydraulics-all-ports-open-cavity-plug) leaves them connected, and the blocked plug is built in 29 versions against 13. Use the blocked one to close off an unused cavity and the open one to link ports permanently."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun All Ports Blocked Cavity Plug supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun All Ports Blocked Cavity Plug from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-all-ports-open-cavity-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun All Ports Open Cavity Plug and what is it used for?",
+          "a": "The Sun All Ports Open Cavity Plug is a solid cartridge that fits a valve cavity in place of a valve. Depending on the version it blocks every port, connects ports permanently, or brings a port out to an external connection in the hex end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun All Ports Open Cavity Plug?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives XMOBXXN as an example of a full code. Seal material letters are N — Buna-N, V — Viton."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun All Ports Open Cavity Plug come in?",
+          "a": "Sun builds the Sun All Ports Open Cavity Plug in thirteen versions, listed with their series and cavity. For example: XZOA — series 0, T-162A cavity; XZOC — series 0, T-162A cavity, Flush mount, all ports open; XZOD — series 0, T-163A cavity; XEOB — series 1, T-11A cavity; XFOA — series 1, T-10A, T-13A & T-31A cavity; XMOB — series 1, T-21A & T-61A cavity. The rest are in the size table."
+        },
+        {
+          "slot": "D",
+          "q": "Which cavity sizes does the Sun all-ports-open cavity plug fit?",
+          "a": "The plug is built in 13 versions across series 0 to 4 and P, in cavities T-162A and T-163A in series 0, T-11A, T-10A, T-13A, T-31A, T-21A and T-61A in series 1, and up to T-8A in series P. Pick the row whose cavity matches the one in your manifold."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun All Ports Open Cavity Plug have?",
+          "a": "The Sun All Ports Open Cavity Plug is rated: maximum operating pressure: 5000 psi (350 bar), 3000 psi (210 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun All Ports Open Cavity Plug?",
+          "a": "Seal material options for the Sun All Ports Open Cavity Plug are N — Buna-N, V — Viton. EPDM seals are for phosphate-ester fluids only."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun All Ports Open Cavity Plug need?",
+          "a": "The Sun All Ports Open Cavity Plug has a hex size of 3/4 in. (19,1 mm) to 1 5/8 in. (41,3 mm) depending on the series and an installation torque of 20 - 25 lbf ft (27 - 33 Nm) to 350 - 375 lbf ft (474 - 508 Nm) depending on the series. The cavity depends on the version, as the size table shows. Seal kit numbers include 990162007 and 990162014; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun All Ports Open Cavity Plug can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun All Ports Open Cavity Plug can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun All Ports Open Cavity Plug used?",
+          "a": "The Sun All Ports Open Cavity Plug is used for unused cavities in standard manifolds, permanent connections in place of a valve, test and gauge points. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "Why do two maximum pressures appear for the Sun all-ports-open cavity plug?",
+          "a": "The listing gives 5000 psi (350 bar) for most rows and 3000 psi (210 bar) for some. The rating depends on the cavity and series, so take the figure from the row for your part number, and do not assume the higher one applies to every cavity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun all-ports-open cavity plug differ from the all-ports-blocked plug?",
+          "a": "The open plug connects the ports of the cavity through the cartridge, while the [all-ports-blocked plug](/p/sun-hydraulics-all-ports-blocked-cavity-plug) seals them, and the open plug is built in 13 versions against 29. Use the open one for a permanent connection and the blocked one to close an unused cavity."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun All Ports Open Cavity Plug supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun All Ports Open Cavity Plug from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cavity-converter-adaptor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Cavity Converter (Adaptor) and what is it used for?",
+          "a": "The Sun cavity converter is an adaptor that screws into one Sun cavity and provides a smaller one. It lets a valve from another frame size or function fit without re-machining the manifold, for example a T-10A cavity converted to take a T-8A pilot cartridge."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Cavity Converter (Adaptor)?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. Seal material letters are N — Buna-N, V — Viton. Control letters are 8 — T-8A Cavity."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Cavity Converter (Adaptor) come in?",
+          "a": "Sun builds the Sun Cavity Converter (Adaptor) in eleven versions, listed with their series and cavity. For example: XFAA — series 1, T-10A cavity, T-10A to T-8A; XFAB — series 1, T-10A cavity, T-10A to T-8A with filter screen; XGAA — series 1, T-13A cavity, T-13A to T-8A; XHOC — series 3, T-17A cavity, T-17A to T-11A; XIOAF — series 3, T-16A cavity, T-16A to T-10A; XIOAG — series 3, T-16A cavity, T-16A to T-13A. The rest are in the size table."
+        },
+        {
+          "slot": "D",
+          "q": "Which cavity pairs does the Sun cavity converter adaptor cover?",
+          "a": "The converter is built in 11 cavity pairs across series 1 to 4, for example T-10A to T-8A (XFAA) and a version with a filter screen (XFAB). Choose by the cavity in the manifold and the cavity you need; each row names both."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Cavity Converter (Adaptor) have?",
+          "a": "The Sun Cavity Converter (Adaptor) is rated: maximum operating pressure: 5000 psi (350 bar), 3000 psi (210 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Cavity Converter (Adaptor)?",
+          "a": "Seal material options for the Sun Cavity Converter (Adaptor) are N — Buna-N, V — Viton. Material and coating options: /AP — Stainless Steel, Passivated. EPDM seals are for phosphate-ester fluids only. Weight: 2.50 lb (1,15 kg)."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Cavity Converter (Adaptor) need?",
+          "a": "The Sun Cavity Converter (Adaptor) has a hex size of 7/8 in. (22,2 mm) to 1 5/8 in. (41,3 mm) depending on the series and an installation torque of 30 - 35 lbf ft (41 - 47 Nm) to 350 - 375 lbf ft (474 - 508 Nm) depending on the series. The cavity depends on the version, as the size table shows. Seal kit numbers include 990010007 and 990010014; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Cavity Converter (Adaptor) can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Cavity Converter (Adaptor) can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Cavity Converter (Adaptor) used?",
+          "a": "The Sun Cavity Converter (Adaptor) is used for field changes to existing manifolds, such as swapping a manual pilot relief for an electro-proportional pilot. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "What is a Sun cavity converter used for?",
+          "a": "It screws into one Sun cavity and provides a smaller one, so a valve from another frame size or function can be fitted without re-machining the manifold, for example a T-10A cavity converted to take a T-8A pilot cartridge. A typical field change is swapping a manual pilot relief for an electro-proportional pilot."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun cavity converter differ from a cavity plug?",
+          "a": "The converter turns one cavity into a smaller one so a different valve can be fitted, while a [cavity plug with external port](/p/sun-hydraulics-cavity-plug-external-port) fills the cavity and brings a port out of the hex end. Use the converter to change what the manifold takes and the plug to close or tap it."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Cavity Converter (Adaptor) supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Cavity Converter (Adaptor) from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cavity-plug-external-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Cavity Plug with External Port and what is it used for?",
+          "a": "The Sun Cavity Plug with External Port is a solid cartridge that fits a valve cavity in place of a valve. Depending on the version it blocks every port, connects ports permanently, or brings a port out to an external connection in the hex end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Cavity Plug with External Port?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives XGCAEXN as an example of a full code. Seal material letters are N — Buna-N, V — Viton, E — EPDM."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Cavity Plug with External Port come in?",
+          "a": "Sun builds the Sun Cavity Plug with External Port in six versions, listed with their series and cavity. For example: XFCAE — series 1, T-10A cavity, Port 1 to external port, port 2 blocked; XGCAE — series 1, T-13A cavity, Port 1 to external port, port 2 blocked; XHOAE — series 3, T-17A cavity, Ports 1 and 2 to external port, port 3 blocked; XACAE — series P, T-8A cavity, Port 1 to external port, port 2 blocked; XACBE — series P, T-9A cavity, Port 1 to external port, ports 2 and 3 blocked; XACC — series P, T-8A cavity, Port 2 to external port, port 1 blocked."
+        },
+        {
+          "slot": "D",
+          "q": "Which cavity sizes does the Sun cavity plug with external port fit?",
+          "a": "The plug is built in 6 versions across series 1, 3 and P, in cavities T-10A, T-13A, T-17A, T-8A and T-9A, for example XFCAE in T-10A and XGCAE in T-13A. Pick the row whose cavity matches the one in your manifold."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Cavity Plug with External Port have?",
+          "a": "The Sun Cavity Plug with External Port is rated: maximum operating pressure: 5000 psi (350 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Cavity Plug with External Port?",
+          "a": "Seal material options for the Sun Cavity Plug with External Port are N — Buna-N, V — Viton, E — EPDM. EPDM seals are for phosphate-ester fluids only."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Cavity Plug with External Port need?",
+          "a": "The Sun Cavity Plug with External Port has a hex size of 7/8 in. (22,2 mm), 1 1/4 in. (31,8 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm) to 20 - 25 lbf ft (27 - 33 Nm) depending on the series. The cavity depends on the version, as the size table shows. Seal kit numbers include 990010007 and 990010002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Cavity Plug with External Port can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Cavity Plug with External Port can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Cavity Plug with External Port used?",
+          "a": "The Sun Cavity Plug with External Port is used for unused cavities in standard manifolds, permanent connections in place of a valve, test and gauge points. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "What does the external port on the Sun cavity plug do?",
+          "a": "Rows such as XFCAE and XGCAE connect port 1 to an external port in the hex end with port 2 blocked, so a gauge, test point or line can be taken straight from the cavity. EPDM seals are for phosphate-ester fluids only."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun cavity plug with external port differ from the flow-path plug?",
+          "a": "The external-port plug brings one port out of the hex end with the other blocked, while the [flow-path plug](/p/sun-hydraulics-flow-path-cavity-plug) opens some ports to each other inside the cavity and is built in 21 versions. Use the external-port plug for a gauge or test point."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Cavity Plug with External Port supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Cavity Plug with External Port from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cavitysaver-normally-closed-modulating-element-valve-relief-function",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function and what is it used for?",
+          "a": "The Sun RV CavitySaver is a normally closed modulating element with a relief function, two functions in one cavity. With an external orifice it works as a bypass compensator: the orifice sets a priority flow into the circuit and the rest goes to tank at port 2."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives RVCBLAN as an example of a full code. Seal material letters are N — Buna-N, V — Viton. Control letters are C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function come in?",
+          "a": "Sun builds the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function in five versions, listed with their series and cavity. For example: RVBB — series 0, T-163A cavity, 5 gpm (20 L/min); RVCB — series 1, T-11A cavity, 10 gpm (40 L/min); RVEB — series 2, T-2A cavity, 20 gpm (80 L/min); RVGB — series 3, T-17A cavity, 40 gpm (160 L/min); RVIB — series 4, T-19A cavity, 80 gpm (320 L/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What capacities and setting ranges do the Sun RV CavitySaver valves have?",
+          "a": "The five RV valves (RVBB, RVCB, RVEB, RVGB and RVIB) cover 5 gpm to 80 gpm (20 L/min to 320 L/min) in series 0 to 4, with setting ranges A (100 to 3000 psi), B (50 to 1500 psi), C (150 to 6000 psi), D (100 to 800 psi) and W (150 to 4500 psi). The capacity is set by the bypassed flow, not the controlled flow."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function have?",
+          "a": "The Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function is rated: maximum operating pressure: 5000 psi (350 bar). Further ratings: Maximum leakage: 2 in³/min.@1000 psi (30 cc/min.@70 bar), 3 in³/min.@1000 psi (50 cc/min.@70 bar), 4 in³/min.@1000 psi (65 cc/min.@70 bar), 5 in³/min.@1000 psi (80 cc/min.@70 bar); Typical response time: 10 ms. Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function?",
+          "a": "Seal material options for the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function are N — Buna-N, V — Viton. Material and coating options: /AP — Stainless Steel, Passivated, /LH — Mild Steel, Zinc-Nickel. EPDM seals are for phosphate-ester fluids only. Weight: .30 lb (0,15 kg) to 3.10 lb (1,40 kg)."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function need?",
+          "a": "The Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function has a hex size of 3/4 in. (19,1 mm) to 1 5/8 in. (41,3 mm) depending on the series and an installation torque of 20 - 25 lbf ft (27 - 33 Nm) to 350 - 375 lbf ft (474 - 508 Nm) depending on the series. The cavity depends on the version, as the size table shows. Seal kit numbers include 990163007 and 990163002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function used?",
+          "a": "The Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function is used for fixed-displacement pump circuits that need a steady flow to one function and over-pressure protection. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "How does the Sun RV CavitySaver valve work as a bypass compensator with relief?",
+          "a": "With an external orifice, the normally closed modulating element works as a bypass compensator: the orifice sets a priority flow into the circuit and the rest goes to tank at port 2, and it also relieves the inlet once it reaches the setting. Compensating pressure is 50 psi (3.5 bar) in every range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RV normally closed element differ from the LPDS normally open element?",
+          "a": "The RV is a normally closed element that works as a bypass compensator with relief, while the [LPDS](/p/sun-hydraulics-lpds-cavitysaver-normally-open-modulating-element-shuttle) is a normally open restrictive compensator with a built-in shuttle and a nominal compensating pressure of 200 psi (14 bar). Use the RV for a priority flow and the LPDS for pressure-compensated flow control."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun CavitySaver™ Normally Closed Modulating Element Valve with Relief Function from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-evec-2-port-energy-harvester-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 2-Port Energy Harvester Valve and what is it used for?",
+          "a": "The Sun 2-Port Energy Harvester Valve is a cartridge that turns return-line flow into electrical power: oil passing from port 1 to port 2 drives a generator that puts out 3-phase AC, rectified to up to 30 VDC. It powers sensors and electronics on a machine without running cables to them."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 2-Port Energy Harvester Valve?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives EVECXXV as an example of a full code. Seal material letters are V — Viton. Control letters are X — Standard."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun 2-Port Energy Harvester Valve come in?",
+          "a": "Sun builds the Sun 2-Port Energy Harvester Valve in one version: EVEC — series 3, T-16A cavity. Check that your manifold has that cavity, machined to Sun's drawing, before you order, and tell us the model code if you are replacing a valve."
+        },
+        {
+          "slot": "D",
+          "q": "How much flow does the Sun EVEC energy harvester valve need?",
+          "a": "The EVEC needs at least 10 gpm to harvest power and takes up to 50 gpm. Port 2 is limited to 200 psi (14 bar), so fit it in a return line. It is a series 3 cartridge in the T-16A cavity, and its weight is listed as 2.36 lb."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun 2-Port Energy Harvester Valve have?",
+          "a": "The listing gives no maximum operating pressure for the Sun 2-Port Energy Harvester Valve. Ask us for Sun's rating for your part number and see the selection notes for the flow and pressure limits it does give."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun 2-Port Energy Harvester Valve?",
+          "a": "Seal material options for the Sun 2-Port Energy Harvester Valve are V — Viton. Weight: 2.36 lb. The seal sets the fluids the valve can run on, so tell us the fluid when you order and we confirm the seal letter for the model code."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun 2-Port Energy Harvester Valve need?",
+          "a": "The Sun 2-Port Energy Harvester Valve has a hex size of 1 1/4 in. (31,8 mm) and an installation torque of 150 - 160 lbf ft (203 - 217 Nm). Its cavity is T-16A. Seal kit numbers include 990316006; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun 2-Port Energy Harvester Valve can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun 2-Port Energy Harvester Valve can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 2-Port Energy Harvester Valve used?",
+          "a": "The Sun 2-Port Energy Harvester Valve is used for powering wireless sensors, valve electronics and monitoring on remote manifolds and moving machinery. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "How much power does the Sun EVEC energy harvester valve produce, and what does it need?",
+          "a": "Oil passing from port 1 to port 2 drives a generator that puts out 3-phase AC, rectified to up to 30 VDC, at up to 3 A. The drain must run by gravity at atmospheric pressure, so mount it upright or horizontal with the drain down; the power cable and mating connector are not included."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun EVEC energy harvester differ from the NQEB air bleed valve?",
+          "a": "The EVEC turns return-line flow into electrical power in a series 3 cartridge, while the [NQEB air bleed valve](/p/sun-hydraulics-nqeb-air-bleed-start-up-valve) is a series 2 cartridge that purges air at start-up. They are unrelated functions in the same specialty shelf."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun 2-Port Energy Harvester Valve supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun 2-Port Energy Harvester Valve from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-flow-path-cavity-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Flow-Path Cavity Plug and what is it used for?",
+          "a": "The Sun Flow-Path Cavity Plug is a solid cartridge that fits a valve cavity in place of a valve. Depending on the version it blocks every port, connects ports permanently, or brings a port out to an external connection in the hex end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Flow-Path Cavity Plug?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives XMOAXXN as an example of a full code. Seal material letters are N — Buna-N, V — Viton."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Flow-Path Cavity Plug come in?",
+          "a": "Sun builds the Sun Flow-Path Cavity Plug in 21 versions, listed with their series and cavity. For example: XZAA — series 0, T-163A cavity, Port 2 to 3 open, port 1 blocked; XZBA — series 0, T-163A cavity, Port 1 to 3 open, port 2 blocked; XZOB — series 0, T-163A cavity, Port 1 to 2 open, port 3 blocked; XEAA — series 1, T-11A cavity, Port 2 to 3 open, port 1 blocked; XEBA — series 1, T-11A cavity, Port 1 to 3 open, port 2 blocked; XEOA — series 1, T-11A cavity, Port 1 to 2 open, port 3 blocked. The rest are in the size table."
+        },
+        {
+          "slot": "D",
+          "q": "Which cavity sizes does the Sun flow-path cavity plug fit?",
+          "a": "The plug is built in 21 versions across series 0 to 4 and P, including T-163A in series 0, T-11A, T-21A and T-31A in series 1, and T-17A and T-23A in series 3. Pick the row whose cavity and port arrangement match your manifold."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Flow-Path Cavity Plug have?",
+          "a": "The Sun Flow-Path Cavity Plug is rated: maximum operating pressure: 3000 psi (210 bar), 5000 psi (350 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Flow-Path Cavity Plug?",
+          "a": "Seal material options for the Sun Flow-Path Cavity Plug are N — Buna-N, V — Viton. Material and coating options: /AP — Stainless Steel, Passivated, /LH — Mild Steel, Zinc-Nickel. EPDM seals are for phosphate-ester fluids only."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Flow-Path Cavity Plug need?",
+          "a": "The Sun Flow-Path Cavity Plug has a hex size of 3/4 in. (19,1 mm) to 1 5/8 in. (41,3 mm) depending on the series and an installation torque of 20 - 25 lbf ft (27 - 33 Nm) to 350 - 375 lbf ft (474 - 508 Nm) depending on the series. The cavity depends on the version, as the size table shows. Seal kit numbers include 990163007 and 990163002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Flow-Path Cavity Plug can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Flow-Path Cavity Plug can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Flow-Path Cavity Plug used?",
+          "a": "The Sun Flow-Path Cavity Plug is used for unused cavities in standard manifolds, permanent connections in place of a valve, test and gauge points. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "What flow paths do the Sun flow-path cavity plug versions give?",
+          "a": "Each row names its path, for example XZAA connects port 2 to port 3 with port 1 blocked and XZBA connects port 1 to port 3 with port 2 blocked. Choose by the cavity and the path you need, and take the pressure from the row, since some are 3000 psi (210 bar) and others 5000 psi (350 bar)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun flow-path cavity plug differ from the all-ports-open plug?",
+          "a": "The flow-path plug opens specific ports to each other and blocks the others, in 21 versions, while the [all-ports-open plug](/p/sun-hydraulics-all-ports-open-cavity-plug) connects every port and is built in 13 versions. Use the flow-path plug where only some ports must be linked."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Flow-Path Cavity Plug supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Flow-Path Cavity Plug from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-hpua-screw-in-hand-pump-cartridge",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Screw-In Hand Pump Cartridge and what is it used for?",
+          "a": "The Sun Screw-In Hand Pump Cartridge is a manual pump built as a cartridge, with two check valves inside, that screws into a manifold cavity. Working the lever pumps oil for emergency lowering, bleeding or low-volume pressurising when there is no power."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Screw-In Hand Pump Cartridge?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives HPUAXXN as an example of a full code. Seal material letters are N — Buna-N. Control letters are X — Mechanical Actuation."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Screw-In Hand Pump Cartridge come in?",
+          "a": "Sun builds the Sun Screw-In Hand Pump Cartridge in one version: HPUA — series 1C, SC-10-02 cavity, .442 in³ (.442 in³). Check that your manifold has that cavity, machined to Sun's drawing, before you order, and tell us the model code if you are replacing a valve."
+        },
+        {
+          "slot": "D",
+          "q": "How much oil does the Sun HPUA hand pump cartridge deliver per stroke?",
+          "a": "The HPUA is listed at .442 in³ per stroke in series 1C, and the maximum operating pressure is 3000 psi (210 bar). The listing gives the capacity as .442 in³, so ask us for the Sun figure if you need it in cc."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Screw-In Hand Pump Cartridge have?",
+          "a": "The Sun Screw-In Hand Pump Cartridge is rated: maximum operating pressure: 3000 psi (210 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Screw-In Hand Pump Cartridge?",
+          "a": "Seal material options for the Sun Screw-In Hand Pump Cartridge are N — Buna-N. The seal sets the fluids the valve can run on, so tell us the fluid when you order and we confirm the seal letter for the model code."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Screw-In Hand Pump Cartridge need?",
+          "a": "The Sun Screw-In Hand Pump Cartridge has a hex size of 1.50 in. (38,1 mm) and an installation torque of 45 - 50 lbf ft (61 - 68 Nm). Its cavity is SC-10-02."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Screw-In Hand Pump Cartridge can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Screw-In Hand Pump Cartridge can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Screw-In Hand Pump Cartridge used?",
+          "a": "The Sun Screw-In Hand Pump Cartridge is used for emergency operation on lifts, cabs, tail-lifts and power units; manual back-up pumps. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "How is the Sun HPUA hand pump cartridge operated?",
+          "a": "The lever socket turns through 360° and the handle is sold separately. Working the lever pumps oil through two internal check valves for emergency lowering, bleeding or low-volume pressurising when there is no power. It is zinc plated for 240 hours of salt-spray resistance with a hardened steel seat."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun HPUA hand pump differ from other Sun screw-in cartridges?",
+          "a": "The HPUA is a manual pump cartridge for emergency operation in the SC-10-02 cavity, rated 3000 psi (210 bar), whereas the [screw-in filter cartridge](/p/sun-hydraulics-screw-in-filter-cartridge) is a filter in series 1 to 4 rated 5000 psi (350 bar). It is not a valve, so it needs a manifold cavity of its own."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Screw-In Hand Pump Cartridge supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Screw-In Hand Pump Cartridge from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-lpds-cavitysaver-normally-open-modulating-element-shuttle",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun CavitySaver™ Normally Open Modulating Element with Shuttle and what is it used for?",
+          "a": "The Sun CavitySaver™ Normally Open Modulating Element with Shuttle is a restrictive compensator — a normally open modulating element — with a ball shuttle built in. With an external orifice it gives a pressure-compensated flow control; the shuttle takes the downstream signal from whichever of ports 3 and 4 is higher."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun CavitySaver™ Normally Open Modulating Element with Shuttle?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives LPDSXHN as an example of a full code. Seal material letters are N — Buna-N, V — Viton. Control letters are X — Not Adjustable."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun CavitySaver™ Normally Open Modulating Element with Shuttle come in?",
+          "a": "Sun builds the Sun CavitySaver™ Normally Open Modulating Element with Shuttle in one version: LPDS — series 1, T-21A cavity, 15 gpm (60 L/min). Check that your manifold has that cavity, machined to Sun's drawing, before you order, and tell us the model code if you are replacing a valve."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and compensating pressure does the Sun LPDS CavitySaver have?",
+          "a": "The LPDS is rated 15 gpm (60 L/min) with a nominal compensating pressure of 200 psi (14 bar), in series 1 and the T-21A cavity. All ports take 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun CavitySaver™ Normally Open Modulating Element with Shuttle have?",
+          "a": "The Sun CavitySaver™ Normally Open Modulating Element with Shuttle is rated: maximum operating pressure: 5000 psi (350 bar). Further ratings: Nominal compensating pressure: 200 psi (14 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun CavitySaver™ Normally Open Modulating Element with Shuttle?",
+          "a": "Seal material options for the Sun CavitySaver™ Normally Open Modulating Element with Shuttle are N — Buna-N, V — Viton. The seal sets the fluids the valve can run on, so tell us the fluid when you order and we confirm the seal letter for the model code."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun CavitySaver™ Normally Open Modulating Element with Shuttle need?",
+          "a": "The Sun CavitySaver™ Normally Open Modulating Element with Shuttle has a hex size of 7/8 in. (22,2 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm). Its cavity is T-21A. Seal kit numbers include 990021007 and 990021002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun CavitySaver™ Normally Open Modulating Element with Shuttle can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun CavitySaver™ Normally Open Modulating Element with Shuttle can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun CavitySaver™ Normally Open Modulating Element with Shuttle used?",
+          "a": "The Sun CavitySaver™ Normally Open Modulating Element with Shuttle is used for load-sensing and pressure-compensated flow control for two work ports from one cavity. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "What does the shuttle in the Sun LPDS CavitySaver do?",
+          "a": "The ball shuttle takes the downstream signal from whichever of ports 3 and 4 is higher, so with an external orifice the element gives a pressure-compensated flow control for two work ports from one cavity. When both load ports fall, the single-ball shuttle lets the signal fall too."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LPDS normally open element differ from the RV normally closed element?",
+          "a": "The LPDS is a normally open restrictive compensator with a built-in shuttle and a 200 psi (14 bar) compensating pressure at 15 gpm, while the [RV element](/p/sun-hydraulics-cavitysaver-normally-closed-modulating-element-valve-relief-function) is normally closed, bypass-compensates with relief and covers 5 gpm to 80 gpm. Choose by whether you need load-sensing or priority flow."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun CavitySaver™ Normally Open Modulating Element with Shuttle supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun CavitySaver™ Normally Open Modulating Element with Shuttle from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-nqeb-air-bleed-start-up-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Air Bleed and Start-Up Valve and what is it used for?",
+          "a": "The Sun Air Bleed and Start-Up Valve is a cartridge that stays open at start-up to purge trapped air and let the pump prime, then closes once flow and pressure are established. It reduces the power needed to start blocked-centre circuits."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Air Bleed and Start-Up Valve?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives NQEBXAN as an example of a full code. Seal material letters are N — Buna-N, V — Viton, E — EPDM. Control letters are X — Not Adjustable."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Air Bleed and Start-Up Valve come in?",
+          "a": "Sun builds the Sun Air Bleed and Start-Up Valve in one version: NQEB — series 2, T-3A cavity, 4 - 50 gpm (15 - 200 L/min). Check that your manifold has that cavity, machined to Sun's drawing, before you order, and tell us the model code if you are replacing a valve."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and pressure does the Sun NQEB air bleed valve need to close?",
+          "a": "The NQEB needs at least 4 gpm (15 L/min) and 80 psi (5.5 bar) to close, and it opens again if system pressure drops under 25 psi (1.7 bar). After purging it closes in about 12 seconds at 4 gpm, down to half a second at 50 gpm."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Air Bleed and Start-Up Valve have?",
+          "a": "The Sun Air Bleed and Start-Up Valve is rated: maximum operating pressure: 5000 psi (350 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Air Bleed and Start-Up Valve?",
+          "a": "Seal material options for the Sun Air Bleed and Start-Up Valve are N — Buna-N, V — Viton, E — EPDM. Material and coating options: /AP — Stainless Steel, Passivated, /LH — Mild Steel, Zinc-Nickel. EPDM seals are for phosphate-ester fluids only. Weight: .40 lb (0,20 kg)."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Air Bleed and Start-Up Valve need?",
+          "a": "The Sun Air Bleed and Start-Up Valve has a hex size of 1 1/8 in. (28,6 mm) and an installation torque of 45 - 50 lbf ft (61 - 68 Nm). Its cavity is T-3A. Seal kit numbers include 990203007 and 990003002; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Air Bleed and Start-Up Valve can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Air Bleed and Start-Up Valve can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Air Bleed and Start-Up Valve used?",
+          "a": "The Sun Air Bleed and Start-Up Valve is used for blocked-centre and pressure-compensated circuits that are hard to prime or carry entrained air. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun NQEB air bleed valve fitted?",
+          "a": "It is fitted in a cavity on the pump line with its outlet to tank, so the air it purges returns to the reservoir. It suits blocked-centre and pressure-compensated circuits that are hard to prime or carry entrained air."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun NQEB differ from the EVEC energy harvester?",
+          "a": "The NQEB is a series 2 cartridge that stays open to purge air at 4 to 50 gpm, while the [EVEC](/p/sun-hydraulics-evec-2-port-energy-harvester-valve) is a series 3 cartridge that turns return-line flow into electrical power. They are unrelated functions in the same shelf."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Air Bleed and Start-Up Valve supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Air Bleed and Start-Up Valve from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-screw-in-filter-cartridge",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Screw-In Filter Cartridge and what is it used for?",
+          "a": "The Sun Screw-In Filter Cartridge is a filter that screws into a valve cavity, so a last-chance or depth element can protect the valves downstream of it. Flow runs from port 2 to port 1 only."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Screw-In Filter Cartridge?",
+          "a": "The first four letters of a Sun code are the base model, which carries the valve type, frame size and variant; the letters after it choose the options. The listing gives FLDAXDN as an example of a full code. Seal material letters are N — Buna-N, V — Viton, E — EPDM. Control letters are X — Not Adjustable."
+        },
+        {
+          "slot": "D",
+          "q": "What versions and cavities does the Sun Screw-In Filter Cartridge come in?",
+          "a": "Sun builds the Sun Screw-In Filter Cartridge in four versions, listed with their series and cavity. For example: FLDA — series 1, T-13A cavity, 10 gpm (40 L/min); FLFA — series 2, T-5A cavity, 20 gpm (80 L/min); FLHA — series 3, T-16A cavity, 40 gpm (160 L/min); FLJA — series 4, T-18A cavity, 80 gpm (320 L/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun screw-in filter cartridge have in each series?",
+          "a": "The four FL filters cover 10 gpm to 80 gpm (40 L/min to 320 L/min): FLDA is series 1 (10 gpm, T-13A) and FLFA is series 2 (20 gpm, T-5A), with FLHA in series 3 and FLJA in series 4. Capacity depends on the element rating, so choose the series from your flow."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and ratings does the Sun Screw-In Filter Cartridge have?",
+          "a": "The Sun Screw-In Filter Cartridge is rated: maximum operating pressure: 5000 psi (350 bar). Check the row for your part number, since the cavity can change the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and materials are available on the Sun Screw-In Filter Cartridge?",
+          "a": "Seal material options for the Sun Screw-In Filter Cartridge are N — Buna-N, V — Viton, E — EPDM. Material and coating options: /AP — Stainless Steel, Passivated, /LH — Mild Steel, Zinc-Nickel. EPDM seals are for phosphate-ester fluids only."
+        },
+        {
+          "slot": "G",
+          "q": "What hex size and installation torque does the Sun Screw-In Filter Cartridge need?",
+          "a": "The Sun Screw-In Filter Cartridge has a hex size of 7/8 in. (22,2 mm) to 1 5/8 in. (41,3 mm) depending on the series and an installation torque of 30 - 35 lbf ft (41 - 47 Nm) to 350 - 375 lbf ft (474 - 508 Nm) depending on the series. The cavity depends on the version, as the size table shows. Seal kit numbers include 990010007 and 990010014; the full list is on the listing."
+        },
+        {
+          "slot": "I",
+          "q": "Which parts of the Sun Screw-In Filter Cartridge can be serviced, and how is it installed?",
+          "a": "Only the external seals of the Sun Screw-In Filter Cartridge can be serviced. Sun supplies a seal kit for every cartridge, and fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. It screws into a cavity machined to Sun's drawing and is tightened to the installation torque given for its series."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Screw-In Filter Cartridge used?",
+          "a": "The Sun Screw-In Filter Cartridge is used for protecting sensitive valves — proportional, servo and small-orifice pilots — and whole valve stacks when fitted just above the subplate. Choose the series from your flow and the cavity from your manifold, then the configuration letters."
+        },
+        {
+          "slot": "J",
+          "q": "What filter element does the Sun screw-in filter cartridge use, and can it run in reverse?",
+          "a": "Surface-type elements are 304 stainless mesh, 40 µm nominal (63 µm absolute), and depth elements are finer. The element withstands a 3,000 psid (210 bar) difference before collapse. Do not run it in reverse, even with a reverse-flow check fitted: flow runs from port 2 to port 1 only."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun screw-in filter differ from other cartridges in this shelf?",
+          "a": "The filter protects downstream valves and runs 5000 psi (350 bar) in series 1 to 4, while the [HPUA hand pump](/p/sun-hydraulics-hpua-screw-in-hand-pump-cartridge) is a 3000 psi (210 bar) manual pump. Fit the filter just above the sub-plate to protect proportional, servo and small-orifice pilots."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Sun Screw-In Filter Cartridge supplied from Dubai, and how do I order it?",
+          "a": "Yes. We supply the Sun Screw-In Filter Cartridge from Dubai, UAE and ship worldwide with the best lead times. Send the Sun model code, or describe the duty, through [our contact page](/contact) and we confirm the full ordering code, price and delivery."
+        }
+      ]
+    }
+  ]
+}

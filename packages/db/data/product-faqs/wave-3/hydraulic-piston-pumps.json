@@ -1,0 +1,1602 @@
+{
+  "family": "hydraulic-piston-pumps",
+  "extraFacts": [
+    {
+      "fact": "ARO Piston Pumps, 3 Inch: 8 listed part numbers; items: Piston Pump.",
+      "source": "Indus Hydraulics product listing, /p/aro-piston-pumps-3-inch"
+    },
+    {
+      "fact": "Bosch Rexroth A10VSO 100 Variable Axial Piston Pump, 100 cm³/rev: 0 listed part numbers; Displacement 100; Pressure (peak) 350; Speed (max) 2000; Pump type Axial piston, swashplate, variable, open circuit; Mounting ISO 3019-2 two-hole flange, Ø125 mm pilot; Rotation Clockwise (R); counter-clockwise (L) to order; Weight 49.5; Nominal pressure 280; Flow at 1500 rpm (theoretical) 150; Controls available DG, DR, DFR, DFR1, DRG, ED72, ER72, DFLR; Weight with through drive 55.4; Fluid HLP mineral oil (DIN 51524-2); up to +110 °C with FKM seals.",
+      "source": "Indus Hydraulics product listing, /p/bosch-rexroth-a10vso-100cc-pump"
+    },
+    {
+      "fact": "Bosch Rexroth A10VSO 45 Variable Axial Piston Pump, 45 cm³/rev: 0 listed part numbers; Displacement 45; Pressure (peak) 350; Speed (max) 2600; Pump type Axial piston, swashplate, variable, open circuit; Mounting ISO 3019-2 two-hole flange, Ø100 mm pilot; Rotation Clockwise (R); counter-clockwise (L) to order; Weight 23.5; Nominal pressure 280; Flow at 1500 rpm (theoretical) 68; Controls available DG, DR, DFR, DFR1, DRG, ED72, ER72, DFLR; Weight with through drive 25.1; Fluid HLP mineral oil (DIN 51524-2); up to +110 °C with FKM seals.",
+      "source": "Indus Hydraulics product listing, /p/bosch-rexroth-a10vso-45cc-pump"
+    },
+    {
+      "fact": "Bosch Rexroth A10VSO 71 Variable Axial Piston Pump, 71 cm³/rev: 0 listed part numbers; Displacement 71; Pressure (peak) 350; Speed (max) 2200; Pump type Axial piston, swashplate, variable, open circuit; Mounting ISO 3019-2 two-hole flange, Ø125 mm pilot; Rotation Clockwise (R); counter-clockwise (L) to order; Weight 35.2; Nominal pressure 280; Flow at 1500 rpm (theoretical) 107; Controls available DG, DR, DFR, DFR1, DRG, ED72, ER72, DFLR; Weight with through drive 38; Fluid HLP mineral oil (DIN 51524-2); up to +110 °C with FKM seals.",
+      "source": "Indus Hydraulics product listing, /p/bosch-rexroth-a10vso-71cc-pump"
+    },
+    {
+      "fact": "Bosch Rexroth Axial Piston Variable Pumps, AGCO Replacement: 10 listed part numbers; maximum pressure 4600 psi; maximum speed 2300 rpm to 2600 rpm; continuous pressure 3600 psi; displacement 45 cm³/rev to 100 cm³/rev; Type piston pump; Displacement 45–100 cm³/rev; Max pressure up to 4,600 psi; Equivalents AGCO part numbers listed against each size.",
+      "source": "Indus Hydraulics product listing, /p/bosch-rexroth-axial-piston-variable-pumps-agco-replacement"
+    },
+    {
+      "fact": "Bosch Rexroth Axial Piston Variable Pumps, ASV Replacement: 5 listed part numbers; maximum pressure 4600 psi; maximum speed 2300 rpm to 2600 rpm; continuous pressure 3600 psi; displacement 60 cm³/rev to 163 cm³/rev; Type piston pump; Displacement 60–163 cm³/rev; Max pressure up to 4,600 psi; Equivalents ASV part numbers listed against each size.",
+      "source": "Indus Hydraulics product listing, /p/bosch-rexroth-axial-piston-variable-pumps-asv-replacement"
+    },
+    {
+      "fact": "Bosch Rexroth Axial Piston Variable Pumps, Bobcat Replacement: 6 listed part numbers; maximum pressure 4600 psi; maximum speed 2600 rpm; continuous pressure 3600 psi; displacement 45 cm³/rev to 71 cm³/rev; Type piston pump; Displacement 45–71 cm³/rev; Max pressure up to 4,600 psi; Equivalents BOBCAT part numbers listed against each size.",
+      "source": "Indus Hydraulics product listing, /p/bosch-rexroth-axial-piston-variable-pumps-bobcat-replacement"
+    },
+    {
+      "fact": "Bosch Rexroth Axial Piston Variable Pumps, CAT Replacement: 179 listed part numbers; maximum pressure 4600 psi; maximum speed 2000 rpm to 3300 rpm; continuous pressure 3600 psi; displacement 18 cm³/rev to 280 cm³/rev; Type piston pump; Displacement 18–280 cm³/rev; Max pressure up to 4,600 psi; Equivalents CAT part numbers listed against each size.",
+      "source": "Indus Hydraulics product listing, /p/bosch-rexroth-axial-piston-variable-pumps-cat-replacement"
+    },
+    {
+      "fact": "Eaton 1 Series Heavy Duty Closed Circuit Pumps: 4 listed part numbers; displacement 63.66 cm³/rev to 75.28 cm³/rev; Application Construction, Agriculture, Truck And Bus, Oil And Gas, And Other Mobile Applications; Charge Pump Charge Pump Included; Configuration Single; Design Code B; Design Type Series 1; Drive Shaft Seal Configuration Single; Input Shaft 14 Tooth 12/24 Pitch Spline; Mounting Flange Location Standard J744; Paint Finish Blue; Shaft Rotation Left; Type Variable Displacement; Valve Plate Standard, V Groove; items: Control.",
+      "source": "Indus Hydraulics product listing, /p/eaton-1-series-heavy-duty-closed-circuit-pumps"
+    },
+    {
+      "fact": "Eaton 70122 Series Open Circuit Piston Pumps: 13 listed part numbers; displacement 19 cm³/rev; Application Mobile; Code Title Pressure Compensated/Pressure Flow Compensated; Control Special Features None; Design Code First; Fluid Cleanliness 18/13; Front Mounting 2 Bolt A; Identification Standard; Input Shaft 9 Tooth 16/32 Spline, Shaft Extension 31.8 [1.25]; Paint Primer Per Spec 209-13A; Shaft Rotation Left; items: Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-70122-series-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Eaton 70422 Series Open Circuit Piston Pumps: 9 listed part numbers; displacement 38 cm³/rev; Application Mobile; Code Title Open Circuit Piston Pump; Control Special Features None; Design Code First; Fluid Cleanliness 18/13; Front Mounting 2 Bolt B; Identification Standard; Input Shaft 13 Tooth 16/32 Spline, With Snap Ring Groove, Shaft Extension 41.1 [1.62]; Paint Primer Per Spec 209-13A; Shaft Rotation Left; items: Open Circuit Piston Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-70422-series-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Eaton 70423 Series Open Circuit Piston Pumps: 9 listed part numbers; displacement 45.4 cm³/rev; Application Mobile; Code Title Open Circuit Piston Pump; Design Code First; Fluid Cleanliness 18/13; Front Mounting 2 Bolt B-B; Identification Standard; Shaft Rotation Left; items: Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-70423-series-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Eaton 70523 Series Open Circuit Piston Pumps: 6 listed part numbers; displacement 69 cm³/rev; Application Mobile; Code Title Open Circuit Piston Pump; Design Code Second; Fluid Cleanliness 18/13; Front Mounting 2 Bolt C; Identification Standard; Input Shaft 14 Tooth 12/24 Spline, Shaft Ext 55.6 [2.19]; Paint Blue Primer; Shaft Rotation Left; items: Open Circuit Piston Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-70523-series-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Eaton X20 220 Series Open Circuit Piston Pumps: 5 listed part numbers; displacement 28 cm³/rev; Application Construction, Agriculture, Truck And Bus, Material Handling, Other Mobile; Code Title 220 Series Mobile Piston Pump; Control Special Features Bleed Down Orifice; Design Code First; Fluid Cleanliness 21/18/13; Front Mounting 2 Bolt B; Housing Material Cast Iron; Identification Mark Eaton Product Number And Full Model Code On Label; Input Shaft Straight Shaft Diameter 22.2 [.88], Keyway (SAE J744-22-1 B); Max. Input Power 39.2 kW; Paint Blue Primer; Shaft Rotation Right; Shaft Seal Material Fluorocarbon Rubber; items: Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-x20-220-series-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Eaton X20 420 Series Open Circuit Piston Pumps: 29 listed part numbers; displacement 41 cm³/rev to 80 cm³/rev; Code Title Pressure Compensated/Pressure Flow Compensated; Control Special Features None; Controller Type Pressure Compensator; Design Code Second; Fluid Cleanliness 21/18/13; Front Mounting 2 Bolt B; Housing Material Cast Iron; Identification Mark Eaton Product Number And Full Model Code On Label; Input Shaft 13 Tooth 16/32 Spline, Shaft Extension 41.1 [1.62]; Max. Case Drain Temp. 220°F; Max. Input Power 50.7 kW; Paint Blue Primer Per Spec 209-13Cd; Response Time 20 ms; Shaft Rotation Left; Shaft Seal Material Polyacrylate; items: Open Circuit Piston Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-x20-420-series-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Eaton X20 620 Series Open Circuit Piston Pumps: 5 listed part numbers; displacement 74 cm³/rev to 98 cm³/rev; Auxiliary Mounting Cover Plate Mounted On Endcover; Code Title Open Circuit Piston Pump; Control Special Features Bleed Down Orifice; Controller Type Pressure Flow Compensator With .4375-20 Sae O-Ring Load Sense Port Left Side; Design Code First; Fluid Cleanliness 21/18/13; Front Mounting 4 Bolt C; Housing Material Cast Iron; Identification Mark Eaton Product Number And Full Model Code On Label; Input Shaft 31.75 [1.25] Dia Straight Key Shaft (SAE J744-32-1) (Key Included); Max. Case Drain Temp. 104°C; Max. Input Power 92.3 kW; Paint Blue Primer; Response Time 30 ms; Shaft Rotation Right; Shaft Seal Material Fluorocarbon Rubber; items: Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-x20-620-series-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Vickers Piston Pump 3.8 Cubic In./rev 42 Gpm: 4 listed part numbers; flow 42 US gpm; displacement 3.8 in³/rev; Application Backhoes, Dump Truck Lifts, Pavers, Cranes, Cable Plows, Mining Machinery; Discharge Connection Type Sae Code 61 Flange; Mounting Type 2 Bolt B; Rotation CW; Shaft Rotation Right; Shaft Seal Polyacrylate; Shaft Seal Material Polyacrylate; Shaft Type Keyed; items: Piston Pump 3.8 Cubic In./rev 42 Gpm.",
+      "source": "Indus Hydraulics product listing, /p/vickers-piston-pump-3-8-cubic-in-rev-42-gpm"
+    },
+    {
+      "fact": "Vickers PVB Series Variable Displacement Open Circuit Piston Pumps: 33 listed part numbers; items: VICKERS 362030 | VICKERS 362031 | VICKERS 362032 | VICKERS 378804 | VICKERS 379739 | VICKERS 380015 | VICKERS 380132 | VICKERS 380187 | VICKERS 380673 | VICKERS 381652.",
+      "source": "Indus Hydraulics product listing, /p/vickers-pvb-series-variable-displacement-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Vickers PVE Series Variable Displacement Open Circuit Piston Pumps: 5 listed part numbers; Application Skid Steer Loader, Irrigation Equipment; items: VICKERS 02-341814 | VICKERS 02-341815 | VICKERS 02-341818 | VICKERS 02-341854 | VICKERS 02-341857.",
+      "source": "Indus Hydraulics product listing, /p/vickers-pve-series-variable-displacement-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Vickers PVH Series Variable Displacement Open Circuit Piston Pumps: 69 listed part numbers; items: VICKERS 513894 | VICKERS 526671 | VICKERS 526674 | VICKERS 692921 | VICKERS 692925 | VICKERS 692929 | VICKERS 877001 | VICKERS 877002 | VICKERS 877003 | VICKERS 877005.",
+      "source": "Indus Hydraulics product listing, /p/vickers-pvh-series-variable-displacement-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Vickers PVM Series Industrial Axial Piston Pumps: 34 listed part numbers; items: VICKERS 02-328991 | VICKERS 02-334321 | VICKERS 02-335221 | VICKERS 02-335272 | VICKERS 02-335552 | VICKERS 02-335583 | VICKERS 02-341326 | VICKERS 02-346335 | VICKERS 02-347735 | VICKERS 02-347736.",
+      "source": "Indus Hydraulics product listing, /p/vickers-pvm-series-industrial-axial-piston-pumps"
+    },
+    {
+      "fact": "Vickers PVQ Series Variable Displacement Open Circuit Piston Pumps: 57 listed part numbers; items: VICKERS 02-341536 | VICKERS 02-341540 | VICKERS 02-341547 | VICKERS 02-341550 | VICKERS 02-341551 | VICKERS 02-341553 | VICKERS 02-341555 | VICKERS 02-341556 | VICKERS 02-341558 | VICKERS 02-341559.",
+      "source": "Indus Hydraulics product listing, /p/vickers-pvq-series-variable-displacement-open-circuit-piston-pumps"
+    },
+    {
+      "fact": "Williams Direct Mount Piston Pumps: 10 listed part numbers; displacement 0.45 in³/rev to 3.4 in³/rev; Type piston pump; Displacement 0.45–3.4 in³/rev; items: Pump Gasket, 1012 | Model 20 Pump | D58 Williams Direct Mount Pump | D58X Direct Mount Pump | Direct Mount Pump | F98X Direct Mount Pump | Direct Mount Piston Pump with Spline Shaft | F98 Williams Direct Mount Pump | Model 40 Pump | H98 Williams Direct Mount Pump.",
+      "source": "Indus Hydraulics product listing, /p/williams-direct-mount-piston-pumps"
+    },
+    {
+      "fact": "Eaton 2 Series Heavy Duty Closed Circuit Pump Servo Controls: 3 listed part numbers; displacement 75.28 cm³/rev to 105.4 cm³/rev; Application Construction, Agriculture, Truck And Bus, Oil And Gas, And Other Mobile Applications; Auxiliary Mounting B-Pad, Dual 2 Bolt Mount, No Shaft Seal, 13 Tooth 16/32 Pitch Spline; Configuration Single; Control Manual Displacement Control With (Normally Closed) Neutral Lockout Switch (Wide Band Neutral); Design Code A; Design Type None; Identification Standard; Input Shaft 14 Tooth 12/24 Pitch Spline; Mounting Flange Location Standard J744; Shaft Rotation Left; Type Variable Displacement; Valve Plate Propel; items: Pump.",
+      "source": "Indus Hydraulics product listing, /p/eaton-2-series-heavy-duty-closed-circuit-pump-servo-controls"
+    },
+    {
+      "fact": "Haldex High-Pressure Hydraulic Gear Pumps: 7 listed part numbers; displacement 0.065 in³/rev to 0.517 in³/rev; Type gear pump; Displacement 0.065–0.517 in³/rev.",
+      "source": "Indus Hydraulics product listing, /p/haldex-high-pressure-hydraulic-gear-pumps"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aro-piston-pumps-3-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the ARO 3 inch piston pumps used?",
+          "a": "ARO 3 inch piston pumps are listed as 8 part numbers, such as NM2322E-11-F43 and NM2322E-71-F48. The listing gives no displacement, flow, pressure or drive type on its rows."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the ARO 3 inch piston pumps?",
+          "a": "The listing carries 8 part numbers, NM2322E-11-F43, NM2322E-11-F48, NM2322E-71-F43 and NM2322E-71-F48 among them, all described as piston pumps of 3 inch. The listing gives no other data."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the ARO 3 inch piston pumps for my application?",
+          "a": "Quote the part number from the pump nameplate, because the listing gives no displacement, flow, pressure or drive type. Tell us the fluid, the flow and the pressure you need and we confirm the model with ARO."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the ARO 3 inch piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the ARO 3 inch piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the ARO 3 inch piston pumps made from?",
+          "a": "The listing does not state the housing or piston material of the ARO 3 inch piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the ARO 3 inch piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the ARO 3 inch piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the ARO 3 inch piston pumps connect to?",
+          "a": "The ARO 3 inch piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the ARO 3 inch piston pumps be installed and maintained?",
+          "a": "Fill the case of the ARO 3 inch piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the ARO 3 inch piston pumps?",
+          "a": "The ARO 3 inch piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the ARO 3 inch piston pumps differ from the Williams direct mount piston pumps?",
+          "a": "The ARO pumps are 8 part numbers with no displacement on the rows, while [the Williams direct mount piston pumps](/p/williams-direct-mount-piston-pumps) are 10 part numbers of 0.45 to 3.4 in³/rev. Choose by the nameplate part number."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the ARO 3 inch piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the ARO 3 inch piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the ARO 3 inch piston pumps in stock in Dubai?",
+          "a": "Yes. We stock the ARO 3 inch piston pumps at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bosch-rexroth-a10vso-100cc-pump",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bosch Rexroth A10VSO 100 variable axial piston pump used for?",
+          "a": "The Bosch Rexroth A10VSO 100 is a variable-displacement axial piston pump of swashplate design for open-circuit hydrostatic drives, with a displacement of 100 cm³/rev. Flow is proportional to drive speed and displacement, and the displacement changes steplessly with the swashplate angle."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Bosch Rexroth A10VSO 100 variable axial piston pump?",
+          "a": "The listing is the A10VSO 100, series 31, with a displacement of 100 cm³/rev, weighing 49.5 kg or 55.4 kg with a through drive. Rexroth positions series 31 as its all-purpose medium-pressure pump in sizes 18 to 100, with a two-hole ISO 3019-2 flange with a 125 mm pilot."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Bosch Rexroth A10VSO 100 variable axial piston pump?",
+          "a": "Quote the full Rexroth type code from your nameplate, such as A10VSO 100 DR/31R-VPA12N00, so we supply the same configuration. The code gives size 100, the control, series 31, rotation R or L, seals (V for FKM), drive shaft, mounting flange, port plate and through drive."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Bosch Rexroth A10VSO 100 variable axial piston pump have?",
+          "a": "Rexroth states 280 bar nominal and 350 bar maximum pressure for the A10VSO 100, with a maximum speed of 2000 rpm at full displacement. Theoretical flow is 150 L/min at 1500 rpm and 200 L/min at 2000 rpm, before efficiency losses."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Bosch Rexroth A10VSO 100 variable axial piston pump offered in?",
+          "a": "The standard seals are FKM (V), and the pump runs on HLP mineral oil to DIN 51524-2 with an operating viscosity of 10 to 400 mm²/s, optimum 16 to 36 mm²/s, up to +110 °C at the drain port with FKM seals. HFA, HFB and HFC fluids need the E version."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Bosch Rexroth A10VSO 100 variable axial piston pump?",
+          "a": "The listing gives the mounting as an ISO 3019-2 two-hole flange, the ports as SAE flange ports to ISO 6162-1, the fluid as HLP oil to DIN 51524-2 and the filtration as ISO 4406 20/18/15 or better. No certificate is held on the listing; ask for Rexroth's data sheet if you need it."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Bosch Rexroth A10VSO 100 variable axial piston pump mate with?",
+          "a": "A through drive, K01, K52, K68, K04, KB2, KB3, KB4 or K57, lets the pump carry a second pump of up to the same size on the same drive, or N00 for none. Controls are DG, DR, DFR, DFR1, DRG, ED72, ER72 and DFLR."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Bosch Rexroth A10VSO 100 variable axial piston pump?",
+          "a": "The case drain must run to the reservoir with case pressure no more than 2 bar absolute, and inlet pressure must stay above 0.8 bar absolute. Filter to ISO 4406 20/18/15 or better, and fit a separate relief valve, because the DR pressure controller is not overload protection."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Bosch Rexroth A10VSO 100 variable axial piston pump used?",
+          "a": "The A10VSO 100 is used in open-circuit hydrostatic drives on mobile and industrial machinery, where a medium-pressure variable pump with a pressure controller is wanted, with the DR control holding pressure adjustable from 50 to 280 bar."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bosch Rexroth A10VSO 100 variable axial piston pump differ from the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "The A10VSO 100 has a displacement of 100 cm³/rev and a maximum speed of 2000 rpm, while [the Bosch Rexroth A10VSO 71 variable axial piston pump](/p/bosch-rexroth-a10vso-71cc-pump) is the next size in the series 31 range, with its own displacement and speed limit. Choose the size for the flow you need."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Bosch Rexroth A10VSO 100 variable axial piston pump?",
+          "a": "We ship the Bosch Rexroth A10VSO 100 variable axial piston pump from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Bosch Rexroth A10VSO 100 variable axial piston pump available from stock in Dubai for export?",
+          "a": "Yes. We stock the Bosch Rexroth A10VSO 100 variable axial piston pump at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bosch-rexroth-a10vso-45cc-pump",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bosch Rexroth A10VSO 45 variable axial piston pump used for?",
+          "a": "The Bosch Rexroth A10VSO 45 is a variable-displacement axial piston pump of swashplate design for open-circuit hydrostatic drives, with a displacement of 45 cm³/rev. Flow is proportional to drive speed and displacement, and the displacement changes steplessly with the swashplate angle."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Bosch Rexroth A10VSO 45 variable axial piston pump?",
+          "a": "The listing is the A10VSO 45, series 31, with a displacement of 45 cm³/rev, weighing 23.5 kg or 25.1 kg with a through drive. Rexroth positions series 31 as its all-purpose medium-pressure pump in sizes 18 to 100, with a two-hole ISO 3019-2 flange with a 100 mm pilot."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Bosch Rexroth A10VSO 45 variable axial piston pump for my application?",
+          "a": "Quote the full Rexroth type code from your nameplate, such as A10VSO 45 DR/31R-VPA12N00, so we supply the same configuration. The code gives size 45, the control, series 31, rotation R or L, seals (V for FKM), drive shaft, mounting flange, port plate and through drive."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Bosch Rexroth A10VSO 45 variable axial piston pump have?",
+          "a": "Rexroth states 280 bar nominal and 350 bar maximum pressure for the A10VSO 45, with a maximum speed of 2600 rpm at full displacement. Theoretical flow is 68 L/min at 1500 rpm and 117 L/min at 2600 rpm, before efficiency losses."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Bosch Rexroth A10VSO 45 variable axial piston pump offered in?",
+          "a": "The standard seals are FKM (V), and the pump runs on HLP mineral oil to DIN 51524-2 with an operating viscosity of 10 to 400 mm²/s, optimum 16 to 36 mm²/s, up to +110 °C at the drain port with FKM seals. HFA, HFB and HFC fluids need the E version."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Bosch Rexroth A10VSO 45 variable axial piston pump?",
+          "a": "The listing gives the mounting as an ISO 3019-2 two-hole flange, the ports as SAE flange ports to ISO 6162-1, the fluid as HLP oil to DIN 51524-2 and the filtration as ISO 4406 20/18/15 or better. No certificate is held on the listing; ask for Rexroth's data sheet if you need it."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Bosch Rexroth A10VSO 45 variable axial piston pump connect to?",
+          "a": "A through drive, K01, K52, K68, K04, KB2, KB3, KB4 or K57, lets the pump carry a second pump of up to the same size on the same drive, or N00 for none. Controls are DG, DR, DFR, DFR1, DRG, ED72, ER72 and DFLR. The ports are SAE flange ports to ISO 6162-1, 1 in on pressure and 1-1/2 in on suction."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Bosch Rexroth A10VSO 45 variable axial piston pump be installed and maintained?",
+          "a": "The case drain must run to the reservoir with case pressure no more than 2 bar absolute, and inlet pressure must stay above 0.8 bar absolute. Filter to ISO 4406 20/18/15 or better, and fit a separate relief valve, because the DR pressure controller is not overload protection."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Bosch Rexroth A10VSO 45 variable axial piston pump?",
+          "a": "The A10VSO 45 is used in open-circuit hydrostatic drives on mobile and industrial machinery, where a medium-pressure variable pump with a pressure controller is wanted, with the DR control holding pressure adjustable from 50 to 280 bar."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bosch Rexroth A10VSO 45 variable axial piston pump differ from the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "The A10VSO 45 has a displacement of 45 cm³/rev and a maximum speed of 2600 rpm, while [the Bosch Rexroth A10VSO 71 variable axial piston pump](/p/bosch-rexroth-a10vso-71cc-pump) is the next size in the series 31 range, with its own displacement and speed limit. Choose the size for the flow you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Bosch Rexroth A10VSO 45 variable axial piston pump shipped from, and what origin and HS code apply?",
+          "a": "We ship the Bosch Rexroth A10VSO 45 variable axial piston pump from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bosch Rexroth A10VSO 45 variable axial piston pump in stock in Dubai?",
+          "a": "Yes, the Bosch Rexroth A10VSO 45 variable axial piston pump is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bosch-rexroth-a10vso-71cc-pump",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Bosch Rexroth A10VSO 71 variable axial piston pump used?",
+          "a": "The Bosch Rexroth A10VSO 71 is a variable-displacement axial piston pump of swashplate design for open-circuit hydrostatic drives, with a displacement of 71 cm³/rev. Flow is proportional to drive speed and displacement, and the displacement changes steplessly with the swashplate angle."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "The listing is the A10VSO 71, series 31, with a displacement of 71 cm³/rev, weighing 35.2 kg or 38 kg with a through drive. Rexroth positions series 31 as its all-purpose medium-pressure pump in sizes 18 to 100, with a two-hole ISO 3019-2 flange with a 125 mm pilot."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Bosch Rexroth A10VSO 71 variable axial piston pump for my application?",
+          "a": "Quote the full Rexroth type code from your nameplate, such as A10VSO 71 DR/31R-VPA12N00, so we supply the same configuration. The code gives size 71, the control, series 31, rotation R or L, seals (V for FKM), drive shaft, mounting flange, port plate and through drive."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "Rexroth states 280 bar nominal and 350 bar maximum pressure for the A10VSO 71, with a maximum speed of 2200 rpm at full displacement. Theoretical flow is 107 L/min at 1500 rpm and 156 L/min at 2200 rpm, before efficiency losses."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Bosch Rexroth A10VSO 71 variable axial piston pump made from?",
+          "a": "The standard seals are FKM (V), and the pump runs on HLP mineral oil to DIN 51524-2 with an operating viscosity of 10 to 400 mm²/s, optimum 16 to 36 mm²/s, up to +110 °C at the drain port with FKM seals. HFA, HFB and HFC fluids need the E version."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "The listing gives the mounting as an ISO 3019-2 two-hole flange, the ports as SAE flange ports to ISO 6162-1, the fluid as HLP oil to DIN 51524-2 and the filtration as ISO 4406 20/18/15 or better. No certificate is held on the listing; ask for Rexroth's data sheet if you need it."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Bosch Rexroth A10VSO 71 variable axial piston pump connect to?",
+          "a": "A through drive, K01, K52, K68, K04, KB2, KB3, KB4 or K57, lets the pump carry a second pump of up to the same size on the same drive, or N00 for none. Controls are DG, DR, DFR, DFR1, DRG, ED72, ER72 and DFLR."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "The case drain must run to the reservoir with case pressure no more than 2 bar absolute, and inlet pressure must stay above 0.8 bar absolute. Filter to ISO 4406 20/18/15 or better, and fit a separate relief valve, because the DR pressure controller is not overload protection."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "The A10VSO 71 is used in open-circuit hydrostatic drives on mobile and industrial machinery, where a medium-pressure variable pump with a pressure controller is wanted, with the DR control holding pressure adjustable from 50 to 280 bar."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bosch Rexroth A10VSO 71 variable axial piston pump differ from the Bosch Rexroth A10VSO 100 variable axial piston pump?",
+          "a": "The A10VSO 71 has a displacement of 71 cm³/rev and a maximum speed of 2200 rpm, while [the Bosch Rexroth A10VSO 100 variable axial piston pump](/p/bosch-rexroth-a10vso-100cc-pump) is the next size in the series 31 range, with its own displacement and speed limit. Choose the size for the flow you need."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "We ship the Bosch Rexroth A10VSO 71 variable axial piston pump from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Germany. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Bosch Rexroth A10VSO 71 variable axial piston pump?",
+          "a": "12 units on the shelf at Mumbai — dispatched the same working day. Send the part numbers and quantities through [our contact page](/contact) and we confirm price and lead time with the quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bosch-rexroth-axial-piston-variable-pumps-agco-replacement",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Bosch Rexroth axial piston variable pumps, AGCO replacement used?",
+          "a": "Bosch Rexroth axial piston variable pumps, AGCO replacement, are variable piston pumps listed against the AGCO part number each one replaces. The listing carries 10 part numbers of 45 to 100 cm³/rev displacement, up to 4,600 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Bosch Rexroth axial piston variable pumps, AGCO replacement available in?",
+          "a": "The listing carries 10 part numbers, from 45 to 100 cm³/rev, each with the AGCO part number it replaces shown in the equivalents column. Quote the Rexroth number or the AGCO number you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "Variable piston pumps are matched on displacement, control and shaft. Quote the OEM part number from the machine, or the Rexroth number from the nameplate, and we confirm the exact build with the quotation. The rows run 45 to 100 cm³/rev at 2,300 to 2,600 rpm."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "The rows of the Bosch Rexroth axial piston variable pumps, AGCO replacement give a maximum pressure of 4,600 psi and a continuous pressure of 3,600 psi, with maximum speeds listed per size. Use the continuous figure for steady duty and the maximum figure only for short peaks."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Bosch Rexroth axial piston variable pumps, AGCO replacement offered in?",
+          "a": "The listing does not state the housing or piston material of the Bosch Rexroth axial piston variable pumps, AGCO replacement beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "The listing names no ISO or SAE standard for the Bosch Rexroth axial piston variable pumps, AGCO replacement beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Bosch Rexroth axial piston variable pumps, AGCO replacement connect to?",
+          "a": "The Bosch Rexroth axial piston variable pumps, AGCO replacement bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "Fill the case of the Bosch Rexroth axial piston variable pumps, AGCO replacement with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which AGCO part numbers do the Bosch Rexroth axial piston variable pumps, AGCO replacement replace?",
+          "a": "The listing shows the AGCO part number against each Rexroth pump, for example AGCO 515883D1, AGCO CH206-9019 and AGCO CH205-5980. Quote either number and we confirm the match, because the equivalents are as the manufacturer publishes them."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Bosch Rexroth axial piston variable pumps, AGCO replacement differ from the Bosch Rexroth axial piston variable pumps, ASV replacement?",
+          "a": "The AGCO listing carries 10 part numbers of 45 to 100 cm³/rev, while [the Bosch Rexroth axial piston variable pumps, ASV replacement](/p/bosch-rexroth-axial-piston-variable-pumps-asv-replacement) carries 5 part numbers of 60 to 163 cm³/rev. Choose by the OEM part number you replace."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "We ship the Bosch Rexroth axial piston variable pumps, AGCO replacement from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Bosch Rexroth axial piston variable pumps, AGCO replacement available from stock in Dubai for export?",
+          "a": "Yes. We keep the Bosch Rexroth axial piston variable pumps, AGCO replacement in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bosch-rexroth-axial-piston-variable-pumps-asv-replacement",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Bosch Rexroth axial piston variable pumps, ASV replacement used for?",
+          "a": "Bosch Rexroth axial piston variable pumps, ASV replacement, are variable piston pumps listed against the ASV part number each one replaces. The listing carries 5 part numbers of 60 to 163 cm³/rev displacement, up to 4,600 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Bosch Rexroth axial piston variable pumps, ASV replacement?",
+          "a": "The listing carries 5 part numbers, from 60 to 163 cm³/rev, each with the ASV part number it replaces shown in the equivalents column. Quote the Rexroth number or the ASV number you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Bosch Rexroth axial piston variable pumps, ASV replacement for my application?",
+          "a": "Variable piston pumps are matched on displacement, control and shaft. Quote the OEM part number from the machine, or the Rexroth number from the nameplate, and we confirm the exact build with the quotation. The rows run 60 to 163 cm³/rev."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Bosch Rexroth axial piston variable pumps, ASV replacement?",
+          "a": "The rows of the Bosch Rexroth axial piston variable pumps, ASV replacement give a maximum pressure of 4,600 psi and a continuous pressure of 3,600 psi, with maximum speeds listed per size. Use the continuous figure for steady duty and the maximum figure only for short peaks."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Bosch Rexroth axial piston variable pumps, ASV replacement offered in?",
+          "a": "The listing does not state the housing or piston material of the Bosch Rexroth axial piston variable pumps, ASV replacement beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Bosch Rexroth axial piston variable pumps, ASV replacement?",
+          "a": "The listing names no ISO or SAE standard for the Bosch Rexroth axial piston variable pumps, ASV replacement beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Bosch Rexroth axial piston variable pumps, ASV replacement connect to?",
+          "a": "The Bosch Rexroth axial piston variable pumps, ASV replacement bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Bosch Rexroth axial piston variable pumps, ASV replacement be installed and maintained?",
+          "a": "Fill the case of the Bosch Rexroth axial piston variable pumps, ASV replacement with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which ASV part numbers do the Bosch Rexroth axial piston variable pumps, ASV replacement replace?",
+          "a": "The listing shows the ASV part number against each Rexroth pump, for example ASV 2075-578, ASV 2096-371 and ASV 2097-434. Quote either number and we confirm the match, because the equivalents are as the manufacturer publishes them."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Bosch Rexroth axial piston variable pumps, ASV replacement differ from the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "The ASV listing carries 5 part numbers of 60 to 163 cm³/rev, while [the Bosch Rexroth axial piston variable pumps, AGCO replacement](/p/bosch-rexroth-axial-piston-variable-pumps-agco-replacement) carries 10 part numbers of 45 to 100 cm³/rev. Choose by the OEM part number you replace."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Bosch Rexroth axial piston variable pumps, ASV replacement shipped from, and what origin and HS code apply?",
+          "a": "We ship the Bosch Rexroth axial piston variable pumps, ASV replacement from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bosch Rexroth axial piston variable pumps, ASV replacement in stock in Dubai?",
+          "a": "Yes. We stock the Bosch Rexroth axial piston variable pumps, ASV replacement at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bosch-rexroth-axial-piston-variable-pumps-bobcat-replacement",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Bosch Rexroth axial piston variable pumps, BOBCAT replacement used?",
+          "a": "Bosch Rexroth axial piston variable pumps, BOBCAT replacement, are variable piston pumps listed against the BOBCAT part number each one replaces. The listing carries 6 part numbers of 45 to 71 cm³/rev displacement, up to 4,600 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Bosch Rexroth axial piston variable pumps, BOBCAT replacement?",
+          "a": "The listing carries 6 part numbers, from 45 to 71 cm³/rev, each with the BOBCAT part number it replaces shown in the equivalents column. Quote the Rexroth number or the BOBCAT number you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Bosch Rexroth axial piston variable pumps, BOBCAT replacement for my application?",
+          "a": "Variable piston pumps are matched on displacement, control and shaft. Quote the OEM part number from the machine, or the Rexroth number from the nameplate, and we confirm the exact build with the quotation. The rows run 45 to 71 cm³/rev at 2,600 rpm."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Bosch Rexroth axial piston variable pumps, BOBCAT replacement have?",
+          "a": "The rows of the Bosch Rexroth axial piston variable pumps, BOBCAT replacement give a maximum pressure of 4,600 psi and a continuous pressure of 3,600 psi, with maximum speeds listed per size. Use the continuous figure for steady duty and the maximum figure only for short peaks."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Bosch Rexroth axial piston variable pumps, BOBCAT replacement made from?",
+          "a": "The listing does not state the housing or piston material of the Bosch Rexroth axial piston variable pumps, BOBCAT replacement beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Bosch Rexroth axial piston variable pumps, BOBCAT replacement?",
+          "a": "The listing names no ISO or SAE standard for the Bosch Rexroth axial piston variable pumps, BOBCAT replacement beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Bosch Rexroth axial piston variable pumps, BOBCAT replacement connect to?",
+          "a": "The Bosch Rexroth axial piston variable pumps, BOBCAT replacement bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Bosch Rexroth axial piston variable pumps, BOBCAT replacement?",
+          "a": "Fill the case of the Bosch Rexroth axial piston variable pumps, BOBCAT replacement with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which BOBCAT part numbers do the Bosch Rexroth axial piston variable pumps, BOBCAT replacement replace?",
+          "a": "The listing shows the BOBCAT part number against each Rexroth pump, for example BOBCAT 6689769, BOBCAT 7179600 and BOBCAT 6698417. Quote either number and we confirm the match, because the equivalents are as the manufacturer publishes them."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Bosch Rexroth axial piston variable pumps, BOBCAT replacement differ from the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "The Bobcat listing carries 6 part numbers of 45 to 71 cm³/rev, while [the Bosch Rexroth axial piston variable pumps, AGCO replacement](/p/bosch-rexroth-axial-piston-variable-pumps-agco-replacement) carries 10 part numbers of 45 to 100 cm³/rev. Choose by the OEM part number you replace."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Bosch Rexroth axial piston variable pumps, BOBCAT replacement shipped from, and what origin and HS code apply?",
+          "a": "We ship the Bosch Rexroth axial piston variable pumps, BOBCAT replacement from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bosch Rexroth axial piston variable pumps, BOBCAT replacement in stock in Dubai?",
+          "a": "Yes. We keep the Bosch Rexroth axial piston variable pumps, BOBCAT replacement in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bosch-rexroth-axial-piston-variable-pumps-cat-replacement",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Bosch Rexroth axial piston variable pumps, CAT replacement used?",
+          "a": "Bosch Rexroth axial piston variable pumps, CAT replacement, are variable piston pumps listed against the CAT part number each one replaces. The listing carries 179 part numbers of 18 to 280 cm³/rev displacement, up to 4,600 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Bosch Rexroth axial piston variable pumps, CAT replacement?",
+          "a": "The listing carries 179 part numbers, from 18 to 280 cm³/rev, each with the CAT part number it replaces shown in the equivalents column. Quote the Rexroth number or the CAT number you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Bosch Rexroth axial piston variable pumps, CAT replacement?",
+          "a": "Variable piston pumps are matched on displacement, control and shaft. Quote the OEM part number from the machine, or the Rexroth number from the nameplate, and we confirm the exact build with the quotation. The rows run 18 to 280 cm³/rev at 2,000 to 3,300 rpm."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Bosch Rexroth axial piston variable pumps, CAT replacement have?",
+          "a": "The rows of the Bosch Rexroth axial piston variable pumps, CAT replacement give a maximum pressure of 4,600 psi and a continuous pressure of 3,600 psi, with maximum speeds listed per size. Use the continuous figure for steady duty and the maximum figure only for short peaks."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Bosch Rexroth axial piston variable pumps, CAT replacement offered in?",
+          "a": "The listing does not state the housing or piston material of the Bosch Rexroth axial piston variable pumps, CAT replacement beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Bosch Rexroth axial piston variable pumps, CAT replacement?",
+          "a": "The listing names no ISO or SAE standard for the Bosch Rexroth axial piston variable pumps, CAT replacement beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Bosch Rexroth axial piston variable pumps, CAT replacement connect to?",
+          "a": "The Bosch Rexroth axial piston variable pumps, CAT replacement bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Bosch Rexroth axial piston variable pumps, CAT replacement be installed and maintained?",
+          "a": "Fill the case of the Bosch Rexroth axial piston variable pumps, CAT replacement with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which CAT part numbers do the Bosch Rexroth axial piston variable pumps, CAT replacement replace?",
+          "a": "The listing shows the CAT part number against each Rexroth pump, for example CAT 398-8977, CAT 481-4012 and CAT 174-4126. Quote either number and we confirm the match, because the equivalents are as the manufacturer publishes them."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Bosch Rexroth axial piston variable pumps, CAT replacement differ from the Bosch Rexroth axial piston variable pumps, AGCO replacement?",
+          "a": "The CAT listing carries 179 part numbers of 18 to 280 cm³/rev, while [the Bosch Rexroth axial piston variable pumps, AGCO replacement](/p/bosch-rexroth-axial-piston-variable-pumps-agco-replacement) carries 10 part numbers of 45 to 100 cm³/rev. Choose by the OEM part number you replace."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Bosch Rexroth axial piston variable pumps, CAT replacement shipped from, and what origin and HS code apply?",
+          "a": "We ship the Bosch Rexroth axial piston variable pumps, CAT replacement from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bosch Rexroth axial piston variable pumps, CAT replacement in stock in Dubai?",
+          "a": "Yes. We stock the Bosch Rexroth axial piston variable pumps, CAT replacement at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-1-series-heavy-duty-closed-circuit-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Eaton 1 Series heavy duty closed circuit pumps used?",
+          "a": "Eaton 1 Series heavy duty closed circuit pumps are variable displacement pumps with a charge pump, a 14 tooth 12/24 pitch input spline and a standard J744 flange. The listing carries 4 part numbers, such as 3923-002 and 4623-148, of 63.66 to 75.28 cc/rev."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Eaton 1 Series heavy duty closed circuit pumps?",
+          "a": "The Eaton 1 Series heavy duty closed circuit pumps are listed as 4 part numbers, for example 3923-002, 3923-020 and 4623-148. Together they cover displacement 63.66 cm³/rev to 75.28 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Eaton 1 Series heavy duty closed circuit pumps for my application?",
+          "a": "Choose the displacement, 63.66 or 75.28 cc/rev, and the control from the part number. The rows are named Control, and the specification gives a single configuration, left rotation and a standard V-groove valve plate."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Eaton 1 Series heavy duty closed circuit pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton 1 Series heavy duty closed circuit pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton 1 Series heavy duty closed circuit pumps made from?",
+          "a": "The listing does not state the housing or piston material of the Eaton 1 Series heavy duty closed circuit pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Eaton 1 Series heavy duty closed circuit pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton 1 Series heavy duty closed circuit pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton 1 Series heavy duty closed circuit pumps mate with?",
+          "a": "The Eaton 1 Series heavy duty closed circuit pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Eaton 1 Series heavy duty closed circuit pumps be installed and maintained?",
+          "a": "Fill the case of the Eaton 1 Series heavy duty closed circuit pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Eaton 1 Series heavy duty closed circuit pumps?",
+          "a": "The Eaton 1 Series heavy duty closed circuit pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton 1 Series heavy duty closed circuit pumps differ from Eaton 2 Series Heavy Duty Closed Circuit Pump Servo Controls?",
+          "a": "The Eaton 1 Series are 4 closed-circuit pumps of 63.66 to 75.28 cc/rev, while [Eaton 2 Series Heavy Duty Closed Circuit Pump Servo Controls](/p/eaton-2-series-heavy-duty-closed-circuit-pump-servo-controls) are 3 pumps of 75.28 and 105.4 cc/rev with a manual displacement control. Choose by displacement."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton 1 Series heavy duty closed circuit pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton 1 Series heavy duty closed circuit pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Eaton 1 Series heavy duty closed circuit pumps from stock in the UAE?",
+          "a": "Yes. We keep the Eaton 1 Series heavy duty closed circuit pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-70122-series-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Eaton 70122 series open circuit piston pumps used?",
+          "a": "Eaton 70122 series open circuit piston pumps are pressure compensated mobile pumps of 19 cc/rev with a 2 bolt A mount and a 9 tooth 16/32 spline shaft. The listing carries 13 part numbers, such as 70122-LBC and 70122-RAZ."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Eaton 70122 series open circuit piston pumps?",
+          "a": "The Eaton 70122 series open circuit piston pumps are listed as 13 part numbers, for example 70122-LBC, 70122-RAZ and 70122-RCK. Together they cover displacement 19 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Eaton 70122 series open circuit piston pumps?",
+          "a": "Choose the rotation, left or right, and the control and port version from the part number suffix, such as 70122-LBC or 70122-RAZ. The listing gives 19 cc/rev, fluid cleanliness 18/13 and a first design code."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Eaton 70122 series open circuit piston pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton 70122 series open circuit piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton 70122 series open circuit piston pumps made from?",
+          "a": "The listing does not state the housing or piston material of the Eaton 70122 series open circuit piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Eaton 70122 series open circuit piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton 70122 series open circuit piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Eaton 70122 series open circuit piston pumps connect to?",
+          "a": "The Eaton 70122 series open circuit piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Eaton 70122 series open circuit piston pumps be installed and maintained?",
+          "a": "Fill the case of the Eaton 70122 series open circuit piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Eaton 70122 series open circuit piston pumps?",
+          "a": "The Eaton 70122 series open circuit piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton 70122 series open circuit piston pumps differ from the Eaton 70422 series open circuit piston pumps?",
+          "a": "The 70122 is a 19 cc/rev pump with a 2 bolt A mount in 13 part numbers, while [the Eaton 70422 series open circuit piston pumps](/p/eaton-70422-series-open-circuit-piston-pumps) is a 38 cc/rev pump with a 2 bolt B mount in 9 part numbers. Choose by displacement and mount."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton 70122 series open circuit piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton 70122 series open circuit piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Eaton 70122 series open circuit piston pumps available from stock in Dubai for export?",
+          "a": "Yes. We keep the Eaton 70122 series open circuit piston pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-70422-series-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton 70422 series open circuit piston pumps used for?",
+          "a": "Eaton 70422 series open circuit piston pumps are mobile pumps of 38 cc/rev with a 2 bolt B mount and a 13 tooth 16/32 spline shaft. The listing carries 9 part numbers, such as 70422-LAG and 70422-RCG."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Eaton 70422 series open circuit piston pumps?",
+          "a": "The Eaton 70422 series open circuit piston pumps are listed as 9 part numbers, for example 70422-LAG, 70422-RAU and 70422-REK. Together they cover displacement 38 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Eaton 70422 series open circuit piston pumps?",
+          "a": "Choose the rotation, left or right, and the control and port version from the part number suffix. The listing gives 38 cc/rev, fluid cleanliness 18/13 and a first design code."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Eaton 70422 series open circuit piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton 70422 series open circuit piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Eaton 70422 series open circuit piston pumps offered in?",
+          "a": "The listing does not state the housing or piston material of the Eaton 70422 series open circuit piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Eaton 70422 series open circuit piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton 70422 series open circuit piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton 70422 series open circuit piston pumps mate with?",
+          "a": "The Eaton 70422 series open circuit piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Eaton 70422 series open circuit piston pumps?",
+          "a": "Fill the case of the Eaton 70422 series open circuit piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Eaton 70422 series open circuit piston pumps used?",
+          "a": "The Eaton 70422 series open circuit piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton 70422 series open circuit piston pumps differ from the Eaton 70423 series open circuit piston pumps?",
+          "a": "The 70422 is a 38 cc/rev pump with a 2 bolt B mount, while [the Eaton 70423 series open circuit piston pumps](/p/eaton-70423-series-open-circuit-piston-pumps) is a 45.4 cc/rev pump with a 2 bolt B-B mount. Choose by displacement and mount."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton 70422 series open circuit piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton 70422 series open circuit piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Eaton 70422 series open circuit piston pumps available from stock in Dubai for export?",
+          "a": "Yes. We stock the Eaton 70422 series open circuit piston pumps at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-70423-series-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton 70423 series open circuit piston pumps used for?",
+          "a": "Eaton 70423 series open circuit piston pumps are mobile pumps of 45.4 cc/rev with a 2 bolt B-B front mount. The listing carries 9 part numbers, such as 70423-LBA and 70423-RBM."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Eaton 70423 series open circuit piston pumps?",
+          "a": "The Eaton 70423 series open circuit piston pumps are listed as 9 part numbers, for example 70423-LBA, 70423-LBF and 70423-RBT. Together they cover displacement 45.4 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Eaton 70423 series open circuit piston pumps?",
+          "a": "Choose the rotation, left or right, and the control and port version from the part number suffix. The listing gives 45.4 cc/rev, fluid cleanliness 18/13 and a first design code."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Eaton 70423 series open circuit piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton 70423 series open circuit piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton 70423 series open circuit piston pumps made from?",
+          "a": "The listing does not state the housing or piston material of the Eaton 70423 series open circuit piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Eaton 70423 series open circuit piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton 70423 series open circuit piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Eaton 70423 series open circuit piston pumps connect to?",
+          "a": "The Eaton 70423 series open circuit piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Eaton 70423 series open circuit piston pumps be installed and maintained?",
+          "a": "Fill the case of the Eaton 70423 series open circuit piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Eaton 70423 series open circuit piston pumps?",
+          "a": "The Eaton 70423 series open circuit piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton 70423 series open circuit piston pumps differ from the Eaton 70422 series open circuit piston pumps?",
+          "a": "The 70423 is a 45.4 cc/rev pump with a 2 bolt B-B mount, while [the Eaton 70422 series open circuit piston pumps](/p/eaton-70422-series-open-circuit-piston-pumps) is a 38 cc/rev pump with a 2 bolt B mount. Choose by displacement and mount."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Eaton 70423 series open circuit piston pumps?",
+          "a": "We ship the Eaton 70423 series open circuit piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Eaton 70423 series open circuit piston pumps available from stock in Dubai for export?",
+          "a": "Yes, the Eaton 70423 series open circuit piston pumps are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-70523-series-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton 70523 series open circuit piston pumps used for?",
+          "a": "Eaton 70523 series open circuit piston pumps are mobile pumps of 69 cc/rev with a 2 bolt C mount and a 14 tooth 12/24 spline shaft. The listing carries 6 part numbers, such as 70523-LAA and 70523-LBG."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Eaton 70523 series open circuit piston pumps?",
+          "a": "The Eaton 70523 series open circuit piston pumps are listed as 6 part numbers, for example 70523-LAA, 70523-LBG and 70523-RBE. Together they cover displacement 69 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Eaton 70523 series open circuit piston pumps?",
+          "a": "Choose the rotation, left or right, and the control and port version from the part number suffix. The listing gives 69 cc/rev, a second design code and fluid cleanliness 18/13."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Eaton 70523 series open circuit piston pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton 70523 series open circuit piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Eaton 70523 series open circuit piston pumps offered in?",
+          "a": "The listing does not state the housing or piston material of the Eaton 70523 series open circuit piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Eaton 70523 series open circuit piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton 70523 series open circuit piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton 70523 series open circuit piston pumps mate with?",
+          "a": "The Eaton 70523 series open circuit piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Eaton 70523 series open circuit piston pumps be installed and maintained?",
+          "a": "Fill the case of the Eaton 70523 series open circuit piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Eaton 70523 series open circuit piston pumps?",
+          "a": "The Eaton 70523 series open circuit piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton 70523 series open circuit piston pumps differ from the Eaton 70423 series open circuit piston pumps?",
+          "a": "The 70523 is a 69 cc/rev pump with a 2 bolt C mount in 6 part numbers, while [the Eaton 70423 series open circuit piston pumps](/p/eaton-70423-series-open-circuit-piston-pumps) is a 45.4 cc/rev pump with a 2 bolt B-B mount. Choose by displacement and mount."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton 70523 series open circuit piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton 70523 series open circuit piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Eaton 70523 series open circuit piston pumps available from stock in Dubai for export?",
+          "a": "Yes, we hold the Eaton 70523 series open circuit piston pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-x20-220-series-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Eaton X20 220 series open circuit piston pumps used?",
+          "a": "Eaton X20 220 series open circuit piston pumps are mobile pumps of 28 cc/rev with a cast iron housing, a 2 bolt B mount and a maximum input power of 39.2 kW. The listing carries 5 part numbers, such as 222AK00026A."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Eaton X20 220 series open circuit piston pumps?",
+          "a": "The Eaton X20 220 series open circuit piston pumps are listed as 5 part numbers, for example 222AK00026A, 222AK00120A and 222AK00122A. Together they cover displacement 28 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Eaton X20 220 series open circuit piston pumps?",
+          "a": "Choose the part number from the Eaton nameplate, such as 222AK00026A or 222AK00119A: the specification gives right rotation, a straight 22.2 mm shaft with keyway, a bleed down orifice and fluid cleanliness 21/18/13."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Eaton X20 220 series open circuit piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton X20 220 series open circuit piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton X20 220 series open circuit piston pumps made from?",
+          "a": "The listing gives a cast iron housing and fluorocarbon rubber shaft seals for the X20 220 series, with a blue primer finish. Cast iron suits mobile machinery, and fluorocarbon seals tolerate heat."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Eaton X20 220 series open circuit piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton X20 220 series open circuit piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton X20 220 series open circuit piston pumps mate with?",
+          "a": "The Eaton X20 220 series open circuit piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Eaton X20 220 series open circuit piston pumps?",
+          "a": "Fill the case of the Eaton X20 220 series open circuit piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Eaton X20 220 series open circuit piston pumps used?",
+          "a": "The Eaton X20 220 series open circuit piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton X20 220 series open circuit piston pumps differ from the Eaton X20 420 series open circuit piston pumps?",
+          "a": "The X20 220 is a 28 cc/rev pump with 39.2 kW maximum input power in 5 part numbers, while [the Eaton X20 420 series open circuit piston pumps](/p/eaton-x20-420-series-open-circuit-piston-pumps) covers 41 to 80 cc/rev with 50.7 kW. Choose by displacement and power."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton X20 220 series open circuit piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton X20 220 series open circuit piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Eaton X20 220 series open circuit piston pumps in stock in Dubai?",
+          "a": "Yes, the Eaton X20 220 series open circuit piston pumps are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-x20-420-series-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton X20 420 series open circuit piston pumps used for?",
+          "a": "Eaton X20 420 series open circuit piston pumps are pressure compensated mobile pumps from 41 to 80 cc/rev with a cast iron housing and a 2 bolt B mount. The listing carries 29 part numbers, such as 421AK00962B, with a 20 ms response time."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Eaton X20 420 series open circuit piston pumps?",
+          "a": "The Eaton X20 420 series open circuit piston pumps are listed as 29 part numbers, for example 421AK00962B, 421AK00392B and 421AK00488B. Together they cover displacement 41 cm³/rev to 80 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Eaton X20 420 series open circuit piston pumps?",
+          "a": "Choose the displacement, 41 to 80 cc/rev, and the part number from the Eaton nameplate, such as 421AK00962B. The specification gives left rotation, a 13 tooth 16/32 spline shaft, a pressure compensator and a maximum input power of 50.7 kW."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Eaton X20 420 series open circuit piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton X20 420 series open circuit piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Eaton X20 420 series open circuit piston pumps offered in?",
+          "a": "The listing gives a cast iron housing and polyacrylate shaft seals for the X20 420 series, with a maximum case drain temperature of 220 °F and a blue primer finish. Cast iron suits mobile machinery."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Eaton X20 420 series open circuit piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton X20 420 series open circuit piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton X20 420 series open circuit piston pumps mate with?",
+          "a": "The Eaton X20 420 series open circuit piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Eaton X20 420 series open circuit piston pumps be installed and maintained?",
+          "a": "Fill the case of the Eaton X20 420 series open circuit piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Eaton X20 420 series open circuit piston pumps?",
+          "a": "The Eaton X20 420 series open circuit piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton X20 420 series open circuit piston pumps differ from the Eaton X20 620 series open circuit piston pumps?",
+          "a": "The X20 420 covers 41 to 80 cc/rev with a 2 bolt B mount in 29 part numbers, while [the Eaton X20 620 series open circuit piston pumps](/p/eaton-x20-620-series-open-circuit-piston-pumps) covers 74 to 98 cc/rev with a 4 bolt C mount. Choose by displacement and mount."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton X20 420 series open circuit piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton X20 420 series open circuit piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Eaton X20 420 series open circuit piston pumps from stock in the UAE?",
+          "a": "Yes, we hold the Eaton X20 420 series open circuit piston pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-x20-620-series-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Eaton X20 620 series open circuit piston pumps used?",
+          "a": "Eaton X20 620 series open circuit piston pumps are pressure flow compensated mobile pumps from 74 to 98 cc/rev with a cast iron housing, a 4 bolt C mount and a maximum input power of 92.3 kW. The listing carries 5 part numbers, such as 622AK00179A."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Eaton X20 620 series open circuit piston pumps?",
+          "a": "The Eaton X20 620 series open circuit piston pumps are listed as 5 part numbers, for example 622AK00179A, 622AK00100A and 622AK00155A. Together they cover displacement 74 cm³/rev to 98 cm³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Eaton X20 620 series open circuit piston pumps for my application?",
+          "a": "Choose the displacement, 74 to 98 cc/rev, and the part number from the Eaton nameplate. The specification gives right rotation, a straight 31.75 mm key shaft, a load sense port and a 30 ms response time."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Eaton X20 620 series open circuit piston pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Eaton X20 620 series open circuit piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Eaton X20 620 series open circuit piston pumps offered in?",
+          "a": "The listing gives a cast iron housing and fluorocarbon rubber shaft seals for the X20 620 series, with a maximum case drain temperature of 104 °C. Cast iron suits mobile machinery."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Eaton X20 620 series open circuit piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Eaton X20 620 series open circuit piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton X20 620 series open circuit piston pumps mate with?",
+          "a": "The Eaton X20 620 series open circuit piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Eaton X20 620 series open circuit piston pumps?",
+          "a": "Fill the case of the Eaton X20 620 series open circuit piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Eaton X20 620 series open circuit piston pumps?",
+          "a": "The listing names wheel loaders, motor graders, concrete equipment, backhoe loaders, vacuum trucks, telehandlers, refuse trucks, rail maintenance, forestry harvesters and drill rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton X20 620 series open circuit piston pumps differ from the Eaton X20 420 series open circuit piston pumps?",
+          "a": "The X20 620 covers 74 to 98 cc/rev with a 4 bolt C mount and 92.3 kW in 5 part numbers, while [the Eaton X20 420 series open circuit piston pumps](/p/eaton-x20-420-series-open-circuit-piston-pumps) covers 41 to 80 cc/rev with 50.7 kW. Choose by displacement and power."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Eaton X20 620 series open circuit piston pumps?",
+          "a": "We ship the Eaton X20 620 series open circuit piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Eaton X20 620 series open circuit piston pumps available from stock in Dubai for export?",
+          "a": "Yes, the Eaton X20 620 series open circuit piston pumps are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-piston-pump-3-8-cubic-in-rev-42-gpm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Vickers piston pump, 3.8 cu in/rev, 42 gpm used?",
+          "a": "The Vickers piston pump of 3.8 cubic in. Per revolution and 42 gpm is an open circuit piston pump with a 2 bolt B mount, an SAE code 61 discharge flange and a keyed shaft. The listing carries 4 part numbers, 421AK00454B to 421AK01109B."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Vickers piston pump, 3.8 cu in/rev, 42 gpm available in?",
+          "a": "The listing carries 4 part numbers, 421AK00454B, 421AK01108B, 421AK01109B and 421AK01107B, all 3.8 cubic in. Per revolution at 42 gpm, with right rotation and a polyacrylate shaft seal."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Vickers piston pump, 3.8 cu in/rev, 42 gpm for my application?",
+          "a": "Choose by the part number from the nameplate, since all four are 3.8 cu. In. Per revolution at 42 gpm. The listing gives clockwise rotation, a keyed shaft, a 2 bolt B mount and an SAE code 61 discharge flange."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Vickers piston pump, 3.8 cu in/rev, 42 gpm?",
+          "a": "The listing gives no pressure rating on its rows for the Vickers piston pump, 3.8 cu in/rev, 42 gpm, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Vickers piston pump, 3.8 cu in/rev, 42 gpm offered in?",
+          "a": "The listing does not state the housing or piston material of the Vickers piston pump, 3.8 cu in/rev, 42 gpm beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Vickers piston pump, 3.8 cu in/rev, 42 gpm?",
+          "a": "The listing names no ISO or SAE standard for the Vickers piston pump, 3.8 cu in/rev, 42 gpm beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Vickers piston pump, 3.8 cu in/rev, 42 gpm connect to?",
+          "a": "The Vickers piston pump, 3.8 cu in/rev, 42 gpm bolts to the engine, PTO or gearbox with the mount in the part data, and connects to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Vickers piston pump, 3.8 cu in/rev, 42 gpm?",
+          "a": "Fill the case of the Vickers piston pump, 3.8 cu in/rev, 42 gpm with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Vickers piston pump, 3.8 cu in/rev, 42 gpm used?",
+          "a": "The listing names backhoes, dump truck lifts, pavers, cranes, cable plows and mining machinery as the applications, where a 42 gpm open circuit piston pump supplies the machine hydraulics."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Vickers piston pump, 3.8 cu in/rev, 42 gpm differ from the Eaton X20 420 series open circuit piston pumps?",
+          "a": "The Vickers pump is a 3.8 cu. In. Per revolution, 42 gpm open circuit pump in 4 part numbers, while [the Eaton X20 420 series open circuit piston pumps](/p/eaton-x20-420-series-open-circuit-piston-pumps) covers 41 to 80 cc/rev in 29 part numbers with the same 421AK numbering. Choose by the nameplate part number."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Vickers piston pump, 3.8 cu in/rev, 42 gpm?",
+          "a": "We ship the Vickers piston pump, 3.8 cu in/rev, 42 gpm from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8413309090; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Vickers piston pump, 3.8 cu in/rev, 42 gpm in stock in Dubai?",
+          "a": "Yes. We stock the Vickers piston pump, 3.8 cu in/rev, 42 gpm at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-pvb-series-variable-displacement-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Vickers PVB piston pumps used?",
+          "a": "The Vickers PVB piston pumps are variable displacement open circuit piston pumps, as the series name states, listed in 33 part numbers with the Vickers number as the part number. The listing gives no displacement, flow or pressure on the rows. The listing names mining machinery, injection moulding, metal forming, oil and gas equipment, conveyor lines, primary metals and metal cutting."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Vickers PVB piston pumps available in?",
+          "a": "The listing carries 33 part numbers, shown as Vickers numbers such as 362030, 02-341459 and 02-348624, with no displacement on the rows. Quote the full part number from the nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Vickers PVB piston pumps?",
+          "a": "Quote the part number of the Vickers PVB piston pumps from the pump nameplate, because the listing gives no displacement, flow or pressure on the rows. Match the mount, shaft, rotation, control and ports to the pump you replace."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Vickers PVB piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Vickers PVB piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Vickers PVB piston pumps made from?",
+          "a": "The listing does not state the housing or piston material of the Vickers PVB piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Vickers PVB piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Vickers PVB piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Vickers PVB piston pumps mate with?",
+          "a": "The Vickers PVB piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Vickers PVB piston pumps?",
+          "a": "Fill the case of the Vickers PVB piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Vickers PVB piston pumps used?",
+          "a": "The Vickers PVB piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Vickers PVB piston pumps differ from the Vickers PVQ piston pumps?",
+          "a": "The PVB carries 33 part numbers, while [the Vickers PVQ piston pumps](/p/vickers-pvq-series-variable-displacement-open-circuit-piston-pumps) carries 57. Both are named for the same industrial applications, so choose by the nameplate part number."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Vickers PVB piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Vickers PVB piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Vickers PVB piston pumps available from stock in Dubai for export?",
+          "a": "Yes. We stock the Vickers PVB piston pumps at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-pve-series-variable-displacement-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Vickers PVE piston pumps used?",
+          "a": "The Vickers PVE piston pumps are variable displacement open circuit piston pumps, as the series name states, listed in 5 part numbers with the Vickers number as the part number. The listing gives no displacement, flow or pressure on the rows. The listing names skid steer loaders and irrigation equipment."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Vickers PVE piston pumps?",
+          "a": "The listing carries 5 part numbers, shown as Vickers numbers such as 02-341814, 02-341818 and 02-341857, with no displacement on the rows. Quote the full part number from the nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Vickers PVE piston pumps for my application?",
+          "a": "Quote the part number of the Vickers PVE piston pumps from the pump nameplate, because the listing gives no displacement, flow or pressure on the rows. Match the mount, shaft, rotation, control and ports to the pump you replace."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Vickers PVE piston pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Vickers PVE piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Vickers PVE piston pumps made from?",
+          "a": "The listing does not state the housing or piston material of the Vickers PVE piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Vickers PVE piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Vickers PVE piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Vickers PVE piston pumps mate with?",
+          "a": "The Vickers PVE piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Vickers PVE piston pumps be installed and maintained?",
+          "a": "Fill the case of the Vickers PVE piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Vickers PVE piston pumps used?",
+          "a": "The Vickers PVE piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Vickers PVE piston pumps differ from the Vickers PVB piston pumps?",
+          "a": "The PVE carries 5 part numbers for skid steer loaders and irrigation, while [the Vickers PVB piston pumps](/p/vickers-pvb-series-variable-displacement-open-circuit-piston-pumps) carries 33 for industrial machinery. Choose by the nameplate part number."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Vickers PVE piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Vickers PVE piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Vickers PVE piston pumps from stock in the UAE?",
+          "a": "Yes, we hold the Vickers PVE piston pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-pvh-series-variable-displacement-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Vickers PVH piston pumps used for?",
+          "a": "The Vickers PVH piston pumps are variable displacement open circuit piston pumps, as the series name states, listed in 69 part numbers with the Vickers number as the part number. The listing gives no displacement, flow or pressure on the rows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Vickers PVH piston pumps available in?",
+          "a": "The listing carries 69 part numbers, shown as Vickers numbers such as 513894, 02-102869 and 02-341571, with no displacement on the rows. Quote the full part number from the nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Vickers PVH piston pumps?",
+          "a": "Quote the part number of the Vickers PVH piston pumps from the pump nameplate, because the listing gives no displacement, flow or pressure on the rows. Match the mount, shaft, rotation, control and ports to the pump you replace."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Vickers PVH piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Vickers PVH piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Vickers PVH piston pumps offered in?",
+          "a": "The listing does not state the housing or piston material of the Vickers PVH piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Vickers PVH piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Vickers PVH piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Vickers PVH piston pumps mate with?",
+          "a": "The Vickers PVH piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Vickers PVH piston pumps?",
+          "a": "Fill the case of the Vickers PVH piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Vickers PVH piston pumps?",
+          "a": "The Vickers PVH piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Vickers PVH piston pumps differ from the Vickers PVQ piston pumps?",
+          "a": "The PVH carries 69 part numbers, while [the Vickers PVQ piston pumps](/p/vickers-pvq-series-variable-displacement-open-circuit-piston-pumps) carries 57. Neither listing gives displacement, flow or pressure on the rows, so choose by the nameplate part number."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Vickers PVH piston pumps?",
+          "a": "We ship the Vickers PVH piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Vickers PVH piston pumps from stock in the UAE?",
+          "a": "Yes, we hold the Vickers PVH piston pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-pvm-series-industrial-axial-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Vickers PVM piston pumps used for?",
+          "a": "The Vickers PVM piston pumps are variable displacement open circuit piston pumps, as the series name states, listed in 34 part numbers with the Vickers number as the part number. The listing gives no displacement, flow or pressure on the rows."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Vickers PVM piston pumps?",
+          "a": "The listing carries 34 part numbers, shown as Vickers numbers such as 02-328991, 123AL00125A and 123AL00769A, with no displacement on the rows. Quote the full part number from the nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Vickers PVM piston pumps for my application?",
+          "a": "Quote the part number of the Vickers PVM piston pumps from the pump nameplate, because the listing gives no displacement, flow or pressure on the rows. Match the mount, shaft, rotation, control and ports to the pump you replace."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Vickers PVM piston pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Vickers PVM piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Vickers PVM piston pumps offered in?",
+          "a": "The listing does not state the housing or piston material of the Vickers PVM piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Vickers PVM piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Vickers PVM piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Vickers PVM piston pumps connect to?",
+          "a": "The Vickers PVM piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Vickers PVM piston pumps?",
+          "a": "Fill the case of the Vickers PVM piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Vickers PVM piston pumps used?",
+          "a": "The Vickers PVM piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Vickers PVM piston pumps differ from the Vickers PVH piston pumps?",
+          "a": "The PVM carries 34 part numbers, while [the Vickers PVH piston pumps](/p/vickers-pvh-series-variable-displacement-open-circuit-piston-pumps) carries 69. Neither listing gives displacement, flow or pressure on the rows, so choose by the nameplate part number."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Vickers PVM piston pumps?",
+          "a": "We ship the Vickers PVM piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Vickers PVM piston pumps from stock in the UAE?",
+          "a": "Yes. We stock the Vickers PVM piston pumps at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "vickers-pvq-series-variable-displacement-open-circuit-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Vickers PVQ piston pumps used?",
+          "a": "The Vickers PVQ piston pumps are variable displacement open circuit piston pumps, as the series name states, listed in 57 part numbers with the Vickers number as the part number. The listing gives no displacement, flow or pressure on the rows. The listing names mining machinery, injection moulding, metal forming, oil and gas equipment, conveyor lines, primary metals and metal cutting."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Vickers PVQ piston pumps available in?",
+          "a": "The listing carries 57 part numbers, shown as Vickers numbers such as 02-341536, 02-341638 and 02-466210, with no displacement on the rows. Quote the full part number from the nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Vickers PVQ piston pumps for my application?",
+          "a": "Quote the part number of the Vickers PVQ piston pumps from the pump nameplate, because the listing gives no displacement, flow or pressure on the rows. Match the mount, shaft, rotation, control and ports to the pump you replace."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Vickers PVQ piston pumps have?",
+          "a": "The listing gives no pressure rating on its rows for the Vickers PVQ piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Vickers PVQ piston pumps offered in?",
+          "a": "The listing does not state the housing or piston material of the Vickers PVQ piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Vickers PVQ piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Vickers PVQ piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Vickers PVQ piston pumps connect to?",
+          "a": "The Vickers PVQ piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Vickers PVQ piston pumps be installed and maintained?",
+          "a": "Fill the case of the Vickers PVQ piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Vickers PVQ piston pumps?",
+          "a": "The Vickers PVQ piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Vickers PVQ piston pumps differ from the Vickers PVB piston pumps?",
+          "a": "The PVQ carries 57 part numbers, while [the Vickers PVB piston pumps](/p/vickers-pvb-series-variable-displacement-open-circuit-piston-pumps) carries 33. Both are named for the same industrial applications, so choose by the nameplate part number."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Vickers PVQ piston pumps shipped from, and what origin and HS code apply?",
+          "a": "We ship the Vickers PVQ piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Vickers PVQ piston pumps from stock in the UAE?",
+          "a": "Yes, we hold the Vickers PVQ piston pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "williams-direct-mount-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Williams direct mount piston pumps used for?",
+          "a": "Williams direct mount piston pumps are small piston pumps from 0.45 to 3.4 in³/rev that mount directly on a reservoir, with a keyed 1.00 in shaft. The listing carries 10 part numbers, such as 20-3 and D58-3, and a pump gasket."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Williams direct mount piston pumps?",
+          "a": "The Williams direct mount piston pumps are listed as 10 part numbers, for example 1012G, F98X-1 and H98-4. Together they cover displacement 0.45 in³/rev to 3.4 in³/rev. Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Williams direct mount piston pumps?",
+          "a": "Choose the displacement, from 0.45 in³/rev for the model 20 to larger D58 pumps, then the shaft, keyed 1.00 in, and the rotation, dual on some models. Flow depends on displacement and speed, so size the pump for the flow your tool needs."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Williams direct mount piston pumps?",
+          "a": "The listing gives no pressure rating on its rows for the Williams direct mount piston pumps, so we do not quote one. Quote the part number and we confirm the rated pressure, speed limit and control with the maker, because they depend on the model and the control."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Williams direct mount piston pumps made from?",
+          "a": "The listing does not state the housing or piston material of the Williams direct mount piston pumps beyond its specification. Quote the part number and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Williams direct mount piston pumps?",
+          "a": "The listing names no ISO or SAE standard for the Williams direct mount piston pumps beyond the mount and shaft names in the part data, and holds no certificates. If your project needs a conformity document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Williams direct mount piston pumps connect to?",
+          "a": "The Williams direct mount piston pumps bolt to the engine, PTO or gearbox with the mount in the part data, and connect to hoses through its ports. Match the mount, shaft, rotation and ports to the pump you are replacing, and see [our piston pumps shelf](/c/hydraulic-piston-pumps) for other pumps."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Williams direct mount piston pumps be installed and maintained?",
+          "a": "Fill the case of the Williams direct mount piston pumps with clean oil before starting, run the case drain line to the reservoir, check rotation against the drive and bleed the air before loading. Keep the inlet line short and large, and filter the oil to the cleanliness the maker states."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Williams direct mount piston pumps?",
+          "a": "The Williams direct mount piston pumps are used as piston pumps on mobile and industrial machinery, where a high-pressure pump with a stated displacement is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Williams direct mount piston pumps differ from Haldex High-Pressure Hydraulic Gear Pumps?",
+          "a": "The Williams pumps are direct mount piston pumps of 0.45 to 3.4 in³/rev in 10 part numbers, while [Haldex High-Pressure Hydraulic Gear Pumps](/p/haldex-high-pressure-hydraulic-gear-pumps) are gear pumps of 0.065 to 0.517 in³/rev. Choose the Williams for direct reservoir mounting."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Williams direct mount piston pumps?",
+          "a": "We ship the Williams direct mount piston pumps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Williams direct mount piston pumps available from stock in Dubai for export?",
+          "a": "Yes, the Williams direct mount piston pumps are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,835 @@
+{
+  "family": "ground-joint-couplings",
+  "extraFacts": [
+    {
+      "fact": "Dixon Ground Joint Female Spuds: 5 listed part numbers; Thread Type NPT; items: Ground Joint Female Spud.",
+      "source": "Indus Hydraulics product listing, /p/dixon-ground-joint-female-spuds"
+    },
+    {
+      "fact": "Dixon Ground Joint Stems: 5 listed part numbers; sizes 3/4\" to 2\"; items: Ground Joint Stem.",
+      "source": "Indus Hydraulics product listing, /p/dixon-ground-joint-stems"
+    },
+    {
+      "fact": "Dixon Holedall Fittings Without spud: 15 listed part numbers; sizes 3/4\" to 3\"; items: 1 in GROUND JOINT STEM W/FERRULE | 2 in GROUND JOINT STEM W/FERRULE | 3 in GROUND JOINT STEM W/FERRULE | 3/4 in GROUND JOINT STEM W/FERRULE | 1-1/2 in GROUND JOINT STEM W/FERRULE.",
+      "source": "Indus Hydraulics product listing, /p/dixon-holedall-fittings-without-spud"
+    },
+    {
+      "fact": "Dixon Washer Seal Spud: 5 listed part numbers; Thread Type NPT; items: Washer Seal Female Spud.",
+      "source": "Indus Hydraulics product listing, /p/dixon-washer-seal-spud"
+    },
+    {
+      "fact": "Plated Iron Ground Joint Complete Set: 9 listed part numbers; sizes 1/2\" to 4\"; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Ground Joint Complete Set; End A Configuration Hose stem; End B Configuration Spud; Size Range 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\"; Materials Available Plated Iron; Seal / Gasket Metal-to-metal ground seat, no gasket.",
+      "source": "Indus Hydraulics product listing, /p/plated-iron-ground-joint-complete-set"
+    },
+    {
+      "fact": "Plated Iron Ground Joint Double Spud: 5 listed part numbers; sizes 3/4\" to 2\"; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Ground Joint Double Spud; Size Range 3/4\", 1\", 1-1/4\", 1-1/2\" and 2\"; Materials Available Plated Iron; Seal / Gasket Metal-to-metal ground seat, no gasket.",
+      "source": "Indus Hydraulics product listing, /p/plated-iron-ground-joint-double-spud"
+    },
+    {
+      "fact": "Plated Iron Ground Joint Female Spud: 9 listed part numbers; sizes 1/2\" to 4\"; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Ground Joint Female Spud; End A Configuration Female pipe thread; End B Configuration Spud face for the stem and wing nut; Size Range 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\"; Materials Available Plated Iron; Seal / Gasket Metal-to-metal ground seat, no gasket.",
+      "source": "Indus Hydraulics product listing, /p/plated-iron-ground-joint-female-spud"
+    },
+    {
+      "fact": "Plated Iron Ground Joint Hose Stem: 9 listed part numbers; sizes 1/2\" to 4\"; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Ground Joint Hose Stem; End A Configuration Hose shank; End B Configuration Ground seat, mating with a spud; Size Range 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\"; Materials Available Plated Iron; Seal / Gasket Metal-to-metal ground seat, no gasket.",
+      "source": "Indus Hydraulics product listing, /p/plated-iron-ground-joint-hose-stem"
+    },
+    {
+      "fact": "Plated Iron Ground Joint Male Spud: 6 listed part numbers; sizes 1/2\" to 2\"; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Ground Joint Male Spud; End A Configuration Male pipe thread; End B Configuration Spud face for the stem and wing nut; Size Range 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\" and 2\"; Materials Available Plated Iron; Seal / Gasket Metal-to-metal ground seat, no gasket.",
+      "source": "Indus Hydraulics product listing, /p/plated-iron-ground-joint-male-spud"
+    },
+    {
+      "fact": "Plated Iron Ground Joint NPT Male Stem: 9 listed part numbers; sizes 1/2\" to 4\"; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Ground Joint NPT Male Stem; End A Configuration Male NPT thread; End B Configuration Ground seat, mating with a spud; Size Range 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\"; Materials Available Plated Iron; Seal / Gasket Metal-to-metal ground seat, no gasket; Applicable Standards NPT pipe thread (ASME B1.20.1).",
+      "source": "Indus Hydraulics product listing, /p/plated-iron-ground-joint-npt-male-stem"
+    },
+    {
+      "fact": "Plated Iron Ground Joint Wing Nut: 9 listed part numbers; sizes 1/2\" to 4\"; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Ground Joint Wing Nut; Size Range 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\"; Materials Available Plated Iron; Seal / Gasket Metal-to-metal ground seat, no gasket.",
+      "source": "Indus Hydraulics product listing, /p/plated-iron-ground-joint-wing-nut"
+    },
+    {
+      "fact": "Zinc Plated Iron Universal Clamps: 0 listed part numbers; Coupling Family Ground Joint Coupling; Coupling Type / Variant Ground Joint — Universal Clamps; Size Range 16 clamping ranges from 11/16\"–7/8\" to 4-7/8\"–5-5/16\" hose outside diameter; Materials Available Zinc-Plated Iron.",
+      "source": "Indus Hydraulics product listing, /p/zinc-plated-iron-universal-clamps"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-ground-joint-female-spuds",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon ground joint female spuds used for?",
+          "a": "Dixon ground joint female spuds are the fixed half of a ground joint, with an NPT thread, in stainless steel. A hose stem is drawn up to the spud with a wing nut to make a metal-to-metal seal. This listing carries 5 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Dixon ground joint female spuds?",
+          "a": "The listing carries 5 part numbers, for example RGB13, RGB18 and RGB23, all with NPT threads and stainless steel bodies. The listing does not give the size of each row, so quote the part number or the pipe size when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Dixon ground joint female spuds for my application?",
+          "a": "Choose the pipe size, the NPT thread, and the stem it must take. Stainless spuds should be paired with stainless stems and nuts so the joint keeps one material."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Dixon ground joint female spuds?",
+          "a": "No working pressure is published for the Dixon ground joint female spuds, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Dixon ground joint female spuds offered in?",
+          "a": "The Dixon female spuds are stainless steel with an NPT thread, according to the listing. Stainless steel suits wet and corrosive areas where plated iron would corrode."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Dixon ground joint female spuds?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the Dixon ground joint female spuds. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Dixon ground joint female spuds connect to?",
+          "a": "The NPT female thread takes a male pipe nipple, and the spud face takes a stem drawn up with a wing nut. See [the Dixon ground joint stems](/p/dixon-ground-joint-stems) for the hose half."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Dixon ground joint female spuds?",
+          "a": "On the Dixon ground joint female spuds, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Dixon ground joint female spuds used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The Dixon ground joint female spuds are one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon ground joint female spuds differ from the Dixon washer seal spud?",
+          "a": "The female spud makes a metal-to-metal joint with a ground stem, while [the Dixon washer seal spud](/p/dixon-washer-seal-spud) is a washer-seal spud that uses a washer to seal the joint. Both are stainless with an NPT thread; pick by the seat type of the stem."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon ground joint female spuds shipped from, and what origin and HS code apply?",
+          "a": "We ship the Dixon ground joint female spuds from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Dixon ground joint female spuds available from stock in Dubai for export?",
+          "a": "Yes. We stock the Dixon ground joint female spuds at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-ground-joint-stems",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Dixon ground joint stems used?",
+          "a": "Dixon ground joint stems are the hose-side half of a metal-to-metal ground joint, in stainless steel from 3/4\" to 2\". The stem is drawn against a matching spud by a wing nut, with no gasket, and is used on steam and other hot service hose. This listing carries 5 part numbers, covering 3/4\" to 2\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Dixon ground joint stems?",
+          "a": "The listing carries 5 part numbers, for example RGB11, RGB26 and RGB6, covering the stem sizes 3/4\", 1\", 1-1/4\", 1-1/2\" and 2\". Pick the size from the body-size column and order by the Dixon part number."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Dixon ground joint stems for my application?",
+          "a": "Choose the size to match the hose and spud, 3/4\" to 2\". These stems are stainless steel, so confirm the spud and wing nut match in material before mixing parts from different makers."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon ground joint stems have?",
+          "a": "No working pressure is published for the Dixon ground joint stems, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon ground joint stems made from?",
+          "a": "The Dixon ground joint stems are stainless steel, according to the listing. Stainless suits wet, corrosive and washdown service where plated iron would rust."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Dixon ground joint stems?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the Dixon ground joint stems. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Dixon ground joint stems connect to?",
+          "a": "The stem seat mates with a spud of the same size, held by a wing nut. See [the Dixon female spuds](/p/dixon-ground-joint-female-spuds) and [the Dixon washer seal spud](/p/dixon-washer-seal-spud) for the spud side."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Dixon ground joint stems be installed and maintained?",
+          "a": "On the Dixon ground joint stems, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Dixon ground joint stems used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The Dixon ground joint stems are one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon ground joint stems differ from the Dixon ground joint female spuds?",
+          "a": "The stems carry the hose, in sizes 3/4\" to 2\", while [the Dixon ground joint female spuds](/p/dixon-ground-joint-female-spuds) have an NPT female thread and form the fixed side of the joint. A stem and a spud of the same size make one joint."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Dixon ground joint stems?",
+          "a": "We ship the Dixon ground joint stems from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dixon ground joint stems in stock in Dubai?",
+          "a": "Yes. We keep the Dixon ground joint stems in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-holedall-fittings-without-spud",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Dixon Holedall fittings without spud used?",
+          "a": "Dixon Holedall fittings without spud are ground joint stems with a ferrule, in plated iron and steel, from 3/4\" to 3\". They form the hose side of a ground joint and are sold without the spud, which is ordered separately. This listing carries 15 part numbers, covering 3/4\" to 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Dixon Holedall fittings without spud?",
+          "a": "The listing carries 15 part numbers, for example GB11-P1, GB11-P3 and GB11-P2, in body sizes from 3/4\" to 3\". Several part numbers share a body size, so quote the full part number, including any suffix."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Dixon Holedall fittings without spud?",
+          "a": "Choose the body size to match the hose and the spud, and quote the full part number including its suffix, because several numbers share one size. Order the matching spud and wing nut separately."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Dixon Holedall fittings without spud?",
+          "a": "No working pressure is published for the Dixon Holedall fittings without spud, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Holedall fittings without spud made from?",
+          "a": "The Dixon Holedall fittings are plated iron or steel, according to the listing. The listing describes the stem as fitted with a ferrule to grip the hose."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Dixon Holedall fittings without spud?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the Dixon Holedall fittings without spud. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Dixon Holedall fittings without spud mate with?",
+          "a": "The stem seat mates with a spud of the same size, held by a wing nut. See [the Dixon female spuds](/p/dixon-ground-joint-female-spuds) and [the plated iron wing nut](/p/plated-iron-ground-joint-wing-nut) for matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Dixon Holedall fittings without spud be installed and maintained?",
+          "a": "On the Dixon Holedall fittings without spud, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Dixon Holedall fittings without spud used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The Dixon Holedall fittings without spud are one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Holedall fittings without spud differ from the Dixon ground joint stems?",
+          "a": "The Holedall fittings are plated iron or steel stems with a ferrule in 15 part numbers from 3/4\" to 3\", while [the Dixon ground joint stems](/p/dixon-ground-joint-stems) are stainless stems in 5 part numbers from 3/4\" to 2\". Choose the Holedall for the wider size range and the stainless stems for corrosive service."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Dixon Holedall fittings without spud?",
+          "a": "We ship the Dixon Holedall fittings without spud from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Dixon Holedall fittings without spud available from stock in Dubai for export?",
+          "a": "Yes. We keep the Dixon Holedall fittings without spud in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-washer-seal-spud",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon washer seal spud used for?",
+          "a": "The Dixon washer seal spud is a stainless steel spud with an NPT female thread that seals on a washer, rather than on a ground metal seat. It is used for lines that use a washer-type joint with a matching stem. This listing carries 5 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Dixon washer seal spud available in?",
+          "a": "The listing carries 5 part numbers, for example RB13, RB18 and RB23, all stainless steel with an NPT thread. The listing does not give the size of each row, so quote the part number or pipe size when you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Dixon washer seal spud?",
+          "a": "Choose the pipe size, the NPT thread and the washer or stem it seats against. A washer seal spud is not a ground seat spud, so make sure the stem matches the sealing method before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Dixon washer seal spud?",
+          "a": "No working pressure is published for the Dixon washer seal spud, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon washer seal spud made from?",
+          "a": "The Dixon washer seal spud is stainless steel with an NPT thread, according to the listing. Replace the washer at each overhaul; the washer is the sealing element and is the part that wears."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Dixon washer seal spud?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the Dixon washer seal spud. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Dixon washer seal spud mate with?",
+          "a": "The NPT female thread takes a male pipe nipple, and the spud seals against a stem through a washer. For the ground-seat version see [the Dixon ground joint female spuds](/p/dixon-ground-joint-female-spuds)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Dixon washer seal spud?",
+          "a": "On the Dixon washer seal spud, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Dixon washer seal spud used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The Dixon washer seal spud is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon washer seal spud differ from the Dixon ground joint female spuds?",
+          "a": "The washer seal spud seals on a washer, while [the Dixon ground joint female spuds](/p/dixon-ground-joint-female-spuds) are for a metal-to-metal ground seat. Both are stainless steel with an NPT thread, so identify the joint type of your stem first."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Dixon washer seal spud?",
+          "a": "We ship the Dixon washer seal spud from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dixon washer seal spud in stock in Dubai?",
+          "a": "Yes, we hold the Dixon washer seal spud in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "plated-iron-ground-joint-complete-set",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the plated iron ground joint complete set used for?",
+          "a": "The ground joint complete set has a hose stem, a spud and the wing nut that draws them together, so it forms a whole metal-to-metal joint in one order. It is used on steam, air and water hose. This listing carries 9 part numbers, covering 1/2\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the plated iron ground joint complete set?",
+          "a": "The plated iron ground joint complete set is listed in 1/2\" to 4\", as 9 part numbers such as IH-GJ-GROUND-JOINT-COMPLETE-SET-050, IH-GJ-GROUND-JOINT-COMPLETE-SET-150 and IH-GJ-GROUND-JOINT-COMPLETE-SET-400. Order by the Indus part number in the size table. Quote the part number, or the size and connection you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the plated iron ground joint complete set for my application?",
+          "a": "Choose the size, 1/2\" to 4\", to match the hose. The set ends in a hose shank and a spud, so decide whether the spud side needs a male or female thread and order that spud separately if it must be different."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the plated iron ground joint complete set have?",
+          "a": "No working pressure is published for the plated iron ground joint complete set, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the plated iron ground joint complete set made from?",
+          "a": "The plated iron ground joint complete set is plated iron, as listed by the maker, with a metal-to-metal ground seat and no gasket. Plated iron is the standard material for ground joint steam and air hose; ask us if the duty needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the plated iron ground joint complete set?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the plated iron ground joint complete set. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What does the plated iron ground joint complete set connect to?",
+          "a": "The stem end takes a hose and a clamp, and the spud end connects to the other half of the line. See [the hose stem](/p/plated-iron-ground-joint-hose-stem) and [the wing nut](/p/plated-iron-ground-joint-wing-nut) for the individual parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the plated iron ground joint complete set?",
+          "a": "On the plated iron ground joint complete set, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the plated iron ground joint complete set?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The plated iron ground joint complete set is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the plated iron ground joint complete set differ from the plated iron ground joint wing nut?",
+          "a": "The complete set bundles the stem, spud and nut for a new joint, while [the plated iron ground joint wing nut](/p/plated-iron-ground-joint-wing-nut) is the nut alone for replacement. Check the set against the stem and spud you actually need before ordering."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the plated iron ground joint complete set?",
+          "a": "We ship the plated iron ground joint complete set from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the plated iron ground joint complete set available from stock in Dubai for export?",
+          "a": "Yes, we hold the plated iron ground joint complete set in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "plated-iron-ground-joint-double-spud",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the plated iron ground joint double spud used?",
+          "a": "The ground joint double spud has a spud face on both ends, so two ground joint stems can be joined back to back with wing nuts. It couples two hoses or two lines that both end in stems. This listing carries 5 part numbers, covering 3/4\" to 2\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the plated iron ground joint double spud?",
+          "a": "The plated iron ground joint double spud is listed in 3/4\" to 2\", as 5 part numbers such as IH-GJ-GROUND-JOINT-DOUBLE-SPUD-075, IH-GJ-GROUND-JOINT-DOUBLE-SPUD-125 and IH-GJ-GROUND-JOINT-DOUBLE-SPUD-200. Order by the Indus part number in the size table. Quote the part number, or the size and connection you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the plated iron ground joint double spud?",
+          "a": "Choose the size, 3/4\" to 2\", to match the two stems it joins; both ends are the same size. For a hose to a pipe port use a hose stem with a male or female spud."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the plated iron ground joint double spud?",
+          "a": "No working pressure is published for the plated iron ground joint double spud, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the plated iron ground joint double spud offered in?",
+          "a": "The plated iron ground joint double spud is plated iron, as listed by the maker, with a metal-to-metal ground seat and no gasket. Plated iron is the standard material for ground joint steam and air hose; ask us if the duty needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the plated iron ground joint double spud?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the plated iron ground joint double spud. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What does the plated iron ground joint double spud connect to?",
+          "a": "Each end takes a stem of the same size held by a wing nut. See [the hose stem](/p/plated-iron-ground-joint-hose-stem) for the stem side and [the wing nut](/p/plated-iron-ground-joint-wing-nut) for the nut."
+        },
+        {
+          "slot": "I",
+          "q": "How should the plated iron ground joint double spud be installed and maintained?",
+          "a": "On the plated iron ground joint double spud, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the plated iron ground joint double spud used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The plated iron ground joint double spud is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the plated iron ground joint double spud differ from the plated iron ground joint male spud?",
+          "a": "The double spud has a spud face at both ends and is listed from 3/4\" to 2\", while [the plated iron ground joint male spud](/p/plated-iron-ground-joint-male-spud) has a spud face on one end and a male thread on the other. Use the double spud to join two stems."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the plated iron ground joint double spud shipped from, and what origin and HS code apply?",
+          "a": "We ship the plated iron ground joint double spud from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the plated iron ground joint double spud available from stock in Dubai for export?",
+          "a": "Yes. We stock the plated iron ground joint double spud at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "plated-iron-ground-joint-female-spud",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the plated iron ground joint female spud used?",
+          "a": "The ground joint female spud has a female pipe thread on one end and a spud face on the other, so a ground joint stem can be drawn up to it with a wing nut. It is the fixed side of the joint on a male pipe nipple. This listing carries 9 part numbers, covering 1/2\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the plated iron ground joint female spud available in?",
+          "a": "The plated iron ground joint female spud is listed in 1/2\" to 4\", as 9 part numbers such as IH-GJ-GROUND-JOINT-FEMALE-SPUD-050, IH-GJ-GROUND-JOINT-FEMALE-SPUD-150 and IH-GJ-GROUND-JOINT-FEMALE-SPUD-400. Order by the Indus part number in the size table. Quote the part number, or the size and connection you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the plated iron ground joint female spud for my application?",
+          "a": "Choose the size, 1/2\" to 4\", for the male pipe nipple it fits and the stem it takes. If the fixed port is female, use the male spud instead; it is listed from 1/2\" to 2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the plated iron ground joint female spud?",
+          "a": "No working pressure is published for the plated iron ground joint female spud, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the plated iron ground joint female spud offered in?",
+          "a": "The plated iron ground joint female spud is plated iron, as listed by the maker, with a metal-to-metal ground seat and no gasket. Plated iron is the standard material for ground joint steam and air hose; ask us if the duty needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the plated iron ground joint female spud?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the plated iron ground joint female spud. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What does the plated iron ground joint female spud connect to?",
+          "a": "The female thread takes a male pipe nipple and the spud face takes a stem held by a wing nut. See [the hose stem](/p/plated-iron-ground-joint-hose-stem) and [the wing nut](/p/plated-iron-ground-joint-wing-nut) for the mating parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the plated iron ground joint female spud?",
+          "a": "On the plated iron ground joint female spud, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the plated iron ground joint female spud used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The plated iron ground joint female spud is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the plated iron ground joint female spud differ from the plated iron ground joint male spud?",
+          "a": "The female spud takes a male nipple and runs from 1/2\" to 4\", while [the plated iron ground joint male spud](/p/plated-iron-ground-joint-male-spud) has a male thread for a female port and stops at 2\". Pick by the gender of the pipe thread."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the plated iron ground joint female spud?",
+          "a": "We ship the plated iron ground joint female spud from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the plated iron ground joint female spud available from stock in Dubai for export?",
+          "a": "Yes. We keep the plated iron ground joint female spud in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plated-iron-ground-joint-hose-stem",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the plated iron ground joint hose stem used for?",
+          "a": "The ground joint hose stem has a hose shank on one end and a ground seat on the other, which is drawn against a matching spud by a wing nut. It is the hose-side half of a metal-to-metal joint, used on steam and other hot service hose. This listing carries 9 part numbers, covering 1/2\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the plated iron ground joint hose stem available in?",
+          "a": "The plated iron ground joint hose stem is listed in 1/2\" to 4\", as 9 part numbers such as IH-GJ-GROUND-JOINT-HOSE-STEM-050, IH-GJ-GROUND-JOINT-HOSE-STEM-150 and IH-GJ-GROUND-JOINT-HOSE-STEM-400. Order by the Indus part number in the size table. Quote the part number, or the size and connection you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the plated iron ground joint hose stem?",
+          "a": "Choose the size, 1/2\" to 4\", to suit the hose bore, then match the spud and wing nut of the same size. The hose clamp is sized to the hose outside diameter, so the zinc-plated iron universal clamp must be chosen separately."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the plated iron ground joint hose stem?",
+          "a": "No working pressure is published for the plated iron ground joint hose stem, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the plated iron ground joint hose stem made from?",
+          "a": "The plated iron ground joint hose stem is plated iron, as listed by the maker, with a metal-to-metal ground seat and no gasket. Plated iron is the standard material for ground joint steam and air hose; ask us if the duty needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the plated iron ground joint hose stem?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the plated iron ground joint hose stem. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What does the plated iron ground joint hose stem connect to?",
+          "a": "The stem seat mates with a spud of the same size, held by a wing nut: see [the male spud](/p/plated-iron-ground-joint-male-spud), [the female spud](/p/plated-iron-ground-joint-female-spud) and [the wing nut](/p/plated-iron-ground-joint-wing-nut). The shank takes the hose and a clamp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the plated iron ground joint hose stem?",
+          "a": "On the plated iron ground joint hose stem, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the plated iron ground joint hose stem?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The plated iron ground joint hose stem is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the plated iron ground joint hose stem differ from the plated iron ground joint NPT male stem?",
+          "a": "The hose stem has a hose shank at one end for hose, while [the plated iron ground joint NPT male stem](/p/plated-iron-ground-joint-npt-male-stem) has a male NPT thread instead, so it screws into a female port. Both have the same ground seat and listed sizes from 1/2\" to 4\"."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the plated iron ground joint hose stem?",
+          "a": "We ship the plated iron ground joint hose stem from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the plated iron ground joint hose stem available from stock in Dubai for export?",
+          "a": "Yes, the plated iron ground joint hose stem is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "plated-iron-ground-joint-male-spud",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the plated iron ground joint male spud used for?",
+          "a": "The ground joint male spud has a male pipe thread on one end and a spud face on the other, so a ground joint stem can be drawn up to it with a wing nut. It is the fixed side of the joint, screwed into a female port. This listing carries 6 part numbers, covering 1/2\" to 2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the plated iron ground joint male spud available in?",
+          "a": "The plated iron ground joint male spud is listed in 1/2\" to 2\", as 6 part numbers such as IH-GJ-GROUND-JOINT-MALE-SPUD-050, IH-GJ-GROUND-JOINT-MALE-SPUD-125 and IH-GJ-GROUND-JOINT-MALE-SPUD-200. Order by the Indus part number in the size table. Quote the part number, or the size and connection you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the plated iron ground joint male spud?",
+          "a": "Choose the size, 1/2\" to 2\", for the female pipe thread it enters and the stem it takes. For a female port in sizes above 2\" see the female spud, which is listed to 4\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the plated iron ground joint male spud have?",
+          "a": "No working pressure is published for the plated iron ground joint male spud, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the plated iron ground joint male spud made from?",
+          "a": "The plated iron ground joint male spud is plated iron, as listed by the maker, with a metal-to-metal ground seat and no gasket. Plated iron is the standard material for ground joint steam and air hose; ask us if the duty needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the plated iron ground joint male spud?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the plated iron ground joint male spud. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What does the plated iron ground joint male spud connect to?",
+          "a": "The male thread screws into a female pipe port and the spud face takes a stem held by a wing nut. See [the hose stem](/p/plated-iron-ground-joint-hose-stem) and [the wing nut](/p/plated-iron-ground-joint-wing-nut) for the mating parts."
+        },
+        {
+          "slot": "I",
+          "q": "How should the plated iron ground joint male spud be installed and maintained?",
+          "a": "On the plated iron ground joint male spud, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the plated iron ground joint male spud?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The plated iron ground joint male spud is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the plated iron ground joint male spud differ from the plated iron ground joint female spud?",
+          "a": "The male spud screws into a female port and is listed from 1/2\" to 2\", while [the plated iron ground joint female spud](/p/plated-iron-ground-joint-female-spud) has a female thread for a male nipple and is listed from 1/2\" to 4\". Pick by the gender of the pipe thread."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the plated iron ground joint male spud?",
+          "a": "We ship the plated iron ground joint male spud from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the plated iron ground joint male spud available from stock in Dubai for export?",
+          "a": "Yes, the plated iron ground joint male spud is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "plated-iron-ground-joint-npt-male-stem",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the plated iron ground joint NPT male stem used for?",
+          "a": "The ground joint NPT male stem has a male NPT thread on one end and a ground seat on the other, drawn against a spud by a wing nut. It lets a ground joint connect directly to a female port, valve or fitting instead of to a hose. This listing carries 9 part numbers, covering 1/2\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the plated iron ground joint NPT male stem?",
+          "a": "The plated iron ground joint NPT male stem is listed in 1/2\" to 4\", as 9 part numbers such as IH-GJ-GROUND-JOINT-NPT-MALE-STEM-050, IH-GJ-GROUND-JOINT-NPT-MALE-STEM-150 and IH-GJ-GROUND-JOINT-NPT-MALE-STEM-400. Order by the Indus part number in the size table. Quote the part number, or the size and connection you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the plated iron ground joint NPT male stem?",
+          "a": "Choose the size, 1/2\" to 4\", to match the female NPT port and the spud it mates with. If the stem has to take a hose instead of a thread, use the hose stem."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the plated iron ground joint NPT male stem have?",
+          "a": "No working pressure is published for the plated iron ground joint NPT male stem, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the plated iron ground joint NPT male stem offered in?",
+          "a": "The plated iron ground joint NPT male stem is plated iron, as listed by the maker, with a metal-to-metal ground seat and no gasket. Plated iron is the standard material for ground joint steam and air hose; ask us if the duty needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the plated iron ground joint NPT male stem?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the plated iron ground joint NPT male stem. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What does the plated iron ground joint NPT male stem connect to?",
+          "a": "The male NPT thread screws into a female NPT port, and the ground seat mates with a spud held by a wing nut. See [the male spud](/p/plated-iron-ground-joint-male-spud) and [the wing nut](/p/plated-iron-ground-joint-wing-nut) for the mating parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the plated iron ground joint NPT male stem?",
+          "a": "On the plated iron ground joint NPT male stem, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the plated iron ground joint NPT male stem used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The plated iron ground joint NPT male stem is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the plated iron ground joint NPT male stem differ from the plated iron ground joint hose stem?",
+          "a": "The NPT male stem screws into a female NPT port, while [the plated iron ground joint hose stem](/p/plated-iron-ground-joint-hose-stem) has a hose shank for clamping onto hose. Both have the same ground seat and run from 1/2\" to 4\"."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the plated iron ground joint NPT male stem?",
+          "a": "We ship the plated iron ground joint NPT male stem from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the plated iron ground joint NPT male stem from stock in the UAE?",
+          "a": "Yes. We keep the plated iron ground joint NPT male stem in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plated-iron-ground-joint-wing-nut",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the plated iron ground joint wing nut used?",
+          "a": "The ground joint wing nut draws a stem and a spud together to form the metal-to-metal seal. It is turned by hand or with a hammer on its wings, and no gasket is used in the joint. This listing carries 9 part numbers, covering 1/2\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the plated iron ground joint wing nut available in?",
+          "a": "The plated iron ground joint wing nut is listed in 1/2\" to 4\", as 9 part numbers such as IH-GJ-GROUND-JOINT-WING-NUT-050, IH-GJ-GROUND-JOINT-WING-NUT-150 and IH-GJ-GROUND-JOINT-WING-NUT-400. Order by the Indus part number in the size table. Quote the part number, or the size and connection you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the plated iron ground joint wing nut?",
+          "a": "Choose the size, 1/2\" to 4\", to match the stem and spud pair it holds. The nut is sized to the joint and the stem and spud are chosen separately."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the plated iron ground joint wing nut?",
+          "a": "No working pressure is published for the plated iron ground joint wing nut, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the plated iron ground joint wing nut offered in?",
+          "a": "The plated iron ground joint wing nut is plated iron, as listed by the maker, with a metal-to-metal ground seat and no gasket. Plated iron is the standard material for ground joint steam and air hose; ask us if the duty needs a different material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the plated iron ground joint wing nut?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the plated iron ground joint wing nut. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What does the plated iron ground joint wing nut connect to?",
+          "a": "The wing nut fits over the hose stem or NPT male stem and threads onto a spud. See [the hose stem](/p/plated-iron-ground-joint-hose-stem) and [the female spud](/p/plated-iron-ground-joint-female-spud) for the parts it holds."
+        },
+        {
+          "slot": "I",
+          "q": "How should the plated iron ground joint wing nut be installed and maintained?",
+          "a": "On the plated iron ground joint wing nut, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the plated iron ground joint wing nut used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The plated iron ground joint wing nut is one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How does the plated iron ground joint wing nut differ from the plated iron ground joint complete set?",
+          "a": "The wing nut is the single part that holds the joint, while [the plated iron ground joint complete set](/p/plated-iron-ground-joint-complete-set) is the full hose stem and spud assembly. Order the wing nut as a spare or replacement, and the set for a new joint."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the plated iron ground joint wing nut shipped from, and what origin and HS code apply?",
+          "a": "We ship the plated iron ground joint wing nut from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the plated iron ground joint wing nut available from stock in Dubai for export?",
+          "a": "Yes. We keep the plated iron ground joint wing nut in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "zinc-plated-iron-universal-clamps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the zinc plated iron universal clamps used for?",
+          "a": "The zinc-plated iron universal clamps hold a hose onto a ground joint stem. The maker lists 16 clamping ranges, from 11/16\" to 7/8\" up to 4-7/8\" to 5-5/16\" of hose outside diameter, so each clamp is chosen by the hose it must close down on."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the zinc plated iron universal clamps?",
+          "a": "The listing carries 16 clamping ranges, from 11/16\"–7/8\" up to 4-7/8\"–5-5/16\" hose outside diameter, each with its own maker part number such as SF1, SF9A or SF49U. Measure the hose outside diameter and pick the range that spans it."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the zinc plated iron universal clamps?",
+          "a": "Measure the hose outside diameter over the stem and choose the range that contains it, not the nearest nominal size. A clamp that is at the end of its range will not hold on a thick-walled steam hose."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the zinc plated iron universal clamps?",
+          "a": "No working pressure is published for the zinc plated iron universal clamps, so we do not quote one. A ground joint seals metal to metal and is used on steam, but the pressure you can use depends on the size, the hose and the clamp, so give us your working pressure and medium through [our contact page](/contact) and we confirm a figure before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the zinc plated iron universal clamps offered in?",
+          "a": "The universal clamps are zinc-plated iron. Zinc plating protects the iron in damp areas, but it is not a stainless grade; ask us if the clamp has to resist washdown, salt or chemicals."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the zinc plated iron universal clamps?",
+          "a": "The listing names no ISO, ASME or EN standard and holds no certificates for the zinc plated iron universal clamps. Ground joint is a long-established pattern and parts must match in size and seat form, not a stated standard. If your project needs a material or conformity certificate, say so in the enquiry and we ask the maker. See [our ground joint steam coupling guide](/blog/ground-joint-steam-couplings) for the pattern."
+        },
+        {
+          "slot": "H",
+          "q": "What do the zinc plated iron universal clamps connect to?",
+          "a": "The clamps close a hose onto a ground joint stem; see [the hose stem](/p/plated-iron-ground-joint-hose-stem) for the shank they grip. The hose bore and wall thickness set the clamping range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the zinc plated iron universal clamps?",
+          "a": "On the zinc plated iron universal clamps, keep the ground seats clean and undamaged, because a scratched seat leaks. Draw the joint up with the wing nut, clamp the hose to the stem with a clamp sized to the hose outside diameter, and re-tighten after the first heat cycle. No gasket is used, so there is nothing to renew except the parts themselves."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the zinc plated iron universal clamps used?",
+          "a": "Ground joint couplings are used on steam, air and water hose in plants, boiler houses, shipyards and construction, where a metal-to-metal joint is wanted because rubber seals harden and fail in steam. The zinc plated iron universal clamps are one part of that joint."
+        },
+        {
+          "slot": "K",
+          "q": "How do the zinc plated iron universal clamps differ from the plated iron ground joint hose stem?",
+          "a": "The universal clamps are chosen by hose outside diameter, in 16 ranges, while [the plated iron ground joint hose stem](/p/plated-iron-ground-joint-hose-stem) is the stem part in sizes from 1/2\" to 4\" by hose bore. They work as a pair: the clamp holds the hose onto the stem."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the zinc plated iron universal clamps shipped from, and what origin and HS code apply?",
+          "a": "We ship the zinc plated iron universal clamps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is USA. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the zinc plated iron universal clamps from stock in the UAE?",
+          "a": "Yes. We keep the zinc plated iron universal clamps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "family": "frac-data-van",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-data-van-trailer-mounted-multi-screen-fleet-control-hvac-pantry",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a trailer-mounted frac data van used for?",
+          "a": "A frac data van is the control and monitoring centre of a fracturing fleet. This one is a custom trailer with HVAC, insulated flooring, operator desks, a pantry and storage, and a multi-screen wall showing all fleet parameters with recording and playback for post-job analysis."
+        },
+        {
+          "slot": "D",
+          "q": "What mounting options does the trailer-mounted frac data van offer?",
+          "a": "It is engineered as a custom trailer, and is also available as a modified seafreight container or a truck-mounted box. State the transport and site needs on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What does the trailer-mounted frac data van connect to?",
+          "a": "A full I/O network connects by wire or wifi to all fleet units: blender or blenders, LAS, hydration unit, transfer pumps and pumpers. The operator controls the entire fleet from a single station."
+        },
+        {
+          "slot": "F",
+          "q": "What does the operator cabin of the trailer-mounted frac data van include?",
+          "a": "It has HVAC, insulated flooring, operator desks, a pantry and storage. The multi-screen visualisation wall records and plays back the fleet parameters for post-job analysis."
+        },
+        {
+          "slot": "G",
+          "q": "What certifications and climate options does the trailer-mounted frac data van have?",
+          "a": "CE and GOST certifications and arctic and desert environmental envelopes are available. State the approvals and ambient range on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which frac units can the trailer-mounted frac data van control?",
+          "a": "It can connect to the [frac blender](/p/frac-blender-mfr-50-50-bbl-min-auto-density-control-chemical-additive-system), the [LAS](/p/frac-las-8-tank-ss316-tote-tanks-mass-flowmeters-trailer-mounted), the [hydration unit](/p/frac-hydration-unit-200-bbl-12-12-centrifugal-90-bbl-min-ss316-tote-tanks), the [transfer pumps](/p/frac-transfer-pump-centrifugal-12-12-300-hp-diesel-hydraulic-drive-skid-mounted) and the [frac pumpers](/p/frac-pumper-2-500-hp-trailer-mounted-fleet-networked-dnv-optional). Each unit needs a matching data interface."
+        },
+        {
+          "slot": "K",
+          "q": "How does the trailer-mounted frac data van differ from a unit with its own control cabin?",
+          "a": "A unit with its own cabin controls only itself, while the data van gives one operator control of the whole fleet through a single station. Standalone control remains possible on each unit."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the trailer-mounted frac data van used?",
+          "a": "It is used on hydraulic fracturing fleets to coordinate equipment and to record job data. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac data van quotation?",
+          "a": "Send the list of fleet units to connect, the screen and recording requirements, the mounting type, the certification needed and the ambient range. The van is built to your specification."
+        },
+        {
+          "slot": "L",
+          "q": "Can the trailer-mounted frac data van be supplied as a container or truck box?",
+          "a": "Yes. It is engineered as a custom trailer and also available as a modified seafreight container or a truck-mounted box, with the same HVAC, desks, pantry and multi-screen wall in each. State the transport and the site limits on the RFQ."
+        },
+        {
+          "slot": "I",
+          "q": "Can the frac data van record the job for later review?",
+          "a": "Yes. The multi-screen wall has recording and playback for post-job analysis, so parameters from the whole fleet can be reviewed after the job. State any data-export format you need on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the trailer-mounted frac data van?",
+          "a": "Yes. We list the trailer-mounted frac data van as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Layout is quoted to your fleet. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

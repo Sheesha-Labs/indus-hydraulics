@@ -1,0 +1,76 @@
+{
+  "family": "stimulation-batch-mixers",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "stimulation-batch-mixer-2-100-bbl-frp-lined-steel-ptfe-butterfly-valves-atex",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2x100 BBL stimulation batch mixer used for?",
+          "a": "A stimulation batch mixer prepares acid, brine and gelled fluids in tanks before pumping. This twin-compartment unit has 2×100 BBL nominal capacity, sloped conical bottoms and a siphon system, and is built for corrosive HCl, brine and gelled service."
+        },
+        {
+          "slot": "D",
+          "q": "What capacity does the 2x100 BBL stimulation batch mixer have?",
+          "a": "The nominal capacity is 2×100 BBL in two compartments, with sloped conical bottoms and a siphon system. State the batch volume on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "How are the wetted parts of the 2x100 BBL stimulation batch mixer protected?",
+          "a": "Tank wetted parts are FRP-lined carbon steel as standard, with full stainless-steel and PTFE-lined variants available. Impeller agitators are stainless steel or FRP-coated, and all butterfly valves are PTFE-lined."
+        },
+        {
+          "slot": "F",
+          "q": "What power options does the 2x100 BBL stimulation batch mixer offer?",
+          "a": "The power pack is a diesel engine with hydraulic motors, or ATEX-certified electric motors with armoured cabling and Eex glands. State the area classification on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What certifications does the 2x100 BBL stimulation batch mixer carry?",
+          "a": "The unit is ATEX, with CE and GOST certification and Rigsafe and Zone 2 options for offshore use. State the approvals on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2x100 BBL stimulation batch mixer connect to?",
+          "a": "It takes acid from the [acid tank](/p/acid-tank-frp-lined-steel-iso-20-ft-frame-6-000-usg-dangerous-goods-certified) and feeds the pumping units through its centrifugal pumps and piping, which are rated to the chemistry profile. See [stimulation pumping units](/c/stimulation-pumping-units) and [nitrogen units](/c/stimulation-nitrogen-unit)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2x100 BBL stimulation batch mixer differ from a cement batch mixer?",
+          "a": "The stimulation mixer is lined and valved for corrosive acid, while a [cement batch mixer](/p/cement-batch-mixer-twin-2-100-bbl-coriolis-density-hydraulic-drive) is for cement slurry. Do not use a cement mixer for acid."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2x100 BBL stimulation batch mixer used?",
+          "a": "It is used for mixing corrosive acid, brine and gelled fluids on well-stimulation jobs. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a stimulation batch mixer quotation?",
+          "a": "Send the fluids and acid strength, the batch volume, the wetted-part material, the power pack, the mounting and the area classification."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2x100 BBL stimulation batch mixer be skid, trailer or truck mounted?",
+          "a": "Yes. The listing offers skid, trailer or truck mounting, with Rigsafe and Zone 2 options for offshore use. State the transport method and the site area classification on the RFQ."
+        },
+        {
+          "slot": "I",
+          "q": "Why are the butterfly valves on the stimulation mixer PTFE-lined?",
+          "a": "All butterfly valves on this mixer are PTFE-lined because the mixer handles corrosive acid (HCl), brine and gelled fluids. The centrifugal pumps and piping are rated to the chemistry profile, so state the acid strength on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2x100 BBL stimulation batch mixer?",
+          "a": "Yes. We list the 2x100 BBL stimulation batch mixer as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Wetted materials are quoted to the fluid. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

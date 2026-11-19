@@ -1,0 +1,76 @@
+{
+  "family": "dw-workover-tanks",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "workover-tank-240-bbl-brine-service-insulated-manholes-recirc-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 240 BBL insulated brine workover tank used for?",
+          "a": "A workover tank holds brine and mud during workover operations. This 240 BBL tank has an insulated shell, dual manholes (top and side), a recirculation manifold, and fill, discharge and drain lines."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the workover tank range come in?",
+          "a": "Sizes of 160 BBL and 240 BBL are the most common, and custom volumes are available on request. This listing is the 240 BBL size."
+        },
+        {
+          "slot": "D",
+          "q": "What is the recirculation manifold on the 240 BBL insulated brine workover tank for?",
+          "a": "The recirculation manifold lets brine or mud be circulated within the tank, which keeps the fluid homogeneous and supports mixing. Fill, discharge and drain lines are also fitted."
+        },
+        {
+          "slot": "E",
+          "q": "Why is the 240 BBL insulated brine workover tank insulated?",
+          "a": "The insulated shell reduces heat gain and loss in the stored fluid, which helps keep brine temperature stable. State the ambient temperature range and fluid temperature on the RFQ so the insulation is chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What coating and materials does the 240 BBL insulated brine workover tank use?",
+          "a": "Wetted parts and coating are selected per the project chemistry. Send the brine type, density and additives on the RFQ so the materials and lining are matched to the fluid."
+        },
+        {
+          "slot": "G",
+          "q": "How is the 240 BBL insulated brine workover tank mounted?",
+          "a": "It is available as a skid or axle-mounted variant. Choose an axle mount if the tank must be moved by road between wells."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the 240 BBL insulated brine workover tank?",
+          "a": "It connects to the pumps on the workover rig through its fill, discharge and drain lines. See [mud pump packages](/c/dw-mud-pump-package), [mud manifolds](/c/dw-mud-manifolds) and [liquid mud plants](/c/dw-liquid-mud-plant)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 240 BBL insulated brine workover tank differ from a skid-mounted drilling mud tank?",
+          "a": "The workover tank is insulated and built for brine and mud service in workovers at 240 BBL, while the [skid-mounted mud tank](/p/mud-tank-skid-mounted-500-bbl-40-ft-iso-footprint-manholes-sight-gauges) is a larger drilling storage vessel within a 40-ft container footprint."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 240 BBL insulated brine workover tank used?",
+          "a": "It is used on workover jobs for brine and mud service, where completion fluid is stored, circulated and returned. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a workover tank quotation?",
+          "a": "Send the volume (160 BBL, 240 BBL or custom), the fluid and its chemistry, the temperature, the mounting and the delivery site."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 240 BBL insulated brine workover tank be built to a custom volume?",
+          "a": "Yes. 160 BBL and 240 BBL are most common, and custom volumes are available on request. Send the volume and the site limits."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 240 BBL insulated brine workover tank?",
+          "a": "Yes. We list the 240 BBL insulated brine workover tank as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your capacity, configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

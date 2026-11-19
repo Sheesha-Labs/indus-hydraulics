@@ -1,0 +1,490 @@
+{
+  "family": "stainless-crimp-hose-fittings",
+  "extraFacts": [
+    {
+      "fact": "SAE J517 gives the general, dimensional and performance specifications for the SAE 100R series of hydraulic hose, including 100R1 (single wire braid) and 100R2 (two wire braid).",
+      "source": "SAE J517 'Hydraulic Hose' abstract (sae.org)"
+    },
+    {
+      "fact": "SAE J1926-1 and ISO 11926-1 cover straight-thread O-ring boss (ORB) ports: the thread (UN/UNF) only holds the fitting, and the seal is made by an O-ring that is compressed against the chamfer of the port when the fitting is tightened.",
+      "source": "SAE J1926-1 / ISO 11926-1 scope"
+    },
+    {
+      "fact": "SAE J514 and ISO 8434-2 cover 37° flared tube and hose fittings (JIC): the male 37° flare seats metal to metal against the 37° cone of the female swivel nut, and thread sizes are given by dash number, where each dash is one sixteenth of an inch (-04 is 4/16 in, or 1/4 in).",
+      "source": "SAE J514 and ISO 8434-2 scope"
+    },
+    {
+      "fact": "SAE J1453 and ISO 8434-3 cover O-ring face seal (ORFS) fittings: an O-ring seated in a groove in the flat face of the male end seals against the flat face of the female swivel nut, so the seal is made by the O-ring and the thread only holds the joint together.",
+      "source": "SAE J1453 and ISO 8434-3 scope"
+    },
+    {
+      "fact": "ASME B1.20.1 covers general-purpose inch pipe threads: NPT is a taper thread with a 60° thread form that seals on the threads, and NPSM is a straight (parallel) thread for free-fitting mechanical joints that does not seal on the thread.",
+      "source": "ASME B1.20.1 scope"
+    },
+    {
+      "fact": "ISO 228-1 specifies pipe threads, designated G, where pressure-tight joints are not made on the threads: both the external and internal thread are parallel (BSPP). The seal is made by a washer, O-ring, bonded seal or sealing face, not by the thread flanks.",
+      "source": "ISO 228-1:2000, scope"
+    },
+    {
+      "fact": "316L is the low-carbon grade of 316 austenitic stainless steel (carbon 0.03 % maximum), which is why it can be welded without carbide precipitation at the grain boundaries; it contains molybdenum for resistance to chloride pitting.",
+      "source": "ASTM A240 / A276 chemical composition limits for UNS S31603"
+    }
+  ],
+  "products": [
+    {
+      "slug": "stainless-steel-43-series-crimp-hose-fitting-x-npt-male-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel used for?",
+          "a": "It is a straight 316 stainless-steel crimp hose end with a male NPT swivel connection, from 1/4\" hose ID (-4) to 1\" hose ID (-16). It is crimped onto 1-wire and 2-wire braided hose so the assembly can screw into an NPT port while the swivel lets it be tightened without twisting the hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-T43-MPX-12-12 on the 43 Series NPT male swivel?",
+          "a": "IH-SS-T43-MPX-12-12 is the -12 size: a 3/4\" hose ID end with a 3/4\" NPT (3/4-14) male swivel. In the size table the first number is the hose dash size and the second the NPT size, so IH-SS-T43-MPX-04-04 is a 1/4\" hose to a 1/4\" NPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose and thread sizes does the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel cover?",
+          "a": "The size table has 5 part numbers: -04 (1/4\" hose, 1/4\" NPT), -06 (3/8\", 3/8\" NPT), -08 (1/2\", 1/2\" NPT), -12 (3/4\", 3/4\" NPT) and -16 (1\", 1\" NPT). Hose and NPT size match at every size, and there is no -10."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the 43 Series NPT male swivel crimp fitting?",
+          "a": "Pick the hose ID dash size first, because the table pairs each hose with an NPT size of the same dash: a 1/2\" hose (-8) takes the 1/2\" NPT (1/2-14) end. Check that the port is NPT, not NPSM or BSPP, before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel, so we give none. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel made from?",
+          "a": "The Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel is 316 stainless steel, used where carbon-steel hose ends would rust in salt air or washdown. Stainless can still gall on the thread, so lubricate it lightly and keep it clean."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard covers the thread on the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel?",
+          "a": "The NPT thread is covered by ASME B1.20.1, a 60° taper thread that seals on the thread with sealant. The listing names no standard for the crimp end itself, so tell us the hose and the port and we confirm the fitting."
+        },
+        {
+          "slot": "H",
+          "q": "Which hose does the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel crimp onto?",
+          "a": "The listing gives the hose as 1 Wire and 2 Wire Braided. A crimp fitting is only rated on the hose series it is made for, so name the hose with your enquiry and we check the fitting, ferrule and crimp against it."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel screw into?",
+          "a": "It screws into a female NPT port, which seals on the thread. It will not seal in a BSPP or NPSM port; the [Stainless Steel 43 Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-43-series-crimp-hose-fitting-x-orb-male) is the O-ring boss alternative."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 43 Series NPT male swivel fitted to a port?",
+          "a": "Crimp the end onto the hose to the hose maker's crimp data, then screw the swivel into the NPT port with a sealant suited to stainless and tighten by turns, not by torque. Taper threads in stainless gall readily, so never over-tighten."
+        },
+        {
+          "slot": "K",
+          "q": "43 Series NPT male swivel or 43 Series ORB male: which one do I order?",
+          "a": "The NPT male swivel seals on a tapered thread and swivels, while the [Stainless Steel 43 Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-43-series-crimp-hose-fitting-x-orb-male) seals with an O-ring and does not swivel. Choose by the port thread on the equipment."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel in stock in Dubai?",
+          "a": "Yes. We keep the Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-43-series-crimp-hose-fitting-x-orb-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male used for?",
+          "a": "It is a straight 316 stainless-steel crimp hose end with an ORB (O-ring boss) male thread, from 1/4\" hose ID (-4) to 1\" hose ID (-16). It is crimped onto 1-wire and 2-wire braided hose for a leak-tight connection to O-ring boss ports."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-T43-MOR-10-10 on the 43 Series ORB male?",
+          "a": "IH-SS-T43-MOR-10-10 is the -10 size: a 5/8\" hose ID end with a 5/8\" ORB (7/8-14) male thread. The first number is the hose dash size and the second the ORB size, so IH-SS-T43-MOR-16-16 is a 1\" hose to a 1\" ORB (1-5/16-12)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male come in?",
+          "a": "The size table has 6 part numbers, -04, -06, -08, -10, -12 and -16, with ORB threads from 1/4\" (7/16-20) to 1\" (1-5/16-12). Hose and ORB size match in each, and unlike the NPT swivel there is a -10 size."
+        },
+        {
+          "slot": "D",
+          "q": "Which port is the 43 Series ORB male crimp fitting made for?",
+          "a": "It is for an ORB port with a straight UN/UNF thread and an O-ring seat, not a tapered NPT or a BSPP port. Match the thread: a 3/4\" ORB port takes the 1-1/16-12 thread, which is the -12 part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male, so we give none. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male made from?",
+          "a": "The Stainless Steel 43 Series Crimp Hose Fitting × ORB Male is 316 stainless steel, used where carbon-steel hose ends would rust in salt air or washdown. Stainless can still gall on the thread, so lubricate it lightly and keep it clean. The O-ring in an ORB joint sets the temperature limit, so name the fluid and the temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard covers the thread on the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male?",
+          "a": "ORB ports are covered by SAE J1926-1 and ISO 11926-1: a straight UN/UNF thread where an O-ring compressed against the port chamfer makes the seal. The listing names no standard for the crimp end, so confirm the hose with us."
+        },
+        {
+          "slot": "H",
+          "q": "Which hose does the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male crimp onto?",
+          "a": "The listing gives the hose as 1 Wire and 2 Wire Braided. A crimp fitting is only rated on the hose series it is made for, so name the hose with your enquiry and we check the fitting, ferrule and crimp against it."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male screw into?",
+          "a": "It screws into an ORB port on a pump, valve or manifold and seals on the O-ring. For an NPT port use the [Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel](/p/stainless-steel-43-series-crimp-hose-fitting-x-npt-male-swivel), and for the THY version of the same ORB end see the [Stainless Steel THY Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-thy-series-crimp-hose-fitting-x-orb-male)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I make up an ORB male crimp fitting without damaging the O-ring?",
+          "a": "Check the O-ring is seated and undamaged, lubricate it lightly, thread the fitting in by hand and tighten until the face meets the port, then to the torque for the size. Never use thread tape on an ORB joint, and replace the O-ring whenever the joint is opened."
+        },
+        {
+          "slot": "K",
+          "q": "43 Series ORB male or THY Series ORB male: what is the difference?",
+          "a": "Both are straight 316 stainless crimp ends with an ORB male thread. This 43 Series part is listed for 1 and 2 wire braided hose, while the [Stainless Steel THY Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-thy-series-crimp-hose-fitting-x-orb-male) is listed for a different hose list. Choose by the hose type."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male in stock in Dubai?",
+          "a": "Yes, the Stainless Steel 43 Series Crimp Hose Fitting × ORB Male is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-thy-series-crimp-hose-fitting-x-orb-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel THY Series Crimp Hose Fitting × ORB Male used for?",
+          "a": "It is a straight 316 stainless-steel crimp hose end with an ORB male thread, from 1/4\" hose ID (-4) to 1\" hose ID (-16), for 1SN (100R1), 2SN (100R2), R16 and R17 hose. It gives a leak-tight O-ring seal into ORB ports on equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-THY-MOR-06-03 on the THY Series ORB male?",
+          "a": "IH-SS-THY-MOR-06-03 is a 3/8\" hose ID (-6) end with a 3/16\" ORB male thread (3/8-24). The first number is the hose dash size and the second the ORB size, so IH-SS-THY-MOR-06-06 is a 3/8\" hose to a 3/8\" ORB (9/16-18)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel THY Series Crimp Hose Fitting × ORB Male come in?",
+          "a": "The size table has 7 part numbers: -04, -06 with two ORB sizes (3/16\" and 3/8\"), -08, -10, -12 and -16, with ORB threads from 3/8-24 to 1-5/16-12. The listing text gives the connection range from 1/4\" ORB."
+        },
+        {
+          "slot": "D",
+          "q": "When do I need the 3/16 in ORB end of the THY Series ORB male?",
+          "a": "Choose IH-SS-THY-MOR-06-03 when a 3/8\" hose (-6) has to reach a small 3/16\" ORB port (3/8-24), such as a gauge or sensor port. For a matching 3/8\" port use IH-SS-THY-MOR-06-06, and check the port thread before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel THY Series Crimp Hose Fitting × ORB Male rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel THY Series Crimp Hose Fitting × ORB Male, so we give none. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel THY Series Crimp Hose Fitting × ORB Male made from?",
+          "a": "The Stainless Steel THY Series Crimp Hose Fitting × ORB Male is 316 stainless steel, used where carbon-steel hose ends would rust in salt air or washdown. Stainless can still gall on the thread, so lubricate it lightly and keep it clean. Mixed-metal pairs can corrode galvanically, so the [galvanic corrosion in fittings guide](/blog/galvanic-corrosion-in-fittings) is worth a read."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard covers the thread on the Stainless Steel THY Series Crimp Hose Fitting × ORB Male?",
+          "a": "ORB ports are covered by SAE J1926-1 and ISO 11926-1: a straight UN/UNF thread where an O-ring compressed against the port chamfer makes the seal. The hose types named in the listing, 100R1 and 100R2, are SAE J517 hose grades."
+        },
+        {
+          "slot": "H",
+          "q": "Which hoses does the Stainless Steel THY Series Crimp Hose Fitting × ORB Male crimp onto?",
+          "a": "The listing gives 1SN (100R1), 2SN (100R2), R16 and R17 hose. A crimp fitting is only rated on the hose series it is made for, so name the hose and size with your enquiry and we check the fitting, ferrule and crimp against it."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel THY Series Crimp Hose Fitting × ORB Male screw into?",
+          "a": "It screws into an ORB port and seals on the O-ring. For an NPT port the [Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel](/p/stainless-steel-43-series-crimp-hose-fitting-x-npt-male-swivel) is the 43 Series choice, and the [Stainless Steel THY Series Crimp Hose Fitting × Tube Stub](/p/stainless-steel-thy-series-crimp-hose-fitting-x-tube-stub) ends in a plain tube stub."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a THY Series ORB male crimp end?",
+          "a": "Crimp the end onto the hose to the hose maker's data, check the O-ring is seated, lubricate it lightly, then thread the fitting in by hand and tighten to the torque for its size. Use no thread tape, and replace the O-ring whenever the joint is opened."
+        },
+        {
+          "slot": "K",
+          "q": "THY Series ORB male or 43 Series ORB male: how do I choose?",
+          "a": "Choose by the hose: the THY Series is listed for 1SN, 2SN, R16 and R17 and the [Stainless Steel 43 Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-43-series-crimp-hose-fitting-x-orb-male) for 1 and 2 wire braided hose. Both are 316 stainless with an ORB male thread, and the 43 Series has no 3/16\" ORB size."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel THY Series Crimp Hose Fitting × ORB Male in stock in Dubai?",
+          "a": "Yes. The Stainless Steel THY Series Crimp Hose Fitting × ORB Male is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-thy-series-crimp-hose-fitting-x-tube-stub",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub used for?",
+          "a": "It is a 316 stainless-steel crimp hose end that finishes in a plain tube stub, from 1/4\" hose ID (-4) to 1\" hose ID (-16), for 1SN (100R1), 2SN (100R2), R16 and R17 hose. The stub is connected to a tube run by the method you choose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-THY-TS-12-12 on the THY Series tube stub?",
+          "a": "IH-SS-THY-TS-12-12 is the -12 size: a 3/4\" hose ID end with a 3/4\" tube stub. In the size table the first number is the hose dash size and the second the stub size, and TS90 part numbers are the angled version, such as IH-SS-THY-TS90-04-04."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub come in?",
+          "a": "The size table has 9 part numbers: straight -04, -06, -08, -12 and -16, and four TS90 angled parts at 1/4\", 3/8\", 1/2\" and 3/4\" stub sizes. The listing does not list a -10 size."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between the TS and TS90 parts of the THY tube stub fitting?",
+          "a": "The TS parts are straight and the TS90 parts are the 90° angled version, in 1/4\", 3/8\", 1/2\" and 3/4\" stub sizes only. Choose TS90 when the hose has to turn at the tube joint, and TS where it runs straight on."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub, so we give none. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub made from?",
+          "a": "The Stainless Steel THY Series Crimp Hose Fitting × Tube Stub is 316 stainless steel, used where carbon-steel hose ends would rust in salt air or washdown. Stainless can still gall on the thread, so lubricate it lightly and keep it clean. A stainless tube stub should be joined to stainless tube so the line has no mixed-metal joint."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard covers the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub?",
+          "a": "The listing names no formal standard for the tube-stub end, because the stub is joined to tube by welding or a fitting you choose. The hose types named, 100R1 and 100R2, are SAE J517 hose grades, so give us the hose and size."
+        },
+        {
+          "slot": "H",
+          "q": "Which hoses does the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub crimp onto?",
+          "a": "The listing gives 1SN (100R1), 2SN (100R2), R16 and R17 hose. A crimp fitting is only rated on the hose series it is made for, so name the hose and size with your enquiry and we check the fitting, ferrule and crimp against it."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub connect to?",
+          "a": "The tube stub connects to a tube, by whichever method suits the line. For a threaded port use the [Stainless Steel THY Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-thy-series-crimp-hose-fitting-x-orb-male), which has an ORB male end, or the [Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel](/p/stainless-steel-43-series-crimp-hose-fitting-x-npt-male-swivel) for NPT."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and join a THY tube stub crimp end?",
+          "a": "Crimp the end onto the hose to the hose maker's data and then join the stub to the tube by the chosen method, keeping heat away from the hose and crimp if welding. Pressure-test the finished assembly, which we can do on request."
+        },
+        {
+          "slot": "K",
+          "q": "THY Series tube stub or THY Series ORB male: which one?",
+          "a": "The tube stub is a plain tube end to be joined to a tube run, while the [Stainless Steel THY Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-thy-series-crimp-hose-fitting-x-orb-male) has an ORB male thread for a port. Choose by whether the hose connects to a tube or to a threaded port."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Stainless Steel THY Series Crimp Hose Fitting × Tube Stub in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-danfoss-series-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip Danfoss Series Elbows hose fittings used for?",
+          "a": "These are Aeroquip elbow hose fittings, from 7/16\" to 1 1/16\", with an SAE 37° female swivel on one end and a hose end on the other, in 45° and 90° forms. The listing names 302A, 303, 1503, 2580 and 2651 series hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Aeroquip part numbers such as 190295-8S on this listing?",
+          "a": "In the size table the number after the hyphen is the dash size of the SAE 37° end: 190295-4S is a 7/16\" female, 190295-8S a 3/4\" and 190295-10S a 7/8\". The listing's 12 part numbers use several base numbers, for example 190299 and 190302."
+        },
+        {
+          "slot": "C",
+          "q": "Which Aeroquip hose series do the Aeroquip Danfoss Series Elbows fit?",
+          "a": "The listing gives 302A, 303, 1503, 2580 and 2651 series hose. A crimp fitting is only rated on the hose series it is designed for, so quote the hose type and size with the part number and we check the fitting, ferrule and crimp specification before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the Aeroquip Danfoss Series Elbows cover?",
+          "a": "The listing covers 7/16\" to 1 1/16\" in 12 part numbers, such as 190295-4S (7/16\"), 190297-5S (1/2\"), 190299-6S (5/8\"), 190295-8S (3/4\") and 190299-12S (1 1/16\"). Ratings vary by size, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the 45° and 90° Aeroquip elbow on this listing?",
+          "a": "The listing is headed 45° elbow, but its rows include 90° parts such as 190302-12S and 190301-12S. Choose the 45° for a gentle turn and the 90° where the hose must turn square, and quote the part number so we match the angle."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Danfoss Series Elbows?",
+          "a": "The listing gives no single pressure for the elbows and says ratings vary by size, so we quote none here. An assembly is rated to the lower of the hose and the fitting, so quote the hose series and size and we confirm the rating for the part."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip Danfoss Series Elbows made from and how are they finished?",
+          "a": "The specification lists a steel fitting with a trivalent chromate zinc finish, in grades 12L14 and 12L15, and describes the range as carbon steel and stainless steel. Confirm the material for the part number if you need stainless; the finish alone does not resist seawater."
+        },
+        {
+          "slot": "G",
+          "q": "Are the Aeroquip Danfoss Series Elbows reusable, and what is the cut-off factor?",
+          "a": "The specification lists the construction as reusable, with a hose cut-off factor of 1.29\". The listing states no formal standard, so name the hose and the working pressure and we check the fitting."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Aeroquip Danfoss Series Elbows connect to?",
+          "a": "The SAE 37° end is female, and mates with a male 37° flared end; the other end takes the hose. For stainless 37° swivel ends see our [SS316L JIC 37° fittings](/c/ss316l-jic-37-fittings) or the [stainless crimp hose fittings shelf](/c/stainless-crimp-hose-fittings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip Danfoss Series Elbows made, and what is their HS code?",
+          "a": "The listing gives the United States as the country of origin and 7307929000 as the HS code, for these Aeroquip elbows. We ship from Dubai, UAE and prepare the invoice and packing list for the destination."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip elbows or the stainless 316 crimp ends on this shelf: how do I choose?",
+          "a": "The Aeroquip elbows are steel with a zinc finish for Aeroquip hose, while the [Stainless Steel THY Series Crimp Hose Fitting × ORB Male](/p/stainless-steel-thy-series-crimp-hose-fitting-x-orb-male) and [Stainless Steel 43 Series Crimp Hose Fitting × NPT Male Swivel](/p/stainless-steel-43-series-crimp-hose-fitting-x-npt-male-swivel) are 316 stainless. Choose stainless where corrosion matters and Aeroquip where the hose is one of the named series."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Aeroquip Danfoss Series Elbows in stock in Dubai?",
+          "a": "Yes, we stock the Aeroquip Danfoss Series Elbows at our warehouse in Dubai, UAE and ship worldwide with the best lead times. For a price and delivery date, send the sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-fitting-reducers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker Fitting Reducers used for?",
+          "a": "Parker fitting reducers are reducing adapters with a male BSPP thread, listed as port connectors with a bite-type (24° cone) end, in steel and stainless versions. They step a port down or up in size, with a nitrile seal included."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker part numbers such as RI1/4EDX1/871 on this listing?",
+          "a": "In the size table the RI prefix is followed by the male G thread size, then ED, then the second size, and the ending shows the material: RI1/4EDX1/871 is the stainless version and RI1/4EDX1/8CF the steel one. RI1/4EDX1/871 is listed at 400 bar and RI1/4EDX1/8CF at 160 bar."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the Parker Fitting Reducers come in?",
+          "a": "The 25 part numbers run from G 1/4 to G 1 1/2 on the male BSPP end, with widths across flats from 19 to 55 mm. Examples are RI3/8EDX1/871 and RI1/2EDX3/871; check the row for the second size you need."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose a Parker reducer for a G thread port?",
+          "a": "Match the male BSPP thread to the port first, then the second size to the line, and pick steel (CF) or stainless (71) by the part-number suffix. The size table gives each row's pressure, so confirm it against your working pressure."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure do the Parker Fitting Reducers handle?",
+          "a": "The maker states 2,321 to 5,800 psi (160 to 400 bar), by size, and the rows show 160, 248, 310 and 400 bar. Check the row for the part number you order, and note that the assembly is limited by the lowest-rated component."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker Fitting Reducers made from?",
+          "a": "The specification gives grade 316 stainless steel with nitrile seals, and the rows list both steel (CF) and stainless (71) versions. Nitrile limits the seal temperature, which the listing gives as +30°F to +250°F, so check the fluid."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard covers the thread on the Parker Fitting Reducers?",
+          "a": "The male thread is BSPP, a parallel G thread covered by ISO 228-1, where the nitrile seal rather than the thread makes the pressure-tight joint. The listing names no other standard, so quote the Parker part number when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Parker Fitting Reducers connect to?",
+          "a": "The male BSPP end screws into a G-thread port and the bite-type (24° cone) side takes a compatible tube fitting. See our [SS316L BSP fittings](/c/ss316l-bsp-fittings) for stainless BSP ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Parker Fitting Reducers be fitted to protect the seal?",
+          "a": "Check that the nitrile seal is in place and undamaged, screw the male BSPP thread in by hand and tighten to the torque for its size. Use no tape on a seal-sealed thread, and replace the seal when the joint is opened."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Parker Fitting Reducers made, and what is their HS code?",
+          "a": "The listing gives Germany as the country of origin and 7307290000 as the HS code. We ship from Dubai, UAE and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "K",
+          "q": "Parker reducers or the Parker hydraulic hose caps: which part do I need?",
+          "a": "The reducers change thread size on a G-thread port, while the [Parker hydraulic hose caps](/p/parker-hydraulic-hose-caps) blank off a hose end. They are separate parts, so use the one that matches the job."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Parker Fitting Reducers in stock in Dubai?",
+          "a": "Yes. The Parker Fitting Reducers is kept in stock in Dubai, UAE, ready to ship worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-hydraulic-hose-caps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker Hydraulic Hose Caps used for?",
+          "a": "Parker hydraulic hose caps are female caps that blank off a hose end or fitting, in steel and stainless steel, from 1/4 inch to 2 inch fitting sizes. The stainless versions are listed as ORS (O-ring seal) caps."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker cap part numbers such as 24 FNL-SS?",
+          "a": "In the size table the leading number is the dash size and the ending gives the material: 24 FNL-SS is the 1 1/2 inch stainless cap, and 24 FNL-S is the 1 1/2 inch steel one. 16 FNL-SS is the 1 inch stainless cap, and the FNMLS parts are steel."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the Parker Hydraulic Hose Caps come in?",
+          "a": "The 15 part numbers cover 1/4 inch to 2 inch fitting sizes, for example 4FNMLS (1/4 inch), 12FNMLS (3/4 inch), 16FNMLS (1 inch) and 32 FNL-S (2 inch). The stainless caps are listed at 5/8, 1, 1 1/4 and 1 1/2 inch."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker cap size do I need for a given hose end?",
+          "a": "Match the cap to the fitting size on the hose end, not to the hose bore: the dash number is the fitting size, so a -16 fitting takes a 16 FNL cap. Send us the fitting part number or thread and we confirm the cap."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure do the Parker Hydraulic Hose Caps handle?",
+          "a": "The rows give pressure by size: 634 bar for the 1/4, 3/8 and 1/2 inch steel caps, 414 bar from 5/8 to 1 1/4 inch, 345 bar at 1 1/2 inch and 207 bar at 2 inch. Check the row for the cap you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker Hydraulic Hose Caps made from?",
+          "a": "The listing offers steel and stainless steel caps. The stainless versions, such as 16 FNL-SS and 24 FNL-SS, resist corrosion where a steel cap would rust; confirm the material in the part number before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard covers the sealing of the Parker Hydraulic Hose Caps?",
+          "a": "The stainless caps are listed as female ORS (O-ring seal), which is the face-seal form covered by SAE J1453 and ISO 8434-3 for ORFS fittings, where an O-ring in the male face seals against the flat face. The listing names no standard of its own."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Parker Hydraulic Hose Caps fit onto?",
+          "a": "They fit onto a male end of the same size and seal type, such as a male ORFS or the male end of a fitting on a hose, to blank it off. For ORFS stainless ends see our [SS316L ORFS fittings](/c/ss316l-orfs-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Parker Hydraulic Hose Caps be fitted?",
+          "a": "Check the O-ring or seat is clean and undamaged, thread the cap on by hand and tighten to the torque for its size. A cap is not a substitute for relieving pressure: depressurise the line before fitting it."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Parker Hydraulic Hose Caps made, and what is their HS code?",
+          "a": "The listing gives the United States as the country of origin and gives no HS code, which we confirm on the quotation. We ship from Dubai, UAE and prepare the commercial invoice and packing list."
+        },
+        {
+          "slot": "K",
+          "q": "Parker hose caps or Parker fitting reducers: what is the difference?",
+          "a": "A cap blanks off a hose end or port, while the [Parker fitting reducers](/p/parker-fitting-reducers) change thread size. Different parts for different jobs, so check what the line needs."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Parker Hydraulic Hose Caps in stock in Dubai?",
+          "a": "Yes. We keep the Parker Hydraulic Hose Caps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

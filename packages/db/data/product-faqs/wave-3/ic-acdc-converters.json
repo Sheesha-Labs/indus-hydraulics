@@ -1,0 +1,88 @@
+{
+  "family": "ic-acdc-converters",
+  "extraFacts": [
+    {
+      "fact": "Related Indus instrumentation listings, as shown on their own pages: AC/DC Converter Package, 400 V AC → 24 V DC, NEMA 4X Enclosure, 1 kW: AC/DC converter package powering DC control circuits from a high-voltage AC mains supply. 400 V AC input → 24 V DC output, 1 kW continuous duty. NEMA 4X enclosure containing the converter, input breaker, output power-supply connections, status LEDs and surge protection.\nVoltage variants: 230 / 380 / 415 / 440 / 460 V AC input; 12 / 24 V DC output. Output powers 250 W / 500 W / 1 kW / 2 kW. Hazardous-area Ex-d variant available. | Analogic Pressure Sensor, 2-inch Fig.1502 Debooster, 6-inch Gauge + Adjustable Shutdown: 2-inch Fig.1502 pressure debooster providing safe transfer of HP wellhead pressure to the analogic gauge circuit. 6-inch glycerine-filled gauge for smooth pointer reading. Adjustable overpressure shutdown proximity switch enables interlock with ESD logic and shutdown sequencers.\nPressure ranges to 15,000 psi available. SS316 wetted connections; NACE MR-0175 on request. | Coriolis Mass Flowmeter (NRD), 2-inch, Cementing Service, Local + Remote Display: Coriolis-tube mass flowmeter providing simultaneous mass flow, fluid density, and fluid temperature outputs. Used as a non-radioactive densitometer (NRD) for cementing units, hydration units, and Liquid Additive Systems where radioactive source devices are restricted.\n2-inch process connections as standard; 1-inch and 3-inch available. Local digital display + 4-20 mA remote outputs. ATEX Zone 1 / 2 enclosure variants. | Multi-Channel Data Acquisition System, 15-inch Touchscreen, USB Export, Frac-Fleet Ready: Multi-channel oilfield Data Acquisition System engineered for pumping-unit and frac-fleet integration. Compatible signal types: 4-20 mA, 0-5 V, pulse, frequency. 15-inch touchscreen (9-inch and 11-inch variants available).\nOperator-configurable display modes: data, chart, curves. Local storage and USB export in ASCII / Excel for post-job reports. Network connectivity (wired / wifi) to fleet Data Vans for centralized fleet control. | Explosion-Proof Electrical Panel, Aluminium-Cast, ATEX Zone 1, 600 mm × 800 mm: Explosion-proof aluminium-cast electrical panel for ATEX Zone 1 hazardous-area deployment. 600 mm × 800 mm internal envelope; multiple sizes available. Internal mounting plate houses breakers, contactors, relays, terminal blocks, and surge protection per project schematic.\nIECEx-certified variants available. Weatherproof steel-sheet enclosure (powder-coated) for non-hazardous deployment as a lower-cost option. IP65 / IP66 sealing as standard. | Electronic Pressure Sensor, 0-15,000 psi, 2-inch Fig.1502M, 4-20 mA: 0-15,000 psi electronic pressure sensor with 2-inch Fig.1502M HP hammer-union connection. 4-20 mA loop output; HART / digital options available. SS316 wetted parts as standard; NACE MR-0175 materials for sour-service.\nPressure ranges 0-5,000 / 0-10,000 / 0-15,000 / 0-20,000 psi. Temperature compensation calibrated across operating range. | Magnetic Flowmeter, 2-inch Wafer, 600 psi, 4-20 mA Output: 2-inch wafer-style magnetic flowmeter with 600 psi MAWP and 4-20 mA loop output. Designed for water, brine, mud and acid-resistant lining where chemistry requires. Local display optional; remote display via 4-20 mA into DAQ.\nSizes 1/2 inch to 12 inch available; pressure ratings to ANSI 600. ATEX Zone 1 explosion-proof variant on request. | Magnetic-Pickup Proximity Sensor, 5/8-18 UNF, M12 Connector, Stroke / RPM Counter: Magnetic-pickup proximity sensor used as a bolt-counter on triplex / quintuplex pump crank shafts to feed RPM and calculated displacement back to the unit DAQ. 5/8-18 UNF threaded body with M12 4-pin connector.\nNo onboard power required — output is a passive signal proportional to shaft speed. Hazardous-area-rated variants available. | Bimetal Thermometer + Thermowell Pair, 1/2-inch NPT M×F, P+U API 6A Range, SS316: Matched bimetal thermometer and thermowell pair. The thermometer has a 1/2-inch NPT male connection with selectable stem length (2.5, 4, 6, 9 inch) and an API 6A P+U temperature range (-20 °F to +250 °F).\nThe thermowell is integral construction in SS316 with 1/2-inch NPT male-to-female connections, sized to match the thermometer stem. SS304 wetted-parts variant available. Pressure rating to 15,000 psi at process side; bore size selectable. | Turbine Flowmeter, 2-inch Fig.1502 F×M, 15,000 psi, Frac / Cementing Service: 2-inch turbine flowmeter for high-pressure frac and cementing service. Fig.1502 F×M connections at 15,000 psi MAWP. Optical or magnetic pickup output with K-factor calibration certificate.\n3-inch and lower-pressure variants available. NACE MR-0175 materials on request for sour-service applications. | VFD Package, AC Motor + Drive, 500 HP, ATEX Zone 2, Frac-Pumper Compatible: VFD (Variable Frequency Drive) package supplying a 500 HP AC motor for oilfield pump duty. Replaces costly DC converter and DC motor systems on legacy units. ATEX Zone 2 enclosure; regenerative braking option for energy recovery on deceleration.\nMotor + drive system rated for offshore environment (saltwater, vibration, temperature). Sizes 100 / 250 / 500 / 750 / 1,000 HP available. Compatible with frac pumper, cementing unit, transfer pump and stimulation unit deployments.",
+      "source": "Indus Hydraulics instrumentation listings"
+    },
+    {
+      "fact": "Figures of this listing, as shown on its product page: AC/DC converter package powering DC control circuits from a high-voltage AC mains supply. 400 V AC input → 24 V DC output, 1 kW continuous duty. NEMA 4X enclosure containing the converter, input breaker, output power-supply connections, status LEDs and surge protection.\nVoltage variants: 230 / 380 / 415 / 440 / 460 V AC input; 12 / 24 V DC output. Output powers 250 W / 500 W / 1 kW / 2 kW. Hazardous-area Ex-d variant available.",
+      "source": "Indus Hydraulics product listing"
+    },
+    {
+      "fact": "ATEX Zone 1 is an area where an explosive gas atmosphere is likely to occur occasionally in normal operation; Zone 2 is an area where it is not likely in normal operation and, if it occurs, lasts only for a short time. Ex-d denotes flameproof enclosure protection.",
+      "source": "ATEX workplace Directive 1999/92/EC annex I; IEC 60079-0 / 60079-1 (flameproof enclosure 'd')"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: AC/DC Converter Package, 400 V AC → 24 V DC, NEMA 4X Enclosure, 1 kW [IH-ACDC-400-24-NEMA4X-1K]:   400 V AC → 24 V DC converter package, 1 kW output. NEMA 4X enclosure with input breaker, output terminals, status LEDs. |  | 0 part numbers (e.g. ); ; rows: ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "ac-dc-converter-package-400-v-ac-24-v-dc-nema-4x-enclosure-1-kw",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 400 V AC to 24 V DC converter package with a NEMA 4X enclosure used for?",
+          "a": "The package powers DC control circuits from a 400 V AC mains supply, giving 24 V DC at 1 kW continuous duty. It comes in a NEMA 4X enclosure with the converter, input breaker, output connections, status LEDs and surge protection; see the [AC/DC converters shelf](/c/ic-acdc-converters)."
+        },
+        {
+          "slot": "B",
+          "q": "Which input voltages and outputs can the 1 kW AC/DC converter package be built for?",
+          "a": "Besides 400 V AC input, the listing names 230, 380, 415, 440 and 460 V AC inputs with 12 or 24 V DC output. Output power options are 250 W, 500 W, 1 kW and 2 kW, so state the supply and load when you ask."
+        },
+        {
+          "slot": "D",
+          "q": "What power does the 400 V AC to 24 V DC package deliver?",
+          "a": "This listing is the 1 kW continuous-duty version delivering 24 V DC. Other output powers of 250 W, 500 W and 2 kW are listed as variants."
+        },
+        {
+          "slot": "E",
+          "q": "What is inside the NEMA 4X enclosure of the converter package?",
+          "a": "The enclosure contains the converter, an input breaker, the output power-supply connections, status LEDs and surge protection. This lets the unit be installed as one protected assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is a NEMA 4X enclosure, and why use one on a converter package?",
+          "a": "A NEMA 4X enclosure is rated for wet and corrosive outdoor-type locations; the listing uses it to house the converter in field conditions. State the site conditions and we confirm the enclosure fits."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a hazardous-area version of the AC/DC converter package?",
+          "a": "Yes, the listing says a hazardous-area Ex-d variant is available. Tell us the zone and certification you need and we confirm what is offered."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 24 V DC output of the converter package supply?",
+          "a": "It supplies DC control circuits such as sensors, data acquisition and instrumentation on a unit, from a 400 V AC mains supply. See the [data acquisition systems](/c/ic-data-acquisition) and the [pressure sensors](/c/ic-electronic-pressure-sensors) that run on 24 V DC."
+        },
+        {
+          "slot": "I",
+          "q": "How is the AC/DC converter package installed and protected?",
+          "a": "The package includes an input breaker and surge protection, so connect the 400 V AC supply to the breaker and take 24 V DC from the output connections. Status LEDs show the state of the unit."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the the 400 V AC to 24 V DC converter package?",
+          "a": "Quote the full title, AC/DC Converter Package, 400 V AC → 24 V DC, NEMA 4X Enclosure, 1 kW, with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is an AC/DC converter package used?",
+          "a": "It suits oilfield skids and control cabinets where mains power is available and instruments need 24 V DC; see the [oilfield instrumentation guide](/blog/oilfield-pressure-and-flow-instrumentation) for the instrumentation it feeds."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the AC/DC converter package supplied from?",
+          "a": "We supply the package from Dubai, UAE and ship it worldwide. Tell us the input voltage and output power so it is built to the right specification."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 400 V AC to 24 V DC converter package in stock in Dubai?",
+          "a": "Yes, we hold the 400 V AC to 24 V DC converter package in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+{
+  "family": "welded-hydraulic-cylinders-04",
+  "extraFacts": [
+    {
+      "fact": "Column load is the compressive load an extended cylinder and its rod can carry before the rod buckles; it falls as stroke and extended length increase and rises with rod diameter. Push force is working pressure multiplied by the piston (bore) area.",
+      "source": "Standard mechanics (Euler column buckling; force = pressure x area), as applied in maker hydraulic cylinder catalogues"
+    },
+    {
+      "fact": "Pin-to-pin (retracted) length is the distance between the two mounting pin centres with the cylinder fully retracted; extended length is the retracted length plus the stroke.",
+      "source": "Maker cylinder catalogues; Indus guide to hydraulic cylinder mounting styles"
+    },
+    {
+      "fact": "SAE ORB (O-ring boss) ports use a straight thread sealed by an O-ring; NPT ports are tapered pipe threads that seal on the thread.",
+      "source": "SAE J1926 / ISO 11926-1 (ORB); ASME B1.20.1 (NPT)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-6-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore, and where is it used?",
+          "a": "Magister WCTN Welded Cross Tube 6\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 6\" bore and a 3\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in four stroke lengths from 24\" to 36\", 4 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore come in?",
+          "a": "The Magister WCTN Welded Cross Tube 6\" bore cylinder part numbers run from WCTN6X24 to WCTN6X36 across 4 listed part numbers, one per stroke and rod combination. WCTN6X24 is the 24\" stroke and WCTN6X36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 6\" bore cylinder comes in four stroke lengths from 24\" to 36\", including 24\", 28\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 6\" bore cylinder runs from 35\" to 47\" and extended length from 59\" to 83\", depending on stroke. For example the 24\" stroke is 35\" retracted and 59\" extended, and the 36\" stroke is 47\" and 83\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 6\" bore cylinder uses the 3\" rod, and the listed column load is 83,100 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 6\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 6\" bore cylinder is listed as 83,100 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 6\" bore cylinder has SAE ORB -12 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 6\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 6\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 6\" bore cylinder lists 83,100 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore compare with the 5\" bore version?",
+          "a": "The next size down is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-5-in-bore) with a 5\" bore against this 6\" bore, in the same welded cross tube pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 3\" rod and column load of 83,100 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Magister WCTN Welded Cross Tube 6\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wpen-welded-pin-eye-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Magister WPEN Welded Pin Eye 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. It is listed in seven stroke lengths from 8\" to 36\", 8 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore organised?",
+          "a": "The Magister WPEN Welded Pin Eye 2.5\" bore cylinder part numbers run from WPEN2.5×8 to WPEN2.5×36 across 8 listed part numbers, one per stroke and rod combination. WPEN2.5×8 is the 8\" stroke and WPEN2.5×36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WPEN Welded Pin Eye 2.5\" bore cylinder comes in seven stroke lengths from 8\" to 36\", including 8\", 10\", 12\", 16\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WPEN Welded Pin Eye 2.5\" bore cylinder runs from 16\" to 44\" and extended length from 24\" to 80\", depending on stroke. For example the 8\" stroke is 16\" retracted and 24\" extended, and the 36\" stroke is 44\" and 80\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WPEN Welded Pin Eye 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 6,100 to 14,700 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WPEN Welded Pin Eye 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WPEN Welded Pin Eye 2.5\" bore cylinder is listed as 6,100 to 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WPEN Welded Pin Eye 2.5\" bore cylinder has SAE ORB -8, NPT 1/2\" ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WPEN Welded Pin Eye 2.5\" bore cylinder has a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WPEN Welded Pin Eye 2.5\" bore cylinder lists 6,100 to 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore](/p/magister-wpen-welded-pin-eye-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded pin eye pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 6,100 to 14,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. We keep Magister WPEN Welded Pin Eye 2.5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wpen-welded-pin-eye-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Magister WPEN Welded Pin Eye 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.25\" rod. Its mounting is a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. It is listed in eight stroke lengths from 8\" to 36\", 8 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Magister WPEN Welded Pin Eye 2\" bore cylinder part numbers run from WPEN2X8 to WPEN2X36 across 8 listed part numbers, one per stroke and rod combination. WPEN2X8 is the 8\" stroke and WPEN2X36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WPEN Welded Pin Eye 2\" bore cylinder comes in eight stroke lengths from 8\" to 36\", including 8\", 10\", 12\", 16\", 20\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WPEN Welded Pin Eye 2\" bore cylinder runs from 16\" to 44\" and extended length from 24\" to 80\", depending on stroke. For example the 8\" stroke is 16\" retracted and 24\" extended, and the 36\" stroke is 44\" and 80\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WPEN Welded Pin Eye 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 4,100 to 9,400 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WPEN Welded Pin Eye 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WPEN Welded Pin Eye 2\" bore cylinder is listed as 4,100 to 9,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WPEN Welded Pin Eye 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WPEN Welded Pin Eye 2\" bore cylinder has a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WPEN Welded Pin Eye 2\" bore cylinder lists 4,100 to 9,400 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2.5\" Bore](/p/magister-wpen-welded-pin-eye-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded pin eye pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 4,100 to 9,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Magister WPEN Welded Pin Eye 2\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wpen-welded-pin-eye-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore and what is it used for?",
+          "a": "Magister WPEN Welded Pin Eye 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3.5\" bore and a 1.75\" rod. Its mounting is a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. It is listed in eight stroke lengths from 8\" to 36\", 8 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore organised?",
+          "a": "The Magister WPEN Welded Pin Eye 3.5\" bore cylinder part numbers run from WPEN3.5×8 to WPEN3.5×36 across 8 listed part numbers, one per stroke and rod combination. WPEN3.5×8 is the 8\" stroke and WPEN3.5×36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Magister WPEN Welded Pin Eye 3.5\" bore cylinder comes in eight stroke lengths from 8\" to 36\", including 8\", 10\", 12\", 16\", 20\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WPEN Welded Pin Eye 3.5\" bore cylinder runs from 16\" to 44\" and extended length from 24\" to 80\", depending on stroke. For example the 8\" stroke is 16\" retracted and 24\" extended, and the 36\" stroke is 44\" and 80\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Magister WPEN Welded Pin Eye 3.5\" bore cylinder uses the 1.75\" rod, and the listed column load is 16,100 to 28,800 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WPEN Welded Pin Eye 3.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Magister WPEN Welded Pin Eye 3.5\" bore cylinder is listed as 16,100 to 28,800 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Magister WPEN Welded Pin Eye 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Magister WPEN Welded Pin Eye 3.5\" bore cylinder has a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Magister WPEN Welded Pin Eye 3.5\" bore cylinder lists 16,100 to 28,800 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore](/p/magister-wpen-welded-pin-eye-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded pin eye pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 16,100 to 28,800 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore in Dubai for export?",
+          "a": "Yes, Magister WPEN Welded Pin Eye 3.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wpen-welded-pin-eye-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore, and where is it used?",
+          "a": "Magister WPEN Welded Pin Eye 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3\" bore and a 1.5\" rod. Its mounting is a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. It is listed in seven stroke lengths from 8\" to 36\", 8 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Magister WPEN Welded Pin Eye 3\" bore cylinder part numbers run from WPEN3X8 to WPEN3X36 across 8 listed part numbers, one per stroke and rod combination. WPEN3X8 is the 8\" stroke and WPEN3X36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Magister WPEN Welded Pin Eye 3\" bore cylinder comes in seven stroke lengths from 8\" to 36\", including 8\", 10\", 16\", 20\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WPEN Welded Pin Eye 3\" bore cylinder runs from 16\" to 44\" and extended length from 24\" to 80\", depending on stroke. For example the 8\" stroke is 16\" retracted and 24\" extended, and the 36\" stroke is 44\" and 80\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Magister WPEN Welded Pin Eye 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 8,800 to 21,200 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WPEN Welded Pin Eye 3\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Magister WPEN Welded Pin Eye 3\" bore cylinder is listed as 8,800 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Magister WPEN Welded Pin Eye 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Magister WPEN Welded Pin Eye 3\" bore cylinder has a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Magister WPEN Welded Pin Eye 3\" bore cylinder lists 8,800 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore](/p/magister-wpen-welded-pin-eye-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded pin eye pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 8,800 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Magister WPEN Welded Pin Eye 3\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wpen-welded-pin-eye-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore, and where is it used?",
+          "a": "Magister WPEN Welded Pin Eye 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 4\" bore and a 2\" rod. Its mounting is a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. It is listed in eight stroke lengths from 8\" to 36\", 8 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Magister WPEN Welded Pin Eye 4\" bore cylinder part numbers run from WPEN4X8 to WPEN4X36 across 8 listed part numbers, one per stroke and rod combination. WPEN4X8 is the 8\" stroke and WPEN4X36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Magister WPEN Welded Pin Eye 4\" bore cylinder comes in eight stroke lengths from 8\" to 36\", including 8\", 10\", 12\", 16\", 20\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WPEN Welded Pin Eye 4\" bore cylinder runs from 17\" to 45\" and extended length from 25\" to 81\", depending on stroke. For example the 8\" stroke is 17\" retracted and 25\" extended, and the 36\" stroke is 45\" and 81\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Magister WPEN Welded Pin Eye 4\" bore cylinder uses the 2\" rod, and the listed column load is 27,400 to 37,700 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WPEN Welded Pin Eye 4\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Magister WPEN Welded Pin Eye 4\" bore cylinder is listed as 27,400 to 37,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Magister WPEN Welded Pin Eye 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Magister WPEN Welded Pin Eye 4\" bore cylinder has a pin eye welded to the cap end, pinned to a bracket on the machine so the cylinder pivots. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Magister WPEN Welded Pin Eye 4\" bore cylinder lists 27,400 to 37,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Magister WPEN Welded Pin Eye Hydraulic Cylinder, 3.5\" Bore](/p/magister-wpen-welded-pin-eye-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded pin eye pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 27,400 to 37,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WPEN Welded Pin Eye Hydraulic Cylinder, 4\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Magister WPEN Welded Pin Eye 4\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wsen-welded-swivel-eye-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Magister WSEN Welded Swivel Eye 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. It is listed in nine stroke lengths from 6\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore organised?",
+          "a": "The Magister WSEN Welded Swivel Eye 2.5\" bore cylinder part numbers run from WSEN2.5×6 to WSEN2.5×24 across 9 listed part numbers, one per stroke and rod combination. WSEN2.5×6 is the 6\" stroke and WSEN2.5×24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WSEN Welded Swivel Eye 2.5\" bore cylinder comes in nine stroke lengths from 6\" to 24\", including 6\", 10\", 12\", 16\", 18\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WSEN Welded Swivel Eye 2.5\" bore cylinder runs from 16\" to 34\" and extended length from 22\" to 58\", depending on stroke. For example the 6\" stroke is 16\" retracted and 22\" extended, and the 24\" stroke is 34\" and 58\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WSEN Welded Swivel Eye 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 12,220 to 14,700 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WSEN Welded Swivel Eye 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WSEN Welded Swivel Eye 2.5\" bore cylinder is listed as 12,220 to 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WSEN Welded Swivel Eye 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WSEN Welded Swivel Eye 2.5\" bore cylinder has a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WSEN Welded Swivel Eye 2.5\" bore cylinder lists 12,220 to 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size down is the [Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore](/p/magister-wsen-welded-swivel-eye-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 2.5\" bore, in the same welded swivel eye pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" rod and column load of 12,220 to 14,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. We keep Magister WSEN Welded Swivel Eye 2.5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wsen-welded-swivel-eye-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Magister WSEN Welded Swivel Eye 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.25\" rod. Its mounting is a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. It is listed in nine stroke lengths from 6\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Magister WSEN Welded Swivel Eye 2\" bore cylinder part numbers run from WSEN2X6 to WSEN2X24 across 9 listed part numbers, one per stroke and rod combination. WSEN2X6 is the 6\" stroke and WSEN2X24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WSEN Welded Swivel Eye 2\" bore cylinder comes in nine stroke lengths from 6\" to 24\", including 6\", 10\", 12\", 16\", 18\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WSEN Welded Swivel Eye 2\" bore cylinder runs from 16\" to 34\" and extended length from 22\" to 58\", depending on stroke. For example the 6\" stroke is 16\" retracted and 22\" extended, and the 24\" stroke is 34\" and 58\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WSEN Welded Swivel Eye 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 8,400 to 9,400 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WSEN Welded Swivel Eye 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WSEN Welded Swivel Eye 2\" bore cylinder is listed as 8,400 to 9,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WSEN Welded Swivel Eye 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WSEN Welded Swivel Eye 2\" bore cylinder has a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WSEN Welded Swivel Eye 2\" bore cylinder lists 8,400 to 9,400 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore](/p/magister-wsen-welded-swivel-eye-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded swivel eye pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 8,400 to 9,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WSEN Welded Swivel Eye Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister WSEN Welded Swivel Eye 2\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wtgn-welded-tang-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore and what is it used for?",
+          "a": "Magister WTGN Welded Tang 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 1.5\" bore and a 1\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in ten stroke lengths from 6\" to 24\", 10 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore organised?",
+          "a": "The Magister WTGN Welded Tang 1.5\" bore cylinder part numbers run from WTGN1.5×6 to WTGN1.5×24 across 10 listed part numbers, one per stroke and rod combination. WTGN1.5×6 is the 6\" stroke and WTGN1.5×24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Magister WTGN Welded Tang 1.5\" bore cylinder comes in ten stroke lengths from 6\" to 24\", including 6\", 10\", 14\", 16\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WTGN Welded Tang 1.5\" bore cylinder runs from 15\" to 33\" and extended length from 21\" to 57\", depending on stroke. For example the 6\" stroke is 15\" retracted and 21\" extended, and the 24\" stroke is 33\" and 57\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore use?",
+          "a": "Every part number of the Magister WTGN Welded Tang 1.5\" bore cylinder uses the 1\" rod, and the listed column load is 4,210 to 5,300 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WTGN Welded Tang 1.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Magister WTGN Welded Tang 1.5\" bore cylinder is listed as 4,210 to 5,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Magister WTGN Welded Tang 1.5\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Magister WTGN Welded Tang 1.5\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Magister WTGN Welded Tang 1.5\" bore cylinder lists 4,210 to 5,300 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore](/p/magister-wtgn-welded-tang-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.5\" bore, in the same welded tang pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1\" rod and column load of 4,210 to 5,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WTGN Welded Tang Hydraulic Cylinder, 1.5\" Bore in Dubai for export?",
+          "a": "Yes. Indus stocks Magister WTGN Welded Tang 1.5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wtgn-welded-tang-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Magister WTGN Welded Tang 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in thirteen stroke lengths from 6\" to 30\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister WTGN Welded Tang 2.5\" bore cylinder part numbers run from WTGN2.5×6 to WTGN2.5×30 across 13 listed part numbers, one per stroke and rod combination. WTGN2.5×6 is the 6\" stroke and WTGN2.5×30 the 30\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WTGN Welded Tang 2.5\" bore cylinder comes in thirteen stroke lengths from 6\" to 30\", including 6\", 10\", 16\", 20\", 26\" and 30\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WTGN Welded Tang 2.5\" bore cylinder runs from 15\" to 39\" and extended length from 21\" to 69\", depending on stroke. For example the 6\" stroke is 15\" retracted and 21\" extended, and the 30\" stroke is 39\" and 69\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WTGN Welded Tang 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 11,700 to 14,700 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WTGN Welded Tang 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WTGN Welded Tang 2.5\" bore cylinder is listed as 11,700 to 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WTGN Welded Tang 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WTGN Welded Tang 2.5\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WTGN Welded Tang 2.5\" bore cylinder lists 11,700 to 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore](/p/magister-wtgn-welded-tang-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded tang pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 11,700 to 14,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. Magister WTGN Welded Tang 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wtgn-welded-tang-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Magister WTGN Welded Tang 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.25\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in thirteen stroke lengths from 6\" to 30\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Magister WTGN Welded Tang 2\" bore cylinder part numbers run from WTGN2X6 to WTGN2X30 across 13 listed part numbers, one per stroke and rod combination. WTGN2X6 is the 6\" stroke and WTGN2X30 the 30\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WTGN Welded Tang 2\" bore cylinder comes in thirteen stroke lengths from 6\" to 30\", including 6\", 10\", 16\", 20\", 26\" and 30\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WTGN Welded Tang 2\" bore cylinder runs from 15\" to 39\" and extended length from 21\" to 69\", depending on stroke. For example the 6\" stroke is 15\" retracted and 21\" extended, and the 30\" stroke is 39\" and 69\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WTGN Welded Tang 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 5,700 to 9,400 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WTGN Welded Tang 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WTGN Welded Tang 2\" bore cylinder is listed as 5,700 to 9,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WTGN Welded Tang 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WTGN Welded Tang 2\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WTGN Welded Tang 2\" bore cylinder lists 5,700 to 9,400 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore](/p/magister-wtgn-welded-tang-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded tang pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 5,700 to 9,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WTGN Welded Tang Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister WTGN Welded Tang 2\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wtgn-welded-tang-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore do, and what is it for?",
+          "a": "Magister WTGN Welded Tang 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3\" bore and a 1.5\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in nine stroke lengths from 8\" to 30\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Magister WTGN Welded Tang 3\" bore cylinder part numbers run from WTGN3X8 to WTGN3X30 across 9 listed part numbers, one per stroke and rod combination. WTGN3X8 is the 8\" stroke and WTGN3X30 the 30\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Magister WTGN Welded Tang 3\" bore cylinder comes in nine stroke lengths from 8\" to 30\", including 8\", 12\", 14\", 18\", 20\" and 30\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WTGN Welded Tang 3\" bore cylinder runs from 17\" to 39\" and extended length from 25\" to 69\", depending on stroke. For example the 8\" stroke is 17\" retracted and 25\" extended, and the 30\" stroke is 39\" and 69\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Magister WTGN Welded Tang 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 21,000 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WTGN Welded Tang 3\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Magister WTGN Welded Tang 3\" bore cylinder is listed as 21,000 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Magister WTGN Welded Tang 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Magister WTGN Welded Tang 3\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Magister WTGN Welded Tang 3\" bore cylinder lists 21,000 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size down is the [Magister WTGN Welded Tang Hydraulic Cylinder, 2.5\" Bore](/p/magister-wtgn-welded-tang-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 3\" bore, in the same welded tang pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" rod and column load of 21,000 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WTGN Welded Tang Hydraulic Cylinder, 3\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister WTGN Welded Tang 3\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wucn-welded-tang-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Magister WUCN Welded Tang 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. It is listed in one stroke length (10\"), 1 part number in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister WUCN Welded Tang 2.5\" bore cylinder part numbers run from WUCN2.5×10 to WUCN2.5×10 across 1 listed part number, one per stroke and rod combination. WUCN2.5×10 is the 10\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WUCN Welded Tang 2.5\" bore cylinder is listed in a single 10\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WUCN Welded Tang 2.5\" bore cylinder runs from 17\" to 17\" and extended length from 27\" to 27\", depending on stroke. For example the 10\" stroke is 17\" retracted and 27\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WUCN Welded Tang 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 14,700 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WUCN Welded Tang 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WUCN Welded Tang 2.5\" bore cylinder is listed as 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WUCN Welded Tang 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WUCN Welded Tang 2.5\" bore cylinder has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WUCN Welded Tang 2.5\" bore cylinder lists 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore differ from other 2.5\" bore cylinders in the range?",
+          "a": "The same 2.5\" bore is also listed with a different mounting as the [Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore](/p/magister-wbcn-welded-ag-clevis-hydraulic-cylinder-2-5-in-bore). Choose by how your machine mounts the cylinder: this one has a flat tang with a pin hole welded to the cap end, which sits inside a clevis bracket on the machine; check the other listing for its pin and eye arrangement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WUCN Welded Tang Hydraulic Cylinder, 2.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Magister WUCN Welded Tang 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wucn-welded-universal-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore do, and what is it for?",
+          "a": "Magister WUCN Welded Universal 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a universal-style cap-end mount welded to the barrel. It is listed in fifteen stroke lengths from 8\" to 24\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister WUCN Welded Universal 2.5\" bore cylinder part numbers run from WUCN2.5×8 to WUCN2.5×24 across 15 listed part numbers, one per stroke and rod combination. WUCN2.5×8 is the 8\" stroke and WUCN2.5×24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WUCN Welded Universal 2.5\" bore cylinder comes in fifteen stroke lengths from 8\" to 24\", including 8\", 12\", 15\", 18\", 21\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WUCN Welded Universal 2.5\" bore cylinder runs from 15\" to 31\" and extended length from 23\" to 55\", depending on stroke. For example the 8\" stroke is 15\" retracted and 23\" extended, and the 24\" stroke is 31\" and 55\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WUCN Welded Universal 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 14,700 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WUCN Welded Universal 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WUCN Welded Universal 2.5\" bore cylinder is listed as 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WUCN Welded Universal 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WUCN Welded Universal 2.5\" bore cylinder has a universal-style cap-end mount welded to the barrel. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WUCN Welded Universal 2.5\" bore cylinder lists 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size down is the [Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore](/p/magister-wucn-welded-universal-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 2.5\" bore, in the same welded universal pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" rod and column load of 14,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Magister WUCN Welded Universal 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wucn-welded-universal-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore and what is it used for?",
+          "a": "Magister WUCN Welded Universal 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.25\" rod. Its mounting is a universal-style cap-end mount welded to the barrel. It is listed in seventeen stroke lengths from 8\" to 24\", 17 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Magister WUCN Welded Universal 2\" bore cylinder part numbers run from WUCN2X8 to WUCN2X24 across 17 listed part numbers, one per stroke and rod combination. WUCN2X8 is the 8\" stroke and WUCN2X24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WUCN Welded Universal 2\" bore cylinder comes in seventeen stroke lengths from 8\" to 24\", including 8\", 11\", 14\", 18\", 21\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WUCN Welded Universal 2\" bore cylinder runs from 15\" to 31\" and extended length from 23\" to 55\", depending on stroke. For example the 8\" stroke is 15\" retracted and 23\" extended, and the 24\" stroke is 31\" and 55\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WUCN Welded Universal 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 8,400 to 9,400 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WUCN Welded Universal 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WUCN Welded Universal 2\" bore cylinder is listed as 8,400 to 9,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WUCN Welded Universal 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WUCN Welded Universal 2\" bore cylinder has a universal-style cap-end mount welded to the barrel. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WUCN Welded Universal 2\" bore cylinder lists 8,400 to 9,400 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister WUCN Welded Universal Hydraulic Cylinder, 2.5\" Bore](/p/magister-wucn-welded-universal-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded universal pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 8,400 to 9,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WUCN Welded Universal Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister WUCN Welded Universal 2\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wucn-welded-universal-hydraulic-cylinder-all-bores",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores, and where is it used?",
+          "a": "Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a universal-style cap-end mount welded to the barrel. It is listed in one stroke length (16\"), 1 part number in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores come in?",
+          "a": "The Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder part numbers run from WUCN2.5×16 to WUCN2.5×16 across 1 listed part number, one per stroke and rod combination. WUCN2.5×16 is the 16\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores?",
+          "a": "The Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder is listed in a single 16\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores?",
+          "a": "Retracted (pin-to-pin) length on the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder runs from 23\" to 23\" and extended length from 39\" to 39\", depending on stroke. For example the 16\" stroke is 23\" retracted and 39\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores use?",
+          "a": "Every part number of the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 14,700 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores carry?",
+          "a": "Column load on the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder is listed as 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores have?",
+          "a": "The Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores mounted and installed?",
+          "a": "The Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder has a universal-style cap-end mount welded to the barrel. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder lists 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WUCN Welded Universal Hydraulic Cylinder, All Bores from stock in the UAE and get a quotation?",
+          "a": "Yes, Magister WUCN Welded Universal Hydraulic Cylinder, All Bores 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

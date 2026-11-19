@@ -1,0 +1,701 @@
+{
+  "family": "hydraulic-ball-valves",
+  "extraFacts": [
+    {
+      "fact": "PN is the nominal pressure rating in bar at 20 °C; WOG (water, oil, gas) and CWP (cold working pressure) give the rating in psi at ambient temperature; MAWP is the maximum allowable working pressure. The marked rating falls as temperature rises. SAE J518 / ISO 6162 flanges: Code 61 for 3,000 psi service and Code 62 for 6,000 psi.",
+      "source": "Indus Hydraulics listing text for the high-pressure hydraulic ball valve size pages; SAE J518 / ISO 6162-1 and -2"
+    },
+    {
+      "fact": "High-Pressure Hydraulic Ball Valve, 1-1/2″ (DN40): 0 listed part numbers; Valve Type Ball valve — high-pressure hydraulic; Nominal Size 1-1/2 in (DN40); Pressure Class PN315 (4,570 psi); PN400 (5,800 psi); PN350 (5,075 psi); 6,000 psi; 5,075 psi; 5,000 psi; End Connection (Inlet) BSP (G 1-1/2), SAE flange (6,000 psi) and SAE flange; Body Material Carbon steel, Steel, 316L stainless (A479); Seal / Elastomer Material POM; Makes Argus, Parker, Gemels, Pister, SVF, Anchor Fluid Power, Hydac; Models / part numbers seen MK8, GB2, FRKH DN40, H7666MDBSE, AB2N, 5200040866-002500.",
+      "source": "Indus Hydraulics product listing, /p/high-pressure-hydraulic-ball-valve-1-1-2-inch"
+    },
+    {
+      "fact": "High-Pressure Hydraulic Ball Valve, 1-1/4″ (DN32): 0 listed part numbers; Valve Type Ball valve — high-pressure hydraulic; Nominal Size 1-1/4 in (DN32); Pressure Class 6,000 psi; End Connection (Inlet) BSPP; Body Material 316 stainless; Makes Colson; Models / part numbers seen BWRP2532PFS.",
+      "source": "Indus Hydraulics product listing, /p/high-pressure-hydraulic-ball-valve-1-1-4-inch"
+    },
+    {
+      "fact": "High-Pressure Hydraulic Ball Valve, 1″ (DN25): 0 listed part numbers; Valve Type Ball valve — high-pressure hydraulic; Nominal Size 1 in (DN25); Pressure Class PN350 (5,075 psi); MAWP 6,000 psi; 3,000 WOG; 6,000 WOG; 6,000 psi; 10,000 psi; End Connection (Inlet) BSP (G 1); Body Material 316L stainless, Stainless steel, CF3M (316L) stainless, Steel; Seal / Elastomer Material POM; Makes Gemels, Hydac, Nutron, SVF, Parker; Models / part numbers seen GM, KHM3H-SP-1SW-3312, T3-R10S30AZ, T3-R10S60AZ, H7666MDBSW, 02085311.",
+      "source": "Indus Hydraulics product listing, /p/high-pressure-hydraulic-ball-valve-1-inch"
+    },
+    {
+      "fact": "High-Pressure Hydraulic Ball Valve, 2″ (DN50): 0 listed part numbers; Valve Type Ball valve — high-pressure hydraulic; Nominal Size 2 in (DN50); Pressure Class 3,000 psi; End Connection (Inlet) SAE split flange (3,000 psi); Body Material Steel (ST52-3); Makes Pister; Models / part numbers seen SKH DN50, 3123.",
+      "source": "Indus Hydraulics product listing, /p/high-pressure-hydraulic-ball-valve-2-inch"
+    },
+    {
+      "fact": "High-Pressure Hydraulic Ball Valve, 3/4″ (DN20): 0 listed part numbers; Valve Type Ball valve — high-pressure hydraulic; Nominal Size 3/4 in (DN20); Pressure Class PN400 (5,800 psi); 10,000 psi; End Connection (Inlet) BSP (G 3/4); Body Material 316L stainless, Steel; Seal / Elastomer Material POM; Makes Gemels, Parker; Models / part numbers seen GM.",
+      "source": "Indus Hydraulics product listing, /p/high-pressure-hydraulic-ball-valve-3-4-inch"
+    },
+    {
+      "fact": "KHB-G1/2 High-Pressure Block Ball Valve, PN 500, DN13: 0 listed part numbers; Product type High-pressure ball valve, block type; Pattern HYDAC KHB; Ports G 1/2 female (BSPP, ISO 228); Nominal size DN13 (12 mm bore); Nominal pressure PN 500 bar (steel, DN13); Housing Steel, zinc plated; stainless to order; Ball and spindle Steel; stainless or hardened steel to order; Seals POM sealing cups, NBR seals; PTFE (100 bar max), PEEK, FKM to order; Temperature −10 to +80 °C; Weight 0.59 kg (steel).",
+      "source": "Indus Hydraulics product listing, /p/khb-g1-2-high-pressure-ball-valve"
+    },
+    {
+      "fact": "Anfield GE High-Pressure Ball Valves: 20 listed part numbers; rated pressure 5075 psi to 7250 psi; items: 1\" Ball Valve | 1/2\" Ball Valve | 1/4\" Ball Valve | 3/4\" Ball Valve | 3/8\" Ball Valve | 2-Way High Pressure Ball Valve with 3/4\" SAE Ports | 2-Way High Pressure Ball Valve with 1\" SAE Ports | 2-Way High Pressure Ball Valve with 1/4\" SAE Ports | 2-Way High Pressure Ball Valve with 3/8\" SAE Ports | 2-Way High Pressure Ball Valve with 1/2\" SAE Ports.",
+      "source": "Indus Hydraulics product listing, /p/anfield-ge-high-pressure-ball-valves"
+    },
+    {
+      "fact": "Dynamic Fluid Components DB and DE Ball Valves, Handles and Locking Kits: 48 listed part numbers; rated pressure 4500 psi to 7250 psi; items: DE2 / DB2 Series Ball Valve | DE2/DB2 Series Carbon Steel Ball Valve | DE2 / DB2 NPT Ball Valve | Ball Valve | Ball Valve – Carbon Steel Construction | DLK-L LOCKING KIT \"U\" – Valve Locking Kit for DB Models | DLK-M LOCKING KIT \"U\" – Valve Locking Kit for DE Models | DLK-S LOCKING KIT \"U\" – Valve Locking Kit for DE Models | Flat Locking Kit for DB Models – Valve Locking Kit | Flat Locking Kit LK-M.",
+      "source": "Indus Hydraulics product listing, /p/dynamic-fluid-components-db-and-de-ball-valves-handles-and-locking-kits"
+    },
+    {
+      "fact": "Parker Hydraulic Manual Ball Valves: 21 listed part numbers; maximum pressure 6000 psi to 7250 psi; Actuation Mechanism Manual; Adjustment Method Handle; Ball Finish Chrome Coated; Ball Material Steel; Ball Seal Material Nitrile; Body Carbon Steel; Body Finish Zinc Coated; Body Material Steel; Center Position Not Applicable; Control Direction Two-Way; Fluid Service Oil, Water; Handle Finish Zinc Plated; Handle Lockability Not Lockable; Handle Material Steel; Handle Type Standard; Handle Type-hydraulic Ball Valves Standard; Included Seals Seals Included; Mounting Inline; Return Mechanism Not Applicable; Series BV Series; Shaft Seal Material Nitrile; Thread Type SAE; Valve Control Directional Control, Flow Control; Valve Type Ball; Valve Ways And Positions 2-Way/2-Position; items: Hydraulic Ball Valve, 6000 PSI Max. Pressure, #12 SAE Port Size, 2-Way/2-Position | Hydraulic Ball Valve, 6000 PSI Max. Pressure, #12 SAE Port Size, Lockable | Hydraulic Ball Valve, 6000 PSI Max. Pressure, #16 SAE Port Size, 2-Way/2-Position | Hydraulic Ball Valve, 6000 PSI Max. Pressure, #4 SAE Port Size, 2-Way/2-Position | Hydraulic Ball Valve, 6000 PSI Max. Pressure, #6 SAE Port Size, 2-Way/2-Position | Hydraulic Ball Valve, 6000 PSI Max. Pressure, #8 SAE Port Size, 2-Way/2-Position | Hydraulic Ball Valve, 6000 PSI Max. Pressure, 1/4 Inch NPT Port Size, Lockable, Steel | Hydraulic Ball Valve, 6000 PSI Max. Pressure, 1-1/2 Inch NPT Port Size | Hydraulic Ball Valve, 6000 PSI Max. Pressure, 1-1/2 Inch NPT Port Size, Lockable, Steel | Hydraulic Ball Valve, 6000 PSI Max. Pressure, 1-1/4 Inch NPT Port Size.",
+      "source": "Indus Hydraulics product listing, /p/parker-hydraulic-manual-ball-valves"
+    },
+    {
+      "fact": "Stillwell Six-Port Diverter Ball Valve: 1 listed part numbers; items: Stillwell 6?port Ball Valve.",
+      "source": "Indus Hydraulics product listing, /p/stillwell-six-port-diverter-ball-valve"
+    }
+  ],
+  "products": [
+    {
+      "slug": "high-pressure-hydraulic-ball-valve-1-1-2-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the 1-1/2\" (DN40) high-pressure hydraulic ball valve used?",
+          "a": "This is the 1-1/2\" (DN40) high-pressure ball valve for hydraulic circuits: pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves we list in this size are rated 4,570 to 6,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the 1-1/2\" (DN40) high-pressure hydraulic ball valve?",
+          "a": "The 1-1/2\" (DN40) high-pressure hydraulic ball valve is listed as a single nominal size, 1-1/2 in (DN40), covering the valves we have photographed in that size, with ends BSP (G 1-1/2), SAE flange (6,000 psi) and SAE flange. Give the size, pressure rating, end connection, body and seat material on the enquiry, with a make and part number if you have one, and we confirm lead time and documentation on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the 1-1/2\" (DN40) high-pressure hydraulic ball valve for my application?",
+          "a": "Give the size, the working pressure, the end connection, the body and seat material and, if you have one, the make and part number. The 1-1/2\" (DN40) high-pressure hydraulic ball valve is quoted to the specification on your enquiry, so name the fluid and temperature as well, because ratings fall as temperature rises."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 1-1/2\" (DN40) high-pressure hydraulic ball valve have?",
+          "a": "The valves listed under the 1-1/2\" (DN40) high-pressure hydraulic ball valve are rated 4,570 to 6,000 psi, and the table on the listing gives each one as marked. PN is the pressure in bar at 20 °C, so PN350 is 5,075 psi and PN400 is 5,800 psi; WOG is the cold working pressure for water, oil and gas, and MAWP the maximum allowable working pressure. Tell us your working pressure and fluid and we match the valve."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 1-1/2\" (DN40) high-pressure hydraulic ball valve made from?",
+          "a": "The valves listed under the 1-1/2\" (DN40) high-pressure hydraulic ball valve have stainless steel or steel bodies, as marked on each (the listing gives Carbon steel, Steel, 316L stainless (A479)). The usual seat is POM, an acetal that suits hydraulic oil; say if your fluid or temperature needs another seat material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the 1-1/2\" (DN40) high-pressure hydraulic ball valve?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the 1-1/2\" (DN40) high-pressure hydraulic ball valve. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1-1/2\" (DN40) high-pressure hydraulic ball valve connect to?",
+          "a": "The 1-1/2\" (DN40) high-pressure hydraulic ball valve is supplied with ends to suit your system, for example BSP (G 1-1/2), SAE flange (6,000 psi) and SAE flange. SAE flange ends need the matching flange and seal; threaded ends need the matching adapter. See [our hydraulic ball valve shelf](/c/hydraulic-ball-valves) for the other sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 1-1/2\" (DN40) high-pressure hydraulic ball valve be installed and maintained?",
+          "a": "Fit the 1-1/2\" (DN40) high-pressure hydraulic ball valve with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the 1-1/2\" (DN40) high-pressure hydraulic ball valve?",
+          "a": "The 1-1/2\" (DN40) high-pressure hydraulic ball valve is used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1-1/2\" (DN40) high-pressure hydraulic ball valve differ from the 2\" (DN50) high-pressure hydraulic ball valve?",
+          "a": "The 1-1/2\" (DN40) listing covers valves rated 4,570 to 6,000 psi, while [the 2\" (DN50) high-pressure hydraulic ball valve](/p/high-pressure-hydraulic-ball-valve-2-inch) covers valves rated 3,000 psi. Both are quarter-turn ball valves for hydraulic circuits; choose the size for the flow and then the rating for the pressure."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the 1-1/2\" (DN40) high-pressure hydraulic ball valve?",
+          "a": "We ship the 1-1/2\" (DN40) high-pressure hydraulic ball valve from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 1-1/2\" (DN40) high-pressure hydraulic ball valve available from stock in Dubai for export?",
+          "a": "Yes, the 1-1/2\" (DN40) high-pressure hydraulic ball valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "high-pressure-hydraulic-ball-valve-1-1-4-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 1-1/4\" (DN32) high-pressure hydraulic ball valve used for?",
+          "a": "This is the 1-1/4\" (DN32) high-pressure ball valve for hydraulic circuits: pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves we list in this size are rated 6,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the 1-1/4\" (DN32) high-pressure hydraulic ball valve available in?",
+          "a": "The 1-1/4\" (DN32) high-pressure hydraulic ball valve is listed as a single nominal size, 1-1/4 in (DN32), covering the valves we have photographed in that size, with ends BSPP. Give the size, pressure rating, end connection, body and seat material on the enquiry, with a make and part number if you have one, and we confirm lead time and documentation on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the 1-1/4\" (DN32) high-pressure hydraulic ball valve for my application?",
+          "a": "Give the size, the working pressure, the end connection, the body and seat material and, if you have one, the make and part number. The 1-1/4\" (DN32) high-pressure hydraulic ball valve is quoted to the specification on your enquiry, so name the fluid and temperature as well, because ratings fall as temperature rises."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the 1-1/4\" (DN32) high-pressure hydraulic ball valve?",
+          "a": "The valves listed under the 1-1/4\" (DN32) high-pressure hydraulic ball valve are rated 6,000 psi, and the table on the listing gives each one as marked. PN is the pressure in bar at 20 °C, so PN350 is 5,075 psi and PN400 is 5,800 psi; WOG is the cold working pressure for water, oil and gas, and MAWP the maximum allowable working pressure. Tell us your working pressure and fluid and we match the valve."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 1-1/4\" (DN32) high-pressure hydraulic ball valve made from?",
+          "a": "The valves listed under the 1-1/4\" (DN32) high-pressure hydraulic ball valve have stainless steel or steel bodies, as marked on each (the listing gives 316 stainless). The usual seat is POM, an acetal that suits hydraulic oil; say if your fluid or temperature needs another seat material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the 1-1/4\" (DN32) high-pressure hydraulic ball valve?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the 1-1/4\" (DN32) high-pressure hydraulic ball valve. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1-1/4\" (DN32) high-pressure hydraulic ball valve connect to?",
+          "a": "The 1-1/4\" (DN32) high-pressure hydraulic ball valve is supplied with ends to suit your system, for example BSPP. SAE flange ends need the matching flange and seal; threaded ends need the matching adapter. See [our hydraulic ball valve shelf](/c/hydraulic-ball-valves) for the other sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 1-1/4\" (DN32) high-pressure hydraulic ball valve be installed and maintained?",
+          "a": "Fit the 1-1/4\" (DN32) high-pressure hydraulic ball valve with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the 1-1/4\" (DN32) high-pressure hydraulic ball valve?",
+          "a": "The 1-1/4\" (DN32) high-pressure hydraulic ball valve is used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1-1/4\" (DN32) high-pressure hydraulic ball valve differ from the 1-1/2\" (DN40) high-pressure hydraulic ball valve?",
+          "a": "The 1-1/4\" (DN32) listing covers valves rated 6,000 psi, while [the 1-1/2\" (DN40) high-pressure hydraulic ball valve](/p/high-pressure-hydraulic-ball-valve-1-1-2-inch) covers valves rated 4,570 to 6,000 psi. Both are quarter-turn ball valves for hydraulic circuits; choose the size for the flow and then the rating for the pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the 1-1/4\" (DN32) high-pressure hydraulic ball valve shipped from, and what origin and HS code apply?",
+          "a": "We ship the 1-1/4\" (DN32) high-pressure hydraulic ball valve from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 1-1/4\" (DN32) high-pressure hydraulic ball valve available from stock in Dubai for export?",
+          "a": "Yes, we hold the 1-1/4\" (DN32) high-pressure hydraulic ball valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "high-pressure-hydraulic-ball-valve-1-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the 1\" (DN25) high-pressure hydraulic ball valve used?",
+          "a": "This is the 1\" (DN25) high-pressure ball valve for hydraulic circuits: pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves we list in this size are rated 3,000 to 10,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the 1\" (DN25) high-pressure hydraulic ball valve?",
+          "a": "The 1\" (DN25) high-pressure hydraulic ball valve is listed as a single nominal size, 1 in (DN25), covering the valves we have photographed in that size, with ends BSP (G 1). Give the size, pressure rating, end connection, body and seat material on the enquiry, with a make and part number if you have one, and we confirm lead time and documentation on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the 1\" (DN25) high-pressure hydraulic ball valve for my application?",
+          "a": "Give the size, the working pressure, the end connection, the body and seat material and, if you have one, the make and part number. The 1\" (DN25) high-pressure hydraulic ball valve is quoted to the specification on your enquiry, so name the fluid and temperature as well, because ratings fall as temperature rises."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 1\" (DN25) high-pressure hydraulic ball valve have?",
+          "a": "The valves listed under the 1\" (DN25) high-pressure hydraulic ball valve are rated 3,000 to 10,000 psi, and the table on the listing gives each one as marked. PN is the pressure in bar at 20 °C, so PN350 is 5,075 psi and PN400 is 5,800 psi; WOG is the cold working pressure for water, oil and gas, and MAWP the maximum allowable working pressure. Tell us your working pressure and fluid and we match the valve."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the 1\" (DN25) high-pressure hydraulic ball valve offered in?",
+          "a": "The valves listed under the 1\" (DN25) high-pressure hydraulic ball valve have stainless steel or steel bodies, as marked on each (the listing gives 316L stainless, Stainless steel, CF3M (316L) stainless, Steel). The usual seat is POM, an acetal that suits hydraulic oil; say if your fluid or temperature needs another seat material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the 1\" (DN25) high-pressure hydraulic ball valve?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the 1\" (DN25) high-pressure hydraulic ball valve. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the 1\" (DN25) high-pressure hydraulic ball valve mate with?",
+          "a": "The 1\" (DN25) high-pressure hydraulic ball valve is supplied with ends to suit your system, for example BSP (G 1). SAE flange ends need the matching flange and seal; threaded ends need the matching adapter. See [our hydraulic ball valve shelf](/c/hydraulic-ball-valves) for the other sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the 1\" (DN25) high-pressure hydraulic ball valve?",
+          "a": "Fit the 1\" (DN25) high-pressure hydraulic ball valve with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the 1\" (DN25) high-pressure hydraulic ball valve?",
+          "a": "The 1\" (DN25) high-pressure hydraulic ball valve is used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1\" (DN25) high-pressure hydraulic ball valve differ from the 1-1/4\" (DN32) high-pressure hydraulic ball valve?",
+          "a": "The 1\" (DN25) listing covers valves rated 3,000 to 10,000 psi, while [the 1-1/4\" (DN32) high-pressure hydraulic ball valve](/p/high-pressure-hydraulic-ball-valve-1-1-4-inch) covers valves rated 6,000 psi. Both are quarter-turn ball valves for hydraulic circuits; choose the size for the flow and then the rating for the pressure."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the 1\" (DN25) high-pressure hydraulic ball valve?",
+          "a": "We ship the 1\" (DN25) high-pressure hydraulic ball valve from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 1\" (DN25) high-pressure hydraulic ball valve available from stock in Dubai for export?",
+          "a": "Yes, the 1\" (DN25) high-pressure hydraulic ball valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "high-pressure-hydraulic-ball-valve-2-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the 2\" (DN50) high-pressure hydraulic ball valve used?",
+          "a": "This is the 2\" (DN50) high-pressure ball valve for hydraulic circuits: pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves we list in this size are rated 3,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the 2\" (DN50) high-pressure hydraulic ball valve available in?",
+          "a": "The 2\" (DN50) high-pressure hydraulic ball valve is listed as a single nominal size, 2 in (DN50), covering the valves we have photographed in that size, with ends SAE split flange (3,000 psi). Give the size, pressure rating, end connection, body and seat material on the enquiry, with a make and part number if you have one, and we confirm lead time and documentation on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the 2\" (DN50) high-pressure hydraulic ball valve for my application?",
+          "a": "Give the size, the working pressure, the end connection, the body and seat material and, if you have one, the make and part number. The 2\" (DN50) high-pressure hydraulic ball valve is quoted to the specification on your enquiry, so name the fluid and temperature as well, because ratings fall as temperature rises."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the 2\" (DN50) high-pressure hydraulic ball valve?",
+          "a": "The valves listed under the 2\" (DN50) high-pressure hydraulic ball valve are rated 3,000 psi, and the table on the listing gives each one as marked. PN is the pressure in bar at 20 °C, so PN350 is 5,075 psi and PN400 is 5,800 psi; WOG is the cold working pressure for water, oil and gas, and MAWP the maximum allowable working pressure. Tell us your working pressure and fluid and we match the valve."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 2\" (DN50) high-pressure hydraulic ball valve made from?",
+          "a": "The valves listed under the 2\" (DN50) high-pressure hydraulic ball valve have stainless steel or steel bodies, as marked on each (the listing gives Steel (ST52-3)). The usual seat is POM, an acetal that suits hydraulic oil; say if your fluid or temperature needs another seat material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the 2\" (DN50) high-pressure hydraulic ball valve?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the 2\" (DN50) high-pressure hydraulic ball valve. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the 2\" (DN50) high-pressure hydraulic ball valve mate with?",
+          "a": "The 2\" (DN50) high-pressure hydraulic ball valve is supplied with ends to suit your system, for example SAE split flange (3,000 psi). SAE flange ends need the matching flange and seal; threaded ends need the matching adapter. See [our hydraulic ball valve shelf](/c/hydraulic-ball-valves) for the other sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the 2\" (DN50) high-pressure hydraulic ball valve?",
+          "a": "Fit the 2\" (DN50) high-pressure hydraulic ball valve with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the 2\" (DN50) high-pressure hydraulic ball valve?",
+          "a": "The 2\" (DN50) high-pressure hydraulic ball valve is used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2\" (DN50) high-pressure hydraulic ball valve differ from the 1-1/2\" (DN40) high-pressure hydraulic ball valve?",
+          "a": "The 2\" (DN50) listing covers valves rated 3,000 psi, while [the 1-1/2\" (DN40) high-pressure hydraulic ball valve](/p/high-pressure-hydraulic-ball-valve-1-1-2-inch) covers valves rated 4,570 to 6,000 psi. Both are quarter-turn ball valves for hydraulic circuits; choose the size for the flow and then the rating for the pressure."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the 2\" (DN50) high-pressure hydraulic ball valve?",
+          "a": "We ship the 2\" (DN50) high-pressure hydraulic ball valve from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 2\" (DN50) high-pressure hydraulic ball valve available from stock in Dubai for export?",
+          "a": "Yes. We keep the 2\" (DN50) high-pressure hydraulic ball valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "high-pressure-hydraulic-ball-valve-3-4-inch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 3/4\" (DN20) high-pressure hydraulic ball valve used for?",
+          "a": "This is the 3/4\" (DN20) high-pressure ball valve for hydraulic circuits: pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves we list in this size are rated 5,800 to 10,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the 3/4\" (DN20) high-pressure hydraulic ball valve available in?",
+          "a": "The 3/4\" (DN20) high-pressure hydraulic ball valve is listed as a single nominal size, 3/4 in (DN20), covering the valves we have photographed in that size, with ends BSP (G 3/4). Give the size, pressure rating, end connection, body and seat material on the enquiry, with a make and part number if you have one, and we confirm lead time and documentation on the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the 3/4\" (DN20) high-pressure hydraulic ball valve for my application?",
+          "a": "Give the size, the working pressure, the end connection, the body and seat material and, if you have one, the make and part number. The 3/4\" (DN20) high-pressure hydraulic ball valve is quoted to the specification on your enquiry, so name the fluid and temperature as well, because ratings fall as temperature rises."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the 3/4\" (DN20) high-pressure hydraulic ball valve?",
+          "a": "The valves listed under the 3/4\" (DN20) high-pressure hydraulic ball valve are rated 5,800 to 10,000 psi, and the table on the listing gives each one as marked. PN is the pressure in bar at 20 °C, so PN350 is 5,075 psi and PN400 is 5,800 psi; WOG is the cold working pressure for water, oil and gas, and MAWP the maximum allowable working pressure. Tell us your working pressure and fluid and we match the valve."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the 3/4\" (DN20) high-pressure hydraulic ball valve offered in?",
+          "a": "The valves listed under the 3/4\" (DN20) high-pressure hydraulic ball valve have stainless steel or steel bodies, as marked on each (the listing gives 316L stainless, Steel). The usual seat is POM, an acetal that suits hydraulic oil; say if your fluid or temperature needs another seat material."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the 3/4\" (DN20) high-pressure hydraulic ball valve?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the 3/4\" (DN20) high-pressure hydraulic ball valve. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the 3/4\" (DN20) high-pressure hydraulic ball valve mate with?",
+          "a": "The 3/4\" (DN20) high-pressure hydraulic ball valve is supplied with ends to suit your system, for example BSP (G 3/4). SAE flange ends need the matching flange and seal; threaded ends need the matching adapter. See [our hydraulic ball valve shelf](/c/hydraulic-ball-valves) for the other sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 3/4\" (DN20) high-pressure hydraulic ball valve be installed and maintained?",
+          "a": "Fit the 3/4\" (DN20) high-pressure hydraulic ball valve with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the 3/4\" (DN20) high-pressure hydraulic ball valve?",
+          "a": "The 3/4\" (DN20) high-pressure hydraulic ball valve is used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3/4\" (DN20) high-pressure hydraulic ball valve differ from the 1\" (DN25) high-pressure hydraulic ball valve?",
+          "a": "The 3/4\" (DN20) listing covers valves rated 5,800 to 10,000 psi, while [the 1\" (DN25) high-pressure hydraulic ball valve](/p/high-pressure-hydraulic-ball-valve-1-inch) covers valves rated 3,000 to 10,000 psi. Both are quarter-turn ball valves for hydraulic circuits; choose the size for the flow and then the rating for the pressure."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the 3/4\" (DN20) high-pressure hydraulic ball valve?",
+          "a": "We ship the 3/4\" (DN20) high-pressure hydraulic ball valve from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 3/4\" (DN20) high-pressure hydraulic ball valve from stock in the UAE?",
+          "a": "Yes, we hold the 3/4\" (DN20) high-pressure hydraulic ball valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "khb-g1-2-high-pressure-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the KHB-G1/2 high-pressure block ball valve used for?",
+          "a": "The KHB-G1/2 is a block-type ball valve for high-pressure hydraulic lines with G 1/2 BSPP female ports, rated PN 500 bar in the DN13 version. KHB is HYDAC's designation for its block ball valves, and valves to the same pattern are made by others."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the KHB-G1/2 high-pressure block ball valve?",
+          "a": "This listing is the DN13 version, with a 12 mm bore and G 1/2 female BSPP ports to ISO 228, 84 mm long in steel and weighing 0.59 kg. The DN16 version, with a 15 mm bore, is also G 1/2 and is supplied to order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the KHB-G1/2 high-pressure block ball valve?",
+          "a": "Choose the bore, DN13 or DN16, then the materials, seals and options, and say on the enquiry whether you want genuine HYDAC or a valve to the KHB pattern at the same rating. The DN13 is PN 500 bar; the DN16 is lower, at 420 bar in steel."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the KHB-G1/2 high-pressure block ball valve have?",
+          "a": "The DN13 valve is rated PN 500 bar in steel or stainless steel, and the DN16 is 420 bar in steel and 400 bar in stainless steel. Any version with PTFE seals or sealing cups is limited to 100 bar, so choose POM cups for full pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the KHB-G1/2 high-pressure block ball valve made from?",
+          "a": "The standard build is steel housing, steel ball and spindle, POM sealing cups and NBR seals, with stainless steel, hardened steel, PTFE, PEEK and FKM options. The housing is zinc plated as standard, with zinc-nickel or stainless steel to order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the KHB-G1/2 high-pressure block ball valve?",
+          "a": "The listing gives the port thread as G 1/2 BSPP to ISO 228 and the fluid as mineral oil to DIN 51524 parts 1 and 2, with temperatures of -10 to +80 °C. No other certificate is held on the listing, so ask in the enquiry for any documentation you need."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the KHB-G1/2 high-pressure block ball valve mate with?",
+          "a": "The G 1/2 female BSPP ports take BSPP male fittings, and the valve can be fitted in any orientation with flow in either direction. See [our hydraulic ball valve shelf](/c/hydraulic-ball-valves) for other sizes and makes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the KHB-G1/2 high-pressure block ball valve?",
+          "a": "Mount the KHB-G1/2 in any orientation with flow in either direction, turn the lever a quarter turn and keep fluid and ambient temperature within -10 to +80 °C. The seal kit for the DN13 is HYDAC 703 046, and as SO940 the valve can be had with four fixing holes for panel mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the KHB-G1/2 high-pressure block ball valve used?",
+          "a": "The KHB block ball valve is used for isolation in high-pressure hydraulic lines, such as pump and accumulator circuits and test points, where a compact block valve with BSPP ports suits the panel."
+        },
+        {
+          "slot": "K",
+          "q": "How does the KHB-G1/2 high-pressure block ball valve differ from the 3/4\" (DN20) high-pressure hydraulic ball valve?",
+          "a": "The KHB-G1/2 is a block-type valve with G 1/2 BSPP ports rated PN 500 bar in the DN13 version, while [the 3/4\" (DN20) high-pressure hydraulic ball valve](/p/high-pressure-hydraulic-ball-valve-3-4-inch) is listed by size with valves rated 5,800 to 10,000 psi from several makes. Choose the KHB when you want a specific block pattern."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the KHB-G1/2 ball valve supplied from, and is it genuine HYDAC?",
+          "a": "We supply the KHB-G1/2 from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond, either genuine HYDAC or a KHB-pattern valve at the same rating, as you say on the enquiry. The listing gives no country of origin or HS code, so we confirm both on the quotation and show them on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the KHB-G1/2 high-pressure block ball valve from stock in the UAE?",
+          "a": "Yes. We stock the KHB-G1/2 high-pressure block ball valve at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "anfield-ge-high-pressure-ball-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Anfield GE high-pressure ball valves used?",
+          "a": "Anfield GE high-pressure ball valves are two-way and three-way hydraulic ball valves with NPT or SAE (ORB) ports from 1/4\" to 1\". The listing carries 20 part numbers rated 5,075 to 7,250 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Anfield GE high-pressure ball valves?",
+          "a": "The listing carries 20 part numbers, for example GE2N1 for a 1\" NPT two-way valve and GE3SAE16 for a three-way valve with 1\" SAE ports. Sizes run from 1/4\" to 1\" in NPT and from SAE 4 to SAE 16 in ORB."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Anfield GE high-pressure ball valves for my application?",
+          "a": "Choose the port size and thread, the number of ways, two or three, and the pressure rating. The listing gives 5,075, 5,145, 5,800 and 7,250 psi depending on the size, so match the rating of the part number to your working pressure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Anfield GE high-pressure ball valves?",
+          "a": "The listed ratings are 5,075, 5,145, 5,800 and 7,250 psi depending on size and type, shown on each row, and the smaller sizes carry the higher ratings. The rating is cold working pressure as published, so check the maker's temperature curve for hot service."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Anfield GE high-pressure ball valves made from?",
+          "a": "The listing does not state the body or seal material for the Anfield GE series, so we confirm it from the maker when you enquire. Tell us the fluid and temperature and we check the seals against them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Anfield GE high-pressure ball valves?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the Anfield GE high-pressure ball valves. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Anfield GE high-pressure ball valves connect to?",
+          "a": "The ports are NPT or SAE O-ring boss threads, so the valve needs matching threaded fittings. See [the Parker manual ball valves](/p/parker-hydraulic-manual-ball-valves) for SAE-port valves with lockable handles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Anfield GE high-pressure ball valves?",
+          "a": "Fit the Anfield GE high-pressure ball valves with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Anfield GE high-pressure ball valves?",
+          "a": "The Anfield GE high-pressure ball valves are used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Anfield GE high-pressure ball valves differ from the Parker BV series hydraulic manual ball valves?",
+          "a": "The Anfield GE valves are rated 5,075 to 7,250 psi with NPT and ORB ports and include three-way versions, while [the Parker BV series hydraulic manual ball valves](/p/parker-hydraulic-manual-ball-valves) are two-way valves rated 6,000 to 7,250 psi with the choice of a standard or lockable handle. Choose Anfield for three-way ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Anfield GE high-pressure ball valves shipped from, and what origin and HS code apply?",
+          "a": "We ship the Anfield GE high-pressure ball valves from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Anfield GE high-pressure ball valves in stock in Dubai?",
+          "a": "Yes. We keep the Anfield GE high-pressure ball valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-db-and-de-ball-valves-handles-and-locking-kits",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dynamic Fluid Components DB and DE ball valves, handles and locking kits used for?",
+          "a": "Dynamic Fluid Components DB and DE ball valves are high-pressure two-way and three-way hydraulic ball valves with NPT or SAE ports, listed with handles and locking kits. The listing carries 48 part numbers rated 4,500 to 7,250 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Dynamic Fluid Components DB and DE ball valves, handles and locking kits?",
+          "a": "The listing carries 48 part numbers, for example DB2-112-NPT, DE2-14NPT and DE3L-08 SAE, plus locking kits such as LK-M. Port sizes run from 1/4\" NPT up to 2\" NPT or SAE."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Dynamic Fluid Components DB and DE ball valves, handles and locking kits?",
+          "a": "Choose the port size and thread, two-way or three-way, and the pressure rating, then the handle or locking kit that fits the model. The listing gives 4,500, 5,000, 5,145, 5,800, 5,880 and 7,250 psi depending on the series and size."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Dynamic Fluid Components DB and DE ball valves, handles and locking kits?",
+          "a": "The listed ratings are 4,500, 5,000, 5,145, 5,800, 5,880 and 7,250 psi depending on the series and size, with the smaller DE ports rated higher. Use the rating on the row of the part number you choose and give us your temperature for hot service."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dynamic Fluid Components DB and DE ball valves, handles and locking kits made from?",
+          "a": "The listing names carbon steel construction on some DB rows but does not state the body, ball and seal material for every part. Tell us the fluid and temperature when you enquire and we confirm materials from the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Dynamic Fluid Components DB and DE ball valves, handles and locking kits?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the Dynamic Fluid Components DB and DE ball valves, handles and locking kits. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Dynamic Fluid Components DB and DE ball valves, handles and locking kits mate with?",
+          "a": "The DB and DE valves take NPT or SAE O-ring boss fittings, and locking kits and handles are listed against the valve models they fit. See [the Anfield GE ball valves](/p/anfield-ge-high-pressure-ball-valves) for another high-pressure series."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Dynamic Fluid Components DB and DE ball valves, handles and locking kits be installed and maintained?",
+          "a": "Fit the Dynamic Fluid Components DB and DE ball valves, handles and locking kits with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Dynamic Fluid Components DB and DE ball valves, handles and locking kits used?",
+          "a": "The Dynamic Fluid Components DB and DE ball valves, handles and locking kits are used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dynamic Fluid Components DB and DE ball valves, handles and locking kits differ from the Anfield GE high-pressure ball valves?",
+          "a": "The DB and DE series carry 48 part numbers with handles and locking kits, rated 4,500 to 7,250 psi, while [the Anfield GE high-pressure ball valves](/p/anfield-ge-high-pressure-ball-valves) carry 20 part numbers rated 5,075 to 7,250 psi. Choose the DB and DE series when you need locking kits or ports up to 2\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dynamic Fluid Components DB and DE ball valves, handles and locking kits shipped from, and what origin and HS code apply?",
+          "a": "We ship the Dynamic Fluid Components DB and DE ball valves, handles and locking kits from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Dynamic Fluid Components DB and DE ball valves, handles and locking kits available from stock in Dubai for export?",
+          "a": "Yes. We keep the Dynamic Fluid Components DB and DE ball valves, handles and locking kits in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-hydraulic-manual-ball-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Parker BV series hydraulic manual ball valves used?",
+          "a": "Parker BV series hydraulic manual ball valves are two-way, two-position valves for oil and water, with SAE or NPT ports, chrome-coated steel balls and a standard or lockable handle. The maker states 6,000 to 7,250 psi depending on size. This listing carries 21 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Parker BV series hydraulic manual ball valves?",
+          "a": "The listing carries 21 part numbers, for example BVHP12SSS1N, BVHP04SSS1N and BVAH24NSS1NA, with port sizes from 1/4\" NPT to 1-1/2\" NPT and SAE sizes such as #6 and #12. Twelve rows have a standard handle and nine a lockable handle."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Parker BV series hydraulic manual ball valves for my application?",
+          "a": "Choose the port size and thread, SAE or NPT, then a standard or lockable handle, and read the pressure of the part number you pick. The maker states 6,000 to 7,250 psi depending on size, so confirm the figure for your size before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Parker BV series hydraulic manual ball valves?",
+          "a": "Parker states a maximum pressure of 6,000 to 7,250 psi depending on size for the BV series, with the larger ports at the lower figure. Use the lower figure when the part number is ambiguous, and give us your working pressure and fluid so we confirm it with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker BV series hydraulic manual ball valves made from?",
+          "a": "The valves have a zinc-coated carbon steel body, a chrome-coated steel ball, nitrile ball, shaft and body seals, and a zinc-plated steel handle. Nitrile suits mineral hydraulic oil and water; check compatibility before using other fluids."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Parker BV series hydraulic manual ball valves?",
+          "a": "The listing gives ratings as marked on the valves, in PN, WOG and psi, and names no ISO or API standard for the Parker BV series hydraulic manual ball valves. SAE flange ends are rated by code: Code 61 for 3,000 psi service and Code 62 for 6,000 psi. Ask in the enquiry for any documentation you need, and we confirm it on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Parker BV series hydraulic manual ball valves mate with?",
+          "a": "The valves are inline, with SAE or NPT thread ports, so they need matching adapters or fittings. See [the Anfield GE ball valves](/p/anfield-ge-high-pressure-ball-valves) for three-way versions and [the Dynamic Fluid Components DB and DE valves](/p/dynamic-fluid-components-db-and-de-ball-valves-handles-and-locking-kits) for locking kits."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Parker BV series hydraulic manual ball valves?",
+          "a": "Fit the Parker BV series hydraulic manual ball valves with the pressure rating and the end connection matched to the line, turn the lever through a quarter turn and do not use it to throttle. Check for weeping at the stem after the first pressure cycle, and size the lever clearance before mounting, because high-pressure valves are heavy."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Parker BV series hydraulic manual ball valves?",
+          "a": "The Parker BV series hydraulic manual ball valves are used for pump, accumulator and return-line isolation in hydraulic circuits where a process ball valve's rating runs out, on presses, power units, accumulators and test rigs."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker BV series hydraulic manual ball valves differ from the Anfield GE high-pressure ball valves?",
+          "a": "The Parker BV valves are two-way and rated 6,000 to 7,250 psi with a choice of standard or lockable handle, while [the Anfield GE high-pressure ball valves](/p/anfield-ge-high-pressure-ball-valves) include three-way valves rated 5,075 to 7,250 psi. Choose Parker for a lockable handle on a two-way valve."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Parker BV series hydraulic manual ball valves shipped from, and what origin and HS code apply?",
+          "a": "We ship the Parker BV series hydraulic manual ball valves from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker BV series hydraulic manual ball valves from stock in the UAE?",
+          "a": "Yes. We stock the Parker BV series hydraulic manual ball valves at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stillwell-six-port-diverter-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Stillwell six-port diverter ball valve used?",
+          "a": "The Stillwell six-port diverter ball valve is a multi-port ball valve for diverting flow between circuits, with ORB 6 (SAE 6) ports. This listing carries a single part number, 6PORT."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Stillwell six-port diverter ball valve?",
+          "a": "The listing carries 1 part number, 6PORT, with ORB 6 ports. No other sizes are listed, so quote the port size and thread you need and we confirm what the maker offers."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Stillwell six-port diverter ball valve for my application?",
+          "a": "Confirm the port thread, the number of ways and the flow paths you need, because the listing gives only the one part number and its ORB 6 ports. Send the circuit diagram so we can check the diverter pattern against it."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Stillwell six-port diverter ball valve?",
+          "a": "The listing gives no pressure rating for the Stillwell six-port valve, so we do not quote one. Give us your working pressure and fluid through [our contact page](/contact) and we confirm the figure with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Stillwell six-port diverter ball valve offered in?",
+          "a": "The listing does not state the body, ball or seal material for the Stillwell six-port valve. Give us the fluid and temperature and we confirm the materials with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Stillwell six-port diverter ball valve?",
+          "a": "The listing names no standard and holds no certificates for the six-port valve. If you need a conformity or material document, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stillwell six-port diverter ball valve connect to?",
+          "a": "The ORB 6 ports take SAE O-ring boss male fittings, so the valve needs matching adapters. See [our hydraulic ball valve shelf](/c/hydraulic-ball-valves) for two-way and three-way ball valves in other port sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stillwell six-port diverter ball valve be installed and maintained?",
+          "a": "Mark each port against the circuit diagram before connecting, turn the handle only between the positions the valve is made for, and check the ORB seals at each port after the first pressure cycle. A multi-port valve can cross-connect circuits, so fit it where a mis-set handle cannot cause harm."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Stillwell six-port diverter ball valve used?",
+          "a": "Diverter ball valves like this six-port type switch flow between circuits from a single handle, on mobile equipment, test rigs and tool circuits."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stillwell six-port diverter ball valve differ from the Anfield GE high-pressure ball valves?",
+          "a": "The six-port diverter has one part number and ORB 6 ports, while [the Anfield GE high-pressure ball valves](/p/anfield-ge-high-pressure-ball-valves) are two-way and three-way valves with 20 part numbers and NPT or SAE ports. Use the six-port valve only where a diverter pattern is needed."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Stillwell six-port diverter ball valve shipped from, and what origin and HS code apply?",
+          "a": "We ship the Stillwell six-port diverter ball valve from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stillwell six-port diverter ball valve available from stock in Dubai for export?",
+          "a": "Yes. We stock the Stillwell six-port diverter ball valve at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

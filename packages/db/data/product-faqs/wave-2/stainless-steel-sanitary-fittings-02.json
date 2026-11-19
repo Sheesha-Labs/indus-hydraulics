@@ -1,0 +1,1713 @@
+{
+  "family": "stainless-steel-sanitary-fittings-02",
+  "extraFacts": [
+    {
+      "fact": "ASTM A269 covers seamless and welded austenitic stainless steel tubing for general service; ASTM A270 covers seamless and welded austenitic and ferritic/austenitic stainless steel sanitary tubing.",
+      "source": "ASTM A269/A269M and ASTM A270/A270M scope statements (astm.org)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread standardised in ASME B1.20.1; it seals on the thread with sealant (tape or paste).",
+      "source": "ASME B1.20.1 Pipe Threads, General Purpose (Inch), scope"
+    },
+    {
+      "fact": "A concentric reducer keeps both bores on one centreline; an eccentric reducer offsets the smaller bore so one side stays flat, which is why the eccentric type is used on horizontal lines that must drain and on pump suctions.",
+      "source": "ASME BPE (Bioprocessing Equipment) guidance on drainable hygienic piping; general piping practice"
+    },
+    {
+      "fact": "Hygienic clamp ferrules, tank weld ferrules and recessless weld ends are the clamp-joint and weld-end forms used for sanitary tube systems; a sanitary clamp joint is two ferrule faces sealed by one gasket and held by one clamp.",
+      "source": "ASME BPE (Bioprocessing Equipment) fittings and joint design sections; tri-clamp convention (ISO 2852 clamp couplings)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-end-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp-End Check Valve and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Check Valve is a one-way valve with a clamp on each end, fitted in a 316 stainless sanitary line to stop product running backwards. It is listed in 4 sizes, 1-1/2\" to 4\" tube O.D., so it joins a clamped hygienic line without a threaded joint."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CVC-24 on the 316 Stainless Steel Sanitary Clamp-End Check Valve?",
+          "a": "In the part number IH-PF-SF16CVC-24 the last number is the tube O.D. in sixteenths of an inch, so 24 is 1-1/2\". The same rule gives IH-PF-SF16CVC-64 as 4\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp-End Check Valve come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Check Valve is listed in 4 sizes, 1-1/2\" to 4\", with part numbers from IH-PF-SF16CVC-24 to IH-PF-SF16CVC-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp-End Check Valve?",
+          "a": "Match the valve to the tube O.D. of the line it sits in: 4 sizes are listed, from 1-1/2\" (IH-PF-SF16CVC-24) to 4\" (IH-PF-SF16CVC-64). Because both ends are clamp ends, the clamp and gasket size is the same as the adjacent ferrule."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp-End Check Valve have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp-End Check Valve. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp-End Check Valve 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Check Valve is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp-End Check Valve meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp-End Check Valve conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp-End Check Valve connect to?",
+          "a": "A clamp-end check valve mates with clamp-end ferrules of the same tube O.D. through a gasket and a clamp at each end. Gaskets are listed as [EPDM gaskets](/p/sanitary-clamp-gasket-epdm) and [PTFE gaskets](/p/sanitary-clamp-gasket-ptfe); match the gasket material to the product and the cleaning chemicals."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp-End Check Valve?",
+          "a": "Fit the 316 Stainless Steel Sanitary Clamp-End Check Valve with the flow running the way it is meant to open, and put a gasket and clamp on each end. As a clamp-end valve it can be taken out of the line for cleaning by releasing the two clamps, which is the reason to choose it over a welded valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 316 Stainless Steel Sanitary Clamp-End Check Valve differ from the 316 stainless sanitary clamp-end sight glass?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Check Valve controls direction of flow, while the [316 Stainless Steel Sanitary Clamp-End Sight Glass](/p/316-stainless-steel-sanitary-clamp-end-sight-glass) lets you see the product moving; neither shuts the line off. Both are 316 stainless clamp-end parts in 1-1/2\" to 4\" tube O.D., so one can often sit next to the other in the same clamped run."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp-End Check Valve shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Check Valve ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp-End Check Valve for export from Dubai?",
+          "a": "Yes. We keep the 316 Stainless Steel Sanitary Clamp-End Check Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as IH-PF-SF16CVC-24 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-end-concentric-reducer",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Concentric Reducer steps a 316 stainless sanitary line down from one tube size to a smaller one, with a clamp on each end and the two bores on the same centreline. It is listed in 10 size pairs, from 1\" down to 3/4\" (IH-PF-SF16CR-16-12) up to 4\" (IH-PF-SF16CR-64-48)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CR-16-12 on the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer?",
+          "a": "In the part number IH-PF-SF16CR-16-12 the first number is the larger end and the second the smaller, each as tube O.D. in sixteenths of an inch: 16 is 1\" and 12 is 3/4\". The last row, IH-PF-SF16CR-64-48, joins 4\" to 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Concentric Reducer is listed in 10 sizes, 1\" to 4\", with part numbers from IH-PF-SF16CR-16-12 to IH-PF-SF16CR-64-48. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp-End Concentric Reducer?",
+          "a": "Check the large end and the small end separately against your two tubes. The table runs from 1\" to 3/4\" (IH-PF-SF16CR-16-12) up to 4\" to 3\" (IH-PF-SF16CR-64-48); send both tube O.D. figures if your pair is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Concentric Reducer is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-clamp-end-concentric-reducer)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer connect to?",
+          "a": "Each clamp end takes a gasket and clamp sized to its own tube O.D., so two different gasket sizes are needed. Gaskets are listed in [EPDM gaskets](/p/sanitary-clamp-gasket-epdm) and [PTFE gaskets](/p/sanitary-clamp-gasket-ptfe), from 1/2\" to 6\"."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer?",
+          "a": "Join each end to its ferrule with a gasket and clamp. A concentric reducer keeps the centreline straight, which suits a vertical run or a pump connection; for a horizontal line that must drain, the [316 Stainless Steel Sanitary Clamp-End Eccentric Reducer](/p/316-stainless-steel-sanitary-clamp-end-eccentric-reducer) is the usual alternative."
+        },
+        {
+          "slot": "K",
+          "q": "Concentric or eccentric: how does the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer differ from the clamp-end eccentric reducer?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Concentric Reducer keeps both bores on one centreline; the [316 Stainless Steel Sanitary Clamp-End Eccentric Reducer](/p/316-stainless-steel-sanitary-clamp-end-eccentric-reducer) offsets the smaller bore so one side of the pipe stays flat. Use the eccentric one on horizontal lines that must drain, and the concentric on vertical runs and at pumps. "
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Concentric Reducer ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the 316 Stainless Steel Sanitary Clamp-End Concentric Reducer, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-end-eccentric-reducer",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer reduces a 316 stainless sanitary line from one tube size to a smaller one, with the smaller bore offset so one side of the pipe stays flat. It has a clamp on each end and is listed in 10 size pairs, 2\" to 4\" tube O.D."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CER-32-16 on the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer?",
+          "a": "In the part number IH-PF-SF16CER-32-16 the first number is the larger end and the second the smaller, each as tube O.D. in sixteenths of an inch: 32 is 2\" and 16 is 1\". The last row, IH-PF-SF16CER-64-48, joins 4\" to 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer is listed in 10 sizes, 2\" to 4\", with part numbers from IH-PF-SF16CER-32-16 to IH-PF-SF16CER-64-48. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer?",
+          "a": "Check the large end and the small end separately against your two tubes. The table runs from 2\" to 1\" (IH-PF-SF16CER-32-16) up to 4\" to 3\" (IH-PF-SF16CER-64-48); send both tube O.D. figures if your pair is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-clamp-end-eccentric-reducer)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer connect to?",
+          "a": "It mates with clamp-end ferrules at both ends through gaskets sized to each end, so you need two gasket sizes per reducer. Gaskets are listed as [EPDM gaskets](/p/sanitary-clamp-gasket-epdm) and [PTFE gaskets](/p/sanitary-clamp-gasket-ptfe)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer?",
+          "a": "Turn the flat side to the bottom on a horizontal line so the line drains and no product pools behind the reducer. Fit a gasket and clamp at each end; the two ends need gaskets of different sizes."
+        },
+        {
+          "slot": "K",
+          "q": "When is the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer better than a concentric reducer?",
+          "a": "Choose the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer on horizontal runs that must drain, because the flat side lets liquid run out. The [316 Stainless Steel Sanitary Clamp-End Concentric Reducer](/p/316-stainless-steel-sanitary-clamp-end-concentric-reducer) is better on vertical lines and at pumps. The eccentric range starts at 2\" while the concentric one starts at 1\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer for export from Dubai?",
+          "a": "Yes. The 316 Stainless Steel Sanitary Clamp-End Eccentric Reducer is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as IH-PF-SF16CER-32-16 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-end-reducing-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp-End Reducing Tee and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Reducing Tee is a 316 stainless sanitary tee with a clamp on all three ends where the branch is smaller than the run. It is listed in 14 size combinations, from 1\" run with a 1/2\" branch (IH-PF-SF16CRT-16-08) to 4\" run with a 3\" branch (IH-PF-SF16CRT-64-48)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CRT-16-08 on the 316 Stainless Steel Sanitary Clamp-End Reducing Tee?",
+          "a": "In the part number IH-PF-SF16CRT-16-08 the first number is the run and the second the branch, each as tube O.D. in sixteenths of an inch: 16 is 1\" and 08 is 1/2\". The last row, IH-PF-SF16CRT-64-48, joins 4\" to 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp-End Reducing Tee come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Reducing Tee is listed in 14 sizes, 1\" to 4\", with part numbers from IH-PF-SF16CRT-16-08 to IH-PF-SF16CRT-64-48. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp-End Reducing Tee?",
+          "a": "Choose the run size first and then the branch size: the table runs from a 1\" run with a 1/2\" branch (IH-PF-SF16CRT-16-08) to a 4\" run with a 3\" branch (IH-PF-SF16CRT-64-48). Check that the branch is smaller than the run and send both tube O.D. figures if the combination you need is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp-End Reducing Tee have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp-End Reducing Tee. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp-End Reducing Tee 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Reducing Tee is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-clamp-end-reducing-tee)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp-End Reducing Tee meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp-End Reducing Tee conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp-End Reducing Tee connect to?",
+          "a": "The run ends and the branch take clamp-end ferrules or fittings of matching tube O.D., each through a gasket and clamp; the [316 Stainless Steel Sanitary Clamp-End Tee](/p/316-stainless-steel-sanitary-clamp-end-tee) suits runs where the branch is the same size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp-End Reducing Tee?",
+          "a": "Because all three ends are clamp ends, each needs its own gasket and clamp. Gaskets for the run and the smaller branch are different sizes, so count both when you order."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 316 Stainless Steel Sanitary Clamp-End Reducing Tee and the equal clamp-end tee?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Reducing Tee has a smaller branch than run, in 14 combinations, while the [316 Stainless Steel Sanitary Clamp-End Tee](/p/316-stainless-steel-sanitary-clamp-end-tee) has the same size on all three ends in 9 sizes from 1/2\" to 6\". Use the reducing tee when the branch line is smaller than the main line."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp-End Reducing Tee shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Reducing Tee ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp-End Reducing Tee for export from Dubai?",
+          "a": "Yes, we stock the 316 Stainless Steel Sanitary Clamp-End Reducing Tee in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-end-sight-glass",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp-End Sight Glass and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Sight Glass is a clamp-end inspection section for a 316 stainless sanitary line, so an operator can see product moving or colour change. It is listed in 4 sizes, 1-1/2\" to 4\" tube O.D., each with a clamp at both ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16SGC-24 on the 316 Stainless Steel Sanitary Clamp-End Sight Glass?",
+          "a": "In the part number IH-PF-SF16SGC-24 the last number is the tube O.D. in sixteenths of an inch, so 24 is 1-1/2\". The same rule gives IH-PF-SF16SGC-64 as 4\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp-End Sight Glass come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Sight Glass is listed in 4 sizes, 1-1/2\" to 4\", with part numbers from IH-PF-SF16SGC-24 to IH-PF-SF16SGC-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp-End Sight Glass?",
+          "a": "Pick the size that matches the line's tube O.D.: 4 sizes are listed, 1-1/2\" (IH-PF-SF16SGC-24) to 4\" (IH-PF-SF16SGC-64). The sight glass takes the same clamp and gasket as the ferrules on either side."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp-End Sight Glass have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp-End Sight Glass. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp-End Sight Glass 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Sight Glass is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp-End Sight Glass meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp-End Sight Glass conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp-End Sight Glass connect to?",
+          "a": "It mates with 316 clamp-end ferrules or fittings of the same tube O.D. through a gasket and clamp at each end. The [316 Stainless Steel Sanitary Clamp-End Check Valve](/p/316-stainless-steel-sanitary-clamp-end-check-valve) or other clamp-end parts can sit alongside it in the run."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp-End Sight Glass?",
+          "a": "Install the 316 Stainless Steel Sanitary Clamp-End Sight Glass with a gasket and clamp at each end, in a position where the glass can be seen from the operating side. The clamp ends let it be removed for cleaning, so check the gasket seats evenly when you refit it."
+        },
+        {
+          "slot": "K",
+          "q": "Should I fit a sanitary sight glass or a check valve in the line, and how does the 316 Stainless Steel Sanitary Clamp-End Sight Glass compare?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Sight Glass is for looking at the flow; it does not control it. If the aim is to stop backflow, the [316 Stainless Steel Sanitary Clamp-End Check Valve](/p/316-stainless-steel-sanitary-clamp-end-check-valve) does that in the same sizes (1-1/2\" to 4\" tube O.D.) and with the same clamp ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp-End Sight Glass shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Sight Glass ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp-End Sight Glass for export from Dubai?",
+          "a": "Yes. Stock of the 316 Stainless Steel Sanitary Clamp-End Sight Glass sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as IH-PF-SF16SGC-24 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-end-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp-End Tee and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Tee is a 316 stainless sanitary tee with a clamp on every end and the same size on run and branch. It is listed in 9 sizes, from 1/2\" (IH-PF-SF16CT-08) to 6\" (IH-PF-SF16CT-96)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CT-08 on the 316 Stainless Steel Sanitary Clamp-End Tee?",
+          "a": "In the part number IH-PF-SF16CT-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF16CT-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp-End Tee come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Tee is listed in 9 sizes, 1/2\" to 6\", with part numbers from IH-PF-SF16CT-08 to IH-PF-SF16CT-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp-End Tee?",
+          "a": "With an equal tee there is one tube size to choose: 9 sizes run from 1/2\" to 6\". The part number ends in the tube O.D. in sixteenths of an inch, so IH-PF-SF16CT-96 is the 6\" tee."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp-End Tee have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp-End Tee. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp-End Tee 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Tee is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-clamp-end-tee)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp-End Tee meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp-End Tee conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp-End Tee connect to?",
+          "a": "It mates with clamp-end ferrules of the same tube O.D. on all three ends through a gasket and clamp. Reducers such as the [316 Stainless Steel Sanitary Weld-End Tee](/p/316-stainless-steel-sanitary-weld-end-tee) can step the branch down."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp-End Tee?",
+          "a": "All three ends are clamp ends, so fit a gasket and clamp at each. Because it is clamped rather than welded, the tee can be removed for cleaning or to add a branch later."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose the clamp-end tee or the weld-end tee for a 316 sanitary line?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Tee joins with gaskets and clamps and can be dismantled; the [316 Stainless Steel Sanitary Weld-End Tee](/p/316-stainless-steel-sanitary-weld-end-tee) is welded into the line for a permanent joint with no gasket. Both are 316 stainless in the same 1/2\" to 6\" range. Clamp ends suit the places you need to open for cleaning or inspection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp-End Tee shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp-End Tee ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp-End Tee for export from Dubai?",
+          "a": "Yes. We hold the 316 Stainless Steel Sanitary Clamp-End Tee at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-x-npt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Female Adapter joins a 316 stainless sanitary clamp end to a female NPT thread, so a clamped tube line can connect to threaded pipe or an instrument. It is listed in 13 combinations, from 1\" clamp with 3/4\" NPT (3/4-14) NPT (IH-PF-SF16CFA-16-12) to 4\" clamp with 4\" NPT (4-8) NPT (IH-PF-SF16CFA-64-64)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CFA-16-12 on the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter?",
+          "a": "In the part number IH-PF-SF16CFA-16-12 the first number is the larger end and the second the smaller, each as tube O.D. in sixteenths of an inch: 16 is 1\" and 12 is 3/4\" NPT (3/4-14). The last row, IH-PF-SF16CFA-64-64, joins 4\" to 4\" NPT (4-8)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Female Adapter is listed in 13 sizes, 1\" to 4\", with part numbers from IH-PF-SF16CFA-16-12 to IH-PF-SF16CFA-64-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp × NPT Female Adapter?",
+          "a": "Match two things: the tube O.D. of the sanitary line and the NPT size of the port it meets. The table runs from 1\" clamp with 3/4\" NPT (3/4-14) NPT (IH-PF-SF16CFA-16-12) to 4\" clamp with 4\" NPT (4-8) NPT (IH-PF-SF16CFA-64-64); send both sizes if your pair is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Female Adapter is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-clamp-x-npt-female-adapter)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter connect to?",
+          "a": "The female NPT end takes a male NPT pipe nipple, gauge or fitting; the clamp end takes a ferrule or fitting of the same tube O.D. through a gasket and clamp. For a male thread end instead, use the [316 Stainless Steel Sanitary Clamp × NPT Male Adapter](/p/316-stainless-steel-sanitary-clamp-x-npt-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter?",
+          "a": "Seal the NPT side with thread sealant, because a tapered pipe thread seals on the thread, and fit a gasket and clamp on the sanitary side. Do not over-tighten the threaded joint into a thin-walled fitting."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 316 sanitary clamp x NPT female adapter and the male adapter?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Female Adapter has a female NPT thread, so it takes a male nipple or gauge; the [316 Stainless Steel Sanitary Clamp × NPT Male Adapter](/p/316-stainless-steel-sanitary-clamp-x-npt-male-adapter) has a male thread and screws into a female port. Pick by which gender the other component already has. Both are 316 stainless in 1\" to 4\" tube O.D."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Female Adapter ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter for export from Dubai?",
+          "a": "Yes. We keep the 316 Stainless Steel Sanitary Clamp × NPT Female Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as IH-PF-SF16CFA-16-12 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-clamp-x-npt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Male Adapter joins a 316 stainless sanitary clamp end to a male NPT thread, so it screws into a female threaded port. It is listed in 14 combinations, from 1\" clamp with 3/4\" NPT (3/4-14) NPT (IH-PF-SF16CMA-16-12) to 4\" clamp with 4\" NPT (4-8) NPT (IH-PF-SF16CMA-64-64)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CMA-16-12 on the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter?",
+          "a": "In the part number IH-PF-SF16CMA-16-12 the first number is the larger end and the second the smaller, each as tube O.D. in sixteenths of an inch: 16 is 1\" and 12 is 3/4\" NPT (3/4-14). The last row, IH-PF-SF16CMA-64-64, joins 4\" to 4\" NPT (4-8)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter come in?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Male Adapter is listed in 14 sizes, 1\" to 4\", with part numbers from IH-PF-SF16CMA-16-12 to IH-PF-SF16CMA-64-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Clamp × NPT Male Adapter?",
+          "a": "Match two things: the tube O.D. of the sanitary line and the NPT size of the port it meets. The table runs from 1\" clamp with 3/4\" NPT (3/4-14) NPT (IH-PF-SF16CMA-16-12) to 4\" clamp with 4\" NPT (4-8) NPT (IH-PF-SF16CMA-64-64); send both sizes if your pair is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Male Adapter is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-clamp-x-npt-male-adapter)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter connect to?",
+          "a": "The male NPT end screws into a female NPT port on a tank, pump or valve; the clamp end takes a same-size ferrule through a gasket and clamp. If the other side is male, use the [316 Stainless Steel Sanitary Clamp × NPT Female Adapter](/p/316-stainless-steel-sanitary-clamp-x-npt-female-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter?",
+          "a": "Wrap or coat the male thread with sealant, since a tapered pipe thread seals on the thread, and tighten into the female port by hand plus a controlled turn with a spanner. On the sanitary side fit a gasket and clamp."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter differ from the clamp x NPT female adapter?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Male Adapter is the male-thread version and screws into a female port; the [316 Stainless Steel Sanitary Clamp × NPT Female Adapter](/p/316-stainless-steel-sanitary-clamp-x-npt-female-adapter) is the female version for a male nipple. The male adapter has one more combination than the female one. Both are 316 stainless."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Clamp × NPT Male Adapter ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the 316 Stainless Steel Sanitary Clamp × NPT Male Adapter, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-long-weld-ferrule-clamp-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End is a 316 stainless clamp ferrule with a long weld spigot, welded onto tube so the end becomes a sanitary clamp connection. It is listed in 10 sizes, from 1/2\" (IH-PF-SF16CLF16-08) to 8\" (IH-PF-SF16CLF16-128)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CLF16-08 on the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End?",
+          "a": "In the part number IH-PF-SF16CLF16-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF16CLF16-128 as 8\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End come in?",
+          "a": "The 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End is listed in 10 sizes, 1/2\" to 8\", with part numbers from IH-PF-SF16CLF16-08 to IH-PF-SF16CLF16-128. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End?",
+          "a": "Select by the tube O.D. you are welding to: 10 sizes run from 1/2\" to 8\", the widest range of any weld ferrule here. The number at the end of the part number is the tube O.D. in sixteenths of an inch, so IH-PF-SF16CLF16-128 is 8\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-long-weld-ferrule-clamp-end)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End connect to?",
+          "a": "The clamp face mates with another clamp ferrule or clamp-end fitting of the same tube O.D. through a gasket and clamp. Gaskets are listed in [EPDM gaskets](/p/sanitary-clamp-gasket-epdm) and [PTFE gaskets](/p/sanitary-clamp-gasket-ptfe), 1/2\" to 6\"."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End?",
+          "a": "Butt-weld the spigot to tube of the same O.D., then fit a gasket and clamp to the clamp face. The longer spigot gives more tube length to hold the weld and trim for a cleaner joint than a short ferrule."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between a long weld ferrule and the 316 short weld ferrule, clamp end?",
+          "a": "The 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End has a longer weld spigot and goes up to 8\"; the [316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End](/p/316-stainless-steel-sanitary-short-weld-ferrule-clamp-end) has a shorter spigot and stops at 4\". Choose the long one when the weld needs more tube length or the ferrule will be cut to fit, and the short one where space is tight."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End for export from Dubai?",
+          "a": "Yes. The 316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as IH-PF-SF16CLF16-08 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-recessless-ferrule-clamp-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End is a 316 stainless clamp ferrule with a recessless bore, welded onto tube so the joint leaves no internal recess for product to collect in. It is listed in 6 sizes, 1\" to 4\" tube O.D., from IH-PF-SF16CRF-16 to IH-PF-SF16CRF-64."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CRF-16 on the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End?",
+          "a": "In the part number IH-PF-SF16CRF-16 the last number is the tube O.D. in sixteenths of an inch, so 16 is 1\". The same rule gives IH-PF-SF16CRF-64 as 4\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End come in?",
+          "a": "The 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End is listed in 6 sizes, 1\" to 4\", with part numbers from IH-PF-SF16CRF-16 to IH-PF-SF16CRF-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End?",
+          "a": "Choose by the tube O.D. you are welding to: 6 sizes are listed, 1\" to 4\". The last number in the part number is that tube size in sixteenths of an inch, so IH-PF-SF16CRF-16 is 1\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-recessless-ferrule-clamp-end)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End connect to?",
+          "a": "The clamp face mates with another clamp ferrule or clamp-end fitting of the same tube O.D. through a gasket and clamp; gaskets are listed as [EPDM gaskets](/p/sanitary-clamp-gasket-epdm) and [PTFE gaskets](/p/sanitary-clamp-gasket-ptfe)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End?",
+          "a": "Butt-weld the ferrule onto tube of the same O.D. and finish the weld so the bore is smooth, then fit a gasket and clamp to the clamp face. The recessless bore is the reason to choose it for lines that are cleaned in place and must not hold product."
+        },
+        {
+          "slot": "K",
+          "q": "How is the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End different from the short weld ferrule?",
+          "a": "The 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End is made without an internal recess, which helps cleaning, and is listed in 6 sizes from 1\" to 4\". The [316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End](/p/316-stainless-steel-sanitary-short-weld-ferrule-clamp-end) starts at 1/2\" and has a short weld spigot. Choose the recessless one for hygienic duty at 1\" and above."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End for export from Dubai?",
+          "a": "Yes, we stock the 316 Stainless Steel Sanitary Recessless Ferrule, Clamp End in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-short-weld-ferrule-clamp-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End is a 316 stainless clamp ferrule with a short weld spigot, welded onto tube to make a sanitary clamp end. It is listed in 8 sizes, from 1/2\" (IH-PF-SF16CSF16-08) to 4\" (IH-PF-SF16CSF16-64)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CSF16-08 on the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End?",
+          "a": "In the part number IH-PF-SF16CSF16-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF16CSF16-64 as 4\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End come in?",
+          "a": "The 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End is listed in 8 sizes, 1/2\" to 4\", with part numbers from IH-PF-SF16CSF16-08 to IH-PF-SF16CSF16-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End?",
+          "a": "Select by tube O.D.: 8 sizes run from 1/2\" to 4\". The final number in the part number is the tube O.D. in sixteenths of an inch, so IH-PF-SF16CSF16-64 is 4\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-short-weld-ferrule-clamp-end)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End connect to?",
+          "a": "The clamp face mates with another ferrule or clamp-end fitting of the same tube O.D. through a gasket and clamp. Gaskets are listed as [EPDM gaskets](/p/sanitary-clamp-gasket-epdm) and [PTFE gaskets](/p/sanitary-clamp-gasket-ptfe), from 1/2\" to 6\"."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End?",
+          "a": "Butt-weld the short spigot to tube of the same O.D., then fit a gasket and clamp to the clamp face. The short spigot keeps the ferrule compact for tight skids and instrument connections."
+        },
+        {
+          "slot": "K",
+          "q": "Short weld ferrule or the 316 long weld ferrule: which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End has a short spigot and is listed up to 4\"; the [316 Stainless Steel Sanitary Long Weld Ferrule, Clamp End](/p/316-stainless-steel-sanitary-long-weld-ferrule-clamp-end) has a longer spigot and reaches 8\". Choose the short ferrule where space is tight and the long one where the weld needs more tube length."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End for export from Dubai?",
+          "a": "Yes. Stock of the 316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as IH-PF-SF16CSF16-08 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-solid-end-cap-clamp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Solid End Cap, Clamp and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Solid End Cap, Clamp is a blind 316 stainless clamp cap that closes the end of a sanitary line or fitting. It is listed in 6 sizes, 1/2\" to 4\" tube O.D., with two rows covering shared clamp sizes: IH-PF-SF16SC-08-12 serves 1/2\" and 3/4\" tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16SC-08-12 on the 316 Stainless Steel Sanitary Solid End Cap, Clamp?",
+          "a": "In IH-PF-SF16SC-08-12 the numbers are tube sizes in sixteenths of an inch for the shared clamp size: 08 and 12 are 1/2\" and 3/4\" tube, which use one cap. Single-size caps such as IH-PF-SF16SC-64 carry one number, here 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Solid End Cap, Clamp come in?",
+          "a": "The 316 Stainless Steel Sanitary Solid End Cap, Clamp is listed in 6 sizes, 1/2\" to 4\", with part numbers from IH-PF-SF16SC-08-12 to IH-PF-SF16SC-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Solid End Cap, Clamp?",
+          "a": "Choose by the clamp size of the open end. 1/2\" and 3/4\" tube share one clamp size (IH-PF-SF16SC-08-12), and 1\" and 1-1/2\" share another, while 2\", 2-1/2\", 3\" and 4\" each have their own part number up to IH-PF-SF16SC-64."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Solid End Cap, Clamp have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Solid End Cap, Clamp. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Solid End Cap, Clamp 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Solid End Cap, Clamp is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-solid-end-cap-clamp)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Solid End Cap, Clamp meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Solid End Cap, Clamp conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Solid End Cap, Clamp connect to?",
+          "a": "It closes a clamp end of a tee, cross, valve or ferrule of the matching clamp size, through a gasket and clamp. Gaskets are listed in [EPDM gaskets](/p/sanitary-clamp-gasket-epdm) and [PTFE gaskets](/p/sanitary-clamp-gasket-ptfe)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Solid End Cap, Clamp?",
+          "a": "Fit the cap with a gasket and a clamp, the same way as any other clamp end. A solid cap is a blank: it can be removed to open a line for cleaning or inspection, or left to seal a spare branch of a tee."
+        },
+        {
+          "slot": "K",
+          "q": "What is a solid end cap used for compared with other 316 sanitary clamp parts such as the clamp-end tee?",
+          "a": "The 316 Stainless Steel Sanitary Solid End Cap, Clamp blanks off an open clamp end, while the [316 Stainless Steel Sanitary Clamp-End Tee](/p/316-stainless-steel-sanitary-clamp-end-tee) creates a branch. Fitted to the spare branch of a tee, a cap leaves a flush, cleanable seal. Both are 316 stainless and use the same gaskets and clamps."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Solid End Cap, Clamp shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Solid End Cap, Clamp ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Solid End Cap, Clamp for export from Dubai?",
+          "a": "Yes. We hold the 316 Stainless Steel Sanitary Solid End Cap, Clamp at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-tank-weld-ferrule-clamp-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End is a 316 stainless clamp ferrule made to be welded into a tank or vessel wall, giving the shell a sanitary clamp connection. It is listed in 4 sizes, 1\" to 3\" tube O.D., from IH-PF-SF16CTWF-16 to IH-PF-SF16CTWF-48."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16CTWF-16 on the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End?",
+          "a": "In the part number IH-PF-SF16CTWF-16 the last number is the tube O.D. in sixteenths of an inch, so 16 is 1\". The same rule gives IH-PF-SF16CTWF-48 as 3\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End come in?",
+          "a": "The 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End is listed in 4 sizes, 1\" to 3\", with part numbers from IH-PF-SF16CTWF-16 to IH-PF-SF16CTWF-48. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End?",
+          "a": "Choose the size to match the clamp connection you need on the tank: 4 sizes are listed, 1\", 3\" and those between. The part number ends in the size in sixteenths of an inch, so IH-PF-SF16CTWF-48 is 3\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-tank-weld-ferrule-clamp-end)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End connect to?",
+          "a": "The clamp face takes a clamp-end fitting, valve or cap of the same size through a gasket and clamp; the [316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End](/p/316-stainless-steel-sanitary-short-weld-ferrule-clamp-end) is the usual choice when welding to tube rather than a tank wall."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End?",
+          "a": "Cut the opening in the tank to suit, weld the ferrule in and finish the weld on the product side so it is smooth, then fit a gasket and clamp. Check weld procedure and finish against your hygiene standard before filling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End differ from the short weld ferrule?",
+          "a": "Choose by where the weld goes: the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End is for a tank or vessel wall, and the [316 Stainless Steel Sanitary Short Weld Ferrule, Clamp End](/p/316-stainless-steel-sanitary-short-weld-ferrule-clamp-end) is for the end of a tube. The tank ferrule covers 1\" to 3\" tube O.D., while the short weld ferrule runs from 1/2\" to 4\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End for export from Dubai?",
+          "a": "Yes. We keep the 316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as IH-PF-SF16CTWF-16 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-tube-hanger-with-sleeves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Tube Hanger with Sleeves and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Tube Hanger with Sleeves is a 316 stainless support that holds sanitary tube to a ceiling or wall, supplied with sleeves. It is listed in 7 sizes, 1\" to 6\" tube O.D., from IH-PF-SF16HS-16 to IH-PF-SF16HS-96."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16HS-16 on the 316 Stainless Steel Sanitary Tube Hanger with Sleeves?",
+          "a": "In the part number IH-PF-SF16HS-16 the last number is the tube O.D. in sixteenths of an inch, so 16 is 1\". The same rule gives IH-PF-SF16HS-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Tube Hanger with Sleeves come in?",
+          "a": "The 316 Stainless Steel Sanitary Tube Hanger with Sleeves is listed in 7 sizes, 1\" to 6\", with part numbers from IH-PF-SF16HS-16 to IH-PF-SF16HS-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Tube Hanger with Sleeves?",
+          "a": "Choose the size that matches the tube O.D. you are supporting: 7 sizes run from 1\" to 6\". The part number ends in the tube size in sixteenths of an inch, so IH-PF-SF16HS-96 is 6\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Tube Hanger with Sleeves have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Tube Hanger with Sleeves. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Tube Hanger with Sleeves 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Tube Hanger with Sleeves is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-tube-hanger-with-sleeves)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Tube Hanger with Sleeves meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Tube Hanger with Sleeves conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Tube Hanger with Sleeves connect to?",
+          "a": "It holds 316 sanitary tube such as the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing), in the same sizes, and sits between clamp joints rather than on them."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Tube Hanger with Sleeves?",
+          "a": "Space hangers to keep the line straight and drainable, and fit them on the tube, not on a clamp or fitting that must come apart for cleaning. Hangers in 316 stainless match the tube material and keep corrosion down in wash-down areas."
+        },
+        {
+          "slot": "K",
+          "q": "What tube size does the 316 Stainless Steel Sanitary Tube Hanger with Sleeves fit, compared with the sanitary tubing listing?",
+          "a": "The 316 Stainless Steel Sanitary Tube Hanger with Sleeves is listed from 1\" to 6\" tube O.D., while the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing) runs from 1/2\" to 6\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Tube Hanger with Sleeves shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Tube Hanger with Sleeves ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Tube Hanger with Sleeves for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the 316 Stainless Steel Sanitary Tube Hanger with Sleeves, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-tube-plate-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Tube Plate Flange and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Tube Plate Flange is a 316 stainless flange with a weld end for tube, listed in 10 sizes from 1\" (IH-PF-SF16TPF-16) to 12\" (IH-PF-SF16TPF-192), the widest size range of any weld part in this family."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16TPF-16 on the 316 Stainless Steel Sanitary Tube Plate Flange?",
+          "a": "In the part number IH-PF-SF16TPF-16 the last number is the tube O.D. in sixteenths of an inch, so 16 is 1\". The same rule gives IH-PF-SF16TPF-192 as 12\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Tube Plate Flange come in?",
+          "a": "The 316 Stainless Steel Sanitary Tube Plate Flange is listed in 10 sizes, 1\" to 12\", with part numbers from IH-PF-SF16TPF-16 to IH-PF-SF16TPF-192. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Tube Plate Flange?",
+          "a": "Choose by the tube O.D. you are welding to: 10 sizes run from 1\" to 12\", and the part number ends in the size in sixteenths of an inch, so IH-PF-SF16TPF-192 is 12\". The table lists tube O.D. only, so send us the plate, vessel connection or flange it has to meet if the mating face matters."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Tube Plate Flange have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Tube Plate Flange. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Tube Plate Flange 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Tube Plate Flange is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Tube Plate Flange meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Tube Plate Flange conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Tube Plate Flange connect to?",
+          "a": "Tell us what the flange must connect to, whether a plate, a vessel connection or another flange, and we will confirm the match. If a clamp connection suits the job better, the [316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End](/p/316-stainless-steel-sanitary-tank-weld-ferrule-clamp-end) gives a clamp face on tube or tank."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Tube Plate Flange?",
+          "a": "Weld the flange onto tube of the same O.D., keeping the weld smooth on the product side. Because the table lists tube O.D. only, confirm the mating face, gasket and fixings with us before you fabricate."
+        },
+        {
+          "slot": "K",
+          "q": "Should I use the 316 Stainless Steel Sanitary Tube Plate Flange or a tank weld ferrule for a vessel connection?",
+          "a": "The 316 Stainless Steel Sanitary Tube Plate Flange has a weld end and is listed from 1\" to 12\", while the [316 Stainless Steel Sanitary Tank Weld Ferrule, Clamp End](/p/316-stainless-steel-sanitary-tank-weld-ferrule-clamp-end) gives a clamp face and stops at 3\". Use the flange where the job calls for a flange, and the ferrule where a clamp joint is preferred."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Tube Plate Flange shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Tube Plate Flange ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Tube Plate Flange for export from Dubai?",
+          "a": "Yes. The 316 Stainless Steel Sanitary Tube Plate Flange is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as IH-PF-SF16TPF-16 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Tubing and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Tubing is 316 stainless sanitary tube listed in 9 sizes by outside diameter, from 1/2\" to 6\" (IH-PF-SNT6-08 to IH-PF-SNT6-96). It is the tube that sanitary ferrules, elbows and tees are welded to."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SNT6-08 on the 316 Stainless Steel Sanitary Tubing?",
+          "a": "In the part number IH-PF-SNT6-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SNT6-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Tubing come in?",
+          "a": "The 316 Stainless Steel Sanitary Tubing is listed in 9 sizes, 1/2\" to 6\", with part numbers from IH-PF-SNT6-08 to IH-PF-SNT6-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Tubing?",
+          "a": "Tubing is chosen by outside diameter: 9 sizes run from 1/2\" to 6\", and the part number ends in the O.D. in sixteenths of an inch, so IH-PF-SNT6-96 is 6\". Ferrules, elbows and tees in this family use the same O.D., so size the fittings to the tube."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Tubing have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Tubing. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Tubing 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Tubing is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service. The 304 version is the [304 stainless equivalent](/p/304-stainless-steel-sanitary-tubing)."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Tubing meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the 316 Stainless Steel Sanitary Tubing conforms to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order, with the sizes and lengths, so it is raised against them."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Tubing connect to?",
+          "a": "Sanitary tube is welded to weld-end fittings, ferrules and clamp parts of the same O.D., for example the [weld-end tee](/p/316-stainless-steel-sanitary-weld-end-tee), and is carried on tube hangers such as the [316 Stainless Steel Sanitary Tube Hanger with Sleeves](/p/316-stainless-steel-sanitary-tube-hanger-with-sleeves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Tubing?",
+          "a": "Cut square, deburr and weld to a ferrule, elbow or tee of the same O.D. so the bore is smooth and the joint has no crevice. Send us the length and finish you need so the quotation is for the right supply."
+        },
+        {
+          "slot": "K",
+          "q": "What holds the 316 stainless sanitary tubing in place once it is installed?",
+          "a": "Tube hangers: the [316 Stainless Steel Sanitary Tube Hanger with Sleeves](/p/316-stainless-steel-sanitary-tube-hanger-with-sleeves) supports tube from 1/2\" to 6\" O.D. Install hangers on the tube itself so that clamp joints can still be opened. The 316 Stainless Steel Sanitary Tubing listing covers the tube; the hangers are a separate product."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Tubing shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Tubing ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Tubing for export from Dubai?",
+          "a": "Yes, we stock the 316 Stainless Steel Sanitary Tubing in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-tygon-hose-adapter-clamp-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End joins a 316 stainless sanitary clamp end to soft flexible tubing, so a hose can connect to a sanitary line. It is listed in 3 sizes, 1\" to 2\" tube O.D., from IH-PF-SF16TA-16 to IH-PF-SF16TA-32."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16TA-16 on the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End?",
+          "a": "In the part number IH-PF-SF16TA-16 the last number is the tube O.D. in sixteenths of an inch, so 16 is 1\". The same rule gives IH-PF-SF16TA-32 as 2\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End come in?",
+          "a": "The 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End is listed in 3 sizes, 1\" to 2\", with part numbers from IH-PF-SF16TA-16 to IH-PF-SF16TA-32. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End?",
+          "a": "Choose by the clamp size on the sanitary side: 3 sizes are listed, 1\", 2\" and 1-1/2\", with part numbers IH-PF-SF16TA-16, IH-PF-SF16TA-24 and IH-PF-SF16TA-32. Tell us the hose bore as well so we can confirm the hose end fits."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End connect to?",
+          "a": "The clamp end mates with a ferrule or clamp-end fitting of the same tube O.D. through a gasket and clamp; the hose end takes flexible tubing sized to the adapter. For a threaded connection instead, see the [316 Stainless Steel Sanitary Clamp × NPT Male Adapter](/p/316-stainless-steel-sanitary-clamp-x-npt-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End?",
+          "a": "Push the hose onto the hose end and secure it with a clamp, then fit a gasket and clamp on the sanitary side. Flexible tubing is the weak point of a hygienic run, so keep lengths short and check for kinks."
+        },
+        {
+          "slot": "K",
+          "q": "Should I use the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End or a clamp x NPT adapter to connect a hose?",
+          "a": "The 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End connects flexible tubing to a clamp, while the [316 Stainless Steel Sanitary Clamp × NPT Male Adapter](/p/316-stainless-steel-sanitary-clamp-x-npt-male-adapter) connects a clamp to threaded pipe. Use the hose adapter for tube, hose and temporary lines, and the NPT adapter for fixed threaded ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End for export from Dubai?",
+          "a": "Yes. Stock of the 316 Stainless Steel Sanitary Tygon Hose Adapter, Clamp End sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as IH-PF-SF16TA-16 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-weld-end-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Weld-End 45° Elbow and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 45° Elbow is a 316 stainless sanitary elbow with a 45° bend and a weld end on each side, changing the direction of a tube line by half a right angle. It is listed in 9 sizes, from 1/2\" (IH-PF-SF16W45E-08) to 6\" (IH-PF-SF16W45E-96)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16W45E-08 on the 316 Stainless Steel Sanitary Weld-End 45° Elbow?",
+          "a": "In the part number IH-PF-SF16W45E-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF16W45E-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Weld-End 45° Elbow come in?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 45° Elbow is listed in 9 sizes, 1/2\" to 6\", with part numbers from IH-PF-SF16W45E-08 to IH-PF-SF16W45E-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Weld-End 45° Elbow?",
+          "a": "Select by tube O.D.: 9 sizes run from 1/2\" to 6\", and the part number ends in the size in sixteenths of an inch, so IH-PF-SF16W45E-96 is 6\". Use 45° where a gentle offset or a kink-free change of direction is needed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Weld-End 45° Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Weld-End 45° Elbow. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Weld-End 45° Elbow 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 45° Elbow is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Weld-End 45° Elbow meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Weld-End 45° Elbow conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Weld-End 45° Elbow connect to?",
+          "a": "Both ends are weld ends and join tube such as the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing) of the same O.D.; clamp ferrules then add a clamp connection where the line has to open."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Weld-End 45° Elbow?",
+          "a": "Butt-weld each end to tube of the same O.D., keeping the weld smooth on the inside so the bend stays drainable. Two 45° elbows can make an offset that a single 90° cannot."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 316 Stainless Steel Sanitary Weld-End 45° Elbow and the 90° weld-end elbow?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 45° Elbow turns the line by 45°, which suits offsets and gentle changes, while the [316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow](/p/316-stainless-steel-sanitary-weld-end-90-short-radius-elbow) turns it by a right angle. Both are 316 stainless and run from 1/2\" to 6\" tube O.D."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Weld-End 45° Elbow shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 45° Elbow ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Weld-End 45° Elbow for export from Dubai?",
+          "a": "Yes. We hold the 316 Stainless Steel Sanitary Weld-End 45° Elbow at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-weld-end-90-long-radius-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow is a 316 stainless sanitary elbow with a long-radius 90° bend and a weld end each side. It is listed in 7 sizes, from 1\" (IH-PF-SF16W90LE-16) to 6\" (IH-PF-SF16W90LE-96), so it starts at 1\" rather than 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16W90LE-16 on the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow?",
+          "a": "In the part number IH-PF-SF16W90LE-16 the last number is the tube O.D. in sixteenths of an inch, so 16 is 1\". The same rule gives IH-PF-SF16W90LE-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow come in?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow is listed in 7 sizes, 1\" to 6\", with part numbers from IH-PF-SF16W90LE-16 to IH-PF-SF16W90LE-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow?",
+          "a": "Select by tube O.D.: 7 sizes run from 1\" to 6\", and the part number ends in the size in sixteenths of an inch, so IH-PF-SF16W90LE-96 is 6\". Choose the long radius where a gentler bend and lower pressure drop matter more than space."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow connect to?",
+          "a": "Both ends are weld ends and join tube of the same O.D., such as the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing). Add clamp ferrules at either end wherever the line must open."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow?",
+          "a": "Butt-weld each end to tube of the same O.D. and keep the inside weld smooth. The wider sweep is easier to clean and to flow through than a short-radius bend, but it needs more room."
+        },
+        {
+          "slot": "K",
+          "q": "Long-radius or short-radius 90° elbow: how does the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow compare?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow has the gentler bend and is listed from 1\" to 6\"; the [316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow](/p/316-stainless-steel-sanitary-weld-end-90-short-radius-elbow) is tighter, takes less space and is listed from 1/2\" to 6\". Choose the long radius for flow and cleaning, the short for compact pipework."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow for export from Dubai?",
+          "a": "Yes. We keep the 316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as IH-PF-SF16W90LE-16 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-weld-end-90-short-radius-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow is a 316 stainless sanitary elbow with a short-radius 90° bend and a weld end each side, listed in 9 sizes from 1/2\" (IH-PF-SF16W90E-08) to 6\" (IH-PF-SF16W90E-96)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16W90E-08 on the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow?",
+          "a": "In the part number IH-PF-SF16W90E-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF16W90E-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow come in?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow is listed in 9 sizes, 1/2\" to 6\", with part numbers from IH-PF-SF16W90E-08 to IH-PF-SF16W90E-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow?",
+          "a": "Select by tube O.D.: 9 sizes run from 1/2\" to 6\", and the part number ends in the size in sixteenths of an inch, so IH-PF-SF16W90E-96 is 6\". It is the compact choice; for a smoother sweep see the [316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow](/p/316-stainless-steel-sanitary-weld-end-90-long-radius-elbow)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow connect to?",
+          "a": "Both ends are weld ends and join tube of the same O.D., such as the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing). Clamp ferrules add a clamp connection where the line has to open."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow?",
+          "a": "Butt-weld each end to tube of the same O.D. and keep the inside of the weld smooth. The tight radius saves space on skids and racks, at the cost of a sharper turn for the product."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow and the long-radius version?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow makes a tighter turn and starts at 1/2\"; the [316 Stainless Steel Sanitary Weld-End 90° Long-Radius Elbow](/p/316-stainless-steel-sanitary-weld-end-90-long-radius-elbow) sweeps wider and starts at 1\". Choose short radius when space is limited, long radius for gentler flow."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the 316 Stainless Steel Sanitary Weld-End 90° Short-Radius Elbow, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-weld-end-concentric-reducer",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Weld-End Concentric Reducer and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Concentric Reducer steps a 316 stainless sanitary tube line from one size to a smaller one, welded at both ends, with both bores on one centreline. It is listed in 17 size pairs, from 3/4\" / 1/2\" (IH-PF-SF16WCR-12-08) to 6\" / 4\" (IH-PF-SF16WCR-96-64)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16WCR-12-08 on the 316 Stainless Steel Sanitary Weld-End Concentric Reducer?",
+          "a": "In the part number IH-PF-SF16WCR-12-08 the first number is the larger end and the second the smaller, each as tube O.D. in sixteenths of an inch: 12 is 3/4\" and 08 is 1/2\". The last row, IH-PF-SF16WCR-96-64, joins 6\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Weld-End Concentric Reducer come in?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Concentric Reducer is listed in 17 sizes, 3/4\" to 6\", with part numbers from IH-PF-SF16WCR-12-08 to IH-PF-SF16WCR-96-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Weld-End Concentric Reducer?",
+          "a": "Check the large end and the small end separately against your two tubes. The table runs from 3/4\" to 1/2\" (IH-PF-SF16WCR-12-08) up to 6\" to 4\" (IH-PF-SF16WCR-96-64); send both tube O.D. figures if your pair is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Weld-End Concentric Reducer have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Weld-End Concentric Reducer. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Weld-End Concentric Reducer 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Concentric Reducer is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Weld-End Concentric Reducer meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Weld-End Concentric Reducer conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Weld-End Concentric Reducer connect to?",
+          "a": "Both ends are weld ends: join the larger end to tube of the 6\" size and the smaller to tube of the 4\" size in the same family, for example the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Weld-End Concentric Reducer?",
+          "a": "Butt-weld each end to tube of its own O.D. and keep the inside smooth. A concentric reducer keeps the centreline straight, so it suits vertical runs; on a horizontal drainable line the [316 Stainless Steel Sanitary Weld-End Eccentric Reducer](/p/316-stainless-steel-sanitary-weld-end-eccentric-reducer) is the usual alternative."
+        },
+        {
+          "slot": "K",
+          "q": "Concentric or eccentric: how does the 316 Stainless Steel Sanitary Weld-End Concentric Reducer differ from the weld-end eccentric reducer?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Concentric Reducer keeps both bores on one centreline, while the [316 Stainless Steel Sanitary Weld-End Eccentric Reducer](/p/316-stainless-steel-sanitary-weld-end-eccentric-reducer) offsets the smaller bore so one side stays flat. Use the eccentric on drainable horizontal runs and the concentric on vertical runs; the concentric range has 17 pairs from 3/4\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Weld-End Concentric Reducer shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Concentric Reducer ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Weld-End Concentric Reducer for export from Dubai?",
+          "a": "Yes. The 316 Stainless Steel Sanitary Weld-End Concentric Reducer is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as IH-PF-SF16WCR-12-08 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-weld-end-eccentric-reducer",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Eccentric Reducer reduces a 316 stainless sanitary tube line from one size to a smaller one, welded at both ends, with the smaller bore offset so one side stays flat. It is listed in 14 size pairs, from 1-1/2\" / 1\" (IH-PF-SF16WER-24-16) to 6\" / 4\" (IH-PF-SF16WER-96-64)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16WER-24-16 on the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer?",
+          "a": "In the part number IH-PF-SF16WER-24-16 the first number is the larger end and the second the smaller, each as tube O.D. in sixteenths of an inch: 24 is 1-1/2\" and 16 is 1\". The last row, IH-PF-SF16WER-96-64, joins 6\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer come in?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Eccentric Reducer is listed in 14 sizes, 1-1/2\" to 6\", with part numbers from IH-PF-SF16WER-24-16 to IH-PF-SF16WER-96-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Weld-End Eccentric Reducer?",
+          "a": "Check the large end and the small end separately against your two tubes. The table runs from 1-1/2\" to 1\" (IH-PF-SF16WER-24-16) up to 6\" to 4\" (IH-PF-SF16WER-96-64); send both tube O.D. figures if your pair is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Eccentric Reducer is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer connect to?",
+          "a": "Both ends are weld ends and join tube of the matching O.D. of the same family, for example the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer?",
+          "a": "Weld it in with the flat side down on a horizontal run so product drains and nothing pools; weld both ends smooth on the inside. The offset also keeps the top of the tube level where the reducer meets a pump suction."
+        },
+        {
+          "slot": "K",
+          "q": "Why choose the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer instead of a concentric weld-end reducer?",
+          "a": "Choose the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer on horizontal lines that must drain, because its flat side lets liquid run out. The [316 Stainless Steel Sanitary Weld-End Concentric Reducer](/p/316-stainless-steel-sanitary-weld-end-concentric-reducer) keeps the centreline and suits vertical lines. The eccentric range starts at 1-1/2\" and has 14 pairs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Eccentric Reducer ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer for export from Dubai?",
+          "a": "Yes, we stock the 316 Stainless Steel Sanitary Weld-End Eccentric Reducer in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-weld-end-reducing-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Weld-End Reducing Tee and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Reducing Tee is a 316 stainless sanitary tee with weld ends, taking a smaller branch off a larger run. It is listed in 21 size combinations, from a 3/4\" run with a 1/2\" branch (IH-PF-SF16WRT-12-08) to a 6\" run with a 4\" branch (IH-PF-SF16WRT-96-64)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16WRT-12-08 on the 316 Stainless Steel Sanitary Weld-End Reducing Tee?",
+          "a": "In the part number IH-PF-SF16WRT-12-08 the first number is the run and the second the branch, each as tube O.D. in sixteenths of an inch: 12 is 3/4\" and 08 is 1/2\". The last row, IH-PF-SF16WRT-96-64, joins 6\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Weld-End Reducing Tee come in?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Reducing Tee is listed in 21 sizes, 3/4\" to 6\", with part numbers from IH-PF-SF16WRT-12-08 to IH-PF-SF16WRT-96-64. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Weld-End Reducing Tee?",
+          "a": "Choose the run size first and then the branch size: the table runs from a 3/4\" run with a 1/2\" branch (IH-PF-SF16WRT-12-08) to a 6\" run with a 4\" branch (IH-PF-SF16WRT-96-64). Check that the branch is smaller than the run and send both tube O.D. figures if the combination you need is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Weld-End Reducing Tee have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Weld-End Reducing Tee. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Weld-End Reducing Tee 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Reducing Tee is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Weld-End Reducing Tee meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Weld-End Reducing Tee conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Weld-End Reducing Tee connect to?",
+          "a": "All three ends are weld ends and join tube of the sizes in the part number, for example the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing). Clamp ferrules can add a clamp joint on a branch that must open."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Weld-End Reducing Tee?",
+          "a": "Butt-weld all three ends to tube of the matching O.D. and keep the welds smooth inside. With welded ends the tee is permanent, so check the branch size before you cut the run."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose the 316 Stainless Steel Sanitary Weld-End Reducing Tee or the clamp-end reducing tee?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Reducing Tee is welded in place and listed in 21 combinations from 3/4\" to 6\"; the [316 Stainless Steel Sanitary Clamp-End Reducing Tee](/p/316-stainless-steel-sanitary-clamp-end-reducing-tee) uses clamps and covers 1\" to 4\". Choose the clamp-end version if the branch has to come apart for cleaning."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Weld-End Reducing Tee shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Reducing Tee ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Weld-End Reducing Tee for export from Dubai?",
+          "a": "Yes. Stock of the 316 Stainless Steel Sanitary Weld-End Reducing Tee sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as IH-PF-SF16WRT-12-08 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "316-stainless-steel-sanitary-weld-end-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 316 Stainless Steel Sanitary Weld-End Tee and what is it used for?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Tee is a 316 stainless sanitary tee with a weld end on all three connections and the same size on each. It is listed in 9 sizes, from 1/2\" (IH-PF-SF16WT-08) to 6\" (IH-PF-SF16WT-96)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16WT-08 on the 316 Stainless Steel Sanitary Weld-End Tee?",
+          "a": "In the part number IH-PF-SF16WT-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF16WT-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 316 Stainless Steel Sanitary Weld-End Tee come in?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Tee is listed in 9 sizes, 1/2\" to 6\", with part numbers from IH-PF-SF16WT-08 to IH-PF-SF16WT-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 316 Stainless Steel Sanitary Weld-End Tee?",
+          "a": "With an equal tee there is one tube size to choose: 9 sizes run from 1/2\" to 6\". The part number ends in the size in sixteenths of an inch, so IH-PF-SF16WT-96 is 6\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 316 Stainless Steel Sanitary Weld-End Tee have?",
+          "a": "The manufacturer publishes no pressure rating for the 316 Stainless Steel Sanitary Weld-End Tee. The clamp, gasket and temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it before you order. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains what limits a clamp joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 316 Stainless Steel Sanitary Weld-End Tee 316 or 304 stainless steel, and which should I choose?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Tee is 316 stainless steel. 316 adds molybdenum and resists chlorides, so it is chosen for seawater, brine and many chemicals; 304 suits fresh water, air and food service."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the 316 Stainless Steel Sanitary Weld-End Tee meet, and is a material test report supplied?",
+          "a": "The manufacturer states that the materials of the 316 Stainless Steel Sanitary Weld-End Tee conform to ASTM A269/A270 and 3-A, and that it supplies a material test report. Ask for the report with your order so it is raised against your part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 316 Stainless Steel Sanitary Weld-End Tee connect to?",
+          "a": "All three ends join tube of the same O.D., such as the [316 stainless sanitary tubing](/p/316-stainless-steel-sanitary-tubing). A branch that must open can end in a clamp ferrule of the same size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the 316 Stainless Steel Sanitary Weld-End Tee?",
+          "a": "Butt-weld each of the three ends to tube of the same O.D. and keep the welds smooth on the inside so the bore stays free of crevices. A welded tee is permanent, so choose a clamp-end tee if you may want to open the branch."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 316 Stainless Steel Sanitary Weld-End Tee and the 316 clamp-end tee?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Tee is welded into the line, so the joint is permanent and gasket-free, while the [316 Stainless Steel Sanitary Clamp-End Tee](/p/316-stainless-steel-sanitary-clamp-end-tee) is clamped and can be dismantled. Both are 316 stainless in 9 sizes from 1/2\" to 6\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 316 Stainless Steel Sanitary Weld-End Tee shipped from, and what are the export details?",
+          "a": "The 316 Stainless Steel Sanitary Weld-End Tee ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 316 Stainless Steel Sanitary Weld-End Tee for export from Dubai?",
+          "a": "Yes. We hold the 316 Stainless Steel Sanitary Weld-End Tee at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sanitary-clamp-gasket-epdm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sanitary Clamp Gasket, EPDM and what is it used for?",
+          "a": "The Sanitary Clamp Gasket, EPDM is the seal that goes between two sanitary clamp faces, made of EPDM rubber and listed in 9 sizes, 1/2\" to 6\" tube O.D., from IH-PF-SF04G-08 to IH-PF-SF04G-96. EPDM suits water, steam and most CIP chemicals."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF04G-08 on the Sanitary Clamp Gasket, EPDM?",
+          "a": "In the part number IH-PF-SF04G-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF04G-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Sanitary Clamp Gasket, EPDM come in?",
+          "a": "The Sanitary Clamp Gasket, EPDM is listed in 9 sizes, 1/2\" to 6\", with part numbers from IH-PF-SF04G-08 to IH-PF-SF04G-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Sanitary Clamp Gasket, EPDM?",
+          "a": "Choose the gasket by the tube O.D. of the two clamp faces it seals: 9 sizes run from 1/2\" to 6\", and the number at the end of the part number is that size in sixteenths of an inch, so IH-PF-SF04G-96 is 6\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Sanitary Clamp Gasket, EPDM have?",
+          "a": "The manufacturer publishes no pressure rating for the Sanitary Clamp Gasket, EPDM. The clamp, the faces and the temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains clamp-joint limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Sanitary Clamp Gasket, EPDM made of and which fluids does it suit?",
+          "a": "The gasket is EPDM, as the manufacturer states. EPDM suits water, steam and most CIP chemicals; match it to the product and the cleaning regime."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Sanitary Clamp Gasket, EPDM?",
+          "a": "The manufacturer states a material for the Sanitary Clamp Gasket, EPDM but no standard or approval for it. If your plant needs food-contact or compliance documents, tell us which when you ask for a quotation and we will request them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Sanitary Clamp Gasket, EPDM connect to?",
+          "a": "It seals 316 clamp joints such as the [Sanitary Clamp Gasket, PTFE](/p/sanitary-clamp-gasket-ptfe) and the [316 clamp-end tee](/p/316-stainless-steel-sanitary-clamp-end-tee), and pairs with a clamp of the same size. For harsh chemicals the PTFE version is the alternative."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the Sanitary Clamp Gasket, EPDM?",
+          "a": "Fit one gasket in every clamp joint, seat it evenly between the faces before closing the clamp, and replace it whenever the joint is opened and the gasket is cut, flattened or stained. A worn gasket is the usual source of a leak on a clamp joint."
+        },
+        {
+          "slot": "K",
+          "q": "EPDM or PTFE: how does the Sanitary Clamp Gasket, EPDM compare with the PTFE gasket?",
+          "a": "EPDM is the more elastic of the two and suits water, steam and most CIP chemicals, while the [Sanitary Clamp Gasket, PTFE](/p/sanitary-clamp-gasket-ptfe) resists almost all chemicals but is less elastic. Both come in 9 sizes from 1/2\" to 6\"; match the gasket to the product and the cleaning regime."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Sanitary Clamp Gasket, EPDM shipped from, and what are the export details?",
+          "a": "The Sanitary Clamp Gasket, EPDM ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sanitary Clamp Gasket, EPDM for export from Dubai?",
+          "a": "Yes. We keep the Sanitary Clamp Gasket, EPDM in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as IH-PF-SF04G-08 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sanitary-clamp-gasket-ptfe",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sanitary Clamp Gasket, PTFE and what is it used for?",
+          "a": "The Sanitary Clamp Gasket, PTFE is the seal between two sanitary clamp faces, made of PTFE and listed in 9 sizes, 1/2\" to 6\" tube O.D., from IH-PF-SF16G-08 to IH-PF-SF16G-96. PTFE resists almost all chemicals but is less elastic than rubber."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-PF-SF16G-08 on the Sanitary Clamp Gasket, PTFE?",
+          "a": "In the part number IH-PF-SF16G-08 the last number is the tube O.D. in sixteenths of an inch, so 08 is 1/2\". The same rule gives IH-PF-SF16G-96 as 6\"; the letters before it identify the product."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Sanitary Clamp Gasket, PTFE come in?",
+          "a": "The Sanitary Clamp Gasket, PTFE is listed in 9 sizes, 1/2\" to 6\", with part numbers from IH-PF-SF16G-08 to IH-PF-SF16G-96. The Sizes & Part Numbers table gives the size for every one, and other sizes are quoted on request; the full range of sanitary parts is on the [sanitary fittings shelf](/c/stainless-steel-sanitary-fittings)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Sanitary Clamp Gasket, PTFE?",
+          "a": "Choose by the tube O.D. of the clamp faces: 9 sizes run from 1/2\" to 6\", and the last number in the part number is that size in sixteenths of an inch, so IH-PF-SF16G-96 is 6\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Sanitary Clamp Gasket, PTFE have?",
+          "a": "The manufacturer publishes no pressure rating for the Sanitary Clamp Gasket, PTFE. The clamp, the faces and the temperature set what the joint holds, so tell us the working pressure, temperature and product and we will confirm it. The [sanitary tri-clamp fittings guide](/blog/sanitary-tri-clamp-fittings-guide) explains clamp-joint limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Sanitary Clamp Gasket, PTFE made of and which fluids does it suit?",
+          "a": "The gasket is PTFE, as the manufacturer states. PTFE resists almost all chemicals but is less elastic than rubber, so it needs even clamp pressure; match it to the product and the cleaning regime."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Sanitary Clamp Gasket, PTFE?",
+          "a": "The manufacturer states a material for the Sanitary Clamp Gasket, PTFE but no standard or approval for it. If your plant needs food-contact or compliance documents, tell us which when you ask for a quotation and we will request them before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Sanitary Clamp Gasket, PTFE connect to?",
+          "a": "It seals 316 clamp joints such as the [Sanitary Clamp Gasket, EPDM](/p/sanitary-clamp-gasket-epdm) and the [316 clamp-end tee](/p/316-stainless-steel-sanitary-clamp-end-tee), with a clamp of the same size. For water, steam and standard CIP chemicals the EPDM version is the alternative."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the Sanitary Clamp Gasket, PTFE?",
+          "a": "Fit one gasket per clamp joint, seat it evenly between the faces and close the clamp progressively. PTFE is less elastic than rubber, so tighten it evenly and do not re-use a gasket that has taken a set."
+        },
+        {
+          "slot": "K",
+          "q": "PTFE or EPDM: how does the Sanitary Clamp Gasket, PTFE differ from the EPDM gasket?",
+          "a": "PTFE resists almost all chemicals but is less elastic, whereas the [Sanitary Clamp Gasket, EPDM](/p/sanitary-clamp-gasket-epdm) is more elastic and suits water, steam and most CIP chemicals. Both are listed from 1/2\" to 6\" in 9 sizes. Choose by the product and the cleaning chemicals."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Sanitary Clamp Gasket, PTFE shipped from, and what are the export details?",
+          "a": "The Sanitary Clamp Gasket, PTFE ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing does not state a country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sanitary Clamp Gasket, PTFE for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Sanitary Clamp Gasket, PTFE, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    }
+  ]
+}

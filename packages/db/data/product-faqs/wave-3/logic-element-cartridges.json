@@ -1,0 +1,1185 @@
+{
+  "family": "logic-element-cartridges",
+  "extraFacts": [
+    {
+      "fact": "A logic element is a two-port poppet cartridge that opens or closes according to the force balance between its two work ports, the spring and the pilot (control) port; a balanced element switches on its control signal alone, an unbalanced element responds to the pressure at every port.",
+      "source": "Indus Hydraulics Sun Hydraulics logic element listings (existing FAQs)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Sun Hydraulics Pilot-to-Close, Spring-Biased Closed, Unbalanced Poppet Logic Element with Pilot Source from Port 1 or 2 — LOHDL [IH-SUN-LOHDL]:   XX | Capacity 100 gpm (380 L/min); Valve function Pilot-to-Close Unbalanced Poppet Logic Element; Valve hex size 1 1/4 in. (31,8 mm); Installation torque 150 - 160 lbf ft (203 - 217 Nm); Series (frame sizes) 3; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton, E — EPDM; Seal kits series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006; Cavity T-17A; Setting range D — 50 psi (3,5 bar); Weight 1.10 lb (0,50 kg); Max leakage 10 drops/min. (0,7 cc/min) | 1 part numbers (e.g. LOHDL); cavity T-17A; series 3; capacity 100 gpm / 380 L/min; maxPressure 5000 psi / 350 bar; rows:  || Sun Hydraulics Normally Closed, Balanced Poppet, Logic Element, Pilot-to-Open — DKDC to DKJS, Series 1 to 4 [IH-SUN-DK-CS]:   XX | Valve function Normally Closed Balanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Control / adjustment E — External 4-SAE Drain Port, X — Standard Pilot, Atmospheric Vent; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton, E — EPDM; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 15 | 8 part numbers (e.g. DKDC, DKDS, DKFC, DKFS); series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  /  /  /  || Sun Hydraulics Normally Closed, Balanced Poppet, Logic Element, Pressure Adjustable — DKDP, DKFP, DKHP, DKJP, Series 1 to 4 [IH-SUN-DK-P]:   XX | Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Valve function Normally Closed Balanced Poppet Logic Element; Control / adjustment C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Series (frame sizes) 1 to 4; Max operating  | 4 part numbers (e.g. DKDP, DKFP, DKHP, DKJP); cavity T-21A, T-22A, T-23A and T-24A; series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  || Sun Hydraulics Normally Closed, Balanced Poppet, Logic Element with Integral T-8A Control Cavity, Vent-to-Open — DKDR8, DKFR8, DKHR8, DKJR8, Series 1 to 4 [IH-SUN-DK-R8]:   XX | Valve function Normally Closed Balanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Cavity T-21A, T-22A, T-23A, T-24A; S | 4 part numbers (e.g. DKDR8, DKFR8, DKHR8, DKJR8); cavity T-21A, T-22A, T-23A and T-24A; series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  || Sun Hydraulics Normally Closed, Balanced Poppet, Logic Element, Vent-to-Open — DKDD to DKJR, Series 1 to 4 [IH-SUN-DK-DR]:   XX | Valve function Normally Closed Balanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Control / adjustment X — Vent to Operate; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 | 8 part numbers (e.g. DKDD, DKDR, DKFD, DKFR); series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  /  /  /  || Sun Hydraulics Normally Open, Balanced Poppet, Logic Element, Pilot-to-Close — DODC to DOJS, Series 1 to 4 [IH-SUN-DO-CS]:   XX | Valve function Normally Open Balanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Control / adjustment E — External 4-SAE Drain Port, X — Standard Pilot, Atmospheric Vent; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375  | 8 part numbers (e.g. DODC, DODS, DOFC, DOFS); series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  /  /  /  || Sun Hydraulics Normally Open, Balanced Poppet, Logic Element, Pressure Adjustable — DODP, DOFP, DOHP, DOJP, Series 1 to 4 [IH-SUN-DO-P]:   XX | Valve function Normally Open Balanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Control / adjustment C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 15 | 4 part numbers (e.g. DODP, DOFP, DOHP, DOJP); cavity T-21A, T-22A, T-23A and T-24A; series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  || Sun Hydraulics Normally Open, Balanced Poppet, Logic Element with Integral T-8A Control Cavity, Vent-to-Close — DODR8, DOFR8, DOHR8, DOJR8, Series 1 to 4 [IH-SUN-DO-R8]:   XX | Valve function Normally Open Balanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Cavity T-21A, T-22A, T-23A, T-24A; Sea | 4 part numbers (e.g. DODR8, DOFR8, DOHR8, DOJR8); cavity T-21A, T-22A, T-23A and T-24A; series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  || Sun Hydraulics Normally Open, Balanced Poppet, Logic Element, Vent-to-Close — DODD to DOJR, Series 1 to 4 [IH-SUN-DO-DR]:   XX | Valve function Normally Open Balanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Control / adjustment X — Vent to Operate; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 ba | 8 part numbers (e.g. DODD, DODR, DOFD, DOFR); series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  /  /  /  || Sun Hydraulics Pilot-to-Close, Spring-Biased Closed, Unbalanced Poppet Logic Element — LODC to LOKC, Series 1 to 4 [IH-SUN-LO-C-CL]:   XX | Valve function Pilot-to-Close Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Control / adjustment X — Not Adjustable, E — External 4-SAE Pilot Port, Port 3 Blocked, K — Handknob, L — Stroke Adjustment; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - | 6 part numbers (e.g. LODC, LOFC, LOHC, LOHCL); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  /  || Sun Hydraulics Pilot-to-Close, Spring-Biased Open, Unbalanced Poppet Logic Element — LODO, LOFO, LOHO, LOJO, LOKO, Series 1 to 4 [IH-SUN-LO-O]:   XX | Valve function Pilot-to-Close Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Control / adjustment X — Not Adjustable, E — External 4-SAE Pilot Port, Port 3 Blocked, L — Stroke Adjustment; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton, E — EPDM; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50  | 5 part numbers (e.g. LODO, LOFO, LOHO, LOJO); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  || Sun Hydraulics Pilot-to-Open, Spring-Biased Closed, Unbalanced Poppet Logic Element — LKDC, LKFC, LKHC, LKJC, Series 1 to 4 [IH-SUN-LK-C]:   XX | Valve function Pilot-to-Open Unbalanced Poppet Logic Element; Capacity 15 gpm to 120 gpm (60 L/min to 480 L/min); Control / adjustment X — Not Adjustable, E — External 4-SAE Pilot Port, Port 3 Blocked, K — Handknob, L — Manual Override, P — External 1/4 NPTF Pilot Port, Port 3 Blocked; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Install | 4 part numbers (e.g. LKDC, LKFC, LKHC, LKJC); cavity T-11A, T-2A, T-17A and T-19A; series 1, 2, 3 and 4; capacity 15 gpm / 60 L/min, 30 gpm / 120 L/min, 60 gpm / 240 L/min and 120 gpm / 480 L/min; maxPressure 5000 psi / 350 bar; rows:  /  /  /  || Sun Hydraulics Vent-to-Open, Spring-Biased Closed, Unbalanced Poppet Logic Element with Pilot Source from Port 1 — LODA, LOFA, LOHA, LOJA, LOKA, Series 1 to 4 [IH-SUN-LO-A]:   XX | Valve function Vent-to-Open Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Control / adjustment X — Not Adjustable, E — External 4-SAE Port, Port 3 blocked, L — Stroke Adjustment; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Series (frame sizes) 1 to 4; Max operati | 5 part numbers (e.g. LODA, LOFA, LOHA, LOJA); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  || Sun Hydraulics Vent-to-Open, Spring-Biased Closed, Unbalanced Poppet Logic Element with Pilot Source from Port 1 and Integral T-8A Control Cavity — LODA8, LOFA8, LOHA8, LOJA8, LOKA8 [IH-SUN-LO-A8]:   XX | Valve function Vent-to-Open Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Cavity T-11A, T-2A, T-17A, T-19A, T- | 5 part numbers (e.g. LODA8, LOFA8, LOHA8, LOJA8); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  || Sun Hydraulics Vent-to-Open, Spring-Biased Closed, Unbalanced Poppet Logic Element with Pilot Source from Port 1 or 2 — LODD, LOFD, LOHD, LOJD, LOKD [IH-SUN-LO-D]:   XX | Valve function Vent-to-Open Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Control / adjustment X — Not Adjustable, L — Stroke Adjustment; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal mate | 5 part numbers (e.g. LODD, LOFD, LOHD, LOJD); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  || Sun Hydraulics Vent-to-Open, Spring-Biased Closed, Unbalanced Poppet Logic Element with Pilot Source from Port 1 or 2 and Integral T-8A Control Cavity — LODD8, LOFD8, LOHD8, LOJD8, LOKD8 [IH-SUN-LO-D8]:   XX | Valve function Vent-to-Open Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton, E — EPDM; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Cavity T-11A, T-2A, T-17A, | 5 part numbers (e.g. LODD8, LOFD8, LOHD8, LOJD8); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  || Sun Hydraulics Vent-to-Open, Spring-Biased Closed, Unbalanced Poppet Logic Element with Pilot Source from Port 2 — LODB, LOFB, LOHB, LOJB, LOKB, Series 1 to 4 [IH-SUN-LO-B]:   XX | Valve function Vent-to-Open Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Control / adjustment X — Not Adjustable, L — Stroke Adjustment; Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - | 5 part numbers (e.g. LODB, LOFB, LOHB, LOJB); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  /  || Sun Hydraulics Vent-to-Open, Spring-Biased Closed, Unbalanced Poppet Logic Element with Pilot Source from Port 2 and Integral T-8A Control Cavity — LODB8, LOFB8, LOHB8, LOJB8, LOKB8 [IH-SUN-LO-B8]:   XX | Valve function Vent-to-Open Unbalanced Poppet Logic Element; Capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min); Valve hex size 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm); Installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm); Series (frame sizes) 1 to 4; Max operating pressure 5000 psi (350 bar); Seal material N — Buna-N, V — Viton; Cavity T-11A, T-2A, T-17A, T-19A, T- | 5 part numbers (e.g. LODB8, LOFB8, LOHB8, LOJB8); series 1, 2, 3 and 4; maxPressure 5000 psi / 350 bar; rows:  /  /  /  / ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LOHDL pilot-to-close unbalanced logic element used for?",
+          "a": "The Sun LOHDL pilot-to-close unbalanced logic element is an unbalanced poppet logic element. High-flow check, unloading and switching functions built from one cavity and a small pilot valve. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LOHDL pilot-to-close unbalanced logic element cover?",
+          "a": "The Sun LOHDL pilot-to-close unbalanced logic element is built in 1 version: LOHDL: series 3, T-17A cavity, 100 gpm (380 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LOHDL pilot-to-close unbalanced logic element have?",
+          "a": "The Sun LOHDL pilot-to-close unbalanced logic element is rated 100 gpm (380 L/min) in series 3, with cavity T-17A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LOHDL pilot-to-close unbalanced logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LOHDL pilot-to-close unbalanced logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1 Maximum leakage: 10 drops/min. (0,7 cc/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LOHDL pilot-to-close unbalanced logic element?",
+          "a": "Check cracking pressure: D — 50 psi (3,5 bar) Seal material: N — Buna-N, V — Viton, E — EPDM These options apply to the Sun LOHDL pilot-to-close unbalanced logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LOHDL pilot-to-close unbalanced logic element?",
+          "a": "A positive seal separates port 2 from the pilot area. Because it responds to pressure at every port, check every stage of the machine cycle against the area ratios. This applies to the Sun LOHDL pilot-to-close unbalanced logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LOHDL pilot-to-close unbalanced logic element need?",
+          "a": "The Sun LOHDL pilot-to-close unbalanced logic element has a valve hex of 1 1/4 in. (31,8 mm) and an installation torque of 150 - 160 lbf ft (203 - 217 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LOHDL pilot-to-close unbalanced logic element?",
+          "a": "The replacement seal kits listed for the Sun LOHDL pilot-to-close unbalanced logic element are series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LOHDL pilot-to-close unbalanced logic element typically used?",
+          "a": "The Sun LOHDL pilot-to-close unbalanced logic element is used for: High-flow check, unloading and switching functions built from one cavity and a small pilot valve. It is the pilot-to-Close Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LOHDL pilot-to-close unbalanced logic element compare with the Sun LODC to LOKC version?",
+          "a": "The Sun LOHDL pilot-to-close unbalanced logic element differs from the [Sun LODC to LOKC pilot-to-close closed unbalanced logic element](/p/sun-hydraulics-pilot-close-closed-unbalanced-poppet-logic-element). In detail: capacity 100 gpm (380 L/min) here against 25 gpm to 300 gpm (95 L/min to 1100 L/min) on the other; series 3 here against 1 to 4 on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LOHDL pilot-to-close unbalanced logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LOHDL pilot-to-close unbalanced logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LOHDL pilot-to-close unbalanced logic element in stock in Dubai?",
+          "a": "Yes. We keep the Sun LOHDL pilot-to-close unbalanced logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-closed-balanced-poppet-logic-element-pilot-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DKDC to DKJS normally closed pilot-to-open logic element used for?",
+          "a": "The Sun DKDC to DKJS normally closed pilot-to-open logic element is a normally closed 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it open, so it switches predictably on its control signal alone. With 5,000 psi (350 bar) at both work ports. High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DKDC to DKJS normally closed pilot-to-open logic element cover?",
+          "a": "The Sun DKDC to DKJS normally closed pilot-to-open logic element is built in 8 versions: DKDC: series 1, T-11A cavity, 15 gpm (60 L/min); DKDS: series 1, T-21A cavity, 15 gpm (60 L/min). DKFC: series 2, T-2A cavity, 30 gpm (120 L/min); DKFS: series 2, T-22A cavity, 30 gpm (120 L/min); DKHC: series 3, T-17A cavity, 60 gpm (240 L/min); DKHS: series 3, T-23A cavity, 60 gpm (240 L/min); DKJC: series 4, T-19A cavity, 120 gpm (480 L/min); DKJS: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DKDC to DKJS normally closed pilot-to-open logic element have?",
+          "a": "The Sun DKDC to DKJS normally closed pilot-to-open logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-11A, T-21A, T-2A, T-22A, T-17A, T-23A, T-19A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DKDC to DKJS normally closed pilot-to-open logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DKDC to DKJS normally closed pilot-to-open logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar), 5 drops/min.@1000 psi (0,3 cc/min.@70 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DKDC to DKJS normally closed pilot-to-open logic element?",
+          "a": "Control: E — External 4-SAE Drain Port, X — Standard Pilot, Atmospheric Vent Setting range: H — 400 psi (28 bar) Seal material: N — Buna-N, V — Viton. E — EPDM These options apply to the Sun DKDC to DKJS normally closed pilot-to-open logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DKDC to DKJS normally closed pilot-to-open logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DKDC to DKJS normally closed pilot-to-open logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DKDC to DKJS normally closed pilot-to-open logic element need?",
+          "a": "The Sun DKDC to DKJS normally closed pilot-to-open logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DKDC to DKJS normally closed pilot-to-open logic element?",
+          "a": "The replacement seal kits listed for the Sun DKDC to DKJS normally closed pilot-to-open logic element are series 1: Buna: 990311007, Viton: 990311006, Buna: 990021007, EPDM: 990021014, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006, Buna: 990022007, EPDM: 990022014, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 99. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DKDC to DKJS normally closed pilot-to-open logic element typically used?",
+          "a": "The Sun DKDC to DKJS normally closed pilot-to-open logic element is used for: High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. It is the normally Closed Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DKDC to DKJS normally closed pilot-to-open logic element compare with the Sun DKDP to DKJP version?",
+          "a": "The Sun DKDC to DKJS normally closed pilot-to-open logic element differs from the [Sun DKDP to DKJP normally closed pressure-adjustable logic element](/p/sun-hydraulics-normally-closed-balanced-poppet-logic-element-pressure-adjustable). In detail: cavity T-11A, T-21A, T-2A, T-22A, T-17A, T-23A, T-19A, T-24A here against T-21A, T-22A, T-23A, T-24A on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DKDC to DKJS normally closed pilot-to-open logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DKDC to DKJS normally closed pilot-to-open logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DKDC to DKJS normally closed pilot-to-open logic element in stock in Dubai?",
+          "a": "Yes. We keep the Sun DKDC to DKJS normally closed pilot-to-open logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-closed-balanced-poppet-logic-element-pressure-adjustable",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DKDP to DKJP normally closed pressure-adjustable logic element used for?",
+          "a": "The Sun DKDP to DKJP normally closed pressure-adjustable logic element is a normally closed 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it open. So it switches predictably on its control signal alone, with 5,000 psi (350 bar) at both work ports. High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DKDP to DKJP normally closed pressure-adjustable logic element cover?",
+          "a": "The Sun DKDP to DKJP normally closed pressure-adjustable logic element is built in 4 versions: DKDP: series 1, T-21A cavity, 15 gpm (60 L/min); DKFP: series 2, T-22A cavity, 30 gpm (120 L/min). DKHP: series 3, T-23A cavity, 60 gpm (240 L/min); DKJP: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DKDP to DKJP normally closed pressure-adjustable logic element have?",
+          "a": "The Sun DKDP to DKJP normally closed pressure-adjustable logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-21A, T-22A, T-23A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DKDP to DKJP normally closed pressure-adjustable logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DKDP to DKJP normally closed pressure-adjustable logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DKDP to DKJP normally closed pressure-adjustable logic element?",
+          "a": "Control: C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment Setting range: A — 400 - 3000 psi (28 - 210 bar), 1000 psi (70 bar) Standard Setting, B — 400 - 1500 psi (28 - 105 bar). 1000 psi (70 bar) Standard Setting, W — 400 - 4500 psi (28 - 315 bar), 1000 psi (70 bar) Standard Setting, C — 400 - 6000 psi (28 - 420 bar), 1000 psi (70 bar) Standard Setting, D — 400 - 800 psi (28 - 55 bar), 400 psi (28 bar) Standard Setting Seal material: N — Buna-N, V — Viton, E — EPDM These options apply to the Sun DKDP to DKJP normally closed pressure-adjustable logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DKDP to DKJP normally closed pressure-adjustable logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DKDP to DKJP normally closed pressure-adjustable logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DKDP to DKJP normally closed pressure-adjustable logic element need?",
+          "a": "The Sun DKDP to DKJP normally closed pressure-adjustable logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DKDP to DKJP normally closed pressure-adjustable logic element?",
+          "a": "The replacement seal kits listed for the Sun DKDP to DKJP normally closed pressure-adjustable logic element are series 1: Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990022007, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990023007, Polyurethane: 990023002, Viton: 990023006; series 4: Buna: 990024007, Polyurethane: 990024002, Viton: 990024006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DKDP to DKJP normally closed pressure-adjustable logic element typically used?",
+          "a": "The Sun DKDP to DKJP normally closed pressure-adjustable logic element is used for: High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. It is the normally Closed Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DKDP to DKJP normally closed pressure-adjustable logic element compare with the Sun DODP to DOJP version?",
+          "a": "The Sun DKDP to DKJP normally closed pressure-adjustable logic element differs from the [Sun DODP to DOJP normally open pressure-adjustable logic element](/p/sun-hydraulics-normally-open-balanced-poppet-logic-element-pressure-adjustable). In detail: function normally Closed Balanced Poppet Logic Element here against normally Open Balanced Poppet Logic Element on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DKDP to DKJP normally closed pressure-adjustable logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DKDP to DKJP normally closed pressure-adjustable logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DKDP to DKJP normally closed pressure-adjustable logic element in stock in Dubai?",
+          "a": "Yes, we carry the Sun DKDP to DKJP normally closed pressure-adjustable logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-closed-balanced-poppet-logic-element-t-8a-control-cavity-vent-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element used for?",
+          "a": "The Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element is a normally closed 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it open. So it switches predictably on its control signal alone, with 5,000 psi (350 bar) at both work ports. High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element cover?",
+          "a": "The Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element is built in 4 versions: DKDR8: series 1, T-21A cavity, 15 gpm (60 L/min); DKFR8: series 2, T-22A cavity, 30 gpm (120 L/min). DKHR8: series 3, T-23A cavity, 60 gpm (240 L/min); DKJR8: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element have?",
+          "a": "The Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-21A, T-22A, T-23A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element?",
+          "a": "Setting range: H — 400 psi (28 bar) Seal material: N — Buna-N, V — Viton These options apply to the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element need?",
+          "a": "The Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element?",
+          "a": "The replacement seal kits listed for the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element are series 1: Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990022007, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990023007, Polyurethane: 990023002, Viton: 990023006; series 4: Buna: 990024007, Polyurethane: 990024002, Viton: 990024006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element typically used?",
+          "a": "The Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element is used for: High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. It is the normally Closed Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element compare with the Sun DKDC to DKJS version?",
+          "a": "The Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element differs from the [Sun DKDC to DKJS normally closed pilot-to-open logic element](/p/sun-hydraulics-normally-closed-balanced-poppet-logic-element-pilot-open). In detail: cavity T-21A, T-22A, T-23A, T-24A here against T-11A, T-21A, T-2A, T-22A, T-17A, T-23A, T-19A, T-24A on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element in stock in Dubai?",
+          "a": "Yes. We keep the Sun DKDR8 to DKJR8 normally closed T-8A vent-open logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-closed-balanced-poppet-logic-element-vent-open",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DKDD to DKJR normally closed vent-open logic element used for?",
+          "a": "The Sun DKDD to DKJR normally closed vent-open logic element is a normally closed 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it open, so it switches predictably on its control signal alone. With 5,000 psi (350 bar) at both work ports. High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DKDD to DKJR normally closed vent-open logic element cover?",
+          "a": "The Sun DKDD to DKJR normally closed vent-open logic element is built in 8 versions: DKDD: series 1, T-11A cavity, 15 gpm (60 L/min); DKDR: series 1, T-21A cavity, 15 gpm (60 L/min); DKFD: series 2, T-2A cavity, 30 gpm (120 L/min). DKFR: series 2, T-22A cavity, 30 gpm (120 L/min); DKHD: series 3, T-17A cavity, 60 gpm (240 L/min); DKHR: series 3, T-23A cavity, 60 gpm (240 L/min); DKJD: series 4, T-19A cavity, 120 gpm (480 L/min); DKJR: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DKDD to DKJR normally closed vent-open logic element have?",
+          "a": "The Sun DKDD to DKJR normally closed vent-open logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-11A, T-21A, T-2A, T-22A, T-17A, T-23A, T-19A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DKDD to DKJR normally closed vent-open logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DKDD to DKJR normally closed vent-open logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DKDD to DKJR normally closed vent-open logic element?",
+          "a": "Control: X — Vent to Operate Setting range: H — 400 psi (28 bar) Seal material: N — Buna-N, V — Viton These options apply to the Sun DKDD to DKJR normally closed vent-open logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DKDD to DKJR normally closed vent-open logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DKDD to DKJR normally closed vent-open logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DKDD to DKJR normally closed vent-open logic element need?",
+          "a": "The Sun DKDD to DKJR normally closed vent-open logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DKDD to DKJR normally closed vent-open logic element?",
+          "a": "The replacement seal kits listed for the Sun DKDD to DKJR normally closed vent-open logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006, Buna: 990022007, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006, . Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DKDD to DKJR normally closed vent-open logic element typically used?",
+          "a": "The Sun DKDD to DKJR normally closed vent-open logic element is used for: High-flow on/off switching and isolation in presses, test rigs and mobile valve blocks. It is the normally Closed Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DKDD to DKJR normally closed vent-open logic element compare with the Sun DKDC to DKJS version?",
+          "a": "The Sun DKDD to DKJR normally closed vent-open logic element differs from the [Sun DKDC to DKJS normally closed pilot-to-open logic element](/p/sun-hydraulics-normally-closed-balanced-poppet-logic-element-pilot-open). In detail: . Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DKDD to DKJR normally closed vent-open logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DKDD to DKJR normally closed vent-open logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DKDD to DKJR normally closed vent-open logic element in stock in Dubai?",
+          "a": "Yes, we hold the Sun DKDD to DKJR normally closed vent-open logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-open-balanced-poppet-logic-element-pilot-close",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DODC to DOJS normally open pilot-to-close logic element used for?",
+          "a": "The Sun DODC to DOJS normally open pilot-to-close logic element is a normally open 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it shut, so it switches predictably on its control signal alone. With 5,000 psi (350 bar) at both work ports. High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DODC to DOJS normally open pilot-to-close logic element cover?",
+          "a": "The Sun DODC to DOJS normally open pilot-to-close logic element is built in 8 versions: DODC: series 1, T-11A cavity, 15 gpm (60 L/min); DODS: series 1, T-21A cavity, 15 gpm (60 L/min); DOFC: series 2, T-2A cavity, 30 gpm (120 L/min). DOFS: series 2, T-22A cavity, 30 gpm (120 L/min); DOHC: series 3, T-17A cavity, 60 gpm (240 L/min); DOHS: series 3, T-23A cavity, 60 gpm (240 L/min); DOJC: series 4, T-19A cavity, 120 gpm (480 L/min); DOJS: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DODC to DOJS normally open pilot-to-close logic element have?",
+          "a": "The Sun DODC to DOJS normally open pilot-to-close logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-11A, T-21A, T-2A, T-22A, T-17A, T-23A, T-19A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DODC to DOJS normally open pilot-to-close logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DODC to DOJS normally open pilot-to-close logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DODC to DOJS normally open pilot-to-close logic element?",
+          "a": "Control: E — External 4-SAE Drain Port, X — Standard Pilot, Atmospheric Vent Setting range: H — 400 psi (28 bar) Seal material: N — Buna-N. V — Viton These options apply to the Sun DODC to DOJS normally open pilot-to-close logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DODC to DOJS normally open pilot-to-close logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DODC to DOJS normally open pilot-to-close logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DODC to DOJS normally open pilot-to-close logic element need?",
+          "a": "The Sun DODC to DOJS normally open pilot-to-close logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DODC to DOJS normally open pilot-to-close logic element?",
+          "a": "The replacement seal kits listed for the Sun DODC to DOJS normally open pilot-to-close logic element are series 1: Buna: 990311007, Viton: 990311006, Buna: 990021007, EPDM: 990021014, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006, Buna: 990022007, EPDM: 990022014, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 99. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DODC to DOJS normally open pilot-to-close logic element typically used?",
+          "a": "The Sun DODC to DOJS normally open pilot-to-close logic element is used for: High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. It is the normally Open Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DODC to DOJS normally open pilot-to-close logic element compare with the Sun DKDC to DKJS version?",
+          "a": "The Sun DODC to DOJS normally open pilot-to-close logic element differs from the [Sun DKDC to DKJS normally closed pilot-to-open logic element](/p/sun-hydraulics-normally-closed-balanced-poppet-logic-element-pilot-open). In detail: function normally Open Balanced Poppet Logic Element here against normally Closed Balanced Poppet Logic Element on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DODC to DOJS normally open pilot-to-close logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DODC to DOJS normally open pilot-to-close logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DODC to DOJS normally open pilot-to-close logic element in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Sun DODC to DOJS normally open pilot-to-close logic element and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-open-balanced-poppet-logic-element-pressure-adjustable",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DODP to DOJP normally open pressure-adjustable logic element used for?",
+          "a": "The Sun DODP to DOJP normally open pressure-adjustable logic element is a normally open 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it shut. So it switches predictably on its control signal alone, with 5,000 psi (350 bar) at both work ports. High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DODP to DOJP normally open pressure-adjustable logic element cover?",
+          "a": "The Sun DODP to DOJP normally open pressure-adjustable logic element is built in 4 versions: DODP: series 1, T-21A cavity, 15 gpm (60 L/min); DOFP: series 2, T-22A cavity, 30 gpm (120 L/min). DOHP: series 3, T-23A cavity, 60 gpm (240 L/min); DOJP: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DODP to DOJP normally open pressure-adjustable logic element have?",
+          "a": "The Sun DODP to DOJP normally open pressure-adjustable logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-21A, T-22A, T-23A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DODP to DOJP normally open pressure-adjustable logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DODP to DOJP normally open pressure-adjustable logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DODP to DOJP normally open pressure-adjustable logic element?",
+          "a": "Control: C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment Setting range: A — 400 - 3000 psi (28 - 210 bar), 1000 psi (70 bar) Standard Setting, B — 400 - 1500 psi (28 - 105 bar). 1000 psi (70 bar) Standard Setting, W — 400 - 4500 psi (28 - 315 bar), 1000 psi (70 bar) Standard Setting Seal material: N — Buna-N, V — Viton These options apply to the Sun DODP to DOJP normally open pressure-adjustable logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DODP to DOJP normally open pressure-adjustable logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DODP to DOJP normally open pressure-adjustable logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DODP to DOJP normally open pressure-adjustable logic element need?",
+          "a": "The Sun DODP to DOJP normally open pressure-adjustable logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DODP to DOJP normally open pressure-adjustable logic element?",
+          "a": "The replacement seal kits listed for the Sun DODP to DOJP normally open pressure-adjustable logic element are series 1: Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990022007, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990023007, Polyurethane: 990023002, Viton: 990023006; series 4: Buna: 990024007, Polyurethane: 990024002, Viton: 990024006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DODP to DOJP normally open pressure-adjustable logic element typically used?",
+          "a": "The Sun DODP to DOJP normally open pressure-adjustable logic element is used for: High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. It is the normally Open Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DODP to DOJP normally open pressure-adjustable logic element compare with the Sun DKDP to DKJP version?",
+          "a": "The Sun DODP to DOJP normally open pressure-adjustable logic element differs from the [Sun DKDP to DKJP normally closed pressure-adjustable logic element](/p/sun-hydraulics-normally-closed-balanced-poppet-logic-element-pressure-adjustable). In detail: function normally Open Balanced Poppet Logic Element here against normally Closed Balanced Poppet Logic Element on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DODP to DOJP normally open pressure-adjustable logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DODP to DOJP normally open pressure-adjustable logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DODP to DOJP normally open pressure-adjustable logic element in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Sun DODP to DOJP normally open pressure-adjustable logic element and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-open-balanced-poppet-logic-element-t-8a-control-cavity-vent-close",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element used for?",
+          "a": "The Sun DODR8 to DOJR8 normally open T-8A vent-close logic element is a normally open 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it shut, so it switches predictably on its control signal alone. With 5,000 psi (350 bar) at both work ports. High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element cover?",
+          "a": "The Sun DODR8 to DOJR8 normally open T-8A vent-close logic element is built in 4 versions: DODR8: series 1, T-21A cavity, 15 gpm (60 L/min); DOFR8: series 2, T-22A cavity, 30 gpm (120 L/min). DOHR8: series 3, T-23A cavity, 60 gpm (240 L/min); DOJR8: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element have?",
+          "a": "The Sun DODR8 to DOJR8 normally open T-8A vent-close logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-21A, T-22A, T-23A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element?",
+          "a": "Setting range: H — 400 psi (28 bar) Seal material: N — Buna-N, V — Viton These options apply to the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element need?",
+          "a": "The Sun DODR8 to DOJR8 normally open T-8A vent-close logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element?",
+          "a": "The replacement seal kits listed for the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element are series 1: Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990022007, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990023007, Polyurethane: 990023002, Viton: 990023006; series 4: Buna: 990024007, EPDM: 990024014, Polyurethane: 990024002, Viton: 990024006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element typically used?",
+          "a": "The Sun DODR8 to DOJR8 normally open T-8A vent-close logic element is used for: High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. It is the normally Open Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element compare with the Sun DKDC to DKJS version?",
+          "a": "The Sun DODR8 to DOJR8 normally open T-8A vent-close logic element differs from the [Sun DKDC to DKJS normally closed pilot-to-open logic element](/p/sun-hydraulics-normally-closed-balanced-poppet-logic-element-pilot-open). In detail: function normally Open Balanced Poppet Logic Element here against normally Closed Balanced Poppet Logic Element on the other; cavity T-21A, T-22A, T-23A, T-24A here against T-11A, T-21A, T-2A, T-22A, T-17A, T-23A, T-19A, T-24A on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element in stock in Dubai?",
+          "a": "Yes, we hold the Sun DODR8 to DOJR8 normally open T-8A vent-close logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-open-balanced-poppet-logic-element-vent-close",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DODD to DOJR normally open vent-close logic element used for?",
+          "a": "The Sun DODD to DOJR normally open vent-close logic element is a normally open 2-way logic element with a balanced poppet: pressure at ports 1 and 2 does not push it shut, so it switches predictably on its control signal alone. With 5,000 psi (350 bar) at both work ports. High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun DODD to DOJR normally open vent-close logic element cover?",
+          "a": "The Sun DODD to DOJR normally open vent-close logic element is built in 8 versions: DODD: series 1, T-11A cavity, 15 gpm (60 L/min); DODR: series 1, T-21A cavity, 15 gpm (60 L/min); DOFD: series 2, T-2A cavity, 30 gpm (120 L/min). DOFR: series 2, T-22A cavity, 30 gpm (120 L/min); DOHD: series 3, T-17A cavity, 60 gpm (240 L/min); DOHR: series 3, T-23A cavity, 60 gpm (240 L/min); DOJD: series 4, T-19A cavity, 120 gpm (480 L/min); DOJR: series 4, T-24A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun DODD to DOJR normally open vent-close logic element have?",
+          "a": "The Sun DODD to DOJR normally open vent-close logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-11A, T-21A, T-2A, T-22A, T-17A, T-23A, T-19A, T-24A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun DODD to DOJR normally open vent-close logic element rated for?",
+          "a": "The maximum operating pressure of the Sun DODD to DOJR normally open vent-close logic element is 5000 psi (350 bar). Minimum pilot pressure to shift: 400 psi (28 bar), 300 psi (20 bar) Maximum leakage: 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun DODD to DOJR normally open vent-close logic element?",
+          "a": "Control: X — Vent to Operate Setting range: H — 400 psi (28 bar) Seal material: N — Buna-N, V — Viton These options apply to the Sun DODD to DOJR normally open vent-close logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun DODD to DOJR normally open vent-close logic element?",
+          "a": "Needs a minimum pilot pressure (about 400 psi, 30 bar, on series 1) with the external drain open. Same cavity as an unbalanced logic element of the same frame size, so it can replace one. X control vents to atmosphere (a fix for existing circuits that may weep over time); E control uses a static external drain, the better choice for new designs. This applies to the Sun DODD to DOJR normally open vent-close logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun DODD to DOJR normally open vent-close logic element need?",
+          "a": "The Sun DODD to DOJR normally open vent-close logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun DODD to DOJR normally open vent-close logic element?",
+          "a": "The replacement seal kits listed for the Sun DODD to DOJR normally open vent-close logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006, Buna: 990022007, Polyurethane: 990022002, Viton: 990022006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006, . Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DODD to DOJR normally open vent-close logic element typically used?",
+          "a": "The Sun DODD to DOJR normally open vent-close logic element is used for: High-flow switching where the path must stay open with no signal — bypass, unloading and dump functions. It is the normally Open Balanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DODD to DOJR normally open vent-close logic element compare with the Sun DKDC to DKJS version?",
+          "a": "The Sun DODD to DOJR normally open vent-close logic element differs from the [Sun DKDC to DKJS normally closed pilot-to-open logic element](/p/sun-hydraulics-normally-closed-balanced-poppet-logic-element-pilot-open). In detail: function normally Open Balanced Poppet Logic Element here against normally Closed Balanced Poppet Logic Element on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun DODD to DOJR normally open vent-close logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun DODD to DOJR normally open vent-close logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DODD to DOJR normally open vent-close logic element in stock in Dubai?",
+          "a": "Yes. We keep the Sun DODD to DOJR normally open vent-close logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-close-closed-unbalanced-poppet-logic-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODC to LOKC pilot-to-close closed unbalanced logic element used for?",
+          "a": "The Sun LODC to LOKC pilot-to-close closed unbalanced logic element is an unbalanced poppet logic element. High-flow check, unloading and switching functions built from one cavity and a small pilot valve. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODC to LOKC pilot-to-close closed unbalanced logic element cover?",
+          "a": "The Sun LODC to LOKC pilot-to-close closed unbalanced logic element is built in 6 versions: LODC: series 1, T-11A cavity, 25 gpm (95 L/min); LOFC: series 2, T-2A cavity, 50 gpm (200 L/min). LOHC: series 3, T-17A cavity, 100 gpm (380 L/min); LOHCL: series 3, T-17A cavity, 100 gpm (380 L/min); LOJC: series 4, T-19A cavity, 200 gpm (760 L/min); LOKC: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODC to LOKC pilot-to-close closed unbalanced logic element have?",
+          "a": "The Sun LODC to LOKC pilot-to-close closed unbalanced logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODC to LOKC pilot-to-close closed unbalanced logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODC to LOKC pilot-to-close closed unbalanced logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1 Maximum leakage: 10 drops/min. (0,7 cc/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODC to LOKC pilot-to-close closed unbalanced logic element?",
+          "a": "Control: X — Not Adjustable, E — External 4-SAE Pilot Port, Port 3 Blocked, K — Handknob, L — Stroke Adjustment Check cracking pressure: D — 50 psi (3,5 bar) Seal material: N — Buna-N. V — Viton These options apply to the Sun LODC to LOKC pilot-to-close closed unbalanced logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODC to LOKC pilot-to-close closed unbalanced logic element?",
+          "a": "A positive seal separates port 2 from the pilot area. Because it responds to pressure at every port, check every stage of the machine cycle against the area ratios. This applies to the Sun LODC to LOKC pilot-to-close closed unbalanced logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODC to LOKC pilot-to-close closed unbalanced logic element need?",
+          "a": "The Sun LODC to LOKC pilot-to-close closed unbalanced logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODC to LOKC pilot-to-close closed unbalanced logic element?",
+          "a": "The replacement seal kits listed for the Sun LODC to LOKC pilot-to-close closed unbalanced logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, EPDM: 990017014, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, Polyurethane: 990019002, Viton: 990019006, EPDM: 990019014. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODC to LOKC pilot-to-close closed unbalanced logic element typically used?",
+          "a": "The Sun LODC to LOKC pilot-to-close closed unbalanced logic element is used for: High-flow check, unloading and switching functions built from one cavity and a small pilot valve. It is the pilot-to-Close Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODC to LOKC pilot-to-close closed unbalanced logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODC to LOKC pilot-to-close closed unbalanced logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other; series 1 to 4 here against 3 on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODC to LOKC pilot-to-close closed unbalanced logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODC to LOKC pilot-to-close closed unbalanced logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODC to LOKC pilot-to-close closed unbalanced logic element in stock in Dubai?",
+          "a": "Yes, we carry the Sun LODC to LOKC pilot-to-close closed unbalanced logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-close-open-unbalanced-poppet-logic-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODO to LOKO pilot-to-close open unbalanced logic element used for?",
+          "a": "The Sun LODO to LOKO pilot-to-close open unbalanced logic element is an unbalanced poppet logic element. High-flow check, unloading and switching functions built from one cavity and a small pilot valve. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODO to LOKO pilot-to-close open unbalanced logic element cover?",
+          "a": "The Sun LODO to LOKO pilot-to-close open unbalanced logic element is built in 5 versions: LODO: series 1, T-11A cavity, 25 gpm (95 L/min); LOFO: series 2, T-2A cavity, 50 gpm (200 L/min). LOHO: series 3, T-17A cavity, 100 gpm (380 L/min); LOJO: series 4, T-19A cavity, 200 gpm (760 L/min); LOKO: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODO to LOKO pilot-to-close open unbalanced logic element have?",
+          "a": "The Sun LODO to LOKO pilot-to-close open unbalanced logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODO to LOKO pilot-to-close open unbalanced logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODO to LOKO pilot-to-close open unbalanced logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 Maximum leakage: 10 drops/min. (0,7 cc/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODO to LOKO pilot-to-close open unbalanced logic element?",
+          "a": "Control: X — Not Adjustable, E — External 4-SAE Pilot Port, Port 3 Blocked, L — Stroke Adjustment Setting range: D — 50 psi (3,5 bar) Seal material: N — Buna-N, V — Viton. E — EPDM These options apply to the Sun LODO to LOKO pilot-to-close open unbalanced logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODO to LOKO pilot-to-close open unbalanced logic element?",
+          "a": "A positive seal separates port 2 from the pilot area. Because it responds to pressure at every port, check every stage of the machine cycle against the area ratios. This applies to the Sun LODO to LOKO pilot-to-close open unbalanced logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODO to LOKO pilot-to-close open unbalanced logic element need?",
+          "a": "The Sun LODO to LOKO pilot-to-close open unbalanced logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODO to LOKO pilot-to-close open unbalanced logic element?",
+          "a": "The replacement seal kits listed for the Sun LODO to LOKO pilot-to-close open unbalanced logic element are series 1: Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, EPDM: 990017014, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, EPDM: 990019014, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODO to LOKO pilot-to-close open unbalanced logic element typically used?",
+          "a": "The Sun LODO to LOKO pilot-to-close open unbalanced logic element is used for: High-flow check, unloading and switching functions built from one cavity and a small pilot valve. It is the pilot-to-Close Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODO to LOKO pilot-to-close open unbalanced logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODO to LOKO pilot-to-close open unbalanced logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other; series 1 to 4 here against 3 on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODO to LOKO pilot-to-close open unbalanced logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODO to LOKO pilot-to-close open unbalanced logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODO to LOKO pilot-to-close open unbalanced logic element in stock in Dubai?",
+          "a": "Yes, we carry the Sun LODO to LOKO pilot-to-close open unbalanced logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-open-closed-unbalanced-poppet-logic-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element used for?",
+          "a": "The Sun LKDC to LKJC pilot-to-open closed unbalanced logic element is a spring-closed, unbalanced poppet logic element. High-flow switching opened on a pilot signal, for example from a pilot solenoid valve. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element cover?",
+          "a": "The Sun LKDC to LKJC pilot-to-open closed unbalanced logic element is built in 4 versions: LKDC: series 1, T-11A cavity, 15 gpm (60 L/min); LKFC: series 2, T-2A cavity, 30 gpm (120 L/min). LKHC: series 3, T-17A cavity, 60 gpm (240 L/min); LKJC: series 4, T-19A cavity, 120 gpm (480 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element have?",
+          "a": "The Sun LKDC to LKJC pilot-to-open closed unbalanced logic element is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1 Maximum leakage: 10 drops/min.@1000 psi (0,7 cc/min.@70 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element?",
+          "a": "Control: X — Not Adjustable, E — External 4-SAE Pilot Port, Port 3 Blocked, K — Handknob, L — Manual Override, P — External 1/4 NPTF Pilot Port, Port 3 Blocked Setting range: D — 50 psi (3,5 bar) Seal material: N — Buna-N. V — Viton These options apply to the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element?",
+          "a": "A positive seal separates port 2 from the pilot area. Because it responds to pressure at every port, check every stage of the machine cycle against the area ratios. This applies to the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element need?",
+          "a": "The Sun LKDC to LKJC pilot-to-open closed unbalanced logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element?",
+          "a": "The replacement seal kits listed for the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, EPDM: 990202014, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, EPDM: 990017014, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, EPDM: 990019014, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element typically used?",
+          "a": "The Sun LKDC to LKJC pilot-to-open closed unbalanced logic element is used for: High-flow switching opened on a pilot signal, for example from a pilot solenoid valve. It is the pilot-to-Open Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LKDC to LKJC pilot-to-open closed unbalanced logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: function pilot-to-Open Unbalanced Poppet Logic Element here against pilot-to-Close Unbalanced Poppet Logic Element on the other; capacity 15 gpm to 120 gpm (60 L/min to 480 L/min) here against 100 gpm (380 L/min) on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element in stock in Dubai?",
+          "a": "Yes. We keep the Sun LKDC to LKJC pilot-to-open closed unbalanced logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vent-open-closed-unbalanced-poppet-logic-element-pilot-source-port-1",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element used for?",
+          "a": "The Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element is a spring-closed, unbalanced poppet logic element that takes its pilot oil from its own work port through an internal orifice. High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element cover?",
+          "a": "The Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element is built in 5 versions: LODA: series 1, T-11A cavity, 25 gpm (95 L/min); LOFA: series 2, T-2A cavity, 50 gpm (200 L/min). LOHA: series 3, T-17A cavity, 100 gpm (380 L/min); LOJA: series 4, T-19A cavity, 200 gpm (760 L/min); LOKA: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element have?",
+          "a": "The Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1 Maximum leakage: 10 drops/min. (0,7 cc/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element?",
+          "a": "Control: X — Not Adjustable, E — External 4-SAE Port, Port 3 blocked, L — Stroke Adjustment Check cracking pressure: D — 50 psi (3,5 bar) Seal material: N — Buna-N. V — Viton These options apply to the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element?",
+          "a": "It opens quickly when vented; closing time depends on flow and pressure drop and is hard to predict. Pilot-source options: port 1, port 2, or either through an internal shuttle. A positive seal separates port 2 from the pilot area. This applies to the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element need?",
+          "a": "The Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element?",
+          "a": "The replacement seal kits listed for the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element typically used?",
+          "a": "The Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element is used for: High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. It is the vent-to-Open Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: function vent-to-Open Unbalanced Poppet Logic Element here against pilot-to-Close Unbalanced Poppet Logic Element on the other; capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element in stock in Dubai?",
+          "a": "Yes. We keep the Sun LODA to LOKA vent-open unbalanced, pilot from port 1 logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vent-open-closed-unbalanced-poppet-logic-element-pilot-source-port-1-lo-a8",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element used for?",
+          "a": "The Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element is a spring-closed, unbalanced poppet logic element that takes its pilot oil from its own work port through an internal orifice. High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element cover?",
+          "a": "The Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element is built in 5 versions: LODA8: series 1, T-11A cavity, 25 gpm (95 L/min); LOFA8: series 2, T-2A cavity, 50 gpm (200 L/min). LOHA8: series 3, T-17A cavity, 100 gpm (380 L/min); LOJA8: series 4, T-19A cavity, 200 gpm (760 L/min); LOKA8: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element have?",
+          "a": "The Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1"
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element?",
+          "a": "Check cracking pressure: D — 50 psi (3,5 bar) Seal material: N — Buna-N, V — Viton Material / coating: /AP — Stainless Steel, Passivated These options apply to the Sun LODA8 to LOKA8 vent-open unbalanced. Pilot from port 1 (T-8A) logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element?",
+          "a": "It opens quickly when vented; closing time depends on flow and pressure drop and is hard to predict. Pilot-source options: port 1, port 2, or either through an internal shuttle. A positive seal separates port 2 from the pilot area. This applies to the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element need?",
+          "a": "The Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element?",
+          "a": "The replacement seal kits listed for the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element typically used?",
+          "a": "The Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element is used for: High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. It is the vent-to-Open Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: function vent-to-Open Unbalanced Poppet Logic Element here against pilot-to-Close Unbalanced Poppet Logic Element on the other; capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element in stock in Dubai?",
+          "a": "Yes, we hold the Sun LODA8 to LOKA8 vent-open unbalanced, pilot from port 1 (T-8A) logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vent-open-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element used for?",
+          "a": "The Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element is a spring-closed, unbalanced poppet logic element that takes its pilot oil from its own work port through an internal orifice. High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element cover?",
+          "a": "The Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element is built in 5 versions: LODD: series 1, T-11A cavity, 25 gpm (95 L/min); LOFD: series 2, T-2A cavity, 50 gpm (200 L/min). LOHD: series 3, T-17A cavity, 100 gpm (380 L/min); LOJD: series 4, T-19A cavity, 200 gpm (760 L/min); LOKD: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element have?",
+          "a": "The Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1 Maximum leakage: 10 drops/min. (0,7 cc/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element?",
+          "a": "Control: X — Not Adjustable, L — Stroke Adjustment Check cracking pressure: D — 50 psi (3,5 bar) Seal material: N — Buna-N, V — Viton, E — EPDM These options apply to the Sun LODD to LOKD vent-open unbalanced. Pilot from port 1 or 2 logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element?",
+          "a": "It opens quickly when vented; closing time depends on flow and pressure drop and is hard to predict. Pilot-source options: port 1, port 2, or either through an internal shuttle. A positive seal separates port 2 from the pilot area. This applies to the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element need?",
+          "a": "The Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element?",
+          "a": "The replacement seal kits listed for the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element are series 1: Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, EPDM: 990202014, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element typically used?",
+          "a": "The Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element is used for: High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. It is the vent-to-Open Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: function vent-to-Open Unbalanced Poppet Logic Element here against pilot-to-Close Unbalanced Poppet Logic Element on the other; capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Sun LODD to LOKD vent-open unbalanced, pilot from port 1 or 2 logic element and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vent-open-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2-lo-d8",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element used for?",
+          "a": "The Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element is a spring-closed, unbalanced poppet logic element that takes its pilot oil from its own work port through an internal orifice. High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element cover?",
+          "a": "The Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element is built in 5 versions: LODD8: series 1, T-11A cavity, 25 gpm (95 L/min); LOFD8: series 2, T-2A cavity, 50 gpm (200 L/min). LOHD8: series 3, T-17A cavity, 100 gpm (380 L/min); LOJD8: series 4, T-19A cavity, 200 gpm (760 L/min); LOKD8: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element have?",
+          "a": "The Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1"
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element?",
+          "a": "Check cracking pressure: D — 50 psi (3,5 bar) Seal material: N — Buna-N, V — Viton, E — EPDM Material / coating: /AP — Stainless Steel, Passivated These options apply to the Sun LODD8 to LOKD8 vent-open unbalanced. Pilot from port 1 or 2 (T-8A) logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element?",
+          "a": "It opens quickly when vented; closing time depends on flow and pressure drop and is hard to predict. Pilot-source options: port 1, port 2, or either through an internal shuttle. A positive seal separates port 2 from the pilot area. This applies to the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element need?",
+          "a": "The Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element?",
+          "a": "The replacement seal kits listed for the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element are series 1: Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, EPDM: 990202014, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element typically used?",
+          "a": "The Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element is used for: High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. It is the vent-to-Open Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: function vent-to-Open Unbalanced Poppet Logic Element here against pilot-to-Close Unbalanced Poppet Logic Element on the other; capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element in stock in Dubai?",
+          "a": "Yes, we carry the Sun LODD8 to LOKD8 vent-open unbalanced, pilot from port 1 or 2 (T-8A) logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vent-open-closed-unbalanced-poppet-logic-element-pilot-source-port-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element used for?",
+          "a": "The Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element is a spring-closed, unbalanced poppet logic element that takes its pilot oil from its own work port through an internal orifice. High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element cover?",
+          "a": "The Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element is built in 5 versions: LODB: series 1, T-11A cavity, 25 gpm (95 L/min); LOFB: series 2, T-2A cavity, 50 gpm (200 L/min). LOHB: series 3, T-17A cavity, 100 gpm (380 L/min); LOJB: series 4, T-19A cavity, 200 gpm (760 L/min); LOKB: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element have?",
+          "a": "The Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1 Maximum leakage: 10 drops/min. (0,7 cc/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element?",
+          "a": "Control: X — Not Adjustable, L — Stroke Adjustment Check cracking pressure: D — 50 psi (3,5 bar) Seal material: N — Buna-N, V — Viton These options apply to the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element. A size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element?",
+          "a": "It opens quickly when vented; closing time depends on flow and pressure drop and is hard to predict. Pilot-source options: port 1, port 2, or either through an internal shuttle. A positive seal separates port 2 from the pilot area. This applies to the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element need?",
+          "a": "The Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element?",
+          "a": "The replacement seal kits listed for the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, EPDM: 990017014, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element typically used?",
+          "a": "The Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element is used for: High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. It is the vent-to-Open Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: function vent-to-Open Unbalanced Poppet Logic Element here against pilot-to-Close Unbalanced Poppet Logic Element on the other; capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Sun LODB to LOKB vent-open unbalanced, pilot from port 2 logic element and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vent-open-closed-unbalanced-poppet-logic-element-pilot-source-port-2-lo-b8",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element used for?",
+          "a": "The Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element is a spring-closed, unbalanced poppet logic element that takes its pilot oil from its own work port through an internal orifice. High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. See the [logic element cartridges](/c/logic-element-cartridges)."
+        },
+        {
+          "slot": "B",
+          "q": "Which model codes does the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element cover?",
+          "a": "The Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element is built in 5 versions: LODB8: series 1, T-11A cavity, 25 gpm (95 L/min); LOFB8: series 2, T-2A cavity, 50 gpm (200 L/min). LOHB8: series 3, T-17A cavity, 100 gpm (380 L/min); LOJB8: series 4, T-19A cavity, 200 gpm (760 L/min); LOKB8: series 4, T-19AU cavity, 300 gpm (1100 L/min). The model code gives the series and function directly."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element have?",
+          "a": "The Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element is rated 25 gpm to 300 gpm (95 L/min to 1100 L/min) in series 1 to 4, with cavity T-11A, T-2A, T-17A, T-19A, T-19AU. Sun builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, and a larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element rated for?",
+          "a": "The maximum operating pressure of the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element is 5000 psi (350 bar). Pilot area ratios (pilot to port 1 / port 2): 1.8:1 / 2.25:1"
+        },
+        {
+          "slot": "F",
+          "q": "Which options and seals can I choose on the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element?",
+          "a": "Setting range: D — 50 psi (3,5 bar) Seal material: N — Buna-N, V — Viton These options apply to the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element; a size may add or drop a choice."
+        },
+        {
+          "slot": "G",
+          "q": "How should I read the selection notes for the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element?",
+          "a": "It opens quickly when vented; closing time depends on flow and pressure drop and is hard to predict. Pilot-source options: port 1, port 2, or either through an internal shuttle. A positive seal separates port 2 from the pilot area. This applies to the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element."
+        },
+        {
+          "slot": "H",
+          "q": "What hex size and installation torque does the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element need?",
+          "a": "The Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element has a valve hex of 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) and an installation torque of 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Use a torque wrench and the right cavity, because over-torque distorts the cartridge."
+        },
+        {
+          "slot": "I",
+          "q": "Which seal kits fit the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element?",
+          "a": "The replacement seal kits listed for the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element are series 1: Buna: 990011007, Polyurethane: 990011002, Viton: 990011006. Series 2: Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3: Buna: 990017007, Polyurethane: 990017002, Viton: 990017006; series 4: Buna: 990019007, Polyurethane: 990019002, Viton: 990019006. Quote the model code and the seal material (N Buna-N, V Viton, E EPDM) when you order."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element typically used?",
+          "a": "The Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element is used for: High-flow on/off functions vented by a small 2-way pilot valve — no separate pilot supply needed. It is the vent-to-Open Unbalanced Poppet Logic Element in cartridge form."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element compare with the Sun LOHDL version?",
+          "a": "The Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element differs from the [Sun LOHDL pilot-to-close unbalanced logic element](/p/sun-hydraulics-lohdl-pilot-close-closed-unbalanced-poppet-logic-element-pilot-source-port-1-or-2). In detail: function vent-to-Open Unbalanced Poppet Logic Element here against pilot-to-Close Unbalanced Poppet Logic Element on the other; capacity 25 gpm to 300 gpm (95 L/min to 1100 L/min) here against 100 gpm (380 L/min) on the other. Both share the same family of cavities by frame size."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus supply the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element direct from the maker?",
+          "a": "Indus Hydraulics is an authorised Sun Hydraulics distributor in the UAE and supplies the range direct from Sun Hydraulics. For the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element, quote the base model and its configuration letters, or describe the duty, and we confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element in stock in Dubai?",
+          "a": "Yes, we carry the Sun LODB8 to LOKB8 vent-open unbalanced, pilot from port 2 (T-8A) logic element in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

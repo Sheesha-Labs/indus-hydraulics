@@ -5,6 +5,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 import * as RadioGroup from '@radix-ui/react-radio-group'
 import { buttonVariants } from '@indus/ui'
 import { requestCallback } from '../../actions/callback'
+import CountryPicker, { countryPickerOpen } from './CountryPicker'
 import { deskStatus, dubaiNow, parseOpeningHours } from '../../lib/opening-hours'
 import { trackCallback } from '../../lib/callback/analytics'
 import {
@@ -14,6 +15,7 @@ import {
   CALLBACK_STORAGE,
   DEFAULT_CALLBACK_CATEGORY,
   DESCRIPTION_MAX,
+  GCC_ORDER,
   cleanPhoneInput,
   displayPhone,
   firstName,
@@ -78,6 +80,13 @@ function useCallbackForm(props: Props) {
     [],
   )
   const ordered = useMemo(() => orderCountries(countries, defaultIso), [countries, defaultIso])
+  // The leading "suggested" rows — the default and the GCC — before the A–Z list.
+  const topCount = useMemo(() => {
+    const top = new Set<string>([defaultIso, ...GCC_ORDER])
+    let n = 0
+    while (n < ordered.length && top.has(ordered[n]![0])) n++
+    return n
+  }, [ordered, defaultIso])
 
   const [category, setCategory] = useState<CallbackCategory>(DEFAULT_CALLBACK_CATEGORY)
   const [description, setDescription] = useState('')
@@ -189,6 +198,7 @@ function useCallbackForm(props: Props) {
 
   return {
     ordered,
+    topCount,
     category,
     selectCategory,
     description,
@@ -273,57 +283,49 @@ function Honeypot() {
 
 function PhoneGroup({
   form,
-  dialOnly,
   height,
   id,
   describedBy,
   trailing,
 }: {
   form: Form
-  dialOnly: boolean
   height: 'h-11' | 'h-12'
   id: string
   describedBy?: string
   trailing?: ReactNode
 }) {
   const invalid = !!form.errors.phone
+  // The outer wrapper positions the country list; the inner group clips its
+  // own children to the rounded corners but is not positioned, so it does
+  // not clip the list.
   return (
-    <div
-      className={`flex ${height} overflow-hidden rounded-md border bg-ih-surface transition-[border-color,box-shadow] duration-150 focus-within:border-ih-accent focus-within:ring-[3px] focus-within:ring-ih-accent-soft ${fieldState(invalid)}`}
-    >
-      <div className="relative flex shrink-0">
-        <select
-          aria-label="Country dialling code"
+    <div className="relative">
+      <div
+        className={`flex ${height} overflow-hidden rounded-md border bg-ih-surface transition-[border-color,box-shadow] duration-150 focus-within:border-ih-accent focus-within:ring-[3px] focus-within:ring-ih-accent-soft ${fieldState(invalid)}`}
+      >
+        <CountryPicker
+          countries={form.ordered}
+          topCount={form.topCount}
           value={form.iso}
           disabled={form.busy}
-          onChange={(e) => form.setIso(e.target.value)}
-          className="h-full appearance-none border-0 border-r border-ih-border bg-ih-surface-2 pl-3 pr-7 font-mono text-[13px] text-ih-ink outline-none max-[767px]:text-[16px]"
-        >
-          {form.ordered.map(([iso, dial]) => (
-            <option key={iso} value={iso}>
-              {dialOnly ? dial : `${iso} ${dial}`}
-            </option>
-          ))}
-        </select>
-        <svg className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-ih-muted" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
-          <path fill="currentColor" d="M0 0h10L5 6z" />
-        </svg>
+          onChange={form.setIso}
+        />
+        <input
+          id={id}
+          name="phone"
+          type="tel"
+          inputMode="tel"
+          autoComplete="tel-national"
+          placeholder="52 123 4567"
+          value={form.phone}
+          readOnly={form.busy}
+          aria-invalid={invalid || undefined}
+          aria-describedby={describedBy}
+          onChange={(e) => form.setPhone(e.target.value)}
+          className="min-w-0 flex-1 border-0 bg-transparent px-[14px] text-[14px] tabular-nums text-ih-ink outline-none placeholder:text-ih-muted max-[767px]:text-[16px]"
+        />
+        {trailing}
       </div>
-      <input
-        id={id}
-        name="phone"
-        type="tel"
-        inputMode="tel"
-        autoComplete="tel-national"
-        placeholder="52 123 4567"
-        value={form.phone}
-        readOnly={form.busy}
-        aria-invalid={invalid || undefined}
-        aria-describedby={describedBy}
-        onChange={(e) => form.setPhone(e.target.value)}
-        className="min-w-0 flex-1 border-0 bg-transparent px-[14px] font-mono text-[14px] text-ih-ink outline-none placeholder:text-ih-muted max-[767px]:text-[16px]"
-      />
-      {trailing}
     </div>
   )
 }
@@ -476,6 +478,8 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
             }}
             onEscapeKeyDown={(e) => {
               e.preventDefault()
+              // An open country list takes the Escape; the prompt stays.
+              if (countryPickerOpen()) return
               exit.requestClose('esc')
             }}
             onPointerDownOutside={(e) => {
@@ -643,7 +647,6 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
                   </label>
                   <PhoneGroup
                     form={form}
-                    dialOnly={false}
                     height="h-11"
                     id={ids.phone}
                     describedBy={form.errors.phone ? `${ids.err}-phone` : undefined}
@@ -818,7 +821,6 @@ function CornerCard({ form, exit, deskPhone, deskEmail, openingHours }: SurfaceP
           </div>
           <PhoneGroup
             form={form}
-            dialOnly
             height="h-11"
             id={`${errId}-phone`}
             describedBy={anyError ? errId : undefined}
@@ -954,6 +956,8 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
             }}
             onEscapeKeyDown={(e) => {
               e.preventDefault()
+              // An open country list takes the Escape; the prompt stays.
+              if (countryPickerOpen()) return
               exit.requestClose('esc')
             }}
             onPointerDownOutside={(e) => {
@@ -1055,8 +1059,7 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
                 <div className="mt-2.5">
                   <PhoneGroup
                     form={form}
-                    dialOnly
-                    height="h-12"
+                            height="h-12"
                     id={ids.phone}
                     describedBy={form.errors.phone ? `${ids.err}-phone` : undefined}
                   />

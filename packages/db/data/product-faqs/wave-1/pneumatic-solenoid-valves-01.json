@@ -1,0 +1,1270 @@
+{
+  "family": "pneumatic-solenoid-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions: 1 bar = 14.5038 psi, so 115 psi is about 8 bar, 120 psi about 8.3 bar, 125 psi about 8.6 bar and 150 psi about 10 bar. Temperature: deg C = (deg F - 32) / 1.8, so -10 deg F is about -23 deg C, 0 deg F about -18 deg C, +32 deg F is 0 deg C, +122 deg F is 50 deg C, +125 deg F about 52 deg C, +160 deg F about 71 deg C and +180 deg F about 82 deg C.",
+      "source": "NIST Special Publication 811 (unit conversion factors)"
+    },
+    {
+      "fact": "A solenoid valve of function 3/2 has 3 ports and 2 positions, 4/2 and 5/2 valves have 4 or 5 ports and 2 positions, and 5/3 valves have 3 positions. A single-solenoid spring-return valve goes back to its normal position when the coil is de-energised; a double-solenoid 2-position valve stays in the last position commanded. A closed-centre 3-position valve blocks all ports in the middle position and an exhaust-centre valve vents the cylinder ports.",
+      "source": "ISO 1219-1 (fluid power graphical symbols); Indus Hydraulics guide 'Solenoid valve functions explained: 3/2, 5/2 and 5/3 valves'"
+    },
+    {
+      "fact": "A solenoid coil is built for one supply type and voltage (for example 24 V DC or 120 V AC); fitting a coil of another voltage or type, or running it from the wrong supply, stops the valve switching or burns out the coil. Pneumatic components must be selected and installed so the system stays safe if the electrical or air supply fails.",
+      "source": "ISO 4414 (pneumatic fluid power, general rules and safety requirements for systems and their components)"
+    },
+    {
+      "fact": "NEMA 4 is an enclosure type for indoor or outdoor use that gives protection against windblown dust, rain, splashing water and hose-directed water; it is not an explosion-proof or hazardous-area rating.",
+      "source": "NEMA 250, Enclosures for Electrical Equipment (1000 Volts Maximum)"
+    },
+    {
+      "fact": "Cv is a flow coefficient: the higher the Cv, the more air a valve or manifold passes at a given pressure drop. Valve and manifold Cv should be compared with the Cv the cylinder circuit needs.",
+      "source": "ANSI/ISA-75.01.01 flow coefficient definition; Indus Hydraulics guide 'Sizing pneumatic valves: Cv, Kv, sonic conductance'"
+    },
+    {
+      "fact": "A valve manifold is a common base that carries several valves on one supply and exhaust passage, with each station tapped for the cylinder ports; unused stations are closed with a blanking plate.",
+      "source": "ARO Ingersoll Rand pneumatic valve manifold catalogue sections; ISO 5599 / ISO 15407 family of valve mounting interfaces"
+    },
+    {
+      "fact": "Sibling ARO listings on indushydraulics.com: ARO MaxAir manifolds come in 1/4, 3/8 and 1/2 inch port sizes (2 to 10 stations); ARO Alpha thin manifolds have 1/4 inch ports; ARO E Series manual valves have 1/4 inch ports; ARO K Series valves are 3/8 and 1/2 inch; ARO Sierra 15 body-ported valves have 5/16 inch ports and base-mounted valves 1/8 inch ports; ARO Sierra 18 valves are 18 mm and mount on Sierra manifolds; ARO Sierra high-profile manifolds are listed as SMH51N (2, 4, 6, 8 stations) and SMH81N (2, 4, 8 stations) with 1/8 inch valve ports; ARO MaxAir valves run from 1/4 to 1/2 inch; ARO CAT valves are 1/8 inch (CAT33, CAT44, miniature) or 1/4 inch (high flow).",
+      "source": "Indus Hydraulics product listings for the ARO ranges named, compiled from the ARO catalogue"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aro-200-series-circuitry-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO 200 Series circuitry valves used for?",
+          "a": "ARO 200 Series circuitry valves are small 3-way, 2-position, normally closed spool valves operated by a fingertip lever, button, roller, plunger or toggle, used on air cylinders, gates and slides. This listing carries 13 part numbers in 1/8\" and 5/32\" port sizes with a die-cast zinc inline body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an ARO 200 Series part number such as 203-2-C or 224-C?",
+          "a": "In the rows on this listing the three digits name the actuator: 201 is a fingertip valve, 202 and 203 are roller levers, 209 a pin plunger, 212 a ball roller, 223 a toggle and 224 a panel button. A -2-C ending is the 5/32\" port version (201-2-C, 224-2-C) and a plain -C ending is 1/8\" (201-C, 224-C)."
+        },
+        {
+          "slot": "D",
+          "q": "Which actuator styles do ARO 200 Series valves come with?",
+          "a": "The listing covers fingertip (201-2-C), panel button (224-2-C), roller lever (203-2-C, 202-C), pin plunger (209-2-C), ball roller (212-2-C) and toggle (223-C) actuators. All are spring-return, so the valve goes back to its normal position when you release the operator."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are available on ARO 200 Series circuitry valves?",
+          "a": "ARO 200 Series valves on this listing have 5/32\" ports (six part numbers ending -2-C, such as 201-2-C) or 1/8\" ports (seven part numbers such as 202-C and 212-C). Pick the port to suit your tubing or fitting, and quote the full part number when you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an ARO 200 Series circuitry valve take?",
+          "a": "The listing gives an operating temperature of +32 deg F to +160 deg F, which is 0 deg C to about 71 deg C, and the 1/8\" rows (201-C, 209-C, 224-C) are described at 150 psi, about 10 bar. These are not vacuum-operable valves, so use them on positive air pressure only."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO 200 Series valve body made from and what media does it handle?",
+          "a": "The ARO 200 Series body is die-cast zinc and the valve is a spool type, intended for compressed air on air cylinders, gates and slides. The listing states it is not vacuum operable. For anything other than clean compressed air, send us the medium and we confirm with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO 200 Series circuitry valves?",
+          "a": "This listing holds no datasheet or certificate file for the 200 Series, so ask for the ARO catalogue page or a certificate of conformity in your enquiry and we request it with the order. Quote the exact part number, for example 203-2-C, so the right document is matched."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and tubing connect to an ARO 200 Series circuitry valve?",
+          "a": "A 5/32\" or 1/8\" ported ARO 200 Series valve takes a matching small-bore fitting and tube, so pick the thread to suit the port. Our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf and [pneumatic tubing](/c/pneumatic-tubing) shelf list the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How should an ARO 200 Series circuitry valve be mounted and maintained?",
+          "a": "Mount the valve rigidly so the actuator, roller or plunger lines up with the cam or limit stop and is not overtravelled. Keep the air supply clean and dry, and replace the valve if the operator sticks or leaks at the exhaust, since these small spool valves are not normally repaired."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between ARO 200 Series and ARO 50 Series valves?",
+          "a": "ARO 200 Series valves are 3-way, 2-position die-cast zinc valves with 1/8\" or 5/32\" ports, while the [ARO 50 Series](/p/aro-50-series-pneumatic-valves) is an aluminium side-ported manual valve in both 3-way and 4-way versions with 1/8\" ports. Choose 200 Series for a compact limit or signal valve and 50 Series when you need a 4-way."
+        },
+        {
+          "slot": "L",
+          "q": "Where do ARO 200 Series circuitry valves come from and how are they exported?",
+          "a": "The listing records the United States as country of origin for the ARO 200 Series, and we export them from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. Customs headings for valves fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO 200 Series circuitry valves in Dubai?",
+          "a": "Yes. We keep ARO 200 Series circuitry valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aro-50-series-pneumatic-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO 50 Series pneumatic valves used for?",
+          "a": "ARO 50 Series valves are manual 3-way and 4-way, 2-position spool valves with 1/8\" NPT ports, operated by lever, button, cam stem or roller. This listing carries 11 part numbers, six 3-way and five 4-way, with an aluminium side-ported body and steel spool."
+        },
+        {
+          "slot": "B",
+          "q": "What do the numbers in ARO 50 Series part numbers like 5030-06 and 5040-01 mean?",
+          "a": "In these rows 5030 is the 3-way valve and 5040 the 4-way valve, and the ending sets the actuator: -01 lever with spring return, -02 button, -05 roller cam, -06 cam stem and -10 lever with manual return. So 5040-01 is a 4-way lever valve and 5030-06 a 3-way cam stem valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which ARO 50 Series valve do I need, 3-way or 4-way?",
+          "a": "Use a 3-way valve (5030 numbers) to fill and exhaust a single-acting cylinder or signal line, and a 4-way valve (5040 numbers) to drive a double-acting cylinder from both ends. The listing has six 3-way part numbers such as 5030-01 and five 4-way part numbers such as 5040-02."
+        },
+        {
+          "slot": "D",
+          "q": "Which actuators are offered on ARO 50 Series valves?",
+          "a": "The rows list lever with spring return (5030-01, 5040-01), button with spring return (5030-02, 5040-02), roller cam (5030-05, 5040-05), cam stem (5030-06, 5040-06), lever with manual return (5030-10, 5040-10) and a manual-return button (5030-12). Choose spring return for momentary action."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature are ARO 50 Series valves rated for?",
+          "a": "Several 50 Series rows are described at 150 psi, about 10 bar, and the listing gives -10 deg F to +180 deg F, which is about -23 deg C to 82 deg C. They are not vacuum-operable and are built for lubricated air, so confirm the rating of your exact part number with the maker if you run near the limit."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the ARO 50 Series valve made from?",
+          "a": "The ARO 50 Series has an aluminium body, a steel spool and Buna N (nitrile) seals according to the listing. Nitrile suits compressed air with oil mist, but ask us before using it with synthetic lubricants or aggressive media, and note the listing says lubrication is required."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with ARO 50 Series pneumatic valves?",
+          "a": "This listing holds no datasheet or certificate for the 50 Series, so request the ARO catalogue page or a certificate of conformity when you enquire and we obtain it with the order. Quote the part number, for example 5030-06, so the right sheet is matched."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to an ARO 50 Series valve?",
+          "a": "ARO 50 Series valves have 1/8\" NPT ports, so use 1/8\" NPT fittings and tube, or hose, to the cylinder. See our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for thread adapters and our [pneumatic tubing](/c/pneumatic-tubing) for tube."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after an ARO 50 Series valve?",
+          "a": "Plumb supply to the inlet and cylinder lines to the working ports, fit the actuator where the operator can reach it, and keep the air lubricated because the listing says lubrication is required. If the valve sticks, check the lubricator is delivering oil rather than forcing the actuator."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO 50 Series differ from the ARO E Series manual valves?",
+          "a": "The ARO 50 Series is a 1/8\" lever, button, cam or roller manual valve, while the [ARO E Series](/p/aro-e-series-pneumatic-valves) is a 1/4\" range with foot pedal, treadle and panel-mount versions. Use the 50 Series for a small hand or cam valve and the E Series for a foot-operated valve."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO 50 Series made and how is it shipped?",
+          "a": "The listing records the United States as country of origin. We ship ARO 50 Series valves from Dubai to the GCC, Africa, Asia and other markets, with the commercial invoice and packing list; hand-operated valves normally clear under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO 50 Series pneumatic valves in Dubai?",
+          "a": "Yes, ARO 50 Series pneumatic valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aro-air-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the ARO air control valves listing?",
+          "a": "This listing holds five ARO valves: CAT33S-120-A (120 V AC, 1/8\"), A212SD-120-A (120 V AC, 1/4\"), A211SD-000-N (no coil, 1/8\"), and two manual MaxAir valves, M211LS and M212LS-10. It groups solenoid parts from ARO's CAT and Alpha ranges with MaxAir manual valves."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO part numbers such as CAT33S-120-A and A211SD-000-N?",
+          "a": "In these rows the ending is the coil: -120-A is a 120 V AC coil and -000-N means the valve is supplied without a coil. The letters before it show the range, with CAT33S from the CAT range and A211SD from the Alpha range, and the digits carry the port size, 1/8\" for both of these."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes do the ARO air control valves have?",
+          "a": "CAT33S-120-A and A211SD-000-N are 1/8\" port valves and A212SD-120-A is 1/4\". The two MaxAir manual valves M211LS and M212LS-10 are listed without a stated port size in the table, so quote the part number and we confirm the thread."
+        },
+        {
+          "slot": "D",
+          "q": "Should I pick a CAT, Alpha or MaxAir valve from this listing?",
+          "a": "Choose by function and size: CAT33S-120-A is a compact 3-way poppet solenoid valve, A212SD-120-A and A211SD-000-N come from the Alpha range, and M212LS-10 is a four-way manual valve with a twist operator. Our [CAT](/p/aro-cat-series-valves-1-8-port-size) and [Alpha](/p/aro-alpha-series-pneumatic-valves) pages list each range in full."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do these ARO air control valves handle?",
+          "a": "Rows on this listing quote 0 to 150 psi for CAT33S-120-A and 50 to 150 psi for A211SD-000-N, about 10 bar maximum, and the CAT spec gives 0 deg F to +122 deg F, about -18 deg C to 50 deg C. Check the row for the part you order because ranges differ between the ranges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO CAT33S-120-A valve made of?",
+          "a": "The CAT-range specification on this listing gives an aluminium body, a normally closed poppet valve and a NEMA 4 coil enclosure with DIN connector. It states the valve is not vacuum operable, so use it on positive compressed air only."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO air control valves come with certificates?",
+          "a": "This listing holds no certificate or datasheet file. State what you need, such as a certificate of conformity or an ARO catalogue sheet for CAT33S-120-A, and we request it from the maker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with an ARO solenoid valve such as CAT33S-120-A?",
+          "a": "You need a coil that matches your supply (CAT33S-120-A includes a 120 V AC coil, A211SD-000-N does not), a DIN-style connector, and a fitting and tube for the 1/8\" port. Our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf has the fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How should I wire and test a CAT33S-120-A or A212SD-120-A coil?",
+          "a": "Check that the supply is 120 V AC before connecting, because the coil is built for that voltage, and use the manual override to confirm the valve shifts before powering it. A valve ordered without a coil, like A211SD-000-N, needs a coil of the correct voltage fitted first."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between ARO CAT and ARO Alpha valves on this listing?",
+          "a": "The CAT33S-120-A is a small direct-acting poppet valve in a 1/8\" body, while the Alpha A212SD-120-A and A211SD-000-N are spool valves in the [ARO Alpha Series](/p/aro-alpha-series-pneumatic-valves) with a base-mount style body. Match the port size and coil voltage in the part number to your circuit."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of ARO air control valves?",
+          "a": "The ARO air control valves listing is recorded with the United States as country of origin. We export from Dubai to the GCC, Africa, Asia and other markets with commercial invoice and packing list, and confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO air control valves in Dubai?",
+          "a": "Yes. ARO air control valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-alpha-series-pneumatic-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO Alpha Series pneumatic valves used for?",
+          "a": "ARO Alpha Series valves are base-mounted solenoid spool valves that switch compressed air to double-acting cylinders, with a zinc body, DIN connector and NEMA 4 coil enclosure. This listing carries 32 part numbers in 1/8\", 1/4\" and 3/8\" sizes, with 12 V DC, 24 V DC and 120 V AC coils."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an ARO Alpha part number such as A212SD-024-D or A213SS-024-L?",
+          "a": "In the rows the ending is the coil: -012-D is 12 V DC, -024-D and -024-L are 24 V DC, -120-A is 120 V AC and -000-N is no coil. The third digit is the port size, so A211 is 1/8\", A212 is 1/4\" and A213 is 3/8\"; the SS or SD letters after it are the operator version."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes and coil voltages are offered on ARO Alpha Series valves?",
+          "a": "The Alpha table has 1/8\" valves (A211), 1/4\" valves (A212, A222, A249, A312, A712) and 3/8\" valves (A213). Coils are 12 V DC (5 part numbers), 24 V DC (12), 120 V AC (9) and valve-only no-coil versions (6), so quote the voltage with the size."
+        },
+        {
+          "slot": "D",
+          "q": "What does the -024-L ending mean on an ARO Alpha valve compared with -024-D?",
+          "a": "Both endings are 24 V DC coils in the rows, so the difference is not voltage. The -024-L rows (A213SS-024-L, A212SD-024-L) are described at 0 to 115 psi, while the -024-D rows (A213SD-024-D) are 50 to 150 psi, so confirm the pressure range you need before choosing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does an ARO Alpha Series valve have?",
+          "a": "Row text on this listing shows three ranges depending on the part number: 0 to 115 psi, 0 to 150 psi and 50 to 150 psi, which is about 8 to 10 bar at the top. The ambient range is 0 deg F to +180 deg F, about -18 deg C to 82 deg C, so check your exact part number's row."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO Alpha Series valves made from and do they need lubrication?",
+          "a": "The Alpha listing gives a zinc body, an aluminium spool and internal pilot with a NEMA 4 coil enclosure, and says lubrication is not required. They suit clean compressed air; ask us if you plan to run synthetic oils or an aggressive medium."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO Alpha Series valves?",
+          "a": "This listing holds no datasheet or certificate file for the ARO Alpha Series, so name the document you need, for example a certificate of conformity or the ARO catalogue page for A212SD-024-D, and we request it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold and fittings go with an ARO Alpha Series valve?",
+          "a": "Alpha valves bolt to ARO Alpha manifolds, such as the [ARO Alpha Series thin manifolds](/p/aro-alpha-series-thin-manifolds) with 1/4\" ports, and use fittings that match the base ports. Our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf lists thread and tube fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I check an ARO Alpha Series valve is wired and shifting correctly?",
+          "a": "Confirm the supply matches the coil on the part number, press the non-locking manual override to see the valve shift, then apply power. A no-coil valve such as A212SS-000-N needs a coil of the right voltage fitted before it will switch."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between ARO Alpha and ARO MaxAir Series valves?",
+          "a": "The Alpha range uses base-mount zinc bodies with 1/8\" to 3/8\" sizes and lubrication-not-required service, while the [ARO MaxAir Series](/p/aro-maxair-series-pneumatic-valves) is an aluminium range up to 1/2\" with its own manifolds. Choose by the port size and manifold you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO Alpha Series valves made and shipped from?",
+          "a": "The listing records the United States as the country of origin for ARO Alpha Series valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO Alpha Series valves in Dubai?",
+          "a": "Yes, we stock ARO Alpha Series valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "aro-alpha-series-thin-manifolds",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO Alpha Series thin manifold used for?",
+          "a": "The ARO Alpha Series thin manifold is a side-ported base that carries 2 to 10 Alpha solenoid valves on one air supply, with 1/4\" ports. This listing has five part numbers, 118605-2 to 118605-10, supplied with the manifold, plugs and seals."
+        },
+        {
+          "slot": "B",
+          "q": "What does the number after 118605 mean on ARO Alpha manifolds?",
+          "a": "On this listing the part number ends in the station count: 118605-2 is a 2-station manifold, 118605-4 is 4 stations, 118605-6 is 6, 118605-8 is 8 and 118605-10 is 10. Every one has 1/4\" valve ports."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations does an ARO Alpha thin manifold come with?",
+          "a": "The listing offers 2, 4, 6, 8 and 10 stations (118605-2, -4, -6, -8 and -10). Pick the count from the number of valves you need now, and note that unused stations are normally closed with plugs or blanking plates."
+        },
+        {
+          "slot": "D",
+          "q": "What port size and flow does the ARO 118605 manifold have?",
+          "a": "All five part numbers have a 1/4\" port size and the listing quotes a Cv of 1.2 for the manifold. Our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) explains how to compare that Cv with what your cylinder needs."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can an ARO Alpha thin manifold handle?",
+          "a": "The listing gives a temperature of 180 deg F, which is about 82 deg C. The listing does not hold a separate pressure rating for the manifold, so we confirm the working pressure for 118605 with the maker when you quote."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO Alpha thin manifold made of?",
+          "a": "The listing does not state the manifold body material, only that the kit includes the manifold, plugs and seals and is side ported. If your application needs a specific material or media, send it with your enquiry and we confirm with ARO."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the ARO Alpha thin manifold?",
+          "a": "No certificate or datasheet is attached to the the ARO Alpha thin manifold listing. Tell us in the enquiry what your file requires for 118605-4, such as a conformity certificate, and we obtain it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit the ARO Alpha Series thin manifold?",
+          "a": "The manifold is made for the [ARO Alpha Series valves](/p/aro-alpha-series-pneumatic-valves) (compatible series Alpha, per the listing). Match valve and manifold by series, and use fittings for the 1/4\" ports."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and seal an ARO Alpha thin manifold?",
+          "a": "Fit the supplied seals between each valve and the manifold face, close unused stations with the plugs, tighten the valve screws evenly and pressure-test before commissioning. Re-use of old seals is not recommended after the manifold has been taken apart."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the ARO Alpha thin manifold and the MaxAir manifolds?",
+          "a": "The Alpha thin manifold has a single 1/4\" port size in 2 to 10 stations, whereas the [ARO MaxAir Series manifolds](/p/aro-maxair-series-manifolds) come in 1/4\", 3/8\" and 1/2\" port sizes. Pick the one that matches your valve series."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO Alpha thin manifold made and exported from?",
+          "a": "The listing records the United States as the country of origin for the ARO Alpha thin manifold, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO Alpha Series thin manifolds in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps ARO Alpha Series thin manifolds in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "aro-cat-series-high-flow-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO CAT Series high flow solenoid valves used for?",
+          "a": "ARO CAT Series high flow valves are direct-acting solenoid valves with 1/4\" pipe ports, with a NEMA 4 coil enclosure and DIN connector, for switching compressed air. This listing carries 11 part numbers in CAT66P, CAT77S and CAT88P versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO CAT part numbers such as CAT77S-024-D or CAT66P-024-L?",
+          "a": "In the rows CAT66, CAT77 and CAT88 name the valve version, and the ending is the coil: -012-D is 12 V DC, -024-D and -024-L are 24 V DC, -120-A is 120 V AC and -000-N has no coil. All 11 part numbers have 1/4\" ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages are available on ARO CAT high flow valves?",
+          "a": "The listing has 12 V DC (CAT66P-012-D, CAT77S-012-D, CAT88P-012-D), 24 V DC (five part numbers incl. CAT66P-024-L), 120 V AC (CAT77S-120-A, CAT88P-120-A) and a no-coil version, CAT66P-000-N."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between CAT66P, CAT77S and CAT88P valves?",
+          "a": "All three are 1/4\" ARO CAT Series valves with the same coil options. Rows for CAT77S and CAT88P quote 7 cfm maximum flow, while CAT66P rows quote 0 to 150 psi, so check the row of the exact part number for its flow and pressure before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and power does an ARO CAT high flow valve have?",
+          "a": "Rows quote 0 to 150 psi, about 10 bar, and the listing gives 15 W coil power with an ambient range of 0 deg F to +122 deg F, which is about -18 deg C to 50 deg C. Confirm the figure for your exact part number if you operate close to a limit."
+        },
+        {
+          "slot": "F",
+          "q": "What media can ARO CAT Series high flow valves be used on?",
+          "a": "The CAT Series valves are specified for compressed air, with direct (non-pilot) shifting and a NEMA 4 coil enclosure. The listing does not hold seal materials for this range, so ask us before using other gases or liquids."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates come with ARO CAT Series high flow valves?",
+          "a": "We hold no datasheet or certificate for the ARO CAT high flow valves on this page. Ask for the ARO catalogue sheet or a certificate of conformity for CAT77S-024-D in your enquiry and we request it from ARO when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and manifolds connect to an ARO CAT Series valve?",
+          "a": "CAT valves have 1/4\" pipe ports, so use 1/4\" fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. For the smaller 1/8\" CAT valves see the [ARO CAT Series 1/8\" valves](/p/aro-cat-series-valves-1-8-port-size)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and service an ARO CAT Series solenoid valve?",
+          "a": "Match the coil voltage in the part number to your supply, connect through the DIN connector and keep the NEMA 4 seal in place. If a valve is slow to shift, check supply pressure and the coil voltage before replacing the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How do ARO CAT high flow valves compare with the CAT 1/8\" and miniature valves?",
+          "a": "The high flow listing is 1/4\" ported, the [CAT 1/8\" listing](/p/aro-cat-series-valves-1-8-port-size) is 1/8\" and the [miniature 3 and 4-way valves](/p/aro-cat-series-miniature-3-4-way-valves) are 1/8\" with lead-wire coils. Choose the port size that matches your tube."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO CAT high flow valves made and exported from?",
+          "a": "The listing records the United States as the country of origin for ARO CAT Series high flow valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO CAT Series high flow valves in Dubai?",
+          "a": "Yes. We keep ARO CAT Series high flow valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aro-cat-series-miniature-3-4-way-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO CAT Series miniature 3 and 4-way valves used for?",
+          "a": "ARO CAT Series miniature valves are compact direct-acting solenoid poppet valves with 1/8\" ports, with a lead-wire coil, for switching small air cylinders. This listing carries 14 part numbers (P211, P221, P251 and P261 families) in 12 V DC, 24 V DC and 120 V AC."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO CAT miniature part numbers such as P251SS-012-D or P211SC-024-D?",
+          "a": "In the rows the ending is the coil: -012-D is 12 V DC, -024-D is 24 V DC and -120-A is 120 V AC. P251SS-012-D is described as a 3-way, 2-position valve with a 1/8\" port, and the SS or SC letters set the operator version."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages come on ARO CAT miniature valves?",
+          "a": "The listing has 12 V DC (3 part numbers), 24 V DC (5) and 120 V AC (6), all with 1/8\" ports. Pick the coil voltage from your control supply; there is no no-coil version on this listing."
+        },
+        {
+          "slot": "D",
+          "q": "Is there a 3-way and a 4-way version in the ARO CAT miniature range?",
+          "a": "Yes, the range is sold as 3 and 4-way valves: P251SS-012-D is described as 3-way, 2-position, and the listing specification describes a 4-way, 2-position valve. Check the function of your part number before connecting, using the [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO CAT miniature valves have?",
+          "a": "Rows quote 0 to 120 psi, about 8.3 bar, and the listing gives an ambient range of +32 deg F to +125 deg F, which is 0 deg C to about 52 deg C. The coil uses 4.5 W according to the listing specification."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO CAT miniature valves made from?",
+          "a": "The listing specification gives an aluminium body, a stainless steel poppet and internal pilot construction for compressed air. Ask us if you want to use the valve with anything other than clean air."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO CAT miniature valves come with certificates?",
+          "a": "This listing holds no datasheet or certificate file for the ARO CAT miniature valves, so name the document you need, for example a certificate of conformity or the ARO catalogue page for P211SS-012-D, and we request it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an ARO CAT miniature 3 or 4-way valve?",
+          "a": "The valves have 1/8\" ports, so you need 1/8\" fittings and tubing, available on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and the lead-wire coil connects to your 12 V DC, 24 V DC or 120 V AC control circuit."
+        },
+        {
+          "slot": "I",
+          "q": "How should I wire an ARO CAT miniature valve with lead wires?",
+          "a": "Check the supply against the coil voltage in the part number, terminate the lead wires in a protected enclosure because there is no connector on these coils, and use the correct fuse. Test shifting at low pressure first."
+        },
+        {
+          "slot": "K",
+          "q": "How are ARO CAT miniature valves different from the ARO CAT 1/8\" valves?",
+          "a": "The miniature listing has lead-wire coils and 3 or 4-way options in P-series part numbers, while the [CAT 1/8\" listing](/p/aro-cat-series-valves-1-8-port-size) uses CAT33 and CAT44 numbers with DIN connectors. Both are 1/8\" ported."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO CAT miniature valves made and exported from?",
+          "a": "The listing records the United States as the country of origin for ARO CAT Series miniature valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO CAT miniature 3 and 4-way valves in Dubai?",
+          "a": "Yes, ARO CAT miniature 3 and 4-way valves is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aro-cat-series-valves-1-8-port-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO CAT Series 1/8\" port solenoid valves used for?",
+          "a": "ARO CAT Series 1/8\" valves are compact direct-acting 3-way, 2-position solenoid poppet valves, normally closed, with a NEMA 4 coil and DIN connector. This listing has seven part numbers in CAT33 and CAT44 versions with 12 V DC, 24 V DC and 120 V AC coils."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO part numbers such as CAT33P-012-D and CAT44P-120-A?",
+          "a": "In the rows the ending is the coil: -012-D is 12 V DC, -024-L is 24 V DC, -120-A is 120 V AC and -000-N is no coil. CAT33 and CAT44 name the valve version, and every part number on this listing has a 1/8\" port."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages are available on ARO CAT33 and CAT44 valves?",
+          "a": "The listing offers 12 V DC (CAT33P-012-D, CAT44P-012-D), 24 V DC (CAT33S-024-L, CAT33P-024-L), 120 V AC (CAT33P-120-A, CAT44P-120-A) and one no-coil valve, CAT33P-000-N."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between CAT33 and CAT44 in this ARO range?",
+          "a": "Both are 1/8\" CAT valves with the same coil options. The CAT44P-012-D row quotes 2 cfm maximum flow and the listing holds no flow figure for the CAT33 rows, so quote the full part number and we confirm the flow with ARO."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO CAT 1/8\" valves have?",
+          "a": "Rows quote 0 to 150 psi, about 10 bar, and the listing gives an ambient range of 0 deg F to +122 deg F, about -18 deg C to 50 deg C, with a coil power of 1.1 W. The listing says the valve is not vacuum operable."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO CAT 1/8\" valves made from?",
+          "a": "The listing specification gives an aluminium body and a stainless steel spool or poppet with a NEMA 4 coil enclosure. It is intended for compressed air; send us the medium if you plan to use anything else."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO CAT 1/8\" valves?",
+          "a": "No certificate or datasheet is attached to the the ARO CAT 1/8\" valves listing. Tell us in the enquiry what your file requires for CAT33P-012-D, such as a conformity certificate, and we obtain it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to an ARO CAT 1/8\" port valve?",
+          "a": "They have 1/8\" pipe ports, so use 1/8\" fittings and tube from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) and [pneumatic tubing](/c/pneumatic-tubing) shelves. The DIN connector on the coil takes a standard solenoid plug."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test an ARO CAT33 solenoid valve?",
+          "a": "Check the supply against the coil voltage in the part number, plug in the DIN connector and use the non-locking manual override to confirm the valve shifts. A no-coil valve, CAT33P-000-N, needs a coil of the right voltage first."
+        },
+        {
+          "slot": "K",
+          "q": "How do ARO CAT 1/8\" valves compare with the CAT high flow valves?",
+          "a": "The 1/8\" CAT valves are the smaller range, whereas the [ARO CAT Series high flow valves](/p/aro-cat-series-high-flow-valves) have 1/4\" ports and quote 15 W coils. Choose by port size and the flow your cylinder needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO CAT 1/8\" valves made and exported from?",
+          "a": "The listing records the United States as the country of origin for ARO CAT Series 1/8\" valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO CAT Series 1/8\" port valves in Dubai?",
+          "a": "Yes. ARO CAT Series 1/8\" port valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-e-series-pneumatic-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO E Series pneumatic valves used for?",
+          "a": "ARO E Series valves are manually operated 3-way and 4-way spool valves with 1/4\" NPT ports, in foot pedal, treadle, lever, roller and panel-mount versions. This listing has 15 part numbers with an aluminium body and Buna N seals."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO E Series part numbers like E212FS, E252TM and E512LM mean?",
+          "a": "In the rows the digits give the function: E212 is a 4-way, 2-position valve, E252 a 3-way, 2-position valve and E512 and E712 are 4-way, 3-position valves. The letters set the operator, for example FS is a foot pedal with spring return, TM a treadle with manual return, RS a roller cam and LS a lever."
+        },
+        {
+          "slot": "D",
+          "q": "Which ARO E Series valve do I need for a foot pedal or treadle?",
+          "a": "Use E212FS (4-way foot pedal, spring return) or E252FS (3-way foot pedal) for a pedal, and E212TM or E252TM for a treadle with manual return. All have 1/4\" ports; pick 4-way to drive a double-acting cylinder."
+        },
+        {
+          "slot": "D",
+          "q": "Which 3-position ARO E Series valves are available?",
+          "a": "The listing has two 4-way, 3-position valves, E512LM and E712LS, both lever-operated with 1/4\" ports. Use a 3-position valve when you need the cylinder to stop mid-stroke, and check the centre condition with us before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature are ARO E Series valves rated for?",
+          "a": "Row text on this listing gives 150 psi, about 10 bar, and the specification gives -10 deg F to +180 deg F, which is about -23 deg C to 82 deg C. They are not vacuum operable and the listing says lubrication is required."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO E Series valve made from?",
+          "a": "The ARO E Series has an aluminium body and Buna N (nitrile) seals according to the listing, and it needs lubricated air. Ask us before using it with media other than compressed air with oil mist."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with ARO E Series valves?",
+          "a": "We hold no datasheet or certificate for the ARO E Series valves on this page. Ask for the ARO catalogue sheet or a certificate of conformity for E212FS in your enquiry and we request it from ARO when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and tubing connect to an ARO E Series valve?",
+          "a": "E Series valves have 1/4\" NPT ports, so use 1/4\" NPT fittings, available on our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf, and tubing from our [pneumatic tubing](/c/pneumatic-tubing) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should I mount and maintain an ARO E Series manual valve?",
+          "a": "Mount pedal and treadle valves on a firm base within the operator's reach, protect the foot actuator from debris and keep the supply lubricated. Replace the valve if the operator no longer returns or the exhaust leaks."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between ARO E Series and ARO K Series valves?",
+          "a": "E Series valves are 1/4\" manual valves, whereas the [ARO K Series](/p/aro-k-series-pneumatic-valves) are larger 3/8\" and 1/2\" valves that also include solenoid versions. Choose E for a small foot or hand valve and K for higher flow."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO E Series made and exported from?",
+          "a": "The listing records the United States as the country of origin for the ARO E Series, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO E Series pneumatic valves in Dubai?",
+          "a": "Yes, we stock ARO E Series pneumatic valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "aro-h-series-pneumatic-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO H Series pneumatic valves used for?",
+          "a": "ARO H Series valves are body-ported solenoid poppet valves in 3/8\" and 1/2\" sizes with a die-cast zinc body, DIN connector and NEMA 4 coil. This listing carries four part numbers: H253SS-120-A, H253SS-000-N, H254SS-120-A and H254SS-000-N."
+        },
+        {
+          "slot": "B",
+          "q": "What do the ARO H253SS and H254SS part numbers mean?",
+          "a": "In the rows H253 is the 3/8\" valve and H254 the 1/2\" valve, and the ending is the coil: -120-A is a 120 V AC coil and -000-N is a valve with no coil. So H254SS-120-A is a 1/2\" valve with a 120 V AC coil."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and coil options does the ARO H Series offer?",
+          "a": "There are two port sizes, 3/8\" (H253SS) and 1/2\" (H254SS), each in a 120 V AC coil version and a no-coil version. If you need 12 V or 24 V DC, send us the voltage and we check which coil fits."
+        },
+        {
+          "slot": "D",
+          "q": "Is the ARO H Series a 3-way or 4-way valve?",
+          "a": "The listing specification describes a 3-way, 2-position solenoid poppet valve with spring return. Confirm the function of the exact part number before piping, using our [solenoid valve functions guide](/blog/solenoid-valve-functions-3-2-5-2-5-3)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO H Series valves have?",
+          "a": "Rows quote 30 to 150 psi, about 10 bar maximum, and the specification gives -10 deg F to +180 deg F, about -23 deg C to 82 deg C. The listing gives 0.54 W coil power and says the valve is not vacuum operable."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO H Series valve made from?",
+          "a": "The listing gives a die-cast zinc body and a nylon poppet. It is a compressed-air valve; ask us before using it with other media."
+        },
+        {
+          "slot": "G",
+          "q": "What documents are available for ARO H Series valves?",
+          "a": "This listing holds no datasheet or certificate file for the ARO H Series, so name the document you need, for example a certificate of conformity or the ARO catalogue page for H254SS-120-A, and we request it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to an ARO H Series valve?",
+          "a": "With 3/8\" and 1/2\" body ports, use pipe fittings of the same size from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. The coil takes a DIN connector."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a coil to an ARO H254SS-000-N valve?",
+          "a": "The -000-N valve is supplied without a coil, so fit a coil that matches your supply voltage, secure it and plug in the DIN connector before applying power. Do not energise the coil off the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO H Series differ from the ARO K Series valves?",
+          "a": "The H Series is a 3/8\" and 1/2\" poppet solenoid valve with 120 V AC or no-coil options, while the [ARO K Series](/p/aro-k-series-pneumatic-valves) mixes manual and solenoid spool valves in 1/8\" to 1/2\" sizes."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO H Series made and exported from?",
+          "a": "The listing records the United States as the country of origin for the ARO H Series, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO H Series pneumatic valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps ARO H Series pneumatic valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "aro-k-series-pneumatic-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO K Series pneumatic valves used for?",
+          "a": "ARO K Series valves are 3/8\" and 1/2\" 4-way valves for larger air cylinders, sold here as both manual (lever, foot treadle) and 120 V AC solenoid versions. This listing carries 12 part numbers, including K214SD-120-A and K513TM."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO K Series part numbers like K214SD-120-A and K513TM?",
+          "a": "In the rows the manual valves end in letters for the operator, such as LS (lever with spring return), LM (lever, manual return) and TM (foot treadle), and the solenoid valves end -120-A for a 120 V AC coil. K214SD-120-A is a 1/2\" solenoid/solenoid valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which ARO K Series valves are solenoid operated?",
+          "a": "Five part numbers are solenoid versions, all with 120 V AC coils: K314SD-120-A, K214SD-120-A, K214SS-120-A, K313SD-120-A and K216SS-120-A. K314SD-120-A is described as solenoid/solenoid, so it is a double-solenoid valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which ARO K Series valves are manual?",
+          "a": "The manual valves are K513TM, K513LM, K213LS, K313LS, K213LM, K213FS and K213TM, mostly with 3/8\" ports and lever, foot or treadle operators. Pick spring return (LS) for momentary action and manual return (LM, TM) to hold a position."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature are ARO K Series valves rated for?",
+          "a": "Row text quotes 150 psi, about 10 bar, with some solenoid rows at 20 to 150 psi and 50 to 150 psi, and the listing gives -10 deg F to +180 deg F, about -23 deg C to 82 deg C. Check the row of the part number you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO K Series valve made from?",
+          "a": "The listing specification gives an aluminium body, aluminium spool and Buna N (nitrile) seals, with lubrication required. It suits lubricated compressed air."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO K Series valves?",
+          "a": "No certificate or datasheet is attached to the the ARO K Series listing. Tell us in the enquiry what your file requires for K214SD-120-A, such as a conformity certificate, and we obtain it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to an ARO K Series valve?",
+          "a": "K Series ports are 3/8\" and 1/2\" NPT pipe, so use fittings of that size from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf. Solenoid versions take a 120 V AC coil connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and test an ARO K Series solenoid valve?",
+          "a": "Check the supply is 120 V AC for the -120-A part numbers, connect the coil, then pressurise slowly and cycle the valve. For double-solenoid K314SD-120-A, never energise both coils together."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between ARO K Series and ARO E Series valves?",
+          "a": "The K Series is the larger 3/8\" and 1/2\" range with solenoid versions, while the [ARO E Series](/p/aro-e-series-pneumatic-valves) is 1/4\" and manual only. Choose K for bigger cylinders."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO K Series made and exported from?",
+          "a": "The listing records the United States as the country of origin for the ARO K Series, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO K Series pneumatic valves in Dubai?",
+          "a": "Yes. We keep ARO K Series pneumatic valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aro-maxair-series-manifolds",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO MaxAir Series manifolds used for?",
+          "a": "ARO MaxAir Series manifolds are side-ported bases that mount 2 to 10 MaxAir solenoid valves on one air supply, supplied as a kit with seals and valve attaching hardware. This listing carries 15 part numbers in three port sizes, 1/4\", 3/8\" and 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO MaxAir manifold part numbers such as M30M03-06?",
+          "a": "In the rows the middle code sets the port size, M26M02 being 1/4\", M30M03 being 3/8\" and M34M04 being 1/2\", and the number after the dash is the station count. So M30M03-06 is a 3/8\" manifold with 6 stations."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations are available on ARO MaxAir manifolds?",
+          "a": "Each port size is offered in 2, 4, 6, 8 and 10 stations, for example M26M02-02 up to M26M02-10 in 1/4\". That gives five lengths in each of three port sizes."
+        },
+        {
+          "slot": "D",
+          "q": "Which MaxAir manifold port size should I choose?",
+          "a": "Match the manifold port to the valve you are mounting: 1/4\" for the smaller MaxAir valves, 3/8\" and 1/2\" for the larger ones. Our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) shows how to check flow before choosing a larger port."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature are ARO MaxAir manifolds rated for?",
+          "a": "The listing gives 122 deg F, which is 50 deg C, as the temperature figure. It does not hold a pressure rating for the manifold, so we confirm the working pressure with ARO for your part number before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material are ARO MaxAir manifolds made from?",
+          "a": "The listing does not state the manifold material. It says each kit includes the manifold, seals and valve attaching hardware; send us your medium and environment and we confirm the material with ARO."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO MaxAir manifolds?",
+          "a": "We hold no datasheet or certificate for the ARO MaxAir manifolds on this page. Ask for the ARO catalogue sheet or a certificate of conformity for M30M03-06 in your enquiry and we request it from ARO when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves fit ARO MaxAir Series manifolds?",
+          "a": "They are made for the [ARO MaxAir Series valves](/p/aro-maxair-series-pneumatic-valves) (compatible series Maxair, per the listing). Use fittings from our [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf on the manifold ports."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble an ARO MaxAir manifold with valves?",
+          "a": "Fit the supplied seals, mount each valve with the attaching hardware, close unused stations with a blanking plate and tighten evenly before testing. Check for leaks at each seal at working pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How do the MaxAir manifolds differ from the ARO Alpha thin manifolds?",
+          "a": "MaxAir manifolds come in three port sizes up to 1/2\", while the [Alpha thin manifold](/p/aro-alpha-series-thin-manifolds) is 1/4\" only. The MaxAir listing records Taiwan as origin."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO MaxAir manifolds made and exported from?",
+          "a": "The listing records Taiwan as the country of origin for the ARO MaxAir manifolds, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO MaxAir Series manifolds in Dubai?",
+          "a": "Yes, ARO MaxAir Series manifolds is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aro-maxair-series-pneumatic-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO MaxAir Series pneumatic valves used for?",
+          "a": "ARO MaxAir Series valves are aluminium valves for air cylinders, sold as solenoid versions (1/4\", 3/8\" and 1/2\") and manual button and knob versions. This listing carries 41 part numbers, including M212SS-024-D, M214SD-120-A and M252HS-10."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO MaxAir part numbers such as M212SS-024-D and M252LS-10?",
+          "a": "In the rows M212, M213 and M214 are 1/4\", 3/8\" and 1/2\" valves, and the solenoid ending is the coil: -024-D is 24 V DC, -120-A is 120 V AC and -000-N is no coil. M2x2HS and LS are manual, with HS a button and LS a knob, and M252 is a 3-way where M212 is a 4-way."
+        },
+        {
+          "slot": "D",
+          "q": "Which MaxAir solenoid sizes and voltages are available?",
+          "a": "The solenoid valves come in 1/4\" (M212, M252), 3/8\" (M213, M253) and 1/2\" (M214, M254), with 24 V DC (9 part numbers), 120 V AC (9) and no-coil (6) options. Quote size and voltage together."
+        },
+        {
+          "slot": "D",
+          "q": "Which MaxAir manual valves are on this listing?",
+          "a": "The manual valves are three-way or four-way, two-position, with a red button (M252HS-10, M212HS-10) or black knob (M252LS-10, M212LS-11); flow is 26 scfm on M252 and M212 rows and 8 scfm on the M291 rows (M291HS-10, M291LS-10)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure do ARO MaxAir valves have?",
+          "a": "Rows show 115 psi, about 8 bar, for the solenoid valves and 150 psi, about 10 bar, for the manual valves, and the listing gives an ambient range of +15 deg F to +122 deg F, about -9 deg C to 50 deg C. The listing states the valves are not vacuum operable."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO MaxAir valves made from?",
+          "a": "The listing specification gives an aluminium body and aluminium spool with internal pilot and a NEMA 4 coil enclosure. They are for compressed air; ask us if you need to use another medium."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with ARO MaxAir Series valves?",
+          "a": "This listing holds no datasheet or certificate file for the ARO MaxAir valves, so name the document you need, for example a certificate of conformity or the ARO catalogue page for M212SS-024-D, and we request it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold fits ARO MaxAir Series valves?",
+          "a": "MaxAir valves mount on the [ARO MaxAir manifolds](/p/aro-maxair-series-manifolds), available in 1/4\", 3/8\" and 1/2\" ports and 2 to 10 stations. Match the manifold port size to the valve."
+        },
+        {
+          "slot": "I",
+          "q": "How should I wire and service an ARO MaxAir solenoid valve?",
+          "a": "Check the coil voltage against the supply, wire through the DIN connector and test with the manual override. If your part number is a double-solenoid version, never energise both coils together."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between ARO MaxAir and ARO Sierra 18 valves?",
+          "a": "MaxAir covers 1/4\" to 1/2\" aluminium valves, while the [ARO Sierra 18 valves](/p/aro-sierra-18-pneumatic-valves) are compact 18 mm valves that mount on their own manifolds. Pick by mounting style and flow."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO MaxAir valves made and exported from?",
+          "a": "The listing records Taiwan as the country of origin for the ARO MaxAir valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. Valves of this type fall under HS heading 8481."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO MaxAir Series pneumatic valves in Dubai?",
+          "a": "Yes. ARO MaxAir Series pneumatic valves is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-sierra-15-base-mounted-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO Sierra 15 base-mounted valves used for?",
+          "a": "ARO Sierra 15 base-mounted valves are compact solenoid valves with 1/8\" ports that bolt to a base or manifold and switch air to small cylinders. This listing carries eight part numbers, S5SS9A-1 to S5SS9D-1 and S5DS9A-1-G to S5DS9D-1-G."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO part numbers like S5SS9B-1 and S5DS9C-1-G mean?",
+          "a": "In the rows the letter before -1 sets the coil: A and C are 120 V AC and B and D are 24 V DC. The SS and DS letters after S5 mark two versions, and the -G ending appears on S5DS9B-1-G, S5DS9C-1-G and S5DS9D-1-G."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages do ARO Sierra 15 base-mounted valves come with?",
+          "a": "The eight part numbers are split evenly, four 24 V DC (S5SS9B-1, S5SS9D-1, S5DS9B-1-G, S5DS9D-1-G) and four 120 V AC (S5SS9A-1, S5SS9C-1, S5DS9A-1, S5DS9C-1-G). Choose the voltage that matches your control supply."
+        },
+        {
+          "slot": "D",
+          "q": "How much flow does an ARO Sierra 15 valve pass?",
+          "a": "The S5SS9B-1 row quotes 9 cfm maximum flow and S5DS9A-1 is described at 1/8\" and 0 to 115 psi, about 8 bar. Compare the flow with the cylinder you plan to drive, using the [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO Sierra 15 base-mounted valves have?",
+          "a": "The S5DS9A-1 row quotes 0 to 115 psi, about 8 bar, and the listing gives an ambient range of 0 deg F to +122 deg F, which is about -18 deg C to 50 deg C, with a NEMA 4 coil enclosure."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO Sierra 15 valves made from?",
+          "a": "The listing does not hold body or seal materials for the Sierra 15 base-mounted valves; it gives solenoid/spring actuation and a NEMA 4 coil. Send your medium and we confirm materials with ARO."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO Sierra 15 valves?",
+          "a": "No certificate or datasheet is attached to the the ARO Sierra 15 base-mounted valves listing. Tell us in the enquiry what your file requires for S5SS9B-1, such as a conformity certificate, and we obtain it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I mount an ARO Sierra 15 base-mounted valve on?",
+          "a": "It mounts on a Sierra base or manifold; see the [Sierra high-profile manifolds](/p/aro-sierra-series-manifolds-high-profile) with 1/8\" ports, and match the manifold to the valve series before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and test an ARO Sierra 15 solenoid valve?",
+          "a": "Mount it on a clean base with its seal in place, wire the coil for the voltage in the part number, and cycle it at low pressure before going to line pressure."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Sierra 15 base-mounted and body-ported valves?",
+          "a": "The base-mounted S5SS9 and S5DS9 valves have 1/8\" ports on a base, while the [Sierra 15 body-ported valves](/p/aro-sierra-15-body-ported-valves) (S5SSMA-1-G etc.) have 5/16\" body ports and need no base."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO Sierra 15 base-mounted valves made and exported from?",
+          "a": "The listing records Taiwan as the country of origin for the ARO Sierra 15 base-mounted valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO Sierra 15 base-mounted valves in Dubai?",
+          "a": "Yes, we stock ARO Sierra 15 base-mounted valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "aro-sierra-15-body-ported-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO Sierra 15 body-ported valves used for?",
+          "a": "ARO Sierra 15 body-ported valves are compact solenoid valves with 5/16\" ports in the body, so they pipe directly without a base. This listing carries four part numbers: S5SSMA-1-G, S5SSMB-1, S5SSMC-1-G and S5SSMD-1."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO Sierra part numbers like S5SSMD-1 and S5SSMA-1-G mean?",
+          "a": "In the rows the letter after M sets the coil: A and C are 120 V AC and B and D are 24 V DC. The -G ending appears on S5SSMA-1-G and S5SSMC-1-G, both 120 V AC valves."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages do ARO Sierra 15 body-ported valves come with?",
+          "a": "Two part numbers are 120 V AC (S5SSMA-1-G, S5SSMC-1-G) and two are 24 V DC (S5SSMB-1, S5SSMD-1). All four have 5/16\" ports."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does an ARO Sierra 15 body-ported valve pass?",
+          "a": "The S5SSMB-1 row quotes 9 cfm maximum flow at 0 to 115 psi, about 8 bar. Check that against your cylinder's air demand; our [valve sizing guide](/blog/sizing-pneumatic-valves-flow-cv) shows how."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do these ARO valves handle?",
+          "a": "The rows quote 115 psi, which is about 8 bar, and the listing gives an ambient range of 0 deg F to +122 deg F, about -18 deg C to 50 deg C. The coil enclosure is NEMA 4."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO Sierra 15 body-ported valves made from?",
+          "a": "The listing holds no body or seal material for this range. If your medium or environment needs a specific material, send it with your enquiry and we confirm with ARO."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO Sierra 15 body-ported valves?",
+          "a": "We hold no datasheet or certificate for the ARO Sierra 15 body-ported valves on this page. Ask for the ARO catalogue sheet or a certificate of conformity for S5SSMB-1 in your enquiry and we request it from ARO when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to the 5/16\" ports on these ARO valves?",
+          "a": "The 5/16\" body ports take small-bore fittings, so check the thread type with us, and see the [pneumatic fittings and silencers](/c/pneumatic-fittings-silencers) shelf for fittings and silencers."
+        },
+        {
+          "slot": "I",
+          "q": "How should I wire and test an ARO Sierra 15 body-ported valve?",
+          "a": "Wire the coil for the voltage in the part number (120 V AC or 24 V DC), support the valve so pipe loads do not strain the body, and test at low pressure first."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sierra 15 body-ported valve compare with the base-mounted one?",
+          "a": "Body-ported valves pipe direct to 5/16\" ports, while the [Sierra 15 base-mounted valves](/p/aro-sierra-15-base-mounted-valves) mount on a base with 1/8\" ports. Choose body-ported for single valves and base-mounted for manifolds."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO Sierra 15 body-ported valves made and exported from?",
+          "a": "The listing records the United States as the country of origin for the ARO Sierra 15 body-ported valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO Sierra 15 body-ported valves in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps ARO Sierra 15 body-ported valves in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "aro-sierra-18-pneumatic-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO Sierra 18 pneumatic valves used for?",
+          "a": "ARO Sierra 18 valves are compact 18 mm solenoid spool valves that switch air to small and medium cylinders, with a NEMA 4 coil and aluminium body. This listing carries 15 part numbers in the M812, M813, M817 and M819 families, with 12 V DC, 24 V DC and 120 V AC coils."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO Sierra 18 part numbers such as M813SD-024-D and M819SS-120-A?",
+          "a": "In the rows the ending is the coil: -012-D is 12 V DC, -024-D is 24 V DC and -120-A is 120 V AC. M812, M813, M817 and M819 name the valve versions and the SS or SD letters the operator version; the item text calls them 18mm valves."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages are offered on ARO Sierra 18 valves?",
+          "a": "There are four 12 V DC part numbers, five 24 V DC and six 120 V AC. For example M812SD-012-D, M812SD-024-D and M812SD-120-A give the same valve in each voltage."
+        },
+        {
+          "slot": "D",
+          "q": "Which ARO Sierra 18 valve family should I choose, M812, M813, M817 or M819?",
+          "a": "The listing does not publish a one-line difference between the families in the table, so quote the part number you need or the function and port you require and we confirm with ARO. Each family is offered in SS and SD versions with several voltages."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO Sierra 18 valves have?",
+          "a": "Row text, for example M812SD-120-A, quotes 0 to 115 psi, which is about 8 bar, and the listing gives an ambient range of 0 deg F to +122 deg F, about -18 deg C to 50 deg C. The listing specification says response time is 22 ms."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO Sierra 18 valves made from?",
+          "a": "The listing specification gives an aluminium body and aluminium spool, with internal pilot and non-locking override, and states the valve is not vacuum operable. It is for compressed air."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents come with ARO Sierra 18 valves?",
+          "a": "This listing holds no datasheet or certificate file for the ARO Sierra 18 valves, so name the document you need, for example a certificate of conformity or the ARO catalogue page for M813SD-024-D, and we request it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifold fits an ARO Sierra 18 valve?",
+          "a": "Sierra 18 valves mount on Sierra manifolds, for example the [Sierra low-profile manifolds](/p/aro-sierra-series-manifolds-low-profile) which list Sierra 18 as the compatible series. Match valve and manifold before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I wire and test an ARO Sierra 18 solenoid valve?",
+          "a": "Check the coil voltage in the part number against the supply, connect the coil, then use the non-locking manual override to check the valve shifts before powering it."
+        },
+        {
+          "slot": "K",
+          "q": "How does ARO Sierra 18 compare with the ARO MaxAir Series?",
+          "a": "Sierra 18 is a compact 18 mm range recorded with Japan as origin, whereas the [ARO MaxAir Series](/p/aro-maxair-series-pneumatic-valves) runs from 1/4\" to 1/2\" with its own manifolds. Choose by size and mounting."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO Sierra 18 valves made and exported from?",
+          "a": "The listing records Japan as the country of origin for the ARO Sierra 18 valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO Sierra 18 pneumatic valves in Dubai?",
+          "a": "Yes. We keep ARO Sierra 18 pneumatic valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aro-sierra-series-manifolds-high-profile",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO Sierra high-profile manifolds used for?",
+          "a": "ARO Sierra high-profile manifolds are valve bases that carry several Sierra solenoid valves on one air supply. This listing has seven part numbers in the SMH51N and SMH81N families, with 2, 4, 6 and 8 stations and 1/8\" valve ports."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO part numbers like SMH51N-04 and SMH81N-08 mean?",
+          "a": "In the rows SMH51N and SMH81N are two manifold versions and the number after the dash is the station count, so SMH51N-04 has 4 stations and SMH81N-08 has 8. The listing item text for those rows reads 1/8\" valve port size."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations are available on ARO Sierra high-profile manifolds?",
+          "a": "SMH51N is listed in 2, 4, 6 and 8 stations (SMH51N-02, -04, -06, -08) and SMH81N in 2, 4 and 8 stations (SMH81N-02, -04, -08). Pick the count from your valve number."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between SMH51N and SMH81N manifolds?",
+          "a": "Both are listed with 1/8\" valve ports. The listing does not publish a one-line difference, so confirm which Sierra valve series you are mounting before choosing, and quote the part number so we can check the match with ARO."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO Sierra high-profile manifolds handle?",
+          "a": "The listing does not hold a pressure or temperature rating for these manifolds, so we confirm both with ARO for the part number before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO Sierra high-profile manifolds made from?",
+          "a": "The listing does not state the manifold material. Send your medium and operating environment and we confirm the material with ARO."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO Sierra manifolds?",
+          "a": "No certificate or datasheet is attached to the the ARO Sierra manifolds listing. Tell us in the enquiry what your file requires for SMH51N-04, such as a conformity certificate, and we obtain it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on ARO Sierra high-profile manifolds?",
+          "a": "They are used with ARO Sierra valves such as the [Sierra 15 base-mounted valves](/p/aro-sierra-15-base-mounted-valves), which have 1/8\" ports. Match the manifold to the valve series before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and seal an ARO Sierra manifold?",
+          "a": "Mount valves with clean seals on the manifold face, close spare stations with plugs, tighten evenly and test for leaks at working pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How do high-profile and low-profile ARO Sierra manifolds differ?",
+          "a": "The [Sierra low-profile manifolds](/p/aro-sierra-series-manifolds-low-profile) list Sierra 18 as their compatible series, with 1/4\" ports on two of their part numbers, while this high-profile listing has 1/8\" valve ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO Sierra high-profile manifolds made and exported from?",
+          "a": "The listing records Taiwan as the country of origin for the ARO Sierra high-profile manifolds, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO Sierra high-profile manifolds in Dubai?",
+          "a": "Yes, ARO Sierra high-profile manifolds is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aro-sierra-series-manifolds-low-profile",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO Sierra low-profile manifolds used for?",
+          "a": "ARO Sierra low-profile manifolds are valve bases for the Sierra 18 valve range, listed as compatible with the SIERRA 18 series. This listing carries three part numbers: SML81N-02, SML81N-04 and SMH81N-10, with gaskets and mounting hardware."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO part numbers SML81N-02 and SML81N-04 mean?",
+          "a": "In the rows the number after the dash is the station count, so SML81N-02 is a 2-station manifold and SML81N-04 a 4-station manifold, both with 1/4\" ports. SMH81N-10 is a 10-station part with 1/8\" valve ports."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations are available on ARO Sierra low-profile manifolds?",
+          "a": "The listing has 2 stations (SML81N-02), 4 stations (SML81N-04) and 10 stations (SMH81N-10). If you need 6 or 8 stations, ask us and we check the Sierra range."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do ARO Sierra low-profile manifolds have?",
+          "a": "SML81N-02 and SML81N-04 have 1/4\" ports and SMH81N-10 is listed with 1/8\" valve ports. Match the port size to your tube and fitting."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature are ARO Sierra low-profile manifolds rated for?",
+          "a": "The listing gives 122 deg F, which is 50 deg C. It holds no pressure rating, so we confirm the working pressure with ARO before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO Sierra low-profile manifolds made from?",
+          "a": "The listing says the kit includes the manifold, gaskets and mounting hardware, with side ported entry, but does not give the manifold material. Send your medium and we confirm with ARO."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for ARO Sierra low-profile manifolds?",
+          "a": "We hold no datasheet or certificate for the ARO Sierra low-profile manifolds on this page. Ask for the ARO catalogue sheet or a certificate of conformity for SML81N-04 in your enquiry and we request it from ARO when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves mount on ARO Sierra low-profile manifolds?",
+          "a": "The listing names the Sierra 18 series as compatible, so see the [ARO Sierra 18 valves](/p/aro-sierra-18-pneumatic-valves). Gaskets and mounting hardware are included."
+        },
+        {
+          "slot": "I",
+          "q": "How should I assemble an ARO Sierra low-profile manifold?",
+          "a": "Fit the supplied gaskets, mount the valves with the included hardware, tighten evenly and test for leaks. Replace the gaskets whenever the valves are taken off."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO Sierra low-profile manifold compare with the high-profile one?",
+          "a": "The low-profile manifolds are made for Sierra 18 valves, while the [high-profile manifolds](/p/aro-sierra-series-manifolds-high-profile) list SMH51N and SMH81N numbers with 1/8\" valve ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO Sierra low-profile manifolds made and exported from?",
+          "a": "The listing records Japan as the country of origin for the ARO Sierra low-profile manifolds, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO Sierra low-profile manifolds in Dubai?",
+          "a": "Yes. ARO Sierra low-profile manifolds is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-solenoid-air-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the ARO solenoid air control valves listing?",
+          "a": "This listing holds eight ARO solenoid valves from three ranges: Sierra 18 (M812SS-024-D), CAT (P211SS-024-D, CAT66P-120-A) and Alpha (A211SS-120-A, A222SS-120-A, A212SS-024-D, A212SS-000-N, A211SS-000-N). Ports are 1/8\", 1/4\" and 18 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO part numbers on this listing such as A212SS-024-D?",
+          "a": "In the rows the ending is the coil: -024-D is 24 V DC, -120-A is 120 V AC and -000-N is no coil. The first letters name the range, A for Alpha, P for the CAT miniature range, CAT for CAT and M for Sierra 18."
+        },
+        {
+          "slot": "D",
+          "q": "Which coil voltages are on the ARO solenoid air control valves listing?",
+          "a": "There are three 24 V DC valves (M812SS-024-D, P211SS-024-D, A212SS-024-D), three 120 V AC valves (A211SS-120-A, A222SS-120-A, CAT66P-120-A) and two no-coil valves (A212SS-000-N, A211SS-000-N)."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are on the ARO solenoid air control valves listing?",
+          "a": "A211SS and P211SS are 1/8\" valves, A212SS, A222SS and CAT66P are 1/4\" and M812SS is an 18 mm valve. Tell us the port and voltage you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure ranges apply to these ARO solenoid valves?",
+          "a": "Rows quote 50 to 150 psi for the Alpha no-coil parts, 0 to 120 psi for P211SS-024-D and 115 psi for M812SS-024-D, so the limit differs by part number, up to about 10 bar. Check the row of the part you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the ARO solenoid air control valves in this listing made from?",
+          "a": "The listing specification gives an aluminium body, internal pilot and a NEMA 4 coil enclosure, but materials vary by range. Ask us for the material of your exact part number."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the ARO solenoid air control valves?",
+          "a": "This listing holds no datasheet or certificate file for these ARO solenoid valves, so name the document you need, for example a certificate of conformity or the ARO catalogue page for A212SS-024-D, and we request it from ARO with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What manifolds fit the ARO solenoid air control valves in this listing?",
+          "a": "Alpha valves use the [Alpha thin manifolds](/p/aro-alpha-series-thin-manifolds) and Sierra 18 valves use the Sierra manifolds; see the [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves) for the full range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit a no-coil ARO valve such as A212SS-000-N?",
+          "a": "Fit a coil of your supply voltage, secure it and connect it before applying power; the -000-N valve is supplied without a coil and will not switch until one is fitted."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy a valve from this listing or from the individual range pages?",
+          "a": "This listing is a mixed set, so for the full range of a series see the [ARO Alpha Series](/p/aro-alpha-series-pneumatic-valves) or [ARO CAT Series](/p/aro-cat-series-high-flow-valves) pages, which list every coil and port option."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO solenoid air control valves made and exported from?",
+          "a": "The listing records Japan as the country of origin for these ARO solenoid valves, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO solenoid air control valves in Dubai?",
+          "a": "Yes, we stock ARO solenoid air control valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    }
+  ]
+}

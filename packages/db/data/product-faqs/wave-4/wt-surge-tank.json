@@ -1,0 +1,84 @@
+{
+  "family": "wt-surge-tank",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "well-testing-surge-tank-dual-compartment-100-bbl-600-psi-asme-u-dnv-skid",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a dual-compartment 100 BBL surge tank used for in well testing?",
+          "a": "A well-testing surge tank receives and holds liquid from the separator so the flow can be measured and routed. This one has two independent compartments, 100 BBL combined nominal capacity and 600 psi MAWP, ASME U-stamped."
+        },
+        {
+          "slot": "B",
+          "q": "What do 100 BBL and 600 psi mean on this surge tank?",
+          "a": "100 BBL is the combined nominal capacity of the two compartments and 600 psi is the maximum allowable working pressure (MAWP). Capacity and pressure variants are engineered to client requirement."
+        },
+        {
+          "slot": "D",
+          "q": "What capacity and pressure variants does the surge tank come in?",
+          "a": "The listed unit is 100 BBL at 600 psi in two compartments. Capacity and pressure rating variants are engineered to client requirement; state the volume and pressure on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Can the surge tank be mounted on a skid or trailer?",
+          "a": "It is mounted on a DNV-certified offshore skid. Onshore skid and integrated-trailer variants are available; state the site type and the volume on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What safety devices does each surge tank compartment have?",
+          "a": "Each compartment has its own hi-lo level sensors and alarms, a pressure safety valve (PSV) and a liquid-level gauge. The vessel is rated 600 psi MAWP."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 600 psi surge tank available in sour-service materials?",
+          "a": "NACE MR-0175 materials are available on request, per the listing. State the H2S level on the RFQ so the wetted materials are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes apply to the 100 BBL surge tank?",
+          "a": "The pressure vessel is ASME U-stamped and the skid is DNV-certified, per the listing. Third-party inspection requirements are agreed on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the surge tank connect to on a well-test spread?",
+          "a": "It receives liquid from the separator on the well-test spread. See the [3-phase separator](/c/wt-3-phase-separator) shelf and the [transfer pump](/c/wt-transfer-pump) shelf for moving the liquid, and the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "Why use two independent compartments in a surge tank?",
+          "a": "Two independent compartments let one fill and be measured while the other is emptied, so testing continues without interruption. Each has its own level sensors and alarms."
+        },
+        {
+          "slot": "K",
+          "q": "Surge tank or knock-out drum on a well-test spread?",
+          "a": "A surge tank holds and measures liquid, while a knock-out drum removes liquid droplets from the gas going to the flare. See the [knock-out drum](/c/wt-knock-out-drum) shelf for the gas side."
+        },
+        {
+          "slot": "L",
+          "q": "Can the dual-compartment surge tank be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its DNV skid. Give the destination and the skid type and we confirm freight and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 100 BBL dual-compartment surge tank in Dubai?",
+          "a": "Yes. We keep the 100 BBL dual-compartment surge tank in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the capacity, pressure and skid type through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

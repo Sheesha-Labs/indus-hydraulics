@@ -1,0 +1,80 @@
+{
+  "family": "industrial-plug-valves",
+  "extraFacts": [
+    {
+      "fact": "API 598 covers the inspection and testing of valves, including shell, backseat and seat tests; API 609 covers butterfly valves (lug, wafer and double-flanged types, Category A and Category B); API 600 covers bolted-bonnet steel gate valves; API 602 covers compact steel gate, globe and check valves of small bore; API 603 covers corrosion-resistant bolted-bonnet gate valves; API 6D covers pipeline valves; API 594 covers wafer, lug and flanged check valves; API 599 covers metal plug valves; API 607 is the fire test for valves with non-metallic seats; BS 1868 covers steel check valves and BS 1873 steel globe valves; ASME B16.34 covers valve pressure-temperature ratings and ASME B16.10 covers valve face-to-face lengths; EN 10204 3.1 is the inspection certificate type for material certificates; ISO 15848 covers fugitive emissions of valves.",
+      "source": "API 598, API 609, API 600, API 602, API 603, API 6D, API 594, API 599, API 607; BS 1868; BS 1873; ASME B16.34; ASME B16.10; EN 10204; ISO 15848 (standard titles)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Sleeved Plug Valve, Non-Lubricated [IH-PV-PLS]:   Sleeved non-lubricated plug valves: NPS 1/2\" to 24\", ASME Class 150 to 600, PTFE sleeve, cavity-free, bi-directional, RF, RTJ or butt-weld, lever, gearbox or actuator. | Valve type Plug valve, sleeved, non-lubricated; Construction PTFE-sleeved body, tapered plug, adjustable top cap; Design standard API 599, ASME B16.34; Size range NPS 1/2\" to 24\" (DN15 to DN600); Pressure class ASME Class 150 to 600; Body material Carbon steel, stainless steel, alloy steel, special alloys; Seat and trim PTFE sleeve; End connections RF, RTJ flanged; butt-weld; Operation Lever, gearbox, pneumatic or electric actuator; Face-to-face / end-to-end ASME B16.10; Pressure testing Shell a | 46 part numbers (e.g. IH-PV-PLS-150-0050, IH-PV-PLS-150-0075, IH-PV-PLS-150-0100, IH-PV-PLS-150-0125); H1 45 to 500; H2 100 to 925; lRf 108 to 1,067; weightKg 1.46 to 50.8; pressureClass Class 150, Class 300 and Class 600; rows:  /  /  /  /  /  /  / ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sleeved-plug-valve-non-lubricated",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the non-lubricated sleeved plug valve used for?",
+          "a": "The non-lubricated sleeved plug valve is a plug valve, sleeved, non-lubricated built to API 599, ASME B16.34, used for refining, petrochemical, gas, LPG, chemical. It is made in NPS 1/2\" to 24\" (DN15 to DN600) and ASME Class 150 to 600, and is built to order and supplied from Dubai; see the [plug valves](/c/industrial-plug-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the non-lubricated sleeved plug valve part numbers such as IH-PV-PLS-300-0200?",
+          "a": "In the size table IH-PV-PLS-300-0200 is the 2\" valve in Class 300: the number before the size is the class, and the last four digits are the size in hundredths of an inch. The table lists 46 size and class combinations."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the non-lubricated sleeved plug valve available in?",
+          "a": "The published range for the non-lubricated sleeved plug valve is NPS 1/2\" to 24\" (DN15 to DN600), in ASME Class 150 to 600. The size table lists 46 size and class combinations with lengths and weights, so you can check the valve against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the non-lubricated sleeved plug valve take?",
+          "a": "The non-lubricated sleeved plug valve is rated ASME Class 150 to 600. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the non-lubricated sleeved plug valve made in?",
+          "a": "The body is available in carbon steel, stainless steel, alloy steel, special alloys, with PTFE sleeve. The construction is PTFE-sleeved body, tapered plug, adjustable top cap."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the non-lubricated sleeved plug valve?",
+          "a": "Each non-lubricated sleeved plug valve has shell and seat tests to API 598, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the non-lubricated sleeved plug valve operated, and what end connections does it have?",
+          "a": "The non-lubricated sleeved plug valve has RF, RTJ flanged; butt-weld ends and is operated by lever, gearbox, pneumatic or electric actuator. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "non-lubricated sleeved plug valve: Plug valve or ball valve?",
+          "a": "A sleeved plug valve has no body cavity, so it suits fluids that would collect or polymerise in a ball valve cavity, and it seals tightly at low pressure. A ball valve has lower torque at large sizes."
+        },
+        {
+          "slot": "J",
+          "q": "non-lubricated sleeved plug valve: What temperatures can the PTFE sleeve take?",
+          "a": "Typically -29 °C to about 200 °C, depending on pressure. For higher temperatures, ask about alternative sleeve materials. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose the non-lubricated sleeved plug valve rather than a ball valve?",
+          "a": "Choose the non-lubricated sleeved plug valve for refining, petrochemical, gas, LPG, chemical. A ball valve (industrial ball valves) suits small-bore lines, while a plug valve has no body cavity and suits fluids that would collect in a ball valve."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the non-lubricated sleeved plug valve supplied from?",
+          "a": "The non-lubricated sleeved plug valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the non-lubricated sleeved plug valve in stock in Dubai?",
+          "a": "Yes, we hold the non-lubricated sleeved plug valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

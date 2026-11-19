@@ -1,0 +1,145 @@
+{
+  "family": "ss316l-banjos",
+  "extraFacts": [
+    {
+      "fact": "ISO 228-1 specifies pipe threads, designated G, where pressure-tight joints are not made on the threads: both the external and internal thread are parallel (BSPP). The seal is made by a washer, O-ring, bonded seal or sealing face, not by the thread flanks.",
+      "source": "ISO 228-1:2000, scope"
+    },
+    {
+      "fact": "316L is the low-carbon grade of 316 austenitic stainless steel (carbon 0.03 % maximum), which is why it can be welded without carbide precipitation at the grain boundaries; it contains molybdenum for resistance to chloride pitting.",
+      "source": "ASTM A240 / A276 chemical composition limits for UNS S31603"
+    }
+  ],
+  "products": [
+    {
+      "slug": "banjo-bsp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Banjo BSP used for?",
+          "a": "The Banjo BSP is a 316L stainless-steel banjo hose fitting for BSPP ports from G1/8 to G3/4: a hollow bolt passes through a rotating banjo eye and seals with bonded-seal washers. It brings a hose into a port from the side where a straight or elbow fitting will not fit, and the eye can be turned to point the hose where it is needed before the bolt is tightened."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Banjo BSP come in?",
+          "a": "The Banjo BSP is listed from G1/8 to G3/4, in BSPP thread (ISO 228-1). The listing publishes the range rather than a part-number table, so send us the port thread and the hose bore and we confirm the exact bolt and eye."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the Banjo BSP and an elbow fitting for a G-thread port?",
+          "a": "Choose the Banjo BSP when the hose has to leave the port sideways in a tight space or has to be re-aimed on site, because the eye rotates around the bolt. Use an elbow where the hose direction is fixed and the port allows a male thread end."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Banjo BSP have?",
+          "a": "The listing gives the Banjo BSP no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the BSPP G1/8 to G3/4 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Banjo BSP made from, and where does stainless suit it?",
+          "a": "The Banjo BSP is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits chemical, marine, food-grade and pharmaceutical hydraulic service, where zinc-plated carbon steel would corrode. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Banjo BSP follow?",
+          "a": "The Banjo BSP is listed to ISO 228-1 (BSPP parallel threads) and DIN 7642 for the banjo form. ISO 228-1 threads do not seal on the thread flanks, so the bonded-seal washers on the bolt make the seal, not the thread."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Banjo BSP connect to?",
+          "a": "The bolt screws into a BSPP-threaded port, with a bonded-seal washer on each side of the banjo eye. The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for the stainless hose ends and ferrules."
+        },
+        {
+          "slot": "I",
+          "q": "How should the bonded-seal washers on a Banjo BSP be fitted and tightened?",
+          "a": "Fit one bonded-seal washer on each side of the eye, seat the eye square on the port face and tighten the hollow bolt to the torque for the thread size. Replace the washers whenever the banjo is opened, because a used bonded seal will not reseal."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a stainless BSP banjo fitting used instead of carbon steel?",
+          "a": "A stainless BSP banjo is used where a side-entry hose connection meets salt air, washdown or chemical exposure: marine and port equipment, process skids and food-grade machines. The [316L stainless hydraulic fittings guide](/blog/ss316l-hydraulic-fittings) covers how 316L behaves in those environments."
+        },
+        {
+          "slot": "K",
+          "q": "Banjo BSP or Banjo Metric: how do I choose?",
+          "a": "Choose by the thread on the port: the Banjo BSP has BSPP G1/8 to G3/4 bolts, while the [Banjo Metric](/p/banjo-metric) has metric bolts. Both are 316L with bonded-seal washers to DIN 7642, so a wrong thread choice is the only thing that separates them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Banjo BSP supplied from, and can it be exported from Dubai?",
+          "a": "The Banjo BSP ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Banjo BSP in stock in Dubai?",
+          "a": "Yes. We keep the Banjo BSP in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "banjo-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Banjo Metric used for?",
+          "a": "The Banjo Metric is a 316L stainless-steel banjo hose fitting with metric bolts from M10×1 to M22×1.5, where a hollow bolt passes through a rotating banjo eye and seals with bonded-seal washers. It connects a hose to a metric-threaded port from the side, in the stainless form where a zinc-plated banjo would corrode in salt air or washdown."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Banjo Metric come in?",
+          "a": "The Banjo Metric is listed with bolt threads from M10×1 to M22×1.5. The listing publishes the range rather than a part-number table, so send the port thread and hose bore and we confirm the bolt and eye."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the bolt thread for a Banjo Metric?",
+          "a": "Match the bolt to the port: measure the thread diameter and pitch on the equipment, for example M10×1 against M22×1.5, and confirm with us before ordering. A fine-pitch metric bolt will not seat in a BSPP port, and the washers will not seal on the wrong thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Banjo Metric have?",
+          "a": "The listing gives the Banjo Metric no pressure figure of its own: the pressure of the finished assembly tracks the hose grade and ferrule when it is crimped to the correct diameter. Pick the hose first, then confirm that the hose rating suits the metric M10×1 to M22×1.5 port before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Banjo Metric made from, and where does stainless suit it?",
+          "a": "The Banjo Metric is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits chemical, marine, food-grade and pharmaceutical hydraulic service where carbon steel would corrode. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Banjo Metric follow?",
+          "a": "The Banjo Metric is listed to DIN 7642 for the banjo form, and the listing also names ISO 228-1 (BSPP), which is the pipe thread of the Banjo BSP rather than a metric thread. State the metric thread on your order so the bolt is matched to the port."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Banjo Metric connect to?",
+          "a": "The bolt screws into a metric-threaded port with a bonded-seal washer on each side of the eye. The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings) for stainless hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I stop a stainless Banjo Metric from leaking at the washers?",
+          "a": "Use a new bonded-seal washer on each side of the eye every time, seat the eye flat on the port face and tighten the bolt to the torque for its metric size. Stainless bolts can gall, so a light anti-seize on the thread helps; keep it off the sealing faces."
+        },
+        {
+          "slot": "J",
+          "q": "Which equipment uses a metric banjo fitting in stainless steel?",
+          "a": "A stainless metric banjo suits European-built machines with metric ports that run in marine, coastal or washdown conditions, such as pumps, gearboxes and process skids. The [why fittings seize in coastal air](/blog/why-fittings-seize-in-coastal-air) article explains why the finish matters there."
+        },
+        {
+          "slot": "K",
+          "q": "Banjo Metric or Banjo BSP: what is the difference?",
+          "a": "The Banjo Metric has M10×1 to M22×1.5 bolts and the [Banjo BSP](/p/banjo-bsp) has BSPP G1/8 to G3/4 bolts. The construction is the same, a 316L hollow bolt, eye and bonded-seal washers to DIN 7642, so the port thread decides which to order."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Banjo Metric supplied from, and can it be exported from Dubai?",
+          "a": "The Banjo Metric ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Banjo Metric in stock in Dubai?",
+          "a": "Yes, the Banjo Metric is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "family": "cement-manifolds",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cement-and-kill-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A cement and kill manifold used for?",
+          "a": "A cement and kill manifold connects the drilling spool side outlet to the mud pumps. When the well cannot be circulated through the drill string, it pumps fluid in to control pressure and stop a kick, and it also carries the cement and water lines for cementing and allows direct blow-down."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the API 6A cement and kill manifold cover?",
+          "a": "The published range is 2-1/16\" to 7-1/16\" bore and 3,000 to 20,000 psi working pressure. Each unit is configured to the job, and the general arrangement drawing and data book index come with the quotation. Sizes in standard carbon steel move fastest."
+        },
+        {
+          "slot": "E",
+          "q": "What material and temperature classes does the API 6A cement and kill manifold offer?",
+          "a": "The listing gives API 6A material classes EE, FF and HH, temperature classes A to X, and PSL 3 to 4 on seat and trim. Hydrostatic tests follow API 6A / 16A / 16C at the PSL ordered. State the class on the RFQ with the H2S content and temperature."
+        },
+        {
+          "slot": "F",
+          "q": "Can the API 6A cement and kill manifold be supplied for sour service?",
+          "a": "Yes, the listing offers sour-service materials to NACE MR0175 / ISO 15156 up to 20,000 psi, in material classes EE, FF and HH. Send the H2S partial pressure, chloride content and temperature on the RFQ so the right class is quoted."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A cement and kill manifold made to API 6A?",
+          "a": "Yes. It is built to API 6A and API 16C, and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Third-party inspection is added when the order specifies it."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with the API 6A cement and kill manifold?",
+          "a": "You receive the material certificates and the pressure-test record, with API 6A documentation for the PSL ordered, and the general arrangement drawing and data book index with the quotation. Function tests of valves and controls are included."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections can the API 6A cement and kill manifold have?",
+          "a": "The manifold is listed with API 6A flanged or studded connections, or hammer union, with manual and hydraulic valves. Choose the connection to match the drilling spool outlet and pump lines; see [flow iron adapters](/c/flow-iron-adapters) and [API flanges](/c/flow-iron-flanges-api)."
+        },
+        {
+          "slot": "K",
+          "q": "How does a cement and kill manifold differ from a choke manifold?",
+          "a": "A cement and kill manifold pumps fluid into the well and carries cement and water lines, while a choke manifold throttles flow coming out of the well. See the [choke and kill manifold](/p/choke-and-kill-manifold-api-16c) for the return side of well control."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A cement and kill manifold used?",
+          "a": "It is used for well kill, bullheading and cementing, with mud, oil and gas, on drilling rigs and offshore platforms. Compact offshore versions are listed for easy installation and maintenance; see [cement manifolds](/c/cement-manifolds)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a cement and kill manifold quotation?",
+          "a": "Send the working pressure, bore sizes, end connections, material and temperature class, PSL, the fluids and H2S content, and the layout or P&ID if you have one. We review the data sheet before quoting and flag anything that needs clarifying."
+        },
+        {
+          "slot": "I",
+          "q": "Can the cement and kill manifold be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed. Third-party inspection and extra tests can be added to the order."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A cement and kill manifold?",
+          "a": "Yes. We list the API 6A cement and kill manifold as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Most units are built to the order specification. Send your capacity, drive and mounting requirements through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

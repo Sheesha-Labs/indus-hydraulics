@@ -1,0 +1,943 @@
+{
+  "family": "pneumatic-control-valves-03",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions (1 bar = 14.5038 psi): 100 psi = about 7 bar; 120 psi = about 8 bar; 125 psi = about 9 bar; 140 psi = about 10 bar; 145 psi = 10 bar; 150 psi = about 10 bar; 200 psi = about 14 bar; 246 psi = about 17 bar; 250 psi = about 17 bar; 300 psi = about 21 bar; 350 psi = about 24 bar; 500 psi = about 34 bar. Temperature (°C = (°F - 32) / 1.8): -40°F = -40°C; -32°F = -36°C; -25°F = -32°C; -10°F = -23°C; -4°F = -20°C; 0°F = -18°C; 15°F = -9°C; 23°F = -5°C; 32°F = 0°C; 122°F = 50°C; 140°F = 60°C; 150°F = 66°C; 158°F = 70°C; 160°F = 71°C; 176°F = 80°C; 200°F = 93°C; 350°F = 177°C; 400°F = 204°C; 450°F = 232°C.",
+      "source": "NIST SP 811 unit conversion; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "NPT is the American taper pipe thread to ASME B1.20.1 and NPTF is the dryseal version to ASME B1.20.3; BSPP (G) is parallel pipe thread to ISO 228-1 and BSPT (R) is taper pipe thread to ISO 7-1. NPT and BSP threads do not mate. FNPT is female NPT and MNPT is male NPT.",
+      "source": "ASME B1.20.1; ASME B1.20.3; ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "HS 2022 heading 84.81 covers taps, cocks and valves: subheading 8481.20 valves for oleohydraulic or pneumatic transmissions, 8481.30 check (non-return) valves, 8481.40 safety or relief valves, 8481.80 other appliances. The importing country's tariff fixes the final national digits.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "ISO 4414 sets the general rules and safety requirements for pneumatic fluid power systems, including that stored pressure be able to be isolated and exhausted before work on the machine.",
+      "source": "ISO 4414:2010 Pneumatic fluid power - General rules and safety requirements for systems and their components"
+    },
+    {
+      "fact": "Valve function is written as ways/positions: a 3/2 valve has three ports and two positions, a 4/2 valve four ports and two positions, a 4/3 valve four ports and three positions; a 3-position valve may have a closed centre or an exhaust centre.",
+      "source": "ISO 1219-1 Fluid power systems and components - Graphical symbols and circuit diagrams (valve notation)"
+    },
+    {
+      "fact": "SMC IL200 series lock-up valve: IL201 is the single-acting type and IL211 the double-acting type with 1/4 inch ports; a lock-up valve is fitted in an air-operated control line so that, if the air supply or supply piping fails, it traps the air in the actuator line and holds the actuator in position. IL220 is the version where the flow path between IN1 and OUT opens when the signal pressure drops. Suffixes in part numbers: N = NPT thread, T and L are option codes.",
+      "source": "SMC Corporation catalogue, IL200 Series Lock-up Valve (smcusa.com product page and operation manual)"
+    },
+    {
+      "fact": "SMC part numbers use N before the port code for an NPT thread (for example VH402-N04, 1/2 inch NPT, VM230-N02-00A) and a port code of 01, 02, 03, 04 or 06 for 1/8, 1/4, 3/8, 1/2 or 3/4 inch (VH601-N06 is 3/4 inch).",
+      "source": "SMC Best Pneumatics catalogue, hand valve Series VH and mechanical valve Series VM, How to Order"
+    },
+    {
+      "fact": "SMC VNA series media valves are 2-port (2-way) valves for fluids rather than plain air; the catalogue offers air-operated, electromagnetic and N.C. types with different pressure ranges.",
+      "source": "SMC Corporation catalogue, Series VNA / VNB / VNC / VND media valves"
+    },
+    {
+      "fact": "A shuttle valve has two inlets and one outlet: the outlet takes air from whichever inlet is pressurised (OR function). SMC VR1210F and VR1220F are shuttle valves with one-touch fittings.",
+      "source": "SMC Best Pneumatics catalogue, Shuttle Valve Series VR1210/VR1220"
+    }
+  ],
+  "products": [
+    {
+      "slug": "nitra-arv-series-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Nitra ARV series shut-off valves used for?",
+          "a": "Nitra ARV series valves are 3-port, 2-position normally closed twist-knob shut-off valves that isolate and vent compressed air at the head of a line or air-preparation unit. The listing has 3 part numbers: ARV-21, ARV-22 and ARV-32."
+        },
+        {
+          "slot": "B",
+          "q": "What do Nitra ARV-21, ARV-22 and ARV-32 part numbers mean?",
+          "a": "On the rows the digits after ARV give the body and port: ARV-21 has a 1/8 inch female NPT inlet and ARV-22 and ARV-32 each have a 1/4 inch female NPT inlet. Quote the full number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do Nitra ARV valves have?",
+          "a": "The listing has 1/8 inch (ARV-21) and 1/4 inch (ARV-22, ARV-32) female NPT inlets. Check the row of the number you order against your line."
+        },
+        {
+          "slot": "D",
+          "q": "Which Nitra ARV valve should I choose, ARV-22 or ARV-32?",
+          "a": "ARV-22 and ARV-32 share the same 1/4 inch female NPT inlet on their rows, so choose by the body style you need and ask us to confirm the difference before ordering. Our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) covers shut-off valves."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating do Nitra ARV valves have?",
+          "a": "The maker pressure and temperature ratings are not held on this listing, so we do not state any. Ask us for the current Nitra data for the part number you want."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Nitra ARV shut-off valve?",
+          "a": "The inlet is female NPT, so use NPT fittings and nipples from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). The valve vents downstream air through its exhaust port when closed."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Nitra ARV twist-knob shut-off valve?",
+          "a": "Fit it at the head of the circuit with the knob accessible and the exhaust port unobstructed, and use it to isolate and exhaust the line before service, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Nitra ARV compare with the Metal Work shut-off valve?",
+          "a": "The Nitra ARV is a twist-knob shut-off in 1/8 and 1/4 inch, while the [Metal Work shut-off valve](/p/metal-work-shut-off-valves) is made for Syntesi size 1 units and also comes in a solenoid version."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Nitra ARV valve made and which HS code applies?",
+          "a": "The recorded country of origin for the Nitra ARV series is China and the recorded HS code is 848140. Confirm the final tariff line for your destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Nitra ARV series in Dubai?",
+          "a": "Yes, Nitra ARV series valves is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "nitra-pneumatic-manual-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Nitra EVP pneumatic manual valve used for?",
+          "a": "Nitra EVP pneumatic manual valves are 2-port, 2-position plunger valves that a push button operator or machine part presses to open or close an air path. The listing has 4 part numbers: EVP-AA-PL, EVP-AS-PL, EVP-CA-PL and EVP-CS-PL."
+        },
+        {
+          "slot": "B",
+          "q": "What do Nitra EVP pneumatic manual valve part numbers such as EVP-AA-PL mean?",
+          "a": "On the rows, EVP-A is normally open and EVP-C is normally closed, and the next letter shows the port style: A is axial ports and S is side ports. -PL marks the metal plunger with spring return."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Nitra EVP pneumatic manual valve come in?",
+          "a": "This listing is one body size with four variants: two normally open (EVP-AA-PL, EVP-AS-PL) and two normally closed (EVP-CA-PL, EVP-CS-PL), each with axial or side ports."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Nitra EVP pneumatic manual valve?",
+          "a": "Choose normally open (EVP-A) to pass air until the plunger is pressed and normally closed (EVP-C) to block it until pressed, then axial or side ports to suit the piping. See our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Nitra EVP pneumatic manual valve have?",
+          "a": "Nitra gives a maximum pressure of 145 psi (10 bar) for these valves on the listing. A temperature rating is not held, so ask us before use outside normal workshop air conditions."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Nitra EVP pneumatic manual valve made of?",
+          "a": "The listing does not record the body or seal material of the Nitra EVP valves; the actuator is a metal plunger with spring return. Ask us for the material specification of your part number."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Nitra EVP pneumatic manual valve come with certificates?",
+          "a": "We hold no certificate data for the Nitra EVP pneumatic manual valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for EVP-AA-PL and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Nitra EVP pneumatic manual valve?",
+          "a": "The valves are for use with pneumatic push button operators, so they sit under a push button or cam actuator. Pipe them with fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Nitra EVP pneumatic manual valve?",
+          "a": "Mount the valve so the plunger is pressed squarely and not over-travelled, pipe it in the circuit and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Nitra EVP pneumatic manual valve differ from its sibling listings?",
+          "a": "The EVP is a 2-port plunger valve, while the [Nitra ARV valve](/p/nitra-arv-series-valves) is a 3-port twist-knob shut-off valve. Use the EVP for push button logic and the ARV for line isolation."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Nitra EVP pneumatic manual valve made and which HS code applies?",
+          "a": "The recorded country of origin for the Nitra EVP valves is Italy and the recorded HS code is 848120, the pneumatic-valve subheading of 84.81."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Nitra EVP pneumatic manual valve in Dubai?",
+          "a": "Yes. the Nitra EVP pneumatic manual valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-4-way-3-position-lever-manual-air-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics L2 4-way 3-position lever manual air control valve used for?",
+          "a": "The Numatics L2 series 4-way, 3-position lever valve lets an operator hand-select extend, stop or retract on a double-acting cylinder in applications such as pressing and bottling. The listing has 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What do Numatics L2 4-way 3-position lever manual air control valve part numbers such as L23LD552O000000 mean?",
+          "a": "On the rows L23LA552O000000 and L23LA652O000000 are spring-return levers with centre open and centre closed, and L23LD552O000000 and L23LD652O000000 are the detent versions. In the code 3 is the 3/8 inch port, A is spring and D is detent, and 5 or 6 sets the centre."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Numatics L2 4-way 3-position lever manual air control valve come in?",
+          "a": "All four part numbers are 3/8 inch NPT, 4-way, 3-position inline valves, so the choice is lever return and centre condition rather than size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Numatics L2 4-way 3-position lever manual air control valve?",
+          "a": "Choose centre open (L23LA552..., L23LD552...) to let the cylinder float and centre closed (L23LA652..., L23LD652...) to hold it; choose spring return for a deadman lever or detent to stay put. See our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Numatics L2 4-way 3-position lever manual air control valve have?",
+          "a": "The listing is rated 145 psi (10 bar), -10°F to +150°F (about -23 to 66°C), and the valve is vacuum operable. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics L2 4-way 3-position lever manual air control valve made of?",
+          "a": "The body is aluminum with a lever actuator, inline body style and NPT connections. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Numatics L2 4-way 3-position lever manual air control valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Numatics L2 4-way 3-position lever manual air control valve. Tell us what documents your project needs, such as a certificate of conformity or origin for L23LD552O000000, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Numatics L2 4-way 3-position lever manual air control valve?",
+          "a": "With 3/8 inch NPT ports, use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) for supply, the two cylinder lines and the exhausts. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Numatics L2 4-way 3-position lever manual air control valve?",
+          "a": "Mount the lever clear of other controls, pipe supply and cylinder ports as marked, and exhaust the circuit before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics L2 4-way 3-position lever manual air control valve differ from its sibling listings?",
+          "a": "This is a lever-operated 3-position valve, while the [Numatics air pilot 4-way valve](/p/numatics-valve-air-pilot-4-way) is operated by an air signal and also comes in 2-position forms."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics L2 4-way 3-position lever manual air control valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481803090. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Numatics L2 4-way 3-position lever manual air control valve in Dubai?",
+          "a": "Yes, we stock the Numatics L2 4-way 3-position lever manual air control valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-valve-air-pilot-4-way",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics L1/L2 air pilot 4-way valve used for?",
+          "a": "The Numatics air pilot 4-way valve is a spring-return or pilot-return 4-way valve switched by an air signal, used to drive double-acting cylinders in pressing, bottling and stamping. The listing has 8 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What do Numatics L1/L2 air pilot 4-way valve part numbers such as L23PP552O000000 mean?",
+          "a": "The rows show L12 numbers are 1/4 inch and L23 numbers 3/8 inch body-ported valves, 554 numbers are 1/2 inch base-mount valves, PA is pilot/spring and PP is pilot/pilot, and 4 or 5 or 6 in the code marks 2-position or 3-position versions."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Numatics L1/L2 air pilot 4-way valve come in?",
+          "a": "The listing has 1/4 inch (L12), 3/8 inch (L23) and 1/2 inch (554) valves, six body-ported and two base-mount. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Numatics L1/L2 air pilot 4-way valve?",
+          "a": "Choose pilot/spring (PA) to return when the signal is removed, pilot/pilot (PP) to hold until the opposite signal arrives, and a 3-position PP valve for a centre stop. See our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Numatics L1/L2 air pilot 4-way valve have?",
+          "a": "The listing gives a maximum temperature of 150°F (about 66°C), a Cv of 1 and use on air or inert gas, and the valve is vacuum operable. The maker pressure is not held here."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics L1/L2 air pilot 4-way valve made of?",
+          "a": "The listing does not record the body material; the valve is an inline design with a non-locking override. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Numatics L1/L2 air pilot 4-way valve come with certificates?",
+          "a": "The listing for the Numatics L1/L2 air pilot 4-way valve states no certificates and we do not claim any. Certificate of conformity or origin requests for L23PP552O000000 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Numatics L1/L2 air pilot 4-way valve?",
+          "a": "Pipe it with NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and feed the pilot port from a solenoid valve on our [solenoid valves shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Numatics L1/L2 air pilot 4-way valve?",
+          "a": "Mount the valve, connect the pilot line and exhaust silencers, and exhaust the circuit before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics L1/L2 air pilot 4-way valve differ from its sibling listings?",
+          "a": "The air pilot valve is signal-operated, while the [Numatics lever valve](/p/numatics-4-way-3-position-lever-manual-air-control-valve) is operated by hand. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics L1/L2 air pilot 4-way valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481809050. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Numatics L1/L2 air pilot 4-way valve in Dubai?",
+          "a": "Yes. We keep the Numatics L1/L2 air pilot 4-way valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plast-o-matic-bfs-series-manual-air-shut-off-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Plast-O-Matic BFS series manual shut-off valve used for?",
+          "a": "Plast-O-Matic BFS series valves are 1/2 inch manual plastic shut-off valves in PVC or polypropylene with Viton or EPDM seals. The listing has 4 part numbers, including BFS050V-PV."
+        },
+        {
+          "slot": "B",
+          "q": "What do Plast-O-Matic BFS series manual shut-off valve part numbers such as BFS050V-PV mean?",
+          "a": "Read BFS050 as 1/2 inch, then V or EP for the seal (V is Viton, EP is EPDM) and PV or PP for the body (PV is PVC, PP is polypropylene): BFS050EP-PP is an EPDM-sealed polypropylene valve."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Plast-O-Matic BFS series manual shut-off valve come in?",
+          "a": "The listing has one size, 1/2 inch, in four combinations of PVC or polypropylene body with Viton or EPDM seal. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Plast-O-Matic BFS series manual shut-off valve?",
+          "a": "Choose the body and seal to suit the medium: PVC or polypropylene, Viton or EPDM. Ask us to confirm compatibility with your fluid before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Plast-O-Matic BFS series manual shut-off valve have?",
+          "a": "The pressure and temperature ratings are not held on this listing, so we do not state any. Plastic valves have lower limits than metal ones, so ask us for the Plast-O-Matic data."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Plast-O-Matic BFS series manual shut-off valve made of?",
+          "a": "The BFS050 valves come in PVC or polypropylene bodies with Viton or EPDM seals, as BFS050V-PV, BFS050EP-PV, BFS050V-PP and BFS050EP-PP show."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Plast-O-Matic BFS series manual shut-off valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Plast-O-Matic BFS series manual shut-off valve. If your buyer needs paperwork for BFS050V-PV, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Plast-O-Matic BFS series manual shut-off valve?",
+          "a": "Connection type is not recorded on this listing; confirm it with us and see our [manual, mechanical and pilot air valves shelf](/c/pneumatic-control-valves) for other shut-off valves."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Plast-O-Matic BFS series manual shut-off valve?",
+          "a": "Install it with the handle accessible, support the pipe and relieve pressure before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Plast-O-Matic BFS series manual shut-off valve differ from its sibling listings?",
+          "a": "Unlike the metal [Nitra ARV air valve](/p/nitra-arv-series-valves), the BFS is a plastic valve whose body and seal are chosen to suit chemical media. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Plast-O-Matic BFS series manual shut-off valve made and which HS code applies?",
+          "a": "For the Plast-O-Matic BFS series manual shut-off valve, country of origin and HS code are not recorded for the BFS series listing, so we state none; ask us for confirmation on a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Plast-O-Matic BFS series manual shut-off valve in Dubai?",
+          "a": "Yes, the Plast-O-Matic BFS series manual shut-off valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-il200-series-lock-up-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC IL200 series lock-up valve used for?",
+          "a": "The SMC IL200 series lock-up valve traps air in an actuator line if the air supply fails, so the cylinder holds its position. The listing has 3 part numbers: KT-IL201, IL201-02 and IL201-N02."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC IL200 series lock-up valve part numbers such as IL201-N02 mean?",
+          "a": "IL201 is the single-acting type with 1/4 inch ports, -02 is the plain port code and -N02 marks an NPT thread. KT- is a kit number. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC IL200 series lock-up valve come in?",
+          "a": "The listing has the IL201 body with a 1/4 inch port in two threads, IL201-02 and IL201-N02, plus the KT-IL201 kit. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC IL200 series lock-up valve?",
+          "a": "Choose IL201 for single acting service and see the [SMC IL211 and IL220 lock-up valves](/p/smc-lock-up-valve) for double acting or the IL220 flow arrangement. Choose -N02 if your pipework is NPT."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC IL200 series lock-up valve have?",
+          "a": "The maker pressure and temperature ratings are not held on this listing, so we do not state any. Ask us for the SMC IL200 catalogue data."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC IL200 series lock-up valve made of?",
+          "a": "The body and seal material are not recorded on this listing, so we state none; ask us for the SMC specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC IL200 series lock-up valve come with certificates?",
+          "a": "the SMC IL200 series lock-up valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for IL201-N02."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC IL200 series lock-up valve?",
+          "a": "With 1/4 inch ports, use fittings of the matching thread from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). The valve sits in the air line to the actuator."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC IL200 series lock-up valve?",
+          "a": "Fit it in the control line with the signal port connected as shown in the SMC manual and exhaust the line before service. See the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC IL200 series lock-up valve differ from its sibling listings?",
+          "a": "The IL201 is single-acting, while the [IL211 and IL220](/p/smc-lock-up-valve) cover double-acting and the IL220 arrangement. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC IL200 series lock-up valve made and which HS code applies?",
+          "a": "For the SMC IL200 series lock-up valve, country of origin and HS code are not recorded for this listing, so we state none; ask us for confirmation on a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC IL200 series lock-up valve in Dubai?",
+          "a": "Yes. the SMC IL200 series lock-up valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-lock-up-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC IL211 and IL220 lock-up valve used for?",
+          "a": "SMC IL211 and IL220 lock-up valves hold a cylinder in place when the air supply or signal pressure is lost. The listing has 5 part numbers: IL211-02, IL211-N02, IL211-N02-T, IL220-02 and IL220-N02-L, all with NPT or equivalent threads."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC IL211 and IL220 lock-up valve part numbers such as IL211-N02 mean?",
+          "a": "IL211 is the double-acting type and IL220 opens the IN1 to OUT path when the signal pressure drops; -N02 is NPT 1/4 inch, -02 the other thread, and -T and -L are option codes."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC IL211 and IL220 lock-up valve come in?",
+          "a": "All five numbers are the 02 (1/4 inch) size; the choice is between IL211 and IL220 and between thread codes. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC IL211 and IL220 lock-up valve?",
+          "a": "Choose IL211 for double-acting lock-up and IL220 where the flow path should open on signal loss. Ask us for the SMC manual to confirm. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC IL211 and IL220 lock-up valve have?",
+          "a": "The maker pressure and temperature ratings are not held on this listing, so we do not state any. Ask us for the SMC IL200 data. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC IL211 and IL220 lock-up valve made of?",
+          "a": "The listing records an NPT thread and a double-acting type; body and seal materials are not recorded. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC IL211 and IL220 lock-up valve come with certificates?",
+          "a": "We hold no certificate data for the SMC IL211 and IL220 lock-up valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for IL211-N02 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC IL211 and IL220 lock-up valve?",
+          "a": "With 1/4 inch ports, use NPT or matching fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC IL211 and IL220 lock-up valve?",
+          "a": "Fit it in the control line and exhaust the circuit before service. See the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC IL211 and IL220 lock-up valve differ from its sibling listings?",
+          "a": "The [SMC IL201 lock-up valve](/p/smc-il200-series-lock-up-valve) is single-acting; these IL211 and IL220 numbers cover double-acting and the alternate flow path. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC IL211 and IL220 lock-up valve made and which HS code applies?",
+          "a": "For the SMC IL211 and IL220 lock-up valve, country of origin and HS code are not recorded for this listing, so we state none. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC IL211 and IL220 lock-up valve in Dubai?",
+          "a": "Yes, we stock the SMC IL211 and IL220 lock-up valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "smc-manual-air-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC manual air control valves listing used for?",
+          "a": "This SMC listing groups hand, mechanical, solenoid and shuttle valves for basic air control, with 8 part numbers such as VH201-N02, VM230-N02-30GA and VR1210F-07."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC manual air control valves listing part numbers such as VH201-N02 mean?",
+          "a": "SMC prefixes name the family: VH is a hand valve, VM or VZM a mechanical valve, VG a solenoid valve, and VR a shuttle valve; N before the port code means NPT, as in VM130-N01-30RA-B."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC manual air control valves listing come in?",
+          "a": "Ports run from 1/8 inch (NVZM450-N01-01S, VM130-N01-30RA-B) to 1/4 inch (VH201-N02, VM230-N02-30GA) on the valves, and the VG342R is a 1/2 inch solenoid."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC manual air control valves listing?",
+          "a": "Choose by function: VH hand valve for a lever, VM mechanical valve for a roller or push actuator, VR shuttle valve for an OR connection. See our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) and the larger [SMC VM series](/p/smc-vm-series-mechanical-valve)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC manual air control valves listing have?",
+          "a": "The listing gives 130 to 145 psi (9 to 10 bar), by size, and a maximum of 140°F (about 60°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC manual air control valves listing made of?",
+          "a": "The listing records an aluminum body and a roller actuator on some rows; other rows do not state materials. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC manual air control valves listing come with certificates?",
+          "a": "No certificates or approvals are recorded for the SMC manual air control valves listing. Tell us what documents your project needs, such as a certificate of conformity or origin for VH201-N02, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC manual air control valves listing?",
+          "a": "Use NPT fittings or push-in fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) matched to each port. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC manual air control valves listing?",
+          "a": "Mount the valve, pipe it as marked and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC manual air control valves listing differ from its sibling listings?",
+          "a": "Compared with the [SMC VH series hand valve](/p/smc-vh-series-hand-valve) this listing mixes several valve families in 8 part numbers. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC manual air control valves listing made and which HS code applies?",
+          "a": "For the SMC manual air control valves listing, country of origin and HS code are not recorded for this listing, so we state none. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC manual air control valves listing in Dubai?",
+          "a": "Yes. We keep the SMC manual air control valves listing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vh-series-hand-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VH series hand valve used for?",
+          "a": "The SMC VH series hand valve is a manually operated block-type valve with a rod lever or knob that switches air to a cylinder or circuit; the listing holds 163 part numbers across body sizes from 1/4 to 3/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC VH series hand valve part numbers such as VH402-N04 mean?",
+          "a": "The VH digits give the body size and function: VH2 to VH6 are the size groups (VH601-N06 is 3/4 inch, VH402-N04 is 1/2 inch, VH300-03 is 3/8 inch), and N before the port code marks NPT."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC VH series hand valve come in?",
+          "a": "Port sizes are 1/4 inch (VH212-N02), 3/8 inch (VH310-N03), 1/2 inch (VH402-N04) and 3/4 inch (VH601-N06), with the 3/8 inch size most common."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC VH series hand valve?",
+          "a": "Choose the port size to match the line, then 2-position or 3-position (closed centre or exhaust centre) and rod lever or knob. See our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC VH series hand valve have?",
+          "a": "The listing gives 102 to 145 psi (7 to 10 bar), by size, and it is a block horizontal, bottom-mounted valve with the lever holding position."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VH series hand valve made of?",
+          "a": "The listing does not record the body material of the VH series; the switching operation is manual lever with retention. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC VH series hand valve come with certificates?",
+          "a": "The listing for the SMC VH series hand valve states no certificates and we do not claim any. Certificate of conformity or origin requests for VH402-N04 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC VH series hand valve?",
+          "a": "Use NPT or push-in fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) matched to the port thread, and note the bottom mounting. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC VH series hand valve?",
+          "a": "Mount the valve from the bottom, pipe supply and outlets as marked and exhaust the circuit before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VH series hand valve differ from its sibling listings?",
+          "a": "The VH is a hand valve; the [SMC VM mechanical valve](/p/smc-vm-series-mechanical-valve) is operated by a roller, push button, selector or toggle. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VH series hand valve made and which HS code applies?",
+          "a": "For the SMC VH series hand valve, country of origin and HS code are not recorded for this listing, so we state none. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC VH series hand valve in Dubai?",
+          "a": "Yes, the SMC VH series hand valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vm-series-mechanical-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VM series mechanical valve used for?",
+          "a": "The SMC VM series mechanical valve is a roller, push button, toggle or selector valve that a machine part or operator actuates; the listing holds 270 part numbers including VM, VZM, VFM and NVM styles."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC VM series mechanical valve part numbers such as VM430-N01-30B mean?",
+          "a": "The prefix gives the style, such as VM or VZM, and N before the port code marks NPT, as in VM430-N01-30B (1/8 inch) and VM230-N02-00A (1/4 inch). Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC VM series mechanical valve come in?",
+          "a": "Ports are mainly 1/8 inch and 1/4 inch, with fitting-type versions such as VM1000-4NU-32G, in spool and poppet types. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC VM series mechanical valve?",
+          "a": "Choose the actuator style first (roller lever, toggle lever, push button, push pull, twist selector), then spool or poppet and port size. See our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC VM series mechanical valve have?",
+          "a": "The listing gives 102 to 145 psi (7 to 10 bar), by size, with 116 psi on some rows. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VM series mechanical valve made of?",
+          "a": "The listing does not record the body material; types are spool and poppet. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC VM series mechanical valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the SMC VM series mechanical valve. If your buyer needs paperwork for VM430-N01-30B, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC VM series mechanical valve?",
+          "a": "Use NPT or push-in fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC VM series mechanical valve?",
+          "a": "Position the roller so its cam presses it squarely, pipe it as marked and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VM series mechanical valve differ from its sibling listings?",
+          "a": "Against the [SMC VH hand valve](/p/smc-vh-series-hand-valve), the VM is machine-operated through a roller or push button rather than a hand lever. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VM series mechanical valve made and which HS code applies?",
+          "a": "For the SMC VM series mechanical valve, country of origin and HS code are not recorded for this listing, so we state none. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC VM series mechanical valve in Dubai?",
+          "a": "Yes. the SMC VM series mechanical valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vna-series-2-way-media-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC VNA series 2-way media valve used for?",
+          "a": "The SMC VNA series 2-way media valve is a 2-port valve that switches fluids such as water, oil and air; the listing holds 190 part numbers across air-operated, electromagnetic and normally closed types."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC VNA series 2-way media valve part numbers such as VNA301A-20A mean?",
+          "a": "The prefix and digits give the series and size, such as VNA301A-20A with a 3/4 inch port; KT- numbers are kits and SGC and SGH numbers are other SMC valve families."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC VNA series 2-way media valve come in?",
+          "a": "Rows show body ports from 1/4 inch (VNB104BS-8A) and 3/8 inch to 1/2 inch (VNB201B-N15A-X5) and 3/4 inch (VNA301A-20A). Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC VNA series 2-way media valve?",
+          "a": "Choose the operating type first (air operated, electromagnetic or normally closed), then the pressure class (N.C. 0.5, 1, 3.5 or 7 MPa on some rows) and the port size. Ask us to confirm media compatibility."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC VNA series 2-way media valve have?",
+          "a": "Rows carry pressure classes of 0.5, 1, 3.5 and 7 MPa and electromagnetic versions in 24V DC, 100V AC and 110V AC. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC VNA series 2-way media valve made of?",
+          "a": "The listing does not record the body or seal materials; ask us for the SMC specification of your part number. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC VNA series 2-way media valve come with certificates?",
+          "a": "the SMC VNA series 2-way media valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for VNA301A-20A."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC VNA series 2-way media valve?",
+          "a": "Connect it with fittings of the port thread in the row; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC VNA series 2-way media valve?",
+          "a": "Install it with the coil or pilot connected as required and relieve pressure before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC VNA series 2-way media valve differ from its sibling listings?",
+          "a": "Unlike the air valves on our [manual, mechanical and pilot air valves shelf](/c/pneumatic-control-valves), the VNA is a media valve for fluids. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC VNA series 2-way media valve made and which HS code applies?",
+          "a": "For the SMC VNA series 2-way media valve, country of origin and HS code are not recorded for this listing, so we state none. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC VNA series 2-way media valve in Dubai?",
+          "a": "Yes, we stock the SMC VNA series 2-way media valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "velvac-drain-pull-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Velvac drain pull valve used for?",
+          "a": "The Velvac drain pull valve is a cable-operated drain for air tanks that lets an operator open the drain from a distance. The listing has 7 part numbers, including 032081 and cable versions 032135, 032082 and 032160."
+        },
+        {
+          "slot": "B",
+          "q": "What do Velvac drain pull valve part numbers such as 032081 mean?",
+          "a": "The rows show 032081 and 032058 are 1/4 inch MNPT inlet valves, and 032135, 032082 and 032160 are valves with 3, 5 and 100 feet of cable; 032083 and 032170 are cable parts."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Velvac drain pull valve come in?",
+          "a": "Cable lengths on the rows are 3 feet (032135), 5 feet (032082) and 100 feet (032160), with a 1/4 inch MNPT inlet. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Velvac drain pull valve?",
+          "a": "Choose the cable length to reach from the drain to where the operator stands, and add the cable parts if you need to replace one. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Velvac drain pull valve have?",
+          "a": "The maker rating is 120 psi (about 8 bar). A temperature rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Velvac drain pull valve made of?",
+          "a": "The listing records a threaded body style; other materials are not recorded. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Velvac drain pull valve come with certificates?",
+          "a": "We hold no certificate data for the Velvac drain pull valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 032081 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Velvac drain pull valve?",
+          "a": "The valve screws into the tank drain with its 1/4 inch MNPT inlet. For fittings, see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Velvac drain pull valve?",
+          "a": "Fit it to the drain port and run the cable to the pull point without sharp bends. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Velvac drain pull valve differ from its sibling listings?",
+          "a": "Unlike the manual [Wilkerson shut-off valve](/p/wilkerson-modular-shut-off-valves) it is built to drain a tank. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Velvac drain pull valve made and which HS code applies?",
+          "a": "The recorded country of origin is China and the recorded HS code is 8481809010. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Velvac drain pull valve in Dubai?",
+          "a": "Yes. We keep the Velvac drain pull valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-modular-ball-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Wilkerson modular lockout ball valve used for?",
+          "a": "The Wilkerson modular ball valve is an air line lockout valve that shuts and vents the air so equipment can be locked off. The listing has 4 part numbers: V40-02-B000B, V60-03-B000B, V73-04-B000B and V73-06-B000B."
+        },
+        {
+          "slot": "B",
+          "q": "What do Wilkerson modular lockout ball valve part numbers such as V73-04-B000B mean?",
+          "a": "On the rows V40-02 is 1/4 inch, V60-03 is 3/8 inch, V73-04 is 1/2 inch and V73-06 is 3/4 inch NPT, and B000B is the common option code."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Wilkerson modular lockout ball valve come in?",
+          "a": "The four sizes are 1/4, 3/8, 1/2 and 3/4 inch NPT, inlet and outlet. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson modular lockout ball valve?",
+          "a": "Choose the size to match your air line and the downstream equipment's flow. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Wilkerson modular lockout ball valve have?",
+          "a": "The maker rating is 246 psi (about 17 bar) with PTFE seals and a maximum of 176°F (about 80°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Wilkerson modular lockout ball valve made of?",
+          "a": "The body is aluminum, black, with PTFE seals. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson modular lockout ball valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Wilkerson modular lockout ball valve. Tell us what documents your project needs, such as a certificate of conformity or origin for V73-04-B000B, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Wilkerson modular lockout ball valve?",
+          "a": "The valve is modular and connects with NPT fittings; see our [air preparation shelf](/c/air-preparation-frl) for filters and regulators it can sit beside. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Wilkerson modular lockout ball valve?",
+          "a": "Fit it ahead of the equipment, lock the handle off with your own lockout device and exhaust the air before work. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Wilkerson modular lockout ball valve differ from its sibling listings?",
+          "a": "The ball valve is a lockout valve, while the [Wilkerson modular shut-off valve](/p/wilkerson-modular-shut-off-valves) is a plain shut-off listed by size. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson modular lockout ball valve made and which HS code applies?",
+          "a": "The recorded country of origin is China. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Wilkerson modular lockout ball valve in Dubai?",
+          "a": "Yes, the Wilkerson modular lockout ball valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-modular-shut-off-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Wilkerson modular shut-off valve used for?",
+          "a": "The Wilkerson modular shut-off valve isolates air to a modular air-preparation line. The listing has 3 part numbers: GPA-95-096 (1/4 inch), GPA-95-097 (3/8 inch) and GPA-95-098 (1/2 inch)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Wilkerson modular shut-off valve part numbers such as GPA-95-096 mean?",
+          "a": "The last three digits give the size: GPA-95-096 is 1/4 inch, -097 is 3/8 inch and -098 is 1/2 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Wilkerson modular shut-off valve come in?",
+          "a": "The listing has three sizes, 1/4, 3/8 and 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Wilkerson modular shut-off valve?",
+          "a": "Pick the size to match your modular air-preparation unit. Ask us to confirm the matching series. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Wilkerson modular shut-off valve have?",
+          "a": "The maker pressure and temperature ratings are not held on this listing, so we do not state any. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Wilkerson modular shut-off valve made of?",
+          "a": "Materials are not recorded on this listing, so we state none. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wilkerson modular shut-off valve come with certificates?",
+          "a": "The listing for the Wilkerson modular shut-off valve states no certificates and we do not claim any. Certificate of conformity or origin requests for GPA-95-096 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Wilkerson modular shut-off valve?",
+          "a": "It fits Wilkerson modular air-preparation units; see our [air preparation shelf](/c/air-preparation-frl). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Wilkerson modular shut-off valve?",
+          "a": "Fit it at the head of the unit and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Wilkerson modular shut-off valve differ from its sibling listings?",
+          "a": "Compared with the [Wilkerson modular lockout ball valve](/p/wilkerson-modular-ball-valves) this is a plain shut-off valve with no lockout rating stated. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Wilkerson modular shut-off valve made and which HS code applies?",
+          "a": "For the Wilkerson Modular Shut-Off Valves: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Wilkerson modular shut-off valve in Dubai?",
+          "a": "Yes. the Wilkerson modular shut-off valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    }
+  ]
+}

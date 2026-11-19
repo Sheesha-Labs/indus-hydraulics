@@ -1,0 +1,673 @@
+{
+  "family": "flow-iron-flanges-api",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "Accidents, including a fatality, have followed from hammering on hammer unions while the line was under pressure; bleed all pressure off a line before breaking it, and use lockout/tagout and permit-to-work on pressurised lines.",
+      "source": "IADC Safety Alert 03-16 (iadc.org/safety-alerts/alert-03-16-mismatched-hammer-unions-still-found)"
+    },
+    {
+      "fact": "A ring-joint (BX or R) gasket is a single-use seal: once energised it should not be reused, and a new gasket is fitted at every flange make-up.",
+      "source": "Indus Hydraulics BOP spare parts listing, API 6A BX ring gasket set (/c/bop-spare-parts)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "blind-flange-api-6b-5k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blind flange rated 5,000 psi for standard service used for?",
+          "a": "A blind flange has no bore and caps a flanged stack or an unused outlet. The Blind Flange, API 6B 5K, Standard Service is rated 5,000 psi for standard service, in the configuration Blind (no bore) — caps a flanged stack."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blind Flange, API 6B 5K, Standard Service come in?",
+          "a": "The Blind Flange, API 6B 5K, Standard Service is listed in 2-1/16 in, 3-1/8 in, 4-1/16 in, 7-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blind Flange, API 6B 5K, Standard Service?",
+          "a": "On the Blind Flange, API 6B 5K, Standard Service, end A is API 6B 5K flanged (R or RX ring groove). Bore: N/A — blind. It is a single-ended part with no second connection, so state the flange size, class and ring groove type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blind Flange, API 6B 5K, Standard Service?",
+          "a": "The Blind Flange, API 6B 5K, Standard Service is rated 5,000 psi working pressure (5K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). The rating is a working pressure, not a test pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blind Flange, API 6B 5K, Standard Service made from?",
+          "a": "The Blind Flange, API 6B 5K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blind Flange, API 6B 5K, Standard Service meet?",
+          "a": "The blind flange is built to API 6A and supplied API-monogrammed. The Blind Flange, API 6B 5K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blind Flange, API 6B 5K, Standard Service connect to?",
+          "a": "The Blind Flange, API 6B 5K, Standard Service connects at API 6B 5K flanged (R or RX ring groove). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Cameron 5K Blind, FMC 5K, Stream-Flo 5K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blind Flange, API 6B 5K, Standard Service installed and serviced?",
+          "a": "For the Blind Flange, API 6B 5K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blind Flange, API 6B 5K, Standard Service used?",
+          "a": "The Blind Flange, API 6B 5K, Standard Service is used for wellhead bowl caps; christmas-tree top blinds; 5K production-tree blank flanges. It is sized for 2-1/16 in, 3-1/8 in, 4-1/16 in, 7-1/16 in lines at 5,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blind flange 5K 5,000 psi standard differ from similar flow iron?",
+          "a": "The blind flange differs from the [Blind Flange, API 6BX 10K, Standard Service](/p/blind-flange-api-6bx-10k-standard-service) in figure, pressure class or service class. The Blind Flange, API 6B 5K, Standard Service is rated 5,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blind Flange, API 6B 5K, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Blind Flange, API 6B 5K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Blind Flange, API 6B 5K, Standard Service?",
+          "a": "Yes. We list the Blind Flange, API 6B 5K, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "companion-flange-api-6b-5k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a companion flange rated 5,000 psi for standard service used for?",
+          "a": "A companion flange has a threaded end and an API flange end, so threaded line pipe can be connected to a flanged outlet. The Companion Flange, API 6B 5K, Standard Service is rated 5,000 psi for standard service, in the configuration Threaded × API 6B flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Companion Flange, API 6B 5K, Standard Service come in?",
+          "a": "The Companion Flange, API 6B 5K, Standard Service is listed in 2-1/16 in, 3-1/8 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Companion Flange, API 6B 5K, Standard Service?",
+          "a": "On the Companion Flange, API 6B 5K, Standard Service, end A is API 6B 5K flanged (R or RX ring groove) and end B is NPT or LP threaded (per request). Bore: Matches the threaded end."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Companion Flange, API 6B 5K, Standard Service?",
+          "a": "The Companion Flange, API 6B 5K, Standard Service is rated 5,000 psi working pressure (5K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). The rating is a working pressure, not a test pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Companion Flange, API 6B 5K, Standard Service made from?",
+          "a": "The Companion Flange, API 6B 5K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Companion Flange, API 6B 5K, Standard Service meet?",
+          "a": "The companion flange is built to API 6A and supplied API-monogrammed. The Companion Flange, API 6B 5K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Companion Flange, API 6B 5K, Standard Service connect to?",
+          "a": "The Companion Flange, API 6B 5K, Standard Service connects at API 6B 5K flanged (R or RX ring groove) and NPT or LP threaded (per request). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Cameron 5K Companion, FMC 5K, Stream-Flo 5K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Companion Flange, API 6B 5K, Standard Service installed and serviced?",
+          "a": "For the Companion Flange, API 6B 5K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Companion Flange, API 6B 5K, Standard Service used?",
+          "a": "The Companion Flange, API 6B 5K, Standard Service is used for threaded-to-flanged wellhead transitions; choke-line tie-ins; production-tree side-outs. It is sized for 2-1/16 in, 3-1/8 in lines at 5,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the companion flange 5K 5,000 psi standard differ from similar flow iron?",
+          "a": "The companion flange differs from the [Companion Flange, API 6BX 15K, Standard Service](/p/companion-flange-api-6bx-15k-standard-service) in figure, pressure class or service class. The Companion Flange, API 6B 5K, Standard Service is rated 5,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Companion Flange, API 6B 5K, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Companion Flange, API 6B 5K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Companion Flange, API 6B 5K, Standard Service?",
+          "a": "Yes. We list the Companion Flange, API 6B 5K, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "weld-neck-flange-api-6bx-10k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a weld-neck flange rated 10,000 psi for standard service used for?",
+          "a": "A weld-neck flange has a butt-weld end and an API flange end, so a flange is welded into a pipe run. The Weld-Neck Flange, API 6BX 10K, Standard Service is rated 10,000 psi for standard service, in the configuration Butt-Weld × API 6BX flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weld-Neck Flange, API 6BX 10K, Standard Service come in?",
+          "a": "The Weld-Neck Flange, API 6BX 10K, Standard Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Weld-Neck Flange, API 6BX 10K, Standard Service?",
+          "a": "On the Weld-Neck Flange, API 6BX 10K, Standard Service, end A is API 6BX 10K flanged (BX ring groove) and end B is Butt-Weld neck (XXH schedule typical). Bore: Matches the welded line ID."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weld-Neck Flange, API 6BX 10K, Standard Service?",
+          "a": "The Weld-Neck Flange, API 6BX 10K, Standard Service is rated 10,000 psi working pressure (10K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Weld-Neck Flange, API 6BX 10K, Standard Service made from?",
+          "a": "The Weld-Neck Flange, API 6BX 10K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Weld-Neck Flange, API 6BX 10K, Standard Service meet?",
+          "a": "The weld-neck flange is built to API 6A and supplied API-monogrammed. The Weld-Neck Flange, API 6BX 10K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Weld-Neck Flange, API 6BX 10K, Standard Service connect to?",
+          "a": "The Weld-Neck Flange, API 6BX 10K, Standard Service connects at API 6BX 10K flanged (BX ring groove) and Butt-Weld neck (XXH schedule typical). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Cameron 10K WN, FMC 10K, NOV 10K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Weld-Neck Flange, API 6BX 10K, Standard Service installed and serviced?",
+          "a": "For the Weld-Neck Flange, API 6BX 10K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Weld-Neck Flange, API 6BX 10K, Standard Service used?",
+          "a": "The Weld-Neck Flange, API 6BX 10K, Standard Service is used for 10K wellhead piping fabrication; frac-tree welded transitions; high-pressure surface piping. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the weld-neck flange 10K 10,000 psi standard differ from similar flow iron?",
+          "a": "The weld-neck flange differs from the [Weld-Neck Flange, API 6BX 15K, Standard Service](/p/weld-neck-flange-api-6bx-15k-standard-service) in figure, pressure class or service class. The Weld-Neck Flange, API 6BX 10K, Standard Service is rated 10,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Weld-Neck Flange, API 6BX 10K, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Weld-Neck Flange, API 6BX 10K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Weld-Neck Flange, API 6BX 10K, Standard Service?",
+          "a": "Yes. We list the Weld-Neck Flange, API 6BX 10K, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blind-flange-api-6bx-10k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blind flange rated 10,000 psi for standard service used for?",
+          "a": "A blind flange has no bore and caps a flanged stack or an unused outlet. The Blind Flange, API 6BX 10K, Standard Service is rated 10,000 psi for standard service, in the configuration Blind (no bore)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blind Flange, API 6BX 10K, Standard Service come in?",
+          "a": "The Blind Flange, API 6BX 10K, Standard Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blind Flange, API 6BX 10K, Standard Service?",
+          "a": "On the Blind Flange, API 6BX 10K, Standard Service, end A is API 6BX 10K flanged (BX ring groove). Bore: N/A — blind. It is a single-ended part with no second connection, so state the flange size, class and ring groove type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blind Flange, API 6BX 10K, Standard Service?",
+          "a": "The Blind Flange, API 6BX 10K, Standard Service is rated 10,000 psi working pressure (10K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blind Flange, API 6BX 10K, Standard Service made from?",
+          "a": "The Blind Flange, API 6BX 10K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blind Flange, API 6BX 10K, Standard Service meet?",
+          "a": "The blind flange is built to API 6A and supplied API-monogrammed. The Blind Flange, API 6BX 10K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blind Flange, API 6BX 10K, Standard Service connect to?",
+          "a": "The Blind Flange, API 6BX 10K, Standard Service connects at API 6BX 10K flanged (BX ring groove). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names FMC 10K Blind, Cameron 10K, NOV 10K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blind Flange, API 6BX 10K, Standard Service installed and serviced?",
+          "a": "For the Blind Flange, API 6BX 10K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blind Flange, API 6BX 10K, Standard Service used?",
+          "a": "The Blind Flange, API 6BX 10K, Standard Service is used for 10K wellhead stack caps; frac-tree top blinds; 10K test-tree caps. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blind flange 10K 10,000 psi standard differ from similar flow iron?",
+          "a": "The blind flange differs from the [Blind Flange, API 6B 5K, Standard Service](/p/blind-flange-api-6b-5k-standard-service) in figure, pressure class or service class. The Blind Flange, API 6BX 10K, Standard Service is rated 10,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blind Flange, API 6BX 10K, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Blind Flange, API 6BX 10K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Blind Flange, API 6BX 10K, Standard Service?",
+          "a": "Yes. We list the Blind Flange, API 6BX 10K, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blind-flange-api-6bx-15k-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blind flange rated 15,000 psi for sour service used for?",
+          "a": "A blind flange has no bore and caps a flanged stack or an unused outlet. The Blind Flange, API 6BX 15K, Sour Service is rated 15,000 psi for sour service, in the configuration Blind (no bore)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blind Flange, API 6BX 15K, Sour Service come in?",
+          "a": "The Blind Flange, API 6BX 15K, Sour Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blind Flange, API 6BX 15K, Sour Service?",
+          "a": "On the Blind Flange, API 6BX 15K, Sour Service, end A is API 6BX 15K flanged (BX ring groove). Bore: N/A — blind. It is a single-ended part with no second connection, so state the flange size, class and ring groove type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blind Flange, API 6BX 15K, Sour Service?",
+          "a": "The Blind Flange, API 6BX 15K, Sour Service is rated 15,000 psi working pressure (15K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blind Flange, API 6BX 15K, Sour Service made from?",
+          "a": "The Blind Flange, API 6BX 15K, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blind Flange, API 6BX 15K, Sour Service meet?",
+          "a": "The blind flange is built to API 6A and supplied API-monogrammed. The Blind Flange, API 6BX 15K, Sour Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blind Flange, API 6BX 15K, Sour Service connect to?",
+          "a": "The Blind Flange, API 6BX 15K, Sour Service connects at API 6BX 15K flanged (BX ring groove). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names FMC 15K Sour Blind, Cameron 15K NACE, NOV Sour as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blind Flange, API 6BX 15K, Sour Service installed and serviced?",
+          "a": "For the Blind Flange, API 6BX 15K, Sour Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blind Flange, API 6BX 15K, Sour Service used?",
+          "a": "The Blind Flange, API 6BX 15K, Sour Service is used for sour-well 15K frac-tree top caps; H₂S wellhead blinds; NACE-compliant 15K test-tree termination. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blind flange 15K 15,000 psi sour differ from similar flow iron?",
+          "a": "The blind flange differs from the [Blind Flange, API 6BX 15K, Standard Service](/p/blind-flange-api-6bx-15k-standard-service) in figure, pressure class or service class. The Blind Flange, API 6BX 15K, Sour Service is rated 15,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blind Flange, API 6BX 15K, Sour Service?",
+          "a": "The listing states a lead time of 28 days for the Blind Flange, API 6BX 15K, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Blind Flange, API 6BX 15K, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Blind Flange, API 6BX 15K, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "companion-flange-api-6bx-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a companion flange rated 15,000 psi for standard service used for?",
+          "a": "A companion flange has a threaded end and an API flange end, so threaded line pipe can be connected to a flanged outlet. The Companion Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, in the configuration Threaded × API 6BX flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Companion Flange, API 6BX 15K, Standard Service come in?",
+          "a": "The Companion Flange, API 6BX 15K, Standard Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Companion Flange, API 6BX 15K, Standard Service?",
+          "a": "On the Companion Flange, API 6BX 15K, Standard Service, end A is API 6BX 15K flanged (BX ring groove) and end B is NPT threaded. Bore: Matches the threaded end."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Companion Flange, API 6BX 15K, Standard Service?",
+          "a": "The Companion Flange, API 6BX 15K, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Companion Flange, API 6BX 15K, Standard Service made from?",
+          "a": "The Companion Flange, API 6BX 15K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Companion Flange, API 6BX 15K, Standard Service meet?",
+          "a": "The companion flange is built to API 6A and supplied API-monogrammed. The Companion Flange, API 6BX 15K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Companion Flange, API 6BX 15K, Standard Service connect to?",
+          "a": "The Companion Flange, API 6BX 15K, Standard Service connects at API 6BX 15K flanged (BX ring groove) and NPT threaded. Check the flange class, ring groove or connection size against your equipment before ordering. The listing names FMC 15K Companion, Cameron 15K, NOV 15K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Companion Flange, API 6BX 15K, Standard Service installed and serviced?",
+          "a": "For the Companion Flange, API 6BX 15K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Companion Flange, API 6BX 15K, Standard Service used?",
+          "a": "The Companion Flange, API 6BX 15K, Standard Service is used for high-pressure threaded-to-flanged tie-ins; frac-tree threaded ports; pump-truck high-pressure connections. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the companion flange 15K 15,000 psi standard differ from similar flow iron?",
+          "a": "The companion flange differs from the [Companion Flange, API 6B 5K, Standard Service](/p/companion-flange-api-6b-5k-standard-service) in figure, pressure class or service class. The Companion Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Companion Flange, API 6BX 15K, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Companion Flange, API 6BX 15K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Companion Flange, API 6BX 15K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Companion Flange, API 6BX 15K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "weld-neck-flange-api-6bx-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a weld-neck flange rated 15,000 psi for standard service used for?",
+          "a": "A weld-neck flange has a butt-weld end and an API flange end, so a flange is welded into a pipe run. The Weld-Neck Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, in the configuration Butt-Weld × API 6BX flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weld-Neck Flange, API 6BX 15K, Standard Service come in?",
+          "a": "The Weld-Neck Flange, API 6BX 15K, Standard Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Weld-Neck Flange, API 6BX 15K, Standard Service?",
+          "a": "On the Weld-Neck Flange, API 6BX 15K, Standard Service, end A is API 6BX 15K flanged (BX ring groove) and end B is Butt-Weld neck (XXH schedule). Bore: Matches the welded line ID."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weld-Neck Flange, API 6BX 15K, Standard Service?",
+          "a": "The Weld-Neck Flange, API 6BX 15K, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Weld-Neck Flange, API 6BX 15K, Standard Service made from?",
+          "a": "The Weld-Neck Flange, API 6BX 15K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Weld-Neck Flange, API 6BX 15K, Standard Service meet?",
+          "a": "The weld-neck flange is built to API 6A and supplied API-monogrammed. The Weld-Neck Flange, API 6BX 15K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Weld-Neck Flange, API 6BX 15K, Standard Service connect to?",
+          "a": "The Weld-Neck Flange, API 6BX 15K, Standard Service connects at API 6BX 15K flanged (BX ring groove) and Butt-Weld neck (XXH schedule). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names FMC 15K WN, Cameron 15K, NOV 15K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Weld-Neck Flange, API 6BX 15K, Standard Service installed and serviced?",
+          "a": "For the Weld-Neck Flange, API 6BX 15K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Weld-Neck Flange, API 6BX 15K, Standard Service used?",
+          "a": "The Weld-Neck Flange, API 6BX 15K, Standard Service is used for 15K frac-tree welded transitions; high-pressure surface tree fabrication; test-tree welded interfaces. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the weld-neck flange 15K 15,000 psi standard differ from similar flow iron?",
+          "a": "The weld-neck flange differs from the [Weld-Neck Flange, API 6BX 10K, Standard Service](/p/weld-neck-flange-api-6bx-10k-standard-service) in figure, pressure class or service class. The Weld-Neck Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Weld-Neck Flange, API 6BX 15K, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Weld-Neck Flange, API 6BX 15K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Weld-Neck Flange, API 6BX 15K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Weld-Neck Flange, API 6BX 15K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "instrument-flange-api-6bx-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an instrument flange rated 15,000 psi for standard service used for?",
+          "a": "An instrument flange carries a small-bore instrument tap on an API flange, to mount pressure transmitters and gauges on wellhead and frac-tree outlets. The Instrument Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, in the configuration Small-bore instrument tap × API 6BX flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Instrument Flange, API 6BX 15K, Standard Service come in?",
+          "a": "The Instrument Flange, API 6BX 15K, Standard Service is listed in 1-13/16 in, 2-1/16 in (15K and 20K classes available). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Instrument Flange, API 6BX 15K, Standard Service?",
+          "a": "On the Instrument Flange, API 6BX 15K, Standard Service, end A is API 6BX 15K flanged (BX ring groove) and end B is 1/2 in or 3/4 in NPT instrument port. Additional features: Optional 9/16 in Autoclave port for high-pressure transmitter. Bore: 1/2 in NPT or 9/16 in Autoclave."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Instrument Flange, API 6BX 15K, Standard Service?",
+          "a": "The Instrument Flange, API 6BX 15K, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Instrument Flange, API 6BX 15K, Standard Service made from?",
+          "a": "The Instrument Flange, API 6BX 15K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Instrument Flange, API 6BX 15K, Standard Service meet?",
+          "a": "The instrument flange is built to API 6A and supplied API-monogrammed. The Instrument Flange, API 6BX 15K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Instrument Flange, API 6BX 15K, Standard Service connect to?",
+          "a": "The Instrument Flange, API 6BX 15K, Standard Service connects at API 6BX 15K flanged (BX ring groove) and 1/2 in or 3/4 in NPT instrument port. Check the flange class, ring groove or connection size against your equipment before ordering. The listing names FMC Instrument, Cameron Instrument, NOV Instrument as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Instrument Flange, API 6BX 15K, Standard Service installed and serviced?",
+          "a": "For the Instrument Flange, API 6BX 15K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Instrument Flange, API 6BX 15K, Standard Service used?",
+          "a": "The Instrument Flange, API 6BX 15K, Standard Service is used for wellhead pressure-transmitter mounts; christmas-tree gauge ports; frac-tree instrument tap-offs. It is sized for 1-13/16 in, 2-1/16 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the instrument flange 15K 15,000 psi standard differ from similar flow iron?",
+          "a": "The instrument flange differs from the [Blind Flange, API 6BX 15K, Sour Service](/p/blind-flange-api-6bx-15k-sour-service) in figure, pressure class or service class. The Instrument Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Instrument Flange, API 6BX 15K, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Instrument Flange, API 6BX 15K, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Instrument Flange, API 6BX 15K, Standard Service?",
+          "a": "Yes. We list the Instrument Flange, API 6BX 15K, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blind-flange-api-6bx-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blind flange rated 15,000 psi for standard service used for?",
+          "a": "A blind flange has no bore and caps a flanged stack or an unused outlet. The Blind Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, in the configuration Blind (no bore)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blind Flange, API 6BX 15K, Standard Service come in?",
+          "a": "The Blind Flange, API 6BX 15K, Standard Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blind Flange, API 6BX 15K, Standard Service?",
+          "a": "On the Blind Flange, API 6BX 15K, Standard Service, end A is API 6BX 15K flanged (BX ring groove). Bore: N/A — blind. It is a single-ended part with no second connection, so state the flange size, class and ring groove type on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blind Flange, API 6BX 15K, Standard Service?",
+          "a": "The Blind Flange, API 6BX 15K, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blind Flange, API 6BX 15K, Standard Service made from?",
+          "a": "The Blind Flange, API 6BX 15K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blind Flange, API 6BX 15K, Standard Service meet?",
+          "a": "The blind flange is built to API 6A and supplied API-monogrammed. The Blind Flange, API 6BX 15K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blind Flange, API 6BX 15K, Standard Service connect to?",
+          "a": "The Blind Flange, API 6BX 15K, Standard Service connects at API 6BX 15K flanged (BX ring groove). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names NOV 15K Blind, Cameron 15K, FMC 15K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blind Flange, API 6BX 15K, Standard Service installed and serviced?",
+          "a": "For the Blind Flange, API 6BX 15K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blind Flange, API 6BX 15K, Standard Service used?",
+          "a": "The Blind Flange, API 6BX 15K, Standard Service is used for 15K frac-tree top caps; high-pressure wellhead blinds; 15K test-tree termination. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blind flange 15K 15,000 psi standard differ from similar flow iron?",
+          "a": "The blind flange differs from the [Blind Flange, API 6BX 15K, Sour Service](/p/blind-flange-api-6bx-15k-sour-service) in figure, pressure class or service class. The Blind Flange, API 6BX 15K, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blind Flange, API 6BX 15K, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Blind Flange, API 6BX 15K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Blind Flange, API 6BX 15K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Blind Flange, API 6BX 15K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "weld-neck-flange-api-6b-5k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a weld-neck flange rated 5,000 psi for standard service used for?",
+          "a": "A weld-neck flange has a butt-weld end and an API flange end, so a flange is welded into a pipe run. The Weld-Neck Flange, API 6B 5K, Standard Service is rated 5,000 psi for standard service, in the configuration Butt-Weld × API 6B flange."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weld-Neck Flange, API 6B 5K, Standard Service come in?",
+          "a": "The Weld-Neck Flange, API 6B 5K, Standard Service is listed in 2-1/16 in, 3-1/8 in, 4-1/16 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Weld-Neck Flange, API 6B 5K, Standard Service?",
+          "a": "On the Weld-Neck Flange, API 6B 5K, Standard Service, end A is API 6B 5K flanged (R or RX ring groove) and end B is Butt-Weld neck (XH/XXH schedule per spec). Bore: Matches the welded line ID."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weld-Neck Flange, API 6B 5K, Standard Service?",
+          "a": "The Weld-Neck Flange, API 6B 5K, Standard Service is rated 5,000 psi working pressure (5K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). The rating is a working pressure, not a test pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Weld-Neck Flange, API 6B 5K, Standard Service made from?",
+          "a": "The Weld-Neck Flange, API 6B 5K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Weld-Neck Flange, API 6B 5K, Standard Service meet?",
+          "a": "The weld-neck flange is built to API 6A and supplied API-monogrammed. The Weld-Neck Flange, API 6B 5K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Weld-Neck Flange, API 6B 5K, Standard Service connect to?",
+          "a": "The Weld-Neck Flange, API 6B 5K, Standard Service connects at API 6B 5K flanged (R or RX ring groove) and Butt-Weld neck (XH/XXH schedule per spec). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Stream-Flo 5K WN, Cameron 5K, FMC 5K as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Weld-Neck Flange, API 6B 5K, Standard Service installed and serviced?",
+          "a": "For the Weld-Neck Flange, API 6B 5K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Weld-Neck Flange, API 6B 5K, Standard Service used?",
+          "a": "The Weld-Neck Flange, API 6B 5K, Standard Service is used for wellhead-to-piping welded transitions; christmas-tree fabrication; production-line tie-ins. It is sized for 2-1/16 in, 3-1/8 in, 4-1/16 in lines at 5,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the weld-neck flange 5K 5,000 psi standard differ from similar flow iron?",
+          "a": "The weld-neck flange differs from the [Weld-Neck Flange, API 6BX 10K, Standard Service](/p/weld-neck-flange-api-6bx-10k-standard-service) in figure, pressure class or service class. The Weld-Neck Flange, API 6B 5K, Standard Service is rated 5,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Weld-Neck Flange, API 6B 5K, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Weld-Neck Flange, API 6B 5K, Standard Service, and gives Canada as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Weld-Neck Flange, API 6B 5K, Standard Service?",
+          "a": "Yes. We list the Weld-Neck Flange, API 6B 5K, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1315 @@
+{
+  "family": "marine-hoses",
+  "extraFacts": [
+    {
+      "fact": "Marine hose terms: SAE J2006 R1 is soft-wall and R2 hard-wall (steel helix) wet exhaust hose; Type A1 and A2 are marine fuel hose classes (A1 for fuel lines, A2 for fill and vent); B1 is low-permeation outboard fuel hose; ID is the inside diameter; wet exhaust hose carries engine exhaust and cooling water; bilge hose handles bilge water, and live-well hose carries water to a fishing live well.",
+      "source": "SAE J2006; SAE J1527; ISO 8469; ABYC H-24 (hose standards for marine exhaust and fuel)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Barrier-Lined Marine Fuel Hose, Type A1-15 [IH-MH-FUEL-365]:   XX | Application Family fuel; Inner Diameter Range 1/4\" to 3/4\" ID; Operating Temperature -20°F to 212°F (-28°C to 100°C); Lining / Tube Material Tube: Nylon Internal Barrier, NBR; Cover: NBR/PVC Blend; Reinforcement Polyester, 2-spiral | 29 part numbers (e.g. IH-MH-365-04-100, IH-MH-365-04-25, IH-MH-365-04-250RL, IH-MH-365-04-50); ; rows:  /  /  /  /  /  /  /  || Black PVC Bilge & Live-Well Hose, Hard PVC Helix [IH-MH-BLG-149]:   XX | Application Family bilge, live-well & water; Inner Diameter Range 5/8\" to 1-1/2\" ID; Operating Temperature 10°F to 120°F (-12°C to 48°C); Lining / Tube Material Hard PVC helix | 12 part numbers (e.g. IH-MH-149-10-100, IH-MH-149-10-50, IH-MH-149-12-100, IH-MH-149-12-50); supply 100 ft coil and 50 ft box; rows:  /  /  /  /  /  /  /  || Clear PVC Hose with Steel Wire Helix, FDA [IH-MH-BLG-163]:   XX | Application Family bilge, live-well & water; Inner Diameter Range 1/2\" to 1-1/2\" ID; Operating Temperature -5°F to 150°F (-20°C to 65°C); Lining / Tube Material Plasticized PVC with steel helix | 18 part numbers (e.g. IH-MH-163-08-100, IH-MH-163-08-25, IH-MH-163-08-50, IH-MH-163-10-100); supply 100 ft coil, 25 ft box and 50 ft box; rows:  /  /  /  /  /  /  /  || Clear PVC Water, Drain & Vent Tubing, FDA [IH-MH-BLG-150]:   XX | Application Family bilge, live-well & water; Inner Diameter Range 1/4\" to 1-1/2\" ID; Operating Temperature 20°F to 150°F (-7°C to 65°C); Lining / Tube Material Plasticized PVC (FDA) | 36 part numbers (e.g. IH-MH-150-04-100, IH-MH-150-04-25, IH-MH-150-04-250, IH-MH-150-04-50); ; rows:  /  /  /  /  /  /  /  || Clear Vinyl Bilge & Live-Well Hose, PVC Helix [IH-MH-BLG-144]:   XX | Application Family bilge, live-well & water; Inner Diameter Range 5/8\" to 1-1/2\" ID; Operating Temperature 10°F to 120°F (-12°C to 49°C); Lining / Tube Material Heavy-wall vinyl (FDA approved) with PVC reinforcement | 12 part numbers (e.g. IH-MH-144-10-100, IH-MH-144-10-50, IH-MH-144-12-100, IH-MH-144-12-50); supply 100 ft coil and 50 ft box; rows:  /  /  /  /  /  /  /  || Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix [IH-MH-FUEL-329]:   XX | Application Family fuel; Inner Diameter Range 1-1/2\" to 2\" ID; Operating Temperature -4°F to 212°F (-20°C to 100°C); Lining / Tube Material Tube: NBR; Cover: NBR/EPDM Blend; Reinforcement High Tenacity Polyester, 2-spiral, Spring Steel Helix | 8 part numbers (e.g. IH-MH-329-24-12, IH-MH-329-24-12-1B, IH-MH-329-24-12-TB, IH-MH-329-24-25); ; rows:  /  /  /  /  /  /  /  || Corrugated Marine Wet Exhaust Hose, Hard Wall [IH-MH-EXHT-252]:   XX | Application Family wet exhaust & water; Inner Diameter Range 1-1/2\" to 8\" ID; Operating Temperature 280°F (138°C); Lining / Tube Material High Temp EPDM Rubber; Reinforcement Multi-ply, High Tenacity Polyester, Steel Helix; Applicable Standards Exceeds SAE J2006-R2, ABYC & NMMA P-1, Lloyd’s Registry Type Approved | 80 part numbers (e.g. IH-MH-252-24-12, IH-MH-252-24-12-1B, IH-MH-252-24-12-TB, IH-MH-252-24-25); ; rows:  /  /  /  /  /  /  /  || Corrugated Polyethylene Bilge Hose, Black or White [IH-MH-BLG-120]:   XX | Application Family bilge, live-well & water; Inner Diameter Range 5/8\" to 1-1/2\" ID; Operating Temperature -40°F to 200°F (-40°C to 93°C); Lining / Tube Material Corrugated Polyethylene | 18 part numbers (e.g. IH-MH-121-10-50, IH-MH-121-10-750, IH-MH-121-12-50, IH-MH-120-12-50); ; rows:  /  /  /  /  /  /  /  || EPDM Heater Hose, 2-Ply Polyester [IH-MH-EXHT-130]:   XX | Application Family heater & water; Inner Diameter Range 1/2\" to 3/4\" ID; Operating Temperature -40°F to 212°F (-40°C to 100°C); Lining / Tube Material EPDM Rubber | 12 part numbers (e.g. IH-MH-130-08-50, IH-MH-130-08-500, IH-MH-130-10-0-10, IH-MH-130-10-0-20); ; rows:  /  /  /  /  /  /  /  || Extra-Heavy-Duty Clear Bilge & Live-Well Hose [IH-MH-BLG-147]:   XX | Application Family bilge, live-well & water; Inner Diameter Range 5/8\" to 1-1/2\" ID; Operating Temperature 10°F to 120°F (-12°C to 49°C); Lining / Tube Material Clear vinyl with black PVC helix reinforcement | 12 part numbers (e.g. IH-MH-147-10-100, IH-MH-147-10-50, IH-MH-147-12-100, IH-MH-147-12-50); supply 100 ft coil and 50 ft box; rows:  /  /  /  /  /  /  /  || High-Temperature EPDM Water & Air Hose, 4-Ply [IH-MH-EXHT-134]:   XX | Application Family heater & water; Inner Diameter Range 3/8\" to 1\" ID; Max Working Pressure 300 psi (3/8\") to 300 psi (1\"), manufacturer; Operating Temperature -40°F to 212°F (-40°C to 100°C); Lining / Tube Material Tube & Cover: EDPM Rubber; Reinforcement Polyester | 10 part numbers (e.g. IH-MH-134-06-50, IH-MH-134-06-650, IH-MH-134-08-450, IH-MH-134-08-50); ; rows:  /  /  /  /  /  /  /  || Low-Permeation Outboard Fuel Hose, Type B1-15 [IH-MH-FUEL-305]:   XX | Application Family fuel; Inner Diameter Range 1/4\" to 3/8\" ID; Operating Temperature -20°F to 212°F (-28°C to 100°C); Lining / Tube Material Tube: Fluoroplastic Barrier, Cover: Gray CPE Rubber; Reinforcement 2-Spiral Polyester Plies; Applicable Standards Exceeds ABYC H-24, SAE J1527, ISO 8469 B1, EPA Certified, CARB Executive Order, NMMA Type Accepted, CE certified | 12 part numbers (e.g. IH-MH-305-04-100, IH-MH-305-04, IH-MH-305-04-25, IH-MH-305-04-50); supply 100 ft box, 100 ft coil, 25 ft box and 50 ft box; rows:  /  /  /  /  /  /  /  || Marine Fuel Fill & Diesel Transfer Hose, Type A2 [IH-MH-FUEL-327]:   XX | Application Family fuel; Inner Diameter Range 3/4\" to 2-1/2\" ID; Operating Temperature -20°F to 212°F (-28°C to 100°C); Lining / Tube Material Tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; Reinforcement Polyester, 2-spiral | 38 part numbers (e.g. IH-MH-327-12-12, IH-MH-327-12-12-1B, IH-MH-327-12-12-CT, IH-MH-327-12-25); ; rows:  /  /  /  /  /  /  /  || Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps [IH-MH-FUEL-328]:   XX | Application Family fuel; Inner Diameter Range 1-1/2\" ID; Operating Temperature -4°F to 212°F (-20°C to 100°C) | 3 part numbers (e.g. IH-MH-328-24-12, IH-MH-328-24-12-TB, IH-MH-328-24-50); supply 12.5 ft length, 12.5 ft length with 4 T-bolt clamps and 50 ft coil; rows:  /  /  || Marine Fuel Hose, Type A1-15, Nylon Barrier [IH-MH-FUEL-319]:   XX | Application Family fuel; Inner Diameter Range 1/4\" to 5/8\" ID; Operating Temperature -20°F to 212°F (-28°C to 100°C); Lining / Tube Material Tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; Reinforcement Polyester, 2-spiral | 20 part numbers (e.g. IH-MH-319-04-100, IH-MH-319-04-25, IH-MH-319-04-250RL, IH-MH-319-04-50); supply 100 ft box, 25 ft box, 250 ft reel and 50 ft box; rows:  /  /  /  /  /  /  /  || Marine Fuel Vent Hose, Type A2, 5/8\" [IH-MH-FUEL-317]:   XX | Application Family fuel; Inner Diameter Range 5/8\" ID; Operating Temperature -20°F to 212°F (-28°C to 100°C); Lining / Tube Material Tube: NBR; Cover: NBR/PVC Blend; Reinforcement Polyester, 2-spiral | 4 part numbers (e.g. IH-MH-317-10-100, IH-MH-317-10-25, IH-MH-317-10-250RL, IH-MH-317-10-50); supply 100 ft box, 25 ft box, 250 ft reel and 50 ft box; rows:  /  /  /  || Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) [IH-MH-EXHT-250]:   XX | Application Family wet exhaust & water; Inner Diameter Range 1-1/2\" to 8\" ID; Operating Temperature 250°F (121°C); Lining / Tube Material High Temp EDPM Rubber; Reinforcement Multi-ply, High Tenacity Polyester, Steel Helix; Applicable Standards Exceeds SAE J2006-R2, ABYC & NMMA P-1, Lloyd’s Registry Type Approved | 103 part numbers (e.g. IH-MH-250-24-12, IH-MH-250-24-12-1B, IH-MH-250-24-12-TB, IH-MH-250-24-25); ; rows:  /  /  /  /  /  /  /  || Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) [IH-MH-EXHT-200]:   XX | Application Family wet exhaust & water; Inner Diameter Range 1-1/2\" to 12\" ID; Operating Temperature 280°F (138°C) Max; Lining / Tube Material High Temp EDPM Rubber; Reinforcement Multi-ply, High Tenacity Polyester; Applicable Standards Exceeds SAE J2006-R1, ABYC & NMMA P-1, Lloyd’s Registry Type Approved | 109 part numbers (e.g. IH-MH-200-24-12, IH-MH-200-24-12-TB, IH-MH-200-24-50, IH-MH-200-24-6.2); ; rows:  /  /  /  /  /  /  /  || Silicone Marine Wet Exhaust & Water Hose, Blue [IH-MH-EXHT-202V]:   XX | Application Family wet exhaust & water; Inner Diameter Range 1\" to 18\" ID; Operating Temperature 350°F (176.7°C); Lining / Tube Material Tube & Cover: High-temp silicone; Reinforcement Polyester | 96 part numbers (e.g. IH-MH-202V-16-12, IH-MH-202V-16-3-36, IH-MH-202V-16-6, IH-MH-202V-18-12); supply 12 ft length, 3 ft length and 6 ft length; rows:  /  /  /  /  /  /  /  || White Corrugated Water-Fill Hose, FDA Vinyl [IH-MH-BLG-146]:   XX | Application Family bilge, live-well & water; Inner Diameter Range 3/4\" to 1-1/2\" ID; Operating Temperature 10°F to 120°F (-12°C to 49°C); Lining / Tube Material Corrugated heavy wall vinyl, PVC reinforcement | 6 part numbers (e.g. IH-MH-146-12-100, IH-MH-146-12-50, IH-MH-146-16-100, IH-MH-146-16-50); supply 100 ft coil and 50 ft box; rows:  /  /  /  /  / ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "barrier-lined-marine-fuel-hose-type-a1-15",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Barrier-Lined Marine Fuel Hose, Type A1-15 used for?",
+          "a": "The Barrier-Lined Marine Fuel Hose, Type A1-15 is used for marine and boat-plant service: suitable for both gasoline (up to E85) and diesel (up to B100). See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Barrier-Lined Marine Fuel Hose, Type A1-15 part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-365-04-100 is 1/4\" ID, 100 ft box and IH-MH-365-04-25 is the same size as 25 ft box. The 29 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Barrier-Lined Marine Fuel Hose, Type A1-15 come in?",
+          "a": "The Barrier-Lined Marine Fuel Hose, Type A1-15 is listed in 29 part numbers, 1/4\" to 3/4\" ID. Supply forms in the table include 100 ft box, 25 ft box, 250 ft reel, 50 ft box and 5 ft poly bag. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Barrier-Lined Marine Fuel Hose, Type A1-15 rated for?",
+          "a": "The Barrier-Lined Marine Fuel Hose, Type A1-15 is listed for -20°F to 212°F (-28°C to 100°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Barrier-Lined Marine Fuel Hose, Type A1-15 made of?",
+          "a": "The Barrier-Lined Marine Fuel Hose, Type A1-15 has construction: Tube: Nylon Internal Barrier, NBR; Cover: NBR/PVC Blend; reinforcement: Polyester, 2-spiral."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Barrier-Lined Marine Fuel Hose, Type A1-15 carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Barrier-Lined Marine Fuel Hose, Type A1-15. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Barrier-Lined Marine Fuel Hose, Type A1-15?",
+          "a": "Choose clamps and barbs that suit the 1/4\" to 3/4\" ID bore of the Barrier-Lined Marine Fuel Hose, Type A1-15, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Barrier-Lined Marine Fuel Hose, Type A1-15?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 29 part numbers cover 1/4\" to 3/4\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Barrier-Lined Marine Fuel Hose, Type A1-15 typically used?",
+          "a": "The Barrier-Lined Marine Fuel Hose, Type A1-15 is listed under the fuel application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Barrier-Lined Marine Fuel Hose, Type A1-15 compare with the Marine Fuel Hose, Type A1-15, Nylon Barrier?",
+          "a": "The Barrier-Lined Marine Fuel Hose, Type A1-15 differs from the [Marine Fuel Hose, Type A1-15, Nylon Barrier](/p/marine-fuel-hose-type-a1-15-nylon-barrier). In detail: construction tube: Nylon Internal Barrier, NBR; Cover: NBR/PVC Blend here against tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; sizes 1/4\" to 3/4\" ID against 1/4\" to 5/8\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Barrier-Lined Marine Fuel Hose, Type A1-15 supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft box, 25 ft box, 250 ft reel and 50 ft box. We ship the Barrier-Lined Marine Fuel Hose, Type A1-15 from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Barrier-Lined Marine Fuel Hose, Type A1-15 in stock in Dubai?",
+          "a": "Yes. We keep the Barrier-Lined Marine Fuel Hose, Type A1-15 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "black-pvc-bilge-and-live-well-hose-hard-pvc-helix",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Black PVC Bilge & Live-Well Hose, Hard PVC Helix used for?",
+          "a": "The Black PVC Bilge & Live-Well Hose, Hard PVC Helix is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Black PVC Bilge & Live-Well Hose, Hard PVC Helix part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-149-10-100 is 5/8\" ID, 100 ft coil and IH-MH-149-10-50 is the same size as 50 ft box. The 12 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Black PVC Bilge & Live-Well Hose, Hard PVC Helix come in?",
+          "a": "The Black PVC Bilge & Live-Well Hose, Hard PVC Helix is listed in 12 part numbers, 5/8\" to 1-1/2\" ID. Supply forms in the table include 100 ft coil and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Black PVC Bilge & Live-Well Hose, Hard PVC Helix rated for?",
+          "a": "The Black PVC Bilge & Live-Well Hose, Hard PVC Helix is listed for 10°F to 120°F (-12°C to 48°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Black PVC Bilge & Live-Well Hose, Hard PVC Helix made of?",
+          "a": "The Black PVC Bilge & Live-Well Hose, Hard PVC Helix has construction: Hard PVC helix; colour: Black. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Black PVC Bilge & Live-Well Hose, Hard PVC Helix carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Black PVC Bilge & Live-Well Hose, Hard PVC Helix. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Black PVC Bilge & Live-Well Hose, Hard PVC Helix?",
+          "a": "Choose clamps and barbs that suit the 5/8\" to 1-1/2\" ID bore of the Black PVC Bilge & Live-Well Hose, Hard PVC Helix, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Black PVC Bilge & Live-Well Hose, Hard PVC Helix?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 12 part numbers cover 5/8\" to 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Black PVC Bilge & Live-Well Hose, Hard PVC Helix typically used?",
+          "a": "The Black PVC Bilge & Live-Well Hose, Hard PVC Helix is listed under the bilge, live-well & water application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Black PVC Bilge & Live-Well Hose, Hard PVC Helix compare with the Clear Vinyl Bilge & Live-Well Hose, PVC Helix?",
+          "a": "The Black PVC Bilge & Live-Well Hose, Hard PVC Helix differs from the [Clear Vinyl Bilge & Live-Well Hose, PVC Helix](/p/clear-vinyl-bilge-and-live-well-hose-pvc-helix). In detail: construction hard PVC helix here against heavy-wall vinyl (FDA approved) with PVC reinforcement; temperature 10°F to 120°F (-12°C to 48°C) here against 10°F to 120°F (-12°C to 49°C). Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Black PVC Bilge & Live-Well Hose, Hard PVC Helix supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft coil and 50 ft box. We ship the Black PVC Bilge & Live-Well Hose, Hard PVC Helix from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Black PVC Bilge & Live-Well Hose, Hard PVC Helix in stock in Dubai?",
+          "a": "Yes, we hold the Black PVC Bilge & Live-Well Hose, Hard PVC Helix in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "clear-pvc-hose-with-steel-wire-helix-fda",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Clear PVC Hose with Steel Wire Helix, FDA used for?",
+          "a": "The Clear PVC Hose with Steel Wire Helix, FDA is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Clear PVC Hose with Steel Wire Helix, FDA part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-163-08-100 is 1/2\" ID, 100 ft coil and IH-MH-163-08-25 is the same size as 25 ft box. The 18 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Clear PVC Hose with Steel Wire Helix, FDA come in?",
+          "a": "The Clear PVC Hose with Steel Wire Helix, FDA is listed in 18 part numbers, 1/2\" to 1-1/2\" ID. Supply forms in the table include 100 ft coil, 25 ft box and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Clear PVC Hose with Steel Wire Helix, FDA rated for?",
+          "a": "The Clear PVC Hose with Steel Wire Helix, FDA is listed for -5°F to 150°F (-20°C to 65°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Clear PVC Hose with Steel Wire Helix, FDA made of?",
+          "a": "The Clear PVC Hose with Steel Wire Helix, FDA has construction: Plasticized PVC with steel helix; colour: Clear. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Clear PVC Hose with Steel Wire Helix, FDA carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Clear PVC Hose with Steel Wire Helix, FDA. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Clear PVC Hose with Steel Wire Helix, FDA?",
+          "a": "Choose clamps and barbs that suit the 1/2\" to 1-1/2\" ID bore of the Clear PVC Hose with Steel Wire Helix, FDA, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Clear PVC Hose with Steel Wire Helix, FDA?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 18 part numbers cover 1/2\" to 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Clear PVC Hose with Steel Wire Helix, FDA typically used?",
+          "a": "The Clear PVC Hose with Steel Wire Helix, FDA is listed under the bilge, live-well & water application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Clear PVC Hose with Steel Wire Helix, FDA compare with the Clear PVC Water, Drain & Vent Tubing, FDA?",
+          "a": "The Clear PVC Hose with Steel Wire Helix, FDA differs from the [Clear PVC Water, Drain & Vent Tubing, FDA](/p/clear-pvc-potable-water-tubing-fda). In detail: construction plasticized PVC with steel helix here against plasticized PVC (FDA); temperature -5°F to 150°F (-20°C to 65°C) here against 20°F to 150°F (-7°C to 65°C); sizes 1/2\" to 1-1/2\" ID against 1/4\" to 1-1/2\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Clear PVC Hose with Steel Wire Helix, FDA supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft coil, 25 ft box and 50 ft box. We ship the Clear PVC Hose with Steel Wire Helix, FDA from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Clear PVC Hose with Steel Wire Helix, FDA in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Clear PVC Hose with Steel Wire Helix, FDA and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "clear-pvc-potable-water-tubing-fda",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Clear PVC Water, Drain & Vent Tubing, FDA used for?",
+          "a": "The Clear PVC Water, Drain & Vent Tubing, FDA is used for unpressurised, cool fresh-water, drain and vent lines. See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Clear PVC Water, Drain & Vent Tubing, FDA part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-150-04-100 is 1/4\" ID, 100 ft box and IH-MH-150-04-25 is the same size as 25 ft box. The 36 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Clear PVC Water, Drain & Vent Tubing, FDA come in?",
+          "a": "The Clear PVC Water, Drain & Vent Tubing, FDA is listed in 36 part numbers, 1/4\" to 1-1/2\" ID. Supply forms in the table include 100 ft box, 25 ft box, 250 ft coil, 50 ft box and 100 ft coil. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Clear PVC Water, Drain & Vent Tubing, FDA rated for?",
+          "a": "The Clear PVC Water, Drain & Vent Tubing, FDA is listed for 20°F to 150°F (-7°C to 65°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Clear PVC Water, Drain & Vent Tubing, FDA made of?",
+          "a": "The Clear PVC Water, Drain & Vent Tubing, FDA has construction: Plasticized PVC (FDA); colour: Clear. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Clear PVC Water, Drain & Vent Tubing, FDA carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Clear PVC Water, Drain & Vent Tubing, FDA. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Clear PVC Water, Drain & Vent Tubing, FDA?",
+          "a": "Choose clamps and barbs that suit the 1/4\" to 1-1/2\" ID bore of the Clear PVC Water, Drain & Vent Tubing, FDA, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Clear PVC Water, Drain & Vent Tubing, FDA?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 36 part numbers cover 1/4\" to 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Clear PVC Water, Drain & Vent Tubing, FDA typically used?",
+          "a": "The Clear PVC Water, Drain & Vent Tubing, FDA is listed under the bilge, live-well & water application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Clear PVC Water, Drain & Vent Tubing, FDA compare with the Clear PVC Hose with Steel Wire Helix, FDA?",
+          "a": "The Clear PVC Water, Drain & Vent Tubing, FDA differs from the [Clear PVC Hose with Steel Wire Helix, FDA](/p/clear-pvc-hose-with-steel-wire-helix-fda). In detail: construction plasticized PVC (FDA) here against plasticized PVC with steel helix; temperature 20°F to 150°F (-7°C to 65°C) here against -5°F to 150°F (-20°C to 65°C); sizes 1/4\" to 1-1/2\" ID against 1/2\" to 1-1/2\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Clear PVC Water, Drain & Vent Tubing, FDA supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft box, 25 ft box, 250 ft coil and 50 ft box. We ship the Clear PVC Water, Drain & Vent Tubing, FDA from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Clear PVC Water, Drain & Vent Tubing, FDA in stock in Dubai?",
+          "a": "Yes, we carry the Clear PVC Water, Drain & Vent Tubing, FDA in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "clear-vinyl-bilge-and-live-well-hose-pvc-helix",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Clear Vinyl Bilge & Live-Well Hose, PVC Helix used for?",
+          "a": "The Clear Vinyl Bilge & Live-Well Hose, PVC Helix is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Clear Vinyl Bilge & Live-Well Hose, PVC Helix part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-144-10-100 is 5/8\" ID, 100 ft coil and IH-MH-144-10-50 is the same size as 50 ft box. The 12 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Clear Vinyl Bilge & Live-Well Hose, PVC Helix come in?",
+          "a": "The Clear Vinyl Bilge & Live-Well Hose, PVC Helix is listed in 12 part numbers, 5/8\" to 1-1/2\" ID. Supply forms in the table include 100 ft coil and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Clear Vinyl Bilge & Live-Well Hose, PVC Helix rated for?",
+          "a": "The Clear Vinyl Bilge & Live-Well Hose, PVC Helix is listed for 10°F to 120°F (-12°C to 49°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Clear Vinyl Bilge & Live-Well Hose, PVC Helix made of?",
+          "a": "The Clear Vinyl Bilge & Live-Well Hose, PVC Helix has construction: Heavy-wall vinyl (FDA approved) with PVC reinforcement; colour: Clear with black PVC helix. Not recommended for below-the-waterline connections."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Clear Vinyl Bilge & Live-Well Hose, PVC Helix carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Clear Vinyl Bilge & Live-Well Hose, PVC Helix. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Clear Vinyl Bilge & Live-Well Hose, PVC Helix?",
+          "a": "Choose clamps and barbs that suit the 5/8\" to 1-1/2\" ID bore of the Clear Vinyl Bilge & Live-Well Hose, PVC Helix, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Clear Vinyl Bilge & Live-Well Hose, PVC Helix?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 12 part numbers cover 5/8\" to 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Clear Vinyl Bilge & Live-Well Hose, PVC Helix typically used?",
+          "a": "The Clear Vinyl Bilge & Live-Well Hose, PVC Helix is listed under the bilge, live-well & water application family. Not recommended for below-the-waterline connections. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Clear Vinyl Bilge & Live-Well Hose, PVC Helix compare with the Extra-Heavy-Duty Clear Bilge & Live-Well Hose?",
+          "a": "The Clear Vinyl Bilge & Live-Well Hose, PVC Helix differs from the [Extra-Heavy-Duty Clear Bilge & Live-Well Hose](/p/extra-heavy-duty-clear-bilge-and-live-well-hose). In detail: construction heavy-wall vinyl (FDA approved) with PVC reinforcement here against clear vinyl with black PVC helix reinforcement. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Clear Vinyl Bilge & Live-Well Hose, PVC Helix supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft coil and 50 ft box. We ship the Clear Vinyl Bilge & Live-Well Hose, PVC Helix from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Clear Vinyl Bilge & Live-Well Hose, PVC Helix in stock in Dubai?",
+          "a": "Yes. We keep the Clear Vinyl Bilge & Live-Well Hose, PVC Helix in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "corrugated-marine-fuel-fill-hose-type-a2-steel-helix",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix used for?",
+          "a": "The Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix is used for marine and boat-plant service: suitable for gasoline fill and diesel transfer, including ethanol and biodiesel blends. See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-329-24-12 is 1-1/2\" ID, 12.5 ft length and IH-MH-329-24-12-1B is the same size as 12.5 ft length box. The 8 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix come in?",
+          "a": "The Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix is listed in 8 part numbers, 1-1/2\" to 2\" ID. Supply forms in the table include 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 T-bolt clamps, 25 ft length box and 50 ft coil. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix rated for?",
+          "a": "The Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix is listed for -4°F to 212°F (-20°C to 100°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix made of?",
+          "a": "The Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix has construction: Tube: NBR; Cover: NBR/EPDM Blend; reinforcement: High Tenacity Polyester, 2-spiral, Spring Steel Helix."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix?",
+          "a": "Some supply forms include clamps: 12.5 ft length with 4 T-bolt clamps. Choose clamps and barbs that suit the 1-1/2\" to 2\" ID bore of the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 8 part numbers cover 1-1/2\" to 2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix typically used?",
+          "a": "The Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix is listed under the fuel application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix compare with the Marine Fuel Fill & Diesel Transfer Hose, Type A2?",
+          "a": "The Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix differs from the [Marine Fuel Fill & Diesel Transfer Hose, Type A2](/p/marine-fuel-fill-and-diesel-transfer-hose-type-a2). In detail: construction tube: NBR; Cover: NBR/EPDM Blend here against tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; temperature -4°F to 212°F (-20°C to 100°C) here against -20°F to 212°F (-28°C to 100°C); sizes 1-1/2\" to 2\" ID against 3/4\" to 2-1/2\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 T-bolt clamps and 25 ft length box. We ship the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix in stock in Dubai?",
+          "a": "Yes. We keep the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "corrugated-marine-wet-exhaust-hose-hard-wall",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Corrugated Marine Wet Exhaust Hose, Hard Wall used for?",
+          "a": "The Corrugated Marine Wet Exhaust Hose, Hard Wall is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Corrugated Marine Wet Exhaust Hose, Hard Wall part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-252-24-12 is 1-1/2\" ID, 12.5 ft length and IH-MH-252-24-12-1B is the same size as 12.5 ft length box. The 80 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Corrugated Marine Wet Exhaust Hose, Hard Wall come in?",
+          "a": "The Corrugated Marine Wet Exhaust Hose, Hard Wall is listed in 80 part numbers, 1-1/2\" to 8\" ID. Supply forms in the table include 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 T-bolt clamps, 25 ft length box and 50 ft coil. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Corrugated Marine Wet Exhaust Hose, Hard Wall rated for?",
+          "a": "The Corrugated Marine Wet Exhaust Hose, Hard Wall is listed for 280°F (138°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Corrugated Marine Wet Exhaust Hose, Hard Wall made of?",
+          "a": "The Corrugated Marine Wet Exhaust Hose, Hard Wall has construction: High Temp EPDM Rubber; reinforcement: Multi-ply, High Tenacity Polyester, Steel Helix; colour: Black. Suitable for marine wet exhaust applications."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the maker quote for the Corrugated Marine Wet Exhaust Hose, Hard Wall?",
+          "a": "The manufacturer states: Exceeds SAE J2006-R2, ABYC & NMMA P-1, Lloyd’s Registry Type Approved. These are the manufacturer's statements; ask for the documents you need on your request."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Corrugated Marine Wet Exhaust Hose, Hard Wall?",
+          "a": "Some supply forms include clamps: 12.5 ft length with 4 T-bolt clamps and 6.25 ft length with 4 T-bolt clamps. Choose clamps and barbs that suit the 1-1/2\" to 8\" ID bore of the Corrugated Marine Wet Exhaust Hose, Hard Wall, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Corrugated Marine Wet Exhaust Hose, Hard Wall?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 80 part numbers cover 1-1/2\" to 8\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Corrugated Marine Wet Exhaust Hose, Hard Wall typically used?",
+          "a": "The Corrugated Marine Wet Exhaust Hose, Hard Wall is listed under the wet exhaust & water application family. Suitable for marine wet exhaust applications. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Corrugated Marine Wet Exhaust Hose, Hard Wall compare with the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix?",
+          "a": "The Corrugated Marine Wet Exhaust Hose, Hard Wall differs from the [Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2)](/p/marine-wet-exhaust-and-water-hose-hard-wall-with-steel-helix-sae-j2006-r2). In detail: construction high Temp EPDM Rubber here against high Temp EDPM Rubber; temperature 280°F (138°C) here against 280°F (138°C) max. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Corrugated Marine Wet Exhaust Hose, Hard Wall supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 T-bolt clamps and 25 ft length box. We ship the Corrugated Marine Wet Exhaust Hose, Hard Wall from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Corrugated Marine Wet Exhaust Hose, Hard Wall in stock in Dubai?",
+          "a": "Yes. We keep the Corrugated Marine Wet Exhaust Hose, Hard Wall in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "corrugated-polyethylene-bilge-hose-black-or-white",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Corrugated Polyethylene Bilge Hose, Black or White used for?",
+          "a": "The Corrugated Polyethylene Bilge Hose, Black or White is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Corrugated Polyethylene Bilge Hose, Black or White part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-121-10-50 is 5/8\" ID, 50 ft box, black and IH-MH-121-10-750 is the same size as 750 ft bulk box, black. The 18 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Corrugated Polyethylene Bilge Hose, Black or White come in?",
+          "a": "The Corrugated Polyethylene Bilge Hose, Black or White is listed in 18 part numbers, 5/8\" to 1-1/2\" ID. Supply forms in the table include 50 ft box, black, 750 ft bulk box, black, 50 ft box, white, 500 ft bulk box, black and 500 ft bulk box, white. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Corrugated Polyethylene Bilge Hose, Black or White rated for?",
+          "a": "The Corrugated Polyethylene Bilge Hose, Black or White is listed for -40°F to 200°F (-40°C to 93°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Corrugated Polyethylene Bilge Hose, Black or White made of?",
+          "a": "The Corrugated Polyethylene Bilge Hose, Black or White has construction: Corrugated Polyethylene; colour: White (#120 Series), Black (#121 Series); cuffed every foot for easy clamping. Above the waterline connections only."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Corrugated Polyethylene Bilge Hose, Black or White carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Corrugated Polyethylene Bilge Hose, Black or White. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Corrugated Polyethylene Bilge Hose, Black or White?",
+          "a": "Choose clamps and barbs that suit the 5/8\" to 1-1/2\" ID bore of the Corrugated Polyethylene Bilge Hose, Black or White, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Corrugated Polyethylene Bilge Hose, Black or White?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 18 part numbers cover 5/8\" to 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Corrugated Polyethylene Bilge Hose, Black or White typically used?",
+          "a": "The Corrugated Polyethylene Bilge Hose, Black or White is listed under the bilge, live-well & water application family. Above the waterline connections only. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Corrugated Polyethylene Bilge Hose, Black or White compare with the Black PVC Bilge & Live-Well Hose, Hard PVC Helix?",
+          "a": "The Corrugated Polyethylene Bilge Hose, Black or White differs from the [Black PVC Bilge & Live-Well Hose, Hard PVC Helix](/p/black-pvc-bilge-and-live-well-hose-hard-pvc-helix). In detail: construction corrugated Polyethylene here against hard PVC helix; temperature -40°F to 200°F (-40°C to 93°C) here against 10°F to 120°F (-12°C to 48°C). Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Corrugated Polyethylene Bilge Hose, Black or White supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 50 ft box, black, 750 ft bulk box, black, 50 ft box, white and 500 ft bulk box, black. We ship the Corrugated Polyethylene Bilge Hose, Black or White from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Corrugated Polyethylene Bilge Hose, Black or White in stock in Dubai?",
+          "a": "Yes, we carry the Corrugated Polyethylene Bilge Hose, Black or White in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "epdm-heater-hose-2-ply-polyester",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the EPDM Heater Hose, 2-Ply Polyester used for?",
+          "a": "The EPDM Heater Hose, 2-Ply Polyester is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the EPDM Heater Hose, 2-Ply Polyester part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-130-08-50 is 1/2\" ID, 50 ft box and IH-MH-130-08-500 is the same size as 500 ft reel. The 12 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the EPDM Heater Hose, 2-Ply Polyester come in?",
+          "a": "The EPDM Heater Hose, 2-Ply Polyester is listed in 12 part numbers, 1/2\" to 3/4\" ID. Supply forms in the table include 50 ft box, 500 ft reel, 10 ft poly bag, 20 ft poly bag and 5 ft poly bag. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the EPDM Heater Hose, 2-Ply Polyester rated for?",
+          "a": "The EPDM Heater Hose, 2-Ply Polyester is listed for -40°F to 212°F (-40°C to 100°C). Working pressure 50 psi (0.34 MPa); the manufacturer lists it as SAE J20R3 heater hose."
+        },
+        {
+          "slot": "F",
+          "q": "What is the EPDM Heater Hose, 2-Ply Polyester made of?",
+          "a": "The EPDM Heater Hose, 2-Ply Polyester has construction: EPDM Rubber; colour: Black. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Does the EPDM Heater Hose, 2-Ply Polyester carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the EPDM Heater Hose, 2-Ply Polyester. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the EPDM Heater Hose, 2-Ply Polyester?",
+          "a": "Choose clamps and barbs that suit the 1/2\" to 3/4\" ID bore of the EPDM Heater Hose, 2-Ply Polyester, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the EPDM Heater Hose, 2-Ply Polyester?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 12 part numbers cover 1/2\" to 3/4\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the EPDM Heater Hose, 2-Ply Polyester typically used?",
+          "a": "The EPDM Heater Hose, 2-Ply Polyester is listed under the heater & water application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the EPDM Heater Hose, 2-Ply Polyester compare with the High-Temperature EPDM Water & Air Hose, 4-Ply?",
+          "a": "The EPDM Heater Hose, 2-Ply Polyester differs from the [High-Temperature EPDM Water & Air Hose, 4-Ply](/p/high-temperature-epdm-water-and-air-hose-4-ply). In detail: construction EPDM Rubber here against tube & Cover: EDPM Rubber; sizes 1/2\" to 3/4\" ID against 3/8\" to 1\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the EPDM Heater Hose, 2-Ply Polyester supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 50 ft box, 500 ft reel, 10 ft poly bag and 20 ft poly bag. We ship the EPDM Heater Hose, 2-Ply Polyester from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the EPDM Heater Hose, 2-Ply Polyester in stock in Dubai?",
+          "a": "Yes, we carry the EPDM Heater Hose, 2-Ply Polyester in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "extra-heavy-duty-clear-bilge-and-live-well-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Extra-Heavy-Duty Clear Bilge & Live-Well Hose used for?",
+          "a": "The Extra-Heavy-Duty Clear Bilge & Live-Well Hose is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Extra-Heavy-Duty Clear Bilge & Live-Well Hose part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-147-10-100 is 5/8\" ID, 100 ft coil and IH-MH-147-10-50 is the same size as 50 ft box. The 12 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Extra-Heavy-Duty Clear Bilge & Live-Well Hose come in?",
+          "a": "The Extra-Heavy-Duty Clear Bilge & Live-Well Hose is listed in 12 part numbers, 5/8\" to 1-1/2\" ID. Supply forms in the table include 100 ft coil and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Extra-Heavy-Duty Clear Bilge & Live-Well Hose rated for?",
+          "a": "The Extra-Heavy-Duty Clear Bilge & Live-Well Hose is listed for 10°F to 120°F (-12°C to 49°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Extra-Heavy-Duty Clear Bilge & Live-Well Hose made of?",
+          "a": "The Extra-Heavy-Duty Clear Bilge & Live-Well Hose has construction: Clear vinyl with black PVC helix reinforcement. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Extra-Heavy-Duty Clear Bilge & Live-Well Hose carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Extra-Heavy-Duty Clear Bilge & Live-Well Hose. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Extra-Heavy-Duty Clear Bilge & Live-Well Hose?",
+          "a": "Choose clamps and barbs that suit the 5/8\" to 1-1/2\" ID bore of the Extra-Heavy-Duty Clear Bilge & Live-Well Hose, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Extra-Heavy-Duty Clear Bilge & Live-Well Hose?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 12 part numbers cover 5/8\" to 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Extra-Heavy-Duty Clear Bilge & Live-Well Hose typically used?",
+          "a": "The Extra-Heavy-Duty Clear Bilge & Live-Well Hose is listed under the bilge, live-well & water application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Extra-Heavy-Duty Clear Bilge & Live-Well Hose compare with the Clear Vinyl Bilge & Live-Well Hose, PVC Helix?",
+          "a": "The Extra-Heavy-Duty Clear Bilge & Live-Well Hose differs from the [Clear Vinyl Bilge & Live-Well Hose, PVC Helix](/p/clear-vinyl-bilge-and-live-well-hose-pvc-helix). In detail: construction clear vinyl with black PVC helix reinforcement here against heavy-wall vinyl (FDA approved) with PVC reinforcement. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Extra-Heavy-Duty Clear Bilge & Live-Well Hose supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft coil and 50 ft box. We ship the Extra-Heavy-Duty Clear Bilge & Live-Well Hose from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Extra-Heavy-Duty Clear Bilge & Live-Well Hose in stock in Dubai?",
+          "a": "Yes, we carry the Extra-Heavy-Duty Clear Bilge & Live-Well Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "high-temperature-epdm-water-and-air-hose-4-ply",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the High-Temperature EPDM Water & Air Hose, 4-Ply used for?",
+          "a": "The High-Temperature EPDM Water & Air Hose, 4-Ply is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the High-Temperature EPDM Water & Air Hose, 4-Ply part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-134-06-50 is 3/8\" ID, 50 ft box and IH-MH-134-06-650 is the same size as 650 ft reel. The 10 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the High-Temperature EPDM Water & Air Hose, 4-Ply come in?",
+          "a": "The High-Temperature EPDM Water & Air Hose, 4-Ply is listed in 10 part numbers, 3/8\" to 1\" ID. Supply forms in the table include 50 ft box, 650 ft reel, 450 ft reel, 400 ft reel and 300 ft reel. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the High-Temperature EPDM Water & Air Hose, 4-Ply rated for?",
+          "a": "The High-Temperature EPDM Water & Air Hose, 4-Ply is listed for -40°F to 212°F (-40°C to 100°C). Working pressure as the manufacturer gives it in its part names: ID Working pressure (psi) 3/8\" 300 1/2\" 300 5/8\" 300 3/4\" 300 1\" 300 Burst pressure is 4x working pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the High-Temperature EPDM Water & Air Hose, 4-Ply made of?",
+          "a": "The High-Temperature EPDM Water & Air Hose, 4-Ply has construction: Tube & Cover: EDPM Rubber; reinforcement: Polyester; colour: Black; burst Pressure is 4x Working Pressure. Suitable for boat and plant pressurized applications (water & air delivery)."
+        },
+        {
+          "slot": "G",
+          "q": "Does the High-Temperature EPDM Water & Air Hose, 4-Ply carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the High-Temperature EPDM Water & Air Hose, 4-Ply. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the High-Temperature EPDM Water & Air Hose, 4-Ply?",
+          "a": "Choose clamps and barbs that suit the 3/8\" to 1\" ID bore of the High-Temperature EPDM Water & Air Hose, 4-Ply, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the High-Temperature EPDM Water & Air Hose, 4-Ply?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 10 part numbers cover 3/8\" to 1\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the High-Temperature EPDM Water & Air Hose, 4-Ply typically used?",
+          "a": "The High-Temperature EPDM Water & Air Hose, 4-Ply is listed under the heater & water application family. Suitable for boat and plant pressurized applications (water & air delivery). Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the High-Temperature EPDM Water & Air Hose, 4-Ply compare with the EPDM Heater Hose, 2-Ply Polyester?",
+          "a": "The High-Temperature EPDM Water & Air Hose, 4-Ply differs from the [EPDM Heater Hose, 2-Ply Polyester](/p/epdm-heater-hose-2-ply-polyester). In detail: construction tube & Cover: EDPM Rubber here against EPDM Rubber; sizes 3/8\" to 1\" ID against 1/2\" to 3/4\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the High-Temperature EPDM Water & Air Hose, 4-Ply supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 50 ft box, 650 ft reel, 450 ft reel and 400 ft reel. We ship the High-Temperature EPDM Water & Air Hose, 4-Ply from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the High-Temperature EPDM Water & Air Hose, 4-Ply in stock in Dubai?",
+          "a": "Yes. We keep the High-Temperature EPDM Water & Air Hose, 4-Ply in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "low-permeation-outboard-fuel-hose-type-b1-15",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Low-Permeation Outboard Fuel Hose, Type B1-15 used for?",
+          "a": "The Low-Permeation Outboard Fuel Hose, Type B1-15 is used for marine and boat-plant service: fuel Supply Line for Outboard Engines. See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Low-Permeation Outboard Fuel Hose, Type B1-15 part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-305-04-100 is 1/4\" ID, 100 ft box and IH-MH-305-04 is the same size as 100 ft coil. The 12 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Low-Permeation Outboard Fuel Hose, Type B1-15 come in?",
+          "a": "The Low-Permeation Outboard Fuel Hose, Type B1-15 is listed in 12 part numbers, 1/4\" to 3/8\" ID. Supply forms in the table include 100 ft box, 100 ft coil, 25 ft box and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Low-Permeation Outboard Fuel Hose, Type B1-15 rated for?",
+          "a": "The Low-Permeation Outboard Fuel Hose, Type B1-15 is listed for -20°F to 212°F (-28°C to 100°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Low-Permeation Outboard Fuel Hose, Type B1-15 made of?",
+          "a": "The Low-Permeation Outboard Fuel Hose, Type B1-15 has construction: Tube: Fluoroplastic Barrier, Cover: Gray CPE Rubber; reinforcement: 2-Spiral Polyester Plies; extraordinary resistance to fuel permeation and ethanol degradation."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the maker quote for the Low-Permeation Outboard Fuel Hose, Type B1-15?",
+          "a": "The manufacturer states: Exceeds ABYC H-24, SAE J1527, ISO 8469 B1, EPA Certified, CARB Executive Order, NMMA Type Accepted, CE certified. These are the manufacturer's statements; ask for the documents you need on your request."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Low-Permeation Outboard Fuel Hose, Type B1-15?",
+          "a": "Choose clamps and barbs that suit the 1/4\" to 3/8\" ID bore of the Low-Permeation Outboard Fuel Hose, Type B1-15, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Low-Permeation Outboard Fuel Hose, Type B1-15?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 12 part numbers cover 1/4\" to 3/8\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Low-Permeation Outboard Fuel Hose, Type B1-15 typically used?",
+          "a": "The Low-Permeation Outboard Fuel Hose, Type B1-15 is listed under the fuel application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Low-Permeation Outboard Fuel Hose, Type B1-15 compare with the Marine Fuel Hose, Type A1-15, Nylon Barrier?",
+          "a": "The Low-Permeation Outboard Fuel Hose, Type B1-15 differs from the [Marine Fuel Hose, Type A1-15, Nylon Barrier](/p/marine-fuel-hose-type-a1-15-nylon-barrier). In detail: construction tube: Fluoroplastic Barrier, Cover: Gray CPE Rubber here against tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; sizes 1/4\" to 3/8\" ID against 1/4\" to 5/8\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Low-Permeation Outboard Fuel Hose, Type B1-15 supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft box, 100 ft coil, 25 ft box and 50 ft box. We ship the Low-Permeation Outboard Fuel Hose, Type B1-15 from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Low-Permeation Outboard Fuel Hose, Type B1-15 in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Low-Permeation Outboard Fuel Hose, Type B1-15 and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "marine-fuel-fill-and-diesel-transfer-hose-type-a2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Marine Fuel Fill & Diesel Transfer Hose, Type A2 used for?",
+          "a": "The Marine Fuel Fill & Diesel Transfer Hose, Type A2 is used for marine and boat-plant service: gasoline (including ethanol blends UP TO E85) and diesel (including bio diesel blends UP TO B100). See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Marine Fuel Fill & Diesel Transfer Hose, Type A2 part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-327-12-12 is 3/4\" ID, 12.5 ft length and IH-MH-327-12-12-1B is the same size as 12.5 ft length box. The 38 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Marine Fuel Fill & Diesel Transfer Hose, Type A2 come in?",
+          "a": "The Marine Fuel Fill & Diesel Transfer Hose, Type A2 is listed in 38 part numbers, 3/4\" to 2-1/2\" ID. Supply forms in the table include 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 constant-torque clamps, 25 ft length box and 50 ft coil. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Marine Fuel Fill & Diesel Transfer Hose, Type A2 rated for?",
+          "a": "The Marine Fuel Fill & Diesel Transfer Hose, Type A2 is listed for -20°F to 212°F (-28°C to 100°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Marine Fuel Fill & Diesel Transfer Hose, Type A2 made of?",
+          "a": "The Marine Fuel Fill & Diesel Transfer Hose, Type A2 has construction: Tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; reinforcement: Polyester, 2-spiral."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Marine Fuel Fill & Diesel Transfer Hose, Type A2 carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Marine Fuel Fill & Diesel Transfer Hose, Type A2. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Marine Fuel Fill & Diesel Transfer Hose, Type A2?",
+          "a": "Some supply forms include clamps: 12.5 ft length with 4 constant-torque clamps and 12.5 ft length with 4 T-bolt clamps. Choose clamps and barbs that suit the 3/4\" to 2-1/2\" ID bore of the Marine Fuel Fill & Diesel Transfer Hose, Type A2, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Marine Fuel Fill & Diesel Transfer Hose, Type A2?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 38 part numbers cover 3/4\" to 2-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Marine Fuel Fill & Diesel Transfer Hose, Type A2 typically used?",
+          "a": "The Marine Fuel Fill & Diesel Transfer Hose, Type A2 is listed under the fuel application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Marine Fuel Fill & Diesel Transfer Hose, Type A2 compare with the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix?",
+          "a": "The Marine Fuel Fill & Diesel Transfer Hose, Type A2 differs from the [Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix](/p/corrugated-marine-fuel-fill-hose-type-a2-steel-helix). In detail: construction tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend here against tube: NBR; Cover: NBR/EPDM Blend; temperature -20°F to 212°F (-28°C to 100°C) here against -4°F to 212°F (-20°C to 100°C); sizes 3/4\" to 2-1/2\" ID against 1-1/2\" to 2\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Marine Fuel Fill & Diesel Transfer Hose, Type A2 supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 constant-torque clamps and 25 ft length box. We ship the Marine Fuel Fill & Diesel Transfer Hose, Type A2 from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Marine Fuel Fill & Diesel Transfer Hose, Type A2 in stock in Dubai?",
+          "a": "Yes. We keep the Marine Fuel Fill & Diesel Transfer Hose, Type A2 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "marine-fuel-fill-hose-type-a2-cut-lengths-with-t-bolt-clamps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps used for?",
+          "a": "The Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps is used for marine and boat-plant service: ideal for gasoline fill and diesel transfer, compatible with ethanol and biodiesel blends. See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-328-24-12 is 1-1/2\" ID. 12.5 ft length and IH-MH-328-24-12-TB is the same size as 12.5 ft length with 4 T-bolt clamps. The 3 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps come in?",
+          "a": "The Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps is listed in 3 part numbers, 1-1/2\" ID. Supply forms in the table include 12.5 ft length, 12.5 ft length with 4 T-bolt clamps and 50 ft coil. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps rated for?",
+          "a": "The Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps is listed for -4°F to 212°F (-20°C to 100°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps made of?",
+          "a": "The Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps has . If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps?",
+          "a": "Some supply forms include clamps: 12.5 ft length with 4 T-bolt clamps. Choose clamps and barbs that suit the 1-1/2\" ID bore of the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 3 part numbers cover 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps typically used?",
+          "a": "The Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps is listed under the fuel application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps compare with the Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix?",
+          "a": "The Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps differs from the [Corrugated Marine Fuel Fill Hose, Type A2, Steel Helix](/p/corrugated-marine-fuel-fill-hose-type-a2-steel-helix). In detail: sizes 1-1/2\" ID against 1-1/2\" to 2\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 12.5 ft length, 12.5 ft length with 4 T-bolt clamps and 50 ft coil. We ship the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Marine Fuel Fill Hose, Type A2, Cut Lengths with T-Bolt Clamps and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "marine-fuel-hose-type-a1-15-nylon-barrier",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Marine Fuel Hose, Type A1-15, Nylon Barrier used for?",
+          "a": "The Marine Fuel Hose, Type A1-15, Nylon Barrier is used for marine and boat-plant service: gasoline (including ethanol blends UP TO E85) and diesel (including bio diesel blends UP TO B100). See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Marine Fuel Hose, Type A1-15, Nylon Barrier part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-319-04-100 is 1/4\" ID, 100 ft box and IH-MH-319-04-25 is the same size as 25 ft box. The 20 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Marine Fuel Hose, Type A1-15, Nylon Barrier come in?",
+          "a": "The Marine Fuel Hose, Type A1-15, Nylon Barrier is listed in 20 part numbers, 1/4\" to 5/8\" ID. Supply forms in the table include 100 ft box, 25 ft box, 250 ft reel and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Marine Fuel Hose, Type A1-15, Nylon Barrier rated for?",
+          "a": "The Marine Fuel Hose, Type A1-15, Nylon Barrier is listed for -20°F to 212°F (-28°C to 100°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Marine Fuel Hose, Type A1-15, Nylon Barrier made of?",
+          "a": "The Marine Fuel Hose, Type A1-15, Nylon Barrier has construction: Tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; reinforcement: Polyester, 2-spiral."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Marine Fuel Hose, Type A1-15, Nylon Barrier carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Marine Fuel Hose, Type A1-15, Nylon Barrier. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Marine Fuel Hose, Type A1-15, Nylon Barrier?",
+          "a": "Choose clamps and barbs that suit the 1/4\" to 5/8\" ID bore of the Marine Fuel Hose, Type A1-15, Nylon Barrier, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Marine Fuel Hose, Type A1-15, Nylon Barrier?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 20 part numbers cover 1/4\" to 5/8\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Marine Fuel Hose, Type A1-15, Nylon Barrier typically used?",
+          "a": "The Marine Fuel Hose, Type A1-15, Nylon Barrier is listed under the fuel application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Marine Fuel Hose, Type A1-15, Nylon Barrier compare with the Barrier-Lined Marine Fuel Hose, Type A1-15?",
+          "a": "The Marine Fuel Hose, Type A1-15, Nylon Barrier differs from the [Barrier-Lined Marine Fuel Hose, Type A1-15](/p/barrier-lined-marine-fuel-hose-type-a1-15). In detail: construction tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend here against tube: Nylon Internal Barrier, NBR; Cover: NBR/PVC Blend; sizes 1/4\" to 5/8\" ID against 1/4\" to 3/4\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Marine Fuel Hose, Type A1-15, Nylon Barrier supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft box, 25 ft box, 250 ft reel and 50 ft box. We ship the Marine Fuel Hose, Type A1-15, Nylon Barrier from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Marine Fuel Hose, Type A1-15, Nylon Barrier in stock in Dubai?",
+          "a": "Yes. We keep the Marine Fuel Hose, Type A1-15, Nylon Barrier in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "marine-fuel-vent-hose-type-a2-5-8",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Marine Fuel Vent Hose, Type A2, 5/8\" used for?",
+          "a": "The Marine Fuel Vent Hose, Type A2, 5/8\" is used for marine and boat-plant service: gasoline vent hose (including ethanol blends) and diesel (including bio diesel blends). See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Marine Fuel Vent Hose, Type A2, 5/8\" part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-317-10-100 is 5/8\" ID, 100 ft box and IH-MH-317-10-25 is the same size as 25 ft box. The 4 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Marine Fuel Vent Hose, Type A2, 5/8\" come in?",
+          "a": "The Marine Fuel Vent Hose, Type A2, 5/8\" is listed in 4 part numbers, 5/8\" ID. Supply forms in the table include 100 ft box, 25 ft box, 250 ft reel and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Marine Fuel Vent Hose, Type A2, 5/8\" rated for?",
+          "a": "The Marine Fuel Vent Hose, Type A2, 5/8\" is listed for -20°F to 212°F (-28°C to 100°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Marine Fuel Vent Hose, Type A2, 5/8\" made of?",
+          "a": "The Marine Fuel Vent Hose, Type A2, 5/8\" has construction: Tube: NBR; Cover: NBR/PVC Blend; reinforcement: Polyester, 2-spiral. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Marine Fuel Vent Hose, Type A2, 5/8\" carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Marine Fuel Vent Hose, Type A2, 5/8\". If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Marine Fuel Vent Hose, Type A2, 5/8\"?",
+          "a": "Choose clamps and barbs that suit the 5/8\" ID bore of the Marine Fuel Vent Hose, Type A2, 5/8\", and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Marine Fuel Vent Hose, Type A2, 5/8\"?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 4 part numbers cover 5/8\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Marine Fuel Vent Hose, Type A2, 5/8\" typically used?",
+          "a": "The Marine Fuel Vent Hose, Type A2, 5/8\" is listed under the fuel application family. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Marine Fuel Vent Hose, Type A2, 5/8\" compare with the Marine Fuel Fill & Diesel Transfer Hose, Type A2?",
+          "a": "The Marine Fuel Vent Hose, Type A2, 5/8\" differs from the [Marine Fuel Fill & Diesel Transfer Hose, Type A2](/p/marine-fuel-fill-and-diesel-transfer-hose-type-a2). In detail: construction tube: NBR; Cover: NBR/PVC Blend here against tube: NBR, Nylon Internal Barrier; Cover: NBR/PVC Blend; sizes 5/8\" ID against 3/4\" to 2-1/2\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Marine Fuel Vent Hose, Type A2, 5/8\" supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft box, 25 ft box, 250 ft reel and 50 ft box. We ship the Marine Fuel Vent Hose, Type A2, 5/8\" from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Marine Fuel Vent Hose, Type A2, 5/8\" in stock in Dubai?",
+          "a": "Yes, we carry the Marine Fuel Vent Hose, Type A2, 5/8\" in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "marine-wet-exhaust-and-water-hose-hard-wall-with-steel-helix-sae-j2006-r2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) used for?",
+          "a": "The Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-250-24-12 is 1-1/2\" ID, 12.5 ft length and IH-MH-250-24-12-1B is the same size as 12.5 ft length box. The 103 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) come in?",
+          "a": "The Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) is listed in 103 part numbers, 1-1/2\" to 8\" ID. Supply forms in the table include 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 T-bolt clamps, 25 ft length box and 50 ft coil. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) rated for?",
+          "a": "The Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) is listed for 280°F (138°C) max. The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) made of?",
+          "a": "The Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) has construction: High Temp EDPM Rubber; reinforcement: Multi-ply, High Tenacity Polyester, Steel Helix; colour: Black with Blue Stripe. Perfect for longer bent connections in marine applications."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the maker quote for the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2)?",
+          "a": "The manufacturer states: Exceeds SAE J2006-R2, ABYC & NMMA P-1, Lloyd’s Registry Type Approved. These are the manufacturer's statements; ask for the documents you need on your request."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2)?",
+          "a": "Some supply forms include clamps: 12.5 ft length with 4 T-bolt clamps and 6.25 ft length with 4 T-bolt clamps. Choose clamps and barbs that suit the 1-1/2\" to 8\" ID bore of the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2), and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2)?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 103 part numbers cover 1-1/2\" to 8\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) typically used?",
+          "a": "The Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) is listed under the wet exhaust & water application family. Perfect for longer bent connections in marine applications. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) compare with the Marine Wet Exhaust & Water Hose, Soft Wall?",
+          "a": "The Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) differs from the [Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1)](/p/marine-wet-exhaust-and-water-hose-soft-wall-sae-j2006-r1). In detail: temperature 280°F (138°C) max here against 280°F (138°C) Max; sizes 1-1/2\" to 8\" ID against 1-1/2\" to 12\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 12.5 ft length, 12.5 ft length box, 12.5 ft length with 4 T-bolt clamps and 25 ft length box. We ship the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) in stock in Dubai?",
+          "a": "Yes, we hold the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "marine-wet-exhaust-and-water-hose-soft-wall-sae-j2006-r1",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) used for?",
+          "a": "The Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-200-24-12 is 1-1/2\" ID. 12.5 ft length and IH-MH-200-24-12-TB is the same size as 12.5 ft length with 4 T-bolt clamps. The 109 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) come in?",
+          "a": "The Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) is listed in 109 part numbers, 1-1/2\" to 12\" ID. Supply forms in the table include 12.5 ft length, 12.5 ft length with 4 T-bolt clamps, 50 ft coil, 6.25 ft length and 4 × 3.125 ft lengths. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) rated for?",
+          "a": "The Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) is listed for 280°F (138°C) Max. The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) made of?",
+          "a": "The Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) has construction: High Temp EDPM Rubber; reinforcement: Multi-ply, High Tenacity Polyester; colour: Black with Blue Stripe. Ideal for marine wet exhaust and water applications."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the maker quote for the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1)?",
+          "a": "The manufacturer states: Exceeds SAE J2006-R1, ABYC & NMMA P-1, Lloyd’s Registry Type Approved. These are the manufacturer's statements; ask for the documents you need on your request."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1)?",
+          "a": "Some supply forms include clamps: 12.5 ft length with 4 T-bolt clamps and 6.25 ft length with 4 T-bolt clamps. Choose clamps and barbs that suit the 1-1/2\" to 12\" ID bore of the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1), and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1)?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 109 part numbers cover 1-1/2\" to 12\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) typically used?",
+          "a": "The Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) is listed under the wet exhaust & water application family. Ideal for marine wet exhaust and water applications. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) compare with the Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix?",
+          "a": "The Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) differs from the [Marine Wet Exhaust & Water Hose, Hard Wall with Steel Helix (SAE J2006 R2)](/p/marine-wet-exhaust-and-water-hose-hard-wall-with-steel-helix-sae-j2006-r2). In detail: temperature 280°F (138°C) Max here against 280°F (138°C) max; sizes 1-1/2\" to 12\" ID against 1-1/2\" to 8\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 12.5 ft length, 12.5 ft length with 4 T-bolt clamps, 50 ft coil and 6.25 ft length. We ship the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) in stock in Dubai?",
+          "a": "Yes, we carry the Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "silicone-marine-wet-exhaust-and-water-hose-blue",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Silicone Marine Wet Exhaust & Water Hose, Blue used for?",
+          "a": "The Silicone Marine Wet Exhaust & Water Hose, Blue is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Silicone Marine Wet Exhaust & Water Hose, Blue part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-202V-16-12 is 1\" ID, 12 ft length and IH-MH-202V-16-3-36 is the same size as 3 ft length. The 96 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the Silicone Marine Wet Exhaust & Water Hose, Blue come in?",
+          "a": "The Silicone Marine Wet Exhaust & Water Hose, Blue is listed in 96 part numbers, 1\" to 18\" ID. Supply forms in the table include 12 ft length, 3 ft length and 6 ft length. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the Silicone Marine Wet Exhaust & Water Hose, Blue rated for?",
+          "a": "The Silicone Marine Wet Exhaust & Water Hose, Blue is listed for 350°F (176.7°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it. Burst pressure is 4x working pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Silicone Marine Wet Exhaust & Water Hose, Blue made of?",
+          "a": "The Silicone Marine Wet Exhaust & Water Hose, Blue has construction: Tube & Cover: High-temp silicone; reinforcement: Polyester; colour: Blue; burst Pressure is 4x Working Pressure; For open-ended systems. Ideal for marine wet exhaust and water systems."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Silicone Marine Wet Exhaust & Water Hose, Blue carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the Silicone Marine Wet Exhaust & Water Hose, Blue. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the Silicone Marine Wet Exhaust & Water Hose, Blue?",
+          "a": "Choose clamps and barbs that suit the 1\" to 18\" ID bore of the Silicone Marine Wet Exhaust & Water Hose, Blue, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Silicone Marine Wet Exhaust & Water Hose, Blue?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 96 part numbers cover 1\" to 18\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Silicone Marine Wet Exhaust & Water Hose, Blue typically used?",
+          "a": "The Silicone Marine Wet Exhaust & Water Hose, Blue is listed under the wet exhaust & water application family. Ideal for marine wet exhaust and water systems. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Silicone Marine Wet Exhaust & Water Hose, Blue compare with the Marine Wet Exhaust & Water Hose, Soft Wall?",
+          "a": "The Silicone Marine Wet Exhaust & Water Hose, Blue differs from the [Marine Wet Exhaust & Water Hose, Soft Wall (SAE J2006 R1)](/p/marine-wet-exhaust-and-water-hose-soft-wall-sae-j2006-r1). In detail: construction tube & Cover: High-temp silicone here against high Temp EDPM Rubber; temperature 350°F (176.7°C) here against 280°F (138°C) Max; sizes 1\" to 18\" ID against 1-1/2\" to 12\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Silicone Marine Wet Exhaust & Water Hose, Blue supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 12 ft length, 3 ft length and 6 ft length. We ship the Silicone Marine Wet Exhaust & Water Hose, Blue from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Silicone Marine Wet Exhaust & Water Hose, Blue in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Silicone Marine Wet Exhaust & Water Hose, Blue and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "white-corrugated-water-fill-hose-fda-vinyl",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the White Corrugated Water-Fill Hose, FDA Vinyl used for?",
+          "a": "The White Corrugated Water-Fill Hose, FDA Vinyl is used for marine and boat-plant service. See the [marine hoses shelf](/c/marine-hoses). Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the White Corrugated Water-Fill Hose, FDA Vinyl part numbers?",
+          "a": "In the size table the group after the series number is the inside diameter in sixteenths of an inch, and the last group is the supply form: IH-MH-146-12-100 is 3/4\" ID, 100 ft coil and IH-MH-146-12-50 is the same size as 50 ft box. The 6 part numbers each cover one size in one supply form."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths does the White Corrugated Water-Fill Hose, FDA Vinyl come in?",
+          "a": "The White Corrugated Water-Fill Hose, FDA Vinyl is listed in 6 part numbers, 3/4\" to 1-1/2\" ID. Supply forms in the table include 100 ft coil and 50 ft box. Each part number is one size in one supply form."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure is the White Corrugated Water-Fill Hose, FDA Vinyl rated for?",
+          "a": "The White Corrugated Water-Fill Hose, FDA Vinyl is listed for 10°F to 120°F (-12°C to 49°C). The manufacturer publishes no working pressure for this hose in its part data. Tell us the service and we will confirm the hose suits it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the White Corrugated Water-Fill Hose, FDA Vinyl made of?",
+          "a": "The White Corrugated Water-Fill Hose, FDA Vinyl has construction: Corrugated heavy wall vinyl, PVC reinforcement; colour: White. Above-the-waterline connections only."
+        },
+        {
+          "slot": "G",
+          "q": "Does the White Corrugated Water-Fill Hose, FDA Vinyl carry any listed standard or certificate?",
+          "a": "No standard or certificate is listed for the White Corrugated Water-Fill Hose, FDA Vinyl. If your boat or plant needs a test report or marking, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps go with the White Corrugated Water-Fill Hose, FDA Vinyl?",
+          "a": "Choose clamps and barbs that suit the 3/4\" to 1-1/2\" ID bore of the White Corrugated Water-Fill Hose, FDA Vinyl, and see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge) for the right fittings by service."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the White Corrugated Water-Fill Hose, FDA Vinyl?",
+          "a": "Quote the Indus part number, or send the inside diameter, the length you need and the service. Price and lead time are confirmed with the quotation; the 6 part numbers cover 3/4\" to 1-1/2\" ID."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the White Corrugated Water-Fill Hose, FDA Vinyl typically used?",
+          "a": "The White Corrugated Water-Fill Hose, FDA Vinyl is listed under the bilge, live-well & water application family. Above-the-waterline connections only. Check the service against the hose before ordering; see the [marine hose guide for fuel, exhaust and bilge](/blog/marine-hose-fuel-exhaust-and-bilge)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the White Corrugated Water-Fill Hose, FDA Vinyl compare with the Clear PVC Water, Drain & Vent Tubing, FDA?",
+          "a": "The White Corrugated Water-Fill Hose, FDA Vinyl differs from the [Clear PVC Water, Drain & Vent Tubing, FDA](/p/clear-pvc-potable-water-tubing-fda). In detail: construction corrugated heavy wall vinyl, PVC reinforcement here against plasticized PVC (FDA); temperature 10°F to 120°F (-12°C to 49°C) here against 20°F to 150°F (-7°C to 65°C); sizes 3/4\" to 1-1/2\" ID against 1/4\" to 1-1/2\" ID. Choose on the service, the temperature and the size you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the White Corrugated Water-Fill Hose, FDA Vinyl supplied, and from where?",
+          "a": "It is sold in the supply forms listed in the table, such as 100 ft coil and 50 ft box. We ship the White Corrugated Water-Fill Hose, FDA Vinyl from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Is the White Corrugated Water-Fill Hose, FDA Vinyl in stock in Dubai?",
+          "a": "Yes. We keep the White Corrugated Water-Fill Hose, FDA Vinyl in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2069 @@
+{
+  "family": "towing-mooring-fittings",
+  "extraFacts": [
+    {
+      "fact": "Chain Stopper — JIS F 2031 (Indus listing): std JIS F 2031; size 58–60 mm to 117–122 mm",
+      "source": "Indus Hydraulics product listing /p/chain-stopper-jis-f-2031"
+    },
+    {
+      "fact": "Deck Mooring Chock — DIN 81915 (Indus listing): std DIN 81915; size C2 to C32",
+      "source": "Indus Hydraulics product listing /p/deck-mooring-chock-din-81915"
+    },
+    {
+      "fact": "Deck Mooring Chock — ISO 13729 (Indus listing): std ISO 13729; size 250 × 200 × 214 to 500 × 400 × 525B; rate working load limit 23–144 t",
+      "source": "Indus Hydraulics product listing /p/deck-mooring-chock-iso-13729"
+    },
+    {
+      "fact": "End Fastening for Anchor Chain Cable — DIN 81860 (Indus listing): std DIN 81860; size 36–46 mm to 142–152 mm",
+      "source": "Indus Hydraulics product listing /p/end-fastening-for-anchor-chain-cable-din-81860"
+    },
+    {
+      "fact": "Chafe Chain — 76 mm, Grade 3 (Indus listing): size 76 mm, Grade 3",
+      "source": "Indus Hydraulics product listing /p/chafe-chain-76-mm-grade-3"
+    },
+    {
+      "fact": "Chafe Chain, Special — 76 mm, Grade R4 (Indus listing): size 76 mm, Grade R4",
+      "source": "Indus Hydraulics product listing /p/chafe-chain-special-76-mm-grade-r4"
+    },
+    {
+      "fact": "OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 (Indus listing): std OCIMF; size 76 mm, Grade R3/R4 — OCIMF Type A/B",
+      "source": "Indus Hydraulics product listing /p/ocimf-chafe-chain-type-a-b-76-mm-grade-r3-r4"
+    },
+    {
+      "fact": "End Fastening for Anchor Chain Cable — DIN 81860 (Indus listing): std DIN 81860; size 36–46 mm to 142–152 mm",
+      "source": "Indus Hydraulics product listing /p/end-fastening-for-anchor-chain-cable-din-81860"
+    },
+    {
+      "fact": "Roller Chain Stopper (Indus listing): size 20–26 mm chain to 127–132 mm chain",
+      "source": "Indus Hydraulics product listing /p/roller-chain-stopper"
+    },
+    {
+      "fact": "Bulwark Mooring Chock — DIN 81915 (Indus listing): std DIN 81915; size A2 to B8",
+      "source": "Indus Hydraulics product listing /p/bulwark-mooring-chock-din-81915"
+    },
+    {
+      "fact": "Deck Mooring Chock — ISO 13729 (Indus listing): std ISO 13729; size 250 × 200 × 214 to 500 × 400 × 525B; rate working load limit 23–144 t",
+      "source": "Indus Hydraulics product listing /p/deck-mooring-chock-iso-13729"
+    },
+    {
+      "fact": "Bulwark Mooring Chock — ISO 13729 (Indus listing): std ISO 13729; size 250 × 200 × 214 to 500 × 400 × 525B; rate working load limit 23–144 t",
+      "source": "Indus Hydraulics product listing /p/bulwark-mooring-chock-iso-13729"
+    },
+    {
+      "fact": "Quick Release Towing Hook — Tug Type (Indus listing): size 15 t SWL to 100 t SWL; rate working load limit 15–100 t",
+      "source": "Indus Hydraulics product listing /p/quick-release-towing-hook-tug-type"
+    },
+    {
+      "fact": "Quick Release Hook (Indus listing): size 760 mm from pivot to hook, 178 mm jaw",
+      "source": "Indus Hydraulics product listing /p/quick-release-hook"
+    },
+    {
+      "fact": "Guide Roller — JIS F 2014 (Indus listing): std JIS F 2014; size DN 150 to DN 450; rate working load limit 8–90 t",
+      "source": "Indus Hydraulics product listing /p/guide-roller-jis-f-2014"
+    },
+    {
+      "fact": "Guide Roller — NS 2585 (Indus listing): std NS 2585; size DN 150 to DN 450",
+      "source": "Indus Hydraulics product listing /p/guide-roller-ns-2585"
+    },
+    {
+      "fact": "Guide Roller — ISO 13775 (Indus listing): std ISO 13775; size DN 150 to DN 500; rate working load limit 19–198 t",
+      "source": "Indus Hydraulics product listing /p/guide-roller-iso-13775"
+    },
+    {
+      "fact": "Bulwark Mooring Chock — ISO 13729 (Indus listing): std ISO 13729; size 250 × 200 × 214 to 500 × 400 × 525B; rate working load limit 23–144 t",
+      "source": "Indus Hydraulics product listing /p/bulwark-mooring-chock-iso-13729"
+    },
+    {
+      "fact": "Chafe Chain — 76 mm, Grade 3 (Indus listing): size 76 mm, Grade 3",
+      "source": "Indus Hydraulics product listing /p/chafe-chain-76-mm-grade-3"
+    },
+    {
+      "fact": "Roller Fairlead — DIN 81902 (Indus listing): std DIN 81902; size 10 kN nominal pull to 320 kN nominal pull",
+      "source": "Indus Hydraulics product listing /p/roller-fairlead-din-81902"
+    },
+    {
+      "fact": "Quick Release Towing Hook — Tug Type (Indus listing): size 15 t SWL to 100 t SWL; rate working load limit 15–100 t",
+      "source": "Indus Hydraulics product listing /p/quick-release-towing-hook-tug-type"
+    },
+    {
+      "fact": "Chafe Chain — 54 mm, Grade 3 (Indus listing): size 54 mm, Grade 3 — 10/12 m",
+      "source": "Indus Hydraulics product listing /p/chafe-chain-54-mm-grade-3"
+    },
+    {
+      "fact": "Double Quick Release Mooring Hook with Base (Indus listing): size Twin hooks on a 900 × 1,000 mm base, 1,900 mm overall",
+      "source": "Indus Hydraulics product listing /p/double-quick-release-mooring-hook-with-base"
+    },
+    {
+      "fact": "Disc-Type Quick Release Towing Hook (Indus listing): size 7 t SWL to 100 t SWL; rate working load limit 7–100 t",
+      "source": "Indus Hydraulics product listing /p/disc-type-quick-release-towing-hook"
+    },
+    {
+      "fact": "Screw-Type Chain Cable Stopper (Indus listing): size 22–26 mm to 62–64 mm",
+      "source": "Indus Hydraulics product listing /p/screw-type-chain-cable-stopper"
+    },
+    {
+      "fact": "Pedestal Roller Fairlead — ISO 13776 (Indus listing): std ISO 13776; size DN 150 to DN 500; rate working load limit 19–198 t",
+      "source": "Indus Hydraulics product listing /p/pedestal-roller-fairlead-iso-13776"
+    },
+    {
+      "fact": "Roller Chain Stopper (Indus listing): size 20–26 mm chain to 127–132 mm chain",
+      "source": "Indus Hydraulics product listing /p/roller-chain-stopper"
+    },
+    {
+      "fact": "Bow Chain Stopper — OCIMF Tongue Type (Indus listing): std OCIMF; size 76–78 mm chain; rate working load limit 350 t",
+      "source": "Indus Hydraulics product listing /p/bow-chain-stopper-ocimf-tongue-type"
+    }
+  ],
+  "products": [
+    {
+      "slug": "bow-chain-stopper-ocimf-tongue-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bow Chain Stopper — OCIMF Tongue Type and where is it used?",
+          "a": "The Bow Chain Stopper — OCIMF Tongue Type is a bow chain stopper to OCIMF that holds the anchor chain at the bow, in the OCIMF tongue type for tanker mooring. It is listed in sizes 76–78 mm chain, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Bow Chain Stopper — OCIMF Tongue Type part numbers such as IH-MR-DF-BCS-0760?",
+          "a": "IH-MR-DF-BCS-0760 and IH-MR-DF-BCS-0760 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Bow Chain Stopper — OCIMF Tongue Type cover?",
+          "a": "Sizes on the Bow Chain Stopper — OCIMF Tongue Type run 76–78 mm chain. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Bow Chain Stopper — OCIMF Tongue Type for my job?",
+          "a": "Pick the Bow Chain Stopper — OCIMF Tongue Type by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Bow Chain Stopper — OCIMF Tongue Type carry?",
+          "a": "The Bow Chain Stopper — OCIMF Tongue Type lists a working load limit of 350 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Bow Chain Stopper — OCIMF Tongue Type have?",
+          "a": "The listing for the Bow Chain Stopper — OCIMF Tongue Type does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Bow Chain Stopper — OCIMF Tongue Type come with a test certificate?",
+          "a": "The Bow Chain Stopper — OCIMF Tongue Type is listed as OCIMF. A certificate for the Bow Chain Stopper — OCIMF Tongue Type can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Bow Chain Stopper — OCIMF Tongue Type?",
+          "a": "Match the Bow Chain Stopper — OCIMF Tongue Type to the chain size in its table. It is fitted with deck gear from the [towing and mooring fittings shelf](/c/towing-mooring-fittings), such as [mooring bollards](/c/bollards-mooring), and [our chain locker volume guide](/blog/chain-locker-volume) covers where the chain is stowed."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Bow Chain Stopper — OCIMF Tongue Type?",
+          "a": "Order the Bow Chain Stopper — OCIMF Tongue Type with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bow Chain Stopper — OCIMF Tongue Type compare with the Chain Stopper — JIS F 2031?",
+          "a": "The nearest sibling is the [Chain Stopper — JIS F 2031](/p/chain-stopper-jis-f-2031), and the two differ on pattern and size range. In detail, pattern is OCIMF here and JIS F 2031 there; size range is 76–78 mm chain here and 58–60 mm to 117–122 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Bow Chain Stopper — OCIMF Tongue Type from Dubai?",
+          "a": "Yes, Bow Chain Stopper — OCIMF Tongue Type goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Bow Chain Stopper — OCIMF Tongue Type available from stock in Dubai?",
+          "a": "Yes, we stock Bow Chain Stopper — OCIMF Tongue Type at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bulwark-mooring-chock-din-81915",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bulwark Mooring Chock — DIN 81915 and where is it used?",
+          "a": "The Bulwark Mooring Chock — DIN 81915 is a bulwark mooring chock to DIN 81915 that guides a mooring line through the bulwark. It is listed in A2 to B8, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Bulwark Mooring Chock — DIN 81915 part numbers such as IH-MR-DF-BWCD-A2?",
+          "a": "IH-MR-DF-BWCD-A2 is the A2 size, 20 kN WLL, IH-MR-DF-BWCD-A20 the A20 size, 200 kN WLL and IH-MR-DF-BWCD-B8 the B8 size, 80 kN WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Bulwark Mooring Chock — DIN 81915 cover?",
+          "a": "The Bulwark Mooring Chock — DIN 81915 is listed in A2 to B8, rated 20 to 320 kN. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Bulwark Mooring Chock — DIN 81915 for my job?",
+          "a": "Choose the Bulwark Mooring Chock — DIN 81915 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Bulwark Mooring Chock — DIN 81915?",
+          "a": "The Bulwark Mooring Chock — DIN 81915 lists a working load limit of 20 to 320 kN, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Bulwark Mooring Chock — DIN 81915 made from and how is it finished?",
+          "a": "The listing for the Bulwark Mooring Chock — DIN 81915 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Bulwark Mooring Chock — DIN 81915?",
+          "a": "The Bulwark Mooring Chock — DIN 81915 is listed as DIN 81915. A certificate for the Bulwark Mooring Chock — DIN 81915 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Bulwark Mooring Chock — DIN 81915?",
+          "a": "The Bulwark Mooring Chock — DIN 81915 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Bulwark Mooring Chock — DIN 81915?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Bulwark Mooring Chock — DIN 81915 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bulwark Mooring Chock — DIN 81915 compare with the Deck Mooring Chock — DIN 81915?",
+          "a": "The nearest sibling is the [Deck Mooring Chock — DIN 81915](/p/deck-mooring-chock-din-81915), and the two differ on size range. In detail, size range is A2 to B8 here and C2 to C32 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Bulwark Mooring Chock — DIN 81915 outside the UAE?",
+          "a": "Yes. We ship Bulwark Mooring Chock — DIN 81915 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Bulwark Mooring Chock — DIN 81915 available from stock in Dubai?",
+          "a": "Yes. Bulwark Mooring Chock — DIN 81915 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bulwark-mooring-chock-iso-13729",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bulwark Mooring Chock — ISO 13729 used for?",
+          "a": "The Bulwark Mooring Chock — ISO 13729 is a bulwark mooring chock to ISO 13729 that guides a mooring line through the bulwark. It is listed in sizes 250 × 200 × 214 to 500 × 400 × 525B, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Bulwark Mooring Chock — ISO 13729 part numbers such as IH-MR-DF-BWCI-250200214?",
+          "a": "IH-MR-DF-BWCI-250200214 is the 250 × 200 × 214 size, 23 t WLL, IH-MR-DF-BWCI-450250428 the 450 × 250 × 428 size, 93 t WLL and IH-MR-DF-BWCI-500400525B the 500 × 400 × 525B size, 141 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Bulwark Mooring Chock — ISO 13729 come in?",
+          "a": "The Bulwark Mooring Chock — ISO 13729 is listed in 250 × 200 × 214 to 500 × 400 × 525B, rated 23–144 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Bulwark Mooring Chock — ISO 13729 for my job?",
+          "a": "Choose the Bulwark Mooring Chock — ISO 13729 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Bulwark Mooring Chock — ISO 13729 carry?",
+          "a": "The Bulwark Mooring Chock — ISO 13729 lists a working load limit of 23–144 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Bulwark Mooring Chock — ISO 13729 have?",
+          "a": "The listing for the Bulwark Mooring Chock — ISO 13729 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Bulwark Mooring Chock — ISO 13729?",
+          "a": "The Bulwark Mooring Chock — ISO 13729 is listed as ISO 13729. A certificate for the Bulwark Mooring Chock — ISO 13729 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Bulwark Mooring Chock — ISO 13729?",
+          "a": "The Bulwark Mooring Chock — ISO 13729 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Bulwark Mooring Chock — ISO 13729 be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Bulwark Mooring Chock — ISO 13729 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bulwark Mooring Chock — ISO 13729 compare with the Deck Mooring Chock — ISO 13729?",
+          "a": "The nearest sibling is the [Deck Mooring Chock — ISO 13729](/p/deck-mooring-chock-iso-13729), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Bulwark Mooring Chock — ISO 13729 from Dubai?",
+          "a": "Yes. We ship Bulwark Mooring Chock — ISO 13729 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Bulwark Mooring Chock — ISO 13729 for delivery from Dubai?",
+          "a": "Yes. Bulwark Mooring Chock — ISO 13729 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "cable-lifter-chain-wheel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cable Lifter (Chain Wheel) used for?",
+          "a": "The Cable Lifter (Chain Wheel) is a cable lifter (chain wheel) that drives the anchor chain. It is listed in sizes 1/2″ (12.5 mm) to 3″ (76 mm), each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Cable Lifter (Chain Wheel) part numbers such as IH-MR-DF-CWL-0125?",
+          "a": "IH-MR-DF-CWL-0125 is the 1/2″ (12.5 mm) size, IH-MR-DF-CWL-0420 the 1-5/8″ (42 mm) size and IH-MR-DF-CWL-0760 the 3″ (76 mm) size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Cable Lifter (Chain Wheel) come in?",
+          "a": "Sizes on the Cable Lifter (Chain Wheel) run 1/2″ (12.5 mm) to 3″ (76 mm). The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Cable Lifter (Chain Wheel)?",
+          "a": "Pick the Cable Lifter (Chain Wheel) by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Cable Lifter (Chain Wheel)?",
+          "a": "The listing for the Cable Lifter (Chain Wheel) gives dimensions by chain size but no working load limit, so we state none here. Tell us the chain size and the windlass duty on the RFQ and we confirm what the maker publishes."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cable Lifter (Chain Wheel) made from and how is it finished?",
+          "a": "The listing for the Cable Lifter (Chain Wheel) does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Cable Lifter (Chain Wheel) come with a test certificate?",
+          "a": "A certificate for the Cable Lifter (Chain Wheel) can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Cable Lifter (Chain Wheel)?",
+          "a": "Match the Cable Lifter (Chain Wheel) to the chain size in its table. It is fitted with deck gear from the [towing and mooring fittings shelf](/c/towing-mooring-fittings), such as [mooring bollards](/c/bollards-mooring), and [our chain locker volume guide](/blog/chain-locker-volume) covers where the chain is stowed."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Cable Lifter (Chain Wheel)?",
+          "a": "Order the Cable Lifter (Chain Wheel) with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cable Lifter (Chain Wheel) compare with the End Fastening for Anchor Chain Cable — DIN 81860?",
+          "a": "The nearest sibling is the [End Fastening for Anchor Chain Cable — DIN 81860](/p/end-fastening-for-anchor-chain-cable-din-81860), and the two differ on pattern and size range. In detail, pattern is not stated here and DIN 81860 there; size range is 1/2″ (12.5 mm) to 3″ (76 mm) here and 36–46 mm to 142–152 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Cable Lifter (Chain Wheel) from Dubai?",
+          "a": "Yes, Cable Lifter (Chain Wheel) goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Cable Lifter (Chain Wheel) for delivery from Dubai?",
+          "a": "Yes, we stock Cable Lifter (Chain Wheel) at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chafe-chain-54-mm-grade-3",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chafe Chain — 54 mm, Grade 3 used for?",
+          "a": "The Chafe Chain — 54 mm, Grade 3 is a chafe chain assembly that protects a mooring line from chafe. It is listed in sizes 54 mm, Grade 3 — 10/12 m, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Chafe Chain — 54 mm, Grade 3 part numbers such as IH-MR-DF-CHF54-0540?",
+          "a": "IH-MR-DF-CHF54-0540 and IH-MR-DF-CHF54-0540 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Chafe Chain — 54 mm, Grade 3 come in?",
+          "a": "The Chafe Chain — 54 mm, Grade 3 is listed in 54 mm, Grade 3 — 10/12 m. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Chafe Chain — 54 mm, Grade 3 for my job?",
+          "a": "Choose the Chafe Chain — 54 mm, Grade 3 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Chafe Chain — 54 mm, Grade 3 carry?",
+          "a": "The listing for the Chafe Chain — 54 mm, Grade 3 publishes no working load limit, so we state none here. Safe working loads are as the maker publishes them, so send the standard and the load you need on the RFQ and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Chafe Chain — 54 mm, Grade 3 made from and how is it finished?",
+          "a": "The listing for the Chafe Chain — 54 mm, Grade 3 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Chafe Chain — 54 mm, Grade 3?",
+          "a": "A certificate for the Chafe Chain — 54 mm, Grade 3 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Chafe Chain — 54 mm, Grade 3?",
+          "a": "The Chafe Chain — 54 mm, Grade 3 works with chain of the size shown in its table. It sits alongside [mooring bollards](/c/bollards-mooring) and [aquaculture mooring](/c/aquaculture-mooring) gear on the deck, and [our chain locker volume guide](/blog/chain-locker-volume) and [our anchor chain cable arrangement guide](/blog/anchor-chain-cable-arrangement) cover the chain arrangement around it."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Chafe Chain — 54 mm, Grade 3 be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Chafe Chain — 54 mm, Grade 3 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chafe Chain — 54 mm, Grade 3 compare with the Chafe Chain — 76 mm, Grade 3?",
+          "a": "The nearest sibling is the [Chafe Chain — 76 mm, Grade 3](/p/chafe-chain-76-mm-grade-3), and the two differ on size range. In detail, size range is 54 mm, Grade 3 — 10/12 m here and 76 mm, Grade 3 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Chafe Chain — 54 mm, Grade 3 outside the UAE?",
+          "a": "Yes. We ship Chafe Chain — 54 mm, Grade 3 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Chafe Chain — 54 mm, Grade 3 for delivery from Dubai?",
+          "a": "Yes. We keep Chafe Chain — 54 mm, Grade 3 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chafe-chain-76-mm-grade-3",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chafe Chain — 76 mm, Grade 3 and where is it used?",
+          "a": "The Chafe Chain — 76 mm, Grade 3 is a chafe chain assembly that protects a mooring line from chafe. It is listed in sizes 76 mm, Grade 3, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Chafe Chain — 76 mm, Grade 3 part numbers such as IH-MR-DF-CHF76-0760?",
+          "a": "IH-MR-DF-CHF76-0760 and IH-MR-DF-CHF76-0760 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Chafe Chain — 76 mm, Grade 3 come in?",
+          "a": "Sizes on the Chafe Chain — 76 mm, Grade 3 run 76 mm, Grade 3. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Chafe Chain — 76 mm, Grade 3 for my job?",
+          "a": "Pick the Chafe Chain — 76 mm, Grade 3 by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Chafe Chain — 76 mm, Grade 3?",
+          "a": "No working load limit is shown on the Chafe Chain — 76 mm, Grade 3 listing. Safe working loads are as the maker publishes them, and a working load is not a breaking load; tell us the standard and size on the RFQ and we confirm the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Chafe Chain — 76 mm, Grade 3 made from and how is it finished?",
+          "a": "The listing for the Chafe Chain — 76 mm, Grade 3 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Chafe Chain — 76 mm, Grade 3 come with a test certificate?",
+          "a": "A certificate for the Chafe Chain — 76 mm, Grade 3 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Chafe Chain — 76 mm, Grade 3?",
+          "a": "Match the Chafe Chain — 76 mm, Grade 3 to the chain size in its table. It is fitted with deck gear from the [towing and mooring fittings shelf](/c/towing-mooring-fittings), such as [mooring bollards](/c/bollards-mooring), and [our chain locker volume guide](/blog/chain-locker-volume) covers where the chain is stowed."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Chafe Chain — 76 mm, Grade 3?",
+          "a": "Order the Chafe Chain — 76 mm, Grade 3 with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chafe Chain — 76 mm, Grade 3 compare with the Chafe Chain, Special — 76 mm, Grade R4?",
+          "a": "The nearest sibling is the [Chafe Chain, Special — 76 mm, Grade R4](/p/chafe-chain-special-76-mm-grade-r4), and the two differ on size range. In detail, size range is 76 mm, Grade 3 here and 76 mm, Grade R4 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Chafe Chain — 76 mm, Grade 3 outside the UAE?",
+          "a": "Yes, Chafe Chain — 76 mm, Grade 3 goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chafe Chain — 76 mm, Grade 3 available from stock in Dubai?",
+          "a": "Yes, we stock Chafe Chain — 76 mm, Grade 3 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chafe-chain-special-76-mm-grade-r4",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chafe Chain, Special — 76 mm, Grade R4 and where is it used?",
+          "a": "The Chafe Chain, Special — 76 mm, Grade R4 is a special chafe chain assembly that protects a mooring line from chafe. It is listed in sizes 76 mm, Grade R4, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Chafe Chain, Special — 76 mm, Grade R4 part numbers such as IH-MR-DF-SCH76-0760?",
+          "a": "IH-MR-DF-SCH76-0760 and IH-MR-DF-SCH76-0760 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Chafe Chain, Special — 76 mm, Grade R4 cover?",
+          "a": "Sizes on the Chafe Chain, Special — 76 mm, Grade R4 run 76 mm, Grade R4. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Chafe Chain, Special — 76 mm, Grade R4?",
+          "a": "Pick the Chafe Chain, Special — 76 mm, Grade R4 by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Chafe Chain, Special — 76 mm, Grade R4 carry?",
+          "a": "No working load limit is shown on the Chafe Chain, Special — 76 mm, Grade R4 listing. Safe working loads are as the maker publishes them, and a working load is not a breaking load; tell us the standard and size on the RFQ and we confirm the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Chafe Chain, Special — 76 mm, Grade R4 have?",
+          "a": "The listing for the Chafe Chain, Special — 76 mm, Grade R4 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Chafe Chain, Special — 76 mm, Grade R4 come with a test certificate?",
+          "a": "A certificate for the Chafe Chain, Special — 76 mm, Grade R4 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Chafe Chain, Special — 76 mm, Grade R4?",
+          "a": "Match the Chafe Chain, Special — 76 mm, Grade R4 to the chain size in its table. It is fitted with deck gear from the [towing and mooring fittings shelf](/c/towing-mooring-fittings), such as [mooring bollards](/c/bollards-mooring), and [our chain locker volume guide](/blog/chain-locker-volume) covers where the chain is stowed."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Chafe Chain, Special — 76 mm, Grade R4?",
+          "a": "Order the Chafe Chain, Special — 76 mm, Grade R4 with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chafe Chain, Special — 76 mm, Grade R4 compare with the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4?",
+          "a": "The nearest sibling is the [OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4](/p/ocimf-chafe-chain-type-a-b-76-mm-grade-r3-r4), and the two differ on pattern and size range. In detail, pattern is not stated here and OCIMF there; size range is 76 mm, Grade R4 here and 76 mm, Grade R3/R4 — OCIMF Type A/B there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Chafe Chain, Special — 76 mm, Grade R4 outside the UAE?",
+          "a": "Yes, Chafe Chain, Special — 76 mm, Grade R4 goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Chafe Chain, Special — 76 mm, Grade R4 for delivery from Dubai?",
+          "a": "Yes, we stock Chafe Chain, Special — 76 mm, Grade R4 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chain-locker-securing-device",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chain Locker Securing Device and where is it used?",
+          "a": "The Chain Locker Securing Device is a chain locker securing device that secures the bitter end of the anchor chain in the chain locker. Each listed size has its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "What information do I need to give to order the Chain Locker Securing Device?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck, and we quote with the drawing. The Chain Locker Securing Device has no fixed size table, so dimensions and weights are confirmed on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Chain Locker Securing Device come in?",
+          "a": "Sizes on the Chain Locker Securing Device run the sizes in the table. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Chain Locker Securing Device for my job?",
+          "a": "The Chain Locker Securing Device has no fixed size table: dimensions and weights are confirmed on request, so tell us the size or holding capacity you need and we send the drawing with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Chain Locker Securing Device?",
+          "a": "No working load limit is shown on the Chain Locker Securing Device listing. Safe working loads are as the maker publishes them, and a working load is not a breaking load; tell us the standard and size on the RFQ and we confirm the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Chain Locker Securing Device made from and how is it finished?",
+          "a": "The listing for the Chain Locker Securing Device does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Chain Locker Securing Device come with a test certificate?",
+          "a": "A certificate for the Chain Locker Securing Device can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Chain Locker Securing Device?",
+          "a": "Match the Chain Locker Securing Device to the chain size in its table. It is fitted with deck gear from the [towing and mooring fittings shelf](/c/towing-mooring-fittings), such as [mooring bollards](/c/bollards-mooring), and [our chain locker volume guide](/blog/chain-locker-volume) covers where the chain is stowed."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Chain Locker Securing Device be fitted and inspected?",
+          "a": "Order the Chain Locker Securing Device with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chain Locker Securing Device compare with the End Fastening for Anchor Chain Cable — DIN 81860?",
+          "a": "The nearest sibling is the [End Fastening for Anchor Chain Cable — DIN 81860](/p/end-fastening-for-anchor-chain-cable-din-81860), and the two differ on pattern. In detail, pattern is not stated here and DIN 81860 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Chain Locker Securing Device outside the UAE?",
+          "a": "Yes, Chain Locker Securing Device goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chain Locker Securing Device available from stock in Dubai?",
+          "a": "Yes, Chain Locker Securing Device is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chain-stopper-jis-f-2031",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chain Stopper — JIS F 2031 and where is it used?",
+          "a": "The Chain Stopper — JIS F 2031 is a chain stopper to JIS F 2031 that holds the anchor chain, to JIS F 2031. It is listed in sizes 58–60 mm to 117–122 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Chain Stopper — JIS F 2031 part numbers such as IH-MR-DF-CSJ-0580?",
+          "a": "IH-MR-DF-CSJ-0580 is the 58–60 mm size, IH-MR-DF-CSJ-0870 the 87–90 mm size and IH-MR-DF-CSJ-1170 the 117–122 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Chain Stopper — JIS F 2031 cover?",
+          "a": "The Chain Stopper — JIS F 2031 is listed in 58–60 mm to 117–122 mm. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Chain Stopper — JIS F 2031?",
+          "a": "Choose the Chain Stopper — JIS F 2031 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Chain Stopper — JIS F 2031?",
+          "a": "The listing for the Chain Stopper — JIS F 2031 publishes no working load limit, so we state none here. Safe working loads are as the maker publishes them, so send the standard and the load you need on the RFQ and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Chain Stopper — JIS F 2031 have?",
+          "a": "The listing for the Chain Stopper — JIS F 2031 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Chain Stopper — JIS F 2031 come with a test certificate?",
+          "a": "The Chain Stopper — JIS F 2031 is listed as JIS F 2031. A certificate for the Chain Stopper — JIS F 2031 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Chain Stopper — JIS F 2031?",
+          "a": "The Chain Stopper — JIS F 2031 works with chain of the size shown in its table. It sits alongside [mooring bollards](/c/bollards-mooring) and [aquaculture mooring](/c/aquaculture-mooring) gear on the deck, and [our chain locker volume guide](/blog/chain-locker-volume) and [our anchor chain cable arrangement guide](/blog/anchor-chain-cable-arrangement) cover the chain arrangement around it."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Chain Stopper — JIS F 2031 be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Chain Stopper — JIS F 2031 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chain Stopper — JIS F 2031 compare with the Roller Chain Stopper?",
+          "a": "The nearest sibling is the [Roller Chain Stopper](/p/roller-chain-stopper), and the two differ on pattern and size range. In detail, pattern is JIS F 2031 here and not stated there; size range is 58–60 mm to 117–122 mm here and 20–26 mm chain to 127–132 mm chain there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Chain Stopper — JIS F 2031 from Dubai?",
+          "a": "Yes. We ship Chain Stopper — JIS F 2031 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chain Stopper — JIS F 2031 available from stock in Dubai?",
+          "a": "Yes. Chain Stopper — JIS F 2031 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "deck-mooring-chock-din-81915",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Deck Mooring Chock — DIN 81915 used for?",
+          "a": "The Deck Mooring Chock — DIN 81915 is a deck mooring chock to DIN 81915 that guides a mooring line over the deck edge. It is listed in C2 to C32, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Deck Mooring Chock — DIN 81915 part numbers such as IH-MR-DF-DCD-C2?",
+          "a": "IH-MR-DF-DCD-C2 is the C2 size, 20 kN WLL, IH-MR-DF-DCD-C8 the C8 size, 80 kN WLL and IH-MR-DF-DCD-C32 the C32 size, 320 kN WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Deck Mooring Chock — DIN 81915 cover?",
+          "a": "The Deck Mooring Chock — DIN 81915 is listed in C2 to C32, rated 20 to 320 kN. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Deck Mooring Chock — DIN 81915 for my job?",
+          "a": "Choose the Deck Mooring Chock — DIN 81915 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Deck Mooring Chock — DIN 81915?",
+          "a": "The Deck Mooring Chock — DIN 81915 lists a working load limit of 20 to 320 kN, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Deck Mooring Chock — DIN 81915 have?",
+          "a": "The listing for the Deck Mooring Chock — DIN 81915 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Deck Mooring Chock — DIN 81915 come with a test certificate?",
+          "a": "The Deck Mooring Chock — DIN 81915 is listed as DIN 81915. A certificate for the Deck Mooring Chock — DIN 81915 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Deck Mooring Chock — DIN 81915?",
+          "a": "The Deck Mooring Chock — DIN 81915 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Deck Mooring Chock — DIN 81915 be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Deck Mooring Chock — DIN 81915 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Deck Mooring Chock — DIN 81915 compare with the Bulwark Mooring Chock — DIN 81915?",
+          "a": "The nearest sibling is the [Bulwark Mooring Chock — DIN 81915](/p/bulwark-mooring-chock-din-81915), and the two differ on size range. In detail, size range is C2 to C32 here and A2 to B8 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Deck Mooring Chock — DIN 81915 outside the UAE?",
+          "a": "Yes. We ship Deck Mooring Chock — DIN 81915 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Deck Mooring Chock — DIN 81915 for delivery from Dubai?",
+          "a": "Yes. Deck Mooring Chock — DIN 81915 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "deck-mooring-chock-heavy-duty-swl-700-to-3-500-t",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t and where is it used?",
+          "a": "The Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t is a heavy-duty deck mooring chock that guides a mooring line at high working loads. It is listed in sizes 400 x 250 to 600 x 450, SWL 3500 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t part numbers such as IH-MR-DF-DCE-400X250?",
+          "a": "IH-MR-DF-DCE-400X250 is the 400 x 250 size, 700 t WLL, IH-MR-DF-DCE-600X450-2000T the 600 x 450, SWL 2000 t size, 2000 t WLL and IH-MR-DF-DCE-600X450-3500T the 600 x 450, SWL 3500 t size, 3500 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t come in?",
+          "a": "The Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t is listed in 400 x 250 to 600 x 450, SWL 3500 t, rated 700–3,500 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t for my job?",
+          "a": "Choose the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t carry?",
+          "a": "The Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t lists a working load limit of 700–3,500 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t made from and how is it finished?",
+          "a": "The listing for the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t?",
+          "a": "A certificate for the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t?",
+          "a": "The Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t compare with the Deck Mooring Chock — ISO 13729?",
+          "a": "The nearest sibling is the [Deck Mooring Chock — ISO 13729](/p/deck-mooring-chock-iso-13729), and the two differ on pattern, size range and rating. In detail, pattern is not stated here and ISO 13729 there; size range is 400 x 250 to 600 x 450, SWL 3500 t here and 250 × 200 × 214 to 500 × 400 × 525B there; rating is working load limit 700–3,500 t here and working load limit 23–144 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t outside the UAE?",
+          "a": "Yes. We ship Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t available from stock in Dubai?",
+          "a": "Yes. We keep Deck Mooring Chock — Heavy Duty, SWL 700 to 3,500 t in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "deck-mooring-chock-iso-13729",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Deck Mooring Chock — ISO 13729 used for?",
+          "a": "The Deck Mooring Chock — ISO 13729 is a deck mooring chock to ISO 13729 that guides a mooring line over the deck edge. It is listed in sizes 250 × 200 × 214 to 500 × 400 × 525B, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Deck Mooring Chock — ISO 13729 part numbers such as IH-MR-DF-DCI-250200214?",
+          "a": "IH-MR-DF-DCI-250200214 is the 250 × 200 × 214 size, 23 t WLL, IH-MR-DF-DCI-450250428 the 450 × 250 × 428 size, 93 t WLL and IH-MR-DF-DCI-500400525B the 500 × 400 × 525B size, 141 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Deck Mooring Chock — ISO 13729 cover?",
+          "a": "The Deck Mooring Chock — ISO 13729 is listed in 250 × 200 × 214 to 500 × 400 × 525B, rated 23–144 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Deck Mooring Chock — ISO 13729?",
+          "a": "Choose the Deck Mooring Chock — ISO 13729 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Deck Mooring Chock — ISO 13729?",
+          "a": "The Deck Mooring Chock — ISO 13729 lists a working load limit of 23–144 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Deck Mooring Chock — ISO 13729 have?",
+          "a": "The listing for the Deck Mooring Chock — ISO 13729 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Deck Mooring Chock — ISO 13729 come with a test certificate?",
+          "a": "The Deck Mooring Chock — ISO 13729 is listed as ISO 13729. A certificate for the Deck Mooring Chock — ISO 13729 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Deck Mooring Chock — ISO 13729?",
+          "a": "The Deck Mooring Chock — ISO 13729 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Deck Mooring Chock — ISO 13729 be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Deck Mooring Chock — ISO 13729 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Deck Mooring Chock — ISO 13729 compare with the Bulwark Mooring Chock — ISO 13729?",
+          "a": "The nearest sibling is the [Bulwark Mooring Chock — ISO 13729](/p/bulwark-mooring-chock-iso-13729), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Deck Mooring Chock — ISO 13729 from Dubai?",
+          "a": "Yes. We ship Deck Mooring Chock — ISO 13729 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Deck Mooring Chock — ISO 13729 for delivery from Dubai?",
+          "a": "Yes. We keep Deck Mooring Chock — ISO 13729 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "disc-type-quick-release-towing-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Disc-Type Quick Release Towing Hook used for?",
+          "a": "The Disc-Type Quick Release Towing Hook is a disc-type quick release towing hook that releases a tow line under load. It is listed in sizes 7 t SWL to 100 t SWL, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Disc-Type Quick Release Towing Hook part numbers such as IH-MR-DF-QRD-7T?",
+          "a": "IH-MR-DF-QRD-7T is the 7 t SWL size, 7 t WLL, IH-MR-DF-QRD-45T the 45 t SWL size, 45 t WLL and IH-MR-DF-QRD-100T the 100 t SWL size, 100 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Disc-Type Quick Release Towing Hook cover?",
+          "a": "The Disc-Type Quick Release Towing Hook is listed in 7 t SWL to 100 t SWL, rated 7–100 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Disc-Type Quick Release Towing Hook?",
+          "a": "Choose the Disc-Type Quick Release Towing Hook by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Disc-Type Quick Release Towing Hook carry?",
+          "a": "The Disc-Type Quick Release Towing Hook lists a working load limit of 7–100 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Disc-Type Quick Release Towing Hook made from and how is it finished?",
+          "a": "The listing for the Disc-Type Quick Release Towing Hook does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Disc-Type Quick Release Towing Hook?",
+          "a": "A certificate for the Disc-Type Quick Release Towing Hook can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Disc-Type Quick Release Towing Hook?",
+          "a": "The Disc-Type Quick Release Towing Hook is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Disc-Type Quick Release Towing Hook be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Disc-Type Quick Release Towing Hook past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Disc-Type Quick Release Towing Hook compare with the Quick Release Towing Hook — Tug Type?",
+          "a": "The nearest sibling is the [Quick Release Towing Hook — Tug Type](/p/quick-release-towing-hook-tug-type), and the two differ on size range and rating. In detail, size range is 7 t SWL to 100 t SWL here and 15 t SWL to 100 t SWL there; rating is working load limit 7–100 t here and working load limit 15–100 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Disc-Type Quick Release Towing Hook outside the UAE?",
+          "a": "Yes. We ship Disc-Type Quick Release Towing Hook from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Disc-Type Quick Release Towing Hook for delivery from Dubai?",
+          "a": "Yes. We keep Disc-Type Quick Release Towing Hook in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "double-quick-release-mooring-hook-with-base",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Double Quick Release Mooring Hook with Base used for?",
+          "a": "The Double Quick Release Mooring Hook with Base is a double quick release mooring hook with twin hooks on a common base. It is listed in Twin hooks on a 900 × 1,000 mm base, 1,900 mm overall, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Double Quick Release Mooring Hook with Base part numbers such as IH-MR-DF-QRB-1900?",
+          "a": "IH-MR-DF-QRB-1900 and IH-MR-DF-QRB-1900 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Double Quick Release Mooring Hook with Base come in?",
+          "a": "Sizes on the Double Quick Release Mooring Hook with Base run Twin hooks on a 900 × 1,000 mm base, 1,900 mm overall. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Double Quick Release Mooring Hook with Base?",
+          "a": "Pick the Double Quick Release Mooring Hook with Base by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Double Quick Release Mooring Hook with Base?",
+          "a": "No working load limit is shown on the Double Quick Release Mooring Hook with Base listing. Safe working loads are as the maker publishes them, and a working load is not a breaking load; tell us the standard and size on the RFQ and we confirm the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Double Quick Release Mooring Hook with Base have?",
+          "a": "The listing for the Double Quick Release Mooring Hook with Base does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Double Quick Release Mooring Hook with Base come with a test certificate?",
+          "a": "A certificate for the Double Quick Release Mooring Hook with Base can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Double Quick Release Mooring Hook with Base?",
+          "a": "Fit the Double Quick Release Mooring Hook with Base with the line and deck gear for the duty: [mooring bollards](/c/bollards-mooring) take the line, and the [towing and mooring fittings shelf](/c/towing-mooring-fittings) lists the other chocks, rollers and hooks."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Double Quick Release Mooring Hook with Base?",
+          "a": "Order the Double Quick Release Mooring Hook with Base with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Double Quick Release Mooring Hook with Base compare with the Quick Release Hook?",
+          "a": "The nearest sibling is the [Quick Release Hook](/p/quick-release-hook), and the two differ on size range. In detail, size range is twin hooks on a 900 × 1,000 mm base, 1,900 mm overall here and 760 mm from pivot to hook, 178 mm jaw there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Double Quick Release Mooring Hook with Base outside the UAE?",
+          "a": "Yes, Double Quick Release Mooring Hook with Base goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Double Quick Release Mooring Hook with Base available from stock in Dubai?",
+          "a": "Yes, we stock Double Quick Release Mooring Hook with Base at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "end-fastening-for-anchor-chain-cable-din-81860",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the End Fastening for Anchor Chain Cable — DIN 81860 used for?",
+          "a": "The End Fastening for Anchor Chain Cable — DIN 81860 is a end fastening for anchor chain cable to DIN 81860 that secures the inboard end of the chain, to DIN 81860. It is listed in sizes 36–46 mm to 142–152 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read End Fastening for Anchor Chain Cable — DIN 81860 part numbers such as IH-MR-DF-EFC-0360?",
+          "a": "IH-MR-DF-EFC-0360 is the 36–46 mm size, IH-MR-DF-EFC-0950 the 95–105 mm size and IH-MR-DF-EFC-1420 the 142–152 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the End Fastening for Anchor Chain Cable — DIN 81860 come in?",
+          "a": "The End Fastening for Anchor Chain Cable — DIN 81860 is listed in 36–46 mm to 142–152 mm. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of End Fastening for Anchor Chain Cable — DIN 81860 for my job?",
+          "a": "Choose the End Fastening for Anchor Chain Cable — DIN 81860 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the End Fastening for Anchor Chain Cable — DIN 81860?",
+          "a": "The listing for the End Fastening for Anchor Chain Cable — DIN 81860 publishes no working load limit, so we state none here. Safe working loads are as the maker publishes them, so send the standard and the load you need on the RFQ and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the End Fastening for Anchor Chain Cable — DIN 81860 made from and how is it finished?",
+          "a": "The listing for the End Fastening for Anchor Chain Cable — DIN 81860 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the End Fastening for Anchor Chain Cable — DIN 81860?",
+          "a": "The End Fastening for Anchor Chain Cable — DIN 81860 is listed as DIN 81860. A certificate for the End Fastening for Anchor Chain Cable — DIN 81860 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the End Fastening for Anchor Chain Cable — DIN 81860?",
+          "a": "The End Fastening for Anchor Chain Cable — DIN 81860 works with chain of the size shown in its table. It sits alongside [mooring bollards](/c/bollards-mooring) and [aquaculture mooring](/c/aquaculture-mooring) gear on the deck, and [our chain locker volume guide](/blog/chain-locker-volume) and [our anchor chain cable arrangement guide](/blog/anchor-chain-cable-arrangement) cover the chain arrangement around it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the End Fastening for Anchor Chain Cable — DIN 81860?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the End Fastening for Anchor Chain Cable — DIN 81860 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the End Fastening for Anchor Chain Cable — DIN 81860 compare with the Chain Locker Securing Device?",
+          "a": "The nearest sibling is the [Chain Locker Securing Device](/p/chain-locker-securing-device), and the two differ on pattern. In detail, pattern is DIN 81860 here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the End Fastening for Anchor Chain Cable — DIN 81860 from Dubai?",
+          "a": "Yes. We ship End Fastening for Anchor Chain Cable — DIN 81860 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the End Fastening for Anchor Chain Cable — DIN 81860 for delivery from Dubai?",
+          "a": "Yes. End Fastening for Anchor Chain Cable — DIN 81860 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "guide-roller-iso-13775",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guide Roller — ISO 13775 and where is it used?",
+          "a": "The Guide Roller — ISO 13775 is a guide roller to ISO 13775 that guides a mooring line, to ISO 13775. It is listed in DN 150 to DN 500, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Guide Roller — ISO 13775 part numbers such as IH-MR-DF-GRI-DN150?",
+          "a": "IH-MR-DF-GRI-DN150 is the DN 150 size, IH-MR-DF-GRI-DN350 the DN 350 size and IH-MR-DF-GRI-DN500 the DN 500 size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Guide Roller — ISO 13775 come in?",
+          "a": "The Guide Roller — ISO 13775 is listed in DN 150 to DN 500, rated 19–198 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Guide Roller — ISO 13775 for my job?",
+          "a": "Choose the Guide Roller — ISO 13775 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Guide Roller — ISO 13775?",
+          "a": "The Guide Roller — ISO 13775 lists a working load limit of 19–198 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guide Roller — ISO 13775 made from and how is it finished?",
+          "a": "The listing for the Guide Roller — ISO 13775 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Guide Roller — ISO 13775?",
+          "a": "The Guide Roller — ISO 13775 is listed as ISO 13775. A certificate for the Guide Roller — ISO 13775 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Guide Roller — ISO 13775?",
+          "a": "The Guide Roller — ISO 13775 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Guide Roller — ISO 13775 be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Guide Roller — ISO 13775 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guide Roller — ISO 13775 compare with the Guide Roller — JIS F 2014?",
+          "a": "The nearest sibling is the [Guide Roller — JIS F 2014](/p/guide-roller-jis-f-2014), and the two differ on pattern, size range and rating. In detail, pattern is ISO 13775 here and JIS F 2014 there; size range is DN 150 to DN 500 here and DN 150 to DN 450 there; rating is working load limit 19–198 t here and working load limit 8–90 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Guide Roller — ISO 13775 from Dubai?",
+          "a": "Yes. We ship Guide Roller — ISO 13775 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Guide Roller — ISO 13775 for delivery from Dubai?",
+          "a": "Yes. We keep Guide Roller — ISO 13775 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "guide-roller-jis-f-2014",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guide Roller — JIS F 2014 and where is it used?",
+          "a": "The Guide Roller — JIS F 2014 is a guide roller to JIS F 2014 that guides a mooring line, to JIS F 2014. It is listed in DN 150 to DN 450, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Guide Roller — JIS F 2014 part numbers such as IH-MR-DF-GRJ-DN150?",
+          "a": "IH-MR-DF-GRJ-DN150 is the DN 150 size, 8 t WLL, IH-MR-DF-GRJ-DN300 the DN 300 size, 46 t WLL and IH-MR-DF-GRJ-DN450 the DN 450 size, 90 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Guide Roller — JIS F 2014 come in?",
+          "a": "The Guide Roller — JIS F 2014 is listed in DN 150 to DN 450, rated 8–90 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Guide Roller — JIS F 2014 for my job?",
+          "a": "Choose the Guide Roller — JIS F 2014 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Guide Roller — JIS F 2014 carry?",
+          "a": "The Guide Roller — JIS F 2014 lists a working load limit of 8–90 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Guide Roller — JIS F 2014 have?",
+          "a": "The listing for the Guide Roller — JIS F 2014 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Guide Roller — JIS F 2014 come with a test certificate?",
+          "a": "The Guide Roller — JIS F 2014 is listed as JIS F 2014. A certificate for the Guide Roller — JIS F 2014 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Guide Roller — JIS F 2014?",
+          "a": "The Guide Roller — JIS F 2014 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Guide Roller — JIS F 2014 be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Guide Roller — JIS F 2014 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guide Roller — JIS F 2014 compare with the Guide Roller — NS 2585?",
+          "a": "The nearest sibling is the [Guide Roller — NS 2585](/p/guide-roller-ns-2585), and the two differ on pattern. In detail, pattern is JIS F 2014 here and NS 2585 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Guide Roller — JIS F 2014 outside the UAE?",
+          "a": "Yes. We ship Guide Roller — JIS F 2014 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Guide Roller — JIS F 2014 available from stock in Dubai?",
+          "a": "Yes. We keep Guide Roller — JIS F 2014 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "guide-roller-ns-2585",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guide Roller — NS 2585 and where is it used?",
+          "a": "The Guide Roller — NS 2585 is a guide roller to NS 2585 that guides a mooring line, to NS 2585. It is listed in DN 150 to DN 450, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Guide Roller — NS 2585 part numbers such as IH-MR-DF-GRN-DN150?",
+          "a": "IH-MR-DF-GRN-DN150 is the DN 150 size, 16 t minimum breaking load, IH-MR-DF-GRN-DN300 the DN 300 size, 34 t minimum breaking load and IH-MR-DF-GRN-DN450 the DN 450 size, 64 t minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Guide Roller — NS 2585 cover?",
+          "a": "The Guide Roller — NS 2585 is listed in DN 150 to DN 450, rated 16 to 64 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Guide Roller — NS 2585?",
+          "a": "Choose the Guide Roller — NS 2585 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Guide Roller — NS 2585?",
+          "a": "The Guide Roller — NS 2585 lists a minimum breaking load of 16 to 64 t, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guide Roller — NS 2585 made from and how is it finished?",
+          "a": "The listing for the Guide Roller — NS 2585 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Guide Roller — NS 2585?",
+          "a": "The Guide Roller — NS 2585 is listed as NS 2585. A certificate for the Guide Roller — NS 2585 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Guide Roller — NS 2585?",
+          "a": "The Guide Roller — NS 2585 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Guide Roller — NS 2585?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Guide Roller — NS 2585 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guide Roller — NS 2585 compare with the Guide Roller — ISO 13775?",
+          "a": "The nearest sibling is the [Guide Roller — ISO 13775](/p/guide-roller-iso-13775), and the two differ on pattern and size range. In detail, pattern is NS 2585 here and ISO 13775 there; size range is DN 150 to DN 450 here and DN 150 to DN 500 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Guide Roller — NS 2585 outside the UAE?",
+          "a": "Yes. We ship Guide Roller — NS 2585 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Guide Roller — NS 2585 for delivery from Dubai?",
+          "a": "Yes. Guide Roller — NS 2585 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "ocimf-bulwark-chock-fairlead-swl-250-t",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the OCIMF Bulwark Chock / Fairlead — SWL 250 t and where is it used?",
+          "a": "The OCIMF Bulwark Chock / Fairlead — SWL 250 t is a OCIMF bulwark chock and fairlead to OCIMF that guides a mooring line at 250 t SWL. It is listed in SWL 250 t — 600 × 450 mm opening, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read OCIMF Bulwark Chock / Fairlead — SWL 250 t part numbers such as IH-MR-DF-OCF-250T?",
+          "a": "IH-MR-DF-OCF-250T and IH-MR-DF-OCF-250T are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the OCIMF Bulwark Chock / Fairlead — SWL 250 t come in?",
+          "a": "Sizes on the OCIMF Bulwark Chock / Fairlead — SWL 250 t run SWL 250 t — 600 × 450 mm opening. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of OCIMF Bulwark Chock / Fairlead — SWL 250 t for my job?",
+          "a": "Pick the OCIMF Bulwark Chock / Fairlead — SWL 250 t by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the OCIMF Bulwark Chock / Fairlead — SWL 250 t carry?",
+          "a": "The OCIMF Bulwark Chock / Fairlead — SWL 250 t lists a working load limit of 250 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the OCIMF Bulwark Chock / Fairlead — SWL 250 t made from and how is it finished?",
+          "a": "The listing for the OCIMF Bulwark Chock / Fairlead — SWL 250 t does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the OCIMF Bulwark Chock / Fairlead — SWL 250 t come with a test certificate?",
+          "a": "The OCIMF Bulwark Chock / Fairlead — SWL 250 t is listed as OCIMF. A certificate for the OCIMF Bulwark Chock / Fairlead — SWL 250 t can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the OCIMF Bulwark Chock / Fairlead — SWL 250 t?",
+          "a": "Fit the OCIMF Bulwark Chock / Fairlead — SWL 250 t with the line and deck gear for the duty: [mooring bollards](/c/bollards-mooring) take the line, and the [towing and mooring fittings shelf](/c/towing-mooring-fittings) lists the other chocks, rollers and hooks."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the OCIMF Bulwark Chock / Fairlead — SWL 250 t?",
+          "a": "Order the OCIMF Bulwark Chock / Fairlead — SWL 250 t with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the OCIMF Bulwark Chock / Fairlead — SWL 250 t compare with the Bulwark Mooring Chock — ISO 13729?",
+          "a": "The nearest sibling is the [Bulwark Mooring Chock — ISO 13729](/p/bulwark-mooring-chock-iso-13729), and the two differ on pattern, size range and rating. In detail, pattern is OCIMF here and ISO 13729 there; size range is SWL 250 t — 600 × 450 mm opening here and 250 × 200 × 214 to 500 × 400 × 525B there; rating is working load limit 250 t here and working load limit 23–144 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the OCIMF Bulwark Chock / Fairlead — SWL 250 t from Dubai?",
+          "a": "Yes, OCIMF Bulwark Chock / Fairlead — SWL 250 t goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the OCIMF Bulwark Chock / Fairlead — SWL 250 t available from stock in Dubai?",
+          "a": "Yes, OCIMF Bulwark Chock / Fairlead — SWL 250 t is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "ocimf-chafe-chain-type-a-b-76-mm-grade-r3-r4",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 used for?",
+          "a": "The OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 is a OCIMF chafe chain to OCIMF that protects a mooring line from chafe, OCIMF type A or B. It is listed in sizes 76 mm, Grade R3/R4 — OCIMF Type A/B, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 part numbers such as IH-MR-DF-OCH76-0760?",
+          "a": "IH-MR-DF-OCH76-0760 and IH-MR-DF-OCH76-0760 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 cover?",
+          "a": "The OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 is listed in 76 mm, Grade R3/R4 — OCIMF Type A/B. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 for my job?",
+          "a": "Choose the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4?",
+          "a": "The listing for the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 publishes no working load limit, so we state none here. Safe working loads are as the maker publishes them, so send the standard and the load you need on the RFQ and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 made from and how is it finished?",
+          "a": "The listing for the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4?",
+          "a": "The OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 is listed as OCIMF. A certificate for the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4?",
+          "a": "The OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 works with chain of the size shown in its table. It sits alongside [mooring bollards](/c/bollards-mooring) and [aquaculture mooring](/c/aquaculture-mooring) gear on the deck, and [our chain locker volume guide](/blog/chain-locker-volume) and [our anchor chain cable arrangement guide](/blog/anchor-chain-cable-arrangement) cover the chain arrangement around it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 compare with the Chafe Chain — 76 mm, Grade 3?",
+          "a": "The nearest sibling is the [Chafe Chain — 76 mm, Grade 3](/p/chafe-chain-76-mm-grade-3), and the two differ on pattern and size range. In detail, pattern is OCIMF here and not stated there; size range is 76 mm, Grade R3/R4 — OCIMF Type A/B here and 76 mm, Grade 3 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 from Dubai?",
+          "a": "Yes. We ship OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 for delivery from Dubai?",
+          "a": "Yes. We keep OCIMF Chafe Chain, Type A/B — 76 mm, Grade R3/R4 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pedestal-roller-fairlead-iso-13776",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pedestal Roller Fairlead — ISO 13776 and where is it used?",
+          "a": "The Pedestal Roller Fairlead — ISO 13776 is a pedestal roller fairlead to ISO 13776 that leads a mooring line through a change of direction, to ISO 13776. It is listed in DN 150 to DN 500, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Pedestal Roller Fairlead — ISO 13776 part numbers such as IH-MR-DF-PDR-DN150?",
+          "a": "IH-MR-DF-PDR-DN150 is the DN 150 size, IH-MR-DF-PDR-DN350 the DN 350 size and IH-MR-DF-PDR-DN500 the DN 500 size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pedestal Roller Fairlead — ISO 13776 come in?",
+          "a": "Sizes on the Pedestal Roller Fairlead — ISO 13776 run DN 150 to DN 500. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Pedestal Roller Fairlead — ISO 13776 for my job?",
+          "a": "Pick the Pedestal Roller Fairlead — ISO 13776 by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Pedestal Roller Fairlead — ISO 13776 carry?",
+          "a": "The Pedestal Roller Fairlead — ISO 13776 lists a working load limit of 19–198 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Pedestal Roller Fairlead — ISO 13776 have?",
+          "a": "The listing for the Pedestal Roller Fairlead — ISO 13776 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Pedestal Roller Fairlead — ISO 13776?",
+          "a": "The Pedestal Roller Fairlead — ISO 13776 is listed as ISO 13776. A certificate for the Pedestal Roller Fairlead — ISO 13776 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Pedestal Roller Fairlead — ISO 13776?",
+          "a": "Fit the Pedestal Roller Fairlead — ISO 13776 with the line and deck gear for the duty: [mooring bollards](/c/bollards-mooring) take the line, and the [towing and mooring fittings shelf](/c/towing-mooring-fittings) lists the other chocks, rollers and hooks."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Pedestal Roller Fairlead — ISO 13776?",
+          "a": "Order the Pedestal Roller Fairlead — ISO 13776 with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Pedestal Roller Fairlead — ISO 13776 compare with the Roller Fairlead — DIN 81902?",
+          "a": "The nearest sibling is the [Roller Fairlead — DIN 81902](/p/roller-fairlead-din-81902), and the two differ on pattern and size range. In detail, pattern is ISO 13776 here and DIN 81902 there; size range is DN 150 to DN 500 here and 10 kN nominal pull to 320 kN nominal pull there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Pedestal Roller Fairlead — ISO 13776 outside the UAE?",
+          "a": "Yes, Pedestal Roller Fairlead — ISO 13776 goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Pedestal Roller Fairlead — ISO 13776 for delivery from Dubai?",
+          "a": "Yes, Pedestal Roller Fairlead — ISO 13776 is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "pelican-hook-76-to-120-mm-chain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pelican Hook — 76 to 120 mm Chain used for?",
+          "a": "The Pelican Hook — 76 to 120 mm Chain is a pelican hook that releases a chain or line under load. It is listed in sizes 76 mm to 120 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Pelican Hook — 76 to 120 mm Chain part numbers such as IH-MR-DF-PLH-0760?",
+          "a": "IH-MR-DF-PLH-0760 is the 76 mm size, 55 t WLL, IH-MR-DF-PLH-1140 the 114 mm size, 113 t WLL and IH-MR-DF-PLH-1200 the 120 mm size, 123.5 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Pelican Hook — 76 to 120 mm Chain cover?",
+          "a": "The Pelican Hook — 76 to 120 mm Chain is listed in 76 mm to 120 mm, rated 55–123.5 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Pelican Hook — 76 to 120 mm Chain for my job?",
+          "a": "Choose the Pelican Hook — 76 to 120 mm Chain by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Pelican Hook — 76 to 120 mm Chain carry?",
+          "a": "The Pelican Hook — 76 to 120 mm Chain lists a working load limit of 55–123.5 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pelican Hook — 76 to 120 mm Chain made from and how is it finished?",
+          "a": "The listing for the Pelican Hook — 76 to 120 mm Chain does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Pelican Hook — 76 to 120 mm Chain?",
+          "a": "A certificate for the Pelican Hook — 76 to 120 mm Chain can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Pelican Hook — 76 to 120 mm Chain?",
+          "a": "The Pelican Hook — 76 to 120 mm Chain is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Pelican Hook — 76 to 120 mm Chain be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Pelican Hook — 76 to 120 mm Chain past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Pelican Hook — 76 to 120 mm Chain compare with the Quick Release Towing Hook — Tug Type?",
+          "a": "The nearest sibling is the [Quick Release Towing Hook — Tug Type](/p/quick-release-towing-hook-tug-type), and the two differ on size range and rating. In detail, size range is 76 mm to 120 mm here and 15 t SWL to 100 t SWL there; rating is working load limit 55–123.5 t here and working load limit 15–100 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Pelican Hook — 76 to 120 mm Chain from Dubai?",
+          "a": "Yes. We ship Pelican Hook — 76 to 120 mm Chain from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Pelican Hook — 76 to 120 mm Chain for delivery from Dubai?",
+          "a": "Yes. We keep Pelican Hook — 76 to 120 mm Chain in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pick-up-chain-26-mm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pick-Up Chain — 26 mm and where is it used?",
+          "a": "The Pick-Up Chain — 26 mm is a pick-up chain for picking up a mooring or anchor line. It is listed in sizes 26 mm, Grade U3 — 2.4 m, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Pick-Up Chain — 26 mm part numbers such as IH-MR-DF-PUC-0260?",
+          "a": "IH-MR-DF-PUC-0260 and IH-MR-DF-PUC-0260 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pick-Up Chain — 26 mm come in?",
+          "a": "Sizes on the Pick-Up Chain — 26 mm run 26 mm, Grade U3 — 2.4 m. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Pick-Up Chain — 26 mm for my job?",
+          "a": "Pick the Pick-Up Chain — 26 mm by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Pick-Up Chain — 26 mm carry?",
+          "a": "No working load limit is shown on the Pick-Up Chain — 26 mm listing. Safe working loads are as the maker publishes them, and a working load is not a breaking load; tell us the standard and size on the RFQ and we confirm the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pick-Up Chain — 26 mm made from and how is it finished?",
+          "a": "The listing for the Pick-Up Chain — 26 mm does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Pick-Up Chain — 26 mm come with a test certificate?",
+          "a": "A certificate for the Pick-Up Chain — 26 mm can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Pick-Up Chain — 26 mm?",
+          "a": "Match the Pick-Up Chain — 26 mm to the chain size in its table. It is fitted with deck gear from the [towing and mooring fittings shelf](/c/towing-mooring-fittings), such as [mooring bollards](/c/bollards-mooring), and [our chain locker volume guide](/blog/chain-locker-volume) covers where the chain is stowed."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Pick-Up Chain — 26 mm be fitted and inspected?",
+          "a": "Order the Pick-Up Chain — 26 mm with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Pick-Up Chain — 26 mm compare with the Chafe Chain — 54 mm, Grade 3?",
+          "a": "The nearest sibling is the [Chafe Chain — 54 mm, Grade 3](/p/chafe-chain-54-mm-grade-3), and the two differ on size range. In detail, size range is 26 mm, Grade U3 — 2.4 m here and 54 mm, Grade 3 — 10/12 m there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Pick-Up Chain — 26 mm outside the UAE?",
+          "a": "Yes, Pick-Up Chain — 26 mm goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Pick-Up Chain — 26 mm for delivery from Dubai?",
+          "a": "Yes, Pick-Up Chain — 26 mm is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "quick-release-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Quick Release Hook used for?",
+          "a": "The Quick Release Hook is a quick release mooring hook that releases a line quickly. It is listed in sizes 760 mm from pivot to hook, 178 mm jaw, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Quick Release Hook part numbers such as IH-MR-DF-QRH-760?",
+          "a": "IH-MR-DF-QRH-760 and IH-MR-DF-QRH-760 are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Quick Release Hook come in?",
+          "a": "The Quick Release Hook is listed in 760 mm from pivot to hook, 178 mm jaw. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Quick Release Hook for my job?",
+          "a": "Choose the Quick Release Hook by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Quick Release Hook?",
+          "a": "The listing for the Quick Release Hook publishes no working load limit, so we state none here. Safe working loads are as the maker publishes them, so send the standard and the load you need on the RFQ and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Quick Release Hook have?",
+          "a": "The listing for the Quick Release Hook does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Quick Release Hook come with a test certificate?",
+          "a": "A certificate for the Quick Release Hook can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Quick Release Hook?",
+          "a": "The Quick Release Hook is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Quick Release Hook?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Quick Release Hook past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Quick Release Hook compare with the Quick Release Mooring Hook?",
+          "a": "The nearest sibling is the [Quick Release Mooring Hook](/p/quick-release-mooring-hook), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Quick Release Hook outside the UAE?",
+          "a": "Yes. We ship Quick Release Hook from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Quick Release Hook for delivery from Dubai?",
+          "a": "Yes. We keep Quick Release Hook in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "quick-release-mooring-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Quick Release Mooring Hook used for?",
+          "a": "The Quick Release Mooring Hook is a quick release mooring hook assembly that releases a mooring line quickly. Each listed size has its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "What information do I need to give to order the Quick Release Mooring Hook?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck, and we quote with the drawing. The Quick Release Mooring Hook has no fixed size table, so dimensions and weights are confirmed on request."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Quick Release Mooring Hook cover?",
+          "a": "The Quick Release Mooring Hook is listed in the sizes in the table. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Quick Release Mooring Hook?",
+          "a": "The Quick Release Mooring Hook has no fixed size table: dimensions and weights are confirmed on request, so tell us the size or holding capacity you need and we send the drawing with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Quick Release Mooring Hook?",
+          "a": "The listing for the Quick Release Mooring Hook publishes no working load limit, so we state none here. Safe working loads are as the maker publishes them, so send the standard and the load you need on the RFQ and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Quick Release Mooring Hook have?",
+          "a": "The listing for the Quick Release Mooring Hook does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Quick Release Mooring Hook?",
+          "a": "A certificate for the Quick Release Mooring Hook can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Quick Release Mooring Hook?",
+          "a": "The Quick Release Mooring Hook is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Quick Release Mooring Hook?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Quick Release Mooring Hook past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Quick Release Mooring Hook compare with the Double Quick Release Mooring Hook with Base?",
+          "a": "The nearest sibling is the [Double Quick Release Mooring Hook with Base](/p/double-quick-release-mooring-hook-with-base), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Quick Release Mooring Hook from Dubai?",
+          "a": "Yes. We ship Quick Release Mooring Hook from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Quick Release Mooring Hook available from stock in Dubai?",
+          "a": "Yes. We keep Quick Release Mooring Hook in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "quick-release-towing-hook-tug-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Quick Release Towing Hook — Tug Type used for?",
+          "a": "The Quick Release Towing Hook — Tug Type is a tug-type quick release towing hook that releases a tow line under load. It is listed in sizes 15 t SWL to 100 t SWL, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Quick Release Towing Hook — Tug Type part numbers such as IH-MR-DF-QRT-15T?",
+          "a": "IH-MR-DF-QRT-15T is the 15 t SWL size, 15 t WLL, IH-MR-DF-QRT-60T the 60 t SWL size, 60 t WLL and IH-MR-DF-QRT-100T the 100 t SWL size, 100 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Quick Release Towing Hook — Tug Type cover?",
+          "a": "The Quick Release Towing Hook — Tug Type is listed in 15 t SWL to 100 t SWL, rated 15–100 t. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Quick Release Towing Hook — Tug Type for my job?",
+          "a": "Choose the Quick Release Towing Hook — Tug Type by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Quick Release Towing Hook — Tug Type?",
+          "a": "The Quick Release Towing Hook — Tug Type lists a working load limit of 15–100 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Quick Release Towing Hook — Tug Type made from and how is it finished?",
+          "a": "The listing for the Quick Release Towing Hook — Tug Type does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Quick Release Towing Hook — Tug Type come with a test certificate?",
+          "a": "A certificate for the Quick Release Towing Hook — Tug Type can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Quick Release Towing Hook — Tug Type?",
+          "a": "The Quick Release Towing Hook — Tug Type is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Quick Release Towing Hook — Tug Type be fitted and inspected?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Quick Release Towing Hook — Tug Type past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Quick Release Towing Hook — Tug Type compare with the Disc-Type Quick Release Towing Hook?",
+          "a": "The nearest sibling is the [Disc-Type Quick Release Towing Hook](/p/disc-type-quick-release-towing-hook), and the two differ on size range and rating. In detail, size range is 15 t SWL to 100 t SWL here and 7 t SWL to 100 t SWL there; rating is working load limit 15–100 t here and working load limit 7–100 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Quick Release Towing Hook — Tug Type outside the UAE?",
+          "a": "Yes. We ship Quick Release Towing Hook — Tug Type from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Quick Release Towing Hook — Tug Type for delivery from Dubai?",
+          "a": "Yes. We keep Quick Release Towing Hook — Tug Type in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "roller-chain-stopper",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Roller Chain Stopper and where is it used?",
+          "a": "The Roller Chain Stopper is a roller chain stopper that holds the anchor chain. It is listed in sizes 20–26 mm chain to 127–132 mm chain, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Roller Chain Stopper part numbers such as IH-MR-DF-CST-0200?",
+          "a": "IH-MR-DF-CST-0200 is the 20–26 mm chain size, IH-MR-DF-CST-0660 the 66–73 mm chain size and IH-MR-DF-CST-1270 the 127–132 mm chain size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Roller Chain Stopper come in?",
+          "a": "The Roller Chain Stopper is listed in 20–26 mm chain to 127–132 mm chain. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Roller Chain Stopper?",
+          "a": "Choose the Roller Chain Stopper by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Roller Chain Stopper carry?",
+          "a": "The listing for the Roller Chain Stopper publishes no working load limit, so we state none here. Safe working loads are as the maker publishes them, so send the standard and the load you need on the RFQ and we confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Roller Chain Stopper made from and how is it finished?",
+          "a": "The listing for the Roller Chain Stopper does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Roller Chain Stopper come with a test certificate?",
+          "a": "A certificate for the Roller Chain Stopper can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Roller Chain Stopper?",
+          "a": "The Roller Chain Stopper works with chain of the size shown in its table. It sits alongside [mooring bollards](/c/bollards-mooring) and [aquaculture mooring](/c/aquaculture-mooring) gear on the deck, and [our chain locker volume guide](/blog/chain-locker-volume) and [our anchor chain cable arrangement guide](/blog/anchor-chain-cable-arrangement) cover the chain arrangement around it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Roller Chain Stopper?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Roller Chain Stopper past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Roller Chain Stopper compare with the Screw-Type Chain Cable Stopper?",
+          "a": "The nearest sibling is the [Screw-Type Chain Cable Stopper](/p/screw-type-chain-cable-stopper), and the two differ on size range. In detail, size range is 20–26 mm chain to 127–132 mm chain here and 22–26 mm to 62–64 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Roller Chain Stopper outside the UAE?",
+          "a": "Yes. We ship Roller Chain Stopper from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Roller Chain Stopper for delivery from Dubai?",
+          "a": "Yes. We keep Roller Chain Stopper in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "roller-fairlead-din-81902",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Roller Fairlead — DIN 81902 and where is it used?",
+          "a": "The Roller Fairlead — DIN 81902 is a roller fairlead to DIN 81902 that leads a line through a change of direction, to DIN 81902. It is listed in sizes 10 kN nominal pull to 320 kN nominal pull, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Roller Fairlead — DIN 81902 part numbers such as IH-MR-DF-RLF-10KN?",
+          "a": "IH-MR-DF-RLF-10KN is the 10 kN nominal pull size, IH-MR-DF-RLF-80KN the 80 kN nominal pull size and IH-MR-DF-RLF-320KN the 320 kN nominal pull size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Roller Fairlead — DIN 81902 cover?",
+          "a": "The Roller Fairlead — DIN 81902 is listed in 10 kN nominal pull to 320 kN nominal pull, rated 10 to 320 kN. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Roller Fairlead — DIN 81902?",
+          "a": "Choose the Roller Fairlead — DIN 81902 by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Roller Fairlead — DIN 81902 carry?",
+          "a": "The Roller Fairlead — DIN 81902 lists a nominal pull of 10 to 320 kN, set per size in the table in the unit the manufacturer rates it in. A minimum breaking load is a test figure, not a working load: the working load limit is that figure divided by the safety factor the application calls for."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Roller Fairlead — DIN 81902 made from and how is it finished?",
+          "a": "The listing for the Roller Fairlead — DIN 81902 does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Roller Fairlead — DIN 81902?",
+          "a": "The Roller Fairlead — DIN 81902 is listed as DIN 81902. A certificate for the Roller Fairlead — DIN 81902 can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Roller Fairlead — DIN 81902?",
+          "a": "The Roller Fairlead — DIN 81902 is used with mooring lines or towing gear on a vessel's deck, together with [mooring bollards](/c/bollards-mooring) and [marine fenders](/c/marine-fenders). Related fittings are on the [towing and mooring fittings shelf](/c/towing-mooring-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Roller Fairlead — DIN 81902?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Roller Fairlead — DIN 81902 past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Roller Fairlead — DIN 81902 compare with the Pedestal Roller Fairlead — ISO 13776?",
+          "a": "The nearest sibling is the [Pedestal Roller Fairlead — ISO 13776](/p/pedestal-roller-fairlead-iso-13776), and the two differ on pattern and size range. In detail, pattern is DIN 81902 here and ISO 13776 there; size range is 10 kN nominal pull to 320 kN nominal pull here and DN 150 to DN 500 there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Roller Fairlead — DIN 81902 from Dubai?",
+          "a": "Yes. We ship Roller Fairlead — DIN 81902 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Roller Fairlead — DIN 81902 for delivery from Dubai?",
+          "a": "Yes. Roller Fairlead — DIN 81902 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "screw-type-chain-cable-stopper",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Screw-Type Chain Cable Stopper and where is it used?",
+          "a": "The Screw-Type Chain Cable Stopper is a screw-type chain cable stopper that holds Grade 2 and Grade 3 chain. It is listed in sizes 22–26 mm to 62–64 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Screw-Type Chain Cable Stopper part numbers such as IH-MR-DF-CCS-0220?",
+          "a": "IH-MR-DF-CCS-0220 is the 22–26 mm size, IH-MR-DF-CCS-0460 the 46–48 mm size and IH-MR-DF-CCS-0620 the 62–64 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Screw-Type Chain Cable Stopper come in?",
+          "a": "The Screw-Type Chain Cable Stopper is listed in 22–26 mm to 62–64 mm. Every size has its own Indus part number with dimensions in the size table; the [deck fittings shelf](/c/towing-mooring-fittings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Screw-Type Chain Cable Stopper for my job?",
+          "a": "Choose the Screw-Type Chain Cable Stopper by standard and nominal size first, then check the working load limit and the dimensions in its table against the vessel's design and mooring line. Send the standard, size and SWL on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Screw-Type Chain Cable Stopper?",
+          "a": "The Screw-Type Chain Cable Stopper lists a pull for each chain grade in kN: at 46–48 mm the table shows 1016 kN for Grade 2 and 1448 kN for Grade 3. A working load is not a breaking load, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Screw-Type Chain Cable Stopper made from and how is it finished?",
+          "a": "The listing for the Screw-Type Chain Cable Stopper does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Screw-Type Chain Cable Stopper?",
+          "a": "A certificate for the Screw-Type Chain Cable Stopper can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Screw-Type Chain Cable Stopper?",
+          "a": "The Screw-Type Chain Cable Stopper works with chain of the size shown in its table. It sits alongside [mooring bollards](/c/bollards-mooring) and [aquaculture mooring](/c/aquaculture-mooring) gear on the deck, and [our chain locker volume guide](/blog/chain-locker-volume) and [our anchor chain cable arrangement guide](/blog/anchor-chain-cable-arrangement) cover the chain arrangement around it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Screw-Type Chain Cable Stopper?",
+          "a": "State the standard, nominal size and SWL, and whether the fitting is welded or bolted to the deck; dimensions are typical and the drawing sent with the quotation is final. Never load the Screw-Type Chain Cable Stopper past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Screw-Type Chain Cable Stopper compare with the Roller Chain Stopper?",
+          "a": "The nearest sibling is the [Roller Chain Stopper](/p/roller-chain-stopper), and the two differ on size range. In detail, size range is 22–26 mm to 62–64 mm here and 20–26 mm chain to 127–132 mm chain there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Screw-Type Chain Cable Stopper outside the UAE?",
+          "a": "Yes. We ship Screw-Type Chain Cable Stopper from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Screw-Type Chain Cable Stopper available from stock in Dubai?",
+          "a": "Yes. Screw-Type Chain Cable Stopper sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "towing-bracket-ocimf-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Towing Bracket — OCIMF Type used for?",
+          "a": "The Towing Bracket — OCIMF Type is a OCIMF-type towing bracket to OCIMF that takes a tow line load. It is listed in sizes 38 mm to 114 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Towing Bracket — OCIMF Type part numbers such as IH-MR-DF-TWB-0380?",
+          "a": "IH-MR-DF-TWB-0380 is the 38 mm size, 50 t WLL, IH-MR-DF-TWB-0760 the 76 mm size, 200 t WLL and IH-MR-DF-TWB-1140 the 114 mm size, 380 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Towing Bracket — OCIMF Type come in?",
+          "a": "Sizes on the Towing Bracket — OCIMF Type run 38 mm to 114 mm. The size table gives each one its own Indus part number and dimensions, and the [deck fittings shelf](/c/towing-mooring-fittings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Towing Bracket — OCIMF Type for my job?",
+          "a": "Pick the Towing Bracket — OCIMF Type by the standard and the size or SWL your design calls for, then read the matching row for dimensions and rating. State whether it is welded or bolted to the deck."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Towing Bracket — OCIMF Type carry?",
+          "a": "The Towing Bracket — OCIMF Type lists a working load limit of 50–380 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Towing Bracket — OCIMF Type made from and how is it finished?",
+          "a": "The listing for the Towing Bracket — OCIMF Type does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Towing Bracket — OCIMF Type come with a test certificate?",
+          "a": "The Towing Bracket — OCIMF Type is listed as OCIMF. A certificate for the Towing Bracket — OCIMF Type can be supplied: tell us the class society or standard you need and we quote with the matching certificate. The listing does not state a class society approval, so name the one you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Towing Bracket — OCIMF Type?",
+          "a": "Fit the Towing Bracket — OCIMF Type with the line and deck gear for the duty: [mooring bollards](/c/bollards-mooring) take the line, and the [towing and mooring fittings shelf](/c/towing-mooring-fittings) lists the other chocks, rollers and hooks."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Towing Bracket — OCIMF Type?",
+          "a": "Order the Towing Bracket — OCIMF Type with the standard, nominal size and SWL, and say whether it is welded or bolted to the deck. Dimensions are typical, so the drawing sent with the quotation governs, and the fitting must never be loaded past its WLL."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Towing Bracket — OCIMF Type compare with the Bow Chain Stopper — OCIMF Tongue Type?",
+          "a": "The nearest sibling is the [Bow Chain Stopper — OCIMF Tongue Type](/p/bow-chain-stopper-ocimf-tongue-type), and the two differ on size range and rating. In detail, size range is 38 mm to 114 mm here and 76–78 mm chain there; rating is working load limit 50–380 t here and working load limit 350 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Towing Bracket — OCIMF Type from Dubai?",
+          "a": "Yes, Towing Bracket — OCIMF Type goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Towing Bracket — OCIMF Type for delivery from Dubai?",
+          "a": "Yes, we stock Towing Bracket — OCIMF Type at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

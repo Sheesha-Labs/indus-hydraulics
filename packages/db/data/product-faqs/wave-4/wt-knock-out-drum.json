@@ -1,0 +1,84 @@
+{
+  "family": "wt-knock-out-drum",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "knock-out-drum-720-psi-60-in-od-12-ft-asme-u-nace-mr-0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 720 psi knock-out drum used for on a well-test flare line?",
+          "a": "A knock-out drum separates liquid droplets carried by gas on the way to the flare stack, so liquid does not reach the flare. This unit is rated 720 psi MAWP, 60-inch OD by 12-ft, ASME U-stamped and built with NACE MR-0175 compliant materials."
+        },
+        {
+          "slot": "B",
+          "q": "What do 60-in OD × 12-ft and 720 psi mean on this knock-out drum?",
+          "a": "60-in OD × 12-ft is the vessel size, 60 inches outside diameter and 12 feet long, and 720 psi is the MAWP, the maximum allowable working pressure. Capacity and rating are customised per client demand."
+        },
+        {
+          "slot": "D",
+          "q": "How does a knock-out drum separate liquid from gas?",
+          "a": "Separation is by gravity: the internal geometry slows the inlet flow so droplets fall out of the gas stream. The 60-inch by 12-ft drum has hi/lo level sensors and a liquid-level gauge so the liquid can be drained before it builds up."
+        },
+        {
+          "slot": "D",
+          "q": "Can the 720 psi knock-out drum be sized for a different capacity or rating?",
+          "a": "Yes. Capacity and pressure rating are customised per client demand, so give the gas rate, liquid load and pressure on the RFQ. The 60-inch OD by 12-ft vessel at 720 psi is the listed configuration."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the 720 psi knock-out drum?",
+          "a": "The drum is rated 720 psi MAWP and ASME U-stamped, with a pressure safety valve (PSV) fitted to protect it. Operate below the MAWP with the margin your procedure requires, and keep the PSV set pressure within the vessel rating."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 720 psi knock-out drum suitable for sour gas?",
+          "a": "The drum is built with NACE MR-0175 compliant materials, per the listing, so it can be used where the flare gas carries H2S. Give the H2S content on the RFQ so the wetted materials are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes apply to the 720 psi knock-out drum?",
+          "a": "The pressure vessel is ASME U-stamped and the materials are NACE MR-0175 compliant, as stated on the listing. Third-party inspection and data book requirements are agreed on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What instruments and fittings come on the knock-out drum?",
+          "a": "The drum has a PSV, hi/lo level sensors and a liquid-level gauge on the vessel. It sits between the well-test spread and the flare stack; see the [flare stack](/c/wt-flare-stack) shelf for the stack and the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the knock-out drum installed ahead of a flare stack?",
+          "a": "Install it in the gas line to the flare, upstream of the stack, with the drain and liquid-level gauge accessible so liquid can be removed regularly. Keep the PSV discharge piped to a safe location."
+        },
+        {
+          "slot": "K",
+          "q": "Knock-out drum or surge tank on a well-test spread: what is the difference?",
+          "a": "A knock-out drum removes liquid droplets from the gas going to the flare, while a surge tank collects and measures liquid. See the [surge tank](/c/wt-surge-tank) shelf for liquid handling."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 720 psi knock-out drum be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide with the vessel documents and the commercial invoice. Tell us the destination and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 720 psi knock-out drum in Dubai?",
+          "a": "Yes. We keep the 720 psi knock-out drum in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+  "family": "hydraulic-power-units",
+  "extraFacts": [
+    {
+      "fact": "Eaton S811+/S801+ Series Power Module Assemblies: 24 listed part numbers; items: Power Module Assembly, 2.5 kV | Power Module Assembly | Power Module Assembly, 5 kV | Power Module Assembly, For Use With Power Module | Power Module Assembly, For Use With Model Power Module.",
+      "source": "Indus Hydraulics product listing, /p/eaton-s811-s801-series-power-module-assemblies"
+    },
+    {
+      "fact": "Eaton Source Power Modules: 3 listed part numbers; items: Source Power Module, 24-48 VDC | IQ Analyzer Power Module, Self-Powered, 100-600 VAC, 50/60 Hz | Separate Source Power Module, 100 to 240 VAC, 100 to 250 VDC.",
+      "source": "Indus Hydraulics product listing, /p/eaton-source-power-modules"
+    },
+    {
+      "fact": "Eaton SVX/SPX Series Power Modules: 21 listed part numbers; items: SVX/SPX Frequency Drive Input/Output Module | Frequency Drive Input/Output Module | Svx/Spx Power Module, 2150 A, Variable Frequency Drives, Svx/Spx, Power Module Unit | Power Module Unit | Drive Replacement Power Module, 575 VAC, 650 A.",
+      "source": "Indus Hydraulics product listing, /p/eaton-svx-spx-series-power-modules"
+    },
+    {
+      "fact": "Edwards Portable Power Units: 9 listed part numbers; items: Portable Power Unit, 3 Phase, 380V, 50HZ | Portable Power Unit, 3 Phase, 460V | Portable Power Unit, 3 Phase, 575V | Portable Power Unit, 3 Phase, 208V | Radius Roller and Portable Power Unit, 1 Phase, 230V | Radius Roller and Portable Power Unit, 3 Phase, 230V | Radius Roller and Portable Power Unit, 3 Phase, 460V | Portable Power Unit, 1 Phase, 230V | Portable Power Unit, 3 Phase, 230V.",
+      "source": "Indus Hydraulics product listing, /p/edwards-portable-power-units"
+    },
+    {
+      "fact": "Monarch Hydraulic Power Unit: 43 listed part numbers; Frequency 50/60 Hz; Mounting Vertical; Mounting Position Vertical; No. Of Phase 1; No. Of Stages 1; Phase 1; items: Power Unit 1 Stage 115/230VAC 2000 psi | Power Unit 20Gallon 208-230/460VAC 1500psi | Power Unit 20Gallon 208-230/460VAC 2000psi | Power Unit 30 Gallon 208-230/460VAC 1500psi | Power Unit 30 Gallon 208-230/460VAC 1400psi | Power Unit 8Gallon 208-230/460VAC 2500 psi | Power Unit 2Stage 208-230/460VAC 2500psi | Power Unit 1Stage 208-230/460VAC 3000psi | Power Unit 1Stage 208-230/460VAC 2000psi | Power Unit 1Stage 208-230/460VAC 1550psi.",
+      "source": "Indus Hydraulics product listing, /p/monarch-hydraulic-power-unit"
+    },
+    {
+      "fact": "Monarch M and B Series Hydraulic Power Units: 33 listed part numbers; items: Pump Model Bi-Rotational Power Unit | Pump Model (M-255) Dyna-Jack Power Unit | Pump Model (M-301) Dyna-Jack Power Unit | Pump Model (M-303) Dyna-Jack Power Unit | Pump Model (M-304) Dyna-Jack Power Unit | Pump Model (M-310) Dyna-Jack Power Unit | Pump Model (M-311) Dyna-Jack Power Unit | Pump Model (M-313) Dyna-Jack Power Unit | Pump Model (M-314) Dyna-Jack Power Unit | Pump Model (M-326) Dyna-Jack Power Unit.",
+      "source": "Indus Hydraulics product listing, /p/monarch-m-and-b-series-hydraulic-power-units"
+    },
+    {
+      "fact": "Monarch Power Unit Parts — Cartridges, Coils, Motors, Reservoirs and Controls: 30 listed part numbers; rated pressure 2500 psi; items: Cartridge | Coil | Breather Cap, Monarch | Push Button Control Box | Push Button Controller | Monarch Electric DC Motor | 08111 Monarch Electric DC Motor | Reservoir | Four Button Hydraulic Control Box | K12171.",
+      "source": "Indus Hydraulics product listing, /p/monarch-power-unit-parts-cartridges-coils-motors-reservoirs-and-controls"
+    },
+    {
+      "fact": "Stanley HP8 Power Unit and Hydraverter: 2 listed part numbers; items: Power Unit | Hydraverter.",
+      "source": "Indus Hydraulics product listing, /p/stanley-hp8-power-unit-and-hydraverter"
+    },
+    {
+      "fact": "Vestil Power Units: 4 listed part numbers; Features Lift Option For Ideal Operation; Power Unit 115V; items: Hydraulic Drum, 115V AC Power Unit | Hydraulic Drum Option, 12v DC Power Unit | Long Deck Cart Option, DC Power | Long Deck Cart Option, Ac Power.",
+      "source": "Indus Hydraulics product listing, /p/vestil-power-units"
+    },
+    {
+      "fact": "Stanley Hydraulic Power Units: 9 listed part numbers; items: Power Unit | Hydraverter.",
+      "source": "Indus Hydraulics product listing, /p/stanley-hydraulic-power-units"
+    }
+  ],
+  "products": [
+    {
+      "slug": "eaton-s811-s801-series-power-module-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Eaton S811+/S801+ power module assemblies used?",
+          "a": "Eaton S811+/S801+ series power module assemblies are electrical power modules, not hydraulic power units, listed with voltage ratings of 2.5 kV and 5 kV. The listing carries 24 part numbers, such as MZ07A, MZ08E and MZ10B."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Eaton S811+/S801+ power module assemblies available in?",
+          "a": "The listing carries 24 part numbers, such as MZ07A, MZ07F, MZ08A, MZ08E and MZ10B, described as power module assemblies, some rated 2.5 kV, others 5 kV, and some for use with named models. The rows give no hydraulic data."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Eaton S811+/S801+ power module assemblies for my application?",
+          "a": "Choose the module by the part number of the Eaton equipment it is for, and the voltage rating in the item name, 2.5 kV or 5 kV. Quote the part number and the equipment model and we confirm the match with Eaton."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Eaton S811+/S801+ power module assemblies have?",
+          "a": "The listing gives voltage ratings of 2.5 kV and 5 kV on some rows and none on the others, and no hydraulic pressure. Give us the Eaton equipment the module is for and we confirm the rating with Eaton."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton S811+/S801+ power module assemblies made from?",
+          "a": "The listing does not state the materials of the power module assemblies. Quote the part number and the equipment it is for and we confirm the build with Eaton."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Eaton S811+/S801+ power module assemblies?",
+          "a": "The listing names no ISO, IEC or UL standard for the Eaton S811+/S801+ power module assemblies and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton S811+/S801+ power module assemblies mate with?",
+          "a": "Each module is for use with named Eaton equipment, so the part number must match the equipment. See [the Eaton source power modules](/p/eaton-source-power-modules) and [the SVX/SPX power modules](/p/eaton-svx-spx-series-power-modules) for the other Eaton modules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Eaton S811+/S801+ power module assemblies?",
+          "a": "Check the oil level and the electrical supply of the Eaton S811+/S801+ power module assemblies against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Eaton S811+/S801+ power module assemblies?",
+          "a": "These modules are spare or replacement electrical parts for Eaton equipment in industrial plants, listed here with the power units. They are not hydraulic components."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton S811+/S801+ power module assemblies differ from the Eaton SVX/SPX power modules?",
+          "a": "The S811+/S801+ assemblies carry 24 part numbers rated 2.5 kV and 5 kV, while [the Eaton SVX/SPX power modules](/p/eaton-svx-spx-series-power-modules) carry 21 part numbers of frequency drive modules. Both are electrical, so choose by the Eaton equipment they fit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton S811+/S801+ power module assemblies shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton S811+/S801+ power module assemblies from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Eaton S811+/S801+ power module assemblies available from stock in Dubai for export?",
+          "a": "Yes, the Eaton S811+/S801+ power module assemblies are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-source-power-modules",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Eaton source power modules used?",
+          "a": "Eaton source power modules supply power to Eaton IQ meters and analyzers, in DC and AC versions. The listing carries 3 part numbers: IQMDCPM for 24-48 VDC, IQM3PPM self-powered for 100-600 VAC, and IQMSSPM for a separate source of 100 to 240 VAC or 100 to 250 VDC."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Eaton source power modules available in?",
+          "a": "The listing carries 3 part numbers: IQMDCPM, a source power module for 24-48 VDC; IQM3PPM, an IQ analyzer power module that is self-powered from 100-600 VAC at 50/60 Hz; and IQMSSPM, a separate source power module for 100 to 240 VAC or 100 to 250 VDC."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Eaton source power modules for my application?",
+          "a": "Choose by the supply you have: 24-48 VDC, 100 to 600 VAC self-powered, or a separate source of 100 to 240 VAC or 100 to 250 VDC. Quote the part number and the IQ device it is for."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Eaton source power modules have?",
+          "a": "The listing gives supply voltage ranges for each part number, 24-48 VDC, 100-600 VAC at 50/60 Hz and 100 to 240 VAC or 100 to 250 VDC, and no hydraulic pressure. Use the range of your part number and confirm it against the device."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton source power modules made from?",
+          "a": "The listing does not state the materials of the source power modules. Quote the part number and we confirm the build with Eaton."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Eaton source power modules?",
+          "a": "The listing names no ISO, IEC or UL standard for the Eaton source power modules and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Eaton source power modules mate with?",
+          "a": "Each module powers an Eaton IQ analyzer or meter, so the part number must match the device and its supply. See [the S811+/S801+ assemblies](/p/eaton-s811-s801-series-power-module-assemblies) for the other Eaton power modules."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Eaton source power modules be installed and maintained?",
+          "a": "Check the oil level and the electrical supply of the Eaton source power modules against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Eaton source power modules used?",
+          "a": "These modules power Eaton IQ meters and analyzers in electrical systems and are listed here with the power units. They are electrical parts, not hydraulic components."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton source power modules differ from the Eaton S811+/S801+ power module assemblies?",
+          "a": "The source power modules carry 3 part numbers for 24-48 VDC, 100-600 VAC and a separate 100 to 240 VAC or 100 to 250 VDC source, while [the Eaton S811+/S801+ power module assemblies](/p/eaton-s811-s801-series-power-module-assemblies) carry 24 part numbers rated 2.5 kV and 5 kV. Choose by the supply and the device."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton source power modules shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton source power modules from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Eaton source power modules in stock in Dubai?",
+          "a": "Yes, the Eaton source power modules are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-svx-spx-series-power-modules",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Eaton SVX/SPX power modules used?",
+          "a": "Eaton SVX/SPX series power modules are frequency drive input and output modules and replacement power modules for variable frequency drives. The listing carries 21 part numbers, such as FI13-1030-5-ANV and FR12-0820-5-ANV."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Eaton SVX/SPX power modules available in?",
+          "a": "The listing carries 21 part numbers, such as FI13-1030-5-ANV, FI13-1180-5-ANV, FI14-2700-4-ANV and FR09-0300-2-ANV, described as frequency drive input and output modules or power modules, one rated 2150 A and one for 575 VAC."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Eaton SVX/SPX power modules?",
+          "a": "Choose the module by the part number of the drive it replaces, which carries the frame, the current rating and the voltage code. Quote the part number and the drive model and we confirm the match with Eaton."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Eaton SVX/SPX power modules?",
+          "a": "The listing gives a rating of 2150 A on one module and 575 VAC on another, and no hydraulic pressure. Use the rating of your part number and confirm it against the drive."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Eaton SVX/SPX power modules offered in?",
+          "a": "The listing does not state the materials of the SVX/SPX modules. Quote the part number and the drive and we confirm the build with Eaton."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Eaton SVX/SPX power modules?",
+          "a": "The listing names no ISO, IEC or UL standard for the Eaton SVX/SPX power modules and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Eaton SVX/SPX power modules connect to?",
+          "a": "Each module fits a named Eaton variable frequency drive, so the part number must match the drive. See [the S811+/S801+ assemblies](/p/eaton-s811-s801-series-power-module-assemblies) for the other Eaton power modules."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Eaton SVX/SPX power modules?",
+          "a": "Check the oil level and the electrical supply of the Eaton SVX/SPX power modules against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Eaton SVX/SPX power modules used?",
+          "a": "These modules are replacement parts for variable frequency drives that run motors and pumps in industrial plants, and are listed here with the power units. They are electrical parts, not hydraulic components."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton SVX/SPX power modules differ from the Eaton source power modules?",
+          "a": "The SVX/SPX modules carry 21 part numbers for variable frequency drives, while [the Eaton source power modules](/p/eaton-source-power-modules) carry 3 part numbers that power IQ analyzers and meters. Both are electrical, so choose by the equipment they fit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton SVX/SPX power modules shipped from, and what origin and HS code apply?",
+          "a": "We ship the Eaton SVX/SPX power modules from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Eaton SVX/SPX power modules in stock in Dubai?",
+          "a": "Yes. We stock the Eaton SVX/SPX power modules at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "edwards-portable-power-units",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Edwards portable power units used for?",
+          "a": "Edwards portable power units are electric hydraulic power units on a portable frame, in several voltages, with versions that include a radius roller. The listing carries 9 part numbers, such as ED9-HAT003, ED9-HAT5010 and ED9-HAT5030."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Edwards portable power units available in?",
+          "a": "The listing carries 9 part numbers: portable power units for 3 phase 380V at 50 Hz, 460V, 575V and 208V, such as ED9-HAT003 to ED9-HAT006, and radius roller and power unit sets for 1 phase 230V, 3 phase 230V and 3 phase 460V."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Edwards portable power units for my application?",
+          "a": "Choose the supply voltage and phase from the item name, 208V, 230V, 380V, 460V or 575V, and decide whether you need the radius roller version. Match the unit to the supply on your site."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Edwards portable power units have?",
+          "a": "The listing gives no pressure or flow on the rows for the Edwards portable power units, so we do not quote one. Give us the machine and the supply and we confirm the model with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Edwards portable power units offered in?",
+          "a": "The listing does not state the reservoir or housing material of the Edwards portable power units. Tell us the fluid and the duty and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Edwards portable power units?",
+          "a": "The listing names no ISO, IEC or UL standard for the Edwards portable power units and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Edwards portable power units mate with?",
+          "a": "The portable unit supplies hydraulic power to an Edwards machine, so the unit must match the machine and its electrical supply. The radius roller sets are listed with the power unit."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Edwards portable power units be installed and maintained?",
+          "a": "Check the oil level and the electrical supply of the Edwards portable power units against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Edwards portable power units?",
+          "a": "The Edwards portable power units are used where a machine needs its own hydraulic supply, such as lifts, tail-gates, tooling and portable equipment, with a pump, motor, reservoir and valves in one assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Edwards portable power units differ from the Vestil power units?",
+          "a": "The Edwards units are portable 3 phase and 1 phase power units in 9 part numbers, some with a radius roller, while [the Vestil power units](/p/vestil-power-units) are 4 drum and deck cart units on 115V AC or 12V DC. Choose Edwards for fabrication machines."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Edwards portable power units?",
+          "a": "We ship the Edwards portable power units from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Edwards portable power units from stock in the UAE?",
+          "a": "Yes. We stock the Edwards portable power units at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "monarch-hydraulic-power-unit",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Monarch hydraulic power units used for?",
+          "a": "Monarch hydraulic power units are packaged hydraulic supplies with a pump, motor and reservoir, listed in 43 part numbers. The item names give single or two stage units, AC and DC supplies, 8 to 30 gallon reservoirs and pressures from 600 to 3,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Monarch hydraulic power units available in?",
+          "a": "The listing carries 43 part numbers, such as M-4505-0151 (1 stage, 115/230VAC, 2000 psi), T92C405C93F0-01 (2 stage, 2500 psi) and M-3519-0421 (1 stage, 24VDC, 3000 psi). Reservoirs of 8, 15, 20 and 30 gallon are named on some rows."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Monarch hydraulic power units?",
+          "a": "Choose the supply voltage, AC or DC, then the pressure and the stage: one or two. The rows give pressures of 600, 650, 750, 800, 1000, 1400, 1500, 1550, 1600, 2000, 2400, 2500 and 3000 psi, so read the row for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Monarch hydraulic power units?",
+          "a": "The item names give pressures from 600 psi up to 3,000 psi depending on the model, for example 750 psi on the 230/460VAC unit and 3,000 psi on the 12VDC unit. Use the row for your part number as the rated pressure and tell us the load so we confirm the model."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Monarch hydraulic power units made from?",
+          "a": "The listing does not state the reservoir or housing material of the Monarch hydraulic power units. Tell us the fluid and the duty and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Monarch hydraulic power units?",
+          "a": "The listing names no ISO, IEC or UL standard for the Monarch hydraulic power units and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Monarch hydraulic power units mate with?",
+          "a": "The unit supplies pressure and return lines to your cylinders or tool, and its electrical supply must match the motor voltage in the part number. See [the Monarch M and B series power units](/p/monarch-m-and-b-series-hydraulic-power-units) for the pump models and [the Monarch parts listing](/p/monarch-power-unit-parts-cartridges-coils-motors-reservoirs-and-controls) for spares."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Monarch hydraulic power units be installed and maintained?",
+          "a": "Check the oil level and the electrical supply of the Monarch hydraulic power units against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Monarch hydraulic power units?",
+          "a": "The Monarch hydraulic power units are used where a machine needs its own hydraulic supply, such as lifts, tail-gates, tooling and portable equipment, with a pump, motor, reservoir and valves in one assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Monarch hydraulic power units differ from the Monarch M and B series hydraulic power units?",
+          "a": "The Monarch power units are complete units in 43 part numbers with stated voltages, pressures and reservoir sizes, while [the Monarch M and B series hydraulic power units](/p/monarch-m-and-b-series-hydraulic-power-units) are 33 pump and power unit models of the Dyna-Jack range. Choose the complete unit when you want a ready package."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Monarch hydraulic power units shipped from, and what origin and HS code apply?",
+          "a": "We ship the Monarch hydraulic power units from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Monarch hydraulic power units in stock in Dubai?",
+          "a": "Yes. We keep the Monarch hydraulic power units in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "monarch-m-and-b-series-hydraulic-power-units",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Monarch M and B series hydraulic power units used?",
+          "a": "Monarch M and B series hydraulic power units are Dyna-Jack pump models and bi-rotational power units. The listing carries 33 part numbers, such as B-3108, M-3226, M-3310 and M-3552."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Monarch M and B series hydraulic power units?",
+          "a": "The listing carries 33 part numbers: a bi-rotational power unit, B-3108, and Dyna-Jack power units by pump model, such as M-3226 (M-255), M-3310 (M-310), M-3326 (M-326), M-3519 and M-3530. Parts are listed by part number against the units they fit."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Monarch M and B series hydraulic power units for my application?",
+          "a": "Choose on voltage, flow, pressure and valve type, as the listing advises, and use the pump model number, such as M-310 or M-326, to find the matching unit. Parts are listed by part number against the units they fit."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Monarch M and B series hydraulic power units have?",
+          "a": "The listing gives no pressure rating on the rows for the M and B series, so we do not quote one. Give us the pump model and the load and we confirm the unit and its rating with Monarch."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Monarch M and B series hydraulic power units made from?",
+          "a": "The listing does not state the reservoir or housing material of the Monarch M and B series hydraulic power units. Tell us the fluid and the duty and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Monarch M and B series hydraulic power units?",
+          "a": "The listing names no ISO, IEC or UL standard for the Monarch M and B series hydraulic power units and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Monarch M and B series hydraulic power units mate with?",
+          "a": "The Monarch M and B series hydraulic power units are piped to the machine with pressure and return hoses, and its electrical supply must match the motor voltage in the part number. See [our hydraulic power unit shelf](/c/hydraulic-power-units) for the other units."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Monarch M and B series hydraulic power units?",
+          "a": "Check the oil level and the electrical supply of the Monarch M and B series hydraulic power units against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Monarch M and B series hydraulic power units used?",
+          "a": "The Monarch M and B series hydraulic power units are used where a machine needs its own hydraulic supply, such as lifts, tail-gates, tooling and portable equipment, with a pump, motor, reservoir and valves in one assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Monarch M and B series hydraulic power units differ from the Monarch hydraulic power units?",
+          "a": "The M and B series are 33 Dyna-Jack pump and power unit models named by pump model, while [the Monarch hydraulic power units](/p/monarch-hydraulic-power-unit) are 43 complete power units with pressures from 600 to 3,000 psi in the item names. Choose the M or B series when you know the pump model."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Monarch M and B series hydraulic power units?",
+          "a": "We ship the Monarch M and B series hydraulic power units from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Monarch M and B series hydraulic power units available from stock in Dubai for export?",
+          "a": "Yes, the Monarch M and B series hydraulic power units are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "monarch-power-unit-parts-cartridges-coils-motors-reservoirs-and-controls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Monarch power unit parts used?",
+          "a": "Monarch power unit parts are spare cartridges, coils, motors, reservoirs and controls for Monarch hydraulic power units. The listing carries 30 part numbers, such as 00455-D, 08053, 14159 and K17744."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Monarch power unit parts?",
+          "a": "The listing carries 30 part numbers: cartridges such as 00455-D, a push button controller 03240-3W120, a Monarch electric DC motor 08053, reservoirs such as 14159 and 14169, and a solenoid switch K17744. Rows rated at 2500 psi are shown for some parts."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Monarch power unit parts?",
+          "a": "Choose on voltage, flow, pressure and valve type, as the listing advises, and match the part number to the unit it fits. Quote the part number from the unit's nameplate or manual, because parts are listed against the units they fit."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Monarch power unit parts?",
+          "a": "The listing gives a rating of 2500 psi on 4 rows and none on the others, so we do not quote a rating for the other parts. Give us the unit and part number and we confirm the rating with Monarch."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Monarch power unit parts offered in?",
+          "a": "The listing does not state materials for the Monarch spares, which cover cartridges, coils, motors and reservoirs. Quote the part number and the unit it fits and we confirm the build with Monarch."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Monarch power unit parts?",
+          "a": "The listing names no ISO, IEC or UL standard for the Monarch power unit parts and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Monarch power unit parts mate with?",
+          "a": "Each part fits a named Monarch power unit, so match the part number to the unit. See [the Monarch hydraulic power units](/p/monarch-hydraulic-power-unit) and [the M and B series](/p/monarch-m-and-b-series-hydraulic-power-units) for the units the spares fit."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Monarch power unit parts be installed and maintained?",
+          "a": "Check the oil level and the electrical supply of the Monarch power unit parts against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Monarch power unit parts used?",
+          "a": "Monarch spares keep Monarch power units running on lifts, tail-gates and tooling after a coil, cartridge, motor or switch fails, so a failed unit does not need replacing."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Monarch power unit parts differ from the Monarch hydraulic power units?",
+          "a": "The Monarch spares are 30 coils, cartridges, motors, reservoirs and controls, while [the Monarch hydraulic power units](/p/monarch-hydraulic-power-unit) are 43 complete power units. Order spares by the part number of the failed part."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Monarch power unit parts shipped from, and what origin and HS code apply?",
+          "a": "We ship the Monarch power unit parts from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Monarch power unit parts available from stock in Dubai for export?",
+          "a": "Yes. We stock the Monarch power unit parts at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stanley-hp8-power-unit-and-hydraverter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stanley HP8 power unit and Hydraverter used for?",
+          "a": "The Stanley HP8 is a compact hydraulic power unit that runs Stanley tools, and the Hydraverter HV18300 is listed with it. The listing carries 2 part numbers: HP8 and HV18300."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Stanley HP8 power unit and Hydraverter?",
+          "a": "The listing carries 2 part numbers: HP8, the power unit, and HV18300, the Hydraverter. The rows give no flow or pressure."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Stanley HP8 power unit and Hydraverter for my application?",
+          "a": "Choose the HP8 for a compact power unit and confirm that its flow and pressure match the tool you want to run. The Hydraverter is listed as a separate part number, HV18300."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Stanley HP8 power unit and Hydraverter have?",
+          "a": "The listing gives no flow or pressure for the HP8 or the Hydraverter, so we do not quote one. Quote the part number and the tool you will run and we confirm the figures with Stanley."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stanley HP8 power unit and Hydraverter made from?",
+          "a": "The listing does not state the reservoir or housing material of the Stanley HP8 power unit and Hydraverter. Tell us the fluid and the duty and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Stanley HP8 power unit and Hydraverter?",
+          "a": "The listing names no ISO, IEC or UL standard for the Stanley HP8 power unit and Hydraverter and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Stanley HP8 power unit and Hydraverter mate with?",
+          "a": "The Stanley HP8 power unit and Hydraverter is piped to the machine with pressure and return hoses, and its electrical supply must match the motor voltage in the part number. See [our hydraulic power unit shelf](/c/hydraulic-power-units) for the other units."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stanley HP8 power unit and Hydraverter be installed and maintained?",
+          "a": "Check the oil level and the electrical supply of the Stanley HP8 power unit and Hydraverter against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Stanley HP8 power unit and Hydraverter used?",
+          "a": "The Stanley HP8 power unit and Hydraverter is used where a machine needs its own hydraulic supply, such as lifts, tail-gates, tooling and portable equipment, with a pump, motor, reservoir and valves in one assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stanley HP8 power unit and Hydraverter differ from Stanley Hydraulic Power Units?",
+          "a": "This listing holds the HP8 and the Hydraverter in 2 part numbers, while [Stanley Hydraulic Power Units](/p/stanley-hydraulic-power-units) holds 9 Stanley power units. Choose the HP8 for a compact unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Stanley HP8 power unit and Hydraverter shipped from, and what origin and HS code apply?",
+          "a": "We ship the Stanley HP8 power unit and Hydraverter from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Stanley HP8 power unit and Hydraverter from stock in the UAE?",
+          "a": "Yes. We keep the Stanley HP8 power unit and Hydraverter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "vestil-power-units",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Vestil power units used for?",
+          "a": "Vestil power units are 115V AC and 12V DC hydraulic power units for drum and long deck cart lift equipment. The listing carries 4 part numbers: HDC-AC, HDC-DC, LDLT-AC and LDLT-DC."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Vestil power units?",
+          "a": "The listing carries 4 part numbers: HDC-AC, a hydraulic drum 115V AC power unit; HDC-DC, the 12V DC drum power unit option; and LDLT-AC and LDLT-DC, the long deck cart options in AC and DC power."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Vestil power units for my application?",
+          "a": "Choose AC or DC power for your site, 115V AC or 12V DC, and the equipment it fits: the hydraulic drum or the long deck cart. The listing describes a lift option for ideal operation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Vestil power units have?",
+          "a": "The listing gives no pressure rating for the Vestil power units, so we do not quote one. Give us the lift equipment and the load and we confirm the unit with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Vestil power units offered in?",
+          "a": "The listing does not state the reservoir or housing material of the Vestil power units. Tell us the fluid and the duty and we confirm the build with the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Vestil power units?",
+          "a": "The listing names no ISO, IEC or UL standard for the Vestil power units and holds no certificates. If your project needs a conformity document or test certificate, say so in the enquiry and we ask the maker what it can issue. See [our guide to sizing a hydraulic pump](/blog/how-to-size-a-hydraulic-pump) for sizing the pump and motor."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Vestil power units connect to?",
+          "a": "The Vestil power units are piped to the machine with pressure and return hoses, and its electrical supply must match the motor voltage in the part number. See [our hydraulic power unit shelf](/c/hydraulic-power-units) for the other units."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Vestil power units be installed and maintained?",
+          "a": "Check the oil level and the electrical supply of the Vestil power units against the nameplate before starting, pipe the pressure and return lines to the machine, and set the relief valve before you load the circuit. Keep the reservoir breather clear and change oil and filters on the maker's schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Vestil power units?",
+          "a": "The Vestil power units are used where a machine needs its own hydraulic supply, such as lifts, tail-gates, tooling and portable equipment, with a pump, motor, reservoir and valves in one assembly."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Vestil power units differ from the Edwards portable power units?",
+          "a": "The Vestil units are 4 power units for a hydraulic drum and a long deck cart on 115V AC or 12V DC, while [the Edwards portable power units](/p/edwards-portable-power-units) are 9 portable units on 3 phase and 1 phase supplies. Choose Vestil for lift carts."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Vestil power units?",
+          "a": "We ship the Vestil power units from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Vestil power units from stock in the UAE?",
+          "a": "Yes. We stock the Vestil power units at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}
